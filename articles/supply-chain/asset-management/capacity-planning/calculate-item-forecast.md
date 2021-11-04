@@ -3,28 +3,25 @@
 
 title: Calculate item forecast
 description: This topic explains how to calculate item forecast in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetItemForecast 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -64,4 +61,7 @@ This is useful if you want to get an overview of expected item consumption (spar
 
 8. Click the **Display dimensions** button if you want to see the product, storage, or tracking dimensions related to the items. Select the relevant check boxes, and click **OK**.
 
-![Figure 1](media/02-capacity-planning.png)
+![Figure 1.](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

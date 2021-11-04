@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Maintenance downtime
-description: This topic describes maintenance downtime in Asset Management.
-author: josaw1
-manager: tfehr
+title: Maintenance downtime for work orders
+description: This topic describes how to create maintenance downtime registrations on the asset that is selected on a work order.
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,19 +16,18 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Maintenance downtime
+# Maintenance downtime for work orders
 
 [!include [banner](../../includes/banner.md)]
 
@@ -53,7 +50,7 @@ You can create maintenance downtime registrations on the asset that is selected 
 
 The illustration below shows an example of the **Maintenance downtime reason codes** page.
 
-![Figure 1](media/15-work-orders.png)
+![Figure 1.](media/15-work-orders.png)
 
 After you've created the maintenance downtime reason codes that you want to use, you can create maintenance downtime registrations for work orders and assets.
 
@@ -79,18 +76,21 @@ After you've created the maintenance downtime reason codes that you want to use,
 
 The illustration below shows an example of maintenance downtime registration.
 
-![Figure 2](media/16-work-orders.png)
+![Figure 2.](media/16-work-orders.png)
 
 The calendar that is used to calculate a maintenance downtime registration depends on your selection in the setup of assets and parameters. If a resource is selected on an asset in the **Resource** field on the **Fixed asset** FastTab of the **All assets** page, the calendar that is set up for the associated resource group is used, as shown in the following illustration.
 
-![Figure 3](media/17-work-orders.png)
+![Figure 3.](media/17-work-orders.png)
 
 If no resource is selected on the asset, the standard calendar that is selected on the **Asset management parameters** page is used, as shown in the following illustration.
 
-![Figure 4](media/18-work-orders.png)
+![Figure 4.](media/18-work-orders.png)
 
 To see an overview of all maintenance downtime registrations, click **Asset management** > **Inquiries** > **Maintenance downtime**.
 
 >[!NOTE]
 >All calendars that are used in the **Asset Management** module are set up in **Organization administration** > **Setup** > **Calendars** > **Calendars**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

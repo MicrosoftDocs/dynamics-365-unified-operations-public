@@ -3,12 +3,10 @@
 
 title: Pay a vendor by endorsing a bill of exchange for Japan
 description: This topic includes information about endorsing bills of exchange (BOE) to pay a vendor in Japan.
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28791
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -54,3 +51,6 @@ If the status of a BOE is **Endorsed**, a user can reserve its endorsement.
 - [Setup Japan payment by endorsing a customer bill of exchange](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
 - [Settle an endorsed bill of exchange](./tasks/settle-endorsed-bill-exchange.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

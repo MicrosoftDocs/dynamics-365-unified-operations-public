@@ -4,11 +4,9 @@
 title: Enter PIS and COFINS tax adjustment transactions (Brazil)
 description: In Fiscal books, you can create and post a journal for manual PIS and COFINS tax adjustments by using the adjustment codes that are defined by the tax authority. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -56,3 +53,6 @@ In Fiscal books, you can create and post a journal for manual PIS and COFINS tax
 22. Close the page.
 23. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

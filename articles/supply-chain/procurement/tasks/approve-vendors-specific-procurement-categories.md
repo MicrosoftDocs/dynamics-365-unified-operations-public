@@ -3,12 +3,10 @@
  
 title: Approve vendors for specific procurement categories
 description:  This topic explains how to approve vendors for specific procurement categories in Dynamics 365 Supply Chain Management.
-author: mkirknel
-manager: tfehr 
+author: Henrikan
 ms.date: 07/30/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: VendTable, DirPartyEcoResCategory, EcoResCategorySingleLookup, P
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Approve vendors for specific procurement categories
 
@@ -47,3 +44,6 @@ This topic explains how to approve vendors for specific procurement categories i
 13. Select **No** in the **Inherit vendors from parent category:** field.
 14. Select **Yes** in the **Inherit vendors from parent category:** field.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

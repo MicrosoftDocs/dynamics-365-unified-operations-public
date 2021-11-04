@@ -3,11 +3,9 @@
 title: Sales books, purchase books, and invoice-factures journals  
 description: This topic provides information about sales books, purchase books, and invoice-factures journals for Russia.
 author: anasyash
-manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,12 +14,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -45,8 +42,8 @@ Sales books and purchase books are legacy documents that must be prepared and st
 6. On the **Accounts payable parameters** page, on the **Ledger and sales tax** tab, on the **Purchase book** FastTab, select ER formats for Purchase book and Purchase book additional sheet in XML.
 7. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 8. On the **Sales tax settlement periods** page, create a tax period.
-9. Go to **General ledger** \> **Ledger setup** \> **General ledger** parameters..
-10. On the **General ledger parameters** page, on the **Sales tax** tab, on the **Tax options** FastTab, in the **Sale/purchase book date and number delimiter** field, define the delimiter that is used between the date and number of invoices-factures in the printing format of sales books and purchase books.
+9. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+10. On the **General ledger parameters** page, on the **Sales tax** tab, on the *Tax options** FastTab, in the **Sale/purchase book date and number delimiter** field, define the delimiter that is used between the date and number of invoices-factures in the printing format of sales books and purchase books.
 
 ### Generate and print a sales book
 
@@ -70,8 +67,9 @@ The following commands are available on the Action Pane of the **Sales books jou
 |---------|-------------|
 | Lines | Open the **Sales book lines** page, where you can verify the details of the sales book lines. |
 | Totals | Open the **Totals** dialog box, where you can review the total VAT base and VAT amounts for the sales book. Totals are shown separately for domestic VAT, export VAT, and VAT restoration. |
-| Print \> Sales book | Print the sales book report. |
-| Print \> Print additional list | Print the sales book additional sheet report. |
+| Print > Sales book | Print the sales book report. |
+| Print > Print additional list | Print the sales book additional sheet report. |
+| Functions > Facture operation code | Change operation codes for factures. In the **Parameters** dialog box, select the facture operation code that needs to be changed and enter a new facture operation code. In the **Type** field, select the purpose of the primary address of the counterparty for which the facture operation code needs to be changed. For example, you might select **Business**. In the **Counteragent type** field, select **Customer** or **Vendor** depending on the type of the party for which the facture operation code needs to be changed. Make sure that the **Kind of activity** field in the factures for which the operation code needs to be changed is set to **Basic**. |
 
 #### Print a sales book
 
@@ -117,6 +115,7 @@ The following commands are available on the Action Pane of the **Purchase books 
 | Totals | Open the **Totals** dialog box, where you can review total VAT base and VAT amounts for the purchase book. |
 | Print \> Purchase book | Print the purchase book report. |
 | Print \> Print additional list | Print the purchase book additional sheet report. |
+| Functions > Facture operation code | Change operation codes for factures. In the **Parameters** dialog box, select the facture operation code that needs to be changed and enter new facture operation code. In the **Type** field, select the purpose of the primary address of the counterparty for which the facture operation code needs to be changed. For example, select **Business**. In the field **Counteragent type**, select **Customer** or **Vendor** depending on the type of the party for which the facture operation code needs to be changed. Make sure that **Kind of activity** in the factures for which the operation code needs to be changed is set to **Basic**. |
 
 #### Print a purchase book
 
@@ -161,3 +160,6 @@ On the **General ledger parameters** page, on the **Sales tax** tab, on the **Ta
 4. Set the **Date of reporting** option to **Yes** to filter factures by reporting date instead of facture date.
 5. Set the **Create XML file** option to **Yes** to create an electronic XML report in addition to the Excel report.
 6. Select **OK** to print facture accounting journals for the selected period.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

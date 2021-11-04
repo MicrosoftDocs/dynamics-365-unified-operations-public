@@ -4,11 +4,9 @@
 title: Process interest
 description: This procedure shows how to create, print, and post interest notes. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: CustPosting, SysQueryForm, CustInterestNote, SrsReportViewerForm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -71,3 +68,6 @@ This procedure shows how to create, print, and post interest notes. This task us
 5. Click **OK**.
 6. In the **Status** field, select 'Posted'.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

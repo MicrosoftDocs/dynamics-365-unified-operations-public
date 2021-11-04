@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Electronic reporting framework API changes
-description: This topic describes how the application programming interfaces (APIs) of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.11.
+title: Electronic reporting framework API changes for Application update 10.0.11
+description: This topic describes how the APIs of the Electronic reporting framework have been changed in Microsoft Dynamics 365 Finance version 10.0.11.
 author: NickSelin
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -27,7 +24,7 @@ ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: 10.0.11
 ---
 
-# Electronic reporting framework API changes
+# Electronic reporting framework API changes for Application update 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,11 +40,11 @@ In some cases, when an ER format mapping is called from a specific place in the 
 
 To complete this setup, configure your model mapping with an integration point. In the **Data sources** pane, you can select a single data source of your model mapping as the component of this integration point. Then select **Edit** to change the properties of this data source.
 
-![Selecting Edit to change the properties of a selected data source](./media/er-api-ds-integration-point1.png)
+![Selecting Edit to change the properties of a selected data source.](./media/er-api-ds-integration-point1.png)
 
 In the **Data source properties** dialog box, you can set the **Integration point** option to **Yes** to mark the data source as the component of the integration point.
 
-![Setting the Integration point option](./media/er-api-ds-integration-point2.png)
+![Setting the Integration point option.](./media/er-api-ds-integration-point2.png)
 
 You can then use the new API of the ER framework to call an ER format mapping and force it to use a model mapping that has been configured to contain a specific integration point. The following example shows how this new API can be used.
 
@@ -107,3 +104,6 @@ class ERIntegrationPointCodeSamples extends RunBaseBatch
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

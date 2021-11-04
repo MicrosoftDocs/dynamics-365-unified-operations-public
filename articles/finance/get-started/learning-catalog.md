@@ -6,12 +6,14 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 
+ms.prod:
+ms.technology:
+
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
@@ -20,11 +22,11 @@ ms.dyn365.ops.version: 8.1
 
 Find the right online training, in person workshops, and events for your role as a user of the Dynamics 365 Finance application.
 
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
     ### Business and Technical Decision Makers
 
@@ -174,3 +176,6 @@ Find the right online training, in person workshops, and events for your role as
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,20 +4,17 @@
 title: Set up cluster picking
 description: This topic describes how to set up cluster picking and how to apply item confirmation with cluster picking.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form:  WHSClusterProfile, WHSRFAutoConfirm
+ms.search.form:  WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -114,3 +111,6 @@ the cluster picking process. The setup is based on the product bar code setup.
 1. From the mobile device menu item, open **Work confirmation setup**. The
     **Product confirmation** option allows you to verify each piece of inventory
     from the mobile device when scanned.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

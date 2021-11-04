@@ -4,11 +4,9 @@
 title: Miscellaneous charges on free text invoices (Brazil)
 description: Brazilian legislation taxes  miscellaneous charges such as freight. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/23/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -72,3 +69,6 @@ Brazilian legislation taxes  miscellaneous charges such as freight. Miscellaneou
 38. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 39. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

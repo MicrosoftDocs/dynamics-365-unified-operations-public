@@ -4,11 +4,9 @@
 title: Set up a development environment
 description: This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 04/23/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 To set up a development environment for Dynamics 365 Commerce online extensibility development, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 Commerce Online Software Development Kit (SDK). You can install these tools in any order.
 
 ## Install Visual Studio Code
@@ -44,7 +39,7 @@ We recommend that you use a source code editor such as Visual Studio Code. Visua
 
 Go to the [Visual Studio Code site](https://code.visualstudio.com), and download and install the latest build. After installation is completed, Visual Studio Code is automatically opened and should resemble the following screenshot.
 
-![Visual Studio Code](media/setup-vs-code.png)
+![Visual Studio Code.](media/setup-vs-code.png)
 
 ## Install Node.js
 
@@ -60,7 +55,7 @@ Yarn is a dependency management tool that helps guarantee that you have all the 
 
 Currently, version 1.x is the only supported version. You can find the installer on the [Yarn website](https://classic.yarnpkg.com). As newer versions become supported, this document will be updated.
 
-## Install the Online SDK and Store Starter Kit
+## Install the Online SDK and module library
 
 The Online SDK provides everything that you require to extend your online channel with new modules, data actions, and themes.
 
@@ -71,7 +66,7 @@ git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
 ```
 
 > [!NOTE]
-> The whole SDK and Store Starter Kit (SSK) won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
+> The whole SDK and module library won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
 
 If you cloned the repo, you can remove the .git folder (the hidden directory under the root). You will use Yarn to pull down updated dependencies.
 
@@ -85,7 +80,7 @@ To download the SDK dependency packages, follow these steps.
 2. To get all the latest dependency packages that are required, run the **yarn** command.
 
     > [!IMPORTANT]
-    > This step should be done after you've completed any update to the packages.json file.
+    > This step should be done after you've completed any update to the package.json file.
 
     ```Console
     c:\repos\Msdyn365.Commerce.Online>yarn
@@ -122,11 +117,11 @@ c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 add-module product-feature
 
 This command can take several seconds to run. It adds a new module under \\src\\modules\\product-feature.
 
-## Clone an existing starter kit module
+## Clone an existing module library module
 
-Several of the available starter kit modules can be cloned. These modules include the carousel, content-block, and header modules. A cloned module is a copy of the module and has a new name. Unlike the starter kit modules, cloned modules don't get regular service updates. Instead of cloning a module to make layout changes, you might want to extend the views on the module.
+Several of the available module library modules can be cloned. These modules include the carousel, content-block, and header modules. A cloned module is a copy of the module and has a new name. Unlike the module library modules, cloned modules don't get regular service updates. Instead of cloning a module to make layout changes, you might want to extend the views on the module.
 
-For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
+For example, to modify the content-block module, run the **yarn msdyn365 clone MODULE\_LIBRARY\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
 
 
 ```Console
@@ -163,8 +158,15 @@ To install a new certificate on a developer environment, replace the public key 
 
 ## Additional resources
 
+[Get started with e-commerce online extensibility development](sdk-getting-started.md)
+
 [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
 
+[Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
+
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,30 +1,23 @@
 ---
-# required metadata
-
 title: Queries in the Acceptance test library
 description: This topic provides information about how to use queries in the Acceptance test library.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
@@ -87,3 +80,6 @@ loadLine = data.whs().loadLines().query().forLoad(load).withInventQty(10).single
 
 transferLine = data.invent().transferOrderLines().query().forTransferOrder(transferOrder).withInventDims([batch1]).single();
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

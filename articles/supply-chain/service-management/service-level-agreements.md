@@ -3,12 +3,10 @@
 
 title: Service level agreements overview
 description: In a service level agreement, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: SMAServicelevelagreement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -86,3 +83,6 @@ When you create a new service order for a service agreement that an SLA is assig
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,33 +1,15 @@
 ---
-# required metadata
-
 title: X++ loop statements
 description: This topic describes loop statements in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
+ms.devlang: xpp
 ms.reviewer: rhaertle
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-ms.custom: 150213
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ loop statements
@@ -77,7 +59,7 @@ The following code example demonstrates a **while** loop that traverses a contai
 
 ```xpp
 container cont = ["one", "two", "three"];
-int no = 0;
+int no = 1;
 while (no <= conlen(cont))
 {
     info(conPeek(cont, no));
@@ -164,3 +146,6 @@ if (found)
     // do something
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

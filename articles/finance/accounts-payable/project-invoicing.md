@@ -4,11 +4,9 @@
 title: Project invoicing
 description: This topic provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
 author: TaylorVH
-manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, Pr
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
 
@@ -137,3 +134,6 @@ You can create an invoice that has a negative amount, which becomes an invoice t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

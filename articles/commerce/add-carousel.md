@@ -4,11 +4,9 @@
 title: Carousel module 
 description: This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -35,8 +32,6 @@ ms.dyn365.ops.version:
 
 This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A carousel module is used to put multiple promotional items (including rich images) in a rotating carousel banner that customers can browse. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
 
 You can add content block modules inside a carousel module. The properties of the carousel module then define how those modules are rendered.
@@ -49,7 +44,7 @@ You can add content block modules inside a carousel module. The properties of th
 
 The following image shows an example of a carousel module that is used on a home page. This carousel module contains multiple content block items.
 
-![Example of a carousel module](./media/Hero.PNG)
+![Example of a carousel module.](./media/Hero.PNG)
 
 ## Carousel module properties
 
@@ -81,7 +76,7 @@ To add a carousel module to a new page and set the required properties, follow t
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Promo banner module](add-alert.md)
 
@@ -90,3 +85,6 @@ To add a carousel module to a new page and set the required properties, follow t
 [Content block module](add-hero-module.md)
 
 [Video player module](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

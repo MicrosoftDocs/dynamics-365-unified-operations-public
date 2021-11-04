@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Create and acquire assets from Accounts payable
-description: This task guide will walk through creation and acquisition of a fixed asset with the purchasing process. 
+description: This procedure walks through the creation and acquisition of a fixed asset with the purchasing process. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/13/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTabl
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will walk through creation and acquisition of a fixed asset with the purchasing process.  It uses the Accountant and Accounts payable clerks and the demo company USMF .
+This procedure walks through the creation and acquisition of a fixed asset with the purchasing process.  It uses the Accountant and Accounts payable clerks and the demo company USMF.
 
 
 ## Set Fixed assets parameters
@@ -59,3 +56,6 @@ This task guide will walk through creation and acquisition of a fixed asset with
 17. In the list, click the link in the selected row.
 18. Click **Post**. The fixed asset will be created and acquired when the invoice is posted.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

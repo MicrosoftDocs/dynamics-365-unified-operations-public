@@ -3,12 +3,10 @@
  
 title: Create delivery schedule
 description: This procedure demonstrates how to create a delivery schedule for a sales order. 
-author: omulvad
-manager: tfehr 
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesDeliveryS
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create delivery schedule
 
@@ -68,3 +65,6 @@ This procedure demonstrates how to create a delivery schedule for a sales order.
 22. Click OK.
 23. Click Yes.
 24. Close the page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

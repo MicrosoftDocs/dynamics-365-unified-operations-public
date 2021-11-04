@@ -2,13 +2,11 @@
 # required metadata
 
 title: Benefit eligibility policies
-description: This article provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: This topic provides information about benefit eligibility policies, which define who is eligible for specific benefits.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceD
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 16441
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -32,7 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Benefit eligibility policies
 
-This article provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic provides information about benefit eligibility policies, which define who is eligible for specific benefits.
 
 When you create benefits, you decide which benefits will be available to which employees. The following table shows examples of benefits that you might make available to specific employees.
 
@@ -54,3 +53,6 @@ You define the scope of the rule within the policy. For example, if you create a
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

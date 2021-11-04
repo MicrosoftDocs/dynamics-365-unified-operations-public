@@ -3,12 +3,10 @@
 
 title: Hazardous materials in products, orders, shipments, and loads
 description: This topic explains how to set hazardous material properties for released products, how to put stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Hazardous materials in products, orders, shipments, and loads
@@ -225,3 +222,6 @@ To run the compatibility check, follow these steps.
 1. On the Action Pane, on the **Loads** tab, in the **Actions** group, select **Compatibility check**.
 
 You receive a message that informs you of the results of the check.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

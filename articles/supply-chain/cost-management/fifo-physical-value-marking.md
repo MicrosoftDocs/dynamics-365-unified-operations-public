@@ -4,11 +4,9 @@
 title: FIFO with physical value and marking
 description: First in, First out (FIFO) is an inventory model in which the first acquired receipts are issued first. Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the financial date of the inventory transaction. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,14 +17,13 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 54682
 ms.assetid: dc0e2855-83a0-41a7-a398-3c7852597d1a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -60,7 +57,7 @@ In this example, the item model group isn't marked to include physical value. Th
 
 The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
 
-![FIFO without Include Physical Value](./media/fifowithoutincludephysicalvalue.gif) 
+![FIFO without Include Physical Value.](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -92,7 +89,7 @@ If the **Include physical value** check box is selected for an item on the **Ite
 
 Transaction 5b will be settled against receipt transaction 1b. There will be an adjustment of USD –11.25 to this issue transaction. The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. The following illustration shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option is used. 
 
-![FIFO with Include Physical Value](./media/fifowithincludephysicalvalue.gif) 
+![FIFO with Include Physical Value.](./media/fifowithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -124,7 +121,7 @@ Marking is a process that lets you link, or mark, an issue transaction to a rece
 
 The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. The following illustration shows the effects of the FIFO inventory model on this series of transactions when marking between issues and receipts is used. 
 
-![FIFO with Marking](./media/fifowithmarking.gif) 
+![FIFO with Marking.](./media/fifowithmarking.gif) 
 
 **Key to the diagram**
 
@@ -142,3 +139,6 @@ The new running average cost price reflects the average of the financially and p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

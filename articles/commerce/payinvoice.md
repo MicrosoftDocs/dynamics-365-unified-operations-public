@@ -4,11 +4,9 @@
 title: Set up pay invoice scenarios
 description: This topic describes how to configure Dynamics 365 Commerce to support various scenarios relating to invoice payments.
 author: josaw1
-manager: AnnBe
 ms.date: 11/14/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -50,3 +47,6 @@ To enable these scenarios, the functionality profile for stores must be configur
 
 > [!NOTE]
 > Payment or settlement of partial amounts is not yet supported.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

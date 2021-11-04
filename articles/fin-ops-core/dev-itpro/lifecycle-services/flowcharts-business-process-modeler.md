@@ -2,13 +2,11 @@
 # required metadata
 
 title: Flowcharts in Business process modeler (BPM)
-description: This topic explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
+description: This topic describes how to modify connected flowcharts, create and upload flowcharts from Task recorder, and import a business process model flowchart.
 author: AngelMarshall 
-manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11453
 ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
@@ -34,7 +31,7 @@ ms.dyn365.ops.version: 7.0
 
 [!include [banner](../includes/banner.md)]
 
-> [!IMPORTAMT]
+> [!IMPORTANT]
 > Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler).
 
 You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This topic explains how you can view the default connected flowcharts, export a connected flowchart as a Visio file, and upload and view unconnected flowcharts.
@@ -75,7 +72,7 @@ To view a connected flowchart, follow these steps:
 
 1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
 2.  In the **Project libraries** section, select a library to display it. 
-3.  Expand the business process library and then click a library node that has a flowchart icon associated with it: [![Flowchart BPM topic1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
+3.  Expand the business process library and then click a library node that has a flowchart icon associated with it: [![Flowchart BPM topic1.](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
 
     The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Process steps are displayed in the right pane. 
 
@@ -153,7 +150,10 @@ Unconnected flowcharts, such as a Visio diagram, can be very helpful for describ
 <!--
 ### View an unconnected flowchart
 
-A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
+A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2.](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
 --->
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

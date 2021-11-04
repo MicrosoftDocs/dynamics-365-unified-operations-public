@@ -2,13 +2,11 @@
 # required metadata
 
 title: Warehouse performance Power BI content
-description: This topic describes what's included in the Warehouse performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+description: This topic describes what's included in the Warehouse performance Power BI content.
 author: Mirzaab 
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272953
 ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
@@ -117,3 +114,6 @@ The following key aggregate measurements are used as the basis of the content.
 | Shipping performance        | Shipped by product                       | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
 | Shipping performance        | Shipped by customer                      | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
 | Shipping performance        | Shipped by site / warehouse              | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

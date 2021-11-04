@@ -3,11 +3,9 @@
 title: Fixed assets and intangible assets registers
 description: This topic provides information about fixed assets and intangible assets registers.
 author: anasyash
-manager: AnnBe
-ms.date: 08/07/2020
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,12 +14,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 
@@ -38,7 +35,7 @@ Fixed assets (FA) and intangible assets (IA) are considered depreciable assets. 
 -   The depreciation of fixed assets and intangible assets in tax accounting can be calculated by using only two methods of depreciation: linear and non-linear.
 -   Losses from the sale of a depreciable asset in tax accounting are recognized as deferrals and should be written off evenly, starting in the period after the period of sale and ending by the period that was initially specified as the end of the asset's lifetime.
 
-For the tax accounting of fixed assets and intangible assets, create the following registers:
+For the tax accounting of fixed assets and intangible assets, create the following registers as described in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register):
 
 -   Goods cost calculation
 -   FA – information about object
@@ -52,7 +49,7 @@ For the tax accounting of fixed assets and intangible assets, create the followi
 
 ### Set up expense codes
 
-For **FA – information about object**, **IA – object information**, **FA depreciation**, and **IA depreciation** registers, you must create expense codes and income codes on the **Expense code** page, and you must set up ledger accounts for the expense codes.
+For **FA – information about object**, **IA – object information**, **FA depreciation**, and **IA depreciation** registers, you must create expense codes and income codes on the **Expense code** page, and you must set up ledger accounts for the expense codes. For more information, see [Expense and income codes](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
 
 ### Set up register parameters
 
@@ -181,7 +178,7 @@ The following fields are also available: **Transaction description**, **Qty**, *
 14. Create the tax register journal for the second month of the year 2019. Calculate all registers.
 15. In the **Goods cost calculation** register, you should see the following information.
 
-    ![A screenshot of a computer Description automatically generated](media/1_Goods_cost_calculation.png)
+    ![A screenshot of a computer Description automatically generated.](media/1_Goods_cost_calculation.png)
 
 ## <a name="register-information-fixed"></a>The FA – information about object register
 
@@ -461,3 +458,6 @@ Data from the **Depreciation bonus recovery** register is included in the **Inco
     | The naming of object of the account | Depreciation bonus recovery for FA \# 4031                                  |
     | Income amount                       | 60,000.00                                                                   |
     | CTL amount                          | 12,000.00                                                                   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

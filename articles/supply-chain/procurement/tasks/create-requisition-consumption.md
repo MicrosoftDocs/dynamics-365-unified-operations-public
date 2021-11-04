@@ -3,12 +3,10 @@
  
 title: Create a requisition for consumption
 description: This topic describes the process of creating a requisition. 
-author: mkirknel
-manager: tfehr 
+author: Henrikan
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -96,3 +93,6 @@ This topic describes the process of creating a requisition. It shows you differe
 6. Close the page.
 7. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

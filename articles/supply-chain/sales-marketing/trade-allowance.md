@@ -4,25 +4,22 @@
 title: Trade allowance management
 description: This topic describes trade allowance management for Dynamics 365 Supply Chain Management.
 author: t-benebo
-manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
@@ -66,7 +63,7 @@ A trade allowance agreement is an incentive program where pay-for-performance mo
 
 Funds that are allocated to trade allowance agreements are recorded on the **Funds** page. To open the **Funds** page, select **Sales and marketing** \> **Trade allowances** \> **Funds** \> **Funds**.
 
-![Funds page](./media/trade-allowance-management-funds-page.png "Funds page")
+![Funds page.](./media/trade-allowance-management-funds-page.png "Funds page")
 
 On the **Funds** page, you can view the details of promotional funds.
 
@@ -82,7 +79,7 @@ After the fund definition is in place, the next step in promotion planning is to
 
 Trade allowance agreements are recorded on the **Trade allowance agreements** page. To open the **Trade allowance agreements** page, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**.
 
-![Trade allowance agreements page](./media/trade-allowance-management-agreements-page.png "Trade allowance agreements page")
+![Trade allowance agreements page.](./media/trade-allowance-management-agreements-page.png "Trade allowance agreements page")
 
 #### Header
 
@@ -110,7 +107,7 @@ The **Merchandizing events** tab shows the types of events covered by an agreeme
 
 When you select the merchandizing event and then select the **Amounts** tab, the details for the event are found.
 
-![Trade allowance agreement lines](./media/trade-allowance-management-agreements-lines.png "Trade allowance agreement lines")
+![Trade allowance agreement lines.](./media/trade-allowance-management-agreements-lines.png "Trade allowance agreement lines")
 
 In the **Trade allowance lines** section, you specify the quantity or amount ranges that the customer must achieve for definitions to obtain the rewards.
 
@@ -178,7 +175,7 @@ To approve a merchandising event of the **Lump sum** type, select the event on t
 
 ## Settle the deduction that is due and the customer short-pay by using the Deduction workbench
 
-Often, in anticipation of bill-backs, customers choose to short-pay selected invoices. To prevent payment reconciliation issues in the future, the A/R clerk registers those short-pays as deductions when he or she records the actual customer payments. Then, on the Deduction workbench, those customer deductions can easily be settled against the claim amounts that are due from the company.
+Often, in anticipation of bill-backs, customers choose to short-pay selected invoices. To prevent payment reconciliation issues in the future, the A/R clerk registers those short-pays as deductions when they record the actual customer payments. Then, on the Deduction workbench, those customer deductions can easily be settled against the claim amounts that are due from the company.
 
 To register a customer's short-pay in the Payment journal, select **Accounts receivable** \> **Payments** \> **Payment journal**, and create a new payment journal. Then, on the Action Pane, select **Deductions**. On the **Deduction** page, you can create and track the amount that was short-paid.
 
@@ -204,3 +201,6 @@ To get a more analytical overview of the various performance measures for the pr
 
 To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view. To go to the Analysis view, click **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, click **Analysis**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

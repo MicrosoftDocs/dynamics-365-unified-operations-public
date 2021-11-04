@@ -1,29 +1,24 @@
 ---
 
 title: Entities in the Acceptance test library
-description: This topics discusses the test entity class that represents data and associated behavior.
+description: This topic discusses the test entity class that represents data and associated behavior.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
@@ -297,3 +292,6 @@ public AtlQueryWHSLoadLines lines()
 ## Additional resources
 
 [Queries in the Acceptance test library](concepts-queries.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

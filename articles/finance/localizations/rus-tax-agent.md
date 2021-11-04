@@ -4,11 +4,9 @@
 title: Value-added tax (VAT) for tax agents (Russia)
 description: This topic explains how to set up VAT and perform transactions for tax agent for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: TaxAuthority, VATOperationCodeTable_RU
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -179,3 +176,6 @@ Before you can create and print a facture report for received invoices, issued i
 6. Select **Print** \> **Original** for the facture that is created on the **Tax agent - charged** sales tax transaction.
 
 The facture report shows the number and date of the payment order, the base amount without VAT, and the computational tax rate (VAT value ÷ VAT value + 100).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

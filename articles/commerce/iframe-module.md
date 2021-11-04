@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 11/04/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology:
 
 # optional metadata
@@ -17,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang:
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt\_pltfrm:
 ms.custom:
 ms.assetid:
@@ -32,17 +30,19 @@ ms.dyn365.ops.version: Release 10.0.13
 # Iframe module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 An iframe module provides an iframe (inline frame) that hosts external content on a site. For example, it can be used to host a YouTube video or a PDF file viewer on any site page. 
 
-An iframe module requires a target URL. It then hosts the content of the target page inside an HTML **iframe** element. External URLs must be on the allow list (also known as a "whitelist") per the site's content security policy (CSP) directives. For iframe content, URLs should be allowed by using the **frame-ancestor** directive. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
+An iframe module requires a target URL. It then hosts the content of the target page inside an HTML **iframe** element. External URLs must be on the allow list per the site's content security policy (CSP) directives. For iframe content, URLs should be allowed by using the **frame-ancestor** directive. For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).
+
+> [!NOTE]
+> The iframe module is available in the Dynamics 365 Commerce 10.0.13 release.
 
 The following image shows examples of iframe modules that showcase external videos on site pages.
 
-![Example of iframe modules that showcase external videos](./media/ecommerce-iframe.PNG)
+![Example of iframe modules that showcase external videos.](./media/ecommerce-iframe.PNG)
 
 ## Iframe module properties
 
@@ -77,6 +77,9 @@ To add an iframe module to a page to show an external video, follow these steps.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Manage Content Security Policy (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

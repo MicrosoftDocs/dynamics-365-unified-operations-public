@@ -4,11 +4,9 @@
 title: File ER destination type
 description: This topic provides information about configuring a file destination for an ER format.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# <a name="FileDestinationType">File destination</a>
+# File destination
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,9 +35,12 @@ You can configure a file destination for each FOLDER or FILE component of an Ele
 
 On the **Destination settings** page, if you set **Enabled** to **Yes**, an open or save dialog box opens when the configuration has finished running.
 
-[![Destination setting page](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
+[![Destination setting page.](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
 
 ## Additional resources
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

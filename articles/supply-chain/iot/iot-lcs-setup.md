@@ -4,11 +4,9 @@
 title: Install the IoT Intelligence add-in in LCS
 description: This topic explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS).
 author: robinarh
-manager: tfehr
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,13 +15,12 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
-ms.search.scope: Core, Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 
@@ -57,7 +54,10 @@ LCS setup is now completed. The next step is to [set up the scenarios](iot-scena
 
 ## <a id="uninstall-addin"></a>Uninstall the add-in
 
-1. In Supply Chain Management, [disable the scenarios](iot-scenario-setup.md#how-to-disable-a-scenario).
+1. In Supply Chain Management, [disable the scenarios](iot-scenario-setup.md#disable-a-scenario).
 2. In LCS, go to your Supply Chain Management environment details.
 3. Scroll to the **Environment add-ins** section.
 4. Select **Uninstall** for the IoT Intelligence add-in.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
  
 title: Count inventory in a warehouse
 description: This topic describes the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. 
-author: MarkusFogelberg
-manager: tfehr 
+author: yufeihuang
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, Invent
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Count inventory in a warehouse
 
@@ -58,3 +55,6 @@ This topic describes the process of creating and posting an inventory counting j
 1. Select **Inventory**.
 2. Select **Transactions**. Here you can see any related transactions that will be created when you post your inventory counting journal.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

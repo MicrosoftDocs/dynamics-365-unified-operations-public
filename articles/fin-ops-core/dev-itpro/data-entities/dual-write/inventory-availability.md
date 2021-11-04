@@ -1,33 +1,14 @@
 ---
-# required metadata
-
 title: Inventory availability in dual-write
 description: This topic provides information about how to check inventory availability in dual-write.
-author: yijialuan
-manager: AnnBe
+author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
-ms.author: riluan
-ms.dyn365.ops.version: 
+ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-
 ---
 
 # Inventory availability in dual-write
@@ -62,3 +43,21 @@ The dialog box returns the ATP information from Supply Chain Management. This in
 - Receipt quantity
 - Issue quantity
 - On-hand quantity
+
+## How it works
+
+When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, or **Invoices** page, a live dual-write call is made to the **Onhand inventory** API. The API calculates the on-hand inventory for the given product. The result is stored in the **InventCDSInventoryOnHandRequestEntity** and **InventCDSInventoryOnHandEntryEntity** tables, and then is written to Dataverse by dual-write. To use this functionality, you need to run the following dual-write maps. Skip initial synchronization when you run the maps.
+
+- CDS inventory on-hand entries (msdyn_inventoryonhandentries)
+- CDS inventory on-hand requests (msdyn_inventoryonhandrequests)
+
+## Templates
+
+The following templates are available for the exposing the onhand inventory data.
+
+Finance and operations apps | Customer engagement apps     | Description
+---|---|---
+[CDS inventory on-hand entries](mapping-reference.md#145) | msdyn_inventoryonhandentries |
+[CDS inventory on-hand requests](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

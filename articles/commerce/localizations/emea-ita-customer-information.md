@@ -4,11 +4,9 @@
 title: Customer information management for Italy
 description: This topic describes how to handle customer information in POS for Italy.
 author: sepism
-manager: annbe
-ms.date: 01/14/2020
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: RetailFunctionalityProfile, RetailParameters
 audience: Application User
 # ms.devlang:
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Italy
@@ -39,7 +36,7 @@ This topic describes how you can handle customer information, such as the custom
 You can specify the customer information, such as the fiscal code or lottery code, when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts, and it can be used for the national lottery. Personal fiscal codes can also be used to search for a customer in POS.
 
 > [!NOTE]
-> This functionality is available in version 10.0.7 and later.
+> It isn't possible to specify a lottery code for a customer in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode may be added in future updates.
 
 ## Setup
 
@@ -69,7 +66,7 @@ On the **Button grids** page, select the button grid where the operation should 
 
 If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the **Add customer information** operation.
 
-To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
+To activate the inquiry for customer information, enable the **(Italy) Customer information management in Retail POS** feature in the **Feature management** workspace, and set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
 
 ### Set up receipt formats
 
@@ -278,3 +275,6 @@ Follow these steps to create deployable packages that contain Commerce component
 
 1. Run **msbuild** for the whole Retail software development kit (SDK) to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
  
 title: Create a withdrawal kanban rule
 description: This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment. 
-author: ChristianRytt
-manager: tfehr 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLooku
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a withdrawal kanban rule
 
@@ -66,3 +63,6 @@ This procedure shows the setup that is needed to create a withdrawal kanban rule
     * This will create two kanbans.  
     * Note that 2 kanbans, for 5 each, was created for this withdrawal kanban rule.  This is the last step in this procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

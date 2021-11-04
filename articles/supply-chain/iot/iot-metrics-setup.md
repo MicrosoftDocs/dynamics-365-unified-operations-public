@@ -4,21 +4,18 @@
 title: Set up metrics for IoT Intelligence
 description: This topic explains how to set up metrics for IoT Intelligence.
 author: robinarh
-manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer
+audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -75,3 +72,6 @@ The chart is shown.
 1. In Supply Chain Management, go to **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**.
 2. On the **Metric keys** page, select the metric key to delete.
 3. Select **Delete**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

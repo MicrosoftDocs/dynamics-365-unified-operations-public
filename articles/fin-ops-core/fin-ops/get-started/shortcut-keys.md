@@ -2,13 +2,11 @@
 # required metadata
 
 title: Keyboard shortcuts
-description: The following keyboard shortcuts can help you quickly and efficiently enter data. 
+description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
@@ -33,11 +30,14 @@ ms.dyn365.ops.version: AX 7.0.0
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-The following keyboard shortcuts can help you quickly and efficiently enter data.
+The following keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps .
 
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
+
+Some of the shortcuts on this page are *key chords*, meaning they require two consecutive sets of key combinations (separated by a comma) that need to be independently pressed to trigger the required action. For example, the shortcut "Alt+M,A" requires the user to first press "Alt+M", release the keys, and then press "A". 
 
 ## Finding a shortcut
 
@@ -155,14 +155,15 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
 | Open grid filtering for the current column (with focus in the header row)                                              | Enter                           |
+| Resize the current column to fit the contents (with focus in the header row)                                           | A                               |
 
 ## Input control shortcuts
 
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
-| Enter the session date in a date field                                       | D                         |
-| Enter the current date in a date field                                       | T                         |
+| Enter the session date in a date field                                       | D                             |
+| Enter the current date in a date field                                       | T                             |
 | Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
@@ -199,7 +200,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to the main page content (with focus in another pane)                    | Alt+M,M                    |
 | Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
 
-## Personalization shortcuts
+## [Personalization](personalize-user-experience.md) shortcuts 
 
 | To do this                                                                                                             | Press                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -209,8 +210,8 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Use the Move tool (when in personalization mode)                                                                       | M                                   |
 | Select the current control as the one to move (when using the Move tool and no control has been selected to move yet)  | Space or Enter                      |
 | Clear the control to move (when using the Move tool)                                                                   | Esc                                 |
-| Move to the next position for the selected control (when using the Move tool)                                          | Tab or Right arrow or Down arrow    |
-| Move to the previous position for the selected control (when using the Move tool)                                      | Shift+Tab or Left arrow or Up arrow |
+| Move the selected control to the next position (when using the Move tool)                                              | Tab or Right arrow or Down arrow    |
+| Move the selected control to the previous position (when using the Move tool)                                          | Shift+Tab or Left arrow or Up arrow |
 | Use the Hide tool (when in personalization mode)                                                                       | H                                   |
 | Switch whether the current control is visible or hidden (when using the Hide tool)                                     | Space or Enter                      |
 | Use the Skip tool (when in personalization mode)                                                                       | K                                   |
@@ -242,7 +243,24 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move up/down a row in the lookup                                                                                        | Up arrow / Down arrow            |
 | Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
+
+## [Task recorder](../../dev-itpro/user-interface/task-recorder.md) shortcuts 
+
+| To do this                                                                    | Press                      |
+|-------------------------------------------------------------------------------|----------------------------|
+| Stop the recording (while recording)                                          | Alt+R,S                    |
+| Toggle the visibility of the Task recorder pane (while recording)             | Alt+R,T                    |
+| Toggle Rails mode (while playing a task guide)                                | Alt+R,L                    |
+| Go to the previous step (while playing a task guide)                          | Alt+R,P                    |
+| Go to the next step (while playing a task guide)                              | Alt+R,N                    |
+| Toggle focus between the page and the animated pop-up prompt (while playing a task guide) | Alt+R,F               |
+| Expand/collapse the animated pop-up prompt (while playing a task guide)              | Alt+R,C                    |
+| Show more/less information in the animated pop-up prompt (while playing a task guide) | Alt+R,M                    |
+
 ## Additional resources
 
-- [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

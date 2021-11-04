@@ -3,12 +3,10 @@
 
 title: Fixed asset allocation rules for Japan
 description: This article answers some frequently asked questions about fixed asset allocation rules for Japan.
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10194
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -65,3 +62,6 @@ If the total rounded-down depreciation cost that must be allocated across each d
 
 ## Additional resources
 - [Allocate carrying amount of shared asset and goodwill to cash generating units](./tasks/allocate-carrying-amount.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

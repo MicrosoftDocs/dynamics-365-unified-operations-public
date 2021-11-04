@@ -4,11 +4,8 @@
 title: VALUE ER function
 description: This topic provides information about how the VALUE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
-ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +15,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -30,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="VALUE">VALUE ER function</a>
+# VALUE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,3 +65,6 @@ Commas and dot characters (.) are considered decimal separators, and a leading h
 ## Additional resources
 
 [Type conversion functions](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

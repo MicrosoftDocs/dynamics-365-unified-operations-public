@@ -4,11 +4,9 @@
 title: View journal entries and transactions
 description: This article explains the various ways that you can view journal entries and transactions. 
 author: aprilolson
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerTransVoucher
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13031
 ms.assetid: 281c7ea6-4dfd-4d1f-994f-c361ee299dbe
@@ -66,3 +63,6 @@ In addition to the financial reports, you can use the following ledger reports t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

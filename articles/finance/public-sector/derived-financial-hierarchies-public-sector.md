@@ -4,11 +4,9 @@
 title: Derived financial hierarchies in the public sector
 description: This article describes the derived financial hierarchies functionality that is available for the public sector. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: EcoResCategory, EcoResCategoryHierarchyListPage, EcoResCategoryH
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20911
 ms.assetid: a1b30d2a-a370-402a-b3bd-d562adca55f0
@@ -54,3 +51,6 @@ An organization has an employee wellness program and an employee education progr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

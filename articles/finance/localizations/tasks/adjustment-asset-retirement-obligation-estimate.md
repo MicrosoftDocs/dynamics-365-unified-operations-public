@@ -4,11 +4,9 @@
 title: Adjustment of the asset retirement obligation estimate
 description: For Japan, the initial estimate of the asset retirement obligations (ARO) can be adjusted. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: AssetTable, AssetRetirementObligation_JP, AssetRetirementObligat
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -72,3 +69,6 @@ This task was created using the demo data company JPMF.
     * Confirm the adjustment is proposed. The amount proposed is discounted to the present value.  
 13. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

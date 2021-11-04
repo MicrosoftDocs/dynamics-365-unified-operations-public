@@ -4,11 +4,9 @@
 title: Tax payments in Brazil
 description: This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 author: sndray
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270254
 ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 
-Overview
---------
+## Overview
 
 Every type of tax in Brazil has its own process, due date, and additional tax statement information that is required by the tax authorities. The **Fiscal books** module generates the Sistema Publico de Escrituração Digital (SPED) statements that are required for taxes. The tax payment process is separated by tax types: ICMS, ICMS-ST, ICMS-DIF, IPI, ISS, and PIS-COFINS.
 
@@ -50,7 +46,7 @@ The difference between the tax amount that is collected on sales of goods and th
 -   **Create from assessment** – Collect and pay tax monthly, in accordance with the rules that are established by the tax authority.
 -   **Other debits** – Collect and pay a specific tax amount outside the regular process when the tax authority requires the payment.
 
-![Creating tax payments](./media/taxpaymentsbra.jpg) 
+![Creating tax payments.](./media/taxpaymentsbra.jpg) 
 
 
 ### Overview
@@ -169,3 +165,6 @@ For more information, see the following topics:
  - [Calculate interest and fines on customer payments](tasks/br-00066-2-calculate-interest-fines-customer-payments.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

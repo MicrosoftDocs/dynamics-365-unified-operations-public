@@ -2,13 +2,11 @@
 # required metadata
 
 title: Submit alerts about country/region-specific regulatory features
-description: This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service. This topic also explains how to track planned and released regulatory features through LCS Issue search. 
+description: This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service.
 author: ShylaThompson
-manager: AnnBe
-ms.date: 12/07/2017
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27791
 ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
@@ -35,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the  Dynamics regulatory alert submission service. This topic also explains how to track planned and released regulatory features through LCS Issue search. 
 
-Accessing the regulatory alert submission service
--------------------------------------------------
+## Accessing the regulatory alert submission service
 
 In Dynamics Lifecycle Services (LCS), in your project, scroll to the right side of the page, and then, under **More tools**, click the **Alert service** tile. 
 
@@ -113,7 +109,7 @@ Use Issue search to identify whether a regulatory feature, that is related to th
                 <p>Feature reference</p>
                 </td>
                 <td>
-                <p>Enter the feature reference, if you know it. The list of feature for specific country can be discovered in the Localization portal: <a href="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC" data-raw-source="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC">https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC</a>. </p>
+                <p>Enter the feature reference, if you know it.</p>
                 </td>
             </tr>
             <tr>
@@ -214,3 +210,6 @@ To narrow the search even more, you can apply the following additional filters
 -   **Product** - Select the products and product versions that you're interested in.
 -   **Status** - Select specific statuses.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

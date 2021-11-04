@@ -3,26 +3,23 @@
 
 title: Warehouse management overview
 description: Use Warehouse management to monitor and automate warehouse processes. 
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: WHSParameters
+ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -54,7 +51,7 @@ You must configure components for inbound and outbound warehouse process workflo
 - Full batch and serial item support
 - Various item receiving capabilities
 - Multiple picking strategies
-- Out-of-the-box support for the next generation of barcode scanners
+- Out-of-the-box support for the next generation of bar code scanners
 - Pallet/container types for warehouse processes
 - Advanced counting capabilities
 - Label printing and label routing with Zebra ZPL support
@@ -77,3 +74,6 @@ You can find opinions, news, and other information about Warehouse management an
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,28 +3,25 @@
 
 title: Item where used
 description: This topic explains how to get an overview of where an item is used in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetItemWhereUsed, EntAssetItemWhereUsedCalculate 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -74,5 +71,8 @@ You can make a calculation for a specific item to get an overview of where in As
 
 In the screenshot below, you see an example of an item-where-used calculation for item number "1000".
 
-![Example of item where used calculation](media/12-controlling-and-reporting.png)
+![Example of item where used calculation.](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

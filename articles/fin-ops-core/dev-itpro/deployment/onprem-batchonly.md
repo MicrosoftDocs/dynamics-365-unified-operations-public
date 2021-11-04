@@ -4,11 +4,9 @@
 title: Configure batch-only and interactive-only AOS nodes in on-premises deployments
 description: This topic explains how to configure your environment so that you can deploy batch-only and interactive-only AOS nodes.
 author: faix
-manager: AnnBe
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -222,3 +219,6 @@ For production environments, there should be at least three nodes of each type.
      > [!IMPORTANT]
     > This step causes downtime so be sure that your environment can be unavailable for some time. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

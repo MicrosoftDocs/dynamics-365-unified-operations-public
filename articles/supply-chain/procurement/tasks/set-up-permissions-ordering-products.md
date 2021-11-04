@@ -3,12 +3,10 @@
  
 title: Set up permissions for ordering products on behalf of someone else
 description: This topic explains how to grant workers permission to prepare purchase requisitions on behalf of other workers. 
-author: mkirknel
-manager: tfehr 
+author: Henrikan
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up permissions for ordering products on behalf of someone else
 
@@ -48,3 +45,6 @@ This topic explains how to grant workers permission to prepare purchase requisit
 2. Use the Quick Filter to find the worker that you just added as the requester.
 3. Select the requester. The Preparer list shows the people who have permission to order items on behalf of the requester who is selected in the left pane.  You can add additional preparers here. This view also lets you grant the requester permission to create requisitions in legal entities and operating units that aren't that person's primary legal entity or operating unit.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

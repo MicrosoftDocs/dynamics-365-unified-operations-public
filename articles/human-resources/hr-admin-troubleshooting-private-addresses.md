@@ -2,13 +2,11 @@
 # required metadata
 
 title: Access to private addresses by security role
-description: This article explains how to resolve the issue where a customer can't access private addresses.
-author: andreabichsel
-manager: AnnBe
-ms.date: 11/02/2018
+description: This topic explains how to resolve when a customer can't access private addresses.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,20 +15,21 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Access to private addresses by security role
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Issue**
 
@@ -44,4 +43,7 @@ To resolve the issue, the customer must follow these steps for the duplicated se
 2. On the **Private location security** tab, move the new security role from the **Available roles** list to the **Selected roles** list.
 3. Select **Save**.
 
-![Global address book parameters page](media/GAD-parameters.png)
+![Global address book parameters page.](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

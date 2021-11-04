@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Deliver employee benefits program
-description: This article shows you how to create benefit elements which will be used when creating a new benefit. 
-author: andreabichsel
-manager: AnnBe 
-ms.date: 02/03/2020
+description: This topic explains how to create benefit elements which will be used when creating a new benefit. 
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,20 +14,21 @@ ms.technology:
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart  
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03 
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
 
 # Deliver employee benefits program
 
-This article shows you how to create benefit elements which will be used when creating a new benefit. The demo data company used to create this task is USMF. This task is intended for a Compensation and Benefits manager.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic explains how to create benefit elements which will be used when creating a new benefit. The demo data company used to create this task is USMF. This task is intended for a Compensation and Benefits manager.
 
 
 ## Create benefit elements
@@ -72,3 +71,6 @@ This article shows you how to create benefit elements which will be used when cr
 16. In the Basis field, select an option.
 17. In the Amount or rate field, enter a number.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Brazil NF-e process overview 
 description: This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 author: sndray
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: EFDocContingencyMode_BR, EFDocContingencyModeHistory_BR, EFDocCo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269114
 ms.assetid: 7cb522a4-2f84-4399-a60d-8692df6e08f3
@@ -74,3 +71,6 @@ After the status of the NF-e is received from SEFAZ, you can perform the followi
  - [NF-e 3.10 (Brazil)](tasks/br-00053-nf-e-3-10.md)
  - [Automatic transmission of NF-e fiscal documents (Brazil)](tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

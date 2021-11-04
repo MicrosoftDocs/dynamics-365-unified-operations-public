@@ -3,12 +3,10 @@
 
 title: Integrate asset management with fixed assets
 description: This topic explains how to integrate the Asset management and Fixed assets modules, so that you can link fixed assets with maintenance assets.
-author: kamaybac
-manager: tfehr
+author: johanhoffmann 
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-17
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Integrate asset management with fixed assets
@@ -120,3 +117,6 @@ To remove an existing association between a maintenance asset and a fixed asset,
 1. Find and open the fixed asset.
 1. On the **Fixed asset** FastTab, clear the value from the **Functional location** field.
 1. On the Action Pane, select **Save**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

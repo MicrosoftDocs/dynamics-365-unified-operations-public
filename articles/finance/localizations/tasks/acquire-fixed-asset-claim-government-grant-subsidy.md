@@ -4,11 +4,9 @@
 title: Acquire a fixed asset and claim for the government grant subsidy
 description: Use this task to walk through acquiring a fixed asset and then claiming it for a government grant. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -73,3 +70,6 @@ This task uses the JPMF demo data.
     * Enter the amount of the government grant.  
 14. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

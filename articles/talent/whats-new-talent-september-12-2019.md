@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Talent (September 10, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
-author: Darinkramer
-manager: AnnBe
-ms.date: 9/10/2019
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent for September 10, 2019.
+author: andreabichsel
+ms.date: 09/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,12 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-09-10
 ms.dyn365.ops.version: Talent
 
@@ -59,11 +55,11 @@ For more information about how changes are published, see [Provision Talent](./p
 
 ### Platform update 29
 
-For more details about Platform update 29, see [Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+For more details about Platform update 29, see [Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
-### New job base entity available in data management framework (347202)
+### New job base table available in data management framework (347202)
 
-With this release, a new Base Job entity is available for importing/exporting data. 
+With this release, a new Base Job table is available for importing/exporting data. 
 
 ### Worker advanced security policy incorrectly displays positions in Position Hierarchy (354868)
 
@@ -83,7 +79,7 @@ With this change, you can change the employment date to a time other than 23:59:
 
 ### Unable to set up expiration date on an earning code through Data management (336604)
 
-In this release, you can set up earning codes that expire through the **PayrollWorkerPositionEarningCodeEntity** entity.
+In this release, you can set up earning codes that expire through the **PayrollWorkerPositionEarningCodeEntity** table.
 
 ### Employee development analytic report doesn't display data (348737)
 
@@ -108,3 +104,6 @@ This release now provides the ability to apply checklists for employees that are
 This functionality is now available in sandbox environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
 
 For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

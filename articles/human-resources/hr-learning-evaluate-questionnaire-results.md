@@ -2,13 +2,11 @@
 # required metadata
 
 title: View and evaluate the results of questionnaires
-description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+description: This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollect
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -32,12 +29,14 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # View and evaluate the results of questionnaires
 
-This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 
 After respondents complete a questionnaire, you can view and evaluate the questionnaire results in the following ways:
 
 -   **Completed answer sessions** – View details about the questionnaires that respondents have completed, and generate reports to summarize answers and any points that were earned.
--   **Result groups** – View result group details and statistics for questionnaires. Result group statistics can be generated for either a single answer session  of a questionnaire or all answer sessions.
+-   **Result groups** – View result group details and statistics for questionnaires. Result group statistics can be generated for either a single answer session of a questionnaire or all answer sessions.
 -   **Questionnaire statistics** – Specify criteria to calculate statistics for a specific group of respondents.
 
 You can also generate various reports to view results that are sorted by person, answer session, or result group. The following reports that are related to completed questionnaires are available:
@@ -77,3 +76,5 @@ You can use questionnaire statistics to analyze the results of a completed quest
 -   Select or verify criteria to analyze results by respondent or questionnaire characteristics. For example, by selecting **ZIP/postal code**, you can analyze the correlation between a respondent’s location and correct answers.
 
 The settings that you define are saved and can be used to periodically recalculate results.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

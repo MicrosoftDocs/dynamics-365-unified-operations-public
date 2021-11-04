@@ -4,11 +4,9 @@
 title: Post vouchers from the general journal
 description: This procedure walks you through posting Chinese vouchers using the general journal. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransD
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -62,3 +59,6 @@ This procedure was created using the demo data company CNMF. For the CNMF demo d
 23. Select the Print account dimension check box.
 24. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

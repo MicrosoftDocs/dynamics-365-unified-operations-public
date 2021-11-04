@@ -3,12 +3,10 @@
 
 title: Inventory tag counting
 description: This topic provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory.
-author: MarkusFogelberg
-manager: tfehr
+author: yufeihuang
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: InventJournalCount, InventJournalCountTag
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm:
 ms.custom: 11594
 ms.assetid: 03772d0e-5c37-454c-ab85-82bc8b60a76d
 ms.search.region: Global
 # ms.search.industry:
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -41,3 +38,6 @@ By creating lines on the **Tag counting** page, you place a tag number on each i
 ## Additional resources
 
 [Cycle counting](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

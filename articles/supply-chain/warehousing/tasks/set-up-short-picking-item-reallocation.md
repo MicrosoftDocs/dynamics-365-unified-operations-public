@@ -3,28 +3,25 @@
  
 title: Set up short picking item reallocation
 description: This topic shows how to enable warehouse workers to quickly find alternative locations if there isn't sufficient inventory at the location they've been directed to. 
-author: ShylaThompson
-manager: tfehr 
+author: Mirzaab
 ms.date: 06/29/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-ms.search.form: WHSWorkException, WHSWorker   
+ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException    
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up short picking item reallocation
 
@@ -66,3 +63,6 @@ The USMF demo data company was used to create this procedure.
 6. In the list, select a **User ID**. For example, 24.
 7. Expand the **Work** FastTab.
 8. Select **Yes** in the **Allow manual item reallocation** field.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

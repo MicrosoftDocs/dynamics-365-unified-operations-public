@@ -4,11 +4,9 @@
 title: Media gallery module
 description: This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -32,11 +29,8 @@ ms.dyn365.ops.version: Release 10.0.13
 # Media gallery module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Media gallery modules show one or more images in a gallery view. Media gallery modules support thumbnail images, which can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). Media gallery modules also provide capabilities that enable images to be zoomed (magnified) or viewed in full-screen mode. To be rendered in a media gallery module, an image must be available in the Commerce site builder Media Library. Currently, media gallery modules support only images.
 
@@ -52,7 +46,7 @@ Here are some usage examples for media gallery modules:
 
 In the example in the following illustration, a buy box on a PDP hosts product images by using a media gallery module.
 
-![Example of a buy box on a product details page that hosts product images by using a media gallery module](./media/ecommerce-pdp-buybox.PNG)
+![Example of a buy box on a product details page that hosts product images by using a media gallery module.](./media/ecommerce-pdp-buybox.PNG)
 
 ## Media gallery properties
 
@@ -60,19 +54,25 @@ In the example in the following illustration, a buy box on a PDP hosts product i
 |---------------|--------|-------------|
 | Image source | **Page context** or **Product ID** | The default value is **Page context**. If **Page context** is selected, the module expects the page to provide the product ID information. If **Product ID** is selected, the product ID for an image must be provided as the value of the **Product ID** property. This capability is available in Commerce version 10.0.12. |
 | Product ID | A product ID | This property is applicable only if the value of the **Image source** property is **Product ID**. |
-| Image zoom | **Inline** or **Container** | This property lets the user zoom images in the media gallery module. An image can be zoomed either inline or in a separate container next to the image. This capability is available in 10.0.12 |
-| Zoom scale | A decimal number | This property specifies the scale factor for zooming images. For example, if the value is set to **2.5**, images are magnified 2.5 times.|
-| Full screen | **True** or **False** | This property specifies whether images can be viewed in full-screen mode. In full-screen mode, images can be also be further magnified if the zoom capability is turned on. This capability is available in Commerce version 10.0.13. |
+| Image zoom | **Inline** or **Container** | This property lets the user zoom images in the media gallery module. An image can be zoomed either inline or in a separate container next to the image. This capability is available in 10.0.12. |
+| Zoom factor | A decimal number | This property specifies the scale factor for zooming images. For example, if the value is set to **2.5**, images are magnified 2.5 times. |
+| Full screen | **True** or **False** | This property specifies whether images can be viewed in full-screen mode. In full-screen mode, images can also be further magnified if the zoom capability is turned on. This capability is available in the Commerce version 10.0.13 release. |
+| Zoomed image quality | A number from 1 through 100 that represents a percentage and that is selected by using a trackbar control | This property defines the image quality for zoomed-in images. It can be set to 100 percent to ensure that a zoomed image always uses the highest possible resolution. This property isn't applicable to PNG files, because they use a lossless format. This capability is available as of the Commerce version 10.0.19 release. |
 | Images | Images that are selected from site builder Media Library | In addition to being rendered from a product, images can be curated for a media gallery module. These images will be appended to any product images that are available. This capability is available in Commerce version 10.0.12. |
 | Thumbnail orientation | **Vertical** or **Horizontal** | This property specifies whether thumbnail images should be shown in a vertical strip or a horizontal strip. |
+| Hide master product images for variant | **True** or **False** | If this property is set to **True**, when a variant is selected, images of the master product are hidden unless the variant has no images. This property doesn't affect products that have no variants. |
+| Update media on dimension selection | **True** or **False** | If this property is set to **True**, images in the media library will be updated when any dimension (such as color, style, or size) is selected, and if an image is available. This property helps simplify the browsing experience, because not every product variant dimension must be selected for the corresponding image to be updated. This property is available on the **Advanced** tab. |
+
+> [!IMPORTANT]
+> The **Update media on dimension selection** property is available as of the Commerce version 10.0.21 release. It requires that Commerce module library package version 9.31 be installed.
 
 The following illustration shows an example of a media gallery module where the full-screen and zoom options are available.
 
-![Example of a media gallery module where the full-screen and zoom options are available](./media/ecommerce-media-zoom.png)
+![Example of a media gallery module where the full-screen and zoom options are available.](./media/ecommerce-media-zoom.png)
 
 The following illustration shows an example of a media gallery module that has curated images (that is, the specified images aren't dependent on the product ID or page context).
 
-![Example of a media gallery module that has curated images](./media/ecommerce-media-curated.PNG)
+![Example of a media gallery module that has curated images.](./media/ecommerce-media-curated.PNG)
 
 ## Commerce Scale Unit interaction
 
@@ -103,10 +103,13 @@ To add a media gallery module to a marketing page, follow these steps.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Buy box module](add-buy-box.md)
 
 [Container module](add-container-module.md)
 
 [Upload images](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

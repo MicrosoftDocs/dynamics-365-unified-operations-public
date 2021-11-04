@@ -4,12 +4,10 @@
 title: Outbound inventory operation in POS
 description: This topic describes capabilities of the point of sale (POS) outbound inventory operation.
 author: hhaines
-manager: annbe
 
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -80,7 +77,7 @@ The batch jobs that you create will be used to process documents that fail or ti
 
 ## Prerequisite: Add Outbound operation to the POS screen layout
 
-Before your organization can use the outbound operation functionality, it must configure the **Outbound operation** POS operation on one or more of your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, make sure that you thoroughly test it and train your users to use it.
+Before your organization can use the outbound operation functionality, it must configure the **Outbound operation** POS operation on one or more of your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, make sure that you thoroughly test it and train your users to use it.
 
 ## Overview
 
@@ -125,7 +122,7 @@ In the **Full order list** view, you can manually select a line in the list and 
 
 ### Over-delivery shipping validations
 
-Validations occur during the receiving process for the document lines. They include validations for over-delivery. If a user tries to receive more inventory than was ordered on a purchase order, but either over-delivery isn't configured or the quantity that is received exceeds the over-delivery tolerance that is configured for the purchase order line, the user receives an error and isn't allowed to receive the excess quantity.
+Validations occur during the fulfillment process for the document lines. They include validations for over-delivery. If a user tries to ship more inventory than was ordered on a transfer order, but either over-delivery isn't configured or the quantity that is shipped exceeds the over-delivery tolerance that is configured for the transfer order line, the user receives an error and isn't allowed to ship the excess quantity.
 
 ### Underdelivery close lines
 
@@ -170,7 +167,7 @@ The **Review** function validates the following issues in an outbound document:
 - **Location not set** – location is not specified for a location-controlled item where location is not allowed to be blank.
 - **Deleted lines** – the order has lines deleted by a Commerce headquarters (HQ) user that is not known to the POS application.
 
-If you set the **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory**, validation is executed automatically when you select the **Finish fulfillment** function.
+If you set the **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory operations**, validation is executed automatically when you select the **Finish fulfillment** function.
 
 ### Finish fulfillment
 
@@ -199,3 +196,6 @@ Fully shipped transfer orders are moved to the **Complete** tab of the **Outboun
 ## Related topics
 
 [Inbound inventory operation in POS](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

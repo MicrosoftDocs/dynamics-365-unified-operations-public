@@ -4,11 +4,9 @@
 title: Category pricing rules to create trade agreements
 description: This procedure demonstrates how to create sales price trade agreements using a category pricing rule. 
 author: scott-tucker
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingD
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -61,3 +58,6 @@ This procedure demonstrates how to create sales price trade agreements using a c
 24. Click the Category price rules tab.
     * Channel specific Category pricing rules will show in this list.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

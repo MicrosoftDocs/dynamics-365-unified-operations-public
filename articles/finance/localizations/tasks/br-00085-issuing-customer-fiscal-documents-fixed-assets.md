@@ -4,11 +4,9 @@
 title: Issue customer fiscal documents (fixed assets) (Brazil)
 description: You can issue a fiscal document for a customer who bought a fixed asset from the fiscal establishment. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -62,3 +59,6 @@ You can issue a fiscal document for a customer who bought a fixed asset from the
 28. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 29. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

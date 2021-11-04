@@ -4,11 +4,9 @@
 title: Fixed assets in the public sector
 description: This article describes the fixed assets functionality that is available for public sector. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: AssetTransfer
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20891
 ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the fixed assets functionality that is available for public sector. 
 
-What do I need to know about disposing of fixed assets?
--------------------------------------------------------
+## What do I need to know about disposing of fixed assets?
 
 Public sector organizations can use scrap and sales proposals to dispose of more than one fixed asset at a time.
 
@@ -55,3 +51,6 @@ For details, see [Funds in the public sector](funds-public-sector.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

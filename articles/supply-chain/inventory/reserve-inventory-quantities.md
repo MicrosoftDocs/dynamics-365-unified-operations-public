@@ -3,12 +3,10 @@
 
 title: Reserve inventory quantities
 description: This topic describes the different options that are available for reserving inventory.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: InventModelGroup
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
 # ms.search.industry:
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -54,7 +51,7 @@ Inventory reservation policies are set on the **Item model groups** page, the **
 
 The **Inventory policies** section contains the following reservation policies.
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| &nbsp;                  | &nbsp;                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reservation policy**  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO date-controlled    | If you select the **FIFO date-controlled** option, the inventory reservation is controlled by a sorting date according to the FIFO principle. Batches are reserved based on the earliest date of receipt of items, according to the principle of first in, first out (FIFO).                                                                                                                                                                                                                                                                       |
@@ -88,3 +85,6 @@ There are two options related to reservations on the **Inventory and warehouse m
 ### Inventory reservation policies on the Production parameters page
 
 The value of the **Reservation** field on the **General** tab on the **Production parameters** page determines the default point in the production process at which inventory should be reserved. For example, inventory could be reserved when work is scheduled, or when work is started.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

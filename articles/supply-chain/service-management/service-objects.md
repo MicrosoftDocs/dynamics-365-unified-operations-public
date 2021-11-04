@@ -2,13 +2,11 @@
 # required metadata
 
 title: Service objects overview
-description: Service objects are a customer’s assets and products for which you can perform a service.
-author: ShylaThompson
-manager: tfehr
+description: This topic provides an overview of how to work with service objects.
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: SMAServiceObjectTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Service objects are a customer’s assets and products for which you can perform a
+Service objects are a customer's assets and products for which you can perform a
 service. Depending on the type of service you provide, objects can be tangible
 or intangible:
 
@@ -50,7 +47,7 @@ you must keep track of the exact item that the service object represents.
     A tangible service object can also be an item that is not directly related
 to a company's direct production or supply chain. For example, a tool kit
 that is used for repairs in a service order can be a service object that is
-not included in inventory. In this case, you don’t register it as an
+not included in inventory. In this case, you don't register it as an
 inventory item.
 
 -  Intangible objects are nonphysical things, such as a set of accounts or a
@@ -70,3 +67,6 @@ line, and line 2 is the annual audit with a yearly interval assigned to it.
 
 [Create service objects](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

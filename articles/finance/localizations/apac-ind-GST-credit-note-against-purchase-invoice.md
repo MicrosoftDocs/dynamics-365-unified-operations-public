@@ -3,12 +3,10 @@
 
 title: Create a credit note against a purchase invoice
 description: This topic explains how to create a credit note against a purchase order invoice.
-author: EricWang
-manager: RichardLuan
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -61,7 +58,10 @@ ms.dyn365.ops.version: 10.0.4
 6. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**. 
 7. On the **Overview** tab, select **Voucher**.
 
-![Example](media/Annotation-2019-05-16-110655.png)
+![Example.](media/Annotation-2019-05-16-110655.png)
 
 > [!NOTE]
 > The general journal also lets you create a purchase credit note that has details of the original invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

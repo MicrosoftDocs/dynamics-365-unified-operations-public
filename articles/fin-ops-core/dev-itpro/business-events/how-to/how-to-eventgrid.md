@@ -3,12 +3,10 @@
 
 title: Business events and Azure Event Grid
 description: This topic explains how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
-author: ibenbouzid
-manager: AnnBe
+author: Sunil-Garg
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +15,10 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
@@ -168,7 +165,10 @@ The business scenario involves sending an email message whenever a free text inv
 
     Next, you will select a final action, such as sending a notification email that includes customer payment details.
 
-15. Search for the **send email** action, and then sign in to your Microsoft Office 365 account.
+15. Search for the **send email** action, and then sign in to your Microsoft 365 account.
 16. Fill in the message with the required fields.
 17. Save your logic app.
 18. Trigger the business event by posting a customer payment. Then verify that the logic app runs, and that you receive an email that includes customer payment details.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

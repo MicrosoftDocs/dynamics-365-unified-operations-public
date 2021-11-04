@@ -3,12 +3,10 @@
 
 title: Set up reduction entries for fixed assets
 description: This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics 365 Finance. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2871
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -111,3 +108,6 @@ If you don't have access to the pages that are used to complete this task, conta
 | Configuration keys | Make sure that the **Asset configuration** key is available under the **Data Dictionary** &gt; **Configuration Keys** node. |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

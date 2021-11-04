@@ -4,11 +4,9 @@
 title: EUR-00011 Set up EU sales list reporting
 description: This task walks you through an overview of the prerequisites required for EU sales list reporting. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, SysQue
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -132,3 +129,6 @@ These tasks are intended for system administrators.
 8. In the Country/region field, type 'PRT'.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

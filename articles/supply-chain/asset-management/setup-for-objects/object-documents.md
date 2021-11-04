@@ -3,28 +3,25 @@
 
 title: Asset documents
 description: This topic explains asset documents in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectDocument
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -55,3 +52,6 @@ In Asset Management, you can set up documents so that they are automatically rel
 
 4. Select **Attachments**. The standard **Document handling** page appears.
 5. Set up the documents or notes that should be attached to the asset document record. After you attach documents, the **Attachments** field shows the number of documents that are related to the record.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

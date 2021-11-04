@@ -4,11 +4,9 @@
 title: Text block module
 description: This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,12 +26,9 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Text block module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 A text block module is a module that is used to add textual content. This content can be informational or promotional.
 
@@ -51,7 +45,7 @@ Text block modules can be used in the following ways:
 
 The following image shows an example of a text block module that is used on a home page.
 
-![Example of a text block module](./media/ecommerce-textblock.PNG)
+![Example of a text block module.](./media/ecommerce-textblock.PNG)
 
 ## Text block module properties
 
@@ -83,7 +77,7 @@ To add a text block module to a new page and set the required properties, follow
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Promo banner module](add-alert.md)
 
@@ -93,3 +87,6 @@ To add a text block module to a new page and set the required properties, follow
 
 [Video player module](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

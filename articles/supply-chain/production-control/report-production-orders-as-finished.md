@@ -4,11 +4,9 @@
 title: Report production orders as finished
 description: Report as finished is a production stage. At this stage, a finished product is reported and moved from the production order to the inventory.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27061
 ms.assetid: 1c2dfc54-a293-49f2-9b96-5a912ac5762c
@@ -52,3 +49,6 @@ You can set a production order to **Report as finished** through the standard pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

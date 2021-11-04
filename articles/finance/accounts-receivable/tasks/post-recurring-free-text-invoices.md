@@ -4,11 +4,9 @@
 title: Generate and post recurring free text invoices
 description: Recurring invoices are used to invoice customers regularly for the same amount. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: SysLookupMultiSelectGrid, CustRecurrenceInvoiceGroup, CustFreeIn
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -49,3 +46,6 @@ Recurring invoices are used to invoice customers regularly for the same amount. 
 6. Click Post.
     * Post the selected invoices.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

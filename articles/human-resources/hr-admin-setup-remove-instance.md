@@ -2,13 +2,11 @@
 # required metadata
 
 title: Remove an instance
-description: This article walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/07/2020
+description: This topic walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -32,7 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Remove an instance
 
-This article walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic explains the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 
 ## Remove a test drive environment
 
@@ -47,7 +46,7 @@ The existing test drive environment will be removed. When it is removed, you can
 
 ## Remove a production environment
 
-This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
+This topic assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
 
 Since a single Human Resources environment is contained within a single Power Apps environment, there are two options to consider. The first option involves removing the entire Power Apps environment; the second option involves removing only Human Resources. The first option is preferred when you have created a Power Apps environment expressly for the purpose of provisioning Human Resources, and you've just begun implementation, or you don’t have any established integrations. The second option is appropriate when you have an established Power Apps environment populated with rich data that's leveraged in Power Apps and Power Automate.
 
@@ -86,7 +85,10 @@ To restore the environment:
 
 1. Follow the instructions in [Recover the Power Apps environment](/power-platform/admin/recover-environment.md).
 
-2. Contact Support to restore the Human Resources environment. For more information, see [Get support](hr-admin-troubleshooting-support.md).
+2. Contact Support to restore the Human Resources environment. For more information, see [Get support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
 > Power Apps environments are only saved for seven days after deletion. You must recover the environment within the seven day period.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

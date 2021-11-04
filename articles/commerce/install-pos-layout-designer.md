@@ -4,11 +4,9 @@
 title: Install the POS layout designer
 description: You can use the one-click designer to design different Modern POS (MPOS) and Cloud POS layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
 author: athinesh99
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: RetailTillLayout
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 219684
 ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
@@ -47,7 +44,7 @@ The graphical design interface for MPOS or Cloud POS is controlled by the till l
 5. After the installation is completed, on the **Sign in** page, enter your Commerce user name and password, and then click **Sign in** to start the designer.
 6. After your credentials are validated and the designer starts, you can design your own layout or modify the existing layout.
 
-    [![Layout in the one-click designer](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
+    [![Layout in the one-click designer.](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
 ## Troubleshoot the installation of the Layout designer
 
@@ -67,3 +64,6 @@ The graphical design interface for MPOS or Cloud POS is controlled by the till l
 ## Additional resources
 
 [Configure, install, and activate Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

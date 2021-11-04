@@ -4,11 +4,9 @@
 title: Access rights for cost object controllers
 description: This topic provides information about access rights for cost object controllers. 
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -69,9 +66,8 @@ The following example shows what a dimension hierarchy can look like.
 
 You can use the **Users** FastTab in the hierarchy designer to insert one or more user IDs on each node.
 
-|                                   | Users            | Dimension member ranges   |                         |
+|             Nodes                 | Users            | From dimension member     |   To dimension member   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Nodes**                         | **User ID**      | **From dimension member** | **To dimension member** |
 | Organization                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Admin                 | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finance   | Alicia           | CC002                     | CC003                   |
@@ -102,11 +98,14 @@ The settings for the Access list hierarchy are used to control the data that is 
     - Data Power BI visualizations that are embedded in the Dynamics 365 Finance client
 
 > [!IMPORTANT]
-> - Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - This topic shows the prerequisites that must be in place before you can use the **Cost control** workspace.
 
 Additional resources
 
 - [Cost control workspace](cost-control-workspace.md)
 - [Dimension hierarchy](dimension-hierarchy.md)
-- [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+- [Set up security for Cost accounting content pack](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -6,6 +6,9 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 
+ms.prod:
+ms.technology:
+
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
@@ -20,11 +23,11 @@ ms.dyn365.ops.version: 8.1
 
 Find the right online training, in person workshops, and events for your role as a user of Dynamics 365 Commerce applications.
 
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
     ### Business and Technical Decision Makers
 
@@ -120,10 +123,6 @@ Find the right online training, in person workshops, and events for your role as
 
     [Get started](learning-catalog-partner-sales.md#get-started)
 
-    [Commerce](learning-catalog-partner-sales.md#commerce)
-
-    [e-Commerce](learning-catalog-partner-sales.md#e-commerce)
-
     :::column-end:::
 
     :::column:::
@@ -140,3 +139,6 @@ Find the right online training, in person workshops, and events for your role as
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

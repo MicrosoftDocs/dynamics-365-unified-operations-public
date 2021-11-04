@@ -1,29 +1,12 @@
 ---
-# required metadata
-
 title: Insert data
 description: This topic describes how to insert data into tables by using X++.
 author: robinarh
-manager: AnnBe
 ms.date: 06/16/2020
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-ms.custom: 150273
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 
@@ -38,8 +21,8 @@ You can use SQL statements, either interactively or in source code, to insert on
 + **[insert method](#insert-method)** – Insert one row at a time.
 + **[doInsert method](#do-insert-method)** – Insert one row at a time.
 + **[insert\_recordset statement](#insert-recordset-statement)** – Copy multiple records directly from one or more tables into another table in one database trip.
-+ **[RecordInsertList.insertDatabase](../system-classes/recordinsertlist-class.md#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you don't have to sort the data.
-+ **[RecordSortedList.insertDatabase](../system-classes/recordsortedlist-class.md#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
++ **[RecordInsertList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you don't have to sort the data.
++ **[RecordSortedList.insertDatabase](/dotnet/api/dynamics.ax.application#method-insertdatabase)** – Insert multiple rows at the same time in one database trip. Use this construct when you want a subset of data from a specific table, and you want that data to be sorted in an order that doesn't currently exist as an index.
 
 **RecordSortedList**, **RecordInsertList**, and **insert\_recordset** let you insert multiple records. By using these methods, you reduce communication between the application and the database. Therefore, you help increase performance. In some situations, record set–based operations can fall back to record-by-record operations. For more information, see [Conversion of operations from set-based to record-by-record](xpp-data-perf.md).
 
@@ -61,8 +44,8 @@ The following example inserts a new record into the CustGroup table. The **CustG
 ```xpp
 CustGroup custGroup;
 ttsBegin;
-    custGroup.CustGroup = '41';
-    custGroup.insert();
+custGroup.CustGroup = '41';
+custGroup.insert();
 ttsCommit;
 ```
 
@@ -114,7 +97,7 @@ The following example shows that the **insert\_recordset** statement can insert 
 
 In this example, one new record is inserted into the NameValuePair table. This record has an **Id** value of **1**, a **Name** value of **Name1**, and a **Value** value of **1**.
 
-```X++
+```xpp
 NameValuePair nameValuePair;
 CustTable custTable;
 
@@ -132,7 +115,7 @@ The following example shows a join of three tables on an **insert\_recordset** s
 
 In this example, there is an **insert\_recordset** statement for the tabEmplProj5 table. One of the target fields is named **Description**, and its data comes from the local **sDescriptionVariable** variable. The **insert\_recordset** statement succeeds even when the configuration key for the **Description** field is turned off. The system ignores both the **Description** field and the **sDescriptionVariable** variable. Therefore, this code provides an example of *configuration key automation*. Configuration key automation occurs when the system can automatically adjust the behavior of an **insert\_recordset** statement that inserts data into fields that the configuration key is turned off for.
 
-```X++
+```xpp
 static void InsertJoin42Job(Args _args)
 {
     GmTabDepartment tabDept2;
@@ -140,33 +123,25 @@ static void InsertJoin42Job(Args _args)
     GmTabProject tabProj4;
     GmTabEmployeeProject tabEmplProj5;
     str 64 sDescriptionVariable = "From variable.";
-    DELETE_FROM tabEmplProj5;
-    INSERT_RECORDSET tabEmplProj5
-        (
-        Description
+    delete_from tabEmplProj5;
+    insert_recordset tabEmplProj5
+        (  Description
         , EmployeeRecId
         , ProjectRecId
         )
-    Select
-        sDescriptionVariable
-        , RecId
-    from
-        tabEmpl3
-        join
-            tabDept2
+    select sDescriptionVariable, RecId
+    from tabEmpl3
+        join tabDept2
             where tabEmpl3 .DepartmentGuid == tabDept2 .DepartmentGuid
-        join RecId
-            from tabProj4
-            where tabDept2 .DepartmentGuid == tabProj4 .DepartmentGuid
-    info(int642str(tabEmplProj5 .rowCount())
-        + " ==Number of rows inserted.");
-    WHILE SELECT *
-        from
-            tabEmplProj5
-            join tabEmpl3
-                where tabEmplProj5 .EmployeeRecId == tabEmpl3 .RecId
-            join tabProj4
-                where tabEmplProj5 .ProjectRecId == tabProj4 .RecId
+        join RecId from tabProj4
+            where tabDept2 .DepartmentGuid == tabProj4 .DepartmentGuid;
+    info(strFmt("%1 == Number of rows inserted.", tabEmplProj5.rowCount()));        
+    
+    while select tabEmplProj5
+        join tabEmpl3
+            where tabEmplProj5.EmployeeRecId == tabEmpl3.RecId
+        join tabProj4
+            where tabEmplProj5.ProjectRecId == tabProj4.RecId
     {
         info(
             tabEmpl3 .EmployeeName
@@ -196,7 +171,7 @@ This example depends on two tables: SourceTable and DestinationTable. Each table
 ```xpp
 static void JobDuplicKeyException44Job(Args _args)
 {
-    SourceTable sourceTable; // Must have at least one record.
+    SourceTable      sourceTable; // Must have at least one record.
     DestinationTable destinationTable;
     int countTries = 0;
     int numberAdjust = 0;
@@ -218,7 +193,8 @@ static void JobDuplicKeyException44Job(Args _args)
     {
         countTries++;
         notes += strFmt("Inside the try block, try count is %1.", countTries);
-        while select * from sourceTable order by SourceKeyField asc
+        while select sourceTable 
+            order by SourceKeyField asc
         {
             destinationTable.clear();
             newKey = sourceTable.SourceKeyField + numberAdjust;
@@ -264,3 +240,6 @@ static void JobDuplicKeyException44Job(Args _args)
     ---- .insert() successful.
 */
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

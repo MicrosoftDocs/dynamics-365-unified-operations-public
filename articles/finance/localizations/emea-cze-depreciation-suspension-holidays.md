@@ -4,11 +4,9 @@
 title: Depreciation suspension (holidays)
 description: This topic provides information about the suspension, or postponement, of depreciation for the Czech Republic.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265124
 ms.search.region: Czech Republic
@@ -44,3 +41,6 @@ To suspend fixed asset depreciation, on the **Fixed assets** page, select the fi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

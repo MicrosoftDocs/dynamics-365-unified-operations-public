@@ -3,12 +3,10 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (February 25, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 25, 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 02/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,20 +15,23 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-25
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (February 25, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2927. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
@@ -58,15 +59,15 @@ With this change, a warning appears when you attempt to delete a position and a 
 
 This change corrects an issue where additional sign-off participants are added to the performance review.
 
-## Worker position assignment not created in Common Data Service when selected on the New Worker dialog (413479)
+## Worker position assignment not created in Dataverse when selected on the New Worker dialog (413479)
 
-This change corrects an issue when hiring a new worker and assigning the new hire to a position through the **New worker** dialog. Now the position assignment is reflected in Common Data Service.
+This change corrects an issue when hiring a new worker and assigning the new hire to a position through the **New worker** dialog. Now the position assignment is reflected in Dataverse.
 
 ## Coming soon
 
-### Updated Common Data Service solution
+### Updated Dataverse solution
 
-A new Common Data Service solution will be available soon with the following changes:
+A new Dataverse solution will be available soon with the following changes:
 
 | Description | Change |
 | ----------------------------------------- | --- |
@@ -77,9 +78,9 @@ A new Common Data Service solution will be available soon with the following cha
 | New variable compensation setup entities | **Compensation variable plan type**</br>**Compensation variable plan**</br>**Vesting rules**</br>**Compensation variable plan level** |
 | New **Worker calendar employment** entity | **Work calendar entity** added |
 | New **Payroll position detail** entity | **Payroll position detail** added |
-| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service. It won't be initially referenced from **Job Position** or **Job** entities. |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Dataverse. It won't be initially referenced from **Job Position** or **Job** entities. |
 
-Over the next few weeks, these entity changes will be available in all environments. To manually install the latest Common Data Service solution for Human Resources:
+Over the next few weeks, these entity changes will be available in all environments. To manually install the latest Dataverse solution for Human Resources:
 
 1.	Go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -106,6 +107,8 @@ The following preview features became available on February 3, 2020:
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

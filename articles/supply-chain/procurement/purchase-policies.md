@@ -3,29 +3,26 @@
 
 title: Purchasing policies overview
 description: This article provides information about purchasing policies. A purchasing policy is a collection of rules that control the requisition process. Purchasing policies help procurement administrators implement their procurement strategy by creating a policy structure that is aligned with the organization’s strategic purchasing requirements.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
+ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 11614
+ms.custom: ["11614", "intro-internal"]
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
 
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -108,9 +105,9 @@ The purchase requisition RFQ rule defines criteria for requiring a request for q
 
 ### Purchase requisition control rule
 
-The purchase requisition control rule is an optional rule. When you create rules of this type, you can set options on various tabs:
+The purchase requisition control rule for requisitions of type **consumption** is an optional rule. When you create rules of this type, you can set options on various tabs:
 
--   On the **Workflow submission** tab, you can configure the fields that must be entered on the requisition line for the requisition to be submitted for approval when the requisition purpose is **Consumption**.
+-   On the **Workflow submission** tab, you can configure the fields that must be entered on the requisition line for the requisition to be submitted for approval.
 -   On the **Order quantities** tab, you can configure the fields that are required on the purchase requisition under certain conditions. You can also enforce order quantities.
 -   On the **Dates** tab, you can configure whether the accounting date is the same as the requested date
 -   On the **Address** tab, you can define whether the user is allowed to create new addresses in the system to apply to the purchase requisition.
@@ -141,7 +138,7 @@ The purchase order creation and demand consolidation rule defines the policy rul
 -   On the **Price Tolerance** tab, you can define rules to route approved purchase requisitions back through the review process when the price of a procurement catalog item increases. Set the maximum amount that the net amount on a line item on a purchase requisition can increase between the time when the purchase requisition is approved and the time when the purchase order is created. The net amount is calculated by using the following formula: (\[Quantity × (Unit price – Discount) ÷ Price unit\] + Purchase miscellaneous charges) × (100 – Discount percent) ÷ 100 Purchase requisition lines that exceed the price tolerance that you set are held for manual processing. The rules that you configure on the **Error processing** tab determine how the purchase requisition lines are processed.
 -   On the **Error processing** tab, you can configure the processing rule that is applied to a purchase requisition if it fails validation during purchase order creation because of a vendor error or a price tolerance error. Select one of the following options:
     -   **No action** – The purchase requisition lines remain on the **Release approved purchase requisitions** page. The status of the purchase requisition lines remains **Approved**. However, the errors must be resolved before a purchase order can be generated for the purchase requisition lines.
-    -   **Cancel the purchase requisition line** – The purchase requisition lines are canceled. The requester can create a new purchase requisition for the canceled lines if he or she still wants to request the line items.
+    -   **Cancel the purchase requisition line** – The purchase requisition lines are canceled. The requester can create a new purchase requisition for the canceled lines if they still want to request the line items.
     -   **Create a new purchase requisition line** – The purchase requisition lines are canceled. New purchase requisitions are then generated that contain only the purchase requisition lines that failed validation. The new purchase requisitions that are generated have a status of **Draft**. These purchase requisitions can be resubmitted for review after the validation errors have been resolved. The preparer of the purchase requisition lines is notified that the lines were canceled, and that new purchase requisitions were generated for the purchase requisition lines that failed.
 -   On the **Manual purchase order creation** tab, you can define the parameters that determine whether a purchase requisition must be manually processed, or whether it can be automatically converted to a purchase order. The parameters can apply to internal catalog items, external catalog items, or non-catalog items. Select one of the following options:
     -   **Manually create purchase orders** – Manually create purchase orders for all purchase requisitions.
@@ -157,3 +154,6 @@ The purchase order creation and demand consolidation rule defines the policy rul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

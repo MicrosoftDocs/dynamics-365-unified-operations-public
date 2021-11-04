@@ -3,12 +3,10 @@
  
 title: Calculate a BOM by using a single level structure (February 2016)
 description: This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet. 
-author: ShylaThompson
-manager: tfehr 
+author: AndersGirke
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: aevengir
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Calculate a BOM by using a single level structure (February 2016)
 
@@ -46,3 +43,6 @@ This procedure shows how to calculate the cost of a finished product by using si
     * You may need to click the ellipsis (...) to see this option in the top menu.    Here's the composition of the cost:  *    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2. In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.  *    7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).  *    There are also other amounts that correspond to indirect costs.  
 9. @SysTaskRecorder:_RequestClose
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

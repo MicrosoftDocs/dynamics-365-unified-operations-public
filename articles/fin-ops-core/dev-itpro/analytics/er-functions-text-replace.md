@@ -4,11 +4,8 @@
 title: REPLACE ER function
 description: This topic provides information about how the REPLACE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 04/02/2020
-ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +15,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -30,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="REPLACE">REPLACE ER function</a>
+# REPLACE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -87,3 +83,6 @@ If the `regular expression flag` argument is **FALSE**, this function returns th
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

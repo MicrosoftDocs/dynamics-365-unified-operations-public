@@ -3,28 +3,25 @@
 
 title: Responsible maintenance workers
 description: This topic explains how to set up responsible maintenance workers in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetWorkerResponsible 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -58,4 +55,7 @@ Before you can set up responsible maintenance workers, you must set up the worke
 
 The following illustration shows an example of the **Responsible maintenance workers** page.
 
-![Responsible maintenance workers page](media/08-setup-for-requests.png)
+![Responsible maintenance workers page.](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

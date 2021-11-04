@@ -3,12 +3,10 @@
 
 title: Support for Dimension Entry controls on dialogs
 description: Describes the code pattern for putting a Dimension Entry control on a dialog.
-author: robinarh
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26321
 ms.assetid: ec5f2f8c-eb9b-4fbe-a388-be145b2bf98b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -72,3 +69,6 @@ For the second parameter on `addToDialog`, choose the controller class that sati
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,12 +4,10 @@
 title: Inbound inventory operation in POS
 description: This topic describes capabilities of the point of sale (POS) inbound inventory operation.
 author: hhaines
-manager: annbe
 
-ms.date: 08/18/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -79,7 +76,7 @@ The batch jobs that you create will be used to process documents that fail or ti
 
 ## Prerequisite: Add Inbound operation to the POS screen layout
 
-Before your organization can use the inbound operation functionality, it must configure the **Inbound operation** POS operation on one or more of your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, make sure that you thoroughly test it and train your users to use it.
+Before your organization can use the inbound operation functionality, it must configure the **Inbound operation** POS operation on one or more of your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, make sure that you thoroughly test it and train your users to use it.
 
 ## Overview
 
@@ -140,6 +137,18 @@ Validations occur during the receiving process for the document lines. They incl
 
 Over-receiving isn't permitted for transfer order documents. Users will always receive errors if they try to receive more than was shipped for the transfer order line.
 
+### Close purchase order lines
+
+You can close the remaining quantity on an inbound purchase order during the receiving process if the shipper has confirmed that they can’t ship the full quantity that was requested. To do so, the company must be configured to allow underdelivery of purchase orders. Additionally, an underdelivery tolerance percentage must be defined for the purchase order line.
+
+To configure the company to allow underdelivery of purchase orders, in Commerce headquarters, go to **Procurement and sourcing** > **Setup** > **Procurement and sourcing parameters**. On the **Delivery** tab, turn on the **Accept underdelivery** parameter. Then run the **1070** (**Channel configuration**) distribution schedule job to sync the setting changes to channels.
+
+Underdelivery tolerance percentages for a purchase order line can be predefined on products as part of the product configurations in Commerce headquarters. Alternatively, they can be set or overwritten on a specific purchase order in Commerce headquarters.
+
+After an organization completes the purchase order underdelivery configurations, POS users will see a new **Close remaining quantity** option in the **Details** pane when an inbound purchase order line is selected in the **Inbound inventory** operation. If the user closes the remaining quantity, POS performs a validation to verify whether the quantity being closed is within the underdelivery tolerance percentage defined on the purchase order line. If the underdelivery tolerance is exceeded, an error message is displayed and the user won’t be able to close the remaining quantity until the previously received quantity plus the **Receiving now** quantity meets or exceeds the minimal quantity that needs to be received based on the underdelivery tolerance percentage. 
+
+With **Close remaining quantity** option turned on for a purchase order line, when the user completes the receipt by using the **Finish receiving** action, a closure request is also sent to Commerce headquarters, and any unreceived quantity of this order line will be cancelled. At that point the line is considered fully received. 
+
 ### Receiving location-controlled items
 
 If the items that are being received are location-controlled, users can select the location where they want to receive the items during the receiving process. We recommend that you configure a default receiving location for your store warehouse, to make this process more efficient. Even if a default location is configured, users can override the receiving location on selected lines as they require.
@@ -156,9 +165,9 @@ In Commerce version 10.0.14 and later, users can receive a product that was not 
 
 This feature only works for purchase order receiving. It's not possible to receive items against transfer orders when the items weren't previously ordered and shipped from the outbound warehouse.
 
-Users can't add new products to the purchase order during POS receiving if purchase order [change management workflow](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is enabled in Commerce headquarters (HQ). To enable change management, all changes to a purchase order must first be approved before receiving is allowed. Because this process allows a receiver to add new lines to the purchase order, receiving will fail if the change management workflow is enabled. If change management is enabled for all purchase orders or for the vendor linked to the purchase order actively being received in POS, the user can't add new products to the purchase order during receiving in POS.
+Users can't add new products to the purchase order during POS receiving if purchase order [change management workflow](../supply-chain/procurement/purchase-order-approval-confirmation.md) is enabled in Commerce headquarters (HQ). To enable change management, all changes to a purchase order must first be approved before receiving is allowed. Because this process allows a receiver to add new lines to the purchase order, receiving will fail if the change management workflow is enabled. If change management is enabled for all purchase orders or for the vendor linked to the purchase order actively being received in POS, the user can't add new products to the purchase order during receiving in POS.
 
-The functionality that enables adding lines can't be used as a workaround for receiving additional quantities of products already on the purchase order. Over-receiving is managed through the standard [over-receiving](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) settings for the product line on the purchase order.
+The functionality that enables adding lines can't be used as a workaround for receiving additional quantities of products already on the purchase order. Over-receiving is managed through the standard [over-receiving](#over-receiving-validations) settings for the product line on the purchase order.
 
 If **Add lines to Purchase Order during Point of Sale receiving** is enabled and a user is receiving with the **Inbound operation** in POS, if the user scans or keys a product barcode or product number that isn't recognized as an item on the current purchase order, but is recognized as a valid item, the user receives a message about adding the item to the purchase order. If the user adds the item to the purchase order, the quantity entered in **Receiving now** is considered the ordered quantity for the purchase order line.
 
@@ -215,3 +224,6 @@ After the document is in **Requested** status, it's visible on the **Active** ta
 ## Related topics
 
 [Outbound inventory operation in POS](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

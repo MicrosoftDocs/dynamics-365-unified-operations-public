@@ -3,12 +3,10 @@
  
 title: Complete basic setup of a released product master
 description: This topic shows how to complete the minimum setup that is required before the product master can be used in BOM versions.  
-author: ShylaThompson
-manager: tfehr 
+author: t-benebo
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Complete basic setup of a released product master
 
@@ -56,3 +53,6 @@ This is the third procedure out of eight which explains how to build combination
 20. Close the page.
 21. Close the **Released product details** form.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

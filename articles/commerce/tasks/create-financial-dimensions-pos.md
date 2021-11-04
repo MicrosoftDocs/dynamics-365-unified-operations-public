@@ -4,11 +4,9 @@
 title: Create financial dimensions for POS registers and configure dimension values on registers
 description: This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers. 
 author: jashanno
-manager: AnnBe 
 ms.date: 11/14/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +48,6 @@ This procedure walks through creating financial dimensions for point of sale (PO
 17. In the list, find and select the dimension value for the register being updated.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

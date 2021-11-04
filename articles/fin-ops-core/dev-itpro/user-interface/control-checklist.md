@@ -4,11 +4,9 @@
 title: Control checklist
 description: This article categorizes and describes all the release criteria for controls.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30141
 ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article categorizes and describes all the release criteria for controls.
 
-Introduction
-------------
+## Introduction
 
 Typically, when you author a new control, the primary focus is on scenario functionality and technical implementation. However, before a control can be considered ready for shipment, it should conform to a set of best practice, quality, and development release criteria, as outlined in this article.
 
@@ -254,3 +250,6 @@ For controls that need to support either Copy, Paste, or Validate (mainly for ad
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

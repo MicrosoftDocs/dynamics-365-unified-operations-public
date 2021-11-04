@@ -2,13 +2,11 @@
 # required metadata 
  
 title: ER Map data model to selected data sources
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Microsoft Dynamics 365 Finance data sources. 
+description: This topic describes how to map an Electronic reporting (ER) data model to selected Microsoft Dynamics 365 Finance data sources. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappin
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -150,3 +147,6 @@ The following steps explain how a user in the System Administrator or Electronic
 5. Select the completed version of the current configuration.
     * Note that the created configuration is saved as completed version 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
  
 title: Transfer physical inventory within the warehouse
 description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another. 
-author: MarkusFogelberg
-manager: tfehr 
+author: yufeihuang
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSi
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Transfer physical inventory within the warehouse
 
@@ -61,3 +58,6 @@ This procedure walks you through the process of creating and posting an inventor
 1. Click **Inventory**.
 2. Click **Transactions**. Here you can see the transactions that were created when you posted your journal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

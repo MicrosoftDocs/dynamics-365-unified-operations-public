@@ -4,11 +4,9 @@
 title: Allocation terms
 description: This topic provides information about using allocation terms on a main account. 
 author: rachel-profitt
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount, Alloc
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17361
 ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
@@ -75,3 +72,6 @@ On the **Destination ledger account** FastTab, the main account will be the same
 > You can optionally use the **Copy** button to duplicate the selected allocation.
 
 When an allocation term is created for a main account, the system will automatically post a new voucher when a voucher is posted that matches the source financial dimensions on the allocation terms.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

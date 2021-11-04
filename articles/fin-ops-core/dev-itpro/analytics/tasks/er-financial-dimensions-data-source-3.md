@@ -2,13 +2,11 @@
 # required metadata 
  
 title: ER Use financial dimensions as a data source (Part 3 - Design the report)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
+description: This topic describes how to configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. (Part 3)
 author: NickSelin
-manager: AnnBe 
 ms.date: 05/27/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -98,7 +95,7 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 59. Click Add Attribute.
 60. In the Name field, type 'Desc'.
 61. Click OK.
-![ER Operations designer page](../media/er-financial-dimensions-guides-format1.png)
+![Format designer page tree.](../media/er-financial-dimensions-guides-format1.png)
 
 ## Map report elements to data sources
 1. Click the Mapping tab.
@@ -147,5 +144,8 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 44. Click Bind.
 45. Click Save.
 46. Close the page.
-![ER Operations designer page](../media/er-financial-dimensions-guides-format2.png)
+![Format designer page, report elements mapped to data sources.](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

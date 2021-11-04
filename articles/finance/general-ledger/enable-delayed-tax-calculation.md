@@ -5,11 +5,9 @@ title: Enable delayed tax calculation on journals
 description: This topic explains how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is very large.
 
 author: ericwang
-manager: Ann Beebe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,14 +17,13 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
 
@@ -55,14 +52,14 @@ The system gives priority to the setting for the journal header. By default, thi
 1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
 2. On the **Sales tax** tab, on the **General** FastTab, set the **Delayed tax calculation** option to **Yes**.
 
-![General ledger parameters image](media/delayed-tax-calculation-gl.png)
+![General ledger parameters image.](media/delayed-tax-calculation-gl.png)
 
 ## Turn on delayed tax calculation at the journal name level
 
 1. Go to **General ledger \> Journal setup \> Journal names**.
 2. On the **General** FastTab, in the **Sales tax** section, set the **Delayed tax calculation** option to **Yes**.
 
-![Journal names image](media/delayed-tax-calculation-journal-name.png)
+![Journal names image.](media/delayed-tax-calculation-journal-name.png)
 
 ## Turn on delayed tax calculation at the journal header level
 
@@ -71,4 +68,7 @@ The system gives priority to the setting for the journal header. By default, thi
 3. Select a journal name.
 4. On the **Setup** tab, set the **Delayed tax calculation** option to **Yes**.
 
-![General journal page image](media/delayed-tax-calculation-journal-header.png)
+![General journal page image.](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

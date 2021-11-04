@@ -3,12 +3,10 @@
 
 title: Make fields on mobile app pages clickable
 description: This topic explains how to customize the fields on a mobile app page so that they are shown as email addresses, phone numbers, or URLs.
-author: makhabaz
-manager: AnnBe
+author: robinarh
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
 
@@ -56,7 +53,7 @@ This example shows how to configure the customer email address and phone number 
 
 Before the fields are customized, they can't be clicked, as shown in the following image.
 
-![Customer details page before the changes are made](media/workspace-api/FieldAsURLOriginal.png)
+![Customer details page before the changes are made.](media/workspace-api/FieldAsURLOriginal.png)
 
 Follow these steps to specify that a field is a link.
 
@@ -73,4 +70,7 @@ Follow these steps to specify that a field is a link.
 
 The fields now appear as links.
 
-![Customer details page after the changes](media/workspace-api/FieldAsURLFinal.png)
+![Customer details page after the changes.](media/workspace-api/FieldAsURLFinal.png)
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

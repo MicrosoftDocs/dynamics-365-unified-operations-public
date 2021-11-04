@@ -4,11 +4,9 @@
 title: Process and trace source data
 description: All data processing is run by jobs. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -49,3 +46,6 @@ All data processing is run by jobs. For each job and data provider, a journal is
     * For this example, select Fiscal 2017 Period 9.  
 14. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

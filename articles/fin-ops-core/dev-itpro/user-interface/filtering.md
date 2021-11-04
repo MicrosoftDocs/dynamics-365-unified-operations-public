@@ -4,11 +4,9 @@
 title: Filtering options
 description: This topic explains the filtering options that are available.
 author: jasongre
-manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28721
 ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains the filtering options that are available.
 
-Introduction
-------------
+## Introduction
 
 Microsoft Dynamics AX 2012 offers the following filtering options.
 
@@ -61,7 +57,7 @@ One important difference between filtering in Finance and Operations apps and fi
 
 | Filter operator                      | Finance and Operations apps query syntax |
 |--------------------------------------|------------------------------------------|
-| Is “circle” /  Is equal to “circle”        | “circle”                                    |
+| Is exactly “circle” /  Is equal to “circle”        | “circle”                                    |
 | Is not “circle” / Is not equal to “circle” | “!circle”                                   |
 | Is one of “circle”, “square”, “circlesquare”     | “circle,square,circlesquare”                         |
 | Contains “circle”                       | “\*circle\*”                                |
@@ -75,8 +71,11 @@ One important difference between filtering in Finance and Operations apps and fi
 
 Any query syntax that doesn't match the preceding templates is interpreted as the **matches** operator.
 
-Note that the syntax for looking for blank values in a column remains the same as AX2012. With either the **matches** operator or the **is equal to** operator, you can type **""** to retrive rows with blank values for the current column. For example, **First Name IS ""** will finds all records where the first name is blank.    
+### Other frequent filter expressions
+Users may want to filter for blank values in column. While there is no filter operator for this specifically, the syntax for performing this filtering remains the same as Dynamics AX 2012. With either the **matches** operator or the **is equal to** operator, users can type **""** to retrieve rows with blank values for the current column. For example, **First Name IS ""** will find all records where the first name is blank. Note that "" only matches rows where the column value is the empty string and does not match rows where the column value is NULL or 0.
 
+Users may also want to filter for records that do not belong to a specific list of values. While "is not one of" is not a filter operator, this filter expression can be achieved using the **matches** operator by negating each list item in the list. For example,  **!circle, !square** will find all records that are neither "circle" nor "square." 
+    
 ## Filter Pane
 The Filter Pane provides an easy-to-use interface for filtering full page lists. The Filter Pane is an inline pane that slides in from the left side of the screen and pushes the page content to the right, so that users can see the data that they want to filter. Users open this filter mechanism by clicking the system-defined **Show filters** button on the left side of the page. After it has been opened, the Filter Pane remains visible until the user goes to a new page, or until the user closes the Filter Pane by using the **Hide filters** button.
 
@@ -128,7 +127,7 @@ The fields that appear in the **Add a filter field** list are all the filterable
 The Filter Pane is simple and straightforward to use. First, select a filtering operator in the list that is associated with each filter field. Note that the set of operators that appears depends on the data type of the field. Then enter an appropriate value for the filter condition, and click **Apply**. The form is updated based on the filter criteria that you specified.
 
 ## QuickFilter
-In Dynamics AX 2012, the QuickFilter was a framework control that was automatically added only to list pages. In Finance and Operations apps, the QuickFilter is now a modeled control that can be associated with any grid in the system. As the user starts to type, a column selector drop-down appears to guide the user toward the column that the filter will be applied to. The developer can also specify the default column for the QuickFilter. If no column is specified by the developer, the default column is the first field that can be filtered in the grid. [![QuickFilter control](./media/3_filter.png)](./media/3_filter.png)
+In Dynamics AX 2012, the QuickFilter was a framework control that was automatically added only to list pages. In Finance and Operations apps, the QuickFilter is now a modeled control that can be associated with any grid in the system. As the user starts to type, a column selector drop-down appears to guide the user toward the column that the filter will be applied to. The developer can also specify the default column for the QuickFilter. If no column is specified by the developer, the default column is the first field that can be filtered in the grid. [![QuickFilter control.](./media/3_filter.png)](./media/3_filter.png)
 
 ### Why don't I have a column selector in my QuickFilter?
 
@@ -143,4 +142,7 @@ Yes, you can use the QuickFilter to filter other collection controls, but you mu
 -   Write code in that method to perform the desired filtering.
 
 ## Grid column header filtering/sorting
-In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![Screen shot of grid filtering](./media/4_filter.png)](./media/4_filter.png)
+In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![Screen shot of grid filtering.](./media/4_filter.png)](./media/4_filter.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

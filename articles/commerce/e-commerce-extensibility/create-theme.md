@@ -4,11 +4,9 @@
 title: Create a new theme
 description: This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
-manager: annbe
-ms.date: 06/29/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site.
-
-## Overview
 
 The Dynamics 365 Commerce online software development kit (SDK) lets you create custom themes that can be applied to your online site. They can also be shared across the sites in a single tenant if desired.
 
@@ -102,7 +97,7 @@ If your .env file's **MSDyn365\_HOST** entry points to your production site, you
 
 ### Mock new configuration values in a theme
 
-If new configuration fields are added to a module in a theme, mock data can be added to the module's mock file. For example, if you modify a starter kit module's view and definition files, you can add new configuration mocks to the starter kit mock files that are under the **...\node_modules\\@msdyn365-commerce-modules** directory in the starter kit module.
+If new configuration fields are added to a module in a theme, mock data can be added to the module's mock file. For example, if you modify a module library module's view and definition files, you can add new configuration mocks to the module library mock files that are under the **...\node_modules\\@msdyn365-commerce-modules** directory in the module library module.
 
 In a similar way, if you're mocking data for a custom module, you can add new mock data in the module's mock JSON file. Alternatively, you can create new mock files under the same module mock directory.
 
@@ -116,6 +111,13 @@ In a similar way, if you're mocking data for a custom module, you can add new mo
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
 
+[Override a module library component in a theme](override-theme-component.md)
+
 [Extend a theme from a base theme](extend-theme.md)
 
+[Add custom resources to your customization code](add-custom-resources.md)
+
 [Configure a development .env file](configure-env-file.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

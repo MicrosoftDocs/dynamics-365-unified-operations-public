@@ -3,12 +3,10 @@
  
 title: Move scheduled kanban jobs
 description: This procedure focuses on moving planned process kanban jobs to a different period. 
-author: ChristianRytt
-manager: tfehr 
+author: johanhoffmann
 ms.date: 11/07/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: KanbanJobSchedulingListPage
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -66,3 +63,6 @@ This procedure focuses on moving planned process kanban jobs to a different peri
 2. Click **Forward**. Notice that the job is moved one line down on the list. 
 
 3. Click **Backward**. Notice that the job is moved one line up on the list.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

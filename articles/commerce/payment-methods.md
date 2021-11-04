@@ -4,11 +4,9 @@
 title: Payment methods
 description: Each payment type that a retailer accepts must be configured when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
 author: rubencdelgado
-manager: AnnBe
-ms.date: 06/17/2020
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: RetailTenderTypeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
@@ -27,7 +24,6 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 
 ---
 
@@ -54,3 +50,11 @@ To set up payment methods, you must complete the following tasks.
 2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
+
+## Handle change tendering for payment methods
+
+Some payment methods don't support direct change tendering if funds are due back to customers during point-of-sale transactions. Only the **Cash** and **Currency** payment methods can be used to tender change. 
+
+To handle cases where change tendering is required during a transaction, but the payment method doesn't support it, you can define a **Change tender** payment method. When you set up store payment methods for the store, select the payment method to use. Then, in the **Change** section, in the **Change tender** field, enter a change tender payment option. For example, you can enter **1** to indicate that cash can be used as a change tender payment option.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

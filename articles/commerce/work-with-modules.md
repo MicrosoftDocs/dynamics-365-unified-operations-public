@@ -3,12 +3,10 @@
 
 title: Work with modules
 description: This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
-author: v-chgri
-manager: annbe
-ms.date: 07/31/2020
+author: phinneyridge
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry:
-ms.author: phinneyridge
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
@@ -31,15 +28,12 @@ ms.dyn365.ops.version: Release 10.0.5
 # Work with modules
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Modules are logical building blocks that make up your page structure, and they have various purposes and scopes. Some modules are high-level containers, and their only purpose is to hold and organize other modules (child modules). Other modules, such as a simple image placement module, have a very specific purpose. Other modules, such as a carousel module, fall somewhere between those two categories.
 
-By default, your Dynamics 365 Commerce site includes a starter kit module library that lets you achieve most basic e-Commerce scenarios. You should be able to construct an end-to-end e-Commerce site just by using these modules. However, you might also want to customize these modules or build new, custom modules for specific needs. If you want to build custom modules, a module design software development kit (SDK) is available to help you create a custom module library.
+By default, your Dynamics 365 Commerce site includes a module library that lets you achieve most basic e-Commerce scenarios. You should be able to construct an end-to-end e-Commerce site just by using these modules. However, you might also want to customize these modules or build new, custom modules for specific needs. If you want to build custom modules, a module design software development kit (SDK) is available to help you create a custom module library.
 
 ## Container modules and slots
 
@@ -63,7 +57,7 @@ The majority of typical, day-to-day page and content authoring activities involv
 
 The following illustration shows how modules are nested inside parent container module slots.
 
-![Nesting modules](../commerce/media/basic-module-nesting.png)
+![Nesting modules.](../commerce/media/basic-module-nesting.png)
 
 ## Add or remove modules
 
@@ -178,3 +172,6 @@ To configure a container module on a page, follow these steps.
 
 [Work with publish groups](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Configure workflow properties
 description: This topic explains how to configure the various properties of a workflow.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
@@ -80,6 +77,9 @@ You can provide instructions to users who submit documents for processing and ap
     4. In the **Translated text** field, enter the text.
     5. To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 3.
     6. Click **Close**.
+
+> [!NOTE]
+> Placeholders cannot be added using copy and paste because the target information is not pasted in correctly. Use the interface to add placeholders.
 
 ## Specify when this workflow is used through activation conditions
 
@@ -186,3 +186,6 @@ To enter comments about the changes that you made to the workflow, follow these 
 2. In the **Enter comments about the workflow** field, enter your comments.
 3. Review your comments. After you add comments, you can't modify them.
 4. Click **Add** to add your comments to the **Comment history** area.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
-manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,9 +16,8 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
-ms.custom: 13531
+ms.custom: ["13531", "intro-internal"]
 ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
 ms.search.region: Global
 # ms.search.industry: 
@@ -52,7 +49,7 @@ Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provi
 
 The lifecycle of an implementation spans many phases from pre-sales through Analysis, Design and Development, Test, and Deployment to Operation, possibly in multiple iterative roll-outs. It can last a few months to multiple years, based on the scope and complexity of the project and the chosen deployment model, for example, in the managed cloud or on-premises. 
 
-The management of the implementation involves many different stakeholders from the customer and partner organizations and, especially in the cloud-hosted deployment model, from Microsoft. The implementation is supported through tools provided on LCS and through processes defined within the [Microsoft FastTrack](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) and through the partner's implementation approach. 
+The management of the implementation involves many different stakeholders from the customer and partner organizations and, especially in the cloud-hosted deployment model, from Microsoft. The implementation is supported through tools provided on LCS and through processes defined within the [Microsoft FastTrack](/dynamics365/fasttrack/) and through the partner's implementation approach. 
 
 - [Lifecycle Services resources](../lifecycle-services/lcs.md)
 - [Lifecycle Services (LCS) user guide](../lifecycle-services/lcs-user-guide.md)
@@ -79,7 +76,7 @@ For information to help you move a database to new environment and restore a dat
 ## Security
 Finance and Operation apps uses role-based security. Access is granted only to security roles, not to individual users. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who isn't assigned to any role has no privileges.
 
-Role-based security is aligned with the structure of the business. The security roles that a user is assigned to depend on the user's responsibilities in the organization, and his or her participation in business processes. The administrator grants access to the duties that users in a role perform, not to the program elements that users must use.
+Role-based security is aligned with the structure of the business. The security roles that a user is assigned to depend on the user's responsibilities in the organization, and their participation in business processes. The administrator grants access to the duties that users in a role perform, not to the program elements that users must use.
 
 Because rules can be set up for automatic role assignment, the administrator doesn't have to be involved every time that a user's responsibilities change. After security roles and rules have been set up, business managers can control day-to-day user access, based on business data.
 
@@ -129,6 +126,9 @@ The process automation framework allows administrators to view and create automa
 - [Maintenance mode](maintenance-mode.md)
 - [Preconfigured system accounts](pre-configured-system-accounts.md)
 - [Export business-to-business (B2B) users to Azure Active Directory](implement-b2b.md)
-- [Set the session idle timeout](session-idle-timeout.md)
-- [Build Odata metadata cache when AOS starts](odata-warmup.md)
+- [Set the session inactivity timeout](session-idle-timeout.md)
+- [Build OData metadata cache when AOS starts](odata-warmup.md)
 - [Configure and manage database logging](configure-manage-database-log.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

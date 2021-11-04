@@ -1,35 +1,28 @@
 ---
-# required metadata
-
-title: Troubleshoot the Regression suite automation tool 
+title: Troubleshoot the Regression suite automation tool
 description: This topic contains information about how to troubleshoot the Regression suite automation tool (RSAT).
-author: robadawy
-manager: AnnBe
-ms.date: 08/01/2019
+author: FrankDahl
+ms.date: 01/15/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
+ms.prod:
+ms.technology:
 
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: rhaertle
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 21631
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: robadawy
+# ms.search.industry:
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Troubleshoot the Regression suite automation tool 
+# Troubleshoot the Regression suite automation tool
 
 [!include [banner](../../includes/banner.md)]
 
@@ -60,7 +53,7 @@ After test execution files are generated, you can find the log file under **[RSA
 
 ## Authentication certificate and installation
 
-+ The authentication certificate must be created and installed by an administrator on the same computer where RSAT is installed. If it is not created by an admin, you will encounter the following error message when you try to run a test case.  
++ The authentication certificate must be created and installed by an administrator on the same computer where RSAT is installed. If it is not created by an admin, you will encounter the following error message when you try to run a test case.
 
 ```Plaintext
 Cannot access Finance and Operations environment. Verify your settings and make sure the environment is available.
@@ -72,8 +65,8 @@ Cannot access Finance and Operations environment. Verify your settings and make 
 
 If you have selected Internet Explorer as your browser, your desktop resolution should be set to 100% to run the tests successfully. To change the settings, use Windows **Display settings > Scale and layout**, as shown in the following image:
 
-![Setting screen resolution](media/screen-resolution.png)
- 
+![Setting screen resolution.](media/screen-resolution.png)
+
 ## Test playback errors
 
 ### SOAP or HTTP request errors
@@ -105,8 +98,8 @@ You may receive the following error when running a test case, or the error detai
 <Message>Could not enumerate AX users</Message>  (InnerError)`
 ```
 
-![Enumerate error message box](media/cannot-enumerate.png)
- 
+![Enumerate error message box.](media/cannot-enumerate.png)
+
 To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (e-mail address) must also belong to the same tenant as the test environment. For example, if your test environment's tenant is **contoso.com**, the admin user must end with **\@constoso.com**.
 
 ### Unsecured fault exception
@@ -117,16 +110,22 @@ If a test case inconsistently fails with the following error, this usually indic
 <Message>An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail.</Message>
 <Message>At least one security token in the message could not be validated.</Message>
 ```
-Typically, this error happens when the test case is running against a standard acceptance test environment (Tier 2 or higher) and you have not configured the authentication thumbprint on all of the AOS virtual machines. Make sure you properly add the thumbprint to the **wif.config** file on all of the AOS machines. For more information, see [Configure the test environment to trust the connection](rsat-install-configure.md#configure-the-test-environment-to-trust-the-connection).
+
+Typically, this error happens when the test environment has not been configured to trust the certificate that RSAT is using for authentication. (The certificate is identified by the thumbprint specified in your RSAT settings.) For example, the thumbprint could be missing in the wif.config file on the AOS virtual machine of the test environment. If you are running against a standard acceptance test environment (Tier 2 or higher), you might not have configured the authentication thumbprint on all of the AOS virtual machines. Make sure you properly add the thumbprint to the **wif.config** file on all of the AOS machines. For more information, see [Configure the test environment to trust the connection](rsat-install-configure.md#configure-the-test-environment-to-trust-the-connection).
+
+We have also seen this error when there is a mismatch between the UTC time between the client computer (where RSAT is installed) and the Finance and Operations environment. This is a rare case and only happens if your administrator has incorrectly configured the UTC time. The client computer and Finance and Operations environment can be on different time zones; however, the UTC time on both environments must match because the authentication mechanism relies on this comparison.
 
 ## Google Chrome Browser
 
 The Google Chrome browser may not work with the Regression suite automation tool due to your Active Directory security settings. In this case, change your RSAT settings to use the new Microsoft Edge or Internet Explorer.
 
-## Excel data tabs
+## Validating blank dates
 
-Microsoft Excel data tabs display the system identifiers for data variables. Excel does not display friendly names.
+If your test case requires validation that a certain control of type Date/Time is blank, you can insert the following value into the Excel cell corresponding to this control: "01/01/1900".
 
-##  Validating blank dates
-If your test case requires validation that a certain control of type Date/Time is blank, you can insert the following value into the Excel cell corresponding to this control: “01/01/1900”.
+## Azure DevOps connectivity
 
+You might you see this error when you select the desired Azure DevOps project in RSAT settings: "The structure path \<iteration path\> is not valid. Verify your settings and try again". To resolve this error, open the project in Azure DevOps and navigate to the Test Plans. Verify the iteration path defined for each test plan. If the iteration path is similar to what is shown in the error, remove the existing iteration path and add a new one for the test plan and save.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

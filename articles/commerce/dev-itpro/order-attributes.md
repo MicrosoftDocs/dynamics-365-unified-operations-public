@@ -4,11 +4,9 @@
 title: Define and set order attributes
 description: This topic explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
 author: mugunthanm
-manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 09/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -35,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 Previously, the attribute framework supported attributes only in online orders. However, the framework has been extended so that it now supports attributes in cash-and-carry transactions, customer orders, and call center orders. This enhancement lets you edit and set attribute values for orders directly in Commerce Headquarters, the point of sale (POS), and the Commerce runtime (CRT). 
 
-Headquarters now includes pages for editing and updating attribute values. Therefore, you can set the values for call center orders in Headquarters. Although no out-of-box user interface (UI) for setting attribute values is available in the POS, you can extend the POS to add a new UI. If you don't require a UI and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Headquarters configurations. No database changes are required. Previously, you had to create new tables in Headquarters and the channel database, and then modify those tables.
+Headquarters now includes pages for editing and updating attribute values, which means that you can set the values for call center orders in Headquarters. In POS, use the Attributes panel to set or update the attribute value in POS. If you don't need to use a user interface and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Headquarters configurations. No database changes are required. Previously, you had to create new tables in Headquarters and the channel database, and then modify those tables.
 
 ## Why and when you should order attributes
 
@@ -245,11 +242,53 @@ You can find the full sample code in the Retail SDK at Retail SDK\\SampleExtensi
         }
 ```
 
+## Extend a Dynamics 365 Commerce e-commerce site to set values for order attributes in the cart
+
+Use this code to set values for order attibutes in the cart.
+
+```javascript
+public _addOrUpdateSalesOrderAttributes = (cart: Cart): void => {
+    // Create the array of attribute and add attributes
+    const attributeArr: AttributeValueBase[] = [];
+    let attributeObj = {
+        // @ts-ignore
+        '@odata.type': '#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue',
+        Name: 'Brand',
+        ExtensionProperties: [],
+        TextValue: 'OscarBrand-2',
+        TextValueTranslations: []
+    };
+    attributeObj.Name = 'Brand';
+    attributeArr.push(attributeObj);
+
+    attributeObj = {
+        // @ts-ignore
+        '@odata.type': '#Microsoft.Dynamics.Commerce.Runtime.DataModel.AttributeTextValue',
+        Name: 'Connector',
+        ExtensionProperties: [],
+        TextValue: 'OscarConnector-2',
+        TextValueTranslations: []
+    };
+    attributeObj.Name = 'Connector';
+    attributeArr.push(attributeObj);
+
+    cart.AttributeValues = attributeArr;
+    updateAsync({ callerContext: this.props.context.actionContext}, cart)
+                .then(newCart => {
+                    console.log('Success');
+                    this.props.context.actionContext.update(new GetCheckoutCartInput(this.props.context.request.apiSettings), newCart);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+};
+```
+
 ## Extend attributes to do some business logic in the POS
 
 > [!NOTE]
 > The following changes are required only if you are running the application with version 8.1.2 or earlier. 
-Starting in 8.1.3, you can use the new Attributes panel to set or update the attribute value in POS. With this control you no longer  need to write any additional code or create UI to set the attribute value in POS. In the attribute control UI has been added to set or update the attribute value. Refer to the **Show Order attributes in the POS transaction screen using the Attribute control** section in this document for more details.
+Starting in 8.1.3, you can use the Attributes panel to set or update the attribute value in POS. With this control you no longer  need to write any additional code or create UI to set the attribute value in POS. In the attribute control UI has been added to set or update the attribute value. Refer to the **Show Order attributes in the POS transaction screen using the Attribute control** section in this document for more details.
 
 A new sample that has been added to the Retail SDK sets the business logic for order attributes in the POS. This sample includes code only for the business logic. It doesn't show how to save or read attribute values, because read and write operations for attributes are automated. You can set the values for attributes in either CRT or the POS, based on your scenario. If your values are based on customer input, set them in the POS client. If some business logic is involved, set the values in CRT.
 
@@ -389,3 +428,6 @@ You can find the full sample code in the Retail SDK at Retail SDK\\POS\\Extensio
         return isB2B;
     } } } }
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

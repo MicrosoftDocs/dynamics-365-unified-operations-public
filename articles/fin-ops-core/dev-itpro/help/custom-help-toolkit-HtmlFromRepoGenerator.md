@@ -4,10 +4,8 @@
 title: Custom Help Toolkit - The HtmlFromRepoGenerator tool
 description: This topic describes the HtmlFromRepoGenerator tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 
 # optional metadata
 
@@ -16,7 +14,6 @@ ms.service: dynamics-ax-platform
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -51,7 +48,8 @@ The **HtmlFromRepoGenerator** tool provides functionality that supports the crea
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly.
 
-In the first version of the Custom Help Toolkit, this tool was named ConsoleApp.
+> [!NOTE]
+> In the first version of the Custom Help Toolkit, this tool was named ConsoleApp. The tool was renamed and updated in 2020.
 
 ### Syntax
 
@@ -90,25 +88,25 @@ The following additional parameters are used when the tool is run against the lo
 
 The following example clones the en-US repo and generates HTML files for en-US.
 
-```
+```dos
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
 The following example uses a previously cloned en-US repo and generates HTML files for en-US.
 
-```
+```dos
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
 The following example clones the de-DE and en-US repos, and generates HTML files for de.
 
-```
+```dos
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
 The following example uses the existing de-DE and en-US repos, and generates HTML files for de. If you use the existing de-DE repo, make sure that it's up to date.
 
-```
+```dos
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --externalText "(This is an external link)" --enOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
@@ -133,3 +131,6 @@ For more information, see [Introduction to DocFX Template System](https://dotnet
 [Deploy custom Help to Azure](walkthrough-help-azure.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

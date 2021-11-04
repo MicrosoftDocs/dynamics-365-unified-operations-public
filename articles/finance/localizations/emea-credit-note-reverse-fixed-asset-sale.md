@@ -4,11 +4,9 @@
 title: Fixed assets disposal for Estonia and Lithuania
 description: This topic provides information about credit notes for fixed assets disposal posted by a free text invoice for users in legal entities in Estonia and Lithuania.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.search.form: CustFreeCreditNote_W, CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266944
 ms.search.region: Estonia, Lithuania
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -47,3 +44,6 @@ The fixed asset disposal transactions, created when you posted the credit note, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

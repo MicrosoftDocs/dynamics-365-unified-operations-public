@@ -3,12 +3,10 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (May 14, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for May 14, 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
 
@@ -32,15 +29,19 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (May 14, 2020)
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3244. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Platform changes
 
-Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). This release includes bug fixes and changes to saved views.
+Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). This release includes bug fixes and changes to saved views.
  
-## Ensure Common Data Service picklists are consistent with Leave enums (436343)
+## Ensure Dataverse picklists are consistent with Leave enums (436343)
 
-Common Data Service picklists are now consistent with Leave enums.
+Dataverse picklists are now consistent with Leave enums.
 
 ## Allow users to configure leave request workflow based on the request amount (300044)
 
@@ -78,7 +79,7 @@ This change corrects an error when a leave plan has two leave types assigned and
 
 With this change, the Getting started banner is hidden for users that aren't System administrators or Data management administrators. 
 
-## The Common Data Service Worker Address entity works differently in terms of date time effective dates in Human Resources (425071)
+## The Dataverse Worker Address entity works differently in terms of date time effective dates in Human Resources (425071)
 
 This change keeps address information aligned in certain scenarios, based on the dates of the address.
 
@@ -119,6 +120,8 @@ You can specify a carry forward leave type for carry forward balances where carr
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

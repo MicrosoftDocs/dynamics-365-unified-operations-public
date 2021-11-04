@@ -1,29 +1,11 @@
 ---
-# required metadata
-
 title: SQL connection error X++ exception
 description: This topic describes the SQL connection error exception types in X++.
 author: yiqju
-manager: AnnBe
 ms.date: 09/27/2018
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-ms.custom: 150373
-ms.assetid: f06da12e-911c-442c-97fd-280cbc970061
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
@@ -67,3 +49,6 @@ public static void LargeTransactionWrapper()
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

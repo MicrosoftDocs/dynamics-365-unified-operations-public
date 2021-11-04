@@ -3,26 +3,23 @@
 
 title: Import vendor catalogs
 description: This topic describes the process to import vendor catalog data.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: VendProspectiveVendorRegistrationRequests  
+ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2018-04-20 
 ms.dyn365.ops.version: 7.3
 ---
@@ -92,3 +89,6 @@ a new catalog, replace an existing catalog, or modify an existing catalog.
 catalog file template and save the file.
 
 For more information and for examples, refer to this blog post: [Vendor catalogs in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
  
 title: Calculate kanban quantity suggestions
 description: This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation. 
-author: ChristianRytt
-manager: tfehr 
+author: johanhoffmann
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -88,3 +85,6 @@ This procedure focuses on optimizing the kanban size and quantities for a specif
     * Notice this is the fixed kanban quantity of 4 from the kanban quantity calculation.  
 5. Click the ListPanel tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Billing classifications and billing codes in the public sector
 description: Public-sector organizations can use billing classifications and billing codes to help manage free text invoices. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19491
 ms.assetid: 47624566-0b4c-41dc-9cd4-801e213b5da3
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Public-sector organizations can use billing classifications and billing codes to help manage free text invoices. 
 
-Billing classifications
------------------------
+## Billing classifications
 
 Billing classifications are used to group similar free text invoices for processing and viewing. For example, a transit agency might lease space in each transit station to small coffee shops and other vendors. By creating a billing classification for leases, the agency can automatically apply the same terms of payment and use the same sequence of collection letters for all leases. The agency can also view invoices for all the leases together, even if the leases don’t share the same financial dimensions. Billing classifications include the following information:
 
@@ -94,3 +90,6 @@ No, but there’s a way to get the results you need anyway. Let’s say that you
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

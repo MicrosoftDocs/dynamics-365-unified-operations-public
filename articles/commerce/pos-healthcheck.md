@@ -4,11 +4,9 @@
 title: Health check for POS peripherals and services
 description: This topic provides an overview of the health check operation in the point of sale (POS).
 author: rubendel
-manager: AnnBe
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -87,4 +84,7 @@ Custom health checks can also be created to test devices that aren't supported o
 
 ## Related articles
 
-[Modern POS (MPOS) triggers and printing](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pos-trigger-printing)
+[Modern POS (MPOS) triggers and printing](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

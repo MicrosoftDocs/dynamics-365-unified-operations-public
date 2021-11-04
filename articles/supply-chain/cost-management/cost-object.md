@@ -4,11 +4,9 @@
 title: Cost objects
 description: This article provides information about costs objects, and explains how costs and quantities are accumulated. A cost object is an entity that costs and quantities are accumulated for. A cost object entity can be either a product or product variants, such as variants for style and color.  
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: InventCostOnhandItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -71,18 +68,20 @@ The following table shows what is a cost object and what is an inventory object.
 
 **Note:** The **Include physical value **parameter has no effect on the preceding calculations.
 
-Additional resources
---------
+## Additional resources
 
-[Product dimension group](https://technet.microsoft.com/library/aa499382.aspx)
+[Product dimension group](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Storage dimension group](https://technet.microsoft.com/library/hh209317.aspx)
+[Storage dimension group](/dynamicsax-2012//storage-dimension-groups-form)
 
-[Tracking dimension group](https://technet.microsoft.com/library/hh209465.aspx)
+[Tracking dimension group](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md)
+[What's new or changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 [Cost entries](cost-entries.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

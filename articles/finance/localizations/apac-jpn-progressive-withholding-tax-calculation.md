@@ -3,12 +3,10 @@
 
 title: Progressive withholding tax for Japan
 description: This topic provides information about progressive withholding tax in Japan.
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,13 +15,12 @@ ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265164
 ms.assetid: 5ee3e381-31c4-48ac-9488-0eb1bc524cf5
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -131,3 +128,6 @@ In this example, withholding tax is calculated by using an **Origin of percentag
 |         2,001–0         | 20 percent |                    2,545.00                     |         509.00          |
 |                         |            |        <strong>Total WHT amount</strong>        | <strong>759.00</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

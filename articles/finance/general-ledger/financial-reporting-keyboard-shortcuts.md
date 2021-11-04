@@ -3,12 +3,10 @@
 
 title: Keyboard shortcuts for missing account analysis
 description: This topic lists the keyboard shortcuts that are available when you run a missing account analysis in Management Reporter.
-author: ryansandness
-manager: AnnBe
+author: panolte
 ms.date: 08/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2019-08-31 
 ms.dyn365.ops.version: 10.0.5
 ---
@@ -117,3 +114,6 @@ The following table provides a short, non-exhaustive list of keyboard shortcuts 
 | Backspace | Deletes the character before the insertion point when editing a cell. |
 | Ctrl+Enter | Commits any changes to the current cell without moving the focus. Also commits any changes to the current row. |
 |   |   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

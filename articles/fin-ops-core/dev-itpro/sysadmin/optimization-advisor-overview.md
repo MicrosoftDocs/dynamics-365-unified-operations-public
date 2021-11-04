@@ -4,11 +4,9 @@
 title: Optimization advisor overview
 description: This topic describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations. 
 author: roxanadiaconu
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: roxanad
+ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3 
 
@@ -99,3 +96,6 @@ To deactivate the evaluation of specific rules, select the opportunity that was 
 [Create rules for Optimization advisor](./create-rules-optimization-advisor.md)
 
 [Optimization advisor in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

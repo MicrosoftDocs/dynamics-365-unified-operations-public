@@ -4,11 +4,9 @@
 title: Sales tax calculation methods in the Origin field
 description: This article explains the options in the Origin field on the sales tax codes page and how sales tax is calculated based on the selected option for a sales tax code.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,14 +16,13 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -61,8 +58,7 @@ If the net amount is 10.00, then DUTY 1 is 1.00 (10.00 x 10%) and DUTY 2 = 2.00 
 | Only one tax code with Origin = Percentage of gross amount can be used for a transaction. If more than one such tax code is determined for a transaction an error will be displayed that sales tax cannot be calculated. |
 
 
-Percentage of sales tax
------------------------
+## Percentage of sales tax
 
 When you select Percentage of sales tax in the Origin field, sales tax is calculated as a percentage of the sales tax that is selected in the Sales tax on sales tax field. The sales tax that is selected in the Sales tax on sales tax field is calculated first. The second sales tax is then calculated based on the first sales tax amount.
 ### Example
@@ -128,8 +124,7 @@ Document / journal is set to Amounts include sales tax = No Transaction line amo
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Sales tax rates based on the Marginal base and Calculation methods](marginal-base-field.md)
 
@@ -137,3 +132,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

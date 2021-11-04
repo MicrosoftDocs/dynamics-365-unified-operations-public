@@ -4,11 +4,9 @@
 title: Sell and return products that aren't part of a store's assortment
 description: With Dynamics 365 Commerce, you can sell and return products outside of assortments.
 author: pdp1207
-manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: RetailAssortmentDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -50,3 +47,6 @@ Those common scenarios are available for retailers using Commerce. With Commerce
 + Pick up products at the current store or another store.
 + Cancel an order at the current store or another store.
 + Return an order with or without the receipt at the current store or another store.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

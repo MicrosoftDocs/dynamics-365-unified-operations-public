@@ -4,11 +4,9 @@
 title: Commerce runtime (CRT) extensibility and triggers
 description: This topic explains trigger support for the Microsoft Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 author: RobinARH
-manager: AnnBe
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 17731
 ms.assetid: 2d6ec331-b266-4dbc-97c5-db2919b662dc
@@ -103,10 +100,16 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
 ### Register the extension
 
 Copy and paste the extension library to **...\RetailServer\webroot\bin\ext folder** and update the **commerceRuntime.ext.config** file with the custom extension library information under composition section. In this example, **Contoso.Commerce.Runtime.Services** is the  custom extension name.
-    <add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
+
+```xml
+<add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
+```
 
 For the CRT extension to work in offline mode, update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section. Then copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.
 
 ### Debugging CRT
 
 To debug CRT from POS, attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server. For offline mode, attach the CRT extension project to the dllhost.exe process.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

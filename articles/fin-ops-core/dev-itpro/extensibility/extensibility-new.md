@@ -1,24 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed for extensibility
 description: This topic provides links to topics about extensibility updates.
 author: RobinARH
-manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -51,3 +44,6 @@ This topic provides links to extensibility updates.
 + [Extensibility changes in version 7.3](extensibility-changes-73.md)
 + [Extensibility changes July 2017](changes-july-2017.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

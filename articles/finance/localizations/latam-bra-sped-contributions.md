@@ -4,11 +4,9 @@
 title: Set SPED EFD contributions 
 description: This topic explains how to set up parameters and generate the SPED EFD - Contributions statement for Brazil. 
 author: sndray
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -170,3 +167,6 @@ Go to **Fiscal books** \> **Setup** \> **PIS and COFINS tables** \> **Revenue so
 
 > [!NOTE]
 > To use batch processing, select **Batch**, and then specify the options for batch processing execution. You might use batch processing if the file should be generated later, or if it should be generated on a server instead of on your computer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

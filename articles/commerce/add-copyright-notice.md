@@ -4,11 +4,9 @@
 title: Add a copyright notice
 description: This topic describes how to add a copyright notice to your e-Commerce website.
 author: psimolin
-manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -47,8 +44,8 @@ Before you can add a copyright notice to your site, you must have the following 
 
 To add a copyright notice to the bottom of every page that uses a specific template, follow these steps.
 
-1. Go to **Fragments**, and then select **New Page Fragment**.
-1. In the dialog box, select the **Footer** module, and name the fragment. For example, enter **Footer-Copyright**.
+1. Go to **Fragments**, and then select **New**.
+1. In the **New fragment** dialog box, select the **Footer** module, and name the fragment. For example, enter **Footer-Copyright**.
 1. Select **OK**.
 1. In the navigation pane, select the ellipsis button (**...**) next to **Footer**, and then select **Add Module**.
 1. In the dialog box, select **Footer category**, and then select **OK**.
@@ -81,3 +78,6 @@ The footer that contains the copyright notice automatically appears at the botto
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

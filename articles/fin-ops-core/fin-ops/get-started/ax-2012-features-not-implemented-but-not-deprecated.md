@@ -4,11 +4,9 @@
 title: AX 2012 features that were postponed
 description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed, and indicates whether the features have been implemented since the AX 7.0 release.
 author: sericks007
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21881
 ms.assetid: 26793616-9b3f-41f5-8500-6983769c51d8
@@ -36,7 +33,7 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. In the following table, the **Current status** column indicates whether the feature has been implemented since the AX 7.0 release.
 
-For a detailed list of when each version of the product was released, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+For a detailed list of the release date for each version, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
 <table>
 <thead>
@@ -69,7 +66,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Client drag-and-drop</td>
-<td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned so that they work on the new web client platform. APIs that support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
+<td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and they require a redesign so that they work on the new web client platform. APIs that support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
@@ -84,7 +81,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Customer self-service (CSS)</td>
-<td>CSS lets you create approved customer records. It also allows users to view selected product catalogs, order items, and view the status of invoices. Additionally, CSS provides the ability to create and follow return orders.</td>
+<td>CSS lets you create approved customer records. It also allows users to view selected product catalogs, order items, and view the status of invoices. Additionally, CSS lets you create and follow return orders.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
@@ -94,7 +91,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Employee self-service (ESS)</td>
-<td>ESS shows employees several tiles which have task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
+<td>ESS shows employees several tiles that have task-related and career-related information on a single page. Employees can view pending work items and click links that open pages where they can take action on their tasks. ESS pages also show employees the status of their certifications, when their next performance reviews are scheduled, skills, goals, and compensation information, and other information, such as balances for vacation and sick time. Employees can also access a company directory from their ESS page.</td>
 <td>Implemented in version 1611</td>
 </tr>
 <tr>
@@ -111,7 +108,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>General budget reservations</td>
-<td>Thw General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes.</td>
+<td>The General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes.</td>
 <td>Implemented in version 8.1</td>
 </tr>
 <tr>
@@ -131,17 +128,17 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Procurement site</td>
-<td>In previous versions, the Employee self-service procurement site let you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. Different procurement catalogs could be configured to show on the site depending on policy. Procurement catalogs could also be designed by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hierarchy. Additionally, on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
+<td>In previous versions, the Employee self-service procurement site lets you enter requisitions for employees, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. You could configure different procurement catalogs to show on the site depending on policy. You could also design procurement catalogs by adding new nodes. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization. The structure is always based on the Procurement categories hierarchy. Additionally, on the procurement site the employee could approve a vendor invoice and confirm receipts in relation to the requisitions and derived purchase orders.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
 <td>Secure global address book</td>
-<td>The ability to help secure the global address book by legal entity and address book hasn't been implemented yet. This feature will be available in a future update.</td>
+<td>The ability to help secure the global address book by legal entity and address book is not available. This feature will be available in a future update.</td>
 <td>Not implemented</td>
 </tr>
 <tr>
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are curently supported per payment format.
+<td>Currently, you must enter the payment format specifications manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are currently supported per payment format.
 <blockquote>[!NOTE] Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.</blockquote>
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
@@ -416,14 +413,14 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Vendor collaboration (Vendor Portal)</td>
-<td>Dynamics AX 2012 provided vendor portal capabilities via Enterprise Portal. These capabilities have been ported to Financial and Operations. In version 7.1 (also known as Dynamics 365 for Operations 1611), a vendor could view and respond to purchase orders.
-<p>In version 7.3, the vendor can view and respond to RFQ's. Vendors can also view and edit selected information from the vendor record such as addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.</p>
+<td>Dynamics AX 2012 provided vendor portal capabilities via Enterprise Portal. Financial and Operations also provides these capabilities. In version 7.1 (also known as Dynamics 365 for Operations 1611), a vendor could view and respond to purchase orders.
+<p>In version 7.3, the vendor can view and respond to RFQs. Vendors can also view and edit selected information from the vendor record such as addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.</p>
 </td>
 <td>Implemented in version 7.3</td>
 </tr>
 <tr>
 <td>Vendor requests - external request to become a new vendor</td>
-<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register additional details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account.</td>
+<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register more details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account.</td>
 <td>Implemented in version 7.3</td>
 </tr>
 <tr>
@@ -457,97 +454,100 @@ For a detailed list of when each version of the product was released, see [Softw
 <li>Depreciation bonus recovery</li>
 </ul>
 </td>
-<td>Not implemented</td>
+<td>Implemented in version 8.1.3</td>
 </tr>
 <tr>
 <td>[Russia] Electronic export/import format for Client-Bank interface and reconciliation procedure</td>
 <td>Electronic formats for export of outgoing payments, and import of incoming payments.</td>
-<td>Not implemented</td>
+<td>Implemented in version 8.1.3</td>
 </tr>
 <tr>
 <td>[Russia] VAT declaration</td>
 <td>Electronic format of VAT declaration.</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Cash Flow Management</td>
 <td>The functionality which obtains a cash flow forecast and performs an analysis, manages payments on a daily basis using payment schedule journals, controls the company's cash position, and maintains the company's cash flows with centralized control,</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Accounting reporting format</td>
 <td>Electronic format of the following accounting reports: BalanceSheet, IncomeStatement, CashFlow, EquityStatement, TargetUsageMoney</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Assessed tax reporting</td>
 <td>Assessed tax declaration.</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Land tax reporting</td>
 <td>Land tax declaration. Creation of Land tax declaration by separate divisions.</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Transport tax reporting</td>
 <td>Transport tax declaration.</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Indirect tax return (VAT and Excise) on import of goods</td>
 <td>Indirect (withholding) tax return (VAT and Excise) on import of goods from state members of Customs union.</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Journal of Alcohol sales in Retail</td>
-<td>Daily Alcohol journal. Integration with EGAIS.</td>
-<td>Not implemented</td>
+<td>Daily Alcohol journal.</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Optional posting of transfer orders to General ledger</td>
 <td>Option to post/not post transactions to General ledger when posting a transfer order.</td>
-<td>Not implemented</td>
+<td>Implemented in version 8.1.2</td>
 </tr>
 <tr>
 <td>[Russia] Inventory owner</td>
 <td>Inventory dimension used to track owner of inventory (consignment stock, bailment, tolling, etc.).</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
-<td>[Russia] AP/AR - 3rd party miscellaneous charges</td>
-<td>Registration of 3rd party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties re-allocation to other expense accounts.</td>
-<td>Implemented in 8.1.1</td>
+<td>[Russia] AP/AR - Third-party miscellaneous charges</td>
+<td>Registration of third-party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties re-allocation to other expense accounts.</td>
+<td>Implemented in version 8.1.1</td>
 </tr>
 <tr>
 <td>[Russia] Goods in transit from vendor</td>
 <td>Registering goods in transit from vendor by special posting profile with Item type "purchased items en route". Creating Act of inventory holdings en route. (INV-6)</td>
-<td>Not implemented</td>
+<td>Implemented in version 8.1.2</td>
 </tr>
 <tr>
 <td>[Russia] Goods in transit - sales to customer with postponed passing of property</td>
 <td>Post sales invoice with postponed property transfer: no customer debts posted, all outgoing taxes are posted, items are transferred to transit warehouse. Register passing of property with posting debts and items sale from transit warehouse.</td>
-<td>Not implemented</td>
+<td>Implemented in version 8.1.2</td>
 </tr>
 <tr>
 <td>[Russia] Bailment - accounting at bailee side</td>
 <td>Accounting of inventory receipt for bailment as required by the Law and generation of primary form MX-1. Accounting of inventory return from bailment and generation of primary form MX-3. Bailment costs calculation from bailee side.</td>
-<td>Not implemented</td>
+<td>Implemented in version 8.1.2</td>
 </tr>
 <tr>
 <td>[Russia] Bailment - accounting at owner side</td>
 <td>Accounting of inventory transfer to bailment and inventory return from bailment on goods owner side under bailment service contract.</td>
-<td>Not implemented</td>
+<td>Implemented in version 8.1.2</td>
 </tr>
 <tr>
 <td>[Russia] Localization of Process Industries solution</td>
-<td>Basic localization in two areas: correspondence of accounts for all new general ledger postings, and functional co-existence of Process Industries features and Russian country context (no issues when both Process Industries and Russian country context are enabled).</td>
-<td>Not implemented</td>
+<td>Basic localization in two areas: correspondence of accounts for all new general ledger postings, and functional coexistence of Process Industries features and Russian country context (no issues when both Process Industries and Russian country context are enabled).</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 <tr>
 <td>[Russia] Alcohol sales declarations: Application 6, 7, 8 for wholesale. Applications 11, 12 for retail</td>
 <td>Keeping track of alcoholic beverages types including producers, unit of measures, licenses for retail and wholesale trade. Preparing data for alcoholic beverages activities, including printing declarations and exporting them in XML format through e-reporting.</td>
-<td>Not implemented</td>
+<td>Implemented in version 10.0.1</td>
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

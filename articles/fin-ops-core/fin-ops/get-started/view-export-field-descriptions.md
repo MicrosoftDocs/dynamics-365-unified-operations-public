@@ -4,11 +4,9 @@
 title: View and export field descriptions
 description: This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -51,7 +48,7 @@ You can view field descriptions by hovering over a field. If no description is a
 
 The following illustration shows the field description that appears when you hover over the **Lock items during count** field.
 
-[![Example of a field description](./media/field-description.png)](./media/field-description.png)
+[![Example of a field description.](./media/field-description.png)](./media/field-description.png)
 
 ## Use the Field descriptions page to view and export field help
 
@@ -113,3 +110,6 @@ For information about the various way to find pages, see the "Searching for page
 ## Additional resources
 
 [Customize field descriptions](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

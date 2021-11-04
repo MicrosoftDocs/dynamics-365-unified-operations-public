@@ -4,11 +4,9 @@
 title: Credit management parameters setup
 description: This topic describes the options that you can use to configure Credit management to meet your business's requirements.
 author: mikefalkner
-manager: AnnBe
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -87,3 +84,6 @@ Several credit management statistics are included in the **Customer credit manag
 ### Number sequences and shared number sequence parameters
 
 A journal ID is required to process credit limit adjustments. You must add the credit limit adjustment number that should be used to generate the journal ID.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

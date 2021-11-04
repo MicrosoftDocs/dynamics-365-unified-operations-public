@@ -4,11 +4,9 @@
 title: VAT statements details for Italy
 description: This topic explains how to set up a VAT statement for legal entities in Italy. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269664
 ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
@@ -113,6 +110,8 @@ After the year end, generate the report for each settlement period. The transmis
 | **Date of export**       | The date when the .ivc file was exported.                                                     |
 | **Export file name**     | The name of the .ivc file.                                                                    |
 
+Find more details in [Yearly tax communication](emea-ita-yearly-tax-communication.md).
+
 ## VAT summary report
 For VAT reporting, Italy has specific information to be reported and formatted. In the **Sales tax authorities** page, on **Tax setup**, configure the Italian authority.
 
@@ -133,3 +132,6 @@ Per Italian legislation, rules apply to settlement periods. For example, after t
 |   <strong>Closed</strong>    | Indicates if the Italian sales tax book for the period has been updated and automatically closed. |
 | <strong>Last period</strong> |             Select this option if the period is the last period in a sales tax year.              |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

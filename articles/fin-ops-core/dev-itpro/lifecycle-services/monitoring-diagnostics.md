@@ -2,13 +2,11 @@
 # required metadata
 
 title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
-description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Finance and Operations environments that you manage.
-author: meeramahabala
-manager: AnnBe
-ms.date: 08/03/2020
+description: This topic describes the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
+author: angelmarshall
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: meeram
+ms.author: tsmarsha
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -42,7 +39,7 @@ To have a successful onboarding experience to the cloud service, you must know t
 
 The telemetry data that is the basis of the Monitoring and diagnostics portal in LCS has three primary use cases: monitoring, diagnostics, and analytics. 
 
-[![Monitoring, diagnostics, and analytics](./media/monitoringanddiagnostics01.png)](./media/monitoringanddiagnostics01.png)
+[![Monitoring, diagnostics, and analytics.](./media/monitoringanddiagnostics01.png)](./media/monitoringanddiagnostics01.png)
 
 ### Monitoring
 
@@ -69,7 +66,7 @@ For a managed cloud service such as Finance and Operations, Microsoft is respons
 2. In the **Environments** section, select the environment to view, and then select **Full details**.
 3. On the environment details page, select **Environment monitoring** to open the Monitoring and diagnostics portal. 
 
-[![Environment details](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
+[![Environment details.](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
 
 ## Tools
 
@@ -127,7 +124,7 @@ On the **Environment monitoring** page, select the **Health metrics** tab to vie
 
 On the **Environment monitoring** page, select the **Activity** tab to use the Activity monitoring tool. This tool provides a storyboard view that shows what you or another user was doing during a specific period. 
 
-[![Activity tab](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
+[![Activity tab.](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
 
 - The **User interaction** chart shows a user's activities on various machines in the environment and the SQL utilization trend.
 - The **User load** section shows all the system users. Each chart shows the time that the user spent on a specific machine.
@@ -155,7 +152,12 @@ For advanced troubleshooting, you can view raw information logs. You can use a s
 - Crashes
 - Financial reporting issues
 
+For information about how to use Azure Data Explorer with raw information logs, see [Use Azure Data Explorer to query raw information logs](azure-data-explorer.md).
+
 ### SQL insights
 
 The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For more details, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

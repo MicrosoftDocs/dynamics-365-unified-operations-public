@@ -4,11 +4,9 @@
 title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
-manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: FinancialReports
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261824
 ms.search.region: Global
@@ -35,16 +32,11 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
-In specific scenarios, you might have to reset the data mart for Financial reporting. Here are some examples:
-
-- The application database was restored, but the data mart database wasn't restored.
-- You see incorrect data for a period, and you've determined that the issue isn't a report design issue.
-- You see incorrect data for a period, and records appear under integration attempts on Report designer integration status page (start the Report designer and select **Tools** > **Integration status**).
-- Support instructs you to reset the data mart as part of a troubleshooting step.
-
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
 > [!NOTE]
+> To confirm that it's necessary to reset your data mart, see [When to reset a data mart](when-to-reset-data-mart.md).
+
 > A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports, which you accomplish by exporting them. The steps for exporting report definitions are included at the end of this topic in the section titled, Export and import report definitions, later in this topic.
 
 ### Reset the Financial reporting data mart from Report designer
@@ -53,7 +45,7 @@ To find the version of report designer, watch this video: [How to find the versi
 
 To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart** as shown in the following illustration. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
-[![Reset Data Mart dialog box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
+[![Reset Data Mart dialog box.](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### Integration attempts
 
@@ -75,7 +67,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 - **Restore database** – The database was restored, but the database for the Financial reporting data mart wasn't restored.
 - **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
 
-[![Reset data mart](./media/Integration.png)](./media/Integration.png)
+[![Reset data mart.](./media/Integration.png)](./media/Integration.png)
 
 > [!NOTE]
 > Verify that all data mart reset tasks have completed an initial load before you begin a reset. You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.
@@ -88,7 +80,7 @@ When you're ready to start the reset process, select **OK**. You're prompted to 
 
 If you want to review the status of the integration, select **Tools** &gt; **Integration status** to see the last time that the integration was run and the status.
 
-[![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)
+[![View the status of the integration.](./media/New-integration.PNG)](./media/New-integration.PNG)
 
 > [!NOTE]
 > The reset is finished when all mappings show a status of **RanToCompletion**, and an "Integration complete" message appears in the lower-left corner of the **Integration Status** dialog box.
@@ -118,7 +110,7 @@ An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip p
 Run the following scripts against the database (not against the Financial reporting database):
 
 - DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
-- DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
+- DataUpgrade.zip\\AosService\\Scripts\\GrantAxViewChangeTracking.sql
 
 These scripts help guarantee that the users, roles, and change tracking settings are correct.
 
@@ -567,7 +559,7 @@ Before getting started, be sure that all users close Report designer and exit th
 -- Attempt to delete integrated users
 	DECLARE @userId nvarchar(max)
 	DECLARE removeUserCursor CURSOR LOCAL FAST_FORWARD FOR
-	select UserID from Reporting.SecurityUser su join Reporting.SecurityUserIntegration sui on su.UserID = sui.ID
+	select UserID from Reporting.SecurityUser where UserID <> '00000000-0000-0000-0000-000000000002'
 	OPEN removeUserCursor
 	FETCH NEXT FROM removeUserCursor INTO @userId
 	WHILE @@FETCH_STATUS = 0
@@ -701,7 +693,7 @@ First, follow these steps to export the report designs from Report designer.
 You can copy or upload the file to a secure location.
 
 > [!WARNING]
-> Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+> Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines).
 
 ### Import report definitions
 
@@ -716,3 +708,6 @@ Next, import your report designs from Report designer by using the file that was
     - To import specific reports, rows, columns, trees, or dimension sets, select them.
 
 5. Select **Import**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

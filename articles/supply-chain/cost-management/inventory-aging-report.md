@@ -3,28 +3,25 @@
 
 title: Inventory aging report examples and logic
 description: This topic presents some examples that show how to interpret the results of an Inventory aging report.
-author: RichardLuan
-manager: tfehr
+author: AndersGirke
 ms.date: 5/29/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
 
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 # ROBOTS:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 
 
@@ -369,3 +366,6 @@ The new report will resemble the following example.
 </tr>
 </tfoot>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

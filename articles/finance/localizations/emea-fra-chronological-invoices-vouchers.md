@@ -4,11 +4,9 @@
 title: Chronological invoice and voucher numbers
 description: This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable.  
 author: ShylaThompson
-manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: CustParameters, NumberSequenceGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264514
 ms.search.region: France
@@ -50,8 +47,8 @@ In some countries, there is a legal requirement that all invoices and related vo
 
 | Category            | Prerequisite                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Feature activation  | In the Feature management workspace, turn on the **Chronological numbering** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).                                                                                                                                                              |
-| Country/region      | If the primary address of the legal entity is in France, set the **Chronological numbering** option to **Yes** on the **Accounts receivable parameters** page, on the **Updates** tab.                                                                                                                                                                                                |
+| Country/region  | The primary address of the legal entity must be in France.|
+| Parameters      | Set **Chronological numbering** to **Yes** on the **Accounts receivable parameters** page, on the **Updates** tab.                                                                                                                                                                                                |
 | Related setup tasks | On the **Number sequences** page, define as many number sequences as you require to cover the affected fiscal periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.  |
 
 ## Set up chronological numbering
@@ -59,7 +56,7 @@ In some countries, there is a legal requirement that all invoices and related vo
 
 On the **Accounts receivable parameters** page, on the **Number sequences** tab, select one of the supported references, such as **Free text invoice**. Then click the **Chronological numbering setup** button that will be available for the supported references. On the **Chronological numbering setup** page, define the date-effective number sequences that have valid periods.
 
-![Chronological numbers setup](media/emea-chronological-numbering.jpg)
+![Chronological numbers setup.](media/emea-chronological-numbering.jpg)
 
 ### Number sequence groups
 
@@ -74,3 +71,6 @@ The system performs an additional invoice dates control for customer invoices:
 
 - Posting new invoices with dates earlier than the date of the latest posted invoice is forbidden if no reason code is defined. To enable posting, a reason code must be entered either in an invoice/order header or in one of the lines.
 - A warning is raised if the new invoice date is later than the system date.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

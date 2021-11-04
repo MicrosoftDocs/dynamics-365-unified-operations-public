@@ -3,12 +3,10 @@
  
 title: Report as finished to a non-license plate controlled location  (Application, May 2016)
 description: This task guide shows an example of reporting as finished to a location that isn't license plate–controlled. 
-author: ChristianRytt
-manager: tfehr 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: WrkCtrResourceGroup, ProdTableListPage, ProdTableCreate, InventI
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Report as finished to a non-license plate controlled location  (Application, May 2016)
 
@@ -64,3 +61,6 @@ This task guide shows an example of reporting as finished to a location that isn
 18. Click Work details.
     * When the production order was reported as finished, no work was generated for put-away. This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

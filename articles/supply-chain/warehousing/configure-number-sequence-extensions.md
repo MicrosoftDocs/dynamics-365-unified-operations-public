@@ -4,26 +4,23 @@
 title: Configure number sequences for warehouse flows
 description: This topic provides an overview of the functionality that provides number sequence extensions for license plate IDs, wave label IDs, container IDs, and bill of lading IDs.
 author: GarmMSFT
-manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSNumberSequenceExtension
+ms.search.form: WHSNumberSequenceExt
 # ROBOTS:
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: v-olbara
+ms.author: mirzaab
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
 
@@ -98,3 +95,6 @@ To create and edit number sequences, follow these steps.
     | Check digit | This segment type adds a check digit, which is a modulo 10 calculation. (This behavior matches the existing logic for license plate IDs.) For this segment type, the **Value** field is always set to a caret (*^*), and the **Length** field is always set to *1*. |
 
 1. To view an example of your final number format, inspect the **Format** field at the bottom of the **Segments** FastTab.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

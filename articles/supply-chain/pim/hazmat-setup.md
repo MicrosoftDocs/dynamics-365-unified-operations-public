@@ -3,12 +3,10 @@
 
 title: Set up hazardous materials
 description: This topic explains how to set up the data that is required to classify items as hazardous materials. When you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Set up hazardous materials
@@ -288,3 +285,6 @@ To set up values for this specification, go to **Product information management 
 The *Hazardous material tunnel* specification limits the types of tunnels that a hazardous material can be transported through by identifying the types of tunnels that must be used. Tunnel categories are established by applicable regulations for hazardous material transport. This specification usually applies only to road transport.
 
 To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material tunnel**. On the **Hazardous material tunnel** page, you can create any number of tunnel identifiers and configure each with an identifying code and a short description.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

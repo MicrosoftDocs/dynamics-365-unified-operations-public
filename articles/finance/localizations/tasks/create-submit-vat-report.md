@@ -4,11 +4,9 @@
 title: Create and submit VAT report
 description: This procedure walks you through creating and submitting the VAT report to the German authority. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -41,3 +38,6 @@ This procedure walks you through creating and submitting the VAT report to Germa
 5. Select Yes in the Create electronic tax document field.
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

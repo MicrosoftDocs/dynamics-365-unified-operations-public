@@ -4,11 +4,9 @@
 title: EUR-00011 Generate the EU sales list report
 description: This procedure walks you through generating the EU sales list report. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -104,3 +101,6 @@ This procedure is intended for accountants.
 7. Click OK.
 8. In the Selection field, select 'Closed'.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

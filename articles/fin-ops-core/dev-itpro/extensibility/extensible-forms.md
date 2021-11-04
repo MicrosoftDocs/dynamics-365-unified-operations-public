@@ -1,31 +1,24 @@
 ---
-# required metadata
-
 title: Write extensible forms
 description: This topic provides information about how to write extensible forms.
 author: smithanataraj
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---
@@ -47,3 +40,6 @@ Consider using field groups whenever possible. In this way, independent software
 
 ## Form controls
 Moving around form controls could potentially cause a break if the controls are made non-extensible by moving.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

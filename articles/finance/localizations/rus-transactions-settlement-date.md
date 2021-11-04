@@ -4,11 +4,9 @@
 title: Set up dimension control for settlements (Russia)
 description: This topic explains how to set up dimension control for settlements in Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -101,3 +98,6 @@ Use this procedure to set up a dimension set for dimension control for settlemen
 
 1. Select **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**.
 2. Press Ctrl+N to create a dimension set, and enter the required details.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

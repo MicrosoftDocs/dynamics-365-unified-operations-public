@@ -3,28 +3,25 @@
 
 title: Delivery schedules
 description: Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.
-author: ShylaThompson
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule
+ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule, SalesQuotationDeliverySchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -40,7 +37,7 @@ Use a delivery schedule when the total quantity on an order or quotation line mu
 
 **Example of a delivery schedule**
 
-|                                   |                                          |
+| Item                              | Value                                    |
 |-----------------------------------|------------------------------------------|
 | Total order (original order line) | 600 chairs                               |
 | Requested delivery schedule       | 100 chairs per month                     |
@@ -62,3 +59,6 @@ When you confirm sales quotations, the resulting sales orders show the whole del
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

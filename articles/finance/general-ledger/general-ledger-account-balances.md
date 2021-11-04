@@ -4,11 +4,9 @@
 title: General ledger account balances
 description: This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports. It also discusses how to update dimension set balances.
 author: aprilolson
-manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13191
 ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
@@ -56,3 +53,6 @@ For more information, see [View financial reports](view-financial-reports.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Set up master planning
 description: This topic describes various important strategies and parameters that are used to set up master planning.
-author: t-benebo
-manager: tfehr
+author: ChristianRytt
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -113,18 +110,18 @@ For each plan, on the **General** FastTab of the **Master plans** page (**Master
 
 ### Operations scheduling
 
-You can use operations scheduling to provide a general estimate of the production process over time. Operations scheduling doesn't explode the operations for the production route into jobs. For more information about operations scheduling, see [Operations scheduling](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+You can use operations scheduling to provide a general estimate of the production process over time. Operations scheduling doesn't explode the operations for the production route into jobs. For more information about operations scheduling, see [Operations scheduling](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### Job scheduling
 
-Job scheduling is a more detailed scheduling method, where each operation is divided into its individual tasks or jobs. Job scheduling includes information about capacity. It's typically used to schedule individual jobs on the shop floor for an immediate or short-term time frame. For more information about job scheduling, see [Job scheduling](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Job scheduling is a more detailed scheduling method, where each operation is divided into its individual tasks or jobs. Job scheduling includes information about capacity. It's typically used to schedule individual jobs on the shop floor for an immediate or short-term time frame. For more information about job scheduling, see [Job scheduling](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## Time fences in days
 
 For each plan, you can select how far in the future the various requirements and other considerations must be calculated by master planning. The period is known as a *time fence*. For the best performance in master planning, we recommend that you adjust the various time fences to meet your business requirements. For each plan, you can find the time fences on the **Time fences in days** FastTab of the **Master plans** page (**Master planning \> Setup \> Plans \> Master plans**).
 
 > [!NOTE]
-> The time fences indicate how far in the future the various requirements and other considerations are calculated by master planning. The time fences selected in this page will override the time fences defined in the coverage group. This means setting a time fence option to yes and definiting the days will override the time fence defined in the coverage group. When setting to No, the time fence will be defined in the coverage group. Finally, if you don't want or need to use an option (for example you do not want to use action messages), set it to **Yes**, and then set the time fence to **0** (zero) days.
+> The time fences indicate how far in the future the various requirements and other considerations are calculated by master planning. The time fences selected in this page will override the time fences defined in the coverage group. This means setting a time fence option to yes and defining the days will override the time fence defined in the coverage group. When setting to No, the time fence will be defined in the coverage group. Finally, if you don't want or need to use an option (for example you do not want to use action messages), set it to **Yes**, and then set the time fence to **0** (zero) days.
 
 ### Coverage
 
@@ -165,7 +162,7 @@ Action messages suggest changes that can be made to the existing supply order to
 
 By setting the **Action message** option to **Yes**, you can override the action message time fence that is defined for the item during master scheduling. In this case, enter the number of days that master scheduling should generate action messages for requirements. The action message time fence is calculated forward from the current date.
 
-For more information about action messages, see [Action messages](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+For more information about action messages, see [Action messages](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > The calculation of action messages causes a longer running time for master planning. If action messages aren't regularly analyzed and applied (daily, weekly, and so on), consider turning off the calculation during the master planning run. To turn off the calculation, on the **Master plans** page, set the **Action message** time fence to **0** (zero) for the master plan that you're running. Also make sure that the **Action message** setting is turned off for all the coverage groups.
@@ -230,4 +227,7 @@ Lead time + Negative days + Current date – Requirement date
 
 The system uses only the planned supply orders that are within this time fence, and it creates a new planned order outside it. The advantage of dynamic negative days is that it will include the individual product lead time, to reuse existing orders and avoid creating new planned orders that will end up with a later day, due to delays caused by lead time. 
 
-For more information, see [Negative days and dynamic negative days](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+For more information, see [Negative days and dynamic negative days](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

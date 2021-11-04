@@ -4,27 +4,24 @@
 title: Advanced load building during wave
 description: This topic provides information about advanced wave load building, which automatically assigns shipments to existing waves during wave execution. Therefore, you can create meaningful loads that represent trucks without having to use the load planning workbench.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate
+ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.9
+ms.dyn365.ops.version: 10.0.9
 ---
 
 # Advanced load building during wave
@@ -254,3 +251,6 @@ This scenario shows how the settings that were described earlier in this topic a
 1. In the sales order that you just created, on the **Sales order lines** FastTab, select **Add line** to add another line.
 1. On the new line, set the **Item number** field to *M9200* and the **Quantity** field to *1*.
 1. Repeat lines 6 through 9 to reserve the line and release it to the warehouse. As before, the system creates a **new** shipment for the line that you added. However, because the item is from the **CarAudio** item group, it **fails to pass the constraints that you set up for the load mix group**. Therefore, it's **added to a new load**. If you hadn't specified a load mix group on the load build template, this shipment would have been added to the first load.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

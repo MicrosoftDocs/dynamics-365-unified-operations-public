@@ -4,11 +4,9 @@
 title: Analyze store performance
 description: This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Dynamics 365 Commerce data. 
 author: ashishmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: RetailChannelReport, RetailChannelManagementWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 57811
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
@@ -50,3 +47,6 @@ This report provides a snapshot of following summaries as part of store performa
 - Tax summary
 - Price overrides summary
 - Discounts summary
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
-manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -31,6 +28,8 @@ ms.dyn365.ops.version: July 2017 update
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
@@ -106,7 +105,7 @@ Specifically, the **Expense management** mobile workspace enables a user to:
 - Submit an expense report for approval and reimbursement.
 - Approve or reject expense reports assigned to the employee as an approver.
 
-For more information, see [Expense management mobile workspace](../../../finance/expense-management/expense-management-mobile-workspace.md).
+For more information, see [Expense management mobile workspace](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace).
 
 ### Expense management: Configuration related to employee's card ID
 
@@ -362,7 +361,7 @@ This feature allows ISVs and partners to create a new language in Dynamics 365 f
 
 Regulatory Retail features for Sweden have been added to support local requirements for cash registers, including general requirements to continuous use of cash registers, as well as an example of integration of Retail POS with a fiscal device (control unit).
 
-For more information, see [Cash registers for Sweden](../../../retail/localizations/emea-swe-cash-registers.md).
+For more information, see [Cash registers for Sweden](../../../commerce/localizations/emea-swe-cash-registers.md).
 
 ### Reverse charge functionality for European countries/regions
 
@@ -661,7 +660,7 @@ In the kanban schedule board, these call outs are added to key elements.
 
 The **Cost controlling** mobile workspace provides an instant view of the current performance of cost centers by comparing actual costs against the budgeted costs. You can drill down to view statuses of individual cost elements.
 
-The data in the **Cost controlling** mobile workspace is secured by user credentials. The cost center manager is only allowed to view data for the cost center that he owns. The access-level security is managed in the Cost accounting module.
+The data in the **Cost controlling** mobile workspace is secured by user credentials. Cost center managers are only allowed to view data for the cost center that they own. The access-level security is managed in the Cost accounting module.
 
 ### Inventory on-hand mobile workspace
 
@@ -745,7 +744,7 @@ Specifically, the **Project time entry** mobile workspace provides these feature
 - Record the time as billable or non-billable for the project.
 - Optionally enter any external or internal comments.
 
-To implement the **Project time entry** mobile workspace, see the related documentation for Microsoft Dynamics 365 for Operations on docs.microsoft.com. For more information, see [Project time entry mobile workspace](../../../finance/project-management/project-time-entry-mobile-workspace.md).
+To implement the **Project time entry** mobile workspace, see the related documentation for Microsoft Dynamics 365 for Operations on docs.microsoft.com. For more information, see [Project time entry mobile workspace](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace).
 
 ### Rename project stages
 
@@ -857,11 +856,11 @@ Supported devices:
 
 For each supported device, the POS simulator provides the ability to test device specific capabilities for ad hoc testing, such as card swipe or displaying specific strings of text on a line display. Each supported device also has a specific self-test routine that is used for official device compatibility testing. Results from compatibility testing can be sent to Microsoft to be listed as approved for new deployments of Retail.
 
-For a description of the Peripheral simulator, see [Retail Peripheral simulator](../../../retail/dev-itpro/retail-peripheral-simulator.md).
+For a description of the Peripheral simulator, see [Retail Peripheral simulator](../../../commerce/dev-itpro/retail-peripheral-simulator.md).
 
 For more information about the compatibility program and how to participate, contact <drpc@microsoft.com>.
 
-For information about peripherals that have been previously tested by Microsoft, visit [Microsoft-tested peripheral devices](../../../retail/retail-peripherals-overview.md). This page will also be updated with a link to the POS simulator-tested devices as soon as that page becomes available.
+For information about peripherals that have been previously tested by Microsoft, visit [Microsoft-tested peripheral devices](../../../commerce/retail-peripherals-overview.md). This page will also be updated with a link to the POS simulator-tested devices as soon as that page becomes available.
 
 ### Omni-channel coupons
 
@@ -869,7 +868,7 @@ To improve the omni-channel experience, retailers can offer their customers call
 
 Call center coupons are merged with retail discounts to provide a unified experience for managing and accepting coupons in all retail channels. The combined experience uses the codes and bar codes from coupons to apply the discount value from retail discounts.
 
-For more information about coupons, see [Create coupons for retail sales](../../../retail/retail-coupons.md).
+For more information about coupons, see [Create coupons for retail sales](../../../commerce/retail-coupons.md).
 
 ### Discounts – Quantity limit and exclude discount lines
 
@@ -877,7 +876,7 @@ You can add a quantity limit to simple discounts and specify a number on a disc
 
 You can also include or exclude property to discount lines. You can define the set of products a discount applies to with a combination of include and exclude discount lines. For example, you can have a discount with one discount line for the **Fashion** category set to **Include** and a second discount line for the product **81327** set to **Exclude**. This discount would then apply to all products in the **Fashion** category tree except for product **81327**. All previously existing discount lines are set to **Include**. This makes it easier for merchandizers to define discounts for some scenarios.
 
-For more information about discounts, see [Price adjustments and discounts](../../../retail/price-adjustments-discounts.md).
+For more information about discounts, see [Price adjustments and discounts](../../../commerce/price-adjustments-discounts.md).
 
 ### POS Inventory visibility improvements
 
@@ -902,7 +901,7 @@ The Retail customer will also have an option for N-1 support if they are using D
 
 Enabling N-1 support requires customers to install the N-1 components that will enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ. If the customer is using a pre-CU 11 version, then they must upgrade to at least Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
-For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](../../../retail/dev-itpro/overview-upgrade-n-minus1.md) and [N-1 installation and configuration](../../../retail/dev-itpro/overview-upgrade-n-minus1.md).
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](../../../commerce/dev-itpro/overview-upgrade-n-minus1.md) and [N-1 installation and configuration](../../../commerce/dev-itpro/overview-upgrade-n-minus1.md).
 
 ## Supply chain management
 
@@ -946,7 +945,7 @@ When cluster picking is applied, item confirmation is crucial to verify the item
 
 Prospect to cash integration capabilities deliver first party integration between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations, Enterprise edition.
 
-This solution leverages the strengths of the individual Dynamics 365 components and connects them via Common Data Service (CDS). While the data is flowing seamlessly between Finance and Operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides powerful integration with a flexible solution and simplification of the integration process, without dependency on third-party solutions. These advancements offer the best of both worlds, each with significant productivity enhancements that help businesses and workers achieve more.
+This solution leverages the strengths of the individual Dynamics 365 components and connects them via Dataverse. While the data is flowing seamlessly between Finance and Operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides powerful integration with a flexible solution and simplification of the integration process, without dependency on third-party solutions. These advancements offer the best of both worlds, each with significant productivity enhancements that help businesses and workers achieve more.
 
 - Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations as customers.
 - Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.
@@ -955,9 +954,9 @@ This solution leverages the strengths of the individual Dynamics 365 components 
 - Generate sales orders in Finance and Operations and sync them to Dynamics 365 for Sales.
 - Generate invoices in Finance and Operations and sync them to Dynamics 365 for Sales.
 
-**Easy access to data through the power of Common Data Service**
+**Easy access to data through the power of Dataverse**
 
-The solution leverages the power of Azure Public Cloud and the combined data will be available via Common Data Service. This enables business users to access, visualize, share, and modify the unified Sales and Operations data through Power Apps, Power BI, or create workflow automations using Flow with pre-defined templates for various business processes. This also means that Power BI dashboard lets users gain better insight into the business process information across the two systems.
+The solution leverages the power of Azure Public Cloud and the combined data will be available via Dataverse. This enables business users to access, visualize, share, and modify the unified Sales and Operations data through Power Apps, Power BI, or create workflow automations using Flow with pre-defined templates for various business processes. This also means that Power BI dashboard lets users gain better insight into the business process information across the two systems.
 
 **Fast implementation**
 
@@ -1021,3 +1020,6 @@ For the next major release, the following features are currently planned and mor
 - Support a split load scenario for the outbound flow.
 - Allow to release for a partial quantity of the finished good and release per operation number.
 - Allow for partial quantity of the opportunistic X-dock to transfer when reporting as finished.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Implementation lifecycle management home page
 description: These topics describe the programs, tools, and processes available that are related to the implementation lifecycle of your Finance and Operations project.
 author: ClaudiaBetz-Haubold
-manager: AnnBe
-ms.date: 02/09/2018
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,9 +15,8 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: chaubold
@@ -35,7 +32,7 @@ These topics describe the programs, tools, and processes available related to th
 
 ## Programs
 
-[Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md)
+[Microsoft FastTrack](/dynamics365/fasttrack/)
 
 ## Tools
 
@@ -52,3 +49,6 @@ These topics describe the programs, tools, and processes available related to th
 ## Frequently asked questions
 
 [Go-live for implementation projects FAQ](go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up collections
 description: This article explains how to set up the collections functionality.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
@@ -48,8 +45,7 @@ This article explains how to set up the collections functionality. You must comp
 
 These points are discussed in more detail throughout the rest of this topic. 
 
-Set up aging period definitions
--------------------------------
+## Set up aging period definitions
 
 Set up an aging period definition. An aging period definition defines the columns that appear on the **Aged balances**, **Collections activities**, and **Collections cases** list pages. It also defines the periods that appear on the **Collections** page. If a customer pool is set up, the aging period definition for the pool is used. If no pools are set up, the default aging period definition that is specified on the **Accounts receivable parameters** page is used. If no default aging period definition is specified, the first aging period definition on the **Aging period definitions** page is used.
 
@@ -101,7 +97,7 @@ You can use email to communicate with both customers and salespeople about colle
 ### Set up email and address settings for collections customer contacts
 Set up email addresses for customer contacts to send email messages to those contacts from the **Collections** page. The collections contact is used as the default contact on the **Collections** page. You can set up a statement address for a customer if statements should use an address other than the primary address. 
 
-On the **Credit and Collections** FastTab for a customer, in the **Collections contact** field, select the person in the customer organization who works with your collections agent. This person is used as the default contact on the **Collections** page, and email messages are sent to him or her. 
+On the **Credit and Collections** FastTab for a customer, in the **Collections contact** field, select the person in the customer organization who works with your collections agent. This person is used as the default contact on the **Collections** page, and email messages are sent to them. 
 
 > [!NOTE] 
 > If a collections contact isn't specified for a customer, the primary contact for the customer is used. If a primary contact isn't specified, email messages are sent to the first address that is listed on the **Contacts** page.
@@ -120,3 +116,6 @@ For more information, see the following topics:
 
  - [Review collections information](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

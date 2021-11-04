@@ -1,25 +1,18 @@
 ---
-# required metadata
-
 title: Extensibility changes in Finance and Operations, Enterprise edition 7.3
 description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -1576,3 +1569,6 @@ The following table lists changes that were requested for extensibility but were
 |            Other: Bug fix on CompanyHelper.testCreateParameter             |
 | Table CustCollectionLetterJour - class cancelCollectionLetterCodeCustTrans |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

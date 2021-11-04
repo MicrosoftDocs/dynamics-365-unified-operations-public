@@ -4,11 +4,9 @@
 title: Tax reimbursement documents for Hungary
 description: This topic explains how to set up and create tax reimbursement documents for Hungary.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -88,3 +85,6 @@ When your organization reimburses a customer for VAT, you must indicate the reim
 3. Select **Tax reimbursement** &gt; **VAT settled**.
 
 The **VAT settled** check box is selected for the invoice and the invoice lines.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

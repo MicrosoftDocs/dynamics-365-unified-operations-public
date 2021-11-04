@@ -4,11 +4,9 @@
 title: Configure manual tasks in a workflow
 description: This topic explains how to configure the properties for a manual task.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
@@ -394,3 +391,6 @@ When the manual task is assigned to a user, the user must take action on the tas
 5. Select the **Delegate** check box if the user should be able to assign the task to another user.
 6. Select the **Reassign** check box if the user should be able to reassign the task to another user in the work item queue.
 7. Select the **Release** check box if the user should be able to reassign the task to the work item queue. Another user can then complete the task.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

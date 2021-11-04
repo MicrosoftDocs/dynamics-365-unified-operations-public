@@ -3,12 +3,10 @@
  
 title: Create a released product for a single company
 description: This procedure walks through how to create a single released product in the context of a single legal unit. 
-author: ShylaThompson
-manager: tfehr 
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasure
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a released product for a single company
 
@@ -106,3 +103,6 @@ This procedure walks through how to create a single released product in the cont
 12. In the list, find and select the desired record.
 13. In the list, click the link in the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

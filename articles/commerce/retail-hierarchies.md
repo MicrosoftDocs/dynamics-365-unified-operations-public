@@ -4,21 +4,18 @@
 title: Commerce hierarchies
 description: This article describes hierarchies in Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: OMHierarchyManager
+ms.search.form: OMHierarchyManager, EcoResCategoryHierarchyFactbox
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
@@ -51,3 +48,6 @@ The following table lists the types of category hierarchies that are available a
 | Navigation hierarchy   | Use this hierarchy type to group and organize products into categories so that the products can be browsed online or in POS. |
 
 By using a category hierarchy to structure your products, you can set up and maintain product attributes and properties at the category level. These attributes and properties include settings for product dimensions and POS settings. Any products that you assign to the categories automatically inherit the attributes and properties that you define. You can also copy the property settings for any product to multiple products in a selected category at the same time.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,27 +4,23 @@
 title: Work line details
 description: This topic provides information about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Work line details
@@ -132,3 +128,6 @@ Follow these steps to create some picking work.
 
 > [!IMPORTANT]
 > If you cancel just part of the quantity for a work line, you must also remove the obsolete quantity from the load line. Otherwise, unless under-delivery is set up correctly, the load line can't be ship-confirmed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

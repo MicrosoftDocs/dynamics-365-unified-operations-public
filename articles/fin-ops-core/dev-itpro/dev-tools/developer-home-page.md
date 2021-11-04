@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
-manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 10/26/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-ms.custom: 21631
+ms.custom: "intro-internal"
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Develop and customize home page
@@ -37,7 +21,7 @@ This topic provides links to topics about development.
 
 ## Overview
 
-The Finance and Operations applications represent the next-generation enterprise resource planning (ERP) offering from Microsoft. The apps enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. The apps leverage the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. The development experience includes:
+The Finance and Operations apps enable the entire enterprise resource planning (ERP) application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. The apps leverage the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. The development experience includes:
 
 - Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
 - Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
@@ -97,25 +81,31 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Add license files to a deployable package in Azure Pipelines](pipeline-add-license-package.md)
 - [Create deployable packages in Azure Pipelines](pipeline-create-deployable-package.md)
 - [X++ model-versioning in Azure Pipelines](pipeline-model-version.md)
+- [Download assets by using Azure Pipelines](pipeline-asset-download.md)
+- [Upload assets by using Azure Pipelines](pipeline-asset-upload.md)
+- [Deploy assets by using Azure Pipelines](pipeline-deploy-asset.md)
+- [Create a Lifecycle Services (LCS) connection in Azure Pipelines](pipeline-lcs-connection.md)
+- [Update the hosted Azure Pipeline for new NuGet packages](pipeline-nuget-split.md)
+- [Update a legacy pipeline in Azure Pipelines](pipeline-msbuild-update.md)
 
 ## X++ programming language
-
-### Overviews
-
-- [X++ and debugger features](new-x-debugger-features.md)
-- [Write business logic by using C\# and X++ source code](write-business-logic.md)
-
-### Language support
-
-- [Changes in X++ and the X++ compiler](programming-language-support.md)
-- [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
-- [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
-- [Language Integrated Query (LINQ) provider for C\#](linq-provider-c.md)
-- [Write best practice rules](author-best-practice-rules.md)
 
 ### Reference
 
 - [X++ language reference](../dev-ref/xpp-language-reference.md)
+
+### Overviews
+
+- [Write business logic by using C\# and X++ source code](write-business-logic.md)
+- [Visual Studio requirements for X++](developer-tools-vs2017.md)
+
+### Language support
+
+- [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
+- [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
+- [Language Integrated Query (LINQ) provider for C\#](linq-provider-c.md)
+- [Write best practice rules](author-best-practice-rules.md)
+- [SysSetupConfigAttribute attribute](syssetupconfigattribute.md)
 
 ## Customize with extensions and overlayering
 
@@ -158,7 +148,7 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 - [Testing and validations](../perf-test/testing-validation.md)
 - [Test projects in Visual Studio](../perf-test/testing-support.md)
-- [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+- [Deploy and use a continuous build and test automation environment](../perf-test/continuous-build-test-automation.md)
 - [Task recorder resources](../user-interface/task-recorder.md)
 
 ## Office integration
@@ -177,9 +167,9 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 - [Development for Dynamics 365 Finance home page](../financial/financial-dev-home-page.md)
 
-## Licensing
+## Development for independent software vendors
 
-- [Independent software vendor (ISV) licensing](isv-licensing.md)
+- [Independent software vendor (ISV) development home page](isv-dev-home-page.md)
 
 ## Supply Chain Management
 
@@ -189,3 +179,5 @@ The client is an HTML web client that runs in all major browsers. For informatio
 ## Additional resources
 
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

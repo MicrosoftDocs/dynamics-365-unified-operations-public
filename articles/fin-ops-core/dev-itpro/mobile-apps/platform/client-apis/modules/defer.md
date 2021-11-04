@@ -1,27 +1,12 @@
 ---
-# required metadata
 title: Defer module
 description: Defer type
-author: shadykdc
-manager: AnnBe
+author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: rhaertle
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
+ms.author: rhaertle
 ---
 
 # Defer module
@@ -118,3 +103,6 @@ resolve &lt;T&gt;(value?: T &#124; PromiseLike &lt;T&gt;): Promise &lt;T&gt;
 
 #### Returns Promise &lt;T&gt;
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

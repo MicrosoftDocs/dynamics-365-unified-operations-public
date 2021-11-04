@@ -3,12 +3,10 @@
  
 title: Update kanban status
 description: When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status. 
-author: ChristianRytt
-manager: tfehr 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: Kanban, KanbanResetEmpty
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Update kanban status
 
@@ -50,3 +47,6 @@ When a kanban is emptied by mistake or a received kanban needs to be emptied, yo
 2. In the list, mark the selected row.
     * Notice that the Handling unit status is Emptied.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

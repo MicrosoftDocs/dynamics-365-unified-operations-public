@@ -4,11 +4,9 @@
 title: Configure automated tasks in a workflow
 description: This topic explains how to configure the properties for an automated task.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
@@ -117,3 +114,6 @@ You can send notifications to people when an automated task has been run or canc
     </table>
 
 8. Repeat steps 3 through 7 for each event that you selected in step 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

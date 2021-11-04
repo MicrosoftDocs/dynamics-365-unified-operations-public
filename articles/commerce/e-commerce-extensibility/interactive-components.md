@@ -4,11 +4,9 @@
 title: Interactive components overview
 description: This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
-manager: annbe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,9 +15,8 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -31,13 +28,10 @@ ms.dyn365.ops.version: Release 10.0.5
 # Interactive components overview
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly on the what-you-see-is-what-you-get (WYSIWYG) preview canvas in Microsoft Dynamics 365 Commerce site builder.
+This topic covers interactive components that let site authors edit fields for text, rich text, links, images, and videos directly in visual page builder, the what-you-see-is-what-you-get (WYSIWYG) preview canvas in Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
-In Commerce site builder, page or fragment authors can use interactive components to edit fields for text, rich text, links, images, and videos directly on the WYSIWYG preview canvas. Interactive components are released with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. After the interactive components are implemented, site builder will allow for inline editing of text, and it will open a picker window for links, images, and videos.
+In Commerce site builder, page or fragment authors can use interactive components to edit fields for text, rich text, links, images, and videos directly in visual page builder. Interactive components are released with the Commerce online software development kit (SDK) and include **Msdyn365.Text** for text, **Msdyn365.RichTextComponent** for rich text, **Msdyn365.Links** for links, **Msdyn365.Image** for images, and **Msdyn365.Video** for videos. After the interactive components are implemented, site builder will allow for inline editing of text, and it will open a picker window for links, images, and videos.
 
 For the best authoring experience, module developers should use interactive components when they render configuration fields, to allow for inline editing. Any custom implementations of these components can be made interactive by wrapping the component in the **EditableField** higher-order component (HOC). Follow the guidelines in this topic to support interactive components inside a custom module.
 
@@ -76,7 +70,7 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 ### Text component
 
-After it's implemented, the text component lets site authors edit text inline, directly on the site builder preview canvas.
+After it's implemented, the text component lets site authors edit text inline, directly in visual page builder.
 
 #### Text component syntax
 
@@ -115,7 +109,7 @@ public handleTextChange = (event: Msdyn365.ContentEditableEvent) => this.props.c
 
 ### Rich text component
 
-After it's implemented, the rich text component lets site authors edit rich text inline, directly on the site builder preview canvas.
+After it's implemented, the rich text component lets site authors edit rich text inline, directly in visual page builder.
 
 #### Rich text component syntax
 
@@ -149,7 +143,7 @@ After it's implemented, the rich text component lets site authors edit rich text
 
 ### Links component
 
-After it's implemented, the links component lets site authors edit an array of links on the site builder preview canvas.
+After it's implemented, the links component lets site authors edit an array of links in visual page builder.
 
 #### Links component syntax
 
@@ -199,7 +193,7 @@ After it's implemented, the links component lets site authors edit an array of l
 
 ### Link component
 
-After it's implemented, the link component lets site authors edit single links on the site builder preview canvas.
+After it's implemented, the link component lets site authors edit single links in visual page builder.
 
 #### Link component syntax
 
@@ -248,7 +242,7 @@ After it's implemented, the link component lets site authors edit single links o
 
 ### Image component
 
-After it's implemented, the image component lets site authors edit images directly on the site builder preview canvas.
+After it's implemented, the image component lets site authors edit images directly in visual page builder.
 
 #### Image component syntax
 
@@ -290,7 +284,7 @@ After it's implemented, the image component lets site authors edit images direct
 
 ### Video component
 
-After it's implemented, the video component lets site authors edit videos directly on the site builder preview canvas.
+After it's implemented, the video component lets site authors edit videos directly in visual page builder.
 
 #### Video component syntax
 
@@ -366,12 +360,23 @@ Generic editable field components wrap any custom components and enable interact
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
 
+[Mock the signed-in state during local development](mock-sign-in.md)
+
+[Configure module properties to be shown based on context](configure-properties-context.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
-[Work with modules](work-with-modules.md)
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)
 
-[Work with fragments](work-with-fragments.md)
+[Work with modules](../work-with-modules.md)
+
+[Work with fragments](../work-with-fragments.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

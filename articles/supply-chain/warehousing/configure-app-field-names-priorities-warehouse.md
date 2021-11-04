@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Configure app field names in warehouse app
-description: This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management. 
+title: Configure fields for the Warehouse Management mobile app
+description: This topic describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app. 
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
@@ -30,14 +27,14 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Configure app field names in the warehouse app
+# Configure fields for the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management. 
+This topic describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app.
 
 > [!NOTE]
-> This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing. For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure the warehouse app overview](install-configure-warehousing-app.md).
+> This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. The Warehouse Management mobile app is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these Warehouse Management mobile app field names and priorities, and how they are used.
 
 ## Configure warehouse app field names
 
@@ -57,7 +54,7 @@ When you use Warehousing on your mobile device, you can configure how metadata s
 <tbody>
 <tr class="odd">
 <td>Preferred input mode</td>
-<td>This option defines whether a scanning field or a manual entry input field should be shown for the selected field name. This is useful to distinguish fields depending on if barcodes are used for the field. <strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the barcode is unreadable or damaged.</td>
+<td>This option defines whether a scanning field or a manual entry input field should be shown for the selected field name. This is useful to distinguish fields depending on if bar codes are used for the field. <strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the bar code is unreadable or damaged.</td>
 </tr>
 <tr class="even">
 <td>Input type</td>
@@ -144,7 +141,9 @@ Based on the warehouse app field priority set up in the table above, the followi
 
 The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-Additional resources
---------
+## Additional resources
 
-[Install and configure the warehouse app overview](install-configure-warehousing-app.md)
+[Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

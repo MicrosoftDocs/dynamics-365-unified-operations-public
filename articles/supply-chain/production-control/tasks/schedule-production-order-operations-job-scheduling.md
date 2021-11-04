@@ -3,12 +3,10 @@
  
 title: Schedule a production order with operations and job scheduling
 description: This topic focuses on scheduling a production order with operations scheduling and job scheduling. 
-author: ChristianRytt
-manager: tfehr 
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Schedule a production order with operations and job scheduling
 
@@ -59,3 +56,6 @@ This topic focuses on scheduling a production order with operations scheduling a
 6. On the Action Pane, select **Production order**.
 7. Select **All jobs**. Note that based on the active route, 5 jobs are created with job scheduling.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

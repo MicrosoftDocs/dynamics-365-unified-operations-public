@@ -4,11 +4,9 @@
 title: VAT statement details for Estonia
 description: This topic explains how to set up a VAT statement for legal entities in Estonia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.search.form: TaxPeriod, TaxReportCollection, TaxReportVoucher
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266904
 ms.search.region: Estonia
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -106,3 +103,6 @@ Then set the following fields.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

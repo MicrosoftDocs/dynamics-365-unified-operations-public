@@ -2,13 +2,11 @@
 # required metadata
 
 title: Row definitions in financial report designer
-description: A row definition is a report component, or building block, that specifies the contents of each row on a financial report. A row definition can be combined with column definitions, reporting tree definitions, and report definitions to create a building block group that can be used by multiple companies.
+description: A row definition is a report component, or building block, that specifies the contents of each row on a financial report.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -166,7 +163,7 @@ The formatting that is specified in the row definition overrides any formatting 
 
 1. In Report Designer, open the row definition to modify.
 2. Select the cells to format. To select multiple cells, hold down the Ctrl key while you select the cell.
-3. Click the toolbar button of the format to apply. For example, to indent a row, select the row, and then click **Increase Indent** ![Increase Indent](media/indent.gif "Increase Indent") on the toolbar.
+3. Click the toolbar button of the format to apply. For example, to indent a row, select the row, and then click **Increase Indent** ![Increase Indent.](media/indent.gif "Increase Indent") on the toolbar.
 
 ### Adjust columns while you design reports
 
@@ -193,3 +190,6 @@ To make it easier to view the columns that you're working on in the row definiti
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

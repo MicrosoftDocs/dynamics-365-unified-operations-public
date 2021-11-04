@@ -4,11 +4,9 @@
 title: JP-00027 Form 26 for depreciable tax declaration
 description: This task walks you through assigning a registration number to a fixed asset and printing the form 26 report. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: OMLegalEntity, LogisticsPostalAddress, SysLookupMultiSelectGrid,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -104,3 +101,6 @@ This task uses the JPMF demo company data. This procedure is for a feature that 
     * Open/save the report in the required location.  Validate the printed report,  the Fixed assets been sorted and grouped by registration number  
     * Similar sorting n grouping of fixed asset is provided for the Form 26-1 n Form 26-2 reports  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

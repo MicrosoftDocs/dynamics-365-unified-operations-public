@@ -4,21 +4,18 @@
 title: Warehouse location status
 description: This topic provides an overview of the Warehouse location status feature.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: WHSLocationProfile,WHSLocation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,7 +56,7 @@ Before you can use the *Warehouse location status* feature, it must be turned on
 
 ### Prepare the sample data that is required for the example scenario
 
-Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section. To complete the example scenario, you must use either the warehouse app or the browser-based emulator. The steps that are provided here use the warehouse app. The steps for the browser-based emulator are similar.
+Before you start to work through the scenario, you must activate sample data and set up the feature as described in this section. To complete the example scenario, you must use either the Warehouse Management mobile app or the browser-based emulator. The steps that are provided here use the Warehouse Management mobile app. The steps for the browser-based emulator are similar.
 
 #### Use the USMF legal entity
 
@@ -81,6 +78,9 @@ The example scenario requires that you prepare two location profiles.
     These options control whether the reference fields on the location are active.
 
 1. Repeat steps 3 through 4 for the **PICK-06** profile.
+
+> [!NOTE]
+> When the parameters on the location profile (**Enable item in location**, **Enable location activity**, **Enable location status**) are set to *Yes*, the system immediately updates the relevant locations by executing the *warehouse location status consistency check* job.
 
 ### Scenario
 
@@ -171,3 +171,6 @@ The example scenario requires that you prepare two location profiles.
 
 > [!NOTE]
 > The location fields are updated only by warehouse transactions. If you move inventory by using a journal or other non-WHS processes, the fields won't be updated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

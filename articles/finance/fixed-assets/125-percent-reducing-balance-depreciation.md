@@ -4,11 +4,9 @@
 title: 125 percent reducing balance depreciation
 description: This article gives an overview of the 125 percent reducing balance method of depreciation.
 author: saraschi2
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
@@ -72,7 +69,7 @@ If you select **Fiscal** as the depreciation year, the following options are ava
 
 ## Example of 125% reducing balance depreciation
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Acquisition cost               | 11,000 |
 | Salvage value                  | 1,000  |
@@ -93,3 +90,6 @@ The 125% reducing balance method divides 125 percent by the service life years.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

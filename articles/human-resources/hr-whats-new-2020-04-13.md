@@ -3,12 +3,10 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (April 13, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for April 13, 2020.
-author: Darinkramer
-manager: AnnBe
-ms.date: 4/13/2020
+author: andreabichsel
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,19 +15,22 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
 
 ---
 # What's new or changed in Dynamics 365 Human Resources (April 13, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3136. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
@@ -45,9 +46,9 @@ With this change, the **Rounding precision** field is now available after you up
 
 You can now edit the enrollment end date without getting the error "Field Accrual date basis must be filled in."
 
-## Employment entity doesn't sync to Common Data Service (430834)
+## Employment entity doesn't sync to Dataverse (430834)
 
-This change corrects an issue where the employment data wasn't syncing to Common Data Service after adding financial dimensions. 
+This change corrects an issue where the employment data wasn't syncing to Dataverse after adding financial dimensions. 
 
 ## Remove multi-parenting for Work Calendar Time Interval entity (431775)
 
@@ -96,6 +97,8 @@ If document preview for documents stored in SharePoint doesn't work, try the fol
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

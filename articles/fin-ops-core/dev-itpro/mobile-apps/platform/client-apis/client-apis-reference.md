@@ -1,31 +1,14 @@
 ---
-# required metadata
-
 title: Client APIs home page
 description: Mobile platform client APIs
-author: shadykdc
-manager: AnnBe
+author: robinarh
 ms.date: 07/23/2019
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: rhaertle
+ms.custom: "intro-internal"
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom: 08/09/2017
-ms.dyn365.ops.version:
-
 ---
 
 # Client APIs home page
@@ -212,3 +195,6 @@ ms.dyn365.ops.version:
 
   * [PageData](interfaces/services-business-logic-services-ipagedata.md)
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

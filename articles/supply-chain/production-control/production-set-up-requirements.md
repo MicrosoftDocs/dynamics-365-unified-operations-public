@@ -4,11 +4,9 @@
 title: Production setup requirements
 description: This article provides information about setup requirements before you can work with Production control. 
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, Work
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55561
 ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
@@ -85,3 +82,6 @@ If you're working with routes, operations must be defined for every production r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

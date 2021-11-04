@@ -4,11 +4,9 @@
 title: Configure and process an exchange on a return order
 description: This topic explains how to configure an exchange on a return in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -39,7 +36,10 @@ However, functionality has been added to support scenarios where exchanges are d
 
 ## Configure Commerce to support exchanges on return orders
 
-Follow these steps to configure the system to support exchanges on return orders.
+> [!NOTE]
+> In Commerce version 10.0.20 and later, a new feature called "Unified return processing experience in POS" is available. If you enable this feature, the setup steps below are not required. **Process returns as sales orders** becomes a permanently configured setting and you won't be able to change it.
+
+Follow these steps to configure the system to support exchanges on return orders (if you do not have the **Unified return processing experience in POS** feature enabled.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**. On the **Customer orders** FastTab, set the **Process return orders as sales orders** option to **Yes**.
 2. Run the **Global configuration distribution schedule** job (**1110**).
@@ -55,3 +55,6 @@ To provide better visibility into the various amounts for the cart, three new am
 - **Deposit applied** – The deposit amount that is applied on a transaction when the user does a customer order pickup. If there is no deposit override, and a 10-percent deposit is configured, the amount in this field is 90 percent of the total amount of the customer order.
 - **Carry out amount** – The total amount for lines where the delivery mode was set to **Carry out** when the customer order was created or edited, or during a customer order exchange. The amount in this field includes taxes and charges.
 - **Return amount** – The total amount for lines that have negative quantities during the customer order exchange. The amount in this field includes taxes and charges.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Add a privacy policy page
 description: This topic describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a privacy policy page
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Privacy compliance includes organizational measures that inform site users about how their data is collected and handled. Users can then decide how they want their personal data to be handled and can take appropriate action.
 
@@ -94,8 +88,8 @@ You can add a link to the privacy policy page to a fragment. In this way, you ca
 To add a link to a footer fragment, follow these steps.
 
 1. Go to **Fragments**, and then select **New** to create a page fragment.
-1. In the **New page fragment** dialog box, select the **Footer** module.
-1. Under **Page fragment name**, enter a name for the fragment, and then select **OK**.
+1. In the **New fragment** dialog box, select the **Footer** module.
+1. Under **Fragment name**, enter a name for the fragment, and then select **OK**.
 1. In the **Footer category** slot, add a **Footer item** module.
 1. In the properties pane on the right, select **Link text**.
 1. In the **Link text** dialog box, enter the link text and link target of the privacy policy page, and then click **OK**.
@@ -114,3 +108,6 @@ The fragment can now be referenced in the template for other site pages. When th
 [Cookie compliance](cookie-compliance.md)
 
 [Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

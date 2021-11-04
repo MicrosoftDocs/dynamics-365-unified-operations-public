@@ -3,12 +3,10 @@
 
 title: Nets import format
 description: This topic provides information about importing payment information in the Nets format.
-author: ShylaThompson
-manager: AnnBe
+author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262704
 ms.search.region: Norway
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -57,3 +54,6 @@ You receive a message to update payment defaults values for the corresponding cu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

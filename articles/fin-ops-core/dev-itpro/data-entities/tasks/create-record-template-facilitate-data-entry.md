@@ -4,11 +4,9 @@
 title: Create a record template to facilitate data entry
 description: This topic demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
 author: margoc
-manager: AnnBe 
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: AssetTable, SysRecordInfo, SysRecordTemplatePromptOnCreate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -47,3 +44,6 @@ This topic demonstrates how to create a record template so that field values tha
 13. Select **OK**.
 14. Select **Close**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

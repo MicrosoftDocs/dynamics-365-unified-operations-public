@@ -4,11 +4,9 @@
 title: Not valuable fixed assets (NVFAs) (Russia)
 description: This topic provides information about how to maintain not valuable fixed assets (NVFAs) for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/06/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -86,7 +83,7 @@ Use this procedure to set up inventory dimensions for NVFAs, working clothes, an
 
 ## Set up officials for the NVFA Statement of writing-off (No. MB-8)
 
-Use this procedure to set up the members and chairman of the commission that is responsible for the NVFA Statement of writing off (No. MB-8).
+Use this procedure to set up the members and chairperson of the commission that is responsible for the NVFA Statement of writing off (No. MB-8).
 
 1. Go to **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 2. On the **Fixed assets** tab, select **NVFA Statement of writing-off (No. MB-8)**.
@@ -207,3 +204,6 @@ Select **Group operations** \> **Writing-off** after step 4 to create writing-of
 ## Additional resources
 
 - [Working clothes/special rigging accounting (Russia)](rus-working-clothes-instruments-accounting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

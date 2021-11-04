@@ -4,11 +4,9 @@
 title: Employee competencies and development Power BI content
 description: This topic describes the Employee competencies and development Power BI content. 
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263894
 ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
@@ -76,3 +73,6 @@ Application data is used to populate the reports in the Employee competencies an
 | Workforce\_WorkerName             | First name, last name, and full name                                                                       | |
 | Workforce\_WorkerTitle            | Title and seniority date                                                                                   | |
 | Workorce\_WorkerTrend             | Workers over time, headcount, company, and position                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

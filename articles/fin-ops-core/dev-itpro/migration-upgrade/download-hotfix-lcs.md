@@ -4,11 +4,9 @@
 title: Download updates from Lifecycle Services (LCS)
 description: This topic covers what updates you should expect to see and how you can get the updates from Lifecycle Services (LCS).
 author: AngelMarshall
-manager: AnnBe
-ms.date: 12/09/2019
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56171
 ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: amarshall
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -69,7 +66,7 @@ Based on your product and version, you will have different update options from L
 
    | Update        | Description           | Availability  |
    | ------------- |-------------| -----|
-   | Quality update      | A quality update is a cumulative, roll-up build that contains fixes for issues that are specific to the    product version that you’re currently running. | A quality update is available when your environment is running the same version of the current service update (n), or when your environment is running on one version older than the current service update (n-1). For example, if the current service update is version 10.0.2, you will have the option to choose a quality update if you’re running version 10.0.2, or if you’re running one version older, which is 10.0.1.<br><br>There will be no quality update available for any version that’s older than 2 versions of the current service update. You will have to apply the latest service update to stay current. |
+   | Quality update      | A quality update is a cumulative, roll-up build that contains fixes for known issues that are specific to the service update. | A quality update is available when your environment is running the same version of the current service update (n), or when your environment is running on one version older than the current service update (n-1). For example, if the current service update is version 10.0.2, you will have the option to choose a quality update if you’re running version 10.0.2, or if you’re running one version older, which is 10.0.1.<br><br>There will be no quality update available for any version that’s older than 2 versions of the current service update. You will have to apply the latest service update to stay current. |
    | Service update     | A service update is the version currently automatically applied to customer environments based on the LCS project update settings.<br><br>A service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | A service update is available if your environment has not been updated to the current service update version available for auto-update.<br><br>Only the designated sandbox or production environment will be auto-updated if you have configured the update settings for the LCS project. However, you can manually apply the current service update version to other sandbox environments or your cloud-hosted environments.|
    | Upcoming service update | An upcoming service update is the latest version that is generally available for self-update.<br><br>An upcoming service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | An upcoming service update will be made generally available for self-deployment approximately 2 weeks prior to when Microsoft starts automatically applying this version based on your update settings for the LCS project.|
 
@@ -91,7 +88,7 @@ Based on your product and version, you will have different update options from L
 > [!NOTE]
 > If you are on a release that is noted above, you need to upgrade as soon as possible. 
 >
-> For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs).
+> For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](../lifecycle-services/issue-search-lcs.md).
 
   
 ## Download binary updates
@@ -104,7 +101,7 @@ To download binary updates, follow these steps in LCS.
    > [!NOTE]
    > You will not be able to select Knowledge Base (KB) articles to be saved because binary updates will automatically save all KBs in an update package.        
    
-   ![Save Binary Package](./media/ReviewAndSaveBinaryPackage.jpg)
+   ![Save Binary Package.](./media/ReviewAndSaveBinaryPackage.jpg)
 
 3. On the **Review and save updates** page, select **Save package**.
 
@@ -134,3 +131,6 @@ To download X++ updates, follow these steps in LCS.
 ## Additional resources
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
 - [Install metadata hotfixes in development environments](./install-metadata-hotfix-package.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

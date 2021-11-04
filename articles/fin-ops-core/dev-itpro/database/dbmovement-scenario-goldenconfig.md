@@ -4,11 +4,9 @@
 title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 06/19/2020
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,11 +16,10 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 
@@ -82,17 +79,7 @@ The values on the following pages are either environment-specific or encrypted i
 
 ## Create a copy of the source database
 
-Because you must delete database users before you can export the source SQL Server database, you should create a copy of that database. You can then work with the copy instead of modifying the original database. The following script backs up the default AxDB database and then restores it to the same instance under a new name. To use this script, first verify that the path D:\\backups exists.
-
-```sql
-BACKUP DATABASE [AxDB] TO DISK = N'D:\Backups\axdb_golden.bak' WITH NOFORMAT, NOINIT,
-NAME = N'AxDB_golden-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION, STATS = 10
-GO
-RESTORE DATABASE [AxDB_CopyForExport] FROM DISK = N'D:\Backups\axdb_golden.bak' WITH FILE = 1,
-MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_CopyForExport.mdf',
-MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForExport_Log.ldf',
-NOUNLOAD, STATS = 5
-```
+Back up the source database using SSMS. Right-click the source database, and select **Tasks > Backup option**.  After this is completed, right-click the **Databases** folder in the SSMS navigation window, and select **Restore database**.  Choose the backup that you just made, but give the target database a new name such as AXDB_CopyForExport.   
 
 ## Prepare the database
 
@@ -153,7 +140,7 @@ update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUR
 Open a **Command Prompt** window, and run the following commands.
 
 > [!IMPORTANT]
-> The 140 folder reflects the current version. You must use the version that is available in your sandbox environment. Therefore, you might have to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx) in your development environment.
+> The 140 folder reflects the current version. You must use the version that is available in your sandbox environment. Therefore, you might have to install the [latest version of Microsoft SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) in your development environment.
 
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -170,6 +157,9 @@ Here is an explanation of the parameters:
 
 Upload the .bacpac file that was created in the previous step to the **Database backup** section in your LCS project's Asset Library. Then begin the import. The target UAT environment's databases will be overwritten by the golden configuration database.
 
+> [!NOTE]
+> Certain elements are not copied as part of the import database step.  In the golden configuration scenario, this would impact things such as Email Addresses and Print Management setup.  These settings ideally should be populated as part of the master data migration in the steps below, and should not be part of the golden configuration database.
+
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 
 ## Perform master data migration
@@ -177,22 +167,33 @@ Upload the .bacpac file that was created in the previous step to the **Database 
 Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can do this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). We recommend that you complete your data migration activities before you copy the UAT environment to production, because you will have access to the database in the UAT environment for troubleshooting.  
 
 > [!IMPORTANT]
-> Document attachments are not copied from UAT to Production in the next step.  If your go live requires attachments, you will want to import those in the Production environment directly.
+> Files stored in Azure blob storage are not copied from UAT to Production in the next step. This includes document attachments and custom Microsoft Office templates. If your go-live requires attachments or custom templates, you will want to import those in the Production environment directly.
 
 ## Copy the sandbox database to production
 
-When you're ready to do a mock go-live or actual go-live, you can copy the UAT environment to production. This process is often referred to as *cutover*. We recommend that you do a cutover more than one time before your actual go-live. In this way, you can get detailed time estimates for each step of the process, including the step where you submit a **Sandbox to Production** service request to ask that Microsoft run the copy action.
+When you're ready to do a mock go-live or actual go-live, you can copy the UAT environment to production. This process is often referred to as *cutover*. We recommend that you do a cutover more than one time before your actual go-live. In this way, you can get detailed time estimates for each step of the process.
 
-> [!NOTE]
-> You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
+Determine the **Environment type** of your production environment and follow the relevant steps accordingly. 
 
+### Self-service
+1. In LCS, open the **Full details** for the production environment to load the **Environment page**.
+2. In the **Maintain** menu, select **Move database**.
+3. For the operations options, select **Refresh database**.
+4. In the **Source environment**, select the sandbox where your golden configuration is. Note the important instructions found on the [Refresh database page](database-refresh.md) for this operation.
+5. Select the check box to confirm that you understand this operation will overwrite the production database. The operation starts immediately after submitting the request.
+
+### Microsoft-managed
 1. In LCS, on the project home page, select **Service requests**.
 2. On the **Service requests** page, select **Add**, and then select **Sandbox to Production**.
 3. In the **Sandbox to Production** dialog box, follow these steps:
 
     1. In the **Source environment name** field, select the sandbox environment to copy the database from.
-    2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least four hours after the start date. To help ensure that resources are available to run the request, it's recommended to submit your request at least 24 hours before your preferred downtime window.
+    2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least four hours after the start date. To help ensure that resources are available to run the request, it's recommended that you submit your request at least 24 hours before your preferred downtime window.
     3. Select the check boxes at the bottom to agree to the terms.
+
+
+> [!IMPORTANT]
+> Every database refresh will create a new database that will reset the **Point-in-time-restore** chain of restore points.
 
 ## Reconfigure environment specific settings
 
@@ -215,7 +216,7 @@ First, sign in to the environment by using the admin account that can be found o
 
 When the system is configured as you require, you can enable selected users to access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
 
-Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations).
+Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app).
 
 ## Community tools
 
@@ -223,3 +224,6 @@ Are you looking for more tools to help you prepare backup files from your develo
 
 * [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools that are created by the community.
 * [Community-provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

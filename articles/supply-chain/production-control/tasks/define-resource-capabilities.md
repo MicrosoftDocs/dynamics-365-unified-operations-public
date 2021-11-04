@@ -3,12 +3,10 @@
  
 title: Define resource capabilities
 description: Resource capabilities describe what operations resources can do. 
-author: sorenva
-manager: tfehr 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: WrkCtrCapability
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Define resource capabilities
 
@@ -51,3 +48,6 @@ Resource capabilities describe what operations resources can do. During scheduli
 5. In the Level field, enter a number.
     * When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required. Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

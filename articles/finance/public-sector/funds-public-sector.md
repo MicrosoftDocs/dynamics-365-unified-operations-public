@@ -4,11 +4,9 @@
 title: Funds in the public sector
 description: A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerFund, LedgerFundType
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19571
 ms.assetid: c746c09f-dc9e-4381-ae92-e1af484064b6
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 
-What General ledger parameters should be set for funds?
--------------------------------------------------------
+## What General ledger parameters should be set for funds?
 
 To learn about the General ledger parameters required for funds, see [General ledger in the public sector](general-ledger-public-sector.md).
 
@@ -80,9 +76,8 @@ Here’s a list of some of the funds that might be used by a town government:
 
 The following table shows these funds grouped by fund class and fund type.
 
-|                |                        |                 |                                  |
+| Fund class | Fund type          | Fund number | Fund name                    |
 |----------------|------------------------|-----------------|----------------------------------|
-| **Fund class** | **Fund type**          | **Fund number** | **Fund name**                    |
 | Governmental   | General Fund           | 1103            | General Fund                     |
 |                | Special Revenue Funds  | 1343            | School of Technology             |
 |                |                        | 1372            | Information Technology           |
@@ -113,3 +108,6 @@ For more information, see the following topics:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

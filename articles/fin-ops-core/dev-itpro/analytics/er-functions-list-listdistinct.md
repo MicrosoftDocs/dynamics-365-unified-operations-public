@@ -4,11 +4,8 @@
 title: LISTDISTINCT ER function
 description: This topic provides information about how the LISTDISTINCT Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 7/30/2020
-ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +15,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -103,3 +99,6 @@ The following example shows how you can get the list of unique customer account 
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

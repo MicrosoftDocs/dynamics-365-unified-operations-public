@@ -4,11 +4,9 @@
 title: Base price and trade agreements
 description: This procedure walks through creating channel-specific sales price trade agreements. 
 author: josaw1
-manager: AnnBe 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoRe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -60,7 +57,7 @@ This procedure walks through creating channel-specific sales price trade agreeme
 26. In the **Name** field, click the drop-down button to open the lookup.
 27. In the list, select **Commerce**. In the demo data, the **Commerce** journal name has the default relation of **Price (sales)**. That means all new lines created will default to sales price trade agreements.  
 28. On the **Action pane**, click **Lines**.
-29. In the **Account code** field, select 'Group'.
+29. In the **Party code type** field, select 'Group'.
 30. In the **Account selection** field, click the drop-down button to open the lookup.
 31. In the list, find and select the desired record. This will complete the link from Channel to Price group to Trade agreement.  
 32. In the **Item relation** field, type a value.
@@ -72,3 +69,6 @@ This procedure walks through creating channel-specific sales price trade agreeme
 38. On the **Action Pane**, click Sell.
 39. Click **Sales price**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Bill of materials comparison for China
 description: This topic provides information about BOM comparison for China.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: InventBOMComparison_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268584
 ms.assetid: e399ab34-4bfa-4b6d-a956-d425c1395ea3
@@ -72,3 +69,6 @@ The following table shows how a BOM comparison is done. In this example, product
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

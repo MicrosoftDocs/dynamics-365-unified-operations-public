@@ -4,11 +4,9 @@
 title: Download ER configurations from the Global repository of Configuration service 
 description: This topic explains how to download Electronic reporting (ER) configurations from the Global repository of Configuration service.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
@@ -34,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the Global repository of configuration service. For more information, see [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+This topic explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the Global repository of configuration service. For more information, see [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## Open configurations repository
 
@@ -48,7 +45,7 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
 3. In the **Configuration providers** section, select the **Microsoft** tile.
 3. On the **Microsoft** tile, select **Repositories**.
 
-    ![Electronic reporting workspace](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Electronic reporting workspace.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. On the **Configuration repositories** page, in the grid, select the existing repository of the **Global** type. If this repository doesn't appear in the grid, follow these steps:
 
@@ -60,7 +57,7 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
 
 5. Select **Open** to view the list of ER configurations for the selected repository.
 
-    ![Configuration repositories page](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Configuration repositories page.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## Import a single configuration
 
@@ -71,7 +68,7 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
     > [!NOTE]
     > The **Import** button is unavailable for ER configuration versions that are already present in the current Finance instance.
 
-    ![Configuration repository page](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Configuration repository page, Configurations FastTab.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## Import filtered configurations
 
@@ -85,7 +82,7 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
 4. On the **Configurations** FastTab, select **Import** to download the filtered configurations from the Global repository to the current instance.
 5. On the **Configurations** FastTab, select **Reset filter** to clean up the specified selection conditions.
 
-    ![Configuration repository page](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Configuration repository page, Versions FastTab, Import button.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. Before you can use the imported configuration version, you must resolve the issues. For more information, see the list of related resources for this topic.
@@ -96,3 +93,6 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Solver strategy for product configuration
 description: This topic describes how you can use the solver strategy to improve the performance of product configuration. 
-author: cvocph 
-manager: tfehr
+author: t-benebo 
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelLi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -57,7 +54,7 @@ Real customer implementation studies have shown that a change in the solver stra
 
 To change the solver strategy, on the **Product configuration models** page, on the Action Pane, select **Model properties**. Then, in the **Edit the model details** dialog box, select a solver strategy.
 
-[![Changing the solver strategy](./media/solver-strategy.png)](./media/solver-strategy.png)
+[![Changing the solver strategy.](./media/solver-strategy.png)](./media/solver-strategy.png)
 
 Currently, there is no logic that automatically detects which solver strategy will be the most efficient strategy for constraint-based product configuration. Therefore, you must try the solver strategies one by one.
 
@@ -77,3 +74,6 @@ The following table provides recommendations about the solver strategy to use in
 [Heuristics](https://techterms.com/definition/heuristic)
 
 [Constraint Satisfaction Problem](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

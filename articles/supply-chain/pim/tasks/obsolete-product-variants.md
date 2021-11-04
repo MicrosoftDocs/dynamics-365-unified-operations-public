@@ -3,12 +3,10 @@
  
 title: Find obsolete product variants 
 description: This procedure shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. 
-author: cvocph 
-manager: tfehr 
+author: t-benebo 
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Find obsolete product variants 
 
@@ -77,3 +74,6 @@ This procedure shows how to find obsolete released products or product variants 
 
 8. In the list, find and select the desired record.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

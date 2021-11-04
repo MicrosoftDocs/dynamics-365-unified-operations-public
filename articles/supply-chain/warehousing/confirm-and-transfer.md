@@ -4,11 +4,9 @@
 title: Confirm and transfer
 description: This topic explains how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work that is associated with those loads.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Confirm and transfer
@@ -52,8 +49,8 @@ You can split only loads that meet all the following criteria:
 
 - One or more load lines have picked quantities.
 - The load status is less than loaded.
-- There is no load line data. (This data is created through license plate consolidation on the staging location, and the *Confirm and transfer* feature doesn't support license plate consolidation.)
-- No inventory is currently awaiting packing at a packing location. (The *Confirm and transfer* feature doesn't support inventory that has been picked to the pack station but hasn't yet been packed.)
+- There is no load line data. (This data is created through license plate consolidation on the staging location, and the Confirm and transfer feature doesn't support license plate consolidation.)
+- No inventory is currently awaiting packing at a packing location. (The *Confirm and transfer* feature doesn't support inventory that has been picked to the pack station but hasn't yet been packed unless containers that are packed are placed at staging locations with loading work created.)
 
 > [!NOTE]
 > This functionality differs from the transport load functionality, which should be used in warehouses that can never plan and create loads before picking, but that instead load the available transportation space after picking is completed.
@@ -234,3 +231,6 @@ You can also confirm that transaction relations have been updated in the followi
 - The **Split quantity to new load** option also works when some of the remaining work headers have a status of *In process*. Therefore, you can still use the functionality even if workers are already running the pick orders.
 - If you select **Cancel unfulfilled quantity** while there is remaining work that has a status of *Open* or *In progress*, you receive the following error message: "Unable to cancel remaining qty for load. Work exists for load."
 - If you select **Cancel unfulfilled quantity** when there is no remaining work but there are unreleased load lines on the load, you receive the following error message: "The shipment for load could not be confirmed because the quantity for item exceeds the percentage that is defined for under delivery." To avoid the error, you can set the **Under delivery** percentage on the unreleased load line to 100 percent. Unreleased lines won't be moved to a new load, but the current load will be confirmed with under-delivery. In this case, you won't be able to re-release the original order. Therefore, so you will have to handle it in some other way.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

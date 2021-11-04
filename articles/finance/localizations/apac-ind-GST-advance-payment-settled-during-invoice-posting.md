@@ -3,12 +3,10 @@
 
 title: Advance payments that are settled during invoice posting
 description: This topic provides information about the tax that is posted on a customer advance payment when the payment is settled and the customer invoice is posted.
-author: EricWang
-manager: RichardLuan
+author: EricWangChen
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -96,3 +93,6 @@ The following tables shows the tax entries that are generated for the invoice wh
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

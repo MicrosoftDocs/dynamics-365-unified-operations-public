@@ -4,11 +4,9 @@
 title: Tax codes, tax groups, and posting definitions FAQ
 description: This topic answers frequently asked questions about tax and posting definitions.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, PayrollTaxC
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221414
 ms.assetid: cd8cceb4-0ea3-4770-930b-0869e9bfa3c4
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -92,3 +89,6 @@ A tax code can belong to only one tax group that is enabled for posting definiti
 ## Don't see your question here?
 
 We're working to include as many questions as we can, so that Microsoft Dynamics AX Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

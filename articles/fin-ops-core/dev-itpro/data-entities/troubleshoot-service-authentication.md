@@ -4,11 +4,9 @@
 title: Troubleshoot service authentication issues
 description: This topic provides some tips for troubleshooting issues that involve service authentication.
 author: nimakms
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 195943
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: nimak
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -61,7 +58,7 @@ When you troubleshoot service authentication issues, there are a few basic and c
 
 The following illustration shows an example of the contents of the JWT.
 
-[![Example of a JWT](./media/serviceauthenticationtroubleshooting01.png)](./media/serviceauthenticationtroubleshooting01.png)
+[![Example of a JWT.](./media/serviceauthenticationtroubleshooting01.png)](./media/serviceauthenticationtroubleshooting01.png)
 
 ## Review the event logs
 You can also look at the event logs of the instance machine, if you have access to the virtual machine (VM).
@@ -82,3 +79,6 @@ You can also look at the event logs of the instance machine, if you have access 
 
 - The **"aud"** segment of the JWT might contain a URI that has a trailing slash. The slash must be removed.
 - The **"aud"** segment of the JWT might contain a URI that uses an incorrect capitalization style. The URI must be all lowercase.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

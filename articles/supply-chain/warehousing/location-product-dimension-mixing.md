@@ -4,27 +4,24 @@
 title: Location product dimension mixing
 description: This topic provides information about location product dimension mixing. This location profile functionality helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
+ms.dyn365.ops.version: 10.0.7
 ---
 
 # Location product dimension mixing
@@ -211,9 +208,9 @@ You will create a purchase order that has three lines: two lines for the same pr
 
 1.Select **Save**.
 
-### Receive purchase order lines in the warehouse app
+### Receive purchase order lines in the Warehouse Management mobile app
 
-1. Sign in to the warehouse app as a user who is enabled for warehouse *24*.
+1. Sign in to the Warehouse Management mobile app as a user who is enabled for warehouse *24*.
 1. Select the **Inbound** menu.
 1. Select **PO Line receiving**.
 1. Select the **PONUM** field, and then enter the purchase order number.
@@ -243,3 +240,5 @@ You will create a purchase order that has three lines: two lines for the same pr
 
 > [!TIP]
 > You can repeat this scenario, but this time, set **Size** - *No* under the **Allow product dimension mixing** FastTab on the *BULK* **Location profiles**, so that none of the product dimensions can be mixed. In this case, when you receive the purchase order, each product variant will be put to a new location.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

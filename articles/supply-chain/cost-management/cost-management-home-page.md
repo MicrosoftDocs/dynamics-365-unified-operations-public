@@ -4,11 +4,9 @@
 title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
 author: AndersGirke
-manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -18,9 +16,8 @@ ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,7 +47,7 @@ You can access Inventory accounting and Manufacturing accounting from the **Cost
 
 Manufacturing accounting lets you handle [Job order costing](production-order-cost-analysis.md) in production orders and batch orders, as well as [Backflush costing](backflush-costing.md) in lean manufacturing.
 
-The [Cost management Power BI content](../../dev-itpro/analytics/cost-management-content-pack.md) provides managerial insight into inventory and work-in-progress (WIP) inventory, and how cost flows through them by category over time. The information can also be used as a detailed supplement to the financial statement.
+The [Cost management Power BI content](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) provides managerial insight into inventory and work-in-progress (WIP) inventory, and how cost flows through them by category over time. The information can also be used as a detailed supplement to the financial statement.
 
 ### Additional resources
 
@@ -61,12 +58,14 @@ features are in development.
 
 #### White paper
 
-[BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the topics, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
+[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. To better explain the topics, it provides concrete scenarios and data that demonstrates the effect of the various settings and configurations.
 
 #### Blogs
 
-You can find opinions, news, and other information about Cost management on the [Dynamics AX Manufacturing R&D Team blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Although some of these posts were written for the previous version of Cost management, the same concepts still apply, and the procedures are also similar in the current version.
+You can find opinions, news, and other information about Cost management on the [Dynamics AX Manufacturing R&D Team blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Although some of these posts were written for the previous version of Cost management, the same concepts still apply, and the procedures are also similar in the current version.
 
 #### Task guides
 
 Additional help is available as task guides. To access task guides, click the Help button on any page.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

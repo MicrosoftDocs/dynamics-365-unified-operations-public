@@ -2,13 +2,11 @@
 # required metadata
 
 title: Section Stacked Chart subpattern
-description: This article provides information about the Section Stacked Chart subpattern. This subpattern is used as part of the Operational Workspace pattern when a panorama section contains one or two charts.  
+description: This article provides information about the Section Stacked Chart subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29251
 ms.assetid: 58fea559-4d50-46f3-9a88-4cca1d882d04
@@ -36,13 +33,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Section Stacked Chart subpattern. This subpattern is used as part of the Operational Workspace pattern when a panorama section contains one or two charts.  
 
-Usage
------
+## Usage
 
 The Section Stacked Chart subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains one or two charts.
 
 ## Wireframe
-[![Wireframe for Section Stacked Chart](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
+[![Wireframe for Section Stacked Chart.](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -74,7 +70,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 
-[![Section Stacked Chart example](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
+[![Section Stacked Chart example.](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -84,3 +80,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Section Chart form pattern
-description: This topic provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
+description: This topic provides information about the Section Chart form pattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29271
 ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
@@ -36,13 +33,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
 
-Usage
------
+## Usage
 
 The Section Chart form pattern is intended to be used primarily in conjunction with the Operational Workspace pattern. Specifically, the chart section or summary section contains Form Part Controls that point to forms that contain charts. These referenced forms are intended to use the Section Chart pattern.
 
 ## Wireframe
-[![Wireframe for Section Chart form pattern](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
+[![Wireframe for Section Chart form pattern.](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
 ## Pattern changes for Finance and Operations
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -70,7 +66,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **FmBiChartPart\_VehicleByModel** (**All workspaces** &gt; **Reservation Management** (see the **Statistics** section) 
 
-[![Example of Section Chart form pattern](./media/sectionchartexample.png)](./media/sectionchartexample.png)
+[![Example of Section Chart form pattern.](./media/sectionchartexample.png)](./media/sectionchartexample.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -80,3 +76,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

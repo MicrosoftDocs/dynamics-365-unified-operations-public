@@ -3,12 +3,10 @@
  
 title: Create a new warehouse layout
 description: This topic describes how to set up information about the locations in a warehouse. 
-author: perlynne
-manager: tfehr 
+author: yufeihuang
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationW
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a new warehouse layout
 
@@ -65,3 +62,6 @@ This topic describes how to set up information about the locations in a warehous
 7. Close the page.
 8. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

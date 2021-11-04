@@ -3,28 +3,25 @@
  
 title: Create a purchase return order
 description: This procedure shows you how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO. 
-author: mkirknel
-manager: tfehr 
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-ms.search.form: PurchTable, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines   
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a purchase return order
 
@@ -71,3 +68,6 @@ This procedure shows you how to create a purchase return order by using the Cred
 4. In the **Product receipt** field, type a value. This field is used to enter a reference that will be used as a voucher for the product receipt journal.  
 5. Click **OK**. The goods have now been recorded as shipped on the purchase return order, and a product receipt journal has been created. You can use the Product receipt action to review the journals created with the purchase order, and see what was received or returned, and when.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

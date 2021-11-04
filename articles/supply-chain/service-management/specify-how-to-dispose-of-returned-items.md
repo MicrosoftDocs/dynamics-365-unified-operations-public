@@ -3,12 +3,10 @@
 
 title: Specify how to dispose of returned items 
 description: Specify how to dispose of returned items.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,21 +16,19 @@ ms.search.form: InventQuarantineOrder
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Specify how to dispose of returned items 
+# Specify how to dispose of returned items
 
 [!include [banner](../includes/banner.md)]
-
 
 When you handle a return order, you must specify a reason return code to identify why the product is being returned. You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.
 
@@ -42,9 +38,9 @@ You can define any disposition codes that you need in order to support the busin
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -132,8 +128,8 @@ For each disposition code that you define, you must select a disposition action.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -169,21 +165,15 @@ For each disposition code that you define, you must select a disposition action.
 </tbody>
 </table>
 
-
 ## Select a disposition code for a quarantine order
 
-1.  Click **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.
-
-2.  For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.
-
-
+1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.
+1. For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.
 
 ## See also
 
-[Quarantine order (form)](https://technet.microsoft.com/library/aa554073(v=ax.60))
+[Quarantine order (form)](/dynamicsax-2012//quarantine-order-form)
 
 [Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 
-  
-
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

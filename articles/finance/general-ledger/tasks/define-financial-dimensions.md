@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Define financial dimensions
-description: This task guide demonstrates adding an entity backed financial dimension and a custom financial dimension. 
+description: This procedure shows how to add an entity backed financial dimension and a custom financial dimension. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: DimensionDetails,  DimensionAttributeTableExtensionActivate, Dim
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide demonstrates adding an entity backed financial dimension and a custom financial dimension.  The guide uses the USMF demo company.
+This procedure shows how to add an entity backed financial dimension and a custom financial dimension.  The guide uses the USMF demo company.
 
 
 ## Create an entity backed financial dimension
@@ -58,3 +55,6 @@ This task guide demonstrates adding an entity backed financial dimension and a c
 9. In the **Dimension value** field, type a name to describe your financial dimension value.
 10. In the **Description** field, type a description that describes your financial dimension value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

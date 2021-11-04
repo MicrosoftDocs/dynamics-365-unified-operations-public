@@ -4,11 +4,9 @@
 title: Code migration - Mouse double-click logic
 description: This topic explains how the mouseDblClick() override has been deprecated, and how you will need to move this logic to new controls.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28331
 ms.assetid: ba33ee49-2053-4e3c-b0fa-123c9410265d
@@ -83,3 +80,6 @@ As you migrate mouse double-click methods, you should consider the following gui
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

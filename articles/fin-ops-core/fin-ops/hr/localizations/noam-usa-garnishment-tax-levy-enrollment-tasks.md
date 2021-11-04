@@ -2,13 +2,11 @@
 # required metadata
 
 title: Enroll workers in garnishments or tax levies
-description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps ensure that the payroll impact of garnishments and tax levies is handled correctly.
+description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, Payroll
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221194
 ms.assetid: f734d55a-304c-4e49-b437-6fa34c30b5ca
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -250,7 +247,7 @@ Any garnishment that has a different value in one of these fields isn't included
 
 A worker has the following three child support orders. Because the calculation priority, garnishment type, and multiple garnishment method of all three child support orders match, the three garnishments are processed together.
 
-|                                 | ChldSup01     | ChldSup02     | ChldSup03     |
+|  &nbsp;                         | ChldSup01     | ChldSup02     | ChldSup03     |
 |---------------------------------|---------------|---------------|---------------|
 | **Calculation priority**        | 20            | 20            | 20            |
 | **Basis**                       | Fixed amount  | Fixed amount  | Fixed amount  |
@@ -323,3 +320,6 @@ If the combined amount exceeds the maximum deduction limit, set the following va
 ## Additional resources
 
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

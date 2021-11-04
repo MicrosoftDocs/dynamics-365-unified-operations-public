@@ -4,11 +4,9 @@
 title: Create a direct debit mandate for a customer
 description: This task guide demonstrates how to create a direct debit mandate and use it on an invoice. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: CustTable, CustBankAccounts, BankAccountTable, CustPaymMode, Cus
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -93,3 +90,6 @@ This task guide demonstrates how to create a direct debit mandate and use it on 
 3. Select the customer that you added the mandate to.
 4. In the **Direct debit mandate ID** field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

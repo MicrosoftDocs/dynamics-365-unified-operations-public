@@ -4,11 +4,9 @@
 title: Sales tax reports for Poland
 description: This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland.
 author: mrolecki
-manager: AnnBe
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274063
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 
@@ -437,3 +434,6 @@ After you've set up non-deductible costs, you can perform the following tasks on
 - **Print report**
 
 The FactBox pane shows the totals in the journal and the total overdue amount.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

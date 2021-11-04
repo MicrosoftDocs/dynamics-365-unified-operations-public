@@ -4,11 +4,9 @@
 title: Financial reconciliation in retail stores
 description: This topic describes financial reconciliation in retail stores for POS for Microsoft Dynamics 365 Commerce.
 author: anpurush
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -67,3 +64,6 @@ When trickle feed statement posting is used, so that the posting of transactions
 Details of the financial reconciliation for a shift are synced to Commerce headquarters by using the P-job.
 
 Financial retail statements in Commerce headquarters don't compute totals to show the details on the statement lines. Instead, the finalized amounts in the POS client are used to create and post financial retail statements.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

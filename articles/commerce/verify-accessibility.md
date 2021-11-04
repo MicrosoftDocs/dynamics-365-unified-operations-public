@@ -3,12 +3,10 @@
 
 title: Verify page content accessibility
 description: This topic describes how to verify the accessibility of page content in Microsoft Dynamics 365 Commerce.
-author: arotkin
-manager: annbe
+author: josaw1
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: arotkin
+ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
 
@@ -30,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Verify page content accessibility
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to verify the accessibility of page content in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 When you've finished changing a page, you should make sure that the content is accessible to everyone on the web. In the Commerce authoring tools, you can easily verify the accessibility of page content by using the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service. This service verifies your page content against the latest [World Wide Web Consortium (W3C) accessibility](https://www.w3.org/standards/webdesign/accessibility) guidelines.
 
@@ -89,3 +83,8 @@ To use the integrated [Microsoft Accessibility Insights](https://accessibilityin
 [Enrich a product page](enrich-product-page.md)
 
 [Enrich a category landing page](enrich-category-page.md)
+
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

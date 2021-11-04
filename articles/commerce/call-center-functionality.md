@@ -4,11 +4,9 @@
 title: Call center sales functionality
 description: This topic provides an overview of the call center sales functionality in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
@@ -40,9 +37,9 @@ In Dynamics 365 Commerce, a call center is a type of channel that can be defined
 
 Call center features include advanced price and promotions, catalogs, gift cards, loyalty programs, and coupons. Call center orders are also leveraged by the point of sale (POS) application to support cross-channel order fulfillment scenarios.
 
-It's important to note that while the call center module can be utilized by other industries outside of Commerce, the current release of the call center application hasn't been optimized for use in business-to-business (B2B) order processing scenarios, or scenarios where orders have a large amount of sales lines. It's recommended that users who want to utilize the call center features for order processing outside of typical direct-to-consumer transaction processing, take adequate time to test and validate that enabling call center functionality will meet functional and performance needs.
+It's important to note that while the call center module can be utilized by other industries outside of Commerce, the current release of the call center application hasn't been optimized for use in business-to-business (B2B) order processing scenarios, or scenarios where orders have a large number of sales lines. It's recommended that users who want to utilize the call center features for order processing outside of typical direct-to-consumer transaction processing, take adequate time to test and validate that enabling call center functionality will meet functional and performance needs.
 
-In addition to supporting order creation, the call center module also provides a user-friendly customer service application that makes it easier for users to locate customer accounts and review all of the related customer order data and attributes. The customer service screen is designed to enable a user to quickly access order related data that will allow them to answer the most common order-related questions received from customers.
+In addition to supporting order creation, the call center module also provides a user-friendly customer service application that makes it easier for users to locate customer accounts and review all of the related customer order data and attributes. The customer service screen is designed to enable a user to quickly access order-related data that will allow them to answer the most common order-related questions received from customers.
 
 This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features.
 
@@ -74,3 +71,6 @@ This page provides links to relevant documentation related to the setup, configu
 ## Configure continuity programs
 
 [Set up continuity programs for call centers](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Plan for the global address book and other address books
-description: This topic describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books.
+description: This topic describes the considerations and decisions that you must make during the planning process.
 author: msftbrking 
-manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23341
 ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
@@ -63,3 +60,6 @@ After you create the global address book, you can create additional address book
 **Decision:**
 
 - How many additional address books will you create?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

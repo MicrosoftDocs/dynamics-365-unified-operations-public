@@ -4,27 +4,24 @@
 title: Cost rollup policy and overhead calculation 
 description: This topic provides information about how to determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability. 
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
+ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -53,7 +50,7 @@ To avoid these implications, Cost accounting lets you configure cost allocation 
 
 Imagine that an organization has the following structure with 4 cost centers.
 
-![Example of an organization structure](./media/dimension-hierarchy-org.png)
+![Example of an organization structure.](./media/dimension-hierarchy-org.png)
 
 **Cost object dimension**
 
@@ -82,7 +79,7 @@ A dimension hierarchy that fulfills the organizational reporting requirements ca
 
 **Dimension hierarchy**
 
-|              | Dimension member ranges |                     |
+|    &nbsp;    | Dimension member ranges | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Nodes**        | **From dimension member**   | **To dimension member** |
 | Organization |                         |                     |
@@ -103,7 +100,7 @@ A dimension hierarchy that fulfills the policy requirement can be set up as foll
 
 **Dimension hierarchy**
 
-|                         | Dimension member ranges |                     |
+|      &nbsp;             | Dimension member ranges |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Nodes                   | From dimension member   | To dimension member |
 | Profit & Loss statement |                         |                     |
@@ -111,7 +108,7 @@ A dimension hierarchy that fulfills the policy requirement can be set up as foll
 
 After the general ledger entries are processed, the cost entry balance by cost object looks like this.
 
-|                      | **Cost object** |           |           |           | **Total**     |
+|      &nbsp;          | **Cost object** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Total**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Cost element**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Electricity** | 100,00          | 200,00    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -158,14 +155,13 @@ Cost allocation rules can be set up as follows.
 | CC001                                | Total         | **HR services**        |
 | CC002                                | Total         | **Financial services** |
 
-<br>How cost flows between cost centers 
----------------------------------------------------
+## <br>How cost flows between cost centers 
 
 If you want to learn how cost flows between the cost centers in the organization, you can create cost elements of the type **Secondary** for each cost center. These cost elements will then be used to transfer balances between the cost centers during the overhead calculation.
 
 Cost element dimension members can be set up as follows.
 
-| Cost elements | Type          |               |
+| Cost elements | Type          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Electricity   | Primary       |
 | 1002          | Salaries      | Primary       |
@@ -185,7 +181,7 @@ The dimension hierarchy **Profit & Loss statement** needs to be updated with the
 
 **Dimension hierarchy**
 
-|                         | Dimension member ranges |                     |
+|      &nbsp;             | Dimension member ranges |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Nodes                   | From dimension member   | To dimension member |
 | Profit & Loss statement |                         |                     |
@@ -264,7 +260,7 @@ The dimension hierarchies allow you to view data at different aggregation levels
 
 Here is an example of a Power Pivot reporting in Excel.
 
-| **Profit & Loss statement** | **Cost object** |                |               |               |  **Total**    |
+| **Profit & Loss statement** | **Cost object** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Total**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primary cost**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -282,7 +278,7 @@ Using **Cost rollup policy** and **Cost elements of the type secondary** allows 
 
 If the same example had been performed without creating the **Cost rollup policy,** the reporting result would be as shown below. The cost flows correctly but the traceability and insight into how cost flows between the cost centers are lost.
 
-| **Profit & Loss statement** | **Cost object** |           |               |               |          **Total**  |
+| **Profit & Loss statement** | **Cost object** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Total**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Primary cost**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |
@@ -307,3 +303,6 @@ The clear separation between **Cost allocation** and **Cost rollup policies** pr
 -  [Cost element dimensions](cost-elements.md)
 -  [Dimension hierarchy](dimension-hierarchy.md)
 -  [Overhead calculation](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,28 +3,25 @@
 
 title: Dual-use goods
 description: This topic explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
+ms.dyn365.ops.version: 10.0.9
 ---
 
 # Dual-use goods
@@ -112,3 +109,6 @@ You use the **Dual use certificates** page to set up and manage the required dua
     | Print on invoice | Select this check box to print the certificate number on invoices that are addressed to the specified country during the specified date range. |
     | Print on packing slip | Select this check box to print the certificate number on packing slips that are addressed to the specified country during the specified date range. |
     | Print on sales order | Select this check box to print the certificate number on sales orders that are addressed to the specified country during the specified date range. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

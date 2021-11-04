@@ -4,21 +4,18 @@
 title: Additional location zones
 description: This topic provides an overview of the new location zones that have been added to Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: WHSLocationBuild
+ms.search.form: WHSLocationBuild, WHSZone
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -63,3 +60,6 @@ Before you can use the *Additional location zone* feature, it must be turned on 
 7. Select **Create**.
 8. You receive messages that state that new locations have been added. Select the **Show messages** button to view the messages.
 9. Go to **Warehouse management \> Setup \> Warehouse \> Locations**. The new locations appear in the list, and all zone fields are available (that is, the existing zone field and the new additional zone fields).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

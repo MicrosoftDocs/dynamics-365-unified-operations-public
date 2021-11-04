@@ -1,25 +1,18 @@
 ---
-# required metadata
-
 title: Extensibility changes in Dynamics 365 for Finance and Operations version 10.0
 description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations version 10.0.
 author: FrankDahl
-manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -435,3 +428,6 @@ The following additional changes have been made for extensibility.
 
 - Convert queries where InventSumFields is used to SysDa.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

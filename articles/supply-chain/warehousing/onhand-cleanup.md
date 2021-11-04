@@ -4,30 +4,29 @@
 title: Warehouse management on-hand entries cleanup job
 description: This topic describes the on-hand entries cleanup job, which helps improve system performance by identifying and deleting related but unneeded records.
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  SysOperationTemplateForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
+ms.dyn365.ops.version: 10.0.12
 ---
 
 # Warehouse management on-hand entries cleanup job
+
+[!include [banner](../includes/banner.md)]
 
 The performance of queries that are used to calculate on-hand inventory is affected by the number of records in the tables that are involved. One way to help improve the performance is to reduce the number of records that the database must consider.
 
@@ -54,7 +53,12 @@ When the job runs, it has a commit size of 100. In other words, it will try to c
 
 ## Possible user impact
 
-Users might be affected if the on-hand entries cleanup job deletes all the records for a given level (such as the license plate level). In this case, the functionality for seeing that inventory was previously available on hand at a license plate might not work as expected, because the relevant on-hand entries are no longer available. (That functionality checks the condition **Quantity \<\> 0** in the **Dimension display** settings when users view on-hand information.) However, the performance improvement that the cleanup job provides should make up for this small loss in functionality.
+Users might be affected if the on-hand entries cleanup job deletes all the records for a given level (such as the license plate level). In this case, the functionality for seeing that inventory was previously available on-hand at a license plate might not work as expected because the relevant on-hand entries are no longer available. This can, for example, be experienced in the following situations:
+
+- On the **On-hand list**, when the user deselects the condition **Quantity \<\> 0** or selects the condition **Closed transactions** in the **Dimensions display** settings.
+- In a **Physical inventory by inventory dimension** report for past periods, when the user sets the **As of date** parameter.
+
+However, the performance improvement that the cleanup job provides should make up for these small losses in functionality.
 
 ## <a name="max-execution-time"></a>Make the Maximum execution time setting available
 
@@ -62,3 +66,6 @@ By default, the **Maximum execution time** setting isn't available. If you want 
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Maximum execution time for the warehouse management on-hand entries cleanup job*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

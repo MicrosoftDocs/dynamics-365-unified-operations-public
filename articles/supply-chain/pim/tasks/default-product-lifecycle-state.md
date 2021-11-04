@@ -3,12 +3,10 @@
  
 title: Create a default product lifecycle state
 description: This procedure shows how to create a default product lifecycle state as well as how to associate the default state with released products. 
-author: cvocph 
-manager: tfehr 
+author: t-benebo 
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a default product lifecycle state
 
@@ -66,3 +63,6 @@ This procedure shows how to create a default product lifecycle state as well as 
 > [!NOTE]
 > Assume that you have set up an active state, you can now select the active state to allow the product to be used in Master planning and BOM-level calculation. Obviously, this only makes sense if all the product details that are required for consistent planning are specified.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

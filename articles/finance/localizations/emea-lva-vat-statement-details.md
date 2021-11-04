@@ -4,11 +4,9 @@
 title: VAT statement details for Latvia
 description: This topic explains how to set up the VAT statement for legal entities in Latvia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266864
 ms.search.region: Latvia
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -75,3 +72,6 @@ To generate a VAT XML file, on the **Sales tax payments** page, select one or mo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

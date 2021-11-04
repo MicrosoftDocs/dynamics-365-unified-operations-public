@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: All-in-one deployable packages
 description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
-manager: AnnBe
-ms.date: 07/07/2020
+ms.date: 05/20/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
@@ -35,9 +20,9 @@ Customers can update the software in their environments by applying software dep
 This topic outlines the best practices for creating and managing an all-in-one deployable package.
 
 > [!IMPORTANT]
-> - The enforcement of all-in-one packages will be done in phases. Request to extend the support for deployable packages that are **not** all-in-one deployable packages will end October 31, 2020. The extension approval will be subject to valid justification.
+> - The enforcement of all-in-one packages will be done in phases. Requests to extend the support for deployable packages that are **not** all-in-one deployable packages ended on October 31, 2020.
 > - If a payment connector is currently deployed in your environment, you will have to [create a payment connector package](../../../commerce/dev-itpro/payment-connector-package.md) and include it in the all-in-one deployable package.
-> - If you currently use Microsoft Dynamics 365 Commerce functionality for the retail point of sale, you will also have to [synchronize self-service installers](../../../commerce/dev-itpro/Synchronize-installers.md).
+> - If you currently use Microsoft Dynamics 365 Commerce functionality for the retail point of sale, you will also have to [synchronize self-service installers](../../../commerce/dev-itpro/Synchronize-installers.md).  For Commerce Scale Unit, please see [Deploy the package to CSU](../../../commerce/dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
 
 ## What is an all-in-one deployable package?
 
@@ -62,8 +47,15 @@ There are two primary methods for creating an all-in-one deployable package:
 
 ISVs can choose whether to share their source code with you. If they don't share it, they will provide a binary-only package. This package can easily be managed into an all-in-one deployable package. For instructions, see [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md).
 
+## How can I deploy ISV licenses?
+
+ISVs can send license deployable packages to provide or update a license. However, for self-service environments licenses should also be included in an all-in-one deployable package. You can add a task to your build or release pipelines to add any licenses you have to a deployable package. For more information, see [Add license files to a deployable package in Azure Pipelines](pipeline-add-license-package.md).
+
 ## Why are these packages important?
 
 The best practice of using fully deployable packages helps reduce the complexity and number of packages that are applied to a given environment. In some circumstances, installation of different packages can change the behavior of your environment. For example, if you install ModelA and then ModelB instead of ModelB and then ModelA.
 
 In addition, this approach is a hard requirement for self-service environments. This is because those environments use containerization technology and build a brand-new environment every time that you apply a package. If you apply ModelA today and then apply only ModelB tomorrow, you will effectively uninstall ModelA.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,28 +3,25 @@
  
 title: Enter and compare RFQ bids and award contracts
 description: This topic explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
-author: mkirknel
-manager: tfehr 
+author: Henrikan
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable   
+ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Enter and compare RFQ bids and award contracts
@@ -39,7 +36,7 @@ You can enter the bid as either a vendor or a procurement professional. For more
 
 ## Enter a reply as a vendor
 
-1. On the dashboard, select **Vendor bidding**.
+1. Go to **Vendor collaboration \> Workspaces \> Vendor bidding**.
 2. In the **New bid invitations** list, find an RFQ that was just sent. Select the RFQ to review what was requested.
 3. Select **RFQ attachments** to review any attachments that have been added.
 4. Select **Bid** to make the fields editable. Notice that the **Bid progress** field is set to **Vendor is updating**.
@@ -111,3 +108,6 @@ You can enter the bid as either a vendor or a procurement professional. For more
 ## View the purchase order that is generated
 
 On the Action Pane, on the **General** tab, select **Purchase order**. The page that appears shows the purchase order that was generated when you accepted the bid.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

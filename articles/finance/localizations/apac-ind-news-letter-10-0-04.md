@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: What's new or changed for APAC India GST Localization in 10.0.04 (July 2019)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.04.
+title: What's new or changed for India GST in 10.0.04 (July 2019)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.04.
 author: prabhatb
-manager: Wangcheng
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,11 +25,11 @@ ms.dyn365.ops.version: 10.0.04
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.04 (July 2019)
+# What's new or changed for India GST in 10.0.04 (July 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.04 for APAC India GST localization. 
+This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.04 for India GST localization. 
 .
 
 ## New features
@@ -40,7 +37,7 @@ This topic includes a summary of the new features and critical bug fixes release
 
 You can define a separate GST reference number sequence group for free text invoice, stock transfer receipt, and stock transfer shipment. 
  
- ![](media/GST-reference-number-sequence-group-1-10-0-04.PNG)
+ ![GST reference number sequence groups.](media/GST-reference-number-sequence-group-1-10-0-04.PNG)
  
 ### Financial dimension linked to the inventory dimension site 
 Financial dimensions that are linked to the inventory dimension site will be automatically populated on the order line of the stock transfer receipt. 
@@ -65,3 +62,6 @@ Financial dimensions that are linked to the inventory dimension site will be aut
 -	IGST isn't calculating on a Special Economic Zone (SEZ) purchase.
 -	In a partial invoice against the purchase receipt quantity, the assessable value is not updated and the GST is not calculated. 
 -	The load on inventory amount is not posting to the fixed asset account when a fixed asset is acquired through a purchase order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

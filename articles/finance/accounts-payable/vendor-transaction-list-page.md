@@ -4,11 +4,9 @@
 title: Vendor transactions list page
 description: This topic provides information about the Vendor transactions list page for Microsoft Dynamics 365 Finance.
 author: mikefalkner
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form:  VendTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 
@@ -44,7 +41,7 @@ The **View settlements** button on the Action Pane provides quick access to the 
 
 4. In the dialog box, you can perform various tasks. Select one or more vouchers, and then select one of the following buttons:
 
-    - **View related** – Show all the payment journal transactions and general journal tranactions for the vendor that were created in the journals in which the documents shown in the list were created. For example, if a payment is shown, then all of the payments in the payment journal in which it was created will be shown. If an invoice or payment is shown and it was created in a general journal, then all of the documents in the general journal in which it was created will be shown. All the settlements that are related to list of documents are also shown. While you're viewing related payments, the label of this button changes to **View settlements**. Select **View settlements** to show only the transactions that were shown when you first opened the **View settlements** dialog box.
+    - **View related** – Show all the payment journal transactions and general journal transactions for the vendor that were created in the journals in which the documents shown in the list were created. For example, if a payment is shown, then all of the payments in the payment journal in which it was created will be shown. If an invoice or payment is shown and it was created in a general journal, then all of the documents in the general journal in which it was created will be shown. All the settlements that are related to list of documents are also shown. While you're viewing related payments, the label of this button changes to **View settlements**. Select **View settlements** to show only the transactions that were shown when you first opened the **View settlements** dialog box.
     - **View history** – Show the settlement history for the vouchers. Select **Close** to close the dialog box.
     - **View accounting** – Show all vouchers that are related to the selected documents. Select **Close** to close the dialog box.
     - **Export** – Export the selected vouchers to Microsoft Excel.
@@ -53,7 +50,7 @@ The **View settlements** button on the Action Pane provides quick access to the 
 
 ## Global transactions
 
-The **Global transactions** button also displays on the **Vendor transactions** list page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transactions** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
+The **Global transactions** button also displays on the **Vendor transactions** list page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transactions** list page shows transactions only for the legal entities that the user has access to, based on their security settings.
 
 The list page will show all transactions for vendors that have the same party ID as the vendor that you started with. For example, if vendor US-001 in one legal entity has the same party ID as vendor DE-001 in another legal entity, all transactions for both vendor IDs are shown.
 
@@ -102,3 +99,6 @@ Each field has a different effect on the transaction when you edit it:
 - **Edit the cash discount terms** - The cash discounts are changed, based on the base date and the cash discount terms.
 
 When you've finished editing the payment settings, select **Close** to save your changes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

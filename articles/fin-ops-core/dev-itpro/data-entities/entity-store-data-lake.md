@@ -4,11 +4,9 @@
 title: Make Entity store available as a Data Lake
 description: This topic explains how to make Entity store available as a Microsoft Azure Data Lake.
 author: MilindaV2
-manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 96283
@@ -59,7 +56,7 @@ You need to enable automated Entity store refresh before enabling Data Lake inte
 
 You will now see the new experience.
 
-![New UI experience](./media/entity-store-data-lake-03.png)
+![New UI experience.](./media/entity-store-data-lake-03.png)
 
 After the new experience is turned on, you can define the refresh for each aggregate measurement. The following refresh options are available:
 
@@ -118,20 +115,18 @@ The following sections describe each task in more detail.
 ### Register the app
 
 1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
-2. Select **New application registration**, and enter the following information:
+2. Select **New registration** at the top of the menu, and enter the following information:
 
-    - **Name:** Enter the name of the app.
-    - **Application type:** Select **Web API**.
-    - **Sign-on URL:** Copy the root URL and paste it here.
+    - **Name** - Enter a friendly name for the app.
+    - Select **Accounts in this Organizational directory only** unless your storage account and your Dynamics environment are in different Azure Active Directory domains.
 
-3. After the application is created, select it, and then select **Settings**.
-4. Select the **Required permissions** option.
-5. In the dialog box that appears, select **Add option**, and then select **Add API**.
-6. In the list of APIs, select **Azure Key Vault**.
-7. Select the **Delegated permissions** check box, select to grant permissions, and then select **Done** to save your changes.
-8. On the **Application** menu of the new app, select **Keys**.
-9. In the **Key Description** field, enter a name.
-10. Select a duration, and then select **Save**. A secret is generated in the **Value** field.
+3. After the application is created, select **API permissions**.
+4. In the dialog box that appears, select **Add a permission**.
+5. You will see a dialog box with a list of APIs. In the list, select **Azure Key Vault**.
+6. Select the **Delegated permissions** box, select **user_impersonation**, and then select **Add permissions** to save your changes.
+7. Select the **Certificates & secrets** menu on the left navigation pane, and then select **New client secret**.
+8. In the **Description** field, enter a name and choose an expiry period. Select **Add**.
+10. A secret is generated and shown in the **Value** field.
 11. Immediately copy the secret to the clipboard, because it will disappear within one or two minutes. You will have to provide this key to the application later.
 
 ### Add a service principal to Key Vault
@@ -142,7 +137,7 @@ The following sections describe each task in more detail.
 4. In the **Key permissions** field, select **Get** and **List** permissions.
 5. In the **Secret permissions** field, select **Get** and **List** permissions.
 
-    ![Get and List permissions](./media/entity-store-data-lake-05.png)
+    ![Get and List permissions.](./media/entity-store-data-lake-05.png)
 
 6. Select **Save**.
 
@@ -156,7 +151,7 @@ The following sections describe each task in more detail.
     - **DNS name:** Enter the DNS name of Key Vault.
     - **Secret name:** Enter the name of the secret that you added to Key Vault together with connection string information.
 
-    ![Data connections tab on the System parameters page](./media/entity-store-data-lake-04.png)
+    ![Data connections tab on the System parameters page.](./media/entity-store-data-lake-04.png)
 
 3. Select the **Test Azure Key Vault** and **Test Azure Storage** links to validate that system can access the configuration information that you provided.
 4. Select the **Enable data connection** check box.
@@ -164,3 +159,6 @@ The following sections describe each task in more detail.
 Entity store data should now be populated in the storage location that you provided, not in the relational Entity store database.
 
 The aggregate measurements and refresh options that you select in the Entity store UI should now apply to data that is copied to Data Lake.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

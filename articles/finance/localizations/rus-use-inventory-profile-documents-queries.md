@@ -3,11 +3,9 @@
 title: Use an inventory profile in documents and queries
 description: This topic provides information about using inventory profile.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -51,7 +48,7 @@ ms.dyn365.ops.version: 8.1
 
 ### Rules for automatically splitting product receipts and invoices
 
-When you post a purchase order invoice or product receipt, the system splits the documents by the posting profiles and kinds of activity that are defined on the order lines. For order lines that have items where the inventory profile isn't active, the **Basic** kind of activity and the posting profile that is specified in the purchase order header are used.
+When you post a purchase order invoice or product receipt, the system splits the documents by the posting profile and the kind of activity defined on the order lines. For order lines that have items with an inventory profile that isn't active, the **Basic** activity and the posting profile that is specified in the purchase order header are used.
 
 #### Example in the RUMF legal entity
 
@@ -83,13 +80,24 @@ When you post a purchase order invoice or product receipt, the system splits the
 
 6. Create a product receipt. You should see the following lines on the **Overview** and **Lines** FastTabs of the **Posting product receipt** page.
 
-    | **Overview**        |                            |                      | **Lines** |                       |              |
-    |---------------------|----------------------------|----------------------|-----------|-----------------------|--------------|
-    | **Product receipt** | **Vendor posting profile** | **Kind of activity** | **Item**  | **Inventory profile** | **Quantity** |
-    | PR1                 | GEN                        | Basic                | Item1     | GEN                   | 10           |
-    |                     |                            |                      | Item2     | MAT                   | 10           |
-    | PR2                 | COM                        | Commissioner         | Item3     | COM                   | 10           |
-    | PR3                 | Общий                      | Basic                | Item4     |                       | 10           |
+      - **Overview** FastTab
+
+        |   Product receipt   |  Vendor posting profile    |    Kind of activity  | 
+        |---------------------|----------------------------|----------------------|
+        | PR1                 | GEN                        | Basic                |
+        | PR2                 | COM                        | Commissioner         |
+        | PR3                 | Общий                      | Basic                |
+        
+     - **Lines** FastTab
+     
+        | Item      |   Inventory profile   |   Quantity   |
+        |-----------|-----------------------|--------------|
+        | Item1     | GEN                   | 10           |
+        | Item2     | MAT                   | 10           |
+        | Item3     | COM                   | 10           |
+        | Item4     |                       | 10           |
+    
+    
 
 7. Select **Post**. Three product receipts are generated. A similar split will be done for purchase order invoices.
 
@@ -106,7 +114,7 @@ If you process invoice-factures later (for example, from a vendor invoice journa
 2. Select a vendor invoice that doesn't have a processed invoice-facture, and then select **Create facture \> Update facture**.
 3. On the **Update facture** page, in the upper pane, in the **Kind of activity** field, select the kind of activity that you want to process factures for. The lower pane shows the invoices that have the selected kind of activity.
 
-   ![Update facture page](media/14_Update_facture.png)
+   ![Update facture page.](media/14_Update_facture.png)
 
 The system saves the kind of activity that is used for posting in the product receipts, invoices, and invoice-factures for the purchase order. You can view the kind of activity in the following places:
 
@@ -333,10 +341,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>90,00</p>
+<p>90.00</p>
 </td>
 <td width="95">
-<p>90,00</p>
+<p>90.00</p>
 </td>
 </tr>
 <tr>
@@ -359,10 +367,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-140,00</p>
+<p>-140.00</p>
 </td>
 <td width="95">
-<p>-140,00</p>
+<p>-140.00</p>
 </td>
 </tr>
 <tr>
@@ -385,10 +393,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-140,00</p>
+<p>-140.00</p>
 </td>
 <td width="95">
-<p>-140,00</p>
+<p>-140.00</p>
 </td>
 </tr>
 <tr>
@@ -411,10 +419,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>140,00</p>
+<p>140.00</p>
 </td>
 <td width="95">
-<p>140,00</p>
+<p>140.00</p>
 </td>
 </tr>
 <tr>
@@ -437,10 +445,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>24,00</p>
+<p>24.00</p>
 </td>
 <td width="95">
-<p>24,00</p>
+<p>24.00</p>
 </td>
 </tr>
 <tr>
@@ -463,10 +471,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-74,00</p>
+<p>-74.00</p>
 </td>
 <td width="95">
-<p>-74,00</p>
+<p>-74.00</p>
 </td>
 </tr>
 <tr>
@@ -489,10 +497,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-74,00</p>
+<p>-74.00</p>
 </td>
 <td width="95">
-<p>-74,00</p>
+<p>-74.00</p>
 </td>
 </tr>
 <tr>
@@ -515,10 +523,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>74,00</p>
+<p>74.00</p>
 </td>
 <td width="95">
-<p>74,00</p>
+<p>74.00</p>
 </td>
 </tr>
 <tr>
@@ -541,10 +549,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>100,00</p>
+<p>100.00</p>
 </td>
 <td width="95">
-<p>100,00</p>
+<p>100.00</p>
 </td>
 </tr>
 <tr>
@@ -567,10 +575,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-150,00</p>
+<p>-150.00</p>
 </td>
 <td width="95">
-<p>-150,00</p>
+<p>-150.00</p>
 </td>
 </tr>
 <tr>
@@ -593,10 +601,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-150,00</p>
+<p>-150.00</p>
 </td>
 <td width="95">
-<p>-150,00</p>
+<p>-150.00</p>
 </td>
 </tr>
 <tr>
@@ -619,10 +627,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>150,00</p>
+<p>150.00</p>
 </td>
 <td width="95">
-<p>150,00</p>
+<p>150.00</p>
 </td>
 </tr>
 <tr>
@@ -645,10 +653,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>80,00</p>
+<p>80.00</p>
 </td>
 <td width="95">
-<p>80,00</p>
+<p>80.00</p>
 </td>
 </tr>
 <tr>
@@ -671,10 +679,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-130,00</p>
+<p>-130.00</p>
 </td>
 <td width="95">
-<p>-130,00</p>
+<p>-130.00</p>
 </td>
 </tr>
 <tr>
@@ -697,10 +705,10 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>-130,00</p>
+<p>-130.00</p>
 </td>
 <td width="95">
-<p>-130,00</p>
+<p>-130.00</p>
 </td>
 </tr>
 <tr>
@@ -723,18 +731,21 @@ The cash flow forecast for the purchase order will contain the following lines.
 <p>RUB</p>
 </td>
 <td width="94">
-<p>130,00</p>
+<p>130.00</p>
 </td>
 <td width="95">
-<p>130,00</p>
+<p>130.00</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-The miscellaneous charges for the purchase order or sales order header is repeated in the cash flow forecast for all combinations of a kind of activity and a posting profile.
+The miscellaneous charges for the purchase order or sales order header are repeated in the cash flow forecast for all combinations of a kind of activity and a posting profile.
 
 Find more details in the following topics:
 
 -  [Inventory profile overview](rus-inventory-profile-overview.md)
 -  [Set up an inventory profile](rus-set-up-inventory-profile.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

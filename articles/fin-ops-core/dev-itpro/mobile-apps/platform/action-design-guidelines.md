@@ -1,33 +1,15 @@
 ---
-# required metadata
-
 title: Action design guidelines
-description: This topic provides in-depth information on designing mobile apps.
-author: makhabaz
-manager: AnnBe
+description: This topic provides action design guidelines for mobile apps.
+author: robinarh
 ms.date: 09/17/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: rhaertle
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-
 ---
 
 # Action design guidelines
@@ -65,13 +47,13 @@ Actions let users create, update, or delete data, and also run business processe
 
 ### How do I design an action that enables a field value to be set via a rich lookup?
 
-Lookups for fields in the mobile app don't have a correlation to the advanced lookup behaviors in the cloud version of the app. Regardless of whether you have a custom lookup in the cloud vesion of the app or an automatic lookup that uses a simple query, the mobile app doesn't run existing lookup code when it must determine which UI to show the user. (Remember that the user might be offline while he or she is using the app, and server-side code isn’t run until the action is synchronized.) However, lookup/control overrides such as *modified* are run when the value is set by the mobile back end as it synchronizes the data from the action. When the mobile app detects that a field on an action was selected from a lookup field on a form, it shows a device-native combo box/list picker control, and populates the items by directly querying the backing table of that lookup field. The items in the list show the user data from the TitleField for records in that table. Follow these steps to add the rich lookup experience to your action. This lookup experience includes a full-page multi-column lookup selector that has offline search.
+Lookups for fields in the mobile app don't have a correlation to the advanced lookup behaviors in the cloud version of the app. Regardless of whether you have a custom lookup in the cloud vesion of the app or an automatic lookup that uses a simple query, the mobile app doesn't run existing lookup code when it must determine which UI to show the user. (Remember that the user might be offline while using the app, and server-side code isn’t run until the action is synchronized.) However, lookup/control overrides such as *modified* are run when the value is set by the mobile back end as it synchronizes the data from the action. When the mobile app detects that a field on an action was selected from a lookup field on a form, it shows a device-native combo box/list picker control, and populates the items by directly querying the backing table of that lookup field. The items in the list show the user data from the TitleField for records in that table. Follow these steps to add the rich lookup experience to your action. This lookup experience includes a full-page multi-column lookup selector that has offline search.
 
 1.  Identify or create a list view page for the entity behind the lookup. You can reuse existing list view pages that you've already created.
 2.  After you've finished designing the action, select the field to add rich lookup functionality to, and then click **Properties**.
 3.  In the **Control properties** dialog box, select the list view page that you identified or created in step 1, and set the other related properties. 
 
-![Setting the control properties](media/lookupdesigner.png)
+![Setting the control properties.](media/lookupdesigner.png)
 
 4.  Save and publish your changes to the action.
 
@@ -117,3 +99,5 @@ function main(metadataService, dataService, cacheService, $q) {
     }; 
 }
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

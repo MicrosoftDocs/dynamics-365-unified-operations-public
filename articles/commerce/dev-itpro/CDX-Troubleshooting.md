@@ -2,13 +2,11 @@
 # required metadata
 
 title: Commerce Data Exchange troubleshooting
-description: This topic is intended for IT personas that are implementing functionality that is related to data synchronization (Commerce Data Exchange, or CDX) in a Microsoft Dynamics 365 Commerce environment. It provides information that will help you troubleshoot CDX in implementations.
+description: This topic provides information that will help you troubleshoot CDX in implementations.
 author: jashanno
-manager: AnnBe
-ms.date: 08/01/2020
+ms.date: 08/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,6 +27,7 @@ ms.dyn365.ops.version: 10.0.12
 ---
 
 # Commerce Data Exchange troubleshooting
+
 [!include[banner](../includes/banner.md)]
 
 This topic is intended for IT personas that are implementing functionality that is related to data synchronization (Commerce Data Exchange \[CDX\]) in a Microsoft Dynamics 365 Commerce environment. It provides information that will help you troubleshoot CDX in implementations.
@@ -43,6 +41,7 @@ Before you go through this topic, it's important that you understand the concept
 ## Troubleshooting
 
 If an error that occurs doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This topic is focused on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
+
 
 | Error | Description |
 |-------|-------------|
@@ -66,8 +65,11 @@ If an error that occurs doesn't appear in the following table, create a support 
 
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
+- [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 - [Select an in-store topology](retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)
 - [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
 - [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

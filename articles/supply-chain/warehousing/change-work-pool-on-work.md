@@ -4,11 +4,9 @@
 title: Change work pool on work
 description: This topic explains how you can use the Change work pool button for work items to change the work pool of existing work.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form:  WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: global
 # ms.search.industry:
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Change work pool on work
@@ -153,3 +150,6 @@ You can use the **Work details** page to view the work that was created and to m
 > When the **Change work pool** dialog box appears, the **Work pool ID** field might be blank by default. If the field is blank when you select **OK** to apply changes, you will remove the work pool completely from the work.
 >
 > In addition to switching work pools, you can use this procedure to add a work pool to any work item that doesn't have one, or to remove a work pool from any work item that does have one.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

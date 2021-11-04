@@ -2,35 +2,34 @@
 # required metadata
 
 title: Process life event changes
-description: Process life event changes in Microsoft Dynamics 365 Human Resources for life event changes.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+description: This topic explains how to process life event changes in Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Process life event changes
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Process life event changes in Microsoft Dynamics 365 Human Resources for two life event changes:
 
@@ -57,3 +56,6 @@ Process life event changes in Microsoft Dynamics 365 Human Resources for two lif
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

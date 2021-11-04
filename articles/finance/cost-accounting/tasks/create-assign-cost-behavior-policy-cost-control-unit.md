@@ -4,25 +4,22 @@
 title: Create and assign a cost behavior policy to a cost control unit
 description: Cost behavior is the classification of costs as either fixed or variable. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CAMCostBehaviorRule
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -89,3 +86,6 @@ Cost behavior is the classification of costs as either fixed or variable. A poli
 15. In the Cost control unit field, enter or select a value.
 16. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

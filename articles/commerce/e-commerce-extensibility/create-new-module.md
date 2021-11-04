@@ -4,11 +4,9 @@
 title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 02/20/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,9 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to create a new module in Dynamics 365 Commerce.
 
-## Overview
-
-To create a new module in Commerce, the online Software Development Kit (SDK) provides the **add-module** command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
+To create a new module in Commerce, the online software development kit (SDK) provides the [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
 
 **yarn msdyn365 add-module MODULE\_NAME**
 
@@ -48,7 +43,7 @@ The following example shows how to create a module that is named **product-featu
 yarn msdyn365 add-module product-feature
 ```
 
-It can take 20 to 30 seconds to create a module and generate all the template files for it. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
+After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 ## Preview a module
 
@@ -62,16 +57,37 @@ To preview the new module in a local web browser, follow these steps.
 
 2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=product-feature`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
-![Module preview](media/create-new-module.png)
+![Module preview.](media/create-new-module.png)
 
 ## Module naming conventions
 
 Module names are case-insensitive. We recommended that you use whole words for module names whenever you can.
 
+## Deferred module rendering
+
+By default, all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
+
+To help prevent unexpected rendering behavior, such as page flicker and Document Object Model (DOM) mismatch issues, any references to window or document objects that are available only in the context of a browser should be appropriately handled during server-side rendering. The **MsDyn365.isBrowser** SDK utility function can be used for this purpose, as shown in the following example.
+
+```typescript
+import MsDyn365 from '@msdyn365-commerce/core';
+
+if (MsDyn365.isBrowser) {
+    return new URL(window.location.href);
+}
+```
+
+## Module error handling 
+
+If a module encounters an error during server-side rendering, the failed module is then wrapped into an **ErrorModule** component to prevent any module-level render error from breaking the page. For example, a module using window or document objects during a server-side render would fail because these objects are non-existent on the server side. In this case, the module would then be wrapped in an error component. The module would then attempt to render again on the client. In development mode, to determine if a module failed on the server side, use a `?debug=true` query string parameter.
+
 ## Additional resources
+
+[Page load data actions](page-load-data-action.md)
+
 [CLI command reference](cli-command-reference.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 
@@ -88,3 +104,6 @@ Module names are case-insensitive. We recommended that you use whole words for m
 [Create a page container module](create-page-containers.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

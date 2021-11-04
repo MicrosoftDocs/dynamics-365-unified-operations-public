@@ -1,31 +1,24 @@
 ---
-# required metadata
-
 title: Write extensible methods
 description: This topic provides information about how to write extensible methods.
 author: smithanataraj
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---
@@ -81,11 +74,11 @@ Here are some guidelines to follow when you write extensible code:
 
     **Refactoring logic within a while loop**
 
-    ![Refactoring a while block (before)](media/ExtensibleMethods1.png)
+    ![Refactoring a while block (before).](media/ExtensibleMethods1.png)
 
     **Extensible method after refactoring**
 
-    ![Refactoring a while block (after)](media/ExtensibleMethods2.png)
+    ![Refactoring a while block (after).](media/ExtensibleMethods2.png)
 
 + **If..else statements**
 
@@ -107,11 +100,11 @@ Here are some guidelines to follow when you write extensible code:
 
     **If condition refactored out to a protected method**
 
-    ![Throw (before)](media/ExtensibleMethods3.png)
+    ![Throw (before).](media/ExtensibleMethods3.png)
 
     **Extensible method after refactoring**
 
-    ![Throw (after)](media/ExtensibleMethods4.png)
+    ![Throw (after).](media/ExtensibleMethods4.png)
 
 + **Create, read, update and delete (CRUD) statements**
 
@@ -119,3 +112,6 @@ Here are some guidelines to follow when you write extensible code:
 	- Use **SysQueryInsertRecordSet** to convert insert_recordset to a query.
 	- Avoid field lists in select statements. In this way, you enable extenders to retrieve their additional fields without having to extend.
 	- Use the **in** keyword in query ranges to enable extenders to add more values to the query range. We recommend this approach especially for query ranges that have enum values.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

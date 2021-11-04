@@ -3,12 +3,10 @@
  
 title: Set up a work template for purchase orders
 description: This topic describes how to set up a simple work template to be used when putting away received items. 
-author: ShylaThompson
-manager: tfehr 
+author: Mirzaab
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: WHSWorkTemplateTable, SysQueryForm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up a work template for purchase orders
 
@@ -63,3 +60,6 @@ This topic describes how to set up a simple work template to be used when puttin
 6. In the **Work class ID** field, type a value. The pick and put instructions are a set. Each pick/put set must have the same work class. Use the same work class that you provided for the pick instruction.  
 7. Select **Save**. Note that the **Valid** checkbox is now checked.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

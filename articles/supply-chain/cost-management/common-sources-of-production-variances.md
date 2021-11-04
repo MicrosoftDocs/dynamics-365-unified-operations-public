@@ -4,21 +4,18 @@
 title: Common sources of production variances
 description: This article explains various typical sources of each type of production variance. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: InventCostTrans
+ms.search.form: InventCostTrans, ProdCalcVarianceTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79753
 ms.assetid: 14ac7db4-fb40-43c1-bb0d-1d51fc91d24f
@@ -67,3 +64,6 @@ Here are some typical sources of a **production substitution** variance:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

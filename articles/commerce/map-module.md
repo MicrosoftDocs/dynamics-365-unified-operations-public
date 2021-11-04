@@ -4,11 +4,9 @@
 title: Map module
 description: This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology:
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User
 # ms.devlang:
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt\_pltfrm:
 ms.custom:
 ms.assetid:
@@ -32,21 +29,20 @@ ms.dyn365.ops.version: Release 10.0.13
 # Map module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
-A map module shows the locations of stores on an interactive map that is rendered by using the [Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/). A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. Map modules provide different views, such as Road, Aerial, and Streetside, that users can select to view map locations. They also allow for interactions such as zooming and using the user's location.
+A map module shows the locations of stores on an interactive map that is rendered by using the [Bing Maps V8 Web Control](/bingmaps/v8-web-control/). A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. Map modules provide different views, such as Road, Aerial, and Streetside, that users can select to view map locations. They also allow for interactions such as zooming and using the user's location.
 
 A map module works in conjunction with the store selector module to determine the geographic locations of stores that must be rendered on a map. Store selector and map modules interact when a user selects a store in one of those modules on a site page. Map modules can be extended for other scenarios, beyond interaction with store selector modules. However, module customization is required.
 
-The map module was introduced in Commerce version 10.0.13.
+> [!NOTE]
+> The map module is available in the Dynamics 365 Commerce 10.0.13 release.
 
 The following image shows an example of a map module that is used on a store locations page.
 
-![Example of a store selector module](./media/ecommerce-Storelocator.PNG)
+![Example of a store selector module.](./media/ecommerce-Storelocator.PNG)
 
 ## Module properties
 
@@ -61,7 +57,7 @@ The following image shows an example of a map module that is used on a store loc
 
 ## Add allowed mapping URLs to a site's content security policy directives
 
-For the maps module to interact with Bing Maps, you must ensure that the following mapping URLs are allowed (also known as "whitelisted") per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
+For the maps module to interact with Bing Maps, you must ensure that the following mapping URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
 
 - To the **connect-src** directive, add **&#42;.bing.com**.
 - To the **img-src** directive, add **&#42;.virtualearth.net**.
@@ -74,7 +70,7 @@ For detailed information about how to configure a map module on a page, see [Sto
  
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Buy box module](add-buy-box.md)
 
@@ -84,4 +80,7 @@ For detailed information about how to configure a map module on a page, see [Sto
 
 [Manage Bing Maps for your organization](./dev-itpro/manage-bing-maps.md)
 
-[Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/)
+[Bing Maps V8 Web Control](/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

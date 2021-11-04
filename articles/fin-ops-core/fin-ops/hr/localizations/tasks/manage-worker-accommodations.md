@@ -4,11 +4,9 @@
 title: Manage worker accommodations
 description: This procedure walks through the steps for setting up work environment accommodation types, such as ergonomic chairs or periodic breaks. 
 author: ShielaSogge
-manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations, Human Resources 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: USA
@@ -61,3 +58,6 @@ This procedure walks through the steps for setting up work environment accommoda
     * If the accommodation has been denied, the Reply field can be used to indicate why a request was denied.  
 15. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

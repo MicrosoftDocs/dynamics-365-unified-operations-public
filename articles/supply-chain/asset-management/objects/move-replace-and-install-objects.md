@@ -3,28 +3,25 @@
 
 title: Move, replace, and install assets
 description: This topic explains how to move, replace, and install assets in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectReplace, EntAssetObjectInstallLookup, EntAssetObjectMove, EntAssetObjectTableEditSubObjects
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -96,3 +93,6 @@ Use the **Install asset** function to install an asset structure on a functional
 4. In the **Functional location** field, select the new location.
 5. By default, the **Effective** field is set to the current date and time. However, you can select a different date and time that the installation on the asset structure is valid from.
 6. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

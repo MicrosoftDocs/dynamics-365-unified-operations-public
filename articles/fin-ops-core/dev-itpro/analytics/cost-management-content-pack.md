@@ -4,27 +4,24 @@
 title: Cost management Power BI content
 description: This topic describes what is included in the Cost management Power BI content. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -37,11 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 ## Overview
 
 The **Cost management** Microsoft Power BI content is intended for inventory accountants or individuals in the organization who are responsible for or interested in the status of inventory or work in progress (WIP), or who are responsible for or interested in analyzing standard cost variances.
-
-> [!NOTE]
-> The **Cost management** Power BI content described in this this topic applies to Dynamics 365 Finance and Operations 8.0.
-> 
-> The **Cost management** Power BI content pack, available on the AppSource site, has been deprecated. For more information about that deprecation, see [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 This Power BI content provides a categorized format that helps you monitor the performance of inventories and visualize how cost flows through them. You can gain managerial insights such as the turnover ratio, number of days that inventory is on hand, accuracy, and "ABC classification" at your preferred aggregated level (company, item, item group, or site). The information that is made available can also be used as a detailed supplement to the financial statement.
 
@@ -212,3 +204,6 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Legal entities                                          | Legal entity names                              |
 | Fiscal calendars                                        | Fiscal calendar, Year, Quarter, Period, Month   |
 | Site                                                    | ID, Name, Address, State, Country               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

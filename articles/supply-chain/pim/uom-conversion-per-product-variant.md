@@ -3,12 +3,10 @@
 
 title: Unit of measure conversion per product variant
 description: This topic explains how to set up unit of measure conversions for product variants. It includes an example of the setup.
-author: johanhoffmann
-manager: tfehr
+author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ROBOTS: noindex, nofollow
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10.0
 
@@ -65,7 +62,7 @@ To configure a product master to support unit conversion per variant, follow the
     - **Product** – If you select this value, you can set up a unit conversion for the product master. That unit conversion will be used as a fallback for all product variants that no unit conversion is defined for.
     - **Product variant** – If you select this value, you can set up a unit conversion for a specific product variant. Use the **Product variant** field to select the variant.
 
-    ![Adding a new unit conversion](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Adding a new unit conversion.](media/uom-new-conversion.png "Adding a new unit conversion")
 
 1. Use the other fields that are provided to set up your unit conversion.
 1. Select **OK** to save the new unit conversion.
@@ -112,4 +109,7 @@ To export unit conversions to Excel, on the **Unit conversions** page, on the Ac
 
 ## Additional resources
 
-[Manage unit of measure](tasks/manage-unit-measure.md)
+[Manage units of measure](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

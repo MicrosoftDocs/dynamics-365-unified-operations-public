@@ -4,11 +4,9 @@
 title: Physical and financial updates
 description: This topic provides an overview of which types of transactions increase or decrease inventory quantities. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: InventTrans, InventTransVoucher
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 75023
 ms.assetid: 128340e1-c573-48e6-b835-6c350d8dd0fb
@@ -78,3 +75,6 @@ When a financial transaction is posted, the status of the transaction record is 
 -   Negative quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer
 
 Transactions that decrease quantity are posted at the running average cost price. Therefore, the inventory close procedure is required in order to settle issue transactions to receipt transactions, based on the inventory model that is assigned to each item.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Copy a batch job
 description: This topic provides information about copying a batch job and batch tasks.
 author: Peakerbl
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -47,11 +44,11 @@ Complete the following steps to copy a batch job.
 1.	Click **System administration** > **Inquiries** > **Batch jobs**.
 2.	Select the job that you want to copy, and on the Action Pane, click **Batch Job** > **Copy batch job**.
 
-![Copy Batch Function](./media/copy-batch-function.png) 
+![Copy Batch Function.](./media/copy-batch-function.png) 
  
 4.	Enter or add any changes. If you set **View tasks** to **Yes**, when you click **OK** you will go directly to the **Batch tasks** page for the copied job.
 
-![Copy Batch Form](./media/copy-batch-form.png) 
+![Copy Batch Form.](./media/copy-batch-form.png) 
 
 >[!IMPORTANT] 
 >The copied batch job will be created with a **Withhold** status, so you will need to enable it. The **Run by** user can also be set to give this user the privilege to run the job without being a Sys Admin.
@@ -61,3 +58,6 @@ Complete the following steps to enable a batch job.
 
 1.	On the **Batch job** page, on the Action Pane, click **Batch job** > **Change status**.
 2.	Select the **Waiting** status, and then click **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

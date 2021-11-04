@@ -4,11 +4,9 @@
 title: Container modules
 description: Container modules help you control the layout when you build complex modules or pages out of small component modules. 
 author: samjarawan
-manager: annbe
-ms.date: 02/20/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -64,7 +61,7 @@ For more information, see [Create a page container module](create-page-container
 
 [Create a new module](create-new-module.md)
 
-[Clone a starter kit module](clone-starter-module.md)
+[Clone a module library module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
 
@@ -75,3 +72,6 @@ For more information, see [Create a page container module](create-page-container
 [Test modules by using page mocks](test-page-mock.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

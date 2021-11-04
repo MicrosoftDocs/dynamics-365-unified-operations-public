@@ -3,12 +3,10 @@
 
 title: Create consumption reports
 description: This topic explains how to create consumption reports in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -83,3 +80,6 @@ When you have posted consumption on work orders, you can print a work order cons
 >[!NOTE]
 >You can also generate a [work order report](../work-orders/work-order-report.md), which contains more work order details.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

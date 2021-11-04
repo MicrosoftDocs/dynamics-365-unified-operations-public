@@ -3,28 +3,25 @@
 
 title: Country of origin
 description: Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. This topic provides information about the country of origin feature, which lets you link a product to its country of origin and keep track of its product certifications.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  COOVendorCerts
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
+ms.dyn365.ops.version: 10.0.9
 ---
 
 # Country of origin
@@ -32,6 +29,13 @@ ms.dyn365.ops.version: Release 10.0.9
 [!include [banner](../includes/banner.md)]
 
 Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. The country of origin feature lets you link a product to its country of origin and keep track of its product certifications.
+
+## Turn on the country of origin feature
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Product information management*
+- **Feature name:** *Country of origin management feature*
 
 ## Configure source and destination countries
 
@@ -86,4 +90,7 @@ When you generate a BOM report, you can include the country of origin for each p
 
 A report that shows information about the country of origin of each part is generated and shown. Here is an example of the report.
 
-![Country of origin report](media/country-of-origin-report.png "Country of origin report")
+![Country of origin report.](media/country-of-origin-report.png "Country of origin report")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Accruing subscriptions  
 description: With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: SMASubscriptionGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -48,7 +45,7 @@ If you credit invoiced subscription amounts, you can use two methods to reverse 
 
   - You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
 
-For more information, see [Subscription parameters (form)](https://technet.microsoft.com/library/aa619615.aspx).
+For more information, see [Subscription parameters (form)](/dynamicsax-2012//subscription-parameters-form).
 
 ## Setup requirements
 
@@ -72,7 +69,7 @@ To be able to accrue revenue for subscriptions, the **Accrue revenue** check box
 
 ## Enable revenue accrual on a subscription group
 
-1.  Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
 
 ## Periods
 
@@ -82,8 +79,8 @@ The following table provides an overview of which accrual periods can be set up 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -156,3 +153,6 @@ You can control the number of ledger transactions that are created when you post
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

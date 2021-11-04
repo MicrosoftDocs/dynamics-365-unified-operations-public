@@ -3,12 +3,10 @@
  
 title: Define lean manufacturing work cells
 description: A work cell is a specific form of resource groups that can be used in lean manufacturing process activities. 
-author: cvocph
-manager: tfehr 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: WrkCtrResourceGroup, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Define lean manufacturing work cells
 
@@ -102,3 +99,6 @@ A work cell is a specific form of resource groups that can be used in lean manuf
 ## Save
 1. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Cross-company data sharing
-description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment.
+description: This topic describes cross-company data sharing, which is a mechanism for sharing reference and group data among companies in a deployment.
 author: peakerbl
-manager: AnnBe
 ms.date: 06/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89071
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 
-What is this feature and how does it work?
-------------------------------------------
+## What is this feature and how does it work?
 
 Cross-company data sharing lets you replicate (share) reference and group data among companies. Data integrity is verified before replication occurs. 
 
@@ -57,8 +53,9 @@ Cross-company data sharing has the following limitations:
 -   It supports replication of fewer than one million total records per job. This total is calculated as the number of shared records × the number of shared companies. The limit is increased to two million records from the Platform Update for version 10.0.10.
 -   It supports replication for up to 100 companies per policy. The limit is increased to 300 companies from the Platform Update for version 10.0.10.
 -   Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
-- 	Fields that reference Financial dimension, for example **Ledger** or **Default** dimension, can't be shared across companies. 
+- 	Fields that reference Financial dimensions, for example **Ledger** or **Default** dimension, can't be shared across companies. 
       o	Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
+-   It can’t be used with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
 
 
 ### Policies
@@ -111,7 +108,7 @@ Cross-company data sharing isn't supported for the following scenarios:
 ## Customer and vendor master data sharing
 Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. If you would like to be considered for this feature, complete the [Data sharing application](https://aka.ms/MSDYN365FODataSharing) and contact Support.
 
-With the release of Platform update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Master company sharing** feature in the **Feature management** module. There is no need to complete a survey first. It is important to consider limits in the number of records and companies stated above.
+With the release of Platform update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Customer and vendor master data sharing** feature in the **Feature management** module. There is no need to complete a survey first. It is important to consider limits in the number of records and companies stated above.
 
 > [!NOTE]
 > Default dimensions set up against a customer or vendor cannot be shared across companies. When configuring the customer or vendor record for cross-company data sharing, the **DefaultDimension** field is disabled, and cannot be included in the data sharing policy.
@@ -171,10 +168,12 @@ For details about how to use a template, see [Configure financial cross-company 
 </table>
 
 
-Additional resources
---------
+## Additional resources
 
 [Configure financial cross-company data sharing (Task guide)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

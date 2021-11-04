@@ -1,24 +1,17 @@
 ---
-# required metadata
-
 title: Naming guidelines for extensions
-description: This topic describes the naming guidelines for extensions. Artifacts added via extension must have a name that is unique across all models at installation time. 
+description: This topic describes the naming guidelines for extensions. Artifacts must have a name that is unique across all models at installation time. 
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -47,8 +40,7 @@ When you extend functionality in other models, elements that are being extended 
 
 An extension element, such as a table extension, view extension, or form extension, must have a unique name that minimizes the risk of conflicts with extensions in other models. To minimize the risk of conflicts, the name should include a term, abbreviation, or infix that distinguishes the extension from other extensions to the same element in other models.
 
-+ Include either the name of the model where the extension element resides or the prefix that the extension is associated with. For example, a Warehousing module extends the HCMWorker table and uses the **WHS** prefix in the name of all other elements. In this case, the extension might be named **HCMWorker.WHSExtension**. Notice that the prefix that is used to name other elements in the module is inserted as an infix in the name. As another example, an extension of the ContactPerson table in the ApplicationSuite model might be named **ContactPerson.ApplicationSuiteExtension** if the extension is intended to contain all extensions to the ContactPerson table from the ApplicationSuite model.
-+ Suffix the name with the term **Extension**. For example, an extension of the InventLocation table should follow the pattern **InventLocation.&lt;Model&gt;Extension**.
++ Include either the name of the model where the extension element resides or the prefix that the extension is associated with. For example, a Warehousing module extends the HCMWorker table and uses the **WHS** prefix in the name of all other elements. In this case, the extension might be named **HCMWorker.WHSExtension**. Notice that the prefix that is used to name other elements in the module is inserted as an infix in the name. As another example, an extension of the ContactPerson table in the **ContosoCustomizations** model might be named **ContactPerson.ContosoCustomizations** if the extension is intended to contain all extensions to the ContactPerson table from the **ContosoCustomizations** model. The developer tools will default to using the model's name as the extension name, since the model name is already required to be unique.
 + Don't name the extension just **&lt;Element that is being extended&gt;.Extension**. For example, an extension of the InventLocation table must not be named **InventLocation.Extension**, because the risk of conflicts is too high.
 
 ## Naming extension classes
@@ -77,3 +69,6 @@ Variables and methods added in extension classes must have a name that is unique
  
 + Avoid generic names, because the risk is high that multiple extensions could be using the same term or that the base functionality would be enhanced with an identical name in a future release. Some example of names likely to collide are **Approver**, **Delay**, **Group**, **Lookup**, and **Process**.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

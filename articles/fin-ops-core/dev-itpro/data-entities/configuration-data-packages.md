@@ -4,11 +4,9 @@
 title: Configuration data packages
 description: This topic provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations.
 author: saraschi2
-manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -71,7 +68,7 @@ A generic chart of accounts is included in the configuration data packages. When
 
 ### 010 – System Setup
 
-|                                         | Spreadsheet content |                 |             |
+|                 &nbsp;                  | Spreadsheet content |    &nbsp;       |   &nbsp;    |
 |-----------------------------------------|---------------------|-----------------|-------------|
 | **Entity spreadsheet**                  | **Business data**   | **Sample data** | **No data** |
 | Address and contact information purpose | X                   |                 |             |
@@ -114,7 +111,7 @@ A generic chart of accounts is included in the configuration data packages. When
 
 ### 020 – GL Shared
 
-|                                        | Spreadsheet content |                 |             |
+|        &nbsp;                          | Spreadsheet content |    &nbsp;       |   &nbsp;    |
 |----------------------------------------|---------------------|-----------------|-------------|
 | **Entity spreadsheet**                 | **Business data**   | **Sample data** | **No data** |
 | Account structure activation           |                     | X               |             |
@@ -144,7 +141,7 @@ A generic chart of accounts is included in the configuration data packages. When
 
 ### 025 – GL
 
-|                                                  | Spreadsheet content |                 |             |
+|             &nbsp;                               | Spreadsheet content |       &nbsp;    |    &nbsp;   |
 |--------------------------------------------------|---------------------|-----------------|-------------|
 | **Entity spreadsheet**                           | **Business data**   | **Sample data** | **No data** |
 | Accounts for automatic transactions              | X                   |                 |             |
@@ -176,7 +173,7 @@ A generic chart of accounts is included in the configuration data packages. When
 
 ### 100 – Bank
 
-|                                                   | Spreadsheet content |                 |             |
+|            &nbsp;                                 | Spreadsheet content |    &nbsp;       |     &nbsp;  |
 |---------------------------------------------------|---------------------|-----------------|-------------|
 | **Entity spreadsheet**                            | **Business data**   | **Sample data** | **No data** |
 | Bank accounts                                     |                     | X               |             |
@@ -197,7 +194,7 @@ A generic chart of accounts is included in the configuration data packages. When
 
 ### 120 – AP
 
-|                                             | Spreadsheet content |                 |             |
+|             &nbsp;                          | Spreadsheet content |      &nbsp;     |    &nbsp;   |
 |---------------------------------------------|---------------------|-----------------|-------------|
 | **Entity spreadsheet**                      | **Business data**   | **Sample data** | **No data** |
 | Aging period definitions                    |                     |                 | X           |
@@ -249,7 +246,7 @@ A generic chart of accounts is included in the configuration data packages. When
 
 ### 130 – Tax
 
-|                                    | Spreadsheet content |                 |             |
+|        &nbsp;                      | Spreadsheet content |    &nbsp;       |  &nbsp;     |
 |------------------------------------|---------------------|-----------------|-------------|
 | **Entity spreadsheet**             | **Business data**   | **Sample data** | **No data** |
 | Sales tax authorities              |                     | X               |             |
@@ -275,7 +272,7 @@ A generic chart of accounts is included in the configuration data packages. When
 
 ### 140 – AR
 
-|                                                         | Spreadsheet content |                 |             |
+|                  &nbsp;                                 | Spreadsheet content |    &nbsp;       |    &nbsp;   |
 |---------------------------------------------------------|---------------------|-----------------|-------------|
 | **Entity spreadsheet**                                  | **Business data**   | **Sample data** | **No data** |
 | Aging period definitions                                | X                   |                 |             |
@@ -328,3 +325,6 @@ A generic chart of accounts is included in the configuration data packages. When
 | Terms of delivery                                       |                     |                 | X           |
 | Terms of payment                                        |                     |                 | X           |
 | Total discount customer groups                          |                     |                 | X           |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

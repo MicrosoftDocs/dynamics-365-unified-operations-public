@@ -3,12 +3,10 @@
 
 title: Procurement and sourcing home page
 description: This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 50651
+ms.custom: ["50651", "intro-internal"]
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -61,7 +58,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
 -   [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md)
--   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
+-   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(white paper)
 -   [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)  (February 2016 and May 2016 versions of Dynamics AX only)
 -   [Vendor portal user security](configure-security-vendor-portal-users.md) (2016 and May 2016 versions of Finance and Operations only)
@@ -85,28 +82,30 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Create a purchase order for a one-time supplier](tasks/create-purchase-order-one-time-supplier.md)
 -   [Create a purchase order with a delivery schedule](tasks/create-purchase-order-delivery-schedule.md)
 -   [Create a purchase return order](tasks/create-purchase-return-order.md)
--   [Create a purchase release order from a purchase agreement](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Create a purchase release order when creating the purchase order](tasks/create-purchase-release-order-creating-purchase-order.md)
+-   [Apply a purchase agreement when creating a purchase order](tasks/create-purchase-release-order-purchase-agreement.md)
 -   [Create a consignment replenishment order](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## Prices and discounts
 -   [Purchase agreements](purchase-agreements.md)
 -   [Create a purchase agreement](tasks/create-purchase-agreement.md)
--   [Vendor rebates](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (white paper)
+-   [Vendor rebates](/dynamics/s-e/) (white paper)
 
 ## Product receipt and invoicing
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Vendor posting profiles](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Vendor posting profiles](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## Procurement and sourcing workflows
 -   [Procurement and sourcing overview](procurement-sourcing-overview.md)
 -   [Procurement and sourcing workflows](procurement-sourcing-workflows.md)
 -   [Record the receipt of goods on the purchase order](tasks/record-receipt-goods-purchase-order.md)
 -   [Purchase requisition workflow](purchase-requisitions-workflow.md)
--   [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (white paper)
+-   [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821) (white paper)
 -   [Purchasing policies overview](purchase-policies.md)
 -   [Create purchasing policies](tasks/create-purchasing-policies.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

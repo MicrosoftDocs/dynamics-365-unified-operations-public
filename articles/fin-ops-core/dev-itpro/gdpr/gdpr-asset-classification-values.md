@@ -4,11 +4,9 @@
 title: Asset classifications
 description: Finance and Operations apps provide a default set of classifications for the kinds of data that are stored in each table. 
 author: ToddLefor
-manager: AnnBe
 ms.date: 12/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
 ms.search.region: Global
@@ -52,3 +49,6 @@ Through customization, you can change the classification of the following data t
 -  **Account data** – A value provided by or used by the tenant to identify the billing information or identify the software used by the tenant.
 
 -  **Support data** – Information used to provide customer support.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

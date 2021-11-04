@@ -4,20 +4,17 @@
 title: Start a production order
 description: This procedure shows how to start a production order on the shop floor.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications
 ms.technology:  
 
 # optional metadata
 
-# ms.search.form:   
+ms.search.form: JmgRegistrationStartJob
 audience: Application User
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -73,3 +70,6 @@ This procedure shows how to start a production order on the shop floor. Time and
 7. Click Post.
 8. Click OK.
     * In the Route card journal, the time spent on the individual operations is recorded. Good and error quantity can also be reported.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

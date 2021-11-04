@@ -3,12 +3,10 @@
  
 title: Copy a formula
 description: This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences. 
-author: ShylaThompson
-manager: tfehr 
+author: johanhoffmann
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -68,3 +65,6 @@ This procedure focuses on creating a formula that includes the same ingredients 
 5. Click Select.
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

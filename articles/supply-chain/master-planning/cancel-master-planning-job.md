@@ -4,21 +4,18 @@
 title: Cancel a master planning job
 description: This topic explains how to cancel an active planning job that uses built-in planning functionality.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -58,3 +55,6 @@ These should only be used if canceling the master planning job from the **Unfini
 4. In **Batch tasks**, select the tasks to end.
 5. Click **Change status**, choose **Canceling** and click **OK**.
 6. On the **Batch tasks** FastTab, click **Abort**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

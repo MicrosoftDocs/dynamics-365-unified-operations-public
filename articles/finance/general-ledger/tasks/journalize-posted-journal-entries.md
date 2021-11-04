@@ -4,11 +4,9 @@
 title: Journalize posted journal entries
 description: This procedure shows how to journalize posted journal entries. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -43,3 +40,6 @@ This procedure shows how to journalize posted journal entries. This procedure us
 9. Click **OK** to close the filter page.
 10. Click **OK** to start the journalizing process. A report will be generated after the process is complete.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Build forms that fully utilize saved views
-description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
+description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
-manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: SysUserSetup, DefaultDashboard
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -31,7 +28,6 @@ ms.dyn365.ops.version: Platform update 28
 # Build forms that fully utilize saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Saved views are an important expansion of personalization capabilities Finance and Operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 
@@ -87,16 +83,52 @@ While most forms will work well with saved views, there are some areas that may 
 This section provides a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
--  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid, excluding the QuickFilter)If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
--  View support for workspaces, dashboards, and dialogs
--  [KB 4553227] After adding (reference group) fields via personalization, the fields remain blank
+-  A view does not get marked as having unsaved changes after using custom filters, which are the filters above a grid excluding the QuickFilter. If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query.  
+-  View support for workspaces, dashboards, and dialog boxes.
+-  [KB 4553227] After adding (reference group) fields via personalization, the fields remain blank.
+-  If the Filter pane is open when switching to a different view, the Filter pane will not update to reflect the filters on the target view.
+-  Cannot move a view with a QuickFilter condition saved to it to another environment. The fix in release 10.0.13 more gracefully handles the situation, but does not allow these conditions to move between environments.  
 
-### Fixed in 10.0.13
+### Fixed in release 10.0.16
 
+-  [KB 4590240] Grid resize does not work properly when switching views with the old grid
+-  [KB 4600209] Personalizations of form parts are not reflected when switching views
+-  [KB 4590224] Focus can start on the wrong control when saved views is enabled
+-  [KB 4562254] Table permission error after accessing a shared custom workspace
+-  [KB 4600210] Unexpected client error when switching to the Hide tool
+-  [KB 4599871] Workspaces do not open if personalization is turned off for user / Unbound controls cannot be set as mandatory via personalization
+-  [KB 4594453] Duplicate key exception for forms opening as full-page forms and dialogs
+
+### Fixed in release 10.0.15
+
+-  (Quality update) [KB 4599871] Workspaces do not open if personalization is turned off for user / Unbound controls cannot be set as mandatory via personalization
+-  (Quality update) [KB 4600209] Personalizations of form parts are not reflected when switching views
+-  [KB 4594452] Duplicate record error when interacting with some subforms (form parts)
+-  [KB 4586310] Attachments page loses context after switching views
+-  [Bug 494204] Error when deleting/clearing personalizations from User options > Personalization
+
+### Fixed in release 10.0.14
+
+-  (Quality update) [KB 4594452] Duplicate record error when interacting with some subforms (form parts)
+-  (Quality update) [KB 4600209] Personalizations of form parts are not reflected when switching views
+-  (Quality update) [KB 4584077] Error when exporting multiple views
+-  (Quality update) [KB 4584775] Record position lost when switching between list and details
+-  [Bug 481290] Error when trying to re-import personalizations to a set of users
+-  [KB 4582745] Error triggered when importing user views from one environment to another
+
+### Fixed in release 10.0.13
+
+-  (Quality update) [KB 4594452] Duplicate record error when interacting with some subforms (form parts)
+-  (Quality update) [KB 4600209] Personalizations of form parts are not reflected when switching views
+-  (Quality update) [KB 4584077] Error when exporting multiple views
+-  (Quality update) [KB 4582719 and KB 4578126] When multiple personalization records exist for a form, the wrong one can be selected and loaded
+-  [Bug 481283] Error opening a form after moving a view with a QuickFilter condition between environments
+-  [Bug 481608] Database sync fails because of a unique index violation on the FormRunConfigurationPublishedView table
 -  [Bug 474817] User options > Personalization doesn't list all personalizations for the user 
 -  [KB 4574781] Duplicate record exception on saving a view
 -  [KB 4575278] Tiles, lists, and links lose their link to the published view if the view is republished
-    -  Note that because additional information is needed to restore the link, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13 and re-pin the elements to your workspace.
+     > [!NOTE]
+     > Because additional information is needed to restore the link, re-linking will not occur for any pinned elements from published views prior to 10.0.13. To mitigate, you will need to re-publish your views after updating to 10.0.13 and re-pin the elements to your workspace.
 -  [KB 4575285] Publishing to an existing view name overwrites configuration changes already made
 -  [KB 4574778] Pin and publish as default do not respect companies that the view was published to
 -  [KB 4568154] View import flow doesn't surface if views apply to the grid or details aspect of Details pages
@@ -106,6 +138,9 @@ This section provides a list of known issues for saved views while the feature i
 -  [KB 4564528] QuickFilter default field personalization isn't working as expected with views
 
 ### Fixed in release 10.0.12
+
+-  (Quality update) [KB 4582719] When multiple personalization records exist for a form, the wrong one can be selected and loaded
+-  [Bug 486275] Strange tooltip behavior for saved views 
 -  [KB 4568122] Unexpected queries applied after enabling views
 -  [KB 4562152] Migration of personalizations after enabling saved views throws exception in some cases 
 -  [KB 4568121] Default view personalizations not applied for users without personalization rights
@@ -113,20 +148,20 @@ This section provides a list of known issues for saved views while the feature i
 -  [KB 4568118] Error when trying to open the view selector when user has a large number of views
 -  [KB 4568148] Old custom user workspaces aren't shown in the Personalization form after enabling views
 
-### Quality update for release 10.0.11/Platform update 35
--  [KB 4562147] Importing personalizations to a large number of users is timing out 
-
 ### Fixed in release 10.0.11
+
+-  (Quality update) [KB 4562147] Importing personalizations to a large number of users is timing out 
 -  [KB 4549735] Personalization form missing from security role 
 -  [KB 4568116] Views are not marked as having unsaved changes after using Advanced filter or sort
 -  [KB 4568117] Crash when attempting to import old personalization formats
 -  [KB 4568115] Views can be published with no name
 -  [KB 4564908] Unsaved filters and personalizations reflected in some views 
 
-### Quality update for release 10.0.10/Platform update 34
--  [KB 4560406] Importing personalizations to a large number of users is timing out 
--  [KB 4564906] Personalization form doesn't load/Loading a published view for the first time takes a long time
-
 ### Fixed in release 10.0.10/Platform update 34
+-  (Quality update) [KB 4560406] Importing personalizations to a large number of users is timing out 
+-  (Quality update) [KB 4564906] Personalization form doesn't load/Loading a published view for the first time takes a long time
 -  [KB 4568114] Views can be published to a blank legal entity
 -  [kB 4568113] "View query cannot be applied" message shown when loading a view that modifies existing filters
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

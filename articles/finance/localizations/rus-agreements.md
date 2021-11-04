@@ -3,11 +3,9 @@
 title: Agreements
 description: This topic provides information about sales and purchase agreements for Russian localization.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,12 +14,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -63,3 +60,6 @@ Find more details in the following topics:
 - [Set up and create agreements](rus-set-up-and-create-agreements.md)
 - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
 - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

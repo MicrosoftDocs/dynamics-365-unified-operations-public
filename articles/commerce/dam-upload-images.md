@@ -4,11 +4,9 @@
 title: Upload images
 description: This topic describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-manager: annbe
-ms.date: 03/03/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,8 +31,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
-
-## Overview
 
 The Commerce site builder Media Library allows you to upload images, either singly or in bulk using folders. You should always upload the version of the image with highest resolution and quality, because the image resizer component will automatically optimize the image for different viewports and their breakpoints.
 
@@ -61,9 +56,17 @@ The default naming convention varies based on the category:
 - Category images should be named "**/Categories/\{CategoryName\}.png**"
 - Customer images should be named "**/Customers/\{CustomerNumber\}.jpg**"
 - Employee images should be named "**/Workers/\{WorkerNumber\}.jpg**"
-- Product images should be named "**/Products/\{ProductNumber\}_000_001.png**"
+- Product images should be named "**/Products/\{ProductNumber\}\_000_001.png**"
     - 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
-- Product variant images should be named "**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**"
+- Product variant images should be named "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
+    - For example: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
+- Product variant images with configuration dimension should be named "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**"
+    - For example: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> For product variant images, if the dimension value is empty there must be two whitespaces between the carets in the file name.
+
+The examples above use the default configuration. The separator character and dimensions are configurable and the exact naming required may vary between deployments. One method of identifying the exact naming convention required is to use the developer console of the browser to inspect the product variant image requests while changing the product dimensions on the storefront product details page (PDP).
 
 ## Upload an image
 
@@ -99,3 +102,8 @@ To bulk upload a folder of images in site builder, follow these steps.
 [Crop images](dam-crop-images.md)
 
 [Customize image focal points](dam-custom-focal-point.md)
+
+[Upload and serve static files](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

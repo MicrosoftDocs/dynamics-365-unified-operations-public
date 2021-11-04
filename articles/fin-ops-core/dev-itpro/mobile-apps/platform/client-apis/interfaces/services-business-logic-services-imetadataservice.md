@@ -1,31 +1,12 @@
 ---
-# required metadata
-
 title: MetadataService type
 description: Provides ability to access and configure various metadata elements under the application workspace.
-author: shadykdc
-manager: AnnBe
+author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: rhaertle
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
+ms.author: rhaertle
 ---
 
 # MetadataService type
@@ -394,3 +375,6 @@ metadataService.hideNavigation('Select-a-customer', 'Select-a-vehicle');
 
 #### Returns any
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

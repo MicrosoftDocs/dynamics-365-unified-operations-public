@@ -2,13 +2,11 @@
 # required metadata
 
 title: Set up taxes, tax regions, tax codes, and tax groups
-description: This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
+description: This topic describes the configuration of tax data and employer tax regions, including how to create tax regions, and then set up tax codes and tax groups.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: PayrollTaxCode, PayrollTaxGroup, PayrollWorkerTaxCode, PayrollWo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222684
 ms.assetid: 5fc7b03b-0a18-4dd5-a717-85e40fbbf357
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -142,3 +139,6 @@ The next step is to set up benefits and mandatory deductions. For more informati
 [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)
 
 [Posting definitions in the public sector](../../../../finance/public-sector/posting-definitions-public-sector.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

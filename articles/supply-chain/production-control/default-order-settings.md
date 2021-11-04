@@ -3,30 +3,27 @@
 
 title: Default order settings for dimensions and product variants
 description: Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. 
-author: t-benebo
-manager: tfehr
-ms.date: 07/31/2020
+author: johanhoffmann
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: InventItemOrderSetup
+ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
 
@@ -57,8 +54,11 @@ There are three types of default order settings for purchases, sales, and invent
 - Purchase agreement lines
 - Request for quotation lines
 - Purchase requisition lines
-- Consignment replenishment lines
+- Consignment replenishment lines (partially supported, see note)
 - Planned purchase orders
+
+> [!NOTE]
+> For consignment replenishment order lines, the only settings from the **Purchase order** FastTab of the **Default order settings** page that apply are the **Default site** field, **Default warehouse** field, and **Stopped** check box.
 
 The default order settings for sales are used when creating:
 
@@ -121,7 +121,7 @@ You can define order settings rules for any active product dimension or combinat
 
 Consider the following example product.
 
-|                                                     |                                         |
+| Item                                                | Value                                   |
 |-----------------------------------------------------|-----------------------------------------|
 | **Product name**                                    | Photoelectric sensor                    |
 | **Item number**                                     | XW56                                    |
@@ -207,3 +207,6 @@ To set the validation option:
 1. On the **General** tab, set **Validation on default order quantities** to one of the following values:
     - **Strict** - Select this option to ensure that all **Standard order quantity** values will be a multiple of the **Multiple** value for each FastTab (**Purchase order**, **Inventory**, and **Sales order**).
     - **Standard** - Select this option to use standard validation (which works the same as when this feature isn't enabled).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (April 9, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for April 9, 2019.
+author: andreabichsel
 ms.date: 04/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,12 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
 
@@ -39,10 +35,10 @@ This topic describes features that are either new or changed in Dynamics 365 Tal
 In Attract and Onboard, issues logged by end users using the report a problem feature now automatically create support issues in the customer's LCS project. Admins can then triage the issues and submit them to Microsoft when needed. This is consistent with how Core HR handles end user support issues.
 
 ### Relevance search
-In talent pools, you can now search your entire candidate database for particular skills, names, or educational background. You no longer need to specify which section of a candidate's profile you want to search through. Attract searches the entire profile and highlights all the matches found. Attract also searches all documents that are available for a candidate and intelligently ranks the search results. In addition, you can filter the results by source or by whether they are a silver medalist. For more information, see [Search and view candidate profiles](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+In talent pools, you can now search your entire candidate database for particular skills, names, or educational background. You no longer need to specify which section of a candidate's profile you want to search through. Attract searches the entire profile and highlights all the matches found. Attract also searches all documents that are available for a candidate and intelligently ranks the search results. In addition, you can filter the results by source or by whether they are a silver medalist. For more information, see [Search and view candidate profiles](/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### Prospect recommendations
-Attract can help kickstart sourcing for a job as soon as you activate it by making intelligent candidate recommendations from your organization's candidate database. The recommendations include the skills and education information identified while searching for relevant prospects. These recommendations appear on the **Prospects** tab under a job, if you enable it during the job's hiring process. For more information, see [Prospect recommendations](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Attract can help kickstart sourcing for a job as soon as you activate it by making intelligent candidate recommendations from your organization's candidate database. The recommendations include the skills and education information identified while searching for relevant prospects. These recommendations appear on the **Prospects** tab under a job, if you enable it during the job's hiring process. For more information, see [Prospect recommendations](/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### Interviewer availability statuses
 Interview schedulers will soon be able to view **Out of office, working elsewhere** statuses for interviewers, to help schedule times that might work better for interviewers.
@@ -90,7 +86,10 @@ Tracking employee time off and understanding how time off is calculated not only
 ## Coming soon
 
 ### Improvements to the user interface for duplicate employee check
-With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
+With this change, duplicates are detected as you enter name columns, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
 
 ###  Email support for alerts
 With Platform update 25 for Finance and Operations, users can create alert rules that automatically send email notifications to contacts when triggered by an event. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

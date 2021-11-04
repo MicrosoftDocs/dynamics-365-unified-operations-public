@@ -4,11 +4,9 @@
 title: Purchasing cards
 description: This topic explains how to setup and track purchasing card transactions.
 author: velofog
-manager: AnnBe
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-alpavk
+ms.author: roschlom
 ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
 
@@ -136,3 +133,6 @@ Use the following procedure to create a vendor invoice to record a purchase that
 11. To specify additional information about the line, select the **Line details** FastTab, and enter the information.
 12. Optional: Submit the invoice to the workflow system for review and approval, and then post the invoice.
 13. To save the invoice without posting it, close the page. You can view the invoice on the **Pending vendor invoices** list page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

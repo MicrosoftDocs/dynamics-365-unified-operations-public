@@ -3,12 +3,10 @@
 
 title: Fixed assets integration
 description: Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it is integrated with purchase orders.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: AssetTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it is integrated with purchase orders.
 
-General ledger
---------------
+## General ledger
 
 In General ledger, the value of all fixed assets is typically summarized in multiple main accounts that are required for financial reporting. However, on the **Fixed assets** page, you can create many fixed asset records. These records can include information such as the acquisition price, depreciation, and valuation. Each time that you post a transaction for a fixed asset, the appropriate main accounts are updated. The main accounts for fixed assets always show the updated value of the fixed assets.
 
@@ -100,3 +96,6 @@ For more information, see [Acquire assets through procurement](acquire-assets-pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Public sector home page
-description: Microsoft Dynamics 365 Finance enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
+description: Dynamics 365 Finance supports common public sector business processes. These include budgeting, purchasing, accounts payable, and accounts receivable tasks.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: SysConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 20691
+ms.custom: ["20691", "intro-internal"]
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -64,17 +61,18 @@ The **Public sector** configuration key enables pages and controls that suppleme
 ## How does the Public sector configuration key relate to other configuration keys?
 The following table provides information about how this configuration key relates to other configuration keys.
 
-|            |                                                                                                                                                                                                                     |
+|   **Detail**         |              **Description**                                                                                                                                                                                        |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Detail** | **Description**                                                                                                                                                                                                     |
 | Parent key | None                                                                                                                                                                                                                |
 | Child keys | **Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key |
 
 
-Additional resources
---------
+## Additional resources
 
 [Plan for public sector functionality](plan-public-sector-functionality.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

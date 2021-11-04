@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: What's new and changed in Platform updates
+title: What's new or changed in Platform updates
 description: This topic points to topics that describe the new and changed features in each Platform update for Finance and Operations apps. 
 author: sericks007
-manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,9 +16,8 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,7 +26,7 @@ ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
 
 ---
-# What's new and changed in Platform updates
+# What's new or changed in Platform updates
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,6 +34,16 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Platform updates for 10.0.23 | 7.0.6206 | January 2022    | [Platform updates for version 10.0.23 of Finance and Operations apps](whats-new-platform-updates-10-0-23.md)  |
+| Platform updates for 10.0.22 | 7.0.6164 | November 2021     | [Platform updates for version 10.0.22 of Finance and Operations apps](whats-new-platform-updates-10-0-22.md)  |
+| Platform updates for 10.0.21 | 7.0.6129 | October 2021     | [Platform updates for version 10.0.21 of Finance and Operations apps](whats-new-platform-updates-10-0-21.md)  |
+| Platform updates for 10.0.20 | 7.0.6060    | August 2021     | [Platform updates for version 10.0.20 of Finance and Operations apps](whats-new-platform-updates-10-0-20.md)  |
+| Platform updates for 10.0.19 | 7.0.6009    | June 2021     | [Platform updates for version 10.0.19 of Finance and Operations apps](whats-new-platform-updates-10-0-19.md)  |
+| Platform updates for 10.0.18 | 7.0.5968    | May 2021     | [Platform updates for version 10.0.18 of Finance and Operations apps](whats-new-platform-updates-10-0-18.md)  |
+| Platform updates for 10.0.17 | 7.0.5934    | April 2021     | [Platform updates for version 10.0.17 of Finance and Operations apps](whats-new-platform-updates-10-0-17.md)  |
+| Platform updates for 10.0.16 | 7.0.5860    | February 2021  | [Platform updates for version 10.0.16 of Finance and Operations apps](whats-new-platform-updates-10-0-16.md)  |
+| Platform updates for 10.0.15 | 7.0.5816     | January 2021     | [Platform updates for version 10.0.15 of Finance and Operations apps](whats-new-platform-updates-10-0-15.md)  |
+| Platform updates for 10.0.14 | 7.0.5778      | November 2020     | [Platform updates for version 10.0.14 of Finance and Operations apps](whats-new-platform-updates-10-0-14.md)  |
 | Platform updates for 10.0.13 | 7.0.5746      | October 2020     | [Platform updates for version 10.0.13 of Finance and Operations apps](whats-new-platform-updates-10-0-13.md)  |
 | Platform updates for 10.0.12 | 7.0.5688     | August 2020     | [Platform updates for version 10.0.12 of Finance and Operations apps](whats-new-platform-update-10-0-12.md)  |
 | Platform updates for 10.0.11 | 7.0.5644     | July 2020     | [Platform updates for version 10.0.11 of Finance and Operations apps](whats-new-platform-update-35.md)  |
@@ -70,3 +77,6 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 | Platform update 1  | 7.0.4127.16103   | May 2016         | [What's new or changed in Dynamics AX platform update 1](../../fin-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md)                                    |
 | Dynamics AX 7.0                | 7.0.4030.16079   | February 2016    | [What's new or changed in Dynamics AX 7.0](../../fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                                         |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

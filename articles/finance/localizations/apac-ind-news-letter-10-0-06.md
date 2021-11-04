@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: What's new or changed for APAC India GST Localization in 10.0.06 (November 2019)
-description: This topic describes new or changed functionality for APAC India GST features released in Dynamics 365 Finance version 10.0.06.
+title: What's new or changed for  India GST in 10.0.06 (November 2019)
+description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.06.
 author: prabhatb
-manager: Wangcheng
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend 
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,11 +25,11 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
-# What's new or changed for APAC India GST Localization in 10.0.06 (November 2019)
+# What's new or changed for India GST in 10.0.06 (November 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the topic, [What's new or changed in Finance and Operations version 10.0.6](../../fin-and-ops/get-started/whats-new-changed-10-0-6.md).
+This topic includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the topic, [What's new or changed in Finance and Operations version 10.0.6](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md).
 
 ## New features
 ### Validate non-existent and duplicate records when importing tax setup 
@@ -40,14 +37,14 @@ During the process of importing tax setup, the system will validate the data cor
 as well as data duplication. Duplicate data means the lookup records result in the same tax rate, load on inventory percentage, etc. 
 This functionality can be turned on in the **Feature management** workspace.
 
-![](media/GST-tax-setup-validation-1-10-0-06.PNG)
+![Tax setup validation feature.](media/GST-tax-setup-validation-1-10-0-06.PNG)
 
 ### Tax information enabled for procurement category
 Tax information has been enabled for procurement categories. Tax information can be added on the **Tax information** FastTab on the **Procurement categories** page. 
 
 **Path : Procurement and Sourcing > Consignment > Procurement categories** 
 
-![](media/GST-tax-setup-validation-2-10-0-06.png)
+![Procurement categories page, Tax information FastTab.](media/GST-tax-setup-validation-2-10-0-06.png)
  
 ### Enable multi-batch processing for GSTR reports
 
@@ -83,3 +80,6 @@ Tax information has been enabled for procurement categories. Tax information can
 -	Incorrect calculation of GST for a credit note. 
 -	Incorrect TDS calculation on the **Open vendor invoice** page.  
 -	The **Business verticals** field for the GST registration number on the **Enterprise Tax Registration Numbers** page should be editable and not greyed out. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

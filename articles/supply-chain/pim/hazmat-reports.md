@@ -3,12 +3,10 @@
 
 title: Hazardous materials inquiries and reports
 description: This topic explains how to work with the various reports that are related to hazardous materials. Many of these reports are required so that you remain compliant with various hazardous material regulations during shipping and storage.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Hazardous materials inquiries and reports
@@ -37,7 +34,7 @@ All these reports, except the **Multimodal dangerous goods** report, use the mod
 
 The following illustration shows the sequence of activities that occur when the system generates hazardous materials reports.
 
-![Sequence of activities for hazardous materials reports](media/hazmat-report-sequence.png "Sequence of activities for hazardous materials reports")
+![Sequence of activities for hazardous materials reports.](media/hazmat-report-sequence.png "Sequence of activities for hazardous materials reports")
 
 ## <a name="set-up"></a>Set up hazardous materials reporting
 
@@ -114,3 +111,6 @@ When the hazardous materials feature is turned on in your system, the **bill of 
 ## Packing list report
 
 When the hazardous materials feature is turned on in your system, packing lists include additional information that is related to the shipping print text for an item. This report is available from the **All loads** page, as usual.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

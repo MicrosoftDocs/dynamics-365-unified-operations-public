@@ -4,11 +4,9 @@
 title: Select data model definitions when you create formats
 description: To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -103,3 +100,6 @@ This procedure is intended for users who have the System administrator or Electr
     * Note that now only one root item is available to map to the application data sources. When at least one model mapping is introduced, only the model's root items that are mapped to application data sources can be selected as a model definition while the ER format is added.   
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

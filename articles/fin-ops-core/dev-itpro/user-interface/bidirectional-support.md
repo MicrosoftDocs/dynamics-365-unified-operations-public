@@ -2,13 +2,11 @@
 # required metadata
 
 title: Right-to-left language support and bidirectional text
-description: In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This topic discusses the issue of bidirectional text and how it's handled.
+description: This topic discusses the issue of bidirectional text and how it's handled.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: reference
+ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104543
 ms.assetid: f0d7680c-bf07-44e7-83d8-381e4471f45e
@@ -211,3 +208,6 @@ The WPF RichTxt control has a flag that tries to format text according the first
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

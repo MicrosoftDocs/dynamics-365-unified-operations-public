@@ -4,11 +4,9 @@
 title: Retail transaction consistency checker
 description: This topic describes the transaction consistency checker functionality in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -45,18 +42,18 @@ When inconsistent transactions are picked up by the statement posting process, i
 
 The following chart illustrates the posting process with the transaction consistency checker.
 
-![Statement posting process with transaction consistency checker](./media/validchecker.png "Statement posting process with retail transaction consistency checker")
+![Statement posting process with transaction consistency checker.](./media/validchecker.png "Statement posting process with retail transaction consistency checker")
 
 The **Validate store transactions** batch process checks the consistency of the commerce transaction tables for the following scenarios.
 
 - **Customer account** – Validates that the customer account in the transaction tables exists in the HQ customer master.
 - **Line count** – Validates that the number of lines, as captured on the transaction header table, matches the number of lines in the sales transaction tables.
-- **Price includes tax** – Validates that the **Price includes tax** parameter is consistent across transaction lines.
-- **Payment amount** - Validates that the payment records match the payment amount on header.
-- **Gross amount** – Validates that the gross amount on the header is the sum of the net amounts on the lines plus the tax amount.
-- **Net amount** – Validates that the net amount on the header is the sum of the net amounts on the lines.
-- **Under / Over payment** – Validates that the difference between the gross amount on the header and the payment amount doesn't exceed the maximum underpayment/overpayment configuration.
-- **Discount amount** – Validates that the discount amount on the discount tables and the discount amount on the transaction line tables are consistent, and that the discount amount on the header is the sum of the discount amounts on the lines.
+- **Price includes tax** – Validates that the **Price includes tax** parameter is consistent across transaction lines and the price on the sales line is in accordance with price includes tax and tax exempt configuration.
+- **Payment amount** - Validates that the payment records match the payment amount on the header, while also factoring in the configuration for penny rounding in General Ledger.
+- **Gross amount** – Validates that the gross amount on the header is the sum of the net amounts on the lines plus the tax amount, while also factoring in the configuration for penny rounding in General Ledger.
+- **Net amount** – Validates that the net amount on the header is the sum of the net amounts on the lines, while also factoring in the configuration for penny rounding in General Ledger.
+- **Under / Over payment** – Validates that the difference between the gross amount on the header and the payment amount doesn't exceed the maximum underpayment/overpayment configuration, while also factoring in the configuration for penny rounding in General Ledger.
+- **Discount amount** – Validates that the discount amount on the discount tables and the discount amount on the transaction line tables are consistent, and that the discount amount on the header is the sum of the discount amounts on the lines, while also factoring in the configuration for penny rounding in General Ledger.
 - **Line discount** – Validates that the line discount on the transaction line is the sum of all the lines in the discount table that corresponds to the transaction line.
 - **Gift card item** – Commerce doesn't support the return of gift card items. However, the balance on a gift card can be cashed out. Any gift card item that is processed as a return line instead of a cash-out line fails the statement posting process. The validation process for gift card items helps guarantee that the only return gift card line items on the transaction tables are gift card cash-out lines.
 - **Negative price** – Validates that there are no negative price transaction lines.
@@ -65,6 +62,7 @@ The **Validate store transactions** batch process checks the consistency of the 
 - **Serial number** - Validates that the serial number is present in the transaction lines for items that are controlled by serial number.
 - **Sign** - Validates that the sign on the quantity and the net amount are the same in all the transaction lines.
 - **Business date** - Validates that the financial periods for all the business dates for the transactions are open.
+- **Charges** - Validates that the header and line charge amount is in accordance with price, including tax and tax exempt configuration.
 
 ## Set up the consistency checker
 
@@ -82,3 +80,6 @@ If a validation error is found, the only way to fix the error is to contact Micr
 
 > [!NOTE]
 > Additional validation rules to support more scenarios will be added in a future release.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

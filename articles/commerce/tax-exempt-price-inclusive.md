@@ -4,11 +4,9 @@
 title: Calculation of tax exemption
 description: This topic describes functionality for tax exemption calculations in the point of sale (POS) and call center. 
 author: rubendel
-manager: annbe
-ms.date: 07/13/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -45,11 +42,11 @@ This topic describes functionality for tax exemption calculations in the point o
 
 ## Adjust prices for tax exemptions when the price includes tax
 
-Microsoft Dynamics 365 Commerce version 10.0.13 and later include a **Calculate price inclusive tax exempt** option. If this option is set to **Yes**, prices in tax-inclusive scenarios are adjusted when the transaction or specific taxes in the transaction should be exempted. When store-based taxes are used, you can apply these exemptions by using tax overrides. When customer-based taxes are used at the store, the exemptions are automatically applied based on the customer's tax settings.
+Microsoft Dynamics 365 Commerce version 10.0.13 and later includes a feature called **Enable tax exemption for the 'price includes sales tax' scenario**. When this feature is enabled, an option called **Calculate price inclusive tax exempt** appears on the **General** FastTab for store and call center settings. If this option is set to **Yes**, prices in tax-inclusive scenarios are adjusted when the transaction or specific taxes in the transaction should be exempted. When store-based taxes are used, you can apply these exemptions by using tax overrides. When customer-based taxes are used at the store, the exemptions are automatically applied based on the customer's tax settings.
 
 This setting is also supported for orders that are created in the call center and stores.
 
-![Setting the Calculate price inclusive tax exempt option to adjust prices in tax-exempt scenarios](media/CalcPriceInc.png)
+![Setting the Calculate price inclusive tax exempt option to adjust prices in tax-exempt scenarios.](media/CalcPriceInc.png)
 
 ## Set up price reductions for tax exemptions
 
@@ -124,3 +121,6 @@ The following steps show how to test this capability in demo data scenarios. The
 18. When the jobs have completed synchronization, open the POS.
 19. Add item **91050** to a transaction. The total that is due is **$75.06**.
 20. Add **Matthew Tolley** to the transaction. Taxes are recalculated to reflect this customer's exemption.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

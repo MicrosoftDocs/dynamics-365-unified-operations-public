@@ -3,12 +3,10 @@
 
 title: Swiss QR-bills
 description: This topic provides information about how to generate QR-bills (QR-slips) and process incoming QR-bills.
-author: neserovleo
-manager: AnnBe
+author: anasyash
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Switzerland
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: 10.0.9
 
@@ -171,3 +168,6 @@ Create vendor payment journal lines by using the payment proposal functionality.
 For payments that are related to QR-bills, the credit transfer file is generated based on the payment ID value. This value is retrieved from the QR code.
 
 You can import the pain.002 and camt.054 files from the **Payment transfers** page. For more information, see [Import ISO20022 files](emea-iso20022-file-formats.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

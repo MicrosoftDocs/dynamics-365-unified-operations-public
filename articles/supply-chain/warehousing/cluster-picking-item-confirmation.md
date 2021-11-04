@@ -4,11 +4,9 @@
 title: Product confirmation for cluster picking
 description: This topic describes how you set up item verification together with cluster picking.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:  WHSRFAutoConfirm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -46,3 +43,6 @@ Item verification for cluster picking works the same way as when you verify item
 |        Option        |                                    Description                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Product confirmation | Allows you to verify each piece of inventory from the mobile device when scanned. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

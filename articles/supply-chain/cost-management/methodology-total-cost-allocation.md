@@ -4,11 +4,9 @@
 title: Total cost allocation method
 description: This topic provides guidelines for using total cost allocation (TCA). TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: BOMConsistOf, PmfFormulaCoBy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83852
 ms.assetid: 7c14c3e5-9476-4a79-a210-e77fc91cc7fc
@@ -66,3 +63,6 @@ The **By-product cost allocation** field on the **Co-products** page is an enume
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

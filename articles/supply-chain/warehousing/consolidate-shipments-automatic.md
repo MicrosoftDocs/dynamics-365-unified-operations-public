@@ -1,35 +1,32 @@
 ---
 # required metadata
 
-title: Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders
+title: Consolidate shipments released to the warehouse using automatic release of sales orders
 description: This topic presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 # ROBOTS:
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: v-olbara
+ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders
+# Consolidate shipments released to the warehouse using automatic release of sales orders
 
 [!include [banner](../includes/banner.md)]
 
@@ -324,3 +321,6 @@ When you've finished, you should see that four shipments were created:
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

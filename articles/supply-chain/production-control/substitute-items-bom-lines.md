@@ -4,11 +4,9 @@
 title: Material substitution in manufacturing
 description: This topic describes how to substitute materials during the production process. 
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: ProdBOM
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70171
 ms.assetid: ce3b11ef-550e-49b7-8942-2607c2ec3c5c
@@ -53,3 +50,6 @@ Consider the following scenario: A piece of metal plate is required for a weldin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

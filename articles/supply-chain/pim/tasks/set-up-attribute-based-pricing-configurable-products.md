@@ -3,12 +3,10 @@
  
 title: Set up attribute-based pricing for configurable products
 description: This topic explains how to set up attribute-based pricing. 
-author: ShylaThompson
-manager: tfehr 
+author: t-benebo
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up attribute-based pricing for configurable products
 
@@ -34,17 +31,18 @@ This topic explains how to set up attribute-based pricing. As a prerequisite, yo
 
 
 ## Create a new price model
-1. Select **Product variant model definition** on the home page.
-2. Select **Product configuration models** in the **links** section.
-3. In the list, select the **High End Speaker** line, but don't select the link for the name.
-4. On the Action Pane, select **Model**.
-5. Select **Price models**.
-6. Select **New**.
-7. In the **Price model name** field, type a value. Use a name that makes the model easy to identify.  
-8. In the **Description** field, type a value.
-9. Select **Save**.
+
+1. Go to **Product information management \> Products \> Product configuration models**.
+1. In the list, select the **High End Speaker** line, but don't select the link for the name.
+1. On the Action Pane, select **Model**.
+1. Select **Price models**.
+1. Select **New**.
+1. In the **Price model name** field, type a value. Use a name that makes the model easy to identify.  
+1. In the **Description** field, type a value.
+1. Select **Save**.
 
 ## Add price elements
+
 1. Select **Edit**. Each component in a product model can have a base price element and any number of price expression rules. You can also add prices in different currencies.  
 2. In the **Base price expression** field, type a value. For example, type 100. A base price expression can be a numerical value, or it can consist of an arithmetic calculation that involves one or more attributes.  
 3. Select **Add**.
@@ -55,3 +53,6 @@ This topic explains how to set up attribute-based pricing. As a prerequisite, yo
 8. In the **Expression** field, type a value. For example, type `50`. 
 9. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Manage SEO metadata
 description: This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Manage SEO metadata
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 SEO metadata for a site can be managed by using site maps and page metadata.
 	
@@ -100,3 +94,8 @@ To modify page metadata, follow these steps.
 [Enrich a category landing page](enrich-category-page.md)
 
 [Verify page content accessibility](verify-accessibility.md)
+
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

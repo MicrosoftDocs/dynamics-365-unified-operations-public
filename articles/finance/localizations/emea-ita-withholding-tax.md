@@ -4,11 +4,9 @@
 title: Withholding tax for Italy
 description: This topic explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
 author: Anasyash
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272733
 ms.assetid: a5628f89-2ebb-4df2-a8a5-522649fb66da
@@ -88,3 +85,6 @@ To run the Italy-specific reports about withholding tax, go to **Tax** &gt; **In
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

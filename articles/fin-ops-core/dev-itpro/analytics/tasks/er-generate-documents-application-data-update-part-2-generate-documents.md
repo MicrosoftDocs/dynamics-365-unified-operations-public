@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Design configurations to generate documents that have application data
-description: To complete the steps in this procedure, you must first complete the procedure, ER Generate documents with application data update (Part 1 - Import configurations). 
+description: This topic describes how to design Electronic reporting (ER) configurations to generate an electronic document. (Part 1 - Import configurations). 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -63,3 +60,6 @@ Before you begin, change the country context for the DEMF company from DEU (Germ
 10. Close the page.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

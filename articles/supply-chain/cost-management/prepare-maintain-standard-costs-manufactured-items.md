@@ -4,11 +4,9 @@
 title: Prepare to maintain standard costs for manufactured items
 description: This topic describes the steps for preparing to maintain costs for manufactured items. 
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: InventStdCostConv
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -71,10 +68,12 @@ Policies that are assigned to manufactured items can affect the cost calculation
 
 If you want to use routing information for costing purposes, additional preparation steps are required. For example, the cost categories that are assigned to routing operations must be correct and completed.
 
-Related topics
---------
+## Related topics
 
 [Amortize constant costs for a manufactured item](amortize-constant-costs-manufactured-item.md)
 
 [Set up products that can be produced or procured](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

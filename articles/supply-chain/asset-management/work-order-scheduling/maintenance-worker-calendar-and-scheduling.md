@@ -3,28 +3,25 @@
 
 title: Maintenance worker calendar and scheduling
 description: This topic explains the maintenance worker calendar in relation to scheduling in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetWorker 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -40,7 +37,10 @@ When you schedule work orders, you create a schedule for maintenance workers, to
 
 The screenshot below shows an example of a maintenance worker who is related to a resource that uses the working time calendar "Production".
 
-![Figure 1](media/01-work-order-scheduling.png)
+![Figure 1.](media/01-work-order-scheduling.png)
 
 Calendar setup for tools and assets is not needed in relation to work order scheduling. The assumption is that tools and assets are available 24 hours a day for maintenance.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

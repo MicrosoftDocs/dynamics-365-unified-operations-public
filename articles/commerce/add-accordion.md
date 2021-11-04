@@ -4,11 +4,9 @@
 title: Accordion module 
 description: This topic covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -35,15 +32,13 @@ ms.dyn365.ops.version:
 
 This topic covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Accordion modules are container-like modules that are used to organize the information or modules on a page by providing a collapsible drawer-like capability. An accordion module can be used on any page.
 
 Inside every accordion module, one or more accordion item modules can be added. Each accordion item module represents a collapsible drawer. Inside every accordion item module, one or more modules can be added. There are no restrictions on the types of modules that can be added to an accordion item module.
 
 The following image shows an example of an accordion module that is used to organize information on a store's frequently asked questions (FAQ) page.
 
-![Example of an accordion module](./media/ecommerce-accordion.PNG)
+![Example of an accordion module.](./media/ecommerce-accordion.PNG)
 
 ## Accordion module properties
 
@@ -84,10 +79,13 @@ To add an accordion module to a FAQ page and set its properties in site builder,
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Container module](add-container-module.md)
 
 [Tab module](add-tab.md)
 
 [Text block module](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

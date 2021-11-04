@@ -4,11 +4,9 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: rezaassadi
-manager: AnnBe
-ms.date: 07/09/2020
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -36,11 +33,9 @@ ms.dyn365.ops.version: Release 10.0.11
 
 This topic provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 
-## Overview
-
 The following illustration shows an overview of Dynamics 365 Commerce components and corresponding versioning requirements and dependencies.
 
-<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/commerce-component-versioning.jpg" target="_blank">![Dynamics 365 Commerce Component versioning requirements and dependencies](./media/commerce-component-versioning.jpg)</a>
+<a href="/dynamics365/commerce/media/commerce-component-versioning.jpg" target="_blank">![Dynamics 365 Commerce Component versioning requirements and dependencies.](./media/commerce-component-versioning.jpg)</a>
 
 ## Component dependencies
 
@@ -50,15 +45,15 @@ To ensure compatibility between all Commerce components that are serviced and de
 
 - **Commerce headquarters and Finance and Operations apps must be on the same version as, or a newer version than, Commerce Scale Unit (both cloud and self-hosted).**
 
-    For example, if Commerce headquarters and Finance and Operations apps are on version 10.0.10, Commerce Scale Unit must be on version 10.0.10 or earlier (for example, 10.0.9 or 10.0.8).
+    For example, if Commerce headquarters and Finance and Operations apps are on version 10.0.22, Commerce Scale Unit must be on version 10.0.20 or earlier (for example, 10.0.19 or 10.0.18).
 
 - **Commerce Scale Unit must be on the same version as, or a newer version than, Modern Point of Sale (POS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
 
-    For example, if Commerce Scale Unit is on version 10.0.10, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.10 or earlier (for example, 10.0.9 or 10.0.8).
+    For example, if Commerce Scale Unit is on version 10.0.22, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.22 or earlier (for example, 10.0.21 or 10.0.20).
 
 - **Extension packages must be compiled against the same version as, or a newer version than, the target component that the extension applies to.**
 
-    For example, if the deployed Commerce Scale Unit is on version 10.0.10, the corresponding extension packages must be compiled against version 10.0.10 or earlier (for example, 10.0.10 or 10.0.9).
+    For example, if the deployed Commerce Scale Unit is on version 10.0.22, the corresponding extension packages must be compiled against version 10.0.22 or earlier (for example, 10.0.21 or 10.0.20).
 
 ### Quality updates
 
@@ -66,16 +61,16 @@ During quality updates, no specific versioning requirements must be followed for
 
 ## Current supported versions
 
-The following table describes the current supported versions of various Commerce components as of **July 1, 2020**.
+The following table describes the current supported versions of various Commerce components as of **October 22nd, 2021**.
 
-| Component | Latest available release | Latest available component version number | Earliest supported release | Earliest supported component version number |
+| Component | Latest available release (first release available in Sandbox) | Latest available component version number (first release available in Sandbox) | Earliest supported release | Earliest supported component version number |
 |---|---|---|---|---|
-| Finance and Operations apps | 10.0.12 | 10.0.12 | 10.0.9 | 10.0.9 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.12 | 9.22 | 10.0.9 | 9.19 |
-| Commerce Store Starter Kit (SSK) | 10.0.12 | 9.22 | 10.0.9 | 9.22 |
-| Commerce Scale Unit (self-hosted) | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
-| Modern POS | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
-| Hardware Station | 10.0.12 | 9.22 | 10.0.5 | 9.15 |
+| Finance and Operations apps | 10.0.22 | 10.0.22 | 10.0.18 | 10.0.18 |
+| Commerce Scale Unit (cloud-hosted) | 10.0.22 | 9.32 | 10.0.18 | 9.28 |
+| Commerce module library | 10.0.22 | 9.32 | 10.0.18 | 9.28 |
+| Commerce Scale Unit (self-hosted) | 10.0.22 | 9.32 | 10.0.14 | 9.24 |
+| Modern POS | 10.0.22 | 9.32 | 10.0.14 | 9.24 |
+| Hardware Station | 10.0.22 | 9.31 | 10.0.14 | 9.24 |
 
 ## One Version requirements
 
@@ -89,7 +84,7 @@ Customers can pause up to three consecutive updates across the following compone
 - Commerce Scale Unit (cloud-hosted)
 - Commerce SDK and associated local site configurations (such as modules, data actions, and themes)
 
-For example, customers who are currently on version 10.0.2 can pause updates to versions 10.0.3, 10.0.4, and 10.0.5. However, they must then update to version 10.0.6. In this scenario, after version 10.0.7 becomes available, version 10.0.2 is no longer supported.
+For example, customers who are currently on version 10.0.19 can pause updates to versions 10.0.20, 10.0.21, and 10.0.22. However, they must then update to version 10.0.23. In this scenario, after version 10.0.24 becomes available, version 10.0.19 is no longer supported.
 
 ### In-store components
 
@@ -99,7 +94,7 @@ Customers can pause up to seven consecutive updates across the following compone
 - Modern POS
 - Hardware Station
 
-For example, customers who are currently on version 10.0.2 can pause updates to versions 10.0.3 through 10.0.9. However, they must then update to version 10.0.10. In this scenario, after version 10.0.11 becomes available, version 10.0.2 is no longer supported.
+For example, customers who are currently on version 10.0.19 can pause updates to versions 10.0.20, 10.0.21, and 10.0.22. However, they must then update to version 10.0.23. In this scenario, after version 10.0.24 becomes available, version 10.0.19 is no longer supported.
 
 ## Additional resources
 
@@ -131,3 +126,6 @@ For more information about how to service individual components that are describ
 ### Extensibility and packing
 
 For more information about serviceability for extensions, see [Create deployable packages](./dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

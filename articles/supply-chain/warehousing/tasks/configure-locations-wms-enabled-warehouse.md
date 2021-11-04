@@ -4,11 +4,9 @@
 title: Configure locations in a WMS-enabled warehouse
 description: This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes). 
 author: perlynne
-manager: tfehr 
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,14 +15,13 @@ ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationP
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Configure locations in a WMS-enabled warehouse
 
@@ -38,7 +35,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 2. Click **New**.
 3. In the **Warehouse** field, type a value.
 4. In the **Name** field, type a value.
-5. In the **Site** field, type a value.
+5. In the **Site** field, select or type an existing site value.
 6. Expand the **Warehouse** section.
 7. Set the **Use warehouse management processes option** to Yes. This setting allows you to run advanced warehousing processes using warehouse work and mobile devices.
 8. Close the page.
@@ -177,3 +174,6 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 6. In the list, click the link in the selected row.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

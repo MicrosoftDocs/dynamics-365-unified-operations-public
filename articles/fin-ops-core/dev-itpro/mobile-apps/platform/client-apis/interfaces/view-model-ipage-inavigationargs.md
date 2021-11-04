@@ -1,27 +1,12 @@
 ---
-# required metadata
 title: NavigationArgs type
 description: NavigationArgs type
-author: shadykdc
-manager: AnnBe
+author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: rhaertle
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
+ms.author: rhaertle
 ---
 
 # NavigationArgs type
@@ -91,3 +76,6 @@ url: string (optional)
 If provided, this link is directly opened.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

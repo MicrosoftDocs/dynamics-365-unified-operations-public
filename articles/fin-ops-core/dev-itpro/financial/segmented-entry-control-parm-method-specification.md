@@ -3,12 +3,10 @@
 
 title: Parm methods for Segmented Entry controls
 description: Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
-author: robinarh
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -40,15 +37,15 @@ The Segmented Entry control has multiple parm methods that influence how the con
 
 | Method                               | Description                                                                                                                                                                                                                                                                                                                    |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parmDataAreaId                       | The company context that the control is running under. In most cases this is curext() but there are scenarios where forms can manually set different company contexts, surface records from different companies, etc. Forms need to evaluate which context the SEC should be running under the various conditions of the form. |
-| parmCurrency                         | This is used by Account controls for Main account validation. If this property is set, then mainAccount.checkAccountCurrency() is called during Main account validation.                                                                                                                                                       |
-| parmControlDate                      | This is used in validating segment values and in some internal queries. The default is to use the current date but there are scenarios when the form would want to set a custom date based on business requirements.                                                                                                           |
-| parmDimensionAutoCompleteFilter      | Adds additional restrictions in order to filter dimension autoComplete data.                                                                                                                                                                                                                                                   |
-| parmJournalName                      | This is used in enforcing Journal control.                                                                                                                                                                                                                                                                                     |
-| parmAccountTypeEnumType              | TBD                                                                                                                                                                                                                                                                                                                            |
-| parmDimensionAccountStorageUsageType | This allows the form or class to specify how the segmented entry control is being used on the form. This property is of type: DimensionAccountStorageUsage (an enumeration with values: Setup, Transactional, Alias).                                                                                                          |
-| parmTaxCode                          | This was unused and has been removed.                                                                                                                                                                                                                                                                                          |
-| parmAccountType                      | TBD                                                                                                                                                                                                                                                                                                                            |
+| parmDataAreaId                       | The company context that the control is running under. In most cases, the context is `curext()` but there are scenarios where forms can manually set things like different company contexts and surface records from different companies. Forms need to evaluate which context the SEC should be running under the various conditions of the form. |
+| parmCurrency                         | This method is used by Account controls for Main account validation. If this property is set, then mainAccount.checkAccountCurrency() is called during Main account validation.                                                                                                                                                       |
+| parmControlDate                      | This method is used in validating segment values and in some internal queries. The default is to use the current date but there are scenarios when the form would want to set a custom date based on business requirements.    |
+| parmDimensionAutoCompleteFilter      | Adds additional restrictions to filter dimension auto-Complete data.                                                                     |
+| parmJournalName                      | This method is used in enforcing Journal control.                |
+| parmAccountTypeEnumType              |                                               |
+| parmDimensionAccountStorageUsageType | This method allows the form or class to specify how the segmented entry control is being used on the form. This property is of type: DimensionAccountStorageUsage (an enumeration with values: Setup, Transactional, Alias).                                                                                                          |
+| parmTaxCode                          | This method was unused and has been removed.                                             |
+| parmAccountType                      |  |
 | parmIncludeFinancialAccounts         | Correlates to the design-time property. For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                          |
 | parmIncludeTotalAccounts             | Correlates to the design-time property. For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                          |
 | parmIsDefaultAccount                 | Correlates to the design-time property. For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                          |
@@ -56,10 +53,7 @@ The Segmented Entry control has multiple parm methods that influence how the con
 | parmPostingType                      | Correlates to the design-time property.  For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                         |
 | parmValidateBlockedForManualEntry    | Correlates to the design-time property.  For more information, see the Segmented Entry control Metadata Specification.                                                                                                                                                                                                         |
 
-
-
-Additional resources
---------
+## Additional resources
 
 [Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
@@ -69,5 +63,4 @@ Additional resources
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
 
-
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

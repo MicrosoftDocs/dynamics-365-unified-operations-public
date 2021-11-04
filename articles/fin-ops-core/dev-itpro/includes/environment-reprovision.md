@@ -9,7 +9,7 @@ If you copy a database between environments, Commerce capabilities in the destin
 If you are moving a database to a sandbox UAT or production environment, you must [Initialize Commerce Scale Unit](../deployment/Initialize-Retail-Channels.md) after the database movement operation is complete. The Commerce Scale Unit's association from the source environment will not copy over to the destination environment. 
 
 ### Synchronize Commerce self-service installers
-To be able to access Commerce self-service installers in HQ, you must [Synchronize self-service installers](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers) after the database movement operation is complete.
+To be able to access Commerce self-service installers in HQ, you must [Synchronize self-service installers](../../../commerce/dev-itpro/synchronize-installers.md) after the database movement operation is complete.
 
 > [!IMPORTANT]
 > The Environment re-provisioning step has now been fully automated as part of database movement operations, and no longer needs to be run manually. The Environment re-provisioning tool is still available in the Asset Library and may be used in certain situations to mitigate error conditions. 
@@ -23,3 +23,7 @@ To run the Environment re-provisioning tool on the destination environment, run 
 5. Monitor the progress of the package deployment.
 
 For more information about how to apply a deployable package, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md). For more information about how to manually apply a deployable package, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+
+### Re-activate POS devices
+
+If you use point of sale (POS) devices, after you import a database you must activate the POS devices again. Previously activated devices in the destination environment will no longer function. For more information, see [Point of sale device activation](../../../commerce/dev-itpro/retail-device-activation.md).

@@ -4,11 +4,9 @@
 title: Display charges for a manufactured item
 description: The constant costs of a manufactured item reflect the operation setup times and the components that have a constant quantity or a constant scrap amount.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274483
 ms.assetid: 6f5b851b-c5a7-43ef-b380-0d316667c1ef
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: aevengir
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 
@@ -44,3 +41,6 @@ The charges for a manufactured item are always included in the item's unit cost 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

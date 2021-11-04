@@ -3,28 +3,25 @@
 
 title: Maintenance workers and worker groups
 description: This topic explains maintenance workers and worker groups in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -69,3 +66,6 @@ You can also create maintenance worker groups and associate maintenance workers 
 6. If a resource group should be related to the selected maintenance worker group, select **Copy from resource group**. In the **Group** field, select the resource group to copy calendar settings from. Then, in the **Worker group** field, select the worker group to copy the resource group's calendar settings to. This step is relevant only if you want maintenance workers to use the calendar that is related to a resource (work center) during work order scheduling.
 
     The field on the **Details** FastTab shows the number of maintenance workers that have been set up on the selected maintenance worker group.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Posting definition examples
 description: This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
-author: ShylaThompson
-manager: AnnBe
+author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15772
 ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -133,3 +130,6 @@ In this example, any account that is part of Account Structure - P&L matches the
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Fixed asset revaluation groups
 description: This topic provides information about fixed asset revaluation groups for Spain.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: AssetRevaluationGroup, AssetBookTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264994
 ms.search.region: Spain
@@ -96,3 +93,6 @@ You can set up a revaluation group in the **Revaluation groups** page. In the up
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Plan for one-time vendors in the public sector
 description: This article explains how to prepare to import and create multiple one-time vendors and invoices. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableL
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27251
 ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
@@ -103,8 +100,7 @@ The following table show the fields that the import file must contain. Each fiel
 ## What do I do next?
 After you’ve set up the prerequisites that you require, see [One-time vendors in the public sector](one-time-vendors-public-sector.md).
 
-Additional resources
---------
+## Additional resources
 
 [One-time vendors in the public sector](one-time-vendors-public-sector.md)
 
@@ -112,3 +108,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

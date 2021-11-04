@@ -4,11 +4,9 @@
 title: Prerequisites for a standard cost conversion
 description: This topic discusses tasks to perform before you run a standard cost conversion. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: InventStdCostConv
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50891
 ms.assetid: 73af66cf-c924-45be-837a-a648dbd05a31
@@ -58,3 +55,6 @@ Before you run a standard cost conversion, follow these steps:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
