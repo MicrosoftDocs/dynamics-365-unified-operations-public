@@ -48,35 +48,35 @@ After installing the Power Platform Tools extension, you can create a new projec
 2. In the **Get started** dialog, select **Create a new project**.
 3. In the **Create a new project** dialog, search for and select **Power Platform Solution Template**, and select **Next**.
   
-  ![Select the Power Platform Solution Template](../media/businessevents_SelectSolutionTemplate.png)
+    ![Select the Power Platform Solution Template](../media/businessevents_SelectSolutionTemplate.png)
 
 4. In the **Configure your new project** dialog, enter a project name, select the location where you want the solution file saved, and select **Create**.
 5. In the **Configure Microsoft Power Platform Solution** dialog, for **Solution Type to Configure**, select **Start from Dataverse**.
 
-  ![Configure Microsoft Power Platform Solution](../media/businessevents_ConfigurePowerPlatformSolution.png)
+    ![Configure Microsoft Power Platform Solution](../media/businessevents_ConfigurePowerPlatformSolution.png)
 
 6. In the **Power Platform Tools** dialog, under **Connect to Dataverse**:
-  - Select a **Deployment Type** of **Office 365**
-  - Select **Display list of available orgaizations**
-  - Select **Login** and enter the credentials to sign into the Dataverse environment linked to your Finance and Operations environment.
-  - Select the Power Platform environment you want to work with from the list of organizations, and select **Login**.
-  - Select **Next**.
+    - Select a **Deployment Type** of **Office 365**
+    - Select **Display list of available orgaizations**
+    - Select **Login** and enter the credentials to sign into the Dataverse environment linked to your Finance and Operations environment.
+    - Select the Power Platform environment you want to work with from the list of organizations, and select **Login**.
+    - Select **Next**.
 
-  ![Connect to Dataverse from Power Platform Tools](../media/businessevents_PowerPlatformToolsConnectToDataverse.png)
+    ![Connect to Dataverse from Power Platform Tools](../media/businessevents_PowerPlatformToolsConnectToDataverse.png)
 
 7. On the third step, **Select Solution**, select the Power Platform solution in which you want to create the event subscription. If you don't yet have a solution created, you can create one in the maker portal by following the steps in the [Create a solution](/powerapps/maker/data-platform/create-solution) documentation.
 
-  ![Select a solution in Power Platform Tools](../media/businessevents_PowerPlatformToolsSelectSolution.png)
+    ![Select a solution in Power Platform Tools](../media/businessevents_PowerPlatformToolsSelectSolution.png)
 
 8. Select **Done**.
 9. For the first step, **Select Items for Template**, on the **Visual Studio Template Selection Microsoft Power Platform** dialog, select **Add New Templates**.
 
-  ![Select items for template](../media/businessevents_PowerPlatformToolsSelectItemsForTemplate.png)
+    ![Select items for template](../media/businessevents_PowerPlatformToolsSelectItemsForTemplate.png)
 
 10. Under **Select Template Projects**, select **Add Plugin Project**, and select **Next**.
 11. In the **Plugins** field under **Assign project Names**, provide a name for the plug-in project. This will be the name of the Visual Studio project. It will also, by default, be the name of the assembly.
 
-  ![Create new items](../media/businessevents_PowerPlatformToolsCreateNewItems.png)
+    ![Create new items](../media/businessevents_PowerPlatformToolsCreateNewItems.png)
 
 12. Select **Done**.
 
@@ -96,7 +96,17 @@ Once setup is complete, you can begin writing code. You can create C# class libr
 ### Register a new step
 
 1. In Visual Studio, on the **View** menu, select **Power Platform Explorer**. The Power Platform Explorer shows a list of components from the Dataverse environment you selected during the development environment setup. This includes tables, choices, and event catalogs, among other components. 
-2. Under the **Event Catalog** node, expand **Finance and Operations**.
+2. Under the **Event Catalog** node, expand **Finance and Operations**. 
+
+    Under the Finance and Operations node there is a list of catalogs that are available in the Dynamics 365 ERP Virtual Entity solution in the selected Power Platform environment. Under each catalog there is a list of the virtual entities that have been generated on the environment for that category, and the data events that are available for each of the virtual entities (Created, Updated, and Deleted). If you don't see any catalogs under the Finance and Operations node, you may need to generate the virtual entities needed for your solution. See [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities) for more information on generating virtual entities in your Dataverse environment. After enabling the virtual entities needed for your solution, select the **Refresh** action on the Power Platform Explorer to get the entities to display in the list.
+
+    Under each catalog, under the **Global** node, you will find all Finance and Operations business events that have been activated for the category.
+
+3. Under the **Human resources** catalog, right-click the **OnExternalCreated** data event for the **Worker (mserp) (mserp_hcmworkerentity)** entity, and select **Add Plugin**.
+
+    ![Add plugin for OnExternalCreated event of Worker entity](../media/businessevents_RegisterWorkerPlugin.png)
+
+4. In the **Register New Step** dialog
 
 
 ## Deploy the plug-in
@@ -106,3 +116,8 @@ You can now deploy your plug-in to the Power Platform solution. to do this, in t
 ## Troubleshooting
 
 If the deployment fails, you can troubleshoot by turning on verbose logging. 
+
+1. On the **Tools** menu, select **Options**.
+2. In the **Options** dialog, expand the **Power Platform Tools** node, and select **General**.
+3. Select **Display Detailed Log Data** and **(Diagnostics) Capture Detailed Dataverse Communications Log**.
+4. Select **OK**.
