@@ -88,3 +88,21 @@ Dataverse assemblies need to be signed. You can either set up a self-signed key 
 2. On the **Signing** tab, mark the **Sign the assembly** checkbox.
 3. In the **Choose a strong name key file** drop-down list, select **New**.
 4. Enter a name and password for the key, and select **OK**.
+
+## Subscribe to a Finance and Operations event
+
+Once setup is complete, you can begin writing code. You can create C# class library that runs business logic in Dataverse when a Finance and Operations business event or data event occurs to which the plug-in is subscribed. In this example, each time a new worker record is created in Finance and Operations, our plug-in will update the new worker record to set the anniversary date to today's date.
+
+### Register a new step
+
+1. In Visual Studio, on the **View** menu, select **Power Platform Explorer**. The Power Platform Explorer shows a list of components from the Dataverse environment you selected during the development environment setup. This includes tables, choices, and event catalogs, among other components. 
+2. Under the **Event Catalog** node, expand **Finance and Operations**.
+
+
+## Deploy the plug-in
+
+You can now deploy your plug-in to the Power Platform solution. to do this, in the **Solution Explorer**, right-click the project and select **Deploy**.
+
+## Troubleshooting
+
+If the deployment fails, you can troubleshoot by turning on verbose logging. 
