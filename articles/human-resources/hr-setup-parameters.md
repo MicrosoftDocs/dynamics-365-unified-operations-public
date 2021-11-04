@@ -70,7 +70,7 @@ The settings on the **General** tab define the appearance of information about a
 
 The settings on the **Recruitment** tab define the document types used for correspondence automatically sent to applicants. You can also indicate the recruitment project used for unsolicited applications.
 
-The period defined in the **Recruitment project aging** determines which recruitment projects are included on the **Aging projects** tile in the **Recruitment management** workspace. The period defined for the application deadline warning is used to display recruitment projects that are approaching their application deadline on the **Application deadline approaching** tile in the **Recruitment** workspace.
+The period that is defined in **Recruitment project aging** determines which recruitment projects are included on the **Aging projects** tile in the **Recruitment management** workspace. The period that is defined for the application deadline warning is used to show recruitment projects that are approaching their application deadline on the **Application deadline approaching** tile in the **Recruitment** workspace.
 
 For more information about recruiting, see [Recruit job candidates](hr-personnel-recruit.md).
 
@@ -112,14 +112,14 @@ On the FMLA tab, you set FMLA eligibility requirements and FMLA entitlement hour
 
 ## Employee self service
 
-The settings on the **Employee self service** tab affect how the **Employee self service** appears to employees. On this tab, you can:
+The settings on the **Employee self service** tab affect how **Employee self service** appears to employees. On this tab, you can complete the following tasks:
 
 - Enter a name for the **Employee self service** workspace
 - Select which information a manager can enter for employees
 - Add useful links for employees
 - Restrict employees from adding or editing business contact details. For more information, see [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md).
 
-For more information about setting up **Employee self service**, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
+For more information about how to set up **Employee self service**, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
 
 ![Employee self service tab.](./media/hr-setup-parameters-employee-self-service.png)
 
@@ -133,13 +133,13 @@ The settings on the **Manager self service** tab affect what managers see in **M
 - Views of exiting workers
 - Useful links for managers
 
-For more information about setting up **Manager self service**, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
+For more information about how to set up **Manager self service**, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
 
 ![Manager self service tab.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## Benefits management
 
-On the **Benefits management** tab, you can configure email options for Benefits management. For information about setting up and using Benefits management, see [Benefits management overview](hr-benefits-management-overview.md).
+On the **Benefits management** tab, you can configure email options for Benefits management. For information about how to set up and use Benefits management, see [Benefits management overview](hr-benefits-management-overview.md).
 
 ![Benefits management tab.](./media/hr-setup-parameters-benefits-management.png)
 
