@@ -29,3 +29,15 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic provides an overview of the QR code printing functionality that is available for Saudi Arabia.
 
+## Overview
+
+QR code for Saudi Arabia contains the following information:
+
+| Sequence | Field                                                  | Comment |
+|----------| -------------------------------------------------------|---------|
+| 1        | Company name                                           |  |
+| 2        | Company VAT registration number                        |  |
+| 3        | Date and time of transaction                           |  |
+| 4        | Total receipt amount (including value-added tax (VAT)) |  |
+| 5        | Total amount of VAT included in receipt                |  |
+
