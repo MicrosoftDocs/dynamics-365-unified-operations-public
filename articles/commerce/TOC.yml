@@ -1414,7 +1414,7 @@
           href: localizations/rus-customer-information.md 
       - name: Saudi Arabia
         items:
-        - name: Print QR code in receipt for Saudi Arabia
+        - name: Generate QR codes and print them on receipts for Saudi Arabia
           href: localizations/emea-sau-qr-code.md
       - name: Sweden
         items:
