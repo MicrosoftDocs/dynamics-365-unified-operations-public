@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The **Personnel management** workspace includes a vast amount of content. It contains personnel movements, it tracks employee changes, open positions, address changes, expiring records, and analytics, and provides links to specific information. This topic provides detailed information about each part of the workspace.
+The **Personnel management** workspace includes a vast amount of content. It contains personnel movements, tracks employee changes, open positions, address changes, expiring records, and analytics, and provides links to specific information. This topic provides detailed information about each part of the workspace.
 
 ## Activity tab
 
@@ -90,7 +90,7 @@ The **Recent hires** section lists workers who have a start date in the recent p
 By default, the list shows workers who were hired in the last seven days. To change this setting, on the **Human Resources parameters** page, on the **General** tab, define a time frame for **Recent hires**. The data in the **Recent hires** section can be shown for a specific number of days, months, or years. For example, to view the list of workers who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**.
 
 > [!NOTE]
-> The settings on the **Human Resources parameters** page are company specific. Therefore, the time frame that you view recent hires for can vary by company. For example, in the USMF company, you might want to view all new hires from the last seven days. However, in the USSI company, you want to view all new hires from the last 14 days. In this case, open the **Human Resources parameters** page in each company, and set the parameters as required.
+> The settings on the **Human Resources parameters** page are company specific. Therefore, the time frame that you view recent hires for can vary by company. For example, in the USMF company, you might want to view all new hires from the last seven days. However, in the USSI company, you might want to view all new hires from the last 14 days. In this case, open the **Human Resources parameters** page in each company, and set the parameters as required.
 
 If the manager doesn't appear on the card, a position hasn't been assigned for the worker.
 
