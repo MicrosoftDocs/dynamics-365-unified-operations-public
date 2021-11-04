@@ -19,7 +19,7 @@ ms.search.scope: Human Resources
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheelo
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
