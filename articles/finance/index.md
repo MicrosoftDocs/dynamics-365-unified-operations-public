@@ -67,11 +67,19 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 ### Country/region functionality
 
-Country/region regulations affect tax setup and other areas of financial management. Refer to the [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) section of our help content to learn about country/region-specific functionality.
+Country/region regulations affect tax setup and other areas of financial management. To learn about country/region-specific functionality, see [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json).
 
 ### Additional content
 
-Supply chain management functionality covers parts of the procure-to-pay process that includes requisitioning, ordering, receiving, invoicing and paying for the goods and services your organization purchases. Refer to the [Supply Chain Management home page](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) for information about the capabilities for managing purchases, inventory, and manufacturing.
+Supply chain management functionality covers parts of the procure-to-pay process that include:
+
+    - Requisitioning
+    - Ordering 
+    - Receiving
+    - Invoicing
+    - Paying for the goods and services your organization purchases 
+    
+For information about the capabilities for managing purchases, inventory, and manufacturing, see the [Supply Chain Management home page](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
 
 ## eLearning courses
 
