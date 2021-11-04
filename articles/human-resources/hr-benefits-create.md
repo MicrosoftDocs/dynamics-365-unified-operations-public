@@ -32,29 +32,30 @@ This task will show you how to create benefit elements which will be used when c
 
 
 ## Create benefit elements
-1. Go to **Human resources > Benefits > Setup > Benefit elements**.
-2. Click **New**.
-3. In the **Type** field, enter the name of the type of benefit you are creating..
-4. In the **Description** field, type a value.
+
+1. Go to **Human resources \> Benefits \> Setup \> Benefit elements**.
+2. Select **New**.
+3. In the **Type** field, enter the name of the type of benefit that you're creating.
+4. In the **Description** field, enter a value.
 5. In the **Concurrent enrollment** field, select an option.
-    * To restrict employees' ability to enroll in multiple medical plans, select **One enrollment per type**.  
+
+    To restrict employees' ability to enroll in multiple medical plans, select **One enrollment per type**.
+
 6. In the **Payroll category** field, select an option.
-7. Click the **Plans** tab.
-8. Click **New**.
-9. In the **Plan** field, type a value.
-10. In the **Description** field, type a value.
-11. In the **Type** field, enter or select a value.
-12. In the **Payroll impact** field, select an option.
-13. Click **Save**.
+7. On the **Plans** tab, select **New**.
+8. In the **Plan** field, enter a value.
+9. In the **Description** field, enter a value.
+10. In the **Type** field, enter or select a value.
+11. In the **Payroll impact** field, select an option.
+12. Select **Save**.
 
 ## Create a benefit
-1. Go to **Human resources > Benefits > Benefits**.
-2. Click **New** to open the drop dialog.
-3. In the **Plan** field, enter or select a value.
+
+1. Go to **Human resources \> Benefits \> Benefits**.
+2. Select **New**.
+3. In the drop-down dialog box, in the **Plan** field, enter or select a value.
 4. In the **Option** field, enter or select a value.
 5. In the **Effective** field, enter a date and time.
-6. Click **Create benefit**.
-
-
+6. Select **Create benefit**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
