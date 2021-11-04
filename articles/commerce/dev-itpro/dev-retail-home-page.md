@@ -123,6 +123,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Retail SDK
 
+- [Migrate to the Commerce SDK](retail-sdk/migrate-commerce-sdk.md)
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
@@ -161,6 +162,5 @@ This page lists the resources that are available for IT pros and developers who 
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
 - [Create Commerce payment packaging for Finance and Operations deployment](payment-connector-package.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
