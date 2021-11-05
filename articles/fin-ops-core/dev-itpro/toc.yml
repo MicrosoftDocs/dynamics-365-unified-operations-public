@@ -1172,6 +1172,8 @@
         items:
         - name: Business events overview
           href: business-events/home-page.md
+        - name: Managing business event endpoints
+          href: business-events/managing-business-event-endpoints.md
         - name: Application business events
           href: business-events/app-business-events.md
         - name: Workflow business events
@@ -1198,12 +1200,16 @@
             href: business-events/how-to/how-to-eventgrid.md
           - name: Business events and Azure Service Bus
             href: business-events/how-to/how-to-servicebus.md
+          - name: Business events and Azure Service Bus Queue
+            href: business-events/how-to/how-to-servicebus-queue.md
           - name: Business events and workflow approvals
             href: business-events/how-to/how-to-workflow.md
           - name: Business events and Microsoft Forms Pro 
             href: business-events/how-to/FormsPro.md
           - name: Business events and Azure Event Hubs
-            href: business-events/how-to/event-hub.md 
+            href: business-events/how-to/event-hub.md
+          - name: Subscribing to events in Dataverse
+            href: business-events/how-to/how-to-dataverse-events.md
           - name: Business events in financial period close
             href: business-events/how-to/period-close.md          
       - name: Add-ins
