@@ -782,7 +782,7 @@ If a minus sign precedes the value of the *\_number* parameter, the substring wi
 ```xpp
 subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
 subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".
-subStr("abcdef"),2,99) //Returns the string "cdef".
+subStr("abcdef",2,99) //Returns the string "bcdef".
 subStr("abcdef",2,3) //Returns the string "bcd".
 subStr("abcdef",2,-3); //Returns the string "ab".
 ```
