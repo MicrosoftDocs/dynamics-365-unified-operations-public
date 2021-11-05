@@ -27,13 +27,33 @@ A demand forecast is calculated for an item and its dimensions only if the item 
 
 An item and its dimensions must be part of only one item allocation key if the item allocation key is used during forecast creation.
 
-To add a stock keeping unit (SKU) to an item allocation key, go to **Master planning \> Setup \> Demand forecasting \> Item allocation keys**. Select **Assign items** on the Action Pane to open a page where you can assign items to allocation keys.
+To create item allocation keys and add a stock keeping units (SKU) to them:
+
+1. Go to **Master planning \> Setup \> Demand forecasting \> Item allocation keys**.
+1. Either select an item allocation key from the list pane to select **New** from the Action Pane to create a new one. Make the following settings in the header for your new or selected key:
+    - **Item allocation key** – Enter a unique name for the key.
+    - **Name** – Enter a descriptive name for the key.
+1. Do one of the following to add or remove items to the selected item allocation key:
+    - On the **Item allocation** FastTab, use the **New** and **Delete** buttons on the toolbar to add or remove items as needed. For each row, select the **Item number** and then assign dimension values in the other columns as needed. Select **Display dimensions** on the toolbar to change the set of dimension columns shown in the grid. <!-- KFM: What does "Percent" mean? -->
+    - If you want to add a large number of items to the key, select **Assign items** on the Action Pane to open a page where you can find and assign multiple items to the selected key.
 
 ## Intercompany planning groups
 
-Demand forecasting generates cross-company forecasts. In Dynamics 365 Supply Chain Management, companies that are planned together are grouped into one intercompany planning group. To specify, per company, which item allocation keys should be considered for demand forecasting, associate an item allocation key with the intercompany planning group member by going to **Master planning \> Setup \> Intercompany planning groups**.
+Demand forecasting generates cross-company forecasts. In Dynamics 365 Supply Chain Management, companies that are planned together are grouped into the same intercompany planning group. To specify, per company, which item allocation keys should be considered for demand forecasting, associate an item allocation key with the intercompany planning group member.
 
-By default, if no item allocation keys are assigned to intercompany planning group members, a demand forecast is calculated for all items that are assigned to all item allocation keys from all companies. Additional filtering options for companies and item allocation keys are available on the **Generate statistical baseline forecast** page.
+To set up your intercompany planning groups:
+
+1. Go to **Master planning \> Setup \> Intercompany planning groups**.
+1. Either select a planning key from the list pane to select **New** from the Action Pane to create a new one. Make the following settings in the header for your new or selected group:
+    - **Item allocation key** – Enter a unique name for the key.
+    - **Description** – Enter a descriptive name for the key.
+1. On the **Intercompany planning group members** FastTab, use the toolbar buttons to add rows for each company (legal entity) that should be part of the group. For each row, make the following settings:
+    - **Legal entity** – Select the name of a company (legal entity) that is a member of the selected group.
+    - **Scheduling sequence** – <!-- KFM: Description needed -->
+    - **Master plan** – <!-- KFM: Description needed -->
+    - **Automatic copy to static plan** – <!-- KFM: Description needed -->
+    - **Automatic copy to dynamic plan** – <!-- KFM: Description needed -->
+1. By default, if no item allocation keys are assigned to intercompany planning group members, a demand forecast is calculated for all items that are assigned to all item allocation keys from all companies. Additional filtering options for companies and item allocation keys are available on the **Generate statistical baseline forecast** dialog (**Master planning \> Forecasting ]> Demand forecasting \> Generate statistical baseline forecast**). To specify item allocation keys for a company in the selected intercompany planning group, select the company and then select **Item allocation keys** on the **Intercompany planning group members** FastTab toolbar.
 
 Review the number of items that are forecasted. Unnecessary items might cause increased costs when you use Microsoft Azure Machine Learning. <!-- KFM: It isn't clear whether this paragraph is relevant for this section. -->
 
