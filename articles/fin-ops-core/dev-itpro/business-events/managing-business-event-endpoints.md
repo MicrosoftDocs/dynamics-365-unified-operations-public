@@ -32,7 +32,7 @@ Endpoints let you manage the destinations to which business events are sent. Bus
 
 | Endpoint type | Tutorial |
 | ------------- | -------- |
-| Azure Service Bus Queue | [Business events and Azure Service Bus](./how-to/how-to-servicebus) |
+| Azure Service Bus Queue | [Business events and Azure Service Bus](./how-to/how-to-servicebus-queue) |
 | Azure Service Bus Topic | [Business events and Azure Service Bus](./how-to/how-to-servicebus) |
 | Azure Event Grid | [Business events and Azure Event Grid](./how-to/how-to-eventgrid) |
 | Azure Event Hub | [Business events and Azure Event Hubs](./how-to/event-hub)  |
