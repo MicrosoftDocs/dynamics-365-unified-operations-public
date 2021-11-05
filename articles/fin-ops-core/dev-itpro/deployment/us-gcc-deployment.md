@@ -9,21 +9,25 @@ For information , see [Dynamics 365 US Government](/power-platform/admin/microso
 
 ## Onboarding
 
-To onboard an implementation project, see [Onboard an implementation project](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md).
+- To onboard an implementation project, see [Onboard an implementation project](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md).
 
 please note the following differences between Government CLoud and Public Cloud:
 
 - To access LCS use the LCS GOV URL [Dynamics Lifecycle Services GCC](https://gov.lcs.microsoftdynamics.us)
 
-## Provisioning
+**Environment Deployment
 
-Customers in China have two options from which to select how they want to access Finance and Supply Chain Management apps.
+- **For Cloud hosted environment, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
+- You must complete the Resource Manager onboarding process for your connectors, see [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](../../../fin-ops-core/dev-itpro/deployment/arm-onbarding-us-goverment).
+- To deploy 
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Supply Chain Management services in China. This option provides a consistent application experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
-- Services operated by Microsoft – This option is for Finance and Supply Chain Management customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Microsoft 365 and/or Dynamics 365 can co-exist on the tenant.
 
 For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](/power-platform/admin/create-environment).
+
+ > [!NOTE]
+    > For US government Microsoft Dynamics Lifecycle Services (LCS) projects, only Azure US government–specific Azure subscriptions are supported.
+  
 
 ## Features not available
 
