@@ -18,7 +18,7 @@ Once the initial onboarding steps are complete in Lifecycle Services (LCS), proc
 
 ## Environment Deployment
 
-After completing project onboarding as described above you may review additonal capabilities of LCS at [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md) and then proceed to environment deployment. 
+After completing project onboarding as described above you may review additional capabilities of LCS at [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md) and then proceed to environment deployment. 
 
 - For deployment of Microsoft managed environments via LCS, follow the instructions at [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience)  
 
@@ -34,7 +34,7 @@ After completing project onboarding as described above you may review additonal 
 
 Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services in GCC. For information about feature availability, see [Business Applications US Government Feature Availability](https://aka.ms/BAPFunctionalParity).
 
--   **Azure DevOps Services** will be unavailable in **Goverment cloud**. However, use of Azure DevOps on-premises or public Azure DevOps services will be available.
+-   **Azure DevOps Services** will be unavailable in **Government cloud**. However, use of Azure DevOps on-premises or public Azure DevOps services will be available.
 
 
     
@@ -43,20 +43,20 @@ Due to certain technical dependencies, the following features listed will not be
 
 ## Frequently asked questions
 
-## Can i use public Azure DevOps with Finance and Suuply Chain in GCC?
-Yes, you can use public Azure DevOps services or Azure DevOpsServer if you don't have a mandate for a FEDRAMP certified solution.
+## Can i use public Azure DevOps with Finance and Supply Chain in GCC?
+Yes, you can use public Azure DevOps services if you don't have requirements for a FEDRAMP certified solution or Azure DevOps Server.
 
-## Can I deploy a Cloud Hosted Environment Tier-1 development box on an Azure commercial subsciption ?
+## Can I deploy a Cloud Hosted Environment Tier-1 development box on an Azure commercial subscription ?
 No, in LCS GOV you must use an Azure Government subscription to deploy a cloud hosted environment.
 
 
 ## What can I do if i need a package from the shared asset library that is not available in LCS GOV?
-You can download the same package from the public [Dynamics Lifecycle Sevices](https://lcs.dynamics.com) shared asset library or your partner can help you download the package.
+You can download the same package from the public [Dynamics Lifecycle Services](https://lcs.dynamics.com) shared asset library or your partner can help you download the package.
 
-## Is Code uprdage tool available In GCC?
-No. Not at this time, however you can use create a prospect project in public [Dynamics Lifecycle Sevices](https://lcs.dynamics.com) and use the code upgrade tool but you will not be able to deploy environments in prospect projects . 
+## Is Code upgrade tool available In GCC?
+No. Not at this time, however you can use create a prospect project in public [Dynamics Lifecycle Services](https://lcs.dynamics.com) and use the code upgrade tool but you will not be able to deploy environments in prospect projects . 
 
-## Can my partner open a support ticket on my belhaf?
+## Can my partner open a support ticket on my behalf?
 Yes, but be aware that if your partner uses a non GCC identity the support ticket will be directed to the public support queue, we do recommend opening support ticket by a user with GCC identity.
 
 
