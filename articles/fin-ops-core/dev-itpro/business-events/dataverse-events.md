@@ -36,13 +36,13 @@ It is possible to subscribe to Finance and Operations business events and data e
 
 ### Install Power Platform Tools
 
-The Power Platform Tools for Visual Studio is an extension with code templates for Dataverse plug-ins, as well as a Dataverse explorer that shows tables, business events, and virtual entity data events. The explorer allows you to register plugins directly from within Visual Studio, and the C# code for the plug-in can be deployed into Dataverse directly from the solution.
+Power Platform Tools for Visual Studio is an extension with code templates for Dataverse plug-ins, as well as a Dataverse explorer that shows tables, business events, and virtual entity data events. The explorer allows you to register plug-ins directly from within Visual Studio, and the C# code for the plug-in can be deployed into Dataverse directly from the solution.
 
 To install the Power Platform Tools extension, follow the steps outlined in [Install Power Platform Tools](/powerapps/developer/data-platform/tools/devtools-install).
 
 ### Create a project
 
-After installing the Power Platform Tools extension, you can create a new project.
+After installing the Power Platform Tools extension, create a new project.
 
 1. Open Microsoft Visual Studio 2019 or later.
 2. In the **Get started** dialog, select **Create a new project**.
@@ -91,27 +91,45 @@ Dataverse assemblies need to be signed. You can either set up a self-signed key 
 
 ## Subscribe to a Finance and Operations event
 
-Once setup is complete, you can begin writing code. You can create C# class library that runs business logic in Dataverse when a Finance and Operations business event or data event occurs to which the plug-in is subscribed. In this example, each time a new worker record is created in Finance and Operations, our plug-in will update the new worker record to set the anniversary date to today's date.
+Once setup is complete, you can begin writing code. You can create a C# class library that runs business logic in Dataverse when a Finance and Operations business event or data event occurs to which the plug-in is subscribed.
 
 ### Register a new step
 
 1. In Visual Studio, on the **View** menu, select **Power Platform Explorer**. The Power Platform Explorer shows a list of components from the Dataverse environment you selected during the development environment setup. This includes tables, choices, and event catalogs, among other components. 
 2. Under the **Event Catalog** node, expand **Finance and Operations**. 
 
-    Under the Finance and Operations node there is a list of catalogs that are available in the Dynamics 365 ERP Virtual Entity solution in the selected Power Platform environment. Under each catalog there is a list of the virtual entities that have been generated on the environment for that category, and the data events that are available for each of the virtual entities (Created, Updated, and Deleted). If you don't see any catalogs under the Finance and Operations node, you may need to generate the virtual entities needed for your solution. See [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities) for more information on generating virtual entities in your Dataverse environment. After enabling the virtual entities needed for your solution, select the **Refresh** action on the Power Platform Explorer to get the entities to display in the list.
+    Under the Finance and Operations node there is a list of catalogs that are available in the Dynamics 365 ERP Virtual Entities solution in the selected Power Platform environment. Under each catalog there is a list of the virtual entities that have been generated on the environment for that category, and the data events that are available for each of the virtual entities (Created, Updated, and Deleted). If you don't see any catalogs under the Finance and Operations node, you may need to generate the virtual entities needed for your solution. See [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities) for more information on generating virtual entities in your Dataverse environment. After enabling the virtual entities needed for your solution, select the **Refresh** action on the Power Platform Explorer to get the entities to display in the list.
 
     Under each catalog, under the **Global** node, you will find all Finance and Operations business events that have been activated for the category.
 
-3. Under the **Human resources** catalog, right-click the **OnExternalCreated** data event for the **Worker (mserp) (mserp_hcmworkerentity)** entity, and select **Add Plugin**.
+3. Right-click the data event under the virtual entity you want to trigger your business logic, and select **Add Plugin**.
 
     ![Add plugin for OnExternalCreated event of Worker entity](../media/businessevents_RegisterWorkerPlugin.png)
 
-4. In the **Register New Step** dialog
+4. In the **Register New Step** dialog: 
+    - Change the **Class Name** to the name of the class you want to create.
+    - In the **Event Pipeline Stage of Execution** drop-down list, select **PostOperation**.
+    - For **Execution Mode**, select **Asynchronous**.
+    - Select **Register New Step**.
 
+    > [!NOTE]
+    > The **PreValidation** and **PreOperation** stages of execution and the **Synchronous** execution mode are not currently supported for virtual entities. 
+
+    ![Register a new step for your plug-in](../media/businessevents_PowerPlatformToolsRegisterNewStep.png)
+
+With the new step registered, a new class is generated with the base code for the plug-in. You can then write the custom business logic where indicated by the **TODO** in the **ExecuteCdsPlugin** method of the generated class. You can then build your solution and deploy the plug-in to your environment.
 
 ## Deploy the plug-in
 
 You can now deploy your plug-in to the Power Platform solution. to do this, in the **Solution Explorer**, right-click the project and select **Deploy**.
+
+You can verify the deployment completed successfully by viewing the plug-in assembly in Power Apps maker portal. Navigate to the **Plug-in assemblies** menu of the Power Platform solution to which you deployed the plug-in. You will also see the registered plug-in step on the **Plug-in steps** menu.
+
+![Plug-in assemblies in the Power Platform maker portal](../media/businessevents_PowerPlatformToolsPluginAssemblies.png)
+
+You can also verify that the new endpoint displays correctly on the **Endpoints** tab, and the new event displays on the **Active events** tab of the **Business events** page in the Finance and Operations application.
+
+![Dataverse events in Finance and Operations](../media/businessevents_PowerPlatformToolsFinOpsEvents.png)
 
 ## Troubleshooting
 
