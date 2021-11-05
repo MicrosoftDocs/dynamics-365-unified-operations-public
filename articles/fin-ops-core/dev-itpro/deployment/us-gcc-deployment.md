@@ -9,19 +9,21 @@ For information , see [Dynamics 365 US Government](/power-platform/admin/microso
 
 ## Onboarding
 
-- To onboard an implementation project, see [Onboard an implementation project](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md).
+To perform initial onboarding steps for an implementation project in Lifecycle Services (LCS), follow the instructions detailed at [Onboard an implementation project](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md). However, please note the following URL should be used in place of the Lifecycle Services specified there.
 
-please note the following differences between Government CLoud and Public Cloud:
+ > [!NOTE]
+    > The URL to access Lifecycle Services (LCS) for the US Government Community Cloud is [Dynamics Lifecycle Services GCC](https://gov.lcs.microsoftdynamics.us)
 
-- To access LCS use the LCS GOV URL [Dynamics Lifecycle Services GCC](https://gov.lcs.microsoftdynamics.us)
+Once the initial onboarding steps are complete in Lifecycle Services (LCS), proceed to follow the instructions at [Project onboarding](../../../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md). Again, be sure to substitute the URL above for LCS.
 
-**Environment Deployment
+## Environment Deployment
+
+After completing project onboarding as described above you may review additonal capabilities of LCS at [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md) and then proceed to environment deployment. 
+
+- For deployment of Microsoft managed environments via LCS, follow the instructions at [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience)  
 
 - **For Cloud hosted environment, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
 - You must complete the Resource Manager onboarding process for your connectors, see [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](../../../fin-ops-core/dev-itpro/deployment/arm-onbarding-us-goverment).
-- To deploy 
-
-
 
 For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](/power-platform/admin/create-environment).
 
@@ -73,17 +75,8 @@ Due to certain technical dependencies, the following features listed will not be
 
 ## Additional resources
 
-- [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
-- [Support for Dynamics 365 Finance and Operations apps operated by 21Vianet in China](../lifecycle-services/21vianet-support.md)
-- [Model-driven apps in Dynamics 365 - operated by 21Vianet in China](/dynamics365/customer-engagement/admin/datacenter/about-microsoft-cloud-china)
-- [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
-- [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
-- [Dynamics 365 Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
-- [Service terms for Dynamics 365 Lifecycle Services](https://www.21vbluecloud.com/dynamics365/d365-lcs/)
-- [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
-- [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
-- [Azure China 21Vianet](/azure/china/china-welcome)
-- [Business applications availability in China – operated by 21Vianet in China](/power-platform/admin/business-applications-availability-china)
+- 	[Lifecycle Services (LCS) User guide](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)  
+-  [Cloud deployment overview](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
