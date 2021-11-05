@@ -48,12 +48,12 @@ After installing the Power Platform Tools extension, create a new project.
 2. In the **Get started** dialog, select **Create a new project**.
 3. In the **Create a new project** dialog, search for and select **Power Platform Solution Template**, and select **Next**.
   
-    ![Select the Power Platform Solution Template](../media/businessevents_SelectSolutionTemplate.png)
+    ![Select the Power Platform Solution Template](../../media/businessevents_SelectSolutionTemplate.png)
 
 4. In the **Configure your new project** dialog, enter a project name, select the location where you want the solution file saved, and select **Create**.
 5. In the **Configure Microsoft Power Platform Solution** dialog, for **Solution Type to Configure**, select **Start from Dataverse**.
 
-    ![Configure Microsoft Power Platform Solution](../media/businessevents_ConfigurePowerPlatformSolution.png)
+    ![Configure Microsoft Power Platform Solution](../../media/businessevents_ConfigurePowerPlatformSolution.png)
 
 6. In the **Power Platform Tools** dialog, under **Connect to Dataverse**:
     - Select a **Deployment Type** of **Office 365**
@@ -62,23 +62,25 @@ After installing the Power Platform Tools extension, create a new project.
     - Select the Power Platform environment you want to work with from the list of organizations, and select **Login**.
     - Select **Next**.
 
-    ![Connect to Dataverse from Power Platform Tools](../media/businessevents_PowerPlatformToolsConnectToDataverse.png)
+    ![Connect to Dataverse from Power Platform Tools](../../media/businessevents_PowerPlatformToolsConnectToDataverse.png)
 
 7. On the third step, **Select Solution**, select the Power Platform solution in which you want to create the event subscription. If you don't yet have a solution created, you can create one in the maker portal by following the steps in the [Create a solution](/powerapps/maker/data-platform/create-solution) documentation.
 
-    ![Select a solution in Power Platform Tools](../media/businessevents_PowerPlatformToolsSelectSolution.png)
+    ![Select a solution in Power Platform Tools](../../media/businessevents_PowerPlatformToolsSelectSolution.png)
 
 8. Select **Done**.
 9. For the first step, **Select Items for Template**, on the **Visual Studio Template Selection Microsoft Power Platform** dialog, select **Add New Templates**.
 
-    ![Select items for template](../media/businessevents_PowerPlatformToolsSelectItemsForTemplate.png)
+    ![Select items for template](../../media/businessevents_PowerPlatformToolsSelectItemsForTemplate.png)
 
 10. Under **Select Template Projects**, select **Add Plugin Project**, and select **Next**.
 11. In the **Plugins** field under **Assign project Names**, provide a name for the plug-in project. This will be the name of the Visual Studio project. It will also, by default, be the name of the assembly.
 
-    ![Create new items](../media/businessevents_PowerPlatformToolsCreateNewItems.png)
+    ![Create new items](../../media/businessevents_PowerPlatformToolsCreateNewItems.png)
 
 12. Select **Done**.
+
+For additional information on creating a project with Power Platform Tools, see [Quickstart: Create a Power Platform Tools project](/powerapps/developer/data-platform/tools/devtools-create-project)
 
 ### Sign the assemblies
 
@@ -104,7 +106,7 @@ Once setup is complete, you can begin writing code. You can create a C# class li
 
 3. Right-click the data event under the virtual entity you want to trigger your business logic, and select **Add Plugin**.
 
-    ![Add plugin for OnExternalCreated event of Worker entity](../media/businessevents_RegisterWorkerPlugin.png)
+    ![Add plugin for OnExternalCreated event of Worker entity](../../media/businessevents_RegisterWorkerPlugin.png)
 
 4. In the **Register New Step** dialog: 
     - Change the **Class Name** to the name of the class you want to create.
@@ -115,7 +117,7 @@ Once setup is complete, you can begin writing code. You can create a C# class li
     > [!NOTE]
     > The **PreValidation** and **PreOperation** stages of execution and the **Synchronous** execution mode are not currently supported for virtual entities. 
 
-    ![Register a new step for your plug-in](../media/businessevents_PowerPlatformToolsRegisterNewStep.png)
+    ![Register a new step for your plug-in](../../media/businessevents_PowerPlatformToolsRegisterNewStep.png)
 
 With the new step registered, a new class is generated with the base code for the plug-in. You can then write the custom business logic where indicated by the **TODO** in the **ExecuteCdsPlugin** method of the generated class. You can then build your solution and deploy the plug-in to your environment.
 
@@ -125,11 +127,11 @@ You can now deploy your plug-in to the Power Platform solution. to do this, in t
 
 You can verify the deployment completed successfully by viewing the plug-in assembly in Power Apps maker portal. Navigate to the **Plug-in assemblies** menu of the Power Platform solution to which you deployed the plug-in. You will also see the registered plug-in step on the **Plug-in steps** menu.
 
-![Plug-in assemblies in the Power Platform maker portal](../media/businessevents_PowerPlatformToolsPluginAssemblies.png)
+![Plug-in assemblies in the Power Platform maker portal](../../media/businessevents_PowerPlatformToolsPluginAssemblies.png)
 
 You can also verify that the new endpoint displays correctly on the **Endpoints** tab, and the new event displays on the **Active events** tab of the **Business events** page in the Finance and Operations application.
 
-![Dataverse events in Finance and Operations](../media/businessevents_PowerPlatformToolsFinOpsEvents.png)
+![Dataverse events in Finance and Operations](../../media/businessevents_PowerPlatformToolsFinOpsEvents.png)
 
 ## Troubleshooting
 
