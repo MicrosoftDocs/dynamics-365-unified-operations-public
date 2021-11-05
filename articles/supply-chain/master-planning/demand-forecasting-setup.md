@@ -199,7 +199,7 @@ Use the following procedure to create a new machine learning workspace.
 1. Select **Create** on the toolbar to launch the create wizard.
 1. Work through the wizard following the instructions on your screen. Keep the following points in mind as you work:
     - Use default settings unless otherwise recommended in the other points of this list.
-    - Be sure to select the geographic region that matches the region where your instance of Supply Chain Management is deployed. Otherwise, some of your data may pass through region boundaries. For details, see this [privacy note](#) <!--KFM: link needed -->.
+    - Be sure to select the geographic region that matches the region where your instance of Supply Chain Management is deployed. Otherwise, some of your data may pass through region boundaries. See also the [privacy notice](#privacy) provided later in this topic.
     - Use dedicated resources such as resource group, storage account, container registry, Azure Key Vault, networking resources, and so on.
     - On the **Set up Azure Machine Learning Service connection parameters** page of the wizard, you must provide a storage account name. Use an account that is dedicated to demand forecasting. Demand forecasting input and output data will be stored in this storage account.
 
@@ -259,7 +259,9 @@ Use the following procedure to connect your Supply Chain Management environment 
     - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard on your Azure workspace (see also [Set up your machine learning workspace on Azure](#ml-workspace)).
     - **Pipeline endpoint address** – Enter the URL of the pipeline REST endpoint for your Azure Machine Learning Service. This is the pipeline you created as the last step when you [set up your machine learning workspace on Azure](#ml-workspace). To get the pipeline URL, sign in to your Azure portal, select **Pipelines** on the navigator and open the **Pipeline** tab. Select the pipeline endpoint named **TriggerDemandForecastGeneration** in the list; then copy the REST endpoint shown.
 
-<!--KFM: Paste privacy notice here. -->
+## <a name="privacy"></a>Privacy notice
+
+When you select Azure Machine Learning Service as your forecast generation strategy, Dynamics 365 Supply Chain Management automatically sends your Customer Data for historical demand such as aggregated quantities, product names and their product dimensions, shipping and receiving locations, customer identifiers as well as forecast parameters to the geographic region where your machine learning workspace and its linked storage account are located, for the purpose of forecasting future demands. Azure Machine Learning Service may be in a different geography than where Dynamics 365 Supply Chain Management is deployed. Some users can control whether this functionality is enabled by selecting the forecast generation strategy on the Demand forecasting parameters form.
 
 ## Additional resources
 
