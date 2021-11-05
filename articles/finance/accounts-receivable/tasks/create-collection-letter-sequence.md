@@ -3,7 +3,7 @@
  
 title: Create a collection letter sequence
 description: Use this procedure to create a collection letter sequence. 
-author: mikefalkner
+author: abruer
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
