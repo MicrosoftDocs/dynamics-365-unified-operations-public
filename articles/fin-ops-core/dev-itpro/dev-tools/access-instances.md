@@ -251,8 +251,8 @@ This process might take a while. The process is completed when the cmd.exe windo
 
 ## Frequently asked questions
 
-### Environment is in failed state with error message "Updated AAD Tenant is missing reply URL configuration"
-This indicates that Tier 1/customer-managed environment is configured with an Azure AD tenant which is different than the tenant used at the time of deployment (possibly points to an update done via Admin user provisioning tool).  The updated tenant currently being used, is missing reply URL configuration required for successful login into the environment. This is the reason why the environment is in failed state.  It is recommended to delete this environment and redeploy via a user from the tenant that the environment will be used with.
+### Environment is in a failed state and the error message is "Updated AAD Tenant is missing reply URL configuration"
+This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant that is different than the tenant used at the time of deployment. (Perhaps an update was done using the Admin user provisioning tool.  The updated tenant currently being used is missing the reply URL configuration required for successful login into the environment. The missing configuration causes the error. You should delete the environment and redeploy with a user from the tenant that the environment will be used with.
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
@@ -267,7 +267,8 @@ To facilitate cloud-hosted deployments, we recommend that partners follow this s
 ### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application."
 As was stated earlier, it's very important that Finance and Operations environments be deployed under the correct Azure AD tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Azure AD tenant settings aren't supported after deployment.
 
-### How can I fix my existing environment where my environment is in the failed state or I am getting sign-in errors?
+### How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?
+
 If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
 
 If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin.
