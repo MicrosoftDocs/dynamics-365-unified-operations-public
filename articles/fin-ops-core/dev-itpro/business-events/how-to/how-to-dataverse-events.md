@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.22
 [!include[banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Enabling the Power Platform integration is prerequisite for subscribing to Finance and Operations business events and data events in Dataverse, as outlined in this topic. For more information on enabling the Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](./power-platform/enable-power-platform-integration).
+> Enabling the Power Platform integration is prerequisite for subscribing to Finance and Operations business events and data events in Dataverse, as outlined in this topic. For more information on enabling the Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](../../power-platform/enable-power-platform-integration).
 
 It is possible to subscribe to Finance and Operations business events and data events from Dataverse by registering plug-ins and SDK steps on the events in Dataverse. This topic outlines using the **Power Platform Tools** extension for Visual Studio to register a plug-in for the Finance and Operations event. The subscriptions are then displayed in the business event catalog in the Finance and Operations application with any other subscriptions. This endpoint then functions as other endpoints in the Finance and Operations business event catalog.
 
