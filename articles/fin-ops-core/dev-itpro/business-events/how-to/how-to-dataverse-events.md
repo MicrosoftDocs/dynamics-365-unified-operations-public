@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 10.0.22
 ---
 
 # Subscribing to events in Dataverse
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > Enabling the Power Platform integration is prerequisite for subscribing to Finance and Operations business events and data events in Dataverse, as outlined in this topic. For more information on enabling the Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](./power-platform/enable-power-platform-integration).
@@ -100,7 +100,7 @@ Once setup is complete, you can begin writing code. You can create a C# class li
 1. In Visual Studio, on the **View** menu, select **Power Platform Explorer**. The Power Platform Explorer shows a list of components from the Dataverse environment you selected during the development environment setup. This includes tables, choices, and event catalogs, among other components. 
 2. Under the **Event Catalog** node, expand **Finance and Operations**. 
 
-    Under the Finance and Operations node there is a list of catalogs that are available in the Dynamics 365 ERP Virtual Entities solution in the selected Power Platform environment. Under each catalog there is a list of the virtual entities that have been generated on the environment for that category, and the data events that are available for each of the virtual entities (Created, Updated, and Deleted). If you don't see any catalogs under the Finance and Operations node, you may need to generate the virtual entities needed for your solution. See [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities) for more information on generating virtual entities in your Dataverse environment. After enabling the virtual entities needed for your solution, select the **Refresh** action on the Power Platform Explorer to get the entities to display in the list.
+    Under the Finance and Operations node there is a list of catalogs that are available in the Dynamics 365 ERP Virtual Entities solution in the selected Power Platform environment. Under each catalog there is a list of the virtual entities that have been generated on the environment for that category, and the data events that are available for each of the virtual entities (Created, Updated, and Deleted). If you don't see any catalogs under the Finance and Operations node, you may need to generate the virtual entities needed for your solution. See [Enable Microsoft Dataverse virtual entities](../../power-platform/enable-virtual-entities) for more information on generating virtual entities in your Dataverse environment. After enabling the virtual entities needed for your solution, select the **Refresh** action on the Power Platform Explorer to get the entities to display in the list.
 
     Under each catalog, under the **Global** node, you will find all Finance and Operations business events that have been activated for the category.
 
