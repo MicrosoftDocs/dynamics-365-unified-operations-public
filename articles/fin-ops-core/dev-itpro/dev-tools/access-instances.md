@@ -252,7 +252,7 @@ This process might take a while. The process is completed when the cmd.exe windo
 ## Frequently asked questions
 
 ### Environment is in a failed state and the error message is "Updated AAD Tenant is missing reply URL configuration"
-This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant that is different than the tenant used at the time of deployment. (Perhaps an update was done using the Admin user provisioning tool.  The updated tenant currently being used is missing the reply URL configuration required for successful login into the environment. The missing configuration causes the error. You should delete the environment and redeploy with a user from the tenant that the environment will be used with.
+This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant that is different than the tenant used at the time of deployment. (Perhaps an update was done using the Admin user provisioning tool.) The updated tenant currently being used is missing the reply URL configuration required for successful login into the environment. The missing configuration causes the error. You should delete the environment and redeploy with a user from the tenant that the environment will be used with.
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
