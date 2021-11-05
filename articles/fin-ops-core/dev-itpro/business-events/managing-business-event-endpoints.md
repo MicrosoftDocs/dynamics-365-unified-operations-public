@@ -39,11 +39,11 @@ Endpoints let you manage the destinations to which business events are sent. Bus
 | Azure Blob Storage | -- |
 | HTTPS | -- |
 | Microsoft Power Automate | [Business events and Microsoft Power Automate](./how-to/how-to-flow) |
-| Dataverse | -- |
+| Dataverse | [Subscribing to events in Dataverse](./how-to/how-to-dataverse-events) |
 
 Endpoints can be created for these messsaging and event brokers out of the box. Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
 
-The Azure-based endpoints must be in the customer's Azure subscription. For example, if Event Grid is used as an endpoint, the ednpoint must be in the customer's Azure subscription.
+The Azure-based endpoints must be in the customer's Azure subscription. For example, if Event Grid is used as an endpoint, the endpoint must be in the customer's Azure subscription.
 
 The Finance and Operations application doesn't provision the endpoints. The endpoints must be created separately and provided to the application. The application then sends events to the endpoints that are provided. Customers may incur additional costs if they use these endpoints in their Azure subscription.
 
@@ -52,10 +52,10 @@ The Finance and Operations application doesn't provision the endpoints. The endp
 > [!IMPORTANT]
 > Enabling the Power Platform integration is prerequisite for subscribing to Finance and Operations business events and data events as outlined in this section. For more information on enabling the Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](./power-platform/enable-power-platform-integration).
 
-With the Power Platform integration enabled is it possible to subscribe to Finance and Operations business events and data events from Dataverse. This enables the following:
+With the Power Platform integration enabled it is possible to subscribe to Finance and Operations business events and data events from Dataverse. This enables the following:
 
   - A consistent behavior across events from multiple applications in Dataverse.
-  - Dataverse solutions application lifecycle management (ALM) to consistently consume events from Finance and Operations apps.
+  - Dataverse solution application lifecycle management (ALM) to consistently consume events from Finance and Operations apps.
   - Plug-ins and SDK steps to be registered on Finance and Operations apps events in Dataverse.
 
 When the Power Platform integration is enabled for a Finance and Operations apps environment, endpoints created for business events are synchronized with the linked Power Platform environment for endpoint types that are supporteded in Dataverse, enabling the endpoint's use in the Power Platform. When the endpoints are synchronized, business events sent from Finance and Operations apps are proxied through Dataverse to the endpoint.
@@ -103,8 +103,8 @@ The business event registration itself will also be listed in the **Business eve
 
 Finance and Operations apps events can be subscribed to directly in Dataverse using the Dataverse tool set like the the **Power Platform Tools** extension for Visual Studio. See [Install Power Platform Tools](/powerapps/developer/data-platform/tools/devtools-install) for more information on the extension. These subscriptions will display in the **Business event catalog** in Finance and Operations apps.
 
-Certain attributes of service endpoints in Dataverse, like name and description, can be updated. Such updates will reflect in Finance and Operations as well. However, updates that would change the service endpoint type, like changing from a servie bus topic to a service bus queue, which Dataverse would normally allow, would be prevented if the service endpoint is used with Finance and Operations events. This is for design simplicity and consistency as Finance and Operations does not allow these updates to endpoints once created.
+Certain attributes of service endpoints in Dataverse, like name and description, can be updated. Such updates will reflect in Finance and Operations as well. However, updates that would change the service endpoint type, like changing from a service bus topic to a service bus queue, which Dataverse would normally allow, would be prevented if the service endpoint is used with Finance and Operations events. This is for design simplicity and consistency as Finance and Operations does not allow these updates to endpoints once created.
 
 Once created, Dataverse does not allow deletion of service endpoints if it is being used. This is true, as well, for service endpoints used by Finance and Operations events. An attempt to delete the endpoint will result in an error, and deletion is prevented. 
 
-For more information on subscribing to Finance and Operations business events in Dataverse, see [Subscribing to events in Dataverse](./dataverse-events).
+For more information on subscribing to Finance and Operations business events in Dataverse, see [Subscribing to events in Dataverse](./how-to/how-to-dataverse-events).
