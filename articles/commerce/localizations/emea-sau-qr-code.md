@@ -83,6 +83,11 @@ For more information about how to work with receipt formats, see [Set up and des
 
 ### Enable Commerce runtime extensions
 
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used with this localization funtionality. You must use the previous version of the Retail SDK on a developer VM in LCS.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+
 #### Development environment
 
 Follow these steps to set up a development environment so that you can test and extend the localization functionality:
