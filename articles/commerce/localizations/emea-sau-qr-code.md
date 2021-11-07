@@ -44,11 +44,12 @@ In a store that is linked to a legal entity with the primary address in Saudi Ar
 > [!NOTE]
 > For create customer order transactions, the total receipt amount is calculated as the sum of total amounts of all transaction lines with the Carry-out delivery mode.
 
-The QR code can be validated using the tools provided by Zakat, Tax and Customs Authority (ZATCA). For more details on the electronic invoicing requirements and QR code validation capabilities, visit the [E-Invocing portal by ZATCA](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx).
+The QR code can be validated using the tools provided by Zakat, Tax and Customs Authority (ZATCA). For more details on the electronic invoicing requirements and QR code validation capabilities, visit the [E-Invoicing portal by ZATCA](https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx).
 
 ## Set up QR codes
 
-In order to be able to generate QR codes and print them on receipts for Saudi Arabia, you need to make the following steps:
+To generate QR codes and print them on receipts for Saudi Arabia, you need to make the following steps:
+
 1. Configure custom fields so that they can be used in receipt formats for sales receipts.
 1. Configure receipt formats.
 1. Enable Commerce runtime extensions.
@@ -84,9 +85,9 @@ For more information about how to work with receipt formats, see [Set up and des
 ### Enable Commerce runtime extensions
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used with this localization funtionality. You must use the previous version of the Retail SDK on a developer VM in LCS.
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used with this localization functionality. You must use the previous version of the Retail SDK on a developer VM in LCS.
 >
-> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> Supporting the new independent packaging and extension model for localization functionality is planned for later versions.
 
 #### Development environment
 
