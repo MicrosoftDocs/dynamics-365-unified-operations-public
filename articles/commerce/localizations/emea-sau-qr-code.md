@@ -73,3 +73,33 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **QR code (SA)** – This field prints the QR code in the receipt.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
+
+### Enable extensions
+
+#### Development environment
+
+Follow these steps to set up a development environment so that you can test and extend the localization functionality:
+
+1. Find the extension configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config** and can be found in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config** and can be found under the local CRT client broker location.
+
+1. Register the CRT change in the extension configuration file, as shown in the following example.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSaudiArabia" />
+    ```
+
+#### Production environment
+
+To create deployable packages that contain Commerce components, and to apply those packages in a production environment, follow these steps.
+
+1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** package configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
+
+    ``` xml	
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSaudiArabia" />
+    ```
+
+1. Open the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
