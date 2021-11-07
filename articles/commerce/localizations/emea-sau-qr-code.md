@@ -48,6 +48,11 @@ The QR code can be validated using the tools provided by Zakat, Tax and Customs 
 
 ## Set up QR codes
 
+In order to be able to generate QR codes and print them on receipts for Saudi Arabia, you need to make the following steps:
+1. Configure custom fields so that they can be used in receipt formats for sales receipts.
+1. Configure receipt formats.
+1. Enable Commerce runtime extensions.
+
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
@@ -76,7 +81,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
-### Enable extensions
+### Enable Commerce runtime extensions
 
 #### Development environment
 
