@@ -1,4 +1,4 @@
-# Move NF-e XML as attachments #
+# Move NF-e XML files as attachments #
 
 In the Brazilian localization, use this feature when it is necessary to free up database space consumed by the XML files created during issuing of electronic fiscal documents
 (NF-e), which are stored into Microsoft Dynamics 365 Finance and Supply Chain Management database.
