@@ -244,6 +244,14 @@ For the specific steps, see the "Get started" documentation that is available fo
 
 3. Select an invoice in the grid, and then select **Inquire** \> **Submission details**.
 
+## Download electronic document file
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
+2. In the **Document type** field, select the table that contains the invoices.
+3. Select an invoice in the grid, and then select **Electronic document** \> **Download file**. An archive with the electronic document file will be suggested for downloading.
+
+> [!NOTE]
+    > The .
 
 ## Related topics
 
