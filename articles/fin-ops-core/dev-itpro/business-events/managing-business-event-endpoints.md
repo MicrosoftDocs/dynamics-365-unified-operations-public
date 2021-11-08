@@ -4,7 +4,7 @@
 title: Managing business event endpoints
 description: This topic provides information on managing endpoints for Finance and Operations apps business events.
 author: jaredha
-ms.date: 11/03/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -32,10 +32,10 @@ Endpoints let you manage the destinations to which business events are sent. Bus
 
 | Endpoint type | Tutorial |
 | ------------- | -------- |
-| Azure Service Bus Queue | [Business events and Azure Service Bus](./how-to/how-to-servicebus-queue) |
-| Azure Service Bus Topic | [Business events and Azure Service Bus](./how-to/how-to-servicebus) |
-| Azure Event Grid | [Business events and Azure Event Grid](./how-to/how-to-eventgrid) |
-| Azure Event Hub | [Business events and Azure Event Hubs](./how-to/event-hub)  |
+| Azure Service Bus Queue | [Business events and Azure Service Bus](how-to/how-to-servicebus-queue.md) |
+| Azure Service Bus Topic | [Business events and Azure Service Bus](how-to/how-to-servicebus.md) |
+| Azure Event Grid | [Business events and Azure Event Grid](how-to/how-to-eventgrid.md) |
+| Azure Event Hub | [Business events and Azure Event Hubs](how-to/event-hub.md)  |
 | Azure Blob Storage | -- |
 | HTTPS | -- |
 | Microsoft Power Automate | [Business events and Microsoft Power Automate](./how-to/how-to-flow) |
