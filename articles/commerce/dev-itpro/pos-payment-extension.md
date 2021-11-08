@@ -44,6 +44,11 @@ You can override the following request handlers from the POS side to customize t
 - PaymentTerminalExecuteTaskRequestHandler
 - PaymentTerminalRefundPaymentRequestHandler
 - PaymentTerminalVoidPaymentRequestHandler
+- PaymentTerminalCancelOperationRequest
+- PaymentTerminalEnquireGiftCardBalancePeripheralRequest
+- PaymentTerminalAddBalanceToGiftCardPeripheralRequest
+- PaymentTerminalActivateGiftCardPeripheralRequest
+- PaymentTerminalBeginTransactionRequest
 
 The POS runtime checks the extension manifest to see if there are any extensions for these request handlers. If there are extensions, then the runtime loads the extended requests and executes the overridden requests. In the extension project, you can override these requests, add your own implementation to call the custom payment providers, and then update the response based on the status that is returned by your providers. When you override a request, you are overriding only the core logic. After all your custom logic has run, you send the updated response that you received from Hardware station (payment device/connector) to POS. All the standard workflow is handled by the POS, so that you do not need to worry about how to add, void, or decline the payment line and conclude the transaction based on the response.
 
