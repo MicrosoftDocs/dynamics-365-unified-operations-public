@@ -4,7 +4,7 @@
 title: Business events and Azure Service Bus Queue
 description: This topic explains how to configure a Microsoft Azure Service Bug Queue endpoint.
 author: jaredha
-ms.date: 11/03/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
