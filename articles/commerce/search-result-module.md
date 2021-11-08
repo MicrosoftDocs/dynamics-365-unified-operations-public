@@ -125,6 +125,9 @@ To configure the **Populate product attributes with inventory level** job in Com
 > [!NOTE]
 > For consistent inventory level calculation across PDPs and product list pages on your e-commerce site, be sure to select the same quantity option for both the **Inventory availability based on** setting in Commerce headquarters and the **Inventory level based on** setting in Commerce site builder. For more information about inventory settings in site builder, see [Apply inventory settings](inventory-settings.md).
 
+> [!NOTE]
+> For products using different units of measure for sales and inventory modules. A unit conversion rule from sales unit to inventory unit should exist. Also, only Standard conversions will be honored - Product-specific Intra-class and Inter-class conversions will be ignored.
+
 ### Configure the new product attribute
 
 After the **Populate product attributes with inventory level** job is run, you must configure the newly created product attribute on the e-commerce site where you want to enable inventory awareness for the search results module.
