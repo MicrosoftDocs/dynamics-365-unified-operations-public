@@ -48,7 +48,7 @@ the data in the lake fresh by continuously inserting, updating and deleting data
 that changed. There is no need to manage exports or to monitor the service.
 There is no additional burden added to your Finance and Operations workloads.
 
-Data is stored in the lake organized in a rich folder structure using Common
+Data is stored in the lake organized in a folder structure using Common
 Data Model (CDM) format. CDM format provides additional metadata such as table
 structure, descriptions and data types in a machine readable JSON format such
 that downstream tools understand the semantics of the data.
@@ -75,10 +75,12 @@ from Microsoft with built-in disaster recovery. Features supported include
 Also see preview features below
 
 >!NOTE:
->preview features are not complete, but are made available on a “preview”
+>Preview features are not complete, but are made available on a “preview”
 >basis so customers can get early access and provide feedback. Preview features
 >may have limited or restricted functionality, are not meant for production use,
->and may be available only in selected geographic areas.
+>and may be available only in selected geographic areas. 
+>
+>By enabling preview features, you agree to **Supplemental Terms of Use** described [here] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms)
 >
 
 ## Enable near real time data changes (preview)
