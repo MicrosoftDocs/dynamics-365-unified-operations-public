@@ -94,7 +94,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
     - In the **Subject** field, enter a title for the email receipts.
     - Select the **Has body** check box.
     - Select **Edit** to upload your template HTML. At a minimum, your template instance must contain the following code: 
- 
+
     ``` xml
     <pre>
     %message%
@@ -109,6 +109,10 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
     - **1070** – Channel configuration
     - **1090** – Registers
     - **1110** – Global configuration
+
+## Include bar codes or QR codes in emailed receipts
+
+You can add a bar code or QR code to an emailed receipt that represents the receipt id for that receipt. See the [Add a QR code or bar code to a receipt email](add-qr-code-barcode-email.md#add-a-qr-code-or-bar-code-to-a-receipt-email) help topic for instructions. 
 
 ## MPOS transactions
 
