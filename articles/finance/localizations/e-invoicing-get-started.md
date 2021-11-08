@@ -248,10 +248,10 @@ For the specific steps, see the "Get started" documentation that is available fo
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
 2. In the **Document type** field, select the table that contains the invoices.
-3. Select an invoice in the grid, and then select **Electronic document** \> **Download file**. An archive with the electronic document file will be suggested for downloading.
+3. Select an document in the grid, and then select **Electronic document** \> **Download file**. An archive with the electronic document file will be suggested for downloading.
 
 > [!NOTE]
-    > The .
+    > To enable file downloading, **Export result** option must be turned on for the related action in RCS, in the Electronic invoicing feature setup.
 
 ## Related topics
 
