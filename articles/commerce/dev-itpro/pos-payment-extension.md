@@ -4,7 +4,7 @@
 title: Point of sale (POS) payment extension
 description: This topic describes how to implement the core payment logic in the payment device or payment connector using the Hardware station APIs.
 author: mugunthanm
-ms.date: 09/01/2017
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -243,7 +243,7 @@ export default class PaymentTerminalCapturePaymentRequestHandlerExt extends Paym
 }
 ```
 
-After implementing the request logic, you need to update the manifest.json with the extension information so that POS loads the extension. Any requests that you override are specified in the manifest. If you didn’t override any of the standard requests, then you do not need to specify anything in the manifest. The example of the manifest shows two overriden requests.
+After implementing the request logic, you need to update the manifest.json with the extension information so that POS loads the extension. Any requests that you override are specified in the manifest. If you didn’t override any of the standard requests, then you do not need to specify anything in the manifest. The example of the manifest shows two overridden requests.
 
 ```typescript
 {
