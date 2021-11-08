@@ -78,6 +78,7 @@ The following table shows the electronic invoicing features that are generally a
 | Spain          | Spanish electronic invoice (ES)      | Sales invoices and project invoices |
 | Europe         | PEPPOL electronic invoice            | PEPPOL sales invoices and project invoices |
 | Europe         | PEPPOL vendor invoice                | PEPPOL import vendor invoices |
+| Saudi Arabia   | Saudi Arabian electronic invoice (SA)| Sales invoices and project invoices |
 
 ### Preview features
 
@@ -201,6 +202,11 @@ The following lists show the ER format configurations that are available for the
 
 - Sales invoice (ES)
 - Project invoice (ES)
+
+#### Saudi Arabian (SA) electronic invoice: Sales and project invoices for Saudi Arabia
+
+- Sales e-invoice (SA)
+- Project e-invoice (SA)
 
 In addition to the ER format configurations that are available out of the box to use with the Electronic Invoicing service, you can also create your own ER format configurations. However, the format configurations that are created to use with Electronic Invoicing features don't support direct reference to Finance or Supply Chain Management tables or any of the corresponding metadata. Only references to the ER model mapping are supported.
 
