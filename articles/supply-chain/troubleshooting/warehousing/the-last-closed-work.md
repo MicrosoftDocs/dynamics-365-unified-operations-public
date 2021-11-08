@@ -12,7 +12,6 @@ ms.author: perlynne
 ms.search.validFrom: 2021-05-15
 ms.dyn365.ops.version: 10.0.18
 ---
-
 # The last closed work line must be a put
 
 Error code: WAX1285

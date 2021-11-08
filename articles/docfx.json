@@ -87,10 +87,10 @@
     "fileMetadata": {
       "search.app": {
         "finance/**/*.md": [
-          "Finance"
+          "FinanceAndOperations"
         ],
         "supply-chain/**/*.md": [
-          "SCM"
+          "FinanceAndOperations"
         ],
         "commerce/**/*.md": [
           "Commerce"

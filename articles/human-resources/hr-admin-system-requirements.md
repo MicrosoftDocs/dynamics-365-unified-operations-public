@@ -2,9 +2,9 @@
 # required metadata
 
 title: System requirements
-description: This article describes requirements for Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic lists the system requirements for Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and information about languages and localization for Human Resources data.
+This topic lists the system requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and information about languages and localization for Human Resources data.
 
 ## Supported web browsers
 
-Human Resources can run in any of the following web browsers that run on the specified operating systems: 
+Users can access Microsoft Dynamics 365 Human Resources using any of the following web browsers that run on the specified operating systems: 
 
 *   Microsoft Edge (latest publicly available version) on Windows 10
 *   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
@@ -44,14 +44,17 @@ Human Resources can run in any of the following web browsers that run on the spe
 
 To find the latest release for each web browser, go to the software manufacturer’s website. 
 
-> [!NOTE]
-> * To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. 
-> * The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
-> * To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
->   Network requirements
-> * Human Resources is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Human Resources. We recommend that you test network latency at [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
-> * Bandwidth requirements for Human Resources depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps).
-> 
+## Special considerations
+
+* To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension
+* The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
+* To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
+
+## Network requirements
+
+* Human Resources is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Human Resources. We recommend that you test network latency at [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
+* Bandwidth requirements for Human Resources depend on your scenario. Typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps).
+ 
 > [!WARNING]
 > Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a trial version of Human Resources.
 
@@ -68,6 +71,5 @@ You can download a PDF file of the countries, regions, and languages Human Resou
 > While the user interface is localized into other languages, all user data is stored in the language in which it was entered. You can create emails and templates in other languages, but data such as scheduling information is only available in English at this time.
 
 If you're a developer interested in creating country- or region-specific customizations, or in creating a solution for a country or region not currently supported by Microsoft, see [Globalization](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

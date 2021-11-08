@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business continuity and disaster recovery
-description: This topics describes the business continuity and disaster recovery that Microsoft provides for production instances of Microsoft Dynamics 365 SaaS applications if an Azure region-wide outage occurs.
+description: This topic describes the business continuity and disaster recovery that Microsoft provides for production instances of Microsoft Dynamics 365 SaaS applications if an Azure region-wide outage occurs.
 author: MicroSri
 ms.date: 07/13/2021
 ms.topic: article

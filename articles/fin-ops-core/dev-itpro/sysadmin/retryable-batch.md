@@ -3,13 +3,13 @@
 
 title: Enable automatic retries on batch jobs
 description: This topic describes how to enable automatic retries on batch jobs when transient failures occur.
-author: sarvanisathish
-ms.date: 06/21/2021
+author: matapg007
+ms.date: 09/09/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: matgupta
 ms.search.validFrom: 2021-05-31
 
 ---
@@ -90,3 +90,13 @@ A batch job that has a smaller transaction size reduces the amount of work that 
 ### What does idempotent mean for a batch job?
 
 In this context, *idempotent* means that a retry won't change or affect the overall result. For example, something should be done only one time and won't be done more than one time. Therefore, something that is done in the original run won't be done again during the retry.
+
+### What is the maximum number of retries that BatchRetryable supports, and what is the retry interval?
+
+**MaxRetryCount** specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a ready state so that it can be picked up again.
+
+The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
+
+### Can I change the maximum number of retries and the retry interval?
+
+The **BatchRetryable** interface enables transient SQL connection issues to be handled. It's mainly controlled by the framework. Customers can't update setting for **BatchRetryable**, such as the maximum number of retries and the retry interval.

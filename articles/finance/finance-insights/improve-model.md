@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Improve the prediction model (preview)
+title: Improve the prediction model
 description: This topic describes features that you can use to improve the performance of prediction models.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Improve the prediction model (preview)
+# Improve the prediction model
 
 [!include [banner](../includes/banner.md)]
 
@@ -80,6 +80,6 @@ The following field should not be selected for training:
 
 You can filter the invoices that are used for training by setting filter criteria for fields on the invoice or in the customer tables. For example, you can set a threshold to include only invoices where the total equals or exceeds a specific amount. Alternatively, you can exclude invoices that are associated with customers in a specific customer group.
 
-For more information on filtering your data, see [Create a prediction model](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
+For more information on filtering your data, see [Create a prediction model](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

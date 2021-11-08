@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 06/28/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,6 +27,7 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
@@ -71,6 +72,7 @@ To configure SharePoint storage, follow these steps.
 
 4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
+6. Optional: On the **General** tab, turn on **Open attachments in new window**. For more information, see the [Other configuration](#other-configuration) section later in this topic. 
 
 ### Troubleshooting SharePoint communication
 
@@ -123,10 +125,11 @@ Document preview (WOPI) will not work in environments with an IP safe list enabl
 
 ## Other configuration
 
-Here are some other configuration options to consider, although these options are rarely used:
+Here are some other configuration options to consider:
 
-- On the **Document management parameters** page, on the **General** tab, you can use the **Use Document Tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
+- On the **Document management parameters** page, on the **General** tab, you can use the **Use active document tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that when SharePoint is used as a document type, users can only upload a document up to a maximum file size of 262 megabytes. 
+- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider turning on this option especially if you are using SharePoint for storing attachments, as this will prevent the Finance and Operations user session from resetting when opening attachments. Note that this option is available starting in version 10.0.23. 
 - On the **Options** page (**Settings** \> **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments 
@@ -134,19 +137,6 @@ Here are some other configuration options to consider, although these options ar
 Document management appears to users as the **Attach** button at the top of most pages that contain data. When you select the **Attach** button (or when you use the corresponding keyboard shortcut, **Ctrl**+**Shift**+**A**), the **Attachments** page is opened in the context of the data source of the control that is currently selected on the page. This page shows all the attachments that are related to the corresponding data source. 
 
 The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
-
-### Showing related document attachments
-In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in the following ways. 
-
--  When the feature is enabled, the **Attachments** page no longer shows only attachments that are related to a single data source. Instead, users can see and access attachments from other data sources on the pages that are related to the active record. For this to occur, the data source must: 
-    -  Be directly related to the parent data source by means of an inner or outer join.
-    -  Be directly related to the parent data source by means of an active, delayed, or passive join with either 1:1 or 0:1 cardinality.
-
-    Note that this criteria excludes showing attachments from child collections (such as lines) when looking at attachments on the header record.  
-
-    The count of attachments on the **Attach** button also reflects this change. 
-
--  Users can move and copy attachments between the related data sources on the **Attachments** page.
 
 ## Document attachment history
 
@@ -322,5 +312,12 @@ To extract attachments, an Attachments entity must be built for a specific busin
 
 The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
 
+## Troubleshooting issues
+
+### Issue: When interacting with Document management or Electronic reporting, users receive an error similar to "Invalid length for a Base-64 char array or string"
+
+**Explanation**: Typically, this issue occurs because the token for the Office Web Apps Server is no longer valid.  
+
+**Fix**: The admin needs to select the **Token refresh** button to the right of the **Office Web Apps Server** field on the **Document management parameters** page under the **General** tab.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

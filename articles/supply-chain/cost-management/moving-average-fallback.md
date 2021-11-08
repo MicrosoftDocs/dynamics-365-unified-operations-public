@@ -21,10 +21,12 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Moving average fallback cost sequence
+
+[!include [banner](../includes/banner.md)]
 
 One way that you can calculate the cost of your inventory is by using a _moving average_. Up to three cost values can be associated with each inventory item:
 

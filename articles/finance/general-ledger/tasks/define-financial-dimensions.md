@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Define financial dimensions
-description: This task guide demonstrates adding an entity backed financial dimension and a custom financial dimension. 
+description: This procedure shows how to add an entity backed financial dimension and a custom financial dimension. 
 author: aprilolson
 ms.date: 06/25/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide demonstrates adding an entity backed financial dimension and a custom financial dimension.  The guide uses the USMF demo company.
+This procedure shows how to add an entity backed financial dimension and a custom financial dimension.  The guide uses the USMF demo company.
 
 
 ## Create an entity backed financial dimension

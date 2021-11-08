@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Create a collection letter sequence
-description: Use this task guide to create a collection letter sequence. 
-author: mikefalkner
+description: Use this procedure to create a collection letter sequence. 
+author: abruer
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Use this task guide to create a collection letter sequence. This task uses the USMF demo company.
+Use this procedure to create a collection letter sequence. This task uses the USMF demo company.
 
 1. In the Navigation pane, go to **Modules > Credit and collections > Setup > Set up collection letter sequence**.
 2. Click **New**.

@@ -3,7 +3,7 @@
 
 title: Operations scheduling options
 description: This topic describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
-author: ChristianRytt
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 198123
 ms.assetid: d680d7be-da64-4132-89fe-ad2fa59afb77
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

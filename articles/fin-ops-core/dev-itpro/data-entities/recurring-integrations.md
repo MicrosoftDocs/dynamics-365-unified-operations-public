@@ -3,9 +3,8 @@
 
 title: Recurring integrations
 description: This topic describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
-author: Sunil-Garg
-ms.date: 12/12/2019
-
+author: peakerbl
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +21,7 @@ ms.custom: 24821
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -110,7 +109,7 @@ In the message body, you can the pass the data as a memory stream.
 **Example**
 
 ```Console
-POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
+POST https://usncax1aos.cloud.onebox.dynamics.com/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
 ```
 
 To get the activity ID, on the **Manage scheduled data jobs** page, in the **ID** field, copy the globally unique identifier (GUID).

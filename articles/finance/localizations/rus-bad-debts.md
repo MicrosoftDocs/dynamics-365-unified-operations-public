@@ -4,7 +4,7 @@
 title: Bad debt reserves in Accounts receivable
 description: This topic provides information about the tax registers for receivables, hopeless debts, and their write-off.
 author: anasyash
-ms.date: 06/24/2021
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -152,7 +152,7 @@ Debts can be calculated for profit tax accounting purposes and business accounti
 
 ### Create and set up registers
 
-Depending on the settings of your debts calculation models, create and calculate the registers in each group of registers, as described in Profit tax registers journal.
+Depending on the settings of your debts calculation models, create and calculate the registers in each group of registers. For more information, see [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 
 | **Register type** | **Comment** |
 |-------------------------|-------------------------|

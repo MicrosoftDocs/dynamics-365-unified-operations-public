@@ -3,7 +3,7 @@
 
 title: Create and process nonconformances
 description: This topic describes how to perform nonconformance management based on an existing quality order.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---

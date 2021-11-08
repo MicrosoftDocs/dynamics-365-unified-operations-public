@@ -3,7 +3,7 @@
 
 title: Pass returned items on to inspection 
 description: When registering a returned item, determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

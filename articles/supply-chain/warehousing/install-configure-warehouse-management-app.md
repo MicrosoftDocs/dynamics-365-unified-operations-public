@@ -113,7 +113,7 @@ For more information about how to set up web service applications in Azure AD, s
     - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
     - [How to: Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## Create and configure a user account in Supply Chain Management
+## <a name="user-azure-ad"></a>Create and configure a user account in Supply Chain Management
 
 To enable Supply Chain Management to use your Azure AD application, follow these steps.
 
@@ -121,17 +121,24 @@ To enable Supply Chain Management to use your Azure AD application, follow these
 
     1. In Supply Chain Management, go to **System administration \> Users \> Users**.
     1. Create a user.
-    1. Assign the warehousing mobile device user.
+    1. Assign the *Warehousing mobile device user* role to the user.
 
     ![Assign the warehousing mobile device user.](media/app-connect-app-users.png "Assign the warehousing mobile device user")
 
 1. Associate your Azure AD application with the Warehouse Management mobile app user:
 
     1. Go to **System administration \> Setup \> Azure Active Directory applications**.
-    1. Create a line.
-    1. Enter the client ID that you made a note of in the previous section, give it a name, and select the user that you just created. We recommend that you tag all your devices. Then, if a device is lost, you can easily remove its access to Supply Chain Management from this page.
+    1. Select **New** on the Action Pane to create a line.
+    1. In the **Client ID** field, enter the client ID that you made a note of in the previous section.
+    1. In the **Name** field, enter a name.
+    1. In the **User ID** field, select the user ID that you just created.
 
     ![Azure Active Directory applications.](media/app-connect-aad-apps.png "Azure Active Directory applications")
+
+> [!TIP]
+> One way to use these settings is to create a client ID in Azure for each of your physical devices and then add each client ID to the **Azure Active Directory applications** page. Then, if a device is lost, you can easily remove its access to Supply Chain Management by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this topic.)
+>
+> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that is mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
 
 ## <a name="authenticate"></a>Authenticate by using a certificate or client secret
 
@@ -154,7 +161,7 @@ You can import connection settings from either a file or a QR code. For both app
 | ConnectionName | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
 | ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section. |
 | ActiveDirectoryResource | Specify the root URL of Supply Chain Management. |
-| ActiveDirectoryTenant | Specify the Azure AD tenant that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 | Company | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
 | ConnectionType | (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are *"certificate"* and *"clientsecret"*. The default value is *"certificate"*.<p>**Note:** Client secrets can't be imported.</p> |
 | IsEditable | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are *"true"* and *"false"*. The default value is *"true"*. |
@@ -272,7 +279,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
-    - **Active directory tenant** – Enter the Azure AD tenant that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active directory tenant** – Enter the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).

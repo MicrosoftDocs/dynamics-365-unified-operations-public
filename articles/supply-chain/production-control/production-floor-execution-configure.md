@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Configure the production floor execution interface
@@ -78,6 +78,12 @@ This feature adds an asset management tab to the production floor execution inte
 This feature makes it possible to add a search field to the jobs list. Workers can find a specific job by entering the job ID or find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or by scanning a bar code. If you'd like to use it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Job search for the production floor execution interface
+
+### Enable reporting on co-products and by-products
+
+This feature lets workers use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products. To use this feature, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Report on co- and by-products from the production floor execution interface
 
 ## Work with production floor execution configurations
 

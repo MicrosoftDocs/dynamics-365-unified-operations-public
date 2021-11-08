@@ -3,7 +3,7 @@
 
 title: Quality orders
 description: This topic describes how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results in Microsoft Dynamics 365 Supply Chain Management.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

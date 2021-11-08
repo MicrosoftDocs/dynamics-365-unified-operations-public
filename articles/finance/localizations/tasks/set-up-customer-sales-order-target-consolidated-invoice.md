@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up a customer and sales order to be target of consolidated invoice
-description: In Japan, the customers usually use consolidated invoice for all transactions. 
+description: In Japan, the customers usually use consolidated invoices for all transactions. 
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-In Japan, the customers usually use consolidated invoice for all transactions. 
+In Japan, the customers usually use consolidated invoices for all transactions. 
 
 
 

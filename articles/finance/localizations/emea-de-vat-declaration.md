@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Germany
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.0
 

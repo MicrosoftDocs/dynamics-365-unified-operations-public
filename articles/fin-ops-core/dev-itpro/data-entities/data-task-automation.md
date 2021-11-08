@@ -3,7 +3,7 @@
 
 title: Data task automation
 description: This topic explains how you can use data task automation to repeat many types of data tasks and validate the outcome of each task.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 16
 

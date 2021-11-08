@@ -1,14 +1,14 @@
 ---
 title: Invoke process automation flows to create quality orders
 description: This topic provides resources for using Power Automate to automate business processes, using the example of quality orders.
-author: cabeln
+author: johanhoffmann
 ms.date: 05/28/2021
 ms.topic: article
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: cabeln
+ms.author: johanho
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
 ---
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.20
 # Invoke process automation flows to create quality orders
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 12/1/2021 -->
 
 Organizations have an increasing demand to automate standard business processes, provide more convenient interactions to the staff, and utilize various data signals and systems to drive business processes automatically. With robotic process automation (RPA) and Microsoft Power Automate, businesses can use a no-code experience to automate repetitive processes, thus gaining efficiency and accuracy.
 

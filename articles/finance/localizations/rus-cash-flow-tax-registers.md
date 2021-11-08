@@ -1,14 +1,34 @@
 ---
 # required metadata
+
 title: Cash flow tax registers
 description: This topic provides information about cash flow tax registers.
-ms.date: 01/11/2021
+ms.date: 08/16/2021
 ms.topic: article
+ms.prod: 
 author: akroshkina
+ms.technology: 
+manager: anayash
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
 ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
 ---
 
 # Cash flow tax registers
+
+[!include [banner](../includes/banner.md)]
 
 ## Overview
 
@@ -70,7 +90,7 @@ Follow these steps to set up expenses for the **Cash payment issue** and **Cash 
 
 ## Cash payment receipt tax register
 
-Calculate the tax register as described in Profit tax registers journal.
+Calculate the tax register as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#calculate-and-print-tax-registers).
 
 The **Cash payment receipt** tax register shows all cash receipt transactions, based on the settings that you configured earlier in this topic. You can view the total for the whole tax register and also the totals for each **Receive reason** value.
 
@@ -86,7 +106,7 @@ The tax register lines show the following information:
 
 ## Cash payment issue tax register
 
-Calculate the tax register as described in Profit tax registers journal.
+Calculate the tax register as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#calculate-and-print-tax-registers).
 
 The **Cash payment issue** tax register shows all cash issue transactions, based on the settings that you configured earlier in this topic. You can view the total for the whole tax register and also the totals for each expense type.
 

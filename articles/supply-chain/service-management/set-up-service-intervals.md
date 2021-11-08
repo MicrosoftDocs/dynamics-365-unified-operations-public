@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up service intervals 
-description: Service interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
-author: ShylaThompson
+description: This topic describes how to set up service intervals. Service interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
+author: kamaybac
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 

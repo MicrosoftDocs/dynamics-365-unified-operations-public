@@ -3,8 +3,8 @@
 
 title: Translate documentation files
 description: This topic explains how to translate a documentation file for a Microsoft Dynamics product or solution.
-author: kfend
-ms.date: 03/29/2018
+author: abmotgi 
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 6154
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ejcho
+ms.author: abmotgi
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
 
@@ -48,7 +48,7 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
     | File type | Select **Documentation**. |
     | Product name | Select a product name. If you accessed DTS from within an LCS project, this field is automatically filled in and is read-only. |
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
-    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business needs multiple target languages translated for the same source language, you can select all target languages in one request. Make sure you actually select the target languages using the checkbox next to the language name. This saves your time to submit multiple translation requests individually and you can also track all the target languages translation status in one request. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. Therefore, Microsoft-trained machine translation (MT) systems are available in those languages. In other words, the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
+    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all the target languages in one request. Make sure that you select each target language by using the checkbox next to the language's name. This approach helps you save time when you must submit multiple translation requests. It also lets you track the translation status of all the target languages in one request. Language names that are shown in **bold** are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific machine translation (MT) models are available in those languages, and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training. |
 
     ![Selecting languages.](./media/dts-target-lang.png "Selecting languages")
 
@@ -56,13 +56,13 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
 
 
     > [!NOTE]
-    > To take advantage of the Microsoft-trained MT system for Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
+    > To take advantage of the product-specific model that is trained on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
     >
-    > | Translation source language | Translation target language | MT system that is used |
+    > | Translation source language | Translation target language | MT model that is used |
     > |-----------------------------|-----------------------------|------------------------|
-    > | English – United States | Japanese | Microsoft-trained MT system |
-    > | Japanese | English – United States | Microsoft-trained MT system |
-    > | German | Japanese | Generic MT system, unless the user provides a translation memory (TM) that uses XML Localization Interchange File Format (XLIFF) and has more than 10,000 translation units (TUs) |
+    > | English – United States | Japanese | Product-specific trained MT model |
+    > | Japanese | English – United States | Product-specific trained MT model |
+    > | German | Japanese | Generic MT model |
 
 
 

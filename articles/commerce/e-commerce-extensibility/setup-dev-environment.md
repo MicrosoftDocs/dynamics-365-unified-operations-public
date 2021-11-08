@@ -4,7 +4,7 @@
 title: Set up a development environment
 description: This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -80,7 +80,7 @@ To download the SDK dependency packages, follow these steps.
 2. To get all the latest dependency packages that are required, run the **yarn** command.
 
     > [!IMPORTANT]
-    > This step should be done after you've completed any update to the packages.json file.
+    > This step should be done after you've completed any update to the package.json file.
 
     ```Console
     c:\repos\Msdyn365.Commerce.Online>yarn
