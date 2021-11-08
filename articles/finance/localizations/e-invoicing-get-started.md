@@ -61,11 +61,11 @@ Before you complete the procedures in this topic, the following prerequisites mu
 Depending on the country or region, the Electronic invoicing feature might require specific configuration. 
 
 > [!NOTE]
-> When you enable the Electronic invoicing feature for Finland, application-specific parameters in lookups isn't supported. To work around this, in the **Electronic reporting** module, review the sales invoice and project invoice format configurations. Manually set up the calculated field for **$PaymentMethodSubstitution** mapping and then bind that field to the **EpiPaymentMeansCode** field from the sales invoice and project invoice formats.
+> When you enable the Electronic invoicing feature for Finland, application-specific parameters in lookups aren't supported. To work around this issue, in the **Electronic reporting** module, review the configurations for the sales invoice and project invoice formats. Manually set up the calculated field for **$PaymentMethodSubstitution** mapping, and then bind that field to the **EpiPaymentMeansCode** field from the sales invoice and project invoice formats.
 >
-> When you enable the Electronic invoicing feature for Italy, application specific parameter in lookups isn't supported. To work around this issue, in the **Electronic reporting** module, manually set up the calculated field for **$NaturaReverseCharge** mapping.
+> When you enable the Electronic invoicing feature for Italy, application-specific parameters in lookups aren't supported. To work around this issue, in the **Electronic reporting** module, manually set up the calculated field for **$NaturaReverseCharge** mapping.
 >
-> For specific steps related to other locations, see the **Get started** documentation that is available for your country or region.
+> For specific steps that are related to other locations, see the "Get started" documentation that is available for your country or region.
 
 ## Import the model mapping configurations from Electronic reporting
 
