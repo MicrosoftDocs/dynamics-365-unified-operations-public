@@ -2,7 +2,7 @@
 title: Subscribe to events in Dataverse
 description: This topic describes how to subscribe to and manage Finance and Operations apps business events and data events in Microsoft Dataverse.
 author: jaredha
-ms.date: 11/03/2021
+ms.date: 11/08/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -41,9 +41,6 @@ After you've installed the Power Platform Tools extension, create a new project.
 
 4. In the **Configure your new project** dialog box, enter a project name, select the location where you want to save the solution file, and then select **Create**.
 5. In the **Configure Microsoft Power Platform Solution** dialog box, under **1. Solution Type to Configure**, select **Start from Dataverse**.
-
-    ![Selecting the solution type in the Configure Microsoft Power Platform Solution dialog box.](../media/businessevents_ConfigurePowerPlatformSolution.png)
-
 6. In the **Power Platform Tools** dialog box, under **2. Connect to Dataverse**, follow these steps:
 
     1. In the **Deployment Type** field group, select the **Office 365** option.
