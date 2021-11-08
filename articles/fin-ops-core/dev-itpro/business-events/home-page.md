@@ -4,7 +4,7 @@
 title: Business events overview
 description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
 author: Sunil-Garg
-ms.date: 04/22/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
