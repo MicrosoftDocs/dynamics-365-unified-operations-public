@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing for Saudi Arabia
 description: This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia.
 author: ikondo
-ms.date: 10/26/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,12 +35,12 @@ This topic provides information that will help you get started with Electronic i
 
 ### Prerequisites
 
-Before you complete the procedure in this section, make sure that:
+Before you complete the steps in this topic, the following prerequisites must be met. 
 
-1. **Saudi Arabian electronic invoice (SA)** electronic invoicing feature is imported form **Global repository** to **RCS**. See how to import in the **Import an Electronic invoicing feature from the Microsoft configuration provider** section of [Get started with Electronic invoicing](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SA-00010UPD/articles/finance/localizations/e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) article.
-2. Virtual entities for Finance and Operations are configured in **Microsoft Dataverse**. See how to configure in [Configure Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference) article.
-3. **CustomerPaymentMethodEntity** virtual entity is enabled. See how to enable in [Enable Microsoft Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities) article.
-4. Dataverse endpoint is added as a connected application in the **RCS** instance. See the details in **Create a connected application** section of [Get started with Electronic invoicing service administration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started-service-administration#create-a-connected-application).
+- Import the electronic invoicing feature, **Saudi Arabian electronic invoice (SA)** from the **Global repository** to **RCS**. For more information, see the **Import an Electronic invoicing feature from the Microsoft configuration provider** section of the topic, [Get started with Electronic invoicing]e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider).
+- Configure virtual entities for Finance and and Supply Chain Management in Microsoft Dataverse. For more infomration, see [Configure Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
+- Enable the virtual entity, **CustomerPaymentMethodEntity**. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
+- Add the Dataverse endpoint as a connected application in the **RCS** instance. For more information, see the **Create a connected application** section of topic, [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md#create-a-connected-application).
 
 ## Country-specific configuration for the Saudi Arabian electronic invoice (SA) Electronic invoicing feature
 
@@ -59,10 +59,10 @@ This section complements the [Country-specific configuration of application setu
     > [!NOTE]
     > In the **Name** column, you can select the **Blank** or **Not blank** placeholder value instead of a specific method of payment.
 
-8. On the **Setups** tab, click **Edit** for a selected configuration. 
+8. On the **Setups** tab, select **Edit** for the selected configuration. 
 9. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
-10. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
-11. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
+10. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the section, [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) in the topic, **Get started with Electronic invoicing**.
+11. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the section, [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) in the topic, **Get started with Electronic invoicing**.
 
 ## Additional resources
 
