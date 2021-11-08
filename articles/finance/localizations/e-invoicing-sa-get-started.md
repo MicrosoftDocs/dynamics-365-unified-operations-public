@@ -33,6 +33,14 @@ ms.dyn365.ops.version: AX 10.0.21
 
 This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
+### Prerequisites
+
+Before you complete the procedure in this section, make sure that:
+
+1. Virtual entities for Finance and Operations are configured in **Microsoft Dataverse**. See how to configure in [Configure Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference) article.
+2. **CustomerPaymentMethodEntity** virtual entity is enabled. See how to enable in [Enable Microsoft Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities) article.
+3. Dataverse endpoint is added as a connected application in the **RCS** instance.
+
 ## Country-specific configuration for the Saudi Arabian electronic invoice (SA) Electronic invoicing feature
 
 Follow these steps before you deploy the application setup to your connected Finance or Supply Chain Management application.
