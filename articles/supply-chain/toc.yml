@@ -2653,6 +2653,8 @@
           href: production-control/production-floor-execution-use.md
         - name: Style the production floor execution interface
           href: production-control/production-floor-execution-styles.md
+        - name: Customize the production floor execution interface
+          href: production-control/production-floor-execution-customize.md
     - name: Rebate management
       items:
       - name: Rebate management module overview
