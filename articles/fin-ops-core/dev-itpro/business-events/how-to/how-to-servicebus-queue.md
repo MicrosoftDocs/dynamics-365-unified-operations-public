@@ -63,7 +63,7 @@ This topic explains how to configure a Microsoft Azure Service Bug Queue endpoin
 
     ![Enter the secret name for the endpoint resource that must be created in Key Vault.](../../media/businesseventskeyvault2.png)
 
-    The **Key Vault Secret** value, in Azure, will be the Azure Service Bus **Primary Connection String** value. This value is found in the Azure Service Bus that you configured in **Shared Access Policies > RootManagedSharedAccessKey**.
+12. The **Key Vault Secret** value, in Azure, will be the Azure Service Bus **Primary Connection String** value. This value is found in the Azure Service Bus that you configured in **Shared Access Policies > RootManagedSharedAccessKey**.
 
     ![Business events Azure Key Vault key value.](../../media/BusinessEventsKVSValue.PNG)
 
