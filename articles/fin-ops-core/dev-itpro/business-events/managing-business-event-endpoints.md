@@ -38,8 +38,8 @@ Endpoints let you manage the destinations to which business events are sent. Bus
 | Azure Event Hub | [Business events and Azure Event Hubs](how-to/event-hub.md)  |
 | Azure Blob Storage | -- |
 | HTTPS | -- |
-| Microsoft Power Automate | [Business events and Microsoft Power Automate](./how-to/how-to-flow) |
-| Dataverse | [Subscribing to events in Dataverse](./how-to/how-to-dataverse-events) |
+| Microsoft Power Automate | [Business events and Microsoft Power Automate](how-to/how-to-flow.md) |
+| Dataverse | [Subscribing to events in Dataverse](how-to/how-to-dataverse-events.md) |
 
 Endpoints can be created for these messsaging and event brokers out of the box. Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
 
@@ -50,7 +50,7 @@ The Finance and Operations application doesn't provision the endpoints. The endp
 ## Subscribing to Finance and Operations events from Dataverse
 
 > [!IMPORTANT]
-> Enabling the Power Platform integration is prerequisite for subscribing to Finance and Operations business events and data events as outlined in this section. For more information on enabling the Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](./power-platform/enable-power-platform-integration).
+> Enabling the Power Platform integration is prerequisite for subscribing to Finance and Operations business events and data events as outlined in this section. For more information on enabling the Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](../power-platform/enable-power-platform-integration.md).
 
 With the Power Platform integration enabled it is possible to subscribe to Finance and Operations business events and data events from Dataverse. This enables the following:
 
@@ -85,7 +85,7 @@ When a new endpoint is added in Finance and Operations it is synchronized to Dat
 - Azure Event Grid
 - Azure Event Hub
 
-See [ServiceEndpoint table/entity reference](powerapps/developer/data-platform/reference/entities/serviceendpoint) for more information on the ServiceEndpoint table.
+See [ServiceEndpoint table/entity reference](/powerapps/developer/data-platform/reference/entities/serviceendpoint) for more information on the ServiceEndpoint table.
 
 ### Microsoft Power Automate endpoints
 
@@ -107,4 +107,4 @@ Certain attributes of service endpoints in Dataverse, like name and description,
 
 Once created, Dataverse does not allow deletion of service endpoints if it is being used. This is true, as well, for service endpoints used by Finance and Operations events. An attempt to delete the endpoint will result in an error, and deletion is prevented. 
 
-For more information on subscribing to Finance and Operations business events in Dataverse, see [Subscribing to events in Dataverse](./how-to/how-to-dataverse-events).
+For more information on subscribing to Finance and Operations business events in Dataverse, see [Subscribing to events in Dataverse](how-to/how-to-dataverse-events.md).
