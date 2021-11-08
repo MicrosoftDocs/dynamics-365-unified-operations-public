@@ -3,7 +3,7 @@
 title: Manage Finance and Operations updates and your custom code lifecycle
 description: This topic describes how to manage Finance and Operations updates and your custom code lifecycle.
 author: rbadawy
-ms.date: 10/22/2020
+ms.date: 11/08/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
