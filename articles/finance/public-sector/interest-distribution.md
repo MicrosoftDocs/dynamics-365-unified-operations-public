@@ -72,6 +72,16 @@ Before you distribute the interest, you must set up your participating cash acco
 
 6. Select **OK**. A message shows the number of the Advanced ledger entry that is automatically created.
 
+## Pre-processing for increased performance
+If your organization makes frequent changes to the chart of accounts, or to accounts related to cash accounts, the interest distribution process might run for a significant time before it finishes. You can reduce the time it takes to run this process using the Use batch processing to update accounts for interest distribution feature to set up preprocessing for these accounts. 
+ 
+Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)workspace) to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+ 
+- Module: General ledger
+- Feature name: Use batch processing to update accounts for interest distribution
+ 
+When you turn the feature on, the system will set up two batch jobs. An initial batch job will be run once to preprocess the data and the rules that are used in the interest distribution process. A recurring batch job, named **Run the scheduled preprocessing of ledger accounts used for interest distribution**, will also be created. By default, the process will run again each. The frequency can be modified under the batch jobs area.
+
 ## Calculated amounts
 
 The interest distribution allocation process includes some calculated amounts.
