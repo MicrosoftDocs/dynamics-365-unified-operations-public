@@ -21,7 +21,7 @@ This topic describes how to set up demand forecasting.
 
 ## Item allocation keys
 
-Item allocation keys establish groups of items. A demand forecast is calculated for an item and its dimensions only if the item is part of an item allocation key. This rule is enforced to group large numbers of items so that demand forecasts can be created more quickly. The item allocation key percentage is ignored when demand forecasts are generated. Forecasts are created based on historical data only.
+Item allocation keys establish groups of items. A demand forecast is calculated for an item and its dimensions only if the item is part of an item allocation key. This rule is enforced to group large numbers of items so that demand forecasts can be created more quickly. Forecasts are created based on historical data only.
 
 An item and its dimensions must be part of only one item allocation key if the item allocation key is used during forecast creation.
 
@@ -32,7 +32,7 @@ To create item allocation keys and add a stock keeping units (SKU) to them:
     - **Item allocation key** – Enter a unique name for the key.
     - **Name** – Enter a descriptive name for the key.
 1. Do one of the following to add or remove items to the selected item allocation key:
-    - On the **Item allocation** FastTab, use the **New** and **Delete** buttons on the toolbar to add or remove items as needed. For each row, select the **Item number** and then assign dimension values in the other columns as needed. Select **Display dimensions** on the toolbar to change the set of dimension columns shown in the grid. <!-- KFM: What does "Percent" mean? -->
+    - On the **Item allocation** FastTab, use the **New** and **Delete** buttons on the toolbar to add or remove items as needed. For each row, select the **Item number** and then assign dimension values in the other columns as needed. Select **Display dimensions** on the toolbar to change the set of dimension columns shown in the grid. (The value in the **Percent** column is ignored when generating demand forecasts.)
     - If you want to add a large number of items to the key, select **Assign items** on the Action Pane to open a page where you can find and assign multiple items to the selected key.
 
 > [!IMPORTANT]
@@ -40,7 +40,10 @@ To create item allocation keys and add a stock keeping units (SKU) to them:
 
 ## Intercompany planning groups
 
-Demand forecasting generates cross-company forecasts. In Dynamics 365 Supply Chain Management, companies that are planned together are grouped into the same intercompany planning group. To specify, per company, which item allocation keys should be considered for demand forecasting, associate an item allocation key with the intercompany planning group member.
+Demand forecasting can generate cross-company forecasts. In Dynamics 365 Supply Chain Management, companies that are planned together are grouped into the same intercompany planning group. To specify, per company, which item allocation keys should be considered for demand forecasting, associate an item allocation key with the intercompany planning group member.
+
+> [!IMPORTANT]
+> Planning Optimization does not currently support intercompany planning groups. To do intercompany planning with Planning Optimization, set up master planning batch jobs that include master plans for all of the relevant companies.
 
 To set up your intercompany planning groups:
 
@@ -50,10 +53,10 @@ To set up your intercompany planning groups:
     - **Description** – Enter a descriptive name for the key.
 1. On the **Intercompany planning group members** FastTab, use the toolbar buttons to add rows for each company (legal entity) that should be part of the group. For each row, make the following settings:
     - **Legal entity** – Select the name of a company (legal entity) that is a member of the selected group.
-    - **Scheduling sequence** – <!-- KFM: Description needed -->
-    - **Master plan** – <!-- KFM: Description needed -->
-    - **Automatic copy to static plan** – <!-- KFM: Description needed -->
-    - **Automatic copy to dynamic plan** – <!-- KFM: Description needed -->
+    - **Scheduling sequence** – Assign the order in which each company should be processed (low values are processed first). This can be important when demand for one company affects other companies, in which case the company that supplies the demand should be processed last.
+    - **Master plan** – Select the master plan to trigger for the current company.
+    - **Automatic copy to static plan** – Select this check box to take the result of the plan and copy it to the static plan.
+    - **Automatic copy to dynamic plan** – Select this check box to take the result of the plan and copy it to the dynamic plan.
 1. By default, if no item allocation keys are assigned to intercompany planning group members, a demand forecast is calculated for all items that are assigned to all item allocation keys from all companies. Additional filtering options for companies and item allocation keys are available on the **Generate statistical baseline forecast** dialog (**Master planning \> Forecasting ]> Demand forecasting \> Generate statistical baseline forecast**). To specify item allocation keys for a company in the selected intercompany planning group, select the company and then select **Item allocation keys** on the **Intercompany planning group members** FastTab toolbar.
 
 > [!IMPORTANT]
@@ -73,7 +76,7 @@ Use the **General** tab of the **Demand forecasting parameters** page to make ge
 
 #### Demand forecast unit
 
-Demand forecasting generates the forecast in quantities. Therefore, the unit of measure that the quantity should be expressed in must be specified in the **Demand forecast unit** field. The unit of measure must be unique <!-- KFM: Is "unique" really the right word here? Unique how? --> to help ensure that the aggregation and percentage distribution make sense. For more information about aggregation and percentage distribution, see [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md).
+Demand forecasting generates the forecast in quantities. Therefore, the unit of measure that the quantity should be expressed in must be specified in the **Demand forecast unit** field. This dictates the unit that will be used for all demand forecasts, regardless of the usual inventory units for each product. Using a consistent forecast unit helps ensure that the aggregation and percentage distribution make sense. For more information about aggregation and percentage distribution, see [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md).
 
 For every unit of measure that is used for SKUs that are included in demand forecasting, make sure that there is a conversion rule for the unit of measure and the general forecasting unit of measure you select here. When you generate a forecast generation, the list of items that don't have a unit of measure conversion is logged, so you can easily correct the setup. For more information about units of measure and converting between them, see [Manage units of measure](../pim/tasks/manage-unit-measure.md).
 
@@ -97,13 +100,13 @@ You can override the forecast generation method for one or more specific item al
 
 #### Override default forecast algorithm parameters globally
 
-Default forecast algorithm parameters and value are assigned using the **Demand forecasting parameters** page (**Master Planning \> Setup \> Demand forecasting \> Demand forecasting parameters**). However, you can override these globally using the **Forecast algorithm parameters** FastTab of the **Demand forecasting parameters** page. (You can also override them for specific allocation keys using the **Item allocation keys** tab of the **Demand forecasting parameters** page.)
+Default forecast algorithm parameters and value are assigned using the **Demand forecasting parameters** page (**Master Planning \> Setup \> Demand forecasting \> Demand forecasting parameters**). However, you can override these globally using the **Forecast algorithm parameters** FastTab on the **General** tab of the **Demand forecasting parameters** page. (You can also override them for specific allocation keys using the **Item allocation keys** tab of the **Demand forecasting parameters** page.)
 
-Use the **Add** and **Remove** buttons on the toolbar to establish the required collection of parameter overrides. For each parameter in the list, select a **Name** and then enter an appropriate value in the **Value** field. For more information about how to use the standard set of parameters and select values for them, see [Default parameters and values for demand forecasting models](#model-parameters).
+Use the **Add** and **Remove** buttons on the toolbar to establish the required collection of parameter overrides. For each parameter in the list, select a **Name** and then enter an appropriate value in the **Value** field. All of the parameters not listed here will take their values from the settings on the **Demand forecasting parameters** page. For more information about how to use the standard set of parameters and select values for them, see [Default parameters and values for demand forecasting models](#model-parameters).
 
 ### Set forecast dimensions
 
-A forecast dimension indicates the level of detail that the forecast is defined for. Company, site, and item allocation key are required forecast dimensions, but you can also generate forecasts at the warehouse, inventory status, customer group, customer account, country/region, state, and item plus all item dimension levels. Open the **Forecast dimensions** tab of the **Demand forecasting parameters** page to select the set of forecast dimensions to use when the demand forecast is generated.
+A forecast dimension indicates the level of detail that the forecast is defined for. Company, site, and item allocation key are required forecast dimensions, but you can also generate forecasts at the warehouse, inventory status, customer group, customer account, country/region, state, and/or item plus all item dimension levels. Open the **Forecast dimensions** tab of the **Demand forecasting parameters** page to select the set of forecast dimensions to use when the demand forecast is generated.
 
 At any time, you can add forecast dimensions to the list of dimensions that are used for demand forecasting. You can also remove forecast dimensions from the list. However, manual adjustments are lost if you add or remove a forecast dimension.
 
@@ -113,8 +116,8 @@ Not all items perform in the same manner from a demand forecasting perspective. 
 
 1. Open the **Item allocation keys** tab of the **Demand forecasting parameters** page.
 1. In the grid on the left, use the toolbar buttons to add and remove item allocation keys as needed, and then select the allocation key you want to set up overrides for.
-1. On the **Transaction types** FastTab, enable the types of transactions you want to use to generate the statistical baseline forecast for products belonging to the selected allocation key. These settings work the same way as the do on the **General** tab, but apply only to the selected item allocation key. <!-- KFM: Do these settings completely overwrite the ones on the **General** tab (both on and off), or are the combined somehow (eg, only the "yes" settings count)? -->
-1. On the **Transaction types** FastTab, select the **Forecast generation strategy** and forecast algorithm parameter overrides for products belonging to the selected allocation key. These settings work the same way as the do on the **General** tab, but apply only to the selected item allocation key. Use the **Add** and **Remove** buttons on the toolbar here to establish the required collection of parameter overrides. For each parameter in the list, select a **Name** and then enter an appropriate value in the **Value** field. For more information about how to use the standard set of parameters and select values for them, see [Default parameters and values for demand forecasting models](#model-parameters).
+1. On the **Transaction types** FastTab, enable the types of transactions you want to use to generate the statistical baseline forecast for products belonging to the selected allocation key. These settings work the same way as the do on the **General** tab, but apply only to the selected item allocation key. All of the settings here (both *Yes* and *No* values) override all of the **Transaction types** settings from the **General** tab.
+1. On the **Forecast algorithm parameters** FastTab, select the **Forecast generation strategy** and forecast algorithm parameter overrides for products belonging to the selected allocation key. These settings work the same way as the do on the **General** tab, but apply only to the selected item allocation key. Use the **Add** and **Remove** buttons on the toolbar here to establish the required collection of parameter overrides. For each parameter in the list, select a **Name** and then enter an appropriate value in the **Value** field. For more information about how to use the standard set of parameters and select values for them, see [Default parameters and values for demand forecasting models](#model-parameters).
 
 ### Set up the connection to Azure Machine Learning (deprecated)
 
@@ -139,11 +142,11 @@ For more information about how to set up Azure Machine Learning Service and then
 
 ## <a name="model-parameters"></a>Default parameters and values for demand forecasting models
 
-<!-- KFM: A better introduction is needed here. What are these "parameters" and how do we use them? How/why/when would I create or delete items in this list? -->
+When you use machine learning to generate your forecast planning models, you control machine learning options by setting values for *forecasting algorithm parameters*, which are sent from Supply Chain Management to Azure Machine Learning. Use the **Forecasting algorithm parameters** page to control which kinds of values to provide and which values each of them should have.
 
 To set up the default parameters and values used for demand forecasting models, go to **Master Planning \> Setup \> Demand forecasting \> Forecasting algorithm parameters**. A standard set of parameters is provided, each of which has the following fields:
 
-- **Name** – An internal name for the parameter. <!-- KFM: What does this mean? How do we use this? -->
+- **Name** – The name for the parameter as used by Azure. Usually you shouldn't change these unless you have customized the experiment in Azure Machine Learning.
 - **Description** – A common name for the parameter. This value used to identify the parameter elsewhere in the system (such as on the **Demand forecasting parameters** page).
 - **Value** – The default value for each parameter. The value you should enter depends on which parameter you are editing. 
 - **Explanation** – A short description of the parameter and how to use it. It typically includes advice about valid values for the **Value** field.
@@ -151,8 +154,8 @@ To set up the default parameters and values used for demand forecasting models, 
 The following parameters are provided by default. (If necessary, you can select **Restore** on the Action Pane to revert to this standard list.)
 
 - **Confidence level percentage** – A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95% confidence level percentage indicates there is a 5% risk that the future demand falls outside the confidence interval range.
-- **Force seasonality** – Specifies whether to force the model to use a certain type of seasonality. Applies to ARIMA and ETS only. Options: *AUTO(default)*, *NONE*, *ADDITIVE*, *MULTIPLICATIVE*.<!-- KFM: Do we really not need to explain these? Maybe give a link? -->
-- **Forecasting model** – Specifies which forecasting model to use. Options: *ARIMA*, *ETS*, *STL*, *ETS+ARIMA*, *ETS+STL*, *ALL*. To select best fit model, use *ALL*. <!-- KFM: Do we really not need to explain these? Maybe give a link? -->
+- **Force seasonality** – Specifies whether to force the model to use a certain type of seasonality. Applies to ARIMA and ETS only. Options: *AUTO(default)*, *NONE*, *ADDITIVE*, *MULTIPLICATIVE*.
+- **Forecasting model** – Specifies which forecasting model to use. Options: *ARIMA*, *ETS*, *STL*, *ETS+ARIMA*, *ETS+STL*, *ALL*. To select best fit model, use *ALL*.
 - **Maximum forecasted value** – Specifies the maximum value to use for predictions. Format: +1E[n] or numeric constant.
 - **Minimum forecasted value** – Specifies the minimum value to use for predictions. Format: -1E[n] or numeric constant.
 - **Missing value substitution** – Specifies how gaps in historical data are filled. Options: *(numeric value)*, *MEAN*, *PREVIOUS*, *INTERPOLATE LINEAR*, *INTERPOLATE POLYNOMIAL*.
@@ -172,6 +175,9 @@ You can overwrite the values for these parameters by going to **Master Planning 
 
 - Use the **General** tab to overwrite the parameters globally.
 - Use the **Item allocation keys** tab to overwrite the parameters per item allocation key. Parameters that are overwritten for an item allocation key affect only the forecast of items that are associated with that item allocation key.
+
+> [!NOTE]
+> You can add or remove parameters in the list on the **Forecasting algorithm parameters** page using the buttons on the Action Pane, but usually shouldn't do so unless you have customized the experiment in Azure Machine Learning.
 
 ## <a name="setup-amls"></a>Set up the Azure Machine Learning Service
 
@@ -247,7 +253,8 @@ Use the following procedure to connect your Supply Chain Management environment 
 
 1. Sign in to Supply Chain Management.
 1. Go to **Master planning \> Setup \> Demand forecasting \> Demand forecasting parameters**.
-1. Open the **General** tab and make sure **Forecast generation strategy** is set to *Azure Machine Learning Service*. <!--KFM: Also check Item allocation key overrides for this setting? -->
+1. Open the **General** tab and make sure **Forecast generation strategy** is set to *Azure Machine Learning Service*.
+1. Open the **Item allocation keys** tab and make sure **Forecast generation strategy** is set to *Azure Machine Learning Service* for each allocation key that should use the Azure Machine Learning Service for demand forecasting.
 1. Open the **Azure Machine Learning Service** tab.
 
     ![Azure Machine Learning Service parameters](media/azure-ml-service-parameters.png "Azure Machine Learning Service parameters")
