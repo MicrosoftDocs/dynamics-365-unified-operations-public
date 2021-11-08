@@ -60,8 +60,11 @@ Yes, but be aware that if your partner uses a non GCC identity the support ticke
 
 ## See also
 
+- 	[Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government)
+- 	[Business Applications US Government Feature Availability](https://aka.ms/BAPFunctionalParity).
 - 	[Lifecycle Services (LCS) User guide](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)  
 -  [Cloud deployment overview](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
