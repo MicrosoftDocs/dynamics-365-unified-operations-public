@@ -22,8 +22,7 @@ After completing project onboarding as described above you may review additional
 
 - For deployment of Microsoft managed environments via LCS, follow the instructions at [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience)  
 
-- **For Cloud hosted environment**, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
-- You must complete the Resource Manager onboarding process for your connectors, see [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](../../../fin-ops-core/dev-itpro/deployment/arm-onbarding-us-goverment).
+- **For Cloud hosted environment**, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). You must also complete the Resource Manager onboarding process for your connectors, see [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](../../../fin-ops-core/dev-itpro/deployment/arm-onbarding-us-goverment).
 
 
  > [!NOTE]
@@ -32,35 +31,34 @@ After completing project onboarding as described above you may review additional
 
 ## Features not available
 
-Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services in GCC. For information about feature availability, see [Business Applications US Government Feature Availability](https://aka.ms/BAPFunctionalParity).
+The following features listed will not be available for general availability of the Dynamics 365 Services in GCC. For information about feature availability, see [Business Applications US Government Feature Availability](https://aka.ms/BAPFunctionalParity).
 
 -   **Azure DevOps Services** will be unavailable in **Government cloud**. However, use of Azure DevOps on-premises or public Azure DevOps services will be available.
 
 
-    
-  > [!NOTE]
-  > The Lifecycle Services URL for implementations operated by 21Vianet in China is lcs.dynamics.cn.
-
 ## Frequently asked questions
 
-## Can i use public Azure DevOps with Finance and Supply Chain in GCC?
-Yes, you can use public Azure DevOps services if you don't have requirements for a FEDRAMP certified solution or Azure DevOps Server.
+## Is Dynamics 365 Finance and Dynamics 365 Supply Chain Management supported in GCC-High ?
+No, Dynamics 365 Finance and Dynamics 365 Supply Chain Management is only supported in GCC
+
+## Can I use public Azure DevOps with Finance and Supply Chain in GCC?
+Yes, you can use public Azure DevOps services if you don't have requirements for a FEDRAMP certified solution or you can use Azure DevOps Server.
+
 
 ## Can I deploy a Cloud Hosted Environment Tier-1 development box on an Azure commercial subscription ?
-No, in LCS GOV you must use an Azure Government subscription to deploy a cloud hosted environment.
+No, in Lifecycle Services (LCS) for the US Government Community Cloud [Dynamics Lifecycle Services GCC](https://gov.lcs.microsoftdynamics.us), you must use an Azure Government subscription to deploy a cloud hosted environment.
 
-
-## What can I do if i need a package from the shared asset library that is not available in LCS GOV?
+## What can I do if I need a package from the shared asset library that is not available in Lifecycle Services (LCS) for the US Government Community Cloud?
 You can download the same package from the public [Dynamics Lifecycle Services](https://lcs.dynamics.com) shared asset library or your partner can help you download the package.
 
 ## Is Code upgrade tool available In GCC?
-No. Not at this time, however you can use create a prospect project in public [Dynamics Lifecycle Services](https://lcs.dynamics.com) and use the code upgrade tool but you will not be able to deploy environments in prospect projects . 
+No. Not at this time, however you can create a prospect project in public [Dynamics Lifecycle Services](https://lcs.dynamics.com) and use the code upgrade tool. Please note that you will not be able to deploy environments in prospect projects. 
 
 ## Can my partner open a support ticket on my behalf?
-Yes, but be aware that if your partner uses a non GCC identity the support ticket will be directed to the public support queue, we do recommend opening support ticket by a user with GCC identity.
+Yes, but be aware that if your partner uses a non GCC identity the support ticket will be directed to the public support queue. We do recommend opening support tickets using customer GCC entitlement in LCS.
 
 
-## Additional resources
+## See also
 
 - 	[Lifecycle Services (LCS) User guide](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)  
 -  [Cloud deployment overview](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
