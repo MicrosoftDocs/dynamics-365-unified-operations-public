@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing
 description: This topic provides information that will help you get started with Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -60,13 +60,12 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 Depending on the country or region, the Electronic invoicing feature might require specific configuration. 
 
-! Note:
-
-For Electronic invoicing feature for **Finland**, the usage of application specific parameter in lookups are not supported when executed in the Electronic invoicing. As workaround, go to **Electronic reporting** module, review the Sales invoice and Project invoice format configurations, manually setup the calculated field for **$PaymentMethodSubstitution** mapping and bind to the **EpiPaymentMeansCode** field from Sales invoice and Project invoice formats.
-
-For Electronic invoicing feature for **Italy**, the usage of application specific parameter in lookups are not supported when executed in the Electronic invoicing. As workaround, go to **Electronic reporting** module and manually setup the calculated field for **$NaturaReverseCharge** mapping.
-
-For the others specific steps, see the "Get started" documentation that is available for your country or region.
+> [!NOTE]
+> When you enable the Electronic invoicing feature for Finland, application-specific parameters in lookups isn't supported. To work around this, in the **Electronic reporting** module, review the sales invoice and project invoice format configurations. Manually set up the calculated field for **$PaymentMethodSubstitution** mapping and then bind that field to the **EpiPaymentMeansCode** field from the sales invoice and project invoice formats.
+>
+> When you enable the Electronic invoicing feature for Italy, application specific parameter in lookups isn't supported. To work around this issue, in the **Electronic reporting** module, manually set up the calculated field for **$NaturaReverseCharge** mapping.
+>
+> For specific steps related to other locations, see the **Get started** documentation that is available for your country or region.
 
 ## Import the model mapping configurations from Electronic reporting
 
