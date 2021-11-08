@@ -31,13 +31,17 @@ This topic explains how to configure a Microsoft Azure Service Bug Queue endpoin
 
 ## Create an Azure Service Bus Queue endpoint
 
-To create a new endpoint, select **New**. In the **Endpoint type** field, select the appropriate endpoint type. To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**. Then select **Next**.
+1. To create a new endpoint, select **New**. 
+2. In the **Endpoint type** field, select the appropriate endpoint type. To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**. 
+3. Select **Next**.
 
 ![To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**.](../../media/businesseventsnewendpoint1.png)
 
-Specify the name of the endpoint and the Service Bus queue. In addition, you must set up Azure Key Vault to provide the secret to the Azure messaging resource. You must also set up the Azure Active Directory (Azure AD) application ID and application secret.
+4. Specify the name of the endpoint and the Service Bus queue.  
+5. Set up Azure Key Vault to provide the secret to the Azure messaging resource. 
+6. Set up the Azure Active Directory (Azure AD) application ID and application secret.
 
-![Specify the name of the endpoint and the Service Bus queue.](../../media/businesseventsnewendpoint2.png)
+    ![Specify the name of the endpoint and the Service Bus queue.](../../media/businesseventsnewendpoint2.png)
 
 In the **Queue Name** field, enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure.  
 
