@@ -4,7 +4,7 @@
 title: Customer electronic invoices in Saudi Arabia
 description: This topic explains how to configure and submit customer electronic invoices in Saudi Arabia.
 author: ikondo
-ms.date: 10/26/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -135,14 +135,14 @@ Similarly, you can define the invoice type for free text invoices.
 
 ## Define default invoice types for customers
 
-You can define an invoice's type on Customer level. This invoice type will be inherited in new Sales orders and Free text invoices by default.
+You can define an invoice type at the customer record level. This invoice type is inherited in new sales orders and free text invoices by default.
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
 2. Select a specific customer.
-3. In the **Invoice and delivery** FastTab, in the **Invoice** group, in the **Invoice type** field, select the required value.
+3. On the **Invoice and delivery** FastTab, in the **Invoice** group, in the **Invoice type** field, select the required value.
 
 > [!NOTE]
-> If no invoice's type is defined on Customer level then **Tax invoice** will be used by default for new Sales orders and Free text invoices.
+> If no invoice type is defined on a customer record, the **Tax invoice** type is used by default for new sales orders and free text invoices.
 
 ## Configure printable invoice layouts
 
