@@ -133,6 +133,17 @@ Similarly, you can define the invoice type for free text invoices.
 2. Create a new free text invoice, or select an open free text invoice.
 3. On the invoice header, on the **General** FastTab, in the **Invoice** group, in the **Invoice type** field, select the required value.
 
+## Define default invoice types for customers
+
+You can define an invoice's type on Customer level. This invoice type will be inherited in new Sales orders and Free text invoices by default.
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. Select a specific customer.
+3. In the **Invoice and delivery** FastTab, in the **Invoice** group, in the **Invoice type** field, select the required value.
+
+> [!NOTE]
+> If no invoice's type is defined on Customer level then **Tax invoice** will be used by default for new Sales orders and Free text invoices.
+
 ## Configure printable invoice layouts
 
 ### Enable specific invoice layouts for Saudi Arabia
