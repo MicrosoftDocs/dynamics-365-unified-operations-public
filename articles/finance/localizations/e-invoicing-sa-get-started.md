@@ -37,9 +37,10 @@ This topic provides information that will help you get started with Electronic i
 
 Before you complete the procedure in this section, make sure that:
 
-1. Virtual entities for Finance and Operations are configured in **Microsoft Dataverse**. See how to configure in [Configure Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference) article.
-2. **CustomerPaymentMethodEntity** virtual entity is enabled. See how to enable in [Enable Microsoft Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities) article.
-3. Dataverse endpoint is added as a connected application in the **RCS** instance. See the details in [Get started with Electronic invoicing service administration - Create a connected application](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started-service-administration#create-a-connected-application).
+1. **Saudi Arabian electronic invoice (SA)** electronic invoicing feature is imported form **Global repository** to **RCS**. See how to import in the **Import an Electronic invoicing feature from the Microsoft configuration provider** section of [Get started with Electronic invoicing](e-invoicing-get-started.md) article.
+2. Virtual entities for Finance and Operations are configured in **Microsoft Dataverse**. See how to configure in [Configure Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference) article.
+3. **CustomerPaymentMethodEntity** virtual entity is enabled. See how to enable in [Enable Microsoft Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities) article.
+4. Dataverse endpoint is added as a connected application in the **RCS** instance. See the details in **Create a connected application** section of [Get started with Electronic invoicing service administration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started-service-administration#create-a-connected-application).
 
 ## Country-specific configuration for the Saudi Arabian electronic invoice (SA) Electronic invoicing feature
 
