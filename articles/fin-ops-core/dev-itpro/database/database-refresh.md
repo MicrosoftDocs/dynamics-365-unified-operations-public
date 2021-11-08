@@ -4,7 +4,7 @@
 title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
-ms.date: 05/24/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -35,7 +35,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of 
 
 > [!IMPORTANT]
 > Copying production data during business hours or peak hours could have an impact on the production system. It's highly recommended to do the refresh database operation during off-peak hours and limit only one refresh operation at a time.
-
+>
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
 
 ## Self-service database refresh
@@ -102,6 +102,10 @@ Here is the list of requirements and conditions of operation for a database refr
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Known issues
+
+### The Restore operation fails if the sandbox customizations are incompatible with production data
+
+Even if a customization is successfully added to the sandbox environment (that is, the customer's AOT deployable package is successfully installed via LCS), it might not succeed for production data. For example, a customer adds a unique index on **Vendor Name** to the VendTable table. This customization can be successfully installed if there are no duplicate vendor names in the sandbox environment. However, when the production database is brought in as part of the Restore operation, installation might fail if there are duplicates in the dataset that is inbound to the sandbox environment. Duplicates in this dataset aren't supported. Therefore, you must remove the customization before you can have a successful Restore operation.
 
 ### Refresh is denied for environments that run Platform update 20 or earlier
 The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
