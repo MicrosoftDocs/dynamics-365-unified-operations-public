@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.1
 ---
 # Deployment guidelines for the fiscal registration service integration sample for Austria (legacy)
 
-This topic provides guidelines on how to deploy the fiscal registration service integration sample for Austria from the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for Austria](emea-aut-fi-sample). The fiscal integration sample for Austria is part of the Retail SDK. For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+This topic provides guidelines on how to deploy the fiscal registration service integration sample for Austria from the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for Austria](emea-aut-fi-sample.md). The fiscal integration sample for Austria is part of the Retail SDK. For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
 ## Development environment
 
@@ -202,7 +202,7 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-5. Complete all the required setup tasks that are described in the [Set up Commerce for Austria](#set-up-commerce-for-austria) section.
+5. Complete all the required setup tasks that are described in the [Set up Commerce for Austria](emea-aut-fi-sample.md#set-up-commerce-for-austria) section.
 
 ## Design of extensions
 
