@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Multiple VAT registration numbers (Preview)
+title: Multiple VAT registration numbers
 description: This topic provides information about the functionality for multiple value-added tax (VAT) registration numbers.
 author: epodkolz
 ms.date: 09/07/2021
@@ -26,11 +26,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
-# Multiple VAT registration numbers (Preview)
+# Multiple VAT registration numbers
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides information about the functionality for multiple value-added tax (VAT) registration numbers. This functionality lets users set up the tax registration numbers of a legal entity and its customers and vendors in different European Union (EU) member states, and then post and settle taxes according to registration in the appropriate member state.
 
