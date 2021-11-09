@@ -2,7 +2,7 @@
 title: Style the production floor execution interface
 description: The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
 author: johanhoffmann
-ms.date: 02/22/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.search.form:
 audience: Application User, Developer, IT Pro
@@ -324,11 +324,10 @@ To align elements in the center of a tab, then the group name must start with `T
 
 ## Align a grid, detail part, and quick filter
 
-To arrange a customized grid, detail part, and quick filter so they resemble the standard design, you must take care when putting them all together.
+To arrange a customized grid, detail part, and quick filter so they resemble the standard design, then keep the following points in mind when putting them all together:
 
-If the grid has a quick filter, then both the grid and the quick filter should be inside the group whose name starts with `GridGroup`.
-
-To apply styles to detail part, the group name must start with `DetailInformationGroup`
+- If the grid has a quick filter, then both the grid and the quick filter should be inside the group whose name starts with `GridGroup`.
+- To apply styles to detail part, the group name must start with `DetailInformationGroup`
 
 The following screenshot shows a typical grid, including a quick filter and with the detail part on the right.
 
@@ -336,7 +335,11 @@ The following screenshot shows a typical grid, including a quick filter and with
 
 In Visual Studio, a grid, detail part, and quick filter can be created using a structure such as the one shown in the following illustration.
 
-![Text Description automatically generated](media/image9.png)
+![Typical code structure that aligns a grid, detail part, and quick filter.](media/pfe-styles-header-code-structure2.png "Typical code structure that aligns a grid, detail part, and quick filter")
 
+## Additional resources
+
+- [Customize the production floor execution interface](production-floor-execution-customize.md)
+- [Design the production floor execution interface](production-floor-execution-tabs.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
