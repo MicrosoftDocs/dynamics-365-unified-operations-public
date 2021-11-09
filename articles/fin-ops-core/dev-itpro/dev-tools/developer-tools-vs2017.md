@@ -5,7 +5,7 @@ author: jorisdg
 ms.date: 10/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.author: jorisde
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 7.0.0

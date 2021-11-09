@@ -1,14 +1,14 @@
 ---
 title: Dual-write home page
 description: This topic provides links to information about dual-write.
-author: robinarh
+author: tonyafehr
 ms.date: 02/08/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
 ---
