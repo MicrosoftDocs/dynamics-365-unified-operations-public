@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 This topic provides information about the configuration capabilities of Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS).
 
-It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.
+It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web service, the configuration capabilities also help you meet the requirements for exchanging messages with a web service, without doing any code.
 
 ## Electronic reporting
 
@@ -285,7 +285,7 @@ Logic operators:
 - And
 - Or
 
-Operators types:
+Operator types:
 - Equal
 - Not equal
 - Greater than
@@ -307,7 +307,7 @@ The example looks like this.
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
-| C                            | <p>Country = BR</p><p>and</p><p>( Legal entity = BRMF</p><p>or</p><p>Model=55)</p>  |
+| C                            | <p>Country = BR</p><p>and</p><p>(Legal entity = BRMF</p><p>or</p><p>Model=55)</p>  |
 
 
 ## Configuration providers
