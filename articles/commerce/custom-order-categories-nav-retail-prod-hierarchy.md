@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 # Change the sort order for merchandising entities
 
 
-[!include [banner](includes/banner.md)]
+[!Include [banner](includes/banner.md)]
 
 Retailers consider product discovery a primary tool for customer interaction across all channels. Various functionality can help customers easily discover products. For example, they can browse categories, search, and filter.
 
