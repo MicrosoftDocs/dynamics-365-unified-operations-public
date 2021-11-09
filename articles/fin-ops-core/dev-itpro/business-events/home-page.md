@@ -4,7 +4,7 @@
 title: Business events overview
 description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
 author: Sunil-Garg
-ms.date: 11/08/2021
+ms.date: 11/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -85,7 +85,7 @@ Business events in the business event catalog aren't active by default. From the
 
 Business events can be activated either in all legal entities or in specific legal entities. If you leave the **Legal entity** field blank, the selected business events will be activated in *all* legal entities. If a business event is required only for specific legal entities, it must be configured separately for each legal entity.
 
-Endpoints must be assigned to the business events that are activated. See [Managing business event endpoints](managing-business-event-endpoints.md) for additional information on setting up and managing endpoints.
+Endpoints must be assigned to the business events that are activated. See [Manage business event endpoints](managing-business-event-endpoints.md) for additional information on setting up and managing endpoints.
 
 When business events occur as business processes are run, the system will do outbound processing only for business events that have been activated.
 
