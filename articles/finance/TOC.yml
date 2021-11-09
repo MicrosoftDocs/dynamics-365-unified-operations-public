@@ -2986,6 +2986,8 @@
           href: localizations/emea-pol-returnable-packages.md
         - name: Sales tax reports
           href: localizations/emea-pol-sales-tax-reports.md
+        - name: Polish Intrastat
+          href: localizations/emea-pol-intrastat.md
         - name: Set up number sequences by warehouse
           href: localizations/emea-pol-number-sequence-warehouses.md          
         - name: Standard audit file
