@@ -32,7 +32,7 @@ The _Purchasing cXML Enhancements_ feature builds on the [existing external cata
 
 ## Turn on the Purchasing cXML Enhancements feature
 
-To turn on the feature, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** page, and search for the feature that is named *Purchasing cXML Enhancements*. Select the feature, and then select **Enable now** to turn it on.
+To turn on the feature, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** page, and search for the feature that is named *Purchasing cXML Enhancements*. Select the feature, and then select **Enable now** to turn it on. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 After you turn on the feature, you should configure settings in the following three areas:
 
