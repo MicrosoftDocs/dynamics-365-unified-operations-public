@@ -4,7 +4,7 @@
 title: Commerce Data Exchange best practices
 description: This topic describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
-ms.date: 08/26/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,8 +67,8 @@ To initialize the base configuration data, do the following:
   
 2. There is a parameter to **Delete existing configuration**.  Unless you are explicitly instructed to do this, or you are working on a non-production environment where losing configuration will not create an impact, leave this set to **No**.
 
-[!NOTE]
-Starting with the 10.0.24 release, the Commerce scheduler can be set to run automatically after updates to Commerce headquarters. To enable this capability, go to **Workspaces** > **Feature management** in Commerce headquarters and enable the **Run "Initialize commerce scheduler" after Headquarters is updated** feature switch. 
+> [!NOTE]
+> Starting with the Commerce version 10.0.24 release, the Commerce scheduler can be set to run automatically after updates to Commerce headquarters. To enable this capability in Commerce headquarters, go to **Workspaces \> Feature management** and enable the **Run "Initialize commerce scheduler" after Headquarters is updated** feature. 
 
 ## Valuable configurations
 
@@ -79,6 +79,7 @@ Starting with the 10.0.24 release, the Commerce scheduler can be set to run auto
 | <ul><li>Channel database group</li><li>Distribution schedule</li><li>Offline profile</li><li>Pause</li><li>Data</li><li>Download</li></ul> | We highly recommend that you have either a "dummy" channel database group (that is, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals, or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation can occur when it's required and when the system is most available to do it. (However, the system might pause multiple times as required.) |
 
 ### Enable table and index compression
+   
 Before you read this topic, we recommended that you read about the different recommended versions of SQL Server used in on-premises database components (offline database and channel database as part of a CSU) in [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#implementation-considerations). It's important to enable table/index compression on their on-premises databases, such as the offline databases for Modern POS and the channel databases for the CSU (self-hosted). This is supported only on SQL Server 2016 SP1 Express, SQL Server 2017 Express, SQL Server 2019 Express, and later. If you are still running SQL Server Express 2014, an upgrade to a newer, supported version will be required. Generate a report of the top tables using disk space (**SQL Server Management Studio > Reports > Standard Reports > Disk Usage by Top Tables**). After that, you can enable compression for each table and index at the top of the report. The basic commands are shown below.
 
 ```Console
