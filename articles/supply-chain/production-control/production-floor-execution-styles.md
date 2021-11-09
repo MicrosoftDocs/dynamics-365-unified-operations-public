@@ -68,13 +68,13 @@ private void setCaption()
 When you are writing your header code, apply the following rules:
 
 - The name of main group must be `TableRowHeaderGroup`.
-- All text name with dot separator must start with `HeaderFieldWithSeparatorText`.
+- Each block of text (separated by bullets) must start with `HeaderFieldWithSeparatorText`.
 - The last text name must start with `HeaderFieldText`.
 - `CaptionImage` can be skipped.
 
 ### Progress indicator
 
-It's possible to include a progress indicator in the header, which is shown at the right side. The following illustration shows a progress indicator.
+It's possible to include a progress indicator, which is shown to the right of the header. The following illustration shows a progress indicator.
 
 ![A typical progress indicator.](media/pfe-styles-header-progress.png "A typical progress indicator")
 
@@ -123,10 +123,10 @@ Styles can be applied to business card controls only if the following requiremen
 
 Set the following properties on the business card:
 
-- **Style** – *list*
-- **Extended style** – *cardList*
-- **Multi Select** – *No*
-- **Show Col Labels** – *No*
+- **Style:** *list*
+- **Extended style:** *cardList*
+- **Multi Select:** *No*
+- **Show Col Labels:** *No*
 
 ![Business card.](media/pfe-styles-business-card.png)
 
@@ -139,8 +139,8 @@ Styles can be applied to radio buttons only if the following requirements are me
 
 Set the following properties on the radio button:
 
-- **Toggle button** – *Check*
-- **Toggle value** – *On* if the radio button should be selected; otherwise, *Off*
+- **Toggle button:** *Check*
+- **Toggle value:** *On* if the radio button should be selected; otherwise, *Off*
 
 The following illustration shows an example where the text appears below the radio buttons.
 
@@ -165,11 +165,11 @@ Styles can be applied to buttons only if the following requirements are met:
 
 Set the following properties on the buttons:
 
-- **Button Display** – *TextWithImageLeft*
-- **Normal Image** – This property can't be blank. For example, use *CoffeeScript*
-- **Text** – This property can't be blank. For example, use *Start Break*
-- **Width** – *Auto* or *SizeToContent*
-- **Height** – *Auto* or *SizeToContent*
+- **Button Display:** *TextWithImageLeft*
+- **Normal Image:** This property can't be blank. For example, use *CoffeeScript*
+- **Text:** This property can't be blank. For example, use *Start Break*
+- **Width:** *Auto* or *SizeToContent*
+- **Height:** *Auto* or *SizeToContent*
 
 ### Primary button
 
@@ -207,11 +207,11 @@ Styles can be applied to a fourth-group button only if the following requirement
 
 Set the following properties on the button:
 
-- **Button Display** – *TextOnly*
-- **Normal Image** – This property must be blank
-- **Text** – This property can't be blank. For example, use *View* or *Edit*
-- **Width** – *Auto*
-- **Height** – *Auto*
+- **Button Display:** *TextOnly*
+- **Normal Image:** This property must be blank.
+- **Text:** This property can't be blank. For example, use *View* or *Edit*.
+- **Width:** *Auto*
+- **Height:** *Auto*
 
 ![Fourth-group button.](media/pfe-styles-fourth.png)
 
@@ -224,11 +224,11 @@ Styles can be applied to a flat button only if the following requirements are me
 
 Set the following properties on the button:
 
-- **Button Display** – *ImageOnly*
-- **Normal Image** – This property can't be blank. For example, use *CoffeeScript*
-- **Text** – This property must be blank
-- **Width** – *Auto* or *SizeToContent*
-- **Height** – *Auto* or *SizeToContent*
+- **Button Display:** *ImageOnly*
+- **Normal Image:** This property can't be blank. For example, use *CoffeeScript*.
+- **Text:** This property must be blank.
+- **Width:** *Auto* or *SizeToContent*
+- **Height:** *Auto* or *SizeToContent*
 
 ![Flat button.](media/pfe-styles-flat-button.png)
 
@@ -241,11 +241,11 @@ Styles can be applied to a continue button only if the following requirements ar
 
 Set the following properties on the button:
 
-- **Button Display** – *ImageOnly*
-- **Normal Image** – *Forward*
-- **Text** – This property must be blank
-- **Width** – *Auto* or *SizeToContent*
-- **Height** – *Auto* or *SizeToContent*
+- **Button Display:** *ImageOnly*
+- **Normal Image:** *Forward*
+- **Text:** This property must be blank.
+- **Width:** *Auto* or *SizeToContent*
+- **Height:** *Auto* or *SizeToContent*
 
 ![Continue button.](media/pfe-styles-continue-button.png)
 
