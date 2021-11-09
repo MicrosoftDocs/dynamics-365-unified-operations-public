@@ -43,7 +43,7 @@ The production floor execution interface itself, plus several of the optional se
 
 ### The production floor execution interface
 
-This is the primary feature described in this topic. It adds the production floor execution interface to your system. To enable it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+This is the primary feature described in this topic. As of Supply Chain Management version 10.0.21, it is turned on by default. It adds the production floor execution interface to your system. To enable it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Production floor execution
 
@@ -51,19 +51,19 @@ This is the primary feature described in this topic. It adds the production floo
 
 These features make license plate functionality available to the production floor execution interface. If you'd like to use them, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
 
-1. License plate for reporting as finished added to the Job Card Device
+1. License plate for reporting as finished added to the Job Card Device (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 1. Enable automatic generation of license plate number when reporting as finished in the job card device
 
 ### Print labels
 
 These features make label printing functionality available to the production floor execution interface. If you'd like to use them, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
 
-1. License plate for reporting as finished added to the Job Card Device
+1. License plate for reporting as finished added to the Job Card Device (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 1. Print label from Job Card Device
 
 ### Allow locking the touch screen
 
-This feature adds a button to the production floor execution interface that enables workers to sanitize the touch screen. If you'd like to use it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. It adds a button to the production floor execution interface that enables workers to sanitize the touch screen. If you'd like to use it, make sure the following feature is turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Feature for locking job card device and job card terminal so that they can be sanitized
 

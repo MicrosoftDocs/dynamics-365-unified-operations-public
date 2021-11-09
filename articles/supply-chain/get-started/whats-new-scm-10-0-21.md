@@ -66,10 +66,10 @@ The following table lists the features that are turned on by default in 10.0.21.
 | Transfer Order Cancellation | 9/1/2021 | 7/13/2020 | On by default | Inventory and warehouse management |
 | Unlock Inventory Journal | 9/1/2021 | 8/17/2020 | On by default | Inventory and warehouse management |
 | Saved views for Inventory management | 9/1/2021 | 9/30/2020 | On by default | Inventory and warehouse management |
-| Navigation to BOM version from BOM lines. | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
-| Using unit of measure and unit quantity in inventory journals. | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
+| Navigation to BOM version from BOM lines | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
+| Using unit of measure and unit quantity in inventory journals | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
 | Allow empty batch attributes values | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
-| Auto increment line numbers of inventory transfer order lines. | 9/1/2021 | 10/11/2019 | On by default | Inventory and warehouse management |
+| Auto increment line numbers of inventory transfer order lines | 9/1/2021 | 10/11/2019 | On by default | Inventory and warehouse management |
 | Inventory journal approve workflow | 9/1/2021 | 1/6/2020 | On by default | Inventory and warehouse management |
 | Enable inventory quality management parameters warning feature | 9/1/2021 | 10/7/2019 | On by default | Inventory and warehouse management |
 | Create transfer order from sales line | 9/1/2021 | 8/31/2019 | On by default | Inventory and warehouse management |
@@ -89,12 +89,12 @@ The following table lists the features that are turned on by default in 10.0.21.
 | Saved views for released products | 9/1/2021 | 9/30/2020 | On by default | Product information management |
 | Improvements to the Approve and Transfer jobs dialogs | 9/1/2021 | 10/11/2019 | On by default | Production control |
 | License plate for reporting as finished added to the Job Card Device | 9/1/2021 | 8/31/2019 | On by default | Production control |
-| A new button to Stop break has been added to the Job Card Terminal page. | 9/1/2021 | 2/19/2020 | On by default | Production control |
+| A new button to Stop break has been added to the Job Card Terminal page | 9/1/2021 | 2/19/2020 | On by default | Production control |
 | Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
 | Saved views for production control | 9/1/2021 | 8/17/2020 | On by default | Production control |
 | Dynamics 365 Guides for Manufacturing | 9/1/2021 | 7/13/2020 | On by default | Production control |
 | Production floor execution | 9/1/2021 | 9/30/2020 | On by default | Production control |
-| Feature for locking job card device and job card terminal so that they can be sanitized. | 9/1/2021 | 5/10/2020 | On by default | Production control |
+| Feature for locking job card device and job card terminal so that they can be sanitized | 9/1/2021 | 5/10/2020 | On by default | Production control |
 | Charges allocation on a sales order | 9/1/2021 | 9/30/2020 | On by default | Sales and marketing |
 | Limit the number of sales orders that can be selected for posting | 9/1/2021 | 9/1/2021 | On by default | Sales and marketing |
 | Clean up sales-order update history | 9/1/2021 | 9/1/2021 | On by default | Sales and marketing |
