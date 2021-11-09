@@ -23,10 +23,10 @@ The topic explains how to configure form controls so that the default production
 
 Styles can be applied to a form or dialog only if the following requirements are met:
 
-- If the form should resemble the existing report progress form, then the name of your form or dialog must start with `JmgProductionFloorExecutionCustomInputDialog`.
+- If the form should resemble the existing report progress form, the name of your form or dialog must start with `JmgProductionFloorExecutionCustomInputDialog`.
 - The form or dialog can contain a detail form part. To apply styles to it, the name of the detail form part must start with `JmgProductionFloorExecutionCustomDetailsDialog`.
 - If the form or dialog should have a simple view, then the name of the simple view must start with `JmgProductionFloorExecutionCustomDialog`. Examples of forms that have a simple view include the start form and the indirect activity form.
-- All the controls in the dialog  must be configured as described in this topic.
+- All the controls in the dialog must be configured as described in this topic.
 
 > [!IMPORTANT]
 > The features mentioned in the first two bullet points of this list require Supply Chain Management version 10.0.19 or later.
@@ -43,20 +43,20 @@ Styles can be applied to the **Cancel** button in a dialog box only if the follo
 
 ### Header
 
-The following screenshot shows a typical form or dialog header.
+The following illustration shows a typical form or dialog header.
 
-![A typical form or dialog header.](media/pfe-styles-header.png "A typical form or dialog header")
+![Typical form or dialog header.](media/pfe-styles-header.png "Typical form or dialog header")
 
-In Visual Studio, headers are created using a structure such as the one shown in the following illustration.
+In Visual Studio, headers are created by using a structure such as the one that is shown in the following illustration.
 
 ![Typical code structure for creating a header.](media/pfe-styles-header-code-structure.png "Typical code structure for creating a header")
 
-To add text to your header, use code such as in the following example:
+To add text to your header, use code such as the following example.
 
 ```xpp
 private void setCaption()
 {
-    HeaderFieldWithSeparatorText1.text("Report Progress");    
+    HeaderFieldWithSeparatorText1.text("Report Progress");
     HeaderFieldWithSeparatorText2.text(ProdId);
 
     …
@@ -65,7 +65,7 @@ private void setCaption()
 }
 ```
 
-When you are writing your header code, apply the following rules:
+When you write your header code, apply the following rules:
 
 - The name of main group must be `TableRowHeaderGroup`.
 - Each block of text (separated by bullets) must start with `HeaderFieldWithSeparatorText`.
@@ -74,9 +74,9 @@ When you are writing your header code, apply the following rules:
 
 ### Progress indicator
 
-It's possible to include a progress indicator, which is shown to the right of the header. The following illustration shows a progress indicator.
+You can include a progress indicator, which is shown to the right of the header. The following illustration shows a progress indicator.
 
-![A typical progress indicator.](media/pfe-styles-header-progress.png "A typical progress indicator")
+![Typical progress indicator.](media/pfe-styles-header-progress.png "Typical progress indicator")
 
 To show the progress indicator, the text field must be named `ShowProgress`.
 
@@ -84,7 +84,7 @@ To show the progress indicator, the text field must be named `ShowProgress`.
 
 Styles are automatically applied. No specific configuration is required.
 
-The grid should have a `TabularView` style and the `run()` method on the custom form must be overwritten because a new grid isn't yet supported. Add the following code:
+The grid should have a `TabularView` style, and the `run()` method on the custom form must be overwritten, because a new grid isn't yet supported. Add the following code.
 
 ```xpp
 public void run()
@@ -95,7 +95,7 @@ public void run()
 }
 ```
 
-To refresh data in a main view, you might want to use something like `this.parmParentForm().updateLayout();` in a `click` method of your action (for an example, take a look at the `JmgProductionFloorExecutionReportFeedbackAction` class). Just make sure that `parmDataSource` is set in the `init` method of your new form (`formCaller.parmDataSource(this.dataSource(1));`). For an example, take a look at the `JmgProductionFloorExecutionMainGrid` form.
+To refresh data in a main view, you might want to use something like `this.parmParentForm().updateLayout();` in a `click` method of your action. (For an example, look at the `JmgProductionFloorExecutionReportFeedbackAction` class.) Just make sure that `parmDataSource` is set in the `init` method of your new form (`formCaller.parmDataSource(this.dataSource(1));`). For an example, look at the `JmgProductionFloorExecutionMainGrid` form.
 
 ## Card view
 
@@ -166,8 +166,8 @@ Styles can be applied to buttons only if the following requirements are met:
 Set the following properties on the buttons:
 
 - **Button Display:** *TextWithImageLeft*
-- **Normal Image:** This property can't be blank. For example, use *CoffeeScript*
-- **Text:** This property can't be blank. For example, use *Start Break*
+- **Normal Image:** This property can't be blank. For example, use *CoffeeScript*.
+- **Text:** This property can't be blank. For example, use *Start Break*.
 - **Width:** *Auto* or *SizeToContent*
 - **Height:** *Auto* or *SizeToContent*
 
@@ -307,9 +307,9 @@ The quick filter control adds a search field to the page. You can apply styles t
 
 - The quick filter is contained in a form group.
 - The group name starts with `SearchInputGroup`.
-- Inside the group, the first control is a `QuickFilter` control. (This is where the user enters the search string.)
-- The second control is a `FormStaticTextControl` with the name `NumberOfResults`. (This is optional and shows the number of found items if included.)
-- The third control is a `CommonButton` control with a name that starts with `ClearButton`.
+- Inside the group, the first control is a `QuickFilter` control. (This control is where the user enters the search string.)
+- The second control is a `FormStaticTextControl` that is named `NumberOfResults`. (This control is optional. If it's included, it shows the number of found items.)
+- The third control is a `CommonButton` control, and its name starts with `ClearButton`.
 
 The following illustration shows two quick filter controls. The quick filter on the left has an empty quick filter, and the number of results isn't visible. The quick filter on the right contains a search string and shows the number of results.
 
@@ -317,23 +317,23 @@ The following illustration shows two quick filter controls. The quick filter on 
 
 ## Center-align elements on a tab
 
-To align elements in the center of a tab, then the group name must start with `TabContentGroup` and have the following properties:
+To align elements in the center of a tab, the group name must start with `TabContentGroup`, and the group must have the following properties:
 
-- Width Mode: `SizeToAvailable`
-- Height Mode: `SizeToAvailable`
+- **Width Mode:** `SizeToAvailable`
+- **Height Mode:** `SizeToAvailable`
 
 ## Align a grid, detail part, and quick filter
 
-To arrange a customized grid, detail part, and quick filter so they resemble the standard design, then keep the following points in mind when putting them all together:
+To arrange a customized grid, detail part, and quick filter so that they resemble the standard design, keep the following points in mind when you put them all together:
 
-- If the grid has a quick filter, then both the grid and the quick filter should be inside the group whose name starts with `GridGroup`.
-- To apply styles to detail part, the group name must start with `DetailInformationGroup`
+- If the grid has a quick filter, both the grid and the quick filter should be inside the group that has a name that starts with `GridGroup`.
+- To apply styles to a detail part, the group name must start with `DetailInformationGroup`,
 
-The following screenshot shows a typical grid, including a quick filter and with the detail part on the right.
+The following illustration shows a typical grid that includes a quick filter and a detail part on the right.
 
-![A typical grid, including a quick filter and detail part.](media/pfe-styles-align-grid.png "A typical grid, including a quick filter and detail part")
+![Typical grid that includes a quick filter and detail part.](media/pfe-styles-align-grid.png "Typical grid that includes a quick filter and detail part")
 
-In Visual Studio, a grid, detail part, and quick filter can be created using a structure such as the one shown in the following illustration.
+In Visual Studio, a grid, detail part, and quick filter can be created by using a structure such as the one that is shown in the following illustration.
 
 ![Typical code structure that aligns a grid, detail part, and quick filter.](media/pfe-styles-header-code-structure2.png "Typical code structure that aligns a grid, detail part, and quick filter")
 
