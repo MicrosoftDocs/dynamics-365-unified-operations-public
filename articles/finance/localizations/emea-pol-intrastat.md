@@ -58,9 +58,9 @@ The following fields are included in the Polish Intrastat declaration. All of th
 
 From the Global repository, import the latest version of the following Electronic reporting (ER) configurations:
 
-    - Intrastat model
-    - Intrastat report
-    - Intrastat (PL)
+   - Intrastat model
+   - Intrastat report
+   - Intrastat (PL)
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -195,9 +195,9 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 Import the latest version of the following ER configurations:
 
-    - Intrastat model
-    - Intrastat report
-    - Intrastat (PL)
+   - Intrastat model
+   - Intrastat report
+   - Intrastat (PL)
 
 ### Set up a company address
 
@@ -1259,4 +1259,4 @@ Import the latest version of the following ER configurations:
 
 17. Review the report in Excel format that is generated.
 
-![Intrastat report on arrivals](media/intrastat_pl_6.png)
+    ![Intrastat report on arrivals](media/intrastat_pl_6.png)
