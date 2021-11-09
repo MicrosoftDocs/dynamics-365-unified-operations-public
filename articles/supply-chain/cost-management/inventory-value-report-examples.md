@@ -21,8 +21,6 @@ Inventory value reports provide details about your inventory physical and financ
 
 For more information about how to generate an use each type of inventory value report, see [Inventory value reports](inventory-value-report-storage.md).
 
-<!-- KFM: I think one reason we are adding this new text is that we wanted to provide more information about "reconciliation". Maybe we should do that here in the intro and/or add a section about it (here or in the other topic). Shouldn't at least one of our examples reference this issue?  -->
-
 ## Sample data that is used in these examples
 
 The examples in this topic are based on the sample inventory transaction data that is described in this section.
@@ -69,8 +67,6 @@ The example system has an inventory value report configuration with the followin
 
 Using the sample data and report configuration described at start of this topic, you will get the results shown in the following table and screenshots.
 
-<!-- KFM: We should describe what are we showing in the following table, and point out anything interesting about this example. -->
-
 | Resource type | Resource | Site | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount | Average unit cost |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Material | B0001 | 1 | Ending balance | 9.00 | 908.33 | 5.00 | 375.00 | 14.00 | 1,283.33 | 91.67 |
@@ -91,8 +87,6 @@ The following screenshot shows the inventory value report storage for example 1
 ## Inventory value report example 2
 
 Using the sample data described at start of this topic, but changing the report configuration to use **Level**: *Transactions*, and running the report with **From date:** *March 15*, you will get the results shown in the following table and screenshots.
-
-<!-- KFM: We should describe what are we showing in the following table, and point out anything interesting about this example. -->
 
 | Resource type | Resource | Site | Date | Number | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -122,17 +116,15 @@ The following screenshot shows the inventory value report storage for example 2
 
 ## Inventory value report example 3
 
-We recommend that you execute the inventory value report after the recalculation/inventory closing to have the transactions and amounts affected by the recalculation/inventory closing. <!-- KFM: Clarify "recalculation/inventory closing". Remove the "/" and use a clearer phrase. -->
+We recommend that you execute the inventory value report after the recalculation or inventory closing to have the transactions and amounts affected by the recalculation/inventory closing.
 
-The following subsections show inventory value reports generated after inventory closing till May 30. <!-- KFM: Clarify "inventory closing till". -->
+The following subsections show inventory value reports generated after closing inventory until May 30.
 
 ### Example 3 using the totals level
 
 **Level:** *Totals*
 
 Using the sample data and inventory value report configuration described at start of this topic (with **Level**: *Totals*), you will get the results shown in the following table.
-
-<!-- KFM: We should describe what are we showing in the following table, and point out anything interesting about this example. -->
 
 | Resource type | Resource | Site | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount | Average unit cost |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -142,8 +134,6 @@ Using the sample data and inventory value report configuration described at star
 ### Example 3 using the transactions level
 
 Using the sample data described at start of this topic, but changing the inventory value report configuration to use **Level**: *Transactions*, you will get the results shown in the following table.
-
-<!-- KFM: We should describe what are we showing in the following table, and point out anything interesting about this example. -->
 
 | Resource type | Resource | Site | Date | Number | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount |
 |---|---|---|---|---|---|---|---|---|---|---|---|

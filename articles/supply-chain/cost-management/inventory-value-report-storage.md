@@ -107,16 +107,15 @@ Use the **Inventory value reports** page to set up the content that you want to 
 
         If neither **Resource ID** nor **Resource Group** has **View** enabled, you will only see a total inventory value based on the inventory dimensions you selected.
 
-1. Expand the **Rows** FastTab and make the following settings. These settings control which rows your report will include.
-    - **Material** – <!-- KFM: Description needed. -->
-    - **Labor** – <!-- KFM: Description needed. -->
-    - **Indirect cost** – <!-- KFM: Description needed. -->
-    - **Direct outsourcing** – <!-- KFM: Description needed. -->
+1. Expand the **Rows** FastTab and make the following settings. These settings let you add or remove the following WIP-related subsections to the report.
+    - **Material** – Set this to *Yes* to show information about materials. Material is a default resource type because materials must be included in all report configurations to create a reliable output.
+    - **Labor** – Set this to *Yes* to show labor costs of work in progress.
+    - **Indirect cost** – Set this to *Yes* to show indirect costs of work in progress.
+    - **Direct outsourcing** – Set this to *Yes* to show direct outsourcing costs of work in progress. This is useful for subcontracting.
     - **Detail Level** – Choose a view option for the report. Select one of the following options:
-        - *Transactions* – View all relevant transactions in the report. Note that you may experience performance issues when viewing reports that include a large volume of transactions, so we recommend using inventory value report storage when using this option. <!-- KFM: Confirm my reformulation of this point. -->
-        - *Totals* – <!-- KFM: Description needed. -->
-
-    - **Include beginning balance** – <!-- KFM: Description needed. -->. This option is only available when **Detail level** is set to *Transactions*.
+        - *Transactions* – View all relevant transactions in the report. Note that you may experience performance issues when viewing reports that include a large volume of transactions, so we recommend using inventory value report storage when using this option.
+        - *Totals* – View the total result.
+    - **Include beginning balance** – Set this to *Yes* to show the beginning balance. This option is only available when **Detail level** is set to *Transactions*.
 
 ## Generate an Inventory value report storage report
 
