@@ -49,7 +49,7 @@ A Finance and Operations app doesn't provision the endpoints. The endpoints must
 ## Subscribing to Finance and Operations apps events from Dataverse
 
 > [!IMPORTANT]
-> Before you subscribe to Finance and Operations apps business events and data events in Microsoft Dataverse, you must enable the Microsoft Power Platform integration. For information about how to enable the Microsoft Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](../power-platform/enable-power-platform-integration.md).
+> Before you subscribe to Finance and Operations apps business events and data events in Microsoft Dataverse, you must enable the Microsoft Power Platform integration. For information about how to enable the Microsoft Power Platform integration for a Finance and Operations apps environment, see [Enable the Microsoft Power Platform integration](../power-platform/enable-power-platform-integration.md).
 
 After the Microsoft Power Platform integration is enabled, you can subscribe to Finance and Operations apps business events and data events from Dataverse. Subscription enables the following capabilities:
 
