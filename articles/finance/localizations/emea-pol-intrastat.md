@@ -400,404 +400,404 @@ Import the latest version of the following ER configurations:
 19. In the **Document version** field, enter **22**.
 20. Select **OK**, and review the report in XML format that is generated. The following table shows the values in the example report.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Field name</strong></p>
-</td>
-<td>
-<p><strong>Field description</strong></p>
-</td>
-<td>
-<p><strong>Value</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p><strong>Information about the document</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Deklaracja Data</p>
-</td>
-<td>
-<p>The date when the document was created.</p>
-</td>
-<td>
-<p>2021-10-19</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Miejscowosc</p>
-</td>
-<td>
-<p>The city where the document was created.</p>
-</td>
-<td>
-<p>Krakow</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>LacznaLiczbaPozycji</p>
-</td>
-<td>
-<p>The total number of items.</p>
-</td>
-<td>
-<p>1</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>LacznaWartoscStatystyczna</p>
-</td>
-<td>
-<p>The total statistical value.</p>
-</td>
-<td>
-<p>2632</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>LacznaWartoscFaktur</p>
-</td>
-<td>
-<p>The total invoice value.</p>
-</td>
-<td>
-<p>2632</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>UC</p>
-</td>
-<td>
-<p>The unit code.</p>
-</td>
-<td>
-<p>420000</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Rodzaj</p>
-</td>
-<td>
-<p>The type of declaration.</p>
-</td>
-<td>
-<p>D</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Wersja</p>
-</td>
-<td>
-<p>The document version.</p>
-</td>
-<td>
-<p>22</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Numer</p>
-</td>
-<td>
-<p>The document number.</p>
-</td>
-<td>
-<p>11</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Miesiac</p>
-</td>
-<td width="330">
-<p>The reference month.</p>
-</td>
-<td>
-<p>10</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Rok</p>
-</td>
-<td width="330">
-<p>The reference year.</p>
-</td>
-<td>
-<p>2021</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Typ</p>
-</td>
-<td width="330">
-<p>The report direction.</p>
-</td>
-<td>
-<p>W</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>NrWlasny</p>
-</td>
-<td width="330">
-<p>The declaration identifier.</p>
-</td>
-<td>
-<p>21ISTDEMF-0001</p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p><strong>Information about the company</strong></p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Miejscowosc</p>
-</td>
-<td width="330">
-<p>The city where the company is located.</p>
-</td>
-<td>
-<p>Warsaw</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Regon</p>
-</td>
-<td width="330">
-<p>The company's Regon code.</p>
-</td>
-<td>
-<p>12345678901234</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Nip</p>
-</td>
-<td>
-<p>The company's NIP code.</p>
-</td>
-<td>
-<p>1234567890</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>KodPocztowy</p>
-</td>
-<td>
-<p>The company's ZIP/postal code.</p>
-</td>
-<td>
-<p>31-111</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>UlicaNumer</p>
-</td>
-<td>
-<p>The street where the company is located.</p>
-</td>
-<td>
-<p>Statystyczna 22/1</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Nazwa</p>
-</td>
-<td>
-<p>The name of the company.</p>
-</td>
-<td>
-<p>Contoso Entertainment System Germany</p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p><strong>Information about the good</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>WartoscStatystyczna</p>
-</td>
-<td>
-<p>The statistical value.</p>
-</td>
-<td>
-<p>2632</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>WartoscFaktury</p>
-</td>
-<td>
-<p>The invoice value.</p>
-</td>
-<td>
-<p>2632</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>MasaNetto</p>
-</td>
-<td>
-<p>The net mass.</p>
-</td>
-<td>
-<p>16</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>IdKontrahenta</p>
-</td>
-<td>
-<p>The customer's VAT number.</p>
-</td>
-<td>
-<p>DE9012</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>KodTowarowy</p>
-</td>
-<td>
-<p>The commodity code.</p>
-</td>
-<td>
-<p>10020030</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>RodzajTransakcji</p>
-</td>
-<td>
-<p>The transaction code.</p>
-</td>
-<td>
-<p>11</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>WarunkiDostawy</p>
-</td>
-<td>
-<p>The terms of delivery mode.</p>
-</td>
-<td>
-<p>CIF</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>KrajPochodzeniaWysylki</p>
-</td>
-<td>
-<p>The code for the country or region of dispatch/destination.</p>
-</td>
-<td>
-<p>DE</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OpisTowaru</p>
-</td>
-<td>
-<p>A description of the commodities.</p>
-</td>
-<td>
-<p>Hardware</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>PozId</p>
-</td>
-<td>
-<p>The item number.</p>
-</td>
-<td>
-<p>1</p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p><strong>Contact information</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Email</p>
-</td>
-<td>
-<p>The submitter's email address.</p>
-</td>
-<td>
-<p>manishc@contoso.com</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Faks</p>
-</td>
-<td>
-<p>The submitter's fax number.</p>
-</td>
-<td>
-<p>425-555-5049</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Telefon</p>
-</td>
-<td>
-<p>The submitter's telephone number.</p>
-</td>
-<td>
-<p>425-555-5068</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>NazwiskoImie</p>
-</td>
-<td>
-<p>The submitter's name.</p>
-</td>
-<td>
-<p>Manish Chopra</p>
-</td>
-</tr>
-</tbody>
-</table>
+    <table>
+    <tbody>
+    <tr>
+    <td>
+    <p><strong>Field name</strong></p>
+    </td>
+    <td>
+    <p><strong>Field description</strong></p>
+    </td>
+    <td>
+    <p><strong>Value</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <p><strong>Information about the document</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Deklaracja Data</p>
+    </td>
+    <td>
+    <p>The date when the document was created.</p>
+    </td>
+    <td>
+    <p>2021-10-19</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Miejscowosc</p>
+    </td>
+    <td>
+    <p>The city where the document was created.</p>
+    </td>
+    <td>
+    <p>Krakow</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>LacznaLiczbaPozycji</p>
+    </td>
+    <td>
+    <p>The total number of items.</p>
+    </td>
+    <td>
+    <p>1</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>LacznaWartoscStatystyczna</p>
+    </td>
+    <td>
+    <p>The total statistical value.</p>
+    </td>
+    <td>
+    <p>2632</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>LacznaWartoscFaktur</p>
+    </td>
+    <td>
+    <p>The total invoice value.</p>
+    </td>
+    <td>
+    <p>2632</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>UC</p>
+    </td>
+    <td>
+    <p>The unit code.</p>
+    </td>
+    <td>
+    <p>420000</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Rodzaj</p>
+    </td>
+    <td>
+    <p>The type of declaration.</p>
+    </td>
+    <td>
+    <p>D</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Wersja</p>
+    </td>
+    <td>
+    <p>The document version.</p>
+    </td>
+    <td>
+    <p>22</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Numer</p>
+    </td>
+    <td>
+    <p>The document number.</p>
+    </td>
+    <td>
+    <p>11</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Miesiac</p>
+    </td>
+    <td width="330">
+    <p>The reference month.</p>
+    </td>
+    <td>
+    <p>10</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Rok</p>
+    </td>
+    <td width="330">
+    <p>The reference year.</p>
+    </td>
+    <td>
+    <p>2021</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Typ</p>
+    </td>
+    <td width="330">
+    <p>The report direction.</p>
+    </td>
+    <td>
+    <p>W</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>NrWlasny</p>
+    </td>
+    <td width="330">
+    <p>The declaration identifier.</p>
+    </td>
+    <td>
+    <p>21ISTDEMF-0001</p>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <p><strong>Information about the company</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Miejscowosc</p>
+    </td>
+    <td width="330">
+    <p>The city where the company is located.</p>
+    </td>
+    <td>
+    <p>Warsaw</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Regon</p>
+    </td>
+    <td width="330">
+    <p>The company's Regon code.</p>
+    </td>
+    <td>
+    <p>12345678901234</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Nip</p>
+    </td>
+    <td>
+    <p>The company's NIP code.</p>
+    </td>
+    <td>
+    <p>1234567890</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>KodPocztowy</p>
+    </td>
+    <td>
+    <p>The company's ZIP/postal code.</p>
+    </td>
+    <td>
+    <p>31-111</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>UlicaNumer</p>
+    </td>
+    <td>
+    <p>The street where the company is located.</p>
+    </td>
+    <td>
+    <p>Statystyczna 22/1</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Nazwa</p>
+    </td>
+    <td>
+    <p>The name of the company.</p>
+    </td>
+    <td>
+    <p>Contoso Entertainment System Germany</p>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <p><strong>Information about the good</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>WartoscStatystyczna</p>
+    </td>
+    <td>
+    <p>The statistical value.</p>
+    </td>
+    <td>
+    <p>2632</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>WartoscFaktury</p>
+    </td>
+    <td>
+    <p>The invoice value.</p>
+    </td>
+    <td>
+    <p>2632</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>MasaNetto</p>
+    </td>
+    <td>
+    <p>The net mass.</p>
+    </td>
+    <td>
+    <p>16</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>IdKontrahenta</p>
+    </td>
+    <td>
+    <p>The customer's VAT number.</p>
+    </td>
+    <td>
+    <p>DE9012</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>KodTowarowy</p>
+    </td>
+    <td>
+    <p>The commodity code.</p>
+    </td>
+    <td>
+    <p>10020030</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>RodzajTransakcji</p>
+    </td>
+    <td>
+    <p>The transaction code.</p>
+    </td>
+    <td>
+    <p>11</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>WarunkiDostawy</p>
+    </td>
+    <td>
+    <p>The terms of delivery mode.</p>
+    </td>
+    <td>
+    <p>CIF</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>KrajPochodzeniaWysylki</p>
+    </td>
+    <td>
+    <p>The code for the country or region of dispatch/destination.</p>
+    </td>
+    <td>
+    <p>DE</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>OpisTowaru</p>
+    </td>
+    <td>
+    <p>A description of the commodities.</p>
+    </td>
+    <td>
+    <p>Hardware</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>PozId</p>
+    </td>
+    <td>
+    <p>The item number.</p>
+    </td>
+    <td>
+    <p>1</p>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <p><strong>Contact information</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Email</p>
+    </td>
+    <td>
+    <p>The submitter's email address.</p>
+    </td>
+    <td>
+    <p>manishc@contoso.com</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Faks</p>
+    </td>
+    <td>
+    <p>The submitter's fax number.</p>
+    </td>
+    <td>
+    <p>425-555-5049</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Telefon</p>
+    </td>
+    <td>
+    <p>The submitter's telephone number.</p>
+    </td>
+    <td>
+    <p>425-555-5068</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>NazwiskoImie</p>
+    </td>
+    <td>
+    <p>The submitter's name.</p>
+    </td>
+    <td>
+    <p>Manish Chopra</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
 21. Review the report in Excel format that is generated.
 
@@ -847,415 +847,415 @@ Import the latest version of the following ER configurations:
 15. In the **Document version** field, enter **22**.
 16. Select **OK**, and review the report in XML format that is generated. The following table shows the values in the example report.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Field name</strong></p>
-</td>
-<td>
-<p><strong>Field description</strong></p>
-</td>
-<td>
-<p><strong>Value</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p style="text-align: center;"><strong>Information about the document</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Deklaracja Data</p>
-</td>
-<td>
-<p>The date when the document was created.</p>
-</td>
-<td>
-<p>2021-10-19</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Miejscowosc</p>
-</td>
-<td>
-<p>The city where the document was created.</p>
-</td>
-<td>
-<p>Krakow</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>LacznaLiczbaPozycji</p>
-</td>
-<td>
-<p>The total number of items.</p>
-</td>
-<td>
-<p>1</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>LacznaWartoscStatystyczna</p>
-</td>
-<td>
-<p>The total statistical value.</p>
-</td>
-<td>
-<p>965</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>LacznaWartoscFaktur</p>
-</td>
-<td>
-<p>The total invoice value.</p>
-</td>
-<td>
-<p>965</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>UC</p>
-</td>
-<td>
-<p>The unit code.</p>
-</td>
-<td>
-<p>420000</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Rodzaj</p>
-</td>
-<td>
-<p>The type of declaration.</p>
-</td>
-<td>
-<p>D</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Wersja</p>
-</td>
-<td>
-<p>The document version.</p>
-</td>
-<td>
-<p>22</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Numer</p>
-</td>
-<td>
-<p>The document number.</p>
-</td>
-<td>
-<p>11</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Miesiac</p>
-</td>
-<td width="332">
-<p>The reference month.</p>
-</td>
-<td>
-<p>10</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Rok</p>
-</td>
-<td width="332">
-<p>The reference year.</p>
-</td>
-<td>
-<p>2021</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Typ</p>
-</td>
-<td width="332">
-<p>The report direction.</p>
-</td>
-<td>
-<p>P</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>NrWlasny</p>
-</td>
-<td width="332">
-<p>The declaration identifier.</p>
-</td>
-<td>
-<p>21ISTDEMF-0002</p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p style="text-align: center;"><strong>Information about the company</strong></p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Miejscowosc</p>
-</td>
-<td width="332">
-<p>The city where the company is located.</p>
-</td>
-<td>
-<p>Warsaw</p>
-</td>
-</tr>
-<tr>
-<td width="191">
-<p>Regon</p>
-</td>
-<td width="332">
-<p>The company's Regon code.</p>
-</td>
-<td>
-<p>12345678901234</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Nip</p>
-</td>
-<td>
-<p>The company's NIP code.</p>
-</td>
-<td>
-<p>1234567890</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>KodPocztowy</p>
-</td>
-<td>
-<p>The company's ZIP/postal code.</p>
-</td>
-<td>
-<p>31-111</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>UlicaNumer</p>
-</td>
-<td>
-<p>The street where the company is located.</p>
-</td>
-<td>
-<p>Statystyczna 22/1</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Nazwa</p>
-</td>
-<td>
-<p>The name of the company.</p>
-</td>
-<td>
-<p>Contoso Entertainment System Germany</p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p style="text-align: center;"><strong>Information about the good</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>WartoscStatystyczna</p>
-</td>
-<td>
-<p>The statistical value.</p>
-</td>
-<td>
-<p>965</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>WartoscFaktury</p>
-</td>
-<td>
-<p>The invoice value.</p>
-</td>
-<td>
-<p>965</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>MasaNetto</p>
-</td>
-<td>
-<p>The net mass.</p>
-</td>
-<td>
-<p>30</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>KrajPochodzenia</p>
-</td>
-<td>
-<p>The code for the country or region of origin.</p>
-</td>
-<td>
-<p>DE</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>RodzajTransportu</p>
-</td>
-<td>
-<p>The mode of transport code.</p>
-</td>
-<td>
-<p>3</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>KodTowarowy</p>
-</td>
-<td>
-<p>The commodity code.</p>
-</td>
-<td>
-<p>10020030</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>RodzajTransakcji</p>
-</td>
-<td>
-<p>The transaction code.</p>
-</td>
-<td>
-<p>11</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>WarunkiDostawy</p>
-</td>
-<td>
-<p>The terms of delivery mode.</p>
-</td>
-<td>
-<p>CIF</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>KrajPochodzeniaWysylki</p>
-</td>
-<td>
-<p>The code for the country or region of dispatch/destination.</p>
-</td>
-<td>
-<p>DE</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>OpisTowaru</p>
-</td>
-<td>
-<p>A description of the commodities.</p>
-</td>
-<td>
-<p>Hardware</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>PozId</p>
-</td>
-<td>
-<p>The item number.</p>
-</td>
-<td>
-<p>1</p>
-</td>
-</tr>
-<tr>
-<td colspan="3">
-<p style="text-align: center;"><strong>Contact information</strong></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Email</p>
-</td>
-<td>
-<p>The submitter's email address.</p>
-</td>
-<td>
-<p>manishc@contoso.com</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Faks</p>
-</td>
-<td>
-<p>The submitter's fax number.</p>
-</td>
-<td>
-<p>425-555-5049</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Telefon</p>
-</td>
-<td>
-<p>The submitter's telephone number.</p>
-</td>
-<td>
-<p>425-555-5068</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>NazwiskoImie</p>
-</td>
-<td>
-<p>The submitter's name.</p>
-</td>
-<td>
-<p>Manish Chopra</p>
-</td>
-</tr>
-</tbody>
-</table>
+    <table>
+    <tbody>
+    <tr>
+    <td>
+    <p><strong>Field name</strong></p>
+    </td>
+    <td>
+    <p><strong>Field description</strong></p>
+    </td>
+    <td>
+    <p><strong>Value</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <p style="text-align: center;"><strong>Information about the document</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Deklaracja Data</p>
+    </td>
+    <td>
+    <p>The date when the document was created.</p>
+    </td>
+    <td>
+    <p>2021-10-19</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Miejscowosc</p>
+    </td>
+    <td>
+    <p>The city where the document was created.</p>
+    </td>
+    <td>
+    <p>Krakow</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>LacznaLiczbaPozycji</p>
+    </td>
+    <td>
+    <p>The total number of items.</p>
+    </td>
+    <td>
+    <p>1</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>LacznaWartoscStatystyczna</p>
+    </td>
+    <td>
+    <p>The total statistical value.</p>
+    </td>
+    <td>
+    <p>965</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>LacznaWartoscFaktur</p>
+    </td>
+    <td>
+    <p>The total invoice value.</p>
+    </td>
+    <td>
+    <p>965</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>UC</p>
+    </td>
+    <td>
+    <p>The unit code.</p>
+    </td>
+    <td>
+    <p>420000</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Rodzaj</p>
+    </td>
+    <td>
+    <p>The type of declaration.</p>
+    </td>
+    <td>
+    <p>D</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Wersja</p>
+    </td>
+    <td>
+    <p>The document version.</p>
+    </td>
+    <td>
+    <p>22</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Numer</p>
+    </td>
+    <td>
+    <p>The document number.</p>
+    </td>
+    <td>
+    <p>11</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Miesiac</p>
+    </td>
+    <td width="332">
+    <p>The reference month.</p>
+    </td>
+    <td>
+    <p>10</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Rok</p>
+    </td>
+    <td width="332">
+    <p>The reference year.</p>
+    </td>
+    <td>
+    <p>2021</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Typ</p>
+    </td>
+    <td width="332">
+    <p>The report direction.</p>
+    </td>
+    <td>
+    <p>P</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>NrWlasny</p>
+    </td>
+    <td width="332">
+    <p>The declaration identifier.</p>
+    </td>
+    <td>
+    <p>21ISTDEMF-0002</p>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <p style="text-align: center;"><strong>Information about the company</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Miejscowosc</p>
+    </td>
+    <td width="332">
+    <p>The city where the company is located.</p>
+    </td>
+    <td>
+    <p>Warsaw</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="191">
+    <p>Regon</p>
+    </td>
+    <td width="332">
+    <p>The company's Regon code.</p>
+    </td>
+    <td>
+    <p>12345678901234</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Nip</p>
+    </td>
+    <td>
+    <p>The company's NIP code.</p>
+    </td>
+    <td>
+    <p>1234567890</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>KodPocztowy</p>
+    </td>
+    <td>
+    <p>The company's ZIP/postal code.</p>
+    </td>
+    <td>
+    <p>31-111</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>UlicaNumer</p>
+    </td>
+    <td>
+    <p>The street where the company is located.</p>
+    </td>
+    <td>
+    <p>Statystyczna 22/1</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Nazwa</p>
+    </td>
+    <td>
+    <p>The name of the company.</p>
+    </td>
+    <td>
+    <p>Contoso Entertainment System Germany</p>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <p style="text-align: center;"><strong>Information about the good</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>WartoscStatystyczna</p>
+    </td>
+    <td>
+    <p>The statistical value.</p>
+    </td>
+    <td>
+    <p>965</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>WartoscFaktury</p>
+    </td>
+    <td>
+    <p>The invoice value.</p>
+    </td>
+    <td>
+    <p>965</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>MasaNetto</p>
+    </td>
+    <td>
+    <p>The net mass.</p>
+    </td>
+    <td>
+    <p>30</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>KrajPochodzenia</p>
+    </td>
+    <td>
+    <p>The code for the country or region of origin.</p>
+    </td>
+    <td>
+    <p>DE</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>RodzajTransportu</p>
+    </td>
+    <td>
+    <p>The mode of transport code.</p>
+    </td>
+    <td>
+    <p>3</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>KodTowarowy</p>
+    </td>
+    <td>
+    <p>The commodity code.</p>
+    </td>
+    <td>
+    <p>10020030</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>RodzajTransakcji</p>
+    </td>
+    <td>
+    <p>The transaction code.</p>
+    </td>
+    <td>
+    <p>11</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>WarunkiDostawy</p>
+    </td>
+    <td>
+    <p>The terms of delivery mode.</p>
+    </td>
+    <td>
+    <p>CIF</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>KrajPochodzeniaWysylki</p>
+    </td>
+    <td>
+    <p>The code for the country or region of dispatch/destination.</p>
+    </td>
+    <td>
+    <p>DE</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>OpisTowaru</p>
+    </td>
+    <td>
+    <p>A description of the commodities.</p>
+    </td>
+    <td>
+    <p>Hardware</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>PozId</p>
+    </td>
+    <td>
+    <p>The item number.</p>
+    </td>
+    <td>
+    <p>1</p>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+    <p style="text-align: center;"><strong>Contact information</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Email</p>
+    </td>
+    <td>
+    <p>The submitter's email address.</p>
+    </td>
+    <td>
+    <p>manishc@contoso.com</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Faks</p>
+    </td>
+    <td>
+    <p>The submitter's fax number.</p>
+    </td>
+    <td>
+    <p>425-555-5049</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>Telefon</p>
+    </td>
+    <td>
+    <p>The submitter's telephone number.</p>
+    </td>
+    <td>
+    <p>425-555-5068</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p>NazwiskoImie</p>
+    </td>
+    <td>
+    <p>The submitter's name.</p>
+    </td>
+    <td>
+    <p>Manish Chopra</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
 17. Review the report in Excel format that is generated.
 
