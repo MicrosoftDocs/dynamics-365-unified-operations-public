@@ -4,7 +4,7 @@
 title: Manage business event endpoints
 description: This topic provides information about how to manage endpoints for Finance and Operations apps business events.
 author: jaredha
-ms.date: 11/08/2021
+ms.date: 11/09/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -49,7 +49,7 @@ A Finance and Operations app doesn't provision the endpoints. The endpoints must
 ## Subscribing to Finance and Operations apps events from Dataverse
 
 > [!IMPORTANT]
-> Before you subscribe to Finance and Operations apps business events and data events in Microsoft Dataverse, you must enable the Microsoft Power Platform integration. For information about how to enable the Microsoft Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](../../power-platform/enable-power-platform-integration.md).
+> Before you subscribe to Finance and Operations apps business events and data events in Microsoft Dataverse, you must enable the Microsoft Power Platform integration. For information about how to enable the Microsoft Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](../power-platform/enable-power-platform-integration.md).
 
 After the Microsoft Power Platform integration is enabled, you can subscribe to Finance and Operations apps business events and data events from Dataverse. Subscription enables the following capabilities:
 
