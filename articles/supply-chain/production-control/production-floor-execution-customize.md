@@ -48,22 +48,20 @@ When you're done, the new button (action) will be automatically listed on the **
     - `<ExtensionPrefix>` - Uniquely identifies your solution (typically using your company name).
     - `<FormName>` - Is a unique name for this form.
 1. Create a menu item named `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`.
-1. Create an extension named `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension` where the `getMainMenuItemsList` method is extended by adding the new menu item to the list.
+1. Create an extension named `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension` where the `getMainMenuItemsList` method is extended by adding the new menu item to the list. The following code shows an example.
 
-When you're done, the new main view will be automatically listed in **Main view** combobox on the **Design tabs** page in Supply Chain Management, where you (or an admin or floor manager) can easily easily add it to new or existing tabs, just as with the standard main views. For instructions, see [Design the production floor execution interface](production-floor-execution-tabs.md). <!--KFM: I think this is right, but please review and confirm. -->
+    ```xpp
+    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
+        static public List getMainMenuItemsList()
+        {
+            List menuItemList = next getMainMenuItemsList();
+            menuItemList.addEnd(menuItemDisplayStr(<ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>));
+            return menuItemList;
+        }
+    ```
 
-<!--KFM: Let's introduce the following code. What are we showing here? -->
-
-```xpp
-[ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
-public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
-    static public List getMainMenuItemsList()
-    {
-        List menuItemList = next getMainMenuItemsList();
-        menuItemList.addEnd(menuItemDisplayStr(<ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>));
-        return menuItemList;
-    }
-```
+When you're done, the new main view will be automatically listed in **Main view** combobox on the **Design tabs** page in Supply Chain Management, where you (or an admin or floor manager) can easily add it to new or existing tabs, just as with the standard main views. For instructions, see [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ## Add a details view
 
@@ -73,7 +71,7 @@ public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_E
 1. Create a menu item named `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`.
 1. Create an extension named `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension` where the `getDetailsMenuItemList` method is extended by adding the new menu item to the list.
 
-When you're done, the new details view will be automatically listed in **Details view** combobox on the **Design tabs** page in Supply Chain Management, where you (or an admin or floor manager) can easily add it to new or existing tabs, just as with the standard details views. For instructions, see [Design the production floor execution interface](production-floor-execution-tabs.md). <!--KFM: I added this, please review and confirm. -->
+When you're done, the new details view will be automatically listed in **Details view** combobox on the **Design tabs** page in Supply Chain Management, where you (or an admin or floor manager) can easily add it to new or existing tabs, just as with the standard details views. For instructions, see [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ## Add a numeric keypad to a form or dialog
 
@@ -81,23 +79,58 @@ Here is an example of how to add numeric keypads to a form:
 
 1. Each form must contain the number of numeric keypad controllers equal to the number of numeric keypads on the form.
 
-    <!--KFM: Code needed to replace screen shot in current draft. -->
+    ```xpp
+    private JmgProductionFloorExecutionNumpadController   numpadController1;
+    private JmgProductionFloorExecutionNumpadController   numpadController2;
+    private JmgProductionFloorExecutionNumpadController   numpadController3;
+    ```
 
 1. Set up the behavior of each numeric keypad controller and connect it to a numeric keypad form part.
 
-    <!--KFM: Code needed to replace screen shot in current draft. -->
+    ```xpp
+    /// <summary>
+    /// Initializes all numpad controllers, defines their behavior and connects them with numpad form parts.
+    /// </summary>
+    public void initializeNumpadController()
+    {
+        numpadController1 = new JmgProductionFloorExecutionNumpadController();
+        numpadController1.getValueFromNumpadDelegate += eventhandler(this.setQuanityValueFromNumpad_1);
+        QuantityNumpad1.getPartFormRun().setNumpadController(numpadController1);
+    
+        numpadController2 = new JmgProductionFloorExecutionNumpadController();
+        numpadController2.parmNumpadEnabled(false);
+        numpadController2.parmNumpadValue(333.56);
+        numpadController2.getValueFromNumpadDelegate += eventhandler(this.setQuanityValueFromNumpad_2);
+        QuantityNumpad2.getPartFormRun().setNumpadController(numpadController2);
+    }
+    ```
 
 ## Use a numeric keypad as a pop-up dialog
 
 The following example shows one way to set up a numeric keypad controller for a pop-up dialog.
 
 ```xpp
-    private void setupNumpadController()
-    {
-        numpadController = new JmgProductionFloorExecutionNumpadController();
-        numpadController.parmShouldNumpadShowOkCancelButtons(true);
-        numpadController.setNumpadValueToParentFormDelegate += eventhandler(this.setQtyValueFromNumpad);
-    }
+private void setupNumpadController()
+{
+    numpadController = new JmgProductionFloorExecutionNumpadController();
+    numpadController.parmShouldNumpadShowOkCancelButtons(true);
+    numpadController.setNumpadValueToParentFormDelegate += eventhandler(this.setQtyValueFromNumpad);
+}
+```
+
+The following example shows one way to call the numeric keypad pop-up dialog.
+
+
+```xpp
+Args args = new Args();
+args.name(formstr(JmgProductionFloorExecutionNumpad));
+args.menuItemName(menuItemDisplayStr(JmgProductionFloorExecutionNumpad));
+args.caller(element);
+Object formRun = classfactory.formRunClass(args);
+formRun.init();
+formRun.setNumpadController(numpadController);
+numpadController.setValueToNumpad(333.56);
+formRun.run();
 ```
 
 ## Additional resources
