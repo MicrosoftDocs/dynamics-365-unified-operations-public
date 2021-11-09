@@ -3,7 +3,7 @@
 
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
-author: rubencdelgado
+author: BrianShook
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: josaw
 ms.custom: ["268444", "intro-internal"]
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
