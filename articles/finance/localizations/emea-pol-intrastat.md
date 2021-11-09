@@ -1,4 +1,20 @@
-﻿# Polish Intrastat
+---
+# required metadata
+
+title: Polish Intrastat
+description: This topic contains information about Intrastat reporting in Poland.
+author: andosip
+ms.date: 11/09/2021
+ms.topic: article
+audience: Application User
+ms.reviewer: kfender
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+# Polish Intrastat
+
+[!include[banner](../includes/banner.md)]
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Polish Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -12,7 +28,7 @@ The following fields are included in the Polish Intrastat declaration. All of th
 | Numer | The declaration number in the reference period. |
 | Wersja | The version number of the declaration. |
 | NrWlasny | The declaration identifier. The value is automatically generated. |
-| Typ | The report direction.</br><ul></br><li>For arrivals, "P" is printed.</li></br><li>For dispatches, "W" is printed.</li></br></ul> |
+| Typ | The report direction.</br><li>For arrivals, "P" is printed.</li><li>For dispatches, "W" is printed.</li> |
 | Rodzaj | The type of declaration. The value indicates whether the report is the original declaration or a correction declaration. |
 | UC | The unit code that the Intrastat declaration is addressed to. The value is specified in the **Tax exempt number** field in the **Sales tax** section on the **Agent** tab of the **Foreign trade parameters** page. |
 | Nazwa | The name of the company. |
@@ -43,12 +59,10 @@ The following fields are included in the Polish Intrastat declaration. All of th
 From the Global repository, import the latest version of the following Electronic reporting (ER) configurations:
 
 -   Intrastat model
-
 -   Intrastat report
-
 -   Intrastat (PL)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Set up a VAT ID and an enterprise number for your company
 
@@ -153,25 +167,15 @@ You must create two registration types for company codes: one for the VAT ID (NI
 -   Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Polish Intrastat, select the following fields:
 
     -   Commodity
-
     -   Transaction code
-
     -   Country/region of origin
-
     -   Transport
-
     -   Delivery terms
-
     -   Country/region of sender
-
     -   Country/region
-
     -   Correction
-
     -   Tax exempt number
-
     -   Direction
-
     -   Invoice
 
 ## Set up the transport method and delivery terms
@@ -554,45 +558,404 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 20. Select **OK**, and review the report in XML format that is generated. The following table shows the values in the example report.
 
-| Field name                         | Field description                                           | Value                                |
-|------------------------------------|-------------------------------------------------------------|--------------------------------------|
-| **Information about the document** |                                                             |                                      |
-| Deklaracja Data                    | The date when the document was created.                     | 2021-10-19                           |
-| Miejscowosc                        | The city where the document was created.                    | Krakow                               |
-| LacznaLiczbaPozycji                | The total number of items.                                  | 1                                    |
-| LacznaWartoscStatystyczna          | The total statistical value.                                | 2632                                 |
-| LacznaWartoscFaktur                | The total invoice value.                                    | 2632                                 |
-| UC                                 | The unit code.                                              | 420000                               |
-| Rodzaj                             | The type of declaration.                                    | D                                    |
-| Wersja                             | The document version.                                       | 22                                   |
-| Numer                              | The document number.                                        | 11                                   |
-| Miesiac                            | The reference month.                                        | 10                                   |
-| Rok                                | The reference year.                                         | 2021                                 |
-| Typ                                | The report direction.                                       | W                                    |
-| NrWlasny                           | The declaration identifier.                                 | 21ISTDEMF-0001                       |
-| **Information about the company**  |                                                             |                                      |
-| Miejscowosc                        | The city where the company is located.                      | Warsaw                               |
-| Regon                              | The company's Regon code.                                   | 12345678901234                       |
-| Nip                                | The company's NIP code.                                     | 1234567890                           |
-| KodPocztowy                        | The company's ZIP/postal code.                              | 31-111                               |
-| UlicaNumer                         | The street where the company is located.                    | Statystyczna 22/1                    |
-| Nazwa                              | The name of the company.                                    | Contoso Entertainment System Germany |
-| **Information about the good**     |                                                             |                                      |
-| WartoscStatystyczna                | The statistical value.                                      | 2632                                 |
-| WartoscFaktury                     | The invoice value.                                          | 2632                                 |
-| MasaNetto                          | The net mass.                                               | 16                                   |
-| IdKontrahenta                      | The customer's VAT number.                                  | DE9012                               |
-| KodTowarowy                        | The commodity code.                                         | 10020030                             |
-| RodzajTransakcji                   | The transaction code.                                       | 11                                   |
-| WarunkiDostawy                     | The terms of delivery mode.                                 | CIF                                  |
-| KrajPochodzeniaWysylki             | The code for the country or region of dispatch/destination. | DE                                   |
-| OpisTowaru                         | A description of the commodities.                           | Hardware                             |
-| PozId                              | The item number.                                            | 1                                    |
-| **Contact information**            |                                                             |                                      |
-| Email                              | The submitter's email address.                              | manishc@contoso.com                  |
-| Faks                               | The submitter's fax number.                                 | 425-555-5049                         |
-| Telefon                            | The submitter's telephone number.                           | 425-555-5068                         |
-| NazwiskoImie                       | The submitter's name.                                       | Manish Chopra                        |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field name</strong></p>
+</td>
+<td>
+<p><strong>Field description</strong></p>
+</td>
+<td>
+<p><strong>Value</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><strong>Information about the document</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Deklaracja Data</p>
+</td>
+<td>
+<p>The date when the document was created.</p>
+</td>
+<td>
+<p>2021-10-19</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Miejscowosc</p>
+</td>
+<td>
+<p>The city where the document was created.</p>
+</td>
+<td>
+<p>Krakow</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LacznaLiczbaPozycji</p>
+</td>
+<td>
+<p>The total number of items.</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LacznaWartoscStatystyczna</p>
+</td>
+<td>
+<p>The total statistical value.</p>
+</td>
+<td>
+<p>2632</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LacznaWartoscFaktur</p>
+</td>
+<td>
+<p>The total invoice value.</p>
+</td>
+<td>
+<p>2632</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>UC</p>
+</td>
+<td>
+<p>The unit code.</p>
+</td>
+<td>
+<p>420000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Rodzaj</p>
+</td>
+<td>
+<p>The type of declaration.</p>
+</td>
+<td>
+<p>D</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Wersja</p>
+</td>
+<td>
+<p>The document version.</p>
+</td>
+<td>
+<p>22</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Numer</p>
+</td>
+<td>
+<p>The document number.</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Miesiac</p>
+</td>
+<td width="330">
+<p>The reference month.</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Rok</p>
+</td>
+<td width="330">
+<p>The reference year.</p>
+</td>
+<td>
+<p>2021</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Typ</p>
+</td>
+<td width="330">
+<p>The report direction.</p>
+</td>
+<td>
+<p>W</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>NrWlasny</p>
+</td>
+<td width="330">
+<p>The declaration identifier.</p>
+</td>
+<td>
+<p>21ISTDEMF-0001</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><strong>Information about the company</strong></p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Miejscowosc</p>
+</td>
+<td width="330">
+<p>The city where the company is located.</p>
+</td>
+<td>
+<p>Warsaw</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Regon</p>
+</td>
+<td width="330">
+<p>The company's Regon code.</p>
+</td>
+<td>
+<p>12345678901234</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Nip</p>
+</td>
+<td>
+<p>The company's NIP code.</p>
+</td>
+<td>
+<p>1234567890</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KodPocztowy</p>
+</td>
+<td>
+<p>The company's ZIP/postal code.</p>
+</td>
+<td>
+<p>31-111</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>UlicaNumer</p>
+</td>
+<td>
+<p>The street where the company is located.</p>
+</td>
+<td>
+<p>Statystyczna 22/1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Nazwa</p>
+</td>
+<td>
+<p>The name of the company.</p>
+</td>
+<td>
+<p>Contoso Entertainment System Germany</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><strong>Information about the good</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>WartoscStatystyczna</p>
+</td>
+<td>
+<p>The statistical value.</p>
+</td>
+<td>
+<p>2632</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>WartoscFaktury</p>
+</td>
+<td>
+<p>The invoice value.</p>
+</td>
+<td>
+<p>2632</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MasaNetto</p>
+</td>
+<td>
+<p>The net mass.</p>
+</td>
+<td>
+<p>16</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IdKontrahenta</p>
+</td>
+<td>
+<p>The customer's VAT number.</p>
+</td>
+<td>
+<p>DE9012</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KodTowarowy</p>
+</td>
+<td>
+<p>The commodity code.</p>
+</td>
+<td>
+<p>10020030</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RodzajTransakcji</p>
+</td>
+<td>
+<p>The transaction code.</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>WarunkiDostawy</p>
+</td>
+<td>
+<p>The terms of delivery mode.</p>
+</td>
+<td>
+<p>CIF</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KrajPochodzeniaWysylki</p>
+</td>
+<td>
+<p>The code for the country or region of dispatch/destination.</p>
+</td>
+<td>
+<p>DE</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OpisTowaru</p>
+</td>
+<td>
+<p>A description of the commodities.</p>
+</td>
+<td>
+<p>Hardware</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PozId</p>
+</td>
+<td>
+<p>The item number.</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><strong>Contact information</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Email</p>
+</td>
+<td>
+<p>The submitter's email address.</p>
+</td>
+<td>
+<p>manishc@contoso.com</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Faks</p>
+</td>
+<td>
+<p>The submitter's fax number.</p>
+</td>
+<td>
+<p>425-555-5049</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Telefon</p>
+</td>
+<td>
+<p>The submitter's telephone number.</p>
+</td>
+<td>
+<p>425-555-5068</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>NazwiskoImie</p>
+</td>
+<td>
+<p>The submitter's name.</p>
+</td>
+<td>
+<p>Manish Chopra</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 21. Review the report in Excel format that is generated.
 
@@ -670,46 +1033,415 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 16. Select **OK**, and review the report in XML format that is generated. The following table shows the values in the example report.
 
-| Field name                         | Field description                                           | Value                                |
-|------------------------------------|-------------------------------------------------------------|--------------------------------------|
-| **Information about the document** |                                                             |                                      |
-| Deklaracja Data                    | The date when the document was created.                     | 2021-10-19                           |
-| Miejscowosc                        | The city where the document was created.                    | Krakow                               |
-| LacznaLiczbaPozycji                | The total number of items.                                  | 1                                    |
-| LacznaWartoscStatystyczna          | The total statistical value.                                | 965                                  |
-| LacznaWartoscFaktur                | The total invoice value.                                    | 965                                  |
-| UC                                 | The unit code.                                              | 420000                               |
-| Rodzaj                             | The type of declaration.                                    | D                                    |
-| Wersja                             | The document version.                                       | 22                                   |
-| Numer                              | The document number.                                        | 11                                   |
-| Miesiac                            | The reference month.                                        | 10                                   |
-| Rok                                | The reference year.                                         | 2021                                 |
-| Typ                                | The report direction.                                       | P                                    |
-| NrWlasny                           | The declaration identifier.                                 | 21ISTDEMF-0002                       |
-| **Information about the company**  |                                                             |                                      |
-| Miejscowosc                        | The city where the company is located.                      | Warsaw                               |
-| Regon                              | The company's Regon code.                                   | 12345678901234                       |
-| Nip                                | The company's NIP code.                                     | 1234567890                           |
-| KodPocztowy                        | The company's ZIP/postal code.                              | 31-111                               |
-| UlicaNumer                         | The street where the company is located.                    | Statystyczna 22/1                    |
-| Nazwa                              | The name of the company.                                    | Contoso Entertainment System Germany |
-| **Information about the good**     |                                                             |                                      |
-| WartoscStatystyczna                | The statistical value.                                      | 965                                  |
-| WartoscFaktury                     | The invoice value.                                          | 965                                  |
-| MasaNetto                          | The net mass.                                               | 30                                   |
-| KrajPochodzenia                    | The code for the country or region of origin.               | DE                                   |
-| RodzajTransportu                   | The mode of transport code.                                 | 3                                    |
-| KodTowarowy                        | The commodity code.                                         | 10020030                             |
-| RodzajTransakcji                   | The transaction code.                                       | 11                                   |
-| WarunkiDostawy                     | The terms of delivery mode.                                 | CIF                                  |
-| KrajPochodzeniaWysylki             | The code for the country or region of dispatch/destination. | DE                                   |
-| OpisTowaru                         | A description of the commodities.                           | Hardware                             |
-| PozId                              | The item number.                                            | 1                                    |
-| **Contact information**            |                                                             |                                      |
-| Email                              | The submitter's email address.                              | manishc@contoso.com                  |
-| Faks                               | The submitter's fax number.                                 | 425-555-5049                         |
-| Telefon                            | The submitter's telephone number.                           | 425-555-5068                         |
-| NazwiskoImie                       | The submitter's name.                                       | Manish Chopra                        |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field name</strong></p>
+</td>
+<td>
+<p><strong>Field description</strong></p>
+</td>
+<td>
+<p><strong>Value</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p style="text-align: center;"><strong>Information about the document</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Deklaracja Data</p>
+</td>
+<td>
+<p>The date when the document was created.</p>
+</td>
+<td>
+<p>2021-10-19</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Miejscowosc</p>
+</td>
+<td>
+<p>The city where the document was created.</p>
+</td>
+<td>
+<p>Krakow</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LacznaLiczbaPozycji</p>
+</td>
+<td>
+<p>The total number of items.</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LacznaWartoscStatystyczna</p>
+</td>
+<td>
+<p>The total statistical value.</p>
+</td>
+<td>
+<p>965</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>LacznaWartoscFaktur</p>
+</td>
+<td>
+<p>The total invoice value.</p>
+</td>
+<td>
+<p>965</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>UC</p>
+</td>
+<td>
+<p>The unit code.</p>
+</td>
+<td>
+<p>420000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Rodzaj</p>
+</td>
+<td>
+<p>The type of declaration.</p>
+</td>
+<td>
+<p>D</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Wersja</p>
+</td>
+<td>
+<p>The document version.</p>
+</td>
+<td>
+<p>22</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Numer</p>
+</td>
+<td>
+<p>The document number.</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Miesiac</p>
+</td>
+<td width="332">
+<p>The reference month.</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Rok</p>
+</td>
+<td width="332">
+<p>The reference year.</p>
+</td>
+<td>
+<p>2021</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Typ</p>
+</td>
+<td width="332">
+<p>The report direction.</p>
+</td>
+<td>
+<p>P</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>NrWlasny</p>
+</td>
+<td width="332">
+<p>The declaration identifier.</p>
+</td>
+<td>
+<p>21ISTDEMF-0002</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p style="text-align: center;"><strong>Information about the company</strong></p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Miejscowosc</p>
+</td>
+<td width="332">
+<p>The city where the company is located.</p>
+</td>
+<td>
+<p>Warsaw</p>
+</td>
+</tr>
+<tr>
+<td width="191">
+<p>Regon</p>
+</td>
+<td width="332">
+<p>The company's Regon code.</p>
+</td>
+<td>
+<p>12345678901234</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Nip</p>
+</td>
+<td>
+<p>The company's NIP code.</p>
+</td>
+<td>
+<p>1234567890</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KodPocztowy</p>
+</td>
+<td>
+<p>The company's ZIP/postal code.</p>
+</td>
+<td>
+<p>31-111</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>UlicaNumer</p>
+</td>
+<td>
+<p>The street where the company is located.</p>
+</td>
+<td>
+<p>Statystyczna 22/1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Nazwa</p>
+</td>
+<td>
+<p>The name of the company.</p>
+</td>
+<td>
+<p>Contoso Entertainment System Germany</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p style="text-align: center;"><strong>Information about the good</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>WartoscStatystyczna</p>
+</td>
+<td>
+<p>The statistical value.</p>
+</td>
+<td>
+<p>965</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>WartoscFaktury</p>
+</td>
+<td>
+<p>The invoice value.</p>
+</td>
+<td>
+<p>965</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MasaNetto</p>
+</td>
+<td>
+<p>The net mass.</p>
+</td>
+<td>
+<p>30</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KrajPochodzenia</p>
+</td>
+<td>
+<p>The code for the country or region of origin.</p>
+</td>
+<td>
+<p>DE</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RodzajTransportu</p>
+</td>
+<td>
+<p>The mode of transport code.</p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KodTowarowy</p>
+</td>
+<td>
+<p>The commodity code.</p>
+</td>
+<td>
+<p>10020030</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RodzajTransakcji</p>
+</td>
+<td>
+<p>The transaction code.</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>WarunkiDostawy</p>
+</td>
+<td>
+<p>The terms of delivery mode.</p>
+</td>
+<td>
+<p>CIF</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>KrajPochodzeniaWysylki</p>
+</td>
+<td>
+<p>The code for the country or region of dispatch/destination.</p>
+</td>
+<td>
+<p>DE</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OpisTowaru</p>
+</td>
+<td>
+<p>A description of the commodities.</p>
+</td>
+<td>
+<p>Hardware</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PozId</p>
+</td>
+<td>
+<p>The item number.</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p style="text-align: center;"><strong>Contact information</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Email</p>
+</td>
+<td>
+<p>The submitter's email address.</p>
+</td>
+<td>
+<p>manishc@contoso.com</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Faks</p>
+</td>
+<td>
+<p>The submitter's fax number.</p>
+</td>
+<td>
+<p>425-555-5049</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Telefon</p>
+</td>
+<td>
+<p>The submitter's telephone number.</p>
+</td>
+<td>
+<p>425-555-5068</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>NazwiskoImie</p>
+</td>
+<td>
+<p>The submitter's name.</p>
+</td>
+<td>
+<p>Manish Chopra</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 17. Review the report in Excel format that is generated.
 
