@@ -76,9 +76,9 @@ Organizations in a hierarchy can share parameters, policies, and transactions. A
 
 ## See also
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
-- [Create an organization hierarchy](create-organization-hierarchy.md)
+- [Create an organization hierarchy](tasks/create-organization-hierarchy.md)
 - [Create a legal entity](tasks/create-legal-entity.md)
-- [Create an operating unit](create-operating-unit.md)
+- [Create an operating unit](tasks/create-operating-unit.md)
 
 
 
