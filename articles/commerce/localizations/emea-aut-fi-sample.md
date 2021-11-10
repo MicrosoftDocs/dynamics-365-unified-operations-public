@@ -5,7 +5,7 @@
 title: Fiscal registration service integration sample for Austria
 description: This topic provides an overview of the fiscal integration sample for Austria.
 author: josaw
-ms.date: 11/01/2021
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -166,6 +166,9 @@ On the **Custom fields** page, add the following records for the custom fields f
 | SALESTAXAMOUNT       | Receipt | 900007          |
 | SALESTAXBASIS        | Receipt | 900008          |
 
+> [!NOTE]
+> It is important to specify correct custom field names, as listed in the above table. An incorrect custom field name will result in missing data in receipts.
+
 ### Configure receipt formats
 
 For every required receipt format, change the value of the **Print behavior** field to **Always print**.
@@ -194,7 +197,7 @@ In the Receipt format designer, add the following custom fields to the appropria
         - **Total Include Tax (sales)** field, which is used to print the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
         - **Total Tax (sales)** field, which is used to print the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded.
 
-    - **Tax break down** field group. The fields in this field group must be printed on a separate line.
+    - **Tax break down** field group. All the fields in this field group must be printed on one separate line.
 
         - **Tax Id** field, which is a standard field that enables a sales tax summary to be printed for each sales tax code. The field must be added to a new line.
         - **Tax Percentage** field, which is a standard field that is used to print the effective tax rate for the sales tax code.
@@ -203,6 +206,9 @@ In the Receipt format designer, add the following custom fields to the appropria
         - **Tax Retail Print Code** field, which is used to print the abbreviated code that corresponds to the sales tax code.
 
     - **QR Code** field, which is used to print the reference to the registered cash transaction in the form of QR code.
+
+    > [!NOTE]
+    > The QR code value is retrieved from the fiscal register response. EFR returns a QR code in its response only if the **Attributes** field in the EFR configuration has a value described in the EFSTA documentation. The QR code format in the **Attributes** field in the EFR configuration must be set to **BMP**.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
