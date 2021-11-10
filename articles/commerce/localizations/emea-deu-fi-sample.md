@@ -224,6 +224,9 @@ On the **Custom fields** page, add the following records for the custom fields f
 | SIGN\_DE                        | Receipt | 900010          |
 | INFOMESSAGE\_DE                 | Receipt | 900011          |
 
+> [!NOTE]
+> It is important to specify correct custom field names, as listed in the above table. An incorrect custom field name will result in missing data in receipts.
+
 ### Configure receipt formats
 
 For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
@@ -245,7 +248,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 - **Footer:** Add the following fields:
 
     - Payment fields, so that the payment amounts for each payment method are printed. For example, add the **Tender name** and **Tender amount** fields to one line of the layout.
-    - Fields in the **Tax break down** field group. The fields in this field group must be printed on a separate line.
+    - Fields in the **Tax break down** field group. All the fields in this field group must be printed on one separate line.
 
         - **Tax Id** field, which is a standard field that enables a sales tax summary to be printed for each sales tax code. The field must be added to a new line.
         - **Tax Percentage** field, which is a standard field that is used to print the effective tax rate for the sales tax code.
@@ -262,6 +265,8 @@ In the Receipt format designer, add the following custom fields to the appropria
         - **Signature counter** field
         - **Check value** field
         - **QR Code** field, which is used to print the reference to the registered cash transaction in the form of a QR code
+        > [!NOTE]
+        > The QR code value is retrieved from the fiscal register response. EFR returns a QR code in its response only if the **Attributes** field in the EFR configuration has a value described in the EFSTA documentation. The QR code format in the **Attributes** field in the EFR configuration must be set to **BMP**.
 
     - **Info message** field, so that notification messages from the fiscal registration service can be shown on receipts. For example, if a signature device is broken, special text can be printed on a receipt.
 
