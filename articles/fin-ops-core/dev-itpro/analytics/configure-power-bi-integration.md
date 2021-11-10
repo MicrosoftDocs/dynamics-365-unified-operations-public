@@ -73,8 +73,11 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
     > Be sure to capture the **Application (client) ID** value.
 
 6. Select **Manage** \> **API permissions** \> **Add a permission** \> **Microsoft APIs** \> **Power BI Service**.
-7. Select **Select Delegated permissions**.
-8. Enable the following permissions:
+
+    > [!NOTE] For Government Community Cloud, instead of selecting ‘**Power BI Service**’ , search and select ‘**Microsoft Power BI Government Community Cloud**’ in the tab ‘**APIs my organization uses**’ .
+
+8. Select **Select Delegated permissions**.
+9. Enable the following permissions:
 
     - **Content**
 
