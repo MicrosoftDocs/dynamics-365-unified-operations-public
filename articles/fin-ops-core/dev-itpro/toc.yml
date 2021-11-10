@@ -458,6 +458,14 @@
           href: help/language-locale.md
         - name: Extend, customize, and collaborate on the help
           href: help/contributor-guide.md
+      - Deployment considerations
+        items:
+        - name: Finance and Supply Chain Management in US Government Community Cloud (GCC)
+          href: deployment/us-gcc-deployment.md
+        - name: Finance and Supply Chain Management operated by 21Vianet in China
+          href: deployment/china-local-deployment.md
+        - name: Finance and Operations apps in France
+          href: deployment/france-local-deployment.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page
