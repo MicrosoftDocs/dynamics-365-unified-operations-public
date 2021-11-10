@@ -473,6 +473,14 @@ To set up VAT reporting format, follow these steps:
 1. Go to **General ledger** > **Setup** > **General ledger parameters**.
 2. If you configure VAT declaration for multiple VAT registrations, on the tab **Sales tax**, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
 
+1.	In the **Feature management** workspace, enable the **VAT statement format reports** feature.
+2.	Go to **General ledger > Setup > General ledger parameters**.
+3.	On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (NL)** ER format.
+This format will be printed when you run the **Report sales tax for settlement period** report. It will also be printed when you select **Print** on the **Sales tax payments** page.
+If you configure VAT declaration for multiple VAT registrations, on the tab **Sales tax**, on the **Electronic reporting for countries/regions** FastTab, for the **NLD country/region** line, select the ER format, **VAT Declaration Excel (NL)**.
+4.	On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
+
+
 ## Preview VAT declaration in Excel
 
 ### Preview VAT declaration in Excel from the periodic task, Report sales tax for settlement period
