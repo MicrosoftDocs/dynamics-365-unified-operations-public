@@ -460,7 +460,7 @@
           href: help/contributor-guide.md
       - Deployment considerations
         items:
-        - name: File name (TBD)
+        - name: File name
           href: deployment/deployment-options-gcc.md
         - name: Finance and Supply Chain Management in US Government Community Cloud (GCC)
           href: deployment/us-gcc-deployment.md
