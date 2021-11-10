@@ -4,7 +4,7 @@
 title: Organizations and organizational hierarchies overview
 description: Organizational hierarchies represent the relationships between the organizations that make up your business.
 author: sericks007
-ms.date: 07/25/2019
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -66,6 +66,9 @@ A team is an organization in which the members share a common responsibility, in
 ## Organizational hierarchies
 
 Set up organizational hierarchies to view and report on your business from different perspectives. For example, you can set up a hierarchy of legal entities for tax, legal, or statutory reporting. Set up a hierarchy that is based on operating units to report financial information that is not legally required, but that is used for internal control. For example, you can create a purchasing hierarchy to control purchasing policies, rules, and business processes.
+
+> [!Note]
+> After an operating unit has been added to a hierarchy, the operating unit cannot be deleted. 
 
 Each hierarchy is assigned a purpose. The purpose of a hierarchy determines the types of organizations that can be included in the hierarchy. The purpose also determines which application scenarios a hierarchy can be used in.
 
