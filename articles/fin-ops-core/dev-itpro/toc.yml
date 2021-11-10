@@ -458,7 +458,7 @@
           href: help/language-locale.md
         - name: Extend, customize, and collaborate on the help
           href: help/contributor-guide.md
-      - Deployment considerations
+      - name: Deployment considerations
         items:
         - name: File name
           href: deployment/deployment-options-gcc.md
