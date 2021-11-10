@@ -1,6 +1,6 @@
 ---
 title: Inventory value report examples and logic
-description: This topic presents some examples of results presented in each type of inventory value report. Inventory value reports provide details about your inventory physical and financial quantities and amounts.
+description: This topic provides some examples of results that are presented on each type of inventory value report. Inventory value reports provide details about your inventory physical and financial quantities and amounts.
 author: banluo-ms
 ms.date: 10/19/2021
 ms.topic: article
@@ -17,9 +17,9 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-Inventory value reports provide details about your inventory physical and financial quantities and amounts. This topic provides some examples of results presented in inventory value reports.
+Inventory value reports provide details about your inventory physical and financial quantities and amounts. This topic provides some examples of results that are presented on each type of inventory value report.
 
-For more information about how to generate an use each type of inventory value report, see [Inventory value reports](inventory-value-report-storage.md).
+For more information about how to generate and use each type of inventory value report, see [Inventory value reports](inventory-value-report-storage.md).
 
 ## Sample data that is used in these examples
 
@@ -29,14 +29,14 @@ The examples in this topic are based on the sample inventory transaction data th
 
 The example system contains the following setup of storage dimensions.
 
-| **Name** | **Active** | **Physical inventory** | **Financial inventory** |
+| Name | Active | Physical inventory | Financial inventory |
 |---|---|---|---|
 | Site | Yes | Yes | Yes |
 | Warehouse | Yes | Yes | No |
 
 ### Inventory model
 
-For the example system, the inventory model for the released products is *FIFO*, and the **Cost price** setting for the inventory model is *Include physical value*.
+For the example system, the inventory model for the released products is *FIFO*, and the **Cost price** field for the inventory model is set to *Include physical value*.
 
 ### Inventory transactions
 
@@ -53,7 +53,7 @@ The example system contains the following inventory transactions for a released 
 
 ### Inventory value report configuration
 
-The example system has an inventory value report configuration with the following settings:
+The example system includes an inventory value report configuration that has the following settings:
 
 - **Range:**  *Posting date*
 - **Inventory:** *Yes*
@@ -65,28 +65,28 @@ The example system has an inventory value report configuration with the followin
 
 ## Inventory value report example 1
 
-Using the sample data and report configuration described at start of this topic, you will get the results shown in the following table and screenshots.
+The following table and illustrations show the results when you use the sample data and report configuration that are described earlier in this topic.
 
 | Resource type | Resource | Site | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount | Average unit cost |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Material | B0001 | 1 | Ending balance | 9.00 | 908.33 | 5.00 | 375.00 | 14.00 | 1,283.33 | 91.67 |
 | Material | B0001 | 2 | Ending balance | 10.00 | 2,000.00 | 0.00 | 0.00 | 10.00 | 2,000.00 | 200.00 |
 
-### Inventory value report for example 1
+### Standard Inventory value report for example 1
 
-The following screenshot shows the inventory value report for example 1 (select to enlarge).
+The following illustration shows the standard **Inventory value** report for example 1. (Select the illustration to open a larger version.)
 
-[![Inventory value report for example 1](media/inventory-value-report-ex1-small.png "Inventory value report for example 1")](media/inventory-value-report-ex1.png)
+[![Inventory value report for example 1.](media/inventory-value-report-ex1-small.png "Inventory value report for example 1")](media/inventory-value-report-ex1.png)
 
-### Inventory value report storage for example 1
+### Inventory value report storage report for example 1
 
-The following screenshot shows the inventory value report storage for example 1 (select to enlarge).
+The following illustration shows the **Inventory value report storage** report for example 1. (Select the illustration to open a larger version.)
 
-[![Inventory value report storage for example 1](media/inventory-value-report-storage-ex1-small.png "Inventory value report storage for example 1")](media/inventory-value-report-storage-ex1.png)
+[![Inventory value report storage report for example 1.](media/inventory-value-report-storage-ex1-small.png "Inventory value report storage report for example 1")](media/inventory-value-report-storage-ex1.png)
 
 ## Inventory value report example 2
 
-Using the sample data described at start of this topic, but changing the report configuration to use **Level**: *Transactions*, and running the report with **From date:** *March 15*, you will get the results shown in the following table and screenshots.
+The following table and illustrations show the results when you use the sample data that is described earlier in this topic, but you change the value of the **Level** field to *Transactions* in the report configuration, and you set the **From date** field to *March 15* when you run the report.
 
 | Resource type | Resource | Site | Date | Number | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -102,38 +102,36 @@ Using the sample data described at start of this topic, but changing the report 
 | Material | B0001 | 2 | 5/2/2021 | 000003 | Transfer order shipment | 5.00 | 458.33 | 0.00 | 0.00 | **5.00** | **458.33** |
 | Material | B0001 | 2 | 5/2/2021 | 000003 | Transfer order receive | -5.00 | -458.33 | 0.00 | 0.00 | **-5.00** | **-458.33** |
 
-### Inventory value report for example 2
+### Standard Inventory value report for example 2
 
-The following screenshot shows the inventory value report for example 2 (select to enlarge).
+The following illustration shows the standard **Inventory value** report for example 2. (Select the illustration to open a larger version.)
 
-[![Inventory value report for example 2](media/inventory-value-report-ex2-small.png "Inventory value report for example 2")](media/inventory-value-report-ex2.png)
+[![Inventory value report for example 2.](media/inventory-value-report-ex2-small.png "Inventory value report for example 2")](media/inventory-value-report-ex2.png)
 
-### Inventory value report storage for example 2
+### Inventory value report storage report for example 2
 
-The following screenshot shows the inventory value report storage for example 2 (select to enlarge).
+The following illustration shows the **Inventory value report storage** report for example 2. (Select the illustration to open a larger version.)
 
-[![Inventory value report storage for example 2](media/inventory-value-report-storage-ex2-small.png "Inventory value report storage for example 2")](media/inventory-value-report-storage-ex2.png)
+[![Inventory value report storage report for example 2.](media/inventory-value-report-storage-ex2-small.png "Inventory value report storage report for example 2")](media/inventory-value-report-storage-ex2.png)
 
 ## Inventory value report example 3
 
-We recommend that you execute the inventory value report after the recalculation or inventory closing to have the transactions and amounts affected by the recalculation/inventory closing.
+We recommend that you run inventory value reports after recalculation or inventory closing, so that you have the transactions and amounts that are affected by the recalculation or inventory closing.
 
-The following subsections show inventory value reports generated after closing inventory until May 30.
+The following subsections show the inventory value reports that are generated after you close inventory until May 30.
 
-### Example 3 using the totals level
+### Example 3 when the Totals level is used
 
-**Level:** *Totals*
-
-Using the sample data and inventory value report configuration described at start of this topic (with **Level**: *Totals*), you will get the results shown in the following table.
+The following table shows the results when you use the sample data and report configuration that are described earlier in this topic. (In that report configuration, the **Level** field is set to *Totals*.)
 
 | Resource type | Resource | Site | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount | Average unit cost |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Material | B0001 | 1 | Ending balance | 9.00 | 900.00 | 5.00 | 375.00 | 14.00 | 1,275.00 | 91.07 |
 | Material | B0001 | 2 | Ending balance | 10.00 | 2,000.00 | 0.00 | 0.00 | 10.00 | 2,000.00 | 200.00 |
 
-### Example 3 using the transactions level
+### Example 3 when the Transactions level is used
 
-Using the sample data described at start of this topic, but changing the inventory value report configuration to use **Level**: *Transactions*, you will get the results shown in the following table.
+The following table shows the results when you use the sample data that is described earlier in this topic, but you change the value of the **Level** field to *Transactions* in the report configuration.
 
 | Resource type | Resource | Site | Date | Number | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount |
 |---|---|---|---|---|---|---|---|---|---|---|---|
