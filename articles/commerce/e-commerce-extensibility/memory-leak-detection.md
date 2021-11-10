@@ -25,17 +25,33 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Testing for memory leaks
+# Testing e-commerce page for memory leaks
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to test custom e-commerce code for memory leaks in Microsoft Dynamics 365 Commerce. 
+This topic describes how to test an e-commerce page for custom code memory leaks in Microsoft Dynamics 365 Commerce.
 
-Memory leak tests can be done on pages to ensure custom e-commerce module and data action code is not leaking any memory. Page mocks will be used to test memory usage on a page.  See details in the
-The following steps can be used to generat heap snapshots of an e-commerce page with custom code.
+Memory leak tests can be done on a mock page to ensure custom e-commerce module and data action code running on that page do not leak memory.
 
-* Create a [page mock](test-page-mock.md) that represents the e-commerce page you want to test.  This can be a custom page mock or see the [page mocks](test-page-mock.md) documentation to save a live production page into a page mock using the **?item=nodeserviceproxy:true** query string parameter.
-* 
+
+The following steps outline the approach to generate heap snapshots of an e-commerce page to detect memory leaks.
+
+## Create a page mock that represents the e-commerce page you want to test.  
+The [page mock](test-page-mock.md) documentation explains how to create a custom page mock which can include any modules you would like to test or a live e-commerce page can be saved into a page mock using the **?item=nodeserviceproxy:true** query string parameter.
+
+## Build production code
+From within the online SDK root folder build the code in PROD mode with the command ```yarn build:prod```.
+
+## Run Node server in debug mode
+Execute the below command to start the Node server in debug mode:
+```node --inspect-brk build/server.js```
+
+## Open browser inspect tool
+Open a browser and navigate to **edge://inspect/#devices** to load the browser inspect tool then select the **inspect** link which will open the inspect debug window
+
+![inspect tool](media/memory-leak-1.png)
+
+## 
 
 
  
