@@ -17,6 +17,8 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
+This feature lets users run a custom script without going through Dynamics Lifecycle Services (LCS). 
+
 This topic describes how to upload and execute a deployable package with a custom X++ script without requiring any downtime.
 
 > [!IMPORTANT]
@@ -27,12 +29,35 @@ This topic describes how to upload and execute a deployable package with a custo
 > - Data migration
 > - Other long-running processes
 
-## Upload and run a script
+## Assign duties to users to control access
+
+This feature provides the following duties, which let you control access to it:
+
+- **Maintain custom scripts** – <!-- KFM: Add a short description -->
+- **Approve custom scripts** – <!-- KFM: Add a short description -->
+
+To minimize the risk of malicious action, each script must be explicitly approved by a user other than the uploader. Before you can use this feature at your organization, an admin must assign these duties to at least two different relevant and highly trusted users. A single user can have both duties, but that user still won't be able to approve their own scripts.
+
+## Create a deployable package
+
+Start by creating a deployable package containing the script you want to run on your system. The feature requires a regular deployable package that can be created in Visual Studio. For instructions, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
+
+Your deployable package must contain exactly one runnable X++ class. In other words, it must have one class with a method with the following signature:
+
+```xpp
+public static void main(Args _args)
+```
+
+> [!NOTE]
+> The name of the `main` method must be lowercase.
+
+## Upload and run a deployable package in Supply Chain Management
 
 Use the following procedure to upload and run a script.
 
 1. Go to **System administration \> Periodic \> Data base \> Custom scripts**. <!-- KFM: I don't see this. FM needed? Version required? "Data base" is usually one word.-->
-1. Select **Upload**. You will be asked to provide the purpose of the script.
+1. Select **Upload**.
+1. Select the deployable package created as described in the previous section. You will also be asked to provide the purpose of the script.
 1. The script must now be approved by another user (not the same user that uploaded the script). The approver must do the following:
     1. Go to **System administration \> Periodic \> Data base \> Custom scripts**
     1. Select the script to be approved and select **Details**.
@@ -41,26 +66,17 @@ Use the following procedure to upload and run a script.
     1. Go to **System administration \> Periodic \> Data base \> Custom scripts**
     1. Select the script to be approved and select **Details**.
     1. On the Action Pane, open the **Process** tab and, from the **Validation** group, select **Test**. This will run the script inside a temporary transaction that the system will automatically abort while collecting various logs and SQL statements.
-    1.  When it completes verify the logs meet expectations and click "Test verified" (or "Abandon" if you are not satisfied.)  <!-- KFM: Explain how to check the log.-->
+    1. When it completes, review the logs and verify that the results meet your expectations.
+        - If you are satisfied with the test result, select **Test verified** on the Action Pane (on the **Process** tab, in the **Validation** group).
+        - If you aren't satisfied with the test result, select **Abandon** on the Action Pane (on the **Process** tab, in the **Finalize** group). <!-- KFM: It seems like this button should be in the **Validation** group. -->
 
+1. When you are confident the script is meeting your expectations, select **Run** on the Action Pane to run the script (on the **Process** tab, in the **Run** group). This will do the same as the previous test run, except this time the transaction will be committed at the end.
+1. Now that you have run the script, check the result and confirm whether it worked as intended.
+        - If you are satisfied with the result, select **Verified** on the Action Pane (on the **Process** tab, in the **Finalize** group).
+        - If you aren't satisfied with the result, select **Failed** on the Action Pane (on the **Process** tab, in the **Finalize** group).
 
-Run the script.
-When you are confident the script is meeting your expectations, click "Run" to execute the script. This will do the same as the previous test run, except the transaction will be committed at the end.
-Final verification.
-Now that the script has been run, you should confirm that it solved the purpose it was intended for. If it did, click "Verified"; otherwise click "Failed". In either case, this will be the final state for the script. If needed the process can be started over.
-Creating a deployable package
-This feature uses a regular deployable package that can be created in Visual Studio.
+    Your selection here becomes the final state for the script. If necessary, you can repeat the process.
 
-Please see https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package  for instructions.
+## Upload and run a deployable package through LCS
 
-The upload step will only accept deployable packages containing exactly one runnable X++ class. That is, one class with a method with this signature:
-public static void main(Args _args)
-Note: The name main of the method must be lowercase
-
-Segregation of duties
-This feature enables running a custom script without going through LCS. To minimize the risk of malicious intend each script must be explicitly approved. To enable this two duties exist: "Maintain custom scripts" and "Approve custom scripts". Assign these duties to highly trusted users within your organization. One individual can be both maintainer and approver, but will not be able to approve own scripts.
-
-Alternatives
-The deployable package can also be uploaded via LCS and deployed using the normal procedure. This will have fewer restrictions, and less protection from honest mistakes, but it will require a restart of all servers.
-
-
+As an alternative to deploying your package through Supply Chain Management, as described in the previous section, you can instead upload your deployable package to LCS and deploy it using the normal procedure. <!-- KFM: Can we link to more info about this procedure?  --> This approach has fewer restrictions, but also provides less error protection and will require a restart of all servers.
