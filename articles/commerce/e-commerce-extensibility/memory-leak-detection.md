@@ -34,7 +34,7 @@ This topic describes how to test an e-commerce page for custom code memory leaks
 Memory leak tests can be done on a mock page to ensure custom e-commerce module and data action code running on that page do not leak memory.
 
 
-The following steps outline the approach to generate heap snapshots of an e-commerce page to detect memory leaks.
+The following steps outline the approach to generate heap snapshots of an e-commerce page to detect memory leaks.  The process involves establishing a baseline, adding request load to the page, then running the garbage collection and ensuring all memory is free'd up back to the baseline size.
 
 ### Create a page mock that represents the e-commerce page you want to test.  
 The [page mock](test-page-mock.md) documentation explains how to create a custom page mock which can include any modules you would like to test or a live e-commerce page can be saved into a page mock using the **?item=nodeserviceproxy:true** query string parameter.
