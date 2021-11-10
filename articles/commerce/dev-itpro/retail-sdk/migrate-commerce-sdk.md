@@ -5,7 +5,7 @@ author: mugunthanm
 ms.date: 11/02/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 02-11-2021

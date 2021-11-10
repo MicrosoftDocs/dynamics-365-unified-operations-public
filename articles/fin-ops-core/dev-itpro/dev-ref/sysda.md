@@ -4,9 +4,9 @@ description: This topic explains how to create extensible queries and data acces
 author: RobinARH
 ms.date: 08/20/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
 ---

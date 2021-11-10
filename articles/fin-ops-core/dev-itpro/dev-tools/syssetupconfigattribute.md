@@ -1,11 +1,11 @@
 ---
 title: SysSetupConfigAttribute attribute
 description: This topic describes how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
-author: robinarh
+author: tonyafehr
 ms.date: 10/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: najaidee
 ms.search.validFrom: 2021-10-26
