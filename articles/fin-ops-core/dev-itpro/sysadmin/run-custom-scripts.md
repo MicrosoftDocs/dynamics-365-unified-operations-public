@@ -1,7 +1,7 @@
 ---
 title: Run custom scripts
 description: This topic describes how to upload and execute a deployable package with a custom X++ script without requiring any downtime.
-author: XXXX
+# author: <!-- KFM: I need your GitHub user name to put here. -->
 ms.date: 11/09/2021
 ms.topic: article
 ms.search.form:
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This feature lets users run a custom script without going through Dynamics Lifecycle Services (LCS). 
+This feature lets users develop and run custom scripts on Supply Chain Management without going through Dynamics Lifecycle Services (LCS).
 
 This topic describes how to upload and execute a deployable package with a custom X++ script without requiring any downtime.
 
@@ -55,7 +55,7 @@ public static void main(Args _args)
 
 Use the following procedure to upload and run a script.
 
-1. Go to **System administration \> Periodic \> Data base \> Custom scripts**. <!-- KFM: I don't see this. FM needed? Version required? "Data base" is usually one word.-->
+1. Go to **System administration \> Periodic tasks \> Database \> Custom scripts**. <!-- KFM: I don't see this. FM needed? SCM Version required? -->
 1. Select **Upload**.
 1. Select the deployable package created as described in the previous section. You will also be asked to provide the purpose of the script.
 1. The script must now be approved by another user (not the same user that uploaded the script). The approver must do the following:
@@ -68,7 +68,7 @@ Use the following procedure to upload and run a script.
     1. On the Action Pane, open the **Process** tab and, from the **Validation** group, select **Test**. This will run the script inside a temporary transaction that the system will automatically abort while collecting various logs and SQL statements.
     1. When it completes, review the logs and verify that the results meet your expectations.
         - If you are satisfied with the test result, select **Test verified** on the Action Pane (on the **Process** tab, in the **Validation** group).
-        - If you aren't satisfied with the test result, select **Abandon** on the Action Pane (on the **Process** tab, in the **Finalize** group). <!-- KFM: It seems like this button should be in the **Validation** group. -->
+        - If you aren't satisfied with the test result, select **Abandon** on the Action Pane (on the **Process** tab, in the **Finalize** group). <!-- KFM: It seems like this button should also be in the **Validation** group. -->
 
 1. When you are confident the script is meeting your expectations, select **Run** on the Action Pane to run the script (on the **Process** tab, in the **Run** group). This will do the same as the previous test run, except this time the transaction will be committed at the end.
 1. Now that you have run the script, check the result and confirm whether it worked as intended.
@@ -79,4 +79,4 @@ Use the following procedure to upload and run a script.
 
 ## Upload and run a deployable package through LCS
 
-As an alternative to deploying your package through Supply Chain Management, as described in the previous section, you can instead upload your deployable package to LCS and deploy it using the normal procedure. <!-- KFM: Can we link to more info about this procedure?  --> This approach has fewer restrictions, but also provides less error protection and will require a restart of all servers.
+As an alternative to deploying your package through Supply Chain Management, as described in the previous section, you can instead upload your deployable package to Dynamics Lifecycle Services (LCS) and deploy it using the normal procedure. <!-- KFM: Can we link to more info about this procedure?  --> This approach has fewer restrictions, but also provides less error protection and will require a restart of all servers.
