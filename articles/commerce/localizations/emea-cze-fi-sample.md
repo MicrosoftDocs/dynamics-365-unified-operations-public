@@ -173,6 +173,9 @@ On the **Custom fields** page, add the following records for the custom fields f
 | INFO                 | Receipt | 900005          |
 | CONTINUOUSNUMBER     | Receipt | 900006          |
 
+> [!NOTE]
+> It is important to specify correct custom field names, as listed in the above table. An incorrect custom field name will result in missing data in receipts.
+
 ### Configure receipt formats
 
 For every required receipt format, change the value of the **Print behavior** field to **Always print**.
