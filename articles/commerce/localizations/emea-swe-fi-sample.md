@@ -105,6 +105,9 @@ On the **Custom fields** page, add the following records for the custom fields f
 | SE_FISCALREGISTERCONTROLCODE | Receipt | 900001          |
 | SE_FISCALREGISTERID          | Receipt | 900002          |
 
+> [!NOTE]
+> It is important to specify correct custom field names, as listed in the above table. An incorrect custom field name will result in missing data in receipts.
+
 #### Configure receipt formats
 
 For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
