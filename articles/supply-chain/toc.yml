@@ -1721,6 +1721,8 @@
           href: master-planning/maintain-planned-orders.md
         - name: Safety stock fulfillment for items
           href: master-planning/safety-stock-replenishment.md
+        - name: Use the safety stock journal to update minimum coverage for items
+          href: master-planning/safety-stock-journal.md
         - name: Delays
           href: master-planning/delays.md
         - name: Cancel a master planning job
