@@ -74,5 +74,12 @@ Each hierarchy is assigned a purpose. The purpose of a hierarchy determines the 
 
 Organizations in a hierarchy can share parameters, policies, and transactions. An organization can inherit or override the parameters of its parent organization. However, shared master data, such as products and address books, applies to the whole organization and cannot be overridden for individual organizations. Creating organizations and hierarchies requires careful planning. For more information, see [Plan your organizational hierarchy](plan-organizational-hierarchy.md).
 
+## See also
+- [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
+- [Create an organization hierarchy](create-organization-hierarchy.md)
+- [Create a legal entity](tasks/create-legal-entity.md)
+- [Create an operating unit](create-operating-unit.md)
+
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
