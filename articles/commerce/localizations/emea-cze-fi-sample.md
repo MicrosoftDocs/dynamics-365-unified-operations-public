@@ -157,8 +157,8 @@ Add the following POS labels to the **POS** section of **Language text** from th
 |-------------|---------|------------------------|
 | en-US       | 900001  | ID provozovny/pokladny |
 | en-US       | 900002  | BKP                    |
-| en-US       | 900003  | FIK                    |
-| en-US       | 900004  | PKP                    |
+| en-US       | 900003  | PKP                    |
+| en-US       | 900004  | FIK                    |
 | en-US       | 900005  | Info                   |
 | en-US       | 900006  | Sequence number        |
 
