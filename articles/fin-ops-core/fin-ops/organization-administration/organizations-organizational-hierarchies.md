@@ -67,14 +67,14 @@ A team is an organization in which the members share a common responsibility, in
 
 Set up organizational hierarchies to view and report on your business from different perspectives. For example, you can set up a hierarchy of legal entities for tax, legal, or statutory reporting. Set up a hierarchy that is based on operating units to report financial information that is not legally required, but that is used for internal control. For example, you can create a purchasing hierarchy to control purchasing policies, rules, and business processes.
 
-> [!Note]
+> [!NOTE]
 > After an operating unit has been added to a hierarchy, the operating unit cannot be deleted. 
 
 Each hierarchy is assigned a purpose. The purpose of a hierarchy determines the types of organizations that can be included in the hierarchy. The purpose also determines which application scenarios a hierarchy can be used in.
 
 Organizations in a hierarchy can share parameters, policies, and transactions. An organization can inherit or override the parameters of its parent organization. However, shared master data, such as products and address books, applies to the whole organization and cannot be overridden for individual organizations. Creating organizations and hierarchies requires careful planning. For more information, see [Plan your organizational hierarchy](plan-organizational-hierarchy.md).
 
-## See also
+## Additional resources
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
 - [Create an organization hierarchy](tasks/create-organization-hierarchy.md)
 - [Create a legal entity](tasks/create-legal-entity.md)
