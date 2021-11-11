@@ -73,7 +73,7 @@ The final stage is for the data to be rendered within Power BI visuals for users
 
 ## Commerce Analytics functional overview
 ### 1.	Summary
-a.	Top level filters
+#### a.	Top level filters
 i.	Date Settings
 1.	Date hierarchy
 a.	Year, Quarter, Month, Week, Day
@@ -87,11 +87,11 @@ ii.	Channel Settings
 iii.	Product Settings
 1.	Category hierarchy
 2.	Category
-b.	Product
+#### b.	Product
 i.	Sales
 ii.	Margin
 iii.	Returns
-c.	Customer
+#### c.	Customer
 i.	Sales
 ii.	Margin
 iii.	Returns
@@ -157,12 +157,12 @@ i.	By time period
 1.	Sales & Sales difference
 2.	Margin & Margin difference
 ### 9.	Web activity
-a.	Top level filters
+#### a.	Top level filters
 i.	Date range
 ii.	Channel type
 iii.	Channel
 iv.	Category hierarchy
-b.	Acquisition
+#### b.	Acquisition
 i.	Page views
 1.	By Country
 2.	By Product
@@ -176,7 +176,7 @@ iv.	Conversion funnel
 2.	Add to cart
 3.	Checkout
 4.	Purchase
-c.	Session
+#### c.	Session
 Session is defined as [TBD]
 i.	By Country
 ii.	By Origin (External referrer)
@@ -189,7 +189,7 @@ v.	Order per session
 vi.	Session bounce rate
 Session bounce is defined as a session where the user immediately leaves after visiting your E-commerce website. [TBD]
 vii.	Clicks per session
-d.	Visitor
+#### d.	Visitor
 An anonymous visitor on your E-commerce site is determined based on a unique identifier within that specific browser on that specific device. Commerce Analytics does not track anonymous users across different browsers or devices. An anonymous user is identified as a unique visitor for a period of 365 days since the first visit. After 365 days, a new identifier is issued and the visitor is then tracked as a different visitor. 
 For visitors who browse your E-commerce site while signed-in, Commerce Analytics is able to provide additional information based on your existing relationship with these users based on purchases such users may have made with your organization, across all Dynamics 365 Commerce sales channels (including Point of Sale, Call center, E-commerce), such as Recency, Relationship Length, Lifetime Value & Frequency
 i.	Visitor margin
@@ -205,7 +205,7 @@ Recency is determined based on [TBD]
 Relationship length is calculated based on [TBD]
 5.	By Lifetime value
 6.	By Frequency
-e.	Impression
+#### e.	Impression
 Impression is defined as each viewing of a Product visual by an E-commerce visitor. For instance, if an E-commerce visitor navigates to Home page of your website and views a Yoga mat product within  a “Top selling” list module, and also views the same Yoga mat product within a “Picks for you” list module, this would count as 2 product impressions. Currently impressions track product views within the following surfaces:
 1.	Lists (Recommended, Top selling, Picks for you, Trending, etc.)
 2.	Product Details page
@@ -229,12 +229,12 @@ iii.	Impression click-through rate (CTR)
 Click through rate is defined as the total number of impression clicks divided by the total number of impressions.
 
 
-# Commerce Analytics (Preview) installation
+## Commerce Analytics (Preview) installation
 
 > [!NOTE]
 > **Commerce Analytics (Preview) ** is in preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
 
-## <a name="enableCommerceAnalytics"></a> Enable and Configure Commerce Analytics
+### <a name="enableCommerceAnalytics"></a> Enable and Configure Commerce Analytics
 To enable and configure Commerce Analytics, you will need to follow a series of steps as outlined below. These operations will require you to have permission to create resources in your Azure subscription as well as permission to install add in in your Lifecycle Services (LCS) project. If you don't have the necessary permissions, you will need assistance from someone in your organization with the required permissions.
 
 The steps to enable and configure Commerce Analytics, are as follows:
@@ -246,16 +246,16 @@ The steps to enable and configure Commerce Analytics, are as follows:
 5. [Install and Configure Azure Synapse workspace](#configureAzureSynapse)
 6. [Install PowerBI template application](#powerbi) 
 
-## <a name="joinInsiderProgram"></a> Join Microsoft Insider Program
+### <a name="joinInsiderProgram"></a> Join Microsoft Insider Program
 [TODO] TBD Content
 
-## <a name="enableExportToDataLake"></a> Enable and Configure Export to Data Lake
+### <a name="enableExportToDataLake"></a> Enable and Configure Export to Data Lake
 The **Commerce Analytics** feature relies on the **Export to Data Lake** feature for exporting Finance and Operations app data to Azure Data Lake and keep the data fresh. Before you configure the Commerce Analytics feature, enable and configure the Export to Data Lake feature by following the steps outlined in [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). When you configure the Export to Data Lake feature, make note of the following information, as you will need them in the subsequent steps.
 
 1. The key vault secret names storing the application id, application secret. This is outlined in the [Add secrets to the key vault](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#addsecrets) section in the Configure Export to Data Lake documentation.
 2. The storage account name for the Azure Data Lake instance. This is outlined in the [Create a Data Lake Storage (Gen2) account in your subscription](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#createsubscription) section in the Configure Export to Data Lake documentation.
 
-## <a name="getSASToken"></a> Get Storage Account SAS token
+### <a name="getSASToken"></a> Get Storage Account SAS token
 > [!NOTE]
 > There is a known limitation of Commerce Analytics Preview, where the Azure Synapse instance will lose access to the Data Lake when the SAS token expires. You should set the maximum expiration date allowed by your organization security policies, when you generate the SAS token. This limitation will be removed in Commerce Analytics General Availability, as we move to a more manageable authentication mechanism between Azure Synapse and Azure Data Lake, such as Managed Service Identity (MSI).
 
@@ -279,14 +279,14 @@ A Shared Access Signature (SAS) token enables external entities to access your s
 4. Click on the `Generate SAS and connection string` button.
 5. Copy value from the `SAS token` text box.
 
-## <a name="downloadSynapseDeploymentScripts"></a> Download deployment scripts for Azure Synapse views
+### <a name="downloadSynapseDeploymentScripts"></a> Download deployment scripts for Azure Synapse views
 In order to create and publish the necessary views in Azure Synapse workspace, you will need to download and execute a set of scripts. The steps to download the scripts, are as follows:
 
 1. The scripts are available in the the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) Github repo.
 2. To download the scripts to your local machine, you can either clone this repo, or download the repo as a zip file.
 3. The necessary scripts are under the folder `/Pipeline/CommerceAnalyticsSynapse/`.
 
-## <a name="configureAzureSynapse"></a> Install and Configure Azure Synapse workspace
+### <a name="configureAzureSynapse"></a> Install and Configure Azure Synapse workspace
 The steps to install and configure an Azure Synapse instance, are as follows:
 
 1. Install Azure Synapse workspace, in your Azure subscription, by following the steps outlined in [Quickstart: Create a Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace)
@@ -330,10 +330,10 @@ The steps to install and configure an Azure Synapse instance, are as follows:
 
 11. Ensure that the script executes successfully. Successful execution of the script will create the necessary views for Commerce Analytics, in the Azure Synapse serverless SQL instance.
 
-## <a name="powerbi"></a> Install PowerBI template application
+### <a name="powerbi"></a> Install PowerBI template application
 TBD
 
-## <a name="privacy"></a> Privacy
+### <a name="privacy"></a> Privacy
 TBD
 
 
