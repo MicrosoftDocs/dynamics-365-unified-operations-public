@@ -74,60 +74,62 @@ The final stage is for the data to be rendered within Power BI visuals for users
 ## Commerce Analytics functional overview
 ### 1.	Summary
 #### Top level filters
-i.	Date Settings
-1.	Date (Year, Quarter, Month, Week, Day)
+1.	Date Settings
+    1.	Year
+    2.	Quarter
+    3.	Month
+    4.	Week
+    5.	Day
+2.	Channel Settings
+    1.	Legal entity
+    2.	Channel type
+    3.	Customer type
+    4.	Sales type
+    5.	Channel
+    6.	Org hierarchy
 
-ii.	Channel Settings
-1.	Legal entity
-2.	Channel type
-3.	Customer type
-4.	Sales type
-5.	Channel
-6.	Org hierarchy
-
-iii.	Product Settings
-1.	Category hierarchy
-2.	Category
+3.	Product Settings
+    1.	Category hierarchy
+    2.	Category
 
 #### a.	Product
-i.	Sales
-ii.	Margin
-iii.	Returns
+1.	Sales
+2.	Margin
+3.	Returns
 
 #### b.	Customer
-i.	Sales
-ii.	Margin
-iii.	Returns
-iv.	Discount
-d.	Channel
-i.	Sales
-ii.	Margin
-iii.	Returns
-iv.	Discount
+1.	Sales
+2.	Margin
+3.	Returns
+
+#### c.	Channel
+1.	Sales
+2.	Margin
+3.	Returns
 
 ### 2.	Sales
-a.	By Delivery location
-b.	By Channel/Store/Terminal
-c.	By Employee
-d.	By Date
-e.	By Hour
-f.	By Product Category
+1.	By Delivery location
+2.	By Channel/Store/Terminal
+3.	By Employee
+4.	By Date
+5.	By Hour
+6.	By Product Category
 
 ### 3.	Margin
-a.	By Delivery location
-b.	By Product
-c.	By Date
+1.	By Delivery location
+2.	By Product
+3.	By Date
 
 ### 4.	Return
-a.	By amount
-i.	By Store
-ii.	By Product
-iii.	By Date
+1.	Return by amount
+    i.	By Store
+    ii.	By Product
+    iii.	By Date
 
-b.	By transaction
-i.	By Store
-ii.	By Product
-iii.	By Date
+2.	Return by transaction
+    i.	By Store
+    ii.	By Product
+    iii.	By Date
 
 ### 5.	Discount
 1.	By Store
