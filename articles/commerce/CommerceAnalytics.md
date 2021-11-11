@@ -130,79 +130,80 @@ ii.	By Product
 iii.	By Date
 
 ### 5.	Discount
-a.	By Store
-b.	By Product
-c.	By Date
-d.	Decomposition
-i.	Legal entity
-ii.	Store
-iii.	Discount type
-iv.	Discount name
-v.	Product
+1.	By Store
+2.	By Product
+3.	By Date
+4.	Decomposition
+    i.	Legal entity
+    ii.	Store
+    iii.	Discount type
+    iv.	Discount name
+    v.	Product
 
 ### 6.	Payment
-a.	By Channel/Terminal
-b.	By Payment method/Type
-c.	By Date
-d.	Decomposition
-i.	Legal Entity
-ii.	Channel type
-iii.	Store
-iv.	Terminal
-v.	Payment method
+1.	By Channel/Terminal
+2.	By Payment method/Type
+3.	By Date
+4.	Decomposition
+    i.	Legal Entity
+    ii.	Channel type
+    iii.	Store
+    iv.	Terminal
+    v.	Payment method
 
 ### 7.	Customer
-a.	Life-time value (LTV)
-b.	Recency
-c.	Frequency
-d.	Relationship length
-e.	Transaction count
+1.	Life-time value (LTV)
+2.	Recency
+3.	Frequency
+4.	Relationship length
+5.	Transaction count
 
 ### 8.	Comparison
-a.	Product comparison
-i.	By time period
-1.	Sales & Sales difference
-2.	Margin & Margin difference
-b.	Customer
-i.	By time period
-1.	Sales & Sales difference
-2.	Margin & Margin difference
+1.	Product comparison
+    i.	By time period
+        1.	Sales & Sales difference
+        2.	Margin & Margin difference
+2.	Customer
+    i.	By time period
+        1.	Sales & Sales difference
+        2.	Margin & Margin difference
 
 ### 9.	Web activity
 #### Top level filters
-i.	Date range
-ii.	Channel type
-iii.	Channel
-iv.	Category hierarchy
+
+1.	Date range
+2.	Channel type
+3.	Channel
+4.	Category hierarchy
 
 #### a.	Acquisition
-i.	Page views
-1.	By Country
-2.	By Product
-3.	By User signed-in status
-4.	By Date
-ii.	E-commerce orders
-iii.	Conversion rate
-1.	By Date
-iv.	Conversion funnel
-1.	Page view by Page type (Home page, Category page, Product details page)
-2.	Add to cart
-3.	Checkout
-4.	Purchase
+1.	Page views
+    1.	By Country
+    2.	By Product
+    3.	By User signed-in status
+    4.	By Date
+2.	E-commerce orders
+3.	Conversion rate
+    1.	By Date
+4.	Conversion funnel
+    1.	Page view by Page type (Home page, Category page, Product details page)
+    2.	Add to cart
+    3.	Checkout
+    4.	Purchase
 
 #### b.	Session
 Session is defined as [TBD]
-i.	By Country
-ii.	By Origin (External referrer)
-iii.	By User Signed-in status
-iv.	Session count
-1.	By Date
-2.	By Entry page
-v.	Order per session
-1.	By Date
-vi.	Session bounce rate
-Session bounce is defined as a session where the user immediately leaves after visiting your E-commerce website. [TBD]
-vii.	Clicks per session
+1.	By Country
+2.	By Origin (External referrer)
+3.	By User Signed-in status
+4.	Session count
+    1.	By Date
+    2.	By Entry page
+5.	Order per session
+    1.	By Date
+6.	Session bounce rate
+    Session bounce is defined as a session where the user immediately leaves after visiting your E-commerce website. [TBD]
+7.	Clicks per session
 
 #### c.	Visitor
 An anonymous visitor on your E-commerce site is determined based on a unique identifier within that specific browser on that specific device. Commerce Analytics does not track anonymous users across different browsers or devices. An anonymous user is identified as a unique visitor for a period of 365 days since the first visit. After 365 days, a new identifier is issued and the visitor is then tracked as a different visitor. 
@@ -238,10 +239,13 @@ You may need to drill down in the Page & Module visual to view impressions by mo
 2.	By Product
 3.	By User signed-in status
 4.	By Date
+
 ii.	Impression click count
+
 Impression click is defined as an E-commerce visitor clicking on a product visual, which typically navigates users to the Product Details Page for that product. 
 
 iii.	Impression click-through rate (CTR)
+
 Click through rate is defined as the total number of impression clicks divided by the total number of impressions.
 
 
