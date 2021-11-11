@@ -154,9 +154,21 @@ The final stage is for the data to be rendered within Power BI visuals for users
 
 ### 7.	Customer
 1.	Life-time value (LTV)
-2.	Recency
+
+Life-time value is calculated based on total amount spent by a customer across all Dynamics 365 Commerce sales channels, including Point of Sale, E-commerce, Call center.
+
+3.	Recency
+
+Recency is calculated based on number of days since a customer's last transactional engagement with the organization. At this time, recency does not consider non-transactional engagement signals such as E-commerce browsing activity.
+
 3.	Frequency
+
+Frequency is calculated based on a customer's transactional engagement with the organization. At this time, frequency does not consider non-transactional engagement signals such as E-commerce browsing activity.
+
 4.	Relationship length
+
+Relationship length is calculated based on number of days since the customer record was created in the system. 
+
 5.	Transaction count
 
 ### 8.	Comparison
@@ -207,19 +219,32 @@ Session is defined as [TBD]
 #### c.	Visitor
 An anonymous visitor on your E-commerce site is determined based on a unique identifier within that specific browser on that specific device. Commerce Analytics does not track anonymous users across different browsers or devices. An anonymous user is identified as a unique visitor for a period of 365 days since the first visit. After 365 days, a new identifier is issued and the visitor is then tracked as a different visitor. 
 For visitors who browse your E-commerce site while signed-in, Commerce Analytics is able to provide additional information based on your existing relationship with these users based on purchases such users may have made with your organization, across all Dynamics 365 Commerce sales channels (including Point of Sale, Call center, E-commerce), such as Recency, Relationship Length, Lifetime Value & Frequency
-i.	Visitor margin
-ii.	Visitor average orders
-iii.	Visitor average sales
-iv.	E-commerce visitor count
-1.	By Date
-2.	By Location
-At this time, Commerce Analytics can only provide country level granularity for location insights for E-commerce visitors. 
-3.	By Recency
-Recency is determined based on [TBD]
-4.	By Relationship length
-Relationship length is calculated based on [TBD]
-5.	By Lifetime value
-6.	By Frequency
+
+1.	Visitor margin
+2.	Visitor average orders
+3.	Visitor average sales
+4.	E-commerce visitor count
+    1.	By Date
+    2.	By Location
+    
+        At this time, Commerce Analytics can only provide country level granularity for location insights for E-commerce visitors. 
+    
+    3.	By Recency
+    
+        Recency is calculated based on number of days since a customer's last transactional engagement with the organization. At this time, recency does not consider non-transactional engagement signals such as E-commerce browsing activity.
+    
+    4.	By Relationship length
+
+        Relationship length is calculated based on [TBD]
+    
+    5.	By Lifetime value (LTV)
+
+        Life-time value is calculated based on total amount spent by a customer across all Dynamics 365 Commerce sales channels, including Point of Sale, E-commerce, Call center.
+
+    6.	By Frequency
+        
+        Frequency is calculated based on a customer's transactional engagement with the organization. At this time, frequency does not consider non-transactional engagement     signals such as E-commerce browsing activity.
+
 
 #### d.	Impression
 Impression is defined as each viewing of a Product visual by an E-commerce visitor. For instance, if an E-commerce visitor navigates to Home page of your website and views a Yoga mat product within  a “Top selling” list module, and also views the same Yoga mat product within a “Picks for you” list module, this would count as 2 product impressions. Currently impressions track product views within the following surfaces:
