@@ -228,8 +228,10 @@ Impression is defined as each viewing of a Product visual by an E-commerce visit
 3.	Cart module
 4.	Search result container
 5.	Category search result container
+    
 Products rendered within Carousel module or within custom visuals is not currently counted within Impressions metric.
 
+Impression report page includes the following metrics
 1.	Impression count
     1.	By Page Type & Module
     Page type is the generic page type defined for each page in your E-commerce website. This is defined/configured by [TBD]
@@ -239,9 +241,11 @@ Products rendered within Carousel module or within custom visuals is not current
     3.	By User signed-in status
     4.	By Date
 2.	Impression click count
-Impression click is defined as an E-commerce visitor clicking on a product visual, which typically navigates users to the Product Details Page for that product. 
-3.	Impression click-through rate (CTR)
-Click through rate is defined as the total number of impression clicks divided by the total number of impressions.
+
+    Impression click is defined as an E-commerce visitor clicking on a product visual, which typically navigates users to the Product Details Page for that product. 
+3. Impression click-through rate (CTR)
+
+    Click through rate is defined as the total number of impression clicks divided by the total number of impressions.
 
 ## Commerce Analytics (Preview) installation
 
