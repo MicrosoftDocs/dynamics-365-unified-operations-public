@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce Analytics
+title: Commerce Analytics (Preview)
 description: This topic details installation and usage of analytics capability in  Dynamics 365 Commerce. 
 author: AamirAllaq
 ms.date: 11/11/2021
