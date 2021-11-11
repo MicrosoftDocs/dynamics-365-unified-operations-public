@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export to Azue Data Lake overview
-description: This topic provides an overview of Microsoft Azure Data Lake.
+description: Connect your Finance and Operations environment with an Azure Data Lake and unlock insights hidden in your data.
 author: MilindaV2
 ms.date: 11/20/2021
 ms.topic: article
