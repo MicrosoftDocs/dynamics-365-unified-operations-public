@@ -44,7 +44,7 @@ See the preview features, list below, as well.
 > [!NOTE]
 > Preview features are not complete, but are made available on a preview basis so customers can get early access and provide feedback. Preview features may have limited or restricted functionality, are not meant for production use, and may be available only in selected geographic areas. 
 >
->By enabling preview features, you agree to **Supplemental Terms of Use** described [here] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get started/public-preview-terms).
+>By enabling preview features, you agree to **Supplemental Terms of Use** described [here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get started/public-preview-terms).
 >
 
 ## Enable near real time data changes (preview)
