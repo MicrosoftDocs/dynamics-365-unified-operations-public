@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-11-10
 
 [!include[banner](../includes/banner.md)]
 
-Our global network of datacenters offers three levels of localization to help you meet data residency, sovereignty, and compliance requirements.
+Our global network of datacenters offers three localization options to help you meet data residency, sovereignty, and compliance requirements.
 
 - [Dynamics 365 Finance and Dynamics 365 Supply Chain Management in US Government Community Cloud (GCC)](us-gcc-deployment.md).
 - [Finance and Operations apps in France](france-local-deployment.md).
