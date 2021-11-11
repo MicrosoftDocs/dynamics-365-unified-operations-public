@@ -53,7 +53,7 @@ You can use the templates given as they are or as a base to create your own.
 You can choose to share product information using either of the following sharing policies:
 
 - **Duplicate record sharing** – <!-- KFM: Add a brief description-->
-- **Single record sharing** – <!-- KFM: Add a brief description-->
+- **Single record sharing (SRS)** – <!-- KFM: Add a brief description. ->
 
 When sharing product information, we recommended using a single record sharing policy because it makes more efficient use of database resources, especially for companies with large product portfolios. However, for related data and policies that indicate how a product is managed in different companies, we recommend using a duplicate record sharing policy, so you're able to manage products differently in each company where they are used (such as for production-related policies like production pools).
 
@@ -125,7 +125,7 @@ The accounting currency for each company is set up under **General Ledger \> Led
 For companies that are part of a cross-company policy, the following cases apply:
 
 - **All companies in the policy use the same accounting currency** – There are no special limitations to consider.
-- **Companies in the policy use different accounting currencies** – Currency conversions are not applied, which implies that if there is one amount (such as the base sales price) that is shared,  each company would assume a different currency and therefore a different value. For example, if the base sales price is 20, company USMF (which uses US dollars) would assume that amount is $20, while company JPM (which uses Japanese yen) would assume the amount is &#165;20, which does not represent the same value, so the item would be either too expense or too cheap for one of these companies. <!-- KFM: I rewrote this point. Please review and confirm. -->
+- **Companies in the policy use different accounting currencies** – Currency conversions are not applied, which implies that if there is one amount (such as the base sales price) that is shared, each company might assume a different currency and therefore a different value. For example, if the base sales price is 20, company USMF (which uses US dollars) would assume that amount is $20, while company JPM (which uses Japanese yen) would assume the amount is &#165;20, which does not represent the same value, so the item would be either too expense or too cheap for one of these companies. <!-- KFM: I rewrote this point. Please review and confirm. -->
 
 Therefore, only one of the following applies:
 
@@ -138,7 +138,7 @@ Most language-specific fields are disabled by default on product tables <!-- KFM
 
 ### Default unit of measure
 
-When you create a product, you must specify several different units of measure, each for a specific purchase, such as inventory unit, purchase unit, and sales unit. The **New released product** dialog shows the same default unit for each of these based on the default setting for the current company. To assign the default unit for a company: <!-- KFM: The original seemed to imply that we would have three different default settings, but I only found one and adjusted the text to match. Please confirm. -->
+When you create a product, you must specify several different units of measure, each for a specific purchase, such as inventory unit, purchase unit, and sales unit. The **New released product** dialog shows the same default unit for each of these based on the default setting for the current company (though you can edit each of them separately in the dialog). To assign the default unit for a company: <!-- KFM: The original seemed to imply that we would have three different default settings, but I only found one and adjusted the text to match. Please confirm. -->
 
 1. On the navigation bar, select the company (legal entity) you want to set defaults for.
 1. Go to **Inventory management \> Setup \> Inventory and warehouse management parameters**.
@@ -189,7 +189,7 @@ There is no template policy for the vendors table. The vendors table (`vendtable
 
 ### Item sales tax group and item purchase tax groups
 
-Item sales tax group and item purchase tax groups at specified at the product level. These values default the tax group on each of the sales and purchase order lines, respectively. For convenience of defaulting, these values are set to duplicate record sharing and are added in the SRS products template <!-- KFM: Spell out "SRS"-->. However, you must set up each of the tax groups and parameters in each of the companies part of the sharing policy as not this is information that is company specific and is not shared cross-company <!-- KFM: This sentence isn't clear. Please revise.-->. This is because tax groups are specific to each item in the company context.
+Item sales tax group and item purchase tax groups at specified at the product level. These values default the tax group on each of the sales and purchase order lines, respectively. For convenience of defaulting, these values are set to duplicate record sharing and are added in the SRS products template. However, you must set up each of the tax groups and parameters in each of the companies part of the sharing policy as not this is information that is company specific and is not shared cross-company <!-- KFM: This sentence isn't clear. Please revise.-->. This is because tax groups are specific to each item in the company context.
 
 ### dDistributed hybrid environment
 
@@ -205,7 +205,7 @@ Engineering change management provides some functionality that may conflict with
 
 Let's summarize on: <!-- KFM: A better list intro is needed. I'm not sure what this means. -->
 
-- **Definition of engineering company** – With engineering change management, you can set up one or more engineering organizations. These organizations may represent the one (or more) existing companies where your engineering department is, or a separate one that you only use for engineering that functions more for master data management <!-- KFM: This text isn't clear. Please revise.  -->. For more information about engineering companies, see [Engineering companies and data ownership rules](../engineering-change-management/engineering-org-data-ownership-rules.md).
+- **Definition of engineering company** – With engineering change management, you can set up one or more engineering companies. These organizations may represent the one (or more) existing companies where your engineering department is, or a separate one that you only use for engineering that functions more for master data management <!-- KFM: This text isn't clear. Please revise.  -->. For more information about engineering companies, see [Engineering companies and data ownership rules](../engineering-change-management/engineering-org-data-ownership-rules.md).
 - **Release product structure** – From the engineering company, you can release a product to other companies using a controlled process. For more information about the release product structure, see [Release product structures](../engineering-change-management/release-product-structure.md)
 
 The tables related to engineering versions aren't shared because they are meant to be contained in engineering and only be shared with a controlled release. Therefore, if you use engineering change management, you might choose any of the following setups:
@@ -218,7 +218,7 @@ The tables related to engineering versions aren't shared because they are meant 
 
   We don't recommend this setup because it disabled much of the value of engineering change management.
 
-- **Your engineering company is not part of the single record sharing policy for products** – In this case, your company needs an engineering organization where products are designed and managed. When a product is ready, you then do a controlled release to the rest of the engineering companies (which is main goal of the engineering change management functionality). You may also have similar companies where the product introduction would be at the same time, but with no need of version level management. You could setup your engineering company so that it isn't part of the shared product policy, and then make a sharing policy that includes all companies where the product introduction is done at the same time. In this case, you could release to one company to make the product available in all the companies. Note that if you do need version management, you would still need to release the version information with the release product structure. <!-- KFM: This point was not clear in the original, so I edited it heavily. Please review and confirm this version. -->
+- **Your engineering company is not part of the single record sharing policy for products** – In this case, your organization needs to have an engineering company where products are designed and managed. When a product is ready, you then do a controlled release to the rest of the companies (which is main goal of the engineering change management functionality). You may also have companies where the product introduction would be at the same time, but with no need of version level management. You could setup your engineering company so that it isn't part of the shared product policy, and then make a sharing policy that includes all companies where the product introduction is done at the same time. In this case, you could release to one company to make the product available in all the companies. Note that if you do need version management, you would still need to release the version information with the release product structure. <!-- KFM: This point was not clear in the original, so I edited it heavily. Please review and confirm this version. -->
 
 ### Sites and warehouses
 
