@@ -283,7 +283,7 @@ To install Commerce Analytics (Preview), you will need permissions to create res
 
 1. [Join Insider Program for Commerce Analytics (Preview)](#joinInsiderProgram)
 2. [Enable and Configure Export to Data Lake](#enableExportToDataLake)
-3. [Get Storage Account SAS token](#getSASToken)
+3. [Generate Storage Account SAS token](#getSASToken)
 4. [Download deployment scripts for Azure Synapse views](#downloadSynapseDeploymentScripts)
 5. [Install and Configure Azure Synapse workspace](#configureAzureSynapse)
 6. [Install Power BI template app](#powerbi) 
@@ -297,7 +297,7 @@ Sign-up for the [Insider Program for Commerce Analytics (Preview)](https://aka.m
 1. The key vault secret names where you store the application id and application secret. This is outlined in [Add secrets to the key vault](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#addsecrets).
 2. The storage account name for the Azure Data Lake instance. This is outlined in [Create a Data Lake Storage (Gen2) account in your subscription](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#createsubscription).
 
-### <a name="getSASToken"></a> Get Storage Account SAS token
+### <a name="getSASToken"></a> Generate Storage Account SAS token
 > [!NOTE]
 > There is a known limitation of Commerce Analytics Preview, where the Azure Synapse instance will lose access to the Data Lake when the SAS token expires. You should set the maximum expiration date allowed by your organization security policies, when you generate the SAS token.
 
