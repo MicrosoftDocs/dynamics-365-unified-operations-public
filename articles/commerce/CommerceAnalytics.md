@@ -75,8 +75,7 @@ The final stage is for the data to be rendered within Power BI visuals for users
 ### 1.	Summary
 #### Top level filters
 i.	Date Settings
-1.	Date hierarchy
-a.	Year, Quarter, Month, Week, Day
+1.	Date (Year, Quarter, Month, Week, Day)
 
 ii.	Channel Settings
 1.	Legal entity
@@ -105,6 +104,7 @@ i.	Sales
 ii.	Margin
 iii.	Returns
 iv.	Discount
+
 ### 2.	Sales
 a.	By Delivery location
 b.	By Channel/Store/Terminal
@@ -112,19 +112,23 @@ c.	By Employee
 d.	By Date
 e.	By Hour
 f.	By Product Category
+
 ### 3.	Margin
 a.	By Delivery location
 b.	By Product
 c.	By Date
+
 ### 4.	Return
 a.	By amount
 i.	By Store
 ii.	By Product
 iii.	By Date
+
 b.	By transaction
 i.	By Store
 ii.	By Product
 iii.	By Date
+
 ### 5.	Discount
 a.	By Store
 b.	By Product
@@ -135,6 +139,7 @@ ii.	Store
 iii.	Discount type
 iv.	Discount name
 v.	Product
+
 ### 6.	Payment
 a.	By Channel/Terminal
 b.	By Payment method/Type
@@ -145,12 +150,14 @@ ii.	Channel type
 iii.	Store
 iv.	Terminal
 v.	Payment method
+
 ### 7.	Customer
 a.	Life-time value (LTV)
 b.	Recency
 c.	Frequency
 d.	Relationship length
 e.	Transaction count
+
 ### 8.	Comparison
 a.	Product comparison
 i.	By time period
@@ -160,13 +167,15 @@ b.	Customer
 i.	By time period
 1.	Sales & Sales difference
 2.	Margin & Margin difference
+
 ### 9.	Web activity
-#### a.	Top level filters
+#### Top level filters
 i.	Date range
 ii.	Channel type
 iii.	Channel
 iv.	Category hierarchy
-#### b.	Acquisition
+
+#### a.	Acquisition
 i.	Page views
 1.	By Country
 2.	By Product
@@ -180,7 +189,8 @@ iv.	Conversion funnel
 2.	Add to cart
 3.	Checkout
 4.	Purchase
-#### c.	Session
+
+#### b.	Session
 Session is defined as [TBD]
 i.	By Country
 ii.	By Origin (External referrer)
@@ -193,7 +203,8 @@ v.	Order per session
 vi.	Session bounce rate
 Session bounce is defined as a session where the user immediately leaves after visiting your E-commerce website. [TBD]
 vii.	Clicks per session
-#### d.	Visitor
+
+#### c.	Visitor
 An anonymous visitor on your E-commerce site is determined based on a unique identifier within that specific browser on that specific device. Commerce Analytics does not track anonymous users across different browsers or devices. An anonymous user is identified as a unique visitor for a period of 365 days since the first visit. After 365 days, a new identifier is issued and the visitor is then tracked as a different visitor. 
 For visitors who browse your E-commerce site while signed-in, Commerce Analytics is able to provide additional information based on your existing relationship with these users based on purchases such users may have made with your organization, across all Dynamics 365 Commerce sales channels (including Point of Sale, Call center, E-commerce), such as Recency, Relationship Length, Lifetime Value & Frequency
 i.	Visitor margin
@@ -209,7 +220,8 @@ Recency is determined based on [TBD]
 Relationship length is calculated based on [TBD]
 5.	By Lifetime value
 6.	By Frequency
-#### e.	Impression
+
+#### d.	Impression
 Impression is defined as each viewing of a Product visual by an E-commerce visitor. For instance, if an E-commerce visitor navigates to Home page of your website and views a Yoga mat product within  a “Top selling” list module, and also views the same Yoga mat product within a “Picks for you” list module, this would count as 2 product impressions. Currently impressions track product views within the following surfaces:
 1.	Lists (Recommended, Top selling, Picks for you, Trending, etc.)
 2.	Product Details page
