@@ -247,12 +247,11 @@ For visitors who browse your E-commerce site while signed-in, Commerce Analytics
 
 
 #### d.	Impression
-Impression is defined as each viewing of a Product visual by an E-commerce visitor. For instance, if an E-commerce visitor navigates to Home page of your website and views a Yoga mat product within  a “Top selling” list module, and also views the same Yoga mat product within a “Picks for you” list module, this would count as 2 product impressions. Currently impressions track product views within the following surfaces:
+Impression is defined as each viewing of a Product visual by an E-commerce visitor. For instance, if an E-commerce visitor navigates to Home page of your website and views a Yoga mat product within a “Top selling” list module, and also views the same Yoga mat product within a “Picks for you” list module, this would count as 2 product impressions. Currently impressions track product views within the following surfaces:
 1.	Lists (Recommended, Top selling, Picks for you, Trending, etc.)
-2.	Product Details page
-3.	Cart module
-4.	Search result container
-5.	Category search result container
+2.	Cart module
+3.	Search result container
+4.	Category search result container
     
 Products rendered within Carousel module or within custom visuals is not currently counted within Impressions metric.
 
