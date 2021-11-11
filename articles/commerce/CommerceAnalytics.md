@@ -203,7 +203,7 @@ Relationship length is calculated based on number of days since the customer rec
     4.	Purchase
 
 #### b.	Session
-Session is defined as [TBD]
+Session is defined as an episode of a user's visit to your E-commerce website. A session is considered ended after 30 minutes of inactivity, or after 24 hours of active usage.
 1.	By Country
 2.	By Origin (External referrer)
 3.	By User Signed-in status
@@ -213,11 +213,13 @@ Session is defined as [TBD]
 5.	Order per session
     1.	By Date
 6.	Session bounce rate
-    Session bounce is defined as a session where the user immediately leaves after visiting your E-commerce website. [TBD]
+    
+    Session bounce is defined as a session where the user immediately leaves after visiting your E-commerce website. Learn more about [Bounce rate](https://en.wikipedia.org/wiki/Bounce_rate).
+
 7.	Clicks per session
 
 #### c.	Visitor
-An anonymous visitor on your E-commerce site is determined based on a unique identifier within that specific browser on that specific device. Commerce Analytics does not track anonymous users across different browsers or devices. An anonymous user is identified as a unique visitor for a period of 365 days since the first visit. After 365 days, a new identifier is issued and the visitor is then tracked as a different visitor. 
+An anonymous visitor on your E-commerce site is determined based on a unique identifier within that specific browser on that specific device. Commerce Analytics does not track anonymous users across different browsers or devices. An anonymous user using the same browser on the same computer is uniquely indetified across multiple user sessions, until the browser cache data is cleared or typically until a 12 month period, whichever comes first. 
 For visitors who browse your E-commerce site while signed-in, Commerce Analytics is able to provide additional information based on your existing relationship with these users based on purchases such users may have made with your organization, across all Dynamics 365 Commerce sales channels (including Point of Sale, Call center, E-commerce), such as Recency, Relationship Length, Lifetime Value & Frequency
 
 1.	Visitor margin
