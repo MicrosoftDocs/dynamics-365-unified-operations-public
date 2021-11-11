@@ -50,9 +50,9 @@ Zakat, Tax and Customs Authority (ZATCA) provides tools that can be used to vali
 
 To generate QR codes and print them on receipts for Saudi Arabia, you must complete the following tasks.
 
-- Configure custom fields so that they can be used in receipt formats for sales receipts.
-- Configure receipt formats.
-- Enable Commerce runtime (CRT) extensions.
+1. Configure custom fields so that they can be used in receipt formats for sales receipts.
+1. Configure receipt formats.
+1. Enable Commerce runtime (CRT) extensions.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
