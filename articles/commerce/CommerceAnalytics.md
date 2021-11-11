@@ -27,13 +27,13 @@ ms.dyn365.ops.version:
 
 ---
 
-# Commerce Analytics
+# Commerce Analytics (Preview)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes functional analytics capability included within Commerce Analytics for Dynamics 365 Commerce as well as installation steps to enable this capability. 
 
-## Commerce Analytics system architecture
+## Commerce Analytics (Preview) system architecture
 Commerce Analytics is composed of the following key components:
 
 1. Ready to use interactive Power BI reports
@@ -228,12 +228,10 @@ iii.	Impression click-through rate (CTR)
 Click through rate is defined as the total number of impression clicks divided by the total number of impressions.
 
 
-## Commerce Analytics installation
-
-# Commerce Analytics (Preview)
+# Commerce Analytics (Preview) installation
 
 > [!NOTE]
-> The **Commerce Analytics** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
+> **Commerce Analytics (Preview) ** is in preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
 
 ## <a name="enableCommerceAnalytics"></a> Enable and Configure Commerce Analytics
 To enable and configure Commerce Analytics, you will need to follow a series of steps as outlined below. These operations will require you to have permission to create resources in your Azure subscription as well as permission to install add in in your Lifecycle Services (LCS) project. If you don't have the necessary permissions, you will need assistance from someone in your organization with the required permissions.
@@ -336,10 +334,6 @@ TBD
 
 ## <a name="privacy"></a> Privacy
 TBD
-
-
-## Open within POS
-
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
