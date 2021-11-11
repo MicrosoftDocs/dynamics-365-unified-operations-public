@@ -157,7 +157,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
 | Open grid filtering for the current column (with focus in the header row)                                              | Enter                           |
-| Resize the current column to fit the contents (with focus in the header row)                                           | A  (or double click on the column resize handle) |
+| Resize the current column to fit the contents (with focus in the header row)                                           | A  (or double click on the column sizing handle) |
 
 ## Input control shortcuts
 
