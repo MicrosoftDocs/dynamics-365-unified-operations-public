@@ -34,6 +34,7 @@ ms.dyn365.ops.version:
 This topic describes functional analytics capability included within Commerce Analytics for Dynamics 365 Commerce as well as installation steps to enable this capability. 
 
 ## Commerce Analytics (Preview) system architecture
+### Key components
 Commerce Analytics is composed of the following key components:
 
 1. Ready to use interactive Power BI reports
@@ -43,7 +44,7 @@ Commerce Analytics is composed of the following key components:
 
 ![image](https://user-images.githubusercontent.com/43016803/141214066-3314d8b8-4644-4f26-a703-b4c838d50aad.png)
 
-### Data flow overview
+### Data flow
 #### Step 1: Data generation
 Data originates either as transactional or behavioral data from one of the following sources:
 1.	Call center associate using Commerce HQ client to process sales orders
