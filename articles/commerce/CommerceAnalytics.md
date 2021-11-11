@@ -73,10 +73,11 @@ The final stage is for the data to be rendered within Power BI visuals for users
 
 ## Commerce Analytics functional overview
 ### 1.	Summary
-#### a.	Top level filters
+#### Top level filters
 i.	Date Settings
 1.	Date hierarchy
 a.	Year, Quarter, Month, Week, Day
+
 ii.	Channel Settings
 1.	Legal entity
 2.	Channel type
@@ -84,14 +85,17 @@ ii.	Channel Settings
 4.	Sales type
 5.	Channel
 6.	Org hierarchy
+
 iii.	Product Settings
 1.	Category hierarchy
 2.	Category
-#### b.	Product
+
+#### a.	Product
 i.	Sales
 ii.	Margin
 iii.	Returns
-#### c.	Customer
+
+#### b.	Customer
 i.	Sales
 ii.	Margin
 iii.	Returns
