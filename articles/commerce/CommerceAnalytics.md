@@ -122,36 +122,35 @@ The final stage is for the data to be rendered within Power BI visuals for users
 
 ### 4.	Return
 1.	Return by amount
-    i.	By Store
-    ii.	By Product
-    iii.	By Date
-
+    1.	By Store
+    2.	By Product
+    3.	By Date
 2.	Return by transaction
-    i.	By Store
-    ii.	By Product
-    iii.	By Date
+    1.	By Store
+    2.	By Product
+    3.	By Date
 
 ### 5.	Discount
 1.	By Store
 2.	By Product
 3.	By Date
 4.	Decomposition
-    i.	Legal entity
-    ii.	Store
-    iii.	Discount type
-    iv.	Discount name
-    v.	Product
+    1.	Legal entity
+    2.	Store
+    3.	Discount type
+    4.	Discount name
+    5.	Product
 
 ### 6.	Payment
 1.	By Channel/Terminal
 2.	By Payment method/Type
 3.	By Date
 4.	Decomposition
-    i.	Legal Entity
-    ii.	Channel type
-    iii.	Store
-    iv.	Terminal
-    v.	Payment method
+    1.	Legal Entity
+    2.	Channel type
+    3.	Store
+    4.	Terminal
+    5.	Payment method
 
 ### 7.	Customer
 1.	Life-time value (LTV)
@@ -161,14 +160,12 @@ The final stage is for the data to be rendered within Power BI visuals for users
 5.	Transaction count
 
 ### 8.	Comparison
-1.	Product comparison
-    i.	By time period
-        1.	Sales & Sales difference
-        2.	Margin & Margin difference
-2.	Customer
-    i.	By time period
-        1.	Sales & Sales difference
-        2.	Margin & Margin difference
+1.	Product comparison By time period
+    1.	Sales & Sales difference
+    2.	Margin & Margin difference
+2.	Customer By time period
+    1.	Sales & Sales difference
+    2.	Margin & Margin difference
 
 ### 9.	Web activity
 #### Top level filters
@@ -233,23 +230,18 @@ Impression is defined as each viewing of a Product visual by an E-commerce visit
 5.	Category search result container
 Products rendered within Carousel module or within custom visuals is not currently counted within Impressions metric.
 
-i.	Impression count
-1.	By Page Type & Module
-Page type is the generic page type defined for each page in your E-commerce website. This is defined/configured by [TBD]
-Module type defines the type of E-commerce visual module within which the product is shown.
-You may need to drill down in the Page & Module visual to view impressions by module
-2.	By Product
-3.	By User signed-in status
-4.	By Date
-
-ii.	Impression click count
-
+1.	Impression count
+    1.	By Page Type & Module
+    Page type is the generic page type defined for each page in your E-commerce website. This is defined/configured by [TBD]
+    Module type defines the type of E-commerce visual module within which the product is shown.
+    You may need to drill down in the Page & Module visual to view impressions by module
+    2.	By Product
+    3.	By User signed-in status
+    4.	By Date
+2.	Impression click count
 Impression click is defined as an E-commerce visitor clicking on a product visual, which typically navigates users to the Product Details Page for that product. 
-
-iii.	Impression click-through rate (CTR)
-
+3.	Impression click-through rate (CTR)
 Click through rate is defined as the total number of impression clicks divided by the total number of impressions.
-
 
 ## Commerce Analytics (Preview) installation
 
