@@ -461,7 +461,7 @@
       - name: Deployment considerations
         items:
         - name: File name
-          href: deployment/deployment-options-gcc.md
+          href: deployment/deployment-options-geo.md
         - name: Finance and Supply Chain Management in US Government Community Cloud (GCC)
           href: deployment/us-gcc-deployment.md
         - name: Finance and Supply Chain Management operated by 21Vianet in China
