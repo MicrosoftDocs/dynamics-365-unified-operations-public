@@ -136,6 +136,8 @@ As of Platform update 11, users can discover currently available shortcuts direc
 
 | To do this                                                                                                             | Press                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Vertical scrolling                                                                                                     | Mouse wheel                     |
+| Horizontal scrolling                                                                                                   | Shift + Mouse wheel             |
 | Move to the next/previous column                                                                                       | Tab / Shift+Tab                 |
 | Move to the next/previous row                                                                                          | Down arrow / Up arrow           |
 | Move to the next/previous row without selecting<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote> | Ctrl+Up arrow / Ctrl+Down arrow |
@@ -147,10 +149,10 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to the first record                                                                                               | Ctrl+Home                       |
 | Move to the last record                                                                                                | Ctrl+End                        |
 | Select or clear all rows                                                                                               | Ctrl+Shift+M                    |
-| Move to the first marked row                                                                                           | Alt+Shift+M, F                    |
-| Move to the next marked row                                                                                            | Alt+Shift+M, L                    |
-| Move to the previous marked row                                                                                        | Alt+Shift+M, P                    |
-| Moved to the last marked row                                                                                           | Alt+Shift+M, N                    |
+| Move to the first marked row                                                                                           | Alt+Shift+M, F                  |
+| Move to the next marked row                                                                                            | Alt+Shift+M, L                  |
+| Move to the previous marked row                                                                                        | Alt+Shift+M, P                  |
+| Moved to the last marked row                                                                                           | Alt+Shift+M, N                  |
 | Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
