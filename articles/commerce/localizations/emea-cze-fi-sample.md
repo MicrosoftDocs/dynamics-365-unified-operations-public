@@ -237,23 +237,25 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample.
 
-- **Value-added tax (VAT) rates mapping**:
+- **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that are set up for the sales tax codes to values of the **TaxG** (tax group) attribute in requests that are sent to the fiscal service. The default mapping is as following:
 
-    *A: 21.00; B: 15.00; C: 10.00; Z: 0.00*
+    ```
+    A: 21.00; B: 15.00; C: 10.00; Z: 0.00
+    ```
 
     The first component in each pair stands for a VAT tax group supported by the EFR fiscal registration service, and the second component stands for the corresponding VAT rate. For more information about VAT tax groups that EFR supports for the Czech Republic, see the [EFR reference](https://public.efsta.net/efr/).
 
-- **Default VAT group mapping**:
+- **Default VAT group mapping** - Any VAT amounts that cannot be mapped to one of the predetermined VAT groups will be attributed to the default (basic) VAT group. The default mapping is as following:
 
-    *A*
-    
-    Any VAT amounts that cannot be mapped to one of the predetermined VAT groups will be attributed to the default (basic) VAT group.
+    ```
+    A
+    ```
 
-- **Deposit VAT group mapping**:
+- **Deposit VAT group mapping** - Customer deposit amounts and customer order deposit amounts will be attributed to the deposit VAT group. The default mapping is as following:
 
-    *Z*
-    
-    Customer deposit amounts and customer order deposit amounts will be attributed to the deposit VAT group.
+    ```
+    Z
+    ```
 
 #### Fiscal connector settings
 
