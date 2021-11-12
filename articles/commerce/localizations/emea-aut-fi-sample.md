@@ -261,9 +261,11 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
-- **Value-added tax (VAT) rates mapping**:
+- **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that are set up for the sales tax codes to values of the **TaxG** (tax group) attribute in requests that are sent to the fiscal service. The default mapping is as following:
 
-    *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
+    ```
+    A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00
+    ```
     
     The first component in each pair stands for a VAT tax group supported by the EFR fiscal registration service, and the second component stands for the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Austria, see the [EFR reference](https://public.efsta.net/efr/).
 
