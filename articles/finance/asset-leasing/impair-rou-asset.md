@@ -42,12 +42,16 @@ The remaining balance of the ROU asset will be amortized on a straight-line basi
 3. In the dialog box that appears, in the **Impairment amount** field, enter the amount of the asset impairment. To decrease the ROU asset, you should enter a positive value.
 4. In the **Transaction date** field, enter the date when the impairment entry should be posted.
 5. In the **Periods remaining** field, enter the remaining number of months to amortize.
-6. Turn on the **Post** parameter if you want the system to automatically post the impairment expense journal entry. If you leave this parameter turned off, the system creates the entry but doesn't post it. You can then post the entry from the **Asset lease journals** page.
-7. Set the **Preview before posting** option to **Yes** to view the proposed entry before it's created or posted.
-8. Set the **Close book** option to **Yes** to close the lease book. You can't undo this action. Entries can't be posted against closed leases, and closed leases can't be adjusted.
-9. Select **OK** to create or post the impairment entry.
-10. To view the impaired asset depreciation schedule, open the asset depreciation schedule for that lease book. The asset will now be depreciated on a straight-line basis over the number of months that you entered in the **Periods remaining** field.
-11. To view the impairment expense journal entry, select **Asset leasing journal** on the Action Pane of the impaired lease book. The system creates a journal entry that debits the impairment expense posting account and credits the lease asset posting account.
+6. Set the **Preview** option to view the proposed asset balance and financial entry before they're created or posted.
+7. Set the **Close book** option to **Yes** to close the lease book. You can undo this action by using the **Reopen lease** status. Entries can't be posted against closed leases, and closed leases can't be adjusted. 
+8. Select **Post** to create or post the impairment entry.
+
+> [!NOTE]
+> A new book version is created after posting impairment transaction.
+
+9. To view the impaired asset depreciation schedule, open the asset depreciation schedule for that lease book. The asset will now be depreciated on a straight-line basis over the number of months that you entered in the **Periods remaining** field.
+10. To view the impaired asset depreciation schedule, open the **Asset depreciation schedule** for that lease book. The asset will now be depreciated on a straight-line basis over the number of months that you entered in the **Periods remaining** field. 
+11. To view the impairment expense journal entry, select **Asset leasing journal** on the Action Pane of the impaired lease book. The system creates a journal entry that debits the impairment expense posting account and credits the lease asset posting account. 
 12. To view the new carrying value of the ROU asset, select **Asset transactions** on the Action Pane of the lease book.
 
 ## Example of ROU asset impairment
