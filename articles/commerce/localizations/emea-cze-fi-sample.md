@@ -5,7 +5,7 @@
 title: Fiscal registration service integration sample for Czech Republic
 description: This topic provides an overview of the fiscal integration sample for Czech Republic.
 author: josaw
-ms.date: 11/12/20219
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -193,7 +193,7 @@ For more information about how to work with receipt formats, see [Set up and des
 The fiscal registration service integration sample for the Czech Republic is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for fiscal integration sample for Czech Republic (legacy)](emea-cze-fi-sample-sdk.md) for more details.
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal integration sample for the Czech Republic (legacy)](emea-cze-fi-sample-sdk.md) for more details.
 >
 > Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
@@ -261,6 +261,13 @@ The following settings are included in the fiscal connector configuration that i
 
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds, that the fiscal connector will wait for a response from the fiscal registration service.
+
+### Configure channel components
+
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. See [Deployment guidelines for the fiscal integration sample for the Czech Republic (legacy)](emea-cze-fi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 ### Set up the registration process
 
