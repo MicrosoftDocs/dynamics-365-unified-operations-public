@@ -4,7 +4,7 @@
 title: Add or copy leases (Preview)
 description: This topic describes how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,6 +54,9 @@ After you've finished entering information for the lease, follow these steps to 
     The **Book details** page shows how the lease is accounted for by the books that have been allocated to it. From here, you can view the lease schedules.
 
     The payment schedule contains the inputs from the **Payment schedule lines** tab on the **Add lease** page. You can still change each payment amount and variable payment. The lease liability is calculated based on the modified payment schedule.
+    
+> [!NOTE]
+> The starting date for the lease payment must be the same or a later date than starting date for the lease. You'll receive an error message if the starting date for the payment is earlier than the starting date for the lease. 
 
 4. After you've finished reviewing the payment schedule, select **Confirm schedule**. After the schedule is confirmed, the lease is no longer available for editing.
 
