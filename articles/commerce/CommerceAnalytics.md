@@ -283,7 +283,7 @@ To install Commerce Analytics (Preview), you will need permissions to create res
 
 1. [Join Insider Program for Commerce Analytics (Preview)](#joinInsiderProgram)
 2. [Enable and Configure Export to Data Lake](#enableExportToDataLake)
-3. [Enable and Configure Commerce Analytics (Preview) add-in ()
+3. [Enable and Configure Commerce Analytics (Preview) add-in](#enableCommerceAnalyticsAddin)
 4. [Generate Storage Account SAS token](#getSASToken)
 5. [Download deployment scripts for Azure Synapse views](#downloadSynapseDeploymentScripts)
 6. [Install and Configure Azure Synapse workspace](#configureAzureSynapse)
@@ -297,6 +297,8 @@ Sign-up for the [Insider Program for Commerce Analytics (Preview)](https://aka.m
 
 1. <a name="keyVault"></a>The key vault DNS name and the secret names where you store the application id and application secret. This is outlined in [Add secrets to the key vault](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#addsecrets).
 2. The storage account name for the Azure Data Lake instance. This is outlined in [Create a Data Lake Storage (Gen2) account in your subscription](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#createsubscription).
+
+### <a name="enableCommerceAnalyticsAddin"></a> Enable and Configure Commerce Analytics (Preview) add-in
 
 To install the **Commerce Analytics (Preview)** add-in in LCS, you must be an environment administrator in LCS for the environment that you plan to use.
 
