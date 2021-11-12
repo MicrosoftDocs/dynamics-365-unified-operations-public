@@ -143,7 +143,7 @@ This section describes the Commerce settings that are specific to and recommende
 To use the functionality that is specific to Germany, you must specify the following settings.
 
 - In the primary address of the legal entity, set the **Country/region** field to **DEU** (Germany).
-- In the POS functionality profile of every store that is located in Austria, set the **ISO code** field to **DE** (Germany).
+- In the POS functionality profile of every store that is located in Germany, set the **ISO code** field to **DE** (Germany).
 
 You must also specify the following settings for Germany. Be sure to run appropriate distribution jobs after you complete the setup.
 
