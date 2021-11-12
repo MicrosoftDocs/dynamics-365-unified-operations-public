@@ -308,19 +308,21 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample.
 
-- **Tender type mapping** – The mapping of payment methods to values of the **PayG** (payment group) attribute in requests that are sent to the fiscal service:
+- **Tender type mapping** – The mapping of payment methods to values of the **PayG** (payment group) attribute in requests that are sent to the fiscal service. The default mapping is as following:
 
-    *1: 0; 2: 1; 3: 3; 4: 8; 5: 2; 6: 0; 7: 7; 8: 6; 9: 0; 10: 8; 11: 1*
+    ```
+    1: 0; 2: 1; 3: 3; 4: 8; 5: 2; 6: 0; 7: 7; 8: 6; 9: 0; 10: 8; 11: 1
+    ```
 
     The first component in each pair stands for a payment method that is set up for the store, and the second component stands for the corresponding payment group supported by the EFR fiscal registration service. For more information about payment groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
 
     The sample mapping of payment methods corresponds to store payment methods configured in the standard demo data:
 
-    - 1 Cash
-    - 3 Card
-    - 4 Customer account
-    - 6 Currency
-    - 8 Gift card
+        - 1 Cash
+        - 3 Card
+        - 4 Customer account
+        - 6 Currency
+        - 8 Gift card
 
     Thus, you need to modify the sample mapping according to the payment methods configured in your application.
 
