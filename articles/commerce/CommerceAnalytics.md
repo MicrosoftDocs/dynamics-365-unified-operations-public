@@ -4,26 +4,12 @@
 title: Commerce Analytics (Preview)
 description: This topic details installation and usage of analytics capability in  Dynamics 365 Commerce. 
 author: AamirAllaq
-ms.date: 11/11/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 11/12/2021
 audience: Application user
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: sericks
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: aamiral
-ms.search.validFrom: 2021-11-11
-ms.dyn365.ops.version:
+ms.search.validFrom: 2021-11-12
 
 ---
 
