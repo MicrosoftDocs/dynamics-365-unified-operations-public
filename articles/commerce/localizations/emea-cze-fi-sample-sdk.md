@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Deployment guidelines for the fiscal registration service integration sample for Czech Republic (legacy)
+title: Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
 description: This topic provides guidelines on how to deploy the fiscal integration sample for the Czech Republic from the Retail SDK
 author: josaw
 ms.date: 11/12/2021
@@ -25,4 +25,4 @@ ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
 
 ---
-# Deployment guidelines for the fiscal registration service integration sample for Czech Republic (legacy)
+# Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
