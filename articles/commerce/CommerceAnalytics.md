@@ -262,7 +262,7 @@ Impression report page includes the following metrics
 ## Commerce Analytics (Preview) installation
 
 > [!NOTE]
-> **Commerce Analytics (Preview) ** is in preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
+> **Commerce Analytics (Preview) ** is in preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md)
 
 ### <a name="enableCommerceAnalytics"></a> Enable and Configure Commerce Analytics (Preview)
 To install Commerce Analytics (Preview), you will need permissions to create resources in an Azure subscription and permissions in Lifecycle Service Portal to install add-ins. Complete the steps outlined below: 
@@ -279,10 +279,10 @@ To install Commerce Analytics (Preview), you will need permissions to create res
 Sign-up for the [Insider Program for Commerce Analytics (Preview)](https://aka.ms/CommerceAnalyticsInsiderProgram)
 
 ### <a name="enableExportToDataLake"></a> Enable and Configure Export to Data Lake
-**Commerce Analytics (Preview)** relies on  **Export to Data Lake** for exporting Commerce HQ data to Azure Data Lake and keep the data fresh. Before you configure **Commerce Analytics (Preview)**, enable and configure Export to Data Lake by following the steps outlined in [Configure export to Azure Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). When you configure Export to Data Lake feature, note the following information, which you will need to enter in subsequent steps.
+**Commerce Analytics (Preview)** relies on  **Export to Data Lake** for exporting Commerce HQ data to Azure Data Lake and keep the data fresh. Before you configure **Commerce Analytics (Preview)**, enable and configure Export to Data Lake by following the steps outlined in [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). When you configure Export to Data Lake feature, note the following information, which you will need to enter in subsequent steps.
 
-1. <a name="keyVault"></a>The key vault DNS name and the secret names where you store the application id and application secret. This is outlined in [Add secrets to the key vault](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#addsecrets).
-2. The storage account name for the Azure Data Lake instance. This is outlined in [Create a Data Lake Storage (Gen2) account in your subscription](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#createsubscription).
+1. <a name="keyVault"></a>The key vault DNS name and the secret names where you store the application id and application secret. This is outlined in [Add secrets to the key vault](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#add-secrets).
+2. The storage account name for the Azure Data Lake instance. This is outlined in [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#create-subscription).
 
 ### <a name="enableCommerceAnalyticsAddin"></a> Enable and Configure Commerce Analytics (Preview) add-in
 
@@ -311,7 +311,7 @@ The system installs and configures the Commerce Analytics (Preview) for the envi
 
 A Shared Access Signature (SAS) token enables external entities to access your storage account, with a specific set of privileges for a finite amount of time. Azure Synapse will use the SAS token to access the underlying data in Azure Data Lake. To generate a SAS token, complete the below steps:
 
-1. Navigate to the storage account in Azure Portal, which you created while configuring Export to Data Lake, as outlined in [Create a Data Lake Storage (Gen2) account in your subscription](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#createsubscription).
+1. Navigate to the storage account in Azure Portal, which you created while configuring Export to Data Lake, as outlined in [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#create-subscription).
 2. In the left options pane, under the storage account, select `Shared access signature`.
 3. Select the following options on the SAS options page:
 
@@ -338,12 +338,12 @@ In order to create and publish the necessary views in Azure Synapse workspace, y
 ### <a name="configureAzureSynapse"></a> Install and Configure Azure Synapse workspace
 To install and configure an Azure Synapse workspace, complete the below steps:
 
-1. Install Azure Synapse workspace, in your Azure subscription, by following the steps outlined in [Quickstart: Create a Synapse workspace](https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace)
+1. Install Azure Synapse workspace, in your Azure subscription, by following the steps outlined in [Quickstart: Create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace)
 2. Open the `SetupSynapse.sql` script file in Notepad, from your local machine folder where you cloned or downloaded the Dynamics365Commerce.Solutions repo, as outlined in  [Download deployment scripts for Azure Synapse views](#downloadSynapseDeploymentScripts). The script file will be under `/Pipeline/CommerceAnalyticsSynapse/` folder. Edit the script to replace the following placeholder texts with values as shown below:
 
    | Placeholder Text | Replacement Value |
    |------------------|-------------------|
-   | placeholder_storageaccount | Replace with the name for the storage account that you created while configuring Export to Data Lake, as outlined in  [Create a Data Lake Storage (Gen2) account in your subscription](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake#createsubscription). |
+   | placeholder_storageaccount | Replace with the name for the storage account that you created while configuring Export to Data Lake, as outlined in  [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#create-subscription). |
    | <a name="phContainer"></a>placeholder_container | Replace with the name of the storage container that was created in your Azure Data Lake instance, after you successfully installed the Export to Data Lake addin in Lifecycle Services (LCS). You will need to use the Storage Explorer in Azure Portal to browse your storage account, in order to get the container name. |
    | placeholder_sastoken | Replace with the SAS token that you copied in [Get Storage Account SAS token](#getSASToken). Make sure to remove the **'?'** at the beginning of the SAS token value. |
    | <a name="phUserPwd"></a>placeholder_password | Replace with a strong password of your choice. Make a note of this password. This will be set as the password for the new `reportreadonlyuser` account, that will be created by this script. **DO NOT** enter the password of the `sqladminuser` account here.  |
