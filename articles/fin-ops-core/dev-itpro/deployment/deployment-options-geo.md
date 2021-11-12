@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: File name
-description: Sentence describing content in this file.
+title: Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+description: Our global network of datacenters offers three localization options to help you meet data residency, sovereignty, and compliance requirements.
 author: hasaid
-ms.date: 11/10/2021
+ms.date: 11/12/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -13,7 +13,7 @@ ms.author: hasaid
 ms.search.validFrom: 2021-11-10
 ---
 
-# Sovereign and Local Cloud deployment options for Dynamics 365 Finance and Supply Chain Management
+# Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
