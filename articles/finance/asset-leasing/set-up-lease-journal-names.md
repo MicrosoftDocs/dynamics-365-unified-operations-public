@@ -4,7 +4,7 @@
 title: Set up lease journal names
 description: This topic explains how to define lease journal names. Lease journal names specify the journals that entries that originate in Asset leasing are posted to.
 author: moaamer
-ms.date: 11/1252021
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
