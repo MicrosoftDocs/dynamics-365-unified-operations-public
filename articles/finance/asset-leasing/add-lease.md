@@ -56,7 +56,7 @@ After you've finished entering information for the lease, follow these steps to 
     The payment schedule contains the inputs from the **Payment schedule lines** tab on the **Add lease** page. You can still change each payment amount and variable payment. The lease liability is calculated based on the modified payment schedule.
     
 > [!NOTE]
-> The starting date for the lease payment must be the same or a later date than starting date for the lease. You'll receive an error message if the starting date for the payment is earlier than the starting date for the lease. 
+> The starting date for the lease payment must be the same or a later date than the starting date for the lease. You'll receive an error message if the starting date for the payment is earlier than the starting date for the lease. 
 
 4. After you've finished reviewing the payment schedule, select **Confirm schedule**. After the schedule is confirmed, the lease is no longer available for editing.
 
