@@ -318,11 +318,13 @@ The following default data mapping is included in the fiscal document provider c
 
     The sample mapping of payment methods corresponds to store payment methods configured in the standard demo data:
 
-      - 1 Cash
-      - 3 Card
-      - 4 Customer account
-      - 6 Currency
-      - 8 Gift card
+    | Payment method | Payment method name |
+    |----------------|---------------------|
+    | 1              |Cash                 |
+    | 3              |Card                 |
+    | 4              |Customer account     |
+    | 6              |Currency             |
+    | 8              |Gift card            |
 
     Thus, you need to modify the sample mapping according to the payment methods configured in your application.
 
