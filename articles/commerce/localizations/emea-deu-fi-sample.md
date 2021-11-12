@@ -332,17 +332,23 @@ The following default data mapping is included in the fiscal document provider c
 
 - **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that are set up for the sales tax codes to values of the **TaxG** (tax group) attribute in requests that are sent to the fiscal service:
 
-    *A: 19.00; B: 7.00; C: 10.70; D: 5.50; E: 0.00*
+    ```
+    A: 19.00; B: 7.00; C: 10.70; D: 5.50; E: 0.00
+    ```
 
     The first component in each pair stands for a VAT tax group supported by the EFR fiscal registration service, and the second component stands for the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
 
 - **Tax group for gift cards and deposits** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that involve gift cards or deposits:
 
-    *G*
+    ```
+    G
+    ```
     
 - **Tax group for VAT exempt** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that are exempt from tax obligations:
     
-    *F*
+    ```
+    F
+    ```
 
 > [!NOTE]
 > Tax settings in the default data mapping are responsible for matching tax settings in the system and tax groups in the EFR service. Tax groups can be printed on receipts only if the **Code for printing** field is set on the **Sales tax codes** page.
