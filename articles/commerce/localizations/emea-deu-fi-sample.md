@@ -315,11 +315,13 @@ The following default data mapping is included in the fiscal document provider c
     The first component in each pair stands for a payment method that is set up for the store, and the second component stands for the corresponding payment group supported by the EFR fiscal registration service. For more information about payment groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
 
     The sample mapping of payment methods corresponds to store payment methods configured in the standard demo data:
+    
         - 1 Cash
         - 3 Card
         - 4 Customer account
         - 6 Currency
         - 8 Gift card
+
     Thus, you need to modify the sample mapping according to the payment methods configured in your application.
 
 - **Include customer data** – If this parameter is turned on, requests to the fiscal service will contain customer information such as names and addresses in cases where a customer is added to a transaction.
