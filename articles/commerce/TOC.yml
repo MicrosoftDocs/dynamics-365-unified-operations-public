@@ -1374,6 +1374,8 @@
         items:
         - name: Fiscal registration service integration sample for Germany
           href: localizations/emea-deu-fi-sample.md
+        - name: Deployment guidelines for fiscal integration sample for Germany (legacy)
+          href: localizations/emea-deu-fi-sample-sdk.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
