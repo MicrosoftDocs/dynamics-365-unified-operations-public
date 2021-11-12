@@ -315,7 +315,12 @@ Follow the steps described in [Set up a build pipeline for a fiscal integration 
 
 ## Design of extensions
 
-The fiscal registration service integration sample for Austria is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and consists of Commerce runtime and Hardware station extensions. For more details about the design of the fiscal integration solution and a fiscal integration sample, see the [overview of a fiscal integration sample design](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+The fiscal registration service integration sample for Austria is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal integration sample for Austria (legacy)](emea-aut-fi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 ### Commerce runtime extension design
 
