@@ -1350,6 +1350,8 @@
           items:
           - name: Fiscal registration service integration sample for Czech Republic
             href: localizations/emea-cze-fi-sample.md
+          - name: Deployment guidelines for fiscal integration sample for Czech Republic (legacy)
+            href: localizations/emea-cze-fi-sample-sdk.md
         - name: Poland
           items:
           - name: Fiscal printer integration sample for Poland
