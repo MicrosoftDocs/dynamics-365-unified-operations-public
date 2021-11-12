@@ -46,7 +46,10 @@ This procedure shows you to how create a new fixed asset book and associate it w
 7. Select Yes in the Create depreciation adjustments with basis adjustments field.
     * By default, fixed asset book transactions will post to the general ledger. You can disable posting to the general ledger for the book by setting the Post to general ledger field to No. Books that do not post to the general ledger are typically used for tax reporting purposes. This gives you additional flexibility to delete historical transactions for the asset book because they have not been committed to the general ledger.  
     * The Posting layer defaults to the Current layer if the book posts to general ledger, and None if it does not post to general ledger. Update Posting layer if you need transactions for this book to be posted to a different layer.  
-8. In the Calendar field, enter or select a value.
+8. Calculate positive depreciation.
+   * By default, the **Calculate positive depreciation** option is set to **No**. This setting indicates that depreciation will credit the selected asset book. In addition, the options **Allow net book value higher than acquisition price** and **Allow negative net book value** options are both set to **No**, and they can be changed independently. 
+   * To calculate positive depreciation, set the **Calculate positive depreciation** field to **Yes**. This selection indicates the depreciation will debit the fixed asset book. When the **Calculate positive depreciation** is set to Yes, the **Allow net book value higher than acquisition price** and **Allow negative net book value** options will be set to **Yes** automatically, and will be locked. Locking these options helps ensure that positive depreciation will only applied to fixed assets that were acquired in negative (credit). 
+10. In the Calendar field, enter or select a value.
     * Derived books will post transactions to different books at the same time. You create the transactions with the primary book and during posting, an exact copy of the transaction is posted to the derived book. There is no recalculation with derived book transactions, so it should not be used for depreciation transactions.  
 
 ## Associate the book with a fixed asset group
