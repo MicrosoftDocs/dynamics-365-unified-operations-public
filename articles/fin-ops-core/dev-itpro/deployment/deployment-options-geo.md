@@ -26,4 +26,4 @@ Our global network of datacenters offers three localization options to help you 
 
 ## See also
 
-For information about product availability per country and workload, see [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/availability-reports/).
+For information about product availability per country and workload, see [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/availability-reports/).
