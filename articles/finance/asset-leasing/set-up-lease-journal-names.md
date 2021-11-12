@@ -45,6 +45,7 @@ To configure lease journal names, follow these steps.
 2. On the **General** tab, in the **Initial recognition journal name** field, and select a journal. All initial recognition journal entries will be posted to this journal name.
 3. In the **Invoice journal name** field, select a journal. If the **Pay to vendor** option is set to **Yes** for the lease book, lease and expense payment invoices will be posted to this journal name.
 4. In the **Lease journal name** field, select a journal. All depreciation, interest, and short-term reclassification entries will be posted to this journal name. If the **Pay to vendor** option is set to **No** for the lease book, lease payments and expense payment entries will also be posted to this journal name.
+5. Select a journal in the **Lease modification journal name** field. Lease adjustment, termination and impairment transactions will be posted to this journal name. The journal name entere in the **Lease modification journal name** shouldn'tt have workflow or approval assigned to it. If the lease modification journal name isn't defined, the lease adjustment, termination and impairment transactions will post to the journal name defined in **Lease journal name** field. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
