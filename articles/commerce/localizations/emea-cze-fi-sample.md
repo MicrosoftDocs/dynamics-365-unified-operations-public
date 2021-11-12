@@ -217,8 +217,8 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
     > [!WARNING]
     > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
-    > - The fiscal document provider configuration file: **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**.
-    > - The fiscal connector configuration file: **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration**.
+    > - The fiscal document provider configuration file: **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleCzech.xml**.
+    > - The fiscal connector configuration file: **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
     > 
     > Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
