@@ -42,7 +42,7 @@ After completing project onboarding as described above, you may review additiona
 
 - For deployment of Microsoft managed environments via LCS, follow the instructions at [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience)  
 
-- **For Cloud hosted environment**, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). You must also complete the Resource Manager onboarding process for your connectors, as documented in [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](arm-onbarding-us-goverment.md).
+- For cloud-hosted environments, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). You must also complete the Resource Manager onboarding process for your connectors, as documented in [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
 > For US government Microsoft Dynamics Lifecycle Services projects, only Azure US government–specific Azure subscriptions are supported.
