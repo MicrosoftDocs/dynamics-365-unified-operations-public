@@ -156,7 +156,7 @@ In the previous procedure, you enabled the extensions that are components of the
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-5. Complete all the required setup tasks that are described in the [Set up Commerce for Germany](#set-up-commerce-for-germany) section earlier in this topic.
+5. Complete all the required setup tasks that are described in the [Set up Commerce for Germany](emea-deu-fi-sample.md#set-up-commerce-for-germany) section earlier in this topic.
 
 ## Design of extensions
 
