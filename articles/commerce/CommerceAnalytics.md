@@ -281,8 +281,8 @@ Sign-up for the [Insider Program for Commerce Analytics (Preview)](https://aka.m
 ### <a name="enableExportToDataLake"></a> Enable and Configure Export to Data Lake
 **Commerce Analytics (Preview)** relies on  **Export to Data Lake** for exporting Commerce HQ data to Azure Data Lake and keep the data fresh. Before you configure **Commerce Analytics (Preview)**, enable and configure Export to Data Lake by following the steps outlined in [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). When you configure Export to Data Lake feature, note the following information, which you will need to enter in subsequent steps.
 
-1. <a name="keyVault"></a>The key vault DNS name and the secret names where you store the application id and application secret. This is outlined in [Add secrets to the key vault](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#add-secrets).
-2. The storage account name for the Azure Data Lake instance. This is outlined in [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#create-subscription).
+1. <a name="keyVault"></a>The key vault DNS name and the secret names where you store the application id and application secret. This is outlined in [Add secrets to the key vault](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#addsecrets).
+2. The storage account name for the Azure Data Lake instance. This is outlined in [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription).
 
 ### <a name="enableCommerceAnalyticsAddin"></a> Enable and Configure Commerce Analytics (Preview) add-in
 
@@ -311,7 +311,7 @@ The system installs and configures the Commerce Analytics (Preview) for the envi
 
 A Shared Access Signature (SAS) token enables external entities to access your storage account, with a specific set of privileges for a finite amount of time. Azure Synapse will use the SAS token to access the underlying data in Azure Data Lake. To generate a SAS token, complete the below steps:
 
-1. Navigate to the storage account in Azure Portal, which you created while configuring Export to Data Lake, as outlined in [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#create-subscription).
+1. Navigate to the storage account in Azure Portal, which you created while configuring Export to Data Lake, as outlined in [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription).
 2. In the left options pane, under the storage account, select `Shared access signature`.
 3. Select the following options on the SAS options page:
 
@@ -343,7 +343,7 @@ To install and configure an Azure Synapse workspace, complete the below steps:
 
    | Placeholder Text | Replacement Value |
    |------------------|-------------------|
-   | placeholder_storageaccount | Replace with the name for the storage account that you created while configuring Export to Data Lake, as outlined in  [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#create-subscription). |
+   | placeholder_storageaccount | Replace with the name for the storage account that you created while configuring Export to Data Lake, as outlined in  [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription). |
    | <a name="phContainer"></a>placeholder_container | Replace with the name of the storage container that was created in your Azure Data Lake instance, after you successfully installed the Export to Data Lake addin in Lifecycle Services (LCS). You will need to use the Storage Explorer in Azure Portal to browse your storage account, in order to get the container name. |
    | placeholder_sastoken | Replace with the SAS token that you copied in [Get Storage Account SAS token](#getSASToken). Make sure to remove the **'?'** at the beginning of the SAS token value. |
    | <a name="phUserPwd"></a>placeholder_password | Replace with a strong password of your choice. Make a note of this password. This will be set as the password for the new `reportreadonlyuser` account, that will be created by this script. **DO NOT** enter the password of the `sqladminuser` account here.  |
@@ -399,18 +399,22 @@ In order to install the Power BI template app for Commerce Analytics (Preview), 
 5. Open the installed app, by clicking on the `Apps` menu item on the left pane, and then clicking on the app.
 6. Next, you will connect the app to your data source. Click on the `Connect` button. If this is not the first time you are installing the app, click on the `Connect your data` link in the yellow info bar.
 7. Input the parameter values as follows:
+
    | Parameter Name | Value |
    |----------------|-------|
    | Server       | Enter the name of the Azure Synapse Serverless SQL endpoint that you created in [Install and Configure Azure Synapse workspace](#configureAzureSynapse) section. You can get this value from the Azure Synapse workspace Overview page in Azure Portal. |
    | Database | Enter the value `CommerceAnalytics`
    | Language | You can select from the dropdown list. This is used for localized product and category names. This value is case sensitive. |
    | Date Range | You can select from the dropdown list. Data for the selected number of months will be imported to the Power BI dataset. The size of the dataset, and the time required to sync will depend on the value that you select. |
+   
 8. After you have entered the values, click on `Next`. You will be prompted to enter the credentials for connecting to the Azure Synapse SQL database. Enter the values as indicated below:
+
    | Parameter Name | Value |
    |----------------|-------|
    |Authentication method|Select `Basic`|
    |User name| Enter `reportreadonlyuser`|
    |Password|Enter the value that you replaced the [placeholder_password](#phUserPwd) with in the `SetupSynapse.sql` script. This is the password for the **reportreadonlyuser** account.| 
+   
 9. Click on `Sign in and connect` button.
 10. Wait until the dataset is refreshed successfully. You can navigate to the App workspace, by clicking on the Edit app icon. Once inside the workspace, you can check the refresh status of the dataset. Optionally, you can also set up auto refresh schedules for your dataset from here, as well as manage permissions and rename the app instance.
 
