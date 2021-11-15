@@ -35,7 +35,7 @@ This topic provides an overview of depreciation in Fixed assets.
 
 Depreciation is a periodic transaction that typically reduces the value of the fixed asset on the balance sheet, and is charged as an expenditure to a profit and loss account. Therefore, a main account is typically used to credit the periodic depreciation on the balance sheet. An offset account is an account in the profit and loss part of the chart of accounts.
 
-Beginning with version 10.0.24, the depreciation can debit a fixed asset that's been acquired with negative book value (credit) based on the asset book configuration option, **Calculate positive depreciation** on the **Books** page.
+As of version 10.0.24, the **Calculate positive depreciation** asset book configuration option on the **Books** page enables depreciation to debit a fixed asset that is acquired with negative book value (credit).
 
 ## Depreciation adjustment
 Usually, only a correction to a posted depreciation transaction is posted as a depreciation adjustment. Therefore, both the main account and the offset account are set up just like the accounts for depreciation. A depreciation adjustment can be either a positive amount or a negative amount, but the functionality of the main account (as a balance sheet account) and the functionality of the offset account (usually as a profit and loss account) remain the same.
