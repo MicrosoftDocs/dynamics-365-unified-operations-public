@@ -148,11 +148,11 @@ Life-time value is calculated based on total amount spent by a customer across a
 
 3.	Recency
 
-Recency is calculated based on number of days since a customer's last transactional engagement with the organization. At this time, recency does not consider non-transactional engagement signals such as E-commerce browsing activity.
+Recency is calculated based on number of days since a customer's last transactional engagement with the organization. At this time, recency does not consider non-transactional engagement signals such as e-commerce browsing activity.
 
 3.	Frequency
 
-Frequency is calculated based on a customer's transactional engagement with the organization. At this time, frequency does not consider non-transactional engagement signals such as E-commerce browsing activity.
+Frequency is calculated based on a customer's transactional engagement with the organization. At this time, frequency does not consider non-transactional engagement signals such as e-commerce browsing activity.
 
 4.	Relationship length
 
@@ -161,15 +161,15 @@ Relationship length is calculated based on number of days since the customer rec
 5.	Transaction count
 
 ### 8.	Comparison
-1.	Product comparison By time period
-    1.	Sales & Sales difference
-    2.	Margin & Margin difference
-2.	Customer By time period
-    1.	Sales & Sales difference
-    2.	Margin & Margin difference
+1.	Product comparison by time period
+    1.	Sales and sales difference
+    2.	Margin and margin difference
+2.	Customer by time period
+    1.	Sales and sales difference
+    2.	Margin and margin difference
 
 ### 9.	Web activity
-#### Top level filters
+#### Top-level filters
 
 1.	Date range
 2.	Channel type
@@ -178,94 +178,96 @@ Relationship length is calculated based on number of days since the customer rec
 
 #### a.	Acquisition
 1.	Page views
-    1.	By Country
-    2.	By Product
-    3.	By User signed-in status
-    4.	By Date
+    1.	By country
+    2.	By product
+    3.	By user signed-in status
+    4.	By date
 2.	E-commerce orders
 3.	Conversion rate
-    1.	By Date
+    1.	By date
 4.	Conversion funnel
-    1.	Page view by Page type (Home page, Category page, Product details page)
+    1.	Page view by page type (Home page, Category page, Product details page)
     2.	Add to cart
     3.	Checkout
     4.	Purchase
 
 #### b.	Session
-Session is defined as an episode of a user's visit to your E-commerce website. A session is considered ended after 30 minutes of inactivity, or after 24 hours of active usage.
-1.	By Country
-2.	By Origin (External referrer)
-3.	By User Signed-in status
+Session is defined as an episode of a user's visit to your e-commerce website. A session is considered ended after 30 minutes of inactivity, or after 24 hours of active usage.
+1.	By country
+2.	By origin (external referrer)
+3.	By user signed-in status
 4.	Session count
-    1.	By Date
-    2.	By Entry page
+    1.	By date
+    2.	By entry page
 5.	Order per session
-    1.	By Date
+    1.	By date
 6.	Session bounce rate
     
-    Session bounce is defined as a session where the user immediately leaves after visiting your E-commerce website. Learn more about [Bounce rate](https://en.wikipedia.org/wiki/Bounce_rate).
+Session bounce is defined as a session where the user immediately leaves after visiting your E-commerce website. Learn more about [Bounce rate](https://en.wikipedia.org/wiki/Bounce_rate).
 
 7.	Clicks per session
 
 #### c.	Visitor
-An anonymous visitor on your E-commerce site is determined based on a unique identifier within that specific browser on that specific device. Commerce Analytics does not track anonymous users across different browsers or devices. An anonymous user using the same browser on the same computer is uniquely indetified across multiple user sessions, until the browser cache data is cleared or typically until a 12 month period, whichever comes first. 
-For visitors who browse your E-commerce site while signed-in, Commerce Analytics is able to provide additional information based on your existing relationship with these users based on purchases such users may have made with your organization, across all Dynamics 365 Commerce sales channels (including Point of Sale, Call center, E-commerce), such as Recency, Relationship Length, Lifetime Value & Frequency
+An anonymous visitor on your e-commerce site is determined based on a unique identifier within that specific browser on that specific device. Commerce analytics does not track anonymous users across different browsers or devices. An anonymous user using the same browser on the same computer is uniquely indetified across multiple user sessions, until the browser cache data is cleared or typically until a 12 month period, whichever comes first.
+
+For visitors who browse your e-commerce site while signed-in, Commerce analytics is able to provide additional information based on your existing relationship with these users based on purchases such users may have made with your organization, across all Dynamics 365 Commerce sales channels (including Point of Sale, Call center, E-commerce), such as recency, relationship length, lifetime value and frequency.
 
 1.	Visitor margin
 2.	Visitor average orders
 3.	Visitor average sales
 4.	E-commerce visitor count
-    1.	By Date
-    2.	By Location
+    1.	By date
+    2.	By location
     
-        At this time, Commerce Analytics can only provide country level granularity for location insights for E-commerce visitors. 
+        At this time, Commerce analytics can only provide country level granularity for location insights for e-commerce visitors. 
     
-    3.	By Recency
+    3.	By recency
     
-        Recency is calculated based on number of days since a customer's last transactional engagement with the organization. At this time, recency does not consider non-transactional engagement signals such as E-commerce browsing activity.
+        Recency is calculated based on number of days since a customer's last transactional engagement with the organization. At this time, recency does not consider non-transactional engagement signals such as e-commerce browsing activity.
     
     4.	By Relationship length
 
         Relationship length is calculated based on number of days since the customer record was created in the system. 
     
-    5.	By Lifetime value (LTV)
+    5.	By lifetime value (LTV)
 
         Life-time value is calculated based on total amount spent by a customer across all Dynamics 365 Commerce sales channels, including Point of Sale, E-commerce, Call center.
 
-    6.	By Frequency
+    6.	By frequency
         
         Frequency is calculated based on a customer's transactional engagement with the organization. At this time, frequency does not consider non-transactional engagement     signals such as E-commerce browsing activity.
 
 
 #### d.	Impression
-Impression is defined as each viewing of a Product visual by an E-commerce visitor. For instance, if an E-commerce visitor navigates to Home page of your website and views a Yoga mat product within a “Top selling” list module, and also views the same Yoga mat product within a “Picks for you” list module, this would count as 2 product impressions. Currently impressions track product views within the following surfaces:
+Impression is defined as each viewing of a product visual by an e-commerce visitor. For instance, if an e-commerce visitor navigates to the Home page of your website and views a yoga mat product within a **Top selling** list module, and also views the same yoga mat product within a **Picks for you** list module, this would count as 2 product impressions. Currently impressions track product views within the following surfaces:
+
 1.	Lists (Recommended, Top selling, Picks for you, Trending, etc.)
 2.	Cart module
 3.	Search result container
 4.	Category search result container
     
-Products rendered within Carousel module or within custom visuals is not currently counted within Impressions metric.
+Products rendered within carousel module or within custom visuals is not currently counted within the Impressions metric.
 
 Impression report page includes the following metrics
 1.	Impression count
-    1.	By Page Type & Module
-    Page type is the generic page type defined for each page in your E-commerce website.
-    Module type defines the type of E-commerce visual module within which the product is shown.
-    You may need to drill down in the Page & Module visual to view impressions by module
-    2.	By Product
-    3.	By User signed-in status
-    4.	By Date
+    1.	By page type and module
+    Page type is the generic page type defined for each page in your e-commerce website. Module type defines the type of e-commerce visual module within which the product is shown.
+    You may need to drill down in the page and module visual to view impressions by module.
+    2.	By product
+    3.	By user signed-in status
+    4.	By date
 2.	Impression click count
 
-    Impression click is defined as an E-commerce visitor clicking on a product visual, which typically navigates users to the Product Details Page for that product. 
+    Impression click is defined as an e-commerce visitor clicking on a product visual, which typically navigates users to the Product Details page for that product. 
+    
 3. Impression click-through rate (CTR)
 
-    Click through rate is defined as the total number of impression clicks divided by the total number of impressions.
+    Click-through rate is defined as the total number of impression clicks divided by the total number of impressions.
 
-## Commerce Analytics (Preview) installation
+## Commerce analytics (Preview) installation
 
 > [!NOTE]
-> **Commerce Analytics (Preview) ** is in preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md)
+> Commerce analytics (Preview) is in preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md)
 
 ### <a name="enableCommerceAnalytics"></a> Enable and Configure Commerce Analytics (Preview)
 To install Commerce Analytics (Preview), you will need permissions to create resources in an Azure subscription and permissions in Lifecycle Service Portal to install add-ins. Complete the steps outlined below: 
