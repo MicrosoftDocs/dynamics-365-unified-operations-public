@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 
 ---
-# Preview features in in Dynamics 365 Commerce 10.0.23
+# Preview features in Dynamics 365 Commerce 10.0.23
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -44,6 +44,8 @@ The following features are included in this release. Some of the listed features
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |  Global address book| Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md). | Enabled by default |
+|   Globalization |  [(India) GST in e-commerce](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/gst-e-commerce-india)    |  This feature enables Dynamics 365 Commerce customers in India to implement e-commerce capabilities by ensuring the Goods and Services Tax (GST) is calculated on e-commerce orders.   |  Feature management  |
+|   Globalization |   (Eastern Europe) Improvements in settlement of sales invoices and payments for retail statements   |  The feature ensures correct automatic settlement of sales invoices and payments generated from retail statements. The feature is applicable to the Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.   |  Feature management  |
 |   Merchandising |   [Improved pricing computation performance by using flattened discount tables](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-pricing-computation-performance-using-flattened-discount-tables)   |   [Retail discounts](../retail-discounts-overview.md)  |  Feature management (*Improve discount computation performance by using flattened discount tables feature.*)  |
 |   Office integration  |   Create email templates for transactional events  |  [Create email templates for transactional events](../email-templates-transactions.md)   | Enabled by default  |
 

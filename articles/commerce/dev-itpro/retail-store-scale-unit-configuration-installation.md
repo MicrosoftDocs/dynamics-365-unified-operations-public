@@ -14,7 +14,7 @@ ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, Retai
 # ROBOTS:
 audience: IT Pro
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 219744
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546

@@ -1,13 +1,13 @@
 ---
 title: Integrated tax
 description: This topic describes the integration of tax data between Finance and Operations and Dataverse.
-author: robinarh
+author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-07-15
 ---
 
