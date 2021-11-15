@@ -23,7 +23,7 @@ Select Microsoft Dynamics 365 United States (US) Government products are availab
 
 - US federal, state, local, tribal, and territorial government entities
 - Private entities that use Dynamics 365 US Government to provide solutions to government entities or to a qualified member of the cloud community
-- Private entities that have customer data that is subject to government regulations, where Dynamics 365 US Government is the appropriate service to meet the regulatory requirements for that data.
+- Private entities that have customer data that is subject to government regulations, where Dynamics 365 US Government is the appropriate service to meet the regulatory requirements for that data
 
 For information, see [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 
@@ -45,13 +45,13 @@ After you've completed project onboarding as described in the previous section, 
 
 ## Features that aren't available
 
-Some features either won't be available for deployment in GCC or won't be available to use with Dynamics 365 in GCC. For example, Azure DevOps Services will be unavailable in **Government cloud**. However, on-premises Azure DevOps or public Azure DevOps services will be available. For detailed information about feature availability, see [Business Applications US Government Feature Availability](https://aka.ms/BAPFunctionalParity).
+Some features won't be available for deployment in GCC or won't be available to use with Dynamics 365 in GCC. For example, Azure DevOps Services will be unavailable in **Government cloud**. However, on-premises Azure DevOps or public Azure DevOps services will be available. For detailed information about feature availability, see [Business Applications US Government Feature Availability](https://aka.ms/BAPFunctionalParity).
 
 ## Frequently asked questions
 
 ### Are Dynamics 365 Finance and Dynamics 365 Supply Chain Management supported in GCC-High?
 
-No, Dynamics 365 Finance and Dynamics 365 Supply Chain Management are supported only in GCC.
+No. Dynamics 365 Finance and Dynamics 365 Supply Chain Management are supported only in GCC.
 
 ### Can I use public Azure DevOps with Finance and Supply Chain Management in GCC?
 
@@ -71,7 +71,7 @@ No, the code upgrade tool isn't currently available in GCC. However, you can cre
 
 ### Can my partner open a support ticket on my behalf?
 
-Yes. However, if your partner uses a non-GCC identity, the support ticket will be directed to the public support queue. We recommend that you open support tickets by using customer GCC entitlement in LCS.
+Yes. However, if your partner uses a non-GCC identity, the support ticket will be directed to the public support queue. We recommend that you use customer GCC entitlement in LCS to open support tickets.
 
 ## See also
 
