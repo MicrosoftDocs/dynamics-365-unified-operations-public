@@ -187,6 +187,7 @@ The previous procedure enables the extensions that are components of the control
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+6. Complete all the required setup tasks that are described in [Setting up the integration with control units](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 
 ## Design of the extensions
 
@@ -256,7 +257,7 @@ The migration process should consist of the following steps.
 1. Update the Commerce Scale Unit components, and enable the extensions of the current sample.
 1. Make sure that all offline transactions are synced from offline-enabled MPOS devices.
 1. Turn off all devices that use the components of the earlier sample.
-1. Complete the setup tasks that are described in the [Setting up the integration with control units](#setting-up-the-integration-with-control-units) section.
+1. Complete all the required setup tasks that are described in [Setting up the integration with control units](emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 1. Update the POS and Hardware station components, disable the extensions that are parts of the earlier sample, and enable the extensions of the current sample.
 
     > [!NOTE]
