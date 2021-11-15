@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Commerce Analytics (Preview)
-description: This topic details installation and usage of analytics capability in  Dynamics 365 Commerce. 
+title: Commerce analytics (Preview)
+description: This topic details installation and usage of the analytics capability in  Dynamics 365 Commerce. 
 author: AamirAllaq
-ms.date: 11/12/2021
+ms.date: 11/15/2021
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
@@ -13,20 +13,20 @@ ms.search.validFrom: 2021-11-12
 
 ---
 
-# Commerce Analytics (Preview)
+# Commerce analytics (Preview)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes functional analytics capability included within Commerce Analytics for Dynamics 365 Commerce as well as installation steps to enable this capability. 
+This topic describes and explains how to install Commerce analytics (Preview), the functional analytics capability included in Dynamics 365 Commerce. 
 
-## Commerce Analytics (Preview) system architecture
+## Commerce analytics (Preview) system architecture
 ### Key components
-Commerce Analytics is composed of the following key components:
+Commerce analytics is composed of the following key components:
 
-1. Ready to use interactive Power BI reports
-2. SQL views in Azure Synapse Analytics
-3. Entity & Ontology data in Azure Data Lake
-4. Raw data in Azure Data Lake
+- Ready to use interactive Power BI reports
+- SQL views in Azure Synapse Analytics
+- Entity and ontology data in Azure Data Lake
+- Raw data in Azure Data Lake
 
 ![image](https://user-images.githubusercontent.com/43016803/141214066-3314d8b8-4644-4f26-a703-b4c838d50aad.png)
 
