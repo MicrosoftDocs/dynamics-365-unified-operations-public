@@ -22,7 +22,7 @@ ms.search.validFrom: 2021-11-09
 Select Microsoft Dynamics 365 United States (US) Government products are available to qualified government and private entities. Those entities are limited to the following types:
 
 - US federal, state, local, tribal, and territorial government entities
-- Private entities that use Dynamics 365 US Government to provide solutions to government entities or a qualified member of the cloud community
+- Private entities that use Dynamics 365 US Government to provide solutions to government entities or to a qualified member of the cloud community
 - Private entities that have customer data that is subject to government regulations, where Dynamics 365 US Government is the appropriate service to meet the regulatory requirements for that data.
 
 For information, see [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
@@ -31,7 +31,7 @@ For information, see [Dynamics 365 US Government](/power-platform/admin/microsof
 
 To complete the initial onboarding steps for an implementation project in Microsoft Dynamics Lifecycle Services (LCS), follow the instructions in [Onboard an implementation project](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md). However, don't use the link to LCS that is provided in those instructions. Instead, use the following URL to open LCS for US Government Community Cloud (GCC): <https://gov.lcs.microsoftdynamics.us>.
 
-After the initial onboarding steps are completed in LCS, follow the instructions in [Project onboarding](../lifecycle-services/project-onboarding.md). Once again, be sure to use the previously mentioned URL to open LCS for GCC.
+After the initial onboarding steps are completed in LCS, follow the instructions in [Project onboarding](../lifecycle-services/project-onboarding.md). Be sure to use the previously mentioned URL to open LCS for GCC.
 
 ## Environment deployment
 
@@ -71,7 +71,7 @@ No, the code upgrade tool isn't currently available in GCC. However, you can cre
 
 ### Can my partner open a support ticket on my behalf?
 
-Yes, but be aware that, if your partner uses a non-GCC identity, the support ticket will be directed to the public support queue. We recommend that you open support tickets by using customer GCC entitlement in LCS.
+Yes. However, if your partner uses a non-GCC identity, the support ticket will be directed to the public support queue. We recommend that you open support tickets by using customer GCC entitlement in LCS.
 
 ## See also
 
