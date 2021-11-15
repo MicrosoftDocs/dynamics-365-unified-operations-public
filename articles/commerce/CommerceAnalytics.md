@@ -271,7 +271,7 @@ Impression report page includes the following metrics
 ### <a name="enableCommerceAnalytics"></a> Enable and configure Commerce analytics (Preview)
 To install Commerce analytics (Preview), you will need permissions to create resources in an Azure subscription and permissions in Lifecycle Service to install add-ins. Complete the steps outlined below: 
 
-1. [Join Insider Program for Commerce Analytics (Preview)](#joinInsiderProgram)
+1. [Submit the Preview in-take form for Commerce Analytics (Preview)](#joinPreview)
 2. [Enable and configure Export to Data Lake](#enableExportToDataLake)
 3. [Enable and configure Commerce analytics (Preview) add-in](#enableCommerceAnalyticsAddin)
 4. [Generate storage account SAS token](#getSASToken)
@@ -279,8 +279,8 @@ To install Commerce analytics (Preview), you will need permissions to create res
 6. [Install and configure Azure Synapse workspace](#configureAzureSynapse)
 7. [Install Power BI template app](#powerbi) 
 
-### <a name="joinInsiderProgram"></a> Join Insider Program for Commerce analytics (Preview)
-Sign-up for the [Insider Program for Commerce analytics (Preview)](https://aka.ms/CommerceAnalyticsInsiderProgram)
+### <a name="joinPreview"></a> Submit the Preview in-take form for Commerce analytics (Preview)
+Submit the Preview in-take form for Commerce analytics (Preview) [Commerce analytics (Preview) in-take form](https://forms.office.com/r/vW5VLJGXZ2). Please allow up to 3 business days to process. Once processed, a confirmation email will be sent to the email address provided in the form.
 
 ### <a name="enableExportToDataLake"></a> Enable and configure Export to Data Lake
 Commerce analytics (Preview) relies on  Export to Data Lake for exporting Commerce HQ data to Azure Data Lake and keep the data fresh. Before you configure Commerce analytics (Preview), enable and configure Export to Data Lake by following the steps outlined in [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). When you configure Export to Data Lake feature, note the following information, which you will need to enter in subsequent steps.
