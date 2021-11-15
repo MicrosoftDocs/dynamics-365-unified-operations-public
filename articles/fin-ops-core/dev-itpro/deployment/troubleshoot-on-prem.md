@@ -702,7 +702,7 @@ Category does not exist.
 
 ## Management Reporter
 
-Additional logging can be done by registering providers. To do this, ownload the **LBDMRDeployerTroubleshooter** asset from the LCS Shared Asset Library. You can find the asset in the model asset type. Copy the zip file to the **primary** orchestrator machine, extract it, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
+Additional logging can be done by registering providers. To do this, download the **LBDMRDeployerTroubleshooter** asset from the LCS Shared Asset Library. You can find the asset in the model asset type. Copy the zip file to the **primary** orchestrator machine, extract it, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
 
 > [!NOTE]
 > If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:

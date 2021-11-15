@@ -921,7 +921,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
 ### <a name="encryptcred"></a>Step 17. Encrypt credentials
 
-1. On any client machine, install the encipherment certificate in the **LocalMachine\\My** certificate store.
+1. On any client machine, install the **axdataencipherment** certificate in the **LocalMachine\\My** certificate store.
 2. Grant the current user **Read** access to the private key of this certificate.
 3. Create the **Credentials.json** file, as shown here.
 
@@ -948,7 +948,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     ```powershell
     # Service fabric API to encrypt text and copy it to the clipboard.
-    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
+    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<AxDataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
 
     > [!IMPORTANT]
