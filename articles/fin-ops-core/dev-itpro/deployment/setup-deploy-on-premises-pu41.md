@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 11/01/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -921,7 +921,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
 ### <a name="encryptcred"></a>Step 17. Encrypt credentials
 
-1. On any client machine, install the encipherment certificate in the **LocalMachine\\My** certificate store.
+1. On any client machine, install the **axdataencipherment** certificate in the **LocalMachine\\My** certificate store.
 2. Grant the current user **Read** access to the private key of this certificate.
 3. Create the **Credentials.json** file, as shown here.
 
@@ -948,7 +948,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     ```powershell
     # Service fabric API to encrypt text and copy it to the clipboard.
-    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
+    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<AxDataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
     ```
 
     > [!IMPORTANT]
