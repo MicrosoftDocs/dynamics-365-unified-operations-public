@@ -22,22 +22,22 @@ ms.search.validFrom: 2021-11-09
 Select Microsoft Dynamics 365 United States (US) Government products are available to qualified government and private entities. Those entities are limited to the following types:
 
 - US federal, state, local, tribal, and territorial government entities
-- Private entities that use Dynamics 365 US Government to provide solutions to government entities or to a qualified member of the cloud community
-- Private entities that have customer data that is subject to government regulations, where Dynamics 365 US Government is the appropriate service to meet the regulatory requirements for that data
+- Private entities that use Dynamics 365 US Government to provide solutions to government entities or to qualified members of the cloud community
+- Private entities that have customer data that is subject to government regulations, and Dynamics 365 US Government is the appropriate service to meet the regulatory requirements
 
 For information, see [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 
 ## Onboarding
 
-To complete the initial onboarding steps for an implementation project in Microsoft Dynamics Lifecycle Services (LCS), follow the instructions in [Onboard an implementation project](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md). However, don't use the link to LCS that is provided in those instructions. Instead, use the following URL to open LCS for US Government Community Cloud (GCC): <https://gov.lcs.microsoftdynamics.us>.
+To complete the initial onboarding for an implementation project in Microsoft Dynamics Lifecycle Services (LCS), follow the instructions in [Onboard an implementation project](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md). However, don't use the link to public LCS that is provided in those instructions. Instead, use the following URL to open LCS for US Government Community Cloud (GCC): <https://gov.lcs.microsoftdynamics.us>.
 
-After the initial onboarding steps are completed in LCS, follow the instructions in [Project onboarding](../lifecycle-services/project-onboarding.md). Be sure to use the previously mentioned URL to open LCS for GCC.
+After the initial onboarding is completed, follow the instructions in [Project onboarding](../lifecycle-services/project-onboarding.md). Once again, use [LCS for GCC](https://gov.lcs.microsoftdynamics.us) instead of public LCS.
 
 ## Environment deployment
 
-After you've completed project onboarding as described in the previous section, you can review additional capabilities of LCS in [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Then move on to environment deployment.
+After you've completed project onboarding, you can review the additional capabilities of LCS that are described in [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Then move on to environment deployment.
 
-- For deployment of Microsoft-managed environments via LCS, follow the instructions in [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- To deploy Microsoft-managed environments via LCS, follow the instructions in [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - For cloud-hosted environments, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). You must also complete the Resource Manager onboarding process for your connectors, as described in [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
