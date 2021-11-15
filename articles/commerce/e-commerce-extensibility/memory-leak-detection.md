@@ -4,7 +4,7 @@
 title: Test for memory leaks
 description: This topic describes how to test custom e-commerce code for memory leaks in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
-ms.date: 11/12/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to test an e-commerce page for custom code memory leaks in Microsoft Dynamics 365 Commerce.
 
-Memory leak tests can be done on a mock page to ensure custom e-commerce module and data action code running on that page do not leak memory.
+Memory leak tests can be done on a mock page to ensure that custom e-commerce module and data action code running on that page do not leak memory.
 
-The following steps outline the approach to generate heap snapshots of an e-commerce page to detect memory leaks.  The process involves establishing a baseline, adding request load to the page, then running the garbage collection and ensuring all memory is free'd up back to the baseline size.
+The following steps outline the approach to generate heap snapshots of an e-commerce page to detect memory leaks. The process involves establishing a baseline, adding a request load to the page, and then running the garbage collection and ensuring that all memory is freed up back to the baseline size.
 
 ### Create a page mock that represents the e-commerce page you want to test.  
 
@@ -41,12 +41,19 @@ The [page mock](test-page-mock.md) documentation explains how to create a custom
 
 ### Build production code
 
-From within the online SDK root folder build the code in PROD mode with the command ```yarn build:prod```.
+To build production code in PROD mode within the online SDK root folder, execute the following command:
+
+```Console
+yarn build:prod
+```
 
 ### Run Node server in debug mode
 
-Execute the below command to start the Node server in debug mode:
-```node --inspect-brk build/server.js```
+To start the Node server in debug mode, execute the following command:
+
+```Console
+node --inspect-brk build/server.js
+```
 
 ### Open browser inspect tool
 
