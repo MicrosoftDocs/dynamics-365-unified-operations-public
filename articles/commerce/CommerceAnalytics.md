@@ -33,40 +33,43 @@ Commerce analytics is composed of the following key components:
 ### Data flow
 #### Step 1: Data generation
 Data originates either as transactional or behavioral data from one of the following sources:
-1.	Call center associate using Commerce HQ client to process sales orders
-2.	Cashier at Point-of-Sale processing sales transactions
-3.	Sales created within custom applications using Headless Commerce (Commerce Scale Unit)
-4.	E-commerce shopper browsing your E-commerce website 
-5.	E-commerce shopper placing an order on your E-commerce website
-6.	Data produced by other systems such as Dynamics 365 Connected Spaces
 
-#### Step 2: Ingestion & Pre-processing
-Transactional data makes its way to Commerce HQ, either directly (in case of orders captured directly in Commerce HQ client), or via Commerce Scale Unit (in case of Commerce orders captured at POS, E-commerce or custom clients using Headless Commerce). 
-Transactional data is then copied over to your data lake as raw data and stored within the Tables folder, via Export to Datalake feature. 
-E-commerce web activity data is sent directly to the data lake.
+- Call center associate using Commerce HQ client to process sales orders
+- Cashier at point-of-sale processing sales transactions
+- Sales created within custom applications using Headless Commerce (Commerce Scale Unit)
+- E-commerce shopper browsing your e-commerce website 
+- E-commerce shopper placing an order on your e-commerce website
+- Data produced by other systems such as Dynamics 365 Connected Spaces
+
+#### Step 2: Ingestion and pre-processing
+Transactional data makes its way to Commerce HQ, either directly (in case of orders captured directly in Commerce HQ client) or via Commerce Scale Unit (in case of Commerce orders captured at POS, e-commerce or custom clients using Headless Commerce). 
+
+Transactional data is then copied over to your data lake as raw data and stored within the Tables folder, via the export to data lake feature. E-commerce web activity data is sent directly to the data lake.
+
 Data produced by other systems such as Dynamics 365 Connected Spaces is also sent to the data lake by other systems directly.
 
-#### Step 3: Transformation & Aggregation
-Once raw data is in the data lake, Commerce Analytics service reads the data, transforms & aggregates it, and writes it back to the data lake in the form of logical entities (within Entities folder) and aggregated metrics (within Ontologies folder) 
+#### Step 3: Transformation and aggregation
+Once raw data is in the data lake, the Commerce analytics service reads the data, transforms, aggregates it, and writes it back to the data lake in the form of logical entities (within the Entities folder) and aggregated metrics (within the Ontologies folder). 
 
 #### Step 4: Querying
 Data in the lake is queried via a T-SQL interface by using Azure Synapse Analytics. This interface includes SQL views which allow for federated querying of data in the lake, either directly using a T-SQL client (for ad-hoc analysis) or through a visualization tool such as Power BI.
 
-#### Step 5: Modeling & Serving
+#### Step 5: Modeling and serving
 Data queried by Azure Synapse Analytics then makes its way to Power BI’s semantic model. Depending on the type of data, it is either imported in-memory into Power BI on a periodic basis or directly queried at run-time. 
+
 The final stage is for the data to be rendered within Power BI visuals for users to view and interact with. 
 
 
-## Commerce Analytics functional overview
+## Commerce analytics functional overview
 ### 1.	Summary
 #### Top level filters
-1.	Date Settings
+1.	Date settings
     1.	Year
     2.	Quarter
     3.	Month
     4.	Week
     5.	Day
-2.	Channel Settings
+2.	Channel settings
     1.	Legal entity
     2.	Channel type
     3.	Customer type
@@ -74,7 +77,7 @@ The final stage is for the data to be rendered within Power BI visuals for users
     5.	Channel
     6.	Org hierarchy
 
-3.	Product Settings
+3.	Product settings
     1.	Category hierarchy
     2.	Category
 
@@ -94,32 +97,32 @@ The final stage is for the data to be rendered within Power BI visuals for users
 3.	Returns
 
 ### 2.	Sales
-1.	By Delivery location
-2.	By Channel/Store/Terminal
-3.	By Employee
-4.	By Date
-5.	By Hour
-6.	By Product Category
+1.	By delivery location
+2.	By channel/store/terminal
+3.	By employee
+4.	By date
+5.	By hour
+6.	By product category
 
 ### 3.	Margin
-1.	By Delivery location
-2.	By Product
-3.	By Date
+1.	By delivery location
+2.	By product
+3.	By date
 
 ### 4.	Return
 1.	Return by amount
-    1.	By Store
-    2.	By Product
-    3.	By Date
+    1.	By store
+    2.	By product
+    3.	By date
 2.	Return by transaction
-    1.	By Store
-    2.	By Product
-    3.	By Date
+    1.	By store
+    2.	By product
+    3.	By date
 
 ### 5.	Discount
-1.	By Store
-2.	By Product
-3.	By Date
+1.	By store
+2.	By product
+3.	By date
 4.	Decomposition
     1.	Legal entity
     2.	Store
@@ -128,11 +131,11 @@ The final stage is for the data to be rendered within Power BI visuals for users
     5.	Product
 
 ### 6.	Payment
-1.	By Channel/Terminal
-2.	By Payment method/Type
-3.	By Date
+1.	By channel/terminal
+2.	By payment method/type
+3.	By date
 4.	Decomposition
-    1.	Legal Entity
+    1.	Legal entity
     2.	Channel type
     3.	Store
     4.	Terminal
