@@ -41,6 +41,7 @@ If you don't import a data entity package, you can manually set up the EM functi
 - [Additional fields](#additional)
 - [Executable class settings](#executable)
 - [Populate records actions](#populate)
+- [Populate records from multiple companies](#multiple-companies-populate)
 - [Web applications](#applications)
 - [Web service settings](#settings)
 - [Message processing actions](#actions)
@@ -145,6 +146,35 @@ On the **Datasources setup** FastTab, add a line for every data source that is u
 | Document account field | Select the field that the document account will be taken from in the selected master table. The value of this field is used as the value of the **Account number** field for the message item. |
 | Company                | This field is available when the **Cross-company queries for the populate records actions** feature is turned on in the **Feature management** workspace. Use this feature to set up cross-company data sources for the populate records actions. Data can be fetched from multiple companies. |
 | User query             | <p>If you set up a query by selecting **Edit query** above the grid, and you specify the criteria that must be applied to the selected master table that data is filled in from, this checkbox is automatically selected. Otherwise, all the records are filled in from the selected master table source.</p><p>When the **Cross-company queries for the populate records actions** feature is turned on in the **Feature management** workspace, and records must be collected from several companies, add a line for each additional legal entity that must be included in reporting. For each new line, select **Edit query**, and specify a related criterion that is specific to the legal entity that is specified in the **Company** field on the line. When you've finished, the **Datasources setup** grid will contain lines for all the legal entities that must be included in reporting.</p> |
+
+## <a id="multiple-companies-populate"></a> Populate records from multiple companies
+
+If your company must report from multiple companies in the same Finance data base, set up [Populate records actions](#populate) for all the legal entities data from which must be included in reporting.
+
+To enable this capability in your Fianace, complete the following steps. 
+
+  1. Go to **Workspaces** > **Feature management**.
+  2. Find **Cross-company queries for the populate records actions** in the list.
+  3. Select **Enable now**. 
+
+To set up [Populate records actions](#populate) for multiple companies data from which must be included in reporting, complete the following steps.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**. On the **Populate records action** page, the **Datasources setup** grid includes a **Company** field when **Cross-company queries for the populate records actions** feature is enabled. For existing records that were created during the general setup of the [Populate records actions](#populate), this field shows the identifier of the current legal entity.
+2. In the **Datasources setup** grid, add a line for each subsidiary legal entity that must be included in reporting. Set the following fields.
+
+    | Field name             | Value |
+    |------------------------|-------|
+    | Name                   | Enter a text value that will help you understand where this record comes from. For example, enter **Data source name - Subsidiary 1**. |
+    | Message item type      | Select **Message item type** necessary  for your EM processing. |
+    | Account type           | Specify **Account type** necessary  for your EM processing **All** in case your EM processing has no specific account types. |
+    | Master table name      | Specify the name of the master table necessary  for your EM processing. |
+    | Document number field  | Specify the field that contians the document number in records of your EM processing. |
+    | Document date field    | Specify the field that contians the document date in records of your EM processing. |
+    | Document account field | Specify the field that contians the document account in records of your EM processing. |
+    | Company                | Select the ID of the subsidiary legal entity. |
+    | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**. |
+
+3. For each new line, select **Edit query**, and specify a related critecia for the legal entity that is specified in the **Company** field on the line.
 
 ## <a id="applications"></a>Web applications
 
