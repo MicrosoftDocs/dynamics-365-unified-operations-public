@@ -90,3 +90,10 @@ To take a memory snapshot for a page, open a new browser window and navigate to 
 
 At this stage benchmarking load tools can be used to create more URL hits to the page being tested. Next, select the garbage collector and take another heap snapshot. Outside of some data load for caching, memory usage should come down to the baseline of the page obtained from the previous step. This testing can be repeated several times to ensure that memory usage is decreasing. If memory usage is not decreasing, it may be due to objects that cannot be garbage collected, and in this case you will see the heap grow after each run. Your custom code can then be examined for any memory leaks causing this issue.
 
+## Additional resources
+
+[Best practices for Dynamics 365 Commerce development](best-practices-dev.md)
+
+[Dynamics 365 Commerce online SDK FAQ](sdk-faq.md)
+
+[Debugging best practices for Dynamics 365 Commerce development](debugging-best-practices.md)
