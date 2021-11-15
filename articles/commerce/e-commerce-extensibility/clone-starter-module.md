@@ -37,7 +37,7 @@ We recommend that you avoid cloning if you can, because clones will be copies of
 
 ## Clone and update a module
 
-To clone a module and then update it, use the **clone** command-line interface (CLI) command. When you run the below command, you replace **SDK\_MODULE\_NAME** with the name of the module that you want to modify and **NEW\_MODULE\_NAME** with the name of the new module.
+To clone a module and then update it, use the **clone** command-line interface ([CLI](cli-command-reference.md#clone)) command. When you run the below command, you replace **SDK\_MODULE\_NAME** with the name of the module that you want to modify and **NEW\_MODULE\_NAME** with the name of the new module.
 
 **yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME**
 
