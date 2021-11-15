@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to clone a module library module in Microsoft Dynamics 365 Commerce.
 
-The Dynamics 365 Commerce online software development kit (SDK) includes a set of module library modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated. 
+The Dynamics 365 Commerce online software development kit (SDK) includes a set of [module library](..\starter-kit-overview.md) modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated. 
 
-You can also create module extension views. In this way, you can provide alternative layout views without having to clone a module. We recommend that you avoid cloning if you can, because clones will be copies of module library modules and won't receive any automatic service updates that the module library modules get. For more information, see [Theming overview](theming.md). 
+We recommend that you avoid cloning if you can, because clones will be copies of module library modules and won't receive any automatic service updates that the module library modules get. There are several extensibility alternatives to cloning, such as module view and definition extensions that allow you to provide alternative layout views and data action overrides that allow you to modify business logic which should be considered before module cloning. For more information, see [Theming overview](theming.md). 
 
 ## Clone and update a module
 
