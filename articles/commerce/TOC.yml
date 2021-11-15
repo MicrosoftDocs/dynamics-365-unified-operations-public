@@ -1422,8 +1422,6 @@
           href: localizations/emea-swe-cash-registers.md
         - name: Control unit integration sample for Sweden
           href: localizations/emea-swe-fi-sample.md
-        - name: Deployment guidelines for control unit integration sample for Sweden (legacy)
-          href: localizations/emea-swe-fi-sample-sdk.md
         - name: Sample for Retail POS integration with control units (legacy)
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
