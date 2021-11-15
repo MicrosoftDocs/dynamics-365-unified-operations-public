@@ -52,5 +52,5 @@ We recommend setting the following parameters for your integration point for dir
 | Refresh token levetid (sekunder)	| Refresh token lifetime (seconds)	| Issued refresh_token in seconds lifetime.	| Specify: “0” |
 | Refresh token type	| Refresh token type	| One-time: You get a new refresh_token at each refresh of access_token. Reusable: refresh_tokenet doesn't change by refreshing access_token.	| Specify: “Engangs” |
 
-    ![Register an integration point in ID-porten web portal.](media/emea-nor-vat-return-integration-point.png)
+![Register an integration point in ID-porten web portal.](media/emea-nor-vat-return-integration-point.png)
 
