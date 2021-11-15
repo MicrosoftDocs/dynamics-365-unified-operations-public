@@ -28,7 +28,7 @@ Commerce analytics is composed of the following key components:
 - Entity and ontology data in Azure Data Lake
 - Raw data in Azure Data Lake
 
-![image](https://user-images.githubusercontent.com/43016803/141214066-3314d8b8-4644-4f26-a703-b4c838d50aad.png)
+![System architecture of Commerce analytics](media/CommerceAnalytics.png)
 
 ### Data flow
 #### Step 1: Data generation
