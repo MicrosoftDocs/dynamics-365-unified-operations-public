@@ -192,7 +192,7 @@ The previous procedure enables the extensions that are components of the control
 
 ### CRT extension design
 
-The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the fiscal registration service.
+The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the control unit.
 
 The CRT extension is **Runtime.Extensions.DocumentProvider.CleanCashSample**.
 
@@ -200,13 +200,13 @@ For more details about the design of the fiscal integration solution, see [Fisca
 
 #### Request handler
 
-There is a single **DocumentProviderCleanCash** request handler for the document provider. This handler is used to generate fiscal documents for the fiscal registration service.
+There is a single **DocumentProviderCleanCash** request handler for the document provider. This handler is used to generate fiscal documents for the control unit.
 
 This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
 
 The connector supports the following requests:
 
-- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the control unit.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, sales events and audit events are supported.
 
 #### Configuration
@@ -217,28 +217,28 @@ The **DocumentProviderFiscalCleanCashSample** configuration file is in the **Con
 
 ### Hardware station extension design
 
-The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
+The purpose of the extension that is a fiscal connector is to communicate with the control unit.
 
-The Hardware station extension is **HardwareStation.Extension.CleanCashSample**. It uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+The Hardware station extension is **HardwareStation.Extension.CleanCashSample**. It uses the HTTP protocol to submit documents that the CRT extension generates to the control unit. It also handles the responses that are received from the control unit.
 
 #### Request handler
 
-The **CleanCashHandler** request handler is the entry point for handling requests to the fiscal registration service.
+The **CleanCashHandler** request handler is the entry point for handling requests to the control unit.
 
 The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Headquarters.
 
 The connector supports the following requests:
 
-- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response from it.
-- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the fiscal registration service.
-- **InitializeFiscalDeviceRequest** – This request is used to initialize the fiscal registration service.
+- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the control unit and returns a response from it.
+- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the control unit.
+- **InitializeFiscalDeviceRequest** – This request is used to initialize the control unit.
 
 #### Configuration
 
 The configuration file is in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Connections string** – The control unit connection settings.
-- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the control unit.
 
 ## Migrating from the earlier integration sample
 
