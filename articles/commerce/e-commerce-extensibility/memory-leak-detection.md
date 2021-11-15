@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Test for memory leaks
-description: This topic describes how to test custom e-commerce code for memory leaks in Microsoft Dynamics 365 Commerce. 
+title: Test e-commerce pages for memory leaks
+description: This topic describes how to test e-commerce pages for custom code memory leaks in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 ms.date: 11/15/2021
 ms.topic: article
@@ -29,27 +29,27 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to test an e-commerce page for custom code memory leaks in Microsoft Dynamics 365 Commerce.
+This topic describes how to test e-commerce pages for custom code memory leaks in Microsoft Dynamics 365 Commerce.
 
-Memory leak tests can be done on a mock page to ensure that custom e-commerce module and data action code running on that page do not leak memory.
+Memory leak tests can be done on a mock page to ensure that custom e-commerce module and data action code running on the page do not leak memory.
 
-The following steps outline the approach to generate heap snapshots of an e-commerce page to detect memory leaks. The process involves establishing a baseline, adding a request load to the page, and then running the garbage collection and ensuring that all memory is freed up back to the baseline size.
+The following steps outline the approach to generate heap snapshots of an e-commerce page to detect memory leaks. The process includes establishing a baseline, adding a request load to the page, and then running the garbage collection and ensuring that all memory is freed up back to the baseline size.
 
 ### Create a page mock that represents the e-commerce page you want to test.  
 
-The [page mock](test-page-mock.md) documentation explains how to create a custom page mock which can include any modules you would like to test or a live e-commerce page can be saved into a page mock using the **?item=nodeserviceproxy:true** query string parameter.
+For instructions on how to create a custom page mock that includes modules you want to test, or how to save a live e-commerce page as a page mock using the **?item=nodeserviceproxy:true** query string parameter, see [Test modules by using page mocks](test-page-mock.md).
 
 ### Build production code
 
-To build production code in PROD mode within the online SDK root folder, execute the following command:
+To build production code in PROD mode within the online SDK root folder, run the following command:
 
 ```Console
 yarn build:prod
 ```
 
-### Run Node server in debug mode
+### Run the Node server in debug mode
 
-To start the Node server in debug mode, execute the following command:
+To run the Node server in debug mode, run the following command:
 
 ```Console
 node --inspect-brk build/server.js
@@ -57,25 +57,28 @@ node --inspect-brk build/server.js
 
 ### Open browser inspect tool
 
-Open a browser and navigate to **edge://inspect/#devices** to load the browser inspect tool then select the **inspect** link once the "build/server.js" shows up under the "Remote Target" section (this could take up 20-30 seconds to show up).
+Open a browser and navigate to the browser inspect tool. For example, to load the browser inspect tool in Microsoft Edge navigate to 'edge://inspect/#devices' then select the **inspect** link after the "build/server.js" path appears under the **Remote Target** section as shown in the following example image. This link can take up to 30 seconds to appear.
 
-![inspect tool](media/memory-leak-1.png)
+![Browser inspect tool with the inspect link highlighted](media/memory-leak-1.png)
 
-A "DevTools" windows should open up with the debugger in a paused state.  Hit the "Resume script execution" button as shown below to run the code.
+A **DevTools** windows should open up with the debugger in a paused state. To run the code, select **Resume script execution** as shown in the following example image.
 
-![inspect tool](media/memory-leak-2.png)
+![Browser DevTools console with the "Resume script execution" button highlighted](media/memory-leak-2.png)
 
 ### Establish a server startup heap memory baseline
 
-To take a baseline heap memory snapshot after server startup, select the **Memory** tab, followed by the "Collect garbage" icon to run the garbage collection and press the **Take snapshot** button.
+To take a baseline heap memory snapshot after server startup, select the **Memory** tab, select the "Collect garbage" symbol to run the garbage collection, and then select **Take snapshot** as shown in the following example image.
 
-![inspect tool](media/memory-leak-3.png)
+![DevTools with the Memory tab, "Collect garbage" symbol, and Take snapshot button highlighted](media/memory-leak-3.png)
 
-### Take memory snapshot for page
+### Take a memory snapshot for a page
 
-Open a new browser window and navigate to the page mock you are testing.  For example if you have a page mock with filename "my-test-page.json" use the following URL: ```https://localhost:4000/page?mock=my-test-page```.  All page requests will involve some level of caching so you should expect the memory to be increased slightly. This is expected. Perform the garbage collection and take another snapshot at this stage. This will be your baseline for the page being tested.
+To take a memory snapshot for a page, open a new browser window and navigate to the page mock you are testing. For example, for a page mock with the file name "my-test-page.json", you would use the following URL: `https://localhost:4000/page?mock=my-test-page`. Perform the garbage collection and then take another snapshot at this stage. This will be your baseline memory usage for the page being tested.
+
+> [!NOTE]
+> All page requests involve some level of caching, so it is expected that the memory usage will be increased slightly.
 
 ### Test for memory leaks
 
-At this point benchmarking load tools could be used to hit to create more URL hits to the page being tested.  Select the garbage collector after this and take another heap snapshot.  Outside of some data load for caching, the memory should come down to the baseline of the page from the previous step.  This can be repeated several times to ensure memory is coming down.  If memory is not coming down it may be due to objects that cannot be garbage collected, and you will see the heap grow after each run.  The custom code can then be examined for any memory leaks causing this.
+At this stage benchmarking load tools can be used to create more URL hits to the page being tested. Next, select the garbage collector and take another heap snapshot. Outside of some data load for caching, memory usage should come down to the baseline of the page obtained from the previous step. This testing can be repeated several times to ensure that memory usage is decreasing. If memory usage is not decreasing, it may be due to objects that cannot be garbage collected, and in this case you will see the heap grow after each run. Your custom code can then be examined for any memory leaks causing this issue.
 
