@@ -460,7 +460,7 @@
           href: help/contributor-guide.md
       - name: Deployment considerations
         items:
-        - name: File name
+        - name: Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
           href: deployment/deployment-options-geo.md
         - name: Finance and Supply Chain Management in US Government Community Cloud (GCC)
           href: deployment/us-gcc-deployment.md
