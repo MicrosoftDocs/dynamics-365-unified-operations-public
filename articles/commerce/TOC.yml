@@ -1313,7 +1313,7 @@
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
-          href: localizations/emea-aut-fi-sample.md
+          href: localizations/emea-aut-fi-1sample.md
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
@@ -1422,6 +1422,8 @@
           href: localizations/emea-swe-cash-registers.md
         - name: Control unit integration sample for Sweden
           href: localizations/emea-swe-fi-sample.md
+        - name: Deployment guidelines for control unit integration sample for Sweden (legacy)
+          href: localizations/emea-swe-fi-sample-sdk.md
         - name: Sample for Retail POS integration with control units (legacy)
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
