@@ -472,6 +472,7 @@ Body:
 ## Query on-hand
 
 The _Query on-hand_ API is used to fetch current on-hand inventory data for your products.
+Currently the API supports querying 100 individual items (ProductID). As for sites and locations, multiple SiteIDs and LocationIDs can be specified in a query and the maximum limit is that **NumOf(SiteID) * NumOf(LocationID) <= 100**.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
 

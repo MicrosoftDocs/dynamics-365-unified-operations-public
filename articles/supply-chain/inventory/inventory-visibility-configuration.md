@@ -268,17 +268,17 @@ The `MyCustomAvailableforReservation` output, based on the calculation setting i
 
 ## <a name="partition-configuration"></a>Partition configuration
 
-The partition configuration consists of a combination of base dimensions. It defines the data distribution pattern. Data operations in the same partition support high performance and don't cost too much. Therefore, good partition patterns can contribute significant benefits.
-
-Inventory Visibility provides the following default partition configuration.
+Currently, the partition configuration consists of 2 base dimensions, SiteId and LocationId, which indicate how the data is distributed. Operations under the same partition can have higher performance with lower cost. Inventory Visibility Add-in provides default partition configuration as follows.
 
 | Base dimension | Hierarchy |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
+This default partition configuration has already been pre-set implicitly. **You do not have to define it by yourself**.
+
 > [!NOTE]
-> The default partition configuration is for reference only. You don't have to define it in Inventory Visibility. Currently, the partition configuration upgrade isn't supported.
+> Delete or change the default partition configuration may lead to unexpected error. Please do not customize partition configuration.
 
 ## <a name="index-configuration"></a>Product index hierarchy configuration
 
