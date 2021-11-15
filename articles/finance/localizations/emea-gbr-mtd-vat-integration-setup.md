@@ -285,7 +285,7 @@ If your company must report a VAT return as a VAT group, make sure that all the 
 
     ![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
     
-For more information about how to populate records from multiple companies in EM, see [Populate records from multiple companies](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging-setup#populate#multiple-companies-populate).
+For more information about how to populate records from multiple companies in EM, see [Populate records from multiple companies](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging-setup#multiple-companies-populate).
 
 ## <a id="sequences"></a>Set up number sequences for Electronic messages functionality
 
