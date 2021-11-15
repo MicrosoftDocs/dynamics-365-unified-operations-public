@@ -150,19 +150,19 @@ The following default data mapping is included in the fiscal document provider c
 - **Value-added tax (VAT) code mapping** sets device-specific value-added tax (VAT) codes to corresponding sales tax codes. VAT code mapping should have the following format:
 
     ```
-    *1 : code1 ; 2 : code2*
+    1 : code1 ; 2 : code2
     ```
 
     Here is an explanation of this format:
 
     - *1* and *2* are device-specific VAT codes.
     - A semicolon (;) is used as a separator.
-    - *code1* and *code2* are sales tax codes that are configured in Headquarters.
+    - *code1* and *code2* are sales tax codes that are configured in Headquarters. You need to modify the sample mapping according to the tax codes configured in your application.
 
-    Control units support up to four different VAT codes. Therefore, the VAT code mapping might be set up as shown here:
+    Control units support up to four different VAT codes. Therefore, the VAT code mapping might be set up as following:
 
     ```
-    *1 : code1 ; 2 : code2 ; 3 : code3 ; 4 : code4*
+    1 : code1 ; 2 : code2 ; 3 : code3 ; 4 : code4
     ```
 
     > [!NOTE]
