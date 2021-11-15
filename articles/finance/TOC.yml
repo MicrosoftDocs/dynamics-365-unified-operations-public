@@ -2960,6 +2960,8 @@
           href: localizations/emea-nor-nets-import-format.md
         - name: VAT statement
           href: localizations/emea-nor-sales-tax-payment-report.md
+        - name: VAT return with direct submission to Altinn
+          href: localizations/emea-nor-vat-return.md
         - name: Standard Audit File for Tax (SAF-T) for Norway
           href: localizations/emea-nor-satndard-audit-file-for-tax.md
         - name: Customer electronic invoices in Norway
