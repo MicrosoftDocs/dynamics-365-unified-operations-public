@@ -21,9 +21,9 @@ ms.search.validFrom: 2021-06-10
 > [!NOTE]
 > Preview features aren't complete. However, they are made available on a preview basis, so that customers can get early access and provide feedback. Preview features might have limited or restricted functionality, they aren't meant for production use, and they might be available only in selected geographic areas.
 >
-> By enabling preview features, you agree to the Supplemental Terms of Use.
+> By enabling preview features, you agree to the [Supplemental Terms of Use](../../fin-ops/get-started/public-preview-terms.md).
 
-When you enable the preview feature **Enable near real-time data changes**, data is inserted, updated, and deleted in your data lake in near-real time. As data changes in your Finance and Operations environment, the same data is updated in the data lake within a few minutes. In addition, you also get the data changes in a seperate **change feed** folder. 
+When you enable the **Enable near real-time data changes** preview feature, data is inserted, updated, and deleted in your data lake in near-real time. As data changes in your Finance and Operations environment, the same data is updated in the data lake within a few minutes. You also get the data changes in a separate **Change feed** folder. 
 
 Change data in a data lake lets you build near-real-time data pipelines that react to data changes in Finance and Operations apps. The **Change feed** folder in the data lake contains every data change in Finance and Operations apps. This folder is automatically created and maintained by the **Export to Data Lake** feature. 
 
@@ -50,16 +50,16 @@ The following illustration shows how change feeds work in Finance and Operations
 ![How change feeds work in Finance and Operations apps.](media/Change-feed-overview-picture.png)
 
 1. Whenever a data change occurs in Finance and Operations apps, the underlying database (AXDB) is updated. The CDC feature ensures that the update is reflected in the database. CDC captures the changes in a log (the change log), together with a logical sequence number (**LSN** value), a date/time stamp (**Change Date-Time** value), and a **Change Payload** value that identifies the data that changed.
-2. **Export to Data Lake** microservices capture the changes in the database and write the change log to the customer's data lake. Change feed folders are organized in the data lake by table. Each folder contains the change log for the specific table.
+2. **Export to Data Lake** microservices capture the changes in the database and write the change log to the customer's data lake. **Change feed** folders in the data lake are organized by table. Each folder contains the change log for a specific table.
 3. In addition, in the **Tables** folder, each row that changed also contains several new fields. Each row contains the **LSN** value of the corresponding change record and the **Change Date-Time** value. Although you can use the **LSN** and **Change Date-Time** fields in the table folders to identify whether a row changed, they contain only the latest change. If the same row changed multiple times, only the latest change is shown in the **Tables** folder.
-4. Changes are written to the Change feed folder in the same sequence (ie. LSN) they are committed in the database. Change feed files are written in batches in the data lake such that they are optimized in size for reading. Once written, change file are never updated.
+4. Changes are written to the **Change feed** folder in the same sequence (that is, LSN) in which they are committed in the database. Change feed files are written in batches in the data lake, so that their size is optimized for reading. After change feed files are written, they are never updated.
 
 
 ## Exploring the Change feed folder in your data lake
 
-When you enable the preview feature **near real-time data changes**, change feeds are automatically added when you add tables to a data lake.
+When you enable the **Enable near real-time data changes** preview feature, change feeds are automatically added when you add tables to a data lake.
 
-When you add a table to data lake, or when you activate a table that has been inactivated, the system makes an initial copy of the data in the data lake. At this point, the table's status is shown as **Initializing**. When the initial copy is completed, the system changes the status to **Running**. When the table is in **Running** status, changes in the Finance and Operations database are reflected in the data lake, and change feeds are added. The Change feeds folder may be empty if there are no changes to the table since it was initialized. 
+When you add a table to a data lake, or when you activate a table that has been inactivated, the system makes an initial copy of the data in the data lake. At this point, the table's status is shown as **Initializing**. When the initial copy is completed, the system changes the status to **Running**. When the table is in **Running** status, changes in the Finance and Operations database are reflected in the data lake, and change feeds are added. The **Change feed** folder might be empty if there have been no changes to the table since it was initialized. 
 
 To access change folders, open the Azure portal, and find and select the storage account that is associated with your Finance and Operations environment. You should see the **Change feed** folder in the data lake folder structure. The following illustration shows an example.
 
@@ -99,12 +99,12 @@ If you require that your data warehouse or data marts be updated in near-real ti
 However, there are several important concepts that must be understood:
 
 - Change records are grouped into files that are around 4 megabytes (MB) or 8 MB in size. Microsoft has optimized file sizes so that they provide optimum query response times when the files are queried by Synapse SQL Serverless. Optimized file sizes (and batched writes) also reduce the Azure charges that you might incur as the data lake is updated.
-- Change records are only appended - files in the **Change feed** folder are never updated. While each change record contains the LSN number and the date times of a change, you can also use date/time stamp of CSV files to identify changes.
+- Change records are only appended. Files in the **Change feed** folder are never updated. Although each change record contains the LSN number and date/time of a change, you can also use the date/time stamp of the CSV files to identify changes.
 - When you reactivate a table in Finance and Operations, the **Change feed** folder is cleared, and the system starts change feeds from the next available change. This behavior ensures that the changes are consistent with the **Tables** folder. When tables are reactivated, you should consider triggering a full refresh of the downstream data pipeline.
-- Your downstream jobs can be orchestrated on a periodic basis (ex. every 10 mins), or triggered when a new change feed file is added to a folder.
-- In either case, your downstream data pipelines must have a *last processed* marker (also known as a watermark). Whenever you can, you should rely on the LSN field within the record as the watermark. However, you can also use the **File Date-Time** stamp as the watermark. By relying on the LSN, you will ensure that you consume the changes in the same sequence in which they were committed in the Finance and Operations database.
+- Your downstream jobs can be orchestrated on a periodic basis (for example, every 10 minutes), or they can be triggered when a new change feed file is added to a folder.
+- In either case, your downstream data pipelines must have a *last processed* marker (also known as a watermark). Whenever you can, you should rely on the LSN field in the record as the watermark. However, you can also use the **File Date-Time** stamp as the watermark. By relying on the LSN, you ensure that you consume the changes in the same sequence in which they were committed in the Finance and Operations database.
 
-You can see the [Synapse data ingestion template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) as an example in building a downstream pipeline. You can use it to incrementally ingest data into a SQL-based data warehouse.
+For an example that shows how you can build a downstream pipeline, see the [Synapse data ingestion template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF). You can use it to incrementally ingest data into a SQL-based data warehouse.
 
 ### Simplifying BYOD-based ETL pipelines
 
@@ -116,7 +116,7 @@ You can simplify the orchestration pipeline by consuming change feeds.
 
 Change feeds are a powerful feature, but the process of constructing and maintaining a near-real-time data pipeline is complex. Although modern data transformation tools and ready-made templates can help simplify this process, you might still have to invest in building and running your pipeline.
 
-If your users expect data marts to be updated daily or several times per day, triggering a full refresh might be an economical alternative, especially if the volume of data is low or moderate. You can also choose to update smaller tables as a periodic full refresh while creating near real-time pipelines for large, frequently updated tables.
+If your users expect data marts to be updated daily or several times per day, triggering a full refresh might be an economical alternative, especially if the volume of data is low or moderate. You can also choose to update smaller tables as a periodic full refresh but create near-real-time pipelines for large, frequently updated tables.
 
 ### Changing feeds to audit and verify master data updates
 
@@ -134,17 +134,14 @@ If you want to reduce the amount of data that is stored in your data lake, you c
 
 Periodic deletion of the change log has no impact on data in the **Tables** folder. However, if you run consistency checks, as described earlier in this topic, you might want to keep the change log longer to facilitate those checks.
 
-### Creating reports with header and line consistency
+### Creating reports that have header and line consistency
 
-When a purchase order is created in a Finance and Operations environment, more than one table may be updated. For simplicity, let's assume that a record is added to the "Header" table and several order lines are added to the "Lines" table. Both Header and Lines tables are exported to the data lake by the system and respective change records are also added to the Change feeds folders.
+When a purchase order is created in a Finance and Operations environment, more than one table might be updated. For the sake of simplicity, assume that a record is added to the Header table, and several order lines are added to the Lines table. The system exports both the Header table and the Lines table to the data lake, and corresponding change records are added to the **Change feeds** folders.
 
-However, the Export to Data Lake process does not synchronize the exact time the header and multiple lines are written to the lake. It is possible that the Header table is updated in the lake first (since it contains only one row change) and that Lines are updated a few moments later. While the change feeds ensure that changes within the tables are witten in the same order as it was committed in the database, no such assurances are made for changes between tables.
+However, the Export to Data Lake process doesn't sync the exact time when the header and multiple lines are written to the data lake. Because the Header table  contains only one row change, it might be updated in the data lake first. The Lines table might then be updated a few moments later. Although the change feeds ensure that changes in the tables are written in the same order in which they were committed in the database, no similar assurances are made for changes between tables.
 
-On the other hand, you may need to create reports that reflect consistent data from both Header and Lines. Your users may not want to see a purchasing report where only a portion of lines are present. This is a common pattern in data mart design. Change feed folders enable you to solve this problem with the help of LSN number. 
+On the other hand, you might have to create reports that reflect consistent data from both the Header table and the Lines table, because your users don't want to view a purchasing report that includes only some of the lines. This pattern is common in data mart design. **Change feed** folders let you handle this scenario by using LSNs. 
 
-If your downstream data pipeline must ensure that header and line records are inserted into the data mart in a consistent manner, you can consider extracting Headers and Lines with matching LSN numbers. If your data pipeline finds a Header row without matching lines with the same LSN number, your data pipeline must wait until the corresponding LSN number is present in Lines table.
+If your downstream data pipeline must ensure that Header and Line records are inserted into the data mart in a consistent manner, consider extracting headers and lines that have matching LSNs. If your data pipeline finds a Header row, but no matching Line rows that have the same LSN number, it must wait until the corresponding LSN is present in the Lines table.
 
-Alternatively, your data pipeline can insert Header and Line rows as they arrive in the data lake - without waiting for consistency between headers and lines. Instead, you can perform a join between Header and Lines within the report so that you only report on consistent data. 
-
-
-
+Alternatively, your data pipeline can insert Header and Line rows as they arrive in the data lake, without waiting for consistency between headers and lines. Instead, you can perform a join between the Header and Lines tables in the report. In that way, you report only on consistent data. 
