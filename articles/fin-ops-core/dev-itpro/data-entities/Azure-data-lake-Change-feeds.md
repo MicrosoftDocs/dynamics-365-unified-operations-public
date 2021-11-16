@@ -133,3 +133,18 @@ Because tables continue to add changes while they are in **Running** status, cha
 If you want to reduce the amount of data that is stored in your data lake, you can periodically delete the change log from the data lake. For example, you can run a job that deletes change log files that haven't been modified for 90 days or 180 days.
 
 Periodic deletion of the change log has no impact on data in the **Tables** folder. However, if you run consistency checks, as described earlier in this topic, you might want to keep the change log longer to facilitate those checks.
+
+### Creating reports with Header and Line consistency
+
+When a purchase order is created in Finance and Operations for an example, more than one table may be updated. For simplicity, let's assume that a record is added to "Header" table and several order lines are added to the "Lines" table. Both header and Line tables are exported to the data lake by the system and respective change records are also added to the Change feeds folders.
+
+However, Export to Data lake process does not synchronize the exact time header and multiple lines are written to the lake. It is possible that the Header table is updated in the lake first (since it contains only one row change) and that Lines are updated a few moments later. While the change feeds ensure that changes within the tables are witten in the same order as it was committed in the database, no such assurances are made for changes between tables.
+
+On the other hand, you may need to create reports that reflect consistent data from both header and Lines. Your users may not want to see a purchasing report where only a portion of lines are present. This is a common pattern in data mart design. Change feed folders enable you to solve this problem with the help of LSN number. 
+
+If your downstream data pipeline must ensure that header and Line records are inserted into the data mart in a consistent manner, you can consider extracting Headers and Lines with matching LSN numbers. If your data pipeline finds a Header row without matching lines with the same LSN number, your data pipeline must wait until the corresponding LSN number is present in Lines table.
+
+Alternatively, your data pipeline can insert Header and Line rows as they arrive in the data lake - without waiting for consistency between headers and lines. Instead, you can perform a join between Header and Lines within the report so that you only report on consistent data. 
+
+
+
