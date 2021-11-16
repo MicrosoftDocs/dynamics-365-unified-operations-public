@@ -2,8 +2,8 @@
 # required metadata
 
 title: Derived financial hierarchies in the public sector
-description: This article describes the derived financial hierarchies functionality that is available for the public sector. 
-author: ShylaThompson
+description: This topic describes the derived financial hierarchies functionality that is available for the public sector. 
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 20911
 ms.assetid: a1b30d2a-a370-402a-b3bd-d562adca55f0
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the derived financial hierarchies functionality that is available for the public sector. 
+This topic describes the derived financial hierarchies functionality that is available for the public sector. 
 
 To meet Common Government-wide Accounting Classification (CGAC) requirements, public-sector organizations can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values. 
 
