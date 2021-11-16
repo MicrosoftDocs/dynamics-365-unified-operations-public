@@ -110,10 +110,9 @@ Once you have created the page mock, the module you cloned will then need to be 
             "imageZoom": "inline",
             "allowFullScreen": true,
             "dataScale": "2",
- ...
- }
- }
- ]
+         }
+     }
+   ]
  }
  
  ```
