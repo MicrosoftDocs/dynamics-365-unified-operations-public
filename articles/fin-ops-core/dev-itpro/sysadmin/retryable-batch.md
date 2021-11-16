@@ -24,7 +24,7 @@ This topic describes how retries are implemented on batch jobs in Finance and Op
 > This feature is available with version 10.0.18 and later.
 
 ## Enable batch retry
-This option is recommended when you want batch jobs to be retried irrespective of error type. Maximum Retry Count specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a **Ready** state so that it can be picked up again.
+This option is recommended when you want batch jobs to be retried irrespective of error type. Maximum Retry Count specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a **Ready** state so that it can be picked up again.
 
 1.	In the Batch jobs page, select **Batch task details**.
 2.	Go to the **General** tab.
@@ -34,7 +34,7 @@ This option is recommended when you want batch jobs to be retried irrespective o
 
 Because not all batch jobs might be idempotent (for example, when a batch runs credit card transactions), retries can't be enabled equally across all batch jobs. To help ensure that retries can safely be enabled, Microsoft has added metadata to the batch jobs to indicate whether they can automatically be retried. Between versions 10.0.18 and 10.0.19, more than 90 percent of the Microsoft batch jobs have explicitly implemented the **BatchRetryable** interface, and the **isRetryable** value has been set appropriately. For any jobs where the **BatchRetryable** interface isn't implemented, the default value of **isRetryable** is **false**.
 
-Retries are enabled only for jobs where the **BatchRetryable** interface is implemented and **isRetryable** is set to **true**. In this new functionality, retries occur on any interruption of the **SQL Server connection**. Microsoft will continue to add retries on other exceptions.
+Retries are enabled only for jobs where the **BatchRetryable** interface is implemented and **isRetryable** is set to **True**. In this functionality, retries occur on any interruption of the SQL Server connection. Microsoft will continue to add retries on other exceptions.
 
 This option is recommended to make jobs to retry due to any interruption of the SQL Server connection.
 
