@@ -23,13 +23,14 @@ This topic describes how retries are implemented on batch jobs in Finance and Op
 > [!IMPORTANT]
 > This feature is available with version 10.0.18 and later.
 
-## Enable Batch Retry
-This option is recommended when you want batch jobs to be retried irrespective of **error type**. Maximum Retry Count specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a **ready state** so that it can be picked up again.
-1.	In the Batch jobs form, click the Batch task details.
-2.	Go to General Tab
-3.	Set Maximum retries
+## Enable batch retry
+This option is recommended when you want batch jobs to be retried irrespective of error type. Maximum Retry Count specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a **Ready** state so that it can be picked up again.
 
-## Batch Retry-able
+1.	In the Batch jobs page, select **Batch task details**.
+2.	Go to the **General** tab.
+3.	Set **Maximum retries**.
+
+## Batch retry-able
 
 Because not all batch jobs might be idempotent (for example, when a batch runs credit card transactions), retries can't be enabled equally across all batch jobs. To help ensure that retries can safely be enabled, Microsoft has added metadata to the batch jobs to indicate whether they can automatically be retried. Between versions 10.0.18 and 10.0.19, more than 90 percent of the Microsoft batch jobs have explicitly implemented the **BatchRetryable** interface, and the **isRetryable** value has been set appropriately. For any jobs where the **BatchRetryable** interface isn't implemented, the default value of **isRetryable** is **false**.
 
