@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Export to Data Lake in Finance and Operations
-description: This topic explains how to choose data in Finance and Operations apps environment so that the data is available in a data lake.
+title: Export to Data Lake in Finance and Operations apps
+description: This topic explains how to choose data in a Finance and Operations apps environment so that the data is available in a data lake.
 author: MilindaV2
 ms.date: 10/25/2021
 ms.topic: article
@@ -27,18 +27,17 @@ ms.dyn365.ops.version: Platform Update 34
 
 ---
 
-# Export to Data lake in Finance and Operations 
+# Export to Data Lake in Finance and Operations apps 
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the Export to Data Lake add-in in your environment. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature as well as upcoming improvements.
->
+> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
 
 The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your Finance and Operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
 ## Turn on the Export to Data Lake feature
-Before you can use this feature, see [Install Export to Azure Data Lake Add-in](configure-export-data-lake.md).
+Before you can use this feature, see [Install the Export to Azure Data Lake Add-in](configure-export-data-lake.md).
 
 ## Select data
 
@@ -108,7 +107,7 @@ When an error occurs in a table that you added to Export to Data Lake, you may s
 | 402        | The RecID field isn't indexed.                                            | The system has detected that the RecID field contained in the table isn't part of an index or is not the first field in an index. This may lead to poor performance in updating the data lake and updates may take longer to reflect in the data lake. You can include the RecID field in an index to resolve this issue. If this issue is from a table in a Finance and Operations app, contact Microsoft support. If this table was developed by your partner or ISV, contact the developer. |
 | 409        | Failed to access the storage account due to permissions. Verify the storage account configuration.      | The system is unable to access and write to the storage account. Ensure that you have enabled Hierarchical Name Spaces (HNS) and validate access roles. For more information, see [Configure export to Azure Data Lake - Grant access](configure-export-data-lake.md#grantaccess). To resolve this issue, contact the system administrator or the LCS administrator who configured the system. |
 | 410        | Failed to find Application ID to access the data lake. Application ID provided is incorrect or can't be found.      | The Application ID provided in the key vault can't be found in Azure Active Directory. Validate the Application ID provided in the key vault by following the steps in [Configure export to Azure Data Lake - Create application](configure-export-data-lake.md#createapplication). |
-| 411        | Failed to access data lake with given Application ID and Application secret. | Application ID (app-id) and Application secret  (app-secret) provided can't be used to access the storage account. Verify the Application ID and Application secret are valid by following the steps in [Configure export to Azure Data Lake - Create Application](configure-export-data-lake.md#createapplication). <br><br> Next, validate that the application has required access to the storage account. For more information, see [Configure export to Azure Data Lake - Grant access](configure-export-data-lake.md#grantaccess). You need to contact the systems administrator or the LCS administrator who configured the system. | 
+| 411        | Failed to access data lake with given Application ID and Application secret. | Application ID (app-id) and Application secret (app-secret) provided can't be used to access the storage account. Verify the Application ID and Application secret are valid by following the steps in [Configure export to Azure Data Lake - Create Application](configure-export-data-lake.md#createapplication). <br><br> Next, validate that the application has required access to the storage account. For more information, see [Configure export to Azure Data Lake - Grant access](configure-export-data-lake.md#grantaccess). You need to contact the systems administrator or the LCS administrator who configured the system. | 
 | 415        | Failed to access the storage account using the storage name provided in the key vault. | Storage account provided in the key vault can't be found or is invalid. Validate that the correct storage account name is entered into the key vault by following the steps in [Configure export to Azure Data Lake - Add secrets](configure-export-data-lake.md#addsecrets). <br><br> Verify that you have provided the correct secret name for the storage account by following the steps in [Configure export to Azure Data Lake Add secrets](configure-export-data-lake.md#addsecrets). | 
 | 420        | Failed to access the key vault or the key vault secrets. | Service can't access the key vault or the secrets in the key vault.  Verify that your Azure subscription has not expired. <br> <br> Verify that you have created the service principal by following the steps in [Configure export to Azure Data Lake - Create service principal](configure-export-data-lake.md#createServicePrincipal). <br> <br> Verify that the Key vault contains all the required secrets by following the steps in [Configure export to Azure Data Lake - Add secrets](configure-export-data-lake.md#addsecrets). <br><br> Verify that you have provided the correct key vault URI in the configuration steps in [Configure export to Azure Data Lake - Install add-in](configure-export-data-lake.md#installaddin). | 
 | 425        | Failed to locate the Azure Tenant ID for the environment. | Verify that you have provided the correct Azure tenant ID by following the steps in [Configure export to Azure Data Lake - Install add-in](configure-export-data-lake.md#installaddin).  | 
