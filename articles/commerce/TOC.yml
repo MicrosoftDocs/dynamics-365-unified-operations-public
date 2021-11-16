@@ -74,10 +74,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Commerce Data Exchange implementation guidance
           href: dev-itpro/implementation-considerations-cdx.md
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
       - name: Get support
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support

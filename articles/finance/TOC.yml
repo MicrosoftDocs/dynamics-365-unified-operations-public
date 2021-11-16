@@ -62,10 +62,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Configure Warehousing for on-premises deployments
           href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed
         items: 
         - name: What's new or changed in Finance and Operations apps
@@ -500,6 +496,8 @@
         href: accounts-receivable/customer-aging-snapshot.md
       - name: Customer aging report
         href: accounts-receivable/customer-aging.md
+      - name: Customer aging data storage
+        href: accounts-receivable/customer-aging-data-storage.md
       - name: Create a write-off journal for a customer
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Advanced notes management
