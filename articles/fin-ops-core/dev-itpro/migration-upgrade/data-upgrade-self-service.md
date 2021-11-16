@@ -65,14 +65,15 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     <?xml version="1.0" encoding="utf-8"?>
     <IgnoreTables>
         <Name>
-            <Table>USERADDHISTORYLIST</Table>
-            <Table>TAXRECONCILIATIONREPORTTMP</Table>
-            <Table>CASELOG</Table>
-            <Table>SHAREDCATEGORYROLETYPE</Table>
-            <Table>VATCSREPORTXMLATTRIBUTE_CZ</Table>
+            <Table>NON_AOT_TABLE1</Table>
+            <Table>NON_AOT_TABLE2</Table>
+            <Table>NON_AOT_TABLE3</Table>
         </Name>
     </IgnoreTables>
     ```
+
+    > [!NOTE]
+    > The tables added to the ignore list, should only be tables that do not exist in the Microosft Dynamics AX 2012 AOT (Application Object Tree). Including tables that exist will result in an error during the data upgrade.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
