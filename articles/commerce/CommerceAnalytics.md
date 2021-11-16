@@ -23,7 +23,6 @@ Commerce analytics is the functional analytics capability included in Dynamics 3
 
 ### Key components
 Commerce analytics is composed of the following key components:
-
 - Ready to use interactive Power BI reports
 - SQL views in Azure Synapse Analytics
 - Entity and ontology data in Azure Data Lake
@@ -32,10 +31,8 @@ Commerce analytics is composed of the following key components:
 ![System architecture of Commerce analytics](media/CommerceAnalytics.png)
 
 ### Data flow
-
 #### Step 1: Data generation
 Data originates either as transactional data or behavioral data from one of the following sources:
-
 - Call center associate using Commerce HQ client to process sales orders
 - Cashier at point of sale (POS) processing sales transactions
 - Sales created within custom applications using Headless Commerce (Commerce Scale Unit)
@@ -62,7 +59,6 @@ Data queried by Azure Synapse Analytics then goes to the Power BI semantic model
 The final stage is for the data to be rendered within Power BI visuals for users to view and interact with. 
 
 ## Commerce analytics functional overview
-
 ### 1. Summary
 #### Top-level filters
 1.  Date settings
@@ -160,7 +156,6 @@ The final stage is for the data to be rendered within Power BI visuals for users
 ### 9. Web activity
 
 #### Top-level filters
-
 1. Date range
 2. Channel type
 3. Channel
@@ -210,10 +205,8 @@ Commerce analytics can provide you with more information about visitors who brow
     5. By lifetime value (LTV): Life-time value is calculated based on total amount spent by a customer across all Commerce sales channels (POS, e-commerce, and call center).
     6. By frequency: Frequency is calculated based on a customer's transactional engagement with the organization. Frequency does not consider non-transactional engagement signals such as e-commerce browsing activity.
 
-
 #### d.	Impression
 Impression is defined as each viewing of a product visual by an e-commerce visitor. For instance, if an e-commerce visitor navigates to the home page of your website and views a yoga mat product within a top selling list module, and also views the same yoga mat product within a picks for you list module, these interactions count as two product impressions. Impressions track product views within the following surfaces:
-
 1. Lists (for example, recommended, top selling, picks for you, trending)
 2. Cart module
 3. Search result container
@@ -237,7 +230,6 @@ The **Impression report** page includes the following metrics:
 
 ### Enable and configure Commerce analytics
 To install Commerce analytics, you need permissions to create resources in an Azure subscription and permissions to install add-ins in LCS. Complete the steps outlined below to enable and configure Commerce analytics.
-
 1. [Submit the Preview in-take form for Commerce Analytics (Preview)](#joinPreview).
 2. [Enable and configure Export to Data Lake](#enableExportToDataLake).
 3. [Enable and configure Commerce analytics (Preview) add-in](#enableCommerceAnalyticsAddin).
@@ -251,12 +243,10 @@ Complete and submit the [Commerce analytics (Preview) intake form](https://forms
 
 ### Enable and configure Export to Data Lake
 Commerce analytics relies on the **Export to Data Lake** feature to export Commerce HQ data to Azure Data Lake and keep the data fresh. Before you configure Commerce analytics, enable and configure **Export to Data Lake** by following the steps outlined in [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). When you configure the **Export to Data Lake** feature, note the following information. You will need to enter this information in subsequent steps.
-
 1. The key vault DNS name and the secret names where you store the application ID and application secret. For more information, see [Add secrets to the key vault](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#addsecrets).
 2. The storage account name for the Azure Data Lake instance. For more information, see [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription).
 
 ### Enable and configure Commerce analytics add-in
-
 To install the Commerce analytics add-in in LCS, you must be an environment administrator in LCS for the environment that you plan to use.
 
 You will need the following information to configure the Commerce analytics add-in. 
@@ -281,7 +271,6 @@ The system installs and configures Commerce analytics (Preview) for the environm
 > A known limitation of Commerce analytics (Preview) is that the Azure Synapse instance will lose access to the data lake when the SAS token expires. You should set the maximum expiration date allowed by your organization security policies when you generate the Shared Access Signature (SAS) token.
 
 A SAS token enables external entities to access your storage account, with a specific set of privileges for a finite amount of time. Azure Synapse will use the SAS token to access the underlying data in Azure Data Lake. To generate a SAS token, complete the steps below.
-
 1. Go to the storage account in Azure portal that you created while configuring **Export to Data Lake**, as outlined in [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription).
 2. In the **Options** pane on the left, under the storage account, select **Shared access signature**.
 3. Select the following options on the SAS options page:
@@ -303,13 +292,11 @@ A SAS token enables external entities to access your storage account, with a spe
 
 ### Download deployment scripts for Azure Synapse views
 To create and publish the necessary views in Azure Synapse workspace, you must download and execute a set of scripts. Complete the steps below to download the scripts.
-
 1. Go to the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) Github repo. The scripts are available in the repo.
 2. To download the scripts to your local machine, you can either clone the repo or download the repo as a zip file.
 
 ### Install and configure Azure Synapse workspace
 To install and configure an Azure Synapse workspace, complete the steps below.
-
 1. Install Azure Synapse workspace in your Azure subscription by following the steps outlined in [Quickstart: Create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace).
 2. Open the SetupSynapse.sql script file in Notepad from the local machine folder where you cloned or downloaded the Dynamics365Commerce.Solutions repo. For more information, see [Download deployment scripts for Azure Synapse views](#downloadSynapseDeploymentScripts). The script file will be under the "/Pipeline/CommerceAnalyticsSynapse/" folder. Edit the script to replace the placeholder text with values below.
 
@@ -363,7 +350,6 @@ To install and configure an Azure Synapse workspace, complete the steps below.
 
 ### Install Power BI template app
 To install the Power BI template app for Commerce analytics, complete the steps below.
-
 1. Sign in to [Power BI portal](https://powerbi.microsoft.com/) using your organization ID.
 2. Install the Commerce analytics Power BI template app by going to [https://aka.ms/cdireport-installapp](https://aka.ms/cdireport-installapp). You may receive a warning about the app not being listed on AppSource. Select **Install**.
 3. If this is the first time you are installing the app, skip to step 5. If you have already installed this app, you will be presented with the following options to update the app.
