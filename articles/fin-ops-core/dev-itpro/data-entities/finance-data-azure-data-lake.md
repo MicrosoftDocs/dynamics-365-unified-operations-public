@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Finance and Operations apps data in Azure Data Lake
-description: This topic explains how to configure your Finance and Operations apps environment so that it has a data lake.
+title: Export to Data Lake in Finance and Operations
+description: This topic explains how to choose data in Finance and Operations apps environment so that the data is available in a data lake.
 author: MilindaV2
 ms.date: 10/25/2021
 ms.topic: article
@@ -27,21 +27,18 @@ ms.dyn365.ops.version: Platform Update 34
 
 ---
 
-# Finance and Operations apps data in Azure Data Lake
+# Export to Data lake in Finance and Operations 
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS).
-> 
-> **The feature may be temporarily unavailable during the preview period in your environment or the feature may not be available in your region.**
-> 
-> In the coming months, Microsoft will enable this feature in additional regions, as well as in additional environments. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
+> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the Export to Data Lake add-in in your environment. Microsoft will enable this feature in additional regions in the future. You can join the preview [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature as well as upcoming improvements.
+>
 
 The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your Finance and Operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
 ## Turn on the Export to Data Lake feature
-Before you can use this feature, see [Configure export to Azure Data Lake](configure-export-data-lake.md).
+Before you can use this feature, see [Install Export to Azure Data Lake Add-in](configure-export-data-lake.md).
 
 ## Select data
 
