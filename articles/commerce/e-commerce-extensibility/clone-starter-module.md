@@ -132,7 +132,7 @@ Once the module has been deployed, the original module can then be replaced with
 ### Module categories
 It is important to note that some modules are designed to only work within specific container modules.  For example, the "media gallery" module (and the cloned "super-media-gallery" example) has a module definition file with a **categories** section that includes the **buybox_mediaGallery** category as shown in the below super-media-gallery.definition.json code snippit:
 
-```json
+```
 {
 	"$type": "contentModule",
 	"friendlyName": "Super media gallery",
