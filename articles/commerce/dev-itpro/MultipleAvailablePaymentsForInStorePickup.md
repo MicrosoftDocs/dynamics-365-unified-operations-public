@@ -61,8 +61,9 @@ When in the cart transaction screen in POS with existing payment methods availab
 
 The POS user should select the cart Amount Due total to bring up the **Amount due** dialogue showing the total due as well as the available payment methods.
 
-\>[!NOTE]
-\>Not all payment methods will prompt the available payments dialogue. Mainly card operations will show as available payments if linked to the order. 
+>[!NOTE]
+>Not all payment methods will prompt the available payments dialogue. Mainly card operations will show as available payments if linked to the order. 
+
 
 Users can select to use **Existing payment options** or **Choose a payment method** (which allows the user to continue with normal processing of a new payment method).
 
