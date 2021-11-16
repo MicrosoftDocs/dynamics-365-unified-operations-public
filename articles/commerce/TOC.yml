@@ -1410,6 +1410,10 @@
           href: localizations/rus-fpi-sample.md
         - name: Customer information management for Russia
           href: localizations/rus-customer-information.md 
+      - name: Saudi Arabia
+        items:
+        - name: Generate QR codes and print them on receipts for Saudi Arabia
+          href: localizations/emea-sau-qr-code.md
       - name: Sweden
         items:
         - name: Cash register functionality
