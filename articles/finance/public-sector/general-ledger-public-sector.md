@@ -55,7 +55,7 @@ You can use advanced ledger entries to create, adjust, and reverse ledger entrie
 ## Why should I use posting definitions?
 You can use posting definitions to create subledger journal lines for originating transactions that meet selected criteria - for example, to generate multiple balanced ledger entries based on attributes such as transaction types and accounts. Posting definitions provide granular control over the general ledger updates created by source documents in contrast to the broadly applied updates of posting profiles. General ledger posting definitions are required if you use advanced ledger entries. Posting definitions are used in the year-end processing of general ledger accounts. Posting definitions can be used to close the accounts to fund balances or retained earnings, based on the fund class and the account close type. Posting definitions are required to close the general ledger accounts and to transfer balances to the opening period in the new fiscal year. To learn more, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
-## How do I collect and analyze data to meet the Common Governmentwide Accounting Classification (CGAC) requirements?
+## How do I collect and analyze data to meet the Common Government-wide Accounting Classification (CGAC) requirements?
 You can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values. To learn more, see [Derived financial hierarchies in the public sector](derived-financial-hierarchies-public-sector.md).
 
 ## Additional resources
