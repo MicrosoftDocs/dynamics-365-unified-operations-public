@@ -186,109 +186,32 @@ The following settings are included in the fiscal connector configuration that i
 
 Follow these steps to set up a development environment so that you can test and extend the sample:
 
-!!!!!!!!!!!!!NEXT EDIT HERE!!!!!!!!!!!!!!!!
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Open the control unit integration solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash\\CleanCash.sln**, and build it.
+1. Install Commerce runtime extensions:
+    - Find the CRT extension installer:
+        - **Commerce Scale Unit:** In the **CleanCash\\ScaleUnit\\ScaleUnit.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.CleanCash.Installer** installer.
+        - **Local CRT on Modern POS:** In the **CleanCash\\ModernPOS\\ModernPOS.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.CleanCash.Installer** installer.
+    - Start the CRT extension installer from command line as follows:
+        - **Commerce Scale Unit:**
+        ```Console
+        ScaleUnit.CleanCash.Installer.exe install --verbosity 0
+        ```
+        - **Local CRT on Modern POS:**
+        ```Console
+        ModernPOS.CleanCash.Installer.exe install --verbosity 0
+        ```
 
-
-### Configure fiscal integration
-
-Complete the fiscal integration setup steps that are described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
-
-- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings for the fiscal registration process that are [specific to this control unit integration sample](#set-up-the-registration-process).
-- [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-- [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-## Deployment guidelines for cash registers for Sweden
-
-> [!WARNING]
-> Started since 10.0.23 the fiscal integration sample for Sweden was published in GitHub repository. This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed as a prerequisite. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
-
-This topic serves as a deployment guide that shows how to enable the localization of Microsoft Dynamics 365 Commerce for Sweden. The localization samples code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions)
-
-This sample consists of extensions for the Commerce runtime (CRT), POS, and Hardware station. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit, Hardware station and POS. After installing the retail components, you should build the CleanCash solution and run installers for each component. We recommend that you use an unmodified files from this repository to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
-
-Follow these steps to configure a development environment so that you can test and extend the sample. You must also complete all the required setup tasks that are described in the [Setting up the integration with control units](#setting-up-the-integration-with-control-units) section.
-
-### Install Commerce extensions
-
-The CRT extension components are included in the CleanCash solution from Fiscal Integration folder. To complete the following procedures, open the CleanCash solution, **CleanCash.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash**.
-
-1. Find the **CleanCash** solution and build it.
-
-2. Build the CRT extension installer:
-
-    - **Commerce Scale Unit:** In the **CleanCash\\ScaleUnit\\ScaleUnit.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.CleanCash.Installer** installer.
-    - **Local CRT on Modern POS:** In the **CleanCash\\ModernPOS\\ModernPos.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.CleanCash.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    - **Commerce Scale Unit:**
-
-    ```Console
-    ScaleUnit.CleanCash.Installer.exe install --verbosity 0
-    ```
-
-    - **Local CRT on Modern POS:**
-
-    ```Console
-    ModernPOS.CleanCash.Installer.exe install --verbosity 0
-    ```
-### Install Hardware station extensions
-
-The Hardware station extension components are included in the CleanCash solution from Fiscal Integration folder. To complete the following procedures, open the CleanCash solution, **CleanCash.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash**.
-
-#### CleanCash component
-
-1. Find the **CleanCash** solution and build it.
-
-2. In the **CleanCash\\HardwareStation\\HardwareStation.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.CleanCash.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
+1. Install Hardware station extensions:
+    - In the **CleanCash\\HardwareStation\\HardwareStation.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.CleanCash.Installer** installer.
+    - Start the extension installer from command line as follows:
     ```Console
     HardwareStation.CleanCash.Installer.exe install --verbosity 0
     ```
 
-### Production environment
+#### Production environment
 
-The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition to completing that procedure, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
-
-### Commerce Cloud Scale Unit (CSU) package
-
-The steps to generate Commerce Cloud Scale Unit (CSU) package are following:
-
-1. Clone or download the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
-
-Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-
-2. Build the project **ScaleUnit.Posnet** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
-
-Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
-
-To upload the created **CloudScaleUnitExtensionPackage.zip** package to LCS see [Deploy the package to CSU](../dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
-
-### Commerce Scale Unit (self-hosted) components
-
-1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
-
-2. Start the extension installer from command line
-
-- For **Commerce Scale Unit:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ScaleUnit\\ScaleUnit.Posnet.Installer\\bin\\Debug\\net461** path
-
-    ```Console
-    ScaleUnit.Posnet.Installer.exe install --verbosity 0
-    ```
-
-- For **Local CRT on Modern POS:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ModernPOS\\ModernPOS.Posnet.Installer\\bin\\Debug\\net461** path
-
-    ```Console
-    ModernPOS.Posnet.Installer.exe install --verbosity 0
-    ```
-
-- For **Hardware station** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\HardwareStation\\HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\bin\\Debug\\net461** path
-
-    ```Console
-    HardwareStation.PosnetThermalFVFiscalPrinter.Installer.exe install --verbosity 0
-    ```
+Follow the steps described in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The template YAML file **CleanCash build-pipeline.yml** can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
 
 ## Design of the extensions
 
