@@ -94,9 +94,9 @@ To preview the new module in a local web browser, follow these steps.
 2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=super-media-gallery`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
 ### Preview with a page mock
-Alternatively, a page mock can be used to preview the module, follow the instructions within the [page mock](test-page-mock.md) topic for details.  Note the details on creating a dynamic page mock from a live production page using the **?item=nodeserviceproxy:true** query string parameter.  For example, a product details page can be saved into a page mock, you would then need to modify the page mock to replace the "buy-box" module with the "super-buy-box" module.  Save the new page mock file under the **/src/pageMocks/** directory for example "/src/pageMocks/pdp-page-test.json".  
+Alternatively, a page mock can be used to preview the module, follow the instructions within the [page mock](test-page-mock.md) topic for details.  Note the details on creating a dynamic page mock from a live production page using the **?item=nodeserviceproxy:true** query string parameter.  For example, a product details page can be saved into a page mock, you would then need to modify the page mock to replace the "buy-box" module with the "super-buy-box" module.  Save the new page mock file under the **/src/pageMocks/** directory, for example "/src/pageMocks/pdp-page-test.json".
 
-Once you have created the page mock, the module you cloned will then need to be updated to the new cloned module. For example if you created a page mock based off of a product details page, search for the "media-gallery" module and you should find a section similar to below where you can change the **typename** and "id" from "media-gallery" to the new "super-media-gallery" module.
+Once you have created the page mock, the module you cloned will then need to be updated to the new cloned module within the mock JSON file. For example if you created a page mock based off of a product details page, search for the "media-gallery" module and you should find a section similar to below where you can change the **typename** and **id** from "media-gallery" to the new "super-media-gallery" module.
 
 ```json
 "modules": {
