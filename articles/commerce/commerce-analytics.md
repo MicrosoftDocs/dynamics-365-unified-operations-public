@@ -393,7 +393,7 @@ To generate a SAS token, follow these steps.
     | Allowed resource types | Select **Service**, **Container**, and **Object**. |
     | Allowed permissions | Select **Read**, **Write**, **Delete**, **List**, **Add**, and **Create**. |
     | Blob versioning permissions | Select **Enables deletion of versions**. |
-    | Start and expiry date/time | Set an end date and time for the SAS token as appropriate. |
+    | Start and expiration date/time | Set an end date and time for the SAS token as appropriate. |
     | Allowed IP addresses | Leave this field blank. |
     | Allowed protocols | Select **HTTPS only**. |
     | Preferred routing tier | Select **Basic (default)**. |
