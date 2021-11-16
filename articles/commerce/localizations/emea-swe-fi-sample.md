@@ -4,7 +4,7 @@
 title: Control unit integration sample for Sweden
 description: This topic provides an overview of the fiscal integration sample for Sweden.
 author: sepism
-ms.date: 11/15/2021
+ms.date: 11/16/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -109,7 +109,7 @@ The control unit integration sample for Sweden is based on the [fiscal integrati
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
-1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
+1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this control unit integration sample](#set-up-the-registration-process).
 1. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 1. [Configure channel components](#configure-channel-components)
@@ -173,7 +173,7 @@ The following default data mapping is included in the fiscal document provider c
 The following settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
 
 - **Connections string** – The control unit connection settings.
-- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the control unit.
 
 ### Configure channel components
 
@@ -215,55 +215,51 @@ Follow the steps described in [Set up a build pipeline for a fiscal integration 
 
 ## Design of the extensions
 
+The control unit integration sample for Sweden is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\CleanCash** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the control unit integration sample for Sweden (legacy)](emea-swe-fi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+
 ### CRT extension design
 
-The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the fiscal registration service.
-
-The CRT extension is **Runtime.Extensions.DocumentProvider.CleanCashSample**.
-
-For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the control unit.
 
 #### Request handler
 
-There is a single **DocumentProviderCleanCash** request handler for the document provider. This handler is used to generate fiscal documents for the fiscal registration service.
+There is a single **DocumentProviderCleanCash** request handler for the document provider. This handler is used to generate fiscal documents for the control unit.
 
 This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
 
 The connector supports the following requests:
 
-- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the control unit.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, sales events and audit events are supported.
 
 #### Configuration
 
-The **DocumentProviderFiscalCleanCashSample** configuration file is in the **Configuration** folder of the extension project. The purpose of this file is to enable settings for the document provider to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
-
-- VAT codes mapping
+The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\CleanCash\\CommerceRuntime\\DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of this file is to enable settings for the document provider to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 ### Hardware station extension design
 
-The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
-
-The Hardware station extension is **HardwareStation.Extension.CleanCashSample**. It uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+The purpose of the extension that is a fiscal connector is to communicate with the control unit. It uses the HTTP protocol to submit documents that the CRT extension generates to the control unit. It also handles the responses that are received from the control unit.
 
 #### Request handler
 
-The **CleanCashHandler** request handler is the entry point for handling requests to the fiscal registration service.
+The **CleanCashHandler** request handler is the entry point for handling requests to the control unit.
 
 The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Headquarters.
 
 The connector supports the following requests:
 
-- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response from it.
-- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the fiscal registration service.
-- **InitializeFiscalDeviceRequest** – This request is used to initialize the fiscal registration service.
+- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the control unit and returns a response from it.
+- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the control unit.
+- **InitializeFiscalDeviceRequest** – This request is used to initialize the control unit.
 
 #### Configuration
 
-The configuration file is in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
-
-- **Connections string** – The control unit connection settings.
-- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\CleanCash\\HardwareStation\\Connector.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 ## Migrating from the earlier integration sample
 
