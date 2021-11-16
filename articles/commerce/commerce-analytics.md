@@ -273,6 +273,7 @@ A SAS token enables external entities to access your storage account, with a spe
 1. Go to the storage account in Azure portal that you created while configuring **Export to Data Lake**, as outlined in [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription).
 2. In the **Options** pane on the left, under the storage account, select **Shared access signature**.
 3. Select the following options on the SAS options page:
+
     | Option name | Option value |
     |-------------|--------------|
     | Allowed services | Select **Blob**. |
@@ -284,6 +285,7 @@ A SAS token enables external entities to access your storage account, with a spe
     | Allowed protocols | Select **HTTPS only**. |
     | Preferred routing tier | Select **Basic (default)**. |
     | Signing key | Select **key1** or **key2** as appropriate. |
+
 4. Select **Generate SAS and connection string**.
 5. Copy the value from the **SAS token** text box into a text editor such as Notepad.
 
@@ -296,12 +298,14 @@ To create and publish the necessary views in Azure Synapse workspace, you must d
 To install and configure an Azure Synapse workspace, complete the steps below.
 1. Install Azure Synapse workspace in your Azure subscription by following the steps outlined in [Quickstart: Create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace).
 2. Open the SetupSynapse.sql script file in Notepad from the local machine folder where you cloned or downloaded the Dynamics365Commerce.Solutions repo. For more information, see [Download deployment scripts for Azure Synapse views](#download-deployment-scripts-for-azure-synapse-views). The script file will be under the "/Pipeline/CommerceAnalyticsSynapse/" folder. Edit the script to replace the placeholder text with values below.
+
    | Placeholder text | Replacement value |
    |------------------|-------------------|
    | placeholder_storageaccount | Replace with the name for the storage account that you created while configuring **Export to Data Lake**, as outlined in  [Create a Data Lake Storage (Gen2) account in your subscription](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createsubscription). |
    | <a name="phContainer"></a>placeholder_container | Replace with the name of the storage container that was created in your Azure Data Lake instance after you installed the **Export to Data Lake** add-in in LCS. To get the container name, you need to use the Storage Explorer in Azure portal to browse your storage account. |
    | placeholder_sastoken | Replace with the SAS token that you copied in [Get Storage Account SAS token](#generate-storage-account-sas-token). Be sure to remove the **'?'** at the beginning of the SAS token value. |
    | <a name="phUserPwd"></a>placeholder_password | Replace with a strong password of your choice. Make a note of the password. The password will be set as the password for the new 'reportreadonlyuser' account that will be created by the script. **DO NOT** enter the password of the 'sqladminuser' account here.  |
+
 3. Go to the new Azure Synapse workspace in Azure portal. Select the **Open Synapse Studio** option on the **Overview** page.
 4. Copy the contents of `SetupSynapse.sql` that you updated in Step 2 above. In Synapse Studio on Azure portal, select **New > SQL script**. Paste the contents into the SQL script editor in Synapse Studio.
 5. Verify that **Use database** is set to **Master**. Select **Run** to execute the script.
