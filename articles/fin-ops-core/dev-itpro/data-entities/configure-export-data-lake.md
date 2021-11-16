@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure export to Azure Data Lake
+title: Install the Export to Data Lake add-in
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
 ms.date: 11/16/2021
@@ -27,20 +27,20 @@ ms.dyn365.ops.version: Platform Update 33
 
 ---
 
-# Install Export to Data Lake add-in
+# Install the Export to Data Lake add-in
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** add-in is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in your environment. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature as well as upcoming improvements.
+> The **Export to Data Lake** add-in is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your Finance and Operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
 >
-> The **Export to Data Lake** feature is not available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. However you can prototype the feature using Tier-1 (developer) environment using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). These tools let you export data from your Tier-1 or sandbox environment into a Data lake in the same format that is exported by the feature. 
+> The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. However, you can prototype the feature in a Tier-1 (developer) environment by using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). These tools let you export data from your Tier-1 or sandbox environment into a data lake in the same format that is exported by the feature. 
 
-Before you can use the Export to Data Lake feature in Finance and Operations environments, your administrator needs to install the Export to Data Lake add-in and connect your environment with an Azure Data Lake. The Export to Data Lake add-in needs to be installed in your environment using LCS. You need to contact your LCS administrator to perform this operation.
+Before you can use the **Export to Data Lake** feature in Finance and Operations environments, your administrator must install the **Export to Data Lake** add-in and connect your environment with a data lake. The **Export to Data Lake** add-in must be installed in your environment via LCS. You must contact your LCS administrator to perform this operation.
 
-The add-in needs connection information to your Azure Data Lake. So before you install the add-in, you need to create a storage account (ie. an Azure Data Lake) if you haven't done so already. To create necessary Azure resources, you may need to contact an administrator who can create Azure resources on your behalf. 
+The **Export to Data Lake** add-in requires connection information for your data lake. Therefore, before you install it, you must create a storage account (that is, an Azure data lake) if you haven't already created one. To create the required Azure resources, you might have to contact an administrator who can create Azure resources on your behalf. 
 
-The following step-by-step instructions will guide you through the proces. 
+The following step-by-step instructions will guide you through the process. 
 
 ## <a name="createServicePrincipal"></a> Create Service Principal for Microsoft Dynamics ERP Microservices
 
