@@ -23,9 +23,9 @@ ms.search.validFrom: 2021-06-10
 >
 > By enabling preview features, you agree to the Supplemental Terms of Use.
 
-When you enable the preview feature **Enable near real-time data changes**, data is inserted, updated, and deleted in your data lake in near-real time. As data changes in your Finance and Operations environment, the same data is updated in the data lake within a few minutes. In addition, you also get the data changes in aseperate **change feed** folder. 
+When you enable the preview feature **Enable near real-time data changes**, data is inserted, updated, and deleted in your data lake in near-real time. As data changes in your Finance and Operations environment, the same data is updated in the data lake within a few minutes. In addition, you also get the data changes in a seperate **change feed** folder. 
 
-Change data in a data lake lets you build near-real-time data pipelines that react to data changes in Finance and Operations apps. The **Change feed** folder in the data lake contains every data change in Finance and Operations apps. This folder is automatically created and maintained by the **Export to Data Lake** feature.
+Change data in a data lake lets you build near-real-time data pipelines that react to data changes in Finance and Operations apps. The **Change feed** folder in the data lake contains every data change in Finance and Operations apps. This folder is automatically created and maintained by the **Export to Data Lake** feature. 
 
 ## Why do you need change data in a data lake?
 
@@ -41,7 +41,7 @@ Incremental update is a standard capability in most data transformation tools, s
 
 The **Change feed** folder provides a history of table data changes in the data lake. This history can be used for data pipelines that use incremental update.
 
-## The Change feed folder
+## The Change feed folder in depth
 
 The Change feed feature relies on a SQL Server feature that is named Change Data Capture (CDC). CDC is the native approach to capturing change data in a SQL Server database, which is the data store behind Finance and Operations apps. The Change feed feature lets you access the CDC change log in your data lake.
 
@@ -50,16 +50,16 @@ The following illustration shows how change feeds work in Finance and Operations
 ![How change feeds work in Finance and Operations apps.](media/Change-feed-overview-picture.png)
 
 1. Whenever a data change occurs in Finance and Operations apps, the underlying database (AXDB) is updated. The CDC feature ensures that the update is reflected in the database. CDC captures the changes in a log (the change log), together with a logical sequence number (**LSN** value), a date/time stamp (**Change Date-Time** value), and a **Change Payload** value that identifies the data that changed.
-2. **Export to Data Lake** microservices capture the changes in the database and write the change log to the customer's data lake. Change feed folders in the data lake contain the change log, which is organized into folders.
+2. **Export to Data Lake** microservices capture the changes in the database and write the change log to the customer's data lake. Change feed folders are organized in the data lake by table. Each folder contains the change log for the pecific table.
 3. In addition, in the **Tables** folder, each row that changed also contains several new fields. Each row contains the **LSN** value of the corresponding change record and the **Change Date-Time** value. Although you can use the **LSN** and **Change Date-Time** fields in the table folders to identify whether a row changed, they contain only the latest change. If the same row changed multiple times, only the latest change is shown in the **Tables** folder.
+4. Changes are written to the Change feed folder in the same sequence (ie. LSN) they are committed in the database. Change feed files are written in batches in the data lake such that they are optimized in size for reading. Once written, change file are never updated.
 
-A given change feed folder in the data lake and the changed fields in the corresponding table folders are consistent. Therefore, a single microservice updates both the change feed folder and the corresponding table in the data lake at the same time.
 
 ## Exploring the Change feed folder in your data lake
 
-Change feeds are automatically enabled when you add tables to a data lake.
+When you enable the preview feature **near real-time data changes**, Change feeds are automatically added when you add tables to a data lake.
 
-When you add a table to a data lake, or when you activate a table that has been inactivated, the system makes an initial copy of the data in the data lake. At this point, the table's status is shown as **Initializing**. When the initial copy is completed, the system changes the status to **Running**. When the table is in **Running** status, changes in the Finance and Operations database are reflected in the data lake, and change feeds are added.
+When you add a table to data lake, or when you activate a table that has been inactivated, the system makes an initial copy of the data in the data lake. At this point, the table's status is shown as **Initializing**. When the initial copy is completed, the system changes the status to **Running**. When the table is in **Running** status, changes in the Finance and Operations database are reflected in the data lake, and change feeds are added. Change feeds folder may be empty if there are no changes to the table since it was initialized. 
 
 To access change folders, open the Azure portal, and find and select the storage account that is associated with your Finance and Operations environment. You should see the **Change feed** folder in the data lake folder structure. The following illustration shows an example.
 
@@ -98,13 +98,13 @@ If you require that your data warehouse or data marts be updated in near-real ti
 
 However, there are several important concepts that must be understood:
 
-- Change records are grouped into files that are around 4 megabytes (MB) or 8 MB in size. Microsoft has optimized file sizes so that they provide optimum query response times when the files are queried by Synapse SQL Serverless. Optimized file sizes (and batched writes) also reduce the Azure charges that you might incur as the data lake is updated. Change records are only appended. In other words, they are never updated. However, files in the **Change feed** folder might occasionally be updated. For example, smaller records might be filled up so that they match the 4 MB size. You should not rely on the date/time stamp of CSV files to identify changes. Instead, you should rely on the LSN or the time stamps in the change record.
-- Change feeds are constantly updated in the data lake. Updates might occur in small batches that update the data every minute. These updates might even occur more than one time per minute in the case of tables that are frequently updated. Although you can observe the **Change feed** folder (or time stamps of files) to trigger downstream jobs, you should consider the possibility that a file might have existing change records that you consumed in the past.
-- Your downstream jobs can be orchestrated on a periodic basis, and they can be triggered as microbatches instead of observing changes to files or folders.
-- Your downstream data pipelines must have a "last processed" marker (also known as a watermark). Whenever you can, you should rely on the LSN as the watermark. However, you can also use the **Change Date-Time** value as the watermark. By relying on the LSN, you will ensure that you consume the changes in the same sequence in which they were committed in the Finance and Operations database.
+- Change records are grouped into files that are around 4 megabytes (MB) or 8 MB in size. Microsoft has optimized file sizes so that they provide optimum query response times when the files are queried by Synapse SQL Serverless. Optimized file sizes (and batched writes) also reduce the Azure charges that you might incur as the data lake is updated.
+- Change records are only appended - files in the **Change feed** folder are never updated. While each change record contains the LSN number and the date times of a change, you can also use date/time stamp of CSV files to identify changes.
 - When you reactivate a table in Finance and Operations, the **Change feed** folder is cleared, and the system starts change feeds from the next available change. This behavior ensures that the changes are consistent with the **Tables** folder. When tables are reactivated, you should consider triggering a full refresh of the downstream data pipeline.
+- Your downstream jobs can be orchestrated on a periodic basis (ex. every 10 mins), or triggered when a new change feed file is added to a folder.
+- In either case, your downstream data pipelines must have a "last processed" marker (also known as a watermark). Whenever you can, you should rely on the LSN field within the record as the watermark. However, you can also use the **File Date-Time** stamp as the watermark. By relying on the LSN, you will ensure that you consume the changes in the same sequence in which they were committed in the Finance and Operations database.
 
-A [sample Synapse template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) is available. You can use it to incrementally ingest data into a SQL-based data warehouse.
+You can see the [Synapse data ingestion template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF) as an example in building a downstream pipeline. You can use it to incrementally ingest data into a SQL-based data warehouse.
 
 ### Simplifying BYOD-based ETL pipelines
 
@@ -116,7 +116,7 @@ You can simplify the orchestration pipeline by consuming change feeds.
 
 Change feeds are a powerful feature, but the process of constructing and maintaining a near-real-time data pipeline is complex. Although modern data transformation tools and ready-made templates can help simplify this process, you might still have to invest in building and running your pipeline.
 
-If your users expect to data marts to be updated daily or several times per day, triggering a full refresh might be an economical alternative, especially if the volume of data is low or moderate.
+If your users expect to data marts to be updated daily or several times per day, triggering a full refresh might be an economical alternative, especially if the volume of data is low or moderate. You can also choose to update smaller tables as a periodic full refresh while creating near real-time pipelines for large frequently updated tables.
 
 ### Changing feeds to audit and verify master data updates
 
