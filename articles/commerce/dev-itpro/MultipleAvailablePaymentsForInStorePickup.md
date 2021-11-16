@@ -57,7 +57,7 @@ When payments are available to be used in a customer's POS transaction, POS prov
 
 When in the cart transaction screen in POS with existing payment methods available to be used, an information indicator will display above the cart lines showing "There are existing payment options available to apply to this order. Learn more at checkout." This informational banner will signal to the POS user to help ensure the available payment methods are used, instead of selecting a new payment method to process.  If the POS user selects the Pay Card payment option, checkout, or the Amount due total, the options for existing card payments will be displayed along with the option to choose to take a new payment method. Other payment method selections outside of the three mentioned above, when selected from the transaction page, will display normally to accept the new payment method directly.
 
-#### Using Available Payments
+### Using Available Payments
 
 The POS user should select the cart Amount Due total to bring up the **Amount due** dialogue showing the total due as well as the available payment methods.
 
