@@ -43,9 +43,9 @@ After your organization has purchased a subscription to Finance and Operations, 
 4. If the subscription in question is shown as active, proceed to the next step by signing in to LCS to trigger the Implementation Project creation flow.
 5. Open another private browser tab and go to [Lifecycle Services](https://lcs.dynamics.com). Select **Login** to access LCS with your current Tenant Admin credentials.
    > [!NOTE]
-   > Connection endpoints might be different for Government and other local Cloud see, [Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management](../../dev-itpro//deployment/deployment-options-geo.md).
-7. Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.
-8. The Tenant Administrator is assigned the Project Owner security role in the provisioned Implementation Project.  
+   > Connection endpoints might be different for Government Community Cloud (GCC) and other local cloud deployment options. For more information see, [Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management](../../dev-itpro//deployment/deployment-options-geo.md).
+7. Accept and confirm any other prompts displayed to complete the implementation project provisioning.
+8. The tenant administrator is assigned the Project Owner security role in the provisioned implementation project.  
    > [!NOTE]
    > If the Tenant Administrator will not be a participant in the implementation, at least one additional Project Owner must be assigned to the implementation project.
 
