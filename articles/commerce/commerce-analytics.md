@@ -249,12 +249,13 @@ Commerce analytics relies on the **Export to Data Lake** feature to export Comme
 To install the Commerce analytics add-in in LCS, you must be an environment administrator in LCS for the environment that you plan to use.
 
 You will need the following information to configure the Commerce analytics add-in. 
-|Field| Information source| Example|
+|Field | Information source| Example|
 |----|----|----|
-|Azure AD Tenant ID for your environment| Your Azure AD tenant ID in the Azure portal. Sign in to the **Azure portal** and open the **Azure Active Directory** service. Open the **Properties** page and copy the value in the **Directory ID** field.|72f988bf-0000-0000-00000-2d7cd011db47|
-|DNS name of your key vault|Enter the [DNS name](#Enable-and-configure-Export-to-Data-Lake) of your key vault.|`https://contosod365datafeedpoc.vault.azure.net/`|
-|Secret that contains the Application ID|Enter the [secret name](#Enable-and-configure-Export-to-Data-Lake) that stores the application ID. This is the same value that you used when installing the **Export to Data Lake** add-in.|app-id|
-|Secret that contains the application secret|Enter the [secret name](#Enable-and-configure-Export-to-Data-Lake) that stores the application secret. This is the same value that you used when installing the **Export to Data Lake** add-in.|app-secret|
+|Azure AD Tenant ID for your environment| Your Azure AD tenant ID in the Azure portal. Sign in to the **Azure portal** and open the **Azure Active Directory** service. Open the **Properties** page and copy the value in the **Directory ID** field.| 72f988bf-0000-0000-00000-2d7cd011db47|
+|DNS name of your key vault|Enter the [DNS name](#Enable-and-configure-Export-to-Data-Lake) of your key vault.| `https://contosod365datafeedpoc.vault.azure.net/`|
+|Secret that contains the Application ID| Enter the [secret name](#Enable-and-configure-Export-to-Data-Lake) that stores the application ID. This is the same value that you used when installing the **Export to Data Lake** add-in.|app-id|
+|Secret that contains the application secret| Enter the [secret name](#Enable-and-configure-Export-to-Data-Lake) that stores the application secret. This is the same value that you used when installing the **Export to Data Lake** add-in.| app-secret|
+
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/) and navigate to your environment.
 2. On the **Environment** page, select the **Environment add-ins** tab.
 3. Select **Install a new add-in**, and in the dialog box, select **Commerce analytics (Preview)**. If **Commerce analytics (Preview)** isn't listed, make sure you have joined the Insider Program.
