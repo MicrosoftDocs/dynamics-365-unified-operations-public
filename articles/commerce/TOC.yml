@@ -1275,7 +1275,7 @@
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
       - name: Commerce analytics (Preview)
-        href: CommerceAnalytics.md
+        href: commerce-analytics.md
     - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
