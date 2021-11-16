@@ -45,7 +45,7 @@ After you've completed project onboarding, you can review the additional capabil
 
 ## Features that aren't available
 
-Some features won't be available for deployment in GCC, or they won't be available to use with Dynamics 365 in GCC. For example, Azure DevOps Services will be unavailable in **Government cloud**. However, on-premises Azure DevOps or public Azure DevOps services will be available. For detailed information about feature availability, see [Business Applications US Government Feature Availability](https://aka.ms/BAPFunctionalParity).
+Some features won't be available for deployment in GCC, or they won't be available to use with Dynamics 365 in GCC. For example, Azure DevOps Services will be unavailable in GCC. However, on-premises Azure DevOps or public Azure DevOps services can be used. For detailed information about feature availability, see [Business Applications US Government Feature Availability](https://aka.ms/BAPFunctionalParity).
 
 ## Frequently asked questions
 
