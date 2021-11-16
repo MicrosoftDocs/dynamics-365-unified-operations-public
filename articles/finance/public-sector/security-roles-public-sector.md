@@ -3,7 +3,7 @@
 
 title: Security roles in the public sector
 description: This topic provides information about public sector security roles including the Project manager and Purchasing agent roles.
-author: ShylaThompson
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 19721
 ms.assetid: e26a6d93-851e-46be-8543-de2798909350
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
