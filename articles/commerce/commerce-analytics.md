@@ -328,7 +328,7 @@ The **Impression report** page includes the following metrics:
 
 To install Commerce analytics (Preview), you must have permissions to create resources in an Azure subscription. You must also have permissions to install add-ins in LCS. Here is an overview of the steps:
 
-1. [Submit the Preview in-take form for Commerce analytics (Preview)](#joinPreview).
+1. [Submit the Preview intake form for Commerce analytics (Preview)](#joinPreview).
 2. [Enable and configure Export to Data Lake](#enableExportToDataLake).
 3. [Enable and configure the Commerce analytics (Preview) add-in](#enableCommerceAnalyticsAddin).
 4. [Generate a shared access signature (SAS) token for your storage account](#getSASToken).
@@ -336,9 +336,9 @@ To install Commerce analytics (Preview), you must have permissions to create res
 6. [Install and configure an Azure Synapse workspace](#configureAzureSynapse).
 7. [Install the Power BI template app](#powerbi).
 
-### <a name="joinPreview"></a>Submit the Preview in-take form for Commerce analytics (Preview)
+### <a name="joinPreview"></a>Submit the Preview intake form for Commerce analytics (Preview)
 
-Submit the [Preview in-take form for Commerce analytics (Preview)](https://forms.office.com/r/vW5VLJGXZ2). Allow up to three business days for the form to be processed. After it's processed, a confirmation email will be sent to the email address that you provided in the form.
+Submit the [Preview intake form for Commerce analytics (Preview)](https://forms.office.com/r/vW5VLJGXZ2). Allow up to three business days for the form to be processed. After it's processed, a confirmation email will be sent to the email address that you provided in the form.
 
 ### <a name="enableExportToDataLake"></a>Enable and configure Export to Data Lake
 
@@ -359,7 +359,7 @@ To install and configure the Commerce analytics (Preview) add-in, follow these s
 2. On the **Environment** page, on the **Environment add-ins** tab, select **Install a new add-in**.
 3. In the dialog box, select **Commerce analytics (Preview)**.
 
-    If **Commerce analytics (Preview)** isn't listed, make sure that you've [joined the Insider Program](#joinInsiderProgram).
+    If **Commerce analytics (Preview)** isn't listed, make sure that you've joined the Insider Program.
 
 4. In the **Setup add-in** dialog box, enter the following information.
 
