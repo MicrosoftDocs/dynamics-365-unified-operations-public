@@ -1359,7 +1359,7 @@
           - name: Customer information management for Poland
             href: localizations/emea-pol-customer-information.md
           - name: Deployment guidelines for fiscal integration sample for Poland (legacy)
-            href: localizations/emea-pol-fi-sample-sdk.md
+            href: localizations/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
         - name: Cash register functionality
