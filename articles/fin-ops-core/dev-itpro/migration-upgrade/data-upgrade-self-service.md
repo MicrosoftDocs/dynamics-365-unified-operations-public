@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: veeravendhan-s 
-ms.date: 10/08/2021
+ms.date: 11/17/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -73,7 +73,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     ```
 
     > [!NOTE]
-    > The tables added to the ignore list, should only be tables that do not exist in the Microosft Dynamics AX 2012 AOT (Application Object Tree). Including tables that exist will result in an error during the data upgrade.
+    > The tables added to the ignore list should only be tables that do not exist in the Microosft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist will result in an error during the data upgrade.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -92,7 +92,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
     - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value.
 > [!NOTE]
-> Do not set up or configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (>90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time). Additionally, it is recommended for a go-live cutover that you start the replication the prior weekend. 
+> Do not set up or configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (greater than 90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time). Additionally, it is recommended for a go-live cutover that you start the replication the prior weekend. 
 
 ## Data upgrade process
 
