@@ -17,9 +17,10 @@ ms.search.validFrom: 2020-01-06
 
 The prospect to cash solution available for Data Integrator is not compatible with dual-write. The reason being msdynce_AccountNumber index on account table that came as part of the prospect to cash solution. As long as this index exists, you couldn’t create the same customer account number in two different legal entities. You can either choose to start fresh with dual-write by migrating the prospect to cash data from Data Integrator to dual-write or you can overcome the index by installing the last "dorman" version of the prospect to cash solution. This page covers both these approaches.
 
-## Install the last "dorman" version of prospect to cash solution
+## Install the last "dorman" version of the Data Integrator Prospect to cash solution
 
-**P2C Version 15.0.0.2** is considered as the last "dorman" version of the data integrator prospect to cash solution. You can download it from [github]()
+**P2C Version 15.0.0.2** is considered as the last "dorman" version of the data integrator prospect to cash solution. You can download it from [github]().
+
 You need to install it manually. Upon installing, everything remains exactly the same, except the msdynce_AccountNumber index is removed.
 
 ## Steps to migrate Prospect to cash data from Data Integrator to dual-write
