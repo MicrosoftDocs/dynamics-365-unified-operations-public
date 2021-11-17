@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deployment guidelines for cash registers for Norway
+title: Deployment guidelines for cash registers for Norway (legacy)
 description: This topic is a deployment guide for the Commerce localization for Norway.
 author: AlexChern0v
 ms.date: 10/06/2020
@@ -24,7 +24,7 @@ ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
 
 ---
-# Deployment guidelines for cash registers for Norway
+# Deployment guidelines for cash registers for Norway (legacy)
 
 [!include [banner](../includes/banner.md)]
 
