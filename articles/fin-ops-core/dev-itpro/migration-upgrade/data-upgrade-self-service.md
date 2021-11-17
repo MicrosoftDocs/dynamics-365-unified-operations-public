@@ -73,7 +73,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     ```
 
     > [!NOTE]
-    > The tables added to the ignore list should only be tables that do not exist in the Microosft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist will result in an error during the data upgrade.
+    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -385,7 +385,7 @@ You can use the following options to review the reports of the replication valid
     - **Case 3:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **Completed**, step 12 will show **Successful**.
     - **Case 4:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **In Progress**, step 12 will show **Successful**, because the data upgrade job is running in the background.
 
-- **Scenario 11:** After creating the publication, if the snapshot creation fails with the following error:
+- **Scenario 11:** After creating the publication, if the snapshot creation fails with the following error.
 
         Error messages:
         Source: Microsoft.SqlServer.Smo
