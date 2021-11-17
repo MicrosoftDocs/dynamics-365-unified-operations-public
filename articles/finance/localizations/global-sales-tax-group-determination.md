@@ -98,7 +98,7 @@ For example, if the option is set to _Prompt_, then, when the **Override sales t
 > Header level and line level charges inherit the **Override sales tax** option from the header or line of the document respectively.
 > 
 > Current limitation:
-> When updating override sales tax checkbox on a header or line level the respective charges do not inherit this checkbox in case the charges were already created.
+> When updating **Override sales tax** checkbox on a header or line level the respective charges do not inherit this checkbox in case the charges were already created.
 
 ### Reverse charge applicability rules 
 
