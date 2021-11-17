@@ -51,7 +51,7 @@ The operating model of Finance and Operations apps defines specific roles and re
 Customers work with their partner and [Microsoft FastTrack](/dynamics365/fasttrack/) following the [Dynamics 365 Implementation Guide](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), the [Success by Design](/dynamics365/fasttrack/success-by-design-overview) framework, and the tools and best practice templates provided in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) to implement their solution. Common activities include:
 
 - User identity and security management
-- Define, develop and operate business processes
+- Define, develop, and operate business processes
 - Define, develop, test, and operate extensions
 - Monitor and manage non-production deployments
 - Manage application updates and validate extensions
@@ -64,7 +64,7 @@ Microsoft manages the Finance and Operations service by deploying, actively moni
 **Infrastructure management**
 - Security and isolation
 - Operating systems and virtualization
-- Servers, storage and networking
+- Servers, storage, and networking
 - Data center power, networking, cooling
 
 **Application platform management**
