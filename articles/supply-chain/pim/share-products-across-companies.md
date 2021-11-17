@@ -22,15 +22,9 @@ Companies with many companies (legal entities) and a large product portfolio (su
 
 The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing.md) of Supply Chain Management enable you to share product information across multiple companies.
 
-<!-- KFM: Throughout this document, it's hard to tell when we mean "products" and when we mean "released products". Please review each example of "product" and clarify. -->
-<!-- Beatriz: It should be clear to customers that know the F&O world and how products work. Products is usually the generic word, and the released products is the specific instance of a product in the legal entity. See this other reference documentation: https://docs.microsoft.com/en-us/dynamics365/supply-chain/pim/product-information#released-products -->
-
 ## How to get the cross-company product sharing public preview
 
 To sign up for the public preview for this feature, send your LCS environment ID by email to the [cross-company product sharing team](mailto:productsharing@service.microsoft.com). After you're approved for the program, the team will send you a follow-up email that contains the information required to start setting up the feature.
-
-<!-- KFM: The above is taken directly from GIA. It must be reviewed and updated with a new mail address and other details as they apply for this feature. -->
-<!-- Beatriz: mail changed -->
 
 ## Prepare your system to enable cross-company data sharing for products
 
@@ -44,14 +38,7 @@ Before enabling cross-company data sharing for products, work through the follow
 
 ## Set up the products and product-related information sharing policies
 
-To share products and product related information, you must create and set up your sharing policies using **Configure cross-company data sharing** page.
-
-<!-- KFM: Add an introduction about what a "template" is, why we need them, how to get them, and what we are supposed to do with them. Explain how a "policy" and a "template" are related. -->
-<!-- Beatriz: this should be part of the record sharing documenation (platform capabilities) and not of this topic. A policy is a set of tables and its fields that are shared, a template is a template which you can use to default some policies that you can use as a base of editing-->
-
-For details about how to use a template, see [Configure financial cross-company data sharing](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
-
-You can use the templates given as they are or as a base to create your own.
+To share products and product related information, you must create and set up your sharing policies using **Configure cross-company data sharing** page. Each sharing policy establish a set of tables and fields that are shared. To get started quickly, you can edit the provided sharing-policy templates as needed and then use them to set up your default sharing policies. For more information about how to use a template, see [Configure financial cross-company data sharing](../../fin-ops-core/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
 You can choose to share product information using either of the following sharing policies:
 
@@ -109,7 +96,7 @@ The product template for single record sharing is:
 
 There are many tables and fields that relate to products. Most of them are included in the provided template policies.
 
-To enable fields and tables to be shared, sharing metadata must be specified for each table <!-- KFM: By the template? -->. If you want to share a table that isn't included in the template, metadata for sharing must have been previously set by Microsoft<!-- KFM: How, where? -->, otherwise you won't be able to add the table to a cross-company sharing policy. If you would like to share a table that isn't currently set up for sharing, please submit your request to Microsoft Support.
+To enable fields and tables to be shared, sharing metadata must be specified for each table. If you want to share a table that isn't included in the template, metadata for sharing must have been previously set by Microsoft, otherwise you won't be able to add the table to a cross-company sharing policy. If you would like to share a table that isn't currently set up for sharing, please submit a request to Microsoft Support.
 
 ## <a name="limitations"></a>Limitations and notes that apply for shared products
 
@@ -117,7 +104,7 @@ The following subsections provide notes and summarize the various limitations th
 
 ### Item templates
 
-It is not possible to apply item templates on child companies, so the  **Apply template** menu item is disabled in child companies <!-- KFM: Where is this menu item? -->. This is because the table `SysRecordTemplateTable` isn't shared.
+It is not possible to apply item templates on child companies, so the **Apply template** menu item is disabled in child companies. This is because the table `SysRecordTemplateTable` isn't shared.
 
 ### Currencies and base prices
 
@@ -141,7 +128,7 @@ Most language-specific fields are disabled by default on product tables <!-- KFM
 
 ### Default unit of measure
 
-When you create a product, you must specify several different units of measure, each for a specific purchase, such as inventory unit, purchase unit, and sales unit. The **New released product** dialog shows the same default unit for each of these based on the default setting for the current company (though you can edit each of them separately in the dialog). To assign the default unit for a company: <!-- KFM: The original seemed to imply that we would have three different default settings, but I only found one and adjusted the text to match. Please confirm. -->
+When you create a product, you must specify several different units of measure, each for a specific purchase, such as inventory unit, purchase unit, and sales unit. The **New released product** dialog shows the same default unit for each of these based on the default setting for the current company (though you can edit each of them separately in the dialog). To assign the default unit for a company:
 
 1. On the navigation bar, select the company (legal entity) you want to set defaults for.
 1. Go to **Inventory management \> Setup \> Inventory and warehouse management parameters**.
@@ -192,7 +179,7 @@ There is no template policy for the vendors table. The vendors table (`vendtable
 
 ### Item sales tax group and item purchase tax groups
 
-Item sales tax group and item purchase tax groups at specified at the product level. These values default the tax group on each of the sales and purchase order lines, respectively. For convenience of defaulting, these values are set to duplicate record sharing and are added in the SRS products template. However, you must set up each of the tax groups and parameters in each of the companies part of the sharing policy as not this is information that is company specific and is not shared cross-company <!-- KFM: This sentence isn't clear. Please revise.--> <!-- Beatriz: it makes total sense to me: aka the names of the tax groups are shared but not the information within those, the information tables (parameters) are not shared.-->. This is because tax groups are specific to each item in the company context.
+Item sales tax group and item purchase tax groups at specified at the product level. These values default the tax group on each of the sales and purchase order lines, respectively. For convenience of defaulting, these values are set to duplicate record sharing and are added in the SRS products template. Although the names of the tax groups are shared across companies, their details and settings are company-specific, so you must set these up in the companies part of the sharing policy. This is because tax groups are specific to each item in the company context.
 
 ### Distributed hybrid environment
 
@@ -206,20 +193,18 @@ If you are using a [distributed hybrid environment](../cloud-edge/cloud-edge-lan
 
 Engineering change management provides some functionality that may conflict with the single record sharing of products, but when used in certain ways, may be complimentary.
 
-Let's get deeper into some of the concepts of engineering change management will be affected if using single record sharing of products: <!-- KFM: A better list intro is needed. I'm not sure what this means. -->
-<!-- Beatriz: changed -->
+The following engineering change management concepts will be affected if you use single record sharing of products:
 
-- **Definition of engineering company** – With engineering change management, you can set up one or more engineering companies. These organizations may represent the one (or more) existing companies where your engineering department is, or a separate one that you only use for engineering that functions more for master data management <!-- KFM: This text isn't clear. Please revise.  --><!-- Beatriz: the first part (the engineering department) is exactly what is meant to be used and is what is explained in the ECM documentation. The second part (the master data management) is what we have seen some companies use it for. Another way: "These organizations usually represent one (or more of the existing companies where your engineering department is. For more information about engineering companies.... On some other cases, it may be useful that the engineering company does not represent the actual engineering department but takes the responsability for master data management. In this case, it would be responsible for the controlled release of products.   -->. For more information about engineering companies, see [Engineering companies and data ownership rules](../engineering-change-management/engineering-org-data-ownership-rules.md).
-- **Release product structure** – From the engineering company, you can release a product to other companies using a controlled process. For more information about the release product structure, see [Release product structures](../engineering-change-management/release-product-structure.md)
-<!-- KFM: This text isn't clear. Please revise.  --> <!-- Beatriz: it should be clear if they know about ECM- another way would be "you can have a controlled release of products choosing the product (and may be its variant and/or version to be released) and having a manual review and acceptance process before it is released in a legal entity"  -->
+- **Definition of engineering company** – With engineering change management, you can set up one or more engineering companies. These organizations may represent the one (or more) existing companies where your engineering department is, or you might set up a dedicated company that doesn't represent an actual engineering department, but which you use for managing master data and the controlled release of products for your organization. For more information about engineering companies, see [Engineering companies and data ownership rules](../engineering-change-management/engineering-org-data-ownership-rules.md).
+- **Release product structure** – From the engineering company, you can release a product to other companies using a controlled process. For more information about the release product structure, see [Release product structures](../engineering-change-management/release-product-structure.md).
 
 The tables related to engineering versions aren't shared because they are meant to be contained in engineering and only be shared with a controlled release. Therefore, if you use engineering change management, you might choose any of the following setups:
 
-- **Your engineering company is part of the single record sharing policy** – In this case, most of the engineering related functionality would not be applicable, especially the controlled release. As soon as the product is created in the engineering company (as a released product), the product is shared (made available) to the rest of your companies. Therefore, the engineering company would lose its "engineering" character, in the sense that it would no longer be a space where the engineering team can work on products, and only those <!-- KFM: Those what? Products? --> <!-- Beatriz: yes --> who continue forward are used in the system. Because the engineering versions are not shared, the version information would only be available in the engineering company. This would mean that:
+- **Your engineering company is part of the single record sharing policy** – In this case, most of the engineering related functionality would not be applicable, especially the controlled release. As soon as the product is created in the engineering company (as a released product), the product is shared (made available) to the rest of your companies. Therefore, the engineering company would lose its "engineering" character, in the sense that it would no longer be a space where the engineering team can work on products, and only those products that continue forward are used in the system. Because the engineering versions are not shared, the version information would only be available in the engineering company. This would mean that:
   - Engineering versions would only exist within the engineering company unless shared using the release product structure
   - The lifecycle state at the version level would only work in those companies where the version information has been shared. This means that you would not be able to control the processes in which a version of a product is being used unless the version is shared with its released product structure.
   - Release control is lost because the product is shared across all companies.
-  - BOM and route are kept locally. You would manage BOM and BOM and BOM versions, as well as routes and route versions at the company level, so you could still use the release product structure to share the BOM and route.  <!-- KFM: This last sentence isn't clear (and is a fragment). Please revise --> <!-- Beatriz: changed -->
+  - BOM and route are kept locally. You must manage the BOM and BOM versions (as well as routes and route versions) at the company level, so you could still use the release product structure to share the BOM and route.
 
   We don't recommend this setup because it disabled much of the value of engineering change management.
 
