@@ -74,10 +74,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Commerce Data Exchange implementation guidance
           href: dev-itpro/implementation-considerations-cdx.md
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
       - name: Get support
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support
@@ -1274,6 +1270,8 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
+      - name: Commerce analytics (Preview)
+        href: commerce-analytics.md
     - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
@@ -1412,6 +1410,10 @@
           href: localizations/rus-fpi-sample.md
         - name: Customer information management for Russia
           href: localizations/rus-customer-information.md 
+      - name: Saudi Arabia
+        items:
+        - name: Generate QR codes and print them on receipts for Saudi Arabia
+          href: localizations/emea-sau-qr-code.md
       - name: Sweden
         items:
         - name: Cash register functionality
