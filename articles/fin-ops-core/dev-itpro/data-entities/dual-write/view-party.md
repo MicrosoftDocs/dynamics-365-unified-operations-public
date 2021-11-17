@@ -1,6 +1,6 @@
 ---
-title: View Party Data
-description: This topic explains how to view party data using party form. 
+title: View party data
+description: This topic explains how to view party data by using the Party page.
 author: RamaKrishnamoorthy 
 ms.date: 11/16/2021
 ms.topic: article
@@ -11,59 +11,69 @@ ms.author: ramasri
 ms.search.validFrom: 2021-11-16
 ---
 
-# View Party Data
+# View party data
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Similar to accounts and contacts, party data can be accessed through a user interface. Dual-write party and global address book solution version 3.2.0.70 provides “Party” form to access party data. Party form provides the capability to view and manage party records along with all its associated customers, contacts and vendors and their postal addresses and electronic addresses as explained below.
-Using party form, you can create a new party of type “Person” and “Organization”. 
+Like account and contact data, party data can be accessed through a user interface (UI). The dual-write party and global address book solution version 3.2.0.70 provides a **Party** page where you can view, create, and manage party records together with all their associated customers, vendors, and contacts, and their postal and electronic addresses.
 
-![View Party Image 1](media/ViewParty_Image1.PNG) 
-  
-Once a party is created, you can use the customers tab to create one or more customers from this party for different companies and manage it. When the party type is “Organization”, you can create and manage accounts (Customer of type Organization). When the party type is “Person”, you can create and manage contacts (Customer of type Person). Similarly, the Vendors tab is used to create vendors of type Person and Organization.
+On the **Party** page, you can create a new party of the **Person** or **Organization** type.
 
-![View Party Image 2](media/ViewParty_Image2.PNG)
-    
-Postal addresses tab allows you to create and manage 1 or more postal addresses for the party record. You can create as many postal addresses as necessary. These addresses appear on the quotation and sales order forms. 
+The following illustration shows a party of the **Organization** type on the **General** tab.
 
-![View Party Image 3](media/ViewParty_Image3.PNG)
-      
-Similarly Electronic addresses tab allows you to create and manage 1 or more electronic addresses for the party record. You can create as many electronic addresses as necessary.
-      
-![View Party Image 4](media/ViewParty_Image4.PNG)
-        
-You can create contact persons (Contact for party records)  and associate to the party by navigating to the Associated Contacts tab.
-        
-![View Party Image 5](media/ViewParty_Image5.PNG)
-          
-You can add the “Party” form to your application using site maps.
-1.	Navigate to “Model-driven Apps” node in your custom solution. Click ‘Add Existing’ and select the app of your choice you intend to customize and include the Party entity or any other entities created as part of dual write solutions. In this example we will update the Sales Team member app to include Party entity.
+![Example of a party of the Organization type.](media/ViewParty_Image1.PNG)
 
- ![View Party Image 6](media/ViewParty_Image6.png)
-            
-2.	Open the app and click Entities on the Components section to include the Party 
-         
-![View Party Image 7](media/ViewParty_Image7.png)
-![View Party Image 8](media/ViewParty_Image8.png)
-        
-                
-     Click Save after selecting the msdyn_party entity.
+After a party is created, you can use the tabs on the **Party** page to manage it.
 
-3.	Edit the Site map of the app by clicking Edit.
-         
-![View Party Image 9](media/ViewParty_Image9.png)
-                   
-4.	Add a new Subarea onto the section we need to customize by selecting and dragging ‘Subarea’ from the Components section.
-        
-![View Party Image 10](media/ViewParty_Image10.png)
-                     
-    Click Edit and select ‘Entity’ as Type and’Party’ as the entity in the components section.
-       
-![View Party Image 11](media/ViewParty_Image11.png)
-                         
-5. Click Save and Publish so that the Party entity  is available on the app.                     
-       
-![View Party Image 12](media/ViewParty_Image12.png)
-    
+## Customers and Vendors tabs
+
+The **Customers** tab lets you create and manage one or more customers from the party for different companies. If the party type is **Person**, you can create and manage customers of the **Person** type. These customers are known as *contacts*. If the party type is **Organization**, you can create and manage customers of the **Organization** type. These customers are known as *accounts*.
+
+The **Vendors** tab resembles the **Customers** tab, but it's used to create vendors of the **Person** or **Organization** type.
+
+## Postal Addresses and Electronic Addresses tabs
+
+The **Postal Addresses** tab lets you create and manage one or more postal addresses for the party. You can create as many postal addresses as the party requires. These addresses appear on the quotation and sales order pages.
+
+The **Electronic Addresses** tab lets you create and manage one or more electronic addresses for the party. You can create as many electronic addresses as the party requires.
+
+## Associated Contacts tab
+
+The **Associated Contacts** tab lets you create contact persons (**Contact for party** records) and associate them with the party.
+
+## Add the Party page to your app
+
+You can add the **Party** page to your app by using site maps.
+
+1. In your custom solution, under the **Components** node, find and select the **Model-driven Apps** node. Then select **Add Existing**.
+2. In the **Select Solution Components** dialog box, find and select the app that should include the Party entity or other entities that have been created as part of dual-write solutions. In this example, you're updating the Sales Team Member app so that it includes the Party entity.
+
+    ![Sales Team Member app selected in the Select Solution Components dialog box.](media/ViewParty_Image6.png)
+
+3. Open the app.
+4. In App Designer, on the **Components** tab on the right, under **Artifacts**, select **Entities**.
+
+    ![Entities button on the Components tab in App Designer.](media/ViewParty_Image7.png)
+
+5. Find and select the **Party** (**msdyn_party**) entity.
+
+    ![Party (msdyn_party) entity selected on the Components tab in App Designer.](media/ViewParty_Image8.png)
+
+6. Select **Save**.
+7. In the main part of the page, in the **Site Map** section, select the **Edit** button (pencil symbol) on the **Site Map** tile.
+
+    ![Edit button on the Site Map tile in App Designer.](media/ViewParty_Image9.png)
+
+8. In Sitemap Designer, drag **Subarea** from the **Components** tab on the right to the section on the left that you have to customize. In this example, you're adding add the new subarea to the **Customers** section.
+
+    ![New Subarea component added to the Customer section in Sitemap Designer.](media/ViewParty_Image10.png)
+
+9. Select the **Edit** button (pencil symbol) next to the new subarea. Then, on the **Properties** tab on the right, set the **Type** field to **Entity** and the **Entity** field to **Party**.
+
+    ![Type and Entity fields set on the Properties tab in Sitemap Designer.](media/ViewParty_Image11.png)
+
+10. Select **Save** and then **Publish** to make the **Party** entity available in the app.
+
+    ![Party entity available in the Sales Team Member app.](media/ViewParty_Image12.png)
