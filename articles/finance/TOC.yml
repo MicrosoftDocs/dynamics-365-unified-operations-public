@@ -1434,6 +1434,8 @@
               href: localizations/e-invoicing-get-started-import-vendor-invoices.md
             - name: Set up Electronic Invoicing
               href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+            - name: Power Platform plug-in admin reference
+              href: localizations/e-invoicing-e-invoicing-power-platform-plug-in.md
           - name: Electronic Invoicing FAQ
             href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
         - name: Tax Calculation
