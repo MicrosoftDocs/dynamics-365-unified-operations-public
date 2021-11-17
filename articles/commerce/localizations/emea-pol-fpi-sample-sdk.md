@@ -33,9 +33,7 @@ This topic provides guidelines on how to deploy the fiscal printer integration s
 
 Follow these steps to set up a development environment so that you can test and extend the sample.
 
-### Enable extensions
-
-#### Commerce runtime extension components
+### Commerce runtime extension components
 
 The Commerce runtime (CRT) extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
@@ -57,7 +55,7 @@ The Commerce runtime (CRT) extension components are included in the Retail SDK. 
     - **Commerce Scale Unit:** Restart the Commerce service site from IIS Manager.
     - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
-#### Hardware station extension components
+### Hardware station extension components
 
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
@@ -81,12 +79,11 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 	- **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
 
-### Production environment
+## Production environment
 
-Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
+In the previous procedure, you enabled the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
-1. Complete the steps that are described in the [Enable extensions](#enable-extensions) section earlier in this topic.
-2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
+1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
     - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following line to the **composition** section.
 
@@ -100,7 +97,7 @@ Follow these steps to create deployable packages that contain Commerce component
         <add source="assembly" value="Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample" />
         ```
 
-3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
+1. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
     - Add the following line to include the CRT extension in the deployable packages.
 
@@ -114,10 +111,12 @@ Follow these steps to create deployable packages that contain Commerce component
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll"/>
         ```
 
-4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+1. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## Design of extensions
+
+The fiscal printer integration sample for Poland is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). For more details about the design of the fiscal integration solution, see the [overview of a fiscal integration sample design](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 ### Commerce runtime extension design
 
