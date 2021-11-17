@@ -37,7 +37,7 @@ It is recommended that you avoid cloning if you can, because clones will be copi
 
 ## Clone and update a module
 
-To clone a module and then update it, use the **clone** [command-line interface (CLI)]((cli-command-reference.md#clone)) command. When you run the following command, you replace **SDK\_MODULE\_NAME** with the name of the module that you want to modify and **NEW\_MODULE\_NAME** with the name of the new module.
+To clone a module and then update it, use the **clone** [command-line interface (CLI)](cli-command-reference.md#clone) command. When you run the following command, you replace **SDK\_MODULE\_NAME** with the name of the module that you want to modify and **NEW\_MODULE\_NAME** with the name of the new module.
 
 **yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME**
 
@@ -48,7 +48,7 @@ Use the following command to get a list of the modules that can be cloned:
 
 ## Example
 
-The following example shows how to clone the [media gallery](../media-gallery-module) module library module so that you can update and make changes to it.
+The following example shows how to clone the [media gallery](../media-gallery-module.md) module library module so that you can update and make changes to it.
 
 
 ```Console
@@ -126,17 +126,23 @@ To preview the new module with a page mock within a local web browser, follow th
     c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
-1. In a web browser, open the following URL to view the module: `https://localhost:4000/page?mock=PAGE_MOCK`, replacing the **PAGE_MOCK** parameter with the page mock filename (without the .json extension), for example `https://localhost:4000/page?mock=pdp-page-test`.
+1. In a web browser, use the following URL format to view the module, replacing the **PAGE_MOCK** parameter with the page mock filename (without the .json extension).
+
+ `https://localhost:4000/page?mock=PAGE_MOCK`
+ 
+ For example, the URL for the page mock file "pdp-page-test.json" would be:
+ 
+ `https://localhost:4000/page?mock=pdp-page-test`
 
 You can now make code changes to the cloned module and see the changes within the page mock.
 
 ## Build and deploy the new module
 
-Once changes are complete, the SDK extension package can be built and deployed to a sandbox and/or a production environment following the steps within the [Package configurations and deploy them to an online environment](package-deploy.md) topic.
+Once your changes have been made, the SDK extension package can be built and deployed to a sandbox and/or production environment following the steps in [Package configurations and deploy them to an online environment](package-deploy.md).
 
 ## Loading the new module within site builder 
 
-Once the module has been deployed, the original module can then be replaced with the cloned module.  For example, to replace the "media gallery" module with a new cloned "super media gallery" module, edit the product details page within site builder, remove the "media gallery" module and add the new cloned module in its place.
+Once the module has been deployed, the original module can then be replaced with the cloned module. For example, to replace the "media gallery" module with a new cloned "super media gallery" module, edit the product details page within site builder, remove the "media gallery" module and add the new cloned module in its place.
 
 ### Module categories
 
@@ -154,7 +160,7 @@ It is important to note that some modules are designed to only work within speci
 	],
 ```
 
-The parent container module (in the above example the "buy box" module) then has a slot that has been designed to hold the media gallery module as shown in the buybox.definition.json code snippit below (which can be found in the \node_modules\@msdyn365-commerce-modules\buybox\src\modules\buybox directory).  Notice the **allowedTypes** section specifies that the slot allows a module of type "media-gallery" or it allows modules that belong to the "buybox_mediaGallery".  This meta data is used by the site builder tool to limit the modules shown for a particular slot to only the allowed modules.  So as long as the cloned module doesn't remove the category, it can replace the original module in its slot.
+The parent container module (the "buy box" module in the above example) then has a slot that has been designed to hold the media gallery module as shown in the buybox.definition.json code snippit below (which can be found in the \node_modules\@msdyn365-commerce-modules\buybox\src\modules\buybox directory).  Notice the **allowedTypes** section specifies that the slot allows a module of type "media-gallery" or it allows modules that belong to the "buybox_mediaGallery". This meta data is used by the site builder tool to limit the modules shown for a particular slot to only the allowed modules. So as long as the cloned module doesn't remove the category, it can replace the original module in its slot.
 
 ```
     "slots": {
