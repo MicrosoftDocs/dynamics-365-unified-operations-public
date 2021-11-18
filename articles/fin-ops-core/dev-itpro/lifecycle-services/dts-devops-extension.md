@@ -45,7 +45,7 @@ For example, here's what the definition for a new translation task might look li
     translationOutputPath: '$(Build.ArtifactStagingDirectory)'
 ```
 
-![Pipeline user interface](media/dts-ado-pipeline-sample.png)
+![Pipeline user interface](media/dts-ado-pipeline-sample.PNG)
 
 By default, the request output is prepared in the staging folder `Build.ArtifactStagingDirectory`. To download the translation output, see [Publish and download artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/pipeline-artifacts). If you wish to push the translation output back to your repository, see [Commit translation output to your repository](#commit-translation-output-to-your-repository).
 
