@@ -69,7 +69,6 @@ The translation task lets users submit new translation requests through DTS.
 | Path to translation memory files | No | The path of the translation memory (TM) files.<br><br>Wildcard characters are supported. |
 | Output Path | Yes |  The path (relative to your pipeline) to save the translation output.<br><br>See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts) for more information. |
 
-
 ### DTS alignment task
 
 If you have files that were previously translated, and you also have corresponding source files, you can use the Align tool to create a TM in XML Localization Interchange File Format (XLIFF).
@@ -101,7 +100,7 @@ The regeneration task lets users submit new regeneration requests through DTS.
 
 To install the extension to your DevOps organization, navigate to the Visual Studio Marketplace. Switch to the Azure DevOps tab and search for “Dynamics 365 Translation Service”. Find the **Dynamics Translation Tasks** extension and open it. From the extension page, select **Get it free**. 
 
-![Screenshot of Dynamics Translation Service extension from the Visual Studio marketplace](./media/dts-ado-task-marketplace.png)
+![Screenshot of Dynamics Translation Service extension from the Visual Studio marketplace](media/dts-ado-task-marketplace.PNG)
 
 The installation page will open. You can either choose a DevOps organization to install the extension to, or you can download the vsix package for server installation. Once the extension is installed, the DTS tasks will be visible in your DevOps organization's pipelines. 
 
@@ -132,7 +131,7 @@ In order to create an LCS service connection to authenticate with DTS, you must 
 9.  In the left navigation pane, under **Manage**, select **Authentication**.
 10. On the **Authentication** page, under **Advanced settings**, select **Yes** to enable the option to **Allow public client flows**. 
 
-    ![Screenshot of Authentication page in Azure Portal.](./media/dts-ado-authentication.png)
+    ![Screenshot of Authentication page in Azure Portal.](./media/dts-ado-authentication.PNG)
 
 11. In the left navigation pane, select **Overview**. The overview page for your app registration shows the client ID.
 12. On the overview page, you can select **Endpoints** to find the authentication endpoint. Use the OAuth 2.0 token endpoint. 
@@ -178,7 +177,7 @@ After translation, you may be interested in automatically pushing the localized 
     -	Create branch
     -	Read
 
-    ![Screenshot of Azure DevOps repository security permissions page](./media/dts-ado-repo-perms.png)
+    ![Screenshot of Azure DevOps repository security permissions page](./media/dts-ado-repo-perms.PNG)
 
 ### Add Git scripts to pipeline
 
