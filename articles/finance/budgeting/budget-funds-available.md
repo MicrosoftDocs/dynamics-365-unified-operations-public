@@ -44,5 +44,6 @@ Some budget control configuration settings that must be set to specific values f
 | Budget reservations for encumbrances | Actual expenditures |
 | Budget reservations for encumbrances with Purchase Requisition type documents | Budget reservations for pre-encumbrances |
 
-One recommended setting to keep unchecked is "Unposted actual expenditures". This will avoid an expesive budget control calcuation for unposted documents such as pending vendor invoices. 
+This feature will only affect new documents.  Existing documents will still have their amounts tracked and displayed accordingly in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated.  At that point documents that were removed from the budget funds available calcualtion will have their budget tracking data removed. 
 
+It is recommended setting to keep unchecked is "Unposted actual expenditures". This will avoid an expesive budget control calcuation for unposted documents such as pending vendor invoices. 
