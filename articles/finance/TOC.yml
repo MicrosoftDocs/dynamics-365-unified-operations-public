@@ -2961,7 +2961,19 @@
         - name: VAT statement
           href: localizations/emea-nor-sales-tax-payment-report.md
         - name: VAT return with direct submission to Altinn
-          href: localizations/emea-nor-vat-return.md
+          items: 
+          - name: Overview of VAT return with direct submission to Altinn
+            href: localizations/emea-nor-vat-return.md
+          - name: Register an integration point in ID-porten web portal 
+            href: localizations/emea-nor-vat-return-integration-point.md
+          - name: Prepare your environment to interoperate with ID-porten and Altinn web services 
+            href: localizations/emea-nor-vat-return-setup.md
+          - name: Checklist for Electronic messages setup for VAT return 
+            href: localizations/emea-nor-vat-return-checklist.md
+          - name: Authorize your Finance environment to interoperate with ID-Porten and Altinn web services 
+            href: localizations/emea-nor-vat-return-authorization.md
+          - name: Submit a VAT return to Altinn web service
+            href: localizations/emea-nor-vat-return-submission.md
         - name: Standard Audit File for Tax (SAF-T) for Norway
           href: localizations/emea-nor-satndard-audit-file-for-tax.md
         - name: Customer electronic invoices in Norway
