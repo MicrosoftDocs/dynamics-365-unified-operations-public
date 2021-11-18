@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade the SQL Server instance that your environment is using
+title: Upgrade the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 description: This topic explains how to upgrade the SQL Server instance that your environment is using.
 author: faix
 ms.date: 10/05/2021
@@ -25,23 +25,25 @@ ms.dyn365.ops.version: Platform update 45
 
 ---
 
-# Upgrade the SQL Server instance that your environment is using
+# Upgrade the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 
-This topic covers how you can upgrade the SQL Server instance or cluster that your environment is using. You'll need to go through this process if you want to upgrade from one major version of SQL to another and don't want to do an in-place upgrade. 
+This topic covers how you can upgrade the SQL Server instance or cluster that your environment is using. You'll need to go through this process if you want to upgrade from one major version of SQL to another and don't want to do an [in-place upgrade](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method.md)
 
 ## Prerequisites for upgrading the version of Microsoft SQL Server
 
 ### Upgrade from Microsoft SQL Server 2016 to Microsoft SQL Server 2019
 
-Your environment must be on application version 10.0.21 or above. Additionally, the LocalAgent present in your environment also has to be on version 2.7.0 or higher.
+- The environment must be on application version 10.0.21 or above.
+
+- The LocalAgent must be on version 2.7.0 or higher.
 
 ## Preparation
 
 1. Deploy your new SQL Server instance into a VM, or create a new SQL cluster.
 
-1. Ensure you configure the new instance or cluster according to our documentation: [Set up SQL Server](./setup-deploy-on-premises-pu41.md#setupsql).
+1. Ensure you configure the new instance or cluster according to [Set up SQL Server](./setup-deploy-on-premises-pu41.md#setupsql).
 
-1. If you are using self-signed certificates, ensure they have been imported into the nodes within the Service Fabric Cluster.
+1. If you are using self-signed certificates, ensure that they have been imported to the AOS,MR and Orchestrator nodes in your Service Fabric cluster.
 
 ## Database operations
 
@@ -55,7 +57,7 @@ Your environment must be on application version 10.0.21 or above. Additionally, 
 
 ## Upgrade other SQL Server components
 
-All of your SQL Server components across an environment must be on the same version.
+All of your SQL Server components across an environment must be on the same version. For instance, if upgrading to SQL Server 2019, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS) and the database engines must all be on the same version.
 
 1. On your AOS nodes, upgrade the SSIS component.
 
@@ -80,7 +82,6 @@ All of your SQL Server components across an environment must be on the same vers
     ```json
     "deploymentOptions": {
         ...
-        },
         "sqlServerVersion" : {
             "value": "2019"
         },
