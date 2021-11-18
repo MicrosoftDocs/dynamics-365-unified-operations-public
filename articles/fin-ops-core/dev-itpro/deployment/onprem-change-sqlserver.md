@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade the SQL Server instance that your environment is using
-description: This topic explains how to change or upgrade the SQL Server instance that your environment is using.
+description: This topic explains how to upgrade the SQL Server instance that your environment is using.
 author: faix
 ms.date: 10/05/2021
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Platform update 45
 
 # Upgrade the SQL Server instance that your environment is using
 
-This topic covers how you can upgrade the SQL Server that your environment is using. You will need to do this if you want to upgrade from one major version of SQL to another and don't want to do an in-place upgrade. Additionally, you may need to do this if you want to change the SQL instance or server for your environment.
+This topic covers how you can upgrade the SQL Server instance or cluster that your environment is using. You'll need to go through this process if you want to upgrade from one major version of SQL to another and don't want to do an in-place upgrade. 
 
 ## Prerequisites for upgrading the version of Microsoft SQL Server
 
@@ -41,29 +41,29 @@ Your environment must be on application version 10.0.21 or above. Additionally, 
 
 1. Ensure you configure the new instance or cluster according to our documentation [Set up SQL Server](./setup-deploy-on-premises-pu41.md#setupsql)
 
-1. If you are using self-signed certificates ensure they have been imported into the nodes within the Service Fabric Cluster.
+1. If you are using self-signed certificates, ensure they have been imported into the nodes within the Service Fabric Cluster.
 
 ## Database operations
 
-1. At this point ensure that users are not connected as your downtime will start.
+1. At this point, ensure that users aren't connected as your downtime will start.
 
-1. Backup all of your databases from your current SQL Server instance or cluster.
+1. Back up all of your databases from your current SQL Server instance or cluster.
 
 1. Restore the database backups into the new SQL Server instance or cluster.
 
-1. After restoring your databases run the scripts in [Configure the databases](./setup-deploy-on-premises-pu41.md#configuredb).
+1. After restoring your databases, run the scripts in [Configure the databases](./setup-deploy-on-premises-pu41.md#configuredb).
 
-## Upgrade additional components
+## Upgrade other SQL Server components
 
 All of your SQL Server components across an environment must be on the same version.
 
-1. On your AOS nodes upgrade the SSIS component.
+1. On your AOS nodes, upgrade the SSIS component.
 
-1. On your BI nodes upgrade the SSRS and database engine.
+1. On your BI nodes, upgrade the SSRS and database engine.
 
 ## Update the Local Agent
 
-1. Cleanup the Local Agent by running the following command from an orchestrator node:
+1. Clean up the Local Agent by running the following command from an orchestrator node:
 
     ```powershell
     LocalAgentCLI.exe Cleanup <path of localagent-config.json>
@@ -75,7 +75,7 @@ All of your SQL Server components across an environment must be on the same vers
 
 1. Download the new configuration file.
 
-1. In the configuration file that was just download you have to update the SQL Server version that you are going to be deploying as detailed in [Deployment configurations for the local agent](./onprem-localagent-options.md)
+1. In the configuration file that was just download you have to update the SQL Server version. The version you specify must match the version of SQL Server present in the environment. For more information, see [Deployment configurations for the local agent](./onprem-localagent-options.md).
 
     ```json
     "deploymentOptions": {
