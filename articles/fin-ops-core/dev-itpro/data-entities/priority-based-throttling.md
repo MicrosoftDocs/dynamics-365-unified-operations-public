@@ -4,7 +4,7 @@
 title: Priority-based throttling
 description: This topic provides information about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
-ms.date: 05/14/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -118,6 +118,6 @@ You can use a set of predefined queries to get raw logs for an issue. You can th
 5. Select the **Query name**, and then select **Requests throttled** for all OData and custom services requests that have been throttled.
 
 > [!NOTE]
-> In LCS, the All throttling events report has been removed. It was introduced prior to priority-based throttling going GA as a means to highlight sample requests that would be subjected to throttling. **Requests throttled** report offers a more consistent view of requests subjected to throttling and should be used to gain insights into your environment.
+> In LCS, the **All throttling events** report has been removed. The report was introduced prior to priority-based throttling becoming generally available as a way to highlight sample requests that would be subjected to throttling. The **Requests throttled** report offers a more consistent view of requests subjected to throttling and should be used to gain insights into your environment.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
