@@ -4,7 +4,7 @@
 title: Set up Electronic messages
 description: This topic provides information about how to set up Electronic messages (EM) functionality.
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -149,32 +149,32 @@ On the **Datasources setup** FastTab, add a line for every data source that is u
 
 ## <a id="multiple-companies-populate"></a> Populate records from multiple companies
 
-If your company must report from multiple companies in the same Finance data base, set up [Populate records actions](#populate) for all the legal entities data from which must be included in reporting.
+If your company must report from multiple legal entities in the same Finance database, set up the [Populate records actions](#populate) for all of the legal entities whose data must be included in reporting.
 
-To enable this capability in your Fianace, complete the following steps. 
+To enable this capability in your Finance environment, complete the following steps. 
 
-  1. Go to **Workspaces** > **Feature management**.
-  2. Find **Cross-company queries for the populate records actions** in the list.
-  3. Select **Enable now**. 
+1. Go to **Workspaces** > **Feature management**.
+2. Find **Cross-company queries for the populate records actions** in the list.
+3. Select **Enable now**. 
 
 To set up [Populate records actions](#populate) for multiple companies data from which must be included in reporting, complete the following steps.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**. On the **Populate records action** page, the **Datasources setup** grid includes a **Company** field when **Cross-company queries for the populate records actions** feature is enabled. For existing records that were created during the general setup of the [Populate records actions](#populate), this field shows the identifier of the current legal entity.
-2. In the **Datasources setup** grid, add a line for each subsidiary legal entity that must be included in reporting. Set the following fields.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**. On the **Populate records action** page, the **Datasources setup** grid includes a **Company** field when **Cross-company queries for the populate records actions** feature is enabled. For existing records that were created during the general setup of the [Populate records actions](#populate), this field shows the identifier of the current legal entity.
+2. In the **Datasources setup** grid, add a line for each subsidiary legal entity that must be included in reporting and set the following fields.
 
     | Field name             | Value |
     |------------------------|-------|
     | Name                   | Enter a text value that will help you understand where this record comes from. For example, enter **Data source name - Subsidiary 1**. |
-    | Message item type      | Select **Message item type** necessary  for your EM processing. |
-    | Account type           | Specify **Account type** necessary  for your EM processing **All** in case your EM processing has no specific account types. |
-    | Master table name      | Specify the name of the master table necessary  for your EM processing. |
-    | Document number field  | Specify the field that contians the document number in records of your EM processing. |
-    | Document date field    | Specify the field that contians the document date in records of your EM processing. |
-    | Document account field | Specify the field that contians the document account in records of your EM processing. |
+    | Message item type      | Select **Message item type** necessary for your EM processing. |
+    | Account type           | Specify the **Account type** necessary for your EM processing. If your EM processing has no specific account types. select **All**. |
+    | Master table name      | Specify the name of the master table necessary for your EM processing. |
+    | Document number field  | Specify the field that contains the document number in records of your EM processing. |
+    | Document date field    | Specify the field that contains the document date in records of your EM processing. |
+    | Document account field | Specify the field that contains the document account in records of your EM processing. |
     | Company                | Select the ID of the subsidiary legal entity. |
     | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**. |
 
-3. For each new line, select **Edit query**, and specify a related critecia for the legal entity that is specified in the **Company** field on the line.
+3. For each new line, select **Edit query**, and specify a related criteria for the legal entity that is specified in the **Company** field on the line.
 
 ## <a id="applications"></a>Web applications
 
@@ -251,7 +251,7 @@ The following tables describe the fields on the **Message processing actions** p
 | Executable class                          | Select an existing executable class setting. This field is available only for actions of the **Message item execution level** and **Message item execution level** types. |
 | Populate records action                   | Select an existing populate records action. This field is available only for actions of the **Populate records** type. |
 | Web service                               | Select an existing web service. This field is available only for actions of the **Web service** type. |
-| File name to send                         | Enter the name of the attachment to an electronic message which must be sent by this action. In case there are several attachments with the same original file name, the newest one will be sent. In case attachment with the specified original file name is not found, request will be sent without content. This field is available only for actions of the **Web service** type. |
+| File name to send                         | Enter the name of the attachment to an electronic message which must be sent by this action. If there are several attachments with the same original file name, the newest one will be sent. If an attachment with the specified original file name isn't found, the request will be sent without content. This field is available only for actions of the type, **Web service**. |
 | File name                                 | Specify the name of the file that will be the result of the action. This file can be the response from the web server or the report that is generated. This field is available only for actions of the **Web service** and **Electronic reporting export message** types. |
 | Attach files to source documents          | Select this checkbox to attach generated files to records in a referenced master table for EM items. This field is available only for actions of the **Electronic reporting export** and **Web service** types. |
 | Attach files from output archive to items | Select this checkbox to extract separate XML files from the output archive file and attach them to the corresponding electronic message items. This field is available only for actions of the **Electronic reporting export** type. |
