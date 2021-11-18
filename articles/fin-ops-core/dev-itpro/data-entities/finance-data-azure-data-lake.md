@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform Update 34
 
 The **Export to Data Lake** feature lets you copy data from your Finance and Operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your Finance and Operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
-## Turn on the Export to Data Lake feature
+## Enable the Export to Data Lake feature
 Before you can use this feature, see [Install the Export to Azure Data Lake Add-in](configure-export-data-lake.md).
 
 ## Select data
@@ -74,7 +74,15 @@ You can select the tables and entities that should be staged in Data Lake.
 
 ## Monitor the tables in Data Lake
 
-You don't have to monitor or schedule data exports, because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports in the **Status** column on the **Export to Data Lake** page.
+You don't have to monitor or schedule data exports, because the system keeps the data updated in Data Lake. However, you can view the status of ongoing data exports in the **Status** column on the **Export to Data Lake** page. 
+
+When you select data, the Export to Azure Data Lake service makes an initial copy of the data in the data lake. If you select multiple tables, the system makes the initial copy by taking 10 tables at a time. Depending on the size of the data and the number of records in the table, this process might take a few minutes or even a few hours. The export progress is shown on-screen.
+
+After the initial copy is made, the system continuously updates the data as changes occur in Finance and Operations apps. When records are inserted, updated, or deleted, data records in the data lake are inserted, updated, or deleted accordingly.
+
+If you use the optional near-real-time change feature (currently in preview), data in the data lake is updated within minutes of a change in the Finance and Operations environment. Otherwise, data in the data lake is updated within a few hours of a change in the Finance and Operations environment.
+
+The Export to Data Lake page in a Finance and Operations environment shows the time stamp of the last update of the data in the data lake. The system also adds data fields that help you identify the time when the data in the data lake was updated. Your downstream processes can use the time stamps to detect and process data as it changes in the data lake.
 
 ## Troubleshooting common issues and errors
 
