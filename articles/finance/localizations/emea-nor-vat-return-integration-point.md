@@ -28,7 +28,7 @@ ms.search.validFrom: 2022-11-15
 
 [!include [banner](../includes/banner.md)]
 
-Companies registered for VAT in the territory of Norway has their accounts in [ID-porten](https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94) portal. You must create an [integration point](https://docs.digdir.no/oidc_index.html) in the company’s account in ID-porten to enable direct submission of VAT return to Altinn. For more information, see [ID-Porten & Authentication](https://skatteetaten.github.io/mva-meldingen/english/idportenauthentication/).
+Companies registered for VAT in the territory of Norway have their accounts in [ID-porten](https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94) portal. You must create an [integration point](https://docs.digdir.no/oidc_index.html) in the company’s account in ID-porten to enable direct submission of VAT return to Altinn. For more information, see [ID-Porten & Authentication](https://skatteetaten.github.io/mva-meldingen/english/idportenauthentication/).
 
 We recommend setting the following parameters for your integration point for direct submission of VAT return to Altinn from Finance:
 
@@ -55,3 +55,5 @@ We recommend setting the following parameters for your integration point for dir
 
 ![Register an integration point in ID-porten web portal.](media/emea-nor-vat-return-integration-point.png)
 
+    > [!IMPORTANT]
+    > Store safely client ID and client secret of the integration point that you create for interoperation with ID-porten. You will need these credentials further on the [Set up client ID and client secret of your ID-porten integration point in Finance](emea-nor-vat-return-setup.md#client-credentials) step of your preparation for VAT return direct submission to Altinn in Finance.
