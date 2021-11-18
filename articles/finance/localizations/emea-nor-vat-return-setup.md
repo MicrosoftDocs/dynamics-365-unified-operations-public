@@ -296,7 +296,7 @@ You can generate the VAT return in Excel format to preview amounts of VAT during
   
 To generate the VAT declaration in Excel format, go to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**. Alternatively, you can generate the VAT return for preview for a selected sales tax payment transaction by going to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments** and using **Print report** on the Action pane.
 
-## <a id=”vat-group”></a>Enable VAT return reporting for companies that report as a VAT group in the same system database
+## <a id="vat-group"></a>Enable VAT return reporting for companies that report as a VAT group in the same system database
   
 This part of the setup for the **NO VAT return with direct submission to Altinn** feature is mandatory only for companies that report as a VAT group in the same system database.
 
@@ -404,7 +404,7 @@ Follow these steps to set up security groups that must have access to ID-porten 
 
 If security roles aren't defined for a web application, only a system admin can use the selected web application for interoperation.
 
-## <a id=”client-credentials”></a>Set up client ID and client secret of your ID-porten integration point in Finance
+## <a id="client-credentials"></a>Set up client ID and client secret of your ID-porten integration point in Finance
   
 When you [Register an integration point in ID-porten web portal](emea-nor-vat-return-integration-point.md) you should store safely client ID and client secret of your integration point in ID-porten that will be used for direct submission to Altinn from Finance. On the current step of your setup, paste client ID and client secret of your integration point in ID-porten in Finance.
   
@@ -414,7 +414,7 @@ When you [Register an integration point in ID-porten web portal](emea-nor-vat-re
 4.	Paste value of the client secret of your integration point in ID-porten to the **Client secret** field.
 5. Save your changes.
 
-## <a id=” internet-address”></a>Set up the internet address of ID-porten and Altinn web services
+## <a id="internet-address"></a>Set up the internet address of ID-porten and Altinn web services
   
 Internet addresses are subject to change by the Tax Administration. Therefore, we recommend that you check for actual internet addresses on the official web site of the Altinn and ID-porten. 
   
