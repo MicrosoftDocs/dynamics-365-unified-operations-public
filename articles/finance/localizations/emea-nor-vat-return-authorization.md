@@ -26,7 +26,7 @@ ms.search.validFrom: 2022-11-18
 
 # Authorize your Finance environment to interoperate with ID-Porten and Altinn web services
 
-Before you start authorizing your Finance environment to interoperate with ID-Porten and Altinn web services, make sure that you completed [registering an integration point in ID-porten](/emea-nor-vat-return-integration-point.md) and specified internet address of the **Tax** > **Setup** > **Electronic messages** > **Web applications** page from the legal entity you are going to interoperate with ID-porten and Altinn in **Gyldig(e) redirect uri-er** field of your integration point.
+Before you start authorizing your Finance environment to interoperate with ID-Porten and Altinn web services, make sure that you completed [registering an integration point in ID-porten](emea-nor-vat-return-integration-point.md) and specified internet address of the **Tax** > **Setup** > **Electronic messages** > **Web applications** page from the legal entity you are going to interoperate with ID-porten and Altinn in **Gyldig(e) redirect uri-er** field of your integration point.
 
 To get your Finance authorized in ID-Porten and Altinn web services and ready to interoperate with these web services, you must complete the following steps.
 
