@@ -213,18 +213,16 @@ VAT declaration.
 
 ![](media/69ecb881f12819259ca166b9b98b8303.jpg)
 
->   Graphical user interface, table Description automatically generated
+5.  In the **State** field, change the value to **Completed**.
 
-1.  In the **State** field, change the value to **Completed**.
-
-2.  On the Action Pane, select **Export** to export the settings of the
+6.  On the Action Pane, select **Export** to export the settings of the
     application-specific parameters.
 
-3.  Select the **VAT declaration Excel (DE)** configuration, and then, on the
+7.  Select the **VAT declaration Excel (DE)** configuration, and then, on the
     Action Pane, select **Import** to import the parameters that you configured
     for **VAT declaration XML (DE)**.
 
-4.  In the **State** field, select **Completed**.
+8.  In the **State** field, select **Completed**.
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
@@ -240,10 +238,10 @@ VAT declaration.
 >   period** report. It's also printed when you select **Print** on the **Sales
 >   tax payments** page.
 
-1.  On the **Tax authorities** page, select the tax authority, and then, in the
+4.  On the **Tax authorities** page, select the tax authority, and then, in the
     **Report layout** field, select **Default**.
 
-2.  If you're configuring the VAT declaration in a legal entity that has
+If you're configuring the VAT declaration in a legal entity that has
     [multiple VAT
     registrations](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reporting-for-multiple-vat-registrations),
     follow these steps:
