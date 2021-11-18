@@ -246,9 +246,9 @@ If you're configuring the VAT declaration in a legal entity that has
     registrations](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reporting-for-multiple-vat-registrations),
     follow these steps:
 
-    1.  Go to **General ledger \> Setup \> General ledger parameters**.
+1.  Go to **General ledger \> Setup \> General ledger parameters**.
 
-    2.  On the **Sales tax** tab, on the **Electronic reporting for
+2.  On the **Sales tax** tab, on the **Electronic reporting for
         countries/regions** FastTab, on the line for **DEU**, select the **VAT
         Declaration Excel (DE)** ER format.
 
