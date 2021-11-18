@@ -20,7 +20,6 @@ ms.search.validFrom: 2021-11-15
 
 The Dynamics 365 Translation Service (DTS) extension for Microsoft Azure DevOps has several pipeline tasks that let you perform actions in Microsoft Dynamics 365 Translation Service. For example, you can translate user interface files, regenerate translation requests, and create translation memory files. 
 
-
 To start using the DTS pipeline tasks, you must install the extension to your organization and then connect to the translation service. See [Setting up the extension](#setting-up-the-extension) for more information.
 
 This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/create-first-pipeline).
@@ -46,7 +45,7 @@ For example, here's what the definition for a new translation task might look li
     translationOutputPath: '$(Build.ArtifactStagingDirectory)'
 ```
 
-![Pipeline User Interface](./media/dts-ado-pipeline-sample.png)
+![Pipeline user interface](media/dts-ado-pipeline-sample.png)
 
 By default, the request output is prepared in the staging folder `Build.ArtifactStagingDirectory`. To download the translation output, see [Publish and download artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/pipeline-artifacts). If you wish to push the translation output back to your repository, see [Commit translation output to your repository](#commit-translation-output-to-your-repository).
 
