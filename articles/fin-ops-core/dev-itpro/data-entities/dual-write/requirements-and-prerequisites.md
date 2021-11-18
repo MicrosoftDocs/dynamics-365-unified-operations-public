@@ -33,6 +33,9 @@ Currently, we support dual-write in the following regions:
 + United Kingdom
 + United States
 
+> [!NOTE]
+> At this time there are no plans to support any additional regions.
+
 ## Verify requirements and grant access
 
 Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Dataverse environment.
