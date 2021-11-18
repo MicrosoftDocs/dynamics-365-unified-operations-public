@@ -37,8 +37,11 @@ The **VAT return with direct submission to Altinn** feature in Finance supports 
 
 For more information about how to prepare to VAT return with direct submission to Altinn, see the following topics:
 
--	…
-
+-	[Register an integration point in ID-porten web portal](emea-nor-vat-return-integration-point.md)
+-	[Prepare your environment to interoperate with ID-porten and Altinn web services](emea-nor-vat-return-setup.md)
+-	[Checklist for Electronic messages setup for VAT return](emea-nor-vat-return-checklist.md)
+-	[Authorize your Finance environment to interoperate with ID-Porten and Altinn web services](emea-nor-vat-return-authorization.md)
+-	[Submit a VAT return to Altinn web service](emea-nor-vat-return-submission.md)
 
 ## Privacy notice
 
