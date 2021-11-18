@@ -824,6 +824,10 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     | Release | Database |
     |---------|----------|
+    | On-premises Platform update 45 | Dynamics 365 for Operations on-premises, Version 10.0.21 Demo Data |
+    | On-premises Platform update 45 | Dynamics 365 for Operations on-premises, Version 10.0.21 Empty Data |
+    | On-premises Platform update 44 | Dynamics 365 for Operations on-premises, Version 10.0.20 Demo Data |
+    | On-premises Platform update 44 | Dynamics 365 for Operations on-premises, Version 10.0.20 Empty Data |
     | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Demo Data |
     | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Empty Data |
 
