@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Platform update 45
 
 ---
 
-# Change the SQL Server that your environment is using
+# Upgrade the SQL Server instance that your environment is using
 
 This topic covers how you can upgrade the SQL Server that your environment is using. You will need to do this if you want to upgrade from one major version of SQL to another and don't want to do an in-place upgrade. Additionally, you may need to do this if you want to change the SQL instance or server for your environment.
 
@@ -37,7 +37,7 @@ Your environment must be on application version 10.0.21 or above. Additionally, 
 
 ## Preparation
 
-1. Deploy your new SQL Server instance into a VM, or create a new cluster.
+1. Deploy your new SQL Server instance into a VM, or create a new SQL cluster.
 
 1. Ensure you configure the new instance or cluster according to our documentation [Set up SQL Server](./setup-deploy-on-premises-pu41.md#setupsql)
 
@@ -53,9 +53,13 @@ Your environment must be on application version 10.0.21 or above. Additionally, 
 
 1. After restoring your databases run the scripts in [Configure the databases](./setup-deploy-on-premises-pu41.md#configuredb).
 
-## 
+## Upgrade additional components
 
-1. All of your SQL Server components across an environment must be on the same version. As such, you should proceed to upgrade your SSIS and SSRS components.
+All of your SQL Server components across an environment must be on the same version.
+
+1. On your AOS nodes upgrade the SSIS component.
+
+1. On your BI nodes upgrade the SSRS and database engine.
 
 ## Update the Local Agent
 
@@ -66,6 +70,8 @@ Your environment must be on application version 10.0.21 or above. Additionally, 
     ```
 
 1. In [LCS](https://lcs.dynamics.com) update your connector configuration with the new FQDN of the SQL Server instance or cluster.
+
+    ![Connector database settings](media/ConnectorSettingsDB.png)
 
 1. Download the new configuration file.
 
@@ -96,6 +102,8 @@ Your environment must be on application version 10.0.21 or above. Additionally, 
 
 1. When updating the settings, update the FQDN of the new SQL Server instance or cluster.
 
+    ![Environment database settings](media/EnvironmentSettingsDB.png)
+
 1. Select **Prepare**.
 
 1. After downloading and preparation is complete, the **Update environment** button will display.
@@ -104,6 +112,4 @@ Your environment must be on application version 10.0.21 or above. Additionally, 
 
 1. Select **Update environment** to start updating your environment.
      
-    ![Untitled picture.png](/.attachments/Untitled%20picture-5afea0a4-0868-4a4c-956a-85070f853c8e.png)
-
-1. The environment will now be redeployed and configured to interact with the new version of SQL Server. 
+1. The environment will now be redeployed and configured to interact with the new version of SQL Server.
