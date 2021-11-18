@@ -4,7 +4,7 @@
 title: Set up a B2B e-commerce site
 description: This topic describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -310,25 +310,26 @@ To add a quick add module to a cart page in Commerce site builder, follow these 
 > [!NOTE] 
 > The quick add module is available as of the Commerce version 10.0.17 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-## Add bulk purchase module to the PDP page
+## Add a bulk purchase module to the PDP page
 
-The bulk purchase module on the PDP page allows a buyer to add multiple variants of a product in to cart in a quick & productive way through a matrix-based experience. For ordering multiple variants of the same product, this experience eliminates the need for a buyer to select the combination of product dimensions, define the qty, add the variant to the cart and then repeat the process over & over again with other required combinations of the product dimensions. The bulk purchase module is added to a site's PDP page.
+The bulk purchase module on the PDP page allows a buyer to add multiple variants of a product to the cart quickly via a matrix-based experience. For ordering multiple variants of the same product, this experience eliminates the need for a site user to select the combination of product dimensions, define the quantity, add the variant to the cart, and then repeat the process over again with other combinations of product dimensions.
+
 To add the bulk purchase module to a PDP page in Commerce site builder, follow these steps.
 
-1. Go to Templates and select your site's PDP page template.
-2. Select Edit.
-3. In the Main slot of the Default Page module, select the ellipsis (...), and then select Add Module.
-4. In the Add Module dialog box, select the Container module, and then select OK.
-5. In the Container slot, select the ellipsis (...), and then select Add Module.
-6. In the Add Module dialog box, select the Bulk purchase module, and then select OK.
-7. Select Save, select Finish editing to check in the template, and then select Publish to publish it.
-8. Go to Pages and select your site's PDP page.
-9. In the Main slot of the Default Page module, select the ellipsis (...), and then select Add Module.
-10. In the Add Module dialog box, select the Container module, and then select OK.
-11. In the properties pane for the Container module, under Width, select Fill Container.
-12. In the Container slot, select the ellipsis (...), and then select Add Module.
-13. In the Add Module dialog box, select the Bulk purchase module, and then select OK.
-14. Select Save, select Finish editing to check in the page, and then select Publish to publish it.
+1. Go to **Templates** and select your site's PDP page template.
+2. Select **Edit**.
+3. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add Module**.
+4. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+5. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+6. In the **Add Module** dialog box, select the **Bulk purchase** module, and then select **OK**.
+7. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+8. Go to **Pages** and select your site's PDP page.
+9. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+10. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+11. In the properties pane for the **Container** module, under **Width**, select **Fill Container**.
+12. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+13. In the **Add Module** dialog box, select the **Bulk purchase** module, and then select **OK**.
+14. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE] 
 > The bulk purchase module is available as of the Commerce version 10.0.24 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
