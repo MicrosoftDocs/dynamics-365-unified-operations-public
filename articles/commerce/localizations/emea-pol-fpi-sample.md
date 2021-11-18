@@ -207,7 +207,7 @@ Follow these steps to set up a development environment so that you can test and 
     - In the **Posnet\\HardwareStation\\HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.PosnetThermalFVFiscalPrinter.Installer** installer.
     - Start the extension installer from command line as follows:
     ```Console
-    HardwareStation.EFR.Installer.exe install --verbosity 0
+    HardwareStation.PosnetThermalFVFiscalPrinter.Installer.exe install --verbosity 0
     ```
 
 #### Production environment
@@ -216,13 +216,16 @@ Follow the steps described in [Set up a build pipeline for a fiscal integration 
 
 ## Design of extensions
 
+The fiscal printer integration sample for Poland is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\Posnet** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal printer integration sample for Poland (legacy)](emea-pol-fpi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+
 ### Commerce runtime extension design
 
-The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer.
-
-The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.PosnetSample**. This extension generates a set of printer-specific commands in JavaScript Object Notation (JSON) format that are defined by POSNET specification 19-3678.
-
-For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer. This extension generates a set of printer-specific commands in JavaScript Object Notation (JSON) format that are defined by POSNET specification 19-3678.
 
 #### Request handler
 
@@ -237,11 +240,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is found in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the document provider to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
-
-- VAT rates mapping
-- Tender type mapping
-- Deposit payment type
+The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\Posnet\\CommerceRuntime\\DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from Headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
 
 ### Hardware station extension design
 
@@ -263,11 +262,6 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
-
-- **Connection string** – This string describes the details of the connection to the device in a format that is supported by the driver. For details, see the POSNET driver documentation.
-- **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
-- **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
-
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Posnet\\HardwareStation\\ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
