@@ -73,7 +73,7 @@ The translation task lets users submit new translation requests through DTS.
 
 | Input | Required | Description | Notes |
 |-------|----------|-------------|-------|
-| Dynamics Lifecycle Services service connection | Yes | The Microsoft Dynamics Lifecycle Services (LCS) service connection that is used for authentication with LCS. | See [Set up a service connection](#set-up-a-service-connection) for more information. |
+| Dynamics Lifecycle Services service connection | Yes | The Microsoft Dynamics Lifecycle Services (LCS) service connection that is used for authentication with LCS. | See [Create a service connection](#create-a-service-connection) for more information. |
 | Request Name | Yes | Enter a name for the request. | |
 | Product Name | Yes | Select a product name. | |
 | Product Version | Yes | Select a product version. | |
@@ -92,7 +92,7 @@ If you have files that were previously translated, and you also have correspondi
 
 | Input | Required | Description | Notes |
 |-------|----------|-------------|-------|
-| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. | See [Set up a service connection](#set-up-a-service-connection) for more information. |
+| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. | See [Create a service connection](#create-a-service-connection) for more information. |
 | Product Name | Yes | The product to translate resource files for. | |
 | Product Version | Yes | Select a product version. | |
 | Source Language | Yes | The language that is being translated from. | |
@@ -107,7 +107,7 @@ The regeneration task lets users submit new regeneration requests through DTS.
 
 | Input | Required | Description | Notes |
 |-------|----------|-------------|-------|
-| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. | See [Set up a service connection](#set-up-a-service-connection) for more information. |
+| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. | See [Create a service connection](#create-a-service-connection) for more information. |
 | Regenerate File | Yes | The path of the edited TM files. | |
 | DTS Translation ID | Yes | The ID of the original translation. | If you're regenerating from the [translation task](#dts-translation-task), the translation ID is in the task output. |
 | Output Path | Yes |  The path (relative to your pipeline) to save the translation output. | See [Artifacts in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/build-artifacts?view=azure-devops&tabs=yaml). |
@@ -162,7 +162,7 @@ In order to create an LCS service connection to authenticate with DTS, you must 
 
     ![Screenshot of Endpoints blade in Azure Portal.](./media/dts-ado-endpoint-list-app-registration.png)
 
-### Set up a service connection
+### Create a service connection
 
 Now that you have an app that is registered with Dynamics Lifecycle Services API connections, you must create a service connection to authenticate with LCS.
 
@@ -185,7 +185,7 @@ The service connection takes the following inputs.
     ![New Dynamics Lifecycle Services service connection dialog box](./media/dts-ado-service-connection-populate.png)
 
 
-## Committing translation output to your repository
+## Commit translation output to your repository
 
 After translation, you may be interested in automatically pushing the localized files to your project’s repository. Before running any Git commands, version control permissions must be granted to the Pipeline agent.
 
