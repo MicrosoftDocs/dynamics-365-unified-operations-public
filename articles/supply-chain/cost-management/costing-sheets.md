@@ -33,12 +33,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Setting up the costing sheet involves two objectives. As the first objective, you define the format for displaying cost of goods sold information about a manufactured item or production order. The formatted display is termed a costing sheet. As the second objective, you define the basis for calculating indirect costs. The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas. The two objectives of costing sheet setup are described in this article. 
 
-**Role Control**
-| Activity      | Role        |
+The following table lists the out-of-box security roles that can access costing sheets, including the level of access granted to each role by the default settings.
+| Access      | Role        |
 |--------------------|-----------------|
 | Edit     | Accounting manager |
-| View     | Inventory accountant clerk         |
-|         | Inventory accountant    |
+| View     | Inventory accountant clerk; Inventory accountant |
+
 
 A costing sheet is the formatted display of information about the cost of goods that are sold for a manufactured item or a production order. When you set up a costing sheet, you define the format for the information and also define the basis for calculating indirect costs. The costing sheet setup builds on the cost group features for displaying information and for the formulas that are used to calculated indirect cost. Here is more information about the two objectives of costing sheet setup:
 -   **Define the format for the costing sheet.** The user-defined format for a costing sheet identifies the segmentation of costs that contain a manufactured item’s cost of goods sold. For example, the information about an item’s cost of goods sold can be segmented into material, labor, and overhead, based on cost groups. These cost groups are assigned to items, cost categories for routing operations, and indirect cost calculation formulas. The format for the costing sheet typically requires intermediate totals when multiple cost groups have been defined. For example, multiple cost groups that are related to material can be aggregated. The definition of a costing sheet format is optional, but a costing sheet format must be defined if indirect costs will be calculated.
