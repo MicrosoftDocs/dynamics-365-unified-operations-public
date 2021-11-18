@@ -107,7 +107,7 @@ The advance VAT declaration in Germany contains the following information.
 | Row | Box – tax base | Box – tax amount | Description                                                            | Lookup result                                                                                                                                                                                                    |
 |-----|----------------|------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 73  | 50             | \-               | Reduction of the tax base on lines 20 through 24.                      | 73-BadDebtsWriteOffStandard (81/50)</br>73-BadDebtsWriteOffReduced (86/50)</br>73-BadDebtsWriteOffOtherRates (35/36/50)</br>73-BadDebtsWriteOffEUSalesAverageRate24 (77/50)</br>73-BadDebtsWriteOffSalesAverageRate24 (76/80/50) |
-| 74  | \-             | 37               | Reduction of the deductible input tax amounts on lines 55, 59, and 60. | 74-BadDebtsWriteOffInputTax (66/37)</br>74-BadDebtsWriteOffInputTaxAverageRates (63/37) 74-BadDebtsWriteOffInputTaxEUPurchaseNewVehicles (59/37)                                                                     |
+| 74  | \-             | 37               | Reduction of the deductible input tax amounts on lines 55, 59, and 60. | 74-BadDebtsWriteOffInputTax (66/37)</br>74-BadDebtsWriteOffInputTaxAverageRates (63/37)</br>74-BadDebtsWriteOffInputTaxEUPurchaseNewVehicles (59/37)                                                                     |
 
 #### Purchase reverse charge VAT
 
@@ -322,9 +322,9 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 -   **Total list** – Generate a report for all the sales tax transactions for
     the period, including the original and all corrections.
 
-1.  In the **From date** field, select the start date of the reporting period.
+4.  In the **From date** field, select the start date of the reporting period.
 
-2.  Select **OK**, and review the Excel report.
+5.  Select **OK**, and review the Excel report.
 
 ### Settle and post sales tax
 
@@ -342,9 +342,9 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 -   **Latest corrections** – Generate a correction sales tax payment after the
     original sales tax payment for the settlement period was created.
 
-1.  In the **From date** field, select the start date of the reporting period.
+4.  In the **From date** field, select the start date of the reporting period.
 
-2.  Select **OK**.
+5.  Select **OK**.
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
@@ -386,66 +386,57 @@ that you imported from the LCS Shared asset library.
 
 >   **Note:** Steps 5 through 7 are optional.
 
-1.  Optional: On the **Messages** FastTab, select **Collect data**, and then
+5.  Optional: On the **Messages** FastTab, select **Collect data**, and then
     select **OK**. The sales tax payments that were generated earlier are added
     to the message. For more information, see the [Settle and post sales
     tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-2.  Optional: On the **Message items** FastTab, review the sales tax payments
+6.  Optional: On the **Message items** FastTab, review the sales tax payments
     that are transferred for processing. By default, all sales tax payments of
     the selected period that weren't included in any other message of the same
     processing are included.
 
-3.  Optional: Select **Original document** to review the sales tax payments, or
+7.  Optional: Select **Original document** to review the sales tax payments, or
     select **Delete** to exclude sales tax payments from processing. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-4.  On the **Messages** FastTab, select **Update status**. In the **Update
+8.  On the **Messages** FastTab, select **Update status**. In the **Update
     status** dialog box, select **Ready to generate**, and then select **OK**.
     Verify that the message status is changed to **Ready to generate**.
 
-5.  Select **Generate report**. To preview the VAT declaration amounts, in the
+9.  Select **Generate report**. To preview the VAT declaration amounts, in the
     **Run processing** dialog box, select **Preview report**, and then select
     **OK**.
 
-6.  In the **Electronic reporting parameters** dialog box, set the following
+10.  In the **Electronic reporting parameters** dialog box, set the following
     fields, and then select **OK**.
 
 | **Field**                                   | **Description**                                                                                                                                                                                                              |
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Settlement period                           | Select the settlement period. If you selected **Collect data** in step 5, you can leave this field blank. The report will be generated for the sales tax transactions that are included in the collected sales tax payments. |
 | Tax declaration version                     | Select one of the following values:                                                                                                                                                                                          |
-| Special advance payment permanent extension | Enter the amount that will be exported in row 67 (box 39) of the VAT declaration.                                                                                                                                            |
+| Special advance payment permanent extension | Enter the amount that will be exported in row 67 (box 39) of the VAT declaration.<\br>-   **Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.<\br>-   **Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.<\br>-   **Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.|
+    
+> If you selected **Collect data** in step 5, you can leave this field blank. The
+> report will be generated for the sales tax transactions that are included in the
+> collected sales tax payments.
 
--   **Original** – Generate a report for the sales tax transactions of the
-    original sales tax payment or before the sales tax payment is generated.
-
--   **Corrections** – Generate a report for the sales tax transactions of all
-    the subsequent sales tax payments for the period.
-
--   **Total list** – Generate a report for all the sales tax transactions for
-    the period, including the original and all corrections.
-
-If you selected **Collect data** in step 5, you can leave this field blank. The
-report will be generated for the sales tax transactions that are included in the
-collected sales tax payments.
-
-1.  Select **Attachments** in the upper-right corner of the page, and then
+11.  Select **Attachments** in the upper-right corner of the page, and then
     select **Open**.
 
-2.  Review the amounts in the Excel document, and then select **Generate
+12.  Review the amounts in the Excel document, and then select **Generate
     report**.
 
-3.  To generate a VAT declaration in XML format, in the **Run processing**
+13.  To generate a VAT declaration in XML format, in the **Run processing**
     dialog box, select **Generate report**, and then select **OK**.
 
-4.  In the **Electronic reporting parameters** dialog box, set the fields as
+14.  In the **Electronic reporting parameters** dialog box, set the fields as
     described in step 10.
 
-5.  Select **Attachments** in the upper-right corner of the page, download the
+15.  Select **Attachments** in the upper-right corner of the page, download the
     file, and use it for your submission to the tax authority.
 
 ## Run a VAT declaration for multiple legal entities
@@ -473,7 +464,7 @@ multiple legal entities.
 >   existing records, this field shows the identifier of the current legal
 >   entity.
 
-1.  In the **Datasources setup** grid, add a line for each additional legal
+5.  In the **Datasources setup** grid, add a line for each additional legal
     entity that must be included in reporting. For each new line, set the
     following fields.
 
@@ -489,7 +480,7 @@ multiple legal entities.
 | Company                | Select the ID of the legal entity.                                                                                            |
 | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**.                                 |
 
-2.  For each new line, select **Edit query**, and specify a related settlement
+6.  For each new line, select **Edit query**, and specify a related settlement
     period for the legal entity that is specified in the **Company** field on
     the line.
 
