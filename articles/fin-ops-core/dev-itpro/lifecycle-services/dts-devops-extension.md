@@ -56,46 +56,46 @@ By default, the request output is prepared in the staging folder `Build.Artifact
 
 The translation task lets users submit new translation requests through DTS.
 
-| Input | Required | Description | Notes |
-|-------|----------|-------------|-------|
-| Dynamics Lifecycle Services service connection | Yes | The Microsoft Dynamics Lifecycle Services (LCS) service connection that is used for authentication with LCS. | See [Create a service connection](#create-a-service-connection) for more information. |
-| Request Name | Yes | Enter a name for the request. | |
-| Product Name | Yes | Select a product name. | |
-| Product Version | Yes | Select a product version. | |
-| Source Language | Yes | The language that is being translated from. | |
-| Target Language | No\* | The language that is being translated to. | |
-| Multiple Target Languages | No\* | A comma-separated list of target language codes. | This input is used to submit requests that have multiple target languages. It overrides the **Target Language** input, if it's set. Here's an example: **ja, pt-BR, fr**. |
-| Translation type | Yes | Select the file type. | Only **User Interface** files are currently supported. View [Supported products and file types](translation-service-overview.md#supported-products). |
-| Path to resource files | Yes | The path of the files to translate. | You can use wildcard characters in the path. Subfolder recursion is supported. Here are two examples:<br><br>- `$(Build.SourcesDirectory)/**/*.label.txt`<br><br>`$(Build.SourcesDirectory)/resources` |
-| Path to translation memory files | No | The path of the translation memory (TM) files. | Wildcard characters are supported. |
-| Output Path | Yes |  The path (relative to your pipeline) to save the translation output. | See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts) for more information. |
+| Input | Required | Description | 
+|-------|----------|-------------|
+| Dynamics Lifecycle Services service connection | Yes | The Microsoft Dynamics Lifecycle Services (LCS) service connection that is used for authentication with LCS.<br><br>See [Create a service connection](#create-a-service-connection) for more information. |
+| Request Name | Yes | Enter a name for the request. | 
+| Product Name | Yes | Select a product name. | 
+| Product Version | Yes | Select a product version. | 
+| Source Language | Yes | The language that is being translated from. | 
+| Target Language | No\* | The language that is being translated to. | 
+| Multiple Target Languages | No\* | A comma-separated list of target language codes.<br><br>This input is used to submit requests that have multiple target languages. It overrides the **Target Language** input, if it's set. Here's an example: **ja, pt-BR, fr**. |
+| Translation type | Yes | Select the file type.<br><br>Only **User Interface** files are currently supported. View [Supported products and file types](translation-service-overview.md#supported-products). |
+| Path to resource files | Yes | The path of the files to translate.<br><br>You can use wildcard characters in the path. Subfolder recursion is supported. Here are two examples:<br><br>`$(Build.SourcesDirectory)/**/*.label.txt`<br><br>`$(Build.SourcesDirectory)/resources` |
+| Path to translation memory files | No | The path of the translation memory (TM) files.<br><br>Wildcard characters are supported. |
+| Output Path | Yes |  The path (relative to your pipeline) to save the translation output.<br><br>See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts) for more information. |
 
 
 ### DTS alignment task
 
 If you have files that were previously translated, and you also have corresponding source files, you can use the Align tool to create a TM in XML Localization Interchange File Format (XLIFF).
 
-| Input | Required | Description | Notes |
-|-------|----------|-------------|-------|
-| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. | See [Create a service connection](#create-a-service-connection) for more information. |
-| Product Name | Yes | The product to translate resource files for. | |
-| Product Version | Yes | Select a product version. | |
-| Source Language | Yes | The language that is being translated from. | |
-| Target Language | Yes | The language that is being translated to. | |
-| Source file | Yes | The path of the source file. | |
-| Target file | Yes | The path of the target file. | |
-| Output Path | Yes |  The path (relative to your pipeline) to save the alignment output. | See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts) for more information. |
+| Input | Required | Description | 
+|-------|----------|-------------|
+| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. See [Create a service connection](#create-a-service-connection) for more information. |
+| Product Name | Yes | The product to translate resource files for. |
+| Product Version | Yes | Select a product version. | 
+| Source Language | Yes | The language that is being translated from. | 
+| Target Language | Yes | The language that is being translated to. | 
+| Source file | Yes | The path of the source file. | 
+| Target file | Yes | The path of the target file. | 
+| Output Path | Yes |  The path (relative to your pipeline) to save the alignment output. See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts) for more information. |
 
 ### DTS regeneration task
 
 The regeneration task lets users submit new regeneration requests through DTS.
 
-| Input | Required | Description | Notes |
-|-------|----------|-------------|-------|
-| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. | See [Create a service connection](#create-a-service-connection) for more information. |
-| Regenerate File | Yes | The path of the edited TM files. | |
-| DTS Translation ID | Yes | The ID of the original translation. | If you're regenerating from the [translation task](#dts-translation-task), the translation ID is in the task output. |
-| Output Path | Yes |  The path (relative to your pipeline) to save the translation output. | See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts) for more information. |
+| Input | Required | Description | 
+|-------|----------|-------------|
+| Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. See [Create a service connection](#create-a-service-connection) for more information. |
+| Regenerate File | Yes | The path of the edited TM files. | 
+| DTS Translation ID | Yes | The ID of the original translation.<br><br>If you're regenerating from the [translation task](#dts-translation-task), the translation ID is in the task output. |
+| Output Path | Yes |  The path (relative to your pipeline) to save the translation output. See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts) for more information. |
 
 ## Setting up the extension
 ### Install the extension
@@ -151,12 +151,12 @@ Now that you have an app that is registered with Dynamics Lifecycle Services API
 
 The service connection takes the following inputs.
 
-| Input | Required | Description | Notes |
-|-------|----------|-------------|-------|
-| Username | Yes | The user who is submitting the requests through DTS. | MFA must be turned off. |
-| Password | Yes | The user's password. | |
-| Client ID | Yes | The client ID of the registered app. | See [Register an application](#register-an-application) for more information. |
-| Authentication Endpoint | Yes | The endpoint to use for the app. | See [Register an application](#register-an-application) for more information. |
+| Input | Required | Description | 
+|-------|----------|-------------|
+| Username | Yes | The user who is submitting the requests through DTS.<br><br>MFA must be turned off. |
+| Password | Yes | The user's password. | 
+| Client ID | Yes | The client ID of the registered app. See [Register an application](#register-an-application) for more information. |
+| Authentication Endpoint | Yes | The endpoint to use for the app. See [Register an application](#register-an-application) for more information. |
 
 1. In your Azure DevOps project, at the bottom of the left menu, select **Project settings**.
 2. In the **Project Settings** pane, under **Pipelines**, find and select **Service connections**. Then select **Create service connection**.
