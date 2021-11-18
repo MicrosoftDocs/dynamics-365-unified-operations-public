@@ -4,7 +4,7 @@
 title: Fiscal printer integration sample for Poland
 description: This topic provides an overview of the fiscal integration sample for Poland.
 author: josaw
-ms.date: 11/17/2019
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -244,9 +244,7 @@ The configuration file for the fiscal document provider is located at **src\\Fis
 
 ### Hardware station extension design
 
-The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer.
-
-The Hardware station extension is **HardwareStation.Extension.PosnetThermalFVFiscalPrinterSample**. This extension calls the functions of the POSNET driver to submit commands that the Commerce runtime extension generates to the fiscal printer. It also handles device errors.
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer. This extension calls the functions of the POSNET driver to submit commands that the Commerce runtime extension generates to the fiscal printer. It also handles device errors.
 
 #### Request handler
 
