@@ -76,18 +76,6 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Check the availability of the fiscal printer before a new sales transaction is opened or a sales transaction is finalized.
 
-### Default data mapping
-
-The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
-
-- Value-added tax (VAT) rates mapping:
-
-    *0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00*
-
-- Tender type mapping:
-
-    *0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0*
-
 ### Gift cards
 
 The fiscal printer integration sample implements the following rules that are related to gift cards:
@@ -115,144 +103,116 @@ The fiscal printer integration sample implements the following rules that are re
 - Printing a bar code on fiscal receipts is considered a potential customization, because this feature isn't supported in the embedded formats and can be implemented only by using the customizable **Super-format** report.
 - The fiscal printer doesn't support mixed transactions. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
 
-## Set up Commerce for Poland
+## Set up fiscal integration for Poland
 
-### Configure fiscal integration
-
-Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
-
-- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal printer integration sample](#set-up-the-registration-process).
-- [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-- [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-- [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### Enable extensions
-
-#### Commerce runtime extension components
+The fiscal printer integration sample for Poland is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\Posnet** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Started since 10.0.21 the fiscal integration sample for Poland was published in GitHub repository. This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed as a prerequisite. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal printer integration sample for Poland (legacy)](emea-pol-fpi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
-The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
-This sample consists of extensions for the CRT and Hardware station. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit and Hardware station. After installing these retail components, you should build the Posnet solution and run installers for each component. We recommend that you use an unmodified solution files from this repository to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
-
-The CRT extension components are included in the EpsonFP90IIISample solution from Fiscal Integration folder. To complete the following procedures, open the Posnet solution, **Posnet.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet**.
-
-### Install the commerce extensions
-
-1. Find the **Posnet** solution and build it.
-
-2. Build the CRT extension installer:
-
-    - **Commerce Scale Unit:** In the **Posnet\\ScaleUnit\\ScaleUnit.Posnet.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.Posnet.Installer** installer.
-    - **Local CRT on Modern POS:** In the **Posnet\\ModernPOS\\ModernPos.Posnet.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.Posnet.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    - **Commerce Scale Unit:**
-
-    ```Console
-    ScaleUnit.Posnet.Installer.exe install --verbosity 0
-    ```
-
-    - **Local CRT on Modern POS:**
-
-    ```Console
-    ModernPOS.Posnet.Installer.exe install --verbosity 0
-    ```
-
-#### Install Hardware station extensions
-
-The Hardware station extension components are included in the Posnet solution from Fiscal Integration folder. To complete the following procedures, open the Posnet solution, **Posnet.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet**.
-
-1. Find the **Posnet** solution and build it.
-
-2. In the **Posnet\\HardwareStation\\HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.PosnetThermalFVFiscalPrinter.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    ```Console
-    HardwareStation.PosnetThermalFVFiscalPrinter.Installer.exe install --verbosity 0
-    ```
+1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal printer integration sample](#set-up-the-registration-process).
+1. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+1. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Configure channel components](#configure-channel-components)
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from
+1. Download configuration files for the fiscal document provider and the fiscal connector:
+    1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+    1. Select a correct release branch version according to your SDK/application version (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Open **src \> FiscalIntegration \> Posnet**.
+    1. Download the fiscal document provider configuration file at **CommerceRuntime \> DocumentProvider.PosnetSample \> Configuration \> DocumentProviderPosnetSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml)).
+    1. Download the fiscal connector configuration file at **HardwareStation \> ThermalDeviceSample \> Configuration \> ConnectorPosnetThermalFVEJ.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+    > [!WARNING]
+    > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
+    > - The fiscal document provider configuration file: **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
+    > - The fiscal connector configuration file: **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml**.
+    > 
+    > Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
-**RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml**.
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile. Select the document provider and the connector that you loaded earlier. Update the [data mapping settings](#default-data-mapping) as required.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the fiscal connector that you loaded earlier. Update the [connector settings](#fiscal-connector-settings) as required.
+6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group, for the connector functional profile that you created earlier.
+7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, a fiscal registration process step, and select the fiscal connector group that you created earlier.
+8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
+9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+10. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
+#### Default data mapping
 
-**Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\HardwareStation\\ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml**
+The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
----
+- **Value-added tax (VAT) rates mapping**  – The mapping of tax percentage values that are set up for the sales tax codes to fiscal printer-specific VAT rates. The default mapping is as following:
 
-2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from
+    ```
+    0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00
+    ```
+    The first component in each pair stands for a VAT rate number configured in the fiscal printer, and the second component stands for the corresponding VAT rate. For more information about the fiscal printer VAT rate configuration, see the POSNET driver documentation.
+    
+- **Tender type mapping** – The mapping of payment methods configured for the store to payment forms supported by the fiscal printer. The default mapping is as following:
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
-
-**RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
-
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
-
-**Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\CommerceRuntime\\DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
-
----
-
-3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and select the loaded connector from the earlier step. Update connection settings if an update is required.
-4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and select the loaded connector and document provider from the earlier steps. Update data mapping settings, if an update is required.
-5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and select the connector functional profile from the earlier step.
-6. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and select the connector functional group from the earlier step.
-7. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
-9. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
-
-### Production environment
-
-Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
-
-### Commerce Cloud Scale Unit (CSU) package
-
-The steps to generate Commerce Cloud Scale Unit (CSU) package are following:
-
-1. Clone or download the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
-
-Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-
-2. Build the project **ScaleUnite.Posnet** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
-
-Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
-
-To upload the created **CloudScaleUnitExtensionPackage.zip** package to LCS see [Deploy the package to CSU](../dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
-
-### Commerce Scale Unit (self-hosted) components
-
-1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
-
-2. Start the extension installer from command line
-
-- For **Commerce Scale Unit:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ScaleUnit\\ScaleUnit.Posnet.Installer\\bin\\Debug\\net461** path
-
-    ```Console
-    ScaleUnit.Posnet.Installer.exe install --verbosity 0
+    ```
+    0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0
     ```
 
-- For **Local CRT on Modern POS:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ModernPOS\\ModernPos.Posnet.Installer\\bin\\Debug\\net461** path
+    The first component in each pair stands for a payment method that is set up for the store, and the second component stands for the corresponding payment form supported by the fiscal printer. For more information about payment forms that the fiscal printer supports, see the POSNET driver documentation. You need to modify the sample mapping according to the payment methods configured in your application.
 
+#### Fiscal connector settings
+
+The following settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
+
+- **Connection string** – This string describes the details of the connection to the device in a format that is supported by the driver. For details, see the POSNET driver documentation.
+- **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
+- **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
+
+### Configure channel components
+
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. See [Deployment guidelines for the fiscal printer integration sample for Poland (legacy)](emea-pol-fpi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+
+#### Development environment
+
+Follow these steps to set up a development environment so that you can test and extend the sample:
+
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Open the fiscal printer integration solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln**, and build it.
+1. Install Commerce runtime extensions:
+    - Find the CRT extension installer:
+        - **Commerce Scale Unit:** In the **Posnet\\ScaleUnit\\ScaleUnit.Posnet.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.Posnet.Installer** installer.
+        - **Local CRT on Modern POS:** In the **Posnet\\ModernPOS\\ModernPOS.Posnet.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.Posnet.Installer** installer.
+    - Start the CRT extension installer from command line as follows:
+        - **Commerce Scale Unit:**
+        ```Console
+        ScaleUnit.Posnet.Installer.exe install --verbosity 0
+        ```
+        - **Local CRT on Modern POS:**
+        ```Console
+        ModernPOS.Posnet.Installer.exe install --verbosity 0
+        ```
+
+1. Install Hardware station extensions:
+    - In the **Posnet\\HardwareStation\\HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.PosnetThermalFVFiscalPrinter.Installer** installer.
+    - Start the extension installer from command line as follows:
     ```Console
-    ModernPos.Posnet.Installer.exe install --verbosity 0
+    HardwareStation.EFR.Installer.exe install --verbosity 0
     ```
 
-- For **Hardware station** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\HardwareStation\\HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\bin\\Debug\\net461** path
+#### Production environment
 
-    ```Console
-    HardwareStation.PosnetThermalFVFiscalPrinter.Installer.exe install --verbosity 0
-    ```
+Follow the steps described in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The template YAML file **Posnet build-pipeline.yml** can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
 
 ## Design of extensions
 
