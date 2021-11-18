@@ -39,7 +39,7 @@ Your environment must be on application version 10.0.21 or above. Additionally, 
 
 1. Deploy your new SQL Server instance into a VM, or create a new SQL cluster.
 
-1. Ensure you configure the new instance or cluster according to our documentation [Set up SQL Server](./setup-deploy-on-premises-pu41.md#setupsql)
+1. Ensure you configure the new instance or cluster according to our documentation: [Set up SQL Server](./setup-deploy-on-premises-pu41.md#setupsql).
 
 1. If you are using self-signed certificates, ensure they have been imported into the nodes within the Service Fabric Cluster.
 
