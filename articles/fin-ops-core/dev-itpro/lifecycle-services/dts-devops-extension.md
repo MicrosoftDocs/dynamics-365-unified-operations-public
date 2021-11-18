@@ -34,7 +34,7 @@ The Dynamics 365 Translation Service (DTS) extension for Microsoft Azure DevOps 
 
 To start using the DTS pipeline tasks, you must install the extension to your organization and then connect to the translation service. See [Setting up the extension](#setting-up-the-extension) for more information.
 
-This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-starteds).
+This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/create-first-pipeline).
 
 [!NOTE] The Dynamics 365 Translation Service extension for Azure DevOps is only available as public preview. As Dynamics 365 Translation Service is currently only deployed in the US, your data may be processed and stored outside of your geo-political boundary.
 
@@ -80,10 +80,10 @@ The translation task lets users submit new translation requests through DTS.
 | Source Language | Yes | The language that is being translated from. | |
 | Target Language | No\* | The language that is being translated to. | |
 | Multiple Target Languages | No\* | A comma-separated list of target language codes. | This input is used to submit requests that have multiple target languages. It overrides the **Target Language** input, if it's set. Here's an example: **ja, pt-BR, fr**. |
-| Translation type | Yes | Select the file type. | Only **User Interface** files are currently supported. View [supported products and file types](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview#supported-products). |
+| Translation type | Yes | Select the file type. | Only **User Interface** files are currently supported. View [supported products and file types](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview#supported-products). |
 | Path to resource files | Yes | The path of the files to translate. | You can use wildcard characters in the path. Subfolder recursion is supported. Here are two examples: `$(Build.SourcesDirectory)/**/*.label.txt` `$(Build.SourcesDirectory)/resources` |
 | Path to translation memory files | No | The path of the translation memory (TM) files. | Wildcard characters are supported. |
-| Output Path | Yes |  The path (relative to your pipeline) to save the translation output. | See [Artifacts in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/build-artifacts?view=azure-devops&tabs=yaml). |
+| Output Path | Yes |  The path (relative to your pipeline) to save the translation output. | See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts). |
 
 
 ### DTS alignment task
@@ -99,7 +99,7 @@ If you have files that were previously translated, and you also have correspondi
 | Target Language | Yes | The language that is being translated to. | |
 | Source file | Yes | The path of the source file. | |
 | Target file | Yes | The path of the target file. | |
-| Output Path | Yes |  The path (relative to your pipeline) to save the alignment output. | See [Artifacts in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/build-artifacts?view=azure-devops&tabs=yaml). |
+| Output Path | Yes |  The path (relative to your pipeline) to save the alignment output. | See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts). |
 
 ### DTS regeneration task
 
@@ -110,7 +110,7 @@ The regeneration task lets users submit new regeneration requests through DTS.
 | Dynamics Lifecycle Services service connection | Yes | The credentials that are used for authentication with LCS. | See [Create a service connection](#create-a-service-connection) for more information. |
 | Regenerate File | Yes | The path of the edited TM files. | |
 | DTS Translation ID | Yes | The ID of the original translation. | If you're regenerating from the [translation task](#dts-translation-task), the translation ID is in the task output. |
-| Output Path | Yes |  The path (relative to your pipeline) to save the translation output. | See [Artifacts in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/artifacts/build-artifacts?view=azure-devops&tabs=yaml). |
+| Output Path | Yes |  The path (relative to your pipeline) to save the translation output. | See [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts). |
 
 
 
@@ -126,7 +126,7 @@ The installation page will open. You can either choose a DevOps organization to 
 
 
 
-### Register and application
+### Register an application
 
 In order to create an LCS service connection to authenticate with DTS, you must first register an app with appropriate LCS permissions. The following procedure guides you through the app registration process. It also shows how to obtain a client ID and the Azure Open Authorization (OAuth) endpoint that is required to set up an LCS service connection.
 
@@ -147,7 +147,7 @@ In order to create an LCS service connection to authenticate with DTS, you must 
 
 7. In the **APIs my organization uses** tab, find and select the **Dynamics Lifecycle services** API. Select the check box for the API permission that has the **user\_impersonation** scope, and then select **Add permissions**. 
 
-   ![Screenshot of API permissions blade in Azure Portal.](./media/dts-ado-request-api-permissions.png)
+   ![Screenshot of API permissions blade in Azure Portal.](./media/dts-ado-api-permissions.png)
 
 8. Select the button to grant admin consent for the permissions. When you're prompted to confirm the action, select **Yes**.
 9.  In the left navigation pane, under **Manage**, select **Authentication**.
@@ -174,8 +174,8 @@ The service connection takes the following inputs.
 |-------|----------|-------------|-------|
 | Username | Yes | The user who is submitting the requests through DTS. | MFA must be turned off. |
 | Password | Yes | The user's password. | |
-| Client ID | Yes | The client ID of the registered app. | See the [App registration](#app-registration) section of this article. |
-| Authentication Endpoint | Yes | The endpoint to use for the app. | See the [App registration](#app-registration) section. |
+| Client ID | Yes | The client ID of the registered app. | See [Register an application](#register-an-application). |
+| Authentication Endpoint | Yes | The endpoint to use for the app. | See [Register an application](#register-an-application). |
 
 1. In your Azure DevOps project, at the bottom of the left menu, select **Project settings**.
 2. In the **Project Settings** pane, under **Pipelines**, find and select **Service connections**. Then select **Create service connection**.
