@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with HMRC's MTD VAT web service
 description: This topic explains how to set up Making Tax Digital for value-added tax (MTD VAT) in the United Kingdom (UK).
 author: liza-golub
-ms.date: 09/20/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -181,17 +181,17 @@ To enable Finance to collect client and server public IP addresses, as of 10.0.2
 
 ## <a id="entities"></a>Import a package of data entities that includes a predefined EM setup
 
-The process of setting up the [Electronic messages](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging-setup) (EM) functionality for MTD VAT has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations](#configurations) into Finance.
+The process of setting up the [Electronic messages](../general-ledger/electronic-messaging-setup.md) (EM) functionality for MTD VAT has many steps. Because the names of some predefined entities are used in the ER configurations, use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations](#configurations) into Finance.
 
 1. In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and select **Data package** as the asset type. Then find **UK MTD VAT setup** in the list of data package files, and download it to your computer.
 2. After the **UK MTD VAT setup** file is downloaded, in Finance, select the company that you will interoperate with HMRC's MTD VAT API from, and then go to **Workspaces** \> **Data management**.
 3. Before you import setup data from the package of data entities, make sure that the data entities in your application are refreshed and synced. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
 4. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
-5. You can now import data from the **UK MTD VAT setup** file into the selected company. In the **Data management** workspace, select **Import**, and then, on the **Import** FastTab, set the **Group name** field.
+5. You can now import data from the **UK MTD VAT setup** file into the selected company. In the **Data management** workspace, select **Import**, and then, on the **Import** FastTab, in the **Group name** field, select a value.
 6. On the **Selected entities** FastTab, select **Add file**.
-7. Select **Package** in the **Source data format** field and click **Upload and add** button. 
+7. In the **Source data format** field, select **Package** and then select **Upload and add**. 
 8. Find and select the **UK MTD VAT setup** file that you downloaded in step 1.
-9. Wait until the data entities from the file are listed in the grid on the **Selected entities** FastTab. Then select **Close**.
+9. Wait until the data entities from the file are listed in the grid on the **Selected entities** FastTab, and then select **Close**.
 10. On the Action Pane, select **Import** to start the import.
 
     ![Importing a package of data entities that includes a predefined EM setup.](media/uk-mtd-data-entities.png)
@@ -285,7 +285,7 @@ If your company must report a VAT return as a VAT group, make sure that all the 
 
     ![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
     
-For more information about how to populate records from multiple companies in EM, see [Populate records from multiple companies](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging-setup#multiple-companies-populate).
+For more information about how to populate records from multiple companies in EM, see [Populate records from multiple companies](../finance/general-ledger/electronic-messaging-setup.md#multiple-companies-populate).
 
 ## <a id="sequences"></a>Set up number sequences for Electronic messages functionality
 
