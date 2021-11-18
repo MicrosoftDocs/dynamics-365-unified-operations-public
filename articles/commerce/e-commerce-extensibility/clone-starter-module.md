@@ -140,15 +140,15 @@ You can now make code changes to the cloned module and see the changes within th
 
 Once your changes have been made, the SDK extension package can be built and deployed to a sandbox and/or production environment following the steps in [Package configurations and deploy them to an online environment](package-deploy.md).
 
-## Loading the new module within site builder 
+## Load the new module in site builder 
 
-Once the module has been deployed, the original module can then be replaced with the cloned module. For example, to replace the "media gallery" module with a new cloned "super media gallery" module, edit the product details page within site builder, remove the "media gallery" module and add the new cloned module in its place.
+Once the module has been deployed, the original module can then be replaced with the cloned module. For example, to replace the media gallery module with a new cloned super media gallery module, edit the product details page within site builder, remove the media gallery module, and then add the new cloned module in its place.
 
 ### Module categories
 
-It is important to note that some modules are designed to only work within specific container modules.  For example, the "media gallery" module (and the cloned "super-media-gallery" example) has a module definition file with a **categories** section that includes the **buybox_mediaGallery** category as shown in the below super-media-gallery.definition.json code snippit:
+Some modules are designed to only work within specific container modules. For example, the media gallery module (and the cloned super media gallery module example) both have module definition files with a **categories** section that includes the **buybox_mediaGallery** category, as shown in the following example code snippet from the super-media-gallery.definition.json file.
 
-```
+```JSON
 {
 	"$type": "contentModule",
 	"friendlyName": "Super media gallery",
@@ -160,9 +160,9 @@ It is important to note that some modules are designed to only work within speci
 	],
 ```
 
-The parent container module (the "buy box" module in the above example) then has a slot that has been designed to hold the media gallery module as shown in the buybox.definition.json code snippit below (which can be found in the \node_modules\@msdyn365-commerce-modules\buybox\src\modules\buybox directory).  Notice the **allowedTypes** section specifies that the slot allows a module of type "media-gallery" or it allows modules that belong to the "buybox_mediaGallery". This meta data is used by the site builder tool to limit the modules shown for a particular slot to only the allowed modules. So as long as the cloned module doesn't remove the category, it can replace the original module in its slot.
+The parent container module (in this case the buy box module referred to in the example above) then has a slot designed to hold the media gallery module as shown in the buybox.definition.json code snippet below (which can be found in the \node_modules\@msdyn365-commerce-modules\buybox\src\modules\buybox directory). 
 
-```
+```JSON
     "slots": {
         "mediaGallery": {
             "friendlyName": "Media Gallery",
@@ -173,6 +173,8 @@ The parent container module (the "buy box" module in the above example) then has
             "allowedCategories": ["buybox_mediaGallery"]
         },
 ```
+
+The **allowedTypes** section specifies that the slot allows modules of type **media-gallery** or modules that belong to the **buybox_mediaGallery** category. This metadata is used by site builder to limit the modules shown for a particular slot by only showing modules allowed for that slot. As long as the cloned module doesn't remove the category, it can replace the original module in its slot.
 
 ## Additional resources
 
