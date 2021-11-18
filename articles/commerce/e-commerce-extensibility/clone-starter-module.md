@@ -33,7 +33,7 @@ This topic describes how to clone a module library module in Microsoft Dynamics 
 
 The Dynamics 365 Commerce online software development kit (SDK) includes a set of [module library](../starter-kit-overview.md) modules that can be used on an e-commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated. 
 
-It is recommended that you avoid cloning if you can, because clones will be copies of module library modules and won't receive any automatic service updates that the module library modules get. There are several extensibility alternatives to cloning that should be considered before module cloning, such as module view and definition extensions that enable you to provide alternative layout views and data action overrides that allow you to modify business logic. For more information, see [Theming overview](theming.md). 
+It is recommended that you avoid cloning if possible because clones will be copies of module library modules and won't receive any automatic service updates that the module library modules get. There are several extensibility alternatives to cloning that should be considered before module cloning, such as module view and definition extensions that enable you to provide alternative layout views, and data action overrides that allow you to modify business logic. For more information, see [Theming overview](theming.md). 
 
 ## Clone and update a module
 
@@ -44,11 +44,12 @@ To clone a module and then update it, use the **clone** [command-line interface 
 This command adds the source code for the module to the /src/modules/ directory and pulls in any required dependencies for the module.
 
 Use the following command to get a list of the modules that can be cloned:
+
 **yarn msdyn365 clone --listmodules**
 
-## Example
+### Example
 
-The following example shows how to clone the [media gallery](../media-gallery-module.md) module library module so that you can update and make changes to it.
+The following example shows how to clone the [media gallery](../media-gallery-module.md) module library module so that you can make changes to it.
 
 
 ```Console
@@ -64,11 +65,11 @@ When building a cloned module, you may see linting errors listed on the cloned m
 
 ## Preview a module
 
-There are various ways to preview a cloned module on a development environment using either a [module mock](test-module-mock.md) or a [page mock](test-page-mock.md).  Many of the cloned modules do not come with module mocks, so you may need to create one manually.  
+There are several ways to preview a cloned module on a development environment using either a [module mock](test-module-mock.md) or a [page mock](test-page-mock.md). Many cloned modules do not come with module mocks, so you may need to create one manually.  
 
 ### Preview with a module mock
 
-To create a mock file for the cloned **super-media-gallery** module in the example above, create a directory called **mocks** under the module directory and a JSON file with a name that matches the module name (such as "\mocks\super-media-gallery.json" for the example above).
+To create a mock file for the cloned **super-media-gallery** module in the example above, under the module directory create a **mocks** directory, and then create and save a JSON file in that directory with a name that matches the module name (such as "\mocks\super-media-gallery.json" for the example above).
 
 The mock file needs to be in a format similar to that shown in the following example, where the **typeName** value matches the module name:
 
@@ -82,11 +83,11 @@ The mock file needs to be in a format similar to that shown in the following exa
   }
  ```
  
-You can then add specific **config** values as needed. To determine good mock config values to add, a good reference would be to create a page mock as shown in the next section and then copy the **config** values from the live module to the module mock.
+You can then add specific **config** values as needed. To determine what mock config values to add, a good reference would be to create a page mock as shown in the next section and then copy the **config** values from the live module to the module mock.
 
 To preview the new module in a local web browser, follow these steps.
 
-1. At a command prompt, go to your root SDK folder, and run the **yarn start** command as shown in the following example.
+1. At a command prompt, go to your root SDK folder and run the **yarn start** command as shown in the following example.
 
     ```Console
     c:\repos\Msdyn365.Commerce.Online\yarn start
@@ -98,7 +99,7 @@ To preview the new module in a local web browser, follow these steps.
 
 Alternatively, a page mock can be used to preview the module by following the instructions in [Test modules by using page mocks](test-page-mock.md). Included in the topic are details on creating a dynamic page mock from a live production page using the **?item=nodeserviceproxy:true** query string parameter. Staying with the example above, you would save a product details page into a page mock and then modify the page mock to replace the "buy-box" module with the "super-buy-box" module. The new page mock file would then be save under the **/src/pageMocks/** directory, for example "/src/pageMocks/pdp-page-test.json".
 
-Once you have created the page mock, the module you cloned will then need to be updated to the new cloned module within the mock JSON file. For example, if you created a page mock based off of a product details page, search for the "media-gallery" module and you should find a section similar to that in the following example where you can change the **typename** and **id** values from "media-gallery" to the new "super-media-gallery" module.
+Once you have created the page mock, the module you cloned will then need to be updated to the new cloned module within the mock JSON file. For example, if you created a page mock based off of a product details page, search for the "media-gallery" module and you should find a section similar to that in the following example where you can then change the **typename** and **id** values from **media-gallery** to the new **super-media-gallery**.
 
 ```JSON
 "modules": {
@@ -126,7 +127,7 @@ To preview the new module with a page mock within a local web browser, follow th
     c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
-1. In a web browser, use the following URL format to view the module, replacing the **PAGE_MOCK** parameter with the page mock filename (without the .json extension).
+1. In a web browser, use the following URL format to view the module, replacing the **PAGE_MOCK** parameter with the page mock filename without the .json extension.
 
  `https://localhost:4000/page?mock=PAGE_MOCK`
  
@@ -142,11 +143,11 @@ Once your changes have been made, the SDK extension package can be built and dep
 
 ## Load the new module in site builder 
 
-Once the module has been deployed, the original module can then be replaced with the cloned module. For example, to replace the media gallery module with a new cloned super media gallery module, edit the product details page within site builder, remove the media gallery module, and then add the new cloned module in its place.
+Once the module has been deployed, the original module can then be replaced with the cloned module. For example, to replace the media gallery module with a new cloned super media gallery module, edit the product details page within site builder, remove the media gallery module, and then add the new cloned super media gallery module in its place.
 
 ### Module categories
 
-Some modules are designed to only work within specific container modules. For example, the media gallery module (and the cloned super media gallery module example) both have module definition files with a **categories** section that includes the **buybox_mediaGallery** category, as shown in the following example code snippet from the super-media-gallery.definition.json file.
+Some modules are designed to only work within specific container modules. For example, the media gallery module (and the cloned super media gallery module from the example) both have module definition files with a **categories** section that includes the **buybox_mediaGallery** category, as shown in the following example code snippet from the super-media-gallery.definition.json file.
 
 ```JSON
 {
@@ -158,9 +159,10 @@ Some modules are designed to only work within specific container modules. For ex
 		"media-gallery",
 		"buybox_mediaGallery"
 	],
+}	
 ```
 
-The parent container module (in this case the buy box module referred to in the example above) then has a slot designed to hold the media gallery module as shown in the buybox.definition.json code snippet below (which can be found in the \node_modules\@msdyn365-commerce-modules\buybox\src\modules\buybox directory). 
+The parent container module (in this case the buy box module referred to in the example above) has a slot designed to hold the media gallery module as shown in the buybox.definition.json code snippet below (which can be found in the \node_modules\@msdyn365-commerce-modules\buybox\src\modules\buybox directory). 
 
 ```JSON
     "slots": {
@@ -172,9 +174,10 @@ The parent container module (in this case the buy box module referred to in the 
             "allowedTypes": ["media-gallery"],
             "allowedCategories": ["buybox_mediaGallery"]
         },
+    }
 ```
 
-The **allowedTypes** section specifies that the slot allows modules of type **media-gallery** or modules that belong to the **buybox_mediaGallery** category. This metadata is used by site builder to limit the modules shown for a particular slot by only showing modules allowed for that slot. As long as the cloned module doesn't remove the category, it can replace the original module in its slot.
+The **allowedTypes** section specifies that the slot allows modules of type **media-gallery** or modules that belong to the **buybox_mediaGallery** category. This metadata is used by site builder to limit the modules shown for a particular slot by only showing the modules allowed for that slot. As long as the cloned module doesn't remove the category, it can replace the original module in its slot.
 
 ## Additional resources
 
