@@ -1,0 +1,523 @@
+# VAT declaration (Germany)
+
+This topic describes how to set up and generate an advance value-added tax (VAT)
+declaration for Germany in the official XML format. This topic also explains how
+to preview the VAT declaration in Microsoft Excel.
+
+To automatically generate the report, create enough sales tax codes to keep a
+separate VAT accounting for each box on the advance VAT declaration.
+Additionally, in the application-specific parameters of the Electronic reporting
+(ER) format for the advance VAT declaration, associate sales tax codes with the
+lookup result of the lookups for the boxes on the VAT declaration.
+
+For Germany, you must configure **Report field lookup**. For more information
+about how to set up application-specific parameters, see the [Set up
+application-specific parameters for VAT declaration
+fields](#set-up-application-specific-parameters-for-vat-declaration-fields)
+section later in this topic.
+
+In the following table, the "Lookup result" column shows the lookup result that
+is preconfigured for a specific VAT declaration row in the VAT declaration
+format. Use this information to correctly associate sales tax codes with the
+lookup result and then with the row of the VAT declaration.
+
+### VAT declaration overview
+
+The advance VAT declaration in Germany contains the following information.
+
+**SECTION – DELIVERIES AND OTHER SERVICES**
+
+**Taxable sales**
+
+| Row | Box – tax base | Box – tax amount | Description                                                                                                                                      | Lookup result                                                                             |
+|-----|----------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| 20  | 81             | Without code     | Taxable sales at a tax rate of 19 percent.                                                                                                       | 20-TaxableSalesStandard 73-BadDebtsWriteOffStandard (81/50) – with minus sign             |
+| 21  | 86             | Without code     | Taxable sales at a tax rate of 7 percent.                                                                                                        | 21-TaxableSalesReduced 73-BadDebtsWriteOffReduced (86/50) – with minus sign               |
+| 22  | 35             | 36               | Taxable sales at other tax rates.                                                                                                                | 22-TaxableSalesOtherRates 73-BadDebtsWriteOffOtherRates (35/36/50) – with minus sign      |
+| 23  | 77             | *No tax amount*  | Deliveries from agricultural and forestry businesses in accordance with §24 of the German VAT Act (UStG) to customers that have a VAT ID number. | 23-EUSalesAverageRate24 73-BadDebtsWriteOffEUSalesAverageRate24 (77/50) – with minus sign |
+| 24  | 76             | 80               | Sales that a tax must be paid for, according to §24 of UStG (sawmill products, beverages, and alcoholic liquids).                                | 24-SalesAverageRate24 73-BadDebtsWriteOffSalesAverageRate24 (76/80/50)                    |
+
+**Tax-free sales with input tax deduction**
+
+| Row | Box – tax base | Box – tax amount | Description                                                                       | Lookup result                       |
+|-----|----------------|------------------|-----------------------------------------------------------------------------------|-------------------------------------|
+| 26  | 41             | *No tax amount*  | Intra-community deliveries to customers that have a VAT ID.                       | 26-EUSales                          |
+| 27  | 44             | *No tax amount*  | Intra-community deliveries of new vehicles to buyers that don't have a VAT ID.    | 27-EUSalesNewVehicles               |
+| 28  | 49             | *No tax amount*  | Intra-community deliveries of new vehicles outside a company.                     | 28-EUSalesNewVehiclesOutsideCompany |
+| 29  | 43             | *No tax amount*  | Other tax-free sales that have an input tax deduction, such as export deliveries. | 29-ExportOtherTaxFreeSales          |
+
+**Tax free sales without input tax deduction**
+
+| Row | Box – tax base | Box – tax amount | Description                                            | Lookup result                           |
+|-----|----------------|------------------|--------------------------------------------------------|-----------------------------------------|
+| 30  | 48             | *No tax amount*  | Tax free sales that don't have an input tax deduction. | 30-TaxFreeSalesWithoutInputTaxDeduction |
+
+**Intra-community acquisitions**
+
+| Row | Box – tax base | Box – tax amount | Description                                                                                                                   | Lookup result                                                    |
+|-----|----------------|------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| 33  | 91             | *No tax amount*  | Tax-free intra-community acquisitions of some objects and investment gold.                                                    | 33-TaxFreeEUPurchase                                             |
+| 34  | 89             | Without code     | Taxable intra-community acquisitions at a tax rate of 19 percent.                                                             | 34-EUPurchaseStandard 34-UseTaxEUPurchaseStandard (89/61)        |
+| 35  | 93             | Without code     | Taxable intra-community acquisitions at a tax rate of 7 percent.                                                              | 35-EUPurchaseReduced 35-UseTaxEUPurchaseReduced (93/61)          |
+| 36  | 95             | 98               | Taxable intra-community acquisitions at other tax rates.                                                                      | 36-EUPurchaseOtherRates 36-UseTaxEUPurchaseOtherRates (95/98/61) |
+| 37  | 94             | 96               | Taxable intra-community acquisitions of new vehicles from suppliers that don't have a VAT ID number, at the general tax rate. | 37-EUPurchaseVehicles 37-UseTaxEUPurchaseVehicles (94/96/61)     |
+
+**SECTION – BENEFICIARY AS TAX DEBTOR**
+
+| Row | Box – tax base | Box – tax amount | Description                                                                        | Lookup result                                                                                        |
+|-----|----------------|------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| 40  | 46             | 47               | Other services of an entrepreneur, based on the rest of the Community area.        | 40-BeneficiaryTaxDebtor                                                                              |
+| 41  | 73             | 74               | Sales that fall under section 13b (2) no. 3 of UStG.                               | 41-BeneficiaryTaxDebtorRealEstateTransfer 41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67) |
+| 42  | 84             | 85               | Other services that fall under section 13b (2) no. 1, 2, and 4 through 12 of UStG. | 42-BeneficiaryTaxDebtorOther 42-UseTaxBeneficiaryTaxDebtorOther (84/85/67)                           |
+
+**SECTION – SUPPLEMENTARY INFORMATION ON SALES**
+
+| Row | Box – tax base  | Box – tax amount | Description                                                                                                | Lookup result                                                                                    |
+|-----|-----------------|------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| 48  | 42              | *No tax amount*  | Deliveries by the first customer in the case of intra-community triangular transactions.                   | 48-DeliveriesFirstCustomerEUTriangular                                                           |
+| 49  | 60              | *No tax amount*  | Taxable sales of the performing entrepreneur that the recipient of the service owes the tax according for. | 49-SalesServicesReverseCharge                                                                    |
+| 50  | 21              | *No tax amount*  | Other non-taxable services.                                                                                | 50-OtherServicesNonTaxable                                                                       |
+| 51  | 45              | *No tax amount*  | Other non-taxable sales when the place of performance isn't in Germany.                                    | 51-OtherSalesNonTaxable                                                                          |
+| 52  | *No tax amount* | *No tax amount*  | VAT.                                                                                                       | Row 20 + Row 21 + Row 22 + Row2 4 + Row 34 + Row 35 + Row 36 + Row 37 + Row 40 + Row 41 + Row 42 |
+
+**SECTION – DEDUCTIBLE INPUT TAX**
+
+| Row | Box – tax amount | Description                                                                                                | Lookup result                                                                                                                                                                |
+|-----|------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 55  | 66               | Input invoice tax amounts from other companies, services, and intra-community triangular transactions.     | 55-InputTax 40-UseTaxBeneficiaryTaxDebtor (46/47/66) 74-BadDebtsWriteOffInputTax (66/37) – with minus sign                                                                   |
+| 56  | 61               | Input tax amounts from the intra-community acquisition of goods.                                           | 56-InputTaxEUPurchase 34-UseTaxEUPurchaseStandard (89/61) 35-UseTaxEUPurchaseReduced (93/61) 36-UseTaxEUPurchaseOtherRates (95/98/61) 37-UseTaxEUPurchaseVehicles (94/96/61) |
+| 57  | 62               | Incurred import sales tax.                                                                                 | 57-InputTaxImport                                                                                                                                                            |
+| 58  | 67               | Input tax amounts from services within the meaning of §13b of UStG.                                        | 58-InputTaxServices 41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67) 42-UseTaxBeneficiaryTaxDebtorOther (84/85/67)                                                 |
+| 59  | 63               | Input tax amounts that are calculated according to general average rates.                                  | 59-InputTaxAverageRates 74-BadDebtsWriteOffInputTaxAverageRates (63/37) – with minus sign                                                                                    |
+| 60  | 59               | Input tax deduction for intra-community deliveries of new vehicles outside a company and small businesses. | 60-InputTaxEUPurchaseNewVehicles 74-BadDebtsWriteOffInputTaxEUPurchaseNewVehicles (59/37) – with minus sign                                                                  |
+| 61  | 64               | Correction of the input tax deduction.                                                                     | 61-InputTaxCorrection                                                                                                                                                        |
+| 62  | \-               | The remaining amount.                                                                                      | Row 52 – Row 55 – Row 56 – Row 57 – Row 58 – Row 50 – Row 60 – Row 61                                                                                                        |
+
+**SECTION – OTHER TAX AMOUNTS**
+
+| Row | Box – tax amount | Description                                                                                                                                                                                                                                                         | Lookup result                                 |
+|-----|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| 64  | 65               | Tax because of a change in the form of taxation and additional tax on taxed down payments because of change in the tax rate.                                                                                                                                        | 64-AdditionalTaxDueChangeTaxRate              |
+| 65  | 69               | Incorrect or unjustified tax amounts that are shown on invoices, and tax amounts that are owed in accordance with section 6a (4) sentence 2, section 17 (1) sentence 7, or section 25b (2) of UStG, or that are owed by an outsourcing company or warehouse keeper. | 65-TaxDecreaseCorrection                      |
+| 67  | 39               | Deduction of the fixed special advance payment for permanent extension. This row is typically filled in only with the last advance notification of the tax period.                                                                                                  | User input parameter in the report dialog box |
+| 68  | 83               | The remaining advance sales tax payment and remaining excess. Include a minus sign in front of the amount.                                                                                                                                                          | Row 62 + Row 64 – Row 65 – Row 66             |
+
+**SECTION – SUPPLEMENTARY INFORMATION ON REDUCTIONS**
+
+| Row | Box – tax base | Box – tax amount | Description                                                            | Lookup result                                                                                                                                                                                                    |
+|-----|----------------|------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 73  | 50             | \-               | Reduction of the tax base on lines 20 through 24.                      | 73-BadDebtsWriteOffStandard (81/50) 73-BadDebtsWriteOffReduced (86/50) 73-BadDebtsWriteOffOtherRates (35/36/50) 73-BadDebtsWriteOffEUSalesAverageRate24 (77/50) 73-BadDebtsWriteOffSalesAverageRate24 (76/80/50) |
+| 74  | \-             | 37               | Reduction of the deductible input tax amounts on lines 55, 59, and 60. | 74-BadDebtsWriteOffInputTax (66/37) 74-BadDebtsWriteOffInputTaxAverageRates (63/37) 74-BadDebtsWriteOffInputTaxEUPurchaseNewVehicles (59/37)                                                                     |
+
+#### Purchase reverse charge VAT
+
+If you configure sales tax codes to post incoming reverse charge VAT by using
+use tax, associate your sales tax codes with the lookup result of **Report field
+lookup** that contains "UseTax" in the name.
+
+Alternatively, you can configure two separate sales tax codes: one for VAT due
+and one for VAT deduction. Then associate each code with the corresponding
+lookup results of **Report field lookup**.
+
+For example, for taxable intra-community acquisitions at a standard rate, you
+configure sales tax code **UT_S_EU** with use tax and associate it with the
+**34-UseTaxEUPurchaseStandard** lookup result of **Report field lookup**. In
+this case, amounts that use the **UT_S_EU** sales tax code are reflected in
+boxes 089 and 061 (rows 34 and 56).
+
+Alternatively, you configure two sales tax codes:
+
+-   **VAT_S_EU**, which has a tax rate value of -19 percent
+
+-   **InVAT_S_EU**, which has a tax rate value of 19 percent
+
+You then associate the codes with lookup results of **Report field lookup** in
+the following way:
+
+-   Associate **VAT_S_EU** with the **34-EUPurchaseStandard** lookup result.
+
+-   Associate **InVAT_S_EU** with the **56-InputTaxEUPurchase** lookup result.
+
+In this case, amounts that use the **VAT_S_EU** sales tax code are reflected in
+box 089 (row 34). Amounts that use the **InVAT_S_EU** sales tax code are
+reflected in box 061 (row 56).
+
+For more information about how to configure reverse charge VAT, see [Reverse
+charges](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reverse-charge).
+
+## Configure system parameters
+
+To generate a VAT declaration, you must configure the tax number (Steuernummer)
+of your organization.
+
+1.  Go to **Organization administration \> Organizations \> Legal entities**.
+
+2.  Select the legal entity, and then select **Registration IDs**.
+
+3.  Select or create the address in Germany, and then, on the **Registration
+    ID** FastTab, select **Add**.
+
+4.  In the **Registration type** field, select the registration type that is
+    dedicated to Germany, and that uses the **Enterprise Id (COID)**
+    registration category.
+
+5.  In the **Registration number** field, enter the tax number.
+
+6.  On the **General** tab, in the **Effective** field, enter the date when the
+    number becomes effective.
+
+For more information about how to set up registration categories and
+registration types, see [Registration
+IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
+
+## Set up a VAT declaration for Germany
+
+### Import ER configurations
+
+Open the **Electronic reporting** workspace, and import the following versions
+or later of these ER formats:
+
+-   VAT Declaration Excel (DE).version.101.16.12.xml
+
+-   VAT Declaration XML (DE).version.101.16.xml
+
+### Set up application-specific parameters for VAT declaration fields
+
+To automatically generate a VAT declaration, associate sales tax codes in the
+application and lookup results in the ER configuration.
+
+Follow these steps to define which sales tax codes generate which boxes on the
+VAT declaration.
+
+1.  Go to **Workspaces \> Electronic reporting**, and select **Reporting
+    configurations**.
+
+2.  Select the **VAT declaration XML (DE)** configuration, and then select
+    **Configurations \> Application specific parameters setup**.
+
+3.  On the **Application specific parameters** page, on the **Lookups** FastTab,
+    select **Report field lookup**.
+
+4.  On the **Conditions** FastTab, set the following fields to associate the
+    sales tax codes and report fields.
+
+| Field                  | Description                                                                                                                                                                                                                                                                                                          |
+|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Lookup result          | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                                                               |
+| Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
+| Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:  |
+
+-   **Purchase**
+
+-   **PurchaseExempt** (tax-exempt purchase)
+
+-   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)
+
+-   **Sales**
+
+-   **SalesExempt** (tax-exempt sale)
+
+-   **SalesReverseCharge** (tax payable from a purchase reverse charge or a
+    sales reverse charge)
+
+-   **Use tax**
+
+For each transaction classifier, a classifier for the credit note is also
+available. For example, one of these classifiers is **PurchaseCreditNote**
+(purchase credit note).
+
+Be sure to create two lines for each sales tax code: one that has the
+transaction classifier value and one that has the transaction classifier for
+credit note value.
+
+>   **Note:** Associate all sales tax codes with lookup results. If any sales
+>   tax codes should not generate values on the VAT declaration, associate them
+>   with the **Other** lookup result.
+
+![](media/69ecb881f12819259ca166b9b98b8303.jpg)
+
+>   Graphical user interface, table Description automatically generated
+
+1.  In the **State** field, change the value to **Completed**.
+
+2.  On the Action Pane, select **Export** to export the settings of the
+    application-specific parameters.
+
+3.  Select the **VAT declaration Excel (DE)** configuration, and then, on the
+    Action Pane, select **Import** to import the parameters that you configured
+    for **VAT declaration XML (DE)**.
+
+4.  In the **State** field, select **Completed**.
+
+### Set up the VAT reporting format for preview amounts in Excel
+
+1.  In the **Feature management** workspace, find and enable the **VAT statement
+    format reports** feature.
+
+2.  Go to **General ledger \> Setup \> General ledger parameters**.
+
+3.  On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT
+    statement format mapping** field, select **VAT declaration Excel (DE)**.
+
+>   This format is printed when you run the **Report sales tax for settlement
+>   period** report. It's also printed when you select **Print** on the **Sales
+>   tax payments** page.
+
+1.  On the **Tax authorities** page, select the tax authority, and then, in the
+    **Report layout** field, select **Default**.
+
+2.  If you're configuring the VAT declaration in a legal entity that has
+    [multiple VAT
+    registrations](https://docs.microsoft.com/dynamics365/finance/localizations/emea-reporting-for-multiple-vat-registrations),
+    follow these steps:
+
+    1.  Go to **General ledger \> Setup \> General ledger parameters**.
+
+    2.  On the **Sales tax** tab, on the **Electronic reporting for
+        countries/regions** FastTab, on the line for **DEU**, select the **VAT
+        Declaration Excel (DE)** ER format.
+
+## Set up electronic messages
+
+### Download and import the data package that has example settings for electronic messages
+
+The data package contains electronic message settings that are used to generate
+the VAT declaration in XML format and then preview it in Excel. You can extend
+these settings or create your own. For more information about how to work with
+electronic messaging and create your own settings, see [Electronic
+messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electronic-messaging).
+
+1.  In [Microsoft Dynamics Lifecycle Services
+    (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select
+    **Data package** as the asset type, and then download **DE VAT declaration
+    EM package**. The downloaded file name is **DE VAT declaration EM
+    package.zip**.
+
+2.  In Dynamics 365 Finance, in the **Data management** workspace, select
+    **Import**.
+
+3.  On the **Import** FastTab, in the **Group name** field, enter a name for the
+    job.
+
+4.  On the **Selected entities** FastTab, select **Add file**.
+
+5.  In **Add file** dialog box, verify that the **Source data format** field is
+    set to **Package**, select **Upload and add**, and then select the zip file
+    that you downloaded earlier.
+
+6.  Select **Close**.
+
+7.  After the data entities are uploaded, on the Action Pane, select **Import**.
+
+8.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
+    messages**, and validate the electronic message processing that you
+    imported.
+
+### Configure electronic messages
+
+1.  Go to **Tax \> Setup \> Electronic messages \> Populate records actions**.
+
+2.  Select the line for **DE Populate VAT return records**, and then select
+    **Edit query**.
+
+3.  Use the filter to specify the settlement periods to include on the report.
+
+4.  If you must report tax transactions from other settlement periods in a
+    different declaration, create a new **Populate records** action, and select
+    the appropriate settlement periods.
+
+## Preview the VAT declaration in Excel
+
+### Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
+
+1.  Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales
+    tax for settlement period**.
+
+2.  In the **Settlement period** field, select a value.
+
+3.  In the **Sales tax payment version** field, select one of the following
+    values:
+
+-   **Original** – Generate a report for the sales tax transactions of the
+    original sales tax payment or before the sales tax payment is generated.
+
+-   **Corrections** – Generate a report for the sales tax transactions of all
+    the subsequent sales tax payments for the period.
+
+-   **Total list** – Generate a report for all the sales tax transactions for
+    the period, including the original and all corrections.
+
+1.  In the **From date** field, select the start date of the reporting period.
+
+2.  Select **OK**, and review the Excel report.
+
+### Settle and post sales tax
+
+1.  Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Settle and
+    post sales tax**.
+
+2.  In the **Settlement period** field, select a value.
+
+3.  In the **Sales tax payment version** field, select one of the following
+    values:
+
+-   **Original** – Generate the original sales tax payment for the settlement
+    period.
+
+-   **Latest corrections** – Generate a correction sales tax payment after the
+    original sales tax payment for the settlement period was created.
+
+1.  In the **From date** field, select the start date of the reporting period.
+
+2.  Select **OK**.
+
+### Preview the VAT declaration in Excel from a sales tax payment
+
+1.  Go to **Tax \> Inquiries and reports \> Sales tax inquiries \> Sales tax
+    payments**, and select a sales tax payment line.
+
+2.  Select **Print report**, and then select **OK**.
+
+3.  Review the Excel file that is generated for the selected sales tax payment
+    line.
+
+**Note:** The report is generated only for the selected line of the sales tax
+payment. If you want to generate, for example, a corrective declaration that
+contains all the corrections for the period, or a replacement declaration that
+contains the original data and all corrections, use the **Report sales tax for
+settlement period** periodic task.
+
+## Generate a VAT declaration from electronic messages
+
+When you use electronic messages to generate the report, you can collect tax
+data from multiple legal entities. For more information, see the [Run a VAT
+declaration for multiple legal
+entities](#run-a-vat-declaration-for-multiple-legal-entities) section later in
+this topic.
+
+The following procedure applies to the electronic message processing example
+that you imported from the LCS Shared asset library.
+
+1.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
+    messages**.
+
+2.  In the left pane, select **DE VAT declaration**.
+
+3.  On the **Messages** FastTab, select **New**, and then, in the **Run
+    processing** dialog box, select **OK**.
+
+4.  Select the message line that is created, enter a description, and then
+    specify the start and end dates for the declaration.
+
+>   **Note:** Steps 5 through 7 are optional.
+
+1.  Optional: On the **Messages** FastTab, select **Collect data**, and then
+    select **OK**. The sales tax payments that were generated earlier are added
+    to the message. For more information, see the [Settle and post sales
+    tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip
+    this step, you can still generate a VAT declaration by using the **Tax
+    declaration version** field in the **Declaration** dialog box.
+
+2.  Optional: On the **Message items** FastTab, review the sales tax payments
+    that are transferred for processing. By default, all sales tax payments of
+    the selected period that weren't included in any other message of the same
+    processing are included.
+
+3.  Optional: Select **Original document** to review the sales tax payments, or
+    select **Delete** to exclude sales tax payments from processing. If you skip
+    this step, you can still generate a VAT declaration by using the **Tax
+    declaration version** field in the **Declaration** dialog box.
+
+4.  On the **Messages** FastTab, select **Update status**. In the **Update
+    status** dialog box, select **Ready to generate**, and then select **OK**.
+    Verify that the message status is changed to **Ready to generate**.
+
+5.  Select **Generate report**. To preview the VAT declaration amounts, in the
+    **Run processing** dialog box, select **Preview report**, and then select
+    **OK**.
+
+6.  In the **Electronic reporting parameters** dialog box, set the following
+    fields, and then select **OK**.
+
+| **Field**                                   | **Description**                                                                                                                                                                                                              |
+|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Settlement period                           | Select the settlement period. If you selected **Collect data** in step 5, you can leave this field blank. The report will be generated for the sales tax transactions that are included in the collected sales tax payments. |
+| Tax declaration version                     | Select one of the following values:                                                                                                                                                                                          |
+| Special advance payment permanent extension | Enter the amount that will be exported in row 67 (box 39) of the VAT declaration.                                                                                                                                            |
+
+-   **Original** – Generate a report for the sales tax transactions of the
+    original sales tax payment or before the sales tax payment is generated.
+
+-   **Corrections** – Generate a report for the sales tax transactions of all
+    the subsequent sales tax payments for the period.
+
+-   **Total list** – Generate a report for all the sales tax transactions for
+    the period, including the original and all corrections.
+
+If you selected **Collect data** in step 5, you can leave this field blank. The
+report will be generated for the sales tax transactions that are included in the
+collected sales tax payments.
+
+1.  Select **Attachments** in the upper-right corner of the page, and then
+    select **Open**.
+
+2.  Review the amounts in the Excel document, and then select **Generate
+    report**.
+
+3.  To generate a VAT declaration in XML format, in the **Run processing**
+    dialog box, select **Generate report**, and then select **OK**.
+
+4.  In the **Electronic reporting parameters** dialog box, set the fields as
+    described in step 10.
+
+5.  Select **Attachments** in the upper-right corner of the page, download the
+    file, and use it for your submission to the tax authority.
+
+## Run a VAT declaration for multiple legal entities
+
+To use the formats to report the VAT declaration for a group of legal entities,
+you must first set up the application-specific parameters of the ER formats for
+sales tax codes from all required legal entities.
+
+### Set up electronic messages to collect tax data from several legal entities
+
+Follow these steps to set up electronic messages that will collect data from
+multiple legal entities.
+
+1.  Go to **Workspaces \> Feature management**.
+
+2.  Find and select the **Cross-company queries for the populate records
+    actions** feature in the list, and then select **Enable now**.
+
+3.  Go to **Tax \> Setup \> Electronic messages \> Populate records actions**.
+
+4.  On the **Populate records action** page, select the line for **DE Populate
+    VAT return records**.
+
+>   In the **Datasources setup** grid, a new **Company** field is available. For
+>   existing records, this field shows the identifier of the current legal
+>   entity.
+
+1.  In the **Datasources setup** grid, add a line for each additional legal
+    entity that must be included in reporting. For each new line, set the
+    following fields.
+
+| Field                  | Description                                                                                                                   |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Name                   | Enter a value that will help you understand where this record comes from. For example, enter **VAT payment of Subsidiary 1**. |
+| Message item type      | Select **VAT return**. This value is the only value that is available for all the records.                                    |
+| Account type           | Select **All**.                                                                                                               |
+| Master table name      | Specify **TaxReportVoucher** for all the records.                                                                             |
+| Document number field  | Specify **Voucher** for all the records.                                                                                      |
+| Document date field    | Specify **TransDate** for all the records.                                                                                    |
+| Document account field | Specify **TaxPeriod** for all the records.                                                                                    |
+| Company                | Select the ID of the legal entity.                                                                                            |
+| User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**.                                 |
+
+2.  For each new line, select **Edit query**, and specify a related settlement
+    period for the legal entity that is specified in the **Company** field on
+    the line.
+
+When the setup is completed, the **Collect data** function on the **Electronic
+messages** page collects sales tax payments from all legal entities that you
+defined.
