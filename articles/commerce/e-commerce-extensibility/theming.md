@@ -33,6 +33,7 @@ This topic presents an overview of online site theming in Microsoft Dynamics 365
 
 A Dynamics 365 Commerce theme (also called a theme pack) defines the look and feel of the site brand and modules that make up an e-commerce page for merchants and their customers.  Only one theme pack can be set for a given e-commerce site.  
 
+
 A theme pack can also contain one or more [style presets](../style-presets.md) that define a different set of styles for each preset, these include styles for individual modules as well as global styles such as the brand accent color that the theme developer chose to expose.  For example, a theme could contain style presets for a 'light' versus 'dark' based theme or perhaps a 'classic' versus 'vintage' look and feel.  The definition and naming of style presets is left to the the theme developer.  Style presets support global CSS values such as brand colors and fonts and module specific CSS that could include text color and size for an individual module.  Only one style preset can be configured per site, however the CSS values can be overridden from within the site builder tool and saved as a custom style preset if changes are desired. An example style preset change is a change to the default global brand accent color which various modules leverage or a change of a font size within a particular module, whenever that module is rendered on a site page it will use the new value.
 
 
