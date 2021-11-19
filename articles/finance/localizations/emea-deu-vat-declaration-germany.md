@@ -66,7 +66,7 @@ The advance VAT declaration in Germany contains the following information.
 
 | Row | Box – tax base | Box – tax amount | Description                                                                        | Lookup result                                                                                        |
 |-----|----------------|------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| 40  | 46             | 47               | Other services of an entrepreneur, based on the rest of the Community area.        | 40-BeneficiaryTaxDebtor                                                                              |
+| 40  | 46             | 47               | Other services of an entrepreneur, based on the rest of the Community area.        | 40-BeneficiaryTaxDebtor</br>40-UseTaxBeneficiaryTaxDebtor (46/47/66)                                                                              |
 | 41  | 73             | 74               | Sales that fall under section 13b (2) no. 3 of UStG.                               | 41-BeneficiaryTaxDebtorRealEstateTransfer</br>41-UseTaxBeneficiaryTaxDebtorRealEstateTransfer (73/74/67) |
 | 42  | 84             | 85               | Other services that fall under section 13b (2) no. 1, 2, and 4 through 12 of UStG. | 42-BeneficiaryTaxDebtorOther</br>42-UseTaxBeneficiaryTaxDebtorOther (84/85/67)                           |
 
