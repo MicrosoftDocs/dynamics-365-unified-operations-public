@@ -4,7 +4,7 @@
 title: Configuration for Finance insights
 description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
-ms.date: 1/03/2021
+ms.date: 11/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,23 +51,17 @@ Follow these steps to deploy the environments.
 
 Azure Active Directory (Azure AD) must be configured so that it can be used with Dataverse and the Microsoft Power Platform applications. This configuration requires that either the **Project Owner** role or the **Environment Manager** role be assigned to the user in the **Project security role** field in LCS.
 
-If a managed data lake (MDL) is used, verify that the following setup is completed:
+Verify that the following setup is completed:
 
 - You have **System administrator** and **System Customizer** access in the Power Portal admin center.
 - A Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
 
-If bring your own lake (BYOL) is used, verify that the following setup is completed:
-
-- You have **System administrator** and **System Customizer** access in the Power Portal admin center.
-- A Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
-- The following Azure AD apps are registered in Azure AD.
+The following Azure AD apps are registered in Azure AD.
 
     |  Application                             | App ID                               |
     |------------------------------------------|--------------------------------------|
-    | Microsoft Dynamics ERP Microservices     | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
     | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    | AI Builder Authorization Service         | ad40333e-9910-4b61-b281-e3aeeb8c3ef3 |
-
+    
 ## Configure Dataverse
 
 Follow these steps to configure Dataverse for Finance insights.
