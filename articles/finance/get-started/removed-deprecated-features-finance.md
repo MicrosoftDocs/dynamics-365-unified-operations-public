@@ -42,8 +42,8 @@ This list is intended to help you consider these removals and deprecations for y
 ## Features removed or deprecated in the Finance 10.0.24 release
 
 ### ELSTER declaration for Germany (design based on reporting codes)
-(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-de-vat-declaration)
-(https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany?toc=/dynamics365/finance/toc.json)
+(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-de-vat-declaration)</br>
+(https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany?toc=/dynamics365/finance/toc.json)</br>
 (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/de-00003-electronic-transmission-elster)
 | &nbsp; | &nbsp; |
 |------------|--------------------|
