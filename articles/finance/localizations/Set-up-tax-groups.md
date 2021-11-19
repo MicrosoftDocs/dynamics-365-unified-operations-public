@@ -43,9 +43,11 @@ This section explains the essential setups for a tax group.
 1. Open the **Tax group** tab, click **Manage Column** button (If it's your first time configure Tax group, the Manage Column form will be populated automatically)
 
 2. Select **Tax group** field under **Lines**
+
 ![select-tax-group](media/select-tax-group.png)
 
 3. Click **Add** arrow to add this field into the **Selected Columns**
+
 ![add-tax-group](media/add-tax-group.png)
 
 4. Click **OK**
