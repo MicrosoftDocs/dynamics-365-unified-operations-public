@@ -41,10 +41,12 @@ This section explains the essential setups for a item tax group.
 1. Open the **Item tax group** tab, click **Manage Column** button (If it's your first time configure Item tax group, the Manage Column form will be populated automatically)
 
 2. Select **Item tax group** field under **Lines**
-![select-item-tax-group](media\select-item-tax-group.png)
+
+![select-item-tax-group](media/select-item-tax-group.png)
 
 3. Click **Add** arrow to add this field into the **Selected Columns**
-![add-item-tax-group](media\add-item-tax-group.png)
+
+![add-item-tax-group](media/add-item-tax-group.png)
 
 4. Click **OK**
 
@@ -54,7 +56,7 @@ This section explains the essential setups for a item tax group.
 
 After you complete above steps, the item tax group applicability rule matrix should be initiated.
 
-![initial-item-tax-group](media\initial-item-tax-group.png)
+![initial-item-tax-group](media/initial-item-tax-group.png)
 
 
 
@@ -68,7 +70,7 @@ You can add lines here to configure item tax group
 > [!NOTE]
 > You can select multiple tax codes under one item tax group by ticking the radio before tax code name
 
-![multiple-tax-codes-selection](media\multiple-tax-codes-selection.png)
+![multiple-tax-codes-selection](media/multiple-tax-codes-selection.png)
 
 4. Repeat step 1 to step 3 to add multiple item tax groups
 
