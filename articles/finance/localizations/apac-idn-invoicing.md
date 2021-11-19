@@ -62,7 +62,7 @@ Implemented functionality includes the following capabilities:
 2.  Enabling Electronic Invoicing for Indonesia (see Enabling Electronic
     Invoicing for **Indonesia** section) and set up application specific
     parameters.
-3.  [Configure Electronic invoicing solution in Microsoft Dataverse](/e-invoicing-power-platform-plug-in.md)
+3.  [Configure Electronic invoicing solution in Microsoft Dataverse](e-invoicing-power-platform-plug-in.md)
 
 # Tax invoice numbering
 
