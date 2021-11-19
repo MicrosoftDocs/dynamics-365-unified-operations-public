@@ -73,3 +73,12 @@ The cash flow forecasting function in Cash and bank management and the Cash flow
 First, set up and enable the cash flow forecasting and liquidity accounts. For more information, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md). If this setup has been completed, but you don't see the results that you expect, see [Troubleshoot cash flow forecasting setup](../cash-bank-management/cash-flow-forecasting-tsg.md) for more information.
 
 Next, confirm that the Cash flow forecasts feature in Finance insights (**Cash and bank management \> Setup \> Finance Insights \> Cash flow forecasts**) has been enabled, and that training of the AI model has been completed. If the training hasn't been completed, select **Forecast now** to start the model training process.
+
+## Symptom: Why isn't the **Install a new add-in** button visible in LCS?
+
+### Resolution
+
+First, verify that the user that's logged is assigned to the Environment Manager or Project Owner on the **Project security role** field in LCS.  This security role is required to install the new add-ins.
+
+If you are assigned to the correct project security role, you might need to refresh of your browser to view the **Install new add-in** button.  
+
