@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 
-A Dynamics 365 Commerce theme defines the look and feel of modules that make up an e-commerce page for merchants and their customers.  A theme kit can optionaly contain one or more style presets that can define different styles for the selected style preset.  Only one theme and style preset can be configured per site.  As an example a theme could contain two style presets for a 'light' versus 'dark' based theme or perhaps a 'classic' versus 'vintage' look and feel.  
+A Dynamics 365 Commerce theme defines the look and feel of modules that make up an e-commerce page for merchants and their customers.  A theme kit can optionaly contain one or more [style presets](..\style-presets.md) that can define different styles for the selected style preset.  Only one theme and style preset can be configured per site.  As an example a theme could contain two style presets for a 'light' versus 'dark' based theme or perhaps a 'classic' versus 'vintage' look and feel.  
 
 Themes include SCSS (Sassy Cascading Style Sheets) files that you can use to style your modules and can can optionally contain [module view extensions](e-commerce-extensibility/theme-module-extensions.md#theme-module-view-extensions) and [module definition extensions](theme-module-extensions.md#theme-definition-extensions), so that modules can render different views, based on the theme that is selected. 
 
