@@ -22,9 +22,23 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 Check out the latest information about dual-write features and changes in the [release plans](/dynamics365/release-plans/).
 
-+ [Data in Dataverse – Phase 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
-+ [Data in Dataverse – phase 1 & 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
-+ [Finance and Operations data in Dataverse – Phase 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+
+## October 2021 release  
+
+The October release of [Dual-write application orchestration solution version 2.3.1.15](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.30]((https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write)). It includes 5 bug fixes as shown below.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Bug fix| In customer engagement apps, on an account record, changing the relationship type from Prospect to Vendor doesn't create a vendor record.| General availability |
+| Bug fix| In customer engagement apps, on a contact record, setting the IsVendor=Yes doesn’t create a vendor record.| General availability |
+| Bug fix| On the Field Service purchase order form, Contact Person ID is not filtered against the selected Vendor.| General availability |
+| Bug fix| When the Intelligent Order Management is configured, allow order creation without specifying a company name.| General availability |
+| Bug fix| "Active Contacts" and "All Contacts" views are filtering (jump bar A, b, c, d) on company field instead of full name.| General availability |
+
+This release includes changes to 2 workflow templates. In order to take these changes, you need to deactivate any existing workflow created using the older version and recreate them using the new ones.
+	• Create Vendors in Vendors Table
+ * Create Vendors of type Person in Vendors Table
+
 
 ## September 2021 release of party and global address book 
 
