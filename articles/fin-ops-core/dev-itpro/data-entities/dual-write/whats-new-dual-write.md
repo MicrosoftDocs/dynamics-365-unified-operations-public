@@ -25,7 +25,7 @@ Check out the latest information about dual-write features and changes in the [r
 
 ## October 2021 release  
 
-The October release of [Dual-write application orchestration solution version 2.3.1.15](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.30]((https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write)). It includes 5 bug fixes as shown below.
+The October release of [Dual-write application orchestration solution version 2.3.1.15](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.30](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). It includes 5 bug fixes as shown below.
 
 | Feature | Description |Status |
 |------|---------|-------|
@@ -36,8 +36,10 @@ The October release of [Dual-write application orchestration solution version 2.
 | Bug fix| "Active Contacts" and "All Contacts" views are filtering (jump bar A, b, c, d) on company field instead of full name.| General availability |
 
 This release includes changes to 2 workflow templates. In order to take these changes, you need to deactivate any existing workflow created using the older version and recreate them using the new ones.
-	• Create Vendors in Vendors Table
- * Create Vendors of type Person in Vendors Table
+
+	• Create Vendors in Vendors Table	
+	
+	• Create Vendors of type Person in Vendors Table
 
 
 ## September 2021 release of party and global address book 
