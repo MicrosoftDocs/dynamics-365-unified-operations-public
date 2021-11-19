@@ -72,10 +72,8 @@ number of tax invoices that is given by **Directorate General of Taxation**
 
 These numbers should have the following structure:
 
-![Diagram Description automatically
-generated](media/f2eae475dae801c10bc32454a52fb2cb.jpeg)
+![Structure of tax serial numbers](media/apac-idn-structure-of-tax-invoice-number.png)
 
-​
 
 **Transaction code (2 digit):** from 01 to 09 ​
 
