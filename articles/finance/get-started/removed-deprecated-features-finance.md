@@ -39,6 +39,30 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Features removed or deprecated in the Finance 10.0.24 release
+
+### ELSTER declaration for Germany (design based on reporting codes)
+(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-de-vat-declaration)
+(https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany?toc=/dynamics365/finance/toc.json)
+(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/de-00003-electronic-transmission-elster)
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with new VAT declaration design |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support "Elster (DE)", "Elster model" Electronic reporting (ER) formats. New VAT declaration XML (DE), VAT declaration Excel (DE) are introduced instead under the "Tax declaration" model. |
+
+### OB declaration for Netherlands (design based on reporting codes)
+(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nl-vat-declaration)
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with new VAT declaration design - https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nl-vat-declaration-netherlands |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support "OB declaration (NL)", "OB declaration model" Electronic reporting (ER) formats. New VAT declaration XML (NL), VAT declaration Excel (NL) are introduced instead under the "Tax declaration" model. |
+
 ## Features removed or deprecated in the Finance 10.0.20 release
 
 ### "RTIR Query Invoice Data Request (HU)" Electronic reporting (ER) format configuration
