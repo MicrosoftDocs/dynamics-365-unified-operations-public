@@ -74,11 +74,10 @@ First, set up and enable the cash flow forecasting and liquidity accounts. For m
 
 Next, confirm that the Cash flow forecasts feature in Finance insights (**Cash and bank management \> Setup \> Finance Insights \> Cash flow forecasts**) has been enabled, and that training of the AI model has been completed. If the training hasn't been completed, select **Forecast now** to start the model training process.
 
-## Symptom: Why isn't the **Install a new add-in** button visible in Lifecycle Services (LCS)?
+## Symptom: Why isn't the Install a new add-in button visible in Microsoft Dynamics Lifecycle Services?
 
 ### Resolution
 
-First, verify that the user that's logged is assigned to the Environment Manager or Project Owner on the **Project security role** field in LCS.  This security role is required to install the new add-ins.
+First, verify that the **Environment Manager** or **Project Owner** role is assigned to the signed-in user in the **Project security role** field in Microsoft Dynamics Lifecycle Services (LCS). Installation of the new add-ins requires one of these project security roles.
 
-If you are assigned to the correct project security role, you might need to refresh of your browser to view the **Install new add-in** button.  
-
+If the correct project security role is assigned to you, you might have to refresh your browser window to see the **Install new add-in** button.
