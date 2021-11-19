@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration for Indonesia (ID-00004)
-description: This topic explains how to configure and generate the SPT Masa PPN 1111 (Pajak Pertambahan Nilai) form for Indonesia.
+description: This topic explains how to configure tax invoice numbering, to configure and run export sales invoices in the file and import vendor invoices from files for Indonesia.
 author: v-olgaoskina
 ms.date: 11/19/2021
 ms.topic: article
@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 10.0.23
 
 ---
 
-#Invoicing for Indonesia
+# Invoicing for Indonesia
 
 Implemented functionality includes the following capabilities:
 
@@ -37,10 +37,10 @@ Implemented functionality includes the following capabilities:
 
 -   Allocate tax invoice numbers for customers​
 
-1.  Creation of replacement invoices and credit notes (item returns) with tax
+2.  Creation of replacement invoices and credit notes (item returns) with tax
     invoice number and relating them with the original invoice​
 
-2.  Export of sales invoices and import of vendor invoices using Regulatory
+3.  Export of sales invoices and import of vendor invoices using Regulatory
     Configuration Service (RCS)
 
 # Prerequisites
@@ -59,9 +59,10 @@ Implemented functionality includes the following capabilities:
     [Microsoft
     Docs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)​.
 
-1.  Enabling Electronic Invoicing for Indonesia (see Enabling Electronic
+2.  Enabling Electronic Invoicing for Indonesia (see Enabling Electronic
     Invoicing for **Indonesia** section) and set up application specific
     parameters.
+3.  [Configure Electronic invoicing solution in Microsoft Dataverse](/e-invoicing-power-platform-plug-in.md)
 
 # Tax invoice numbering
 
@@ -680,3 +681,5 @@ notice sections in country-specific feature documentation for more information.
 
     -   [Set up Electronic
         invoicing](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-setup)
+        
+  [!INCLUDE[footer-include](../../includes/footer-banner.md)]
