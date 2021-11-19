@@ -50,7 +50,7 @@ There is an additional configuration needed in site builder when setting a theme
 
 ![Theme selection.](media/theming-3.png)
 
-The site builder tool also lets you upload additional [CSS (Cascading Style Sheets) overrides](..\css-override-files.md). In that way, you can make changes on top of the selected theme within site builder directly without the need to make code changes to a theme and deploy them again.  This is good for making small quick changes, but it's recommended that the changes be eventually migrated to the theme code.  There can be a small perf hit with the additional CSS override file being loaded for every page.
+The site builder tool also lets you upload additional [CSS (Cascading Style Sheets) overrides](../css-override-files.md). In that way, you can make changes on top of the selected theme within site builder directly without the need to make code changes to a theme and deploy them again.  This is good for making small quick changes, but it's recommended that the changes be eventually migrated to the theme code.  There can be a small perf hit with the additional CSS override file being loaded for every page.
 
 ## General guidelines for creating a custom theme
 
