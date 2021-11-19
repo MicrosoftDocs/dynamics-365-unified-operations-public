@@ -81,3 +81,18 @@ Next, confirm that the Cash flow forecasts feature in Finance insights (**Cash a
 First, verify that the **Environment Manager** or **Project Owner** role is assigned to the signed-in user in the **Project security role** field in Microsoft Dynamics Lifecycle Services (LCS). Installation of the new add-ins requires one of these project security roles.
 
 If the correct project security role is assigned to you, you might have to refresh your browser window to see the **Install new add-in** button.
+
+## Symptom: The Finance insights add-in doesn't seem to be installing. Why is that?
+
+### Resolution
+
+Verify that the following setup has been completed:
+
+- Verify that you have **System administrator** and **System Customizer** access in the Power Portal admin center.
+- Verify that a Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
+- Verify that the following Azure AD app is registered in Azure AD: 
+
+  | Application                  | App ID           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  
