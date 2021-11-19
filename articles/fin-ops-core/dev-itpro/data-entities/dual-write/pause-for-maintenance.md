@@ -23,7 +23,8 @@ You can pause table maps, either manually or automatically via rules. By pausing
 When you pause a table map that is in the **Running** state, all records that have been created or updated are queued until you resume the table map. The queued records are stored in secure Microsoft Azure storage. They are then played back when you resume the table map and put it back into the **Running** state.
 
 > [!NOTE]
-> While a table map is in the **Paused** state, there are limits on the number of records that you can queue and the amount of time that you can queue them for. Whichever limit occurs first will apply. The process starts with soft limits and eventually enforces harder limits to help protect you from exceeding the storage limits.
+> While a table map is in the **Paused** state, the following limits apply: A pause can only be active for a maximum of 7 days; there is a maximum size of 1GB worth of records >that can be queued up. Reaching either one of these limits will result in a block on all additional records until the sync is resumed and the queued records are caught up. >Users will have to manually resume the job in order for the catch up to be completed.
+
 
 Records that have been created or updated for a table map that is in the **Paused** state can be viewed on the **Queued records** tab for each table map.
 
