@@ -74,7 +74,7 @@ First, set up and enable the cash flow forecasting and liquidity accounts. For m
 
 Next, confirm that the Cash flow forecasts feature in Finance insights (**Cash and bank management \> Setup \> Finance Insights \> Cash flow forecasts**) has been enabled, and that training of the AI model has been completed. If the training hasn't been completed, select **Forecast now** to start the model training process.
 
-## Symptom: Why isn't the **Install a new add-in** button visible in LCS?
+## Symptom: Why isn't the **Install a new add-in** button visible in Lifecycle Services (LCS)?
 
 ### Resolution
 
