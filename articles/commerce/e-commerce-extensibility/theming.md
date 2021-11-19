@@ -83,7 +83,7 @@ yarn msdyn365 clone fabrikam my-new-theme
 
 Note: Themes are just special modules to the system, and thus the module clone command used above will automatically put the new cloned theme in the "\src\modules" directory, so you will need to manually move the new theme to the "\src\themes" directory.  If the "\src\themes" directory does not exist, it can be manually created.
 
-The [Adventure Works theme](..\adventure-works-theme.md) is not included in the module library but instead is shipped as an extension, follow steps here to [install the Adventure Works theme](..\install-adventure-works.md).  The clone command will not work for this theme, but the source code can be copied to your themes directory and changed as needed.
+The [Adventure Works theme](../adventure-works-theme.md) is not included in the module library but instead is shipped as an extension, follow steps here to [install the Adventure Works theme](../install-adventure-works.md).  The clone command will not work for this theme, but the source code can be copied to your themes directory and changed as needed.
 
 
 ## Recommended structure for a custom theme
