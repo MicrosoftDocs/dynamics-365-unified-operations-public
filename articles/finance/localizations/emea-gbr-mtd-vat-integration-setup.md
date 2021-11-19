@@ -189,7 +189,7 @@ The process of setting up the [Electronic messages](../general-ledger/electronic
 4. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 5. You can now import data from the **UK MTD VAT setup** file into the selected company. In the **Data management** workspace, select **Import**, and then, on the **Import** FastTab, in the **Group name** field, select a value.
 6. On the **Selected entities** FastTab, select **Add file**.
-7. In the **Source data format** field, select **Package** and then select **Upload and add**. 
+7. In the **Source data format** field, select **Package**, and then select **Upload and add**. 
 8. Find and select the **UK MTD VAT setup** file that you downloaded in step 1.
 9. Wait until the data entities from the file are listed in the grid on the **Selected entities** FastTab, and then select **Close**.
 10. On the Action Pane, select **Import** to start the import.
