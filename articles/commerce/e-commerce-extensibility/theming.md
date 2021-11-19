@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce lets you apply a theme to your whole online site, individual templates, or individual pages. For example, you might have a default theme that is set for the whole online site and a campaign theme that is applied to just a subset of the pages on the site. 
+A Dynamics 365 Commerce theme defines the look and feel of modules that make up an e-commerce page for merchants and their customers.  A theme kit can optionaly contain one or more style presets that can define different styles for the selected style preset.  Only one theme and style preset can be configured per site.  As an example a theme could contain two style presets for a 'light' versus 'dark' based theme or perhaps a 'classic' versus 'vintage' look and feel.  
 
-Themes include Sassy Cascading Style Sheets (SCSS) files that you can use to format your site pages and modules. They can optionally also contain module view and definition extensions, so that modules can render different views, depending on the theme that is selected. 
+Themes include SCSS (Sassy Cascading Style Sheets) files that you can use to style your modules and can can optionally contain [module view extensions](e-commerce-extensibility/theme-module-extensions.md#theme-module-view-extensions) and [module definition extensions](theme-module-extensions.md#theme-definition-extensions), so that modules can render different views, based on the theme that is selected. 
 
-After a theme is created and uploaded to your production site, you can use the Commerce site builder tool to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied, so that all the modules on that page have a consistent look and feel. The site builder tool also lets you upload additional Cascading Style Sheets (CSS) overrides. In that way, you can make changes on top of the selected theme.
+After a theme is created and uploaded to your production site, you can use the Commerce site builder tool to set the theme for the site. When an online page is rendered, the appropriate theme is applied, so that all the modules on that page have a consistent look and feel. The site builder tool also lets you upload additional [CSS (Cascading Style Sheets) overrides](..\css-override-files.md). In that way, you can make changes on top of the selected theme within site builder directly.
 
 The following illustration shows how a theme is selected for a page in Dynamics 365 Commerce. Notice that the page container (**Default page**) is selected, and the **Theme** field for the page appears in the properties pane on the right.
 
