@@ -2,16 +2,15 @@
 # required metadata
 
 title: Dynamics 365 Translation Service Azure DevOps extension
-description: This article explains how to integrate the Microsoft Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
+description: This article explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
-ms.date: 11/15/2021
+ms.date: 11/19/2021
 ms.topic: article
 audience: IT Pro
-ROBOTS: NOINDEX, NOFOLLOW
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: joshsantana
-ms.search.validFrom: 2021-11-15
+ms.search.validFrom: 2021-11-19
 
 ---
 
@@ -24,7 +23,8 @@ To start using the DTS pipeline tasks, you must install the extension to your or
 
 This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/create-first-pipeline).
 
-[!NOTE] The Dynamics 365 Translation Service extension for Azure DevOps is only available as public preview. As Dynamics 365 Translation Service is currently only deployed in the US, your data may be processed and stored outside of your geo-political boundary.
+> [!NOTE] 
+> The Dynamics 365 Translation Service extension for Azure DevOps is only available as public preview. As Dynamics 365 Translation Service is currently only deployed in the US, your data may be processed and stored outside of your geo-political boundary.
 
 ## Running a task
 To create new translation, regeneration, or alignment requests, add a new task in the YAML for your pipeline.
