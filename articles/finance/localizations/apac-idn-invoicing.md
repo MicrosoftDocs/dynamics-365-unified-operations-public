@@ -1,4 +1,31 @@
-Invoicing for Indonesia
+---
+# required metadata
+
+title: VAT declaration for Indonesia (ID-00004)
+description: This topic explains how to configure and generate the SPT Masa PPN 1111 (Pajak Pertambahan Nilai) form for Indonesia.
+author: v-olgaoskina
+ms.date: 11/19/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Indonesia
+# ms.search.industry: 
+ms.author: v-olgaoskina
+ms.search.validFrom: 
+ms.dyn365.ops.version: 10.0.23
+
+---
+
+#Invoicing for Indonesia
 
 Implemented functionality includes the following capabilities:
 
