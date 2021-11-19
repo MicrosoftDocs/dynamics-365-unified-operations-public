@@ -47,14 +47,36 @@ Follow these steps to deploy the environments.
 
 2. If you're configuring Finance insights in a sandbox environment, you might have to copy production data to that environment before predictions will work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn't contain enough historical data to adequately train the prediction model. 
 
+## Configure Azure AD Tenant
+
+The Azure AD (Azure Active Directory, also referred to as AAD) must be configured for use with Dataverse and the Power Platform applications. Configuring ADD for those purposes requires the user to have either the Project Owner or Environment Manager role assigned in the Project security role field in LCS.
+
+If managed data lake (MDL) is being used:
+- Verify that you have System administrator and System Customizer access in the Power Portal admin center
+- Verify that you have a Dynamics 365 Finance or equivalent license applied to the user installing the add-in
+
+If choosing bring your own lake (BYOL):
+- Verify that you have System administrator and System Customizer access in the Power Portal admin center
+- Verify that you have a Dynamics 365 Finance or equivalent license applied to the user installing the add-in
+- Verify that you have the following AAD apps registered in AAD 
+
+|  Application                                   	| App ID                                    	|
+| :------------------------------------------------	| :--------------------------------------------	|
+| Microsoft Dynamics   ERP Microservices      	| 0cdb527f-a8d1-4bf8-9436-b352c68682b2    	|
+| Microsoft Dynamics ERP Microservices CDS    	| 703e2651-d3fc-48f5-942c-74274233dba8    	|
+| AI Builder   Authorization Service          	| ad40333e-9910-4b61-b281-e3aeeb8c3ef3    	|
+
 ## Configure Dataverse
 
 Follow these steps to configure Dataverse for Finance insights.
 
 - In LCS, open the environment page, and verify that the **Power Platform Integration** section is already set up.
 
-    - If it's already set up, the Dataverse environment name that is linked to the Finance environment should be listed.
-    - If it isn't yet set up, select **Setup**. Setup of the Dataverse environment might take up to an hour. When the setup is successfully completed, the Dataverse environment name that is linked to the Finance environment should be listed.
+  - If Dataverse has already been set up, the Dataverse environment name that is linked to the Finance environment should be listed.
+  - If Dataverse hasn't been set up yet, select **Setup**. Setting up the Dataverse environment can take up to an hour. When the setup has been completed successfully, the Dataverse environment name that's linked to in the Finance environment should be listed.
+  - If this integration was set up with an existing Microsoft Power Platform environment, be sure that the linked environment is not in the disabled state by checking with your administrator. 
+    - For more information, see [Enabling the Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). 
+    - Click this link to access the [Power Platform Admin site](https://admin.powerplatform.microsoft.com/environments).
 
 ## Configure the Finance insights add-in
 
