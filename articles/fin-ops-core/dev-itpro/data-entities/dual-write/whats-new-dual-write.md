@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
 author: tonyafehr
-ms.date: 08/11/2021
+ms.date: 11/19/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -26,11 +26,11 @@ The November 2021 release of the [Dual-write Party and Global Address Book Solut
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Single view for party| We are providing a new form to access Party data. Party form provides the capability to view and manage party records along with all its associated customers, contacts and vendors and their postal addresses and electronic addresses from a single form.| General availability |
-| Bug fix| On the accounts form, postal address updates from summary tab does not synchronize, causing data mismatch between dataverse and finance and operations apps. | General availability |
-| Bug fix| When an electronic address is changed from non-primary to primary, the updates to telephone extension/description fields does not synchronize from msdyn_partyelectronicaddress to Contact table.  | General availability |
-| Bug fix| Error while updating gender field on Contact record to non-specific in Finance and Operations apps. | General availability |
-| Bug fix| In Finance and Operations apps, during address creation, when a 2nd address is marked as primary and saved, the IsPrimary value change does not reflect on dataverse. | General availability |
+| Single view for party| We are providing a new form to access Party data. The **Party** form provides the capability to view and manage party records along with all the associated customers, contacts, and vendors and their postal addresses and electronic addresses from a single form.| General availability |
+| Bug fix| On the **Accounts** form, postal address updates from the **Summary** tab do not synchronize, which causes a data mismatch between Microsoft Dataverse and Finance and Operations apps. | General availability |
+| Bug fix| When an electronic address is changed from non-primary to primary, the updates to telephone extension/description fields does not synchronize from msdyn_partyelectronicaddress to **Contact** table.  | General availability |
+| Bug fix| Error while updating the **Gender** field on a Contact record to "non-specific" in Finance and Operations apps. | General availability |
+| Bug fix| In Finance and Operations apps, during address creation, when a second address is marked as primary and saved, the IsPrimary value change does not reflect in Dataverse. | General availability |
 
 ## September 2021 release of party and global address book 
 
