@@ -39,7 +39,7 @@ A theme pack can also contain one or more [style presets](../style-presets.md) t
 Style presets support global CSS values such as brand colors and fonts and module specific CSS that could include text color and size for an individual module.  Only one style preset can be configured per site, however the CSS values can be overridden from within the site builder tool and saved as a custom style preset if changes are desired. An example style preset change is a change to the default global brand accent color which various modules leverage or a change of a font size within a particular module, whenever that module is rendered on a site page it will use the new value.
 
 
-Themes include SCSS (Sassy Cascading Style Sheets) files that you can use to style your modules and can can optionally contain [module view extensions](e-commerce-extensibility/theme-module-extensions.md#theme-module-view-extensions) and [module definition extensions](theme-module-extensions#theme-definition-extensions.md), so that modules can render different views, based on the theme that is selected. 
+Themes include SCSS (Sassy Cascading Style Sheets) files that you can use to style your modules and can can optionally contain [module view extensions](theme-module-extensions.md#theme-module-view-extensions) and [module definition extensions](theme-module-extensions#theme-definition-extensions.md), so that modules can render different views, based on the theme that is selected. 
 
 After a theme is created it can be uploaded to your sandbox or production site.  A theme pack is selected when creating a new site as shown below:
 
