@@ -58,9 +58,9 @@ Verify that the following setup is completed:
 
 The following Azure AD apps are registered in Azure AD.
 
-    |  Application                             | App ID                               |
-    |------------------------------------------|--------------------------------------|
-    | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
+|  Application                             | App ID                               |
+|------------------------------------------|--------------------------------------|
+| Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
     
 ## Configure Dataverse
 
