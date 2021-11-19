@@ -86,7 +86,7 @@ If the correct project security role is assigned to you, you might have to refre
 
 ### Resolution
 
-Verify that the following setup has been completed:
+The following steps should have been completed.
 
 - Verify that you have **System administrator** and **System Customizer** access in the Power Portal admin center.
 - Verify that a Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
