@@ -41,6 +41,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.24 release
 
+### VAT declaration for Austria (design based on reporting codes)
+(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-aut-vat-statement-details)
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with new VAT declaration design |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support "VAT declaration (AT)" Electronic reporting (ER) format under "VAT declaration model". New VAT declaration XML (AT), VAT declaration Excel (AT) are introduced instead under the "Tax declaration" model. |
+
 ### ELSTER declaration for Germany (design based on reporting codes)
 (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-de-vat-declaration)</br>
 (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany?toc=/dynamics365/finance/toc.json)</br>
