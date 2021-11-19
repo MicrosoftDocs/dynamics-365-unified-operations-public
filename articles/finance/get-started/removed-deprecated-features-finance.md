@@ -41,7 +41,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.24 release
 
-### VAT declaration for Austria (design based on reporting codes)
+### VAT statement for Austria (design based on reporting codes)
 (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-aut-vat-statement-details)
 | &nbsp; | &nbsp; |
 |------------|--------------------|
