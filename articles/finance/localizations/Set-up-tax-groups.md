@@ -43,10 +43,10 @@ This section explains the essential setups for a tax group.
 1. Open the **Tax group** tab, click **Manage Column** button (If it's your first time configure Tax group, the Manage Column form will be populated automatically)
 
 2. Select **Tax group** field under **Lines**
-![select-tax-group](media\select-tax-group.png)
+![select-tax-group](media/select-tax-group.png)
 
 3. Click **Add** arrow to add this field into the **Selected Columns**
-![add-tax-group](media\add-tax-group.png)
+![add-tax-group](media/add-tax-group.png)
 
 4. Click **OK**
 
@@ -56,7 +56,7 @@ This section explains the essential setups for a tax group.
 
 After you complete above steps, the tax group applicability rule matrix should be initiated.
 
-![initial-tax-group](media\initial-tax-group.png)
+![initial-tax-group](media/initial-tax-group.png)
 
 
 
@@ -70,7 +70,7 @@ You can add lines here to configure tax group
 > [!NOTE]
 > You can select multiple tax codes under one tax group by ticking the radio before tax code name
 
-![multiple-tax-codes-selection](media\multiple-tax-codes-selection.png)
+![multiple-tax-codes-selection](media/multiple-tax-codes-selection.png)
 
 4. Repeat step 1 to step 3 to add multiple tax groups
 
