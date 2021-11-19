@@ -54,7 +54,7 @@ Azure Active Directory (Azure AD) must be configured so that it can be used with
 Verify that the following setup is completed:
 
 - You have **System administrator** and **System Customizer** access in the Power Portal admin center.
-- A Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
+- A Dynamics 365 Finance or equivalent license is applied to the user who is installing the Finance insights add-in.
 
 The following Azure AD apps are registered in Azure AD.
 
