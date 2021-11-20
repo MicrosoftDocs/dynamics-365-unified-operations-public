@@ -22,7 +22,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## November 2021 release of party and global address book 
 
-The November 2021 release of the [Dual-write Party and Global Address Book Solutions 3.3.0.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) contains the following features and bug fixes. 
+The November 2021 release of the [Dual-write Party and Global Address Book Solutions 3.3.0.5](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) contains the following features and bug fixes. 
 
 | Feature | Description |Status |
 |------|---------|-------|
