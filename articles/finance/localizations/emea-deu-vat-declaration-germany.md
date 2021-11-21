@@ -418,11 +418,13 @@ that you imported from the LCS Shared asset library.
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Settlement period                           | Select the settlement period. If you selected **Collect data** in step 5, you can leave this field blank. The report will be generated for the sales tax transactions that are included in the collected sales tax payments. |
 | Tax declaration version                     | Select one of the following values:</br>-   **Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</br>-   **Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</br>-   **Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.|
-| Special advance payment permanent extension | Enter the amount that will be exported in row 67 (box 39) of the VAT declaration.|
-    
-> If you selected **Collect data** in step 5, you can leave this field blank. The
-> report will be generated for the sales tax transactions that are included in the
-> collected sales tax payments.
+| Tax representative | Select the party that is a tax representative for VAT declaration, if applicable. Information about selected party is exported to *DatenLieferant* XML element |
+| Contact person | Select a person in the organization who is a data supplier. Information about selected person is exported to *DatenLieferant* XML element|
+| Corrective return | Select **Yes** if this is corrective VAT declaration. In this case, XML element KZ10 will have value "1".|
+| Supporting documents | Select **Yes** if you also send supporting documents. In this case, XML element KZ22 will have value "1".|
+| The SEPA direct debit mandate will be revoked as an exception| Select **Yes** if the SEPA direct debit mandate will be revoked as an exception (for example due to offsetting requests) for this pre-registration period.Any remaining balance is to be paid separately. In this case, XML element KZ26 will have value "1"|
+| Offsetting of the reimburcement amount desired | Select **Yes** if offsetting of the reimbursement amount desired / reimbursement amount has been assigned. In this case, XML element KZ29 will have value "1") |
+| Special advance payment permanent extension | Enter the deduction amount of the fixed special advance payment for permanent extension (usually only to be completed in the last pre-registration of the tax period. The amount is exported in row 67 (box 39) and XML element KZ39 of the VAT declaration.|
 
 11.  Select **Attachments** in the upper-right corner of the page, and then
     select **Open**.
