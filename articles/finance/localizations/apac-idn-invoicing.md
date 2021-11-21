@@ -92,22 +92,19 @@ branches, it is necessary to run the following steps:
 **Note.** The number sequences should consist of 2 segments (Constant and
 Alphanumeric) and be **continuous.**  See example on the screenshot below.
 
-![Graphical user interface, text, application, email Description automatically
-generated](media/cbee70d24fe64d9e2a31af58890e0dd2.png)
+![Number sequence](media/apac-idn-number-sequence.png)
 
 1.  Create **Number sequence group** and relate it with the number sequence
     (Reference **Tax invoice number**). (Accounts receivable \> Setup \>
     Accounts receivable parameters)
 
-    ![Table Description automatically
-    generated](media/6763f4aee00e5a57579f8f9923767d13.png)
+    ![Number sequence groups](media/apac-idn-number-sequence-group.png)
 
 1.  Create the chronological number sequence group for period and relate it with
     the Number sequence group (Organization administration \> Number sequences
     \> Chronological number sequence groups).
 
-    ![Graphical user interface, text, application Description automatically
-    generated](media/8fa5b495f2c53e539c5daa34d3fdea5e.png)
+    ![Chronological number sequence groups](media/apac-idn-chronological-number-sequence-groups.png)
 
 Run these steps for every period.
 
@@ -121,8 +118,7 @@ invoice there should be the following steps of setting:
 3.  Run steps from 1 to 3 (see set up for one period) for every branch and fill
     in the Tax branch in the chronological number sequence group.
 
-![Graphical user interface, application Description automatically
-generated](media/1534128e440e5850c89bb46736c0a719.png)
+![Chronological number sequence group for branch](media/apac-idn-chronological-number-sequence-groups-branch.png)
 
 If a company wants to allocate some tax invoice number to specific customers,
 then run the steps below.
@@ -174,13 +170,8 @@ Steps:
 | NumG21_3​ | Customer tax invoice number group 2021. (from 41 to 100)​ | NSFP21_3​        |
 | NumGr22​  | Customer tax invoice number group 2022​                   | NSFP22​          |
 
-![](media/eca58fe79acfe52f184ccdb5ba50d445.jpeg)
+![Chronological number sequence for customer](media/apac-idn-chronological-number-sequence-groups-customer.png)
 
-![Graphical user interface, text, application, email Description automatically
-generated](media/7e6f2e98c33cf1a67f2185c12d1a56aa.jpeg)
-
-![Graphical user interface, text, application, email Description automatically
-generated](media/7e6f2e98c33cf1a67f2185c12d1a56aa.jpeg)
 
 ## Generation of Tax invoice number
 
