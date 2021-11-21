@@ -4,7 +4,7 @@
 title: Mass deployment of sealed Commerce self-service components
 description: This topic explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
-ms.date: 10/01/2021
+ms.date: 11/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -86,13 +86,15 @@ The following table shows the delimiters that can be used in the command line ex
 
 ## General overview
 
-The new framework for self-service installers has various features and improvements. The new framework currently generates installers only for Modern POS, hardware station, and CSU (self-hosted). It is important to understand the basic command line usage of the sealed installers, which looks much this:
-
+The new framework for self-service installers has various features and improvements. The new framework currently generates installers only for Modern POS, hardware station, and CSU (self-hosted). It is important to understand the basic command line usage of the sealed installers, which should look similar to that used in the following example. 
+ 
 ```Console
-<Component Installer Name>.exe install --<Parameter Name> "<Parameter Information>" --<Any Parameters Needed (Such as register, CSU URL, or certificate information)> "<Any Further Information>"
+<Component Installer Name>.exe install --<Parameter Name> "<Parameter Information>"
 ```
 
-As shown above, the installer requires the parameter **install** (or **uninstall** to remove the installation) and any parameters specific to that installation. This new, sealed framework has been created to allow for a series of valuable alterations that should be reviewed:
+The installer requires the parameter **install** (or **uninstall** to remove the installation) and any parameters specific to that installation. **Parameter Name** should include any parameters that are needed such as register, CSU URL, or certificate information. **Parameter Information** should include any additional information about the parameters.
+
+The sealed framework has been created to allow for the following alterations:
 - **Sealed** – The new installer framework completely separates Microsoft-distributed base component installers from the extensibility-based customizations. The customizations will be installed afterward but will then be untethered in regard to updates (so that updates will be allowed only for the Microsoft base component, only for the customizations, or for both).
 - **GUI-less** – There is no longer a user interface (UI). Instead, there is a completely command line–driven executable for each component installer. This change is one of several key changes or features that is used to focus the new installer framework for use with mass deployment.
 - **Deeper logging** – Enhanced installer logs allow for better validation of installation completion or failure, the steps that were performed, and any warnings or errors that were generated.
@@ -125,7 +127,7 @@ This section shows examples of commands that are used to install Modern POS.
 
 The following command silently installs (or updates) Modern POS. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
-The following basic command showcases the available options if an installation is requested (and this command is highly recommended when first testing or using this installer).
+The following basic command showcases the available options if an installation is requested. It is highly recommended that this command is used when first testing or using the installer.
 
 ```Console
 CommerceModernPOS.exe --help install
@@ -152,7 +154,7 @@ You can mix and match these concepts to achieve the installation results that yo
 
 ### Before you begin
 
-It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this topic. There is no longer a Merchant Account Information Tool. Instead, the merchant account information is installed when a POS terminal is paired with the hardware station. When testing this installer for the first time, it is highly recommended to run the following command:
+It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this topic. There is no longer a Merchant Account Information Tool. Instead, the merchant account information is installed when a POS terminal is paired with the hardware station. When testing this installer for the first time, it is highly recommended that you run the following command:
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -175,17 +177,20 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 > [!NOTE]
 > A configuration file isn't required for hardware station. The installer now has parameters (shown earlier in this topic) for the various values that are required.
 
-The following command specifies all the parameters that are required to skip the prerequisite checks during a standard installation. Take note that skipping checks is not recommended without thorough testing ahead of time or in development situations.
+The following command specifies all the parameters that are required to skip the prerequisite checks during a standard installation. 
+
+> [!NOTE]
+> Skipping checks is not recommended without thorough testing ahead of time, or in development situations.
 
 ```Console
 HardwareStation.exe install --SkipFirewallUpdate --SkipOPOSCheck --SkipVersionCheck --SkipURLCheck --Config "HardwareStation.Houston.xml"
 ```
 
-As usual, it is common to mix and match these concepts to achieve the installation results that you want.
+As is customary, it is common to mix and match these concepts to achieve the installation results that you want.
 
 ## Commerce Scale Unit (self-hosted)
 
-When testing this installer for the first time, it is highly recommended to run the following command:
+When testing this installer for the first time, it is highly recommended to that you run the following command:
 
 ```Console
 CommerceStoreScaleUnitSetup.exe --help install
@@ -203,7 +208,7 @@ This section shows examples of commands that are used to install CSU (self-hoste
 
 The following command silently installs (or updates) CSU (self-hosted). It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe**.
 
-Commerce Scale Unit (CSU) is more complex and require a fairly large amount of additional information compared to the other Self-service installes.  The following command is the minimum command, with parameters, to run the executable file installer (when no configuration file is present).
+Compared to the other self-service installers, Commerce Scale Unit (CSU) is more complex and requiresa fairly large amount of additional information. The following command is the minimum command (th parameters) t run the executable file installer when no configuration file is present.
 
 ```Console
 CommerceScaleUnit.exe install --port 446 --SSLCertThumbprint "MySSLCertificateThumbprintOftenHasNumbers" --RetailServerCertFullPath "store://My/LocalMachine?FindByThumbprint=MyCertificateThumbprintUsedByRetailServer" --AsyncClientAADClientID "MyAAD-Client-IDFor-AsyncClient" --RetailServerAADClientID "MyAAD-Client-IDFor-RetailServer" --CPOSAADClientID "MyAAD-Client-IDFor-CloudPOS" --RetailServerAADResourceID "https://retailstorescaleunit.retailserver.com" --TrustSqlServerCertificate --Config "Contoso.StoreSystemSetup.xml"
