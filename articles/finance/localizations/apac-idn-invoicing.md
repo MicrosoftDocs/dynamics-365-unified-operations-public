@@ -123,12 +123,12 @@ invoice there should be the following steps of setting:
 If a company wants to allocate some tax invoice number to specific customers,
 then run the steps below.
 
-**Example for one period:**​
+**Example for one period:**
 
 1.  A company has serial numbers from 000-21.00000001 to 000-21.00000100​
 
 2.  The numbers from 000-21.00000010 to 000-21.00000020 are allocated to
-    customer 1​
+    customer 1
 
 3.  The numbers from 000-21.00000030 to 000-21.00000040 are allocated to
     customer 2
@@ -138,37 +138,37 @@ Steps:
 1.  Create number sequences for tax number intervals for specific customers and
     intervals excluding intervals for customer 1 and customer 2. ​
 
-    From 000-21.00000010 to 000-21.00000020 (customer 1)​
+    From 000-21.00000010 to 000-21.00000020 (customer 1)
 
-    From 000-21.00000030 to 000-21.00000040 (customer 2)​
+    From 000-21.00000030 to 000-21.00000040 (customer 2)
 
-    from 000-21.00000001 to 000-21.00000009​
+    From 000-21.00000001 to 000-21.00000009
 
-    from 000-21.00000021 to 000-21.00000029​
+    From 000-21.00000021 to 000-21.00000029
 
-    from 000-21.00000041 to 000-21.00000100​
+    From 000-21.00000041 to 000-21.00000100
 
 2.  Create number sequence groups for all number sequences (step1) and relate
-    them with the number sequences (**Tax invoice number** reference).​
+    them with the number sequences (**Tax invoice number** reference).
 
 3.  Create additional Number sequence groups for each customer whom necessary to
     allocate numbers to. Relate these groups in the customer records (number
-    sequences is not required). ​
+    sequences is not required). 
 
 4.  Create chronological number sequence groups (number of lines for one period
     is 5: for customer 1 (two records), for customer 2 (two records) and one
-    record for the rest number intervals):​
+    record for the rest number intervals):
 
 | Group​    | Description​                                              | Number sequence​ |
 |----------|----------------------------------------------------------|-----------------|
-| Cust1​    | Customer 1​                                               | -​               |
-| Cust1_21​ | Customer 1 2021 from 10 to 20​                            | Cust1_21​        |
-| Cust2​    | Customer 2​                                               | -​               |
-| Cust2_21​ | Customer 2 2021 from 30 to 40​                            | Cust1_22​        |
-| NumG21_1​ | Customer tax invoice number group 2021. (from 1 to 9)​    | NSFP21_1​        |
-| NumG21_2​ | Customer tax invoice number group 2021. (from 21 to 29)​  | NSFP21_2​        |
-| NumG21_3​ | Customer tax invoice number group 2021. (from 41 to 100)​ | NSFP21_3​        |
-| NumGr22​  | Customer tax invoice number group 2022​                   | NSFP22​          |
+| ID_Cust1​    | Customer 1​                                               | -​               |
+| ID_Cust1_Q3​ | Customer 1 Q3, 2021 from 10 to 20​                            | ID_Cust1Q3​        |
+| ID_Cust2​    | Customer 2​                                               | -​               |
+| ID_Cust2_Q3​ | Customer 2 Q3, 2021 from 30 to 40​                            | ID_Cust2Q3​        |
+| ID_21Q3_1​ | Q3 2021, First interval. (from 1 to 9)​    | ID_21Q3_1​        |
+| ID_21Q3_2​ | Q3 2021, Second interval. (from 21 to 29)​  | ID_21Q3_2​        |
+| ID_21Q3_3​ | Q3 2021, Third interval. (from 41 to 100)​ | ID_21Q3_3​        |
+| ID_21Q1​  | Customer tax invoice number group 2022​                   | ID_21Q1​          |
 
 ![Chronological number sequence for customer](media/apac-idn-chronological-number-sequence-groups-customer.png)
 
