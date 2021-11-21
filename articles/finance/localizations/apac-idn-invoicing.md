@@ -89,8 +89,7 @@ branches, it is necessary to run the following steps:
 1.  Create the number sequence for numeration of invoices (Organization
     administration \> Number sequences \> Number sequences)
 
-**Note.** The number sequences should consist of 2 segments (Constant and
-Alphanumeric) and be **continuous.**  See example on the screenshot below.
+> [!Note]. The number sequences should consist of 2 segments (Constant and Alphanumeric) and be **continuous.**  See example on the screenshot below.
 
 ![Number sequence](media/apac-idn-number-sequence.png)
 
@@ -215,14 +214,14 @@ To cancel posted invoice due to an error:
     reason which set up with **Cancelation** operation. How to relate a credit
     note with this data, see below.
 
-    [!Note]. The tax invoice number is not generated in this case.
+   > [!Note]. The tax invoice number is not generated in this case.
 
 To create a credit note for items returns:
 
 -   Create a credit note and relate it with an original invoice and a financial
     reason with **Blank** operation.
 
-    [!Note]. The tax invoice number is generated in this case.
+   > [!Note]. The tax invoice number is generated in this case.
 
 To create an invoice replacement:
 
@@ -230,17 +229,17 @@ To create an invoice replacement:
     reason which set up with **Cancelation** operation. How to relate a credit
     note with this data, see below.
 
-    [!Note]. The tax invoice number is not generated in this case.
+   > [!Note]. The tax invoice number is not generated in this case.
 
 -   Create debit note, relate it with the original invoice and reason with
     **Replacement** operation.
 
     The system fills in 3rd digit of the tax invoice number with ‘1’.
 
-[!Note]. It is recommended to create a new sales order when it is needed to
+> [!Note]. It is recommended to create a new sales order when it is needed to
 create a credit note for cancelation and debit note for replacement.
 
-[!Note]. When you create a replacement of invoice the original invoice should
+> [!Note]. When you create a replacement of invoice the original invoice should
 have tax invoice number. Cancelation which created before replacement and
 replacement should be related with the same invoice.
 
@@ -286,7 +285,7 @@ During the RCS setup, you will complete the following tasks:
 2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic Invoicing** tile.
 3. On the **Electronic invoicing features** page, click **Import** to import the **Indonesian electronic invoice (ID)** feature from the Global repository published by Microsoft configuration provider.  
  
- [!Note] If you don't see the feature in the list, select **Synchronize**, and then repeat step 3.
+ > [!Note] If you don't see the feature in the list, select **Synchronize**, and then repeat step 3.
 
 ![Feature import](media/apac-idn-rcs-import-feature.png)
 
@@ -347,7 +346,7 @@ To generate sales invoice csv file, the Sales invoice feature setup is required.
 
 1.  On the **Electronic Invoicing features** page, on the **Setups** tab, in the **Feature setup** column, select the **Import from share point** record.
 
-    [!Note] Previously you should create draft version of the feature (see Create a new version of the Indonesian electronic invoice (ID) feature).
+   > [!Note] Previously you should create draft version of the feature (see Create a new version of the Indonesian electronic invoice (ID) feature).
 
 2.  Click **Edit** to review or configure the actions, applicability rules, and variables.
 
@@ -449,8 +448,7 @@ Go to **Electronic document** tab:
     configuration of the data channel for the Electronic invoicing feature in
     RCS.
 
-[!Note]. You can create several derived configurations with different **\$Context**
-**Channel** value for import vendor invoices from different sources. For
+> [!Note]. You can create several derived configurations with different **\$Context** **Channel** value for import vendor invoices from different sources. For
 example, if you want to import vendor invoices for different legal entities.
 
 6.  Select **Save** and close the page.
@@ -467,27 +465,23 @@ example, if you want to import vendor invoices for different legal entities.
 12.  On **Import sources** field group click **Add** and fill in **Name**,
     **Description**.
 
-    [!Note]. In the **Name** field, set the value from Feature version setup \>
-    **Variables** tab (see Configure the Vendor invoice feature setup).Select
-    one of Data entity name: **Vendor Invoice register header,** if you want
-    importing vendor invoices in Invoice register or **Vendor invoice journal,**
-    if you want importing vendor invoices in pending vendor invoices.
+ > [!Note]. In the **Name** field, set the value from Feature version setup \> **Variables** tab (see Configure the Vendor invoice feature setup).Select     one of Data entity name: **Vendor Invoice register header,** if you want importing vendor invoices in Invoice register or **Vendor invoice journal**, if you want importing vendor invoices in pending vendor invoices.
 
 13.  Select model mapping **Vendor invoice import (ID)** for import invoice
     header into Invoice register or for import into pending vendor invoices. And
     select **Vendor invoice import XML (ID)** for import header and lines in
     pending vendor invoices.
 
-    [!Note 1]. You can have only one line for one import source.
+ > [!Note 1]. You can have only one line for one import source.
 
-    [!Note 2]. Before importing vendor invoices from xml files, it is necessary to
+ > [!Note 2]. Before importing vendor invoices from xml files, it is necessary to
 set up **External item description** for vendors (vendor record \> Procurement
 \> Set up). In this case the system can match item name in xml file with line
 items in sales orders.
 
 ![Electronic document parameters- External channels](media/apac-idn-import-setup-external-channels.png)
 
-[!Note]. If it is necessary to import vendor invoices, for example, into
+> [!Note]. If it is necessary to import vendor invoices, for example, into
 different legal entity, create a new Channel record with the new document
 context (derived configuration, see Setup of processing Indonesian electronic
 invoice (import vendor invoices).
@@ -516,7 +510,7 @@ During the processing of issued invoices or import vendor invoices in Dynamics
 4.  Go to System administration \> Setup \> Business events \> Business events
     parameters and click **Business events batch job**.
 
-[!Note] This job can be run in batch, if you set up Business event batch
+> [!Note] This job can be run in batch, if you set up Business event batch
 processor.
 
 ![Business event](media/apac-idn-business-event-parameters.png)
@@ -559,11 +553,9 @@ You can view the submission logs for all exported documents.
 1.  Go to Organization administration \> Periodic \> Electronic documents \>
     Receive electronic documents.
 
-    [!Note]. 
--   For the first receiving of any document, always set the Re-import documents
-    option to No. If you must re-import a document through the service, set this
-    option to Yes.
--   This job can be run in batch.
+> [!Note]. 
+> For the first receiving of any document, always set the Re-import documents option to No. If you must re-import a document through the service, set this     option to Yes.
+> This job can be run in batch.
 
 2.  Go to Organization administration \> Periodic \> Electronic documents \>
     Electronic document receipt log and on the Action Pane, select Inquiries \>
