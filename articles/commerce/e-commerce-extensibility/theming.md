@@ -71,7 +71,7 @@ The site builder tool also lets you upload additional [CSS overrides](../css-ove
     ```css
     $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
     @import "bootstrap/scss/bootstrap";
-    ...
+    
     ```
     
 ## Create a theme from a reference theme
