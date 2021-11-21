@@ -172,6 +172,7 @@ Steps:
 
 Setup for Customers:
 ![Chronological number sequence for customer](media/apac-idn-chronological-number-sequence-groups-customer.png)
+
 Setups for other intervals:
 ![Chronological number sequence for customer (intervals)](media/apac-idn-chronological-number-sequence-groups-customer-intervals.png)
 
@@ -194,8 +195,7 @@ cancelation, Credit note (item returns) and invoice replacement.
 
 Transaction code in FTI header:
 
-![Graphical user interface, application Description automatically
-generated](media/8458529863f4f20a0bd03c9a7a82dc23.png) ​
+![Transaction code in FTI](media/apac-idn-fti-transaction-code.png) ​
 
 # Invoice cancelation, Credit note (item returns) and invoice replacement
 
@@ -207,8 +207,7 @@ You should create at least two records: one record with **Cancelation**
 operation and another with **Replacement** operation. There may be several such
 records in **Financial reasons**.
 
-![Graphical user interface, text, application, table Description automatically
-generated](media/a5ebe84610556b8e99c9911cd995489d.png)
+![credit invoicing](media/apac-idn-resons.png)
 
 To cancel posted invoice due to an error:
 
@@ -255,8 +254,7 @@ for crediting and click Credit invoicing).
 
 Example of credit invoicing form that is open from a FTI:
 
-![Graphical user interface, application Description automatically
-generated](media/87fe8bb72a65b2378ebd67737b524911.png)
+![credit invoicing](media/apac-idn-credit-invoicing.png)
 
 # Enabling Electronic Invoicing for Indonesia
 
@@ -302,8 +300,7 @@ During the RCS setup, you will complete the following tasks:
         *Note.* If you don't see the feature in the list, select
         **Synchronize**, and then repeat step 3.
 
-        ![Graphical user interface, text, application, email Description
-        automatically generated](media/8d3795c7f9abc2891914323d2f5a1892.png)
+        ![Feature import](media/apac-idn-rcs-import-feature.png)
 
         When you import the **Indonesian electronic invoice (ID)** feature from
         the Global repository, all the feature settings, including
@@ -316,8 +313,7 @@ You can create a new version with your Configuration provider.
 On the **Electronic invoicing features** page, on the **Versions** tab, select
 **New**.
 
-![Graphical user interface Description automatically generated with medium
-confidence](media/8a54d3b1d1b4167dfae53370a000f5cf.png)
+![Create a new version](media/apac-idn-rcs-new-version.png)
 
 ### Update the configuration version
 
@@ -325,8 +321,7 @@ On the **Electronic Invoicing Features** page, on the **Configurations** tab,
 select **Add** or **Delete** to manage the configuration versions (ER file
 format configurations).
 
-![Graphical user interface, application Description automatically
-generated](media/8850b72533c05fe8d43f88fe3861e303.png)
+![Configuration edit or delete](media/apac-idn-rcs-configuration.png)
 
 When you create a new version, all configurations are inherited from the
 imported version of the Electronic Invoicing feature. To process invoices, the
@@ -340,16 +335,13 @@ following configurations are required:
         **View** to open the **Format designer** page, where you can edit or
         view the configuration.
 
-        ![Graphical user interface, application Description automatically
-        generated](media/036b348a737857e021291bf938ee14ea.png)
+        ![Configuration review](media/apac-idn-rcs-configuration-edit.png)
 
 Customers can review the configuration and customize it (if needed). Use the
 **Format designer** page to edit and view the ER format file configurations. For
 more information, see [Create electronic document
 configurations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
 
-![Graphical user interface, application Description automatically
-generated](media/6a8de00c34c01a1b408717ea0392992d.png)
 
 ### Configure the application specific parameters
 
@@ -358,16 +350,14 @@ Finance corresponds to the tax code for luxury goods (PPnBM) when exporting
 invoices, it is necessary to fill in the following application specific
 parameters for the luxury sales tax:
 
-![Graphical user interface, application Description automatically
-generated](media/35b2144528bdd9f2bf9365b11ee526b3.png)
+![Aplication specific parameters-Sales tax code](media/apac-idn-aplication-specific-parameters-tax-code.png)
 
 So that the system can determine which the sales tax group in Dynamics 365
 Finance corresponds to the exempt reasons (transaction codes 07 and 08) when
 exporting invoices, it is necessary to fill in the following application
 specific parameters for exempt reasons:
 
-![Graphical user interface, text, application Description automatically
-generated](media/c02c398028ddd75ce547b421009f2665.png)
+![Aplication specific parameters-transaction codes](media/apac-idn-aplication-specific-parameters-transaction-codes-07-08.png)
 
 ### Manage the Electronic Invoicing feature setups
 
