@@ -312,7 +312,7 @@ When you create a new version, all configurations are inherited from the importe
 
 2.  eInvoice import (ID)
 
-3.  In the list, select a configuration version, and then click **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
+In the list, select a configuration version, and then click **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
 
 ![Configuration review](media/apac-idn-rcs-configuration-edit.png)
 
