@@ -4,7 +4,7 @@
 title: Theming overview
 description: This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 10/08/2020
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -60,8 +60,8 @@ The site builder tool also lets you upload additional [CSS overrides](../css-ove
 - A new theme can be created using the **yarn msdyn365 add-theme NEW_THEME_NAME** [CLI (command-line interface)](cli-command-reference.md#add-theme) command. This command will create a theme in the /src/themes/ folder.  
 - Under the styles directory, you will find the SCSS entry point file for the theme. This file uses the naming pattern **THEME_NAME.theme.scss**. 
 - Themes are created as special modules. They contain definition files that include the theme's friendly name and description, and also a template React component.
-- There is no limit to the number of .scss files that your theme can contain.
-- Your theme entry point can import other .scss files by using relative paths.
+- There is no limit to the number of SCSS files that your theme can contain.
+- Your theme entry point can import other SCSS files by using relative paths.
 
 ## Best practices
 
