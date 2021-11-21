@@ -355,7 +355,7 @@ To generate sales invoice csv file, the Sales invoice feature setup is required.
 
 4.  On the **Applicability rules** tab, in the record with **Channel** field fill in **Value** with **\$Context Channel** value from derived configuration.
 
- 5.  On the **Variables** tab create or validate the following record:
+5.  On the **Variables** tab create or validate the following record:
 
 ![Feature version setup](media/apac-idn-feature-version-setup-variables.png)
 
@@ -453,18 +453,18 @@ Go to **Electronic document** tab:
 **Channel** value for import vendor invoices from different sources. For
 example, if you want to import vendor invoices for different legal entities.
 
-1.  Select **Save** and close the page.
-2.  Close the page.
-3.  Select the derived configuration you just created from the **Customer
+6.  Select **Save** and close the page.
+7.  Close the page.
+8.  Select the derived configuration you just created from the **Customer
     invoice context model**, and on the **Versions** FastTab, select **Change
     Status** \> **Completed**.
-4.  Go to **External channels** tab to set up import of vendor invoices.
-5.  On the **Channels**, click **Add** and fill in the **Channel field**
+9.  Go to **External channels** tab to set up import of vendor invoices.
+10.  On the **Channels**, click **Add** and fill in the **Channel field**
     (**\$Context Channel** value), Description, Company
-6.  In the **Document context** field, select the new derived configuration from
+11.  In the **Document context** field, select the new derived configuration from
     **Customer invoice context model**. The mapping description should be **Data
     channel context**.
-7.  On **Import sources** field group click **Add** and fill in **Name**,
+12.  On **Import sources** field group click **Add** and fill in **Name**,
     **Description**.
 
     [!Note]. In the **Name** field, set the value from Feature version setup \>
@@ -473,7 +473,7 @@ example, if you want to import vendor invoices for different legal entities.
     importing vendor invoices in Invoice register or **Vendor invoice journal,**
     if you want importing vendor invoices in pending vendor invoices.
 
-8.  Select model mapping **Vendor invoice import (ID)** for import invoice
+13.  Select model mapping **Vendor invoice import (ID)** for import invoice
     header into Invoice register or for import into pending vendor invoices. And
     select **Vendor invoice import XML (ID)** for import header and lines in
     pending vendor invoices.
