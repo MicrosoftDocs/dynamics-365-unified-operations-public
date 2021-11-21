@@ -339,8 +339,8 @@ All tax registrations have the same settings for EU sales list parameters.
 
 5. Select **OK** to generate the report.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
 ## TechTalk
 
 Review the TechTalk session provided on September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/vat-reporting-for-multiple-tax-registrations-in-single-legal-entity-september-29-2021)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
