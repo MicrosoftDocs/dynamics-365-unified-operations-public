@@ -170,7 +170,10 @@ Steps:
 | ID_21Q3_3​ | Q3 2021, Third interval. (from 41 to 100)​ | ID_21Q3_3​        |
 | ID_21Q1​  | Customer tax invoice number group 2022​                   | ID_21Q1​          |
 
+Setup for Customers:
 ![Chronological number sequence for customer](media/apac-idn-chronological-number-sequence-groups-customer.png)
+Setups for other intervals:
+![Chronological number sequence for customer (intervals)](media/apac-idn-chronological-number-sequence-groups-customer-intervals.png)
 
 
 ## Generation of Tax invoice number
