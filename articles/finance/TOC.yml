@@ -1474,6 +1474,10 @@
               items: 
               - name: VAT declaration
                 href: localizations/emea-fra-VAT-declaration-preview-France.md
+            - name: Germany reporting
+              items:
+              - name: VAT declaration
+                href: /localizations/emea-deu-vat-declaration-germany.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
@@ -2158,11 +2162,13 @@
             href: localizations/emea-deu-gdpdu-data-filtering.md
         - name: Depreciation adjustments for additional acquisitions in the second year
           href: localizations/tasks/de-00002-depreciation.md
+        - name: VAT declaration
+          href: localizations/emea-deu-vat-declaration-germany.md
         - name: Electronic transmission of VAT declaration (ELSTER)
           href: localizations/tasks/de-00003-electronic-transmission-elster.md
         - name: German Intrastat
           href: localizations/emea-deu-intrastat.md
-        - name: VAT declaration for Germany
+        - name: VAT statement
           href: localizations/emea-de-vat-declaration.md
         - name: Customer electronic invoices report
           href: localizations/emea-deu-e-invoices.md
