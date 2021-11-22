@@ -54,16 +54,6 @@ In addition, you can update downstream data warehouses by using changed data in 
 
 For more information about near-real-time change feeds, see [Change data in Azure Data Lake](azure-data-lake-change-feeds.md).
 
-## Enable enhanced metadata in Data Lake (preview)
-
-This preview feature makes enhanced metadata that is stored in the Finance and Operations application layer (that is, Application Object Server \[AOS\]) available in the data lake as Common Data Model metadata files. Here are some examples of the enhanced metadata that this feature makes available:
-
-- Field names and descriptions that are present in Finance and Operations apps
-- Extended data types, including string lengths of character fields
-- Enumerated data types (for example, Yes, No), together with names, labels, and values of available options
-- Entity view definitions (so that you can use Synapse SQL Serverless to create entity shapes that use data in the data lake)
-
-Metadata is stored in the data lake in Common Data Model format. When you use this preview feature, Common Data Model metadata files are enriched with enhanced metadata.
 
 ## Frequently asked questions
 
