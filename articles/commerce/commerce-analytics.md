@@ -19,6 +19,10 @@ ms.search.validFrom: 2021-11-12
 
 This topic explains how to install Commerce analytics (Preview), the functional analytics capability that is included in Microsoft Dynamics 365 Commerce.
 
+## Commerce analytics (Preview) live demo
+
+You can try out a [live demo of Commerce Analytics (Preview)](https://aka.ms/CommerceAnalyticsDemo).
+
 ## Commerce analytics (Preview) system architecture
 
 ### Key components
@@ -71,7 +75,23 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
 
 ### Summary
 
-#### Top-level filters
+Commerce Analytics template app includes the following main report pages
+
+1. [Top-level filters](#TopLevelFilters)
+2. [Products](#ProductsPage)
+3. [Customers](#CustomersPage)
+4. [Channels](#ChannelsPage)
+5. [Sales](#SalesPage)
+6. [Margins](#MarginsPage)
+7. [Returns](#ReturnsPage)
+8. [Discounts](#DiscountsPage)
+9. [Payments](#PaymentsPage)
+10. [Customers](#CustomersPage)
+11. [Comparison](#ComparisonPage)
+12. [Web activity](#WebActivityPage)
+13. [Web activity - Top level filter](#WebActivityTopLevelFilters)
+
+####  <a name="TopLevelFilters"></a> Top-level filters
 
 - Date settings
 
@@ -95,25 +115,25 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
     - Category hierarchy
     - Category
 
-#### Products
+####  <a name="ProductsPage"></a> Products
 
 - Sales
 - Margin
 - Returns
 
-#### Customers
+####  <a name="CustomersPage"></a> Customers
 
 - Sales
 - Margin
 - Returns
 
-#### Channels
+#### <a name="ChannelsPage"></a> Channels
 
 - Sales
 - Margin
 - Returns
 
-### Sales
+### Sales <a name="SalesPage"></a>
 
 - By delivery location
 - By channel/store/terminal
@@ -122,13 +142,13 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
 - By hour
 - By product category
 
-### Margins
+### <a name="MarginsPage"></a> Margins
 
 - By delivery location
 - By product
 - By date
 
-### Returns
+### <a name="ReturnsPage"></a> Returns
 
 - Return by amount
 
@@ -142,7 +162,7 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
     - By product
     - By date
 
-### Discounts
+### <a name="DiscountsPage"></a> Discounts
 
 - By store
 - By product
@@ -155,7 +175,7 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
     - Discount name
     - Product
 
-### Payments
+### <a name="PaymentsPage"></a> Payments
 
 - By channel/terminal
 - By payment method/type
@@ -168,7 +188,7 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
     - Terminal
     - Payment method
 
-### Customers
+### <a name="CustomersPage"></a> Customers
 
 - Lifetime value (LTV)
 
@@ -188,7 +208,7 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
 
 - Transaction count
 
-### Comparisons
+### <a name="ComparisonsPage"></a> Comparisons
 
 - Product comparison by time period
 
@@ -200,9 +220,9 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
     - Sales and sales difference
     - Margin and margin difference
 
-### Web activity
+### <a name="WebActivityPage"></a> Web activity
 
-#### Top-level filters
+#### <a name="WebActivityTopLevelFilters"></a> Top-level filters
 
 - Date range
 - Channel type
@@ -393,7 +413,7 @@ To generate a SAS token, follow these steps.
     | Allowed resource types | Select **Service**, **Container**, and **Object**. |
     | Allowed permissions | Select **Read**, **Write**, **Delete**, **List**, **Add**, and **Create**. |
     | Blob versioning permissions | Select **Enables deletion of versions**. |
-    | Start and expiration date/time | Set an end date and time for the SAS token as appropriate. |
+    | Start and expiration date/time | Set a start and end date and time for the SAS token as appropriate. |
     | Allowed IP addresses | Leave this field blank. |
     | Allowed protocols | Select **HTTPS only**. |
     | Preferred routing tier | Select **Basic (default)**. |
@@ -420,14 +440,14 @@ To install and configure an Azure Synapse workspace, follow these steps.
     |---|---|
     | placeholder_storageaccount | The name of the [storage account](#storageAccount) that you created while you configured Export to Data Lake. |
     | <a name="phContainer"></a>placeholder_container | The name of the storage container that was created in your Data Lake instance after you successfully installed the Export to Data Lake add-in in LCS. To get the container name, you must use Storage Explorer in the Azure portal to browse your storage account. |
-    | placeholder_sastoken | The [SAS token](#getSASToken) that you generated. Be sure to remove the **'?'** from the beginning of the SAS token value. |
+    | placeholder_sastoken | The [SAS token](#getSASToken) that you generated. Be sure to remove the **?** from the beginning of the SAS token value. |
     | <a name="phUserPwd"></a>placeholder_password | A strong password of your choice. Make a note of this password. It will be set as the password for the new **reportreadonlyuser** account that the script creates. Do **not** enter the password of the **sqladminuser** account. |
 
 3. Copy the updated contents of the script file.
 4. In the Azure portal, go to the new Azure Synapse workspace. On the **Overview** page, select **Open Synapse Studio**.
 5. In Synapse Studio, select **New \> SQL script**, and paste the contents of the script file into the SQL script editor.
 6. Make sure that the **Use database** field is set to **master**.
-7. Select **Run**, and wait for the script to finish running. Successful execution of the script will create the database for Commerce analytics, credentials for accessing the Data Lake, and a read-only user account that Power BI will use to connect to the Azure Synapse instance.
+7. Select **Run**, and wait for the script to finish running. Successful execution of the script will create the database for Commerce analytics, credentials for accessing the data lake, and a read-only user account that Power BI will use to connect to the Azure Synapse instance.
 8. On your local computer, open Windows PowerShell in admin mode, and go to the /Pipeline/CommerceAnalyticsSynapse/ folder under the folder that you cloned or downloaded the Dynamics365Commerce.Solutions repo to.
 9. Set up the Windows PowerShell execution policy by running the following command.
 
