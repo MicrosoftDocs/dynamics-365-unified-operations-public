@@ -33,7 +33,7 @@ To create new translation, regeneration, or alignment requests, add a new task i
 
 The following example shows the definition for a new translation task.
 
-```
+```yaml
 - task: DTSTranslation@0
     inputs:
         LCSConnection: 'DTS connection'
@@ -182,7 +182,7 @@ Before you run Git commands, you will want to allow the script to access the sys
 
 You can now add Git commands as part of a PowerShell or bash script task. The following example of a bash script commits the translation task output and pushes it to a branch that is named **localized**.
 
-```
+```bash
 - checkout: self
     persistCredentials: true
 - task: Bash@3
