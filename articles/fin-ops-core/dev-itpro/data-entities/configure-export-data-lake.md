@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the Export to Data Lake add-in
+title: Install Export to Azure Data Lake add-in
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
 ms.date: 11/22/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Platform Update 33
 
 ---
 
-# Install the Export to Data Lake add-in
+# Install Export to Azure Data Lake add-in
 
 [!include [banner](../includes/banner.md)]
 
