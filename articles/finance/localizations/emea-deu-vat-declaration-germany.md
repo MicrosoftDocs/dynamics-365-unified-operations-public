@@ -203,7 +203,7 @@ If you're configuring the VAT declaration in a legal entity that has [multiple V
 
 ### Download and import the data package that has example settings for electronic messages
 
-The data package contains electronic message settings that are used to generate the VAT declaration in XML format and then preview it in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../finance/general-ledger/electronic-messaging.md).
+The data package contains electronic message settings that are used to generate the VAT declaration in XML format and then preview it in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
 1. In [Microsoft Dynamics Lifecycle Services(LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **DE VAT declaration EM package**. The downloaded file name is **DE VAT declaration EM package.zip**.
 2. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
