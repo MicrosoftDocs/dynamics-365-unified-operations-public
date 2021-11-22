@@ -4,7 +4,7 @@
 title: Test e-commerce site pages for memory leaks
 description: This topic describes how to test e-commerce site pages for custom code memory leaks in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
-ms.date: 11/16/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
