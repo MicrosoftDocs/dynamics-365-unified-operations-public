@@ -46,19 +46,6 @@ Features in Commerce headquarters and the point of sale (POS) that are available
 - Gift cards.
 - Fiscal printer integration.
 
-### Supported scenarios
-
-Scenarios that are supported by Commerce localization for Russia include:
-
-- Cash-and-carry sales of goods.
-- Returns of cash-and-carry sales of goods.
-- Issuing gift cards and payments by gift cards.
-- Registering and processing customer orders in the POS.
-- Posting fiscal documents in retail statements in Commerce headquarters.
-- Processing of prepayments and posting of value-added tax (VAT) for prepayments in Commerce headquarters.
-- Sales via e-commerce storefronts.
-- Call center sales.
-
 ### Fiscal registration for Russia
 
 Fiscal registration is the immediate registration of retail sales per local fiscal laws that are aimed at preventing tax fraud in the retail industry. The main fiscal registration method available in Russia entails using a specialized device called a fiscal printer or online cash register that is connected to POS.
@@ -67,7 +54,7 @@ Commerce functionality for Russia includes a [sample integration](./rus-fpi-samp
 
 ## Availability of Commerce localization features for Russia
 
-| Feature | General availability (GA) | Post-GA | Not planned |
+| Feature | Released | Planned | Not planned |
 |-|-|-|-|
 | Processing of cash payments using petty cash journals in Commerce headquarters | X |  |  |
 | Processing of prepayments and posting of VAT for prepayments in Commerce headquarters | X |  |  |
@@ -75,10 +62,10 @@ Commerce functionality for Russia includes a [sample integration](./rus-fpi-samp
 | A sample of the integration of the POS with a fiscal printer | X |  |  |
 | Support of customer orders in fiscal printer integration |  | X |  |
 | Processing of issued gift cards as prepayments, along with related fiscal printer functionality |  | X |  |
-| Processing of loyalty point redemptions as price discounts in retail transactions, along with related fiscal printer functionality |  | X |  |
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
 | Cash collection |  | X |  |
+| Processing of loyalty point redemptions as price discounts in retail transactions, along with related fiscal printer functionality |  |  | Х |
 | Restrictions on returns of items that belong to selected item groups |  |  | X |
 | Aggregation of sales and returns that are registered within one shift |  |  | X |
 | Gift card policies |  |  | X |
