@@ -2143,7 +2143,7 @@
         items:
         - name: Set up project resource information
           href: procurement/tasks/set-up-project-resource-information.md
-        - name: Submit and approve project budgets
+        - name: Create and submit a project budget workflow
           href: procurement/tasks/submit-approve-project-budget.md
         - name: Submit and approve project budget revisions
           href: procurement/tasks/submit-approve-project-budget-revision.md
