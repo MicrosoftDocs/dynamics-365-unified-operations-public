@@ -3,28 +3,25 @@
 
 title: Work hour control
 description: This topic explains work hour control in Asset Management.
-author: josaw1
-manager: AnnBe
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetHourControl 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -74,8 +71,11 @@ The screenshot below shows an example of an **Asset hour control** calculation.
 - The **Actual hours** field shows posted hours on work orders. 
 - The **Committed hours** field shows total amount of hours that your company is committed to in relation to work orders.
 
-![Example of Asset hour control calculation](media/04-controlling-and-reporting.png)
+![Example of Asset hour control calculation.](media/04-controlling-and-reporting.png)
 
 Another way of making an hour calculation is to multi-select assets in **All assets** or **Active assets**. Then you click the **Hour control** button on the **General** FastTab. The selected assets are automatically inserted in the **Asset** field on the **Records to include** FastTab. Click **OK** in the **Asset hour control** dialog, and the calculation for the selected assets is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in **All work orders** or **Active work orders**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

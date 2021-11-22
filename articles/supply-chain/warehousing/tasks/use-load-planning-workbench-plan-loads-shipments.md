@@ -3,26 +3,22 @@
  
 title: Plan loads and shipments using the Load planning workbench
 description: This topic shows how to use the load planning workbench to create a load for a sales order. 
-author: ShylaThompson
-manager: AnnBe 
+author: Mirzaab
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
- 
-# ms.search.form:   
+ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -63,3 +59,6 @@ This topic shows how to use the load planning workbench to create a load for a s
 5. Select **Assign**.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Split payment for invoices issued to the Public Administration
 description: This topic provides information about the split payment accounting schema.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: TaxBookSection, TaxGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261314
 ms.search.region: Italy
@@ -115,3 +112,6 @@ VAT split payment
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

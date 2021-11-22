@@ -4,11 +4,9 @@
 title: Calculate due dates and report on the average period of payments (Spain)
 description: This topic provides information about due dates and the average period of payments for Spain.
 author: ShylaThompson
-manager: AnnBe
-ms.date: 09/20/2018
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Spain
@@ -66,11 +63,11 @@ If more than one due date limit applies to an invoice, the due date limit that h
 ## Set up due date limits to calculate invoice due dates
 Use the **Due date limits** page to create due date limits that specify the maximum number of days that invoice payments must be made within.
 
-1. Select **Accounts payable \> Setup > Payment \> Due date limits**.
+1. Select **Accounts payable \> Payments setup \> Due date limits**.
 
     –or–
 
-    Select **Accounts receivable \> Setup \> Payment \> Due date limits**.
+    Select **Accounts receivable \> Payments setup \> Due date limits**.
 
 2. Select **New** to create a due date limit.
 3. In the **Due date limit** field, enter a name for the new due date limit. In the **Description** field, enter a description.
@@ -88,11 +85,11 @@ When you create and post sales invoices or purchase invoices, the invoice due da
 
 Use the **Terms of payment** page to specify a due date limit, so that you can make sure that the invoice due date that is calculated is in the specified due date limit.
 
-1. Select **Accounts payable \> Setup \> Payment \> Terms of payment**.
+1. Select **Accounts payable \> Payments setup \> Terms of payment**.
 
     –or– 
 
-    Select **Accounts receivable \> Setup \> Payment \> Terms of payment**.
+    Select **Accounts receivable \> Payments setup \> Terms of payment**.
 
 2. Press the **New** button to create terms of payment, or select a terms of payment line.
 3. On the **Setup** FastTab, set the **Use the delivery date to calculate the payment due date** option to **Yes** to calculate the due date by applying terms of payment to the delivery date instead of the invoice date.
@@ -117,3 +114,6 @@ To generate the report, follow these steps.
 4. In the **Calculation** field group, in the **Calculation method** field select the calculation method (**Invoice date** or **Due date**).
 5. On the **Record to include** FastTab, specify the criteria to use to select the vendor transactions, such as invoices, payments, and promissory note journals. (Use **Filter** to specify the criteria.)
 6. Select **OK** to generate the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

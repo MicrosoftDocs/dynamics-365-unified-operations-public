@@ -3,12 +3,10 @@
  
 title: Push products from distribution center to store using buyer's push
 description: This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores. 
-author: rubencdelgado
-manager: AnnBe 
+author: BrianShook
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -55,3 +52,6 @@ This procedure walks through the steps to create and process a Buyer´s push to 
 19. Click Create order.
 20. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

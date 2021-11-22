@@ -3,28 +3,25 @@
 
 title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
-author: mkirknel
-manager: AnnBe
+author: Henrikan
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: smmContactPerson, VendBankAccounts, VendTable
+ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -71,7 +68,7 @@ You can create vendor contacts from scratch. Alternatively, you can copy details
 
 You can't delete a contact person record if the contact is referenced on a document. Instead, you can inactivate the contact.  
 
-You can add vendor contacts to your personal contacts in Microsoft Office 365. However, you must first set up synchronization between Supply Chain Management and Office 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
+You can add vendor contacts to your personal contacts in Microsoft 365. However, you must first set up synchronization between Supply Chain Management and Microsoft 365 in both Microsoft Exchange Server synchronization and the Microsoft Outlook setup wizard.
 
 ## Vendors in different legal entities
 If a vendor is registered for only one legal entity in your organization, and other legal entities must register the same vendor, you can use the **Add vendor to another legal entity** page to configure the vendor to do business with another legal entity. You must select a vendor group, currency, and hold status for the vendor in the selected legal entity.  
@@ -123,3 +120,6 @@ You select default accounts on the **Default account setup** page, which you can
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

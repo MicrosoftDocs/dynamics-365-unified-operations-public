@@ -4,11 +4,9 @@
 title: Create email templates in Attract
 description: This topic provides information about the email templates that you can create and use in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -70,7 +66,7 @@ To create a template, in the upper-right corner of the email template library, s
 
 The template is opened in editing view, and you can name the template. For example, if the template is intended for candidates from a US university, but the content is written in French, you might enter **University\_US\_Francais** as the title. The title, subject line, and body content for any template can support languages besides English.
 
-The **To** field for a template can't be edited, because you already selected the recipient when you first created the template.
+The **To** column for a template can't be edited, because you already selected the recipient when you first created the template.
 
 You can add personas such as **Recruiter** or **Hiring Manager** to the carbon copy (Cc) line. When the email is sent, these roles are automatically replaced with the appropriate users, based on the context of the job.
 
@@ -86,3 +82,6 @@ When the hiring team sends an email, it can use the templates that the admin cre
 
 > [!NOTE] 
 > For emails that are sent automatically, multiple templates can be created. However, only one template can be set as the active template. Because this process is triggered by events, only the admin can determine which template should be used, based on the combination **Default** and **Autosent** badges in the template library.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

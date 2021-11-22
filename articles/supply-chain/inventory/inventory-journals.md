@@ -3,12 +3,10 @@
 
 title: Inventory journals
 description: This topic describes how you can use inventory journals to post various types of physical inventory transactions.
-author: perlynne
-manager: AnnBe
+author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -17,16 +15,15 @@ ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, Inv
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm:
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
 # ms.search.industry:
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -105,7 +102,7 @@ Data entities support the following types of integration scenarios:
 -    Synchronous service (OData)
 -  Asynchronous integration
 
-For more information, see [Data entities](../../dev-itpro/data-entities/data-entities.md).
+For more information, see [Data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > Not all inventory journals are OData-enabled, therefore you cannot use the Excel data connector to get data published, updated, and imported back to Supply Chain Management. 
@@ -123,4 +120,7 @@ These two inventory journals only support the *Initialize stock* scenario as par
 
 ## Additional resources
 
-[Data entities](../../dev-itpro/data-entities/data-entities.md)
+[Data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

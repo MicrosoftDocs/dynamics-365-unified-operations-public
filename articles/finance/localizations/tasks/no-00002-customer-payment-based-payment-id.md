@@ -2,13 +2,11 @@
 # required metadata 
  
 title: NO-00002 Customer payment based on payment ID
-description: This task walks you through setting up and maintaining Norwegian payment IDs. 
+description: This topic explains how to set up and maintain Norwegian payment IDs. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, Cus
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Norway
@@ -92,3 +89,6 @@ This task was created using the demo data company DEMF with the country/region o
 2. Click Show filters.
 3. Apply the following filters: Enter a filter value of "" on the "Payment ID" field using the "is not" filter operator.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

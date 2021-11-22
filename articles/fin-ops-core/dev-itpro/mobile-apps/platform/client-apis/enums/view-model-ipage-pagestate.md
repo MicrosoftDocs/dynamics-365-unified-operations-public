@@ -1,38 +1,19 @@
 ---
-# required metadata
-
 title: PageState enumeration
-description: Represents the various high-level states the a page can be in.
-author: shadykdc
-manager: AnnBe
+description: Represents the various high-level states the page can be in.
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
+ms.author: tfehr
 ---
 
 # PageState enumeration
 
 [!include [banner](../../../../includes/banner.md)]
 
-Represents the various high-level states the a page can be in.
+Represents the various high-level states the page can be in.
 
 ## Index
 
@@ -81,3 +62,6 @@ refreshing:
 The page is currently refreshing its data.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

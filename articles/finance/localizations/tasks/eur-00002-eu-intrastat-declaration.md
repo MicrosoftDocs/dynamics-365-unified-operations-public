@@ -4,11 +4,9 @@
 title: EUR-00002 Generate an EU Intrastat declaration
 description: This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format. 
 author: Anasyash
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, Intras
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -117,3 +114,6 @@ This procedure was created using the demo data company DEMF.
     * For example, select 'Dispatches'.  
 27. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

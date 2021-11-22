@@ -4,21 +4,18 @@
 title: Visual scheduling for lean manufacturing 
 description: This topic provides information about the Kanban schedule board, which the production planner can use to control and optimize the production plan for kanban jobs.
 author: johanhoffmann
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization
+ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -53,7 +50,7 @@ You can schedule only jobs of the **Process** type. The kanban job and its prope
 ## Kanban schedule board
 The **Kanban schedule board** page contains seven main elements, as shown in the following illustration. 
 
-![Kanban schedule board](./media/kanban-schedule-board-1024x554.png)
+![Kanban schedule board.](./media/kanban-schedule-board-1024x554.png)
 1.  Action Pane
 2.  Filter fields
 3.  Button for unplanned jobs
@@ -64,7 +61,7 @@ The **Kanban schedule board** page contains seven main elements, as shown in the
 
 ### View the time scale
 
-The board is divided into periods, each of which is represented as a node (4). The period nodes are listed on the vertical axis, and the horizontal access represents a time scale (7) that shows the length of the period. A period has a length of either one day or one week. The period length is determined by the configuration of the work cell that is selected for the Kanban schedule board (2). For each period node, the Kanban schedule board indicates how much the scheduled kanban jobs are loading the period. There is also an indication of the maximum throughput for the period. If the scheduled throughput exceeds the maximum throughput, the period is considered as overloaded, and a red warning symbol appears. A scheduled kanban job appears in a period that has scheduled start and end times (5). The length of the job is equal to the activity time. Kanban jobs appear as overlapping in a period if their activity times exceed the takt time of the work cell.
+The board is divided into periods, each of which is represented as a node (4). The period nodes are listed on the vertical axis, and the horizontal axis represents a time scale (7) that shows the length of the period. A period has a length of either one day or one week. The period length is determined by the configuration of the work cell that is selected for the Kanban schedule board (2). For each period node, the Kanban schedule board indicates how much the scheduled kanban jobs are loading the period. There is also an indication of the maximum throughput for the period. If the scheduled throughput exceeds the maximum throughput, the period is considered as overloaded, and a red warning symbol appears. A scheduled kanban job appears in a period that has scheduled start and end times (5). The length of the job is equal to the activity time. Kanban jobs appear as overlapping in a period if their activity times exceed the task time of the work cell.
 
 ### View job status
 
@@ -77,7 +74,7 @@ To enhance the overview that the Kanban schedule board provides, you can use col
 ## Plan unplanned jobs
 You can schedule unplanned kanban jobs from the **Plan unplanned jobs** dialog box. To open this dialog box, click the **Unplanned jobs** button that shows the current number of unplanned jobs. Alternatively, click **Plan unplanned jobs** on the **Board** tab of the Action Pane. The dialog box shows a list of the unplanned kanban jobs for the work cell. You can use the **Filter** field to filter on all fields in the grid. For example, you can filter on kanban jobs for a specific product. After you have a filtered list of the jobs that you want to schedule, select them in the list, and then click **OK**. To use automatic planning to schedule the jobs, set the **Automatic planning** option to **Yes**. In this case, the jobs are scheduled into a period according to their due date. You can also schedule the jobs by period. Just select a period in the **Period** field. The following illustration shows an example of the **Plan unplanned jobs** dialog box. 
 
-![Plan unplanned jobs dialog box](./media/plan-unplanned-jobs-1024x564.png)
+![Plan unplanned jobs dialog box.](./media/plan-unplanned-jobs-1024x564.png)
 
 ## Sequence kanban jobs within the same period
 You can change the sequence of one or more selected jobs within a period. This capability can be useful if you want to prioritize some jobs within the period. Alternatively, you might want to sequence jobs that have the same product attributes, to optimize job execution. You can change the sequence through a drag-and-drop operation, or by using the **Backward** and **Forward** menu items on the **Board** tab of the Action Pane.
@@ -93,8 +90,10 @@ You can open the Kanban schedule board by using the menu item on the following p
 -   **Production flow visualization** page
 
 
-Additional resources
---------
+## Additional resources
 
 [Kanban job scheduling for lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

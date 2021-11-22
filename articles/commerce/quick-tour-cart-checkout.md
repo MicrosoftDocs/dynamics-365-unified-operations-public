@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Overview of cart and checkout pages
+title: Cart and checkout pages overview
 description: This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 10/31/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,9 +15,8 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.search.industry: 
 ms.author: anupamar
@@ -27,14 +24,11 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Overview of cart and checkout pages
-
+# Cart and checkout pages overview
 
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The cart page of an e-Commerce website shows all items that a customer has added to the cart. The cart page is built by using the cart module. The cart module is a container that hosts all the modules that are required to showcase items in the cart. The cart module can also use other modules to show the order summary and any promotional codes that have been applied to the customer order.
 
@@ -44,9 +38,9 @@ The checkout page of an e-Commerce website presents a step-by-step flow that cus
 
 The cart page serves as the shopping bag and includes all the items that have been added to the cart.
 
-The following illustration show an example of a cart page that was built by using the online starter kit and the "Fabrikam" theme.
+The following illustration show an example of a cart page that was built by using the module library and the "Fabrikam" theme.
 
-![Example of a cart page](./media/cart2.PNG)
+![Example of a cart page.](./media/cart2.PNG)
 
 The main body of the cart page shows all the items that the customer has added to the cart. All applicable discounts are showcased. These discounts include complex discounts. Examples include "Buy 3 items and get 10% off" or "Buy a bottle and a backpack to get 10% off." The order summary module shows the amount that is due after discounts, shipping, taxes, and so on, have been applied. There is also a promo code module that lets the customer apply or remove promotional codes.
 
@@ -60,9 +54,9 @@ For information about how to author a cart page, see [Add a cart module to a pag
 
 The checkout page is where customers enter the information that is required to place an order.
 
-The following illustration show an example of a checkout page that was built by using the online starter kit.
+The following illustration show an example of a checkout page that was built by using the module library.
 
-![Example of a checkout page](./media/Checkout.PNG)
+![Example of a checkout page.](./media/Checkout.PNG)
 
 The main body of the checkout page is where all the order information is collected. This information includes the shipping address, delivery options, and payment information. Checkout has a step-by-step flow, because the information must be entered in a specific order to be processed. For example, the shipping address must be entered before the shipping costs can be calculated and the payment can be authorized.
 
@@ -70,7 +64,7 @@ The main body of the checkout page is where all the order information is collect
 
 A shipping address is required if items must be shipped. The format of shipping addresses for each locale can be configured in Dynamics 365 Commerce. For example, if the items will be shipped to the United States, the shipping address must include a street address, state, and ZIP Code. Some basic input validation is done for shipping address fields, such as validation for alphanumeric characters, maximum length, and numbers. Although the validity of the address itself isn't verified, this verification can be done by using customized third-party services.
 
-The shipping address is applied to all items in the cart that the "ship" option is selected for. If you use the checkout flow that is provided in the online starter kit, individual cart items can't be shipped to different addresses. If you require this capability, it can be implemented through customization of the checkout modules.
+The shipping address is applied to all items in the cart that the "ship" option is selected for. If you use the checkout flow that is provided in the module library, individual cart items can't be shipped to different addresses. If you require this capability, it can be implemented through customization of the checkout modules.
 
 After the shipping address is provided, the shipping methods that are available from the Dynamics 365 Commerce online store are shown. The shipping methods and the addresses that they support can be configured in Commerce.
 
@@ -84,7 +78,7 @@ During the checkout flow, a customer who is a member of a loyalty program and wh
 
 #### Gift cards
 
-The online starter kit lets internal gift cards be redeemed for an order. To apply an internal gift card, the customer must be signed in. For additional security, we recommend that you customize the flow by using a personal identification number (PIN) for internal gift cards.
+The module library lets internal gift cards be redeemed for an order. To apply an internal gift card, the customer must be signed in. For additional security, we recommend that you customize the flow by using a personal identification number (PIN) for internal gift cards.
 
 ### Signed-in and guest users
 
@@ -92,7 +86,7 @@ The customer can complete the checkout process as a guest user or a signed-in us
 
 ### Order summary
 
-Checkout shows a summary of the line items in the cart, so that the customer can verify the order before he or she places it. The line items can't be edited during the checkout flow. However, a link to the cart is provided in case the user wants to go back and edit line items.
+Checkout shows a summary of the line items in the cart, so that the customer can verify the order before placing the order. The line items can't be edited during the checkout flow. However, a link to the cart is provided in case the user wants to go back and edit line items.
 
 After the customer provides shipping and billing information, the order summary reflects the amount that is due after loyalty points, gift cards, and other payments have been applied.
 
@@ -106,10 +100,11 @@ For more information about how to author a checkout page, see [Add a checkout mo
 
 ## Additional resources
 
-[Overview of the home page](quick-tour-home-page.md)
+[Home page overview](quick-tour-home-page.md)
 
-[Overview of default category landing page and search results page](category-search-page-overview.md)
+[Product details pages overview](quick-tour-pdp.md)
 
-[Overview of product details pages](quick-tour-pdp.md)
+[Account management pages overview](quick-tour-account-management.md)
 
-[Overview of account management pages](quick-tour-account-management.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

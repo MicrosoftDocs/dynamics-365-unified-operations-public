@@ -3,12 +3,10 @@
 
 title: Bonus depreciation
 description: This article provides an overview of the bonus depreciation functionality.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: AssetBonus
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3621
 ms.assetid: 835ec594-744e-461c-a676-1b9abc094173
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -70,3 +67,6 @@ Bonus depreciation is entered as either a percentage or a fixed amount. When you
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

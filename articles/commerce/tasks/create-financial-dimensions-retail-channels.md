@@ -4,11 +4,9 @@
 title: Create financial dimensions for retail channels and configure dimension values on stores
 description: This procedure walks through creating a commerce channel financial dimension with dimension values and steps to configure financial dimension values on stores. 
 author: jashanno
-manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -58,3 +55,6 @@ This procedure walks through creating a commerce channel financial dimension wit
 24. In the list, click the link in the selected row.
 25. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

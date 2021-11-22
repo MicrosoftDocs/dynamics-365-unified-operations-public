@@ -1,95 +1,77 @@
 ---
-# required metadata
-
 title: Dual-write setup from Lifecycle Services
-description: This topic explains how to set up a dual-write connection between a new Finance and Operations environment and a new Common Data Service environment from Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 01/06/2020
+description: This topic explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
-
 ---
 
 # Dual-write setup from Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic explains how to set up a dual-write connection between a new Finance and Operations environment and a new Common Data Service environment from Microsoft Dynamics Lifecycle Services (LCS).
+This topic explains how to enable dual-write from Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Prerequisites
 
-You must be an admin to set up a dual-write connection.
+You must complete the Power Platform integration as described in the following topics:
 
-+ You must have access to the tenant.
-+ You must be an admin in both Finance and Operations environments and Common Data Service environments.
++ [Power Platform Integration - Enable during environment deployment](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
++ [Power Platform integration - Enable after environment deployment](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
 
-## Set up a dual-write connection
+## Set up dual-write for new Dataverse environments
 
-Follow these steps to set up the dual-write connection.
+Follow these steps to set up dual-write from LCS **Environment Details** page:
 
-1. In LCS, go to your project.
-2. Select **Configure** to deploy a new environment.
-3. Select the version. 
-4. Select the topology. If only one topology is available, it's automatically selected.
-5. Complete the first steps in the **Deployment settings** wizard.
-6. On the **Common Data Service** tab, follow one of these steps:
+1. On the **Environment Details** page, expand the **Power Platform Integration** section.
 
-    - If a Common Data Service environment is already provisioned for your tenant, you can select it.
+2. Select the **Dual-write application** button.
 
-        1. Set the **Configure Common Data Service** option to **Yes**.
-        2. In the **Available environments** field, select the environment to integrate with your Finance and Operations data. The list includes all environments where you have admin privileges.
-        3. Select the **Agree** check box to indicate that you agree to the terms and conditions.
+    ![Power Platform Integration.](media/powerplat_integration_step2.png)
 
-        ![Common Data Service tab when a Common Data Service environment is already provisioned for your tenant](../dual-write/media/lcs_setup_1.png)
+3. Review the terms and conditions, and then select **Configure**.
 
-    - If your tenant doesn't already have a Common Data Service environment, a new environment will be provisioned.
+4. Select **OK** to continue.
 
-        1. Set the **Configure Common Data Service** option to **Yes**.
-        2. Enter a name for the Common Data Service environment.
-        3. Select the region to deploy the environment in.
-        4. Select the default language and currency for the environment.
+5. You can monitor the progress by periodically refreshing the environment details page. Setup typically takes 30 minutes or less.  
 
-            > [!NOTE]
-            > You can't change the language and currency later.
+6. When the setup is complete, a message will inform you if the process was successful or if there was a failure. If the setup failed, then a related error message is displayed. You must fix any errors before moving to the next step.
 
-        5. Select the **Agree** check box to indicate that you agree to the terms and conditions.
+7. Select **Link to Power Platform environment** to create a link between Dataverse and the current environment's databases. This typically takes less than 5 minutes.
 
-        ![Common Data Service tab when your tenant doesn't already have a Common Data Service environment](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link to Power Platform environment.":::
 
-7. Complete the remaining steps in the **Deployment settings** wizard.
-8. After the environment has a status of **Deployed**, open the environment details page. The **Common Data Service environment information** section shows the names of the Finance and Operations environment and the Common Data Service environment that are linked.
+8. When the linking is complete, a hyperlink is displayed. Use the link to sign in to the dual-write administration area in the Finance and Operations environment. From there, you can set up entity mappings.
 
-    ![Common Data Service environment information section](../dual-write/media/lcs_setup_3.png)
+## Set up dual-write for an existing Dataverse environment
 
-9. An admin of the Finance and Operations environment must sign in to LCS and select **Link to CDS for Apps** to complete the link. The environment details page shows the admin's contact information.
+To set up dual-write for an existing Dataverse environment, you must create a Microsoft [support ticket](../../lifecycle-services/lcs-support.md). The ticket must include:
 
-    After the link is completed, the status is updated to **Environment linking successfully completed**.
-
-10. To open the **Data integration** workspace in the Finance and Operations environment and control the templates that are available, select **Link to CDS for Apps**.
-
-    ![Link to CDS for Apps button in the Common Data Service environment information section](../dual-write/media/lcs_setup_4.png)
++ Your Finance and Operations environment ID.
++ Your environment name from Lifecycle Services.
++ The Dataverse organization ID or Power Platform Environment ID from Power Platform Admin Center. In your ticket, request that the ID be the instance used for Power Platform integration.
 
 > [!NOTE]
 > You can't unlink environments by using LCS. To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.
+
+## Linking mismatch
+
+It is possible that your LCS environment is linked to one Dataverse instance, while your dual-write environment is linked to another Dataverse instance. This linking mismatch can cause unexpected behavior, and it could end up sending data to the wrong environment. The recommended environment to use for dual-write is the one that is created as part of Power Platform integration, and long term, this will be the only way to establish a link between environments.
+
+If your environment has a linking mismatch, LCS displays a warning on your environment details page similar to "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which is not recommended":
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integration link mismatched.":::
+
+If you encounter this error there are two options, based on your needs:
+
++ [Unlink and relink dual-write environments (Reset or change linking)](relink-environments.md#scenario-reset-or-change-linking) as specified on your LCS environment details page. This is the ideal option, because you can run it without Microsoft support.  
++ If you want to keep your link in dual-write, you can ask for help from Microsoft Support to change the Power Platform integration to use your existing Dataverse environment as documented in the previous section.  
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

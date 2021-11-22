@@ -4,11 +4,9 @@
 title: Forecast position distribution
 description: This topic provides information about the position budgeting functionality that is available for the public sector. 
 author: velofog
-manager: AnnBe
 ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-alpavk
+ms.author: roschlom
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
 
@@ -40,3 +37,6 @@ You can validate whether the dimensions for a forecast position are correct for 
 You can see when a forecast position was last validated on the **Forecast position validation** section on the **Budget planning** FastTab of the **Forecast position** page. The validation fields are also included on the **Forecast positions** list page.
 
 For more information, see, [Position forecasting](../budgeting/position-forecasting.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

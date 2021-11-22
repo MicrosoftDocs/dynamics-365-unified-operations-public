@@ -3,12 +3,10 @@
  
 title: Monitor a master planning run
 description: This topic explains how the production planner can see whether a master planning run is in progress. 
-author: josaw1
-manager: AnnBe 
+author: ChristianRytt
 ms.date: 11/04/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,21 +14,19 @@ ms.technology:
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Monitor a master planning run
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 ## Use a Gantt chart to visualize master planning progress
 
@@ -41,7 +37,7 @@ From the **View master planning progress** page, you can view details of histori
 To use this functionality, follow these steps.
 
 1. In the **Feature management** workspace, on the **New** tab, select **Master planning progress visualization** in the list. If the feature doesn't appear on the **New** tab, look on the **Not enabled** and **All** tabs.
-1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on.
+1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 The **View master planning progress** page can display both historical planning jobs and active planning jobs. 
 
@@ -132,3 +128,6 @@ The color is shown only on the lowest level in the Gantt chart. Select **Expand 
 1. In the grid, select the row where the **Field** field is set to **Item number**.
 1. In the **Criteria** field, enter a value.
 1. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

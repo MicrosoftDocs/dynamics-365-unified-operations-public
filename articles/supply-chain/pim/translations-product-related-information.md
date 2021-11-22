@@ -3,28 +3,25 @@
 
 title: Product-related translations FAQ
 description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
-author: cvocph
-manager: AnnBe
-ms.date: 11/03/2017
+author: t-benebo
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails
+ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable, PCTranslationLanguageLookup, EcoResProductCategory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to manage translations for products, product dimension values, and product attributes. 
 
-What product-related data can be translated?
---------------------------------------------
+## What product-related data can be translated?
 
 You can create translations for the following product-related information:
 -   Names and descriptions of products.
@@ -132,3 +128,6 @@ Translations of product-related information can be managed at any time. When tra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

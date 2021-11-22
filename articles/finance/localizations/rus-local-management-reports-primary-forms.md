@@ -4,11 +4,9 @@
 title: Advance holders reports
 description: This topic describes the Advance holder reports that are available for Russia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/05/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: 8.1
 ms.search.validFrom: 2018-10-31
 
@@ -52,8 +49,8 @@ When you generate this report, the following parameters are displayed. You can u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -85,8 +82,8 @@ When you generate this report, the following parameters are displayed. You can u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -118,8 +115,8 @@ When you generate this report, the following parameters are displayed. You can u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -160,8 +157,8 @@ When you generate this report, the following parameters are displayed. You can u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -221,5 +218,8 @@ In the **Details and sorting parameters** section, select the available fields t
 
 ## Additional resources
 
-[SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)
+[SQL Server Reporting Services Reports report](/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

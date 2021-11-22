@@ -4,11 +4,9 @@
 title: Planning Optimization overview
 description: This topic provides an overview of the Planning Optimization functionality.
 author: ChristianRytt
-manager: AnnBe
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,10 +15,9 @@ ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -32,7 +29,6 @@ ms.dyn365.ops.version: AX 10.0.5
 # Planning Optimization overview
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL database during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.
 
@@ -40,7 +36,7 @@ To use Planning Optimization, you must install the Planning Optimization Add-in 
 
 The following illustration shows the advantage of running Planning Optimization during office hours.
 
-![Advantage of running Planning Optimization during office hours](media/PlanningOptimization1.png)
+![Advantage of running Planning Optimization during office hours.](media/PlanningOptimization1.png)
 
 ## Improved performance
 
@@ -69,7 +65,7 @@ If the Planning Optimization Add-in is uninstalled, all related data in the Plan
 
 The following illustration shows the data flow.
 
-![Data flow for regeneration runs](media/PlanningOptimization2.png)
+![Data flow for regeneration runs.](media/PlanningOptimization2.png)
 
 ## Related resources
 
@@ -82,3 +78,6 @@ The following illustration shows the data flow.
 [Apply filters to a plan](plan-filters.md)
 
 [Cancel a planning job](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

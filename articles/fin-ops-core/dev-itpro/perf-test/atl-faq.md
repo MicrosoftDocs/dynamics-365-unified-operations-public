@@ -1,31 +1,24 @@
 ---
-# required metadata
-
 title: Acceptance test library FAQ
 description: This topic provides answers to frequently asked questions about the Acceptance test library.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +26,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Acceptance test library FAQ
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## Which fluent prefix should I use: set, for, or with?
 
@@ -85,3 +76,6 @@ ATL should be used mostly for data setup and validation in integration and compo
 In some of the more complex entities, such as Sales order, all the business logic that is associated with the `modifiedField`, `insert`, and `update` events is called. Creation of invoice transactions, for example, is also done by running real invoice posting logic. Therefore, the performance of some operations will be slow. However, these issues don't occur for most of the entities that represent master data. Therefore, you should be able to use those entities in any type of test.
 
 There should not be significant overhead if specifications and queries are used to do validation. These artifacts can also be used in unit tests.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

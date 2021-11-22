@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Choose a data integration strategy 
+title: Integration between Finance and Operations apps and third-party services 
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
-author: Sunil-Garg
-manager: AnnBe
-ms.date: 09/18/2019
+author: peakerbl
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,21 +16,22 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Choose a data integration strategy
+# Integration between Finance and Operations apps and third-party services
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 
@@ -45,8 +44,7 @@ The following table lists the integration patterns that are available.
 
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
-| Dual-write                    | [Dual-write overview](dual-write/dual-write-home-page.md) |
-| Classic data integration      | [Classic data integration overview](data-integration-cds.md) |
+| Power Platform integration    | [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) |
 | OData                         | [Open Data Protocol (OData)](odata.md) |
 | Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management package REST API](data-management-api.md) |
 | Custom service                | [Custom service development](custom-services.md) |
@@ -55,18 +53,6 @@ The following table lists the integration patterns that are available.
 
 > [!NOTE]
 > For on premise deployments, the only supported API is the [Data management package REST API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
-
-## Dual-write vs. classic data integration patterns
-
-Dual-write provides synchronous, bi-directional, near-real time experience between model-driven applications in Dynamics 365 and Finance and Operations applications. Data synchronization happens with little or no intervention and is triggered by create, update and delete actions on an entity. Dual-write is suitable for interactive business scenarios that span across Dynamics 365 applications.
-
-Classic data integration provides asynchronous and uni-directional data synchronization experience between model-driven applications in Dynamics 365 and Dynamics 365 Finance and Operations applications. It's an IT-administrator led experience and you must schedule the data sync jobs to run on a specific cadence. Classic data integration is suitable for business scenarios that involves bulk ingress/egress of data across Dynamics 365 applications.
-
-| Pattern                       | Timing                        | Batch | Technology | Finance and Operations app | Model-driven apps in Dynamics 365 |
-|-------------------------------|-------------------------------|-------|---|
-| Dual-write             | Synchronous<br>Bi-directional   | No    | OData | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent | 
-| Classic data integration | Asynchronous, uni-directional | Yes   | DIXF | Finance<br>Supply Chain<br>Commerce<br>Service Industry<br>CoreHR | Sales<br>Marketing<br>Customer Service<br>Field Service<br>Project Service Automation<br>Talent |
-
 
 ## Synchronous vs. asynchronous integration patterns
 
@@ -113,52 +99,6 @@ When you use a synchronous pattern, success or failure responses are returned to
 
 When you use an asynchronous pattern, the caller receives an immediate response that indicates whether the scheduling call was successful. The caller is responsible for handling any errors in the response. After scheduling is done, the status of the data import or export isn't pushed to the caller. The caller must poll for the result of the corresponding import or export process, and must handle any errors accordingly.
 
-## Typical scenarios and patterns that use dual-write 
-
-Here are some typical scenarios that use dual-write.
-
-### Enable customer service representative to facilitate change of address for Finance and Operations customers
-
-A customer relocates and wishes to change their billing and shipping address information. This customer contacts the customer support representative and requests a change of address. The customer support representative takes the call and changes the billing and shipping address information of the customer.
-
-| Decision                    | Information              |
-|-----------------------------|--------------------------|
-| Is real-time data required? | Yes                      |
-| Peak data volume            |                          |
-| Frequency                   | Ad hoc                   |
-
-#### Recommended solution
-This scenario of near-real time data synchronization is best implemented by dual-write.
-
-- The customer's information is sourced in a Finance and Operations app.
-- A customer calls customer support and asks to change their billing and shipping address information.
-- A customer support representative retrieves the customer’s record in Dynamics 365 Customer Service.
-- The customer support representative updates the billing and shipping address and saves the data.
-- The new billing and shipping address syncs back to the Finance and Operations app in real-time.
-
-### Sales representatives can change customer credit limits without logging into a Finance and Operations app
-
-A customer has a credit limit of $2,000 and wants to increase it to $5,000. This customer calls the customer support and requests the increase. The ticket is assigned to the sales department. The head of sales reviews the request, checks the customer's payment history, and determines that the customer is eligible for an increased credit limit. The head of sales approves the request and responds to the ticket. The customer receives an email informing the approval of $5,000 credit limit.
-
-| Decision                    | Information              |
-|-----------------------------|--------------------------|
-| Is real-time data required? | Yes                      |
-| Peak data volume            |                          |
-| Frequency                   | Ad hoc                   |
-
-
-#### Recommended solution
-
-This scenario is best implemented by dual-write.
-
-- A customer calls customer support and wants to increase their credit limit from $2,000 to $5,000.
-- A customer support representative creates a ticket in Dynamics 365 Customer Service.
-- This ticket is assigned to the sales unit.
-- A sales representative from the sales unit reviews and approves the request.
-- This result is the increase of credit limit of the customer to $5,000 in Dynamics 365 Sales. 
-- The credit limit in the Finance and operations app is updated to $5,000.
-- The sales representative responds to the ticket and resolves it. 
-- The customer receives an email about the increased credit limit.
 
 ## Typical scenarios and patterns that use OData integrations
 
@@ -177,7 +117,7 @@ A manufacturer defines and configures its product by using a third-party applica
 | Peak data volume            | 1,000 records per hour\* |
 | Frequency                   | Ad hoc                   |
 
-\* Occasionally, many new or modified production configurations will occur in a short time.
+Occasionally, many new or modified production configurations will occur in a short time.
 
 #### Recommended solution
 
@@ -335,4 +275,7 @@ It's typical that the application calls out to an external web service that is h
 >
 > If you can't modify the target service so that it uses TLS 1.2 or later, you can work around this issue by introducing a broker service and making a two-hop call, as shown in the following illustration.
 >
-> ![TLS requirements](./media/integration-tls.png)
+> ![TLS requirements.](./media/integration-tls.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

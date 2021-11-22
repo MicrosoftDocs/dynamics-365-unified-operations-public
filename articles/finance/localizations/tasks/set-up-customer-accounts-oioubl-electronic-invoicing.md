@@ -4,11 +4,9 @@
 title: Set up customer accounts for OIOUBL electronic invoicing
 description: This task walks you through how to set up a customer account for OIOUBL electronic invoicing. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: CustTable, RegNumTaxIdLookup, smmContactPerson, DirPartyLookup, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
@@ -53,3 +50,6 @@ This is the third procedure, out of six, that demonstrates the process of genera
 
 ## Set up contact information for a customer
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,33 +1,14 @@
 ---
-# required metadata
-
 title: X++ compile-time functions
 description: This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-ms.custom: 29581
-ms.assetid: fa6613a4-7d0b-40d3-be29-9d14c22c7d5b
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ compile-time functions
@@ -36,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 
-# Overview
+## Overview
 
 Compile-time functions are executed early during compilation of X++ code. They should be used wherever possible in X++ code to make the code resilient to changes to the metadata stored in the Application Explorer. Compile-time functions have their input value verified by the compiler. If the input value is not found to match any existing object in the Application Explorer, the compiler issues an error. The inputs to these functions must be literals, because the compiler cannot determine the value that a variable contains at run time. A compile-time function is a metadata assertion function. It takes arguments that represents an entity in the Application Explorer and validates the arguments at compile time. It has no effect at run time. Attributes are classes that inherit from the **SysAttribute** class. To support the validation of form, report, query, and menu metadata, use the **AutoDeclaration** property on controls. Most of these functions retrieve metadata about items that are in the Application Explorer. Some common compile time functions are as follows:
 
@@ -2736,3 +2717,6 @@ static void workFlowTypeStrExample(Args _args)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

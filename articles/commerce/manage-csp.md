@@ -4,11 +4,9 @@
 title: Manage Content Security Policy (CSP)
 description: This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 10/01/2019
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience:  Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,18 +27,51 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Manage Content Security Policy (CSP)
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 CSP is an additional layer of security that helps detect and mitigate some types of web attacks. The purpose of these attacks can range from data theft, to site defacement, to the distribution of malware. CSP provides an extensive set of policy directives that help you control the resources that a site page is allowed to load. Each directive defines the restrictions for a specific type of resource.
 
-When CSP is turned on for an e-Commerce site, it helps enhance security by blocking connections, scripts, fonts, and other types of resources that originate from unknown or malicious sources. In Dynamics 365 Commerce, CSP is turned on by default. However, it will likely require additional configuration for most sites. The Dynamics 365 Commerce online software development kit (SDK) provides a default list of allowed source URLs that style, script, and application programming interface (API) calls can be made from. You can edit this list on the **Extensibility** tab in Commerce.
+When CSP is turned on for an e-Commerce site, it helps enhance security by blocking connections, scripts, fonts, and other types of resources that originate from unknown or malicious sources. In Dynamics 365 Commerce, CSP is turned on by default. However, it will likely require additional configuration for most sites. The Dynamics 365 Commerce online software development kit (SDK) provides a default list of allowed source URLs that style, script, and application programming interface (API) calls can be made from. You can edit this list on the **Extensions** tab in the site builder tool.
 
 For more information about CSP, see [Content Security Policy Reference](https://content-security-policy.com/).
+
+## CSP settings
+
+### Turn off CSP for a site
+
+To prevent CSP from applying policies to your site, you can turn it off for that site in site builder.
+
+To turn off CSP for a site, follow these steps.
+
+1. In site builder, select the site you are working on.
+1. Select **Site settings**, and then select the **Extensions** tab.
+1. On the **Content security policy** tab, select the **Disable content security policy** check box.
+
+    ![Disable content security check box on the Content Security Policy tab.](media/content-security-policy-disable.png)
+
+1. Select **Save and publish**.
+
+### Enable report only mode
+
+If CSP is enabled, content security policy will not be enforced, but any violations will be reported to URIs specified by the report-uri directive.
+
+To enable report only mode, follow these steps.
+
+1. In site builder, select the site you are working on.
+1. Select **Site settings**, and then select the **Extensions** tab.
+1. On the **Content security policy** tab, select the **Enable report only mode** check box.
+
+### Enable nonce
+
+Enabling nonce (number used once) will block the execution of all inline scripts except those specified within the [inline script](e-commerce-extensibility/script-injector.md) module. A unique cryptographic nonce is generated and added to each script specified in the CSP header.
+
+To enable nonce, follow these steps.
+
+1. In site builder, select the site you are working on.
+1. Select **Site settings**, and then select the **Extensions** tab.
+1. On the **Content security policy** tab, select the **Enable Nonce** check box.
 
 ## CSP directives in Commerce
 
@@ -49,26 +79,29 @@ The following CSP directives can be used on Commerce sites.
 
 | Directive   | Description |
 |-------------|-------------|
-| child-src   | This directive defines valid sources of web workers and nested browsing contexts that are loaded by using elements such as **&lt;frame&gt;** and **&lt;iframe&gt;**. |
+| child-src   | This directive defines valid sources of web workers and nested browsing contexts that are loaded by using elements such as **\<frame\>** and **\<iframe\>**. |
 | connect-src | This directive defines the URLs that AJAX requests can be made from. |
 | font-src    | This directive defines valid sources of fonts. |
+| frame-ancestors | This directive specifies valid parents that may embed a page using **\<frame\>**, **\<iframe\>**, **\<object\>**, **\<embed\>**, or **\<applet\>** elements. Setting this directive to "none" is similar to specifying the "X-Frame-Options: DENY" directive (which is also supported in older browsers). |
+| frame-src   | This directive defines valid sources for nested browsing context loading using elements such as **\<frame\>** and **\<iframe\>**. |
 | img-src     | This directive defines valid sources of images. |
-| media-src   | This directive defines valid sources of audio and video, such as HTML5 **&lt;audio&gt;** and **&lt;video&gt;** elements. |
-| object-src  | This directive defines valid sources of plug-ins, such as **&lt;object&gt;**, **&lt;embed&gt;**, and **&lt;applet&gt;** elements. |
+| media-src   | This directive defines valid sources of audio and video, such as HTML5 **\<audio\>** and **\<video\>** elements. |
+| object-src  | This directive defines valid sources of plug-ins, such as **\<object\>**, **\<embed\>**, and **\<applet\>** elements. |
+| report-uri  | This directive defines URI(s) that the browser will post CSP violation reports to. These violation reports consist of JSON documents sent via an HTTP POST request to the specified URI. |
 | script-src  | This directive defines valid sources of JavaScript. |
 | style-src   | This directive defines valid sources of stylesheets. |
 
 ### Example: Configure a CSP directive
 
-The following example shows how to configure a CSP directive so that an external script can be called from your site.
+The following example procedure shows how to configure a CSP directive so that an external script can be called from your site.
 
-1. In Commerce, go to your site.
-1. Select **Site Management**, and then select the **Extensibility** tab.
-1. On the **Content Security Policy** tab, under **script-src**, select **Add**, and then enter the full URL of the external script that should be called.
+1. In site builder, select the site you are working on.
+1. Select **Site settings**, and then select the **Extensions** tab.
+1. On the **Content security policy** tab, under **script-src**, select **Add**, and then enter the full URL of the external script that should be called.
 
-    ![URL for an external script on the Content Security Policy tab](media/content-security-policy.png)
+    ![URL for an external script on the Content Security Policy tab.](media/content-security-policy.png)
 
-1. Select **Save and Publish**.
+1. Select **Save and publish**.
 
 ## Interpret and fix CSP errors
 
@@ -76,7 +109,7 @@ When you first configure CSP for a site, some pages probably won't be loaded at 
 
 The following illustration shows an example of CSP errors in a web browser's developer tools.
 
-![CSP errors in a web browser's developer tools](media/content-security-policy-errors.png)
+![CSP errors in a web browser's developer tools.](media/content-security-policy-errors.png)
 
 There are two CSP errors in this example:
 
@@ -85,7 +118,7 @@ There are two CSP errors in this example:
 
 The following screenshot shows what the fixed settings look like on the **Content Security Policy** tab in Commerce.
 
-![Fixed settings on the Content Security Policy tab](media/content-security-policy-fixed.png)
+![Fixed settings on the Content Security Policy tab.](media/content-security-policy-fixed.png)
 
 ## Update page mocks that use CSP
 
@@ -113,18 +146,6 @@ You can turn off CSP in a page mock by using the following code.
 }
 ```
 
-## Turn off CSP for a site
-
-To prevent CSP from applying policies to your site, you can turn it off for that site.
-
-1. In Commerce, go to your site.
-1. Select **Site Management**, and then select the **Extensibility** tab.
-1. On the **Content Security Policy** tab, select the **Disable content security policy** check box.
-
-    ![Disable content security check box on the Content Security Policy tab](media/content-security-policy-disable.png)
-
-1. Select **Save and Publish**.
-
 ## Additional resources
 
 [Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
@@ -132,3 +153,6 @@ To prevent CSP from applying policies to your site, you can turn it off for that
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

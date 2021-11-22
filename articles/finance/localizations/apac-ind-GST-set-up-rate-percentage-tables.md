@@ -3,12 +3,10 @@
 
 title: Set up rate and percentage tables
 description: This topic explains how to set up rate and percentage tables.
-author: EricWang
-manager: RichardLuan
+author: EricWangChen
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -35,7 +32,7 @@ ms.dyn365.ops.version: 10.0.4
 1. Expand the **Tax component** node, and select the **Rate** node.
 2. In the **Value** field, enter the tax rate. The remaining fields are used to determine the rate. In the standard GST configuration, there are several pre-defined fields, including **Consumption state**, **HSN code**, and **SAC**. You can select the fields relevant to your business to determine the rate. 
 
-    ![Tax rates](media/tax-rate.png)
+    ![Tax rates.](media/tax-rate.png)
 
     If you leave any input fields empty, then the fields can accept any input values. For example, in the following table, if **HSN** is *998313* and not matter what the value of **Party GST Registration Number** is, then the rate is *12%*. 
 
@@ -48,17 +45,17 @@ ms.dyn365.ops.version: 10.0.4
 
 3. Select the **Reverse Charge Percentage** node, and in the **Value** field, enter the reverse charge percentage.
 
-    ![Reverse charge percentage](media/reverse-charge.png)
+    ![Reverse charge percentage.](media/reverse-charge.png)
 
 4. Select the **Load on Inventory Percentage** node, and in the **Value** field, enter the load on inventory percentage.
 
-    ![Load on inventory percentage](media/load-on-invertory.png)
+    ![Load on inventory percentage.](media/load-on-invertory.png)
 
 5. Select **Save**, and then select **Close**.
 6. On the **Companies** FastTab, select **Parameters**.
 7. Enter the parameter values, and then select **OK**.
 
-    ![Tax setup parameters dialog box](media/tax-parameter_upd.png)
+    ![Tax setup parameters dialog box.](media/tax-parameter_upd.png)
 
 ## Import/export tax setup
 
@@ -76,10 +73,10 @@ Incorrect tax setup can cause problems that are hard to detect. Common mistakes 
 
 Duplicate tax setup refers to records with the same values in input fields. Following is an example of two records with the same values for **HSN** and **Party GST Registration Number**, however, they result with two different values.
 
-    | HSN    | Party GST Registration Number | Value |
-    | ------ | ----------------------------- | ----- |
-    | 998313 |                               | 12%   |
-    | 998313 |                               | 15%   |
+   | HSN    | Party GST Registration Number | Value |
+   | ------ | ----------------------------- | ----- |
+   | 998313 |                               | 12%   |
+   | 998313 |                               | 15%   |
 
 To resolve and prevent this issue, enable **Tax setup validation** in [Feature Management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). With this feature enabled, the system will check for duplicates when you enter new data through the UI or when you import the tax setup from a CSV file. 
 
@@ -88,3 +85,6 @@ To check for existing dupclicates, select **Show Duplicates**, and then delete t
 ### Enter non-exist master data
 
 When **Tax setup validation** is enabled, the system will verify entered and imported master data including HSN and SAC.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

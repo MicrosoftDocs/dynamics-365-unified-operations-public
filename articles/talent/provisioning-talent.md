@@ -4,11 +4,9 @@
 title: Provision Talent
 description: This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 Talent. 
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -30,6 +26,8 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 ---
 # Provision Talent
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
 
@@ -66,7 +64,7 @@ After you've created an LCS project, you can provision Talent into an environmen
 
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Talent Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
 
-4. Talent is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this topic before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Talent is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this topic before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](/powerapps/administrator/create-environment).
 
 5. Select the environment to provision Talent into.
 
@@ -91,7 +89,7 @@ Use the following guidance when determining which Power Apps environment to depl
 
 2. A single Talent environment is mapped to a single Power Apps environment.
 
-3. A Power Apps environment contains Talent, along with the corresponding Power Apps, Power Automate, and Common Data Service applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Talent environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
+3. A Power Apps environment contains Talent, along with the corresponding Power Apps, Power Automate, and Dataverse applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Talent environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
 
 4. Data integration and testing strategies should be considered, such as Sandbox, UAT, or Production. We recommend that you consider the various implications for your deployment, because it isn't easy to later change which Talent environment is mapped to a Power Apps environment.
 
@@ -107,4 +105,7 @@ Use the following guidance when determining which Power Apps environment to depl
  
 ## Grant access to the environment
 
-By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you need to add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Talent must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users.  Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you need to add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Talent must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users.  Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

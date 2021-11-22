@@ -3,12 +3,10 @@
 
 title: Copy vendors by using shared number sequences
 description: This topic explains how to use shared number sequences to copy a vendor to another legal entity but keep the same vendor ID.
-author: mikefalkner
-manager: aolson
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form:  VendTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 
@@ -72,3 +69,6 @@ You can also copy vendors by using the Tax exempt number search feature that is 
 
 1. A **Copy vendor** option appears. By default, this option is set to **No**. To copy the vendor to the current legal entity, set the option to **Yes**.
 2. Select **Select**. The new vendor is created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

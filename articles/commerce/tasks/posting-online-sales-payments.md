@@ -4,11 +4,9 @@
 title: Posting of online sales and payments
 description: This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions. 
 author: psimolin
-manager: AnnBe 
 ms.date: 08/06/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, Sys
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -111,3 +108,6 @@ This procedure walks through configuring and running a recurrent batch job to cr
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

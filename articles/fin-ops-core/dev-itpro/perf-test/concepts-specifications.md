@@ -1,31 +1,24 @@
 ---
-# required metadata
-
 title: Specification classes
 description: This topic provides information about specification classes.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +26,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Specification classes
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 A specification class provides fluent application programming interfaces (APIs) that are used to define the set of criteria that an entity should meet. Specifications are often used in validation scenarios. They are usually used together with query classes.
 
@@ -51,7 +42,7 @@ In this naming convention:
 
 ## Examples
 
-```
+```Console
 AtlSpecWHSLoadLine
 
 AtlSpecWHSWorkLine
@@ -65,12 +56,19 @@ Specification classes should provide fluent setter methods to specify various cr
 
 The following code verifies that the work contains six lines that meet the specified criteria. For example, the first line should have **1** as the line number of **1**, **Pick** as the work type, **1** as the quantity, **Closed** as the status, and **bulk** as the location.
 
-```
+```xpp
 work.lines().assertExpectedLines(
-    workLines.spec().withLineNum(1).withWorkType(WHSWorkType::Pick).setQuantity(1).setStatus(WHSWorkStatus::Closed).setLocation(locations.bulk()),
-    workLines.spec().withLineNum(2).withWorkType(WHSWorkType::Pick).setQuantity(1).setStatus(WHSWorkStatus::Closed).setLocation(locations.floor()),
-    workLines.spec().withLineNum(3).withWorkType(WHSWorkType::Put) .setQuantity(2).setStatus(WHSWorkStatus::Closed).setLocation(locations.stage()),
-    workLines.spec().withLineNum(4).withWorkType(WHSWorkType::Pick).setQuantity(2).setStatus(WHSWorkStatus::Cancelled).setLocation(locations.stage()),
+    workLines.spec().withLineNum(1).withWorkType(WHSWorkType::Pick).setQuantity(1)
+        .setStatus(WHSWorkStatus::Closed).setLocation(locations.bulk()),
+    workLines.spec().withLineNum(2).withWorkType(WHSWorkType::Pick).setQuantity(1)
+        .setStatus(WHSWorkStatus::Closed).setLocation(locations.floor()),
+    workLines.spec().withLineNum(3).withWorkType(WHSWorkType::Put)
+        .setQuantity(2).setStatus(WHSWorkStatus::Closed).setLocation(locations.stage()),
+    workLines.spec().withLineNum(4).withWorkType(WHSWorkType::Pick).setQuantity(2)
+        .setStatus(WHSWorkStatus::Cancelled).setLocation(locations.stage()),
     workLines.spec().withLineNum(5).withWorkType(WHSWorkType::Put).setQuantity(2).setStatus(WHSWorkStatus::Cancelled)
 );
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

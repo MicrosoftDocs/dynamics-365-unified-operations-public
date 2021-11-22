@@ -4,11 +4,9 @@
 title: Create a one-time vendor and invoice in the public sector
 description: The vendor record uses values from the default one-time vendor account. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: VendOpenInvoicesListPage, VendOneTimeVendInvoice_PSN
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -40,3 +37,6 @@ The vendor record uses values from the default one-time vendor account. To view 
 5. Click Create.
     * The Vendor invoice page opens, displaying the vendor information.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

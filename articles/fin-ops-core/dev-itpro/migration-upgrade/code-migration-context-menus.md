@@ -4,11 +4,9 @@
 title: Code migration - Context menu code
 description: This topic provides details about the programming model that is required for context menus (shortcut menus).
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16301
 ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
@@ -160,3 +157,6 @@ As you migrate context menus, consider the following guidelines:
 -   Limit the number of menu items to five.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

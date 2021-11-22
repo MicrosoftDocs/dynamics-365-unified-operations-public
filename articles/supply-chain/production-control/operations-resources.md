@@ -3,28 +3,25 @@
 
 title: Operations resources
 description: Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
-author: sorenva
-manager: AnnBe
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
+ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability, WrkCtrResourceGroup, WrkCtrResourceAbilityMap, OpResCapacityPlanningWorkspace, WrkCtrCapResGraph, WrkCtrResourceRequirementPart, WrkCtrCapResGraphDialog, WrkCtrResourceCopy, WrkCtrCapResStatistic
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
 
-Operations resources
---------------------
+## Operations resources
 
 Operations resources are the machines, tools, workers, facilities, physical areas or vendors that perform the activities of a project or a production process. They can be of different types and can have different capabilities.
 
@@ -89,3 +85,6 @@ When you define an activity such as a route operation or a project hour forecast
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

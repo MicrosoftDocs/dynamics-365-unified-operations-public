@@ -4,11 +4,9 @@
 title: Production setup requirements
 description: This article provides information about setup requirements before you can work with Production control. 
 author: johanhoffmann
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, Work
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 55561
 ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
@@ -75,7 +72,7 @@ If you're working with routes, operations must be defined for every production r
 2.  **Cost groups** – Set up cost groups to create and maintain different types of costing.
 3.  **Route groups** – Set up route groups to define parameters that are related to groups of routes. You must set up route groups before you can create production routes.
 4.  **Routes** – Set up production routes, and define default settings to control scheduling, costing, and pricing of route operations, and to control progress reporting.
-5.  **Routes** – Set up route versions to enable item variations in production.
+5.  **Route version** – Set up route versions to enable item variations in production.
 
 ## Optional advanced settings
 1.  **Production groups** – Set up production groups to establish relationships between the production order and ledger accounts. The ledger accounts are used to post or group orders for reporting.
@@ -85,3 +82,6 @@ If you're working with routes, operations must be defined for every production r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Form 1099 in the public sector
 description: This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableL
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26181
 ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
@@ -56,10 +53,12 @@ You also use the **Vendor settlement for 1099s** page to enter or update 1099 in
 -   The IRS might require that, if just one amount on a page exceeds the minimum amount, all amounts must be reported, even if all the other amounts are less than the minimum amount.
 
 
-Additional resources
---------
+## Additional resources
 
 [Accounts payable in the public sector overview](../public-sector/accounts-payable-public-sector.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

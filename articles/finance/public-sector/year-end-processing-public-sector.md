@@ -2,13 +2,11 @@
 # required metadata
 
 title: Year-end processing in the public sector
-description: This article provides information about year-end processing for a public sector organizations.
-author: ShylaThompson
-manager: AnnBe
+description: This topic provides information about year-end processing for public sector organizations.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: PurchYearEndClose
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19601
 ms.assetid: ba9a7abc-bd18-47c2-b745-96cdcec8ac98
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about year-end processing for a public sector organizations.
+This topic provides information about year-end processing for public sector organizations.
 
 This topic describes the year-end functionality available for the public sector. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year.  Public sector clients have the following capabilities:
 
@@ -64,3 +61,6 @@ Posting definitions govern the accounting that occurs on the closing entries, an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

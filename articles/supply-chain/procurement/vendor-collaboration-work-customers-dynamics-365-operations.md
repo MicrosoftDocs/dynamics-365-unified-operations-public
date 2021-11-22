@@ -3,30 +3,27 @@
 
 title: Vendor collaboration with customers
 description: This topic describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
-author: mkirknel
-manager: AnnBe
-ms.date: 06/20/2017
+author: TaylorVH
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.author: v-savanh
+ms.search.validFrom: 2020-11-01
+ms.dyn365.ops.version: 10.0.15
 
 ---
 
@@ -39,13 +36,13 @@ This topic describes how you can use vendor collaboration to work with customers
 - **Purchase order confirmation** – Monitor and respond to purchase orders (POs).
 - **Vendor bidding** – View requests for quotation (RFQs), and respond to them by entering bids.
 - **Vendor information** – View and update vendor master data.
-- **Invoicing** – Work with invoices. This topic doesn't cover the **Invoicing** workspace. For more information about this workspace, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Invoicing** – Work with invoices. This topic doesn't cover the **Invoicing** workspace. For more information about this workspace, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Vendors can also monitor information about consignment inventory.
 
 ## Working with POs in the Purchase order confirmation workspace
 
-The **Purchase order confirmation** workspace lets you respond to the POs that have been sent to you for review. It also lets you view information about POs that are awaiting action from the customer, and POs that have been confirmed but are still open.
+The **Purchase order confirmation** workspace lets you respond to the purchase orders (POs) that have been sent to you for review. It also lets you view information about POs that are awaiting action from the customer, and POs that have been confirmed but are still open.
 
 There are three lists in the **Purchase order confirmation** workspace:
 
@@ -58,7 +55,7 @@ You can use the following pages to work with POs:
 - **Purchase orders for review** – This page contains the same information as the **Purchase orders for review** list in the workspace. See the description earlier in this topic.
 - **Purchase order vendor confirmation history** – This page contains all POs and all versions of POs that have been sent to the vendor. It also contains all the responses that have been returned from the vendor.
 - **Open confirmed purchase orders** This page contains the same information as the **Open confirmed purchase order** list in the workspace. See the description earlier in this topic.
-- **All confirmed purchase orders** – This page contains all the POs that have been confirmed. The POs on this page include POs where products or services have been received. You can use this list to monitor POs that you can send invoices for.
+- **All confirmed purchase orders** – This page contains all the POs that have been confirmed. The POs that are shown on this page include POs where products or services have been received. You can use this list to monitor POs that you can send invoices for.
 
 ### Responding to POs
 
@@ -86,9 +83,9 @@ If you're using consignment inventory, you can use the vendor collaboration inte
 
 ## Working with RFQs in the Vendor bidding workspace
 
-The **Vendor bidding** workspace lets you view the RFQs that your company has been invited to respond to. You can also respond to the RFQs. 
+The **Vendor bidding** workspace lets you view the requests for quotation (RFQs) that your company has been invited to respond to. You can also respond to the RFQs. 
 
-The workspace also shows all the RFQs that you've lost or won. Additionally, if the system is configured for the Public sector, the workspace shows the RFQs that are publicly available.
+The workspace also shows all the RFQs that you've lost or won. Additionally, if the system is configured for the public sector, the workspace shows the RFQs that are publicly available.
 
 ### Viewing RFQs
 
@@ -110,15 +107,18 @@ People who work in the Public sector can see open and expired RFQs that have bee
 
     If you've been invited to bid, you can find the same RFQ on the **New bid invitations** page. Sometimes, you might want to bid on an open RFQ, but you haven't been invited to bid. In this case, you might be able to invite yourself, provided that the customer has enabled self-invitation for the RFQ case.
 
+    Enhance the accessibility of the **Open published requests for quotations** link by turning on the **Display the "Open published requests for quotation" link as a tile** feature. This feature converts the link to a tile and moves it to a prominent location, so that it's easy to find. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
+
 - Select the **Closed published requests for quotations** link to see a list of closed RFQs that are available to the public. A closed RFQ is an RFQ that has expired. You can find the expiration date and time on the header of the RFQ.
 
     A closed RFQ shows all vendor bids down to the line level. As bids are awarded or rejected, this information is reflected in the closed RFQ. Any attachments that are included in the bid are also available.
 
-**Note:** This functionality is only available if the Public sector cofiguration is enabled.
+> [!NOTE]
+> This functionality is available only if the Public sector configuration is turned on.
 
 ### Bidding
 
-- Click **Bid** to start to bid on an RFQ.
+- Select **Bid** to start to bid on an RFQ.
 
     When the editing is enabled for bid fields on the headers and lines of an RFQ, you can enter your bid directly in the line grid. You must also consider any additional bid information that should be added in the line details.
 
@@ -148,3 +148,6 @@ The accessible information is the vendor name, addresses, contact information, c
 ## Additional resources
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Settle a partial vendor payment that has discounts on vendor credit notes
+title: Settle a partial vendor payment that has discounts on credit notes
 description: This article walks you through a scenario where a credit memo is settled against an invoice.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14222
 ms.assetid: 2b19f7fd-9ff9-4ee4-bddf-f582946d008e
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Settle a partial vendor payment that has discounts on vendor credit notes
+# Settle a partial vendor payment that has discounts on credit notes
 
 [!include [banner](../includes/banner.md)]
 
@@ -48,7 +45,7 @@ On June 29, April creates an invoice for 1,000.00 for vendor 3050. On July 2, sh
 
 Discount information for the credit note appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/13/2015 |
 | Cash discount amount         | 2.00      |
@@ -76,3 +73,6 @@ April can review the vendor transactions on the **Vendor transactions** page by 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

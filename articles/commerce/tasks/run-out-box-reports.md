@@ -4,11 +4,9 @@
 title: Generate and run out of box reports
 description: Use this task guide to run out of box reports in Headquarters from different workspaces and Inquiries & Sales reports located in Commerce. 
 author: ashishmsft
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -66,3 +63,6 @@ The demo data company used to create this recording is USRT. This recording is i
 5. Click Export.
 6. Click PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

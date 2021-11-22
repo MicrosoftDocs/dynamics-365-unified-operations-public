@@ -3,12 +3,10 @@
  
 title: Create a mobile device menu item for license plate consolidation
 description: This procedure shows you how to create a mobile device menu item for license plate consolidation work. 
-author: ShylaThompson
-manager: AnnBe 
+author: Mirzaab
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: WHSRFMenuItem   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a mobile device menu item for license plate consolidation
 
@@ -39,3 +36,6 @@ This procedure shows you how to create a mobile device menu item for license pla
 5. In the Mode field, select 'Indirect'.
 6. In the Activity code field, select 'Consolidate license plates'.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Centralized payments for Accounts payable
 description: Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
 author: abruer
-manager: AnnBe
 ms.date: 02/12/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14341
 ms.assetid: 7bd02e32-2416-4ac6-8a60-85525267fdb7
@@ -306,3 +303,6 @@ Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee. The paymen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

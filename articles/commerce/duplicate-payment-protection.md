@@ -3,12 +3,10 @@
 
 title: Duplicate payments prevention
 description: This topic describes how Dynamics 365 Commerce helps to prevent duplicate payments in the Modern POS.
-author: rubendel
-manager: AnnBe
-ms.date: 01/09/2019
+author: BrianShook
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2018-11-01
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -42,16 +39,19 @@ This topic describes the user experience when the point of sale (POS) recovers f
 
 The duplicate payment protection feature ensures that Modern POS can seamlessly recover from a loss of communication without requiring the shopper to process another payment through the payment terminal, which can lead to duplicate payments.
 
+> [!NOTE]
+> The duplicate payments protection feature is only supported for payments made using payment terminals.
+
 This topic covers the following aspects of the duplicate payment protection feature:
 
-- [Prerequisites](#prerequisites) – Set of prerequisites to leverage this feature in Modern POS.
+- [Prerequisites](#prerequisites) – Set of prerequisites to use this feature in Modern POS.
 - [Scenario details](#scenario-details) – Detailed description of the scenarios covered by the duplicate payment protection feature.
 - [Troubleshooting](#troubleshooting) – Steps to take when encountering issues with the duplicate payment protection feature.
 - [Additional resources](#additional-resources) – List of related articles you might find useful when using the duplicate payment protection feature.
 
 ## Prerequisites
 
-- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Commerce (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
+- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension that facilitates communication between Commerce (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
 - If a connector implements the corresponding duplicate payment protection interfaces, the feature is automatically enabled in Modern POS. Otherwise, it is automatically turned off.
 
 <!---
@@ -88,9 +88,9 @@ The duplicate payment protection feature is applicable to any scenario in which 
 
 ### Payment recovery scenarios
 
-Once the point of sale or network communications have been recovered, there are several scenarios that will result in the cashier being prompted to use the previous payment. Here are a few scenarios that can trigger payment recovery:
+Once the POS or network communications have been recovered, there are several scenarios that will result in the cashier being prompted to use the previous payment. Here are a few scenarios that can trigger payment recovery:
 
-If there is a unrecovered payment and the cashier takes one of the following actions, the cashier is shown a dialog box indicating that a payment has already been made.
+If there is an unrecovered payment and the cashier takes one of the following actions, the cashier is shown a dialog box indicating that a payment has already been made.
 
 - Invokes another payment for any amount using a card payment.
 - Invokes another payment for any amount using a cash payment.
@@ -98,7 +98,7 @@ If there is a unrecovered payment and the cashier takes one of the following act
 - Attempts to void the transaction.
 - Attempts to suspend the transaction.
 
-![Recover Payment](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
+![Recover Payment.](media/Payments/Duplicate-Payment-Protection/Recover-Payment.png)
 
 When the cashier clicks **OK**, the payment is recovered and added as a payment line to the cart.
 
@@ -120,7 +120,7 @@ In some cases, the cashier might explicitly choose to skip the duplicate payment
 
     A new dialog box will appear indicating that a recovered payment is available. Click **Ignore** to skip the payment recovery.
 
-![Skip Payment Recovery](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
+![Skip Payment Recovery.](media/Payments/Duplicate-Payment-Protection/Void-Transaction.png)
 
 ### What to do if the customer leaves the store
 
@@ -141,8 +141,11 @@ Even if the duplicate payment protection feature is enabled, it is generally rec
 
 ### Payment recovery fails
 
-An error may occur while a previous payment is being recovered on Modern POS. This can happen if there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. To resolve this issue, because the previous payment cannot be recovered, the cashier must skip the recovery as described in the [How to skip Payment Recovery](#how-to-skip-payment-recovery) section.
+An error may occur while a previous payment is being recovered on Modern POS. This error can happen if there is an issue in the payment connector or payment gateway/processor that does not allow the previous payment to be recovered. To resolve this issue, because the previous payment cannot be recovered, the cashier must skip the recovery as described in the [How to skip Payment Recovery](#how-to-skip-payment-recovery) section.
 
 ## Additional resources
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

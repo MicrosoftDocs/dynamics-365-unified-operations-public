@@ -4,11 +4,9 @@
 title: Transition from Analysis Services cubes to aggregate models
 description: This topic explains how in-memory, real-time aggregate models are used for analytics, and why we transitioned from using Server Analysis Services (SSAS) cubes.
 author: MilindaV2
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24511
 ms.assetid: 877db646-da4b-48b5-83ab-61ae59d91921
@@ -52,7 +49,10 @@ Perspectives are now modeled using add-ins for Visual Studio. (Visual Studio is 
 -   Expose data to PowerBI.
 -   Access data programmatically using the AXQuery object.
 
-[![how-perspectives-are-used](./../media/how-perspectives-are-used.png)](./../media/how-perspectives-are-used.png)  
+[![how-perspectives-are-used.](./../media/how-perspectives-are-used.png)](./../media/how-perspectives-are-used.png)  
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

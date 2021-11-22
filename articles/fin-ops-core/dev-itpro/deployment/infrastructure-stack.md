@@ -4,11 +4,9 @@
 title: Self-service deployment overview
 description: This topic provides an overview of self-service deployment.
 author: rashmansur
-manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: "intro-internal"
 ms.search.region: Global 
 # ms.search.industry: 
 ms.author: rashmim
@@ -43,20 +40,20 @@ Self-service deployment is available for cloud environments. Self-service deploy
 
 Customers using the self-service capabilities will see the following changes in their Lifecycle Services (LCS) experience. 
 
-- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy, and verify that the environment is deployed. This experience is the same as the current experience. For more information, see [Self-service deployment FAQ](deploymentFAQ.md).
+- Deployment is self-service and can be completed within an average time of 1-2 hours, depending on the type of environment (sandbox or production). There are no longer lead times and wait times for deployment. You can control when you deploy, and verify that the environment is deployed. This experience is the same as the current experience. For more information, see [Self-service deployment FAQ](deploymentFAQ.md).
 
-   ![Deployment settings](media/deployment-settings.png)
+   ![Deployment settings.](media/deployment-settings.png)
 
 - You will no longer have remote desktop access to the Tier 2+ sandbox environments. All operations that need remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu** option. For more information, see [Maintenance operations for deployments](maintenanceoperationsguide-newinfrastructure.md).
 
     > [!IMPORTANT]
     > Remote desktop access will be restricted only to environments deployed using the self-service deployment. There is no change to existing environments or existing customers. 
 
-   ![Self-service actions](media/Self-service-actions.png)
+   ![Self-service actions.](media/Self-service-actions.png)
 
 - The diagnostics capabilities will remain the same, which enables troubleshooting without remote desktop access. For more information, see [Troubleshoot environments deployed through self-service deployment](troubleshoot-newinfrastructure.md). 
 
-   ![Environment monitoring](media/environment-monitoring.png)
+   ![Environment monitoring.](media/environment-monitoring.png)
 
 - You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
 
@@ -68,4 +65,10 @@ Customers using the self-service capabilities will see the following changes in 
 
 - The service no longer supports business logic defined using Visual Basic script embedded in SQL Server Reporting Services (SSRS) reports. Visual Basic expressions defined in Tablix controls used to format and evaluate data at runtime will continue to be fully supported. However, the service will ignore instructions defined in Visual Basic script functions. This change was necessary to improve the security and reliability of the service.
 
-- Sub-reports are no longer supported in document reports defined using the SSRS development tools. Application solutions that include sub-reports will need to be recreated or replaced with solutions that take advantage of other reporting options supported by the service.
+- Sub reports are no longer supported in document reports defined using the SSRS development tools. Application solutions that include sub reports will need to be recreated or replaced with solutions that take advantage of other reporting options supported by the service.
+
+    > [!IMPORTANT]
+    > Support for sub report items has been re-introduced with the Platform update 36 release. Customers dependent on solutions that include properly formatted sub report items can transition to self-service deployments running on Platform update 36 or later.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

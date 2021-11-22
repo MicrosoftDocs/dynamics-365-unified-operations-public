@@ -3,28 +3,24 @@
 
 title: Wave step codes
 description: This topic provides an overview of wave step codes and how they are used.
-author: josaw1
-manager: AnnBe
+author: Mirzaab
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form: 
+ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -32,7 +28,6 @@ ms.dyn365.ops.version: 10.0.5
 
 # Wave step codes
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Wave step codes are codes that users can set up and use to link specific instances of wave methods to a corresponding template. The templates include templates for replenishment, containerization, label printing, load building, and sorting.
@@ -99,3 +94,6 @@ The following procedure helps guarantee that the replenishment template that you
 6. In the **Wave step code** field, select the wave step code that you selected in the replenishment template.
 
 You perform these steps for each legal entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

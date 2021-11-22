@@ -1,32 +1,14 @@
 ---
-# required metadata
-
 title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
-manager: AnnBe
-ms.date: 12/02/2019
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 04/10/2020
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
-# ms.tgt_pltfrm: 
-ms.custom: 72424
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ and C# comparison
@@ -260,7 +242,7 @@ public class Pgm_CSharp
 
 The console output from the C# program is as follows:
 
-```csharp
+```Console
 1
 (Press any key to resume.)
 2
@@ -344,7 +326,7 @@ public class Pgm_CSharp
 
 The console output from the C# program is as follows:
 
-```csharp
+```Console
 1
 (Press any key to resume.)
 2
@@ -537,8 +519,7 @@ The following table lists areas in the [] syntax for arrays that are different f
 | Length| In X++ the length of a static sized array is determined in the declaration syntax.| In C# the size of an array is determined when the array object is constructed.| When you use the [] declaration syntax in X++, no more preparation is needed before you assign values to the array. <br>In C# you must declare and then construct the array before assigning to it.|
 | Length| An X++ array can have a dynamic length that can be increased even after population has begun. This applies only when the array is declared without a number inside the []. Performance might be slowed if the length of the dynamic array is increased many times.| In C# the length of an array cannot be changed after the length is set.| In the following fragment of X++ code, only the `myInts` array is dynamic and can increase in size. <br>`int myInts[];` <br>`int myBools[5];` <br>`myInts[2] = 12;` <br>`myInts[3] = 13;` <br>`myBools[6] = 26; //Error`|
 | Length| You can get the length of some arrays by using the `dimOf` function.| C# arrays are objects that have a `Length` property.| No comments.|
-| Indexing| Array indexing is 1 based.| Array indexing is 0 based.
-| mtIntArray[0] would cause an error in X++.|
+| Indexing| Array indexing is 1 based.| Array indexing is 0 based.| mtIntArray[0] would cause an error in X++.|
 | Constant| In X++ a constant value is best achieved by using the <strong>#define</strong> precompiler directive.| In C# you can decorate your variable declaration with the keyword <strong>const</strong>, to achieve a constant value.| X++ has no <strong>const</strong> keyword. C# cannot assign values to variables that are created by its #define precompiler directive.|
 
 ### X++ and C\# Samples
@@ -636,7 +617,7 @@ public class Pgm_CSharp
 
 The output from the C# program to the command line console is as follows:
 
-```csharp
+```Console
 -------- SPORTS --------
 0 , []
 1 , []
@@ -957,8 +938,7 @@ Exception-related differences between X++ and C\# are described in the following
 | <strong>finally</strong>| The `finally` keyword is supported to follow the `try` and `catch` keywords.| The <strong>finally</strong> keyword marks a block of code that follows the <strong>try</strong> and <strong>catch</strong> blocks. The finally will be executed regardless of whether any exception is thrown or caught.| The semantics are identical to the semantics in C#.|
 | Specific exceptions| In X++ an exception is an element of the `Exception` enum, such as **Error**, **Deadlock**, or **CodeAccessSecurity**. No exception can contain another.| In C# an exception is an instance of the `System.Exception` base class, or any class that inherits from it. An exception can be contained in the `InnerException` property of the thrown exception.| In X++ each thrown exception is a value of the Exception enum. For more information, see Exception Enumeration.|
 | Exception message| In X++ the message that is created when an exception is raised is available only in the Infolog, and the message is not directly tied to the exception.| In C# the message is the `Message` member of the `System.Exception` object.| In X++ the Global::error method is the mechanism that display exception messages in the Infolog. For more information, see Exception Handling with try and catch Keywords.|
-| Exception conditions| In X++ an error occurs when you call an instance method on an object variable that has not yet had anything assigned to it. However, no exception is raised along with this error. Therefore no `catch` block can gain control even if the unassigned variable is misused in a `try` block. In the following code example, the error caused by the code `box4.toString();` does not cause control to transfer to any `catch` block: `DialogBox box4;` `try` { ` box4.toString();` ` info("toString did not error, but expected an error.");` } catch (Exception::Error) // No Exception value catches this. { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| In C# a `System.NullReferenceException` is raised when an uninitialized variable is treated as an object reference.
-| There might be several other differences in the conditions that raise exceptions.|
+| Exception conditions| In X++ an error occurs when you call an instance method on an object variable that has not yet had anything assigned to it. However, no exception is raised along with this error. Therefore no `catch` block can gain control even if the unassigned variable is misused in a `try` block. In the following code example, the error caused by the code `box4.toString();` does not cause control to transfer to any `catch` block: `DialogBox box4;` `try` { ` box4.toString();` ` info("toString did not error, but expected an error.");` } catch (Exception::Error) // No Exception value catches this. { ` info("Invalid use of box4 gave control to catch, unexpected.");` }| In C# a `System.NullReferenceException` is raised when an uninitialized variable is treated as an object reference.| There might be several other differences in the conditions that raise exceptions.|
 | SQL transactions| In X++ when an SQL exception occurs in a <strong>ttsBegin</strong> - <strong>ttsCommit</strong> transaction, no <strong>catch</strong> statement inside the transaction block can process the exception.| In C# a catch block inside an SQL transaction can catch the exception.| |
 
 ### Examples
@@ -1081,7 +1061,7 @@ public class Pgm_CSharp
 
 Here is the output to the C\# console:
 
-```csharp
+```Console
 (e2) In catch block for -- System.IndexOutOfRangeException
 'finally' is not an X++ keyword, although it is in C#.
 End of program.
@@ -1112,7 +1092,7 @@ static void JobRs008b_ExceptionsAndRetry(Args _args)
     {
         print("In catch of -- Exception::Error (will retry)." + " Entering catch.");
         ++iIndex;
-        print("In catch of -- Exception::Error (will retry). + " Leaving catch.");
+        print("In catch of -- Exception::Error (will retry)." + " Leaving catch.");
         // Here is the retry statement.
         retry;
     }
@@ -1199,7 +1179,7 @@ public class Pgm_CSharp
 
 Here is the output to the console:
 
-```csharp
+```Console
 At top of try block: -1
 In catch of -- Exception. Entering catch.
 In catch of -- Exception. Leaving catch.
@@ -1372,7 +1352,7 @@ public class CsClass
 
 The output from the previous C\# sample is as follows:
 
-```csharp
+```Console
 CsClass.exe C#, hello from instance event handler 
 2: The information from the C\# Main. C\#, hello from static event handler 
 3: The information from the C\# Main.
@@ -1492,8 +1472,7 @@ The following table lists several .NET Framework classes for C\# that are in the
 
 |X++|C#|Comments|
 |---|---|---|
-| `BinaryIo`| `FileStream` `BinaryReader` `BinaryWriter`
-| X++ classes such as `BinaryIo` that extend from the abstract class `Io` serve as a stream, and they also serve as a reader and writer for that stream. In C# the stream is a separate class the from the class that has the more specific read and write methods.|
+| `BinaryIo`| `FileStream` `BinaryReader` `BinaryWriter` | X++ classes such as `BinaryIo` that extend from the abstract class `Io` serve as a stream, and they also serve as a reader and writer for that stream. In C#, the stream is a separate class from the class that has more specific read and write methods.|
 | `TextBuffer`| `MemoryStream`| These classes contain an in-memory buffer, and some of the methods treat the buffer as if it were a file on the hard disk.|
 | WINAPI::createDirectory WINAPI::folderExists WINAPI::removeDirectory| `Directory` `DirectoryInfo` `Path`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve directories.|
 | WINAPI::getDriveType| `DriveInfo` `DriveType`| These classes and methods are used to obtain drive related information.|
@@ -1648,3 +1627,6 @@ The following table lists other differences of the **select** statement between 
 |Cursors for navigating returned rows.|The while select statement provides cursor functionality. The alternative is to use the **next** keyword.|You can declare a **cursor** for looping through the rows that are returned from a **select** statement.||
 |**From** clause.|The **from** keyword is optional when no columns are listed and only one table is referenced. The following two syntax options are equivalent: <br>`select \* from tCustTable;` <br>`select tCustTable;`|A **select** statement cannot read from a table unless the **from** clause is used.|In X++ SQL, the simple **select** statement fills the table buffer variable with the first row that was returned. This is illustrated by the following code fragment: <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Manage vendor collaboration users
 description: This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
-author: mkirknel
-manager: AnnBe
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,15 +15,14 @@ ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -55,7 +52,7 @@ If you want to delete a contact, it's only possible to delete the ones that you'
 Vendor collaboration user requests can be raised by a procurement professional, or by an external vendor administrator.
 
 -   If you're an external vendor, you submit requests from the **All contacts** page within the **Vendor collaboration** module.
--   If you're a procurement professional, you submit requests from the **View contacts** page. To do this, on the vendor record, in the **Setup** section in the Action pane, select **Contacts** &gt; **View contacts**.
+-   If you're a procurement professional, you submit requests from the **View contacts** page. To do this, on the vendor record, in the **Setup** section on the Action Pane, select **Contacts** &gt; **View contacts**.
 
 You can make a request to provision a user, to inactivate a user, or to modify security roles. If you're an external vendor administrator, you must be registered as a contact person for the vendor accounts that you want to make user requests for, and you must have access to the vendor collaboration interface for those vendor accounts.  
 
@@ -71,7 +68,7 @@ Before you can request that a new user is provisioned, that person must be set u
 4. In the **Assign user roles** section, select the **Assign** check box for the security roles that the new user should have.
 5. Click **Submit**.
 
-When the vendor user request is submitted, the **Vendor collaboration access allowed** field is set to **Yes** for the selected vendor account and a user request workflow is started. As part of the workflow, a new user is created, and security roles are assigned. In addition, an Azure B2B service is activated which initiates interaction with Azure portal and associates a new or existing AAD account with the Supply Chain Management user account. For more information, see [What is Azure AD B2B collaboration?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+When the vendor user request is submitted, the **Vendor collaboration access allowed** field is set to **Yes** for the selected vendor account and a user request workflow is started. As part of the workflow, a new user is created, and security roles are assigned. In addition, an Azure B2B service is activated which initiates interaction with Azure portal and associates a new or existing AAD account with the Supply Chain Management user account. For more information, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### Inactivate a user
 
@@ -100,3 +97,6 @@ To request that the security roles are modified for a user:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

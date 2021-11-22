@@ -4,11 +4,9 @@
 title: Create shareable, secured URLs (deep links)
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 24321
 ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Learn how to create shareable, secured URLs to forms and records.
 
-Overview
---------
+## Overview
 
 The URL Generator enables developers to create shareable and secured URLs (also known as deep links) to specific forms that are root navigable. An optional data context can be passed to the form to display filtered or specific data when the form is opened. The URL Generator enables scenarios such as embedding links in reports, email, and external applications, enabling users to quickly and easily locate the specified forms or data by simply navigating using the generated link.
 
@@ -73,7 +69,7 @@ Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
 The URL Generator must be used from code running on the AOS, in an active user session or batch process. This requirement ensures that the URL can be secured through encryption specific to the instance that generates the URL. At a minimum, the following information must be specified and passed to the URL Generator in order to generate a working URL.
 
 -   **Host URL**
-    -   The URL of the web root for the instance. For example: https://ax.dynamics.contoso.com/
+    -   The URL of the web root for the instance. For example: `https://ax.dynamics.contoso.com/`
 -   AOT name of the **Menu Item Display**
     -   The menu item display to be used to open the form.
 -   **Partition**
@@ -111,3 +107,6 @@ fullURI.AbsoluteUri
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

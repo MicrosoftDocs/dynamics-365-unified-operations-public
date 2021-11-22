@@ -4,11 +4,8 @@
 title: ROUND ER function
 description: This topic provides information about how the ROUND Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
-ms.date: 12/17/2019
-ms.topic: article
+ms.date: 10/21/2020
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +15,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -30,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUND">ROUND ER function</a>
+# ROUND ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,7 +58,7 @@ The resulting numeric value.
 
 If the value of the `decimals` argument is more than 0 (zero), the specified number is rounded to that many decimal places.
 
-If the value of the `decimals` argument is **0** (zero), the specified number is rounded to the nearest integer.
+If the value of the `decimals` argument is **0** (zero), the specified number is rounded to the nearest even integer.
 
 If the value of the `decimals` argument is less than 0 (zero), the specified number is rounded to the left of the decimal point.
 
@@ -74,6 +70,13 @@ If the value of the `decimals` argument is less than 0 (zero), the specified num
 
 `ROUND (1200.767, -3)` rounds to the nearest multiple of 1,000 and returns **1000**.
 
+## Example 3
+
+`ROUND (1200.5, 0)` rounds to the nearest even integer and returns **1200**, while `ROUND (1201.5, 0)` does the same and returns **1202**.
+
 ## Additional resources
 
 [Mathematical functions](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

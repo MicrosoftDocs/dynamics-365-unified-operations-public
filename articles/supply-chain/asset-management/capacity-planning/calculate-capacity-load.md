@@ -3,28 +3,25 @@
 
 title: Calculate capacity load
 description: This topic explains how to calculate capacity load in Asset Management.
-author: josaw1
-manager: AnnBe
+author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetCapacityLoad, EntAssetWorkOrderCapacityLoadCalculate, EntAssetWorkOrderCapacityLoad 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -61,8 +58,11 @@ This is useful if you want to get an overview of expected capacity load for a sp
 
 7. In the **Group by...** groups, click the relevant buttons to show the required detail level of the calculation. In the screenshot below, the selected **Group by** buttons are highlighted in blue color. Click on a button to activate or deactivate it.
 
-    ![Figure 1](media/01-capacity-planning.png)
+    ![Figure 1.](media/01-capacity-planning.png)
 
 >[!NOTE]
 >If you want to focus only on capacity planning regarding scheduled work orders, see [Calculate capacity load on scheduled work orders](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

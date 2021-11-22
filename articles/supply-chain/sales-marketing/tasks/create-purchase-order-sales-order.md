@@ -3,28 +3,25 @@
  
 title: Create a purchase order from a sales order
 description: This procedure shows you how to create a purchase order that is based on a sales order. 
-author: omulvad
-manager: AnnBe 
+author: Henrikan
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable   
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a purchase order from a sales order
 
@@ -72,3 +69,6 @@ This procedure shows you how to create a purchase order that is based on a sales
     - The **Reference lot** guarantees that the costs from the current purchase are charged on the attached sales order.  
     - You can navigate to the originating sales order by opening the link in the **Reference number** field.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

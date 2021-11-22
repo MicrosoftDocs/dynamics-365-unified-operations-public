@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Configure optional features for a Dynamics 365 Commerce preview environment
-description: This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce preview environment.
+title: Configure optional features for a Dynamics 365 Commerce evaluation environment
+description: This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
-manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,21 +25,18 @@ ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Configure optional features for a Dynamics 365 Commerce preview environment
-
+# Configure optional features for a Dynamics 365 Commerce evaluation environment
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce preview environment.
+This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
 
 ## Prerequisites
 
 If you want to evaluate the transactional email features, the following prerequisites must be met:
 
-- You have an available email server (Simple Mail Transfer Protocol \[SMTP\] server) that can be used from the Microsoft Azure subscription where you provisioned the preview environment.
+- You have an available email server (Simple Mail Transfer Protocol \[SMTP\] server) that can be used from the Microsoft Azure subscription where you provisioned the evaluation environment.
 - You have the server's fully qualified domain name (FQDN)/IP address, SMTP port number, and authentication details available.
-
-If you want to evaluate Digital Asset Management features by ingesting new omni-channel images, you must have the name of your content management system (CMS) tenant available. Instructions for finding this name are provided later in this topic. >>>(Q: where are the instructions?)
 
 ## Configure the image back end
 
@@ -51,9 +45,9 @@ If you want to evaluate Digital Asset Management features by ingesting new omni-
 > [!NOTE]
 > Before you can complete this procedure, you must complete the steps in [Set up your site in Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
 
-1. Sign in to the Commerce site management tool by using the URL you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
+1. Sign in to the Commerce site builder by using the URL you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
 1. Open the **Fabrikam** site.
-1. On the menu on the left, select **Assets**.
+1. On the menu on the left, select **Media Library**.
 1. Select any single image asset.
 1. In the property inspector on the right, find the **Public URL** property. The value is a URL. Here is an example:
 
@@ -67,22 +61,22 @@ If you want to evaluate Digital Asset Management features by ingesting new omni-
 
 ### Update the media base URL
 
-1. Sign in to Dynamics 365 Commerce.
+1. Sign in to Commerce headquarters.
 1. Use the menu on the left to go to **Modules \> Retail and commerce \> Channel setup \> Channel profiles**.
 1. Select **Edit**.
 1. Under **Profile properties**, replace the value for the **Media Server Base URL** property with the media base URL that you created earlier.
-1. In the list on the left, under the **Default** channel, select the other channel.
+1. Select the channel that is named **scXXXXXXXXX**.
 1. Under **Profile properties**, select **Add**.
 1. For the property that was added, select **Media Server Base URL** as the property key. As the property value, enter the media base URL that you created earlier.
 1. Select **Save**.
 
-## Configure the email server
+## Configure and test the email server
 
 > [!NOTE]
 > The SMTP server or email service that you enter here must be accessible from the Azure subscription that you're using for the environment.
 
-1. Sign in to Commerce.
-1. Use the menu on the left to go to **Modules \> System administration \> Setup \> Email \> Email parameters**.
+1. Sign in to Commerce headquarters.
+1. Use the menu on the left to go to **Modules \> Retail and Commerce \> Headquarters setup \> Parameters \> Email parameters**.
 1. On the **SMTP settings** tab, in the **Outgoing mail server** field, enter the FQDN or IP address of your SMTP server or email service.
 1. In the **SMTP port number** field, enter the port number. (If you aren't using Secure Sockets Layer \[SSL\], the default port number is **25**.)
 1. If authentication is required, enter values in the **User name** and **Password** fields.
@@ -96,8 +90,8 @@ If you want to evaluate Digital Asset Management features by ingesting new omni-
 
 For each transactional event that you want to send emails for, you must update the email template with a valid sender email address.
 
-1. Sign in to Commerce.
-1. Use the menu on the left to go to **Modules \> Organization administration \> Setup \> Organization email templates**.
+1. Sign in to Commerce headquarters.
+1. Use the menu on the left to go to **Modules \> Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates**.
 1. Select **Show list**.
 1. For each template in the list, follow these steps:
 
@@ -108,9 +102,9 @@ For each transactional event that you want to send emails for, you must update t
 
 ## Customize email templates
 
-You might want to customize the email templates so that they use different images. Or you might want to update the links in the templates so that they go to your preview environment. This procedure explains how to download the default templates, customize them, and update the templates in the system.
+You might want to customize the email templates so that they use different images. Or you might want to update the links in the templates so that they go to your evaluation environment. This procedure explains how to download the default templates, customize them, and update the templates in the system.
 
-1. In a web browser, download the [Microsoft Dynamics 365 Commerce Preview default email templates zip file](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) to your local computer. This file contains the following HTML documents:
+1. In a web browser, download the [Microsoft Dynamics 365 Commerce Evaluation default email templates zip file](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) to your local computer. This file contains the following HTML documents:
 
     - Order confirmation template
     - Issue gift card template
@@ -177,18 +171,23 @@ The following tokens are replaced with values for each product in the order.
 
 ## Additional resources
 
-[Dynamics 365 Commerce preview environment overview](cpe-overview.md)
+[Dynamics 365 Commerce evaluation environment overview](cpe-overview.md)
 
-[Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce evaluation environment](provisioning-guide.md)
 
-[Configure a Dynamics 365 Commerce preview environment](cpe-post-provisioning.md)
+[Configure a Dynamics 365 Commerce evaluation environment](cpe-post-provisioning.md)
 
-[Dynamics 365 Commerce preview environment FAQ](cpe-faq.md)
+[Configure BOPIS in a Dynamics 365 Commerce evaluation environment](cpe-bopis.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Sales and purchase cycles for Spain
 description: This topic describes how to set up sales order or purchase order cycles for a vendor or customer for legal entities in Spain.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: CustParameters, SrmParameters, SalesPurchCycle
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263444
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -58,3 +55,6 @@ You can specify which documents are active for a specific customer or vendor.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

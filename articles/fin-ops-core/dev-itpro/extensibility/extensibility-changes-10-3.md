@@ -1,25 +1,18 @@
 ---
-# required metadata
-
 title: Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.3
 description: This topic lists the extensibility features that were released in Microsoft Dynamics 365 for Finance and Operations version 10.0.3.
 author: FrankDahl
-manager: AnnBe
 ms.date: 06/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -141,3 +134,6 @@ The following methods have been refactored to support extensibility:
 - **Retail channel:** Pre-triggers were added for Shipped, PackingSlip, and MarkAsPacked.
 - **Retail channel:** The Cancellation charge dialog box can be overridden.
 - **Retail channel:** Recall order default parameter value extension for the search order dialog box.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

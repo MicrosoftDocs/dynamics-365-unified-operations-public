@@ -2,13 +2,11 @@
 # required metadata
 
 title: Submit service requests to the Dynamics Service Engineering team
-description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS). 
+description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 04/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 254564
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
@@ -37,7 +34,9 @@ ms.dyn365.ops.version: Platform update 3
 A service request is a ticket that you use to request that the Dynamics Service Engineering (DSE) team perform a predefined set of tasks on your environments.
 
 > [!NOTE]
-> Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
+> Service requests are only required for environments that are **Microsoft-managed**. Most environments are self-service. For more information about environment types, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
+
+> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
@@ -48,15 +47,15 @@ There are two ways to view service requests:
 
 - On the project dashboard, in the **Environments** section, select **Service requests**.
 
-    ![Service requests](./media/submit-service-request-01.png)
+    ![Service requests.](./media/submit-service-request-01.png)
 
 - Select the **Menu** button and select **Work items**. On the **Work items** page select the **Service requests** tab.
 
-    ![Work items](./media/submit-service-request-02.png)
+    ![Work items.](./media/submit-service-request-02.png)
 
 By default, the **Service requests** tab on the **Work items** page lists all requests that are currently active and requests that have been denied. However, you can use the filter options to show canceled and finished requests too.
 
-![Service request list](./media/submit-service-request-03.png)
+![Service request list.](./media/submit-service-request-03.png)
 
 After you submit a request, it has a status of **Requested**. Before the DSE team acts on the request, it might ask for clarification by entering a comment in the **Comment** field. For example, you might receive a comment from the DSE team if you request deployment of a production environment, but the data center differs from the data center where your sandbox environments are deployed. Carefully review the comments, and provide any required clarification in your own comment. To view the details of a specific request, or to submit comments for a service request, select the request ID.
 
@@ -75,6 +74,16 @@ There are two ways to create a service request: automatically and on demand.
 
 - **Environment deployment** – To set up deployment options and submit a request to the DSE team to deploy a new environment, in the **Environments** section, select **Configure**.
 - **Package application** – To apply a package to the production environment, on the **Environment details** page, select **Maintain**, select the package to apply, and then select **Schedule**. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
+
+    > [!IMPORTANT]
+    > If your scheduled time overlaps with a [planned maintenance window](./planned-maintenance-window-faq.md), you will receive the following warning message. 
+    >
+    > ![Warning message that explains the maintenance conflict.](./media/MaintenanceConflict.png)
+    >
+    > If you choose to continue deploying the package, the package deployment operation will be rolled-back in the event of conflict, as planned maintenance takes priority.
+    >
+    > This restriction is appliable to **Microsoft-managed IAAS environments** only. 
+    
 
 ### Create a service request on demand
 Service requests that are created on demand aren't explicitly accepted by the DSE team. They will be addressed during the specified downtime window unless the DSE team has entered a comment in the request or has had to deny the request. For details, review the comments in the service request.
@@ -99,7 +108,12 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
-      - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
+      - Tenant move of a live Production environment. Request the Microsoft Service Engineering team to move the Production database and Azure Blob Storage from the old tenant to the new tenant if you are moving tenant on a live Production environment. Make sure that you only request this service when you are ready with all prerequisites. For more details, see [Move LCS implementation projects to different Azure AD tenants](../../fin-ops/get-started/move-lcs-implementation-project-tenant.md).
+      - Define explicit Internet Protocol (IP) safe list rules in a production environment.
+        
+        > [!NOTE]
+        > Support for explicit safe list rules is deprecated for self-service environments. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#explicit-safe-lists-for-self-service-environments).
+        
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
 
@@ -124,9 +138,12 @@ Here are some typical examples of service requests that will be denied:
 | Environment deployment         | Any | Environment deployment | Service level agreement (SLA): within two business days | |
 | Package application            | Production | Deployable package application | Five hours | Five hours |
 | Sandbox point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | Four hours |
-| Production point-in-time restore | Production | Database point-in-time restore | Five hours | Four hours |
+| Production point-in-time restore | Production | Database point-in-time restore | Based on data volume | Based on data volume |
 | Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | Five hours | Four hours |
 | Other                          | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
-|                                | Production | IP whitelist rules | Five hours | Two hours |
+|                                | Production | IP safe list rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

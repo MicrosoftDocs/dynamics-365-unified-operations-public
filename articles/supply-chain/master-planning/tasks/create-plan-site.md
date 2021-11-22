@@ -3,12 +3,10 @@
  
 title: Create a plan for a site
 description: The production planner calculates the material and capacity requirements for the production of a specific item. 
-author: ShylaThompson
-manager: AnnBe 
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,21 +14,20 @@ ms.technology:
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a plan for a site
 
 [!include [banner](../../includes/banner.md)]
 
-The production planner calculates the material and capacity requirements for the production of a specific item. After the sourcing suggestions are created, he finds the orders at the site for which he is planning and firms the orders, starting from the urgent ones. The most urgent orders are the ones that need to be firmed on the current date. Use the demo data company USMF to perform these tasks.
+The production planner calculates the material and capacity requirements for the production of a specific item. After the sourcing suggestions are created, they find the orders at the site for which they are planning and firms the orders, starting from the urgent ones. The most urgent orders are the ones that need to be firmed on the current date. Use the demo data company USMF to perform these tasks.
 
 
 ## Create a materials and capacity plan for an item
@@ -58,3 +55,6 @@ The production planner calculates the material and capacity requirements for the
 2. Click Firm.
 3. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Withholding taxes on vendor payments (Brazil)
 description: You can use the Journal voucher page to enter and post payments that you make to a vendor for the purchase of items or services. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -96,3 +93,6 @@ You can use the Journal voucher page to enter and post payments that you make to
 62. Close the page.
 63. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

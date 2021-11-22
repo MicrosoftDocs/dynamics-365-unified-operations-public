@@ -20,14 +20,15 @@
     }
   ],
   "notification_subscribers": [],
+  "report_severity_level": "Verbose",
   "sync_notification_subscribers": [
     "tfehr@microsoft.com"
   ],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public",
-  "git_repository_branch_open_to_public_contributors": "live",
+  "git_repository_branch_open_to_public_contributors": "main",
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
@@ -50,13 +51,13 @@
     ]
   },
   "need_generate_pdf_url_template": true,
-  "Targets": {
+  "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_intellisense": false,
   "docs_build_engine": {
-  "name": "docfx_v3"
-  }
+    "name": "docfx_v3"
+  },
+  "need_generate_intellisense": false
 }

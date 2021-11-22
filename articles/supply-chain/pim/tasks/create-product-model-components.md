@@ -3,12 +3,10 @@
  
 title: Create product model components
 description: Constraint-based product configuration models use components as building blocks to establish the product model structure. 
-author: ShylaThompson
-manager: AnnBe 
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCComponentList   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create product model components
 
@@ -32,12 +29,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 Constraint-based product configuration models use components as building blocks to establish the product model structure. The components must be created before a product model can be built. The demo data company used to create this procedure is USMF.
 
-1. Click Product variant model definition.
-2. Click Product configuration models.
-3. On the Action Pane, click Model.
-4. Click Components.
-5. Click New.
-6. In the Name field, type a value.
-7. In the Description field, type a value.
-8. Close the page.
+1. Go to **Product information management \> Products \> Product configuration models**.
+1. On the Action Pane, select **Model**.
+1. Select **Components**.
+1. Select **New**.
+1. In the **Name** field, type a value.
+1. In the **Description** field, type a value.
+1. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Distributed order management (DOM)
 description: This topic describes the distributed order management (DOM) functionality in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -41,7 +38,7 @@ DOM optimizes order fulfillment across a complex network of systems and processe
 
 The following illustration shows the lifecycle of a sales order in a DOM system.
 
-![Sales order lifecycle in the context of DOM](./media/flow.png "Sales order lifecycle in the context of DOM")
+![Sales order lifecycle in the context of DOM.](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## Set up DOM
 
@@ -53,8 +50,12 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     - **Enable distributed order management** – Set this option to **Yes**.
     - **Confirm Bing Maps usage for DOM** – Set this option to **Yes**.
 
+
         > [!NOTE]
         > You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the **Commerce shared parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
+        >
+        > The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature, customers can define a strict set of referrer values or IP address ranges that the key will be validated against. Requests originating from your allow list will process normally, while requests from outside of your list will return an access denied response. Adding domain security to your API key is optional and keys left as-is will continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management does not support the setting up of domain-referred properties.
+
 
     - **Retention period in days** – Specify how long the fulfillment plans that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job will delete any fulfillment plan that is older than the number of days that you specify here.
     - **Rejection period (in days)** – Specify how much time must pass before a rejected order line can be assigned to the same location.
@@ -66,14 +67,15 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     - **Solver type** – Select a value. Two solver types are released with Commerce: **Production Solver** and **Simplified Solver**. For all machines that will run DOM (that is, all servers that are part of the DOMBatch group), **Production Solver** must be selected. The Production Solver requires the special license key that, by default, is licensed and deployed in production environments. For non-production environments, this license key must be manually deployed. To manually deploy the license key, follow these steps:
 
         1. In Microsoft Dynamics Lifecycle Services, open the Shared asset library, select **Model** as the asset type, and download the **DOM license** file.
-        2. Start Microsoft Internet Information Services (IIS) Manager, right-click **AOSService website**, and then select **Explore**. A Windows Explorer window is opened at **\<AOS service root\>\\webroot**. Make a note of the \<AOS Service root\> path, because you will use it in the next step.
-        3. Copy the configuration file in the **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** directory.
-        4. Go to the Headquarters client, and open the **DOM parameters** page. On the **Solver** tab, in the **Solver type** field, select **Production solver**, and confirm that no error messages appear.
+        1. Start Microsoft Internet Information Services (IIS) Manager, right-click **AOSService website**, and then select **Explore**. A Windows Explorer window is opened at **\<AOS service root\>\\webroot**. Make a note of the \<AOS Service root\> path, because you will use it in the next step.
+        1. Copy the configuration file in the **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** directory.
+        1. Go to the Headquarters client, and open the **DOM parameters** page. On the **Solver** tab, in the **Solver type** field, select **Production solver**, and confirm that no error messages appear.
+
 
         > [!NOTE]
         > The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.
         >
-        > Although the Simplified Solver provides the same set of capabilities as the Production Solver, there are limitations as to performance (the number of orders and order lines that can be handled in a run) and convergence of results (a batch of orders might not yield the best result in some scenarios).
+        > The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). Some rules like the **Partial orders** rule and the **Maximum number of locations** rule require Production Solver.
 	 
 6. Go back to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 7. On the **Number sequences** tab, assign the required number sequences to the various DOM entities.
@@ -87,6 +89,15 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     2. Select **New**, and enter a name and description for the new group.
     3. Select **Save**.
     4. Select **Add line** to add a single location to the group. Alternatively, select **Add lines** to add multiple locations.
+    
+    > [!NOTE]
+    > In Commerce version 10.0.12 and higher, **Ability to specify locations as 'Shipping' or 'Pickup' enabled within Fulfillment group** must be enabled in the **Feature Management** workspace.
+    >
+    > This feature add new configurations on the **Fulfillment group** page so you can define if the warehouse can be used for shipping or if the warehouse/store combination can be used for shipping, pickup, or both. 
+    >
+    > If you enable the feature, the options available for location selection when you create pickup or shipment orders in POS will be updated.
+    >
+    > Enabling the feature also results in updated pages in POS when the "ship all" or "ship selected" operations are selected.
 
 9. To define rules, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**. The following DOM rules are currently supported:
 
@@ -101,7 +112,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
         The following table explains the behavior when a combination of these parameters is defined.
 
-        |      | Fulfill partial orders | Fulfill partial lines | Fulfill order from one location only | Description |
+        | Combination number | Fulfill partial orders | Fulfill partial lines | Fulfill order from one location only | Description |
         |------|------------------------|-----------------------|--------------------------------------|-------------|
         | 1    | Yes                    | Yes                   | Yes                                  | A few lines of the order can be fulfilled, and individual lines can be partially fulfilled, but all the lines must be from the same location in an instance of the DOM run. (This combination isn't currently supported.) |
         | 2    | Yes                    | No                    | Yes                                  | A few lines of the order can be fulfilled, but individual lines can't be partially fulfilled, and all the fulfilled lines must be from the same location in an instance of the DOM run. (This combination isn't currently supported.) |
@@ -116,7 +127,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         \* If **Fulfill partial orders** is set to **No**, **Fulfill partial lines** is always considered to be set to **No**, regardless of how it's actually set.
 
 		> [!NOTE]
-		> In Retail version 10.0.5, the pararmeter **Fulfill order from one location only** was changed to **Maximum fulfilling locations**. Instead of allowing a user to configure whether orders can be fulfilled from one location only or fulfilled from as many locations as it can be, users can now specify whether the fulfillment can be from a definite set of locations (up to 5) or from as many locations as it can be. This provides more flexibility in terms of how many locations the order can be fulfilled from.
+		> In Retail version 10.0.5, the parameter **Fulfill order from one location only** was changed to **Maximum fulfilling locations**. Instead of allowing a user to configure whether orders can be fulfilled from one location only or fulfilled from as many locations as it can be, users can now specify whether the fulfillment can be from a definite set of locations (up to 5) or from as many locations as it can be. This provides more flexibility in terms of how many locations the order can be fulfilled from. This rule only works with Production Solver. 
 
    - **Offline fulfillment location rule** – This rule lets organizations specify a location or group of locations as offline or unavailable to DOM, so that orders can't be assigned to those locations for fulfillment.
     - **Maximum rejects rule** – This rule lets organizations define a threshold for rejections. When the threshold is reached, the DOM processor will mark an order or order line as an exception, and exclude it from further processing.
@@ -138,7 +149,17 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     2. Select **New**.
     3. Enter values in the **Profile** and **Description** fields.
     4. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile will be automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan. They won't be applied to the sales order lines.
-    5. If you want the DOM profile to be run for orders that have every sales order origin, even orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page, as explained later.
+    5. If you want the DOM profile to be run for orders that have every sales order origin, including orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page, as explained later.
+
+    > [!NOTE]
+    > In Commerce version 10.0.12 and higher, **Ability to assign Fulfillment group to a Fulfillment Profile** must be enabled in the **Feature Management** workspace. 
+    >
+    > This feature adds a new configuration on the **Fulfillment profile** page that can be associated to a single fulfilment group. 
+    >
+    > If you select the fulfilment group, the DOM rules for that fulfilment profile will efficiently run against the "shipping" warehouses included in the fulfilment group. 
+    > 
+    > To effectively use this feature, ensure that there is one fulfillment group that contains all the shipping warehouses, and then associate that fulfillment group to the fulfillment profile.
+    
     6. On the **Legal entities** FastTab, select **Add**, and then select a legal entity.
     7. On the **Rules** FastTab, select **Add**, and then select the rule to link to the profile.
     8. Repeat the previous two steps until all the required rules are associated with the profile.
@@ -183,7 +204,7 @@ At the time of processing, DOM will consider the order and order lines as descri
 
 After it applies the rules, inventory constraints, and optimization, DOM picks the location that is closest to the customer's delivery address.
 
-![Sales order criteria](./media/ordercriteria.png "Sales order criteria")
+![Sales order criteria.](./media/ordercriteria.png "Sales order criteria")
 
 ## Results of DOM runs
 
@@ -237,3 +258,6 @@ Here are some things to consider when you use the DOM feature:
 - Currently, DOM looks only at orders that are created from commerce channels. Sales orders are identified as sales orders when the **Commerce sale** option is set to **Yes**.
 - Microsoft hasn't tested DOM with advanced warehouse management features. Customers and partners must be careful to determine whether DOM is compatible with the advanced warehouse management capabilities and processes that are relevant to them.
 - DOM is available only on the cloud version of Commerce. It isn't supported in on-premises deployments.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Upgrade budget planning
-description: There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Dynamics 365 Finance. Some features were not upgraded and therefore require reconfiguration. This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
-author: ryansandness
-manager: AnnBe
+description: This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
+author: panolte
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -169,3 +166,6 @@ Several data entities have been added to enable rapid implementation of Budget p
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

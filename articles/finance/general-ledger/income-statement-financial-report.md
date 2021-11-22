@@ -4,11 +4,9 @@
 title: Income statement financial report
 description: This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 author: jcart1106
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12294
 ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 
-Default income statement report
--------------------------------
+## Default income statement report
 
 | Default report             | What it does                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -65,14 +61,16 @@ The column definitions contain different types of columns to provide different l
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Financial reporting overview](financial-reporting-getting-started.md)
 
 [View financial reports](view-financial-reports.md)
 
-[Dynamics Financial Reporting Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

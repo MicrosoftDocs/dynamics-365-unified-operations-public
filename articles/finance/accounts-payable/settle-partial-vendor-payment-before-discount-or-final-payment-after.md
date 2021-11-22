@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Settle a partial vendor payment before the discount date with a final payment after the discount date
+title: Settle partial payment before discount date and final payment after discount date
 description: This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Settle a partial vendor payment before the discount date with a final payment after the discount date
+# Settle partial payment before discount date and final payment after discount date
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,7 +51,7 @@ On July 2, April wants to settle 300.00 of this invoice. The payment is eligible
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | -10.00    |
@@ -79,7 +76,7 @@ April pays the rest of the invoice on July 15, which is after the discount perio
 
 Discount information appears at the bottom of the **Settle transactions** page. April can see that she has already taken a 3.00 discount.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 0.00      |
@@ -105,7 +102,7 @@ If the vendor lets April take a discount even though she is paying after the dis
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 7.00      |
@@ -127,3 +124,6 @@ April then posts the payment. When she opens the **Vendor transactions** page, s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Issue ICMS tax credit transfer fiscal documents (Brazil)
-description: You can create a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e). 
+description: This topic explains how to create and issue a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e). 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -26,6 +23,7 @@ ms.author: sndray
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Issue ICMS tax credit transfer fiscal documents (Brazil)
 
 [!include [banner](../../includes/banner.md)]
@@ -57,3 +55,6 @@ You can create a new tax fiscal document and generate a Nota Fiscal eletrônica 
 20. Close the page.
 21. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

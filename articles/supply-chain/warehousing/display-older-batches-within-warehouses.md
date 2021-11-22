@@ -4,11 +4,9 @@
 title: Configure Display older batches within warehouse on a mobile device
 description: This topic describes how to set up a mobile device to display a list of locations with batches older than the current location of a work line.
 author: Mirzaab
-manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,8 +14,7 @@ ms.technology:
 ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -44,3 +41,6 @@ The **Display older batches within warehouse** configuration is available on mob
 
 - Under **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**, set **Use existing work** to **Yes** for the menu item, and select **Warn** in the **Pick oldest batch** field. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Generate the GSTR report data for tax returns
 description: This topic explains how to generate the GSTR report data for tax returns.
-author: EricWang
-manager: RichardLuan
+author: EricWangChen
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -51,3 +48,6 @@ ms.dyn365.ops.version: 10.0.4
 5. In the **File name** field, enter file name to save the report in CSV format as. Include the path of the file.
 6. Select **OK**.
 7. Use the path that you defined to go to the GSTR2 report file that you created in CSV format. This file becomes the base document that the whole compliance structure in GST is based on.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

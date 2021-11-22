@@ -4,11 +4,9 @@
 title: Font and background colors for input, table, and grid controls
 description: This topic provides information about the new color picker control that lets users select a color.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 90513
 ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
@@ -122,7 +119,7 @@ public FormControl editControl(int column, int row)
 }
 ```
 
-[![Example of a table control that has colored cells](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
+[![Example of a table control that has colored cells.](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
 
 ## Using color in a grid control
 
@@ -173,3 +170,6 @@ Static int GrayColor = 14474460; // DCDCDC or 220,220,220
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

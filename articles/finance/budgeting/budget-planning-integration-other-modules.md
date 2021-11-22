@@ -3,12 +3,10 @@
 
 title: Budget planning integration with other modules
 description: Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources. 
-author: ShylaThompson
-manager: AnnBe
+author: panolte
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: BudgetPlanGenerate
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
@@ -38,8 +35,7 @@ Budget plans can be generated from several, different resources. The basic eleme
 
 
 
-Periodic processes for generating budget plans
-----------------------------------------------
+## Periodic processes for generating budget plans
 
 Budget plans can be generated from the following resources:
 
@@ -152,3 +148,6 @@ Additional reports that are available include the **Forecast positions by budget
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

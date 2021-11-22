@@ -3,12 +3,10 @@
 
 title: Support for Segmented Entry controls on dialogs
 description: Describes the code pattern to add Segmented Entry controls to dialogs.
-author: robinarh
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 25571
 ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Describes the code pattern to add Segmented Entry controls to dialogs.
 
-The process to add Segmented Entry controls to dialogs has changed. This is an example from Dynamics AX 2012:
+The process to add Segmented Entry controls to dialogs has changed. This code is an example from Dynamics AX 2012:
 
 ```xpp
 DialogField dialogFeeLedgerDimension;
@@ -65,23 +62,22 @@ For the second parameter, choose the class that satisfies the requirements for y
 -   BudgetLedgerDimensionController
 -   BudgetPlanningLedgerDimensionController
 
-This is a simple dialog scenario around Segmented Entry. More advanced scenarios include:
+This scenario is a simple dialog scenario around Segmented Entry. More advanced scenarios include:
 
 -   Binding the dynamic account type.
 -   Company selection support.
 -   Account structure selection support.
 
 
-Additional resources
---------
+## Additional resources
 
 [Design-time metadata for Segmented Entry controls](segmented-entry-control-metadata-specification.md)
 
-[Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
+[`Parm` methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
 
 
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

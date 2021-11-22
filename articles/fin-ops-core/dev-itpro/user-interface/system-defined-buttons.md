@@ -4,11 +4,9 @@
 title: System-defined buttons
 description: This topic describes the system-defined buttons.
 author: jasongre
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28271
 ms.assetid: 23b4dade-cb99-4c61-bd1e-cf2aeafddea4
@@ -241,3 +238,6 @@ FormCommandButtonControl attachButton;
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

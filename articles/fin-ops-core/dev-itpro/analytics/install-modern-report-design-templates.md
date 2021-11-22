@@ -2,13 +2,11 @@
 # required metadata
 
 title: Install modern report design templates
-description: This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
-author: tjvass
-manager: AnnBe
-ms.date: 01/12/2018
+description: This topic explains how to install the modern report design templates in the application suite.
+author: RichdiMSFT
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: PrintMgmtSetupUIMain
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 82783
 ms.assetid: 96676acf-a86b-4296-81db-b6ad6b4a46fb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -40,7 +37,7 @@ This topic explains how to install the modern report design templates in the app
 
 A new set of developer tools is available that takes the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding appears in the header and footer of public-facing documents when transactions are generated in the application. The following illustration shows how an earlier design for a sales invoice differs from a modern sales invoice design.
 
-[![Examples of an earlier sales invoice design and a modern sales invoice design](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
+[![Examples of an earlier sales invoice design and a modern sales invoice design.](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 
 After you complete the installation, you can use the built-in brand management tools to define brand settings that should be applied to the modern designs for application business documents. The brand management tools are available at **Organization administration** &gt; **Setup** &gt; **Document branding** &gt; **Branding details**.
 
@@ -71,14 +68,14 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
-3. Navigate to the **J:\\AOSService\\PackagesLocalDirectory\\bin** folder.
+3. Navigate to the **<AOSservicedrive>:\\AOSService\\PackagesLocalDirectory\\bin** folder.
 4. Run the following command.
 
     ```Console
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 
-    For more information about how to import model files, see [Export and import models](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node. For more information about how to use the Application Explorer, see [Development tools tutorial](../dev-tools/introduction-visual-studio.md)
+    For more information about how to import model files, see [Export and import models](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node. For more information about how to use the Application Explorer, see [Development tools tutorial](../dev-tools/introduction-visual-studio.md)
 
 Now that you've successfully imported the Application Suite Modern Designs model, you must to rebuild the application suite to update the metadata elements.
 
@@ -86,11 +83,11 @@ Now that you've successfully imported the Application Suite Modern Designs model
 
 The Application Suite Modern Designs model is an extension of the Application Suite model. To help guarantee that all application references are updated so that they target the model extensions, you must build the Application Suite model by using Microsoft Visual Studio.
 
-1. Start Visual Studio 2015, or use the existing instance.
+1. Start Visual Studio, or use the existing instance.
 2. On the **Dynamics 365** menu, select **Build models**.
 3. In the list, select the check box for the **ApplicationSuite** package.
 
-    [![Full build dialog box in Visual Studio 2015](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
+    [![Full build dialog box in Visual Studio.](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
 
     > [!NOTE]
     > You will see that the Application Suite Modern Designs model is included in the package definition.
@@ -123,7 +120,10 @@ Follow these steps to update the Print management settings for customer sales or
 4. Select **Original &lt;Default&gt;** to begin to modify the default document routing.
 5. In the **Report format** list, select **SalesConfirmModern.Report** to enable the modern report design solution.
 
-    [![Print management settings page that is used to select the modern design](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
+    [![Print management settings page that is used to select the modern design.](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
 
 6. Open another page. This step forces a save operation to occur.
 7. Post a sales order to view the modern design in the application.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

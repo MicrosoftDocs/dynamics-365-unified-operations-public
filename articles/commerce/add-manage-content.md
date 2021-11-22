@@ -4,11 +4,9 @@
 title: Ways to add content 
 description: This topic provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring tool set.
 author: phinneyridge
-manager: annbe
-ms.date: 01/31/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,12 +26,9 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Ways to add content
 
-
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview and links to documentation about how to manage content using the Microsoft Dynamics 365 Commerce site builder web authoring toolset.
-
-## Overview
 
 There are many ways to change the look, feel, and content of your site. Depending on the required level of customization, many of these changes can be implemented by non-developers within site builder, the web authoring toolset included with Dynamics 365 Commerce. Site builder enables you to build templates, select themes, and select and configure modules without writing any code. By contrast, development skills are required to create a new theme or module, because the e-Commerce software development kit (SDK) and the Microsoft Dynamics Lifecycle Services (LCS) deployment workflow must be used.
 
@@ -56,4 +50,11 @@ Select one of the following topics to get started.
 
 [Authoring page overview](authoring-home-overview.md)
 
+[Page model glossary](page-elements-overview.md)
+
 [Document states and lifecycle](document-states-overview.md)
+
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

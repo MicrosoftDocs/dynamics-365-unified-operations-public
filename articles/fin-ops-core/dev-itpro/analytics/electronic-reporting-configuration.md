@@ -2,13 +2,11 @@
 # required metadata
 
 title: Create Electronic reporting (ER) configurations
-description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. 
+description: This article provides background information that will help you start to use Electronic reporting to create configurations. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
@@ -77,7 +74,7 @@ GER lets users define electronic format structures, and then describe how those 
 ## Basic concepts
 ### Main data flow
 
-[![GER main data flow](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+[![GER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
 ### Data model configuration creation
 
@@ -172,3 +169,6 @@ You can choose how to move your electronic reporting functionality into GER. How
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

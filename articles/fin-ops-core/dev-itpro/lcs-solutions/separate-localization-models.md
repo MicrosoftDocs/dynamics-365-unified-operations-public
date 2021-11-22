@@ -2,13 +2,11 @@
 # required metadata
 
 title: Separation of localization models
-description: As part of the requirements for LCS solutions for localization and translation, if a localization solution for previous versions of Dynamics 365 Finance and Operations apps contains both regulatory and competitive features, localization ISV solution providers must split the solution into separate models for each feature type. This article provides information about this requirement.
+description: This article describes how to split the solution into separate models for each feature type.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27561
 ms.assetid: 49b634ab-d7f7-4e34-a7e9-7350548bf1a0
@@ -44,3 +41,6 @@ After you've classified features as either regulatory or competitive, as describ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

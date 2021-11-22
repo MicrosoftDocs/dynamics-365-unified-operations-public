@@ -2,12 +2,10 @@
 # required metadata
 title: Improve master planning performance
 description: This topic explains the various options that can help you improve the performance of master planning or troubleshoot issues.
-author: t-benebo
-manager: AnnBe
+author: ChristianRytt
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -15,8 +13,7 @@ ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,7 +27,6 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # Improve master planning performance
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic explains the various options that can help you improve the performance of master planning or troubleshoot issues. It includes information about parameters and settings, as well as recommended configurations and actions. Also included is a summary of all the important parameters that you should consider when you have long-running master planning jobs.
@@ -85,14 +81,14 @@ You can set the **Use of cache** parameter in the **Performance** section on the
 
 ### Number of orders in firming bundle
 
-The **Number or orders in firming bundle** parameter specifies the total number of orders that will be processed at a time by each thread/batch. It causes parallelization of the autofirming process.
+The **Number or orders in firming bundle** parameter specifies the total number of orders that will be processed at a time by each thread/batch. It causes parallelization of the auto-firming process.
 
-You can set the **Number or orders in firming bundle** parameter in the **Performance** section on the **General** tab of the **Master planning parameters** page (**Master planning \> Setup \> Master planning parameters**). Parallelization of the autofirming process is based on the orders that must be processed together. For example, if this parameter is set to **50**, each thread or batch task will pick up 50 orders at a time and process them together. We recommend that you use a trial-and-error process to find the best value. However, you can use the following formula to calculate an initial value:
+You can set the **Number or orders in firming bundle** parameter in the **Performance** section on the **General** tab of the **Master planning parameters** page (**Master planning \> Setup \> Master planning parameters**). Parallelization of the auto-firming process is based on the orders that must be processed together. For example, if this parameter is set to **50**, each thread or batch task will pick up 50 orders at a time and process them together. We recommend that you use a trial-and-error process to find the best value. However, you can use the following formula to calculate an initial value:
 
 (Number of orders per bundle) = (Number of demand items ÷ Number of threads)
 
 > [!NOTE]
-> If you set the **Number of orders in firming bundle** parameter to **0** (zero), no parallelization of the autofirming process will occur. The whole process will run on a single batch task and have a cumulative running time. Therefore, the running time of your master planning will increase. For this reason, we recommend that you set this parameter to a value that is more than **0** (zero).
+> If you set the **Number of orders in firming bundle** parameter to **0** (zero), no parallelization of the auto-firming process will occur. The whole process will run on a single batch task and have a cumulative running time. Therefore, the running time of your master planning will increase. For this reason, we recommend that you set this parameter to a value that is more than **0** (zero).
 
 ### Time fences
 
@@ -165,3 +161,6 @@ Before the coverage step starts, there is a pre-coverage step during which items
 - **One heavy routine at a time** – Don't run master planning together with any other heavy routine.
 - **Review the session log.**
 - **Filtering of items** – Use the lifecycle state to exclude items from the master planning run. (Don't use the item numbers.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

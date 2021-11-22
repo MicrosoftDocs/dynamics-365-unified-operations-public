@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool
 description: This topic explains how to use the Upgrade analyzer tool to plan upgrade from Dynamics AX 2012.
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 
@@ -46,10 +43,13 @@ To access the Upgrade analyzer report, go to https://diag.lcs.dynamics.com/Upgra
 
 The following illustration shows an overview of the procedure for using Upgrade analyzer.
 
-![Upgrade analyzer process](media/upgradeAnalyzerProcess.png)
+![Upgrade analyzer process.](media/upgradeAnalyzerProcess.png)
 
 If you already use the System diagnostic service in your AX 2012 environment, you must configure a new instance of the service on a machine that differs from the existing machine.
 
 For information about how to configure the System diagnostic service in your AX 2012 environment, see [Install and run System diagnostics](../lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md).
 
 Within a few minutes after you configure the System diagnostic service, the AX 2012 environment will appear in your LCS project.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

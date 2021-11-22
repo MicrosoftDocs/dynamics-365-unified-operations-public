@@ -4,11 +4,9 @@
 title: Cash out gift card balance for a retail customer
 description: This topic provides information about the cash out gift card functionality that is available in Microsoft Dynamics 365 Commerce.
 author: rapraj
-manager: josaw1
 ms.date: 02/08/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -56,14 +53,14 @@ The cash out gift card feature is applicable to a scenario where, for example, i
     2. In the **Cash Out Gift Card** field, enter the **Gift card Cash out threshold** amount.
     3. Select **Save**.
 
-    ![Setting the Gift card threshold](./media/GiftCardCashout01.png)
+    ![Setting the Gift card threshold.](./media/GiftCardCashout01.png)
 
 6. Open the **Button grid** page.
 7. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
 8. On the **Action Pane**, select **Designer** to download the button designer application.
 9. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
 
-    ![New button](./media/07.png)
+    ![New button.](./media/07.png)
 
 10. Right-click the new button, and then select **Button properties**.
 11. Set the **Action**, **Cash out gift card**, and **Text on button** properties according to the following matrix.
@@ -74,7 +71,7 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 
     When you've finished, your button layout should resemble the following illustration.
 
-    ![Completed button layout](./media/GiftCardCashout02.png)
+    ![Completed button layout with "Configure button" section highlighted](./media/GiftCardCashout02.png)
 
 12. Click **Ok** and close the designer.
 13. Search for **Distribution Schedule**.
@@ -101,10 +98,13 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 13. The line for **gift card cash out** will be added to the **Current transaction** for cash out.
 14. Select the **Cash** payment method and the drawer will open when the transaction is completed. 
 
-       ![Completed button layout](./media/GiftCardCashout03.png)
+       ![POS screen with "Cash out gift card" highlighted](./media/GiftCardCashout03.png)
 
 ## Troubleshooting 
 
 For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs. The logs can be found under these nodes in the Windows event log:
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

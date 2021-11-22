@@ -4,11 +4,9 @@
 title: Content block module 
 description: This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,12 +28,9 @@ ms.dyn365.ops.version:
 
 # Content block module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 A content block module is used to market products or promotions through a combination of images and text. For example, a retailer can add a content block module to the home page of an e-Commerce site to promote a new product and attract the attention of customers.
 
@@ -56,11 +50,11 @@ In addition, the theme can expose different properties for each layout. A theme 
 
 The following image shows an example of a content block module with a hero layout.
 
-![Example of a hero module](./media/Hero.PNG)
+![Example of a hero module.](./media/Hero.PNG)
 
 The following image shows an example of a content block module with a feature layout.
 
-![Examples of feature modules](./media/Feature.PNG)
+![Examples of feature modules.](./media/Feature.PNG)
 
 ## Content block module properties
 
@@ -83,10 +77,10 @@ The following image shows an example of a content block module with a feature la
 
 To add a hero module to a new page and set the required properties, follow these steps.
 
-1. Go to **Templates**, and create a page template that is named **content block template**.
+1. Go to **Templates**, and create a page template that is named **Content block template**.
 1. In the **Main** slot of the default page, add a hero module.
-1. Check in the template, and publish it.
-1. Use the hero template that you just created to create a page that is named **content block page**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Use the hero template that you just created to create a page that is named **Content block page**.
 1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, under **Select Modules**, select the hero module, and then select **OK**.
 1. In the outline tree on the left, select the content block module.
@@ -97,12 +91,12 @@ To add a hero module to a new page and set the required properties, follow these
 1. Select **Add Link**.
 1. In the **Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.
 1. Select the **Hero** layout.
-1. Save the page, and preview your changes.
-1. Check in the page, and publish it.
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
+[Module library overview](starter-kit-overview.md)
 
 [Promo banner module](add-alert.md)
 
@@ -111,3 +105,6 @@ To add a hero module to a new page and set the required properties, follow these
 [Text block module](add-content-rich-block.md)
 
 [Video player module](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,25 +1,18 @@
 ---
-# required metadata
-
 title: Extensibility changes in Finance and Operations update 8.0.1
 description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations update 8.0.1.
 author: FrankDahl
-manager: AnnBe
 ms.date: 05/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -99,3 +92,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Support variable number of decimals - InventTestUpperTolerance
 - Support to skip prompt on transaction reversal
 - Enable extension of PSAProjQuotationApproval workflow
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Create and confirm a customer consolidated invoice
-description: In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount. 
+description: This topic explains how to consolidate customer nvoices each month to calculate the due amount.
 author: ShylaThompson
-manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 10/04/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: CustConsInvoice_JP
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -32,15 +29,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount. 
 
-
-
 Use this task to learn how to create and confirm a consolidated invoice. 
 
-
-
 In order to complete this task, the sales or purchase invoices should have been posted before running this task.
-
-
 
 This task uses the JPMF demo company data.
 
@@ -58,3 +49,6 @@ This task uses the JPMF demo company data.
 5. Click Confirm.
     * The Status of the consolidated invoice changes to be 'Confirmed' after you click Confirm. When confirmed, the consolidated invoice will be locked and you cannot edit it.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

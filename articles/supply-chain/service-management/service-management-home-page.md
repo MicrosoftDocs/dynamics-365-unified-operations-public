@@ -3,12 +3,10 @@
 
 title: Service management overview
 description: Use Service management to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. 
-author: ShylaThompson
-manager: AnnBe
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,14 +14,13 @@ ms.technology:
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -54,7 +51,7 @@ Use the reporting tools to monitor service order margins and subscription transa
 
 The following diagram illustrates the high level business processes for **Service management**, and shows where service processes integrate with other modules.
 
-[![Service management business process diagram](./media/sm_home_page.gif)](./media/sm_home_page.gif)
+[![Service management business process diagram.](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 
 ## Service management at a glance
 
@@ -71,7 +68,10 @@ The following diagram illustrates the high level business processes for **Servic
 Service management can be integrated with the following modules:
 
   - [Sales and marketing overview](../sales-marketing/overview-sales-marketing.md)
-  - [Human resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
+  - [Human resources](/dynamics365/unified-operations/talent/index)
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

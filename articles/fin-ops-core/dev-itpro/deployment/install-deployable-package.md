@@ -2,13 +2,11 @@
 # required metadata
 
 title: Install deployable packages from the command line
-description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
+description: This topic describes how to use the command line to apply a binary update or an application (AOT) deployable package that was created in your environment.
 author: jorisdg
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
@@ -45,6 +42,9 @@ This topic walks you through the steps for using the command line to apply eithe
 - **Runbook** – The deployment runbook is a series of steps that is generated and used to apply the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller enables these steps to be run one at a time and in the correct order.
 
 ## Install an application (AOT) deployable package on a development environment
+> [!NOTE]
+> The steps listed below are for customization packages only. Do not use the **devinstall** parameter when running the Data Upgrade deployable package as part of an upgrade from Microsoft Dynamics AX 2012 to a Finance and Operations app.
+
 An AOT deployable package is a package that contains customizations and extensions to your application. If you want to use the command line just to install an AOT deployable package on a development or demo environment, follow the instructions in this section. You can then skip the rest of this topic.
 
 1. On the virtual machine (VM), download the zip file for the deployable package. Make sure that the zip file is stored in a non-user folder.
@@ -94,7 +94,7 @@ An AOT deployable package is a package that contains customizations and extensio
 
      When you've finished specifying the VM name and the installed components, the DefaultTopologyData.xml file should resemble the following illustration.
     
-     ![Topology configuration data](./media/defaulttopology.png)
+     ![Topology configuration data.](./media/defaulttopology.png)
 
 5. Repeat steps 1 through 4 for every other VM that is listed on the **Environment** page.
 
@@ -122,7 +122,7 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
 
 The runbook provides the sequence of steps that must be run to update the environment. The following illustration shows an example of a runbook file. Each step in a runbook is associated with an ID, a machine name, and step execution details.
 
-[![Example of a runbook file](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
+[![Example of a runbook file.](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
 
 ## Install a deployable package
 1. On the first machine (VM) that is listed in the runbook file, follow these steps:
@@ -196,7 +196,7 @@ The runbook provides the sequence of steps that must be run to update the enviro
 
 2. View the runbook to see the completed steps. Here is an example of a runbook file where the steps have been completed.
 
-    [![Example of completed steps in a runbook](./media/image013-1024x978.png)](./media/image013.png)
+    [![Example of completed steps in a runbook.](./media/image013-1024x978.png)](./media/image013.png)
 
 ## Backup the runbook file
 - After all the steps in the runbook are completed and you've exported the runbook, save the file outside the computer for future reference. For example, you might have to use the runbook file in these situations:
@@ -218,3 +218,6 @@ The runbook provides the sequence of steps that must be run to update the enviro
     ```
 
 - To verify database synchronization, in the **aosservice\\scripts\\** folder, find and open the **dbsync.error.txt** file, and look for any errors.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

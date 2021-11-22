@@ -4,11 +4,9 @@
 title: Employee development Power BI content
 description: This topic describes the Employee development Power BI content. 
 author: jcart1106 
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -74,3 +71,6 @@ You can filter the charts and tiles on these reports, and pin the charts and til
 | Employee Skill Analysis  | Certified, level, level date, and skill                                                                    | Employee Name, Skill |
 | Performance              | Rating, description, and rating model                                                                      | Current Employee, Current Position, Employee Trend, Job Preferred Skill, Past Position Assignment, Position Trend, Terminated Employee |
 | Skill                    | Skill, skill type, and rating                                                                              | Employee Skill Analysis, Job Preferred Skill |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,34 +3,33 @@
 
 title: Create a working time calendar
 description: Define a working time calendar, holidays, and non-work times in Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Create a working time calendar
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A working time calendar in Dynamics 365 Human Resources shows the days and hours that employees work in your organization. When an employee submits a time-off request, they don't have to worry about holidays and closures.
 
@@ -70,13 +69,9 @@ You can add or change holidays and closures separately from a working time calen
 
 You can add or change non-work times separately from a working time calendar.
 
-1. On the **Organization administration** page, select **Non-work time**.
+1. On the **Organization administration** page, select **NON-WORK TIME**.
 
 2. Select **New** and enter a name and time range for the non-work time.
-
-## Leave and absence preview feature
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
 
 If you've enabled the Leave and absence bank holiday corrections preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.
 
@@ -84,3 +79,6 @@ If you've enabled the Leave and absence bank holiday corrections preview feature
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Configure leave and absence types](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

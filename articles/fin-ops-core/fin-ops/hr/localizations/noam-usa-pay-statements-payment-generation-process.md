@@ -2,13 +2,11 @@
 # required metadata
 
 title: Pay statements and payment generation FAQ
-description: This topic answers questions that are related to activities that go beyond standard payroll processing. Examples include payments that are made to workers outside Payroll and final payments to terminated workers. 
+description: This topic answers questions that are related to activities that go beyond standard payroll processing.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: PayrollPayStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221054
 ms.assetid: 0fd018c4-a786-4d36-97eb-7087521bb9f2
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -86,3 +83,6 @@ Yes. For example, if you must create a pay statement just so that you can correc
 
     > [!IMPORTANT]
     > You must calculate the pay statement before you can submit it for payment or post it to the general ledger.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

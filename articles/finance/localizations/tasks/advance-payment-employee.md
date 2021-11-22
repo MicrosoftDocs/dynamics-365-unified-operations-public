@@ -4,11 +4,9 @@
 title: EEU-00047 Advance payment to employee
 description: This procedure demonstrates how to set up and register transactions for an advance holder. 
 author: v-oloski
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: RCashTable, LedgerJournalSetup, HcmWorkerGroup_RU, EmplPosting_R
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
@@ -174,3 +171,6 @@ This procedure demonstrates how to set up and register transactions for an advan
 12. Close the page.
 13. Click Transactions.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up, create, and manage absorption costs 
 description: This topic provides information on how to set up, create, and manage absorption costs for Brazil. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -116,3 +113,6 @@ Use this procedure to cancel the absorbed costs that are not posted to the ledge
 2.  In the **Month/Year to cancel** field, select the month and year to cancel the absorbed costs for.
 
 3.  Click **OK** to cancel the absorbed costs for the selected month and year.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

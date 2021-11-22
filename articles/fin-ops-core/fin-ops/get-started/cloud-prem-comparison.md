@@ -4,11 +4,9 @@
 title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
-manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -50,9 +47,9 @@ The following tables list the application areas. Cloud and on-premises support i
 |---------------------|-----------------------------|-----------|-----------------|
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
-| Data management and integration      |                                                                                           | Yes       | Yes             
+| Data management and integration      |                                                                                           | Yes       | Yes             |
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
-|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes             |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
 | Document management                  |                                                                                           | Yes       | Yes             |
 | Financial management                 |                                                                                           | Yes       | Yes             |
@@ -69,7 +66,7 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Analytical workspaces                                                                     | Yes       | No              |
 |                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
 |                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |
-|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | No              |
+|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | Yes             |
 |                                      | Telemetry is transferred into the cloud                                                   | Yes       | No              |
 | Lifecycle services                   |                                                                                           | Yes       | Yes             |
 |                                      | Configurable business processes                                                           | Yes       | No              |
@@ -86,12 +83,13 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
-|                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send/recieve business events within intranet)              |
+|                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send/receive business events within intranet)              |
 
 ## Dynamics 365 Supply Chain Management 
 
 | **Area**                | **Feature**             | **Cloud** | **On-premises** |
 |-------------------------|-------------------|-----------|-----------------|
+| Asset management                     |                                                                                           | Yes       | Yes             |
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
 | Cost accounting                      |                                                                                           | Yes       | Yes             |
@@ -102,7 +100,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Data management and integration      |                                                                                           | Yes       | Yes             |
 |                                      | Configuration-driven extension                                                            | Yes       | No              |
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
-|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes             |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
 | Document management                  |                                                                                           | Yes       | Yes             |
 | Help                                 |                                                                                           | Yes       | No              |
@@ -117,7 +115,7 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Analytical workspaces                                                                     | Yes       | No              |
 |                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
 |                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |
-|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | No              |
+|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | Yes             |
 |                                      | Telemetry is transferred into the cloud                                                   | Yes       | No              |
 | Inventory management                 |                                                                                           | Yes       | Yes             |
 | Lifecycle services                   |                                                                                           | Yes       | Yes             |
@@ -125,6 +123,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Localizations                        |                                                                                           | Yes       | Yes             |
 | Manufacturing                        |                                                                                           | Yes       | Yes             |
 | Master planning and forecasting      |                                                                                           | Yes       | Yes             |
+| Planning optimization                |                                                                                           | Yes       | No              |
 | Mobile app, workspaces, and platform |                                                                                           | Yes       | Yes             |
 | Office integration                   |                                                                                           | Yes       | Yes             |
 | Organization administration          |                                                                                           | Yes       | Yes             |
@@ -153,7 +152,7 @@ The following tables list the application areas. Cloud and on-premises support i
 
 ## Dynamics 365 Commerce 
 
-To see a list of capabilities that are available in on-premises deployments, see [Commerce capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
+To see a list of capabilities that are available in on-premises deployments, see [Commerce capabilities that are available in on-premises deployments](../../../commerce/retail-onprem.md).
 
 ## Dynamics 365 Human Resources 
 
@@ -171,9 +170,15 @@ To see a list of capabilities that are available in on-premises deployments, see
 | Platform compatibility     |                                           | Yes       | Yes             |
 | Servicing                  |                                           | Yes       | Yes             |
 |                            | Servicing environments                    | Yes       | No              |
-| Trace Parser and PerfTimer |                                           | Yes       | No              |
+| Trace Parser               |                                           | Yes       | Yes             |
+| PerfTimer                  |                                           | Yes       | Yes\*           |
 | Upgrade                    |                                           | Yes       | Yes             |
 |                            | Upgrade                                   | Yes       | No              |
 |                            | Upgrade and support for previous versions | Yes       | No              |
 | Visual Studio development  |                                           | Yes       | Yes             |
 
+\* In on-premises environments, PerfTimer only shows results for the client.
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Work with templates
 description: This topic describes how to work with templates in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -30,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Work with templates
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to work with templates in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 As was discussed in [Templates and layouts overview](templates-layouts-overview.md), templates define the set of options that is available to downstream authors. Templates are useful to an enterprise's web authoring team for several reasons, and well-structured templates can help with all the following goals:
 
@@ -136,14 +130,14 @@ To add a script to a template, follow these steps.
 To save and check in a template, follow these steps.
 
 1. Select **Save** at the top of the template editor. Saved changes don't affect downstream pages until they are checked in.
-1. Select **Check In**. Your changes are now discoverable for downstream workflows.
+1. Select **Finish editing**. Your changes are now discoverable for downstream workflows.
 
 To preview your changes, either open an existing page that uses the template or create a new page from the template.
 
 After you've previewed the changes to your template, follow one of these steps to publish the template to your live site:
 
 * Go to **Templates**, select the template, and then select **Publish**.
-* In the template editor, select **Publish**.
+* Select the layout name to open the layout editor, and then select **Publish**.
 * Publish a page that references the unpublished template. The template is automatically published.
 
 > [!WARNING]
@@ -154,3 +148,6 @@ After you've previewed the changes to your template, follow one of these steps t
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Work with preset layouts](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

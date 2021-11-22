@@ -3,28 +3,25 @@
 
 title: Manage items that are lent to workers
 description: Loan items are records that help managers track the physical items that your company lends to its workers. 
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan
+ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan, HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -32,9 +29,12 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Manage items that are lent to workers
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Loan items are records that help managers track the physical items that your company lends to its workers. 
 
-The following points list examples of items that a company might lend to workers:
+Here are some examples of items that a company might lend to workers:
+
 -   Mobile telephones
 -   Automobiles
 -   Computer equipment
@@ -43,20 +43,21 @@ Each physical item must have a corresponding loan item. Each loan item record sh
 
 When loaning an item, enter the date that the item was loaned, and the planned return date. When the item is returned, enter the actual return date.
 
-Employees can view the records of the items that have been loaned to them using the Employee self-service workspace. They can also edit the existing records or enter new loan items, if they've received additional physical items.  Workflow can be set up to route changes to new or existing loan items through an approval process. 
+Employees can use the **Employee self service** workspace to view the records of the items that have been loaned to them. They can also edit the existing records or enter new loan items if they've received additional physical items. A workflow can be set up to route changes to new or existing loan items through an approval process. 
 
 Managers can view loaned items for their direct reports. They can also be granted permission to add new loan items on behalf of their employees.
 
- Account for lost or misplaced loan items
------------------------------------------
+##  Account for lost or misplaced loan items
 
 If an item becomes damaged or misplaced, enter a fictitious return record. Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.
 
 
-Additional resources
---------
+## Additional resources
 
 [Human resources](index.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

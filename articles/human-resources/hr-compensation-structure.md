@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Develop a compensation structure
-description: This article walks you through creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. 
-author: andreabichsel
-manager: AnnBe 
-ms.date: 02/10/2020
+description: This topic explains how to create a fixed compensation plan and enroll employees in the plan through eligibility rules. 
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-human-resources 
 ms.technology:  
  
 # optional metadata 
@@ -16,13 +14,12 @@ ms.technology:
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations 
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 
@@ -30,7 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Develop a compensation structure
 
-This article walks you through creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. This article uses the USMF demo data and applies to Compensation and Benefits Managers.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic describes creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. This topic uses the USMF demo data and applies to compensation and benefits Managers.
 
 ## Create a fixed compensation plan
 
@@ -48,7 +47,7 @@ This article walks you through creating a fixed compensation plan and enrolling 
 
 7. In the **Type** field, select whether the fixed compensation plan is a **Band**, **Grade**, or **Step** plan.
 
-8. The **Recommendation allowed** checkbox acts as a default value for any actions added to this plan in a Process event. Allowing recommendations enables you to override the calculated guideline amount when processing compensation.
+8. The **Recommendation allowed** check box will be the default value for any actions added to this plan in a Process event. Allowing recommendations enables you to override the calculated guideline amount when processing compensation.
 
 9. The **Out of range tolerance** field allows you to specify how you want to handle compensation amounts that fall outside of the specified compensation structure range for the given level. Setting the **Out of range tolerance** field to **None** allows you to use any compensation amount. **Soft tolerance** warns users if the compensation amount is less than the minimum or greater than the maximum reference point amounts for that level. Users can ignore the warning and continue. **Hard tolerance** generates an error if an employee's compensation is outside the minimum and maximum reference points for the level and will automatically adjust the employee's compensation to fall within the range.
 
@@ -118,3 +117,6 @@ You can't assign a fixed compensation plan to an employee until you define eligi
 
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

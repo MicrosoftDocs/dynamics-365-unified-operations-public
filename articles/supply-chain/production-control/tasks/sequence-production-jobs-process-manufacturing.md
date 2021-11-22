@@ -3,28 +3,25 @@
  
 title: Sequence production jobs for process manufacturing
 description: This procedure uses paint products as an example to show how to sequence planned orders according to the priority of color and package size. 
-author: ChristianRytt
-manager: AnnBe 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-ms.search.form: ReqTransPo, PMFSeqReqRouteChangesListPage   
+ms.search.form: ReqTransPo, PMFSeqReqRouteChangesListPage, PMFSeqReqRoute, PMFSeqReqRouteChanges, PMFSeqReqSchedDetailsFactBox, PMFSequenceGroup, PMFSequenceItemTable, PMFSequenceTable, PmfSeqWrkCtrCapRes   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Sequence production jobs for process manufacturing
 
@@ -74,3 +71,6 @@ This procedure uses paint products as an example to show how to sequence planned
 8. Use the Quick Filter to filter on the Item number field with a value of 'P300'.
     * Notice that the orders now are sequenced according to the priority of color and size and the planned orders start at the earliest order date and delivery date. Validate the Order date column or the Start date in the Schedule details FactBbox.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

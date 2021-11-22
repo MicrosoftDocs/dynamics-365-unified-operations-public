@@ -4,11 +4,9 @@
 title: Set up an invoice declaration for vendors
 description: This procedure walks you through setting up the Icelandic invoice declaration. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport,  VendI
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Iceland
@@ -62,3 +59,6 @@ This procedure walks you through setting up the Icelandic invoice declaration. T
 10. In the Record type field, select 'LA'.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

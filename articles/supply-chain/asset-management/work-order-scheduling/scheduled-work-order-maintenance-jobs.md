@@ -3,12 +3,10 @@
 
 title: Scheduled work order maintenance jobs
 description: This topic explains scheduled work order maintenance jobs in Asset Management.
-author: josaw1
-manager: AnnBe
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -55,5 +52,8 @@ The **Scheduled work order maintenance jobs** page shows an overview of the work
 
 The following screenshot shows an example of the **Scheduled work order maintenance jobs** page.
 
-![Figure 1](media/07-work-order-scheduling.png)
+![Figure 1.](media/07-work-order-scheduling.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

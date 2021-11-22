@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Settle a partial customer payment before the discount date with a final payment after the discount date
+title: Settle partial payment before discount date with final payment after discount date
 description: This article discusses the effect of settling payments to invoices for customers. The scenario focuses on the effects in the subledger, not in General ledger.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14584
 ms.assetid: e54936f5-053b-4ed3-b778-42c7e9aeb7cf
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Settle a partial customer payment before the discount date with a final payment after the discount date
+# Settle partial payment before discount date with final payment after discount date
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,7 +43,7 @@ On June 25, Arnie enters and posts an invoice for 1,000.00 for customer 4027. Ar
 | FTI-10020 | Invoice          | 6/25/2015 | 10020   | 1,000.00                             |                                       | 1,000.00 | USD      |
 
 ## Partial payment before the cash discount date
-On July 2, customer 4027 makes a partial payment of 297.00 for the invoice. The payment is eligible for a cash discount, because Fabrikam offers cash discounts on partial payments, and the partial payment is made before the cash discount date. Therefore, customer 4027 takes a 3.00 cash discount. Arnie records the payment for customer 4027 by using the Payment journal. Arnie then opens the **Settle transactions** page, so that he can mark the invoice for settlement.
+On July 2, customer 4027 makes a partial payment of 297.00 for the invoice. The payment is eligible for a cash discount, because Fabrikam offers cash discounts on partial payments, and the partial payment is made before the cash discount date. Therefore, customer 4027 takes a 3.00 cash discount. Arnie records the payment for customer 4027 by using the Payment journal. Arnie then opens the **Settle transactions** page, so that Arnie can mark the invoice for settlement.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency debit | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
@@ -54,7 +51,7 @@ On July 2, customer 4027 makes a partial payment of 297.00 for the invoice. The 
 
 Discount information appears at the bottom of the **Settle open transactions** page. If you don't change the **Amount to settle** value to 297.00, the **Cash discount amount** values that appear will differ. However, 3.00 will be taken as the cash discount when the payment is posted, because settlement automatically adjusts the **Amount to settle **value for you.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |
@@ -79,7 +76,7 @@ On July 11, which is after the discount period, customer 4027 pays the rest of t
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 0.00      |
@@ -95,7 +92,7 @@ If Arnie changes the value in the **Use cash discount** field to **Always**, the
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 7.00      |
@@ -103,7 +100,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Cash discount taken          | 3.00      |
 | Cash discount amount to take | 7.00      |
 
-Arnie changes the value in the **Use cash discount** field back to **Normal**, because he is not letting this customer take the remaining cash discount of 7.00. Arnie then posts the payment. When Arnie opens the **Customer transactions** page, he sees that the invoice has a balance of 0.00. He also sees that there are two payments. One payment is for 297.00 and has a 3.00 cash discount, and the other payment is for 700.00.
+Arnie changes the value in the **Use cash discount** field back to **Normal**, because Arnie is not letting this customer take the remaining cash discount of 7.00. Arnie then posts the payment. When Arnie opens the **Customer transactions** page, the invoice has a balance of 0.00. There are two payments. One payment is for 297.00 and has a 3.00 cash discount, and the other payment is for 700.00.
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -116,3 +113,6 @@ Arnie changes the value in the **Use cash discount** field back to **Normal**, b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

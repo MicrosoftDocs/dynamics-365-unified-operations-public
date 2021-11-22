@@ -3,28 +3,25 @@
 
 title: Service level and description
 description: This topic explains service level and description in Asset Management.
-author: josaw1
-manager: AnnBe
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -53,7 +50,7 @@ When you create a work order, you might want to define the service levels for it
 8. To set an end time for the work order, in addition to an end date, set the **Set end time** option to **Yes**. Then enter the end time in the **End time** field. If you set the option to **No**, the current time of day is used.
 9. Select **Save**.
 
-![Work orders service level page](media/19-setup-for-work-orders.png)
+![Work orders service level page.](media/19-setup-for-work-orders.png)
 
 ## Create a description
 
@@ -61,3 +58,6 @@ When you create a work order, you might want to define the service levels for it
 2. Select **New**.
 3. In the **Description** field, enter the description.
 4. Select **Save**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

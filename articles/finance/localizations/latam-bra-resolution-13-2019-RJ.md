@@ -2,13 +2,11 @@
 # required metadata
 
 title: SPED fiscal resolution 13/2019 RJ
-description: This topic explains how to set up and generate SPED ECD text files.
+description: This topic provides information about resolution 13/2019, and how a Nota fiscal eletrônica (NF-e) should be issued and recorded.
 author: v-oloski
-manager: AnnBe
 ms.date: 10/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.0
 
@@ -268,3 +265,6 @@ The system fills in data on the journal lines from the posting profile of adjust
 >
 > - **For the sender:** Adjustment code from table 5.2 = RJ821231, and adjustment code from table 5.3 = RJ10080002
 > - **For the recipient:** Adjustment code from table 5.2 = RJ821231, and adjustment code from table 5.3 = RJ10080002
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

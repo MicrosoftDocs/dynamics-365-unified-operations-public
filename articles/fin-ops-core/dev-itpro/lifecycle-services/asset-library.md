@@ -4,11 +4,9 @@
 title: Asset library in Lifecycle Services (LCS)
 description: This topic provides information about the Asset Library functionality in Lifecycle Services (LCS).
 author: laneswenka
-manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266824
 ms.assetid: 
@@ -38,11 +35,11 @@ The Asset library is a storage location for the various assets that are associat
 
 - **Shared asset library** – The Shared asset library is used by Microsoft and Partners to share assets across multiple tenants, projects, and environments in LCS. This library can be accessed by any user who signs in to LCS. To access the Shared asset library, sign in to LCS, and then click the **Shared asset library** tile.
 
-    [![Shared asset library tile](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
+    [![Shared asset library tile.](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
 
 - **Project-level Asset library** – The project-level Asset library is used to share assets across environments within a project in LCS. This library can be accessed by all users within a project. To access the project-level Asset library, sign in to LCS, and open a project. Then, on the hamburger menu, click **Asset library**.
 
-    [![Opening the project-level Asset library](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+    [![Opening the project-level Asset library.](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
     
     > [!NOTE]
     > Uploading versions for the same asset in the project asset library is not supported. 
@@ -54,6 +51,7 @@ The Asset library supports multiple types of assets. Here are some asset types t
 - **Data package** – This asset type stores assets that are used for configuration and data management.
 - **GER Configuration** – This asset type stores all localization and translation assets that are applied to the client.
 - **Retail SDK** – This asset type stores all the latest scripts for the Retail software development kit (SDK).
+- **Database backups** - This asset type is used for import and export of databases from Sandbox Tiers 2 - 5 environments.
 
 ### Asset scopes
 Every asset that the Asset library supports has multiple scopes. Here are some of the supported asset scopes:
@@ -78,17 +76,18 @@ You can perform various actions in the Asset library as you require.
 3. Enter a name and description for the asset.
 4. Upload the file for the asset, and then click **Confirm**.
 
-### Upload a new version for a specific asset
+### Upload a new version for a specific asset (Shared asset library only)
 1. Select the asset in the Asset library.
-2. On the toolbar, click the **Upload** button.
+2. On the toolbar, click the **Upload new version** button.
 3. Repeat the steps in the previous procedure, "Upload an asset to the asset library."
 4. On the toolbar, click **Versions** to view multiple versions for a single asset.
+5. Individual versions can then be imported in to a specific project asset library as required.
 
-### Move assets from the Global asset library to the project-level Asset library
-There are two ways to move an asset from the Global asset library to the project-level asset library: you can import the asset or copy it.
+### Move assets from the Shared asset library to the project-level Asset library
+There are two ways to move an asset from the Shared asset library to the project-level asset library: you can import the asset or copy it.
 
-#### Import from the Global asset library
-Follow these steps to import an asset from the Global asset library to the project-level Asset library so that it can be applied across environments.
+#### Import from the Shared asset library
+Follow these steps to import an asset from the Shared asset library to the project-level Asset library so that it can be applied across environments.
 
 1. In the project-level Asset library, select the tab for the asset type to import.
 2. Click **Import**.
@@ -96,7 +95,7 @@ Follow these steps to import an asset from the Global asset library to the proje
 
 The selected asset is imported and put into the project-level Asset library. The status of the asset in the project-level Asset library is set to **Published**. This method is for packages that you don't plan to edit. If you want to edit an imported package, create a copy by using the following procedure. The status of the package will then be **Draft**.
 
-#### Copy from the Global asset library
+#### Copy from the Shared asset library
 Follow these steps to create a copy of an asset so that it can be edited.
 
 1. In the project-level Asset library, select the tab for the asset type to copy.
@@ -111,3 +110,8 @@ After you've edited an asset, follow these steps to move the edited asset back t
 2. Select the asset to save, and then click **Save to my library**.
 
 The asset is saved from the project-level Asset library back to the Shared asset library, and the scope is set to **Me**.
+
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

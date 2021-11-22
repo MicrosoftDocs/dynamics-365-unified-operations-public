@@ -4,11 +4,9 @@
 title: Define channel attributes
 description: Enrich the channel by adding channel and product attributes. 
 author: jashanno
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: RetailInternalOrganization, EcoResAttributeGroup, EcoResAttribut
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -74,3 +71,6 @@ Enrich the channel by adding channel and product attributes. You must add the ch
 33. Click OK.
 34. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Bank payment fees covered by vendors in Japan
 description: This topic answers some of the frequently asked questions about bank payment fees that are covered by vendors in Japan.
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,13 +15,12 @@ ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10214
 ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -75,3 +72,6 @@ To differentiate two different bank accounts within the same bank, you can use t
 ## Additional resources
 - [Generate and post payment fee](./tasks/post-payment-fee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

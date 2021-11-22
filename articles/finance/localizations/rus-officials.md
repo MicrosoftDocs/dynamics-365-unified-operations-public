@@ -4,11 +4,9 @@
 title: Set up officials (Russia)
 description: This topic explains how to set up officials in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: OfficialsTable_RU
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -120,3 +117,6 @@ Use the **Shipment** page to set up officials for the **Issue slip (M-15)** repo
 ## Additional resources
 
 - [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

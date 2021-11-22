@@ -4,11 +4,9 @@
 title: Vendor payments workspace
 description: This topic provides information about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
 author: abruer
-manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:  VendPaymentWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -39,9 +36,10 @@ The **Vendor payments** workspace shows information that is related to the proce
 
 The following setup needs to be completed for data to display in **Vendor payments** Power BI visuals.
 1. Go to **System administration > Setup > System Parameters** to set **System currency** and **System Exchange Rate**.
-2. Go to **General Ledger > Setup > Ledger**  to set **Accounting Currency** and **Exchange Rate Type**. 
-2. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-3. Go to **System administration > Setup > Entity Store** to refresh the **VendPaymentBIMeasure** aggregate measurement. 
+2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
+3. Go to **General Ledger > Setup > Ledger**  to set **Accounting Currency** and **Exchange Rate Type**. 
+4. Define exchange rates between transaction currencies and accounting currency, and accounting currency and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
+5. Go to **System administration > Setup > Entity Store** to refresh the **VendPaymentBIMeasureV2** aggregate measurement.
 
 ## My work view
 
@@ -82,3 +80,6 @@ The following table shows the visualizations that are available on each report p
 |    Vendor to customer balance     |                                                                                                                   <ul><li>Vendor to customer balance</li><li>Vendor to customer balance per company</li><li>Vendor to customer balance details</li></ul>                                                                                                                    |
 |    Invoices with payment hold     |                                                                                         <ul><li>Invoices with payment hold</li><li>Invoices with payment hold details</li><li>Invoices with payment hold per company</li><li>Invoices with payment hold per vendor group</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

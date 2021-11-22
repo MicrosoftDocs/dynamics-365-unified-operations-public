@@ -3,12 +3,10 @@
 
 title: Calendars and master planning
 description: This topic provides an overview of supply chain calendars and how they affect master planning.
-author: t-benebo
-manager: AnnBe
-ms.date: 05/08/2019
+author: ChristianRytt
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -34,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and reciving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
+This topic provides an overview of supply chain calendars and how they affect master planning.  The different calendars used in master planning engine are explained, including how they affect the shipping and receiving dates in the planned orders. Finally, recommendations regarding the assignment, use and update of the calendars are given.
 
 ## Definition of a calendar
 
@@ -102,7 +99,7 @@ To indicate the dates when a customer can accept deliveries, you can assign a re
 
 Note that it is only possible to include one calendar per customer. If you need to include a calendar for each different address for a customer, you can create one customer per address and then assign its respective calendar. 
 
-The requested receipt date on the sales order lines is affected by the customer calendar and by the delivery date control method. You can read more about how the earliest delivery date is calculated in [Order Promising.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+The requested receipt date on the sales order lines is affected by the customer calendar and by the delivery date control method. You can read more about how the earliest delivery date is calculated in [Order Promising.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### Shipping calendar for a legal entity
 To indicate the dates in which a legal entity can ship goods, you can set up a shipping calendar under **Organization administration > Organizations > Legal entities**. Select the legal entity and add the calendar in the **Foreign trade and logistics** tab in the  **Shipping calendar** field. The shipping calendar will act as a source of defaults for all warehouse calendars in the legal entity. 
@@ -115,29 +112,29 @@ Sometimes, vendors need a few days of margin between when they receive the purch
 
 ### Delivery date of a planned purchase order
 The receipt date of a purchase indicates the date when you will receive the goods. It will be an open date in the calendar. The calendar that will be taken into account to indicate which days the purchase orders can be received are the following, in order from highest to lowest priority: 
-	1. Vendor's calendar
-	2. Coverage group calendar
-	3. Warehouse calendar for the receiving warehouse
+1. Vendor's calendar
+1. Coverage group calendar
+1. Warehouse calendar for the receiving warehouse
 
 Note that the coverage group calendar can be set in different pages and will take priority in the following order:
-	1. Item coverage group on the **Released products details** page
-	2. Item coverage group on the **Item coverage** page
-	3. Default item coverage group in **Master planning parameters**
+1. Item coverage group on the **Item coverage** page
+1. Item coverage group on the **Released products details** page
+1. Default item coverage group in **Master planning parameters**
 
 ### Shipping date of a planned transfer order
 When creating a transfer order between two warehouses, the shipping date and the receipt date are included in the transfer order header, along with the "From" warehouse and "To" warehouse. The difference between these two dates is the expected transportation time (in days) between the warehouses.
 
 The shipping date of a planned transfer order indicates the date that the goods are shipped from the "From" warehouse. The calendars used for specifying the available shipping date are listed by priority: 
-	1. Warehouse calendar of the "From" warehouse
-	2. Coverage group calendar (see fallback order for this calendar above)
+1. Warehouse calendar of the "From" warehouse
+1. Coverage group calendar (see fallback order for this calendar above)
 If there is a warehouse calendar set, the shipping date will be an open date in the calendar. If there is not a warehouse calendar set, it will take the coverage group calendar. 
 
 ### Receipt date of a planned transfer order
 The receipt date for a transfer order indicates the date that the goods are received in the "To" warehouse.
 
 The calendars used for specifying the receipt date are the ones listed by priority: 
-	1. Coverage group calendar 
-	2. Warehouse calendar of the "To" warehouse
+1. Coverage group calendar 
+1. Warehouse calendar of the "To" warehouse
 If there is a coverage calendar set, the receipt date will be an open date in the calendar. If there is not a coverage group calendar set, it will take the warehouse calendar. 
 
 When finding the shipment and receiving dates for the planned transfer, the margins established by the user for shipping and receiving will also be considered. 
@@ -157,3 +154,6 @@ Regarding the coverage group calendar, it is important to consider that that has
 ### Updating SCM related calendars
 While it is important that all relevant calendars are assigned in their respective place (vendor, customer, warehouse, mode of delivery, or coverage group), updating them is as important so they reflect the changes. The system will define the production, transfer, purchase, and sales order dates depending on the combination of the assigned calendars. 
 It is a best practice to clarify who holds the responsibility for assigning and updating the calendars in its corresponding areas. In case of a breakdown or any other unusual change in the working days, it is essential to update the calendars according to it. All tasks which depend on calendars, such as master planning and production scheduling, must be rerun when calendars are updated. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

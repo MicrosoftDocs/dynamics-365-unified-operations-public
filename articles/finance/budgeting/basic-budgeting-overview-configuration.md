@@ -3,12 +3,10 @@
 
 title: Budgeting overview
 description: Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Finance and Operations or load them from a third-party program.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: BudgetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 60113
+ms.custom: ["60113", "intro-internal"]
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 # ms.search.industry: 
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Finance and Operations or load them from a third-party program.
 
-Overview
---------
+## Overview
 
 The approved budget for a legal entity is maintained in a document that is known as a *budget register entry*. The lines in a budget register entry document are known as *budget account* entries, and contain financial dimension information, dates, and the amounts of the approved budget. The budget register entry document is integrated with basic financial reports and inquiry pages where ledger actual amounts are compared to budget amounts. 
 
@@ -45,7 +41,7 @@ There are multiple methods for creating budget register entries:
 
 -   Manually enter the document information on the **Budget register entries** page.
 -   Use the Microsoft Excel template that you can open by clicking the **Open in Excel** button on the **Budget register entries** page.
--   Use the **Budget Account Entries** data entity in Data management to import budget register entries. You should consider using this method and turning on the **Set based** **processing **parameter when you must import many budget account entries into the system.
+-   Use the **Budget Account Entries** data entity in Data management to import budget register entries. You should consider using this method and turning on the **Set based processing** parameter when you must import many budget account entries into the system.
 -   If the company uses Budget planning functionality to prepare budget data, you can use the **Generate budget register entry** periodic process.
 
 The budget register entry is considered completed when the budget balances have been updated. On the **Budget register entries** page, click **Update budget balances** for a selected budget register entry or multiple entries. After you update the budget balances, the status of the budget register entry changes to **Completed**. Completed budget register entry can't be re-opened for edits. Therefore, if the budget data must be adjusted, you must create a new budget register entry instead of correcting data in the completed budget register entry.
@@ -57,7 +53,7 @@ Next, if there are policies that govern the approval of budget register entries,
 
 On the **Budgeting dimensions** page, you must select the financial dimensions that are used for budgeting, based on the dimensions that are used in the chart of accounts. You can select all financial dimensions or a subset of them for budgeting.
 
-Define a *budget model *that corresponds to all or some of the budgets. You can use a single budget model for all budget register entries. Alternatively, you can create separate models that are based on the budget type, the geographical location, or some other way that a budget can be classified. 
+Define a *budget model* that corresponds to all or some of the budgets. You can use a single budget model for all budget register entries. Alternatively, you can create separate models that are based on the budget type, the geographical location, or some other way that a budget can be classified. 
 
 > [!NOTE] 
 > If budget control is used, you can associate only one budget model with a specific budget cycle time span. 
@@ -79,7 +75,7 @@ Functionality that was introduced in Microsoft Dynamics 365 Finance version 10.0
 
 The **Budget register entries for quantity** only feature lets you post a budget register entry with quantity-only amounts. For example, you could post a budget entry with a quantity of 32 and a price of zero, which results in an amount of zero. You can then use this quantity within the context of a financial report to determine a price per quantity. Note that no inquiries or reports were updated as part of this feature; the feature just enables you to post an amount of zero.
 
-The **Budget register entries defaulting of amount type** feature allows the default amount type within a budget register entry to be an amount type other than expense. The budget register entry line now will default to expense when the main account type is expense; will default to revenue when the main account type is expense; and will default to expense for all other account types.
+The **Budget register entries defaulting of amount type** feature allows the default amount type within a budget register entry to be an amount type other than expense. The budget register entry line now will default to expense when the main account type is expense; it will default to revenue when the main account type is revenue; and it will default to expense for all other account types.
 
 ## Using workspaces and inquiry pages to track budget vs. actuals
 The budget manager can review the current state of a budget in the **Ledger budgets and forecasts** workspace. The **Expense over budget** and **Revenue under budget** tabs provide a quick view of the financial dimension combinations where budget targets aren't being met or are approaching the threshold. You can personalize the budget threshold percentage and financial dimension sets that are used on those tabs by clicking **Configure my workspace**. You can click **Unit managers** to see the workers who are responsible for specific financial dimension combinations that are selected on those tabs. For example, if you see that the expense budget of the Operations department is going over the budget threshold, you can easily find and contact the Operations department manager to discuss the issue. 
@@ -93,3 +89,6 @@ A company that is using Budget planning functionality can create and use *budget
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

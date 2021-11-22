@@ -4,11 +4,9 @@
 title: Monthly average cost model for China
 description: Inventory costing is used to determine the cost or monetary value of warehoused inventory items.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: CostingVersion
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265044
 ms.assetid: 1f7abefa-8f87-4aa7-8eca-51974f91068d
@@ -73,3 +70,6 @@ Many Chinese manufacturing and trading companies use a monthly average cost mode
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

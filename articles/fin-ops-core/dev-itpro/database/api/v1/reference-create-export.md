@@ -4,11 +4,9 @@
 title: Database movement API - Reference - v1 - Create a database export
 description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
-manager: AnnBe
-ms.date: 03/12/2020
-ms.topic: article
+ms.date: 09/30/2020
+ms.topic: reference
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -31,7 +28,6 @@ ms.dyn365.ops.version: 10.0.0
 # Create a database export
 
 [!include [banner](../../../includes/banner.md)]
-[!include [banner](../../../includes/preview-banner.md)]
 
 You can create a database export from a sandbox environment to the project's asset library. Note that the same validation rules from the details page in Microsoft Dynamics Lifecycle Services (LCS) apply to the application programming interface (API).
 
@@ -79,3 +75,6 @@ POST /databasemovement/v1/export/project/12345/environment/5362377c-bc37-4f92-b3
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

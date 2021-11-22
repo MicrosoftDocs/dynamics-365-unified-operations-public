@@ -3,12 +3,10 @@
 
 title: Accounts receivable in the public sector overview
 description: This topic describes the Accounts receivable functionality that is available for the public sector.
-author: ShylaThompson
-manager: AnnBe
+author: v-kiarnd
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: CustInvoiceJournal, CustParameters, CustTradingPartnerCode
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 26281
+ms.custom: ["26281", "intro-internal"]
 ms.assetid: a411ec87-a209-471c-a141-5f5a92f2e45e
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the Accounts receivable functionality that is available for the public sector.
 
-How do I set Accounts receivable parameters for the public sector?
-------------------------------------------------------------------
+## How do I set Accounts receivable parameters for the public sector?
 
 Most Accounts receivable parameters are set the same way whether you’re in the public sector or the private sector. However, the parameters that are required for billing classifications and billing codes are used only by the public sector. For more information, see [Billing classifications and billing codes in the public sector](billing-classifications-billing-codes-public-sector.md).
 
@@ -54,7 +50,7 @@ You can use billing classifications along with other billing attributes to contr
 You can use billing classifications to create a separate reimbursement transaction for each billing classification. When you do this, reimbursement transactions are grouped by the unique customer balance posting type entry and billing classification. For details, see [Reimbursements in the public sector](reimbursements-public-sector.md).
 
 ## Where are the trading partner codes that I need for GFRS and FACTS I reporting?
-The trading partner codes required for GFRS and FACTS I reporting are established by the US Department of the Treasury. Any organization that follows U.S. governmental reporting rules for accounts receivables should add trading partner codes to their customer account information for the agencies they do business with. For example, if your agency does business with the Federal Trade Commission, you’d go to the **Trading partner codes** page and create trading partner code 29. Then, on the customer detail page for the FTC, you’d enter 29 in the **Trading partner code** field.
+The trading partner codes required for GFRS and FACTS I reporting are established by the U.S. Department of the Treasury. Any organization that follows U.S. governmental reporting rules for accounts receivables should add trading partner codes to their customer account information for the agencies they do business with. For example, if your agency does business with the Federal Trade Commission, you’d go to the **Trading partner codes** page and create trading partner code 29. Then, on the customer detail page for the FTC, you’d enter 29 in the **Trading partner code** field.
 
 ### I created default financial dimensions for a customer group, but one customer in the group needs a different value for one of the financial dimensions. What’s the easiest way to handle this?
 
@@ -63,8 +59,7 @@ You can keep the default financial dimensions for the customer group. Just go to
 ## What can I use Accounts receivable posting definitions for?
 You can use posting definitions to create subledger journal lines for originating transactions that meet selected criteria - for example, to generate multiple, balanced, ledger entries based on attributes such as transaction types and accounts. To learn more about posting definitions, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
-Additional resources
---------
+## Additional resources
 
 [Accounts receivable](../accounts-receivable/accounts-receivable.md)
 
@@ -75,3 +70,6 @@ Additional resources
 [Create and assign a trading partner code](tasks/create-assign-trading-partner-code-public-sector.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

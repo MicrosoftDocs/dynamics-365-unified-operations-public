@@ -4,11 +4,9 @@
 title: Vehicles and realty as fixed assets (Russia)
 description: This topic explains how to set up and use vehicles and realty as fixed assets for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -52,3 +49,6 @@ You can specify that the calculation of depreciation should be based on the regi
 5. In the **Removal from the register date** field, select the date when the asset should be removed from the tax register.
 
 For more information about asset depreciation, see [Calculate depreciation (Russia)](rus-depreciation-calculation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Calculate material consumption
 description: This article provides information about various options that are related to the calculation of material consumption. 
 author: johanhoffmann
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 53401
 ms.assetid: 9cff88e4-0425-4707-9178-3c2cb10df7c2
@@ -86,3 +83,6 @@ The bill of materials (BOM) quantity is 1, and the production quantity is 110. T
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Configure Accounts receivables and credit and collections
+title: Configure Accounts receivable and credit and collections
 description: Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,9 +16,8 @@ ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgin
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 24631
+ms.custom: ["24631", "intro-internal"]
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure Accounts receivables and credit and collections
+# Configure Accounts receivable and credit and collections
 
 [!include [banner](../includes/banner.md)]
 
@@ -115,3 +112,6 @@ For more information, see [Credit and collections in Accounts receivable](collec
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

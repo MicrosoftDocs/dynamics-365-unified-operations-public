@@ -4,11 +4,9 @@
 title: Work with CSS override files
 description: This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 12/12/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,12 +26,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Work with CSS override files
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Permanent site styles should usually be handled through a site's theme. Themes provide the foundational CSS and style settings for the modules on any page of your site. Themes are created by using the Dynamics 365 Commerce online software development kit (SDK), and they are deployed to your websites through Microsoft Dynamics Lifecycle Services (LCS). Theme debugging capabilities and module interface configurations in the SDK help site developers create customizable and cohesive site design packages. When these design packages are deployed to a site, site authors can focus on creating, editing, and publishing content instead of site development.
 
@@ -106,6 +100,8 @@ To deactivate a CSS override file on your site, follow these steps.
 
 [Select a site theme](select-site-theme.md)
 
+[Work with style presets](style-presets.md)
+
 [Add a favicon](add-favicon.md)
 
 [Add a welcome message](add-welcome-message.md)
@@ -115,3 +111,6 @@ To deactivate a CSS override file on your site, follow these steps.
 [Add languages to your site](add-languages-to-site.md)
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

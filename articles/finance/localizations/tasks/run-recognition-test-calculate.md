@@ -4,11 +4,9 @@
 title: Run the recognition test and calculate the impairment amount on individual assets
 description: This task walks you through running the recognition test and calculating the impairment amount on individual assets. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: AssetImpairmentRecognitionTest_JP, SysQueryForm, AssetImpairment
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -58,3 +55,6 @@ This task was created using the demo data company JPMF.
     * The Confirmation form of the impaired fixed assets is displayed.  
     * The Impairment test ID is issued.     Remember the Impairment_test_ID for later use in Propose and post.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

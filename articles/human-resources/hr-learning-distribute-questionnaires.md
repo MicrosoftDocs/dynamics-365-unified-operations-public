@@ -2,29 +2,26 @@
 # required metadata
 
 title: Distribute and schedule questionnaires
-description: This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/04/2017
+description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
+ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,11 +29,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Distribute and schedule questionnaires
 
-This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 
 There are multiple ways to distribute a questionnaire:
 
--   Mark the questionnaire as active. The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.
+-   Mark the questionnaire as **Active**. The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.
 -   Assign rights to a questionnaire group. The questionnaire is then available to all members of the selected group.
 -   Create planned answer sessions. The questionnaire is then available only to a particular person.
 -   Create a schedule. The questionnaire can then be available to multiple people.
@@ -114,10 +113,10 @@ If you use a planned answer session, you must notify the person directly, such a
 
 ### Notifying respondents about a scheduling
 
-Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire. Enter the email text on the **E-mail for employee self service** tab. After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents. Respondents can then sign in to the website and complete the questionnaire. 
+Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire. Enter the email text on the **Email for employee self service** tab. After the schedule has been started, click **Functions** &gt; **Send email** to generate and send the email to the respondents. Respondents can then sign in to the website and complete the questionnaire. 
 
 > [!NOTE]
-> Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.
+> Before you can use the email functionality, your IT administrator must enter the email settings on the **Email parameters** page.
 
 ## Ending a scheduled questionnaire
 
@@ -136,3 +135,6 @@ After you've designed and distributed a questionnaire, the questionnaire can be 
 Questionnaires can made be available to specific users or groups of users, or to all users in a network.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,25 +1,18 @@
 ---
 
-# required metadata
-
 title: Register subclasses for factory methods
 description: This topic describes how to register your own variations for the factories.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -46,7 +39,7 @@ In X++, the factories use reflection to perform the following tasks:
 
 The following illustrations shows a typical decorated hierarchy.
 
-![Class hierarchy that has three subclasses, each of which is decorated with an attribute](media/hierarchy.png)
+![Class hierarchy that has three subclasses, each of which is decorated with an attribute.](media/hierarchy.png)
 
 In X++, two extension frameworks serve the same purpose. The implementer of the factory method determines which extension framework should be used:
 
@@ -73,19 +66,26 @@ In X++, two extension frameworks serve the same purpose. The implementer of the 
 
 4. Decorate your subclass with the attribute that was used to match your variation.
 
-**SysExtension example**
+## SysExtension example
 
-    [WHSWorkExecuteMode(WHSWorkExecuteMode::About)]
-    class WHSWorkExecuteDisplayAbout extends WHSWorkExecuteDisplay
-    {
-        // Your code here.
-    }
+```xpp
+[WHSWorkExecuteMode(WHSWorkExecuteMode::About)]
+class WHSWorkExecuteDisplayAbout extends WHSWorkExecuteDisplay
+{
+    // Your code here.
+}
+```
 
-**SysPlugin example**
+## SysPlugin example
 
-    [ExportMetadataAttribute('CaseIAssociation', 'Lead'),
-    ExportAttribute('Dynamics.AX.Application.CaseIAssociation')]
-    class smmLeadCaseAssociationProvider implements CaseIAssociation
-    {
-        // Your code here.
-    }
+```xpp
+[ExportMetadataAttribute('CaseIAssociation', 'Lead'),
+ExportAttribute('Dynamics.AX.Application.CaseIAssociation')]
+class smmLeadCaseAssociationProvider implements CaseIAssociation
+{
+    // Your code here.
+}
+```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Point of sale (POS) application and user language settings
 description: This topic describes how to change language settings in Modern POS (MPOS) and Cloud POS.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
@@ -65,8 +62,11 @@ The POS user's language setting determines the translations used in the applicat
 
 The POS user's language setting is set from **All workers** on the **Worker** page under **Retail and Commerce &gt; Language**. It is not set on the main Profile tab. This setting is not used by POS. If the user's language is not set or it is set to a language where translations are not available, the POS will revert to the store's language.
 
-|             | UI language                | Data language (products, receipt formats, line display, etc.) |
+| &nbsp;      | UI language                | Data language (products, receipt formats, line display, etc.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Company** | Default                    | Default                                                       |
 | **Store**   | Overrides company          | Overrides company                                             |
 | **User**    | Overrides store or company | Never                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

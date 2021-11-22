@@ -1,95 +1,42 @@
 ---
-# required metadata
-
 title: Integrated ledger
-description: This topic describes the integration of ledger data between Finance and Operations and other Dynamics 365 applications using the Common Data Service.
-author:  robinarh
-manager: AnnBe
+description: This topic describes the integration of ledger data between Finance and Operations and other Dynamics 365 applications using the Dataverse.
+author:  tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: 
-ms.author: 
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2019-07-15
-
+ms.author: tfehr
+ms.search.validFrom: 2020-01-06
 ---
 
 # Integrated ledger
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In a business application, ledger data defines the core set up for how a company does business. For example, ledger data describes the fiscal year the company follows, the currencies it transacts in, and the accounts it uses. This topic describes the integration of this core financial data.
 
 ## Templates
 
-Ledger data includes a collection of core financial entity maps that work together during data interaction, as shown in the following table.
+Ledger data includes a collection of core financial table maps that work together during data interaction, as shown in the following table.
 
-Finance and Operations apps      | Model-driven app in Dynamics 365 | Description
+Finance and operations apps | Customer engagement apps     | Description
 ---------------------------------|----------------------------------|------------
-Currencies                       | transactioncurrencies            |
-FiscalCalendar                   | msdyn\_fiscalcalendars        |
-FiscalCalendarYear               | msdyn\_fiscalcalendaryears        |
-ExchRateType                     | msdyn\_exchangeratetypes        |
-ExchangeRateCurrencyPair         | msdyn\_currencyexchangeratepairs        |
-FiscalPeriodEntity               | msdyn\_fiscalcalendarperiods        |
-MainAccountCategory              | msdyn\_mainaccountcategory        |
-MainAccount                      | msdyn\_mainaccounts        |
-Ledger                           | msdyn\_ledgers        |
-ExchangeRates                    | msdyn\_currencyexchangerates        |
-FinancialCalendarPeriod          | msdyn\_fiscalcalendarperiods        |
-DimensionAttributeEntity         | msdyn\_dimensionattributes        |
-DimensionIntegrationFormatEntity | msdyn\_financialdimensionformats        |
-LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
+[CDS Exchange Rates](mapping-reference.md#123) | msdyn_currencyexchangerates |
+[Chart of accounts](mapping-reference.md#121) | msdyn_chartofaccountses |
+[Currencies](mapping-reference.md#218) | transactioncurrencies |
+[Exchange rate currency pair](mapping-reference.md#122) | msdyn_currencyexchangeratepairs |
+[Exchange rate type](mapping-reference.md#129) | msdyn_exchangeratetypes |
+[Financial dimension format](mapping-reference.md#130) | msdyn_financialdimensionformats |
+[Financial dimensions](mapping-reference.md#128) | msdyn_dimensionattributes |
+[Fiscal calendar integration entity](mapping-reference.md#132) | msdyn_fiscalcalendars |
+[Fiscal calendar period](mapping-reference.md#131) | msdyn_fiscalcalendarperiods |
+[Fiscal calendar year integration entity](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
+[Ledger](mapping-reference.md#148) | msdyn_ledgers |
+[Main account](mapping-reference.md#152) | msdyn_mainaccounts |
+[Main account categories](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/Currencies-transactioncurrencies.md)]
-
-[!include [Fiscal calendar](includes/FiscalCalendar-msdyn-fiscalcalendars.md)]
-
-[!include [Fiscal calendar year](includes/FiscalCalendarYear-msdyn-fiscalcalendaryears.md)]
-
-[!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
-
-[!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Ledger fiscal periods](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
-
-[!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
-
-[!include [Main account](includes/MainAccount-msdyn-mainaccounts.md)]
-
-[!include [Ledger](includes/Ledger-msdyn-ledgers.md)]
-
-[!include [Exchange rates](includes/ExchangeRates-msdyn-currencyexchangerates.md)]
-
-[!include [Financial Calendar Period](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
-
-[!include [Dimension attribute](includes/DimensionAttributeEntity-msdyn-dimensionattributes.md)]
-
-[!include [Dimension integration format](includes/DimensionIntegrationFormatEntity-msdyn-financialdimensionformats.md)]
-
-[!include [Chart Of Account](includes/LedgerChartOfAccounts-msdyn-chartofaccounts.md)]
-
-
-
-
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

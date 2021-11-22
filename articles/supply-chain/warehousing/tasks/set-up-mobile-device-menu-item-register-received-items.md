@@ -3,28 +3,25 @@
  
 title: Set up a mobile device menu item to register received items
 description: This topic focuses on the setup of a mobile device menu item. 
-author: ShylaThompson
-manager: AnnBe 
+author: Mirzaab
 ms.date: 08/16/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-ms.search.form: WHSRFMenuItem, WHSRFMenu   
+ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up a mobile device menu item to register received items
 
@@ -62,3 +59,6 @@ You can use this guide in demo data company USMF. This procedure is intended for
 6. Select **Save**.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

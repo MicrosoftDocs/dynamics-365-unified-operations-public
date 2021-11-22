@@ -3,28 +3,25 @@
  
 title: Create a purchase order
 description: This topic shows you how to create a purchase order manually. 
-author: FrankDahl
-manager: AnnBe 
+author: Henrikan
 ms.date: 07/18/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals   
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: fdahl
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a purchase order
 
@@ -71,9 +68,12 @@ This topic shows you how to create a purchase order manually. It's more typical 
 ## Review order totals
 1. Select **Totals**.
 
-    - If you don't see the **Totals** action, select the **Purchase Order** tab on the action bar.  
+    - If you don't see the **Totals** action, select the **Purchase Order** tab on the Action Pane.  
     - This dialog box shows totals for the whole order.  
     - The **Selection** field allows you to change the basis of how totals are calculated. For example, you could choose **Product receipt quantity** to show totals that relate to the amount of the product(s) that have been received, or **Ordered quantity** to show the amount of product that was ordered.  
 
 2. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

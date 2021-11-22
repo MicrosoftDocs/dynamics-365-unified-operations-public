@@ -3,12 +3,10 @@
  
 title: Set up a procurement category hierarchy
 description: This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. 
-author: mkirknel
-manager: AnnBe 
+author: Henrikan
 ms.date: 06/21/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,13 +14,12 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -35,8 +32,8 @@ This procedure shows you how to create new nodes in a procurement category hiera
 
 ## Add a new procurement category
 1. Go to **Navigation pane > Modules > Procurement and sourcing > Consignment > Procurement categories**.
-2. On the action pane, select **Edit category hierarchy**. The current procurement category hierarchy is displayed in the left side of the page. You  are about to modify the hierarchy.  
-3. On the action pane, select **New category node**. The system selects the top node by default. If you are running this procedure as a task guide, you can click the Unlock button and select another parent node to insert your new node into. Once that is done, lock the task guide again and then click New category node.  
+2. On the Action Pane, select **Edit category hierarchy**. The current procurement category hierarchy is displayed in the left side of the page. You  are about to modify the hierarchy.  
+3. On the Action Pane, select **New category node**. The system selects the top node by default. If you are running this procedure as a task guide, you can click the Unlock button and select another parent node to insert your new node into. Once that is done, lock the task guide again and then click New category node.  
 4. In the **Name** field, type a value.
 5. In the **Description** field, type a value.
 6. In the **Friendly name** field, type a value. The friendly name is optional. It will be displayed in category lookups together with the category name.  
@@ -49,3 +46,6 @@ This procedure shows you how to create new nodes in a procurement category hiera
 4. Select the products you want to add to the procurement category.
 5. Select the arrow to add the products to the **Selected** table.
 6. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

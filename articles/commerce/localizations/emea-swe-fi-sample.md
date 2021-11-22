@@ -4,11 +4,9 @@
 title: Control unit integration sample for Sweden
 description: This topic provides an overview of the fiscal integration sample for Sweden.
 author: sepism
-manager: annbe
 ms.date: 10/08/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang:
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Sweden
@@ -634,3 +631,6 @@ The migration process should consist of the following steps.
 #### Create deployable packages
 
 Run **msbuild** for the whole Retail SDK to create deployable packages. Apply the packages via LCS or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Unique certification
 description: This topic provides information about the Unique certification for companies in Italy.
 author: ilkond
-manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Italy
@@ -44,7 +41,7 @@ In Italy, withholding tax agents must electronically communicate the Unique cert
 The following prerequisites must be met before the functionality can be used:
 
 - The primary address of the legal entity must be in Italy.
-- The **Unique certification** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Unique certification** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up the Unique certification
 
@@ -53,20 +50,39 @@ The following prerequisites must be met before the functionality can be used:
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Number sequences** tab, in the **Unique certification Id** field, define a number sequence.
 
-### Set up a revenue typology for the Unique certification
+### Set up the unique certification values
 
-You must set up a revenue typology in the **Revenue typology** field in the **Invoice and delivery** section of the **Vendors** page.
+1. Go to **Tax** \> **Setup** \> **Withholding tax** \> **Set up unique certification values**
+2. Specify the values for the **Unique certification** feature.
 
-You can import the list of possible revenue typology values by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
+The **Set up unique certification values** page allows you to configure the values available for several fields:
 
-The source data that is used to import revenue typology values can be presented as a Microsoft Excel file that has the following column names:
+- **record B**: Exceptional events
+- **record D**: Exceptional events, special categories, and unified counties
+- **record H**: Reason and code
+
+The format of the telematics model of unique certification has been updated according to the new specifications in the regulatory update of Unique Certification, valid from March 7, 2018:
+
+- **record A**: CUR18 supply code
+- **record B**: New values for exceptional events
+- **record D**: New values for exceptional events and special categories and the introduction of unified counties fields
+- **record H**: New values for reason and code fields
+- **record Z**: Count of L records to 0
+
+Values that are specified on **Setup Unique Certification values** page, and marked with **Yes** in the **Active** column, will be available in the related lookup fields on the **Unique certification** page. Use this page for future regulatory upgrades of the unique certification to add or delete values.
+
+You can import the initial set of values for **Setup Unique Certification values** by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md). You can download the initial set of values for the **Setup Unique Certification values** from the **IT SetupUniqueCertificationValues** file in the **Data package** asset data type section of the **Shared asset library** in the [LCS portal](https://lcs.dynamics.com/v2) and then import it in to the Data management framework.
+
+The source data used for import can be presented as a Microsoft Excel file that has the following column names:
 
 - FIELD
 - VALUE
 - ACTIVE
 - VALUEDESCRIPTION
 
-You can manually edit revenue topology values by going to **Tax** \> **Setup** \> **Withholding tax** \> **Setup Unique certification values**.
+### Set up a revenue typology for the Unique certification
+
+You must set up a revenue typology in the **Revenue typology** field in the **Invoice and delivery** section on the **Vendors** page.
 
 ### Set up a format for the Unique certification
 
@@ -89,3 +105,6 @@ You can manually edit revenue topology values by going to **Tax** \> **Setup** \
 ## Process the Unique certification
 
 After the Unique certification is generated and filled with data, you can select **Validate** to validate the data before the output file is generated. After the output file is validated, select **Export** to generate the electronic output file in the legally required format.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Purchase a taxable item from an unregistered vendor (India)
 description: This topic walks you through creating a purchase order that includes a taxable item for an unregistered vendor.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,6 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
-ms.search.scope: Core, Operations
 # ms.search.industry: 
 ms.author: ralin
 ms.dyn365.ops.version: 7.3
@@ -64,3 +61,6 @@ This topic walks you through creating a purchase order that includes a taxable i
 
 14. Close the page.
 15. Click **Voucher** to validate the financial entries.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

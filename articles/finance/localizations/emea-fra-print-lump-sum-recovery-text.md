@@ -4,11 +4,9 @@
 title: Print lump sum recovery text on a customer invoice
 description: This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: CustFormletterParameters, CustInvoiceJournal
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53161
 ms.search.region: France
@@ -43,3 +40,6 @@ Use the **Posting invoice** page to print the lump sum recovery text that shows 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Update vendor invoice declarations and generate the report
 description: This procedure walks you through posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Iceland
@@ -61,3 +58,6 @@ This procedure walks you through posting a vendor invoice with invoice declarati
 9. In the Name field, select 'Vendor invoice declaration (IS)'.
 10. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

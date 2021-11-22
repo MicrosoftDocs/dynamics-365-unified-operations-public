@@ -3,12 +3,10 @@
 
 title: Redeploy on-premises environments
 description: This topic provides information about redeploying an on-premises environment.
-author: sarvanisathish
-manager: AnnBe
-ms.date: 11/16/2017
+author: PeterRFriis
+ms.date: 10/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
@@ -41,7 +38,7 @@ Before you delete the environment you plan to update, use the following steps to
 2. Select the connector to your environment, and then click **Edit**.
 3. On the **Edit connector** tab, navigate to **Configure Agent** > **Enter Configuration**.
 4. Copy the value of the Download Fileshare location in the **Configuration Settings** section. You will need this later.
-5. Log in to the on-premises environment file share machine and copy the **\agent\wp<environment name>\StandaloneSetup\config.json**. You can use the configuration settings in this json file to redeploy your environment.
+5. Log in to the on-premises environment file share machine and copy the `\agent\wp<environment name>\StandaloneSetup\config.json`. You can use the configuration settings in this json file to redeploy your environment.
 
 ### Configuration settings
 The following tables provide information about configuration settings. Use the **Configuration setting** value from the .json file that you saved in the previous procedure.
@@ -51,7 +48,7 @@ The following tables provide information about configuration settings. Use the *
 
 |                                                                  <strong>Field</strong>                                                                  |                          <strong>Configuration setting</strong>                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-|                         The email address of the user who will be the initial administrator (such as, adminuser@yourdomain.com)                          |            components.(AOS).parameters.provisioning.adminPrincipleName.value             |
+|                         The email address of the user who will be the initial administrator (such as, `adminuser@yourdomain.com`)                          |            components.(AOS).parameters.provisioning.adminPrincipleName.value             |
 | ADFS OpenID metadata endpoint for the Dynamics 365 Application group. (such as, https://[federation-service-name]/adfs/.well-known/openid-configuration) |              components.(AOS).parameters.activeDirectory.adfsMetadata.value              |
 |                                               ADFS OpenID Connect client ID for the AOS application group                                                |              components.(AOS).parameters.activeDirectory.adfsClientId.value              |
 |                                       ADFS OpenID Connect client ID for the Financial Reporting application group                                        | components.(FinancialReporting).parameters.aad.nativeClientAuthentication.clientId.value |
@@ -92,7 +89,7 @@ The following tables provide information about configuration settings. Use the *
 | The group managed service account (gMSA) to run the MR click-once service, such as yourdomain\Svc-FRCO$.                                       | components.(FinancialReporting).parameters.ClickOnceServicePrincipalUser.accountName.value *   |
 
 > [!NOTE]
-> Remove the extra backslash from the Principal username cofiguration value in the .json file before entering in the LCS UI. For example, contoso\\AXServiceUser should be entered as contoso\AXServiceUser in LCS.
+> Remove the extra backslash from the Principal username cofiguration value in the .json file before entering in the LCS UI. For example, contoso\\\\AXServiceUser should be entered as contoso\AXServiceUser in LCS.
 
 **Application certificate settings**
 
@@ -101,7 +98,7 @@ The following tables provide information about configuration settings. Use the *
 | The thumbprint of the Data Encryption certificate.                             | components.(AOS).parameters.database.dataEncryptionCertificateThumbprint.value              |
 | The thumbprint of the Data Signing certificate.                                | components.(AOS).parameters.database.dataSigningCertificateThumbprint.value                 |
 | The thumbprint of the Session Authentication certificate.                      | components.(FinancialReporting).parameters.sessionAuthenticationCertificateThumbprint.value |
-| The thumbprint of the SSL vertificate used for WCF/SOAP support.               | components.(AOS).parameters.infrastructure.sslCertificateThumbprint.value                   |
+| The thumbprint of the SSL certificate used for WCF/SOAP support.               | components.(AOS).parameters.infrastructure.sslCertificateThumbprint.value                   |
 | The thumbprint used by the Management Reporter to communicate with AX service. | components.(FinancialReporting).parameters.tokenSpec.certThumbprint.value                   |
 
 
@@ -135,3 +132,6 @@ The following instructions provide information about how to update or redeploy y
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

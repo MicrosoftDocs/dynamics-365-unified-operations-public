@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
@@ -504,7 +501,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 <li>ISO20022 Direct debit payment format for Italy</li>
 <li>RIBA collection remittance format for Italy</li>
 <li>Domestic tax transactions report for Italy</li>
-<li>Blacklist report for Italy</li>
+<li>Blocklist report for Italy</li>
 <li>Modello770 report for Italy</li>
 <li>Yearly tax communication report for Italy</li>
 </ul>
@@ -951,3 +948,6 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 ## Additional resources
 
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

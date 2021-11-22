@@ -1,31 +1,12 @@
 ---
-# required metadata
-
 title: ControlMetadata type
 description: Interface for the metadata of a control. Overriding control metadata can modify a controls&#x27; look and behavior.
-author: shadykdc
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
+ms.author: tfehr
 ---
 
 # ControlMetadata type
@@ -84,24 +65,24 @@ Description of the control.
 Editable: boolean (optional) 
 
 Boolean indicating if the control is editable.
-False when either the control or it's parent is not editable.
-True when both the control and it's parent are editable.
-True when either the control or it's parent is editable and the other is undefined.
-Undefined if both the control's edit-ability and it's parent's edit-ability is undefined.
+False when either the control or its parent is not editable.
+True when both the control and its parent are editable.
+True when either the control or its parent is editable and the other is undefined.
+Undefined if both the control's edit-ability and its parent's edit-ability is undefined.
 
 
 ### ExtType
 
 ExtType: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#controltype) (optional) 
 
-The extended control type. E.g. a control of type Input might have an extended type of Barcode.
+The extended control type. For example, a control of type Input might have an extended type of Barcode.
 
 
 ### HelpText
 
 HelpText: string (optional) 
 
-The keyboard shortcut for a command. E.g. "(Shift+F5)"
+The keyboard shortcut for a command. For example, "(Shift+F5)"
 
 
 ### Hidden
@@ -122,7 +103,7 @@ Identification string for a control.
 
 Label: string (optional) 
 
-Label for a control. E.g. a control representing a person's first name might have a label "First Name".
+Label for a control. For example, a control representing a person's first name might have a label "First Name".
 
 
 ### Name
@@ -146,3 +127,6 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 String indicating the control type.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

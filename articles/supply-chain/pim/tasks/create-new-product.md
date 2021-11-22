@@ -3,12 +3,10 @@
  
 title: Create a new product
 description: This topic describes how to create a new shared product. 
-author: ShylaThompson
-manager: AnnBe 
+author: t-benebo
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a new product
 
@@ -46,3 +43,6 @@ This topic describes how to create a new shared product. It is usually carried o
 3. In the **Tracking dimension group** field, enter or select a value. The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.  
 4. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

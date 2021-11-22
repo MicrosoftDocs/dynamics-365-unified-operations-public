@@ -4,11 +4,9 @@
 title: Delivery slips (Brazil)
 description: You can post a delivery slip for a sales order that has multiple sales order lines that have a delivery Código Fiscal de Operações e Prestações (CFOP) code. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -74,3 +71,6 @@ You can post a delivery slip for a sales order that has multiple sales order lin
 34. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 35. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
  
 title: Set up and generate accounts receivable aging information
 description: This guide will help you set up an aging period definition, age customer balances, and view balances in the Aged balance list and the Collections page. 
-author: mikefalkner
-manager: AnnBe 
+author: abruer
 ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsL
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -62,3 +59,6 @@ This guide will help you set up an aging period definition, age customer balance
 2. Select a customer with a balance.
 3. Expand the **Aging fact** box area to view the aged balances. The aging period definition for the fact box is taken from the default aging period definition specified in the parameters. You can change it using the Collect menu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

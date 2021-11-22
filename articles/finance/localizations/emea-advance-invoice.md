@@ -4,11 +4,9 @@
 title: Advance invoices for Eastern Europe
 description: An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. This topic provides information about advance invoices for Eastern Europe.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: CustParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272643
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
@@ -158,3 +155,6 @@ Create a purchase order, or select an existing purchase order. Click **Invoice**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

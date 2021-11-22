@@ -1,27 +1,12 @@
 ---
-# required metadata
 title: MultiLookup type
 description: Multi-Lookup control type. Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
-author: shadykdc
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
+ms.author: tfehr
 ---
 
 # MultiLookup type
@@ -172,10 +157,10 @@ getLookupPage(): [Page](view-model-ipage-ipage.md)
 isEditable(): boolean
 
 Boolean indicating if the control is editable.
-Returns false when either the control or it's parent is not editable.
-Returns true when both the control and it's parent are editable.
-Returns true when either the control or it's parent is editable and the other is undefined.
-Returns undefined if both the control's edit-ability and it's parent's edit-ability is undefined.
+Returns false when either the control or its parent is not editable.
+Returns true when both the control and its parent are editable.
+Returns true when either the control or its parent is editable and the other is undefined.
+Returns undefined if both the control's edit-ability and its parent's edit-ability is undefined.
 
 > Inherited from [Control](view-model-control-basecontrol-icontrol-icontrol.md).[isEditable](view-model-control-basecontrol-icontrol-icontrol.md#iseditable)
 
@@ -233,3 +218,6 @@ An event that is triggered when the input control's data changes.
 > Inherited from [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged)
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

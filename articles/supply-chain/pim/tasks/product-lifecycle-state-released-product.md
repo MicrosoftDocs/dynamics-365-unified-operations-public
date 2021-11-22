@@ -3,12 +3,10 @@
  
 title: Assign a product lifecycle state to a released product
 description: This procedure shows how to assign a product lifecycle state to a released product. 
-author: cvocph
-manager: AnnBe 
+author: t-benebo
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 
 ---
 # Assign a product lifecycle state to a released product
@@ -42,3 +39,6 @@ This procedure shows how to assign a product lifecycle state to a released produ
 5. In the Product lifecycle state field, enter or select a value.
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

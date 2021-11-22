@@ -4,11 +4,9 @@
 title: Dual currency
 description: This topic provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 Finance.
 author: kweekley
-manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -31,7 +28,6 @@ ms.dyn365.ops.version: 8.1
 # Dual currency
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) enables the reporting currency to be repurposed and used as a second accounting currency. This functionality is referred to as *dual currency*. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
 
@@ -181,9 +177,9 @@ In addition, major changes have been made to the depreciation process. These cha
         | Fixed asset | Book      | Transaction type | Transaction date | Currency | Amount in transaction currency | Amount  | Exch rate | Reporting currency amount |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
         | BUIL-00001  | 200\_SLLT | Acquisition      | 6/3/2016         | DKK      | 1,000,000                      | 500,000 | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - Many customers tracked their asset transaction details in workbooks. These details include the exchange rates and amounts. If you have this data in a workbook, you can create a custom exchange rate type and update it with the exchange rates from the workbook. This exchange rate type will then be used to enter a default exchange rate on the acquisition date and calculate the reporting currency amount. If an exchange rate type isn't selected, the wizard uses the exchange rate type that was defined on the ledger.
     - The exchange rate and reporting currency amounts can be changed. If the exchange rate is changed, the reporting currency amount is recalculated by using the new rate.
@@ -215,3 +211,6 @@ In General ledger consolidation, a new option has been added to consolidate eith
 -  You can now choose whether to use the accounting currency or the reporting currency from the source company as the transaction currency in the consolidation company.
 
 - The accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company, if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

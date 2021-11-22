@@ -3,28 +3,25 @@
 
 title: Fault management
 description: This topic explains fault management in Asset Management.
-author: josaw1
-manager: AnnBe
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetFaultArea, EntAssetFaultDesigner, EntAssetFaultCopyFromObjectType, EntAssetFaultRemedy, EntAssetObjectFaultRelationRequestInfoPart, EntAssetObjectFaultRelationWorkOrderInfoPart, EntAssetFaultCreateCombinations, EntAssetObjectFaultSymptom, EntAssetObjectFaultSymptomListPage, EntAssetFaultType, EntAssetFaultSymptom, EntAssetFaultCause 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -114,7 +111,7 @@ In the fault designer, you set up fault data on asset types.
 
 7. Select **Save** to save your changes.
 
-![Fault designer page](media/21-setup-for-work-orders.png)
+![Fault designer page.](media/21-setup-for-work-orders.png)
 
 ## Create fault causes
 
@@ -138,3 +135,6 @@ Follow these steps to create a list of suggestions for remedy and repair that ca
 
 > [!NOTE]
 > You can change the names of your fault symptoms, areas, types, causes, and remedies as you require. The name changes are automatically reflected in the related fault registrations.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

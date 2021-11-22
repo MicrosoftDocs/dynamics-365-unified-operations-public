@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Default offset accounts for vendor invoice journals and invoice approval journals
+title: Default offset accounts for vendor invoice and invoice approval journals
 description: This topic will help you decide where you should assign default accounts for invoice journals.
 author: abruer
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62093
 ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Default offset accounts for vendor invoice journals and invoice approval journals
+# Default offset accounts for vendor invoice and invoice approval journals
 
 [!include [banner](../includes/banner.md)]
 
@@ -103,3 +100,6 @@ Use the following table to help decide where you should assign default accounts 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Credit limit adjustments
 description: This topic explains how to set up and add credit limit adjustments.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -132,3 +129,6 @@ The **Credit limit adjustments** workflows can be used to send credit limit adju
 
 > [!NOTE]
 > When you create the **Credit limit adjustments** workflow, you can set it up so that the adjustments are automatically posted after the lines are approved. Just include the **Post Journal automatically** task in the workflow.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

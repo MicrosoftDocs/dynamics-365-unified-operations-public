@@ -4,11 +4,9 @@
 title: Production feedback
 description: This article provides information about production feedback, which gives workers feedback about production jobs. The article includes information about the various ways that production feedback can be updated.
 author: johanhoffmann
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, Pro
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 19351
 ms.assetid: bcc9e242-b4b8-4144-b14d-c3c106fb40ec
@@ -40,3 +37,6 @@ Production feedback gives workers feedback about production jobs. It records tim
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

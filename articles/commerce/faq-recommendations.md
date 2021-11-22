@@ -4,11 +4,9 @@
 title: Product recommendations FAQ
 description: This topic provides information about processes and tools that you can use to troubleshoot issues that are related to product recommendations or their results.
 author: bebeale
-manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -75,7 +72,7 @@ If you must block an item from being discovered in the store, you must change th
 
 ## How do I add a list to an e-Commerce page?
 
-For information about how to add product recommendation pages to your e-Commerce website, see [Add product recommendation lists to pages](add-reco-list-to-page.md).
+For information about how to add product recommendation pages to your e-Commerce website, see [Add product recommendation lists to pages](./product-recommendations.md).
 
 ## How do I enable recommendations on POS?
 
@@ -85,13 +82,15 @@ After enabling product recommendations, you will need to add the recommendations
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
 [Enable product recommendations](enable-product-recommendations.md)
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
 [Add product recommendations on POS](product.md)
 
@@ -102,3 +101,6 @@ After enabling product recommendations, you will need to add the recommendations
 [Manually create curated recommendations](create-editorial-recommendation-lists.md)
 
 [Create recommendations with demo data](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

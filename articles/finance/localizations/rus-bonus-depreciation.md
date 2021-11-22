@@ -4,11 +4,9 @@
 title: Depreciation bonuses (Russia)
 description: This topic provides information about depreciation bonuses for Russian fixed assets.
 author: anasyash
-manager: AnnBe
-ms.date: 10/28/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -47,9 +44,12 @@ You can calculate a depreciation bonus by reducing the value of an asset through
 3. In the **Depreciation bonus** field, enter a unique identifier for the depreciation bonus allowance. In the **Description** field, enter a description.
 4. In the **Depreciation bonus percent** field, enter the percentage of the depreciation bonus.
 
+> [!NOTE]
+> Depreciation bonuses can be used when you create a Fixed asset journal line for the **Putting into operation** transaction type. For more information, see [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md). When you post the Fixed asset journal, the system fills in the **Depreciation bonus** field in the fixed asset transaction of the **Putting into operation** transaction type. This information is then used when depreciation is calculated. 
+
 ## Calculate a depreciation bonus
 
-The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets.
+The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets. Use the following procedure to fill in the depreciation bonus fields for all fixed asset transactions of the **Putting into operation** transaction type at the same time by using a filter that you set. 
 
 1. Select **Fixed assets (Russia)** \> **Periodic** \> **Depreciation bonus initialization**.
 2. In the **Value model** field, select a model for the depreciation bonus.
@@ -78,3 +78,6 @@ Use the **All customers** page to affiliate a customer with an intercompany. If 
 - [Set up depreciation (Russia)](rus-depreciation-setup.md)
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)
 - [Calculate depreciation for Russia](rus-depreciation-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

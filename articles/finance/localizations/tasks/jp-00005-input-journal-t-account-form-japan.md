@@ -4,11 +4,9 @@
 title: JP-00005 Input journal in T account form (Japan)
 description: In Japan, the T-account format is commonly used to input journal entries. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransD
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -58,3 +55,6 @@ This task uses the JPMF demo company data.
 16. Close the page.
 17. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

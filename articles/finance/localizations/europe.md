@@ -4,11 +4,9 @@
 title: Europe overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Europe. 
 author: ShylaThompson
-manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -47,6 +44,7 @@ This topic includes information and links to resources that can help you set up 
 - [EU Sales list reporting](emea-eu-sales-list.md)
 - [Exchange rate adjustments](emea-exchange-rate-adjustments.md)
 - [File formats for methods of payment](emea-select-file-formats-for-the-method-of-payments.md)
+- [Finance (Globalization) guidance about Brexit impact](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Fiscal service (ESR) integration](emea-fiscal-service-integration.md)
 - [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generate a transfer document for an internal inventory transfer](tasks/transfer-document-internal-inventory-transfer.md)
@@ -71,6 +69,7 @@ This topic includes information and links to resources that can help you set up 
 - [Invoice processing](emea-invoice-processing.md)
 - [Issue an EU entry certificate](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Supported standards for electronic invoicing](emea-oioubl-standards-electronic-invoicing.md)
+- [Forced electronic invoices generation](emea-eur-forced-einvoices.md)
 - [Original invoice reference (Eastern Europe)](tasks/ee-00004-original-invoice-reference.md)
 - [Party search using VAT ID](tasks/eur-00015-party-search-vat-id.md)
 - [Payment reference generation tool](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -100,9 +99,12 @@ This topic includes information and links to resources that can help you set up 
   - [Create and submit VAT report](tasks/create-submit-vat-report.md)
   - [View transactions on settlement for Eastern Europe](emea-transactions-settlement-form.md)
   - [Tax point date (Date of VAT register)](emea-tax-point-date.md)
+- [Financial reason feature extension](emea-financial-reason.md)
 
 ## Additional resources
 
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

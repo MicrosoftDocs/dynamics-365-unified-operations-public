@@ -4,11 +4,9 @@
 title: FR-00004 Post re-draw bill of exchange journal
 description: This procedure walks you through posting a re-draw bill of exchange. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransCustBillOfExchange, CustOp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
@@ -56,3 +53,6 @@ You should have a role of Accounts receivable clerk to complete this procedure.
 14. Go to Accounts receivable > Inquiries and reports > Payments > Bill of exchange journal.
     * Verify that Status for the newly posted journal should be Redrawn. If it is, then the process is complete.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

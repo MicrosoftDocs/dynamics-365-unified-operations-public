@@ -1,24 +1,17 @@
 ---
-# required metadata
-
 title: Class extension model in X++
 description: This article describes the new class extension model in X++.
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 89563
 ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
@@ -41,11 +34,11 @@ Because over-layering is a very intrusive feature, we recommend that you not use
 ## The effective class concept
 It's useful to have a term for a class that consists of the public members of the augmented artifact and all the public members of all the class extensions that augment that artifact. This class is called the effective class in a given model. The following illustration shows an artifact, **MyArtifact**, that is defined in a base model, **MyModel**, and two dependent models that have extension classes for **MyArtifact**.
 
-[![Artifact MyArtifact that is defined in base model MyModel, and two dependent models that have extension classes for MyArtifact](./media/extensions-11.png)](./media/extensions-11.png)
+[![Artifact MyArtifact that is defined in base model MyModel, and two dependent models that have extension classes for MyArtifact.](./media/extensions-11.png)](./media/extensions-11.png)
 
 In this example, the effective class is the class in the extension models that contains all the original methods and all the public artifacts from the extension classes. The effective class isn't the same in every model because it includes only the class extensions that are defined in a given model. The following illustration shows the effective class of **MyArtifact** in the **MyExtensionModel** model.
 
-[![Effective class of MyArtifact in MyExtensionModel](./media/extensions-21.png)](./media/extensions-21.png)
+[![Effective class of MyArtifact in MyExtensionModel.](./media/extensions-21.png)](./media/extensions-21.png)
 
 We will describe class extensions by using a class that is named **MyClass** in a model that is named **MyModel**.
 
@@ -197,3 +190,6 @@ final class MyClass_Extension
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

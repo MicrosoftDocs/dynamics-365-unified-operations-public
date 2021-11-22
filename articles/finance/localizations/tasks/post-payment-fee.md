@@ -4,11 +4,9 @@
 title: Generate and post payment fee
 description: This task walks you through generating and posting a payment fee for Japan. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendTableLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -51,3 +48,6 @@ This task was created using the demo data company JPMF.
     * You can also try to change the amount of payment, third party bank account, or the bank account to see that different combinations of these fields will result in a different payment fee amount.  
 10. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

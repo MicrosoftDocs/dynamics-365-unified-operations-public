@@ -4,11 +4,9 @@
 title: Glossary
 description: This glossary defines key terms and concepts in Finance and Operations apps.
 author: tonyafehr
-manager: AnnBe
 ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
@@ -654,3 +651,6 @@ A person who assumes the role of an employee or a contractor and is paid in exch
 ###### **workspace**
 
 A page that provides an overview of one of the activities that the user performs. The page uses tiles, lists, and charts to display pending work and related data from multiple sources, and the page surfaces frequent tasks related to this data. Tiles shown in the summary section of the workspace are also displayed in the related section in the dashboard.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

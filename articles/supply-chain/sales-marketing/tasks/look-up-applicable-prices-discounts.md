@@ -3,12 +3,10 @@
  
 title: Look up applicable prices and discounts
 description: This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order. 
-author: omulvad
-manager: AnnBe 
+author: Henrikan
 ms.date: 11/10/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,13 +14,12 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -64,3 +61,6 @@ Make sure the Customer account field contains customer number US-001
     * There are two line discount agreements for product T0012, specifying a 5 percent discount for an order line quantity from 1 to 10, and 7 percent discount for order quantities above 10. Note that the discounts are applied to a group of products, in this example, Group code 01, of which product T0012 is a member.  
 4. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

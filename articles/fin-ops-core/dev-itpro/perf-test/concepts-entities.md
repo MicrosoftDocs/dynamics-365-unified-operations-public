@@ -1,30 +1,25 @@
 ---
 
 title: Entities in the Acceptance test library
-description: This topics discusses the test entity class that represents data and associated behavior.
+description: This topic discusses the test entity class that represents data and associated behavior.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -32,8 +27,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Entities in the Acceptance test library
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 A test entity class represents data and behavior that are perceived as a single concept. Test entity classes are based on pages such as **Sales order**, **Transfer order**, and **Released product**. The test entity classes expose the properties that are most often used in test scenarios, and the behavior that is most important from the perspective of test data setup and scenario tests.
 
@@ -299,3 +292,6 @@ public AtlQueryWHSLoadLines lines()
 ## Additional resources
 
 [Queries in the Acceptance test library](concepts-queries.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

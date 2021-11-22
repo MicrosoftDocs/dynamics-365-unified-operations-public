@@ -4,11 +4,9 @@
 title: Malaysia overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Malaysia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -44,8 +41,12 @@ This topic provides links to documentation resources for Malaysia.
 - [Print GST tax invoices](tasks/my-00005-print-gst-tax-invoices.md)
 - [Self-billed invoices](tasks/my-00007-self-billed-invoices.md)
 - [Set up GST relief clauses](tasks/my-00006-01-gst-relief-clauses.md)
+- [SST-02 declaration for Malaysia](apac-mys-sst-declaration.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/malaysia.html)
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

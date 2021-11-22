@@ -3,12 +3,10 @@
 
 title: Depreciation methods and conventions
 description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBook
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -40,7 +37,7 @@ You can select various depreciation methods and conventions. The purpose of the 
 
 If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected. The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.
 
-For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over 3 1/2 years. If you change the last depreciation run date during the 3 1/2 years, the last year of depreciation moves out the number of periods affected. If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.
+For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over three-and-a-half years. If you change the last depreciation run date during the three-and-a-half years, the last year of depreciation moves out the number of periods affected. If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.
 
 You can select from the following depreciation conventions.
 
@@ -54,12 +51,12 @@ You can select from the following depreciation conventions.
 -   Half year (next year)
 
 You can select from the following depreciation methods.
--   Straight line service life
+-   Straight0-line service life
 -   Reducing balance
 -   Manual
 -   Factor
 -   Consumption
--   Straight line life remaining
+-   Straight-line life remaining
 -   200% reducing balance
 -   175% reducing balance
 -   150% reducing balance
@@ -69,12 +66,11 @@ You can select from the following depreciation methods.
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[Straight-line service life depreciation](Straight-line-service-life-depreciation.md)
 
 [Reduce balance depreciation](reduce-balance-depreciation.md)
 
@@ -84,7 +80,7 @@ Additional resources
 
 [Consumption depreciation](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[Straight-line life remaining depreciation](straight-line-life-remaining-depreciation.md)
 
 [125 percent reducing balance depreciation](125-percent-reducing-balance-depreciation.md)
 
@@ -96,3 +92,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
  
 title: Create a schedule for a site
 description: This procedure shows how to schedule production orders that are not yet started for a site. 
-author: ShylaThompson
-manager: AnnBe 
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a schedule for a site
 
@@ -59,3 +56,6 @@ This procedure shows how to schedule production orders that are not yet started 
 4. Click Materials.
     * On this page, you can see the estimated material consumption for the operations on the production order and the current available inventory.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Customer orders in Modern POS (MPOS)
-description: This topic provides information about customer orders in Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
+title: Customer orders in point of sale (POS)
+description: This topic provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,91 +16,184 @@ ms.search.form: RetailFunctionalityProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
-ms.custom: 260594
+ms.custom: ["260594", "intro-internal"]
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.dyn365.ops.version: Release 10.0.14
 
 
 ---
 
-# Customer orders in Modern POS (MPOS)
+# Customer orders in point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about customer orders in Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
+This topic provides information about how to create and manage customer orders in the point of sale (POS) app. Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
 
 In an omni-channel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
 
 - A customer wants products to be delivered to a specific address on a specific date.
 - A customer wants to pick up products from a store or location that differs from the store or location where the customer purchased those products.
-- A customer wants someone else to pick up products that the customer purchased.
+- A customer inside a store location wants to order products today and pick them up from the same store location on a later date.
 
-Retailers also use customer orders to minimize lost sales that stock outages might otherwise cause, because the merchandise can be delivered or picked up at a different time or place.
+Retailers can use customer orders to minimize lost sales that stock outages might otherwise cause, because the merchandise can be delivered or picked up at a different time or place.
 
 ## Set up customer orders
+Before you try to use customer order functionality in POS, make sure that you complete all the required configurations in Commerce headquarters.
 
-Here are some of the parameters that can be set on the **Commerce parameters** page to define how customer orders are fulfilled:
+### Configure modes of delivery
 
-- **Default deposit percentage** – Specify the amount that the customer must pay as a deposit before an order can be confirmed. The default deposit amount is calculated as a percentage of the order value. Depending on privileges, a store associate might be able to override the amount by using **Deposit override**.
-- **Cancellation charge percentage** – If a charge will be applied when a customer order is canceled, specify the amount of that charge.
-- **Cancellation charge code** – If a charge will be applied when a customer order is canceled, that charge will be reflected under a charge code on the sales order. Use this parameter to define the cancellation charge code.
-- **Shipping charge code** – Retailers can charge an extra fee for shipping merchandise to a customer. The amount of that shipping charge will be reflected under a charge code on the sales order. Use this parameter to map the shipping charge code to shipping charges on the customer order.
-- **Refund shipping charges** – Specify whether shipping charges that are associated with a customer order are refundable.
-- **Maximum amount without approval** – If shipping charges are refundable, specify the maximum amount of shipping charge refunds across return orders. If this amount is exceeded, manager override is required in order to continue with the refund. To accommodate the following scenarios, a refund of shipping charges can exceed the amount that was originally paid:
+To use customer orders, you must configure modes of delivery that the store channel can use. You must define at least one mode of delivery that can be used when order lines are shipped to a customer from a store. You must also define at least one pickup mode of delivery that can be used when order lines are picked up from the store. Modes of delivery are defined on the **Modes of delivery** page in Commerce headquarters. For more information about how to set up modes of delivery for Commerce channels, see [Define delivery modes](./configure-call-center-delivery.md#define-delivery-modes).
 
-    - Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all customers.
-    - Shipping charges are incurred for every instance of shipping. If a customer returns products multiple times, and the retailer's policy specifies that the retailer will bear the cost of return shipping charges, the return shipping charges will be more than the actual shipping charges.
+![Modes of delivery page.](media/customer-order-modes-of-delivery.png)
 
-## Transaction flow for customer orders
 
-### Create a customer order in Modern POS
+### Set up fulfillment groups
 
-1. Add a customer to the transaction.
+Some stores or warehouse locations might not be able to fulfill customer orders. By configuring fulfillment groups, an organization can specify which stores and warehouse locations are shown as options to users who create customer orders in POS. Fulfillment groups are configured on the **Fulfillment groups** page. Organizations can create as many fulfillment groups as they require. After a fulfillment group is defined, link it to a store by selecting **Fulfillment group assignment** from the **Set up** tab on the Action Pane of the **Stores** page.
+
+In Commerce version 10.0.12 and later, organizations can define whether the warehouse or warehouse and store combinations that are defined in fulfillment groups can be used for shipping, for pickup, or for both shipping and pickup. This allows for added flexibility for the business to determine which warehouses can be selected when creating a customer order for items to ship vs. which stores can be selected when creating a customer order for items to pick up. To use these configuration options, turn on the **Ability to specify locations as "Shipping" or "Pickup" enabled within Fulfillment group** feature. If a warehouse that's linked to a fulfillment group isn't a store, it can be configured only as a shipping location. It can't be used when orders for pickup are configured in POS.
+
+![Fulfillment groups page.](media/customer-order-fulfillment-group.png)
+
+### Configure channel settings
+
+When you work with customer orders in POS, you must consider some of the settings of the store channel. These settings are found on the **Stores** page in Commerce headquarters.
+
+- **Warehouse** – This field indicates the warehouse that will be used when decrementing inventory for cash and carry and customer pickup orders tied to this store. As a best practice, we encourage the use of unique warehouses for each store channel, to prevent conflicting business logic issues across stores.
+- **Shipping Warehouse** - This field indicates the warehouse that will be used when decrementing inventory for customer orders to be shipped from the selected store. If the feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** has been enabled in your environment, POS users can choose a specific warehouse to ship from in POS, instead of choosing a store to ship from. Therefore, when that feature is enabled, the shipping warehouse is no longer utilized, since the user will pick the specific warehouse to ship the order from when the order is created.
+- **Fulfillment group assignment** – Select this button (on the **Set up** tab on the Action Pane) to link the fulfillment groups that are referenced to show options for pickup locations or shipment origins when customer orders are created in POS.
+- **Use destination-based tax** – This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
+- **Use customer-based tax** – This option indicates whether the tax group that is defined for the customer's delivery address is used to tax customer orders that are created in POS for shipment to the customer's home.
+
+![Store channel setup on the Stores page.](media/customer-order-all-stores.png)
+
+### Set up customer order parameters
+
+Before you try to create customer orders in POS, you must configure the appropriate parameters in Commerce headquarters. These parameters can be found on the **Customer orders** tab of the **Commerce parameters** page.
+
+- **Default order type** – You can specify the order type that is assigned by default to customer orders that are created in POS. These customer orders can be either sales orders or quotation orders. Regardless of the default order type, users can still create both sales orders and customer orders from POS.
+- **Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed. Depending on their privileges, store associates might be able to override the amount by using the **Deposit override** operation in POS, if that operation is configured for the transaction screen layout.
+- **Pickup mode of delivery** – Specify the mode of delivery that should be applied to sales order lines that are configured for pickup in POS.
+- **Carryout mode of delivery** – Specify the mode of delivery that should be applied to sales order lines that are considered carryout order lines when a mixed cart is created, where some lines will be picked up or shipped, and other lines will be carried out by the customer immediately.
+- **Cancellation charge percentage** – If a charge should be applied when a customer order is canceled, specify the amount of that charge.
+- **Cancellation charge code** – Specify the Accounts receivable charge code that should be used when a cancellation charge is applied to canceled customer orders through POS. The charge code defines the financial posting logic for the cancellation charge.
+- **Shipping charge code** – If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users will be prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an Accounts receivable charge code that will be applied to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
+- **Use advanced auto charges** – Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can be used to calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omni-channel advanced auto charges](./omni-auto-charges.md).
+
+![Customer orders tab on the Commerce parameters page.](media/customer-order-parameters.png)
+
+### Update transaction screen layouts in POS
+
+Make sure that the POS [screen layout](./pos-screen-layouts.md) is configured to support the creation and management of customer orders, and that all required POS operations are configured. Here are some of the POS operations that are recommended to correctly support customer order creation and management:
+- **Ship all products** – This operation is used to specify that all lines in the transaction cart will be shipped to a destination.
+- **Ship selected products** – This operation is used to specify that selected lines in the transaction cart will be shipped to a destination.
+- **Pick up all products** – This operation is used to specify that all lines in the transaction cart will be picked up from a selected store location.
+- **Pick up selected products** – This operation is used to specify that selected lines in the transaction cart will be picked up from a selected store location.
+- **Carry out all products** – This operation is used to specify that all lines in the transaction cart will be carried out. If this operation is used in POS, the customer order will be converted to a cash-and-carry transaction.
+- **Carryout out selected products** – This operation is used to specify that selected lines in the transaction cart are being carried out by the customer at the time of purchase. This operation is useful only in a [hybrid order](./hybrid-customer-orders.md) scenario.
+- **Recall order** – This operation is used to search and retrieve customer orders so that POS users can edit, cancel, or perform fulfillment-related operations on them as required.
+- **Change mode of delivery** – This operation can be used to quickly change the mode of delivery for lines that are already configured for shipment, without requiring that users go through the "ship all products" or "ship selected products" flow again.
+- **Deposit override** – This operation can be used to change the deposit amount that the customer will pay for the selected customer order.
+
+![Operations on the POS transaction screen.](media/customer-order-screen-layout.png)
+
+## Work with customer orders in POS
+
+> [!NOTE]
+> Revenue recognition functionality isn't currently supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition shouldn't be added to orders created in Commerce channels. 
+
+### Create a customer order for products that will be shipped to the customer
+
+1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
-3. Click **Create customer order**, and then select the order type. The order type can be either **Customer order** or **Quote**.
-4. Click **Ship selected** or **Ship all** to ship the products to an address on the customer account, specify the requested shipping date, and specify shipping charges.
-5. Click **Pick up selected** or **Pick-up all** to select products that will be picked up from the current store or a different store on a specific date.
-6. Collect the deposit amount, if a deposit is required.
+3. Select **Ship selected** or **Ship all** to ship the products to an address on the customer account.
+4. Select the option to create a customer order.
+5. Confirm or change the "ship from" location, confirm or change the shipping address, and select a shipping method.
+6. Enter the customer's desired order shipment date.
+7. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
+8. If the full order total wasn't paid, enter a credit card that will be captured for the balance that is due on the order when it's invoiced.
+
+### Create a customer order for products that the customer will pick up
+
+1. On the POS transaction screen, add a customer to the transaction.
+2. Add products to the cart.
+3. Select **Pick up selected** or **Pick up all** to initiate the order pick up configuration.
+4. Select the store location where the customer will pick up the selected products.
+5. Select a date when the item will be picked up.
+6. Use the payment functions to pay for any calculated amounts that are due, or use the **Deposit override** operation to change the amounts that are due, and then apply payment.
+7. If the full order total wasn't paid, select whether the customer will provide payment later (at pick up), or whether a credit card will be tokenized now, and then used and captured at the time of pickup.
 
 ### Edit an existing customer order
 
-1. On the home page, click **Find an order**.
-2. Find and select the order to edit. At the bottom of the page, click the **Edit**.
+Retail orders that are created in either the online or store channel can be recalled and edited through POS as required.
 
-### Pick up an order
+> [!IMPORTANT]
+> Not all retail orders can be edited through the POS application. Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in Commerce headquarters.
 
-1. On the home page, click **Find an order**.
-2. Select the order to pick up. At the bottom of the page, click **Picking and packing**.
-3. Click **Pick up**.
+> [!NOTE]
+> We recommend that you don't edit orders and quotations in POS that are created by a non-call center user in Commerce headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine will re-price them.
 
-### Cancel an order
 
-1. On the home page, click **Find an order**.
-2. Select the order to cancel. At the bottom of the page, click **Cancel**.
+In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature is not enabled, or if you're using version 10.0.16 or earlier, users will only be able to edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. The option to disable this capability for specific stores can be configured through the **Functionality profile** under the **General** FastTab.
 
-### Create a return order
 
-1. On the home page, click **Find an order**.
-2. Select the order to return, select the invoice for the order, and then select the product line for the merchandise to return.
-3. At the bottom of the page, click the **Return order**.
+1. Select **Recall order**.
+2. Use **Search** to enter filters to find the order, and then select **Apply**.
+3. Select the order in the list of results, and then select **Edit**. If the **Edit** button is unavailable, the order is in a state where it can't be edited.
+4. From the transaction cart, make any necessary changes to the customer order. Some changes might be prohibited during editing.
+5. Complete the editing process by selecting a payment operation.
+6. To exit the editing process without saving any changes, you can use the **Void transaction** operation.
+
+#### Pricing impact when orders are edited
+
+When orders are placed in POS or on a Commerce e-commerce site, customers commit to an amount. This amount includes a price, and it might also include a discount. A customer who places an order and then contacts the call center later to change that order (for example, to add another item) will have specific expectations about the application of discounts. Even if the promotions on the existing order lines have expired, the customer will expect the discounts that were originally applied to those lines to remain in effect. However, if no discount was in effect when the order was originally placed, but a discount has gone into effect since then, the customer will expect the new discount to be applied to the changed order. Otherwise, the customer might just cancel the existing order and then create a new order where the new discount is applied. As this scenario shows, prices and discounts that customers have committed to must be preserved. At the same time, POS and call center users must have the flexibility to recalculate prices and discounts for sales order lines as required.
+
+When orders are recalled and edited in POS, the prices and discounts of the existing order lines are considered "locked." In other words, they don't change, even if some order lines are canceled or changed, or new order lines are added. To change the prices and discounts of existing sales lines, the POS user must select **Recalculate**. The price lock is then removed from the existing order lines. However, before the Commerce version 10.0.21 release, this capability wasn't available in the call center. Instead, any changes to order lines caused prices and discounts to be recalculated.
+
+In the Commerce version 10.0.21 release, a new feature that is named **Prevent unintentional price calculation for commerce orders** is available in the **Feature management** workspace. This feature is turned on by default. When it's turned on, a new **Price locked** property is available for all e-commerce orders. After order capture is completed for orders that are placed from any channel, this property is automatically enabled (that is, the checkbox is selected) for all the order lines. The Commerce pricing engine then excludes those order lines from all price and discount calculations. Therefore, if the order is edited, the order lines will be excluded from the pricing and discount calculation by default. However, call center users can disable the property (that is, clear the checkbox) for any order line and then select **Recalculate** to include the existing order lines in the pricing calculations.
+
+Even when they are applying a manual discount to an existing sales line, call center users must disable the **Price locked** property of the sales line before they apply the manual discount.
+
+Call center users can also disable the **Price locked** property for order lines in bulk by selecting **Remove price lock** in the **Calculate** group on the **Sell** tab on the Action Pane of the **Sales order** page. In this case, the price lock is removed from all order lines except lines that are non-editable (in other words, lines that have a status of **Partially invoiced** or **Invoiced**). Then, after the changes to the order are completed and have been submitted, the price lock is reapplied to all the order lines.
+
+> [!IMPORTANT]
+> When the **Prevent unintentional price calculation for commerce orders** feature is turned on, the setup of trade agreement evaluation will be ignored in the pricing workflows. In other words, the trade agreement evaluation dialog boxes won't show the **Price related** section. This behavior occurs because both the trade agreement evaluation setup and the price lock feature have a similar purpose: to prevent unintentional price changes. However, the user experience for trade agreement evaluation doesn't scale well for large orders where users must select one or more order lines for repricing.
+
+> [!NOTE]
+> The **Price locked** property can be disabled for one or more selected lines only when the **Call center** module is used. The behavior of POS remains unchanged. In other words, POS user can't unlock prices for selected order lines. However, they can select **Recalculate** to remove the price lock from all existing order lines.
+
+### Cancel a customer order
+
+1. Select **Recall order**.
+2. Use **Search** to enter filters to find the order, and then select **Apply**.
+3. Select the order in the list of results, and then select **Cancel**. If the **Cancel** button is unavailable, the order is in a state where it can no longer be canceled.
+4. If cancellation charges are configured, confirm them. You can adjust the cancellation charges before you confirm them, as required. 
+5. From the transaction cart, complete the cancellation process by selecting a payment operation. If deposits that were paid exceed the cancellation charge, refund payments might be due.
+6. To exit the cancellation process without saving any changes, you can use the **Void transaction** operation.
+
+## Finalizing the customer order shipment or pickup from POS
+
+After an order is created, the items will be picked up by the customer from a store location or shipped, depending on the configuration of the order. For more information about this process, see the [store order fulfillment](./order-fulfillment-overview.md) documentation.
 
 ## Asynchronous transaction flow for customer orders
 
-Customer orders can be created from the point of sale (POS) client in either synchronous mode or asynchronous mode.
+Customer orders can be created in POS in either synchronous mode or asynchronous mode. If you notice performance issues or user delays when you create customer orders in POS, consider turning on asynchronous order creation.
 
 ### Enable customer orders to be created in asynchronous mode
 
-1. Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profile** &gt; **Functionality profiles**.
+1. In Commerce headquarters, on the **Functionality profiles** page, select the functionality profile that corresponds to the store that you want to configure.
 2. On the **General** FastTab, set the **Create customer order in async mode** option to **Yes**.
 
-When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they are pulled and inserted into Commerce by Pull (P) jobs. The corresponding sales orders are created when **Synchronize orders** is run either manually or through a batch process.
+When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they're pulled and created as retail transactions in Commerce headquarters from the Commerce Pull (P) jobs. The corresponding sales orders for the retail transactions are created when **Synchronize orders** is run either manually or through a batch process.
 
 ## Additional resources
 
 [Hybrid customer orders](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

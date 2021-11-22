@@ -4,11 +4,9 @@
 title: Generate a transfer document for an internal inventory transfer
 description: This procedure shows how to create transfer documents for goods movement inside a company. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -79,3 +76,6 @@ This procedure is intended for inventory accountants. This procedure is for a fe
 10. Click Packing slip.
 11. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Add custom fields to the point of sale (POS) Totals panel
 description: This topic explains how to add a new custom field to the Totals panel on the POS transaction screen by using the screen layout designer.
 author: mugunthanm
-manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -16,8 +14,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Retail, Operations 
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -141,16 +138,6 @@ You can find similar sample code in the Retail software development kit (SDK), a
     The overall class should look like this.
 
     ```typescript
-    /**
-     * SAMPLE CODE NOTICE
-     *
-     * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-     * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-
-     * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU  TO DO SO.
-    */
-
     import { CartViewTotalsPanelCustomFieldBase } from "PosApi/Extend/Views/CartView";
     import { ProxyEntities } from "PosApi/Entities";
 
@@ -253,3 +240,6 @@ You can find similar sample code in the Retail software development kit (SDK), a
 3. Add any item to the transaction.
 
 The custom field should appear in the **Totals** panel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

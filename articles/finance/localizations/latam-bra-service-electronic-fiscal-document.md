@@ -4,11 +4,9 @@
 title: Service electronic fiscal document for Brazil
 description: This topic provides an overview of the service electronic fiscal document.
 author: sndray
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: BrazilParameters, ConfDefGroups_BR, ConfDefGroupWizard_BR, ConfD
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269984
 ms.assetid: 46e40a3a-784f-4a1e-b185-c4b8ad63518f
@@ -106,3 +103,6 @@ When you import an electronic fiscal document for services, information about th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

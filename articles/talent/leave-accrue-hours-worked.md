@@ -4,11 +4,9 @@
 title: Accrue time off based on hours worked
 description: This topic describes how leave plans can be configured to accrue time off based on hours worked.
 author: andreabichsel
-manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -88,7 +84,7 @@ In the employee's assigned leave plans, the tier basis and type of hours is disp
 
 ## Loading data
 
-Actual hours can be imported by using the Leave and absence hours worked entity in data management. If you are using working time calendars, the import will validate that regular hours worked doesn't exceed the scheduled hours in a day defined by the calendar. The import also validates that the hours worked for a given day doesn't exceed 24 hours. 
+Actual hours can be imported by using the Leave and absence hours worked table in data management. If you are using working time calendars, the import will validate that regular hours worked doesn't exceed the scheduled hours in a day defined by the calendar. The import also validates that the hours worked for a given day doesn't exceed 24 hours. 
 
 The following information is needed to import actual hours to be used in the leave accrual process:
 
@@ -107,3 +103,6 @@ A single date can only have one of each type associated with it.
 | 000337                | 8/8/2018             | Regular               | 8                    |
 | 000337                | 8/7/2018             | Regular               | 8                    |
 | 000337                | 8/9/2018             | Regular               | 8                    |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Form I-9 verification
-description: This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
+description: This topic provides information about Form I-9 verification.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: Hcmi9DocumentInquiry, Hcmi9DocumentTypeExpireList, Hcmi9Document
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15611
 ms.assetid: d740ddb6-b8d7-4c12-b920-1f8afa25d026
@@ -54,3 +51,6 @@ You can use the document management system to upload and save signed Form I-9 do
 
 You can use the **Renew Form I-9 alarm list** report to identify employees whose Form I-9 information must be verified again. To prepare for a Bureau of Immigration and Customs Enforcement (BICE) inspection, you can use the **Form I-9** report to print Form I-9 information for all or selected employees.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

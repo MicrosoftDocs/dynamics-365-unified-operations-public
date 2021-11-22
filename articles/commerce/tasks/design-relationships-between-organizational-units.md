@@ -4,11 +4,9 @@
 title: Design the relationships between organizational units
 description: This procedure walks through how to design the relationship between organizational units. 
 author: mugunthanm
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -65,3 +62,6 @@ This procedure walks through how to design the relationship between organization
 29. Click Publish.
 30. Click Close.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

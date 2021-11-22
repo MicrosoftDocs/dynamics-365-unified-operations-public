@@ -3,12 +3,10 @@
  
 title: Generate a constrained plan
 description: This topic explains how to create a plan that takes into account both material and capacity constraints. 
-author: ShylaThompson
-manager: AnnBe 
+author: ChristianRytt
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqPlanSched   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Generate a constrained plan
 
@@ -56,3 +53,6 @@ The demo data company used to create this procedure is USMF. This procedure is i
 3. Select **OK**.
 4. Select **Planned orders**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Inventory object values
 description: This article provides information about how the values of an inventory object are calculated. 
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: InventCostOnhandItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 19111
 ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -51,7 +48,7 @@ The following example shows how the values of an inventory object and a cost obj
 
 The following table shows the calculation result for a cost object. You can view the result on the **Cost object** page.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />
@@ -87,7 +84,7 @@ The following table shows the calculation result for a cost object. You can view
 
 The following table shows the calculation result for an inventory object. You can view the result by clicking **Physical quantity** on the **Cost object** page.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="11%" />
 <col width="11%" />
@@ -140,14 +137,16 @@ The following table shows the calculation result for an inventory object. You ca
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Cost objects](cost-object.md)
 
 [Cost entries](cost-entries.md)
 
-[What's new and changed](../../fin-and-ops/get-started/whats-new-changed.md)
+[What's new and changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

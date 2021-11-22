@@ -3,28 +3,25 @@
 
 title: Purchase agreements
 description: This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
-author: mkirknel
-manager: AnnBe
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal
+ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Purchase agreements
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
 
@@ -47,8 +43,13 @@ To prevent your purchase agreement from being used and confirmed, mark the agree
 
 ## Responsible workers on purchase agreements
 
-You can identify a primary responsible worker and secondary responsible worker on the purchase agreement classification. These values will be inherited by the resulting purchase agreement. You're not required to add responsible workers to the purchase agreement, and they can be modified directly on a per case basis on the purchase agreement itself. You can't specify a secondary responsible worker without a primary responsible worker, although you don't have to have a secondary responsible worker. You can't specify the same worker as both the primary and secondary responsible worker. 
+You can identify a primary responsible worker and secondary responsible worker on the purchase agreement classification. These values will be inherited by the resulting purchase agreement. You're not required to add responsible workers to the purchase agreement, and they can be modified directly on a per case basis on the purchase agreement itself. You can't specify a secondary responsible worker without a primary responsible worker, although you don't have to have a secondary responsible worker. You can't specify the same worker as both the primary and secondary responsible worker.
 
+> [!IMPORTANT]
+> Before you can use the responsible party feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+> 
+> - **Module:** *Procurement and sourcing*
+> - **Feature name:** *Purchase agreement responsible party*
 
 ## Commitment types
 Each line in a purchase agreement is a commitment to buy something. You can use lines from multiple purchase orders (POs) to fulfill the commitment. There are four types of commitments:
@@ -106,12 +107,13 @@ If you create an intercompany PO that uses the intercompany purchase agreement i
 ## Financial dimensions on purchase agreements
 You can copy financial dimensions to document headers or to individual lines of a purchase agreement. If you change the dimensions in the agreement header or on the agreement line, the change doesn't affect any released orders, but it will be reflected on any new orders.
 
-Additional resources
---------
+## Additional resources
 
-[Create a purchase agreement](tasks/create-purchase-agreement.md)
-
-[Create a purchase release order from a purchase agreement](tasks/create-purchase-release-order-purchase-agreement.md)
+- [Create a purchase agreement](tasks/create-purchase-agreement.md)
+- [Apply a purchase agreement when creating a purchase order](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

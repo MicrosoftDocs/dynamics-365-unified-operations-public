@@ -4,11 +4,9 @@
 title: Zakat reporting
 description: People of the Islamic faith whose annual earnings exceed a level called Nisab are legally obligated to pay 2.5 percent of their earnings to the government as Zakat.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265024
 ms.search.region: Saudi Arabia
@@ -55,3 +52,6 @@ Saudi companies of all types and companies owned by nationals of the Gulf Cooper
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

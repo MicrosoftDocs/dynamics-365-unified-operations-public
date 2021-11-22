@@ -4,11 +4,9 @@
 title: Record vendor invoice and match against received quantity
 description: When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, V
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -68,3 +65,6 @@ This procedure uses the USMF demo company. The accounts payable manager or accou
 10. On the Action Pane, click Review.
 11. Click Matching details.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

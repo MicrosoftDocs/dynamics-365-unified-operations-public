@@ -4,11 +4,9 @@
 title: Electronic payment management for vendor payments (Brazil)
 description: You can make electronic payments by transferring files between a legal entity and a bank. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -44,3 +41,6 @@ You can make electronic payments by transferring files between a legal entity an
 9. Click OK.
 10. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

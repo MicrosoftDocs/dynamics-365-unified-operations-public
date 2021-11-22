@@ -4,11 +4,9 @@
 title: Track running average cost per inventory dimension
 description: An inventory dimension group is attached to every inventory item. Therefore, the running average cost price of an item is calculated based on the selected inventory dimensions that are being tracked financially.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.search.form: InventOnhandItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 75053
 ms.assetid: 68cc00f4-0f7a-4a7d-be90-8f2e0d0563d3
@@ -60,3 +57,6 @@ The running average cost price for warehouse GW and batch AAA is USD 11.20, and 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

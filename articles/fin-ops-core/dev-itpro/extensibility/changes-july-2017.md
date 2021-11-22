@@ -4,11 +4,9 @@
 title: Extensibility changes in Finance and Operations, Enterprise edition (July 2017)
 description: This is a list of extensibility features that were implemented in the (July 2017).
 author: FrankDahl
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -16,8 +14,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -910,3 +907,6 @@ The following table lists additional changes that have been made for extensibili
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
 |            WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block             |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Computed columns and virtual fields in data entities
 description: This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have.
-author: Sunil-Garg
-manager: AnnBe
-ms.date: 06/20/2017
+author: jaredha
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17891
 ms.assetid: 88d230af-7d3d-49b3-bf19-69ecf81ed751
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -61,6 +58,7 @@ The two types of unmapped fields are computed and virtual. Unmapped fields alway
 - Is controlled by custom X++ code.
 - Read and write happens through custom X++ code.
 - Virtual fields are typically used for intake values that are calculated by using X++ code and can't be replaced by computed columns.
+- Search and filtering on virtual fields are not supported.
 
 ### Properties of unmapped fields
 
@@ -109,12 +107,12 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
 2. In Solution Explorer, right-click the **FMCustomerEntity** node, and then click **Open**.
 3. In the designer for **FMCustomerEntity**, right-click the **Fields** node, and then click **New** &gt; **String Unmapped Field**.
 
-    [![Creating a new string unmapped field](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
+    [![Creating a new string unmapped field.](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
 
 4. Rename the new field **NameAndAddress**.
 5. Update properties of the **NameAndAddress** unmapped field, as shown in the following screenshot.
 
-    [![Updating the properties of the NameAndAddress unmapped field](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
+    [![Updating the properties of the NameAndAddress unmapped field.](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
 
 6. Go to **FMCustomerEntity** &gt; **Methods**. Right-click the **Methods** node, and then click **New**. Ensure that the method name matches the **DataEntityView Method** property value of the unmapped computed field.
 7. Paste the following X++ code into the method. The method returns the combined and formatted **NameAndAddress** value.
@@ -170,7 +168,7 @@ In this example, you add a virtual field to the **FMCustomerEntity** entity. Thi
 2. In the properties pane for the unmapped field, set the **Name** property to **FullName**.
 3. Set the **Is Computed Field** property to **No**. Notice that you leave the **DataEntityView Method** empty.
 
-    [![Setting the properties for the unmapped field](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
+    [![Setting the properties for the unmapped field.](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
 
 4. In the **FMCustomerEntity** designer, right-click the **Methods** node, and then click **Override &gt; postLoad**. Your X++ code in this method will generate the values for the virtual field.
 5. Paste the following X++ code in for the **postLoad** override. Notice that the **postLoad** method returns **void**.
@@ -240,3 +238,11 @@ The following **main** method tests your computed and virtual fields. Both field
         ttsabort;
     }
     ```
+    
+### Note on computed column generation failures
+If the X++ method that generates the SQL for a computed column throws an exception, DbSync catches the exception, **sets the value of that column to `NULL`**, and logs a *warning*.
+
+Developers are advised to check configuration keys manually in computed column methods to avoid hitting a `NULL` value, if the generation failed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

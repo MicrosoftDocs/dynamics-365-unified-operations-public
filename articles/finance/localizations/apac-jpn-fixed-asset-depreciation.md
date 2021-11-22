@@ -3,12 +3,10 @@
 
 title: Fixed asset depreciation for Japan FAQ
 description: This article answers some frequently asked questions about fixed asset depreciation for Japan.
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: AssetDepreciationProfile, AssetDepRate_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10294
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -161,3 +158,6 @@ The depreciation rate schedule that you import depends on the type of depreciati
 - [Propose special depreciation](./tasks/propose-special-depreciation.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

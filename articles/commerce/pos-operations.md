@@ -4,11 +4,9 @@
 title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
-manager: AnnBe
 ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -72,7 +69,7 @@ The following columns specify where the operations can be invoked:
 | 642 | Carry Out All Products | Set the mode of delivery for all lines to **Carryout**. | Yes | Yes | No | Yes\* | No |
 | 641 | Carry Out Selected Products | Set the mode of delivery for the selected lines to **Carryout**. | Yes | Yes | No | Yes\* | No |
 | 647 | Change mode of delivery | Change mode of delivery for preconfigured shipping sales lines. | Yes | Yes | No | No| No |
-| 1215 | Change password | This operation lets the POS user change his or her password. | Yes | Yes | Yes | No | No |
+| 1215 | Change password | This operation lets the POS user change their password. | Yes | Yes | Yes | No | No |
 | 123 | Change unit of measure | Change the unit of measure for the selected line item. | Yes | Yes | No | Yes | No |
 | 639 | Clear default sales representative on transaction | Remove the commission sales group (sales rep) from the transaction. | Yes | Yes | No | Yes | No |
 | 106 | Clear quantity | Reset the quantity on the currently selected line to **1**. | Yes | Yes | No | Yes | No |
@@ -202,6 +199,8 @@ The following columns specify where the operations can be invoked:
 | 500 | Void transaction | Void the current transaction. | Yes | Yes | No | Yes | No |
 | 916 | Windows workflow foundation | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 924 | X report for bank cards | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
+| 311 | Remove system discounts from transactions | Remove all the system applied discounts, including coupon based discounts, from the transaction. This does not remove manual discounts. | Yes | Yes | Yes | Yes | No |
+| 312 | Reapply system discounts | Reapply system discounts on the transaction if they were removed using the **Remove system discounts from transaction** operation. | Yes | Yes | Yes | Yes | No |
 
 \* The operation is available in offline mode only when a customer order or sales quotation is being created, and only if offline creation of customer orders and sales quotations is configured in the POS functionality profile. The operation can't be performed when orders are created by using Real-time Service, or when orders are recalled or edited.
 
@@ -212,3 +211,6 @@ The following columns specify where the operations can be invoked:
 § When the POS is offline, only transactions in the current offline database can be recalled for return.
 
 \*\* When the POS is offline, only transactions in the current offline channel database are shown in the journal.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

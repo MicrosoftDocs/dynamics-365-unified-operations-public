@@ -4,11 +4,9 @@
 title: Configure settlement
 description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This topic describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 author: kweekley
-manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -71,3 +68,6 @@ To avoid the additional accounting entries, the debit and credit to the same led
 
 -   Organizations often use fixed dimensions to zero-fill a financial dimension that isn't required. This is commonly the case for balance sheet accounts, such as accounts receivable/accounts payable. Account structures can be used to not track financial dimensions that are typically zero-filled.  You can remove the financial dimension for the Balance sheet accounts, eliminating the need to use fixed dimensions.
 -   If your organization requires fixed dimensions on the accounts receivable/accounts payable main account, find a way to default the fixed dimension onto the payment, so that the fixed dimension value is stored  on the vendor transaction for the payment. This will allow the system to reconstruct the accounts receivable/accounts payable main account to include the fixed dimension values. The fixed dimension value can be defined as a default on either vendors or the journal name for the payment journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
