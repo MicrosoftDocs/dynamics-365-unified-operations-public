@@ -55,7 +55,7 @@ conditions to be met before starting with the solution configuration:
     administration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started-service-administration?toc=/dynamics365/finance/toc.json)
 
 -   Business events catalog is synchronized and the periodic processing batch
-    job is running: Business events overview
+    job is running: [Business events overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page)
 
 # Getting the solution
 
