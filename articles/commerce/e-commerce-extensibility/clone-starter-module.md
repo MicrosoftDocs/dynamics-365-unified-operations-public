@@ -4,7 +4,7 @@
 title: Clone a module library module
 description: This topic describes how to clone a module library module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 11/17/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
