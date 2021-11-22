@@ -4,7 +4,7 @@
 title: Scope of the Brazilian localization
 description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
 author: sndray
-ms.date: 09/09/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -245,7 +245,7 @@ The following sections list the features that are specific to Brazil. The sectio
 ### Commerce
 
 | Item | AX 2012 R3 EPOS |  D365 CPOS / MPOS | 
-| ---- | --------------- | ----------------- |
+| ---- | :---------------: | :-----------------: |
 | Customer CPF/CNPJ on fiscal receipts | Yes | Yes |
 | File generation for Nota Fiscal Paulista | Yes | No |
 | Tax calculation according to Commerce headquarters configuration | Yes | Yes |
@@ -263,7 +263,7 @@ The following sections list the features that are specific to Brazil. The sectio
 | Issuing return NF-e in POS for sales return | Yes | Yes |
 | Issuing NF-e linked to fiscal receipt in POS | Yes | No |
 | Configurable AOS for NF-e/NFC-e messaging with SEFAZ | Yes | No |
-| The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.<br> **Note**: Because of conflicts with the PAF-ECF legislation, not all Enterprise POS operations are permitted in Brazil. For more details, see the [Retail and Enterprise POS Localization for Brazil white paper](https://www.microsoft.com/download/details.aspx?id=42938). | Yes | Yes |           
+| The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.<br><br>**Note**: Because of conflicts with the PAF-ECF legislation, not all Enterprise POS operations are permitted in Brazil. For more details, see the [Retail and Enterprise POS Localization for Brazil white paper](https://www.microsoft.com/download/details.aspx?id=42938). | Yes | Yes |           
 | Support for layout NFC-e (Nota Fiscal ao Consumidor Eletrônica) 4.0 | Yes | Yes |
 | Contingency mode: off-line | Yes | Yes |
 | Contingency mode for SP: SAT (model 59) | Yes | Yes |
