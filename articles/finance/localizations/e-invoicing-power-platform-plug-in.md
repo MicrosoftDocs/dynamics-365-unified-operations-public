@@ -120,13 +120,13 @@ To set up integration
     The user should be assigned the 'Finance and Operations Basic User' security role and a role having privileges to read/write the
     following Entities:
 
--   Electronic Invoice Action
+    -   Electronic Invoice Action
 
--   Electronic Invoice Execution
+    -   Electronic Invoice Execution
 
--   Electronic Invoice Submission
+    -   Electronic Invoice Submission
 
--   Electronic Invoice Submission Document
+    -   Electronic Invoice Submission Document
 
 # Enabling virtual entities
 
