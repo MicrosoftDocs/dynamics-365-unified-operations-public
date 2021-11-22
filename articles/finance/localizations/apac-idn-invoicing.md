@@ -522,28 +522,17 @@ You can view the submission logs for all exported documents.
 1.  Go to Organization administration \> Periodic \> Electronic documents \>
     Electronic document submission log.
 
-![submission log](media/pac-idn-rcs-submission-log.png)
+![submission log](media/apac-idn-rcs-submission-log.png)
 
 2.  Click **Update status** button.
-
 3.  On the Action Pane, select Inquiries \> Submission details to view the
     details of the submission execution logs.
 
-![Graphical user interface, application Description automatically
-    generated](media/apac-idn-rcs-submission-log.png)
+The information in the submission logs is divided among three FastTabs:
 
-    The information in the submission logs is divided among three FastTabs:
-
-    -   Processing actions – This FastTab shows the execution log for the
-        actions that are configured in the feature version that was set up in
-        RCS. The Status column shows whether the action was successfully run.
-
-    -   Action files – This FastTab shows the intermediate files that were
-        generated during execution of the actions. You can select View to
-        download and view the file.
-
-    -   Processing action log – This FastTab shows the results of the submission
-        of Electronic invoices.
+-  Processing actions – This FastTab shows the execution log for the actions that are configured in the feature version that was set up in RCS. The Status column shows whether the action was successfully run.
+-  Action files – This FastTab shows the intermediate files that were generated during execution of the actions. You can select View to download and view the file.
+-   Processing action log – This FastTab shows the results of the submission of Electronic invoices.
 
 4.  On the Action Pane, select Inquiries \> Batch submission invoices to view
     invoices that were submit in one batch.
