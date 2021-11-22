@@ -170,3 +170,5 @@ enabled in Microsoft Dataverse:
 -   BusinessDocumentTaxTableEntity
 
 -   BusinessDocumentTaxTransactionEntity
+
+-   BusinessDocumentParametersEntity
