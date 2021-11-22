@@ -4,7 +4,7 @@
 title: Create a batch job
 description: A batch job is a group of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing. 
 author: maertenm
-ms.date: 11/16/2021
+ms.date: 11/22/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -34,7 +34,7 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
 1. Go to **Navigation pane > Modules > System administration > Inquiries > Batch jobs**.
 2. Click **New**.
 3. In the **Job description** field, enter a description for the batch job.
-4. In the **Scheduled start date/time** field, enter a date and time that you want the batch job to run.
+4. In the **Scheduled start date/time** field, enter the date and time that you want the batch job to run.
 5. Click **Save**.
 
 ## Create a recurrence
