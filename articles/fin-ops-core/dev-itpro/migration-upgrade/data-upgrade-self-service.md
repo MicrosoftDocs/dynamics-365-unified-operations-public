@@ -387,7 +387,7 @@ You can use the following options to review the reports of the replication valid
 
 - **Scenario 11:** After creating the publication, if the snapshot creation fails with the following error.
 
-        ```SQL Server
+ ```
         Error messages:
         Source: Microsoft.SqlServer.Smo
         Target Site: Void PrefetchObjectsImpl(System.Type, Microsoft.SqlServer.Management.Smo.ScriptingPreferences)
@@ -401,7 +401,7 @@ You can use the following options to review the reports of the replication valid
            at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.GenerateSnapshot()
            at Microsoft.SqlServer.Replication.SnapshotGenerationAgent.InternalRun()
            at Microsoft.SqlServer.Replication.AgentCore.Run() (Source: Microsoft.SqlServer.Smo, Error number: 0)
-           ```
+  ```
   
   The message may then give examples of the stack, such as: at Microsoft.SqlServer.Management.Smo.Database.PrefetchObjectsImpl(Type objectType, ScriptingPreferences scriptingPreferences)
 
