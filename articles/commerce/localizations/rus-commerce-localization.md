@@ -71,9 +71,9 @@ Commerce functionality for Russia includes a [sample integration](./rus-fpi-samp
 |-|-|-|-|
 | Processing of cash payments using petty cash journals in Commerce headquarters | X |  |  |
 | Processing of prepayments and posting of VAT for prepayments in Commerce headquarters | X |  |  |
-| Handling of customer returns according to local requirements | X |  |  |
 | A sample of the integration of the POS with a fiscal printer | X |  |  |
 | Support of customer orders in fiscal printer integration |  | X |  |
+| Russian address format in a simplified way for retail customers |  | X |  |
 | Processing of issued gift cards as prepayments, along with related fiscal printer functionality |  | X |  |
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
