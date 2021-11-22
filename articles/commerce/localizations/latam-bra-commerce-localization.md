@@ -4,7 +4,7 @@
 title: Commerce localization for Brazil
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Brazil.
 author: akviklis
-ms.date: 06/10/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,21 +33,20 @@ This topic describes the scope of the Microsoft Dynamics 365 Commerce functional
 
 However, Commerce doesn't address all laws, regulations, or commercial requirements in Brazil, because laws and regulations vary in the way that they affect organizations. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
-To learn about POS features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
-
+To learn about point of sale (POS) features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
 
 ## Capabilities of the Commerce localization for Brazil
 
 ### Scope that is available in Brazil
 
-The following features in Commerce headquarters and the point of sale (POS) are available to Commerce customers in Brazil:
+The following features in Commerce headquarters and POS are available to Commerce customers in Brazil:
 
 - Retail product management and calculation of Brazil-specific taxes that are applicable to sales to final consumers. This feature includes an estimated tax breakdown in printed fiscal receipts.
 - Generation of NFC-e (Nota Fiscal do Consumidor eletrônica) electronic fiscal documents for retail sales (model 65), submission of the electronic fiscal documents via the government's web services, and printing of DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) NFC-e receipts.
 - Cancellation of retail sales via the government's web services within the allowed timeframe.
 - Generation of NF-e (Nota Fiscal eletrônica) electronic fiscal documents for retail returns (model 55), submission of the electronic fiscal documents via the government's web services, and printing of DANFE receipts.
 - Generation of CF-e (Cupom Fiscal eletrônico) electronic fiscal documents for retail sales in São Paulo state (model 59) and registration of the electronic fiscal documents in the SAT (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal device. For more information, see [About SAT](https://portal.fazenda.sp.gov.br/servicos/sat).
-- Electronic funds transfer (EFT) integration for the POS. This feature includes integration with Adyen payment provider (basic capabilities: support for debit and credit card payments, saving of payment-related data in sales transactions). For more information, see [Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil](latam-bra-adyen.md)
+- Electronic funds transfer (EFT) integration for the POS. This feature includes integration with the Adyen payment provider that provides basic capabilities such as support for debit and credit card payments, and the saving of payment-related data in sales transactions). For more information, see [Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil](latam-bra-adyen.md)
 - Management of Brazil-specific customer registration numbers. This feature includes capabilities for entering, viewing, and modifying CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas) tax registration numbers or Foreigner IDs, and for registering these numbers in NFC-e, NF-e, and CF-e, and printed receipts.
 - Postponed registration of electronic fiscal documents in the event of network failures (offline contingency mode), and subsequent transmission of electronic fiscal documents in contingency from Commerce headquarters.
 - Control of electronic fiscal documents in Commerce headquarters. This feature includes capabilities for discarding the documents and registering a cancellation by substitution.
@@ -69,7 +68,7 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 ## Availability of Commerce localization features for Brazil
 
 | Feature                                                                        | Released | May be added in feature releases | Not planned |
-|--------------------------------------------------------------------------------|----------|----------------------------------|-------------|
+|--------------------------------------------------------------------------------|:----------:|:----------------------------------:|:-------------:|
 | Retail product management, and tax setup and calculation                       | X        |                                  |             |
 | NFC-e (model 65) and DANFE for retail sales                                    | X        |                                  |             |
 | Communication with SEFAZ                                                       | X        |                                  |             |
