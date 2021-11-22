@@ -62,7 +62,7 @@ To configure the Dynamics 365 Payment Connector for Adyen in Commerce POS for Br
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Payment methods \> Card processors**.
 1. Create a record, and enter the CNPJ number for the card processor acquiring company.
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
-1. Specify the card processor CNPJ number that you entered earlier for the desired electronic payment types. You must select a payment system.
+1. Specify the card processor CNPJ number that you entered earlier for the required electronic payment types. You must select a payment system.
 1. Select **Electronic payment setup** to add the electronic payment types that you created earlier to your store's payment methods.
 
 ## Additional resources
