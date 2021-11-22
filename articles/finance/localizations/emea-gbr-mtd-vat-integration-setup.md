@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with HMRC's MTD VAT web service
 description: This topic explains how to set up Making Tax Digital for value-added tax (MTD VAT) in the United Kingdom (UK).
 author: liza-golub
-ms.date: 11/18/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -285,7 +285,7 @@ If your company must report a VAT return as a VAT group, make sure that all the 
 
     ![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
     
-For more information about how to populate records from multiple companies in EM, see [Populate records from multiple companies](../finance/general-ledger/electronic-messaging-setup.md#multiple-companies-populate).
+For more information about how to populate records from multiple companies in EM, see [Populate records from multiple companies](../general-ledger/electronic-messaging-setup.md#multiple-companies-populate).
 
 ## <a id="sequences"></a>Set up number sequences for Electronic messages functionality
 
