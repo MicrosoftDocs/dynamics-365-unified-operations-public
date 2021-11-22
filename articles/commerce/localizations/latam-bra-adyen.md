@@ -44,7 +44,7 @@ The following Brazil-specific features of the Dynamics 365 Payment Connector for
 
 ## Dual-purpose cards
 
-Dual-purpose cards (cards that are both debit cards and credit cards) are common in Brazilian retail. When customers pay by card at a store, they select whether they prefer to pay by debit or credit. The card payment preference (debit or credit) is then registered with Adyen.
+Dual-purpose cards (in other words, cards that are both debit cards and credit cards) are common in Brazilian retail. When customers pay by card at a store, they select whether they prefer to pay by debit or credit. The card payment preference is then registered with Adyen.
 
 ## Saving of payment-related data
 
