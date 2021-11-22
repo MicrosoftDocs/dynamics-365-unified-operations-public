@@ -4,7 +4,7 @@
 title: Commerce localization for Russia
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
 author: akviklis@microsoft.com
-ms.date: 09/22/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ This topic provides an overview of the localization of Microsoft Dynamics 365 Co
 
 Because laws and regulations vary in the way that they affect organizations, Commerce doesn't address all laws, regulations, or commercial requirements in Russia. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
-To learn about POS features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
+To learn about point of sale (POS) features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
 
 ## Capabilities of Commerce localization for Russia
 
@@ -67,13 +67,13 @@ Commerce functionality for Russia includes a [sample integration](./rus-fpi-samp
 ## Availability of Commerce localization features for Russia
 
 | Feature | Released | May be added in feature releases | Not planned |
-|-|-|-|-|
+|-|:-:|:-:|:-:|
 | A sample of the integration of the POS with a fiscal printer | X |  |  |
 | Processing of cash payments using petty cash journals in Commerce headquarters | X |  |  |
 | Customer account deposit and customer order deposit prepayments | X |  |  |
 | Processing of prepayments and posting of VAT for prepayments in Commerce headquarters | X |  |  |
 | Prepayment cancellation charges | X |  |  |
-| Russian address format in a simplified way for retail customers | X |  |  |
+| Simplified Russian address format for retail customers | X |  |  |
 | Processing of issued gift cards as prepayments, along with related fiscal printer functionality |  | X |  |
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
