@@ -70,3 +70,5 @@ To configure the Dynamics 365 Payment Connector for Adyen in Commerce POS for Br
 [Dynamics 365 Payment Connector for Adyen overview](../dev-itpro/adyen-connector.md)
 
 [Set up Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector-setup.md)
+
+[Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics)
