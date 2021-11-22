@@ -73,3 +73,26 @@ The cash flow forecasting function in Cash and bank management and the Cash flow
 First, set up and enable the cash flow forecasting and liquidity accounts. For more information, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md). If this setup has been completed, but you don't see the results that you expect, see [Troubleshoot cash flow forecasting setup](../cash-bank-management/cash-flow-forecasting-tsg.md) for more information.
 
 Next, confirm that the Cash flow forecasts feature in Finance insights (**Cash and bank management \> Setup \> Finance Insights \> Cash flow forecasts**) has been enabled, and that training of the AI model has been completed. If the training hasn't been completed, select **Forecast now** to start the model training process.
+
+## Symptom: Why isn't the Install a new add-in button visible in Microsoft Dynamics Lifecycle Services?
+
+### Resolution
+
+First, verify that the **Environment Manager** or **Project Owner** role is assigned to the signed-in user in the **Project security role** field in Microsoft Dynamics Lifecycle Services (LCS). Installation of the new add-ins requires one of these project security roles.
+
+If the correct project security role is assigned to you, you might have to refresh your browser window to see the **Install new add-in** button.
+
+## Symptom: The Finance insights add-in doesn't seem to be installing. Why is that?
+
+### Resolution
+
+The following steps should have been completed.
+
+- Verify that you have **System administrator** and **System Customizer** access in the Power Portal admin center.
+- Verify that a Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
+- Verify that the following Azure AD app is registered in Azure AD: 
+
+  | Application                  | App ID           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  
