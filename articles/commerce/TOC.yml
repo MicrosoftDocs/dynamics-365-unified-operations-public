@@ -2539,7 +2539,7 @@
           - name: Debugging best practices for Dynamics 365 Commerce development
             href: e-commerce-extensibility/debugging-best-practices.md
           - name: Test e-commerce site pages for memory leaks
-            href: e-commerce-extensibility/memory-leak-detection.md 
+            href: e-commerce-extensibility/memory-leak-detection.md
       - name: Retail SDK
         items:
         - name: Migrate to the Commerce SDK
