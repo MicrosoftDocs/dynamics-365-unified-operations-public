@@ -234,7 +234,7 @@
       items: 
       - name: Export to Azue Data Lake overview
         href: data-entities/Azure-Data-Lake-GA-version-overview.md
-      - name: Configure export to Azure Data Lake
+      - name: Install Export to Azure Data Lake add-in
         href: data-entities/configure-export-data-lake.md
       - name: Finance and Operations apps in Azure Data Lake 
         href: data-entities/finance-data-azure-data-lake.md 
