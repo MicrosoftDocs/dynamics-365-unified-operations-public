@@ -71,6 +71,8 @@ The translation task lets users submit new translation requests through DTS.
 | Path to translation memory files | No | <p>The path of the TM files.</p><p>Wildcard characters are supported.</p> |
 | Output Path | Yes | The path to save the translation output to. This path is relative to your pipeline. For more information, see [Artifacts in Azure Pipelines](/azure/devops/pipelines/artifacts/build-artifacts). |
 
+\*You must either select a single target language or specify multiple target languages as part of the request.
+
 ### DTS alignment task
 
 If you have files that were previously translated, and you also have corresponding source files, you can use the Align tool to create a TM in XML Localization Interchange File Format (XLIFF).
