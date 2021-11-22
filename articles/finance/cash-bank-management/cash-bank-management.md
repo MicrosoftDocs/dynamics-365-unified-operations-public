@@ -3,7 +3,7 @@
 
 title: Cash and bank management home page
 description: You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
-author: panolte
+author: roschlom
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: 
