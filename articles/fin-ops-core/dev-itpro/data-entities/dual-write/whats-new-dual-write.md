@@ -26,7 +26,7 @@ The November 2021 release of the [Dual-write Party and Global Address Book Solut
 
 | Feature | Description |Status |
 |------|---------|-------|
-| [Single view for party](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/view-party)| We are providing a new form to access Party data. The **Party** form provides the capability to view and manage party records along with all the associated customers, contacts, and vendors and their postal addresses and electronic addresses from a single form.| General availability |
+| [Single view for party](view-party.md)| We are providing a new form to access Party data. The **Party** form provides the capability to view and manage party records along with all the associated customers, contacts, and vendors and their postal addresses and electronic addresses from a single form.| General availability |
 | Bug fix| On the **Accounts** form, postal address updates from the **Summary** tab do not synchronize, which causes a data mismatch between Microsoft Dataverse and Finance and Operations apps. | General availability |
 | Bug fix| When an electronic address is changed from non-primary to primary, the updates to telephone extension/description fields does not synchronize from msdyn_partyelectronicaddress to **Contact** table.  | General availability |
 | Bug fix| Error while updating the **Gender** field on a Contact record to "non-specific" in Finance and Operations apps. | General availability |
