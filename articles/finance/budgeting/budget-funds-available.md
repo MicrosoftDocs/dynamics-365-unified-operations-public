@@ -4,7 +4,7 @@
 title: Budget funds available feature
 description: This topic introduces the budget funds available feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 author: rcarlson
-ms.date: 11/03/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,6 +44,6 @@ Some budget control configuration settings that must be set to specific values f
 | Budget reservations for encumbrances | Actual expenditures |
 | Budget reservations for encumbrances with Purchase Requisition type documents | Budget reservations for pre-encumbrances |
 
-This feature will only affect new documents.  Existing documents will still have their amounts tracked and displayed accordingly in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated.  At that point documents that were removed from the budget funds available calcualtion will have their budget tracking data removed. 
+This feature will only affect new documents.  Existing documents will still have their amounts tracked and displayed accordingly in the budget control statistics inquiry until a budget-funds-available setting is changed and the new budget control configuration is activated.  At that point documents that were removed from the budget funds available calcualtion will have their budget tracking data removed. 
 
-It is recommended setting to keep unchecked is "Unposted actual expenditures". This will avoid an expesive budget control calcuation for unposted documents such as pending vendor invoices. 
+We recommended not marking the **Unposted actual expenditures** field on the **Define budget control parameters** page. Leaving this field unmarked will avoid an expensive budget control calcuation (in terms of the time required and the server resources used) for unposted documents, such as pending vendor invoices. 
