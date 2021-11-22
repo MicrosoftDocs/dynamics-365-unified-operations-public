@@ -4,7 +4,7 @@
 title: Install the Export to Data Lake add-in
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 11/16/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -129,7 +129,7 @@ The Data Lake Storage account will be used to store data from your Finance and O
     - **Performance**: We recommend you select **Standard**.
     - **Account kind**: You must select **StorageV2**. In the **Advanced options** dialog box, you will see the option, **Data Lake storage Gen2**.
 
-3. On the **Advanced tab**, select **Data Lake storage Gen2** \> **Hierarchical namespaces**, and then select **Enabled**. If you disable this option, **Export to Data lake** feature may fail with an error.
+3. On the **Advanced tab**, select **Data Lake storage Gen2** \> **Hierarchical namespaces**, and then select **Enabled**. If you disable this option, the **Export to Data lake** feature may fail with an error.
 4. Select **Review and create**. When the deployment is complete, the new resource will be shown in the Azure portal.
 5. In the Azure portal, select the storage account you created. Copy and save the <a name="storageaccount"></a>storage account name.
 
@@ -158,7 +158,7 @@ You need to grant your application permissions to read and write to the storage 
 
 ## <a name="createkeyvault"></a>Create a key vault
 
-A key vault is a secure way to share details such as storage account name to your Finance and Operations apps. Complete the following steps to create a key vault and a secret. We recommend that you create a Key vault for the use of Export to Data lake feature. We do not recommend using the same key vault to provide access to multiple services.
+A key vault is a secure way to share details such as storage account name to your Finance and Operations apps. Complete the following steps to create a key vault and a secret. We recommend that you create a key vault for the use of the Export to Data lake feature. We do not recommend using the same key vault to provide access to multiple services.
 
 1. In the Azure portal, select **Create a new resource** and then search for and select, **Key Vault**.
 2. In the **Create key vault** dialog box, in the **Location** field, select the datacenter where your environment is located.
