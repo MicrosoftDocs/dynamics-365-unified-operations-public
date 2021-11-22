@@ -18,28 +18,30 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently the platform provides three ways to enable batch resilency and prevent transient failures.
+This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the platform provides three ways to enable batch resiliency and prevent transient failures.
 
-## 1. Retry batch job task irrespective of error type
-We recommended to use when you want batch job task to be retried irrespective of error type. **Maximum Retry Count** specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a ready state so that it can be picked up again. 
+## Retry the batch job task, regardless of the error type
 
-1. In the **Batch jobs** page, select **Batch task details**.
-2. Go to the **General** tab.
-3. Set **Maximum retries**.
+We recommended that you use this option when you want a batch job task always to be retried, regardless of the error type. The **Maximum Retry Count** value specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a ready state so that it can be picked up again. 
 
-## 2. Retry batch job task due to transient SQL errors
-Currently, if Finance and Operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft is enabling automated retries when failures of this type occur.
+1. On the **Batch jobs** page, select **Batch task details**.
+2. On the **General** tab, set the **Maximum retries** field.
+
+## Retry the batch job task when transient SQL Server errors occur
+
+Currently, if Finance and Operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
 
 Because not all batch jobs might be idempotent (for example, when a batch runs credit card transactions), retries can't be enabled equally across all batch jobs. To help ensure that retries can safely be enabled, Microsoft has added metadata to the batch jobs to indicate whether they can automatically be retried. Between versions 10.0.18 and 10.0.19, more than 90 percent of the Microsoft batch jobs have explicitly implemented the **BatchRetryable** interface, and the **isRetryable** value has been set appropriately. For any jobs where the **BatchRetryable** interface isn't implemented, the default value of **isRetryable** is **false**.
 
-Retries are enabled only for jobs where the **BatchRetryable** interface is implemented and **isRetryable** is set to **True**. In this functionality, retries occur on any interruption of the SQL Server connection. Microsoft will continue to add retries on other exceptions.
+Retries are enabled only for jobs where the **BatchRetryable** interface is implemented and **isRetryable** is set to **True**. In this functionality, retries occur after any interruption of the SQL Server connection. Microsoft will continue to add retries on other exceptions.
 
-Maximum number of retries and the retry interval controlled by the batch framework. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (with an exponential interval time.)
+The maximum number of retries and the retry interval are controlled by the batch framework. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (with an exponential interval time.)
 
-## 3. Batch OData action capability
-It is not a direct execution retry like above two options. This provides capability to customer to add custom logic before retriggering the job. When the job execution fails, you can listen to corresponding business events and decide if the failure can be retried. Batch has exposed new **OData action** from PU46 and upon calling the end point with job ID, job will be requeued for execution.
+## Batch OData action capability
 
-For more inforamtion, see [Batch Odata API](batch-odata-api.md).
+This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. Batch has exposed a new Open Data Protocol (OData) action from Platform update 46 (PU46). When a job ID is provided in a call to the endpoint, the job will be requeued for execution.
+
+For more information, see [Batch OData API](batch-odata-api.md).
 
 ## Frequently asked questions
 
