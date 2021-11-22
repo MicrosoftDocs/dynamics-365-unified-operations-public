@@ -66,7 +66,7 @@ To initialize the base configuration data, do the following:
 2. There is a parameter to **Delete existing configuration**.  Unless you are explicitly instructed to do this, or you are working on a non-production environment where losing configuration will not create an impact, leave this set to **No**.
 
 > [!NOTE]
-> Starting with the Commerce version 10.0.24 release, the Commerce scheduler can be set to run automatically after updates to Commerce headquarters. To enable this capability in Commerce headquarters, go to **Workspaces \> Feature management** and enable the **Run "Initialize commerce scheduler" after Headquarters is updated** feature. 
+> As of the Commerce version 10.0.24 release, the Commerce scheduler can be set to run automatically after updates to Commerce headquarters. To enable this capability in Commerce headquarters, go to **Workspaces \> Feature management**, and enable the **Run "Initialize commerce scheduler" after Headquarters is updated** feature. 
 
 ## Valuable configurations
 
