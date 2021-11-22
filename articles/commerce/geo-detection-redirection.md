@@ -53,10 +53,10 @@ To enable geo redirection for your site in Commerce site builder, go to **Site s
 
 ## Initialize the Commerce scheduler
 
-To enable syncing of the country/region data you enter in Commerce headquarters, you must initialize the Commerce scheduler at **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. For more information about the Commerce scheduler, see [Update configurations](dev-itpro/cdx-best-practices.md#update-configurations). 
+To enable synchronization of the country/region data that you enter in Commerce headquarters, you must initialize the Commerce scheduler at **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. For more information about the Commerce scheduler, see [Update configurations](dev-itpro/cdx-best-practices.md#update-configurations). 
 
 > [!NOTE]
-> Starting with the Commerce version 10.0.24 release, the Commerce scheduler can be set to run automatically after updates to Commerce headquarters. To enable this capability in Commerce headquarters, go to **Workspaces \> Feature management** and enable the **Run "Initialize commerce scheduler" after Headquarters is updated** feature. 
+> As of the Commerce version 10.0.24 release, the Commerce scheduler can be set to run automatically after updates to Commerce headquarters. To enable this capability in Commerce headquarters, go to **Workspaces \> Feature management** and enable the **Run "Initialize commerce scheduler" after Headquarters is updated** feature. 
 
 ## Associate countries and regions with online stores in Commerce headquarters
 
