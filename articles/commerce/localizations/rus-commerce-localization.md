@@ -54,7 +54,6 @@ The following Russia-specific POS features are enabled after the Commerce locali
 
 - A sample integration of the POS with a fiscal printer.
 - Customer account deposit and customer order deposit prepayments.
-- Support of customer orders in fiscal printer integration.
 - Prepayments and posting of VAT for prepayments in Commerce headquarters.
 - Prepayment cancellation charges.
 - Simplified address format.
@@ -72,11 +71,11 @@ Commerce functionality for Russia includes a [sample integration](./rus-fpi-samp
 | Processing of cash payments using petty cash journals in Commerce headquarters | X |  |  |
 | Processing of prepayments and posting of VAT for prepayments in Commerce headquarters | X |  |  |
 | A sample of the integration of the POS with a fiscal printer | X |  |  |
-| Support of customer orders in fiscal printer integration |  | X |  |
 | Russian address format in a simplified way for retail customers |  | X |  |
 | Processing of issued gift cards as prepayments, along with related fiscal printer functionality |  | X |  |
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
+| Support of customer orders in fiscal printer integration |  | X |  |
 | Cash collection |  | X |  |
 | Processing of loyalty point redemptions as price discounts in retail transactions, along with related fiscal printer functionality |  | X |   |
 | Restrictions on returns of items that belong to selected item groups |  | X |  |
