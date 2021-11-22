@@ -64,7 +64,7 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
       If you have entered more than one condition, and if all conditions must be met before the dependent task can run, select a condition type of **All**. Select a condition type of **Any** if the dependent task can run after any of the conditions has been met.
 9.	Choose how to handle task failures. To ignore the failure of a specific task, on the **General** tab, select the **Ignore task failure** option for that task. If this option is selected, the failure of the task will not cause the job to fail. You can also use the **Maximum retries** field to specify the number of times that a task should be retried before it is considered to have failed. As a best practice, we recommend not to set **Maximum retries** field to more than **5**.
 
-To learn more about batch retry, see [Enable automatic retries on batch jobs](../retryable-batch.md).
+To learn more about batch retry, see [Enable batch retries](../retryable-batch.md).
 
 ## Adjust batch job status
 1. Go to **System administration > Inquiries > Batch jobs**.
