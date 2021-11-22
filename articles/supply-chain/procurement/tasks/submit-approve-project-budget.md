@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-When creating a project budget, you can enter the estimated revenues and costs for the project, and use the values to control the actual project transactions. Project budgeting requires all original budgets and revisions to go through a project workflow for approval. The workflow increases your control over the budgeting and creates a change history record. After you [create a project](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/create-a-project), use this procedure to create and submit the budget.
+When creating a project budget, you can enter the estimated revenues and costs for the project, and use the values to control the actual project transactions. Project budgeting requires all original budgets and revisions to go through a project workflow for approval. The workflow increases your control over the budgeting and creates a change history record. After you [create a project](/dynamicsax-2012/appuser-itpro/create-a-project), use this procedure to create and submit the budget.
 
 1. Go to **Modules** > **Project management and accounting** > **Projects** > **All projects**.
 1. From the projects list, select the project.
