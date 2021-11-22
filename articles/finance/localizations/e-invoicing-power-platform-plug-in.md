@@ -117,7 +117,7 @@ To set up integration
     ID - **ecd93392-c922-4f48-9ddf-10741e4a9b65:** [Create an application
     user](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user).
 
-    The user should be assigned groups having privileges to read/write the
+    The user should be assigned a security role having privileges to read/write the
     following Entities:
 
 -   Electronic Invoice Action
