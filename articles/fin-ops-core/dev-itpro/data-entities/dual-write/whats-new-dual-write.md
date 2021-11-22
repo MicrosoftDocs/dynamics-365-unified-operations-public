@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
 author: tonyafehr
-ms.date: 11/19/2021
+ms.date: 11/22/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
@@ -20,31 +20,21 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
-Check out the latest information about dual-write features and changes in the [release plans](/dynamics365/release-plans/).
+## November 2021 release of party and global address book 
 
-
-## October 2021 release  
-
-The October release of [Dual-write application orchestration solution version 2.3.1.15](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.30](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
-
-This release contains bug fixes listed in the following table.
+The November 2021 release of the [Dual-write Party and Global Address Book Solutions 3.3.0.5](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) contains the following features and bug fixes. 
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix| In customer engagement apps, on an account record, changing the relationship type from Prospect to Vendor doesn't create a vendor record.| General availability |
-| Bug fix| In customer engagement apps, on a contact record, setting IsVendor=Yes doesn’t create a vendor record.| General availability |
-| Bug fix| On the **Field Service purchase order** form, Contact Person ID is not filtered against the selected Vendor.| General availability |
-| Bug fix| When Intelligent Order Management is configured, allow order creation without specifying a company name.| General availability |
-| Bug fix| "Active Contacts" and "All Contacts" views are filtering (jump bar A, b, c, d) on the ompany field instead of full name.| General availability |
-
-This release includes changes to 2 workflow templates. In order to take these changes, you need to deactivate any existing workflow created using the older version and recreate them using the new ones.
-
-- Create Vendors in Vendors Table		
-- Create Vendors of type Person in Vendors Table
+| [Single view for party](view-party.md)| We are providing a new form to access Party data. The **Party** form provides the capability to view and manage party records along with all the associated customers, contacts, and vendors and their postal addresses and electronic addresses from a single form.| General availability |
+| Bug fix| On the **Accounts** form, postal address updates from the **Summary** tab do not synchronize, which causes a data mismatch between Microsoft Dataverse and Finance and Operations apps. | General availability |
+| Bug fix| When an electronic address is changed from non-primary to primary, the updates to telephone extension/description fields does not synchronize from msdyn_partyelectronicaddress to **Contact** table.  | General availability |
+| Bug fix| Error while updating the **Gender** field on a Contact record to "non-specific" in Finance and Operations apps. | General availability |
+| Bug fix| In Finance and Operations apps, during address creation, when a second address is marked as primary and saved, the IsPrimary value change does not reflect in Dataverse. | General availability |
 
 ## September 2021 release of party and global address book 
 
-The September 2021 hotfix release of the [Dual-write Party and Global Address Book Solutions 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The September 2021 hotfix release of the [Dual-write Party and Global Address Book Solutions 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
 
 This release contains bug fixes listed in the following table.
 
