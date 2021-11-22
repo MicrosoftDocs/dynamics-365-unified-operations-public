@@ -53,15 +53,11 @@ Implemented functionality includes the following capabilities:
 
 -   Credit invoicing layout for sales and project invoice reports​
 
-    See how to enable features in [Feature management overview - Finance &
-    Operations \| Dynamics 365
-    \|](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)
+    See how to enable features in [Feature management overview - Finance & Operations \| Dynamics 365\|](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)
     [Microsoft
     Docs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)​.
 
-2.  Enabling Electronic Invoicing for Indonesia (see Enabling Electronic
-    Invoicing for **Indonesia** section) and set up application specific
-    parameters.
+2.  Enabling Electronic Invoicing for Indonesia.
 3.  [Configure Electronic invoicing solution in Microsoft Dataverse](e-invoicing-power-platform-plug-in.md)
 
 # Tax invoice numbering
@@ -189,8 +185,7 @@ By default, the system fills in the **Tax invoice transaction code** field with
 **01**.
 
 If a user create invoice replacement then the system fills in 3rd digit of tax
-invoice number with 1. How to create invoice replacement see Invoice
-cancelation, Credit note (item returns) and invoice replacement.
+invoice number with 1. How to create invoice replacement see Invoice cancelation, Credit note (item returns) and invoice replacement.
 
 Transaction code in FTI header:
 
@@ -346,11 +341,11 @@ To generate sales invoice csv file, the Sales invoice feature setup is required.
 
 1.  On the **Electronic Invoicing features** page, on the **Setups** tab, in the **Feature setup** column, select the **Import from share point** record.
 
-   > [!Note] Previously you should create draft version of the feature (see Create a new version of the Indonesian electronic invoice (ID) feature).
+   > [!Note] Previously you should create draft version of the feature.
 
 2.  Click **Edit** to review or configure the actions, applicability rules, and variables.
 
-3.  On the **Feature version setup** page, select the **Data channel** tab and **Parameters** list, in the **Data channel** record fill in **Value** with **\$Context Channel** value from derived configuration (see Setup of processing Indonesian electronic invoice (import vendor invoices)) and fill in the other parameters. In the **Custom file name** record you can set up filter for vendor invoice file names.
+3.  On the **Feature version setup** page, select the **Data channel** tab and **Parameters** list, in the **Data channel** record fill in **Value** with **\$Context Channel** value from derived configuration and fill in the other parameters. In the **Custom file name** record you can set up filter for vendor invoice file names.
 
 4.  On the **Applicability rules** tab, in the record with **Channel** field fill in **Value** with **\$Context Channel** value from derived configuration.
 
@@ -465,7 +460,7 @@ example, if you want to import vendor invoices for different legal entities.
 12.  On **Import sources** field group click **Add** and fill in **Name**,
     **Description**.
 
- > [!Note]. In the **Name** field, set the value from Feature version setup \> **Variables** tab (see Configure the Vendor invoice feature setup).Select     one of Data entity name: **Vendor Invoice register header,** if you want importing vendor invoices in Invoice register or **Vendor invoice journal**, if you want importing vendor invoices in pending vendor invoices.
+ > [!Note]. In the **Name** field, set the value from Feature version setup \> **Variables** tab. Select one of Data entity name: **Vendor Invoice register header,** if you want importing vendor invoices in Invoice register or **Vendor invoice journal**, if you want importing vendor invoices in pending vendor invoices.
 
 13.  Select model mapping **Vendor invoice import (ID)** for import invoice
     header into Invoice register or for import into pending vendor invoices. And
@@ -483,8 +478,7 @@ items in sales orders.
 
 > [!Note]. If it is necessary to import vendor invoices, for example, into
 different legal entity, create a new Channel record with the new document
-context (derived configuration, see Setup of processing Indonesian electronic
-invoice (import vendor invoices).
+context (derived configuration.
 
 ## Process electronic invoices in Dynamics 365 Finance
 
