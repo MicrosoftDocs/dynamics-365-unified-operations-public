@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Post a project invoice with a payment slip
-description: You can post a free text invoice with a payment slip attachment in a specified format. 
+description: This topic explains how to post a project invoice with a payment slip in a specified format. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: CustTable, ProjProjectContractsListPage, ProjInvoiceTableCreate,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-You can post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
+You can post a project invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
 
 Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices. 
 
@@ -100,3 +97,6 @@ This procedure was created using the demo data company DEMF.
 56. Click OK.
 57. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
  
 title: Use the safety stock journal to update minimum coverage
 description: This procedure shows how to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals. 
-author: ChristianRytt
-manager: AnnBe 
+author: johanhoffmann
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Use the safety stock journal to update minimum coverage
 
@@ -68,3 +65,6 @@ This procedure shows how to calculate minimum coverage proposals based on histor
 5. On the **Action Pane**, click Plan.
 6. Click **Item coverage**. Notice that the **Minimum quantity** has been updated with the new minimum quantity from the safety stock journal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

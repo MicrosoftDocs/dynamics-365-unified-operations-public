@@ -4,11 +4,9 @@
 title: Organizational training Power BI content
 description: This topic describes the Finance and Operations - Organizational training Power BI content.
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263874
 ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
@@ -64,3 +61,6 @@ Application data is used to populate the reports in the Organizational training 
 | Training\_Position        | Position, title, and full-time equivalent (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | First name, last name, and full name                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Title and seniority date                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

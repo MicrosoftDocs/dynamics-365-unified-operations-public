@@ -4,11 +4,9 @@
 title: 200 percent reducing balance depreciation
 description: This article gives an overview of the 200 percent reducing balance method of depreciation.
 author: saraschi2
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
@@ -74,7 +71,7 @@ When **Fiscal** is selected as the depreciation year, the following options are 
 
 ## Example of 200% reducing balance depreciation
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Acquisition cost               | 11,000 |
 | Salvage value                  | 1, 000 |
@@ -95,3 +92,6 @@ The 200% reducing balance method divides 200 percent by the service life years.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

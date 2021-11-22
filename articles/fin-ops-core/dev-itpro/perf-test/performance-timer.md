@@ -1,24 +1,17 @@
 ---
-# required metadata
-
 title: Performance timer
 description: This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 27191
 ms.assetid: 64b8f266-a9e1-48ee-93c7-e082f21ddfa7
@@ -38,11 +31,11 @@ This topic provides an overview of the Performance timer, which is a tool that h
 
 To open the Performance timer, open your webpage with the added parameter debug=develop: https://<em>yoursite</em>.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop Note: When you run in debug mode you will notice slower performance. You can quickly get an overview of most performance issues by pressing F12 and working with the debugging tools that are available in your browser. The timer will show up here. 
 
-[![Example of timer located at top of screen](./media/timer.png)](./media/timer.png) 
+[![Example of timer located at top of screen.](./media/timer.png)](./media/timer.png) 
 
 To open a list page, for example, such as the purchase order list page, click the Performance timer. The following screenshot shows the separation between client time and server time, and the total time. Additionally, you can see a set of performance counters and expensive server calls. 
 
-[![Screen shot showing server performance counters](./media/2_timer.png)](./media/2_timer.png) 
+[![Screen shot showing server performance counters.](./media/2_timer.png)](./media/2_timer.png) 
 
 For more information about the server performance counters, click on any of the links.
 
@@ -53,12 +46,9 @@ For more information about the server performance counters, click on any of the 
 
 For more information, click a link. In the next screen, you can see how many SQL queries were triggered by this individual call and which SQL query was the most expensive. 
 
-[![Example of list of SQL queries triggered by call](./media/3_timer.png)](./media/3_timer.png) 
-
+[![Example of list of SQL queries triggered by call.](./media/3_timer.png)](./media/3_timer.png) 
 
 This information can help you to understand what to trace and where to start troubleshooting. 
 
-<!--In addition to this topic, you can watch this video for more information: [PERF The Performance Timer and Other Tools](https://mix.office.com/watch/ij5cqidra5q3)-->
 
-
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

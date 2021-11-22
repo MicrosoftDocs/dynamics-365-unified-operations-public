@@ -2,13 +2,11 @@
 # required metadata
 
 title: Requirements for publishing apps on AppSource
-description: This topic points to resources that will help you understand the requirements for creating solutions for Dynamics 365 Finance and Operations apps.
+description: This topic points to resources that will help you understand the requirements for creating solutions for Finance and Operations apps.
 author: kfend
-manager: AnnBe
 ms.date: 07/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 197023
 ms.assetid: 6a5b4272-c6f3-4747-a7bf-9664d7950dad
@@ -41,4 +38,7 @@ This topic points to resources that will help you understand the requirements fo
 -   [Database backup](database-backup-lcs-solutions.md) and [Data packages](process-data-packages-lcs-solutions.md)
 -   [Business process models](business-process-modeler-libraries-lcs-solutions.md)
 -   [Methodologies](methodologies-lcs-solutions.md)
--   [Marketing](marketing-content-lcs-solutions.md)
+-   [Marketing](/azure/marketplace/partner-center-portal/create-new-operations-offer)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

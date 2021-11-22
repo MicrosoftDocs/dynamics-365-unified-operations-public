@@ -2,13 +2,11 @@
 # required metadata
 
 title: Set up garnishments and tax levies
-description: This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
+description: This topic explains how to set up garnishments and tax levies.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollDisposableIncome
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221114
 ms.assetid: 6b3c8e46-96b2-4503-9f85-8408f9f97620
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -256,3 +253,6 @@ The next step is to enroll workers in garnishments and tax levies. For more info
 [Set up benefits](noam-usa-benefit-set-up-tasks.md)
 
 [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

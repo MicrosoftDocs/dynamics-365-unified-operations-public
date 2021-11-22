@@ -3,12 +3,10 @@
 
 title: Set up service order stages 
 description: Set up service order stages. 
-author: ShylaThompson
-manager: AnnBe
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: SMAServiceOrderTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -34,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-1.  Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
+1.  Go to **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
 
-2.  Press CTRL+N to create a new record.
+2.  Select **New** to create a new record.
 
 3.  In the **Service stage** and **Description** fields, specify a service stage ID and description.
 
@@ -53,3 +50,6 @@ ms.dyn365.ops.version: AX 7.0.0
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

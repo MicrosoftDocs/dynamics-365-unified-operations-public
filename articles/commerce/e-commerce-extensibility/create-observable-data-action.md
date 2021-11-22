@@ -4,11 +4,9 @@
 title: Create an observable data action
 description: This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 03/03/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Create an observable data action
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Observable data actions are used to track the status of a data action as it's running. This capability is helpful if you must run logic or render a user interface (UI) in response to the current status of a data action. Observable data actions use a special promise-like class that is named **AsyncResult**. This class adds "observer" functionality to a standard promise.
 
@@ -97,7 +91,7 @@ export default createObservableDataAction({
 });
 ```
 
-The **createObservableDataAction** method is equivalent to the **createDataAction** method, but returns an **IObservableAction** interface instead of an **IAction** interface.  The **IObservableAction** interface returns an **AsyncResult** class instead of the **Promise** class that a standard **IAction** interface returns. The **AsyncResult** class provides additional data including the **status** and **error** properties of the data action. 
+The **createObservableDataAction** method returns an **IObservableAction** interface. The **IObservableAction** interface returns an **AsyncResult** class that provides additional data including the **status** and **error** properties of the data action. 
 
 A mock can be created to test the data action, as shown in the following example.
 
@@ -176,7 +170,7 @@ export interface IAsyncTestModuleData {
     testResult: AsyncResult<string>;
 }
 ```
-When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result** and **error** properties. The **status** property contains the current state of the data action which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error the **result** property will not be filled in. Instead, the **error** property can be used to see the error details.
+When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result**, and **error** properties. The **status** property contains the current state of the data action, which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error, the **result** property won't be filled in. Instead, the **error** property can be used to see the error details.
 
 By taking advantage of the **status**, **result**, and **error** properties that are provided by observable data actions, complicated scenarios can be better handled in a module. Examples include showing a loading screen while a data action call runs and providing contextual error messages in response to a failed data action.
 
@@ -188,6 +182,11 @@ By taking advantage of the **status**, **result**, and **error** properties that
 
 [Share state across modules](share-state-across-modules.md)
 
+[Data action cache settings](data-action-cache-settings.md)
+
 [Data action overrides](data-action-overrides.md)
 
 [Data action hooks](data-action-hooks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

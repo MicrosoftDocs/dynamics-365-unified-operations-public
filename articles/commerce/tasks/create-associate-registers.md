@@ -3,12 +3,10 @@
  
 title: Create and associate registers
 description: This procedure demonstrates how to create a point of sale (POS) register. 
-author: rubencdelgado
-manager: AnnBe 
+author: BrianShook
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: RetailTerminalTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -46,3 +43,6 @@ This procedure demonstrates how to create a point of sale (POS) register. This p
     * The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests. This value is often called the "Terminal ID" or "TID". The TID can generally be found on a sticker on the payment device.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

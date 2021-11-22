@@ -3,12 +3,10 @@
  
 title: Create an operations resource
 description: An operations resource performs the activities of a project or a production process. 
-author: sorenva
-manager: AnnBe 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: WrkCtrTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create an operations resource
 
@@ -83,3 +80,6 @@ An operations resource performs the activities of a project or a production proc
 4. In the Input location field, enter or select a value.
     * Specify the warehouse location from where the operations resource is consuming materials.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

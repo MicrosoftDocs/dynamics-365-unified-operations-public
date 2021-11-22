@@ -4,11 +4,9 @@
 title: Extend POS views to add custom columns and app bar buttons
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
-manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 24411
 ms.search.region: Global
@@ -68,14 +65,12 @@ The following table shows the POS views that currently support extensions. It al
 | SearchPickingAndReceivingView   | No                            | Yes                          | Yes                                   |
 | CustomerOrderHistoryView        | No                            | Yes                          | No                                   |
 | SearchStockCountView            | No                            | Yes                          | No                                   |
-| StockCountDetailsView           | No                            | Yes                          | No                                   |
+| StockCountDetailsView           | No                            | Yes                          | Yes                                   |
 | ResumeCartView                  | No                            | Yes                          | Yes                                    |
 | InventoryLookupMatrixView       | No                            | No                           | Yes                                   |
 | SuspendTransactionView          | No                            | Yes                          | No                               |   
 | ManageShiftView                 | No                            | No                           | Yes                               |  
 | ReportDetailsView               | No                            | No                           | Yes                               |
-| SearchReceiptsView              | No                            | No                           | Yes                               |
-| StockCountDetailsView           | No                            | No                           | Yes                               |
 | TransferOrderDetailsView        | No                            | No                           | Yes                               |
 | FulfillmentLineView             | No                            | Yes                          | Yes                               |
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
@@ -83,16 +78,22 @@ The following table shows the POS views that currently support extensions. It al
 | PickingAndReceivingDetailsView (Advanced warehouse)  | No                            | Yes                          | Yes           |
 | SalesInvoiceDetailsView (10.0.11) | No                            | No                          | Yes           |
 | SalesInvoicesView (10.0.11) | No                            | Yes                          | No           |
+| InventoryDocumentShippingAndReceivingView (10.0.13) | No                            | Yes (10.0.23)                          | Yes           |
+| InventoryDocumentListView  | No                            | Yes (10.0.15)                          | Yes (10.0.13)          |
+| ManageShiftsView  | No                            | Yes (10.0.21)                          | No          |
 
 
 
 > [!NOTE]
 > The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.
 
-> [!NOTE]
-> In Show journal (lines grid) and Return transaction view custom columns are supported using the row sub fields. These sub fields will be displayed as rows instead of columns, like the info code messages or serial number or discounts values.
+> In Show journal (lines grid) and Return transaction view, custom columns are supported using the row sub fields. These sub fields will be displayed as rows instead of columns, like the info code messages or serial number or discounts values.
 
-Filter extensions are also supported in **Show journal view** and **Search order views** to add custom filters. **Search order views** also supports setting default parameters for search in the user interface (UI) using extension. For example, if you want to add default store search parameter you can do that by using extension and showing that in the UI. 
+## Custom filter extension
+
+Custom filter extensions are supported in **Show journal view**, **Search order view**, **FulfillmentLine view**, and **Inventory Document Shipping and Receiving view**. **Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
+
+Sample code for custom filter extensions are available in the Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
 
 ## Add a custom column and an app bar button
 
@@ -239,7 +240,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
     import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
     import * as SearchView from "PosApi/Extend/Views/SearchView";
-    import MessageDialog from "../DialogSample/MessageDialog";
+    import MessageDialog from "../../Controls/DialogSample/MessageDialog";
     ```
 
 21. Create a class that is named **ViewCustomerSummaryCommand**, and extend it from **CustomerSearchExtensionCommandBase**.
@@ -422,3 +423,6 @@ Follow these steps to validate the customization.
     You should see the custom columns that you added.
 
 3. Select a customer, and then select the new app bar button. A dialog box should appear that contains details about the selected customer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

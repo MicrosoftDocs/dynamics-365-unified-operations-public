@@ -48,11 +48,12 @@
       ],
       "layout": "Conceptual",
       "searchScope": [
+        "dynamics365-finops",
         "Dynamics 365",
         "Unified Operations"
       ],
       "extendBreadcrumb": "true",
-      "breadcrumb_path": "/dynamics365/unified-operations/breadcrumb/toc.json",
+      "breadcrumb_path": "/dynamics365/ops-bc/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
       "_op_documentIdPathDepotMapping": {
@@ -80,9 +81,30 @@
           "folder_relative_path_in_docset": ".",
           "depot_name": "MSDN.d365OpsHR"
         }
-      }
+      },
+      "recommendations": "true"
     },
     "fileMetadata": {
+      "search.app": {
+        "finance/**/*.md": [
+          "FinanceAndOperations"
+        ],
+        "supply-chain/**/*.md": [
+          "FinanceAndOperations"
+        ],
+        "commerce/**/*.md": [
+          "Commerce"
+        ],
+        "human-resources/**/*.md": [
+          "HumanResources"
+        ],
+        "talent/**/*.md": [
+          "HumanResources"
+        ],
+        "fin-ops-core/**/*.md": [
+          "FinanceAndOperations"
+        ]
+      },
       "featureFlags": {
         "dev-itpro/**/*.md": [
           "show_learn_banner"
@@ -111,38 +133,138 @@
           "dynamics-finance-operations"
         ]
       },
-        "feedback_product_url": {
-          "retail/**/*.md": "https://ideas.dynamics.com"
-        },
-       "searchScope": {
-          "talent/**.md": [
-            "Dynamics 365",
-            "Unified Operations",
-            "Talent"
+      "feedback_product_url": {
+        "retail/**/*.md": "https://ideas.dynamics.com"
+      },
+      "searchScope": {
+        "talent/**.md": [
+          "dynamics365-talent",
+          "Dynamics 365",
+          "Unified Operations",
+          "Talent"
         ],
-          "retail/**/**.md": [
-            "Dynamics 365",
-            "Unified Operations",
-            "Retail"
+        "commerce/**/**.md": [
+          "dynamics365-commerce",
+          "Dynamics 365",
+          "Unified Operations",
+          "Retail"
         ],
-           "human-resources/**/**.md": [
-           "Dynamics 365",
-           "Unified Operations",
-           "Human Resources"
+        "human-resources/**/**.md": [
+          "dynamics365-hr",
+          "Dynamics 365",
+          "Unified Operations",
+          "Human Resources"
+        ],
+        "finance/**/**.md": [
+          "dynamics365-finance",
+          "Dynamics 365",
+          "Unified Operations",
+          "Finance"
+        ],
+        "supply-chain/**/**.md": [
+          "dynamics365-supplychain",
+          "Dynamics 365",
+          "Unified Operations",
+          "Supply Chain"
         ]
-       },
+      },
       "titleSuffix": {
         "commerce/**.md": "Commerce | Dynamics 365",
         "fin-ops-core/**.md": "Finance & Operations | Dynamics 365",
         "fin-ops-core/fin-ops/hr/**.md": "Human Resources | Dynamics 365",
-        "finance/**.md": "Finance | Dynamics 365",                
+        "finance/**.md": "Finance | Dynamics 365",
         "human-resources/**.md": "Human Resources | Dynamics 365",
         "supply-chain/**.md": "Supply Chain Management | Dynamics 365",
         "talent/**.md": "Talent | Dynamics 365"
       },
-
       "breadcrumb_path": {
-        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"}
+        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/ops-bc/toc.json"
+      },
+      "ms.service": {
+        "commerce/**/**.md": "dynamics-365-commerce",
+        "finance/**/**.md": "dynamics-365-finance",
+        "fin-ops-core/**/**.md": "dynamics-365-cross-app",
+        "fin-ops-core/dev-itpro/lifecycle-services/ax-2012/**/**.md": "",
+        "human-resources/**/**.md": "dynamics-365-human-resources",
+        "supply-chain/**/**.md": "dynamics-365-supply-chain",
+        "talent/**/**.md": "dynamics-365-talent"
+      },
+      "ms.reviewer": {
+        "human-resources/**/**.md": "twheeloc",
+        "talent/**/**.md": "twheeloc"
+      },
+      "ms.topic": {
+        "fin-ops-core/dev-itpro/mobile-apps/platform/client-apis/**/**.md": "reference",
+        "fin-ops-core/dev-itpro/dev-ref/**/**.md": "reference",
+        "fin-ops-core/dev-itpro/analytics/er-formula**.md": "reference",
+        "fin-ops-core/dev-itpro/analytics/er-functions**.md": "reference"
+      },
+      "ms.search.scope": {
+        "commerce/**/**.md": "Core, Operations, Retail, Commerce, ShowInHelp",
+        "commerce/dev-itpro/**/**.md": "Operations, Retail, Commerce, Developer",
+        "commerce/dev-itpro/retail-sdk/**/**.md": "Operations, Retail, Commerce, Developer",
+        "commerce/e-commerce-extensibility/**/**.md": "Operations, Retail, Commerce, Developer",
+        "commerce/get-started/**/**.md": "Operations, Retail, Commerce, Get Started, ShowInHelp",
+        "commerce/localizations/**/**.md": "Operations, Retail, Commerce",
+        "commerce/tasks/**/**.md": "Core, Operations, Retail, Commerce, ShowInHelp",
+        "finance/**/**.md": "Core, Operations, Finance, ShowInHelp",
+        "finance/localizations/**/**.md": "Core, Operations, Finance",
+        "finance/localizations/tasks/**/**.md": "Core, Operations, Finance",
+        "fin-ops-core/dev-itpro/**/**.md": "Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/analytics/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/analytics/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/business-events/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/business-events/how-to/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/database/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/database/api/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/database/api/v1/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/data-entities/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/data-entities/dual-write/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/data-entities/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/deployment/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/dev-ref/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-ref/system-classes/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-ref/xpp-data/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/dev-tools/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/extensibility/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/financial/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/gdpr/**/**.md": "Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/get-started/**/**.md": "Operations, Get Started, ShowInHelp",
+        "fin-ops-core/dev-itpro/help/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/lcs-solutions/**/**.md": "CrossApp",
+        "fin-ops-core/dev-itpro/lifecycle-services/**/**.md": "CrossApp",
+        "fin-ops-core/dev-itpro/lifecycle-services/ax-2012/**/**.md": "CrossApp",
+        "fin-ops-core/dev-itpro/migration-upgrade/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/mobile-apps/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/mobile-apps/platform/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/mobile-apps/platform/client-apis/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/mobile-apps/platform/client-apis/enums/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/mobile-apps/platform/client-apis/interfaces/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/mobile-apps/platform/client-apis/modules/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/mobile-apps/platform/scenarios/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/office-integration/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/perf-test/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/perf-test/rsat/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/process-automation/**/**.md": "Operations, Developer",
+        "fin-ops-core/dev-itpro/power-platform/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/dev-itpro/sysadmin/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/sysadmin/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/dev-itpro/user-interface/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/fin-ops/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/get-started/**/**.md": "Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/get-started/feature-management/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/get-started/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/hr/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/hr/localizations/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/fin-ops/hr/localizations/tasks/**/**.md": "Core, Operations, CrossApp",
+        "fin-ops-core/fin-ops/hr/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/imp-lifecycle/**/**.md": "Operations, CrossApp",
+        "fin-ops-core/fin-ops/organization-administration/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "fin-ops-core/fin-ops/organization-administration/tasks/**/**.md": "Core, Operations, CrossApp, ShowInHelp",
+        "supply-chain/**/**.md": "Core, Operations, Supply Chain, ShowInHelp",
+        "supply-chain/localizations/**/**.md": "Core, Operations, Supply Chain",
+        "talent/**/**.md": "Talent"
+      }
     },
     "template": [],
     "dest": "d365F-O",

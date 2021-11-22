@@ -3,12 +3,10 @@
 
 title: Ledger journal types
 description: This topic describes the journal types that you can set up for financial journals.
-author: ShylaThompson
-manager: AnnBe
+author: kweekley
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: LedgerJournalSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -73,3 +70,6 @@ This topic describes the journal types that you can set up for financial journal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

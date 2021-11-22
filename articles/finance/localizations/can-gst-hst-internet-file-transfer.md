@@ -3,12 +3,10 @@
 
 title: Canada GST/HST Internet File Transfer (GIFT)
 description: This topic explains how to configure and use the Canada Goods and Services Tax or Harmonized Sales Tax (GST/HST) Internet File Transfer (GIFT) feature.
-author: ericwang
-manager: Ann Beebe
+author: EricWangChen
 ms.date: 08/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,14 +16,13 @@ ms.search.form: GST/HST, GIFT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Canada
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -92,3 +89,6 @@ To file your GST/HST returns and remit payments, you can generate a GIFT file an
     > For easy identification of the GIFT file, use the format *GSTYYYYMMDD.tax* for the file name. (In other words, enter **GST** followed by the reporting date, and then add the **.tax** file name extension.) For example, if the reporting date is July 28, 2010, enter **GST20100728.tax** as the name of the GIFT file.
 
 4. Select **OK** to export the GIFT file to the specified path.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

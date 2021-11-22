@@ -3,12 +3,10 @@
 
 title: Arrival overview
 description: This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
-author: perlynne
-manager: AnnBe
+author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: 274363
+ms.custom: ["274363", "intro-internal"]
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 
@@ -41,7 +38,7 @@ The **Arrival overview** page provides an overview of all expected incoming item
 ## Business scenario
 Consider the following scenario in the inbound processes.
 
-[![Business scenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
+[![Business scenario.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Sammy, a receiving clerk, wants to know what is expected to be received on the current day. On the **Arrival overview** page, Sammy can get an overview of the current tasks, and a rough estimate of quantities, volume, weight, different order types, and so on. Later, a delivery arrives at one of the inbound docks, and Sammy receives a list of the delivery. On the **Arrival overview** page, Sammy can perform the following tasks:
 
@@ -73,7 +70,7 @@ To automatically create arrival journals from the **Arrival overview** page, you
 
 -   You must specify a journal name to create a journal.
 
-[![Specifying a journal name](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+[![Specifying a journal name.](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
 -   If you specify values in the **Warehouse** and **Location** fields, those values are applied on the journal lines. If you don't specify values, the system uses the values from the dimension that is specified on the inventory transactions.
 
@@ -125,3 +122,6 @@ When all goods have been registered, the warehouse manager or purchasing manager
 
 ## Summary
 The **Arrival overview** page can help the warehouse manager and warehouse workers achieve an overview of expected work that must be done as part of an inbound process. The page can also be used to start the item arrival process, to help guarantee that items are tracked at the first entry into the warehouse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

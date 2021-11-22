@@ -3,12 +3,10 @@
 
 title: Workflow types report
 description: This topic points you to a report that lists the available workflow types.
-author: sericks007
-manager: AnnBe
-ms.date: 11/03/2017
+author: ChrisGarty
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: cgarty
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -40,4 +37,7 @@ To create a workflow, you must first select the *type* of workflow that you want
 
 ## View the report
 
-The [Workflow types report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization.
+The **Workflow types report**, included with the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61), lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

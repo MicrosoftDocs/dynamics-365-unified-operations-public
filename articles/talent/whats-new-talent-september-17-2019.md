@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Talent (September 17, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
-author: Darinkramer
-manager: AnnBe
-ms.date: 9/17/2019
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent September 17, 2019.
+author: andreabichsel
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,12 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: Talent
 
@@ -52,9 +48,9 @@ For more information about how changes are published, see [Provision Talent](./p
 
 With this week's update, HR professionals will be able to see performance review details that have been assigned to them through workflow processing. To view reviews, navigate to **Employee self-service > Work items assigned to me**.
 
-### Job family field missing in the Manage changes page for job details (346031)
+### Job family column missing in the Manage changes page for job details (346031)
 
-In this release, the job family field has been added to the **Manage changes** page for job details.
+In this release, the job family column has been added to the **Manage changes** page for job details.
 
 ## In preview
 
@@ -63,3 +59,6 @@ In this release, the job family field has been added to the **Manage changes** p
 This functionality is now available in sandbox environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
 
 For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md). To see the changes, watch the video [Dynamics 365 for Talent 2019 release wave 2 overview](https://aka.ms/ROGT19RW2ROV).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

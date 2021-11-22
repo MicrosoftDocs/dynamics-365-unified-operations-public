@@ -2,13 +2,11 @@
 # required metadata
 
 title: Set up payroll for workers
-description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. 
+description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, Payrol
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 248404
 ms.assetid: d6530f02-bbee-4d8e-94e7-173aecb4452e
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -38,7 +35,7 @@ Before you can pay a worker, you must set up payroll information about the worke
 
 For more information, see [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
 
-[![Flow of worker and position tasks](./media/worker-tasks.gif)](./media/worker-tasks.gif)
+[![Flow of worker and position tasks.](./media/worker-tasks.gif)](./media/worker-tasks.gif)
 
 ## Adding payroll periods to positions
 
@@ -237,3 +234,6 @@ The following tables show the information that you must enter on the **Payroll l
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
 [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

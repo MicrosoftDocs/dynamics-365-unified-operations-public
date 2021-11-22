@@ -4,11 +4,9 @@
 title: Plan your organizational hierarchy
 description: Before you set up organizations and organization hierarchies, make sure that you understand how to best model your business. 
 author: sericks007
-manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
@@ -172,7 +169,7 @@ Operating units use the country context of the parent legal entity. Operating un
 
 #### If the organization is modeled as a legal entity
 
-For countries/regions that are supported, most statutory reports can be created. For information about which reports are available for each country/region, see the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (A CustomerSource logon is required.)
+For countries/regions that are supported, most statutory reports can be created. 
 
 > [!NOTE]
 > A posting layer in the general ledger allows you to make adjusting entries to a parent company that uses a different accounting standard than the child company. For example, for a company that uses generally accepted accounting practices in the United Kingdom (UK GAAP), you can make adjusting entries in the posting layer. These entries can be consolidated into a parent company that uses generally accepted accounting principles (GAAP) in the United States. The adjusting entries do not affect UK GAAP reporting.
@@ -247,3 +244,6 @@ Consider the following best practices when you implement an organization hierarc
 - Before you model major restructuring scenarios, use the hierarchy's effective dates to perform an impact analysis and a validation test.
 - Use draft mode to change a hierarchy before you publish a new version in a production environment.
 - Limit the number of people who have permissions to add or remove organizations from a hierarchy in a production environment. A smaller number reduces the chance that costly mistakes can occur and corrections must be made.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Import files in XML format with optional attributes
 description: This topic provides information about designing ER formats which specify XML attributes to parse incoming electronic documents in XML format.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -138,3 +135,6 @@ The following steps explain how a user in the System Administrator or Electronic
 3. Click **Browse** and select the file, **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.
 4. Click **OK**.
 5. Review the generated file. Note that same file has been imported as the format design now consider the 'id' attribute for the 'document' element as optional.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

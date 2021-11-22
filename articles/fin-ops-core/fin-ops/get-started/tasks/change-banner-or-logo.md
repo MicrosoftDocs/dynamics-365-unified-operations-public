@@ -4,11 +4,9 @@
 title: Change the banner or logo
 description: The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. 
 author: aneesmsft
-manager: AnnBe 
 ms.date: 06/21/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: OMLegalEntity, DefaultDashboard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -43,3 +40,6 @@ The following procedure lists the steps that system administrators can use to up
 6. Go to **Navigation pane > Modules > Common > Common > Default dashboard**. You should see the new banner or logo image on the dashboard.  
     
     You may need to change your company, using the company picker, to the one you uploaded the banner for.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

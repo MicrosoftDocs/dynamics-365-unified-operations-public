@@ -3,12 +3,10 @@
 
 title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 03/23/2020
+author: VStamberg
+ms.date: 07/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0
 
@@ -32,9 +29,9 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
+This topic lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/business-applications-release-notes/index).
+Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
 
 Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
@@ -46,40 +43,36 @@ Regulatory updates that are released as part of the monthly updated are indicate
 
 For the latest regulatory update plans, refer to the following table.   
 
-|Country|Planned release date|Release version|Regulatory update|
-|--------------------|---------------|-------|-------|
-|      Brazil         |   April 2020 - January 2020      | 10.0.10, 10.0.9HF, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 416    |
-|      Brazil         |   April 2020      | 10.0.10      |   SPED Contribuições (PIS/COFINS) - Blocks M115 and M515    |
-|      Brazil         |   April 2020      | 10.0.10      |   Sped Contributions - Record C100 and D100 updates when the credit is not recoverable    |
-|      Brazil         |   April 2020  - January 2020     | 10.0.10, 10.0.9HF, 10.0.8HF      |   SPED Contribution - Layout for Jan-2020    |
-|      Brazil         |   March 2020       | 10.0.9      |   Sped fiscal - changes in record D100 field COD_MUN_ORI    |
-|      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8      |   DRCST SC – Ordinance SEF Nº 254/19    |
-|      Brazil         |   January 2020       | 10.0.8      |   Complementary information of ICMS-ST    |
-|      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
-|      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
-|      France         |   April 2020       | 10.0.10      |   Legal fees declaration to tax authorities for self-employed people (DAS2)    |
-|      France         |   March 2020       | 10.0.9      |   French localization: ISO 20022 format for international payment and treasury transfer    |
-|      India         |   March 2020      | 10.0.9      |   New GSTR (ANX-1 & ANX-2) Return offline Tool    |
-|      Italy         |   January 2020      | 10.0.8      |   Changes in VAT management by D.L. 119 of 23 Oct 2018: Yearly tax communication    |
-|      Italy         |   March 2020      | 10.0.9, 10.0.8HF      |   Retail - Managing customer information in POS |
-|      Italy         |   March 2020      | 10.0.9, 10.0.8HF      |   Retail - Printing customer information in fiscal receipt |
-|      Japan          |   March 2020     | 10.0.9, 10.0.8HF     |   Japan Bankers Association replacing JBA fixed-length payment formats with ISO20022 |
-|      Japan          |   January 2020      | 10.0.8       |   Consumption tax rate change and reduced tax rate is introduced (Consumption tax report) |
-|      Mexico          |   January 2020     | 10.0.8        |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
-|      Mexico           |   January 2020       | 10.0.8     |   Code validation in Products and Services catalog |
-|      Netherlands          |   April 2020   | 10.0.10     |   Dutch Taxonomy new version - NT14 |
-|      Norway          |   March 2020   | 10.0.9, 10.0.8HF     |   SAF-T XSD update to version 1.1 for Dynamics 365 for Finance and Operations |
-|      Poland          |   March 2020    | 10.0.9     |   Purchase VAT register and SAF VAT register: Custom agency from SAD documents must be replaced by third-party name and tax-exempt number |
-|      Poland          |   March 2020 - January 2020   | 10.0.9, 10.0.8HF     |   Retail - Managing customer information in POS |
-|      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8HF     |   Retail - Printing customer information in fiscal receipt |
-|      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8     |   SAF invoices (JPK_FA) v.3 from 2Dec2019 |
-|      Poland          |   April 2020 - January 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK replacing JPK_VAT (SAF VAT) |
-|      Russia          |   March 2020     | 10.0.9     |   Format of property tax declaration for 2019 reporting |
-|      Russia          |   March 2020     | 10.0.9     |   Profit tax declaration format updates |
-|      Singapore           |   January 2020     | 10.0.8      |   GST return report |
-|      Switzerland           |   March 2020     | 10.0.9      |   Swiss payment slip ISR gets new format (QR-code) |
-|      United Kingdom           |   April 2020     | 10.0.10      |   MTD fraud prevention supplemented pack |
-|      United Kingdom         |   January 2020      | 10.0.8      |   Making Tax Digital (MTD) - Consent of system administrator to transmit information outside of D365 using the integration with HMRC    |
+|Country|Release date|Release version|Regulatory update|
+|--------------------|---------------|-------|-------| 
+|      Australia         |   June 2021      | 10.0.21      |   AU - Payment Times Reporting Bill 2020 for Microsoft Dynamics 365 Finance   |
+|      Brazil         |   May 2021, February 2021      | 10.0.20, 10.0.19      |   NF-e NT2020.006  - Identification of the digital platform intermediary (Layout and validation rules updates)   |
+|      Brazil         |   March 2021         | 10.0.19         |    SPED REINF layout 1.5.1  |
+|      Brazil         |   April 2021         | 10.0.20        |    SPED ECD Layout 9  |
+|      Brazil         |   May 2021         | 10.0.20         |    SPED Contributions - Version Guide 1.34  |
+|      Brazil         |   June 2021         | 10.0.21         |    SPED ECF - Layout 7  |
+|      Brazil         |   May 2021         | 10.0.20         |    NF-e NT2020.005  v1.10 - Validation rules and updates PED ECF - Layout 7  |
+|      Brazil         |   May 2021         | 10.0.21         |    SPED Reinf 1.5.1 - Changes in webservice method of EVENT 5011  |
+|      France        |   April 2021       | 10.0.20      |   French data archiving export (FEC) enhancement  |
+|      Germany        |   March 2021       | 10.0.19      |   GDPDU extensions for Fixed Assets table and transactions  |
+|      Germany        |   April 2021       | 10.0.20HF      |   Changes in E-invoicing format (xRechnung) in Germany since 2021  |
+|      India         |   March 2021      | 10.0.19      |   GST e-invoices: Export orders, Deemed export, SEZ  |
+|      India         |   March 2021      | 10.0.19      |   Dynamics QR Code on B2C invoice  |
+|      India         |   June 2021      | 10.0.21      |   New API version for e-invoice (v.1.04)  |
+|      Italy         |   March 2021      | 10.0.19      |   Invoices communication (Esterometro) format changes v.2.1.1  |
+|      Italy        |   May 2021      | 10.0.19      |   Retail - Fiscal printer integration sample update to support XML RT 2.0  |
+|      Italy         |   March 2021      | 10.0.19      |   Retail - Enable retail-specific invoices violiting chronological posting  |
+|      Italy         |   February 2021      | 10.0.19      |   Unique certification - 2021  |
+|      Oman         |   June 2021      | 10.0.21      |   VAT declaration  |
+|      Poland          |   June 2021     | 10.0.21     |   JPK_V7M (VDEK) - Procedural markings enhancement |
+|      Poland          |   July 2021     | 10.0.21     |   JPK-V7M new rules for completing starting from July 2021 |
+|      Russia          |   March 2021     | 10.0.19    |   The 2020 property tax declaration will have to indicate the average annual value of movable fixed assets|
+|      Russia          |   March 2021     | 10.0.19HF    |   Profit tax declaration version 5.09 for 2020 reporting|
+|      Russia          |   March 2021     | 10.0.19    |   Government decree N 2200 21.12.2020 application 4 new forma for transport invoice is required|
+|      Russia          |   June 2021     | 10.0.21HF, 10.0.20HF, 10.0.19 HF    |   Changes in printable layouts of invoices-factures and corrective factures|
+|      Spain          |   July 2021     | 10.0.21    |    OSS / IOSS scenario - ClaveRegimenEspecialOTrascendencia = 17- KB4623605|
+|      Sweden          |   July 2021     | 10.0.21    |    VAT declaration format including reverse charge amounts|
+|      United Arab Emirates   |   May 2021     | 10.0.20    |   Posting payment journal with postdated checks to bank account |
 
 
 
@@ -87,3 +80,6 @@ For the latest regulatory update plans, refer to the following table.
 - Find all planned and released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (sign in required).
 - For a list of the localizations that are supported, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

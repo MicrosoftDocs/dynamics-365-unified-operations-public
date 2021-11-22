@@ -2,13 +2,11 @@
 # required metadata
 
 title: Create service agreement groups  
-description: Service agreement groups are useful for sorting and filtering service agreements.
-author: ShylaThompson
-manager: AnnBe
+description: This topic provides a procedure that shows how to create service agreement groups.
+author: kamaybac
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: SMAAgreementGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Service agreement groups are useful for sorting and filtering service agreements.
 
-1. Click **Service management** \> **Setup** \> **Service agreements** \> **Service agreement groups**.
+1. Go to **Service management** \> **Setup** \> **Service agreements** \> **Service agreement groups**.
 2. Press **Alt+N** to create a new service agreement group.
 3. In the **Service agreement group** field, enter an ID for the service agreement group.
 4. In the **Description** field, enter a description for the service agreement group.
@@ -48,3 +45,6 @@ Service agreement groups are useful for sorting and filtering service agreements
 ## Related topics
 
 [Service agreement overview](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

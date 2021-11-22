@@ -3,12 +3,10 @@
 
 title: Import ISO20022 files 
 description: This topic explains how to import payment files of the ISO 20022 camt.054 and pain.002 formats into Microsoft Dynamics 365 Finance.
-author: neserovleo
-manager: AnnBe
+author: anasyash
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 
@@ -124,7 +121,7 @@ For example, consider this scenario: you use ISO20022 payments to generate credi
  - **Pain.002** – this format will be used together with the Payment model mapping to destination ISO20022 in order to import the pain.002 file into vendor payments transfers journal
  - **Camt.054** – this format will be used together with the Payment model mapping to destination ISO20022 to import the camt.054 file into vendor payments transfers journal. The same format configuration will be used in customer payments import functionality, but the different mapping will be used in the Payment model mapping to destination ISO20022 configuration.
 
-For more information about Electronic reporting, refer to [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md).
+For more information about Electronic reporting, refer to [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## Additional resources
 - [Create and export vendor payments using ISO20022 payment format](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
@@ -136,3 +133,6 @@ For more information about Electronic reporting, refer to [Electronic reporting 
 - [Set up method of payment for ISO20022 credit transfer](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Setup method of payment for ISO20022 direct debit](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Set up vendors and vendor bank accounts for ISO20022 credit transfers](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

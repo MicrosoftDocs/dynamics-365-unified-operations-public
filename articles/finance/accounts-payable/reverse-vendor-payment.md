@@ -4,11 +4,9 @@
 title: Reverse a vendor payment
 description: This article describes the differences between reversing, deleting, voiding, and rejecting a payment. Additionally, it explains the two methods for reversing a vendor check. 
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: BankChequeTable, LedgerJournalTransBankChequeReversal, LedgerJou
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14361
 ms.assetid: 9f0a1883-cbe0-4cc7-b9f3-dd12fb85ebe8
@@ -88,3 +85,6 @@ If the check that was reversed was issued for a customer refund, the following e
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

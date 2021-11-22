@@ -4,11 +4,9 @@
 title: Troubleshoot package application issues
 description: The topic provides troubleshooting information for issues that might occur when you apply packages on Tier 1 or Tier 2 through Tier 5 environments.  
 author: laneswenka
-manager: AnnBe
-ms.date: 08/08/2017
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
@@ -165,6 +162,20 @@ If the dashboard doesn't open after package deployment is completed, a run-time 
 1. Start Event Viewer.
 2. Navigate to **Applications and Services Logs** > **Microsoft** > **Dynamics** > **Ax-SystemRuntime** > **Operational Filter by errors**, see whether there are any errors, and investigate the errors as required.
 
+### Issue: A package application failed with error code : DSU#####
+
+**Description**
+
+You may receive an error stating **A critical component has encountered an error processing your request. Error code: DSU#####**, or similar. The error code of **DSU#####** indicates that there's a temporary outage happening in the underlying Microsoft API.  This type of outage may also impact database movement functionality. 
+
+**Action**
+
+Microsoft is proactively monitoring the service status and this type of outage is expected to be mitigated shortly.
+
+There's no impact on the status and the health of your environment. 
+
+If you experience this error when scheduling a service request or performing a database movement task, please try again at a later time. 
+
 ## Typical database synchronization issues
 If you see the following step failure, a database synchronization issue might be occurring: "GlobalUpdate script for service model: AOSService"
 
@@ -194,3 +205,6 @@ Follow these steps to look for the DBSync.err file, find the errors, and inspect
     | Database execution failed: Invalid column name &#39;DEFAULTDIMENSION&#39;. CREATE VIEW | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
     | Database execution failed: Invalid object name &#39;PMBI\_DEPROJECTTIMESHEET&#39;. CREATE VIEW | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
     | %provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server%  | This issue should have been fixed in Platform Update 3. Retry the step. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

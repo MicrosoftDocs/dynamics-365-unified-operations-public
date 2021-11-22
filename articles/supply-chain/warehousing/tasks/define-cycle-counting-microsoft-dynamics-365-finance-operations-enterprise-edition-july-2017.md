@@ -4,20 +4,16 @@
 title: Define cycle counting 
 description: Cycle counting is a warehouse process that you can use to audit on-hand inventory items. 
 author: MarkusFogelberg
-manager: AnnBe 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
- 
-# ms.search.form:   
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -53,7 +49,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 10. In the**Work class ID** field, select a value.
 11. Click **New**.
 12. In the **Work class ID** field, select a value.
-13. In the **Action pane**, click **Save**.
+13. In the **Action Pane**, click **Save**.
 14. Close the page.
 15. In the **Navigation pane**, go to **Modules > Warehouse management > Setup > Mobile device > Mobile device menu**.
 16. In the list, find and select the desired record.
@@ -99,3 +95,6 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 21. Click **OK**.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Control access to purchase agreements in the public sector
 description: You can make sure that only approved departments can access a purchase agreement. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: PurchAgreement, PurchAgreementFinDimensionAccess_PSN
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -43,3 +40,6 @@ You can make sure that only approved departments can access a purchase agreement
     * Add additional departments until all authorized departments have been added to the purchase agreement.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

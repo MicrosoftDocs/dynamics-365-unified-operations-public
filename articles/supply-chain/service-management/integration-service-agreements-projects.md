@@ -3,12 +3,10 @@
 
 title: Integration for service agreements and projects 
 description: When you work with service agreements and service agreement lines, you use data that is set up in the areas in Project management and accounting.
-author: ShylaThompson
-manager: AnnBe
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: ProjParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -88,3 +85,6 @@ Also, you can enable the **Start time** and **End time** fields on the **Project
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

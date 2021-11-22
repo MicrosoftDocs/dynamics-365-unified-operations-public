@@ -4,11 +4,9 @@
 title: Set up main account categories
 description: This topic explains how to set up main account categories in Dynamics 365 Finance. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: MainAccountCategory, MainAccountCategoryLink
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +42,6 @@ This topic explains how to set up main account categories. Main account categori
 3. Select or clear the **Linked** option to choose the main accounts.
 4. Select **OK**.
 5. Select **Yes**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Settle vendor consolidated invoices by using settle transactions
 description: In Japan, payments are made and settled against consolidated invoice. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: VendConsInvoice_JP, VendTable, VendOpenTrans
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -70,3 +67,6 @@ This procedure was created using the demo data company JPMF.
 1. Go to Accounts payable > Periodic tasks > Consolidated invoice.
     * Confirm that the status of the consolidated invoice is now "Settled".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

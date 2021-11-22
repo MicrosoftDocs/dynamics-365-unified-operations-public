@@ -4,11 +4,9 @@
 title: Set up bonus depreciation
 description: This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +49,6 @@ This procedure shows how to create a special depreciation allowance and associat
     * The default for Percentage or Amount comes from the special depreciation allowance setup.  
 8. In the Priority field, enter a number.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

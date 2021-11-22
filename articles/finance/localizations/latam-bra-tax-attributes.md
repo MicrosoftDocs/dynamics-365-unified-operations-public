@@ -4,11 +4,9 @@
 title: Tax attributes for Brazil
 description: This topic explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
 author: sndray
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269544
 ms.assetid: 92b0cf1b-51ec-4611-bf8e-db4cd10ffed0
@@ -36,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
 
-Tax address attributes
-----------------------
+## Tax address attributes
 
 For any legal entity that has an address in Brazil, the Instituto Brasileiro de Geografia e Estatística (IBGE) code must be set up on the state and/or city. The IBGE code is used to identify the region where the address is located, so that correct taxes are considered. The IBGE code information comes from the IBGE, which is an official organization that maps the Brazilian geography.
 
@@ -102,3 +98,6 @@ The following fields on the **Product information** page are required for a Braz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

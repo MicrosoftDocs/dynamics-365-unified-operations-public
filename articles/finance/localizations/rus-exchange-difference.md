@@ -4,11 +4,9 @@
 title: Set up exchange rates for currency transactions
 description: This topic explains how to set up exchange rates for currency transactions in Russia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -270,3 +267,6 @@ Use the following procedures to create an amount difference facture and link it 
 8. Select the **Include in book** check box to update the amount difference facture in the sales book.
 9. Select **Print**.
 10. Set the **Included only** option to **Yes** to print the original facture together with only the selected amount difference factures. If you set this option to **No**, all amount difference factures are printed together with the original facture.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

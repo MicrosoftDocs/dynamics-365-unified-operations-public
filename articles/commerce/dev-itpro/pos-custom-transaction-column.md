@@ -4,11 +4,9 @@
 title: Add custom columns to a point of sale (POS) transaction grid
 description: This topic explains how to add a new custom column to a POS transaction page using the screen layout designer. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -225,3 +222,6 @@ This topic explains how to add a new custom column to a POS transaction page usi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

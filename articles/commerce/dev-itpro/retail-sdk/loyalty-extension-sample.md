@@ -4,11 +4,9 @@
 title: Loyalty extension sample
 description: This topic explains how to set up the system so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 05/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 196163
 ms.assetid:
@@ -48,7 +45,7 @@ Because of the flexibility that the loyalty setup provides, this scenario can qu
 
 + No tiers are associated with the loyalty program.
 + There is a single loyalty scheme and a single loyalty reward point type.
-+ There is a single earning rule that applies to all product categories. For example, this rule might specify that, for every $1 that the customer spends, he or she earns 0.1 reward point. 
++ There is a single earning rule that applies to all product categories. For example, this rule might specify that, for every $1 that the customer spends, the customer earns 0.1 reward point. 
 + There is a single redemption rule that applies to all product categories. For example, this rule might specify that one reward point is equivalent to $1.
 
 > [!NOTE] 
@@ -187,3 +184,6 @@ namespace Contoso
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

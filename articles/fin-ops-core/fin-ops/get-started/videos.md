@@ -3,12 +3,10 @@
 
 title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
-author: josaw1
-manager: AnnBe
-ms.date: 11/11/2019
+author: sericks007
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User, IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
@@ -43,7 +40,6 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ### Data integration
 
-- [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg)
 - [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### Data management
@@ -83,15 +79,22 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Uptake a new platform release after Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Use telemetry to monitor key performance counters in Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
+### Regression suite automation tool (RSAT)
+
+- [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
+- [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
+- [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk)
+- [The improved Excel experience in Regression Suite Automation Tool (RSAT) 2.0](https://youtu.be/fcEkSIVQ1Bg)
+
 
 ## Videos for Dynamics 365 Finance
+
+### Business document management
+- [Create a new business document using Business Document Management](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### Customize the app
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Embed Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
-
-### Expenses
-- [Expense experience](https://youtu.be/Ocy-MsTvEE0)
 
 ### Financial reporting
 - [Find the version of Report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
@@ -118,10 +121,17 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ## Videos for Dynamics 365 Supply Chain Management
 
+### Business document management
+- [Create a new business document using Business Document Management](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### Costs
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
+
+### Customer portal
+- [Overview of the Customer portal template](https://youtu.be/nPrqoLuHfV8)
+- [Invite customers to register and use your customer portal](https://youtu.be/drGUYHX9QIQ)
 
 ### Help system
 
@@ -143,6 +153,9 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 - [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
 
+### Product information management
+- [Change management capabilities](https://youtu.be/N313FqvRuBc)
+
 ### Production control
 
 - [Batch balancing](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
@@ -160,3 +173,6 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

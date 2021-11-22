@@ -2,13 +2,11 @@
 # required metadata
 
 title: Service agreements overview
-description: Service agreement groups are useful for sorting and filtering service agreements.
-author: ShylaThompson
-manager: AnnBe
+description: This topic provides an overview of how service agreements work.
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: SMAAgreementGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -40,10 +37,13 @@ In the **Service agreement group** field in the **Service management parameters*
 
 ## Example
 
--  You can group your service agreements according to the level of service offered. 
--  The three agreement groups you have set up in your company are Gold, Silver, and Bronze.
--  A new service account manager has been employed in your company. The service manager is responsible for dealing with all clients in the Gold agreement group. You can filter agreement records on the Gold agreement group to find all of the agreements for which you must specify the new service manager as the person in charge.
+- You can group your service agreements according to the level of service offered.
+- The three agreement groups you have set up in your company are Gold, Silver, and Bronze.
+- A new service account manager has been employed in your company. The service manager is responsible for dealing with all clients in the Gold agreement group. You can filter agreement records on the Gold agreement group to find all of the agreements for which you must specify the new service manager as the person in charge.
 
 ## Related topics
 
 [Create service agreement groups](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

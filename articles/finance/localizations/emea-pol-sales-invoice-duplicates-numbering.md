@@ -4,11 +4,9 @@
 title: Duplicate sales invoice numbering for Poland
 description: For legal entities in Poland, the Duplicate sales invoice numbering functionality lets users identify and track duplicate sales invoices. This topic provides information about the Duplicate sales invoice numbering functionality, and explains how to duplicate an invoice, delete a duplicate invoice, and print a copy of a duplicate invoice.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263534
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -47,3 +44,6 @@ To delete a duplicate invoice, click **Delete**. **Note:** Only the last duplica
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

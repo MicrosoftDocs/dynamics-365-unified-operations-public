@@ -3,12 +3,10 @@
 
 title: Reconcile a bank account
 description: This topic describes how to reconcile a bank account.
-author: ShivamPandey-msft
-manager: AnnBe
+author: panolte
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: shpandey
+ms.author: panolte
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: 10.0.5
 ---
@@ -74,3 +71,6 @@ The Cancel bank statement reconciliation functionality enables you to cancel ban
 Bank statement reconciliations can only be canceled in the chronological order in which they were entered. When a bank statement reconciliation is canceled, new transactions and corrections will be reversed and all other transactions will be marked as un-reconciled.
  
 To cancel bank statement reconciliation, select the bank statement and select **Bank statement > Cancel bank reconciliation**. On the **Cancel bank reconciliation** page, provide the **Reason code**, **Reason comment**, and **Cancellation date**. Select **OK** to begin cancellation. Note, the bank statement cancellation date must be on or after the bank statement date. After the bank statement reconciliation has canceled, the **Cancellation date** field for the bank statement will be updated with the **Cancellation date** provided. Select the **Transactions** button to view the transactions for which the reconciliation was canceled.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

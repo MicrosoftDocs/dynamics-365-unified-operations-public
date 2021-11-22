@@ -3,12 +3,10 @@
  
 title: Change kanban rules for a process job
 description: This procedure focuses on changing the used kanban rule for a given kanban. 
-author: ChristianRytt
-manager: AnnBe 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: KanbanRules, KanbanRuleDuplicate, KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, KanbanReassignRuleLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Change kanban rules for a process job
 
@@ -52,3 +49,6 @@ This procedure focuses on changing the used kanban rule for a given kanban. This
 7. Click Finish.
     * Now the kanban job is using an another kanban rule. This can be useful to level load work cells.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Create workflows overview
 description: This topic explains how to create a workflow.
-author: sericks007
-manager: AnnBe
+author: ChrisGarty
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 195583
+ms.custom: ["195583", "intro-internal"]
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
@@ -89,3 +86,6 @@ When you're ready to save and activate the workflow, follow these steps.
 
     - To activate this version of the workflow, click **Activate the new version**. When a workflow is active, users can submit documents to it for processing.
     - If you don't want to activate this version, click **Do not activate the new version**. You can activate the workflow later.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Standard payroll reports
 description: This topic describes the standard payroll reports that are provided to help you with payroll processing and government reporting. 
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220994
 ms.assetid: 92b0da78-1c42-46f7-b1a2-334d75e625f3
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -54,3 +51,6 @@ The following table summarizes when and why you use each report.
 | Form W-2 reconciliation                  | | | Use this report to balance Form W-2s and run validation before you issue Form W-2s to workers. | Use this report to balance Form W-2s and run validation before you issue Form W-2s to workers. |
 | Form W-2                                 | | | Use this report to create Form W-2s that you can issue to workers. | Use this report to create Form W-2s that you can issue to workers. |
 | Electronic Form W-2                      | | | Use this report to file Form W-2s with the Social Security Administration. | |
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

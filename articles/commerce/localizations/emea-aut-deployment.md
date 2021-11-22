@@ -4,11 +4,9 @@
 title: Deployment guidelines for cash registers for Austria
 description: This topic is a deployment guide for the Commerce localization for Austria.
 author: AlexChern0v
-manager: ezubov
-ms.date: 
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,13 +15,11 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria
 ms.search.industry: Retail
-ms.author: v-alexec
-ms.search.scope: Retail, Core, Operations
+ms.author: josaw
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -195,7 +191,7 @@ To enable the registration process, set up Headquarters using the steps below. F
 5. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new profile and select the loaded connector from the step above. Update connection settings if needed.
 6. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**. Create two new group per connector's functional profile from the step above.
 7. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**. Create a new process. Select both connector's functional groups from the step above.
-8. Open **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** prorerty at **Functions** fasttab.
+8. Open **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select one that is linked to the store where the registration process should be activated. Expand the **Fiscal registration process** tab. Select the created registration process from the step above. For enabling registration of non-fiscal events on POS enable **Audit** property at **Functions** fasttab.
 9. Open the **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select one that is linked to the hardware station to which the fiscal printer will be connected. Expand the **Fiscal peripherals** Tab. Select the connector technical profile.
 
 For more information, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
@@ -235,3 +231,6 @@ Follow these steps to create deployable packages that contain Commerce component
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 6. Complete the [Set up required parameters in Headquarters](#set-up-required-parameters-in-headquarters)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

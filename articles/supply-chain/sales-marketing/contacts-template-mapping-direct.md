@@ -3,12 +3,10 @@
 
 title: Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management
 description: This topic discusses the templates and underlying tasks that are used to synchronize Contact (Contacts) and Contact (Customers) entities from Dynamics 365 Sales to Dynamics 365 Supply Chain Managements.
-author: ChristianRytt
-manager: AnnBe
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
@@ -34,22 +31,24 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
-> [!NOTE]
-> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize Contact (Contacts) and Contact (Customers) entities directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.
+> [!NOTE]
+> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
+
+This topic discusses the templates and underlying tasks that are used to synchronize Contact (Contacts) and Contact (Customers) tables directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.
 
 ## Data flow in Prospect to cash
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Data flow in Prospect to cash.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## Templates and tasks
 
 To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following templates and underlying tasks are used to synchronize Contact (Contacts) entities in Sales to Contact (Customers) entities in Supply Chain Management.
+The following templates and underlying tasks are used to synchronize Contact (Contacts) tables in Sales to Contact (Customers) tables in Supply Chain Management.
 
 - **Names of the templates in Data integration**
 
@@ -67,7 +66,7 @@ The following synchronization task is required before contact synchronization ca
 
 | Sales    | Supply Chain Management |
 |----------|------------------------|
-| Contacts | CDS Contacts           |
+| Contacts | Dataverse Contacts           |
 | Contacts | Customers V2           |
 
 ## Entity flow
@@ -81,13 +80,13 @@ A contact in Sales can become either a contact or a customer in Supply Chain Man
 
 ## Prospect to cash solution for Sales
 
-A new **Is Active Customer** field has been added to the contact. This field is used to differentiate contacts that have sales activity and contacts that don't have sales activity. **Is Active Customer** is set to **Yes** only for contacts that have related quotations, orders, or invoices. Only those contacts are synchronized to Supply Chain Management as customers.
+A new **Is Active Customer** column has been added to the contact. This column is used to differentiate contacts that have sales activity and contacts that don't have sales activity. **Is Active Customer** is set to **Yes** only for contacts that have related quotations, orders, or invoices. Only those contacts are synchronized to Supply Chain Management as customers.
 
-A new **IsCompanyAnAccount** field has been added to the contact. This field indicates whether a contact is linked to a company (parent account/contact) of the **Account** type. This information is used to identify contacts that should be synchronized to Supply Chain Management as contacts.
+A new **IsCompanyAnAccount** column has been added to the contact. This column indicates whether a contact is linked to a company (parent account/contact) of the **Account** type. This information is used to identify contacts that should be synchronized to Supply Chain Management as contacts.
 
-A new **Contact Number** field has been added to the contact to help guarantee a natural and unique key for the integration. When a new contact is created, a **Contact Number** value is automatically generated by using a number sequence. The value consists of **CON**, followed by an increasing number sequence and then a suffix of six characters. Here is an example: **CON-01000-BVRCPS**
+A new **Contact Number** column has been added to the contact to help guarantee a natural and unique key for the integration. When a new contact is created, a **Contact Number** value is automatically generated by using a number sequence. The value consists of **CON**, followed by an increasing number sequence and then a suffix of six characters. Here is an example: **CON-01000-BVRCPS**
 
-When the integration solution for Sales is applied, an upgrade script sets the **Contact Number** field for existing contacts by using the number sequence that was mentioned earlier. The upgrade script also sets the **Is Active Customer** field to **Yes** for any contacts that have sales activity.
+When the integration solution for Sales is applied, an upgrade script sets the **Contact Number** column for existing contacts by using the number sequence that was mentioned earlier. The upgrade script also sets the **Is Active Customer** column to **Yes** for any contacts that have sales activity.
 
 ## In Supply Chain Management
 
@@ -97,7 +96,7 @@ Contacts are tagged by using the **IsContactPersonExternallyMaintained** propert
 
 ### Contact to customer
 
-- **CustomerGroup** is required in Supply Chain Management. To help prevent synchronization errors, you can specify a default value in the mapping. That default value is then used if the field is left blank in Sales.
+- **CustomerGroup** is required in Supply Chain Management. To help prevent synchronization errors, you can specify a default value in the mapping. That default value is then used if the column is left blank in Sales.
 
     The default template value is **10**.
 
@@ -120,15 +119,15 @@ Contacts are tagged by using the **IsContactPersonExternallyMaintained** propert
 The following illustrations show an example of a template mapping in Data integration. 
 
 > [!NOTE]
-> The mapping shows which field information will be synchronized from Sales to Supply Chain Management.
+> The mapping shows which column information will be synchronized from Sales to Supply Chain Management.
 
-### Contact to contact
+### Contact to contact example
 
-![Template mapping in Data integrator](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Contact to contact template mapping in Data integrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### Contact to customer
+### Contact to customer example
 
-![Template mapping in Data integrator](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Contact to customer template mapping in Data integrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## Related topics
@@ -144,3 +143,6 @@ The following illustrations show an example of a template mapping in Data integr
 [Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales](sales-invoice-template-mapping-direct.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

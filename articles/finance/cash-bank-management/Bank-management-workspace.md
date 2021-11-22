@@ -4,11 +4,9 @@
 title: Bank management workspace
 description: This topic provides information about the Bank management workspace. This workspace shows information that is related to company bank accounts, and includes a Summary view and an Analytics page. The Summary view shows summary tiles, bank account information, a balance chart, and related information. The Analytics page uses the capabilities of Microsoft Power BI to show visuals that are related to bank account balances.
 author: saraschi2
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:  BankTreasurerWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -66,4 +63,7 @@ The **Analytics** page provides important metrics about the bank accounts in the
 -   Balance by bank account
 -   Balance by currency
 
-You can view bank analytics across all companies from the **Cash overview – all companies** workspace.
+You can view bank analytics across all companies from the **Cash overview – all companies** workspace. For more information, see [Cash overview Power BI content](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

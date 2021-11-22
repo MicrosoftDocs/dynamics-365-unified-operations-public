@@ -1,27 +1,12 @@
 ---
-# required metadata
 title: PageTarget type
 description: PageTarget type
-author: shadykdc
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
+ms.author: tfehr
 ---
 
 # PageTarget type
@@ -55,3 +40,6 @@ to: string (optional)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

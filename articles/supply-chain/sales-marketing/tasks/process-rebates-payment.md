@@ -3,12 +3,10 @@
  
 title: Process rebates for payment
 description: This procedure demonstrates how to convert approved and processed customer rebates to credit notes. 
-author: omulvad
-manager: AnnBe 
+author: Henrikan
 ms.date: 11/10/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,13 +14,12 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -55,3 +52,6 @@ This procedure demonstrates how to convert approved and processed customer rebat
     * Note that a transaction for negative amount, representing the total rebate amount, without invoice reference has been added to the customer balance.   
 15. Click Cancel.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

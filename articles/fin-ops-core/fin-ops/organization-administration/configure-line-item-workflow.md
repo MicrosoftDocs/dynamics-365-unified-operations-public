@@ -3,12 +3,10 @@
 
 title: Configure line-item workflows
 description: This topic explains how to configure a line-item workflow element.
-author: sericks007
-manager: AnnBe
+author: ChrisGarty
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 195833
 ms.assetid: 3237347e-71d5-4569-bc9a-0d0fc9410b78
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -61,3 +58,6 @@ Follow these steps to specify whether the same workflow is used to process all t
     6. To verify that the set of conditions that you entered is configured correctly, click **Test**. On the **Test workflow condition** page, in the **Validate condition** area, select a record, and then click **Test**. The system evaluates the record to determine whether it meets the conditions that you defined. Click **OK** or **Cancel** to return to the **Properties** page.
 
     On the **Workflow** tab, select the workflow select the workflow to use to process line items that meet the set of conditions that you defined.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

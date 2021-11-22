@@ -4,11 +4,9 @@
 title: One-time customers
 description: This topic provides information about one-time customers.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.search.form: CustTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264394
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -51,3 +48,6 @@ A one-time customer is a customer who does not have a long-term relationship wit
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

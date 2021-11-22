@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (May 6, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for May 6, 2019.
+author: andreabichsel
 ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,19 +15,19 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent (May 6, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
@@ -49,11 +47,11 @@ Changes described in this section apply to build number 8.1.2282. The numbers in
 
 ### Platform update 26 for Finance and Operations
 
-For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-In this week's release, the following entities now support custom fields: Benefit calc frequency, Benefit calc rate, Benefit type, Work calendar, Work calendar holiday, Pay cycle, and Worker identification types.
+In this week's release, the following tables now support custom columns: Benefit calc frequency, Benefit calc rate, Benefit type, Work calendar, Work calendar holiday, Pay cycle, and Worker identification types.
 
 ### Leave mass enrollment, changing the tier basis to "Seniority date" doesn't refresh the initial accrual rate (318526)
 
@@ -63,13 +61,13 @@ When you mass enroll employees and change the tier basis, the initial accrual no
 
 Changes in this release eliminate duplication of placeholders when workflow notifications are sent.
 
-### Dimension fields aren't updated when using "Open in Excel" (176261)
+### Dimension columns aren't updated when using "Open in Excel" (176261)
 
 With this release, you can now update financial dimension using **Open in Excel** from the **Worker** page. 
 
-### Worker address created in Common Data Service isn't synced to Talent (317555)
+### Worker address created in Dataverse isn't synced to Talent (317555)
 
-With this change, addresses created in Common Data Service are updated in Talent: Core HR.
+With this change, addresses created in Dataverse are updated in Talent: Core HR.
 
 
 ## In preview
@@ -95,3 +93,6 @@ The ability to track employee time off and understand how time off is calculated
 ### Indicate instance type when provisioning Talent
 
 When provisioning a new instance of Talent, you will be able to indicate whether the instance type is **Production** or **Sandbox**, allowing for early testing of new features. All existing Talent instances will be updated to the Production instance type. If you want one of your existing instances to be updated to the Sandbox instance type, please contact Support to initiate the change request.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

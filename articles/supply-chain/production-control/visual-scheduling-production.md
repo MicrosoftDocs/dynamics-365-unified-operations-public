@@ -4,21 +4,18 @@
 title: Gantt chart for job scheduling 
 description: Production planners can control and optimize productions plans by using Gantt charts.
 author: johanhoffmann
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -41,7 +38,7 @@ A Gantt chart is a visual representation of scheduled activities within a define
 -   Jobs from planned production orders.
 -   Job scheduled project activities of type Hour forecasts.
 
-The Gantt chart can be opened in two different views, **Order view** and **Resource view**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). In **Order view**, activities are grouped under production orders. This can be useful, for example, if you want to maintain an overview of all the jobs belonging to the same orders. In **Resource view** all jobs are grouped under individual resources. This view can be useful when optimizing the plan at a resource level, for example, a machine or a group of machines. The Gantt charts shown in the illustrations below show **Order view** and **Resource view** with these key elements:
+The Gantt chart can be opened in two different views, **Order view** and **Resource view**. In **Order view**, activities are grouped under production orders. This can be useful, for example, if you want to maintain an overview of all the jobs belonging to the same orders. In **Resource view** all jobs are grouped under individual resources. This view can be useful when optimizing the plan at a resource level, for example, a machine or a group of machines. The Gantt charts shown in the illustrations below show **Order view** and **Resource view** with these key elements:
 
 1.  Gantt chart activity
 2.  Material shortage icon
@@ -51,10 +48,10 @@ The Gantt chart can be opened in two different views, **Order view** and **Resou
 
 ## Order view
 
-[![Order view](./media/orderview.png)](./media/orderview.png)
+[![Order view.](./media/orderview.png)](./media/orderview.png)
 
 ## Resource view
-[![Resource view](./media/resview.png)](./media/resview.png)
+[![Resource view.](./media/resview.png)](./media/resview.png)
 
 ## Activities
 The activities appear as bars and are organized in a time scale grid with a scheduled start and end time, making the length of the bars proportional to the time that is necessary to complete the activity. The activities are shown according to a time scale. You can adjust the time scale on the menu where you select a start and end date and a time unit, for example, hours or days. By adjusting the time scale you can set focus on a time interval in which you want to manage activities. 
@@ -108,25 +105,25 @@ It is not possible to schedule a job outside the defined time interval of the Ga
 
 In a network of activities, such as jobs belonging to the same production order, you can use the **Schedule previous jobs** function to schedule the previous jobs relative to a selected job in the network. In the following example, the highlighted activity is the selected job. The diagram shows before a previous job is scheduled and after the previous job is scheduled. 
 
-[![Schedule previous job](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Schedule previous job.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### Schedule next jobs
 
 You can use the **Schedule next jobs** function to schedule the next jobs relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job. The diagram shows before the next job is scheduled and after the next job is scheduled. 
 
-[![Schedule next job](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Schedule next job.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### Schedule around job
 
 You can use the **Schedule around job** function to schedule the next job and the previous job relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job. The diagram shows before a job is scheduled and after the job is scheduled. 
 
-[![Schedule around job](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Schedule around job.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### Arrange jobs
 
 You can use the **Arrange** function to arrange selected activities on the same resource. These activities can be in the same network of activities, but can also belong to different networks. When you use the arrange function the time gaps between the selected activities will be eliminated. You can use this function to optimize the capacity utilization of the resources. The diagram shows before a job is scheduled and after the job is scheduled. 
 
-[![Arrange job](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Arrange job.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### Reassign activities from one resource to another
 
@@ -161,5 +158,8 @@ The Gantt chart can be opened from the following pages.
 ## Additional resources  
 [Visual scheduling with Gantt chart for production and batch orders (Video)](https://youtu.be/BtbuShkGj4I)
 
-[Visual scheduling for production (demo script)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
+[Visual scheduling for production (demo script)](/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

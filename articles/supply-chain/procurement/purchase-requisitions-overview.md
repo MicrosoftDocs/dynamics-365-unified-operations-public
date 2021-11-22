@@ -3,28 +3,25 @@
 
 title: Purchase requisition overview
 description: This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
-author: mkirknel
-manager: AnnBe
+author: Henrikan
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
+ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 2174
+ms.custom: ["2174", "intro-internal"]
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -55,7 +52,7 @@ You can configure the purchase requisition workflow process to route a purchase 
 
 The following diagram shows the statuses that are assigned to a purchase requisition and a purchase requisition line as they move through the workflow process.  
 
-[![Purchase requisition header and line statuses](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Purchase requisition header and line statuses.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### Purchase requisition header and line status relationships
 
@@ -162,7 +159,7 @@ In some cases, you must start a request for quotation (RFQ) process to identify 
 You can put a purchase requisition on hold by selecting the **On hold** check box on the **Purchase requisition details** page. Processing of the purchase requisition can continue only after you remove the hold by clearing the check box.  
 
 > [!NOTE]
-> In eProcurement, the RFQ for your purchase requisition might allow vendors to add alternate lines. In this case, your purchase requisition will reflect approved alternates.
+> In e-procurement, the RFQ for your purchase requisition might allow vendors to add alternate lines. In this case, your purchase requisition will reflect approved alternates.
 
 ## Demand consolidation
 By consolidating purchase requisition lines from multiple purchase requisitions, you can increase your negotiating power with your vendors to achieve better pricing, lower shipping and handling costs, and reduced overhead costs.  
@@ -187,7 +184,7 @@ To create a purchase order for purchase requisition lines that aren't eligible f
 
 The process for demand consolidation starts when a purchase requisition is approved in a workflow and, if budget control is configured for your organization, when the budget reservations and pre-encumbrances have been recorded. The following diagram shows the process flow for demand consolidation.  
 
-[![Process flow for demand consolidation](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Process flow for demand consolidation.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 To consolidate approved purchase requisition lines, follow these steps:
 
@@ -198,8 +195,7 @@ To consolidate approved purchase requisition lines, follow these steps:
 5.  Create purchase orders for consolidated requisition lines or for purchase requisition lines in a consolidation opportunity.
 
 
-Additional resources
---------
+## Additional resources
 
 [Create a requisition for consumption](tasks/create-requisition-consumption.md)
 
@@ -207,3 +203,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

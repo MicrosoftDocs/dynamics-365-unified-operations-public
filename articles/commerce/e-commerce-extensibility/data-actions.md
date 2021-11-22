@@ -4,11 +4,9 @@
 title: Data actions
 description: This topic covers data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers data actions in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Data actions are JavaScript functions that are used in the Dynamics 365 Commerce architecture to help fetch and map data that is required by modules across applications.
 
 Data actions offer improved performance through the following features:
@@ -51,11 +46,6 @@ The Dynamics 365 Commerce platform includes a set of core data actions that can 
 Here is an example of a template TypeScript file that is created for a new data action.
 
 ```typescript
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
 import * as Msdyn365 from '@msdyn365-commerce/core';
 
 /**
@@ -162,6 +152,8 @@ TypeScript files for new custom data actions are created under the \\src\\action
 
 ## Additional resources
 
+[Data action cache options](data-action-cache.md)
+
 [Test data actions with mocks](test-data-action-mocks.md)
 
 [Page load data actions](page-load-data-action.md)
@@ -171,3 +163,6 @@ TypeScript files for new custom data actions are created under the \\src\\action
 [Core data actions](core-data-actions.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

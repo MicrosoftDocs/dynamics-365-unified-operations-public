@@ -3,12 +3,10 @@
  
 title: Lean pegging from sales orders
 description: This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans. 
-author: ChristianRytt
-manager: AnnBe 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Lean pegging from sales orders
 
@@ -59,3 +56,6 @@ This procedure focuses on validating the pegging tree from a sales line where th
 5. In the tree, select 'Sales line 000832\Kanban 000558\Issue for L0001\Kanban 000559'.
     * The job for the second kanban is also planned, because the entire pegging tree is planned. Notice that the kanban job status is changed from Not planned to Planned.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

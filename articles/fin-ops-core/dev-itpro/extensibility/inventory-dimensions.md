@@ -1,25 +1,18 @@
 ---
 
-# required metadata
-
 title: Add new inventory dimensions through extension
 description: This topic describes how to add new inventory dimensions through extensions.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -49,10 +42,10 @@ In addition to the 15 existing dimensions, Microsoft supports 10 generic dimensi
  
 This brings the total number of inventory dimensions in the standard application to 25:
 
-- 4 product dimensions: Color, Size, Style, and Config
+- 5 product dimensions: Color, Size, Style, Config, and Version
 - 5 tracking dimensions: Serial, Batch, Owner, Profile (Russia only), and GTD (Russia only)
 - 6 storage dimensions: Site, Warehouse, Location, Status, License Plate, and Pallet (for upgrade and migration only)
-- 10 unassigned generic dimensions: InventDimension1 to InventDimension10
+- 12 unassigned generic dimensions: InventDimension1 to InventDimension12
 
 Microsoft provides the physical schema.
 
@@ -70,7 +63,7 @@ The VAR provides the binding between the physical data model and logical impleme
 ## Details
 The first half of the solution is straight forward. A new class hierarchy is introduced. Each new dimension must be implemented in a new class deriving from either InventProductDimension or InventTrackingDimension. Currently, there is no support for storage dimensions. With this, ISVs can introduce new dimensions without having to change any of the logic on the InventDim table. 
 
-![InventDimensionClassHierarchy](media/InventDimensions1.png)
+![InventDimensionClassHierarchy.](media/InventDimensions1.png)
 
 To reference the new dimension in a strongly-typed fashion, the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color, and Size can be used as templates.
  
@@ -132,7 +125,7 @@ The VAR's job is to wire the ISV solutions to the available dimension fields on 
 - Extend the ProductDimensions or TrackingDimensions field groups on InventDim, and a few other tables, depending on the type of dimension.
 - Extend relations and index as needed on InventDim.
 
-![InventDimensionISVVARExtensions](media/InventDimensions4.png)
+![InventDimensionISVVARExtensions.](media/InventDimensions4.png)
 
 ## Known issues
 
@@ -155,4 +148,7 @@ The application supports many end-to-end business scenarios, for example creatin
 
 If needed, please log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.
  
-![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
+![InventDimensionFlavorScreenshot.](media/InventDimensions5.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

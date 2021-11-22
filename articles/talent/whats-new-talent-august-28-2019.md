@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Talent (August 27, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
-author: Darinkramer
-manager: AnnBe
-ms.date: 8/27/2019
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent for August 28, 2019.
+author: andreabichsel
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,19 +15,19 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: andreabichsel
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-08-27
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 for Talent (August 27, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Talent.
 
@@ -67,9 +65,9 @@ In this release, compensation analytics have been adjusted to accurately reflect
 
 With this release, the company placeholder displays the legal entity that is associated with the employment of the new employee.
 
-### The CDSJobPosition entity displays an error when valid to date is set (349387)
+### The CDSJobPosition table displays an error when valid to date is set (349387)
 
-In this release, the **Position detail** and the **Position duration** data sources on the **CDSJobPosition** entity allow for edits from Common Data Service to the **Date effective** fields. 
+In this release, the **Position detail** and the **Position duration** data sources on the **CDSJobPosition** table allow for edits from Dataverse to the **Date effective** columns. 
 
 ### For employee termination, the last day worked is populated on Assignment end date (332496)
 
@@ -91,4 +89,7 @@ For more information, see [Streamlined employee entry and navigation](./streamli
 
 ### Platform update 29
 
-For more details about Platform update 29, see [Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+For more details about Platform update 29, see [Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

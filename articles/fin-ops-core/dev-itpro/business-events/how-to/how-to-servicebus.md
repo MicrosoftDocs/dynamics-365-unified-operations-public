@@ -3,12 +3,10 @@
 
 title: Business events and Azure Service Bus
 description: This topic explains how to configure a Microsoft Azure Service Bus endpoint and how to consume a business event from Service Bus.
-author: ibenbouzid
-manager: AnnBe
+author: Sunil-Garg
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +15,10 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: imbenbou
+ms.author: sunilg
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
@@ -182,7 +179,7 @@ The business scenario involves sending an email or a message to a team channel w
 
 10. Select your trigger parameters. Be sure to use the correct names for the topic and subscription that you created.
 
-    This API polls Service Bus for new messages at a configurable recurrence (by default, every three minutes). If the volume of messages is low, the API will have a cost impact for unnecessary triggers, because Logic Apps is priced per trigger call and action run. However, you can implement a push architecture that uses Azure Event Grid in the middle. Service Bus can then push events to Event Grid when there are messages in a queue or a subscription. For more information, see [Azure Service Bus to Event Grid integration overview](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept).
+    This API polls Service Bus for new messages at a configurable recurrence (by default, every three minutes). If the volume of messages is low, the API will have a cost impact for unnecessary triggers, because Logic Apps is priced per trigger call and action run. However, you can implement a push architecture that uses Azure Event Grid in the middle. Service Bus can then push events to Event Grid when there are messages in a queue or a subscription. For more information, see [Azure Service Bus to Event Grid integration overview](/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept).
 
     <img alt="Logic apps trigger " src="../../media/BEF-Howto-servicebus-17.png" width="70%">
 
@@ -212,10 +209,13 @@ The business scenario involves sending an email or a message to a team channel w
 
     Next, you will select a final action, such as sending a notification email that includes customer payment details.
 
-18. Search for the **send email** action, and then sign in to your Microsoft Office 365 account.
+18. Search for the **send email** action, and then sign in to your Microsoft 365 account.
 19. Fill in the message with the required fields.
 
     <img alt="Logic apps action send email " src="../../media/BEF-Howto-servicebus-25.png" width="70%">
 
 20. Save your logic app.
 21. Trigger the business event by posting a customer payment. Then verify that the logic app runs, and that you receive an email that includes customer payment details.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

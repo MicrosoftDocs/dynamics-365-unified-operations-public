@@ -4,11 +4,9 @@
 title: Chinese vouchers
 description: This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 Finance.
 author: anasyash
-manager: AnnBe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.search.form: LedgerVoucherType_CN, VoucherTypeWizard_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261454
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -58,3 +55,6 @@ You can print a Chinese voucher either before or after you post the voucher. The
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Client FAQ
 description: This article provides answers to frequently asked questions about the Finance and Operations client.
 author: jasongre
-manager: AnnBe
 ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12334
 ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
@@ -61,3 +58,6 @@ The **View details** option is available in a couple of ways:
 
 - If a control has **View details** capabilities, and if the control has a value, that value is displayed as a hyperlink. You can click the hyperlink to open a page that contains additional details.
 - **View details** is also an option on shortcut menus. For more information about when shortcut menus are displayed when you right-click, see the previous section.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

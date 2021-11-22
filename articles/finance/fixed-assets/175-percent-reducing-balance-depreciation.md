@@ -4,11 +4,9 @@
 title: 175 percent reducing balance depreciation
 description: This topic gives an overview of the 175 percent reducing balance method of depreciation.
 author: saraschi2
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
@@ -72,7 +69,7 @@ If you select **Fiscal** as the depreciation year, the following options are ava
 
 ## Example of 175% reducing balance depreciation
 
-|                                |        |
+| Field                          | Value  |
 |--------------------------------|--------|
 | Acquisition cost               | 11,000 |
 | Salvage value                  | 1,000  |
@@ -93,3 +90,6 @@ The 175% reducing balance depreciation method divides 175 percent by the servic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

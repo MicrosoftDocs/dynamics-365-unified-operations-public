@@ -3,12 +3,10 @@
 
 title: Development and administration for Finance and Operations apps
 description: This page helps developers and IT Pros get started with Finance and Operations.
-author: robinarh
-manager: AnnBe
+author: tonyafehr
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,13 +15,12 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 
 # ms.tgt_pltfrm: 
-ms.custom: 62303
+ms.custom: "intro-internal"
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
-ms.search.scope: Operations
 # ms.search.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
@@ -34,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Development and administration for Finance and Operations apps
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Development and administration for Finance and Operations apps includes:
 
@@ -73,7 +72,13 @@ The Finance and Operations mobile app empowers your organization to mobilize its
 + IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don’t have constant network connectivity. 
 
 ## Data management and data entities
-Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities overview](data-entities/data-entities.md).
+Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using Dataverse, Power Apps, and Power BI. For more information, see [Data entities overview](data-entities/data-entities.md).
 
 ## Office integration
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration overview](office-integration/office-integration.md).
+
+## eLearning courses
+For online courses and training, check out [Dynamics 365 Finance and Operations on Microsoft Learn](/learn/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2cdeveloper).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

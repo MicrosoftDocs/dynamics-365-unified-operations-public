@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Create a collection letter sequence
-description: Use this task guide to create a collection letter sequence. 
-author: mikefalkner
-manager: AnnBe 
+description: Use this procedure to create a collection letter sequence. 
+author: abruer
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: CollectionLetterCourse
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Use this task guide to create a collection letter sequence. This task uses the USMF demo company.
+Use this procedure to create a collection letter sequence. This task uses the USMF demo company.
 
 1. In the Navigation pane, go to **Modules > Credit and collections > Setup > Set up collection letter sequence**.
 2. Click **New**.
@@ -62,3 +59,6 @@ Use this task guide to create a collection letter sequence. This task uses the U
 26. Expand the **Note** fastTab.
 27. Enter the text to appear on the collection letter for the selected collection letter code. You can translate this text in to multiple languages using the Translations menu above the note box.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

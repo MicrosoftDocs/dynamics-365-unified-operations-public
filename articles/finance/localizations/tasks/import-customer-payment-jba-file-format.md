@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Import customer payment with JBA file format
-description: In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
+description: This topic explains how to import EFT files with a JBA format. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, SrsReportViewerF
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -57,3 +54,6 @@ This procedure was created using the demo company data JPMF.
 11. In the Account field, specify the values 'JPMF-000001'.
 12. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

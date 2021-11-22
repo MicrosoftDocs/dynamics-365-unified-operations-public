@@ -4,11 +4,9 @@
 title: Calculate fixed asset depreciation across legal entities
 description: Fixed asset depreciation can be run across legal entities in a single step. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, Le
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -54,3 +51,6 @@ Fixed asset depreciation can be run across legal entities in a single step. This
 5. Click Create journal.
 6. Go to Fixed assets > Journal entries > Fixed assets journal.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

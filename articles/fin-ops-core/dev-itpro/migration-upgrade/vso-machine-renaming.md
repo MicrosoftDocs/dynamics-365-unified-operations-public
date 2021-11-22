@@ -2,13 +2,11 @@
 # required metadata
 
 title: Rename a local development (VHD) environment
-description: This topic explains how to rename a local development (VHD) environment so that you can access a Microsoft Azure DevOps project across multiple machines and successfully install One Version service updates.
+description: This topic explains how to rename a local environment so that you can access a Microsoft Azure DevOps project and install One Version service updates.
 author: MargoC
-manager: AnnBe
-ms.date: 01/03/2019
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 25911
 ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 A local development (VHD) environment must be renamed for the following scenarios:
 
-* **Accessing a single Microsoft Azure DevOps project across multiple machines:** Azure DevOps is required for version control. It was previously known as Visual Studio Online (VSO) or Visual Studio Team Services (VSTS). In development topologies, multiple virtual machines (VMs) can't access the same Azure DevOps project if they have the same machine name. Azure DevOps uses the machine name for identification. If you're developing on local VMs that were downloaded from Microsoft Dynamics Lifecycle Services (LCS), you might encounter issues.
+* **Accessing a single Microsoft Azure DevOps project across multiple machines:** Azure DevOps is required for version control. In development topologies, multiple virtual machines (VMs) can't access the same Azure DevOps project if they have the same machine name. Azure DevOps uses the machine name for identification. If you're developing on local VMs that were downloaded from Microsoft Dynamics Lifecycle Services (LCS), you might encounter issues.
 * **Installing One Version service updates:** One Version service updates, such as 8.1.x, must be installed in VHD environments by using a runbook. To help guarantee that the runbook is completed successfully, the VHD environments must be renamed. Additional steps that are described in this topic must also be completed.
 
 ## Rename the machine
@@ -99,3 +96,6 @@ Open a Microsoft Windows PowerShell command window as an admin, and run the foll
 cd <update folder>\MROneBox\Scripts\Update
 .\ConfigureMRDatabase.ps1 -NewAosDatabaseName AxDB -NewAosDatabaseServerName new_name -NewMRDatabaseName ManagementReporter -NewAxAdminUserPassword AOSWebSite@123 -NewMRAdminUserName MRUser -NewMRAdminUserPassword MRWebSite@123 -NewMRRuntimeUserName MRUSer -NewMRRuntimeUserPassword MRWebSite@123 -NewAxMRRuntimeUserName MRUser -NewAxMRRuntimeUserPassword MRWebSite@123
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Create service task relations   
 description: You can associate service tasks with service agreements or service orders in order to describe the service task to be completed for the agreement or order.
-author: ShylaThompson
-manager: AnnBe
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -37,13 +34,13 @@ You can associate service tasks with service agreements or service orders in ord
 
 ## Create a relation with a service agreement
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Go to **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
 
 2.  Select an existing service agreement, or create a new service agreement.
 
-3.  On the Action Pane, click the **Service tasks** button.
+3.  On the Action Pane, select the **Service tasks** button.
 
-4.  On the **Service tasks** form, press CTRL+N to create a new line, and then select a service task from the **Service task** list to attach the service task to the service agreement.
+4.  On the **Service tasks** form, select **New** to create a new line, and then select a service task from the **Service task** list to attach the service task to the service agreement.
 
 5.  On the **Description** tab, enter any internal or external note descriptions in the free text fields.
 
@@ -55,13 +52,13 @@ A service tasks relation that is created on a service agreement is available fro
 
 ## Create a relation with a service order
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Go to **Service management** \> **Common** \> **Service orders** \> **Service orders**.
 
 2.  Select an existing service order, or create a new service order.
 
-3.  On the Action Pane, click the **Service tasks** button.
+3.  On the Action Pane, select the **Service tasks** button.
 
-4.  From the **Service tasks** form, press CTRL+N to create a new line, and then select a service task from the **Service task** list to attach the service tasks to the service order.
+4.  From the **Service tasks** form, select **New** to create a new line, and then select a service task from the **Service task** list to attach the service tasks to the service order.
 
 5.  On the **Description** tab, enter any internal or external note descriptions in the free text fields.
 
@@ -79,3 +76,6 @@ Service task relations that are created on a service order are available on the 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

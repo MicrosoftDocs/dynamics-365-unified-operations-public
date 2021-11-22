@@ -4,11 +4,9 @@
 title: Display debit and credit amounts in ledger accounts for China
 description: This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: LedgerParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265884
 ms.assetid: 0f23b25b-45e5-4156-9e38-621a97046552
@@ -40,3 +37,6 @@ You can view credit and debit amounts for ledger accounts in two separate column
 1.  Click **General ledger** &gt; **Ledger Setup** &gt; **General ledger parameters**.
 2.  Set the **Show amount in debit/credit columns** slider to **Yes**.
 3.  Open **General ledger** &gt; **Inquiries and reports** &gt; **Voucher transactions** to confirm.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

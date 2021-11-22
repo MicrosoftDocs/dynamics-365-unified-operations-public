@@ -3,26 +3,23 @@
  
 title: Create a work class
 description: This procedure shows you how to set up a work class. 
-author: ShylaThompson
-manager: AnnBe 
+author: Mirzaab
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: WHSWorkClass
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -42,3 +39,6 @@ This procedure shows you how to set up a work class. Work classes are used to di
     * If you select a location type, this sets a restriction on where items can be put after they've been picked. This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.  
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

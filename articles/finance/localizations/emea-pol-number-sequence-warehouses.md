@@ -4,11 +4,9 @@
 title: Set up number sequences by warehouse
 description: This topic walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -63,3 +60,6 @@ You can set up a number sequence for sales packing slips by warehouse on the **A
 
 > [!NOTE]
 > You can also set up delivery document numbering by warehouse for a sales order. To do this, select a specific warehouse on the **Packing slip** page. After you post a packing slip, the order status will not change to **Delivered** or **Received** in the sales order until all sales lines for all warehouses are posted for the sales order. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

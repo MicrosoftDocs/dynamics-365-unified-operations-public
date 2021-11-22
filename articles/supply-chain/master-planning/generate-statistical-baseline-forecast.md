@@ -3,12 +3,10 @@
 
 title: Generate a statistical baseline forecast
 description: This topic provides information about the parameters and filters that are used in the calculation of demand forecasting. 
-author: roxanadiaconu
-manager: AnnBe
+author: ChristianRytt
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: ReqDemPlanCreateForecastDialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -72,13 +69,15 @@ The intercompany planning group, item allocation keys, and other filters can be 
 If the forecast is not generated for a big set of items, but, for example, for one item or one item allocation key at a time, then in order to get better performance, you can select the **Use request response mode** check box on the **Master planning - Setup - Demand forecasting** - **Demand forecasting parameters - Azure Machine Learning** tab.
 
 > [!NOTE]
-> A potentially flat looking forecast can be due to the historical data that has to be of a longer historical timeframe (a minimum 3 of time periods in order to pick out patterns, such as 3 years with monthly forecast). To get a better result, you can try changing the granularity of the time range or increate the time range.
+> A potentially flat looking forecast can be due to the historical data that has to be of a longer historical timeframe (a minimum 3 of time periods in order to pick out patterns, such as 3 years with monthly forecast). To get a better result, you can try changing the granularity of the time range or increase the time range.
 
-Additional resources
---------
+## Additional resources
 
 - [Demand forecasting setup](demand-forecasting-setup.md)
 
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

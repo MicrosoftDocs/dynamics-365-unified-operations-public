@@ -3,12 +3,10 @@
 
 title: Hazardous materials
 description: This topic provides information about hazardous material documents and information that is stored in your environment.
-author: lachlancashMS
-manager: AnnBe
+author: t-benebo
 ms.date: 01/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: 
 
@@ -39,7 +36,7 @@ Information about hazardous materials is set up in Product information managemen
 When you ship materials that are classified as dangerous goods, additional paperwork must be included with the shipments. The hazardous materials functionality lets customers store classification information and relate it to release items. This information can then be used to help prepare shipping documentation.
 
 > [!IMPORTANT]
-> To help manage shipments of dangerous goods, Microsoft Dynamics 365 Supply Chain Management lets you set up additional reference information that is related to products. You can also set up additional shipment documents. However, the system isn't automatically compliant with your country's or region's regulations. Instead, it's a tool that can help your overall program.
+> The hazardous materials features in Microsoft Dynamics 365 Supply Chain Management provide a collection of useful product information fields and related functionality that can help you record and reference information that is related to your hazardous products. These features can also help you design and print shipment documents that include some of the same information about any hazardous materials that you're shipping. However, the system won't automatically make you compliant with all applicable regulations in your country or region. Although these tools are intended to help you comply with common regulations, they are neither sufficient in themselves nor guaranteed to be so. Your organization is responsible for being aware of all applicable regulations and for taking all necessary steps to comply with them.
 
 Before you can use this functionality, the following setup is required:
 
@@ -64,3 +61,6 @@ To start to configure this information, create a regulation that you can use to 
 ## Warehouse management
 
 When a shipment is prepared, several new reports can be printed. These reports use the information that you set up in Product information management.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

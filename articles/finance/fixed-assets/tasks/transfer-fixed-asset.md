@@ -4,11 +4,9 @@
 title: Transfer a fixed asset
 description: This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +48,6 @@ This task guide will transfer the financial information for a fixed asset book f
     * Review results before transferring the fixed asset books.  
 10. Click **Transfer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up customer and vendor compensation
 description: This topic provides information about how to run the vendor and customer account compensation process for legal entities that have their primary address in Hungary or Poland.
 author: mrolecki
-manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 #ms.suite: 
 # ms.tgt_pltfrm: 
 ms.custom: 1691503
@@ -99,3 +96,6 @@ After you've created a compensation proposal in a journal, and your compensation
 **Q: Is the compensation function available for all countries or regions?**
 
 **A:** The compensation function is available only for legal entities that have their primary address in Hungary or Poland.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

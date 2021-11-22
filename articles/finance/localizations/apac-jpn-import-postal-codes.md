@@ -3,12 +3,10 @@
 
 title: Import postal codes for Japan
 description: This topic explains how to import postal codes for Japan.
-author: yijialuan
-manager: AnnBe
+author: EricWangChen
 ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: DirPartyTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -56,3 +53,6 @@ In Japan, the Japan Postal Office provides a ZIP code file that you can import i
 5. Set the source file format of the importing project to “CSV(Unicode)”.
 6. Click **Import**.
 7. Validate the results.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

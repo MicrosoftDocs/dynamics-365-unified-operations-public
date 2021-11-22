@@ -3,12 +3,10 @@
  
 title: Create a request for quotation
 description: This procedure shows you how to create a request for quotation. 
-author: mkirknel
-manager: AnnBe 
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: PurchRFQCaseTableListPage, PurchCreateRFQCase, InventLocationIdLookup, PurchRFQCaseTable, InventItemIdLookupSimple, EcoResCategorySingleLookup, UnitOfMeasureLookup, PurchRFQEditLines, PurchRFQEditLinesPrintOptions, VendRFQJournal, SrsReportViewerForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a request for quotation
 
@@ -70,7 +67,7 @@ After you've specified the basic information about your RFQ, you specify the goo
 7. In the **Vendor account** field, enter or select a value. Once you've selected a vendor, the status is Created. This means that the vendor information has been saved in the RFQ, but you have not sent the RFQ to the vendor. You can add a vendor to an RFQ regardless of the vendor status.  
 
 ## Send the RFQ to vendors
-1. On the **Action pane**, click **Send**. In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ.  
+1. On the **Action Pane**, click **Send**. In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ.  
 2. Click **Print**. This dialog allows you to print the RFQ. If you choose to print a reply sheet, the contents of this are defined in Procurement and Sourcing parameters. To choose how to print reply sheets, once you've opened the Print dialog, click Advanced printing options. One RFQ will be printed for each vendor containing the lines that have the status of Created or Sent. Canceled lines and lines with registered replies will not be printed.   
 3. Click **Cancel**.
 4. Click **OK**.
@@ -84,3 +81,6 @@ After you've specified the basic information about your RFQ, you specify the goo
 4. Close the page.
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

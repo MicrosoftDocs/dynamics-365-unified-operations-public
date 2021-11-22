@@ -2,13 +2,11 @@
 # required metadata
 
 title: Security roles in the public sector
-description: This article describes the functionality for public sector security roles. This functionality includes the Project manager and Purchasing agent roles for the public sector.
-author: ShylaThompson
-manager: AnnBe
+description: This topic provides information about public sector security roles including the Project manager and Purchasing agent roles.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: UserRequestListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19721
 ms.assetid: e26a6d93-851e-46be-8543-de2798909350
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -100,10 +97,12 @@ The **Purchasing agent - Public Sector** security role supports the public secto
 ## What do I do next?
 After the users are created, you assign them to roles on the **Assign users to roles** page.
 
-Additional resources
---------
+## Additional resources
 
-[Role-based security](../../dev-itpro/sysadmin/role-based-security.md)
-
+[Role-based security](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md)
 
 
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up sales tax codes
 description: This topic explains how to set up sales tax codes in Dynamics 365 Finance. 
 author: twheeloc
-manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 09/27/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: TaxTable, TaxData
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -44,8 +41,19 @@ This task uses the USMF demo company.
 8. On the **Action Pane** at the top of the interface, select **Sales tax code**.
 9. Select **Values**.
 10. Enter the value for this tax code in the **value** column.
-    - On the **Calculation** FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.  If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.     
+
+    On the **Calculation** FastTab, in the **Origin** field, if **Amount per unit** is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.  If the tax code is not a unit-based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.     
+
 11. Select **Save**.
 12. Close the page.
 13. Select **Save**.
 
+As of Microsoft Dynamics 365 Finance version 10.0.22, if you're using the [Tax service](../../localizations/global-tax-calcuation-service-overview.md), and the [**Support multiple VAT registration numbers**](../../localizations/emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
+
+- Standard VAT
+- Reduced VAT
+- VAT 0%
+- Excise
+- Other
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

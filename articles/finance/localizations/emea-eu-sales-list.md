@@ -4,11 +4,9 @@
 title: EU Sales list reporting
 description: This article provides information about European Union (EU) Sales list reporting.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: EUSalesList
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -34,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about European Union (EU) Sales list reporting.
 
-EU Sales list reporting
------------------------
+## EU Sales list reporting
 
 A supplier that is performing intra-community supplies of goods or services to businesses that are established within the European Union (EU) must submit a Declaration of Intra-Community Supplies (EU Sales list, or ESL). In general, the ESL must be submitted to tax authorities no later than the last day of the month after the calendar period that the ESL covers. The supplier must state its value-added tax (VAT) identification number on the ESL and must also state, by customer, the following information:
 
@@ -164,3 +160,6 @@ When you've completed the reporting process for a specific period (for example, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

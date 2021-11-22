@@ -4,11 +4,9 @@
 title: MY-00011 03 Generate Customer Credit note for Project sales
 description: This task walks you through creating and printing a project credit note for GST. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ProjProjectsListPage, ProjJournalTable, ProjJournalTransEmpl, Re
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
@@ -80,3 +77,6 @@ This task was created using the demo data company MYMF.
 14. Click OK.
     * Verify that the information on credit note report is correct.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

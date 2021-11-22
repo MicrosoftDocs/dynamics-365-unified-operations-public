@@ -4,11 +4,9 @@
 title: Set up depreciation books
 description: This procedure walks through the process of creating a new depreciation book and associate it with a fixed asset group. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: AssetDepBookTable, AssetGroupDepBookSetup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -58,3 +55,6 @@ This procedure walks through the process of creating a new depreciation book and
 6. In the Service life field, enter a number.
     * Notice the Depreciation periods field value is calculated after setting the Service life.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

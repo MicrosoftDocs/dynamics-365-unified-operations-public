@@ -1,13 +1,11 @@
 ---
 # required metadata
 title: Working clothes/special rigging accounting (Russia)
-description: This topics provides information about how to maintain working clothes and special rigging for Russia.
+description: This topic provides information about how to maintain working clothes and special rigging for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -15,12 +13,11 @@ ms.search.form:  HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -261,3 +258,6 @@ To reverse the issue of the working clothes or special rigging item, on the **Wo
 ## Additional resources
 
 - [Not valuable fixed assets (NVFAs) (Russia)](rus-not-valuable-assets.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,11 +3,9 @@
 title: Create or generate deferrals (Russia)
 description: This topic explains how to manually create deferrals and how to generate them by using a periodic task.
 author: anasyash
-manager: AnnBe
-ms.date: 06/28/2019
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -15,7 +13,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -46,27 +43,27 @@ You can use the **Deferrals** page to manually create a deferral. You must speci
     - **Standard** – Process the incoming VAT for factures that are related to deferrals by using the standard VAT deduction method.
     - **Proportionate** – Process the incoming VAT for factures that are related to deferrals by using the proportional VAT deduction method.
 
-    ![Deferrals page](media/rus-create-generate-deferrals-01.png)
+    ![Deferrals page.](media/rus-create-generate-deferrals-01.png)
 
 9. On the Action Pane, on the **Deferrals** tab, in the **Books** group, select **Deferrals models** to open the **Deferrals models** page.
 10. Define the deferrals model that must be applied for the deferral.
 
-    ![Deferrals models page](media/rus-create-generate-deferrals-02.png)
+    ![Deferrals models page.](media/rus-create-generate-deferrals-02.png)
 
 11. On the Action Pane, select **Transactions** to open the **Deferrals transactions** page.
 12. Review the transactions that are related to the selected model for the deferral, and then close the page.
 
-    ![Deferrals transactions page](media/rus-create-generate-deferrals-03.png)
+    ![Deferrals transactions page.](media/rus-create-generate-deferrals-03.png)
 
 13. On the **Deferrals models** page, on the Action Pane, select **Balance** to open the **Deferral balances** page.
 14. Review the balances that are related to the selected model for the deferral, and then close the page.
 
-    ![Deferral balances page](media/rus-create-generate-deferrals-04.png)
+    ![Deferral balances page.](media/rus-create-generate-deferrals-04.png)
 
 15. On the **Deferrals models** page, on the Action Pane, select **Writing off sum** to open **Deferrals writing off profile** page.
 16. On the Action Pane, select **Calculate** to review calculated writing-off amounts that are related to the selected model for the deferral.
 
-    ![Deferrals writing off profile page](media/rus-create-generate-deferrals-05.png)
+    ![Deferrals writing off profile page.](media/rus-create-generate-deferrals-05.png)
 
 ## Generate deferrals by using a periodic task
 
@@ -83,8 +80,6 @@ To automatically generate deferrals, you must set up the sequences of calculatio
 
     | Field             | Description                                                                       |
     |-------------------|-----------------------------------------------------------------------------------|
-    | Start date        | The start date of the deferral calculation period.                                |
-    | End date          | The end date of the deferral calculation period.                                  |
     | Sequence          | The sequence number that is specified on the **Standard expenses sequence** page. |
     | Description       | The sequence name.                                                                |
     | Channel           | The deferral output channel for the selected sequence.                            |
@@ -102,7 +97,7 @@ To automatically generate deferrals, you must set up the sequences of calculatio
 
     1. Select the line that includes the counter that you set up, and then, on the Action Pane, select **Calculate all** or **Calculate marked**.
     2. In the **Start date** and **End date** fields, enter the date range for the deferral calculation period.
-    3. Select the **Overwrite** check box to overwrite existing deferrals for the specified period that don't contain write-off vouchers or disposal vouchers.
+    3. Select the **Overwrite** check box to overwrite existing deferrals for the specified period that don't contain write-off vouchers or disposal vouchers. Only deferrals on which there was no write off or disposal operations will be recalculated.
     4. Select the **Preview** check box to view or modify the deferrals before they are created.
 
         When this check box is selected, a page that shows deferrals information appears before deferrals are created. Therefore, you can change the parameters for the deferrals that are created. When the check box is cleared, deferrals are automatically generated based on the parameters that were entered on the **Deferrals creating** page.
@@ -111,3 +106,12 @@ To automatically generate deferrals, you must set up the sequences of calculatio
     6. Go to **General ledger** \> **Deferrals** \> **Deferrals** to view the deferrals that are generated. To view the transaction details on the **Deferrals transactions** page, on the Action Pane, select **Deferrals models**, and then select **Transactions**.
 
 When you generate deferrals for vendor invoices by using the periodic task, deferral transaction vouchers of **Receipt** type are created.
+
+## View created deferrals
+
+To view manually and automatically created deferrals, go to **General ledger > Deferrals > Deferrals**.
+
+![Deferrals page, list of deferrals.](media/6_Deferrals.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

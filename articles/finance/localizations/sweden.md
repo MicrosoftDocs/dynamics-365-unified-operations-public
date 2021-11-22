@@ -4,11 +4,9 @@
 title: Sweden overview
 description: This topic provides links to documentation resources for Sweden. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Sweden
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,5 +33,10 @@ This topic provides links to documentation resources for Sweden.
 
 - [Export financial information for auditors in Sweden](emea-swe-sie-standard-report.md)
 - [Import payment formats](emea-swe-payment-formats-import.md)
-- [Cash register functionality](../../retail/localizations/emea-swe-cash-registers.md)
+- [Cash register functionality](../../commerce/localizations/emea-swe-cash-registers.md)
 - [Sales tax payment report for Sweden](emea-swe-sales-tax-payment-report-sweden.md)
+- [VAT declaration for Sweden](emea-swe-VAT-declaration-Sweden.md)
+- [Swedish Intrastat](emea-swe-intrastat.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

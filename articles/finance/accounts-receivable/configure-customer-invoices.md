@@ -4,11 +4,9 @@
 title: Create a customer invoice
 description: A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
@@ -172,3 +169,6 @@ The following fields change the behavior of the posting process.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

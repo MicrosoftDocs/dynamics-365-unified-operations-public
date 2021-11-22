@@ -4,11 +4,9 @@
 title: Cash overview Power BI content
 description: This topic describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
 author: saraschi2
-manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,9 +15,8 @@ ms.search.form:  BankTreasurerWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
@@ -42,10 +39,11 @@ The **Cash overview** Power BI content was created for individuals who are respo
 The following setup needs to be completed in order for data to display in **Cash overview** and **Bank management** Power BI visuals.
 
 1. Go to **System administration > Setup > System Parameters** to set **System currency** and **System Exchange Rate**.
-2. Go to **General Ledger > Setup > Ledger** to set **Accounting Currency** and **Exchange Rate Type**.
-2. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency, and Accounting currency and Bank currencies. To do this, go **General Ledger > Currencies > Currency exchange rates**.
-3. Configure and run Cash Flow Forecasting. For more information about how to set up Cash flow forecasting, see [Cash flow forecasting](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
-4. Go to **System administration > Setup > Entity Store** to refresh the **LedgerCovLiquidityMeasurement** aggregate measurement.
+2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
+3. Go to **General Ledger > Setup > Ledger** to set **Accounting Currency** and **Exchange Rate Type**.
+4. Define exchange rates between transaction currencies and accounting currency, accounting currency and system currency, and accounting currency and bank currencies. To do this, go **General Ledger > Currencies > Currency exchange rates**.
+5. Configure and run Cash Flow Forecasting. For more information about how to set up Cash flow forecasting, see [Cash flow forecasting](./cash-flow-forecasting.md). 
+6. Go to **System administration > Setup > Entity Store** to refresh the **LedgerCovLiquidityMeasurement** aggregate measurement.
 
 ## Accessing the Power BI content
 
@@ -82,3 +80,6 @@ The following table shows the entities that the **Cash overview** Power BI conte
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Summarized cash inflows, outflows, and balance using each company’s accounting currency |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Summarized cash inflows, outflows, and balance using the system currency for all companies |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Summarized net transaction amount and balance of currencies using the transaction currency |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

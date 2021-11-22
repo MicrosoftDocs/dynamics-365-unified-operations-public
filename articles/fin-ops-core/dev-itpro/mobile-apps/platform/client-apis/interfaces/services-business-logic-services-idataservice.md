@@ -1,31 +1,12 @@
 ---
-# required metadata
-
 title: DataService type
 description: Provides ability access data under the application workspace.
-author: shadykdc
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
+ms.author: tfehr
 ---
 
 # DataService type
@@ -103,3 +84,6 @@ getPageData(pageId: string, context: any, filter: any, allowedStaleness: number)
 
 #### Returns Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt;
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

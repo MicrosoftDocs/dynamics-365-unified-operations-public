@@ -3,12 +3,10 @@
  
 title: Set up an item arrival overview profile
 description: This topic focuses on the setup of an arrival overview profile. 
-author: ShylaThompson
-manager: AnnBe 
+author: yufeihuang
 ms.date: 07/30/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: WMSArrivalOverviewProfile   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up an item arrival overview profile
 
@@ -56,3 +53,6 @@ This topic focuses on the setup of an arrival overview profile. The arrival over
 17. Select **Save**.
 18. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

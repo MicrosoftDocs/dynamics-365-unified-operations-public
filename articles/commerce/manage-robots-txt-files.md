@@ -4,11 +4,9 @@
 title: Manage robots.txt files
 description: This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: brishoo
+ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: 
 
@@ -30,12 +27,9 @@ ms.dyn365.ops.version:
 
 # Manage robots.txt files
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The robots exclusion standard, or robots.txt, is a standard that websites use to communicate with web robots. It instructs web robots about any areas of a website that should not be visited. Robots are often used by search engines to index websites.
 
@@ -94,13 +88,11 @@ To delete a robots.txt file in Commerce, follow these steps.
 
 [Configure your domain name](configure-your-domain-name.md)
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-[Set up an online store channel](online-stores.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
-[Create an e-Commerce site](create-ecommerce-site.md)
-
-[Associate an online site with a channel](associate-site-online-store.md)
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
 
 [Upload URL redirects in bulk](upload-bulk-redirects.md)
 
@@ -113,3 +105,6 @@ To delete a robots.txt file in Commerce, follow these steps.
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

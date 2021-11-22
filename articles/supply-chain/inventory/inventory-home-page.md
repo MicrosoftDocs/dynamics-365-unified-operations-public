@@ -3,12 +3,10 @@
 
 title: Inventory management overview
 description: This topic provides an overview of Inventory management.
-author: ShylaThompson
-manager: AnnBe
+author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: InventParameters
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: 2094
+ms.custom: ["2094", "intro-internal"]
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -47,7 +44,7 @@ You can use Inventory management to perform the following tasks:
 The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Click the learning map below to expand it. This learning map will help you get started.
 
 
-[![Inventory learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
+[![Inventory learning map.](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
 ## Additional resources
 
@@ -59,7 +56,10 @@ To learn more, see [Inventory close](../cost-management/inventory-close.md).
 
 ### Manufacturing and Supply Chain Management blogs
 You can find opinions, news, and other information about Inventory management and other solutions on the
-[Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+[Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### Task guides
 Additional help is available as task guides. To access task guides, click the **Help** button on any page
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Configure proxies for on-premises environments
 description: This topic describes how you can secure the on-premises environment behind a proxy.
 author: faix
-manager: AnnBe
-ms.date: 12/09/2019
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -59,9 +56,9 @@ Perform the following steps in **each** node of type **OrchestratorType** in the
 
 The above procedure must be performed for all Orchestrator node VMs.
 
-## Whitelist URLs
+## Safe list URLs
 
-The LocalAgent needs to communicate with Azure resources. As a result, the following URLs should be whitelisted on the proxy or firewalls so that all **OrchestratorType** nodes can access them:
+The LocalAgent needs to communicate with Azure resources. As a result, the following URLs should be added to a safe list on the proxy or firewalls so that all **OrchestratorType** nodes can access them:
 
 ```Text
 - lcsapi.lcs.dynamics.com
@@ -72,3 +69,6 @@ The LocalAgent needs to communicate with Azure resources. As a result, the follo
 - dc.services.visualstudio.com
 - uswelcs1lcm.blob.core.windows.net
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Workflow system architecture
 description: This article describes the architecture of the workflow system.
-author: sericks007
-manager: AnnBe
+author: ChrisGarty
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56351
 ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the architecture of the workflow system.
 
-The workflow infrastructure consists of two components that are hosted on Application Object Server (AOS): the X++ workflow runtime and the managed workflow runtime.
+The workflow infrastructure consists of two components that are hosted on the Application Object Server (AOS): the X++ workflow runtime and the managed workflow runtime.
 
 The X++ workflow runtime consists of the following components:
 
@@ -52,7 +49,7 @@ Logically, the workflow infrastructure is an extension and is transparent to use
 
 The following figure shows the high-level architecture of the workflow infrastructure.
 
-[![workflow\_architecturediagram2016](./media/workflow_architecturediagram2016.png)](./media/workflow_architecturediagram2016.png)
+[![workflow\_architecturediagram2016.](./media/workflow_architecturediagram2016.png)](./media/workflow_architecturediagram2016.png)
 
 Users can use workflow pages and controls to participate in business processes.
 
@@ -66,3 +63,6 @@ Developers can create workflows for the objects that they have added. The follow
 | 4    | Both                     | This same messaging pattern is repeated, as required, throughout the lifecycle of the workflow instance. |
 
 The workflow architecture helps provide a reliable and durable messaging system, and also helps guarantee that the state of the workflow is always synchronized with the state of the application. If an unexpected hardware or software failure occurs, the workflow instance state is returned to its last known saved point, and the message stays in the queue. Therefore, from an architecture perspective, the recovery model is to fix the problem and resume the workflow.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

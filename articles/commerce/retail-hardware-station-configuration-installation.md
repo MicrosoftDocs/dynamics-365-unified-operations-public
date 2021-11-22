@@ -4,11 +4,9 @@
 title: Configure and install Retail hardware station
 description: This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: jashanno
-manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: RetailHardwareStation
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 27161
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
@@ -35,34 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
+This topic explains how to configure, download, and install the legacy Commerce hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
 
 > [!IMPORTANT]
 > It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
 
 ## Download Retail hardware station by using self-service
 
-### Configure a new Retail hardware station profile (Start here for Dynamics 365 for Retail, February 2016)
-
-> [!NOTE]
-> This procedure is required only if you're running the February 2016 (RTW) version of Retail. If you're running version 1611, start with the next procedure.
-
-1. Use your Microsoft Azure Active Directory (Azure AD) credentials to sign in to the Retail headquarters or Retail trial.
-2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**.
-3. On the **Hardware station profile** page, on the Action Pane, select **New**.
-4. In the **Hardware station ID** field, enter a unique hardware station ID.
-
-    > [!NOTE]
-    > The **Name** field is used for a description of the unique hardware station profile.
-
-5. In the appropriate fields, enter the port number, select a hardware profile, and select a package name.
-
-    > [!NOTE]
-    > Only one hardware station package is provided for an environment that has been loaded with demo data.
-
-6. On the Action Pane, select **Save**.
-
-### Configure a new Retail hardware station (Start here for Retail, version 1611 or later)
+### Configure a new Retail hardware station
 
 > [!NOTE]
 > If you're running the February 2016, non-upgraded version of Retail (Initial release), skip step 6.
@@ -84,16 +61,11 @@ This topic explains how to configure, download, and install Retail hardware stat
     > [!NOTE]
     > The value **Shared** signifies that the installation is a truly shared hardware station installation, and that it works through HTTPS communication. By contrast, the value **Dedicated** signifies that the hardware station is a part of Modern POS, and that it works through inter-process communication.
 
-6. Follow one of these steps, depending on the version that you're running:
-
-    - **For version 1611:** In the appropriate fields, enter the port number, select a hardware profile, and select a package name.
-
-        > [!NOTE]
-        > Only one hardware station package is provided for an environment that has been loaded with demo data, at environment creation time.
-
-    - **For the February 2016 version:** Select a hardware station profile.
+6. Select a hardware station profile.
 
 7. Enter the host name of the computer that you're installing Retail hardware station on. Additionally, enter the electronic funds transfer (EFT) terminal ID that is associated with that computer for merchant account information.
+
+8. To utilize the configuration file or initial installation using mass deployment, enter the certificate thumbprint that is to be used during the installation that's detailed in the next section.
 
 ### Download the Retail hardware station installer
 
@@ -113,15 +85,20 @@ This topic explains how to configure, download, and install Retail hardware stat
 
     > [!NOTE]
     > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
-    > - The correct installation package is automatically selected for download, based on the hardware station profile.
 
 6. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
-7. After the setup installer has been saved, on the Notification bar, select **Run**. (This step might differ, depending on your browser.)
+7. If needed for mass deployment or command line deployment, repeat the above steps for the configuration file download, which is a button next to the **Download** button that you previously selected.
+
+    > [!NOTE]
+    > - If the configuration file downloaded does not have the same base file name as the installer, either rename the XML configuration file to be the same base name or run the installer using the command line to specify the configuration file.
+    > - Note that the configuration file is not required for the installation of Commerce hardware station.
+
+8. After the files have been saved, run the installer. (This step might differ depending on your browser.)
 
 ### Run the installer
 
 > [!NOTE]
-> Before you run the Retail hardware station installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
+> Before you run the Retail hardware station installer, make sure that all [system requirements](../fin-ops-core/fin-ops/get-started/system-requirements.md) are met.
 
 The Retail hardware station installer first extracts the associated files and then begins the installation.
 
@@ -232,3 +209,6 @@ You can use Control Panel in Microsoft Windows to uninstall Retail hardware stat
 2. In Control Panel, select **Programs** &gt; **Uninstall a program**. The **Programs and Features** window opens.
 3. Select **Microsoft Dynamics 365 for Retail hardware station**, and then select **Uninstall** above the list of programs.
 4. Wait for the uninstaller to finish removing the program.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

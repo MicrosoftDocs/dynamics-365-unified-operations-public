@@ -2,13 +2,11 @@
 # required metadata
 
 title: Manage secrets for retail channels
-description: This topic explains how to extend the channel database.
+description: This topic explains how to manage secrets when you're using an extension with channels that require access to secrets.
 author: AamirAllaq
-manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 83892
 ms.search.region: Global
@@ -33,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to manage secrets when you're using an extension with channels that require access to secrets.
+This topic explains how to manage secrets when you're using an extension with channels that require access to secrets. Extensions will not be able to deploy any custom certificates in Commerce scale unit or add thumbprints or secrets in web.config files. The recommended approach for managing secrets is to use the Azure Key Vault, as noted in this topic.
 
 ## Key Vault setup
 
@@ -47,8 +44,8 @@ This topic explains how to manage secrets when you're using an extension with ch
 
 2. The IT pro or implementation partner follows these deployment and configuration steps:
 
-    1. Apply the extension to the customer environment. For details, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md).
-    2. Upload the desired secrets to Key Vault (or enter them). For details, see [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-overview)
+    1. Apply the extension to the customer environment. For details, see [Apply updates to cloud environments](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
+    2. Upload the desired secrets to Key Vault (or enter them). For details, see [What is Azure Key Vault?](/azure/key-vault/key-vault-overview)
     3. On the **Key Vault Parameters** page (**Head Office \> Key Vault Parameters**), configure the head-office client to connect to Key Vault.
     4. On the **Key Vault Parameters** page, specify the extension secret name for the Key Vault secret in the head-office client.
 
@@ -91,11 +88,18 @@ To read the secret in the CRT extension, follow these steps.
             if (requestedType == typeof(SaveCartRequest))
             {
                 // Sample code to get the secret in string format.
-                var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
-                string response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
-                // Sample code to get the secret in X509Certificate2 format.
-                var request = new GetUserDefinedSecretStringValueServiceRequest ();
-                X509Certificate2 response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceRequest>(request).Certificate;
+               
+                string result = null;
+                   
+                GetUserDefinedSecretStringValueServiceRequest keyVaultRequest = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
+                GetUserDefinedSecretStringValueServiceResponse keyVaultResponse = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(keyVaultRequest);
+                result = keyVaultResponse.SecretStringValue;
+
+                 GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: null, secretName: "SecretName", thumbprint: null, expirationInterval: null);
+                 GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
+
+                X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
+               
                 // custom code to additional processing with secrets.
             }
         }
@@ -127,3 +131,6 @@ When this approach is used for credential management, credential rotation is mor
 ## Offline support
 
 Offline support for credentials requires that the extension code handle failover to offline when Key Vault credentials aren't available or accessible.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

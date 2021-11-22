@@ -4,11 +4,9 @@
 title: Create and post budget journals for fixed asset acquisitions (Russia)
 description: This topic explains how to create and post a budget journal for a fixed asset acquisition for Russia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: BudgetModel
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -65,3 +62,6 @@ You can create financial plans and current budgets in the **Fixed assets** modul
 21. Select **Validate** \> **Validate** to verify the asset information in the journal.
 22. Select **Post** \> **Transfer to fixed asset budget** to transfer the transactions to the fixed asset budget.
 23. Select **Post** \> **Transfer to fixed asset and ledger budget** to transfer the transactions to the fixed asset and general ledger budget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

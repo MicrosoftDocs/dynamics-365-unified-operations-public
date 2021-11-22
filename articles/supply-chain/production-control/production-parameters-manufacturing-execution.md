@@ -4,11 +4,9 @@
 title: Production parameters in Manufacturing execution 
 description: This topic provides information about the setup of production parameters in Manufacturing execution. 
 author: johanhoffmann
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.search.form:  JmgProdParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -157,3 +154,6 @@ You can use the following settings if materials should always be manually deduct
 | Report as finished |   Automatic BOM consumption    | <strong>Never</strong>  |
 | Report as finished | Update finished report on-line | <strong>Status</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

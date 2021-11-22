@@ -3,12 +3,10 @@
 
 title: Configure approval processes in a workflow
 description: Use the following procedure to configure the properties of the approval process.
-author: sericks007
-manager: AnnBe
+author: ChrisGarty
 ms.date: 01/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: donaldc
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -190,3 +187,6 @@ An approval process consists of approval steps. Complete the following procedure
 1. In the workflow editor, double-click the approval process. The workflow editor displays the steps of the approval process.
 2. To add an approval step, drag the step from the **Workflow elements** area to the canvas.
 3. To configure an approval step, see [Configure approval steps in a workflow](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Plan case category security, case processes, and case categories
 description: This article describes the considerations and decisions that you must make during the planning process, before you begin to configure cases.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23581
 ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
@@ -89,3 +86,6 @@ The Case category hierarchy provides a list of categories that you can assign ca
     - If so, what are the activity category, type, purpose, and phase?
     - Should a follow-up activity for the case be created?
     - If so, what are the follow-up activity category, type, purpose, and phase?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

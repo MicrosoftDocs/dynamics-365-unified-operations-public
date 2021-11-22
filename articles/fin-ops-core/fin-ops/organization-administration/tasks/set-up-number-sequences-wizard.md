@@ -3,12 +3,10 @@
  
 title: Set up number sequences using a wizard
 description: This topic explains how to set up all required number sequences at the same time by using a wizard. 
-author: sericks007
-manager: AnnBe 
+author: SunilGarg
 ms.date: 07/18/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -42,3 +39,6 @@ Number sequences are used to generate readable, unique identifiers for master da
 4. Select **Next**.
 5. Select **Finish**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

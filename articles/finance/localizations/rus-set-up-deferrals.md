@@ -3,11 +3,9 @@
 title: Set up deferrals (Russia)
 description: This topic explains how to set up deferrals.
 author: anasyash
-manager: AnnBe
-ms.date: 06/28/2019
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -15,7 +13,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -114,7 +111,7 @@ Follow these steps to create write-off methods for deferred expenses.
 
 3. If you selected **Manual** in the **Type** field and **Amount** in the **Calculation type** field, on the Action Pane, select **Manual schedules** to create write-off schedules.
 
-![Writing off methods page](media/rus-set-up-deferral-01.png)
+![Writing off methods page.](media/rus-set-up-deferral-01.png)
 
 ## Value models
 
@@ -131,7 +128,7 @@ Follow these steps to create write-off methods for deferred expenses.
 
 3. On the Action Pane, select **Deferrals groups** to set up deferrals groups that are related to the selected value model.
 
-![Value models page](media/rus-set-up-deferral-02.png)
+![Value models page.](media/rus-set-up-deferral-02.png)
 
 ## Posting profiles
 
@@ -205,7 +202,7 @@ Follow these steps to create write-off methods for deferred expenses.
     </tbody>
     </table>
 
-![Deferrals posting profiles page](media/rus-set-up-deferral-03.png)
+![Deferrals posting profiles page.](media/rus-set-up-deferral-03.png)
 
 ## Deferrals groups
 
@@ -272,7 +269,7 @@ Follow these steps to create write-off methods for deferred expenses.
 
 The deferrals group that is set up has a one-to-one (1:1) relation to value model that is related to the posting profiles setup.
 
-![Deferrals groups page](media/rus-set-up-deferral-04.png)
+![Deferrals groups page.](media/rus-set-up-deferral-04.png)
 
 ## Sequence of calculation
 
@@ -291,9 +288,9 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
     | Sequence          | Enter the sequence number.                                              |
     | Description       | Enter a description of the calculation sequence.                        |
     | Channel           | Select the deferral output format for the calculation results.          |
-    | Channel reference | Select the deferred expense group to record the calculation results to. |
+    | Channel reference | Select the deferred expense group to record the calculation results to. If necessary, you can create deferrals for the bookkeeping accounting and tax accounting models at the same time by separating them with commas.|
 
-    ![Standard expenses sequence page](media/rus-set-up-deferral-05.png)
+    ![Standard expenses sequence page.](media/rus-set-up-deferral-05.png)
 
 3. On the Action Pane, select **Counters** to open the **Counter setup** page.
 4. On the Action Pane, select **New** to create counters for the calculation sequence.
@@ -379,7 +376,26 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
     </tbody>
     </table>
 
-    ![Counter setup page](media/rus-set-up-deferral-06.png)
+    ![Counter setup page.](media/rus-set-up-deferral-06.png)
+    
+    If you want to create a sequence of calculations to generate a deferrals master record, on the last line, in the **Output** field, specify **Data output**. The value of this line is the amount of the generated deferral.
+    
+The following table provides detailed instructions about how to fill in the **From**, **To**, **Period types**, and **Index** fields depending on the value in the **Line type** field.
+    
+| Line type          | Description                                                                                                                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Register           | Select a register in the **From** field or a range of registers in the **From** and **To** fields.                                                                                                                                                                         |
+| Line type          | Select a line number in the **From** field.                                                                                                                                                                                                                                  |
+| Rates              | Select a rate code in the **From** field.                                                                                                                                                                                                                                    |
+| Constant           | Enter a constant in the **From** field.                                                                                                                                                                                                                                      |
+| Price              | The price from the source document that is generated in the transaction will be selected. The **From** and **To** fields are not editable.                                                                                                                        |
+| Quantity           | The transaction will be selected from the quantity in the generated source document.                                                                                                                                                                                       |
+| Expense            | Select a range of expense or income codes in the **From** and **To**   fields to calculate the amount of expenses and income. The range can consist   of a single code.                                                                                                      |
+| Debit activity     | Select a range of accounts in the **From** and **To** fields on which the amount of debit activity will be calculated. The amount will be calculated   for the period defined in the **Period** types and **Index** fields. The   range can consist of a single account.   |
+| Credit activity    | Select a range of accounts in the **From** and **To** fields on which the amount of credit activity will be calculated. The amount will be calculated   for the period defined in the **Period types** and **Index** fields. The range can consist of a single account. |
+| Debit balance      | Select a range of accounts in the **From** and **To** fields on which the   amount of debit balance will be calculated. The amount will be calculated for   the period defined in the **Period types**  and **Index** fields. The range can consist of a single account.   |
+| Credit balance     | Select a range of accounts in the **From** and **To** fields on which the   amount of credit balance will be calculated. The amount will be calculated   for the period defined in the **Period types** and **Index** fields. The   range can consist of a single account.   |
+| Deferral write-off | Select a deferrals group in the **From** field to calculate the planned   write-off of deferrals in the current period.                                                                                                                                                      |
 
 5. To copy the counter settings from one calculation sequence to another, on the Action Pane, select **Copy counter** to open the **Copy aisle** dialog box.
 
@@ -406,11 +422,11 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
     | Base value model                | Select a default value model. |
     | VAT offset method for deferrals | Select a default VAT offset method for deferrals. |
 
-    ![Deferrals tab on the General ledger parameters page](media/rus-set-up-deferral-07.png)
+    ![Deferrals tab on the General ledger parameters page.](media/rus-set-up-deferral-07.png)
 
 3. On the **Number sequences** tab, in the **Number sequence code** field, select the number sequence code for the **Deferral ID** reference.
 
-    ![Number sequences tab on the General ledger parameters page](media/rus-set-up-deferral-08.png)
+    ![Number sequences tab on the General ledger parameters page.](media/rus-set-up-deferral-08.png)
 
 4. Go to **General ledger** \> **Journal setup** \> **Journal names**.
 5. On the Action Pane, select **New** to create a journal of the **Deferrals** type to work with deferrals.
@@ -419,7 +435,7 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
 8. In the **Journal type** field, select **Deferrals**.
 9. In the **Voucher series** field, select the number sequence that is used for voucher numbering.
 
-    ![Journal names page](media/rus-set-up-deferral-09.png)
+    ![Journal names page.](media/rus-set-up-deferral-09.png)
 
 ## Deferrals
 
@@ -485,3 +501,6 @@ Deferrals can be created manually, or they can be automatically generated by usi
     | Copy deferral    | Create a deferral that is identical to the selected deferral.           |
     | Deferrals models | Define deferrals models for the selected deferral.                      |
     | Source           | View the source that the deferral registration voucher is created from. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

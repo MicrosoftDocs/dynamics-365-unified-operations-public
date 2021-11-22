@@ -4,11 +4,9 @@
 title: Referenced fiscal documents for Brazil
 description: This topic provides an overview of referenced fiscal documents that are used in Brazil.
 author: sndray
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: FiscalDocument_BR, SalesEditLines, TmpFiscalReference_BR
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270224
 
@@ -103,3 +100,6 @@ Fiscal document text placeholders are predefined tags that represent specific va
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

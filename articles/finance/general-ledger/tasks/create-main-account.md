@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Create a main account
-description: This task guide steps through adding a main account to an existing chart of accounts. 
+description: This procedures walks through how to add a main account to an existing chart of accounts. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: MainAccount, CompanyInfoList
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide steps through adding a main account to an existing chart of accounts. This recording uses the USMF demo company.  
+This procedures walks through how to add a main account to an existing chart of accounts. This recording uses the USMF demo company.  
 
 1. Go to **Navigation pane > Modules > General ledger > Chart of accounts > Accounts > Main accounts**.
 2. Click **New**.
@@ -55,3 +52,6 @@ This task guide steps through adding a main account to an existing chart of acco
 21. In the **Currency translation type** field, select the method for calculating exchange rates for the account.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

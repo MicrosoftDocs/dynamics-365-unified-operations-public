@@ -3,12 +3,10 @@
 
 title: Financial period close workspace
 description: This article provides an overview of the Financial period close workspace and the associated configuration.
-author: ShylaThompson
-manager: AnnBe
+author: kweekley
 ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the Financial period close workspace and the associated configuration.
+This topic provides an overview of the **Financial period close** workspace and the associated configuration.
 
 Financial period close workspace
 
@@ -57,7 +54,7 @@ Two indicators are used for tasks:
 -   An exclamation point icon indicates that the task is past due. For tasks that are past due, the due date is also highlighted in red.
 -   A padlock icon indicates that the task depends on other tasks that aren't yet completed. A task that is blocked by dependencies can't be marked as completed. You can set dependencies for a task by using the **Set dependency** action.
 
-The task name is a hyperlink to the page owhere the user must go to complete the work. You can set this hyperlink by using the **Task link** field when you edit or create a task. 
+The task name is a hyperlink to the page where the user must go to complete the work. You can set this hyperlink by using the **Task link** field when you edit or create a task. 
 
 You can attach files, notes, images, and URLs to a task by using the **Attachments** action. For example, you can indicate journal numbers that are used as part of a task, add comments about a specific task, or attach a report file that was printed for a task. An icon appears in the **Attachment** column for the task if an attachment is present. 
 
@@ -73,7 +70,7 @@ Before you can use the **Financial period close** workspace, you must configure 
 
 On the **Resources** tab, you define the people who are involved in the closing processes. Any employee who will be responsible for a closing task must first be assigned here. You must also specify the employee's view of the workspace. The following options are available:
 
--   **Only assigned tasks** – The user will see only the tasks that are assigned to him or her.
+-   **Only assigned tasks** – The user will see only the tasks that are assigned to them.
 -   **All tasks and status** – The user will see all closing tasks and the status of the overall process.
 
 Users who have permissions to view only their assigned tasks won't be able to add tasks to the task list, edit tasks, or remove tasks from the task list.
@@ -113,3 +110,6 @@ After a closing schedule is completed, select the **Closed** option for it. The 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

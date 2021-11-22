@@ -4,11 +4,9 @@
 title: Low-cost fixed assets
 description: This topic provides information about low-cost fixed assets for Hungary.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: AssetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264684
 ms.search.region: Hungary
@@ -55,3 +52,6 @@ When you acquire an asset, you create an acquisition transaction from the pre-ac
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

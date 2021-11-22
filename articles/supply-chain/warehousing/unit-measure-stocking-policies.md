@@ -4,11 +4,9 @@
 title: Unit of measure and stocking policies
 description: This article describes how default units, unit sequences, and unit conversions are used in warehouse processes.
 author: perlynne
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorag
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 29611
 ms.assetid: 4b5ca875-9a06-416d-9ac0-cc3ab8f7338e
@@ -55,3 +52,6 @@ As part of the creation of released products, you must select default units for 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

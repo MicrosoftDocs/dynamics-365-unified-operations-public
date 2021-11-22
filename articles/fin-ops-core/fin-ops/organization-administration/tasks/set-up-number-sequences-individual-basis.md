@@ -3,12 +3,10 @@
  
 title: Set up number sequences on an individual basis
 description: This topic explains how to set up number sequences on an individual basis.  
-author: sericks007  
-manager: AnnBe 
+author: SunilGarg  
 ms.date: 08/16/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -36,7 +33,7 @@ This topic explains how to set up number sequences on an individual basis. Numbe
 2. Select **Number sequence**.
 3. In the **Number sequence code** field, type a value.
 4. In the **Name** field, type a value.
-5. On the **Scope parameters** FastTab, select a scope for the number sequence and select scope values from the drop-down list. The scope defines which organizations use the number sequence. In addition, number sequences that have a scope other than **Shared** can have segments that correspond to their scope. For example, a number sequence with a scope of **Legal entity** can have a legal entity segment. For more information about scopes, see [Number sequence overview](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
+5. On the **Scope parameters** FastTab, select a scope for the number sequence and select scope values from the drop-down list. The scope defines which organizations use the number sequence. In addition, number sequences that have a scope other than **Shared** can have segments that correspond to their scope. For example, a number sequence with a scope of **Legal entity** can have a legal entity segment. For more information about scopes, see [Number sequence overview](../number-sequence-overview.md). 
 6. Expand the **Segments** section.
     - Define the format for the number sequence by adding, removing, and rearranging segments.  
     - Number sequences of all scopes can contain *Constant segments* and *Alphanumeric segments*. Constant segments contain a set of alphanumeric characters that do not change. Use this segment type to add a hyphen or other separators between number sequence segments. Alphanumeric segments contain a combination of number signs (#) and ampersands (&). These characters represent letters and numbers that increment every time that a number from the sequence is used. Use a number sign (#) to indicate incrementing numbers and an ampersand (&) to indicate incrementing letters. For example, the format `#####_2014` creates the sequence `00001_2014`, `00002_2014`, and so on. At least one alphanumeric segment must be present. Scope segments, such as company or legal entity, are not required. However, if you do not include scope segments in the format, numbers for the selected reference are still generated per scope.  
@@ -44,3 +41,6 @@ This topic explains how to set up number sequences on an individual basis. Numbe
 8. Expand the **General** section. On the General FastTab, specify whether the number sequence is manual, and continuous or non-continuous. In addition, enter the lowest and highest numbers that can be used in the number sequence. We do not recommend changing a non-continuous number sequence to a continuous number sequence. The number sequence will not be truly continuous. This change may also cause duplicate key violations in the database. In addition, continuous number sequences have a larger effect on performance.   
 9. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

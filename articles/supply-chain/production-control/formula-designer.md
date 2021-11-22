@@ -3,12 +3,10 @@
 
 title: Formula designer
 description: This topic explains how to use the formula designer to analyze and maintain formulas in a tree view.
-author: cvocph 
-manager: AnnBe
+author: johanhoffmann 
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: conradv
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -125,3 +122,6 @@ Click **Setup** to customize the information that is shown in the tree view of t
 |     BOM     | Use the check boxes to select the criteria that are shown in the tree structure. The formula designer shows the selected criteria at the bottom of both tabs. |
 |    Route    |                                           Use the check boxes to select the criteria that are shown for the routes.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

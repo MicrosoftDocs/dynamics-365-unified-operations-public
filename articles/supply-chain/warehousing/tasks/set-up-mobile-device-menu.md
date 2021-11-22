@@ -3,12 +3,10 @@
  
 title: Set up a mobile device menu item for completing work of type Purchase order
 description: This topic shows how to set up a Mobile device menu item. 
-author: ShylaThompson
-manager: AnnBe 
+author: Mirzaab
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up a mobile device menu item for completing work of type Purchase order
 
@@ -71,3 +68,6 @@ This topic shows how to set up a Mobile device menu item. In this example, the m
 5. Select the arrow that points to the right.
 6. Select **Save**.
 7. Close the page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

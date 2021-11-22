@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Access application metadata by using ER configuration
-description: The steps in this topic explain how a Regulatory configuration service (RCS) user can design a new Electronic reporting (ER) model mapping by using the metadata in Finance and Operations.
+description: The topic describes how a Regulatory configuration service user can design a new Electronic reporting model mapping by using the metadata.
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/28/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -129,3 +126,6 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 > [!NOTE]
 > This way of getting information about application metadata is the only one available for locally deployed applications (when local business data (LBD), or on-premises, deployment model is used).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

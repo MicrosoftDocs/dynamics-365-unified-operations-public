@@ -3,14 +3,11 @@
 
 title: Open Data Protocol (OData)
 description: This topic provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
-author: Sunil-Garg
-manager: AnnBe
-
-ms.date: 03/26/2020
+author: peakerbl
+ms.date: 06/19/2020
 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -21,14 +18,13 @@ audience: Developer
 # ms.devlang: 
 
 ms.reviewer: sericks
-ms.search.scope: Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global
 ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -52,10 +48,13 @@ For more information about OData, see the following webpages.
 
 | Topic                                                               | Webpage                                                 |
 |---------------------------------------------------------------------|---------------------------------------------------------|
-| OData standards                                                     | <https://www.odata.org/documentation/>                   |
-| OData: Data access for the web, the cloud, mobile devices, and more | <https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/>    |
+| OData standards                                                     | [OData Version 4.01 documentation](https://www.odata.org/documentation/) |
+| OData: Data access for the web, the cloud, mobile devices, and more | [OData in ASP.NET Web API](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/) |
 
 The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
+
+> [!NOTE]
+> OData actions added via extensions are currently not supported.
 
 ## Addressing
 The following table describes the resources and the corresponding URLs in the Fleet Management sample.
@@ -72,7 +71,8 @@ The following table describes the resources and the corresponding URLs in the Fl
 ## OData services
 We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology.
 
-<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
+> [!NOTE]
+> When working with data entities using OData, all fields in the entity key must be provided to make a successful OData call.
 
 Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
 
@@ -91,7 +91,7 @@ The following are the high-level features that are enabled for the OData service
     - $expand (only first-level expansion is supported)
     - $select
 
-- The OData service supports serving driven paging with a maximum page size of 1,000.
+- The OData service supports serving driven paging with a maximum page size of 10,000.
 
 For more information, see: [OData actions that are bound to entities](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).
 
@@ -129,7 +129,7 @@ Batch requests are supported in the OData service. For more information, see [OD
 
 /data/$metadata provides annotations. EnumType is support in $metadata.
 
-![EnumType metadata](./media/metadata.png)
+![EnumType metadata.](./media/metadata.png)
 
 ### Cross-company behavior
 
@@ -252,7 +252,7 @@ OData enables an SQL-like language that lets you create rich queries against the
 | \[Your organization's root URL\]/data/Customers?$select=FirstName,LastName | List all the customers, but show only the first name and last name properties. |
 | \[Your organization's root URL\]/data/Customers?$format=json               | List all the customers in a JSON format that can be used to interact with JavaScript clients. |
 
-The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx).
+The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](/dotnet/framework/wcf/).
 
 ## Using Enums
 Enums are under namespace **Microsoft.Dynamics.DataEntities**. Enums can be included in an OData query is by using the following syntax.
@@ -328,10 +328,13 @@ public static void CreateVendor(Resources context)
 ```
 
 ### Handling duplicate names between enums and entities in metadata
-There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in gitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
+There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in GitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
 
 ### Array fields
 OData does not support array fields in entities. This must be taken into consideration when designing entities that will be used with OData.
 
 ### After restarting AOS, the first OData call may take a long time to process
-The first OData call processed by an AOS that was restarted may take a long time to process because the metadata is not being cached. This latency can be avoided by warming up OData on AOS startup. For more details, see  [Build OData metadata cache when the AOS starts](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup).
+The first OData call processed by an AOS that was restarted may take a long time to process because the metadata is not being cached. This latency can be avoided by warming up OData on AOS startup. For more details, see  [Build OData metadata cache when the AOS starts](../sysadmin/odata-warmup.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

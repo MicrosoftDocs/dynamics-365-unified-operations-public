@@ -3,28 +3,25 @@
 
 title: Collaborate with vendors by using the Vendor portal
 description: This topic describes how purchasing agents can use the Vendor portal to collaborate with external vendors during the purchase order confirmation process. This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.
-author: mkirknel
-manager: AnnBe
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: PurchTable, PurchVendorPortalRequests
+ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -100,12 +97,14 @@ The following table shows an example of the changes in status and version that a
 |                           You send the new version of the PO to the Vendor portal.                            |                                                                                                                                                                    The new version is registered in the Vendor portal, and the status is changed to <strong>In External Review</strong>.                                                                                                                                                                     |
 |                                The vendor approves the new version of the PO.                                 |                                                                                                                                                     The status is changed to <strong>Confirmed</strong>, either automatically, or when you receive the response from the vendor and then confirm the PO.                                                                                                                                                     |
 
-Additional resources
---------
+## Additional resources
 
 [Vendor portal user security](configure-security-vendor-portal-users.md)
 
-[Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

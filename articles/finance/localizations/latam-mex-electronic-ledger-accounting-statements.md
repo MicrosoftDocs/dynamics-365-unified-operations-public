@@ -4,11 +4,9 @@
 title: Electronic ledger accounting statements
 description: This article explains how to set up and generate the general ledger XML files that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
 author: sndray
-manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: ERSolutionTable, LedgerConsolidateAccountGroup, LedgerJournalTab
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265314
 ms.assetid: b4a95c26-a49d-4a1d-bf70-90f457df2ddf
@@ -242,3 +239,6 @@ This task walks through all necessary steps to configure the generation of elect
 - [CFDI layout version 3.3](latam-mex-cfdi-3-3.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

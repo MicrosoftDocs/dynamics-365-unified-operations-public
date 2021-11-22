@@ -3,28 +3,25 @@
 
 title: Asset fault cost control
 description: This topic explains asset fault cost control in Asset Management.
-author: josaw1
-manager: AnnBe
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetCostControlFault 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -64,6 +61,9 @@ This example shows an asset fault cost control calculation.
 - The **Actual cost** field shows posted costs on work orders. 
 - The **Committed cost** field shows total costs that your company is committed to in relation to work orders.
 
-    ![Figure 1](media/05-controlling-and-reporting.png)
+    ![Figure 1.](media/05-controlling-and-reporting.png)
 
 For information about how to set up faults, see the [Fault management](../setup-for-work-orders/fault-management.md) topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Power BI integration with Entity store
-description: Entity store is an operational data store that is included with Microsoft Dynamics 365 Finance. This topic describes how Entity store enables Power BI integration.
+description: This topic describes how Entity store enables Power BI integration.
 author: MilindaV2
-manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: BIMeasurementDeployManagementEntityStore
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265974
 ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
@@ -41,7 +38,7 @@ Entity store is an operational data store that is included with the application.
 ## Power BI DirectQuery mode
 In the February 2016 release of Microsoft Dynamics AX, you could create Power BI reports by using OData endpoints that are exposed via data entities (both aggregate data entities and detailed or regular data entities). Although this approach is still supported, Entity store also lets power users create Power BI DirectQuery reports.
 
-[![DirectQuery mode](./media/entity-store-architecture-1024x587.jpg)](./media/entity-store-architecture.jpg)
+[![DirectQuery mode.](./media/entity-store-architecture-1024x587.jpg)](./media/entity-store-architecture.jpg)
 
 As the preceding illustration shows, DirectQuery is a reporting mode that runs reports directly on Entity store. In this reporting mode, data isn't staged in Power BI caches. This mode provides two immediate benefits:
 
@@ -53,7 +50,7 @@ Additionally, data doesn't leave your environment, because no data is cached in 
 ## Stage aggregate measurements in Entity store
 Aggregate measurements are a star schema that is modeled for analytical scenarios. In the February 2016 release, we enabled real-time, in-memory aggregate measurements. By using real-time aggregate measurements, you can enable embedded charts and key performance indicators (KPIs) that react to real-time operations on data. For information, see [Transition from Analysis Services cubes to aggregate models](../migration-upgrade/in-memory-real-time-aggregate-models.md). Real-time aggregate measurements take advantage of the in-memory, non-clustered columnstore index (NCCI) technology. Visuals and aggregate calculations that are built over real-time aggregate measurements reflect transactions within seconds. In the platform update 1 (May 2016) release, we enabled aggregate measurements that can be staged in Entity store. Aggregate measurements that are staged in Entity store can be used for near-real-time analytical scenarios where large volumes of data must be explored by using Power BI. As a developer, you learned how to model an aggregate measurement for real-time analytics in [Model aggregate data](model-aggregate-data.md). In the platform update 1 (May 2016) release, we also added the capability to model aggregate measurements that can be staged in Entity store. In Microsoft Visual Studio, you can specify **StagedEntityStore** as the usage property of an aggregate measurement. This new property was added in May 2016. Previously, **InMemoryRealTime** was available as the usage property.
 
-![New StagedEntityStore usage property in Visual Studio](media/new-usage-property-in-VS.png)
+![New StagedEntityStore usage property in Visual Studio.](media/new-usage-property-in-VS.png)
 
 However, you might wonder why you would model an aggregate measurement so that it can be staged? Why wouldn’t you use in-memory real-time aggregate measurements all the time? There are several reasons for using the **StagedEntityStore** pattern:
 
@@ -65,20 +62,12 @@ However, you might wonder why you would model an aggregate measurement so that i
 If one of the preceding reasons covers your situation, you should stage your aggregate measurement in Entity store and it use for Power BI integration.
 
 ## Update Entity store
-In the client, you can find the **Entity Store** page at **Systems administration** &gt; **Setup** &gt; **Entity Store**.
-
-[![Entity Store page](./media/entity-store-form-1024x548.jpg)](./media/entity-store-form.jpg)
-
-This page includes a list of aggregate measurements. You can stage any of these aggregate measurements in Entity store. If you're a developer and are familiar with the aggregate measurements that are available in the Application Object Tree (AOT), you might wonder why some aggregate measurements aren't shown here. If you have aggregate measurements that you migrated from AX 2012 R3 (that is, SQL Server Analysis Services projects that were migrated as part of the upgrade process), they can't be deployed until a developer changes the usage property to **StagedEntityStore**. This behavior is intentional. We have enabled best practice warnings and errors that are intended to capture some of the common upgrade issues that affect aggregate measurements. You should fix best practice errors and warnings if you plan to use near-real-time (NCCI) mode. As of the May 2016 update, the administrator must schedule a periodic update by clicking **Refresh** on the **Entity Store** page. You can use the **Refresh** button for a one-time update (that is, demo) or to schedule periodic updates, as shown in the following illustration.
-
-[![Configure refresh dialog box](./media/retail-cube-refresh-1024x548.jpg)](./media/retail-cube-refresh.jpg)
-
-The batch framework is used for scheduling. Therefore, refresh jobs can be monitored, load balanced, and prioritized by using the capabilities of the batch framework. As of the May 2016 update, we support only full updates. However, we will enable incremental updates soon. Eventually, in a future update, the system will update Entity store based on actual usage patterns. Therefore, as an administrator, you will have to use the **Configure refresh** dialog box only as an exception.
+Entity store refresh is automated and managed by the system. In the client, you can find the **Entity Store** page at **Systems administration** &gt; **Setup** &gt; **Entity Store**. For more information, see [Automated Entity store refresh](./automated-entity-store-refresh.md).
 
 ### Connecting to the Entity store database
 For troubleshooting and diagnostics, you can connect to the Entity store database directly from a related sandbox environment.  To connect:
 
-1. Use Remote Desktop to access the sandbox.  The RDP file can be downloaded from the **Environment Details** page after you have whitelisted your IP address.
+1. Use Remote Desktop to access the sandbox.  The RDP file can be downloaded from the **Environment Details** page after you have included your IP address in a safe list.
 2. Open SQL Server Management Studio, and connect to the server specified on the **Environment Details** page.  
     * Find the section titled **Database Accounts**.  Locate the entry for the user with the name **axdwadmin**.  
     * The server name is the first portion of the **SQL Server\Database Name** field.  This should be used in the format of **SQLServerName.database.windows.net** where SQLServerName is the value from LCS.
@@ -86,3 +75,6 @@ For troubleshooting and diagnostics, you can connect to the Entity store databas
     * The login will be axdwadmin and the password will be the value from LCS.
 3. Using the **Options** button or by browsing to the **Connection Properties** tab, change the **Connect to database** property from the default value to your **Database Name** value from LCS.
 4. Click **Connect** to access the database.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

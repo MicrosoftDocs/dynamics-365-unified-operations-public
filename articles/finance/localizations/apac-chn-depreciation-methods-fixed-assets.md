@@ -4,11 +4,9 @@
 title: Fixed assets depreciation methods for China
 description: This topic describes the depreciation method set up for legal entities in China.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.search.form: AssetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265244
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -47,3 +44,6 @@ To create a depreciation profile:
 For more information, see [Setup fixed asset depreciation allocation](./tasks/fixed-asset-depreciation-allocation.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

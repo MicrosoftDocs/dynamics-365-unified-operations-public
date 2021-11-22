@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Configure and manage database logging
-description: This topic provides information about database logging. It explains how to set up database logging, how to manage security and performance, and how to clean up database logs.
+title: Configure database logging
+description: This topic describes how to set up database logging, how to manage security and performance, and how to clean up database logs.
 author: hasaid
-manager: AnnBe
 ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 57201
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure and manage database logging
+# Configure database logging
 
 [!include [banner](../includes/banner.md)]
 
@@ -73,7 +70,7 @@ Here are some practices that Microsoft recommends:
 
 You can use the **Logging database changes** wizard to set up database logging. This wizard provides a flexible way to set up logging for tables or fields.
 
-1. Go to **System administration** \> **Setup** \> **Database** \> **Database log setup**.
+1. Go to **System administration** \> **Setup** \> **Database log** \> **Database log setup**.
 2. Select **New** to open the **Logging database changes** wizard.
 3. Complete the wizard.
 
@@ -97,3 +94,6 @@ The consistency check will re-create any missing database log triggers. It will 
 
 1. Go to **System administration** \> **Inquiries** \> **Database** \> **Database log**.
 2. On the **Database log** page, select **Consistency check**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

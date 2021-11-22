@@ -4,11 +4,9 @@
 title: Create cost objects 
 description: This procedure shows how to create cost objects by importing the cost center financial dimension into Cost accounting via a data connector. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: CAMDimension, CAMAXFinancialDimensionMemberProviderConfiguration
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -54,3 +51,6 @@ This procedure shows how to create cost objects by importing the cost center fin
 ## View the imported cost centers
 1. Click View dimension members.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

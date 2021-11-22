@@ -4,11 +4,9 @@
 title: Import a database
 description: This topic explains how to import a database for Finance and Operations apps.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,11 +16,10 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
 
@@ -33,6 +30,10 @@ ms.dyn365.ops.version: 8.1.3
 [!include [banner](../includes/banner.md)]
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to import a golden configuration database into a sandbox user acceptance testing (UAT) environment.
+
+## Prerequisites
+
+Database import isn't applicable to LCS projects that are configured for a Dynamics AX 2012 upgrade. Therefore, import will be blocked if the **Legacy system** field at **Project Onboarding** \> **Project overview** is set to **AX2012 Upgrade**.
 
 ## Self-service import database
 
@@ -53,6 +54,8 @@ Specific activities must be completed when you import a database backup into a s
 * Make sure that system Help and task guides are reconnected.
 * Make sure that batch jobs are set to a status of **Waiting**.
 * Make sure that users are re-enabled.
+* Make sure that dual-write is relinked if required.
+* Make sure that dual-write is relinked if required.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 ### Environment admin
 
@@ -63,3 +66,6 @@ If you've used the Admin User Provisioning Tool on your environment to change th
 ## Steps to complete after a database import for environments that use Commerce functionality
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

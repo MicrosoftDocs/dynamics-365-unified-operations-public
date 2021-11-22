@@ -4,11 +4,9 @@
 title: GB-00002 Set up item sales tax groups for reverse charge VAT
 description: This task walks you through setting up item sales tax groups, assigning the default values to products and procurements categories subject to reverse charge VAT for the United Kingdom. 
 author: epodkolz
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: TaxItemGroup, DefaultDashboard, EcoResProductDetailsExtended, Pr
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
@@ -93,3 +90,6 @@ REV-17.5 – negative value
 > - Domestic reverse charge. For example, the purchase of UK services, gold, computers chips, or mobile phones.
 > - European service purchase. For the European goods (items) purchasing, the **Use tax** can be activated on the sales tax group.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

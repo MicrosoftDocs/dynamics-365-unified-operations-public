@@ -1,31 +1,24 @@
 ---
-# required metadata
-
 title: Acceptance test library Code generation wizard
 description: This topic provides information about the Code generation wizard for the Acceptance test library.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +26,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Acceptance test library Code generation wizard
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 The Acceptance test library (ATL) code generator quickly generates and updates new ATL entities, queries, and specifications, based on tables and data entities.
 
@@ -91,3 +82,6 @@ Follow these steps to create the `AtlSpec` class by using the **Code generation*
 ### Additional optional steps
 
 Add a `spec` method to the data class that returns an instance of the `AtlSpec` class that you created earlier in this topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

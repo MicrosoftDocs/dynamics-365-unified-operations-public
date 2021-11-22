@@ -3,12 +3,10 @@
  
 title: Create a purchase order governed by budget
 description: Use this procedure to create a purchase order that is checked for available budget. 
-author: ShylaThompson
-manager: AnnBe 
+author: AndersGirke
 ms.date: 06/20/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,13 +14,12 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: aevengir
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -66,3 +63,6 @@ Use this procedure to create a purchase order that is checked for available budg
 4. Click Budget check errors or warnings.
 5. Click Close.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

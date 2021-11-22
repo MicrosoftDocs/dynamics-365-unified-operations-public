@@ -3,12 +3,10 @@
 
 title: Credit and collections overview
 description: This topic provides an overview of the functionality for credit and collections.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -84,3 +81,6 @@ For descriptions of these concepts, see [Collections management key concepts](./
 [Credit holds for sales orders](./cm-sales-order-credit-holds.md)
 
 [Customer credit management periodic tasks](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

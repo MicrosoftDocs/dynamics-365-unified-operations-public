@@ -4,11 +4,9 @@
 title: Record a vendor invoice in the invoice journal
 description: This task guide will show how to record vendor invoices that are not associated with purchase orders. 
 author: abruer
-manager: AnnBe 
 ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: VendInvoiceWorkspace, LedgerJournalTable, LedgerJournalTransVend
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -46,7 +43,12 @@ This task guide will show how to record vendor invoices that are not associated 
     * The **Sales tax group** will be default from the vendor account.  
     * The **Item sales tax group** will be default from the main account specified in the **Offset account** field.  
     * The **Due date** will be calculated based on the Terms of payment.  
-    * The **Cash discount** will default from the Vendor account.  
+    * The **Cash discount** will default from the Vendor account.
+12. If you have enabled Vendor invoice journal workflow, click **Workflow > Submit**.
+    * When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is On hold or Closed for ledger posting.
 12. Click **Post**.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Delivering ISV solutions using One Version
 description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -15,13 +13,12 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-4-12 
 ms.dyn365.ops.version: Platform update 24 
 ---
@@ -92,21 +89,21 @@ The following sections define and describe the aspects of backward compatibility
 
 ### Runtime compatibility
 
-All new updates are intended to be runtime backward-compatible. This compatibility covers both binary compatibility and functional compatibility. Runtime compatibility means that customizations that exist in production and sandbox environments will continue to work after new updates are deployed in those environments. These updates include both standard platform updates and application updates.
+All new updates are intended to be runtime backward-compatible. This compatibility covers both binary compatibility and functional compatibility. Runtime compatibility means that customizations that exist in production and sandbox environments will continue to work after new updates are deployed in those environments. These updates include both service updates and quality updates.
 
-Runtime compatibility also means that changes to the platform will be backward-compatible with customizations that were compiled on an earlier platform. These changes include changes to the compiler.
+Runtime compatibility also means that changes made by Microsoft to the platform will be backward-compatible with customizations that were compiled on an earlier platform.
 
-Binary compatibility is backwards only. You can compile a customization on an older application and platform, and deploy it to a customer environment that has been updated to a later version. You cannot deploy code compiled on a later version than the one running on the environment you deploy to.
+Binary compatibility is backwards only. You can compile a customization on an older platform, and deploy it to a customer environment that has been updated to a later version. You cannot deploy code compiled on a later version than the one running on the environment you deploy to.
 
 ### Design-time compatibility
 
-Design-time backward compatibility means that developers can apply updates to their development environments and successfully compile their code without having to make any changes.
+Design-time backward compatibility (that is, compile-time compatibility) means that developers can apply updates to their development environments and successfully compile their code without having to make any changes.
 
 You must be aware of how APIs in your solution are used in your customers' implementations, and how you can use these APIs without causing breaking changes. As part of this effort, you must pay careful attention to what is changed and rely on engineering best practices. For examples of changes that you should avoid, see [Breaking changes](../extensibility/breaking-changes.md).
 
 You should try to meet a bar that resembles the bar that Microsoft sets. In that way, both you and Microsoft can help avoid creating regressions.
 
-All changes are intended to be binary compatibility, and Microsoft also aims for design-time compatibility. However, there is one category of required changes that is **not** design time–compatible but remains binary-compatible. After an update is applied, new errors or warnings might occur when your code is compiled. Here are some examples of these changes:
+All Microsoft updates are intended to be binary (runtime) compatible, and Microsoft also aims for design-time compatibility. However, there is one category of required changes that is **not** design time–compatible but remains binary-compatible. After an update is applied, new errors or warnings might occur when your code is compiled. Here are some examples of these changes:
 
 - Microsoft makes an enumeration extensible.
 - Microsoft marks an API as obsolete or internal.
@@ -124,7 +121,7 @@ We recommend that you follow a similar approach for your ISV solutions. You will
 
 As the following illustration shows, the frequency of your new releases can be independent of Microsoft releases. You should consider adopting a strategy for source code branching, as described in the [Branches and builds](#branches-and-builds) section of this topic.
 
-![Branching strategy](media/oneversion-isv-branch.png)
+![Branching strategy.](media/oneversion-isv-branch.png)
 
 What is essential is the quality of every update that is released. Although testing helps guarantee quality, quality must also be built in during the design and implementation phases. In the One Version model, there are some new dimensions to consider, as described in the following sections.
 
@@ -194,7 +191,7 @@ The currently released product that is maintained in the servicing branch should
 
 If the testing is successful, this step will validate that a customer installation of the current version of your ISV solution won't have to be updated when Microsoft broadcasts the new release to the customer.
 
-If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
+If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
 ### Currently released products – Testing design-time compatibility
 
@@ -204,7 +201,7 @@ You should run your suite of automated developer tests, automated functional tes
 
 If the testing is successful, this step will validate that your ISV solution won't have to be updated even if source code is supplied to the customer and the customer recompiles the ISV solution.
 
-If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, it turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
+If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, it turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
 ### Currently released products – Updating the base build
 
@@ -214,7 +211,7 @@ As Microsoft updates your customers to new releases, you should periodically upd
 
 You validate your new solution development on either the latest released version or the released version that you plan for to use for servicing when your new release goes out. However, in both cases, consider doing validation on the most current version. This validation will help with early discovery of issues or uptake work that you must do.
 
-If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process.
+If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](../../fin-ops/get-started/one-version.md#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process.
 
 ## Deploying updates
 
@@ -246,3 +243,6 @@ Here are some areas where alignment will be required:
 Binary compatibility is supported, provided that you don't recompile. We recommend that your ISV solution not be compiled in customer environments. Instead, you should deploy precompiled binaries that you've prepared and validated. Your solution binaries can then be created from your servicing branch, based on an earlier version, when this approach is practical.
 
 If an implementation partner or customer compiles your solution in an updated environment, new warnings and errors might occur, as was mentioned in the [Design-time compatibility](#design-time-compatibility) section of this topic. Therefore, we recommend that implementation partners not compile your solution. However, this recommendation doesn't mean that you shouldn't share your source code to help support debugging, for example. You should just consider taking steps to avoid compilation of your code, so that implementation partners aren't exposed to design-time issues.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

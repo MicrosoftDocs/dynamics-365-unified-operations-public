@@ -3,12 +3,10 @@
 
 title: Maintenance schedule cost
 description: This topic explains maintenance schedule cost in Asset Management.
-author: josaw1
-manager: AnnBe
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -52,11 +49,14 @@ In Asset Management, you can calculate budget costs on maintenance schedule line
 
 5. Click **OK** to start the cost calculation.
 
-6. On the **Maintenance schedule cost** tab > in the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the cost calculation. The selected action pane group buttons are highlighted. Click on a button to activate or deactivate it.
+6. On the **Maintenance schedule cost** tab > in the **Group by...** Action Pane groups, click the relevant buttons to show the required detail level of the cost calculation. The selected Action Pane group buttons are highlighted. Click on a button to activate or deactivate it.
 
 7. Click the **Calculate cost** button if you want to make a new cost calculation.
 
 The illustration below shows the results of a maintenance schedule cost calculation.
 
-![Figure 1](media/17-preventive-maintenance.png)
+![Figure 1.](media/17-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

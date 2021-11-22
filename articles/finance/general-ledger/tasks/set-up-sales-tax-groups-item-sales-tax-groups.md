@@ -4,11 +4,9 @@
 title: Set up sales tax groups and item sales tax groups
 description: This task recording walks you through the setup of Sales tax and Item sales tax groups. 
 author: twheeloc
-manager: AnnBe 
-ms.date: 07-01-2019
+ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -53,3 +50,6 @@ This task recording walks you through the setup of Sales tax and Item sales tax 
 19. In the list, click the link in the selected row.
 20. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

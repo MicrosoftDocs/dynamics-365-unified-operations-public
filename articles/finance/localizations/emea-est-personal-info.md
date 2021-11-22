@@ -4,11 +4,9 @@
 title: Personal information requests for Estonia
 description: This topic provides information about personal information requests for Estonia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/26/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Estonia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -44,4 +41,7 @@ All companies must gather data about employees, customers, and vendors, and also
 
 ## Additional resources
 
-- [Resources for responding to a GDPR data request](../../dev-itpro/gdpr/gdpr-home-page.md)
+- [Resources for responding to a GDPR data request](../../fin-ops-core/dev-itpro/gdpr/gdpr-home-page.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

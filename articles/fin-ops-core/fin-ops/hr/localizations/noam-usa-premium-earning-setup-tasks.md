@@ -2,13 +2,11 @@
 # required metadata
 
 title: Set up premium earnings
-description: This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
+description: This topic provides information about premium earnings and how to set them up.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup, PayrollPremiumEarni
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221084
 ms.assetid: 50a441e2-b5b4-4ff0-9fc3-472c3b85c46f
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -232,3 +229,6 @@ You must create an earning code to calculate and pay the premium amounts for eac
 ## Additional resources
 
 [Set up earning codes and earning code groups](noam-usa-earning-code-group-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

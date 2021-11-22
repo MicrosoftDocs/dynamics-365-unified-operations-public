@@ -4,11 +4,9 @@
 title: Journals generated during the electronic payment return process for Brazil
 description: This topic shows how payment journals are generated when you import and post the return file for electronic payments. The approved payment lines in the return file can be posted either to one journal or multiple journals.
 author: sndray
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269174
 
@@ -80,3 +77,6 @@ When you post the approved payment lines, the three payment lines are posted to 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

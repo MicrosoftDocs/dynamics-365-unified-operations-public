@@ -4,11 +4,8 @@
 title: CASE ER function
 description: This topic provides information about how the CASE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
-ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +15,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -30,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CASE">CASE ER function</a>
+# CASE ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -89,3 +85,6 @@ If the first result value and the *N*th result value are values of the *Containe
 ## Additional resources
 
 [Logical functions](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

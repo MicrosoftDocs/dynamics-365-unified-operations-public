@@ -4,11 +4,9 @@
 title: Extension points for packing slips during order fulfillment
 description: This topic shows how to use customizations to add extension points to packing slips during customer order fulfillment.
 author: mugunthanm
-manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -16,8 +14,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -107,3 +104,6 @@ To add custom logic or return additional information when the line is marked as 
 
 ### packingSlipExtensionPoint
 You can customize the **packingSlipExtensionPoint** method to add custom logic or return custom information together with the packing slip ID. This custom information includes packing information or a delivery note. This method is typically added for extensions for custom scenarios. This method is called from the **MarkFulfillmentLinesAsPacked** method by using the chain of command extensibility point. The **MarkFulfillmentLinesAsPacked** method is run from the real-time service call that the CRT code makes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

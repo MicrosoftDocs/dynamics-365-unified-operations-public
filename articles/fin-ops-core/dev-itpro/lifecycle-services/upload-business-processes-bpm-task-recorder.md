@@ -2,13 +2,11 @@
 # required metadata
 
 title: Upload custom business processes to Business process modeler (BPM)
-description: In Microsoft Dynamics Lifecycle Services, you can record information about custom business processes by using an updated version of Task recorder. You can then upload the files that you record to Business process modeler.
+description: In Microsoft Dynamics Lifecycle Services, you can record information about custom business processes by using an updated version of Task recorder.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18991
 ms.assetid: 74808085-e971-4e7b-8547-d3549273d14a
@@ -52,8 +49,7 @@ You can upload business process artifacts (\*.axbpm files) to the business proce
 4.  After the business process file has been uploaded, you can view the business process framework from the **Business process library** page.
 
 
-Additional resources
---------
+## Additional resources
 
 [Business process modeler (BPM) in Lifecycle Services (LCS)](./ax-2012/business-process-modeler-lcs.md)
 
@@ -63,3 +59,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

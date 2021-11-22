@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Define the dependency of ER configurations on other components
-description: To complete these steps, you must first complete the steps in the task guide, ER Manage model mapping configurations, and you must have access to Microsoft Dynamics Lifecycle Services (LCS). 
+description: This topic describes how to design an Electronic reporting (ER) configuration and specify its dependency from other software components.
 author: NickSelin
-manager: AnnBe 
-ms.date: 06/23/2017
+ms.date: 07/23/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -144,3 +141,9 @@ We will delete created configurations from the system and download them back fro
 26. In the tree, expand 'Sample data model'.
     * Note that the model 'Sample mapping' mapping configuration has been downloaded together with the selected data model configuration. The two files are downloaded together because 'Sample mapping' has been defined as implementing the selected data model, and because it's applicable for the application. The 'Sample mapping (alternative)' configuration hasn't been downloaded because the condition for the required application version isn't satisfied.   
     * If you sign in to Finance and Operations, register the same provider, access the same LCS project, and download the same data model configuration, the 'Sample mapping (alternative)' configuration will download, whereas the 'Sample mapping' configuration will be skipped.  
+
+## Additional resources
+
+[Manage the Electronic reporting (ER) configuration lifecycle](../general-electronic-reporting-manage-configuration-lifecycle.md)
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

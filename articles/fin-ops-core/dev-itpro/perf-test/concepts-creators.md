@@ -1,31 +1,24 @@
 ---
-# required metadata
-
 title: Creators in the Acceptance test library
 description: This topic provides information about Acceptance test library creators.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.author: mfp
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +26,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Creators in the Acceptance test library
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Creator classes provide fluent application programming interfaces (APIs) that are used to create test data.
 
@@ -80,3 +71,6 @@ item = new AtlCreatorProductsReleasedVariant()
 ## When should creators be used instead of entities?
 
 For information that will help you choose between entities and creators, see [Should I implement an entity or a creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

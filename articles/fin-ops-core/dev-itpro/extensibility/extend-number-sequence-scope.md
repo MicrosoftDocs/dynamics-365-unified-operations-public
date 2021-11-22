@@ -1,24 +1,17 @@
 ---
-# required metadata
-
 title: Extend the scope of number sequences
 description: This topic explains how developers can extend number sequence scope.
 author: RobinARH
-manager: AnnBe
 ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
@@ -58,3 +51,6 @@ To create a new scope and have it show up in the client, complete the following 
 8. Add an extension class for the **NumberSequenceTableEntity** and **NumberSequencesReferenceEntity** data entities. Create post handlers for the **GenerateNumberSequenceScopeTypes** and **GenerateNumberSequenceScopeValues** methods to generate the **NumberSequenceScope** for the new scope type.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

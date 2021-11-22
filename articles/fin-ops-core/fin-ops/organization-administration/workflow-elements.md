@@ -3,12 +3,10 @@
 
 title: Workflow elements
 description: This topic describes the various elements that make up a workflow.
-author: sericks007
-manager: AnnBe
+author: ChrisGarty
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -69,7 +66,7 @@ An *approval process* is a process that consists of separate steps. At each appr
 
 A workflow can be created to process either documents or the line items on a document. For example, you've created an approval workflow for timesheets. (We will refer to this workflow as the *document workflow*.) You can add a *line-item workflow* element to that document workflow. When the line-item element is run, each line item on the document is submitted for processing. You might want all the line items to be processed by the same line-item workflow, or you might want each line item to be processed by a different line-item workflow. Imagine that an employee has submitted a timesheet that resembles the following figure.
 
-![Workflow with line items](./media/workflow_lineitemworkflow.gif)
+![Workflow with line items.](./media/workflow_lineitemworkflow.gif)
 
 In this scenario, you might want to create the following line-item workflows:
 
@@ -96,3 +93,6 @@ A *parallel activity* is a workflow element that includes two or more workflow b
 ### Subworkflow
 
 A *subworkflow* is a workflow that runs in the context of another workflow.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

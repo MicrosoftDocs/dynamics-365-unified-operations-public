@@ -3,28 +3,25 @@
 
 title: Manually created work orders
 description: This topic explains how to create work orders manually in Asset Management.
-author: josaw1
-manager: AnnBe
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -120,7 +117,7 @@ You can create a work order that is related to an existing work order. This capa
 
 The illustration below shows an example of the **Create related work order** dialog.
 
-![Figure 1](media/03-work-orders.png)
+![Figure 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >If you've set up a related work order mask in **Asset management parameters** > **Work orders** tab > **Related work order mask** field, work order IDs are created according to the mask setup. If no related work order mask is set up, the next available work order ID is used for related work orders.
@@ -146,7 +143,7 @@ You can quickly create a new work order from an existing work order. This way of
 
 The illustration below shows an example of the **Copy work order** dialog.
 
-![Figure 2](media/04-work-orders.png)
+![Figure 2.](media/04-work-orders.png)
 
 
 ## Create a work order based on a maintenance request
@@ -166,9 +163,12 @@ The illustration below shows an example of the **Copy work order** dialog.
 
 The illustration below shows an example of the **Create work order** dialog.
 
-![Figure 3](media/05-work-orders.png)
+![Figure 3.](media/05-work-orders.png)
 
 
 >[!NOTE]
 >If you want work orders to be created automatically, you can schedule maintenance plan jobs, or you can set up "Auto create" [maintenance plans](../preventive-and-reactive-maintenance/maintenance-plans.md) or [maintenance rounds](../preventive-and-reactive-maintenance/maintenance-rounds.md) on an asset. Work orders that are created from maintenance requests on the **All maintenance schedule** list page have the maintenance job types that are selected on the maintenance requests.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata 
  
 title: ER Use financial dimensions as a data source (Part 2 - Model mapping)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
+description: This topic describes how to configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. (Part 2)
 author: NickSelin
-manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERMod
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -62,12 +59,14 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 21. Select Yes in the Ask for main account field.
     * Set 'Ask for main account' to Yes to allow users to select the main account as part of the list of dimensions.   If set to No, the main account will not be included to the list of dimensions and the 'Is main account mandatory' option is enabled. If "Is main account mandatory' is set to Yes, include the main account in the list of dimensions regardless of the user's selection.  
 22. Click OK.
+![Financial dimensions' details data source properties slide out.](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. In the tree, select 'Dynamics 365 for Operations\Table records'.
 24. Click Add root.
 25. In the Name field, type 'LedgerJournal'.
 26. Select Yes in the Ask for query field.
 27. In the Table field, type 'LedgerJournalTable'.
 28. Click OK.
+![<odel mapping designer page, Table records data source type.](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## Map data model elements to added data sources
 1. In the tree, expand 'Journal'.
@@ -98,6 +97,7 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 25. In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions'.
 26. In the tree, select 'Journal\Transaction\Dimensions data'.
 27. Click Bind.
+!Model mapping designer page, Mapping tab, Data sources tree.](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)'.
 29. In the tree, select 'Journal\Transaction\Debit'.
 30. Click Bind.
@@ -136,6 +136,7 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 63. In the expressionAsStringText field, enter 'Company.'find()'.'name()''.
     * Company.'find()'.'name()'  
 64. Click Save.
+![ER model mapping designer page.](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Close the page.
 66. Click Save.
 67. Close the page.
@@ -146,4 +147,7 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 3. Click Change status.
 4. Click Complete.
 5. Click OK.
+![ER Configurations page.](../media/er-financial-dimensions-guides-model-mapping5.png)
 
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

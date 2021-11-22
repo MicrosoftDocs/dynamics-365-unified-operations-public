@@ -4,11 +4,9 @@
 title: Create a job in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
 author: hasrivas
-manager: AnnBe
 ms.date: 07/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,6 +30,8 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include [banner](includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic describes the elements of a job in Microsoft Dynamics 365 Talent: Attract. It also explains how to create a job.
 
 ## Job creation
@@ -44,22 +42,22 @@ A job in Attract has job details, a hiring team, a hiring process, job postings,
 
 ## Job details
 
-The **Job details** tab contains details about the job's responsibilities and attributes. The fields for the job title, job description, and job location are required. The other fields are optional.
+The **Job details** tab contains details about the job's responsibilities and attributes. The columns for the job title, job description, and job location are required. The other columns are optional.
 
-By default, the **Number of openings** field is set to **1**. However, you can change the value. When an offer has been prepared for a job, the value of the **Number of openings available** field is decremented.
+By default, the **Number of openings** column is set to **1**. However, you can change the value. When an offer has been prepared for a job, the value of the **Number of openings available** column is decremented.
 
-If position management has been turned on in the Admin Center, the **Update positions** lookup is available. This lookup reads the JobPosition entity in Common Data Service and returns a list of positions that can be selected for the job. If the number of positions that you select exceeds the number of open positions, you receive a warning. You also receive a warning if a position is used on multiple jobs.
+If position management has been turned on in the Admin Center, the **Update positions** lookup is available. This lookup reads the JobPosition table in Dataverse and returns a list of positions that can be selected for the job. If the number of positions that you select exceeds the number of open positions, you receive a warning. You also receive a warning if a position is used on multiple jobs.
 
 > [!NOTE]
 > Position management is available with the Comprehensive Hiring Add-on.
 
 Depending on the settings in the Offer activity of the hiring process, a position number can be used twice in an offer. For more information, see [Activities in hiring processes](./activities-attract.md).
 
-Attract includes a default set of **Skills**. These skills appear as suggestions as you type. You can add more skills by entering the new skill text in the field and then pressing Enter.
+Attract includes a default set of **Skills**. These skills appear as suggestions as you type. You can add more skills by entering the new skill text in the column and then pressing Enter.
 
-Attract includes a default set of **Job functions**. You can add up to three more job functions by entering the new job function in the field and then pressing Enter.
+Attract includes a default set of **Job functions**. You can add up to three more job functions by entering the new job function in the column and then pressing Enter.
 
-Attract includes a default set of **Company industry**. You can add up to three more company industries by entering the new company industry in the field and then pressing Enter.
+Attract includes a default set of **Company industry**. You can add up to three more company industries by entering the new company industry in the column and then pressing Enter.
 
 ## Hiring team
 
@@ -98,7 +96,7 @@ The option to add prospects to a job is set in the [Activities in hiring process
 
 ## Approvals
 
-Attract jobs can be submitted for approval. Not all jobs require approval. The requirement is set at the template level. By default, approvals are turned off on the template. To set up approvals, go to a process template, and set the **Approval** field to Default. Then select that template when you create the job.
+Attract jobs can be submitted for approval. Not all jobs require approval. The requirement is set at the template level. By default, approvals are turned off on the template. To set up approvals, go to a process template, and set the **Approval** column to Default. Then select that template when you create the job.
 
 After a job is saved, it can be submitted for approval. The following table lists the statuses of a document that uses approvals.
 
@@ -119,7 +117,7 @@ If a user edits the job after it is approved, but not activated, the job status 
 The people who are listed as approvers will receive a notification in Attract and an email to inform them they have an item to approve.  In the email, approvers can click the link to open the job, review the details, and either approve or reject. After the job's status is set to **Approved** or **Rejected**, the submitter will be notified in Attract and they will receive an email. Also, the approvers will receive a reminder email if they have not responded to the approval request within 24 hours.
 
 > [!NOTE]
-> You can create custom email templates for Approval emails. For more information, see [Creating and managing email templates](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
+> You can create custom email templates for Approval emails. For more information, see [Creating and managing email templates](/dynamics365/unified-operations/talent/email-templates).
 
 ## Create a job
 
@@ -127,12 +125,12 @@ Follow these steps to create a job.
 
 1. Go to **Jobs**.
 2. Select **New**.
-3. In the **Job title** field, enter the job title. In the **Role** field, enter your role.
-4. In the **Template** field, select a template. Alternatively, select **Skip**. If you select **Skip**, the template that is marked as the default template is used.
+3. In the **Job title** column, enter the job title. In the **Role** column, enter your role.
+4. In the **Template** column, select a template. Alternatively, select **Skip**. If you select **Skip**, the template that is marked as the default template is used.
 
-    If the document should go through an approval process, select a template where the **Approval process** field is set to **Default**.
+    If the document should go through an approval process, select a template where the **Approval process** column is set to **Default**.
 
-5. On the **Details** tab, enter the details of the job. The **Title**, **Job description**, and **Location** fields are required.
+5. On the **Details** tab, enter the details of the job. The **Title**, **Job description**, and **Location** columns are required.
 6. Select **Save**.
 7. On the **Hiring team** tab, add a hiring manager, recruiter, or interviewer.
 8. Select **Save**.
@@ -155,7 +153,10 @@ Follow these steps to create a job.
     1. Select **+ Add approver**, and then enter a user who has an Azure AD account. You can add multiple approvers.
     2. Select **Send to approvers**.
 
-    The **Job status** field of the job is set to **Pending**. After the value of the **Job status** field changes to **Approved**, the job can be activated.
+    The **Job status** column of the job is set to **Pending**. After the value of the **Job status** column changes to **Approved**, the job can be activated.
 
 13. To activate the job, select **Activate**.
 14. To post the job, go to **Postings**, and then select **Post Now** under the Talent Careers site or LinkedIn.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

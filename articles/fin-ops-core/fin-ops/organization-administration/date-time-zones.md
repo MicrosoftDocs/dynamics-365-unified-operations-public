@@ -4,11 +4,9 @@
 title: Date/time data and time zones
 description: This article provides information about date and time fields, and time zones.
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form: SysUserSetup, SystemDate
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13571
 ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e
@@ -47,3 +44,6 @@ There are three types of date and time fields that correspond to different data 
 ## Time zones
 
 To express UTC times in the local time, you must provide a time zone. The time zone controls the offset from UTC that is the equivalent of the local time. For example, the offset for Moscow is UTC+3. Your preferred time zone is first set according to the Windows locale of your computer, although it might have been changed by an administrator. Your preferred time zone is used only when displaying combined dates and times. To set the preferred time zone for a user, go to **Users** page. The page will show the list of users of the system. Select the user that you want to set the preferred time zone for, and click **User options**. On the **Language and region** tab, select the preferred time zone.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create sales tax transactions on documents
 description: Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTran
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -63,3 +60,6 @@ Sales tax on documents is calculated by providing a Sales tax group and an Item 
 29. Click Sales tax.
 30. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

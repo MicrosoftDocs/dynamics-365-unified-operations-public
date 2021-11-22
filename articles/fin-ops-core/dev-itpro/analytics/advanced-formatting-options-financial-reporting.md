@@ -2,28 +2,25 @@
 # required metadata
 
 title: Advanced formatting options in financial reporting
-description: When you create a report in financial reporting, additional formatting functions are available, including filters for dimensions, restrictions for columns and reporting units, non-printing rows, and IF/THEN/ELSE statements in calculations. 
-author: ryansandness
-manager: AnnBe
+description: This topic describes advanced formatting functions, including filters, restrictions, non-printing rows, and conditional statements in calculations.
+author: panolte
 ms.date: 04/26/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
+ms.prod:
+ms.technology:
 
 # optional metadata
 
 ms.search.form: FinancialReports
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
@@ -34,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-When you create a report in financial reporting, additional formatting functions are available, including filters for dimensions, restrictions for columns and reporting units, non-printing rows, and IF/THEN/ELSE statements in calculations. 
+When you create a report in financial reporting, additional formatting functions are available, including filters for dimensions, restrictions for columns and reporting units, non-printing rows, and IF/THEN/ELSE statements in calculations.
 
 The following table explains the advanced formatting functions that are available when you design reports.
 
@@ -49,6 +46,7 @@ The following table explains the advanced formatting functions that are availabl
 | Use single quotes ('') and an ampersand (&) for dimension values | You can use dimension values, including the ampersand character for report design. |
 
 ## Advanced cell placement
+
 Advanced cell placement, or *forcing*, involves the placement of specific values into specific cells. For example, forcing is often used to move the correct balance in a cash flow statement. You can use forcing for the following purposes:
 
 - Move values from Microsoft Excel into specific cells.
@@ -57,11 +55,12 @@ Advanced cell placement, or *forcing*, involves the placement of specific values
 
 > [!NOTE]
 > In many cases, you must configure your report definition so that column calculations are done before row calculations. To complete this configuration, follow these steps.
-> 
+>
 > 1. In Report Designer, open the report definition.
 > 2. On the **Settings** tab, under **Calculation priority**, select **Perform column calculation first and then row**.
 
 ## Designing the report
+
 When you design a report, you should create all the detail rows first to make sure that values are pulled in as expected. Then add **NP** (No Print) format overrides to suppress the detail that includes the final values.
 
 > [!IMPORTANT]
@@ -70,6 +69,7 @@ When you design a report, you should create all the detail rows first to make su
 For forcing, formulas use the following format: &lt;destination column&gt;=&lt;originating column&gt;.&lt;row code&gt; Separate any additional placements for a row by a comma and a space. Here is an example: D=C.190,E=C.100
 
 ## Examples of advanced formatting options
+
 The following examples show how to format the row definition and column definition to force a basic cash flow report (example 1) and a statistical report (example 2).
 
 ### Example 1: Basic forcing
@@ -83,12 +83,12 @@ The following table shows an example of a row definition that uses basic forcing
 | 160      |                                  |             |                             |                            |                              |
 | 190      |                                  |             |                             |                            |                              |
 
-> [!NOTE] 
+> [!NOTE]
 > Empty columns were removed from the previous table for presentation purposes: Format Override, Normal Balance, Print Control, Column Restriction columns are not displayed.
 
 The following table shows an example of column definition that uses basic forcing in the row.
 
-|                              | A   | B    | C        | D      | E      | F    |
+|           Format             | A   | B    | C        | D      | E      | F    |
 |------------------------------|-----|------|----------|--------|--------|------|
 | Header 1                     |     |      |          |        |        |      |
 | Header 2                     | A   | B    | C        | D      | E      | F    |
@@ -118,12 +118,12 @@ The following table shows an example of a row definition that uses forcing for a
 | 310      | US Sales                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |                                            |
 | 340      | International Sales       | CAL         | D=C.220,E=C115,F=(C.220/C.115)  |                      |                |                                            |
 
-> [!NOTE] 
-> Empty columns were removed from the previous table for presentation purposes: Print Control,	Column Restriction, and	Row Modifier columns are not displayed.
+> [!NOTE]
+> Empty columns were removed from the previous table for presentation purposes: Print Control, Column Restriction, and Row Modifier columns are not displayed.
 
 The following table shows an example of a column definition that uses forcing for a statistical report.
 
-|                              | A   | B    | C      | D            | E     | F            |
+|    Format                    | A   | B    | C      | D            | E     | F            |
 |------------------------------|-----|------|--------|--------------|-------|--------------|
 | Header 1                     | A   | B    | C      | D            | E     | F            |
 | Header 2                     | -   | -    | YTD    | Yearly Sales | Staff | $ Per Person |
@@ -137,6 +137,7 @@ The following table shows an example of a column definition that uses forcing fo
 | Column Width                 | 5   | 30   | 14     | 14           | 14    | 14           |
 
 ## Restricting a row to a specific reporting unit
+
 When a report row is restricted to a specific reporting unit, that row shows the linked data only for the named reporting unit and ignores the data for other reporting units in the reporting tree. For example, you can create a row that provides details for the total operating expenses for a specific department. Your report might contain duplicate data if the report contains both a reporting tree and a row definition that has more than just the natural account. For example, you have a reporting tree that lists the six departments in your organization, and you also have a row definition that lists a specific combination of an account and a department in the row. When you generate the report, the specific combination of an account and a department is printed on every level of the reporting tree, even though that department might not match what is in the tree. This behavior occurs because the row overrides what is typically filtered out by the report definition. One way that you can avoid duplication of data is by restricting a row to a specific reporting unit.
 
 > [!NOTE]
@@ -151,6 +152,7 @@ When a report row is restricted to a specific reporting unit, that row shows the
 5. Double-click the cell in the **Link to Financial Dimensions** column of the restricted row, and then enter a link to the financial data system.
 
 ## Selecting print control in a row definition
+
 You can specify print control codes for each column by using the **Print Control** cell.
 
 ### Add print control codes to a report row
@@ -187,12 +189,14 @@ The following table describes the conditional print control codes for a row defi
 | CR                 | Print only the credit balances for this row. |
 
 ## Column Restriction cell in a row definition
+
 The **Column Restriction** cell in a row definition has multiple purposes. Depending on the type of row, you can use the **Column Restriction** cell to specify one of the following functions:
 
 - The cell can limit the printing of row amounts to a specific column. This function is useful if you're creating a tabular balance sheet.
 - The cell can specify the column of amounts to sort.
 
 ## Using a calculation formula in a row definition
+
 A calculation formula in a row definition can include the **+**, **-**, **\***, and **/** operators, and also **IF/THEN/ELSE** statements. Additionally, a calculation can involve individual cells and absolute amounts (actual numbers that are included in the formula). The formula can contain up to 1,024 characters. Calculations can't be applied to rows that contain cells of the **Link to Financial Dimensions** (FD) type. However, you can include calculations on consecutive rows, suppress the printing of those rows, and then total the calculation rows.
 
 ### Operators in a calculation formula
@@ -277,15 +281,15 @@ The **THEN** and **ELSE** formulas can be any valid calculation, from very simpl
 
 ### Restricting a calculation to a reporting unit in a row definition
 
-To restrict a calculation to a single reporting unit in a reporting tree, so that the resulting amount isn't rolled up to a higher-level unit, you can use the **@Unit** code in the **Related Formulas/Rows/Units** cell in the row definition. The **@Unit** code is listed in column B of the reporting tree, **Unit Name**. When you use the **@Unit** code, the values aren't rolled up, but the calculation is evaluated at every level of the reporting tree.
+To restrict a calculation to a single reporting unit in a reporting tree, so that the resulting amount isn't rolled up to a higher-level unit, you can use the **\@Unit** code in the **Related Formulas/Rows/Units** cell in the row definition. The **\@Unit** code is listed in column B of the reporting tree, **Unit Name**. When you use the **\@Unit** code, the values aren't rolled up, but the calculation is evaluated at every level of the reporting tree.
 
 > [!NOTE]
 > To use this function, a reporting tree must be associated with the row definition.
 
-The calculation row can refer to a calculation row or a financial data row. The calculation is recorded in the **Related Formulas/Rows/Units** cell of the row definition and the financial data–type restriction. The calculation must use a conditional calculation that starts with an **IF @Unit** construction. Here is an example: IF @Unit(SALES) THEN @100 ELSE 0 This calculation includes the amount from row 100 in every column of the report, but only for the SALES unit. If multiple units are named SALES, the amount appears in each of those units. Additionally, row 100 can be a financial data row and can be defined as non-printing. In this case, the amount is prevented from appearing in all units in the tree. You can also limit the amount to a single column of the report, such as column H, by using a column restriction to print the value only in that column of the report. You can include **OR** combinations in an **IF** statement. Here is an example: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 You can specify a unit in a calculation-type restriction in one of the following ways:
+The calculation row can refer to a calculation row or a financial data row. The calculation is recorded in the **Related Formulas/Rows/Units** cell of the row definition and the financial data–type restriction. The calculation must use a conditional calculation that starts with an **IF \@Unit** construction. Here is an example: IF @Unit(SALES) THEN @100 ELSE 0 This calculation includes the amount from row 100 in every column of the report, but only for the SALES unit. If multiple units are named SALES, the amount appears in each of those units. Additionally, row 100 can be a financial data row and can be defined as non-printing. In this case, the amount is prevented from appearing in all units in the tree. You can also limit the amount to a single column of the report, such as column H, by using a column restriction to print the value only in that column of the report. You can include **OR** combinations in an **IF** statement. Here is an example: **IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. You can specify a unit in a calculation-type restriction in one of the following ways:
 
-- Enter a unit name to include units that match. For example, **IF @Unit(SALES)** enables the calculation for any unit that is named SALES, even if there are several SALES units in the reporting tree.
-- Enter the company and unit name to restrict the calculation to specific units in a specific company. For example, enter **IF @Unit(ACME:SALES**) to restrict the calculation to SALES units in the ACME company.
+- Enter a unit name to include units that match. For example, **IF \@Unit(SALES)** enables the calculation for any unit that is named SALES, even if there are several SALES units in the reporting tree.
+- Enter the company and unit name to restrict the calculation to specific units in a specific company. For example, enter **IF @Unit (ACME:SALES)** to restrict the calculation to SALES units in the ACME company.
 - Enter the full hierarchy code from the reporting tree to restrict the calculation to a specific unit. For example, enter **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
@@ -295,7 +299,7 @@ The calculation row can refer to a calculation row or a financial data row. The 
 
 1. In Report Designer, click **Row Definitions**, and then open the row definition to modify.
 2. Double-click the **Format Code** cell, and then select **CAL**.
-3. Click the **Related Formulas/Rows/Units** cell, and then enter a conditional calculation that starts with an **IF @Unit** construction.
+3. Click the **Related Formulas/Rows/Units** cell, and then enter a conditional calculation that starts with an **IF \@Unit** construction.
 
 ### IF/THEN/ELSE statements in a column definition
 
@@ -306,6 +310,8 @@ An **IF/THEN/ELSE** statement enables any calculation to depend on the results f
 
 #### Use single quotes and an ampersand for dimension values in a row, column, or tree
 
-You can design reports using dimension values that contain an ampersand (&). 
+You can design reports using dimension values that contain an ampersand (&).
 
-Within any **Link to Financial Dimension** field, you can enter a value such as **'P&L'**. Including single quotes (' ') on both sides of the dimension value indicates that you are using the literal value, such as including the (&) ampersand character. 
+Within any **Link to Financial Dimension** field, you can enter a value such as **'P&L'**. Including single quotes (' ') on both sides of the dimension value indicates that you are using the literal value, such as including the (&) ampersand character.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create dimensions and import dimension members
 description: Cost accounting is an independent module that requires master data from other modules.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +16,12 @@ ms.search.form: CAMDimension
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -44,7 +41,7 @@ A **Cost element** corresponds to a cost-relevant item in the chart of accounts.
 
 The following diagram illustrates the dimensions that are used in Cost accounting.
 
-[![Cost accounting dimensions](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
+[![Cost accounting dimensions.](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
 After the data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization. The following topics provide information about creating dimensions and importing dimension members. 
 
@@ -60,3 +57,6 @@ After the data is imported into Cost accounting, you can use it to build various
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

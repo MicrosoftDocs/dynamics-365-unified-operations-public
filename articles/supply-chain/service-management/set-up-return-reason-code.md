@@ -3,12 +3,10 @@
 
 title:  Set up return reason codes
 description:  Set up return reason code groups. 
-author: ShylaThompson
-manager: AnnBe
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,13 @@ ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -36,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Set up return reason code groups 
 
-1.  Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason code groups**.
+1.  Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason code groups**.
 
-2.  Press CTRL+N to create a line for a new return reason code group.
+2.  Select **New** to create a line for a new return reason code group.
 
 3.  In the **Return reason code group** field, type an identifier for this group.
 
@@ -48,7 +45,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure helps you set up return reason codes that you can use to indicate why a product was returned by the customer.
 
-1.  Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason codes**.
+1.  Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason codes**.
 
 2.  Press CTRL + N to create a new return reason code line.
 
@@ -67,3 +64,6 @@ This procedure helps you set up return reason codes that you can use to indicate
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

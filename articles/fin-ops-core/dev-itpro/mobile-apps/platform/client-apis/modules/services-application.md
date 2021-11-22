@@ -1,38 +1,21 @@
 ---
-# required metadata
 title: Application module
-description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it. Each application consists of pages, actions, data queries and logic that glue them together. An application is primarily described with a declarative metadata system, and can have an accompanying imperative extension model.
-author: shadykdc
-manager: AnnBe
+description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it.
+author: tonyafehr
 ms.date: 09/17/2019
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
+ms.author: tfehr
 ---
 
 # Application module
 
 [!include [banner](../../../../includes/banner.md)]
 
-An application is a unit of runtime execution with sandboxing around concepts and data used inside of it.
-Each application consists of pages, actions, data queries and logic that glue them together. An application
-is primarily described with a declarative metadata system, and can have an accompanying imperative extension model. <br>
-The imperative extension of the application is typically defined in a script module with a designated entry point,
-the [main function](#main), which allows the imperative logic to integrate with the application life cycle.
+An application is a unit of runtime execution with sandboxing around concepts and data used inside of it. Each application consists of pages, actions, data queries, and logic that glue them together. An application is primarily described with a declarative metadata system, and can have an accompanying imperative extension model.
+
+The imperative extension of the application is typically defined in a script module with a designated entry point, the [main function](#main), which allows the imperative logic to integrate with the application life cycle.
 
 ## Index
 
@@ -58,7 +41,7 @@ Application <br>
 
 | Name | Signature | Description |
 | ---- | --------- | ----------- |
-| [minVersion](../interfaces/services-application-iapplication.md#minversion) |minVersion: string (optional)  <br>|An optional marker to indicate the minimum platform version required by this component. When this is specified and the component is attempted to be loaded in an older version of the platform, the corresponding workspace is not loaded and user is directed to install a newer version of the platform.<br>  |
+| [minVersion](../interfaces/services-application-iapplication.md#minversion) |minVersion: string (optional)  <br>|An optional marker to indicate the minimum platform version required by this component. When this value is specified and the component tries to load in an older version of the platform, the corresponding workspace is not loaded and user is directed to install a newer version of the platform.<br>  |
 
 #### Methods
 
@@ -81,7 +64,7 @@ ApplicationMetadata <br>
 | [Configs](../interfaces/services-application-iapplicationmetadata.md#configs) |Configs: [name: string]: any (optional)  <br>|An application can have a set of named config supplied by the author or the resource provider<br>  |
 | [Description](../interfaces/services-application-iapplicationmetadata.md#description) |Description: string (optional)  <br>|The description of the application<br>  |
 | [IconName](../interfaces/services-application-iapplicationmetadata.md#iconname) |IconName: string (optional)  <br>|The representative icon of the application<br>  |
-| [Id](../interfaces/services-application-iapplicationmetadata.md#id) |Id: string <br>|The unique identifier of the application<br>  |
+| [ID](../interfaces/services-application-iapplicationmetadata.md#id) |ID: string <br>|The unique identifier of the application<br>  |
 | [Title](../interfaces/services-application-iapplicationmetadata.md#title) |Title: string <br>|The title of the application<br>  |
 
 ## Functions
@@ -105,3 +88,6 @@ is invoked when the module is loaded and is being initialized. The method must r
 
 #### Returns [Application](../interfaces/services-application-iapplication.md)
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

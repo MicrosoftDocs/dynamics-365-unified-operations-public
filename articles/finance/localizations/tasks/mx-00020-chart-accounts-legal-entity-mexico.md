@@ -4,11 +4,9 @@
 title: MX-00020 Set up the chart of accounts for a legal entity in Mexico
 description: Set up specific parameters in the chart of accounts to allow the generation of electronic ledger accounting reports for a Mexican legal entity. 
 author: sndray
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: MainAccount, LedgerConsolidateAccountGroup, MainAccountConsolida
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
@@ -39,7 +36,7 @@ Set up specific parameters in the chart of accounts to allow the generation of e
 3. In the Main account field, type a value.
 4. In the Name field, type a value.
 5. In the DB/CR default field, select an option.
-    * Use this field to specify the typical transaction (debit/credit). This field is used in the XML file to report the government type of main account in the node <Natur>.  Main account type will be used to determine the government type of account when this field is blank.  
+    * Use this field to specify the typical transaction (debit/credit). This field is used in the XML file to report the government type of main account in the node `<Natur>`.  Main account type will be used to determine the government type of account when this field is blank.  
 6. In the Parent account field, click the drop-down button to open the lookup.
     * Example: 110  Use this file to set up the parent main account of the previous level.     Leave this field blank when the main account represents the first level of company in the chart of accounts.    
 7. In the list, find and select the desired record.
@@ -71,3 +68,6 @@ Set up specific parameters in the chart of accounts to allow the generation of e
     * You need to repeat this action for each main account created in your company. If you have a lot of main accounts to create, you can use the Data management tool to import the main accounts from a Microsoft Excel file.  
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

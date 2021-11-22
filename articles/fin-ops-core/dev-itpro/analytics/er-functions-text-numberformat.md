@@ -4,11 +4,8 @@
 title: NUMBERFORMAT ER function
 description: This topic provides information about how the NUMBERFORMAT Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/10/2019
-ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +15,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -30,12 +26,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMBERFORMAT">NUMBERFORMAT ER function</a>
+# NUMBERFORMAT ER function
 
 [!include [banner](../includes/banner.md)]
 
-The `NUMBERFORMAT` function returns a *String* value that presents the specified number in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) and
-[custom](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx).
+The `NUMBERFORMAT` function returns a *String* value that presents the specified number in the specified format and in an optionally specified [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-numeric-format-strings) and
+[custom](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## Syntax 1
 
@@ -84,3 +80,6 @@ For the **EN-US** culture, `NUMBERFORMAT (0.45, "p")` returns **"45.00 %"**, and
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

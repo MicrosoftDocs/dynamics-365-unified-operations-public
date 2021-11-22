@@ -4,11 +4,9 @@
 title: Work with publish groups
 description: This topic describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 12/12/2019
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -29,12 +26,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Work with publish groups
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes the publish groups feature in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 E-commerce websites are constantly updated with new content throughout the year. Updates are often published in batches around busy e-commerce events such as holidays, seasonal marketing campaigns, or promotional launches. These updates often require that groups of website content (for examples, pages, images, fragments, and templates) be staged, validated, and published concurrently in a single action.
 
@@ -149,6 +143,8 @@ Currently, the publish groups feature supports only website content. However, Mi
 
 [Document states and lifecycle](document-states-overview.md)
 
+[Enable and use cross-channel sharing](cross-channel-sharing.md)
+
 [Work with modules](work-with-modules.md)
 
 [Work with fragments](work-with-fragments.md)
@@ -156,3 +152,6 @@ Currently, the publish groups feature supports only website content. However, Mi
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Customize site navigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

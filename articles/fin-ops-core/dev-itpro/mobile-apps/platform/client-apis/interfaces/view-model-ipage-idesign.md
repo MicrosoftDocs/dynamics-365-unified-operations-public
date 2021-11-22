@@ -1,27 +1,12 @@
 ---
-# required metadata
 title: Design type
 description: Design object type.
-author: shadykdc
-manager: AnnBe
+author: tonyafehr
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kashea
-ms.search.validFrom:
-ms.dyn365.ops.version:
+ms.author: tfehr
 ---
 
 # Design type
@@ -95,7 +80,7 @@ This will modify the color of all headers, items, labels, and icons within the c
 Consider setting the background color at the same time as necessary when setting this attribute.<br>
 Note: if color is set to "theme", the theme color of the app will be used.<br>
 The following colors are available: <br>
-![Image of available colors](../../../media/colors.PNG)
+![Image of available colors.](../../../media/colors.PNG)
 
 
 ### flexFlow
@@ -111,7 +96,7 @@ Please refer to [this web page](https://css-tricks.com/snippets/css/a-guide-to-f
 
 flexSize: string (optional) 
 
-One number or two numbers written as a string. E.g. "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.
+One number or two numbers written as a string. For example, "(size to grow) [(size-to-shrink)]" to accommodate available space in the immediate flex container.
 This property is an alias for the CSS property "flex". Please refer to
 [this web page](https://css-tricks.com/snippets/css/a-guide-to-flexbox) for documentation on the "flex" property.
 
@@ -174,3 +159,6 @@ type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 The type of the control as a string.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 07/25/2019
+author: kfend
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom
+ms.custom: "intro-internal"
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -72,6 +69,7 @@ This topic provides information about functionality that supports Russian regula
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 - [Prepayments management](rus-prepayments-management.md)
 - [Incoming VAT restoring](rus-incoming-VAT-restoring.md)
+- [Process invoice factures for export trade](rus-export-trade.md)
 
 ## Fixed assets (Russia)
 - [Fixed assets overview](rus-fixed-assets-overview.md)
@@ -128,6 +126,9 @@ This topic provides information about functionality that supports Russian regula
 - [Inventory cost structure](rus-inventory-cost-structure.md)
 - [Inventory adjustment wizard](rus-inventory-adjustment-wizard.md)
 - [Inventory reports](rus-inventory-reports.md)
+- [Inventory profile](rus-inventory-profile-overview.md)
+  - [Set up an inventory profile](rus-set-up-inventory-profile.md)
+  - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
 
 ## Reporting
 
@@ -156,12 +157,28 @@ This topic provides information about functionality that supports Russian regula
 - [Deferrals counting](rus-counting-deferrals.md)
 - [Reporting for deferrals](rus-reporting-deferrals.md)
 
+## Tax accounting
+- [Create tax registers and the tax register journal](rus-profit-tax-registers.md)
+- [Expense and income codes](rus-expense-and-income-codes.md)
+- [Assets tax registers](rus-assets-tax-registers.md)
+- [Deferrals tax register](rus-deferred-expenses-register.md)
+- [Cash flow tax registers](rus-cash-flow-tax-registers.md)
+- [Rated expenses registers](rus-rated-expenses-registers.md)
+- [Accounts payable debt tax registers and debt write-offs](rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md)
+- [Bad debt reserves in Accounts receivable](rus-bad-debts.md)
+- [Calculation of tax asset and tax liability registers](rus-calculation-tax-asset-tax-liability-registers.md)
+- [Goods movement tax registers](rus-goods-movement-tax-registers.md)
+- [Other tax registers](rus-other-tax-registers.md)
+
 ## Additional resources
 
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics Localization Portal: Russia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/RussianFederation.html)
 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

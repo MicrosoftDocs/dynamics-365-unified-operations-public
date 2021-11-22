@@ -3,12 +3,10 @@
 
 title: Inventory journal reports
 description: When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.
-author: ShylaThompson
-manager: AnnBe
+author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,12 +16,11 @@ ms.search.form: InventJournalName
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265144
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -35,11 +32,10 @@ ms.dyn365.ops.version: Version 1611
 
 When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.
 
-To set up a relationship between a specific report and a journal type, on the **Inventory journal names** page (**Inventory management** &gt; **Setup** &gt; **Journal names** &gt; **Inventory**), enter a name for the report. **Note:** To set up supported configurations, download the required electronic reporting configurations. For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Examples of inventory reports with supported configurations in Europe are listed in the following table.
+To set up a relationship between a specific report and a journal type, on the **Inventory journal names** page (**Inventory management** &gt; **Setup** &gt; **Journal names** &gt; **Inventory**), enter a name for the report. **Note:** To set up supported configurations, download the required electronic reporting configurations. For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Examples of inventory reports with supported configurations in Europe are listed in the following table.
 
-|                    |                                     |                  |                                         |
+| Country            |    Report description               | Journal type     |    Format mapping name                  |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
-| **Country**        | **Report description**              | **Journal type** | **Format mapping name**                 |
 | Lithuania, Hungary | Inventory statement report          | Counting         | Inventory statement (HU, LT)            |
 | Latvia, Poland     | Inventory reclassification document | Transfer         | InventoryReclassificationDocument\_PLLV |
 | Estonia            | Inventory reclassification document | Transfer         | InventoryReclassificationDocument\_EE   |
@@ -54,3 +50,6 @@ To set up a relationship between a specific report and a journal type, on the **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

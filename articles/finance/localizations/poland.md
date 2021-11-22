@@ -4,11 +4,9 @@
 title: Poland overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Poland. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +15,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -45,3 +42,8 @@ This topic provides links to documentation resources for Poland.
 - [Standard audit file (SAF)](emea-pol-standard-audit-file-saf.md)
 - [Tax interest and free-hand interest](emea-pol-interest-calculation.md)
 - [Turnover and balances statement](emea-pol-turnover-balances-statement.md)
+- [Split AP/AR exchange difference](emea-pol-split-ap-ar-exchange-difference.md)
+- [VAT declaration with registers (JPK_V7M, VDEK)](emea-pol-vdek.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

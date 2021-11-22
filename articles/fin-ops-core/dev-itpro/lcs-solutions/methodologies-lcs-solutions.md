@@ -2,13 +2,11 @@
 # required metadata
 
 title: Add methodologies to solutions
-description: This topic explains how to create and modify methodologies in Microsoft Dynamics Lifecycle Services (LCS). It also provides information about the requirements for methodologies.
+description: This topic explains how to create and modify methodologies in Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
-manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 197063
 ms.assetid: 368f2356-62a6-4d9f-9f80-0acf7a986085
@@ -35,8 +32,7 @@ ms.author: omarc
 
 This topic explains how to create and modify methodologies in Microsoft Dynamics Lifecycle Services (LCS). It also provides information about the requirements for methodologies.
 
-Methodology requirements
-------------------------
+## Methodology requirements
 
 The first two phases of your methodology are the Learn and Consume phases from the LCS Solutions Consumption methodology. 
 
@@ -77,7 +73,9 @@ Follow these steps to edit a methodology in a specific project only.
 4.  Select **Confirm**.
 
 
-Additional resources
---------
+## Additional resources
 
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata 
  
 title: ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2 - Run format)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. 
+description: This topic describes how to configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files. (Part 2)
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ERSolutionTable, SysQueryForm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -55,3 +52,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 8. Click OK.
     * Review the generated output. Note that the newly created Excel file contains the same number of columns that were selected for financial dimensions. The report header in those columns represents financial dimensions' names. The transactions' lines in those columns represent financial dimensions. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

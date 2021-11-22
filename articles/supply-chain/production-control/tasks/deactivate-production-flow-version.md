@@ -3,12 +3,10 @@
  
 title: Deactivate a production flow version
 description: When an active production flow version is no longer needed, it can be deactivated. 
-author: cvocph
-manager: AnnBe 
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,15 +14,14 @@ ms.technology:
 ms.search.form: LeanProductionFlow   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Core, Operations 
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Deactivate a production flow version
 
@@ -48,3 +45,6 @@ For this procedure you need a production flow with a version that can be deactiv
     * Do not proceed if you are not 100% positive that this production flow version is obsolete. Clicking Ok will expire all active kanban rules and put an immediate stop to all production and replenishment activities of this production flow version.  
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

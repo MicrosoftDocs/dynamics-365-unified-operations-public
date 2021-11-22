@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Order details module
-description: This topic covers order details modules and describes how to use them in Microsoft Dynamics 365 Commerce.
-author: anupamar
-manager: annbe
-ms.date: 01/23/2020
+title: Order confirmation module
+description: This topic covers order confirmation modules and describes how to use them in Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -17,28 +15,24 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Order details module
-
+# Order confirmation module
 
 [!include [banner](includes/banner.md)]
 
-This topic covers order details modules and describes how to use them in Microsoft Dynamics 365 Commerce.
+This topic covers order confirmation modules and describes how to use them in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
-The order details module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, and the shipping method.
+The order confirmation module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, pickup options, and the shipping method.
 
 ## Order confirmation module properties
 
@@ -46,43 +40,53 @@ The order details module is used to show order confirmation details after an ord
 |----------------|--------|-------------|
 | Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | The order confirmation module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
 | Contact number | Text | A contact number can be provided for order-related questions. |
+| Show pickup timeslot information | True or False | This property is available in Dynamics 365 Commerce 10.0.15 and higher. When true, it displays the pickup timeslot information if provided for a pickup item|
 
-## Modules that can be used on an order details page
+## Modules that can be used on an order confirmation page
 
-When you create an order details page, you can add other relevant modules in addition to the order details module. Here are some examples:
+When you create an order confirmation page, you can add other relevant modules in addition to the order confirmation module. Here are some examples:
 
-- **Recommendations module** – The recommendations module can be added to the order details page to suggest other products to the customer.
-- **Marketing modules** – Any marketing module can be added to the order details page to show marketing content.
+- **Recommendations module** – The recommendations module can be added to the order confirmation page to suggest other products to the customer.
+- **Marketing modules** – Any marketing module can be added to the order confirmation page to show marketing content.
 
-## Create an order details page module
+## Add an order confirmation module to a page
 
-1. Create a page template that is named **Order details template**.
-1. In the **Main** slot of the default page, add an order details module.
-1. In the order details module, add a recommendations module.
-1. Save and preview the template. The order details module won't be rendered, because it requires the context of the order confirmation number.
-1. Finish editing the template, and publish it.
-1. Use the order details template that you just created to create a page that is named **order details page**.
-1. Add the default page to the page outline.
-1. In the **Header** slot, add a header fragment.
-1. In the **Footer** slot, add a footer fragment.
-1. In the **Main** slot, add an order details module.
-1. In the property pane for the order details module, add the heading **Order details**.
-1. Below the order details module, add a recommendations module, and configure it so that it uses the **New** and **Best Selling** settings.
-1. Save and preview the page.
-1. Finish editing the page, and publish it.
+To add an order confirmation module to a new page and set the required properties, follow these steps.
+
+1. Go to **Templates**, and select **New** to create a new template.
+1. In the **New Template** dialog box, under **Template name**, enter the name **Order confirmation template**, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Default page** module, and then select **OK**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Order confirmation** module, and then select **OK**.
+1. Select **Save**, and then select **Preview** to preview the template. The order confirmation module won't be rendered, because it requires the context of the order confirmation number.
+1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select **Order confirmation template**. Under **Page name**, enter **Order confirmation page**, and then select **OK**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Order confirmation** module, and then select **OK**.
+1. In the properties pane for the order confirmation module, select **Heading** next to the pencil symbol.
+1. In the **Heading Text** field of the **Heading** dialog box, enter the heading text **Order confirmation**, and then select **OK**.
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
-[Starter kit overview](starter-kit-overview.md)
-
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
 [Cart module](add-cart-module.md)
+
+[Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
 
-[Header module](author-header-module.md)
+[Payment module](payment-module.md)
 
-[Footer module](author-footer-module.md)
+[Shipping address module](ship-address-module.md)
+
+[Delivery options module](delivery-options-module.md)
+
+[Pickup information module](pickup-info-module.md)
+
+[Gift card module](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

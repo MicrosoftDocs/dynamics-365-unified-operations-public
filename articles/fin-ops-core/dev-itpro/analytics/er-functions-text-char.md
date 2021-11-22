@@ -4,11 +4,8 @@
 title: CHAR ER function
 description: This topic provides information about how the CHAR Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
-ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +15,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -30,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CHAR">CHAR ER function</a>
+# CHAR ER function
 
 [!include [banner](../includes/banner.md)]
 
@@ -56,7 +52,7 @@ The resulting text value.
 
 ## Usage notes
 
-The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For a list of the supported encodings, see [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).
+The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For a list of the supported encodings, see [Encoding class](/dotnet/api/system.text.encoding).
 
 ## Example
 
@@ -65,3 +61,6 @@ The string that this function returns depends on the encoding that is selected i
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

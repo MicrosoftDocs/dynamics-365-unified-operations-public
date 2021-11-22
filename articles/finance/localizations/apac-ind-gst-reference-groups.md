@@ -4,11 +4,9 @@
 title: Set up GST reference number groups
 description: This topic explains how to set up reference number groups for Goods and Services Tax (GST) in Microsoft Dynamics 365 Finance. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,6 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
-ms.search.scope: Core, Operations
 # ms.search.industry: 
 ms.author: ralin
 ms.dyn365.ops.version: 7.3.1
@@ -56,7 +53,7 @@ Follow these steps to create a GST reference number sequence group and assign it
     | Accounts payable    | Advanced payment voucher | The **Advance payment voucher** number sequence is used when vendor advance payment transactions that have GST transactions are posted. |
     | Accounts payable    | GST invoice              | The **GST invoice** number sequence is used when vendor purchases are posted that have GST transactions together with reverse charge transactions. |
     
-# Type of supply and GST number sequence reference ID generation 
+## Type of supply and GST number sequence reference ID generation 
 
 Under GST law, the broader classification of the type of supply is shown below: 
 - Taxable supply 
@@ -82,3 +79,6 @@ The India GST number sequence logic is based on the following conditions for upd
 - For a stock transfer receipt transaction, the system will copy the shipment transaction ID when the number sequence reference ID is generated for the shipment transaction.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

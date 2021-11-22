@@ -1,30 +1,23 @@
 ---
-# required metadata
-
 
 title: Class extension - Method wrapping and Chain of Command
 description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping.
-author: ChrisGarty
-manager: AnnBe
+author: jorisdg
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: cgarty
+ms.author: jorisde
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -228,10 +221,13 @@ If a method is explicitly marked as **[Hookable(false)]**, the method can't be w
 ```xpp
 class AnyClass1 
 {
-    [HookableAttribute(false)]
+    [Hookable(false)]
     public void anyMethod() {...}
 }
 ```
+
+> [!NOTE]
+> For compatibility reasons, **[Hookable(false)]** overrides the behavior of chain of command in addition to pre- and post-handlers. However, **[Hookable(true)]** only applies to pre- and post-handlers and does not influence chain of command wrapping.
 
 ### Final methods and the Wrappable attribute
 Public and protected methods that are marked as **final** can't be wrapped in extension classes. You can override this restriction by using the **Wrappable** attribute and setting the attribute parameter to **true** (**[Wrappable(true)]**). Similarly, to override the default capability for (non-final) public or protected methods, you can mark those methods as non-wrappable (**[Wrappable(false)]**).
@@ -438,5 +434,11 @@ In a CoC extension method, the next call must not be called conditionally. Howev
 ### Extensions of extensions are not yet supported
 Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is planned for a future release.
 
+### Extensions of constructors
+Constructors cannot be extended. A **new** method that is defined on an extension class will define a constructor for the extension class itself. Additionally, the **new** method has to be public, and it can't have any arguments. For more information, see [Constructors](class-extensions.md#constructors).
+
 ### Tooling
 For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

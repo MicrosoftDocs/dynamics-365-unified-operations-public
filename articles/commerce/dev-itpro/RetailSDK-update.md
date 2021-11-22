@@ -4,11 +4,9 @@
 title: Upgrade the Retail channel extension to the latest Retail SDK
 description: This topic explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 11/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
@@ -40,7 +37,7 @@ This topic provides information about how to upgrade to the latest update of the
 The following sections will walk through how to manually move your extension to the new Retail SDK, however you can do this using any source control system like Azure DevOps or Git.
 
 ## Update the Retail SDK
-When you update the Retail SDK by applying a new binary hotfix, a new **Update** folder is created inside the existing RetailSDK folder and a copy of the updated SDK is created. If you deploy a new environment, the new Retail SDK is located in the services volume of the virtual machine (VM) or in the C drive of the downloadable VHD.
+If you deploy a new environment, the new Retail SDK is located in the services volume of the virtual machine (VM) or in the C drive of the downloadable VHD. When you update the Retail SDK by applying a new binary hotfix from Lifecycle Services (LCS), a new **Update** folder is created inside the existing RetailSDK folder and a copy of the new updated SDK is created inside the Update folder with name {{Guid.RetailSDKUpdate.Date}}. We recommend that you rename this folder using a shorter name otherwise when copying this folder you may get an error saying the path or file name is too long.
 
 ### Retail SDK components
 
@@ -168,3 +165,6 @@ In 7.0, you should have completed most of the customizations inline. To upgrade 
 
 ## Generate a deployable package for validation
 Complete the steps in the topic, [Create deployable packages](retail-sdk/retail-sdk-packaging.md), to generate the deployable package for validation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

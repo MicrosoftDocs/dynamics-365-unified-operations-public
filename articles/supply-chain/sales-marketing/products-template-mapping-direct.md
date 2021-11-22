@@ -3,12 +3,10 @@
 
 title: Synchronize products directly from Supply Chain Management to products in Sales
 description: This topic discusses the templates and underlying tasks that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
-author: ChristianRytt
-manager: AnnBe
+author: Henrikan
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,14 +14,13 @@ ms.technology:
 ms.search.form: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
@@ -33,8 +30,10 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 > [!NOTE]
-> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
 This topic discusses the templates and underlying tasks that are used to synchronize products directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
 
@@ -42,7 +41,7 @@ This topic discusses the templates and underlying tasks that are used to synchro
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Data flow in Prospect to cash.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## Templates and tasks
 
@@ -108,7 +107,7 @@ The following illustration shows an example of a template mapping in Data integr
 > [!NOTE]
 > The mapping shows which field information will be synchronized from Sales to Supply Chain Management.
 
-![Template mapping in Data integrator](./media/products-direct-template-mapping-data-integrator-1.png)
+![Template mapping in Data integrator.](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## Related topics
@@ -125,3 +124,6 @@ The following illustration shows an example of a template mapping in Data integr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

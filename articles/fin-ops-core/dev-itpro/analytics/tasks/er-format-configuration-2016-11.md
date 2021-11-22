@@ -2,13 +2,11 @@
 # required metadata 
  
 title: ER Create a format configuration (November 2016)
-description: This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). 
+description: This topic explains how to create a format configuration for Electronic reporting (ER). 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +15,6 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROper
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -162,3 +159,6 @@ This topic explains how a user in the System Administrator or Electronic Reporti
 42. Click **Save**.
 43. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

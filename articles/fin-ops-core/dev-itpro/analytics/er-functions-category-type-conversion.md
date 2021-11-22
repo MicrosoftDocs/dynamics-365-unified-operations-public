@@ -4,11 +4,8 @@
 title: List of ER functions in the type conversion category
 description: This topic provides information about the conversion functions that are supported in Electronic reporting (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
-ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +15,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -44,6 +40,14 @@ Electronic reporting (ER) type conversion functions can be used to convert value
 | [IntValue](er-functions-conversion-intvalue.md)       | This function returns an *Int* value that represents the specified string. |
 | [NumberValue](er-functions-conversion-numbervalue.md) | This function returns a *Real* value that is converted from the specified *String* value. During the conversion, the specified decimal and digit grouping separators are considered. |
 | [Value](er-functions-conversion-value.md)             | This function returns a *Real* value that is converted from the specified *String* value. |
+
+## Type conversion functions in the container category
+
+The following table describes the type conversion functions in the [container](er-functions-category-container.md) category.
+
+| Function | Description |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | This function converts the specified input of the *String* type to a data item of the *Container* type. |
 
 ## Type conversion functions in the date and time category
 
@@ -85,3 +89,6 @@ The following table describes the type conversion functions in the [text categor
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Set up a customer and sales order to be target of consolidated invoice
-description: In Japan, the customers usually use consolidated invoice for all transactions. 
+description: In Japan, the customers usually use consolidated invoices for all transactions. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,12 +15,11 @@ ms.search.form: CustTable, SalesTableListPage, SalesTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -30,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-In Japan, the customers usually use consolidated invoice for all transactions. 
+In Japan, the customers usually use consolidated invoices for all transactions. 
 
 
 
@@ -57,3 +54,6 @@ This task uses the JPMF demo company data.
     * Verify that the Target of consolidation slider is set to 'Yes'.  
     * If the slider is set to "No", unlock the task guide and then click Edit to update the field.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
