@@ -387,10 +387,21 @@ You can use the following options to review the reports of the replication valid
 
 - **Scenario 11:** After creating the publication, if the snapshot creation fails with the following error.
 
-  Error messages:
-  Source: Microsoft.SqlServer.Smo
-  Target Site: Void PrefetchObjectsImpl(System.Type, Microsoft.SqlServer.Management.Smo.ScriptingPreferences)
-  Message: Prefetch objects failed for Database 'AxDB_ASIA'.
+        ```SQL Server
+        Error messages:
+        Source: Microsoft.SqlServer.Smo
+        Target Site: Void PrefetchObjectsImpl(System.Type, Microsoft.SqlServer.Management.Smo.ScriptingPreferences)
+        Message: Prefetch objects failed for Database 'AxDB_ASIA'.
+        Stack:    at Microsoft.SqlServer.Management.Smo.Database.PrefetchObjectsImpl(Type objectType, ScriptingPreferences scriptingPreferences)
+           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.ObjectPrefetchControl.DoPrefetch(Database database)
+           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.PrefetchObjects(ObjectPrefetchControl[] objectPrefetchControls)
+           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.DoPrefetchWithRetry()
+           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.DoScripting()
+           at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.DoScripting()
+           at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.GenerateSnapshot()
+           at Microsoft.SqlServer.Replication.SnapshotGenerationAgent.InternalRun()
+           at Microsoft.SqlServer.Replication.AgentCore.Run() (Source: Microsoft.SqlServer.Smo, Error number: 0)
+           ```
   
   The message may then give examples of the stack, such as: at Microsoft.SqlServer.Management.Smo.Database.PrefetchObjectsImpl(Type objectType, ScriptingPreferences scriptingPreferences)
 
