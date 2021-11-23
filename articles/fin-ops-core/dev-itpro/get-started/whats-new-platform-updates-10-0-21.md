@@ -40,7 +40,7 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
-Some features must be enabled using [Feature management](../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+Some features must be enabled by using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|

@@ -35,7 +35,7 @@ The following illustration shows a typical collection of business events, proces
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Production control*
-- **Feature name:** *Manufacturing execution systems integration*
+- **Feature name:** *Manufacturing execution system integration*
 
 ## Processes available for MES integration
 

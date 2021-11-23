@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: veeravendhan-s 
-ms.date: 10/08/2021
+ms.date: 11/22/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -65,14 +65,15 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     <?xml version="1.0" encoding="utf-8"?>
     <IgnoreTables>
         <Name>
-            <Table>USERADDHISTORYLIST</Table>
-            <Table>TAXRECONCILIATIONREPORTTMP</Table>
-            <Table>CASELOG</Table>
-            <Table>SHAREDCATEGORYROLETYPE</Table>
-            <Table>VATCSREPORTXMLATTRIBUTE_CZ</Table>
+            <Table>NON_AOT_TABLE1</Table>
+            <Table>NON_AOT_TABLE2</Table>
+            <Table>NON_AOT_TABLE3</Table>
         </Name>
     </IgnoreTables>
     ```
+
+    > [!NOTE]
+    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -91,7 +92,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
     - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value.
 > [!NOTE]
-> Do not set up or configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (>90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time).
+> Do not set up or configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (greater than 90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time). Additionally, it is recommended for a go-live cutover that you start the replication the prior weekend. 
 
 ## Data upgrade process
 
@@ -383,6 +384,26 @@ You can use the following options to review the reports of the replication valid
     - **Case 2:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Completed**, step 12 will show the **Resume** option.
     - **Case 3:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **Completed**, step 12 will show **Successful**.
     - **Case 4:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **In Progress**, step 12 will show **Successful**, because the data upgrade job is running in the background.
+
+- **Scenario 11:** After creating the publication, if the snapshot creation fails with the following error.
+
+    ```
+        Error messages:
+        Source: Microsoft.SqlServer.Smo
+        Target Site: Void PrefetchObjectsImpl(System.Type, Microsoft.SqlServer.Management.Smo.ScriptingPreferences)
+        Message: Prefetch objects failed for Database 'AxDB_ASIA'.
+        Stack:    at Microsoft.SqlServer.Management.Smo.Database.PrefetchObjectsImpl(Type objectType, ScriptingPreferences scriptingPreferences)
+           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.ObjectPrefetchControl.DoPrefetch(Database database)
+           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.PrefetchObjects(ObjectPrefetchControl[] objectPrefetchControls)
+           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.DoPrefetchWithRetry()
+           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.DoScripting()
+           at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.DoScripting()
+           at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.GenerateSnapshot()
+           at Microsoft.SqlServer.Replication.SnapshotGenerationAgent.InternalRun()
+           at Microsoft.SqlServer.Replication.AgentCore.Run() (Source: Microsoft.SqlServer.Smo, Error number: 0)
+    ```
+    **Solution:** In the Replication Monitor, select and right-click the failed publication, and then select **Generate Snapshot**.
+
 
 ## Learn about the replication configuration and status via SQL Server Management Studio
 

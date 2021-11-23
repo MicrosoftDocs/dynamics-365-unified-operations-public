@@ -2,8 +2,8 @@
 # required metadata
 
 title: Fixed assets in the public sector
-description: This article describes the fixed assets functionality that is available for public sector. 
-author: ShylaThompson
+description: This topic describes the fixed assets functionality that is available for entities in the public sector. 
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 20891
 ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the fixed assets functionality that is available for public sector. 
+This topic describes the fixed assets functionality that is available for entities in the public sector. 
 
 ## What do I need to know about disposing of fixed assets?
 
