@@ -33,37 +33,37 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 
-Electronic reporting is a configurable tool that helps you create and maintain regulatory electronic reporting and payments, based on the following three concepts:
+ER is a configurable tool that helps you create and maintain regulatory electronic reporting and payments. It's based on the following three concepts:
 
-  - Configuration instead of coding:
-  
+- Configuration instead of coding:
+
     - Configuration can be done by a business user and doesn't require a developer.
     - The data model is defined in business terms.
-    - Visual editors are used to author all components of the ER configuration.
-    - A language similar to Microsoft Excel is used for data transformation.
-    
-  - One configuration for multiple Dynamics 365 Finance releases:
+    - Visual editors are used to create all components of the ER configuration.
+    - The language that is used for data transformation resembles the language that is used in Microsoft Excel.
 
-    - Manage one domain-specific data model that's defined in business terms.
-    - Isolate application release specifics in release-dependent data model mappings.
+- One configuration for multiple Dynamics 365 Finance releases:
+
+    - Manage one domain-specific data model that is defined in business terms.
+    - Isolate application release details in release-dependent data model mappings.
     - Maintain one format configuration for multiple releases of the current version, based on the data model.
-    
-  - Easy or automatic upgrade:
+
+- Easy or automatic upgrade:
 
     - Versioning of ER configurations is supported.
-    - The Microsoft Dynamics Lifecycle Services (LCS) Assets library can be used as a repository for ER configurations for version exchange.
+    - The Microsoft Dynamics Lifecycle Services (LCS) Assets library can be used as a repository for ER configurations, for version exchange.
     - Localizations that are based on original ER configurations can be introduced as child versions.
-    - A ER configuration tree is provided as a tool that helps control dependencies for versions.
+    - An ER configuration tree is provided as a tool that helps control dependencies for versions.
     - Differences in localization, or the delta configuration, are recorded to enable automatic upgrade to a new version of the original ER configuration.
-    - Easily resolve conflicts manually that are discovered during automatic upgrade of localization versions.
+    - It's easy to manually resolve conflicts that are discovered during automatic upgrade of localization versions.
 
-ER lets you define electronic format structures, and then describe how the structures should be filled by using data and algorithms. You can use a formula language that's similar to the Excel language for data transformation. To make the database-to-format mapping more manageable, reusable, and independent of format changes, an intermediate data model concept is introduced. This concept allows implementation details to be hidden from the format mapping and  enables a single data model to be reused for multiple format mappings.
+ER lets you define electronic format structures and then describe how the structures should be filled by using data and algorithms. You can use a formula language that resembles the Excel language for data transformation. To make the database-to-format mapping more manageable, reusable, and independent of format changes, an intermediate data model concept is introduced. This concept enables implementation details to be hidden from the format mapping and enables a single data model to be reused for multiple format mappings.
 
-You can use ER to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
+You can use ER to configure formats for both incoming and outgoing electronic documents in accordance with the legal requirements of various countries and regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements and generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties.
 
 The ER engine is targeted at business users instead of developers. Because you configure formats instead of code, the processes for creating and adjusting formats for electronic documents are faster and easier.
 
-ER currently supports the TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel, and OPENXML worksheet formats. 
+ER currently supports the TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel, and OPENXML worksheet formats.
 
 ## Capabilities
 
@@ -79,7 +79,7 @@ The ER engine has the following capabilities:
 
 ### Main data flow
 
-[![GER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+[![ER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
 ### Components
 
