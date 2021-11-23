@@ -300,31 +300,44 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions
 
 Go to **Tax** > **Setup** > **Electronic messages** > **Message processing actions** and check your setup. The **NO VAT return** processing uses the following electronic message actions.
 
-| Order | Name                                | Description (Norwegian) | Inseparable sequence | Run separately |
-|-------------------------------------|-------------------------|-------|---------|
+| Order | Action                       | Description (Norwegian) | Inseparable sequence | Run separately |
+|-------|------------------------------|-------------------------|----------------------|---------|
 | 1 | NO VAT Create message | Lag melding | empty | No |
-| 2 | NO VAT Collect sales tax payments | Samle momsregistreringer for merverdiavgift | No |
+| 2 | NO VAT Collect sales tax payments | Samle momsregistreringer for merverdiavgift | empty |No |
 | 3 | NO VAT Ready to generate VAT return | Klar til å generere mva | empty | Yes |
 | 4 | NO VAT Not ready to generate VAT return | Elektronisk melding er ikke klar til å generere merverdiavgi | empty | Yes |
 | 5 | NO VAT Preview VAT return in Excel | Forhåndsvis mva-retur i Excel | empty | Yes |
 | 6 | NO VAT Generate VAT return | Generer merverdiavgift i XML | NO VAT Validation | Yes | 
 | 7 | NO VAT Send validation request | Send forespørsel om validering | NO VAT Validation | Yes | 
-| 8 | NO VAT Import validation response | Import validering svar | No | NO VAT Validation |
-| 9 | NO VAT Generate request for instance | Generer forespørsel om å opprette forekomst | No | NO VAT Validation |
-| 10 | NO VAT Send request to create instance | Send forespørsel for å opprette forekomst | Yes | NO VAT Submission |
-| 11 | NO VAT Import instance creation response | Importer opprettelsessvar for forekomst | No | NO VAT Submission |
-| 12 | NO VAT Generate VAT return submission | Generer innsending av mva | No | NO VAT Submission |
-| 13 | NO VAT Upload VAT return submission | Last opp innsending av merverdiavgift | No | NO VAT Submission |
-| 14 | NO VAT Upload VAT return | Last opp mva-retur | No | NO VAT Submission |
-| 15 | NO VAT Complete data filling | Fullstendig datafylling | No | NO VAT Submission |
-| 16 | NO VAT Complete VAT return submission | Fullfør momsoppgaven | No | NO VAT Submission |
-| 17 | NO VAT Send feedback status request | Send statusforespørsel om tilbakemelding | No | NO VAT Submission |
-| 18 | NO VAT Import feedback status response | Importer tilbakemeldingsstatusrespons | No | NO VAT Submission |
-| 19 | NO VAT Send feedback request | Send forespørsel om tilbakemelding | No | NO VAT Submission |
-| 20 | NO VAT Import feedback response | Importer tilbakemeldingssvar | No | NO VAT Submission |
-| 21 | NO VAT Download validation result | Last ned valideringsresultat | No | NO VAT Submission |
-| 22 | NO VAT Import final validation result | Import endelig valideringsresultat | No | NO VAT Submission |
-| 23 | NO VAT Download payment information | Last ned betalingsinformasjon | Yes |
-| 24 | NO VAT Download receipt | Last ned kvittering | Yes |
-| 25 | NO VAT Exclude from VAT return | Innbetaling av merverdiavgift ekskludert fra mva | Yes |
-| 26 | NO VAT Include to VAT return | Inkluder betaling av omsetningsavgift til mva | Yes |
+| 8 | NO VAT Import validation response | Import validering svar | NO VAT Validation |No |
+| 9 | NO VAT Generate request for instance | Generer forespørsel om å opprette forekomst  | NO VAT Validation |No |
+| 10 | NO VAT Send request to create instance | Send forespørsel for å opprette forekomst  | NO VAT Submission |Yes |
+| 11 | NO VAT Import instance creation response | Importer opprettelsessvar for forekomst  | NO VAT Submission |No |
+| 12 | NO VAT Generate VAT return submission | Generer innsending av mva  | NO VAT Submission |No |
+| 13 | NO VAT Upload VAT return submission | Last opp innsending av merverdiavgift  | NO VAT Submission |No |
+| 14 | NO VAT Upload VAT return | Last opp mva-retur  | NO VAT Submission |No |
+| 15 | NO VAT Complete data filling | Fullstendig datafylling  | NO VAT Submission |No |
+| 16 | NO VAT Complete VAT return submission | Fullfør momsoppgaven |  NO VAT Submission |No |
+| 17 | NO VAT Send feedback status request | Send statusforespørsel om tilbakemelding | NO VAT Submission | No |
+| 18 | NO VAT Import feedback status response | Importer tilbakemeldingsstatusrespons | NO VAT Submission | No |
+| 19 | NO VAT Send feedback request | Send forespørsel om tilbakemelding | NO VAT Submission | No |
+| 20 | NO VAT Import feedback response | Importer tilbakemeldingssvar  | NO VAT Submission | No |
+| 21 | NO VAT Download validation result | Last ned valideringsresultat  | NO VAT Submission | No |
+| 22 | NO VAT Import final validation result | Import endelig valideringsresultat | NO VAT Submission | No |
+| 23 | NO VAT Download payment information | Last ned betalingsinformasjon | empty | Yes |
+| 24 | NO VAT Download receipt | Last ned kvittering | empty |Yes |
+| 25 | NO VAT Exclude from VAT return | Innbetaling av merverdiavgift ekskludert fra mva | empty | Yes |
+| 26 | NO VAT Include to VAT return | Inkluder betaling av omsetningsavgift til mva | empty | Yes |
+
+The following table shows other parameters of the actions that must be defined.
+
+| Action | Action type | Parameters |
+|--------|-------------|------------|
+| NO VAT Create message | Create message | <ul><li>**From statuses:** No</li><li>**To statuses:** NO VAT New message created</li></ul> |
+| NO VAT Collect sales tax payments | Populate records | <ul><li>**Populate records action:** NO VAT Collect sales tax payments</li><li>**From statuses:** NO VAT New message created</li><li>**To statuses:** NO VAT Collected</li></ul>|
+| NO VAT Ready to generate VAT return | Message level user processing | <ul><li>**From statuses:** NO VAT New message created</li><li>**To statuses:** NO VAT Ready to generate VAT return</li></ul> |
+| NO VAT Not ready to generate VAT return | Message level user processing | <ul><li>**From statuses:** NO VAT Ready to generate VAT return, NO VAT Return validated and ready to upload, NO VAT Return XML generated</li><li>**To statuses:** NO VAT New message created</li></ul> |
+| NO VAT Preview VAT return in Excel | Electronic reporting export message | <ul><li>**Message item type:** NO VAT return</li><li>**Format mapping:** VAT Declaration Excel (NO)</li><li>**From statuses:** NO VAT Error VAT return generation, NO VAT Error VAT return validation, NO VAT Ready to generate VAT return</li><li>**To statuses:** NO VAT Error VAT return generation, NO VAT Ready to generate VAT return</li></ul> |
+| NO VAT Generate VAT return | Electronic reporting export message | <ul><li>**File name:** mvamelding</li><li>**Message item type:** NO VAT return</li><li>**Format mapping:** VAT Declaration XML (NO)</li><li>**From statuses:** NO VAT Error sending VAT return validation request, NO VAT Error validation of uploaded VAT return, NO VAT Error VAT return generation, NO VAT Error VAT return validation, NO VAT Ready to generate VAT return, NO VAT Return XML generated</li><li>**To statuses:** NO VAT Return XML generated, NO VAT Error VAT return generation</li></ul> |
+| NO VAT Send validation request | Web service | <ul><li>**Web service:** NO Validate VAT return</li><li>**File name:** `valideringsresultat.xml`</li><li>**File name to send:** `mvamelding.xml`</li><li>**From statuses:** NO VAT Error sending VAT return validation request, NO VAT Error VAT return validation, NO VAT Return XML generated</li><li>**To statuses:** NO VAT Error sending VAT return validation request, NO VAT Sent VAT return validation request</li></ul>|
+| NO VAT Import validation response | Electronic reporting import | <ul><li>**Model mapping:** Altinn VAT import validation result format (NO)</li><li>**From statuses:** NO VAT Error importing VAT return validation result, NO VAT Sent VAT return validation request</li><li>**To statuses:** NO VAT Error importing VAT return validation result, NO VAT Error VAT return validation, NO VAT Return validation passed successfully</li></ul> |
