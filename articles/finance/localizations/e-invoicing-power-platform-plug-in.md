@@ -42,14 +42,6 @@ conditions to be met before starting with the solution configuration:
 -   [Platform updates for version 10.0.23 of Finance and Operations
     apps](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23)
 
--   Microsoft Power Platform integration with Finance and Operations needs to be
-    configured: [Enable the Microsoft Power Platform
-    integration](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
-
--   Microsoft Dataverse solutions for Finance and Operations Virtual Entities
-    support are required: [Getting the virtual entity
-    solution](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference#get-virtual-entity-solution)
-
 -   Electronic invoicing for Microsoft Dynamics 365 Finance and Operations needs
     to be configured: [Get started with Electronic invoicing service
     administration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started-service-administration?toc=/dynamics365/finance/toc.json)
@@ -100,7 +92,7 @@ To assign a security role:
 
 To set up integration
 
--   Go to System Administration \> Setup \> Azure Active Directory applications
+-   In Finance and Operations go to System Administration \> Setup \> Azure Active Directory applications
     to register Microsoft Dataverse.
 
     -   Add a new row.
@@ -112,6 +104,15 @@ To set up integration
 
     -   User ID - The user ID with the sufficient security roles configured
         above.
+
+-   In Finance and Operations go to Organization Administration \> Setup \> Electronic document parameters \> Dataverse integration
+    to set up the app used for integration with Dataverse.
+    
+    -   Register a new app: [Register the app in the Azure portal](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference#register-the-app-in-the-azure-portal)
+       
+    -   Set up the Azure Key Vault and put the app secret there: [Set up the Azure Key Vault client](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client)
+
+    -   Set up the App ID and Secret on the Dataverse integration tab.   
 
 -   Set up an Application User in Microsoft Dataverse, associated with the App
     ID - **ecd93392-c922-4f48-9ddf-10741e4a9b65:** [Create an application
