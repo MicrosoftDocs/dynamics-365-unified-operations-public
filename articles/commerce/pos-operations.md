@@ -4,7 +4,7 @@
 title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
-ms.date: 02/21/2020
+ms.date: 11/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -172,7 +172,7 @@ The following columns specify where the operations can be invoked:
 | 2001 | Schedule requests | This operation is not yet supported. | Yes | Yes | Yes | No | No |
 | 622 | Search | This operation lets users preconfigure POS buttons to perform searches by item, customer, or category. | Yes | Yes | Yes | Yes | No |
 | 1213 | Search shipping address | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
-| 709 | Select hardware station | Select a hardware station in a list of available hardware stations. | Yes | Yes | Yes | Yes | No |
+| 709 | Select hardware station | Select a hardware station from a list of available hardware stations. | Yes | Yes | Yes | Yes | No |
 | 637 | Set default sales representative on transaction | Select one of the eligible commission sales groups (sale reps) as the default sales rep for lines that are added later. | Yes | Yes | No | Yes | No |
 | 105 | Set quantity | Change the quantity of a line item in the transaction. | Yes | Yes | No | Yes | No |
 | 638 | Set sales representative on line | Select one of the eligible commission sales groups (sale reps) for the currently selected line. | Yes | Yes | No | Yes | No |
