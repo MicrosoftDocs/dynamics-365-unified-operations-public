@@ -73,7 +73,7 @@ You can add the **Party** page to your app by using site maps.
 
 7. Now select the entities **msdyn_partyelectronicaddress**, **msdyn_vendor**, **msdyn_postaladdress** and **msdyn_contactforparty**, so that the quick create forms for these tables are available on the parties form.
 
-    ![Select additional entities on the Components tab in App Designer.](media/ViewParty_Image13.png)
+    ![Select additional entities on the Components tab in App Designer.](media/ViewParty_Image13.PNG)
 
 8. Select **Save**.
 
