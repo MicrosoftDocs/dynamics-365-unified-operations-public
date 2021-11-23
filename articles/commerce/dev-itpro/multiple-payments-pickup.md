@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Multiple available payments for in-store pickup
-description: This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) for when there are one or more pre-existing payments available to be used against a transaction.
+title: Multiple available payment methods for in-store pickup
+description: This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) for when there are one or more pre-existing payment methods available to be used against a transaction.
 author: BrianShook
 ms.date: 12/03/2021
 ms.topic: article
@@ -28,34 +28,34 @@ ms.dyn365.ops.version:
 
 ---
 
-# Multiple available payments for in-store pickup
+# Multiple available payment methods for in-store pickup
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) for when there are one or more pre-existing payments available to be used against a transaction.
+This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) for when there are one or more pre-existing payment methods available to be used against a transaction.
 
-In many cases, when a customer creates an order and provides payment that has been authorized, the payment is against an order that will be picked up in store. Once in store, when a customer arrives and their transaction is brought up at POS, it is usually preferred to use any existing authorized payments over accepting a new payment method. Dynamics 365 Commerce helps the POS user identify and apply any available payments against the transaction.
+In many cases, when a customer creates an order and provides payment that has been authorized, the payment is against an order that will be picked up in store. When the customer arrives at the store and their transaction is brought up at POS, it is usually preferred to use any existing authorized payments over accepting a new payment method. Dynamics 365 Commerce helps the POS user identify and apply any available payment methods against the transaction.
 
 ## Prerequisites
 
-In order to help POS users identify and apply any available payments against transactions, the following settings must be configured in Commerce headquarters:
+In order to help POS users identify and apply any available payment methods against transactions, the following settings must be configured in Commerce headquarters:
 
 1. Go to **Workspaces \> Feature management** and search for and enable **Omni-channel payments**.
 1. Go to **Workspaces \> Feature management** and search for and enable **Display all preauthorized payments at checkout in POS**. The **Omni-channel payments** feature must first be enabled before this feature can be enabled.
 1. If the hardware station for POS is active, in headquarters set the POS register **Card not present processing** setting to **Use hardware station**. Otherwise, set the POS register **Card not present processing** setting to **Use retail server**.
 
-## Apply available payments in POS
+## Apply available payment methods in POS
 
-When payments are available to be used in a customer's POS transaction, POS provides indicators and flows to easily apply one or multiple available payments against a transaction. In POS with the customer's order located, selecting the order and choosing "Pick Up" will allow the POS user to select which items in the order can be picked up. After selecting the items and confirming the "Pick up" action, POS will then direct the user to the cart transaction screen.
+When payment methodss are available to be used in a customer's POS transaction, POS provides indicators and flows to easily apply one or multiple available payments against a transaction. When in POS with the customer's order located, selecting the order and then selecting **Pick Up** will allow the POS user to select which items in the order can be picked up. After selecting the items and confirming the **Pick up** action, POS will then direct the user to the cart transaction screen.
 
-### Available payments indicator
+### Available payment methods indicator
 
-When in the POS cart transaction screen that shows existing payment methods available to be used, an information indicator will display above the cart lines that reads "There are existing payment options available to apply to this order. Learn more at checkout." This informational banner signals the POS user to help ensure that available payment methods are used instead of selecting a new payment method to process. If the POS user selects the **Pay Card** payment option, the **Amount due** total, or checkout, the options for existing card payments will be displayed along with the option to choose a new payment method. Selecting any other payment methods from the transaction page will only display the option to choose a new payment method.
+When in the POS cart transaction screen that shows existing payment methods available to be used, an information indicator will display above the cart lines that states "There are existing payment options available to apply to this order. Learn more at checkout." This informational banner alert helps to ensure that available payment methods are used instead of selecting a new payment method to process. If the POS user selects the **Pay Card** payment option, the **Amount due** total, or proceeds to checkout, the options for existing card payments will be displayed along with the option to choose a new payment method. Selecting any other payment methods from the transaction page will only display the option to choose a new payment method.
 
-### Use available payments
+### Use available payment methods
 
-To use available payments, the POS user should select the cart **Amount due** total that will bring up a dialog box showing the total due as well as the available payment methods.
+To use available payment methods, the POS user should select the cart **Amount due** total that will bring up a dialog box showing the total due as well as the available payment methods.
 
 >[!NOTE]
 > Not all payment methods will prompt the available payments dialog box. Most commonly card operations will be shown as available payments if linked to the order. 
