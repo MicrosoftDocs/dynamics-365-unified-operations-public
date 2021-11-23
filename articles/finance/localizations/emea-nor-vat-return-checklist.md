@@ -218,4 +218,64 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Additional fields** and 
 
 ## Electronic message item types
 
-The setup of electronic messages for both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processing uses one type of electronic message item: **VAT return**.
+Go to **Tax** > **Setup** > **Electronic messages** > **Message item types** and check your setup. The **NO VAT return** processing uses one type of electronic message item: **NO VAT return**.
+
+## Electronic message item statuses
+
+Go to **Tax** > **Setup** > **Electronic messages** > **Message item statuses** and check your setup. The **NO VAT return** processing uses the following electronic message item statuses.
+
+| Status           | Description | Allow delete |
+|------------------|-------------|---------------------------------------|
+| NO VAT Collected | Sales tax payment record included for VAT return (Momsregistrering inkludert for mva-retur). | Yes |
+| NO VAT Excluded  | Sales tax payment excluded from VAT return (Innbetaling av merverdiavgift ekskludert fra mva ). | Yes |
+| To be reported   | Sales tax payment record ready for VAT return (Momsregistrering er klar for merverdiavgift). | No |
+
+## Electronic message statuses
+
+Go to **Tax** > **Setup** > **Electronic messages** > **Message statuses** and check your setup. The **NO VAT return** processing uses the following electronic message statuses.
+
+| Status                            | Description (Norwegian) | Response type | Allow delete |
+|-----------------------------------|-------------|---------------------------------------|
+| NO VAT Data filling completed | Datafyllingen er fullført | Successfull | No |
+| --- | --- | --- | --- |
+| NO VAT Error completion of VAT return submission | Feil ved gjennomføring av innsending av mva | TechnicalError | No |
+| NO VAT Error file download | Feil nedlasting av fil | TechnicalError | No |
+| NO VAT Error generation of instance request | Feil generering av forespørsel | TechnicalError | No |
+| NO VAT Error generation of VAT return submission | Feil generering av momsoppgave | TechnicalError | No |
+| NO VAT Error importing create instance response | Feil under import av opprettelsesforekomster | TechnicalError | No |
+| NO VAT Error importing of feedback | Tilbakemelding ved importfeil | TechnicalError | No |
+| NO VAT Error importing of feedback status response | Feil ved import av tilbakemeldingsstatusrespons | TechnicalError | No |
+| NO VAT Error importing of final validation result | Feil ved import av endelig valideringsresultat | TechnicalError | No |
+| NO VAT Error importing VAT return validation result | Feil under import av mva-returvalideringsresultat | TechnicalError | No |
+| NO VAT Error of data filling completion | Feil ved fullføring av data | TechnicalError | No |
+| NO VAT Error of instance creation | Feil ved opprettelse av forekomst | BusinessError | No |
+| NO VAT Error sending request for feedback | Feil ved sending av forespørsel om tilbakemelding | TechnicalError | No |
+| NO VAT Error sending request for status of feedback | Feil ved sending av forespørsel om status for tilbakemelding | TechnicalError | No |
+| NO VAT Error sending request to create an instance | Feil ved sending av forespørsel for å opprette en forekomst | TechnicalError | No |
+| NO VAT Error sending VAT return validation request | Feil ved sending av forespørsel om validering av mva | TechnicalError | No |
+| NO VAT Error validation of uploaded VAT return | Feilvalidering av opplastet MVA-melding | BusinessError | No |
+| NO VAT Error VAT return generation | Mva-returgenereringsfeil | TechnicalError | Yes |
+| NO VAT Error VAT return uploading | Melding om opplasting av mva | TechnicalError | No |
+| NO VAT Error VAT return validation | Mva-returvalideringsfeil | BusinessError | No |
+| NO VAT Feedback imported | Tilbakemeldinger importert | Successfull | No |
+| NO VAT Feedback not provided | Tilbakemelding tilbys ikke | Successfull | No |
+| NO VAT Feedback provided | Tilbakemelding tilbys | Successfull | No |
+| NO VAT Instance created | Forekomst opprettet | Successfull | No |
+| NO VAT New message created | Ny elektronisk melding opprettet | Successfull | Yes |
+| NO VAT Ready to generate VAT return | Klar til å generere mva | Successfull | No |
+| NO VAT Return received by Tax Authority | Mva-meldingen er levert og mottatt av Skatteetaten | Successfull | No |
+| NO VAT Return submission completed | Mva-returnering fullført | Successfull | No |
+| NO VAT Return submission request generated | Mva-returinnleveringsforespørsel generert | Successfull | No |
+| NO VAT Return submission uploaded successfully | Innlevering av merverdiavgift ble lastet opp | Successfull | No |
+| NO VAT Return submission uploading error | Melding om returopplastingsfeil | TechnicalError | No |
+| NO VAT Return uploaded | Mva-retur lastet opp | Successfull | No |
+| NO VAT Return validated and ready to upload | Momsangivelsen ble godkjent av Skatteetaten og klar til å lastes opp til Altinn | Successfull | No |
+| NO VAT Return validation passed successfully | Mva-returvalidering bestått | Successfull | No |
+| NO VAT Return XML generated | Mva-retur er vellykket generert i XML-format | Successfull | Yes |
+| NO VAT Sent request for feedback | Sendt forespørsel om tilbakemelding | Successfull | No |
+| NO VAT Sent request for status of feedback | Sendt forespørsel om status for tilbakemelding | Successfull | No |
+| NO VAT Sent VAT return validation request | Returvalideringsforespørsel sendt | Successfull | No |
+| NO VAT Successful download of final validation | Vellykket nedlasting av endelig validering | Successfull | No |
+| NO VAT Successful file download | Last ned filen vellykket | Successfull | No |
+| NO VAT Successful sending create instance request | Sendingen oppretter forespørsel om vellykket sending | Successfull | No |
+| NO VAT SUCCESSFUL VAT return submission to the Tax Administr | MVA-meldingen lastet opp til Skatteetaten ble validert | Successfull | No |
