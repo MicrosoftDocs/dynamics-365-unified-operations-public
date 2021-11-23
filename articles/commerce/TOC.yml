@@ -1394,6 +1394,8 @@
           href: localizations/emea-ita-fpi-sample.md
         - name: Customer information management for Italy
           href: localizations/emea-ita-customer-information.md 
+        - name: Deployment guidelines for fiscal integration sample for Italy (legacy)
+          href: localizations/emea-ita-fpi-sample-sdk.md
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
