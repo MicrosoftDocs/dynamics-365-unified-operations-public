@@ -66,7 +66,7 @@ Commerce functionality for Russia includes a [sample integration](./rus-fpi-samp
 
 ## Availability of Commerce localization features for Russia
 
-| Feature | Released | May be added in feature releases | Not planned |
+| Feature | Released | May be added in future releases | Not planned |
 |-|:-:|:-:|:-:|
 | A sample of the integration of the POS with a fiscal printer | X |  |  |
 | Processing of cash payments using petty cash journals in Commerce headquarters | X |  |  |
