@@ -19,9 +19,14 @@ ms.search.validFrom: 2021-11-12
 
 This topic explains how to install Commerce analytics (Preview), the functional analytics capability that is included in Microsoft Dynamics 365 Commerce.
 
-## Commerce analytics (Preview) live demo
+## Commerce Analytics (Preview) live demo
 
 You can try out a [live demo of Commerce Analytics (Preview)](https://aka.ms/CommerceAnalyticsDemo).
+
+![Commerce Analytics (Preview) Summary](media/CommerceAnalytics_Summary.png)
+![Commerce Analytics (Preview) Payments](media/CommerceAnalytics_Payments.png)
+![Commerce Analytics (Preview) Web activity](media/CommerceAnalytics_WebActivity.png)
+
 
 ## Commerce analytics (Preview) system architecture
 
@@ -34,7 +39,7 @@ Commerce analytics (Preview) consists of the following key components:
 - Entity and ontology data in Azure Data Lake
 - Raw data in Data Lake
 
-![Key components of the Commerce analytics system architecture](media/CommerceAnalytics.png)
+![Key components of the Commerce analytics system architecture](media/CommerceAnalyticsArchitecture_v2.png)
 
 ### Data flow
 
