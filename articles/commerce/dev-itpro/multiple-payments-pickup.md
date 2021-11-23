@@ -47,7 +47,7 @@ In order to help POS users identify and apply any available payment methods agai
 
 ## Apply available payment methods in POS
 
-When payment methodss are available to be used in a customer's POS transaction, POS provides indicators and flows to easily apply one or multiple available payments against a transaction. When in POS with the customer's order located, selecting the order and then selecting **Pick Up** will allow the POS user to select which items in the order can be picked up. After selecting the items and confirming the **Pick up** action, POS will then direct the user to the cart transaction screen.
+When payment methods are available to be used in a customer's POS transaction, POS provides indicators and flows to easily apply one or multiple available payments against a transaction. When in POS with the customer's order located, selecting the order and then selecting **Pick Up** will allow the POS user to select which items in the order can be picked up. After selecting the items and confirming the **Pick up** action, POS will then direct the user to the cart transaction screen.
 
 ### Available payment methods indicator
 
