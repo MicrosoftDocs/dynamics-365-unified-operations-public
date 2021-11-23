@@ -57,7 +57,7 @@ The following table shows the parameters of the web applications.
 | Base URL | `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` | `https://oidc-ver2.difi.no/idporten-oidc-provider` |
 | Authorization URL path                | empty | `/authorize` |
 | Token URL path                        | empty | `/token` |
-| Redirect URL                          | empty | Set up here your value according to [Set up the internet address of ID-porten and Altinn web services](emea-nor-vat-return-setup#internet-address)
+| Redirect URL                          | empty | Set up here your value according to [Set up the internet address of ID-porten and Altinn web services](emea-nor-vat-return-setup.md#internet-address)
 | Authorization format mapping          | Altinn VAT authorization format (NO) | Altinn VAT authorization format (NO)|
 | Import token model mapping            | Altinn VAT import Altinn token format (NO) | Altinn VAT import ID-Porten token format (NO) |
 | Accept                                | empty | empty |
@@ -235,8 +235,6 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Message item statuses** 
 Go to **Tax** > **Setup** > **Electronic messages** > **Message statuses** and check your setup. The **NO VAT return** processing uses the following electronic message statuses.
 
 | Status                            | Description (Norwegian) | Response type | Allow delete |
-|-----------------------------------|-------------|---------------------------------------|
-| NO VAT Data filling completed | Datafyllingen er fullført | Successfull | No |
 | --- | --- | --- | --- |
 | NO VAT Error completion of VAT return submission | Feil ved gjennomføring av innsending av mva | TechnicalError | No |
 | NO VAT Error file download | Feil nedlasting av fil | TechnicalError | No |
@@ -279,3 +277,21 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Message statuses** and c
 | NO VAT Successful file download | Last ned filen vellykket | Successfull | No |
 | NO VAT Successful sending create instance request | Sendingen oppretter forespørsel om vellykket sending | Successfull | No |
 | NO VAT SUCCESSFUL VAT return submission to the Tax Administr | MVA-meldingen lastet opp til Skatteetaten ble validert | Successfull | No |
+
+## Action populate records
+
+Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions** and check your setup. The **NO VAT return** processing uses one **NO VAT Collect sales tax payments** populate records action. The following table shows the setup of the data source for this action.
+
+| Property               | Value |
+|------------------------|-------|
+| Name                   | NO VAT return |
+| Message item type      | NO VAT return |
+| Account type           | All |
+| Master table name      | TaxReportVoucher |
+| Document number field  | Voucher |
+| Document date field    | TransDate |
+| Document account field | TaxPeriod |
+| User query             | Yes |
+
+> [!IMPORTANT]
+> Define the settlement period by using the **Edit query** button. For more information, see [Define a sales tax settlement period](emea-nor-vat-return-setup.md#settlement-period).
