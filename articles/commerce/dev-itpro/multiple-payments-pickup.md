@@ -28,10 +28,10 @@ ms.dyn365.ops.version:
 
 ---
 
+# Multiple available payments for in-store pickup
+
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
-
-# Multiple available payments for in-store pickup
 
 This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) for when there are one or more pre-existing payments available to be used against a transaction.
 
@@ -70,6 +70,6 @@ If multiple existing payment methods are available, the **Existing payment optio
 
 ## Additional resources
 
-[Omni-channel payments overview](omni-channel-payments.md)
+[Omni-channel payments overview](../omni-channel-payments.md)
 
 [Omni-channel Commerce order payments](commerce-payments.md)
