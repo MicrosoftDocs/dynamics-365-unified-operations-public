@@ -4,7 +4,7 @@
 title: Peripheral compatibility for Commerce 
 description: This topic lists peripheral devices that have been tested for compatibility with Dynamics 365 Commerce.
 author: rubencdelgado
-ms.date: 10/08/2017
+ms.date: 11/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,7 +62,7 @@ Devices listed on this page have been tested for compatibility with Dynamics 365
 
 ## Device compatibility testing
 
-Devices can be tested for compatibility using the Peripheral simulator. For details around obtaining Peripheral simulator, device testing and how to produce test logs for submission to Microsoft, see [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md). Testing must be performed for every peripheral setup that goes into production. If the compatibility list indicates that the exact same device/POS setup has been tested in the past, testing should still be done as part of UAT testing.
+Devices can be tested for compatibility using the peripheral simulator. For information on obtaining the peripheral simulator, conducting device testing, and producing test logs for submission to Microsoft, see [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md). Testing must be performed for every peripheral setup that goes into production. If the compatibility list indicates that the exact same device/POS setup has been tested in the past, testing should still be done as part of user acceptance testing (UAT).
 
 ## Supported devices
 
