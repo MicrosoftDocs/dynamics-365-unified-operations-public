@@ -34,8 +34,8 @@ Although this topic includes the most important information about the setup, it 
 
 The following type of processing is defined to support interoperation with Altinn.
 
-| Processing | Name (Norwegian)               | Description |
-|--------------------|-------------|
+| Processing | Name (Norwegian) | Description |
+|--------------------|-------------|------------|
 | NO VAT return | Momsoppgave med direkte innsending | The processing to prepare and submit VAT returns to Altinn. |
 
 > [!IMPORTANT]
@@ -53,7 +53,7 @@ The **NO VAT return** processing use the following web applications.
 The following table shows the parameters of the web applications.
 
 | Parameter                             | Value for **NO Altinn** | Value for **NO ID-Porten** |
-|---------------------------------------|-------|
+|---------------------------------------|-------|--------------|
 | Base URL | `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` | `https://oidc-ver2.difi.no/idporten-oidc-provider` |
 | Authorization URL path                | empty | `/authorize` |
 | Token URL path                        | empty | `/token` |
