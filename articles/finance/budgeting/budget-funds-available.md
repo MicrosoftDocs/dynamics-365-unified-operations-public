@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 10.0.24
 
 #### Enhanced calculation feature for budget funds available.
 
-The **Only track amounts in the budget funds available calculation** feature lets you track the underlying budget control tables for document types and states according to the settings marked in budget control for the budget funds available. 
+The **Only track amounts in the budget funds available calculation** feature lets you track the underlying budget control tables for document types and states according to the settings marked on the **Define budget control parameters** page. 
 
-Some budget control configuration settings must be set to specific values for this feature to work properly. The settings are marked or cleared on the **Define budget control parameters** page The settings that are required for the budget funds available feature are listed in the following table.
+Some budget control configuration settings must be set to specific values for this feature to work properly. The settings are marked or cleared in the **Budget funds available** tab on the **Define budget control parameters** page The settings that are required for the budget funds available feature are listed in the following table.
 
-| If this setting is enabled        | This also needs to be enabled     |
+| If this setting is enabled        | This setting also needs to be enabled     |
 | :---------------------------------- | :---------------------------------- |
 | Budget reservations for pre-encumbrances | Budget reservations for encumbrances *and* Actual expenditures |
 | Budget reservations for encumbrances | Actual expenditures |
@@ -47,5 +47,3 @@ Some budget control configuration settings must be set to specific values for th
 This feature will only affect new documents.  Existing documents will still have their amounts tracked and displayed accordingly in the budget control statistics inquiry until a budget-funds-available setting is changed and the new budget control configuration is activated.  At that point documents that were removed from the budget funds available calcualtion will have their budget tracking data removed. 
 
 We recommended not marking the **Unposted actual expenditures** field. If this field *is* marked, a time-consuming budget control calculation will be performed on unposted documents, such as pending vendor invoices. 
-
-Leaving this field unmarked will avoid an expensive budget control calcuation (in terms of the time required and the server resources used) for unposted documents, such as pending vendor invoices. 
