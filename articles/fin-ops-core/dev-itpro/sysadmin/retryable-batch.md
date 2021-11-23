@@ -18,11 +18,11 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the platform provides three ways to enable batch resiliency and prevent transient failures.
+This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the the batch platform provides three ways to enable batch resiliency and prevent transient failures.
 
 ## Retry the batch job task, regardless of the error type
 
-We recommended that you use this option when you want a batch job task always to be retried, regardless of the error type. The **Maximum Retry Count** value specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a ready state so that it can be picked up again. 
+We recommended that you use this option when you want a batch job task always to be retried, regardless of the error type. The **Maximum retries** value specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **Maximum retries**, the task is put back into a ready state so that it can be picked up again. 
 
 1. On the **Batch jobs** page, select **Batch task details**.
 2. On the **General** tab, set the **Maximum retries** field.
@@ -35,11 +35,11 @@ Because not all batch jobs might be idempotent (for example, when a batch runs c
 
 Retries are enabled only for jobs where the **BatchRetryable** interface is implemented and **isRetryable** is set to **True**. In this functionality, retries occur after any interruption of the SQL Server connection. Microsoft will continue to add retries on other exceptions.
 
-The maximum number of retries and the retry interval are controlled by the batch framework. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (with an exponential interval time.)
+The maximum number of retries and the retry interval are controlled by the batch platform. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (time Interval time increases in the following way: 5, 8, 16, 32, and so on.)
 
 ## Batch OData action capability
 
-This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. Batch has exposed a new Open Data Protocol (OData) action from Platform update 46 (PU46). When a job ID is provided in a call to the endpoint, the job will be requeued for execution.
+This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. The batch platform has exposed a new Open Data Protocol (OData) action from Platform update 46 (PU46). When a job ID is provided in a call to the endpoint, the job will be requeued for execution.
 
 For more information, see [Batch OData API](batch-odata-api.md).
 
@@ -105,7 +105,7 @@ In this context, *idempotent* means that a retry won't change or affect the over
 
 ### What is the maximum number of retries that BatchRetryable supports, and what is the retry interval?
 
-**MaxRetryCount** specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a ready state so that it can be picked up again.
+**Maximum retries** specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **Maximum retries**, the task is put back into a ready state so that it can be picked up again.
 
 The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
 
