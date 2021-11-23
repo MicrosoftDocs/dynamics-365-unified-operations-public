@@ -114,7 +114,7 @@ To set up integration
 
     -   Set up the App ID and Secret on the Dataverse integration tab.
 
-    -   Create an Application User in Microsoft Dataverse, associated with the App ID: [Create an application user](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user). The user should be assigned a security role and having privileges to read/write the following Dataverse entities:
+    -   Create an Application User in Microsoft Dataverse, associated with the App ID: [Create an application user](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user). The user should be assigned a security role having privileges to read/write the following Dataverse entities:
 
         -   Electronic Invoice Submission
 
