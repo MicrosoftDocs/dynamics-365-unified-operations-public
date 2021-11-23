@@ -1,4 +1,4 @@
-{:allowed-branchname-matches ["^master$"]
+{:allowed-branchname-matches ["^main$"]
  :allowed-filename-matches ["(?i)articles/(?:(?!finance/localizations|fin-ops-core/dev-itpro/data-entities/dual-write/includes))"]
  :use-skip-label true
  :targets
