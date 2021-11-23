@@ -157,7 +157,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
-- **Tender type mapping** - The mapping for tender types
+- **Tender type mapping** - The mapping of payment methods configured for the store to payment types supported by the fiscal printer. The default mapping is as following:
 
     ```JSON
     {"PaymentMethods": [
@@ -169,8 +169,26 @@ The following default data mapping is included in the fiscal document provider c
         ],
         "DepositPaymentMethod": {"PrinterPaymentType":"2", "PrinterPaymentIndex":"00"}}
     ```
+    
+    Where:
+    
+    - **StorePaymentMethod** is a payment method that is set up for the store (**Retail and Commerce \> Channel setup \> Payment methods \> Payment methods**).
+    - **PrinterPaymentType** and **PrinterPaymentIndex** are the corresponding payment type and index as defined by the documentation of the Epson fiscal printer.
+    - **DepositPaymentMethod** is used to specify a printer’s payment type and index for the part of the customer order pick-up amount that is settled with the customer order deposit.
 
-- **Barcode type for receipt number** - The type of barcode used to display a receipt number in a fiscal receipt.
+    The sample mapping of payment methods corresponds to store payment methods configured in the standard demo data:
+
+    | Payment method | Payment method name  |
+    |----------------|----------------------|
+    | 1              | Cash                 |
+    | 3              | Card                 |
+    | 4              | Customer account     |
+    | 6              | Currency             |
+    | 8              | Gift card            |
+
+    Thus, you need to modify the sample mapping according to the payment methods configured in your application.
+
+- **Barcode type for receipt number** - The type of barcode used to display a receipt number in a fiscal receipt. The default mapping is as following:
 
     ```
     CODE128
