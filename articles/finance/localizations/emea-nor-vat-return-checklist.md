@@ -77,18 +77,18 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Web service settings** a
 | Web service  | **NO Altinn GET attachments**|
 | Description | Altinn web service for GET attachments downloaded (XML, PDF)|
 | Internet address | empty|
-| Web application |  NO Altinn|
+| Web application |  **NO Altinn**|
 | Use proxy server | No |
 | Use advanced parameters | empty |
 | Certificate | empty |
 | The response type – XML | No |
-| Request method | GET|
+| Request method | **GET**|
 | Accept | empty|
 | Accept encoding| empty |
 | Request headers | empty |
 | Content type | empty|
-| Request header format mapping | Altinn VAT web request headers format (NO)|
-| Successful response code |200|
+| Request header format mapping | **Altinn VAT web request headers format (NO)**|
+| Successful response code |**200**|
 
 | Parameter name | Parameter value |
 |-------|-----------|
@@ -124,7 +124,7 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Web service settings** a
 | Request headers | empty |
 | Content type | **application/json** |
 | Request header format mapping | **Altinn VAT web request headers format (NO)**|
-| Successful response code |**201*** |
+| Successful response code |**201** |
 
 | Parameter name | Parameter value |
 |-------|-----------|
@@ -200,19 +200,21 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Web service settings** a
 
 ## Additional fields
 
-Both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processing use the following additional fields.
+Go to **Tax** > **Setup** > **Electronic messages** > **Additional fields** and check your setup. The **NO VAT return** processing uses the following additional fields.
 
 > [!NOTE]
 > None of these fields can be changed by the user.
 
-| Field                   | Description |
-|-------------------------|-------------|
-| Due date                | The due date for the obligation period. |
-| HMRC status             | <p>The obligation status in HMRC:</p><ul><li>**O** – Open.</li><li>**F** – Fulfilled.</li></ul> |
-| periodKey               | The ID code for the period that the obligation belongs to. This field is hidden. |
-| Processing date         | The time when HMRC processed the message. |
-| Received date           | The date when HMRC received the obligation. |
-| Tax registration number | The VAT registration number of the company that is submitting the VAT return. |
+| Field                   | Description (Norwegian) | User edit | Counter | Hidden |
+|-------------------------|-------------|-----------|---------|---|
+| NO VAT Data GUID | Data GUID  | No | No | Yes |
+| NO VAT Instance GUID | Instans-GUID  | No | No | Yes |
+| NO VAT Note for VAT return | Merknad på meldingsnivå: har en kan velge mellom en predefinert liste av merknader eller fylle ut fritekst  | Yes | No | No |
+| NO VAT Party ID | Part ID  | No | No | Yes |
+| NO VAT Payment information | Betalingsinformasjon  | No | No | Yes |
+| NO VAT Receipt | Kvittering  | No | No | Yes |
+| NO VAT Validation result | Valideringsresultat  | No | No | Yes |
+| Tax registration number | Skatteregistreringsnummer  | No | No | Yes |
 
 ## Electronic message item types
 
