@@ -31,7 +31,7 @@ After a party is created, you can use the tabs on the **Party** page to manage i
 
 The **Customers** tab lets you create and manage one or more customers from the party for different companies. If the party type is **Person**, you can create and manage customers of the **Person** type. These customers are known as *contacts*. If the party type is **Organization**, you can create and manage customers of the **Organization** type. These customers are known as *accounts*. 
 
-![Example of a party of the type Customers.](media/ViewParty_Image2.PNG)
+![Creating a customer for a party in the Quick Create: Account dialog box.](media/ViewParty_Image2.PNG)
 
 The **Vendors** tab resembles the **Customers** tab, but it's used to create vendors of the **Person** or **Organization** type.
 
@@ -39,17 +39,17 @@ The **Vendors** tab resembles the **Customers** tab, but it's used to create ven
 
 The **Postal Addresses** tab lets you create and manage one or more postal addresses for the party. You can create as many postal addresses as the party requires. These addresses appear on the quotation and sales order pages.
 
-![Example of a party's postal address.](media/ViewParty_Image3.PNG)
+![Example of a party's postal addresses.](media/ViewParty_Image3.PNG)
 
 The **Electronic Addresses** tab lets you create and manage one or more electronic addresses for the party. You can create as many electronic addresses as the party requires.
 
-![Example of a party's electronic address.](media/ViewParty_Image4.PNG)
+![Creating an electronic address for a party in the Quick Create: Party Electronic Address dialog box.](media/ViewParty_Image4.PNG)
 
 ## Associated Contacts tab
 
 The **Associated Contacts** tab lets you create contact persons (**Contact for party** records) and associate them with the party.
 
-![Example of a contact associated to the party.](media/ViewParty_Image5.PNG)
+![Creating an associated contact for a party in the Quick Create: Contact for Customer or Vendor dialog box.](media/ViewParty_Image5.PNG)
 
 ## Add the Party page to your app
 
@@ -70,13 +70,11 @@ You can add the **Party** page to your app by using site maps.
     ![Party (msdyn_party) entity selected on the Components tab in App Designer.](media/ViewParty_Image8.png)
 
 6. Select **Save**.
+7. Find and select the **msdyn_partyelectronicaddress**, **msdyn_vendor**, **msdyn_postaladdress**, and **msdyn_contactforparty** entities, so that the **Quick Create** dialog boxes for those tables are available on the parties page.
 
-7. Now select the entities **msdyn_partyelectronicaddress**, **msdyn_vendor**, **msdyn_postaladdress**, and **msdyn_contactforparty** so that the quick create forms for these tables are available on the parties form.
-
-    ![Select additional entities on the Components tab in App Designer.](media/ViewParty_Image13.PNG)
+    ![Selecting additional entities on the Components tab in App Designer.](media/ViewParty_Image13.PNG)
 
 8. Select **Save**.
-
 9. In the main part of the page, in the **Site Map** section, select the **Edit** button (pencil symbol) on the **Site Map** tile.
 
     ![Edit button on the Site Map tile in App Designer.](media/ViewParty_Image9.png)
