@@ -298,7 +298,7 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions
 
 ## Electronic message actions
 
-Go to **Tax** > **Setup** > **Electronic messages** > **Message processing actions** and check your setup. The **NO VAT return** processing uses the following electronic message actions.
+Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing** and check your setup. The **NO VAT return** processing uses the following electronic message actions.
 
 | Order | Action                       | Description (Norwegian) | Inseparable sequence | Run separately |
 |-------|------------------------------|-------------------------|----------------------|---------|
@@ -329,7 +329,7 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Message processing actio
 | 25 | NO VAT Exclude from VAT return | Innbetaling av merverdiavgift ekskludert fra mva | empty | Yes |
 | 26 | NO VAT Include to VAT return | Inkluder betaling av omsetningsavgift til mva | empty | Yes |
 
-The following table shows other parameters of the actions that must be defined.
+Go to **Tax** > **Setup** > **Electronic messages** > **Message processing actions** and check your setup. The following table shows parameters of the actions that must be defined.
 
 | Action | Action type | Parameters |
 |--------|-------------|------------|
@@ -341,3 +341,4 @@ The following table shows other parameters of the actions that must be defined.
 | NO VAT Generate VAT return | Electronic reporting export message | <ul><li>**File name:** mvamelding</li><li>**Message item type:** NO VAT return</li><li>**Format mapping:** VAT Declaration XML (NO)</li><li>**From statuses:** NO VAT Error sending VAT return validation request, NO VAT Error validation of uploaded VAT return, NO VAT Error VAT return generation, NO VAT Error VAT return validation, NO VAT Ready to generate VAT return, NO VAT Return XML generated</li><li>**To statuses:** NO VAT Return XML generated, NO VAT Error VAT return generation</li></ul> |
 | NO VAT Send validation request | Web service | <ul><li>**Web service:** NO Validate VAT return</li><li>**File name:** `valideringsresultat.xml`</li><li>**File name to send:** `mvamelding.xml`</li><li>**From statuses:** NO VAT Error sending VAT return validation request, NO VAT Error VAT return validation, NO VAT Return XML generated</li><li>**To statuses:** NO VAT Error sending VAT return validation request, NO VAT Sent VAT return validation request</li></ul>|
 | NO VAT Import validation response | Electronic reporting import | <ul><li>**Model mapping:** Altinn VAT import validation result format (NO)</li><li>**From statuses:** NO VAT Error importing VAT return validation result, NO VAT Sent VAT return validation request</li><li>**To statuses:** NO VAT Error importing VAT return validation result, NO VAT Error VAT return validation, NO VAT Return validation passed successfully</li></ul> |
+| NO VAT Generate request for instance | Electronic reporting export message | <ul><li>**File name:** createInstanceRequest.json</li><li>**Format mapping:** Altinn VAT interoperation (NO)</li><li>**From statuses:** NO VAT Error generation of instance request, NO VAT Error of instance creation, NO VAT Error sending request to create an instance, NO VAT Return validation passed successfully</li><li>**To statuses:** NO VAT Error generation of instance request, NO VAT Return validated and ready to upload</li></ul>|
