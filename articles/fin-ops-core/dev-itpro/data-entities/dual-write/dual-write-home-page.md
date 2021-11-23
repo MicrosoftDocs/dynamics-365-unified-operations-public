@@ -2,7 +2,7 @@
 title: Dual-write home page
 description: This topic provides links to information about dual-write.
 author: tonyafehr
-ms.date: 02/08/2020
+ms.date: 11/23/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -44,7 +44,7 @@ These topics describe dual-write integration.
 ## Managing dual-write after setup
 
 + [Customize table and column mappings](customizing-mappings.md)
-+ [Customize tables for additional fields, maps or transformations](custom-best-practices.md)
++ [Customize tables for additional fields, maps, or transformations](custom-best-practices.md)
 + [Handling multiple table maps](multiple-entity-maps.md)
 + [Edit a legal entity after dual-write setup](edit-legal-entity.md)
 + [Pause dual-write for maintenance](pause-for-maintenance.md)
