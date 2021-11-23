@@ -2,7 +2,7 @@
 # required metadata
 
 title: Multiple available payment methods for in-store pickup
-description: This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) for when there are one or more pre-existing payment methods available to be used against a transaction.
+description: This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) when there are one or more pre-existing payment methods available to be used against a transaction.
 author: BrianShook
 ms.date: 12/03/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) for when there are one or more pre-existing payment methods available to be used against a transaction.
+This topic covers the capabilities of Microsoft Dynamics 365 Commerce point-of-sale (POS) when there are one or more pre-existing payment methods available to be used against a transaction.
 
 In many cases, when a customer creates an order and provides payment that has been authorized, the payment is against an order that will be picked up in store. When the customer arrives at the store and their transaction is brought up at POS, it is usually preferred to use any existing authorized payments over accepting a new payment method. Dynamics 365 Commerce helps the POS user identify and apply any available payment methods against the transaction.
 
@@ -55,14 +55,14 @@ When in the POS cart transaction screen that shows existing payment methods avai
 
 ### Use available payment methods
 
-To use available payment methods, the POS user should select the cart **Amount due** total that will bring up a dialog box showing the total due as well as the available payment methods.
+To use available payment methods, the POS user should select the cart **Amount due** total that will bring up a dialog box showing the total due and the available payment methods.
 
 >[!NOTE]
 > Not all payment methods will prompt the available payments dialog box. Most commonly card operations will be shown as available payments if linked to the order. 
 
 Users can then select either **Existing payment options** or **Choose a payment method**. The latter option allows the user to continue with normal processing of a new payment method.
 
-If multiple existing payment methods are available, the **Existing payment options** section of the **Amount due** dialog box will show a **Use available payment** button with a number of how many existing payments are available. Selecting this button will update the dialog box to display the existing payment options available. If more than one payment option exists, an **Apply All** button will be displayed, as well as buttons for each specific payment method available. Selecting **Apply All** will use all of the pre-existing payment method amounts up to the total of the amount due for the transaction. For the specific existing payment buttons, the summarized total amount existing for the payment method, the payment method type (for example, "Visa"), and the last four digits of the payment method will be displayed on the button. When a specific available payment method is selected:
+If multiple existing payment methods are available, a **Use available payment** button showing a count of how many existing payments are available will be displayed in the **Existing payment options** section of the **Amount due** dialog box. Selecting this button will update the dialog box to display the existing payment options available. If more than one payment option exists, an **Apply All** button will be displayed in addition to buttons for each available payment method. Selecting **Apply All** will use all of the pre-existing payment method amounts up to the total of the amount due for the transaction. For the specific existing payment buttons, the summarized total amount existing for the payment method, the payment method type (for example, "Visa"), and the last four digits of the payment method will be displayed on the button. When a specific available payment method is selected:
 
 - If the amount is less than the transaction total, the payment amount selected will show as a payment line and will be applied against the total due.
 - If the amount is equal to the transaction total, the amount due will be adjusted to zero and transaction will be completed automatically.
