@@ -4,7 +4,7 @@
 title: Commerce analytics (Preview)
 description: This topic explains how to install and use the analytics capability in Microsoft Dynamics 365 Commerce. 
 author: AamirAllaq
-ms.date: 11/15/2021
+ms.date: 11/23/2021
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
@@ -80,7 +80,7 @@ Finally, the data is rendered in Power BI visuals, so that users can view and in
 
 ### Summary
 
-Commerce Analytics template app includes the following main report pages
+Commerce Analytics template app includes the following main report pages:
 
 1. [Top-level filters](#TopLevelFilters)
 2. [Products](#ProductsPage)
@@ -445,7 +445,7 @@ To install and configure an Azure Synapse workspace, follow these steps.
     |---|---|
     | placeholder_storageaccount | The name of the [storage account](#storageAccount) that you created while you configured Export to Data Lake. |
     | <a name="phContainer"></a>placeholder_container | The name of the storage container that was created in your Data Lake instance after you successfully installed the Export to Data Lake add-in in LCS. To get the container name, you must use Storage Explorer in the Azure portal to browse your storage account. |
-    | placeholder_sastoken | The [SAS token](#getSASToken) that you generated. Be sure to remove the **?** from the beginning of the SAS token value. |
+    | placeholder_sastoken | The [SAS token](#getSASToken) that you generated. Be sure to remove the question mark (**?**) from the beginning of the SAS token value. |
     | <a name="phUserPwd"></a>placeholder_password | A strong password of your choice. Make a note of this password. It will be set as the password for the new **reportreadonlyuser** account that the script creates. Do **not** enter the password of the **sqladminuser** account. |
 
 3. Copy the updated contents of the script file.
