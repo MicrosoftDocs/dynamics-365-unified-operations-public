@@ -2,10 +2,10 @@
 # required metadata
 
 title: VAT return with direct submission to Altinn
-description: This topic explains how to set up the VAT return with direct submission to Altinn in Microsoft Dynamics 365 Finance and use it to submit a VAT return in Norway. 
+description: This topic explains how to set up the VAT return with direct submission to Altinn and use it to submit a VAT return in Norway. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 11/15/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,12 +30,12 @@ ms.search.validFrom: 2022-11-15
 
 This topic explains how to set up the VAT return with direct submission to Altinn in Microsoft Dynamics 365 Finance and use it to submit a VAT return in Norway.
 
-Within Skatteinfo no. 11/2020, Norwegian Tax Administration introduced requirement of VAT return reporting including direct digital submission from accounting systems to Altinn tax portal to replace the manual VAT return filing for periods starting from January 1, 2022. 
+Within Skatteinfo no. 11/2020, the Norwegian Tax Administration introduced a requirement of VAT return reporting that includes direct digital submission from accounting systems to the Altinn tax portal to replace the manual VAT return filing for periods starting from January 1, 2022. 
 For more information about VAT return with direct submission to Altinn, see [Mva-meldingen](https://skatteetaten.github.io/mva-meldingen/english/).
 
-The **VAT return with direct submission to Altinn** feature in Finance supports filing a VAT return for [Multiple VAT registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) and for companies that report as a [VAT group](emea-nor-vat-return-setup#vat-group) in the same system database.
+The **VAT return with direct submission to Altinn** feature in Finance supports filing a VAT return for [Multiple VAT registrations](emea-multiple-vat-registration-numbers.md) and for companies that report as a [VAT group](emea-nor-vat-return-setup.md#vat-group) in the same system database.
 
-For more information about how to prepare to VAT return with direct submission to Altinn, see the following topics:
+For more information about how to prepare a VAT return with direct submission to Altinn, see the following topics:
 
 -	[Register an integration point in ID-porten web portal](emea-nor-vat-return-integration-point.md)
 -	[Prepare your environment to interoperate with ID-porten and Altinn web services](emea-nor-vat-return-setup.md)
