@@ -295,3 +295,36 @@ Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions
 
 > [!IMPORTANT]
 > Define the settlement period by using the **Edit query** button. For more information, see [Define a sales tax settlement period](emea-nor-vat-return-setup.md#settlement-period).
+
+## Electronic message actions
+
+Go to **Tax** > **Setup** > **Electronic messages** > **Message processing actions** and check your setup. The **NO VAT return** processing uses the following electronic message actions.
+
+| Order | Name                                | Description (Norwegian) | Inseparable sequence | Run separately |
+|-------------------------------------|-------------------------|-------|---------|
+| 1 | NO VAT Create message | Lag melding | empty | No |
+| 2 | NO VAT Collect sales tax payments | Samle momsregistreringer for merverdiavgift | No |
+| 3 | NO VAT Ready to generate VAT return | Klar til å generere mva | empty | Yes |
+| 4 | NO VAT Not ready to generate VAT return | Elektronisk melding er ikke klar til å generere merverdiavgi | empty | Yes |
+| 5 | NO VAT Preview VAT return in Excel | Forhåndsvis mva-retur i Excel | empty | Yes |
+| 6 | NO VAT Generate VAT return | Generer merverdiavgift i XML | NO VAT Validation | Yes | 
+| 7 | NO VAT Send validation request | Send forespørsel om validering | NO VAT Validation | Yes | 
+| 8 | NO VAT Import validation response | Import validering svar | No | NO VAT Validation |
+| 9 | NO VAT Generate request for instance | Generer forespørsel om å opprette forekomst | No | NO VAT Validation |
+| 10 | NO VAT Send request to create instance | Send forespørsel for å opprette forekomst | Yes | NO VAT Submission |
+| 11 | NO VAT Import instance creation response | Importer opprettelsessvar for forekomst | No | NO VAT Submission |
+| 12 | NO VAT Generate VAT return submission | Generer innsending av mva | No | NO VAT Submission |
+| 13 | NO VAT Upload VAT return submission | Last opp innsending av merverdiavgift | No | NO VAT Submission |
+| 14 | NO VAT Upload VAT return | Last opp mva-retur | No | NO VAT Submission |
+| 15 | NO VAT Complete data filling | Fullstendig datafylling | No | NO VAT Submission |
+| 16 | NO VAT Complete VAT return submission | Fullfør momsoppgaven | No | NO VAT Submission |
+| 17 | NO VAT Send feedback status request | Send statusforespørsel om tilbakemelding | No | NO VAT Submission |
+| 18 | NO VAT Import feedback status response | Importer tilbakemeldingsstatusrespons | No | NO VAT Submission |
+| 19 | NO VAT Send feedback request | Send forespørsel om tilbakemelding | No | NO VAT Submission |
+| 20 | NO VAT Import feedback response | Importer tilbakemeldingssvar | No | NO VAT Submission |
+| 21 | NO VAT Download validation result | Last ned valideringsresultat | No | NO VAT Submission |
+| 22 | NO VAT Import final validation result | Import endelig valideringsresultat | No | NO VAT Submission |
+| 23 | NO VAT Download payment information | Last ned betalingsinformasjon | Yes |
+| 24 | NO VAT Download receipt | Last ned kvittering | Yes |
+| 25 | NO VAT Exclude from VAT return | Innbetaling av merverdiavgift ekskludert fra mva | Yes |
+| 26 | NO VAT Include to VAT return | Inkluder betaling av omsetningsavgift til mva | Yes |
