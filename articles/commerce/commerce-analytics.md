@@ -213,7 +213,7 @@ Commerce Analytics template app includes the following main report pages:
 
 - Transaction count
 
-### <a name="ComparisonsPage"></a> Comparisons
+### <a name="ComparisonPage"></a> Comparison
 
 - Product comparison by time period
 
