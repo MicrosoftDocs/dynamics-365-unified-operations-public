@@ -27,13 +27,13 @@ ms.dyn365.ops.version: 10.0.22
 
 # Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil
 
-[!include[banner](../includes/banner.md)]
+[!Include[banner](../includes/banner.md)]
 
 This topic provides an overview of Microsoft Dynamics 365 Payment Connector for Adyen functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 
 The Dynamics 365 Payment Connector for Adyen is an out-of-box payment connector that supports various payment instruments globally.
 
-The following Brazil-specific features of the Dynamics 365 Payment Connector for Adyen are enabled after the Commerce localization for Brazil is set up and deployed:
+The following Brazil-specific features of the Dynamics 365 Payment Connector for Adyen are enabled after you set up and deploy the Commerce localization for Brazil:
 
 - Support for sales that are made by using dual-purpose cards. A dual-purpose card is both a debit card and a credit card.
 - Saving of payment-related data in sales transactions. This data includes the card type, the transaction code (Número Sequencial Único \[NSU\]), and the acquirer's Cadastro Nacional da Pessoa Jurídica (CNPJ) number. The data is then reported in the following electronic fiscal documents:
@@ -48,7 +48,7 @@ Dual-purpose cards (in other words, cards that are both debit cards and credit c
 
 ## Saving of payment-related data
 
-When a retail sale is paid by card, the following card payment information is stored in the card payment data block of the electronic fiscal document and transmitted to the Secretaria de Estado de Fazenda (SEFAZ):
+When a retail sale is paid by card, the following payment information is stored in the card payment data block of the electronic fiscal document. It is also transmitted to the Secretaria de Estado de Fazenda (SEFAZ).
 
 - **Accreditation** – The CNPJ number of the payment transfer acquiring company.
 - **Card banner** – The card type (for example, Visa or MasterCard).
