@@ -27,14 +27,12 @@ These topics describe dual-write integration.
     - [What does dual-write mean for developers and architects of customer engagement app?](dual-write-overview.md#developer-architect)
 
 + [What's new or changed in dual-write](whats-new-dual-write.md)
-+ [Frequently asked questions](dual-write-faq.md)
+
 
 ## Dual-write setup
 
 + [System requirements for dual-write](dual-write-system-req.md)
 + [Guidance for how to set up dual-write](connection-setup.md)
-+ [Considerations for initial synchronization](initial-sync-guidance.md)
-+ [Dual-write limits for live synchronization](sync-limits.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
 + Enable dual-write for existing Finance and Operations apps
 
@@ -43,14 +41,10 @@ These topics describe dual-write integration.
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
     + [Enable table map for dual-write](enable-entity-map.md)
 
-+ [Currency data-type migration for dual-write](currrency-decimal-places.md)
-+ [Set up the mapping for the sales order status columns](sales-status-map.md)
-+ [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
-
 ## Managing dual-write after setup
 
 + [Customize table and column mappings](customizing-mappings.md)
-+ [Customization guidance for dual-write](custom-best-practices.md)
++ [Customize tables for additional fields, maps or transformations](custom-best-practices.md)
 + [Handling multiple table maps](multiple-entity-maps.md)
 + [Edit a legal entity after dual-write setup](edit-legal-entity.md)
 + [Pause dual-write for maintenance](pause-for-maintenance.md)
@@ -86,6 +80,10 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Sync on-demand with the Supply Chain Management price engine](pricing-engine.md)
 + [Sync on-demand with the Commerce price engine](commerce-pricing.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
+
+    + [Set up the mapping for the sales order status columns](sales-status-map.md)
+    + [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
+    
 + [Integrate procurement in Supply Chain Management with Field Service](scm-field-service-procurement.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Onhand inventory availability](inventory-availability.md)
@@ -94,14 +92,19 @@ These topics describe mapping between concepts in finance and operations apps an
 
     + [Using Microsoft Power Apps portals with the Party data model](party-gab-portal.md)
     + [Upgrade to the party and global address book model](upgrade-party-gab.md)
+    + [View party data](view-party.md)
 
 + [Note integration](notes-integration.md)
 + [Mapping reference](mapping-reference.md)
 
 ## Support
 
++ [Considerations for initial synchronization](initial-sync-guidance.md)
++ [Dual-write limits for live synchronization](sync-limits.md)
 + [Support for Field Service and Project Service Automation solutions](field-service-project-service-automation.md)
 + [Migrate Prospect to cash data from Data Integrator to dual-write](migrate-prospect-to-cash.md)
++ [Currency data-type migration for dual-write](currrency-decimal-places.md)
++ [Frequently asked questions](dual-write-faq.md)
 
 ## Troubleshooting
 
