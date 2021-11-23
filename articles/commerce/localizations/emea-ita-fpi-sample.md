@@ -157,14 +157,69 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
-- Value-added tax (VAT) rates mapping:
+- **Tender type mapping** - The mapping for tender types
 
-    *1 : 22.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
+    ```JSON
+    {"PaymentMethods": [
+        {"StorePaymentMethod":"1", "PrinterPaymentType":"0", "PrinterPaymentIndex":"00"},
+        {"StorePaymentMethod":"3", "PrinterPaymentType":"2", "PrinterPaymentIndex":"00"},
+        {"StorePaymentMethod":"4", "PrinterPaymentType":"2", "PrinterPaymentIndex":"01"},
+        {"StorePaymentMethod":"6", "PrinterPaymentType":"0", "PrinterPaymentIndex":"01"},
+        {"StorePaymentMethod":"8", "PrinterPaymentType":"6", "PrinterPaymentIndex":"01"}
+        ],
+        "DepositPaymentMethod": {"PrinterPaymentType":"2", "PrinterPaymentIndex":"00"}}
+    ```
 
-- Tender type mapping:
+- **Barcode type for receipt number** - The type of barcode used to display a receipt number in a fiscal receipt.
 
-    *1 : 0 ; 2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
+    ```
+    CODE128
+    ```
 
+- **Print fiscal data in receipt header** - 
+- **Fiscal printer department mapping** - The mapping of departments of the fiscal printer to VAT rates, VAT exempt natures, and product types.
+
+    ```JSON
+    
+      {"Departments": [
+          {"VATRate":"2200", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"01"},
+          {"VATRate":"2200", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"02"},
+          {"VATRate":"1000", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"03"},
+          {"VATRate":"1000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"04"},
+          {"VATRate":"0500", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"05"},
+          {"VATRate":"0500", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"06"},
+          {"VATRate":"0400", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"07"},
+          {"VATRate":"0400", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"08"},
+          {"VATRate":"0000", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"09"},
+          {"VATRate":"0000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"10"},
+          {"VATRate":"0000", "VATExemptNature":"NS", "ProductType":"0", "DepartmentNumber":"99"}]}
+    ```
+
+- **VAT exempt nature for gift card** - The VAT exempt nature that should be applied when a gift card is issued or refilled.
+
+    ```
+    NS
+    ```
+
+- **Enable free of charge items** - Enable omaggio special discount adjustment type for items with 100% discount.
+- **Info code for return origin** - The info code that used to capture the origin of a return transaction if no original sales receipt is provided.
+- **Info code for original sales date** - The info code that used to capture the original sales date for a return transaction if no original sales receipt is provided.
+- **Return origin mapping** - The mapping of return origins that is used to print the origin of a return transaction if no original sales receipt is provided.
+
+    ```
+    
+      {"ReturnOrigins": [
+          {"ReturnOrigin":"1", "PrinterReturnOrigin":"POS"},
+          {"ReturnOrigin":"2", "PrinterReturnOrigin":"ND"}
+          ],
+          "PrinterReturnOriginWithoutFiscalData":"POS"
+      }
+    ```
+
+The following default data mappings are obsolte and are kept for backward compatibility only:
+
+- Value-added tax (VAT) codes mapping
+- Deposit payment type
 
 ===== WRONG ==========
 
@@ -184,6 +239,7 @@ The following default data mapping is included in the fiscal document provider c
     ```
 
     The first component in each pair stands for a payment method that is set up for the store, and the second component stands for the corresponding payment form supported by the fiscal printer. For more information about payment forms that the fiscal printer supports, see the POSNET driver documentation. You need to modify the sample mapping according to the payment methods configured in your application.
+    
 ===============
 
 #### Fiscal connector settings
@@ -277,9 +333,6 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\EpsonFP90IIISample\\HardwareStation\\EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
-
-- **Endpoint address** – The URL of the printer.
-- **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\EpsonFP90IIISample\\HardwareStation\\EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
