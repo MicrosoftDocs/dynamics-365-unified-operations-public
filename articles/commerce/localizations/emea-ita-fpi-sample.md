@@ -78,18 +78,6 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Check the availability of the fiscal printer before a new sales transaction is opened or a sales transaction is finalized.
 
-### Default data mapping
-
-The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
-
-- Value-added tax (VAT) rates mapping:
-
-    *1 : 22.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
-
-- Tender type mapping:
-
-    *1 : 0 ; 2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
-
 ### Gift cards
 
 The fiscal printer integration sample implements the following rules that are related to gift cards:
@@ -117,145 +105,144 @@ The fiscal printer integration sample implements the following rules that are re
 - The fiscal printer doesn't support mixed transactions. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
 - The sample supports integration only with a fiscal printer that is working in the RT (Registratore Telematico) mode.
 
-## Set up Commerce for Italy
+## Set up fiscal integration for Italy
 
-### Configure fiscal integration
-
-Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
-
-- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal printer integration sample](#set-up-the-registration-process).
-- [Set up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
-- [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-- [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-- [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-- [Set up the functionality for management of customer information in POS](emea-ita-customer-information.md#setup)
-
-### Enable extensions
-
-#### Commerce runtime extension components
+The fiscal printer integration sample for Italy is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\EpsonFP90IIISample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Started since 10.0.22 the fiscal integration sample for Italy was published in GitHub repository. This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed as a prerequisite. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
-The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
-This sample consists of extensions for the CRT and Hardware station. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit and Hardware station. After installing these retail components, you should build the EpsonFP90IIISample solution and run installers for each component. We recommend that you use an unmodified solution files from this repository to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
-
-The CRT extension components are included in the EpsonFP90IIISample solution from Fiscal Integration folder. To complete the following procedures, open the EpsonFP90IIISample solution, **EpsonFP90IIISample.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample**.
-
-### Install the commerce extensions
-
-1. Find the **EpsonFP90IIISample** solution and build it.
-
-2. Build the CRT extension installer:
-
-    - **Commerce Scale Unit:** In the **EpsonFP90IIISample\\ScaleUnit\\ScaleUnit.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EpsonFP90III.Installer** installer.
-    - **Local CRT on Modern POS:** In the **EpsonFP90IIISample\\ModernPOS\\ModernPos.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.EpsonFP90III.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    - **Commerce Scale Unit:**
-
-    ```Console
-    ScaleUnit.EpsonFP90III.Installer.exe install --verbosity 0
-    ```
-
-    - **Local CRT on Modern POS:**
-
-    ```Console
-    ModernPos.EpsonFP90III.Installer.exe install --verbosity 0
-    ```
-
-### Install Hardware station extensions
-
-The Hardware station extension components are included in the EpsonFP90IIISample solution from Fiscal Integration folder. To complete the following procedures, open the EpsonFP90IIISample solution, **EpsonFP90IIISample.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample**.
-
-1. Find the **EpsonFP90IIISample** solution, and build it.
-
-2. In the **EpsonFP90IIISample\\HardwareStation\\HardwareStation.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EpsonFP90III.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    ```Console
-    HardwareStation.EpsonFP90III.Installer.exe install --verbosity 0
-    ```
+1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal printer integration sample](#set-up-the-registration-process).
+1. [Set up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
+1. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+1. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Set up the functionality for management of customer information in POS](emea-ita-customer-information.md#setup)
+1. [Configure channel components](#configure-channel-components)
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml**.
-2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from
+1. Download configuration files for the fiscal document provider and the fiscal connector:
+    1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+    1. Select a correct release branch version according to your SDK/application version (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Open **src \> FiscalIntegration \> EpsonFP90IIISample**.
+    1. Download the fiscal document provider configuration file at **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Configuration \> DocumentProviderEpsonFP90IIISample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/CommerceRuntime/DocumentProvider.EpsonFP90IIISample/Configuration/DocumentProviderEpsonFP90IIISample.xml)).
+    1. Download the fiscal connector configuration file at **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Configuration \> ConnectorEpsonFP90IIISample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/HardwareStation/EpsonFP90IIIFiscalDeviceSample/Configuration/ConnectorEpsonFP90IIISample.xml).
 
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
+    > [!WARNING]
+    > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
+    > - The fiscal document provider configuration file: **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
+    > - The fiscal connector configuration file: **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml**.
+    > 
+    > Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
- **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile. Select the document provider and the connector that you loaded earlier. Update the [data mapping settings](#default-data-mapping) as required.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the fiscal connector that you loaded earlier. Update the [connector settings](#fiscal-connector-settings) as required.
+6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group, for the connector functional profile that you created earlier.
+7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, a fiscal registration process step, and select the fiscal connector group that you created earlier.
+8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
+9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+10. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
-# [Retail 10.0.22 and earlier](#tab/retail-10-0-22)
+#### Default data mapping
 
-**Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\CommerceRuntime\\DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
+The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
----
+- Value-added tax (VAT) rates mapping:
 
-3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and then select the loaded connector from the earlier step. Update the connection settings if an update is required.
-4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and then select the loaded connector and document provider from the earlier steps. Update data mapping settings if an update is required.
-5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and then select the connector functional profile from the earlier step.
-6. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and then select the connector functional group from the earlier step.
-7. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
-9. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and then select jobs **1070** and **1090** to transfer data to the channel database.
+    *1 : 22.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
 
-### Production environment
+- Tender type mapping:
 
-To create deployable packages that contain Commerce components, and apply those packages in a production environment, follow these steps.
+    *1 : 0 ; 2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
 
-### Commerce Cloud Scale Unit (CSU) package
 
-The steps to generate Commerce Cloud Scale Unit (CSU) package are following:
+===== WRONG ==========
 
-1. Clone or download the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
-Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+- **Value-added tax (VAT) rates mapping**  – The mapping of tax percentage values that are set up for the sales tax codes to fiscal printer-specific VAT rates. The default mapping is as following:
 
-2. Build the project **ScaleUnite.EpsonFP90III** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
+    ```
+    0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00
+    ```
+    The first component in each pair stands for a VAT rate number configured in the fiscal printer, and the second component stands for the corresponding VAT rate. For more information about the fiscal printer VAT rate configuration, see the POSNET driver documentation.
+    
+- **Tender type mapping** – The mapping of payment methods configured for the store to payment forms supported by the fiscal printer. The default mapping is as following:
 
-Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
-
-To upload the created **CloudScaleUnitExtensionPackage.zip** package to LCS see [Deploy the package to CSU](../dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
-
-### Commerce Scale Unit (self-hosted) components
-
-1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
-
-2. Start the extension installer from command line
-
-- For **Commerce Scale Unit:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\ScaleUnit\\ScaleUnit.EpsonFP90III.Installer\\bin\\Debug\\net461** path
-
-    ```Console
-    ScaleUnit.EpsonFP90III.Installer.exe install --verbosity 0
+    ```
+    0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0
     ```
 
-- For **Local CRT on Modern POS:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\ModernPOS\\ModernPos.EpsonFP90III.Installer\\bin\\Debug\\net461** path
+    The first component in each pair stands for a payment method that is set up for the store, and the second component stands for the corresponding payment form supported by the fiscal printer. For more information about payment forms that the fiscal printer supports, see the POSNET driver documentation. You need to modify the sample mapping according to the payment methods configured in your application.
+===============
 
-    ```Console
-    ModernPos.EpsonFP90III.Installer.exe install --verbosity 0
-    ```
+#### Fiscal connector settings
 
-- For **Hardware station** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\HardwareStation\\HardwareStation.EpsonFP90III.Installer\\bin\\Debug\\net461** path
+The following settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
 
+- **Endpoint address** – The URL of the printer.
+- **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
+
+### Configure channel components
+
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. See [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+
+#### Development environment
+
+Follow these steps to set up a development environment so that you can test and extend the sample:
+
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Open the fiscal printer integration solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\EpsonFP90IIISample.sln**, and build it.
+1. Install Commerce runtime extensions:
+    - Find the CRT extension installer:
+        - **Commerce Scale Unit:** In the **EpsonFP90IIISample\\ScaleUnit\\ScaleUnit.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EpsonFP90III.Installer** installer.
+        - **Local CRT on Modern POS:** In the **EpsonFP90IIISample\\ModernPOS\\ModernPOS.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EpsonFP90III.Installer** installer.
+    - Start the CRT extension installer from command line as follows:
+        - **Commerce Scale Unit:**
+        ```Console
+        ScaleUnit.EpsonFP90III.Installer.exe install --verbosity 0
+        ```
+        - **Local CRT on Modern POS:**
+        ```Console
+        ModernPOS.EpsonFP90III.Installer.exe install --verbosity 0
+        ```
+
+1. Install Hardware station extensions:
+    - In the **EpsonFP90IIISample\\HardwareStation\\HardwareStation.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EpsonFP90III.Installer** installer.
+    - Start the extension installer from command line as follows:
     ```Console
     HardwareStation.EpsonFP90III.Installer.exe install --verbosity 0
     ```
 
+#### Production environment
+
+Follow the steps described in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The template YAML file **EpsonFP90III build-pipeline.yml** can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
+
 ## Design of extensions
+
+The fiscal printer integration sample for Italy is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\EpsonFP90IIISample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 ### Commerce runtime extension design
 
 The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer.
-
-The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
-
-For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### Request handler
 
@@ -270,19 +257,11 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the document provider to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
-
-- VAT codes mapping
-- VAT rates mapping
-- Tender type mapping
-- Barcode type for receipt number
-- Deposit payment type
+The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\EpsonFP90IIISample\\CommerceRuntime\\DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the document provider to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 ### Hardware station extension design
 
-The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer.
-
-The Hardware station extension is **HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample**. This extension uses the HTTP protocol to submit documents that the Commerce runtime extension generates to the fiscal printer. It also handles the responses that are received from the fiscal printer.
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal printer. This extension uses the HTTP protocol to submit documents that the Commerce runtime extension generates to the fiscal printer. It also handles the responses that are received from the fiscal printer.
 
 #### Request handler
 
@@ -298,10 +277,9 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\EpsonFP90IIISample\\HardwareStation\\EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the printer.
 - **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
