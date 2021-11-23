@@ -67,8 +67,8 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 
 ## Availability of Commerce localization features for Brazil
 
-| Feature                                                                        | Released | May be added in feature releases | Not planned |
-|--------------------------------------------------------------------------------|:----------:|:----------------------------------:|:-------------:|
+| Feature                                                                        | Released | May be added in future releases | Not planned |
+|--------------------------------------------------------------------------------|:----------:|:---------------------------------:|:-------------:|
 | Retail product management, and tax setup and calculation                       | X        |                                  |             |
 | NFC-e (model 65) and DANFE for retail sales                                    | X        |                                  |             |
 | Communication with SEFAZ                                                       | X        |                                  |             |
