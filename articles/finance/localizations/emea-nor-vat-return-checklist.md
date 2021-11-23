@@ -32,7 +32,7 @@ This topic provides information about how the [Electronic messages](https://docs
 
 Although this topic includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that provides a predefined setup of the functionality and that includes all the data that is required to set up the processing for interoperation with Altinn.
 
-The following type of processing is defined to support interoperation with Altinn.
+Go to **Tax** > **Setup** > **Electronic messages** > **Electronic messages processing** and check your setup. The following type of processing is defined to support interoperation with Altinn.
 
 | Processing | Name (Norwegian) | Description |
 |--------------------|-------------|------------|
@@ -43,7 +43,7 @@ The following type of processing is defined to support interoperation with Altin
 
 ## Web applications
 
-The **NO VAT return** processing use the following web applications.
+Go to **Tax** > **Setup** > **Electronic messages** > **Web applications** and check your setup. The **NO VAT return** processing uses the following web applications.
 
 | Application name                 | Description |
 |----------------------|-------------|
@@ -65,3 +65,155 @@ The following table shows the parameters of the web applications.
 
 > [!IMPORTANT]
 > You must define security roles for both web applications to enable access to the access token and interoperation with ID-porten and Altinn APIs for business users.
+
+Internet addresses (base URL) are subject to change by the Tax Administration. Therefore, we recommend that you check for actual internet addresses on the official web site of the Altinn and ID-porten. 
+
+## Web service settings
+
+Go to **Tax** > **Setup** > **Electronic messages** > **Web service settings** and check your setup. The **NO VAT return** processing uses the following web services.
+
+| Parameter name | Parameter value |
+|-------|-----------|
+| Web service  | **NO Altinn GET attachments**|
+| Description | Altinn web service for GET attachments downloaded (XML, PDF)|
+| Internet address | empty|
+| Web application |  NO Altinn|
+| Use proxy server | No |
+| Use advanced parameters | empty |
+| Certificate | empty |
+| The response type – XML | No |
+| Request method | GET|
+| Accept | empty|
+| Accept encoding| empty |
+| Request headers | empty |
+| Content type | empty|
+| Request header format mapping | Altinn VAT web request headers format (NO)|
+| Successful response code |200|
+
+| Parameter name | Parameter value |
+|-------|-----------|
+| Web service  | **NO Altinn GET JSON**|
+| Description | Altinn web service for GET requests of JSON type of content |
+| Internet address | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+| Web application |  **NO Altinn** |
+| Use proxy server | No |
+| Use advanced parameters | empty |
+| Certificate | empty |
+| The response type – XML | No |
+| Request method | **GET**|
+| Accept | **application/json** |
+| Accept encoding| empty |
+| Request headers | empty |
+| Content type | empty |
+| Request header format mapping | **Altinn VAT web request headers format (NO)**|
+| Successful response code |**200**|
+
+| Parameter name | Parameter value |
+|-------|-----------|
+| Web service  | **NO Altinn POST JSON**|
+| Description | Altinn web service for POST requests of JSON type of content |
+| Internet address | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+| Web application |  **NO Altinn**|
+| Use proxy server | No |
+| Use advanced parameters | empty |
+| Certificate | empty |
+| The response type – XML | No |
+| Request method | **POST**|
+| Accept | empty|
+| Accept encoding| empty |
+| Request headers | empty |
+| Content type | **application/json** |
+| Request header format mapping | **Altinn VAT web request headers format (NO)**|
+| Successful response code |**201*** |
+
+| Parameter name | Parameter value |
+|-------|-----------|
+| Web service  | **NO Altinn POST XML**|
+| Description | Altinn web service for POST requests of XML type of content |
+| Internet address | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+| Web application |  **NO Altinn**|
+| Use proxy server | No |
+| Use advanced parameters | empty |
+| Certificate | empty |
+| The response type – XML | No |
+| Request method | **POST**|
+| Accept | empty|
+| Accept encoding| empty |
+| Request headers | empty |
+| Content type | **text/xml** |
+| Request header format mapping | **Altinn VAT web request headers format (NO)**|
+| Successful response code |**201** |
+
+| Parameter name | Parameter value |
+|-------|-----------|
+| Web service  | **NO Altinn PUT JSON**|
+| Description | Altinn web service for PUT requests of JSON type of content |
+| Internet address | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+| Web application |  **NO Altinn**|
+| Use proxy server | No |
+| Use advanced parameters | empty |
+| Certificate | empty |
+| The response type – XML | No |
+| Request method | **PUT**|
+| Accept | empty|
+| Accept encoding| empty |
+| Request headers | empty |
+| Content type | **application/json** |
+| Request header format mapping | **Altinn VAT web request headers format (NO)**|
+| Successful response code |**200** |
+
+| Parameter name | Parameter value |
+|-------|-----------|
+| Web service  | **NO Altinn PUT XML**|
+| Description | Altinn web service for PUT requests of XML type of content |
+| Internet address | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+| Web application |  **NO Altinn**|
+| Use proxy server | No |
+| Use advanced parameters | empty |
+| Certificate | empty |
+| The response type – XML | No |
+| Request method | **PUT**|
+| Accept | empty|
+| Accept encoding| empty |
+| Request headers | empty |
+| Content type | **application/xml** |
+| Request header format mapping | **Altinn VAT web request headers format (NO)**|
+| Successful response code |**201** |
+
+| Parameter name | Parameter value |
+|-------|-----------|
+| Web service  | **NO Validate VAT return**|
+| Description | Web service of Tax Administration to validate VAT return |
+| Internet address | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
+| Web application |  **NO ID-Porten**|
+| Use proxy server | No |
+| Use advanced parameters | empty |
+| Certificate | empty |
+| The response type – XML | No |
+| Request method | **POST**|
+| Accept | empty|
+| Accept encoding| empty |
+| Request headers | empty |
+| Content type | **application/xml** |
+| Request header format mapping | **Altinn VAT web request headers format (NO)**|
+| Successful response code |**200** |
+
+## Additional fields
+
+Both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processing use the following additional fields.
+
+> [!NOTE]
+> None of these fields can be changed by the user.
+
+| Field                   | Description |
+|-------------------------|-------------|
+| Due date                | The due date for the obligation period. |
+| HMRC status             | <p>The obligation status in HMRC:</p><ul><li>**O** – Open.</li><li>**F** – Fulfilled.</li></ul> |
+| periodKey               | The ID code for the period that the obligation belongs to. This field is hidden. |
+| Processing date         | The time when HMRC processed the message. |
+| Received date           | The date when HMRC received the obligation. |
+| Tax registration number | The VAT registration number of the company that is submitting the VAT return. |
+
+## Electronic message item types
+
+The setup of electronic messages for both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processing uses one type of electronic message item: **VAT return**.
