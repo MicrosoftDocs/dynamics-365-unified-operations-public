@@ -240,22 +240,26 @@ Pipelines provide a way to process forecasting scripts from Supply Chain Managem
 
 #### <a name="config-storage"></a>Step 4: Configure storage
 
+<!-- KFM: Does the order of this step matter? I put it here -->
+
 Use the following procedure to set up your storage.
 
 1. Go to the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repository on GitHub and download the following file:
     - `sampleInput.csv`
 1. Open the storage account that you created in [Step 1: Create a new workspace](#create-workspace).
 1. Follow the instructions provided in [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) to create a container named *demplan-azureml*.
-1. Upload the `sampleInput.csv` file that you downloaded in step 1. This file is needed to publish the pipeline and to generate a test forecast.
+1. Upload the `sampleInput.csv` file that you downloaded in step 1. This file is needed to publish the pipeline and to generate a test forecast. <!-- KFM: where/how do we upload that file? Do you mean we should follow the instructions in https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob ?-->
 
 #### Step 5: Configure default datastore
+
+<!-- KFM: I *think* this step belongs here. Please confirm. -->
 
 Use the following procedure to set up your default datastore.
 
 1. In Azure Machine Learning Studio, select **Datastores** from the navigator.
-1. Create a new datastore of the *Azure Blob Storage* type that points to the *demplan-azureml* blob Storage container that you created in [Step 4: Configure storage](#config-storage")
-1. Its Authentication type could be set to Account key - provide an account key of the created storage account in this case (Manage storage account access keys guide: https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)
-1. Make your new datastore the default datastore by opening its details and selecting **Set as default datastore**.
+1. Create a new datastore of the *Azure Blob Storage* type that points to the *demplan-azureml* blob Storage container that you created in [Step 4: Configure storage](#config-storage"). <!-- KFM: Can we give a link for instructions on how to create a datastore? -->
+1. Its **Authentication type** could be set to *Account key*. If so, provide an account key for the created storage account. For instructions, see [Manage storage account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+1. Make your new datastore the default datastore by opening its details and selecting **Set as default datastore**. <!-- KFM: Can we give more explicit instructions? How do we open its details? When we finish the previous step, are we already on a page where I can open those details? -->
 
 ### <a name="aad-app"></a>Set up a new Active Directory application
 
@@ -270,6 +274,14 @@ An Active Directory application is needed authenticate to the resources dedicate
     - Storage Blob Data Contributor role to the dedicated Storage account
 1. Under the **Certificates & secrets** section of the created application, create a secret for it. For instructions, see [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
 1. Make a note of the application ID and its secret. You will need details of this application later when you set up the **Demand forecasting parameters** in Supply Chain Management.
+
+<!-- KFM: 
+
+@andreygarmash andreygarmash: We need to mention that there is a templates and samples GitHub repository that contains quick_setup.ps1 PowerShell script that automates a bigger part of an Azure subscription setup needed.
+ 
+@kamaybac: Is this as an alternative to all of the steps described so far, or is it something we do afterwards? Should this be part of the "Set up a new Active Directory application" procedure, or its own section?
+
+-->
 
 ### Set up Azure Machine Learning Service connection parameters in Supply Chain Management
 
