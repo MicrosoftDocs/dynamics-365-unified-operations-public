@@ -180,19 +180,18 @@ The following default data mapping is included in the fiscal document provider c
 - **Fiscal printer department mapping** - The mapping of departments of the fiscal printer to VAT rates, VAT exempt natures, and product types.
 
     ```JSON
-    
-      {"Departments": [
-          {"VATRate":"2200", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"01"},
-          {"VATRate":"2200", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"02"},
-          {"VATRate":"1000", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"03"},
-          {"VATRate":"1000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"04"},
-          {"VATRate":"0500", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"05"},
-          {"VATRate":"0500", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"06"},
-          {"VATRate":"0400", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"07"},
-          {"VATRate":"0400", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"08"},
-          {"VATRate":"0000", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"09"},
-          {"VATRate":"0000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"10"},
-          {"VATRate":"0000", "VATExemptNature":"NS", "ProductType":"0", "DepartmentNumber":"99"}]}
+    {"Departments": [
+        {"VATRate":"2200", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"01"},
+        {"VATRate":"2200", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"02"},
+        {"VATRate":"1000", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"03"},
+        {"VATRate":"1000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"04"},
+        {"VATRate":"0500", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"05"},
+        {"VATRate":"0500", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"06"},
+        {"VATRate":"0400", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"07"},
+        {"VATRate":"0400", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"08"},
+        {"VATRate":"0000", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"09"},
+        {"VATRate":"0000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"10"},
+        {"VATRate":"0000", "VATExemptNature":"NS", "ProductType":"0", "DepartmentNumber":"99"}]}
     ```
 
 - **VAT exempt nature for gift card** - The VAT exempt nature that should be applied when a gift card is issued or refilled.
@@ -206,14 +205,12 @@ The following default data mapping is included in the fiscal document provider c
 - **Info code for original sales date** - The info code that used to capture the original sales date for a return transaction if no original sales receipt is provided.
 - **Return origin mapping** - The mapping of return origins that is used to print the origin of a return transaction if no original sales receipt is provided.
 
-    ```
-    
-      {"ReturnOrigins": [
-          {"ReturnOrigin":"1", "PrinterReturnOrigin":"POS"},
-          {"ReturnOrigin":"2", "PrinterReturnOrigin":"ND"}
-          ],
-          "PrinterReturnOriginWithoutFiscalData":"POS"
-      }
+    ```JSON
+    {"ReturnOrigins": [
+        {"ReturnOrigin":"1", "PrinterReturnOrigin":"POS"},
+        {"ReturnOrigin":"2", "PrinterReturnOrigin":"ND"}
+        ],
+        "PrinterReturnOriginWithoutFiscalData":"POS"}
     ```
 
 The following default data mappings are obsolte and are kept for backward compatibility only:
