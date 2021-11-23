@@ -4,7 +4,7 @@
 title: Structure of Dynamics 365 Finance data sources for the FEC
 description: This topic describes the structure of Microsoft Dynamics 365 Finance data sources for the Fichier des écritures comptables (FEC).
 author: liza-golub
-ms.date: 05/10/2021
+ms.date: 10/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,18 +24,18 @@ ms.search.region: France
 
 # Structure of Dynamics 365 Finance data sources for the FEC
 
-In Microsoft Dynamics 365 Finance, you can generate the Fichier des écritures comptables (FEC) main file or the following annexes:
+In Microsoft Dynamics 365 Finance, you can generate the [FEC main](#fec-main) (Fichier des écritures comptables) file and the following annexes:
 
-- Customers fiscal year opening balances annex 
-- Vendors fiscal year opening balances annex 
-- Customers transactions annex for a specified period
-- Vendors transactions annex for a specified period
+- **[Customers balance](#customers-balances):** Customers fiscal year opening balances annex
+- **[Vendors balance](#vendors-balances):** Vendors fiscal year opening balances annex
+- **[Customers transactions](#customers-transactions):** Customers transactions annex for a specified period
+- **[Vendors transactions](#vendors-transactions):** Vendors transactions annex for a specified period
 
-An FEC that includes customer and vendor fiscal year opening balances can also be generated. Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.
+You can also generate an FEC that includes customer and vendor fiscal year opening balances ([FEC Main Extended](#fec-main-extended)). Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.
 
 The following sections list the data sources that are used in the FEC main file and annexes.
 
-## Main FEC file for the period specified
+## <a id="fec-main"></a>Main FEC file for the period specified
 
 The following table shows the **Main FEC file for the period specified** data structure definitions (\$GeneralJournalView\_FR).
 
@@ -60,7 +60,7 @@ The following table shows the **Main FEC file for the period specified** data st
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$GeneralJournalView\_FR/GeneralJournalAccountEntryTransactionCurrencyAmount |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$GeneralJournalView\_FR/GeneralJournalAccountEntryTransactionCurrencyCode |
 
-## Customers fiscal year opening balances annex 
+## <a id="customers-balances"></a>Customers fiscal year opening balances annex 
 
 Customers fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by customers, the **Customers fiscal year opening balances annex** is implemented. This annex collects the amounts of opening balances by customers at the beginning of the fiscal year and provides this information together with the opening transaction voucher from the general ledger.
 
@@ -87,7 +87,7 @@ The following table shows the **Customers fiscal year opening balances annex** d
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | CustTransGroupedByLedgerAccount/aggregated/AmountCur |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | CustTransGroupedByLedgerAccount/grouped/CurrencyCode |
 
-## Vendors fiscal year opening balances annex 
+## <a id="vendors-balances"></a>Vendors fiscal year opening balances annex 
 
 Vendors fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by vendors, the **Vendors fiscal year opening balances annex** is implemented. This annex collects amounts of opening balances by vendors on the beginning of the fiscal year and represents this information in combination with opening transaction voucher from general ledger.
 
@@ -114,9 +114,9 @@ The following table shows the **Vendors fiscal year opening balances annex** dat
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | VendTransGroupedByLedgerAccount/aggregated/AmountCur |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | VendTransGroupedByLedgerAccount/grouped/CurrencyCode |
 
-## Customers transactions annex for the period specified
+## <a id="customers-transactions"></a>Customers transactions annex for the period specified
 
-**Customers transactions annex for the period specified** annex can be requested to provide additional details on customers transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple customers transactions. To provide detailed infomration by customers accounts for such scenario, **Customers transactions annex for the period specified** annex is implemented. 
+**Customers transactions annex for the period specified** annex can be requested to provide additional details on customers transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple customers transactions. To provide detailed information by customers accounts for such scenario, **Customers transactions annex for the period specified** annex is implemented. 
 
 The following table shows the **Customers transactions annex for the period specified** data structure definitions.
 
@@ -141,9 +141,9 @@ The following table shows the **Customers transactions annex for the period spec
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$CustTrans/AmountCur|
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$CustTrans/CurrencyCode |
 
-## Vendors transactions annex for the period specified
+## <a id="vendors-transactions"></a>Vendors transactions annex for the period specified
 
-**Vendors transactions annex for the period specified** annex can be requested to provide additional details on vendors transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple vendors transactions. To provide detailed infomration by vendors accounts for such scenario, **Vendors transactions annex for the period specified** annex is implemented. 
+**Vendors transactions annex for the period specified** annex can be requested to provide additional details on vendors transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple vendors transactions. To provide detailed information by vendors accounts for such scenario, **Vendors transactions annex for the period specified** annex is implemented. 
 
 The following table shows the **Vendors transactions annex for the period specified** data structure definitions.
 
@@ -168,7 +168,7 @@ The following table shows the **Vendors transactions annex for the period specif
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$VendTrans/AmountCur |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$VendTrans/CurrencyCode |
 
-## FEC main file including fiscal year opening balances details for customers and vendors
+## <a id="fec-main-extended"></a>FEC main file including fiscal year opening balances details for customers and vendors
 
 The following table shows the **FEC main file including fiscal year opening balances details for customers and vendors** data structure definitions.
 

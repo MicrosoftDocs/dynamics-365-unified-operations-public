@@ -3,7 +3,7 @@
  
 title: Set up number sequences using a wizard
 description: This topic explains how to set up all required number sequences at the same time by using a wizard. 
-author: sericks007
+author: SunilGarg
 ms.date: 07/18/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

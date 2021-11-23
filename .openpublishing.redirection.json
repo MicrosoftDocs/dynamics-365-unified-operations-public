@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md",
+      "redirect_url": "/dynamics365/finance/general-ledger/general-journal-processing",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/asset-leasing/post-transition-adjust-journal.md",
       "redirect_url": "adjust-lease",
       "redirect_document_id": "false"
@@ -102,7 +107,7 @@
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-app-connection.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/certification-path-app-connection-error",
       "redirect_document_id": "false"
     },
     {

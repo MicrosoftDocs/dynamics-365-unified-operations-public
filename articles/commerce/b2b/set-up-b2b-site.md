@@ -40,7 +40,7 @@ Business-to-business (B2B) e-commerce sites provide some key capabilities that o
 
 You can access site-level settings in site builder, at **Site Settings \> Extensions**. The following two site-level settings apply to B2B scenarios:
 
-- **Enable customer account payments** – This property enables users to pay for orders by using customer accounts. The available values are **Enabled for B2B customers**, **Enabled for B2C customers**, **Enabled for all customers**, and **Disabled for all customers**. If your B2B site supports customer accounts, you should select **Enabled for B2C customers**.
+- **Enable customer account payments** – This property enables users to pay for orders by using customer accounts. The available values are **Enabled for B2B customers**, **Enabled for B2C customers**, **Enabled for all customers**, and **Disabled for all customers**. If your B2B site supports customer accounts, you should select **Enabled for B2B customers**.
 - **Enable order quantity limits** – This property lets you set limits on the number of items that can be ordered for each product or category. The available values are **Enabled for B2B customers**, **Enabled for B2C customers**, **Enabled for all customers**, and **Disabled for all customers**.
 
 > [!NOTE]

@@ -370,8 +370,6 @@ The following example shows sample body content. The behavior of this API differ
 
 ## Create reservation events
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 To use the *Reserve* API, you must open the reservation feature and complete the reservation configuration. For more information, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event

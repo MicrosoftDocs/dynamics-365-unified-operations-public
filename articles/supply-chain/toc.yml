@@ -62,10 +62,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure Warehousing for on-premises deployments
           href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
       - name: What's new or changed
         items: 
         - name: What's new or changed in Finance and Operations apps
@@ -74,12 +70,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.23
+            href: get-started/whats-new-scm-10-0-23.md
           - name: Supply Chain Management 10.0.22 (November 2021)
             href: get-started/whats-new-scm-10-0-22.md
           - name: Supply Chain Management 10.0.21 (October 2021)
             href: get-started/whats-new-scm-10-0-21.md
-          - name: Supply Chain Management 10.0.20 (August 2021)
-            href: get-started/whats-new-scm-10-0-20.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -713,8 +709,10 @@
           href: cost-management/inventory-close.md
         - name: Adjust on-hand inventory cost values
           href: cost-management/adjust-hand-inventory-cost-values.md
-        - name: Inventory value storage report
+        - name: Inventory value reports
           href: cost-management/inventory-value-report-storage.md
+        - name: Inventory value report examples and logic
+          href: cost-management/inventory-value-report-examples.md
         - name: Inventory aging report storage
           href: cost-management/inventory-aging-report-storage.md
         - name: Inventory aging report examples and logic
@@ -1659,6 +1657,8 @@
           href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
+        - name: Date and time parameters used by Planning Optimization
+          href: master-planning/planning-optimization/date-time-used.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
         - name: Delay tolerance (negative days)
@@ -1671,6 +1671,8 @@
           href: master-planning/planning-optimization/infinite-capacity-planning.md
         - name: Scheduling with resource selection based on capability
           href: master-planning/planning-optimization/capability-based-scheduling.md
+        - name: Priority-based planning
+          href: master-planning/planning-optimization/priority-based-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
@@ -1717,6 +1719,8 @@
           href: master-planning/maintain-planned-orders.md
         - name: Safety stock fulfillment for items
           href: master-planning/safety-stock-replenishment.md
+        - name: Use the safety stock journal to update minimum coverage for items
+          href: master-planning/safety-stock-journal.md
         - name: Delays
           href: master-planning/delays.md
         - name: Cancel a master planning job
@@ -1885,6 +1889,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure the global address book
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Address setup
+          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
         - name: Address books FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure address books
@@ -2137,7 +2143,7 @@
         items:
         - name: Set up project resource information
           href: procurement/tasks/set-up-project-resource-information.md
-        - name: Submit and approve project budgets
+        - name: Create and submit a project budget workflow
           href: procurement/tasks/submit-approve-project-budget.md
         - name: Submit and approve project budget revisions
           href: procurement/tasks/submit-approve-project-budget-revision.md
@@ -2347,6 +2353,8 @@
         href: production-control/unified-job-ids.md
       - name: Invoke process automation flows to create quality orders
         href: production-control/process-automation-quality-orders.md
+      - name: Integrate with third-party manufacturing execution systems
+        href: production-control/mes-integration.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
@@ -2427,18 +2435,6 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
-          - name: Set up and use the production floor execution interface
-            items:
-            - name: Configure the production floor execution interface
-              href: production-control/production-floor-execution-configure.md
-            - name: Design the production floor execution interface
-              href: production-control/production-floor-execution-tabs.md
-            - name: Set up a device to run the production floor execution interface
-              href: production-control/production-floor-execution-setup.md
-            - name: How workers use the production floor execution interface
-              href: production-control/production-floor-execution-use.md
-            - name: Style the production floor execution interface
-              href: production-control/production-floor-execution-styles.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
@@ -2645,6 +2641,20 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
+      - name: Set up and use the production floor execution interface
+        items:
+        - name: Configure the production floor execution interface
+          href: production-control/production-floor-execution-configure.md
+        - name: Design the production floor execution interface
+          href: production-control/production-floor-execution-tabs.md
+        - name: Set up a device to run the production floor execution interface
+          href: production-control/production-floor-execution-setup.md
+        - name: How workers use the production floor execution interface
+          href: production-control/production-floor-execution-use.md
+        - name: Style the production floor execution interface
+          href: production-control/production-floor-execution-styles.md
+        - name: Customize the production floor execution interface
+          href: production-control/production-floor-execution-customize.md
     - name: Rebate management
       items:
       - name: Rebate management module overview
@@ -3391,6 +3401,10 @@
             href: warehousing/configure-mobile-devices-warehouse.md
           - name: Customize step titles and instructions for the Warehouse Management mobile app
             href: warehousing/mobile-app-titles-instructions.md
+          - name: Configure promoted fields for steps in the mobile device
+            href: warehousing/warehouse-app-promoted-fields.md
+          - name: Configure detours for steps in mobile device menu items
+            href: warehousing/warehouse-app-detours.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
@@ -3409,6 +3423,8 @@
             href: warehousing/pick-oldest-batch.md
         - name: Global mobile device parameters
           href: warehousing/mobile-device-parameters.md
+        - name: Mobile device user accounts
+          href: warehousing/mobile-device-work-users.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
@@ -3737,6 +3753,12 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Warehouse mobile app
+          items:
+          - name: Trust anchor for certification path not found when setting up app connection
+            href: troubleshooting/warehousing/certification-path-app-connection-error.md
+          - name: Trust anchor for certification path not found when updating and migrating to WMS
+            href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory
           href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
         - name: Picking work can't be unblocked because of unfinished replenishment work
@@ -3747,8 +3769,6 @@
           href: troubleshooting/warehousing/cant-move-license-plate.md
         - name: Can't move inventory to a location that is license plate-controlled
           href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-        - name: Trust anchor for certification path not found when setting up app connection
-          href: troubleshooting/warehousing/certification-path-app-connection-error.md
         - name: Cluster profile can't be found
           href: troubleshooting/warehousing/cluster-profile-not-found-error.md
         - name: Delivery note correction can't be processed
@@ -3819,8 +3839,6 @@
           href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
         - name: Can't unreserve inventory on a sales order line
           href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-        - name: Trust anchor for certification path not found when updating and migrating to WMS
-          href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
         - name: You can't confirm a shipment because customer is on hold
           href: troubleshooting/warehousing/customer-is-on-hold.md
         - name: You can't confirm a shipment because load lines have quantity zero

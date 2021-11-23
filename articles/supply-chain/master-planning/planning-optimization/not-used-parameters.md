@@ -55,7 +55,7 @@ Planning Optimization doesn't use the following parameters or options on the **C
 
 - **General** FastTab:
 
-  - **Positive days** – Pending *Positive days* support.
+  - **Positive days** – The *Positive days* value isn't used. With Planning Optimization, positive days are considered infinite.
   - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
   - **Use the specified BOM or formula version** – Pending *Formula versions with Co/By product* support.
   - **Use the specified route version** – Pending *Demand with specific BOM or route requirements defined* support.

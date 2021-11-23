@@ -4,7 +4,7 @@
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,6 +74,9 @@ When you select an entity, you must select the format of the data that will be e
 | Excel                  | Excel                                      | \-NA-                     |
 | XML                    | \-NA-                                      | XML-Element XML-Attribute |
 | Delimited, fixed width | Comma, semicolon, tab, vertical bar, colon | \-NA-                     |
+
+> [!NOTE]
+> It is important to select the correct value for **Row delimiter**, **Column delimiter**, and **Text qualifier**, if the **File format** option is set to **Delimited**. Make sure that your data doesn't contain the character used as delimiter or qualifier, as this may result in errors during import and export.
 
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export.

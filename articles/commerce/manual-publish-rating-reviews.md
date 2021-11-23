@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 10.0.22
 # Enable manual publishing of ratings and reviews by a moderator
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
 

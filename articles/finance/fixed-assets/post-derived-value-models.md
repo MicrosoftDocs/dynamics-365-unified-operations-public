@@ -3,7 +3,7 @@
 
 title: Post with derived books
 description: This article describes how to use derived books.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,7 +39,7 @@ When you post transactions for a book that contains derived books, the derived b
 -   Other values for the transaction type can also apply. For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.
 
 > [!WARNING]
-> Depreciation posted in the derived book will be the same amount as was posted for the primary book. If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process. |
+> Depreciation posted in the derived book will be the same amount that was posted for the primary book. If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process. |
 
 ## Example 
 The following information describes how to set up acquisition transactions with the derived book functionality.
@@ -57,7 +57,7 @@ When an acquisition is posted for a fixed asset with book VM 1, the acquisition 
 > [!NOTE]                                                                                                         
 > If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.
 
-For more information, see [Derived books](derived-books.md)
+For more information, see [Derived books](derived-books.md).
 
 
 
