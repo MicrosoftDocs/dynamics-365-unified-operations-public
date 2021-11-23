@@ -29,7 +29,9 @@ After a party is created, you can use the tabs on the **Party** page to manage i
 
 ## Customers and Vendors tabs
 
-The **Customers** tab lets you create and manage one or more customers from the party for different companies. If the party type is **Person**, you can create and manage customers of the **Person** type. These customers are known as *contacts*. If the party type is **Organization**, you can create and manage customers of the **Organization** type. These customers are known as *accounts*.
+The **Customers** tab lets you create and manage one or more customers from the party for different companies. If the party type is **Person**, you can create and manage customers of the **Person** type. These customers are known as *contacts*. If the party type is **Organization**, you can create and manage customers of the **Organization** type. These customers are known as *accounts*. 
+
+![Example of a party of the type Customers.](media/ViewParty_Image2.PNG)
 
 The **Vendors** tab resembles the **Customers** tab, but it's used to create vendors of the **Person** or **Organization** type.
 
@@ -37,11 +39,17 @@ The **Vendors** tab resembles the **Customers** tab, but it's used to create ven
 
 The **Postal Addresses** tab lets you create and manage one or more postal addresses for the party. You can create as many postal addresses as the party requires. These addresses appear on the quotation and sales order pages.
 
+![Example of a party's postal address.](media/ViewParty_Image3.PNG)
+
 The **Electronic Addresses** tab lets you create and manage one or more electronic addresses for the party. You can create as many electronic addresses as the party requires.
+
+![Example of a party's electronic address.](media/ViewParty_Image4.PNG)
 
 ## Associated Contacts tab
 
 The **Associated Contacts** tab lets you create contact persons (**Contact for party** records) and associate them with the party.
+
+![Example of a contact associated to the party.](media/ViewParty_Image5.PNG)
 
 ## Add the Party page to your app
 
@@ -62,18 +70,25 @@ You can add the **Party** page to your app by using site maps.
     ![Party (msdyn_party) entity selected on the Components tab in App Designer.](media/ViewParty_Image8.png)
 
 6. Select **Save**.
-7. In the main part of the page, in the **Site Map** section, select the **Edit** button (pencil symbol) on the **Site Map** tile.
+
+7. Now select the entities **msdyn_partyelectronicaddress**, **msdyn_vendor**, **msdyn_postaladdress** and **msdyn_contactforparty**, so that the quick create forms for these tables are available on the parties form.
+
+    ![Select additional entities on the Components tab in App Designer.](media/ViewParty_Image13.png)
+
+8. Select **Save**.
+
+9. In the main part of the page, in the **Site Map** section, select the **Edit** button (pencil symbol) on the **Site Map** tile.
 
     ![Edit button on the Site Map tile in App Designer.](media/ViewParty_Image9.png)
 
-8. In Sitemap Designer, drag **Subarea** from the **Components** tab on the right to the section on the left that you have to customize. In this example, you're adding add the new subarea to the **Customers** section.
+10. In Sitemap Designer, drag **Subarea** from the **Components** tab on the right to the section on the left that you have to customize. In this example, you're adding add the new subarea to the **Customers** section.
 
     ![New Subarea component added to the Customer section in Sitemap Designer.](media/ViewParty_Image10.png)
 
-9. Select the **Edit** button (pencil symbol) next to the new subarea. Then, on the **Properties** tab on the right, set the **Type** field to **Entity** and the **Entity** field to **Party**.
+11. Select the **Edit** button (pencil symbol) next to the new subarea. Then, on the **Properties** tab on the right, set the **Type** field to **Entity** and the **Entity** field to **Party**.
 
     ![Type and Entity fields set on the Properties tab in Sitemap Designer.](media/ViewParty_Image11.png)
 
-10. Select **Save** and then **Publish** to make the **Party** entity available in the app.
+12. Select **Save** and then **Publish** to make the **Party** entity available in the app.
 
     ![Party entity available in the Sales Team Member app.](media/ViewParty_Image12.png)
