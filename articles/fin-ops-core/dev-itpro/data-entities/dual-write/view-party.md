@@ -2,7 +2,7 @@
 title: View party data
 description: This topic explains how to view party data by using the Party page.
 author: RamaKrishnamoorthy 
-ms.date: 11/16/2021
+ms.date: 11/23/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -71,7 +71,7 @@ You can add the **Party** page to your app by using site maps.
 
 6. Select **Save**.
 
-7. Now select the entities **msdyn_partyelectronicaddress**, **msdyn_vendor**, **msdyn_postaladdress** and **msdyn_contactforparty**, so that the quick create forms for these tables are available on the parties form.
+7. Now select the entities **msdyn_partyelectronicaddress**, **msdyn_vendor**, **msdyn_postaladdress**, and **msdyn_contactforparty** so that the quick create forms for these tables are available on the parties form.
 
     ![Select additional entities on the Components tab in App Designer.](media/ViewParty_Image13.PNG)
 
@@ -81,7 +81,7 @@ You can add the **Party** page to your app by using site maps.
 
     ![Edit button on the Site Map tile in App Designer.](media/ViewParty_Image9.png)
 
-10. In Sitemap Designer, drag **Subarea** from the **Components** tab on the right to the section on the left that you have to customize. In this example, you're adding add the new subarea to the **Customers** section.
+10. In Sitemap Designer, drag **Subarea** from the **Components** tab on the right to the section that you have to customize on the left. In this example, you're adding the new subarea to the **Customers** section.
 
     ![New Subarea component added to the Customer section in Sitemap Designer.](media/ViewParty_Image10.png)
 
