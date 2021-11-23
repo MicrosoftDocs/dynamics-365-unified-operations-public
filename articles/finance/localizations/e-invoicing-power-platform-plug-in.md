@@ -112,14 +112,19 @@ To set up integration
        
     -   Set up the Azure Key Vault and put the app secret there: [Set up the Azure Key Vault client](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client)
 
-    -   Set up the App ID and Secret on the Dataverse integration tab.   
+    -   Set up the App ID and Secret on the Dataverse integration tab.
 
--   Set up an Application User in Microsoft Dataverse, associated with the App
-    ID - **ecd93392-c922-4f48-9ddf-10741e4a9b65:** [Create an application
-    user](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user).
+    -   Create an Application User in Microsoft Dataverse, associated with the App ID: [Create an application user](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user). The user should be assigned a security role and having privileges to read/write the following Dataverse entities:
+
+    -   Electronic Invoice Submission
+
+    -   Electronic Invoice Submission Document
+
+-   Create an Application User in Microsoft Dataverse, associated with the App
+    ID - **ecd93392-c922-4f48-9ddf-10741e4a9b65:** [Create an application user](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user).
 
     The user should be assigned the 'Finance and Operations Basic User' security role and a role having privileges to read/write the
-    following Entities:
+    following Dataverse entities:
 
     -   Electronic Invoice Action
 
