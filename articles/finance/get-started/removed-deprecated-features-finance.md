@@ -41,33 +41,43 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.24 release
 
-### VAT statement for Austria (design based on reporting codes)
-(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-aut-vat-statement-details)
+### Sales tax report for Sweden (design based on reporting codes)
+[Sales tax report for Sweden](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-swe-sales-tax-payment-report-sweden)
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Replaced with new VAT declaration design |
+| **Reason for deprecation/removal** | Replaced with new VAT declaration design [VAT declaration for Sweden](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-swe-vat-declaration-sweden)|
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support Sales tax report for Sweden (Swedish report layout). New VAT declaration XML (SE), VAT declaration Excel (SE) Electronic reporting (ER) formats are introduced instead under the "Tax declaration" model. |
+
+### VAT statement for Austria (design based on reporting codes)
+[VAT statement details for Austria](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-aut-vat-statement-details)
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with new VAT declaration design [VAT declaration for Austria](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-aut-vat-declaration-austria)|
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support "VAT declaration (AT)" Electronic reporting (ER) format under "VAT declaration model". New VAT declaration XML (AT), VAT declaration Excel (AT) are introduced instead under the "Tax declaration" model. |
 
 ### ELSTER declaration for Germany (design based on reporting codes)
-(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-de-vat-declaration)</br>
-(https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany?toc=/dynamics365/finance/toc.json)</br>
-(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/de-00003-electronic-transmission-elster)
+[VAT statement](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-de-vat-declaration)</br>
+[Set up electronic Tax declaration for Germany](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany?toc=/dynamics365/finance/toc.json)</br>
+[Electronic transmission of VAT declaration (ELSTER)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/de-00003-electronic-transmission-elster)
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Replaced with new VAT declaration design |
+| **Reason for deprecation/removal** | Replaced with new VAT declaration design [VAT declaration for Germany](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-deu-vat-declaration-germany)|
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By December 1, 2022, we plan to no longer support "Elster (DE)", "Elster model" Electronic reporting (ER) formats. New VAT declaration XML (DE), VAT declaration Excel (DE) are introduced instead under the "Tax declaration" model. |
 
 ### OB declaration for Netherlands (design based on reporting codes)
-(https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nl-vat-declaration)
+[OB declaration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nl-vat-declaration)
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Replaced with new VAT declaration design - https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nl-vat-declaration-netherlands |
+| **Reason for deprecation/removal** | Replaced with new VAT declaration design - [VAT declaration for Netherlands](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-nl-vat-declaration-netherlands) |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
