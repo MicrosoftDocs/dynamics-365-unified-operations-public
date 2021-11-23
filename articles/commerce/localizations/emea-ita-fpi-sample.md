@@ -134,58 +134,6 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 #### Commerce runtime extension components
 
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
-
-The Commerce runtime extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
-
-1. Find the **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample** project, and build it.
-2. In the **Extensions.DocumentProvider.EpsonFP90IIISample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
-
-    - **Commerce Scale Unit:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
-    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
-
-4. Find the extensions configuration file for CRT:
-
-    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the bin\\ext folder under the IIS Commerce Scale Uni site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-
-5. Register the CRT change in the extensions configuration file. Add **source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample"**.
-6. Restart the Commerce Scale Unit:
-
-    - **Commerce Scale Unit:** Restart the Commerce Scale Unit site from IIS Manager.
-    - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
-
-#### Hardware station extension components
-
-The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
-
-1. Find the **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample** project, and build it.
-2. In the **Extensions.EpsonFP90IIIFiscalDeviceSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll** assembly file.
-3. Copy the files to a deployed Hardware station machine:
-
-    - **Remote Hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
-    - **Local Hardware station:** Copy the files to the Modern POS client broker location.
-
-4. Find the configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**:
-
-    - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
-    - **Local Hardware station:** The file is located under the Modern POS client broker location.
-
-5. Add the following section to the **composition** section of the config file.
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
-    ```
-
-6. Restart the Hardware station service:
-
-    - **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
-    - **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
-
-
-# [Retail 10.0.22 and later](#tab/retail-10-0-22)
-
 > [!WARNING]
 > Started since 10.0.22 the fiscal integration sample for Italy was published in GitHub repository. This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed as a prerequisite. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -232,8 +180,6 @@ The Hardware station extension components are included in the EpsonFP90IIISample
     HardwareStation.EpsonFP90III.Installer.exe install --verbosity 0
     ```
 
----
-
 ### Set up the registration process
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
@@ -262,42 +208,6 @@ To enable the registration process, follow these steps to set up Headquarters. F
 ### Production environment
 
 To create deployable packages that contain Commerce components, and apply those packages in a production environment, follow these steps.
-
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
-
-1. Complete the steps that are described in the [Enable extensions](#enable-extensions) section earlier in this topic.
-2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
-
-    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following line to the **composition** section.
-
-        ``` xml
-        <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
-        ```
-
-    - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
-
-        ``` xml
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
-        ```
-
-3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
-
-    - Add the following line to include the CRT extension in the deployable packages.
-
-        ``` xml
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
-        ```
-
-    - Add the following line to include the Hardware station extension in the deployable packages.
-
-        ``` xml
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
-        ```
-
-4. Start the MSBuild Command Prompt for Visual Studio utility, and then run **msbuild** under the Retail SDK folder to create deployable packages.
-5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
-# [Retail 10.0.22 and later](#tab/retail-10-0-22)
 
 ### Commerce Cloud Scale Unit (CSU) package
 
@@ -336,8 +246,6 @@ To upload the created **CloudScaleUnitExtensionPackage.zip** package to LCS see 
     ```Console
     HardwareStation.EpsonFP90III.Installer.exe install --verbosity 0
     ```
-
----
 
 ## Design of extensions
 
