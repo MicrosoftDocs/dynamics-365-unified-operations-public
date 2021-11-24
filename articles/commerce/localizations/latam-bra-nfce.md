@@ -93,13 +93,13 @@ On the **Language text** page, add the following records for the labels of the c
 Add the following POS labels to the **POS** section of the **Language text** page.
 
 | Language ID | Text ID | Text | Field ID |
-|-|:-:|-|:-:|
+|-|:-:|:-:|:-:|
 | en-US | 900001 | Access key | EFDOCACCESSKEY_BR |
 | en-US | 900002 | Authorization protocol | EFDAUTHORIZATIONPROTOCOL_BR |
 | en-US | 900003 | Date of Authorization protocol | EFDAUTHORIZATIONPROTOCOLDATE_BR |
 | en-US | 900004 | Issuer's establishment name | FISCALDOCUMENTESTABLISHMENTNAME_BR |
 | en-US | 900005 | Issuer's establishment address | FISCALDOCUMENTESTABILISHMENTADDRESS_BR |
-| en-US | 900006 | Issuer's establishment IE (state) registration number | IENUM_BR |
+| en-US | 900006 | Issuer's establishment IE (state) registration number | IENUMBER_BR |
 | en-US | 900007 | Issuer's establishment CCM (city) registration number | CCMNUM_BR |
 | en-US | 900008 | Issuer's establishment CNPJ registration number | CNPJCPFNUM_BR |
 | en-US | 900009 | Date and time of issue | FISCALDOCUMENTDATE_BR |
@@ -115,7 +115,7 @@ Add the following POS labels to the **POS** section of the **Language text** pag
 | en-US | 900019 | Item quantity | QTY_BR |
 | en-US | 900020 | Item total amount | TOTALAMOUNT_BR |
 | en-US | 900021 | Total quantity | EFDTOTALITEMQUANTITY_BR |
-| en-US | 900022 | Total amount | TOTALAMOUNT_BR |
+| en-US | 900022 | Total amount | TOTALAMOUNTWITHTAX_BR |
 | en-US | 900023 | Item discount | FISCALDOCUMENTTOTALITEMSDISCOUNT_BR |
 | en-US | 900024 | Subtotal discount | FISCALDOCUMENTSUBTOTALDISCOUNT_BR |
 | en-US | 900025 | Total discount | FISCALDOCUMENTDISCOUNTTOTAL_BR |
@@ -127,7 +127,7 @@ Add the following POS labels to the **POS** section of the **Language text** pag
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
 | Name | Type | Caption text ID | Description EN |
-|-|:-:|:-:|:-:|
+|-|:-:|:-:|-|
 | EFDOCACCESSKEY\_BR | Receipt | 900001 | Access key |
 | EFDAUTHORIZATIONPROTOCOL\_BR | Receipt | 900002 | Authorization protocol |
 | EFDAUTHORIZATIONPROTOCOLDATE\_BR | Receipt | 900003 | Date of Authorization protocol |
@@ -172,6 +172,7 @@ In the Receipt format designer, add the following custom fields to the appropria
         - **Name** – The corporate name of the fiscal establishment.
         - **CNPJ** – The CNPJ number of the fiscal establishment.
         - **IE** – The state registration ID of the fiscal establishment.
+		- **CCM** - The city registration ID of the fiscal establishment.
         - **Address** – The address of the fiscal establishment.
 
     - **Date of issue (Emissão / Data de recebimento)** – The date and time when the receipt is issued.
@@ -181,16 +182,25 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Fiscal data of the customer (Destinatário)**:
 
         - **Name** – The name or corporate name of the customer.
-        - **CPF/CNPJ/Foreigner ID** – The CPF/CNPJ number or foreigner ID of the customer.
-        - **Address** – The address of the customer.
+		- **CPF/CNPJ/Foreigner ID** – The CPF/CNPJ number or foreigner ID of the customer.
+		- **IE** – The state registration ID of the customer.
+		- **CCM** - The city registration ID of the customer.
+		- **Address** – The address of the customer.
+		
+		- or not identified customer message.
+		
 
 - **Lines:** Add the following fields:
 
     - **Item name** field
-    - **Quantity (Qtd.)** – The quantity of items.
-    - **Total value of the item (Valor total)** – The amount per item.
+    - **Item quantity (Qtd.)** – The quantity of items.
+    - **Item total amount(Valor total)** – The amount per item.
     - **Total quantity (Qtd. total de itens)** – The total quantity of items on the receipt.
     - **Total value (Valor total)** – The total amount of the receipt.
+	- **Item discount** - The discout per item.
+	- **Subtotal discount** - The subtotal discount.
+	- **Total discount** - The total discount of the receipt.
+	- **Total discount message** - The total discount message. 
 
 - **Footer:** Add the following fields:
 
