@@ -47,7 +47,7 @@ In **Accounts payable** \> **Setup** \> **Accounts payable parameters**, on the 
 
 ![Electronic documents in Accounts payable parameters](media/emea-ita-AP-parameter-e-invoices.jpg)
 
-Use the **Vendor invoice (IT).version.YYY.ZZ** electronic reporting configuration, or later version of it.
+Use the **Vendor invoice (IT)** electronic reporting configuration.
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
