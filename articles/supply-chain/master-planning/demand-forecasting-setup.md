@@ -25,7 +25,7 @@ Item allocation keys establish groups of items. A demand forecast is calculated 
 
 An item and its dimensions must be part of only one item allocation key if the item allocation key is used during forecast creation.
 
-To create item allocation keys and add a stock keeping units (SKU) to them:
+To create item allocation keys and add a stockkeeping units (SKU) to them:
 
 1. Go to **Master planning \> Setup \> Demand forecasting \> Item allocation keys**.
 1. Either select an item allocation key from the list pane to select **New** from the Action Pane to create a new one. Make the following settings in the header for your new or selected key:
@@ -116,8 +116,8 @@ Not all items perform in the same manner from a demand forecasting perspective. 
 
 1. Open the **Item allocation keys** tab of the **Demand forecasting parameters** page.
 1. In the grid on the left, use the toolbar buttons to add and remove item allocation keys as needed, and then select the allocation key you want to set up overrides for.
-1. On the **Transaction types** FastTab, enable the types of transactions you want to use to generate the statistical baseline forecast for products belonging to the selected allocation key. These settings work the same way as the do on the **General** tab, but apply only to the selected item allocation key. All of the settings here (both *Yes* and *No* values) override all of the **Transaction types** settings from the **General** tab.
-1. On the **Forecast algorithm parameters** FastTab, select the **Forecast generation strategy** and forecast algorithm parameter overrides for products belonging to the selected allocation key. These settings work the same way as the do on the **General** tab, but apply only to the selected item allocation key. Use the **Add** and **Remove** buttons on the toolbar here to establish the required collection of parameter overrides. For each parameter in the list, select a **Name** and then enter an appropriate value in the **Value** field. For more information about how to use the standard set of parameters and select values for them, see [Default parameters and values for demand forecasting models](#model-parameters).
+1. On the **Transaction types** FastTab, enable the types of transactions you want to use to generate the statistical baseline forecast for products belonging to the selected allocation key. These settings work the same way as they do on the **General** tab, but apply only to the selected item allocation key. All of the settings here (both *Yes* and *No* values) override all of the **Transaction types** settings from the **General** tab.
+1. On the **Forecast algorithm parameters** FastTab, select the **Forecast generation strategy** and forecast algorithm parameter overrides for products belonging to the selected allocation key. These settings work the same way as they do on the **General** tab, but apply only to the selected item allocation key. Use the **Add** and **Remove** buttons on the toolbar here to establish the required collection of parameter overrides. For each parameter in the list, select a **Name** and then enter an appropriate value in the **Value** field. For more information about how to use the standard set of parameters and select values for them, see [Default parameters and values for demand forecasting models](#model-parameters).
 
 ### Set up the connection to the Azure Machine Learning Service
 
@@ -168,7 +168,7 @@ The following parameters are provided by default. (If necessary, you can select 
   > [!NOTE]
   > A granularity attribute is a combination of forecast dimensions against which the forecast is done. You can define forecast dimensions on the **Demand forecasting parameters** page.
 
-- **Seasonality hint** – For seasonal data, provide a hint to the forecasting model to improve forecast accuracy. Format: integer number, representing the number of buckets a demand pattern repeats itself. For example, enter "6" for data that repeats itself every 6 months.
+- **Seasonality hint** – For seasonal data, provide a hint to the forecasting model to improve forecast accuracy. Format: integer number, representing the number of buckets a demand pattern repeats itself. For example, enter "6" for data that repeats itself every six months.
 - **Test set size percentage** – Percentage of historical data to be used as a test set for forecast accuracy calculation.
 
 You can overwrite the values for these parameters by going to **Master Planning \> Setup \> Demand forecasting \> Demand forecasting parameters**, where you can do the following:
@@ -210,17 +210,16 @@ This section describes how to set up your machine learning workspace using an au
     - `src/api_trigger.py`
     - `src/run.py`
     - `src/REntryScript/forecast.R`
-1. Open a PowerShell window and run the `quick_setup.ps1` script that you downloaded in step 1. <!-- KFM: This is a guess. Is it right? Is this enough info? Follow instructions on your screen? --> The script will set up the required workspace, storage, default datastore, and compute resources, but you still need to create the required pipelines by following the remaining steps of this procedure. (Pipelines provide a way to process forecasting scripts from Supply Chain Management.)
+1. Open a PowerShell window and run the `quick_setup.ps1` script that you downloaded in step 1. Then following the instructions on your screen. The script will set up the required workspace, storage, default datastore, and compute resources, but you still need to create the required pipelines by following the remaining steps of this procedure. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
 1. Go to Azure Machine Learning Studio and select **Notebooks** from the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
 1. Upload the remaining four files that you downloaded in step 1 to the location you found in the previous step.
-1. In Azure, open and review the `parameters.py` file that you just uploaded. Make sure the `nodes_count` value specified here is one less than the value you configured for the compute cluster in [Step 4: Configure compute resources](#config-compute-resources). If the `nodes_count` is greater than or equal to number of nodes in the compute cluster, the pipeline run might be able to start but then it will hang while waiting for the needed resources. For more information about the nodes count, see [Step 4: Configure compute resources](#config-compute-resources). <!-- KFM: But this time we didn't do "Step 4: Configure compute resources". What node-count value should we set now? -->
 1. Select the `api_trigger.py` file that you just uploaded and run it. It will create a pipeline to be triggered through the API.
 1. Your workspace is now set up. Skip ahead to [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters).
 
 #### <a name="ml-workspace-manual"></a>Option 2: Manually set up your machine learning workspace
 
-This section describes how to set up your machine learning workspace manually. You only need to to this if you decided not to run the automated setup script as described in [Option 1: Run a script to set up your machine learning workspace](#ml-workspace-script).
+This section describes how to set up your machine learning workspace manually. You only need to do this if you decided not to run the automated setup script as described in [Option 1: Run a script to set up your machine learning workspace](#ml-workspace-script).
 
 ##### <a name="create-workspace"></a>Step 1: Create a new workspace
 
@@ -252,7 +251,7 @@ Use the following procedure to set up your storage.
 Use the following procedure to set up your default datastore.
 
 1. In Azure Machine Learning Studio, select **Datastores** from the navigator.
-1. Create a new datastore of the *Azure Blob Storage* type that points to the *demplan-azureml* blob Storage container that you created in [Step 2: Configure storage](#config-storage"). (If the new datastore has an **Authentication type** of *Account key*, provide an account key for the created storage account. For instructions, see [Manage storage account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).)
+1. Create a new datastore of the *Azure Blob Storage* type that points to the *demplan-azureml* blob Storage container that you created in [Step 2: Configure storage](#config-storage). (If the new datastore has an **Authentication type** of *Account key*, provide an account key for the created storage account. For instructions, see [Manage storage account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).)
 1. Make your new datastore the default datastore by opening its details and selecting **Set as default datastore**.
 
 ##### <a name="config-compute-resources"></a>Step 4: Configure compute resources
@@ -262,13 +261,13 @@ Set up a compute resource in Azure Machine Learning Studio to run your forecasti
 1. Open the details page for the machine learning workspace you created in [Step 1: Create a new workspace](#create-workspace). From here, find your **Studio web URL** and select the link to open it.
 1. Select **Compute** on the navigation pane.
 1. Open the **Compute instances** tab and select **New** to launch a wizard that will help you create a new compute instance. Follow the instructions on your screen. This will be used to create the demand forecasting pipeline (can be deleted after pipeline is published). Use default settings.
-1. Open the **Compute clusters** tab and select **New** to launch a wizard that will help you create a new compute cluster. Follow the instructions on your screen. This will will be used to generate demand forecasts. Its settings affect performance and the maximum level of parallelization of the run. Use default settings except those mentioned in the following list:
+1. Open the **Compute clusters** tab and select **New** to launch a wizard that will help you create a new compute cluster. Follow the instructions on your screen. This will be used to generate demand forecasts. Its settings affect performance and the maximum level of parallelization of the run. Use default settings except those mentioned in the following list:
     - **Name** – Enter *e2ecpucluster*.
     - **Virtual machine size** – Adjust this setting according to the volume of data that you expect to use as an input to demand forecasting. The maximum nodes count should not exceed 11 because one node is needed to trigger the demand forecast generation and the maximum count of nodes that can then be used to generate a forecast is 10. (You will also set the node count in the `parameters.py` file, as described in the next section.) On each node, there will be several worker processes executing forecasting scripts in parallel. The total number of worker processes in your job will be *\[number of cores a node has\] \* node count*. For example, if your compute cluster has type Standard\_D4 (8 cores) and maximum 11 nodes, then the effective level of parallelism is 80, assuming `nodes_count` is set to 10 in `parameters.py`.
 
 ##### <a name="create-pipelines"></a>Step 5: Create pipelines
 
-Pipelines provide a way to process forecasting scripts from Supply Chain Management. Use the following procedure to create the required pipelines.
+Pipelines provide a way to start forecasting scripts from Supply Chain Management. Use the following procedure to create the required pipelines.
 
 1. Go to the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repository on GitHub and download the following files:
     - `src/parameters.py`
@@ -283,12 +282,12 @@ Pipelines provide a way to process forecasting scripts from Supply Chain Managem
 
 ### <a name="aad-app"></a>Set up a new Active Directory application
 
-An Active Directory application is needed authenticate to the resources dedicated to demand forecasting using service principal, so the application should have the lowest level of privilege needed to generate the forecast.
+An Active Directory application is needed to authenticate with the resources dedicated to demand forecasting using service principal, so the application should have the lowest level of privilege needed to generate the forecast.
 
 1. Sign in to your Azure portal.
 1. Register a new application in the tenant's Azure Active Directory, as described in [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 1. Follow the instructions on your screen as you work through the wizard. Keep default settings.
-1. Give your new Active Directory application access to the following resources (which you created created in [Set up machine learning on Azure](#ml-workspace)). For instructions, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current). This will enable the system to import and export forecasting data as well as trigger machine learning pipeline runs from Supply Chain Management.
+1. Give your new Active Directory application access to the following resources (which you created in [Set up machine learning on Azure](#ml-workspace)). For instructions, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current). This will enable the system to import and export forecasting data and to trigger machine learning pipeline runs from Supply Chain Management.
     - Contributor role to the machine learning workspace.
     - Contributor role to the dedicated Storage account.
     - Storage Blob Data Contributor role to the dedicated Storage account
@@ -310,7 +309,7 @@ Use the following procedure to connect your Supply Chain Management environment 
 1. Make the following settings on the **Azure Machine Learning Service** tab:
     - **Tenant ID** – Enter the ID for your Azure tenant. Supply Chain Management will use this ID to authenticate with the Machine Learning Service. You can find your tenant ID in the Azure portal, on the Azure Active Directory **Overview** page.
     - **Service principal application ID** – Enter the application ID for the application you created in the [Active Directory Application](#aad-app) section of this topic. This value is used to authorize API requests to Azure Machine Learning Service.
-    - **Service principal secret** – Enter the service principal application secret for the application you created in the [Active Directory Application](#aad-app) section of this topic. This value is used to to acquire the access token for the created security principal to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
+    - **Service principal secret** – Enter the service principal application secret for the application you created in the [Active Directory Application](#aad-app) section of this topic. This value is used to acquire the access token for the created security principal to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
     - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard on your Azure workspace (see also [Set up machine learning on Azure](#ml-workspace)).
     - **Pipeline endpoint address** – Enter the URL of the pipeline REST endpoint for your Azure Machine Learning Service. This is the pipeline you created as the last step when you [Set up machine learning on Azure](#ml-workspace). To get the pipeline URL, sign in to your Azure portal, select **Pipelines** on the navigator and open the **Pipeline** tab. Select the pipeline endpoint named **TriggerDemandForecastGeneration** in the list; then copy the REST endpoint shown.
 
