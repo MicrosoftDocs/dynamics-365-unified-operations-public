@@ -87,7 +87,7 @@ For more information about how to work with receipt formats, see [Set up and des
 On the Commerce parameters page, on the Configuration parameters tab, add the following configuration parameters:
 
 - **QrCodeWidth** - the width of the QR code image, in pixels. Specify an appropriate value for the parameter.
-- **QrCodeHeight** - the width of the QR code image, in pixels. Specify an appropriate value for the parameter.
+- **QrCodeHeight** - the height of the QR code image, in pixels. Specify an appropriate value for the parameter.
 
 > [!NOTE]
 > It is mandatory to specify the values of these configuration parameters to print QR codes in receipts. Support for default values of the parameters may be added in future updates.
