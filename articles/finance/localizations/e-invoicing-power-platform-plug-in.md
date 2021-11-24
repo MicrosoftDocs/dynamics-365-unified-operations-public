@@ -52,7 +52,7 @@ conditions to be met before starting with the solution configuration:
 # Getting the solution
 
 The Microsoft Dataverse solution for Electronic invoicing must be installed from
-Microsoft AppSource. For more information, see (AppSource link).
+Microsoft AppSource.
 
 Ensure the following solution is installed in Microsoft Dataverse.
 
