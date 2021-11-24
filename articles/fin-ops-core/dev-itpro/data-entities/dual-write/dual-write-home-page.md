@@ -2,7 +2,7 @@
 title: Dual-write home page
 description: This topic provides links to information about dual-write.
 author: tonyafehr
-ms.date: 11/23/2021
+ms.date: 11/24/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -86,7 +86,7 @@ These topics describe mapping between concepts in finance and operations apps an
     
 + [Integrate procurement in Supply Chain Management with Field Service](scm-field-service-procurement.md)
 + [In-house assets for servicing](in-house-assets.md)
-+ [Onhand inventory availability](inventory-availability.md)
++ [On-hand inventory availability](inventory-availability.md)
 + [Integrated worker, job, and position](integrated-hr.md)
 + [Party and global address book](party-gab.md)
 
