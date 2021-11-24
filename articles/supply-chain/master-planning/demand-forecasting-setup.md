@@ -206,12 +206,14 @@ This section describes how to set up your machine learning workspace using an au
 
 1. Go to the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repository on GitHub and download the following files:
     - `quick_setup.ps1`
+    - `sampleInput.csv`
     - `src/parameters.py`
     - `src/api_trigger.py`
     - `src/run.py`
     - `src/REntryScript/forecast.R`
 1. Open a PowerShell window and run the `quick_setup.ps1` script that you downloaded in step 1. Then following the instructions on your screen. The script will set up the required workspace, storage, default datastore, and compute resources, but you still need to create the required pipelines by following the remaining steps of this procedure. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
-1. Go to Azure Machine Learning Studio and select **Notebooks** from the navigator.
+1. Go to Azure Machine Learning Studio and upload the `sampleInput.csv` file that you downloaded in step 1 to the container called *azureml-demplan* (which was created by the script). This file is needed to publish the pipeline and to generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
+1. In Azure Machine Learning Studio, select **Notebooks** from the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
 1. Upload the remaining four files that you downloaded in step 1 to the location you found in the previous step.
 1. Select the `api_trigger.py` file that you just uploaded and run it. It will create a pipeline to be triggered through the API.
