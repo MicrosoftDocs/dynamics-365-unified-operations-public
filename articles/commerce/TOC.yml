@@ -1405,6 +1405,8 @@
         - name: Cash register functionality
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
+          href: localizations/emea-nor-fi-deployment.md
+        - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Russia
         items:
