@@ -63,7 +63,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Print fiscal receipts for customer order operations:
 
         - A fiscal receipt isn't printed for a customer order deposit.
-        - Print a fiscal receipt for carry-out lines of a hybrid customer order.
+        - Print a fiscal receipt for carryout lines of a hybrid customer order.
         - Print a fiscal receipt for the pickup operation for a customer order.
         - Print a fiscal receipt for a return order.
 
