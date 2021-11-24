@@ -42,8 +42,8 @@ To share products and product related information, you must create and set up yo
 
 You can choose to share product information using either of the following sharing policies:
 
-- **Duplicate record sharing** – <!-- KFM: Add a brief description-->
-- **Single record sharing (SRS)** – <!-- KFM: Add a brief description. ->
+- **Duplicate record sharing** – <!-- KFM: Add a brief description -->
+- **Single record sharing (SRS)** – <!-- KFM: Add a brief description. -->
 
 When sharing product information, we recommended using a single record sharing policy because it makes more efficient use of database resources, especially for companies with large product portfolios. However, for related data and policies that indicate how a product is managed in different companies, we recommend using a duplicate record sharing policy, so you're able to manage products differently in each company where they are used (such as for production-related policies like production pools).
 
