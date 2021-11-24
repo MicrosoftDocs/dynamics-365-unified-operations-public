@@ -52,6 +52,7 @@ To generate QR codes and print them on receipts for Saudi Arabia, you must compl
 
 1. Configure custom fields so that they can be used in receipt formats for sales receipts.
 1. Configure receipt formats.
+1. Specify QR code dimensions in Commerce parameters.
 1. Enable Commerce runtime (CRT) extensions.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
@@ -80,6 +81,16 @@ In the receipt format designer, add the following custom field to the **Footer**
 - **QR code (SA)** – This field prints the QR code on the receipt.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
+
+### Specify QR code dimensions in Commerce parameters
+
+On the Commerce parameters page, on the Configuration parameters tab, add the following configuration parameters:
+
+- **QrCodeWidth** - the width of the QR code image, in pixels. Specify an appropriate value for the parameter.
+- **QrCodeHeight** - the width of the QR code image, in pixels. Specify an appropriate value for the parameter.
+
+> [!NOTE]
+> It is mandatory to specify the values of these configuration parameters to print QR codes in receipts. Support for default values of the parameters may be added in future updates.
 
 ### Enable CRT extensions
 
