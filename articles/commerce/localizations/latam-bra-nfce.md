@@ -93,7 +93,7 @@ On the **Language text** page, add the following records for the labels of the c
 Add the following POS labels to the **POS** section of the **Language text** page.
 
 | Language ID | Text ID | Text | Field ID |
-|-|:-:|:-:|:-:|
+|-|:-:|-|:-:|
 | en-US | 900001 | Access key | EFDOCACCESSKEY_BR |
 | en-US | 900002 | Authorization protocol | EFDAUTHORIZATIONPROTOCOL_BR |
 | en-US | 900003 | Date of Authorization protocol | EFDAUTHORIZATIONPROTOCOLDATE_BR |
