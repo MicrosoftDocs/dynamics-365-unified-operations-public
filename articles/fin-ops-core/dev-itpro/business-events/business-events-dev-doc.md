@@ -672,6 +672,7 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
 
 
 The **BusinessEventsEventGridAdapter** class has the CoC method that is named **setContextProperties**. The following example shows what this step looks like for the Event Grid Adapter. The eventGridMessage has a Subject that can be filtered on.
+
 ```xpp
 using Microsoft.Azure.EventGrid.Models;
 
