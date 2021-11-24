@@ -92,68 +92,68 @@ On the **Language text** page, add the following records for the labels of the c
 
 Add the following POS labels to the **POS** section of the **Language text** page.
 
-| Language ID | Text ID | Text | Field ID |
-|-|:-:|:-:|:-:|
-| en-US | 900001 | Access key | EFDOCACCESSKEY_BR |
-| en-US | 900002 | Authorization protocol | EFDAUTHORIZATIONPROTOCOL_BR |
-| en-US | 900003 | Date of Authorization protocol | EFDAUTHORIZATIONPROTOCOLDATE_BR |
-| en-US | 900004 | Issuer's establishment name | FISCALDOCUMENTESTABLISHMENTNAME_BR |
-| en-US | 900005 | Issuer's establishment address | FISCALDOCUMENTESTABILISHMENTADDRESS_BR |
-| en-US | 900006 | Issuer's establishment IE (state) registration number | IENUMBER_BR |
-| en-US | 900007 | Issuer's establishment CCM (city) registration number | CCMNUM_BR |
-| en-US | 900008 | Issuer's establishment CNPJ registration number | CNPJCPFNUM_BR |
-| en-US | 900009 | Date and time of issue | FISCALDOCUMENTDATE_BR |
-| en-US | 900010 | Type of operation (input or output) | TYPEOFOPERATION_BR |
-| en-US | 900011 | NFC-e / NF-e fiscal document number | FISCALDOCUMENTNUMBER_BR |
-| en-US | 900012 | NFC-e / NF-e fiscal document series | FISCALDOCUMENTSERIES_BR |
-| en-US | 900013 | Not identified customer message | EFDNOTIDENTIFIEDCUSTOMERMESSAGE_BR |
-| en-US | 900014 | Customer's name | FISCALDOCUMENTCUSTOMERNAME_BR |
-| en-US | 900015 | Customer's address | FISCALDOCUMENTCUSTOMERADDRESS_BR |
-| en-US | 900016 | Customer's IE (state) registration number | IETAXIDENTIFIER_BR |
-| en-US | 900017 | Customer's CCM (city) registration number | CCMTAXIDENTIFIER_BR |
-| en-US | 900018 | Customer's CPF / CNPJ / Foreigner ID registration number | CPFCNPJTAXIDENTIFIER_BR |
-| en-US | 900019 | Item quantity | QTY_BR |
-| en-US | 900020 | Item total amount | TOTALAMOUNT_BR |
-| en-US | 900021 | Total quantity | EFDTOTALITEMQUANTITY_BR |
-| en-US | 900022 | Total amount | TOTALAMOUNTWITHTAX_BR |
-| en-US | 900023 | Item discount | FISCALDOCUMENTTOTALITEMSDISCOUNT_BR |
-| en-US | 900024 | Subtotal discount | FISCALDOCUMENTSUBTOTALDISCOUNT_BR |
-| en-US | 900025 | Total discount | FISCALDOCUMENTDISCOUNTTOTAL_BR |
-| en-US | 900026 | Total discount message | FISCALDOCUMENTDISCOUNTTOTALMESSAGE_BR |
-| en-US | 900027 | QR code | EFDQRCODE_BR |
-| en-US | 900028 | Taxpayer Interest Message | FISCALDOCUMENTCONSUMEROBSERVATION |
+| Language ID | Text ID | Text |
+|-|:-:|:-:|
+| en-US | 900001 | Access key |
+| en-US | 900002 | Authorization protocol |
+| en-US | 900003 | Date of Authorization protocol |
+| en-US | 900004 | Issuer's establishment name |
+| en-US | 900005 | Issuer's establishment address |
+| en-US | 900006 | Issuer's establishment IE (state) registration number |
+| en-US | 900007 | Issuer's establishment CCM (city) registration number |
+| en-US | 900008 | Issuer's establishment CNPJ registration number |
+| en-US | 900009 | Date and time of issue |
+| en-US | 900010 | Type of operation (input or output) |
+| en-US | 900011 | NFC-e / NF-e fiscal document number |
+| en-US | 900012 | NFC-e / NF-e fiscal document series |
+| en-US | 900013 | Not identified customer message |
+| en-US | 900014 | Customer's name |
+| en-US | 900015 | Customer's address |
+| en-US | 900016 | Customer's IE (state) registration number |
+| en-US | 900017 | Customer's CCM (city) registration number |
+| en-US | 900018 | Customer's CPF / CNPJ / Foreigner ID registration number |
+| en-US | 900019 | Item quantity |
+| en-US | 900020 | Item total amount |
+| en-US | 900021 | Total quantity |
+| en-US | 900022 | Total amount |
+| en-US | 900023 | Item discount |
+| en-US | 900024 | Subtotal discount |
+| en-US | 900025 | Total discount |
+| en-US | 900026 | Total discount message |
+| en-US | 900027 | QR code |
+| en-US | 900028 | Taxpayer Interest Message |
 
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
-| Name | Type | Caption text ID | Description EN |
-|-|:-:|:-:|-|
-| EFDOCACCESSKEY\_BR | Receipt | 900001 | Access key |
-| EFDAUTHORIZATIONPROTOCOL\_BR | Receipt | 900002 | Authorization protocol |
-| EFDAUTHORIZATIONPROTOCOLDATE\_BR | Receipt | 900003 | Date of Authorization protocol |
-| FISCALDOCUMENTESTABLISHMENTNAME\_BR | Receipt | 900004 | Issuer's establishment name |
-| FISCALDOCUMENTESTABILISHMENTADDRESS\_BR | Receipt | 900005 | Issuer's establishment address |
-| IENUMBER\_BR | Receipt | 900006 | Issuer's establishment IE (state) registration number |
-| CCMNUM\_BR | Receipt | 900007 | Issuer's establishment CCM (city) registration number |
-| CNPJCPFNUM\_BR | Receipt | 900008 | Issuer's establishment CNPJ registration number |
-| FISCALDOCUMENTDATE\_BR | Receipt | 900009 | Date and time of issue |
-| TYPEOFOPERATION\_BR | Receipt | 900010 | Type of operation (input or output) |
-| FISCALDOCUMENTNUMBER\_BR | Receipt | 900011 | NFC-e / NF-e fiscal document number |
-| FISCALDOCUMENTSERIES\_BR | Receipt | 900012 | NFC-e / NF-e fiscal document series |
-| EFDNOTIDENTIFIEDCUSTOMERMESSAGE\_BR | Receipt | 900013 | Not identified customer message |
-| FISCALDOCUMENTCUSTOMERNAME\_BR | Receipt | 900014 | Customer's name |
-| FISCALDOCUMENTCUSTOMERADDRESS\_BR | Receipt | 900015 | Customer's address |
-| IETAXIDENTIFIER\_BR | Receipt | 900016 | Customer's IE (state) registration number |
-| CCMTAXIDENTIFIER_BR | Receipt | 900017 | Customer's CCM (city) registration number |
-| CPFCNPJTAXIDENTIFIER_BR | Receipt | 900018 | Customer's CPF / CNPJ / Foreigner ID registration number |
-| QTY\_BR | Receipt | 900019 | Item quantity |
-| TOTALAMOUNT\_BR | Receipt | 900020 | Item total amount |
-| EFDTOTALITEMQUANTITY\_BR | Receipt | 900021 | Total quantity |
-| TOTALAMOUNTWITHTAX\_BR | Receipt |900022 | Total amount |
-| FISCALDOCUMENTTOTALITEMSDISCOUNT\_BR | Receipt |900023 | Item discount |
-| FISCALDOCUMENTSUBTOTALDISCOUNT\_BR | Receipt |900024 | Subtotal discount |
-| FISCALDOCUMENTDISCOUNTTOTAL\_BR | Receipt |900025 | Total discount |
-| FISCALDOCUMENTDISCOUNTTOTALMESSAGE\_BR | Receipt |900026 | Total discount message |
+| Name | Type | Caption text ID |
+|-|:-:|:-:|
+| EFDOCACCESSKEY\_BR | Receipt | 900001 |
+| EFDAUTHORIZATIONPROTOCOL\_BR | Receipt | 900002 |
+| EFDAUTHORIZATIONPROTOCOLDATE\_BR | Receipt | 900003 |
+| FISCALDOCUMENTESTABLISHMENTNAME\_BR | Receipt | 900004 |
+| FISCALDOCUMENTESTABILISHMENTADDRESS\_BR | Receipt | 900005 |
+| IENUMBER\_BR | Receipt | 900006 |
+| CCMNUM\_BR | Receipt | 900007 |
+| CNPJCPFNUM\_BR | Receipt | 900008 |
+| FISCALDOCUMENTDATE\_BR | Receipt | 900009 |
+| TYPEOFOPERATION\_BR | Receipt | 900010 |
+| FISCALDOCUMENTNUMBER\_BR | Receipt | 900011 |
+| FISCALDOCUMENTSERIES\_BR | Receipt | 900012 |
+| EFDNOTIDENTIFIEDCUSTOMERMESSAGE\_BR | Receipt | 900013 |
+| FISCALDOCUMENTCUSTOMERNAME\_BR | Receipt | 900014 |
+| FISCALDOCUMENTCUSTOMERADDRESS\_BR | Receipt | 900015 |
+| IETAXIDENTIFIER\_BR | Receipt | 900016 |
+| CCMTAXIDENTIFIER_BR | Receipt | 900017 |
+| CPFCNPJTAXIDENTIFIER_BR | Receipt | 900018 |
+| QTY\_BR | Receipt | 900019 |
+| TOTALAMOUNT\_BR | Receipt | 900020 |
+| EFDTOTALITEMQUANTITY\_BR | Receipt | 900021 |
+| TOTALAMOUNTWITHTAX\_BR | Receipt |900022 |
+| FISCALDOCUMENTTOTALITEMSDISCOUNT\_BR | Receipt |900023 |
+| FISCALDOCUMENTSUBTOTALDISCOUNT\_BR | Receipt |900024 |
+| FISCALDOCUMENTDISCOUNTTOTAL\_BR | Receipt |900025 |
+| FISCALDOCUMENTDISCOUNTTOTALMESSAGE\_BR | Receipt |900026 |
 | EFDQRCODE\_BR | Receipt | 900027 |
 | FISCALDOCUMENTCONSUMEROBSERVATION\_BR | Receipt | 900028 |
 

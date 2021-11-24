@@ -108,45 +108,35 @@ In addition to the fields described in the [Common list of custom fields for DAN
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
-You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
-
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
-
 Add the following POS labels to the **POS** section of the **Language text** page.
 
 | Language ID | Text ID | Text                                         |
 |-------------|---------|----------------------------------------------|
-| en-US       | 900023  | Barcode block 1 (22 digits)                  | 
-| en-US       | 900024  | Barcode block 2 (22 digits)                  | 
-| en-US       | 900025  | Issuer's trade name                          | 
-| en-US       | 900026  | Issuer's establishment city registration     | 
-| en-US       | 900027  | Testing environment                          | 
-| en-US       | 900028  | Testing environment (">"-characters lines)   | 
-| en-US       | 900029  | Cancellation Total value 				       | 
-| en-US       | 900030  | Cancellation Access key                      | 
-| en-US       | 900031  | Cancellation QR-code      				   | 
-| en-US       | 900032  | Cancellation Barcode (44 characters)         | 
-| en-US       | 900033  | Cancellation Barcode block 1 (22 characters) | 
-| en-US       | 900034  | Cancellation Barcode block 2 (22 characters) | 
-| en-US       | 900035  | Cancellation Date of issue                   | 
+| en-US       | 900201  | Issuer's trade name                          | 
+| en-US       | 900202  | Testing environment                          | 
+| en-US       | 900203  | Testing environment (">"-characters lines)   | 
+| en-US       | 900204  | Cancellation Total value 				       | 
+| en-US       | 900205  | Cancellation Access key                      | 
+| en-US       | 900206  | Cancellation QR-code      				   | 
+| en-US       | 900207  | Cancellation Barcode (44 characters)         | 
+| en-US       | 900208  | Cancellation Barcode block 1 (22 characters) | 
+| en-US       | 900209  | Cancellation Barcode block 2 (22 characters) | 
+| en-US       | 900210  | Cancellation Date of issue                   | 
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
 | Name                                                | Type    | Caption text ID |
 |-----------------------------------------------------|---------|-----------------|
-| FISCALDOCUMENTBARCODEFIRST\_BR                      | Receipt | 900023          |
-| FISCALDOCUMENTBARCODESECOND\_BR                     | Receipt | 900024          |
-| FISCALDOCUMENTESTABLISHMENTTRADENAME\_BR            | Receipt | 900025          |
-| CCMNUM\_BR     									  | Receipt | 900026          |
-| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENT\_BR    | Receipt | 900027          |
-| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENTROW\_BR | Receipt | 900028          |
-| CANCELFISCALDOCUMENTTOTALAMOUNT\_BR      			  | Receipt | 900029          |
-| CANCELFISCALDOCUMENTACCESSKEY\_BR                   | Receipt | 900030          |
-| CANCELFISCALDOCUMENTQRCODETEXT\_BR                  | Receipt | 900031          |
-| CANCELBARCODE\_BR                					  | Receipt | 900032          |
-| CANCELFISCALDOCUMENTBARCODEFIRST\_BR     			  | Receipt | 900033          |
-| CANCELFISCALDOCUMENTBARCODESECOND\_BR          	  | Receipt | 900034          |
-| CANCELFISCALDOCUMENTISSUEDATE\_BR       			  | Receipt | 900035          |
+| FISCALDOCUMENTESTABLISHMENTTRADENAME\_BR            | Receipt | 900201          |
+| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENT\_BR    | Receipt | 900202          |
+| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENTROW\_BR | Receipt | 900203          |
+| CANCELFISCALDOCUMENTTOTALAMOUNT\_BR      			  | Receipt | 900204          |
+| CANCELFISCALDOCUMENTACCESSKEY\_BR                   | Receipt | 900205          |
+| CANCELFISCALDOCUMENTQRCODETEXT\_BR                  | Receipt | 900206          |
+| CANCELBARCODE\_BR                					  | Receipt | 900207          |
+| CANCELFISCALDOCUMENTBARCODEFIRST\_BR     			  | Receipt | 900208          |
+| CANCELFISCALDOCUMENTBARCODESECOND\_BR          	  | Receipt | 900209          |
+| CANCELFISCALDOCUMENTISSUEDATE\_BR       			  | Receipt | 900210          |
 
 ### Configure receipt formats
 
