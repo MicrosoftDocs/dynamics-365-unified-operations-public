@@ -2590,6 +2590,8 @@
         items:
         - name: Indonesia overview
           href: localizations/indonesia.md
+        - name: Tax invoice numbering and invoicing
+        - href: localizations/apac-idn-invoicing.md
         - name: VAT declaration for Indonesia
           href: localizations/apac-idn-ppn-declaration.md
       - name: Italy
