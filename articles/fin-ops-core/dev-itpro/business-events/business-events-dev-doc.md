@@ -609,9 +609,9 @@ A custom payload context must be extended from the **BusinessEventsCommitLogPayl
 class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
     private utcdatetime eventTime;
-    public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+    public utcdatetime parmEventTime(utcdatetime _eventTime = eventTime)
     {
-        eventTime = \_eventTime;
+        eventTime = _eventTime;
         return eventTime;
     }
 }
@@ -626,7 +626,7 @@ A Chain of Command (CoC) extension must be written for the **BusinessEventsSende
 public final class CustomPayloadContextBusinessEventsSender_Extension
 {
     protected BusinessEventsCommitLogPayloadContext
-    buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+    buildPayloadContext(BusinessEventsCommitLogEntry _commitLogEntry)
     {
         BusinessEventsCommitLogPayloadContext payloadContext = next
         buildPayloadContext(_commitLogEntry);
@@ -646,6 +646,8 @@ Adapters that consume payload context are written in such a way that they expose
 The **BusinessEventsServiceBusAdapter** class has the CoC method that is named **addProperties**.
 
 ```xpp
+using Microsoft.ServiceBus.Messaging;
+
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 public final class CustomBusinessEventsServiceBusAdapter_Extension
 {
@@ -663,6 +665,27 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
             customPayloadContext.parmBusinessEventCategory()));
             propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
             propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+        }
+    }
+}
+```
+
+
+The **BusinessEventsEventGridAdapter** class has the CoC method that is named **setContextProperties**. The following example shows what this step looks like for the Event Grid Adapter. The eventGridMessage has a Subject that can be filtered on.
+```xpp
+using Microsoft.Azure.EventGrid.Models;
+
+[ExtensionOf(classStr(BusinessEventsEventGridAdapter))]
+public final class CustomBusinessEventsEventGridAdapter_Extension
+{
+    protected void setContextProperties(EventGridEvent _eventGridEvent, BusinessEventsEndpointPayloadContext _context)
+    {
+        next setContextProperties(_eventGridEvent, _context);
+        if (_context is CustomCommitLogPayloadContext)
+        {
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+
+            _eventGridEvent.Subject = _eventGridEvent.Subject + customPayloadContext.parmLegalEntity();
         }
     }
 }
@@ -704,10 +727,9 @@ The **initialize** method should be implemented to check the type of the **Busin
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 {
     BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
-    \_endpoint.RecId);
+    _endpoint.RecId);
 }
-CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
-CustomBusinessEventsEndpoint;
+CustomBusinessEventsEndpoint customBusinessEventsEndpoint = _endpoint as CustomBusinessEventsEndpoint;
 customField = customBusinessEventsEndpoint.CustomField;
 if (!customField)
 {
