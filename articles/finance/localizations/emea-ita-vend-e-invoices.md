@@ -51,6 +51,7 @@ Use the **Vendor invoice (IT).version.YYY.ZZ** electronic reporting configuratio
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+> Parent model configuration **Invoice model** and related model mapping configuration **Vendor invoice model mapping** will be imported or updated automatically.
 
 
 ## Vendor data configuration
@@ -109,10 +110,6 @@ This invoice type value will override automatically created codes during creatio
 
 To view all vendors electronic invoices and perform various actions, go to **Accounts payable** > **Invoices** > **E-Invoices** > **Electronic invoices**.
 The functionality is similar to customers electronic invoices processing. For details, see the chapter **Electronic invoice register** of the [Customer electronic invoices](emea-ita-e-invoices.md) article.
-
-
-- [Accounts receivable parameters](#apparameters)
-
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
