@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the the batch platform provides three ways to enable batch resiliency and prevent transient failures.
+This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the batch platform provides three ways to enable batch resiliency and prevent transient failures.
 
 ## Retry the batch job task, regardless of the error type
 
@@ -102,12 +102,6 @@ A batch job that has a smaller transaction size reduces the amount of work that 
 ### What does idempotent mean for a batch job?
 
 In this context, *idempotent* means that a retry won't change or affect the overall result. For example, something should be done only one time and won't be done more than one time. Therefore, something that is done in the original run won't be done again during the retry.
-
-### What is the maximum number of retries that BatchRetryable supports, and what is the retry interval?
-
-**Maximum retries** specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **Maximum retries**, the task is put back into a ready state so that it can be picked up again.
-
-The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
 
 ### Can I change the maximum number of retries and the retry interval?
 
