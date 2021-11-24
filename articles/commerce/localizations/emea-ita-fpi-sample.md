@@ -194,7 +194,7 @@ The following default data mapping is included in the fiscal document provider c
     CODE128
     ```
 
-- **Print fiscal data in receipt header** - If this parameter is turned on, the store information, such as the store name, address, tax identification number, and the cashier name, will be printed on the fiscal receipt.
+- **Print fiscal data in receipt header** - If this parameter is turned on, the store information, such as the store name, address, tax identification number, and the cashier's name, will be printed on the fiscal receipt.
 
 - **Fiscal printer department mapping** - The mapping of departments of the fiscal printer to value-added tax (VAT) rates, VAT exempt natures, and product types. The default mapping is as following:
 
@@ -241,7 +241,9 @@ The following default data mapping is included in the fiscal document provider c
 - **Info code for original sales date** - The info code that used to capture the original sales date for a return transaction if no original sales receipt is provided. It is used together with the **Info code for return origin** and the **Return origin mapping** to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists.
 
     The info code should be configured with the **Input type** as *Date*. It should be mandatory and fire once per a sales transaction. It should also be specified as the **Linked info code** for the **Info code for return origin**, so that the two info codes fire together, one after another.
-    
+
+    No default value is specified for this mapping. You must select an info code configured in your application.
+
 - **Return origin mapping** - The mapping of return origins that is used to print the origin of a return transaction if no original sales receipt is provided. It is used together with the **Info code for return origin** and the **Info code for original sales date** to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists. The default mapping is as following:
 
     ```JSON
