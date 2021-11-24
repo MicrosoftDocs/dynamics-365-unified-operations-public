@@ -186,7 +186,7 @@ The following default data mapping is included in the fiscal document provider c
     | 6              | Currency             |
     | 8              | Gift card            |
 
-    Thus, you need to modify the sample mapping according to the payment methods configured in your application.
+    You must modify the sample mapping according to the payment methods configured in your application.
 
 - **Barcode type for receipt number** - The type of barcode used to display a receipt number in a fiscal receipt. The default mapping is as following:
 
@@ -194,8 +194,9 @@ The following default data mapping is included in the fiscal document provider c
     CODE128
     ```
 
-- **Print fiscal data in receipt header** - 
-- **Fiscal printer department mapping** - The mapping of departments of the fiscal printer to VAT rates, VAT exempt natures, and product types.
+- **Print fiscal data in receipt header** - If this parameter is turned on, the store information, such as the store name, address, tax identification number, and the cashier name, will be printed on the fiscal receipt.
+
+- **Fiscal printer department mapping** - The mapping of departments of the fiscal printer to value-added tax (VAT) rates, VAT exempt natures, and product types. The default mapping is as following:
 
     ```JSON
     {"Departments": [
@@ -211,17 +212,37 @@ The following default data mapping is included in the fiscal document provider c
         {"VATRate":"0000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"10"},
         {"VATRate":"0000", "VATExemptNature":"NS", "ProductType":"0", "DepartmentNumber":"99"}]}
     ```
+    
+    Where:
+    
+    - **VATRate** is a supported VAT rate configured as a sales tax code, with two decimals and without the decimal separator. E.g.: 22% -\> 2200, 10% -\> 1000, etc.
+    - **VATExemptNature** is applicable only if the VAT rate is zero, including the case when there is no tax. Currently, VATExemptNature is only supported for gift cards, and the value in the mapping should correspond to the value of the **VATExemptNatureForGiftCard** property in the XML configuration file.
+    - **ProductType**: *0* for goods; *1* for services.
+    - **DepartmentNumber** is the number of the department configured in the printer that corresponds to the three attributes above.
+    
+    You must modify the sample mapping according to the VAT rates configured in your application and corresponding departments configured in your fiscal printer.
 
-- **VAT exempt nature for gift card** - The VAT exempt nature that should be applied when a gift card is issued or refilled.
+- **VAT exempt nature for gift card** - The VAT exempt nature that should be applied when a gift card is issued or refilled. The value should correspond to some entry in the fiscal printer department mapping. The default mapping is as following:
 
     ```
     NS
     ```
 
-- **Enable free of charge items** - Enable omaggio special discount adjustment type for items with 100% discount.
-- **Info code for return origin** - The info code that used to capture the origin of a return transaction if no original sales receipt is provided.
-- **Info code for original sales date** - The info code that used to capture the original sales date for a return transaction if no original sales receipt is provided.
-- **Return origin mapping** - The mapping of return origins that is used to print the origin of a return transaction if no original sales receipt is provided.
+- **Enable free of charge items** - If this parameter is turned on, the special discount adjustment type *omaggio* for items with 100% discount is enabled.
+
+- **Info code for return origin** - The info code that is used to capture the origin of a return transaction if no original sales receipt is provided. It is used together with the **Info code for original sales date** and the **Return origin mapping** to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists. 
+    
+    This info code should be configured to provide the user with the possibility to select or enter one of possible origins of returns in your stores. For example, it can be configured as a list of subcodes (e.g., *Return from site*, *Return from kiosk*, etc.) The **Return origin mapping** is then used to translate the value of the info code into a command for the fiscal printer.
+    
+    The info code selected as the **Info code for return origin** should be configured as a mandatory info code that fires once per a sales transaction. It should be assigned as the **Return product** info code in the POS functionality profile, so that it fires when the **Return product** operation is run.
+
+    No default value is specified for this mapping. You must select an info code configured in your application.
+
+- **Info code for original sales date** - The info code that used to capture the original sales date for a return transaction if no original sales receipt is provided. It is used together with the **Info code for return origin** and the **Return origin mapping** to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists.
+
+    The info code should be configured with the **Input type** as *Date*. It should be mandatory and fire once per a sales transaction. It should also be specified as the **Linked info code** for the **Info code for return origin**, so that the two info codes fire together, one after another.
+    
+- **Return origin mapping** - The mapping of return origins that is used to print the origin of a return transaction if no original sales receipt is provided. It is used together with the **Info code for return origin** and the **Info code for original sales date** to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists. The default mapping is as following:
 
     ```JSON
     {"ReturnOrigins": [
@@ -231,31 +252,16 @@ The following default data mapping is included in the fiscal document provider c
         "PrinterReturnOriginWithoutFiscalData":"POS"}
     ```
 
-The following default data mappings are obsolte and are kept for backward compatibility only:
-
-- Value-added tax (VAT) codes mapping
-- Deposit payment type
-
-===== WRONG ==========
-
-The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
-
-- **Value-added tax (VAT) rates mapping**  – The mapping of tax percentage values that are set up for the sales tax codes to fiscal printer-specific VAT rates. The default mapping is as following:
-
-    ```
-    0 : 23.00 ; 1 : 8.00 ; 2 : 5.00 ; 3 : 0.00
-    ```
-    The first component in each pair stands for a VAT rate number configured in the fiscal printer, and the second component stands for the corresponding VAT rate. For more information about the fiscal printer VAT rate configuration, see the POSNET driver documentation.
+    Where:
     
-- **Tender type mapping** – The mapping of payment methods configured for the store to payment forms supported by the fiscal printer. The default mapping is as following:
+    - **ReturnOrigin** is one of possible origins of returns in your stores. It should correspond to a value of the **Info code for return origin**.
+    - **PrinterReturnOrigin** is one of the return origins accepted by the fiscal printer (POS, VR, or ND).
+    - **PrinterReturnOriginWithoutFiscalData** is the return origin accepted by the fiscal printer that corresponds to a return transaction that is linked to an original sales transaction that for some reason does not have linked fiscal data, that is, it was not registered through a fiscal printer. In this case, the original sales date is identified as the date of the original sales transaction.
 
-    ```
-    0 : 0 ; 1 : 0 ; 2 : 2 ; 3 : 2 ; 4 : 0 ; 5 : 0 ; 6 : 0 ; 7 : 2 ; 8 : 0
-    ```
+The following default data mappings are obsolete and are kept for backward compatibility only:
 
-    The first component in each pair stands for a payment method that is set up for the store, and the second component stands for the corresponding payment form supported by the fiscal printer. For more information about payment forms that the fiscal printer supports, see the POSNET driver documentation. You need to modify the sample mapping according to the payment methods configured in your application.
-    
-===============
+- **Value-added tax (VAT) codes mapping**
+- **Deposit payment type**
 
 #### Fiscal connector settings
 
