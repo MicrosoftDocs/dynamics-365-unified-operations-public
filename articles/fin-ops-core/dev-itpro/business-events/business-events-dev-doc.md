@@ -649,14 +649,13 @@ The **BusinessEventsServiceBusAdapter** class has the CoC method that is named *
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 public final class CustomBusinessEventsServiceBusAdapter_Extension
 {
-    protected void addProperties(BrokeredMessage \_message,
-    BusinessEventsEndpointPayloadContext \_context)
+    protected void addProperties(BrokeredMessage _message, BusinessEventsEndpointPayloadContext _context)
     {
+        next addProperties(_message, _context);
         if (_context is CustomCommitLogPayloadContext)
         {
-            CustomCommitLogPayloadContext customPayloadContext = \_context as
-            CustomCommitLogPayloadContext;
-            var propertyBag = \_message.Properties;
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+            var propertyBag = _message.Properties;
             propertyBag.Add('EventId', customPayloadContext.parmEventId());
             propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
             // Convert the enum to string to be able to serialize the property.
