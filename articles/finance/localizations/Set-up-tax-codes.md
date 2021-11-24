@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Version 10.0.21
 
 # Set up tax codes
 
+[!include [banner](../includes/banner.md)]
+
 This topic explains how to set up tax codes in the Tax Calculation service, including the setup for a simple scenario to make the tax code work, and some advanced functionalities on tax code for complex scenarios.
 
 > [!IMPORTANT]
