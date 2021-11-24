@@ -280,7 +280,7 @@ Complete the following steps to define the VAT registration number that the **NO
 
   ![Set up the VAT registration number of the company that is reporting VAT return.](media/emea-nor-vat-return-tax-registration-number.png)
 
-If the VAT registration number isn't specified in the **Tax registration number** additional field of the **NO VAT returns** processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids#registration-type-creation.md) and [Registration category](emea-registration-ids#supported-registration-categories.md).
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **NO VAT returns** processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation.md) and [Registration category](emea-registration-ids.md#supported-registration-categories.md).
   
 ## <a id="preview-format"></a>Set up paper format to preview VAT return
   
