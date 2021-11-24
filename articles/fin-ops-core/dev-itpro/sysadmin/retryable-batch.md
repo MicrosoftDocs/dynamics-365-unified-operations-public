@@ -4,7 +4,7 @@
 title: Enable batch retries
 description: This topic describes how to enable automatic retries on batch jobs when transient failures occur.
 author: matapg007
-ms.date: 11/22/2021
+ms.date: 11/24/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -35,11 +35,11 @@ Because not all batch jobs might be idempotent (for example, when a batch runs c
 
 Retries are enabled only for jobs where the **BatchRetryable** interface is implemented and **isRetryable** is set to **True**. In this functionality, retries occur after any interruption of the SQL Server connection. Microsoft will continue to add retries on other exceptions.
 
-The maximum number of retries and the retry interval are controlled by the batch platform. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (time Interval time increases in the following way: 5, 8, 16, 32, and so on.)
+The maximum number of retries and the retry interval are controlled by the batch platform. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
 
 ## Batch OData action capability
 
-This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. The batch platform has exposed a new Open Data Protocol (OData) action from Platform update 46 (PU46). When a job ID is provided in a call to the endpoint, the job will be requeued for execution.
+This option isn't a direct execution retry like the previous two options. It enables the customer to add custom logic before the job is retriggered. When job execution fails, you can listen to corresponding business events and decide whether the failure can be retried. The batch platform has exposed a new Open Data Protocol (OData) action from version 10.0.22 (with Platform update 46). When a job ID is provided in a call to the endpoint, the job will be requeued for execution.
 
 For more information, see [Batch OData API](batch-odata-api.md).
 
