@@ -181,23 +181,48 @@ You can overwrite the values for these parameters by going to **Master Planning 
 
 ## <a name="setup-amls"></a>Set up the Azure Machine Learning Service
 
-Supply Chain Management calculates demand forecasts using the Azure Machine Learning Service, which you must set up and run on your own Azure subscription. This section describes how to set it up on Azure and then connect it with your Supply Chain Management environment.
+Supply Chain Management calculates demand forecasts using the *Azure Machine Learning Service*, which you must set up and run on your own Azure subscription. This section describes how to set it up on Azure and then connect it with your Supply Chain Management environment.
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: Preview until 10.0.23 GA -->
 
 ### Enable the Azure Machine Learning Service in feature management
 
-Before you can use the Azure Machine Learning Service for demand forecasting, you must turn on a feature to enable the integration. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use the Azure Machine Learning Service for demand forecasting, you must turn on a feature in Supply Chain Management to enable the integration. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Master planning*
 - **Feature name:** *Azure Machine Learning Service for demand forecasting*
 
-### <a name="ml-workspace"></a>Set up your machine learning workspace on Azure
+### <a name="ml-workspace"></a>Set up machine learning on Azure
 
-To enable Azure to process your forecasts using machine learning, you must set up an Azure machine learning workspace for this purpose.
+To enable Azure to process your forecasts using machine learning, you must set up an Azure machine learning workspace for this purpose. You have two options (choose one):
 
-#### <a name="create-workspace"></a>Step 1: Create a new workspace
+- To set up the workspace by running a script provided by Microsoft, follow the instructions in [Option 1: Run a script to set up your machine learning workspace](#ml-workspace-script) and then skip ahead to [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters).
+- To set up your workspace manually, which takes a bit longer but gives you more control, follow the instructions in [Option 2: Manually set up your machine learning workspace](#ml-workspace-manual) and then skip ahead to [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters).
+
+#### <a name="ml-workspace-script"></a>Option 1: Run a script to automatically set up your machine learning workspace
+
+This section describes how to set up your machine learning workspace using an automated script provided by Microsoft. If you prefer, you can set up all the resources manually by following the instructions provided in [Option 2: Manually set up your machine learning workspace](#ml-workspace-manual), but you do not need to do both.
+
+1. Go to the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repository on GitHub and download the following files:
+    - `quick_setup.ps1`
+    - `src/parameters.py`
+    - `src/api_trigger.py`
+    - `src/run.py`
+    - `src/REntryScript/forecast.R`
+1. Open a PowerShell window and run the `quick_setup.ps1` script that you downloaded in step 1. <!-- KFM: This is a guess. Is it right? Is this enough info? Follow instructions on your screen? --> The script will set up the required workspace, storage, default datastore, and compute resources, but you still need to create the required pipelines by following the remaining steps of this procedure. (Pipelines provide a way to process forecasting scripts from Supply Chain Management.)
+1. Go to Azure Machine Learning Studio and select **Notebooks** from the navigator.
+1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
+1. Upload the remaining four files that you downloaded in step 1 to the location you found in the previous step.
+1. In Azure, open and review the `parameters.py` file that you just uploaded. Make sure the `nodes_count` value specified here is one less than the value you configured for the compute cluster in [Step 4: Configure compute resources](#config-compute-resources). If the `nodes_count` is greater than or equal to number of nodes in the compute cluster, the pipeline run might be able to start but then it will hang while waiting for the needed resources. For more information about the nodes count, see [Step 4: Configure compute resources](#config-compute-resources). <!-- KFM: But this time we didn't do "Step 4: Configure compute resources". What node-count value should we set now? -->
+1. Select the `api_trigger.py` file that you just uploaded and run it. It will create a pipeline to be triggered through the API.
+1. Your workspace is now set up. Skip ahead to [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters).
+
+#### <a name="ml-workspace-manual"></a>Option 2: Manually set up your machine learning workspace
+
+This section describes how to set up your machine learning workspace manually. You only need to to this if you decided not to run the automated setup script as described in [Option 1: Run a script to set up your machine learning workspace](#ml-workspace-script).
+
+##### <a name="create-workspace"></a>Step 1: Create a new workspace
 
 Use the following procedure to create a new machine learning workspace.
 
@@ -212,18 +237,36 @@ Use the following procedure to create a new machine learning workspace.
 
 For more information, see [Create the workspace](/azure/machine-learning/quickstart-create-resources#create-the-workspace).
 
-#### <a name="config-compute-resources"></a>Step 2: Configure compute resources
+##### <a name="config-storage"></a>Step 2: Configure storage
+
+Use the following procedure to set up your storage.
+
+1. Go to the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repository on GitHub and download the following file:
+    - `sampleInput.csv`
+1. Open the storage account that you created in [Step 1: Create a new workspace](#create-workspace).
+1. Follow the instructions provided in [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) to create a container named *demplan-azureml*.
+1. Upload the `sampleInput.csv` file that you downloaded in step 1 to the container that you just created. This file is needed to publish the pipeline and to generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
+
+##### Step 3: Configure default datastore
+
+Use the following procedure to set up your default datastore.
+
+1. In Azure Machine Learning Studio, select **Datastores** from the navigator.
+1. Create a new datastore of the *Azure Blob Storage* type that points to the *demplan-azureml* blob Storage container that you created in [Step 2: Configure storage](#config-storage"). (If the new datastore has an **Authentication type** of *Account key*, provide an account key for the created storage account. For instructions, see [Manage storage account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).)
+1. Make your new datastore the default datastore by opening its details and selecting **Set as default datastore**.
+
+##### <a name="config-compute-resources"></a>Step 4: Configure compute resources
 
 Set up a compute resource in Azure Machine Learning Studio to run your forecasting generation scripts, as described in the following procedure.
 
-1. Continuing from the previous procedure, open your new machine learning workspace details page. From here, find your **Studio web URL** and select the link to open it.
+1. Open the details page for the machine learning workspace you created in [Step 1: Create a new workspace](#create-workspace). From here, find your **Studio web URL** and select the link to open it.
 1. Select **Compute** on the navigation pane.
 1. Open the **Compute instances** tab and select **New** to launch a wizard that will help you create a new compute instance. Follow the instructions on your screen. This will be used to create the demand forecasting pipeline (can be deleted after pipeline is published). Use default settings.
 1. Open the **Compute clusters** tab and select **New** to launch a wizard that will help you create a new compute cluster. Follow the instructions on your screen. This will will be used to generate demand forecasts. Its settings affect performance and the maximum level of parallelization of the run. Use default settings except those mentioned in the following list:
     - **Name** – Enter *e2ecpucluster*.
     - **Virtual machine size** – Adjust this setting according to the volume of data that you expect to use as an input to demand forecasting. The maximum nodes count should not exceed 11 because one node is needed to trigger the demand forecast generation and the maximum count of nodes that can then be used to generate a forecast is 10. (You will also set the node count in the `parameters.py` file, as described in the next section.) On each node, there will be several worker processes executing forecasting script in parallel. The total number of worker processes in your job will be *\[number of cores a node has\] \* node count*. For example, if your compute cluster has type Standard\_D4 (8 cores) and maximum 11 nodes, then the effective level of parallelism is 80, assuming `nodes_count` is set to 10 in `parameters.py`.
 
-#### <a name="create-pipelines"></a>Step 3: Create pipelines
+##### <a name="create-pipelines"></a>Step 5: Create pipelines
 
 Pipelines provide a way to process forecasting scripts from Supply Chain Management. Use the following procedure to create the required pipelines.
 
@@ -235,31 +278,8 @@ Pipelines provide a way to process forecasting scripts from Supply Chain Managem
 1. In Azure Machine Learning Studio, select **Notebooks** from the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
 1. Upload the four files that you downloaded in step 1 to the location you found in the previous step.
-1. In Azure, open and review the `parameters.py` file that you just uploaded. Make sure the `nodes_count` value specified here is one less than the value you configured for the compute cluster in the previous section. If the `nodes_count` is greater than or equal to number of nodes in the compute cluster, the pipeline run might be able to start but then it will hang while waiting for the needed resources. For more information about the nodes count, see [Step 2: Configure compute resources](#config-compute-resources)
+1. In Azure, open and review the `parameters.py` file that you just uploaded. Make sure the `nodes_count` value specified here is one less than the value you configured for the compute cluster in [Step 4: Configure compute resources](#config-compute-resources). If the `nodes_count` is greater than or equal to number of nodes in the compute cluster, the pipeline run might be able to start but then it will hang while waiting for the needed resources. For more information about the nodes count, see [Step 4: Configure compute resources](#config-compute-resources).
 1. Select the `api_trigger.py` file that you just uploaded and run it. It will create a pipeline to be triggered through the API.
-
-#### <a name="config-storage"></a>Step 4: Configure storage
-
-<!-- KFM: Does the order of this step matter? I put it here -->
-
-Use the following procedure to set up your storage.
-
-1. Go to the [Templates for Dynamics 365 Supply Chain Management demand forecasting with Azure Machine Learning](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) repository on GitHub and download the following file:
-    - `sampleInput.csv`
-1. Open the storage account that you created in [Step 1: Create a new workspace](#create-workspace).
-1. Follow the instructions provided in [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container) to create a container named *demplan-azureml*.
-1. Upload the `sampleInput.csv` file that you downloaded in step 1. This file is needed to publish the pipeline and to generate a test forecast. <!-- KFM: where/how do we upload that file? Do you mean we should follow the instructions in https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob ?-->
-
-#### Step 5: Configure default datastore
-
-<!-- KFM: I *think* this step belongs here. Please confirm. -->
-
-Use the following procedure to set up your default datastore.
-
-1. In Azure Machine Learning Studio, select **Datastores** from the navigator.
-1. Create a new datastore of the *Azure Blob Storage* type that points to the *demplan-azureml* blob Storage container that you created in [Step 4: Configure storage](#config-storage"). <!-- KFM: Can we give a link for instructions on how to create a datastore? -->
-1. Its **Authentication type** could be set to *Account key*. If so, provide an account key for the created storage account. For instructions, see [Manage storage account access keys](/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
-1. Make your new datastore the default datastore by opening its details and selecting **Set as default datastore**. <!-- KFM: Can we give more explicit instructions? How do we open its details? When we finish the previous step, are we already on a page where I can open those details? -->
 
 ### <a name="aad-app"></a>Set up a new Active Directory application
 
@@ -268,22 +288,14 @@ An Active Directory application is needed authenticate to the resources dedicate
 1. Sign in to your Azure portal.
 1. Register a new application in the tenant's Azure Active Directory, as described in [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 1. Follow the instructions on your screen as you work through the wizard. Keep default settings.
-1. Give your new Active Directory application access to the following resources (which you created created in [Set up your machine learning workspace on Azure](#ml-workspace)). For instructions, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current). This will enable the system to import and export forecasting data as well as trigger machine learning pipeline runs from Supply Chain Management.
+1. Give your new Active Directory application access to the following resources (which you created created in [Set up machine learning on Azure](#ml-workspace)). For instructions, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current). This will enable the system to import and export forecasting data as well as trigger machine learning pipeline runs from Supply Chain Management.
     - Contributor role to the machine learning workspace.
     - Contributor role to the dedicated Storage account.
     - Storage Blob Data Contributor role to the dedicated Storage account
 1. Under the **Certificates & secrets** section of the created application, create a secret for it. For instructions, see [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
 1. Make a note of the application ID and its secret. You will need details of this application later when you set up the **Demand forecasting parameters** in Supply Chain Management.
 
-<!-- KFM: 
-
-@andreygarmash andreygarmash: We need to mention that there is a templates and samples GitHub repository that contains quick_setup.ps1 PowerShell script that automates a bigger part of an Azure subscription setup needed.
- 
-@kamaybac: Is this as an alternative to all of the steps described so far, or is it something we do afterwards? Should this be part of the "Set up a new Active Directory application" procedure, or its own section?
-
--->
-
-### Set up Azure Machine Learning Service connection parameters in Supply Chain Management
+### <a name="demand-forecast-parameters"></a>Set up Azure Machine Learning Service connection parameters in Supply Chain Management
 
 Use the following procedure to connect your Supply Chain Management environment to the machine learning service you just set up in Azure.
 
@@ -299,8 +311,8 @@ Use the following procedure to connect your Supply Chain Management environment 
     - **Tenant ID** – Enter the ID for your Azure tenant. Supply Chain Management will use this ID to authenticate with the Machine Learning Service. You can find your tenant ID in the Azure portal, on the Azure Active Directory **Overview** page.
     - **Service principal application ID** – Enter the application ID for the application you created in the [Active Directory Application](#aad-app) section of this topic. This value is used to authorize API requests to Azure Machine Learning Service.
     - **Service principal secret** – Enter the service principal application secret for the application you created in the [Active Directory Application](#aad-app) section of this topic. This value is used to to acquire the access token for the created security principal to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
-    - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard on your Azure workspace (see also [Set up your machine learning workspace on Azure](#ml-workspace)).
-    - **Pipeline endpoint address** – Enter the URL of the pipeline REST endpoint for your Azure Machine Learning Service. This is the pipeline you created as the last step when you [set up your machine learning workspace on Azure](#ml-workspace). To get the pipeline URL, sign in to your Azure portal, select **Pipelines** on the navigator and open the **Pipeline** tab. Select the pipeline endpoint named **TriggerDemandForecastGeneration** in the list; then copy the REST endpoint shown.
+    - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard on your Azure workspace (see also [Set up machine learning on Azure](#ml-workspace)).
+    - **Pipeline endpoint address** – Enter the URL of the pipeline REST endpoint for your Azure Machine Learning Service. This is the pipeline you created as the last step when you [Set up machine learning on Azure](#ml-workspace). To get the pipeline URL, sign in to your Azure portal, select **Pipelines** on the navigator and open the **Pipeline** tab. Select the pipeline endpoint named **TriggerDemandForecastGeneration** in the list; then copy the REST endpoint shown.
 
 ## <a name="privacy"></a>Privacy notice
 
