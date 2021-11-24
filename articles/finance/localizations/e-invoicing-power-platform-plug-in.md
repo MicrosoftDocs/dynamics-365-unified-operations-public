@@ -92,6 +92,9 @@ To assign a security role:
 
 To set up integration
 
+-   In Regulatory Configuration Services (RCS) go to Globalization features \> Environments \> Service environments \> Select the target service environment 
+    and specify the **Dataverse endpoint URI** field in the following format: https://{Dataverse organization URL}/api/data/v9.1/
+
 -   In Finance and Operations go to System Administration \> Setup \> Azure Active Directory applications
     to register Microsoft Dataverse.
 
