@@ -5,7 +5,7 @@ title: Generate QR codes and print them on receipts for Saudi Arabia
 description: This topic provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 11/15/2021
+ms.date: 11/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -84,10 +84,10 @@ For more information about how to work with receipt formats, see [Set up and des
 
 ### Specify QR code dimensions in Commerce parameters
 
-On the Commerce parameters page, on the Configuration parameters tab, add the following configuration parameters:
+On the **Configuration parameters** tab of the Commerce parameters page, add the following configuration parameters:
 
-- **QrCodeWidth** - the width of the QR code image, in pixels. Specify an appropriate value for the parameter.
-- **QrCodeHeight** - the height of the QR code image, in pixels. Specify an appropriate value for the parameter.
+- **QrCodeWidth** - The width of the QR code image, in pixels. Specify an appropriate value for the parameter.
+- **QrCodeHeight** - The height of the QR code image, in pixels. Specify an appropriate value for the parameter.
 
 > [!NOTE]
 > It is mandatory to specify the values of these configuration parameters to print QR codes in receipts. Support for default values of the parameters may be added in future updates.
