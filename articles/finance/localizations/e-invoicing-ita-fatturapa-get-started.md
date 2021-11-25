@@ -243,35 +243,37 @@ Several steps should be done on machine where proxy service supposed to be hoste
 
 7.  Open the menu and select Import (Upper right corner).
 8.  Specify path to **proxy server** certificate (should be the pfx file).
+
     ![Install the service certificate. Selection](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png)
 
-7.  Now do right select on **Sites** \> **Add website**.
-8.  Specify any reasonable **Site name**.
-9.  In **Physical path** point to folder with **FattureService** service (\\src\\FattureService).
-10. Select **https** as **Binding Type**.
-11. Specify Host name as **DNS** configured for the Virtual machine and for **proxy server certificate**.
-12. Leave **Ip Address** and **Port** as default.
-13. **Require Server Name Indication** should be **disabled** (because SDI does not support that technology).
-14. SSL certificate: **proxy server certificate** imported before.
-15. Application pool: keep specific pool for the site and save it\`s name (SdiAppPool)
+9.  Now do right select on **Sites** \> **Add website**.
+10.  Specify any reasonable **Site name**.
+11.  In **Physical path** point to folder with **FattureService** service (\\src\\FattureService).
+12. Select **https** as **Binding Type**.
+13. Specify Host name as **DNS** configured for the Virtual machine and for **proxy server certificate**.
+14. Leave **Ip Address** and **Port** as default.
+15. **Require Server Name Indication** should be **disabled** (because SDI does not support that technology).
+16. SSL certificate: **proxy server certificate** imported before.
+17. Application pool: keep specific pool for the site and save it\`s name (SdiAppPool)
     ![Configure IIS. Add Website](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-1.png)
 	
-16. After creating web site, open **SSL Settings** menu.
+18. After creating web site, open **SSL Settings** menu.
+
     ![Configure IIS. Open SSL Settings](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-2.png)
 
-17. Check **Require SSL** and select **Client certificats**: Require.
+19. Check **Require SSL** and select **Client certificats**: Require.
     ![Configure IIS. SSL Settings](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
-18. Open **Directory Browsing** and select **Enable**.
-19. Open Internet Explorer browser and check address **serverDNS/TrasmissioneFatture.svc**.
-20. Browser can show error that "Site is not secure" - select **More Information** and select **Go to the website.** (for test environment)
-21. A standard window about service must be shown up:
+20. Open **Directory Browsing** and select **Enable**.
+21. Open Internet Explorer browser and check address **serverDNS/TrasmissioneFatture.svc**.
+22. Browser can show error that "Site is not secure" - select **More Information** and select **Go to the website.** (for test environment)
+23. A standard window about service must be shown up:
     ![Open browser to check the service](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
-22. Create folders to store logs and files:
+24. Create folders to store logs and files:
     1.  C:\\logs\\ - here the log files would be placed. They can be viewed by [MS Service Trace Viewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe)
     2.  C:\\files\\ - here all the response files would be placed
-23.  Grant access to the folders for the **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** for default )
+25.  Grant access to the folders for the **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** for default )
     1.  Open context menu on the folder \> Properties \> Security \> Edit \> Add the users if they are not here 
         ![Add permissions to the service user](media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
 
