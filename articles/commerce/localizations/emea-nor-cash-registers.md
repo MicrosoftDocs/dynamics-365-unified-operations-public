@@ -4,7 +4,7 @@
 title: Cash register functionality for Norway
 description: This topic provides an overview of the cash register functionality that is available for Norway. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 09/28/2020
+ms.date: 11/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -200,81 +200,13 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
-### Set up fiscal registration
-
-Complete the fiscal registration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
-
-1. [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings of the fiscal registration process that are [specific to France](#configure-the-fiscal-registration-process).
-1. [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-#### Configure the fiscal registration process
-
-To enable the fiscal registration process for France in Commerce headquarters, follow these steps.
-
-1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
-
-    1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    2. Open the last available release branch (for example, **[release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34)**).
-    3. Open **src \> FiscalIntegration \> SequentialSignatureNorway \> CommerceRuntime**.
-    4. Download the fiscal connector configuration file at **Connector.SequentialSignatureNorwaySample \> Configuration \> ConnectorSequentialSignatureNorwaySample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/Connector.SequentialSignatureNorwaySample/Configuration/ConnectorSequentialSignatureNorwaySample.xml)).
-    5. Download the fiscal document provider configuration file at **DocumentProvider.SequentialSignatureSample \> Configuration \> DocumentProviderSequentialSignatureNorwaySample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/DocumentProvider.SequentialSignatureNorwaySample/Configuration/DocumentProviderSequentialSignatureNorwaySample.xml)).
-
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type to **Internal**. Update the other connection settings as required.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**, and create a new fiscal connector group for the connector functional profile that you created earlier.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. Open the distribution schedule, and select jobs **1070** and **1090** to transfer data to the channel database.
-
-### Configure the digital signature parameters
-
-You must configure certificates that will be used for digital signing of records on the Commerce channel side for sales transactions. The signing is done by using a digital certificate that is stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on.
-
-> [!NOTE]
-> You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing.
-
-The following steps must be completed before you can use a digital certificate that is stored in Key Vault storage:
-
-1. The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
-1. The certificate must be uploaded to the Key Vault storage as base64 string secret.
-1. The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
-
-For more information about how to work with Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).
-
-Next, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
-
-- **Name** and **Description** – The name and description of the Key Vault storage.
-- **Key Vault URL** – The URL of the Key Vault storage.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
-- **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
-
-Next, you must configure a connector for your certificates that are stored in Key Vault or local certificate storage. It is used for signing on the channel side.
-
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
-1. On the **Settings** FastTab, specify the following parameters for digital signatures:
-    - **Secret name** – Select the secret name that you configured earlier in **Key Vault parameters** page.
-    - **Local certificate thumbprint** – Provide a thumbprint for a certificate that is stored locally.
-    - **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
-    - **Certificate store name** – This field is optional. Use this field to specify a default store name that should be used to search local certificates.
-    - **Certificate store location** – This field is optional. Use this field to specify a default store location that should be used to search local certificates.
-    - **Try local certificate first** – If this option is selected, the certificate from local store will be used by default for signing data instead of the certificate from Key Vault.
-    - **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
-
-> [!NOTE]
-> The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders on its list.
-
 ### Configure the SAF-T Cash Register export format
 
 The SAF-T Cash Register configuration is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following configurations:
 
 - **Retail channel data.version.1** – The data model configuration.
-- **DMM Retail channel data.version.1.12** – The data model mapping configuration.
-- **NO SAF T Cash Register.version.1.15** – The format configuration.
+- **DMM Retail channel data.version.1.14** – The data model mapping configuration.
+- **NO SAF T Cash Register.version.1.20** – The format configuration.
 
 After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the name of the format configuration that was imported.
 
@@ -286,8 +218,6 @@ You must also map required master data to predefined SAF-T standard codes. For m
 
 ### Configure channel components
 
-To enable Norway-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).
-
-
+To enable the Norway-specific functionality, you must configure channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
