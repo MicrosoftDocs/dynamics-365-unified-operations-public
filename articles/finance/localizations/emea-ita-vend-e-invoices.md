@@ -51,7 +51,7 @@ Use the **Vendor invoice (IT)** electronic reporting configuration.
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-> Parent model configuration **Invoice model** and related model mapping configuration **Vendor invoice model mapping** will be imported or updated automatically.
+> Parent model configuration **Invoice model** and related model mapping configuration **Vendor invoice model mapping (IT)** will be imported or updated automatically.
 
 
 ## Vendor data configuration
