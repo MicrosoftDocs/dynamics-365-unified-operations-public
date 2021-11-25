@@ -80,9 +80,9 @@ To cancel a sale, follow these steps.
 > [!NOTE]
 > Cancelling of approved CF-e issued by other stores is not supported. Only the CF-e issued by the same store can be cancelled. 
 
-### Scenario 3: Make a cash-and-carry sale of goods in contingency mode
+### Scenario 3: Make a cash-and-carry sale of goods using SAT as contingency mode
 
-If the NFC-e is choosen as a main mode of a store establishment, POS must generate CF-e documents via SAT device when the store's internet connection isn't available, or when the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. This is considered as using SAT as contingency mode.
+If the NFC-e is choosen as a main mode of a store establishment in São Paulo state, POS must generate CF-e documents via SAT device when the store's internet connection isn't available, or when the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. This is considered as using SAT as contingency mode.
 
 1. Sign in to POS.
 1. Add products to the cart.
