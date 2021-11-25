@@ -85,7 +85,7 @@ This section complements the [Country-specific configuration of application set
 3.  Select **Repositories** \> **Global** \> **Open**.
 4.  Import Customer invoice context model, Vendor invoice import (IT).
 5.  Go to Organization administration \> Setup \> Electronic document parameters.
-6.  On the **Features ** tab, select the **Enable ** check box in the row for feature **Italian electronic invoice**.
+6.  On the **Features** tab, select the **Enable** check box in the row for feature **Italian electronic invoice**.
 7.  Go to **Electronic document** tab.
 8.  Make sure settings for **Customer invoice journal** and **Project invoice** are filled in according to this article: [Configure the application setup](e-invoicing-get-started.md#configure-the-application-setup).
 
