@@ -69,7 +69,7 @@ The NFC-e offline contingency mode must be used when a store's internet connecti
 1. Verify that the DANFE receipts contain the following text: "EMITIDA EM CONTINGÊNCIA Pendente de autorização" ("ISSUED IN CONTINGENCY Authorization Pending").
 
 > [!NOTE]
-> If the NFC-e is choosen as a main mode of a store establishment in São Paulo state, POS must generate CF-e documents via SAT device when the store's internet connection isn't available, or when the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. This is considered as using SAT as contingency mode. For more information, see the scenatio [Make a cash-and-carry sale of goods using SAT as contingency mode](latam-bra-cf-e-sat#scenario-3-make-a-cash-and-carry-sale-of-goods-using-SAT-as-contingency-mode).
+> If the NFC-e is choosen as a main mode of a store establishment in São Paulo state, POS must generate CF-e documents via SAT device when the store's internet connection isn't available, or when the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. This is considered as using SAT as contingency mode. For more information, see the scenatio [Make a cash-and-carry sale of goods using SAT as contingency mode](latam-bra-cf-e-sat.md#scenario-3-make-a-cash-and-carry-sale-of-goods-using-sat-as-contingency-mode).
 
 
 ### Scenario 4: Make a mixed sale that contains gift cards and other goods in the same transaction
