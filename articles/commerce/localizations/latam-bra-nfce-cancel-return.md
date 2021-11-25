@@ -78,7 +78,7 @@ To initiate a return of sold goods, follow these steps.
 
 ## Simplified DANFE for model 55 fiscal receipt
 
-In addition to the [Common list of custom fields for DANFE](latam-bra-nfce.md#custom-fields-for-danfe-fiscal-receipts), a simplified DANFE for model 55 fiscal receipt can include the following custom field.
+In addition to the [Common list of custom fields for DANFE](latam-bra-nfce.md#custom-fields-for-danfe-fiscal-receipts), a simplified DANFE for model 55 fiscal receipt can include the following custom fields.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 

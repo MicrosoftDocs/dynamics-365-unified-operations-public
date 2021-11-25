@@ -166,7 +166,8 @@ In the Receipt format designer, add the following custom fields to the appropria
 - **Header:** Add the following fields:
 
     - **Access key (Chave de acesso)** – The access key that consists of 11 blocks, each of which has four digits.
-    - **Authorization protocol (Protocolo de Autorização)** – The number that is obtained from SEFAZ when NFC-e or NF-e fiscal documents are issued.
+    - **Authorization protocol (Protocolo de Autorização)** – The number that is obtained from SEFAZ when the NFC-e or NF-e fiscal document is issued.
+    - **Date of Authorization protocol (Data de Autorização)** – The date and time when the NFC-e or NF-e fiscal document is registered in SEFAZ.
     - **Fiscal data of the issuer (Emitente)**:
 
         - **Name** – The corporate name of the fiscal establishment.
@@ -194,9 +195,9 @@ In the Receipt format designer, add the following custom fields to the appropria
 
     - **Item name** field
     - **Item quantity (Qtd.)** – The quantity of items.
-    - **Item total amount(Valor total)** – The amount per item.
+    - **Item total amount (Valor total)** – The amount per item.
     - **Total quantity (Qtd. total de itens)** – The total quantity of items on the receipt.
-    - **Total value (Valor total)** – The total amount of the receipt.
+    - **Total amount (Valor total)** – The total amount of the receipt.
 	- **Item discount** - The discout per item.
 	- **Subtotal discount** - The subtotal discount.
 	- **Total discount** - The total discount of the receipt.

@@ -31,11 +31,11 @@ ms.dyn365.ops.version: 10.0.20
 
 This topic gives an overview of CF-e (Cupom Fiscal eletrônico) fiscal document and registration of the electronic fiscal documents in the SAT (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal device functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil. It also explains how to issue CF-e documents and print CF-e-SAT (Cupom Fiscal Eletrônico - SAT) fiscal receipts when retail sales of goods are completed in Commerce POS for Brazil.
 
-A CF-e is an electronic fiscal document that is generated to register the sale of goods to a customer in São Paulo. It enables tax and fiscal control by tax authorities. It also lets customers verify the validity and authenticity of fiscal documents that they receive. Sales of services aren't supported.
+A CF-e is an electronic fiscal document that is generated to register the sale of goods to a customer in São Paulo state. It enables tax and fiscal control by tax authorities. It also lets customers verify the validity and authenticity of fiscal documents that they receive. Sales of services aren't supported.
 
 Commerce functionality for Brazil supports the CF-e model 59 format for Brazilian retailers. The CF-e model 59 format is a standard for retail electronic fiscal documents within the borders of São Paulo state along with the national standard - NFC-e model 65 format. For more information about the NCF-e format, see [NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md).
 
-Registration of electronic fiscal documents for retail sales in an integrated SAT device (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) is one of the fiscal registration methods available to retailers in the São Paulo state of Brazil. The feature includes the generation of CF-e electronic fiscal documents (Cupom Fiscal eletrônico, model 59) for sales transactions in retail point of sale (POS) and registration of the electronic fiscal documents in the SAT fiscal device.
+Registration of electronic fiscal documents for retail sales in an integrated SAT device (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) is one of the fiscal registration methods available to retailers in the São Paulo state of Brazil. The feature includes the generation of CF-e electronic fiscal documents (Cupom Fiscal eletrônico, model 59) for sales transactions in retail point of sale (POS) and registration of the electronic fiscal documents in the SAT fiscal device. For more information, see [About SAT](https://portal.fazenda.sp.gov.br/servicos/sat).
 
 ## Feature details
 This feature enables fiscal registration of retail sales in a SAT device connected to a hardware station. It takes advantage of the [fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md), meaning it supports all of the built-in fiscal integration capabilities. It is included in the out-of-the-box solution but must be configured to be used.
@@ -166,6 +166,8 @@ In the Receipt format designer, add the following custom fields to the appropria
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
 ## Additional resources
+
+[About SAT](https://portal.fazenda.sp.gov.br/servicos/sat)
 
 [Set up and deploy Commerce localization for Brazil](latam-bra-deployment.md)
 
