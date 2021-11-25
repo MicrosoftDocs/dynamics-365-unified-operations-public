@@ -69,7 +69,8 @@ This section complements the [Country-specific configuration of application set
 
 13. On the **Setups** tab, select **Edit** for the **Import invoices**.
 14. In the **Parameters** tab of the **Data channel** section fill in **Data channel** parameter with any reasonable string.
-15. Fill in **Applicability rules** for the setup. You can use the default **Channel** clause by passing here the value for **Data channel** parameter value.  
+15. Fill in **Applicability rules** for the setup. You can use the default **Channel** clause by passing here the value for **Data channel** parameter value.
+
     ![Setup applicability rules](media/e-invoicing-ita-fatturapa-get-started-apprules-setup.png)
 16. Select **Validate** button to ensure all required parameters are filled in.
 
@@ -140,14 +141,17 @@ Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePasswo
     2.  Create new registration with the following parameters:
         - **Name**: **SDI Proxy Client** (or any reasonable name)
         - **Account type: *Accounts in this organizational directory only (Single tenant)***
+		
     ![Create Azure App Registration](media/e-invoicing-ita-fatturapa-get-started-app-registration.png)
 
     3.  Select **Register**.
     4.  Select created app registration and go to **API permissions**:
     5.  Select ***Grant admin consent***.
+	
 	    ![Grant admin consent](media/e-invoicing-ita-fatturapa-get-started-app-registration-consent.png)
 	
     6.  Go to ***Certificates & secrets*** and upload the '.cer' certificate for service to service authentication created in one of the previous steps (sdiProxyClientS2SCert).
+	
         ![Upload certificate](media/e-invoicing-ita-fatturapa-get-started-app-upload-cert.png)
 
     7.  Go to ***Enterprise applications*** and select application created.
@@ -161,7 +165,8 @@ Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePasswo
 
 6.  Add the ***Object ID*** to the Applications list of your service environment in RCS. **Save** and **Publish** changes.
     1.  In Regulatory configuration service go to Globalization features \> Environments \> Electronic Invoicing \> Service environments
-    2.  Select your environment and add application to the list:  
+    2.  Select your environment and add application to the list:
+	
         ![Add the application to the service environment](media/e-invoicing-ita-fatturapa-get-started-add-app-to-env.png)
 
     3.  Save \> Publish
@@ -173,12 +178,15 @@ Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePasswo
 3.  Chose the same region where your F&O instance has been deployed (as well as Key Vault and Blob storage).
 4.  Insert administrators user name and password (and save them into the Key Vault).
 5.  Inbound ports: HTTPS(443), RPD (3389) (it\`s recommended to disable RDP (3389) when the system goes to production. You can enable it back when it is necessary to connect to the VM in case of troubleshooting).
+
     ![Create Azure Virtual Machine. Basics](media/e-invoicing-ita-fatturapa-get-started-create-vm-1.png)
 
 6.  Use managed disks, Do not use Ephemeral.
+
     ![Create Azure Virtual Machine. Disks](media/e-invoicing-ita-fatturapa-get-started-create-vm-2.png)
 
 7.  On the Networking tab select **Public IP** \> **Create new** \> Select **Standard** SKU, **Static** assignment.
+
     ![Create Azure Virtual Machine. Networking](media/e-invoicing-ita-fatturapa-get-started-create-vm-3.png)
 
     ![Create Azure Virtual Machine. Public IP](media/e-invoicing-ita-fatturapa-get-started-create-vm-4.png)
@@ -213,6 +221,7 @@ Several steps should be done on machine where proxy service supposed to be hoste
 2.  Open Local Machine Certificate snap-in following this [guide](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
 3.  Import certificates caentrate.cer file for production and CAEntratetest.cer for test (Root CA certificate provided by authority) to **Trusted Root Certification Authorities**.
 3.  Open **Turn on/off windows features** window (OR **Server Manager \> Add Roles And Features** for server OS) and turn on IIS features as on screenshot below:
+
     ![Turn on Windows Features](media/e-invoicing-ita-fatturapa-get-started-turnon-features.png)
 	
 ### Setup SDI Proxy service on IIS.
@@ -239,6 +248,7 @@ Several steps should be done on machine where proxy service supposed to be hoste
 
 5.  Open IIS Manager.
 6.  Stay on root node of left menu and, on right side, select **Server certificates**.
+
     ![Install the service certificate](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-1.png)
 
 7.  Open the menu and select Import (Upper right corner).
@@ -255,6 +265,7 @@ Several steps should be done on machine where proxy service supposed to be hoste
 15. **Require Server Name Indication** should be **disabled** (because SDI does not support that technology).
 16. SSL certificate: **proxy server certificate** imported before.
 17. Application pool: keep specific pool for the site and save it\`s name (SdiAppPool)
+
     ![Configure IIS. Add Website](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-1.png)
 	
 18. After creating web site, open **SSL Settings** menu.
@@ -262,19 +273,22 @@ Several steps should be done on machine where proxy service supposed to be hoste
     ![Configure IIS. Open SSL Settings](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-2.png)
 
 19. Check **Require SSL** and select **Client certificats**: Require.
+
     ![Configure IIS. SSL Settings](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
 20. Open **Directory Browsing** and select **Enable**.
 21. Open Internet Explorer browser and check address **serverDNS/TrasmissioneFatture.svc**.
 22. Browser can show error that "Site is not secure" - select **More Information** and select **Go to the website.** (for test environment)
 23. A standard window about service must be shown up:
+
     ![Open browser to check the service](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
 24. Create folders to store logs and files:
     1.  C:\\logs\\ - here the log files would be placed. They can be viewed by [MS Service Trace Viewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe)
     2.  C:\\files\\ - here all the response files would be placed
 25.  Grant access to the folders for the **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** for default )
-    1.  Open context menu on the folder \> Properties \> Security \> Edit \> Add the users if they are not here 
+    1.  Open context menu on the folder \> Properties \> Security \> Edit \> Add the users if they are not here
+	
         ![Add permissions to the service user](media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
 
 ## Privacy notice 
