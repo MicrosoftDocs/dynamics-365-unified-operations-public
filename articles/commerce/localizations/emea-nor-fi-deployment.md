@@ -31,16 +31,21 @@ ms.dyn365.ops.version: 10.0.1
 
 This topic provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md). For more information about how to configure Commerce for Norway, see [Set up Commerce for Norway](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
-> [!NOTE]
-> This version of the Commerce cash register functionality for Norway is based on the [fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for Norway, see [Deployment guidelines for cash registers for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md).
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this localization functionality. You must use the the legacy digital signing sample for Norway in the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for cash registers for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md) for more details.
+>
+> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
-## Set up fiscal registration
+## Set up fiscal registration for Norway
+
+The fiscal registration sample for Norway is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\SequentialSignatureNorway** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34/src/FiscalIntegration/SequentialSignatureNorway)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider and a fiscal connector, which are extensions of the Commerce runtime (CRT). For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 Complete the fiscal registration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
 
-1. [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings of the fiscal registration process that are [specific to France](#configure-the-fiscal-registration-process).
+1. [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings of the fiscal registration process that are [specific to Norway](#configure-the-fiscal-registration-process).
 1. [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Configure channel components](#configure-channel-components)
 
 ### Configure the fiscal registration process
 
@@ -49,16 +54,16 @@ To enable the fiscal registration process for France in Commerce headquarters, f
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    2. Open the last available release branch (for example, **[release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34)**).
-    3. Open **src \> FiscalIntegration \> SequentialSignatureNorway \> CommerceRuntime**.
-    4. Download the fiscal connector configuration file at **Connector.SequentialSignatureNorwaySample \> Configuration \> ConnectorSequentialSignatureNorwaySample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/Connector.SequentialSignatureNorwaySample/Configuration/ConnectorSequentialSignatureNorwaySample.xml)).
-    5. Download the fiscal document provider configuration file at **DocumentProvider.SequentialSignatureSample \> Configuration \> DocumentProviderSequentialSignatureNorwaySample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/DocumentProvider.SequentialSignatureNorwaySample/Configuration/DocumentProviderSequentialSignatureNorwaySample.xml)).
+    1. Open the last available release branch (for example, **[release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.34)**).
+    1. Open **src \> FiscalIntegration \> SequentialSignatureNorway \> CommerceRuntime**.
+    1. Download the fiscal document provider configuration file at **DocumentProvider.SequentialSignNorway \> Configuration \> DocumentProviderSequentialSignatureNorwaySample.xml** (for example, [the file for release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/DocumentProvider.SequentialSignNorway/Configuration/DocumentProviderSequentialSignatureNorwaySample.xml)).
+    1. Download the fiscal connector configuration file at **Connector.SequentialSignNorway \> Configuration \> ConnectorSequentialSignatureNorwaySample.xml** (for example, [the file for release/9.34](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.34/src/FiscalIntegration/SequentialSignatureNorway/CommerceRuntime/Connector.SequentialSignNorway/Configuration/ConnectorSequentialSignatureNorwaySample.xml)).
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type to **Internal**. Update the other connection settings as required.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type to **Internal**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**, and create a new fiscal connector group for the connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
@@ -67,9 +72,6 @@ To enable the fiscal registration process for France in Commerce headquarters, f
 ### Configure the digital signature parameters
 
 You must configure certificates that will be used for digital signing of records on the Commerce channel side for sales transactions. The signing is done by using a digital certificate that is stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on.
-
-> [!NOTE]
-> You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing.
 
 The following steps must be completed before you can use a digital certificate that is stored in Key Vault storage:
 
@@ -91,23 +93,19 @@ Next, you must configure a connector for your certificates that are stored in Ke
 
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
 1. On the **Settings** FastTab, specify the following parameters for digital signatures:
-    - **Secret name** – Select the secret name that you configured earlier in **Key Vault parameters** page.
+    - **Secret name** – Select the secret name that you configured earlier on the **Key Vault parameters** page.
     - **Local certificate thumbprint** – Provide a thumbprint for a certificate that is stored locally.
-    - **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
+    - **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
     - **Certificate store name** – This field is optional. Use this field to specify a default store name that should be used to search local certificates.
     - **Certificate store location** – This field is optional. Use this field to specify a default store location that should be used to search local certificates.
     - **Try local certificate first** – If this option is selected, the certificate from local store will be used by default for signing data instead of the certificate from Key Vault.
     - **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 > [!NOTE]
-> The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders on its list.
+> - Only the **SHA1** cryptographic hash algorithm is currently acceptable for Norway.
+> - The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in all the folders on its list.
 
-## Configure channel components
-
-> [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. See [Deployment guidelines for cash registers for Norway (legacy)](emea-nor-loc-deployment-guidelines.md) for more details.
->
-> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+### Configure channel components
 
 ### Development environment
 
