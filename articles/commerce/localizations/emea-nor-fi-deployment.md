@@ -49,7 +49,7 @@ Complete the fiscal registration setup steps that are described in [Set up the f
 
 ### Configure the fiscal registration process
 
-To enable the fiscal registration process for France in Commerce headquarters, follow these steps.
+To enable the fiscal registration process for Norway in Commerce headquarters, follow these steps.
 
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 
@@ -71,7 +71,7 @@ To enable the fiscal registration process for France in Commerce headquarters, f
 
 ### Configure the digital signature parameters
 
-You must configure certificates that will be used for digital signing of records on the Commerce channel side for sales transactions. The signing is done by using a digital certificate that is stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on.
+You must configure certificates that will be used for digital signing of sales transactions in a store. The signing is done by using a digital certificate that is stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on.
 
 The following steps must be completed before you can use a digital certificate that is stored in Key Vault storage:
 
@@ -131,10 +131,7 @@ Follow these steps to set up a development environment so that you can test and 
 
 Follow the steps described in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The template YAML file **SequentialSignatureNorway build-pipeline.yaml** can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
 
-> [!WARNING]
-> After you complete the preceding steps, your previous customizations of the digital signing functionality will stop working.
-
-## Enable the digital signature in offline mode for Modern POS
+### Enable the digital signature in offline mode for Modern POS
 
 To enable the digital signature in offline mode for Modern POS, you must follow these steps after you activate Modern POS on a new device.
 
