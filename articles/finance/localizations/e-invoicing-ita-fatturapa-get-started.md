@@ -20,8 +20,8 @@ ms.dyn365.ops.version: AX 10.0.20
 [!include [banner](../includes/banner.md)]
 
 
-> [!IMPORTANT]
-> Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
+    > [!IMPORTANT]
+    > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
 
 This topic provides information that will help you to get started with Electronic invoicing for Italy in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
@@ -82,10 +82,10 @@ This section complements the [Country-specific configuration of application set
 
 1.  Sign in to Dynamics 365 Finance.
 2.  In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
-3.  Select **Repositories** \> Global \> Open.
+3.  Select **Repositories** \> **Global** \> **Open**.
 4.  Import Customer invoice context model, Vendor invoice import (IT).
 5.  Go to Organization administration \> Setup \> Electronic document parameters.
-6.  On the **Features **tab, select the **Enable **check box in the row for feature **Italian electronic invoice**.
+6.  On the **Features ** tab, select the **Enable ** check box in the row for feature **Italian electronic invoice**.
 7.  Go to **Electronic document** tab.
 8.  Make sure settings for **Customer invoice journal** and **Project invoice** are filled in according to this article: [Configure the application setup](e-invoicing-get-started.md#configure-the-application-setup).
 
@@ -117,7 +117,7 @@ This section complements the [Country-specific configuration of application set
     (can be done by PowerShell script)
 	
 ```powershell
-$certOutputLocation = "C:\\certs\\proxytest"
+$certOutputLocation = "C:\certs\proxytest"
 $certName = "sdiProxyClientS2SCert"
 $certPassword = "123"
 
@@ -126,10 +126,10 @@ $certPfxFile = Join-Path $certOutputLocation "$certName.pfx"
 
 $securePassword = ConvertTo-SecureString $certPassword -AsPlainText -Force
 
-$cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\\CurrentUser\\My -Subject $certName -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"
+$cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"
 
-Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT \| Out-Null
-Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword \| Out-Null
+Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT | Out-Null
+Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
 ```
 
 2.  Save the pfx certificate into the Key Vault with reasonable name (sdiProxyClientS2SCert).
@@ -275,7 +275,7 @@ Several steps should be done on machine where proxy service supposed to be hoste
     1.  Open context menu on the folder \> Properties \> Security \> Edit \> Add the users if they are not here 
         ![Add permissions to the service user](media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
 
-##Privacy notice 
+## Privacy notice 
 
 Enabling the **Italian electronic invoice** feature may require sending limited data, which includes the organization tax registration ID. An administrator can enable and disable the Italian electronic invoice feature by navigating to Organization administration \> Setup \> Electronic document parameters. Select the Features tab, select the rows containing the **Italian electronic invoice** feature, and then make the appropriate selection. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
 
