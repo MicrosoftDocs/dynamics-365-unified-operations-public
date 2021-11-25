@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [preview feature](./includes/preview-feature.md)]
-
 In some organizations, people managers might not manage the leave for their team. Instead, an absence manager might handle this process for team members across multiple departments and teams. Absence managers have the following capabilities for leave management:
 
 - Review and approve time off, based on an alternate hierarchy.
@@ -43,7 +41,7 @@ In some organizations, people managers might not manage the leave for their team
 
 1. In the **System administration** workspace, select **Feature management**.
 
-2. On the **Feature management** tab, enable the **(Preview) Absence manager to manage leave** feature.
+2. On the **Feature management** tab, enable the **Absence manager to manage leave** feature.
 
 ## Define a custom hierarchy
 

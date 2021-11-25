@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
@@ -55,6 +55,7 @@ When the columns in Sales are filled in, the following limitations apply:
 + The setup of charges and charge allocations in Supply Chain Management isn't replicated in Sales.
 + Pricing doesn't consider special retail pricing that is specified in the **Retail Channel** column on the sales order line page in Supply Chain Management.
 + Discounts that are defined in the **Trade Allowance Management** section of Supply Chain Management aren't considered.
++ Pricing doesn't consider sales agreements.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

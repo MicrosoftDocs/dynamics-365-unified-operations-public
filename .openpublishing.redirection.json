@@ -1,6 +1,46 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md",
+      "redirect_url": "/dynamics365/finance/general-ledger/general-journal-processing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/asset-leasing/post-transition-adjust-journal.md",
+      "redirect_url": "adjust-lease",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-ita-black-list-report.md",
+      "redirect_url": "italy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/hardware-station-extensibility.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/hardware-device-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/hardware-device-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/cost-accounting-service-home.md",
+      "redirect_url": "/dynamics365/supply-chain/global-inventory-accounting/global-inventory-accounting-home ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/cost-accounting-service-get-started.md",
+      "redirect_url": "/dynamics365/supply-chain/global-inventory-accounting/get-started-with-gia ",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/cost-management/troubleshoot-costmanagement.md",
       "redirect_url": "/dynamics365/supply-chain/troubleshooting/costing/aging-report-discrepancies",
       "redirect_document_id": "false"
@@ -67,7 +107,7 @@
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-app-connection.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/certification-path-app-connection-error",
       "redirect_document_id": "false"
     },
     {

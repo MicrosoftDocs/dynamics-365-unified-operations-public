@@ -3,7 +3,7 @@
 
 title: Manual depreciation
 description: This article gives an overview of the manual depreciation method.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,11 +35,11 @@ This article gives an overview of the manual depreciation method.
 
 When you set up a fixed asset depreciation profile and select **Manual** in the **Method** field on the **Depreciation profiles** page, the depreciation of fixed assets that are assigned to the depreciation profile is determined by the percentage that you enter for each interval in the calendar year. The intervals that you set up percentages for are posted according to the value that you select in the **Period frequency** field on the **General** FastTab of the **Depreciation profiles** page. Here are the values that you can select:
 
--   Yearly
--   Monthly
--   Quarterly
--   Half-Yearly
--   Daily
+- Yearly
+- Monthly
+- Quarterly
+- Half-Yearly
+- Daily
 
 After you select the period frequency, click **Manual schedules**, and set up percentages for each posting interval. Together, the manual schedules and the posting intervals define the depreciation amount, as shown in the examples later in this article. Manual depreciation is always calculated as a percentage of the acquisition price. For manual depreciation, the percentages that you enter in the intervals of the depreciation don't have to add up to 100 percent. Manual depreciation is a flexible depreciation method that is often used to define an extraordinary depreciation profile on the **Books** page, such as a non-periodic depreciation for special purposes (for example, tax).
 

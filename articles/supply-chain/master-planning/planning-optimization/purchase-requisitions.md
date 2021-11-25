@@ -28,6 +28,8 @@ ms.dyn365.ops.version: 10.0.16
 ---
 # Purchase requisitions
 
+[!include [banner](../../includes/banner.md)]
+
 Master planning can replenish approved purchase requisitions. Therefore, to cover purchase requisitions, users don't have to use a workflow to create purchase orders. Instead, purchase requisitions can be covered by master planning. Because of this functionality, a purchase requisition can produce a purchase order, a transfer order, or a production order, depending on the **Planned order type** value that is set for the related product.
 
 ## Enable master plans to include requisitions

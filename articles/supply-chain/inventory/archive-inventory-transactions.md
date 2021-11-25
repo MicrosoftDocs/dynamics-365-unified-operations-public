@@ -3,7 +3,7 @@
 
 title: Archive inventory transactions
 description: This topic describes how to archive inventory transaction data to help improve system performance.
-author: sherry-zheng
+author: yufeihuang
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 # Archive inventory transactions
 

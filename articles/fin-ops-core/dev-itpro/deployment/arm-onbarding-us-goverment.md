@@ -50,7 +50,7 @@ Complete the following procedures to authorize the LCS deployment service to wor
 
 #### Authorize the workflow
 
-Be sure that you have Azure Active Directory (Azure AD) PowerShell cmdlets installed. For more information, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+Be sure that you have Azure Active Directory (Azure AD) PowerShell cmdlets installed. For more information, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
 The following two app IDs must be authorized on the Azure AD tenant:
 

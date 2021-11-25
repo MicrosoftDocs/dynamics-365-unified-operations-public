@@ -4,7 +4,7 @@
 title: Set up and deploy the Dynamics 365 Commerce localization for Brazil
 description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 author: akviklis
-ms.date: 06/10/2021
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -64,14 +64,14 @@ To set up electronic reporting in Commerce headquarters, follow these steps.
 1. In the **Connect to Regulatory Configuration Service** dialog box, select **Click here to connect to Regulatory Configuration Service**, return to the dialog box, and then select **OK**.
 1. Import the latest shared versions of the following data model, data model mapping, and format configurations:
 
-    - (Preview) Fiscal documents mapping
-    - (Preview) NF-e cancel export format (BR)
-    - (Preview) NF-e status request export format (BR)
-    - (Preview) NF-e submit export format (BR)
-    - (Preview) NFC-e submit export format (BR)
-    - (Preview) NFC-e contingency export format (BR)
-    - (Preview) NFC-e fiscal documents mapping
-    - (Preview) NFC-e fiscal documents validation format (BR)
+    - Fiscal documents mapping
+    - NF-e cancel export format (BR)
+    - NF-e status request export format (BR)
+    - NF-e submit export format (BR)
+    - NFC-e submit export format (BR)
+    - NFC-e contingency export format (BR)
+    - NFC-e fiscal documents mapping
+    - NFC-e fiscal documents validation format (BR)
 
 1. Go to **Organization administration \> Workspaces \> Electronic reporting**, and select **Reporting configurations**.
 1. Select **Fiscal documents mapping**, and then set the **Default model mapping** option to **No**.
@@ -194,22 +194,24 @@ In the receipt format designer, add Brazilian custom fields to the appropriate r
 
 To set up the fiscal registration process in Commerce headquarters, follow these steps. For more information, see [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md).
 
+1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
+    1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+    1. Open the last available release branch (for example, [release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31)).
+    1. Open **src \> FiscalIntegration \> ElectronicFiscalDocumentsBrazil**.
+    1. Download the fiscal connector configuration files at **Configurations \> Connectors** (for example, [the files for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/Connectors)):
+        - SubmitConnector.xml
+        - SatConnector.xml
+        - ContingencyConnector.xml
+    1. Download the fiscal document provider configuration files at **Configurations \> DocumentProviders** (for example, [the files for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)):
+        - SubmitProvider.xml
+        - SatProvider.xml
+        - ContingencyProvider.xml
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**.
-1. Load the connector configuration from the [Commerce Fiscal Integration repository (repo)](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations). The following files are located under [**Configurations\\Connectors**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FConnectors):
-
-    - SubmitConnector.xml
-    - ContingencyConnector.xml
-
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**.
-1. Load the document provider configurations from the [Commerce Fiscal Integration repo](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations). The following configuration files are located under [**Configurations\\DocumentProviders**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FDocumentProviders):
-
-    - SubmitProvider.xml
-    - ContingencyProvider.xml
-
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration files that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**.
-1. For each document provider that you just loaded the configuration for, create connector functional profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
+1. For each document provider that you just loaded the configuration for, create connector functional profiles and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
 1. Create connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**.
@@ -334,7 +336,7 @@ To configure CRT extension components, follow these steps.
 
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
 
-6. Register the local CRT on Modern POS change in the extension configuration file.
+6. Register the Local CRT on Modern POS change in the extension configuration file.
 
  ```xml
  <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
@@ -346,6 +348,20 @@ To configure CRT extension components, follow these steps.
 
 > [!WARNING]
 > Don't edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
+
+7. Find the extension configuration file for Retail proxy on Modern POS:
+
+    - **Retail proxy on Modern POS:** The file is named **RetailProxy.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
+
+8. Register the Retail proxy on Modern POS change in the extension configuration file.
+
+ ```xml
+		<retailProxyExtensions>
+		  <composition>
+		    <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.ElectronicFiscalDocumentBrazil" />
+		  </composition>
+		</retailProxyExtensions>
+ ```
  
 ### Enable Modern POS extension components
 

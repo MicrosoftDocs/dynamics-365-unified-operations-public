@@ -3,7 +3,7 @@
  
 title: Configure a worker using the mobile job device
 description: This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
-author: ShylaThompson
+author: johanhoffmann
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Configure a worker using the mobile job device
 

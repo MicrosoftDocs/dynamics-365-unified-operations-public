@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Horizontal Fields and Buttons Group subpattern
 description: This article provides information about the Horizontal Fields and Buttons Group subpattern, which is used when actions must be defined for an individual field.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 12464
-ms.assetid: 56b16f26-d4d3-4052-9ebc-0878b09cc00d
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Horizontal Fields and Buttons Group subpattern
@@ -85,7 +70,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **SalesTable (GroupHeaderAddressHeaderOverview)** 
 
-[![Example of form.](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
+[![Example of SalesTable form.](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
 
 ## Resources
 ### Typically used by patterns

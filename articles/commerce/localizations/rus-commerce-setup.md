@@ -4,7 +4,7 @@
 title: Set up the Dynamics 365 Commerce localization for Russia
 description: This topic explains how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
 author: akviklis
-ms.date: 08/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -66,6 +66,9 @@ To enable Modern POS extension components, follow these steps.
         "extensionPackages": [
             {
                 "baseUrl": "Microsoft/Addresses.RU"
+            },
+            {
+                "baseUrl": "Microsoft/FiscalCustomer.RU"
             }
         ]
     }
@@ -86,6 +89,9 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
     "extensionPackages": [
         {
             "baseUrl": "Microsoft/Addresses.RU"
+        },
+        {
+            "baseUrl": "Microsoft/FiscalCustomer.RU"
         }
     ]
 }

@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.22
 # Country/region picker module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the country/region picker module and describes how to configure it in Microsoft Dynamics 365 Commerce.
 

@@ -4,7 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 08/27/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -702,7 +702,7 @@ Category does not exist.
 
 ## Management Reporter
 
-Additional logging can be done by registering providers. Download [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
+Additional logging can be done by registering providers. To do this, download the **LBDMRDeployerTroubleshooter** asset from the LCS Shared Asset Library. You can find the asset in the model asset type. Copy the zip file to the **primary** orchestrator machine, extract it, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
 
 > [!NOTE]
 > If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:
@@ -1593,7 +1593,10 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 
 **Reason:** The AOS needs to retrieve the list of services running on the BI node to find the version of SSRS that is currently installed. The account that the AOS runs under does not have the appropriate permissions to get the list of services, so it fails and is unable to retrieve the serviceName.
 
-**Resolution:** Version 2.11.0 of the infrastructure scripts, available from the Shared asset library in LCS, has been released to propagate these permissions so the serviceName can be retrieved.
+**Resolution:** Version 2.11.1 of the infrastructure scripts, available from the Shared asset library in LCS, has been released to propagate these permissions so the serviceName can be retrieved.
+
+> [!NOTE]
+> If you used 2.11.0 of the infrastructure scripts, download the newest version and go through the following steps again.
 
 #### Automatically add these permissions:
 1. Download the latest infrastructure scripts from the Shared asset library in LCS.

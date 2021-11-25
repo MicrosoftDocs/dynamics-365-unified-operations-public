@@ -5,7 +5,7 @@ author: nhelgren
 ms.date: 08/31/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2021-08-31
@@ -21,6 +21,9 @@ ms.dyn365.ops.version: AX 7.0.0
 For more consistent availability and performance, limits apply when dual-write is used to write data to Finance and Operations apps and Microsoft Dataverse. These limits control dual-write transactions and are applied at the platform level. They are designed to ensure seamless writes and to help minimize failures.
 
 Finance and Operations apps and Dataverse have many processes that span large numbers of records and complex, multi-table transactions. Each environment has limits on the number of transactions, the number of records per transaction, and transaction time (that is, the time that is required to process the transaction). It's important that you understand these limits and their effect on the live synchronization capabilities of dual-write.
+
+## Legal Entities
+Live synchronization supports up to 250 legal entities per transaction. This is different from initial synchronization which supports only 40 due to larger data volumes and related operations.
 
 ## Transaction patterns
 

@@ -3,8 +3,8 @@
 
 title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -70,9 +70,9 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 1. Set rounding options for the leave type. Options include **None**, **Up**, **Down**, and **Nearest**. You can also set rounding precision for the leave type.
 
-2. Set **Holiday correction** for the leave type. When you select this option, Human Resources uses the number of holidays that fall on a work day to determine how to accrue time off for the leave type. For example, if Christmas Day falls on a Monday, Human Resources will subtract one day from the leave type when processing accruals.
+2. Set **Holiday correction** for the leave type. When you select this option, the number of holidays that fall on a work day will be used to determine how to accrue time off for the leave type. For example, if Christmas Day falls on a Monday, Human Resources will subtract one day from the leave type when processing accruals.
 
-   You set holidays in the working time calendar. For more information, see [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
+   You set holidays in the working time calendar. For more information, see [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md).
    
  3. Set **Carry-forward leave type** for the leave type. When you select this option, any carry-forward balances will be transferred to the specified leave type. The carry-forward leave type also needs to be included in the leave and absence plan. 
  
@@ -81,7 +81,7 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 ## Configure the required attachment per leave type
 
 > [!NOTE]
-> To use the **Attachment required** field, you must first turn on the **(Preview) Configure required attachment for leave requests** feature in Feature management. For more information about how to turn on preview features, see [Manage features](hr-admin-manage-features.md).
+> To use the **Attachment required** field, you must first turn on the **Configure required attachment for leave requests** feature in Feature management. For more information about how to turn on features, see [Manage features](hr-admin-manage-features.md).
 
 1. On the **Leave and absence** page, on the **Links** tab, under **Setup**, select **Leave and absence types**.
 
@@ -92,7 +92,7 @@ Employees will be required to upload an attachment when they submit a new leave 
 ## Configure leave units (hours/days) per leave type
 
 > [!NOTE]
-> To use the leave units per leave type functionality, you must first turn on the **(Preview) Configure leave units per leave type** feature in Feature management. For more information about how to turn on preview features, see [Manage features](hr-admin-manage-features.md).
+> To use the leave units per leave type functionality, you must first turn on the **Configure leave units per leave type** feature in Feature management. For more information about how to turn on features, see [Manage features](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > By default, the leave types in a legal entity use the leave units from the configuration of leave parameters at the legal entity level.

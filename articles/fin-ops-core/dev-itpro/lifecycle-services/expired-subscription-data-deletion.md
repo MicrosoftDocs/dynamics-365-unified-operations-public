@@ -65,6 +65,6 @@ Follow these steps to free up the resources, and to remove application permissio
 
 ## Related topics
 
-[Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview?view=o365-worldwide)
+[Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)
 
 [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../../fin-ops/get-started/subscription-overview.md)

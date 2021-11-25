@@ -3,7 +3,7 @@
 
 title: Hazardous materials overview
 description: This topic provides an overview of features that are related to handling and documenting hazardous materials during product information management and warehouse management.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Hazardous materials overview

@@ -2,10 +2,10 @@
 title: Code signing a Modern POS (MSIX) extension package
 description: This topic explains how to code sign a Modern POS (MSIX) extension package.
 author: mugunthanm
-ms.date: 04/13/2021
+ms.date: 10/21/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
@@ -35,10 +35,10 @@ For information about how to code sign Universal Windows app packages, see the f
 + [Configure the Build solution build task](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-the-build-solution-build-task)
 + [Create a certificate for package signing](/windows/msix/package/create-certificate-package-signing)
 
-The sample in GitHub generates a self-signed test certificate during build. This certificate is for development purposes only. It's available only to unblock development scenarios.
+The sample in GitHub generates a self-signed test certificate during build. This certificate is for development purposes only. Do not use this development certificate for production app extension packages, it's available only to unblock development scenarios.
 
 > [!WARNING]
-> Don't use this development certificate for production app extension packages.
+> The sample script included in GitHub to generate the test certificate will work only with a domain account. If you are not using a domain account, the build will fail. If you are running a non-domain account, generate or include your own certificate in the "PackageCertificateKeyFile" section.
 
 The test certificate that is generated will be available in the project's intermediate output directory.
 

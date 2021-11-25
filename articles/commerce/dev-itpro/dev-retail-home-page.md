@@ -5,10 +5,10 @@ author: RobinARH
 ms.date: 08/26/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
@@ -30,6 +30,10 @@ This page lists the resources that are available for IT pros and developers who 
 - [Headless commerce engine architecture](retail-server-architecture.md)
 - [Publish an online store channel](retail-online-store-publishing-architecture.md)
 - [Retail channel performance PowerBI.com solution](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+
+## Development
+
+- [Set up a local development environment](setup-local-dev-env.md)
 
 ## Deployment
 
@@ -105,7 +109,6 @@ This page lists the resources that are available for IT pros and developers who 
 ## Hardware station
 
 - [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
-- [Hardware Station extensibility](hardware-station-extensibility.md)
 - [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Commerce Runtime
@@ -120,10 +123,10 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Retail SDK
 
+- [Migrate to the Commerce SDK](retail-sdk/migrate-commerce-sdk.md)
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
-- [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Download samples and packages from GitHub and NuGet](retail-sdk/sdk-github.md)
@@ -159,6 +162,5 @@ This page lists the resources that are available for IT pros and developers who 
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
 - [Create Commerce payment packaging for Finance and Operations deployment](payment-connector-package.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

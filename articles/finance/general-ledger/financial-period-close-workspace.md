@@ -3,7 +3,7 @@
 
 title: Financial period close workspace
 description: This article provides an overview of the Financial period close workspace and the associated configuration.
-author: ShylaThompson
+author: kweekley
 ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the Financial period close workspace and the associated configuration.
+This topic provides an overview of the **Financial period close** workspace and the associated configuration.
 
 Financial period close workspace
 

@@ -4,7 +4,7 @@
 title: Configure registration numbers in Egypt
 description: This topic explains how to configure and use registration numbers in Egypt. 
 author: ilkond
-ms.date: 02/01/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: 
 ms.search.region: Egypt
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: ilyako
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
 
@@ -80,8 +80,8 @@ After you configure the registration numbers, you can use them for legal entitie
 4. In the **Registration type** column, select a registration type.
 5. In the **Registration number** column, enter a valid legal entity registration number.
 
-> [!NOTE]
-> Repeat steps 1 -5 if you need to enter more than one registration number for the legal entity.
+  > [!NOTE]
+  > Repeat steps 1 -5 if you need to enter more than one registration number for the legal entity.
 
 ### Enter a customer registration number
 

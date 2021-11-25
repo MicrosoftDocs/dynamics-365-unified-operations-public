@@ -3,7 +3,7 @@
 
 title: Tax engine integration
 description: This topic provides information about Tax engine integration.
-author: yijialuan
+author: kailiang
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -395,8 +395,8 @@ The following table lists the taxable document fields that are mapped in Finance
 | Customer Type                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | Yes                          | None |
 | Provisional Assessment         | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
 | Foreign party                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
-| Nature of Assesse              | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | Company |
-| Preferrential Party            | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
+| Nature of Assessment              | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | Company |
+| Preferential Party            | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
 | GTA-Commercial vendor          | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
 | Ledger Currency                | TaxableDocumentRowDataProviderHeader.fillInFields                           | Yes                          | |
 | Total Discount Percentage      | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | |

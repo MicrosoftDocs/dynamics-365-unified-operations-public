@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Form patterns for migrated forms
 description: This topic provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 28681
-ms.assetid: 09a51876-8c9d-41ed-ab81-b780894a4281
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Form patterns for migrated forms
@@ -126,17 +111,17 @@ For each form pattern class, information is provided about each variant. This in
 
 Form: CustTable 
 
-![Details Master form.](./media/image001.jpg)
+![Details view of CustTable.](./media/image001.jpg)
 
-![Details Master form.](./media/image002.jpg)
+![Grid view of CustTable.](./media/image002.jpg)
 
 [Details Master w/ Standard Tabs](details-master-form-pattern.md) Use this Details Master variant when your form has a large number of FastTabs (>15) that can be grouped into categories.
 
 Form: HcmWorker 
 
-[![Details Master w/ Standard Tabs form.](./media/image003.jpg)](./media/image003.jpg)
+[![Details view of HcmWorker.](./media/image003.jpg)](./media/image003.jpg)
 
-[![Details Master w/ Standard Tabs form.](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)
+[![Table view of HcmWorker.](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)
 
 
 
@@ -146,9 +131,9 @@ Form: HcmWorker
 
 Form: SalesTable 
 
-[![Details Transaction form.](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)
+[![Details view of Details Transaction.](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)
 
-[![Details Transaction form.](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)
+[![Grid view of Details Transaction.](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)
 
 
 

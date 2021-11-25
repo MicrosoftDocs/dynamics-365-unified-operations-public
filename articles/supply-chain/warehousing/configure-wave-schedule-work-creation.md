@@ -16,13 +16,13 @@ ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: 
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
 
@@ -40,7 +40,7 @@ When the functionality is enabled, planned work will automatically get created, 
 
 To use the features described in this topic, they must be turned on for your system. Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the following features in the following order:
 
-1. **Organization-wide work blocking** - Required for both manual and automatic configuration of scheduled work creation.
+1. **Organization-wide work blocking** - Required for both manual and automatic configuration of scheduled work creation. (As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again.)
 1. **Schedule work creation** - Required for both manual and automatic configuration of scheduled work creation.
 1. **Organization-wide "Schedule work creation" wave method** - Required for automatic configuration of scheduled work creation. You don't need this feature if you will only use manual configuration.
 

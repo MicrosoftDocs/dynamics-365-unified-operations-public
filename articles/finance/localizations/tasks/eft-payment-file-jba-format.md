@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Generate EFT payment file with JBA format
-description: In Japan, the Japanese Bankers Association (JBA) file format is commonly used for Electronic Fund Transfer (EFT) among banks. 
+description: This topic explains how to generate an EFT file with the JBA format. 
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process 

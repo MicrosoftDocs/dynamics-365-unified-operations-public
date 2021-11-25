@@ -34,7 +34,7 @@ Most planned order features are available in all standard installations of Micro
 
 Parallelized firming helps speed up the firming process by parallelizing it across multiple threads. This approach can be useful when many planned orders are firmed.
 
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Parallel firming of planned orders* feature.
+To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Parallel firming of planned orders* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 ### Enable planned order firming with filtering
 
@@ -46,7 +46,7 @@ To make this functionality available in your system, go to [Feature management](
 
 Automatic firming lets you firm planned orders as part of the master planning process during the time fence for firming. Auto-firming is always supported for the planning engine that is built into Supply Chain Management. However, to use it with Planning Optimization too, you must turn on the feature.
 
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Auto-firming for Planning Optimization* feature.
+To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Auto-firming for Planning Optimization* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 ## Manually firm planned orders
 

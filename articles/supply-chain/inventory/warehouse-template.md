@@ -3,7 +3,7 @@
 
 title: Set up a warehouse by using a warehouse configuration template
 description: This topic explains how to set up a warehouse by using a warehouse configuration template.
-author: perlynne
+author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod:
@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 

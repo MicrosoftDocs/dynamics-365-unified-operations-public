@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 04/07/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-04-07
@@ -31,9 +31,8 @@ In this scenario, dual-write is enabled between Finance and Operations and Datav
 3. Delete the data from the key tables.
 
     - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
+    - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
-    - **Dual Write Runtime Configurations**
 
 4. You may want to relink Finance and Operations UAT environment against Dataverse UAT environment. 
 5. Enable the maps.
@@ -43,12 +42,7 @@ If the backup and restore processes are running on Dataverse, then follow these 
 1. Sign in to Finance and Operations UAT environment.
 2. Stop all table maps.
 3. Unlink the dual-write connection as the Dataverse UAT environment will be pointing towards Finance and Operations production environment.
-4. Delete the data from the key tables on Dataverse.
-
-    - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
-    - **BusinessEventsDefinition**
-
+4. Delete the data from the **Dual Write Runtime Configurations** table on Dataverse.
 5. You may want to relink Finance and Operations UAT environment against Dataverse UAT environment.
 6. Enable the maps.
 
@@ -63,7 +57,7 @@ If you want to reset your existing sandbox Dataverse instance that is linked for
 6. Delete the data from the key tables in the Finance and Operations app.
 
     - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
+    - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
 
 7. Set up dual-write on the environment that you want to reset. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).

@@ -145,7 +145,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 <tbody>
 <tr>
 <td colspan="3" width="100%">
-<p style="text-align: center;"><strong>Section II. Outputs</strong></p>
+<p><strong>Section II. Outputs</strong></p>
 </td>
 </tr>
 <tr>
@@ -263,7 +263,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 </tr>
 <tr>
 <td colspan="3" width="100%">
-<p style="text-align: center;"><strong>Section III. Inputs</strong></p>
+<p><strong>Section III. Inputs</strong></p>
 </td>
 </tr>
 <tr>
@@ -422,7 +422,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 </tr>
 <tr>
 <td colspan="3" width="100%">
-<p style="text-align: center;"><strong>Section IV. Taxes payable</strong></p>
+<p><strong>Section IV. Taxes payable</strong></p>
 </td>
 </tr>
 <tr>
@@ -493,7 +493,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 </tr>
 <tr>
 <td colspan="3" width="100%">
-<p style="text-align: center;"><strong>Section V. Taxes deductible</strong></p>
+<p><strong>Section V. Taxes deductible</strong></p>
 </td>
 </tr>
 <tr>
@@ -531,7 +531,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 </tr>
 <tr>
 <td colspan="3" width="100%">
-<p style="text-align: center;"><strong>Section VI. Balance</strong></p>
+<p><strong>Section VI. Balance</strong></p>
 </td>
 </tr>
 <tr>
@@ -558,7 +558,7 @@ If users are allowed to manually correct a reporting code, select the **Tax corr
 </tr>
 <tr>
 <td colspan="3" width="100%">
-<p style="text-align: center;"><strong>Section VII. Deposit</strong></p>
+<p><strong>Section VII. Deposit</strong></p>
 </td>
 </tr>
 <tr>
