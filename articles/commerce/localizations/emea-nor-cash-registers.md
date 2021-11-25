@@ -218,6 +218,6 @@ You must also map required master data to predefined SAF-T standard codes. For m
 
 ### Configure channel components
 
-To enable the Norway-specific functionality, you must configure channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).
+To enable the Norway-specific functionality, you must configure channel components. For more information, see the [deployment guidelines](emea-nor-fi-deployment.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
