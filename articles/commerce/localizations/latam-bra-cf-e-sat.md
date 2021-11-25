@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 10.0.20
 
 ---
 
-# CF-e fiscal document functionality in Commerce POS for Brazil
+# CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil
 
 [!include[banner](../includes/banner.md)]
 
