@@ -84,7 +84,7 @@ To set up electronic reporting in Commerce headquarters, follow these steps.
 To set up a fiscal establishment and NF-e (Nota Fiscal Eletrônica) federal parameters in Commerce headquarters, follow these steps.
 
 1. Go to **Organization administration \> Organizations \> Fiscal establishments \> Fiscal establishment**.
-1. In the **Tax registration numbers - CNPJ, IE & CCM** field, enter the tax registration numbers.
+1. In the **Tax registration numbers - CNPJ**(Cadastro Nacional da Pessoa Jurídica), **IE** (Inscrição Estadual) & **CCM** (Cadastro de Contribuinte Mobiliário) field, enter the tax registration numbers.
 1. In the **Address of the establishment** field, enter an address.
 1. Set up CSC (Código de Segurança do Contribuinte) encryption by entering the CSC token and CSC alphanumeric code.
 1. Select the appropriate digital certificate for authentication with the tax authority service and digital signing of fiscal documents.
@@ -229,7 +229,7 @@ To set up the fiscal registration process in Commerce headquarters, follow these
 
 ## Customer information management
 
-The **Add customer information** operation can be used to add Brazil-specific customer tax registration numbers, such as CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas) numbers, and addresses to sales transactions. Customer information can be pulled from the customer record that is specified for the transaction, or it can be manually entered. The customer information can then be printed on DANFE fiscal receipts and used for invoicing purposes.
+The **Add customer information** operation can be used to add Brazil-specific customer tax registration numbers CNPJ or CPF (Cadastro de Pessoas Físicas), and addresses to sales transactions. Customer information can be pulled from the customer record that is specified for the transaction, or it can be manually entered. The customer information can then be printed on DANFE fiscal receipts and used for invoicing purposes.
 
 To configure the **Add customer information** operation in Commerce headquarters, follow these steps.
 
@@ -241,7 +241,7 @@ For more information about how to work with screen layouts and button grids, see
 
 ## Enable searching customers by tax registration numbers in POS
 
-To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Commerce parameters** page, add a record on the **Customer search criteria** fast-tab and select **Tax registration number** in the **Customer search criteria** drop-down list. Select the **Display as shortcut** checkbox while keeping the **Can be refined** checkbox clear. Run the 1110 job on the **Distribution schedules** page.
+To enable searching customers by tax registration numbers CNPJ / CPF and CCM in POS, on the **POS search criteria** tab of the **Commerce parameters** page, add a record on the **Customer search criteria** fast-tab and select **Tax registration number** in the **Customer search criteria** drop-down list. Select the **Display as shortcut** checkbox while keeping the **Can be refined** checkbox clear. Run the 1110 job on the **Distribution schedules** page.
 
 ## Set up parameters for statements
 
