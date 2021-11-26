@@ -218,7 +218,7 @@ Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePasswo
 
 Several steps should be done on machine where proxy service supposed to be hosted:
 1.  Connect to the Virtual machine via Remote Desktop Connection.
-2.  Open Local Machine Certificate snap-in following this [guide](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
+2.  Open Local Machine Certificate snap-in following this [guide](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
 3.  Import certificates caentrate.cer file for production and CAEntratetest.cer for test (Root CA certificate provided by authority) to **Trusted Root Certification Authorities**.
 3.  Open **Turn on/off windows features** window (OR **Server Manager \> Add Roles And Features** for server OS) and turn on IIS features as on screenshot below:
 
@@ -226,7 +226,7 @@ Several steps should be done on machine where proxy service supposed to be hoste
 	
 ### Setup SDI Proxy service on IIS.
 
-1.  Take folder with SdiProxy solution: Go to **Shared asset library** as described in article: [Asset library in Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/asset-library).
+1.  Take folder with SdiProxy solution: Go to **Shared asset library** as described in article: [Asset library in Lifecycle Services (LCS)](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/asset-library).
 2.  Select asset type: Data package
 3.  Find and download **Electronic Invoicing Service Sdi Proxy** to the Virtual machine.
 4.  Configure service:
@@ -244,7 +244,7 @@ Several steps should be done on machine where proxy service supposed to be hoste
     2.  In web.config:
         1.  Change the following line by adding **proxy server certificate** thumbprint:
             \<serviceCertificate findValue="Put your cert thumbprint here" storeLocation="LocalMachine" storeName="My" x509FindType="FindByThumbprint" \>.
-        2.  When the system goes to production the following values could be changed to reduce amount of logs collected and to save a disc space: in \<system.diagnostics\>\<source\> nodes find 'switchValue' parameters and change it values to "Critical, Error". More information could be found here: [MS Service Trace Viewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
+        2.  When the system goes to production the following values could be changed to reduce amount of logs collected and to save a disc space: in \<system.diagnostics\>\<source\> nodes find 'switchValue' parameters and change it values to "Critical, Error". More information could be found here: [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
 
 5.  Open IIS Manager.
 6.  Stay on root node of left menu and, on right side, select **Server certificates**.
@@ -284,7 +284,7 @@ Several steps should be done on machine where proxy service supposed to be hoste
     ![Open browser to check the service](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
 24. Create folders to store logs and files:
-    1.  C:\\logs\\ - here the log files would be placed. They can be viewed by [MS Service Trace Viewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe)
+    1.  C:\\logs\\ - here the log files would be placed. They can be viewed by [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe)
     2.  C:\\files\\ - here all the response files would be placed
 25.  Grant access to the folders for the **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** for default )
     1.  Open context menu on the folder \> Properties \> Security \> Edit \> Add the users if they are not here
