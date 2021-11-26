@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to manage **customer information** in Commerce point of sale (POS) for Brazil. This information includes **CNPJ** (Cadastro Nacional da Pessoa Jurídica) / **CPF** (Cadastro de Pessoas Físicas), **CCM** (Cadastro de Contribuinte Mobiliário), and **IE** (Inscrição Estadual) numbers. 
-You can specify these customer **tax registration numbers**, name, and address information when creating or editing a named customer master record and a customer address record in POS. You can also manually enter the minimum reqired information including CNPJ for a sales transaction. Customer information can then be used for searching customers in POS, added to the cart, printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts, and used for invoicing purposes.
+You can specify these customer **tax registration numbers**, name, and address information when creating or editing a named customer master record and a customer address record in POS. You can also manually enter the minimum reqired information including CNPJ for a sales transaction. The customer tax registration numbers can then be used for searching customers in POS, added to the cart, printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts, and used for invoicing purposes.
 
 > [!NOTE]
 > It isn't possible to specify registration numbers for named customers in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode may be added in future updates.
