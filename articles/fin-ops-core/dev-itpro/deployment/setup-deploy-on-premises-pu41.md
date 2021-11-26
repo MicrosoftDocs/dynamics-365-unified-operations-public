@@ -375,7 +375,7 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. Select **Model** as the asset type, and then, in the grid, select the row for **Dynamics 365 for Operations on-premises - Deployment scripts**.
+3. Select **Model** as the asset type, and then, in the grid, select the row for **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts**.
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
 5. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
 6. Copy the zip file to the machine that will be used to run the scripts.
@@ -824,12 +824,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     | Release | Database |
     |---------|----------|
-    | On-premises Platform update 45 | Dynamics 365 for Operations on-premises, Version 10.0.21 Demo Data |
-    | On-premises Platform update 45 | Dynamics 365 for Operations on-premises, Version 10.0.21 Empty Data |
-    | On-premises Platform update 44 | Dynamics 365 for Operations on-premises, Version 10.0.20 Demo Data |
-    | On-premises Platform update 44 | Dynamics 365 for Operations on-premises, Version 10.0.20 Empty Data |
-    | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Demo Data |
-    | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Empty Data |
+    | Version 10.0.21 (with Platform update 45) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.21 Demo Data |
+    | Version 10.0.21 (with Platform update 45) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.21 Empty Data |
+    | Version 10.0.20 (with Platform update 44) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.20 Demo Data |
+    | Version 10.0.20 (with Platform update 44) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.20 Empty Data |
+    | Version 10.0.17 (with Platform update 41) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.17 Demo Data |
+    | Version 10.0.17 (with Platform update 41) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.17 Empty Data |
 
 1. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
 1. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
