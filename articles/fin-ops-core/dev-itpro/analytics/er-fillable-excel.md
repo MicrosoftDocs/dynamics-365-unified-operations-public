@@ -336,6 +336,40 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 
     ![Reviewing the footer of a generated document in Excel format.](./media/er-fillable-excel-footer-4.gif)
 
+## <a name="example-2"></a>Example 2: Resolving merged cells EPPlus issue
+
+You can run an ER format to generate an outbound document in an Excel workbook format. When the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled in the **Feature management** workspace, the [EPPlus library](https://www.nuget.org/packages/epplus/4.5.2.1) is used to make an Excel output. You might face the ***Can't delete/overwrite merged cells. A range is partly merged with the another merged range.*** exception due to the known [Excel behavior](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) and the EPPlus library limitation. To learn what kind of Excel templates might cause such exception and how this issue can be resolved, complete the steps of this example.
+
+1.  In the Excel desktop application, create a new Excel workbook adding in it the **ReportTitle** name for the **A2** cell of the **Sheet1** worksheet.
+2.  Merge **A1** and **A2** cells of the **Sheet1** worksheet.
+
+    ![Review the designed Excel workbook in the Excel desktop application.](./media/er-fillable-excel-example2-1.png)
+
+3.  On the **Configurations** page, [add a new ER format](er-fillable-excel.md#add-a-new-er-format) to generate an outbound document in an Excel workbook format.
+4.  On the **Format designer** page, [import](er-fillable-excel.md#template-import) to the added ER format the designed Excel workbook as a new template of outbound documents.
+5.  Select the **Mapping** tab and configure the binding for the **ReportTitle** component of the [Cell](er-fillable-excel.md#cell-component) type.
+6.  Run the configured ER format.
+
+    ![Review the configured ER format on the Format designer page.](./media/er-fillable-excel-example2-2.png)
+    > [!NOTE]
+    > Note that the ***Can't delete/overwrite merged cells. A range is partly merged with the another merged range.*** exception is thrown.
+
+You can use one of the following ways to resolve this issue.
+
+1.  In the **Feature management** workspace, disable the **Enable usage of EPPlus library in Electronic reporting framework** feature. This is the simplest solution of this problem but it is not recommended as you might experience other issues as some ER functionality is only supported when this feature is enabled.
+
+2.  In the Excel desktop application, modify the created Excel workbook in one of the following ways:
+    - either unmerge **A1** and **A2** cells in the **Sheet1** worksheet
+    - or change the reference of the **ReportTitle** name from `=Sheet1!$A$2` to `=Sheet1!$A$1`
+
+    ![Review the designed Excel workbook in the Excel desktop application.](./media/er-fillable-excel-example2-3.png)
+
+3.  On the **Format designer** page, [import](er-fillable-excel.md#template-import) the modified Excel workbook to the editable ER format updating the existing template.
+
+4.  Run the modified ER format.
+
+    ![Review the generated document in the Excel desktop application.](./media/er-fillable-excel-example2-4.png)
+
 ## Additional resources
 
 [Electronic Reporting overview](general-electronic-reporting.md)
