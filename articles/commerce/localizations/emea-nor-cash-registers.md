@@ -176,6 +176,9 @@ On the **Custom fields** page, add the following records for the custom fields f
 | AmountPerTaxExt                 | Receipt | 900016          |
 | CashTransactionSequentialNumber | Receipt | 900017          |
 
+> [!NOTE]
+> It is important to specify correct custom field names, as listed in the above table. An incorrect custom field name will result in missing data in receipts.
+
 ### Configure receipt formats
 
 For all required receipt formats, change the value of the **Print behavior** field to **Always print** for the receipt format.
