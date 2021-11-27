@@ -62,3 +62,6 @@ Follow these steps to authorize your Finance environment in ID-porten and Altinn
 
 > [!IMPORTANT]
 > The authorization of your Finance environment in your integration point in ID-porten is valid for one calendar year. This period is defined by the **Authorization levetid (sekunder)** field of your [integration point](emea-nor-vat-return-integration-point.md). You must reauthorize your Finance environment before the authorization expires.
+
+> [!IMPORTANT]
+> The authorization of your Finance environment in your integration point in ID-porten is *user-specific*. Because of this Finance also stores information about which user obtained the authorization code in ID-porten. Submission of VAT return from Finance will be allowed for only this user. In case another user must submit VAT return, this user must go through authorization process preliminary to VAT return submission.
