@@ -30,48 +30,48 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-After your company [registered integration point](emea-nor-vat-return-integration-point.md) in ID-porten web portal, complete the following tasks. 
-These tasks will prepare your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services to submit VAT returns.
+After your company has [registered an integration point](emea-nor-vat-return-integration-point.md) in the ID-porten web portal, complete the following tasks. 
+These tasks will prepare your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services to submit value-added tax (VAT) returns.
 
 - [Import and set up Electronic reporting (ER) configurations](#er-setup)
 - [Set up application-specific parameters for the VAT Declaration format](#application-specific-parameters)
 - [Import a package of data entities that includes a predefined Electronic messaging (EM) setup](#em-setup)
-- [Set up the VAT registration number of the company that is reporting VAT return](#vat-registration-number)
-- [Set up paper format to preview VAT return](#preview-format)
+- [Set up the VAT registration number of the company that is reporting a VAT return](#vat-registration-number)
+- [Set up a paper format to preview VAT returns](#preview-format)
 - [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group)
 - [Define a sales tax settlement period](#settlement-period)
 - [Set up number sequences for Electronic messages functionality](#number-sequences)
 - [Set up document management parameters](#document-management-parameters)
-- [Set up validation results transformation schema](#transformation-schema)
+- [Set up a validation results transformation schema](#transformation-schema)
 - [Set up security roles for electronic message processing](#em-security-roles)
-- [Set up security roles to interoperate with ID-porten and Altinn web services](#web-security-roles)
-- [Set up client ID and client secret of your ID-porten integration point in Finance](#client-credentials)
+- [Set up security roles for interoperation with ID-porten and Altinn web services](#web-security-roles)
+- [Set up the client ID and client secret of your ID-porten integration point in Finance](#client-credentials)
 - [Set up the internet address of ID-porten and Altinn web services](#internet-address)
 
-ID-porten and Altinn web services require that you use TLS 1.2. For more information about how to enable TLS 1.2, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
+ID-porten and Altinn web services require that you use Transport Layer Security (TLS) 1.2. For more information about how to enable TLS 1.2, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
-## <a id="er-setup"></a>Import and set up Electronic reporting (ER) configurations
+## <a id="er-setup"></a>Import and set up ER configurations
 
-To prepare Finance to generate VAT return formats that are valid for periods starting from January 1, 2022 in Norway and interoperate with ID-porten and Altinn web services, import the following ER configurations.
+Import the following ER configurations to prepare Finance to generate VAT return formats that are valid for periods that start on January 1, 2022, in Norway, and to prepare it to interoperate with ID-porten and Altinn web services.
 
 | Number | ER configuration name | Type | Description |
-|--------|-----------------------|------|-------------|
-| **1**	|**Tax declaration model**	|**Model**	|**A generic model for different tax declarations.**|
-|2	|Tax declaration model mapping	|Model mapping	|A generic model mapping for VAT declarations.|
-|3	|VAT Declaration XML (NO)	|Format (exporting)	|A VAT return in XML format for submission to Altinn.|
-|4	|VAT Declaration Excel (NO)	|Format (exporting)	|A VAT return in Excel format for preview.|
-|5	|Altinn VAT interoperation (NO)	|Format (exporting)	|A format that is used to create a URL path for ID-porten and Altinn web services endpoints.|
-|**6**	|**Electronic Messages framework model**	|**Model**	|**The model for the Electronic messages framework.**|
-|7	|Altinn VAT model mapping	|Model mapping (exporting, importing)	|A model mapping that supports interoperation with ID-porten and Altinn web services for Norway.|
-|8	|Altinn VAT authorization format (NO)	|Format (exporting)	|The request parameters for the authorization code, access token, and building URLs, where the request will be sent.|
-|9	|Altinn VAT import Altinn token format (NO)	|Format (importing)	|The ER format that's used to import the access token that is received from Altinn web service into the database.|
-|10	|Altinn VAT import feedback status format (NO)	|Format (importing)	|The ER format that's used to import the feedback status received from Altinn web service into the database.|
-|11	|Altinn VAT import ID-Porten token format (NO)	|Format (importing)	|The ER format that's used to import the access token that is received from ID-porten web service into the database.|
-|12	|Altinn VAT import instance format (NO)	|Format (importing)	|The ER format that's used to import the parameters of the instance received from Altinn web service into the database.|
-|13	|Altinn VAT import validation result format (NO)	|Format (importing)	|The ER format that's used to import the results of the VAT return validation received from Altinn web service into the database.|
-|14	|Altinn VAT web request headers format (NO)	|Format (exporting)	|A format that's used to create headers for the Hypertext Transfer Protocol over Secure Sockets Layer (HTTPS) request.|
+|---|---|---|---|
+| **1** |**Tax declaration model** | **Model** | **A generic model for different tax declarations.** |
+| 2 | Tax declaration model mapping | Model mapping | A generic model mapping for VAT declarations. |
+| 3 | VAT Declaration XML (NO) | Format (exporting) | A VAT return in XML format for submission to Altinn. |
+| 4 | VAT Declaration Excel (NO) | Format (exporting) | A VAT return in Microsoft Excel format for preview. |
+| 5 | Altinn VAT interoperation (NO) | Format (exporting) | A format that is used to create a URL path for ID-porten and Altinn web service endpoints. |
+| **6** | **Electronic Messages framework model** | **Model** |**The model for the Electronic messages framework.** |
+| 7 | Altinn VAT model mapping | Model mapping (exporting, importing) | A model mapping that supports interoperation with ID-porten and Altinn web services for Norway. |
+| 8 | Altinn VAT authorization format (NO) | Format (exporting) | The request parameters for the authorization code, access token, and building URLs where the request will be sent. |
+| 9 | Altinn VAT import Altinn token format (NO) | Format (importing) | The ER format that is used to import the access token that is received from the Altinn web service into the database. |
+| 10 | Altinn VAT import feedback status format (NO) | Format (importing) | The ER format that is used to import the feedback status that is received from the Altinn web service into the database. |
+| 11 | Altinn VAT import ID-Porten token format (NO) | ormat (importing) | The ER format that is used to import the access token that is received from the ID-porten web service into the database. |
+| 12 | Altinn VAT import instance format (NO) | Format (importing) | The ER format that is used to import the parameters of the instance that is received from the Altinn web service into the database. |
+| 13 | Altinn VAT import validation result format (NO) | Format (importing) | The ER format that is used to import the results of the VAT return validation that is received from the Altinn web service into the database. |
+| 14 | Altinn VAT web request headers format (NO) | Format (exporting) | A format that is used to create headers for the Hypertext Transfer Protocol over Secure Sockets Layer (HTTPS) request. |
 
-Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the number of the KB in the [LCS Issue search portal](https://lcs.dynamics.com/v2)  to learn more about the changes introduced. If the latest configuration version contains references to the objects that aren't available in your Finance version, the import process will be locked for that configuration version. In this case, import the latest version of the configuration that is available for your Finance version.
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the number of the KB article in the [Issue search portal in Microsoft Dynamics Lifecycle Service (LCS)](https://lcs.dynamics.com/v2) to learn more about the changes that are introduced. If the latest configuration version contains references to objects that aren't available in your Finance version, the import process will be locked for that configuration version. In this case, import the latest version of the configuration that is available for your Finance version.
 
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the following configurations:
@@ -83,18 +83,20 @@ For more information about how to download ER configurations from the Microsoft 
 
 ## <a id="application-specific-parameters"></a>Set up application-specific parameters for the VAT Declaration format
 
-The format that's used to report VAT return to the Tax Administration of Norway requires specific values from enumerated lists for some elements. For example, standard tax codes. For these elements, before you start to use the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats, set up the application-specific parameters for these formats. Application-specific parameters help to associate master data from your Finance environment with the enumerated lists of elements of the report required by the Tax Administration of Norway.
+The format that is used to report VAT returns to the Norwegian Tax Administration requires specific values from enumerated lists for some elements (for example, standard tax codes). To ensure that the required values are provided for these elements, you must set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats before you start to use them. Application-specific parameters help associate master data from your Finance environment with the enumerated lists of elements that the Norwegian Tax Administration requires for the report.
 
 > [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+> We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
-Application-specific parameters of the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats include the following lookup fields for setup.
+Application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats include the following lookup fields for setup.
 
-|Lookup field name	| Description	| Impact |
-|-------------------|-------------|--------|
-|[NoteForTaxCode_Lookup](#note-for-tax-code)	| The code list to show the connection between structured notes and VAT codes in the VAT notification.	|.During the runtime of the report, this lookup field is used to find value from the enumerated list of values required by the Tax Administration based on master data from Finance and report it in the <merknad/utvalgtMerknad> tag under the <mvaSpesifikasjonslinje> node.|
-|[VATSpecification_Lookup](#vat-specification)	| The code list for further specification of VAT.	| During the runtime of the report, this lookup field is used to find value from the enumerated list of values required by the Tax Administration based on master data from Finance and report it in the <spesifikasjon> tag under the <mvaSpesifikasjonslinje> node.|
-|[StandardTaxCodes_Lookup](#standard-tax-code)	| The VAT code provided by the Tax Administration.	| During the runtime of the report, this lookup field is used to find the standard tax code for the sales tax code used in sales tax posting in Finance and report it in the <mvaKode> tag of the report.|
+| Lookup field name | Description | Impact |
+|---|---|---|
+| [NoteForTaxCode_Lookup](#note-for-tax-code) | The code list that is used to show the connection between structured notes and VAT codes in the VAT notification. | During the runtime of the report, this lookup field is used to find the value from the enumerated list of values that the Norwegian Tax Administration requires, based on master data from Finance, and to report it in the `<merknad/utvalgtMerknad>` tag under the `<mvaSpesifikasjonslinje>` node. |
+| [VATSpecification_Lookup](#vat-specification) | The code list for further specification of VAT. | During the runtime of the report, this lookup field is used to find value from the enumerated list of values that the Norwegian Tax Administration requires, based on master data from Finance, and to report it in the `<spesifikasjon>` tag under the `<mvaSpesifikasjonslinje>` node. |
+| [StandardTaxCodes_Lookup](#standard-tax-code) | The VAT code that is provided by the Norwegian Tax Administration. | During the runtime of the report, this lookup field is used to find the standard tax code for the sales tax code that is used in sales tax posting in Finance, and to report it in the `<mvaKode>` tag of the report. |
+
+Follow these steps to set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats.
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
 2. On the **Configurations** page, expand **Tax declaration model**, and select **VAT Declaration XML (NO)**.
@@ -103,357 +105,363 @@ Application-specific parameters of the **VAT Declaration XML (NO)** and **VAT De
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result.
 
-   If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the value specified in the related **Result** column will be reported for the related document. For more information about the setup of each lookup field, continue with this topic.
+    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the value that is specified in the related **Result** column will be reported for the related document. More information about the setup of each lookup field is provided later in this topic.
 
-  7. When you finish setting up conditions, in the **State** field, select **Completed**, and then save the configuration.
+7. When you've finished setting up conditions, in the **State** field, select **Completed**. Then save the configuration.
 
-     You can easily export the setup of application-specific parameters from one version of a report and import it into another version. You can also export the setup from VAT **Declaration XML (NO)** and import it into **VAT Declaration Excel (NO)**, provided that both reports have the same structure of lookup fields.
+    You can easily export the setup of application-specific parameters from one version of a report and import it into another version. You can also export the setup from **VAT Declaration XML (NO)** and import it into **VAT Declaration Excel (NO)**, provided that both reports have the same structure of lookup fields.
 
 ### <a id="note-for-tax-code"></a>Note for tax code (NoteForTaxCode_Lookup)
-  
-The `<merknad>` tag is an optional tag under the `<mvaSpesifikasjonslinje>` node. However in some scenarios, reporting of this tag can be required by the Tax Administration. To report this tag from your Finance environment, enable the feature, [Enable extended support of Financial reason code](emea-financial-reason.md) in the **Feature management** workspace. 
-  
-1.	Go to **Workspaces** > **Feature management**.
-2.	On the **All** tab, find and select the feature, **Enable extended support of Financial reason code**i in the list.
-3.	Select **Enable now**.
 
-    ![Enable extended support of Financial reason code.](media/emea-nor-vat-return-fin-reason.png)
+The `<merknad>` tag is an optional tag under the `<mvaSpesifikasjonslinje>` node. However, in some scenarios, the Norwegian Tax Administration might require reporting of this tag. To report this tag from your Finance environment, enable the [Enable extended support of Financial reason code](emea-financial-reason.md) feature in the **Feature management** workspace. 
 
-When the feature is enabled in your Finance environment, tax transactions posted in the system will include a financial reason code and a comment from the original documents. This allows you to report the `<merknad>` tag under the `<mvaSpesifikasjonslinje>` node in your VAT return. Use **NoteForTaxCode_Lookup** to associate master data from your Finance environment with the enumerated list of values required by the Tax Administration. For this lookup field, the following master data sources are available for setup:
-  
--	**Tax code**: Sales tax code
--	**Tax classifier**: An enumerated list of values representing different combinations of tax transaction directions and credit note criteria in Finance. For more information about how tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
--	**Financial reason**: Reason, composed of financial reason code and comment.
-  
-Define conditions from the current company's master data sources to determine which value from enumerated list of values required by the Tax Admiration of Norway must be reported for the corresponding combination of master data from your Finance environment.
-  
+1. Go to **Workspaces** \> **Feature management**.
+2. On the **All** tab, find and select the **Enable extended support of Financial reason code** feature in the list.
+3. Select **Enable now**.
+
+![Enabling the Enable extended support of Financial reason code feature in the Feature management workspace.](media/emea-nor-vat-return-fin-reason.png)
+
+When the feature is enabled in your Finance environment, tax transactions that are posted in the system will include a financial reason code and a comment from the original documents. You can then report the `<merknad>` tag under the `<mvaSpesifikasjonslinje>` node in your VAT return. Use **NoteForTaxCode_Lookup** to associate master data from your Finance environment with the enumerated list of values that the Norwegian Tax Administration requires. For this lookup field, the following master data sources are available for setup:
+
+- **Tax code** – The sales tax code.
+- **Tax classifier** – An enumerated list of values that represent different combinations of tax transaction directions and credit note criteria in Finance. For more information about how the tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
+- **Financial reason** – The reason. It consists of a financial reason code and a comment.
+
+Define conditions from the current company's master data sources to determine which value from the enumerated list of values that the Norwegian Tax Administration requires must be reported for the corresponding combination of master data from your Finance environment.
+
 The following table shows the lookup results for **NoteForTaxCode_Lookup**.
 
-| Lookup result (Norwegian)	|Lookup result (English)|
-|---------------------------|-----------------------|
-|periodisering	|accrual |
-|feil mva-kode brukt tidligere	|incorrect VAT code used previously |
-|feil i regnskapsprogram	|errors in accounting software |
-|omsetning før registrering	|turnover before registration|
-|omberegning/retur	|recalculation / return| 
-|midlertidig innførsel	|temporary importation |
-|gjeninnførsel	|re-importation |
-|tolldeklarasjon på feil organisasjonsnummer	|customs declaration on incorrect organization number |
-|gjenutførsel	|re-export|
-|gjenutførsel  eller retur	|re-export or return |
-|midlertidig utførsel	|temporary export |
-|tjenesteeksport	|service exports |
-|store anskaffelser|	large procurements |
-|anskaffelser foretatt før mva-plikt	|procurements made before VAT liability |
-|forsikringsoppgjør|insurance settlement |
-|sesongvariasjon	|seasonal variation |
-|kreditnota	|credit note |
-|Annet	|Other|
-  
-> [!IMPORTANT]
-> It's important that you add **Annet** (Other), which must collect data from other cases as the last item in the list. The **Line value** must be the last value in your table. In the all the other columns, select **\*Not blank\***.
-  
-If there is a user-specified financial reason or a comment for a document that isn't associated with any value from the previous table, the system will not be able to report this reason as one of the values from enumerated list required by the Tax Administration. In this cas,e the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node with the content specified in the related fields of the original document.
+| Lookup result (Norwegian) | Lookup result (English) |
+|---|---|
+| periodisering | Accrual |
+| feil mva-kode brukt tidligere | Incorrect VAT code previously used |
+| feil i regnskapsprogram | Errors in the accounting software |
+| omsetning før registrering | Turnover before registration |
+| omberegning/retur | Recalculation/return | 
+| midlertidig innførsel | Temporary importation |
+| gjeninnførsel | Re-importation |
+| tolldeklarasjon på feil organisasjonsnummer | Customs declaration on an incorrect organization number |
+| gjenutførsel | Re-export |
+| gjenutførsel eller retur | Re-export or return |
+| midlertidig utførsel | Temporary export |
+| tjenesteeksport | Service exports |
+| store anskaffelser| Large procurements |
+| anskaffelser foretatt før mva-plikt | Procurements made before VAT liability |
+| forsikringsoppgjør| Insurance settlement |
+| sesongvariasjon | Seasonal variation |
+| kreditnota | Credit note |
+| Annet | Other |
 
-#### <a id="tax-transaction-classifier"></a>Detailed description of tax transaction classifier
-  
+> [!IMPORTANT]
+> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***.
+
+If there is a user-specified financial reason or a comment for a document that isn't associated with any value from the previous table, the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node, and the content will be specified in the related fields of the original document.
+
+#### <a id="tax-transaction-classifier"></a>Detailed description of the tax transaction classifier
+
 The tax transaction classifier is associated with the direction of the tax transaction and the credit note identifier. The following table provides a definition of this classifier.
 
-| Classifier value                | Condition |
-|---------------------------------|-----------|
-| PurchaseCreditNote              | <ul><li>Credit note</li><li>Tax direction = Sales tax receivable</li></ul> |
-| Purchase                        | <ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li></ul> |
-| SalesCreditNote                 | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li></ul> |
-| Sales                           | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li></ul> |
-| PurchaseExemptCreditNote        | <ul><li>Credit note</li><li>Tax direction = Tax-free purchase</li></ul> |
-| PurchaseExempt                  | <ul><li>Not credit note</li><li>Tax direction = Tax-free purchase</li></ul> |
-| SalesExemptCreditNote           | <ul><li>Credit note</li><li>Tax direction = Tax-free sales</li></ul> |
-| SaleExempt                      | <ul><li>Not credit note</li><li>Tax direction = Tax-free sales</li></ul> |
-| UseTaxCreditNote                | <ul><li>Credit note</li><li>Tax direction = Use tax</li></ul> |
-| UseTax                          | <ul><li>Not credit note</li><li>Tax direction = Use tax</li></ul> |
+| Classifier value | Condition |
+|---|---|
+| PurchaseCreditNote | <ul><li>Credit note</li><li>Tax direction = Sales tax receivable</li></ul> |
+| Purchase | <ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li></ul> |
+| SalesCreditNote | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li></ul> |
+| Sales | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li></ul> |
+| PurchaseExemptCreditNote | <ul><li>Credit note</li><li>Tax direction = Tax-free purchase</li></ul> |
+| PurchaseExempt | <ul><li>Not credit note</li><li>Tax direction = Tax-free purchase</li></ul> |
+| SalesExemptCreditNote | <ul><li>Credit note</li><li>Tax direction = Tax-free sales</li></ul> |
+| SaleExempt | <ul><li>Not credit note</li><li>Tax direction = Tax-free sales</li></ul> |
+| UseTaxCreditNote | <ul><li>Credit note</li><li>Tax direction = Use tax</li></ul> |
+| UseTax | <ul><li>Not credit note</li><li>Tax direction = Use tax</li></ul> |
 | PurchaseReverseChargeCreditNote | <ul><li>Credit note</li><li>Tax direction = Sales tax receivable</li><li>ReverseCharge\_W = Yes</li></ul> |
-| PurchaseReverseCharge           | <ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li><li>ReverseCharge\_W = Yes</li></ul> |
-| SalesReverseChargeCreditNote    | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge\_W = Yes</li></ul> |
-| SalesReverseCharge              | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge\_W = Yes</li></ul> |
+| PurchaseReverseCharge | <ul><li>Not credit note</li><li>Tax direction = Sales tax receivable</li><li>ReverseCharge\_W = Yes</li></ul> |
+| SalesReverseChargeCreditNote | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge\_W = Yes</li></ul> |
+| SalesReverseCharge | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge\_W = Yes</li></ul> |
 
 ### <a id="vat-specification"></a>VAT specification (VATSpecification_Lookup)
-  
+
 For this lookup field, the following master data sources are available for setup:
-  
--	**Tax code**: Sales tax code
--	**Tax classifier**: An enumerated list of values representing different combinations of tax transaction directions and credit note criteria in Finance. For more information about how tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
--	**Item sales tax group**
--	**Sales tax group**
-  
-Define the conditions from the current company's master data sources to determine which value from the enumerated list of values required by Tax Admiration of Norway must be reported in the `<spesifikasjon>` tag under the `<mvaSpesifikasjonslinje>` node for corresponding combination of master data from your Finance environment.
-  
+
+- **Tax code** – The sales tax code.
+- **Tax classifier** – An enumerated list of values that represent different combinations of tax transaction directions and credit note criteria in Finance. For more information about how the tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
+- **Item sales tax group**
+- **Sales tax group**
+
+Define the conditions from the current company's master data sources to determine which value from the enumerated list of values that the Norwegian Tax Administration requires must be reported in the `<spesifikasjon>` tag under the `<mvaSpesifikasjonslinje>` node for the corresponding combination of master data from your Finance environment.
+
 The following table shows the lookup results for **VATSpecification_Lookup**.
 
-|Lookup result (Norwegian)	|Lookup result (English)|
-|---------------------------|-----------------------|
-|justering	|Adjustment|
-|tap på krav	|Losses on claims|
-|tilbakeføringAvInngåendeMerverdiavgift	|Reversal of input value added tax|
-|uttak	|Withdrawals|
-|varer	|Goods|
-|tjenester	|Services|
-|Annet	|Other|
+| Lookup result (Norwegian) | Lookup result (English) |
+|---|---|
+| justering | Adjustment |
+| tap på krav | Losses on claims |
+| tilbakeføringAvInngåendeMerverdiavgift | Reversal of input VAT |
+| uttak | Withdrawals |
+| varer | Goods |
+| tjenester | Services |
+| Annet | Other |
 
 > [!IMPORTANT]
-> It's important that you add **Annet** (Other), which must collect data from other cases as the last item in the list. The **Line value** must be the last value in your table. In the all the other columns, select **\*Not blank\***.
+> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***.
 
 ### <a id="standard-tax-code"></a>Standard tax codes (StandardTaxCodes_Lookup)
-  
-For this lookup field, the following master data sources are available for setup:
-  
--	**Tax code**: Sales tax code.
--	**Tax classifier**: An enumerated list of values representing different combinations of tax transaction directions and credit note criteria in Finance. For more information about how tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
 
-Define conditions from the current company's master data sources to determine which value from enumerated list of values required by the Tax Administration of Norway must be reported in the `<mvaKode>` tag under the <mvaSpesifikasjonslinje> node for corresponding combinations of master data from your Finance environment.
+For this lookup field, the following master data sources are available for setup:
+
+- **Tax code** – The sales tax code.
+- **Tax classifier** – An enumerated list of values that represent different combinations of tax transaction directions and credit note criteria in Finance. For more information about how the tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
+
+Define conditions from the current company's master data sources to determine which value from the enumerated list of values that the Norwegian Tax Administration requires must be reported in the `<mvaKode>` tag under the <mvaSpesifikasjonslinje> node for corresponding combinations of master data from your Finance environment.
+
 The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 
-|Lookup results	|Description (Norwegian)	|Description (English)|
-|---------------|-------------------------|---------------------|
-|1	|Fradragsberettiget innenlands inngående merverdiavgift, 25%	|Deductible domestic input VAT, 25%|
-|11	|Fradragsberettiget innenlands inngående merverdiavgift, 15 %	|Deductible domestic input VAT, 15%|
-|12	|Fradragsberettiget innenlands inngående merverdiavgift, 11,11%	|Deductible domestic input VAT, 11,11%|
-|13	|Fradragsberettiget innenlands inngående merverdiavgift, 12%	|Deductible domestic input VAT, 12%|
-|14	|Fradragsberettiget innførselsmerverdiavgift, 25%	|Input VAT deductible (paid on import), 25%|
-|15	|Fradragsberettiget innførselsmerverdiavgift, 15%	|Input VAT deductible (paid on import), 15%|
-|3	|Utgående merverdiavgift, 25 %	|Outgoing VAT, 25%|
-|31	|Utgående merverdiavgift, 15 %	|Outgoing VAT, 15%|
-|32	|Utgående merverdiavgift, 11,11 %	|Outgoing VAT, 11,11%|
-|33	|Utgående merverdiavgift, 12 %	|Outgoing VAT, 12%|
-|5	|Innenlands omsetning og uttak fritatt for merverdiavgift	|Domestic sales and withdrawals exempt from VAT |
-|51	|Innenlandsk omsetning med omvendt avgiftplikt	|Domestic turnover with reverse charge |
-|52	|Utførsel av varer og tjenester	|Export of goods and services |
-|6	|Omsetning utenfor merverdiavgiftsloven |	Turnover outside the VAT Act |
-|81	|Grunnlag innførsel av varer med fradragsrett for innførselsmerverdiavgift, 25%	|Basis for import of goods with a right to deduct import VAT, 25%|
-|82	|Grunnlag innførsel av varer uten fradragsrett for innførselsmerverdiavgift, 25%	|Basis of importation of goods without the right to deduct import VAT, 25%|
-|83	|Grunnlag innførsel av varer med fradragsrett for innførselsmerverdiavgift, 15%	|Basis for import of goods with a right to deduct import VAT, 15%|
-|84	|Grunnlag innførsel av varer uten fradragsrett for innførselsmerverdiavgift, 15%	|Basis of importation of goods without the right to deduct import VAT, 15%|
-|85	|Grunnlag innførsel av varer som det ikke skal beregnes merverdiavgift av	|Basis of import of goods from which VAT is not to be calculated |
-|86	|Tjenester kjøpt fra utlandet med fradragsrett for merverdiavgift, 25%	|Services purchased from abroad with a right to deduct VAT, 25%|
-|87	|Tjenester kjøpt fra utlandet uten fradragsrett for merverdiavgift, 25%	|Services purchased from abroad without the right to deduct VAT, 25%|
-|88	|Tjenester kjøpt fra utlandet med fradragsrett for merverdiavgift, 12%	|Services purchased from abroad with a right to deduct VAT, 12%|
-|89	|Tjenester kjøpt fra utlandet uten fradragsrett for merverdiavgift, 12%	|Services purchased from abroad without the right to deduct VAT, 12%|
-|91	|Kjøp av klimakvoter eller gull med fradragsrett for merverdiavgift, 25%	|Purchase of emissions trading or gold, VAT deductible, 25%|
-|92	|Kjøp av klimakvoter eller gull uten fradragsrett for merverdiavgift, 25%	|Purchase of emissions trading or gold, without deduction of VAT, 25%|
+| Lookup results | Description (Norwegian) | Description (English) |
+|---|---|---|
+| 1 | Fradragsberettiget innenlands inngående merverdiavgift, 25% | Deductible domestic input VAT, 25% |
+| 11 | Fradragsberettiget innenlands inngående merverdiavgift, 15 % | Deductible domestic input VAT, 15% |
+| 12 | Fradragsberettiget innenlands inngående merverdiavgift, 11,11% | Deductible domestic input VAT, 11.11% |
+| 13 | Fradragsberettiget innenlands inngående merverdiavgift, 12% | Deductible domestic input VAT, 12% |
+| 14 | Fradragsberettiget innførselsmerverdiavgift, 25% | Input VAT deductible (paid on import), 25% |
+| 15 | Fradragsberettiget innførselsmerverdiavgift, 15% | Input VAT deductible (paid on import), 15% |
+| 3 | Utgående merverdiavgift, 25 % | Outgoing VAT, 25% |
+| 31 | Utgående merverdiavgift, 15 % | Outgoing VAT, 15% |
+| 32 | Utgående merverdiavgift, 11,11 % | Outgoing VAT, 11.11% |
+| 33 | Utgående merverdiavgift, 12 % | Outgoing VAT, 12% |
+| 5 | Innenlands omsetning og uttak fritatt for merverdiavgift | Domestic sales and withdrawals exempt from VAT |
+| 51 | Innenlandsk omsetning med omvendt avgiftplikt | Domestic turnover with reverse charge |
+| 52 | Utførsel av varer og tjenester | Export of goods and services |
+| 6 | Omsetning utenfor merverdiavgiftsloven | Turnover outside the VAT Act |
+| 81 | Grunnlag innførsel av varer med fradragsrett for innførselsmerverdiavgift, 25% | Basis for importation of goods with a right to deduct import VAT, 25% |
+| 82 | Grunnlag innførsel av varer uten fradragsrett for innførselsmerverdiavgift, 25% | Basis for importation of goods without a right to deduct import VAT, 25% |
+| 83 | Grunnlag innførsel av varer med fradragsrett for innførselsmerverdiavgift, 15% | Basis for importation of goods with a right to deduct import VAT, 15% |
+| 84 | Grunnlag innførsel av varer uten fradragsrett for innførselsmerverdiavgift, 15% | Basis for importation of goods without a right to deduct import VAT, 15% |
+| 85 | Grunnlag innførsel av varer som det ikke skal beregnes merverdiavgift av | Basis for importation of goods that VAT is not to be calculated from |
+| 86 | Tjenester kjøpt fra utlandet med fradragsrett for merverdiavgift, 25% | Services purchased from abroad with a right to deduct VAT, 25% |
+| 87 | Tjenester kjøpt fra utlandet uten fradragsrett for merverdiavgift, 25% | Services purchased from abroad without a right to deduct VAT, 25% |
+| 88 | Tjenester kjøpt fra utlandet med fradragsrett for merverdiavgift, 12% | Services purchased from abroad with a right to deduct VAT, 12% |
+| 89 | Tjenester kjøpt fra utlandet uten fradragsrett for merverdiavgift, 12% | Services purchased from abroad without a right to deduct VAT, 12% |
+| 91 | Kjøp av klimakvoter eller gull med fradragsrett for merverdiavgift, 25% | Purchase of emissions trading or gold with a right to deduct VAT, 25% 
+| 92 | Kjøp av klimakvoter eller gull uten fradragsrett for merverdiavgift, 25% | Purchase of emissions trading or gold without a right to deduct VAT, 25% |
 
 > [!IMPORTANT]
-> It's important that you define conditions for all sales tax codes used in tax transactions in the reporting period. If there is no appropriate lookup result defined for a sales tax code used in transactions during the reporting period, generation of VAT return in XML format will be stopped. 
+> It's important that you define conditions for all sales tax codes that are used in tax transactions during the reporting period. If no appropriate lookup result is defined for a sales tax code that is used in transactions during the reporting period, generation of a VAT return in XML format will be stopped. 
 
-## <a id="em-setup"></a>Import a package of data entities that includes a predefined Electronic messaging (EM) setup
-  
-The process of setting up the EM functionality for VAT return with direct submission to Altinn has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities package include a link to ER configurations. Before you start to import the data entities package, import ER configurations into Finance.
-  
+## <a id="em-setup"></a>Import a package of data entities that includes a predefined EM setup
+
+The process of setting up the EM functionality for VAT returns with direct submission to Altinn has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities package include a link to ER configurations. Before you start to import the data entities package, import ER configurations into Finance.
+
 1. In [LCS](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
-2. In the list of data package files, find **NO VAT return – Altinn** and download it to your computer.
-3. In Finance, select the company that you will interoperate with Altinn from, and then go to **Workspaces** > **Data management**.
-4. Before you import setup data from the data entities package, make sure that the data entities in your application are refreshed and synchronized. In the **Data management** workspace, go to **Framework parameters** > **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
+2. In the list of data package files, find **NO VAT return – Altinn**, and download it to your computer.
+3. In Finance, select the company that you will interoperate with Altinn from, and then go to **Workspaces** \> **Data management**.
+4. Before you import setup data from the data entities package, make sure that the data entities in your application are refreshed and synced. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
 5. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 6. In the **Data management** workspace, select **Import**, and then, on the **Import** FastTab, set the **Group name** field.
 7. On the **Selected entities** FastTab, select **Add file**.
-8. In the **Source data format** field, select **Package** and then select **Upload and add**. 
+8. In the **Source data format** field, select **Package**, and then select **Upload and add**. 
 9. Find and select the **NO VAT return – Altinn** setup file that you previously downloaded.
-10. Wait until the data entities from the file are listed in the grid on the **Selected entities** FastTab and then select **Close**.
-11. Before the data entities are used for the first time to import the data from the package, synchronize the mapping of the source data and the target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. 
-12. Above the grid for the package, select **Generate mapping** to create a mapping from scratch and then save the mapping.
-13.	Repeat steps 11 and 12 for each data entity in the package before you start the import.
-14.	You can now import data from the **NO VAT return – Altinn** setup file into the selected company. On the Action Pane, select **Import** to start the import.
+10. Wait until the data entities from the file are listed in the grid on the **Selected entities** FastTab, and then select **Close**.
+11. Before the data entities are used for the first time to import the data from the package, sync the mapping of the source data and the target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. 
+12. Above the grid for the package, select **Generate mapping** to create a mapping from scratch. Then save the mapping.
+13. Repeat steps 11 and 12 for every data entity in the package before you start the import.
+14. You can now import data from the **NO VAT return – Altinn** setup file into the selected company. On the Action Pane, select **Import** to start the import.
 
-    ![Import a package of data entities that includes a predefined Electronic messaging (EM) setup.](media/emea-nor-vat-return-importem-setup.png)
+    ![Importing a package of data entities that includes a predefined EM setup.](media/emea-nor-vat-return-importem-setup.png)
 
-    For more information, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
-  
-    For more information about the predefined setup that is included in the data entities in the package for **NO VAT return with direct submission to Altinn** feature, see [Checklist for Electronic messages setup for VAT return](emea-nor-vat-return-checklist.md).
-  
-## <a id="vat-registration-number"></a>Set up the VAT registration number of the company that is reporting VAT return
-  
+    For more information, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+
+    For more information about the predefined setup that is included in the data entities in the package for the **NO VAT return with direct submission to Altinn** feature, see [Checklist for Electronic messages setup for VAT returns with direct submission to Altinn](emea-nor-vat-return-checklist.md).
+
+## <a id="vat-registration-number"></a>Set up the VAT registration number of the company that is reporting a VAT return
+
 The **NO VAT return – Altinn** setup file provides the **Tax registration number** additional field for **NO VAT return** EM processing. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the **NO VAT return with direct submission to Altinn** feature in Finance. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Norway. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
-  
-Complete the following steps to define the VAT registration number that the **NO VAT return with direct submission to Altinn** feature in Finance must use to submit VAT returns.
-  
-1.	Go to **Tax** > **Setup** > **Electronic messages** > **Electronic messages processing**, and select the **NO VAT return** processing.
-2.	On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used to send the VAT return to Altinn.
-3.	Save your changes.
 
-  ![Set up the VAT registration number of the company that is reporting VAT return.](media/emea-nor-vat-return-tax-registration-number.png)
+Follow these steps to define the VAT registration number that the **NO VAT return with direct submission to Altinn** feature in Finance must use to submit VAT returns.
 
-If the VAT registration number isn't specified in the **Tax registration number** additional field of the **NO VAT returns** processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation.md) and [Registration category](emea-registration-ids.md#supported-registration-categories.md).
-  
-## <a id="preview-format"></a>Set up paper format to preview VAT return
-  
-You can generate the VAT return in Excel format to preview amounts of VAT during the period. To enable this capability, complete the following steps.
-  
-1. Go to **Workspaces** > **Feature management**.
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **NO VAT return** processing.
+2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used to send the VAT return to Altinn.
+3. Save your changes.
+
+    ![Setting up the VAT registration number of the company that is reporting a VAT return.](media/emea-nor-vat-return-tax-registration-number.png)
+
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **NO VAT returns** processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids#registration-type-creation.md) and [Registration category](emea-registration-ids#supported-registration-categories.md).
+
+## <a id="preview-format"></a>Set up a paper format to preview VAT returns
+
+You can generate a VAT return in Excel format to preview VAT amounts during the period. Follow these steps to enable this capability.
+
+1. Go to **Workspaces** \> **Feature management**.
 2. On the **All** tab, find and select the **VAT statement format reports** feature in the list.
-3. Select **Enable now** button to enable the feature.
-4. Go to **Tax** > **Setup** > **General ledger parameters**.
+3. Select **Enable now**.
+4. Go to **Tax** \> **Setup** \> **General ledger parameters**.
 5. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (NO)**.
-6. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**. 
-7. Select the Tax Authority that is associated with the sales tax settlement period for which you report VAT return for Norway.
-8. Select **Default** in the **Report layout** field and then save your changes.
-  
-To generate the VAT declaration in Excel format, go to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**. Alternatively, you can generate the VAT return for preview for a selected sales tax payment transaction by going to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments** and selecting **Print report** on the Action Pane.
+6. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**. 
+7. Select the tax authority that is associated with the sales tax settlement period for which you report VAT returns for Norway.
+8. In the **Report layout** field, select **Default**.
+9. Save your changes.
+
+To generate a VAT return in Excel format, go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. To generate a VAT return to preview VAT amounts for a selected sales tax payment transaction, go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and then, on the Action Pane, select **Print report**.
 
 ## <a id="vat-group"></a>Enable VAT return reporting for companies that report as a VAT group in the same system database
-  
-This part of the setup for the **NO VAT return with direct submission to Altinn** feature is mandatory only for companies that report as a VAT group in the same system database.
+
+> [!NOTE]
+> This part of the setup for the **NO VAT return with direct submission to Altinn** feature is required only for companies that report as a VAT group in the same system database.
 
 To prepare Finance to report a VAT return for a VAT group, make sure that your business processes and the system setup meet the following conditions:
-  
-- Tax information from all the subsidiaries is registered in the same system. In this case, Finance.
+
+- Tax information from all the subsidiaries is registered in the same system (in this case, Finance).
 - The system correctly reflects all the tax transactions in accordance with the rules and principles of Norway.
 - Settlement periods for all the legal entities that are involved in the VAT group are identically defined.
 - The **Settle and post sales tax** job is completed in each subsidiary legal entity.
-- Application-specific parameters for the VAT return format are setup for each subsidiary legal entity. The setup configurations are completed for both **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** formats.
-- A VAT return in Excel is correctly generated in each subsidiary legal entity.
+- Application-specific parameters for the VAT return format are set up for each subsidiary legal entity. The setup configurations are completed for both the **VAT Declaration XML (NO)** format and the **VAT Declaration Excel (NO)** format.
+- A VAT return in Excel format is correctly generated in each subsidiary legal entity.
 - One legal entity is set up for interoperation with Altinn according to the information in this topic.
 - Sales tax settlement periods for the **NO VAT Collect sales tax payments** action are defined for each subsidiary legal entity.
-  
-To enable Finance to report VAT returns from multiple legal entities in the same system database, enable the **Cross-company queries for the populate records actions** feature in **Feature management**. 
 
-1. Go to **Workspaces** > **Feature management**.
-2. In the list, find and select the feature, **Cross-company queries for the populate records actions in the list**.
+To enable Finance to report VAT returns from multiple legal entities in the same system database, you must enable the **Cross-company queries for the populate records actions** feature in the **Feature management** workspace. 
+
+1. Go to **Workspaces** \> **Feature management**.
+2. On the **All** tab, find and select the **Cross-company queries for the populate records actions in the list** feature in the list.
 3. Select **Enable now**. 
 
 ## <a id="settlement-period"></a>Define a sales tax settlement period
-  
+
 Electronic message processing that is defined for the **NO VAT return – Altinn** setup package is company-agnostic. Therefore, the package can be implemented in any legal entity in Finance.
-The **NO VAT return** processing lets you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in XML or Excel formats. The collection of sales tax payment transactions is implemented by using the **NO VAT Collect sales tax payments** action of the **Populate record** type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the **NO VAT Collect sales tax payments** action.
-  
-1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records**, and select **NO VAT Collect sales tax payments**.
-2. On the **Datasource setup** FastTab, select **NO VAT return**, and then select **Edit query**.
-3. In the **Settlement period** field of the **Sales tax payments** table, define the sales tax settlement period that is related to the tax transactions from the selected legal entity that must be reported to Altinn.
 
-   ![Define a sales tax settlement period.](media/emea-nor-vat-return-settlement-period.png)
+The **NO VAT return** processing lets you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in XML or Excel format. The collection of sales tax payment transactions is implemented by using the **NO VAT Collect sales tax payments** action of the **Populate record** type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the **NO VAT Collect sales tax payments** action.
 
-If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting.
-  
-If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group) section of this topic are met. Set up the sales tax settlement period for all the legal entities that are included in the VAT group.
-  
-1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records**. On the **Populate records** page, the **Datasources** setup grid includes a **Company** field. For existing records that were created during the general setup of the **NO VAT return with direct submission to Altinn** feature, this field shows the identifier of the current legal entity. It's assumed that the settlement period for the current legal entity was set up during the general setup of the **NO VAT return with direct submission to Altinn** feature.  
-2. In the **Datasources** setup grid, add a line for each subsidiary legal entity that must be included in reporting for the VAT group. Set the following fields.
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records**, and select **NO VAT Collect sales tax payments**.
+2. On the **Datasources setup** FastTab, select **NO VAT return**, and then select **Edit query**.
+3. In the row for the **Sales tax payments** table, in the **Settlement period** field, define the sales tax settlement period that is related to the tax transactions from the selected legal entity that must be reported to Altinn.
 
-   |Field name |	Value|
-   |-----------|------|
-   |Name	|Enter a text value that will help you understand where this record comes from. For example, enter **NO VAT payment of Subsidiary 1**.|
-   |Message item type	|Select **VAT return**. This value is the only value that is available for all records.|
-   |Account type	|Select **All**.|
-   |Master table name	|Specify **TaxReportVoucher** for all the records.|
-   |Document number field	|Specify **Voucher** for all the records.|
-   |Document date field	|Specify **TransDate** for all the records.|
-   |Document account field	|Specify **TaxPeriod** for all the records.|
-   |Company	|Select the ID of the subsidiary legal entity.|
-   |User query	|This checkbox is automatically selected when you define criteria by selecting **Edit query**.|
+    ![Defining a sales tax settlement period.](media/emea-nor-vat-return-settlement-period.png)
+
+    If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting.
+
+If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group) section of this topic are met. Then follow these steps to set up the sales tax settlement period for all the legal entities that are included in the VAT group.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records**.
+
+    On the **Populate records** page, the grid on the **Datasources setup** FastTab includes a **Company** field. For existing records that were created during the general setup of the **NO VAT return with direct submission to Altinn** feature, this field shows the identifier of the current legal entity. It's assumed that the settlement period for the current legal entity was set up during the general setup of the **NO VAT return with direct submission to Altinn** feature.
+
+2. On the **Datasources setup** FastTab, in the grid, add a line for each subsidiary legal entity that must be included in reporting for the VAT group. For each new line, set the following fields.
+
+    | Field name | Value |
+    |---|---|
+    | Name | Enter a text value that will help you understand where this record comes from. For example, enter **NO VAT payment of Subsidiary 1**. |
+    | Message item type | Select **VAT return**. This value is the only value that is available for all records. |
+    | Account type | Select **All**. |
+    | Master table name | Specify **TaxReportVoucher** for all the records. |
+    | Document number field | Specify **Voucher** for all the records. |
+    | Document date field | Specify **TransDate** for all the records. |
+    | Document account field | Specify **TaxPeriod** for all the records. |
+    | Company | Select the ID of the subsidiary legal entity. |
+    | User query | This checkbox is automatically selected when you define criteria by selecting **Edit query**. |
 
 3. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
 
-  ![Define a sales tax settlement period for VAT group.](media/emea-nor-vat-return-settlement-period-vat-group.png)
+![Defining a sales tax settlement period for a VAT group.](media/emea-nor-vat-return-settlement-period-vat-group.png)
 
 For more information about how to populate records from multiple companies in EM, see [Populate records from multiple companies](../general-ledger/electronic-messaging-setup.md#multiple-companies-populate).
-  
+
 ## <a id="number-sequences"></a>Set up number sequences for Electronic messages functionality
-  
-To work with the **Electronic messages** functionality, define the related number sequences.
-  
-1. Go to **Tax** > **Setup** > **General ledger parameters**.
+
+To work with the Electronic messages functionality, you must define the related number sequences.
+
+1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
 2. On the **Number sequences** tab, set up two number sequences:
-   
-   - **Message**
-   - **Message item**
+
+    - Message
+    - Message item
 
 ## <a id="document-management-parameters"></a>Set up document management parameters
-  
-Before submit a VAT return to Altinn, make sure that the following file types are defined on the **File types** tab of the **Document management parameters** page:
-  
--	**XML**: eXtensible Markup Language
--	**XLS**, **XLSX**: Microsoft Excel worksheet, Microsoft Office Excel 2007 worksheet
--	**XSLT**: eXtensible Stylesheet Language Transformations
--	**JSON**: JavaScript Object Notation
+
+Before you submit a VAT return to Altinn, make sure that the following file types are defined on the **File types** tab of the **Document management parameters** page (**Organization administration** \> **Document management** \> **Document management parameters**):
+
+- **XML** – eXtensible Markup Language
+- **XLS** – Microsoft Excel worksheet
+- **XLSX** – Microsoft Office Excel 2007 worksheet
+- **XSLT** – eXtensible Stylesheet Language Transformations
+- **JSON** – JavaScript Object Notation
  
-If these file types are not in the list, add them by going to **Organization administration** > **Document management** > **Document management parameters**.
-  
-## <a id="transformation-schema"></a>Set up validation results transformation schema
-  
-Results of the validation of VAT return by ID-porten web service are sent by ID-porten in XML format. To make it readable by a user and enable analysis of the validation results, you can download and use an XSLT transformation.
-  
+If any of these file types aren't defined on the **File types** tab, add them.
+
+## <a id="transformation-schema"></a>Set up a validation results transformation schema
+
+The ID-porten web service validates VAT returns. ID-porten then sends the validation results in XML format. To make it easier for users to read and analyze the validation results, you can download and use an Extensible Stylesheet Language Transformations (XSLT) transformation.
+
 1. In [LCS](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
-2. In the list of data package file, locate and download **NO VAT validation result converter**.
-3. Go to **Tax** > **Setup** > **Electronic messages** > **Message processing actions** and select **NO VAT Import validation response action**.
-4. Select **Attachements** and on the **Attachments for Messages action - Action: NO VAT Import validation response** page, on the Action Pane, select **New** > **File**.
-5. Select the file you downloaded in step 2.
-6. Repeat steps 3-5 for the **NO VAT Import final validation result** action.
-  
-The attached XSLT file will be automatically applied by the system to results of validation from ID-porten and you will be able to review it in HTML format in a browser window.
+2. In the list of data package files, find **NO VAT validation result converter**, and download it to your computer.
+3. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, and select **NO VAT Import validation response action**.
+4. Select **Attachments**.
+5. On the **Attachments for Messages action - Action: NO VAT Import validation response** page, on the Action Pane, select **New** \> **File**.
+6. Select the file you downloaded in step 2.
+7. Repeat steps 3 through 6 for the **NO VAT Import final validation result** action.
+
+The system will automatically apply the attached XSLT file to validation results from ID-porten. You will then be able to review the results in HTML format in a browser.
 
 ## <a id="em-security-roles"></a>Set up security roles for electronic message processing
-  
+
 Different groups of users might require access to different electronic message processing. You can limit access to each type of processing, based on security groups that are defined in the system.
 
-Follow these steps to define which security roles will have access to the **NO VAT return** processing.
-  
-1.	Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**.
-2.	Select the **NO VAT return** processing, and add the security groups that must work with this processing. 
+Follow these steps to define which security roles have access to the **NO VAT return** processing.
 
-   If security roles aren't defined for electronic message processing, only a system admin can see the electronic message processing by going to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
+2. Select the **NO VAT return** processing, and add the security groups that must work with this processing. 
 
-  ## <a id="web-security-roles"></a>Set up security roles to interoperate with ID-porten and Altinn web services
-  
-When an access token to ID-porten and Altinn is retrieved, the token is stored in the system database in an encrypted format. The access token must be used whenever a request of any type is sent to ID-porten or Altinn. For security reasons, access to the access token must be limited to the security groups that send requests. If a user who isn't in one of those security groups tries to send a request to Altinn, a message notifies them that they aren't allowed to use the selected web application for interoperation.
-  
-Follow these steps to set up security groups that must have access to ID-porten or Altinn access token.
-  
-1.	Go to **Tax** > **Setup** > **Electronic messages** > **Web applications**.
-2.	Select the web application (**ID-porten**, **Altinn**) that you want to define security groups for, and on the **Security roles** FastTab, add those security groups which must be able to send requests to ID-porten and Altinn respectively.
+If security roles aren't defined for electronic message processing, only a system admin can view the electronic message processing by going to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**.
+
+## <a id="web-security-roles"></a>Set up security roles for interoperation with ID-porten and Altinn web services
+
+When an access token for ID-porten and Altinn is retrieved, it's stored in the system database in an encrypted format. The access token must be used whenever a request of any type is sent to ID-porten or Altinn. For security reasons, access to the access token must be limited to the security groups that send requests. If a user who isn't in one of those security groups tries to send a request to Altinn, a message notifies them that they aren't allowed to use the selected web application for interoperation.
+
+Follow these steps to set up security groups that must have access to access tokens for ID-porten or Altinn.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**.
+2. Select the web application (**ID-porten** or **Altinn**) to define security groups for.
+3. On the **Security roles** FastTab, add the security groups that must be able to send requests to either ID-porten or Altinn (depending on the web application that you selected in step 2).
 
 If security roles aren't defined for a web application, only a system admin can use the selected web application for interoperation.
 
-## <a id="client-credentials"></a>Set up client ID and client secret of your ID-porten integration point in Finance
-  
-When you [Register an integration point in ID-porten web portal](emea-nor-vat-return-integration-point.md) you should safely store the client ID and client secret of your integration point in ID-porten that will be used for direct submission to Altinn from Finance. On the current step of your setup, paste the client ID and client secret of your integration point in ID-porten in Finance.
-  
-1. Go to **Tax** > **Setup** > **Electronic messages** > **Web applications**.
-2. Select the **NO ID-Porten** web application.
-3. In the **Client ID** field, paste the client ID of your integration point in ID-porten.
-4. In the **Client secret** field, paste the ient secret of your integration point in ID-porten.
-5. Save your changes.
+## <a id="client-credentials"></a>Set up the client ID and client secret of your ID-porten integration point in Finance
+
+When you [register an integration point in the ID-porten web portal](emea-nor-vat-return-integration-point.md), you should safely store the client ID and client secret that will be used for direct submission to Altinn from Finance. In the following procedure, you will copy the client ID and client secret of your integration point in ID-porten and paste them into Finance.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
+2. In the **Client ID** field, paste the client ID of your integration point in ID-porten.
+3. In the **Client secret** field, paste the client secret of your integration point in ID-porten.
+4. Save your changes.
 
 ## <a id="internet-address"></a>Set up the internet address of ID-porten and Altinn web services
-  
-Internet addresses are subject to change by the Tax Administration. We recommend that you check for actual internet addresses on the official web site of the Altinn and ID-porten. 
-  
-To set up an internet address used by *test* environment at ID-porten, complete the following steps.
-  
-1. Go to **Tax** > **Setup** > **Parameters** > **Electronic messages** > **Web applications**.
-2. Select the **NO ID-Porten** web application.
-3. In the **Base URL** field, enter `https://oidc-ver2.difi.no/idporten-oidc-provider`.
-4. In the **Authorization URL path** field, enter `/authorize`.
-5. In the **Token URL path** field, enter `/token`.
-6. Copy the full value of the internet address from the current page of your browser and paste it in the **Redirect URL** field.
 
-   ![Copy the full value of the internet address from the current page of your browser.](media/emea-nor-vat-return-redirect-url.png)
+Internet addresses (URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual URLs on the official Altinn and ID-porten website. 
 
-To set up internet address used by Altinn web services, complete the following steps.
-  
-1. Go to **Tax** > **Setup** > **Parameters** > **Electronic messages** > **Web applications**.
-2. Select the **NO Altinn** web application.
-3. In the **Base URL** field, enter `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
-4. Go to **Tax** > **Setup** > **Parameters** > **Electronic messages** > **Web service settings**, and enter the following information to define the internet address for web services.
+Follow these steps to set up a URL that is used by the *test* environment in ID-porten.
 
-  |Web service name	|Internet address |
-  |---|------|
-  |NO Altinn GET JSON	|`https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances`|
-  |NO Altinn POST JSON	|`https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances`|
-  |NO Altinn POST XML	|`https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances`|
-  |NO Altinn PUT JSON	|`https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances`|
-  |NO Altinn PUT XML	|`https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances`|
-  |NO Altinn GET attachments	|Leave blank|
-  |NO Validate VAT return	|`https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider`|
+1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
+2. In the **Base URL** field, enter `https://oidc-ver2.difi.no/idporten-oidc-provider`.
+3. In the **Authorization URL path** field, enter **/authorize**.
+4. In the **Token URL path** field, enter **/token**.
+5. Copy the full URL of the current page from your browser's Address bar, and paste it into the **Redirect URL** field.
+
+    ![Copying the full URL of the current page from the browser's Address bar and pasting into the Redirect URL field.](media/emea-nor-vat-return-redirect-url.png)
+
+Follow these steps to set up an internet address that is used by Altinn web services.
+
+1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
+2. In the **Base URL** field, enter `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
+3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services.
+
+    | Web service name | Internet address |
+    |---|---|
+    | NO Altinn GET JSON | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+    | NO Altinn POST JSON | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+    | NO Altinn POST XML | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+    | NO Altinn PUT JSON | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+    | NO Altinn PUT XML | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
+    | NO Altinn GET attachments | Leave this field blank. |
+    | NO Validate VAT return | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 > [!IMPORTANT]
-> For actual internet addresses, use the following link: `https://docs.digdir.no/oidc_func_wellknown.html`.
-  
-  
+> For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
