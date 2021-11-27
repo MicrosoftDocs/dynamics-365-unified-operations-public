@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Submit a VAT return to Altinn web service
-description: This topic explains how to submit a VAT return to Altinn web service of Norway.
+title: Submit a VAT return to the Altinn web service
+description: This topic explains how to submit a VAT return to the Altinn web service of Norway.
 author: liza-golub
 ms.date: 11/23/2021
 ms.topic: article
@@ -26,21 +26,19 @@ ms.dyn365.ops.version: AX 10.0.22
 
 ---
 
-# Submit a VAT return to Altinn web service
-
+# Submit a VAT return to the Altinn web service
 
 [!include [banner](../includes/banner.md)]
 
-When you successfully obtained an access token for Altinn, your Dynamics 365 Finance environment is ready to interoperate with the Altinn web service to submit VAT returns.
-Processing a VAT return submission to Altinn is composed of lots of steps. For full description of the submission process, see [API](https://skatteetaten.github.io/mva-meldingen/english/api/) page.
+When you successfully obtained an access token for Altinn, your Microsoft Dynamics 365 Finance environment is ready to interoperate with the Altinn web service to submit VAT returns.
 
-The process to generate a VAT return and directly submit the return to Altinn from Finance is supported by using [Electronic Messaging](../general-ledger/electronic-messaging.md) (EM) functionality. When you [Import a package of data entities that includes a predefined Electronic messaging (EM) setup](emea-nor-vat-return-setup.md#em-setup) to your legal entity, all the necessary actions are imported to you system to submit VAT return to Altinn. The following diagram represents simplified schema of the EM processing delivered with **NO VAT return – Altinn** setup file.
+The processing for a VAT return that is submitted to Altinn consists of many steps. For a full description of the submission process, see the [API](https://skatteetaten.github.io/mva-meldingen/english/api/) page.
 
-  ![Schema of the EM processing delivered with NO VAT return – Altinn setup file.](media/emea-nor-vat-return-em-processing.png)
+[Electronic messaging](../general-ledger/electronic-messaging.md) (EM) functionality is used to support the process of generating a VAT return and submitting it directly to Altinn from Finance. When you [import a package of data entities that includes a predefined EM setup](emea-nor-vat-return-setup.md#em-setup) into your legal entity, all the actions that are required to submit VAT returns to Altinn are imported. The following illustration shows a simplified schema of the EM processing that is delivered with the **NO VAT return – Altinn** setup file.
 
-To simplify the process of VAT return submission, most of actions are aggregated into inseparable sequences and are run automatically by the system after the first action from the sequence is initiated.
+![Schema of the EM processing that is delivered with the NO VAT return – Altinn setup file.](media/emea-nor-vat-return-em-processing.png)
 
-This allows the process to be significantly simplified and reduce the necessary steps to the following list.
+To simplify the process of submitting VAT returns, most of actions are aggregated into inseparable sequences. When the first action in a sequence is initiated, the system automatically runs all the actions in that sequence. Therefore, the process is significantly simplified, and the required steps are reduced to the following list:
 
 1. [Create a message](#create-message).
 2. [Collect sales tax payments](#collect-sales-tax-payments).
@@ -53,160 +51,160 @@ This allows the process to be significantly simplified and reduce the necessary 
 
 ## <a id="create-message"></a>Create a message
 
-Complete the steps in this procedure to perform the action, **NO VAT Create message**.
+Follow these steps to perform the **NO VAT Create message** action.
 
-1. Go to **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages**.
-2. On the left side of the page, select **NO VAT return** EM processing.
-3. On the **Messages** FastTab, select **New**.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **NO VAT return** EM processing in the list on the left.
+2. On the **Messages** FastTab, select **New**.
 
-   The action, **NO VAT Create message** is predefined in the **Run processing** dialog box. 
+    The **NO VAT Create message** action is predefined in the **Run processing** dialog box.
 
-4. Select **OK**. The new electronic message is created.
-5. Enter values in the **From date** and **To date** fields for the message with dates of the period for which you want to submit VAT return.
-6. In the **Description** field, provide a description. This text will not be included into report and is an optional field.
+3. Select **OK**. The new electronic message is created.
+4. In the **From date** and **To date** fields for the message, define the period that you want to submit the VAT return for.
+5. Optional: In the **Description** field, enter a description. This text won't be included on the report.
 
-   ![Create message.](media/emea-nor-vat-return-create-message.png)
+![Creating a message.](media/emea-nor-vat-return-create-message.png)
 
 ## <a id="collect-sales-tax-payments"></a>Collect sales tax payments
 
-Complete the steps in this procedure to perform the action, **NO VAT Collect sales tax payments**.
+Follow these steps to perform the **NO VAT Collect sales tax payments** action.
 
-1. Go to **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages** page, select the message created within the **NO VAT return** EM processing.
-2. On the **Messages** GastTab, select **Collect data**.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages** page, and select the message that was created in the **NO VAT return** EM processing.
+2. On the **Messages** FastTab, select **Collect data**.
 
-    
-    The **NO VAT Collect sales tax payments** action is predefined in the **Run processing** dialog box. 
-    
+    The **NO VAT Collect sales tax payments** action is predefined in the **Run processing** dialog box.
+
 3. Select **OK**.
-4. The sales tax payment lines are posted during the period specified for the message listed on the **Message items** FastTab in relation with the message selected.
+4. The sales tax payment lines are posted during the period that was specified for the message that is listed on the **Message items** FastTab in relation to the selected message.
 
-  ![Collect sales tax payments.](media/emea-nor-vat-return-collect-sales-tax-payments.png)
+![Collecting sales tax payments.](media/emea-nor-vat-return-collect-sales-tax-payments.png)
 
-According to the XSD schema of VAT returns, the VAT return can include a note wtih a value from the enumerated list of values or a free text note limited to 4000 symbols. 
+According to the XML Schema Definition (XSD) schema for VAT returns, a VAT return can include either a note that uses a value from an enumerated list of values or a free-text note that is limited to 4,000 characters. 
 
-To add a note with a value from the enumerated list, complete the following steps.
+Follow these steps to add a note that uses a value from an enumerated list.
 
-1. On the **Messages** FastTab, select the electronic message for which you want to specify the note.
-2. Expand the **Message additional fields** FastTab and select the **NO VAT Note for VAT return** additional field. 
-3. In the **Field value** column, select a value from the lookup field.
+1. On the **Messages** FastTab, select the electronic message to specify a note for.
+2. On the **Message additional fields** FastTab, select the **NO VAT Note for VAT return** additional field.
+3. In the **Field value** column, select a value in the lookup field.
 
-To add a free text note that's limited to 4000 symbols, complete the following steps.
+Follow these steps to add a free-text note that is limited to 4,000 characters.
 
-1. On the **Messages** FastTab, select the electronic message for which you want to specify the note.
-2. Expand the **Message additional fields** FastTab and select the **NO VAT Note for VAT return** additional field. 
-3. In the **Field value**column, in the lookup field, select **fritekstnotat**.
-4. Select **Attachments** and on the Action Pane, select **New** > **Note**.
-5. In the **Note** field, enter your note. This note will be included into the VAT return in XML format when generated.
+1. On the **Messages** FastTab, select the electronic message to specify a note for.
+2. On the **Message additional fields** FastTab, select the **NO VAT Note for VAT return** additional field.
+3. In the **Field value** column, select **fritekstnotat** in the lookup field.
+4. Select **Attachments**, and then, on the Action Pane, select **New** \> **Note**.
+5. In the **Note** field, enter your note. This note will be included on the VAT return in XML format when it's generated.
 
 ## <a id="ready-to-generate"></a>Mark the message as ready to generate the VAT return
 
-Complete the steps in this procedure to perform the action, **NO VAT Ready to generate VAT return**.
+Follow these steps to perform the **NO VAT Ready to generate VAT return** action.
 
-1. Go to **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages** and select the message created within **NO VAT return** EM processing.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Update status**.
 
-   The **NO VAT Ready to generate VAT return** action and **NO VAT Ready to generate VAT return** new status are predefined in the **Run processing** dialog box. 
+    The **NO VAT Ready to generate VAT return** action and the **NO VAT Ready to generate VAT return** status are predefined in the **Run processing** dialog box.
 
-3. Select **OK**. The message status is changed to **NO VAT Ready to generate VAT return** and the **Generate report** button is enabled.
+3. Select **OK**. The status of the message is updated to **NO VAT Ready to generate VAT return**, and the **Generate report** button becomes available.
 
-   ![Mark message as ready to generate VAT return.](media/emea-nor-vat-return-ready-to-generate.png)
+![Marking a message as ready to generate a VAT return.](media/emea-nor-vat-return-ready-to-generate.png)
 
-To continue collecting data for the report, select **Update status** and change the status of the message back to **NO VAT New message created**.
+To continue to collect data for the report, select **Update status**, and change the status of the message back to **NO VAT New message created**.
 
 ## <a id="preview-vat-return"></a>Preview the VAT return in Microsoft Excel
 
-Complete the steps in this procedure to perform the action, **NO VAT Preview VAT return in Excel**.
+Follow these steps to perform the **NO VAT Preview VAT return in Excel** action.
 
-1. Go to **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages** and select the message created within **NO VAT return** EM processing.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Message** tab, select **Generate report**.
-3. In the **Run processing** dialog box, select **NO VAT Preview VAT return in Excel**. 
-4. For reporting periods that contain a large volume of tax transactions, we recommend running the report in batch. Expand the **Run in the background** FastTab of the **Run processing** dialog box, and select the **Batch processing** check box. 
-5. Specify the **Task description** and other parameters of the batch, and then select **OK**. As a result, the message status doesn't change, and new file is attached to the message.
-6. Select **Attachments** and then select **VAT return preview.xls**.
-7. On the Action Pane, select **Open** to preview VAT return in Excel format.
+3. In the **Run processing** dialog box, select **NO VAT Preview VAT return in Excel**.
+4. For reporting periods that contain a large volume of tax transactions, we recommend that you run the report in batch mode. On the **Run in the background** FastTab, select the **Batch processing** checkbox. Then set the **Task description** field and other parameters for the batch.
+5. Select **OK**. A new file is attached to the message, but the status of the message isn't changed.
+6. Select **Attachments**, and then select **VAT return preview.xls**.
+7. On the Action Pane, select **Open** to preview the VAT return in Excel format.
 
 ## <a id="generate-vat-return"></a>Generate the VAT return
 
-Complete the steps in this procedure to perform the action, **NO VAT Generate VAT return**.
+Follow these steps to perform the **NO VAT Generate VAT return** action.
 
-1. Go to **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages** and select the message created within **NO VAT return** EM processing.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Generate report**.
-3. In the **Run processing** dialog box, select **NO VAT Generate VAT return**. 
-4. For reporting periods that contain a large volume of tax transactions, we recommend running the report in batch. Expand the **Run in the background** FastTab of the **Run processing** dialog box and select the **Batch processing** check box. 
-5. Specify the **Task description** and other parameters of the batch, and then select **OK**.
+3. In the **Run processing** dialog box, select **NO VAT Generate VAT return**.
+4. For reporting periods that contain a large volume of tax transactions, we recommend that you run the report in batch mode. On the **Run in the background** FastTab, select the **Batch processing** checkbox. Then set the **Task description** field and other parameters for the batch.
+5. Select **OK**.
 
-  ![Generate VAT return.](media/emea-nor-vat-return-generate-vat-return.png)
+    ![Generating a VAT return.](media/emea-nor-vat-return-generate-vat-return.png)
 
-   As a result, message status changes to **NO VAT Return XML generated**, and a new **mvamelding.xml** file is attached to the message.
-   
-7. Select **Attachments** and then select **mvamelding.xml**.
-8. On the Action Pane, select **Open** to preview VAT return in XML format.
+    The status of the message is updated to **NO VAT Return XML generated**, and a new mvamelding.xml file is attached to the message.
+
+7. Select **Attachments**, and then select **mvamelding.xml**.
+8. On the Action Pane, select **Open** to preview the VAT return in XML format.
 
 ## <a id="validate-vat-return"></a>Validate the VAT return in the Tax Administration web service
 
-This step is composed of **NO VAT Validation** sequence, including the following actions:
+This step consists of the **NO VAT Validation** sequence, which includes the following actions:
 
--	**NO VAT Send validation request**: Transfers **mvamelding.xml** to the Tax Administration API, receives the **valideringsresultat.xml** file containing results of business validation of the **mvamelding.xml**, and attaches the **valideringsresultat.xml** file to the electronic message.
--	**NO VAT Import validation response**: Parses information from the **valideringsresultat.xml** file and updates the status of the electronic message. When a business validation by the Tax Administration passes successfully, the status is updated to **NO VAT Return validation passed successfully**. When there are some errors identified during the business validation, the status is updated to **NO VAT Error VAT return validation**. When there are some errors identified during business validation by Tax Administration, this action applies an XSLT transformation to the **valideringsresultat.xml** file and attaches transformed file to the record in the action log for further review by the user.
--	**NO VAT Generate request for instance**: Prepares a request for the next procedure, **Submit VAT return**.
+- **NO VAT Send validation request** – This action transfers the mvamelding.xml file to the Tax Administration API, receives the valideringsresultat.xml file that contains the results of the business validation that is performed on the mvamelding.xml file, and attaches the valideringsresultat.xml file to the electronic message.
+- **NO VAT Import validation response** – This action parses information from the valideringsresultat.xml file and updates the status of the electronic message. If the business validation that the Tax Administration performs is passed, this action updates the status to **NO VAT Return validation passed successfully**. If errors are identified during the business validation, this action updates the status to **NO VAT Error VAT return validation**, applies an Extensible Stylesheet Language Transformations (XSLT) transformation to the valideringsresultat.xml file, and attaches the transformed file to the action log for the record so that the user can review it further.
+- **NO VAT Generate request for instance** – This action prepares a request for the next step in the process, [Submit the VAT return](#submit-vat-return).
 
-To run the **Validate VAT return in Tax Administration web service**, complete the following tasks.
+Follow these steps to validate the VAT return in the Tax Administration web service.
 
-1. Go to **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages** and select the message created within **NO VAT return** EM processing.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Send report**.
 
-   The **NO VAT Send validation request** action is predefined in the **Run processing** dialog box. 
+    The **NO VAT Send validation request** action is predefined in the **Run processing** dialog box.
+
 4. Select **OK**.
 
-   The actions, **NO VAT Send validation request**, **NO VAT Import validation response**, and **NO VAT Generate request for instance** are run automatically by the system one-by-one. As a result, electronic message status will be **NO VAT Return validation passed successfully** in case when business validation by Tax Administration passes successfully. If there are errors identified during the business validation by the Tax Administration, the electronic message status will be **NO VAT Error VAT return validation**. 
-5. To review the information about the errors identified during business validation by Tax Administration, on the **Action log** FastTab, select the line for **NO VAT Import validation response**. 
-6. Select **Attachments** and then select the attached **html** file. 
-7. On the Action Pane, select **Open**. The will be open in a browser and you can review thecontent in a table. When corrections are applied, you can regenerate the XML file again going back to the [Generate VAT return](#generate-vat-return) step.
+    The system automatically runs the **NO VAT Send validation request**, **NO VAT Import validation response**, and **NO VAT Generate request for instance** actions one at a time. If the business validation that the Tax Administration performs is passed, the status of the electronic message is updated to **NO VAT Return validation passed successfully**. If errors are identified during the business validation, the status is updated to **NO VAT Error VAT return validation**.
+
+5. To review the information about any errors that were identified during the business validation that the Tax Administration performs, on the **Action log** FastTab, select the line for **NO VAT Import validation response**.
+6. Select **Attachments**, and then select the attached HTML file.
+7. On the Action Pane, select **Open**. The file is opened in a browser window, and you can review the content in a table. After you apply corrections, you can go back to the [Generate the VAT return](#generate-vat-return) step to regenerate the XML file.
 
 ## <a id="submit-vat-return"></a>Submit the VAT return
 
-When your **mvamelding.xml** file is successfully validated by the Tax Administration, the electronic message has a status of **NO VAT Return validation passed successfully**  and you can submit the **mvamelding.xml** file to Altinn.
+When your mvamelding.xml file has been successfully validated by the Tax Administration, the electronic message has a status of **NO VAT Return validation passed successfully**, and you can submit the mvamelding.xml file to Altinn.
 
-Submitting a VAT return includes the following actions:
+The process of submitting a VAT return includes the following actions:
 
--	**NO VAT Send request to create instance**: Sends a request to Altinn3-App API to create an instance for further VAT return submission, receives the response, and attaches this response to the electronic message.
--	**NO VAT Import instance creation response**: Imports necessary information from the response to the system for further submission.
--	**NO VAT Generate VAT return submission**: Creates a special **konvolutt.xml** technical file that must be sent to Altinn3-App API preliminary to **mvamelding.xml** file.
--	**NO VAT Upload VAT return submission**: Sends the **konvolutt.xml** technical file to Altinn3-App API.
--	**NO VAT Upload VAT return**: Sends the **mvamelding.xml** file to Altinn3-App API.
--	**NO VAT Complete data filling**: Sends a request to complete the transfer of VAT return to Altinn3-App API.
--	**NO VAT Complete VAT return submission**: Requests to complete the submission process to Altinn3-App API.
--	**NO VAT Send feedback status request**: Requests the status of the validation process of the submitted VAT return. 
--	**NO VAT Import feedback status response**: Imports the validation status of the VAT return to the system.
--	**NO VAT Send feedback request**: Requests the validation results of the submitted VAT return. 
--	**NO VAT Import feedback response**: Imports necessary information from the response that contains the results of the validation of the VAT return.
--	**NO VAT Download validation result**: Downloads the validation details of the VAT return.
--	**NO VAT Import final validation result**: Imports information about the validation details of the VAT return to the system and updates the status of the electronic message. If no error was identified in the submitted VAT return, the status is updated to **NO VAT SUCCESSFUL VAT return submission to the Tax Administr**. If there were some errors identified in the submitted VAT return, the status is updated to **NO VAT Error validation of uploaded VAT return**.
+- **NO VAT Send request to create instance** – This action sends a request to the Altinn3-App API to create an instance for further VAT return submission. It then receives the response and attaches it to the electronic message.
+- **NO VAT Import instance creation response** – This action imports the required information from the response to the system for further submission.
+- **NO VAT Generate VAT return submission** – This action creates a special konvolutt.xml technical file that must be sent to the Altinn3-App API before the mvamelding.xml file.
+- **NO VAT Upload VAT return submission** – This action sends the konvolutt.xml technical file to the Altinn3-App API.
+- **NO VAT Upload VAT return** – This action sends the mvamelding.xml file to the Altinn3-App API.
+- **NO VAT Complete data filling** – This action sends a request to complete the transfer of the VAT return to the Altinn3-App API.
+- **NO VAT Complete VAT return submission** – This action sends a request to complete the submission process to the Altinn3-App API.
+- **NO VAT Send feedback status request** – This action requests the status of the validation process for the submitted VAT return.
+- **NO VAT Import feedback status response** – This action imports the validation status for the VAT return into the system.
+- **NO VAT Send feedback request** – This action requests the validation results for the submitted VAT return.
+- **NO VAT Import feedback response** – This action imports the required information from the response that contains the validation results for the VAT return.
+- **NO VAT Download validation result** – This action downloads the validation details for the VAT return.
+- **NO VAT Import final validation result** – This action imports information about the validation details for the VAT return into the system and updates the status of the electronic message. If no errors were identified in the submitted VAT return, the status is updated to **NO VAT SUCCESSFUL VAT return submission to the Tax Administr**. If errors were identified in the submitted VAT return, the status is updated to **NO VAT Error validation of uploaded VAT return**.
 
-To **Submit the VAT return**, complete the following steps.
+Follow these steps to submit the VAT return.
 
-1. Go to **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages** and select the message created in the **NO VAT return** EM processing.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
 2. On the **Messages** FastTab, select **Send report**.
 
-   The action, **NO VAT Send request to create instance** is predefined in the **Run processing** dialog box. 
+    The **NO VAT Send request to create instance** action is predefined in the **Run processing** dialog box.
 
-3. Select **OK**. 
+3. Select **OK**.
 
-   All the actions listed above are run automatically one-by-one. It may take several minutes before feedback on the VAT return is ready on the Tax Administration side. In this case **Submit VAT return** will stop in the **NO VAT Feedback not provided** status. If this happens, wait 5-10 minutes, and then on the **Message** FastTab, select **Send report** again.
+    The system runs all the actions in the previous list one at a time. It might take several minutes for feedback about the VAT return to be ready on the Tax Administration side. In this case, **Submit VAT return** is stopped, and the status is updated to **NO VAT Feedback not provided** status. Wait five to ten minutes, and then, on the **Message** FastTab, select **Send report** again.
 
-   The **NO VAT Send feedback status request** action is predefined in the **Run processing** dialog box. 
-4. SelectClick **OK**. **Submit VAT return** is complete when the electronic message has a status of **NO VAT SUCCESSFUL VAT return submission to the Tax Administr**.
+    The **NO VAT Send feedback status request** action is predefined in the **Run processing** dialog box.
+
+4. Select **OK**. **Submit VAT return** is completed when the electronic message has a status of **NO VAT SUCCESSFUL VAT return submission to the Tax Administr**.
 
 ## <a id="download-attachments"></a>Download attachments
 
-After a VAT return submission is successfully completed, you can download the payment information in XML format and the receipt in a PDF.
+After a VAT return is successfully submitted, you can download the payment information in XML format and the receipt in PDF format.
 
-1. Go to **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages**, and select the message in **NO VAT return** EM processing.
-2. On the **MEssages** FastTab, select **Send report**.
-3. In the **Run processing** dialog box, select **NO VAT Download receipt** or **NO VAT Download payment information**. 
-4. Select **OK**. The **betalingsinformasjon.xml** (**NO VAT Download payment information**) or **kvittering.pdf** (**NO VAT Download receipt**) file will be attached to the electronic message.
-5. Select **Attachements** and then select **betalingsinformasjon.xml** or **kvittering.pdf**.
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the message that was created in the **NO VAT return** EM processing.
+2. On the **Messages** FastTab, select **Send report**.
+3. In the **Run processing** dialog box, select **NO VAT Download receipt** or **NO VAT Download payment information**.
+4. Select **OK**. The betalingsinformasjon.xml ("NO VAT Download payment information") or kvittering.pdf ("NO VAT Download receipt") file is attached to the electronic message.
+5. Select **Attachments**, and then select **betalingsinformasjon.xml** or **kvittering.pdf**.
 6. On the Action Pane, select **Open**.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
