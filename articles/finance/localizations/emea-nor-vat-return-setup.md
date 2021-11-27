@@ -393,12 +393,13 @@ If any of these file types aren't defined on the **File types** tab, add them.
 The Tax Administration web service validates VAT returns. This web service then sends the validation results in XML format. To make it easier for users to read and analyze the validation results, you can download and use an Extensible Stylesheet Language Transformations (XSLT) transformation.
 
 1. In [LCS](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
-2. In the list of data package files, find **NO VAT validation result converter**, and download it to your computer (it is `NO VAT validation result converter.xslt` file).
-3. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, and select **NO VAT Import validation response action**.
-4. Select **Attachments**.
-5. On the **Attachments for Messages action - Action: NO VAT Import validation response** page, on the Action Pane, select **New** \> **File**.
-6. Select the file you downloaded in step 2.
-7. Repeat steps 3 through 6 for the **NO VAT Import final validation result** action.
+2. In the list of data package files, find **NO VAT validation result converter**, and download it to your computer (it is `NO VAT validation result converter.zip` file).
+3. Unarchive the `NO VAT validation result converter.zip` file to get the `NO VAT validation result converter.xslt` file.
+4. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, and select **NO VAT Import validation response action**.
+5. Select **Attachments**.
+6. On the **Attachments for Messages action - Action: NO VAT Import validation response** page, on the Action Pane, select **New** \> **File**.
+7. Select the `NO VAT validation result converter.xslt` file you unarchived in step 3.
+8. Repeat steps 3 through 6 for the **NO VAT Import final validation result** action.
 
 The system will automatically apply the attached XSLT file to validation results from ID-porten. You will then be able to review the results in HTML format in a browser.
 
