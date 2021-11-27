@@ -38,6 +38,8 @@ The processing for a VAT return that is submitted to Altinn consists of many ste
 
 ![Schema of the EM processing that is delivered with the NO VAT return – Altinn setup file.](media/emea-nor-vat-return-em-processing.png)
 
+Note, that not all the relationships between actions defined in **NO VAT return** processing are included into the diagram.
+
 To simplify the process of submitting VAT returns, most of actions are aggregated into inseparable sequences. When the first action in a sequence is initiated, the system automatically runs all the actions in that sequence. Therefore, the process is significantly simplified, and the required steps are reduced to the following list:
 
 1. [Create a message](#create-message).
