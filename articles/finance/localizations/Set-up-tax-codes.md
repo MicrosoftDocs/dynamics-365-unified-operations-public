@@ -38,11 +38,14 @@ This topic explains how to set up tax codes in the Tax Calculation service, incl
 
 Complete the steps in this section to use the tax code in a simple scenario, such as only one tax rate.
 
-1. On the **Tax codes** tab, select **Add** and enter the tax code and a description.
-2. Select **Calculation origin**. The calculation origin is a group of methods that were defined in the selected tax configuration version. In this simple scenario, select the value **By net amount**.
-3. Select **Save**. More fields become available, based on the Calculation origin that you selected.
-4. **Add** one tax rate for this tax code.
-5. Select **Save**.
+1. Sign into [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
+2. Go to Workspaces > Globalization features > Tax calculation.
+3. Select the feature and version which you want to set up, and click **Edit** to open the setup form.
+4. On the **Tax codes** tab, select **Add** and enter the tax code and a description.
+5. Select **Calculation origin**. The calculation origin is a group of methods that were defined in the selected tax configuration version. In this simple scenario, select the value **By net amount**.
+6. Select **Save**. More fields become available, based on the Calculation origin that you selected.
+7. Click **Add** on the **Rates** FastTab to add one tax rate for this tax code.
+8. Select **Save**.
 
 ## Calculation origin
 
@@ -60,7 +63,9 @@ When you select **By net amount** in the **Calculation origin** field, the tax a
 
 For example, the tax rate is 25%. The invoice line will show a quantity of 10 items at 1.00 each. The customer is allowed a 10% line discount. This means the calculation would be:
 
-  Net amount: (10 x 	1.00) -10% = 9.00 Sales tax: 9.00 x 25% = 2.25 Total amount: 9.00 + 2.25 = 11.25
+  - Net amount: (10 x 	1.00) -10% = 9.00 
+  - Sales tax: 9.00 x 25% = 2.25 
+  - Total invoice amount: 9.00 + 2.25 = 11.25
 
 ### By gross amount
 
@@ -77,7 +82,7 @@ If the net amount is 10.00, then Duty 1 is 1.00 (10.00 x 10%) and Duty 2 = 2.00 
   - Gross amount: Net amount + Duty 1 amount + Duty 2 amount (10.00 + 1.00 + 2.00) = 13.00 
   - Tax amount: 13.00 x 25% = 3.25 
   - Total duties and tax: 1.00 + 2.00 + 3.25 = 6.25 
-  - Total amount: 10.00 + 6.25 = 16.25
+  - Total invoice amount: 10.00 + 6.25 = 16.25
 
 ### By quantity
 
@@ -93,7 +98,7 @@ For example, the tax rate is 25%. The invoice line shows a quantity of 10 items 
 
   - Sales margin: 10 x ( 10.00 - 6.00) = 40.00
   - Tax amount: 40.00 x 25% = 10.00
-  - Total amount: 100.00 + 10.00 = 110.00
+  - Total invoice amount: 100.00 + 10.00 = 110.00
 
 ### Tax on tax
 
@@ -112,7 +117,7 @@ The calculations would be:
   - Duty 2: 10.00 x 20% = 2.00 
   - Tax on duty: 3.00 x 25% = 0.75
   - Total tax: 1.00 + 2.00 + 0.75 = 3.75 
-  - Total amount: 10.00 + 3.75 = 13.75
+  - Total invoice amount: 10.00 + 3.75 = 13.75
 
 ## Advanced functionality
 
@@ -120,56 +125,52 @@ The following sections explain some advanced functionality on tax codes setup fo
 
 ### Exempt tax
 
-When you set the **Is exempt** field to **Yes** on the **General** FastTab, the tax amount will always be overriden as zero regardless of the actual tax rate.
+When you set the **Is Exempt** field to **Yes** on the **General** FastTab, the tax amount will always be overriden as zero regardless of the actual tax rate.
 
-You can specify Exempt code field here for the specific exempt reason. 
+You can specify **Exempt Code** field here for the specific exempt reason. 
 
-Master selection can be enabled for this field to select the defined exempt code values from Dynamics 365 Finance. To enable the master selection, see this article for detail information.
+Master data lookup can be enabled for **Exempt Code** field to select the defined exempt code values from Dynamics 365 Finance. To enable the master data lookup, see this article for detail information [Enable master data lookup for tax calculation configuration](tax-service-set-up-environment-master-data-lookup.md).
 
-For example, the tax rate is 25% and the **Is exempt** field is **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10% line discount. 
+For example, the tax rate is 25% and the **Is Exempt** field is **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10% line discount. 
 
   - Net amount: (10 x 	1.00) -10% = 9.00 
   - Sales tax: 0.00 
-  - Total amount: 9.00 + 0.00 = 9.00
+  - Total invoice amount: 9.00 + 0.00 = 9.00
 
 ### Use tax
 
-When you set the **Is exempt**  field to **Yes** on the **General** FastTab, the tax amount will always be overriden as zero regardless of the actual tax rate.
+When you set the **Is Use Tax**  field to **Yes** on the **General** FastTab, the tax amount will be posted to the **Ues tax payable** account instead of Vendor summary account.
 
-You can specify Exempt code field here for the specific exempt reason. 
-
-Master selection can be enabled for this field to select the defined exempt code values from Dynamics 365 Finance. To enable the master selection, see this article for detail information.
-
-For example, the tax rate is 25% and the **Is exempt** field is set to **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10% line discount. 
+For example, the tax rate is 25% and the **Is Use Tax** field is set to **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each, and the customer is allowed a 10% line discount. 
 
   - Net amount: (10 x 1.00) -10% = 9.00 
-  - Sales tax: 0.00 
-  - Total amount: 9.00 + 0.00 = 9.00
+  - Use tax: 9.00 X 25% = 2.25
+  - Total invoice amount: 9.00 + 0.00 = 9.00
 
 
 > [!IMPORTANT]
-> If a tax code is marked as **exempt** and **use tax**, the code will be recognized as exempt tax for sales transactions and use tax for purchase transactions.
+> If a tax code is marked as both **Is Exempt** and **Is Use Tax**, the code will be recognized as exempt tax for sales transactions and use tax for purchase transactions.
 
 #### Reverse charge
 
-When you set the **Is reverse charge** field to **Yes** on the **General** FastTab, the tax rate can be configured as negative. For a reverse charge scenario, we recommend that you set up two tax codes, one with a positive tax rate, and the other with a negative tax rate. Both tax codes should have the same rate value, with the **Is reverse charge** field set to **Yes**. For more information about the reverse charge solution in Finance, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
+When you set the **Is Reverse Charge** field to **Yes** on the **General** FastTab, the tax rate can be configured as negative. For a reverse charge scenario, we recommend that you set up two tax codes, one with a positive tax rate, and the other with a negative tax rate. Both tax codes should have the same rate value, with the **Is reverse charge** field set to **Yes**. For more information about the reverse charge solution in Finance, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
 
-For example, two tax codes are determined in one invoice line. One tax rate is 25% and the other is -25% with the **Is reverse charge** field marked as **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each. 
+For example, two tax codes are determined in one invoice line. One tax rate is 25% and the other is -25% with the **Is Reverse Charge** field marked as **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each. 
 
   - Net amount: (10 x 	1.00)  = 10.00 
-  - Tax code 1 10.00 X 25% = 2.50
-  - Tax code 2 10 X -25% = -2.50
-  - Total amount: 10.00 + 2.50 -2.50 = 10.00
+  - Tax code 1: 10.00 X 25% = 2.50
+  - Tax code 2: 10 X -25% = -2.50
+  - Total invoice amount: 10.00 + 2.50 -2.50 = 10.00
 
 ### Exclude from base amount calculation
 
-When you set the **Exclude from base amount calculation** field to **Yes**, the calculated tax amount of this tax code is excluded from tax base amount for other tax codes calculation in the price inclusive scenario.
+When you set the **Exclude from base amount calculation** field to **Yes** on the **General** FastTab, the calculated tax amount of this tax code is excluded from tax base amount for other tax codes calculation in the price inclusive scenario.
 
 For more information, see [Calculate tax on prices when Prices include taxes is enabled](global-exclude-from-tax-base-amount-calculation.md)
 
 ### Rate
 
-You can define different tax rates for different tax base amount ranges. The Tax Calculation service always uses the rate that matches the tax base amount to calculate the tax amount.
+You can define different tax rates on the **Rate** FastTab for different tax base amount ranges. The Tax Calculation service always uses the rate that matches the tax base amount to calculate the tax amount.
 
 The following table provides an example of how tax rates are configured.
 
@@ -190,7 +191,7 @@ The following table provides an example of how tax rates are configured.
 
 ### Limits
 
-You can define tax limits to override the calculated tax amount if the amount falls into the minimum/maximum range.
+You can define tax limits on the **Limits** FastTab to override the calculated tax amount if the tax amount falls into the minimum/maximum range.
 
 - If the calculated tax amount is greater than or equal to the maximum tax amount configured on the **Limits** FastTab, the final tax amount = the maximum tax amount.
 - If the calculated tax amount is less than the minimum tax amount configured on the **Limits** FastTab, the final tax amount = 0.
