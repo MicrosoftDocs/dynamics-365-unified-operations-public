@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing for Italy
 description: This topic provides information that will help you get started with Electronic invoicing for Italy.
 author: abaryshnikov
-ms.date: 11/24/2021
+ms.date: 11/29/2021
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: rhaertle
@@ -20,89 +20,93 @@ ms.dyn365.ops.version: AX 10.0.20
 [!include [banner](../includes/banner.md)]
 
 
-    > [!IMPORTANT]
-    > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
+> [!IMPORTANT]
+> Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
 
-This topic provides information that will help you to get started with Electronic invoicing for Italy in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This topic provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. This topic guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in the topic, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 ## Prerequisites
 
 Before you complete the steps in this topic, the following prerequisites must be met:
 
--   Complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
-
--   Import the **Italian FatturaPA (IT)** electronic invoicing feature into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section in the "Get started with Electronic invoicing" topic.
-
--   Add links to the required certificates to service environment (Digital signature certificate, CA certificate, Clients certificate). For more information, see the  [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section in the " Get started with Electronic invoicing service administration" topic.
+- Complete the steps in the topic, [Get started with Electronic invoicing](e-invoicing-get-started.md).
+- Import the **Italian FatturaPA (IT)** electronic invoicing feature into RCS from the Global repository. For more information, see [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section in the topic, **Get started with Electronic invoicing**.
+-  Add links from the required certificates to the service environment. This includes the Digital signature certificate, CA certificate, and the Clients certificate. For more information, see the section [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) in the topic, **Get started with Electronic invoicing service administration**.
 
 ## Country-specific configuration for the Italian FatturaPA (IT) Electronic invoicing feature
 
-Follow these steps before you deploy the application setup to your connected Finance or Supply Chain Management application.
+Complete the following steps before you deploy the application setup to your connected Finance or Supply Chain Management application.
 
-This section complements the [Country-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section in the "Get started with Electronic invoicing" topic that was mentioned earlier.
+This section complements the section, [Country-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) in the topic, **Get started with Electronic invoicing**.
 
-### Create new feature
+### Create a new feature
 
-1.  Log in to **Regulatory configuration service**.
-2.  In the **Electronic reporting** workspace, in the **Configuration providers** section select your company\`s **Configuration provider** as active.
-3.  In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
-4.  On the **Electronic invoicing features** page select **Add** \> **Based on existing feature** \> select **Italian FatturaPA (IT)** under Microsoft configuration provider as base feature \> set **Name** \> select **Create feature**.
+1. Log in to the **Regulatory configuration service**.
+2. In the **Electronic reporting** workspace, in the **Configuration providers** section, mark your company's **Configuration provider** as active.
+3. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
+4. On the **Electronic invoicing features** page, select **Add** > **Based on existing feature**.
+5. Under the **Microsoft configuration provider**, select **Italian FatturaPA (IT)** as a base feature, enter a name and then select **Create feature**.
 
-### Setup application specific parameters
+### Set up application specific parameters
 
-5.  On the **Versions** tab, verify that the **Draft** version is selected.
-6.  On the **Configurations** tab, go to **Application specific parameters** for a selected configuration. In the **Lookups** section, make sure that **List of Natura reverse charge subcategories** lookup is selected.
-7.  In the **Conditions** section, select **Add** to add a condition.
-8.  Add specific conditions for each subcategory that is defined in the system and save your changes.  
-    Note. In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific value.
+1. On the **Versions** tab, verify that the **Draft** version is selected.
+2. On the **Configurations** tab, select **Application specific parameters** for a selected configuration. 
+3. In the **Lookups** section, make sure that the lookup, **List of Natura reverse charge subcategories** is selected.
+4. In the **Conditions** section, select **Add**.
+5. Add specific conditions for each subcategory that is defined in the system and then save your changes.  
 
-### Configure processing pipeline for export
+   > [!NOTE]
+   > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific value.
 
-9.  On the **Setups** tab, select **Edit** for the **Sales invoices**.
-10. In the **Processing pipeline** section go through the actions and fill in all the required parameters:
+### Configure a processing pipeline for export
+
+1. On the **Setups** tab, select **Edit** for sales invoices.
+2. In the **Processing pipeline** section, go through the actions and fill in all the required parameters.
     - **Sign document** action: Certificate name (certificate for digital signature).
     - **Submit** action: URL address, Certificates (chain of certificates where the first one is the root CA certificate (caentrate.cer), second one is the Clients certificate.
-11. Select **Validate** button to ensure all required parameters are filled in.
-12. Repeat for **Project invoices** setup on the **Setups** tab.
+3. Select **Validate** to ensure all required parameters are filled in.
+4. Repeat for **Project invoices** setup on the **Setups** tab.
 
-### Configure processing pipeline for import
+### Configure the processing pipeline for import
 
-13. On the **Setups** tab, select **Edit** for the **Import invoices**.
-14. In the **Parameters** tab of the **Data channel** section fill in **Data channel** parameter with any reasonable string.
-15. Fill in **Applicability rules** for the setup. You can use the default **Channel** clause by passing here the value for **Data channel** parameter value.
+1. On the **Setups** tab, select **Edit** for the **Import invoices**.
+2. In the **Data channel** section, on the **Parameters** tab, enter a string value in the **Data channel** field.
+3. Fill in **Applicability rules** for the setup. You can use the default **Channel** clause by passing here the value for **Data channel** parameter value.
 
     ![Setup applicability rules](media/e-invoicing-ita-fatturapa-get-started-apprules-setup.png)
-16. Select **Validate** button to ensure all required parameters are filled in.
+	
+4. Select **Validate** to ensure all required parameters are filled in.
 
-### Deploy the Feature
+### Deploy the feature
 
-17. Complete, publish, and deploy the feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
-18. Deploy the feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
+1. Complete, publish, and deploy the feature to the service environment. For more information, see the section, [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) in the topic, **Get started with Electronic invoicing**.
+2. Deploy the feature to the connected application. For more information, see the section [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) in the topic, **Get started with Electronic invoicing**.
 
-### Dynamics 365 Finance setup
+### Set up Finance
 
-1.  Sign in to Dynamics 365 Finance.
+1.  Sign in to your Finance environment.
 2.  In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
-3.  Select **Repositories** \> **Global** \> **Open**.
-4.  Import Customer invoice context model, Vendor invoice import (IT).
-5.  Go to Organization administration \> Setup \> Electronic document parameters.
-6.  On the **Features** tab, select the **Enable** check box in the row for feature **Italian electronic invoice**.
-7.  Go to **Electronic document** tab.
-8.  Make sure settings for **Customer invoice journal** and **Project invoice** are filled in according to this article: [Configure the application setup](e-invoicing-get-started.md#configure-the-application-setup).
+3.  Select **Repositories** > **Global** > **Open**.
+4.  Select and import the Customer invoice context model and the Vendor invoice import (IT).
+5.  Go to **Organization administration** > **Setup** > **Electronic document parameters**.
+6.  On the **Features** tab, locate and select the feature, **Italian electronic invoice** and then select the **Enable** check box.
+7.  On the **Electronic document** tab, make sure that the settings for **Customer invoice journal** and **Project invoice** are filled in according to information in the topic, [Configure the application setup](e-invoicing-get-started.md#configure-the-application-setup).
 
-### Import vendor invoices setup
+### Set up vendor invoice import 
 
-9.  In the **Electronic reporting** workspace, in the **Configuration providers** section select your company\`s **Configuration provider** as active.
-10. Go to the **Electronic reporting** workspace and select **Reporting configurations**.
-11. Select **Customer invoice context model**, and then select **Create configuration** \> **Derive from Name: Customer invoice context), Microsoft** to create a derived configuration.
-12. On the **Draft** version, select **Designer** and in the **Data model** tree, select **Map model to datasource**.
-13. In the **Definitions** tree, select **DataChannel** and then select **Designer**.
-14. In the **Data sources** tree, expand the **$Context\_Channel** container. In the **Value** field, select **Edit** and enter the data channel name (less or equal 10 symbols). This is the name of the channel. It should match with the **Data channel** parameter value of the data channel for the Electronic invoicing feature in RCS.
-15. **Save** the changes \> Go back to **Reporting configurations** \> complete configuration version.
-16. Go to **External channels** tab.
-17. On the **Channels**, select **Add** and fill in the **Channel field** (**$Context Channel** value), Description, Company.
-18. In the **Document context** field, select the new derived configuration from **Customer invoice context model**. The mapping description should be **Data channel context**.
-19. On **Import sources** tab select **Add** and fill in
+1. In Finance, go to the **Electronic reporting** workspace. 
+2. In the **Configuration providers** section, mark your company's **Configuration provider** as active.
+3. Select **Reporting configurations**.
+4. Select **Customer invoice context model**, and then select **Create configuration** > **Derive from Name: Customer invoice context, Microsoft** to create a derived configuration.
+5. On the **Draft** version, select **Designer** and in the **Data model** tree, select **Map model to datasource**.
+6. In the **Definitions** tree, select **DataChannel** > **Designer**.
+7. In the **Data sources** tree, expand the **$Context\_Channel** container and in the **Value** field, select **Edit**. 
+8. Enter the data channel name. The name should be less than or equal 10 characters. This name should match with the **Data channel** parameter value of the data channel for the Electronic invoicing feature in RCS.
+9. Save your changes, and then go to **Reporting configurations** > **Complete configuration version**.
+10. On the **External channels** tab, **Channels**, select **Add** and enter values in the **Channel field** (**$Context Channel** value), **Description**, and **Company** fields.
+11. In the **Document context** field, select the newly derived configuration from **Customer invoice context model**. The mapping description should be **Data channel context**.
+12. On **Import sources** tab select **Add** and enter the following field information:
+	
     - **Name**: OutputFile
     - **Data entity name**: Vendor invoice header (Data entity: VendorInvoiceHeaderEntity)
     - **Model mapping**: Vendor invoice import (IT)
@@ -112,51 +116,49 @@ This section complements the [Country-specific configuration of application set
 
 ## Proxy server setup
 
-### Create App Registration
+### Create App registration
 
-1.  Create a self-signed certificate for service to service authentication:  
-    (can be done by PowerShell script)
+1. Create a self-signed certificate for service to service authentication. This can be done using a PowerShell script.
 	
-```powershell
-$certOutputLocation = "C:\certs\proxytest"
-$certName = "sdiProxyClientS2SCert"
-$certPassword = "123"
+	```powershell
+	$certOutputLocation = "C:\certs\proxytest"
+	$certName = "sdiProxyClientS2SCert"
+	$certPassword = "123"
 
-$certCerFile = Join-Path $certOutputLocation "$certName.cer"
-$certPfxFile = Join-Path $certOutputLocation "$certName.pfx"
+	$certCerFile = Join-Path $certOutputLocation "$certName.cer"
+	$certPfxFile = Join-Path $certOutputLocation "$certName.pfx"
 
-$securePassword = ConvertTo-SecureString $certPassword -AsPlainText -Force
+	$securePassword = ConvertTo-SecureString $certPassword -AsPlainText -Force
 
-$cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"
+	$cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"
 
-Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT | Out-Null
-Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
-```
+	Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT | Out-Null
+	Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
+	```
 
-2.  Save the pfx certificate into the Key Vault with reasonable name (sdiProxyClientS2SCert).
-3.  Delete pfx cert after saving to Key Vault.
-4.  Go to [Azure portal](https://portal.azure.com) and login as administrator.
-5.  Create app registration for **SDI Proxy service**:
-    1.  Go to **App registrations**.
-    2.  Create new registration with the following parameters:
-        - **Name**: **SDI Proxy Client** (or any reasonable name)
-        - **Account type: *Accounts in this organizational directory only (Single tenant)***
+2. Save the pfx certificate into the Key Vault and then delete the pfx certificate.
+3. Log in to the [Azure portal](https://portal.azure.com) as an administrator.
+5. Create app registration for **SDI Proxy service**.
+    1. Go to **App registrations** and create a new registration with the following parameters:
+	
+        - **Name**: **SDI Proxy Client**
+        - **Account type**: Accounts in this organizational directory only (single tenant)
 		
-    ![Create Azure App Registration](media/e-invoicing-ita-fatturapa-get-started-app-registration.png)
+    	![Create Azure App Registration](media/e-invoicing-ita-fatturapa-get-started-app-registration.png)
 
-    3.  Select **Register**.
-    4.  Select created app registration and go to **API permissions**:
-    5.  Select ***Grant admin consent***.
+    2. Select **Register**.
+    3. Select the app registration you created and then go to **API permissions**.
+    4. Select ***Grant admin consent***.
 	
 	    ![Grant admin consent](media/e-invoicing-ita-fatturapa-get-started-app-registration-consent.png)
 	
-    6.  Go to ***Certificates & secrets*** and upload the '.cer' certificate for service to service authentication created in one of the previous steps (sdiProxyClientS2SCert).
+    5. Go to ***Certificates & secrets*** and upload the '.cer' certificate for service-to-service authentication.
 	
         ![Upload certificate](media/e-invoicing-ita-fatturapa-get-started-app-upload-cert.png)
 
-    7.  Go to ***Enterprise applications*** and select application created.
-    8.  Save ***Application ID*** (Client ID) and ***Object ID*** of the app.
-    9.  Contact with the **Invoicing Service** team to grant this app access to the service.
+    6.  Go to ***Enterprise applications*** and select application created.
+    7.  Save ***Application ID*** (Client ID) and ***Object ID*** of the app.
+    8.  Contact with the **Invoicing Service** team to grant this app access to the service.
         Send to the <D365EInvoiceSupport@microsoft.com> the following parameters:
         - **AAD TenantID**  
         - **LCS Environment ID**
@@ -293,7 +295,10 @@ Several steps should be done on machine where proxy service supposed to be hoste
 
 ## Privacy notice 
 
-Enabling the **Italian electronic invoice** feature may require sending limited data, which includes the organization tax registration ID. An administrator can enable and disable the Italian electronic invoice feature by navigating to Organization administration \> Setup \> Electronic document parameters. Select the Features tab, select the rows containing the **Italian electronic invoice** feature, and then make the appropriate selection. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
+Enabling the **Italian electronic invoice** feature may require sending limited data, which includes the organization tax registration ID. An administrator can enable and disable the Italian electronic invoice feature. To disable the feature, complete the following steps.
+
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters**. 
+2. On the **Features** tab, select the rows that contain the **Italian electronic invoice** feature and then select **Disable now**. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
 
 ## Additional resources
 
