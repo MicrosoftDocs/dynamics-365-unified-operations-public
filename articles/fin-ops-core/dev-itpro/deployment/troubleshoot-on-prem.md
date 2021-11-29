@@ -584,27 +584,24 @@ Some examples of encryption errors include "AXBootstrapperAppType," "Bootstrappe
 
 You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS account password wasn't installed on the machine. This certificate might be in the certificates (local computer), or the provider type might be incorrect.
 
-To resolve the error, validate the credentials.json file. Copy your infrastructure folder to an AOS node, or execute the script from an AOS node if your infrastructure folder is in located in a fileshare.
+To resolve the error, validate the credentials.json file. Copy your infrastructure folder to an AOS node, or run the script from an AOS node if your infrastructure folder is in a file share.
 
-1. Verify that the text is correctly decrypted by entering the following command (on AOS1).
+1. Verify that the text is correctly decrypted by running the following command (on AOS1).
 
     ```powershell
     .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
     ```
 
-2. Open the **Credentials.json** file and confirm that the credentials are correct.
-
-3. Encrypt the **Credentials.json** file again:
+2. Open the **Credentials.json** file, and confirm that the credentials are correct.
+3. Re-encrypt the **Credentials.json** file.
 
     ```powershell
     .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
 
-4. If any of the credentials had to be updated, you need to trigger a servicing operation. If there is an ongoing servicing operation that is failed, simply retrying from [LCS](https://lcs.dynamics.com) will ensure the credentials are updated. If the environment is already in a deployed state then in [LCS](https://lcs.dynamics.com), click the "Full Details" link for the environment you want to update the SQL Server. Then select **Maintain** and choose **Update Settings**. Do not change any settings and select **Prepare**. Wait for the preparation to complete and click **Update environment** to start updating your environment.
+4. If any of the credentials had to be updated, you must trigger a servicing operation. If an ongoing servicing operation failed, you can ensure that the credentials are updated by retrying the operation from [LCS](https://lcs.dynamics.com). If the environment is already in a deployed state, in [LCS](https://lcs.dynamics.com), select the **Full Details** link for the environment where you want to update the SQL Server, select **Maintain**, and then select **Update Settings**. Don't change any settings. Select **Prepare**, wait for the preparation to be completed, and then select **Update environment** to start to update your environment.
 
-This error can also occur if the **''** parameter isn't defined in the ApplicationManifest file. To determine whether this parameter is defined, in Event Viewer, go to **Custom Views** \> **Administrative Events**, and verify the following information:
-
-In Event Viewer, under **Custom Views** \> **Administrative Events**, note any errors in the **Microsoft-Service Fabric** source category.
+This error can also occur if the **''** parameter isn't defined in the ApplicationManifest file. To determine whether this parameter is defined, in Event Viewer, go to **Custom Views** \> **Administrative Events**, and note any errors in the **Microsoft-Service Fabric** source category.
 
 ## Properties to create a DataEncryption certificate
 
@@ -657,16 +654,16 @@ If none of the preceding solutions work, follow these steps.
     1. Edit the **ConfigTemplate.xml** file so that it has the correct values.
     2. Run all the setup scripts and the **Test-D365FOConfiguration** script.
 
-8. If the credentials.json file has changed, the action you should take depends on the status of the environment in LCS.
+8. If the credentials.json file has changed, the action that you should take depends on the status of the environment in LCS:
 
-- If your environment appears to be deployed in LCS, do the following:
-    1. Go to your environment page and select **Maintain**.
-    1. Select **Update settings**.
-    1. Do not change any settings. Select **Prepare**.
-    1. After a few minutes your environment will be prepared and you can select **Deploy**.
+    - If your environment appears to be deployed in LCS, follow these steps:
 
-- If your environment is in a failed state in LCS, do the following:
-    1. Select **Retry**. The new Credentials.json file will be used during the retry operation.
+        1. Go to your environment page, and select **Maintain**.
+        1. Select **Update settings**.
+        1. Don't change any settings. Select **Prepare**.
+        1. After a few minutes, your environment will be prepared, and you can select **Deploy**.
+
+    - If your environment is in a failed state in LCS, select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 ## Gateway fails to deploy
 
@@ -705,7 +702,7 @@ Category does not exist.
 
 ## Management Reporter
 
-Additional logging can be done by registering providers. To do this, download the **Microsoft Dynamics 365 Finance + Operations (on-premises), LBDMRDeployerTroubleshooter** asset from the LCS Shared Asset Library. You can find the asset in the model asset type. Copy the zip file to the **primary** orchestrator machine, extract it, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
+You can do additional logging by registering providers. To register providers, in the LCS Shared asset library, select **Model** as the asset type, and then download the **Microsoft Dynamics 365 Finance + Operations (on-premises), LBDMRDeployerTroubleshooter** asset. Copy the zip file that is downloaded to the **primary** orchestrator machine, unzip it, and then run the following commands. (To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.)
 
 > [!NOTE]
 > If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment topic for your environment:
@@ -836,7 +833,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
     </Security>
     ```
 
-3. Run the initialize database script again to add the axdbadmin user as specified in [Configure the databases](./setup-deploy-on-premises-pu41.md#configuredb)
+3. Run the initialize database script again to add the axdbadmin user as described in [Configure the databases](./setup-deploy-on-premises-pu41.md#configuredb).
 
 ## Unable to resolve the xPath value
 
@@ -1475,7 +1472,7 @@ The located assembly's manifest definition does not match the assembly reference
 **Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
 
 ## DBSync fails with PEAP APP version 10.0.9 Platform update 33
-**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
+**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error can be found. 
 
 Error message from DBSync:
  ```stacktrace
@@ -1512,7 +1509,7 @@ truncate table databaselog
 
 ## DBSync fails to start
 
-**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found.
+**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error can be found.
 
 ```stacktrace
 Microsoft.Dynamics.AX.InitializationException: Database login failed. Please check SQL credentials and try again.
@@ -1537,7 +1534,7 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 
 ## DBSync fails with PEAP and first release APP version 10.0.14 Platform update 38
 
-**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error is present multiple times.
+**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes' work directories, the following DBSync error is present multiple times.
 
 ```stacktrace
 10/01/2020 14:49:25: Failed when creating deadlock capture session event System.Data.SqlClient.SqlException (0x80131904): User does not have permission to perform this action.
@@ -1651,7 +1648,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     .\Set-ServiceControlManagerPermissions.ps1
     ```
     
-1. Run the following command in Powershell with Administrator privileges to verify the setup.
+1. Run the following command in PowerShell with Administrator privileges to verify the setup.
 
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1 -Test
