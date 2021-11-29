@@ -825,7 +825,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
 **Steps:**
 
 1. Remove the axdbadmin user from the database, if it already exists.
-2. In the **ConfigTemplate.xml** file, specify the user name that must be added to the AXDB database.
+2. In the **ConfigTemplate.xml** file, specify the user name that must be added to the AXDB database by updating the **userName** attribute.
 
     ```xml
     <Security>
@@ -833,7 +833,7 @@ update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto 
     </Security>
     ```
 
-3. Run the initialize database script again to add the axdbadmin user.
+3. Run the initialize database script again to add the axdbadmin user as specified in [Configure the databases](./setup-deploy-on-premises-pu41.md#configuredb)
 
 ## Unable to resolve the xPath value
 

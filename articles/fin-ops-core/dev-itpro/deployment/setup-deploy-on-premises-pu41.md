@@ -182,13 +182,13 @@ You must complete the following steps to set up the infrastructure for Finance +
 1. [Join VMs to the domain](#joindomain)
 1. [Download setup scripts from LCS](#downloadscripts)
 1. [Describe your configuration](#describeconfig)
+1. [Set up file storage](#setupfile)
 1. [Configure certificates](#configurecert)
 1. [Set up SSIS](#setupssis)
 1. [Set up SSRS](#setupssrs)
 1. [Set up VMs](#setupvms)
 1. [Set up a standalone Service Fabric cluster](#setupsfcluster)
 1. [Configure LCS connectivity for the tenant](#configurelcs)
-1. [Set up file storage](#setupfile)
 1. [Set up SQL Server](#setupsql)
 1. [Configure the databases](#configuredb)
 1. [Encrypt credentials](#encryptcred)
@@ -401,6 +401,7 @@ The infrastructure\\ConfigTemplate.xml configuration file describes the followin
 - The certificates that are required to help secure communications
 - The database configuration
 - The Service Fabric cluster configuration
+- The fileshares that are required for the application to work
 
     > [!IMPORTANT]
     > When you configure the Service Fabric cluster, make sure that there are three fault domains for the Primary node type (**OrchestratorType**). Also make sure that no more than one type of node is deployed on a single machine.
@@ -413,6 +414,8 @@ For each Service Fabric node type, the infrastructure\\D365FO-OP\\NodeTopologyDe
 - Whether strong name validation should be enabled
 - The list of firewall ports that should be opened
 - Which permissions an account requires for a machine
+- Whether .NET Framework should be configured to use the operating system default TLS protocol.
+- Whether insecure TLS and SSL protocols should be disabled.
 
 For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml configuration file describes the following details:
 
@@ -439,7 +442,84 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
     Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="configurecert"></a>Step 8. Configure certificates
+### <a name="setupfile"></a>Step 8. Set up file storage
+
+You must set up the following SMB 3.0 file shares:
+
+- A file share that stores user documents that are uploaded to AOS (for example, \\\\DAX7SQLAOFILE1\\aos-storage).
+- A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\DAX7SQLAOFILE1\\agent).
+- A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\DAX7SQLAOFILE1\\DiagnosticsStore).
+
+    > [!WARNING]
+    > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
+
+For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
+
+> [!IMPORTANT]
+> - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption. For information on how to disable SMB 1.0, see [How to detect, enable and disable SMBv1, SMBv2, and SMBv3 in Windows](/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3#how-to-remove-smbv1).
+> - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
+
+1. On the file share machine, run the following command.
+
+    ```powershell
+    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
+    ```
+
+2. Set up the **\\\\DAX7SQLAOFILE1\\aos-storage** file share:
+
+    1. In Server Manager, select **File and Storage Services** \> **Shares**.
+    2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
+    3. Leave **Allow caching of share** selected.
+    4. Select the **Encrypt data access** checkbox.
+    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except **OrchestratorType**.
+    6. Grant **Modify** permissions for the gMSA user (**contoso\\svc-AXSF$**). If your AOS are running under a domain user also add that domain user (**contoso\\AXServiceUser**).
+
+    > [!NOTE]
+    > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
+
+3. Set up the **\\\\DAX7SQLAOFILE1\\agent** file share:
+
+    1. In Server Manager, select **File and Storage Services** \> **Shares**.
+    2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
+    3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
+
+    ```powershell
+    # Specify user names
+    $AOSDomainUser = 'Contoso\AXServiceUser';
+    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
+
+    # Specify the path
+    $AosStorageFolderPath = 'D:\aos-storage';
+    $AgentFolderPath = 'D:\agent';
+
+    # Create new directory
+    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
+    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
+
+    # Create new SMB share
+    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
+    New-SmbShare –Name agent -Path $AgentFolderPath
+
+    # Set ACL for AOS storage folder
+    $Acl = Get-Acl $AosStorageFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AosStorageFolder.FullName $Acl;
+
+    # Set ACL for AgentFolder
+    $Acl = Get-Acl $AgentFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AgentFolder.FullName $Acl;
+    ```
+
+4. (Optional) Set up the **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** file share:
+
+    1. In Server Manager, select **File and Storage Services** \> **Shares**.
+    1. Select **Tasks** \> **New Share** to create a share. Name the new share **DiagnosticsStore**.
+    1. Grant **Modify** permissions for every machine in the Service Fabric cluster.
+
+### <a name="configurecert"></a>Step 9. Configure certificates
 
 1. Go to the machine that you originally unzipped the **infrastructure** folder to.
 2. Generate certificates:
@@ -478,7 +558,7 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="setupssis"></a>Step 9. Set up SSIS
+### <a name="setupssis"></a>Step 10. Set up SSIS
 
 To enable Data management and SSIS workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
 
@@ -488,7 +568,7 @@ To enable Data management and SSIS workloads, you must install SSIS on each AOS 
 
 For more information, see [Install Integration Services (SSIS)](/sql/integration-services/install-windows/install-integration-services).
 
-### <a name="setupssrs"></a>Step 10. Set up SSRS
+### <a name="setupssrs"></a>Step 11. Set up SSRS
 
 You can configure more than one SSRS node. For more information, see [Configuring High Availability for SSRS nodes](./onprem-SSRSHA.md).
 
@@ -525,7 +605,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > 
     > Instead, these scripts will grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
-### <a name="setupvms"></a>Step 11. Set up VMs
+### <a name="setupvms"></a>Step 12. Set up VMs
 
 1. Run the following command to export the scripts that must be run on each VM.
 
@@ -594,7 +674,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section.
 
-### <a name="setupsfcluster"></a>Step 12. Set up a standalone Service Fabric cluster
+### <a name="setupsfcluster"></a>Step 13. Set up a standalone Service Fabric cluster
 
 1. Download the [Service Fabric standalone installation package](https://go.microsoft.com/fwlink/?LinkId=730690) to one of your Service Fabric nodes.
 2. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
@@ -634,7 +714,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that is running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
-### <a name="configurelcs"></a>Step 13. Configure LCS connectivity for the tenant
+### <a name="configurelcs"></a>Step 14. Configure LCS connectivity for the tenant
 
 An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations through LCS. To establish connectivity from LCS to the Finance + Operations tenant, you must configure a certificate that enables the local agent to act on behalf on your Azure AD tenant (for example, contoso.onmicrosoft.com).
 
@@ -673,78 +753,6 @@ Only user accounts that have the Global Administrator directory role can add cer
 > ```powershell
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
-
-### <a name="setupfile"></a>Step 14. Set up file storage
-
-You must set up the following SMB 3.0 file shares:
-
-- A file share that stores user documents that are uploaded to AOS (for example, \\\\DAX7SQLAOFILE1\\aos-storage).
-- A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\DAX7SQLAOFILE1\\agent).
-
-    > [!WARNING]
-    > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
-
-For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
-
-> [!IMPORTANT]
-> - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption.
-> - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
-
-1. On the file share machine, run the following command.
-
-    ```powershell
-    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
-    ```
-
-2. Set up the **\\\\DAX7SQLAOFILE1\\aos-storage** file share:
-
-    1. In Server Manager, select **File and Storage Services** \> **Shares**.
-    2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
-    3. Leave **Allow caching of share** selected.
-    4. Select the **Encrypt data access** checkbox.
-    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except **OrchestratorType**.
-    6. Grant **Modify** permissions for the user AOS domain user (**contoso\\AXServiceUser**) and the gMSA user (**contoso\\svc-AXSF$**).
-
-    > [!NOTE]
-    > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
-    > 
-    > If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, you can skip adding the **AOSDomainUser** account to the fileshare ACLs.
-
-3. Set up the **\\\\DAX7SQLAOFILE1\\agent** file share:
-
-    1. In Server Manager, select **File and Storage Services** \> **Shares**.
-    2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
-    3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
-
-    ```powershell
-    # Specify user names
-    $AOSDomainUser = 'Contoso\AXServiceUser';
-    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
-
-    # Specify the path
-    $AosStorageFolderPath = 'D:\aos-storage';
-    $AgentFolderPath = 'D:\agent';
-
-    # Create new directory
-    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
-    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
-
-    # Create new SMB share
-    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
-    New-SmbShare –Name agent -Path $AgentFolderPath
-
-    # Set ACL for AOS storage folder
-    $Acl = Get-Acl $AosStorageFolder.FullName;
-    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
-    $Acl.SetAccessRule($Ar);
-    Set-Acl $AosStorageFolder.FullName $Acl;
-
-    # Set ACL for AgentFolder
-    $Acl = Get-Acl $AgentFolder.FullName;
-    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
-    $Acl.SetAccessRule($Ar);
-    Set-Acl $AgentFolder.FullName $Acl;
-    ```
 
 ### <a name="setupsql"></a>Step 15. Set up SQL Server
 
