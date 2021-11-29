@@ -3,9 +3,9 @@
 # required metadata
 
 title: Power Platform plug-in admin reference
-description: This topic provides step-by-step instructions about how to set up and configure Electronic invoicing solution in Microsoft Dataverse
+description: This topic provides information about how to set up and configure the Electronic invoicing solution in Microsoft Dataverse.
 author: germansh
-ms.date: 11/17/2021
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -111,9 +111,9 @@ To set up integration
 -   In Finance and Operations go to Organization Administration \> Setup \> Electronic document parameters \> Dataverse integration
     to set up the app used for integration with Dataverse.
     
-    -   Register a new app: [Register the app in the Azure portal](../../fin-ops-core/dev-itpro/power-platform/admin-reference#register-the-app-in-the-azure-portal.md)
+    -   Register a new app: [Register the app in the Azure portal](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#register-the-app-in-the-azure-portal).
        
-    -   Set up the Azure Key Vault and put the app secret there: [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md)
+    -   Set up the Azure Key Vault and put the app secret there: [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md).
 
     -   Set up the App ID and Secret on the Dataverse integration tab.
 
