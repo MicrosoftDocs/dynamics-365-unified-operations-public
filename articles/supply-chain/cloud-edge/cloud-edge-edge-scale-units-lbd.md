@@ -91,7 +91,7 @@ This step creates a functional LBD environment. However, the environment doesn't
 
         ```powershell
         # Host URL is your DNS record\host name for accessing the AOS
-        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
         ```
 
     1. Create a new Azure Active Directory (Azure AD) application that will enable the Alm Orchestration service to communicate with the Scale Unit Management service.
