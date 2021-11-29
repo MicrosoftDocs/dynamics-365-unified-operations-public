@@ -42,8 +42,8 @@ To share products and product related information, you must create and set up yo
 
 You can choose to share product information using either of the following sharing policies:
 
-- **Duplicate record sharing** – <!-- KFM: Add a brief description -->
-- **Single record sharing (SRS)** – <!-- KFM: Add a brief description. -->
+- **Duplicate record sharing** – Each company has its own copy of the shared product record. Each time product information is edited in any company, the update is immediately replicated across all companies' copy of that product record.
+- **Single record sharing (SRS)** – Just one shared record exists for each product in the database, and all relevant companies are able to view and edit that record.
 
 When sharing product information, we recommended using a single record sharing policy because it makes more efficient use of database resources, especially for companies with large product portfolios. However, for related data and policies that indicate how a product is managed in different companies, we recommend using a duplicate record sharing policy, so you're able to manage products differently in each company where they are used (such as for production-related policies like production pools).
 
@@ -115,16 +115,16 @@ The accounting currency for each company is set up under **General Ledger \> Led
 For companies that are part of a cross-company policy, the following cases apply:
 
 - **All companies in the policy use the same accounting currency** – There are no special limitations to consider.
-- **Companies in the policy use different accounting currencies** – Currency conversions are not applied, which implies that if there is one amount (such as the base sales price) that is shared, each company might assume a different currency and therefore a different value. For example, if the base sales price is 20, company USMF (which uses US dollars) would assume that amount is $20, while company JPM (which uses Japanese yen) would assume the amount is &#165;20, which does not represent the same value, so the item would be either too expense or too cheap for one of these companies. <!-- KFM: I rewrote this point. Please review and confirm. -->
+- **Companies in the policy use different accounting currencies** – Currency is implicit per company, rather than specified explicitly, which means that if there is one amount that is shared across companies (such as the base sales price), each company will assume a different currency. For example, if the base sales price is 20, company USMF (which uses US dollars) would assume that amount is $20, while company JPM (which uses Japanese yen) would assume the amount is &#165;20, which does not represent the same monetary value, so the item would be sold at a price that is either too expense or too cheap by one of these companies.
 
 Therefore, only one of the following applies:
 
-- **All companies that are part of a cross-company data sharing policy for sharing products must use the same accounting currency** – You must ensure the shared products are used in transactions and do not change the accounting currency. Then you can use the <!-- KFM: Text is missing. -->
+- **All companies that are part of a cross-company data sharing policy for sharing products must use the same accounting currency** – If you rely on fields that use an implicit currency (such as base sales price or purchase sales price) then you must set the same accounting currency in all companies that are part of the product sharing policy.
 - **You must not rely on the value of these fields** – Use trade agreements for purchase and sales prices and do not use the inventory price or its related processes.
 
 ### Country specific
 
-Most language-specific fields are disabled by default on product tables <!-- KFM: Are we talking about language-specific or country-specific? -->. This means that if you want to share these fields, you must add them as an extension <!-- KFM: Please clarify "add them as an extension". -->. Microsoft does not currently support this.  <!-- KFM: So, it isn't actually possible to "add them as an extension"? -->
+Most country-specific fields are disabled by default on product tables because they are not supported. This means that if you want to share these fields, you must add them as an extension <!-- KFM: Please clarify "add them as an extension". (Check with Lars-Bo) -->.
 
 ### Default unit of measure
 
@@ -208,7 +208,7 @@ The tables related to engineering versions aren't shared because they are meant 
 
   We don't recommend this setup because it disabled much of the value of engineering change management.
 
-- **Your engineering company is not part of the single record sharing policy for products** – In this case, your organization needs to have an engineering company where products are designed and managed. When a product is ready, you then do a controlled release to the rest of the companies (which is main goal of the engineering change management functionality). You may also have companies where the product introduction would be at the same time, but with no need of version level management. You could setup your engineering company so that it isn't part of the shared product policy, and then make a sharing policy that includes all companies where the product introduction is done at the same time. In this case, you could release to one company to make the product available in all the companies. Note that if you do need version management, you would still need to release the version information with the release product structure. <!-- KFM: This point was not clear in the original, so I edited it heavily. Please review and confirm this version. -->
+- **Your engineering company is not part of the single record sharing policy for products** – You could set up your engineering company so that it isn't part of the shared product policy, and then make a sharing policy that includes all companies where the product introduction is done at the same time. In this case, you could release to one company to make the product available in all the companies. Note that if you do need version management, you would still need to release the version information with the release product structure. In this case, your organization needs to have an engineering company where products are designed and managed. When a product is ready, you then do a controlled release to the rest of the companies (which is main goal of the engineering change management functionality). In this case, you would create the product in the engineering company and then release it to all the companies that are part of the sharing policy. (Note that the released product will be released to all of the companies at the same time because they are sharing the same product record.) Be aware that version-related tables are not shared (such as engineering versions), so you must not rely on version management outside of the engineering organization (or, if you need version management in all companies, then you must release version-related information with the release product structure).
 
 ### Sites and warehouses
 
