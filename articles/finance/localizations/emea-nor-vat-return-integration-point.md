@@ -5,7 +5,7 @@ title: Register an integration point in the ID-porten web portal
 description: This topic explains how to register an integration point in the ID-porten web portal in Norway. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 11/22/2021
+ms.date: 11/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,3 +57,6 @@ We recommend that you set the following parameters for your integration point fo
 
 > [!IMPORTANT]
 > Make sure that you safely store the client ID and client secret of the integration point that you create for interoperation with ID-porten. You will need these credentials in the [Set up the client ID and client secret of your ID-porten integration point in Finance](emea-nor-vat-return-setup.md#client-credentials) step of your preparation for direct submission of VAT returns to Altinn in Finance.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
