@@ -143,6 +143,10 @@ The aggregated transaction view provides the following benefits:
 - The user has a complete audit trail, from transactions, to sales orders, to sales invoices. This audit trail wasn't available in the legacy statement posting feature.
 - Aggregated XML file make it easier to identify issues during sales order creation and invoicing.
 
+The below image shows how to delete a customer order from the aggregated transactions view.
+
+![Image shows where on the screen the delete customer order function is located.](media/aggregated-transactions-delete-cust-order.png)
+
 ### Journal vouchers
 
 The **Journal vouchers** button in the **Execution details** group of the statement shows all the various voucher transactions that are created for a statement, and that are related to discounts, income/expense accounts, gift cards, and so on.
