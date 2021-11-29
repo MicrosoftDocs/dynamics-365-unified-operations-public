@@ -483,36 +483,6 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
 
-    ```powershell
-    # Specify user names
-    $AOSDomainUser = 'Contoso\AXServiceUser';
-    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
-
-    # Specify the path
-    $AosStorageFolderPath = 'D:\aos-storage';
-    $AgentFolderPath = 'D:\agent';
-
-    # Create new directory
-    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
-    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
-
-    # Create new SMB share
-    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
-    New-SmbShare –Name agent -Path $AgentFolderPath
-
-    # Set ACL for AOS storage folder
-    $Acl = Get-Acl $AosStorageFolder.FullName;
-    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
-    $Acl.SetAccessRule($Ar);
-    Set-Acl $AosStorageFolder.FullName $Acl;
-
-    # Set ACL for AgentFolder
-    $Acl = Get-Acl $AgentFolder.FullName;
-    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
-    $Acl.SetAccessRule($Ar);
-    Set-Acl $AgentFolder.FullName $Acl;
-    ```
-
 4. (Optional) Set up the **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** file share:
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
