@@ -35,7 +35,7 @@ The process for deploying on-premises environments differs between versions.
 
 For setup instructions, see: 
 - [Set up and deploy on-premises environments (Platform update 41 and later)](setup-deploy-on-premises-pu41.md)
-- [Set up and deploy on-premises environments (Platform update 12 to platform update 40)](setup-deploy-on-premises-pu12.md)
+- [Set up and deploy on-premises environments (Platform updates 12 through 40)](setup-deploy-on-premises-pu12.md)
 
 > [!NOTE]
 > The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
