@@ -40,14 +40,14 @@ The Microsoft Dataverse solution for Electronic invoicing requires the following
 conditions to be met before starting with the solution configuration:
 
 -   [Platform updates for version 10.0.23 of Finance and Operations
-    apps](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23)
+    apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md)
 
 -   Electronic invoicing for Microsoft Dynamics 365 Finance and Operations needs
     to be configured: [Get started with Electronic invoicing service
-    administration](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started-service-administration?toc=/dynamics365/finance/toc.json)
+    administration](e-invoicing-get-started-service-administration.md)
 
 -   Business events catalog is synchronized and the periodic processing batch
-    job is running: [Business events overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page)
+    job is running: [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md)
 
 ## Getting the solution
 
@@ -111,20 +111,20 @@ To set up integration
 -   In Finance and Operations go to Organization Administration \> Setup \> Electronic document parameters \> Dataverse integration
     to set up the app used for integration with Dataverse.
     
-    -   Register a new app: [Register the app in the Azure portal](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/admin-reference#register-the-app-in-the-azure-portal)
+    -   Register a new app: [Register the app in the Azure portal](../../fin-ops-core/dev-itpro/power-platform/admin-reference#register-the-app-in-the-azure-portal.md)
        
-    -   Set up the Azure Key Vault and put the app secret there: [Set up the Azure Key Vault client](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/setting-up-azure-key-vault-client)
+    -   Set up the Azure Key Vault and put the app secret there: [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md)
 
     -   Set up the App ID and Secret on the Dataverse integration tab.
 
-    -   Create an Application User in Microsoft Dataverse, associated with the App ID: [Create an application user](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user). The user should be assigned a security role having privileges to read/write the following Dataverse entities:
+    -   Create an Application User in Microsoft Dataverse, associated with the App ID: [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user). The user should be assigned a security role having privileges to read/write the following Dataverse entities:
 
         -   Electronic Invoice Submission
 
         -   Electronic Invoice Submission Document
 
 -   Create an Application User in Microsoft Dataverse, associated with the App
-    ID - **ecd93392-c922-4f48-9ddf-10741e4a9b65:** [Create an application user](https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users#create-an-application-user).
+    ID - **ecd93392-c922-4f48-9ddf-10741e4a9b65:** [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
     The user should be assigned the 'Finance and Operations Basic User' security role and a role having privileges to read/write the
     following Dataverse entities:
@@ -147,7 +147,7 @@ as virtual entities in Microsoft Dataverse.
 
 General information on how to enable virtual entities in Microsoft Dataverse can
 be referenced here: [Enable Microsoft Microsoft Dataverse virtual
-entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities).
+entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
 For the Indonesia scenario the following virtual entities are required to be
 enabled in Microsoft Dataverse:
