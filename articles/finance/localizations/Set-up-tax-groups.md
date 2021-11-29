@@ -43,22 +43,26 @@ However, the difference is that there is no additional parameter like **Use tax*
 
 Complete the steps in this section to set up a tax group.
 
-1. On the **Tax group** tab, select **Manage Column**. If this is your first time configureing a tax group, the **Manage column** page will be populated automatically.
-2. Expand **Lines** and select the **Tax group** check box.
+1. Sign into [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
+2. Go to Workspaces > Globalization features > Tax calculation.
+3. Select the feature and version which you want to set up, and click **Edit** to open the setup form.
+4. On the **General** tab, select **Configuration version**.
+5. On the **Tax group** tab, select **Manage Column**. If this is your first time configureing a tax group, the **Manage column** page will be populated automatically.
+6. Expand **Lines** and select the **Tax group** check box.
 
    ![select-tax-group](media/select-tax-group.png)
 
-3. Select the **Add** arrow to add this field into the **Selected Columns** list.
+7. Select the **Add** arrow to add this field into the **Selected Columns** list.
 
    ![add-tax-group](media/add-tax-group.png)
 
-4. Select **OK**.
+8. Select **OK**.
 
 ## Configure tax group
 
 After you set up a tax group, the tax group applicability rule matrix is created. You can add lines to the matrix to configure the tax group.
 
-1. Select **Add** and in the **Tax group** field, enter the name of the tax group.
+1. On the **Tax group** tab, select **Add** and in the **Tax group** field, enter the name of the tax group.
 
   > [!IMPORTANT]
   > We recommend you limit the length of the sales tax group name to 10 characters. This name is synchronized with Finance which has a limit of 10 characters for the sales tax group name.
