@@ -4,7 +4,7 @@
 title: Checklist for Electronic messages setup for VAT returns with direct submission to Altinn
 description: This topic contains a checklist for setting up Electronic messages functionality for VAT returns of Norway.
 author: liza-golub
-ms.date: 11/23/2021
+ms.date: 11/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,6 +27,8 @@ ms.dyn365.ops.version: AX 10.0.22
 ---
 
 # Checklist for Electronic messages setup for VAT returns with direct submission to Altinn
+
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how the [Electronic messages](../general-ledger/electronic-messaging.md) functionality is set up to support the processing of value-added tax (VAT) returns with direct submission to Altinn in Norway. You can use the information in this topic to determine whether the Electronic messages functionality is correctly set up.
 
@@ -383,3 +385,6 @@ The following table shows the setup of the data source for the **NO VAT Collect 
     | NO VAT Import final validation result | Electronic reporting import | <ul><li>**Model mapping:** Altinn VAT import validation result format (NO)</li><li>**From statuses:** NO VAT Error importing of final validation result, NO VAT Successful download of final validation</li><li>**To statuses:** NO VAT Error importing of final validation result, NO VAT Error validation of uploaded VAT return, NO VAT SUCCESSFUL VAT return submission to the Tax Administr</li></ul> |
     | NO VAT Download payment information | Web service | <ul><li>**Format mapping for URL path:** Altinn VAT interoperation (NO)</li><li>**Web service:** NO Altinn GET attachments</li><li>**File name:** vbetalingsinformasjon.xml</li><li>**File name to send:** *Not applicable*</li><li>**From statuses:** NO VAT Error file download, NO VAT Successful file download, NO VAT SUCCESSFUL VAT return submission to the Tax Administr</li><li>**To statuses:** NO VAT Error file download, NO VAT Successful file download</li></ul> |
     | NO VAT Download receipt | Web service | <ul><li>**Format mapping for URL path:** Altinn VAT interoperation (NO)</li><li>**Web service:** NO Altinn GET attachments</li><li>**File name:** kvittering.pdf</li><li>**File name to send:** *Not applicable*</li><li>**From statuses:** NO VAT Error file download, NO VAT Successful file download, NO VAT SUCCESSFUL VAT return submission to the Tax Administr</li><li>**To statuses:** NO VAT Error file download, NO VAT Successful file download</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
