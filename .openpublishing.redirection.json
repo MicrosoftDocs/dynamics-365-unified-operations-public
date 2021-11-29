@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/azure-data-lake-overview.md",
+      "redirect_url": "Azure-Data-Lake-GA-version-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md",
       "redirect_url": "/dynamics365/finance/general-ledger/general-journal-processing",
       "redirect_document_id": "false"
