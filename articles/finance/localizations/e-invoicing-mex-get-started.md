@@ -38,7 +38,16 @@ This topic provides information that will help you get started with Electronic i
 
 ## Prerequisites
 
-Before you complete the steps in this topic, you must complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+Before you complete the steps in this topic, you must complete the steps in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md) and [Get started with Electronic invoicing](e-invoicing-get-started.md).
+
+## Cadena XSLT setup
+
+To add the Cadena xslt schema to the globalization feature for CFDI processing, follow the steps:
+
+1. Download schema from the SAT web site: http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt.
+2. Compress it to a ZIP file.
+3. Save the xslt file to your Azure Storage account setup in your Service environment to the new container.
+
 
 ## RCS setup
 
@@ -130,6 +139,14 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 
 > [!NOTE]
 > Use the same steps to update the URL for **Call Mexican PAC service** action for the **Cancel** and **Cancelation request** feature setups.
+
+### Set up the path for the Cadena XLST schema
+
+1. On the **Feature version setup** page, on the **Variables** tab, select **DigitalSignatureXSLT** variable name.
+2. On the **Values** enter: {"containerUrl":"https://<AccountStorageName>.blob.core.windows.net/<ContainerName>","path":"<RelativePath>"}
+   where: <RelativePath> = folder\\folder\\filename with double backslashes, ContainerName must denote the container that is used for the service.
+   
+    Example of the variable would be: {"path":"xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\dev\\cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## Assign the Draft version to an e-Invoicing environment
 
