@@ -903,42 +903,20 @@ Only user accounts that have the Global Administrator directory role can add cer
 
 ### <a name="encryptcred"></a>Step 17. Encrypt credentials
 
-1. On any client machine, install the **axdataencipherment** certificate in the **LocalMachine\\My** certificate store.
-2. Grant the current user **Read** access to the private key of this certificate.
-3. Create the **Credentials.json** file, as shown here.
-
-    ```json
-    {
-        "AosPrincipal": {
-            "AccountPassword": "<encryptedDomainUserPassword>"
-        },
-        "AosSqlAuth": {
-            "SqlUser": "<encryptedSqlUser>",
-            "SqlPwd": "<encryptedSqlPassword>"
-        }
-    }
-    ```
-
-    - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**).
-    > [!NOTE]
-    > If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, leave the **AccountPassword** field blank. However, you need to ensure that it is present, as the installers will still look for it. We will address this in a future update.
-    - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**)
-    - **SqlPassword** – The encrypted SQL password.
-
-4. Copy the .json file to the SMB file share: **\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**.
-5. Update the **Credentials.json** file with encrypted values.
+1. Copy your infrastructure folder to an AOS node.
+2. To create the **Credentials.json** file run the following command:
 
     ```powershell
-    # Service fabric API to encrypt text and copy it to the clipboard.
-    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<AxDataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Create
     ```
 
-    > [!IMPORTANT]
-    > - Before you can invoke the **Invoke-ServiceFabricEncryptText** command, you must install the [Microsoft Azure Service Fabric software development kit (SDK)](/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
-    > - After you install the Service Fabric SDK, you might receive the following error message: "Invoke-ServiceFabricEncryptText is not recognized command." In this case, restart the computer, and try again.
-
-    > [!WARNING]
-    > After you've finished invoking all the **Invoke-ServiceFabricEncryptText** commands, remember to delete the Windows PowerShell history. Otherwise, your non-encrypted credentials will be visible.
+    The script will prompt you to enter several credentials:
+        - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**). If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, this will be skipped. However, the script will create a placeholder value, as the installers will still look for it. We will address this in a future update.
+        - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**)
+        - **SqlPassword** – The encrypted SQL password.
+    
+    > [!NOTE]
+    > The script will automatically place the Credentials.json file to the SMB file share: **\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**.
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
