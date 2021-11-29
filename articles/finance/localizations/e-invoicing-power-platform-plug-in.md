@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 This topic provides step-by-step instructions about how to set up and configure
 Electronic invoicing solution in Microsoft Dataverse.
 
-# Prerequisites
+## Prerequisites
 
 The Microsoft Dataverse solution for Electronic invoicing requires the following
 conditions to be met before starting with the solution configuration:
@@ -49,7 +49,7 @@ conditions to be met before starting with the solution configuration:
 -   Business events catalog is synchronized and the periodic processing batch
     job is running: [Business events overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page)
 
-# Getting the solution
+## Getting the solution
 
 The Microsoft Dataverse solution for Electronic invoicing must be installed from
 Microsoft AppSource.
@@ -61,7 +61,7 @@ Ensure the following solution is installed in Microsoft Dataverse.
     for electronic invoicing submissions as well as a business logic plugin
     implementing communication with the Electronic Invoicing.
 
-# Authentication and authorization
+## Authentication and authorization
 
 After the solutions are imported in the Microsoft Dataverse environment, both
 environments, Finance and Operations and Microsoft Dataverse, must be set up to
@@ -137,7 +137,7 @@ To set up integration
 
     -   Electronic Invoice Submission Document
 
-# Enabling virtual entities
+## Enabling virtual entities
 
 The Microsoft Dataverse solution for Electronic invoicing for Indonesia depends
 on a set of virtual entities which need to be enabled prior to running the
