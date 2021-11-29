@@ -3,8 +3,8 @@
 
 title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: josaw
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
