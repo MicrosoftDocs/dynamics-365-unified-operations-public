@@ -401,7 +401,7 @@ The infrastructure\\ConfigTemplate.xml configuration file describes the followin
 - The certificates that are required to help secure communications
 - The database configuration
 - The Service Fabric cluster configuration
-- The fileshares that are required for the application to work
+- The file shares that are required for the application to work
 
     > [!IMPORTANT]
     > When you configure the Service Fabric cluster, make sure that there are three fault domains for the Primary node type (**OrchestratorType**). Also make sure that no more than one type of node is deployed on a single machine.
@@ -414,7 +414,7 @@ For each Service Fabric node type, the infrastructure\\D365FO-OP\\NodeTopologyDe
 - Whether strong name validation should be enabled
 - The list of firewall ports that should be opened
 - Which permissions an account requires for a machine
-- Whether .NET Framework should be configured to use the operating system default TLS protocol.
+- Whether the .NET Framework should be configured to use the operating system's default Transport Layer Security (TLS) protocol.
 - Whether insecure TLS and SSL protocols should be disabled.
 
 For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml configuration file describes the following details:
@@ -456,7 +456,7 @@ You must set up the following SMB 3.0 file shares:
 For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
 
 > [!IMPORTANT]
-> - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption. For information on how to disable SMB 1.0, see [How to detect, enable and disable SMBv1, SMBv2, and SMBv3 in Windows](/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3#how-to-remove-smbv1).
+> - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption. For information about how to disable SMB 1.0, see [How to detect, enable and disable SMBv1, SMBv2, and SMBv3 in Windows](/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3#how-to-remove-smbv1).
 > - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
 1. On the file share machine, run the following command.
@@ -470,7 +470,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
     3. Leave **Allow caching of share** selected.
-    4. Select the **Encrypt data access** check box.
+    4. Select the **Encrypt data access** checkbox.
     5. Grant **Modify** permissions for every machine in the Service Fabric cluster except **OrchestratorType**.
     6. Grant **Modify** permissions for the gMSA user (**contoso\\svc-AXSF$**). If your AOS servers are running under a domain user, also add that domain user (**contoso\\AXServiceUser**).
 
@@ -483,7 +483,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
 
-4. (Optional) Set up the **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** file share:
+4. Optional: Set up the **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** file share:
 
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     1. Select **Tasks** \> **New Share** to create a share. Name the new share **DiagnosticsStore**.
@@ -904,20 +904,22 @@ Only user accounts that have the Global Administrator directory role can add cer
 ### <a name="encryptcred"></a>Step 17. Encrypt credentials
 
 1. Copy your infrastructure folder to an AOS node.
-2. To create the **Credentials.json** file run the following command:
+2. Create the **Credentials.json** file by running the following command.
 
     ```powershell
     .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Create
     ```
 
     The script will prompt you to enter several credentials:
-        - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**). If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, this will be skipped. However, the script will create a placeholder value, as the installers will still look for it. We will address this in a future update.
-        - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**)
-        - **SqlPassword** – The encrypted SQL password.
+
+    - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**). If you're deploying by using a recent base deployment where a gMSA account is used instead of the domain user, this prompt will be skipped. However, the script will create a placeholder value, because the installers will still look for it. Microsoft will address this issue in a future update.
+    - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**).
+    - **SqlPassword** – The encrypted SQL password.
     
     > [!NOTE]
-    > The script will automatically place the Credentials.json file to the SMB file share: **\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**.
-    > The script will request the credentials needed for the Entity Store feature but it can be skipped. For more information see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
+    > The script will automatically put the Credentials.json file in the SMB file share (**\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**).
+    >
+    > The script will request the credentials that are required for the Entity Store feature, but this request can be skipped. For more information, see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
