@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Budget funds available feature
-description: This topic introduces the budget funds available feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
+title: Budget funds available
+description: This topic introduces the budget funds available feature and provides information that can help you configure budget control to optimize management of your organization's financial resources.
 author: rcarlson
 ms.date: 11/22/2021
 ms.topic: article
@@ -27,23 +27,25 @@ ms.dyn365.ops.version: AX 10.0.24
 
 ---
 
-# Budget Funds Available 
+# Budget funds available
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-#### Enhanced calculation feature for budget funds available.
+This topic introduces the budget funds available feature and provides information that can help you configure budget control to optimize management of your organization's financial resources.
 
-The **Only track amounts in the budget funds available calculation** feature lets you track the underlying budget control tables for document types and states according to the settings marked on the **Define budget control parameters** page. 
+## Enhanced calculation feature for budget funds available
 
-Some budget control configuration settings must be set to specific values for this feature to work properly. The settings are marked or cleared in the **Budget funds available** tab on the **Define budget control parameters** page The settings that are required for the budget funds available feature are listed in the following table.
+The **Only track amounts in the budget funds available calculation** feature lets you track the underlying budget control tables for document types and states, based on the settings on the **Define budget control parameters** page.
 
-| If this setting is enabled        | This setting also needs to be enabled     |
-| :---------------------------------- | :---------------------------------- |
+Some budget control configuration options must have specific settings for the feature to work correctly. Those options are selected or cleared on the **Budget funds available** tab of the **Define budget control parameters** page. The following table shows the settings that are required for the budget funds available feature.
+
+| If this option is selected | This option must also be selected |
+| ------------------------- | -------------------------------- |
 | Budget reservations for pre-encumbrances | Budget reservations for encumbrances *and* Actual expenditures |
 | Budget reservations for encumbrances | Actual expenditures |
 | Budget reservations for encumbrances with Purchase Requisition type documents | Budget reservations for pre-encumbrances |
 
-This feature will only affect new documents.  Existing documents will still have their amounts tracked and displayed accordingly in the budget control statistics inquiry until a budget-funds-available setting is changed and the new budget control configuration is activated.  At that point documents that were removed from the budget funds available calcualtion will have their budget tracking data removed. 
+This feature affects only new documents. Amounts for existing documents will continue to be tracked and shown in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated. At that point, budget tracking data will be removed for documents that were removed from the budget funds available calculation.
 
-We recommended not marking the **Unposted actual expenditures** field. If this field *is* marked, a time-consuming budget control calculation will be performed on unposted documents, such as pending vendor invoices. 
+We recommend that you leave the **Unposted actual expenditures** option cleared. If it's selected, a time-consuming budget control calculation will be done on unposted documents, such as pending vendor invoices.
