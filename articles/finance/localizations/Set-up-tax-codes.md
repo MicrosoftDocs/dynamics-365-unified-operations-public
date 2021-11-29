@@ -41,11 +41,12 @@ Complete the steps in this section to use the tax code in a simple scenario, suc
 1. Sign into [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
 2. Go to Workspaces > Globalization features > Tax calculation.
 3. Select the feature and version which you want to set up, and click **Edit** to open the setup form.
-4. On the **Tax codes** tab, select **Add** and enter the tax code and a description.
-5. Select **Calculation origin**. The calculation origin is a group of methods that were defined in the selected tax configuration version. In this simple scenario, select the value **By net amount**.
-6. Select **Save**. More fields become available, based on the Calculation origin that you selected.
-7. Click **Add** on the **Rates** FastTab to add one tax rate for this tax code.
-8. Select **Save**.
+4. On the **General** tab, select **Configuration version**.
+5. On the **Tax codes** tab, select **Add** and enter the tax code and a description.
+6. Select **Calculation origin**. The calculation origin is a group of methods that were defined in the selected tax configuration version. In this simple scenario, select the value **By net amount**.
+7. Select **Save**. More fields become available, based on the Calculation origin that you selected.
+8. Click **Add** on the **Rates** FastTab to add one tax rate for this tax code.
+9. Select **Save**.
 
 ## Calculation origin
 
