@@ -5,7 +5,7 @@ title: Authorize interoperation with ID-porten and Altinn web services
 description: This topic explains how to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 11/23/2021
+ms.date: 11/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,6 +25,8 @@ ms.search.validFrom: 2022-11-18
 ---
 
 # Authorize interoperation with ID-porten and Altinn web services
+
+[!include [banner](../includes/banner.md)]
 
 Before you start to authorize your Microsoft Dynamics 365 Finance environment to interoperate with ID-porten and Altinn web services, make sure that you've [registered an integration point in ID-porten](emea-nor-vat-return-integration-point.md). Additionally, make sure that the **Gyldig(e) redirect uri-er** field of your integration point is set to the internet address (URL) of the **Web applications** page in the legal entity that you will interoperate with ID-porten and Altinn web services from.
 
@@ -64,4 +66,7 @@ Follow these steps to authorize your Finance environment in ID-porten and Altinn
 > The authorization of your Finance environment in your integration point in ID-porten is valid for one calendar year. This period is defined by the **Authorization levetid (sekunder)** field of your [integration point](emea-nor-vat-return-integration-point.md). You must reauthorize your Finance environment before the authorization expires.
 
 > [!IMPORTANT]
-> The authorization of your Finance environment in your integration point in ID-porten is *user-specific*. Because of this Finance also stores information about which user obtained the authorization code in ID-porten. Submission of VAT return from Finance will be allowed for only this user. In case another user must submit VAT return, this user must go through authorization process preliminary to VAT return submission.
+> The authorization of your Finance environment in your integration point in ID-porten is *user-specific*. Because of this, Finance also stores information about which user obtained the authorization code in ID-porten. The submission of VAT return from Finance is allowed for only this user. If another user must submit a VAT return, they must go through the authorization process prior to submitting the VAT return.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
