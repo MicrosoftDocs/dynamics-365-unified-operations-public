@@ -3,7 +3,7 @@
 
 title: Task management overview
 description: This topic explains the task management functionality that is available in Dynamics 365 Human Resources.
-author: twheelo
+author: twheeloc
 ms.date: 11/29/2021
 ms.topic: article
 ms.prod: 
@@ -26,241 +26,195 @@ ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
 
 ---
+# Task management
 
-
-Using Onboarding, Offboarding and Transition checklists
-
-Checklist Overview
-
-Task Management Workspace
-
-Configure checklists
-
-Setup Tasks
-
-Setup Calendar
-
-Setup Assignment Groups (Optional)
-
-Setup Task Groups (Optional)
-
-Setup Checklists
-
-Using checklists
-
-Completing tasks
-
-# Checklist Overview
+## Checklist Overview
 
 The checklist functionality consists of onboarding, offboarding, and transition checklists. The checklists contain tasks that are assigned to individuals. These tasks help 
-facilitate in the hiring, transferring, or offboarding of employees. The checklist functionality is very similar between these three areas. Listed below, is an example of how 
-checklists are used within the onboarding process. However, this same functionality can be applied to the transition or termination process as well.
+facilitate the hiring, transferring, or offboarding of employees. Checklists are very similar between the three areas of onboarding, offboarding and transitions. Listed below, is an example of how checklists can be used in the onboarding process. 
 
-As part of the onboarding process HR professionals can create tasks that track the onboarding progress of pending employees, as well as of recently hired employees. 
+As part of the onboarding process, Human Resource professionals can create tasks that track the onboarding progress of pending employees, as well as of recently hired employees. 
 The onboarding process may change based on the employee's positions or geographic location. You can create multiple onboarding checklists that can be applied to each unique 
-hiring scenario. For example, some tasks, such as completing certain tax withholding forms, must be completed for every employee that is hired in the United States. Other tasks 
+hiring scenario. For example, tasks such as completing certain tax withholding forms must be completed for every employee that is hired in the United States. Other tasks 
 might only be applicable to a few positions, such as assigning a company car to executive-level staff. In this example, two onboarding checklists can be created: US based 
 employees and Executives only. When hiring a mid-level manager, the 'US based employees' checklist can be selected. However, when hiring an executive in the US both checklists 
 would be selected to ensure that all onboarding activities will be completed.
 
-# Task Management Workspace
+## Task Management Workspace
 
-The Task Management workspace lists all tasks assigned to individuals in the onboarding, offboarding and transition processes. Within the task management workspace, the tasks 
-for each for each of these processes can be viewed by selecting the Onboarding, Transitions or Offboarding tabs in the upper left corner. By default, only HR professionals can
-view the **Task management workspace**.
+The **Task Management** workspace lists all tasks assigned to individuals in the onboarding, offboarding and transition processes. In the **Task management** workspace, the tasks for each for each of these processes can be viewed by selecting the **Onboarding**, **Transitions** or **Offboarding** tabs in the upper left corner. By default, only HR professionals can view the **Task management workspace**.
 
-The **onboarding** section has two lists of workers; workers that are **starting soon** and **recent hires**. Within these lists a single employee can be selected. Once an 
-employee is selected, the tasks related to that employee's onboarding will be displayed on the right side of the page. Also within the onboarding section is a list of 
-**all tasks** for all the starting soon or recently hired employees. There is also a list of **overdue tasks**, and tasks specifically assigned to the user that is logged 
-into the system.
+The **Onboarding** section has two lists of workers; workers that are **Starting soon** and **Recent hires**. A single employee can be selected from these lists. Once an 
+employee is selected, the tasks related to that employee's onboarding will be displayed on the right side of the page. The **Onboarding** section also contains a list of 
+**All tasks** for the **Starting soon** or **Recently hired** employees. There is also a list of **Overdue tasks**, and tasks specifically assigned to the current user.
 
-The **offboarding** section has two lists of workers; workers that are **exiting** the company and those that have already **exited.** Within these lists a single employee 
-can be selected. Once an employee is selected, the tasks related to that employee's offboarding will be displayed on the right side of the page. Also, within the offboarding 
-section is a list of **all tasks** for all of the exiting or exited employees. There is also a list of **overdue tasks**, and tasks specifically assigned to the user that is
-logged into the system.
+The **Offboarding** section has two lists of workers who:
+ - are **Exiting** the company 
+ - have already **Exited**
 
-The **transitions section** has a list of **all tasks** for all employees that will be changing positions or have recently changed a position. There is also a list of 
-**overdue tasks**, and tasks specifically assigned to the user that is logged into the system.
+In the list, a single employee can be selected. Once an employee is selected, the tasks related to the employee's offboarding will be displayed. 
+Checklists that are available within the **Offboarding** section include: 
+ - **All tasks** for all of the exiting or exited employees
+ - **Overdue tasks**
+ - Tasks that specifically assigned to the current user 
 
-In each of these sections HR assistants and managers can perform the following functions:
+The **Transitions** section has a list of **All tasks** for the employees who will be changing positions or have recently changed a position. There is also a list of 
+**Overdue tasks**, and tasks specifically assigned to the current user.
 
-**Apply a checklist** to an employee
+In each of these sections, HR assistants and managers can perform the following functions:
+ - **Apply a checklist** to an employee
+ - **Update the status** of the task
+ - **Reassign** the task
+ - **Update** the due date
 
-**Update the status** of the task
+> [!Note:] 
+> By default, the **Onboarding** section shows workers who were hired in the last seven days. To change this setting, go to the **Human resources parameters** page, 
+select the **General** tab, and enter a time frame for **Recent hires**. The information in the **Recent hires** section can be shown for a specific number of days, months, or years. For example, to view the list of workers who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. The list of **Exited** and **Exiting** workers can also have the date range updated on the **Human resource parameters** page. Also note that these settings apply to the **Personnel Management** workspace.
 
-**Reassign** the task
+## Configure Checklists
 
-**Update** the due date
-
-Note: By default, the **onboarding** section shows workers who were hired in the last seven days. To change this setting, navigate to the **Human Resources parameters** page, 
-select the **General** tab, and define a time frame for **Recent hires**. The data in the **Recent hires** section can be shown for a specific number of days, months, or years.
-For example, to view the list of workers who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. The Exited and Exiting 
-workers lists can also have the date range updated within the Human Resource parameters page. Also note that these settings apply to the Personnel Management workspace.
-
-# Configure Checklists
-
-A **checklist** is a group of **tasks**. You can create as many checklists as you need and assign the same tasks to multiple checklists. For example, a company may want to 
+A **Checklist** is a group of **Tasks**. You can create as many checklists as needed and assign the same tasks to multiple checklists. For example, a company may want to 
 create separate checklists for seasonal employees and regular full-time employees. These checklists may have some of the same tasks, such as verifying the arrival time of the
-new employee. However, some additional tasks might only apply to the full-time employees. To address this situation, you can create two checklists that include some of the same
-tasks, as well as tasks specific to the employee type. The **checklist** is flexible way to group tasks and you can reuse when you hire additional employees.
-
-## 
+new employee. However, some additional tasks might only apply to the full-time employees. You can create two checklists that include some of the same
+tasks, as well as tasks specific to the employee type. The **Checklist** is flexible way to group tasks and that can be reused when you hire additional employees.
 
 ## Tasks
 
-A checklist contains a grouping of tasks. Tasks can be created individually and re-applied across multiple checklists. To create a task, navigate to the Onboarding Setup page,
-select the Tasks tab and select new. Tasks can also be added directly to a checklist. To create a task directly within a checklist, navigate to Onboarding Setup, select the 
-Checklist tab and either create a new checklist to add the task to or add the task to an existing checklist.
+A checklist contains a grouping of tasks. Tasks can be created individually and be used in multiple checklists. To create a task, go to the **Onboarding setup** page,
+select the **Tasks** tab and select **New**. Tasks can also be added directly to a checklist. To create a task directly within a checklist, go to **Onboarding setup**, select the **Checklist** tab and either create a new checklist to add the task to or add the task to an existing checklist.
 
-Note: When adding a task directly to a checklist, it will not be available for selection in other checklists.
+> [!Note:] 
+> When adding a task directly to a checklist, you cannot select it in other checklists.
 
-Within a task there are the following fields:
+In a task, there are the following fields:
 
-| Task name       | Name of the task.                                                                                                                                              |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Description     | Description of the task                                                                                                                                        |
-| Optional        | This indicates that this task is Optional. This is informational only.                                                                                         |
-| Task link       | This can be a URL to an external site or a specific page within the application that the user should navigate to.                                              |
-| Assignment type | Tasks can be assigned to a specific Worker, a Position, a Group, Manager, or to the Employee that is part of the onboarding, offboarding or transition 
-process |
-| Assigned To     | This is the worker, position, or group that the task is assigned to                                                                                            |
-| Contact Person  | If there are questions about a task, this is the person that should be contacted                                                                               |
-| Due date offset | The number of days before or after the onboarding, termination, or transition date that the task is due.                                                       |
-| Instructions    | Instructions that should be followed to complete the task.                                                                                                     |
+| Task name       | Name of the task                                                                                                |
+|-----------------|----------------------------------------------------------------------------------------------------------------|
+| **Description**     | Description of the task                                                                |
+| **Optional**        | This indicates that this task is optional and is informational only.                                                        |
+| **Task link**       | This can be a URL to an external site or a specific page within the application that the user should navigate to.                             |
+| **Assignment type** | Tasks can be assigned to a specific **Worker**, **Position**, **Group**, **Manager**, or to an **Employee** that is part of the onboarding, offboarding or transition process. |
+| **Assigned To**     | The **Worker**, **Position**, or **Group** that the task is assigned to.                                                              |
+| **Contact Person**  | If there are questions about a task, this is the person that should be contacted                               |
+| **Due date offset** | The number of days before or after the onboarding, termination, or transition date that the task is due.                  |
+| **Instructions**    | Instructions that should be followed to complete the task.                                                                             |
 
-### More about task links:
+### Task link
 
-**Tasks links** provide a link to a URL or to a specific page within the Dynamics 365 application. A task link would be used if you want the person assigned to the task to 
-navigate to a specific web page or D365 application page to complete the task. When creating a **task link** there will be an option to select a **Menu item, URL, or Worker 
-details**. If **Menu item** is selected a list of all pages within the application will be displayed. If **URL** is selected, enter in the URL that you would like receiver of
-the task to navigate to. This can be a URL that is not part of the Dynamics 365 application. Lastly, if 'Worker details' is selected, the user will be presented with two 
-options: **Employee self Service actions** or **Worker management actions.** The **Employee self-service actions** option provides a list of all pages that are available in
-Employee Self-Service. You would select this option if the task were being assigned to the onboarded employee needs to be completed in ESS. As an example, you may want the
-employee to fill out their personal contact information. To enable this scenario, select '**Employee Self Service Actions'** and then select 
-**Personal Details&gt;Personal Information.** Alternatively, the **Worker management actions** option provides a list of all pages that are related to the worker's record that
-are not accessible to the employee. For example, you may want the receiver of the task to enter information that is specific to an onboarded worker such as compensation.
-To enable this scenario select '**Worker management actions'** and then select **Compensation&gt;Fixed compensation**.
+**Task link** provide a link to a URL or to a specific page within the Dynamics 365 application. A **Task link** would be used if you want the person assigned to the task to 
+navigate to a specific web page or Dynamics 365 application page to complete the task. When creating a **Task link** there will be an option to select a **Menu item**, **URL**, or **Worker details**. 
+
+If **Menu item** is selected, a list of all pages within the application will be displayed. 
+If **URL** is selected, enter in the URL that you would like the person assigned to the task to navigate to. This can be a URL that is not part of the Dynamics 365 application. If **Worker details** is selected, the user will be presented with two options: 
+ - **Employee self service actions** - this option provides a list of pages that are available in **Employee self service**. You would select this option if the task that was assigned to the onboarded employee needs to be completed in **Employee self service**. 
+For example, you may want the employee to fill out their personal contact information. To complete this scenario, select **Employee self service actions**, then select **Personal Details&gt;Personal Information.** 
+ - **Worker management actions** - this option provides a list of pages that are related to the worker's record that are not accessible to the employee. For example, you may want the task owner to enter information that is specific to an onboarded worker such as compensation. To enable this scenario, select '**Worker management actions'** and then **Compensation&gt;Fixed compensation**.
 
 ### More about assignment types
 
-As discussed previously checklists group tasks together. When an employee is hired, terminated, or transferred one or more checklists can be selected. Once the checklist is
-selected, and the hiring, terminating, or transition process is completed, tasks will be created and assigned to users to track progress for the process. When a task is created
-it will be assigned to a specific user in the system. The user that is assigned the task is dependent upon the **Assignment type** selected in the task. The options for the
-assignment type are **Worker**, **Position, Group (of positions)**, the affected employee's **Manager** or the **Employee** that is being hired/terminated/transitioned. 
-For example, an IT engineer will always be the person that prepares the laptops for a new employee. When creating this task, select **Position** for the **Assignment type**,
-and then select IT engineer from the **Position** list. When an employee is hired, and the checklist is assigned, the laptop configuration task will be assigned to the worker
-who is in the IT engineer position at the time the hire action was entered in the system. You can also assign a task to a specific worker by selecting **Worker** in the
-**Assignment type** field, and then selecting the appropriate individual. If **Manager** is selected, the manager of the employee that is being hired, terminated, or
-transitioned will receive the task.
+When an employee is hired, terminated, or transferred one or more checklists can be selected. Once a checklist is selected, and the hiring, terminating, or transition process is completed, tasks will be created and assigned to users to track progress. 
 
-Important: If the hired/terminated/transitioned employee does not have a position assigned at the time a checklist is applied, the manager cannot be determined, and the task
+When a task is created it will be assigned to a specific user. The user that is assigned the task depends on the **Assignment type** selected in the task. 
+The options for the **Assignment type** are: 
+ - **Worker**
+ - **Position 
+ - **Group (of positions)** 
+ - the affected employee's **Manager** 
+ - the **Employee** that is affected 
+
+For example, an IT engineer will always be the person that prepares the laptops for a new employee. When creating this task, select **Position** for the **Assignment type**,
+and then select IT engineer from the **Position** list. When an employee is hired, and the checklist is assigned. The laptop configuration task will be assigned to the worker
+who is in the IT engineer position at the time the hire action was entered. You can also assign a task to a specific worker by selecting **Worker** in the
+**Assignment type** field, and then selecting the appropriate individual. If **Manager** is selected, the manager of the employee that is being hired, terminated, or
+transitioned will be assigned the task.
+
+> [!Important:] 
+> If the hired/terminated/transitioned employee does not have a position assigned at the time a checklist is applied, the manager cannot be determined, and the task
 will be assigned to the checklist owner.
 
-Lastly, if '**Employee self-service'** is selected as the assignment type, the employee that is being hired/terminated/transitioned will be assigned the task.
+If **Employee self service** is selected as the **Assignment type**, the employee that is being hired/terminated/transitioned will be assigned the task.
 
-### 
-
-### More about task due dates and the due date offset field
+### Task due dates and the **Due date offset** field
 
 Task due dates are based on the employment start date, termination date, or date of transition. Some tasks must be completed before an employee's start date, while others can
 be completed later. When defining a task, you'll enter a due date that is relative to the start date, termination date or transition date in the **Due date offset** field. 
-For example, assume that an IT engineer must prepare a new employee's laptop two days before their start date. The task created will have a due date offset from start date 
-of -2. Therefore, if an employee's start date is May 5<sup>th</sup>, the IT task will be due on May 3<sup>rd</sup>. Note: Due dates can also be adjusted after the task is 
-created.
+For example, an IT engineer needs to prepare a new employee's laptop two days before their start date. The task created will have a due date offset from start date 
+of -2. Therefore, if an employee's start date is May 5<sup>th</sup>, the IT task will be due on May 3<sup>rd</sup>.
 
-Note: Working and non-working days can be defined in calendar setup. Working days are included in calculating the due date. Non-working days are excluded. Learn more about
-Calendars(hyperlink needed)
+> [!Note:] 
+> Due dates can be adjusted after the task is created.
 
-More about instructions
+### Instructions
 
 Complex tasks might require multiple steps or need the individual performing the tasks to provide additional information. You can add **Instructions** to the task, and 
-include rich text formatting for the instructions, as well. The instructions can provide additional information on how to complete the task to the person who is assigned 
-to complete it.
+include rich text formatting for the instructions. The **Instructions** can provide additional information on how to complete the task to the person who is assigned 
+to it.
 
-## 
+### Setup calendar 
 
-## Setup Calendar 
+The calendar is used to calculate the due date of the tasks. Calendars allow certain days to not be included when calculating due dates – such as weekends or holidays. Calendars 
+are then associated to a checklist so that all tasks in the checklist calculate the due dates the same. Multiple calendars can be set up but only 
+one can be associated to a checklist. 
 
-The calendar is used to calculate the due date of the tasks. Calendars allow certain days to be skipped in calculating due dates – such as weekends or holidays. Calendars 
-are then associated to a checklist so that all tasks in the checklist use the same logic for calculating due dates. Multiple calendars can be setup in the system but only 
-one can be associated to a checklist
+Working and non-working days are defined in **Calendar setup**. Working days are included in calculating the due date. Non-working days are excluded. Learn more about
+Calendars(hyperlink needed)
 
-## Setup Assignment Groups (Optional)
+## Setup assignment groups (Optional)
 
 Sometimes there are a group of individuals that are responsible for a task. For example, you may have a group of individuals who are responsible for setting up laptops 
 for new hires. A group called **IT Laptop** can be created.
 
-Within the **Group assignment** page, select New. Give the group a name (IT Laptop) and a description and select **Save.** Navigate to the **Members** fast tab and 
-select **'Add'.** Select all **Positions** that are responsible for setting up laptops. Once the group is created, it is available for selection when creating a **task**.
-To select a specific **group** in a task, the **assignment type** must be set to '**Group**'. Once 'Group' is selected for the assignment type, the '**Assigned to'** field 
+Within the **Group assignment** page, select **New**. Enter a name (IT Laptop) and a description for the group and select **Save.** Go to the **Members** FastTab and 
+select **'Add'.** Select all **Positions** that are responsible for setting up laptops. Once the group is created, it is available to select when creating a **Task**.
+To select a specific **Group** for a task, the **Assignment type** must be set to '**Group**'. Once **Group** is selected for the **Assignment type**, the **Assigned to** field 
 will list the IT Laptop group that was created.
 
-**Important things to note:**
+> [!Important:] 
+> When a task is assigned to a group, the task is completed when ONE person in the group completes the task.  At the time of hire/termination/transition, tasks are created. During this process, the assignment group will be read. Tasks will be created for the users that are assigned to the positions contained in the group.
 
--   When a task is assigned to a group, the task becomes completed when ONE person in the group completes the task.
+## Setup checklists
 
--   At discussed earlier, at the time of hire/termination/transition, tasks are created. During this process, the assignment group will be read, and tasks will be created
--    for the users that are assigned to the positions contained in the group.
+A **Checklist** is a group of tasks. You can create as many checklists as you need and assign the same tasks to multiple checklists. When a checklist is created, you will set an **Owner** and a **Calendar**.
 
-## Setup Checklists
+The **Owner** will be assigned tasks when an individual cannot be assigned a task. This happens when the **Task assignment** field is set to **Position**, **Manager** or **Group**, and an individual cannot be derived from this assignment type. 
 
-A **checklist** is a group of tasks. You can create as many checklists as you need and assign the same tasks to multiple checklists. For example, a company may want to 
-create separate checklists for seasonal employees and regular full-time employees. These checklists may have some of the same tasks, such as verifying the arrival time of the 
-new employee. However, some additional tasks might only apply to the full-time employees. To address this situation, you can create two checklists that include some of the same
-tasks, as well as tasks specific to the employee type. The **checklist** is flexible way to group tasks and you can reuse when you hire additional employees.
-
-When create a checklist you will set an **owner** and a **calendar**.
-
-The owner will be assigned tasks when an individual cannot be assigned a task. This can happen when task assignment is set to position, manager or group, and an individual
-cannot be derived from this assignment type. Some scenarios that can cause this are:
-
+Some situations that can cause this are:
 -   The employee being hired or terminated does not have a position assigned. Without a position assignment, their manager cannot be determined.
+-   The **Assignment type** is set to **Position**, but there isn't an employee assigned to the position at the time the task is created. 
+   Example: The Setup Laptop task is assigned to Position Number 000876/Technical Support Specialist. At the time an employee is hired, there isn't an employee that is assigned to 000876. A task will then be created for the checklist owner.
+-   The **Assignment type** is set to **Group**, but there isn't an employee assigned to the position(s) contained in the group at the time the tasks are created. This is the same as above, but the position is part of a group of positions.
 
--   The assignment type is set to position, but there isn't an employee assigned to the position at the time the tasks are created. Example: The Setup Laptop task is
--    assigned to Position Number 000876/Technical Support Specialist. At the time an employee is hired, there isn't an employee that is assigned to 000876. A task will be
--     created for the checklist owner in this scenario.
+The calendar is used to calculate the due date of tasks. Calendars allow certain days to be skipped in calculating due dates – such as weekends or holidays. 
+Calendars are then associated to a checklist template so that all tasks in the checklist calculate the due dates the same. Multiple calendars can be set up but only one can be associated to a checklist.
 
--   The assignment type is set to group, but there isn't an employee assigned to the position(s) contained in the group at the time the tasks are created. This is the same
--    scenario as above, but the position is part of a group of positions.
+## Setup task groups (Optional)
 
-The calendar is used to calculate the due date of the tasks. Calendars allow certain days to be skipped in calculating due dates – such as weekends or holidays. 
-Calendars are then associated to a checklist template so that all tasks in the checklist use the same logic for calculating due dates. Multiple calendars can be setup in 
-the system but only one can be associated to a checklist.
-
-## Setup Task Groups (Optional)
-
-An onboarding process can encompass many tasks. You can create optional task groups that help categorize related tasks and make it easier to assign all the tasks to a
-checklist that are needed to bring a new employee into your organization. For example, there are tasks that HR, IT, and Payroll each need to complete. **Task groups** are user
-defined, so the following tasks groups could be created: HR, IT, and Payroll. When creating a task, one of these **tasks' groups** can be associated with that task. Therefore, 
-when you add the task to a checklist, the list of tasks can be filtered by the group that it's assigned to. For example, when creating a Checklist template, all IT tasks in the
+An onboarding process can include many tasks. You can create optional task groups that can categorize related tasks. This can make it easier to assign all the tasks to a
+checklist that are needed to hire a new employee. For example, there are tasks that HR, IT, and Payroll each need to complete. **Task groups** are user
+defined, so the following **Task groups** could be created: HR, IT, and Payroll. When creating a task, one of these **Task groups** can be associated with that task. 
+When you add a task to a checklist, the list of tasks can be filtered by the group that it's assigned to. For example, when creating a Checklist template, all IT tasks in the
 IT Group can be viewed and only the relevant IT tasks selected.
 
-## 
+### Using onboarding checklists
 
-## Using Onboarding checklists
+When a worker is hired, terminated or changes positions, one or more checklists can be selected. Task due dates and worker assignments are created once the hiring, termination
+or change position process is complete. For example, when you select the **Hire** or **Hire and add details** button, tasks are created for individuals based on the **Assignment type**. 
 
-When a worker is hired, terminated or changes positions one or more checklists can be selected. Task due dates and worker assignments get created once the hiring, termination
-or change position process is complete. For example, when you select the hire or hire and add details button tasks will be created for individuals based on the assignment type
-in the task setup. A due date will also be assigned to each task by adding or subtracting the offset days from the employee's start date (see the information regarding offset
-days in the task section). If you are using personnel actions, the tasks will be created when the Complete button is selected or when the action is approved.
+A **Due date** will be assigned to each task by adding or subtracting the offset days from the employee's start date (See the information regarding **Offset
+days** earlier in this topic). If you are using personnel actions, the tasks will be created when the **Complete** button is selected or when the action is approved.
 
-Within the Task management workspace a checklist can be applied to the worker by selecting the employee in the simple list and details page, and selecting Apply checklist. 
-A Target date needs to be entered. The Target date is the date that will be used for calculating the due dates of the tasks. Typically, this date should match the hire, 
+Within the **Task management** workspace a checklist can be applied to the worker by selecting the employee in the simple list and details page, and selecting **Apply checklist**. 
+A **Target date** needs to be entered. The **Target date** is the date that will be used for calculating the due dates of the tasks. Typically, this date should match the hire, 
 termination, or transition date of the employee.
 
-Checklists and tasks can also be added to the worker by navigating to the Worker page and selecting Checklists from the menu. A checklist can be applied to the worker by 
-selecting Apply checklist. A Target date needs to be entered. The Target date is the date that will be used for calculating the due dates of the tasks. Typically, this date
-should match the hire, termination, or transition date of the employee.
-
-## 
+Checklists and tasks can also be added to the worker by navigating to the **Worker** page and selecting **Checklists** from the menu. 
 
 ## Completing tasks
 
-When a task is assigned to an employee, their assigned tasks can be viewed on the Employee self-service page. Employees that have been assigned a task can see the task, its
-description, instructions, contact person, and they can open the associated Dynamics 365 page or external web page from their Employee self-service page. Tasks can be marked 
-as in progress, canceled, or completed. Tasks can also be reassigned.
+When a task is assigned to an employee, their assigned tasks can be viewed on the **Employee self service** page. Employees that have been assigned a task can see the **Task**, 
+**Description**, **Instructions**, **Contact person**, and can open the associated Dynamics 365 page or external web page from the **Employee self service** page. Tasks can be marked as **In progress**, **Canceled**, or **Completed**. Tasks can also be reassigned.
 
-If the task was assigned to a Group, the task will be set to completed when ONE person in the group completes the task.
+If the task was assigned to a **Group**, the task will be set to **Completed** when one person in the group completes the task.
 
 
 
