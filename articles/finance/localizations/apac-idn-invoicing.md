@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 10.0.23
 
 ---
 
-# Invoicing for Indonesia
+# VAT declaration for Indonesia (ID-00004)
 
 Implemented functionality includes the following capabilities:
 
@@ -43,7 +43,7 @@ Implemented functionality includes the following capabilities:
 3.  Export of sales invoices and import of vendor invoices using Regulatory
     Configuration Service (RCS)
 
-# Prerequisites
+## Prerequisites
 
 1.  Before using this functionality enable the following features:
 
@@ -60,7 +60,7 @@ Implemented functionality includes the following capabilities:
 2.  Enabling Electronic Invoicing for Indonesia.
 3.  [Configure Electronic invoicing solution in Microsoft Dataverse](e-invoicing-power-platform-plug-in.md)
 
-# Tax invoice numbering
+## Tax invoice numbering
 
 Tax invoice numbers are generated according to the structure of tax serial
 number of tax invoices that is given by **Directorate General of Taxation**
@@ -191,7 +191,7 @@ Transaction code in FTI header:
 
 ![Transaction code in FTI](media/apac-idn-fti-transaction-code.png) ​
 
-# Invoice cancelation, Credit note (item returns) and invoice replacement
+## Invoice cancelation, Credit note (item returns) and invoice replacement
 
 Before creation of credit notes for cancelation due to error in posted invoice
 or invoice replacement it is necessary to set up financial reasons (Accounts
@@ -250,7 +250,7 @@ Example of credit invoicing form that is open from a FTI:
 
 ![credit invoicing](media/apac-idn-credit-invoicing.png)
 
-# Enabling Electronic Invoicing for Indonesia
+## Enabling Electronic Invoicing for Indonesia
 
 This topic provides information that will help you get started with Electronic
 invoicing for Indonesia. It guides you through the configuration steps that are
@@ -259,13 +259,13 @@ Finance. It also guides you through the steps that you must follow in Finance to
 export sales invoices through the service, and it explains how to review the
 processing results and the status of invoices.
 
-## Prerequisites
+### Prerequisites
 
 Before you complete the steps in this topic, you must complete the steps in [Get
 started with Electronic
 invoicing](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started).
 
-## RCS setup
+### RCS setup
 
 During the RCS setup, you will complete the following tasks:
 
