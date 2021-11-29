@@ -4,7 +4,7 @@
 title: Submit a VAT return to the Altinn web service
 description: This topic explains how to submit a VAT return to the Altinn web service of Norway.
 author: liza-golub
-ms.date: 11/23/2021
+ms.date: 11/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ The processing for a VAT return that is submitted to Altinn consists of many ste
 
 ![Schema of the EM processing that is delivered with the NO VAT return – Altinn setup file.](media/emea-nor-vat-return-em-processing.png)
 
-Note, that not all the relationships between actions defined in **NO VAT return** processing are included into the diagram.
+Not all the relationships between the actions defined in **NO VAT return** processing are included into the diagram.
 
 To simplify the process of submitting VAT returns, most of actions are aggregated into inseparable sequences. When the first action in a sequence is initiated, the system automatically runs all the actions in that sequence. Therefore, the process is significantly simplified, and the required steps are reduced to the following list:
 
@@ -145,7 +145,7 @@ Follow these steps to perform the **NO VAT Generate VAT return** action.
 This step consists of the **NO VAT Validation** sequence, which includes the following actions:
 
 - **NO VAT Send validation request** – This action transfers the `mvamelding.xml` file to the Tax Administration API, receives the `valideringsresultat.xml` file that contains the results of the business validation that is performed on the `mvamelding.xml` file, and attaches the `valideringsresultat.xml` file to the electronic message.
-- **NO VAT Import validation response** – This action parses information from the `valideringsresultat.xml` file and updates the status of the electronic message. If the business validation that the Tax Administration performs is passed, this action updates the status to **NO VAT Return validation passed successfully**. If errors are identified during the business validation, this action updates the status to **NO VAT Error VAT return validation**, applies an Extensible Stylesheet Language Transformations (XSLT) transformation to the `valideringsresultat.xml` file, and attaches the transformed file to the action log for the record so that the user can review it further as `valideringsresultat_transformed.html` file attached to the action log for **NO VAT Import validation response** action.
+- **NO VAT Import validation response** – This action parses information from the `valideringsresultat.xml` file and updates the status of the electronic message. If the business validation that the Tax Administration performs is passed, this action updates the status to **NO VAT Return validation passed successfully**. If errors are identified during the business validation, this action updates the status to **NO VAT Error VAT return validation**, applies an Extensible Stylesheet Language Transformations (XSLT) transformation to the `valideringsresultat.xml` file, and attaches the transformed file to the action log for the record. You can then review it further as the `valideringsresultat_transformed.html` file attached to the action log for the **NO VAT Import validation response** action.
 - **NO VAT Generate request for instance** – This action prepares a request for the next step in the process, [Submit the VAT return](#submit-vat-return).
 
 Follow these steps to validate the VAT return in the Tax Administration web service.
@@ -196,7 +196,7 @@ Follow these steps to submit the VAT return.
 
     The **NO VAT Send feedback status request** action is predefined in the **Run processing** dialog box.
 
-4. Select **OK**. Submission VAT return is completed when the electronic message has a status of **NO VAT SUCCESSFUL VAT return submission to the Tax Administr**.
+4. Select **OK**. The VAT return submission is complete when the electronic message has a status of **NO VAT SUCCESSFUL VAT return submission to the Tax Administr**.
 
 ## <a id="download-attachments"></a>Download attachments
 
