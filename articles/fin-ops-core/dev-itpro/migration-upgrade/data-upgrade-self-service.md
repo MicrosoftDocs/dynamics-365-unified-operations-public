@@ -102,10 +102,10 @@ Before you begin the replication process, note that the LCS environment will be 
 
 1. Run the **AX2012DataMigration.exe** application.
 
-    A console window will open, and it asks for the cloud environment    
+    A console window will open where you can provide the cloud environment type.  
         - Public : **\[ lcs.dynamics.com \]** 
         - GCC : **\[ gov.lcs.microsoftdynamics.us \]**    
-    Provide the cloud environment type and it prompts you to sign in.
+    After you enter the cloud environment, you will receive a prompt to sign in.
 
 2. Provide the credentials that are used to sign in to LCS.
 
