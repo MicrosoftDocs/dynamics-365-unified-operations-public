@@ -33,9 +33,7 @@ ms.dyn365.ops.version: Human Resources
 The checklist functionality consists of onboarding, offboarding, and transition checklists. The checklists contain tasks that are assigned to individuals. These tasks help 
 facilitate the hiring, transferring, or offboarding of employees. Checklists are very similar between the three areas of onboarding, offboarding and transitions. Listed below, is an example of how checklists can be used in the onboarding process. 
 
-As part of the onboarding process, Human Resource professionals can create tasks that track the onboarding progress of pending employees, as well as of recently hired employees. 
-The onboarding process may change based on the employee's positions or geographic location. You can create multiple onboarding checklists that can be applied to each unique 
-hiring scenario. For example, tasks such as completing certain tax withholding forms must be completed for every employee that is hired in the United States. Other tasks 
+As part of the onboarding process, Human resources professionals can create tasks that track the onboarding progress of pending employees, as well as of recently hired employees. The onboarding process may change based on the employee's positions or geographic location. You can create multiple onboarding checklists that can be applied to each unique hiring scenario. For example, tasks such as filling out tax withholding forms that must be completed for every employee that is hired in the United States. Other tasks 
 might only be applicable to a few positions, such as assigning a company car to executive-level staff. In this example, two onboarding checklists can be created: US based 
 employees and Executives only. When hiring a mid-level manager, the 'US based employees' checklist can be selected. However, when hiring an executive in the US both checklists 
 would be selected to ensure that all onboarding activities will be completed.
