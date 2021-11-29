@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 11/23/2021
+ms.date: 11/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -125,7 +125,7 @@ When the feature is enabled in your Finance environment, tax transactions that a
 
 - **Tax code** – The sales tax code.
 - **Tax classifier** – An enumerated list of values that represent different combinations of tax transaction directions and credit note criteria in Finance. For more information about how the tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
-- **Reason** – The reason consists of financial reason codes defined in your Finance in **Organization administration** > **Setup** > **Financial reasons** and used in tax transactions that are posted in the system.
+- **Reason** – The reason consists of financial reason codes that are defined in your Finance environment and used in tax transactions that are posted in the system. To set up financial reason codes, go to **Organization administration** > **Setup** > **Financial reasons**.
 
 Define conditions from the current company's master data sources to determine which value from the enumerated list of values that the Norwegian Tax Administration requires must be reported for the corresponding combination of master data from your Finance environment.
 
@@ -153,9 +153,9 @@ The following table shows the lookup results for **NoteForTaxCode_Lookup**.
 | Annet | Other |
 
 > [!IMPORTANT]
-> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because **Reasom** is not mandatory field in tax transactions, add one more line with **Annet** (**Other**) lookup result value, **\*Blank\*** in **Reason** column and **\*Not blank\*** in all the other columns.
+> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because **Reasom** is not a mandatory field in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in the **Reason** column, and **\*Not blank\*** in all the other columns.
 
-If used select a financial reson code for a document that is not assosiated with any lookup result from the previous table (this means that **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node, and the comment will be reported \"as-is\" in the related **Reason comment** field of the original document.
+If you select a financial reson code for a document that isn;t assosiated with any lookup result from the previous table (this means that **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node, and the comment will be reported \"as-is\" in the related **Reason comment** field of the original document'
 
 #### <a id="tax-transaction-classifier"></a>Detailed description of the tax transaction classifier
 
@@ -202,7 +202,7 @@ The following table shows the lookup results for **VATSpecification_Lookup**.
 | Annet | Other |
 
 > [!IMPORTANT]
-> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because in some cases **Item sales tax group** and **Sales tax group** fields can be empty in tax transactions, add one more line with **Annet** (**Other**) lookup result value, **\*Blank\*** in **Item sales tax group** and **Sales tax group** columns and **\*Not blank\*** in all the other columns.
+> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because in some cases, the **Item sales tax group** and **Sales tax group** fields can be empty in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in **Item sales tax group**, and **Sales tax group** columns and **\*Not blank\*** in all the other columns.
 
 > [!IMPORTANT]
 > Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administaration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
@@ -393,7 +393,7 @@ If any of these file types aren't defined on the **File types** tab, add them.
 The Tax Administration web service validates VAT returns. This web service then sends the validation results in XML format. To make it easier for users to read and analyze the validation results, you can download and use an Extensible Stylesheet Language Transformations (XSLT) transformation.
 
 1. In [LCS](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
-2. In the list of data package files, find **NO VAT validation result converter**, and download it to your computer (it is `NO VAT validation result converter.zip` file).
+2. In the list of data package files, find **NO VAT validation result converter**, and download it to your computer. The file name is, **NO VAT validation result converter.zip**.
 3. Unarchive the `NO VAT validation result converter.zip` file to get the `NO VAT validation result converter.xslt` file.
 4. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, and select **NO VAT Import validation response action**.
 5. Select **Attachments**.
