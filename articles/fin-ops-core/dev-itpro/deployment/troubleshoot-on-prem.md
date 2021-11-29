@@ -584,20 +584,25 @@ Some examples of encryption errors include "AXBootstrapperAppType," "Bootstrappe
 
 You might receive one of these errors if the data encipherment certificate that was used to encrypt the AOS account password wasn't installed on the machine. This certificate might be in the certificates (local computer), or the provider type might be incorrect.
 
-To resolve the error, validate the credentials.json file. Verify that the text is correctly decrypted by entering the following command (on AOS1).
+To resolve the error, validate the credentials.json file. Copy your infrastructure folder to an AOS node, or execute the script from an AOS node if your infrastructure folder is in located in a fileshare.
 
-```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
-```
+1. Verify that the text is correctly decrypted by entering the following command (on AOS1).
+
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
+    ```
+
+2. Open the **Credentials.json** file and confirm that the credentials are correct.
+
+3. Encrypt the **Credentials.json** file again:
+
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
+    ```
+
+4. If any of the credentials had to be updated, you need to trigger a servicing operation. If there is an ongoing servicing operation that is failed, simply retrying from [LCS](https://lcs.dynamics.com) will ensure the credentials are updated. If the environment is already in a deployed state then in [LCS](https://lcs.dynamics.com), click the "Full Details" link for the environment you want to update the SQL Server. Then select **Maintain** and choose **Update Settings**. Do not change any settings and select **Prepare**. Wait for the preparation to complete and click **Update environment** to start updating your environment.
 
 This error can also occur if the **''** parameter isn't defined in the ApplicationManifest file. To determine whether this parameter is defined, in Event Viewer, go to **Custom Views** \> **Administrative Events**, and verify the following information:
-
-- The encrypt credentials for the credentials.json file have the correct layout/structure. For more information, see the "Encrypt credentials" section of the appropriate setup and deployment topic for your environment:
-
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#encryptcred)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#encryptcred)
-
-- A closing quotation mark appears at the end of the line or on the next line.
 
 In Event Viewer, under **Custom Views** \> **Administrative Events**, note any errors in the **Microsoft-Service Fabric** source category.
 
@@ -623,21 +628,10 @@ If you're missing a certificate and ACL, or if you have the wrong thumbprint ent
 You can also validate the encrypted text by using the following command.
 
 ```powershell
-Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
+.\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
 ```
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
-
-If the credentials.json file has changed, the action you should take depends on the status of the environment in LCS.
-
-- If your environment appears to be deployed in LCS, do the following:
-    1. Go to your environment page and select **Maintain**.
-    1. Select **Update settings**.
-    1. Do not change any settings. Select **Prepare**.
-    1. After a few minutes your environment will be prepared and you can select **Deploy**.
-
-- If your environment is in a failed state in LCS, do the following:
-    1. Select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 If none of the preceding solutions work, follow these steps.
 
@@ -655,7 +649,7 @@ If none of the preceding solutions work, follow these steps.
     On one of the AOS machines, run the following command to verify that the data encryption certificate is correct.
 
     ```powershell
-    Invoke-ServiceFabricDecryptText '<encrypted string>' -StoreLocation LocalMachine
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
 
 7. If any of the certificates must be changed, or if the configuration was incorrect, follow these steps:
@@ -663,7 +657,16 @@ If none of the preceding solutions work, follow these steps.
     1. Edit the **ConfigTemplate.xml** file so that it has the correct values.
     2. Run all the setup scripts and the **Test-D365FOConfiguration** script.
 
-8. In LCS, reconfigure the environment.
+8. If the credentials.json file has changed, the action you should take depends on the status of the environment in LCS.
+
+- If your environment appears to be deployed in LCS, do the following:
+    1. Go to your environment page and select **Maintain**.
+    1. Select **Update settings**.
+    1. Do not change any settings. Select **Prepare**.
+    1. After a few minutes your environment will be prepared and you can select **Deploy**.
+
+- If your environment is in a failed state in LCS, do the following:
+    1. Select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 ## Gateway fails to deploy
 

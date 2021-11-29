@@ -917,6 +917,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     
     > [!NOTE]
     > The script will automatically place the Credentials.json file to the SMB file share: **\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**.
+    > The script will request the credentials needed for the Entity Store feature but it can be skipped. For more information see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
