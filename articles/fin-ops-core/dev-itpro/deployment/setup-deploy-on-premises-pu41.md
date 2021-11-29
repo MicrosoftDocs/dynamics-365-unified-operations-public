@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 11/15/2021
+ms.date: 11/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -470,9 +470,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
     3. Leave **Allow caching of share** selected.
-    4. Select the **Encrypt data access** checkbox.
+    4. Select the **Encrypt data access** check box.
     5. Grant **Modify** permissions for every machine in the Service Fabric cluster except **OrchestratorType**.
-    6. Grant **Modify** permissions for the gMSA user (**contoso\\svc-AXSF$**). If your AOS are running under a domain user also add that domain user (**contoso\\AXServiceUser**).
+    6. Grant **Modify** permissions for the gMSA user (**contoso\\svc-AXSF$**). If your AOS servers are running under a domain user, also add that domain user (**contoso\\AXServiceUser**).
 
     > [!NOTE]
     > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
