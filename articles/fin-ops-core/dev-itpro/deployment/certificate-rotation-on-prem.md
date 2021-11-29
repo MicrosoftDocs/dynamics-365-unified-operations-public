@@ -318,33 +318,35 @@ Because you've updated your certificates, the configuration file that is present
 
 ## Rotate Credentials.json
 
-If you have generated a new **axdataencipherment** certificate then you will have to re-encrypt the **Credentials.json** file.
+If you've generated a new **axdataencipherment** certificate, you must re-encrypt the **Credentials.json** file.
+
+```powershell
+.\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Rotate
+```
+
+Alternatively, if you also want to rotate the existing credentials, follow these steps.
+
+1. Decrypt the **Credentials.json** file.
 
     ```powershell
-    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Rotate
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
     ```
 
-Alternatively if you also want to rotate the existing credentials you can do the following:
+1. Open the **Credentials.json** file, and update any credentials that you want to update.
 
-   1. Decrypt the **Credentials.json** file:
-        ```powershell
-        .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
-        ```
+1. Re-encrypt the **Credentials.json** file.
 
-   1. Open the **Credentials.json** file and update any credentials you want to update.
-
-   1. Encrypt the **Credentials.json** file:
-        ```powershell
-        .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
-        ```
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
+    ```
 
 > [!NOTE]
-> Make sure you copy your infrastructure folder to an AOS node, or are executing the script from an AOS node.
+> Make sure that you either copy your infrastructure folder to an Application Object Server (AOS) node or run the script from an AOS node.
 
 ## Update deployment settings in LCS
 
 > [!NOTE]
->  Note that the Client, Data Signing, and Encipherment certificates will only be replaced.
+> The Client, Data Signing, and Encipherment certificates will only be replaced.
 >
 > Before you continue, you need to make a backup of the local Dynamics database.
 
