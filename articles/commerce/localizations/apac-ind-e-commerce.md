@@ -36,14 +36,16 @@ The e-commerce functionality for India provides the following capabilities:
 
 ### GST calculation for e-commerce orders
 
-GST calculation for an e-commerce order is based on the customer's invoice address that can be specified on the checkout page. The invoice address is defaulted from the shipping address of the order. It is possible to pick the invoice address from the list of other addresses of the customer or to add a new address.
+GST calculation for an e-commerce order is based on the customer's invoice address that can be specified on the checkout page. The invoice address is defaulted from the shipping address of the order. It is possible to pick the invoice address from the list of other addresses of the customer, or to add a new address.
 
-In order to enable GST calculation for e-commerce orders based on invoice information, you need to add the **Invoice address for India** module to the checkout page and enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce Headquarters. See the [Setting up e-commerce for India](#setting-up-e-commerce-for-India) section for more information.
+To enable GST calculation for e-commerce orders based on invoice information, you need to add the **Invoice address for India** module to the checkout page and enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce Headquarters. For more details, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section.
 
 ### GST calculation for shipping charges
 
+GST can also be calculated for shipping charges that can be added to an e-commerce order based on the delivery option that is selected for the order. The calculation of GST is also based on the customer's invoice address.
+
 > [!NOTE]
-> Only line-level shipping charges are currently supported. GST calculation for header level shipping charges may be added in future updates.
+> Only order line-level shipping charges are currently supported. GST calculation for header level shipping charges may be added in future updates.
 
 ### Customer registration numbers
 
