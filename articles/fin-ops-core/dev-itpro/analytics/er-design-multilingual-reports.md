@@ -238,12 +238,12 @@ As described earlier in this topic, the **Label** and **Description** attributes
 
 When you configure an ER format component to generate a report in your preferred [language](#language), or to import an inbound document where the content is parsed by your preferred language, we recommend that you enable the **Cache the preferred language of the current user for ER runs** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace. This feature helps improve performance, especially for ER format components that contain multiple references to labels in ER formulas and bindings and many [validation](general-electronic-reporting-formula-designer.md#TestFormula) rules to generate user messages in your preferred language.
 
-When you change the status of an ER configuration version from **Draft** to **Completed** and this configuration version contains ER labels, these labels are stored in application database. Depending on the state of the **Accelerate the ER labels storage** feature, the following storage schema can be used:
+When you change the status of an ER configuration version from **Draft** to **Completed**, if the configuration version contains ER labels, those labels are stored in the application database. The storage schema depends on the state of the **Accelerate the ER labels storage** feature:
 
-- When this feature isn't enabled, all labels are stored in the **LABELXML** field of the **ERSOLUTIONVERSIONTABLE** table as a single XML snippet.
-- When this feature is enabled, a new record is created for every language individually in the **ERSOLUTIONVERSIONLABELSTABLE** table the **CONTENTS** field of which stores labels per language as a compressed XML snippet.
+- If the feature isn't enabled, all labels are stored in the **LABELXML** field of the **ERSOLUTIONVERSIONTABLE** table as a single XML snippet.
+- If the feature is enabled, a separate record is created for each language in the **ERSOLUTIONVERSIONLABELSTABLE** table. The **CONTENTS** field of this table stores labels per language as a compressed XML snippet.
 
-We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps achieve better utilization of network bandwidth and improve overall system performance as, in most cases, ER labels of a single language are used when you work with a single ER configuration.
+We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration.
 
 ## Additional resources
 
