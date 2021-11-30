@@ -41,7 +41,10 @@ When you use Power BI Desktop, you can create a report in your development or te
 > [!NOTE]
 > To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided Tier-1 environments. You need administrator rights to install Power BI Desktop.
 
-> Tier-1 environments now include a service compatible version of Power BI Desktop. To develop or extend analytical workspaces and reports in the application suite, customers can use the Power BI Desktop application pre-installed on the development environment. Alternatively, you can use the latest compatible release of Power BI Desktop with Preview features turned off to author analytical reports for Finance and Operations apps. You can download the Power BI Desktop August 2020 release from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
+> [!NOTE]
+> Power BI embedded integration has upgraded the infrastructure as part of 10.0.22 release. This was an infrastructure change and will happen automatically when an environment is upgraded to release 10.0.22. With this change users are now able to use the *latest version* of Power BI desktop when editing workspace reports.
+
+For environments less than 10.0.22 you must still use the earlier build of Power BI Desktop pre-installed on the development environment. Alternatively, you can use the *compatible* Power BI Desktop August 2020 release of Power BI Desktop with Preview features turned off to author analytical reports for Finance and Operations apps. You can download the Power BI Desktop August 2020 release from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 
 ### Step 1: Populate the local Entity Store database
 For this example, we will stage the aggregate models that the Commerce analytical solution consumes in the local Entity Store. The models that the application uses are defined in the RetailCube aggregate measurement. 
@@ -57,7 +60,7 @@ The following illustration shows the administrator dialog box that is used to co
 To monitor the progress of the job that stages the data, you can use the batch job monitoring page. (Select **System administration** \> **Database** \> **Batch jobs**.) If you're using demo data, the job should take about a minute. After the data is in the Entity Store, you can write reports. 
 
 ### Step 2: Connect to the local Entity Store database
-1. Start Power BI Desktop. If any updates are available for Power BI Desktop, you might have to download and apply them. 
+1. Start Power BI Desktop. Post release 10.0.22, if any updates are available for Power BI Desktop, you might have to download and apply them. 
 2. On the Power BI **Welcome** page, select **Get data**. 
 
     Alternatively, when Power BI Desktop starts, you can select **Get Data** \> **SQL Server**. 
