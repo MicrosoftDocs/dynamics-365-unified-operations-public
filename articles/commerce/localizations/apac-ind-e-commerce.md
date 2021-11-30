@@ -24,7 +24,7 @@ ms.dyn365.ops.version: 10.0.23
 ---
 # Goods and Services Tax (GST) integration for e-commerce sites for India
 
-This topic provides an overview of the e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality. For more information about the e-commerce capabilities that are available in Dynamics 365 Commerce, see [E-commerce site overview](../online-store-overview).
+This topic provides an overview of the e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality. For more information about the e-commerce capabilities that are available in Dynamics 365 Commerce, see [E-commerce site overview](../online-store-overview.md). For more information about how GST is supported in Commerce, see [Goods and Services Tax (GST) integration for cash registers for India](apac-ind-cash-registers.md).
 
 ## India-specific e-commerce capabilities
 
@@ -36,6 +36,10 @@ The e-commerce functionality for India provides the following capabilities:
 
 ### GST calculation for e-commerce orders
 
+GST calculation for an e-commerce order is based on the customer's invoice address that can be specified on the checkout page. The invoice address is defaulted from the shipping address of the order. It is possible to pick the invoice address from the list of other addresses of the customer or to add a new address.
+
+In order to enable GST calculation for e-commerce orders based on invoice information, you need to add the **Invoice address for India** module to the checkout page and enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce Headquarters. See the [Setting up e-commerce for India](#setting-up-e-commerce-for-India) section for more information.
+
 ### GST calculation for shipping charges
 
 > [!NOTE]
@@ -43,20 +47,15 @@ The e-commerce functionality for India provides the following capabilities:
 
 ### Customer registration numbers
 
-## Install modules for India
-
-[!include [banner](../includes/banner.md)]
-
-This topic describes how to install the modules for India in Microsoft Dynamics 365 Commerce. 
-
-> [!IMPORTANT]
-> The modules are available as of the Dynamics 365 Commerce version 10.0.23 release.
+## Setting up e-commerce for India
 
 ### Prerequisites
 
 Before you install the modules for India, you must have the following items.
 - Dynamics 365 Commerce environment (Commerce version 10.0.23 or later) that includes Retail Cloud Scale Unit (RCSU), the Commerce online software development kit (SDK), and the Commerce module library. For information about how to install the Commerce SDK and module library, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md). 
 - [Deployment guidelines for cash registers for India](apac-ind-loc-deployment-guidelines.md).
+
+!!!Feature management
 
 ### Installation steps
 
