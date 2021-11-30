@@ -4,7 +4,7 @@
 title: Deployment options
 description: Finance and Operations apps can run in the cloud or on-premises. This topic provides information about the different deployment options. 
 author: kfend
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
