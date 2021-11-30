@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: TBD
-description: This topic describes how 
+title: Image component
+description: This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK **Image** component to ensure images sizes are optimally served for the screen size a customer is using for the online store.
 author: samjarawan
 ms.date: 11/30/2021
 ms.topic: article
