@@ -72,8 +72,8 @@ Complete the following steps to set up the integration between environments.
 9. On the **Dataverse integration** page, on the **Dataverse integration** tab, enter the App ID and secret.
 10. Create an application user in Dataverse, and associate the user with the App ID. For more information, see [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user). The user should be assigned a security role with privileges to read and write the following Dataverse entities:
 
-        - Electronic Invoice Submission
-        - Electronic Invoice Submission Document
+     -  Electronic Invoice Submission
+     - Electronic Invoice Submission Document
 
 10. Create another application user in Dataverse, and associate them with the App ID, **ecd93392-c922-4f48-9ddf-10741e4a9b65**. For more information, see [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 
