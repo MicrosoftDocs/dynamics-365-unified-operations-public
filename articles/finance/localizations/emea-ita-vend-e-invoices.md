@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Vendor electronic invoice 
+title: Vendor electronic invoices
 description: This topic explains how to configure and submit vendor electronic invoices in Italy.
 author: ikondo
 ms.date: 11/29/2021
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,97 +31,93 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-According to Italian legislation, invoices received from foreign vendors that aren't Italian tax residents, must be submitted to the Exchange system (SDI).
-This topic describes how configure and submit vendor electronic invoices in the electronic format, **FatturaPA**.
+According to Italian legislation, invoices that are received from foreign vendors that aren't Italian tax residents must be submitted to the Exchange system (SDI). This topic explains how configure and submit vendor electronic invoices in the **FatturaPA** electronic format.
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- The export of vendor electronic invoices must be implemented symmetrically to the Italian customers electronic invoices export and use the common **Electronic invoice parameters** that are defined in **Accounts receivable**. These parameters must be configured in advance. For more information, see [Customer electronic invoices](emea-ita-e-invoices.md).
+- The export of vendor electronic invoices must be implemented symmetrically to the export of Italian customer electronic invoices, and it must use the common parameters that are defined on the **Electronic invoice parameters** page in Accounts receivable. Those parameters must be configured in advance. For more information, see [Customer electronic invoices](emea-ita-e-invoices.md).
 
-## <a id="apparameters"></a> Configure Accounts payable parameters 
+## <a id="apparameters"></a>Configure Accounts payable parameters 
 
-Complete the following steps to set up the electronic invoice configuration in the Accounts payable parameters.
+Follow these steps to set up the electronic invoice configuration in Accounts payable parameters.
 
-1. Go to **Accounts payable** > **Setup** > **Accounts payable parameters**.
-2. On the **Electronic documents** tab, in the **Vandor invoice (export)** field, select the **Vendor invoice (IT)** configuration which is used to create the electronic invoice export XML files for vendor invoices.
+1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
+2. On the **Electronic documents** tab, in the **Vendor invoice (export)** field, select the **Vendor invoice (IT)** configuration. This configuration is used to generate the XML files for the export of vendor electronic invoices.
 
-  ![Electronic documents in Accounts payable parameters.](media/emea-ita-AP-parameter-e-invoices.jpg)
+![Vendor invoice (export) field set on the Electronic documents tab of the Accounts payable parameters page.](media/emea-ita-AP-parameter-e-invoices.jpg)
 
 > [!NOTE]
-> The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-> The parent model configuration **Invoice model** and the related model mapping configuration **Vendor invoice model mapping (IT)** will be imported or updated automatically.
+> Configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+>
+> The parent model configuration, **Invoice model**, and the related model mapping configuration, **Vendor invoice model mapping (IT)**, will automatically be imported or updated.
 
 ## Enable electronic invoice generation
 
-Complete the following steps to enable the eInvoice register and enable electronic invoice generation for a vendor.
+Follow these steps to enable the eInvoice register and the generation of electronic invoice for a vendor.
 
-1. Go to **Accounts payable** \> **All vendors** and select and open the record of the vendor you want to enable the eInvoice register for. 
-2. On the **Invoice and delivery** FasTab, in the **E-invoice** section, turn on the **eInvoice register** option to activate electronic invoices generation for the vendor.
+1. Go to **Accounts payable** \> **All vendors**.
+2. Select and open the record of the vendor to enable the eInvoice register for. 
+2. On the **Invoice and delivery** FastTab, in the **E-invoice** section, turn on the **eInvoice register** option to enable electronic invoice generation for the selected vendor.
 
 ## Configure invoice types 
 
-Invoice type is a mandatory attribute of electronic invoices and must be assigned to an electronic invoice before the invoice is submitted to the Exchange system.
+The invoice type is a mandatory attribute of electronic invoices. It must be assigned to an electronic invoice before that invoice is submitted to the Exchange system.
 
 ### Define invoice types 
 
-Complete the following steps to define one or more invoice types.
+Follow these steps to define one or more invoice types.
 
-1. Go to **Accounts receivable** > **Setup** > **Electronic invoice parameters**. 
-2. On the **Invoice types** tab, define one or more codes and the descriptions of required invoice types.
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice parameters**. 
+2. On the **Invoice types** tab, define codes for one or more required invoice types, and enter a description of each.
 
-  ![Invoice types dictionary.](media/emea-ita-invoice-types.jpg)
+![Invoice types defined on the Invoice types tab of the Electronic invoice parameters page.](media/emea-ita-invoice-types.jpg)
 
 ### Assign invoice types to sales tax codes
 
-You can assosiate invoice types with specific sales tax codes. 
+You can associate invoice types with specific sales tax codes. 
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. On the **General** FastTab, in the **Invoice type** field, enter the reference to a specific invoice type.
 
-    ![Invoice types in tax codes](media/emea-ita-invoice-types-tax-codes.jpg)
+![Invoice type assigned to a sales tax code on the Sales tax codes page.](media/emea-ita-invoice-types-tax-codes.jpg)
 
 ## Invoice types processing
 
-Invoice types that are associated with the sales tax code used in the invoice are automatically populated into the **TipoDocumento** tag of the generated electronic invoice XML file.
+Invoice types that are associated with the sales tax code that is used on an invoice are automatically entered in the **TipoDocumento** tag of the XML file that is generated for the electronic invoice.
 
-If no invoice type is associated with the sales tax code, the following types of vendor invoice documents will be automatically filled in:
+If no invoice type is associated with the sales tax code, the following types of vendor invoice documents will automatically be entered:
 
-- TD16: For vendors located in Italy, if an invoice contains a sales tax code with either **Use tax** or **Reverse charge** activated.
-- TD17: For vendors located in European Union, if an invoice is issued for **services** provision.
-- TD18: For vendors located in European Union, if an invoice is issued for **products** selling.
+- **TD16** – For vendors that are located in Italy, if an invoice contains a sales tax code where either **Use tax** or **Reverse charge** is activated.
+- **TD17** – For vendors that are located in the European Union (EU), if an invoice is issued for the provision of **services**.
+- **TD18** – For vendors that are located in the EU, if an invoice is issued for the sale of **products**.
 
-If a required invoice type isn't populated, you can manually adjust the invoice type in the vendor invoice journal.
+If a required invoice type isn't entered, you can manually adjust the invoice type in the vendor invoice journal.
 
-### Electronic properties configuration
+### Configure electronic document properties
 
-1. Go to **Accounts receivable** > **Setup** > **Electronic document property types** and select **New** to add a new property type.
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
+2. Select **New** to add a property type.
 2. In the **Type** field, enter **DocumentType**. 
 3. In the **Applicable to** field, select **Vendor invoice journal**.
 
-    ![Invoice type parameter](media/emea-ita-invoice-type-parameter.jpg)
+![Property type added on the Electronic document property types page.](media/emea-ita-invoice-type-parameter.jpg)
 
-### Invoice types registration
+### Register invoice types
 
-Complete the following steps to register invoice types.
+Follow these steps to register invoice types.
 
-1. Go to **Accounts payable** > **Inquiries and reports** > **Invoice** > **Invoice journal**.
-2. Select an invoice from the list, and then select **Electronic document properties**.
+1. Go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
+2. Select an invoice in the list, and then select **Electronic document properties**.
 
-    ![Invoice type in invoices](media/emea-ita-invoice-type-in-invoice.jpg)
+    ![Electronic document properties button.](media/emea-ita-invoice-type-in-invoice.jpg)
 
-3. Enter a required invoice type.
+3. Enter a required invoice type. The value of the **Value** field for the invoice type overrides any automatically created codes when XML files are generated for electronic invoices.
 
-   ![Invoice type value](media/emea-ita-invoice-type-value.jpg)
-
-This invoice type value overrides any automatically created codes during when e-invoice XML files are created.
-
+    ![Invoice type value entered on the Electronic document properties page.](media/emea-ita-invoice-type-value.jpg)
 
 ## Process vendor electronic invoices
 
-To view all electronic invoices for vendors and perform various actions, go to **Accounts payable** > **Invoices** > **E-Invoices** > **Electronic invoices**.
-The functionality is similar to customers electronic invoices processing. For more information, see the **Electronic invoice register** section, in the topic, [Customer electronic invoices](emea-ita-e-invoices.md).
-
+To view all electronic invoices for vendors and perform various actions, go to **Accounts payable** \> **Invoices** \> **E-Invoices** \> **Electronic invoices**. The functionality resembles the functionality for processing customers electronic invoices. For more information, see [Electronic invoice register](emea-ita-e-invoices.md#electronic-invoice-register).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
