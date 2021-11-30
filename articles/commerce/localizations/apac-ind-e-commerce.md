@@ -65,15 +65,12 @@ To enable the possibility to enter customer registration information in customer
 
 ### Prerequisites
 
-Before you install the modules for India, you must have the following items.
-- Dynamics 365 Commerce environment (Commerce version 10.0.23 or later) that includes Retail Cloud Scale Unit (RCSU), the Commerce online software development kit (SDK), and the Commerce module library. For information about how to install the Commerce SDK and module library, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md). 
-- [Deployment guidelines for cash registers for India](apac-ind-loc-deployment-guidelines.md).
+Before you configure e-commerce capabilities for India, you must complete the following steps:
 
-!!!Feature management
+- Configure a Commerce environment that includes Retail Cloud Scale Unit (RCSU), the Commerce online software development kit (SDK), and the Commerce module library. For information about how to install the Commerce SDK and module library, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md). 
+- Configure GST for Commerce. For more information, see [Deployment guidelines for cash registers for India](apac-ind-loc-deployment-guidelines.md).
 
-### Installation steps
-
-#### Install the modules for India in your application
+### Install modules
 
 The packages for India are available in the **dynamics365-commerce** feed, as **@msdyn365-commerce-marketplace/address-extensions** and **@msdyn365-commerce-marketplace/tax-registration-numbers**. However, although the packages are part of that feed, it's under a different namespace. Therefore, you must follow these steps to add registry entries for the namespace.
 
@@ -96,14 +93,17 @@ In the **package.json** file, you should update the packages version to a specif
 > - The packages version should match the module library version to ensure that all features work as expected. 
 > - The minimum version for the Commerce module library and SDK should be 10.0.23 (9.33). 
 
-#### Pull updates and validate
+For more information about how to work with e-commerce modules, see [Module library overview](../starter-kit-overview.md).
+
+### Pull updates and validate
 
 For information about how to pull the latest SDK, module library, and other dependency updates, see the "Pull updates" section of [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#pull-updates).
 
 After the latest dependencies are pulled down, you can run the **yarn start** command to start the Node server in your development environment and test the new modules. Browse the application locally (for example, `https://localhost:4000`).
 
-### Additional resources
+### Feature management
 
-[Module library overview](../starter-kit-overview.md)
+Enable the following features in the **Feature management** workspace in Commerce Headquarters:
 
-[SDK and module library updates](../e-commerce-extensibility/sdk-updates.md)
+- (India) Calculate GST based on invoice address for e-commerce orders.
+- (India) Copy tax information from original customer orders to return orders.
