@@ -4,7 +4,7 @@
 title: VAT declaration for Indonesia (ID-00004)
 description: This topic explains how to configure tax invoice numbering to configure and run export sales invoices for Indonesia.
 author: v-olgaoskina
-ms.date: 11/29/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -176,191 +176,184 @@ Before you complete the steps in this topic, complete the steps in [Get started 
 
 ### RCS setup
 
-During the RCS setup, complete the following tasks:
+During RCS setup, complete the following tasks:
 
-- Import the Electronic Invoicing feature for processing invoice exports and importing vendor invoices.
-- Review the format configurations that are required to generate, export of sales invoices
-- Review or configure the actions in the Processing pipeline that support the sales invoice export and import scenarios.
-- Publish Electronic Invoicing feature for sales invoices and import vendor invoices.
+- Import the Electronic Invoicing feature to process invoice exports and importing vendor invoices.
+- Review the format configurations that are required to generate and export sales invoices.
+- Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
+- Publish the Electronic Invoicing feature for sales invoices and import vendor invoices.
 
 #### Import the Electronic Invoicing feature
 
 1. Sign in to your RCS account.
 2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic Invoicing** tile.
-3. On the **Electronic invoicing features** page, click **Import** to import the **Indonesian electronic invoice (ID)** feature from the Global repository published by Microsoft configuration provider.  
+3. On the **Electronic invoicing features** page, select **Import** to import the **Indonesian electronic invoice (ID)** feature from the Global repository published by the Microsoft configuration provider.  
  
  > [!NOTE] 
  > If you don't see the feature in the list, select **Synchronize**, and then repeat step 3.
 
-![Feature import.](media/apac-idn-rcs-import-feature.png)
+    ![Feature import.](media/apac-idn-rcs-import-feature.png)
 
-When you import the **Indonesian electronic invoice (ID)** feature from the Global repository, all the feature settings, including configurations and actions of Processing pipeline, are also imported.
+When you import the **Indonesian electronic invoice (ID)** feature from the Global repository, all the feature settings, including the configurations and actions of the processing pipeline, are imported.
 
 ### Create a new version of the Indonesian electronic invoice (ID) feature
 
-You can create a new version with your Configuration provider.
+You can create a new feature version with your configuration provider.
 
-On the **Electronic invoicing features** page, on the **Versions** tab, select **New**.
+1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
+2. On the **Electronic invoicing features** page, on the **Versions** tab, select **New**.
 
-![Create a new version/](media/apac-idn-rcs-new-version.png)
+    ![Create a new version.](media/apac-idn-rcs-new-version.png)
 
 ### Update the configuration version
 
-On the **Electronic Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions (ER file format configurations).
+1. 1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
+2. On the **Electronic Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions.
 
-![Configuration edit or delete](media/apac-idn-rcs-configuration.png)
+    ![Configuration edit or delete](media/apac-idn-rcs-configuration.png)
 
 When you create a new version, all configurations are inherited from the imported version of the Electronic Invoicing feature. To process invoices, the following configurations are required:
 
-1. Invoices issued (ID)
-2. eInvoice import (ID)
+- Invoices issued (ID)
+- eInvoice import (ID)
 
-In the list, select a configuration version, and then click **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
+In the list, select a configuration version, and then select **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
 
-![Configuration review](media/apac-idn-rcs-configuration-edit.png)
+    ![Configuration review](media/apac-idn-rcs-configuration-edit.png)
 
-Customers can review the configuration and customize it (if needed). Use the **Format designer** page to edit and view the ER format file configurations. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
+You can review the configuration and customize it, if needed. Use the **Format designer** page to edit and view the ER format file configurations. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
 
-### Configure the application specific parameters
+### Configure the application-specific parameters
 
-So that the system can determine which the sales tax code in Dynamics 365 Finance corresponds to the tax code for luxury goods (PPnBM) when exporting invoices, it is necessary to fill in the following application specific parameters for the luxury sales tax:
+So that the system can determine which the sales tax code in Finance correspond to the tax code for luxury goods (PPnBM) when exporting invoices, fill in the following application specific parameters for the luxury sales tax.
 
-![Aplication specific parameters-Sales tax code](media/apac-idn-aplication-specific-parameters-tax-code.png)
+    ![Aplication specific parameters-Sales tax code](media/apac-idn-aplication-specific-parameters-tax-code.png)
 
-So that the system can determine which the sales tax group in Dynamics 365 Finance corresponds to the exempt reasons (transaction codes 07 and 08) when exporting invoices, it is necessary to fill in the following application specific parameters for exempt reasons:
+So that the system can determine which the sales tax group in Finance corresponds to the exempt reasons (transaction codes 07 and 08) when exporting invoices, fill in the following application specific parameters for exempt reasons:
 
 ![Aplication specific parameters-transaction codes](media/apac-idn-aplication-specific-parameters-transaction-codes-07-08.png)
 
-### Manage the Electronic Invoicing feature setups
+### Manage the Electronic Invoicing feature setup
 
-On the **Electronic Invoicing features** page, on the **Setups** tab, click **Add**, **Delete**, or **Edit** to manage the Electronic Invoicing feature setups. 
+1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
+2. On the **Electronic Invoicing features** page, on the **Setups** tab, select **Add**, **Delete**, or **Edit** to manage the Electronic Invoicing feature setup. 
 
 To generate sales invoice csv file, the Sales invoice feature setup is required.
 
-#### Configure the Sales invoice feature setup
+#### Configure the sales invoice feature setup
 
-1. On the **Electronic Invoicing features** page, on the **Setups** tab, in the **Feature setup** column, select Invoice issued.
-2. Click **Edit** to review or configure the actions, applicability rules, and variables.
+1. On the **Electronic Invoicing features** page, on the **Setups** tab, in the **Feature setup** column, select **Invoice issued**.
+2. Select **Edit** to review or configure the actions, applicability rules, and variables.
 
-![Feature setup](media/apac-idn-rcs-setups.png)
+    ![Feature setup](media/apac-idn-rcs-setups.png)
 
 #### Configure the Vendor invoice feature setup
+To configure the vendor invoice feature setup, you should have already created a draft version of the feature that you will work with for this procedure. 
 
 1. On the **Electronic Invoicing features** page, on the **Setups** tab, in the **Feature setup** column, select the **Import from share point** record.
+2. Select **Edit** to review or configure the actions, applicability rules, and variables.
+3. On the **Feature version setup** page, select the **Data channel** tab and in the **Parameters** list, in the **Data channel** record, in the **Value** field, enter **\$Context Channel** from the derived configuration. 
+4. Fill in the other necessary parameters. 
+5. In the **Custom file name** record, set up a filter for vendor invoice file names.
+6. On the **Applicability rules** tab, in the record with a **Channel** field, in the **Value** field, enter **\$Context Channel** from the derived configuration.
+7. On the **Variables** tab, create or validate the following record:
 
-   > [!NOTE] 
-   > Previously you should create draft version of the feature.
-
-2. Click **Edit** to review or configure the actions, applicability rules, and variables.
-3. On the **Feature version setup** page, select the **Data channel** tab and **Parameters** list, in the **Data channel** record fill in **Value** with **\$Context Channel** value from derived configuration and fill in the other parameters. In the **Custom file name** record you can set up filter for vendor invoice file names.
-4. On the **Applicability rules** tab, in the record with **Channel** field fill in **Value** with **\$Context Channel** value from derived configuration.
-5. On the **Variables** tab create or validate the following record:
-
-![Feature version setup.](media/apac-idn-feature-version-setup-variables.png)
+    ![Feature version setup.](media/apac-idn-feature-version-setup-variables.png)
 
 **This name** value should be filled in Import sources (Electronic document parameters \> External sources).
 
 ### Assign the Draft version to an e-Invoicing environment
 
-1. On the **Electronic Invoicing features** page, on the **Environments** tab, select Enable.
+1. On the **Electronic Invoicing features** page, on the **Environments** tab, select **Enable**.
 2. In the **Environment** field, select the environment.
 3. In the **Effective from** field, select the date when the environment should become effective.
-4. Click **Enable**.
+4. Select **Enable**.
 
 ### Change the version status
 
-1. On the **Electronic Invoicing features** page, on the **Versions** tab, select the version of the electronic invoicing feature that has a status of Draft.
-2. Click Change status \> Complete.
-3. And then click **Change status** \> **Publish**.
+1. On the **Electronic Invoicing features** page, on the **Versions** tab, select the version of the electronic invoicing feature that has a status of **Draft**.
+2. Select **Change status** > **Complete**.
+3. Select **Change status** > **Publish**.
 
-## Set up Electronic invoicing integration in Dynamics 365 Finance
-
-To set up Electronic invoicing in Dynamics 365 Finance, you will complete this task:
-
-Import the ER data model, the ER data model mapping, and the formats that are required for invoices.
+## Set up Electronic invoicing integration in Finance
 
 ### Import the ER data model, ER data model mapping, and context configurations for invoices
 
-1. Sign in to Dynamics 365 Finance.
-2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the Microsoft title. Make sure that this configuration provider is set to Active. For information about how to set a provider to Active, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Select Repositories.
-4. Select Global resource \> Open.
+1. Sign in to your Finance environment and in the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile. Make sure that this configuration provider is set to **Active**. For information about how to mark a provider **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+3. Select **Repositories**.
+4. Select **Global resource** > **Open**.
 5. Import Invoice model, Vendor invoice Mapping to destination, Vendor invoice import (ID), Vendor invoice import XML (ID).
 
 ### Turn on the feature for processing Indonesian electronic invoice
 
-1. Go to Organization administration \> Setup \> Electronic document parameters.
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
 2. On the **Features** tab, select the **Enable** check box in the row for feature **Indonesian electronic invoice**.
 
-    ![Turn on feature](media/apac-idn-d365-turn-on-feature.png)
+    ![Turn on feature.](media/apac-idn-d365-turn-on-feature.png)
 
-### Setup of processing Indonesian electronic invoice (export sales and project invoices)
+### Set up the processing for Indonesian electronic invoices
 
-Go to **Electronic document** tab:
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters** and select the **Electronic document** tab.
 
-![Electronic document parameters-Export](media/apac-idn-rcs-electronic-document-parameters.png)
+    ![Electronic document parameters-Export](media/apac-idn-rcs-electronic-document-parameters.png)
 
-1. On the **Electronic document** tab, click **Add**.
-2. Enter the customer invoice journal. Then click **Add** and Enter the project invoice journal.
-3. Fill in a Number sequence in the **Bach submission id** field group. The selected number sequence should be continuous. This number sequence is used to numeration of invoice batch for export.
-4. Select Save.
+2. Select **Add** and enter the customer invoice journal. 
+3. Select **Add** and enter the project invoice journal.
+4. In the **Batch submission ID** field group, add a number sequence. The selected number sequence should be continuous. This number sequence is used to invoice batch for export.
+5. Select **Save**.
 
-### Setup of processing Indonesian electronic invoice (import vendor invoices)
+### Set up the processing for Indonesian electronic invoices 
 
 1. Go to the **Electronic reporting** workspace and select **Reporting configurations**.
-2. Select **Customer invoice context model**, and then select **Create configuration** \> **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
+2. Select **Customer invoice context model**, and then select **Create configuration** > **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
 3. On the **Draft** version, select **Designer** and in the **Data model** tree, select **Map model to datasource**.
-4. In the **Definitions** tree, select **DataChannel** and then select **Designer**.
-5. In the **Data sources** tree, expand the **\$Context_Channel** container. In the **Value** field, select **Edit** and enter the data channel name (less or equal 10 symbols). This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS.
+4. In the **Definitions** tree, select **DataChannel**, and then select **Designer**.
+5. In the **Data sources** tree, expand the **\$Context_Channel** container. 
+6. In the **Value** field, select **Edit** and enter the data channel name. The name should be no more than 10 characters. This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS.
 
 > [!NOTE] 
-> You can create several derived configurations with different **\$Context** **Channel** value for import vendor invoices from different sources. For
+> You can create several derived configurations with different **\$Context Channel** value to import vendor invoices from different sources. For
 example, if you want to import vendor invoices for different legal entities.
 
-6. Select **Save** and close the page.
-7. Close the page.
-8. Select the derived configuration you just created from the **Customer invoice context model**, and on the **Versions** FastTab, select **Change Status** \> **Completed**.
-9. Go to **External channels** tab to set up import of vendor invoices.
-10. On the **Channels**, click **Add** and fill in the **Channel field** (**\$Context Channel** value), Description, Company
-11. In the **Document context** field, select the new derived configuration from **Customer invoice context model**. The mapping description should be **Data channel context**.
-12. On **Import sources** field group click **Add** and fill in **Name**, **Description**.
+7. Select **Save** and close the page.
+8. Close the page.
+9. Select the derived configuration you just created from the **Customer invoice context model**, and on the **Versions** FastTab, select **Change Status** > **Completed**.
+10. On the **External channels** tab, to set up import of vendor invoices.
+10. On the **Channels**, select **Add** and in the **Channel field**, enter **\$Context Channel**. Enter values in the **Description** and **Company** fields.
+11. In the **Document context** field, select the new configuration from **Customer invoice context model**. The mapping description should be **Data channel context**.
+12. In the **Import sources** field group, select **Add** and enter values in the **Name** and **Description** fields.
 
  > [!NOTE]
  > In the **Name** field, set the value from Feature version setup \> **Variables** tab. Select one of Data entity name: **Vendor Invoice register header,** if you want importing vendor invoices in Invoice register or **Vendor invoice journal**, if you want importing vendor invoices in pending vendor invoices.
 
-13. Select model mapping **Vendor invoice import (ID)** for import invoice header into Invoice register or for import into pending vendor invoices. And select **Vendor invoice import XML (ID)** for import header and lines in pending vendor invoices.
+13. Select the model mapping, **Vendor invoice import (ID)** to import the invoice header into the invoice register or pending vendor invoices. 
+14. Select **Vendor invoice import XML (ID)** to import the header and lines into pending vendor invoices.
 
  > [!NOTE] 
  > You can have only one line for one import source.
 
- > [!NOTE]
- > Before importing vendor invoices from xml files, it is necessary to set up **External item description** for vendors (vendor record \> Procurement \> Set up). In this case the system can match item name in xml file with line items in sales orders.
+Before you import vendor invoices from xml files, you must set up an **External item description** for vendors. Then, the system can match an item name in the xml file with line items in sales orders.
 
     ![Electronic document parameters- External channels](media/apac-idn-import-setup-external-channels.png)
 
-> [!NOTE] 
-> If it is necessary to import vendor invoices, for example, into different legal entity, create a new Channel record with the new document context (derived configuration.
+If it is necessary to import vendor invoices, for example, into different legal entity, create a new channel record with the new document context.
 
-## Process electronic invoices in Dynamics 365 Finance
+## Process electronic invoices in Finance
 
-During the processing of issued invoices or import vendor invoices in Dynamics 365 Finance through Electronic invoicing, you can perform the following tasks:
+When issued invoices or imported vendor invoices are processing Finance through Electronic invoicing, you can complete the following tasks:
 
-1. Submit (export) issued invoices/ Import vendor invoices.
-2. View the Electronic document submission logs/ Electronic document receipt logs.
+- Submit or export issued invoices and import vendor invoices.
+- View the electronic document submission and receipt logs.
 
-### Submit (export) issued invoices
+### Submit or export issued invoices
 
-1. Go to Organization administration \> Periodic \> Electronic documents \> Submit electronic documents.
-2. For the first submission of any document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
-3. On the **Records to include** FastTab, click **Filter** to open the Inquiry dialog box, where you can build a query to select documents for export.
+1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Submit electronic documents**. The first time you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
+2. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for export.
 
     ![Export invoices.](media/apac-idn-rcs-submit-invoices.png)
 
-4. Go to System administration \> Setup \> Business events \> Business events parameters and click **Business events batch job**.
-
-> [!NOTE] 
-> This job can be run in batch, if you set up Business event batch processor.
+3. Go to **System administration** > **Setup** > **Business events** > **Business events parameters**, and then select **Business events batch job**. If you set up the Business event batch processor, this job can be run in batch.
 
     ![Business event.](media/apac-idn-business-event-parameters.png)
 
@@ -368,30 +361,27 @@ During the processing of issued invoices or import vendor invoices in Dynamics 3
 
 You can view the submission logs for all exported documents.
 
-1. Go to Organization administration \> Periodic \> Electronic documents \> Electronic document submission log.
+1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log**.
 
     ![submission log.](media/apac-idn-rcs-submission-log.png)
 
-2. Click **Update status** button.
-3. On the Action Pane, select Inquiries \> Submission details to view the details of the submission execution logs.
+2. Select **Update status**.
+3. On the Action Pane, select **Inquiries** > **Submission details** to view the details of the submission execution logs. The information in the submission logs is divided among three FastTabs:
 
-The information in the submission logs is divided among three FastTabs:
+    - **Processing actions** – Shows the execution log for the actions that are configured in the feature version that was set up in RCS. The **Status** column shows if the action was successfully run.
+    - **Action files**: Shows the intermediate files that were generated during execution of the actions. Select **View** to download and view the file.
+    - **Processing action log**: Shows the results of the submission of electronic invoices.
 
--  Processing actions – This FastTab shows the execution log for the actions that are configured in the feature version that was set up in RCS. The Status column shows whether the action was successfully run.
--  Action files – This FastTab shows the intermediate files that were generated during execution of the actions. You can select View to download and view the file.
--  Processing action log – This FastTab shows the results of the submission of Electronic invoices.
-
-4. On the Action Pane, select Inquiries \> Batch submission invoices to view invoices that were submit in one batch.
+4. On the Action Pane, select **Inquiries** > **Batch submission invoices** to view invoices that were submit in one batch.
 
 ### Import vendor invoices and view the electronic document receipt log
 
-1. Go to Organization administration \> Periodic \> Electronic documents \> Receive electronic documents.
+1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Receive electronic documents**.
 
 > [!NOTE] 
-> For the first receiving of any document, always set the Re-import documents option to No. If you must re-import a document through the service, set this     option to Yes.
-> This job can be run in batch.
+> For the first receipt of any document, always set the **Re-import documents** option to **No**. If you must re-import a document through the service, set this option to **Yes**. This job can be run in batch.
 
-2. Go to Organization administration \> Periodic \> Electronic documents \> Electronic document receipt log and on the Action Pane, select Inquiries \> Submission details to view the details of the submission execution logs.
+2. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log** and on the Action Pane, select **Inquiries** > **Submission details** to view the details of the submission execution logs.
 
 ## Privacy notice
 
