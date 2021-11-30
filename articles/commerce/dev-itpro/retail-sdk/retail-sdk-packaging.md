@@ -306,7 +306,13 @@ The following illustration shows an example of a web.config file.
 
 ### Shared Hardware station web.config
 
-If you are not using the legacy payment connector, then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config.
+> [!NOTE]
+> Below steps are **not** applicable if you are using Commerce application version 10.0.23 or later, legacy payment connector is not supported starting version 10.0.23 and later.
+
+If you are using Commerce application version earlier then 10.0.23 and not using the legacy payment connector, then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config for version earlier than 10.0.22.
+
+> [!NOTE]
+> x.x.x.x in the web.config folder path (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) is the version number. This will vary based on your Retail SDK version number.
 
 **Example** 
 
