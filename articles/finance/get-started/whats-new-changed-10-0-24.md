@@ -82,14 +82,6 @@ Dynamics 365 Finance 10.0.24 includes platform updates. To learn more, see [Plat
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXX). The following issues are fixed in this release.
 
-| Issue| Description |  
-|---|---|
-| Date filter on Transaction log  | As you use Dynamics 365 Finance, the quantity of data posted within General ledger continues to grow. This growth has an impact on performance when opening the Transaction log. To improve performance when viewing the Transaction log, this change opens the page with a default date filter that shows transactions posted over the last seven days. The default filter can be changed using the filter on the **Date** column.   |  
-|    |    |
-|    |    |
-|    |    |
-|    |    |
-
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
