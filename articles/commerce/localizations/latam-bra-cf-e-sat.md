@@ -92,7 +92,7 @@ If the NFC-e is chosen as a main mode of a store establishment in São Paulo sta
 
 ### Scenario 4: Make a mixed sale that contains gift cards and other goods in the same transaction
 
-The operations for issuing gift cards and adding value to gift cards aren't subject to taxations in Brazil. Therefore, they aren't written to the fiscal receipt.
+The operations for issuing gift cards and adding value to gift cards aren't subject to taxation in Brazil, so they aren't written to the fiscal receipt.
 
 1. Sign in to POS.
 1. Add products to the cart.
