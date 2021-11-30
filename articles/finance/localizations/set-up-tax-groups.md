@@ -2,7 +2,7 @@
 # required metadata 
 
 title: Set up tax groups
-description: This topic explains how to set up tax groups in the the Tax Calculation service. 
+description: This topic explains how to set up tax groups in the Tax Calculation service.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process 
@@ -28,49 +28,48 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up tax groups in the Tax Calculation service. This topic also explains how to set up the tax group applicability matrix and configure lines within the matrix.
+This topic explains how to set up tax groups in the Tax Calculation service. It also explains how to set up the tax group applicability rule matrix and configure lines in the matrix.
 
-Tax groups in the Tax Calculation service have a similar concept as sales tax groups in Dynamics 365 Finance. They are a group of tax codes. The Tax Calculation service uses the intersection of tax group and item tax group to determine the tax codes.
+The concept of tax groups in the Tax Calculation service resembles the concept of sales tax groups in Microsoft Dynamics 365 Finance. They are groups of tax codes. The Tax Calculation service uses the intersection of a tax group and an item tax group to determine the tax codes.
 
-However, the difference is that there is no additional parameter like **Use tax** and **Exempt tax** on tax groups in the Tax Calculation service. These parameters are now available at the tax code level.
+However, tax groups in the Tax Calculation service differ from sales tax groups in Finance in that there are no additional parameters on them, such as **Use tax** and **Exempt tax**. Instead, those parameters are available at the tax code level.
 
 > [!IMPORTANT]
-> Tax group setup in the Tax Calculation service is legal entity-agnostic. You can complete this setup in the Regulatory Configuration Service (RCS) only once. When you enable the Tax Calculation service in Finance, tax groups are synchronized automatically for the selected legal entity.
-
-
+> The setup of tax groups in the Tax Calculation service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. When you enable the Tax Calculation service in Finance, tax groups are automatically synced for the selected legal entity.
 
 ## Set up a tax group
 
-Complete the steps in this section to set up a tax group.
+Follow these steps to set up a tax group.
 
-1. Sign into [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
-2. Go to **Workspaces** > **Globalization features** > **Tax calculation**.
-3. Select the feature and version which you want to set up, and select **Edit**.
+1. Sign in to [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
+2. Go to **Workspaces** \> **Globalization features** \> **Tax calculation**.
+3. Select the feature and version that you want to set up, and then select **Edit**.
 4. On the **General** tab, select **Configuration version**.
-5. On the **Tax group** tab, select **Manage Column**. If this is your first time configureing a tax group, the **Manage column** page will be populated automatically.
-6. Expand **Lines** and select the **Tax group** check box.
+5. On the **Tax group** tab, select **Manage Column**. If you're setting up a tax group for the first time, the fields in the **Manage column** dialog box are automatically set.
+6. In the list on the left, expand the **Lines** node, and select the checkbox for **Tax Group**.
 
-   ![Manage columns, Lines expanded.](media/select-tax-group.png)
+    ![Tax Group selected under the Lines Node in the Manage columns dialog box.](media/select-tax-group.png)
 
-7. Select the **Add** arrow to add this field into the **Selected Columns** list.
+7. Select the right arrow button to add **Tax Group** to the **Selected columns** list on the right.
 
-   ![Selected columns list.](media/add-tax-group.png)
+    ![Tax Group added to the Selected columns list.](media/add-tax-group.png)
 
 8. Select **OK**.
 
-## Configure tax group
+## Configure a tax group
 
 After you set up a tax group, the tax group applicability rule matrix is created. You can add lines to the matrix to configure the tax group.
 
-1. On the **Tax group** tab, select **Add** and in the **Tax group** field, enter the name of the tax group.
+1. On the **Tax group** tab, select **Add**.
+2. In the **Tax group** field, enter the name of the tax group.
 
-  > [!IMPORTANT]
-  > We recommend you limit the length of the sales tax group name to 10 characters. This name is synchronized with Finance which has a limit of 10 characters for the sales tax group name.
+    > [!IMPORTANT]
+    > We recommend that you limit the name of the tax group to 10 characters. This name is synced with Finance, which has a limit of 10 characters for the names of sales tax groups.
 
-2. Select the tax codes to include in this tax group. You can select multiple tax codes under one tax group by selecting the radio button next to the tax code name.
+3. In the **Tax codes** field, select the checkbox for each tax code that you want to include in the tax group. You can include multiple tax codes in one tax group.
 
-    ![Tax code list.](media/multiple-tax-codes-selection.png)
+    ![Multiple tax codes selected in the Tax codes field.](media/multiple-tax-codes-selection.png)
 
-3. Repeat step 1 and 2 to add multiple tax groups.
+4. Repeat steps 1 through 3 to add more tax groups.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
