@@ -4,7 +4,7 @@ title: CF-e fiscal document and integration with SAT functionality in Commerce P
 description: This topic gives an overview of generation of electronic fiscal documents CF-e for retail sales and registration of the electronic fiscal documents in the SAT fiscal device functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 author: akviklis
 manager: annbe
-ms.date: 09/09/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,17 +33,17 @@ This topic gives an overview of CF-e (Cupom Fiscal eletrônico) fiscal document 
 
 A CF-e is an electronic fiscal document that is generated to register the sale of goods to a customer in São Paulo state. It enables tax and fiscal control by tax authorities. It also lets customers verify the validity and authenticity of fiscal documents that they receive. Sales of services aren't supported.
 
-Commerce functionality for Brazil supports the CF-e model 59 format for Brazilian retailers. The CF-e model 59 format is a standard for retail electronic fiscal documents within the borders of São Paulo state along with the national standard - NFC-e model 65 format. For more information about the NCF-e format, see [NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md).
+Commerce functionality for Brazil supports the CF-e model 59 format for Brazilian retailers. The CF-e model 59 format is a standard for retail electronic fiscal documents within the borders of São Paulo state along with the national standard NFC-e model 65 format. For more information about the NCF-e format, see [NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md).
 
-Registration of electronic fiscal documents for retail sales in an integrated SAT device (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) is one of the fiscal registration methods available to retailers in the São Paulo state of Brazil. The feature includes the generation of CF-e electronic fiscal documents (Cupom Fiscal eletrônico, model 59) for sales transactions in retail point of sale (POS) and registration of the electronic fiscal documents in the SAT fiscal device. For more information, see [About SAT](https://portal.fazenda.sp.gov.br/servicos/sat).
+Registration of electronic fiscal documents for retail sales in an integrated SAT device is one of the fiscal registration methods available to retailers in the São Paulo state of Brazil. This feature includes the generation of CF-e electronic fiscal documents (Cupom Fiscal eletrônico, model 59) for sales transactions in retail point of sale (POS) and registration of the electronic fiscal documents in the SAT fiscal device. For more information, see [About SAT](https://portal.fazenda.sp.gov.br/servicos/sat).
 
 ## Feature details
-This feature enables fiscal registration of retail sales in a SAT device connected to a hardware station. It takes advantage of the [fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md), meaning it supports all of the built-in fiscal integration capabilities. It is included in the out-of-the-box solution but must be configured to be used.
+
+The registration of electronic fiscal documents for retail sales in an integrated SAT device feature enables fiscal registration of retail sales in a SAT device connected to a hardware station. The feature takes advantage of the [fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md), meaning that it supports all of the built-in fiscal integration capabilities. The feature is included in the out-of-the-box solution but must be configured to be used.
 
 The generation of the electronic fiscal document model 59 (CF-e) is based on an [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) configuration and is done by the electronic reporting runtime engine that is part of the Commerce runtime.
 
 The feature currently does not support customer orders that are picked up in POS. Support for the customer order pickup operation will be added later.
-
 
 ## Supported scenarios
 
@@ -82,7 +82,7 @@ To cancel a sale, follow these steps.
 
 ### Scenario 3: Make a cash-and-carry sale of goods using SAT as contingency mode
 
-If the NFC-e is choosen as a main mode of a store establishment in São Paulo state, POS must generate CF-e documents via SAT device when the store's internet connection isn't available, or when the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. This is considered as using SAT as contingency mode.
+If the NFC-e is chosen as a main mode of a store establishment in São Paulo state, POS must generate CF-e documents via a SAT device when the store's internet connection isn't available, or when the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. This use of SAT is considered to be contingency mode.
 
 1. Sign in to POS.
 1. Add products to the cart.
@@ -114,7 +114,7 @@ Add the following POS labels to the **POS** section of the **Language text** pag
 |-------------|---------|----------------------------------------------|
 | en-US       | 900201  | Issuer's trade name                          | 
 | en-US       | 900202  | Testing environment                          | 
-| en-US       | 900203  | Testing environment (">"-characters lines)   | 
+| en-US       | 900203  | Testing environment (">" characters on 3 lines)   | 
 | en-US       | 900204  | Cancellation Total value 				       | 
 | en-US       | 900205  | Cancellation Access key                      | 
 | en-US       | 900206  | Cancellation QR-code      				   | 
@@ -142,13 +142,13 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
 
-In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+In the receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language text values that you defined in the previous section.
 
 - **Header:** Add the following fields:
 
-	- **Trade name (Nome fantasia)** - trade name of the fiscal establishment.
-    - **Testing environment (SAT em condição de teste)** - text "= TESTE = ", and 3 lines of ">" characters in case when the SAT is in test condition.
-	- **Cancellation Date of issue (Emissão / Data de recebimento)** – The date and time when the cancellation receipt is issued.
+    - **Trade name (Nome fantasia)** - Trade name of the fiscal establishment.
+    - **Testing environment (SAT em condição de teste)** - Text "= TESTE = ", and 3 lines of ">" characters in cases when the SAT is in test condition.
+    - **Cancellation Date of issue (Emissão / Data de recebimento)** – The date and time when the cancellation receipt is issued.
 	
 - **Lines:** Add the following fields:
 	
