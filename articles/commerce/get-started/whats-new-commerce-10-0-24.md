@@ -26,6 +26,7 @@ ms.search.validFrom: 2021-12-31
 ms.dyn365.ops.version: 10.0.24
 
 ---
+
 # Preview features in Dynamics 365 Commerce 10.0.24
 
 [!include [banner](../includes/banner.md)]
@@ -41,11 +42,21 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature. We may update this topic to include features that made it into the build after this topic was initially published. To determine how to turn on a feature, refer to the **Enabled by** column in the following table. For more information about how to use Feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the features that are included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation. To determine how to turn on a feature, see the *Enabled by* column. For more information about how to use feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We might update this topic to include features that made it into the build after this topic was initially published.
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-|  <XYZ>  | <Link to release plan topic> | <Link to doc topic> | <Enabled by default, or Feature management (name in Feature management)> |
+|  <XYZ>         | <Link to release plan topic>                             | <Link to doc topic>                                       | <Enabled by default, or Feature management (name in Feature management)> |
+
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements that are new for this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+
+If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), where they are listed using the names shown in the *Feature name in feature management* column of the following table.
+
+| Module | Feature name in feature management | More information |
+|---|---|---|
+| <name of module>  | <name as it appears in Feature management>  | <blurb about the feature> |
 
 
 ## Additional resources
