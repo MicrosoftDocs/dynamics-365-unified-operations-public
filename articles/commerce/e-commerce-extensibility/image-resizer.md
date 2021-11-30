@@ -85,7 +85,7 @@ export interface IImageDimension {
 ```
 
 ### ImageSettings viewport configuration
-To ensure the image resizer service handles the image correctly the appropriate query string parameter must be set on the **ImageDimension** "q" property using the format "w=WIDTH_NUMBER&h=HEIGHT_NUMBER&m=MODE_NUMBER", where WIDTH_NUMBER and HEIGHT_NUMBER are the width and height values in pixels (0-3000) and MODE_NUMBER is the image resizer mode to use.
+In general the ImageSettings will be automatically populated from the site builder image configuration, however if you are manually constructing the object it is useful to know the query string parameter values that the image resizer uses to render the images.  This is useful when you need to mock the data for testing purposes.  To ensure the image resizer service handles the image correctly the appropriate query string parameter "q" must be set on the **ImageDimension** using the format "w=WIDTH_NUMBER&h=HEIGHT_NUMBER&m=MODE_NUMBER", where WIDTH_NUMBER and HEIGHT_NUMBER are the width and height values in pixels (0-3000) and MODE_NUMBER is the image resizer mode to use.
 
 The following modes are supported:
 | Mode | Title | Description |
@@ -101,7 +101,7 @@ The following modes are supported:
 
 
 ## Sample Image component usage
-The below sample shows how the **Image** component and **ImageSettings** can be used within a module.  Note that a "defaultImageSettings" variable is declared which sets the width, height and scaling mode if none is provided from either site builder, this can occur when debugging in a dev environment and no values are provided in the module mocks.
+The below sample shows how the **Image** component and **ImageSettings** can be used within a module.  Note that a "defaultImageSettings" variable is declared which sets the width, height and scaling mode if none is provided from site builder, which can occur when debugging in a dev environment and no values are provided in the module mocks.
 
 ```typescript
 import * as React from 'react';
@@ -338,31 +338,31 @@ The below shows a sample module mock file to set the **imageSettings** mock data
       "src": "https://images-us-ppe.cms.commerce.dynamics.com/cms/api/dbfztcmjrn/imageFileData/search?fileName=/Products%2F91005_000_001.png",
       "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
       "quality": 80,
-			"imageSettings": {
-				"viewports": {
-					"xs": {
-						"q": "w=125&h=125&m=8",
+      "imageSettings": {
+        "viewports": {
+          "xs": {
+            "q": "w=125&h=125&m=8",
             "w": 0,
             "h": 0
-					},
+          },
           "sm": {
-						"q": "w=225&h=225&m=8",
+            "q": "w=225&h=225&m=8",
             "w": 0,
             "h": 0
-					},
+          },
           "md": {
-						"q": "w=325&h=325&m=8",
+            "q": "w=325&h=325&m=8",
             "w": 0,
             "h": 0
-					},
+          },
           "lg": {
-						"q": "w=425&h=425&m=8",
+            "q": "w=425&h=425&m=8",
             "w": 0,
             "h": 0
-					}
-				},
-				"lazyload": false
-			}
+          }
+        },
+        "lazyload": false
+      }
     },
     "buttonText": "Buy Now"
   },
