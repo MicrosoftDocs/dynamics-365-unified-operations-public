@@ -40,10 +40,9 @@ So far, dual-write application orchestration package has been a single monolithi
 
 -   Dynamics365FinanceAndOperationsAnchor
 
-Now we have split this package into smaller packages which allows to pick and choose the solutions as necessary. Say for example, you may be a supply chain customer and doesn’t need human resources, notes and asset integrations. In such
-case, you can exclude those solutions from installing. Since the underlying solution names, publisher and map versions remain the same, this is a non-breaking change. Existing installations are upgradable as well.
+Now we have split this package into smaller packages which allows to pick and choose the solutions as necessary. Say for example, you may be a supply chain customer and doesn’t need human resources, notes and asset integrations. In such case, you can exclude those solutions from installing. Since the underlying solution names, publisher and map versions remain the same, this is a non-breaking change. Existing installations are upgradable as well.
 
-![separated-package](media/separated-package.PNG)
+![separated-package](media/separated-package-1.png)
 
 This page explains the solutions and maps covered in each package and its dependency on the other packages.
 
@@ -51,8 +50,7 @@ This page explains the solutions and maps covered in each package and its depend
 
 ## Dual-write Application Core
 
-Dual-write Application Core package allows users to install and configure
-dual-write without any CE app. It contains 5 solutions namely:
+Dual-write Application Core package allows users to install and configure dual-write without any Customer Engagement app. It contains 5 solutions namely:
 
 | Unique Name                           | Display Name                                              |
 |---------------------------------------|-----------------------------------------------------------|
@@ -86,11 +84,7 @@ Following are the maps available on this package:
 ## Dual-write Human Resources
 
 
-Dual-write Human Resources package contains solutions and maps necessary to sync
-D365 HR data
-
-Dual-write Application Core package allows users to install and configure
-dual-write without any CE app. It contains 5 solutions namely:
+Dual-write Human Resources package contains solutions and maps necessary to sync Dynamics 365 Human Resources data. It contains 3 solutions namely:
 
 | Unique Name                | Display Name                                                      |
 |----------------------------|-------------------------------------------------------------------|
@@ -120,9 +114,8 @@ Following are the maps available on this package:
 
 ## Dual-write Supply Chain
 
+Dual-write Supply Chain package contains solutions and maps necessary to sync Dynamics 365 Supply Chain data. It contains 3 solutions namely:
 
-Dual-write Application Core package allows users to install and configure
-dual-write without any CE app. It contains 5 solutions namely:
 
 | Unique Name                                | Display Name                                                               |
 |--------------------------------------------|----------------------------------------------------------------------------|
@@ -201,7 +194,7 @@ Following are the maps available on this package:
 
 ## Dual-write Finance
 
-Dual-write Application Core package allows users to install and configure dual-write without any CE app. It contains 5 solutions namely:
+Dual-write Finance package contains solutions and maps necessary to sync Dynamics 365 Finance data. It contains 3 solutions namely:
 
 | Unique Name                            | Display Name                                                           |
 |----------------------------------------|------------------------------------------------------------------------|
@@ -250,8 +243,7 @@ Following are the maps available on this package:
 
 ## Dual-write Notes
 
-Dual-write Application Core package allows users to install and configure
-dual-write without any CE app. It contains 5 solutions namely:
+Dual-write Notes package contains solutions and maps necessary to sync notes or annotations data. It contains 4 solutions namely:
 
 | Unique Name                  | Display Name                                               |
 |------------------------------|------------------------------------------------------------|
@@ -279,7 +271,7 @@ Following are the maps available on this package:
 
 ## Dual-write Asset Management
 
-Dual-write Application Core package allows users to install and configure dual-write without any CE app. It contains 5 solutions namely:
+Dual-write Asset Management package contains solutions and maps necessary to sync assets data from Dynamics 365 Supply Chain data or Dynamics 365 Field Service data. It contains 4 solutions namely:
 
 | Unique Name                          | Display Name                                                          |
 |--------------------------------------|-----------------------------------------------------------------------|
