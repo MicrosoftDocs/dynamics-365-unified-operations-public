@@ -4,7 +4,7 @@
 title: Set up tax codes
 description: This topic explains how to set up tax codes in the Tax Calculation Service. 
 author: wangchen
-ms.date: 11/24/2021
+ms.date: 11/30/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -39,8 +39,8 @@ This topic explains how to set up tax codes in the Tax Calculation service, incl
 Complete the steps in this section to use the tax code in a simple scenario, such as only one tax rate.
 
 1. Sign into [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
-2. Go to Workspaces > Globalization features > Tax calculation.
-3. Select the feature and version which you want to set up, and click **Edit** to open the setup form.
+2. Go to **Workspaces** > **Globalization features** > **Tax calculation**.
+3. Select the feature and version which you want to set up, and select **Edit**.
 4. On the **General** tab, select **Configuration version**.
 5. On the **Tax codes** tab, select **Add** and enter the tax code and a description.
 6. Select **Calculation origin**. The calculation origin is a group of methods that were defined in the selected tax configuration version. In this simple scenario, select the value **By net amount**.
