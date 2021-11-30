@@ -36,10 +36,12 @@ Microsoft Dynamics 365 Commerce provides an image resizer service to help serve 
 ## Image resizer Service
 
 ## Image component
-The online SDK includes an **Image** component that should be used when rendering images inside of a module.  The component is responsible for rendering the image and defining the default behavior for the image.  The image component supports setting an image, a placeholder image and/or a thumbnail that can be used as an intermediate image while the main image is loading.
+The online SDK includes an **Image** component that should be used when rendering images inside of a module.  The component is responsible for rendering the image and defining the default behavior for the image.  
 
-A placeholder image can be displayed while the main image is loading.  If a thumbnail is set, the placeholder image will be replaced with the thumbnail once it is loaded while the main image is still loading.  Once the main image is loaded, it will be displayed over the loading placeholder and/or thumbnail.  If the thumbnail fails to load, the main image will not be downloaded and an empty placeholder image will be displayed. If the main image fails to load, an empty placeholder image will be displayed.
+### Placeholder and thumbnail images
+The image component supports setting a placeholder image and/or a thumbnail that can be used as an intermediate image while the main image is loading. If a thumbnail is set, the placeholder image will be replaced with the thumbnail once it is loaded while the main image is still loading.  Once the main image is loaded, it will be displayed over the loading placeholder and/or thumbnail.  If the thumbnail fails to load, the main image will not be downloaded and an empty placeholder image will be displayed. If the main image fails to load, an empty placeholder image will be displayed.
 
+### Using the Image component within a module
 The **Image** component can be used within a module with a reference to **@msdyn365-commerce/core** as shown below:
 
 ```typescript
@@ -234,8 +236,10 @@ In the above example the module also leverages an **productImage** module config
 }
 ```
 
+Notice in the example above a **defaultImageSettings** constant is defined with image height, width and mode for each view port size.  A site theme can also provide various ImageSettings layouts.
 
-### Image settings from within a theme
+### ImageSettings from within a theme
+A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module **layouts** each with their own **ImageSettings**.  The below sample shows a sample theme defining two module layouts with different 
 
 ## Example
 
