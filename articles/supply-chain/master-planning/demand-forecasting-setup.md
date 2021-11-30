@@ -51,10 +51,10 @@ Demand forecasting can generate cross-company forecasts. In Dynamics 365 Supply 
 To set up your intercompany planning groups, follow these steps.
 
 1. Go to **Master planning \> Setup \> Intercompany planning groups**.
-1. Either select a planning key in the list pane, or select **New** on the Action Pane to create a new one. On the header for the new or selected group, set the following fields:
+1. Either select a planning group in the list pane, or select **New** on the Action Pane to create a new one. On the header for the new or selected group, set the following fields:
 
-    - **Item allocation key** – Enter a unique name for the key.
-    - **Description** – Enter a descriptive name for the key.
+    - **Name** – Enter a unique name for the planning group.
+    - **Description** – Enter a short description of the planning group.
 
 1. On the **Intercompany planning group members** FastTab, use the buttons on the toolbar to add a row for each company (legal entity) that should be part of the group. For each row, set the following fields:
 
@@ -219,7 +219,7 @@ This section describes how to set up your machine learning workspace by using an
     - src/parameters.py
     - src/api_trigger.py
     - src/run.py
-    - src/REntryScript/forecast.R
+    - src/REntryScript/forecast.r
 
 1. Open a PowerShell window, and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, default datastore, and compute resources. However, you must still create the required pipelines by following the remaining steps of this procedure. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
 1. In Azure Machine Learning Studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The quick_setup.ps1 script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
@@ -287,7 +287,7 @@ Pipelines provide a way to start forecasting scripts from Supply Chain Managemen
     - src/parameters.py
     - src/api_trigger.py
     - src/run.py
-    - src/REntryScript/forecast.R
+    - src/REntryScript/forecast.r
 
 1. In Azure Machine Learning Studio, select **Notebooks** in the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
