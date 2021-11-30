@@ -28,45 +28,46 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up item tax groups in the Tax Calculation service. The topic also explains how to set up the item tax group applicability matrix and configure lines within the matrix.
+This topic explains how to set up item tax groups in the Tax Calculation service. It also explains how to set up the item tax group applicability rule matrix and configure lines in the matrix.
 
-Item tax groups in the Tax Calculation service have a similar concept as item sales tax groups in Dynamics 365 Finance. They are a group of tax codes. The Tax Calculation service uses the intersection of tax group and item tax group to determine the tax codes.
+The concept of item tax groups in the Tax Calculation service resembles the concept of item sales tax groups in Microsoft Dynamics 365 Finance. They are groups of tax codes. The Tax Calculation service uses the intersection of a tax group and an item tax group to determine the tax codes.
 
 > [!IMPORTANT]
-> Item tax group setup in the Tax Calculation service is legal entity-agnostic. You can complete this setup in the Regulatory Configuration Service (RCS) only once. When you enable the Tax Calculation service in Finance, the item tax groups will be synchronized automatically for the selected legal entity.
+> The setup of item tax groups in the Tax Calculation service is legal entity–agnostic. You can complete this setup in Regulatory Configuration Service (RCS) only one time. When you enable the Tax Calculation service in Finance, item tax groups are automatically synced for the selected legal entity.
 
 ## Set up an item tax group 
 
-Complete the steps in this section to set up an item tax group.
+Follow these steps to set up an item tax group.
 
-1. Sign into [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
-2. Go to **Workspaces** > **Globalization features** > **Tax calculation**.
-3. Select the feature and version which you want to set up, and select **Edit**.
+1. Sign in to [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
+2. Go to **Workspaces** \> **Globalization features** \> **Tax calculation**.
+3. Select the feature and version that you want to set up, and then select **Edit**.
 4. On the **General** tab, select **Configuration version**.
-5. Open the **Item tax group** tab, select **Manage column**. If this is your first time configuring an item tax group, the **Manage column** page will be populated automatically.
-6. Expand **Lines** and select the **Item tax group** check box.
+5. On the **Item tax group** tab, select **Manage column**. If you're setting up an item tax group for the first time, the fields in the **Manage column** dialog box are automatically set.
+6. In the list on the left, expand the **Lines** node, and select the checkbox for **Item Tax Group**.
 
-  ![Manage columns page, Item tax group check box.](media/select-item-tax-group.png)
+    ![Item Tax Group selected under the Lines node in the Manage columns dialog box.](media/select-item-tax-group.png)
 
-7. Select the **Add** arrow to add this field to the **Selected Columns** list.
+7. Select the right arrow button to add **Item Tax Group** to the **Selected columns** list on the right.
 
-   ![Selected columns showing Item tax group is added.](media/add-item-tax-group.png)
+    ![Item Tax Group added to the Selected columns list.](media/add-item-tax-group.png)
 
 8. Select **OK**.
 
-### Configure an item tax group
+## Configure an item tax group
 
 After you set up an item tax group, the applicability rule matrix is created. You can add lines to the matrix to configure the item tax group.
 
-1. On the **Item tax group** tab, select **Add** and in the **Item tax group** field, enter the name of the item tax group.
+1. On the **Item tax group** tab, select **Add**.
+2. In the **Item tax group** field, enter the name of the item tax group.
 
-  > [!IMPORTANT]
-  > We recommend you limit the length of item tax group name to 10 characters. This name is synchronized with Finance which has a limit of 10 characters for the item sales tax group name.
+    > [!IMPORTANT]
+    > We recommend that you limit the name of the item tax group to 10 characters. This name is synced with Finance, which has a limit of 10 characters for the names of item sales tax groups.
 
-2. Select the tax codes to include in this item tax group. You can select multiple tax codes under one item tax group by selecting the radio button next to the tax code name.
+3. In the **Tax codes** field, select the checkbox for each tax code that you want to include in the item tax group. You can include multiple tax codes in one item tax group.
 
-    ![Multiple tax codes selected.](media/multiple-tax-codes-selection.png)
+    ![Multiple tax codes selected in the Tax codes field.](media/multiple-tax-codes-selection.png)
 
-3. Repeat step 1 and 2 to add multiple item tax groups.
+4. Repeat steps 1 through 3 to add more item tax groups.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
