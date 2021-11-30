@@ -31,12 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK **Image** component to ensure images sizes are optimally served for the screen size a customer is using for the online store.
 
-Microsoft Dynamics 365 Commerce provides an image resizer service to help serve appropriately sized and scaled images optimized for each view port which will ensure images are served with the best performance and scaled correctly when rendering a module on a page.
-
-## Image resizer Service
-
-## Image component
-The online SDK includes an **Image** component that should be used when rendering images inside of a module.  The component is responsible for rendering the image and defining the default behavior for the image.  
+Microsoft Dynamics 365 Commerce provides an image resizer service to help serve appropriately sized and scaled images optimized for each view port which will ensure images are served with the best performance and scaled correctly when rendering a module on a page.  By using the **Image** component, the image resizer will automatically be used.
 
 ### Placeholder and thumbnail images
 The image component supports setting a placeholder image and/or a thumbnail that can be used as an intermediate image while the main image is loading. If a thumbnail is set, the placeholder image will be replaced with the thumbnail once it is loaded while the main image is still loading.  Once the main image is loaded, it will be displayed over the loading placeholder and/or thumbnail.  If the thumbnail fails to load, the main image will not be downloaded and an empty placeholder image will be displayed. If the main image fails to load, an empty placeholder image will be displayed.
