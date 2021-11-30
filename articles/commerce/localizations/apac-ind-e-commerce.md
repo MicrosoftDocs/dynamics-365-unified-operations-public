@@ -36,9 +36,9 @@ The e-commerce functionality for India provides the following capabilities:
 
 ### GST calculation for e-commerce orders
 
-GST calculation for an e-commerce order is based on the customer's invoice address that can be specified on the checkout page. The invoice address is defaulted from the shipping address of the order. It is possible to pick the invoice address from the list of other addresses of the customer, or to add a new address.
+GST calculation for an e-commerce order is based on the customer's invoice address that can be specified on the **Checkout** page of the e-commerce site. The invoice address is defaulted from the shipping address of the order. It is possible to pick the invoice address from the list of other addresses of the customer, or to add a new address.
 
-To enable GST calculation for e-commerce orders based on invoice information, you need to add the **Invoice address for India** module to the checkout page and enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce Headquarters. For more details, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section.
+To enable GST calculation for e-commerce orders based on invoice information, you need to add the **Invoice address for India** module to the checkout page and enable the **(India) Calculate GST based on invoice address for e-commerce orders** and **(India) Copy tax information from original customer orders to return orders** features in the **Feature management** workspace in Commerce Headquarters. For more details, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section.
 
 ### GST calculation for shipping charges
 
@@ -48,6 +48,18 @@ GST can also be calculated for shipping charges that can be added to an e-commer
 > Only order line-level shipping charges are currently supported. GST calculation for header level shipping charges may be added in future updates.
 
 ### Customer registration numbers
+
+It is possible to specify customer's registration numbers and other information on the **My profile** page of the e-commerce site. The following registration information can be entered:
+
+- Permanent Account Number (PAN).
+- GST registration number type. It can be Goods and Services Taxpayer Identification Number (GSTIN), GDI, or Unique Identity Number (UID).
+- GST registration number.
+- Business vertical.
+- Value-added tax registration number (Tax Identification Number \[TIN\]).
+
+The PAN number can be specified on the customer profile level, while other registration information can be specified on the customer address level.
+
+To enable the possibility to enter customer registration information in customer profile, you need to add the **Tax registration numbers for India** module to the **My profile** page. For more details, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section.
 
 ## Setting up e-commerce for India
 
