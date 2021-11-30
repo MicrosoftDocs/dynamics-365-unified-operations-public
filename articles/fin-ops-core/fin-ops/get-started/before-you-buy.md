@@ -48,7 +48,7 @@ The following considerations must be taken when you choose on-premises as a depl
 - [System requirements for on-premises deployments](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> On-premises deployments are not supported on any public cloud infrastructure, including Microsoft Azure.
+> On-premises deployments are not supported on any public cloud infrastructure, including Microsoft Azure. However, they are supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 For more information, see [Deployment options](../../dev-itpro/deployment/choose-deployment-type.md).
 
