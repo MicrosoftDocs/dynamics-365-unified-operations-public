@@ -50,7 +50,7 @@ import { IImageData, IImageSettings, Image } from '@msdyn365-commerce/core';
 
 ## ImageSettings
 
-The **Image** component takes in an **ImageSettings** class that defines the behavior of the image.  **ImageSettings** allows the configuration of the image dimension for various view port sizes, a lazyload flag, image quality and other various image features.  The interface is shown below.
+The **Image** component takes in an **ImageSettings** class that defines the behavior of the image.  **ImageSettings** allows the configuration of the image dimension for various view port sizes, a lazyload flag, image quality and other various image features.  When using an image configuration within a module these values are set from within site builder and returned for use when rendering the image.  The interface is shown below.
 
 ```typescript
 export interface IImageSettings {
@@ -106,7 +106,7 @@ The following modes are supported:
 
 
 ## Sample Image component usage
-The below sample shows how the **Image** component and **ImageSettings** can be used within a module.
+The below sample shows how the **Image** component and **ImageSettings** can be used within a module.  Note that a "defaultImageSettings" variable is declared which sets the width, height and scaling mode if none is provided from either site builder, this can occur when debugging in a dev environment and no values are provided in the module mocks.
 
 ```typescript
 import * as React from 'react';
@@ -183,7 +183,7 @@ export default (props: IProductFeatureViewProps) => {
 };
 ```
 
-In the above example the module also leverages an **productImage** module configuration which uses **"type": "image"** as shown in the below module definition file.  This allows the page author to configure an image for the module within the site builder.
+In the above example, the module leverages a **productImage** module configuration which uses **"type": "image"** as shown in the module definition file below.  This allows the page author to configure an image for the module within the site builder.  The site builder also allows the configuration of a focal point for each module image and this data will be passed through to the image resizer service.
 
 ```json
 {
@@ -236,10 +236,282 @@ In the above example the module also leverages an **productImage** module config
 }
 ```
 
-Notice in the example above a **defaultImageSettings** constant is defined with image height, width and mode for each view port size.  A site theme can also provide various ImageSettings layouts.
+### Supporting module layouts from within a theme
+A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module **layouts** each with their own **ImageSettings**, see the [configure theme settings](configure-theme-settings.md) topic for more information.  The below sample shows a sample theme defining two module layouts 'vertical' and 'horizontal' with different image sizes for each viewport.  When a module is rendered, the settings from the theme are passed through to the image resizer service to serve up the appropriately sized image based on the browser viewport.
 
-### ImageSettings from within a theme
-A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module **layouts** each with their own **ImageSettings**.  The below sample shows a sample theme defining two module layouts with different 
+```json
+{
+    "modules": {
+        "product-feature": {
+            "properties": {
+                "vertical": {
+                    "friendlyName": "Vertical",
+                    "description": "Vertical",
+                    "type": "layout",
+                    "properties": {
+                        "productImage": {
+                            "friendlyName": "Image Settings",
+                            "description": "Image settings for the main image",
+                            "type": "imageSizes",
+                            "properties": {
+                                "xs": {
+                                    "width": 75,
+                                    "height": 75
+                                },
+                                "sm": {
+                                    "width": 250,
+                                    "height": 250
+                                },
+                                "md": {
+                                    "width": 350,
+                                    "height": 350
+                                },
+                                "lg": {
+                                    "width": 400,
+                                    "height": 400
+                                },
+                                "xl": {
+                                    "width": 500,
+                                    "height": 500
+                                }
+                            }
+                        }
+                    }
+                },
+                "horizontal": {
+                    "friendlyName": "Horizontal",
+                    "description": "Horizontal",
+                    "type": "layout",
+                    "properties": {
+                        "productImage": {
+                            "friendlyName": "Image Settings",
+                            "description": "Image settings for the main image",
+                            "type": "imageSizes",
+                            "properties": {
+                                "xs": {
+                                    "width": 155,
+                                    "height": 155
+                                },
+                                "sm": {
+                                    "width": 255,
+                                    "height": 255
+                                },
+                                "md": {
+                                    "width": 355,
+                                    "height": 355
+                                },
+                                "lg": {
+                                    "width": 455,
+                                    "height": 455
+                                },
+                                "xl": {
+                                    "width": 555,
+                                    "height": 555
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "gridSettings": {
+        "xs": 768,
+        "sm": 991,
+        "md": 1199,
+        "lg": 1599,
+        "xl": 1600
+    }
+}
+```
 
-## Example
+## Mocking image data in a module mock
+The below shows a sample module mock file to set the **imageSettings** mock data.
 
+```json
+{
+  "id": "R1Module1",
+  "platform": {
+    "layout": "vertical"
+  },
+  "config": {
+    "msdyn365__moduleLayout": "vertical",
+    "imageAlignment": "left",
+    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+    "productImage": {
+      "src": "https://images-us-ppe.cms.commerce.dynamics.com/cms/api/dbfztcmjrn/imageFileData/search?fileName=/Products%2F91005_000_001.png",
+      "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+      "quality": 80,
+			"imageSettings": {
+				"viewports": {
+					"xs": {
+						"q": "w=125&h=125&m=8",
+            "w": 0,
+            "h": 0
+					},
+          "sm": {
+						"q": "w=225&h=225&m=8",
+            "w": 0,
+            "h": 0
+					},
+          "md": {
+						"q": "w=325&h=325&m=8",
+            "w": 0,
+            "h": 0
+					},
+          "lg": {
+						"q": "w=425&h=425&m=8",
+            "w": 0,
+            "h": 0
+					}
+				},
+				"lazyload": false
+			}
+    },
+    "buttonText": "Buy Now"
+  },
+  "typeName": "product-feature"
+}
+```
+
+## Mocking image data in a page mock
+The below shows a sample page mock file to set the **imageSettings** mock data.
+
+```json
+{
+    "exception": null,
+    "pageRoot": {
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "default-page",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "ProductFeature__0",
+                                "typeName": "product-feature",
+                                "platform": {
+                                    "layout": "vertical"
+                                },
+                                "config": {
+                                "msdyn365__moduleLayout": "vertical",
+                                "imageAlignment": "left",
+                                "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+                                "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+                                "productImage": {
+                                    "src": "https://images-us-ppe.cms.commerce.dynamics.com/cms/api/dbfztcmjrn/imageFileData/search?fileName=/Products%2F91005_000_001.png",
+                                    "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+                                    "quality": 80,
+                                    "imageSettings": {
+                                        "viewports": {
+                                            "xs": {
+                                                "q": "w=60&h=60&m=8",
+                                                "w": 0,
+                                                "h": 0
+                                            },
+                                            "sm": {
+                                                "q": "w=160&h=160&m=8",
+                                                "w": 0,
+                                                "h": 0
+                                            },
+                                            "md": {
+                                                "q": "w=260&h=260&m=8",
+                                                "w": 0,
+                                                "h": 0
+                                            },
+                                            "lg": {
+                                                "q": "w=360&h=360&m=8",
+                                                "w": 0,
+                                                "h": 0
+                                            }
+                                        },
+                                        "lazyload": false
+                                    }                                  
+                                },
+                                "buttonText": "Buy Now"
+                                }
+                            },
+                            {
+                                "id": "ProductFeature__1",
+                                "typeName": "product-feature",
+                                "platform": {
+                                    "layout": "vertical"
+                                },
+                                "config": {
+                                "msdyn365__moduleLayout": "vertical",
+                                "imageAlignment": "right",
+                                "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+                                "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+                                "productImage": {
+                                    "src": "https://images-us-ppe.cms.commerce.dynamics.com/cms/api/dbfztcmjrn/imageFileData/search?fileName=/Products%2F91005_000_001.png",
+                                    "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+                                    "quality": 80,
+                                    "imageSettings": {
+                                        "viewports": {
+                                            "xs": {
+                                                "q": "w=70&h=70&m=8",
+                                                "w": 0,
+                                                "h": 0
+                                            },
+                                            "sm": {
+                                                "q": "w=170&h=170&m=8",
+                                                "w": 0,
+                                                "h": 0
+                                            },
+                                            "md": {
+                                                "q": "w=270&h=270&m=8",
+                                                "w": 0,
+                                                "h": 0
+                                            },
+                                            "lg": {
+                                                "q": "w=370&h=370&m=8",
+                                                "w": 0,
+                                                "h": 0
+                                            }
+                                        },
+                                        "lazyload": false
+                                    }
+                                },
+                                "buttonText": "Buy Now"
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "pageTheme": "spring"
+                    }
+                }
+            ]
+        }
+    },
+    "renderingContext": {
+        "gridSettings": {
+            "xs": {
+                "w": 768
+            },
+            "sm": {
+                "w": 991
+            },
+            "md": {
+                "w": 1199
+            },
+            "lg": {
+                "w": 1599
+            },
+            "xl": {
+                "w": 1600
+            }
+        },
+        "staticContext": {
+            "staticCdnUrl": "/_scnr/"
+        },
+        "locale": "en-us",
+        "siteTheme": "spring"
+    },
+    "statusCode": 200
+}
+```
