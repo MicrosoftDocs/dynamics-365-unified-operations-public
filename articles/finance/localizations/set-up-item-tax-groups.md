@@ -4,7 +4,7 @@
 title: Set up item tax groups
 description: This topic explains how to set up item tax groups in the Tax Calculation service. 
 author: wangchen
-ms.date: 11/24/2021
+ms.date: 11/30/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -40,17 +40,17 @@ Item tax groups in the Tax Calculation service have a similar concept as item sa
 Complete the steps in this section to set up an item tax group.
 
 1. Sign into [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/).
-2. Go to Workspaces > Globalization features > Tax calculation.
-3. Select the feature and version which you want to set up, and click **Edit** to open the setup form.
+2. Go to **Workspaces** > **Globalization features** > **Tax calculation**.
+3. Select the feature and version which you want to set up, and select **Edit**.
 4. On the **General** tab, select **Configuration version**.
 5. Open the **Item tax group** tab, select **Manage column**. If this is your first time configuring an item tax group, the **Manage column** page will be populated automatically.
 6. Expand **Lines** and select the **Item tax group** check box.
 
-  ![select-item-tax-group](media/select-item-tax-group.png)
+  ![Manage columns page, Item tax group check box.](media/select-item-tax-group.png)
 
 7. Select the **Add** arrow to add this field to the **Selected Columns** list.
 
-   ![add-item-tax-group](media/add-item-tax-group.png)
+   ![Selected columns showing Item tax group is added.](media/add-item-tax-group.png)
 
 8. Select **OK**.
 
@@ -65,7 +65,7 @@ After you set up an item tax group, the applicability rule matrix is created. Yo
 
 2. Select the tax codes to include in this item tax group. You can select multiple tax codes under one item tax group by selecting the radio button next to the tax code name.
 
-  ![multiple-tax-codes-selection](media/multiple-tax-codes-selection.png)
+    ![Multiple tax codes selected.](media/multiple-tax-codes-selection.png)
 
 3. Repeat step 1 and 2 to add multiple item tax groups.
 
