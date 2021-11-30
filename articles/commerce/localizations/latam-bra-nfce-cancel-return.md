@@ -4,7 +4,7 @@ title: Cancellation and return of NFC-e documents in Commerce POS for Brazil
 description: This topic gives an overview of the cancellation and return functionality for NFC-e documents in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 author: akviklis
 manager: annbe
-ms.date: 06/10/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -90,7 +90,7 @@ Add the following POS labels to the **POS** section of the **Language text** pag
 | en-US       | 900102  | Barcode block 1 (22 digits)               | 
 | en-US       | 900103  | Barcode block 2 (22 digits)               | 
 
-On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
+On the **Custom fields** page, add the following records for the custom fields for receipt layouts. The **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
 | Name                            | Type    | Caption text ID |
 |---------------------------------|---------|-----------------|
@@ -102,7 +102,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
 
-In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+In the receipt format designer, add the following custom fields to the appropriate receipt sections. Note that the field names correspond to the language text values that you defined in the previous section.
 
 - **Header:** Add the following field:
 
@@ -110,7 +110,6 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Barcode block 1**, **Barcode block 2** – You can add 22-digits bar code fields to simplified DANFE for model 55 fiscal receipts for returns printed on till roll. This barcode is a graphical representation of the **Access key (Chave de acesso)** divided into two parts of 22 digits.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
-
 
 ## Additional resources
 
