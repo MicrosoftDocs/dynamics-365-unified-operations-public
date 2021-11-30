@@ -192,7 +192,7 @@ During RCS setup, complete the following tasks:
  > [!NOTE] 
  > If you don't see the feature in the list, select **Synchronize**, and then repeat step 3.
 
-    ![Feature import.](media/apac-idn-rcs-import-feature.png)
+   ![Feature import.](media/apac-idn-rcs-import-feature.png)
 
 When you import the **Indonesian electronic invoice (ID)** feature from the Global repository, all the feature settings, including the configurations and actions of the processing pipeline, are imported.
 
@@ -219,7 +219,7 @@ When you create a new version, all configurations are inherited from the importe
 
 In the list, select a configuration version, and then select **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
 
-    ![Configuration review](media/apac-idn-rcs-configuration-edit.png)
+   ![Configuration review](media/apac-idn-rcs-configuration-edit.png)
 
 You can review the configuration and customize it, if needed. Use the **Format designer** page to edit and view the ER format file configurations. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
@@ -228,7 +228,7 @@ You can review the configuration and customize it, if needed. Use the **Format d
 
 So that the system can determine which the sales tax code in Finance correspond to the tax code for luxury goods (PPnBM) when exporting invoices, fill in the following application specific parameters for the luxury sales tax.
 
-    ![Aplication specific parameters-Sales tax code](media/apac-idn-aplication-specific-parameters-tax-code.png)
+   ![Aplication specific parameters-Sales tax code](media/apac-idn-aplication-specific-parameters-tax-code.png)
 
 So that the system can determine which the sales tax group in Finance corresponds to the exempt reasons (transaction codes 07 and 08) when exporting invoices, fill in the following application specific parameters for exempt reasons:
 
@@ -335,7 +335,7 @@ example, if you want to import vendor invoices for different legal entities.
 
 Before you import vendor invoices from xml files, you must set up an **External item description** for vendors. Then, the system can match an item name in the xml file with line items in sales orders.
 
-    ![Electronic document parameters- External channels](media/apac-idn-import-setup-external-channels.png)
+   ![Electronic document parameters- External channels](media/apac-idn-import-setup-external-channels.png)
 
 If it is necessary to import vendor invoices, for example, into different legal entity, create a new channel record with the new document context.
 
