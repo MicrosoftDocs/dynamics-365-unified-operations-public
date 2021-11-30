@@ -15,12 +15,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Download assets by using Azure Pipelines
 
-You can automate the download of assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using the **Deploy Lifecycle Services (LCS) Asset Download** task in Azure DevOps.
+You can automate the download of assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using the **Dynamics Lifecycle Services (LCS) Asset Download** task in Azure DevOps.
 
 This topic assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
+
+## Ensure MSAL.PS is installed
+Version 1.* and above of the download task require the availability of the MSAL.PS PowerShell library. A task is available to install these tools automatically during pipeline execution. This task can be added anywhere in the stage before the download task. Please see [Update LCS Connection authentication tasks to MSAL](pipeline-lcs-connection-update#add-the-MSAL-PS-install-task-to-a-pipeline) for more information.
 
 ## Add the task to a pipeline
 
