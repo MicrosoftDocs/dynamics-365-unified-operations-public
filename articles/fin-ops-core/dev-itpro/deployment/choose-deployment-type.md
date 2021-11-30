@@ -23,6 +23,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: Platform Update 8
 
 ---
 # Deployment options
