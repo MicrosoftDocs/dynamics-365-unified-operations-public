@@ -4,7 +4,7 @@
 title: Design multilingual reports in Electronic reporting
 description: This topic explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
 author: NickSelin
-ms.date: 09/03/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -240,8 +240,8 @@ When you configure an ER format component to generate a report in your preferred
 
 When you change the status of an ER configuration version from **Draft** to **Completed** and this configuration version contains ER labels, these labels are stored in application database. Depending on the state of the **Accelerate the ER labels storage** feature, the following storage schema can be used:
 
--   When this feature is disabled, all labels are stored in the `LABELXML` field of the `ERSOLUTIONVERSIONTABLE` table as a single XML snippet.
--   When this feature is enabled, a new record is created for every language individually in the `ERSOLUTIONVERSIONLABELSTABLE` table the `CONTENTS` field of which stores labels per language as a compressed XML snippet.
+- When this feature isn't enabled, all labels are stored in the **LABELXML** field of the **ERSOLUTIONVERSIONTABLE** table as a single XML snippet.
+- When this feature is enabled, a new record is created for every language individually in the **ERSOLUTIONVERSIONLABELSTABLE** table the **CONTENTS** field of which stores labels per language as a compressed XML snippet.
 
 We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps achieve better utilization of network bandwidth and improve overall system performance as, in most cases, ER labels of a single language are used when you work with a single ER configuration.
 
