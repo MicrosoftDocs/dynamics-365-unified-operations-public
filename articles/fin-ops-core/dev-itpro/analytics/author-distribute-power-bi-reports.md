@@ -60,7 +60,7 @@ The following illustration shows the administrator dialog box that is used to co
 To monitor the progress of the job that stages the data, you can use the batch job monitoring page. (Select **System administration** \> **Database** \> **Batch jobs**.) If you're using demo data, the job should take about a minute. After the data is in the Entity Store, you can write reports. 
 
 ### Step 2: Connect to the local Entity Store database
-1. Start Power BI Desktop. Post release 10.0.22, if any updates are available for Power BI Desktop, you might have to download and apply them. 
+1. Start Power BI Desktop. If any updates are available for Power BI Desktop, you might have to download and apply them. 
 2. On the Power BI **Welcome** page, select **Get data**. 
 
     Alternatively, when Power BI Desktop starts, you can select **Get Data** \> **SQL Server**. 
