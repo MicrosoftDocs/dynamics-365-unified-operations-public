@@ -4,7 +4,7 @@
 title: Design a configuration for generating documents in Excel format
 description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,6 +90,8 @@ On the **Mapping** tab of the ER Operation designer, you can configure the **Ena
 
 The **Range** component indicates an Excel range that must be controlled by this ER component. The name of the range is defined in the **Excel range** property of this component.
 
+### Replication
+
 The **Replication direction** property specifies whether and how the range will be repeated in a generated document:
 
 - If the **Replication direction** property is set to **No replication**, the appropriate Excel range won't be repeated in the generated document.
@@ -97,6 +99,8 @@ The **Replication direction** property specifies whether and how the range will 
 - If the **Replication direction** property is set to **Horizontal**, the appropriate Excel range will be repeated in the generated document. Every replicated range is put to the right of the original range in an Excel template. The number of repetitions is defined by the number of records in a data source of the **Record list** type that is bound to this ER component.
 
 To learn more about horizontal replication, follow the steps in [Use horizontally expandable ranges to dynamically add columns in Excel reports](tasks/er-horizontal-1.md).
+
+### Nested components
 
 The **Range** component can have other nested ER components that are used to enter values in the appropriate Excel named ranges.
 
@@ -110,11 +114,40 @@ The **Range** component can have other nested ER components that are used to ent
     > [!NOTE]
     > Use this pattern to enable the Excel application to format entered values based on the locale of the local computer that opens the outbound document.
 
+### Enabling
+
 On the **Mapping** tab of the ER Operation designer, you can configure the **Enabled** property for a **Range** component to specify whether the component must be put in a generated document:
 
 - If an expression of the **Enabled** property is configured to return **True** at runtime, or if no expression is configured at all, the appropriate range will be filled in in the generated document.
 - If an expression of the **Enabled** property is configured to return **False** at runtime, and if this range doesn't represent the entire rows or columns, the appropriate range won't be filled in in the generated document.
 - If an expression of the **Enabled** property is configured to return **False** at runtime, and this range represents the entire rows or columns, the generated document will contain those rows and columns as hidden rows and columns.
+
+### Resizing
+
+You can configure your Excel template to use cells to present textual data. To ensure that the whole text in a cell is visible in a generated document, you can configure that cell to automatically wrap the text inside it. You can also configure the row that contains that cell to automatically adjust its height if the wrapped text isn't fully visible. For more information, see the "Wrap text in a cell" section in [Fix data that is cut off in cells](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
+
+> [!NOTE]
+> Because of a known [Excel limitation](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), even if you configure cells to wrap text, and you configure the rows that contain those cells to automatically adjust their height to fit the wrapped text, you might not be able to use the **AutoFit** and **Wrap text** Excel features for merged cells and the rows that contain them. 
+
+As of Dynamics 365 Finance version 10.0.23, you can force ER to calculate, in a generated document, the height of every row that was configured to automatically fit its height to the content of nested cells whenever that row contains at least one merged cell that was configured to wrap the text inside it. The calculated height is then used to resize the row to ensure that all the cells in the row are visible in the generated document. To start to use this functionality when you run any ER formats that were configured to use Excel templates to generate outbound documents, follow these steps.
+
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. On the **Localization configurations** page, in the **Related links** section, select **Electronic reporting parameters**.
+3. On the **Electronic reporting parameters** page, on the **Runtime** tab, set the **Autofit row height** option to **Yes**.
+
+When you want to change this rule for a single ER format, update the draft version of that format by following these steps.
+
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. On the **Localization configurations** page, in the **Configurations** section, select **Reporting configurations**.
+3. On the **Configurations** page, in the configurations tree in the left pane, select an ER configuration that is designed to use an Excel template to generate outbound documents.
+4. On the **Versions** FastTab, select the configuration version that has a status of **Draft**.
+5. On the Action Pane, select **Designer**.
+6. On the **Format designer** page, in the format tree in the left pane, select the Excel component that is linked to an Excel template.
+7. On the **Format** tab, in the **Adjust row height** field, select a value to specify whether ER should be forced, at runtime, to change the height of rows in an outbound document that is generated by the edited ER format:
+
+    - **Default** – Use the general setting that is configured in the **Autofit row height** field on the **Electronic reporting parameters** page.
+    - **Yes** – Override the general setting, and change the row height at runtime.
+    - **No** – Override the general setting, and don't change the row height at runtime.
 
 ## Cell component
 

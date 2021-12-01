@@ -4,7 +4,7 @@
 title: Italy overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Italy. 
 author: kfend
-ms.date: 11/29/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,8 +37,10 @@ This topic provides links to documentation resources for Italy.
 - [Yearly tax communication](emea-ita-yearly-tax-communication.md)
 - [VAT management and reporting by tax point date (Date of VAT register)](emea-ita-vat-management.md)
 - [Competence date for transactions](emea-ita-competence-date.md)
-- [Italian Intrastat](emea-ita-intrastat.md)
-- [Post arrivals and dispatches for Intrastat](emea-ita-post-arrivals-and-dispatches-for-intrastat.md)
+- Intrastat
+  - [Italian Intrastat](emea-ita-intrastat.md)
+  - [Post arrivals and dispatches for Intrastat](emea-ita-post-arrivals-and-dispatches-for-intrastat.md)
+  - [Intrastat (IT) file format](/dynamics/s-e/365business/dynamices365finance_itintrastatfile)
 - [Manual depreciation of fixed assets](emea-ita-depreciation-of-fixed-assets.md)
 - [Packing slip date verification on invoices](emea-ita-packing-slip-date-verification-on-invoice.md)
 - [Post and print a packing slip with transportation delivery details](emea-ita-packing-slip.md)

@@ -5,7 +5,7 @@ author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom:
 ms.search.region: Global
 ms.author: jorisde
@@ -38,6 +38,9 @@ To enable direct connections from Azure DevOps to LCS on a user's behalf, you mu
 
 2. Add permissions to the application registration to access the LCS web APIs. Follow the instructions in [Add permissions to access your web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api). When you request the API permissions, select **APIs my organization uses**, and search for **Dynamics Lifecycle services**.
 3. Make sure that the account that you will use has given consent for the application registration in Azure AD. Follow the instructions in [Configure the way end-users consent to an application in Azure Active Directory](/azure/active-directory/manage-apps/configure-user-consent). You can either enable a specific user or grant admin consent for the whole tenant.
+4. Configure the registration as a public client application.
+    1. In the Azure portal, select your app in **App registrations**, and then select **Authentication**.
+    2. In **Advanced settings** > **Allow public client flows** > **Enable the following mobile and desktop flows:**, select **Yes**.
 
 ## Create the Dynamics Lifecycle Services service connection
 

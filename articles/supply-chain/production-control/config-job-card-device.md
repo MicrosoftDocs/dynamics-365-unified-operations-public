@@ -38,19 +38,19 @@ A few of the settings described in this topic must be enabled on your system bef
 
 To make this feature available, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order):
 
-1. License plate for reporting as finished added to the Job Card Device
+1. License plate for reporting as finished added to the Job Card Device (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 1. Enable automatic generation of license plate number when reporting as finished in the job card device
 
 ### Print label
 
 To make this feature available, enable the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order):
 
-1. License plate for reporting as finished added to the Job Card Device
+1. License plate for reporting as finished added to the Job Card Device (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 1. Print label from Job Card Device
 
 ### Allow locking of touch screen
 
-To make this feature available, enable the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. If you'd like to use it, make sure the following feature is turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Feature for locking job card device and job card terminal so that they can be sanitized
 

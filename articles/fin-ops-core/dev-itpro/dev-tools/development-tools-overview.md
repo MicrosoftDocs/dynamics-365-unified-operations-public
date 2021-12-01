@@ -5,7 +5,7 @@ author: jorisdg
 ms.date: 05/24/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ["23401", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global

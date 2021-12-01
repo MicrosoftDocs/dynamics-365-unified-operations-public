@@ -31,8 +31,6 @@ ms.dyn365.ops.version: AX 10.0.21
 [!include [banner](../includes/banner.md)]
 
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic provides information about how the **Exclude from base amount calculation** parameter of a tax code is used.
 
 You can use the **Exclude from base amount calculation** parameter to calculate tax amounts in a flexible way. When this parameter is enabled for a tax code, if prices include sales tax, the Tax calculation service calculates tax amounts for the marked sales tax code as if it wasn't included in the base amount.

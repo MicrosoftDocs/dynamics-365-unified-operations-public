@@ -4,9 +4,9 @@ description: This topic describes the string run-time functions.
 author: RobinARH
 ms.date: 08/15/2019
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -782,7 +782,7 @@ If a minus sign precedes the value of the *\_number* parameter, the substring wi
 ```xpp
 subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
 subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".
-subStr("abcdef"),2,99) //Returns the string "cdef".
+subStr("abcdef",2,99) //Returns the string "bcdef".
 subStr("abcdef",2,3) //Returns the string "bcd".
 subStr("abcdef",2,-3); //Returns the string "ab".
 ```

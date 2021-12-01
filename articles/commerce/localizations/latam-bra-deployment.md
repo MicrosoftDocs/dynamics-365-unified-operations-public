@@ -64,14 +64,14 @@ To set up electronic reporting in Commerce headquarters, follow these steps.
 1. In the **Connect to Regulatory Configuration Service** dialog box, select **Click here to connect to Regulatory Configuration Service**, return to the dialog box, and then select **OK**.
 1. Import the latest shared versions of the following data model, data model mapping, and format configurations:
 
-    - (Preview) Fiscal documents mapping
-    - (Preview) NF-e cancel export format (BR)
-    - (Preview) NF-e status request export format (BR)
-    - (Preview) NF-e submit export format (BR)
-    - (Preview) NFC-e submit export format (BR)
-    - (Preview) NFC-e contingency export format (BR)
-    - (Preview) NFC-e fiscal documents mapping
-    - (Preview) NFC-e fiscal documents validation format (BR)
+    - Fiscal documents mapping
+    - NF-e cancel export format (BR)
+    - NF-e status request export format (BR)
+    - NF-e submit export format (BR)
+    - NFC-e submit export format (BR)
+    - NFC-e contingency export format (BR)
+    - NFC-e fiscal documents mapping
+    - NFC-e fiscal documents validation format (BR)
 
 1. Go to **Organization administration \> Workspaces \> Electronic reporting**, and select **Reporting configurations**.
 1. Select **Fiscal documents mapping**, and then set the **Default model mapping** option to **No**.
