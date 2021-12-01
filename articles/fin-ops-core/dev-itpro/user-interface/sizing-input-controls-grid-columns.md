@@ -44,12 +44,12 @@ Column sizing in a grid control differs slightly from the legacy algorithm, whic
 
 | Size | Character range | Size in pixels (px) |
 |------|-----------------|---------------------|
-| XS   | 0–5             | 60                  |
-| S    | 6–15            | 120                 |
-| M    | 16–30           | 180                 |
-| L    | &gt;30          | 240                 |
+| XS   | 0–5             | 60  (25% of large)  |
+| S    | 6–15            | 120 (50% of large)  |
+| M    | 16–20           | 180 (75% of large)  |
+| L    | >=30            | 240                 |
 
-**Note:** The explicit number of pixels will likely vary over time as the user interface evolves. Developers should not rely on explicit pixel sizing.
+**Note:** The explicit number of pixels will vary over time as the user interface evolves; however, the relative size of fields should remain constant. Developers should not rely on explicit pixel sizing.
 
 ## Forcing a desired discrete size
 As the previous table shows, if you change the width of a grid-hosted control from 6 characters to 15 characters, you don't affect the width of the column. The layout engine gives the same width to all control widths that are in the 6-to-15-character range, because controls in this range are considered small (S). If you want to extend the control to medium (M) size, the width value must be set to a value that is more than 16 characters and less than 31 characters. For guidance about how to size input controls, see the following table. In some cases, the use of a form pattern will override or hide developer-defined sizing.
