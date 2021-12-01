@@ -61,6 +61,7 @@ There are also advantages to having multiple LCS projects. Here are some of them
 - Data centers can be selected per LCS project to provide the best latency experience.
 - Data centers can be selected per LCS project to satisfy statutory requirements for data residency.
 - There is more flexibility to schedule servicing operations, such as code deployments and upgrades.
+- It is possible to have different stakeholders for the different LCS Implementation Projects
 
 ## Requesting multiple LCS projects on the same Azure AD tenant
 
