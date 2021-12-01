@@ -45,8 +45,9 @@ The following features are included in this release. Some of the listed features
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
 | Global address book | Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) | Enabled by default. |
-|   |    |    |   |
-|   |    |    |   |
+|Tax Calculation   |Using tax jurisdiction parameters for cash discount calculation setup    | When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. This feature can calculate cash discount and sales tax with different parameters under single legal entity. For more informatin, see [Tax jurisdiction parameters for cash discount calculation setup](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-jurisdiction-cash-discount-setup?toc=/dynamics365/finance/toc.json)    | Admins, makers, or analysts   |
+|Tax Calculation   | Importing tax codes in Globalization feature    | This feature can help user import tax codes into Globalization features. For more informatin, see [Import and export tax calculations](https://go.microsoft.com/fwlink/?linkid=2182833)    | Enabled by default   |
+|Tax Settlement   | Separate sales tax payment report generation from sales tax settlement    | This feature can separate sales tax payment report generation from sales tax settlement. If this feature is turned on, sales tax settlement report will not be run automatically after the sales tax settlement program is completed.    | Admins, makers, or analysts   |
 |   |    |    |   |
 |   |    |    |   |
 |   |    |    |   |
@@ -72,7 +73,9 @@ The following table lists the feature enhancements included in this release. Eac
 | General ledger | Generate trial balance with pending type transactions  | This feature lets you select specific pending type transactions to include on the Trial balance detail report. |
 | General ledger | Dimension attributes values collection optimization in ‘MasterFiles’ report section of SAF-T for Norway  | This feature enables the set-based collection of dimension attribute values for ‘MasterFiles’ report section in SAF-T report, that improves its performance and makes ‘Analysis’ fields from ‘MasterFiles’ section more consistent with ‘Analysis’ fields from ‘GeneralLedgerEntries’ section. |
 | General ledger | Subledger transfer to General Ledger performance optimization | This functionality improves the the transfer of data from the subledger to the General Ledger. It allows the process to be more efficient and group sets of smaller transactions to transfer together allowing for a more efficient use of the batch server. |
-
+| Tax Calculation | Tax Calculation Service | This feature is improved in 10.0.24 to allow to define "Override sales tax" parameter at customer/vendor master data level and this parameter value will be defaulted on sales/purchase transactions when using the selected customer/vendor. |
+| Tax Calculation | Tax Calculation Service | This feature is enhanced in 10.0.24 to support legal entity's primary address in Mexcio. See the section, **Supported countries/regions** in the topic, [Tax Calculation overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) for more information. |
+| Tax Calculation | Tax Calculation Service | This feature is enhanced in 10.0.24 to support maximum 20 dimensions in the applicability rules setup in Globalization features. |
 
 ## Additional resources
 
