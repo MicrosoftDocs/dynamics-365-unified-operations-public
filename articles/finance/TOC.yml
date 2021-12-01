@@ -3416,7 +3416,7 @@
             href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
           - name: Test interoperation with the MTD VAT sandbox
             href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-          - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
+          - name: Authorize your Finance environment to interoperate with HMRC's MTD web service
             href: localizations/emea-gbr-mtd-vat-integration-authorization.md
           - name: Submit a VAT return to HMRC's MTD web service
             href: localizations/emea-gbr-mtd-vat-integration-submission.md
