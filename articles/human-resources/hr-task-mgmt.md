@@ -87,6 +87,8 @@ select the **Tasks** tab, and select **New**. Tasks can also be added directly t
 
 When creating a task, there are the following fields:
 
+|  Field | Description|
+|----------------------|----------------------------------------------------------------------------------|
 | **Task**            | Name of the task               |
 | **Description**     | Description of the task                                                                |
 | **Optional**        | This field indicates that this task is optional and is informational only.                                                        |
