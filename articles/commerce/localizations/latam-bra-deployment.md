@@ -4,7 +4,7 @@
 title: Set up and deploy the Dynamics 365 Commerce localization for Brazil
 description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 author: akviklis
-ms.date: 11/30/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
