@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing for Mexico
 description: This topic provides information that will help you get started with Electronic invoicing for Mexico.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,12 +40,12 @@ This topic provides information that will help you get started with Electronic i
 
 Before you complete the steps in this topic, you must complete the steps in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md) and [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
-## Cadena XSLT setup
+## Set up the Cadena XSLT
 
-To add the Cadena xslt schema to the globalization feature for CFDI processing, follow the steps:
+To add the Cadena XSLT schema to the globalization feature for CFDI processing, complete the following steps.
 
-1. Download schema from the SAT web site: http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt.
-2. Compress it to a ZIP file.
+1. Download schema from the [SAT web site](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
+2. Compress the schema in to a ZIP file.
 3. Save the xslt file to your Azure Storage account setup in your Service environment to the new container.
 
 
@@ -142,8 +142,8 @@ To submit CFDI invoice cancellation, the **Cancellation** and **Cancel** feature
 
 ### Set up the path for the Cadena XLST schema
 
-1. On the **Feature version setup** page, on the **Variables** tab, select **DigitalSignatureXSLT** variable name.
-2. On the **Values** enter: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
+1. On the **Feature version setup** page, on the **Variables** tab, select the variable name, **DigitalSignatureXSLT**.
+2. In the **Values** field enter: {"containerUrl":"https://&lt;AccountStorageName&gt;.blob.core.windows.net/&lt;ContainerName&gt;","path":"&lt;RelativePath&gt;"}
    
     where: <RelativePath> = folder\\folder\\filename with double backslashes, ContainerName must denote the container that is used for the service.
    
