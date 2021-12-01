@@ -121,6 +121,8 @@ This section complements the section, [Country-specific configuration of applic
 
 ## Proxy server setup
 
+This topic provides information that will help you to setup and configure proxy service to communicate between Italian SDI and **Electronic invoicing service**.
+
 ### Create App registration
 
 1. Create a self-signed certificate for service to service authentication by using a PowerShell script.
