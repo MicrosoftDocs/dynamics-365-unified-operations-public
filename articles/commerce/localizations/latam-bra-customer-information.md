@@ -37,7 +37,7 @@ You can specify customer tax registration number, name, and address information 
 > [!NOTE]
 > You can't specify registration numbers for named customers in POS if **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode might be added in future updates.
 
-For more information about how to set up this functionality, see [Customer information management](latam-bra-deployment.md#customer-information-management) and [Enable searching customers by tax registration numbers in POS](latam-bra-deployment.md#enable-customer-searches-based-on-tax-registration-numbers-in-pos).
+For more information about how to set up this functionality, see [Customer information management](latam-bra-deployment.md#customer-information-management) and [Enable customer searches based on tax registration numbers in POS](latam-bra-deployment.md#enable-customer-searches-based-on-tax-registration-numbers-in-pos).
 
 ## Example scenarios
 
