@@ -4,7 +4,7 @@
 title: Vendor electronic invoices
 description: This topic explains how to configure and submit vendor electronic invoices in Italy.
 author: ikondo
-ms.date: 11/29/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -96,14 +96,14 @@ If a required invoice type isn't entered, you can manually adjust the invoice ty
 
 ### Configure electronic document properties
 
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
+1. Go to **Accounts receivable** > **Setup** > **Electronic document property types**.
 2. Select **New** to add a property type.
 2. In the **Type** field, enter **DocumentType**. 
 3. Select **Applicability** to add an applicable table. 
 4. On the **Electronic document property type applicability setup** page, in **Table name** field, select **Vendor invoice journal**.
 5. Save and return to the **Electronic document property types** page.
 
-![Property type added on the Electronic document property types page.](media/emea-ita-invoice-type-parameter.jpg)
+   ![Property type added on the Electronic document property types page.](media/emea-ita-invoice-type-parameter.jpg)
 
 ### Register invoice types
 
