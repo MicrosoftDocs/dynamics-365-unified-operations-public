@@ -239,14 +239,14 @@ To configure the **Add customer information** operation in Commerce headquarters
 
 For more information about how to work with screen layouts and button grids, see [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md).
 
-## Enable searching customers by tax registration numbers in POS
+## Enable customer searches based on tax registration numbers in POS
 
-To enable searching customers by CNPJ/CPF and CCM tax registration numbers in POS, follow these steps.
+To enable customers to be searched for by CNPJ/CPF and CCM tax registration numbers in POS, follow these steps.
 
-1. In Commerce headquarters, on the **POS search criteria** tab of the **Commerce parameters** page, add a record on the **Customer search criteria** FastTab. 
-1. Select **Tax registration number** in the record's **Customer search criteria** dropdown list.
-1. Select the **Display as shortcut** checkbox while keeping the **Can be refined** checkbox clear.
-1. Run the 1110 job on the **Distribution schedules** page.
+1. In Commerce headquarters, on the **Commerce parameters** page, on the **POS search criteria** tab, on the **Customer search criteria** FastTab, add a record. 
+1. In the new record, in the **Customer search criteria** field, select **Tax registration number**.
+1. Select the **Display as shortcut** checkbox, but leave the **Can be refined** checkbox cleared.
+1. On the **Distribution schedules** page, run the 1110 job.
 
 ## Set up parameters for statements
 
