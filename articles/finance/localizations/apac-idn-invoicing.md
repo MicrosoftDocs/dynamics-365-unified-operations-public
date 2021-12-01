@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: VAT declaration for Indonesia (ID-00004)
-description: This topic explains how to configure tax invoice numbering to configure and run export sales invoices for Indonesia.
+title: Invoicing for Indonesia (ID-00002)
+description: This topic explains how to configure tax invoice numbering, to configure and run export sales invoices as well as import vendor invoices for Indonesia.
 author: v-olgaoskina
 ms.date: 11/30/2021
 ms.topic: article
@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 10.0.23
 
 ---
 
-# VAT declaration for Indonesia (ID-00004)
+# Invoicing for Indonesia
 
 [!include [banner](../includes/banner.md)]
 
