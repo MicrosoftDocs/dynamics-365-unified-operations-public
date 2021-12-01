@@ -4,7 +4,7 @@
 title: Multiple LCS projects and environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
-ms.date: 04/15/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,7 +61,7 @@ There are also advantages to having multiple LCS projects. Here are some of them
 - Data centers can be selected per LCS project to provide the best latency experience.
 - Data centers can be selected per LCS project to satisfy statutory requirements for data residency.
 - There is more flexibility to schedule servicing operations, such as code deployments and upgrades.
-- It is possible to have different stakeholders for the different LCS Implementation Projects
+- It is possible to have different stakeholders for the different LCS implementation projects.
 
 ## Requesting multiple LCS projects on the same Azure AD tenant
 
