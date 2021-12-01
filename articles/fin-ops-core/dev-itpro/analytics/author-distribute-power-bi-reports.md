@@ -42,7 +42,7 @@ When you use Power BI Desktop, you can create a report in your development or te
 > To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided Tier-1 environments. You need administrator rights to install Power BI Desktop.
 
 > [!NOTE]
-> Power BI embedded integration has upgraded the infrastructure as part of 10.0.22 release. This was an infrastructure change and will happen automatically when an environment is upgraded to release 10.0.22. With this change users are now able to use the *latest version* of Power BI desktop when editing workspace reports.
+> Power BI embedded integration has upgraded the infrastructure as part of the 10.0.22 release. This was an infrastructure change and will happen automatically when an environment is upgraded to release 10.0.22. With this change users are now able to use the *latest version* of Power BI desktop when editing workspace reports.
 
 For environments less than 10.0.22 you must still use the earlier build of Power BI Desktop pre-installed on the development environment. Alternatively, you can use the *compatible* Power BI Desktop August 2020 release of Power BI Desktop with Preview features turned off to author analytical reports for Finance and Operations apps. You can download the Power BI Desktop August 2020 release from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 
