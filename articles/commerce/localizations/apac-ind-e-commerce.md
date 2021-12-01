@@ -38,11 +38,11 @@ The e-commerce functionality for India provides the following capabilities:
 
 GST calculation for an e-commerce order is based on the customer's invoice address that can be specified on the **Checkout** page of the e-commerce site. The invoice address is defaulted from the shipping address of the order. It is possible to pick the invoice address from the list of other addresses of the customer, or to add a new address.
 
-To enable GST calculation for e-commerce orders based on invoice information, you need to add the **Invoice address for India** module to the checkout page and enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce Headquarters. For more details, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section.
+To enable GST calculation for e-commerce orders based on invoice information, you must add the **Invoice address for India** module to the checkout page and enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce Headquarters. For more details, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section.
 
 ### GST calculation for shipping charges
 
-GST can also be calculated for shipping charges that can be added to an e-commerce order based on the delivery option that is selected for the order. The calculation of GST is also based on the customer's invoice address.
+GST can also be calculated for shipping charges that can be added to an e-commerce order based on the delivery option that is selected for the order. The calculation of GST for shipping charges is also based on the invoice address that is specified in the order.
 
 > [!NOTE]
 > Only order line-level shipping charges are currently supported. GST calculation for header level shipping charges may be added in future updates.
@@ -59,7 +59,7 @@ It is possible to specify customer's registration numbers and other information 
 
 The PAN number can be specified on the customer profile level, while other registration information can be specified on the customer address level.
 
-To enable the possibility to enter customer registration information in customer profile, you need to add the **Tax registration numbers for India** module to the **My profile** page. For more details, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section.
+To enable the possibility to enter customer registration information in customer profile, you must add the **Tax registration numbers for India** module to the **My profile** page. For more details, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section.
 
 ## Setting up e-commerce for India
 
@@ -69,13 +69,11 @@ Before you set up e-commerce capabilities for India, you must configure a Commer
 
 ### Install modules
 
-The followng packages that are available in the **dynamics365-commerce** feed of the `https://pkgs.dev.azure.com/commerce-partner/` resourse include India-specific modules:
+The following packages that are available in the **dynamics365-commerce** feed of the `https://pkgs.dev.azure.com/commerce-partner/` resource include India-specific modules:
 
-- @msdyn365-commerce-marketplace/address-extensions
-	The package includes the **Invoice address for India** module.
+- **@msdyn365-commerce-marketplace/address-extensions**. The package includes the **Invoice address for India** module.
 
-- @msdyn365-commerce-marketplace/tax-registration-numbers
-	The package includes the **Tax registration numbers for India** module.
+- **@msdyn365-commerce-marketplace/tax-registration-numbers**. The package includes the **Tax registration numbers for India** module.
 
 However, although the packages are part of that feed, they are under a different namespace. Therefore, you must follow these steps to add registry entries for the namespace.
 
@@ -91,14 +89,14 @@ However, although the packages are part of that feed, they are under a different
     "@msdyn365-commerce-marketplace:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"
     ```
 	
-To install the packages in your local environment, run the following commands from the command prompt. This command automatically updates the package.json file so that it includes the dependency.
+To install the packages in your local environment, run the following commands from the command prompt. These commands automatically update the **package.json** file so that it includes the dependencies.
 
 ```
 yarn add @msdyn365-commerce-marketplace/address-extensions
 yarn add @msdyn365-commerce-marketplace/tax-registration-numbers
 ```
 
-In the **package.json** file, you should update the packages version to a specific version.
+In the **package.json** file, you should update the package version to a specific version.
 
 > [!IMPORTANT]
 > - The packages version should match the module library version to ensure that all features work as expected. 
@@ -112,12 +110,12 @@ After the latest dependencies are pulled down, you can run the **yarn start** co
 
 ### Build your site
 
-For more information on how to create e-commerce sites and work with e-commerce modules, see [Create an e-commerce site](../create-ecommerce-site.md) and [Module library overview](../starter-kit-overview.md).
-
 You must add the India-specific modules to the following pages of your e-commerce site:
 
 - The **Invoice address for India** module must be added to the checkout page.
 - The **Tax registration numbers for India** module must be added to the **My profile** page.
+
+For more information on how to create e-commerce sites and work with e-commerce modules, see [Create an e-commerce site](../create-ecommerce-site.md) and [Module library overview](../starter-kit-overview.md).
 
 ### Configure GST for e-commerce
 
