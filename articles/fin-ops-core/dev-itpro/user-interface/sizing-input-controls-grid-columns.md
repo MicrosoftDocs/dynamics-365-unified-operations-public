@@ -49,7 +49,7 @@ Column sizing in a grid control differs slightly from the legacy algorithm, whic
 | M    | 16–20           | 180 (75% of large)  |
 | L    | >=30            | 240                 |
 
-> [!Note]
+> [!NOTE]
 > The explicit number of pixels will vary over time as the user interface evolves; however, the relative size of fields should remain constant. Developers should not rely on explicit pixel sizing.
 
 ## Forcing a desired discrete size
