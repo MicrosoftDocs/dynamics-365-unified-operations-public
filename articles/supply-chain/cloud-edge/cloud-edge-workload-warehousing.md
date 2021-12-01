@@ -54,6 +54,12 @@ Depending on the business processes, the same data record can change ownership b
 
 ## Outbound process flow
 
+Before you deploy a warehouse workload running in a scale unit distributed hybrid topology please make sure you have the *Scale unit support for release to warehouse of outbound orders* feature enabled on the enterprise hub. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Warehouse management*
+- **Feature name:** *Scale unit support for release to warehouse of outbound orders*
+
+
 The outbound data ownership process depends on whether you are using the load planning process. In all cases, the hub owns the *source documents*, such as sales orders and transfer orders, as well as the order allocation process and the related order transaction data. But when you use the load planning process, the loads will be created on the hub and therefore initially be owned by the hub. As part of the *Release to warehouse* process, the ownership of the load data is transferred to the dedicated scale unit deployment, which will become the owner of the subsequent *shipment wave processing* (such as work allocation, replenishment work, and demand work creation). Therefore, warehouse workers can only process outbound sales and transfer order work by using a Warehouse Management mobile app that is connected to the deployment running the specific scale unit workload.
 
 As soon as the final work process puts the inventory at a final shipping location (Baydoor), the scale unit signals the hub to update the source document inventory transactions to *Picked*. Until this process runs and gets synchronized back, the inventory on-hand on the scale unit workload will be physically reserved at the warehouse level and you can immediately process the outbound shipment confirmation without waiting for this synchronization to complete. The subsequent sales packing slip and invoicing or transfer order shipment for the load will get handled in the hub.
@@ -205,7 +211,7 @@ The following table shows which outbound features are supported, and where they 
 | Printing of load related documents                           | Yes | Yes|
 | Bill of lading and ASN generation                            | No  | Yes|
 | Shipment confirm                                             | No  | Yes|
-| Shipment confirmation with "Confirm and transfer"            | No  | No |
+| Shipment confirmation with "Confirm and transfer"            | No  | Yes|
 | Packing slip and invoicing processing                        | Yes | No |
 | Short picking (sales and transfer orders)                    | No  | Yes, without removing reservations for source documents|
 | Over picking (sales and transfer orders)                     | No  | Yes|
@@ -215,8 +221,8 @@ The following table shows which outbound features are supported, and where they 
 | Wave label                                                   | No  | Yes|
 | Work split                                                   | No  | Yes|
 | Work processing - Directed by 'Transport loading'            | No  | No |
-| Reduce picked quantity                                       | No  | No |
-| Reverse work                                                 | No  | No |
+| Reduce picked quantity                                       | No  | Yes|
+| Reverse work                                                 | No  | Yes|
 | Reverse shipment confirmation                                | No  | Yes|
 
 ### Inbound
@@ -230,7 +236,7 @@ The following table shows which inbound features are supported, and where they a
 | Landed cost and goods in transit receiving                       | Yes | No |
 | Inbound shipment confirmation                                    | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
-| Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line</p> | Yes | No |
+| Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line while processing the *request to cancel* operation</p> | Yes | No |
 | Purchase order item receiving and put away                       | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p> |
 | Purchase order line receiving and put away                       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p></p> |
 | Return order receiving and put away                              | Yes | No |
@@ -249,7 +255,7 @@ The following table shows which inbound features are supported, and where they a
 | Receiving with creation of *Quality in quality check* work       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with quality order creation                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Work processing - Directed by *Cluster putaway*                 | Yes | No |
-| Work processing with *Short pick*                               | Yes | No |
+| Work processing with *Short pick*                               | Yes | Yes |
 | License plate loading                                           | Yes | Yes |
 
 ### Warehouse operations and exception handing
