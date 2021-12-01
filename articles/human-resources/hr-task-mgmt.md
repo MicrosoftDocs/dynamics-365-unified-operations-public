@@ -46,7 +46,7 @@ The **Onboarding** section has two lists of workers; workers that are **Starting
 employee is selected, the tasks related to that employee's onboarding will be displayed on the right side of the page. The **Onboarding** section also contains a list of 
 **All tasks** for the **Starting soon** or **Recently hired** employees. There is also a list of **Overdue tasks**, and tasks specifically assigned to the current user.
 
-The **Offboarding** section has two lists of workers who:
+The **Offboarding** section contains lists of workers who:
  - are **Exiting** the company 
  - have already **Exited**
 
