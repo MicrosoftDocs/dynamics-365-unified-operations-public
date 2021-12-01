@@ -30,12 +30,12 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil. This information includes CNPJ (Cadastro Nacional da Pessoa Jurídica) / CPF (Cadastro de Pessoas Físicas), CCM (Cadastro de Contribuinte Mobiliário), and IE (Inscrição Estadual) numbers. 
+This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil. This information includes CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas), CCM (Cadastro de Contribuinte Mobiliário), and IE (Inscrição Estadual) numbers. 
 
-You can specify customer tax registration number, name, and address information when creating or editing a named customer master record and a customer address record in POS. You can also manually enter the minimum required information (including CNPJ) for a sales transaction. Customer tax registration numbers can then be used for customer search in POS, added to the cart, printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts, and used for invoicing purposes.
+You can specify customer tax registration number, name, and address information when you create or edit a named customer master record and a customer address record in POS. You can also manually enter the minimum required information (including the CNPJ number) for a sales transaction. Customer tax registration numbers can then be used for customer searches in POS, added to the cart, printed on DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts, and used for invoicing purposes.
 
 > [!NOTE]
-> It isn't possible to specify registration numbers for named customers in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode may be added in future updates.
+> You can't specify registration numbers for named customers in POS if **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode might be added in future updates.
 
 For more information about how to set up this functionality, see [Customer information management](latam-bra-deployment.md#customer-information-management) and [Enable searching customers by tax registration numbers in POS](latam-bra-deployment.md#enable-searching-customers-by-tax-registration-numbers-in-pos).
 
@@ -73,9 +73,9 @@ To make a sale to a new named customer, follow these steps.
 1. Add items to the cart.
 1. Select **Add customer**, and then select **Create customer**.
 1. Specify the new customer's attributes.
-1. In the **CNPJ/CPF** field, enter the customer's CNPJ/CPF number if the customer is not a foreigner.
-1. In the **IE** field, enter the customer's IE number if required.
-1. In the **CCM** field, enter the customer's CCM number if required.
+1. In the **CNPJ/CPF** field, enter the customer's CNPJ/CPF number if the customer isn't a foreigner.
+1. In the **IE** field, enter the customer's IE number if it's required.
+1. In the **CCM** field, enter the customer's CCM number if it's required.
 1. In the **Foreigner ID** field, enter the customer's foreigner ID, if it's required.
 1. Select **Add address**, and then enter the new customer's contact information and address.
 1. Save the customer record and the customer address record, and then add the customer to the transaction.
