@@ -37,7 +37,7 @@ The .env file that is provided as part of the Dynamics 365 Commerce online softw
 
 The default .env file that is provided with the online SDK should resemble the following example.
 
-```text
+```dos
 ### Environment File ##################################################################
 # This is a simple configuration 
 # Online documentation for this file is available at 

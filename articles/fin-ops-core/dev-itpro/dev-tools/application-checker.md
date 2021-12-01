@@ -5,7 +5,7 @@ author: AndreasHassing
 ms.date: 09/22/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.custom: 
 ms.search.region: Global
 ms.author: anniels

@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Dual-write overview
 description: This topic provides an overview dual-write, which provides near-real-time interaction between customer engagement apps and Finance and Operations apps.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
+ms.reviewer: tfehr
 ms.custom: "intro-internal"
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
-
 ---
 
 # Dual-write overview
@@ -78,11 +63,7 @@ Dual-write creates a mapping between concepts in Finance and Operations apps and
 + Ability to look up on-hand inventory availability and details
 + Project-to-cash experience
 + Ability to handle multiple addresses and roles through the party concept
-+ Single source management for users
-+ Integrated channels for retailing and marketing
-+ Visibility into promotions and discounts
-+ Request-for-service functions
-+ Streamlined service operations
+
 
 ## Top reasons to use dual-write
 

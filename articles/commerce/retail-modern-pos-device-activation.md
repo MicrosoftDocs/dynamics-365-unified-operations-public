@@ -4,7 +4,7 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 05/11/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,7 +24,6 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 
 ---
 
@@ -70,9 +69,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 1. In Headquarters, go to **Retail and Commerce** &gt; **Channels** &gt; **Channel deployment**.
 2. On the **Channel deployment** page, select the **Registers** tile.
 3. On the **Registers** page, select a store register. The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
-
 4. Select a register by selecting the register number in the **Register number** column. In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
-
 5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**. To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
 
 ### Download the Modern POS installer
@@ -86,7 +83,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
     > - When you select a device, the **Download** button on the Action Pane becomes available.
 
 4. Select **Download**, and then select **Configuration file**. Note the following:
-    
+
     - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
     - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
 
@@ -102,11 +99,13 @@ Before you start the steps that are outlined in this topic, follow these steps.
 ### Before running the Modern POS installer
 
 - Make sure that all [system requirements](../fin-ops-core/fin-ops/get-started/system-requirements.md) are met. If planning to use an offline database, it is recommended to first review the [Commerce Data Exchange implementation guidance](dev-itpro/implementation-considerations-cdx.md#commerce-data-exchange-implementation-guidance) section and the related best practices content it will reference.
-- It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
+- It is recommended to temporarily turn off antivirus applications. It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
 - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
-    - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx     
+
+    - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
     - **Property:** AllowAllTrustedApps
     - **Value:** 1
+
 - If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
@@ -125,7 +124,6 @@ The Modern POS installer first extracts the associated files and then starts the
     - A sideloaded installation of Modern POS requires a Group Policy change. The installer informs you if this change is required and then makes the change automatically.
 
 2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this topic.
-
 3. The installer installs Modern POS.
 4. On the page that states that installation was successful, select **Close** to exit the installer.
 
@@ -223,9 +221,16 @@ The device should now be activated and ready to use.
 2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
 3. The installer will use the currently installed configuration settings. If the configuration file has changed, because of various configuration changes in Commerce, an update won't change the Modern POS application settings.
 
+> [!WARNING]
+> An update of a Modern POS offline database isn't required for the installer to succeed. An offline database might maintain an older version and might not be updated if any error occurs. When customizations are updated or the update failure isn't detected, an offline database might not work correctly. In these scenarios, it's important that you fix the blocking issue and update the Modern POS again, so that the offline database is correctly updated.
+
 ## Troubleshooting
 
 ### Troubleshoot installation
+
+- When Modern POS is in use and the POS switches offline during a transaction, the following error displays, "Cart version has changed".
+
+    **Solution:** Select to close and continue working. This is a known issue that is currently being investigated. This error does not produce any issues.
 
 - Your browser blocks the download pop-up that is generated.
 
@@ -241,7 +246,7 @@ The device should now be activated and ready to use.
 
 - SQL Server isn't successfully downloaded and installed through the self-service Modern POS installer.
 
-    - **Solution 1:** The installer no longer downloads SQL Server automatically.  Download and install a supported version of SQL Server with Full-text search to meet prerequisite installation.
+    - **Solution 1:** The installer no longer downloads SQL Server automatically. Download and install a supported version of SQL Server with Full-text search to meet prerequisite installation.
 
 - The installation of Modern POS fails, because the registration of performance (perf) counters failed.
 
@@ -280,23 +285,24 @@ The device should now be activated and ready to use.
 
 - The latest iOS version does not support your self-signed certificate.
 
-    **Solution 1:** Utilize a domain and generate a proper domain-based certificate.
-    
-    **Solution 2:** Download the open source OpenSSL library and perform the following after completing installation:
-  
-  1. Using PowerShell, create a private key for the root Certificate Authority (CA) using a command such as **$ openssl genrsa -des3 -out rootCA.key 2048**.
+    - **Solution 1:** Utilize a domain and generate a proper domain-based certificate.
+    - **Solution 2:** Download the open source OpenSSL library and perform the following after completing installation:
+
+        1. Using PowerShell, create a private key for the root Certificate Authority (CA) using a command such as **$ openssl genrsa -des3 -out rootCA.key 2048**.
         2. You will be prompted for a password, which must be remembered for later usage.
-        3. Next, generate the root certificate using a command such as **$ openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out rootCA.pem**.  There will be a prompt for the password entered previously and some basic certificate information.
-     
-     > [!NOTE]
-     > The number of days the certificate is valid for can be altered. In the above example this is 1024 days.   
-     
+        3. Next, generate the root certificate using a command such as **$ openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out rootCA.pem**. There will be a prompt for the password entered previously and some basic certificate information.
+
+            > [!NOTE]
+            > The number of days the certificate is valid for can be altered. In the above example this is 1024 days.
+
         4. Create a new **info.ext** file and enter the following details:
-          - keyUsage = keyEncipherment, dataEncipherment
-          - extendedKeyUsage = 1.3.6.1.5.5.7.3.1
-          - subjectAltName = @alt_names
-          - [alt_names]
-          - DNS.1 = &lt;FULLY QUALIFIED DOMAIN NAME OF HOST COMPUTER&gt;
+
+            - keyUsage = keyEncipherment, dataEncipherment
+            - extendedKeyUsage = 1.3.6.1.5.5.7.3.1
+            - subjectAltName = @alt_names
+            - [alt_names]
+            - DNS.1 = &lt;FULLY QUALIFIED DOMAIN NAME OF HOST COMPUTER&gt;
+
         5. Generate the signing request and private key using a command such as **openssl req -new -nodes -out server.csr -newkey rsa:2048 -keyout server.key**.
         6. Issue the certificate using the previously generated root certificate using a command such as **$ openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile info.ext**. There will be another prompt for the root key password and you will need to specify the number of days that the certificate is valid (500 days in this example).
         7. Generate the IIS certificate using a command such as **$ openssl pkcs12 -inkey server.key -in server.crt -export -out server.pfx**. This command will request a new password, which will be used later when the certificate is imported.
@@ -304,12 +310,14 @@ The device should now be activated and ready to use.
         9. In the same window, go to **Personal** and use the **Import** action to import the previously generated **server.pfx**.
         10. Next, open the **IIS Manager**, select the **RetailHardwareStationWebSite** and select **Edit Bindings** from the right-most menu.
         11. In the new window, select the HTTPS site binding, and the select **Edit**. In the final screen, select the newly installed certificate and select **OK**.
-        12. Verify the certificate is correctly being used. In a web browser, go to  "https:\/\/&lt;hostname&gt;\/HardwareStation\/ping".
+        12. Verify the certificate is correctly being used. In a web browser, go to `https://<hostname>/HardwareStation/ping`.
         13. Install the certificate on the iOS device:
-          - Copy the **rootCA.pem** file and rename the copy to **rootCA.crt**.
-          - Using OneDrive or another file hosting location, upload the **rootCA.crt** and **server.crt** so that they can be downloaded onto the iOS device.
+
+            - Copy the **rootCA.pem** file and rename the copy to **rootCA.crt**.
+            - Using OneDrive or another file hosting location, upload the **rootCA.crt** and **server.crt** so that they can be downloaded onto the iOS device.
+
         14. On the iOS device, go to **Settings &gt; General &gt; Profiles** and select the downloaded profile for the **rootCA.crt**. Select **Install**.
-        15. Validate that the profile status updates to **Verified**.  Repeat the same process for the **server.crt** file.
+        15. Validate that the profile status updates to **Verified**.Repeat the same process for the **server.crt** file.
         16. Go to **Settings &gt; General &gt; About &gt; Certificate Trust Settings** and enable the installed root certificate.
         17. On the iOS device, use the hardware station ping URL specified previously to verify that the certificate is trusted.
         18. Open the POS application in **Non-drawer mode** and pair to the hardware station as typically performed.
@@ -323,6 +331,10 @@ The device should now be activated and ready to use.
 - After you enter the Azure AD account, you receive an error message that states that the user isn't authorized.
 
     **Solution:** Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices. The **Manage device** permission for the worker should be set to **Yes**.
+
+- When using Modern POS on an Android device, the device activation and Azure AD-based POS sign-in open the Azure AD sign-in page in a standalone browser instance, but the sign-in process doesn't proceed.
+    
+    **Solution:** Check whether your Commerce Scale Unit is version 10.0.22 or later, and that Modern POS is version 10.0.21 or earlier. If so, you must rebuild Modern POS from the latest Commerce sample repository (version 10.0.22 or later) and then update the Modern POS application on the Android device.
 
 - Device activation isn't completed. It fails during one of the steps.
 

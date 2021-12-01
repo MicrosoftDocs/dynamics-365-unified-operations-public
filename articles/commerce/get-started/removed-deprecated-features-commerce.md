@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Commerce 
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,6 +43,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 [!include [banner](../includes/preview-banner.md)]
 
+### Overlapping discounts handling setting in Commerce parameters
+
+The **Overlapping discounts handling** setting on the **Commerce parameters** page is deprecated in the Commerce version 10.0.21 release. Going forward, the Commerce pricing engine will use a single algorithm to determine the optimal combination of overlapping discounts.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | <p>The **Overlapping discounts handling** setting in Commerce parameters controls how the Commerce pricing engine searches and determines the optimal combination of overlapping discounts. It currently offers three options:<p><ul><li> **Best performance** – This option uses an advanced heuristics algorithm and a [marginal value ranking](../optimal-combination-overlapping-discounts.md) method to prioritize, evaluate, and determine the best discount combination in a timely manner.</li><li>**Balanced calculation** – In the current code base, this option works just like the **Best performance** option. Therefore, it's essentially a duplicated option.</li><li>**Exhaustive calculation** – This option uses an old algorithm that goes through all possible discount combinations during the price calculation. For orders that have large lines and quantities, this option might cause performance issues.</li></ul><p>To help simplify configuration, improve performance, and reduce incidents that are caused by the old algorithm, we will completely remove the **Overlapping discounts handling** setting and update the internal logic of the Commerce pricing engine so that it now uses only the advanced algorithm (that is, the algorithm behind the **Best performance** option).</p> |
+| **Replaced by another feature?**   | No. We recommend that organizations that use the **Balanced calculation** or **Exhaustive calculation** option switch to the **Best performance** option before this feature is removed. |
+| **Product areas affected**         | Pricing and discounts |
+| **Deployment option**              | All |
+| **Status**                         | As of the 10.0.21 release, the **Overlapping discounts handling** setting will be removed from Commerce parameters in October 2022. |
+
 ### Retail SDK distributed by using Lifecycle Services
 
 The Retail SDK ships in Lifecycle Services (LCS). This mode of distribution is deprecated in release 10.0.21. Going forward, Retail SDK reference packages, libraries, and samples will be published in public repositories on GitHub.
@@ -61,7 +73,7 @@ Retail deployable packages generated using the Retail SDK MSBuild is deprecated 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | A Retail deployable package is a combined package that contains a complete set of extension packages and installers. This combined package makes the deployment complex, as CSU extensions go to Cloud scale unit and installers are deployed in stores. The installers include the extension and base product, which makes the updates difficult. With every upgrade, a code merge and package generation is required. To simplify this process, the extension packages are now separated into components for easy deployment and management. With the new approach, extensions and base product installers are separated and can be independently serviced and upgraded without a code merge or repackaging.|
+| **Reason for deprecation/removal** | A Retail deployable package is a combined package that contains a complete set of extension packages and installers. This combined package makes the deployment complex, as CSU extensions go to Cloud scale unit and installers are deployed in stores. The installers include the extension and base product, which makes the updates difficult. With every upgrade, a code merge and package generation are required. To simplify this process, the extension packages are now separated into components for easy deployment and management. With the new approach, extensions and base product installers are separated and can be independently serviced and upgraded without a code merge or repackaging.|
 | **Replaced by another feature?**   | CSU extensions, POS extension installers, Hardware station extension installers |
 | **Product areas affected**         | Dynamics 365 Commerce extension and deployment |
 | **Deployment option**              | All |
@@ -106,11 +118,11 @@ POS extension development using ModernPos.sln, CloudPOs.sln, POS.Extension.cspro
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won't be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
 | **Product areas affected**         | All Dynamics 365 products |
 | **Deployment option**              | All|
-| **Status**                         | Deprecated. Internet Explorer 11 won’t be supported after August 2021.|
+| **Status**                         | Deprecated. Internet Explorer 11 won't be supported after August 2021.|
 
 ## Features removed or deprecated in the Commerce 10.0.11 release
 ### Data action hooks

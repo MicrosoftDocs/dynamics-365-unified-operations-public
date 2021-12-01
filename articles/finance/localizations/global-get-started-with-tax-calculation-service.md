@@ -4,7 +4,7 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic provides information about how to get started with Tax Calculation. It guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. It then reviews the common process for using Tax Calculation capabilities in Finance and Supply Chain Management transactions.
 
 The setup consists of four main steps:
@@ -46,46 +44,19 @@ The setup consists of four main steps:
 
 Before you can complete the procedures in this topic, prerequisites must be in place for each environment type.
 
-### For a production environment
-
-For a production environment, the following prerequisites must be met:
+The following prerequisites must be met:
 
 - You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.21 or later.
 - You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
 - The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
 
-    - Tax Calculation
+    - Tax Calculation Service
     - Support multiple VAT registration numbers
     - Tax in transfer order
-    - EU sales list transfer based on tax transactions only
-    - Intrastat reporting by Multiple Tax ID
-    - EU Sales list reporting by Multiple Tax ID
-    - Sales tax declaration by Multiple Tax ID
 
 - The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
 
     - Globalization features
-
-### For a test environment (Public Preview)
-
-For a test environment, the following prerequisites must be met:
-
-- You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.18 with KB4616360, or a later version.
-- You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
-- You must contact Microsoft, by emailing <taxcalc@microsoft.com>, to enable the flighting in your deployed Finance or Supply Chain Management environment.
-- The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
-
-	- Tax Calculation
-	- Support multiple VAT registration numbers
-	- Tax in transfer order
-	- EU sales list transfer based on tax transactions only
-	- Intrastat reporting by Multiple Tax ID
-	- EU Sales list reporting by Multiple Tax ID
-	- Sales tax declaration by Multiple Tax ID
-
-- The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
-
-	- Globalization features
 
 ## Set up Tax Calculation in LCS
 
@@ -108,12 +79,12 @@ The steps in this section aren't related to a specific legal entity. You must co
 7. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
 8. Select the correct tax configuration version, based on you Finance version, and then select **Import**.
 
-    | Release version | Tax configuration                       | Model mapping                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Tax Configuration - Europe 30.12.82     |                                 |
-    | 10.0.19         | Tax Calculation Configuration 36.38.193 |                                 |
-    | 10.0.20         | Tax Calculation Configuration 40.43.208 |                                 |
-    | 10.0.21         | Tax Calculation Configuration 40.46.212 | Dataverse Model Mapping 40.46.9 |
+    | Release version | Tax configuration                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Tax Configuration - Europe 30.12.82     |
+    | 10.0.19         | Tax Calculation Configuration 36.38.193 |
+    | 10.0.20         | Tax Calculation Configuration 40.43.208 |
+    | 10.0.21         | Tax Calculation Configuration 40.48.215 |
 
 9. In the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
 10. Select one of the following feature types:

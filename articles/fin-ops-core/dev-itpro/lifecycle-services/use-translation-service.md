@@ -3,8 +3,8 @@
 
 title: Translate user interface files
 description: This topic explains how to use the UI translation service for Microsoft Dynamics 365 products.
-author: kfend
-ms.date: 06/09/2021
+author: abmotgi 
+ms.date: 10/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 6154
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ejcho
+ms.author: abmotgi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -50,21 +50,21 @@ For more information about the Microsoft Dynamics 365 Translation Service, see [
     | File type | Select **User Interface**. |
     | Product name | Select a product name. If you accessed DTS from within an LCS project, this field is automatically filled in and is read-only. |
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
-    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all of the target languages in one request. Select the target languages using the check box next to the language name. This saves time and allows you to track the status of all the target language translations in one request. The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. This means that Microsoft-trained machine translation (MT) systems are available in those languages and the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
+    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all the target languages in one request. Select each target language by using the checkbox next to the language's name. This approach helps you saves time and also lets you track the status of all the target language translations in one request. The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific machine translation (MT) models are available in those languages, and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training. |
 
-![Selecting languages.](./media/dts-target-lang.png "Selecting languages")
+    ![Selecting languages.](./media/dts-target-lang.png "Selecting languages")
 
 3. Select **Create**. Verify the request details were selected correctly and then click **Yes** to continue. 
 
 
     > [!NOTE]
-    > To take advantage of the Microsoft-trained MT system for Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
+    > To take advantage of the product-specific model that is trained on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
     >
-    > | Translation source language | Translation target language | MT system that is used |
+    > | Translation source language | Translation target language | MT model that is used |
     > |-----------------------------|-----------------------------|------------------------|
-    > | English – United States | Japanese | Microsoft-trained MT system |
-    > | Japanese | English – United States | Microsoft-trained MT system |
-    > | German | Japanese | Generic MT system, unless the user provides a translation memory (TM) that uses XML Localization Interchange File Format (XLIFF) and has more than 10,000 translation units (TUs) |
+    > | English – United States | Japanese | Product-specific trained MT model |
+    > | Japanese | English – United States | Product-specific trained MT model |
+    > | German | Japanese | Generic MT model |
 
 
 ## Upload files
@@ -80,9 +80,7 @@ If you have XLIFF TM files from a previous UI translation request, or if you use
 
 If you created the translation request for multiple target languages, you must select which target language the TM file is for. 
 
-With the translation memory file you are providing, you have an option to decide whether you want to create a custom [MT system](translation-service-overview.md#custom-trained-mt-system) trained with it. This option may take longer time to complete the request. You must choose Yes or No to be able to continue with the TM file upload.  
-
-However, if neither the source language nor the target language is a Microsoft GA language, and if the XLIFF TM contains fewer than 10,000 TUs, DTS uses a general domain MT system after recycling is completed. This behavior occurs because of requirements that are set by Microsoft Translator Hub (MT Hub).
+You have an option to create a custom [MT model](translation-service-overview.md#custom-trained-mt-model) that is trained with the translation memory file that you're providing. If you use this option, the request might take longer to be completed. You must select either **Yes** or **No** before you can continue with the TM file upload.  
 
 After you've finished uploading files, select **Submit** to start the translation process. 
 
@@ -95,10 +93,10 @@ To see the request status, click a request ID link on the dashboard. The **Reque
 Note that the processing time depends on the number of requests that are in the DTS queue and the word count in the source files that you submit.
 
 + UI translation requests that don't have an XLIFF TM can be completed in a few minutes, depending on the file size.
-+ If a UI translation request does have an XLIFF TM, the time that is required depends on the type of MT system:
++ If a UI translation request does have an XLIFF TM, the time that is required depends on the type of MT model:
 
-    + Creation of a custom MT system requires two to three days.
-    + If you're using a generic MT system, requests can be completed in a few minutes, depending on the file size.
+    + Creation of a custom MT model requires two to three business days.
+    + If you're using a generic MT model, requests can be completed in a few minutes, depending on the file size.
 
 ## After translation is completed
 

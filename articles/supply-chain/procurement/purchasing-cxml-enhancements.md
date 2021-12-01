@@ -3,7 +3,7 @@
 
 title: Purchasing cXML Enhancements
 description: The Purchasing cXML Enhancements feature builds on the existing external catalog functionality, PunchOut, that is used for purchase requisitions.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-08-03
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Purchasing cXML Enhancements
@@ -32,7 +32,7 @@ The _Purchasing cXML Enhancements_ feature builds on the [existing external cata
 
 ## Turn on the Purchasing cXML Enhancements feature
 
-To turn on the feature, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** page, and search for the feature that is named *Purchasing cXML Enhancements*. Select the feature, and then select **Enable now** to turn it on.
+To turn on the feature, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** page, and search for the feature that is named *Purchasing cXML Enhancements*. Select the feature, and then select **Enable now** to turn it on. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 After you turn on the feature, you should configure settings in the following three areas:
 

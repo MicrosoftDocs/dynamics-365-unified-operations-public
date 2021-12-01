@@ -127,7 +127,7 @@ Follow these steps to set up the integration.
 - Under **Secrets** section:
     - **Name**: Any name, for example "CISecret".
     - **Description**: Any value.
-    - **Secret**: **vault**://<Name of key vault>/<name of secret>> In this  example it will be "vault://KeyVaultName/SecretName".
+    - **Secret**: **vault**:`//<Name of key vault>/<name of secret>>` In this  example it will be `vault://KeyVaultName/SecretName`.
 
 After you update the fields, select **Validate** to ensure the secret can be accessed by the Commerce application.
 

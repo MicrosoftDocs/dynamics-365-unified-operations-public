@@ -1,12 +1,12 @@
 ---
 title: Select data
 description: This topic describes select statements in the X++ language.
-author: robinarh
-ms.date: 06/16/2020
+author: tonyafehr
+ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ---
@@ -56,6 +56,5 @@ info("AccountNum: " + custTable.AccountNum);
 ```
 
 For more examples, see [Select statement](xpp-select-statement.md).
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

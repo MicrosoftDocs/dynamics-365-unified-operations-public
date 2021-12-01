@@ -5,9 +5,9 @@ author: RobinARH
 ms.date: 06/17/2019
 audience: Developer
 ms.devlang: xpp
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -59,7 +59,7 @@ The following code example demonstrates a **while** loop that traverses a contai
 
 ```xpp
 container cont = ["one", "two", "three"];
-int no = 0;
+int no = 1;
 while (no <= conlen(cont))
 {
     info(conPeek(cont, no));

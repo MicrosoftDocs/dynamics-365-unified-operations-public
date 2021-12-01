@@ -3,7 +3,7 @@
  
 title: Register items for an advanced warehousing enabled item using an item arrival journal
 description: This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. 
-author: ShylaThompson
+author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Register items for an advanced warehousing enabled item using an item arrival journal
 

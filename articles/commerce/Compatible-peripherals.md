@@ -3,8 +3,8 @@
 
 title: Peripheral compatibility for Commerce 
 description: This topic lists peripheral devices that have been tested for compatibility with Dynamics 365 Commerce.
-author: rubencdelgado
-ms.date: 10/08/2017
+author: BrianShook
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: josaw
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-08
 ms.dyn365.ops.version: 
 
@@ -62,11 +62,7 @@ Devices listed on this page have been tested for compatibility with Dynamics 365
 
 ## Device compatibility testing
 
-Devices can be tested for compatibility using the Peripheral simulator. For details around device testing and how to produce test logs for submission to Microsoft, see [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md).
-
-Once a device has been successfully tested, in order for compatibility to be acknowledged, the test results must be submitted to <drpc@microsoft.com>. This simulator can be obtained via a download link on the hardware profile within Dynamics 365. Device manufacturers likely do not have access to Dynamics 365. To obtain a copy of the Peripheral simulator, contact <drpc@microsoft.com>.
-
-Testing must be performed for every peripheral setup that goes into production. If the compatibility list indicates that the exact same device/POS setup has been tested in the past, testing should still be done as part of UAT testing. In those cases, test results do not need to be submitted to Microsoft. For all other successful test results, it is encouraged to submit results to <drpc@microsoft.com> to help build the list of compatible devices.
+Devices can be tested for compatibility using the peripheral simulator. For information on obtaining the peripheral simulator, conducting device testing, and producing test logs for submission to Microsoft, see [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md). Testing must be performed for every peripheral setup that goes into production. If the compatibility list indicates that the exact same device/POS setup has been tested in the past, testing should still be done as part of user acceptance testing (UAT).
 
 ## Supported devices
 

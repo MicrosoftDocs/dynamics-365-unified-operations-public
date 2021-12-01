@@ -3,7 +3,7 @@
 
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
-author: rubencdelgado
+author: BrianShook
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: josaw
 ms.custom: ["268444", "intro-internal"]
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -564,7 +564,7 @@ This configuration can be used for all Modern POS clients that share hardware st
 > If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process. Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. Select the register, and then set the **Select upon tender** option to **Yes**. Use the **1090** distribution schedule to sync changes to the channel database.
 
 ## Extensibility
-For information about extensibility scenarios for the hardware station, see [Hardware Station extensibility](dev-itpro/hardware-station-extensibility.md).
+For information about extensibility scenarios for the hardware station, see [Integrate the POS with a new hardware device and generate the extension installer](dev-itpro/hardware-device-extension.md).
 
 ## Security
 According to current security standards, the following settings should be used in a production environment: 

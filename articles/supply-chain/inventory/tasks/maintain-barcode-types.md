@@ -3,7 +3,7 @@
  
 title: Maintain bar code types
 description: This procedure shows you how to set up a new bar code definition which can then be used as part of the picking list report. 
-author: perlynne
+author: yufeihuang
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Maintain bar code types
 
@@ -34,7 +34,8 @@ This procedure shows you how to set up a new bar code definition which can then 
 1. In the **Bar code setup** field, type a value.
 1. In the **Description** field, type a value.
 1. In the **Bar code type** field, select an option.
-    * If you're using USMF, you can select 'Code 39'.  
+    * If you're using USMF, you can select 'Code 39'.
+1. In the **Mask ID** field, specify the bar code mask ID. Bar code masks are used to create bar codes and to quickly identify bar codes that are scanned into a point of sale (POS) system. For details, see [Set up bar code masks](../../../commerce/set-up-bar-code-masks.md).
 1. In the **Size** field, enter a number.
 1. In the **Maximum length** field, enter a number.
 1. Select **Save**.

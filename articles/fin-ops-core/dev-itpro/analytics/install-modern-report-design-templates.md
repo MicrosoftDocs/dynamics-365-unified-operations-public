@@ -4,7 +4,7 @@
 title: Install modern report design templates
 description: This topic explains how to install the modern report design templates in the application suite.
 author: RichdiMSFT
-ms.date: 01/12/2018
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -68,7 +68,7 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
-3. Navigate to the **J:\\AOSService\\PackagesLocalDirectory\\bin** folder.
+3. Navigate to the **<AOSservicedrive>:\\AOSService\\PackagesLocalDirectory\\bin** folder.
 4. Run the following command.
 
     ```Console

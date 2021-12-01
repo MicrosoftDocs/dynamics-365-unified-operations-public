@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen FAQ
 description: This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 07/29/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -35,7 +35,7 @@ This topic provides answers to frequently asked questions regarding the Microsof
 
 ### Can I share a payment terminal with multiple hardware stations?
 
-No. Payment terminals can only be used by a single hardware station or POS terminal. Attempting to connect multiple hardware stations to a single payment terminal will result in locking issues. If a payment terminal must be shared by multiple POS devices, an IIS hardware station must be deployed to manage the payment terminal. 
+No. Payment terminals can only be used by a single hardware station or point of sale (POS) terminal. Attempting to connect multiple hardware stations to a single payment terminal will result in locking issues. If a payment terminal must be shared by multiple POS devices, an IIS hardware station must be deployed to manage the payment terminal. 
 
 ### Can I reuse my existing payment terminal with the Adyen connector?
 
@@ -48,6 +48,46 @@ Yes. Modern POS requires a known IP address to communicate with the Adyen paymen
 ### Can I use my merchant bank?
 
 Yes. Adyen can work with any merchant bank.
+
+### When I configure card type bin range mapping in Commerce for the Adyen Connector, how many digits can I use?
+
+Adyen returns the first six digits of the card for matching. Six digits are the maximum for card type bin range mapping when the Dynamics 365 Payment Connector for Adyen is used.
+
+### How do Commerce transaction events align with Adyen payment status codes?
+
+The following tables show common payment events in Dynamics 365 Commerce and their corresponding payment status codes, as listed in the "Payments" section of the Adyen portal.
+
+#### POS terminal
+
+| Commerce event | Adyen payment status code |
+|---|---|
+| Initial transaction in progress | **AuthorisedPending** |
+| Successful transaction | **Authorised** |
+| Successful transaction in progress | **SentForSettle** |
+| Successful transaction completed | **Settled** |
+| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured) |
+| Cancel | Canceled items aren't expected to appear in the Adyen portal. |
+| Linked refund | **SentForRefund** or **Refunded** |
+| Unlinked refund | The original payment line remains in the final state (for example, **Authorized**). The new line shows **RefundPending** for the payment method that is used. |
+| External gift card as payment method | **SettledExternally** |
+| External gift card add funds | **RefundPending** |
+
+#### Call center and online channels
+
+| Commerce event | Adyen payment status code |
+|---|---|
+| Successful Transaction | **Authorised** |
+| Authorisation | **Settled** |
+| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured) |
+| Cancel | Canceled items aren't expected to appear in the Adyen portal. |
+| Linked Refund | **SentForRefund** or **Refunded** (*Call center only*) |
+| Unlinked Refund | The original payment line remains in the final state (for example, **Authorized**). The new line shows **RefundPending** for the payment method that is used. (*Call center only*) |
+| External Gift Card as Payment Method | **SettledExternally** |
+| External Gift Card Add Funds | **RefundPending** |
+
+Call center and online stores will consider a payment successful even though Adyen might still be processing the payment originating service for the settled state.
+
+For a complete list of Adyen payment status codes, see [Payments lifecycle](https://docs.adyen.com/account/payments-lifecycle).
 
 ## Next steps
 

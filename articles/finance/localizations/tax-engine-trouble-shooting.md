@@ -3,7 +3,7 @@
 
 title: Troubleshoot GTE 
 description: This topic provides information about some of the issues that you might encounter while you use the tax engine (GTE), and explains how to fix them.
-author: yijialuan
+author: EricWangChen
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm:
 ms.search.region: India
 # ms.search.industry:
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 07/30/2019
 ms.dyn365.ops.version: 7.3
 ---

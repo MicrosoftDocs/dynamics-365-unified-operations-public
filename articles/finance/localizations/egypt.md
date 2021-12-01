@@ -4,7 +4,7 @@
 title: Egypt overview
 description: This topic provides an overview of functionality specific to Egypt. 
 author: ilkond
-ms.date: 02/01/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: "intro-internal"
 ms.search.region: Egypt
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: ilyako
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
 
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: 10.0.17
 # Egypt overview
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic includes information and links to documentation resources for Egypt.
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Run the compensation process
-description: This article explains how to resolve an issue where the customer is trying to run the compensation process in Microsoft Dynamics 365 Human Resources but isn't having any success.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic explains how to resolve an issue where the customer is trying to run the compensation process in Microsoft Dynamics 365 Human Resources but isn't having any success.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 

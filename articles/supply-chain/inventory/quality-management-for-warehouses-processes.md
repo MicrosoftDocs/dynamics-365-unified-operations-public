@@ -21,10 +21,12 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
-ms.dyn365.ops.version: Release 10.0.10
+ms.dyn365.ops.version: 10.0.10
 ---
 
 # Quality management for warehouse processes
+
+[!include [banner](../includes/banner.md)]
 
 The _Quality management for warehouse processes_ feature lets you integrate item sampling controls into the warehouse receiving process by using advanced warehouse management. Warehouse work can be automatically generated to move inventory to the quality control location, based on a percentage or a fixed quantity, or based on every *n*th license plate. After a quality order has been completed, work can be automatically generated to move inventory to the next location in the process, depending on the quality results.
 

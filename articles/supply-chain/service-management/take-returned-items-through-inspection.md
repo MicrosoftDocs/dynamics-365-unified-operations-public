@@ -3,7 +3,7 @@
 
 title: Take returned items through inspection   
 description: Take returned items through inspection.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 

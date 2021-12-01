@@ -3,7 +3,7 @@
 
 title: Manage template BOMs on object relations 
 description: Manage template BOMs on object relations. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 

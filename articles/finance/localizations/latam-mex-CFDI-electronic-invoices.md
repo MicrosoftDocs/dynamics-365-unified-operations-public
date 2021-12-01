@@ -97,6 +97,7 @@ As is explained in detail in the Mexican localization scope document, integratio
 - [Inquire and print an electronic invoice](./tasks/mx-00010-inquire-print-electronic-invoice.md)
 - [Cancel an electronic invoice](./tasks/mx-00010-cancel-electronic-invoice.md)
 - [CFDI layout Version 3.3](latam-mex-cfdi-3-3.md)
+- [Waybill (Carta de Porte) complement (version 1.0)](latam-mex-carta-de-porte.md)
 
 
 
