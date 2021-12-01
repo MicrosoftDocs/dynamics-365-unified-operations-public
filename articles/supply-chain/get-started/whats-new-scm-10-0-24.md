@@ -53,9 +53,15 @@ We have recently added or significantly updated the following help topics. These
 
 | Feature area | New or updated topics |
 |---|---|
-
-
-
+| Cost management | [Inventory value reports](../cost-management/inventory-value-report-storage.md) |
+| Cost management | [Inventory value report examples and logic](../cost-management/inventory-value-report-examples.md) |
+| Master planning | [Date and time parameters used by Planning Optimization](../master-planning/planning-optimization/date-time-used.md) |
+| Master planning | [Demand forecasting setup](../master-planning/demand-forecasting-setup.md) |
+| Master planning | [Use the safety stock journal to update minimum coverage for items](../master-planning/safety-stock-journal.md) |
+| Production control | [Customize the production floor execution interface](../production-control/production-floor-execution-customize.md) |
+| Production control | [Style the production floor execution interface](../production-control/production-floor-execution-styles.md) |
+| Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
+| Warehouse management | [Mobile device user accounts](../warehousing/mobile-device-work-users.md) |
 
 ## Additional resources
 
