@@ -45,7 +45,7 @@ To enable GST calculation for e-commerce orders based on invoice information, yo
 GST can also be calculated for shipping charges that can be added to an e-commerce order based on the delivery option that is selected for the order. The calculation of GST for shipping charges is also based on the invoice address that is specified in the e-commerce order.
 
 > [!NOTE]
-> Only order line-level shipping charges are currently supported. GST calculation for header level shipping charges may be added in future updates.
+> GST calculation is currently supported only for order line-level shipping charges. GST calculation for header level shipping charges may be added in future updates.
 
 ### Customer registration numbers
 
@@ -69,7 +69,7 @@ Before you set up e-commerce capabilities for India, you must configure a Commer
 
 ### Install modules
 
-The following packages that are available in the **dynamics365-commerce** feed of the `https://pkgs.dev.azure.com/commerce-partner/` resource include India-specific modules:
+The following packages that are available in the **dynamics365-commerce** feed include India-specific modules:
 
 - **@msdyn365-commerce-marketplace/address-extensions**. The package includes the **Invoice address for India** module.
 
