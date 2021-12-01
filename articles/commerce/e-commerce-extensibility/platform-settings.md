@@ -2,7 +2,7 @@
 # required metadata
 
 title: Platform settings file
-description: This topic covers the various properties that are configured in the platform settings file in Microsoft Dynamics 365 Commerce.
+description: This topic covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
 
 author: samjarawan
 ms.date: 12/01/2021
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic covers the various properties that are configured in the platform settings file in Microsoft Dynamics 365 Commerce.
+This topic covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
 
 The **platform.settings.json** file under the **\\src\\settings\\** directory holds various platform property settings that are used by the Commerce e-commerce runtime. This file might not exist by default. If it doesn't exist, you can add it under the **\\src\\settings\\** directory. The following example of a **platform.settings.json** file shows various supported property settings.
 
@@ -68,30 +68,28 @@ The **secretsManagerOUN** property specifies the operating unit number to use wh
 
 ## JavaScript bundling
 
-The Dynamics 365 Commerce framework generates JavaScript bundles using a webpack-optimized configuration. The default configuration offers better treeshaking (removal of unused or dead code) and JavaScript chunking, but the generation logic can be further tuned for improved bundle generation. For better control of JavaScript bundling, the framework offers the following options. 
+The Dynamics 365 Commerce framework generates JavaScript bundles using a webpack-optimized configuration. The default configuration offers better tree shaking (removal of unused or dead code) and JavaScript chunking, but the generation logic can be further tuned for improved bundle generation. For better control of JavaScript bundling, the framework offers the following options. 
 
 ### enableModuleEntryPoints
 
-Generating javascript bundles per page:
-
 The Dynamics 365 Commerce framework supports generating JavaScript bundles per module and loading only the bundles that are needed on a page. The **enableModuleEntryPoints** platform setting enables the generation of JavaScript bundles per module.
 
-Less JavaScript means better page performance and less unused JavaScript on a site page. However, this can also result in an increased number of JavaScript requests depending on the number of modules used on the page, so it is recommended that you carefully analyze the results in your development environment before enabling this platorm setting in production.
+Less JavaScript means better page performance and less unused JavaScript on a site page. However, this bundling can also result in an increased number of JavaScript requests depending on the number of modules used on the page, so it is recommended that you carefully analyze the results in your development environment before enabling this platform setting in production.
 
-To generate javascript bundles per module, add the below platform setting in the src/settings/platform.settings.json file.
+To generate JavaScript bundles per module, add the below platform setting in the **platform.settings.json** file.
 
 `"enableModuleEntryPoints": true`
 
 ### build
 
 For complex applications with more modules and/or customization, the **build** platform setting can cause the webpack to use more memory. In such a case,
-the default node heap memory size will not be sufficient and can cause heap "out of memory" errors. To increase the heap memory, update the package.json build target to set **NODE_OPTIONS** and increase the heap memory limit as shown in the following example:
+the default node heap memory size will not be sufficient and can cause heap "out of memory" errors. To increase the heap memory, update the **package.json** build target to set **NODE_OPTIONS** to increase the heap memory limit as shown in the following example:
 
 `"build": "SET NODE_OPTIONS=--max_old_space_size=4096 && ..."`
 
 ### maxClientChunkSize
 
-Smaller javascript bundles exert less pressure on the main thread by causing the browser to process and execute the script faster. This has a direct correlation with the total blocking time performance. The **maxClientChunkSize** platform setting helps control the bundle size by splitting the larger JavaScript bundles into multiple parts, as shown in the following example.  
+Smaller JavaScript bundles exert less pressure on the main thread by causing the browser to process and execute the script faster. This has a direct correlation with the total blocking time performance. The **maxClientChunkSize** platform setting helps control the bundle size by splitting the larger JavaScript bundles into multiple parts, as shown in the following example.  
 
 `"maxClientChunkSize": 500000 // 500KB unzipped size`
 
