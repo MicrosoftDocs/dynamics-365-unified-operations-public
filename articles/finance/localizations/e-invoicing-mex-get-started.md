@@ -45,9 +45,8 @@ Before you complete the steps in this topic, you must complete the steps in [Get
 To add the Cadena XSLT schema to the globalization feature for CFDI processing, complete the following steps.
 
 1. Download schema from the [SAT web site](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt).
-2. Compress the schema in to a ZIP file.
-3. Save the xslt file to your Azure Storage account setup in your Service environment to the new container.
-
+2. Compress the schema to a ZIP file.
+3. Save the xslt file to your Azure Storage account set up in your Service environment for the new container.
 
 ## RCS setup
 
