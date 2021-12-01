@@ -45,12 +45,12 @@ Follow these steps to set up the electronic invoice configuration in Accounts pa
 1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 2. On the **Electronic documents** tab, in the **Vendor invoice (export)** field, select the **Vendor invoice (IT)** configuration. This configuration is used to generate the XML files for the export of vendor electronic invoices.
 
-![Vendor invoice (export) field set on the Electronic documents tab of the Accounts payable parameters page.](media/emea-ita-AP-parameter-e-invoices.jpg)
+   ![Vendor invoice (export) field set on the Electronic documents tab of the Accounts payable parameters page.](media/emea-ita-AP-parameter-e-invoices.jpg)
 
-> [!NOTE]
-> Configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
->
-> The parent model configuration, **Invoice model**, and the related model mapping configuration, **Vendor invoice model mapping (IT)**, will automatically be imported or updated.
+   > [!NOTE]
+   > Configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+   >
+   > The parent model configuration, **Invoice model**, and the related model mapping configuration, **Vendor invoice model mapping (IT)**, will automatically be imported or updated.
 
 ## Enable electronic invoice generation
 
@@ -71,7 +71,7 @@ Follow these steps to define one or more invoice types.
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice parameters**. 
 2. On the **Invoice types** tab, define codes for one or more required invoice types, and enter a description of each.
 
-![Invoice types defined on the Invoice types tab of the Electronic invoice parameters page.](media/emea-ita-invoice-types.jpg)
+   ![Invoice types defined on the Invoice types tab of the Electronic invoice parameters page.](media/emea-ita-invoice-types.jpg)
 
 ### Assign invoice types to sales tax codes
 
@@ -80,7 +80,7 @@ You can associate invoice types with specific sales tax codes.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. On the **General** FastTab, in the **Invoice type** field, enter the reference to a specific invoice type.
 
-![Invoice type assigned to a sales tax code on the Sales tax codes page.](media/emea-ita-invoice-types-tax-codes.jpg)
+   ![Invoice type assigned to a sales tax code on the Sales tax codes page.](media/emea-ita-invoice-types-tax-codes.jpg)
 
 ## Invoice types processing
 
