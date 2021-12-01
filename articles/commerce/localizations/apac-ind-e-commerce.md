@@ -42,7 +42,7 @@ To enable GST calculation for e-commerce orders based on invoice information, yo
 
 ### GST calculation for shipping charges
 
-GST can also be calculated for shipping charges that can be added to an e-commerce order based on the delivery option that is selected for the order. The calculation of GST for shipping charges is also based on the invoice address that is specified in the order.
+GST can also be calculated for shipping charges that can be added to an e-commerce order based on the delivery option that is selected for the order. The calculation of GST for shipping charges is also based on the invoice address that is specified in the e-commerce order.
 
 > [!NOTE]
 > Only order line-level shipping charges are currently supported. GST calculation for header level shipping charges may be added in future updates.
