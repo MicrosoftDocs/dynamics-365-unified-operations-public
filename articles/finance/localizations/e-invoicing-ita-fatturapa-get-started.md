@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing for Italy
 description: This topic provides information that will help you get started with Electronic invoicing for Italy.
 author: abaryshnikov
-ms.date: 11/29/2021
+ms.date: 11/30/2021
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: rhaertle
@@ -118,7 +118,7 @@ This section complements the section, [Country-specific configuration of applic
 
 ### Create App registration
 
-1. Create a self-signed certificate for service to service authentication. This can be done using a PowerShell script.
+1. Create a self-signed certificate for service to service authentication by using a PowerShell script.
 	
 	```powershell
 	$certOutputLocation = "C:\certs\proxytest"
@@ -138,7 +138,7 @@ This section complements the section, [Country-specific configuration of applic
 
 2. Save the pfx certificate into the Key Vault and then delete the pfx certificate.
 3. Log in to the [Azure portal](https://portal.azure.com) as an administrator.
-5. Create app registration for **SDI Proxy service**.
+5. Create an app registration for **SDI Proxy service**.
     1. Go to **App registrations** and create a new registration with the following parameters:
 	
         - **Name**: **SDI Proxy Client**
@@ -146,150 +146,144 @@ This section complements the section, [Country-specific configuration of applic
 		
     	![Create Azure App Registration](media/e-invoicing-ita-fatturapa-get-started-app-registration.png)
 
-    2. Select **Register**.
-    3. Select the app registration you created and then go to **API permissions**.
-    4. Select ***Grant admin consent***.
+    2. Select **Register** and then select the app registration you created.
+    3. Go to **API permissions** and select ***Grant admin consent***.
 	
-	    ![Grant admin consent](media/e-invoicing-ita-fatturapa-get-started-app-registration-consent.png)
+      ![Grant admin consent](media/e-invoicing-ita-fatturapa-get-started-app-registration-consent.png)
 	
-    5. Go to ***Certificates & secrets*** and upload the '.cer' certificate for service-to-service authentication.
+    4. Go to ***Certificates & secrets*** and upload the '.cer' certificate for service-to-service authentication.
 	
         ![Upload certificate](media/e-invoicing-ita-fatturapa-get-started-app-upload-cert.png)
 
-    6.  Go to ***Enterprise applications*** and select application created.
-    7.  Save ***Application ID*** (Client ID) and ***Object ID*** of the app.
-    8.  Contact with the **Invoicing Service** team to grant this app access to the service.
-        Send to the <D365EInvoiceSupport@microsoft.com> the following parameters:
+    5. Go to ***Enterprise applications*** and select the application you  created.
+    6. Save the app's ***Application ID*** (Client ID) and ***Object ID***.
+    7. Contact the Invoicing Service team to grant this app access to the service. by sending the folloiwng parameters to D365EInvoiceSupport@microsoft.com.
         - **AAD TenantID**  
         - **LCS Environment ID**
         - **Application ID** (Client ID)  
         - **Object ID**
 
-6.  Add the ***Object ID*** to the Applications list of your service environment in RCS. **Save** and **Publish** changes.
-    1.  In Regulatory configuration service go to Globalization features \> Environments \> Electronic Invoicing \> Service environments
-    2.  Select your environment and add application to the list:
+6.  Add the ***Object ID*** to the applications list of your service environment in RCS, select **Save** and then select **Publish**.
+    1. In RCS go to **Globalization features** > **Environments** > **Electronic Invoicing** > **Service environments**.
+    2. Select your environment and add the application to the list.
 	
         ![Add the application to the service environment](media/e-invoicing-ita-fatturapa-get-started-add-app-to-env.png)
 
-    3.  Save \> Publish
+    3. Select **Save** > **Publish**.
 
-### Create Azure Virtual Machine:
+### Create an Azure virtual machine
 
-1.  Go to **Virtual machines** and select **Create new**.
-2.  Select you subscription and resource group (the same where you Key Vault and Blob storage are located).
-3.  Chose the same region where your F&O instance has been deployed (as well as Key Vault and Blob storage).
-4.  Insert administrators user name and password (and save them into the Key Vault).
-5.  Inbound ports: HTTPS(443), RPD (3389) (it\`s recommended to disable RDP (3389) when the system goes to production. You can enable it back when it is necessary to connect to the VM in case of troubleshooting).
+1. Go to **Virtual machines** and select **Create new**.
+2. Select your subscription and resource group. These are the same as where your Key Vault and Blob storage are located.
+3. Select the region. Select the same region where your Finance environment is deployed.
+4. Add the administrators user name and password and save them to the Key Vault.
+5. Inbound ports: HTTPS(443), RPD (3389) (it\`s recommended to disable RDP (3389) when the system goes to production. You can enable it back when it is necessary to connect to the VM in case of troubleshooting).
 
-    ![Create Azure Virtual Machine. Basics](media/e-invoicing-ita-fatturapa-get-started-create-vm-1.png)
+  ![Create Azure Virtual Machine. Basics](media/e-invoicing-ita-fatturapa-get-started-create-vm-1.png)
 
-6.  Use managed disks, Do not use Ephemeral.
+6. Use managed disks, Do not use Ephemeral.
 
     ![Create Azure Virtual Machine. Disks](media/e-invoicing-ita-fatturapa-get-started-create-vm-2.png)
 
-7.  On the Networking tab select **Public IP** \> **Create new** \> Select **Standard** SKU, **Static** assignment.
+7. On the **Networking** tab select **Public IP** > **Create new** and then select the **Standard** SKU and **Static** assignment.
 
     ![Create Azure Virtual Machine. Networking](media/e-invoicing-ita-fatturapa-get-started-create-vm-3.png)
 
     ![Create Azure Virtual Machine. Public IP](media/e-invoicing-ita-fatturapa-get-started-create-vm-4.png)
 
-8.  On the **Management** tab:
-    1.  DISABLE **Auto-shutdown** policy on the **Management** tab.
-    2.  Set **Manual** Guest OS updates.
-    3.  All other policies can be set.
-9.  Review and create Virtual Machine.
-10.  Go to created VM \> Identity \> System assigned \> Status \> ON.
-11.  Grant access to the Key Vault for the VM:
-     1.  Go to Key Vault \> **Access control (IAM)** \> Role assignments.
+8. On the **Management** tab:
+	
+    1. Turn off the **Auto-shutdown** policy.
+    2. Set **Manual** Guest OS updates and then set any other policies.
+	
+9. Review and create a Virtual machine.
+10. In the new Virtual machine, go to **Identity** > **System assigned** > **Status** > **ON**.
+11. Grant access to the Key Vault for the Virtual machine.
+     1. In the Key Vault, go to **Access control (IAM)** > **Role assignments**.
      2.  Select **Add role assignment** and save then
          1.  Role: **Key Vault Secrets User**
          2.  Assign access to: **Virtual machine**
          3.  Subscription: your **subscription**
          4.  Select: find your **Virtual machine**
-     1.  Go to Key Vault \> **Access policies**
-     2.  Select **Add Access Policy**
-         1.  Select Virtual machine as Selected principal.
+     3. In the Key Vault, go to **Access policies** and select **Add Access Policy**.
+         1. Select Virtual machine as Selected principal.
          2.  Select Certificate \> **List**, **Get** permissions.
-12.  Enable Application Insights.
-    1.  Go to created Virtual machine \> Monitoring \> Insights.
-    2.  Select **Enable** and follow the Application Insights creation guide.
-13.  Go to **Public IP addresses** and select IP address created within the Virtual machine.
-     1.  Go to **Configuration** and set the DNS name.
+12. In the Virtual machine, go to **Monitoring** > **Insights**.
+13. Select **Enable** and follow the Application Insights creation guide.
+14. Go to **Public IP addresses** and select the IP address created in the Virtual machine.
+15. Go to **Configuration** and set the DNS name.
 
-### Proxy service environment preparation.
+### Proxy service environment preparation
 
-Several steps should be done on machine where proxy service supposed to be hosted:
-1.  Connect to the Virtual machine via Remote Desktop Connection.
-2.  Open Local Machine Certificate snap-in following this [guide](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
-3.  Import certificates caentrate.cer file for production and CAEntratetest.cer for test (Root CA certificate provided by authority) to **Trusted Root Certification Authorities**.
-3.  Open **Turn on/off windows features** window (OR **Server Manager \> Add Roles And Features** for server OS) and turn on IIS features as on screenshot below:
+Complete the following steps on the machine where the proxy service is hosted.
+	
+1. Connect to the Virtual machine by using Remote Desktop Connection.
+2. Open the Local Machine Certificate snap-in. For information, see this [guide](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
+3. Import the certificates, **caentrate.cer** for production and **CAEntratetest.cer** for test (Root CA certificate provided by authority) to **Trusted Root Certification Authorities**.
+4. Open the **Turn on/off windows features** window, or go to **Server Manager** > **Add Roles and Features** for server OS, and turn on IIS features.
 
     ![Turn on Windows Features](media/e-invoicing-ita-fatturapa-get-started-turnon-features.png)
 	
-### Setup SDI Proxy service on IIS.
+### Setup SDI Proxy service on IIS
 
-1.  Take folder with SdiProxy solution: Go to **Shared asset library** as described in article: [Asset library in Lifecycle Services (LCS)](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/asset-library).
-2.  Select asset type: Data package
-3.  Find and download **Electronic Invoicing Service Sdi Proxy** to the Virtual machine.
-4.  Configure service:
-    1.  In **src\\FattureService** folder open **appsettings.json** and enter following parameters:
-        1. **KeyVaultUri** - Address of the key vault which stores client certificate for invoicing service
-        2. **TenantId** - GUID of the customer's tenant
-        3. **EnvironmentId** - Id of LCS environment
-        4. **ClientId** - AppId of intermediate services app registration in customer\`s tenant
-        5. **ClientCertificateName** - name of the S2S certificate in the Key Vault
-        6.  SecurityServiceClientOptions.**Endpoint** - Url address of the security service
-        7.  SecurityServiceClientOptions.**Resource** - Scope to obtain token
-        8.  InvoicingServiceClientOptions.**Endpoint** - endpoint of the Invoicing service. Should be the same as for RCS and F&O setup
-        9.  InvoicingServiceClientOptions.**ServiceEnvironmentId** - name of the service environment. Should be the same as for F&O setup
-        10. **NotificationsFolder** - folder to save incoming notifications files.
+1. In Dynamics Lifecycle Services (LCS), go to the **Shared asset library** and select the asset type, **Data package**.
+2. Find and download **Electronic Invoicing Service Sdi Proxy** to the Virtual machine.
+3.  Configure the service.
+    1. In **src\\FattureService** folder open **appsettings.json** and enter following parameters:
+        - **KeyVaultUri**: The address of the key vault which stores the client certificate for invoicing service.
+        - **TenantId**: The GUID of the customer's tenant.
+        - **EnvironmentId**: The ID of the LCS environment.
+        - **ClientId**: The AppId of intermediate services app registration in the customer`s tenant.
+        - **ClientCertificateName**: The name of the S2S certificate in the Key Vault.
+        - SecurityServiceClientOptions.**Endpoint**: The Url address of the security service.
+        - SecurityServiceClientOptions.**Resource**: The scope to obtain the token.
+        - InvoicingServiceClientOptions.**Endpoint**: The endpoint of the invoicing service. This should be the same as for RCS and Finance.
+        - InvoicingServiceClientOptions.**ServiceEnvironmentId**: The name of the service environment. This should be the same as your Finance environment.
+        - **NotificationsFolder**: Folder to save incoming notifications files.
     2.  In web.config:
-        1.  Change the following line by adding **proxy server certificate** thumbprint:
+        1. Change the following line by adding **proxy server certificate** thumbprint:
             \<serviceCertificate findValue="Put your cert thumbprint here" storeLocation="LocalMachine" storeName="My" x509FindType="FindByThumbprint" \>.
-        2.  When the system goes to production the following values could be changed to reduce amount of logs collected and to save a disc space: in \<system.diagnostics\>\<source\> nodes find 'switchValue' parameters and change it values to "Critical, Error". More information could be found here: [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
+        2. When the system goes to production the following values could be changed to reduce amount of logs collected and to save a disc space. In \<system.diagnostics\>\<source\> nodes, find the 'switchValue' parameter and change it to "Critical, Error". For more information, see [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
 
-5.  Open IIS Manager.
-6.  Stay on root node of left menu and, on right side, select **Server certificates**.
+4. Open IIS Manager, stay on the root node of left menu, and on right side, select **Server certificates**.
 
     ![Install the service certificate](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-1.png)
-
-7.  Open the menu and select Import (Upper right corner).
-8.  Specify path to **proxy server** certificate (should be the pfx file).
+,
+5.  Open the menu and select **Import**.
+6.  Specify path to the **proxy server** certificate. Rhis should be the pfx file.
 
     ![Install the service certificate. Selection](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png)
 
-9.  Now do right select on **Sites** \> **Add website**.
-10.  Specify any reasonable **Site name**.
-11.  In **Physical path** point to folder with **FattureService** service (\\src\\FattureService).
-12. Select **https** as **Binding Type**.
-13. Specify Host name as **DNS** configured for the Virtual machine and for **proxy server certificate**.
-14. Leave **Ip Address** and **Port** as default.
-15. **Require Server Name Indication** should be **disabled** (because SDI does not support that technology).
-16. SSL certificate: **proxy server certificate** imported before.
-17. Application pool: keep specific pool for the site and save it\`s name (SdiAppPool)
+7. Right-click **Sites** > **Add website** and enter a site name.
+8. In the **Physical path** field, point to folder with **FattureService** service (\\src\\FattureService).
+9. In the **Binding type** field, select **https**.
+10. Specify the host name as **DNS**. configured for the Virtual machine and for **proxy server certificate**. Leave the default values in the **Ip Address** and **Port** fields.
+11. Make sure that the **Require Server Name Indication** field isn't enabled because SDI doesn't support the technology.
+12. In the **SSL certificate** field, select the proxy server certificate that you imported.
+13. In the **Application pool** field, keep the specific pool for the site and save it`s name (SdiAppPool).
 
     ![Configure IIS. Add Website](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-1.png)
 	
-18. After creating web site, open **SSL Settings** menu.
+14. After you create the web site, open **SSL Settings** menu.
 
     ![Configure IIS. Open SSL Settings](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-2.png)
 
-19. Check **Require SSL** and select **Client certificats**: Require.
+15. Check **Require SSL** and select **Client certificates**: Require.
 
     ![Configure IIS. SSL Settings](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
-20. Open **Directory Browsing** and select **Enable**.
-21. Open Internet Explorer browser and check address **serverDNS/TrasmissioneFatture.svc**.
-22. Browser can show error that "Site is not secure" - select **More Information** and select **Go to the website.** (for test environment)
-23. A standard window about service must be shown up:
+16. Open **Directory Browsing** and select **Enable**.
+17. Open Internet Explorer and navigate to **serverDNS/TrasmissioneFatture.svc**. You will receive the error, "Site is not secure".
+18. Select **More Information** > **Go to the website**.  A standard window about service must be shown up:
 
     ![Open browser to check the service](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
-24. Create folders to store logs and files:
-    1.  C:\\logs\\ - here the log files would be placed. They can be viewed by [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe)
-    2.  C:\\files\\ - here all the response files would be placed
-25.  Grant access to the folders for the **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** for default )
-    1.  Open context menu on the folder \> Properties \> Security \> Edit \> Add the users if they are not here
+19. Create folders to store logs and files in the following locations:
+    - C:\\logs\\: Store log files here. The files can be viewed by [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
+    - C:\\files\\: Store all of the response files here.
+20. Grant access to the folders for the **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** for default).
+    1. Open context menu on the folder and select **Properties** > **Security** > **Edit**.
+    2. Add the users if they are not here
 	
         ![Add permissions to the service user](media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
 
