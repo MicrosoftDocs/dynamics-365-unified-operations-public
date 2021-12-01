@@ -121,6 +121,9 @@ In the same way that you can select (or unselect) all rows in the grid by select
 ### Hiding column names
 When grouping data, the default behavior is to show the column name in the group header row. You can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
+### Grouping on date and time columns
+Starting in 10.0.24, for Date or DateTime fields, you will have the option to group by Year, Month, or Day. The group "value" in the corresponding header row will match the format from that field. Additionally, for DateTime and Time fields, you will be able to group by Hour, Minute, or Second.    
+
 ## Freezing columns
 Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you may want the values in those columns to always be visible. The **Freeze columns in grid** feature provides this flexibility to users. 
 
