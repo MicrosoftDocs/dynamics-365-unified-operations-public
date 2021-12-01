@@ -120,7 +120,14 @@ A statement goes through various operations (for example, Create, Calculate, Cle
 
 ### Aggregated transactions
 
-During the posting process, the sales transactions are aggregated based on the configuration. These aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. You can view the aggregated transactions by using the **Aggregated transactions** button in the **Execution details** group of the statement.
+During the posting process, cash and carry transactions will be aggregated by customer and product reducing the amount of sales orders and lines that are created. These aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. You can view the aggregated transactions by using the **Aggregated transactions** button in the **Execution details** group of the statement if the statement is not fully posted.
+
+![Image shows where on the screen the aggregated transactions function can be found for unposted statements.](media/aggregated-transactions.png)
+
+For posted statements, Aggregated transactions can be viewed in the inquiries menu on the Posted statements page.
+
+![Image shows where on the screen the aggregated transactions function can be found for posted statements.](media/aggregated-transactions-posted-statements.png)
+
 
 The **Sales order detail** tab of an aggregated transaction shows the following information:
 
@@ -131,10 +138,26 @@ The **Sales order detail** tab of an aggregated transaction shows the following 
 - **Number of aggregated lines** – The total number of lines for the aggregated transaction and sales order.
 - **Status** – The last status of the aggregated transaction.
 - **Invoice ID** – When the sales order for the aggregated transaction is invoiced, the sales invoice ID. If this field is blank, the invoice for the sales order hasn't been posted.
+- **Error code** - If the aggregation is in an error state, this field will be populated.
+- **Error message** - If the aggregation is in an error state, this field will be populated with details on what caused the process to fail. Resolving the issue based on the information in this error code will allow the process to be manually started again. Depending on the type of resolution, aggregated sales may need to be deleted and processed on a new statement.
+
+![Image shows where error code and messages can be seen.](media/aggregated-transactions-error-message-view.png)
 
 The **Transaction details** tab of an aggregated transaction shows all the transactions that have been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction show all the aggregated records from the transactions. The aggregated lines also show details such as the item, variant, quantity, price, net amount, unit, and warehouse. Basically, each aggregated line corresponds to one sales order line.
 
-From the **Aggregated transactions** page, you can download the XML for a specific aggregated transaction by using the **Export sales order XML** button. You can use the XML to debug issues that involve sales order creation and posting. Just download the XML, upload it to a test environment, and debug the issue in the test environment. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
+![Image shows a sample of the sales transaction details screen.](media/aggregated-transactions-sales-details.png)
+
+There will be situations where aggregated transactions fail to post their consolidated sales order. When this occurs, the statement status will have an error code associated. To view the aggregated transactions that have a failure there is a **Show only failures** filter on the aggregated transactions view. Enabling this filter will limit the results to only those aggregated transactions with errors that need resolution. For assistance on resolution of these errors, refer to this Edit and Audit article.
+
+![Image shows the show only failures option.](media/aggregated-transactions-failure-view.png)
+
+From the **Aggregated transactions** page, you can download the XML for a specific aggregated transaction by using the **Export aggregation data** button. You can use the XML to see the actual data details that involve sales order creation and posting. You can download the XML and review it in any XML formatter. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
+
+![Image shows where the export aggregation data button is located.](media/aggregated-transactions-export.png)
+
+In the event that the error cannot be resolved through the correction of data on the sales order or data supporting the sales order, there is an option to **Delete customer order**. To delete the order select the aggregated transaction that has failed and select the **Delete customer order** function. This will delete the aggregated transaction and corresponding sales order. The transactions will now be available for review in the Edit and Audit functionality or they can be reprocessed through a new statement. Once all failures are resolved, statement posting can be resumed by executing the post statement function for the statement in question.
+
+![Image shows where the delete customer order function is located.](media/aggregated-transactions-delete-cust-order.png)
 
 The aggregated transaction view provides the following benefits:
 
