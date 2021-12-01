@@ -158,8 +158,6 @@ From the **Aggregated transactions** page, you can download the XML for a specif
 
 In the event that the error cannot be resolved through the correction of data on the sales order or data supporting the sales order, there is an option to **Delete customer order**. To delete an order, select the aggregated transaction that has failed and then select the **Delete customer order** function. This action will delete both the aggregated transaction and corresponding sales order. The transactions will now be available for review using the edit and audit functionality, or they can be reprocessed through a new statement. Once all failures are resolved, statement posting can be resumed by executing the post statement function for the statement in question.
 
-![Image shows where the delete customer order function is located.](media/aggregated-transactions-delete-cust-order.png)
-
 The aggregated transaction view provides the following benefits:
 
 - The user has visibility into the aggregated transactions that failed during sales order creation and the sales orders that failed during invoicing.
