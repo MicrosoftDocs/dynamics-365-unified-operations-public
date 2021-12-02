@@ -61,7 +61,7 @@ Additionally, the following parameters have been introduced on the **Batch proce
 
 - **Maximum number of parallel statement posting** – This field defines the number of batch tasks that will be used to post multiple statements. 
 - **Max thread for order processing per statement** – This field represents the maximum number of threads used by the statement posting batch job to create and invoice sales orders for a single statement. The total number of threads that will be used by the statement posting process will be computed based on the value in this parameter multiplied by the value in the **Maximum number of parallel statement posting** parameter. Setting the value of this parameter too high can negatively impact the performance of the statement posting process.
-- **Max transaction lines included in aggregation** – This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in a aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
+- **Max transaction lines included in aggregation** – This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in an aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
 - **Maximum number of threads to validate store transactions** – This field defines the number of threads that will be used to validate transactions. Validating transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Commerce parameters** page. This needs to defined even if gift cards are not used by the organization.
 
 > [!NOTE]
@@ -120,17 +120,17 @@ A statement goes through various operations (for example, Create, Calculate, Cle
 
 ### Aggregated transactions
 
-During the posting process cash and carry transactions are aggregated by customer and product, reducing the number of sales orders and lines that are created. These aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. 
+During the posting process, cash-and-carry transactions are aggregated by customer and product. Therefore, the number of sales orders and lines that are created is reduced. The aggregated transactions are stored in the system and used to create sales orders. Every aggregated transaction creates one corresponding sales order in the system. 
 
-If a statement is not fully posted, you can view aggregated transactions by selectng **Aggregated transactions** in the **Execution details** group of the statement.
+If a statement isn't fully posted, you can view aggregated transactions in the statement. On the Action Pane, on the **Statement** tab, in the **Execution details** group, select **Aggregated transactions**.
 
-![Image shows where on the screen the aggregated transactions function can be found for unposted statements.](media/aggregated-transactions.png)
+![Aggregated transactions button for a statement that isn't fully posted.](media/aggregated-transactions.png)
 
-For posted statements, aggregated transactions can be viewed on the **Posted statements** page by selecting **Aggregated transactions** in the **Inquiries** dropdown menu.
+For posted statements, you can view aggregated transactions on the **Posted statements** page. On the Action Pane, select **Inquiries**, and then select **Aggregated transactions**.
 
-![Image shows where on the screen the aggregated transactions function can be found for posted statements.](media/aggregated-transactions-posted-statements.png)
+![Aggregated transactions command for posted statements.](media/aggregated-transactions-posted-statements.png)
 
-The **Sales order detail** tab of an aggregated transaction shows the following information:
+The **Sales order details** FastTab of an aggregated transaction shows the following information:
 
 - **Record ID** – The ID of the aggregated transaction.
 - **Statement number** – The statement that the aggregated transaction belongs to.
@@ -139,35 +139,33 @@ The **Sales order detail** tab of an aggregated transaction shows the following 
 - **Number of aggregated lines** – The total number of lines for the aggregated transaction and sales order.
 - **Status** – The last status of the aggregated transaction.
 - **Invoice ID** – When the sales order for the aggregated transaction is invoiced, the sales invoice ID. If this field is blank, the invoice for the sales order hasn't been posted.
-- **Error code** - If the aggregation is in an error state, this field will be populated.
-- **Error message** - If the aggregation is in an error state, this field will be populated with details on what caused the process to fail. Resolving the issue based on the information in this error code will allow the process to be started again manually. Depending on the type of resolution, aggregated sales may need to be deleted and processed on a new statement.
+- **Error code** – This field is set if the aggregation is in an error state.
+- **Error message** – This field is set if the aggregation is in an error state. It shows details about what caused the process to fail. You can use the information in the error code to fix the issue, and then manually restart the process. Depending on the type of resolution, aggregated sales might have to be deleted and processed on a new statement.
 
-![Image shows where error code and messages can be seen.](media/aggregated-transactions-error-message-view.png)
+![Fields on the Sales order details FastTab of an aggregated transaction.](media/aggregated-transactions-error-message-view.png)
 
-The **Transaction details** tab of an aggregated transaction shows all the transactions that have been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction show all the aggregated records from the transactions. The aggregated lines also show details such as the item, variant, quantity, price, net amount, unit, and warehouse. Basically, each aggregated line corresponds to one sales order line.
+The **Transaction details** FastTab of an aggregated transaction shows all the transactions that have been pulled into the aggregated transaction. The aggregated lines on the aggregated transaction show all the aggregated records from the transactions. The aggregated lines also show details such as the item, variant, quantity, price, net amount, unit, and warehouse. Basically, each aggregated line corresponds to one sales order line.
 
-![Image shows a sample of the sales transaction details screen.](media/aggregated-transactions-sales-details.png)
+![Transaction details FastTab of an aggregated transaction.](media/aggregated-transactions-sales-details.png)
 
-ere will be situations where aggregated transactions fail to post their consolidated sales order. When this occurs, the statement status will have an error code associated with it. To view aggregated transactions with errors there is a **Show only failures** filter in the aggregated transactions view. Enabling this filter will limit the results to only those aggregated transactions with errors that need resolution. For information on resolving these errors, see [Edit and audit online order and asynchronous customer order transactions](edit-order-trans.md).
+In some situations, aggregated transactions might fail to post their consolidated sales order. In these situations, an error code will be associated with the statement status. To view only aggregated transactions that have errors, you can enable the **Show only failures** filter in the aggregated transactions view by selecting the checkbox. By enabling this filter, you limit the results to aggregated transactions that have errors that require resolution. For information about how to fix these errors, see [Edit and audit online order and asynchronous customer order transactions](edit-order-trans.md).
 
-![Image shows the show only failures option.](media/aggregated-transactions-failure-view.png)
+![Checkbox for the Show only failures filter in the aggregated transactions view.](media/aggregated-transactions-failure-view.png)
 
-From the **Aggregated transactions** page, you can download the XML for a specific aggregated transaction by selecting **Export aggregation data**. You can review the XML in any XML formatter to see the actual data details that involve sales order creation and posting. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
+On the **Aggregated transactions** page, you can download the XML for a specific aggregated transaction by selecting **Export aggregation data**. You can review the XML in any XML formatter to see the actual data details that involve sales order creation and posting. The functionality for downloading the XML for aggregated transactions isn't available for statements that have been posted.
 
-![Image shows where the export aggregation data button is located.](media/aggregated-transactions-export.png)
+![Export aggregation data button on the Aggregated transactions page.](media/aggregated-transactions-export.png)
 
-In the event that the error cannot be resolved through the correction of data on the sales order or data supporting the sales order, there is an option to **Delete customer order**. To delete an order, select the aggregated transaction that has failed and then select the **Delete customer order** function. This action will delete both the aggregated transaction and corresponding sales order. The transactions will now be available for review using the edit and audit functionality, or they can be reprocessed through a new statement. Once all failures are resolved, statement posting can be resumed by executing the post statement function for the statement in question.
+In the event that you can't fix the error by correcting data on the sales order or data that supports the sales order, a **Delete customer order** button is available. To delete an order, select the aggregated transaction that failed, and then select **Delete customer order**. Both the aggregated transaction and the corresponding sales order will be deleted. You can now review the transactions by using the edit and audit functionality. Alternatively, they can be reprocessed through a new statement. After all failures are fixed, you can resume statement posting by running the post statement function for the relevant statement.
 
-The aggregated transaction view provides the following benefits:
+![Delete customer order button in the aggregated transactions view.](media/aggregated-transactions-delete-cust-order.png)
+
+The aggregated transactions view provides the following benefits:
 
 - The user has visibility into the aggregated transactions that failed during sales order creation and the sales orders that failed during invoicing.
 - The user has visibility into how transactions are aggregated.
 - The user has a complete audit trail, from transactions, to sales orders, to sales invoices. This audit trail wasn't available in the legacy statement posting feature.
 - Aggregated XML file make it easier to identify issues during sales order creation and invoicing.
-
-The following example image shows how to delete a customer order from the aggregated transactions view.
-
-![Image shows where on the screen the delete customer order function is located.](media/aggregated-transactions-delete-cust-order.png)
 
 ### Journal vouchers
 
