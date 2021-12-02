@@ -330,21 +330,17 @@ example, if you want to import vendor invoices for different legal entities.
 7. Select **Save** and close the page.
 8. Close the page.
 9. Select the derived configuration you just created from the **Customer invoice context model**, and on the **Versions** FastTab, select **Change Status** > **Completed**.
-10. On the **External channels** tab, to set up import of vendor invoices.
-10. On the **Channels**, select **Add** and in the **Channel field**, enter **\$Context Channel**. Enter values in the **Description** and **Company** fields.
-11. In the **Document context** field, select the new configuration from **Customer invoice context model**. The mapping description should be **Data channel context**.
-12. In the **Import sources** field group, select **Add** and enter values in the **Name** and **Description** fields.
+Go to **Organization administration** \> **Setup** \> **Electronic document parameters**. 
+1. On the **External channels** tab, to set up import of vendor invoices.
+2. On the **Channels** tab, select **Add** and in the **Channel field**, enter **\$Context Channel**. Enter values in the **Description** and **Company** fields.
+3. In the **Document context** field, select the new configuration from **Customer invoice context model**. The mapping description should be **Data channel context**.
+4. In the **Import sources** field group, select **Add** and enter values in the **Name** and **Description** fields.
+   In the **Name** field, set the value from **Feature version setup** \> **Variables** tab. Fill out **Data entity name** field: **Vendor Invoice register header** if you want importing vendor invoices in Invoice register or **Vendor invoice journal**, if you want importing vendor invoices in pending vendor invoices. You can have only one import source (**Vendor Invoice register header** or **Vendor invoice journal**).
 
- > [!NOTE]
- > In the **Name** field, set the value from Feature version setup \> **Variables** tab. Select one of Data entity name: **Vendor Invoice register header,** if you want importing vendor invoices in Invoice register or **Vendor invoice journal**, if you want importing vendor invoices in pending vendor invoices.
+5. Select the model mapping, **Vendor invoice import (ID)** to import the invoice header into the invoice register or pending vendor invoices. 
+6. Select **Vendor invoice import XML (ID)** to import the header and lines into pending vendor invoices.
 
-13. Select the model mapping, **Vendor invoice import (ID)** to import the invoice header into the invoice register or pending vendor invoices. 
-14. Select **Vendor invoice import XML (ID)** to import the header and lines into pending vendor invoices.
-
- > [!NOTE] 
- > You can have only one line for one import source.
-
-Before you import vendor invoices from xml files, you must set up an **External item description** for vendors. Then, the system can match an item name in the xml file with line items in sales orders.
+> [!NOTE]. Before you import vendor invoices from xml files, you must set up an **External item description** for vendors. Then, the system can match an item name in the xml file with line items in sales orders.
 
    ![Electronic document parameters- External channels](media/apac-idn-import-setup-external-channels.png)
 
