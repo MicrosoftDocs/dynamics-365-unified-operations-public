@@ -2,8 +2,8 @@
 # required metadata
 
 title: 125 percent reducing balance depreciation
-description: This article gives an overview of the 125 percent reducing balance method of depreciation.
-author: saraschi2
+description: This topic presents an overview of the 125 percent reducing balance method of depreciation.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
