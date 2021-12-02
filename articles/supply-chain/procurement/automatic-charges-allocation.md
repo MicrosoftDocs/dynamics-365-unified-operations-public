@@ -3,8 +3,8 @@
 
 title: Automatic allocation of charges
 description: The charges feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically allocate charges to purchase orders or sales orders.
-author: dasani-madipalli
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Automatic allocation of charges
@@ -31,6 +31,16 @@ ms.dyn365.ops.version: Release 10.0.15
 Based on the customer that you're working with or the item that you're selling, you might want to apply specific additional charges. The *charges* feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically allocate charges to purchase orders or sales orders.
 
 Automatic charges, or auto charges, are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, or items. You can also define auto charges that apply to all vendors, customers, or items.
+
+## Set up parameters
+
+The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to allocate charges automatically. To complete this setup, follow these steps.
+
+1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
+1. Open the **Prices** tab.
+1. On the **Prices** FastTab, make the following settings:
+    - **Find auto charges for header** – Specifies whether charges should automatically be allocated for purchase order headers. Set this to *Yes* to use automatic allocation of charges.
+    - **Find auto charges for line** – Specifies whether charges should automatically be allocated for purchase order lines. Set this to *Yes* to use automatic allocation of charges.
 
 ## Set up charges codes
 

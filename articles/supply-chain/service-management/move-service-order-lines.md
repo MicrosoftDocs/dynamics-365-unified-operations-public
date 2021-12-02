@@ -3,7 +3,7 @@
 
 title: Move service order lines   
 description: Move service order lines. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

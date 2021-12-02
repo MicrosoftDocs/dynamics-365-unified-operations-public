@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 21631
 ms.search.region: Global
@@ -160,7 +160,7 @@ You can open a failed test result and review the **ErrorMessage** section for in
 
 ![Error message information.](media/error-message.png)
 
-All error messages are also available locally under **C:\Users\$YourUserName\AppData\Roaming\regressionTool\errormsg-<TestCaseId>.txt**.
+All error messages are also available locally under `C:\Users\$YourUserName\AppData\Roaming\regressionTool\errormsg-<TestCaseId>.txt`.
 
 ### Test response times
 

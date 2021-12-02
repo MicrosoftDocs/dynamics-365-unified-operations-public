@@ -21,7 +21,7 @@ ms.search.region: global
 # ms.search.industry:
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Change work pool on work

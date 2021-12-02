@@ -15,8 +15,9 @@ ms.dyn365.ops.version: 10.0.20
 
 # Global Inventory Accounting home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 International organizations are under increasing pressure from authorities to comply with local and global accounting standards. The valuation of inventory plays a significant role in ensuring compliance. The Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management provides a comprehensive solution that enables organizations (especially international organizations) to use multiple costing ledgers to do inventory accounting. Therefore, those organizations can comply with multiple accounting standards and internal management accounting at the same time.
 
@@ -42,8 +43,11 @@ Global Inventory Accounting is currently available in the following Azure geogra
 - United Kingdom
 - Australia
 - Canada
+- South America
 
 If you try to install the add-in from another geographic region, Microsoft Dynamics Lifecycle Services (LCS) will show a message that your geographic region isn't supported. Global Inventory Accounting doesn't support on-premises deployments of Supply Chain Management.
+
+If you have any issues enabling Global Inventory Accounting in one of the supported geographic regions listed here, please send an email message with your environment ID to [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com) for validation.
 
 ## Licensing
 

@@ -4,7 +4,7 @@
 title: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
 description: This topic explains how to configure Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 This topic provides information about the configuration capabilities of Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS).
 
-It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.
+It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web service, the configuration capabilities also help you meet the requirements for exchanging messages with a web service, without doing any code.
 
 ## Electronic reporting
 
@@ -78,6 +78,7 @@ The following table shows the electronic invoicing features that are generally a
 | Spain          | Spanish electronic invoice (ES)      | Sales invoices and project invoices |
 | Europe         | PEPPOL electronic invoice            | PEPPOL sales invoices and project invoices |
 | Europe         | PEPPOL vendor invoice                | PEPPOL import vendor invoices |
+| Saudi Arabia   | Saudi Arabian electronic invoice (SA)| Sales invoices and project invoices |
 
 ### Preview features
 
@@ -202,6 +203,11 @@ The following lists show the ER format configurations that are available for the
 - Sales invoice (ES)
 - Project invoice (ES)
 
+#### Saudi Arabian (SA) electronic invoice: Sales and project invoices for Saudi Arabia
+
+- Sales e-invoice (SA)
+- Project e-invoice (SA)
+
 In addition to the ER format configurations that are available out of the box to use with the Electronic Invoicing service, you can also create your own ER format configurations. However, the format configurations that are created to use with Electronic Invoicing features don't support direct reference to Finance or Supply Chain Management tables or any of the corresponding metadata. Only references to the ER model mapping are supported.
 
 ### Actions
@@ -279,7 +285,7 @@ Logic operators:
 - And
 - Or
 
-Operators types:
+Operator types:
 - Equal
 - Not equal
 - Greater than
@@ -301,7 +307,7 @@ The example looks like this.
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
-| C                            | <p>Country = BR</p><p>and</p><p>( Legal entity = BRMF</p><p>or</p><p>Model=55)</p>  |
+| C                            | <p>Country = BR</p><p>and</p><p>(Legal entity = BRMF</p><p>or</p><p>Model=55)</p>  |
 
 
 ## Configuration providers

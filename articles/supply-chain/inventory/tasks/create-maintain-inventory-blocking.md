@@ -3,7 +3,7 @@
  
 title: Create and maintain an inventory blocking
 description: This topic describes how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create and maintain an inventory blocking

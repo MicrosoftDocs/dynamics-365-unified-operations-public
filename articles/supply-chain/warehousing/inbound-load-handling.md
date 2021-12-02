@@ -3,7 +3,7 @@
 
 title: Warehouse handling of inbound loads for purchase orders
 description: This topic describes the warehouse handling process for inbound loads for purchase orders.
-author: omulvad
+author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: 
@@ -19,12 +19,14 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: Release 10.0.10
+ms.dyn365.ops.version: 10.0.10
 ---
 
 # Warehouse handling of inbound loads for purchase orders
+
+[!include [banner](../includes/banner.md)]
 
 This topic describes the warehouse handling process for inbound loads for purchase orders.
 
@@ -269,7 +271,7 @@ These scenarios require the _Multiple product receipt postings per load_ feature
 
 1. Open the **Feature management** workspace. (For complete details about how to find and use this workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Turn on the _Associate purchase order inventory transactions with load_ feature, which is listed in the following way:
+1. Make sure the _Associate purchase order inventory transactions with load_ feature is turned on. As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
 
     - **Module:** _Warehouse management_
     - **Feature name:** _Associate purchase order inventory transactions with load_

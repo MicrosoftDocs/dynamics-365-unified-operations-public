@@ -4,7 +4,7 @@
 title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -124,7 +124,8 @@ The following tools are available on the **Personalization** toolbar:
 
 - Use the **Select** tool to select and change the properties of an element. To use this tool, select the **Select** button on the toolbar, and then select the desired element. The element's property window appears, where you can change any of the properties of that element. You can repeat the process for other elements that can be personalized on the page. Note that some personalization properties might not be available in some scenarios. For example, you can't lock a field that is required.
 - Use the **Hide** tool to hide an element on the page. To use this tool, select the **Hide** button on the toolbar, and then select the element to hide. When you use the **Hide** tool, all elements that are currently hidden are made visible, but they are shown in a shaded container. You can then make an element visible by selecting it. To see how the page will look when elements are hidden, switch to another personalization tool or close the personalization toolbar.
-- Use the **Add fields** tool to add fields to your page. When you use this tool, you can add only fields that are part of the page definition. For information about how to create new fields that aren't part of the current page definition, see [Create and work with custom fields](user-defined-fields.md). After you select the **Add fields** button on the toolbar, you must first select the grid or section where you want to add a field. A dialog box will show the list of fields that are related to the selected grid or section. In the dialog box, select one or more fields to add, and then select **Update**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
+- Use the **Add fields** tool to add fields to your page. When you use this tool, you can only add fields that are part of the page definition. For information about how to create new fields that aren't part of the current page definition, see [Create and work with custom fields](user-defined-fields.md). After you select the **Add fields** button on the toolbar, you must first select the grid or section where you want to add a field. A dialog box will show the list of fields that are related to the selected grid or section. In the dialog box, select one or more fields to add from either the **Recommended fields** or **All fields** list. After choosing the desired fields, select **Update**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
+    - The **Recommended fields** list shows fields that have been previously added by other users in your organization. This list of fields is updated based on the recurrence frequency of the **Recommendation batch job**. A similar experience exists when adding new filter fields using the Filter pane on a page.
 - Use the **Move** tool to move an element to a different location in the current group of elements. Note that you can't move an element outside its parent group. To use this tool, select the **Move** button on the toolbar, and then select the element to move. When you select an element, the app determines the locations where the element is allowed to be moved. These locations are known as *drop zones*. As you drag the element around in the current group, each drop zone is shown as a colored, bold line next to the area where the element can be dropped.
 - Use the **Skip** tool to remove an element from the page's keyboard tab sequence. When you select the **Skip** button on the toolbar, all elements that are currently skipped are shown in a shaded container. You can interactively remove or add fields to the tab sequence.
 - Use the **Show in header** tool when you want a field to appear in the FastTab's summary section. When you select the **Show in header** button on the toolbar, all fields that have been selected as summary fields are shown in a shaded container. You can interactively add fields to the FastTab summary and remove fields from the summary by selecting the fields.
@@ -223,6 +224,9 @@ If saved views aren't enabled, follow these steps to copy a personalization.
 ### Export and import views or personalizations
 
 Another way to share personalizations is via export and import. Individual users, or an admin who acts on their behalf, can use this method to export their personalizations or views, and then give the exported file to other users to import. Alternatively, users can give their exported personalizations to a user who has admin privileges, and that user can then use the **Personalization** administration page to apply the personalization file to many users at the same time.
+
+> [!IMPORTANT]
+> As personalizations persist across updates, re-importing all personalizations after a service update or at any other time is unnecessary and highly discouraged.   
 
 #### Export
 

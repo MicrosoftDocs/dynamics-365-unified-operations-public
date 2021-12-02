@@ -3,7 +3,7 @@
 
 title: Install, set up, and update the Customer portal
 description: This topic provides licensing details and setup instructions for the Customer portal.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
@@ -19,13 +19,14 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Install, set up, and update the Customer portal
 
+[!include [banner](../includes/banner.md)]
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## Licensing requirements
@@ -45,7 +46,7 @@ Unlike other features from Supply Chain Management, the Customer portal template
 
 ## <a name="required-setup"></a>Required setup to enable the Customer portal
 
-After you've made sure that you have the required licenses, you can set up dual-write as described in the [dual-write initial synchronization instructions](/dynamics365/supply-chain/sales-marketing/enable-entity-map).
+After you've made sure that you have the required licenses, you can set up dual-write as described in the [dual-write initial synchronization instructions](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md).
 
 Be sure to enable the following table mappings in dual-write:
 

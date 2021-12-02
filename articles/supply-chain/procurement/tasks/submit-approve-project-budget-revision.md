@@ -3,7 +3,7 @@
  
 title: Submit and approve project budget revision
 description: This procedure provides information about revising a project budget. 
-author: kamaybac
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Submit and approve project budget revision
 

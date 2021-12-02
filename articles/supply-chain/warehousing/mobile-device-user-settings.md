@@ -59,7 +59,7 @@ You can also define a settings profile that applies to all device brands, device
 
 Follow these steps to create and manage user settings for your mobile devices.
 
-1. Go to **Warehouse management \> Mobile device \> Mobile device user settings**.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device user settings**.
 1. Select an existing user settings profile in the list pane to open its record. Alternatively, select **New** on the Action Pane to create a new profile.
 
     Each profile in the list pane is labeled to indicate the brand, model, and/or user ID that the profile applies to. More general profiles have a value of *All* for some or all of these characteristics.
@@ -88,7 +88,7 @@ Use the **Mobile device brands** page to view, create, and manage the device bra
 
 Follow these steps to create and manage your mobile device brands and models.
 
-1. Go to **Warehouse management \> Mobile device \> Mobile device brands**.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device brands**.
 1. In the list pane, select a mobile device brand to open its record. Alternatively, select **New** on the Action Pane to create a new brand.
 1. In the header section of the record for the new or selected device brand, set the following fields:
 

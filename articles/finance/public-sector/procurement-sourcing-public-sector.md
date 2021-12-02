@@ -3,7 +3,7 @@
 
 title: Procurement and sourcing in the public sector
 description: This overview introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
-author: ShylaThompson
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 19681
 ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -91,7 +91,7 @@ Yes. Line amounts for a purchase order can be viewed, including the current orde
 
 Let’s say you view a purchase order line with purchases posted to two ledger accounts. One ledger account is for office furniture ordered from a vendor. The second ledger account is for office supplies. The ordered amount is equal to the sum of the invoiced amounts, pending invoice amounts, and invoice remaining amounts. The received amount is the portion of the ordered amount that has been received from the vendor.
 
-<table style="width:100%;">
+<table>
 
 <col width="16%" />
 <col width="16%" />
@@ -122,7 +122,7 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 <td><p>750.00</p></td>
 <td>150.00</td>
 <td>400.00</td>
-<td></td>
+<td>&nbsp;</td>
 <td><p>350.00</p></td>
 </tr>
 <tr class="even">

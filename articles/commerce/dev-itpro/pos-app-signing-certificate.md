@@ -4,7 +4,7 @@
 title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
-ms.date: 12/03/2020
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -43,6 +43,9 @@ To sign the MPOS app with a certificate, use one of these options in the **Retai
 - Use thumbprint to look up in the certificate in the store and sign in with that certificate.
 
 ## Use a Secure File task for Universal Windows Platform app signing
+
+> [!NOTE]
+> You can also use Azure Key Vault to store the certificate and use the Azure sign tool to sign the Modern POS .appx file and self-service installers. For sample pipeline scripts and additional information, see [Set up a build pipeline in Azure DevOps to generate Retail self-service packages](build-pipeline.md#set-up-a-build-pipeline-in-azure-devops-to-generate-retail-self-service-packages).
 
 Using a Secure File task is the recommended approach for Universal Windows Platform (UWP) app signing. For more information about package signing, see [Configure package signing](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). This process is shown in the following image.
 
@@ -86,6 +89,9 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
     ```
+ 
+For details about how to get the thumbprint for a certificate, see [retrieve a certificate's thumbprint](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
+
  
 ## Download or generate a certificate to sign the MPOS app manually using msbuild in SDK
 

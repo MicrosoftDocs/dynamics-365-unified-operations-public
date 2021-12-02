@@ -39,29 +39,29 @@ For example, when you configure [foreign trade parameters](../../../finance/loca
 
 If the current Finance instance contains no Intrastat business process-related ER formats, this lookup field will be empty.
 
-[![Foreign trade parameters page.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Foreign trade parameters page, empty Report format mapping field.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 If the current Finance instance contains Intrastat business process related ER formats, this lookup field offers the ER formats.
 
-[![Foreign trade parameters page.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Foreign trade parameters page, Report format mapping field with options.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 This lookup offers only the ER formats that have already been imported to the current Finance instance. To
 [import](./tasks/er-import-configuration-lifecycle-services.md) ER solutions to the current Finance instance, you need to have permissions to run the appropriate function of the ER framework that supports the [lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md) of ER solutions that contain ER formats.
 
 Starting in the Finance version 10.0.9 (April 2020 release), the user interface of the ER format lookup that is implemented by using the ER framework API, has been extended. You can still select the existing ER formats, which on the **Select format configuration** FastTab. In addition, the extended lookup offers the new option to search the Global repository (GR) to locate specific ER formats. All ER formats of the GR are offered on the **Import from Global repository** FastTab.
 
-[![Foreign trade parameters page.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Foreign trade parameters page, Import from Global repository FastTab.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 Similar to the **Select format configuration** FastTab, the **Import from Global repository** FastTab shows only the ER formats that are applicable to the business process for which an ER format is selected in this lookup field. In this example, the generation of Intrastat declaration. The ER format is applicable for the company to which the user is currently signed in, depending on the company country context.
 
 When you select an ER format on the **Import from Global repository** FastTab, the selected ER format
 [configuration](general-electronic-reporting.md#Configuration) is imported from the GR to the current Finance instance.
 
-[![Foreign trade parameters page.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Foreign trade parameters page, Processing operation note.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Then, if the import completes successfully, the reference to the imported ER format is stored in this lookup field. When you access the GR for the first time, you need to follow the link provided to sign up for the [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) that is used to manage access to the GR storage.
 
-[![Foreign trade parameters page.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![Foreign trade parameters page, Link to sign up for RCS.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 By default, the **Import from Global repository** FastTab presents the list of ER formats from the temporary storage that is automatically created based on the GR content for performance improvements. This happens when the **Import from Global repository** FastTab is opened the first time, which may take several seconds.
 

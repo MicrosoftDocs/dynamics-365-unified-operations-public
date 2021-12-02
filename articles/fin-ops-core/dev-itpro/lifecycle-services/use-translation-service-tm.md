@@ -3,8 +3,8 @@
 
 title: Translation memory files
 description: This topic describes when and where translation memory files can be created, edited, and used to result in a quality translation output file.
-author: kfend
-ms.date: 03/29/2018
+author: abmotgi
+ms.date: 10/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 6154
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ejcho
+ms.author: abmotgi
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
 
@@ -94,7 +94,7 @@ Review the aligned XLIFF file before you use it as a TM. TUs that have been revi
 
 We recommend that you use the free Multilingual Editor, or another XLIFF editor, to review and edit the translations in the XLIFF file that DTS provides. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards.
 
-When you open an XLIFF file in the Multilingual Editor, it resembles the following illustration.
+When you open an XLIFF file in the Multilingual Editor, it resembles the following illustration. If you encounter an error when you open the file, ignore the message, and select the **Strings** tab in the lower-left corner of the window.
 
 ![XLIFF file in the Multilingual Editor.](./media/dts-editor1.png "XLIFF file in the Multilingual Editor")
 

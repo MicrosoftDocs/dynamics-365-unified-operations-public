@@ -3,7 +3,7 @@
 
 title: Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
 description: This topic explains how to integrate the Asset management module in Microsoft  Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
-author: kamaybac
+author: johanhoffmann 
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: 
@@ -19,12 +19,14 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: Release 10.0.12
+ms.dyn365.ops.version: 10.0.12
 ---
 
 # Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
+
+[!include [banner](../includes/banner.md)]
 
 You can integrate the **Asset management** module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows. If a guide is associated with an Asset Management work order, a worker who opens the work order's maintenance checklist in the Supply Chain Management (Dynamics 365) mobile app sees that a guide is available. The worker can then find and open the guide in the Dynamics 365 Guides HoloLens app.
 

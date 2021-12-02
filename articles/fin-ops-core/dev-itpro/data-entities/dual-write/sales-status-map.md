@@ -5,7 +5,7 @@ author:  dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-25

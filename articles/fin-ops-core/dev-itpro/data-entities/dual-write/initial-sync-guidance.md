@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
@@ -74,11 +74,13 @@ If you're running the initial synchronization from the Finance and Operations ap
 
 This type of synchronization is supported in Platform update 37 (PU37) and later. Therefore, you should update your Finance and Operations app to PU37 or later.
 
-### Company and Currency Exchange Tables
+### Security role for write access
 
-Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. All dual-wrtie users will need to be added to the **Dual-Write App User** security role.
+Every user in a customer engagement organization with dual-write must be added to the **Dual-Write Runtime User** role. Without this role, users will be unable to create any rows in tables in the customer engagement organization.
 
-In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
+### Company and Currency Exchange Tables Required Security Role
+
+Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. To provide access, all dual-write users will need to be added to the **Dual-Write App User** security role. If a user does not have this security role assigned to them, they will be unable to read tables that contain Company and Currency values.
 
 ### Error handling capabilities
 

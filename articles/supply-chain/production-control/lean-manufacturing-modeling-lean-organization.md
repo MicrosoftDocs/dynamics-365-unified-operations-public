@@ -3,7 +3,7 @@
 
 title: Modeling a lean organization
 description: The article provides information about the key concepts in modeling a lean organization. 
-author: cvocph
+author: johanhoffmann
 ms.date: 09/24/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

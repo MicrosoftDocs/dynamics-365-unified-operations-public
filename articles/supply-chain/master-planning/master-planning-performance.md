@@ -2,7 +2,7 @@
 # required metadata
 title: Improve master planning performance
 description: This topic explains the various options that can help you improve the performance of master planning or troubleshoot issues.
-author: t-benebo
+author: ChristianRytt
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 

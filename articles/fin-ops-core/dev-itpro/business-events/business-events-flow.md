@@ -4,7 +4,7 @@
 title: Business events in Microsoft Power Automate
 description: This topic provides information about the business events that are available for consumption in Microsoft Power Automate via the application connector.
 author: Sunil-Garg
-ms.date: 02/18/2020
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,34 +27,72 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-Business events can be consumed in Microsoft Power Automate via the application connector. The connector has a trigger that is named **when a business event occurs**. This trigger can be used to subscribe to any of the business events that are available in the target instance of the application.
+The Finance and Operations connector and Microsoft Dataverse connector are available for consuming business events in Microsoft Power Automate. The Finance and Operations connector has a **When a Business Event occurs** trigger. The Dataverse connector has a **When an action is performed** trigger. Either of these triggers can be used to subscribe to any of the business events that are available in Finance and Operations apps. Both triggers provide the same functionality, but the execution is slightly different.
+
+The Dataverse connector lets you use the **When a row is added, modified or deleted** trigger to subscribe to data events in Finance and Operations apps. This trigger enables a Power Automate flow to be triggered by any create, update, or delete (CUD) event against a selected Finance and Operations apps entity.
 
 ## Prerequisite
 
 It's important that you understand business events. For more information, see the [Business events](home-page.md) documentation.
 
-> [!IMPORTANT]
-> The **when a business event happens** trigger works only with application instances that run Platform update 24 or later, because business events aren't available in earlier platform releases.
+## Subscribing to business events
 
-## Subscribing to business events and unsubscribing from them
+### Using the Finance and Operations connector
 
-After the **when a business event happens** trigger is added to a flow, the following information must be provided:
+The Finance and Operations connector communicates directly with Finance and Operations apps to establish subscriptions, but it's triggered by Dataverse at runtime. The connector can connect to any instance of Finance and Operations apps on the Azure Active Directory (Azure AD) tenant. 
+
+After the **When a Business Event occurs** trigger is added to a flow, the following information must be provided:
 
 - **Instance** – Specify the host name of the instance where business events occur. Environment instances should be available in the provided drop-down menu, but if an environment is not listed it can be entered as a custom value.
-- **Category** – Select the category of business events. The **Business event** field then shows the business events in that category.
-- **Business event** – The available business events in the selected category.
+- **Category** – Select the category of business events. The list of unique business event categories in the business event catalog in Finance and Operations apps is shown.
+- **Business event** – Select the business event that the flow should be triggered from. All the business events that are shown in the list are business events in the selected category in the Finance and Operations apps business event catalog.
 - **Legal entity** – Specify the legal entity where the business event is being subscribed to. The flow will be triggered when the business event occurs in that legal entity. By default, this field is blank and the business event is subscribed to in **all** legal entities.
+
+![When a Business Event occurs trigger.](../media/businessevents_FinOpsConnector.png)
 
 When the flow is saved, a subscription to the selected business event is added into the environment instance. As part of the subscription process, the required endpoint is set up, and the corresponding business event is activated.
 
-If the trigger is deleted or the flow is turned off, then the business event endpoint will be automatically deleted.
+### Using the Dataverse connector
 
-Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity. Note that the default endpoint limit per event is ten. If needed, adjust the **Endpoints allowed per event** on the **Business event parameters** page.
+Business events for Finance and Operations apps are also exposed through the **When an action is performed** trigger of the Dataverse connector. This trigger exposes actions and table operations that are configured in Dataverse by using the **Catalog** and **CatalogAssignment** tables. This configuration provides a more generic business event framework in Dataverse that isn't limited to Finance and Operations apps business events. Business events in the Finance and Operations apps business event catalog are synchronized with the Dataverse business events catalog. Therefore, you can subscribe to Finance and Operations apps business events to initiate business logic in a Power Automate flow. For more information about the catalog in the Dataverse business events framework, see [Catalog and CatalogAssignment tables](/powerapps/developer/data-platform/catalog-catalogassignment).
+
+To use the Finance and Operations apps business events in the **When an action is performed** trigger of the Dataverse connector, the Microsoft Power Platform integration must be enabled for the Finance and Operations apps environment, so that the Finance and Operations apps environment is connected to the Dataverse environment. For more information about how to enable the Microsoft Power Platform integration for Finance and Operations apps environments, see [Enabling the Microsoft Power Platform integration](../power-platform/enable-power-platform-integration.md). 
+
+> [!NOTE]
+> The Microsoft Power Platform integration has a one-to-one connection between Finance and Operations apps and the Microsoft Power Platform environment. Because of this relationship, you can't select among multiple Finance and Operations apps environments as the **When a Business Event occurs** trigger of the Finance and Operations connector does. The trigger automatically connects to the Finance and Operations apps environment that is selected for the Microsoft Power Platform integration.
+
+After the **When an action is performed** trigger is added to a flow in Power Automate, the following information must be provided:
+
+- **Catalog** – Select **Finance and Operations**. This exposes Finance and Operations business events as a Dataverse business events catalog.
+- **Category** – Select the category of the desired business event. The list of unique business event categories in the business event catalog in Finance and Operations apps is shown.
+- **Table name** – If the action is related to a specific table, select the related table. Typically, the value will be **(none)** for Finance and Operations apps business events.
+- **Action name** – Select the action or business event that the flow should be triggered from. The drop-down list shows all synchronized business events in the selected category in the Finance and Operations apps business event catalog.
+
+![When an action is performed trigger in the Microsoft Dataverse connector.](../media/businessevents_DataverseConnector.png)
+
+For more information about how to use the **When an action is performed** trigger in Power Automate, see [Trigger flows with actions](/power-automate/dataverse/action-trigger).
 
 > [!NOTE]
 > The Power Automate endpoint must not be configured manually. The endpoint will automatically get created from Power Automate as explained above.
 
-For how-to information about using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](how-to/how-to-flow.md). 
+## Subscribing to data events
+
+Finance and Operations apps entities that are enabled as virtual entities in Dataverse are included in the **When a row is added, modified or deleted** trigger of the Dataverse connector. When you add the trigger to a flow in Power Automate, define the table name of the table that you want to trigger the flow for. The **Table name** list contains the list of all Finance and Operations apps entities that are exposed as virtual entities in Dataverse from the Finance and Operations apps environment that is connected to the Microsoft Power Platform environment through the Microsoft Power Platform integration. For information about how to enable virtual entities, see [Enable Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
+
+![When a row is added, modified or deleted trigger in the Microsoft Dataverse connector.](../media/businessevents_DataEventConnector.png)
+
+> [!NOTE]
+> By entering **mserp** in the **Table name** field, you can filter the list of tables so that it shows only the available Finance and Operations apps virtual entities that are enabled for your environment.
+
+For more information about how to use the **When a row is added, modified or deleted** trigger in the Dataverse connector, including information about advanced options, see [Trigger flows when a row is added, modified, or deleted](/power-automate/dataverse/create-update-delete-trigger).
+
+## Unsubscribing from business events
+
+If the trigger is deleted or the flow is turned off, the business event endpoint is automatically deleted.
+
+## Adjusting flow parameter limits
+
+Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity. The default endpoint limit per event is ten. You can adjust the **Endpoints allowed per event** setting on the **Business event parameters** page as you require.
 
 ## Other ways to consume business events in Power Automate
 
@@ -64,5 +102,6 @@ Event Grid might be a viable approach for consuming business events in Power Aut
 
 This approach is applicable to any messaging or event platform that is used as an endpoint for business events, provided that a connector is available for it in Power Automate.
 
+For information about how to use business events in Microsoft Flow, see [Consume business events in Microsoft Flow](how-to/how-to-flow.md). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@
 
 title: Default order settings for dimensions and product variants
 description: Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. 
-author: t-benebo
+author: johanhoffmann
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
@@ -23,7 +23,7 @@ ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
 
@@ -194,7 +194,7 @@ Strict validation applies to **Standard order quantity** values specified on the
 
 ### Enable the strict validation option
 
-Before you can use the strict validation option, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
 
 - **Module** - *Product information management*
 - **Feature name** - *Strict validation on default order quantities*
