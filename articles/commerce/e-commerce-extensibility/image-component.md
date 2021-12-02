@@ -2,7 +2,7 @@
 # required metadata
 
 title: Image component
-description: This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK **Image** component to ensure images sizes are optimally served for the screen size a customer is using for the online store.
+description: This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK **Image** component to embed images into a module with advanced support including optimized image sizes from the Dynamics 365 image resizer service and support for fallback and thumbnail images.
 author: samjarawan
 ms.date: 11/30/2021
 ms.topic: article
@@ -29,9 +29,21 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK **Image** component to ensure images sizes are optimally served for the screen size a customer is using for the online store.
+This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK **Image** component to embed images into a module with advanced support including optimized image sizes from the Dynamics 365 image resizer service and support for fallback and thumbnail images.
 
-Microsoft Dynamics 365 Commerce provides an image resizer service to help serve appropriately sized and scaled images optimized for each view port which will ensure images are served with the best performance and scaled correctly when rendering a module on a page.  By using the **Image** component, the image resizer will automatically be used.
+## Image state
+There are 4 image states available for each image.
+1. Loading placeholder.
+2. Thumbnail image (low resolution image).
+3. Main image (full resolution image).
+4. Empty image placeholder.
+
+### Loading Placeholder
+Loading placeholder is shown to the user while the main image is loading. The placeholder is represented as a single div element with the corresponding class msc-loading_image. Using the class name you can specify the background image for the html element. For fabrikam theme, it's specified to be this svg file:
+![placeholder image](media\image-component-1.png)
+
+## Enable image fallback support
+To enable the image fallback support, ensure the "Enable image fallback" option is selected from within the site builder tool "Site settings" -> "Extensions" section.
 
 ### Placeholder and thumbnail images
 The image component supports setting a placeholder image and/or a thumbnail that can be used as an intermediate image while the main image is loading. If a thumbnail is set, the placeholder image will be replaced with the thumbnail once it is loaded while the main image is still loading.  Once the main image is loaded, it will be displayed over the loading placeholder and/or thumbnail.  If the thumbnail fails to load, the main image will not be downloaded and an empty placeholder image will be displayed. If the main image fails to load, an empty placeholder image will be displayed.
