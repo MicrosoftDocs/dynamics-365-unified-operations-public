@@ -22,8 +22,9 @@ This topic assumes you have a working knowledge of [Azure Pipelines](/azure/devo
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
 
-## Ensure MSAL.PS is installed
-Version 1.* and above of the download task require the availability of the MSAL.PS PowerShell library. A task is available to install these tools automatically during pipeline execution. This task can be added anywhere in the stage before the download task. Please see [Update LCS Connection authentication tasks to MSAL](pipeline-lcs-connection-update#add-the-MSAL-PS-install-task-to-a-pipeline) for more information.
+## Make sure that MSAL.PS is installed
+
+Versions 1.\* and later of the download task require availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the download task. For more information, see [Update LCS Connection authentication tasks to MSAL](pipeline-lcs-connection-update#add-the-MSAL-PS-install-task-to-a-pipeline).
 
 ## Add the task to a pipeline
 
