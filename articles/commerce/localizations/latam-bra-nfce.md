@@ -69,8 +69,7 @@ The NFC-e offline contingency mode must be used when a store's internet connecti
 1. Verify that the DANFE receipts contain the following text: "EMITIDA EM CONTINGÊNCIA Pendente de autorização" ("ISSUED IN CONTINGENCY Authorization Pending").
 
 > [!NOTE]
-> If the NFC-e is choosen as a main mode of a store establishment in São Paulo state, POS must generate CF-e documents via SAT device when the store's internet connection isn't available, or when the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. This is considered as using SAT as contingency mode. For more information, see the scenatio [Make a cash-and-carry sale of goods using SAT as contingency mode](latam-bra-cf-e-sat.md#scenario-3-make-a-cash-and-carry-sale-of-goods-using-sat-as-contingency-mode).
-
+> If NFC-e is chosen as a main mode of a store establishment in São Paulo state, POS must generate CF-e (Cupom Fiscal eletrônico) documents via a SAT (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) device when the store's internet connection isn't available, or when the SEFAZ authorization service is down. This use of SAT is considered contingency mode. For more information, see the [Make a cash-and-carry sale of goods by using SAT as contingency mode](latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) scenario for the integration of CF-e fiscal documents with SAT functionality.
 
 ### Scenario 4: Make a mixed sale that contains gift cards and other goods in the same transaction
 
@@ -86,7 +85,7 @@ The operations for issuing gift cards and adding value to gift cards aren't subj
 
 ## Custom fields for DANFE fiscal receipts
 
-DANFE fiscal receipts can implement and use the following custom fields to include additional information.
+DANFE fiscal receipts can implement and use custom fields to include additional information.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
@@ -97,7 +96,7 @@ On the **Language text** page, add the following records for the labels of the c
 Add the following POS labels to the **POS** section of the **Language text** page.
 
 | Language ID | Text ID | Text |
-|:-:|:-:|-|
+|---|---|---|
 | en-US | 900001 | Access key |
 | en-US | 900002 | Authorization protocol |
 | en-US | 900003 | Date of Authorization protocol |
@@ -127,11 +126,10 @@ Add the following POS labels to the **POS** section of the **Language text** pag
 | en-US | 900027 | QR code |
 | en-US | 900028 | Taxpayer Interest Message |
 
-
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
 | Name | Type | Caption text ID |
-|-|:-:|:-:|
+|---|---|---|
 | EFDOCACCESSKEY\_BR | Receipt | 900001 |
 | EFDAUTHORIZATIONPROTOCOL\_BR | Receipt | 900002 |
 | EFDAUTHORIZATIONPROTOCOLDATE\_BR | Receipt | 900003 |
@@ -165,7 +163,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
 
-In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+In the receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
 - **Header:** Add the following fields:
 
@@ -177,7 +175,7 @@ In the Receipt format designer, add the following custom fields to the appropria
         - **Name** – The corporate name of the fiscal establishment.
         - **CNPJ** – The CNPJ number of the fiscal establishment.
         - **IE** – The state registration ID of the fiscal establishment.
-		- **CCM** - The city registration ID of the fiscal establishment.
+        - **CCM** – The city registration ID of the fiscal establishment.
         - **Address** – The address of the fiscal establishment.
 
     - **Date of issue (Emissão / Data de recebimento)** – The date and time when the receipt is issued.
@@ -187,25 +185,24 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Fiscal data of the customer (Destinatário)**:
 
         - **Name** – The name or corporate name of the customer.
-		- **CPF/CNPJ/Foreigner ID** – The CPF/CNPJ number or foreigner ID of the customer.
-		- **IE** – The state registration ID of the customer.
-		- **CCM** - The city registration ID of the customer.
-		- **Address** – The address of the customer.
-		
-		- or not identified customer message.
-		
+        - **CPF/CNPJ/Foreigner ID** – The CPF/CNPJ number or foreigner ID of the customer.
+        - **IE** – The state registration ID of the customer.
+        - **CCM** – The city registration ID of the customer.
+        - **Address** – The address of the customer.
+
+        Alternatively, there might be an unidentified customer message.
 
 - **Lines:** Add the following fields:
 
-    - **Item name** field
+    - **Item name** – The name of the item.
     - **Item quantity (Qtd.)** – The quantity of items.
     - **Item total amount (Valor total)** – The amount per item.
     - **Total quantity (Qtd. total de itens)** – The total quantity of items on the receipt.
     - **Total amount (Valor total)** – The total amount of the receipt.
-	- **Item discount** - The discout per item.
-	- **Subtotal discount** - The subtotal discount.
-	- **Total discount** - The total discount of the receipt.
-	- **Total discount message** - The total discount message. 
+    - **Item discount** – The discount per item.
+    - **Subtotal discount** – The subtotal discount.
+    - **Total discount** – The total discount of the receipt.
+    - **Total discount message** – The total discount message. 
 
 - **Footer:** Add the following fields:
 
