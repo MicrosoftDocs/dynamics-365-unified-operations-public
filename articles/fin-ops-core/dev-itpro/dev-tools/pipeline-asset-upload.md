@@ -24,7 +24,7 @@ This topic assumes you have a working knowledge of [Azure Pipelines](/azure/devo
 
 ## Make sure that MSAL.PS is installed
 
-Versions 1.\* and later of the upload task require availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the upload task. For more information, see [Update LCS Connection authentication tasks to MSAL](pipeline-lcs-connection-update.md#add-the-MSAL-PS-install-task-to-a-pipeline).
+Versions 1.\* and later of the upload task require availability of the MSAL.PS PowerShell library. A task is available to automatically install the tools during pipeline execution. This task can be added anywhere in the stage before the upload task. For more information, see [Add the MSAL.PS install task to a pipeline](pipeline-lcs-connection-update.md#add-the-msalps-install-task-to-a-pipeline).
 
 ## Add the task to a pipeline
 
