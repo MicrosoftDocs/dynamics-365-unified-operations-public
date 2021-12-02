@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.24 of Finance and Operations apps 
 description: This topic lists the features that are included in the platform updates for version 10.0.24 of Finance and Operations apps.
 author: sericks007
-ms.date: 11/15/2021
+ms.date: 12/02/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -30,8 +30,7 @@ The following table lists the features that are included in this release.
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
-| Client  | Improved grouping on date and time fields  | [Grid capabilities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md), via the **Grouping in grids** feature  |
-| Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
+| Client  | Improved grouping on date and time fields  | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md), via the **Grouping in grids** feature  |
 
 ### Bug fixes
 
