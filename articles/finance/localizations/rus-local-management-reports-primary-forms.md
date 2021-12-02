@@ -49,8 +49,8 @@ When you generate this report, the following parameters are displayed. You can u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -82,8 +82,8 @@ When you generate this report, the following parameters are displayed. You can u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -115,8 +115,8 @@ When you generate this report, the following parameters are displayed. You can u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">
@@ -157,8 +157,8 @@ When you generate this report, the following parameters are displayed. You can u
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col>
+<col>
 </colgroup>
 <thead>
 <tr class="header">

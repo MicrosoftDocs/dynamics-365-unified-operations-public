@@ -1,7 +1,7 @@
 ---
 title: Scheduling with resource selection based on capability
 description: This topic describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
-author: crytt
+author: ChristianRytt
 ms.date: 9/3/2021
 ms.topic: article
 ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.20
 # Scheduling with resource selection based on capability
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 By specifying resource requirements for an operation of a production route, you define what is required to perform that operation. For example, an operation might require a specific resource or a resource group, or a combination of skills or capabilities. This topic describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
 

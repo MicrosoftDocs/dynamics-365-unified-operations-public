@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -104,7 +104,7 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
 To sign and distribute the Android and iOS app, refer to the following options:
 
 **Android**
-- [Signing the Android Application Package](https://docs.microsoft.com/xamarin/android/deploy-test/signing/?tabs=windows)
+- [Signing the Android Application Package](/xamarin/android/deploy-test/signing/?tabs=windows)
 - [Android app distribution](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
 
 **iOS**

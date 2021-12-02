@@ -3,7 +3,7 @@
 
 title: Prioritize service orders   
 description: Prioritize service orders.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

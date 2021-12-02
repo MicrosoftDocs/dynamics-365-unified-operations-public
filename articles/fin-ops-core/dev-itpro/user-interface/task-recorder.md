@@ -1,27 +1,13 @@
 ---
-# required metadata
-
 title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 ms.date: 09/11/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: SysTaskRecorderPane 
-# keywords:
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 24271
-ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -411,9 +397,6 @@ By using a **pre-release** Chromium browser extension that works for both the ne
     ```
 4.  Open the latest Microsoft Edge browser or Google Chrome.
 5.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
-
-    ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
-
 6.  Select **Developer mode**.
 7.  Click **Load unpacked extension**.
 8.  Browse to the folder that contains the Task recorder extension by using the path **FMLab-master \> FMLab \> TaskRecorderScreenshot**, and then select **Select Folder**.

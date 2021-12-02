@@ -3,7 +3,7 @@
 
 title: Outbound process overview
 description: This topic provides an overview of the outbound process in Inventory management. 
-author: perlynne
+author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: ["274363", "intro-internal"]
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 

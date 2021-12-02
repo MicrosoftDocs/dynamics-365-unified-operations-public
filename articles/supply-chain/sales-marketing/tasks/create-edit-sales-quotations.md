@@ -3,7 +3,7 @@
  
 title: Create and edit sales quotations
 description: This procedure demonstrates how to create and update a sales quotation. 
-author: omulvad
+author: Henrikan
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create and edit sales quotations
 

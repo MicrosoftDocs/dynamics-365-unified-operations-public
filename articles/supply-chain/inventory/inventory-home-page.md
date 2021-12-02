@@ -3,7 +3,7 @@
 
 title: Inventory management overview
 description: This topic provides an overview of Inventory management.
-author: ShylaThompson
+author: yufeihuang
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: ["2094", "intro-internal"]
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

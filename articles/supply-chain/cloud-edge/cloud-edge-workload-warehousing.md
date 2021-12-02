@@ -174,7 +174,8 @@ The following warehouse management functionality isn't currently supported for s
 - Processing with negative on-hand inventory.
 - Warehouse work processing with shipment notes.
 - Warehouse work processing with material handling/warehouse automation.
-- Use of product master data image (for example, on the Warehouse Management mobile app).
+- Product master data images (for example, on the Warehouse Management mobile app).
+- Cross-company data sharing for products.
 
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads on a scale unit, and also isn't supported on the hub or on the scale unit workload.
@@ -191,7 +192,6 @@ The following table shows which outbound features are supported, and where they 
 |--------------------------------------------------------------|-----|------------------------------|
 | Source document processing                                   | Yes | No |
 | Load and transportation management processing                | Yes, but only the load planning processes. Transportation management processing is not supported  | No |
-| Landed cost and goods in transit receiving                                         | Yes | No |
 | Release to warehouse                                         | Yes | No |
 | Planned cross docking                                        | No  | No |
 | Shipment consolidation                                       | Yes, when using load planning | Yes |
@@ -227,6 +227,7 @@ The following table shows which inbound features are supported, and where they a
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Source&nbsp;document&nbsp;processing                             | Yes | No |
 | Load and transportation management processing                    | Yes | No |
+| Landed cost and goods in transit receiving                       | Yes | No |
 | Inbound shipment confirmation                                    | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
 | Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line</p> | Yes | No |
@@ -292,7 +293,8 @@ The following table summarizes which warehouse management production scenarios a
 |---------|-----|------------------------------|
 | Report as finished and finished goods put away | Yes | Yes |
 | Co-product and by-product put away | Yes | Yes |
-| <p>All other warehouse management processes that are related to production, including:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
+| Start production order | Yes | Yes |
+| <p>All other warehouse management processes that are related to production, including:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>Kanban put away</li><li>Kanban picking</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
 | Raw material replenishment | No | No |
 
 ## Maintaining scale units for warehouse execution

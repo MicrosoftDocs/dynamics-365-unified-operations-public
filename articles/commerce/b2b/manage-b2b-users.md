@@ -4,7 +4,7 @@
 title: Manage business partner users on B2B e-commerce websites
 description: This topic describes how administrators can add, edit, and delete business partner users on business-to-business (B2B) e-commerce websites.
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology:
@@ -73,6 +73,18 @@ To approve and set up a business partner administrator user in Commerce headquar
 1. Go to **Retail and Commerce IT \> Distribution schedule**, and run the **1010** (**Customers**) job to push the newly created customer and customer hierarchy records to the channel database.
 
 After the request is approved, and the customer and customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the request. Users can use the sign-up flow to define the password for their account. To enable the identity provider (Azure AD B2C) record to be linked to the B2B customer record that was created at sign-up or sign-in, follow the instructions in [Enable automatic linking of identity records to customer accounts](../identity-record-linking.md).
+
+## Notify B2B prospects when they are approved or rejected
+
+When you approve or reject a B2B prospect onboarding request, you can automatically send an email notification to the prospect. 
+
+To set up email notifications in Commerce headquarters for events of the B2B prospect approved or B2B prospect rejected notification type, follow these steps.
+
+1. Create email templates for emails that will be sent to prospects when the B2B prospect approved or B2B prospect rejected notification type is triggered.
+
+    For information about the placeholders that the B2B prospect approved and B2B prospect rejected notification types support, see [Notification types](../email-templates-transactions.md#notification-types). For information about how to create email templates, see [Create an email template](../email-templates-transactions.md#create-an-email-template). 
+
+1. Add the B2B prospect approved and B2B prospect rejected notification types to your email notification profile, and map them to the email templates that you created. For more information about notification profiles, see [Set up an email notification profile](../email-notification-profiles.md). 
 
 ## Onboard additional business partner users
 

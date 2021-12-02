@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: 270454
 ms.search.region: Latvia
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

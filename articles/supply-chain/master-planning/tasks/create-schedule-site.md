@@ -3,7 +3,7 @@
  
 title: Create a schedule for a site
 description: This procedure shows how to schedule production orders that are not yet started for a site. 
-author: ShylaThompson
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a schedule for a site
 

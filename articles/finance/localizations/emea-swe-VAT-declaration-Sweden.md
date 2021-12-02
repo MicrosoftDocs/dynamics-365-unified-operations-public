@@ -4,7 +4,7 @@
 title: VAT declaration (Sweden)
 description: This topic describes how to set up and generate a value-added tax (VAT) declaration for Sweden.
 author: anasyash
-ms.date: 08/23/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -145,6 +145,9 @@ For more information about how to import ER formats, see [Download ER configurat
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-boxes"></a>Set up application-specific parameters for VAT declaration boxes
 
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
+
+> [!NOTE]
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
 2. Select the **VAT declaration XML (SE)** configuration, and then select **Configurations** > **Application specific parameters setup**.

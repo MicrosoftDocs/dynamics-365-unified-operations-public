@@ -28,7 +28,6 @@ ms.search.validFrom:
 # Set up geo detection and redirection
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
 
