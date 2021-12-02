@@ -303,7 +303,7 @@ To configure the vendor invoice feature setup, you should have already created a
 
     ![Turn on feature.](media/apac-idn-d365-turn-on-feature.png)
 
-### Set up the processing for Indonesian electronic invoices
+### Set up the processing for Indonesian electronic sales invoices 
 
 1. Go to **Organization administration** > **Setup** > **Electronic document parameters** and select the **Electronic document** tab.
 
@@ -314,7 +314,7 @@ To configure the vendor invoice feature setup, you should have already created a
 4. In the **Batch submission ID** field group, add a number sequence. The selected number sequence should be continuous. This number sequence is used to invoice batch for export.
 5. Select **Save**.
 
-### Set up the processing for Indonesian electronic invoices 
+### Set up the processing for Indonesian electronic vendor invoices 
 
 1. Go to the **Electronic reporting** workspace and select **Reporting configurations**.
 2. Select **Customer invoice context model**, and then select **Create configuration** > **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
@@ -322,14 +322,14 @@ To configure the vendor invoice feature setup, you should have already created a
 4. In the **Definitions** tree, select **DataChannel**, and then select **Designer**.
 5. In the **Data sources** tree, expand the **\$Context_Channel** container. 
 6. In the **Value** field, select **Edit** and enter the data channel name. The name should be no more than 10 characters. This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS.
+7. Select **Save** and close the page.
+8. Close the page.
+9. Select the derived configuration you just created from the **Customer invoice context model**, and on the **Versions** FastTab, select **Change Status** > **Completed**.
 
 > [!NOTE] 
 > You can create several derived configurations with different **\$Context Channel** value to import vendor invoices from different sources. For
 example, if you want to import vendor invoices for different legal entities.
 
-7. Select **Save** and close the page.
-8. Close the page.
-9. Select the derived configuration you just created from the **Customer invoice context model**, and on the **Versions** FastTab, select **Change Status** > **Completed**.
 Go to **Organization administration** \> **Setup** \> **Electronic document parameters**. 
 1. On the **External channels** tab, to set up import of vendor invoices.
 2. On the **Channels** tab, select **Add** and in the **Channel field**, enter **\$Context Channel**. Enter values in the **Description** and **Company** fields.
