@@ -4,7 +4,7 @@
 title: Invoicing for Indonesia (ID-00002)
 description: This topic explains how to configure tax invoice numbering, to configure and run export sales invoices as well as import vendor invoices for Indonesia.
 author: v-olgaoskina
-ms.date: 11/30/2021
+ms.date: 12/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,7 +90,7 @@ Complete the following steps to create invoice numbers for only one period at a 
 If a company has multiple branches and each branch should have its own numeration of tax invoices, complete the following steps. 
 
 1. Go to **Tax** > **Indirect taxes** > **Tax branch** and create the necessary number of branches.
-2. Add tax branches to the Ledger account structure. (see ![Create account structure](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-account-structures) how to add tax branches in the Ledger account structure).
+2. Add tax branches to the Ledger account structure. For more information, see [Create account structure](../general-ledger/tasks/create-account-structures.md).
 3. For each branch, repeat steps 1 - 3 for setting up one period, and fill in the Tax branch in the chronological number sequence group.
 
     ![Chronological number sequence group for branch](media/apac-idn-chronological-number-sequence-groups-branch.png)
@@ -106,37 +106,38 @@ This procedure uses the following example information.
 
 1. Create number sequences for tax number intervals. These number sequences must be created for specific customers and intervals. Exclude the intervals for customer 1 and customer 2. 
 
-  - From 000-21.00000010 to 000-21.00000020 (customer 1)
-  - From 000-21.00000030 to 000-21.00000040 (customer 2)
-  - From 000-21.00000001 to 000-21.00000009
-  - From 000-21.00000021 to 000-21.00000029 
-  - From 000-21.00000041 to 000-21.00000100
+   - From 000-21.00000010 to 000-21.00000020 (customer 1)
+   - From 000-21.00000030 to 000-21.00000040 (customer 2)
+   - From 000-21.00000001 to 000-21.00000009
+   - From 000-21.00000021 to 000-21.00000029 
+   - From 000-21.00000041 to 000-21.00000100
 
 2. Create number sequence groups for all the number sequences you created and then assign the number sequences you created to the groups.
 3. Create additional number sequence groups for each customer that numbers must be allocated to. 
 4. Update the customer records with the new number sequence groups. Number sequences aren't required in the customer record. 
-5. Create chronological number sequence groups (number of lines for one period is 5: for customer 1 (two records), for customer 2 (two records) and one record for the rest number intervals):
+5. Create chronological number sequence groups (number of lines for one period is 5: for customer 1 (two records), for customer 2 (two records) and one record for the rest number intervals).
 
-| Group        | Description                                          | Number sequence |
-|--------------|------------------------------------------------------|-----------------|
-| ID_Cust1     | Customer 1                                           | -               |
-| ID_Cust1_Q3  | Customer 1 Q3, 2021 from 10 to 20                    | ID_Cust1Q3      |
-| ID_Cust2     | Customer 2                                           | -               |
-| ID_Cust2_Q3  | Customer 2 Q3, 2021 from 30 to 40                    | ID_Cust2Q3      |
-| ID_21Q3_1    | Q3 2021, First interval. (from 1 to 9)               | ID_21Q3_1       |
-| ID_21Q3_2    | Q3 2021, Second interval. (from 21 to 29)            | ID_21Q3_2       |
-| ID_21Q3_3    | Q3 2021, Third interval. (from 41 to 100)            | ID_21Q3_3       |
-| ID_21Q1      | Customer tax invoice number group 2022               | ID_21Q1         |
+    | Group        | Description                                          | Number sequence |
+    |--------------|------------------------------------------------------|-----------------|
+    | ID_Cust1     | Customer 1                                           | -               |
+    | ID_Cust1_Q3  | Customer 1 Q3, 2021 from 10 to 20                    | ID_Cust1Q3      |
+    | ID_Cust2     | Customer 2                                           | -               |
+    | ID_Cust2_Q3  | Customer 2 Q3, 2021 from 30 to 40                    | ID_Cust2Q3      |
+    | ID_21Q3_1    | Q3 2021, First interval. (from 1 to 9)               | ID_21Q3_1       |
+    | ID_21Q3_2    | Q3 2021, Second interval. (from 21 to 29)            | ID_21Q3_2       |
+    | ID_21Q3_3    | Q3 2021, Third interval. (from 41 to 100)            | ID_21Q3_3       |
+    | ID_21Q1      | Customer tax invoice number group 2022               | ID_21Q1         |
 
-Setup chronological number sequence groups for Customers:
-![Chronological number sequence for customer](media/apac-idn-chronological-number-sequence-groups-customer.png)
 
-In the **Original number sequence group** field (first record for the customer) enter the number sequence group which related with the the customer record and in the second record for the customer, in the **Original number sequence group** field, enter the number sequences as in the **Number sequence group** field. 
-Setup chronological number sequence group for other intervals:
-![Chronological number sequence for customer (intervals)](media/apac-idn-chronological-number-sequence-groups-customer-intervals.png)
+    In the **Original number sequence group** field, the first record for the customer, enter the number sequence group for the customer record. and in the second record for the customer, in the **Original number sequence group** field, enter the number sequences as in the **Number sequence group** field. The following graphic shows how the setup of chronological number sequence groups for Customers looks.
+    
+    ![Chronological number sequence for customer](media/apac-idn-chronological-number-sequence-groups-customer.png)
 
-Set the number sequence group for fist interval in the **Number sequence group** field.
-Then create two lines in the **Other number sequence** grid.
+6. Set the number sequence group for first interval in the **Number sequence group** field and then create two lines in the **Other number sequence** grid. The following graphic shows the setup of the chronological number sequence group for other intervals.
+    
+    ![Chronological number sequence for customer (intervals)](media/apac-idn-chronological-number-sequence-groups-customer-intervals.png)
+
+
 
 > ![NOTE] To generate tax invoice numbers, the system first uses a group from the **Number sequence group** field, then from the first line of the grid **Other number sequence** and, finally, a group from the second line.  
 
@@ -168,7 +169,7 @@ Create at least two records: one record with a **Cancellation** operation and an
 - Create debit note, relate it with the original invoice and a financial reason that has a **Replacement** operation. The system fills in the third digit of the tax invoice number with **1**.
 
 
-We recommend that you create a new sales order when it's needed to create a credit note for cancellation and a debit note for replacement. When you create a replacement invoice, the original invoice should have a tax invoice number. The credit note with the reason **Cancelation** which created before replacement and the debit note with the reason **Replacement** should be related with the same invoice.
+We recommend that you create a new sales order when it's needed to create a credit note for cancellation and a debit note for replacement. When you create a replacement invoice, the original invoice should have a tax invoice number. The credit note with the reason **Cancelation** which was created before replacement, and the debit note with the reason **Replacement** should be related with the same invoice.
 
 To relate a credit or debit note with an original invoice, select **Credit invoicing** on a free text invoice, a sales order, or when you select a project invoice to create a credit note.
 
@@ -178,7 +179,7 @@ This section provides information that will help you get started with Electronic
 
 ### Prerequisites
 
-Before you complete the steps in this secion, complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+Before you complete the steps in this section, complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 ### RCS setup
 
@@ -250,9 +251,8 @@ Set the cursor on the **VATFreeInfoLookup** in the **Lookups** grid, and in **Co
 1. In the **Globalization features** workspace, select the **Electronic Invoicing** title.
 2. On the **Electronic Invoicing features** page, on the **Setups** tab, select **Add**, **Delete**, or **Edit** to manage the Electronic Invoicing feature setup. 
 
-To generate sales invoice csv file, the Sales invoice feature setup is required.
-
 #### Configure the sales invoice feature setup
+To generate sthe ales invoice csv file, set up the Sales invoice feature.
 
 1. On the **Electronic Invoicing features** page, on the **Setups** tab, in the **Feature setup** column, select **Invoice issued**.
 2. Select **Edit** to review or configure the actions, applicability rules, and variables.
@@ -268,11 +268,9 @@ To configure the vendor invoice feature setup, you should have already created a
 4. Fill in the other parameters for SharePoint. 
 5. In the **Custom file name** record, set up a filter for vendor invoice file names.
 6. On the **Applicability rules** tab, in the record with a **Channel** field, in the **Value** field, enter **\$Context Channel** from the derived configuration.
-7. On the **Variables** tab, create or validate the following record:
+7. On the **Variables** tab, create or validate the record.
 
     ![Feature version setup.](media/apac-idn-feature-version-setup-variables.png)
-
-**This name** value should be filled in Import sources (Electronic document parameters \> External sources).
 
 ### Assign the Draft version to an e-Invoicing environment
 
@@ -310,7 +308,7 @@ To configure the vendor invoice feature setup, you should have already created a
     ![Electronic document parameters-Export](media/apac-idn-rcs-electronic-document-parameters.png)
 
 2. Select **Add** and enter the customer invoice journal. 
-3. Select **Add** and enter the project invoice journal (if **Project management and accounting** module is used in the company).
+3. Optional: Select **Add** and enter the project invoice journal.
 4. In the **Batch submission ID** field group, add a number sequence. The selected number sequence should be continuous. This number sequence is used to invoice batch for export.
 5. Select **Save**.
 
@@ -330,21 +328,21 @@ To configure the vendor invoice feature setup, you should have already created a
 > You can create several derived configurations with different **\$Context Channel** value to import vendor invoices from different sources. For
 example, if you want to import vendor invoices for different legal entities.
 
-Go to **Organization administration** \> **Setup** \> **Electronic document parameters**. 
-1. On the **External channels** tab, to set up import of vendor invoices.
-2. On the **Channels** tab, select **Add** and in the **Channel field**, enter **\$Context Channel**. Enter values in the **Description** and **Company** fields.
-3. In the **Document context** field, select the new configuration from **Customer invoice context model**. The mapping description should be **Data channel context**.
-4. In the **Import sources** field group, select **Add** and enter values in the **Name** and **Description** fields.
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters**. 
+2. On the **External channels** tab, set up vendor invoice import.
+3. On the **Channels** tab, select **Add** and in the **Channel field**, enter **\$Context Channel**. Enter values in the **Description** and **Company** fields.
+4. In the **Document context** field, select the new configuration from **Customer invoice context model**. The mapping description should be **Data channel context**.
+5. In the **Import sources** field group, select **Add** and enter values in the **Name** and **Description** fields.
    In the **Name** field, set the value from **Feature version setup** \> **Variables** tab. Fill out **Data entity name** field: **Vendor Invoice register header** if you want importing vendor invoices in Invoice register or **Vendor invoice journal**, if you want importing vendor invoices in pending vendor invoices. You can have only one import source (**Vendor Invoice register header** or **Vendor invoice journal**).
 
-5. Select the model mapping, **Vendor invoice import (ID)** to import the invoice header into the invoice register or pending vendor invoices. 
-6. Select **Vendor invoice import XML (ID)** to import the header and lines into pending vendor invoices.
+6. Select the model mapping, **Vendor invoice import (ID)** to import the invoice header into the invoice register or pending vendor invoices. 
+7. Select **Vendor invoice import XML (ID)** to import the header and lines into pending vendor invoices.
 
-> [!NOTE]. Before you import vendor invoices from xml files, you must set up an **External item description** for vendors. Then, the system can match an item name in the xml file with line items in sales orders.
+   > [!NOTE]. Before you import vendor invoices from xml files, you must set up an **External item description** for vendors. Then, the system can match an item name in the xml file with line items in sales orders.
 
    ![Electronic document parameters- External channels](media/apac-idn-import-setup-external-channels.png)
 
-If it is necessary to import vendor invoices, for example, into different legal entity, create a new channel record with the new document context.
+    If it is necessary to import vendor invoices, for example, into different legal entity, create a new channel record with the new document context.
 
 ## Process electronic invoices in Finance
 
