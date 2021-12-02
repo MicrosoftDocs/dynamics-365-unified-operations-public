@@ -213,7 +213,7 @@ You can create a new feature version with your configuration provider.
 
 ### Update the configuration version
 
-1. 1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
+1. 1. In the **Globalization features** workspace, select the **Electronic Invoicing** title.
 2. On the **Electronic Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions.
 
     ![Configuration edit or delete](media/apac-idn-rcs-configuration.png)
