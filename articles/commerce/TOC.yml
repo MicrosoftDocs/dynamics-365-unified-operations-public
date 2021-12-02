@@ -544,6 +544,8 @@
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
+          - name: Multiple available payment methods for in-store pickup
+            href: dev-itpro/multiple-payments-pickup.md
           - name: Omni-channel Commerce order payments
             href: dev-itpro/commerce-payments.md
           - name: Archive credit card transaction data
