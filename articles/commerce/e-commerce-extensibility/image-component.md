@@ -246,7 +246,7 @@ The following modes are supported:
 | 8 | custom crop | In this mode the area to crop is determined by a region specified using query parameters. This mode first crops the image to a region specified in query parameters and then scales the cropped image to a requested dimension. Depending upon the other settings specified in query parameters e.g. scaling up enabled, scaling down enabled, letterboxing enabled etc. scaling and letterboxing actions will be performed. |
 
 
-## Sample Image component usage
+## Sample image component usage
 The below sample shows how the **Image** component and **ImageSettings** can be used within a module.  Note that a "defaultImageSettings" variable is declared which sets the width, height and scaling mode if none is provided from site builder, which can occur when debugging in a dev environment and no values are provided in the module mocks.
 
 ```typescript
