@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Depreciation profiles determine the type and the frequency of depreciation for an asset. This procedure uses the USMF demo company and the accountant role.
+Depreciation profiles determine the type and the frequency of depreciation for an asset.
 
 
 ## Create a depreciation profile
