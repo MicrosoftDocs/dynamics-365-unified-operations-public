@@ -78,7 +78,7 @@ To initiate a return of sold goods, follow these steps.
 
 ## Simplified DANFE for model 55 fiscal receipt
 
-In addition to the [Common list of custom fields for DANFE](latam-bra-nfce.md#custom-fields-for-danfe-fiscal-receipts), a simplified DANFE for model 55 fiscal receipt can include the following custom fields.
+In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md#custom-fields-for-danfe-fiscal-receipts), a simplified DANFE for model 55 fiscal receipt can include the custom fields that are described in this section.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
@@ -104,10 +104,10 @@ For every receipt format that is required, change the value of the **Print behav
 
 In the receipt format designer, add the following custom fields to the appropriate receipt sections. Note that the field names correspond to the language text values that you defined in the previous section.
 
-- **Header:** Add the following field:
+- **Header:** Add the following fields:
 
     - **Barcode (Código de barras)** – You can add a bar code field to simplified DANFE for model 55 fiscal receipts for returns.
-    - **Barcode block 1**, **Barcode block 2** – You can add 22-digits bar code fields to simplified DANFE for model 55 fiscal receipts for returns printed on till roll. This barcode is a graphical representation of the **Access key (Chave de acesso)** divided into two parts of 22 digits.
+    - **Barcode block 1**, **Barcode block 2** – You can add 22-digit bar code fields to simplified DANFE for model 55 fiscal receipts for returns that are printed on the till roll. The bar code is a graphical representation of the **Access key (Chave de acesso)** value that is divided into two parts, each of which has 22 digits.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
