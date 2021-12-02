@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 65801
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e

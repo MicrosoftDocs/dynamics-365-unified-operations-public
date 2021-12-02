@@ -81,7 +81,7 @@ When this feature is turned on, mobile device menu items for license plate recei
 - **Display a detailed summary** – During license plate receiving, workers will see an extra page that shows the full ASN information.
 - **Skip the summary** – Workers won't see the full ASN information. Warehouse workers also won't be able to set a disposition code or add exceptions during the receiving process.
 
-To make this functionality available on your system, you must turn on the *Control whether to display a receiving summary page on mobile devices* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To make this functionality available on your system, the *Control whether to display a receiving summary page on mobile devices* feature must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 ## Prevent transfer order–shipped license plates from being used at warehouses other than the destination warehouse
 

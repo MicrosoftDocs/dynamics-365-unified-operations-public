@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Create a data integrator project
-description: This topic explains how to create a data integrator project.
+title: Create a data integration project
+description: This topic explains how to create a data integration project.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,18 +26,19 @@ ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Create a data integrator project
+# Create a data integration project
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains how to create a data integrator project.
+This topic explains how to create a data integration project.
 
 1. Sign in to Microsoft Dynamics 365 Finance.
 2. Go to **Workspaces \> Data management**, and select **Data entities**. Wait until all the data entities have been refreshed before you move on to the next step.
 3. Open the [Power Apps portal](https://make.powerapps.com/), and follow these steps:
 
     1. Select the appropriate environment.
-    2. In the left navigation pane, select **Data \> Connections**.
+    2. In the left navigation pane, select **Dataverse \> Connections**.
     3. Connect to appropriate instances of the following items:
 
         - Dynamics 365
@@ -45,7 +46,7 @@ This topic explains how to create a data integrator project.
 
 4. Open the [Power Apps environments](https://admin.powerapps.com/environments), and follow these steps:
 
-    1. Select **Data Integrator**.
+    1. Select **Data integration**.
     2. Select **Connection sets**.
     3. Select **New connection set**.
     4. Enter a name for the connection.
@@ -61,8 +62,7 @@ This topic explains how to create a data integrator project.
 
     1. Create data integration projects for the following templates by using the connection set that you just created:
 
-        - Customer payment insights results (CDS to Fin and Ops)
-            - If you are using version 10.0.17 or later, you need to use the template named, Customer payment insights result (CDS to Fin and Ops 10.0.17+).
+        - Customer payment insights result (CDS to Fin and Ops 10.0.17+)
         - Cash flow time series results (CDS to Fin and Ops)
         - Budget time series results (CDS to Fin and Ops)
 

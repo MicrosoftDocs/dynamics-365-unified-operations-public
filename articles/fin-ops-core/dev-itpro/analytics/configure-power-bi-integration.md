@@ -4,7 +4,7 @@
 title: Configure PowerBI.com integration
 description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com.
 author: MilindaV2
-ms.date: 07/22/2021
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -73,8 +73,12 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
     > Be sure to capture the **Application (client) ID** value.
 
 6. Select **Manage** \> **API permissions** \> **Add a permission** \> **Microsoft APIs** \> **Power BI Service**.
-7. Select **Select Delegated permissions**.
-8. Enable the following permissions:
+
+    > [!NOTE] 
+    > For Government Community Cloud, instead of selecting **Power BI Service**, search for and select **Microsoft Power BI Government Community Cloud** in the **APIs my organization uses** tab.
+
+8. Select **Select Delegated permissions**.
+9. Enable the following permissions:
 
     - **Content**
 

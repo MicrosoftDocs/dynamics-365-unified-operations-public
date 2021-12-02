@@ -4,7 +4,7 @@
 title: Structure of Dynamics 365 Finance data sources for the FEC
 description: This topic describes the structure of Microsoft Dynamics 365 Finance data sources for the Fichier des écritures comptables (FEC).
 author: liza-golub
-ms.date: 10/04/2021
+ms.date: 11/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,13 +33,13 @@ In Microsoft Dynamics 365 Finance, you can generate the [FEC main](#fec-main) (F
 
 You can also generate an FEC that includes customer and vendor fiscal year opening balances ([FEC Main Extended](#fec-main-extended)). Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.
 
-As is explained in [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md), to accommodate article 100 of BOI-CF-IOR-60-40-20, the numbering must be continuous, consistent, and sequential. Because of this numbering requirements, we recommend that you set the **Continuous** option to **Yes** for number sequences. In some scenarios, the consistency of the number sequence for general ledger account entries (Voucher) can be interrupted in the FEC Main file for the following reasons:
+As explained in [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites.md), to accommodate article 100 of BOI-CF-IOR-60-40-20, the numbering must be continuous, consistent, and sequential. Because of these numbering requirements, we recommend that you set the **Continuous** option to **Yes** for number sequences. In some scenarios, the consistency of the number sequence for general ledger account entries (voucher) can be interrupted in the FEC Main file for the following reasons:
 
-- A general ledger account entry is created in the accounting but isn't reported in the FEC when the amount is 0.00.
-- A voucher number is used for an inventory transaction that has a zero amount that isn't reflected in the general ledger account entries table.
-- A gap in the number sequence for general ledger account entries occurs because of a technical issue.
+  - A general ledger account entry is created in accounting but isn't reported in the FEC when the amount is 0.00.
+  - A voucher number is used for an inventory transaction that has a zero amount that isn't reflected in the general ledger account entries table.
+  - A gap in the number sequence for general ledger account entries occurs because of a technical issue.
 
-As of version 10.0.23 of Finance, use the [Missing numbers justification](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the FEC Main file for the preceding reasons.
+As of version 10.0.23 of Finance, use the [Missing numbers justification](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the FEC Main file.
 
 The following sections list the data sources that are used in the FEC main file and annexes.
 
@@ -203,11 +203,11 @@ The following table shows the **FEC main file including fiscal year opening bala
 
 ## <a id="missing-numbers-justification"></a>Missing numbers justification annex
 
-As of version 10.0.23 of Finance, the **Missing numbers justification** annex represents data that is collected from Finance for the following scenarios where the consistency of the number sequence for general ledger account entries (Voucher) can be interrupted in the FEC Main file:
+As of Finance version 10.0.23, the **Missing numbers justification** annex represents data that is collected from Finance for the following scenarios where the consistency of the number sequence for general ledger account entries (voucher) can be interrupted in the FEC Main file:
 
-- **Scenario 1:** A general ledger account entry is created in the accounting but isn't reported in the FEC when the amount is 0.00.
-- **Scenario 2:** A voucher number is used for an inventory transaction that has a zero amount that isn't reflected in the general ledger account entries table.
-- **Scenario 3:** A gap in the number sequence for general ledger account entries occurs because of a technical issue.
+- **Scenario 1**: A general ledger account entry is created in accounting but isn't reported in the FEC when the amount is 0.00.
+- **Scenario 2**: A voucher number is used for an inventory transaction that has a zero amount that isn't reflected in the general ledger account entries table.
+- **Scenario 3**: A gap in the number sequence for general ledger account entries occurs because of a technical issue.
 
 Use the [Missing numbers justification](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the FEC Main file for the preceding reasons.
 

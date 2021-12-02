@@ -4,7 +4,7 @@
 title: Saudi Arabia overview
 description: This topic provides links to documentation resources for Saudi Arabia. 
 author: ShylaThompson
-ms.date: 07/25/2019
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,6 +34,7 @@ This topic provides links to documentation resources for Saudi Arabia.
 - [Sales tax](apac-sau-sales-tax.md)
 - [Zakat reporting](emea-sau-zakat-reporting.md)
 - [Allocate bank document charges to a shipment](apac-sau-allocate-bank-document-charges-shipment.md)
+- [Customer electronic invoices](emea-sau-e-invoices.md)
 
 ## Additional resources
 

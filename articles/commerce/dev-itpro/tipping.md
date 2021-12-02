@@ -3,7 +3,7 @@
 
 title: Support for tipping in the payments SDK
 description: This topic describes the support for accepting tips on payment terminals in the payments software development kit (SDK).
-author: rubendel
+author: BrianShook
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
 
