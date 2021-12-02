@@ -90,7 +90,7 @@ Complete the following steps to create invoice numbers for only one period at a 
 If a company has multiple branches and each branch should have its own numeration of tax invoices, complete the following steps. 
 
 1. Go to **Tax** > **Indirect taxes** > **Tax branch** and create the necessary number of branches.
-2. Add tax branches to the Ledger account structure.
+2. Add tax branches to the Ledger account structure. ![Create account structure](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-account-structures)
 3. For each branch, repeat steps 1 - 3 for setting up one period, and fill in the Tax branch in the chronological number sequence group.
 
     ![Chronological number sequence group for branch](media/apac-idn-chronological-number-sequence-groups-branch.png)
@@ -128,11 +128,17 @@ This procedure uses the following example information.
 | ID_21Q3_3    | Q3 2021, Third interval. (from 41 to 100)            | ID_21Q3_3       |
 | ID_21Q1      | Customer tax invoice number group 2022               | ID_21Q1         |
 
-Setup for Customers:
+Setup chronological number sequence groups for Customers:
 ![Chronological number sequence for customer](media/apac-idn-chronological-number-sequence-groups-customer.png)
 
-Setups for other intervals:
+In the **Original number sequence group** field (first record for the customer) enter the number sequence group which related with the the customer record and in the second record for the customer, in the **Original number sequence group** field, enter the number sequences as in the **Number sequence group** field. 
+Setup chronological number sequence group for other intervals:
 ![Chronological number sequence for customer (intervals)](media/apac-idn-chronological-number-sequence-groups-customer-intervals.png)
+
+Set the number sequence group for fist interval in the **Number sequence group** field.
+Then create two lines in the **Other number sequence** grid.
+
+> ![NOTE] To generate tax invoice numbers, the system first uses a group from the **Number sequence group** field, then from the first line of the grid **Other number sequence** and, finally, a group from the second line.  
 
 
 ## Generate tax invoice numbers
@@ -162,17 +168,17 @@ Create at least two records: one record with a **Cancellation** operation and an
 - Create debit note, relate it with the original invoice and a financial reason that has a **Replacement** operation. The system fills in the third digit of the tax invoice number with **1**.
 
 
-We recommend that you create a new sales order when it's needed to create a credit note for cancellation and a debit note for replacement. When you create a replacement invoice, the original invoice should have a tax invoice number. Cancelation which created before replacement and replacement should be related with the same invoice.
+We recommend that you create a new sales order when it's needed to create a credit note for cancellation and a debit note for replacement. When you create a replacement invoice, the original invoice should have a tax invoice number. The credit note with the reason **Cancelation** which created before replacement and the debit note with the reason **Replacement** should be related with the same invoice.
 
 To relate a credit or debit note with an original invoice, select **Credit invoicing** on a free text invoice, a sales order, or when you select a project invoice to create a credit note.
 
 ## Enable Electronic Invoicing for Indonesia
 
-This topic provides information that will help you get started with Electronic invoicing for Indonesia. This topic guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Dynamics 365 Finance. It also guides you through the steps that you must follow in Finance to export sales invoices through the service and to review the processing results and the status of invoices.
+This section provides information that will help you get started with Electronic invoicing for Indonesia. This section guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Dynamics 365 Finance. It also guides you through the steps that you must follow in Finance to export sales invoices through the service and to review the processing results and the status of invoices.
 
 ### Prerequisites
 
-Before you complete the steps in this topic, complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+Before you complete the steps in this secion, complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 ### RCS setup
 
@@ -229,14 +235,19 @@ You can review the configuration and customize it, if needed. Use the **Format d
 So that the system can determine which the sales tax code in Finance correspond to the tax code for luxury goods (PPnBM) when exporting invoices, fill in the following application specific parameters for the luxury sales tax.
 
    ![Aplication specific parameters-Sales tax code](media/apac-idn-aplication-specific-parameters-tax-code.png)
+   
+  Set the cursor on the **TaxTypeLookup** in the **Lookups** grid, and in **Conditions** grid fill out the first line with PPnBM (**Lookup result** field) and the sales tax code which is used for luxury tax in the D365 Finance (**Sales tax code (TaxCode)** field). Then in the second line fill out **Other** (**Lookup result** field) and  **Not blank** (**Sales tax code (TaxCode)** field). It means that the system consider all other sales tax codes are not the luxury tax.  
+  
 
-So that the system can determine which the sales tax group in Finance corresponds to the exempt reasons (transaction codes 07 and 08) when exporting invoices, fill in the following application specific parameters for exempt reasons:
+So that the system can determine which the sales tax group in Finance which corresponds to VAT free or VAT exempted reasons (transaction codes 07 (reasons from 1 to 8) and 08 (reasons from 1 to 5)) when exporting invoices, fill in the following application specific parameters for these reasons:
 
 ![Aplication specific parameters-transaction codes](media/apac-idn-aplication-specific-parameters-transaction-codes-07-08.png)
 
+Set the cursor on the **VATFreeInfoLookup** in the **Lookups** grid, and in **Conditions** grid fill out the first line with 1-8 for the transaction code **07** and 1-5 for the transaction code **08** (**Lookup result** field) and the sales group which is used for exemption operations in the D365 Finance (**Tax group (TaxGroup)** field). Then in the second line fill out **Other** (**Lookup result** field) and  **Not blank** (**Tax group (TaxGroup)** field). It means that the system consider all other sales tax groups are not exemption groups.  
+
 ### Manage the Electronic Invoicing feature setup
 
-1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
+1. In the **Globalization features** workspace, select the **Electronic Invoicing** title.
 2. On the **Electronic Invoicing features** page, on the **Setups** tab, select **Add**, **Delete**, or **Edit** to manage the Electronic Invoicing feature setup. 
 
 To generate sales invoice csv file, the Sales invoice feature setup is required.
@@ -254,7 +265,7 @@ To configure the vendor invoice feature setup, you should have already created a
 1. On the **Electronic Invoicing features** page, on the **Setups** tab, in the **Feature setup** column, select the **Import from share point** record.
 2. Select **Edit** to review or configure the actions, applicability rules, and variables.
 3. On the **Feature version setup** page, select the **Data channel** tab and in the **Parameters** list, in the **Data channel** record, in the **Value** field, enter **\$Context Channel** from the derived configuration. 
-4. Fill in the other necessary parameters. 
+4. Fill in the other parameters for SharePoint. 
 5. In the **Custom file name** record, set up a filter for vendor invoice file names.
 6. On the **Applicability rules** tab, in the record with a **Channel** field, in the **Value** field, enter **\$Context Channel** from the derived configuration.
 7. On the **Variables** tab, create or validate the following record:
@@ -299,7 +310,7 @@ To configure the vendor invoice feature setup, you should have already created a
     ![Electronic document parameters-Export](media/apac-idn-rcs-electronic-document-parameters.png)
 
 2. Select **Add** and enter the customer invoice journal. 
-3. Select **Add** and enter the project invoice journal.
+3. Select **Add** and enter the project invoice journal (if **Project management and accounting** module is used in the company).
 4. In the **Batch submission ID** field group, add a number sequence. The selected number sequence should be continuous. This number sequence is used to invoice batch for export.
 5. Select **Save**.
 
