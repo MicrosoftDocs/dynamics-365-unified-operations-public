@@ -39,7 +39,10 @@ There are 4 image states available for each image.
 4. Empty image placeholder.
 
 ### Loading Placeholder
-Loading placeholder is shown to the user while the main image is loading. The placeholder is represented as a single div element with the corresponding class msc-loading_image. Using the class name you can specify the background image for the html element. For fabrikam theme, it's specified to be this svg file:
+Loading placeholder is shown to the user while the main image is loading. The placeholder is represented as a single div element with the corresponding class msc-loading_image. Using the class name you can specify the background image for the html element. 
+
+The fabrikam theme, contains an svg placeholder image that looks like the following:
+
 ![placeholder image](media/image-component-1.png)
 
 ## Enable image fallback support
