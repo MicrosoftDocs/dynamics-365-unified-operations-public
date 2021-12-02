@@ -340,9 +340,9 @@ example, if you want to import vendor invoices for different legal entities.
 
    > [!NOTE]. Before you import vendor invoices from xml files, you must set up an **External item description** for vendors. Then, the system can match an item name in the xml file with line items in sales orders.
 
-   ![Electronic document parameters- External channels](media/apac-idn-import-setup-external-channels.png)
+ ![Electronic document parameters- External channels](media/apac-idn-import-setup-external-channels.png)
 
-    If it is necessary to import vendor invoices, for example, into different legal entity, create a new channel record with the new document context.
+  If it is necessary to import vendor invoices, for example, into different legal entity, create a new channel record with the new document context.
 
 ## Process electronic invoices in Finance
 
