@@ -84,8 +84,105 @@ Image flow can be represented using the next state diagram.
 
 ![placeholder image](media/image-component-3.png)
 
+Note, hidden and loading states should be controlled by css, so make sure you have the required changes. By default, we don't want the images to be displayed until they are ready or in case we don't need them on the page. You may use these classes to provide custom styles for different image states e.g. showing a spinner.
 
-### Using the Image component within a module
+```css
+.msc-image-container {
+    .msc-loading_image {
+        &.hidden {
+            visibility: hidden;
+        }
+    }
+
+    .msc-thumbnail_image {
+        &.loading {
+            visibility: hidden;
+        }
+
+        &.hidden {
+            visibility: hidden;
+        }
+    }
+
+    .msc-main_image {
+        &.loading {
+            visibility: hidden;
+        }
+
+        &.hidden {
+            visibility: hidden;
+        }
+    }
+}
+```
+
+In order to display one element over the other element, we also need to have the corresponding changes in css. Having this style preset will allow to overlap the image components when new state is available, e.g. having this style preset will ensure the UI is not broken and thumbnails are not displayed together with the main image.
+
+```
+.msc-image-container {
+    display: grid;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+
+    > * {
+        grid-area: 1 / 1;
+        grid-row: 1;
+    }
+
+    >:nth-child(1) {
+        z-index: 0;
+    }
+
+    >:nth-child(2) {
+        z-index: 1;
+    }
+
+    >:nth-child(3) {
+        z-index: 2;
+    }
+}
+```
+
+Once a thumbnail or main image is loaded, it is displayed on top of the previous layers. This is done to provide better seamless experience and fix the vertical lag which can be observed in some cases. This is the reason why the previous layer is not completely hidden right after the new layer is ready. The previous layer will be hidden only after some delay to ensure the new layer is fully displayed, this helps fixing this vertical lag.
+
+To ensure the placeholders use the correct style ensure you add the following mixin **image** into your theme.  Passing new dimensions in the mixin will update all types of images (placeholders, thumbnails, main images). If you are using the "Fabrikam" reference theme, you will find this already defined in the themes "/styles/02-generic/image.scss" file.
+
+```css
+@mixin image($width, $height: $width) {
+    .msc-image-container {
+        width: $width;
+        height: $height;
+    }
+
+    .msc_image {
+        width: $width;
+        height: $height;
+    }
+
+    .msc-loading_image {
+        @include image-loading-placeholder($width, $height);
+    }
+
+    .msc-empty_image {
+        @include image-empty-placeholder($width, $height);
+    }
+
+    .msc-thumbnail_image {
+        filter: blur(min($width, $height) * 0.015);
+    }
+}
+```
+Usage:
+
+```css
+&__product-image {
+    @include image($msv-details-sale-line-image-size);
+}
+```
+
+
+## Using the Image component within a module
 The **Image** component can be used within a module with a reference to **@msdyn365-commerce/core** as shown below:
 
 ```typescript
