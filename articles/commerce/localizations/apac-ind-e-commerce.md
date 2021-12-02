@@ -52,7 +52,7 @@ GST can also be calculated for shipping charges that can be added to an e-commer
 It is possible to specify customer's registration numbers and other information on the **My profile** page of the e-commerce site. The following registration information can be entered:
 
 - Permanent Account Number (PAN).
-- GST registration number type. It can be Goods and Services Taxpayer Identification Number (GSTIN), Government department unique ID (GDI), or Unique Identity Number (UID).
+- GST registration number type. It can be Goods and Services Taxpayer Identification Number (GSTIN), Government department unique ID (GDI), or Unique Identification Number (UID).
 - GST registration number.
 - Business vertical.
 - Value-added tax registration number (Tax Identification Number \[TIN\]).
