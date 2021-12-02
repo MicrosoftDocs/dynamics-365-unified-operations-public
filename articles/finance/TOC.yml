@@ -1444,6 +1444,12 @@
             items:
             - name: Get started with Tax Calculation
               href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+            - name: Set up tax codes
+              href: localizations/set-up-tax-codes.md
+            - name: Set up tax groups
+              href: localizations/set-up-tax-groups.md
+            - name: Set up item tax groups
+              href: localizations/set-up-item-tax-groups.md
             - name: Set up an environment for master data lookup
               href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
           - name: Determination
