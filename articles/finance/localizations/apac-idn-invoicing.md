@@ -90,7 +90,7 @@ Complete the following steps to create invoice numbers for only one period at a 
 If a company has multiple branches and each branch should have its own numeration of tax invoices, complete the following steps. 
 
 1. Go to **Tax** > **Indirect taxes** > **Tax branch** and create the necessary number of branches.
-2. Add tax branches to the Ledger account structure. ![Create account structure](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-account-structures)
+2. Add tax branches to the Ledger account structure. (see ![Create account structure](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-account-structures) how to add tax branches in the Ledger account structure).
 3. For each branch, repeat steps 1 - 3 for setting up one period, and fill in the Tax branch in the chronological number sequence group.
 
     ![Chronological number sequence group for branch](media/apac-idn-chronological-number-sequence-groups-branch.png)
