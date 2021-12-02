@@ -30,7 +30,7 @@ The following table lists the features that are included in this release.
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
-| Client  | Improved grouping on date and time fields  | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md), via the **Grouping in grids** feature  |
+| Client  | Improved grouping on date and time fields  | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)<br>(The **Grouping in grids** feature.)  |
 
 ### Bug fixes
 
