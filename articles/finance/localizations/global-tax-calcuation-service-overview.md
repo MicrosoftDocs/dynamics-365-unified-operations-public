@@ -84,7 +84,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 
 ## Data flow
 
-Here is an outline of the data flow process for tTax Calculation. 
+Here is an outline of the data flow process for Tax Calculation. 
 
 1. In RCS, view and import taxable document model configurations and model mapping configurations. If you must extend configurations for an advanced scenario, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 2. In RCS, create or maintain tax features. You can use tax features to maintain tax rates and tax applicability rules.
