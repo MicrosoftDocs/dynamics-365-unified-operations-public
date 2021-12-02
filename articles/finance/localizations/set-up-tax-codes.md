@@ -152,9 +152,9 @@ For example, the tax rate is 25 percent, and the **Is Use Tax** option is set to
 
 ### Reverse charges
 
-If you set the **Is Reverse Charge** option to **Yes** on the **General** FastTab, the tax rate can be configured as negative. For a reverse charge scenario, we recommend that you set up two tax codes: one that has a positive tax rate and one that has a negative tax rate. Both tax codes should have the same rate value, and the **Is Reverse Charge** option should be set to **Yes**. For more information about the reverse charge solution in Finance, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
+If you set the **Is Reverse Charge** option to **Yes** on the **General** FastTab, the tax rate can be configured as negative. For a reverse charge scenario, we recommend that you set up two tax codes: one that has a positive tax rate and one that has a negative tax rate. Both tax codes should have the same rate value, and the **Is Reverse Charge** option should be set to **Yes** on the tax code that has a negative tax rate. For more information about the reverse charge solution in Finance, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
 
-For example, two tax codes are determined on one invoice line. One tax rate is 25 percent. The other tax rate is -25 percent, and the **Is Reverse Charge** option is set to **Yes** on the tax code. The invoice line shows a quantity of 10 items at 1.00 each. In this case, the amounts are calculated in the following way:
+For example, two tax codes are determined on one invoice line. One tax rate is 25 percent. The other tax rate is -25 percent, and the **Is Reverse Charge** option is set to **Yes** on the second tax code. The invoice line shows a quantity of 10 items at 1.00 each. In this case, the amounts are calculated in the following way:
 
 - **Net amount:** (10 × 1.00) = 10.00 
 - **Tax code 1:** 10.00 × 25 percent = 2.50
