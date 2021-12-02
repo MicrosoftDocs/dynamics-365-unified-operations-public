@@ -4,7 +4,7 @@
 title: Deployment guidelines for cash registers for Norway (legacy)
 description: This topic is a deployment guide for the Commerce localization for Norway.
 author: AlexChern0v
-ms.date: 10/06/2020
+ms.date: 12/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
