@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK **Image** component to embed images into a module with advanced support including optimized image sizes from the Dynamics 365 image resizer service and support for fallback and thumbnail images.
 
-## Image state
+## Image states
 There are 4 image states available for each image.
 1. Loading placeholder.
 2. Thumbnail image (low resolution image).
@@ -41,15 +41,49 @@ There are 4 image states available for each image.
 ### Loading Placeholder
 Loading placeholder is shown to the user while the main image is loading. The placeholder is represented as a single div element with the corresponding class msc-loading_image. Using the class name you can specify the background image for the html element. 
 
+Using loading placeholder is recommended to reserve some specific space on the page for the image while it's loading to reduce 'jumping' elements on the page. Using loading placeholder is also recommended because it will point to specific places where the SCSS is specified incorrectly which may cause issues for empty placeholder (see empty placeholder below) as empty placeholder is shown only in some corner cases when there are some troubles with the images which is a rare case which can be easily missed, loading image, on the other hand, is always shown regardless, so it's easier to catch styling issues.
+
+This component is available for single usage as LoadingPlaceholderImage in core-internal package.
+
 The fabrikam theme, contains an svg placeholder image that looks like the following:
 
 ![placeholder image](media/image-component-1.png)
 
+### Thumbnail image
+Thumbnails are low resolution images with small dimensions (width/height). Thumbnails are used as intermediate images after loading the placeholder and before the main image loads. This helps to speed up image downloading as thumbnail images are much smaller thus they are much faster to be downloaded and rendered on the page. The advantage of the thumbnail images is for perceived performance, some users may not need high resolution image, because thumbnails can already give some information about the main image. Having very small image sizes (~10 times compression), thumbnails will be downloaded much faster without a noticable performance degradation and can improve perceived performance.
+
+Thumbnails are standard image elements which are marked with **msc-thumbnail_image** class. Thumbnails do not use image settings specified for the original image (although the compressed size is calculated based on the image settings for original image). Since thumbnails are very compressed, they may loose some image information or produce artifacts. In order to hide these artifacts, it is recommended to apply a blur effect to the image.
+
+This component is available for single usage as ThumbnailImage in core-internal package.
+
+### Main image
+Main image is the original / end image which is displayed to the user once the downloading has finished.
+
+This component is available for single usage as MainImage in core-internal package.
+
+Main image is marked with **msc-main_image** class.
+
+### Empty placeholder
+The empty placeholder image is shown to the user in case the image is not found or failed to be downloaded.
+Similar to the loading placeholder, the empty placeholder is represented as a single div element with the corresponding **msc-empty_image** class. Using the class name you can specify the background image for the html element. 
+
+This component is available for single usage as EmptyPlaceholderImage in core-internal package.
+
+The fabrikam theme, contains an svg empty placeholder image that looks like the following:
+
+![placeholder image](media/image-component-2.png)
+
 ## Enable image fallback support
 To enable the image fallback support, ensure the "Enable image fallback" option is selected from within the site builder tool "Site settings" -> "Extensions" section.
 
-### Placeholder and thumbnail images
-The image component supports setting a placeholder image and/or a thumbnail that can be used as an intermediate image while the main image is loading. If a thumbnail is set, the placeholder image will be replaced with the thumbnail once it is loaded while the main image is still loading.  Once the main image is loaded, it will be displayed over the loading placeholder and/or thumbnail.  If the thumbnail fails to load, the main image will not be downloaded and an empty placeholder image will be displayed. If the main image fails to load, an empty placeholder image will be displayed.
+## Image structure
+The image component is wrapped in a div element with class **msc-image-container**. The image types are located inside this container element. Each image type is also marked with **msc_image** class name which you can also use for some css.
+
+## Image types flow
+Image flow can be represented using the next state diagram.
+
+![placeholder image](media/image-component-3.png)
+
 
 ### Using the Image component within a module
 The **Image** component can be used within a module with a reference to **@msdyn365-commerce/core** as shown below:
