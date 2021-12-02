@@ -47,6 +47,9 @@ When uploading an image, the following information can be specified.
 > [!NOTE]
 > Image assets with a category assigned are also automatically tagged with the category as a keyword to aid searching for assets of a specific category.
 
+> [!NOTE]
+> Product detail pages dynamically generate the **Alt Text** using the product name, so changing the **Alt Text** for a product image will have no impact on the rendered image.
+
 ### Naming conventions for omni-channel images 
 
 If you have configured the Media Library as the omni-channel image backend, you can use image categories to indicate which category the uploaded image belongs to. There is also a naming convention that should be followed to ensure that images are retrieved correctly by other channels, such as point of sale (POS).
