@@ -30,7 +30,7 @@ The following table lists the features that are included in this release.
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
-| Client  | <p>**Improved grouping on date and time fields**</p><p>When the "Grouping in grids" feature is enabled, users group by Year, Month, Day, Hour, Minute, and Second on date and time fields in grids | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)<br>(The **Grouping in grids** feature.)  |
+| Client  | <p>**Improved grouping on date and time fields**</p><p>When the **Grouping in grids** feature is enabled, users can group by year, month, day, hour, minute, and second on date and time fields in grids. | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)<br>(The **Grouping in grids** feature.)  |
 
 ### Bug fixes
 
