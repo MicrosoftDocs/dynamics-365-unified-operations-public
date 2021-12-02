@@ -294,7 +294,7 @@ To configure the vendor invoice feature setup, you should have already created a
 1. Sign in to your Finance environment and in the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile. Make sure that this configuration provider is set to **Active**. For information about how to mark a provider **Active**, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Select **Repositories**.
 4. Select **Global resource** > **Open**.
-5. Import Invoice model, Vendor invoice Mapping to destination, Vendor invoice import (ID), Vendor invoice import XML (ID).
+5. Import Customer invoice context model, Invoice model, Vendor invoice Mapping to destination, Vendor invoice import (ID), Vendor invoice import XML (ID).
 
 ### Turn on the feature for processing Indonesian electronic invoice
 
