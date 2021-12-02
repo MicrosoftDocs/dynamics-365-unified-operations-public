@@ -4,7 +4,7 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic provides information about how to get started with Tax Calculation. It guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. It then reviews the common process for using Tax Calculation capabilities in Finance and Supply Chain Management transactions.
 
 The setup consists of four main steps:
@@ -46,9 +44,7 @@ The setup consists of four main steps:
 
 Before you can complete the procedures in this topic, prerequisites must be in place for each environment type.
 
-### For a production environment
-
-For a production environment, the following prerequisites must be met:
+The following prerequisites must be met:
 
 - You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.21 or later.
 - You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
@@ -61,23 +57,6 @@ For a production environment, the following prerequisites must be met:
 - The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
 
     - Globalization features
-
-### For a test environment (Public Preview)
-
-For a test environment, the following prerequisites must be met:
-
-- You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.21 or a later version.
-- You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
-- You must contact Microsoft, by emailing <taxcalc@microsoft.com>, to enable the flighting in your deployed Finance or Supply Chain Management environment.
-- The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
-
-	- Tax Calculation Service
-	- Support multiple VAT registration numbers
-	- Tax in transfer order
-
-- The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
-
-	- Globalization features
 
 ## Set up Tax Calculation in LCS
 

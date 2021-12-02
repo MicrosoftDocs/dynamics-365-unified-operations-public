@@ -1,12 +1,12 @@
 ---
 title: Field module
 description: Represents the run-time instance of a field.
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ---
 
 # Field module

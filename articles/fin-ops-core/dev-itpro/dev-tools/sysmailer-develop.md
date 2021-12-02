@@ -5,7 +5,7 @@ author: ChrisGarty
 ms.date: 05/23/2018
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 270774
 ms.search.region: Global
 ms.author: cgarty

@@ -4,7 +4,7 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -169,12 +169,12 @@ To make the PDF conversion option available in the current Finance instance, ope
 
 ### Applicability
 
-The PDF conversion option can be turned on only for file components that are used to generate output in Office (Excel or Word) format (**Excel file**). When this option is turned on, output that is generated in Office format is automatically converted to PDF format. In versions of Finance **before version 10.0.18**, you can turn on this option only for components of the **Excel\\File** type that are used to generate output in [Excel](er-fillable-excel.md) or [Word](er-design-configuration-word.md) format. However, in **version 10.0.18 and later**, you can also turn on this option for components of the **Common\\File** type.
+In versions of Finance **before version 10.0.18**, the PDF conversion option can be turned on only for **Excel\\File** components that are used to generate output in Office (Excel or Word) format. When this option is turned on, output that is generated in Office format is automatically converted to PDF format. However, in **version 10.0.18 and later**, you can also turn on this option for components of the **Common\\File** type.
 
 > [!NOTE]
 > Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there is no way to guarantee, at design time, that the selected file component will expose the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
 > 
-> If you turn on the PDF conversion option for a component of the **Excel\\File** type, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception will occur at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
+> If you turn on the PDF conversion option for a format component, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception will occur at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
 
 ### Limitations
 
@@ -194,16 +194,26 @@ To turn on PDF conversion for a file destination, select the **Convert to PDF** 
 
 ### <a name="SelectPdfPageOrientation">Select a page orientation for PDF conversion</a>
 
-If you generate an ER configuration in Excel format and want to convert it to PDF format, you can specify the page orientation of the PDF document. When you select the **Convert to PDF** check box to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
+If you generate an ER configuration in Excel format and want to convert it to PDF format, you can explicitly specify the page orientation of the PDF document. When you select the **Convert to PDF** check box to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
 
 [![Selecting a page orientation for PDF conversion.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> To have the option to select the PDF page orientation, you must install Finance version 10.0.10 or later.
->
-> The selected page orientation is applied to all ER configurations that are generated in Excel format and then converted to PDF format.
->
-> If an ER configuration in Word format is converted to PDF format, the page orientation of the PDF document is taken from the Word document.
+To have the option to select the PDF page orientation, install Finance version 10.0.10 or later. In versions of Finance **before version 10.0.23**, this option offers the following page orientation options:
+
+- Portrait
+- Landscape
+
+The selected page orientation is applied to all pages of an outbound document that is generated in Excel format and then converted to PDF format.
+
+However, in **version 10.0.23 and later**, the list of page orientation options has been extended as follows:
+
+- Portrait
+- Landscape
+- Worksheet specific
+
+When you select the **Worksheet specific** option, every worksheet of a generated Excel workbook is converted to PDF by using page orientation that has been configured for this worksheet in the used Excel template. So, you might have a final PDF document containing portrait and landscape pages. 
+
+If an ER configuration in Word format is converted to PDF format, the page orientation of the PDF document is always taken from the Word document.
 
 ## Output unfolding
 

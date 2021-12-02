@@ -24,7 +24,7 @@ Planning Optimization results might differ from results from the built-in master
 | Extensible dimensions | Extensible dimensions are empty on planned orders, even when the **Coverage plan by dimension** checkbox is selected on the **Storage dimension groups** or **Tracking dimension groups** page. |
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters). |
 | Forecast planning | Forecast planning isn't supported. We recommend that you use master planning where a forecast model is assigned to the master plan. |
-| Number sequences for planned orders | Number sequences for planned orders aren't supported. Planned order numbers are generated on the service side. |
+| Number sequences for planned orders | Number sequences for planned orders aren't supported. Planned order numbers are generated on the service side. The planned order number is normally shown with 10 digits, but the sequence is actually built on 20 characters, with 10 digits allocated for the planning run count and the other 10 digits for the planned orders count. |
 | Plan copy, delete plan, and plan version cleanup | <p>The following items are disabled under **Master planning \> Master planning \> Maintain plans** in the navigation pane:</p><ul><li>Plan copy</li><li>Delete plan</li><li>Plan version cleanup</li></ul> |
 | Return orders | Return orders aren't considered. |
 | Scheduling related features | For details, see [Scheduling with infinite capacity](infinite-capacity-planning.md#limitations). |
@@ -36,5 +36,6 @@ Planning Optimization results might differ from results from the built-in master
 
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
 - [Parameters not used by Planning Optimization](not-used-parameters.md)
+- [Date and time parameters used by Planning Optimization](date-time-used.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

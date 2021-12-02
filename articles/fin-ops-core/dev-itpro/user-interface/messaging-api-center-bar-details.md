@@ -4,7 +4,7 @@
 title: Messaging APIs - Action center, message bar, and message details
 description: This topic describes the messaging system.
 author: jasongre
-ms.date: 11/17/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 64153
 ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
@@ -100,14 +100,18 @@ int64 messageId = Message::AddAction(MessageSeverity::Informational, "The Test b
 The following messaging types are supported: **MessageSeverity::Info**, **MessageSeverity::Warning**, and **MessageSeverity::Error**. Messages that use the **Message()** API are also deterministic. They can be routed to a message bar or the Action center.
 
 ## SystemNotificationsManager() 
-The **SystemNotificationsManager()** API targets notifications designed to be sent to the Action center. This API provides the following features: 
+The **SystemNotificationsManager()** class allows you to send notifications to the Action center. This class provides the following features: 
 
-+ Associating one or more actions to the notification 
-+ Routing a notification to a set of users, or to all the users in one or more security roles
-+ Defining an expiration date for the notification
-+ Tracking the state of the notification (e.g. you can mark a notification as "Completed")  
++ Associating one or more actions to the notification. 
++ Routing a notification to a set of users, or to all the users in one or more security roles.
++ Defining an expiration date for the notification.
++ Tracking the state of the notification (such as, you can mark a notification as "Completed").  
++ Defining what rule or process is raising the notification by RuleID.  
 
 In this example, a notification is raised after an export to Excel is completed by a user. The message will be available in the Action center for the next 48 hours, after which the link to the exported file is no longer available.   
+
+> [!NOTE]
+> The **AddNotification()** API was previously used in this example. As of version 10.0.23, that API is deprecated and is replaced by the **AddSystemNotification()** API. The new API rquires that you set RuleID and ExpirationDateTime. 
 
 ![Example of a message sent using the SystemNotificationsManager API.](./media/cli-systemNotification.png)
 
@@ -131,7 +135,7 @@ actionData.Data(fileName);
 action.Data(FormJsonSerializer::serializeClass(actionData));
 notification.Actions().value(1, action);
 
-SystemNotificationsManager::AddNotification(notification);
+SystemNotificationsManager::AddSystemNotification(notification);
 ```
 
 ## Additional resources

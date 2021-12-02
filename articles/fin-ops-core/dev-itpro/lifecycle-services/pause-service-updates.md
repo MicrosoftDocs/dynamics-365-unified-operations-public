@@ -4,7 +4,7 @@
 title: Pause service updates through Lifecycle Services (LCS)
 description: This topic explains how to pause service updates to your environments.
 author: angelmarshall
-ms.date: 03/03/2020
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ If you decide to pause updates, you have two options:
 You can pause a maximum of three continuous updates at a time. For example, if you're using version 8.1.3, you can pause update version 10.0.0, 10.0.1 and 10.0.2. However, you can't pause update version 10.0.3. In addition, in the month of June, you can pause the next three updates. However, you will not be able to pause updates scheduled for October, November, December and later. Similarly, for customers on version 7.3 for platform only updates, if you’re using Platform update 23 then you can pause update 24, update 25, and update 26, but you cannot pause update 27. We will be releasing 8 updates in a year. We require you to take at least two updates in a year.
 
 > [!IMPORTANT]
->  There is no way to pause more than three updates, regardless of your industry or business schedule. If you are more than three updates behind and you find a critical issue during validations in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. This is only required if you are more than three updates behind and you are unable to use the pause updates functionality available in LCS to pause the update to production.
+>  There is no way to pause more than three updates, regardless of your industry or business schedule. If you are more than three updates behind and you find a critical issue with the Microsoft service update during validations in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. The issue must be logged as an active bug/regression with Microsoft.  This is only required if you are more than three updates behind and you are unable to use the pause updates functionality available in LCS to pause the update to production.
 
 > If you pause updates to your sandbox environment, updates are automatically also paused for your production environment, because Microsoft always updates configured sandbox environments before production environments.
 

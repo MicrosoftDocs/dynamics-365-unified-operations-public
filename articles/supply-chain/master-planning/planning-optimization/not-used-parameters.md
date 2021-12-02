@@ -49,25 +49,13 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Production** – Pending *Scheduling* support.
   - Fields in the **Project** section – Pending *Scheduling* support.
 
-- **Standard update** tab:
-
-  - **Update marking** – Pending *Firming* support.
-  - **Stop firming if an error occurs** – Pending *Firming* support.
-  - **Group by vendor** – Pending *Firming* support.
-  - **Group by buyer group** – Pending *Firming* support.
-  - **Group by purchase agreement** – Pending *Firming* support.
-  - **Group by period** – Pending *Firming* support.
-  - **Find purchase agreement** – Pending *Firming* support.
-  - **Group by planning priority** – Pending *Firming* support.
-  - **Group by period** – Pending *Firming* support.
-
 ## Coverage groups page
 
 Planning Optimization doesn't use the following parameters or options on the **Coverage groups** page:
 
 - **General** FastTab:
 
-  - **Positive days** – Pending *Positive days* support.
+  - **Positive days** – The *Positive days* value isn't used. With Planning Optimization, positive days are considered infinite.
   - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
   - **Use the specified BOM or formula version** – Pending *Formula versions with Co/By product* support.
   - **Use the specified route version** – Pending *Demand with specific BOM or route requirements defined* support.

@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

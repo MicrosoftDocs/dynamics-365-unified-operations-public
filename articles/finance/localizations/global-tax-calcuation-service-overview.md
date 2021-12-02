@@ -4,7 +4,7 @@
 title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: 10.0.18
 # Tax Calculation overview
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Tax Calculation is a hyper-scalable multitenant service that enables the global tax engine to automate and simplify the tax determination and calculation process. The tax engine is fully configurable. The elements that can be configured include, but aren't limited to, the taxable data model, tax code, tax applicability matrix, and tax calculation formula. The tax engine runs on the Microsoft Azure core services platform, and offers modern technology and exponential scalability.
 
@@ -70,6 +68,19 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 
 > [!NOTE]
 > Tax Calculation doesn't support earlier version of Dynamics 365, such as Dynamics AX 2012, or on-premises deployments of Dynamics 365.
+
+## Versions
+We recommend that you import and set up your Tax Calculation configuration with the version that matches your Finance or Supply Chain Management version.
+
+| Finance or Supply Chain Management version | Tax configuration version               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Tax Configuration - Europe 30.12.82     |
+| 10.0.19         | Tax Calculation Configuration 36.38.193 |
+| 10.0.20         | Tax Calculation Configuration 40.43.208 |
+| 10.0.21         | Tax Calculation Configuration 40.48.215 |
+| 10.0.22         | Tax Calculation Configuration 40.48.215 |
+| 10.0.23         | Tax Calculation Configuration 40.50.221 |
+
 
 ## Data flow
 
@@ -124,6 +135,10 @@ The following transactions are supported in version 10.0.21:
     - Transfer order – ship
     - Transfer order – receive
 
+The following transactions are supported in version 10.0.23: 
+
+- Free text invoice
+
 ## Supported countries/regions
 
 Tax Calculation can be enabled by legal entity. 
@@ -149,6 +164,28 @@ The following countries/regions for a legal entity's primary address are support
 - Switzerland
 - United Kingdom
 - United States
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.22:
+
+- Australia
+- Bahrain
+- Canada
+- Egypt
+- Hong Kong SAR
+- Kuwait
+- New Zealand
+- Oman
+- Qatar
+- Saudi Arabic
+- South Africa
+- United Arab Emirates
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.23:
+
+- Thailand
+- Japan
+- Malaysia
+- Singapore
 
 ## Related resources
 
