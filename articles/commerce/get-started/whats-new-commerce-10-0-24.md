@@ -46,7 +46,7 @@ The following table lists the features that are included in this release. The *F
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-|  <XYZ>         | <Link to release plan topic>                             | <Link to doc topic>                                       | <Enabled by default, or Feature management (name in Feature management)> |
+|  B2B         | Support for matrixed view of product variants on the PDP and quick order entry page.        | [Set up a B2B e-commerce site](../b2b/set-up-b2b-site.md)            | Site builder |
 
 ## Feature enhancements included in this release
 
