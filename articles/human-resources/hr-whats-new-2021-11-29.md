@@ -1,3 +1,31 @@
+---
+# required metadata
+
+title: What's new or changed in Dynamics 365 Human Resources November 19, 2021
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for November 19, 2021.
+author: marcelbf
+ms.date: 12/03/2021
+ms.topic: article
+ms.prod:
+ms.technology:
+
+# optional metadata
+
+ms.search.form:
+# ROBOTS:
+audience: Application User
+# ms.devlang:
+ms.search.scope: Human Resources
+# ms.tgt_pltfrm:
+ms.custom:
+ms.assetid:
+ms.search.region: Global
+# ms.search.industry:
+ms.author: marcelbf
+ms.search.validFrom: 2021-12-03
+ms.dyn365.ops.version: Human Resources
+
+---
 
 This release includes the following bug fixes. Changes apply to build number 8.1.4591.
 
