@@ -56,7 +56,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| <name of module>  | <name as it appears in Feature management>  | <blurb about the feature> |
+| Customer management  | Enable enhanced async customer creation  | This feature enables capturing title, affiliations, and second contact information while creating a customer in asynchronous mode.  Refer to [Synchronous and asynchronous customer](/synchronous-and-asynchronous-customers.md) for more details. |
 
 
 ## Additional resources
