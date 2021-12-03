@@ -26,7 +26,7 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation. To determine how to turn on a feature, see the *Enabled by* column. For more information about how to use feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We might update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was initially published.
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
@@ -35,9 +35,9 @@ The following table lists the features that are included in this release. The *F
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are new for this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
-If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), where they are listed using the names shown in the *Feature name in feature management* column of the following table.
+If you want to turn any of these features on or off, you must do that in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
