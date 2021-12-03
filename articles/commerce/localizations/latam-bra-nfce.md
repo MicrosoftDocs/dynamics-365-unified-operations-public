@@ -4,7 +4,7 @@ title: NFC-e fiscal document functionality in Commerce POS for Brazil
 description: This topic gives an overview of NFC-e fiscal document functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 author: akviklis
 manager: annbe
-ms.date: 06/10/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
