@@ -62,10 +62,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure Warehousing for on-premises deployments
           href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
       - name: What's new or changed
         items: 
         - name: What's new or changed in Finance and Operations apps
@@ -2147,7 +2143,7 @@
         items:
         - name: Set up project resource information
           href: procurement/tasks/set-up-project-resource-information.md
-        - name: Submit and approve project budgets
+        - name: Create and submit a project budget workflow
           href: procurement/tasks/submit-approve-project-budget.md
         - name: Submit and approve project budget revisions
           href: procurement/tasks/submit-approve-project-budget-revision.md

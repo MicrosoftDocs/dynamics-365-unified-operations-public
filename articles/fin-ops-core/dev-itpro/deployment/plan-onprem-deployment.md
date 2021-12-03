@@ -4,7 +4,7 @@
 title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: PeterRFriis
-ms.date: 03/18/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ Dynamics 365 Finance + Operations (on-premises) supports running business proces
 This topic will help you plan and prepare for your on-premises deployment.
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 ## Differences between cloud deployments and on-premises deployments
 The features in cloud deployments and on-premises deployments differ. These differences will affect your planning. The differences are described in the following topics:

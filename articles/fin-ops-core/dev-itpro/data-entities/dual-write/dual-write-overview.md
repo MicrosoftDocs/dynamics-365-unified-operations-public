@@ -63,11 +63,7 @@ Dual-write creates a mapping between concepts in Finance and Operations apps and
 + Ability to look up on-hand inventory availability and details
 + Project-to-cash experience
 + Ability to handle multiple addresses and roles through the party concept
-+ Single source management for users
-+ Integrated channels for retailing and marketing
-+ Visibility into promotions and discounts
-+ Request-for-service functions
-+ Streamlined service operations
+
 
 ## Top reasons to use dual-write
 

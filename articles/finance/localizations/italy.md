@@ -4,7 +4,7 @@
 title: Italy overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Italy. 
 author: kfend
-ms.date: 11/09/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -64,6 +64,7 @@ This topic provides links to documentation resources for Italy.
 - [Unique certification](emea-ita-exil-unique-certification.md)
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
 - [Customer electronic invoices](emea-ita-e-invoices.md)
+- [Vendor electronic invoices](emea-ita-vend-e-invoices.md)
 - [Unified posting date control](emea-ita-post-date-control.md)
 
 

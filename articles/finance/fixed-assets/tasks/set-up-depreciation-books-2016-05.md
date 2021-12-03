@@ -3,7 +3,7 @@
  
 title: Set up depreciation books
 description: This procedure walks through the process of creating a new depreciation book and associate it with a fixed asset group. 
-author: saraschi2
+author: moaamer
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: roschlom
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

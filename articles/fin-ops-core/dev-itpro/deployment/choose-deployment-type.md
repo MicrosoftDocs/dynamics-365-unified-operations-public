@@ -4,7 +4,7 @@
 title: Deployment options
 description: Finance and Operations apps can run in the cloud or on-premises. This topic provides information about the different deployment options. 
 author: kfend
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 You can deploy Finance and Operations apps in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center. 
 > [!IMPORTANT]
-> On-premises deployments are not supported on any public cloud infrastructure, including Azure. 
+> On-premises deployments are not supported on any public cloud infrastructure, including Azure. However, they are supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 The following table provides a comparison of the capabilities provided by the two deployment options.
 

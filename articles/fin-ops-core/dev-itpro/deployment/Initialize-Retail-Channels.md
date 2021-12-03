@@ -4,7 +4,7 @@
 title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
-ms.date: 10/12/2021
+ms.date: 11/16/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -40,16 +40,17 @@ This topic describes the steps for initializing Commerce Scale Unit (cloud).
 
 1. Deploy a Tier-2 sandbox or production environment that has version 8.1.2.x or later.
 2. You can self-deploy up to 2 Commerce Scale Units per environment. If you require more than 2 Commerce Scale Units per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of Commerce Scale Units, and desired datacenter regions. The request will be completed within five business days. If you do not require more than 2 Commerce Scale Units per environment, you do not need to create a support request. 
-3. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
+3. You must have Project Owner permissions in Lifecycle Services before you can initialize Commerce Scale Unit.
+4. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
 
-- RetailBasic
-- RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
-- RetailGiftCard - If you plan to use gift cards.
-- RetailInvent - If you plan to use inventory.
-- RetailModernPos - If you plan to use point of sale (POS).
-- RetailReplenishment - If you plan to use replenishments.
-- RetailScheduler
-- RetailStores - If you plan to use POS.
+  - RetailBasic
+  - RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
+  - RetailGiftCard - If you plan to use gift cards.
+  - RetailInvent - If you plan to use inventory.
+  - RetailModernPos - If you plan to use point of sale (POS).
+  - RetailReplenishment - If you plan to use replenishments.
+  - RetailScheduler
+  - RetailStores - If you plan to use POS.
 
 
 ## Region availability
