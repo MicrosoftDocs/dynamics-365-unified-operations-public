@@ -26,21 +26,21 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
-The following table lists the features that are included in this release.
+The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was initially published.
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
-| Client  | <p>**Improved grouping on date and time fields**</p><p>When the **Grouping in grids** feature is enabled, users can group by year, month, day, hour, minute, and second on date and time fields in grids. | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)<br>(The **Grouping in grids** feature.)  |
+| Client  | <p>**Improved grouping on date and time fields**</p><p>When the **Grouping in grids** feature is enabled, users can group by year, month, day, hour, minute, and second on date and time fields in grids. | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)<br>(*Grouping in grids*)  |
 
 ### Bug fixes
 
 For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com/).
 
-### Dynamics 365: 2021 release wave 2 plan
+### Dynamics 365 and industry clouds: 2021 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 2 plan](/dynamics365-release-plan/2021wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365 and industry clouds: 2021 release wave 2 plan](/dynamics365-release-plan/2021wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 
