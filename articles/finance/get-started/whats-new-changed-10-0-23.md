@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.23
 
 ---
 
-# Preview features in Dynamics 365 Finance 10.0.23
+# Preview features in Dynamics 365 Finance 10.0.23 (January 2022)
 
 [!include [banner](../includes/banner.md)]
 
