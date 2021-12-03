@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.24
+title: Preview features in Dynamics 365 Commerce 10.0.24 (February 2022)
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.24. 
 author: josaw1
 ms.date: 12/03/2021
@@ -27,14 +27,13 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Preview features in Dynamics 365 Commerce 10.0.24
+# Preview features in Dynamics 365 Commerce 10.0.24 (February 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.24. This version has a build number of <!-- Add build #--> 10.0.XXX and is available on the following schedule:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.24. This version has a build number of 10.0.1084 and is available on the following schedule:
 
-<!-- Check all of these dates-->
 - **Preview of release:** December 2021
 - **General availability of release (self-update):** January 2022
 - **General availability of release (auto-update):** February 2022
@@ -66,7 +65,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 Dynamics 365 Commerce 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes 
-For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the <!-- Add correct link --> [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=627874).
+For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the <!-- Add correct link --> [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f).
 
 For Commerce-specific breaking changes, view the [Dynamics 365 Commerce online SDK FAQ](../e-commerce-extensibility/sdk-faq.md).
 
