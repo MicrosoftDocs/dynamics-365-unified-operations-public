@@ -92,7 +92,9 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
-          - name: Commerce 10.0.23
+          - name: Commerce 10.0.24 (February 2022)
+            href: get-started/whats-new-commerce-10-0-24.md 
+          - name: Commerce 10.0.23 (January 2022)
             href: get-started/whats-new-commerce-10-0-23.md          
           - name: Commerce 10.0.22 (November 2021)
             href: get-started/whats-new-commerce-10-0-22.md
@@ -544,6 +546,8 @@
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
+          - name: Multiple available payment methods for in-store pickup
+            href: dev-itpro/multiple-payments-pickup.md
           - name: Omni-channel Commerce order payments
             href: dev-itpro/commerce-payments.md
           - name: Archive credit card transaction data
@@ -1330,6 +1334,8 @@
           href: localizations/latam-bra-nfce-contingency-mode.md          
         - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
           href: localizations/latam-bra-retail-statements.md
+        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil 
+          href: localizations/latam-bra-cf-e-sat.md       
         - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil 
           href: localizations/latam-bra-adyen.md          
       - name: Eastern Europe

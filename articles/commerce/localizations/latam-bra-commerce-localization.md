@@ -112,6 +112,8 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 
 [About SAT](https://portal.fazenda.sp.gov.br/servicos/sat)
 
+[CF-e fiscal document functionality in Commerce POS for Brazil](latam-bra-cf-e-sat.md)
+
 [Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil](latam-bra-adyen.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
