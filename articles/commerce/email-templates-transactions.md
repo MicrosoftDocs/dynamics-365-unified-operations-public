@@ -140,7 +140,7 @@ The B2B prospect approved notification type supports the following additional pl
 | `storename`        | The name of the channel where the prospect was created. |
 | `storeurl`         | Empty by default. A custom extension must be created to use this placeholder. |
 
-### B2B prospect approved
+### B2B prospect rejected
 
 The *B2B prospect rejected* notification type is triggered when a prospect's onboarding request is rejected in Commerce headquarters. For more information about how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
