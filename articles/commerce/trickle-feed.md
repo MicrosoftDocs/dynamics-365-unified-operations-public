@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-Starting with version 10.0.5 it is recommended that all statement posting be moved to the trickle feed-based statement posting processes. There are significant performance and business benefits with leveraging the trickle feed functionality. Sales transactions are processed throughout the day and only financial reconciliation of tenders and cash management transactions are processed at the end of the day. This enables continuous processing of sales orders, invoices, and payments allowing for inventory, revenue, and payments to be updated and recognized in near real-time.
+Starting with version 10.0.5 it is recommended that all statement posting processes transition to the trickle feed-based statement posting processes. There are significant performance and business benefits when using the trickle feed functionality. Sales transactions are processed throughout the day and only financial reconciliation of tenders and cash management transactions are processed at the end of the day. This process enables continuous processing of sales orders, invoices, and payments allowing for inventory, revenue, and payments to be updated and recognized in near real time.
 
 ## How to use trickle feed-based posting
 
@@ -45,13 +45,13 @@ Starting with version 10.0.5 it is recommended that all statement posting be mov
   **Transactional statement** processing is intended to be run at a high frequency throughout the day.
   - Transactions are loaded from the stores to Retail HQ when the P-Job executes.
   - The **Validate store transactions** job must run and validate transactions for the transactional statement to pick them up. 
-  - The **Calculate transactional statements in batch** job will pickup all unposted and validated transactions and add them to a new **Transactional statement**.
+  - The **Calculate transactional statements in batch** job will pick up all unposted and validated transactions and add them to a new **Transactional statement**.
   - The **Post transactional statements in batch** job will execute the posting process and create sales orders, sales invoices, payment journals, discount journals, and income-expense transactions for unposted statements that do not contain any errors.
-  - You should configure these processes to run at a high frequency so that documents are created when the transactions are uploaded into Headquarters through the P-job.
+  - These processes are intended to run at a high frequency so that documents are created when the transactions are uploaded into Headquarters through the P-job.
 
 ## Financial statements
   **Financial statement** processing is intended to be an end of day process.
-  - Only supports closing method of Shift and will only pickup closed shifts. 
+  - Only supports closing method of Shift and will only pick up closed shifts. 
   - This statement is limited to financial reconciliation and will only create the journals for the difference amounts between counted amount and transaction amount for tenders as well as journals for other cash management transactions.
  - The **Calculate financial statements in batch** will collect all unposted financial transactions and add them to a new Financial statement.
  - The **Post financial statements in batch** job will execute the posting process of the financial transactions.
