@@ -15,7 +15,7 @@ ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, Pr
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: zezhangzhao
 # ms.tgt_pltfrm: 
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
@@ -63,7 +63,7 @@ You can create invoice proposals for the following transactions:
 
 You can create fee transactions in an invoice proposal. You can also modify the sales price on hour, expense, item, and fee transactions. When you post an invoice proposal, the updated prices and transactions are added to project reports, and the transaction history. 
 
-To create multiple customer invoices for a project, you must create an invoice proposal for each invoice. For example, you can create invoices based on transaction type. To specify hours on one customer invoice and items on another invlice, you must create separate invoice proposals for hour transactions and fee transactions. 
+To create multiple customer invoices for a project, you must create an invoice proposal for each invoice. For example, you can create invoices based on transaction type. To specify hours on one customer invoice and items on another invoice, you must create separate invoice proposals for hour transactions and fee transactions. 
 
 If a project has more than one funding source, you can create a separate invoice proposal for each funding source. On the **Funding rule allocations** page, you can define the percentage of the transaction amount to allocate to each funding source, and the source to post rounding differences to.
 
