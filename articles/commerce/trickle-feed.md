@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-Starting with version 10.0.5 it is recommended that all statement posting processes transition to the trickle feed-based statement posting processes. There are significant performance and business benefits when using the trickle feed functionality. Sales transactions are processed throughout the day and only financial reconciliation of tenders and cash management transactions are processed at the end of the day. This process enables continuous processing of sales orders, invoices, and payments allowing for inventory, revenue, and payments to be updated and recognized in near real time.
+Starting with version 10.0.5 it is recommended that all statement posting processes transition to the trickle feed-based statement posting processes. There are significant performance and business benefits when using the trickle feed functionality. Sales transactions are processed throughout the day. Only financial reconciliation of tenders and cash management transactions are processed at the end of the day. This feature enables continuous processing of sales orders, invoices, and payments allowing for inventory, revenue, and payments to be updated and recognized in near real time.
 
 ## How to use trickle feed-based posting
 
