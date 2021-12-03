@@ -4,7 +4,7 @@
 title:  Set up interest distribution for cash accounts
 description: This topic explains how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
 author: v-kiarnd
-ms.date: 11/10/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: 10.0.3
 # Set up interest distribution for cash accounts
 
 [!include[banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
 
