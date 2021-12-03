@@ -4,7 +4,7 @@
 title: Fixed asset depreciation
 description: This topic provides an overview of depreciation in Fixed assets.
 author: moaamer
-ms.date: 11/15/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Fixed asset depreciation
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic provides an overview of depreciation in Fixed assets.
 
