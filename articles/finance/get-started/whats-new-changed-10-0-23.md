@@ -37,6 +37,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 - **Preview of release**: October 2021
 - **General availability of release (self-update)**: December 2021
+- **General availability of release (auto-update)**: January 2022
 
 ## Features included in this release
 
