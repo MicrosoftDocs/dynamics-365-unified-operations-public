@@ -4,7 +4,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.23
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.23. 
 author: josaw1
-ms.date: 10/15/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
