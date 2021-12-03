@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Preview features in Dynamics 365 Finance 10.0.24
+# Preview of Dynamics 365 Finance 10.0.24 (February 2022)
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,19 +41,19 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature. We may update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was initially published.
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-| Tax Calculation   | Using tax jurisdiction parameters for cash discount calculation setup    | When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. This feature calculates cash discount and sales tax with different parameters under a single legal entity. For more informatin, see [Tax jurisdiction parameters for cash discount calculation setup](../localizations/global-tax-jurisdiction-cash-discount-setup.md)    | Admins, makers, or analysts   |
-| Tax Calculation   | Importing tax codes in Globalization feature    | This feature helps you import tax codes into Globalization features. For more informatin, see [Import and export tax calculation feature](https://go.microsoft.com/fwlink/?linkid=2182833)    | Enabled by default   |
+| Tax Calculation   | Using tax jurisdiction parameters for cash discount calculation setup    | When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. This feature calculates cash discount and sales tax with different parameters under a single legal entity. For more information, see [Tax jurisdiction parameters for cash discount calculation setup](../localizations/global-tax-jurisdiction-cash-discount-setup.md).    | Admins, makers, or analysts   |
+| Tax Calculation   | Importing tax codes in Globalization feature    | This feature helps you import tax codes into Globalization features. For more information, see [Import and export tax calculation feature](https://go.microsoft.com/fwlink/?linkid=2182833).    | Enabled by default   |
 | Tax Settlement   | Separate sales tax payment report generation from sales tax settlement    | This feature can separate sales tax payment report generation from sales tax settlement. If this feature is enabled, the sales tax settlement report will not be run automatically after the sales tax settlement program is completed.    | Admins, makers, or analysts   |
 
 
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). If you want to use or turn off any of these features, you must do that in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the feature enhancements included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). If you want to use or turn off any of these features, you must do that in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Feature area | Feature name in feature management | More information |  
 |---|---|---|
@@ -68,11 +68,11 @@ The following table lists the feature enhancements included in this release. Eac
 | Cash and bank management  | Validate Finance insights configuration | This feature will validate Finance insights configuration and processes and notify you if common problems are identified. |
 | General ledger | Performance enhancement for large consolidations  | Performance improvement has been added to the consolidation in General ledger to allow each batch to run more efficiently. The enhancement works by processing the General ledger data in parallel and an extension point has been added if you need to customize it. |
 | General ledger | Generate trial balance with pending type transactions  | This feature lets you select specific pending type transactions to include on the **Trial balance detail** report. |
-| General ledger | Dimension attributes values collection optimization in ‘MasterFiles’ report section of SAF-T for Norway  | This feature enables the set-based collection of dimension attribute values for **MasterFiles** report section in SAF-T report, that improves its performance and makes **Analysis** fields from **MasterFiles** section more consistent with **Analysis** fields from **GeneralLedgerEntries** section. |
-| General ledger | Subledger transfer to General Ledger performance optimization | This functionality improves the the transfer of data from the subledger to the General Ledger. It allows the process to be more efficient and group sets of smaller transactions to transfer together allowing for a more efficient use of the batch server. |
-| Tax Calculation | Tax Calculation Service | This feature is improved in 10.0.24 to allow to define **Override sales tax** parameter at customer/vendor master data level and this parameter value will be defaulted on sales/purchase transactions when using the selected customer/vendor. |
-| Tax Calculation | Tax Calculation Service | This feature is enhanced in 10.0.24 to support legal entity's primary address in Mexcio. See the section, **Supported countries/regions** in the topic, [Tax Calculation overview](../localizations/global-tax-calcuation-service-overview.md) for more information. |
-| Tax Calculation | Tax Calculation Service | This feature is enhanced in 10.0.24 to support maximum 20 dimensions in the applicability rules setup in Globalization features. |
+| General ledger | Dimension attributes values collection optimization in ‘MasterFiles’ report section of SAF-T for Norway  | This feature enables the set-based collection of dimension attribute values for **MasterFiles** report section in the SAF-T report, which improves its performance and makes **Analysis** fields from **MasterFiles** section more consistent with **Analysis** fields from **GeneralLedgerEntries** section. |
+| General ledger | Subledger transfer to General ledger performance optimization | This functionality improves the transfer of data from the subledger to the General ledger. It allows the process to be more efficient and group sets of smaller transactions to transfer together allowing for a more efficient use of the batch server. |
+| Tax Calculation | Tax Calculation Service | This feature allows you to define **Override sales tax** parameter at customer/vendor master data level and this parameter value will be the default on sales/purchase transactions when using the selected customer/vendor. |
+| Tax Calculation | Tax Calculation Service | This feature supports a legal entity's primary address in Mexico. For more information, see the **Supported countries/regions** section in [Tax Calculation overview](../localizations/global-tax-calcuation-service-overview.md). |
+| Tax Calculation | Tax Calculation Service | This feature supports a maximum of 20 dimensions in the applicability rules setup in Globalization features. |
 
 ## Additional resources
 
@@ -85,11 +85,11 @@ For information about the bug fixes included in this update, sign in to Lifecycl
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
-### Dynamics 365: 2021 release wave 2 plans
+### Dynamics 365 and industry clouds: 2021 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 Finance 2021 release wave 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2021 release wave 2 plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 ### Removed and deprecated features
 
