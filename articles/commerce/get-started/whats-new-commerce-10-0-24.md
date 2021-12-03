@@ -57,7 +57,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Customer management  | Enable enhanced async customer creation  | This feature enables capturing title, affiliations, and second contact information while creating a customer in asynchronous mode.  Refer to [Synchronous and asynchronous customer](/synchronous-and-asynchronous-customers.md) for more details. |
+| Customer management  | Enable enhanced async customer creation  | This feature enables capturing title, affiliations, and second contact information while creating a customer in asynchronous mode.  Refer to [Synchronous and asynchronous customer](/synchronous-and-asynchronous-customers.md) for more details (coming soon). |
 | Headquarters setup   |  Run "Initialize commerce scheduler" after Headquarters is updated |  [Commerce Data Exchange best practices](../dev-itpro/cdx-best-practices.md) |
 
 
