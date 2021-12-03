@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.24 of Finance and Operations apps 
 description: This topic lists the features that are included in the platform updates for version 10.0.24 of Finance and Operations apps.
 author: sericks007
-ms.date: 12/02/2021
+ms.date: 12/03/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -34,7 +34,7 @@ The following table lists the features that are included in this release. We mig
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com/).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f).
 
 ### Dynamics 365 and industry clouds: 2021 release wave 2 plan
 
