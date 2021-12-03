@@ -39,6 +39,7 @@ This topic provides information about how to set up and configure the Electronic
 The following conditions must met before you configure the Dataverse solution for Electronic invoicing:
 
 - [Platform updates for version 10.0.23 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md)
+- Microsoft Power Platform integration with Finance and Operations needs to be configured: [Enable the Microsoft Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
 - Electronic invoicing for Microsoft Dynamics 365 Finance and Operations apps needs to be configured. For more information, see [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md).
 - The business events catalog must be synchronized and the periodic processing batch job must be running. For more information, see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
