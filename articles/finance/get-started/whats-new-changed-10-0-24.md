@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.24 
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.24 preview release.
 author: kfend
-ms.date: 11/30/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,10 +33,11 @@ ms.dyn365.ops.version: 10.0.24
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.24. This version has a build number of 10.0.xxxx and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.24. This version has a build number of 10.0.1084 and is available as follows:
 
 - **Preview of release**: December 2021
 - **General availability of release (self-update)**: January 2022
+- **Auto-update**: February 2022
 
 ## Features included in this release
 
@@ -44,13 +45,9 @@ The following features are included in this release. Some of the listed features
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-| Global address book | Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) | Enabled by default. |
-|Tax Calculation   |Using tax jurisdiction parameters for cash discount calculation setup    | When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. This feature can calculate cash discount and sales tax with different parameters under single legal entity. For more informatin, see [Tax jurisdiction parameters for cash discount calculation setup](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-jurisdiction-cash-discount-setup?toc=/dynamics365/finance/toc.json)    | Admins, makers, or analysts   |
-|Tax Calculation   | Importing tax codes in Globalization feature    | This feature can help user import tax codes into Globalization features. For more informatin, see [Import and export tax calculation feature](https://go.microsoft.com/fwlink/?linkid=2182833)    | Enabled by default   |
-|Tax Settlement   | Separate sales tax payment report generation from sales tax settlement    | This feature can separate sales tax payment report generation from sales tax settlement. If this feature is turned on, sales tax settlement report will not be run automatically after the sales tax settlement program is completed.    | Admins, makers, or analysts   |
-|   |    |    |   |
-|   |    |    |   |
-|   |    |    |   |
+| Tax Calculation   | Using tax jurisdiction parameters for cash discount calculation setup    | When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. This feature calculates cash discount and sales tax with different parameters under a single legal entity. For more informatin, see [Tax jurisdiction parameters for cash discount calculation setup](../localizations/global-tax-jurisdiction-cash-discount-setup.md)    | Admins, makers, or analysts   |
+| Tax Calculation   | Importing tax codes in Globalization feature    | This feature helps you import tax codes into Globalization features. For more informatin, see [Import and export tax calculation feature](https://go.microsoft.com/fwlink/?linkid=2182833)    | Enabled by default   |
+| Tax Settlement   | Separate sales tax payment report generation from sales tax settlement    | This feature can separate sales tax payment report generation from sales tax settlement. If this feature is enabled, the sales tax settlement report will not be run automatically after the sales tax settlement program is completed.    | Admins, makers, or analysts   |
 
 
 
@@ -60,21 +57,21 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature name in feature management | More information |  
 |---|---|---|
-| Accounts payable  | Apply changes to 1099 forms for 2021   | This feature will add new 1099 fields for the 2021 1099-DIV, 1099-NEC, 1099-MISC forms. Enabling the feature ensures compliance with the 2021 IRS requirements. These changes are required and are turned on by default.  |  
-| Accounts payable | Vendor invoice automation  |  The Vendor invoice automation feature will deliver a number of capabilities over multiple releases. Some of the key components include the ability to submit imported invoices to workflow automatically, to simulate posting so you can find and fix errors before they interrupt business processes, and a set of Power BI metrics that can help you evaluate and improve the automated processing of vendor invoices. As each set of new functionality becomes available, a new item on the Feature management page will give an option to enable the features that are included in that item. For a more complete listing of the functionality that will be delivered, click the Learn more link.  | 
+| Accounts payable  | Apply changes to 1099 forms for 2021   | This feature adds new 1099 fields for the 2021 1099-DIV, 1099-NEC, 1099-MISC forms. Enabling the feature ensures compliance with the 2021 IRS requirements. These changes are required and are turned on by default.  |  
+| Accounts payable | Vendor invoice automation  |  The Vendor invoice automation feature delivers a number of capabilities over multiple releases. Some of the key components include the ability to submit imported invoices to workflow automatically, to simulate posting so you can find and fix errors before they interrupt business processes, and a set of Power BI metrics that can help you evaluate and improve the automated processing of vendor invoices. As each set of new functionality becomes available, a new item on the **Feature management** page will give an option to enable the features that are included in that item.  | 
 | Accounts receivable  | (Italy) Protest handling for bills of exchange | The possibility to import bills of exchange protest information from the electronic file. |
-| Asset leasing  | Asset leasing  |  Asset leasing lets you manage the initial recognition of a lease, as well as the associated payment schedules, amortization, adjustment and reclassification.  |
+| Asset leasing  | Asset leasing  |  Asset leasing lets you manage the initial recognition of a lease, as well as the associated payment schedules, amortization, adjustment, and reclassification.  |
 | Asset leasing | Leasing convention for asset leasing  | Selecting a lease convention in conjunction with a lease start date will help determine the right commencement date for the lease.   |
 | Asset leasing  | Leasing adjustment wizard for asset leasing   |  This feature will help you adjust a parent lease and its associated books through a wizard. You can preview carrying values of the right-of-use asset, lease liability, and the adjustment journal entry before finalizing the lease adjustment. The adjust book function will remain the same as this feature is used for adjusting only parent leases and its associated books.  |
 | Asset leasing | Lease impairment posting with preview | This feature displays the new asset balance and financial entry from the lease impairment process. When you use this feature, before posting the impairment transaction you can calculate the new asset balance and display the results and the financial entry impact based on the provided impairment data. |
 | Cash and bank management  | Unmatch all bank statements and transactions  | When enabled, the **Unmatch all** button is visible on the **Bank reconciliation worksheet** page. The button lets you unmatch all the statements and transactions at one time. |
-| Cash and bank management  | Validate Finance insights configuration | This feature will validate Finance insights configuration and processes and notify users if common problems are identified. |
-| General ledger | Performance enhancement for large consolidations  | We've added a performance improvement to the consolidation in General ledger to allow each batch to run more efficiently. The enhancement works by processing the General ledger data in parallel and an extension point has been added if you need to customize it. |
-| General ledger | Generate trial balance with pending type transactions  | This feature lets you select specific pending type transactions to include on the Trial balance detail report. |
-| General ledger | Dimension attributes values collection optimization in ‘MasterFiles’ report section of SAF-T for Norway  | This feature enables the set-based collection of dimension attribute values for ‘MasterFiles’ report section in SAF-T report, that improves its performance and makes ‘Analysis’ fields from ‘MasterFiles’ section more consistent with ‘Analysis’ fields from ‘GeneralLedgerEntries’ section. |
+| Cash and bank management  | Validate Finance insights configuration | This feature will validate Finance insights configuration and processes and notify you if common problems are identified. |
+| General ledger | Performance enhancement for large consolidations  | Performance improvement has been added to the consolidation in General ledger to allow each batch to run more efficiently. The enhancement works by processing the General ledger data in parallel and an extension point has been added if you need to customize it. |
+| General ledger | Generate trial balance with pending type transactions  | This feature lets you select specific pending type transactions to include on the **Trial balance detail** report. |
+| General ledger | Dimension attributes values collection optimization in ‘MasterFiles’ report section of SAF-T for Norway  | This feature enables the set-based collection of dimension attribute values for **MasterFiles** report section in SAF-T report, that improves its performance and makes **Analysis** fields from **MasterFiles** section more consistent with **Analysis** fields from **GeneralLedgerEntries** section. |
 | General ledger | Subledger transfer to General Ledger performance optimization | This functionality improves the the transfer of data from the subledger to the General Ledger. It allows the process to be more efficient and group sets of smaller transactions to transfer together allowing for a more efficient use of the batch server. |
-| Tax Calculation | Tax Calculation Service | This feature is improved in 10.0.24 to allow to define "Override sales tax" parameter at customer/vendor master data level and this parameter value will be defaulted on sales/purchase transactions when using the selected customer/vendor. |
-| Tax Calculation | Tax Calculation Service | This feature is enhanced in 10.0.24 to support legal entity's primary address in Mexcio. See the section, **Supported countries/regions** in the topic, [Tax Calculation overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) for more information. |
+| Tax Calculation | Tax Calculation Service | This feature is improved in 10.0.24 to allow to define **Override sales tax** parameter at customer/vendor master data level and this parameter value will be defaulted on sales/purchase transactions when using the selected customer/vendor. |
+| Tax Calculation | Tax Calculation Service | This feature is enhanced in 10.0.24 to support legal entity's primary address in Mexcio. See the section, **Supported countries/regions** in the topic, [Tax Calculation overview](../localizations/global-tax-calcuation-service-overview.md) for more information. |
 | Tax Calculation | Tax Calculation Service | This feature is enhanced in 10.0.24 to support maximum 20 dimensions in the applicability rules setup in Globalization features. |
 
 ## Additional resources
@@ -83,7 +80,7 @@ The following table lists the feature enhancements included in this release. Eac
 Dynamics 365 Finance 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXX). The following issues are fixed in this release.
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306). The following issues are fixed in this release.
 
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
