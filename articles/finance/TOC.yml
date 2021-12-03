@@ -70,6 +70,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.24
+            href: get-started/whats-new-changed-10-0-24.md
           - name: Finance 10.0.23 
             href: get-started/whats-new-changed-10-0-23.md
           - name: Finance 10.0.22 (November 2021)
@@ -518,6 +520,8 @@
         href: budgeting/budget-control-overview-configuration.md
       - name: Budgeting overview
         href: budgeting/basic-budgeting-overview-configuration.md
+      - name: Budget funds available
+        href: budgeting/budget-funds-available.md
       - name: Position forecasting
         href: budgeting/position-forecasting.md
       - name: Budget planning justification documents

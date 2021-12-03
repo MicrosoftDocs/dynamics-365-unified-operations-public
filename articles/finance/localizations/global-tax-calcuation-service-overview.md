@@ -187,6 +187,10 @@ The following countries/regions for a legal entity's primary address are support
 - Malaysia
 - Singapore
 
+The following countries/regions for a legal entity's primary address are supported in version 10.0.24:
+
+- Mexico
+
 ## Related resources
 
 [Get started with tax service](./global-get-started-with-tax-calculation-service.md)
