@@ -54,7 +54,7 @@ Depending on the business processes, the same data record can change ownership b
 
 ## Outbound process flow
 
-Before deploying a warehouse management workload on a scale unit, make sure you have the *Scale unit support for release to warehouse of outbound orders* feature enabled on your enterprise hub. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+Before you deploy a warehouse management workload on a cloud or edge scale unit, make sure you have the *Scale unit support for release to warehouse of outbound orders* feature enabled on your enterprise hub. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Scale unit support for release to warehouse of outbound orders*
