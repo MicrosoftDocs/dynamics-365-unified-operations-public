@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.23 
+title: Preview of Dynamics 365 Supply Chain Management 10.0.23 (January 2022)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.23. 
 author: kamaybac
 ms.date: 10/15/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.23
+# Preview of Dynamics 365 Supply Chain Management 10.0.23 (January 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -22,7 +22,7 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 - **Preview of release:** October 2021
 - **General availability of release (self-update):** December 2021
-<!-- KFM: Do we have the auto-update date? (Also in title and TOC) -->
+- **General availability of release (auto-update):** January 2022
 
 ## Features included in this release
 

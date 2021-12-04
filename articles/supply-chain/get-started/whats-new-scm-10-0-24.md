@@ -18,8 +18,8 @@ ms.dyn365.ops.version: 10.0.24
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.24. This version has a build number of 10.0.1104 <!-- KFM: Check build number--> and is available as follows:
-<!-- KFM: Check all of these dates-->
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.24. This version has a build number of 10.0.1084 and is available as follows:
+
 - **Preview of release:** December 2021
 - **General availability of release (self-update):** January 2022
 - **General availability of release (auto-update):** February 2022
@@ -67,11 +67,11 @@ We have recently added or significantly updated the following help topics. These
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.24, sign in to Lifecycle Services (LCS) and view the [KB article](#). <!--KFM: Get link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.24, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f).
 
 ### Dynamics 365 and industry clouds: 2021 release wave 2 plan
 
