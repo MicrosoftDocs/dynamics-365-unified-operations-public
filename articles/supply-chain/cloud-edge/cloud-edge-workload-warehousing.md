@@ -54,11 +54,10 @@ Depending on the business processes, the same data record can change ownership b
 
 ## Outbound process flow
 
-Before you deploy a warehouse workload running in a scale unit distributed hybrid topology please make sure you have the *Scale unit support for release to warehouse of outbound orders* feature enabled on the enterprise hub. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+Before deploying a warehouse management workload on a scale unit, make sure you have the *Scale unit support for release to warehouse of outbound orders* feature enabled on your enterprise hub. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Scale unit support for release to warehouse of outbound orders*
-
 
 The outbound data ownership process depends on whether you are using the load planning process. In all cases, the hub owns the *source documents*, such as sales orders and transfer orders, as well as the order allocation process and the related order transaction data. But when you use the load planning process, the loads will be created on the hub and therefore initially be owned by the hub. As part of the *Release to warehouse* process, the ownership of the load data is transferred to the dedicated scale unit deployment, which will become the owner of the subsequent *shipment wave processing* (such as work allocation, replenishment work, and demand work creation). Therefore, warehouse workers can only process outbound sales and transfer order work by using a Warehouse Management mobile app that is connected to the deployment running the specific scale unit workload.
 
