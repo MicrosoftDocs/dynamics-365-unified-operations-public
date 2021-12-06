@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 12/03/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
