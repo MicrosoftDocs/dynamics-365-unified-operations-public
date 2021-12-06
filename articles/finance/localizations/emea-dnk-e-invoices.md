@@ -20,8 +20,8 @@ ms.reviewer: kfend
 ms.search.region: Norway
 # ms.search.industry: 
 ms.author: ilyako
-ms.search.validFrom: 2022-01-01
-ms.dyn365.ops.version: 10.0.25
+ms.search.validFrom: 2021-01-01
+ms.dyn365.ops.version: 10.0.21
 
 ---
 
@@ -29,13 +29,11 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-For compliance with European Union Directive 2014/55/EU, the Norway-specific **EHF Billing 3.0** format for electronic invoices has been implemented based on the [PEPPOL Billing 3.0](https://docs.peppol.eu/poacc/billing/3.0/) specification.
-
-This topic provides information about how to configure and issue customer electronic invoices in Norway.
+For compliance with European Union Directive 2014/55/EU, the Denmark-specific **OIOUBL** format for electronic invoices has been implemented. This topic provides information about how to configure and issue customer electronic invoices in Denmark.
 
 ## Prerequisites
 
-The primary address of the legal entity must be in Norway.
+The primary address of the legal entity must be in Denmark.
 
 ## Import Electronic reporting configurations
 
