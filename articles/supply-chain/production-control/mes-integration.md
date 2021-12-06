@@ -186,7 +186,7 @@ The following table shows the fields that each line in the `RouteCardLines` sect
 
 | Field name | Status | Type |
 |---|---|---|
-| `OperationNumber` | Mandatory | Mandatory, Integer |
+| `OperationNumber` | Mandatory | Integer |
 | `OperationPriority` | Optional | Enum (Primary \| Secondary1 \| Secondary2 \| ... \| Secondary20) |
 | `OperationId` | Optional | String |
 | `OperationsResourceId` | Optional | String |
