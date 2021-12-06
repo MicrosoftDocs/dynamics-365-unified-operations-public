@@ -245,6 +245,12 @@ When you change the status of an ER configuration version from **Draft** to **Co
 
 We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration.
 
+To apply the selected storage schema for keeping labels of all ER configurations in the currenet Finance instance, perform the following steps:
+
+1.  Go to **Organization administration \> Periodic \> Apply the selected labels storing schema for all ER configurations**.
+2.  Select **OK**.
+
+
 ## Additional resources
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
