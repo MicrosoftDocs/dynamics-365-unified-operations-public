@@ -49,6 +49,10 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 
 For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
+### Application specific parameters configuration
+
+In the **Electronic reporting** workspace,
+
 ### Reference the imported ER format configurations
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
@@ -85,6 +89,7 @@ For more information about how to import ER configurations, see [Download Electr
 2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
 3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
 4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
+5. EAN
 
 ![Customer parameters.](media/emea-nor-ger-customer.jpg)
 
