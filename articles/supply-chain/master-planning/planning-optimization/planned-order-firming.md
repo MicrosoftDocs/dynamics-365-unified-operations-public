@@ -76,7 +76,8 @@ To manually firm planned orders, you find and select the planned orders that you
     - **Group by period** (in the **Purchase orders** section) – Select the period to group planned purchase orders by. To use this option, you must also select the **Group by vendor** option.
     - **Group by period** (in the **Transfers** section) – Select the period to group planned transfer orders by. The orders will be grouped based on **From warehouse** and **To warehouse** values.
 
-Note that for all the options where **group by** is used, each planned order will be changed to a line in the single order result of the grouping performed.
+    > [!NOTE]
+    > Each of "Group by" options causes the system to convert each planned order to a line in the single purchase order that results from the grouping.
 
     ![Parameters FastTab in the Firming dialog box.](./media/manual-firming.png "Parameters FastTab in the Firming dialog box")
 
