@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with Electronic invoicing for Italy. FatturaPA SDI
-description: This topic provides information that will help you get started with Electronic invoicing for Italy using SDI with FatturePA format.
+title: Setup direct integration of Italian FatturaPA with SDI
+description: This topic provides information that will help you get started with Electronic invoicing direct integration of Italian FatturaPA with SDI.
 author: abaryshnikov
 ms.date: 11/30/2021
 ms.topic: article
