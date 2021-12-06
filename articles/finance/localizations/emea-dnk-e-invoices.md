@@ -66,10 +66,15 @@ For more information about how to import ER configurations, see [Download Electr
 ### Configure legal entity parameters
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's value-added tax (VAT) number.
-3. On the **Registration numbers** FastTab, set the **Print Foretaksregisteret on sales documents** option for Norway to **Yes**.
-4. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's organization number.
-5. In the **Bank account** field, enter the company's bank account number.
+2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's VAT number.
+3. On the **Bank account information** FastTab, in the **Routing number** field and in the **FI-Creditor ID** field, enter company's additional identification numbers.
+
+### Configure methods of payment
+
+1. Go to **Accounts receivable** \> **Setup** \> **Payments setup** \> **Methods of payment**.
+2. Create a new or select an existing method of payment to configure.
+3. On the **General** FastTab, in the **Posting** section, in the **Account type** field, select **Bank** value.
+4. In the **Payment account** field, enter the company's bank account assosiated with this method of payment.
 
     > [!NOTE]
     > The company bank account must already be set up at **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
