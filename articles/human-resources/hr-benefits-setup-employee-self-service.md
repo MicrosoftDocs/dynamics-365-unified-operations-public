@@ -43,12 +43,12 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
 
    | Field | Description |
    | --- | --- |
-   | **Plan type code** | The play type that will be displayed when this tile is selected in **Benefits self service**. |
+   | **Plan type code** | The plan type that is displayed when this tile is selected in **Benefits self service**. |
    | **Tile ID** | The unique identifier for the tile. |
    | **Tile label text** | The text that will appear for the tile in **Benefits self service**. |
    | **Description** | A description of the tile. |
    | **Tile background image** | The URL of the image to use for the tile (optional). |
-   | **Track open enrollment** | Select this if you want to track the open enrollment progress for this plan type.  For example, you may have plans created where **Plan type = Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, this type of plans will be ignored when tracking enrollment progress or completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities. |
+   | **Track open enrollment** | Select this option to track the open enrollment progress for this plan type. For example, you may have plans created where **Plan type = Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, this type of plans will be ignored when tracking enrollment progress or enrollment completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities. |
 
 4. Select **Save**.
 
@@ -68,7 +68,7 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | **Description** | A description of the tile. |
    | **Target** | Specifies whether the page should open in a new window or the current window. |
    | **Tile background image** | The URL of the image to use for the tile (optional). |
-   | **Track open enrollment** | Select this if you want to track the open enrollment progress for this plan type. For example, you may have plans created where **Plan type = Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, this type of plan will be ignored when tracking enrollment progress or completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities. |
+   | **Track open enrollment** | Select this option to track the open enrollment progress for this plan type. For example, you may have plans created where **Plan type = Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, this type of plan will be ignored when tracking enrollment progress or enrollment completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities. |
 
 4. Select **Save**.
 
