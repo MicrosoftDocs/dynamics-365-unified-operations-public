@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 
-## Employees select plans using Employee self service (optional)
+# Employees select plans using Employee self service (optional)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -39,15 +39,15 @@ Within the **Benefits self-service** page, benefit plans are grouped by benefit 
 
 > [!Important:]
 
-> For a plan type to display in **Employee self service**, it must be configured. For more information see **Configure Employee self service**, 
-> <https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-employee-self-service>
+> For a plan type to display in **Employee self service**, it must be configured. For more information, see **Configure Employee self service** 
+> <https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-setup-employee-self-service>
 
 Depending on the plan type, one or more benefits maybe selected for enrollment. For example, the medical plan type might be configured to limit the employee to one medical plan.
-Whereas, a life insurance plan type, might allow the employee to select multiple life insurance plans.
+A life insurance plan type might allow the employee to select multiple life insurance plans.
 
 Once an employee has determined a plan to enroll in, they may be required to select dependents. If the employee has selected a coverage option that is **Employee +1**, 
 **Employee + children**, or **Family**, dependents must be selected. To learn more about coverage options see **Create coverage options**, 
-<https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-setup-coverage-options>
+<https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-setup-coverage-options>
 
 To select a benefit plan, click either the **ellipses** **(…)** or **Add to cart**. Once all of the benefit selections have been added to the cart, 
 the employee selects **View cart**. After selecting **View cart**, the employee will be on the **Plans** page. They can view their selected and waived benefit plans. 
