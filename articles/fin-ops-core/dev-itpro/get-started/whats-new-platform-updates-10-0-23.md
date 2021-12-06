@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.23 of Finance and Operations apps (January 2022)
 description: This topic lists the features that are included in the platform updates for version 10.0.23 of Finance and Operations apps.
 author: sericks007
-ms.date: 10/15/2021
+ms.date: 12/06/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
