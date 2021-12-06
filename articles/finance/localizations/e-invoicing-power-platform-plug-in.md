@@ -45,7 +45,7 @@ The following conditions must met before you configure the Dataverse solution fo
 
 ## Getting the solution
 
-The Dataverse solution for Electronic invoicing must be installed from Microsoft AppSource. Make sure that the following solution is installed in Dataverse.
+The Dataverse solution for Electronic invoicing must be installed from Microsoft AppSource: [Connector for Electronic Invoicing and Dataverse](https://appsource.microsoft.com/en-us/product/dynamics-crm/mscrm.electronic-invoicing). Make sure that the following solution is installed in Dataverse.
 
 - **msdyn_MicrosoftDynamicsElectronicInvoicing**: This solution adds a list of Electronic invoicing entities that contain audit and log information for electronic invoicing submissions and a business logic plug-in that implements communication with the Electronic invoicing solution.
 
