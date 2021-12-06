@@ -39,15 +39,15 @@ Within the **Benefits self-service** page, benefit plans are grouped by benefit 
 
 > [!Important:]
 
-> For a plan type to display in **Employee self service**, it must be configured. For more information, see **Configure Employee self service** 
-> <https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-setup-employee-self-service>
+> For a plan type to display in **Employee self service**, it must be configured. For more information, see [Configure Employee self service](/hr-benefits-setup-employee-self-service.md).
 
 Depending on the plan type, one or more benefits maybe selected for enrollment. For example, the medical plan type might be configured to limit the employee to one medical plan.
 A life insurance plan type might allow the employee to select multiple life insurance plans.
 
 Once an employee has determined a plan to enroll in, they may be required to select dependents. If the employee has selected a coverage option that is **Employee +1**, 
-**Employee + children**, or **Family**, dependents must be selected. To learn more about coverage options see **Create coverage options**, 
-<https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-setup-coverage-options>
+**Employee + children**, or **Family**, dependents must be selected. 
+
+For more information about coverage options, see [Create coverage options](/hr-benefits-setup-coverage-options.md).
 
 To select a benefit plan, click either the **ellipses** **(…)** or **Add to cart**. Once all of the benefit selections have been added to the cart, 
 the employee selects **View cart**. After selecting **View cart**, the employee will be on the **Plans** page. They can view their selected and waived benefit plans. 
@@ -64,10 +64,10 @@ the **Checked Out** option will be selected.
 > To complete enrollment, the benefits administrator must select **Confirm** for each selected employee benefit. Confirmation can be 
 > completed in the **Worker benefits plan** or the **Worker benefit plans bulk update** pages.
 
-![Graphical user interface  application  table Description automatically generated](media/image1.png)
+![Benefits plan](.media/image1.png)
 
 It is not required for an employee to select **Benefits using self-service**. Benefits can be selected on behalf of the employee in the **Worker benefits plan** or 
 the **Worker benefit plans bulk update** pages. The benefits must be confirmed by the benefit administrator for the employee to be enrolled in the benefit.
 
-
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
 
