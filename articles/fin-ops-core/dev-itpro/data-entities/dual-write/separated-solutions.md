@@ -108,7 +108,7 @@ Following are the maps available on this package:
 | Worker                      | cdm_workers                      |
 | Employment per company      | cdm_employments                  |
 
-**Dependency information:** Dual-write Application Core package
+**Dependency information:** Dual-write Human Resources package depends on Dual-write Application Core package. So you should install Dual-write Application Core package before installing Dual-write Human Resources package.
 
 
 
@@ -182,7 +182,7 @@ Following are the maps available on this package:
 | CDS sales quotation lines                   | quotedetails                                  |
 | CDS sales order lines                       | salesorderdetails                             |
 
-**Dependency information:**
+**Dependency information:** Dual-write Supply Chain package depends on following 3 packages. So you should install these before installing Dual-write Supply Chain package.
 
 -   Dual-write Application Core package
 
@@ -238,7 +238,8 @@ Following are the maps available on this package:
 | Ledger                                  | msdyn_ledgers                   |
 | Customers V3                            | accounts                        |
 
-**Dependency information:** Dual-write Application Core package
+**Dependency information:** Dual-write Finance package depends on Dual-write Application Core package. So you should install Dual-write Application Core package before installing Dual-write Finance package.
+
 
 
 
@@ -262,7 +263,8 @@ Following are the maps available on this package:
 | Vendor document attachments                | annotations         |
 | Purchase order header document attachments | annotations         |
 
-**Dependency information:**
+**Dependency information:** Dual-write Notes package depends on the following 2 packages. So you should install these before installing Dual-write Notes package.
+
 
 -   Dual-write Application Core package
 
@@ -297,6 +299,7 @@ Following are the maps available on this package:
 | Asset management asset lifecycle states               | msdyn_assetlifecyclestates              |
 | Asset management asset lifecycle models               | msdyn_assetlifecyclemodels              |
 
-**Dependency information:** Dual-write Application Core package
+**Dependency information:** Dual-write Asset Management package depends on Dual-write Application Core package. So you should install Dual-write Application Core package before installing Dual-write Asset Management package.
+
 
 
