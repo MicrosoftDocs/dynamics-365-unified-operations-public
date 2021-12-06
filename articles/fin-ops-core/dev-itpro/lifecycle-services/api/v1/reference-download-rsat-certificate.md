@@ -75,8 +75,8 @@ The response is always a "200 OK" response, unless you aren't correctly authenti
 | CertificateZipEncoded | A zip containing the .PFX and .CER files in a Base 64-encoded byte array. |
 | CertificateSecretEncoded | The private certificate's private secret as a Base 64-encoded string. This will change every request. |
 | CertificateThumbprint | The private certificate's thumbprint. |
-| ExpirationDateTimeUTC | A date and time in UTC of when the certificate is not valid after in full text format. |
-| ExpirationISODateTimeUTC | A date and time in UTC of when the certificate is not valid after in ISO 8606 format. |
+| ExpirationDateTimeUTC | A date and time in UTC (displayed in full text format) after which the certificate is not valid. |
+| ExpirationISODateTimeUTC | A date and time in UTC (displayed in ISO 8606 format) after which the certificate is not valid. |
 | Filename | The filename of the zip being returned. |
 
 ### Example response
