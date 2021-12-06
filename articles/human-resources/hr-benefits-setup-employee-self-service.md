@@ -39,7 +39,7 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
 
 2. Select the **Benefit plans tile setup** tab, and then select **New**.
 
-3. Specify values for the following fields:
+3. Specify values for the following fields.
 
    | Field | Description |
    | --- | --- |
@@ -48,7 +48,7 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | **Tile label text** | The text that will appear for the tile in **Benefits self service**. |
    | **Description** | A description of the tile. |
    | **Tile background image** | The URL of the image to use for the tile (optional). |
-   | **Track open enrollment** | Select this option to track the open enrollment progress for this plan type. For example, you may have plans created where **Plan type = Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, this type of plans will be ignored when tracking enrollment progress or enrollment completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities. |
+   | **Track open enrollment** | Select this option to track the open enrollment progress for this plan type. For example, you may have plans created where **Plan type = Other**. These plans might be optional plans that you don’t want to track enrollment progress for. If you do not select this plan type, this type of plan will be ignored when tracking enrollment progress or enrollment completion on the **Open enrollment** tab. This setting applies to the plan type that is selected for all periods and legal entities. |
 
 4. Select **Save**.
 
@@ -58,7 +58,7 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
 
 2. Select the **Flex credit plan tile setup** tab, and then select **New**.
 
-3. Specify values for the following fields:
+3. Specify values for the following fields.
 
    | Field | Description |
    | --- | --- |
