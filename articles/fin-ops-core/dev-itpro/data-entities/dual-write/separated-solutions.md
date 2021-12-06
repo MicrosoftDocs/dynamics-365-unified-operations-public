@@ -57,8 +57,8 @@ Dual-write Application Core package allows users to install and configure dual-w
 | Dynamics365Company                    | Dynamics 365 Company                                      |
 | Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common                |
 | CurrencyExchangeRates                 | Currency Exchange Rates                                   |
-| msdyn_DualWriteAppCoreMaps            | Dynamics 365 Dual Write Applications Core Entity Maps     |
-| msdyn_DualWriteAppCoreAnchor          | Dynamics 365 Dual Write Applications Core Anchor solution |
+| msdyn_DualWriteAppCoreMaps            | Dual-write applications core entity maps                  |
+| msdyn_DualWriteAppCoreAnchor          | Dual-write applications core anchor                       |
 
 Following are the maps available on this package:
 
@@ -89,8 +89,8 @@ Dual-write Human Resources package contains solutions and maps necessary to sync
 | Unique Name                | Display Name                                                      |
 |----------------------------|-------------------------------------------------------------------|
 | HCMCommon                  | HCM Common                                                        |
-| msdyn_Dynamics365HCMMaps   | Dynamics 365 Dual Write Applications HCM Entity Maps              |
-| msdyn_Dynamics365HCMAnchor | Dynamics 365 Dual Write Applications Asset Management Entity Maps |
+| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps                          |
+| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor                               |
 
 Following are the maps available on this package:
 
@@ -120,8 +120,8 @@ Dual-write Supply Chain package contains solutions and maps necessary to sync Dy
 | Unique Name                                | Display Name                                                               |
 |--------------------------------------------|----------------------------------------------------------------------------|
 | Dynamics365SupplyChainExtended             | Dynamics 365 Supply Chain Extended                                         |
-| msdyn_Dynamics365SupplyChainExtendedMaps   | Dynamics 365 Dual Write Applications Supply Chain Extended Entity Maps     |
-| msdyn_Dynamics365SupplyChainExtendedAnchor | Dynamics 365 Dual Write Applications Supply Chain Extended Anchor solution |
+| msdyn_Dynamics365SupplyChainExtendedMaps   | Dynamics 365 Supply Chain Management extended entity maps                  |
+| msdyn_Dynamics365SupplyChainExtendedAnchor | Dynamics 365 Supply Chain Management extended anchor                       |
 
 Following are the maps available on this package:
 
@@ -186,9 +186,9 @@ Following are the maps available on this package:
 
 -   Dual-write Application Core package
 
--   Dual-write Finance and Extended package
+-   Dual-write Finance package
 
--   Dual-write HCM package
+-   Dual-write Human Resources package
 
 
 
@@ -199,8 +199,9 @@ Dual-write Finance package contains solutions and maps necessary to sync Dynamic
 | Unique Name                            | Display Name                                                           |
 |----------------------------------------|------------------------------------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended                                          |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Dual Write Applications Finance Extended Entity Maps      |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Dual Write  Applications Finance Extended Anchor solution |
+| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance extended entity maps                              |
+| FieldServiceCommon                     | Field Service Common                                                   |
+| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance extended anchor                                   |
 
 Following are the maps available on this package:
 
@@ -248,9 +249,9 @@ Dual-write Notes package contains solutions and maps necessary to sync notes or 
 | Unique Name                  | Display Name                                               |
 |------------------------------|------------------------------------------------------------|
 | Dynamics365Notes             | Dynamics 365 Notes                                         |
-| Dynamics365NotesExtended     | Dynamics 365 Notes Extended                                |
-| msdyn_Dynamics365NotesMaps   | Dynamics 365 Dual Write Applications Notes Entity Maps     |
-| msdyn_Dynamics365NotesAnchor | Dynamics 365 Dual Write Applications Notes Anchor solution |
+| Dynamics365NotesExtended     | Dynamics 365 notes extended                                |
+| msdyn_Dynamics365NotesMaps   | Dynamics 365 notes entity maps                             |
+| msdyn_Dynamics365NotesAnchor | Dynamics 365 notes anchor                                  |
 
 Following are the maps available on this package:
 
@@ -265,7 +266,7 @@ Following are the maps available on this package:
 
 -   Dual-write Application Core package
 
--   Dual-write Finance and Extended package
+-   Dual-write Finance package
 
 
 
@@ -277,8 +278,8 @@ Dual-write Asset Management package contains solutions and maps necessary to syn
 |--------------------------------------|-----------------------------------------------------------------------|
 | Dynamics365AssetManagement           | Dynamics 365 Asset Management                                         |
 | Dynamics365AssetManagementApp        | Dynamics365 Asset Management App                                      |
-| msdyn_DualWriteAssetManagementMaps   | Dual Write Applications Asset Management Entity Maps                  |
-| msdyn_DualWriteAssetManagementAnchor | Dynamics 365 Dual Write Applications Asset Management solution Anchor |
+| msdyn_DualWriteAssetManagementMaps   | Dynamics 365 Asset Management entity maps                             |
+| msdyn_DualWriteAssetManagementAnchor | Dynamics 365 Asset Management anchor                                  |
 
 Following are the maps available on this package:
 
