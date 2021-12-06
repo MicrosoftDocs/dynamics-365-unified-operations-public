@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 10/27/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -150,6 +150,16 @@ There are two options to enable the Power Platform integration for a Finance and
 
 For more information about dual-write configuration options, see [Linking mismatch](../data-entities/dual-write/lcs-setup.md#linking-mismatch).
 
+## Troubleshooting the setup
+
+Setup can fail at various stages of the deployment of the Dataverse-based environment.
+
+Any time that the setup fails, an error message is shown. The following illustration shows an example of the error message for a dual-write setup failure.
+
+![Error message for a dual-write setup failure.](media/Error.png)
+
+Based on the error message, you might have to address licensing or capacity issues. After these issues have been fixed, you can select **Resume** in the **Power Platform integration** section of the **Environment details** page in LCS to finish the setup.
+
 ## Enable the integration for cloud-hosted development environments
 
 You can manually enable the Microsoft Power Platform integration for cloud-hosted development environments by completing the procedures in this section. For information about how to deploy cloud development environments, see [Deploy and access development environments](../dev-tools/access-instances.md).
@@ -237,6 +247,25 @@ Dataverse will use the Azure AD application that you created to call Finance and
         return $webSitePhysicalPath
     }
 
+    function Get-WebConfigValue($Key)
+    {
+        $webroot = Get-AosWebSitePhysicalPath
+        $webConfigPath = Join-Path $webroot "web.config"
+        if (-not (Test-Path $webConfigPath))
+        {
+            Throw "Unable to find web.config file at '$($webConfigPath)'..."
+        }
+
+        [xml]$webConfigDocument = Get-Content $webConfigPath -ErrorAction stop
+        $appSettingNode = $webConfigDocument.SelectSingleNode("/configuration/appSettings/add[@key='$($Key)']")
+        if ($appSettingNode)
+        {
+            return $appSettingNode.Value
+        }
+
+        return $null
+    }
+
     function Set-WebConfigValue($Key, [string]$Value)
     {
         $webroot = Get-AosWebSitePhysicalPath
@@ -304,9 +333,59 @@ Dataverse will use the Azure AD application that you created to call Finance and
 
     function Update-WebConfigValueFromHost($Key, $Prompt, $Type)
     {
-        $value = Read-Host -Prompt $Prompt
-        Confirm-ValueOfType -Value $value -Type $Type
-        Set-WebConfigValue -Key $Key -Value $value
+        $shouldUpdate = $true
+        $currentValue = Get-WebConfigValue -Key $Key
+        if ($currentValue)
+        {
+            if ($Type -eq "Secret")
+            {
+                $currentValue = "<redacted>"
+            }
+
+            while ($true)
+            {
+                $yesNoResponse = Read-Host -Prompt "Value for '$($Prompt)' is already set to '$($currentValue)'. Do you want to overwrite it? (y/n)"
+                if ($yesNoResponse -eq "y" -or $yesNoResponse -eq "yes")
+                {
+                    $shouldUpdate = $true
+                    break
+                }
+                elseif ($yesNoResponse -eq "n" -or $yesNoResponse -eq "no")
+                {
+                    $shouldUpdate = $false
+                    break
+                }
+                else
+                {
+                    Write-Host "Did not recognize input value '$($yesNoResponse)' - please try again."
+                }
+            }
+        }
+
+        if ($shouldUpdate)
+        {
+            $value = Read-Host -Prompt "Enter $($Prompt)"
+            Confirm-ValueOfType -Value $value -Type $Type
+            if ($Type -eq "Secret")
+            {
+                # If value is blank, assume we are trying to clear it
+                $secretValue = ""
+                if (-not [string]::IsNullOrEmpty($value))
+                {
+                    $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
+                    $webrootBinPath = Join-Path $webroot "bin"
+                    $b2bInvitationHelperDllPath = Join-Path $webrootBinPath "Microsoft.Dynamics.AX.Security.B2BInvitationHelper.dll"
+                    Add-Type -Path $b2bInvitationHelperDllPath
+
+                    $encryptionEngine = [Microsoft.Dynamics.AX.Security.B2BInvitationHelper.Cryptor]::GetEncryptionEngine()
+                    $secretValue = [System.Convert]::ToBase64String($encryptionEngine.Encrypt($value))
+                }
+
+                $value = $secretValue
+            }
+
+            Set-WebConfigValue -Key $Key -Value $value
+        }
     }
 
     function Enable-Flight($FlightName)
@@ -370,11 +449,11 @@ Dataverse will use the Azure AD application that you created to call Finance and
 
     try
     {
-        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationUrl" -Prompt "Enter Dataverse Organization URL" -Type "Uri"
-        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationId" -Prompt "Enter Dataverse Organization id" -Type "Guid"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAadTenantId" -Prompt "Enter Dataverse AAD Tenant id (e.g. Contoso.OnMicrosoft.com)" -Type "String"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppId" -Prompt "Enter Dataverse AAD App id" -Type "Guid"
-        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppSecret" -Prompt "Enter Dataverse AAD App secret" -Type "String"
+        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationUrl" -Prompt "Dataverse Organization URL" -Type "Uri"
+        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationId" -Prompt "Dataverse Organization id" -Type "Guid"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAadTenantId" -Prompt "Dataverse AAD Tenant domain (e.g. Contoso.OnMicrosoft.com)" -Type "String"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppId" -Prompt "Dataverse AAD App id" -Type "Guid"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppSecretEncrypted" -Prompt "Dataverse AAD App secret" -Type "Secret"
 
         Enable-Flight -FlightName "BusinessEventsCDSIntegration"
 
@@ -395,6 +474,7 @@ Dataverse will use the Azure AD application that you created to call Finance and
         Write-Host "Press any key to continue..."
         [System.Console]::ReadKey() | Out-Null
     }
+
     ```
 
 3. Run the script in Windows PowerShell, and follow the instructions. You will enter the following information:
@@ -405,14 +485,5 @@ Dataverse will use the Azure AD application that you created to call Finance and
     - **Dataverse AAD app ID** – Enter the **Application (client) ID** value of the Azure AD application that you created earlier.
     - **Dataverse AAD app secret** – Enter the secret key value that was created earlier for the Azure AD apps.
 
-## Troubleshooting the setup
-
-Setup can fail at various stages of the deployment of the Dataverse-based environment.
-
-Any time that the setup fails, an error message is shown. The following illustration shows an example of the error message for a dual-write setup failure.
-
-![Error message for a dual-write setup failure.](media/Error.png)
-
-Based on the error message, you might have to address licensing or capacity issues. After these issues have been fixed, you can select **Resume** in the **Power Platform integration** section of the **Environment details** page in LCS to finish the setup.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
