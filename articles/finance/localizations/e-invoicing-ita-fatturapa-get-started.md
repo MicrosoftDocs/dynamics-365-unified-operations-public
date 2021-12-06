@@ -4,7 +4,7 @@
 title: Setup direct integration of Italian FatturaPA with SDI
 description: This topic provides information that will help you get started with Electronic invoicing direct integration of Italian FatturaPA with SDI.
 author: abaryshnikov
-ms.date: 11/30/2021
+ms.date: 12/05/2021
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: rhaertle
@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
 ---
 
-# Get started with Electronic invoicing for Italy. FatturaPA SDI
+# Get started with Electronic invoicing for Italian FatturaPA SDI
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +49,7 @@ This section complements the section, [Country-specific configuration of applic
 
 ### Set up application specific parameters
 
-1. On the **Electronic invoicing features** page, select Feature to edit.
+1. On the **Electronic invoicing features** page, select the feature to edit.
 2. On the **Versions** tab, verify that the **Draft** version is selected.
 3. On the **Configurations** tab, select **Application specific parameters** for a selected configuration. 
 4. In the **Lookups** section, make sure that the lookup, **List of Natura reverse charge subcategories** is selected.
@@ -61,7 +61,7 @@ This section complements the section, [Country-specific configuration of applic
 
 ### Configure a processing pipeline for export
 
-1. On the **Electronic invoicing features** page, select Feature to edit.
+1. On the **Electronic invoicing features** page, select the feature to edit.
 2. On the **Setups** tab, select **Sales invoices** > select **Edit**.
 3. In the **Processing pipeline** section, go through the actions and fill in all the required parameters:
     - For the **Sign document** action fill in the **Certificate name** parameter value (certificate for digital signature).
@@ -121,7 +121,7 @@ This section complements the section, [Country-specific configuration of applic
 
 ## Proxy server setup
 
-This topic provides information that will help you to setup and configure proxy service to communicate between Italian SDI and **Electronic invoicing service**.
+This section provides information that will help you to setup and configure proxy service to communicate between Italian SDI and **Electronic invoicing service**.
 
 ### Create App registration
 
