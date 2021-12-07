@@ -76,7 +76,7 @@ The new RSAT release introduce new logic to manage files and will detect if anot
 test case and block this to avoid risk of overriding files. Should this happen you run into this, then the following message 
 is shown, and the second test run will stop.<br><br>
 
-![Locked test cases](rsat/media/locked-test-case.png)
+![Locked test cases](media/locked-test-case.png)
 
 There is a switch which can be specified when running RSAT by the command line (CLI)<br><br>
 /retry=[seconds]<br><br>
@@ -101,7 +101,7 @@ multiple times, but not to run test cases from more than one app. With the new R
 unless you enable parallel execution on the environment. This error message will be shown when running a second RSAT 
 app.<br><br>
 
-![Maximum instances](rsat/media/maximum-instances.png)
+![Maximum instances](media/maximum-instances.png)
 
 Each user can run only one RSAT app version 2.3 at a time. That is until the parallel execution feature is enabled.<br><br>
 For these reasons, coordinate between RSAT users when it is a good time to upgrade, and consider upgrading together.<br>
