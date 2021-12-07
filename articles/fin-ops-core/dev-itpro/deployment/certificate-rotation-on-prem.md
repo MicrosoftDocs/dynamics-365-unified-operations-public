@@ -316,10 +316,37 @@ Because you've updated your certificates, the configuration file that is present
 
 3. Save and close the file. Remember to close any programs that are accessing this network location. Otherwise, the cleanup process might fail.
 
+## Rotate Credentials.json
+
+If you've generated a new **axdataencipherment** certificate, you must re-encrypt the **Credentials.json** file.
+
+```powershell
+.\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Rotate
+```
+
+Alternatively, if you also want to rotate the existing credentials, follow these steps.
+
+1. Decrypt the **Credentials.json** file.
+
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Decrypt
+    ```
+
+1. Open the **Credentials.json** file, and update any credentials that you want to update.
+
+1. Re-encrypt the **Credentials.json** file.
+
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
+    ```
+
+> [!NOTE]
+> Make sure that you either copy your infrastructure folder to an Application Object Server (AOS) node or run the script from an AOS node.
+
 ## Update deployment settings in LCS
 
 > [!NOTE]
->  Note that the Client, Data Signing, and Encipherment certificates will only be replaced. You will also need to recreate the Credentials.json file, as described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).
+> The Client, Data Signing, and Encipherment certificates will only be replaced.
 >
 > Before you continue, you need to make a backup of the local Dynamics database.
 

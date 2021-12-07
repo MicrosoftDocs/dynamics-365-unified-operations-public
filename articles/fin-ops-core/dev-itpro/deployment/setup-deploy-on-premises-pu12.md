@@ -335,7 +335,7 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises - Deployment scripts** row.
+3. On the **Model** tab, in the grid, select the row for **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts**.
 4. Select **Versions**, and then download the latest version of the zip file for the scripts.
    >[!Note] 
    > If you need the older version for Platform update 8 or Platform update 11, download version 1.
