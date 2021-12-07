@@ -2,36 +2,25 @@
 # required metadata
 
 title: Control unit integration sample for Sweden
-description: This topic provides an overview of the fiscal integration sample for Sweden.
-author: sepism
+description: This topic provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
+author: EvgenyPopovMBS
 ms.date: 11/16/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-# ms.devlang:
-ms.reviewer: josaw
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Sweden
-ms.search.industry: Retail
-ms.author: sepism
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: epopov
 ms.search.validFrom: 2019-10-08
-ms.dyn365.ops.version: 10.0.7
 
 ---
 # Control unit integration sample for Sweden
 
 [!include [banner](../includes/banner.md)]
 
+This topic provides an overview of the fiscal integration sample for Poland in Microsoft Dynamics 365 Commerce.
+
 > [!NOTE]
 > This sample fiscal integration functionality replaces the earlier [Sample for POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The earlier sample doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will become obsolete in later updates. For information about how to migrate from the earlier sample to the sample that corresponds with Dynamics 365 Commerce **10.0.22 and earlier** version, see the [Migrating from the earlier integration sample](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample) section.
-
-## Introduction
 
 The Commerce functionality for Sweden includes a sample integration of the point of sale (POS) with Sweden-specific fiscal devices that are known as *control units*. This sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's assumed that a control unit is physically connected to a Hardware station that the POS is paired with. As an example, this sample uses the application programming interface (API) of the [CleanCash Type A](https://www.retailinnovation.se/produkter) control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash API is used.
 
@@ -116,7 +105,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Download configuration files for the fiscal document provider and the fiscal connector:
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
@@ -157,7 +146,7 @@ The following default data mapping is included in the fiscal document provider c
 
     - *1* and *2* are device-specific VAT codes.
     - A semicolon (;) is used as a separator.
-    - *code1* and *code2* are sales tax codes that are configured in Headquarters. You need to modify the sample mapping according to the tax codes configured in your application.
+    - *code1* and *code2* are sales tax codes that are configured in headquarters. You need to modify the sample mapping according to the tax codes configured in your application.
 
     Control units support up to four different VAT codes. Therefore, the VAT code mapping might be set up as following:
 
@@ -182,9 +171,9 @@ The following settings are included in the fiscal connector configuration that i
 >
 > Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
-#### Development environment
+#### Set up the development environment
 
-Follow these steps to set up a development environment so that you can test and extend the sample:
+To set up a development environment to test and extend the sample, follow these steps.
 
 1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Open the control unit integration solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash\\CleanCash.sln**, and build it.
@@ -218,9 +207,7 @@ Follow the steps described in [Set up a build pipeline for a fiscal integration 
 The control unit integration sample for Sweden is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\CleanCash** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the control unit integration sample for Sweden (legacy)](emea-swe-fi-sample-sdk.md) for more details.
->
-> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the control unit integration sample for Sweden (legacy)](emea-swe-fi-sample-sdk.md) for more details. Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 ### CRT extension design
 
@@ -230,7 +217,7 @@ The purpose of the extension that is a fiscal document provider is to generate s
 
 There is a single **DocumentProviderCleanCash** request handler for the document provider. This handler is used to generate fiscal documents for the control unit.
 
-This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
+This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in headquarters.
 
 The connector supports the following requests:
 
@@ -239,7 +226,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\CleanCash\\CommerceRuntime\\DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of this file is to enable settings for the document provider to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration.
+The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\CleanCash\\CommerceRuntime\\DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of this file is to enable settings for the document provider to be configured from headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 ### Hardware station extension design
 
@@ -249,7 +236,7 @@ The purpose of the extension that is a fiscal connector is to communicate with t
 
 The **CleanCashHandler** request handler is the entry point for handling requests to the control unit.
 
-The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Headquarters.
+The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in headquarters.
 
 The connector supports the following requests:
 
@@ -259,6 +246,6 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\CleanCash\\HardwareStation\\Connector.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration.
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\CleanCash\\HardwareStation\\Connector.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
