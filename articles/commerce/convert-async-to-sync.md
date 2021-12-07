@@ -32,7 +32,7 @@ If an order is referenced to an asynchronous customer or address not synchronize
 
 [Customer management in stores](/customer-mgmt-stores.md)
 
-[Synchronous and asynchronous customer](/synchronous-and-asynchronous-customers.md)
+[Asynchronous customer creation mode](async-customer-mode.md)
 
 [Customer attributes](dev-itpro/customer-attributes.md)
 
