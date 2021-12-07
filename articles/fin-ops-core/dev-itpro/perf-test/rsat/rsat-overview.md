@@ -35,6 +35,7 @@ RSAT usage is described in these topics:
 + [Regression Suite Automation Tool (this topic)](rsat-overview.md)
 + [Regression Suite Automation Tool installation and configuration](rsat-install-configure.md)
 + [Run Regression Suite Automation Tool test cases](rsat-run.md)
++ [Run Regression suite automation tool with parallel execution](rsat-parallel-execution.md)
 + [Maintain test cases within Regression suite automation tool](rsat-maintain-test-cases.md)
 + [Validate expected values](rsat-validate-expected.md)
 + [Chain test cases](rsat-chain-test-cases.md)
