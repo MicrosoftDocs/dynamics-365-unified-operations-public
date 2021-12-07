@@ -43,6 +43,7 @@ After your Commerce evaluation environment has been provisioned end to end, addi
 1. Select your environment in the list.
 1. In the environment information on the right, select **Log on to environment**. You will be sent to Commerce headquarters.
 1. Make sure that the **USRT** legal entity is selected in the upper-right corner.
+2. Navigate to **Commerce parameters > Configuration parameters** & make sure there's an entry for **ProductSearch.UseAzureSearch** set to **true**. *If this entry was missing, simply add this entry & run 'Channel Database > Full Sync' for the Commerce Scale unit associated with your eCommerce website.*
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
 
