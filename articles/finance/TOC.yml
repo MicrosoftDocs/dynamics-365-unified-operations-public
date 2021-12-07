@@ -70,6 +70,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.24
+            href: get-started/whats-new-changed-10-0-24.md
           - name: Finance 10.0.23 
             href: get-started/whats-new-changed-10-0-23.md
           - name: Finance 10.0.22 (November 2021)
@@ -518,6 +520,8 @@
         href: budgeting/budget-control-overview-configuration.md
       - name: Budgeting overview
         href: budgeting/basic-budgeting-overview-configuration.md
+      - name: Budget funds available
+        href: budgeting/budget-funds-available.md
       - name: Position forecasting
         href: budgeting/position-forecasting.md
       - name: Budget planning justification documents
@@ -1444,6 +1448,14 @@
             items:
             - name: Get started with Tax Calculation
               href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+            - name: Set up tax codes
+              href: localizations/set-up-tax-codes.md
+            - name: Set up tax groups
+              href: localizations/set-up-tax-groups.md
+            - name: Set up item tax groups
+              href: localizations/set-up-item-tax-groups.md
+            - name: Import and export tax calculations
+              href: localizations/tax-calculation-import-export-feature.md
             - name: Set up an environment for master data lookup
               href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
           - name: Determination
@@ -1474,6 +1486,10 @@
               items: 
               - name: VAT declaration
                 href: localizations/emea-fra-VAT-declaration-preview-France.md
+            - name: Germany reporting
+              items:
+              - name: VAT declaration
+                href: /localizations/emea-deu-vat-declaration-germany.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
@@ -2158,11 +2174,13 @@
             href: localizations/emea-deu-gdpdu-data-filtering.md
         - name: Depreciation adjustments for additional acquisitions in the second year
           href: localizations/tasks/de-00002-depreciation.md
+        - name: VAT declaration
+          href: localizations/emea-deu-vat-declaration-germany.md
         - name: Electronic transmission of VAT declaration (ELSTER)
           href: localizations/tasks/de-00003-electronic-transmission-elster.md
         - name: German Intrastat
           href: localizations/emea-deu-intrastat.md
-        - name: VAT declaration for Germany
+        - name: VAT statement
           href: localizations/emea-de-vat-declaration.md
         - name: Customer electronic invoices report
           href: localizations/emea-deu-e-invoices.md
@@ -2656,6 +2674,8 @@
           href: localizations/emea-ita-exil-tax-plafond.md
         - name: Customer electronic invoices
           href: localizations/emea-ita-e-invoices.md
+        - name: Vendor electronic invoices
+          href: localizations/emea-ita-vend-e-invoices.md
         - name: Yearly tax communication
           href: localizations/emea-ita-yearly-tax-communication.md
         - name: Payment traceability
@@ -2958,6 +2978,20 @@
           href: localizations/emea-nor-nets-import-format.md
         - name: VAT statement
           href: localizations/emea-nor-sales-tax-payment-report.md
+        - name: VAT return with direct submission to Altinn
+          items: 
+          - name: Overview of VAT return with direct submission to Altinn
+            href: localizations/emea-nor-vat-return.md
+          - name: Register an integration point in ID-porten web portal 
+            href: localizations/emea-nor-vat-return-integration-point.md
+          - name: Prepare your environment to interoperate with ID-porten and Altinn web services 
+            href: localizations/emea-nor-vat-return-setup.md
+          - name: Checklist for Electronic messages setup for VAT return 
+            href: localizations/emea-nor-vat-return-checklist.md
+          - name: Authorize your Finance environment to interoperate with ID-Porten and Altinn web services 
+            href: localizations/emea-nor-vat-return-authorization.md
+          - name: Submit a VAT return to Altinn web service
+            href: localizations/emea-nor-vat-return-submission.md
         - name: Standard Audit File for Tax (SAF-T) for Norway
           href: localizations/emea-nor-satndard-audit-file-for-tax.md
         - name: Customer electronic invoices in Norway
@@ -3394,7 +3428,7 @@
             href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
           - name: Test interoperation with the MTD VAT sandbox
             href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-          - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
+          - name: Authorize your Finance environment to interoperate with HMRC's MTD web service
             href: localizations/emea-gbr-mtd-vat-integration-authorization.md
           - name: Submit a VAT return to HMRC's MTD web service
             href: localizations/emea-gbr-mtd-vat-integration-submission.md
@@ -3825,6 +3859,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
             - name: Today
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
+            - name: WeekNum
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
           - name: List 
             items: 
             - name: List functions

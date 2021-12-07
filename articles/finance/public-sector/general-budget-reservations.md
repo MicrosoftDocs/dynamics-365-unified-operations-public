@@ -30,8 +30,6 @@ ms.dyn365.ops.version: 8.1
 # General budget reservations
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 A *general budget reservation* is a document that is sometimes also referred to as a *commitment*. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. Typically, these reservations are made before any vendors have been selected for the purchase. By using general budget reservations, an organization can explicitly track planned expenditures for management and reporting purposes. Each purchase requisition, purchase order, or vendor invoice that is generated can be associated with at least one general budget reservation.
 

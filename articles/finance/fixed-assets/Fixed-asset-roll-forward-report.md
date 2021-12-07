@@ -3,7 +3,7 @@
 
 title: Fixed assets roll forward report
 description: This topic explains how to use the Fixed assets roll forward report.
-author: saraschi2
+author: moaamer
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 

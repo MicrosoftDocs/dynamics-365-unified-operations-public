@@ -4,7 +4,7 @@
 title: Fixed asset depreciation
 description: This topic provides an overview of depreciation in Fixed assets.
 author: moaamer
-ms.date: 10/30/2017
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,10 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 # Fixed asset depreciation
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic provides an overview of depreciation in Fixed assets.
 
 Depreciation is a periodic transaction that typically reduces the value of the fixed asset on the balance sheet, and is charged as an expenditure to a profit and loss account. Therefore, a main account is typically used to credit the periodic depreciation on the balance sheet. An offset account is an account in the profit and loss part of the chart of accounts.
+
+As of version 10.0.24, the **Calculate positive depreciation** asset book configuration option on the **Books** page enables depreciation to debit a fixed asset that is acquired with negative book value (credit).
 
 ## Depreciation adjustment
 Usually, only a correction to a posted depreciation transaction is posted as a depreciation adjustment. Therefore, both the main account and the offset account are set up just like the accounts for depreciation. A depreciation adjustment can be either a positive amount or a negative amount, but the functionality of the main account (as a balance sheet account) and the functionality of the offset account (usually as a profit and loss account) remain the same.

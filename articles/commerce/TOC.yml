@@ -92,7 +92,9 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
-          - name: Commerce 10.0.23
+          - name: Commerce 10.0.24 (February 2022)
+            href: get-started/whats-new-commerce-10-0-24.md 
+          - name: Commerce 10.0.23 (January 2022)
             href: get-started/whats-new-commerce-10-0-23.md          
           - name: Commerce 10.0.22 (November 2021)
             href: get-started/whats-new-commerce-10-0-22.md
@@ -544,6 +546,8 @@
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
+          - name: Multiple available payment methods for in-store pickup
+            href: dev-itpro/multiple-payments-pickup.md
           - name: Omni-channel Commerce order payments
             href: dev-itpro/commerce-payments.md
           - name: Archive credit card transaction data
@@ -1330,6 +1334,8 @@
           href: localizations/latam-bra-nfce-contingency-mode.md          
         - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
           href: localizations/latam-bra-retail-statements.md
+        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil 
+          href: localizations/latam-bra-cf-e-sat.md       
         - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil 
           href: localizations/latam-bra-adyen.md          
       - name: Eastern Europe
@@ -1378,7 +1384,7 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Support for upgrade and N-1 for India
           href: localizations/apac-ind-n-1-for-india.md
-        - name: Generate QR codes and print them on receipts
+        - name: Generate QR codes and print them on receipts for India
           href: localizations/ind-generate-qr-code-print-receipt.md
       - name: Italy
         items:
@@ -1616,6 +1622,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
             - name: Today
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
+            - name: WeekNum
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
           - name: List 
             items: 
             - name: List functions
@@ -2538,6 +2546,8 @@
             href: e-commerce-extensibility/sdk-faq.md
           - name: Debugging best practices for Dynamics 365 Commerce development
             href: e-commerce-extensibility/debugging-best-practices.md
+          - name: Test e-commerce site pages for memory leaks
+            href: e-commerce-extensibility/memory-leak-detection.md
       - name: Retail SDK
         items:
         - name: Migrate to the Commerce SDK
