@@ -27,7 +27,6 @@ ms.dyn365.ops.version: 10.0.14
 # Customer management in stores
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
 
