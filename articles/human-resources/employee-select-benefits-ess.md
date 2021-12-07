@@ -64,7 +64,7 @@ the **Checked Out** option will be selected.
 > To complete enrollment, the benefits administrator must select **Confirm** for each selected employee benefit. Confirmation can be 
 > completed in the **Worker benefits plan** or the **Worker benefit plans bulk update** pages.
 
-![Benefits plan](.media/image1.png)
+![Benefits plan](.media/benefits.png)
 
 It is not required for an employee to select **Benefits using self-service**. Benefits can be selected on behalf of the employee in the **Worker benefits plan** or 
 the **Worker benefit plans bulk update** pages. The benefits must be confirmed by the benefit administrator for the employee to be enrolled in the benefit.
