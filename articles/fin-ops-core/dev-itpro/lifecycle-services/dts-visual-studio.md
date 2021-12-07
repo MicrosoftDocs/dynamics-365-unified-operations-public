@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.13
 # Dynamics 365 Translation Service Visual Studio extension (Private Preview)
 [!include[banner](../includes/banner.md)]
 
-The Dynamics 365 Translation Service (DTS) extension for Microsoft Visual Studio lets developers perform actions in Microsoft Dynamics 365 Translation Service, directly from their Visual Studio IDE. For example, you can translate user interface files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview).
+The Dynamics 365 Translation Service (DTS) extension for Microsoft Visual Studio lets developers perform actions in Microsoft Dynamics 365 Translation Service, directly from their Visual Studio IDE. For example, you can translate user interface files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview).
 
-To use the DTS Visual Studio extension, you must have access to Dynamics Lifecycle Services and be a member of an LCS project. Additionally, the extension is primarily built to support the Microsoft Dynamics 365 Finance and Operations development workflow in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/).
+To use the DTS Visual Studio extension, you must have access to Dynamics Lifecycle Services and be a member of an LCS project. Additionally, the extension is primarily built to support the Microsoft Dynamics 365 Finance and Operations development workflow in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/).
 
 [!NOTE] The DTS extension for Visual Studio is available only as a private preview. Because DTS is currently deployed only in the United States, your data might be processed and stored outside your geopolitical boundary.
 
@@ -96,7 +96,7 @@ If Visual Studio is closed before the results are downloaded, you can manually d
 
 ## Regeneration workflow
 
-We recommend that you review and edit the translations that DTS provides. The XLIFF files will be in the same directory as their corresponding translated resource files.  For more information about how to edit the XLIFF file, see [Translation memory files](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-tm).
+We recommend that you review and edit the translations that DTS provides. The XLIFF files will be in the same directory as their corresponding translated resource files.  For more information about how to edit the XLIFF file, see [Translation memory files](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/use-translation-service-tm).
 
 After you've finished review and editing the XLIFF translation files, you may use the regenerate command to regenerate the translated native format files. You can access the regenerate command from the main ribbon at  `Tools > Regenerate with DTS...` with DTS or by right-clicking a resource file in the solution explorer. 
 Upon running the command, a dialog window will appear allowing you to configure the regeneration request. Select one or more translation memory (.xlf) you modified to regenerate the respective target native file. (Ex: ‘ExampleLabel.es.label.txt.xlf’ will regenerate ‘ExampleLabel.es.label.txt’).
