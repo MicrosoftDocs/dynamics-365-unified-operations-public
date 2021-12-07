@@ -1386,6 +1386,8 @@
           href: localizations/apac-ind-n-1-for-india.md
         - name: Generate QR codes and print them on receipts for India
           href: localizations/ind-generate-qr-code-print-receipt.md
+        - name: Goods and Services Tax (GST) integration for e-commerce sites
+          href: localizations/apac-ind-e-commerce.md
       - name: Italy
         items:
         - name: Fiscal printer integration sample for Italy
