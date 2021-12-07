@@ -3,7 +3,7 @@
 title: Goods and Services Tax (GST) integration for e-commerce sites for India
 description: This topic gives an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 12/03/2021
+ms.date: 12/07/2021
 ms.topic: article
 ms.prod:
 ms.technology:
