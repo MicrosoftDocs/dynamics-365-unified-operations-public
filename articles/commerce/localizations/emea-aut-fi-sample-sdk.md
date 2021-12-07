@@ -1,21 +1,21 @@
 ---
-
 # required metadata
 
 title: Deployment guidelines for the fiscal registration service integration sample for Austria (legacy)
 description: This topic provides guidelines on how to deploy the fiscal integration sample for Austria from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
-author: epopov
+author: EvgenyPopovMBS
 ms.date: 12/07/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
 
 ---
 # Deployment guidelines for the fiscal registration service integration sample for Austria (legacy)
+
+[!include [banner](../includes/banner.md)]
 
 This topic provides guidelines on how to deploy the fiscal registration service integration sample for Austria from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for Austria](emea-aut-fi-sample.md). 
 
