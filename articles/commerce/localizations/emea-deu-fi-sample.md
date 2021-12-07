@@ -2,33 +2,22 @@
 # required metadata
 
 title: Fiscal registration service integration sample for Germany
-description: This topic provides an overview of the fiscal integration sample for Germany.
-author: josaw
+description: This topic provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
+author: EvgenyPopovMBS
 ms.date: 11/12/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-# ms.devlang:
-ms.reviewer: josaw
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Germany
-ms.search.industry: Retail
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-5-29
-ms.dyn365.ops.version: 10.0.12
 
 ---
 # Fiscal registration service integration sample for Germany
 
 [!include[banner](../includes/banner.md)]
 
-## Introduction
+This topic provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 
 To meet local fiscal requirements for cash registers in Germany, the Microsoft Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) solution from [EFSTA](https://www.efsta.eu/de/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
@@ -277,7 +266,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Download configuration files for the fiscal document provider and the fiscal connector:
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
@@ -374,9 +363,9 @@ The following settings are included in the fiscal connector configuration that i
 >
 > Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
-#### Development environment
+#### Set up the development environment
 
-Follow these steps to set up a development environment so that you can test and extend the sample:
+To set up a development environment to test and extend the sample, follow these steps.
 
 1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Open the EFR solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln**, and build it.
@@ -410,9 +399,7 @@ Follow the steps described in [Set up a build pipeline for a fiscal integration 
 The fiscal registration service integration sample for Germany is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md) for more details.
->
-> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md) for more details. Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 ### CRT extension design
 
@@ -420,7 +407,7 @@ The purpose of the extension that is a fiscal document provider is to generate s
 
 #### Request handler
 
-There is one request handler for the document provider, **DocumentProviderEFRFiscalDEU**. This handler is used to generate fiscal documents for the fiscal registration service. It's inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Commerce Headquarters.
+There is one request handler for the document provider, **DocumentProviderEFRFiscalDEU**. This handler is used to generate fiscal documents for the fiscal registration service. It's inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Commerce headquarters.
 
 The connector supports the following requests:
 
@@ -429,7 +416,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleGermany.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from Headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
+The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleGermany.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
 
 ### Hardware station extension design
 
@@ -439,7 +426,7 @@ The Hardware station extension is **HardwareStation.Extension.EFRSample**. It us
 
 #### Request handler
 
-The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service. This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Commerce Headquarters.
+The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service. This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Commerce headquarters.
 
 The connector supports the following requests:
 
@@ -449,6 +436,6 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
