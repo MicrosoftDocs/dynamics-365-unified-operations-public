@@ -4,7 +4,7 @@
 title: Credit management parameters setup
 description: This topic describes the options that you can use to configure Credit management to meet your business's requirements.
 author: JodiChristiansen
-ms.date: 08/03/2020
+ms.date: 12/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -80,6 +80,8 @@ Several credit management statistics are included in the **Customer credit manag
 
 - In Credit management, the customer credit limit is shown in the customer's currency. You must define the exchange rate type for the credit limit in the customer's currency. In the **Credit limit exchange rate type** field, select the type of exchange rate that should be used to convert the primary credit limit to the customer's credit limit.
 - Set the **Allow manual editing of credit limits** option to **No** to prevent users from editing credit limits on the **Customer** page. If this option is set to **No**, changes to a customer's credit limit can be made only by posting credit limit adjustment transactions.
+- Set **Bypass inventory reservations** to Yes to disregard inventory reservations when checking credit management blocking rules. It will check complete line quantities and  enable checkpoint grace periods regardless of inventory reservations quantity.
+- When Credit management is enabled the **Message when exceeding credit limit** is only used to process free text invoices. The messages still display on a sales order but it will not prevent confirmation, picking list, packing slip or invoice posting. Use the Credit management blocking rules and checkpoints when customers may be over their credit limit.
 
 ### Number sequences and shared number sequence parameters
 
