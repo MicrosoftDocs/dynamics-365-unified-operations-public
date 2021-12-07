@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.13
 
 The Dynamics 365 Translation Service (DTS) extension for Microsoft Visual Studio lets developers perform actions in Microsoft Dynamics 365 Translation Service, directly from their Visual Studio IDE. For example, you can translate user interface files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/translation-service-overview).
 
-To use the DTS Visual Studio extension, you must have access to Dynamics Lifecycle Services and be a member of an LCS project. Additionally, the extension is primarily built to support the Microsoft Dynamics 365 Finance and Operations development workflow in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/).
+To use the DTS Visual Studio extension, you must have access to Dynamics Lifecycle Services. Additionally, the extension is primarily built to support the Microsoft Dynamics 365 Finance and Operations development workflow in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/).
 
 >[!NOTE]
 >The DTS extension for Visual Studio is available only as a private preview. Because DTS is currently deployed only in the United States, your data might be processed and stored outside your geopolitical boundary.
@@ -81,10 +81,10 @@ This will open the label file wizard, allowing you to create new label files for
 
 Now you are ready to create a new translation request. You can access the translation command from the main ribbon at `Tools > Translate with DTS...` with DTS or by right-clicking a resource file in the solution explorer. Upon running the command, a dialog window will appear, allowing you to configure the new translation request.
 
-Fill in each field, using the table above for guidance. After you have configured the request, use the submit button to send the request to DTS. Shortly after, you'll see the status of the request from the output window. Upon completion, translation memory files and translated resource files will be downloaded. The output files  will be placed in the same directory as their corresponding target resource files.
+Fill in each field, using the table above for guidance. After you have configured the request, use the submit button to send the request to DTS. Shortly after, you'll see the status of the request from the output window. Upon completion, translation memory files and translated resource files will be downloaded. The output files will be placed in the appropriate language subfolder for the module.
 ![DTS extension output window](./media/dts-vs-outputwindow.png)
 
-If Visual Studio is closed before the results are downloaded, you can manually download them using the download pending requests menu item found at `Tools > Download Translation Requests` . 
+If Visual Studio is closed before the results are downloaded, you can manually download them using the download pending requests menu item found at `Tools > Download Translation Request Results` . 
 
 
 ## Regenerate with DTS
