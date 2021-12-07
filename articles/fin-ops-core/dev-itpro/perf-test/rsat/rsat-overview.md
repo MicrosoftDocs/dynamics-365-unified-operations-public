@@ -1,6 +1,6 @@
 ---
-title: Regression suite automation tool
-description: The Regression suite automation tool lets you record business tasks using the task recorder and convert them into automated tests without writing code.
+title: Regression suite automation tool (RSAT)
+description: The Regression suite automation tool (RSAT) lets you record business tasks using the task recorder and convert them into automated tests without writing code.
 author: FrankDahl
 ms.date: 12/07/2021
 ms.topic: article
@@ -22,7 +22,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Regression Suite Automation Tool
+# Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -30,20 +30,19 @@ The Regression suite automation tool (RSAT) significantly reduces the time and c
 
 RSAT is fully integrated with Microsoft Azure DevOps for test execution, reporting, and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
 
-RSAT usage is described in these topics:
+In addition to this topic, RSAT usage is described in these topics:
 
-+ [Regression Suite Automation Tool (this topic)](rsat-overview.md)
-+ [Regression Suite Automation Tool installation and configuration](rsat-install-configure.md)
-+ [Run Regression Suite Automation Tool test cases](rsat-run.md)
-+ [Run Regression suite automation tool with parallel execution](rsat-parallel-execution.md)
-+ [Maintain test cases within Regression suite automation tool](rsat-maintain-test-cases.md)
++ [Regression suite automation tool (RSAT) installation and configuration](rsat-install-configure.md)
++ [Run Regression suite automation tool (RSAT) test cases](rsat-run.md)
++ [Run Regression suite automation tool (RSAT) with parallel execution](rsat-parallel-execution.md)
++ [Maintain test cases within Regression suite automation tool (RSAT)](rsat-maintain-test-cases.md)
 + [Validate expected values](rsat-validate-expected.md)
 + [Chain test cases](rsat-chain-test-cases.md)
 + [Derived test cases](rsat-derived-test-cases.md)
 + [Configure non-administrator users to use RSAT](rsat-configure-nonadmin.md)
 + [Upgrade the parameter files](rsat-upgrade-parameter-files.md)
-+ [Regression Suite Automation Tool best practices](rsat-best-practices.md)
-+ [Troubleshoot the Regression Suite Automation Tool](rsat-troubleshooting.md)
++ [Regression suite automation tool (RSAT) best practices](rsat-best-practices.md)
++ [Troubleshoot the Regression suite automation tool (RSAT)](rsat-troubleshooting.md)
 
 ## Getting started videos
 
@@ -97,7 +96,7 @@ You must name the developer recording file **Recording.xml** before attaching it
 
 ### Business cycle (business process) testing
 
-The Regression suite automation tool is intended to be used for business cycle tests and scenario tests (multiple component tests) that usually occur at the end of the development lifecycle. This is also referred to as *user acceptance testing*. Business cycle testing consists of a smaller number of test cases than component or unit testing. This is illustrated in the following graphic.
+RSAT is intended to be used for business cycle tests and scenario tests (multiple component tests) that usually occur at the end of the development lifecycle. This is also referred to as *user acceptance testing*. Business cycle testing consists of a smaller number of test cases than component or unit testing. This is illustrated in the following graphic.
 
 ![Unit tests, component tests, multiple component tests, business cycle tests.](media/business-cycle.png)
 
