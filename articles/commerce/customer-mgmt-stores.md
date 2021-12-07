@@ -49,9 +49,9 @@ Sales associates can capture multiple addresses for a customer. The customer's n
 
 ## Additional resources
 
-[Synchronous and asynchronous customer](/synchronous-and-asynchronous-customers.md)
+[Asynchronous customer creation mode](async-customer-mode.md)
 
-[Synchronize asynchronously created customers](/synchronize-asynchronous-customer.md)
+[Convert asynchronous customers to synchronous customers](convert-async-to-sync.md)
 
 [Customer attributes](dev-itpro/customer-attributes.md)
 
