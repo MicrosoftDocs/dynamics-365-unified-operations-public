@@ -3,27 +3,16 @@
 
 title: Customer management in asynchronous mode
 description: This topic explains how to enable customer management capabilities in asynchronous mode at the point of sale (POS) or e-commerce channel in Microsoft Dynamics 365 Commerce.
-author: [gvrmohanreddy]
-manager: jeffbl
+author: gvrmohanreddy
 ms.date: 11/24/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-commerce
-ms.technology: 
-# optional metadata
-# ms.search.form:  
-#ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.scope: Retail, Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.dyn365.ops.version: 10.0.24
 ---
 
 # Sync customers and Async customers
