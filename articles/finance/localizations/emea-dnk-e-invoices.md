@@ -39,10 +39,10 @@ The primary address of the legal entity must be in Denmark.
 
 In the **Electronic reporting** workspace, import the following Electronic reporting (ER) formats from the repository:
 
-- OIOUBL Sales invoice
-- OIOUBL Project invoice
-- OIOUBL Sales credit note
-- OIOUBL Project credit note
+- OIOUBL Sales invoice (DK)
+- OIOUBL Project invoice (DK)
+- OIOUBL Sales credit note (DK)
+- OIOUBL Project credit note (DK)
 
 > [!NOTE]
 > These formats are based on the **Invoice model** configuration and use the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
@@ -58,12 +58,10 @@ In the **Electronic reporting** workspace,
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents:
 
-    - **Sales and Free text invoice:** OIOUBL Sales invoice
-    - **Sales and Free text credit note:** OIOUBL Sales credit note
-    - **Project invoice:** OIOUBL Project invoice
-    - **Project credit note:** OIOUBL Project credit note
-
-![Formats for electronic documents.](media/emea-nor-ger-configs.jpg)
+    - **Sales and Free text invoice:** OIOUBL Sales invoice (DK)
+    - **Sales and Free text credit note:** OIOUBL Sales credit note (DK)
+    - **Project invoice:** OIOUBL Project invoice (DK)
+    - **Project credit note:** OIOUBL Project credit note (DK)
 
 ## Configure parameters
 
@@ -71,7 +69,8 @@ In the **Electronic reporting** workspace,
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's VAT number.
-3. On the **Bank account information** FastTab, in the **Routing number** field and in the **FI-Creditor ID** field, enter company's additional identification numbers.
+3. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's registration number.
+4. In the **FI-Creditor ID** field, the company's identification number if **FIK** payments planned to be used.
 
 ### Configure methods of payment
 
