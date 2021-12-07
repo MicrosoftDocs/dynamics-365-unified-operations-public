@@ -1,33 +1,25 @@
 ---
-
 # required metadata
 
 title: Deployment guidelines for the control unit integration sample for Sweden (legacy)
 description: This topic provides guidelines on how to deploy the control unit integration sample for Sweden from the Retail SDK
-author: josaw
-ms.date: 11/15/2021
+author: EvgenyPopovMBS
+ms.date: 12/07/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang:
-ms.reviewer: josaw
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Sweden
-ms.search.industry: Retail
-ms.author: josaw
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.dyn365.ops.version: 10.0.1
 
 ---
 # Deployment guidelines for the control unit integration sample for Sweden (legacy)
 
-This topic provides guidelines on how to deploy the control unit integration sample for Sweden from the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Control unit integration sample for Sweden](emea-swe-fi-sample.md). The fiscal integration sample for Sweden is part of the Retail SDK. For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+[!include [banner](../includes/banner.md)]
+
+This topic provides guidelines on how to deploy the control unit integration sample for Sweden from the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Control unit integration sample for Sweden](emea-swe-fi-sample.md). 
+
+The fiscal integration sample for Sweden is part of the Retail SDK. For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the Commerce runtime (CRT), Hardware station, and point of sale (POS). To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system such as Azure DevOps where no files have been changed yet.
 
 ## Development environment
 
