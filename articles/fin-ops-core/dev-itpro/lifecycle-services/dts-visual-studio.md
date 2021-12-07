@@ -34,7 +34,8 @@ The Dynamics 365 Translation Service (DTS) extension for Microsoft Visual Studio
 
 To use the DTS Visual Studio extension, you must have access to Dynamics Lifecycle Services and be a member of an LCS project. Additionally, the extension is primarily built to support the Microsoft Dynamics 365 Finance and Operations development workflow in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/).
 
-[!NOTE] The DTS extension for Visual Studio is available only as a private preview. Because DTS is currently deployed only in the United States, your data might be processed and stored outside your geopolitical boundary.
+>[!NOTE]
+>The DTS extension for Visual Studio is available only as a private preview. Because DTS is currently deployed only in the United States, your data might be processed and stored outside your geopolitical boundary.
 
 ## Installing the Extension
 Before you can download the DTS Visual Studio extension, you must first request access to the private preview. Once you've been granted access, you can download the Visual Studio extension from the Visual Studio Marketplace.
