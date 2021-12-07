@@ -57,9 +57,9 @@ Whenever the POS goes offline, the system automatically creates the customers as
 
 ## Additional resources
 
-[Customer management in stores](/customer-mgmt-stores.md)
+[Customer management in stores](customer-mgmt-stores.md)
 
-[Synchronize asynchronously created customers](/synchronize-asynchronous-customer.md)
+[Convert asynchronous customers to synchronous customers](convert-async-to-sync.md)
 
 [Customer attributes](dev-itpro/customer-attributes.md)
 
