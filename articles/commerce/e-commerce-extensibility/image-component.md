@@ -34,9 +34,8 @@ This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK *
 ## Image states
 There are 4 image states available for each image.
 1. Loading placeholder.
-2. Thumbnail image (low resolution image).
-3. Main image (full resolution image).
-4. Empty image placeholder.
+2. Main image (full resolution image).
+3. Empty image placeholder.
 
 ### Loading Placeholder
 Loading placeholder is shown to the user while the main image is loading. The placeholder is represented as a single div element with the corresponding class msc-loading_image. Using the class name you can specify the background image for the html element. 
@@ -48,13 +47,6 @@ This component is available for single usage as LoadingPlaceholderImage in core-
 The fabrikam theme, contains an svg placeholder image that looks like the following:
 
 ![placeholder image](media/image-component-1.png)
-
-### Thumbnail image
-Thumbnails are low resolution images with small dimensions (width/height). Thumbnails are used as intermediate images after loading the placeholder and before the main image loads. This helps to speed up image downloading as thumbnail images are much smaller thus they are much faster to be downloaded and rendered on the page. The advantage of the thumbnail images is for perceived performance, some users may not need high resolution image, because thumbnails can already give some information about the main image. Having very small image sizes (~10 times compression), thumbnails will be downloaded much faster without a noticable performance degradation and can improve perceived performance.
-
-Thumbnails are standard image elements which are marked with **msc-thumbnail_image** class. Thumbnails do not use image settings specified for the original image (although the compressed size is calculated based on the image settings for original image). Since thumbnails are very compressed, they may loose some image information or produce artifacts. In order to hide these artifacts, it is recommended to apply a blur effect to the image.
-
-This component is available for single usage as ThumbnailImage in core-internal package.
 
 ### Main image
 Main image is the original / end image which is displayed to the user once the downloading has finished.
