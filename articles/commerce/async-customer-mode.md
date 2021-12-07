@@ -4,7 +4,7 @@
 title: Asynchronous customer creation mode
 description: This topic describes the asynchronous customer mode in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 11/24/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -46,7 +46,7 @@ As of the Commerce version 10.0.24 release, you can enable the **Enable enhanced
 
 As of the Commerce version 10.0.22 release, you can enable **Enable the asynchronous creation for customer addresses** feature that in the **Feature management** workspace so that newly created customer addresses can be saved asynchronously for both sync customers and async customers. 
 
-After enabling the features meantioned above, you must schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job so that any async customers are converted to sync customers in Commerce headquarters.
+After enabling the features mentioned above, you must schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job so that any async customers are converted to sync customers in Commerce headquarters.
 
 ### Customer creation in POS offline mode
 
