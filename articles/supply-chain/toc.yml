@@ -3573,6 +3573,8 @@
           href: troubleshooting/inventory/while-splitting-the.md
       - name: Master planning
         items:
+        - name: The system can't find a planned order when operating on multiple orders
+          href: troubleshooting/planning/planned-order-not-exist.md
         - name: BOM explosion behaves differently for firmed and estimated production orders
           href: troubleshooting/planning/bom-explosion-works-differently.md
         - name: The delay value isn't updated when you reschedule a planned order
