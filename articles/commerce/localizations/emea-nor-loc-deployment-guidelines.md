@@ -2,26 +2,15 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for Norway (legacy)
-description: This topic is a deployment guide for the Commerce localization for Norway.
-author: AlexChern0v
-ms.date: 12/02/2021
+description: This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for Norway.
+author: EvgenyPopovMBS
+ms.date: 12/07/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Norway
-ms.search.industry: Retail
-ms.author: josaw
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.dyn365.ops.version: 7.3.2
 
 ---
 # Deployment guidelines for cash registers for Norway (legacy)
