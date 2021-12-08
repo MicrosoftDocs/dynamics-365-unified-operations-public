@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-For compliance with European Union Directive 2014/55/EU, the Denmark-specific **OIOUBL** format for electronic invoices has been implemented. This topic provides information about how to configure and issue customer electronic invoices in Denmark.
+For compliance with European Union Directive 2014/55/EU, the Denmark-specific **[OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html)** format for electronic invoices has been implemented. This topic provides information about how to configure and issue customer electronic invoices in Denmark.
 
 ## Prerequisites
 
@@ -49,10 +49,6 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 
 For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-### Application specific parameters configuration
-
-In the **Electronic reporting** workspace,
-
 ### Reference the imported ER format configurations
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
@@ -70,9 +66,11 @@ In the **Electronic reporting** workspace,
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's VAT number.
 3. On the **Bank account information** FastTab, in the **Routing number** field, enter the company's registration number.
-4. In the **FI-Creditor ID** field, the company's identification number if **FIK** payments planned to be used.
+4. In the **FI-Creditor ID** field, enter the creditor's identification number if **FIK** payments planned to be used.
 
 ### Configure methods of payment
+
+[OIOUBL Payment Means Codes](http://www.oioubl.info/codelists/en/urn_oioubl_codelist_paymentmeanscode-1.1.html)
 
 1. Go to **Accounts receivable** \> **Setup** \> **Payments setup** \> **Methods of payment**.
 2. Create a new or select an existing method of payment to configure.
@@ -102,6 +100,8 @@ In the **Electronic reporting** workspace,
 ![Units of measure configuration.](media/emea-nor-ger-units.jpg)
 
 ### Sales tax codes transformation
+### Application specific parameters configuration
+In the **Electronic reporting** workspace,
 
 When you generate electronic invoices, the sales tax code rates are analyzed and transformed into [UNCL5305-compliant categories](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/). The following logic is used:
 
