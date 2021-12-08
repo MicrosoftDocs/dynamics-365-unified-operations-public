@@ -16,6 +16,7 @@ ms.search.validFrom: 2019-3-1
 # Deployment guidelines for the control unit integration sample for Sweden (legacy)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic provides guidelines on how to deploy the control unit integration sample for Sweden from the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Control unit integration sample for Sweden](emea-swe-fi-sample.md). 
 
