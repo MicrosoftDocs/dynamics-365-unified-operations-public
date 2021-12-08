@@ -40,11 +40,16 @@ When attempting to post a statement the process can fail due to inconsistent dat
 
 If inconsistent transactions are picked up by the statement posting process, inconsistent sales invoices and payment journals are created and the statement posting process will fail. The **Validate store transactions** process prevents such issues by ensuring that only transactions that pass our transaction validation rules are passed to the transaction statement calculation process.
 
-The following chart illustrates the posting processes including the Validate store transactions process.
+The following chart illustrates the posting processes including the **Validate store transactions** process.
 
 ![Statement posting process with transaction consistency checker.](./media/valid-checker-statement-posting-flow.png "Statement posting process with retail transaction consistency checker")
 
-The **Validate store transactions** batch process checks the consistency of the commerce transaction tables for the following scenarios.
+## Store transaction validation rules
+
+The **Validate store transactions** batch process checks the consistency of the commerce transaction tables based on the following validation rules.
+
+### Transaction header validation rules
+Rules and validations are checked against the header of retail transactions in advance of the transactions being allowed through to statement posting.
 
 - **Customer account** – Validates that the customer account in the transaction tables exists in the HQ customer master.
 - **Line count** – Validates that the number of lines, as captured on the transaction header table, matches the number of lines in the sales transaction tables.
