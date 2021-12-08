@@ -90,22 +90,12 @@ To configure methods of payment in the system:
     > [!NOTE]
     > The company bank account must already be set up at **Cash and bank management** \> **Bank accounts** \> **Bank accounts**.
 
-### Configure customer parameters
-
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
-3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
-4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
-5. EAN
-
-![Customer parameters.](media/emea-nor-ger-customer.jpg)
-
 ### Units of measure configuration
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external code that should be used as the units of measure code for international trade. This code is recommended by the [United Nations Economic Commission for Europe (UN/ECE)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
+4. In **Value** section, in **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
 
 ![Units of measure configuration.](media/emea-nor-ger-units.jpg)
 
@@ -117,6 +107,16 @@ When you generate electronic invoices, the sales tax code rates are analyzed and
 
 - For all non-zero tax rates, the **S** category is used.
 - For all zero tax rates, either the **E** category or the **Z** category is used, depending on the reporting code that is configured for tax-free sales.
+
+### Configure customer parameters
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
+2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
+3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
+4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
+5. EAN
+
+![Customer parameters.](media/emea-nor-ger-customer.jpg)
 
 ### Customer requisition
 
