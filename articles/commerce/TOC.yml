@@ -2377,7 +2377,31 @@
       - name: Date/time data and time zones
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
     - name: Developer
-      items:        
+      items:   
+      - name: Commerce Developer Guide
+        href: developer/commerce-dev-guide.md
+      - name: Commerce SDK
+        items:
+        - name: Getting Started
+          items: 
+          - name: Download Retail SDK samples and reference packages from GitHub and NuGet
+            href: dev-itpro/retail-sdk/sdk-github.md
+          - name: Set up a local development environment
+            href: dev-itpro/setup-local-dev-env.md
+          - name: Migrate to the Commerce SDK
+            href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+          - name: Retail SDK FAQ
+            href: dev-itpro/retail-sdk/sdk-faq.md
+      - name: Headless Commerce
+        items:
+        - name: Headless Commerce Developer Guide
+          href: headless-commerce-dev-guide.md
+        - name: Overview
+          href: developer/headless-commerce-overview.md
+      - name: Store Commerce
+        items:
+        - name: Store Commerce Developer Guide
+          href: st
     - name: Extensibility
       items: 
       - name: Commerce development and extensibility
