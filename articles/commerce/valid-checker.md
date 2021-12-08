@@ -3,8 +3,8 @@
 
 title: Retail transaction consistency checker
 description: This topic describes the transaction consistency checker functionality in Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/07/2020
+author: analpert
+ms.date: 12/09/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -26,21 +26,21 @@ ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10.0
 
 ---
-# Retail transaction consistency checker
+# Validate store transactions for statement calculation
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the transaction consistency checker functionality in Microsoft Dynamics 365 Commerce. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
+This topic describes the store transaction validation functionality in Microsoft Dynamics 365 Commerce. The validation process identifies and marks transactions that will cause posting errors before they are picked up by the statement posting process.
 
-When a statement is posted, posting can fail due to inconsistent data in the commerce transaction tables. The data issue may be caused by unforeseen issues in the point of sale (POS) application, or if transactions were incorrectly imported from third-party POS systems. Examples of how these inconsistencies may appear include: 
+When attempting to post a statement the process can fail due to inconsistent data in the commerce transaction tables. Examples of how these inconsistencies may appear include:
 
 - The transaction total on the header table does not match the transaction total on the lines.
-- The line count on the header table does not match with the number of lines in the transaction table.
+- The number of items specified on the header table does not match with the number of items in the transaction table.
 - Taxes on the header table do not match the tax amount on the lines. 
 
-When inconsistent transactions are picked up by the statement posting process, inconsistent sales invoices and payment journals are created, and the entire statement posting process fails as a result. Recovering the statements from such a state involves complex data fixes across multiple transaction tables. The transaction consistency checker prevents such issues.
+If inconsistent transactions are picked up by the statement posting process, inconsistent sales invoices and payment journals are created and the statement posting process will fail. The **Validate store transactions** process prevents such issues by ensuring that only transactions that pass our transaction validation rules are passed to the transaction statement calculation process.
 
-The following chart illustrates the posting process with the transaction consistency checker.
+The following chart illustrates the posting processes including the Validate store transactions process.
 
 ![Statement posting process with transaction consistency checker.](./media/validchecker.png "Statement posting process with retail transaction consistency checker")
 
