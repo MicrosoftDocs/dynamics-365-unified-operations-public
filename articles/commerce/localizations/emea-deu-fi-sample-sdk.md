@@ -16,6 +16,7 @@ ms.search.validFrom: 2019-3-1
 # Deployment guidelines for the fiscal registration service integration sample for Germany (legacy)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic provides guidelines on how to deploy the fiscal registration service integration sample for Germany from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for Germany](emea-deu-fi-sample.md). 
 
