@@ -16,6 +16,7 @@ ms.search.validFrom: 2019-10-08
 # Control unit integration sample for Sweden
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic provides an overview of the fiscal integration sample for Poland in Microsoft Dynamics 365 Commerce.
 
