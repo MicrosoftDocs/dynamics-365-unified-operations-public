@@ -97,7 +97,6 @@ To configure methods of payment in the system:
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
 4. In **Value** section, in **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
 
-![Units of measure configuration.](media/emea-nor-ger-units.jpg)
 
 ### Sales tax codes transformation
 ### Application specific parameters configuration
@@ -114,9 +113,11 @@ When you generate electronic invoices, the sales tax code rates are analyzed and
 2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
 3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
 4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
-5. EAN
+5. In the **EAN** field, enter the customer's identification number which will be used as **Endpoint ID** in the output XML file of the electronic invoice.
+6. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered as buyer's contact.
+    > [!NOTE]
+    > Available contact persons must be preliminary defined for this customer.
 
-![Customer parameters.](media/emea-nor-ger-customer.jpg)
 
 ### Customer requisition
 
