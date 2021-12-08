@@ -4,7 +4,7 @@ description: You get a 'Planned order does not exist' error When operating on mu
 author: t-benebo
 ms.date: 12/07/2021
 ms.topic: troubleshooting
-ms.search.form: 
+ms.search.form: ReqTransPo, ReqTransPoMarkChangeType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,9 @@ ms.dyn365.ops.version: 10.0.24
 
 ## Symptoms
 
-You get a "Planned order does not exist" error when attempting to perform an operation on multiple planned orders at the same time where at least two orders belong to the same item ID (for example, on firm or change order type).
+You get the following error when attempting to perform an operation on multiple planned orders at the same time where at least two orders belong to the same item ID (for example, on firm or change order type).
+
+> Planned order %1 does not exist.
 
 ## Cause
 
