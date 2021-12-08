@@ -102,7 +102,14 @@ To configure methods of payment in the system:
 ### Application specific parameters configuration
 In the **Electronic reporting** workspace,
 
-When you generate electronic invoices, the sales tax code rates are analyzed and transformed into [UNCL5305-compliant categories](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/). The following logic is used:
+When you generate electronic invoices, the sales tax code rates are analyzed and transformed into 
+
+[OIOUBL TaxSchemeID](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). 
+
+[OIOUBL TaxCategoryID](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
+
+
+The following logic is used:
 
 - For all non-zero tax rates, the **S** category is used.
 - For all zero tax rates, either the **E** category or the **Z** category is used, depending on the reporting code that is configured for tax-free sales.
