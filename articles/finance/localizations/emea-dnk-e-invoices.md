@@ -70,7 +70,17 @@ For more information about how to import ER configurations, see [Download Electr
 
 ### Configure methods of payment
 
-[OIOUBL Payment Means Codes](http://www.oioubl.info/codelists/en/urn_oioubl_codelist_paymentmeanscode-1.1.html)
+According to OIOUBL standards, the codes of payment methods in the output XML file of electronic invoices must be compliant with the official list of standardized codes: [OIOUBL Payment Means Codes](http://www.oioubl.info/codelists/en/urn_oioubl_codelist_paymentmeanscode-1.1.html).
+The system supports the following predefined codes of payment methods and provides its automatic conversion to the official codes:
+
+| Internal payment method code | Official payment method code|
+|------------------------------|-----------------------------|
+| DK:BANK                      | 42                          |
+| DK:FIK                       | 93                          |
+| DK:GIRO                      | 50                          |
+| All other codes              | 97                          |
+
+To configure methods of payment in the system:
 
 1. Go to **Accounts receivable** \> **Setup** \> **Payments setup** \> **Methods of payment**.
 2. Create a new or select an existing method of payment to configure.
