@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-For compliance with European Union Directive 2014/55/EU, the Denmark-specific **[OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html)** format for electronic invoices has been implemented. This topic provides information about how to configure and issue customer electronic invoices in Denmark.
+This topic provides information about how to configure and issue customer electronic invoices in Denmark using specific **[OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html)** format of electronic invoices.
 
 ## Prerequisites
 
