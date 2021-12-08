@@ -4,7 +4,7 @@
 title: Sales tax applicability and sales tax group determination logic
 description: This topic explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
 author: epodkolz
-ms.date: 09/14/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -87,12 +87,12 @@ The tax codes are calculated based on the intersection of the tax codes that are
 > [!NOTE]
 > If the **Sales tax group** or **Item sales tax group** field is left blank, and the **Override sales tax** option is set to **Yes**, the line won't be sent to the Tax calculation service for processing.
 
-This option is added to the Customer and Vendor master data on the _Invoice and delivery_ FastTab. It is defaulted to the Sales order, Purchase order, Free text invoice header, and further to the line level of the respective document.
+The **Override sales tax** check box is added to the **Customer** and **Vendor** master data on the **Invoice and delivery** FastTab. The check box is also added to the Sales order, Purchase order, Free text invoice header, and to the line level of those documents.
 
 ### Update order lines
 
-An option to bulk update lines if the **Override sales tax** is changed on the header level is added to the **Update order lines** parameters pages for Sales order, Sales quotation, and Purchase order.
-For example, if the option is set to _Prompt_, then, when the **Override sales tax** is changed on the header of the document, the dialog appears and lets the user to select whether the document lines should be updated as well.
+You can bulk update lines if the **Override sales tax** check box is changed on the header level and is added to the **Update order lines** parameters pages for Sales order, Sales quotation, and Purchase order.
+For example, if the option is set to **Prompt**, when the **Override sales tax** is changed on the header of the document, the dialog box opens and you can select whether the document lines should be updated.
 
 > [!NOTE]
 > Header level and line level charges inherit the **Override sales tax** option from the header or line of the document respectively.
