@@ -50,6 +50,7 @@ The **Validate store transactions** batch process checks the consistency of the 
 
 ### Transaction header validation rules
 Rules and validations checked against the header of retail transactions in advance of being passed to statement posting.
+
 | Title             | Description                                                                                        |
 |-------------------|----------------------------------------------------------------------------------------------------|
 | Business date     | Validates the transaction business date is associated to an open fiscal period in the ledger. |
@@ -69,6 +70,7 @@ Rules and validations checked against the header of retail transactions in advan
 
 ### Transaction line validation rules
 Rules and validations checked against the line details of retail transactions in advance of being passed to statement posting.
+
 | Title             | Description                                                                                        |
 |-------------------|----------------------------------------------------------------------------------------------------|
 | Barcode | Validates all item barcodes used in the transaction lines exist in the database. |
