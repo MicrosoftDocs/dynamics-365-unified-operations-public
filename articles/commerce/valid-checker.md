@@ -63,7 +63,7 @@ Rules and validations checked against the header of retail transactions in advan
 | Number of items | Validates that the number of items specified in the transaction header matches the sum of quantities in the transaction lines. |
 | Payment amount | Validates that the payment amount in the transaction header matches the sum of all payment transactions. |
 | Tax exempt calculation | Validates that the sum of the charge line calculated amount and exempted tax amount is equal to the original calculated amount. |
-| Tax included pricing | Validates that the Tax is included in price flag is consistent across the transaction header and the tax transactions. |
+| Tax included pricing | Validates that the **Tax is included in price** flag is consistent across the transaction header and the tax transactions. |
 | Transaction not empty | Validates that the transaction contains lines and that at least one of them is not voided. |
 | Under/over payment | Validates that the difference between the gross amount and the payment amount is not greater than the maximum under/over payment configuration. |
 
@@ -91,7 +91,7 @@ Configure the **Validate store transactions** job located at **Retail and Commer
 
 ## Results of validation process
 
-The results of the **Validate store transactions** batch process can be viewed on each retail store transaction. The Validation status field on the transaction record is set to **Successful**, **Error**, or **None** and the date of the last validation run appears on the **Last validation time** field.
+The results of the **Validate store transactions** batch process can be viewed on each retail store transaction. The **Validation status** field on the transaction record is set to **Successful**, **Error**, or **None** and the date of the last validation run appears on the **Last validation time** field.
 
 | Validation Status | Description                                                                                        |
 |-------------------|----------------------------------------------------------------------------------------------------|
@@ -99,10 +99,15 @@ The results of the **Validate store transactions** batch process can be viewed o
 | Error | An enabled validation rule has identified an error. View additional details by opening the **Validation errors** form. |
 | None | Transaction type does not require validation rules to be applied. |
 
+![Screenshot showing validation status and validation errors form.](./media/valid-checker-validation-status-errors.png "Retail transactions form showing validation status and the validation errors function.")
 
+Only transactions that have a validation status of **Successful** will be pulled into the transactional statements. To view transactions that are in a state of **Error**, review the **Cash and carry validation failures** tile on the **Store financials** workspace.
+
+![Screenshot showing store financials workspace.](./media/valid-checker-cash-carry-validation-failures.png "Store financials workspace tiles.")
+
+For more information on how to resolve the Cash and carry validation failures, please refer to the Edit and audit cash and carry transactions document.
 
 > [!NOTE]
-> Additional validation rules to support more scenarios will be added in a future release.
-
+> Additional validation rules will continue to be added in subsequent releases.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
