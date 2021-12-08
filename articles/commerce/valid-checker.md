@@ -110,4 +110,7 @@ For more information on how to resolve the Cash and carry validation failures, p
 > [!NOTE]
 > Additional validation rules will continue to be added in subsequent releases.
 
+## Additional resources
+[Edit and audit cash and carry and cash management transactions](https://docs.microsoft.com/en-us/dynamics365/commerce/edit-cash-trans)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
