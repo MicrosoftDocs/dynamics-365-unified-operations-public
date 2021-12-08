@@ -42,7 +42,7 @@ If inconsistent transactions are picked up by the statement posting process, inc
 
 The following chart illustrates the posting processes including the Validate store transactions process.
 
-![Statement posting process with transaction consistency checker.](./media/validchecker.png "Statement posting process with retail transaction consistency checker")
+![Statement posting process with transaction consistency checker.](./media/valid-checker-statement-posting-flow.png "Statement posting process with retail transaction consistency checker")
 
 The **Validate store transactions** batch process checks the consistency of the commerce transaction tables for the following scenarios.
 
