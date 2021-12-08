@@ -36,8 +36,8 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Post | [Create one reservation event](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple reservation events](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Get | [Query by using the post method](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the get method](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
 
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
@@ -547,7 +547,7 @@ The following examples shows how to query all products in a specific site and lo
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -564,7 +564,7 @@ Query(Url Parameters):
 Here is a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
