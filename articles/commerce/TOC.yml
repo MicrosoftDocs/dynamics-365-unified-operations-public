@@ -368,8 +368,12 @@
           href: channel-setup-retail.md  
         - name: Configure retail workers 
           href: tasks/worker.md
-        - name: Modern Point of Sale (MPOS) and Cloud POS 
+        - name: Modern Point of Sale (MPOS), Cloud POS, and Store Commerce 
           items:
+          - name: Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
+            href: dev-itpro/store-commerce.md
+          - name: Device management implementation guidance
+            href: implementation-considerations-devices.md
           - name: Choose between MPOS and Cloud POS
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
@@ -426,6 +430,18 @@
               href: set-up-manage-images-retail-mpos.md
             - name: Client images in POS
               href: pos-image.md
+            - name: Open URL in POS
+              href: open-url-in-pos.md
+          - name: Payments 
+            items:
+            - name: Gift Cards
+              items:
+              - name: Support for external gift cards
+                href: dev-itpro/gift-card.md
+          - name: RSAT
+            items:
+            - name: Test recorder and Regression suite automation tool for Cloud POS
+              href: dev-itpro/pos-rsat.md
           - name: Sales associates
             items:
             - name: Track commissions in the POS using sales groups
