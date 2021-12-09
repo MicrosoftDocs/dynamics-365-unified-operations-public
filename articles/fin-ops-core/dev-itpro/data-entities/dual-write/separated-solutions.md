@@ -1,6 +1,6 @@
 ---
-title: Separated Dual-write Application Orchestration Package
-description: Dual-write application orchestration package is no more a single monolithic package. 
+title: Separated Dual-write Application Orchestration package
+description: The Dual-write Application Orchestration package is no longer a single package but has been separated into smaller packages. This topic explains the solutions and maps that each package contains, and its dependency on other packages.
 author: RamaKrishnamoorthy
 ms.date: 11/29/2021
 ms.topic: article
@@ -12,57 +12,46 @@ ms.author: ramasri
 ms.search.validFrom: 2021-11-29
 ---
 
-# Separated Dual-write Application Orchestration Package
+# Separated Dual-write Application Orchestration package
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-So far, dual-write application orchestration package has been a single monolithic package comprising of the following solutions and created an “all” or “nothing” situation for customers.
+Previously, the Dual-write Application Orchestration package was a single package that contained the following solutions:
 
--   CurrencyExchangeRates
+- CurrencyExchangeRates
+- Dynamics365Company
+- Dynamics365FinanceAndOperationsCommon
+- Dynamics365FinanceExtended
+- Dynamics365SupplyChainExtended
+- Dynamics365AssetManagement
+- Dynamics365AssetManagementApp
+- Dynamics365Notes
+- Dynamics365FinanceAndOperationsDualWriteMaps
+- Dynamics365FinanceAndOperationsAnchor
 
--   Dynamics365Company
+Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customer can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations be upgraded.
 
--   Dynamics365FinanceAndOperationsCommon
+![Separated package.](media/separated-package-1.png)
 
--   Dynamics365FinanceExtended
-
--   Dynamics365SupplyChainExtended
-
--   Dynamics365AssetManagement
-
--   Dynamics365AssetManagementApp
-
--   Dynamics365Notes
-
--   Dynamics365FinanceAndOperationsDualWriteMaps
-
--   Dynamics365FinanceAndOperationsAnchor
-
-Now we have split this package into smaller packages which allows to pick and choose the solutions as necessary. Say for example, you may be a supply chain customer and doesn’t need human resources, notes and asset integrations. In such case, you can exclude those solutions from installing. Since the underlying solution names, publisher and map versions remain the same, this is a non-breaking change. Existing installations are upgradable as well.
-
-![separated-package](media/separated-package-1.png)
-
-This page explains the solutions and maps covered in each package and its dependency on the other packages.
-
-
+This topic explains the solutions and maps that each package contains, and its dependency on other packages.
 
 ## Dual-write Application Core
 
-Dual-write Application Core package allows users to install and configure dual-write without any Customer Engagement app. It contains 5 solutions namely:
+The Dual-write Application Core package lets users install and configure dual-write without any customer engagement app. It contains the following five solutions.
 
-| Unique Name                           | Display Name                                              |
-|---------------------------------------|-----------------------------------------------------------|
-| Dynamics365Company                    | Dynamics 365 Company                                      |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common                |
-| CurrencyExchangeRates                 | Currency Exchange Rates                                   |
-| msdyn_DualWriteAppCoreMaps            | Dual-write applications core entity maps                  |
-| msdyn_DualWriteAppCoreAnchor          | Dual-write applications core anchor                       |
+| Unique name                           | Display name                               |
+|---------------------------------------|--------------------------------------------|
+| Dynamics365Company                    | Dynamics 365 Company                       |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations Common |
+| CurrencyExchangeRates                 | Currency Exchange Rates                    |
+| msdyn_DualWriteAppCoreMaps            | Dual-write applications core entity maps   |
+| msdyn_DualWriteAppCoreAnchor          | Dual-write applications core anchor        |
 
-Following are the maps available on this package:
+The following maps are available in this package.
 
-| Finance and Operations          | Customer Engagement                         |
+| Finance and Operations apps     | Customer engagement apps                    |
 |---------------------------------|---------------------------------------------|
 | Operating unit                  | msdyn_internalorganizations                 |
 | Organization hierarchy          | msdyn_internalorganizationhierarchies       |
@@ -77,24 +66,23 @@ Following are the maps available on this package:
 | Currencies                      | transactioncurrencies                       |
 | Mixed reality guides entity     | msmrw_guides                                |
 
-**Dependency Information:** None
+**Dependency information**
 
-
+The Dual-write Application Core package has no dependency on other packages.
 
 ## Dual-write Human Resources
 
+The Dual-write Human Resources package contains the solutions and maps that are required to sync Human Resources data. It contains the following three solutions.
 
-Dual-write Human Resources package contains solutions and maps necessary to sync Dynamics 365 Human Resources data. It contains 3 solutions namely:
+| Unique name                | Display name                             |
+|----------------------------|------------------------------------------|
+| HCMCommon                  | HCM Common                               |
+| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps |
+| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor      |
 
-| Unique Name                | Display Name                                                      |
-|----------------------------|-------------------------------------------------------------------|
-| HCMCommon                  | HCM Common                                                        |
-| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entity maps                          |
-| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources anchor                               |
+The following maps are available in this package.
 
-Following are the maps available on this package:
-
-| Finance and Operations      | Customer Engagement              |
+| Finance and Operations apps | Customer engagement apps         |
 |-----------------------------|----------------------------------|
 | Ethnic origins              | cdm_ethnicorigins                |
 | Compensation job function   | cdm_jobfunctions                 |
@@ -108,24 +96,23 @@ Following are the maps available on this package:
 | Worker                      | cdm_workers                      |
 | Employment per company      | cdm_employments                  |
 
-**Dependency information:** Dual-write Human Resources package depends on Dual-write Application Core package. So you should install Dual-write Application Core package before installing Dual-write Human Resources package.
+**Dependency information**
 
-
+The Dual-write Human Resources package depends on the Dual-write Application Core package. Therefore, you should install the Dual-write Application Core package before you install the Dual-write Human Resources package.
 
 ## Dual-write Supply Chain
 
-Dual-write Supply Chain package contains solutions and maps necessary to sync Dynamics 365 Supply Chain data. It contains 3 solutions namely:
+The Dual-write Supply Chain package contains the solutions and maps that are required to sync Supply Chain Management data. It contains the following three solutions.
 
+| Unique name                                | Display name                                              |
+|--------------------------------------------|-----------------------------------------------------------|
+| Dynamics365SupplyChainExtended             | Dynamics 365 Supply Chain Extended                        |
+| msdyn_Dynamics365SupplyChainExtendedMaps   | Dynamics 365 Supply Chain Management extended entity maps |
+| msdyn_Dynamics365SupplyChainExtendedAnchor | Dynamics 365 Supply Chain Management extended anchor      |
 
-| Unique Name                                | Display Name                                                               |
-|--------------------------------------------|----------------------------------------------------------------------------|
-| Dynamics365SupplyChainExtended             | Dynamics 365 Supply Chain Extended                                         |
-| msdyn_Dynamics365SupplyChainExtendedMaps   | Dynamics 365 Supply Chain Management extended entity maps                  |
-| msdyn_Dynamics365SupplyChainExtendedAnchor | Dynamics 365 Supply Chain Management extended anchor                       |
+The following maps are available in this package.
 
-Following are the maps available on this package:
-
-| Finance and Operations                      | Customer Engagement                           |
+| Finance and Operations apps                 | Customer engagement apps                      |
 |---------------------------------------------|-----------------------------------------------|
 | Units                                       | uoms                                          |
 | CDS sales order headers                     | salesorders                                   |
@@ -182,30 +169,28 @@ Following are the maps available on this package:
 | CDS sales quotation lines                   | quotedetails                                  |
 | CDS sales order lines                       | salesorderdetails                             |
 
-**Dependency information:** Dual-write Supply Chain package depends on following 3 packages. So you should install these before installing Dual-write Supply Chain package.
+**Dependency information**
 
--   Dual-write Application Core package
+The Dual-write Supply Chain package depends on the following three packages. Therefore, you should install these packages before you install the Dual-write Supply Chain package.
 
--   Dual-write Finance package
-
--   Dual-write Human Resources package
-
-
+- Dual-write Application Core package
+- Dual-write Finance package
+- Dual-write Human Resources package
 
 ## Dual-write Finance
 
-Dual-write Finance package contains solutions and maps necessary to sync Dynamics 365 Finance data. It contains 3 solutions namely:
+The Dual-write Finance package contains the solutions and maps that are required to sync Dynamics 365 Finance data. It contains the following four solutions.
 
-| Unique Name                            | Display Name                                                           |
-|----------------------------------------|------------------------------------------------------------------------|
-| Dynamics365FinanceExtended             | Dynamics 365 Finance Extended                                          |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance extended entity maps                              |
-| FieldServiceCommon                     | Field Service Common                                                   |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance extended anchor                                   |
+| Unique name                            | Display name                               |
+|----------------------------------------|-------------------------------------------|
+| Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
+| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance extended entity maps |
+| FieldServiceCommon                     | Field Service Common                      |
+| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance extended anchor      |
 
-Following are the maps available on this package:
+The following maps are available in this package.
 
-| Finance and Operations                  | Customer Engagement             |
+| Finance and Operations apps             | Customer engagement apps        |
 |-----------------------------------------|---------------------------------|
 | Withholding tax groups                  | msdyn_withholdingtaxgroups      |
 | CDS Contacts V2 (Customer)              | contacts                        |
@@ -238,23 +223,22 @@ Following are the maps available on this package:
 | Ledger                                  | msdyn_ledgers                   |
 | Customers V3                            | accounts                        |
 
-**Dependency information:** Dual-write Finance package depends on Dual-write Application Core package. So you should install Dual-write Application Core package before installing Dual-write Finance package.
+**Dependency information**
 
-
-
+The Dual-write Finance package depends on the Dual-write Application Core package. Therefore, you should install the Dual-write Application Core package before you install the Dual-write Finance package.
 
 ## Dual-write Notes
 
-Dual-write Notes package contains solutions and maps necessary to sync notes or annotations data. It contains 4 solutions namely:
+The Dual-write Notes package contains the solutions and maps that are required to sync note or annotation data. It contains the following four solutions.
 
-| Unique Name                  | Display Name                                               |
-|------------------------------|------------------------------------------------------------|
-| Dynamics365Notes             | Dynamics 365 Notes                                         |
-| Dynamics365NotesExtended     | Dynamics 365 notes extended                                |
-| msdyn_Dynamics365NotesMaps   | Dynamics 365 notes entity maps                             |
-| msdyn_Dynamics365NotesAnchor | Dynamics 365 notes anchor                                  |
+| Unique name                  | Display name                   |
+|------------------------------|--------------------------------|
+| Dynamics365Notes             | Dynamics 365 Notes             |
+| Dynamics365NotesExtended     | Dynamics 365 notes extended    |
+| msdyn_Dynamics365NotesMaps   | Dynamics 365 notes entity maps |
+| msdyn_Dynamics365NotesAnchor | Dynamics 365 notes anchor      |
 
-Following are the maps available on this package:
+The following maps are available in this package.
 
 | Finance and Operations                     | Customer Engagement |
 |--------------------------------------------|---------------------|
@@ -263,29 +247,27 @@ Following are the maps available on this package:
 | Vendor document attachments                | annotations         |
 | Purchase order header document attachments | annotations         |
 
-**Dependency information:** Dual-write Notes package depends on the following 2 packages. So you should install these before installing Dual-write Notes package.
+**Dependency information**
 
+The Dual-write Notes package depends on the following two packages. Therefore, you should install these packages before you install the Dual-write Notes package.
 
--   Dual-write Application Core package
-
--   Dual-write Finance package
-
-
+- Dual-write Application Core package
+- Dual-write Finance package
 
 ## Dual-write Asset Management
 
-Dual-write Asset Management package contains solutions and maps necessary to sync assets data from Dynamics 365 Supply Chain data or Dynamics 365 Field Service data. It contains 4 solutions namely:
+The Dual-write Asset Management package contains the solutions and maps that are required to sync asset data from Supply Chain Management or Dynamics 365 Field Service. It contains the following four solutions.
 
-| Unique Name                          | Display Name                                                          |
-|--------------------------------------|-----------------------------------------------------------------------|
-| Dynamics365AssetManagement           | Dynamics 365 Asset Management                                         |
-| Dynamics365AssetManagementApp        | Dynamics365 Asset Management App                                      |
-| msdyn_DualWriteAssetManagementMaps   | Dynamics 365 Asset Management entity maps                             |
-| msdyn_DualWriteAssetManagementAnchor | Dynamics 365 Asset Management anchor                                  |
+| Unique name                          | Display name                              |
+|--------------------------------------|-------------------------------------------|
+| Dynamics365AssetManagement           | Dynamics 365 Asset Management             |
+| Dynamics365AssetManagementApp        | Dynamics365 Asset Management App          |
+| msdyn_DualWriteAssetManagementMaps   | Dynamics 365 Asset Management entity maps |
+| msdyn_DualWriteAssetManagementAnchor | Dynamics 365 Asset Management anchor      |
 
-Following are the maps available on this package:
+The following maps are available in this package.
 
-| Finance and Operations                                | Customer Engagement                     |
+| Finance and Operations apps                           | Customer engagement apps                |
 |-------------------------------------------------------|-----------------------------------------|
 | Asset management warranty                             | msdyn_warranties                        |
 | Asset management models                               | msdyn_models                            |
@@ -299,7 +281,6 @@ Following are the maps available on this package:
 | Asset management asset lifecycle states               | msdyn_assetlifecyclestates              |
 | Asset management asset lifecycle models               | msdyn_assetlifecyclemodels              |
 
-**Dependency information:** Dual-write Asset Management package depends on Dual-write Application Core package. So you should install Dual-write Application Core package before installing Dual-write Asset Management package.
+**Dependency information**
 
-
-
+The Dual-write Asset Management package depends on the Dual-write Application Core package. Therefore, you should install the Dual-write Application Core package before you install the Dual-write Asset Management package.
