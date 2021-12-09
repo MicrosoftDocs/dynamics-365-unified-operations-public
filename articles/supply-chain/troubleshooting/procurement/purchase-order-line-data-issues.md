@@ -32,7 +32,7 @@ When inspecting the lines of a purchase order, you notice one or more of the fol
 
 These issues are usually caused by data corruption or a discrepancy in the remainder quantities for one or more purchase order lines.
 
-To help find the cause, activate this app troubleshooting rule to check for inconsistency between a purchase order line and inventory transactions: [Inventory transaction is not consistent with purchase line - Dynamics Wiki](https://dynamics.wiki/index.php/Inventory_transaction_is_not_consistent_with_purchase_line#How_to_activate_rules) <!-- KFM: This looks like an internal resource. What to we want to tell users about this? Call Microsoft Support and request something we mention here? -->
+To help find the cause, activate this app troubleshooting rule to check for inconsistency between a purchase order line and inventory transactions: [Inventory transaction is not consistent with purchase line - Dynamics Wiki](https://dynamics.wiki/index.php/Inventory_transaction_is_not_consistent_with_purchase_line#How_to_activate_rules) <!-- KFM: This looks like an internal resource. What do we want to tell users about this? Call Microsoft Support and request something we mention here? -->
 
 ## Resolution
 
