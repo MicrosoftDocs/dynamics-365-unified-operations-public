@@ -96,9 +96,9 @@ The following image resizer modes are supported:
 | 6 | facial crop | This mode scales an image from its original dimension to a requested dimension while maintaining the aspect ratio of the original image. If the aspect ratio of the requested dimension is not the same as the aspect ratio of the original image, areas that fall within the boundaries of the requested dimension are clipped and retained. This mode is a variation of the focal crop where the area to crop is determined by a focal region centered on automatically detected faces. The clipped region is centered within an automatically detected collection of faces. |
 | 8 | custom crop | In this mode, the area to crop is determined by a region specified using query parameters. This mode first crops the image to a region specified by query parameters and then scales the cropped image to a requested dimension. Depending on what other settings are specified in the query parameters (such as scaling up enabled, scaling down enabled, and letterboxing enabled), scaling and letterboxing actions may be performed. |
 
-## Sample image component usage
+## Example of Image component usage
 
-The following sample shows how the Image component and the **ImageSettings** class can be used within a module. A **defaultImageSettings** variable is declared that sets the width, height, scaling mode, and background color values if none are provided in site builder, which can occur when debugging in a development environment where no values are provided in the module mocks. 
+The following example shows how the Image component and the **ImageSettings** class can be used within a module. A **defaultImageSettings** variable is declared that sets the width, height, scaling mode, and background color values if none are provided in site builder, which can occur when debugging in a development environment where no values are provided in the module mocks. 
 
 ```typescript
 import * as React from 'react';
@@ -256,8 +256,9 @@ A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that c
 }
 ```
 
-## Mocking image data in a module mock
-The below shows a sample module mock file to set the **imageSettings** mock data.
+## Mock image data in a module mock
+
+The following example shows a module mock file that sets the **imageSettings** mock data.
 
 ```json
 {
@@ -308,7 +309,7 @@ The below shows a sample module mock file to set the **imageSettings** mock data
 
 ## Mock image data in a page mock
 
-The following example shows a sample page mock file that sets the **imageSettings** mock data.
+The following example shows a page mock file that sets the **imageSettings** mock data.
 
 ```json
 {
