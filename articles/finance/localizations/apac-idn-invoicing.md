@@ -4,7 +4,7 @@
 title: Invoicing for Indonesia (ID-00002)
 description: This topic explains how to configure tax invoice numbering so that you can configure and run export sales invoices and import vendor invoices for Indonesia.
 author: v-olgaoskina
-ms.date: 12/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ Microsoft Dynamics 365 Finance includes the following functionality that has bee
 
 ## Prerequisites
 
-Before you can use the invoicing functionality, the following prerequisites must be in place:
+Before you can use the invoicing functionality, the following prerequisites must be met:
 - Enable and configure the following features:
 
     - (Indonesia) Enable generation of tax invoice numbers for invoices
@@ -72,12 +72,12 @@ These numbers have the following structure:
 
 Follow these steps to create invoice numbers for one period at a time for a company that has only one branch.
 
-1. Go to **Organization administration** \> **Number sequences** \> **Number sequences**, and create a number sequence for invoice numbering. The number sequence should consist of two segments, **Constant** and **Alphanumeric**, and it should be continuous.
+1. Go to **Organization administration** > **Number sequences** > **Number sequences**, and create a number sequence for invoice numbering. The number sequence should consist of two segments, **Constant** and **Alphanumeric**, and it should be continuous.
 
     ![Creating a number sequence.](media/apac-idn-number-sequence.png)
 
-2. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**, and create a number sequence group. Then associate it with the number sequence (reference **Tax invoice number**).
-3. Go to **Organization administration** \> **Number sequences** \> **Chronological number sequence groups**, and create a chronological number sequence group for the period  and then associate the new number sequence group with the **Tax invoice number** field.
+2. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**, and create a number sequence group. Then associate it with the number sequence (reference **Tax invoice number**).
+3. Go to **Organization administration** > **Number sequences** > **Chronological number sequence groups**, and create a chronological number sequence group for the period  and then associate the new number sequence group with the **Tax invoice number** field.
 
     ![Creating a chronological number sequence group.](media/apac-idn-chronological-number-sequence-groups.png)
 
@@ -222,8 +222,10 @@ To enable the system to determine which the sales tax code in Finance correspond
 1. In the **Lookups** grid, select the row for **TaxTypeLookup**.
 2. In the **Conditions** grid, on the first line, set the **Lookup result** field to **PPnBM** and the **Sales tax code (TaxCode)** field to the sales tax code that is used for luxury tax in Finance.
 
->[!NOTE] You can set up several sales tax codes for PPnBM and have several lines in **Conditions** for them. 
-4. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered luxury tax by the system.
+>[!NOTE] 
+>You can set up several sales tax codes for PPnBM and have several lines in **Conditions** for them. 
+
+3. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered luxury tax by the system.
 
 ![Setting application-specific parameters for sales tax codes.](media/apac-idn-aplication-specific-parameters-tax-code.png)
 
