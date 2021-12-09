@@ -439,10 +439,14 @@ When you [register an integration point in the ID-porten web portal](emea-nor-va
 
 Internet addresses (URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual URLs on the official Altinn and ID-porten website. 
 
-Follow these steps to set up a URL that is used by the *test* environment in ID-porten.
+Follow these steps to set up a URL that is used in ID-porten.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
-2. In the **Base URL** field, enter `https://oidc-ver2.difi.no/idporten-oidc-provider`.
+2. In the **Base URL** field, enter `https://oidc-ver2.difi.no/idporten-oidc-provider`. 
+
+> [!IMPORTANT]
+> For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+
 3. In the **Authorization URL path** field, enter **/authorize**.
 4. In the **Token URL path** field, enter **/token**.
 5. Copy the full URL of the current page from your browser's Address bar, and paste it into the **Redirect URL** field.
@@ -453,7 +457,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
 2. In the **Base URL** field, enter `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
-3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services.
+3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services to interoperate with *sandbox APIs* provided by Tax Administration of Norway.
 
     | Web service name | Internet address |
     |---|---|
@@ -465,7 +469,16 @@ Follow these steps to set up an internet address that is used by Altinn web serv
     | NO Altinn GET attachments | Leave this field blank. |
     | NO Validate VAT return | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
-> [!IMPORTANT]
-> For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+For *production* interoperation with web services provided by the Tax Administration of Norway, use the following **Internet address**.
+
+    | Web service name | Internet address |
+    |---|---|
+    | NO Altinn GET JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+    | NO Altinn POST JSON       | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+    | NO Altinn POST XML        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+    | NO Altinn PUT JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+    | NO Altinn PUT XML         | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+    | NO Altinn GET attachments | Leave this field blank. |
+    | NO Validate VAT return    | `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
