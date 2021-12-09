@@ -313,6 +313,9 @@ To configure a certificate in AOS, follow these steps.
 
 ### Configure CRT extension components
 
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used with this localization functionality. You must use the previous version of the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). (Microsoft plans to add support for localization functionality to the new independent packaging and extension model in later versions.)
+
 To configure CRT extension components, follow these steps.
 
 1. Find the extension configuration file for CRT.
