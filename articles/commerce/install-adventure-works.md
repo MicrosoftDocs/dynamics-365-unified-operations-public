@@ -36,7 +36,7 @@ This topic describes how to install the Adventure Works theme in Microsoft Dynam
 
 ## Prerequisites
 
-Before you install the Adventure Works theme, you must have a Dynamics 365 Commerce environment (Commerce version 10.0.20 or later) that includes Retail Cloud Scale Unit (RCSU), the Commerce online software development kit (SDK), and the Commerce module library. For information about how to install the Commerce SDK and module library, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md). 
+Before you install the Adventure Works theme, you must have a Dynamics 365 Commerce environment (Commerce version 10.0.20 or later) that includes Retail Cloud Scale Unit (RCSU), the Commerce online software development kit (SDK), and the Commerce module library. For information about how to install the Commerce SDK and module library, see [Set up a development environment](e-commerce-extensibility/setup-dev-environment.md) . 
 
 ## Installation steps
 
@@ -52,11 +52,20 @@ The Adventure Works theme package is available in the **dynamics365-commerce** f
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`	
 	
-To install the package in your local environment, run the following command from the command prompt. This command automatically updates the package.json file so that it includes the dependency.
+To install the package in your local environment, run the `yarn add THEME_PACKAGE@VERSION` from the command prompt, where THEME_PACKAGE is the theme package (@msdyn365-commerce-theme/adventureworks-theme-kit) and the VERSION is the version number that matches the module library being used.  It is important to match the same version of the theme package as the module library. To find the correct module version number to use open the package.json file and find the **starter-pack** under the **depencencies** section as shown below. Note,  that the example above uses version 9.33 which maps to the Dynamics 365 Commerce update 10.0.23.  
 
-`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
+```json
+"dependencies": {
+    "@msdyn365-commerce-modules/starter-pack": "9.33",
+}
+```
 
-In the **package.json** file, you should update the theme version to a specific version.
+The below example shows how to run the `yarn add` command for the matching version. This command automatically updates the package.json file so that it includes the dependency.
+
+`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.33`
+
+
+For more information about updating the module libray version see the [SDK and module library updates](e-commerce-extensibility/sdk-updates.md) topic. 
 
 > [!IMPORTANT]
 > - The theme version should match the module library version to ensure that all features work as expected. 
