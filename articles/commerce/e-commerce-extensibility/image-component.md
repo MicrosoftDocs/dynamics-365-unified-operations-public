@@ -2,9 +2,9 @@
 # required metadata
 
 title: Image component
-description: This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK Image component to embed images into a module.
+description: This topic describes how to use the online SDK Image component to embed images into a module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 11/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the Microsoft Dynamics 365 Commerce online SDK **Image** component to embed images into a module. The Image component optimizes image sizes using the Dynamics 365 image resizer service which allows appropriately sized images to be loaded for the various viewports layouts a module supports. The Image component also supports fallback and thumbnail images.
+This topic describes how to use the online SDK Image component to embed images into a module in Microsoft Dynamics 365 Commerce. The Image component optimizes image sizes using the Dynamics 365 image resizer service which allows appropriately sized images to be loaded for the various viewports layouts a module supports. The Image component also supports fallback and thumbnail images.
 
 ## Using the Image component within a module
 
@@ -306,8 +306,9 @@ The below shows a sample module mock file to set the **imageSettings** mock data
 }
 ```
 
-## Mocking image data in a page mock
-The below shows a sample page mock file to set the **imageSettings** mock data.
+## Mock image data in a page mock
+
+The following example shows a sample page mock file that sets the **imageSettings** mock data.
 
 ```json
 {
