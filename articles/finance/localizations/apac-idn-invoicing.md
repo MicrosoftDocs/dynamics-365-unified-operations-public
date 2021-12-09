@@ -44,7 +44,7 @@ Microsoft Dynamics 365 Finance includes the following functionality that has bee
 
 ## Prerequisites
 
-Before you can use the VAT declaration functionality, the following features must be enabled and configured:
+Before you can use the invoicing functionality, the following prerequisites must be in place:
 
 - (Indonesia) Enable generation of tax invoice numbers for invoices
 - Chronological numbering
@@ -74,17 +74,15 @@ Follow these steps to create invoice numbers for one period at a time for a comp
 
     ![Creating a number sequence.](media/apac-idn-number-sequence.png)
 
-2. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**, and create a number sequence group.
-3. Associate the number sequence group with the **Tax invoice number** number sequence.
+2. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**, and create a number sequence group. Then associate it with the number sequence (reference **Tax invoice number**).
 
     ![Creating a number sequence groups and associating it with the Tax invoice number number sequence.](media/apac-idn-number-sequence-group.png)
 
-4. Go to **Organization administration** \> **Number sequences** \> **Chronological number sequence groups**, and create a chronological number sequence group that is named **Period**.
+3. Go to **Organization administration** \> **Number sequences** \> **Chronological number sequence groups**, and create a chronological number sequence group for the period  and then associate the new number sequence group with the **Tax invoice number** field.
 
     ![Creating a chronological number sequence group.](media/apac-idn-chronological-number-sequence-groups.png)
 
-5. Associate the new number sequence group with the **Tax invoice number** number sequence.
-6. Repeat steps 1 through 5 to create invoice numbers for additional periods.
+4. Repeat steps 1 through 3 to create invoice numbers for additional periods.
 
 If a company has multiple branches, and each branch should have its own numeration of tax invoices, follow these steps.
 
@@ -117,7 +115,7 @@ Follow these steps to complete the setup.
 2. Create number sequence groups for all the number sequences that you just created, and then assign those number sequences to the groups.
 3. Create additional number sequence groups for each customer that numbers must be allocated to.
 4. Update the customer records with the new number sequence groups. Number sequences aren't required in the customer record.
-5. Create chronological number sequence groups. For one period, there are five lines (records): two for customer 1, two for customer 2, and one for the remaining number intervals.
+5. Create chronological number sequence groups. For the period (Q3), there are five lines (records): two for customer 1, two for customer 2, and one for the remaining number intervals.
 
     | Group         | Description                               | Number sequence |
     |---------------|-------------------------------------------|-----------------|
@@ -130,11 +128,11 @@ Follow these steps to complete the setup.
     | ID\_21Q3\_3   | Q3 2021, Third interval. (from 41 to 100) | ID\_21Q3\_3     |
     | ID\_21Q1      | Customer tax invoice number group 2022    | ID\_21Q1        |
 
-    In the first record for the customer, in the **Original number sequence group** field, enter the number sequence group for the customer record. In the second record for the customer, in the **Original number sequence group** field, enter the number sequences as they are entered in the **Number sequence group** field. The following illustration shows the setup of chronological number sequence groups for customers.
+    In the first record for the customer, in the **Original number sequence group** field, enter the number sequence group for the customer 1 record (ID\_Cust1). In the second record for the customer, in the **Original number sequence group** field, enter the number sequences as they are entered in the **Number sequence group** field (ID\_Cust1\_Q3). The following illustration shows the setup of chronological number sequence groups for customers.
 
     ![Setup of chronological number sequence groups for customers.](media/apac-idn-chronological-number-sequence-groups-customer.png)
 
-6. In the **Number sequence group** field, specify the number sequence group for the first interval. Then, in the **Other number sequence** grid, create two lines. The following illustration shows the setup of the chronological number sequence group for other intervals.
+6. In the **Number sequence group** field, specify the number sequence group for the first number sequence (from 000-21.00000001 through 000-21.00000009). Then, in the **Other number sequence** grid, create two lines for the second number sequence (from 000-21.00000021 through 000-21.00000029) and for the third number sequence (From 000-21.00000041 through 000-21.00000100). The following illustration shows the setup of the chronological number sequence group for other intervals.
 
     ![Setup of the chronological number sequence group for customer (intervals).](media/apac-idn-chronological-number-sequence-groups-customer-intervals.png)
 
@@ -155,7 +153,7 @@ If you create a replacement invoice, the system sets the third digit (that statu
 
 Before credit notes are created for cancellation because of an error in a posted invoice or a replacement invoice, go to **Accounts receivable** \> **Setup** \> **Customer reason codes** to set up financial reasons.
 
-Create at least two records: one that has a **Cancellation** operation and one that has a **Replacement** operation. There can be several records on the **Financial reasons** page.
+Create at least two records: one that has a **Cancellation** operation and one that has a **Replacement** operation. There can be several records on the **Financial reasons** page. You can configure as many reasons with an **Blank** operation as needed. These reasons can be used, for instance, when creating a credit note for the item return.  
 
 ![Creating financial reasons for credit invoicing.](media/apac-idn-resons.png)
 
@@ -163,8 +161,8 @@ Create at least two records: one that has a **Cancellation** operation and one t
 - To create a credit note for items returns, create a credit note, and associate it with the original invoice and a financial reason that has a **Blank** operation. In this situation, a tax invoice number is generated.
 - To create a replacement invoice, follow these steps:
 
-    - Create a credit note, and associate it with the original invoice and a financial reason that has a **Cancellation** operation. In this situation, no tax invoice number is generated.
-    - Create a debit note, and associate it with the original invoice and a financial reason that has a **Replacement** operation. The system sets the third digit (that status) of the tax invoice number to **1**.
+    1. Create a credit note, and associate it with the original invoice and a financial reason that has a **Cancellation** operation. In this situation, no tax invoice number is generated.
+    2. Create a debit note, and associate it with the original invoice and a financial reason that has a **Replacement** operation. The system sets the third digit (that status) of the tax invoice number to **1**.
 
 When you must create a credit note for cancellation and a debit note for replacement, we recommend that you create a new sales order. When you create a replacement invoice, the original invoice should have a tax invoice number. The credit note that has the **Cancellation** reason, which was created before replacement, and the debit note that has the **Replacement** reason should be associated with the same invoice.
 
@@ -182,10 +180,10 @@ Before you complete the procedures in this section, follow the steps in [Get sta
 
 During RCS setup, complete the following tasks:
 
-- Import the Electronic Invoicing feature to process invoice exports and importing vendor invoices.
-- Review the format configurations that are required to generate and export sales invoices.
-- Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
-- Publish the Electronic Invoicing feature for sales invoices and import vendor invoices.
+1. Import the Electronic Invoicing feature to process invoice exports and importing vendor invoices.
+2. Review the format configurations that are required to generate and export sales invoices.
+3. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
+4. Publish the Electronic Invoicing feature for export sales invoices, and import vendor invoices.
 
 #### Import the Electronic Invoicing feature
 
@@ -202,7 +200,7 @@ When you import the **Indonesian electronic invoice (ID)** feature from the Glob
 
 ### Create a new version of the Indonesian electronic invoice (ID) feature
 
-You can create a new feature version with your configuration provider.
+You can create a new feature version by using your configuration provider.
 
 1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
 2. On the **Electronic invoicing features** page, on the **Versions** tab, select **New**.
@@ -233,16 +231,18 @@ To enable the system to determine which the sales tax code in Finance correspond
 
 1. In the **Lookups** grid, select the row for **TaxTypeLookup**.
 2. In the **Conditions** grid, on the first line, set the **Lookup result** field to **PPnBM** and the **Sales tax code (TaxCode)** field to the sales tax code that is used for luxury tax in Finance.
-3. On the second line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered luxury tax by the system.
+
+>[!NOTE] You can set up several sales tax codes for PPnBM and have several lines in **Conditions** for them. 
+4. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered luxury tax by the system.
 
 ![Setting application-specific parameters for sales tax codes.](media/apac-idn-aplication-specific-parameters-tax-code.png)
 
 To enable the system to determine which sales tax group in Finance corresponds to VAT-free reasons (transaction code 07, reasons 1 through 8) or VAT-exempt reasons (transaction code 08, reasons 1 through 5) when invoices are exported, follow these steps to set the application specific parameters for those reasons.
 
 1. In the **Lookups** grid, select the row for **VATFreeInfoLookup**.
-2. In the **Conditions** grid, on the first line, set the **Lookup result** field to **1-8** for transaction code **07** and to **1-5** for transaction code **08**.
+2. In the **Conditions** grid, on the first line, set the **Lookup result** field from **1** to **8** for transaction code **07** and from **1** to **5** for transaction code **08**.
 3. Set the **Tax group (TaxGroup)** field to the sales group that is used for exemption operations in Finance.
-4. On the second line, set the **Lookup result** field to **Other** and the **Tax group (TaxGroup)** field to **\*Not blank\***. These settings specify that all other sales tax groups should not be considered exemption groups by the system.
+4. On the last line, set the **Lookup result** field to **Other** and the **Tax group (TaxGroup)** field to **\*Not blank\***. These settings specify that all other sales tax groups should not be considered exemption groups by the system.
 
 ![Setting application-specific parameters for transaction codes.](media/apac-idn-aplication-specific-parameters-transaction-codes-07-08.png)
 
@@ -314,7 +314,7 @@ To configure the Vendor invoice feature setup, you should have already created a
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 2. On the **Electronic document** tab, select **Add**, and enter the customer invoice journal.
 3. Optional: Select **Add** again, and enter the project invoice journal.
-4. In the **Batch submission ID** section, add a number sequence. The selected number sequence should be continuous. It's used to invoice batch for export.
+4. In the **Batch submission ID** section, add a number sequence. The selected number sequence should be continuous. This number sequence is used to number the invoice batches when the system export them.
 5. Select **Save**.
 
 ![Setting up the processing for electronic sales invoices.](media/apac-idn-rcs-electronic-document-parameters.png)
@@ -357,7 +357,7 @@ If you must import vendor invoices into, for example, a different legal entity, 
 
 ## Process electronic invoices in Finance
 
-When issued invoices or imported vendor invoices are processing Finance through Electronic invoicing, you can complete the following tasks:
+When issued invoices or imported vendor invoices are processing through Electronic invoicing, you can complete the following tasks:
 
 - Submit or export issued invoices, and import vendor invoices.
 - View the electronic document submission and receipt logs.
@@ -365,25 +365,20 @@ When issued invoices or imported vendor invoices are processing Finance through 
 ### Submit or export issued invoices
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
+2. Set **Submit document batch** option to **Yes** to export invoices in batch, otherwise the each invoice is exported separately. The first time that you submit a document, always set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
 3. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select documents for export.
-
-    ![Exporting invoices.](media/apac-idn-rcs-submit-invoices.png)
-
 4. Go to **System administration** \> **Setup** \> **Business events** \> **Business events parameters**, and then select **Business events batch job**. If you set up the Business event batch processor, this job can be run in batch mode.
-
-    ![Setting up the Business events job to run in batch mode.](media/apac-idn-business-event-parameters.png)
 
 ### View submission logs
 
 You can view the submission logs for all exported documents.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
-
-    ![Submission log.](media/apac-idn-rcs-submission-log.png)
-
-2. Select **Update status**.
-3. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. The information in the logs is divided among three FastTabs:
+2. Select **Update status**. An invoice batch can have the following statuses:
+   - Schecduled
+   - Completed
+   - Failed 
+4. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. The information in the logs is divided among three FastTabs:
 
     - **Processing actions** – This FastTab shows the execution log for the actions that are configured in the feature version that was set up in RCS. The **Status** column shows whether the action was successfully run.
     - **Action files** – This FastTab shows the intermediate files that were generated during execution of the actions. Select **View** to download and view the file.
