@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.23
 # Implement a custom ER source of inbound documents
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 To import data from an inbound document by using the [Electronic reporting (ER)](general-electronic-reporting.md) framework, configure an ER [format](general-electronic-reporting.md#FormatComponentInbound) that supports the import, and then run a model mapping of the **To destination** type that uses that format as a data source. To import data, go to the document that you want to import, and use a SharePoint folder as the standard ER source of inbound documents that can be imported in unattended mode. To learn more about this process, see [Configure data import from SharePoint](er-configure-data-import-sharepoint.md).
 
