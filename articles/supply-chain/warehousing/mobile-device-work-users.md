@@ -1,14 +1,14 @@
 ---
 title: Mobile device user accounts
 description: This topic describes how to set up and manage user accounts that enable workers to sign in and use the warehouse app.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 09/15/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
 ---
