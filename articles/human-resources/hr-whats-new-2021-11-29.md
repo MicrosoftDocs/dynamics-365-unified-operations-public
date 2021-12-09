@@ -27,7 +27,17 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-This release includes the following bug fixes. Changes apply to build number 8.1.4591.
+# What's new or changed in Dynamics 365 Human Resources November 19, 2021
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic describes features that are new, changed, or coming soon in Microsoft Dynamics 365 Human Resources.
+
+For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+
+For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
+
+# This release includes the following bug fixes. Changes apply to build number 8.1.4591.
 
 ### Bug fixes
 
@@ -38,12 +48,12 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 |---|---|---|
-| 626178 | Navigation missing from worker tiles in MSS |Fixed navigation to be able to see details of reports in MSS. |
-| 632573 | No Validation error when saving Course | Create course with only changing minimum participants number to greater than 0 still allow being saved even when maximum is still 0. |
-| 615955 | Error "Field 'Purpose' must be filled in" when creating new recruiting request location. | When creating an address for a new recruiting request location, you get the error: "Field 'Purpose' must be filled in." However, the "Purpose" field is not available on the page. |
-| 620797 | Blank gender field is misleading | When gender is not entered for a personal contact the report shows ‘Click or tap here to enter text’ – That is misleading as nothing can be entered for that. |
-| 620800 | Benefits statement link is hidden. | Benefit statement statement is not viewable by default in ESS.  Link added to the right side of ESS under 'Links' section |
-| 629778 | Performance issue with CDS integration. | Auth related request caused performance issue. |
+| 626178 | Navigation missing from worker tiles in **Manager self service** |Fixed navigation to be able to see details of reports in **Manager self service**. |
+| 632573 | No Validation error when saving a **Course** | Create course with only changing minimum participants number to greater than 0 still allow being saved even when maximum is still 0. |
+| 615955 | Error **Field 'Purpose' must be filled in** when creating new recruiting request location. | When creating an address for a new recruiting request location, you get the error: "Field 'Purpose' must be filled in." However, the **Purpose** field is not available on the page. |
+| 620797 | Blank **Gender** field is misleading | When gender is not entered for a personal contact the report shows ‘Click or tap here to enter text’ – That is misleading as nothing can be entered for that. |
+| 620800 | Benefits statement link is hidden. | Benefit statement statement is not viewable by default in **Employee self service**.  A link was added to the right side of **Employee self service** under the **Links** section |
+| 629778 | Performance issue with CDS integration. | Authorization related request caused performance issue. |
 
 ## In preview
 
