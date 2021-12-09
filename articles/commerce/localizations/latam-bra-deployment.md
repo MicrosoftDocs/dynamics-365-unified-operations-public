@@ -46,10 +46,8 @@ To enable and use the Brazil-specific functionality, you must configure the foll
 1. Go to **System administration \> Workspaces \> Feature management**, and then, on the **All** tab, enable the following feature keys:
 
     - (Brazil) Commerce functionality that is specific to Brazil
-    - Retail statements - Trickle feed
-    - Support for internal and external connectors in the fiscal integration framework
+    - (Brazil) NFC-e synchronous processing
     - Postponed registration of documents
-    - User-defined certificate profiles for retail stores
 
 ## Set up electronic reporting
 
@@ -65,13 +63,15 @@ To set up electronic reporting in Commerce headquarters, follow these steps.
 1. Import the latest shared versions of the following data model, data model mapping, and format configurations:
 
     - Fiscal documents mapping
-    - NF-e cancel export format (BR)
-    - NF-e status request export format (BR)
     - NF-e submit export format (BR)
+    - NF-e status request export format (BR)
+    - NF-e cancel export format (BR)
     - NFC-e submit export format (BR)
     - NFC-e contingency export format (BR)
     - NFC-e fiscal documents mapping
     - NFC-e fiscal documents validation format (BR)
+	- CF-e submit export format (BR)
+	- CF-e cancel export format (BR)
 
 1. Go to **Organization administration \> Workspaces \> Electronic reporting**, and select **Reporting configurations**.
 1. Select **Fiscal documents mapping**, and then set the **Default model mapping** option to **No**.
@@ -212,17 +212,22 @@ To set up the fiscal registration process in Commerce headquarters, follow these
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**.
 1. For each document provider that you just loaded the configuration for, create connector functional profiles and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
+   In case of the settings for SAT, fill in the **Key Vault activation code secret ... ** and **POS Signature for SAT** fields.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
 1. Create connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required.
+   In case of the settings for SAT, configure the **Connector name** for SAT device (**Connector type = Local**) and **SAT library path**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**.
 1. Create fiscal connector groups, one for each connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**.
 1. Create a registration process. As registration steps, select the fiscal connector groups that you just created.
+1. Create a separate registration process for SAT device.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. Select the functionality profile that is linked to the store where the registration process should be activated, and then, on the **Fiscal registration process** FastTab, select the registration process number that you just created.
+1. Create a separate functionality profile for SAT device.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 1. Select a hardware profile that is linked to the hardware station that the fiscal printer will be connected to.
-1. On the **Fiscal peripherals** FastTab, select the connector technical profile.
+1. Create a separate hardware profile for SAT device.
+1. On the **Fiscal peripherals** FastTab, select the connector technical profile for each hardware profile.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 1. Set up hardware profiles for printers.
 1. On the **Stores** page, on the **Hardware stations** FastTab, add a setup for the hardware station. As required, configure IP addresses for the network printer that you configured earlier.
