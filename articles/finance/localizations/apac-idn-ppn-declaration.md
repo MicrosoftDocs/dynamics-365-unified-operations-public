@@ -4,7 +4,7 @@
 title: VAT declaration for Indonesia (ID-00004)
 description: This topic explains how to configure and generate the SPT Masa PPN 1111 (Pajak Pertambahan Nilai) form for Indonesia.
 author: sndray
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.20
 
 # VAT declaration for Indonesia (ID-00004)
 
-This topic explains how to set up and generate the value-added tax (VAT) return form for legal entities in Indonesia. This form is often referred as *SPT Masa PPN 1111 (Pajak Pertambahan Nilai)*. Corporate taxpayers should issue it to report the calculated amount of tax, so that they can report both VAT (PPN) and Luxury Goods Sales Tax (PPNnBM) that are owed. In addition to being used to report payments or pay taxes, the SPT Masa PPN 1111 form is used to report property, liabilities, and tax deposits from cutters or collectors.
+This topic explains how to set up and generate the value-added tax (VAT) return form for legal entities in Indonesia. This form is often referred as *SPT Masa PPN 1111 (Pajak Pertambahan Nilai)*. Corporate taxpayers should issue it to report the calculated amount of tax so that they can report VAT (PPN) and Luxury Goods Sales Tax (PPNnBM) that are owed. In addition to being used to report payments or pay taxes, the SPT Masa PPN 1111 form is used to report property, liabilities, and tax deposits from cutters or collectors.
 
 The **SPT Masa PPN 1111 (Pajak Pertambahan Nilai)** page in Microsoft Dynamics 365 Finance includes the following reports:
 
@@ -47,7 +47,7 @@ The **SPT Masa PPN 1111 (Pajak Pertambahan Nilai)** page in Microsoft Dynamics 3
     - VAT statement format reports
     - Enable credit invoicing for vendor invoices
 
-For more information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+   For more information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Upload Electronic reporting configurations
 
@@ -59,7 +59,7 @@ After you've finished downloading the ER configurations from Microsoft Dynamics 
 
 ## Set up application-specific parameters
 
-The SPT Masa PPN 1111 form includes a set of boxes that correspond to specific parts of the PPN return process. Each box includes information about the base, adjustment, PPN (VAT), and PPNnBM (luxury tax) amounts. To include the requirements that are established by the form, configure each box with the information that is automatically provided from the sales tax transactions that are generated from sales, purchases, or other operations where PPN or PPNnBM tax is posted through the sales tax code configuration.
+The **SPT Masa PPN 1111** page includes a set of boxes that correspond to specific parts of the PPN return process. Each box includes information about the base, adjustment, PPN (VAT), and PPNnBM (luxury tax) amounts. To include the requirements that are established by the form, configure each box with the information that is automatically provided from the sales tax transactions that are generated from sales, purchases, or other operations where PPN or PPNnBM tax is posted through the sales tax code configuration.
 
 The application-specific parameters option lets you establish the criteria that define how the tax transactions are collected and calculated in each box of the declaration form when the report is generated, based on the configuration of the sales tax code. Here are some of the available criteria:
 
@@ -72,9 +72,9 @@ The application-specific parameters option lets you establish the criteria that 
 
 Per the legal definition, **BoxA1 - Export of Tangible BKP / Intangible BKP / JKP** should include the total amount of export sales invoices, including credit notes.
 
-Depending on the tax configuration in Finance, you can implement a specific sales tax group, item tax group, or sales tax code that represents and calculates the operations that are classified as export sales invoices. For this example, you must configure **BoxA1** as shown here.
+Depending on the tax configuration in Finance, you can implement a specific sales tax group, item tax group, or sales tax code that represents and calculates the operations that are classified as export sales invoices. For this example, configure **BoxA1** as shown here.
 
-1. In the **Electronic reporting** workspace, select **Configurations** \> **Setup** to set up rules to identify the tax transaction in the related box of the SPT Masa PPN 1111 form.
+1. In the **Electronic reporting** workspace, select **Configurations** \> **Setup** to set up the rules to identify the tax transaction in the related box of the SPT Masa PPN 1111 form.
 2. Select the current version, and then, on the **Lookups** FastTab, select the lookup name **ReportFieldLookup**. This lookup identifies the list of boxes that the tax authority requires in the SPT Masa PPN 1111 form.
 3. On the **Conditions** FastTab, select **Add**.
 4. On the new line, in the **Lookup result** field, select the related line of the SPT Masa PPN 1111 form.
@@ -96,7 +96,7 @@ Depending on the tax configuration in Finance, you can implement a specific sale
 In addition to the previous configuration, you must follow these steps to classify the tax type that the tax authority requires. You must be able to indicate whether the tax is PPN (VAT) or PPNnBM (luxury tax).
 
 1. In the **Electronic reporting** workspace, select **Configurations** \> **Setup** to set up rules to identify the tax transaction in the related box of the SPT Masa PPN 1111 form.
-2. Select the current version, and then, on the **Lookups** FastTab, select the lookup name **TaxTypeLookup**. This lookup identifies the tax type that the tax authority requires in the SPT Masa PPN 1111 form.
+2. Select the current version, and then, on the **Lookups** FastTab, select the **TaxTypeLookup** lookup name. This lookup identifies the tax type that the tax authority requires in the SPT Masa PPN 1111 form.
 3. On the **Conditions** FastTab, select **Add**.
 4. On the new line, in the **Lookup result** field, select the type of tax. For example, select **PPN**.
 5. In the **Tax code** field, select the sales tax code that represents the tax type that you selected in the **Lookup result** field. For example, select **PPN10%**.
@@ -132,7 +132,7 @@ The following table represents an example that shows how to configure the parame
 | BoxAdj        | Adjustments                                                  | 16   | \*Blank\*       | \*Blank\*            | PPN\_ADJ      | PurchaseCreditNote     |
 | NA            | Not applicable                                               | 17   | \*Not blank\*   | \*Blank\*            | \*Not blank\* |\*Not blank\*          |
 
-To help prevent issues when the report is generated, create all mappings where the sales tax codes and sales tax group are posted. For example, if **SalesCreditNote** is omitted on the line for **BoxA2** in this configuration, and tax transactions are posted by using the **PPN\_DOM** sales tax group, you will encounter issues when the report is generated. Select **Tax** \> **Inquire** \> **Posted sales tax** to review all posted sales tax transactions and transactions that aren't included in this mapping of the configuration.
+To help prevent issues when the report is generated, create all mappings where the sales tax codes and sales tax group are posted. For example, if **SalesCreditNote** is removed from the line for **BoxA2** in this configuration, and tax transactions are posted by using the **PPN\_DOM** sales tax group, you will encounter issues when the report is generated. Select **Tax** \> **Inquire** \> **Posted sales tax** to review all posted sales tax transactions and transactions that aren't included in this mapping of the configuration.
 
 The following table shows the available values for the **Transaction classifier** field. This information explains how the tax transactions are classified and assigned to the related sales tax code.
 
