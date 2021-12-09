@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -168,7 +168,7 @@ In the example above, the module uses a **productImage** module configuration th
 
 ### Support module layouts from within a theme
 
-A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module layouts that each have their own **ImageSettings** class. For more information, see [Configure theme settings](configure-theme-settings.md). The following example shows a sample theme that defines a two-module layout (vertical and horizontal) with different image sizes for each viewport. Each of the defined layouts for a theme will then appear in the site builder module configuration for the page author to select. When a module is rendered, the settings from the theme are passed to the image resizer service to serve up the appropriately sized image based on the browser viewport and layout selected.
+A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module layouts that each have their own **ImageSettings** class. For more information, see [Configure theme settings](configure-theme-settings.md). The following example shows a theme that defines a two-module layout (vertical and horizontal) with different image sizes for each viewport. Each of the defined layouts for a theme will then appear in the site builder module configuration for the page author to select. When a module is rendered, the settings from the theme are passed to the image resizer service to serve up the appropriately sized image based on the browser viewport and layout selected.
 
 ```json
 {
