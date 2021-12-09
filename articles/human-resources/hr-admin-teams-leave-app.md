@@ -117,6 +117,9 @@ The following work items are slated for future releases:
 
 If a user is having trouble signing into or using the Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
+### Ensure the Teams Human Resources application is up to date
+The first step to do when user encounters an issues with the Teams Human Resources App is to confirm it is running the latest version. The minimum supported version is currently 1.1.5. See the [official teams documenation](microsoftteams/apps-update-experience) for instructions on how to update a teams application.
+
 ### Can't sign into the Human Resources app in Teams
 
 If a user contacts you because they can't sign into the app, verify that they have an associated employee record in Human Resources.
