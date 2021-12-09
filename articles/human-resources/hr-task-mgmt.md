@@ -118,7 +118,7 @@ When an employee is hired, terminated, or transferred one or more checklists can
 When a task is created, it will be assigned to a specific user. The user that is assigned the task depends on the **Assignment type** selected in the task. 
 The options for the **Assignment type** are: 
  - **Worker**
- - **Position 
+ - **Position** 
  - **Group (of positions)** 
  - the affected employee's **Manager** 
  - the **Employee** that is affected 
