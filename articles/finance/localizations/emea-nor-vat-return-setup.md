@@ -474,14 +474,14 @@ Follow these steps to set up an internet address that is used by Altinn web serv
 
 For *production* interoperation with web services provided by the Tax Administration of Norway, use the following **Internet address**.
 
-    | Web service name | Internet address |
-    |---|---|
-    | NO Altinn GET JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
-    | NO Altinn POST JSON       | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
-    | NO Altinn POST XML        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
-    | NO Altinn PUT JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
-    | NO Altinn PUT XML         | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
-    | NO Altinn GET attachments | Leave this field blank. |
-    | NO Validate VAT return    | `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider` |
+| Web service name | Internet address |
+|---|---|
+| NO Altinn GET JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn POST JSON       | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn POST XML        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn PUT JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn PUT XML         | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn GET attachments | Leave this field blank. |
+| NO Validate VAT return    | `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
