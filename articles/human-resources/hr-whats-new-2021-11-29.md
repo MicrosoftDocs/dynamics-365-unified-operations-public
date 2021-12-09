@@ -67,6 +67,6 @@ The following new features are in preview. For more information about how to tur
 
 
 ## Coming soon
-For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 and industry clouds: 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
+For a complete list of planned features and their scheduled releases, see [Dynamics 365 and industry clouds: 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
