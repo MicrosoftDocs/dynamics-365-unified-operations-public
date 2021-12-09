@@ -2401,7 +2401,155 @@
       - name: Store Commerce
         items:
         - name: Store Commerce Developer Guide
-          href: st
+          href: developer/store-comm-dev-guide.md
+          - name: POS
+            items:
+            - name: Getting Started
+              items: 
+              - name: 
+                href:
+              - name:
+                href:
+              - name:
+                href:
+              - name:
+                href:
+              - name:
+                href:
+              - name:
+                href:
+              - name:
+                href:
+              - name:
+                href:
+            - name: Create
+              items:
+              - name:
+                href:
+              - name:
+                href:
+              - name:
+                href: 
+            - name: Consume
+              items: 
+              - name: 
+                href:
+              - name:
+                href:
+              - name:
+                href:
+              - name:
+                href:
+              - name:
+                href: 
+            - name: Extend
+              items:
+              - name: Views
+                items:
+                - name: 
+                  href:
+                - name: 
+                  href:
+                - name: 
+                  href:
+                - name: 
+                  href:
+                - name: 
+                  href:
+                - name: CartView
+                  items:
+                  - name:
+                    href:
+                  - name:
+                    href:
+                  - name:
+                    href:
+                  - name:
+                    href:
+                  - name:
+                    href:
+              - name: Triggers
+                items:
+                - name: 
+                  href:
+              - name: RequestHandlers
+                items:
+                - name: 
+                  href:
+                - name: 
+                  href:
+              - name: Payments
+                items:
+                - name: 
+                  href:
+                - name: 
+                  href:
+          - name: Packaging and deployment
+            items:
+            - name:
+              href:
+            - name:
+              href:
+            - name:
+              href:
+            - name:
+              href:
+            - name:
+              href:
+          - name: Advanced
+            items:
+            - name:
+              href:
+            - name:
+              href:
+          - name: Hardware Station
+            items:
+            - name:
+              href:
+            - name:
+              href:
+            - name:
+              href:
+            - name:
+              href:
+            - name:
+              href: 
+          - name: Retail SDK (Deprecated)
+            items:
+            - name: Retail software development kit (SDK)
+              href: dev-itpro/retail-sdk/retail-sdk-overview.md
+            - name: Retail software development kit (SDK) extensibility samples
+              href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+            - name: Retail SDK FAQ
+              href: dev-itpro/retail-sdk/sdk-faq.md
+            - name: Development in cloud-hosted environments without admin acces
+              href: dev-itpro/cloud-dev-box
+            - name: Run the point of sale (POS) samples
+              href: dev-itpro/pos-run-samples.md
+            - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
+              href: dev-itpro/retail-sdk/migrate-sdk.md
+            - name: Create and apply branding to the Retail Experience app
+              href: dev-itpro/create-retail-experience-app.md
+            - name: Packaging
+              items:
+              - name: Create deployable packages
+                href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+              - name: Set up Commerce SDK build pipeline
+                href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+              - name: Deploy payment connectors
+                href: dev-itpro/deploy-payment-connector.md
+            - name: Third-party e-commerce
+              items:
+              - name: Configure online stores
+                href: dev-itpro/configure-online-store.md
+              - name: E-commerce platform software development kit (SDK)
+                href: dev-itpro/ecommerce-platform-sdk
+              - name: Configure authentication providers
+                href: dev-itpro/configure-authentication-providers.md
+            - name: Android and iOS
+              items:
+              - name: Set up POS hybrid app on Android and iOS
+                href: dev-itpro/hybridapp.md                
     - name: Extensibility
       items: 
       - name: Commerce development and extensibility
