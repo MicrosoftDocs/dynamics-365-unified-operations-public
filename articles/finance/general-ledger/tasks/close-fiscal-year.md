@@ -39,7 +39,7 @@ This procedure steps through the year end close process that transfers balances 
 
 4. Select 'Yes' or 'No' for the **Create closing transactions during transfer** option.
 
-    If set to Yes, two transactions are created. One voucher is created in the fiscal year being closed to bring the balances of the P&L ledger accounts down to zero and a second voucher is created in the next fiscal year for the beginning balances. If set to No, a single voucher is created in the next fiscal year for the beginning balances.  
+    If set to Yes, two transactions are created. One voucher is created in the fiscal year being closed to bring the balances of all ledger accounts down to zero and a second voucher is created in the next fiscal year for the beginning balances. If set to No, a single voucher is created in the next fiscal year for the beginning balances.  
 
 5. Select 'Yes' or 'No' for the **Set fiscal year status to permanently closed** option.
 
