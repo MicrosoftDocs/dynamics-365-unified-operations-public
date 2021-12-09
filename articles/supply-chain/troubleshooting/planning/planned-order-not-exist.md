@@ -4,7 +4,7 @@ description: You get a 'Planned order does not exist' error When operating on mu
 author: t-benebo
 ms.date: 12/07/2021
 ms.topic: troubleshooting
-ms.search.form: ReqTransPo, ReqTransPoMarkChangeType
+ms.search.form: ReqTransPo_ReqTransPoMarkChangeType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -14,6 +14,8 @@ ms.dyn365.ops.version: 10.0.24
 ---
 
 # The system can't find a planned order when operating on multiple orders
+
+Error code: SYS24774
 
 ## Symptoms
 
