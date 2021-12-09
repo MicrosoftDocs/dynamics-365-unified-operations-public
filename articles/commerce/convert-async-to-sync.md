@@ -22,11 +22,11 @@ This topic explains how to convert asynchronous customers to synchronous custome
 
 To convert asynchronous customers to synchronous customers, follow these steps.
 
-1. In Commerce headquarters, run the **P-job** to send the asynchronous customers to headquarters. 
-1. Run the **Synchronize customers and business partners from async mode** job (formerly named the **Synchronize customers and business partners from async mode** job) to create customer account IDs.
+1. In Commerce headquarters, run the **P-job** to send the asynchronous customers to Commerce headquarters.
+1. Run the **Synchronize customers and business partners from async mode** job to create customer account IDs. (This job was formerly named **Synchronize customers and business partners from async mode**.)
 1. Run the **1010** job to sync the new customer account IDs to the channels.
 
-If an order is referenced to an asynchronous customer or address not synchronized to headquarters yet, the customer or address will be synchronized as part of the **Synchronize orders** batch job. If a cash and carry transaction references an asynchronous customer or address, the customer or address will be synchronized before EOD posting.
+If an order references an asynchronous customer or address that hasn't yet been synced to Commerce headquarters, the customer or address will be synced as part of the **Synchronize orders** batch job. If a cash-and-carry transaction references an asynchronous customer or address, the customer or address will be synced before end-of-day (EOD) posting.
 
 ## Additional resources
 
