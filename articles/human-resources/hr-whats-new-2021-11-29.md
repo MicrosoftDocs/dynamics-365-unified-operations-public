@@ -35,7 +35,7 @@ This topic describes features that are new, changed, or coming soon in Microsoft
 
 For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
-For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
+For more information about new features and their expected general availability dates, see [Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
 
 ## In this release
 
