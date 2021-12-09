@@ -68,6 +68,9 @@ In general, the `VALUEIN` function is translated to a set of **OR** conditions. 
 
 In some cases, it can be translated to a database SQL statement by using the `EXISTS JOIN` operator.
 
+> [!NOTE]
+> Notice that the returned by the `VALUEIN` function value is used [differently](er-functions-list-filter.md#usage-notes) when this function is used to specify the selection criteria for the [`FILTER`](er-functions-list-filter.md) and [`WHERE`](er-functions-list-where.md) functions.
+
 ## Example 1
 
 In your model mapping, you define the **List** data source of the *Calculated field* type. This data source contains the expression `SPLIT ("a,b,c", ",")`.
