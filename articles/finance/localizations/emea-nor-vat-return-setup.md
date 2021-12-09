@@ -442,7 +442,10 @@ Internet addresses (URLs) are subject to change by the Norwegian Tax Administrat
 Follow these steps to set up a URL that is used in ID-porten.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
-2. In the **Base URL** field, enter `https://oidc-ver2.difi.no/idporten-oidc-provider`. 
+2. In the **Base URL** field, enter:
+
+- `https://oidc-ver2.difi.no/idporten-oidc-provider` to interoperate with *sandbox* endpoint of ID-porten
+- `https://oidc.difi.no/idporten-oidc-provider/` to interoperate with *production* endpoint of ID-porten
 
 > [!IMPORTANT]
 > For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
