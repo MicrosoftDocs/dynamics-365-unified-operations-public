@@ -45,24 +45,26 @@ Microsoft Dynamics 365 Finance includes the following functionality that has bee
 ## Prerequisites
 
 Before you can use the invoicing functionality, the following prerequisites must be in place:
+- Enable and configure the following features:
 
-- (Indonesia) Enable generation of tax invoice numbers for invoices
-- Chronological numbering
-- Credit invoicing layout for sales and project invoice reports
+    - (Indonesia) Enable generation of tax invoice numbers for invoices
+    - Chronological numbering
+    - Credit invoicing layout for sales and project invoice reports
+  
+  For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Enable Electronic Invoicing for Indonesia
 - [Configure Electronic invoicing solution in Microsoft Dataverse](e-invoicing-power-platform-plug-in.md)
-
-For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Tax invoice numbering
 
 Tax invoice numbers are generated according to the structure of the tax serial numbers that the Directorate General of Taxation (DJP) provides to taxable entrepreneurs.
 
-These numbers should have the following structure:
+These numbers have the following structure:
 
 1. **First two digits:** The transaction code, which is a two-digit number from 01 through 09.
 2. **Next digit:** A status code. A code of **0** (zero) indicates a normal invoice, and a code of **1** indicates a replacement invoice.
-3. **Next digits:** An interval of numbers.
+3. **Next digits:** Tax Invoice Serial Number (Nomor seri FP) is Sequence of numbers.
+
 
 ![Structure of tax serial numbers.](media/apac-idn-structure-of-tax-invoice-number.png)
 
@@ -75,9 +77,6 @@ Follow these steps to create invoice numbers for one period at a time for a comp
     ![Creating a number sequence.](media/apac-idn-number-sequence.png)
 
 2. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**, and create a number sequence group. Then associate it with the number sequence (reference **Tax invoice number**).
-
-    ![Creating a number sequence groups and associating it with the Tax invoice number number sequence.](media/apac-idn-number-sequence-group.png)
-
 3. Go to **Organization administration** \> **Number sequences** \> **Chronological number sequence groups**, and create a chronological number sequence group for the period  and then associate the new number sequence group with the **Tax invoice number** field.
 
     ![Creating a chronological number sequence group.](media/apac-idn-chronological-number-sequence-groups.png)
