@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 Retailers can have business scenarios and processes that are unique to them. Therefore, not all the rules that are included by default in the commerce transaction validation process are applicable to all retailers. To accommodate differences, Microsoft Dynamics 365 Commerce provides functionality that can be used to disable the rules that aren't applicable.
 
-To view the list of rules that are available in the transaction validation process in your environment, and to see the status of each rule, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**, and select the **Transaction validation** tab. All enabled rules are used to validate transactions during the **Validate store transactions** process and must pass for transactions to be collected and posted on a transactional statement.
+To view the list of rules that are available in the transaction validation process in your environment, and to see the status of each rule, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** and select the **Transaction validation** tab. All enabled rules are used to validate transactions during the **Validate store transactions** process and must pass for transactions to be collected and posted on a transactional statement.
 
 By default, the status of every rule is set to **Enabled**. Therefore, all the rules are used to validate transactions before they can be pulled into the commerce transactional statements. To disable a rule, change its status to **Disabled**. Disabled rules aren't considered when transactions are validated during **Validate store transactions** process.
 
