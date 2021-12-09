@@ -144,8 +144,6 @@ A tax invoice number is generated for customer and project invoices if the **ein
 
 By default, the system sets the **Tax invoice transaction code** field to **01**.
 
-![Tax invoice transaction code field set to 01 for a free text invoice.](media/apac-idn-fti-transaction-code.png)
-
 If you create a replacement invoice, the system sets the third digit (that status) of the tax invoice number to **1**. For information about how to create replacement invoices, see the next section.
 
 ## Invoice cancellation, credit notes, and replacement invoices
@@ -187,13 +185,11 @@ During RCS setup, complete the following tasks:
 #### Import the Electronic Invoicing feature
 
 1. Sign in to your RCS account.
-2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic Invoicing** tile.
+2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic Invoicing** title.
 3. On the **Electronic invoicing features** page, select **Import** to import the **Indonesian electronic invoice (ID)** feature from the Global repository that is published by the Microsoft configuration provider.
 
     > [!NOTE]
     > If you don't see the feature in the list, select **Synchronize**, and then repeat step 3.
-
-![Importing the feature.](media/apac-idn-rcs-import-feature.png)
 
 When you import the **Indonesian electronic invoice (ID)** feature from the Global repository, all the feature settings are imported. These settings include the configurations and actions of the processing pipeline.
 
@@ -201,17 +197,14 @@ When you import the **Indonesian electronic invoice (ID)** feature from the Glob
 
 You can create a new feature version by using your configuration provider.
 
-1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
+1. In the **Globalization features** workspace, select the **Electronic Invoicing** title.
 2. On the **Electronic invoicing features** page, on the **Versions** tab, select **New**.
 
-![Creating a new version of the feature.](media/apac-idn-rcs-new-version.png)
 
 ### Update the configuration version
 
-1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
+1. In the **Globalization features** workspace, select the **Electronic Invoicing** title.
 2. On the **Electronic Invoicing Features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions.
-
-![Updating the configuration version.](media/apac-idn-rcs-configuration.png)
 
 When you create a new version, all configurations are inherited from the imported version of the Electronic Invoicing feature. The following configurations are required to process invoices:
 
@@ -219,8 +212,6 @@ When you create a new version, all configurations are inherited from the importe
 - eInvoice import (ID)
 
 In the list, select a configuration version, and then select **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
-
-![Opening a configuration version for review or edits.](media/apac-idn-rcs-configuration-edit.png)
 
 You can review the configuration and customize it as you require. Use the **Format designer** page to edit and view the ER format file configurations. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
@@ -247,7 +238,7 @@ To enable the system to determine which sales tax group in Finance corresponds t
 
 ### Manage the Electronic Invoicing feature setup
 
-1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
+1. In the **Globalization features** workspace, select the **Electronic Invoicing** title.
 2. On the **Electronic Invoicing features** page, on the **Setups** tab, select **Add**, **Delete**, or **Edit** to manage the Electronic Invoicing feature setup.
 
 #### Configure the Sales invoice feature setup
@@ -291,7 +282,7 @@ To configure the Vendor invoice feature setup, you should have already created a
 ### Import the ER data model, ER data model mapping, and context configurations for invoices
 
 1. Sign in to your Finance environment.
-2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile. Make sure that this configuration provider is set to **Active**. For information about how to mark a provider as active, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** title. Make sure that this configuration provider is set to **Active**. For information about how to mark a provider as active, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Select **Repositories**.
 4. Select **Global resource** \> **Open**.
 5. Import the following configurations:
