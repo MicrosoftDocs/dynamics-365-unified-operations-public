@@ -297,7 +297,6 @@ To configure the Vendor invoice feature setup, you should have already created a
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 2. On the **Features** tab, in the row for the **Indonesian electronic invoice** feature, select the **Enable** checkbox.
 
-![Turning on the feature.](media/apac-idn-d365-turn-on-feature.png)
 
 ### Set up the processing for Indonesian electronic sales invoices
 
