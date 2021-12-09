@@ -1613,6 +1613,8 @@
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
+        - name: Inventory Visibility tips
+          href: inventory/inventory-visibility-api.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence home page

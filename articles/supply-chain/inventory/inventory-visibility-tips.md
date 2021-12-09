@@ -1,28 +1,36 @@
-<!--
- * @Author: your name
- * @Date: 2021-12-08 17:50:36
- * @LastEditTime: 2021-12-08 18:02:26
- * @LastEditors: Please set LastEditors
- * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: \undefinedc:\Users\qiwzhou\Desktop\InventoryServicePowerApps\Dynamics365Doc\Dynamics-365-Operations\articles\supply-chain\inventory\inventory-visibility-tips.md
--->
+---
+title: Inventory Visibility tips
+description: This topic provides a few tips to consider when setting up and using the Inventory Visibility Add-in.
+author: yufeihuang
+ms.date: 08/02/2021
+ms.topic: article
+ms.search.form:
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: yufeihuang
+ms.search.validFrom: 2021-08-02
+ms.dyn365.ops.version: 10.0.21
+---
 
-# Inventory Visibility Tips
+# Inventory Visibility tips
 
 [!include [banner](../includes/banner.md)]
 
-1. Currently, only Dataverse environments that were created by using LCS are supported. If your Dataverse environment was created in some other way (for example, by using the Power Apps admin center), and if it's linked to your Supply Chain Management environment, you must first contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to fix the mapping issue. You can then install Inventory Visibility.
+Here are a few tips to consider when setting up and using the Inventory Visibility Add-in:
 
-1. If you have more than one LCS environment, create a different Azure AD application for each environment. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the last one that was installed will be valid.
+- Currently, the Inventory Visibility Add-in only supports Dataverse environments that were created using Lifecycle Services (LCS). If your Dataverse environment was created in some other way (for example, by using the Power Apps admin center), and if it's linked to your Supply Chain Management environment, you must first contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) and ask them to fix the mapping issue. They will let you know when your environment is ready for you to install Inventory Visibility.
 
-1. Currently the inventory visibility is not supported for cloud-hosted environment, it is supported for Tier-2+ environments.
+- If you have more than one LCS environment, create a different Azure AD application for each environment. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the last one that was installed will be valid.
 
-1. Currently the API supports querying 100 individual items (ProductID). As for sites and locations, multiple SiteIDs and LocationIDs can be specified in a query and the maximum limit is that **NumOf(SiteID) * NumOf(LocationID) <= 100**.
+- Inventory Visibility isn't currently supported for cloud-hosted environments. It is only supported for tier-2+ environments.
 
-1. The `fno` data source is reserved for Dynamics 365 Supply Chain Management. If your Inventory Visibility Add-in is integrated with Finance and Operations environment, we recommend not to delete fno related configurations in [Data Source](inventory-visibility-configuration.md#data-source-configuration).
+- The API currently supports querying up to 100 individual items by `ProductID`. Multiple `SiteID` and `LocationID` values can also be specified in each query. The maximum limit is defined as `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
-1. Currently, the [partition configuration](inventory-visibility-configuration.md#partition-configuration) consists of 2 base dimensions, SiteId and LocationId, which indicate how the data is distributed. Operations under the same partition can have higher performance with lower cost. This default partition configuration has already been pre-set implicitly. **You do not have to define it by yourself**. Delete or change the default partition configuration may lead to unexpected error. Please do not customize partition configuration.
+- The `fno` data source is reserved for Dynamics 365 Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend against deleting configurations related to `fno` in the [data source](inventory-visibility-configuration.md#data-source-configuration)..
 
-1. Base dimensions that are defined in the partition configuration should not be defined in [Product index hierarchy configuration](inventory-visibility-configuration.md##index-configuration)
+- The [partition configuration](inventory-visibility-configuration.md#partition-configuration) currently consists of two base dimensions (`SiteId` and `LocationId`), which indicate how the data is distributed. Operations under the same partition can deliver higher performance at lower cost. The solution is delivered with this default partition configuration already in place, *so you don't have to define it yourself*. Don't customize the default partition configuration because deleting or changing it is likely to result in an unexpected error.
+
+- Base dimensions that are defined in the partition configuration should not be defined in the [product index hierarchy configuration](inventory-visibility-configuration.md##index-configuration)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

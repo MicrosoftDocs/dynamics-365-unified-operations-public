@@ -2,7 +2,7 @@
 title: Inventory Visibility public APIs
 description: This topic describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
-ms.date: 09/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -471,8 +471,7 @@ Body:
 
 ## Query on-hand
 
-The _Query on-hand_ API is used to fetch current on-hand inventory data for your products.
-Currently the API supports querying 100 individual items (ProductID). As for sites and locations, multiple SiteIDs and LocationIDs can be specified in a query and the maximum limit is that **NumOf(SiteID) * NumOf(LocationID) <= 100**.
+Use the _Query on-hand_ API to fetch current on-hand inventory data for your products. The API currently supports querying up to 100 individual items by `ProductID`. Multiple `SiteID` and `LocationID` values can also be specified in each query. The maximum limit is defined as `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
 
