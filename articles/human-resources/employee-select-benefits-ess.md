@@ -54,7 +54,6 @@ After the employee has selected their plans, the status of the benefits is shown
 > [!IMPORTANT]
 > To complete enrollment, the benefits administrator must select **Confirm** for each employee benefit that is selected. Confirmation can be completed on the **Worker benefits plan** or **Worker benefit plans bulk update** page.
 >
-> ![Worker benefits plan page.](./media/benefits.png)
 
 Employees aren't required to select benefits by using **Employee self service**. Benefits can be selected on behalf of an employee on the **Worker benefits plan** or **Worker benefit plans bulk update** page. The employee won't be enrolled in those benefits until the benefits administrator confirms them.
 
