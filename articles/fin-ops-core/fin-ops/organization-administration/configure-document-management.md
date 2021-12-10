@@ -239,7 +239,7 @@ The following APIs from the `DocumentManagement` class allow developers to speci
 
 If this file content type is not specified correctly, the attached document may not behave as expected. For this reason, if you use these APIs you should consider one of the following courses of action:  
 
--  Pass **null** for the `_fileContentType` parameter in any of the preceeding APIs. Doing so allows the correct content type to be inferred from the file name. 
+-  Pass **null** for the `_fileContentType` parameter in any of the preceding APIs. Doing so allows the correct content type to be inferred from the file name. 
 -  Switch to using one of the following methods that doesn't include a `_fileContentType` parameter. This is to avoid the possibility of passing incorrect file content types.
     -  **attachFileForRecord()**, which replaces attachFileToCommon()
     -  **attachFileForReference()**, which replaces attachFile()
