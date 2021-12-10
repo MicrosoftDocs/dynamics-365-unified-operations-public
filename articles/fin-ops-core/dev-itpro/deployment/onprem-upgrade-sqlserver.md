@@ -4,7 +4,7 @@
 title: Upgrade the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 description: This topic explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using.
 author: faix
-ms.date: 11/29/2021
+ms.date: 12/10/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -75,6 +75,16 @@ All your SQL Server components across an environment must be on the same version
     ```powershell
     LocalAgentCLI.exe Install <path of the new localagent-config.json>
     ```
+
+## Force reading assemblies to the Global Assembly Cache
+
+Typically, when servicing an environment with a package deployment, the Service Fabric package version of the AXSFType changes. This will make the environment carry out additional deployment and servicing operations. When using the **Update Settings** action, the version does not change. As a result, the appropriate assemblies will not be present in the Global Assembly Cache. To force reading assemblies to the Global Assembly Cache, complete the following steps:
+
+1. Go to your aos-storage file share.
+2. Open the **GacAssemblies** folder.
+3. You will see a list of folders corresponding with the names of your AOS nodes. Open any of the folders. 
+4. Rename the existing .txt file to 1.0.txt.
+5. Repeat step 4 for each folder.
 
 ## Update your environment settings
 
