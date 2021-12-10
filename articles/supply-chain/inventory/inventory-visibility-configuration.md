@@ -56,7 +56,7 @@ After the configuration is completed, be sure to select **Update Configuration**
 Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
 
 > [!NOTE]
-> The `fno` data source is reserved for Dynamics 365 Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend against deleting configurations related to `fno` in the data source.
+> The `fno` data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you not delete configurations that are related to `fno` in the data source.
 
 To add a data source, follow these steps.
 
@@ -268,17 +268,17 @@ The `MyCustomAvailableforReservation` output, based on the calculation setting i
 
 ## <a name="partition-configuration"></a>Partition configuration
 
-Currently, the partition configuration consists of two base dimensions (`SiteId` and `LocationId`), which indicate how the data is distributed. Operations under the same partition can deliver higher performance at lower cost. The Inventory Visibility Add-in provides the default partition configuration shown in the following table.
+Currently, the partition configuration consists of two base dimensions (`SiteId` and `LocationId`) that indicate how the data is distributed. Operations under the same partition can deliver higher performance at lower cost. The following table shows the default partition configuration that the Inventory Visibility Add-in provides.
 
 | Base dimension | Hierarchy |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-The solution is delivered with this default partition configuration already in place, *so you don't have to define it yourself*.
+The solution includes this partition configuration by default. Therefore, *you don't have to define it yourself*.
 
 > [!IMPORTANT]
-> Don't customize the default partition configuration because deleting or changing it is likely to result in an unexpected error.
+> Don't customize the default partition configuration. If you delete or change it, you're likely to cause an unexpected error.
 
 ## <a name="index-configuration"></a>Product index hierarchy configuration
 
