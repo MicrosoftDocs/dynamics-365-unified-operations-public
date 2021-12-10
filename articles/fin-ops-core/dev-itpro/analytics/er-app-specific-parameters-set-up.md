@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 8.1.3
 
 [!include[banner](../includes/banner.md)]
 
-[!include[banner](../includes/preview-banner.md)]
-
 ## Prerequisites
 
 To complete these steps, you must first complete the steps in [Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md).

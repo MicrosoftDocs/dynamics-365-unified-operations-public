@@ -4,7 +4,7 @@
 title: Configure a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 author: psimolin
-ms.date: 12/07/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -110,6 +110,12 @@ To enable jobs in Commerce, follow these steps.
     1. Select the record.
     1. On the Action Pane, on **Batch job** tab, select **Change status**.
     1. Select **Canceling**, and then select **OK**.
+
+1. If the status of the job is **Withheld**, follow these steps:
+
+    1. Select the record.
+    1. On the Action Pane, on **Batch job** tab, select **Change status**.
+    1. Select **Waiting**, and then select **OK**.
 
 Optionally, you can also set the recurrence interval to one (1) minute for the following jobs:
 

@@ -4,7 +4,7 @@
 title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -116,6 +116,9 @@ The following work items are slated for future releases:
 ## Troubleshooting
 
 If a user is having trouble signing into or using the Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+### Ensure the Teams Human Resources application is up to date
+If you encounter issues with the Teams Human Resources app, you need to confirm that you are running the latest version. The minimum supported version is 1.1.5. For instructions about how to update a Teams application, see [Teams documentation](/MicrosoftTeams/apps-update-experience).
 
 ### Can't sign into the Human Resources app in Teams
 
