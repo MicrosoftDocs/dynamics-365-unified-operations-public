@@ -471,7 +471,7 @@ Body:
 
 ## Query on-hand
 
-Use the _Query on-hand_ API to fetch current on-hand inventory data for your products. The API currently supports querying up to 100 individual items by `ProductID`. Multiple `SiteID` and `LocationID` values can also be specified in each query. The maximum limit is defined as `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+Use the _Query on-hand_ API to fetch current on-hand inventory data for your products. The API currently supports querying up to 100 individual items by `ProductID` value. Multiple `SiteID` and `LocationID` values can also be specified in each query. The maximum limit is defined as `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
 
