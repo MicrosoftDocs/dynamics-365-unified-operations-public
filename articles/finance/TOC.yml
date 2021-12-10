@@ -70,14 +70,12 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
-          - name: Finance 10.0.24
+          - name: Finance 10.0.24 (February)
             href: get-started/whats-new-changed-10-0-24.md
-          - name: Finance 10.0.23 
+          - name: Finance 10.0.23 (January)
             href: get-started/whats-new-changed-10-0-23.md
           - name: Finance 10.0.22 (November 2021)
             href: get-started/whats-new-changed-10-0-22.md
-          - name: Finance 10.0.21 (October 2021)
-            href: get-started/whats-new-changed-10-0-21.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
