@@ -76,9 +76,9 @@ All your SQL Server components across an environment must be on the same version
     LocalAgentCLI.exe Install <path of the new localagent-config.json>
     ```
 
-## Force reading assemblies to the GAC
+## Force reading assemblies to the Global Assembly Cache
 
-Typically, when servicing an environment with a package deployment, the Service Fabric package version of the AXSFType changes. This will make the environment carry out additional deployment and servicing operations. When using the **Update Settings** action, the version does not change. As a result, the appropriate assemblies will not be present in the GAC. To force reading assemblies to the GAC, complete the following steps:
+Typically, when servicing an environment with a package deployment, the Service Fabric package version of the AXSFType changes. This will make the environment carry out additional deployment and servicing operations. When using the **Update Settings** action, the version does not change. As a result, the appropriate assemblies will not be present in the Global Assembly Cache. To force reading assemblies to the Global Assembly Cache, complete the following steps:
 
 1. Go to your aos-storage file share.
 2. Open the **GacAssemblies** folder.
