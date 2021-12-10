@@ -86,4 +86,11 @@ Make sure that you select the correct date in the **From date** field in the **C
 
 The **Sales tax transactions extension** consistency check is available in build version 10.0.234.21 and later for version 10.0.6 of the application, and for version 10.0.7 and later. In these versions, it's available only when the Date of VAT register feature is turned on in the **Feature management** workspace.
 
+## Sales tax settlement by Date of VAT register
+
+Starting from the 10.0.25 monthly update, the **Sales tax settlement and reporting by date of VAT register** feature is available. This feature enables the possibility to settle and report sales tax by the date of VAT register.
+When the **Sales tax settlement and reporting by date of VAT register** feature is enabled, you can set the **Date of VAT register** option on the **General ledger parameters** page, on the **Sales tax** tab to **Yes**. The periodic settlement will collect sales tax transaction by the Date of VAT register instead of the transaction date.
+
+![Date of VAT register option is ON in GL parameters](./media/GLParameters-DateOfVATRegister.png)
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
