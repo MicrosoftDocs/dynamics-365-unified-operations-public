@@ -111,6 +111,12 @@ To enable jobs in Commerce, follow these steps.
     1. On the Action Pane, on **Batch job** tab, select **Change status**.
     1. Select **Canceling**, and then select **OK**.
 
+1. If the status of the job is **Withheld**, follow these steps:
+
+    1. Select the record.
+    1. On the Action Pane, on **Batch job** tab, select **Change status**.
+    1. Select **Waiting**, and then select **OK**.
+
 Optionally, you can also set the recurrence interval to one (1) minute for the following jobs:
 
 * Process retail order email notification job
