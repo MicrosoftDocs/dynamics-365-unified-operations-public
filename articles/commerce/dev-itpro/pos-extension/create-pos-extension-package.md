@@ -103,7 +103,7 @@ This topic explains how to create a Point of Sale (POS) extension package projec
 10. Build the project to copy the POS dependencies to the project directory.
 
     > [!NOTE]
-    > Building the empty POS Extension project may throw "Payload file doesn't exist" error, at least include one .ts file in the project with POS extensions.
+    > When building the empty POS extension project, you may see the following error, "Payload file doesn't exist". Be sure to include at least one .ts file in the project with POS extensions.
 
 11. Create the manifest file for your extension package:
 
