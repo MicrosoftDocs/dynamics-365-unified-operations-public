@@ -2398,6 +2398,80 @@
           href: headless-commerce-dev-guide-TBD.md
         - name: Overview
           href: developer/headless-commerce-overview.md
+        - name: Commerce runtime (CRT) architecture and configuration
+          href: dev-itpro/commerce-runtime-overview.md
+        - name: Commerce runtime (CRT) services
+          href: dev-itpro/crt-services.md 
+        - name: Commerce runtime (CRT) extensibility
+          href: dev-itpro/commerce-runtime-extensibility.md
+        - name: Commerce Scale Unit customer and consumer APIs
+          href: dev-itpro/retail-server-customer-consumer-api.md
+        - name: Create
+          items:
+          - name: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
+            href: dev-itpro/retail-server-icontroller-extension.md
+          - name: Typescript and C# proxies for Retail point of sale (POS)
+            href: dev-itpro/typescript-proxy-retail-pos.md 
+          - name: Commerce runtime (CRT) extensibility
+            href: dev-itpro/commerce-runtime-extensibility.md
+          - name: Channel database extensions
+            href: dev-itpro/channel-db-extensions.md
+          - name: Enable custom Commerce Data Exchange synchronization via extension
+            href: dev-itpro/cdx-extensibility.md
+          - name: Log extension events to Application Insights
+            href: dev-itpro/commerce-application-insights.md
+          - name: Create custom localized error messages for payment terminal extensions
+            href: dev-itpro/payment-custom-error-messages.md
+        - name: ConsumePre-extended columns in the channel database
+          items:
+          - name: Commerce runtime (CRT) extensibility and triggers
+            href: dev-itpro/commerce-runtime-extensibility-trigger.md
+          - name: Consume Retail Server APIs in external applications
+            href: dev-itpro/consume-retail-server-api.md
+          - name: Define and set order attributes
+            href: dev-itpro/order-attributes.md
+          - name: Customer attributes
+            href: dev-itpro/customer-attributes.md  
+          - name: Manage secrets for retail channels
+            href: dev-itpro/manage-secrets.md
+          - name: Create asynchronous Commerce (CRT) APIs in your business logic
+            href: dev-itpro/async-commerce-extension.md
+          - name: Extend Commerce Data Exchange - Real-time Service
+            href: dev-itpro/extend-commerce-data-exchange.md
+          - name: Extend Commerce Store receipts
+            href: dev-itpro/retail-sdk/retail-sdk-samples.md.md
+          - name: Pre-extended columns in the channel database
+            href: dev-itpro/extended-columns.md            
+        - name: Extend
+          items:
+          - name: Commerce runtime (CRT) extensibility and triggers
+            href: dev-itpro/commerce-runtime-extensibility-trigger.md
+          - name: Block transactions by using triggers
+            href: dev-itpro/trigger-example-blocking-transaction.md
+          - name: Loyalty extension sample
+            href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+          - name: Extension points for packing slips during order fulfillment
+            href: dev-itpro/extensions-shipping-carrier-integration.md  
+          - name: Extend Commerce Store receipts
+            href: dev-itpro/retail-sdk/retail-sdk-samples.md
+          - name: Enable duplicate payment protection for payment connector
+            href: dev-itpro/duplicate-payments-protection.md
+          - name: Dynamics 365 payment data use
+            href: payment-connector-data-fields.md
+          - name: Localize Commerce extension resources and label files
+            href: dev-itpro/extension-resource-localization         
+        - name: Packaging and deployment
+          items:
+          - name: Set up a build pipeline for the independent-packaging SDK
+            href: dev-itpro/build-pipeline.md
+          - name: Set up Commerce SDK build pipeline
+            href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+          - name: Deploy payment connectors
+            href: dev-itpro/deploy-payment-connector.md
+          - name: Create Commerce payment packaging for Finance and Operations deployment
+            href: dev-itpro/payment-connector-package.md  
+          - name: Remove Cloud Scale Unit extensions
+            href: dev-itpro/retail-sdk/remove-csu-package.md         
       - name: Store Commerce
         items:
         - name: Store Commerce Developer Guide
