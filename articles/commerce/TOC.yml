@@ -2379,7 +2379,7 @@
     - name: Developer
       items:   
       - name: Commerce Developer Guide
-        href: developer/commerce-dev-guide.md
+        href: developer/commerce-dev-guide-TBD.md
       - name: Commerce SDK
         items:
         - name: Getting Started
@@ -2395,125 +2395,127 @@
       - name: Headless Commerce
         items:
         - name: Headless Commerce Developer Guide
-          href: headless-commerce-dev-guide.md
+          href: headless-commerce-dev-guide-TBD.md
         - name: Overview
           href: developer/headless-commerce-overview.md
       - name: Store Commerce
         items:
         - name: Store Commerce Developer Guide
-          href: developer/store-comm-dev-guide.md
+          href: developer/store-comm-dev-guide-TBD.md
           - name: POS
             items:
             - name: Getting Started
               items: 
-              - name: 
-                href:
-              - name:
-                href:
-              - name:
-                href:
-              - name:
-                href:
-              - name:
-                href:
-              - name:
-                href:
-              - name:
-                href:
-              - name:
-                href:
+              - name: POS extension overview
+                href: dev-itpro/pos-extension/pos-extension-overview.md
+              - name: View POS extension package information
+                href: dev-itpro/view-pos-extension-package-details.md
+              - name: Debug POS extensions
+                href: dev-itpro/pos-extension/debug-pos-extension.md
+              - name: Create a POS extension package project
+                href: dev-itpro/pos-extension/create-pos-extension-package
+              - name: Create an .appx file for a Modern POS extension package
+                href: dev-itpro/pos-extension/create-pos-extension-appx.md
+              - name: Getting started with POS extensions
+                href: dev-itpro/pos-extension/pos-extension-getting-started.md
+              - name: POS extension basics
+                href: dev-itpro/pos-extension/pos-extension-basics.md
+              - name: Migrate a POS extension to the independent packaging model
+                href: dev-itpro/pos-extension/migrate-pos-extension.md
             - name: Create
               items:
-              - name:
-                href:
-              - name:
-                href:
-              - name:
-                href: 
+              - name: Custom control
+                href: custom-control-TBD.md
+              - name: Create a custom view in POS
+                href: dev-itpro/pos-extension/custom-pos-view.md
+              - name: Add POS operations to POS layouts by using Button grid designer
+                href: dev-itpro/add-pos-operations.md
             - name: Consume
               items: 
-              - name: 
-                href:
-              - name:
-                href:
-              - name:
-                href:
-              - name:
-                href:
-              - name:
-                href: 
+              - name: Point of sale (POS) APIs
+                href: dev-itpro/pos-apis.md
+              - name: Call point of sale (POS) APIs or operations from POS extensions
+                href: dev-itpro/pos-api-extension.md
+              - name: Formatters
+                href: formatters-TBD.md
+              - name: Use POS controls in extensions
+                href: dev-itpro/pos-extension/controls-pos-extension.md
+              - name: Consume custom headless Commerce APIs and entities in POS
+                href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Extend
               items:
               - name: Views
                 items:
-                - name: 
-                  href:
-                - name: 
-                  href:
-                - name: 
-                  href:
-                - name: 
-                  href:
-                - name: 
-                  href:
+                - name: Add custom controls to POS views
+                  href: /dev-itpro/pos-custom-control.md
+                - name: Add custom controls to non-screen designer-based POS views
+                  href: dev-itpro/pos-control-non-screen.md
+                - name: Extend the point of sale (POS) Dual display view
+                  href: dev-itpro/pos-dual-display-extension.md
+                - name: Add custom buttons to the POS header bar
+                  href: dev-itpro/pos-header-bar.md
+                - name: Extend POS views to add custom columns and app bar buttons
+                  href: dev-itpro/pos-view-extension.md
                 - name: CartView
                   items:
-                  - name:
-                    href:
-                  - name:
-                    href:
-                  - name:
-                    href:
-                  - name:
-                    href:
-                  - name:
-                    href:
+                  - name: POS Cart view events and handlers
+                    href: dev-itpro/cart-view-handlers.md
+                  - name: Add custom fields to the point of sale (POS) Totals panelAdd custom controls to Modern POS (MPOS) transaction pages
+                    href: dev-itpro/custom-field-pos-totals.md
+                  - name: Add custom columns to a point of sale (POS) transaction gridPoint of sale (POS) payment extension
+                    href: dev-itpro/pos-custom-transaction-column.md
+                  - name: Add custom controls to Modern POS (MPOS) transaction pages
+                    href: dev-itpro/pos-custom-transaction.md
+                  - name: Custom grid item subfields 
+                    href: custom-grid-item-subfields-TBD.md 
               - name: Triggers
                 items:
-                - name: 
-                  href:
+                - name: POS triggers
+                  href: dev-itpro/pos-trigger-printing.md
               - name: RequestHandlers
                 items:
-                - name: 
-                  href:
-                - name: 
-                  href:
+                - name: Override POS request handler
+                  href: dev-itpro/pos-handler.md
+                - name: Point of sale (POS) payment extension
+                  href: dev-itpro/pos-payment-extension.md
               - name: Payments
                 items:
-                - name: 
-                  href:
-                - name: 
-                  href:
+                - name: Point of sale (POS) payment extension
+                  href: dev-itpro/pos-payment-extension.md
+                - name: Support for tipping in the payments SDK
+                  href: dev-itpro/tipping.md
           - name: Packaging and deployment
             items:
-            - name:
-              href:
-            - name:
-              href:
-            - name:
-              href:
-            - name:
-              href:
-            - name:
-              href:
+            - name: Create a Modern POS extension package
+              href: dev-itpro/pos-extension/mpos-extension-packaging.md
+            - name: Create a Cloud POS extension package
+              href: dev-itpro/pos-extension/cpos-extension-package.md
+            - name: Code signing a Modern POS (MSIX) extension package
+              href: dev-itpro/pos-extension/mpos-extension-signing.md
+            - name: Sign MPOS appx with a code signing certificate
+              href: dev-itpro/pos-app-signing-certificate.md
+            - name: Create Commerce payment packaging for Finance and Operations deployment
+              href: dev-itpro/payment-connector-package.md
           - name: Advanced
             items:
-            - name:
-              href:
-            - name:
-              href:
+            - name: Consume external or third party libraries like Knockout.js in POS extensions
+              href: dev-itpro/pos-extension/knockout-pos-extension.md
+            - name: Create Commerce payment packaging for Finance and Operations deployment
+              href: dev-itpro/payment-connector-package.md
           - name: Hardware Station
             items:
-            - name:
-              href:
-            - name:
-              href:
-            - name:
-              href:
-            - name:
-              href:
-            - name:
-              href: 
+            - name: Integrate the POS with a new hardware device and generate the extension installer
+              href: dev-itpro/hardware-device-extension.md
+            - name: Create an end-to-end payment integration for a payment terminal
+              href: dev-itpro/end-to-end-payment-extension.md
+            - name: Create custom localized error messages for payment terminal extensions
+              href: dev-itpro/payment-custom-error-messages.md
+            - name: Incremental capture for order invoicing
+              href: dev-itpro/incremental-capture.md
+            - name: Dynamics 365 payment data use
+              href: payment-connector-data-fields.md
+            - name: Enable duplicate payment protection for payment connector
+              href: dev-itpro/duplicate-payments-protection.md
           - name: Retail SDK (Deprecated)
             items:
             - name: Retail software development kit (SDK)
