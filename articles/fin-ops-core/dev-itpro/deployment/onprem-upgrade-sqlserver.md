@@ -76,6 +76,16 @@ All your SQL Server components across an environment must be on the same version
     LocalAgentCLI.exe Install <path of the new localagent-config.json>
     ```
 
+## Force readding assemblies to GAC
+
+Usually, when doing servicing an environment with a package deployment the Service Fabric package version of the AXSFType changes. This will make the environment carry out additional deployment and servicing operations. When using the **Update Settings** action, the version does not change. As such the appropriate assemblies will not be present in the GAC.
+
+1. Go to your aos-storage fileshare.
+2. Open the **GacAssemblies** folder.
+3. You will see a list of folders corresponding with the names of your AOS nodes. Open any of the folders. 
+4. Rename the existing .txt file to 1.0.txt
+5. Repeat step 4 for each folder.
+
 ## Update your environment settings
 
 1. In [LCS](https://lcs.dynamics.com), select the **Full Details** link for the environment where you want to update the SQL Server.
