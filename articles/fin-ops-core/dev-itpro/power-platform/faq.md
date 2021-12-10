@@ -127,4 +127,12 @@ When virtual entities have relationships to other entities, the virtual entity f
 
 An example of this issue is explained in [Optimize Dataverse virtual table queries](../../../human-resources/hr-developer-optimize-virtual-table-queries.md).
 
+### The Microsoft Power Platform integration is enabled, linking my Finance and Operations environment to a Power Platform environment. Can I still configure virtual entities to connect other Power Platform environments to the Finance and Operations environment?
+
+While some features of the Microsoft Power Platform integration, like the [synchronization of business events and data events with Dataverse](../business-events/business-events-flow#using-the-dataverse-connector), will only work between the Finance and Operations apps and Power Platform environments linked through the Microsoft Power Platform integration, it is still possible to manually configure virtual entities between multiple Power Platform environments and the Finance and Operations environment. 
+
+When the Microsoft Power Platform integration is enabled, the Finance and Operations environment is linked to a single Power Platform environment. This becomes a one-to-one environment relationship for the integration. When this is enabled, the virtual entities are automatically configured between the two environments. This means that the manual virtual entity configuration defined in the [Configure Dataverse virtual entities documentation](./admin-reference) is not required. If any manual virtual entity configuration was done prior to enabling the Microsoft Power Platform integration between the two environments, the manual configuration will be ignored after enabling the integration, and the automatic configuration will be used to connect the two environments.
+
+Although the automatic virtual entity configuration will be used for the Power Platform environment linked to the Finance and Operations environment through the Microsoft Power Platform integration, virtual entities can be manually configured in additional Power Platform environments to enable virtual entities for the Finance and Operations environment with more than one Power Platform environment.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
