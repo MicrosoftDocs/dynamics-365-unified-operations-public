@@ -52,7 +52,7 @@ The Adventure Works theme package is available in the **dynamics365-commerce** f
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`	
 	
-To install the package in your local environment, run the `yarn add THEME_PACKAGE@VERSION` command from the command prompt, where **THEME_PACKAGE** is the theme package (@msdyn365-commerce-theme/adventureworks-theme-kit) and **VERSION** is the version number of the module library being used. It is important that the versions of the theme package and the module library match. To find the correct module library version number to use, open the package.json file and locate the **starter-pack** value under the **depencencies** section. In the following example, the package.json file uses version 9.32 of the module library which maps to the Dynamics 365 Commerce version 10.0.22 release.  
+To install the package in your local environment, run the `yarn add THEME_PACKAGE@VERSION` command from the command prompt, where **THEME_PACKAGE** is the theme package (@msdyn365-commerce-theme/adventureworks-theme-kit) and **VERSION** is the version number of the module library being used. It is important that the versions of the theme package and the module library match. To find the correct module library version number to use, open the package.json file and locate the **starter-pack** value under the **dependencies** section. In the following example, the package.json file uses version 9.32 of the module library which maps to the Dynamics 365 Commerce version 10.0.22 release.  
 
 ```json
 "dependencies": {
@@ -64,7 +64,7 @@ The following example shows how to run the `yarn add` command to add version 9.3
 
 `yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.32`
 
-For more information about updating the module libray version see the [SDK and module library updates](e-commerce-extensibility/sdk-updates.md) topic. 
+For more information about updating the module library version, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md). 
 
 > [!IMPORTANT]
 > - The theme version should match the module library version to ensure that all features work as expected. 
