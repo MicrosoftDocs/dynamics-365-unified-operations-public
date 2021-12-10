@@ -818,6 +818,10 @@
       items:
       - name: Customer management in stores
         href: customer-mgmt-stores.md
+      - name: Asynchronous customer creation mode
+        href: async-customer-mode.md
+      - name: Convert asynchronous customers to synchronous customers
+        href: convert-async-to-sync.md
       - name: Clienteling
         items:
         - name: Clienteling overview
