@@ -1014,7 +1014,7 @@
           href: lifecycle-services/use-translation-service-tm.md
     - name: Microsoft Power Platform integration
       items:
-      - name: Microsoft Power Platform integration with Finance and Operations
+      - name: Overview
         href: power-platform/overview.md
       - name: Enabling the Power Platform integration
         href: power-platform/enable-power-platform-integration.md
