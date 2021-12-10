@@ -30,7 +30,7 @@ If an order references an asynchronous customer or address that hasn't yet been 
 
 ## Additional resources
 
-[Customer management in stores](/customer-mgmt-stores.md)
+[Customer management in stores](customer-mgmt-stores.md)
 
 [Asynchronous customer creation mode](async-customer-mode.md)
 
