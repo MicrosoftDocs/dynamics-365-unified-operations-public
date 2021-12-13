@@ -4,7 +4,7 @@
 title: Apply updates and extensions to Commerce Scale Unit (cloud)
 description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
-ms.date: 07/15/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,7 +67,7 @@ Both **Apply updates** and **Apply extension** operations will involve a period 
 ### Troubleshooting updates
 
 #### Potential downgrade
-When applying an update to a Commerce Scale Unit in your enviornment, you may see an error message about version downgrade detection.
+When applying an update to a Commerce Scale Unit in your enviornment, you may be shown an error message about version downgrade detection.
 
 **Error message** 
 
@@ -75,12 +75,12 @@ When applying an update to a Commerce Scale Unit in your enviornment, you may se
 
 **Explanation** 
 
-This issue occurs when your Commerce Scale Unit currently has a Quality Update (aka hotfix) applied, which might not be included in the Service Update that you are attempting to update to. This may be because the newest Service Update does not yet have the latest Quality Update issued, or because you may be manually updating to a version of a Service Update which is not the latest available version.
+This issue occurs when your Commerce Scale Unit has a Quality Update (hotfix) applied that may not be included in the Service Update that you are attempting to apply. This may be because the newest Service Update does not yet have the latest Quality Update issued (this is rare), or because you may be manually updating to a version of a Service Update that is not the latest available version.
 
 **Resolution** 
 
-1. Make sure you have selected the latest available version of the Service Update during the update process
-2. On the rare occasion when the latest Quality Update (aka hotfix) is not yet available on the desired Service Update, please wait up to 3 business days and try again. If the issue persists, you may file a support request.
+1. Make sure you selected the most recent version of the Service Update during the update process.
+2. If the latest Quality Update is not yet available in the Service Update, wait up to three business days and try again. If the issue persists, you may want to file a support request.
 
 ## View history
 To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
