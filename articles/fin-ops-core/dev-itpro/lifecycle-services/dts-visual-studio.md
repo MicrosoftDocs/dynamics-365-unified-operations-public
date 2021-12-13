@@ -49,7 +49,8 @@ You can also access the DTS commands by right-clicking a file in your solution.
 |--------------------|----------|-------------|
 | Request name       |  Yes  |  Enter a name for the request.           |      
 | Product            |  Yes  | The product type.             | 
-| Project            |  Yes  |  The project containing the resource files.<br><br>If your solution has multiple projects, you can use this dropdown to select the correct one.|  | Source language    |  Yes  |    Language of the source file(s).   |       
+| Project            |  Yes  |  The project containing the resource files.<br><br>If your solution has multiple projects, you can use this dropdown to select the correct one.  |  
+| Source language    |  Yes  |    Language of the source file(s).   |       
 | Source files       |  Yes  |    Resource files for translation.<br><br>he source file list will be populated with resource files referenced within the selected project. You may select one or more.       |       
 | Target language    |  Yes  |     Languages for source files to be translated into.<br><br>You may only translate into a target language for which a resource file already exists. Language names that are shown in bold are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific machine translation (MT) models are available in those languages, and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training.        | 
 | Translation memory |  No   | Translation memory file(s) for a particular target langauge.  (The .zip file containing TMs for recycling. ) |    
