@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Regulatory updates
-description: This topic provides a list of links of planned and released country-specific features for Microsoft Dynamics 365 Finance.
+title: Country-specific regulatory features
+description: This topic provides a list of links of planned and released country-specific regulatory features for Microsoft Dynamics 365 Finance.
 author: AKroshkina
 ms.date: 12/13/2021
 ms.topic: article
@@ -24,7 +24,7 @@ ms.dyn365.ops.version: 10.0
 
 ---
 
-This topic provides a list of links of planned and released country-specific features for Microsoft Dynamics 365 Finance.
+This topic provides a list of links of planned and released country-specific regulatory features for Microsoft Dynamics 365 Finance.
 Please note that sign-in to LCS will be required to access this information.
 
 | **Country**          | **LCS issue search**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
