@@ -2,7 +2,7 @@
 title: Currency data-type migration for dual-write
 description: This topic describes how to change the number of decimal places that dual-write supports for currency.
 author: RamaKrishnamoorthy 
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -78,9 +78,20 @@ If you require that the currency precision for a specific currency differ from t
 
 ![Currency settings for a specific locale.](media/specific-currency.png)
 
-### tables: Currency column
+### Tables: Currency column
 
 The number of decimal places that can be configured for specific currency columns is limited to four.
 
+### Default currency decimal precision
+For the expected behavior for the default currency decimal precision under migration and non-migration scenarios, refer to the following table. 
+
+| Created date  | Currency decimal field    | Existing org (Currency field not migrated) | Existing org (Currency field migrated) | New org created post build 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Currency field created before build 9.2.21111.00146  |     |  |       |
+|    | Max precision visible in UI   | 4 digits    | 10 digits    | N/A    |
+| | Max precision visible in database and DB query results UI         | 4 digits   | 10 digits   | N/A    |
+| Currency field created after build 9.2.21111.00146 |    |  |     |   |
+|   | Max decimal precision visible in UI     | 4 digits   | 10 digits   | 10 digits     |
+|          | Max decimal precision visible in database and DB query results UI | 10 digits. However, only 4 are significant with all zeros beyond the 4 decimal digits. This enables a simpler and faster migration of the org, if required. | 10 digits      | 10 digits     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
