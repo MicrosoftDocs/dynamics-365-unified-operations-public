@@ -32,6 +32,8 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 This topic provides information about how to set up and configure the Electronic invoicing solution in Microsoft Dataverse.
 
 ## Prerequisites
