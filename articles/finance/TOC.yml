@@ -1530,7 +1530,7 @@
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
-      - name: How to find regulatory updates
+      - name: Search for regulatory updates
         href: localizations/search-for-regulatory-updates.md
       - name: Australia
         items:
