@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 11/28/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -460,7 +460,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
 2. In the **Base URL** field, enter `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
-3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services to interoperate with *sandbox APIs* provided by Tax Administration of Norway.
+3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services to interoperate with the *sandbox APIs* that are provided by the Tax Administration of Norway.
 
     | Web service name | Internet address |
     |---|---|
@@ -472,7 +472,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
     | NO Altinn GET attachments | Leave this field blank. |
     | NO Validate VAT return | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
-For *production* interoperation with web services provided by the Tax Administration of Norway, use the following **Internet address**.
+For *production* interoperation with web services that are provided by the Tax Administration of Norway, use the following Internet address.
 
 | Web service name | Internet address |
 |---|---|
