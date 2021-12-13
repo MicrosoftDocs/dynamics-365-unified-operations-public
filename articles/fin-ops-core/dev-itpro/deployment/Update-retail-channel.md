@@ -67,7 +67,7 @@ Both **Apply updates** and **Apply extension** operations will involve a period 
 ### Troubleshooting updates
 
 #### Potential downgrade
-When applying an update to a Commerce Scale Unit in your enviornment, you may be shown an error message about version downgrade detection.
+When applying an update to a Commerce Scale Unit in your environment, you may be shown an error message about version downgrade detection.
 
 **Error message** 
 
