@@ -4,7 +4,7 @@
 title: Trickle feed-based order creation for retail store transactions
 description: This topic describes the trickle feed-based order creation for store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/08/2021
+ms.date: 12/13/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 Commerce version 10.0.5 and later, we recommend that you transition all statement posting processes to the trickle feed–based statement posting processes. Significant performance and business benefits are associated with using the trickle feed functionality. Sales transactions are processed throughout the day. Only financial reconciliation of tenders and cash management transactions are processed at the end of the day. Trickle feed functionality enables the continuous processing of sales orders, invoices, and payments. Therefore, inventory, revenue, and payments can be updated and recognized in near-real time.
+In Microsoft Dynamics 365 Commerce version 10.0.5 and later, we recommend that you transition all statement posting processes to the trickle feed–based statement posting processes. Significant performance and business benefits are associated with using the trickle feed functionality. Sales transactions are processed throughout the day. Only financial reconciliation of tenders and cash management transactions is processed at the end of the day. Trickle feed functionality enables the continuous processing of sales orders, invoices, and payments. Therefore, inventory, revenue, and payments can be updated and recognized in near-real time.
 
 ## Use trickle feed-based posting
 
