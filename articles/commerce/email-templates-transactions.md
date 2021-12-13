@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.8
 # Create email templates for transactional events
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 
