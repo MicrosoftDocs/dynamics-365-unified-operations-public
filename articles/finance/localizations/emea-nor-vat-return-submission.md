@@ -4,7 +4,7 @@
 title: Submit a VAT return to the Altinn web service
 description: This topic explains how to submit a VAT return to the Altinn web service of Norway.
 author: liza-golub
-ms.date: 11/28/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -96,9 +96,9 @@ Follow these steps to add a free-text note that is limited to 4,000 characters.
 4. Select **Attachments**, and then, on the Action Pane, select **New** \> **Note**.
 5. In the **Note** field, enter your note. This note will be included on the VAT return in XML format when it's generated.
 
-Follow these steps to include a payment ID (KID number) into your digital VAT return. This KID number can only be used in case when `<fastsattMerverdiavgift>` value (total value added tax for the reporting period) is negative.
+Follow these steps to include a payment ID, or KID number, in your digital VAT return. This KID number can only be used when the `<fastsattMerverdiavgift>` value (total value added tax for the reporting period) is negative.
 
-1. On the **Messages** FastTab, select the electronic message to specify KID number for.
+1. On the **Messages** FastTab, select the electronic message to specify the KID number for.
 2. On the **Message additional fields** FastTab, select the **NO VAT Payment ID** additional field.
 3. In the **Field value** column, specify the KID number.
 
