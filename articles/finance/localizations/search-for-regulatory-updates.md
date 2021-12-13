@@ -1,5 +1,30 @@
-﻿For more details on planned and released localization features, refer to
+---
+# required metadata
 
+title: Regulatory updates
+description: This topic provides a list of links of planned and released country-specific features for Microsoft Dynamics 365 Finance.
+author: AKroshkina
+ms.date: 12/13/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+# ms.custom
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: roschlom
+ms.dyn365.ops.version: 10.0
+
+---
+
+This topic provides a list of links of planned and released country-specific features for Microsoft Dynamics 365 Finance.
 Please note that sign-in to LCS will be required to access this information.
 
 | **Country**          | **LCS issue search**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
