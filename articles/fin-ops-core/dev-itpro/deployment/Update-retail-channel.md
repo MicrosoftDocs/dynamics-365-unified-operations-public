@@ -64,6 +64,24 @@ Both **Apply updates** and **Apply extension** operations will involve a period 
 > [!NOTE]
 > Applying an extension and an update at the same time requires a single downtime, and can be an effective way of averting multiple downtimes.
 
+### Troubleshooting updates
+
+#### Potential downgrade
+When applying an update to a Commerce Scale Unit in your enviornment, you may see an error message about version downgrade detection.
+
+**Error message** 
+
+"The operation was canceled because a potential downgrade was identified from version 'X.XX.XXXXX.X' to version 'X.XX.XXXXX.X'"
+
+**Explanation** 
+
+This issue occurs when your Commerce Scale Unit currently has a Quality Update (aka hotfix) applied, which might not be included in the Service Update that you are attempting to update to. This may be because the newest Service Update does not yet have the latest Quality Update issued, or because you may be manually updating to a version of a Service Update which is not the latest available version.
+
+**Resolution** 
+
+1. Make sure you have selected the latest available version of the Service Update during the update process
+2. On the rare occasion when the latest Quality Update (aka hotfix) is not yet available on the desired Service Update, please wait up to 3 business days and try again. If the issue persists, you may file a support request.
+
 ## View history
 To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
 
