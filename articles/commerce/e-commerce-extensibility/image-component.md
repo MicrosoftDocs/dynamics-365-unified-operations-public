@@ -2,7 +2,7 @@
 # required metadata
 
 title: Image component
-description: This topic describes how to use the online SDK Image component to embed images into a module in Microsoft Dynamics 365 Commerce.
+description: This topic describes how to use the Image component in the online SDK to embed images into a module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 12/09/2021
 ms.topic: article
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the online SDK Image component to embed images into a module in Microsoft Dynamics 365 Commerce. The Image component optimizes image sizes using the Dynamics 365 image resizer service, which allows appropriately sized images to load for the various viewports layouts a module supports. The Image component also supports fallback and thumbnail images.
+This topic describes how to use the Image component in the online software development kit (SDK) to embed images into a module in Microsoft Dynamics 365 Commerce. The Image component uses the Dynamics 365 image resizer service to optimize image sizes, so that appropriately sized images can be loaded for the different viewport layouts that a module supports. The Image component also supports fallback and thumbnail images.
 
-## Use the Image component within a module
+## Use the Image component in a module
 
-The Image component can be used within a module by including a reference to **@msdyn365-commerce/core** as shown in the following example:
+You can use the Image component in a module by including a reference to **@msdyn365-commerce/core**, as shown in the following example.
 
 ```typescript
 import { IImageData, IImageSettings, Image } from '@msdyn365-commerce/core';
@@ -41,7 +41,7 @@ import { IImageData, IImageSettings, Image } from '@msdyn365-commerce/core';
 
 ## ImageSettings class
 
-The **Image** component takes in an **ImageSettings** class that defines the behavior of the image. The **ImageSettings** class allows the configuration of the image dimension for various view port sizes, lazy loading, and image quality optimization. When using an image configuration within a module, these values are set from within Commerce site builder and returned for use when rendering the image, as shown in the following example interface.
+The Image component takes in an **ImageSettings** class that defines the behavior of the image. The **ImageSettings** class enables the configuration of image dimensions for different viewport sizes. It also enables the configuration of lazy loading and image quality optimization. When an image configuration is used in a module, the configuration values are set in Commerce site builder. They are then returned and used when the image is rendered, as shown in the following example interface.
 
 ```typescript
 export interface IImageSettings {
@@ -82,23 +82,29 @@ export interface IImageDimension {
 
 ### ImageSettings viewport configuration
 
-In general, the **ImageSettings** instance will automatically be populated from the site builder image configuration. However, if you are manually constructing the object it is useful to know the query string parameter values that the image resizer uses to render the images in case you need to mock the data for testing purposes. To ensure the image resizer service handles an image correctly the appropriate query string parameter "q" must be set on the **ImageDimension** instance using the format `w=WIDTH_NUMBER&h=HEIGHT_NUMBER&m=MODE_NUMBER`, where **WIDTH_NUMBER** and **HEIGHT_NUMBER** are the width and height values in pixels (0-3000) and **MODE_NUMBER** specifies the image resizer mode to use. Alternatively, if the "q" parameter is not provided the width and height values will be taken from the "w" and "h" parameters of the **viewports** property, and the image resizer mode will be taken from the **mode** property of the **IImageSettings** object. Some modes may crop an image and if the image aspect ratio doesn't match, the background color will be used to fill in the background.
+In general, the **ImageSettings** instance is automatically filled in with information from the image configuration in site builder. However, if you're manually constructing the object, it's useful to know the query string parameter values that the image resizer uses to render the images, in case you have to mock the data for testing purposes.
 
-The following image resizer modes are supported:
+To ensure that the image resizer service handles an image correctly, the appropriate "q" query string parameter must be set on the **ImageDimension** instance. The format is `w=WIDTH_NUMBER&h=HEIGHT_NUMBER&m=MODE_NUMBER`, where **WIDTH_NUMBER** and **HEIGHT_NUMBER** specify the width and height values in pixels (0–3000), and **MODE_NUMBER** specifies the image resizer mode to use.
+
+If the "q" parameter isn't provided, the width and height values will be taken from the "w" and "h" parameters of the **viewports** property. The image resizer mode will be taken from the **mode** property of the **IImageSettings** object.
+
+Some image resizer modes might clip (crop) an image. If the aspect ratio of the cropped image doesn't match the aspect ratio of the original image, the background color will be used to fill in the remaining region.
+
+The following table describes the image resizer modes that are supported.
 
 | Mode | Title | Description |
-| :----: | :----: | ---- |
-| 1 | letter-box | This mode scales an image from its original dimension to a requested dimension while maintaining the aspect ratio of the original image. If the aspect ratio of the requested dimension isn't the same as the aspect ratio of the original image, a background color is used to fill in the remaining region. |
-| 2 | scale | This mode scales an image from its original dimension to a requested dimension while maintaining the aspect ratio of the original image. This mode is the default mode if no mode is set.|
-| 3 | stretch | This mode scales an original image from its original dimension to a requested dimension while not maintaining the aspect ratio of the original image. |
-| 4 | crop | This mode scales an image from its original dimension to a requested dimension while maintaining the aspect ratio of the original image. If the aspect ratio of the requested dimension isn't the same as the aspect ratio of the original image, areas that fall within the boundaries of the requested dimension are clipped and retained. If the original image layout is landscape, the clipped region is centered (horizontally and vertically) on the original image; if however the image layout is portrait, it is centered horizontally and 30% from the top of the original image (to capture a face).|
-| 5 | focal-crop | This mode is a variation of the standard crop where the area to crop is determined by a specified focal point. This mode scales an image from its original dimension to a requested dimension while maintaining the aspect ratio of the original image. If the aspect ratio of the requested dimension isn't the same as the aspect ratio of the original image, areas that fall within the boundaries of the requested dimension are clipped and retained. If the original image layout is landscape, the clipped region is centered (horizontally and vertically) on the original image; if however image layout is portrait, it is centered horizontally and 1/6 from the top of the original image (to capture a face). The location of the clipped region is configured either via the web.config (affecting all images) or the URL (affecting only the requested image). |
-| 6 | facial crop | This mode scales an image from its original dimension to a requested dimension while maintaining the aspect ratio of the original image. If the aspect ratio of the requested dimension is not the same as the aspect ratio of the original image, areas that fall within the boundaries of the requested dimension are clipped and retained. This mode is a variation of the focal crop where the area to crop is determined by a focal region centered on automatically detected faces. The clipped region is centered within an automatically detected collection of faces. |
-| 8 | custom crop | In this mode, the area to crop is determined by a region specified using query parameters. This mode first crops the image to a region specified by query parameters and then scales the cropped image to a requested dimension. Depending on what other settings are specified in the query parameters (such as scaling up enabled, scaling down enabled, and letterboxing enabled), scaling and letterboxing actions may be performed. |
+| ---- | ---- | ---- |
+| 1 | letter-box | This mode scales an image from its original dimensions to the requested dimensions and maintains the aspect ratio of the original image. If the aspect ratio of the requested dimensions doesn't match the aspect ratio of the original image, a background color is used to fill in the remaining region. |
+| 2 | scale | This mode scales an image from its original dimensions to the requested dimensions and maintains the aspect ratio of the original image. This mode is the default mode if no mode is set. |
+| 3 | stretch | This mode scales an image from its original dimensions to the requested dimensions but doesn't maintain the aspect ratio of the original image. |
+| 4 | crop | <p>This mode scales an image from its original dimensions to the requested dimensions and maintains the aspect ratio of the original image. If the aspect ratio of the requested dimensions doesn't match the aspect ratio of the original image, regions that fall inside the boundaries of the requested dimensions are cropped and retained.</p><p>If the original image layout is landscape, the cropped region is centered both horizontally and vertically on the original image. However, if the image layout is portrait, the cropped region is centered horizontally and 30 percent from the top of the original image, to capture a face.</p> |
+| 5 | focal-crop | <p>This mode is a variation of the standard **crop** mode. In this case, the region to crop is determined by a specified focal point. This mode scales an image from its original dimensions to the requested dimensions and maintains the aspect ratio of the original image. If the aspect ratio of the requested dimensions doesn't match the aspect ratio of the original image, regions that fall inside the boundaries of the requested dimensions are cropped and retained.</p><p>If the original image layout is landscape, the cropped region is centered both horizontally and vertically on the original image. However, if the image layout is portrait, the cropped region is centered horizontally and one-sixth from the top of the original image, to capture a face.</p><p>The location of the cropped region can be configured via the web.config file. In this case, the configuration affects all images. Alternatively, it can be configured via the URL. In this case, the configuration affects only the requested image. |
+| 6 | facial crop | This mode is a variation of the **focal-crop** crop mode. In this case, the region to crop is determined by a focal region that is centered on automatically detected faces. This mode scales an image from its original dimensions to the requested dimensions and maintains the aspect ratio of the original image. If the aspect ratio of the requested dimensions doesn't match the aspect ratio of the original image, regions that fall inside the boundaries of the requested dimensions are cropped and retained. The cropped region is centered in an automatically detected collection of faces. |
+| 8 | custom crop | This mode first crops the image to the region that is specified by query string parameters. It then scales the cropped image to the requested dimensions. Depending on other settings that are specified in the query string parameters, scaling and letterboxing actions might also be performed. |
 
 ## Example of Image component usage
 
-The following example shows how the Image component and the **ImageSettings** class can be used within a module. A **defaultImageSettings** variable is declared that sets the width, height, scaling mode, and background color values if none are provided in site builder, which can occur when debugging in a development environment where no values are provided in the module mocks. 
+The following example shows how the Image component and the **ImageSettings** class can be used in a module. A **defaultImageSettings** variable is declared to set the width, height, scaling mode, and background color values if these values aren't provided in site builder. (Values might not be provided in site builder if you're debugging in a development environment where no values are provided in the module mocks.)
 
 ```typescript
 import * as React from 'react';
@@ -109,7 +115,7 @@ import { IProductFeatureProps } from './product-feature.props.autogenerated';
 export default (props: IProductFeatureProps<IProductFeatureData>) => {
     const {} = props;
 
-    // Constuct the default image settings if settings are not found in the theme settings file
+    // Construct the default image settings if settings are not found in the theme settings file
     const defaultImageSettings: IImageSettings = {
         viewports: {
             xs: { w: 100, h: 200 },
@@ -140,7 +146,7 @@ export default (props: IProductFeatureProps<IProductFeatureData>) => {
 };
 ```
 
-In the example above, the module uses a **productImage** module configuration that specifies **"type": "image"**, as shown in the example module definition file below. This implementation allows the page author to configure an image for the module within site builder, and also allows the configuration of a focal point for each module image that is passed to the image resizer service.
+In the preceding example, the module uses a **productImage** module configuration that specifies **"type": "image"**, as shown in the following example of a module definition file. This implementation lets the page author configure an image for the module in site builder. It also enables a focal point to be configured for each module image that is passed to the image resizer service.
 
 ```json
 {
@@ -166,9 +172,11 @@ In the example above, the module uses a **productImage** module configuration th
 }
 ```
 
-### Support module layouts from within a theme
+### Support module layouts in a theme
 
-A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module layouts that each have their own **ImageSettings** class. For more information, see [Configure theme settings](configure-theme-settings.md). The following example shows a theme that defines a two-module layout (vertical and horizontal) with different image sizes for each viewport. Each of the defined layouts for a theme will then appear in the site builder module configuration for the page author to select. When a module is rendered, the settings from the theme are passed to the image resizer service to serve up the appropriately sized image based on the browser viewport and layout selected.
+A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module layouts, each of which has its own **ImageSettings** class. For more information, see [Configure theme settings](configure-theme-settings.md).
+
+The following example shows a theme that defines a two-module layout (vertical and horizontal), where each viewport has different image sizes. All the defined layouts for a theme then appear in the module configuration in site builder, where the page author can select among them. When a module is rendered, the settings from the theme are passed to the image resizer service. The image resizer service can then serve the appropriately sized image, based on the browser viewport and the selected layout.
 
 ```json
 {
@@ -262,48 +270,48 @@ The following example shows a module mock file that sets the **imageSettings** m
 
 ```json
 {
-  "id": "R1Module1",
-  "platform": {
-    "layout": "vertical"
-  },
-  "config": {
-    "msdyn365__moduleLayout": "vertical",
-    "imageAlignment": "left",
-    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-    "productImage": {
-      "src": "https://images-us-ppe.cms.commerce.dynamics.com/cms/api/dbfztcmjrn/imageFileData/search?fileName=/Products%2F91005_000_001.png",
-      "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-      "quality": 80,
-      "imageSettings": {
-        "viewports": {
-          "xs": {
-            "q": "w=125&h=125&m=8",
-            "w": 0,
-            "h": 0
-          },
-          "sm": {
-            "q": "w=225&h=225&m=8",
-            "w": 0,
-            "h": 0
-          },
-          "md": {
-            "q": "w=325&h=325&m=8",
-            "w": 0,
-            "h": 0
-          },
-          "lg": {
-            "q": "w=425&h=425&m=8",
-            "w": 0,
-            "h": 0
-          }
-        },
-        "lazyload": false
-      }
+    "id": "R1Module1",
+    "platform": {
+        "layout": "vertical"
     },
-    "buttonText": "Buy Now"
-  },
-  "typeName": "product-feature"
+    "config": {
+        "msdyn365__moduleLayout": "vertical",
+        "imageAlignment": "left",
+        "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+        "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+        "productImage": {
+            "src": "https://images-us-ppe.cms.commerce.dynamics.com/cms/api/dbfztcmjrn/imageFileData/search?fileName=/Products%2F91005_000_001.png",
+            "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+            "quality": 80,
+            "imageSettings": {
+                "viewports": {
+                    "xs": {
+                        "q": "w=125&h=125&m=8",
+                        "w": 0,
+                        "h": 0
+                    },
+                    "sm": {
+                        "q": "w=225&h=225&m=8",
+                        "w": 0,
+                        "h": 0
+                    },
+                    "md": {
+                        "q": "w=325&h=325&m=8",
+                        "w": 0,
+                        "h": 0
+                    },
+                    "lg": {
+                        "q": "w=425&h=425&m=8",
+                        "w": 0,
+                        "h": 0
+                    }
+                },
+                "lazyload": false
+            }
+        },
+        "buttonText": "Buy Now"
+    },
+    "typeName": "product-feature"
 }
 ```
 
@@ -363,7 +371,7 @@ The following example shows a page mock file that sets the **imageSettings** moc
                                             }
                                         },
                                         "lazyload": false
-                                    }                                  
+                                    }
                                 },
                                 "buttonText": "Buy Now"
                                 }
