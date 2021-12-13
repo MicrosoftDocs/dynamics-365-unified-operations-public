@@ -39,7 +39,7 @@ The DTS commands can be accessed in two different ways. You can select the **Too
 
 You can also access the DTS commands by right-clicking a file in your solution.
 
-![Tools menu in Visual Studio IDE](./media/dts-vs-tools-menu.png)
+![Tools menu in Visual Studio IDE](media/dts-vs-tools-menu.png)
 
 
 ## Features
@@ -55,23 +55,23 @@ You can also access the DTS commands by right-clicking a file in your solution.
 | Translation memory |  No   | Translation memory file(s) for a particular target langauge.  (The .zip file containing TMs for recycling. ) |    
 | Train MT with TM?  |  No   |     Option to create a custom MT with the uploaded translation memory.        |      
 
-![Translation Dialog window](./media/dts-vs-translate.png)
+![Translation Dialog window](media/dts-vs-translate.png)
 
 ## Translation workflow
 
 Before translating any resource files, you should have both the source language and target language resource files. If you already have the resource files for the source language, you can create the target language files by right-clicking on a source resource node and selecting "add new languages". 
 
-![Add new languages command](./media/dts-vs-new-language.png)
+![Add new languages command](media/dts-vs-new-language.png)
 
 This will open the label file wizard, allowing you to create new label files for your desired languages.
 
-![Label File Wizard](./media/dts-vs-label-wizard.png)
+![Label File Wizard](media/dts-vs-label-wizard.png)
 
 Now you are ready to create a new translation request. You can access the translation command from the main ribbon at **Tools > Translate with DTS...** with DTS or by right-clicking a resource file in the solution explorer. Upon running the command, a dialog window will appear, allowing you to configure the new translation request.
 
 Fill in each field, using the table above for guidance. After you have configured the request, use the submit button to send the request to DTS. Shortly after, you'll see the status of the request from the output window. Upon completion, translation memory files and translated resource files will be downloaded. The output files will be placed in the appropriate language subfolder for the module.
 
-![DTS extension output window](./media/dts-vs-outputwindow.png)
+![DTS extension output window](media/dts-vs-outputwindow.png)
 
 If Visual Studio is closed before the results are downloaded, you can manually download them using the download pending requests menu item found at **Tools > Download Translation Request Results**. 
 
@@ -82,7 +82,7 @@ If Visual Studio is closed before the results are downloaded, you can manually d
 | Project           |  Yes  |  The project associated with the revised translation memories.           |      
 | Translation files |  Yes  |     Revised translation memory file(s).<br><br>These files are identified automatically and are the result of previous DTS translation requests. |
 
-![Rengerate Dialog Window](./media/dts-vs-regenerate.png)
+![Rengerate Dialog Window](media/dts-vs-regenerate.png)
 
 ## Regeneration workflow
 
