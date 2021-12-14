@@ -14,6 +14,8 @@ ms.search.validFrom:
 ---
 # Finnish Intrastat
 
+[!include [banner](../includes/banner.md)]
+
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Finnish Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Finnish Intrastat declaration. All of the fields are included on arrivals and dispatches except for **VAT number of trading partner** which isn't included on arrivals.
@@ -532,3 +534,5 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 12. Review the report in Excel format that is generated.
 
 ![Intrastat report on arrivals](media/intrastat_fi_6.png)
+    
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
