@@ -137,6 +137,7 @@ Application specific parameters must be configured for all the following configu
 - OIOUBL Sales credit note (DK)
 - OIOUBL Project credit note (DK)
 
+
 ### Configure customer parameters
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
@@ -149,91 +150,6 @@ Application specific parameters must be configured for all the following configu
     > Available contact persons must be preliminary defined for this customer.
 
 
-### Customer requisition
-
-When you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter a customer requisition. You can also add an optional customer reference.
-
-#### Free text invoices
-
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
-2. Create a new invoice, or select an existing invoice.
-3. In the **Header** view, on the **Customer** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
-
-#### Sales orders
-
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Create a new sales order, or select an existing sales order. 
-3. In the **Header** view, on the **General** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
-
-#### Project invoices
-
-1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
-2. Create a new project contract, or select an existing project contract.
-3. On **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
-
-    ![Funding sources.](media/emea-nor-ger-proj-contracts.jpg)
-
-4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, in the **Customer requisition** and **Customer reference** fields, enter default values for the contract. Alternatively, you can enter project-specific values in the corresponding fields on the **E-invoice** FastTab.
-
-    ![Project references.](media/emea-nor-ger-proj-refs.jpg)
-
-5. To enter customer requisition and reference values directly on the project invoice proposal, follow these steps:
-
-    1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
-    2. Create a new invoice proposal, or select an existing invoice proposal.
-    3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter values in **Customer requisition** and **Customer reference** fields.
-
-    ![Project proposal.](media/emea-nor-ger-proj-prop.jpg)
-
-### Customer accounting code registration
-
-You can enter customer accounting codes when you work with free text invoices, invoices that are based on sales orders, or project invoices.
-
-#### Free text invoices
-
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
-2. Create a new invoice, or select an existing invoice. 
-3. In the **Header** view, on the **General** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code for the invoice. 
-4. To have a separate accounting code for each invoice line, follow these steps:
-
-    1. Set the **Line-specific** option to **Yes**.
-    2. Switch to the **Lines** view.
-    3. On the **Line details** FastTab, on the **General** tab, in the **Dimension account** field, enter a line-specific accounting code for each invoice line.
-
-    ![Line-specific accounting code for a free text invoice.](media/emea-nor-ger-fti-cost.jpg)
-
-#### Sales orders
-
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Create a new sales order, or select an existing sales order.
-3. In the **Header** view, on the **General** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code for the order.
-4. To have a separate accounting code for each order line, follow these steps:
-
-    1. Set the **Line-specific** option to **Yes**.
-    2. Switch to the **Lines** view.
-    3. On the **Line details** FastTab, on the **General** tab, in the **Dimension account** field, enter a line-specific accounting code for each order line.
-
-#### Project invoices
-
-1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
-2. Create a new project contract, or select an existing project contract.
-3. On **Funding sources** FastTab, create or select a funding source of the **Customer** type, and then select **Details**.
-4. On **Funding source details** page, on the **E-invoice** FastTab, in the **Dimension account** field, enter the project-specific default accounting code.
-
-    ![Project-specific accounting code.](media/emea-nor-ger-proj-cost.jpg)
-
-5. To enter customer accounting codes directly in project invoice proposals, follow these steps:
-
-    1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
-    2. Create a new invoice proposal, or select an existing invoice proposal.
-    3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, in the **Dimension account** field, enter the accounting code.
-
-6. To have a separate accounting code for each transaction line, follow these steps:
-
-    1. Set the **Line-specific** option to **Yes**.
-    2. On the **Invoice proposal transactions** FastTab, in the **Dimension account** field, enter a line-specific accounting code for each transaction line.
-
-    ![Transaction line-specific accounting code.](media/emea-nor-ger-proj-prop-cost.jpg)
 
 ## Export customer electronic invoices
 
