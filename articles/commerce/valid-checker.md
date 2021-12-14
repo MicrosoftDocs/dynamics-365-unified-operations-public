@@ -2,7 +2,7 @@
 # required metadata
 
 title: Validate store transactions for statement calculation
-description: This topic describes the store transaction validation functionality in Microsoft Dynamics 365 Commerce.
+description: This topic describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 12/10/2021
 ms.topic: index-page
@@ -30,91 +30,91 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the store transaction validation functionality in Microsoft Dynamics 365 Commerce. The validation process identifies and marks transactions that will cause posting errors before they are picked up by the statement posting process.
+This topic describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce. The validation process identifies and marks transactions that will cause posting errors, before they are picked up by the statement posting process.
 
-When attempting to post a statement the validation process can fail due to inconsistent data in the commerce transaction tables. Examples of how these inconsistencies can be caused include:
+When you try to post a statement, the validation process can fail because of inconsistent data in the commerce transaction tables. Here are some examples of factors that can cause these inconsistencies:
 
-- The transaction total on the header table does not match the transaction total on the lines.
-- The number of items specified on the header table does not match the number of items in the transaction table.
-- Taxes on the header table do not match the tax amount on the lines. 
+- The transaction total in the header table doesn't match the transaction total on the lines.
+- The number of items that is specified in the header table doesn't match the number of items in the transaction table.
+- Taxes in the header table don't match the tax amount on the lines. 
 
-If inconsistent transactions are picked up by the statement posting process, sales invoices and payment journals can be created that will cause statement posting to fail. The **Validate store transactions** process prevents such issues by ensuring that only transactions that pass our transaction validation rules are passed to the transaction statement calculation process.
+If inconsistent transactions are picked up by the statement posting process, sales invoices and payment journals that are created can cause statement posting to fail. The **Validate store transactions** process prevents these issues by ensuring that only transactions that pass the transaction validation rules are passed to the transaction statement calculation process.
 
-The following chart illustrates the posting processes including the **Validate store transactions** process.
+The following illustration shows the posting processes, including the **Validate store transactions** process.
 
-![Statement posting process with retail transaction consistency checker](./media/valid-checker-statement-posting-flow.png)
+![Statement posting process when the store transaction validation functionality is used.](./media/valid-checker-statement-posting-flow.png)
 
 ## Store transaction validation rules
 
-The **Validate store transactions** batch process checks the consistency of the commerce transaction tables based on the following validation rules.
+The **Validate store transactions** batch process checks the consistency of the commerce transaction tables, based on the following validation rules.
+
+> [!NOTE]
+> Validation rules will continue to be added in subsequent releases.
 
 ### Transaction header validation rules
 
-The following table lists transaction header validation rules that are checked against the header of retail transactions in advance of being passed to statement posting.
+The following table lists the transaction header validation rules that are checked against the header of retail transactions before those transactions are passed to statement posting.
 
-| Title             | Description                                                                                        |
-|-------------------|----------------------------------------------------------------------------------------------------|
-| Business date     | Validates that the transaction business date is associated to an open fiscal period in the ledger. |
-| Currency rounding | Validates that the transaction amounts are rounded as per currency rounding rule.                       |
-| Customer account  | Validates that the customer used in the transaction exists in the database.                        |
-| Discount amount   | Validates that the discount amount on the header is equal to the sum of discount amount of the lines. |
-| Fiscal document posting status (Brazil) | Validates that the fiscal document can be successfully posted. |
-| Gross amount | Validates that the gross amount on the transaction header matches the net amount including tax of the transaction lines plus charges. |
-| Net | Validates that the net amount on the transaction header matches the net amount excluding tax of the transaction lines plus charges. |
-| Net + tax | Validates that the gross amount on the transaction header matches the net amount excluding tax of the transaction lines plus all taxes and charges. |
-| Number of items | Validates that the number of items specified in the transaction header matches the sum of quantities in the transaction lines. |
-| Payment amount | Validates that the payment amount in the transaction header matches the sum of all payment transactions. |
-| Tax exempt calculation | Validates that the sum of the charge line calculated amount and exempted tax amount is equal to the original calculated amount. |
-| Tax included pricing | Validates that the **Tax is included in price** flag is consistent across the transaction header and the tax transactions. |
-| Transaction not empty | Validates that the transaction contains lines and that at least one of them is not voided. |
-| Under/over payment | Validates that the difference between the gross amount and the payment amount is not greater than the maximum under/over payment configuration. |
+| Title | Description |
+|-------|-------------|
+| Business date | This rule validates that the business date of the transaction is associated with an open fiscal period in the ledger. |
+| Currency rounding | This rule validates that the transaction amounts are rounded according to the currency rounding rule. |
+| Customer account | This rule validates that the customer that is used in the transaction exists in the database. |
+| Discount amount | This rule validates that the discount amount on the header equals the sum of discount amounts of the lines. |
+| Fiscal document posting status (Brazil) | This rule validates that the fiscal document can be successfully posted. |
+| Gross amount | This rule validates that the gross amount on the transaction header matches the net amount, including tax, of the transaction lines plus charges. |
+| Net | This rule validates that the net amount on the transaction header matches the net amount, excluding tax, of the transaction lines plus charges. |
+| Net + tax | This rule validates that the gross amount on the transaction header matches the net amount, excluding tax, of the transaction lines plus all taxes and charges. |
+| Number of items | This rule validates that the number of items that is specified on the transaction header matches the sum of quantities on the transaction lines. |
+| Payment amount | This rule validates that the payment amount on the transaction header matches the sum of all payment transactions. |
+| Tax exempt calculation | This rule validates that the sum of the calculated amount and the exempted tax amount of charge lines equals the original calculated amount. |
+| Tax included pricing | This rule validates that the **Tax is included in price** flag is consistent across the transaction header and the tax transactions. |
+| Transaction not empty | This rule validates that the transaction contains lines, and that at least one line isn't voided. |
+| Under/over payment | This rule validates that the difference between the gross amount and the payment amount isn't more than the maximum underpayment/overpayment configuration. |
 
 ### Transaction header validation rules
 
-The following table lists transaction header validation rules that are checked against the line details of retail transactions in advance of being passed to statement posting.
+The following table lists the transaction header validation rules that are checked against the line details of retail transactions before those transactions are passed to statement posting.
 
-| Title             | Description                                                                                        |
-|-------------------|----------------------------------------------------------------------------------------------------|
-| Barcode | Validates that all item barcodes used in the transaction lines exist in the database. |
-| Charge lines | Validates that the sum of the charge lines calculated amount and exempted tax amount is equal to the original calculated amount. |
-| Gift card returns | Validates that there are no return of gift cards in the transaction. |
-| Item variant | Validates that all items and all variants used in the transaction lines exist in the database. |
-| Line discount | Validates that the line discount amount matches the sum of the discount transactions. |
-| Line tax | Validates that the line tax amount matches the sum of the tax transactions. |
-| Negative price | Validates that no negative prices are used in the transaction lines. |
-| Serial number controlled | Validates that the serial number is present in the transaction line for items that are serial number controlled. |
-| Serial number dimension | Validates that if the items serial number dimension is inactive, then the serial number should not be provided. |
-| Sign contradiction | Validates that the sign of the quantity and the net amount are the same in all transaction lines. |
-| Tax exempt | Validates that the sum of the line item price and exempted tax amount is equal to the original price. |
-| Tax group assignment | Validates that the sales tax group and the item tax group combination results in a valid tax intersection. |
-| Unit of measure conversions | Validates that the unit of measure of all lines have valid conversions to the inventory unit of measure. |
+| Title | Description |
+|-------|-------------|
+| Barcode | This rule validates that all item bar codes that are used on the transaction lines exist in the database. |
+| Charge lines | This rule validates that the sum of the calculated amount and the exempted tax amount of charge lines equals the original calculated amount. |
+| Gift card returns | This rule validates that there are no returns of gift cards in the transaction. |
+| Item variant | This rule validates that all items and all variants that are used on the transaction lines exist in the database. |
+| Line discount | This rule validates that the line discount amount matches the sum of the discount transactions. |
+| Line tax | This rule validates that the line tax amount matches the sum of the tax transactions. |
+| Negative price | This rule validates that no negative prices are used on the transaction lines. |
+| Serial number controlled | This rule validates that the serial number is present on the transaction line for items that are serial number controlled. |
+| Serial number dimension | This rule validates that no serial number is provided if the item's serial number dimension is inactive. |
+| Sign contradiction | This rule validates that the sign of the quantity and the sign of the net amount are the same on all transaction lines. |
+| Tax exempt | This rule validates that the sum of the line item price and the exempted tax amount equals the original price. |
+| Tax group assignment | This rule validates that the combination of the sales tax group and the item tax group produces a valid tax intersection. |
+| Unit of measure conversions | This rule validates that the unit of measure of all lines has a valid conversion to the inventory unit of measure. |
 
-## Enable the store transactions validation process
+## Enable the store transaction validation process
 
-Configure the **Validate store transactions** job located in Commerce headquarters at **Retail and Commerce \> Retail and Commerce IT \> POS posting** for periodic runs. The batch job is scheduled based on store organization hierarchy. It is recommended that you configure this batch process to run at the same frequency as your **P-Job** and **Transactional statement calculation** batch jobs.
+Configure the **Validate store transactions** job for periodic runs in Commerce headquarters (**Retail and Commerce \> Retail and Commerce IT \> POS posting**). The batch job is scheduled based on the store's organization hierarchy. We recommend that you configure this batch process to run at the same frequency as your **P-Job** and **Transactional statement calculation** batch jobs.
 
 ## Results of the validation process
 
-The results of the **Validate store transactions** batch process can be viewed on each retail store transaction. The **Validation status** field on the transaction record is set to **Successful**, **Error**, or **None** and the date of the last validation run appears on the **Last validation time** field.
+The results of the **Validate store transactions** batch process can be viewed on each retail store transaction. The **Validation status** field on the transaction record is set to **Successful**, **Error**, or **None**. The **Last validation time** field shows the date of the last validation run.
 
-The following table lists and describes each validation status state.
+The following table describes each validation status.
 
-| Validation Status | Description                                                                                        |
-|-------------------|----------------------------------------------------------------------------------------------------|
+| Validation status | Description |
+|-------------------|-------------|
 | Successful | All enabled validation rules passed. |
-| Error | An enabled validation rule has identified an error. You can view additional details of the error by opening the **Validation errors** form. |
-| None | Transaction type does not require validation rules to be applied. |
+| Error | An enabled validation rule has identified an error. You can view more details about the error by selecting **Validation errors** on the Action Pane. |
+| None | The transaction type doesn't require that validation rules be applied. |
 
-![Retail transactions form showing validation status and the validation errors function](./media/valid-checker-validation-status-errors.png)
+![Store transactions page showing the Validation status field and the Validation errors button.](./media/valid-checker-validation-status-errors.png)
 
-Only transactions that have a validation status of **Successful** will be pulled into the transactional statements. To view transactions that are in a state of **Error**, review the **Cash and carry validation failures** tile on the **Store financials** workspace.
+Only transactions that have a validation status of **Successful** will be pulled into the transactional statements. To view transactions that have a status of **Error**, review the **Cash and carry validation failures** tile in the **Store financials** workspace.
 
-![Store financials workspace tiles](./media/valid-checker-cash-carry-validation-failures.png)
+![Tiles in the Store financials workspace.](./media/valid-checker-cash-carry-validation-failures.png)
 
-For more information on how to resolve cash and carry validation failures, see [Edit and audit cash and carry and cash management transactions](edit-cash-trans.md).
-
-> [!NOTE]
-> Additional validation rules will continue to be added in subsequent releases.
+For more information about how to fix cash and carry validation failures, see [Edit and audit cash and carry and cash management transactions](edit-cash-trans.md).
 
 ## Additional resources
 
