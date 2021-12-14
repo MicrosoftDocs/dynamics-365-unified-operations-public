@@ -108,11 +108,32 @@ The next level of tax data grouping within the tax scheme is **Tax Category**, s
 
 For some taxes, an additional attribute **Tax Type Code** must be also defined.
 
-The following logic is used:
-In the next chapter 
+Tax schemes, tax categories and tax type codes can be assosiated with sales tax codes using **Application specific parameters**. See the next chapter about how to configure Application specific parameters.
 
 ### Application specific parameters configuration
-In the **Electronic reporting** workspace,
+
+1. In the **Electronic reporting** workspace, in the **Reporting configurations** tile, in the list of configurations, select a required configuration, **OIOUBL Sales invoice (DK)** for example.
+2. In the **Configurations** menu, in the **Application specific parameters** section, use **Setup** for the selected configuration.
+3. On the **Application specific parameters** page, in the **Lookups** grid, select **Tax scheme** lookup.
+4. In the **Condtitons** grid, configure the correspondence between internal sales tax codes and official tax schemes codes. 
+Select **Add** to add a new condition. In the **Name** column for the new condition, select the sales tax code that is defined in the system. Then, in the **Lookup result** column, select a corresponding official tax schemes code.
+
+    > [!NOTE]
+    > In the **Name** column, you can select the **&#42;Blank&#42;** or **&#42;Not blank&#42;** placeholder value instead of a specific sales tax code.
+
+6. In the **Lookups** grid, select **Tax category** lookup.
+7. In the **Condtitons** grid, configure the correspondence between internal sales tax codes and official tax categories codes.
+8. In the **Lookups** grid, select **Tax type code** lookup.
+9. In the **Condtitons** grid, configure the correspondence between internal sales tax codes and tax type codes. In no tax type code is required then use **Not applicable** value.
+10. In the **State** field, select **Completed** value.
+11. Save application specific parameters.
+
+Application specific parameters must be configured for all the following configurations:
+
+- OIOUBL Sales invoice (DK)
+- OIOUBL Project invoice (DK)
+- OIOUBL Sales credit note (DK)
+- OIOUBL Project credit note (DK)
 
 ### Configure customer parameters
 
