@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Withholding tax declaration for Indonesia
-description: This topic explains how to configure and generate the withholding tax declarations for Indonesia.
+title: Withholding tax report for Indonesia
+description: This topic explains how to configure and generate the withholding tax report for Indonesia.
 author: sndray
 ms.date: 12/01/2021
 ms.topic: article
@@ -25,7 +25,7 @@ ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
 ---
 
-#  Withholding tax declaration for Indonesia (ID-00005)
+#  Withholding tax report for Indonesia (ID-00005)
 
 ## Overview
 
