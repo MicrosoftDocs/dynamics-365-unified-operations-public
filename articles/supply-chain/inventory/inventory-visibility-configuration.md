@@ -2,7 +2,7 @@
 title: Configure Inventory Visibility
 description: This topic describes how to configure Inventory Visibility.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -56,7 +56,7 @@ After the configuration is completed, be sure to select **Update Configuration**
 Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
 
 > [!NOTE]
-> The `fno` data source is reserved for Dynamics 365 Supply Chain Management.
+> The `fno` data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you not delete configurations that are related to `fno` in the data source.
 
 To add a data source, follow these steps.
 
@@ -268,17 +268,17 @@ The `MyCustomAvailableforReservation` output, based on the calculation setting i
 
 ## <a name="partition-configuration"></a>Partition configuration
 
-The partition configuration consists of a combination of base dimensions. It defines the data distribution pattern. Data operations in the same partition support high performance and don't cost too much. Therefore, good partition patterns can contribute significant benefits.
-
-Inventory Visibility provides the following default partition configuration.
+Currently, the partition configuration consists of two base dimensions (`SiteId` and `LocationId`) that indicate how the data is distributed. Operations under the same partition can deliver higher performance at lower cost. The following table shows the default partition configuration that the Inventory Visibility Add-in provides.
 
 | Base dimension | Hierarchy |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> The default partition configuration is for reference only. You don't have to define it in Inventory Visibility. Currently, the partition configuration upgrade isn't supported.
+The solution includes this partition configuration by default. Therefore, *you don't have to define it yourself*.
+
+> [!IMPORTANT]
+> Don't customize the default partition configuration. If you delete or change it, you're likely to cause an unexpected error.
 
 ## <a name="index-configuration"></a>Product index hierarchy configuration
 
