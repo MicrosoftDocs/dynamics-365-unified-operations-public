@@ -69,7 +69,7 @@ In general, the `VALUEIN` function is translated to a set of **OR** conditions. 
 In some cases, it can be translated to a database SQL statement by using the `EXISTS JOIN` operator.
 
 > [!NOTE]
-> The value returned by the `VALUEIN` function is used [differently](er-functions-list-filter.md#usage-notes) when this function is used to specify the selection criteria for the [`FILTER`](er-functions-list-filter.md) and [`WHERE`](er-functions-list-where.md) functions.
+> The value that the `VALUEIN` function returns is [used differently](er-functions-list-filter.md#usage-notes), depending on whether this function is used to specify the selection criteria for the [`FILTER`](er-functions-list-filter.md) function or the [`WHERE`](er-functions-list-where.md) function.
 
 ## Example 1
 
