@@ -76,7 +76,7 @@ The following table describes the fields in the **Translate with DTS** dialog bo
 | Translation memory | No | The translation memory files for a specific target language. (The value is the zip file that contains translation memories for recycling.) |
 | Create custom MT?  | No | Select whether you want to use the uploaded translation memory to create a custom MT model. |
 
-![Translate with DTS dialog box.](media/dts-vs-translate.PNG)
+![Translate with DTS dialog box.](media/dts-vs-translate.png)
 
 When you've finished configuring the translation request, select **Submit** to send it to DTS. After a short time, the **Output** window will show the status of the request. When the request is completed, output files (translation memory files and translated resource files) are downloaded. These output files are put in the appropriate language subfolder for the module.
 
