@@ -45,7 +45,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 - OIOUBL Project credit note (DK)
 
 > [!NOTE]
-> All the additionally required configurations will be automatically imported.
+> All additionally required configurations will be automatically imported.
 
 For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -114,18 +114,18 @@ Tax schemes, tax categories and tax type codes can be assosiated with sales tax 
 
 1. In the **Electronic reporting** workspace, in the **Reporting configurations** tile, in the list of configurations, select a required configuration, **OIOUBL Sales invoice (DK)** for example.
 2. In the **Configurations** menu, in the **Application specific parameters** section, use **Setup** for the selected configuration.
-3. On the **Application specific parameters** page, in the **Lookups** grid, select **Tax scheme** lookup.
+3. On the **Application specific parameters** page, in the **Lookups** grid, select **TaxSchemeSelector** lookup.
 4. In the **Condtitons** grid, configure the correspondence between internal sales tax codes and official tax schemes codes. 
-Select **Add** to add a new condition. In the **Name** column for the new condition, select the sales tax code that is defined in the system. Then, in the **Lookup result** column, select a corresponding official tax schemes code.
+Select **Add** to add a new condition. In the **Code** column for the new condition, select the sales tax code that is defined in the system. Then, in the **Lookup result** column, select a corresponding official tax schemes code.
 
     > [!NOTE]
-    > In the **Name** column, you can select the **&#42;Blank&#42;** or **&#42;Not blank&#42;** placeholder value instead of a specific sales tax code.
+    > In the **Code** column, you can select the **&#42;Blank&#42;** or **&#42;Not blank&#42;** placeholder value instead of a specific sales tax code.
     
-    ![Sending an e-invoice.](media/emea-nor-ger-einvoice.jpg)
+    ![Application specific parameters](emea-dnk-ASP-parameters.jpg)
 
-6. In the **Lookups** grid, select **Tax category** lookup.
+6. In the **Lookups** grid, select **TaxCategorySelector** lookup.
 7. In the **Condtitons** grid, configure the correspondence between internal sales tax codes and official tax categories codes.
-8. In the **Lookups** grid, select **Tax type code** lookup.
+8. In the **Lookups** grid, select **TaxCodeTypeSelector** lookup.
 9. In the **Condtitons** grid, configure the correspondence between internal sales tax codes and tax type codes. In no tax type code is required then use **Not applicable** value.
 10. In the **State** field, select **Completed** value.
 11. Save application specific parameters.
