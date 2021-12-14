@@ -45,7 +45,7 @@ The DTS commands can be accessed in two ways:
 
 - Select **Tools** on the main toolbar, and then select a DTS command on the menu. Four DTS commands are available: **Translate with DTS**, **Regenerate with DTS**, **Download Translation Requests**, and **Log out of DTS**.
 
-    ![Tools menu in the Visual Studio IDE.](media/dts-vs-tools-menu.png)
+    ![Tools menu in the Visual Studio IDE.](media/dts-vs-tools-menu.PNG)
 
 - Select and hold (or right-click) a file in your solution, and then select a DTS command on the shortcut menu.
 
@@ -55,11 +55,11 @@ The DTS commands can be accessed in two ways:
 
 Before you translate any resource files, you should have the resource files for both the source language and the target language. If you already have the resource files for the source language, you can create the files for the target language by selecting and holding (or right-clicking) a source resource node and then selecting **Add new languages**.
 
-![Add new languages command.](media/dts-vs-new-language.png)
+![Add new languages command.](media/dts-vs-new-language.PNG)
 
 The **Label file** wizard appears. Complete this wizard to create new label files for your desired languages.
 
-![Label file wizard.](media/dts-vs-label-wizard.png)
+![Label file wizard.](media/dts-vs-label-wizard.PNG)
 
 You're now ready to create a new translation request. On the **Tools** menu, select **Translate with DTS**. Alternatively, select and hold (or right-click) a resource file in Solution Explorer, and then select **Translate with DTS**. A dialog box appears, where you can configure the new translation request.
 
@@ -76,11 +76,11 @@ The following table describes the fields in the **Translate with DTS** dialog bo
 | Translation memory | No | The translation memory files for a specific target language. (The value is the zip file that contains translation memories for recycling.) |
 | Create custom MT?  | No | Select whether you want to use the uploaded translation memory to create a custom MT model. |
 
-![Translate with DTS dialog box.](media/dts-vs-translate.png)
+![Translate with DTS dialog box.](media/dts-vs-translate.PNG)
 
 When you've finished configuring the translation request, select **Submit** to send it to DTS. After a short time, the **Output** window will show the status of the request. When the request is completed, output files (translation memory files and translated resource files) are downloaded. These output files are put in the appropriate language subfolder for the module.
 
-![Output window for the DTS extension.](media/dts-vs-outputwindow.png)
+![Output window for the DTS extension.](media/dts-vs-outputwindow.PNG)
 
 If Visual Studio is closed before the output files are downloaded, you can manually download the files by selecting **Download Translation Request Results** on the **Tools** menu.
 
@@ -97,6 +97,6 @@ The following table describes the fields in the **Regenerate with DTS** dialog b
 | Project           | Yes | Select the project that is associated with the revised translation memories. |
 | Translation files | Yes | <p>Select one or more revised translation memory files. The files in the list are automatically identified and are the result of previous DTS translation requests.</p><p>Each revised translation memory file (.xlf file) that you select is used to regenerate the corresponding target native file. For example, **ExampleLabel.es.label.txt.xlf** will regenerate **ExampleLabel.es.label.txt**.</p> |
 
-![Regenerate with DTS dialog box.](media/dts-vs-regenerate.png)
+![Regenerate with DTS dialog box.](media/dts-vs-regenerate.PNG)
 
 When you've finished configuring the regeneration request, select **Submit** to send it to DTS. The **Output** window will show the status of the request. When the request is completed, output files (translation memory files and target translated files) are downloaded.
