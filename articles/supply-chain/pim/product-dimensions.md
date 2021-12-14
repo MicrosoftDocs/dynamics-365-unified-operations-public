@@ -84,7 +84,7 @@ A company sells denim jeans. The item, *Jeans*, uses the color and size product 
 
 ## The version product dimension
 
-Version is a product dimension that is intended to help you maintain and track multiple versions of a product throughout the supply chain. Version tracking is essential to the success of manufacturers that operate in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and increased focus on product safety.
+Version is a product dimension that is intended to help you maintain and track multiple versions of a product throughout the supply chain. Version tracking is essential to the success of manufacturers that operate in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and increased focus on product safety.
 
 As a standard product dimension, version will behave similarly to the existing product dimensions (size, style, color, and configuration). Therefore, you can use it for other purposes besides tracking product versions.
 
