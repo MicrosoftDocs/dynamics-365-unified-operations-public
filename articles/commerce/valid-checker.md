@@ -42,7 +42,7 @@ If inconsistent transactions are picked up by the statement posting process, sal
 
 The following illustration shows the posting processes, including the **Validate store transactions** process.
 
-![Statement posting process when the store transaction validation functionality is used.](./media/valid-checker-statement-posting-flow.png)
+![Process flow showing the recurring processes for uploading transactions, validating transactions, and transaction statement posting process as a wheel. As an end of day process the graphic shows that the output of the recurring processes result in a financial statement calulation and then posting.](./media/valid-checker-statement-posting-flow.png)
 
 ## Store transaction validation rules
 
@@ -72,9 +72,9 @@ The following table lists the transaction header validation rules that are check
 | Transaction not empty | This rule validates that the transaction contains lines, and that at least one line isn't voided. |
 | Under/over payment | This rule validates that the difference between the gross amount and the payment amount isn't more than the maximum underpayment/overpayment configuration. |
 
-### Transaction header validation rules
+### Transaction line validation rules
 
-The following table lists the transaction header validation rules that are checked against the line details of retail transactions before those transactions are passed to statement posting.
+The following table lists the transaction line validation rules that are checked against the line details of retail transactions before those transactions are passed to statement posting.
 
 | Title | Description |
 |-------|-------------|
