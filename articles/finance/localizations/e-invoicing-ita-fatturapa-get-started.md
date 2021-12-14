@@ -77,7 +77,7 @@ This section complements the [Country-specific configuration of application setu
 1. On the **Electronic invoicing features** page, select the feature to edit.
 2. On the **Setups** tab, select **Import invoices**, and then select **Edit**.
 3. In the **Data channel** section, on the **Parameters** tab, in the **Data channel** field, enter a string value.
-4. On the **Applicability rules** tab, set the fields for the setup. You can use the default **Channel** clause by passing the value that you set for the **Data channel** field in the previous step.
+4. On the **Applicability rules** tab, set the fields for the setup. You can use the default **Channel** clause by passing the value that you set for the **Data channel** field in the previous step to the **Value** field.
 
     ![Setting up applicability rules.](media/e-invoicing-ita-fatturapa-get-started-apprules-setup.png)
 
@@ -148,7 +148,7 @@ This section provides information that will help you set up and configure the pr
     Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
     ```
 
-2. Save the .pfx certificate file to the key vault, and then delete it.
+2. Save the .pfx certificate file to the key vault, and then delete the local copy.
 3. Sign in to the [Azure portal](https://portal.azure.com) as an administrator.
 4. Create an app registration for the SDI Proxy service.
 
@@ -157,17 +157,9 @@ This section provides information that will help you set up and configure the pr
         - **Name:** SDI Proxy Client
         - **Supported account types:** Accounts in this organizational directory only (Single tenant)
 
-        ![Creating an Azure app registration.](media/e-invoicing-ita-fatturapa-get-started-app-registration.png)
-
     2. Select **Register**, and then select the app registration that you just created.
     3. Go to **API permissions**, and select **Grant admin consent**.
-
-        ![Granting admin consent.](media/e-invoicing-ita-fatturapa-get-started-app-registration-consent.png)
-
     4. Go to **Certificates & secrets**, select **Upload certificate**, and upload the .cer certificate file for S2S authentication.
-
-        ![Uploading the .cer certificate file.](media/e-invoicing-ita-fatturapa-get-started-app-upload-cert.png)
-
     5. Go to **Enterprise applications**, and select the app that you created.
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
     7. The Invoicing Service team must grant the app access to the service. Send the values of the following parameters to <D365EInvoiceSupport@microsoft.com>:
@@ -211,10 +203,10 @@ This section provides information that will help you set up and configure the pr
 
     ![Creating a public IP address.](media/e-invoicing-ita-fatturapa-get-started-create-vm-4.png)
 
-9. On the **Management** tab, clear **Auto-shutdown** to disable automatic shutdown.
+9. On the **Management** tab, clear the **Auto-shutdown** checkbox to disable automatic shutdown.
 10. Set the **Guest OS updates** field to **Manual**, and then set any other policies.
 11. Review and create the VM.
-12. In the new VM, go to **Identity** \> **System assigned** \> **Status** \> **ON**.
+12. In the new VM, go to **Identity** \> **System assigned**, and set the **Status** option to **On**.
 13. Grant the VM access to the key vault.
 
     1. In the key vault, go to **Access control (IAM)** \> **Role assignments**.
@@ -231,19 +223,40 @@ This section provides information that will help you set up and configure the pr
         1. In the **Selected principal** field, select your VM.
         2. In the **Certificate** section, select **List** and **Get** permissions.
 
-14. In the VM, go to **Monitoring** \> **Insights**.
-15. Select **Enable**, and follow the Application Insights creation guide.
-16. In the [Azure portal](https://portal.azure.com), go to **Public IP addresses**, and select the IP address that was created in the VM.
-17. Go to **Configuration**, and set the Domain Name System (DNS) name.
+14. In the [Azure portal](https://portal.azure.com), go to **Public IP addresses**, and select the IP address that was created in the VM.
+15. Go to **Configuration**, and set the Domain Name System (DNS) name.
 
 ### Prepare the proxy service environment
 
 Follow these steps on the machine where the proxy service is hosted.
 
 1. Connect to the VM by using Remote Desktop Connection.
-2. Open the Local Machine Certificate snap-in. For more information, see [How to: View certificates with the MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
-3. Import the **caentrate.cer** certificate for production and the **CAEntratetest.cer** for testing into the [Trusted Root Certification Authorities store](/dotnet/framework/wcf/feature-details/working-with-certificates#certificate-stores). (**CAEntratetest.cer** is the root CA certificate that was provided by the authority.)
-4. In Control Panel, open **Turn Windows features on or off**, or go to **Server Manager** \> **Add Roles and Features** for the server operating system (OS), and turn on Internet Information Services (IIS) features.
+2. Open the Local Machine Certificate snap-in. For more information, see [How to: View certificates with the MMC snap-in](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
+3. Import the **caentrate.cer** certificate for production and the **CAEntratetest.cer** for testing into the [Trusted Root Certification Authorities store](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/working-with-certificates#certificate-stores). (**CAEntratetest.cer** is the root CA certificate that was provided by the authority.)
+4. In Control Panel, open **Turn Windows features on or off**, or go to **Server Manager** \> **Add Roles and Features** for the server operating system (OS), and turn on Internet Information Services (IIS) features:
+
+    - Web Management Tools
+	    - IIS Management Concole
+	- World Wide Web Services
+	    - Application Development Features
+		    - .NET Extensibility 4.7 (or 4.8)
+			- ASP
+			- ASP.NET 4.7 (or 4.8)
+			- CGI
+			- ISAPI Extensions
+			- ISAPI Filters
+	    - Common HTTP Features
+		    - Default Document
+			- Directory Browsing
+			- HTTP Errors
+			- Static Content
+		- Health and Diagnostics
+		    - HTTP Logging
+			- Tracing
+		- Performance Features
+		    - Static Content Compression
+		- Security
+		    - Request Filtering
 
     ![Turning on IIS features.](media/e-invoicing-ita-fatturapa-get-started-turnon-features.png)
 
@@ -272,7 +285,7 @@ Follow these steps on the machine where the proxy service is hosted.
         `\<serviceCertificate findValue="[certificate thumbprint]" storeLocation="LocalMachine" storeName="My" x509FindType="FindByThumbprint">`
 
         > [!TIP]
-        > When the system goes to production, you can change some values in the web.config file to help reduce the amount of log information that is collected and help save disk space. In the **\\\<system.diagnostics\>\\\<source\>** node, change the value of the **switchValue** to **Critical,&nbsp;Error**. For more information, see [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
+        > When the system goes to production, you can change some values in the web.config file to help reduce the amount of log information that is collected and help save disk space. In the **\\\<system.diagnostics\>\\\<source\>** node, change the value of the **switchValue** to **Critical,&nbsp;Error**. For more information, see [MS Service Trace Viewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
 
 4. Open IIS Manager. In the tree on the left, remain in the root node. On the right, select **Server Certificates**.
 
@@ -310,7 +323,7 @@ Follow these steps on the machine where the proxy service is hosted.
 
 20. Create the following folders to store logs and files:
 
-    - **C:\\Logs\\** – Store log files here. These files can be viewed by [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
+    - **C:\\Logs\\** – Store log files here. These files can be viewed by [MS Service Trace Viewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
     - **C:\\Files\\** – Store all the response files here.
 
 21. In File Explorer, grant **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** if you're using the default pool) access to the **Logs** and **Files** folders.
