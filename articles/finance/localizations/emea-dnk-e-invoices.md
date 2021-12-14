@@ -121,7 +121,7 @@ Select **Add** to add a new condition. In the **Code** column for the new condit
     > [!NOTE]
     > In the **Code** column, you can select the **&#42;Blank&#42;** or **&#42;Not blank&#42;** placeholder value instead of a specific sales tax code.
     
-    ![Application specific parameters](emea-dnk-ASP-parameters.jpg)
+    ![Application specific parameters](media/emea-dnk-ASP-parameters.jpg)
 
 6. In the **Lookups** grid, select **TaxCategorySelector** lookup.
 7. In the **Condtitons** grid, configure the correspondence between internal sales tax codes and official tax categories codes.
