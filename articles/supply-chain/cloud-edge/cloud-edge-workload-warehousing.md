@@ -222,6 +222,8 @@ The following table shows which outbound features are supported, and where they 
 | Reduce picked quantity                                       | No  | Yes|
 | Reverse work                                                 | No  | Yes|
 | Reverse shipment confirmation                                | No  | Yes|
+| Release transfer orders for receiving<p>Used to enable license plate receiving at scale unit in case of warehouse order line cancellation or as part of a new workload deployment process</p> | Yes | No|
+
 
 ### Inbound
 
