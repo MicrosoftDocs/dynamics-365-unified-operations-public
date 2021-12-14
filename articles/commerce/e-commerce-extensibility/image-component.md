@@ -4,7 +4,7 @@
 title: Image component
 description: This topic describes how to use the Image component in the online SDK to embed images into a module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 12/09/2021
+ms.date: 12/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
