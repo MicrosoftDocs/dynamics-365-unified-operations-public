@@ -61,11 +61,10 @@ This function differs from the [WHERE](er-functions-list-where.md) function, bec
 If one or both arguments that are configured for this function (`list` and `condition`) don't allow this request to be translated to the direct SQL call, an exception is thrown at design time. This exception informs the user that either `list` or `condition` can't be used to query the database.
 
 > [!NOTE]
-> The `FILTER` function behaves differently in comparison with the `WHERE` function when the [`VALUEIN`](er-functions-logical-valuein.md) function is used to specify the selection criteria.
+> The `FILTER` function behaves differently than the `WHERE` function when the [`VALUEIN`](er-functions-logical-valuein.md) function is used to specify the selection criteria.
 > 
-> When the `VALUEIN` function is used in scope of the `WHERE` function and the second argument of `VALUEIN` refers to a data source that returns no records, the returned by `VALUEIN` Boolean *[False](er-formula-supported-data-types-primitive.md#boolean)* value is taken into account. Therefore, the `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` expression returns no vendor records when the **VendGroups** data source returns no vendor group records.
->
-> When the `VALUEIN` function is used in scope of the `FILTER` function and the second argument of `VALUEIN` refers to a data source that returns no records, the returned by `VALUEIN` Boolean *[False](er-formula-supported-data-types-primitive.md#boolean)* value is ignored. Therefore, the `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` expression returns all vendor records of the **Vendors** data source even when the **VendGroups** data source returns no vendor group records.
+> - If the `VALUEIN` function is used in scope of the `WHERE` function, and the second argument of `VALUEIN` refers to a data source that returns no records, the Boolean *[False](er-formula-supported-data-types-primitive.md#boolean)* value that `VALUEIN` returns is considered. Therefore, the expression `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` returns no vendor records if the **VendGroups** data source returns no vendor group records.
+> - If the `VALUEIN` function is used in scope of the `FILTER` function, and the second argument of `VALUEIN` refers to a data source that returns no records, the Boolean *[False](er-formula-supported-data-types-primitive.md#boolean)* value that `VALUEIN` returns is ignored. Therefore, the expression `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` returns all vendor records of the **Vendors** data source, even if the **VendGroups** data source returns no vendor group records.
 
 ## Example 1
 
