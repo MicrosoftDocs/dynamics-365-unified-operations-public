@@ -57,8 +57,8 @@ Use the following procedure to adjust the load line quantity.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that the packing slip can't be generated for.
-1. On the Action Pane, on the **Ship and receive** tab, in the **Reverse** group, select **Reverse shipment confirmation**.
-1. On the **Load lines** tab, select the load line for the item that causes an issue.
+1. On the Action Pane, on the **Ship and receive** tab, in the **Reverse** group, select **Reverse shipment confirmation**.
+1. On the **Load lines** tab, select the load line for the item that causes an issue.
 1. Select **Reduce picked quantity** to adjust the picked quantity.
 1. Set the **Reduce load line** field to reflect adjustments on the load line.
 
@@ -70,5 +70,5 @@ Use the following procedure to reverse the pick registration.
 
 1. Go to **Accounts receivable \> Orders \> All orders**.
 1. Select the sales order for which you can't post a packing slip for the load.
-1. On the **Sales order lines** tab, select the sales order line that pick registration was done for.
+1. On the **Sales order lines** tab, select the sales order line that pick registration was done for.
 1. Select **Update line \> Pick** to unpick the items.

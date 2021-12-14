@@ -76,6 +76,9 @@ To manually firm planned orders, you find and select the planned orders that you
     - **Group by period** (in the **Purchase orders** section) – Select the period to group planned purchase orders by. To use this option, you must also select the **Group by vendor** option.
     - **Group by period** (in the **Transfers** section) – Select the period to group planned transfer orders by. The orders will be grouped based on **From warehouse** and **To warehouse** values.
 
+    > [!NOTE]
+    > Each of the "Group by" options causes the system to convert each planned order to a line in the single purchase order that results from the grouping.
+
     ![Parameters FastTab in the Firming dialog box.](./media/manual-firming.png "Parameters FastTab in the Firming dialog box")
 
 1. On the **Run in the background** FastTab, set up the job so that it runs in batch mode. However, it doesn't make sense to set up a recurrent schedule when you're doing manual firming. The fields work just as they work for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. However, for manual firming, the batch job will process only the currently selected planned orders. It won't process any orders that fit the filters that are currently applied on the page.
