@@ -50,9 +50,9 @@ From the Global repository, import the latest version of the following Electroni
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-## Set up VAT IDs
+### Set up VAT IDs
 
-### Create a registration type for the company code
+#### Create a registration type for the company code
 
 1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
 
@@ -66,7 +66,7 @@ For more information, see [Download ER configurations from the Global repository
 
 You must also create VAT ID registration types for all the countries or regions that your company does business with.
 
-### Match the registration type with a registration category
+#### Match the registration type with a registration category
 
 1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.
 
@@ -76,7 +76,7 @@ You must also create VAT ID registration types for all the countries or regions 
 
 4.  Repeat steps 2 through 3 for the other registration types that you created for the countries or regions that your company does business with.
 
-### Set up the VAT ID of the data provider for your company
+#### Set up the VAT ID of the data provider for your company
 
 1.  Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
 
@@ -90,9 +90,9 @@ You must also create VAT ID registration types for all the countries or regions 
 
 6.  Enter the VAT ID of your company's data provider.
 
-### Set up the VAT number of a trading partner
+#### Set up the VAT number of a trading partner
 
-#### Create a customer's VAT registration number
+##### Create a customer's VAT registration number
 
 1.  Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
 
@@ -128,7 +128,7 @@ Alternatively, you can create a customer's VAT registration numbers by using the
 
 5.  On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select the registration number that you just created.
 
-## Set up foreign trade parameters
+### Set up foreign trade parameters
 
 1.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade parameters**.
 
@@ -146,7 +146,7 @@ Alternatively, you can create a customer's VAT registration numbers by using the
 
 8.  On the **Agent** tab, add information about the company that is providing the statistical declaration. In the **Sales tax** section, in the **Tax exempt number** field, enter the VAT number of the agent.
 
-## Set up the product parameters for the Intrastat declaration
+### Set up the product parameters for the Intrastat declaration
 
 1.  Go to **Product information management** &gt; **Products** &gt; **Released products**.
 
@@ -178,7 +178,7 @@ Alternatively, you can create a customer's VAT registration numbers by using the
 
     -   Invoice
 
-### Set up the transport method.
+#### Set up the transport method.
 
 1.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Transport method**.
 
@@ -186,13 +186,13 @@ Alternatively, you can create a customer's VAT registration numbers by using the
 
 3.  In the **Transport** field, enter a unique code. Companies in Finland use one-digit transport codes.
 
-## Intrastat transfer
+### Intrastat transfer
 
 On the **Intrastat** page, on the Action Pane, you can select **Transfer** to automatically transfer the information about intracommunity trade from your sales orders, free text invoices, purchase orders, vendor invoices, vendor product receipts, project invoices, and transfer orders. Only documents that have an EU country as the country or region of destination (for dispatches) or consignment (for arrivals) will be transferred.
 
 Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
 
-### Generate an Intrastat report
+#### Generate an Intrastat report
 
 1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
 
@@ -228,9 +228,9 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 -   Intrastat (FI)
 
-## Set up VAT IDs
+### Set up VAT IDs
 
-### Create registration types for company codes
+#### Create registration types for company codes
 
 1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
 
@@ -244,7 +244,7 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 6.  Select **Create**.
 
-### Match the registration type with a registration category
+#### Match the registration type with a registration category
 
 1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.
 
@@ -254,7 +254,7 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 4.  For the **VAT ID** registration type, select the **VAT ID** registration category.
 
-### Set up the VAT ID of the data provider for your company
+#### Set up the VAT ID of the data provider for your company
 
 1.  Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
 
@@ -268,7 +268,7 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 6.  In the **Registration number** field, enter **FI02345678**.
 
-### Set up the customer's VAT registration number
+#### Set up the customer's VAT registration number
 
 1.  Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
 
