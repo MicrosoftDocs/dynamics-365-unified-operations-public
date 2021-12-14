@@ -33,9 +33,8 @@ This topic explains how to set up and generate the PPH withholding tax file for 
 
 The Indonesia tax authority  (DGT), that determines taxable entrepreneurs (PKP) registered at KPP Pratama as tax withholder/collector of income tax (PPh) Article 23 and/or Article 26 must report Income Tax Return Article 23 & 26 electronically by using e-Bupot Application. 
 
-	Article 23: The report includes all withholding transactions from vendors where the country region code of primary address is equal to Indonesia
-	Article 26: The report includes all withholding transactions from vendors where the country region code of primary address is different from Indonesia
-
+- Article 23: The report includes all withholding transactions from vendors where the country region code of primary address is equal to Indonesia
+- Article 26: The report includes all withholding transactions from vendors where the country region code of primary address is different from Indonesia
 
 ## Prerequisites
 The primary address of the legal entity must be in Indonesia.
@@ -47,28 +46,25 @@ For more information about how to enable features, see [Feature management overv
 
 ### Download Electronic reporting configurations
 
-The implementation of the WHT declaration for Indonesia t is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+The generation of import file is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 For production and user acceptance testing (UAT) environments, follow the instructions in the topic, [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-To generate the Withholding declarations in an Indonesia legal entity, you need to upload the following configurations:
+To generate the import file you need to upload the following configurations from repository:
 
 - Tax declaration model.version.93.xml or later version
 - Tax declaration model mapping.version.93.153.xml or a later version
 - WHT PPh schema import (ID).version.93.14  or a later version
 
-
 ## Set up General ledger parameters
-To generate the WHT declaration form reports in Microsoft Excel, define an ER format on the **General ledger parameters** page.
 
 1. Go to **Tax** > **Setup** > **General ledger parameters**.
 2. On the **Withholding tax** tab, in the **WHT declaration format mapping** field, select **WHT PPh schema import (ID)**. 
-3. Go to   **Tax** > **Setup** > **Withholding tax** > **Withholding tax revenue types** to set-up WHT tax revenue type (Kode Bukti Potong) and then assign these codes to the related Item withholding tax groups. These codes are mandatory to generate the integration with e-bupot application. 
+3. Go to   **Tax** > **Setup** > **Withholding tax** > **Withholding tax revenue types** to set-up withholding tax revenue type (Kode Bukti Potong) and then assign these codes to the related Item withholding tax groups. These codes are mandatory to generate the integration file with e-bupot application. 
 
 ## Generate the Withholding import file
-The process of preparing and generation of e-bupot file for a specific period is based on the withholding tax transactions posted during the settle and/or post payment tax job. For more information about global withholding tax, see [Global withholding tax](../general-ledger/global-withholding-tax-overview.md).
-
-Complete the following steps to generate the tax declaration report.
+The process of preparing and generation of e-bupot file for a specific period is based on the withholding tax transactions posted during the settle and/or post payment tax job. 
+Complete the following steps to generate the file:
 
 1. Go to **Tax** > **Declarations** > **Withholding tax** > **PPH import file e-bupot 23 and 26**
 2. Select the from date and to date for the report and then select the settlement period
