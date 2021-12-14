@@ -44,8 +44,8 @@ Use the following procedure to adjust the under-delivery percentage.
 
 1. Go to **Accounts receivable \> Orders \> All orders**.
 1. Select the sales order for which you can't post a packing slip for the load.
-1. On the **Sales order lines** tab, select the sales order line for the item that exceeds the under-delivery percentage.
-1. On the **Line details** tab, select **Delivery**.
+1. On the **Sales order lines** tab, select the sales order line for the item that exceeds the under-delivery percentage.
+1. On the **Line details** tab, select **Delivery**.
 1. Set the **Underdelivery** field to a larger percentage that accommodates the quantity that was picked against the load quantity, so that packing slip generation can proceed.
 
 ### Reverse and make adjustments
@@ -55,14 +55,14 @@ Reverse everything that has been posted for the load (for example, the packing s
 Use the following procedure to cancel a packing slip.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
-1. On the Action Pane, on the **Ship and receive** tab, in the **Reverse** group, select **Cancel packing slips**.
+1. On the Action Pane, on the **Ship and receive** tab, in the **Reverse** group, select **Cancel packing slips**.
 
 Use the following procedure to reverse a shipment confirmation.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
-1. On the Action Pane, on the **Ship and receive** tab, in the **Reverse** group, select **Reverse shipment confirmation**.
+1. On the Action Pane, on the **Ship and receive** tab, in the **Reverse** group, select **Reverse shipment confirmation**.
 
 Use the following procedure to reverse work.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
-1. On the Action Pane, on the **Loads** tab, in the **Work** group, select **Reverse work**.
+1. On the Action Pane, on the **Loads** tab, in the **Work** group, select **Reverse work**.
