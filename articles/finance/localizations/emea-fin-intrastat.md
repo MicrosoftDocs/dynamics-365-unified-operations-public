@@ -1,4 +1,18 @@
-﻿# Finnish Intrastat
+---
+# required metadata
+
+title: Finnish Intrastat
+description: This topic contains information about the Finnish Intrastat report.
+author: andosip
+ms.date: 12/14/2021
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+# Finnish Intrastat
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Finnish Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -8,7 +22,7 @@ The following fields are included in the Finnish Intrastat declaration. All of t
 |-------------------------|-------------------------|
 | Data provider | The value-added tax (VAT) ID of the data provider. This ID is set on the **Registration IDs** tab of the **Legal entity** page. |
 | Statistical period | The reporting period of the Intrastat report. |
-| Declaration number | The direction of the Intrastat report.</br><ul></br><li>For an Intrastat report on arrivals, "1" is printed.</li></br><li>For an Intrastat report on dispatches, "2" is printed.</li></br></ul> |
+| Declaration number | The direction of the Intrastat report.</br><ul><li>For an Intrastat report on arrivals, "1" is printed.</li><li>For an Intrastat report on dispatches, "2" is printed.</li> |
 | Agent | The VAT number of the agent. This number is set in the **Tax exempt number** field on the **Agent** tab of the **Foreign trade parameters** page. |
 | VAT number of trading partner | The tax-exempt number of the counterparty. |
 | Commodity code | The commodity code according to the Combined Nomenclature (CN) classification. This code is set on the product page. |
@@ -32,7 +46,7 @@ From the Global repository, import the latest version of the following Electroni
 
 -   Intrastat (FI)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Set up VAT IDs
 
@@ -92,7 +106,7 @@ You must also create VAT ID registration types for all the countries or regions 
 
 7.  On the Action Pane, select **Save**. Then close the page.
 
-For more information, see [Registration IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
+For more information, see [Registration IDs](emea-registration-ids.md).
 
 Alternatively, you can create a customer's VAT registration numbers by using the **Tax exempt number** page.
 
