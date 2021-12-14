@@ -118,7 +118,7 @@ The requisition purpose rule is an optional rule that determines the type of req
 
 ### Replenishment category access policy rule
 
-The replenishment category access policy rile is an optional rule that determines the products that are available to fulfill requisition demand for a specific legal entity when the requisition purpose is **Replenishment**.
+The replenishment category access policy rule is an optional rule that determines the products that are available to fulfill requisition demand for a specific legal entity when the requisition purpose is **Replenishment**.
 
 ### Replenishment control rule
 
