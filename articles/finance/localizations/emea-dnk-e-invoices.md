@@ -98,21 +98,21 @@ To configure methods of payment in the system:
 4. In **Value** section, in **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
 
 
-### Sales tax codes transformation
-### Application specific parameters configuration
-In the **Electronic reporting** workspace,
+### Sales tax codes configuration
 
-When you generate electronic invoices, the sales tax code rates are analyzed and transformed into 
+When you generate electronic invoices in OIOUBL format, the tax information must be hierarchically structured in a specific way in the output XML file.
 
-[OIOUBL TaxSchemeID](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). 
+The top level of hierarchy is **Tax Scheme**, see the official list of tax schemes applicable for OIOUBL format: [OIOUBL Tax Schemes](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TaxSchemeID-1.5.pdf). 
 
-[OIOUBL TaxCategoryID](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
+The next level of tax data grouping within the tax scheme is **Tax Category**, see the official list of tax categories applicable for OIOUBL format: [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
 
+For some taxes, an additional attribute **Tax Type Code** must be also defined.
 
 The following logic is used:
+In the next chapter 
 
-- For all non-zero tax rates, the **S** category is used.
-- For all zero tax rates, either the **E** category or the **Z** category is used, depending on the reporting code that is configured for tax-free sales.
+### Application specific parameters configuration
+In the **Electronic reporting** workspace,
 
 ### Configure customer parameters
 
