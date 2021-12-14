@@ -2464,6 +2464,8 @@
             href: e-commerce-extensibility/set-up-key-vault.md
           - name: Create a request pipeline plug-in hook
             href: e-commerce-extensibility/request-pipeline-hook.md
+          - name: Image component
+            href: e-commerce-extensibility/image-component.md
         - name: Develop data actions
           items:
           - name: Data actions overview
