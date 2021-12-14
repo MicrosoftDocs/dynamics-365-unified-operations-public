@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 11/28/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -155,7 +155,7 @@ The following table shows the lookup results for **NoteForTaxCode_Lookup**.
 > [!IMPORTANT]
 > It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because **Reasom** is not a mandatory field in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in the **Reason** column, and **\*Not blank\*** in all the other columns.
 
-If you select a financial reson code for a document that isn;t assosiated with any lookup result from the previous table (this means that **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node, and the comment will be reported \"as-is\" in the related **Reason comment** field of the original document'
+If you select a financial reason code for a document that isn't associated with any lookup result from the previous table (this means that **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node, and the comment will be reported \"as-is\" in the related **Reason comment** field of the original document'
 
 #### <a id="tax-transaction-classifier"></a>Detailed description of the tax transaction classifier
 
@@ -205,7 +205,7 @@ The following table shows the lookup results for **VATSpecification_Lookup**.
 > It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because in some cases, the **Item sales tax group** and **Sales tax group** fields can be empty in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in **Item sales tax group**, and **Sales tax group** columns and **\*Not blank\*** in all the other columns.
 
 > [!IMPORTANT]
-> Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administaration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
+> Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
 
 ### <a id="standard-tax-code"></a>Standard tax codes (StandardTaxCodes_Lookup)
 
@@ -439,10 +439,17 @@ When you [register an integration point in the ID-porten web portal](emea-nor-va
 
 Internet addresses (URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual URLs on the official Altinn and ID-porten website. 
 
-Follow these steps to set up a URL that is used by the *test* environment in ID-porten.
+Follow these steps to set up a URL that is used in ID-porten.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
-2. In the **Base URL** field, enter `https://oidc-ver2.difi.no/idporten-oidc-provider`.
+2. In the **Base URL** field, enter one of the following internet addresses:
+
+    - `https://oidc-ver2.difi.no/idporten-oidc-provider` to interoperate with the *sandbox* endpoint of ID-porten
+    - `https://oidc.difi.no/idporten-oidc-provider/` to interoperate with the *production* endpoint of ID-porten
+
+    > [!IMPORTANT]
+    > For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+
 3. In the **Authorization URL path** field, enter **/authorize**.
 4. In the **Token URL path** field, enter **/token**.
 5. Copy the full URL of the current page from your browser's Address bar, and paste it into the **Redirect URL** field.
@@ -453,7 +460,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
 2. In the **Base URL** field, enter `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
-3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services.
+3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
     | Web service name | Internet address |
     |---|---|
@@ -465,7 +472,16 @@ Follow these steps to set up an internet address that is used by Altinn web serv
     | NO Altinn GET attachments | Leave this field blank. |
     | NO Validate VAT return | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
-> [!IMPORTANT]
-> For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+For *production* interoperation with web services that the Norwegian Tax Administration provides, use the following internet addresses.
+
+| Web service name | Internet address |
+|---|---|
+| NO Altinn GET JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn POST JSON       | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn POST XML        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn PUT JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn PUT XML         | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn GET attachments | Leave this field blank. |
+| NO Validate VAT return    | `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
