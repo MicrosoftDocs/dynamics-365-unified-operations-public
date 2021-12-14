@@ -65,7 +65,7 @@ When a **GroupBy** data source is executed in memory, by default the application
 
 ## <a name="Alternatives"></a>Alternatives
 
-Notice that similar aggregations can be calculated by using either [other](er-data-collection-data-sourcesmd#if-i-have-to-calculate-running-totals-and-collect-data-what-is-the-difference-between-using-a-data-collection-data-source-and-using-the-built-in-data-collection-functions) type of data sources or ER built-in functions.
+Notice that similar aggregations can be calculated by using either [other](er-data-collection-data-sources.md#if-i-have-to-calculate-running-totals-and-collect-data-what-is-the-difference-between-using-a-data-collection-data-source-and-using-the-built-in-data-collection-functions) type of data sources or ER built-in functions.
 
 To learn more about this feature, complete the example that follows.
 
@@ -83,11 +83,11 @@ Make sure that you have Intrastat transactions for reporting on the Intrastat pa
 
 ### Configure the ER framework
 
-Follow the steps in [Configure the ER framework](er-quick-start2-customize-report#ConfigureFramework) to set up the minimal set of ER parameters. You must complete this setup before you start to use the ER framework to design an ER model mapping.
+Follow the steps in [Configure the ER framework](er-quick-start2-customize-report.md#ConfigureFramework) to set up the minimal set of ER parameters. You must complete this setup before you start to use the ER framework to design an ER model mapping.
 
 ### Import the standard ER format configuration
 
-Follow the steps in [Import the standard ER format configuration](er-quick-start2-customize-report#ImportERSolution1) to add the standard ER configurations to your current instance of Dynamics 365 Finance. Import version 1 of the **Intrastat model** configuration from the repository.
+Follow the steps in [Import the standard ER format configuration](er-quick-start2-customize-report.md#ImportERSolution1) to add the standard ER configurations to your current instance of Dynamics 365 Finance. Import version 1 of the **Intrastat model** configuration from the repository.
 
 ### Create a custom data model configuration
 
@@ -149,7 +149,7 @@ Follow the steps in [Create a new model mapping configuration](er-quick-start1-n
 
 ### Design the added model mapping component
 
-#### <a name="AddMmDataSource"></a>Add a data source to access an application table
+#### <a name="AddMmDataSource1"></a>Add a data source to access an application table
 
 You must configure a data source to access the application tables that contain details of Intrastat transactions.
 
@@ -160,7 +160,7 @@ You must configure a data source to access the application tables that contain d
     2.  In the **Table** field, enter **Intrastat**.
     3.  Select **OK** to add the new data source.
 
-#### <a name="AddMmDataSource"></a>Add a data source to group Intrastat transactions
+#### <a name="AddMmDataSource2"></a>Add a data source to group Intrastat transactions
 
 You must configure a **GroupBy** data source to group Intrastat transactions and compute aggregate functions.
 
