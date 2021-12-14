@@ -96,7 +96,7 @@ Follow these steps to add a free-text note that is limited to 4,000 characters.
 4. Select **Attachments**, and then, on the Action Pane, select **New** \> **Note**.
 5. In the **Note** field, enter your note. This note will be included on the VAT return in XML format when it's generated.
 
-Follow these steps to include a payment ID, or KID number, in your digital VAT return. This KID number can only be used when the `<fastsattMerverdiavgift>` value (total value added tax for the reporting period) is negative.
+Follow these steps to include a payment ID, or KID number, in your digital VAT return. This KID number can be used only when the `<fastsattMerverdiavgift>` value (the total value-added tax \[VAT\] for the reporting period) is negative.
 
 1. On the **Messages** FastTab, select the electronic message to specify the KID number for.
 2. On the **Message additional fields** FastTab, select the **NO VAT Payment ID** additional field.
