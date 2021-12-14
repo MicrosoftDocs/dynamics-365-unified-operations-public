@@ -35,5 +35,20 @@ This topic explains how to set up and generate the PPH withholding tax file for 
 
 The Indonesia tax authority  (DGT), that determines taxable entrepreneurs (PKP) registered at KPP Pratama as tax withholder/collector of income tax (PPh) Article 23 and/or Article 26 must report Income Tax Return Article 23 & 26 electronically by using e-Bupot Application. 
 
+## Prerequisites
+The primary address of the legal entity must be in Indonesia.
+In the **Feature management** workspace, the following feature must be enabled:
+
+   - **Global withholding tax**
+
+For more information about how to enable features, see [Feature management overview.](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
+
+
+	
+
+
+
+
+
 
 	
