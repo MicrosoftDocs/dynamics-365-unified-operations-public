@@ -2478,7 +2478,7 @@
           href: developer/store-comm-dev-guide-TBD.md
       - name: POS
         items:
-        - name: Getting Started
+        - name: Get started
           items: 
           - name: POS extension overview
             href: dev-itpro/pos-extension/pos-extension-overview.md
@@ -2598,7 +2598,7 @@
             href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
           - name: Retail SDK FAQ
             href: dev-itpro/retail-sdk/sdk-faq.md
-          - name: Development in cloud-hosted environments without admin acces
+          - name: Development in cloud-hosted environments without admin access
             href: dev-itpro/cloud-dev-box
           - name: Run the point of sale (POS) samples
             href: dev-itpro/pos-run-samples.md
