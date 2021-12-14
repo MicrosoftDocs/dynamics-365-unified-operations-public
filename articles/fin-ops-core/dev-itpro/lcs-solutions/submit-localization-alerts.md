@@ -34,9 +34,9 @@ This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to s
 
 ## Accessing the regulatory alert submission service
 
-To accessing the regulatory alert submission service, in Dynamics Lifecycle Services (LCS), in your project or a project you are invited to, either:
-- Use the **menu icon** to select **Alert service**.
-- Scroll to the right side of the page, and then, under **More tools**, select **Alert service**. 
+To access the regulatory alert submission service, in your project or a project you are invited to in Dynamics Lifecycle Services (LCS), do one of the following:
+- From the menu, select **Alert service**.
+- Scroll to the right side of the page, and under **More tools**, select **Alert service**. 
 
 The **Dynamics regulatory alert submission** page appears. You can use this page to view any alerts that have previously been submitted by you or your organization.
 
