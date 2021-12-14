@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and process bridged payments
-description: This topic describes how to set up and process bridged customer payments.
+description: This topic describes how to set up and process bridged customer payments. A bridged payment is a payment that is posted to the general ledger in two steps.
 author: raprofit
 ms.date: 12/03/2021
 ms.topic: article
@@ -18,13 +18,16 @@ audience: Application User
 ms.reviewer: roschlom
 
 ---
+
 # Set up and process bridged payments
 
-You can create bridged payments from either Accounts payable or Accounts receivable. A bridged payment is a payment that is posted to the general ledger in two steps. This option is typically used when the method of payment is set to Bank and there is a need to post the transactions to the bank account only when the transaction has cleared the bank. However, you can use this option with ledger account in which case the system moves the amount from one main account to another main account when the bridging posting is processed. This page provides details on how to configure bridging posting for Accounts receivable; however, similar steps can be followed for Accounts payable.
+[!include [banner](../includes/banner.md)]
+
+You can create bridged payments from either Accounts payable or Accounts receivable. A bridged payment is a payment that is posted to the general ledger in two steps. This option is typically used when the method of payment is set to **Bank** and you need to post transactions to the bank account only when the transaction has cleared the bank. However, you can use this option with ledger account in which case the system moves the amount from one main account to another main account when the bridging posting is processed. This topic provides details on how to configure bridging posting for Accounts receivable. You can follow similar steps for Accounts payable transactions.
 
 ## Set up bridging posting
 
-To use bridging posting, you will need to set up one or more methods of payment to use the **Bridging posting** and select the **Bridging account**.
+To use bridging posting, you will need to set up one or more methods of payment to use the **Bridging posting** method, and then select a **Bridging account**.
 
 1.  Open **Accounts receivable &gt; Payment setup &gt; Methods of payment**.
 
@@ -42,9 +45,9 @@ To create and process bridging posting, follow these steps.
 
 1.  Open **Accounts receivable &gt; Payments &gt; Customer payment journal**.
 
-2.  Click **New** to create a new journal and select the desired N**ame**.
+2.  Click **New** to create a new journal and select a name in the **Name** field.
 
-3.  Add lines to the **Customer payment jo**urnal and select the **Method of payment** that is configured for bridging posting.
+3.  Add lines to the **Customer payment journal** and select the **Method of payment** that is configured for bridging posting.
 
 4.  Post the journal. The transactions will be posted to the main account selected in the **Bridging account** field.
 
@@ -58,6 +61,6 @@ When the transactions have cleared the bank and you want to transfer the payment
 
 4.  Click **Functions &gt; Select bridged transactions**.
 
-5.  Mark each payment that has cleared and then click **Accept**.
+5.  Mark each payment that has cleared, and then click **Accept**.
 
 6.  Post the journal.
