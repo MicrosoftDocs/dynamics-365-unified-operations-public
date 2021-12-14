@@ -1618,7 +1618,7 @@
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
-          href: inventory/inventory-visibility-api.md
+          href: inventory/inventory-visibility-tips.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence home page
