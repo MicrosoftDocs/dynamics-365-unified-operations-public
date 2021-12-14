@@ -52,7 +52,7 @@ Although this topic includes the most important information about the setup, it 
     | NO Altinn | Web application for interoperation with Altinn application programming interfaces (APIs). |
     | NO ID-Porten | Web application for interoperation with the integration point that you created in ID-porten. |
 
-The following table shows the web applications parameters that the **NO VAT return** processing uses to interoperate with the *sandbox APIs* that are provided by the Tax Administration of Norway.
+The following table shows the web application parameters that the **NO VAT return** processing uses to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
 | Parameter | Value for NO Altinn | Value for NO ID-Porten |
 |---|---|---|
@@ -68,7 +68,7 @@ The following table shows the web applications parameters that the **NO VAT retu
 > [!IMPORTANT]
 > To enable access to the access token and interoperation with ID-porten and Altinn APIs for business users, you must define security roles for both web applications.
 
-Internet addresses (base URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual URLs on the official Altinn and ID-porten website. For actual internet addresses of **NO ID-Porten** web application, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+Internet addresses (base URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual internet addresses on the official Altinn and ID-porten website. For actual internet addresses of the **NO ID-Porten** web application, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
 
 ## Web service settings
 
@@ -82,7 +82,7 @@ Internet addresses (base URLs) are subject to change by the Norwegian Tax Admini
     - NO Altinn PUT XML
     - NO Validate VAT return
 
-The following tables show the parameters and parameter values for the web services that the **NO VAT return** processing uses to interoperate with the *sandbox APIs* that are provided by the Tax Administration of Norway.
+The following tables show the parameters and parameter values for the web services that the **NO VAT return** processing uses to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
 ### Web service: NO Altinn GET attachments
 
@@ -124,7 +124,7 @@ The following tables show the parameters and parameter values for the web servic
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **200** |
 
-For *production* interoperation, use the following Internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### Web service: NO Altinn POST JSON
 
@@ -146,7 +146,7 @@ For *production* interoperation, use the following Internet address: `https://sk
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **201** |
 
-For *production* interoperation, use the following **Internet address**: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### Web service: NO Altinn POST XML
 
@@ -168,7 +168,7 @@ For *production* interoperation, use the following **Internet address**: `https:
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **201** |
 
-For *production* interoperation, use the following Internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### Web service: NO Altinn PUT JSON
 
@@ -190,7 +190,7 @@ For *production* interoperation, use the following Internet address: `https://sk
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **200** |
 
-For *production* interoperation, use the following Internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### Web service: NO Altinn PUT XML
 
@@ -212,7 +212,7 @@ For *production* interoperation, use the following Internet address: `https://sk
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **201** |
 
-For *production* interoperation, use the following Internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### Web service: NO Validate VAT return
 
@@ -234,7 +234,7 @@ For *production* interoperation, use the following Internet address: `https://sk
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **200** |
 
-For *production* interoperation, use the following Internet address: `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider`.
+For *production* interoperation, use the following internet address: `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider`.
 
 ## Additional fields
 
