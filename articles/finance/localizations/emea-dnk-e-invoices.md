@@ -45,7 +45,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 - OIOUBL Project credit note (DK)
 
 > [!NOTE]
-> These formats are based on the **Invoice model** configuration and use the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
+> All the additionally required configurations will be automatically imported.
 
 For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -120,6 +120,8 @@ Select **Add** to add a new condition. In the **Name** column for the new condit
 
     > [!NOTE]
     > In the **Name** column, you can select the **&#42;Blank&#42;** or **&#42;Not blank&#42;** placeholder value instead of a specific sales tax code.
+    
+    ![Sending an e-invoice.](media/emea-nor-ger-einvoice.jpg)
 
 6. In the **Lookups** grid, select **Tax category** lookup.
 7. In the **Condtitons** grid, configure the correspondence between internal sales tax codes and official tax categories codes.
