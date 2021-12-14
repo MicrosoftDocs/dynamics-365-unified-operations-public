@@ -4,7 +4,7 @@
 title: Validate store transactions for statement calculation
 description: This topic describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/10/2021
+ms.date: 12/14/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -40,9 +40,9 @@ When you try to post a statement, the validation process can fail because of inc
 
 If inconsistent transactions are picked up by the statement posting process, sales invoices and payment journals that are created can cause statement posting to fail. The **Validate store transactions** process prevents these issues by ensuring that only transactions that pass the transaction validation rules are passed to the transaction statement calculation process.
 
-The following illustration shows the posting processes, including the **Validate store transactions** process.
+The following illustration shows the recurring daytime processes for uploading transactions, validating transactions, and calculating and posting transaction statements and the end of day processes for financial statement calculation and posting.
 
-![Process flow showing the recurring processes for uploading transactions, validating transactions, and transaction statement posting process as a wheel. As an end of day process the graphic shows that the output of the recurring processes result in a financial statement calulation and then posting.](./media/valid-checker-statement-posting-flow.png)
+![Illustration showing the recurring daytime processes for uploading transactions, validating transactions, and calculating and posting transaction statements and the end of day processes for financial statement calculation and posting](./media/valid-checker-statement-posting-flow.png)
 
 ## Store transaction validation rules
 
