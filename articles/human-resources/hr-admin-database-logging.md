@@ -100,13 +100,15 @@ To set up database log cleanup, follow these steps:
 
 1. Go to **System administration > Links > Database > Database log**. Select **Clean up log**.
 
-2. Choose a method of selecting logs to delete by entering one of the following options:
+2. Under the **Records to include** header, select **Filter**.
+
+3. Choose a method of selecting logs to delete by entering one of the following options:
 
    - Table ID
    - Type of log
    - Created date and time
 
-3. Use the **Database log cleanup** tab to determine when to run the log cleanup task. By default, database logs are available for 30 days.
+4. Use the **Database log cleanup** tab to determine when to run the log cleanup task. By default, database logs are available for 30 days.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
