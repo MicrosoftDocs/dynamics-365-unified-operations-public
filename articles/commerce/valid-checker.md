@@ -4,7 +4,7 @@
 title: Validate store transactions for statement calculation
 description: This topic describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/14/2021
+ms.date: 12/15/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
