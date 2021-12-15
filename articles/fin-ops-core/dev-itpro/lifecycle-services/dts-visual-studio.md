@@ -57,7 +57,7 @@ Before you translate any resource files, you should have the resource files for 
 
 ![Add new languages command.](media/dts-vs-new-language.PNG)
 
-The **Label file** wizard appears. Complete this wizard to create new label files for your desired languages.
+The **Label file** wizard appears. Complete this wizard to create new label files for your desired languages. For guidance on using the label file wizard, see [this documentation](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-a-label-file).
 
 ![Label file wizard.](media/dts-vs-label-wizard.PNG)
 
@@ -73,7 +73,7 @@ The following table describes the fields in the **Translate with DTS** dialog bo
 | Source language    | Yes | Select the language of the source files. |
 | Source files       | Yes | Select one or more resource files for translation. This field lists all resource files that are referenced in the selected project. |
 | Target language    | Yes | <p>Select a language to translate the source files into.</p><p><strong>Note:</strong> You can translate only into a target language that a resource file already exists for. Language names that are shown in bold are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific machine translation (MT) models are available in those languages, and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training.</p> |
-| Translation memory | No | The translation memory files for a specific target language. (The value is the zip file that contains translation memories for recycling.) |
+| Translation memory | No | Add the translation memory files for a specific target language. (The value is the zip file that contains translation memories for recycling.) |
 | Create custom MT?  | No | Select whether you want to use the uploaded translation memory to create a custom MT model. |
 
 ![Translate with DTS dialog box.](media/dts-vs-translate.png)
