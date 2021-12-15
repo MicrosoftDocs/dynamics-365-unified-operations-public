@@ -3,7 +3,7 @@
 
 title: Recommended practices for posting profiles
 description: This topic describes recommended practices for configuring posting profiles.  
-author: raprofit
+author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
@@ -16,15 +16,23 @@ ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, Asse
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kweekley
+ms.search.validFrom: 2022-01-03
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 # Recommended practices for posting profiles
 
-When you are configuring posting profiles throughout the system, there are a variety of recommended practices to follow. This page includes details about each scenario and recommended practice.
+There are a variety of recommended practices to follow when you configure posting profiles throughout Dynamics 365. This page includes details about each scenario and recommended practice.
 
 ## Do not allow manual entry
 
-Any main account that is used for a posting profile should have the **Do not allow manual entry** flag set on the **Main accounts** page. This check box ensures that a user cannot manually post a journal entry into the main account. This helps to ensure that the subledger remains in balance with the general ledger and helps make the reconciliation process easier. If adjustments are required to an account that is controlled by the system and posted to automatically, you can do one of two things:
+Any main account that is used for a posting profile should have the **Do not allow manual entry** flag set on the **Main accounts** page. This setting on this check box ensures that a user can't manually post a journal entry into the main account. This helps to ensure that the subledger remains in balance with the general ledger and helps make the reconciliation process easier. If adjustments are required to an account that is controlled by the system and posted to automatically, you can do one of two things:
 
 1.  Create a secondary main account where the adjustments can be posted. Then use a Total account or special row on your financial reports to group and sum the accounts together.
 
