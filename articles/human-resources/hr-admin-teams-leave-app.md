@@ -61,7 +61,6 @@ You can check the version of the Human Resources app by going to the **About** t
 
 ![Human Resources **About** tab.](./media/HR-teams-about.png)
 
-
 ## Enable notifications for the Human Resources app in Teams
 
 If you want users to receive leave request notifications in the Teams app, you must enable notifications in Dynamics 365 Human Resources.
