@@ -42,7 +42,7 @@ You can find the Dynamics 365 Human Resources app in the Teams store.
 2. Search for Dynamics 365 Human Resources, and then select the **Human Resources** tile.
 
 > [!NOTE]
-> Starting December 20, 2021, the Human Resources App bot services (version 1.1.4) hosted in Microsoft tenant will be decommissioned. The most up-to-date extension (version 1.1.5) is available for install. For more information, see [Manage leave requests in Teams](hr-teams-admin-app.md#update-app).
+> Starting December 20, 2021, the Human Resources App bot services (version 1.1.4) hosted in Microsoft tenant will be decommissioned. The most up-to-date extension (version 1.1.5) is available for install. For more information, see [Manage leave requests in Teams](hr-admin-teams-leave-app.md#update-app).
 
 3. Select the **Add** button to install the app.
 
