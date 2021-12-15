@@ -434,7 +434,7 @@
               href: open-url-in-pos.md
           - name: Payments 
             items:
-            - name: Gift Cards
+            - name: Gift cards
               items:
               - name: Support for external gift cards
                 href: dev-itpro/gift-card.md
@@ -2378,11 +2378,11 @@
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
     - name: Developer
       items:   
-      - name: Commerce Developer Guide
+      - name: Commerce developer guide
         href: developer/commerce-dev-guide-TBD.md
       - name: Commerce SDK
         items:
-        - name: Getting Started
+        - name: Get started
           items: 
           - name: Download Retail SDK samples and reference packages from GitHub and NuGet
             href: dev-itpro/retail-sdk/sdk-github.md
@@ -2422,7 +2422,7 @@
             href: dev-itpro/commerce-application-insights.md
           - name: Create custom localized error messages for payment terminal extensions
             href: dev-itpro/payment-custom-error-messages.md
-        - name: ConsumePre-extended columns in the channel database
+        - name: Consume
           items:
           - name: Commerce runtime (CRT) extensibility and triggers
             href: dev-itpro/commerce-runtime-extensibility-trigger.md
@@ -2438,8 +2438,6 @@
             href: dev-itpro/async-commerce-extension.md
           - name: Extend Commerce Data Exchange - Real-time Service
             href: dev-itpro/extend-commerce-data-exchange.md
-          - name: Extend Commerce Store receipts
-            href: dev-itpro/retail-sdk/retail-sdk-samples.md.md
           - name: Pre-extended columns in the channel database
             href: dev-itpro/extended-columns.md            
         - name: Extend
@@ -2474,7 +2472,7 @@
             href: dev-itpro/retail-sdk/remove-csu-package.md         
       - name: Store Commerce
         items:
-        - name: Store Commerce Developer Guide
+        - name: Store Commerce developer guide
           href: developer/store-comm-dev-guide-TBD.md
       - name: POS
         items:
@@ -2490,7 +2488,7 @@
             href: dev-itpro/pos-extension/create-pos-extension-package
           - name: Create an .appx file for a Modern POS extension package
             href: dev-itpro/pos-extension/create-pos-extension-appx.md
-          - name: Getting started with POS extensions
+          - name: Get started with POS extensions
             href: dev-itpro/pos-extension/pos-extension-getting-started.md
           - name: POS extension basics
             href: dev-itpro/pos-extension/pos-extension-basics.md
@@ -2510,7 +2508,7 @@
             href: dev-itpro/pos-apis.md
           - name: Call point of sale (POS) APIs or operations from POS extensions
             href: dev-itpro/pos-api-extension.md
-          - name: Formatters
+          - name: Formatters (need title)
             href: formatters-TBD.md
           - name: Use POS controls in extensions
             href: dev-itpro/pos-extension/controls-pos-extension.md
@@ -2524,7 +2522,7 @@
               href: /dev-itpro/pos-custom-control.md
             - name: Add custom controls to non-screen designer-based POS views
               href: dev-itpro/pos-control-non-screen.md
-            - name: Extend the point of sale (POS) Dual display view
+            - name: Extend the point of sale (POS) dual display view
               href: dev-itpro/pos-dual-display-extension.md
             - name: Add custom buttons to the POS header bar
               href: dev-itpro/pos-header-bar.md
@@ -2574,8 +2572,8 @@
           items:
           - name: Consume external or third party libraries like Knockout.js in POS extensions
             href: dev-itpro/pos-extension/knockout-pos-extension.md
-          - name: Create Commerce payment packaging for Finance and Operations deployment
-            href: dev-itpro/payment-connector-package.md
+          - name: Show custom notifications in the POS
+            href: dev-itpro/extend-pos-notification.md
         - name: Hardware Station
           items:
           - name: Integrate the POS with a new hardware device and generate the extension installer
