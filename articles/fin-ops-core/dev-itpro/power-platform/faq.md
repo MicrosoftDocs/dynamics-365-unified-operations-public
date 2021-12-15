@@ -135,4 +135,8 @@ When the Microsoft Power Platform integration is enabled, the Finance and Operat
 
 Although the automatic virtual entity configuration will be used for the Power Platform environment linked to the Finance and Operations environment through the Microsoft Power Platform integration, virtual entities can be manually configured in additional Power Platform environments to enable virtual entities for the Finance and Operations environment with more than one Power Platform environment.
 
+### Can I use Dataverse virtual entities as a data source with the Data Integrator?
+
+No. Virtual entities are not supported as a source for data integration with the [Data Integrator](../power-platform/admin/data-integrator). Technical limitations prevent the Data Integrator from getting the deltas in the source data to push to the data in the destination environment.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
