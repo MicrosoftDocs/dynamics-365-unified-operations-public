@@ -4,7 +4,7 @@
 title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ On version 1.1.4, the web bot will stop responding to any message. For example, 
 2. Find the **Human Resources** app.
 3. Click **Upgrade**.
 
-You can check the version of the Human Resources app by going to the **About** tab. 
+You can check the version of the Human Resources app by either going to the **About** tab or by going to the **Personal app** section. 
 
 ![Human Resources **About** tab.](./media/HR-teams-about.png)
 
