@@ -4,7 +4,7 @@
 title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,6 +46,21 @@ You can find the Dynamics 365 Human Resources app in the Teams store. For inform
 For information about managing app permissions in Teams, see [Manage app permission policies in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies).
 
 If you want your users to view the Leave and absence calendar in the app, you'll need to enable the **Leave and absence calendar in Teams** in Feature management. For more information about enabling features, see [Manage features](hr-admin-manage-features.md).
+
+## Update app
+>[!NOTE]
+> Starting December 20, 2021, the Human Resources App bot services hosted in Microsoft tenant will be decommissioned. There will be no impact for an up-to-date extension (version 1.1.5) which is available for install. The main impact will be on the outdated extension (version 1.1.4). The chat bot in this version will stop working. The **Time-off** tab will continue to work in both extensions.
+
+For version 1.1.4, the chat bot will stop responding to any message. For example, **Sign in**, **View balances**, and **See time-off**. The app must be manually updated to the latest version. For more information, see [Update apps in Microsoft Teams](/MicrosoftTeams/apps-update-experience).
+
+To update to version 1.1.5, complete these steps:
+1. In Microsoft Teams, go to **Apps**.
+2. Find the **Human Resources** app.
+3. Select **Upgrade**.
+
+You can check the version of the Human Resources app by either going to the **About** tab or by going to the **Personal app** section. 
+
+![Human Resources **About** tab.](./media/HR-teams-about.png)
 
 ## Enable notifications for the Human Resources app in Teams
 
