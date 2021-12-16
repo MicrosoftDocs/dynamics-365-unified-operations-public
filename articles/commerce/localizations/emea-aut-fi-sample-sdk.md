@@ -219,7 +219,7 @@ There are two request handlers for document providers:
 - **DocumentProviderEFRFiscalAUT** – This handler is used to generate fiscal documents for the fiscal registration service.
 - **DocumentProviderEFRNonFiscalAUT** – This handler is used to generate non-fiscal documents for the fiscal registration service.
 
-These handlers are inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in headquarters.
+These handlers are inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Commerce headquarters.
 
 The connector supports the following requests:
 
@@ -235,7 +235,7 @@ The configuration files are located in the **Configuration** folder of the exten
 - **DocumentProviderFiscalEFRSampleAustria** – For fiscal documents.
 - **DocumentProviderNonFiscalEFRSampleAustria** – For non-fiscal documents.
 
-The purpose of these files is to enable settings for the document provider to be configured from headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following setting is added:
+The purpose of these files is to enable settings for the document provider to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following setting is added:
 
 - VAT rates mapping
 
@@ -249,7 +249,7 @@ The Hardware station extension is **HardwareStation.Extension.EFRSample**. It us
 
 The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service.
 
-The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in headquarters.
+The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Commerce headquarters.
 
 The connector supports the following requests:
 
@@ -259,7 +259,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
