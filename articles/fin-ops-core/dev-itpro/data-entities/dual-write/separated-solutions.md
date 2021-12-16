@@ -20,16 +20,18 @@ ms.search.validFrom: 2021-11-29
 
 Previously, the Dual-write Application Orchestration package was a single package that contained the following solutions:
 
-- CurrencyExchangeRates
-- Dynamics365Company
-- Dynamics365FinanceAndOperationsCommon
-- Dynamics365FinanceExtended
-- Dynamics365SupplyChainExtended
-- Dynamics365AssetManagement
-- Dynamics365AssetManagementApp
-- Dynamics365Notes
-- Dynamics365FinanceAndOperationsDualWriteMaps
-- Dynamics365FinanceAndOperationsAnchor
+- Dynamics 365 Notes
+- Dynamics 365 Finance and Operations Common Anchor
+- Dynamics 365 Finance and Operations Dual Write Entity Maps
+- Dynamics 365 Asset Management App
+- Dynamics 365 Asset Management
+- HCM Common
+- Dynamics 365 Supply Chain Extended
+- Dynamics 365 Finance Extended
+- Dynamics 365 Finance and Operations Common
+- Dynamics 365 Company
+- Currency Exchange Rates
+- Field Service Common
 
 Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customer can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations be upgraded.
 
@@ -284,3 +286,12 @@ The following maps are available in this package.
 **Dependency information**
 
 The Dual-write Asset Management package depends on the Dual-write Application Core package. Therefore, you should install the Dual-write Application Core package before you install the Dual-write Asset Management package.
+
+## Packages required for Project Operations
+Project Operations depends on the following packages. Therefore, you should install these packages before you install Project Operations.
+
+- Dual-write Application Core package
+- Dual-write Finance package
+- Dual-write Supply Chain package
+- Dual-write Asset Management package
+- Dual-write Human Resources package
