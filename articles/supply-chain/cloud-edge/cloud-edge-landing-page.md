@@ -4,7 +4,7 @@ description: This topic provides information about cloud and edge scale units fo
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -47,15 +47,7 @@ You can configure your hub environment and cloud scale units for selected worklo
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
-The warehouse management workload is the first distributed workload for scale units that has been released for general availability.
-
-For warehouse management, scale units deliver the following capabilities:
-
-- The system can process selected wave methods for sales orders and demand replenishment.
-- Warehouse workers can run sales and demand replenishment warehouse work by using the Warehouse Management mobile app.
-- Warehouse workers can inquire into on-hand inventory by using the Warehouse Management mobile app.
-- Warehouse workers can create and run inventory movements by using the Warehouse Management mobile app.
-- Warehouse workers can register purchase orders and do putaway by using the Warehouse Management mobile app.
+The warehouse management workload is the first distributed workload for scale units that has been released for general availability. It enables your warehouse operations to scale and run in a resilient environment having isolated maintenance windows​. The warehouse management workload supports most of the enterprise hub warehouse management processes.
 
 For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
 

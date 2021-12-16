@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
+ms.search.form: PurchTable, InventTransferOrders, SalesTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -148,6 +148,7 @@ No other types of source-documents processing or warehouse work are currently su
 
 > [!NOTE]
 > Mobile device menu items and buttons for unsupported functionalities aren't shown in the _Warehouse Management mobile app_ when it is connected to a scale unit deployment.
+For more information about how to setup the _Warehouse Management mobile app_, see [Setup Warehouse Management mobile app for cloud and edge scale unit workloads](cloud-edge-workload-setup-warehouse-app.md).
 > 
 > When you run a workload on a scale unit, you can't run unsupported processes for that specific warehouse on the hub. The tables provided later in this topic document the supported capabilities.
 >
