@@ -16,6 +16,14 @@ ms.search.form: CustPaymMode, VendPaymMode, LedgerJournalTable, LedgerJournalTra
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kweekley
+ms.search.validFrom: 2022-01-03
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
