@@ -3,8 +3,8 @@
 
 title: Fiscal printer integration sample for Italy
 description: This topic provides an overview of the fiscal integration sample for Italy.
-author: josaw
-ms.date: 09/21/2021
+author: EvgenyPopovMBS
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -63,7 +63,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Print fiscal receipts for customer order operations:
 
         - A fiscal receipt isn't printed for a customer order deposit.
-        - Print a fiscal receipt for carry-out lines of a hybrid customer order.
+        - Print a fiscal receipt for carryout lines of a hybrid customer order.
         - Print a fiscal receipt for the pickup operation for a customer order.
         - Print a fiscal receipt for a return order.
 
@@ -82,13 +82,101 @@ The following scenarios are covered by the fiscal printer integration sample for
 
 The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
-- Value-added tax (VAT) rates mapping:
+- **Tender type mapping** – The mapping of payment methods that are configured for the store to payment types that the fiscal printer supports. The following example shows the default mapping.
 
-    *1 : 22.00 ; 2 : 10.00 ; 3 : 4.00 ; 4 : 0.00*
+    ```JSON
+    {"PaymentMethods": [
+        {"StorePaymentMethod":"1", "PrinterPaymentType":"0", "PrinterPaymentIndex":"00"},
+        {"StorePaymentMethod":"3", "PrinterPaymentType":"2", "PrinterPaymentIndex":"00"},
+        {"StorePaymentMethod":"4", "PrinterPaymentType":"2", "PrinterPaymentIndex":"01"},
+        {"StorePaymentMethod":"6", "PrinterPaymentType":"0", "PrinterPaymentIndex":"01"},
+        {"StorePaymentMethod":"8", "PrinterPaymentType":"6", "PrinterPaymentIndex":"01"}
+        ],
+        "DepositPaymentMethod": {"PrinterPaymentType":"2", "PrinterPaymentIndex":"00"}}
+    ```
 
-- Tender type mapping:
+    Here is an explanation of the attributes in this mapping:
 
-    *1 : 0 ; 2 : 1 ; 3 : 2 ; 4 : 2 ; 5 : 0 ; 6 : 0 ; 7 : 0 ; 8 : 2 ; 9 : 0 ; 10 : 2 ; 11 : 1*
+    - **StorePaymentMethod** is a payment method that is set up for the store at **Retail and Commerce \> Channel setup \> Payment methods \> Payment methods**.
+    - **PrinterPaymentType** and **PrinterPaymentIndex** are the corresponding payment type and index that are defined in the Epson fiscal printer documentation.
+    - **DepositPaymentMethod** is used to specify a printer's payment type and index for the part of the customer order pickup amount that is settled with the customer order deposit.
+
+    The following table shows how the sample mapping of payment methods corresponds to store payment methods that are configured in the standard demo data.
+
+    | Payment method | Payment method name |
+    |----------------|---------------------|
+    | 1              | Cash                |
+    | 3              | Card                |
+    | 4              | Customer account    |
+    | 6              | Currency            |
+    | 8              | Gift card           |
+
+    You must modify the sample mapping according to the payment methods that are configured in your application.
+
+- **Barcode type for receipt number** – The type of bar code that is used to show a receipt number on a fiscal receipt. The default mapping is **CODE128**.
+- **Print fiscal data in receipt header** – If this parameter is turned on, store information will be printed on the fiscal receipt. This information includes the store's name, address, and tax identification number, and the cashier's name.
+- **Fiscal printer department mapping** – The mapping of departments of the fiscal printer to value-added tax (VAT) rates, VAT exempt natures, and product types. The following example shows the default mapping.
+
+    ```JSON
+    {"Departments": [
+        {"VATRate":"2200", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"01"},
+        {"VATRate":"2200", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"02"},
+        {"VATRate":"1000", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"03"},
+        {"VATRate":"1000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"04"},
+        {"VATRate":"0500", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"05"},
+        {"VATRate":"0500", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"06"},
+        {"VATRate":"0400", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"07"},
+        {"VATRate":"0400", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"08"},
+        {"VATRate":"0000", "VATExemptNature":"", "ProductType":"0", "DepartmentNumber":"09"},
+        {"VATRate":"0000", "VATExemptNature":"", "ProductType":"1", "DepartmentNumber":"10"},
+        {"VATRate":"0000", "VATExemptNature":"NS", "ProductType":"0", "DepartmentNumber":"99"}]}
+    ```
+
+    Here is an explanation of the attributes in this mapping:
+
+    - **VATRate** is a supported VAT rate that is configured as a sales tax code. The value in the mapping has two decimal places but no decimal separator. For example, **2200** represents 22 percent, and **1000** represents 10 percent.
+    - **VATExemptNature** is applicable only in cases where the VAT rate is 0 (zero), including cases where there is no tax. Currently, **VATExemptNature** is supported only for gift cards, and the value in the mapping should correspond to the value of the **VATExemptNatureForGiftCard** property in the XML configuration file.
+    - **ProductType** is the type of product. A value of **0** represents goods, and a value of **1** represents services.
+    - **DepartmentNumber** is the number of the department that is configured in the printer and that corresponds to the previous three attributes.
+
+    You must modify the sample mapping according to the VAT rates that are configured in your application and corresponding departments that are configured in your fiscal printer.
+
+- **VAT exempt nature for gift card** – The VAT exempt nature that should be applied when a gift card is issued or refilled. The value should correspond to some entry in the fiscal printer department mapping. The default mapping is **NS**.
+- **Enable free of charge items** – If this parameter is turned on, the special *omaggio* discount adjustment type for items that have a 100-percent discount is enabled.
+- **Info code for return origin** – The info code that is used to capture the origin of a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for original sales date** and **Return origin mapping** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists. 
+
+    This info code should be configured to enable the user to select or enter one of the possible origins of returns in your stores. For example, it can be configured as a list of subcodes (such as **Return from site** or **Return from kiosk**). The **Return origin mapping** parameter is then used to translate the value of the info code into a command for the fiscal printer.
+
+    The info code that is selected for **Info code for return origin** should be configured as a mandatory info code that is fired one time per sales transaction. It should be assigned as the **Return product** info code in the POS functionality profile, so that it's fired when the **Return product** operation is run.
+
+    No default value is specified for this mapping. You must select an info code that is configured in your application.
+
+- **Info code for original sales date** – The info code that is used to capture the original sales date for a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for return origin** and **Return origin mapping** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists.
+
+    The info code should be configured so that the **Input type** field is set to **Date**. It should be configured as a mandatory info code that is fired one time per sales transaction. It should also be assigned as the **Linked info code** for the info code that is selected for the **Info code for return origin** parameter, so that the two info codes are fired one after another.
+
+    No default value is specified for this mapping. You must select an info code that is configured in your application.
+
+- **Return origin mapping** – The mapping of return origins that is used to print the origin of a return transaction if no original sales receipt is provided. This parameter is used together with the **Info code for return origin** and **Info code for original sales date** parameters to generate a correct message in the fiscal receipt about the origin of a return transaction if no original sales transaction exists. The following example shows the default mapping.
+
+    ```JSON
+    {"ReturnOrigins": [
+        {"ReturnOrigin":"1", "PrinterReturnOrigin":"POS"},
+        {"ReturnOrigin":"2", "PrinterReturnOrigin":"ND"}
+        ],
+        "PrinterReturnOriginWithoutFiscalData":"POS"}
+    ```
+
+    Here is an explanation of the attributes in this mapping:
+
+    - **ReturnOrigin** is one of possible origins of returns in your stores. The value should correspond to a value of the **Info code for return origin** parameter.
+    - **PrinterReturnOrigin** is one of the return origins that the fiscal printer accepts (**POS**, **VR**, or **ND**).
+    - **PrinterReturnOriginWithoutFiscalData** is the return origin that the fiscal printer accepts and that corresponds to a return transaction that is linked to an original sales transaction that doesn't have linked fiscal data, because it wasn't registered through a fiscal printer. In this case, the original sales date is identified as the date of the original sales transaction.
+
+The following default data mappings are obsolete and are kept only for backward compatibility:
+
+- Value-added tax (VAT) codes mapping
+- Deposit payment type
 
 ### Gift cards
 

@@ -3,7 +3,7 @@
 
 title: Dynamics 365 payment data use
 description: This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
-author: rubendel
+author: BrianShook
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
 

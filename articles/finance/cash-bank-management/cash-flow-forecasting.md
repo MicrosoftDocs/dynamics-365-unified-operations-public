@@ -4,7 +4,7 @@
 title: Cash flow forecasting
 description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 # Cash flow forecasting
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 You can use the cash flow forecasting tools to analyze upcoming cash flow and currency requirements, so that you can estimate the company's future need for cash. To obtain a forecast of the cash flow, you must complete the following tasks:
 
@@ -98,9 +99,12 @@ Budget register entries can be included in the cash flow forecast on an individu
 Inventory supply and demand forecasts can be included in cash flow forecasts. On the **Inventory management** tab of the **Cash flow forecast setup** page, select the forecast model to include in the cash flow forecast. Inclusion in cash flow forecasting can be overwritten on individual supply and demand forecast lines.
 
 ### Setting up Dimensions for Cash flow forecasting
-A new tab on the **Cash flow forecasting setup** page lets you control what financial dimensions to use for filtering in the **Cash flow forecasting** workspace. This tab will only appear when the Cash flow forecasts feature is enabled. 
+A new tab on the **Cash flow forecasting setup** page lets you control which financial dimensions are used for filtering in the **Cash flow forecasting** workspace. This tab appears only when the Cash flow forecasts feature in Finance insights is enabled. 
 
 On the **Dimensions** tab, choose from the list of dimensions to use for filtering, and use the arrow keys to move them to the right-hand column. Only two dimensions can be selected for filtering cash flow forecast data. 
+
+### Setting up External source
+External data can be entered or imported into cash flow forecasts. Before external data is entered or imported, external sources must be set up. On the **External source** tab, set up external cash flow categories. A category can be either **Outgoing** or **Incoming**. **Liquidity** should be selected as the posting type. In the **Legal entity settings** grid, select the legal entities and the corresponding main accounts that the external cash flow categories apply to.
 
 ### Project management and accounting
 

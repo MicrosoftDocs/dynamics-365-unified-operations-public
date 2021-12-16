@@ -36,5 +36,6 @@ Planning Optimization results might differ from results from the built-in master
 
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
 - [Parameters not used by Planning Optimization](not-used-parameters.md)
+- [Date and time parameters used by Planning Optimization](date-time-used.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

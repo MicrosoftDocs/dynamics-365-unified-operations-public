@@ -4,7 +4,7 @@
 title: Data events
 description: This topic provides an overview of data events.
 author: jaredha
-ms.date: 10/25/2021
+ms.date: 11/09/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -48,7 +48,7 @@ Data events can be activated either in all legal entities or in specific legal e
 
 Only company-specific data events can be configured for specific legal entities. When you configure data events that aren't company-specific, the **Legal entity** field isn't editable, and the data events are enabled for all legal entities.
 
-To activate a data event, select a configured endpoint. For information about how to configure endpoints business events and data events, see [Managing endpoints](home-page.md#managing-endpoints).
+To activate a data event, select a configured endpoint. For information about how to configure endpoints business events and data events, see [Manage business event endpoints](managing-business-event-endpoints.md).
 
 When you activate a data event, it's added to the list on the **Active data events** tab of the **Business events** page and becomes available for subscription through the selected endpoint.
 

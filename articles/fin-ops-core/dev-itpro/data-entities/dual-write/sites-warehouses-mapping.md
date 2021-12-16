@@ -5,7 +5,7 @@ author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15

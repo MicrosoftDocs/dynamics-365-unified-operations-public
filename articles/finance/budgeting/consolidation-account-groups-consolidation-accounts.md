@@ -2,8 +2,8 @@
 # required metadata
 
 title: Consolidation account groups and additional consolidation accounts
-description: This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 Finance.
-author: aprilolson
+description: This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
+author: panolte
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 Finance.
+This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
 
 ## Consolidation account groups
 
-Consolidation account groups let you create groups of the accounts that you want to use to consolidate data. Most often, a consolidation account group represents a government-mandated chart of accounts or maps accounts to a group that is defined by the company's headquarters. You can find consolidation account groups in the **Setup** area of the **Consolidations** module. When you add a new group, you enter a unique identifier for the account group and a name.
+Consolidation account groups let you create groups of the accounts that you want to use to consolidate data. Typically, a consolidation account group represents a government-mandated chart of accounts. A consolidation account group can also map accounts to a group that's defined by the company's headquarters. You can find consolidation account groups in the **Setup** area of the **Consolidations** module. When you add a new group, you enter a unique identifier for the account group, as well as a name.
 
 ## Additional consolidation accounts
 Additional consolidation accounts let you assign an account from an existing chart of accounts to a consolidation account group. You can then specify a consolidation account value and name. 

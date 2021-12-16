@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Generate QR codes and print them on receipts
-description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts.
+title: Generate QR codes and print them on receipts for India
+description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 author: prabhatb2011
-ms.date: 07/30/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -23,9 +23,11 @@ ms.author: epopov
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.17
 ---
-# Generate QR codes and print them on receipts
+# Generate QR codes and print them on receipts for India
 
 [!include [banner](../includes/banner.md)]
+
+This topic provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 
 ## Prerequisites
 
@@ -53,7 +55,7 @@ Because invoice printing isn't supported in Dynamics 365 Commerce, there are no 
 
     1. Go to **Retail and Commerce** > **Retail and commerce IT** > **Channel setup** > **POS profiles** > **Custom field**.
     2. On the Action Pane, select **New** to add a field.
-    3. In the **Name** field, enter a name for the new field (for example, **TAXINVOICE\_QR**).
+    3. In the **Name** field, enter a name for the new field (for example, **TAXINVOICE_QR**).
     4. In the **Type** field, select **Receipt**.
     5. In the **Caption text ID** field, enter the **Text ID** value from the language text that you created earlier.
 
@@ -87,7 +89,6 @@ Follow these steps to handle the new custom receipt field for a QR code.
     - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
     - Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
     - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
-    - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia
 
 4. Create a class to handle. 
 
@@ -115,7 +116,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
       string receiptFieldValue = string.Empty;
       switch (receiptFieldName)
       {
-          case "TAXINVOICE\_QR":
+          case "TAXINVOICE_QR":
             receiptFieldValue = await GetQRCode(request).ConfigureAwait(false);
             break;
           default:
@@ -162,8 +163,6 @@ Follow these steps to handle the new custom receipt field for a QR code.
        value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
            <add source="assembly" 
        value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
-           <add source="assembly"
-       value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
           </composition>
        </commerceRuntimeExtensions>
     ```
@@ -230,7 +229,6 @@ namespace Contoso
         using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia.Messages;
 
         /// <summary>
         /// The extended service to get custom sales receipt field.
@@ -244,7 +242,7 @@ namespace Contoso
             {
               get
                 {
-                    return new\[\]
+                    return new[]
                     {
                         typeof(GetSalesTransactionCustomReceiptFieldServiceRequest),
                    };
@@ -258,7 +256,7 @@ namespace Contoso
             {
                 get
                 {
-                    return new\[\]
+                    return new[]
                     {
                         nameof(CountryRegionISOCode.IN),
                     };
@@ -285,7 +283,7 @@ namespace Contoso
                 /// </summary>
                 /// <param name="request">The service request to get custom receipt field value.</param>
                 /// <returns>The value of custom receipt field.<returns>
-                private async Task<Response&>
+                private async Task<Response>
            GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest request)
                 {
                     ThrowIf.Null(request.SalesOrder, 
@@ -294,7 +292,7 @@ namespace Contoso
                     string receiptFieldValue = string.Empty;
                     switch (receiptFieldName)
                     {
-                        case "TAXINVOICE\_QR":
+                        case "TAXINVOICE_QR":
                             receiptFieldValue = await 
            GetQRCode(request).ConfigureAwait(false);
                                    break;

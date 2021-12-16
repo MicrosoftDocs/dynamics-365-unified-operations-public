@@ -35,6 +35,7 @@ This topic provides links to documentation resources for Norway.
 - [Customer payment based on payment ID](tasks/no-00002-customer-payment-based-payment-id.md)
 - [Nets import format](emea-nor-nets-import-format.md)
 - [VAT statement](emea-nor-sales-tax-payment-report.md)
+- [VAT return with direct submission to Altinn](emea-nor-vat-return.md)
 - [Standard Audit File for Tax (SAF-T)](emea-nor-satndard-audit-file-for-tax.md)
 - [Cash register functionality](../../commerce/localizations/emea-nor-cash-registers.md)
 - [Deployment guidelines for cash registers](../../commerce/localizations/emea-nor-loc-deployment-guidelines.md)

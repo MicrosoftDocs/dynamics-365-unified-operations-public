@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 8.1.3
 
 [!include[banner](../includes/banner.md)]
 
-[!include[banner](../includes/preview-banner.md)]
-
 ## Prerequisites
 
 To complete these steps, you must first complete the steps in [Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md).
@@ -231,6 +229,7 @@ You can also use this export-import approach to transfer ER format–related app
 If you configure application-specific parameters for one version of an ER format and then import a later version of the same format into the current Finance instance, the existing application-specific parameters won't be applied to the imported version unless you use the **Use application specific parameters from previous versions of ER formats** feature. For more information, see the [Reuse existing parameters](#reuse-existing-parameters) section later in this topic.
 
 When you select a file for import, the structure of the application-specific parameters in that file is compared with the structure of the corresponding data sources of the **Lookup** type in the ER format that is selected for import. By default, the import is completed only if the structure of each application-specific parameter matches the structure of the corresponding data source in the ER format that is selected for import. If the structures don't match, a warning message informs you that the import can't be completed. If you force the import, the existing application-specific parameters for the selected ER format will be cleaned up, and you must set them up from the beginning.
+
 
 Starting in Dynamics 365 Finance version 10.0.24, you can change the default behavior and avoid receiving a warning message by enabling the **Align ER application specific parameters while importing** feature in the **Feature management** workspace. When this feature is enabled, if the structure of application-specific parameters that you're importing differs from the structure of the corresponding data sources in the target ER format that is selected for import, the import will succeed in the following cases:
 

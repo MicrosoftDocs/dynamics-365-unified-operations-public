@@ -44,10 +44,10 @@ Use the following procedure to review your load lines and make adjustments to en
 
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that the packing slip can't be generated for.
-1. On the Action Pane, on the **Ship and receive** tab, in the **Reverse** group, select **Reverse shipment confirmation**.
-1. On the **Load lines** tab, select the load line for the item that causes an issue.
+1. On the Action Pane, on the **Ship and receive** tab, in the **Reverse** group, select **Reverse shipment confirmation**.
+1. On the **Load lines** tab, select the load line for the item that causes an issue.
 1. Select **Reduce picked quantity** to adjust the picked quantity.
-1. On the **Line details** tab, select **Order**.
+1. On the **Line details** tab, select **Order**.
 1. Set the **Quantity** field to the picked quantity (that is, the value of the **Work created quantity** field), so that packing slip generation can proceed.
 
 ### Review your load lines, and make adjustments to ensure that the unit and quantity are aligned with the decimal precision of the unit

@@ -4,7 +4,7 @@
 title: Revenue recognition setup 
 description: This topic describes the setup options for Revenue recognition, and their implications.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -66,7 +66,7 @@ The first scenario occurs after all the contractual obligations are met, when th
 
 The second scenario occurs when a journal is created after reallocation occurs. Reallocation occurs when a sales order line is added to a previously invoiced sales order, or when a new sales order is created that includes a line that is part of the original contract. If an invoice was posted before the new sales order line is added, a correcting accounting entry must be created for the posted customer invoice.
 
-The journal is set up on the **Journal names** page (**Revenue recognition \> Setup \> Journal names**). The journal type must be set to **Revenue recognition**. The revenue recognition journal lets you select the posting layer to post to.
+The journal is set up on the **Journal names** page (**Revenue recognition \> Setup \> Journal names**). The journal type must be set to **Revenue recognition**. 
 
 ## Parameters for revenue recognition
 

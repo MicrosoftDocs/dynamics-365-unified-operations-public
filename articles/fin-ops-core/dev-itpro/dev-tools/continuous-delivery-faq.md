@@ -5,7 +5,7 @@ author: laneswenka
 ms.date: 01/21/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-08-30

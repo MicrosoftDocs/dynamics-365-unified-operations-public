@@ -42,6 +42,9 @@ This topic includes information and links to resources that should be considered
 -   [Depreciation adjustments for additional acquisitions in the second year](tasks/de-00002-depreciation.md)
 -   [Intrastat](emea-deu-intrastat.md)
 
+## VAT declaration 
+-   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
+
 ## Electronic transmission of VAT declaration (ELSTER)
 - [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
 - [Elster Testmerker (PDF download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)

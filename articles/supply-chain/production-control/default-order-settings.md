@@ -194,7 +194,7 @@ Strict validation applies to **Standard order quantity** values specified on the
 
 ### Enable the strict validation option
 
-Before you can use the strict validation option, it must be enabled on your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
 
 - **Module** - *Product information management*
 - **Feature name** - *Strict validation on default order quantities*

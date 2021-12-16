@@ -3,8 +3,8 @@
 
 title: Suspend leave
 description: You can suspend leave for an employee in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 04/01/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
 

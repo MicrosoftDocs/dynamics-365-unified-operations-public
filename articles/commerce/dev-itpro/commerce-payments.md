@@ -1,30 +1,17 @@
 ---
 # required metadata
-
 title: Omni-channel Commerce order payments
 description: This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
-author: rubendel
-ms.date: 07/28/2020
+author: ravimeda
+ms.date: 10/29/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: raeda
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Omni-channel Commerce order payments
@@ -200,6 +187,21 @@ After the payments are edited, the order submission process corrects any changes
 | Linked refunds for AR sales orders | Although the payments can't be edited through order completion, returns that are issued for AR sales orders can be subject to a linked refund to the original card that was charged during invoicing. | 
 | Unlinked refunds | If the merchant's return policies and the payment processor allow this approach, unlinked refunds can be specified for return orders in cases where the order was originally paid in cash, for example, or in cases where the original card that was used for payment is no longer active. | Yes |
 | Refunds to non-card prepayments | Return orders that were originally paid through non-card prepayments, such as cash or credit memo payments, won't be subject to linked refund. An appropriate payment method, such as **Check**, must be specified for the refund payment. Organizations that allow unlinked refunds can refund non-card prepayments to credit cards that weren't previously used for the order, if the payment processor allows this approach. | Yes |
+
+### Credit notes
+
+If a customer wants to return items or be reimbursed for items or services that you have sold and received payment for, you must create and post a sales credit memo that specifies the requested change. To include the correct sales invoice information, you can create the sales credit memo directly from the posted sales invoice or you can create a new sales credit memo with copied invoice information.
+
+- **Accounts receivable > All sales orders > Open an existing sales order > Sell > Credit note**
+- **Accounts receivable > All sales orders > Create a new sales order > Sell > Credit note**
+
+If you need more control of the sales return process, such as warehouse documents for the item handling or better overview when receiving items from multiple sales documents with one sales return, then you can create sales return orders. A sales return order automatically issues the related sales credit memo and other return-related documents, such as a replacement sales order, if needed.
+
+- **Accounts receivable > All return orders > Create a new return order**
+- **Retail and Commerce > Customers > Customer service > Select the customer account > Select the invoiced order > Create a new return order**
+
+> [!NOTE]
+> A credit memo created from the existing sales order will *not* provide the option to invoice the order.
 
 ### Edit and remove orders that have prepayments
 

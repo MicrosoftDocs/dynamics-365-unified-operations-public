@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
-author: robinarh
-ms.date: 08/11/2021
+author: tonyafehr
+ms.date: 11/22/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
 ---
@@ -20,11 +20,38 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
-Check out the latest information about dual-write features and changes in the [release plans](/dynamics365/release-plans/).
+## November 2021 release of party and global address book 
 
-+ [Data in Dataverse – Phase 1](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1)
-+ [Data in Dataverse – phase 1 & 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
-+ [Finance and Operations data in Dataverse – Phase 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
+The November 2021 release of the [Dual-write Party and Global Address Book Solutions 3.3.0.5](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) contains the following features and bug fixes. 
+
+| Feature | Description |Status |
+|------|---------|-------|
+| [Single view for party](view-party.md)| We are providing a new form to access Party data. The **Party** form provides the capability to view and manage party records along with all the associated customers, contacts, and vendors and their postal addresses and electronic addresses from a single form.| General availability |
+| Bug fix| On the **Accounts** form, postal address updates from the **Summary** tab do not synchronize, which causes a data mismatch between Microsoft Dataverse and Finance and Operations apps. | General availability |
+| Bug fix| When an electronic address is changed from non-primary to primary, the updates to telephone extension/description fields does not synchronize from msdyn_partyelectronicaddress to **Contact** table.  | General availability |
+| Bug fix| Error while updating the **Gender** field on a Contact record to "non-specific" in Finance and Operations apps. | General availability |
+| Bug fix| In Finance and Operations apps, during address creation, when a second address is marked as primary and saved, the IsPrimary value change does not reflect in Dataverse. | General availability |
+
+## September 2021 release of party and global address book 
+
+The September 2021 hotfix release of the [Dual-write Party and Global Address Book Solutions 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
+
+This release contains bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Bug fix| Some client APIs have been deprecated and replaced with new APIs. The JavaScript code has been upgraded to use the new client APIs.| General availability |
+| Bug fix| Portals registration using email address fails when last name is not supplied. | General availability |
+| Bug fix| Unable to create a new postal address for a vendor.| General availability |
+
+### Solution details
+
+|Solution name | Has new changes? | Previous version | New version |
+|--------------|--------------|--------------|--------------|
+|Party|Yes|3.1.0.2|3.2.0.4|
+|Dynamics365GABExtended|Yes|3.1.0.2|3.2.0.4|
+|Dynamics365GABDualWriteEntityMaps|Yes|3.1.0.2|3.1.0.2|
+|Dynamics365GABPartyAnchor|Yes|3.1.0.2|3.2.0.4|
 
 ## August 2021 release
 

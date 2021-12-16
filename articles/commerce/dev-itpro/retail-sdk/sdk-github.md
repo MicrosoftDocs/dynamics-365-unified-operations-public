@@ -5,7 +5,7 @@ author: mugunthanm
 ms.date: 08/13/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani

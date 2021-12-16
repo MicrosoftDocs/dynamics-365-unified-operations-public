@@ -62,10 +62,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Configure Warehousing for on-premises deployments
           href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed
         items: 
         - name: What's new or changed in Finance and Operations apps
@@ -74,12 +70,12 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
-          - name: Finance 10.0.23 
+          - name: Finance 10.0.24 (February)
+            href: get-started/whats-new-changed-10-0-24.md
+          - name: Finance 10.0.23 (January)
             href: get-started/whats-new-changed-10-0-23.md
           - name: Finance 10.0.22 (November 2021)
             href: get-started/whats-new-changed-10-0-22.md
-          - name: Finance 10.0.21 (October 2021)
-            href: get-started/whats-new-changed-10-0-21.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -500,6 +496,8 @@
         href: accounts-receivable/customer-aging-snapshot.md
       - name: Customer aging report
         href: accounts-receivable/customer-aging.md
+      - name: Customer aging data storage
+        href: accounts-receivable/customer-aging-data-storage.md
       - name: Create a write-off journal for a customer
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Advanced notes management
@@ -520,6 +518,8 @@
         href: budgeting/budget-control-overview-configuration.md
       - name: Budgeting overview
         href: budgeting/basic-budgeting-overview-configuration.md
+      - name: Budget funds available
+        href: budgeting/budget-funds-available.md
       - name: Position forecasting
         href: budgeting/position-forecasting.md
       - name: Budget planning justification documents
@@ -708,48 +708,6 @@
         href: general-ledger/electronic-messaging-work-with-em.md
       - name: Call a simple exporting ER format to generate an Excel report
         href: general-ledger/electronic-messaging-example.md
-    - name: Expense management
-      items:
-      - name: Expense management overview
-        href: /dynamics365/project-operations/prod-exp/expense-management
-      - name: Expense reports reimagined
-        href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-      - name: Plan expense management
-        href: /dynamics365/project-operations/prod-exp/plan-expense-management
-      - name: Expense management parameters
-        href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-      - name: Expense management mobile workspace
-        href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-      - name: Set up workflows for expense management
-        href: /dynamics365/project-operations/prod-exp/expense-workflows
-      - name: Expense management workflow
-        href: /dynamics365/project-operations/prod-exp/expense-workflow
-      - name: Manage expense delegation
-        href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-      - name: Expense receipt processing
-        href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-      - name: Import and maintain credit card transactions
-        href: /dynamics365/project-operations/prod-exp/import-credit-card
-      - name: Distributions on an expense report
-        href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-      - name: Intercompany expenses
-        href: /dynamics365/project-operations/prod-exp/intercompany-expense
-      - name: Define expense policies
-        href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-      - name: View an expense report
-        href: /dynamics365/project-operations/prod-exp/view-expense-report
-      - name: Post an expense report
-        href: /dynamics365/project-operations/prod-exp/post-expense
-      - name: Expense reports and multiple approvers
-        href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-      - name: VAT recovery in Expense management
-        href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-      - name: Per diem rules
-        href: /dynamics365/project-operations/prod-exp/per-diem
-      - name: Travel requisitions
-        href: /dynamics365/project-operations/prod-exp/travel-req
-      - name: Personal expenses on an expense report
-        href: /dynamics365/project-operations/prod-exp/personal-expenses
     - name: Fixed assets
       items:
       - name: Fixed assets home page
@@ -996,6 +954,8 @@
           href: general-ledger/tasks/create-main-account.md
         - name: Plan your chart of accounts
           href: general-ledger/plan-chart-of-accounts.md
+        - name: Plan your local chart of accounts
+          href: general-ledger/plan-local-chart-of-accounts.md
         - name: Settle transactions between ledger accounts
           href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
         - name: Set up a ledger account alias
@@ -1246,9 +1206,7 @@
         href: finance-insights/finance-insights-home-page.md
       - name: Setup and administration
         items:
-        - name: Configure Finance insights for public preview
-          href: finance-insights/configure-for-fin-insites-PubPrvw.md
-        - name: Configure Finance insights for private preview
+        - name: Configure Finance insights
           href: finance-insights/configure-for-fin-insites.md
         - name: Enable Customer payment predictions
           href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1286,88 +1244,6 @@
           href: finance-insights/payment-snapshots.md
       - name: Finance insights troubleshooting FAQ
         href: finance-insights/finance-insights-troubleshooting-faq.md
-    - name: Project management and accounting
-      items:
-      - name: Project management and accounting overview
-        href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-      - name: Intercompany invoicing
-        href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-      - name: Configure intercompany project invoicing
-        href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-      - name: Configure standard costs for labor and expenses
-        href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-      - name: Create and apply vendor payment retention terms
-        href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-      - name: Set up and use pay-when-paid vendor payments
-        href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-      - name: Project cost accrual on purchase receipts
-        href: accounts-payable/project-cost-accrual-purchase-receipts.md
-      - name: Project invoicing
-        href: accounts-payable/project-invoicing.md
-      - name: Project contracts
-        href: /dynamics365/project-operations/prod-pma/project-contracts
-      - name: Create advanced contracts for billing based on progress
-        href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-      - name: Project forecasts and budgets
-        href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-      - name: Create forecast models for project budgets
-        href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-      - name: Transfer project budgets at fiscal year end
-        href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-      - name: Project sales orders
-        href: /dynamics365/project-operations/prod-pma/project-sales-orders
-      - name: Purchase orders for a project
-        href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-      - name: Project quotations
-        href: /dynamics365/project-operations/prod-pma/project-quotations
-      - name: Confirm, update, and send a project quotation
-        href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-      - name: Transfer a quotation to a project
-        href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-      - name: Project resourcing
-        items:
-        - name: Project resourcing overview
-          href: /dynamics365/project-operations/prod-pma/project-resourcing
-        - name: Set up project resources
-          href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-        - name: Manage resource competencies
-          href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-        - name: Create a new project
-          href: /dynamics365/project-operations/prod-pma/create-new-project
-        - name: Set up role-based pricing
-          href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-        - name: Create a project team
-          href: /dynamics365/project-operations/prod-pma/create-project-team
-        - name: Synchronize resource capacity
-          href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-        - name: Project resource scheduling performance
-          href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-        - name: Set up roles on Work breakdown structure templates
-          href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-        - name: Resource fulfillment for planned resources
-          href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-      - name: Receive items on purchase order from item requirement
-        href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-      - name: Work breakdown structures
-        items:
-        - name: Work breakdown structures overview
-          href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-        - name: Microsoft Project Client integration
-          href: /dynamics365/project-operations/prod-pma/project-integration
-        - name: Project mobile applications overview
-          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-        - name: Project time entry mobile workspace
-          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-        - name: Project timesheet mobile app
-          href: /dynamics365/project-operations/prod-pma/project-timesheet
-        - name: Project timesheets on a mobile device
-          href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-        - name: Implement custom fields for the Project timesheet mobile app
-          href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-      - name: Project grants
-        href: /dynamics365/project-operations/prod-pma/project-grants
-      - name: Eliminate a project estimate
-        href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
     - name: Public sector
       items:
       - name: Public sector home page
@@ -1554,10 +1430,16 @@
               href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Get started with Electronic invoicing for Saudi Arabia
+              href: localizations/e-invoicing-sa-get-started.md
+            - name: Setup direct integration of Italian FatturaPA with SDI
+              href: localizations/e-invoicing-ita-fatturapa-get-started.md
             - name: Use the electronic invoicing service to import vendor invoices
               href: localizations/e-invoicing-get-started-import-vendor-invoices.md
             - name: Set up Electronic Invoicing
               href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+            - name: Power Platform plug-in admin reference
+              href: localizations/e-invoicing-power-platform-plug-in.md
           - name: Electronic Invoicing FAQ
             href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
         - name: Tax Calculation
@@ -1568,6 +1450,14 @@
             items:
             - name: Get started with Tax Calculation
               href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+            - name: Set up tax codes
+              href: localizations/set-up-tax-codes.md
+            - name: Set up tax groups
+              href: localizations/set-up-tax-groups.md
+            - name: Set up item tax groups
+              href: localizations/set-up-item-tax-groups.md
+            - name: Import and export tax calculations
+              href: localizations/tax-calculation-import-export-feature.md
             - name: Set up an environment for master data lookup
               href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
           - name: Determination
@@ -1598,6 +1488,10 @@
               items: 
               - name: VAT declaration
                 href: localizations/emea-fra-VAT-declaration-preview-France.md
+            - name: Germany reporting
+              items:
+              - name: VAT declaration
+                href: /localizations/emea-deu-vat-declaration-germany.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
@@ -1632,6 +1526,10 @@
               href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Add data fields in the tax integration by using extensions
               href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+            - name: Customize tax configurations for master data lookup
+              href: localizations/customize-tax-configurations-master-data-lookup.md
+          - name: Tax Calculation FAQ
+            href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -1661,7 +1559,7 @@
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
-          href: localizations/emea-aut-vat-statement-details.md
+          href: localizations/emea-aut-cross-border-services-report.md
         - name: Austrian Intrastat
           href: localizations/emea-aut-intrastat.md
         - name: Purchase duties
@@ -1700,6 +1598,8 @@
           href: localizations/emea-bel-prodcom-report.md
         - name: Annual VAT listing of domestic sales
           href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+        - name: Belgium Intrastat
+          href: localizations/emea-bel-intrastat.md
       - name: Brazil
         items:
         - name: Brazil overview
@@ -1794,6 +1694,8 @@
             href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+          - name: Move NF-e XML files as attachments
+            href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
           - name: NT2020.005 – Layout and validation updates in the electronic fiscal document (NF-e)
             href: localizations/latam-bra-nfe-nt2020.005.md
           - name: NT2020.006 – Intermediary sales digital platform for NF-e
@@ -2180,12 +2082,16 @@
             href: localizations/tasks/create-submit-vat-report.md
         - name: View transactions on settlement
           href: localizations/emea-transactions-settlement-form.md
+        - name: Financial reason
+          href: localizations/emea-financial-reason.md
       - name: Finland
         items:
         - name: Finland overview
           href: localizations/finland.md
         - name: Sales tax payment report for Finland
           href: localizations/emea-fin-sales-tax-payment-report-finland.md
+        - name: Finnish Intrastat
+          href: localizations/emea-fin-intrastat.md
       - name: France
         items:
         - name: France overview
@@ -2272,11 +2178,13 @@
             href: localizations/emea-deu-gdpdu-data-filtering.md
         - name: Depreciation adjustments for additional acquisitions in the second year
           href: localizations/tasks/de-00002-depreciation.md
+        - name: VAT declaration
+          href: localizations/emea-deu-vat-declaration-germany.md
         - name: Electronic transmission of VAT declaration (ELSTER)
           href: localizations/tasks/de-00003-electronic-transmission-elster.md
         - name: German Intrastat
           href: localizations/emea-deu-intrastat.md
-        - name: VAT declaration for Germany
+        - name: VAT statement
           href: localizations/emea-de-vat-declaration.md
         - name: Customer electronic invoices report
           href: localizations/emea-deu-e-invoices.md
@@ -2702,6 +2610,8 @@
         items:
         - name: Indonesia overview
           href: localizations/indonesia.md
+        - name: Tax invoice numbering and invoicing
+          href: localizations/apac-idn-invoicing.md
         - name: VAT declaration for Indonesia
           href: localizations/apac-idn-ppn-declaration.md
       - name: Italy
@@ -2740,10 +2650,14 @@
           href: localizations/emea-ita-exil-zero-invoice-posting.md
         - name: Bank data usability enhancement
           href: localizations/emea-ita-exil-bank-accounts-setup.md
-        - name: Italian Intrastat
-          href: localizations/emea-ita-intrastat.md
-        - name: Post arrivals and dispatches for Intrastat
-          href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+        - name: Intrastat
+          items:
+          - name: Italian Intrastat
+            href: localizations/emea-ita-intrastat.md
+          - name: Post arrivals and dispatches for Intrastat
+            href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+          - name: Intrastat (IT) file format
+            href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Intent letters - Invoicing usual exporters
@@ -2766,6 +2680,8 @@
           href: localizations/emea-ita-exil-tax-plafond.md
         - name: Customer electronic invoices
           href: localizations/emea-ita-e-invoices.md
+        - name: Vendor electronic invoices
+          href: localizations/emea-ita-vend-e-invoices.md
         - name: Yearly tax communication
           href: localizations/emea-ita-yearly-tax-communication.md
         - name: Payment traceability
@@ -3068,6 +2984,20 @@
           href: localizations/emea-nor-nets-import-format.md
         - name: VAT statement
           href: localizations/emea-nor-sales-tax-payment-report.md
+        - name: VAT return with direct submission to Altinn
+          items: 
+          - name: Overview of VAT return with direct submission to Altinn
+            href: localizations/emea-nor-vat-return.md
+          - name: Register an integration point in ID-porten web portal 
+            href: localizations/emea-nor-vat-return-integration-point.md
+          - name: Prepare your environment to interoperate with ID-porten and Altinn web services 
+            href: localizations/emea-nor-vat-return-setup.md
+          - name: Checklist for Electronic messages setup for VAT return 
+            href: localizations/emea-nor-vat-return-checklist.md
+          - name: Authorize your Finance environment to interoperate with ID-Porten and Altinn web services 
+            href: localizations/emea-nor-vat-return-authorization.md
+          - name: Submit a VAT return to Altinn web service
+            href: localizations/emea-nor-vat-return-submission.md
         - name: Standard Audit File for Tax (SAF-T) for Norway
           href: localizations/emea-nor-satndard-audit-file-for-tax.md
         - name: Customer electronic invoices in Norway
@@ -3100,6 +3030,8 @@
           href: localizations/emea-pol-returnable-packages.md
         - name: Sales tax reports
           href: localizations/emea-pol-sales-tax-reports.md
+        - name: Polish Intrastat
+          href: localizations/emea-pol-intrastat.md
         - name: Set up number sequences by warehouse
           href: localizations/emea-pol-number-sequence-warehouses.md          
         - name: Standard audit file
@@ -3378,6 +3310,8 @@
           href: localizations/emea-sau-zakat-reporting.md     
         - name: Allocate bank document charges to a shipment
           href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+        - name: Customer electronic invoices in Saudi Arabia
+          href: localizations/emea-sau-e-invoices.md
       - name: Singapore
         items:
         - name: Singapore overview
@@ -3500,7 +3434,7 @@
             href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
           - name: Test interoperation with the MTD VAT sandbox
             href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-          - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
+          - name: Authorize your Finance environment to interoperate with HMRC's MTD web service
             href: localizations/emea-gbr-mtd-vat-integration-authorization.md
           - name: Submit a VAT return to HMRC's MTD web service
             href: localizations/emea-gbr-mtd-vat-integration-submission.md
@@ -3931,6 +3865,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
             - name: Today
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
+            - name: WeekNum
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
           - name: List 
             items: 
             - name: List functions
@@ -4363,6 +4299,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+        - name: Design expressions to call application class methods
+          href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
       - name: Use ER solutions in Finance
         items: 
         - name: Configure the framework

@@ -4,7 +4,7 @@
 title: Cash position
 description: This topic describes how the Cash flow forecasting feature predicts an organization's cash position for specific times. It also describes the options that are available for showing forecasts for different periods. 
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 10.0.8
 # Cash position
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Cash position is the projection of cash flow that is forecast for the near term. It's based on the projection of cash receipts from customers that pay outstanding invoices and orders, and also on the projection cash disbursements that are paid to vendors for purchase invoices and orders.
 
@@ -49,8 +50,5 @@ The lower section of the **Cash position** tab shows details for the position, c
 - The **Bank account** grid shows the impact of expected cash inflows and outflows on the bank balance.
 
 To save and edit the cash position, create a snapshot. For more information about how to work with snapshots, see [Snapshots overview](payment-snapshots.md).
-
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

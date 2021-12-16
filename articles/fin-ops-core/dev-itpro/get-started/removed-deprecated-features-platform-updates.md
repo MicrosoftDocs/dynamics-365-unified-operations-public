@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 10/19/2021
+ms.date: 12/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,6 +74,17 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Status**                         | Deprecated  |
 
 ## Platform updates for version 10.0.23 of Finance and Operations apps
+
+### OnDBSynchronize event
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | There is no control to execute this event. |
+| **Replaced by another feature?**   | Yes, move existing methods subscribed to by the **OnDBSynchronize** event to a SysSetup extended class. |
+| **Product areas affected**         | Database synchronization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Planned removal date is October 2022. |
+
 
 ### SystemNotificationsManager.AddNotification API
 

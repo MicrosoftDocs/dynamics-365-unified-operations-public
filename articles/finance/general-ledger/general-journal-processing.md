@@ -3,7 +3,7 @@
 
 title: General journal processing
 description: This topic describes capabilities in Microsoft Dynamics 365 Finance that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
-author: ShylaThompson
+author: kweekley
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
