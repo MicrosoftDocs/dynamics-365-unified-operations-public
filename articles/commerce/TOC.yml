@@ -840,7 +840,7 @@
       items:
       - name: Statements overview
         href: retail-statements.md
-      - name: Transaction consistency checker 
+      - name: Validate store transactions for statement calculation 
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
         href: disable-consistency-check-rule.md
