@@ -4,7 +4,7 @@
 title: Design a configuration for generating documents in Excel format
 description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -376,13 +376,13 @@ You can fix the issue in either of the following ways:
 
 #### External data sources
 
-When you run an ER format to generate an outbound document in Excel format by using a template containing a PivotTable based on a PoverPivot model that refers to an [external data source](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b), the error *`The cachesource is not a worksheet.`* is thrown when the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled. To resolve this issue, the following options are available:
+When you run an ER format to generate an outbound document in Excel using a template with a PivotTable based on a PoverPivot model that refers to an [external data source](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b), the error **The cachesource is not a worksheet.** occurs when the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled. To resolve this issue, the following options are available:
 
-- Use other than EPPlus option disabling the mentioned above feature. 
-- Re-design the using Excel solution (preferrable): 
+- Use an option other than EPPlus to turn off the feature. 
+- Re-design the Excel solution you are using (preferrable): 
     - Isolate the containing pivots part in a separated Excel workbook A. 
-    - Use ER to generate from Finance an Excel workbook B with the required details. 
-    - Refer to the workbook B in the workbook A as soon as the workbook B is generated.
+    - Use ER to generate from Finance a second Excel workbook, or workbook B, with the required details. 
+    - Refer to workbook B in workbook A as soon as workbook B is generated.
 
 ## Additional resources
 
