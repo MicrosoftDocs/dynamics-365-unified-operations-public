@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Recommended practices for posting profiles
 
-There are a variety of recommended practices to follow when you configure posting profiles throughout Dynamics 365. This page includes details about each scenario and recommended practice.
+There are a number of recommended practices to follow when you configure posting profiles throughout the system. This topic includes details about each scenario and the corresponding recommended practices.
 
 ## Do not allow manual entry
 
-Any main account that is used for a posting profile should have the **Do not allow manual entry** flag set on the **Main accounts** page. This setting on this check box ensures that a user can't manually post a journal entry into the main account. This helps to ensure that the subledger remains in balance with the general ledger and helps make the reconciliation process easier. If adjustments are required to an account that is controlled by the system and posted to automatically, you can do one of two things:
+Any main account that's used for a posting profile should have the **Do not allow manual entry** flag set on the **Main accounts** page. This setting on this check box ensures that a user can't manually post a journal entry into the main account. This helps to ensure that the subledger remains in balance with the general ledger and helps make the reconciliation process easier. If adjustments are required to an account that is controlled by the system and posted to automatically, you can do one of two things:
 
 1.  Create a secondary main account where the adjustments can be posted. Then use a Total account or special row on your financial reports to group and sum the accounts together.
 
@@ -40,21 +40,21 @@ Any main account that is used for a posting profile should have the **Do not all
 
 ## Making changes to posting profiles after transactions exist
 
-If you make a change to a posting profile after transactions exist, this can cause the reconciliation to fail and your subledger and ledger to be out of balance. In general, it is not recommended to make changes to the posting profile after transactions exist.
+If you change a posting profile after transactions exist, this can cause the reconciliation to fail and your subledger and ledger to be out of balance. In general, we don't recommend changing the posting profile after transactions exist.
 
 If a change is necessary, use the following guidelines to help ensure the integrity of the system:
 
--   Make the change during a period close.
+- Make the change during a period close.
 
--   Make the change when no other transactions are happening in the system.
+- Make the change when no other transactions are happening in the system.
 
--   Validate and reconcile the ledger to subledger before and after the change is made.
+- Validate and reconcile the ledger to subledger before and after the change is made.
 
--   Making a change to the posting profile does not update any posted transactions. Consider carefully if any adjusting entries are required for your change.
+- Changing the posting profile doesn't update any posted transactions. Consider carefully if any adjusting entries are required for your change.
 
--   If you are making changes to inventory posting profiles, consider how the change will affect your on-hand inventory and ledger balances. Some changes may require that you bring the inventory to zero, close the inventory, and then bring the inventory back in after the adjustments are made.
+- If you're making changes to inventory posting profiles, consider how the change will affect your on-hand inventory and ledger balances. Some changes may require that you bring the inventory to zero, close the inventory, and then bring the inventory back in after the adjustments are made.
 
--   Always test your changes in a non-production environment prior to making the change in production.
+- Always test your changes in a non-production environment prior to making the change in production.
 
 ## Use database logging to audit changes to posting profiles
 
@@ -103,33 +103,33 @@ Use the following table as a reference for common table names related to posting
 
 ## Change groups after transactions exist
 
-Use caution when changing groups on master data. If you are using groups to define your posting profiles, making a change to a group on a master record can have a negative impact on the ability to reconcile the ledger to the sub-ledger. For example, you can configure the **Inventory posting profile** for sales order revenue to use a different **Revenue account** for each **Item group**. If you change the item group that is assigned to an item after transactions exist, the revenue on new transactions will post to the updated account, but any revenue posted prior to the update will remain in the original account.
+Use caution when changing groups on master data. If you are using groups to define your posting profiles, making a change to a group on a master record can have a negative impact on the ability to reconcile the ledger to the sub-ledger. For example, you can configure the **Inventory posting profile** for sales order revenue to use a different **Revenue account** for each **Item group**. If you change the item group that's assigned to an item after transactions exist, the revenue on new transactions will post to the updated account, but any revenue posted prior to the update will remain in the original account.
 
 ## Testing posting profiles
 
-Prior to your go-live and after making any changes or additions to your posting profiles or related parameters, you should test each scenario. At a minimum you should test each posting type to validate the posting works correctly. However, the recommended approach is to test each posting profile transaction and combination.
+Prior to your go-live and after making any changes or additions to your posting profiles or related parameters, you should test each scenario. At a minimum you should test each posting type to validate that posting works correctly. However, the recommended approach is to test each posting profile transaction and combination.
 
 For example, if you have two **Customer posting profiles** and each posting profile has three records specific to **Customer groups**, you should test each transaction type.
 
 Posting Profiles:
 
--   GEN – General with one group for Employees, Customers, and Intercompany, each pointing to a different Accounts receivable Trade account.
+- GEN – General with one group for Employees, Customers, and Intercompany, each pointing to a different Accounts receivable Trade account.
 
--   PRE – Prepayment posting profile with one record for all prepayments pointing to the Customer prepaids accounts.
+- PRE – Prepayment posting profile with one record for all prepayments pointing to the Customer prepaids accounts.
 
-Testing Scenarios:
+#### Testing Scenarios
 
--   Free text invoice for a customer in the Employee group with the General posting profile
+- Free text invoice for a customer in the Employee group with the General posting profile
 
--   Free text invoice for a customer in the Employee group with the Prepayment posting profile
+- Free text invoice for a customer in the Employee group with the Prepayment posting profile
 
--   Sales order invoice for a customer in the Employee group with the General posting profile
+- Sales order invoice for a customer in the Employee group with the General posting profile
 
--   Sales order invoice for a customer in the Employee group with the Prepayment posting profile
+- Sales order invoice for a customer in the Employee group with the Prepayment posting profile
 
--   Customer payment journal for a customer in the Employee group with the General posting profile
+- Customer payment journal for a customer in the Employee group with the General posting profile
 
--   Customer payment journal for a customer in the Employee group with the Prepayment posting profile
+- Customer payment journal for a customer in the Employee group with the Prepayment posting profile
 
 Using the example above, repeat one testing scenario for each customer group, and repeat each group of testing scenarios for each additional transaction type (for example, Project invoices, Service management, and so on).
 
@@ -137,4 +137,4 @@ Using the example above, repeat one testing scenario for each customer group, an
 
 Each period, the ledger should be reconciled to sub ledger. Many modules contain reports out of the box that can be used to help reconcile the ledger to the sub ledger. Depending on your local requirements, you may need to develop custom reports or extend the existing reports to meet your reporting requirements.
 
-It is recommended that you perform a mock period close and reconcile each of your sub ledgers to the ledger prior to your go live. Additionally, it is recommended to perform a mock cutover of all open balances and open transactions prior to your initial go live. As a part of this process a complete reconciliation process should be executed to ensure that the migration of balances and open transactions balance with the legacy system(s) and to ensure that all subledgers balance with the ledger prior to creating new transactions.
+We recommend that you perform a mock period close and reconcile each of your sub ledgers to the ledger prior to your go live. We also recommend performing a mock cutover of all open balances and open transactions prior to your initial go-live. As a part of this process a complete reconciliation process should be run to ensure that the migration of balances and open transactions balance with the legacy system(s) and to ensure that all subledgers balance with the ledger before creating new transactions.
