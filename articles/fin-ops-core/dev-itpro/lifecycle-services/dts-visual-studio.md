@@ -57,7 +57,7 @@ Before you translate any resource files, you should have the resource files for 
 
 ![Add new languages command.](media/dts-vs-new-language.PNG)
 
-The **Label file** wizard appears. Complete this wizard to create new label files for your desired languages. For guidance on using the label file wizard, see [this documentation](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-a-label-file).
+The **Label file** wizard appears. Complete this wizard to create new label files for your desired languages. For guidance on using the label file wizard, see [How to: Create a Label File](/dynamicsax-2012/developer/how-to-create-a-label-file).
 
 ![Label file wizard.](media/dts-vs-label-wizard.PNG)
 
