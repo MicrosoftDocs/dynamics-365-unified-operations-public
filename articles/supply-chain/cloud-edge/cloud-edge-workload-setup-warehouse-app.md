@@ -37,4 +37,7 @@ As a prerequisite, validate that your devices can connect to the enterprise hub 
 
 As part of the warehouse scale unit workload [deployment process](cloud-edge-landing-page.md#scale-unit-manager-portal) most of the needed data to connect your warehouse mobile app devices will automatically get synchronized from the enterprise hub to the scale unit. But you will need to record the **Azure Active Directory applications** data on the scale unit deployment and you might as well need to update the default **Company** value for the **User ID** (or create a new user). In case the user is associated with a company that does not exists on the scale unit deployment it will not be possible to connect the Warehouse management mobile app against the scale unit deployment.
 
-Lastly, remember that the **Azure AD resource** must be against the scale unit rather than the enterprise hub.
+> [!NOTE]
+> Because the **Azure Active Directory applications** data is not synchronized you must as well manually maintain this data in case you want to move your warehouse workloads to another scale unit.
+
+Lastly, remember that as part of the Warehouse management mobile app connection setup the **Azure AD resource** must be against the scale unit rather than the enterprise hub.
