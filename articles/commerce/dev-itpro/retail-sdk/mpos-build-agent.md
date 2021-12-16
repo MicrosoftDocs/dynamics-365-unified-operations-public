@@ -46,11 +46,15 @@ To mitigate this issue, use a [self-hosted build agent in the Azure DevOps build
 2.	Install Visual Studio 2017 and other prerequisites documented [here]( https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview#prerequisites) in the VM.
 3.	Create a Personal access token in the Azure DevOps project to authenticate the agent. Detailed steps are documented [here]( https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops#authenticate-with-a-personal-access-token-pat).
 4.	Download and install the build agent in the VM created in the previous step, detailed steps to download and configure the agent are documented [here]( https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops#download-and-configure-the-agent).
+
+![Agent setup.](media/![Commerce components.](media/AgentSetup.png)
  
 5.	Update the Azure DevOps pipeline to use the new build agent pool. In pipeline select the Agent Pool in which you added your build agent configured in the previous steps.
     
 > [!NOTE]
 > The same build agent can be used to build other Dynamics 365 Commerce Extensions.
+
+![Agent configure.](media/AgentConfigure.png)
 
 6.	Save the pipeline and validate the changes by queuing a new build.
  
