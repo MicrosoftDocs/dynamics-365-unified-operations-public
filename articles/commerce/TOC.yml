@@ -2397,7 +2397,7 @@
         - name: Headless Commerce developer guide
           href: headless-commerce-dev-guide-TBD.md
         - name: Headless Commerce overview
-          href: developer/headless-commerce-overview.md
+          href: developer/headless-commerce-overview-TBD.md
         - name: Commerce runtime (CRT) architecture and configuration
           href: dev-itpro/commerce-runtime-overview.md
         - name: Commerce runtime (CRT) services
@@ -2457,7 +2457,7 @@
           - name: Dynamics 365 payment data use
             href: payment-connector-data-fields.md
           - name: Localize Commerce extension resources and label files
-            href: dev-itpro/extension-resource-localization         
+            href: dev-itpro/extension-resource-localization.md         
         - name: Packaging and deployment
           items:
           - name: Set up a build pipeline for the independent-packaging SDK
@@ -2485,7 +2485,7 @@
           - name: Debug POS extensions
             href: dev-itpro/pos-extension/debug-pos-extension.md
           - name: Create a POS extension package project
-            href: dev-itpro/pos-extension/create-pos-extension-package
+            href: dev-itpro/pos-extension/create-pos-extension-package.md
           - name: Create an .appx file for a Modern POS extension package
             href: dev-itpro/pos-extension/create-pos-extension-appx.md
           - name: Get started with POS extensions
@@ -2597,7 +2597,7 @@
           - name: Retail SDK FAQ
             href: dev-itpro/retail-sdk/sdk-faq.md
           - name: Development in cloud-hosted environments without admin access
-            href: dev-itpro/cloud-dev-box
+            href: dev-itpro/cloud-dev-box.md
           - name: Run the point of sale (POS) samples
             href: dev-itpro/pos-run-samples.md
           - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
@@ -2617,7 +2617,7 @@
             - name: Configure online stores
               href: dev-itpro/configure-online-store.md
             - name: E-commerce platform software development kit (SDK)
-              href: dev-itpro/ecommerce-platform-sdk
+              href: dev-itpro/ecommerce-platform-sdk.md
             - name: Configure authentication providers
               href: dev-itpro/configure-authentication-providers.md
           - name: Android and iOS
