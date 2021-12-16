@@ -70,7 +70,7 @@ There is a switch which can be specified when running RSAT by the command line (
 What this will do is if a test case is blocked, then RSAT will wait for the specified number of seconds and try again. RSAT will only retry once, and if the second time fail too then the error message will occur.
 
 > [!NOTE]
-> Tip: Avoid file locking issues by using separate working directories with each running RSAT app. Each user should use their own working directory on machines they share with other. DevOps pipelines that run in parallel on the same machine should use each their own settings with specific working directories.
+> Avoid file locking issues by using separate working directories with each running RSAT app. Each user should use their own working directory on machines they share with other. DevOps pipelines that run in parallel on the same machine should use each their own settings with specific working directories.
 
 ## When should you enable parallel execution?
 
