@@ -2394,9 +2394,9 @@
             href: dev-itpro/retail-sdk/sdk-faq.md
       - name: Headless Commerce
         items:
-        - name: Headless Commerce Developer Guide
+        - name: Headless Commerce developer guide
           href: headless-commerce-dev-guide-TBD.md
-        - name: Overview
+        - name: Headless Commerce overview
           href: developer/headless-commerce-overview.md
         - name: Commerce runtime (CRT) architecture and configuration
           href: dev-itpro/commerce-runtime-overview.md
@@ -2544,7 +2544,7 @@
             items:
             - name: POS triggers
               href: dev-itpro/pos-trigger-printing.md
-          - name: RequestHandlers
+          - name: Request handlers
             items:
             - name: Override POS request handler
               href: dev-itpro/pos-handler.md
