@@ -93,6 +93,7 @@ Visual Studio 2017 has TypeScript 3.1 as the default version. You must install v
 - .NET Developer Pack:
     +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
+    +  [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer)
     
 - [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
 
