@@ -104,13 +104,13 @@ Voyage cost lines have a direct association with a cost transaction record, whic
 
 The values for the reference table (`RefTableId`) and the transaction type (`TransType`) are implicit in the selection of either the Landed cost purchase line or Landed cost transfer line entity.
 
-## Vendor invoice journal lines
+## Vendor invoice journal lines (VendorInvoiceJournalLineEntity)
 
-For a journal line value to be allocated to one or more costs in the Landed cost module, the journal line must be associated to a cost area. Fields added to the journal lines table (`LedgerJournalTrans`) for Landed cost were not present within the existing data entity.
+For a journal line value to be allocated to one or more costs in the Landed cost module, the journal line must be associated to a cost area. To support his, the Landed cost module adds a few new fields to the journal lines table (`LedgerJournalTrans`).
 
-The following tables lists fields that the Landed cost module adds to the vendor invoice line entity. These fields enable the system to create journal lines and allocate costs against them
+### Fields added to the vendor invoice journal line entity
 
-### The vendor invoice journal entity (VendorInvoiceJournalLineEntity)
+The following table lists fields that the Landed cost module adds to the vendor invoice journal line entity (`VendorInvoiceJournalLineEntity`). These fields enable the system to create journal lines and allocate costs against them
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
