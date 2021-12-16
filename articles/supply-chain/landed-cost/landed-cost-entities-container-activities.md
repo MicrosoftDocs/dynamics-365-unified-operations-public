@@ -25,21 +25,21 @@ Information on the progress of an in-transit shipping container is often receive
 
 You can use this entity to create additional activity records, or a freight forwarder can pass updates for a confirmed **Actual end date**.
 
-| Name | Mapping | Data Type | Key | Mandatory |
+| Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Actual end date | ITMContainerActivityTable.ActualEndDate | datetime | No | No |
-| Mode of delivery | ITMContainerActivityTable.DlvModeId | nvarchar(10) | No | No |
-| Estimated end date | ITMContainerActivityTable.EsimatedDate | datetime | No | No |
-| Line number | ITMContainerActivityTable.LineNum | numeric(32, 16) | **Yes** | No |
+| Actual end date | ITMContainerActivityTable.ActualEndDate | Datetime | No | No |
+| Mode of delivery | ITMContainerActivityTable.DlvModeId | Nvarchar(10) | No | No |
+| Estimated end date | ITMContainerActivityTable.EsimatedDate | Datetime | No | No |
+| Line number | ITMContainerActivityTable.LineNum | Numeric(32, 16) | **Yes** | No |
 | Notes | ITMContainerActivityTable.Notes | nvarchar(MAX) | No | No |
-| Activity | ITMContainerActivityTable.ShipActivityId | nvarchar(10) | No | **Yes** |
-| Shipping container | ITMContainerActivityTable.ShipContainerId | nvarchar(20) | **Yes** | **Yes** |
-| Voyage | ITMContainerActivityTable.ShipId | nvarchar(20) | **Yes** | **Yes** |
-| Leg | ITMContainerActivityTable.ShipLegId | nvarchar(20) | No | **Yes** |
-| Service provider | ITMContainerActivityTable.ShipServiceProvider | nvarchar(20) | No | No |
-| Temperature | ITMContainerActivityTable.ShipTemperature | numeric(32, 6) | No | No |
-| Vessel | ITMContainerActivityTable.ShipVesselId | nvarchar(20) | No | No |
-| Start date | ITMContainerActivityTable.StartDate | datetime | No | No |
+| Activity | ITMContainerActivityTable.ShipActivityId | Nvarchar(10) | No | **Yes** |
+| Shipping container | ITMContainerActivityTable.ShipContainerId | Nvarchar(20) | **Yes** | **Yes** |
+| Voyage | ITMContainerActivityTable.ShipId | Nvarchar(20) | **Yes** | **Yes** |
+| Leg | ITMContainerActivityTable.ShipLegId | Nvarchar(20) | No | **Yes** |
+| Service provider | ITMContainerActivityTable.ShipServiceProvider | Nvarchar(20) | No | No |
+| Temperature | ITMContainerActivityTable.ShipTemperature | Numeric(32, 6) | No | No |
+| Vessel | ITMContainerActivityTable.ShipVesselId | Nvarchar(20) | No | No |
+| Start date | ITMContainerActivityTable.StartDate | Datetime | No | No |
 
 ## Tracking control
 

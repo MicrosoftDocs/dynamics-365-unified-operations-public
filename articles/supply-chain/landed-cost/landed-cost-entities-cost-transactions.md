@@ -37,8 +37,8 @@ The apportionment mapping entity (`ITMApportionmentMapping`) creates apportionme
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Apportionment method | ITMApportionmentMapping.ApportionmentMethod | int | No | No |
-| Cost type code | ITMApportionmentMapping.ShipCostTypeId | nvarchar(20) | **Yes** | No |
+| Apportionment method | ITMApportionmentMapping.ApportionmentMethod | Int | No | No |
+| Cost type code | ITMApportionmentMapping.ShipCostTypeId | Nvarchar(20) | **Yes** | No |
 
 ## Voyage costs (ITMCostTransVoyageEntity)
 
@@ -46,17 +46,17 @@ The voyage cost entity (`ITMCostTransVoyageEntity`) creates voyage cost transact
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Apportionment method | ITMCostTrans.ApportionmentMethod | int | No | No |
-| Cost value | ITMCostTrans.CostValue | numeric(32, 6) | No | No |
-| Currency | ITMCostTrans.CurrencyCode | nvarchar(3) | No | **Yes** |
-| Line number | ITMCostTrans.LineNum | numeric(32, 16) | **Yes** | No |
-| Linked cost type | ITMCostTrans.LinkCostTypeId | nvarchar(20) | No | No |
-| Minimum cost | ITMCostTrans.MinCostAmount | numeric(32, 6) | No | No |
-| Category | ITMCostTrans.ShipCostCategory | int | No | No |
-| Cost type code | ITMCostTrans.ShipCostTypeId | nvarchar(20) | No | No |
-| Company | ITMCostTrans.ShipDataArea | nvarchar(4) | No | **Yes** |
-| Voyage | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Item sales tax group | ITMCostTrans.TaxItemGroup | nvarchar(10) | No | No |
+| Apportionment method | ITMCostTrans.ApportionmentMethod | Int | No | No |
+| Cost value | ITMCostTrans.CostValue | Numeric(32, 6) | No | No |
+| Currency | ITMCostTrans.CurrencyCode | Nvarchar(3) | No | **Yes** |
+| Line number | ITMCostTrans.LineNum | Numeric(32, 16) | **Yes** | No |
+| Linked cost type | ITMCostTrans.LinkCostTypeId | Nvarchar(20) | No | No |
+| Minimum cost | ITMCostTrans.MinCostAmount | Numeric(32, 6) | No | No |
+| Category | ITMCostTrans.ShipCostCategory | Int | No | No |
+| Cost type code | ITMCostTrans.ShipCostTypeId | Nvarchar(20) | No | No |
+| Company | ITMCostTrans.ShipDataArea | Nvarchar(4) | No | **Yes** |
+| Voyage | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Item sales tax group | ITMCostTrans.TaxItemGroup | Nvarchar(10) | No | No |
 
 ## Shipping container costs (ITMCostTransShippingContainerEntity)
 
@@ -66,21 +66,21 @@ The fields **Aggregate**, **Leg**, and **Linked leg** are specific to records wh
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Aggregate | ITMCostTrans.AggregatedCost | int | No | No |
-| Apportionment method | ITMCostTrans.ApportionmentMethod | int | No | No |
-| Cost value | ITMCostTrans.CostValue | numeric(32, 6) | No | No |
-| Currency | ITMCostTrans.CurrencyCode | nvarchar(3) | No | **Yes** |
-| Line number | ITMCostTrans.LineNum | numeric(32, 16) | **Yes** | No |
-| Linked cost type | ITMCostTrans.LinkCostTypeId | nvarchar(20) | No | No |
-| Linked leg | ITMCostTrans.LinkLegId | nvarchar(20) | No | No |
-| Minimum cost | ITMCostTrans.MinCostAmount | numeric(32, 6) | No | No |
-| Shipping Container | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Category | ITMCostTrans.ShipCostCategory | int | No | No |
-| Cost type code | ITMCostTrans.ShipCostTypeId | nvarchar(20) | No | No |
-| Company | ITMCostTrans.ShipDataArea | nvarchar(4) | No | **Yes** |
-| Voyage | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Leg | ITMCostTrans.ShipLegId | nvarchar(20) | No | No |
-| Item sales tax group | ITMCostTrans.TaxItemGroup | nvarchar(10) | No | No |
+| Aggregate | ITMCostTrans.AggregatedCost | Int | No | No |
+| Apportionment method | ITMCostTrans.ApportionmentMethod | Int | No | No |
+| Cost value | ITMCostTrans.CostValue | Numeric(32, 6) | No | No |
+| Currency | ITMCostTrans.CurrencyCode | Nvarchar(3) | No | **Yes** |
+| Line number | ITMCostTrans.LineNum | Numeric(32, 16) | **Yes** | No |
+| Linked cost type | ITMCostTrans.LinkCostTypeId | Nvarchar(20) | No | No |
+| Linked leg | ITMCostTrans.LinkLegId | Nvarchar(20) | No | No |
+| Minimum cost | ITMCostTrans.MinCostAmount | Numeric(32, 6) | No | No |
+| Shipping Container | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Category | ITMCostTrans.ShipCostCategory | Int | No | No |
+| Cost type code | ITMCostTrans.ShipCostTypeId | Nvarchar(20) | No | No |
+| Company | ITMCostTrans.ShipDataArea | Nvarchar(4) | No | **Yes** |
+| Voyage | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Leg | ITMCostTrans.ShipLegId | Nvarchar(20) | No | No |
+| Item sales tax group | ITMCostTrans.TaxItemGroup | Nvarchar(10) | No | No |
 
 ## Folio costs (ITMCostTransFolioEntity)
 
@@ -88,17 +88,17 @@ The folio cost entity (`ITMCostTransFolioEntity`) creates cost transaction recor
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Apportionment method | ITMCostTrans.ApportionmentMethod | int | No | No |
-| Cost value | ITMCostTrans.CostValue | numeric(32, 6) | No | No |
-| Currency | ITMCostTrans.CurrencyCode | nvarchar(3) | No | **Yes** |
-| Line number | ITMCostTrans.LineNum | numeric(32, 16) | **Yes** | No |
-| Linked cost type | ITMCostTrans.LinkCostTypeId | nvarchar(20) | No | No |
-| Minimum cost | ITMCostTrans.MinCostAmount | numeric(32, 6) | No | No |
-| Category | ITMCostTrans.ShipCostCategory | int | No | No |
-| Cost type code | ITMCostTrans.ShipCostTypeId | nvarchar(20) | No | No |
-| Company | ITMCostTrans.ShipDataArea | nvarchar(4) | No | **Yes** |
-| Folio | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Item sales tax group | ITMCostTrans.TaxItemGroup | nvarchar(10) | No | No |
+| Apportionment method | ITMCostTrans.ApportionmentMethod | Int | No | No |
+| Cost value | ITMCostTrans.CostValue | Numeric(32, 6) | No | No |
+| Currency | ITMCostTrans.CurrencyCode | Nvarchar(3) | No | **Yes** |
+| Line number | ITMCostTrans.LineNum | Numeric(32, 16) | **Yes** | No |
+| Linked cost type | ITMCostTrans.LinkCostTypeId | Nvarchar(20) | No | No |
+| Minimum cost | ITMCostTrans.MinCostAmount | Numeric(32, 6) | No | No |
+| Category | ITMCostTrans.ShipCostCategory | Int | No | No |
+| Cost type code | ITMCostTrans.ShipCostTypeId | Nvarchar(20) | No | No |
+| Company | ITMCostTrans.ShipDataArea | Nvarchar(4) | No | **Yes** |
+| Folio | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Item sales tax group | ITMCostTrans.TaxItemGroup | Nvarchar(10) | No | No |
 
 ## Purchase order costs (ITMCostTransPurchaseEntity)
 
@@ -106,17 +106,17 @@ The purchase order cost entity (`ITMCostTransPurchaseEntity`) creates cost trans
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Apportionment method | ITMCostTrans.ApportionmentMethod | int | No | No |
-| Cost value | ITMCostTrans.CostValue | numeric(32, 6) | No | No |
-| Currency | ITMCostTrans.CurrencyCode | nvarchar(3) | No | **Yes** |
-| Line number | ITMCostTrans.LineNum | numeric(32, 16) | **Yes** | No |
-| Linked cost type | ITMCostTrans.LinkCostTypeId | nvarchar(20) | No | No |
-| Minimum cost | ITMCostTrans.MinCostAmount | numeric(32, 6) | No | No |
-| Purchase order | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Category | ITMCostTrans.ShipCostCategory | int | No | No |
-| Cost type code | ITMCostTrans.ShipCostTypeId | nvarchar(20) | No | No |
-| Company | ITMCostTrans.ShipDataArea | nvarchar(4) | No | **Yes** |
-| Item sales tax group | ITMCostTrans.TaxItemGroup | nvarchar(10) | No | No |
+| Apportionment method | ITMCostTrans.ApportionmentMethod | Int | No | No |
+| Cost value | ITMCostTrans.CostValue | Numeric(32, 6) | No | No |
+| Currency | ITMCostTrans.CurrencyCode | Nvarchar(3) | No | **Yes** |
+| Line number | ITMCostTrans.LineNum | Numeric(32, 16) | **Yes** | No |
+| Linked cost type | ITMCostTrans.LinkCostTypeId | Nvarchar(20) | No | No |
+| Minimum cost | ITMCostTrans.MinCostAmount | Numeric(32, 6) | No | No |
+| Purchase order | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Category | ITMCostTrans.ShipCostCategory | Int | No | No |
+| Cost type code | ITMCostTrans.ShipCostTypeId | Nvarchar(20) | No | No |
+| Company | ITMCostTrans.ShipDataArea | Nvarchar(4) | No | **Yes** |
+| Item sales tax group | ITMCostTrans.TaxItemGroup | Nvarchar(10) | No | No |
 
 ## Item costs (ITMCostTransItemEntity)
 
@@ -126,19 +126,19 @@ The fields **Adjustment amount** and **Value adjustment** are specific to the li
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Adjustment amount | ITMCostTrans.AdjustmentAmount | numeric(32, 6) | No | No |
-| Cost value | ITMCostTrans.CostValue | numeric(32, 6) | No | No |
-| Currency | ITMCostTrans.CurrencyCode | nvarchar(3) | No | **Yes** |
-| Line number | ITMCostTrans.LineNum | numeric(32, 16) | **Yes** | No |
-| Linked cost type | ITMCostTrans.LinkCostTypeId | nvarchar(20) | No | No |
-| Minimum cost | ITMCostTrans.MinCostAmount | numeric(32, 6) | No | No |
-| Purchase order | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Purchase order line number | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Category | ITMCostTrans.ShipCostCategory | int | No | No |
-| Cost type code | ITMCostTrans.ShipCostTypeId | nvarchar(20) | No | No |
-| Company | ITMCostTrans.ShipDataArea | nvarchar(4) | No | **Yes** |
-| Item sales tax group | ITMCostTrans.TaxItemGroup | nvarchar(10) | No | No |
-| Value adjustment | ITMCostTrans.ValueAdjustmentMethod | int | No | No |
+| Adjustment amount | ITMCostTrans.AdjustmentAmount | Numeric(32, 6) | No | No |
+| Cost value | ITMCostTrans.CostValue | Numeric(32, 6) | No | No |
+| Currency | ITMCostTrans.CurrencyCode | Nvarchar(3) | No | **Yes** |
+| Line number | ITMCostTrans.LineNum | Numeric(32, 16) | **Yes** | No |
+| Linked cost type | ITMCostTrans.LinkCostTypeId | Nvarchar(20) | No | No |
+| Minimum cost | ITMCostTrans.MinCostAmount | Numeric(32, 6) | No | No |
+| Purchase order | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Purchase order line number | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Category | ITMCostTrans.ShipCostCategory | Int | No | No |
+| Cost type code | ITMCostTrans.ShipCostTypeId | Nvarchar(20) | No | No |
+| Company | ITMCostTrans.ShipDataArea | Nvarchar(4) | No | **Yes** |
+| Item sales tax group | ITMCostTrans.TaxItemGroup | Nvarchar(10) | No | No |
+| Value adjustment | ITMCostTrans.ValueAdjustmentMethod | Int | No | No |
 
 ## Transfer line costs (ITMCostTransTransferLineEntity)
 
@@ -148,19 +148,19 @@ The fields **Adjustment amount** and **Value adjustment** are specific to the li
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Adjustment amount | ITMCostTrans.AdjustmentAmount | numeric(32, 6) | No | No |
-| Cost value | ITMCostTrans.CostValue | numeric(32, 6) | No | No |
-| Currency | ITMCostTrans.CurrencyCode | nvarchar(3) | No | **Yes** |
-| Line number | ITMCostTrans.LineNum | numeric(32, 16) | **Yes** | No |
-| Linked cost type | ITMCostTrans.LinkCostTypeId | nvarchar(20) | No | No |
-| Minimum cost | ITMCostTrans.MinCostAmount | numeric(32, 6) | No | No |
-| Category | ITMCostTrans.ShipCostCategory | int | No | No |
-| Cost type code | ITMCostTrans.ShipCostTypeId | nvarchar(20) | No | No |
-| Company | ITMCostTrans.ShipDataArea | nvarchar(4) | No | **Yes** |
-| Transfer order | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Transfer order line number | ITMCostTrans.TransRecId | nvarchar(20) | **Yes** | No |
-| Item sales tax group | ITMCostTrans.TaxItemGroup | nvarchar(10) | No | No |
-| Value adjustment | ITMCostTrans.ValueAdjustmentMethod | int | No | No |
+| Adjustment amount | ITMCostTrans.AdjustmentAmount | Numeric(32, 6) | No | No |
+| Cost value | ITMCostTrans.CostValue | Numeric(32, 6) | No | No |
+| Currency | ITMCostTrans.CurrencyCode | Nvarchar(3) | No | **Yes** |
+| Line number | ITMCostTrans.LineNum | Numeric(32, 16) | **Yes** | No |
+| Linked cost type | ITMCostTrans.LinkCostTypeId | Nvarchar(20) | No | No |
+| Minimum cost | ITMCostTrans.MinCostAmount | Numeric(32, 6) | No | No |
+| Category | ITMCostTrans.ShipCostCategory | Int | No | No |
+| Cost type code | ITMCostTrans.ShipCostTypeId | Nvarchar(20) | No | No |
+| Company | ITMCostTrans.ShipDataArea | Nvarchar(4) | No | **Yes** |
+| Transfer order | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Transfer order line number | ITMCostTrans.TransRecId | Nvarchar(20) | **Yes** | No |
+| Item sales tax group | ITMCostTrans.TaxItemGroup | Nvarchar(10) | No | No |
+| Value adjustment | ITMCostTrans.ValueAdjustmentMethod | Int | No | No |
 
 ### Transaction table
 
@@ -174,7 +174,7 @@ The following fields are not available for insert or update when using a cost tr
 
 - **Estimated cost** – Populated on invoice posting for the voyage (purchase order) or transfer receiving.
 - **Estimated cost currency** – Populated on invoice posting for the voyage (purchase order) or transfer receiving.
-- **Actual cost** – Populated on vendor invoice posting associates with the cost.
+- **Actual cost** – Populated on vendor invoice posting; associates with the cost.
 
 ### Find auto costs
 

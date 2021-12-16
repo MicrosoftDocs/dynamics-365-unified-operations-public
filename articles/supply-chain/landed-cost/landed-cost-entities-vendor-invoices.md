@@ -29,11 +29,11 @@ The vendor voyage cost allocations data entity enables the allocation of a vendo
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Allocated amount | ITMLedgerJournalCostLines.Amount | numeric(32, 6) | No | No |
-| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | numeric(32, 16) | **Yes** | No |
-| Journal line number | ITMLedgerJournalCostLines.RefRecId | numeric(32, 16) | **Yes** | No |
-| Journal number | ITMLedgerJournalCostLines.RefRecId | nvarchar(20) | **Yes** | No |
-| Voyage | ITMLedgerJournalCostLines.CostTransRefRecId | nvarchar(20) | **Yes** | No |
+| Allocated amount | ITMLedgerJournalCostLines.Amount | Numeric(32, 6) | No | No |
+| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal line number | ITMLedgerJournalCostLines.RefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal number | ITMLedgerJournalCostLines.RefRecId | Nvarchar(20) | **Yes** | No |
+| Voyage | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |
 
 ## Vendor shipping container cost allocations (ITMLedgerJournalCostLinesContainersEntity)
 
@@ -41,12 +41,12 @@ The vendor shipping container cost allocations data entity enables the allocatio
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Allocated amount | ITMLedgerJournalCostLines.Amount | numeric(32, 6) | No | No |
-| Shipping container | ITMLedgerJournalCostLines.CostTransRefRecId | nvarchar(20) | **Yes** | No |
-| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | numeric(32, 16) | **Yes** | No |
-| Journal line number | ITMLedgerJournalCostLines.RefRecId | numeric(32, 16) | **Yes** | No |
-| Journal number | ITMLedgerJournalCostLines.RefRecId | nvarchar(20) | **Yes** | No |
-| Voyage | ITMLedgerJournalCostLines.CostTransRefRecId | nvarchar(20) | **Yes** | No |
+| Allocated amount | ITMLedgerJournalCostLines.Amount | Numeric(32, 6) | No | No |
+| Shipping container | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |
+| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal line number | ITMLedgerJournalCostLines.RefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal number | ITMLedgerJournalCostLines.RefRecId | Nvarchar(20) | **Yes** | No |
+| Voyage | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |
 
 ## Vendor folio cost allocations (ITMLedgerJournalCostLinesFoliosEntity)
 
@@ -54,11 +54,11 @@ The vendor folio cost allocations data entity enables the allocation of a vendor
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Allocated amount | ITMLedgerJournalCostLines.Amount | numeric(32, 6) | No | No |
-| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | numeric(32, 16) | **Yes** | No |
-| Folio | ITMLedgerJournalCostLines.CostTransRefRecId | nvarchar(20) | **Yes** | No |
-| Journal line number | ITMLedgerJournalCostLines.RefRecId | numeric(32, 16) | **Yes** | No |
-| Journal number | ITMLedgerJournalCostLines.RefRecId | nvarchar(20) | **Yes** | No |
+| Allocated amount | ITMLedgerJournalCostLines.Amount | Numeric(32, 6) | No | No |
+| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
+| Folio | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |
+| Journal line number | ITMLedgerJournalCostLines.RefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal number | ITMLedgerJournalCostLines.RefRecId | Nvarchar(20) | **Yes** | No |
 
 ## Vendor purchase order cost allocations (ITMLedgerJournalCostLinesPurchTableEntity)
 
@@ -66,11 +66,11 @@ The vendor purchase order cost allocations data entity enables the allocation of
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Allocated amount | ITMLedgerJournalCostLines.Amount | numeric(32, 6) | No | No |
-| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | numeric(32, 16) | **Yes** | No |
-| Journal line number | ITMLedgerJournalCostLines.RefRecId | numeric(32, 16) | **Yes** | No |
-| Journal number | ITMLedgerJournalCostLines.RefRecId | nvarchar(20) | **Yes** | No |
-| Purchase order | ITMLedgerJournalCostLines.CostTransRefRecId | nvarchar(20) | **Yes** | No |
+| Allocated amount | ITMLedgerJournalCostLines.Amount | Numeric(32, 6) | No | No |
+| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal line number | ITMLedgerJournalCostLines.RefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal number | ITMLedgerJournalCostLines.RefRecId | Nvarchar(20) | **Yes** | No |
+| Purchase order | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |
 
 ## Vendor item cost allocations (ITMLedgerJournalCostLinesPurchLineEntity)
 
@@ -78,12 +78,12 @@ The vendor item cost allocations data entity enables the allocation of a vendor 
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Allocated amount | ITMLedgerJournalCostLines.Amount | numeric(32, 6) | No | No |
-| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | numeric(32, 16) | **Yes** | No |
-| Journal line number | ITMLedgerJournalCostLines.RefRecId | numeric(32, 16) | **Yes** | No |
-| Journal number | ITMLedgerJournalCostLines.RefRecId | nvarchar(20) | **Yes** | No |
-| Purchase order | ITMLedgerJournalCostLines.CostTransRefRecId | nvarchar(20) | **Yes** | No |
-| Purchase order line number | ITMLedgerJournalCostLines.CostTransRefRecId | numeric(32, 16) | **Yes** | No |
+| Allocated amount | ITMLedgerJournalCostLines.Amount | Numeric(32, 6) | No | No |
+| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal line number | ITMLedgerJournalCostLines.RefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal number | ITMLedgerJournalCostLines.RefRecId | Nvarchar(20) | **Yes** | No |
+| Purchase order | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |
+| Purchase order line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
 
 ## Vendor transfer order line cost allocations (ITMLedgerJournalCostLinesTransferLineEntity)
 
@@ -91,12 +91,12 @@ The vendor transfer order line cost allocations data entity enables the allocati
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Allocated amount | ITMLedgerJournalCostLines.Amount | numeric(32, 6) | No | No |
-| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | numeric(32, 16) | **Yes** | No |
-| Journal line number | ITMLedgerJournalCostLines.RefRecId | numeric(32, 16) | **Yes** | No |
-| Journal number | ITMLedgerJournalCostLines.RefRecId | nvarchar(20) | **Yes** | No |
-| Transfer order | ITMLedgerJournalCostLines.CostTransRefRecId | nvarchar(20) | **Yes** | No |
-| Transfer order line number | ITMLedgerJournalCostLines.CostTransRefRecId | numeric(32, 16) | **Yes** | No |
+| Allocated amount | ITMLedgerJournalCostLines.Amount | Numeric(32, 6) | No | No |
+| Cost transaction line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal line number | ITMLedgerJournalCostLines.RefRecId | Numeric(32, 16) | **Yes** | No |
+| Journal number | ITMLedgerJournalCostLines.RefRecId | Nvarchar(20) | **Yes** | No |
+| Transfer order | ITMLedgerJournalCostLines.CostTransRefRecId | Nvarchar(20) | **Yes** | No |
+| Transfer order line number | ITMLedgerJournalCostLines.CostTransRefRecId | Numeric(32, 16) | **Yes** | No |
 
 ### Reference table
 

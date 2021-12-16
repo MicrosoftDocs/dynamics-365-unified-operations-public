@@ -25,45 +25,45 @@ The voyage represents the journey of the inbound goods and serves as the highest
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Mode of delivery | ITMTable.DlvModeId | nvarchar(10) | No | No |
-| Broker advised | ITMTable.ITMBrokerAdvised | datetime | No | No |
-| Customer appointment | ITMTable.ITMCustomerAppointment | datetime | No | No |
-| Delivered at warehouse | ITMTable.ITMDelAtWarehouse | datetime | No | No |
-| Delivery instructions | ITMTable.ITMDeliveryInstructions | datetime | No | No |
-| Departure date | ITMTable.ITMDepartureDate | datetime | No | No |
-| Goods released | ITMTable.ITMGoodsReleased | datetime | No | No |
-| Local transport date | ITMTable.ITMLocalTransportDate | datetime | No | No |
-| Local transport time | ITMTable.ITMLocalTransportTime | int | No | No |
-| Original bill of landing sent | ITMTable.ITMOriginalBOLSebt | datetime | No | No |
-| Original documents received | ITMTable.ITMOriginalDocsReceived | datetime | No | No |
-| Purchase order status | ITMTable.ITMPurchStatus | int | No | No |
-| Verification date | ITMTable.ITMVerificationDate | datetime | No | No |
-| Customs entry identifier | ITMTable.ShipCustomsEntryId | nvarchar(20) | No | No |
-| Ship date | ITMTable.ShipDate | datetime | No | No |
-| Description | ITMTable.ShipDescription | nvarchar(60) | No | No |
-| Documents received | ITMTable.ShipDocReceived | int | No | No |
-| Estimated delivery date | ITMTable.ShipEstDlvDate | datetime | No | No |
-| ETA at shipping port | ITMTable.ShipEstPortDate | datetime | No | No |
-| From port | ITMTable.ShipFromPort | nvarchar(20) | No | No |
-| House air way/Bill of lading | ITMTable.ShipHAWB | nvarchar(20) | No | No |
-| Voyage | ITMTable.ShipId | nvarchar(20) | **Yes** | **Yes** |
-| Booking reference | ITMTable.ShipIdExternal | nvarchar(20) | No | No |
-| Journey template | ITMTable.ShipJourneyId | nvarchar(20) | No | No |
-| Local forwarder | ITMTable.ShipLocalForwarder | nvarchar(20) | No | No |
-| Master air way/Bill of lading | ITMTable.ShipMAWB | nvarchar(20) | No | No |
-| Measurement | ITMTable.ShipMeasurement | numeric(32, 6) | No | No |
-| Measurement unit | ITMTable.ShipMeasurementUnit | int | No | No |
-| Number of pallets | ITMTable.ShipNoOfPallets | int | No | No |
-| Pending voyage | ITMTable.ShipPending | int | No | No |
+| Mode of delivery | ITMTable.DlvModeId | Nvarchar(10) | No | No |
+| Broker advised | ITMTable.ITMBrokerAdvised | Datetime | No | No |
+| Customer appointment | ITMTable.ITMCustomerAppointment | Datetime | No | No |
+| Delivered at warehouse | ITMTable.ITMDelAtWarehouse | Datetime | No | No |
+| Delivery instructions | ITMTable.ITMDeliveryInstructions | Datetime | No | No |
+| Departure date | ITMTable.ITMDepartureDate | Datetime | No | No |
+| Goods released | ITMTable.ITMGoodsReleased | Datetime | No | No |
+| Local transport date | ITMTable.ITMLocalTransportDate | Datetime | No | No |
+| Local transport time | ITMTable.ITMLocalTransportTime | Int | No | No |
+| Original bill of landing sent | ITMTable.ITMOriginalBOLSebt | Datetime | No | No |
+| Original documents received | ITMTable.ITMOriginalDocsReceived | Datetime | No | No |
+| Purchase order status | ITMTable.ITMPurchStatus | Int | No | No |
+| Verification date | ITMTable.ITMVerificationDate | Datetime | No | No |
+| Customs entry identifier | ITMTable.ShipCustomsEntryId | Nvarchar(20) | No | No |
+| Ship date | ITMTable.ShipDate | Datetime | No | No |
+| Description | ITMTable.ShipDescription | Nvarchar(60) | No | No |
+| Documents received | ITMTable.ShipDocReceived | Int | No | No |
+| Estimated delivery date | ITMTable.ShipEstDlvDate | Datetime | No | No |
+| ETA at shipping port | ITMTable.ShipEstPortDate | Datetime | No | No |
+| From port | ITMTable.ShipFromPort | Nvarchar(20) | No | No |
+| House air way/Bill of lading | ITMTable.ShipHAWB | Nvarchar(20) | No | No |
+| Voyage | ITMTable.ShipId | Nvarchar(20) | **Yes** | **Yes** |
+| Booking reference | ITMTable.ShipIdExternal | Nvarchar(20) | No | No |
+| Journey template | ITMTable.ShipJourneyId | Nvarchar(20) | No | No |
+| Local forwarder | ITMTable.ShipLocalForwarder | Nvarchar(20) | No | No |
+| Master air way/Bill of lading | ITMTable.ShipMAWB | Nvarchar(20) | No | No |
+| Measurement | ITMTable.ShipMeasurement | Numeric(32, 6) | No | No |
+| Measurement unit | ITMTable.ShipMeasurementUnit | Int | No | No |
+| Number of pallets | ITMTable.ShipNoOfPallets | Int | No | No |
+| Pending voyage | ITMTable.ShipPending | Int | No | No |
 | Remarks | ITMTable.ShipRemarks | nvarchar(MAX) | No | No |
-| Rental | ITMTable.ShipRental | int | No | No |
-| Voyage status | ITMTable.ShipStatusId | nvarchar(20) | No | No |
-| Tally in number | ITMTable.ShipTallyInNumber | nvarchar(20) | No | No |
-| To port | ITMTable.ShipToPort | nvarchar(20) | No | No |
-| Valuation date | ITMTable.ShipValuationDate | datetime | No | No |
-| Shipping company | ITMTable.ShipVendAccount | nvarchar(20) | No | No |
-| Vessel | ITMTable.ShipVesselId | nvarchar(20) | No | **Yes** |
-| External voyage ID | ITMTable.ShipVoyage | nvarchar(20) | No | No |
+| Rental | ITMTable.ShipRental | Int | No | No |
+| Voyage status | ITMTable.ShipStatusId | Nvarchar(20) | No | No |
+| Tally in number | ITMTable.ShipTallyInNumber | Nvarchar(20) | No | No |
+| To port | ITMTable.ShipToPort | Nvarchar(20) | No | No |
+| Valuation date | ITMTable.ShipValuationDate | Datetime | No | No |
+| Shipping company | ITMTable.ShipVendAccount | Nvarchar(20) | No | No |
+| Vessel | ITMTable.ShipVesselId | Nvarchar(20) | No | **Yes** |
+| External voyage ID | ITMTable.ShipVoyage | Nvarchar(20) | No | No |
 
 ### Number sequences for voyages
 
@@ -85,52 +85,52 @@ A shipping container represents a physical container that goods are transported 
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Departure date | ITMContainers.ITMDepartureDate | datetime | No | No |
-| Local transport date | ITMContainers.ITMLocalTransportDate | datetime | No | No |
-| Local transport time | ITMContainers.ITMLocalTransportTime | int | No | No |
-| Original voyage | ITMContainers.OrigShipId | nvarchar(20) | No | No |
-| Actual weight | ITMContainers.ShipActualWeight | numeric(32, 6) | No | No |
-| Broker advised | ITMContainers.ShipBrokerAdvised | datetime | No | No |
-| Shipping container | ITMContainers.ShipContainerId | nvarchar(20) | **Yes** | **Yes** |
-| Shipping container type | ITMContainers.ShipContainerTypeId | nvarchar(20) | No | No |
-| Unit type | ITMContainers.ShipContainerUnitTypeId | nvarchar(10) | No | No |
-| Converted to rental | ITMContainers.ShipConvertedToRental | int | No | No |
-| Customer appointment | ITMContainers.ShipCustomerAppointment | datetime | No | No |
-| Ship date | ITMContainers.ShipDate | datetime | No | No |
-| Delivered at warehouse | ITMContainers.ShipDelAtWarehouse | datetime | No | No |
-| Delivery instructions | ITMContainers.ShipDeliveryInstructions | datetime | No | No |
-| Examination certificate applied date | ITMContainers.ShipECAppliedDate | datetime | No | No |
-| Examination certificate expiry date | ITMContainers.ShipECExpiryDate | datetime | No | No |
-| Examination certificate number | ITMContainers.ShipECNum | nvarchar(20) | No | No |
-| Examination certificate received date | ITMContainers.ShipECReceivedDate | datetime | No | No |
-| Estimated delivery date | ITMContainers.ShipEstDlvDate | datetime | No | No |
-| ETA at shipping port | ITMContainers.ShipEstPortDate | datetime | No | No |
-| Expected loading date | ITMContainers.ShipExpectedLoadingDate | datetime | No | No |
-| From port | ITMContainers.ShipFromPort | nvarchar(20) | No | No |
-| Description of goods | ITMContainers.ShipGoodsDesc | nvarchar(60) | No | No |
-| Goods released | ITMContainers.ShipGoodsReleased | datetime | No | No |
-| GPS tracker unit | ITMContainers.ShipGPSUnit | nvarchar(30) | No | No |
-| House air way/Bill of lading | ITMContainers.ShipHAWB | nvarchar(20) | No | No |
-| Voyage | ITMContainers.ShipId | nvarchar(20) | **Yes** | **Yes** |
-| Journey template | ITMContainers.ShipJourneyId | nvarchar(20) | No | No |
-| Local forwarder | ITMContainers.ShipLocalForwarder | nvarchar(20) | No | No |
-| Measurement | ITMContainers.ShipMeasurement | numeric(32, 6) | No | No |
-| Measurement unit | ITMContainers.ShipMeasurementUnit | int | No | No |
-| Number of cartons | ITMContainers.ShipNoOfCartons | numeric(32, 6) | No | No |
-| Original bill of landing sent | ITMContainers.ShipOriginalBOLSebt | datetime | No | No |
-| Original documents received | ITMContainers.ShipOriginalDocsReceived | datetime | No | No |
-| Our seal number | ITMContainers.ShipOurSealNum | nvarchar(20) | No | No |
-| Used | ITMContainers.ShipPendingUsed | int | No | No |
-| Purchase order status | ITMContainers.ShipPurchStatus | int | No | No |
-| Refrigeration type | ITMContainers.ShipRefrigerationTypeId | nvarchar(10) | No | No |
+| Departure date | ITMContainers.ITMDepartureDate | Datetime | No | No |
+| Local transport date | ITMContainers.ITMLocalTransportDate | Datetime | No | No |
+| Local transport time | ITMContainers.ITMLocalTransportTime | Int | No | No |
+| Original voyage | ITMContainers.OrigShipId | Nvarchar(20) | No | No |
+| Actual weight | ITMContainers.ShipActualWeight | Numeric(32, 6) | No | No |
+| Broker advised | ITMContainers.ShipBrokerAdvised | Datetime | No | No |
+| Shipping container | ITMContainers.ShipContainerId | Nvarchar(20) | **Yes** | **Yes** |
+| Shipping container type | ITMContainers.ShipContainerTypeId | Nvarchar(20) | No | No |
+| Unit type | ITMContainers.ShipContainerUnitTypeId | Nvarchar(10) | No | No |
+| Converted to rental | ITMContainers.ShipConvertedToRental | Int | No | No |
+| Customer appointment | ITMContainers.ShipCustomerAppointment | Datetime | No | No |
+| Ship date | ITMContainers.ShipDate | Datetime | No | No |
+| Delivered at warehouse | ITMContainers.ShipDelAtWarehouse | Datetime | No | No |
+| Delivery instructions | ITMContainers.ShipDeliveryInstructions | Datetime | No | No |
+| Examination certificate applied date | ITMContainers.ShipECAppliedDate | Datetime | No | No |
+| Examination certificate expiry date | ITMContainers.ShipECExpiryDate | Datetime | No | No |
+| Examination certificate number | ITMContainers.ShipECNum | Nvarchar(20) | No | No |
+| Examination certificate received date | ITMContainers.ShipECReceivedDate | Datetime | No | No |
+| Estimated delivery date | ITMContainers.ShipEstDlvDate | Datetime | No | No |
+| ETA at shipping port | ITMContainers.ShipEstPortDate | Datetime | No | No |
+| Expected loading date | ITMContainers.ShipExpectedLoadingDate | Datetime | No | No |
+| From port | ITMContainers.ShipFromPort | Nvarchar(20) | No | No |
+| Description of goods | ITMContainers.ShipGoodsDesc | Nvarchar(60) | No | No |
+| Goods released | ITMContainers.ShipGoodsReleased | Datetime | No | No |
+| GPS tracker unit | ITMContainers.ShipGPSUnit | Nvarchar(30) | No | No |
+| House air way/Bill of lading | ITMContainers.ShipHAWB | Nvarchar(20) | No | No |
+| Voyage | ITMContainers.ShipId | Nvarchar(20) | **Yes** | **Yes** |
+| Journey template | ITMContainers.ShipJourneyId | Nvarchar(20) | No | No |
+| Local forwarder | ITMContainers.ShipLocalForwarder | Nvarchar(20) | No | No |
+| Measurement | ITMContainers.ShipMeasurement | Numeric(32, 6) | No | No |
+| Measurement unit | ITMContainers.ShipMeasurementUnit | Int | No | No |
+| Number of cartons | ITMContainers.ShipNoOfCartons | Numeric(32, 6) | No | No |
+| Original bill of landing sent | ITMContainers.ShipOriginalBOLSebt | Datetime | No | No |
+| Original documents received | ITMContainers.ShipOriginalDocsReceived | Datetime | No | No |
+| Our seal number | ITMContainers.ShipOurSealNum | Nvarchar(20) | No | No |
+| Used | ITMContainers.ShipPendingUsed | Int | No | No |
+| Purchase order status | ITMContainers.ShipPurchStatus | Int | No | No |
+| Refrigeration type | ITMContainers.ShipRefrigerationTypeId | Nvarchar(10) | No | No |
 | Remarks | ITMContainers.ShipRemarks | nvarchar(MAX) | No | No |
-| Rental | ITMContainers.ShipRental | int | No | No |
-| Returnable | ITMContainers.ShipReturnable | int | No | No |
-| Voyage status | ITMContainers.ShipStatusId | nvarchar(20) | No | No |
-| Shipping company seal number | ITMContainers.ShipTheirSealNum | nvarchar(20) | No | No |
-| To port | ITMContainers.ShipToPort | nvarchar(20) | No | No |
-| Verification date | ITMContainers.ShipVerificationDate | datetime | No | No |
-| Vessel | ITMContainers.ShipVesselId | nvarchar(20) | No | **Yes** |
+| Rental | ITMContainers.ShipRental | Int | No | No |
+| Returnable | ITMContainers.ShipReturnable | Int | No | No |
+| Voyage status | ITMContainers.ShipStatusId | Nvarchar(20) | No | No |
+| Shipping company seal number | ITMContainers.ShipTheirSealNum | Nvarchar(20) | No | No |
+| To port | ITMContainers.ShipToPort | Nvarchar(20) | No | No |
+| Verification date | ITMContainers.ShipVerificationDate | Datetime | No | No |
+| Vessel | ITMContainers.ShipVesselId | Nvarchar(20) | No | **Yes** |
 
 ### Voyage ID validation
 
@@ -152,39 +152,39 @@ A folio represents a grouping of items within a shipping container, for the purp
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Broker advised | ITMFolioTable.ShipBrokerAdvised | datetime | No | No |
-| Cargo control number | ITMFolioTable.ShipCargoControlNumber | nvarchar(20) | No | No |
-| Customer appointment | ITMFolioTable.ShipCustomerAppointment | datetime | No | No |
-| Customs broker | ITMFolioTable.ShipCustomsBroker | nvarchar(20) | No | No |
-| Customs ID | ITMFolioTable.ShipCustomsId | nvarchar(60) | No | No |
-| Company | ITMFolioTable.ShipDataArea | nvarchar(4) | No | **Yes** |
-| Delivered at warehouse | ITMFolioTable.ShipDelAtWarehouse | datetime | No | No |
-| Delivery instructions | ITMFolioTable.ShipDeliveryInstructions | datetime | No | No |
-| Documents received | ITMFolioTable.ShipDocReceived | int | No | No |
-| Estimated delivery date | ITMFolioTable.ShipEstDlvDate | datetime | No | No |
-| ETA at shipping port | ITMFolioTable.ShipEstPortDate | datetime | No | No |
-| Exporter | ITMFolioTable.ShipExporterId | nvarchar(20) | No | No |
-| Name | ITMFolioTable.ShipExporterName | nvarchar(60) | No | No |
-| Folio date | ITMFolioTable.ShipFolioDate | datetime | No | No |
-| Folio | ITMFolioTable.ShipFolioId | nvarchar(20) | **Yes** | **Yes** |
-| From port | ITMFolioTable.ShipFromPort | nvarchar(20) | No | No |
-| Description of goods | ITMFolioTable.ShipGoodsDesc | nvarchar(60) | No | No |
-| Goods released | ITMFolioTable.ShipGoodsReleased | datetime | No | No |
-| House air way/Bill of lading | ITMFolioTable.ShipHAWB | nvarchar(20) | No | No |
-| Voyage | ITMFolioTable.ShipId | nvarchar(20) | No | **Yes** |
-| Measurement | ITMFolioTable.ShipMeasurement | numeric(32, 6) | No | No |
-| Measurement unit | ITMFolioTable.ShipMeasurementUnit | int | No | No |
-| Number of cartons | ITMFolioTable.ShipNoOfCartons | numeric(32, 6) | No | No |
-| Original bill of landing sent | ITMFolioTable.ShipOriginalBOLSebt | datetime | No | No |
-| Original documents received | ITMFolioTable.ShipOriginalDocsReceived | datetime | No | No |
-| Purchase order status | ITMFolioTable.ShipPurchStatus | int | No | No |
+| Broker advised | ITMFolioTable.ShipBrokerAdvised | Datetime | No | No |
+| Cargo control number | ITMFolioTable.ShipCargoControlNumber | Nvarchar(20) | No | No |
+| Customer appointment | ITMFolioTable.ShipCustomerAppointment | Datetime | No | No |
+| Customs broker | ITMFolioTable.ShipCustomsBroker | Nvarchar(20) | No | No |
+| Customs ID | ITMFolioTable.ShipCustomsId | Nvarchar(60) | No | No |
+| Company | ITMFolioTable.ShipDataArea | Nvarchar(4) | No | **Yes** |
+| Delivered at warehouse | ITMFolioTable.ShipDelAtWarehouse | Datetime | No | No |
+| Delivery instructions | ITMFolioTable.ShipDeliveryInstructions | Datetime | No | No |
+| Documents received | ITMFolioTable.ShipDocReceived | Int | No | No |
+| Estimated delivery date | ITMFolioTable.ShipEstDlvDate | Datetime | No | No |
+| ETA at shipping port | ITMFolioTable.ShipEstPortDate | Datetime | No | No |
+| Exporter | ITMFolioTable.ShipExporterId | Nvarchar(20) | No | No |
+| Name | ITMFolioTable.ShipExporterName | Nvarchar(60) | No | No |
+| Folio date | ITMFolioTable.ShipFolioDate | Datetime | No | No |
+| Folio | ITMFolioTable.ShipFolioId | Nvarchar(20) | **Yes** | **Yes** |
+| From port | ITMFolioTable.ShipFromPort | Nvarchar(20) | No | No |
+| Description of goods | ITMFolioTable.ShipGoodsDesc | Nvarchar(60) | No | No |
+| Goods released | ITMFolioTable.ShipGoodsReleased | Datetime | No | No |
+| House air way/Bill of lading | ITMFolioTable.ShipHAWB | Nvarchar(20) | No | No |
+| Voyage | ITMFolioTable.ShipId | Nvarchar(20) | No | **Yes** |
+| Measurement | ITMFolioTable.ShipMeasurement | Numeric(32, 6) | No | No |
+| Measurement unit | ITMFolioTable.ShipMeasurementUnit | Int | No | No |
+| Number of cartons | ITMFolioTable.ShipNoOfCartons | Numeric(32, 6) | No | No |
+| Original bill of landing sent | ITMFolioTable.ShipOriginalBOLSebt | Datetime | No | No |
+| Original documents received | ITMFolioTable.ShipOriginalDocsReceived | Datetime | No | No |
+| Purchase order status | ITMFolioTable.ShipPurchStatus | Int | No | No |
 | Remarks | ITMFolioTable.ShipRemarks | nvarchar(MAX) | No | No |
-| Voyage status | ITMFolioTable.ShipStatusId | nvarchar(20) | No | No |
-| Tariff code | ITMFolioTable.ShipTariffCode | nvarchar(10) | No | No |
-| To port | ITMFolioTable.ShipToPort | nvarchar(20) | No | No |
-| Valuation date | ITMFolioTable.ShipValuationDate | datetime | No | No |
-| Verification date | ITMFolioTable.ShipVerificationDate | datetime | No | No |
-| Vendor account | ITMFolioTable.VendAccount | nvarchar(20) | No | No |
+| Voyage status | ITMFolioTable.ShipStatusId | Nvarchar(20) | No | No |
+| Tariff code | ITMFolioTable.ShipTariffCode | Nvarchar(10) | No | No |
+| To port | ITMFolioTable.ShipToPort | Nvarchar(20) | No | No |
+| Valuation date | ITMFolioTable.ShipValuationDate | Datetime | No | No |
+| Verification date | ITMFolioTable.ShipVerificationDate | Datetime | No | No |
+| Vendor account | ITMFolioTable.VendAccount | Nvarchar(20) | No | No |
 
 ### Number sequences for folios
 
@@ -206,24 +206,24 @@ The voyage line represents a single purchase order line included in the voyage. 
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Currency | ITMLine.CurrencyCode | nvarchar(3) | No | No |
-| Net amount | ITMLine.LineAmountMST | numeric(32, 6) | No | No |
-| Purchase line number | ITMLine.RefRecId | numeric(32, 6) | **Yes** | No |
-| Shipping container | ITMLine.ShipContainerId | int | No | No |
-| Company | ITMLine.ShipDataArea | nvarchar(20) | **Yes** | No |
-| Declared quantity | ITMLine.ShipDeclaredQty | nvarchar(4) | No | No |
-| Folio | ITMLine.ShipFolioId | numeric(32, 6) | No | No |
-| Voyage | ITMLine.ShipId | nvarchar(20) | **Yes** | No |
-| Item number | ITMLine.ShipItemId | nvarchar(20) | No | No |
-| Measurement | ITMLine.ShipMeasurement | nvarchar(20) | No | No |
-| Measurement unit | ITMLine.ShipMeasurementUnit | numeric(32, 6) | No | No |
-| Number of cartons | ITMLine.ShipNoOfCartons | int | No | No |
-| Position | ITMLine.ShipPosition | numeric(32, 6) | No | No |
-| Quantity | ITMLine.ShipQty | int | No | No |
-| Purchase order number | ITMLine.TransRefId | numeric(32, 6) | **Yes** | No |
-| Unit | ITMLine.UnitId | int | No | No |
-| Volume | ITMLine.Volume | nvarchar(10) | No | No |
-| Weight | ITMLine.Weight | numeric(32, 6) | No | No |
+| Currency | ITMLine.CurrencyCode | Nvarchar(3) | No | No |
+| Net amount | ITMLine.LineAmountMST | Numeric(32, 6) | No | No |
+| Purchase line number | ITMLine.RefRecId | Numeric(32, 6) | **Yes** | No |
+| Shipping container | ITMLine.ShipContainerId | Int | No | No |
+| Company | ITMLine.ShipDataArea | Nvarchar(20) | **Yes** | No |
+| Declared quantity | ITMLine.ShipDeclaredQty | Nvarchar(4) | No | No |
+| Folio | ITMLine.ShipFolioId | Numeric(32, 6) | No | No |
+| Voyage | ITMLine.ShipId | Nvarchar(20) | **Yes** | No |
+| Item number | ITMLine.ShipItemId | Nvarchar(20) | No | No |
+| Measurement | ITMLine.ShipMeasurement | Nvarchar(20) | No | No |
+| Measurement unit | ITMLine.ShipMeasurementUnit | Numeric(32, 6) | No | No |
+| Number of cartons | ITMLine.ShipNoOfCartons | Int | No | No |
+| Position | ITMLine.ShipPosition | Numeric(32, 6) | No | No |
+| Quantity | ITMLine.ShipQty | Int | No | No |
+| Purchase order number | ITMLine.TransRefId | Numeric(32, 6) | **Yes** | No |
+| Unit | ITMLine.UnitId | Int | No | No |
+| Volume | ITMLine.Volume | Nvarchar(10) | No | No |
+| Weight | ITMLine.Weight | Numeric(32, 6) | No | No |
 
 ## Voyage lines for transfer orders (ITMTransferLineEntity)
 
@@ -231,24 +231,24 @@ The voyage line represents a single transfer order line included within the Voya
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Currency | ITMLine.CurrencyCode | nvarchar(3) | No | No |
-| Net amount | ITMLine.LineAmountMST | numeric(32, 6) | No | No |
-| Shipping container | ITMLine.ShipContainerId | int | No | No |
-| Company | ITMLine.ShipDataArea | nvarchar(20) | **Yes** | No |
-| Declared quantity | ITMLine.ShipDeclaredQty | nvarchar(4) | No | No |
-| Folio | ITMLine.ShipFolioId | numeric(32, 6) | No | No |
-| Voyage | ITMLine.ShipId | nvarchar(20) | **Yes** | No |
-| Item number | ITMLine.ShipItemId | nvarchar(20) | No | No |
-| Measurement | ITMLine.ShipMeasurement | nvarchar(20) | No | No |
-| Measurement unit | ITMLine.ShipMeasurementUnit | numeric(32, 6) | No | No |
-| Number of cartons | ITMLine.ShipNoOfCartons | int | No | No |
-| Position | ITMLine.ShipPosition | numeric(32, 6) | No | No |
-| Quantity | ITMLine.ShipQty | int | No | No |
-| Transfer line number | ITMLine.TransferLineNumber | numeric(32, 6) | **Yes** | No |
-| Transfer order number | ITMLine.TransRefId | numeric(32, 6) | **Yes** | No |
-| Unit | ITMLine.UnitId | int | No | No |
-| Volume | ITMLine.Volume | nvarchar(10) | No | No |
-| Weight | ITMLine.Weight | numeric(32, 6) | No | No |
+| Currency | ITMLine.CurrencyCode | Nvarchar(3) | No | No |
+| Net amount | ITMLine.LineAmountMST | Numeric(32, 6) | No | No |
+| Shipping container | ITMLine.ShipContainerId | Int | No | No |
+| Company | ITMLine.ShipDataArea | Nvarchar(20) | **Yes** | No |
+| Declared quantity | ITMLine.ShipDeclaredQty | Nvarchar(4) | No | No |
+| Folio | ITMLine.ShipFolioId | Numeric(32, 6) | No | No |
+| Voyage | ITMLine.ShipId | Nvarchar(20) | **Yes** | No |
+| Item number | ITMLine.ShipItemId | Nvarchar(20) | No | No |
+| Measurement | ITMLine.ShipMeasurement | Nvarchar(20) | No | No |
+| Measurement unit | ITMLine.ShipMeasurementUnit | Numeric(32, 6) | No | No |
+| Number of cartons | ITMLine.ShipNoOfCartons | Int | No | No |
+| Position | ITMLine.ShipPosition | Numeric(32, 6) | No | No |
+| Quantity | ITMLine.ShipQty | Int | No | No |
+| Transfer line number | ITMLine.TransferLineNumber | Numeric(32, 6) | **Yes** | No |
+| Transfer order number | ITMLine.TransRefId | Numeric(32, 6) | **Yes** | No |
+| Unit | ITMLine.UnitId | Int | No | No |
+| Volume | ITMLine.Volume | Nvarchar(10) | No | No |
+| Weight | ITMLine.Weight | Numeric(32, 6) | No | No |
 
 ### Reference table
 
@@ -258,7 +258,7 @@ The values for the reference table (`RefTableId`) and the transaction type (`Tra
 
 ### Validation
 
-A voyage line directly references a voyage, shipping container, and folio record. If the purchase line entity (`ITMPurchaseLinesEntity`) or transfer line entity (`ITMPurchaseLinesEntity`) is used independently of the entities used to create these reference records, the **Voyage ID** (`ShipId`), **Shipping container** (`ShipContainerId`) and **Folio** (`ShipFolioId`) must match an existing record within their respective tables, else the import will fail.
+A voyage line directly references a voyage, shipping container, and folio record. If the purchase line entity (`ITMPurchaseLinesEntity`) or transfer line entity (`ITMPurchaseLinesEntity`) is used independently of the entities used to create these reference records, the **Voyage ID** (`ShipId`), **Shipping container** (`ShipContainerId`), and **Folio** (`ShipFolioId`) must match an existing record within their respective tables, else the import will fail.
 
 If either line entity is used as part of the same import session, these other entities must precede the creation of a voyage line so that the values can be successfully validated. If a placeholder value is used for the voyage or folio number, the same placeholder must be used for the voyage or folio number in the voyage line entity to create the association.
 
