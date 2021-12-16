@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-The voyage creation data entities group together the data entities that are necessary for the creation of a working voyage. You, or your freight forwarder, can use these data entities to create voyage, shipping container, folio and voyage line records that reference existing purchaser order or transfer order lines.
+The voyage creation data entities group together the data entities that are necessary for the creation of a working voyage. You, or your freight forwarder, can use these data entities to create voyage, shipping container, folio, and voyage line records that reference existing purchaser order or transfer order lines.
 
 ## Voyages (ITMTableEntity)
 
@@ -75,7 +75,7 @@ Within the import session, the placeholder value imported as the voyage ID is re
 
 ### Automatic cost transactions
 
-Automatic costs can be added to a voyage using the **Auto costs** page (**Landed cost \> Costing setup \> Auto costs**) in Supply Chain Management. These records can also be created through the use of cost transaction data entities for each of the cost areas supported by Landed cost.
+Automatic costs can be added to a voyage using the **Auto costs** page (**Landed cost \> Costing setup \> Auto costs**) in Supply Chain Management. These records can also be created by using cost transaction data entities for each of the cost areas supported by Landed cost.
 
 Automatic costs configured within Supply Chain Management are applied to the voyage on the creation of a voyage line. No costs will be visible against the record until this header record is associated with line information.
 
@@ -202,7 +202,7 @@ The description of goods field on the folio table (`ITMFolioTable`) is validated
 
 ## Voyage lines for purchase orders (ITMPurchaseLineEntity)
 
-The voyage line represents a single purchase order line which has been included within the Voyage, this relationship is established through the **purchase order number** and **purchase line number** fields. The voyage line references each of the previous records created for voyage, shipping container and folio. This functionality is supported by the entity `ITMPurchaseLineEntity`. The following table lists the fields and mappings that make up this entity.
+The voyage line represents a single purchase order line included in the voyage. This relationship is established through the **purchase order number** and **purchase line number** fields. The voyage line references each of the previous records created for voyage, shipping container and folio. This functionality is supported by the entity `ITMPurchaseLineEntity`. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -227,7 +227,7 @@ The voyage line represents a single purchase order line which has been included 
 
 ## Voyage lines for transfer orders (ITMTransferLineEntity)
 
-The voyage line represents a single transfer order line which has been included within the Voyage, this relationship is established through the **Transfer order number** and **Transfer line number** fields. The voyage line references each of the previous records created for voyage, shipping container and folio. This functionality is supported by the entity `ITMTransferLineEntity`. The following table lists the fields and mappings that make up this entity.
+The voyage line represents a single transfer order line included within the Voyage. This relationship is established through the **Transfer order number** and **Transfer line number** fields. The voyage line references each of the previous records created for voyage, shipping container, and folio. This functionality is supported by the entity `ITMTransferLineEntity`. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -258,11 +258,11 @@ The values for the reference table (`RefTableId`) and the transaction type (`Tra
 
 ### Validation
 
-A voyage line directly references a voyage, shipping container and folio record. If the purchase line entity (`ITMPurchaseLinesEntity`) or transfer line entity (`ITMPurchaseLinesEntity`) is used independently of the entities used to create these reference records, the **Voyage ID** (`ShipId`), **Shipping container** (`ShipContainerId`) and **Folio** (`ShipFolioId`) must match an existing record within their respective tables, else the import will fail.
+A voyage line directly references a voyage, shipping container, and folio record. If the purchase line entity (`ITMPurchaseLinesEntity`) or transfer line entity (`ITMPurchaseLinesEntity`) is used independently of the entities used to create these reference records, the **Voyage ID** (`ShipId`), **Shipping container** (`ShipContainerId`) and **Folio** (`ShipFolioId`) must match an existing record within their respective tables, else the import will fail.
 
 If either line entity is used as part of the same import session, these other entities must precede the creation of a voyage line so that the values can be successfully validated. If a placeholder value is used for the voyage or folio number, the same placeholder must be used for the voyage or folio number in the voyage line entity to create the association.
 
-Where the purchase or transfer order line is already assigned to an existing voyage line, the new voyage line will not be created. To assign this order line to a new voyage it must first be removed from its current voyage.
+Where the purchase or transfer order line is already assigned to an existing voyage line, the new voyage line will not be created. To assign this order line to a new voyage, it must first be removed from its current voyage.
 
 ### Order line identification
 

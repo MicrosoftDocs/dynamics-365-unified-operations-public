@@ -43,7 +43,7 @@ You can use this entity to create additional activity records, or a freight forw
 
 ## Tracking control
 
-The tracking control center allows for the update of a specified **Source field**, triggered by an update to a nominated **Target field**. Where both the source and target field values are updated through the use of the container activity entity, it is the entity value that will be displayed within the target field. This relates to the tracking control records with a **Create type** of *Lead time*.
+The tracking control center allows for the update of a specified **Source field**, triggered by an update to a nominated **Target field**. Where both the source and target field values are updated by using the container activity entity, it is the entity value that will be displayed within the target field. This relates to the tracking control records with a **Create type** of *Lead time*.
 
 For cost areas that have a **Create type** of *status update* or *blank* (which is a user-defined value), the system will update the voyage status or target field according to the tracking control configuration.
 

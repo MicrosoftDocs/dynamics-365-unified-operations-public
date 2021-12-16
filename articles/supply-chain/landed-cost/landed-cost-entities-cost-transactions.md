@@ -62,7 +62,7 @@ The voyage cost entity (`ITMCostTransVoyageEntity`) creates voyage cost transact
 
 The shipping container cost entity (`ITMCostTransShippingContainerEntity`) creates shipping container costs that are applied at the shipping container level. During the import process, the system uses the *category* and *apportionment method* values included in the entity to determine how the *value* of the cost is apportioned across the contents of the shipping container.
 
-The fields **Aggregate**, **Leg** and **Linked leg** are specific to records where the **Cost area** is *shipping container* and so are not present in data entities for other cost areas.
+The fields **Aggregate**, **Leg**, and **Linked leg** are specific to records where the **Cost area** is *shipping container* and so are not present in data entities for other cost areas.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|

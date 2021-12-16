@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-The Landed cost module allows for cost type codes to be configured for internal or externally derived costs. Where a cost is external to a business an invoice is expected to be received from the service provider. This invoice is processed as an invoice journal where it can be associated to a Voyage and the value of the invoice distributed across one or more of the costs on the voyage.
+The Landed cost module allows for cost type codes to be configured for internal or externally derived costs. Where a cost is external to a business, an invoice is expected from the service provider. This invoice is processed as an invoice journal where it can be associated to a Voyage and the value of the invoice distributed across one or more of the costs on the voyage.
 
 The vendor invoice entities provide the ability to allocate the value of a journal line across one or more costs on a Voyage that share the same cost type code.
 
@@ -106,7 +106,7 @@ The values for the reference table (`RefTableId`) and the transaction type (`Tra
 
 ## Vendor invoice journal lines (VendorInvoiceJournalLineEntity)
 
-For a journal line value to be allocated to one or more costs in the Landed cost module, the journal line must be associated to a cost area. To support his, the Landed cost module adds a few new fields to the journal lines table (`LedgerJournalTrans`).
+For a journal line value to be allocated to one or more costs in the Landed cost module, the journal line must be associated to a cost area. To support this, the Landed cost module adds a few new fields to the journal lines table (`LedgerJournalTrans`).
 
 ### Fields added to the vendor invoice journal line entity
 
