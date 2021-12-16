@@ -40,6 +40,7 @@ These topics describe dual-write integration.
     + [System requirements and prerequisites](requirements-and-prerequisites.md)
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
     + [Enable table map for dual-write](enable-entity-map.md)
+    + [Separated Dual-write Application Orchestration package](separated-solutions.md)
 
 ## Managing dual-write after setup
 
