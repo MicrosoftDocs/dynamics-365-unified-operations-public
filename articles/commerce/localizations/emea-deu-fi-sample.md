@@ -32,19 +32,20 @@ The following scenarios are covered by the fiscal registration service integrati
 
 - **Registration of cash-and-carry sales and returns in the fiscal registration service:**
 
-Registration of sales operations includes the following steps:
+    Registration of sales operations includes the following steps:
 
-  1. Registration of the transaction start
+    1. Registration of the transaction start
 
-The start of each transaction is registered in a technical security element (TSE) that is connected to the EFR service. As a result of    registration a TSE assigns a transaction ID (TID).
+        The start of each transaction is registered in a technical security element (TSE) that is connected to the EFR service. As a result of registration, a TSE assigns a transaction ID (TID).
 
-  2. Registration of the transaction end
+    2. Registration of the transaction end
 
-When a transaction is concluded at the POS, it's registered by using the same TID that was assigned during registration of the transaction start. At that moment, detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
+        When a transaction is concluded at the POS, it's registered by using the same TID that was assigned during registration of the transaction start. At that moment, detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
 
-  3. Capturing a response from the fiscal registration service
+    3. Capturing a response from the fiscal registration service
 
-Security data is received from a TSE as a part of a response and is saved in the transaction in the channel database. The security data consist of the following information:
+        Security data is received from a TSE as a part of a response and is saved in the transaction in the channel database. The security data consist of the following information:
+
         - TID
         - Date and time of the transaction start
         - Date and time of the transaction end
@@ -116,7 +117,7 @@ All transactions must be signed by a TSE to ensure their integrity, authenticity
 > [!WARNING]
 > Only a certified TSE can be used. For information about the types and models of TSEs that are supported in the EFR solution, see the "EFR Guide \[DE\]" document that is published on the [EFSTA documentation](https://public.efsta.net/efr/) website. For information about how to choose and obtain a TSE, contact [EFSTA](https://www.efsta.eu/at/kontakt).
 
-Regulations in Germany require support for the DSFinV-K export. The DSFinV-K export can be triggered in the EFR solution. For more information about the DSFinV-K export, see the "EFR Guide \[DE\]" document that is published on the [EFSTA documentation](https://public.efsta.net/efr/) web-site.
+Regulations in Germany require support for the DSFinV-K export. The DSFinV-K export can be triggered in the EFR solution. For more information about the DSFinV-K export, see the "EFR Guide \[DE\]" document that is published on the [EFSTA documentation](https://public.efsta.net/efr/) website.
 
 ### Limitations of the sample
 
@@ -195,7 +196,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 | INFOMESSAGE\_DE                 | Receipt | 900011          |
 
 > [!NOTE]
-> It is important to specify correct custom field names, as listed in the above table. An incorrect custom field name will result in missing data in receipts.
+> It's important that you specify correct custom field names, as listed in the preceding table. An incorrect custom field name will cause missing data in receipts.
 
 ### Configure receipt formats
 
@@ -235,8 +236,9 @@ In the Receipt format designer, add the following custom fields to the appropria
         - **Signature counter** field
         - **Check value** field
         - **QR Code** field, which is used to print the reference to the registered cash transaction in the form of a QR code
+
         > [!NOTE]
-        > The QR code value is retrieved from the fiscal register response. EFR returns a QR code in its response only if the **Attributes** field in the EFR configuration has a value described in the EFSTA documentation. The QR code format in the **Attributes** field in the EFR configuration must be set to **BMP**.
+        > The **QR Code** value is retrieved from the fiscal register response. EFR returns a QR code in its response only if the value of the **Attributes** field in the EFR configuration is described in the EFSTA documentation. The QR code format in the **Attributes** field in the EFR configuration must be set to **BMP**.
 
     - **Info message** field, so that notification messages from the fiscal registration service can be shown on receipts. For example, if a signature device is broken, special text can be printed on a receipt.
 
@@ -247,29 +249,30 @@ For more information about how to work with receipt formats, see [Set up and des
 The fiscal registration service integration sample for Germany is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md) for more details.
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md).
 >
-> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
-Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
+Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
-1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
+1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Also, make a note of the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
 1. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-> [!WARNING]
-> The error handling capabilities of the fiscal integration framework might be not fully aligned with the local fiscal regulations.
->
-> - We recommend that you leave the **Continue on error** option on the **Fiscal registration process** page turned off, because all transactions must be correctly registered, even if the first attempt at fiscal registration wasn't successful.
-> - Before you turn on the **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should discuss these changes to the fiscal registration process with your tax consultant or the local tax office.
+    > [!WARNING]
+    > The error handling capabilities of the fiscal integration framework might be not fully aligned with local fiscal regulations.
+    >
+    > - We recommend that you leave the **Continue on error** option on the **Fiscal registration process** page turned off, because all transactions must be correctly registered, even if the first attempt at fiscal registration wasn't successful.
+    > - Before you turn on the **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should discuss these changes to the fiscal registration process with your tax consultant or the local tax office.
 
 1. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-1. [Configure channel components](#configure-channel-components)
+1. [Configure channel components](#configure-channel-components).
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Commerce headquarters. For more information, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Download configuration files for the fiscal document provider and the fiscal connector:
+
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
     1. Select a correct release branch version according to your SDK/application version (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
     1. Open **src \> FiscalIntegration \> Efr**.
@@ -278,70 +281,70 @@ To enable the registration process, follow these steps to set up headquarters. F
 
     > [!WARNING]
     > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
-    > - The fiscal document provider configuration file: **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleGermany.xml**.
-    > - The fiscal connector configuration file: **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
+    >
+    > - **Fiscal document provider configuration file:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration\\DocumentProviderFiscalEFRSampleGermany.xml
+    > - **Fiscal connector configuration file:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml
     > 
-    > Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+    > Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile. Select the document provider and the connector that you loaded earlier. Update the [data mapping settings](#default-data-mapping) as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the fiscal connector that you loaded earlier. Update the [connector settings](#fiscal-connector-settings) as required.
-6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group, for the connector functional profile that you created earlier.
-7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, a fiscal registration process step, and select the fiscal connector group that you created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
-9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
-10. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process and a fiscal registration process step, and select the fiscal connector group that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+1. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 #### Default data mapping
 
-The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample.
+The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
-- **Tender type mapping** – The mapping of payment methods to values of the **PayG** (payment group) attribute in requests that are sent to the fiscal service. The default mapping is as following:
+- **Tender type mapping** – The mapping of payment methods to values of the **PayG** (payment group) attribute in requests that are sent to the fiscal service. Here is the default mapping:
 
     ```
     1: 0; 2: 1; 3: 3; 4: 8; 5: 2; 6: 0; 7: 7; 8: 6; 9: 0; 10: 8; 11: 1
     ```
 
-    The first component in each pair stands for a payment method that is set up for the store, and the second component stands for the corresponding payment group supported by the EFR fiscal registration service. For more information about payment groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
+    The first component in each pair represents a payment method that is set up for the store. The second component represents the corresponding payment group that is supported by the EFR fiscal registration service. For more information about payment groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
 
-    The sample mapping of payment methods corresponds to store payment methods configured in the standard demo data:
+    The sample mapping of payment methods corresponds to store payment methods that are configured in the standard demo data.
 
-    | Payment method | Payment method name  |
-    |----------------|----------------------|
-    | 1              | Cash                 |
-    | 2              | Check                |
-    | 3              | Card                 |
-    | 4              | Customer account     |
-    | 5              | Other                |
-    | 6              | Currency             |
-    | 7              | Voucher              |
-    | 8              | Gift card            |
-    | 9              | Tender Remove/Float  |
-    | 10             | Loyalty Cards        |
-    | 11             | Non-local checks     |
+    | Payment method | Payment method name |
+    |----------------|---------------------|
+    | 1              | Cash                |
+    | 2              | Check               |
+    | 3              | Card                |
+    | 4              | Customer account    |
+    | 5              | Other               |
+    | 6              | Currency            |
+    | 7              | Voucher             |
+    | 8              | Gift card           |
+    | 9              | Tender Remove/Float |
+    | 10             | Loyalty Cards       |
+    | 11             | Non-local checks    |
 
-    Thus, you need to modify the sample mapping according to the payment methods configured in your application.
+    Therefore, you must modify the sample mapping according to the payment methods that are configured in your application.
 
-- **Include customer data** – If this parameter is turned on, requests to the fiscal service will contain customer information such as names and addresses in cases where a customer is added to a transaction.
-
-- **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that are set up for the sales tax codes to values of the **TaxG** (tax group) attribute in requests that are sent to the fiscal service. The default mapping is as following:
+- **Include customer data** – If this parameter is turned on, requests to the fiscal service will contain customer information, such as names and addresses, in cases where a customer is added to a transaction.
+- **Value-added tax (VAT) rates mapping** – The mapping of tax percentage values that are set up for the sales tax codes to values of the **TaxG** (tax group) attribute in requests that are sent to the fiscal service. Here is the default mapping:
 
     ```
     A: 19.00; B: 7.00; C: 10.70; D: 5.50; E: 0.00
     ```
 
-    The first component in each pair stands for a VAT tax group supported by the EFR fiscal registration service, and the second component stands for the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
+    The first component in each pair represents a VAT tax group that is supported by the EFR fiscal registration service. The second component represents the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Germany, see the [EFR reference](https://public.efsta.net/efr/).
 
-- **Tax group for gift cards and deposits** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that involve gift cards or deposits. The default mapping is as following:
+- **Tax group for gift cards and deposits** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that involve gift cards or deposits. Here is the default mapping:
 
     ```
     G
     ```
-    
-- **Tax group for VAT exempt** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that are exempt from tax obligations. The default mapping is as following:
-    
+
+- **Tax group for VAT exempt** – The value of the **TaxG** attribute in requests that are sent to the fiscal service, based on operations that are exempt from tax obligations. Here is the default mapping:
+
     ```
     F
     ```
@@ -355,52 +358,61 @@ The following settings are included in the fiscal connector configuration that i
 
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds, that the fiscal connector will wait for a response from the fiscal registration service.
-- **Show fiscal registration notifications** - This flag controls whether notifications returned by the fiscal registration service should be displayed to the operator.
+- **Show fiscal registration notifications** – This flag controls whether notifications that the fiscal registration service returns should be shown to the operator.
 
 ### Configure channel components
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. See [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md) for more details.
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md).
 >
-> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 #### Set up the development environment
 
 To set up a development environment to test and extend the sample, follow these steps.
 
-1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more information, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Open the EFR solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln**, and build it.
 1. Install Commerce runtime extensions:
-    - Find the CRT extension installer:
+
+    1. Find the CRT extension installer:
+
         - **Commerce Scale Unit:** In the **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EFR.Installer** installer.
         - **Local CRT on Modern POS:** In the **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EFR.Installer** installer.
-    - Start the CRT extension installer from command line as follows:
+
+    1. Start the CRT extension installer from the command line:
+
         - **Commerce Scale Unit:**
-        ```Console
-        ScaleUnit.EFR.Installer.exe install --verbosity 0
-        ```
+
+            ```Console
+            ScaleUnit.EFR.Installer.exe install --verbosity 0
+            ```
+
         - **Local CRT on Modern POS:**
-        ```Console
-        ModernPOS.EFR.Installer.exe install --verbosity 0
-        ```
+
+            ```Console
+            ModernPOS.EFR.Installer.exe install --verbosity 0
+            ```
 
 1. Install Hardware station extensions:
+
     - In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
-    - Start the extension installer from command line as follows:
-    ```Console
-    HardwareStation.EFR.Installer.exe install --verbosity 0
-    ```
+    - Start the extension installer from the command line:
+
+        ```Console
+        HardwareStation.EFR.Installer.exe install --verbosity 0
+        ```
 
 #### Production environment
 
-Follow the steps described in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The template YAML file **EFR build-pipeline.yml** can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
+Follow the steps in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The **EFR build-pipeline.yml** template YAML file can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
 
 ## Design of extensions
 
-The fiscal registration service integration sample for Germany is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+The fiscal registration service integration sample for Germany is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md) for more details. Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md). Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 ### CRT extension design
 
@@ -417,7 +429,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleGermany.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
+The configuration file for the fiscal document provider is located at **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleGermany.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal document provider to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 ### Hardware station extension design
 
@@ -437,6 +449,6 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
