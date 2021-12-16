@@ -370,6 +370,20 @@ You can fix the issue in either of the following ways:
 
         ![Reviewing the generated document in the Excel desktop application.](./media/er-fillable-excel-example2-4.png)
 
+## Limitations
+
+### Known EPPlus library limitations
+
+#### External data sources
+
+When you run an ER format to generate an outbound document in Excel format by using a template containing a PivotTable based on a PoverPivot model that refers to an [external data source](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b), the error *`The cachesource is not a worksheet.`* is thrown when the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled. To resolve this issue, the following options are available:
+
+- Use other than EPPlus option disabling the mentioned above feature. 
+- Re-design the using Excel solution (preferrable): 
+    - Isolate the containing pivots part in a separated Excel workbook A. 
+    - Use ER to generate from Finance an Excel workbook B with the required details. 
+    - Refer to the workbook B in the workbook A as soon as the workbook B is generated.
+
 ## Additional resources
 
 [Electronic Reporting overview](general-electronic-reporting.md)
