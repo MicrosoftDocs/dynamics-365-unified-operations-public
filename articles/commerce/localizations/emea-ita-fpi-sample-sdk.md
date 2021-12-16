@@ -59,7 +59,7 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 1. Find the **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample** project, and build it.
 2. In the **Extensions.EpsonFP90IIIFiscalDeviceSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll** assembly file.
-3. Copy the file to a deployed Hardware station machine:
+3. Copy the assembly file to a deployed Hardware station machine:
 
     - **Remote Hardware station:** Copy the file to the **bin** folder under the IIS Hardware station site location.
     - **Local Hardware station:** Copy the file to the Modern POS client broker location.
@@ -69,7 +69,7 @@ The Hardware station extension components are included in the Retail SDK. To com
     - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
     - **Local Hardware station:** The file is located under the Modern POS client broker location.
 
-5. Add the following section to the **composition** section of the config file.
+5. Add the following section to the **composition** section of the configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
