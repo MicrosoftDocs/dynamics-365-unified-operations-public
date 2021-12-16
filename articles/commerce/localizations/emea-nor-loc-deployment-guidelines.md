@@ -26,8 +26,7 @@ This sample consists of extensions for the Commerce runtime (CRT), Retail Server
 
 > [!NOTE]
 > In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
-
-> [!NOTE]
+>
 > Some steps in the procedures in this topic differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
 
 ### Using certificate profiles in Commerce channels
