@@ -28,13 +28,13 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Accounts for automatic transactions
 
-The **Accounts for automatic transactions** page is used for defining the default main account to be used for each posting type in the system. While most posting types can be configured in a module or feature specific page, some posting types can only be configured on the Accounts for automatic transactions page.
+The **Accounts for automatic transactions** page is used to define the default main account to be used for each posting type in the system. While most posting types can be configured in a module- or feature-specific page, some posting types can only be configured on the **Accounts for automatic transactions** page.
 
 For example, you can configure the main account to be used for the Customer balance **Posting type** in **Summary** field on the **Customer posting profile** page and use a different main account for each customer profile. This allows you to have more granular control of the postings. On the other hand, the **Error account** can only be specified on the **Accounts for automatic transactions** page.
 
 In a new legal entity, when you open **General ledger &gt; Setup &gt; Accounts for automatic transactions**, the list will be empty. You can add the most common posting types that should be configured on the page by clicking the **Create default types** button. Then for each row, you can select the main account in the **Main account** field to be used in the grid.
 
-If the **Main account** field is left blank for a posting type and you haven't configured a main account in a module specific or feature specific page, an error will be received when you post a transaction that uses the posting type. The message will typically read "The account for \[Posting type\] cannot be found."
+If the **Main account** field is left blank for a posting type and you haven't configured a main account in a module-specific or feature-specific page, an error will be received when you post a transaction that uses the posting type. The message will typically read "The account for \[Posting type\] cannot be found."
 
 ## Default posting types
 
