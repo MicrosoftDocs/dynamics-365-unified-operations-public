@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.23
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.23 (January 2022)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.23. 
 author: kamaybac
 ms.date: 10/15/2021
@@ -13,15 +13,15 @@ ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.23
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.23 (January 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.23. This version has a build number of 10.0.1037 and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.23. This version has a build number of 10.0.1037 and is available as follows:
 
 - **Preview of release:** October 2021
 - **General availability of release (self-update):** December 2021
+- **General availability of release (auto-update):** January 2022
 
 ## Features included in this release
 
@@ -49,6 +49,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Inventory and warehouse management | \[Russia\] Post storno financial inventory transactions according to the correction flag in the financial voucher for sales orders | This feature impacts the credit note corrections functionality for Russia. It enables posting of inventory transactions for sales invoices in accordance with the correction option in the general ledger. When this feature is enabled, there are no more discrepancies between **Correction** flag on financial voucher of inventory transaction and **Storno** flag on inventory transactions. |
 | Inventory and warehouse management | (Russia) Run Inventory balance turnover report calculation in batch | For Russian localizations of Supply Chain Management, this feature provides the possibility to run the *Inventory balance turnover* report in batch, to store it, and to view the reports generated earlier. |
 | Inventory and warehouse management | (Russia) Use translations to local language in country or region-specific primary forms in Inventory management | For Russian localizations of Supply Chain Management, this feature enables the use of Russian translations for product/item names and units of measure in the following Russian-specific inventory printouts: Counting list (INV-3), Counting list (INV-5), and Counting list (INV-6). |
+| Master planning | Azure Machine Learning Service for demand forecasting | This feature enables the Azure Machine Learning Service to generate demand forecasts based on historical data. For more information, see [Demand forecasting setup](../master-planning/demand-forecasting-setup.md). |
 | Procurement and sourcing | Clean up purchase-order update history | This feature lets you clean up temporary historical records related to purchase-order updates. It adds a new button called **Clean up purchase update history** to the Action Pane on the **All purchase orders** page. This feature is enabled by default. |
 | Production control | (Preview) Auto-picking of warehouse enabled materials for auto-posted picking lists | This feature lets you auto-pick and resolve inventory dimensions for auto-posted, derived, and backflushed picking list journals. |
 | Production control | Validate expiration of raw materials against planned consumption date | This feature changes how batch expiration dates are validated when reserving a batch of raw material to be used during production. When this feature is enabled, the batch expiration date is validated against the planned consumption date (the raw material date), as established on the production BOM line or batch order formula line. When this feature is disabled, the batch expiration date is validated against the planned delivery date of the production or batch order (as previously). |

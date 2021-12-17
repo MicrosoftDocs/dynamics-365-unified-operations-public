@@ -4,7 +4,7 @@
 title: Add or copy leases (Preview)
 description: This topic describes how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
 author: moaamer
-ms.date: 11/15/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,6 +41,8 @@ Follow these steps to create a lease in Asset leasing.
 1. On the **Lease summary** page, on the Action Pane, select **New**.
 2. Enter the lease information. Fields that are required have red borders.
 
+> The starting date for the lease payment can't be earlier than the lease start date. If you enter a starting date for the lease payment that's earlier than the starting date for the lease, you'll recieve an error message.
+  
 ## Create a lease schedule
 
 After you've finished entering information for the lease, follow these steps to create a lease schedule.

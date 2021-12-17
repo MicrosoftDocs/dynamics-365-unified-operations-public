@@ -91,7 +91,7 @@ To include a forecast in a master plan and select the method that is used to red
 
 - None
 - Percent – reduction key
-- Transactions – reduction key (not yet supported with Planning Optimization)
+- Transactions – reduction key
 - Transactions – dynamic period
 
 The following sections provide more information about each option.

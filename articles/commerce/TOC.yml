@@ -74,10 +74,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Commerce Data Exchange implementation guidance
           href: dev-itpro/implementation-considerations-cdx.md
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
       - name: Get support
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support
@@ -96,12 +92,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
-          - name: Commerce 10.0.23
+          - name: Commerce 10.0.24 (February 2022)
+            href: get-started/whats-new-commerce-10-0-24.md 
+          - name: Commerce 10.0.23 (January 2022)
             href: get-started/whats-new-commerce-10-0-23.md          
           - name: Commerce 10.0.22 (November 2021)
             href: get-started/whats-new-commerce-10-0-22.md
-          - name: Commerce 10.0.21 (October 2021)
-            href: get-started/whats-new-commerce-10-0-21.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -548,6 +544,8 @@
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
+          - name: Multiple available payment methods for in-store pickup
+            href: dev-itpro/multiple-payments-pickup.md
           - name: Omni-channel Commerce order payments
             href: dev-itpro/commerce-payments.md
           - name: Archive credit card transaction data
@@ -818,6 +816,10 @@
       items:
       - name: Customer management in stores
         href: customer-mgmt-stores.md
+      - name: Asynchronous customer creation mode
+        href: async-customer-mode.md
+      - name: Convert asynchronous customers to synchronous customers
+        href: convert-async-to-sync.md
       - name: Clienteling
         items:
         - name: Clienteling overview
@@ -838,7 +840,7 @@
       items:
       - name: Statements overview
         href: retail-statements.md
-      - name: Transaction consistency checker 
+      - name: Validate store transactions for statement calculation 
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
         href: disable-consistency-check-rule.md
@@ -1274,6 +1276,8 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
+      - name: Commerce analytics (Preview)
+        href: commerce-analytics.md
     - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
@@ -1332,6 +1336,8 @@
           href: localizations/latam-bra-nfce-contingency-mode.md          
         - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
           href: localizations/latam-bra-retail-statements.md
+        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil 
+          href: localizations/latam-bra-cf-e-sat.md       
         - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil 
           href: localizations/latam-bra-adyen.md          
       - name: Eastern Europe
@@ -1380,8 +1386,10 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Support for upgrade and N-1 for India
           href: localizations/apac-ind-n-1-for-india.md
-        - name: Generate QR codes and print them on receipts
+        - name: Generate QR codes and print them on receipts for India
           href: localizations/ind-generate-qr-code-print-receipt.md
+        - name: Goods and Services Tax (GST) integration for e-commerce sites
+          href: localizations/apac-ind-e-commerce.md
       - name: Italy
         items:
         - name: Fiscal printer integration sample for Italy
@@ -1412,6 +1420,10 @@
           href: localizations/rus-fpi-sample.md
         - name: Customer information management for Russia
           href: localizations/rus-customer-information.md 
+      - name: Saudi Arabia
+        items:
+        - name: Generate QR codes and print them on receipts for Saudi Arabia
+          href: localizations/emea-sau-qr-code.md
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -1614,6 +1626,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
             - name: Today
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
+            - name: WeekNum
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
           - name: List 
             items: 
             - name: List functions
@@ -2450,6 +2464,8 @@
             href: e-commerce-extensibility/set-up-key-vault.md
           - name: Create a request pipeline plug-in hook
             href: e-commerce-extensibility/request-pipeline-hook.md
+          - name: Image component
+            href: e-commerce-extensibility/image-component.md
         - name: Develop data actions
           items:
           - name: Data actions overview
@@ -2536,6 +2552,8 @@
             href: e-commerce-extensibility/sdk-faq.md
           - name: Debugging best practices for Dynamics 365 Commerce development
             href: e-commerce-extensibility/debugging-best-practices.md
+          - name: Test e-commerce site pages for memory leaks
+            href: e-commerce-extensibility/memory-leak-detection.md
       - name: Retail SDK
         items:
         - name: Migrate to the Commerce SDK

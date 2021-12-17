@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The following keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps .
 
@@ -156,6 +155,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
+| Move the current column to the next/previous position (with focus in the header row)                                   | Ctrl+Shift+Right arrow / Ctrl+Shift+Left arrow |
 | Open grid filtering for the current column (with focus in the header row)                                              | Enter                           |
 | Resize the current column to fit the contents (with focus in the header row)                                           | A  (or double click on the column sizing handle) |
 

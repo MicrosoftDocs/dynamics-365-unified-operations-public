@@ -57,7 +57,7 @@ This section complements the [Country-specific configuration of application setu
 7. Add specific conditions for each method of payment that is defined in the system, and save your changes.
 
     > [!NOTE]
-    > In the **Name** column, you can select the **Blank** or **Not blank** placeholder value instead of a specific method of payment.
+    > In the **Name** column, you can select the **&#42;Blank&#42;** or **&#42;Not blank&#42;** placeholder value instead of a specific method of payment.
 
 8. On the **Setups** tab, select **Edit** for the selected configuration. 
 9. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.

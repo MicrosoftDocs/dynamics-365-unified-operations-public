@@ -4,7 +4,7 @@
 title: Tax jurisdiction parameters for cash discount calculation setup
 description: This topic provides information about the setup of cash discount calculation options.
 author: epodkolz
-ms.date: 10/13/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: AX 10.0.23
 # Tax jurisdiction parameters for cash discount calculation setup
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides information about the setup of cash discount calculation options.
 
@@ -82,3 +80,5 @@ The following table shows the results of the cash discount and sales tax calcula
 
 > [!IMPORTANT]
 > In the 10.0.23 monthly update, the functionality is supported only for sales order operations and only for sales orders that contain one sales tax code per sales order line.
+> 
+> In the 10.0.24 monthly update, the functionality is supported for sales order, purchase order, vendor invoice, and free text invoice operations.

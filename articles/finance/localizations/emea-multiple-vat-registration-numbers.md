@@ -45,7 +45,7 @@ The sales tax settlement procedure uses the country/region code of the registrat
 ## Enable the feature
 
 1. In the **Feature management** workspace, turn on the **Support multiple VAT registration numbers** feature.
-2. Go to **Tax** \> **Setup** \> **Tax service parameters**, and turn on the **Enable tax service** option.
+2. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**, and turn on the **Enable tax calculation service** option.
 
 ## Set up a VAT ID for a legal entity, customers, and vendors
 

@@ -145,7 +145,7 @@ When you've finished setting up all the properties and configuring other setting
 
 As was mentioned in the [Set the order properties](#set-order-properties) section, if you want your delivered cXML to include text from notes that are attached to the relevant purchase order and/or vendor records, you can set the **POCOMMENTS** and/or **VENDCOMMENTS** property to _TRUE_ in the external catalog setup. This section provides more detail about how the system selects and processes these attachments, if you use them.
 
-To set the types of notes that the system will look for, go to **Procurement and sourcing \> Setup \> Forms \> From setup**. Then, on the **Purchase order** tab, set the **Include documents of type** field to the type of note that you want to be able to include. Only text notes will be included, not document attachments.
+To set the types of notes that the system will look for, go to **Procurement and sourcing \> Setup \> Forms \> Form setup**. Then, on the **Purchase order** tab, set the **Include documents of type** field to the type of note that you want to be able to include. Only text notes will be included, not document attachments.
 
 ![Form setup page.](media/cxml-form-setup.png "Form setup page")
 

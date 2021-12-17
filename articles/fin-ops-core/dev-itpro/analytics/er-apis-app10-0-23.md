@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.23.
 
 ## <a name="er-api-extend-file-source"></a>API to extend the list of ER sources of inbound documents

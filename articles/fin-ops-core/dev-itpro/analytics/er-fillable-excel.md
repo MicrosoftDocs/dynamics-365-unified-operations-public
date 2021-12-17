@@ -4,7 +4,7 @@
 title: Design a configuration for generating documents in Excel format
 description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-You can design an [Electronic reporting (ER)](general-electronic-reporting.md) format configuration that has an ER [format component](general-electronic-reporting.md#FormatComponentOutbound) that you can configure to generate an outbound document in a Microsoft Excel workbook format. Specific ER format components must be used for this purpose.
+You can design an [Electronic reporting (ER)](general-electronic-reporting.md) format configuration that has an ER format component that you can configure to generate an outbound document in a Microsoft Excel workbook format. Specific ER format components must be used for this purpose.
 
 To learn more about this feature, follow the steps in the topic, [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md).
 
@@ -335,6 +335,40 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 6. Generate a printable FTI document, and review the footer of the generated document.
 
     ![Reviewing the footer of a generated document in Excel format.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2"></a>Example 2: Fixing the merged cells EPPlus issue
+
+You can run an ER format to generate an outbound document in an Excel workbook format. When the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled in the **Feature management** workspace, the [EPPlus library](https://www.nuget.org/packages/epplus/4.5.2.1) is used to make Excel output. However, because of known [Excel behavior](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) and a limitation of the EPPlus library, you might encounter the following exception: "Can't delete/overwrite merged cells. A range is partly merged with the another merged range." To learn what kind of Excel templates might cause this exception and how you can fix the issue, complete the following example.
+
+1. In the Excel desktop application, create a new Excel workbook.
+2. On worksheet **Sheet1**, add the **ReportTitle** name for cell **A2**.
+3. Merge cells **A1** and **A2**.
+
+    ![Reviewing the results of merging cells A1 and A2 in the designed Excel workbook in the Excel desktop application.](./media/er-fillable-excel-example2-1.png)
+
+3. On the **Configurations** page, [add a new ER format](er-fillable-excel.md#add-a-new-er-format) to generate an outbound document in an Excel workbook format.
+4. On the **Format designer** page, [import](er-fillable-excel.md#template-import) the designed Excel workbook into the added ER format as a new template for outbound documents.
+5. On the **Mapping** tab, configure the binding for the **ReportTitle** component of the [Cell](er-fillable-excel.md#cell-component) type.
+6. Run the configured ER format. Notice that the following exception is thrown: "Can't delete/overwrite merged cells. A range is partly merged with the another merged range."
+
+    ![Reviewing the results of running the configured ER format on the Format designer page.](./media/er-fillable-excel-example2-2.png)
+
+You can fix the issue in either of the following ways:
+
+- **Easier but not recommended:** In the **Feature management** workspace, turn off the **Enable usage of EPPlus library in Electronic reporting framework** feature. Although this approach is easier, you might experience other issues if you use it, because some ER functionality is supported only when the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled.
+- **Recommended:** Follow these steps:
+
+    1. In the Excel desktop application, modify the Excel workbook in one of the following ways:
+
+        - On worksheet **Sheet1**, unmerge cells **A1** and **A2**.
+        - Change the reference for the **ReportTitle** name from **=Sheet1!$A$2** to **=Sheet1!$A$1**.
+
+        ![Reviewing the results of changing the reference in the designed Excel workbook in the Excel desktop application.](./media/er-fillable-excel-example2-3.png)
+
+    2. On the **Format designer** page, [import](er-fillable-excel.md#template-import) the modified Excel workbook into the editable ER format to update the existing template.
+    3. Run the modified ER format.
+
+        ![Reviewing the generated document in the Excel desktop application.](./media/er-fillable-excel-example2-4.png)
 
 ## Additional resources
 
