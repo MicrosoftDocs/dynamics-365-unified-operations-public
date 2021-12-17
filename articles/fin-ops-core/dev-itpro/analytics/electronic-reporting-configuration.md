@@ -33,43 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 As part of the requirements for LCS solutions for localization and translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This article provides background information that will help you start to use Electronic reporting to create configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
 
-## Electronic reporting
-
-General electronic reporting (GER) is a new configurable tool that helps you create and maintain regulatory electronic reporting and payments, based on the following three concepts.
-
-### Configuration instead of coding
-
-- Configuration can be done by a business user and doesn't require a developer.
-- The data model is defined in business terms.
-- Visual editors are used to author all components of the GER configuration.
-- A Microsoft Excel–like formula language is used for data transformation.
-
-### One configuration for multiple Dynamics 365 Finance releases
-
-- Manage one domain specific data model that is defined in business terms.
-- Isolate application release specifics in release-dependent data model mappings.
-- Maintain one format configuration for multiple releases of the current version, based on the data model.
-
-### Easy or automatic upgrade
-
-- Versioning of GER configurations is supported.
-- The Microsoft Dynamics Lifecycle Services (LCS) Assets library can be used as a repository for GER configurations for version exchange.
-- Localizations that are based on origin GER configurations can be introduced as child versions.
-- A GER configuration tree is provided as a tool that helps control dependencies for versions.
-- Only differences in localization (delta configuration) are recorded to enable automatic upgrade to a new version of the origin GER configuration.
-- It's easy to manually resolve conflicts that are discovered during automatic upgrade of localization versions.
-
-GER lets users define electronic format structures, and then describe how those structures should be filled by using data and algorithms. Users can use a formula language that is very similar to the Excel language for data transformation. To make the database-to-format mapping more manageable, reusable, and independent of format changes, an intermediate data model concept is introduced. This concept enables implementation details to be hidden from the format mapping and also enables a single data model to be reused for multiple format mappings.
-
-## What's new here
-
-| What can you do? | Microsoft Dynamics AX 2012 | Current version of Finance  | Why is this important? |
-|------------------|----------------------------|-------------------------------------------|------------------------|
-| Configure and generate electronic documents to meet the legal requirements in various countries/regions. | Electronic documents are hard-coded in X++ or as Extensible Stylesheet Language Transformations (XSLTs). | GER is a new tool for configuring and generating electronic documents that target a business user instead of a developer. | GER simplifies the creation, maintenance, and upgrade of electronic document formats to meet legal requirements in various countries/regions. |
-| Configure regulatory updates to formats. | Any format adjustments require development effort. | A business user can configure the formats, based on domain-specific data models (for example, for payments, Intrastat reports, or tax reports). | GER makes the process of creating or changing electronic document formats faster and easier. These changes can be made by business users instead of developers. |
-| Separation of data and formats makes updates easier. | Access to data and access to formatting aren't isolated. | GER lets you set up data models that are domain-specific and independent of the database as data sources for document formats. Formats can be configured based on these domain-specific data models by using simple visual tools that are similar to Excel. Data models and formats support versioning, and formats can be date-effective. | GER makes it faster and easier for partners and customers to upgrade their format and customizations to new versions of formats that are released by Microsoft or other partners. |
-| Distribute data models and formats. | An adjusted format deployment requires a new hotfix package that overrides the existing format. | Each data model or format version is stored in a separate configuration, and is distributed to partners and customers through LCS. By using LCS, partners can share their data model and format configurations with other partners and customers, who can customize and share them further. | GER provides one common way (through LCS) for Microsoft and partners to distribute electronic document configurations to other partners and customers. GER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements. |
-| Customization and upgrade are easier. | Custom modification of each format must be manually ported to the source code of a new hotfix package. | Partners and customers can customize Microsoft data models and formats, or create their own. GER saves partner and customer configuration changes as deltas to Microsoft configurations to simplify upgrades to new versions of Microsoft configurations. Delta customization and easy upgrade are supported through the whole customization chain. | GER provides one common way (through LCS) for Microsoft and partners to distribute electronic document configurations to other partners and customers. GER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements. |
 
 ## Basic concepts
 ### Main data flow
