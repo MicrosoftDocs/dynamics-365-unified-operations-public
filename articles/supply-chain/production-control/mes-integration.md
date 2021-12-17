@@ -37,6 +37,8 @@ Before you can use this feature, it must be turned on in your system. Admins can
 - **Module:** *Production control*
 - **Feature name:** *Manufacturing execution system integration*
 
+Note the configuration key **Time and attendance** must be previously enabled, as it controls the use of the manufacturing execution systems functionality and data.
+
 ## Processes available for MES integration
 
 You can enable any or all of the following processes for integration.
