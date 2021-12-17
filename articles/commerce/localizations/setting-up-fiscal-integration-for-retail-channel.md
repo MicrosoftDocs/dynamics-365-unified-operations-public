@@ -97,15 +97,18 @@ You can change the data mapping parameters in a connector functional profile. To
 2. On the **Connector technical profiles** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**), create a connector technical profile for each fiscal connector.
     1. Select a connector name.
     2. Select a connector type. 
-        1.  For devices that are connected to a Hardware station or POS registers, select **Local**.
-        1.  For External services, connected to a Hardware station or POS registers, select **External**.
-        1.  For Internal signing service, select **Internal**. 
+        1. For devices that are connected to a Hardware station or POS registers, select **Local**.
+        1. For External services, connected to a Hardware station or POS registers, select **External**.
+        1. For Internal signing service, select **Internal**. 
+    3. Select a connector location.
+        1. Hardware station if connector locates on the Hardware station
+        1. Register if connector locates on the POS register
 
 
 
 3. Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed. To restore the default parameters that are defined in the fiscal connector configuration, select **Update**. While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used. This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles. To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.
 
-4. If you need to setap unique connection parameters for specific POS register or Store:
+4. If you need to setup unique connection parameters for specific POS register or Store:
     1. Click on Override menu item.
     1. In the override form, create new record.
     1. In the new record select specified store, or POS register. You can override parameters of selected technical profile for specified POS register or store.
