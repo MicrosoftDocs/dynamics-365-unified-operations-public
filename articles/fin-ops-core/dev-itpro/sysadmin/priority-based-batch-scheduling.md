@@ -4,7 +4,7 @@
 title: Priority-based batch scheduling
 description: This topic provides information about the functionality for priority-based batch scheduling.
 author: peakerbl
-ms.date: 12/16/2021
+ms.date: 12/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -141,6 +141,6 @@ The batch job is also run when the feature is turned on, to migrate any batch jo
 
 We recommend that you review the automatic batch group assignment after the feature is turned on and the migration is completed. To facilitate this review, the **Batch group** field for tasks is read-only. To support backward compatibility, the value of this field will be propagated from the job when new batch tasks are added.
 
-As best practice we recommend not to assign high or critical priority to all batch jobs.
+As a best practice we recommend not assigning a high or critical priority to all batch jobs.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
