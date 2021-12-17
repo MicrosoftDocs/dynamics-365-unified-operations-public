@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customer portal for Dynamics 365 Supply Chain Management overview (Video)
+title: Customer portal for Dynamics 365 Supply Chain Management overview (contains video)
 description: This topic introduces the Customer portal, and explains who should use it and how it works.
 author: Henrikan
 ms.date: 06/16/2020

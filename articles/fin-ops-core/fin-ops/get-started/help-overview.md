@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Help system (Video)
+title: Help system (contains video)
 description: This topic provides an overview of the Help system for Finance and Operations apps.
 author: edupont04
 ms.date: 07/20/2021

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Master planning setup wizard  (Video)
+title: Master planning setup wizard  (contains video)
 description: This topic describes how to run the master planning setup wizard to set up master planning.
 author: ChristianRytt
 ms.date: 10/21/2019
