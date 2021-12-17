@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: Payment terms report (PL-00053)
-description:This topic explains how to set up, create, and generate the Payment terms report required for Polish legal entities
-
+title: Payment terms in commercial transactions report (PL-00053)
+description: Configuration and generation of payment terms report
 author: sndray
-ms.date: 12/17/2021
+ms.date: 12/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Poland
