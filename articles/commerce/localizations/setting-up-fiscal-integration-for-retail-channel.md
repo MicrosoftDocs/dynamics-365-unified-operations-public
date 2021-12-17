@@ -42,41 +42,41 @@ The process of setting up the fiscal integration includes the following tasks:
 
 Before you use the fiscal integration functionality, you should configure the following settings.
 
-1. Update Commerce parameters.
+### Update Commerce parameters.
 
-    1. On the **Commerce shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**. On the **Number sequences** tab, define the number sequences for the following references:
+1. On the **Commerce shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**. On the **Number sequences** tab, define the number sequences for the following references:
 
-        - Fiscal technical profile number
-        - Fiscal connector group number
-        - Registration process number
+    - Fiscal technical profile number
+    - Fiscal connector group number
+    - Registration process number
 
-    1. On the **Commerce parameters** page, define the number sequence for the fiscal functional profile number.
+1. On the **Commerce parameters** page, define the number sequence for the fiscal functional profile number.
 
     > [!NOTE]
     > Number sequences are optional. Numbers for all fiscal integration entities can be generated either from number sequences or manually.
 
-1. Upload configurations of fiscal connectors and fiscal document providers.
+### Upload configurations of fiscal connectors and fiscal document providers.
 
-    A fiscal document provider is responsible for generating fiscal documents that represent transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service. For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.
+A fiscal document provider is responsible for generating fiscal documents that represent transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service. For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.
 
-    A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+A fiscal connector is responsible for the communication with a fiscal device or service. For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer. For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-    1. On the **Fiscal connectors** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.
+1. On the **Fiscal connectors** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.
 
-        > [!TIP]
-        > By selecting **View**, you can view all functional and technical profiles that are related to the current fiscal connector.
+> [!TIP]
+> By selecting **View**, you can view all functional and technical profiles that are related to the current fiscal connector.
 
-    1. On the **Fiscal document providers** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**), upload an XML configuration for each device or service that you plan to use.
+1. On the **Fiscal document providers** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**), upload an XML configuration for each device or service that you plan to use.
 
-        > [!TIP]
-        > By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.
+> [!TIP]
+> By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.
 
-    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Commerce SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-commerce-sdk).
+For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Commerce SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-commerce-sdk).
 
-    > [!NOTE]
-    > Data mapping is considered part of a fiscal document provider. To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.
+> [!NOTE]
+> Data mapping is considered part of a fiscal document provider. To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.
 
-1. Create connector functional profiles and connector technical profiles.
+### Create connector functional profiles and connector technical profiles.
 
     1. On the **Connector functional profiles** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**), create a connector functional profile for each combination of a fiscal connector and a fiscal document provider that is related to this fiscal connector.
 
@@ -106,7 +106,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 
         Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed. To restore the default parameters that are defined in the fiscal connector configuration, select **Update**. While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used. This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles. To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.
 
-1. Create fiscal connector groups.
+### Create fiscal connector groups.
 
     A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process. For example, if several fiscal printer models can be used in a store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.
 
@@ -114,7 +114,7 @@ Before you use the fiscal integration functionality, you should configure the fo
     1. Add functional profiles to the connector group. On the **Functional profiles** tab, select **Add**, and select a profile number. Each fiscal connector in a connector group can have only one functional profile.
     1. To suspend use of the functional profile, set the **Disable** option to **Yes**. This change affects only the current connector group. You can continue to use the same functional profile in other connector groups.
 
-1. Create a fiscal registration process.
+### Create a fiscal registration process.
 
     A fiscal registration process is defined by the sequence of registration steps and the connector group that is used for each step.
 
@@ -125,7 +125,7 @@ Before you use the fiscal integration functionality, you should configure the fo
         1. Select a fiscal connector type.
         1. In the **Group number** field, select an appropriate fiscal connector group.
 
-1. Assign entities of the fiscal registration process to POS profiles.
+### Assign entities of the fiscal registration process to POS profiles.
 
     1. On the **POS functionality profiles** page (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**), assign the fiscal registration process to a POS functionality profile. Select **Edit**, and then, on the **Fiscal registration process** tab, in the **Process number** field, select a process.
     1. On the **POS hardware profile** page (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**), assign connector technical profiles to a hardware profile. Select **Edit**, add a line on the **Fiscal peripherals** tab, and then, in the **Profile number** field, select a connector technical profile.
