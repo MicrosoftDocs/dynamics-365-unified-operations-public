@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounts receivable posting
-description: This topic describes how postings ae configured in accounts receivable and provides example posting configurations. 
+description: This topic describes how postings ae configured in accounts receivable and provides examples of posting configurations. 
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -37,7 +37,7 @@ For more information see [Customer posting profiles](../accounts-receivable/cust
 
 In addition to the customer posting profile, there are a number of additional posting configurations available in Accounts receivable. The following sections provide more information about the additional posting configurations.
 
-## Methods of payment posting accounts
+## Posting accounts for methods of payment
 
 Methods of payment are used to define how a payment will be posted to the general ledger and to control the behavior of the payment output. One method of payment is typically created for each type of payment that your organization accepts. For example, cash, check, credit card, money order, wire, and so on.
 
@@ -63,13 +63,13 @@ Bridging posting is a two-step process that's used with the posting of payments.
 
 For more information, see [Set up and process bridged payments](../accounts-receivable/setup-and-process-bridged-payments.md).
 
-## Customer cash discounts posting accounts
+## Posting accounts for customer cash discounts
 
 If your organization chooses to offer cash discounts to customers for quick payment, you will need to configure cash discount codes and determine how the discounts should be posted to the general ledger. There are a number of options available for specifying the main account to be used for posting a customer cash discount.
 
 For more information see [Cash discounts](../cash-bank-management/cash-discounts.md).
 
-## Payment fee posting accounts
+## Posting accounts for payment fees
 
 Payment fees allow you to automatically add a fee to a customer payment when a set of conditions apply. Payment fees can be charged back to the customer or they can be posted as an expense to your bank account.
 
@@ -83,7 +83,7 @@ If the **Charge** field is set to **Customer** when you configure a customer pay
 
 For more information see [Establish customer payment fees](../accounts-receivable/tasks/establish-customer-payment-fees.md).
 
-## Charges code posting accounts
+## Posting accounts for charges codes
 
 If you must track sales amounts in addition to line items, you can use charges codes. For example, you might charge freight and handling fees to your customer, or expense certain freight and handling fees internally. You can specify whether these amounts are posted to expense accounts, or whether they are added to the cost of the items.
 
@@ -95,13 +95,13 @@ You can create charges codes for Accounts receivable and Accounts payable. When 
 | Order, freight | 403500               | Revenue – Freight         | Revenue      | Credit         | No               | Freight charged to customer example: Debit Customer/Vendor and Credit Ledger account |
 | Rebate*         | 403200               | Discount                  | Revenue      | Debit          | No               | Customer rebate example: Debit Ledger account and Credit Customer/Vendor             |
 
-*For the Rebate example shown in the precedimg table, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality is available in Supply Chain Management, which provides more control, as well as automation of rebates. For more information, see [Customer rebates](../../supply-chain/sales-marketing/tasks/process-customer-rebates.md)
+*For the Rebate example shown in the preceding table, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality is available in Supply Chain Management, which provides more control, as well as automation of rebates. For more information, see [Customer rebates](../../supply-chain/sales-marketing/tasks/process-customer-rebates.md)
 
 The table above shows three common examples of posting types that can be used for charges codes. The list should be used as a guideline and samples and is not a comprehensive list of all possible combinations or posting types that can be used.
 
 For more information, see [Create charges code.](../accounts-receivable/create-charges-codes.md)
 
-## Commission posting accounts
+## Posting accounts for commissions
 
 You can optionally configure the system to calculate commissions for a sales representative or group of sales representatives on a given sales order. When you enable this functionality, you will need to configure the posting account to be used for calculating the commission. This is done in the **Commission posting** page in **Sales and marketing**.
 
