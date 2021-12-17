@@ -47,17 +47,16 @@ Before to generate the report for the first time, you need to download the follo
 
 ## Scenarios covered
 
-The following scenarios are covered in the generation of these reports
-
-- Customer and vendor transactions: Filtered by Posting group and/or vendor/customer group
+The following scenarios are covered in the generation of these reports:
+- Customer and vendor transactions: Filtered by Posting group and/or vendor/customer group.
 	- Payments
 	- Open transactions
 - Payment days are calculated based on 
 	- Payment/settlement date - document date/invoice date
 	- Per installment (payment schedule)
-- Amounts in accounting currency
-- Exchange adjustment (revaluation) included as part of payment amount
-- Credit note fully settled are not included in this report
+- Amounts in accounting currency.
+- Exchange adjustment (revaluation) included as part of payment amount.
+- Credit note fully settled are not included in this report.
 - Project invoices
 - Correction note
 - Compensation between vendor and customer accounts
@@ -73,6 +72,21 @@ Before you generate the Payment terms report, run the **Statistics on invoices**
 5. Optional: Select the vendor/customer group. The Vendor/customer group field lets you introduce an additional transaction filter. To select all available vendors/customers, leave the field blank.
 6. Select **OK** to run the process.
 
+
+# Generate Payment terms report
+
+1. Go to **Accounts payable > Periodic tasks > Statistics on invoices** or **Accounts receivable > Periodic tasks > Statistics on invoices**.
+2. Click **Payment terms report** button.
+3. Select the related ER format. 
+4. In the details field, you can select the type for report. You can also select multiple options.
+	- AP Details
+	- AR Details
+	- Resume
+5. Select the **Report language**. The current report is translated in *en-us* and *pl*.
+6. Select the **From** and **To date**.
+7. Select the **Customer** or **vendor group** to filter specific transactions.
+8. Select the **Customer** or **Vendor profile** to filter specific transactions.
+9. Click **OK** to generate the selected reports.
 
 
 
