@@ -95,8 +95,8 @@ You can create charges codes for Accounts receivable and Accounts payable. When 
 | Order, freight | 600120               | Freight In                | Revenue      | Debit          | No               | Freight paid to vendor example: Debit Ledger account and Credit Customer/Vendor |
 | Rebate*        | 503160               | Vendor Rebate (Contra COGS)| Expense     | Credit         | No               | Vendor rebate example: Debit Customer/Vendor and Credit Ledger account   |
 
-*For the Rebate example, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality is available in Supply Chain Management to provide more control and automation of rebates. For more information, see to [Vendor rebates](../../scm/supply-chain/procurement/vendor-rebates.md)
+*For the Rebate example, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality is available in Supply Chain Management to provide more control and automation of rebates. For more information, see to [Vendor rebates](../../supply-chain//procurement/vendor-rebates.md)
 
 The preceding table shows three common examples of posting types that can be used for charges codes. The list should be used as a guideline and a selection of samples. It isn't a comprehensive list of all possible combinations or posting types that can be used. 
 
-For more information, see to [Create charges code.](../accounts-receivable/create-charges-codes.md)
+For more information, see to [Create charges code](../accounts-receivable/create-charges-codes.md).
