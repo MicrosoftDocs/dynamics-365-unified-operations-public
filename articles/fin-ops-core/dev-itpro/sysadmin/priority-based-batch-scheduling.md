@@ -43,13 +43,18 @@ A scheduling priority is defined for batch groups, but it can be overridden for 
 
 Platform update 32 includes upgrade support for existing batch jobs. For more information, see the <a name="#automatic">Automatic batch group migration for batch jobs</a> section later in this topic.
 
-Advantages of Priority based batch scheduling
+Advantages of priority-based batch scheduling inlude:
 
-![Steps to enable Priority based scheduling.](./media/pbsadvantage.png)
+- Priorities are introduced up to the batch job level.
+- It serves as a prerequisite for near-zero downtime servicing.
+- It doesn't tie a batch job to a particular server.
 
 The following procedures explain how to work with batch groups, jobs, and tasks, when the **Priority based batch scheduling** feature is turned on.
 
-![Steps to enable Priority based scheduling.](./media/EnablePBS.png)
+1. **Identify** - Identify the priorities of the existing batch jobs.
+2. **Enable** - Enable priority-based scheduling in Feature management. All existing batch jobs in will be given the **Normal** priority.
+3. **Update** - Selectively update the priorities for jobs which are not **Normal** priority (such as **Reserved capacity**, **Critical**, **High**, **Low**).
+4. **Apply** - Apply **Reserved capacity** if there is a need to dedicate capacity for some jobs beyond the priority.
 
 ## Batch groups
 
