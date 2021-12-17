@@ -232,7 +232,7 @@
         href: data-entities/dm-error-descriptions.md  
     - name: Azure Data Lake
       items: 
-      - name: Export to Azue Data Lake overview
+      - name: Export to Azure Data Lake overview
         href: data-entities/Azure-Data-Lake-GA-version-overview.md
       - name: Install Export to Azure Data Lake add-in
         href: data-entities/configure-export-data-lake.md
