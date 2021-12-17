@@ -149,7 +149,7 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-5. Complete all the required setup tasks that are described in [Set up Commerce for the Czech Republic](emea-cze-fi-sample.md#set-up-commerce-for-czech-republic).
+5. Complete all the required setup tasks that are described in [Set up Commerce for the Czech Republic](emea-cze-fi-sample.md#set-up-commerce-for-the-czech-republic).
 
 ## Design of extensions
 
