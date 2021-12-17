@@ -78,33 +78,38 @@ For examples of configurations of fiscal connectors and fiscal document provider
 
 ### Create connector functional profiles and connector technical profiles.
 
-    1. On the **Connector functional profiles** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**), create a connector functional profile for each combination of a fiscal connector and a fiscal document provider that is related to this fiscal connector.
+1. On the **Connector functional profiles** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**), create a connector functional profile for each combination of a fiscal connector and a fiscal document provider that is related to this fiscal connector.
+    1. Select a connector name.
+    1. Select a document provider.
 
-        1. Select a connector name.
-        1. Select a document provider.
+You can change the data mapping parameters in a connector functional profile. To restore the default parameters that are defined in the fiscal document provider configuration, select **Update**.
 
-        You can change the data mapping parameters in a connector functional profile. To restore the default parameters that are defined in the fiscal document provider configuration, select **Update**.
+**Examples**
+| Parameter  | Format | Example |
+|---|--------|---------|
+| **VAT rates settings** | value : VATrate | 1 : 2000, 2 : 1800 |
+| **VAT codes mapping** | VATcode : value | vat20 : 1, vat18 : 2 |
+| **Tender types mapping** | TenderType : value | Cash : 1, Card : 2 |
 
-        **Examples**
+> [!NOTE]
+> Connector functional profiles are company-specific. If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, you should create a connector functional profile for each company.
 
-        | Parameter  | Format | Example |
-        |---|--------|---------|
-        | **VAT rates settings** | value : VATrate | 1 : 2000, 2 : 1800 |
-        | **VAT codes mapping** | VATcode : value | vat20 : 1, vat18 : 2 |
-        | **Tender types mapping** | TenderType : value | Cash : 1, Card : 2 |
+2. On the **Connector technical profiles** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**), create a connector technical profile for each fiscal connector.
+    1. Select a connector name.
+    2. Select a connector type. 
+        1.  For devices that are connected to a Hardware station or POS registers, select **Local**.
+        1.  For External services, connected to a Hardware station or POS registers, select **External**.
+        1.  For Internal signing service, select **Internal**. 
 
-        > [!NOTE]
-        > Connector functional profiles are company-specific. If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, you should create a connector functional profile for each company.
 
-    1. On the **Connector technical profiles** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**), create a connector technical profile for each fiscal connector.
 
-        1. Select a connector name.
-        1. Select a connector type. For devices that are connected to a Hardware station, select **Local**.
+3. Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed. To restore the default parameters that are defined in the fiscal connector configuration, select **Update**. While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used. This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles. To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.
 
-            > [!NOTE]
-            > Only local connectors are currently supported.
-
-        Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed. To restore the default parameters that are defined in the fiscal connector configuration, select **Update**. While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used. This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles. To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.
+4. If you need to setap unique connection parameters for specific POS register or Store:
+    1. Click on Override menu item.
+    1. In the override form, create new record.
+    1. In the new record select specified store, or POS register. You can override parameters of selected technical profile for specified POS register or store.
+    1. In the Device tab you can input special parameters for selected POS register or store.  
 
 ### Create fiscal connector groups.
 
