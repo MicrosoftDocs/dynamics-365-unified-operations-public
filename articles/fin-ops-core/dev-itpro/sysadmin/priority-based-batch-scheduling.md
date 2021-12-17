@@ -43,7 +43,7 @@ A scheduling priority is defined for batch groups, but it can be overridden for 
 
 Platform update 32 includes upgrade support for existing batch jobs. For more information, see the <a name="#automatic">Automatic batch group migration for batch jobs</a> section later in this topic.
 
-Advantages of priority-based batch scheduling inlude:
+Advantages of priority-based batch scheduling include:
 
 - Priorities are introduced up to the batch job level.
 - It serves as a prerequisite for near-zero downtime servicing.
