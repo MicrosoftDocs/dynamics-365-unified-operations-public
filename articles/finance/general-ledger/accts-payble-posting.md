@@ -3,7 +3,7 @@
 
 title: Accounts payable postings
 description: This topic describes how postings ae configured in accounts payable and provides example posting configurations. 
-author: raprofit
+author: rachel-profitt
 ms.date: 12/06/2021
 ms.topic: article
 ms.prod: 
@@ -33,15 +33,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The primary posting profile for the **Accounts payable** module is the **Vendor posting profile**. This posting profile is used to determine which summary account, which is a main account, should be used when posting vendor balances to the general ledger. The summary account is also referred to as the Accounts payable trade account.
 
-For more information refer to [Vendor posting profiles](../accounts-payable/vendor-posting-profiles.md).
+For more information see [Vendor posting profiles](../accounts-payable/vendor-posting-profiles.md).
 
-In addition to the vendor posting profile, there are a variety of additional posting configurations available in the **Accounts payable** module. The following sections provide more information about the additional posting configurations.
+In addition to the vendor posting profile, there are a number of additional posting configurations available in the **Accounts payable** module. The following sections provide more information about the additional posting configurations.
 
 ## Methods of payment posting accounts
 
 Methods of payment are used to define how a payment will be posted to the general ledger and to control the behavior of the payment output. One method of payment is typically created for each type of payment that your organization makes. For example, cash, check, credit card, money order, wire, and so on.
 
-The **Posting** group on the **General** FastTab controls how the payment will be posted to the general ledger. You must first select the **Account type**, which controls the behavior of the **Payment account** field. The recommended approach is to select Bank in the **Account type** field, and then select the **Bank account** in the **Payment account** field. The benefit to this option is that the system will post the payment into the Bank sub ledger which supports reconciliation and other cash related processes. The following table shows an example of how the posting profile would be configured if you're using **Cash and bank management**.
+The **Posting** group on the **General** FastTab controls how the payment will be posted to the general ledger. You must first select the **Account type**, which controls the behavior of the **Payment account** field. The recommended approach is to select Bank in the **Account type** field, and then select the **Bank account** in the **Payment account** field. The benefit to this option is that the system will post the payment into the Bank sub ledger which supports reconciliation and other cash-related processes. The following table shows an example of how the posting profile would be configured if you're using **Cash and bank management**.
 
 | Posting type | Account type | Payment account name example | Account type                       | Debit/ Credit? | Clearing account | Description                                                                        |
 | :--------------: | :--------------: | :---------------------------: | :------------------------------------: | :----------------: | :------------------: | :---------------: |
@@ -67,7 +67,7 @@ For more information, see to [Set up and process bridged payments page.] (../acc
 
 If your organization receives cash discounts from vendors for quick payment, you will need to configure cash discount codes and determine how the discounts should be posted to the general ledger. There are a number of options available for specifying the main account to be used for posting a customer cash discount.
 
-For more information refer to [Cash discounts](../cash-bank-management/cash-discounts.md).
+For more information see [Cash discounts](../cash-bank-management/cash-discounts.md).
 
 ## Payment fee posting accounts
 
@@ -81,7 +81,7 @@ When you configure a vendor payment fee, if the **Charge** field is set to **Ven
 | :----------------: | :----------------------: | :---------------------------: | :--------------: | :----------------: | :------------------: | :------------------------: |
 | Ledger journal | 618190               | Bank Fee Expense          | Expense      | Debit          | No               | Select this in the **Main account** field on the **Payment fee** when **Ledger** is selected in the **Charge** field. |
 
-For more information refer to [Define vendor payment fees](../accounts-payable/tasks/define-vendor-payment-fees.md).
+For more information see [Define vendor payment fees](../accounts-payable/tasks/define-vendor-payment-fees.md).
 
 ## Charges code posting accounts
 
