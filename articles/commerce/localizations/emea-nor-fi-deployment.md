@@ -21,9 +21,9 @@ ms.search.validFrom: 2019-3-1
 This topic provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in point of sale (POS), digitally signing sales transactions, and printing reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md). For more information about how to configure Commerce for Norway, see [Set up Commerce for Norway](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this localization functionality. You must use the the legacy digital signing sample for Norway in the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). See [Deployment guidelines for cash registers for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md) for more details.
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this localization functionality. You must use the version of the digital signing sample for Norway in the previous version of the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for cash registers for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md).
 >
-> Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> Support for the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 ## Set up fiscal registration for Norway
 
@@ -31,14 +31,14 @@ The fiscal registration sample for Norway is based on the [fiscal integration fu
 
 Complete the fiscal registration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
 
-1. [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings of the fiscal registration process that are [specific to Norway](#configure-the-fiscal-registration-process).
+1. [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to make a note of the settings of the fiscal registration process that are [specific to Norway](#configure-the-fiscal-registration-process).
 1. [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-1. [Configure channel components](#configure-channel-components)
+1. [Configure channel components](#configure-channel-components).
 
 ### Configure the fiscal registration process
 
-To enable the fiscal registration process for Norway in Commerce headquarters, follow these steps.
+Follow these steps to enable the fiscal registration process for Norway in Commerce headquarters.
 
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 
@@ -54,18 +54,18 @@ To enable the fiscal registration process for Norway in Commerce headquarters, f
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type to **Internal**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**, and create a new fiscal connector group for the connector functional profile that you created earlier.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process and a fiscal registration process step, and select the fiscal connector group that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. Open the distribution schedule, and select jobs **1070** and **1090** to transfer data to the channel database.
 
 ### Configure the digital signature parameters
 
-You must configure certificates that will be used for digital signing of sales transactions in a store. The signing is done by using a digital certificate that is stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on.
+You must configure certificates that will be used for digital signing of sales transactions in a store. A digital certificate that is stored in Azure Key Vault is used to do the signing. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on.
 
-The following steps must be completed before you can use a digital certificate that is stored in Key Vault storage:
+Before you can use a digital certificate that is stored in Key Vault storage, the following steps must be completed.
 
 1. The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
-1. The certificate must be uploaded to the Key Vault storage as base64 string secret.
+1. The certificate must be uploaded to the Key Vault storage as a base64 string secret.
 1. The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
 
 For more information about how to work with Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).
@@ -78,56 +78,64 @@ Next, on the **Key Vault parameters** page, you must specify the parameters for 
 - **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
-Next, you must configure a connector for your certificates that are stored in Key Vault or local certificate storage. It is used for signing on the channel side.
+Next, you must configure a connector for your certificates that are stored in Key Vault or local certificate storage. This connector is used for signing on the channel side.
 
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
 1. On the **Settings** FastTab, specify the following parameters for digital signatures:
+
     - **Secret name** – Select the secret name that you configured earlier on the **Key Vault parameters** page.
     - **Local certificate thumbprint** – Provide a thumbprint for a certificate that is stored locally.
     - **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
-    - **Certificate store name** – This field is optional. Use this field to specify a default store name that should be used to search local certificates.
-    - **Certificate store location** – This field is optional. Use this field to specify a default store location that should be used to search local certificates.
-    - **Try local certificate first** – If this option is selected, the certificate from local store will be used by default for signing data instead of the certificate from Key Vault.
+    - **Certificate store name** – This field is optional. Use it to specify a default store name that should be used to search local certificates.
+    - **Certificate store location** – This field is optional. Use it to specify a default store location that should be used to search local certificates.
+    - **Try local certificate first** – Select this option to use the certificate from the local store by default for signing data, instead of the certificate from Key Vault.
     - **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 > [!NOTE]
 > - Only the **SHA1** cryptographic hash algorithm is currently acceptable for Norway.
-> - The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in all the folders on its list.
+> - The default store name and store location are added to simplify the process of searching local certificates in CRT. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in all the folders on its list.
 
 ### Configure channel components
 
 ### Development environment
 
-Follow these steps to set up a development environment so that you can test and extend the sample:
+Follow these steps to set up a development environment so that you can test and extend the sample.
 
-1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-2. Open the SequentialSignatureNorway solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\SequentialSignatureNorway\\SequentialSignatureNorway.sln**, and build it.
-3. Install Commerce runtime extensions:
-    - Find the CRT extension installer:
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more information, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Open the **SequentialSignatureNorway.sln** solution under **Dynamics365Commerce.Solutions\\FiscalIntegration\\SequentialSignatureNorway**, and build it.
+1. Install CRT extensions:
+
+    1. Find the CRT extension installer:
+
         - **Commerce Scale Unit:** In the **SequentialSignatureNorway\\ScaleUnit\\ScaleUnit.SequentialSignNorway.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.SequentialSignNorway.Installer** installer.
         - **Local CRT on Modern POS:** In the **SequentialSignatureNorway\\ModernPOS\\ModernPos.SequentialSignNorway.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.SequentialSignNorway.Installer** installer.
-    - Start the CRT extension installer from command line as follows:
+
+    1. Start the CRT extension installer from the command line:
+
         - **Commerce Scale Unit:**
-        ```Console
-        ScaleUnit.SequentialSignNorway.Installer.exe install --verbosity 0
-        ```
+
+            ```Console
+            ScaleUnit.SequentialSignNorway.Installer.exe install --verbosity 0
+            ```
+
         - **Local CRT on Modern POS:**
-        ```Console
-        ModernPOS.SequentialSignNorway.Installer.exe install --verbosity 0
-        ```
+
+            ```Console
+            ModernPOS.SequentialSignNorway.Installer.exe install --verbosity 0
+            ```
 
 ### Production environment
 
-Follow the steps described in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The template YAML file **SequentialSignatureNorway build-pipeline.yaml** can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
+Follow the steps in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The **SequentialSignatureNorway build-pipeline.yaml** template YAML file can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
 
 ### Enable the digital signature in offline mode for Modern POS
 
 To enable the digital signature in offline mode for Modern POS, you must follow these steps after you activate Modern POS on a new device.
 
 1. Sign in to POS.
-1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
+1. On the **Database connection status** page, make sure that the offline database is fully synced. When the value of the **Pending downloads** field is **0** (zero), the database is fully synced.
 1. Sign out of POS.
-1. Wait for the offline database to be fully synchronized.
+1. Wait for the offline database to be fully synced.
 1. Sign in to POS.
-1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
-1. Restart Modern POS.
+1. On the **Database connection status** page, make sure that the offline database is fully synced. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synced.
+1. Reopen Modern POS.
