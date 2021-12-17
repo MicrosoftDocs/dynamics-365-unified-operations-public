@@ -101,8 +101,8 @@ You can change the data mapping parameters in a connector functional profile. To
         1. For External services, connected to a Hardware station or POS registers, select **External**.
         1. For Internal signing service, select **Internal**. 
     3. Select a connector location.
-        1. **Hardware station** if connector locates on the Hardware station
-        1. **Register** if connector locates on the POS register
+        1. **Hardware station** if connector locates on the Hardware station.
+        1. **Register** if connector locates on the POS register.
 
 
 
