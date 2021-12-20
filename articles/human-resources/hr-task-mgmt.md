@@ -28,15 +28,15 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Task management
 
-Use **Task management** to create tasks that need to be completed for the onboarding, offboarding and transitions of employees. Task management utilizes the concept of a checklist to group tasks together and to assign tasks to individuals, or groups of individuals. A checklist consists of a list of onboarding, offboarding, and transition tasks. These tasks are assigned to individuals. Tasks help with the hiring, transferring, or offboarding of employees. Checklists are similar between onboarding, offboarding, and transitions. 
+Use **Task management** to create tasks that need to be completed for the onboarding, offboarding, and transitions of employees. Task management utilizes the concept of a checklist to group tasks together and to assign tasks to individuals, or groups of individuals. A checklist consists of a list of onboarding, offboarding, and transition tasks. These tasks are assigned to individuals. Tasks help with the hiring, transferring, or offboarding of employees. Checklists are similar between onboarding, offboarding, and transitions. 
 
 ## Checklist Overview
 
-The checklist functionality is very similar between onboarding, offboarding and transitions. This overview will provide an example of how checklists are used within the onboarding process.  However, the same functionality can be applied to the transition or termination process.
+The checklist functionality is similar between onboarding, offboarding, and transitions. This overview will provide an example of how checklists are used within the onboarding process.  However, the same functionality can be applied to the transition or termination process.
 
 As part of the onboarding process, Human resources professionals can create tasks that track the onboarding progress of incoming employees, and recently hired employees. The onboarding process may change based on the employee's position or geographic location. You can create multiple onboarding checklists that can be applied to each unique hiring situation. For example, tasks such as filling out tax withholding forms that must be completed for every employee who is hired in the United States. Other tasks 
-might only be applicable to a few positions, such as assigning a company car to executive-level staff. In this example, two onboarding checklists can be created: US based 
-employees and Executives only. When hiring a mid-level manager, the 'US based employees' checklist would be selected. However, when hiring an executive in the US both checklists 
+might only be applicable to a few positions, such as assigning a company car to executive-level staff. In this example, two onboarding checklists can be created: US-based 
+employees and Executives only. When hiring a mid-level manager, the 'US-based employees' checklist would be selected. However, when hiring an executive in the US both checklists 
 would be selected to ensure that all onboarding activities will be completed.
 
 ## Task Management Workspace
@@ -120,8 +120,8 @@ The options for the **Assignment type** are:
  - **Worker**
  - **Position** 
  - **Group (of positions)** 
- - the affected employee's **Manager** 
- - the **Employee** that is affected 
+ - The affected employee's **Manager** 
+ - The **Employee** that is affected 
 
 For example, an IT engineer will always be the person that prepares the laptops for a new employee. When creating this task, select **Position** for the **Assignment type**,
 and then select IT engineer from the **Position** list. When an employee is hired, and the checklist is assigned. The laptop configuration task will be assigned to the worker
