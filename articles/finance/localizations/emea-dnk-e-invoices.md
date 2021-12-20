@@ -4,7 +4,7 @@
 title: Customer electronic invoices in Denmark
 description: This topic explains how to set up and process electronic invoices in Denmark.
 author: ilkond
-ms.date: 12/14/2021
+ms.date: 12/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
