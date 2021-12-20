@@ -112,7 +112,7 @@ Follow these steps to generate the tax declaration report.
 5. Select the vendor group.
 
 > [!NOTE]
-> The DAS-2 report doesn't support transactions that are created and posted from a general journal entry and the accrual schema scenario. 
+> The DAS-2 report doesn't support transactions that are created and posted from a general journal entry, accrual schema scenario and one voucher functionality. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
