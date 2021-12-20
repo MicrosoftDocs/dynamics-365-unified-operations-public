@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Cash flow forecast
+title: Cash forecast
 description: This topic describes the Cash flow forecasting capability.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Cash flow forecast
+# Cash forecast
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,10 +46,6 @@ For most companies, managing cash flow and running cash flow forecasting is a te
 ## Details of the Cash flow forecasts capability
 The Cash flow forecasts feature includes the following functionality. 
 
-- Makes it easy to integrate cash flow data from external systems to Dynamics 365 Finance. Cash flow forecasts can also use the data import-export framework. This framework makes it easy to integrate with Excel OData. You can also combine data from multiple sources to create a comprehensive cash flow solution. 
-
-- Introduces intelligent cash position. Cash position is created  based on customer’s payment behavior to predict when a company can expect cash to arrive in their accounts. It also analyzes the historical patterns of paying vendors, to predict when future invoices and orders are likely to be paid. 
-
 - Introduces intelligent cash flow forecasting for long-term forecasting, using time series forecasting through automated integration with AI Builder.
 
 - Provides the ability to save specific cash flow position or forecasts, edit them, and then easily compare and measure the forecast performance to the actual financials.
@@ -62,9 +58,5 @@ The Cash flow forecasts feature includes the following functionality.
 
 The cash flow forecasting functionality in Dynamics 365 Finance will empower your organization to transform tedious, complex, yet repetitive cash flow projection to a simple, automated process. Automating the most tedious aspects of cash flow forecasting lets you focus on critical decision making to drive desired business outcomes.
 
-## Setting up Dimensions for Cash flow forecasting
-A new tab on the **Cash flow forecasting setup** page lets you control what financial dimensions to use for filtering in the **Cash flow forecasting** workspace. This tab will only appear when the Cash flow forecasts feature is enabled. 
-
-On the **Dimensions** tab, choose from the list of dimensions to use for filtering, and use the arrow keys to move them to the right-hand column. Only two dimensions can be selected for filtering cash flow forecast data. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
