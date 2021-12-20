@@ -4,7 +4,7 @@
 title: Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
 description: This topic provides guidelines for deploying the fiscal integration sample for the Czech Republic from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 12/07/2021
+ms.date: 12/20/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
