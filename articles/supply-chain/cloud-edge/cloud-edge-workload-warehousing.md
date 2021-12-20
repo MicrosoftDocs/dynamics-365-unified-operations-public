@@ -41,6 +41,16 @@ Warehouse management workloads enable cloud and edge scale units to run selected
 
 You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Scale units in a distributed hybrid topology](cloud-edge-landing-page.md).
 
+You must as well manually turn on a couple of features in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if it's required in the **Feature management** workspace. The features are listed in the following way:
+
+- **Module:** *Warehouse management*
+- **Feature name:** *Decouple putaway work from ASNs*
+
+and
+
+- **Module:** *Warehouse management*
+- **Feature name:** *(Preview) Scale unit support for inbound and outbound warehouse orders*
+
 ## How the warehouse execution workload works on scale units
 
 For the processes in the warehouse management workload, the data is synced between the hub and the scale units.
