@@ -4,7 +4,7 @@
 title: Task management overview
 description: This topic explains the task management functionality that is available in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 11/29/2021
+ms.date: 12/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Task management
 
-Task management helps organizations create checklists of tasks that need to be completed for the onboarding, offboarding and transitions of employees.
-A checklist consists of a list of onboarding, offboarding, and transition tasks. These tasks are assigned to individuals. Tasks help 
-with the hiring, transferring, or offboarding of employees. Checklists are similar between onboarding, offboarding, and transitions. 
+Use **Task management** to create tasks that need to be completed for the onboarding, offboarding and transitions of employees. Task management utilizes the concept of a checklist to group tasks together and to assign tasks to individuals, or groups of individuals. A checklist consists of a list of onboarding, offboarding, and transition tasks. These tasks are assigned to individuals. Tasks help with the hiring, transferring, or offboarding of employees. Checklists are similar between onboarding, offboarding, and transitions. 
 
 ## Checklist Overview
+
+The checklist functionality is very similar between onboarding, offboarding and transitions. This overview will provide an example of how checklists are used within the onboarding process.  However, the same functionality can be applied to the transition or termination process.
 
 As part of the onboarding process, Human resources professionals can create tasks that track the onboarding progress of incoming employees, and recently hired employees. The onboarding process may change based on the employee's position or geographic location. You can create multiple onboarding checklists that can be applied to each unique hiring situation. For example, tasks such as filling out tax withholding forms that must be completed for every employee who is hired in the United States. Other tasks 
 might only be applicable to a few positions, such as assigning a company car to executive-level staff. In this example, two onboarding checklists can be created: US based 
@@ -193,7 +193,7 @@ checklist that are needed to hire a new employee. For example, there are tasks t
 defined, so the following **Task groups** could be created: HR, IT, and Payroll. When creating a task, one of these **Task groups** can be associated with that task. 
 When you add a task to a checklist, the list of tasks can be filtered by the group that it's assigned to. For example, when creating a "Checklist" template, all IT tasks in the IT Group can be viewed and only the relevant IT tasks selected.
 
-### Using onboarding checklists
+## Using onboarding checklists
 
 When a worker is hired, terminated or changes positions, one or more checklists can be selected. Task due dates and worker assignments are created once the hiring, termination,
 or change position process is complete. For example, when you select the **Hire** or **Hire and add details** button, tasks are created for individuals based on the **Assignment type**. 
