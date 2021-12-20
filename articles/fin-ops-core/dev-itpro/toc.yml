@@ -1012,6 +1012,8 @@
           href: lifecycle-services/use-translation-service-ua.md
         - name: Translation memory files
           href: lifecycle-services/use-translation-service-tm.md
+        - name: Azure DevOps extension (Public Preview)
+          href: lifecycle-services/dts-devops-extension.md
     - name: Microsoft Power Platform integration
       items:
       - name: Overview
