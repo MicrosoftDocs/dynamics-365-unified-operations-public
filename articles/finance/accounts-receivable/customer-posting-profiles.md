@@ -2,9 +2,9 @@
 # required metadata
 
 title: Customer posting profiles
-description: Customer posting profiles control the posting of customer transactions to the general ledger.
-author: ShivamPandey-msft
-ms.date: 08/22/2017
+description: This topic describes customer posting profiles, which control the posting of customer transactions to the general ledger.
+author: JodiChristiansen
+ms.date: 12/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,7 +12,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: CustPosting, CustVendExternalItem
-
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -22,7 +21,7 @@ ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Customer posting profiles control the posting of customer transactions to the general ledger.
+This topic describes customer posting profiles, which control the posting of customer transactions to the general ledger.
 
 ## Customer posting profiles
 
@@ -40,9 +39,9 @@ Customer posting profiles enable you to assign general ledger accounts and docum
 
 The default posting profile is defined in the **Ledger and Sales Tax** tab on the **Accounts receivable parameters** page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed. 
 
-If your organization accepts prepayments from your customers, then you will likely want to configure a second posting profile for prepayments and link that posting profile into the parameters as the default posting profile for prepayments. For more information, refer to [Customer prepayments.](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/customer-prepayments)
+Organizations that accept prepayments from customers often configure a second posting profile for prepayments and link that posting profile into the parameters as the default posting profile for prepayments. For more information, see [Customer prepayments.](customer-prepayments.md)
 
-You can also associate posting definitions with transaction posting types in the **Transaction posting definitions** page. Posting definitions control the posting of customer transactions to the general ledger instead of posting profiles. For more information, refer to [Posting definitions.](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/posting-definitions) 
+You can also associate posting definitions with transaction posting types in the **Transaction posting definitions** page. Posting definitions control the posting of customer transactions to the general ledger instead of posting profiles. For more information, see [Posting definitions.](../general-ledger/posting-definitions.md) 
 
 ## Creating a posting profile
 Specify the ledger accounts that are used in the posting of transactions that use the selected posting profile. Select an account code and, whenever possible, an account or group number for the selected posting profile. In the posting process, the most appropriate posting profile for each transaction is located by searching for the most specific account code, account number, or group and number combination in the following priority:
@@ -53,7 +52,7 @@ Specify the ledger accounts that are used in the posting of transactions that us
 | **Group**                    | Customer group that is assigned to the customer | 2               |
 | **All**                      | Blank                                           | 3               |
 
-If you want all customer transactions to have the same posting profile, set up only one posting profile with All in the Account code field. Specify the following values to set up your posting profile:
+If you want all customer transactions to have the same posting profile, set up only one posting profile with **All** entered in the **Account code** field. Specify the following values to set up your posting profile:
 
 <table>
 <thead>
@@ -75,14 +74,14 @@ If you want all customer transactions to have the same posting profile, set up o
 <td><strong>Account code</strong></td>
 <td>Specify whether the posting profile applies to a single customer, a group of customers, or all customers:
 <ul>
-<li><strong>Table</strong> – The posting profile applies to a single customer. Select the customer account in the Account/Group number field.</li>
-<li><strong>Group</strong> – The posting profile applies to a customer group. Select the customer group in the Account/Group number field.</li>
-<li><strong>All</strong> – The posting profile applies to all customers. Leave the Account/Group number field blank.</li>
+<li><strong>Table</strong> – The posting profile applies to a single customer. Select the customer account in the <strong>Account/Group number</strong> field.</li>
+<li><strong>Group</strong> – The posting profile applies to a customer group. Select the customer group in the <strong>Account/Group number</strong> field.</li>
+<li><strong>All</strong> – The posting profile applies to all customers. Leave the <strong>Account/Group number</strong> field blank.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Account/Group number</strong></td>
-<td>If Table is selected in the Account code field, select the account number of the customer who is associated with the posting profile. If Group is selected, select the customer group. If All is selected, leave this field blank.</td>
+<td>If Table is selected in the <strong>Account code</strong> field, select the account number of the customer who is associated with the posting profile. If <strong>Group</strong> is selected, select the customer group. If <strong>All</strong> is selected, leave this field blank.</td>
 </tr>
 <tr class="odd">
 <td><strong>Summary account</strong></td>
@@ -90,7 +89,7 @@ If you want all customer transactions to have the same posting profile, set up o
 </tr>
 <tr class="even">
 <td><strong>Liquidity account for payments</strong></td>
-<td>Select the liquidity ledger account that is used for cash flow forecasts. This field will only appear if cash flow forecasts are enabled.</td>
+<td>Select the liquidity ledger account that's used for cash flow forecasts. This field will only appear if cash flow forecasts are enabled.</td>
 </tr>
 <tr class="odd">
 <td><strong>Sales tax prepayments</strong></td>
@@ -104,7 +103,7 @@ If you want all customer transactions to have the same posting profile, set up o
 </thead>
 <tbody>
 <tr class="odd">
-<td>Use the Accounts receivable parameters page to specify the posting profile to use when a payment is marked as a prepayment.</td>
+<td>Use the <strong>Accounts receivable parameters</strong> page to specify the posting profile to use when a payment is marked as a prepayment.</td>
 </tr>
 </tbody>
 </table>
@@ -130,7 +129,7 @@ The following table shows examples of the default posting types with sample main
 
 | Posting Type       | Main account example| Main account name example| Account type   | Debit/Credit | Clearing account| Description                                     |
 |--------------------|--------|--------------------------|-----------|--------|-------|--------------------------------------------------|
-| Customer balance   | 130100 | Accounts Recivable Trade | Asset     | Both   | No    | Specify the account in the Summary account field.|
+| Customer balance   | 130100 | Accounts Receivable Trade | Asset     | Both   | No    | Specify the account in the Summary account field.|
 | None               | 110110 | Bank account             | Asset     | Both   | No    | Specify the main account in the Liquidity account for payments. This account is not used for posting, only for cash flow forecasting.|
 | Sales tax prepayments| 202900  | Sales tax clearing    | Liability  | Both  | Yes   | Select the account for sales tax for payments that are received in advance.       |
 | Liabilities for discount account | 250600  | Deferred Revenue and Discounts  | Liability  | Both   | Yes  | Select the ledger account for liabilities of discount.      |     
