@@ -113,7 +113,7 @@ You can change the data mapping parameters in a connector functional profile. To
     1. Click on **Override** menu item.
     1. In the **Override** form, create new record.
     1. In the new record select specified store, or POS register. You can override parameters of selected technical profile for specified POS register or store.
-    1. In the Device tab you can input special parameters for selected POS register or store.  
+    1. In the Device tab you can input specific parameters for selected POS register or store.  
 
 ### Create fiscal connector groups.
 
