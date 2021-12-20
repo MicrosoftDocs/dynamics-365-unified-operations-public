@@ -41,7 +41,7 @@ To import the files got from a provider with extenal invoice numbers, complete t
 6. Select a file for upload and click **Upload** button 
 7. Click **OK**.
   
- > [!NOTE]. To import files you should first upload import formats. See [Import configurations](apac-chn-tax-integration.md) 
+ > [!NOTE]. To import files, you must first upload import formats. See [Import configurations](apac-chn-tax-integration.md) 
 
 
 
