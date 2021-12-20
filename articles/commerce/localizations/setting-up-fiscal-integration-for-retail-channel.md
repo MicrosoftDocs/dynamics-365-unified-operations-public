@@ -104,7 +104,7 @@ You can change the data mapping parameters in a connector functional profile. To
         1. **Hardware station** if connector locates on the Hardware station.
         1. **Register** if connector locates on the POS register.
     > [!NOTE]
-    > If you need to use POS without hardware station, after data distribution do next things. Click "Perform non-drawer operations". Click "Select Hardware Station". If button     > "Use hardware station" is off, turn it on. Switch off button "Shared hardware station". Switch off button "Use hardware station".
+    > If you need to use POS without hardware station, after data distribution do next things on the POS register. Click "Perform non-drawer operations". Click "Select Hardware Station". If button "Use hardware station" is off, turn it on. Switch off button "Shared hardware station". Switch off button "Use hardware station".
 
 
 3. Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed. To restore the default parameters that are defined in the fiscal connector configuration, select **Update**. While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used. This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles. To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.
