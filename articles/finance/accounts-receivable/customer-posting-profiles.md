@@ -36,11 +36,13 @@ Customer posting profiles control the posting of customer transactions to the ge
 
 ## Customer posting profiles
 
-Customer posting profiles enable you to assign general ledger accounts and document settings to all customers, a group of customers or a single customer. These settings will be used when you create sales orders, free text invoices, cash payments, collection letters, and interest notes. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page. 
+Customer posting profiles enable you to assign general ledger accounts and document settings to all customers, a group of customers or a single customer. These settings will be used when you create sales orders invoices, free text invoices, project invoices, payment journals, collection letters, and interest notes. 
 
-The default posting profile is defined in the Ledger and Sales Tax fasttab on the Accounts receivable parameters page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed.
+The default posting profile is defined in the **Ledger and Sales Tax** tab on the **Accounts receivable parameters** page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed. 
 
-You can also associate posting definitions with transaction posting types in the Transaction posting definitions page. Posting definitions control the posting of customer transactions to the general ledger instead of posting profiles.
+If your organization accepts prepayments from your customers, then you will likely want to configure a second posting profile for prepayments and link that posting profile into the parameters as the default posting profile for prepayments. For more information, refer to [Customer prepayments.](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/customer-prepayments)
+
+You can also associate posting definitions with transaction posting types in the **Transaction posting definitions** page. Posting definitions control the posting of customer transactions to the general ledger instead of posting profiles. For more information, refer to [Posting definitions.](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/posting-definitions) 
 
 ## Creating a posting profile
 Specify the ledger accounts that are used in the posting of transactions that use the selected posting profile. Select an account code and, whenever possible, an account or group number for the selected posting profile. In the posting process, the most appropriate posting profile for each transaction is located by searching for the most specific account code, account number, or group and number combination in the following priority:
@@ -84,10 +86,10 @@ If you want all customer transactions to have the same posting profile, set up o
 </tr>
 <tr class="odd">
 <td><strong>Summary account</strong></td>
-<td>Select the ledger account that will be used as the customer summary account for the customers who are associated with the posting profile.</td>
+<td>Select the main account that will be used as the Accounts receivable trade account for the customers associated with the posting profile. This is the account for the Customer balance posting type.</td>
 </tr>
 <tr class="even">
-<td><strong>Settle account</strong></td>
+<td><strong>Liquidity account for payments</strong></td>
 <td>Select the liquidity ledger account that is used for cash flow forecasts. This field will only appear if cash flow forecasts are enabled.</td>
 </tr>
 <tr class="odd">
@@ -123,6 +125,15 @@ If you want all customer transactions to have the same posting profile, set up o
 </tbody>
 </table>
 
+## Posting examples
+The following table shows examples of the default posting types with sample main accounts and descriptions. The Debit/Credit column indicates if the transaction typically Debit or Credits or in some cases can post either. The Clearing account column indicates of the posting type is a clearing account. This means the amount posted in this account is automatically reversed when a later transaction is posted. 
+
+| Posting Type       | Main account example| Main account name example| Account type   | Debit/Credit | Clearing account| Description                                     |
+|--------------------|--------|--------------------------|-----------|--------|-------|--------------------------------------------------|
+| Customer balance   | 130100 | Accounts Recivable Trade | Asset     | Both   | No    | Specify the account in the Summary account field.|
+| None               | 110110 | Bank account             | Asset     | Both   | No    | Specify the main account in the Liquidity account for payments. This account is not used for posting, only for cash flow forecasting.|
+| Sales tax prepayments| 202900  | Sales tax clearing    | Liability  | Both  | Yes   | Select the account for sales tax for payments that are received in advance.       |
+| Liabilities for discount account | 250600  | Deferred Revenue and Discounts  | Liability  | Both   | Yes  | Select the ledger account for liabilities of discount.      |     
 
 ### **Table restrictions**
 
