@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform Update31
 
 [!include [banner](../includes/banner.md)]
 
-In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server and allows defining priorities for batch groups. It is no longer necessary to assign batch jobs to batch servers. Instead, relative scheduling priorities based on business requirements are used to determine the order in which tasks are run across available batch servers.
+In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server and allows you to define priorities for batch groups. It is no longer necessary to assign batch jobs to batch servers. Instead, relative scheduling priorities based on business requirements are used to determine the order in which tasks are run across available batch servers.
 
 > [!IMPORTANT]
 > This feature is available in a restricted preview as part of Platform update 31.
@@ -52,8 +52,8 @@ Advantages of priority-based batch scheduling include:
 The following procedures explain how to work with batch groups, jobs, and tasks, when the **Priority based batch scheduling** feature is turned on.
 
 1. **Identify** - Identify the priorities of the existing batch jobs.
-2. **Enable** - Enable priority-based scheduling in Feature management. All existing batch jobs in will be given the **Normal** priority by fefault.
-3. **Update** - Selectively update the priorities for jobs which are not **Normal** priority (such as **Reserved capacity**, **Critical**, **High**, **Low**).
+2. **Enable** - Enable priority-based scheduling in Feature management. By default, all existing batch jobs in will be given the **Normal** priority.
+3. **Update** - Selectively update the priorities for jobs that are not **Normal** priority (such as **Reserved capacity**, **Critical**, **High**,  and **Low**).
 4. **Apply** - Apply **Reserved capacity** if there is a need to dedicate capacity for some jobs beyond the priority.
 
 ## Batch groups
@@ -146,6 +146,6 @@ The batch job is also run when the feature is turned on, to migrate any batch jo
 
 We recommend that you review the automatic batch group assignment after the feature is turned on and the migration is completed. To facilitate this review, the **Batch group** field for tasks is read-only. To support backward compatibility, the value of this field will be propagated from the job when new batch tasks are added.
 
-As a best practice we recommend not assigning a high or critical priority to all batch jobs.
+As a best practice, we recommend that you do not assign a high or critical priority to all batch jobs.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
