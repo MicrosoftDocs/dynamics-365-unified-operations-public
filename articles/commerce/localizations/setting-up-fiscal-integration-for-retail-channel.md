@@ -110,8 +110,8 @@ You can change the data mapping parameters in a connector functional profile. To
 3. Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed. To restore the default parameters that are defined in the fiscal connector configuration, select **Update**. While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used. This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles. To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.
 
 4. If you need to setup unique connection parameters for specific POS register or Store:
-    1. Click on "Override menu" item.
-    1. In the "Override form", create new record.
+    1. Click on **Override** menu item.
+    1. In the **Override** form, create new record.
     1. In the new record select specified store, or POS register. You can override parameters of selected technical profile for specified POS register or store.
     1. In the Device tab you can input special parameters for selected POS register or store.  
 
