@@ -4,7 +4,7 @@
 title: Deployment guidelines for the control unit integration sample for Sweden (legacy)
 description: This topic provides guidelines for deploying the control unit integration sample for Sweden from the Retail SDK
 author: EvgenyPopovMBS
-ms.date: 12/07/2021
+ms.date: 12/20/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
