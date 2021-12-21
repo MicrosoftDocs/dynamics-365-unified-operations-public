@@ -2614,6 +2614,8 @@
           href: localizations/apac-idn-invoicing.md
         - name: VAT declaration for Indonesia
           href: localizations/apac-idn-ppn-declaration.md
+        - name: Withholding tax report for Indonesia
+          href: localizations/apac-idn-wht-declaration.md
       - name: Italy
         items:
         - name: Italy overview
