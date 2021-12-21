@@ -42,6 +42,7 @@ After you've completed these tasks, you can calculate and analyze forecasts of t
 Cash flow forecasting can be integrated with General ledger, Accounts payable, Accounts receivable, Budgeting and inventory management. The forecasting process uses transaction information that is entered in the system, and the calculation process forecasts the expected cash impact of each transaction. The following types of transactions are considered when the cash flow is calculated:
 
 - **Sales orders** – Sales orders that aren't yet invoiced, and that result in physical or financial sales.
+- **Free text invoices** – Free text invoices that aren’t posted yet, and that result in financial sales. 
 - **Purchase orders** – Purchase orders that aren't yet invoiced, and that result in physical or financial purchases.
 - **Accounts receivable** – Open customer transactions (invoices that aren't yet paid).
 - **Accounts payable** – Open vendor transactions (invoices that aren't yet paid).
@@ -49,7 +50,9 @@ Cash flow forecasting can be integrated with General ledger, Accounts payable, A
 - **Budget register entries** – Budget register entries that are selected for cash flow forecasts.
 - **Demand forecasts** – Inventory forecast model lines that are selected for cash flow forecasts.
 - **Supply forecasts** – Inventory forecast model lines that are selected for cash flow forecasts.
+- **External data source** - External data that's entered or imported into the cash flow forecasts using spreadsheet templates.
 - **Project forecasts** - Project management and accounting forecasts using forecast model.
+- **Cash flow sales tax authority payments** – Predicted sales tax authority payment amounts and timing that result in financial payments. Enable the feature Cash flow sales tax authority payments.
 
 ## Configuration
 
@@ -113,6 +116,10 @@ In version 10.0.17, a new feature enables integration with Project management an
 After Cash flow project forecast feature is turned on, the cash flow forecast can be viewed for each project on the **All projects** page. On the Action Pane, on the **Plan** tab, in the **Forecast** group, select **Cash flow forecast**. In the **Cash overview** workspaces (see the [Reporting](#reporting) section later in this topic), the Project forecast transaction type shows the inflows (project forecast revenue) and the outflows (project forecast costs). The amounts can be included only if the **Project stage** field in the **Cash overview** workspaces is set to **In process**.
 
 Project transactions are still included in the cash flow forecast in several ways, regardless of whether the **Cash flow project forecast** feature is turned on. Posted project invoices are included in the forecast as part of open customer transactions. Project-initiated sales orders and purchase orders are included in the forecast as open orders after they are entered in the system. You can also transfer project forecasts to a ledger budget model. This ledger budget model is then included in the cash flow forecast as part of the budget register entries. If you've turned on the **Cash flow project forecast** feature, don't transfer project forecasts to a ledger budget model, because this action will cause the project forecasts to be counted two times.
+
+### Sales tax authority payments 
+
+The Cash flow sales tax authority payments feature predicts the cash flow impact of sales tax payments. It uses unpaid sales tax transactions, tax settlement periods, and the tax period payment term to predict the date and amount of cash flow payments. 
 
 ### Calculation
 
