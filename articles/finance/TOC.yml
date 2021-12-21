@@ -1826,7 +1826,7 @@
           href: localizations/tasks/golden-tax-integration-export-setup.md
         - name: Fixed assets depreciation methods
           href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-        - name: Import the Chinese Golden Tax data entity
+        - name: Import the Chinese Golden Tax files
           href: localizations/apac-chn-import-golden-tax-data-entity.md
         - name: Monthly average cost model
           href: localizations/apac-chn-monthly-average-cost-model.md
