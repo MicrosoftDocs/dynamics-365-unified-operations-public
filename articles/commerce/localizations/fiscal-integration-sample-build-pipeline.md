@@ -52,7 +52,7 @@ This topic explains how to set up build and release pipelines for a [fiscal inte
     > [!NOTE]
     > In the names of the Retail self-service extension packages, the asterisk (\*) represents the name of the fiscal integration solution.
     >
-    > A fiscal integration sample can't include extensions of some components. Therefore, depending on the sample, some of the output files might be omitted.
+    > Depending on the fiscal integration sample, extensions of some of Commerce components may be not needed. Therefore, some of the output files might be omitted.
 
 1. Save your changes, and add the build to the queue.
 1. When the build is completed, you can download the packages from **Published Artifacts**:
