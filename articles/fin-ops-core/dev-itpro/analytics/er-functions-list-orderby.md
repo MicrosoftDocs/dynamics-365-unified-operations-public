@@ -53,8 +53,8 @@ ORDERBY (location, list, expression 1[, expression 2, …, expression N])
 
 The location to execute sorting. The following options are valid:
 
-- Query
-- InMemory
+- "Query"
+- "InMemory"
 
 `list`: *[Record list](er-formula-supported-data-types-composite.md#record-list)*
 
