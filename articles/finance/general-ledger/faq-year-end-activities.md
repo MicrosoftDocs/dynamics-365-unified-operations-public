@@ -4,7 +4,7 @@
 title: Year-end activities FAQ 
 description: This topic lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
 author: moaamer
-ms.date: 012/21/2021
+ms.date: 12/21/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -95,7 +95,7 @@ A degenerate dimension is one that provides little to no reuse by itself and in 
 ### Performance improvements for rebuilding financial dimension sets
 A new feature that was added in version 10.0.16 improves the performance of the year-end close and consolidation processes. The feature is named, Performance improvements for rebuilding financial dimension sets. This feature changes the way dimension sets are rebuilt so that they are rebuilt only for a relevant time frame. In the previous versions, dimension sets were rebuilt for all dates. For example, if you're closing the year 2020, the system will only rebuild the balances for transactions within the fiscal year 2020. If you're running consolidation for a date range of November 1, 2020 to November 30, 2020, the system will only rebuild the balances for that date range.
 
-	Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
  
 - Module: General ledger
 - Feature name: Performance improvements for rebuilding financial dimension sets
@@ -107,7 +107,6 @@ In 2021, form DIV, NEC, MISC have been changed slightly, and some more boxes hav
 #### DIV:  new box 2e, 2f.   
  
 - Box 2e. Shows the portion of the amount in box 1a that is section 897 gain attributable to disposition of U.S. real property interests (USRPI).  
-
 - Box 2f. Shows the portion of the amount in box 2a that is section 897 gain attributable to disposition of USRPI. Note that boxes 2e and 2f apply only to foreign persons and entities whose income maintains its character when passed through, or distributed to, its direct or indirect foreign owners or beneficiaries. It is generally treated as effectively connected to a trade or business within the United States. See the instructions for your tax return. 
  
 #### NEC: new box 2 
