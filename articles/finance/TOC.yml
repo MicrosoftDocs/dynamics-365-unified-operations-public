@@ -1212,6 +1212,8 @@
           href: finance-insights/enable-cust-paymnt-prediction.md
         - name: Enable Cash flow forecasting
           href: finance-insights/enable-cash-flow-forecasting.md
+        - name: External data in cash flow forecasts
+          href: finance-insights/external-data-in-cash-flow.md
         - name: Enable Budget proposals
           href: finance-insights/enable-budget-proposal.md
         - name: Create data integrator project
@@ -1234,8 +1236,6 @@
           href: finance-insights/cash-position.md
         - name: Cash flow forecast
           href: finance-insights/cash-flow-forecast-intro.md
-        - name: Use external data in cash flow forecasts
-          href: finance-insights/external-data-in-cash-flow.md
         - name: Customer payment predictions
           href: finance-insights/payment-insights-overview.md
         - name: Use Customer payment predictions
