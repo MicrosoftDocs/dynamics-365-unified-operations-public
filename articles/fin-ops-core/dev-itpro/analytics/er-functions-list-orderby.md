@@ -78,13 +78,13 @@ The resulting list of records.
 
 ### Syntax 1
 
-Data sorting is always performed in memory of application server.
+Data sorting is always performed in memory of application server. For more details, see the [example 1](#example-1).
 
 ### Syntax 2
 
 ### Sorting in memory
 
-When the `location` argument is specified as **InMemory**, data sorting is performed in memory of an application server.
+When the `location` argument is specified as **InMemory**, data sorting is performed in memory of an application server. For more details, see the [example 2](#example-2).
 
 ### Sorting in database
 
@@ -103,31 +103,33 @@ For better performance, it is recommended to use the **Query** option when the s
 > [!NOTE]
 > Be aware that the **ORDEBY** function itself cannot be transtaled to a direct database query. So, a containing this function ER data source is not queryable and cannot be used in scope of ER functions like [FILTER](er-functions-list-filter.md), [ALLITEMSQUERY](er-functions-list-allitemsquery.md), etc. where the only queryable data sources can be used.
 
+For more details, see the [example 3](#example-3) and the [example 4](#example-4).
+
 ### Comparability
 
-As the SQL database engine and the Finance applicatin server can use a different ranking value for a single character, sorting result of the same list of records can be different when a [String](er-formula-supported-data-types-primitive.md#string) field is used for sorting. For more, see the [example](#example-5) below.
+As the SQL database engine and the Finance applicatin server can use a different ranking value for a single character, sorting result of the same list of records can be different when a [String](er-formula-supported-data-types-primitive.md#string) field is used for sorting. For more details, see the [example 5](#example-5).
 
-## <a name="example-1"></a>Example 1
+## <a name="example-1"></a>Example 1: In-memory default execution
 
 If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( ORDERBY( DS, DS. Value)).Value` returns the text value **"A"**.
 
-## <a name="example-2"></a>Example 2
+## <a name="example-2"></a>Example 2: In-memory explicit execution
 
-If **Vendor** is configured as an ER data source of the *Table records* type that refers to the **VendTable** table, the expression `ORDERBY (Vendor, Vendor.'name()')` returns a list of vendors that is sorted by name in ascending order.
+If **Vendor** is configured as an ER data source of the *Table records* type that refers to the **VendTable** table, the expression `ORDERBY (Vendor, Vendor.'name()')` as well as the `ORDERBY ("InMemory", Vendor, Vendor.'name()')` expression return a list of vendors that is sorted by name in ascending order.
 
 Note that when you configured the `ORDERBY ("Query", Vendor, Vendor.'name()')` expression in the ER model mapping desinger, the validation [error](er-components-inspections.md#i8) is thrown at design time as the `Vendor.'name()'` path refers to an application method the logic of which cannot be trasnlated to a direct database query.
 
-## <a name="example-3"></a>Example 3
+## <a name="example-3"></a>Example 3: Database query
 
 If **TaxTransaction** is configured as an ER data source of the *Table records* type that refers to the **TaxTrans** table, the `ORDERBY ("Query", TaxTransaction, TaxTransaction.TaxCode)` expression sorts records on the application database level and returns a list of tax transactions that is sorted by tax code in ascending order.
 
-## <a name="example-4"></a>Example 4
+## <a name="example-4"></a>Example 4: Queryable data sources
 
 If **TaxTransaction** is configured as an ER data source of the *Table records* type that refers to the **TaxTrans** table, the **TaxTransactionFiltered** ER data source can be configured as containing the `FILTER(TaxTransaction, TaxCode="VAT19")` expression to fetch transations for a specified tax code. As the configured **TaxTransactionFiltered** ER data source is queryable, the expression `ORDERBY ("Query", TaxTransactionFiltered, TaxTransactionFiltered.TransDate)` can be configured to return the list of filtered tax transactions that is sorted by transaction date in ascending order.
 
 Note that if you configure **TaxTransactionOrdered** as an ER data source of the *Calculated field* type that contains the `ORDERBY ("Query", TaxTransaction, TaxTransaction.TransDate)` expression and an ER data source of the *Calculated field* type that contains the `FILTER(TaxTransactionOrdered, TaxCode="VAT19")` expression, a validation [error](er-components-inspections.md#i18) occurs at desin time in the ER model mapping designer as the first argument of the [FILTER](er-functions-list-filter.md#usage-notes) function must refer a queryable ER data source while the containing the **ORDERBY** function data source **TaxTransactionOrdered** is not queryable.
 
-## <a name="example-5"></a>Example 5
+## <a name="example-5"></a>Example 5: Comparability
 
 ### Prerequisites
 
