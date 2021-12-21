@@ -15,8 +15,8 @@ ms.search.validFrom: 2018-11-1
 ---
 # Fiscal printer integration sample for Italy
 
-[!include [banner](../includes/banner.md)]
-[!include[banner] (../includes/preview-banner.md)]
+[!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This topic provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 
