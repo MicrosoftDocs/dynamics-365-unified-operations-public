@@ -2590,6 +2590,8 @@
           href: dev-itpro/retail-sdk/SDK-build-pipeline.md
         - name: Download samples and packages from GitHub and NuGet
           href: dev-itpro/retail-sdk/sdk-github.md
+        - name: Set up a Visual Studio 2017 build agent to build Modern POS
+          href: dev-itpro/retail-sdk/mpos-build-agent.md
         - name: Retail SDK FAQ
           href: dev-itpro/retail-sdk/sdk-faq.md
       - name: Point of sale (POS) extensibility
