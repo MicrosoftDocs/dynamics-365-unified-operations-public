@@ -4,7 +4,7 @@
 title: Import the Chinese Golden Tax files
 description: This topic explains how to import the Chinese Golden Tax files into Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-ms.date: 10/30/2017
+ms.date: 12/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,15 +33,16 @@ This topic explains how to import files with extenal invoice numbers from provid
 
 To import the files got from a provider with extenal invoice numbers, complete the following steps.
 
-1. Go to Accounts receivable > Periodic tasks > VAT invoice integration
-2. Click **Import** button on Action pane. 
-3. Select the model mapping for the import file from one of the providers (Aisino or BaiWang), depending on which provider's software the company integrates exported invoices with. 
-4. To import a text file (<file name>_invoicing result.TXT) from the BaiWang provider, set the **Import BaiWang TXT file** option to **Yes**. Then, in the Model mapping field, select **BaiWang – txt file** mapping.
-5. To import a text file from Aisino or an XML file from BaiWang, set the **Import BaiWang txt file** option to **No**. Then, in the Model mapping field, select **Asimo - txt** or **BaiWang-xml file** mapping.
-6. Select a file for upload and click **Upload** button 
-7. Click **OK**.
+1. Go to **Accounts receivable** > **Periodic tasks** > **VAT invoice integration**.
+2. On the Action Pane, select **Import**. 
+3. Select the model mapping for the import file from one of the providers , either Aisino or BaiWang, depending on which provider's software the company integrates exported invoices with. 
+4. To import a text file (<file name>_invoicing result.TXT) from the BaiWang provider, set the **Import BaiWang TXT file** option to **Yes**. Then, in the **Model mapping** field, select **BaiWang – txt file**.
+5. To import a text file from Aisino or an XML file from BaiWang, set the **Import BaiWang txt file** option to **No**. Then, in the **Model mapping** field, select **Asimo - txt** or **BaiWang-xml file**.
+6. Select a file for upload and then select **Upload**.
+7. Select **OK**.
   
- > [!NOTE]. To import files, you must first upload import formats. See [Import configurations](apac-chn-tax-integration.md) 
+ > [!NOTE] 
+ > To import files, upload the import formats. For more information, see [Import configurations](apac-chn-tax-integration.md).
 
 
 
