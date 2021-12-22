@@ -1514,6 +1514,10 @@
               items:
               - name: VAT declaration
                 href: localizations/emea-gbr-vat-declaration.md
+            - name: Norway reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-nor-vat-declaration.md
           - name: Enable Tax Calculation for transfer order
             items: 
             - name: Tax feature support for transfer orders
