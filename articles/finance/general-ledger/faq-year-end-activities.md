@@ -32,14 +32,14 @@ ms.dyn365.ops.version: 10.0.14
 This topic lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities. The information in this topic primarily focuses on questions concerning year-end closing activities for General ledger and Accounts payable.
 
 ## General ledger year-end enhancements 
-Version 10.0.20 introduced a year-end close enhancement, which is enabled by default starting with version 10.0.25. If your organization is on a version earlier than 10.0.25, we recommend enabling this feature before beginning the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Version 10.0.20 introduced a year-end close enhancement, which is enabled by default starting with version 10.0.25. If your organization uses a version earlier than 10.0.25, we recommend enabling this feature before beginning the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - Module: General ledger
 - Feature name: General ledger year-end enhancements
 
-The setup of the year-end closing templates has been moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the General ledger foreign currency revaluation, where a list displays each time the year-end close is run or reversed. An accounting manager can initiate the year-end close from the new page. 
+The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the General ledger foreign currency revaluation, where a list displays each time the year-end close is run or reversed. An accounting manager can initiate the year-end close from the new page. 
 
-If the accounting manager wants to reverse the year-end close, they can select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and will not rerun the year-end close automatically. 
+To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and will not rerun the year-end close automatically. 
 
 You can rerun the year-end close, by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or completely reverse the previous close, rerunning the process for all transactions.  
 
@@ -86,7 +86,7 @@ We recommend that you evaluate your organization's requirements and if possible,
 
 ## Degenerate Dimensions explanation and analysis
 
-A degenerate dimension is one that provides little to no reuse by itself and in combination with others. There are two types of degenerate dimensions. The first type is a dimension that is individually degenerate. Usually this type of degenerate dimension will appear on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes degenerate in combination with one or more additional dimensions that exhibit the same potential based on potential permutations that can be generated. A degenerate dimension can have a significant impact on the performance of the year-end close process. To minimize performance issues, define all degenerate dimensions as **Close single** in the year-end close setup as described in the previous section.   
+A degenerate dimension provides little to no reuse by itself and in combination with other dimensions. There are two types of degenerate dimensions. The first type is a dimension that is individually degenerate. Usually this type of degenerate dimension will appear on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes degenerate in combination with one or more additional dimensions that exhibit the same potential based on the possible permutations that can be generated. A degenerate dimension can have a significant impact on the performance of the year-end close process. To minimize performance issues, define all degenerate dimensions as **Close single** in the year-end close setup as described in the preceding section.
 
 ## General ledger – What does the Period close – Year-end close do?
  
