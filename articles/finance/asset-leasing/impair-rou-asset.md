@@ -105,6 +105,10 @@ The following tables show the values that are set on the **General** and **Payme
     | Close book             | No       |
 
 6. An impairment expense journal entry has been created and posted. To view it, go to the asset's leasing journal in the lease book. Notice that the amount of the impairment was debited to the Impairment expense posting account, and the ROU asset posting account was credited.
+
+> [!NOTE]
+> If the lease classified as operating lease, the monthly depreciation after impairment will be calculated in a straight-line depreciation method.
+
 7. To view the net effect of the impairment, go to the liability and asset transactions tables. Notice that the impairment expense has decreased the ROU asset, but the carrying amount of the lease liability hasn't changed.
 
 The impairment has one other effect that you should consider. Because the ROU asset amount is now much less than the lease liability, the amount must be depreciated differently than it was before. Specifically, the asset is now depreciated in a straight-line manner throughout the remaining 84 months of the lease, beginning on the transaction date.
