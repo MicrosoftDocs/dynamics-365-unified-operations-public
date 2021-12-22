@@ -177,7 +177,7 @@ This section contains the following information about each document.
 |-----------------------------------------------------|---------------|
 | Tax document number                                 | c\_evid\_dd   |
 | VAT number of the vendor (numeric part only)        | dic\_dod      |
-| Date (which is the date of incoming vendor invoice) | duzp          |
+| Date (which is the date of vendor VAT register or the date of incoming vendor invoice) | duzp          |
 | Subject code                                        | kod\_pred\_pl |
 | Tax base at standard rate                           | zakl\_dane1   |
 | Tax amount at standard rate                         | dan1          |
@@ -187,6 +187,7 @@ This section contains the following information about each document.
 | Tax amount at second reduced rate                   | dan3          |
 
 To automatically determine the subject code for the document, you should use the same settings that were described for section A1.
+You can find more details about how to define date of vendor VAT register in [Date of vendor VAT register](emea-date-of-vendor-vat-register.md)
 
 ### Section A2: Purchases with reverse charge, excluding domestic reverse charge, with an obligation to pay VAT
 
@@ -220,7 +221,7 @@ This section contains the following information about each document.
 | Tax document number                                           | c\_evid\_dd      |
 | VAT number of the customer (numeric part only) if it exists   | vatid\_odb       |
 | Country that allocated the VAT number to the customer         | k\_stat          |
-| Date (VAT register)                                           | dup              |
+| Date (which is the date of VAT register)                      | dup              |
 | The value of the sales                                        | osv\_plneni      |
 | Place of residence of the customer if there is no VAT number  | m\_pobytu\_sidlo |
 | First and last name of the customer if there is no VAT number | jm\_prijm\_obch  |
@@ -274,7 +275,7 @@ Section B2 contains the following information about each document.
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Tax document number                                                                                                                                 | c\_evid\_dd |
 | VAT number of the vendor                                                                                                                            | dic\_dod    |
-| Date (date of the incoming vendor invoice)                                                                                                          | Dppd        |
+| Date (which is the date of vendor VAT register or date of the incoming vendor invoice)                                                                       | Dppd        |
 | Tax base at standard rate                                                                                                                           | zakl\_dane1 |
 | Tax amount at standard rate                                                                                                                         | dan1        |
 | Tax base at first reduced rate                                                                                                                      | zakl\_dane2 |
