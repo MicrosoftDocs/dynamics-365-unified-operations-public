@@ -187,7 +187,8 @@ This section contains the following information about each document.
 | Tax amount at second reduced rate                   | dan3          |
 
 To automatically determine the subject code for the document, you should use the same settings that were described for section A1.
-You can find more details about how to define date of vendor VAT register in [Date of vendor VAT register](emea-date-of-vendor-vat-register.md)
+
+You can find more details about how to define date of vendor VAT register in [Date of vendor VAT register](emea-date-of-vendor-vat-register.md).
 
 ### Section A2: Purchases with reverse charge, excluding domestic reverse charge, with an obligation to pay VAT
 
