@@ -41,6 +41,9 @@ For leases that are recognized on an organization's balance sheet, the right-of-
 1. On the **Lease summary** page, select a lease. Then select **Books \> Asset depreciation schedule** to open the **Asset depreciation schedule** page.
 
     The ROU asset depreciation expense journal entry is based on the amount in the **Depreciation Expense** column. For an example of the guidance for accounting standard compliance, see the [Calculation of ROU asset amortization expense for finance leases](#calculation-of-rou-asset-amortization-expense-for-finance-leases) section later in this topic.
+    
+> [NOTE]
+> If the lease classified as operating lease, the monthly depreciation after impairment will be calculated in a straight-line depreciation method.
 
 2. Select the period of depreciation, and then select **Create journal**. You receive a message that states that the journal that will be used to record depreciation was created.
 3. Select **Journals \> Asset leasing journals** to open the **Asset leasing journal** page, where you can view the depreciation expense journal entry that was created.
