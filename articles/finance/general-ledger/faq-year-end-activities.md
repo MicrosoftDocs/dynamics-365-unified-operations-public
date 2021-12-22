@@ -100,7 +100,7 @@ Before you can use this feature, it must be turned on in your system. Admins can
 - Module: General ledger
 - Feature name: Performance improvements for rebuilding financial dimension sets
 
-## Accounts payable: What changes have been made to support 1099 year-end reporting for 2021?
+## Accounts payable: What changes have been made to support 1099 year-end reporting for 2021
 
 In 2021, form DIV, NEC, MISC have been changed slightly, and some more boxes have been added.
 
@@ -153,13 +153,13 @@ Requirement Indicator.
 - Field Title Payment J – Updated Field Position 322-339, Field Title, Length and General Field Description. 
 - Field Title 340-499 – Updated Length to 160.  
 
-## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn’t tracking 1099 information throughout the year?
+## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn’t tracking 1099 information throughout the year
 Use the Update 1099 functionality (**Accounts payable > Vendors>All vendors > Select a vendor > Vendor tab in ribbon > Update 1099**) to go through previously paid invoice transactions to reassign the 1099 data appropriately according to the settings on the **Tax 1099** tab on the **Vendor** page.
 
 ## Can I run the Update 1099 for all my vendors at once?
 No. The Update 1099 routine is performed against a single vendor at a time. If this requirement is needed by your organization, please vote for the Idea titled [Batch Process for Update of Vendor's 1099 Data](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
 
-## Accounts payable: 1099 – “Recalculate existing 1099 amounts” vs. “Update all” in the Update 1099 utility.
+## Accounts payable: 1099 – Recalculate existing 1099 amounts versus Update all in the Update 1099 utility
 The **Recalculate existing 1099 amounts** check box will reset the 1099 amount to the total paid values, when used in conjunction with the **Update all** check box. 
 
 [![Tax 1099 transactions: Before running the update routine.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
