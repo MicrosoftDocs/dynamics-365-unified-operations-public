@@ -1,6 +1,6 @@
 ---
 title: Run custom X++ scripts with zero downtime
-description: This topic describes how to upload and execute a deployable package with a custom X++ script without requiring any downtime.
+description: This topic describes how to upload and run deployable packages that contain custom X++ scripts without having to suspend your system.
 author: AndersGirke
 ms.date: 12/16/2021
 ms.topic: article
@@ -17,45 +17,44 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This feature lets you to upload and run deployable packages containing custom X++ scripts without going through Dynamics Lifecycle Services (LCS), and without needing to suspend your system. This lets you correct minor data inconsistences without introducing any disruptive downtime.
+This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services (LCS) or suspend your system. Therefore, you can correct minor data inconsistences without causing any disruptive downtime.
 
-The benefit of using an X++ script to correct minor data inconsistences is that the system will automatically adjust all related tables as needed when it runs the script. This secures the integrity of the correction and minimize the chance of introducing new inconsistencies.
+The benefit of using an X++ script to correct minor data inconsistences is that the system will automatically adjust all related tables as required when it runs the script. This approach helps ensure the integrity of the correction and helps minimize the risk of introducing new inconsistencies.
 
-All deployable packages uploaded to the system must go through a mandatory workflow. As a safety precaution, and to secure segregation of duties, the user who uploads a deployable package is not allowed to approve it for the next steps in the workflow (another user must do this). However, once the package is approved, the original uploader will be permitted to complete the remaining steps.
+All deployable packages that are uploaded into the system go through a mandatory workflow. As a safety precaution, and to help ensure segregation of duties, the user who uploads a deployable package isn't allowed to approve it for the next steps in the workflow. Another user must approve it. However, after the package is approved, the user who uploaded it will be allowed to complete the remaining steps.
 
-The system requires all deployable packages to go through a test run, and a user must validate the output as passed (Accept test log) before the script will be allowed to run on production data. If the output is not correct, the user marks the package as failed (Abandoned) and the script won't be allowed to run on production data.
+The system requires that all deployable packages go through a test run. Before the script will be allowed to run on production data, a user must validate that the output is correct by selecting **Accept test log**. If the output isn't correct, the user must mark the package as failed by selecting **Abandon**. In this case, the script won't be allowed to run on production data.
 
-Each uploaded package is saved in the system and goes through a defined workflow of events. For each event, the system keeps a log with a timestamp and the identity of the person who performed the event, thereby securing an audit trail.
+Every uploaded package is saved in the system and goes through a defined workflow of events. For each event, the system keeps a log that includes a timestamp and the identity of the person who performed the event. In this way, the system ensures that there is an audit trail.
 
-As shown in the following illustration, the system provides details of how each deployable package was run in X++ and which entities were touched.
+As the following illustration shows, the system provides details about how each deployable package was run in X++ and which entities were touched.
 
-![Script details page](media/script-details.png "Script details page")
+![Script details page.](media/script-details.png "Script details page")
 
 > [!IMPORTANT]
-> This feature is intended for correcting minor data inconsistencies only. It must not be used for other purposes, including but not limited to:
+> This feature is intended for correction of minor data inconsistencies only. It must not be used for the following purposes or any other purpose:
 >
->- Data collection
->- Schema changes
->- Data migration, or other long-running processes
->- Correction of data that can be corrected using other means, such as regularly business processes, data consistency tools or other self-service tools
-
-> [!IMPORTANT]
-> This feature lets authorized users change entities and their records directly, without running the business logic associated with those entities. This may result in data integrity issues. Your organization may require you to obtain approval and signoff by internal and external auditors (or other equivalent stakeholders) before and/or after running a script. For compliance reasons, changes that affect certain characteristics may also need to be disclosed in external reports (such as financial statements) or reported to government authorities. Your organization is solely responsibility for any changes made to its data using this feature, any approval and signoff or disclosure of such changes, and for complying with applicable laws. You bear all risks of using this feature.
+> - Data collection
+> - Schema changes
+> - Data migration or other long-running processes
+> - Correction of data that can be corrected through other means, such as regular business processes, data consistency tools, or other self-service tools
+>
+> The feature lets authorized users change entities and their records directly, without having to run the business logic that is associated with those entities. These changes can cause data integrity issues. Therefore, your organization might require that you obtain approval and signoff from internal and external auditors (or other equivalent stakeholders) before and/or after you run a script. For compliance reasons, changes that affect some characteristics might also have to be disclosed in external reports (such as financial statements) or reported to government authorities. Your organization is solely responsible for any changes that are made to its data via this feature, any approval and signoff or disclosure of those changes, and compliance with applicable laws. You bear all the risks of using this feature.
 
 ## Assign duties to users to control access
 
-This feature provides the following duties, which admins can use to control access to it:
+This feature provides the following duties. Admins can use these duties to help control access to the feature.
 
-- **Maintain custom scripts** – Grants the ability to upload, test, verify and run custom X++ scripts in environments (UAT, Prod)
-- **Approve custom scripts** – Grants the ability to approve an uploaded custom X++ script. Approval is a mandatory step before any script can be tested, verified, and run.
+- **Maintain custom scripts** – This duty grants the ability to upload, test, verify, and run custom X++ scripts in environments (user acceptance testing \[UAT\] and production).
+- **Approve custom scripts** – This duty grants the ability to approve an uploaded custom X++ script. Approval is a mandatory step before any script can be tested, verified, and run.
 
-To minimize the risk of malicious action, each script must be explicitly approved by a user other than the uploader. Before you can use this feature in your organization, an admin must assign the above duties to at least two relevant and highly trusted users. A single user can have both duties, but that user still won't be able to approve their own scripts.
+To help minimize the risk of malicious action, each script must be explicitly approved by a user other than the user who uploaded it. Before you can use this feature in your organization, an admin must assign the preceding duties to at least two relevant and highly trusted users. Although a single user can have both duties, that user still won't be able to approve their own scripts.
 
 ## Create a deployable package
 
 The feature requires a regular deployable package that can be created in Visual Studio. For instructions, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
 
-Your deployable package must contain exactly one runnable X++ class. In other words, it must have one class with a method with the following signature:
+Your deployable package must contain exactly one runnable X++ class. In other words, it must have one class that includes a method that has the following signature.
 
 ```xpp
 public static void main(Args _args)
@@ -66,7 +65,7 @@ public static void main(Args _args)
 
 ## Code example
 
-The following code example shows how a deployable package could be structured.
+The following code example shows how a deployable package can be structured.
 
 ```xpp
 class MyScriptClassForIssueXYZ
@@ -101,49 +100,49 @@ class MyScriptClassForIssueXYZ
 
 ## Best practices
 
-The following list provides a few best practices for writing, implementing, and running a script successfully. The list is not exhausted and should only be considered as guidance.
+The following list describes some best practices for successfully writing, implementing, and running a script. The list isn't exhaustive, and it should be considered only guidance.
 
-- **Do** write a success message at the end of the script. This will enable you to see that the script ran without exceptions.
+- **Do** write a success message at the end of the script. In this way, you will be able to see that the script ran without exceptions.
 - **Do** add explicit handling of the transaction scope.
-- **Do** use existing business logic, such as `update()` methods, but **do not** bypass business logic by using `doUpdate()`, `doInsert()` and `doDelete()` methods. This will ensure dependent data is handled correctly and will significantly reduce the risk of further data inconsistencies
-- **Do** assert the company context. This will expose common mistakes as a script runs, such as running the script in the wrong company.
-- **Do** assert that the number of records impacted match your expectations. This will expose whether data has shifted unexpectedly on the system while the script was being prepared.
-- **Do** use unique class names for each script, for example by including a reference to a work item in the name. This will prevent name clash issues when uploading the script. If a new iteration of a script is needed, be sure to give it a new name.
-- **Do** test each script on a non-production environment first. Test for the intended impact and for unintentional side-effects on related data. Ensure the business processes that may be impacted can be successfully and fully completed afterwards.
+- **Do** use existing business logic, such as `update()` methods, but **do not** bypass business logic by using `doUpdate()`, `doInsert()`, and `doDelete()` methods. This approach will help ensure that dependent data is handled correctly. It will also significantly reduce the risk of further data inconsistencies.
+- **Do** assert the company context. This approach will expose common mistakes as a script runs. For example, it will reveal whether the script is being run in the wrong company.
+- **Do** assert that the number of affected records matches your expectations. This approach will reveal whether data unexpectedly shifted in the system while the script was being prepared.
+- **Do** use unique class names for each script (for example, by including a reference to a work item in the name). This approach will prevent name clash issues when you upload the script. If a new iteration of a script is required, be sure to give it a new name.
+- **Do** test each script in a non-production environment first. Test for the intended impact and for unintentional side-effects on related data. Ensure that all business processes that might be affected can be successfully and fully completed afterwards.
 
 ## Upload and run a deployable package in Supply Chain Management
 
 Use the following procedure to upload and run a script.
 
-1. Go to **System administration \> Periodic tasks \> Database \> Custom scripts**.
-
+1. In Dynamics 365 Supply Chain Management, go to **System administration \> Periodic tasks \> Database \> Custom scripts**.
 1. Select **Upload**.
+1. Select the deployable package that you created as described earlier in this topic. You will be prompted to specify the purpose of the script.
+1. The script must now be approved by a user other than the user who uploaded it. The approver must follow these steps:
 
-1. Select your deployable package (created as described in previously in this topic). You will also be asked to provide the purpose of the script.
-
-1. The script must now be approved by another user (not the same user that uploaded the script). The approver must do the following:
-    1. Go to **System administration \> Periodic \> Data base \> Custom scripts**
-    1. Select the script to be approved and select **Details**.
-    1. On the Action Pane, open the **Process workflow** tab and, from the **Start** group, select **Approve** or **Reject**. On approval, the script will be marked as such and unlocked for testing. If rejected, the script will be locked. Either way, the event is logged, and a copy of the script is kept in the system.
-
-1. To ensure the script does what is intended, you must test it. The tester can be the same as the uploader or the approver or can be a third user (provided they have the required permissions). The tester must do the following:
     1. Go to **System administration \> Periodic \> Data base \> Custom scripts**.
-    1. Select the script to be tested and select **Details**.
-    1. On the Action Pane, open the **Process workflow** tab and, from the **Test** group, select **Run test**. This will run the script inside a temporary transaction that the system will automatically abort while collecting various logs and SQL statements.
-    1. When it completes, review the logs, and verify that the results meet your expectations.
-        - If you are satisfied with the test result, select **Accept test log** on the Action Pane (on the **Process workflow** tab, in the **Test** group). This will allow the script to be run and the event log will reflect that the script was tested, who tested it, and when.
-        - If you aren't satisfied with the test result, select **Abandon** on the Action Pane (on the **Process workflow** tab, in the **End** group). This will prevent the script from being run, but the system will keep a copy of it together with a log of its history.
+    1. Select the script to approve, and then select **Details**.
+    1. On the Action Pane, on the **Process workflow** tab, in the **Start** group, select **Approve** or **Reject**. If you select **Approve**, the script is marked as approved and is unlocked for testing. If you select **Reject**, the script is locked. In both cases, the event is logged, and a copy of the script is kept in the system.
 
-1. When you are confident the script has met your expectations, select **Run** on the Action Pane to run the script (on the **Process** workflow tab, in the **Run** group). This will do the same as the previous test run, except this time the transaction will be committed at the end.
+1. The script must be tested to ensure that it does what it's intended to do. The tester can be the same as the uploader or the approver, or it can be a third user who has the required permissions. The tester must follow these steps:
 
-1. Now that you have run the script, check the result and confirm whether it worked as intended.
-    - If you are satisfied with the result, select **Purpose resolved** on the Action Pane (on the **Process** workflow tab, in the **End** group). On choosing this value, the event log will reflect that the script ran successfully, who verified it, and when. The script is saved but is now locked and can't be run again.
-    - If you aren't satisfied with the result, select **Purpose unresolved** on the Action Pane (on the **Process workflow** tab, in the **End** group). On choosing this value, the event log will reflect that the script failed to resolve its intended purpose, who ran it, and when. The script is saved but is now locked and can't be run again. However, the system won't automatically undo the script action. You may need to write, import, and run a new script to undo the effects of the failed script on your system.
+    1. Go to **System administration \> Periodic \> Data base \> Custom scripts**.
+    1. Select the script to test, and then select **Details**.
+    1. On the Action Pane, on the **Process workflow** tab, in the **Test** group, select **Run test**. The script is run inside a temporary transaction that the system will automatically abort while it collects various logs and SQL statements.
+    1. When the script has finished running, review the logs, and verify that the results meet your expectations. Follow one of these steps:
 
-Your selection here becomes the final state for the script. If necessary, you can repeat the process.
+        - If you're satisfied with the test result, select **Accept test log** in the **Test** group on the **Process workflow** tab of the Action Pane to allow the script to be run. The event log will reflect the fact that the script was tested, and it will indicate who tested it and when.
+        - If you aren't satisfied with the test result, select **Abandon** in the **End** group on the **Process workflow** tab of the Action Pane to prevent the script from being run. The system will keep a copy of the script together with a log of its history.
+
+1. When you're sure that the script meets your expectations, select **Run** in the **Run** group on the **Process workflow** tab of the Action Pane to run it. This command does the same thing as the previous test run, but the transaction will be committed at the end.
+1. After the script has finished running, check the result, and confirm that the script worked as you intended. Follow one of these steps:
+
+    - If you're satisfied with the result, select **Purpose resolved** in the **End** group on the **Process workflow** tab of the Action Pane. The event log will reflect the fact that the script ran successfully, and it will indicate who verified the script and when. The script is saved, but it's now locked and can't be run again.
+    - If you aren't satisfied with the result, select **Purpose unresolved** in the **End** group on the **Process workflow** tab of the Action Pane. The event log will reflect the fact that the script failed to fulfill its intended purpose, and it will indicate who ran the script and when. The script is saved, but it's now locked and can't be run again. However, the system doesn't automatically undo the script action. You might have to write, import, and run a new script to undo the effect that the failed script had on your system.
+
+Your selection in the last step defines the final state for the script. You can repeat the process as you require.
 
 ## Upload and run a deployable package through LCS
 
-As an alternative to deploying your package through Supply Chain Management, as described in the previous section, you can instead upload your deployable package to Dynamics Lifecycle Services (LCS) and deploy it using the normal procedure, as described in [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+Instead of deploying your deployable package through Supply Chain Management as described in the previous section, you can upload it to LCS and use the regular procedure to deploy it. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
-This approach has fewer restrictions, but also provides less error protection and will require a restart of all servers and will therefore result in some downtime.
+Although this approach has fewer restrictions, it provides less error protection. Additionally, because it requires a restart of all servers, it will cause some downtime.
