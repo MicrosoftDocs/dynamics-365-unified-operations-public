@@ -36,6 +36,12 @@ The settle and post sales tax job procedure settles sales tax balances on the sa
     - If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. Original is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions which have been posted after the original version has been created.
 5. In the **Transaction date** field, enter a date.
 6. Click **OK**.
+7. The **Sales tax paymemts** report is printed to review the settled sales tax transactions in the period.
+
+A possibility to omit **Sales tax payments** report generation right after the **Settle and post sales tax** periodic procedure is implemented under the **Separate sales tax payment report generation from sales tax settlement** feature in the **Feature management** workspace, starting from version 10.0.24.
+
+When the feature is enabled, after the settlement process is completed, no sales tax payment report is printed. Instead, you receive the following message: "The sales tax settlement and posting is completed. The voucher 'xxxx, m/d/yyyy' has been posted."
+You can still manually run the sales tax payment report by going to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**.
 
 ## Performance consideration
 
