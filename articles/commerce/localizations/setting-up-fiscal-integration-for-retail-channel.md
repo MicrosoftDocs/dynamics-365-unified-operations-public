@@ -85,8 +85,9 @@ For examples of configurations of fiscal connectors and fiscal document provider
 You can change the data mapping parameters in a connector functional profile. To restore the default parameters that are defined in the fiscal document provider configuration, select **Update**.
 
 **Examples**
+
 | Parameter  | Format | Example |
-|---|--------|---------|
+|------------|--------|---------|
 | **VAT rates settings** | value : VATrate | 1 : 2000, 2 : 1800 |
 | **VAT codes mapping** | VATcode : value | vat20 : 1, vat18 : 2 |
 | **Tender types mapping** | TenderType : value | Cash : 1, Card : 2 |
