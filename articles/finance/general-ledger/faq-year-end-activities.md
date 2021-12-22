@@ -34,14 +34,14 @@ This topic lists questions that can arise when closing a year, and the answers t
 ## General ledger year-end enhancements 
 Version 10.0.20 introduced a year-end close enhancement, which is enabled by default starting with version 10.0.25. If your organization uses a version earlier than 10.0.25, we recommend enabling this feature before beginning the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
-- Module: General ledger
-- Feature name: General ledger year-end enhancements
+ - Module: General ledger
+ - Feature name: General ledger year-end enhancements
 
 The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the General ledger foreign currency revaluation, where a list displays each time the year-end close is run or reversed. An accounting manager can initiate the year-end close from the new page. 
 
 To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and will not rerun the year-end close automatically. 
 
-You can rerun the year-end close, by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or completely reverse the previous close, rerunning the process for all transactions.  
+You can rerun the year-end close by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or completely reverse the previous close, rerunning the process for all transactions.  
 
 ## General ledger: How do I know that we're running year-end close and not undoing year-end close?
 We have seen organizations try to run the year-end close but instead were performing an undo of the year-end close. If the year-end close is finishing really quickly or the year end close does not produce opening balances, validate the **Undo previous close** setting in **Year-end close** (**General ledger > Period close > Year end close > Run fiscal close**). 
@@ -84,11 +84,11 @@ The year-end close template lets organizations select the financial dimension le
 
 We recommend that you evaluate your organization's requirements and if possible, close as many dimensions as possible using the **Close single** year-end option to improve performance. By closing to a single dimension value (which can also be a blank value), the system calculates less detail when determining the balances for retained earnings account entries.
 
-## Degenerate Dimensions explanation and analysis
+## Degenerate dimensions
 
-A degenerate dimension provides little to no reuse by itself and in combination with other dimensions. There are two types of degenerate dimensions. The first type is a dimension that is individually degenerate. Usually this type of degenerate dimension will appear on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes degenerate in combination with one or more additional dimensions that exhibit the same potential based on the possible permutations that can be generated. A degenerate dimension can have a significant impact on the performance of the year-end close process. To minimize performance issues, define all degenerate dimensions as **Close single** in the year-end close setup as described in the preceding section.
+A degenerate dimension provides little to no reuse by itself and in combination with other dimensions. There are two types of degenerate dimensions. The first type is a dimension that is individually degenerate. Typically this type of degenerate dimension will appear on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes degenerate in combination with one or more additional dimensions that exhibit the same potential based on the possible permutations that can be generated. A degenerate dimension can have a significant impact on the performance of the year-end close process. To minimize performance issues, define all degenerate dimensions as **Close single** in the year-end close setup as described in the preceding section.
 
-## General ledger – What does the Period close – Year-end close do?
+## General ledger: What does the period close, year-end close do?
  
 [![Period close, year-end close.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
@@ -100,11 +100,11 @@ Before you can use this feature, it must be turned on in your system. Admins can
 - Module: General ledger
 - Feature name: Performance improvements for rebuilding financial dimension sets
 
-## Accounts payable: What changes have been made to support 1099 year-end reporting for 2021
+## Accounts payable: What changes have been made to support 1099 year-end reporting for 2021?
 
-In 2021, form DIV, NEC, MISC have been changed slightly, and some more boxes have been added.
+In 2021, the DIV, NEC, and MISC forms have been changed slightly, and some additional boxes have been added.
 
-#### DIV:  new box 2e, 2f.   
+#### DIV: new box 2e, 2f
  
 - Box 2e. Shows the portion of the amount in box 1a that is section 897 gain attributable to disposition of U.S. real property interests (USRPI).  
 - Box 2f. Shows the portion of the amount in box 2a that is section 897 gain attributable to disposition of USRPI. Note that boxes 2e and 2f apply only to foreign persons and entities whose income maintains its character when passed through, or distributed to, its direct or indirect foreign owners or beneficiaries. It is generally treated as effectively connected to a trade or business within the United States. See the instructions for your tax return. 
@@ -123,7 +123,7 @@ Box 11 shows the amount paid for the purchase of fish for resale from any person
 For information about electronic filing, see [Publication for electronic filing requirements](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
 
 Update Format Specifications and Record Layouts for 2021 e-report 
-- Sec. 2 Issuer “A” Record 
+- Sec. 2 Issuer “A” Record. 
 - Amount Codes - Increased Field Position 28-45, Length to 18. 
  
 #### Sec. 2 Issuer “A” Record, For Reporting Payments on Form 1099-DIV: 
@@ -153,7 +153,7 @@ Requirement Indicator.
 - Field Title Payment J – Updated Field Position 322-339, Field Title, Length and General Field Description. 
 - Field Title 340-499 – Updated Length to 160.  
 
-## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn’t tracking 1099 information throughout the year
+## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn’t tracking 1099 information throughout the year?
 Use the Update 1099 functionality (**Accounts payable > Vendors>All vendors > Select a vendor > Vendor tab in ribbon > Update 1099**) to go through previously paid invoice transactions to reassign the 1099 data appropriately according to the settings on the **Tax 1099** tab on the **Vendor** page.
 
 ## Can I run the Update 1099 for all my vendors at once?
