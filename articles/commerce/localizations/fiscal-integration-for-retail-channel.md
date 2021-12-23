@@ -67,7 +67,7 @@ The following example shows a typical fiscal registration execution flow for a f
 1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
 1. CRT saves the response to the channel database.
 
-![Solution schema.](media/emea-fiscal-integration-solution.png "Solution schema")
+![Solution schema.](media/FIF-CRT-HWS.png "Solution schema")
 
 ## Error handling
 
