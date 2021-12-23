@@ -66,6 +66,7 @@ After you register an application and add a client secret to Azure AD, follow th
 1. Agree to the terms and condition by selecting the **Terms and conditions** checkbox.
 1. Select **Install**. The status of the add-in is shown as **Installing**. When the installation is completed, refresh the page. The status should change to **Installed**.
 1. In Dataverse, select the **Apps** section in the left navigation, and verify that the **Inventory Visibility** Power Apps is installed successfully. If the **Apps** section doesn't exist, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+1. In order to make you have a better experience when you use inventory vivisility, we suggest you to send email to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) with your FNO environment Id information, we will add you in our inventory visiblity add-in teams group, you can find some useful user guide in it, get our latest update, and post any question for help when you use inventory visibility.
 
 > [!IMPORTANT]
 > If you have more than one LCS environment, create a different Azure AD application for each environment. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the last one that was installed will be valid.
