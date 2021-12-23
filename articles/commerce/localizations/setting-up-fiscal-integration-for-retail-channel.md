@@ -66,7 +66,7 @@ A fiscal connector is responsible for the communication with a fiscal device or 
 > [!TIP]
 > By selecting **View**, you can view all functional and technical profiles that are related to the current fiscal connector.
 
-1. On the **Fiscal document providers** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**), upload an XML configuration for each device or service that you plan to use.
+2. On the **Fiscal document providers** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**), upload an XML configuration for each device or service that you plan to use.
 
 > [!TIP]
 > By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.
