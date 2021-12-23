@@ -98,23 +98,22 @@ You can change the data mapping parameters in a connector functional profile. To
 2. On the **Connector technical profiles** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**), create a connector technical profile for each fiscal connector.
     1. Select a connector name.
     2. Select a connector type. 
-        1. For devices that are connected to a Hardware station or POS registers, select **Local**.
-        1. For External services, connected to a Hardware station or POS registers, select **External**.
-        1. For Internal signing service, select **Internal**. 
+        1. For devices or services that are connected to a Hardware station or present in the local network, select **Local**.
+        1. For external services, select **External**.
+        1. For internal connectors in CRT, select **Internal**. 
     3. Select a connector location.
-        1. **Hardware station** if connector locates on the Hardware station.
-        1. **Register** if connector locates on the POS register.
-    > [!NOTE]
-    > If you need to use POS without hardware station, after data distribution do next things on the POS register. Click "Perform non-drawer operations". Click "Select Hardware Station". If button "Use hardware station" is off, turn it on. Switch off button "Shared hardware station". Switch off button "Use hardware station".
+        1. **Hardware station** if connector is located on the Hardware station.
+        1. **Register** if connector is located on the POS register.
+
 
 
 3. Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed. To restore the default parameters that are defined in the fiscal connector configuration, select **Update**. While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used. This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles. To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.
 
-4. If you need to setup unique connection parameters for specific POS register or Store:
-    1. Click on **Override** menu item.
-    1. In the **Override** form, create new record.
-    1. In the new record select specified store, or POS register. You can override parameters of selected technical profile for specified POS register or store.
-    1. In the Device tab you can input specific parameters for selected POS register or store.  
+4. If you need to set up specific parameters for an individual POS register or Store:
+    1. Click **Override** menu item.
+    1. In the **Override** form, create a new record.
+    1. Select a store or a POS register. You can override parameters of the selected technical profile for an individual POS register or all POS registers in an individual store.
+    1. On the Device tab, input specific parameters for the selected POS register or store.  
 
 ### Create fiscal connector groups.
 
@@ -192,7 +191,7 @@ The error handling options that are available in the fiscal integration are set 
 
     - **Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.
     - **Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.
-    - **Allow Postpone** – This parameter enables the **Postponed** option in the error handling dialog box.
+    - **Allow postpone** – This parameter enables the **Postpone** option in the error handling dialog box.
     - **Continue on error** – If this parameter is enabled, the fiscal registration process can continue on the POS register if the fiscal registration of a transaction or event fails. Otherwise, to run the fiscal registration of the next transaction or event, the operator must retry the failed fiscal registration, skip it, or mark the transaction or event as registered. For more information, see [Optional fiscal registration](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
     > [!NOTE]
