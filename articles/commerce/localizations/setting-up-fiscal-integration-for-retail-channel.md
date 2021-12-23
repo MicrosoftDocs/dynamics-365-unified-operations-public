@@ -204,7 +204,7 @@ The error handling options that are available in the fiscal integration are set 
     > [!NOTE]
     > The **Product** trigger function isn't supported for the info codes that are used for **Skip** and **Mark as registered** in fiscal connector groups.
 
-    - On the **Fiscal connector group** page, on the **Info codes** tab, select info codes or info code groups in the **Skip** and **Mark as registered** fields.
+    - On the **Fiscal connector group** page, on the **Info codes** tab, select info codes or info code groups in the **Skip**, **Mark as registered** and **Postpone** fields.
 
     > [!NOTE]
     > One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process. A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents. The error handling feature applies only to fiscal documents.
