@@ -128,7 +128,7 @@ The fiscal integration framework provides the following options to handle failur
 - **Mark as registered** – Operators can use this option when the transaction was actually registered in the fiscal device (for example, a fiscal receipt was printed), but a failure occurred when the fiscal response was being saved to the channel database.
 - **Postponed** – Operators can use this option when the transaction was not registered because registration service was unavailable. 
 > [!NOTE]
-> The **Skip** and **Mark as registered** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
+> The **Skip**, **Mark as registered** and **Postponed** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
 
 The **Skip** and **Mark as registered** options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
