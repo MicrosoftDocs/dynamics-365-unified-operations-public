@@ -69,7 +69,7 @@ The following examples shows a typical fiscal registration execution flow for a 
 1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
 1. CRT saves the response to the channel database.
 
-![Solution schema.](media/FIF-CRT-HWS.png "Solution schema")
+![CRT-HWS.](media/FIF-CRT-HWS.png "Solution schema")
 
 **Fiscal document provider and connector based on CRT, Fiscal connector connects to fiscal device or service.**
 
@@ -83,7 +83,7 @@ The following examples shows a typical fiscal registration execution flow for a 
 1. The POS printing receipt via printer, connected to the hardware station if it necessary.
 1. CRT saves the response to the channel database.
 
-![Solution schema.](media/FIF-CRT-CRT.png "Solution schema")
+![CRT-CRT.](media/FIF-CRT-CRT.png "Solution schema")
 
 **Fiscal document provider and connector based on CRT, fiscal service based on CRT.**
 
@@ -99,11 +99,11 @@ The following examples shows a typical fiscal registration execution flow for a 
 
 Fiscal document provider and fiscal connector can be based on CRT core functionality - Localization for France, as example (Solution schema 1).
 
-![Solution schema 1.](media/FIF-CRT-CRT-SGN-CORE.png "Solution schema 1")
+![CRT-CRT-SGN-CORE.](media/FIF-CRT-CRT-SGN-CORE.png "Solution schema 1")
 
 
 Also, document provider and fiscal connector can be delivered as a CRT sample - Localization for Norway, as example (Solution schema 2).
-![Solution schema 2.](media/FIF-CRT-CRT-SGN.png "Solution schema 2")
+![CRT-CRT-SGN.](media/FIF-CRT-CRT-SGN.png "Solution schema 2")
 
 **Fiscal document provider based on CRT, Fiscal connector on POS.**
 
@@ -116,7 +116,7 @@ Also, document provider and fiscal connector can be delivered as a CRT sample - 
 1. The POS printing receipt via printer, connected to the hardware station if it necessary.
 1. CRT saves the response to the channel database.
 
-![Solution schema.](media/FIF-CRT-POS.png "Solution schema")
+![CRT-POS.](media/FIF-CRT-POS.png "Solution schema")
 
 ## Error handling
 
