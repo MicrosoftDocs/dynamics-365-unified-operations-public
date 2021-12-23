@@ -92,7 +92,7 @@ This configuration is used when fiscal registration is done via an external web-
 
 ![CRT-CRT.](media/FIF-CRT-CRT.png "Solution schema")
 
-### Fiscal registration is done internaly in CRT
+### Fiscal registration is done internally in CRT
 
 This configuration is used when no fiscal device or service is required. For example- it is used when fiscal registration is done by digital signing of sales transactions. In this case the fiscal document provider and connector are located on CRT. 
 
