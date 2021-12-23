@@ -41,18 +41,18 @@ The fiscal integration functionality is a framework that provides a common solut
 
 To support other scenarios that aren't supported by a fiscal integration sample, to integrate Retail POS with other fiscal devices or services, or to cover requirements of other countries or regions, you must either extend an existing fiscal integration sample or create a new sample by using an existing sample as an example.
 
-## Fiscal registration process and fiscal integration samples for fiscal devices
+## Fiscal registration process and fiscal integration samples for fiscal devices and services
 
 A fiscal registration process in Retail POS can consist of one or more steps. Each step involves fiscal registration of specific transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration in a fiscal device or service:
 
-- **Fiscal document provider** – This component serializes transaction/event data in the format that is also used for interaction with the fiscal device, parses responses from the fiscal device, and stores the responses in the channel database. The extension also defines the specific transactions and events that must be registered.
+- **Fiscal document provider** – This component serializes transaction/event data in the format that is also used for interaction with the fiscal device or service, parses responses from the fiscal device or service, and stores the responses in the channel database. The extension also defines the specific transactions and events that must be registered.
 
-- **Fiscal connector** - This component initializes the communication with the fiscal device, sends requests and direct commands to the fiscal device based on the transaction/event data that is extracted from the fiscal document, and receives responses from the fiscal device
+- **Fiscal connector** - This component initializes the communication with the fiscal device or service, sends requests or direct commands to the fiscal device or service based on the transaction/event data that is extracted from the fiscal document, and receives responses from the fiscal device or service
 
-A fiscal integration sample for a fiscal device contains the CRT, Hardware station, POS extensions for a fiscal document provider and a fiscal connector, respectively. It also contains the following component configurations:
+A fiscal integration sample may contain the CRT, Hardware station, and POS extensions for a fiscal document provider and a fiscal connector, respectively. It also contains the following component configurations:
 
-- **Fiscal document provider configuration** – This configuration defines an output method and a format for fiscal documents. It also contains a data mapping for taxes and payment methods, to make data from Retail POS compatible with the values that are predefined in the fiscal device firmware.
-- **Fiscal connector configuration** – This configuration defines the physical communication with the specific fiscal device.
+- **Fiscal document provider configuration** – This configuration defines an output method and a format for fiscal documents. It also contains a data mapping for taxes and payment methods, to make data from Retail POS compatible with the values that are predefined in the fiscal device or service firmware.
+- **Fiscal connector configuration** – This configuration defines the physical communication with the specific fiscal device or service.
 
 A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change their parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
