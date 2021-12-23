@@ -61,7 +61,7 @@ This argument can be only defined as a constant by using one of the following su
     - `"<LABEL ID>"`
 
 > [!NOTE]
-> An exception is thrown at design time if no label has been found by using the provided label id.
+> A validation error is shown at design time on the [Formula designer](er-advanced-formula-editor.md) page if no label has been found by using the provided label id.
 
 ### Language
 
@@ -74,7 +74,7 @@ A string value that represents a language code.
 This argument can be defined either as a text constant or as a path to a data source field that returns a *String* value.
 
 > [!NOTE]
-> An exception is thrown at design time if no language code has been found by using the provided `language` argument when it has been specified as a text constant.
+> A validation error is shown at design time if no language code has been found by using the provided `language` argument when it has been specified as a text constant.
 >
 > The translation for the `EN-US` system language is returned at runtime for a specified label if no language code has been found by using the provided `language` argument.
 
