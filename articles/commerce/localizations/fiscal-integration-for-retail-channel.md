@@ -80,6 +80,7 @@ The following examples shows a typical fiscal registration execution flow for a 
 1. The POS sends the fiscal document that CRT prepares back to a CRT.
 1. The CRT runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
 1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
+1. The POS printing receipt via printer, connected to the hardware station if it necessary.
 1. CRT saves the response to the channel database.
 
 ![Solution schema.](media/FIF-CRT-CRT.png "Solution schema")
@@ -92,10 +93,9 @@ The following examples shows a typical fiscal registration execution flow for a 
 1. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
 1. The POS sends the fiscal document that CRT prepares back to a CRT.
 1. The CRT runs the fiscal connector that processes the fiscal document with internal fiscal service. 
-  1.  Based on CRT core functionality - Localization for France, as example (Solution schema 1).
-  2.  Based on CRT sample (Norway localizxation as example) (Solution shema 2)
-3. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
-4. CRT saves the response to the channel database.
+1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
+1. The POS printing receipt via printer, connected to the hardware station if it necessary.
+1. CRT saves the response to the channel database.
 
 Fiscal document provider and fiscal connector can be based on CRT core functionality - Localization for France, as example (Solution schema 1).
 
