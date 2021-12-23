@@ -56,7 +56,9 @@ A fiscal integration sample for a fiscal device contains the CRT, Hardware stati
 
 A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change their parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-The following example shows a typical fiscal registration execution flow for a fiscal device. The flow starts with an event in the POS (for example, finalization of a sales transaction) and implements the following sequence of steps:
+The following examples shows a typical fiscal registration execution flow for a fiscal device. The flow starts with an event in the POS (for example, finalization of a sales transaction) and implements the following sequence of steps:
+
+**Fiscal document provider based on CRT, Fiscal connector on the hardware station.**
 
 1. The POS requests a fiscal document from CRT.
 1. CRT determines whether the current event requires fiscal registration.
@@ -68,6 +70,21 @@ The following example shows a typical fiscal registration execution flow for a f
 1. CRT saves the response to the channel database.
 
 ![Solution schema.](media/FIF-CRT-HWS.png "Solution schema")
+
+**Fiscal document provider and connector based on CRT, Fiscal connector connects to fiscal device or service.**
+
+1. The POS requests a fiscal document from CRT.
+1. CRT determines whether the current event requires fiscal registration.
+1. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
+1. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
+1. The POS sends the fiscal document that CRT prepares back to a CRT.
+1. The CRT runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
+1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
+1. CRT saves the response to the channel database.
+
+![Solution schema.](media/FIF-CRT-CRT.png "Solution schema")
+
+
 
 ## Error handling
 
