@@ -126,11 +126,11 @@ The fiscal integration framework provides the following options to handle failur
 - **Cancel** – This option lets operators postpone the fiscal registration of the current transaction or event if it fails. After the registration is postponed, the operator can continue to work on the POS and can complete any operation that the fiscal registration isn't required for. When any event that requires the fiscal registration occurs in the POS (for example, a new transaction is opened), the error handling dialog box automatically appears to notify the operator that the previous transaction wasn't correctly registered and to provide the error handling options.
 - **Skip** – Operators can use this option when the fiscal registration can be omitted under specific conditions and regular operations can be continued on the POS. For example, this option can be used when a sales transaction that the fiscal registration failed for can be registered in a special paper journal.
 - **Mark as registered** – Operators can use this option when the transaction was actually registered in the fiscal device (for example, a fiscal receipt was printed), but a failure occurred when the fiscal response was being saved to the channel database.
-- **Postponed** – Operators can use this option when the transaction was not registered because registration service was unavailable. 
+- **Postponed** – Operators can use this option when the transaction was not registered because the registration service was unavailable. 
 > [!NOTE]
 > The **Skip**, **Mark as registered** and **Postponed** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
 
-The **Skip** and **Mark as registered** options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+The **Skip**, **Mark as registered** and **Postponed**  options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### Optional fiscal registration
 
@@ -141,7 +141,7 @@ Fiscal registration might be mandatory for some operations but optional for othe
 If the fiscal registration of a transaction or event has been postponed after a failure (for example, if the operator selected **Cancel** in the error handling dialog box), you can manually rerun the fiscal registration by invoking a corresponding operation. For more details, see [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
 ### Registration of postponed transaction
-Postponed transaction collecth in headquoter. Administrator setup spetial periodic operation, which posting quue of transactions to the fiscal service. This operation runs by the shedule.
+The postponed transactions are collecting in headquarters. Administrator setup specific periodic operation, which posting queue of transactions to the fiscal service. This operation runs by the schedule..
 
 
 ### Fiscal registration health check
