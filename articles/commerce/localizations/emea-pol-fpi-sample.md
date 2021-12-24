@@ -224,7 +224,7 @@ The fiscal printer integration sample for Poland is based on the [fiscal integra
 
 ### Commerce runtime extension design
 
-For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices and services](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+The purpose of the extension that is a fiscal document provider is to generate printer-specific documents and handle responses from the fiscal printer. This extension generates a set of printer-specific commands in JavaScript Object Notation (JSON) format that are defined by POSNET specification 19-3678.
 
 #### Request handler
 
