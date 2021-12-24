@@ -34,6 +34,7 @@ This topic includes information and links to documentation resources for Indones
 
 - [VAT declaration for Indonesia](apac-idn-ppn-declaration.md)
 - [Invoicing for Indonesia (ID-00002)](apac-idn-invoicing.md)
+- [Withholding tax report for Indonesia](apac-idn-wht-declaration.md)
 
 ## Additional resources
 

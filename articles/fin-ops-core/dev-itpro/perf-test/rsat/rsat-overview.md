@@ -1,5 +1,5 @@
 ---
-title: Regression suite automation tool
+title: Regression suite automation tool (contains video)
 description: The Regression suite automation tool lets you record business tasks using the task recorder and convert them into automated tests without writing code.
 author: FrankDahl
 ms.date: 01/15/2021
