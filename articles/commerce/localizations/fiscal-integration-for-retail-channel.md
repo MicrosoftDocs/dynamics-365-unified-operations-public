@@ -56,74 +56,42 @@ A fiscal integration sample may contain the CRT, Hardware station, and POS exten
 
 A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change their parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-The following examples show  typical fiscal registration execution flows for fiscal devices or services. The flow starts with an event in the POS (for example, finalization of a sales transaction) and implements the following sequence of steps:
+The following is a common fiscal registration flow that starts with an event in the POS (for example, finalization of a sales transaction) and implements a predefined sequence of steps that involves other Commerce components (such as the CRT and Hardware station):
+1.	The POS requests a fiscal document from the fiscal integration framework (FIF).
+1.	The FIF determines whether the current event requires fiscal registration.
+1.	Based on the fiscal registration process settings, the FIF identifies a fiscal connector and a corresponding fiscal document provider to use for the fiscal registration.
+1.	The FIF runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
+1.	The FIF returns the generated fiscal document to the POS.
+1.	The POS request the FIF to submit the fiscal document to the fiscal device or service.
+1.	The FIF runs the fiscal connector that processes the fiscal document and submits it to the fiscal device or service.
+1.	The FIF returns the fiscal response (that is, the response of the fiscal device or service) to the POS.
+1.	The POS analyzes the fiscal response to determine whether the fiscal registration was successful. If needed, the POS requests the FIF to handle the error(s) that occurred. 
+1.	The POS requests the FIF to process and save the fiscal response.
+1.	The fiscal document provider processes the fiscal response, including parsing the response and extracting extended data from IT.
+1.	The FIF saves the response and the extended data to the channel database.
+1.	If it`s needed, the POS prints a receipt via a regular receipt printer that is connected to Hardware station. The receipt can contain required data from the fiscal response.
+ 
+The following examples show fiscal registration execution flows for typical fiscal devices or services.
+ 
+### Fiscal registration is done via a device connected to the hardware station
+This configuration is used when a physical fiscal device, such as a fiscal printer, is connected to the hardware station. This is also applicable when the communication with a fiscal device or service is done via a software that is installed on the hardware station. In this case, the fiscal document provider is located on the CRT and the fiscal connector is located on Hardware station.
 
-### Fiscal registration is done via a device connected to the hardware station 
+![CRT-HWS.](media/FIF-CRT-HWS.png "Fiscal registration is done via a device connected to the hardware station")
 
-This configuration is used when a physical fiscal device is connected to the hardware station. This is also applicable when the communication with a fiscal device or service is done via a software that is installed on the hardware station.  In this case the fiscal document provider is located on CRT and the fiscal connector is located on the hardware station.
+### Fiscal registration is done via an external service
+This configuration is used when fiscal registration is done via an external service, such as a web-service that is operated by the tax authority. In this case, both the fiscal document provider and the fiscal connector are located on the CRT.
 
-1. The POS requests a fiscal document from CRT.
-1. CRT determines whether the current event requires fiscal registration.
-1. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
-1. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
-1. The POS sends the fiscal document that the fiscal document provider prepared to Hardware station.
-1. The Hardware station runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
-1. The fiscal connector returns the fiscal response to the POS.
-1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
-1. If it`s needed, the POS prints a receipt via a regular receipt printer that is connected to the hardware station.
-1. CRT saves the response to the channel database.
+![CRT-CRT.](media/FIF-CRT-CRT.png "Fiscal registration is done via an external service")
+ 
+### Fiscal registration is done internally in the CRT
+This configuration is used when no external fiscal device or service is required for fiscal registration. For example, it is used when fiscal registration is done by digital signing of sales transactions. In this case, both the fiscal document provider and the fiscal connector are located on the CRT.
 
-![CRT-HWS.](media/FIF-CRT-HWS.png "Solution schema")
+![CRT-CRT-SGN.](media/FIF-CRT-CRT-SGN.png "Fiscal registration is done internally in the CRT")
 
-### Fiscal registration is done via an external web-service
+### Fiscal registration is done via a device or service in the local network
+This configuration is used when a physical fiscal device or fiscal service is present in the local network of the store and provides an HTTPS API. In this case, the fiscal document provider is located on the CRT and the fiscal connector is located on the POS.
 
-This configuration is used when fiscal registration is done via an external web-service.  In this case the fiscal document provider and connector are located on CRT. 
-
-1. The POS requests a fiscal document from CRT.
-1. CRT determines whether the current event requires fiscal registration.
-1. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
-1. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
-1. The POS sends the fiscal document that the fiscal document provider prepared back to a CRT.
-1. The CRT runs the fiscal connector that processes the fiscal document and communicates it to the fiscal service.
-1. The fiscal connector returns the fiscal response to the POS.
-1. The POS analyzes the response from the fiscal service to determine whether the fiscal registration was successful.
-1. If it`s needed, the POS prints a receipt via a regular receipt printer that is connected to the hardware station.
-1. CRT saves the response to the channel database.
-
-![CRT-CRT.](media/FIF-CRT-CRT.png "Solution schema")
-
-### Fiscal registration is done internally in CRT
-
-This configuration is used when no fiscal device or service is required. For example- it is used when fiscal registration is done by digital signing of sales transactions. In this case the fiscal document provider and connector are located on CRT. 
-
-1. The POS requests a fiscal document from CRT.
-1. CRT determines whether the current event requires fiscal registration.
-1. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
-1. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
-1. The POS sends the fiscal document that the fiscal document provider prepared back to CRT.
-1. The CRT runs the fiscal connector that processes the fiscal document. 
-1. The fiscal connector returns the fiscal response to the POS.
-1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
-1. If it`s needed, the POS prints a receipt via a regular receipt printer that is connected to the hardware station.
-1. CRT saves the response to the channel database.
-
-![CRT-CRT-SGN.](media/FIF-CRT-CRT-SGN.png "Solution schema 2")
-
-### Fiscal registration is done via a device or service in the local network  
-
-This configuration is used when a physical fiscal device or fiscal service is present in the local network and provides an HTTPS API. In this case the fiscal document provider is located on CRT and the fiscal connector is located on the POS.
-
-1. The POS requests a fiscal document from CRT.
-1. CRT determines whether the current event requires fiscal registration.
-1. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
-1. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
-1. The POS runs the local fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
-1. The fiscal connector returns the fiscal response to the POS.
-1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
-1. If it`s needed, the POS prints a receipt via a regular receipt printer that is connected to the hardware station.
-1. CRT saves the response to the channel database.
-
-![CRT-POS.](media/FIF-CRT-POS.png "Solution schema")
+![CRT-POS.](media/FIF-CRT-POS.png "Fiscal registration is done via a device or service in the local network")
 
 ## Error handling
 
