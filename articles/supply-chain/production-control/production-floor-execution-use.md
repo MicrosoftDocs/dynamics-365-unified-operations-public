@@ -161,6 +161,13 @@ When the worker has entered the quantity to report in the **Report progress** or
 - **Reserved** – The quantity of material that has been physical reserved in inventory. 
 - **Unit** – The BOM unit 
 
+The right side of the dialog has following information
+- **Product number** - Product master and product variant
+- **Estimated** – The estimated quantity to consume
+- **Started** – The quantity that has been started on the production job.
+- **Remaining quantity** – The quantity that remains to be consumed compared to what has been estimated.
+- **Released quantity** – The quantity that has been consumed.
+
 The worker can specify the quantity to adjust for a material by selecting the **Adjust consumption** button. After the quantity has been confirmed, the quantity in the **Consumption** column is updated with the adjusted quantity. 
 
 When the **Adjust material** button is selected, a production picking list journal is created. This journal contains the same items and quantities as the **Adjust material** list. When the worker adjusts a quantity in the **Adjust material** dialog, the field **Proposal** on the corresponding journal line is updated with the same quantity. If the **Cancel** button is select in the **Adjust material** dialog, the picking list is deleted. If the **OK** button is selected, the picking list is not deleted, but will be posted when the job is reported in the **Report scrap** or **Report progress** dialog. If the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog, the picking list will be deleted.
@@ -172,8 +179,8 @@ The **Adjust material** button can be configured to appear in the right tool bar
 
 In the **Adjust material** dialog, the worker can make and adjust material reservations. This is done from the **Reserve material** dialog opened from the **Reserve material** button. The dialog shows the physical available inventory for the item per storage and tracking dimension. If the material is enabled for the advanced warehouse processes, only the physical availably inventory for the production input location for the material is shown in the list. The production input location is defined on the resource where the production job is planned. Read more about how to setup the production input location here: https://docs.microsoft.com/en-us/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production. If the item number is batch or serial number controlled, the full list of physical available batch and serial numbers will be shown. The worker can specify a quantity to reserve by selecting the **Reserve material** button and remove an existing reservation by selecting the **Remove reservation** button. 
 
-**Note**
-Reservations made by the worker in the **Reserve matrerial** dialog will remain when the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog. 
+> [!NOTE]
+> Reservations made by the worker in the **Reserve matrerial** dialog will remain when the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog. 
 
 
 ## Completing a job and starting a new job
