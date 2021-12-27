@@ -31,10 +31,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-As part of the requirements for LCS solutions for localization and translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This article provides background information that will help you start to use Electronic reporting to create configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
+As part of the requirements for LCS (the Microsoft Dynamics Lifecycle Services) solutions for localization and translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This article provides background information that will help you start to use Electronic reporting to create configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
+
+Electronic reporting (ER) is a configurable tool that helps you create and maintain regulatory electronic reporting and payments, based on the following three concepts:
+ - Configuration instead of coding
+ - One configuration for multiple Dynamics 365 Finance releases
+ - Easy or automatic upgrade
 
 
-## Basic concepts
+ER provides one common way (through LCS) for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.
+
+ER lets you set up data models that are domain-specific and independent of the database as data sources for document formats. Formats can be configured based on these domain-specific data models by using simple visual tools that are similar to Excel. Data models and formats support versioning, and formats can be date-effective.
+
+
 ### Main data flow
 
 [![GER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
