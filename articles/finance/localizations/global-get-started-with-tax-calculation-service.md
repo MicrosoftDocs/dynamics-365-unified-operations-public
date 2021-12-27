@@ -67,7 +67,7 @@ The following diagram shows the high level runtime design of Tax Calculation. As
 
 
 
-<img src="media\Tax Calculation_Runtime logic.png"/>
+<img title=" Tax Calculation Runtime Design" alt=" Tax Calculation Runtime Design" src="media\Tax Calculation_Runtime logic.png"/>
 
 
 
