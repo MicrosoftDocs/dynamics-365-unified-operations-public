@@ -977,7 +977,7 @@
           - name: Posting definitions
             href: general-ledger/posting-definitions.md
           - name: Posting definition examples
-             href: general-ledger/example-posting-definitions.md
+            href: general-ledger/example-posting-definitions.md
         - name: Currency
           items:
           - name: Import currency exchange rates
