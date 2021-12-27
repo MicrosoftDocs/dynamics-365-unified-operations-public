@@ -988,38 +988,38 @@
             href: general-ledger/ledger-allocation-rules.md
           - name: Process ledger allocation journal
             href: general-ledger/tasks/process-ledger-allocation-journal.md
-     - name: Journals and source documents
-       items:
-       - name: Journals
-         items:
-         - name: General journal processing
-           href: general-ledger/general-journal-processing.md
-         - name: Post periodic journals
-           href: general-ledger/tasks/post-periodic-journals.md
-         - name: Create and validate journals
-           href: general-ledger/tasks/create-validate-journals.md
-         - name: Journal posting failure due to imbalance
-           href: general-ledger/posting-fail-imbalance.md
-         - name: Reverse journal posting
-           href: general-ledger/reverse-journal-posting.md         
-         - name: Why can't I reverse this transaction?
-           href: general-ledger/cant-reverse-transctns.md
-         - name: Create a journal entry using a template
-           href: general-ledger/tasks/create-journal-entry-template.md
-         - name: Process ledger allocation journal
-           href: general-ledger/tasks/process-ledger-allocation-journal.md
-         - name: View journal entries or transactions
-           href: general-ledger/tasks/view-journal-entries-or-transactions.md
-         - name: View a related intercompany voucher from a journal
-           href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
-         - name: Publish journal lines and documents from Excel
-           href: general-ledger/open-lines-excel-journals-documents.md
-         - name: Create ledger accrual transactions
-           href: general-ledger/tasks/create-ledger-accrual-transactions.md
-         - name: One voucher
-           href: general-ledger/one-voucher.md
-         - name: One voucher FAQ
-           href: general-ledger/one-voucher-faq.md
+      - name: Journals and source documents
+        items:
+        - name: Journals
+          items:
+          - name: General journal processing
+            href: general-ledger/general-journal-processing.md
+          - name: Post periodic journals
+            href: general-ledger/tasks/post-periodic-journals.md
+          - name: Create and validate journals
+            href: general-ledger/tasks/create-validate-journals.md
+          - name: Journal posting failure due to imbalance
+            href: general-ledger/posting-fail-imbalance.md
+          - name: Reverse journal posting
+            href: general-ledger/reverse-journal-posting.md         
+          - name: Why can't I reverse this transaction?
+            href: general-ledger/cant-reverse-transctns.md
+          - name: Create a journal entry using a template
+            href: general-ledger/tasks/create-journal-entry-template.md
+          - name: Process ledger allocation journal
+            href: general-ledger/tasks/process-ledger-allocation-journal.md
+          - name: View journal entries or transactions
+            href: general-ledger/tasks/view-journal-entries-or-transactions.md
+          - name: View a related intercompany voucher from a journal
+            href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
+          - name: Publish journal lines and documents from Excel
+            href: general-ledger/open-lines-excel-journals-documents.md
+          - name: Create ledger accrual transactions
+            href: general-ledger/tasks/create-ledger-accrual-transactions.md
+          - name: One voucher
+            href: general-ledger/one-voucher.md
+          - name: One voucher FAQ
+            href: general-ledger/one-voucher-faq.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
