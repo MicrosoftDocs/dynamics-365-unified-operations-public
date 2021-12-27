@@ -1034,6 +1034,92 @@
           href: general-ledger/view-journal-entries-transactions.md
         - name: Trial balance with transactional detail report
           href: public-sector/general-ledger-public-sector-trial-balance.md
+      - name: Sales tax
+        items:
+        - name: Sales tax overview
+          href: general-ledger/indirect-taxes-overview.md
+        - name: Sales tax rates based on the marginal base and calculation methods
+          href: general-ledger/marginal-base-field.md
+        - name: Sales tax payments and rounding rules
+          href: general-ledger/round-sales-tax-payments.md
+        - name: Sales tax calculation methods in the Origin field
+          href: general-ledger/sales-tax-calculation-methods-origin-field.md
+        - name: Whole amount and interval calculation options for sales tax codes
+          href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+        - name: Sales tax calculation on general journal lines
+          href: general-ledger/sales-tax-calculation-on-general-journal.md          
+        - name: Calculate and adjust sales tax on a vendor invoice
+          href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+        - name: Enable delayed tax calculation on journal
+          href: general-ledger/enable-delayed-tax-calculation.md         
+        - name: Create a sales tax payment
+          href: general-ledger/tasks/create-sales-tax-payment.md
+        - name: Create sales tax transactions on documents
+          href: general-ledger/tasks/create-sales-tax-transactions-documents.md
+        - name: Set up ledger posting groups for sales tax
+          href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+        - name: Set up sales tax authorities
+          href: general-ledger/tasks/set-up-sales-tax-authorities.md
+        - name: Set up sales tax codes
+          href: general-ledger/tasks/set-up-sales-tax-codes.md
+        - name: Set up sales tax groups and item sales tax groups
+          href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+        - name: Set up sales tax reporting codes
+          href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+        - name: Dual currency support for sales tax
+          href: general-ledger/dual-currency-for-tax.md          
+        - name: Sales tax specification by ledger transaction report
+          href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+        - name: Set up sales tax settlement periods
+          href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+        - name: View posted sales tax transactions
+          href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
+        - name: Print the Sales tax payment by code report
+          href: general-ledger/print-sales-tax-payment-by-code-report.md
+      - name: Withholding tax
+        items:
+        - name: Set up withholding tax
+          href: general-ledger/tasks/set-up-withholding-tax.md
+        - name: Global withholding tax
+          items: 
+          - name: Global withholding tax overview
+            href: general-ledger/global-withholding-tax-overview.md
+          - name: Set up global withholding tax
+            href: general-ledger/set-up-global-withholding-tax.md
+          - name: Withholding tax in purchase transactions
+            href: general-ledger/withholding-tax-in-purchase-transactions.md
+          - name: Withholding tax in sales transactions
+            href: general-ledger/withholding-tax-in-sales-transactions.md
+          - name: Create a withholding tax payment
+            href: general-ledger/create-a-withholding-tax-payment.md
+       - name: Audit workbench
+        items:
+        - name: Audit policy rules
+          href: general-ledger/audit-policy-rules.md
+        - name: Audit policy violations and cases
+          href: general-ledger/audit-policy-violations-cases.md
+        - name: Define audit policies for source documents
+          href: general-ledger/tasks/define-audit-policies-source-documents.md
+      - name: Troubleshooting
+        items:
+        - name: Change the accounting or reporting currency
+          href: general-ledger/add-change-acctg-rprtg-crrncy.md
+        - name: Change or reassign a ledger calendar
+          href: general-ledger/change-mdfy-clndr-to-ledger.md
+        - name: Reverse settings on journals and lines
+          href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+        - name: Year-end close missing opening balances
+          href: general-ledger/yec-mssng-open-blnces.md
+        - name: How do I set up balancing financial dimensions?
+          href: general-ledger/set-up-balance-dimensions.md
+        - name: Open financial journal templates in Office
+          href: general-ledger/open-fincl-jrnls-in-office.md
+        - name: Default financial dimensions on financial journals
+          href: general-ledger/dimension-default-values.md
+        - name: Journal posting failure due to imbalance
+          href: general-ledger/posting-fail-imbalance.md
+        - name: Why can't I reverse this transaction?
+          href: general-ledger/cant-reverse-transctns.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
