@@ -1020,6 +1020,20 @@
             href: general-ledger/one-voucher.md
           - name: One voucher FAQ
             href: general-ledger/one-voucher-faq.md
+        - name: Source documents
+          items:
+          - name: Accounting distributions
+            href: accounts-payable/accounting-distributions.md
+          - name: Subledger  transfer to the General ledger
+            href: general-ledger/subledger-transfer.md
+          - name: Accounting source explorer
+            href: accounts-payable/accounting-source-explorer.md
+      - name: Reports and inquiries
+        items:
+        - name: View journal entries and transactions
+          href: general-ledger/view-journal-entries-transactions.md
+        - name: Trial balance with transactional detail report
+          href: public-sector/general-ledger-public-sector-trial-balance.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
