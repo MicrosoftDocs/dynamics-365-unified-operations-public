@@ -952,7 +952,7 @@
             href: general-ledger/add-change-acctg-rprtg-crrncy.md
           - name: Change or reassign a ledger calendar
             href: general-ledger/change-mdfy-clndr-to-ledger.md
-     - name: Financial reporting
+    - name: Financial reporting
       items:
       - name: Get started with Financial reporting
         href: general-ledger/financial-reporting-getting-started.md
