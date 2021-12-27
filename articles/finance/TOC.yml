@@ -1092,82 +1092,82 @@
             href: general-ledger/withholding-tax-in-sales-transactions.md
           - name: Create a withholding tax payment
             href: general-ledger/create-a-withholding-tax-payment.md
-       - name: Audit workbench
+        - name: Audit workbench
+          items:
+          - name: Audit policy rules
+            href: general-ledger/audit-policy-rules.md
+          - name: Audit policy violations and cases
+            href: general-ledger/audit-policy-violations-cases.md
+          - name: Define audit policies for source documents
+            href: general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Troubleshooting
+          items:
+          - name: Change the accounting or reporting currency
+            href: general-ledger/add-change-acctg-rprtg-crrncy.md
+          - name: Change or reassign a ledger calendar
+            href: general-ledger/change-mdfy-clndr-to-ledger.md
+          - name: Reverse settings on journals and lines
+            href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+          - name: Year-end close missing opening balances
+            href: general-ledger/yec-mssng-open-blnces.md
+          - name: How do I set up balancing financial dimensions?
+            href: general-ledger/set-up-balance-dimensions.md
+          - name: Open financial journal templates in Office
+            href: general-ledger/open-fincl-jrnls-in-office.md
+          - name: Default financial dimensions on financial journals
+            href: general-ledger/dimension-default-values.md
+          - name: Journal posting failure due to imbalance
+            href: general-ledger/posting-fail-imbalance.md
+          - name: Why can't I reverse this transaction?
+            href: general-ledger/cant-reverse-transctns.md
+      - name: Financial reporting
         items:
-        - name: Audit policy rules
-          href: general-ledger/audit-policy-rules.md
-        - name: Audit policy violations and cases
-          href: general-ledger/audit-policy-violations-cases.md
-        - name: Define audit policies for source documents
-          href: general-ledger/tasks/define-audit-policies-source-documents.md
-      - name: Troubleshooting
-        items:
-        - name: Change the accounting or reporting currency
-          href: general-ledger/add-change-acctg-rprtg-crrncy.md
-        - name: Change or reassign a ledger calendar
-          href: general-ledger/change-mdfy-clndr-to-ledger.md
-        - name: Reverse settings on journals and lines
-          href: general-ledger/rvrs-settgs-on-jrnls-lines.md
-        - name: Year-end close missing opening balances
-          href: general-ledger/yec-mssng-open-blnces.md
-        - name: How do I set up balancing financial dimensions?
-          href: general-ledger/set-up-balance-dimensions.md
-        - name: Open financial journal templates in Office
-          href: general-ledger/open-fincl-jrnls-in-office.md
-        - name: Default financial dimensions on financial journals
-          href: general-ledger/dimension-default-values.md
-        - name: Journal posting failure due to imbalance
-          href: general-ledger/posting-fail-imbalance.md
-        - name: Why can't I reverse this transaction?
-          href: general-ledger/cant-reverse-transctns.md
-    - name: Financial reporting
-      items:
-      - name: Get started with Financial reporting
-        href: general-ledger/financial-reporting-getting-started.md
-      - name: Financial reporting overview
-        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
-      - name: Financial report components
-        href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
-      - name: Currency capabilities in financial reporting
-        href: general-ledger/financial-reporting-currency-capability.md
-      - name: Retained earnings calculation in Financial reporting
-        href: general-ledger/retained-earnings-enhancements.md
-      - name: Balance sheet financial reports
-        href: general-ledger/balance-sheet-financial-reports.md
-      - name: Generate financial reports
-        href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
-      - name: Income statement financial report
-        href: general-ledger/income-statement-financial-report.md
-      - name: Trial balance financial reports
-        href: general-ledger/trial-balance-financial-reports.md
-      - name: View financial reports
-        href: general-ledger/view-financial-reports.md
-      - name: Report designer interface
-        href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
-      - name: Keyboard shortcuts for financial reporter
-        href: general-ledger/financial-reporting-keyboard-shortcuts.md
-      - name: User preferences in financial report designer
-        href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
-      - name: Advanced formatting options
-        href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
-      - name: Organize report components in report designer
-        href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
-      - name: Report definitions
-        href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
-      - name: Row definitions
-        href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
-      - name: Column definitions
-        href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
-      - name: Reporting tree definitions in financial reports
-        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
-      - name: Modify row definition cells
-        href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
-      - name: Reset the financial reporting data mart
-        href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
-      - name: When to reset a data mart
-        href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
-      - name: Financial reporting FAQ
-        href: general-ledger/financial-reporting-faq.md
+        - name: Get started with Financial reporting
+          href: general-ledger/financial-reporting-getting-started.md
+        - name: Financial reporting overview
+          href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
+        - name: Financial report components
+          href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+        - name: Currency capabilities in financial reporting
+          href: general-ledger/financial-reporting-currency-capability.md
+        - name: Retained earnings calculation in Financial reporting
+          href: general-ledger/retained-earnings-enhancements.md
+        - name: Balance sheet financial reports
+          href: general-ledger/balance-sheet-financial-reports.md
+        - name: Generate financial reports
+          href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
+        - name: Income statement financial report
+          href: general-ledger/income-statement-financial-report.md
+        - name: Trial balance financial reports
+          href: general-ledger/trial-balance-financial-reports.md
+        - name: View financial reports
+          href: general-ledger/view-financial-reports.md
+        - name: Report designer interface
+          href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
+        - name: Keyboard shortcuts for financial reporter
+          href: general-ledger/financial-reporting-keyboard-shortcuts.md
+        - name: User preferences in financial report designer
+          href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
+        - name: Advanced formatting options
+          href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
+        - name: Organize report components in report designer
+          href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
+        - name: Report definitions
+          href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
+        - name: Row definitions
+          href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
+        - name: Column definitions
+          href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+        - name: Reporting tree definitions in financial reports
+          href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
+        - name: Modify row definition cells
+          href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
+        - name: Reset the financial reporting data mart
+          href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
+        - name: When to reset a data mart
+          href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
+        - name: Financial reporting FAQ
+          href: general-ledger/financial-reporting-faq.md
     - name: Finance insights
       items:
       - name: Finance insights home page
