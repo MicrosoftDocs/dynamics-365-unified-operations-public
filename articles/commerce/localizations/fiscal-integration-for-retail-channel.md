@@ -4,30 +4,21 @@
 title: Overview of fiscal integration for Commerce channels
 description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 09/22/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2019-1-16
-ms.dyn365.ops.version: 10.0
+ms.search.validFrom: 2017-06-20
 
 ---
 # Overview of fiscal integration for Commerce channels
 
 [!include [banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 
@@ -54,7 +45,7 @@ A fiscal integration sample may contain the CRT, Hardware station, and POS exten
 - **Fiscal document provider configuration** – This configuration defines an output method and a format for fiscal documents. It also contains a data mapping for taxes and payment methods, to make data from Retail POS compatible with the values that are predefined in the fiscal device or service firmware.
 - **Fiscal connector configuration** – This configuration defines the physical communication with the specific fiscal device or service.
 
-A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change their parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change configuration parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 The following is a common fiscal registration flow that starts with an event in the POS (for example, finalization of a sales transaction) and implements a predefined sequence of steps that involves other Commerce components (such as the CRT and Hardware station):
 1.	The POS requests a fiscal document from the fiscal integration framework (FIF).
@@ -69,29 +60,33 @@ The following is a common fiscal registration flow that starts with an event in 
 1.	The POS requests the FIF to process and save the fiscal response.
 1.	The fiscal document provider processes the fiscal response, including parsing the response and extracting extended data from IT.
 1.	The FIF saves the response and the extended data to the channel database.
-1.	If it`s needed, the POS prints a receipt via a regular receipt printer that is connected to Hardware station. The receipt can contain required data from the fiscal response.
+1.	If needed, the POS prints a receipt via a regular receipt printer that is connected to Hardware station. The receipt can contain required data from the fiscal response.
  
 The following examples show fiscal registration execution flows for typical fiscal devices or services.
  
-### Fiscal registration is done via a device connected to the hardware station
-This configuration is used when a physical fiscal device, such as a fiscal printer, is connected to the hardware station. This is also applicable when the communication with a fiscal device or service is done via a software that is installed on the hardware station. In this case, the fiscal document provider is located on the CRT and the fiscal connector is located on Hardware station.
+### Fiscal registration is done via a device connected to the Hardware station
 
-![CRT-HWS.](media/FIF-CRT-HWS.png "Fiscal registration is done via a device connected to the hardware station")
+This configuration is used when a physical fiscal device, such as a fiscal printer, is connected to the Hardware station. This is also applicable when the communication with a fiscal device or service is done via a software that is installed on the Hardware station. In this case, the fiscal document provider is located on the CRT and the fiscal connector is located on Hardware station.
+
+![Fiscal registration done via a device connected to the Hardware station](media/FIF-CRT-HWS.png)
 
 ### Fiscal registration is done via an external service
-This configuration is used when fiscal registration is done via an external service, such as a web-service that is operated by the tax authority. In this case, both the fiscal document provider and the fiscal connector are located on the CRT.
 
-![CRT-CRT.](media/FIF-CRT-CRT.png "Fiscal registration is done via an external service")
+This configuration is used when fiscal registration is done via an external service, such as a web service that is operated by the tax authority. In this case, both the fiscal document provider and the fiscal connector are located on the CRT.
+
+![Fiscal registration done via an external service](media/FIF-CRT-CRT.png)
  
 ### Fiscal registration is done internally in the CRT
+
 This configuration is used when no external fiscal device or service is required for fiscal registration. For example, it is used when fiscal registration is done by digital signing of sales transactions. In this case, both the fiscal document provider and the fiscal connector are located on the CRT.
 
-![CRT-CRT-SGN.](media/FIF-CRT-CRT-SGN.png "Fiscal registration is done internally in the CRT")
+![Fiscal registration is done internally in the CRT](media/FIF-CRT-CRT-SGN.png)
 
 ### Fiscal registration is done via a device or service in the local network
+
 This configuration is used when a physical fiscal device or fiscal service is present in the local network of the store and provides an HTTPS API. In this case, the fiscal document provider is located on the CRT and the fiscal connector is located on the POS.
 
-![CRT-POS.](media/FIF-CRT-POS.png "Fiscal registration is done via a device or service in the local network")
+![Fiscal registration is done via a device or service in the local network](media/FIF-CRT-POS.png)
 
 ## Error handling
 
@@ -103,21 +98,21 @@ The fiscal integration framework provides the following options to handle failur
 - **Mark as registered** – Operators can use this option when the transaction was actually registered in the fiscal device (for example, a fiscal receipt was printed), but a failure occurred when the fiscal response was being saved to the channel database.
 - **Postpone** – Operators can use this option when the transaction was not registered because the registration service was unavailable. 
 > [!NOTE]
-> The **Skip**, **Mark as registered** and **Postpone** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
+> The **Skip**, **Mark as registered**, and **Postpone** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
 
-The **Skip**, **Mark as registered** and **Postpone**  options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+The **Skip**, **Mark as registered**, and **Postpone**  options enable info codes to capture some specific information about a failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### Optional fiscal registration
 
 Fiscal registration might be mandatory for some operations but optional for others. For example, the fiscal registration of regular sales and returns might be mandatory, but the fiscal registration of operations that are related to customer deposits might be optional. In this case, failure to complete the fiscal registration of a sale should block further sales, but failure to complete the fiscal registration of a customer deposit should not block further sales. To distinguish mandatory and optional operations, we recommend that you handle them through different document providers, and that you set up separate steps in the fiscal registration process for those providers. The **Continue on error** parameter should be enabled for any step that is related to optional fiscal registration. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-### Manually running fiscal registration
+### Manually rerun fiscal registration
 
 If the fiscal registration of a transaction or event has been postponed after a failure (for example, if the operator selected **Cancel** in the error handling dialog box), you can manually rerun the fiscal registration by invoking a corresponding operation. For more details, see [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
 ### Postpone option
-The postpone option provide the possibility to continue the fiscal registration process in case the current step fails. This can be used when there is a fiscal registration backup option.
 
+The postpone option provide the possibility to continue the fiscal registration process in case the current step fails. This can be used when there is a fiscal registration backup option.
 
 ### Fiscal registration health check
 
@@ -146,8 +141,8 @@ Fiscal transactions are transferred to Headquarters by the *P-job*, together wit
 A fiscal transaction stores the following details:
 
 - Fiscal registration process details (process, connector group, connector, and so on). It also stores the serial number of the fiscal device in the **Register number** field, if this information is included in the fiscal response.
-- The status of the fiscal registration: **Completed** for successful registration, **Skipped** if the operator selected the **Skip** option for a failed registration,  **Marked as registered** if the operator selected the **Mark as registered** option or **Postponed** if the operator selected the **Postpone** option.
-- Info code transactions that are related to a selected fiscal transaction. To view the info code transactions, on the **Fiscal transactions** FastTab, select a fiscal transaction that has a status of **Skipped**, **Marked as registered** or **Postponed**, and then select **Info code transactions**.
+- The status of the fiscal registration: **Completed** for successful registration, **Skipped** if the operator selected the **Skip** option for a failed registration,  **Marked as registered** if the operator selected the **Mark as registered** option, or **Postponed** if the operator selected the **Postpone** option.
+- Info code transactions that are related to a selected fiscal transaction. To view the info code transactions, on the **Fiscal transactions** FastTab, select a fiscal transaction that has a status of **Skipped**, **Marked as registered**, or **Postponed**, and then select **Info code transactions**.
 
 By selecting **Extended data**, you can also view some properties of the fiscal transaction. The list of properties that can be viewed is specific to the fiscal registration functionality that generated the fiscal transaction. For example, you can view the digital signature, sequential number, certificate thumbprint, hash algorithm identification, and other fiscal transaction properties for the digital signing functionality for France.
 
