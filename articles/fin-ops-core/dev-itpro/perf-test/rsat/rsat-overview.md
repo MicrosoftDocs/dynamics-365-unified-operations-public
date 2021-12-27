@@ -74,7 +74,7 @@ The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video 
 
 ## End-to-end flow
 
-RSAT is part of the end to end flow described below. RSAT, Microsoft Dynamics Lifecycle Services (LCS), and Azure DevOps provide a set of tools for test case authoring (using Task recorder), distribution, configuration, execution, investigation, and reporting.
+RSAT is part of the end-to-end flow described below. RSAT, Microsoft Dynamics Lifecycle Services (LCS), and Azure DevOps provide a set of tools for test case authoring (using Task recorder), distribution, configuration, execution, investigation, and reporting.
 
 ![Author, configure, and execute.](media/end-to-end.png)
 
@@ -96,7 +96,7 @@ You must name the developer recording file **Recording.xml** before attaching it
 
 ### Business cycle (business process) testing
 
-RSAT is intended to be used for business cycle tests and scenario tests (multiple component tests) that usually occur at the end of the development lifecycle. This is also referred to as *user acceptance testing*. Business cycle testing consists of a smaller number of test cases than component or unit testing. This is illustrated in the following graphic.
+RSAT is intended to be used for business cycle tests and scenario tests (multiple component tests) that usually occur at the end of the development lifecycle. This testing is also referred to as *user acceptance testing*. As the following illustration shows, business cycle testing consists of fewer test cases than component testing or unit testing.
 
 ![Unit tests, component tests, multiple component tests, business cycle tests.](media/business-cycle.png)
 
@@ -138,13 +138,13 @@ The **Test plan** tab is the main tab that allows you to interact with and execu
 
 ### Settings
 
-Select the **Settings** tab to configure RSAT settings. Use the top bar to navigate between general, optional and process settings. You do not need to save your settings, settings are automatically saved as soon as you navigate out of the settings page. You can also save your settings in an RSAT settings file or open an existing settings file.
+Select the **Settings** tab to configure RSAT settings. Use the top bar to navigate between general, optional and process settings. You do not need to save your settings. Settings are automatically saved as soon as you navigate out of the settings page. You can also save your settings in an RSAT settings file or open an existing settings file.
 
 ![UI Settings Tab.](media/UI-settings-tab.png)
 
 ### Cloud POS Settings
 
-Select the **Cloud POS Settings** tab to configure RSAT to execute Cloud POS test cases. You do not need to save your settings, settings will automatically be saved as soon as you navigate out of the settings page.
+Select the **Cloud POS Settings** tab to configure RSAT to execute Cloud POS test cases. You do not need to save your settings. Settings will automatically be saved as soon as you navigate out of the settings page.
 
 ![UI Cloud POS Tab.](media/UI-cloud-POS-tab.png)
 
