@@ -31,14 +31,67 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to get started with Tax Calculation. It guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. It then reviews the common process for using Tax Calculation capabilities in Finance and Supply Chain Management transactions.
+This topic provides information about how to get started with Tax Calculation. It guides you through the high level design and configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. 
 
-The setup consists of four main steps:
+The setup consists of three main steps:
 
 1. In LCS, install the Tax Calculation add-in.
 2. In RCS, set up the Tax Calculation feature. This setup isn't specific to a legal entity. It can be shared across legal entities in Finance and Supply Chain Management.
 3. In Finance and Supply Chain Management, set up the Tax Calculation parameters by legal entity.
-4. In Finance and Supply Chain Management, create transactions such as sales orders, and use Tax Calculation to determine and calculate taxes.
+
+## High Level Design
+
+### Runtime Design
+
+The following diagram shows the high level runtime design of Tax Calculation. As Tax Calculation can integrate with multiple Dynamics 365 applications, it takes the integration with Dynamics 365 Finance as example in the diagram.
+
+1. User creates a transaction, such as sales order, purchase order in Dynamics 365 Finance.
+
+2. Dynamics 365 Finance gets the default values of sales tax group and item sales tax group automatically.
+
+3. User clicks "Sales tax" button on the transaction to trigger tax calculation. Dynamics 365 Finance will send the payload to Tax Calculation service when the sales tax calculation is triggered.
+
+4. Tax Calculation Service matches the payload with pre-defined rules in Tax Feature to find more accurate sales tax group and item sales tax group simultaneously.
+
+   - If the payload can match with "Tax Group Applicability" matrix, then it will override sales tax group value with matched tax group value in the applicability rule. Otherwise, it will continue to use the sales tax group value from Dynamics 365 Finance.
+
+   - If the payload can match with "Item Tax Group Applicability" matrix, then it will override item sales tax group value with matched item tax group value in the applicability rule. Otherwise, it will continue to use the item sales tax group value from Dynamics 365 Finance.
+
+5. Tax Calculation Service determines the final tax codes using the intersection of sales tax group and item sales tax group.
+
+6. Tax Calculation Service calculate tax based on the determined tax codes.
+
+7. Tax Calculation Service returns the tax calculation result back to Dynamics 365 Finance.
+
+
+
+
+
+<img src="media\Tax Calculation_Runtime logic.png"/>
+
+
+
+### Configuration Steps
+
+Here are the high level essential configuration steps of Tax Calculation. 
+
+1. Install "Tax Calculation" add-in in LCS project
+2. Create "Tax Calculation" feature in RCS
+3. Set up Tax Calculation feature in RCS with following sequence
+   3.1 Select tax configuration version
+   3.2 Create tax codes
+   3.3 Create tax group
+   3.4 Create item tax group
+   3.5 Create tax group applicability (Optional if you want to override the sales tax group defaulted from customer/vendor master data)
+   3.6 Create item group applicability (Optional if you want to override the item sales tax group defaulted from item master data)
+4. Complete and publish Tax Calculation feature in RCS
+5. Select the published Tax Calculation feature in Dynamics 365 Finance
+6. Following setups will be synchronized automatically from RCS to Dynamics 365 Finance after you complete step 5
+   - Sales tax codes
+   - Sales tax groups
+   - Item sales tax groups
+
+Refer to following sections for detail configuration steps.
 
 ## Prerequisites
 
@@ -214,42 +267,3 @@ The setup in this section is done by legal entity. You must configure it for eac
 
 5. On the **Multiple VAT registration** tab, you can turn on VAT declaration, EU Sales List, and Intrastat separately to work under a multiple VAT registrations scenario. For more information about tax reporting for multiple VAT registrations, see [Reporting for multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md).
 6. Save the setup, and repeat the previous steps for each additional legal entity. When a new version is published, and you want it to be applied, set the **Feature setup** field on the **General** tab of the **Tax calculation parameters** page (see step 2).
-
-## Transaction processing
-
-After you complete all the setup procedures, you can use Tax Calculation to determine and calculate tax in Finance. The steps to process transactions remain the same. The following transactions are supported in Finance version 10.0.21:
-
-- Sales process
-
-    - Sales quotation
-    - Sales order
-    - Confirmation
-    - Picking list
-    - Packing slip
-    - Sales invoice
-    - Credit note
-    - Return order
-    - Header charge
-    - Line charge
-
-- Purchase process
-
-    - Purchase order
-    - Confirmation
-    - Receipts list
-    - Product receipt
-    - Purchase invoice
-    - Header charge
-    - Line charge
-    - Credit note
-    - Return order
-    - Purchase requisition
-    - Purchase requisition line charge
-    - Request for quotation
-    - Request for quotation header charge
-    - Request for quotation line charge
-
-- Inventory process
-
-    - Transfer order – ship
-    - Transfer order - receive
