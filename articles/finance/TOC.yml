@@ -952,6 +952,43 @@
             href: general-ledger/add-change-acctg-rprtg-crrncy.md
           - name: Change or reassign a ledger calendar
             href: general-ledger/change-mdfy-clndr-to-ledger.md
+        - name: Intercompany and balancing dimensions
+           items:
+           - name: Balanced journals for interunit accounting
+             href: general-ledger/example-balanced-journals-interunit-accounting.md
+           - name: Intercompany accounting setup
+             href: general-ledger/intercompany-accounting-setup.md
+           - name: How do I set up balancing financial dimensions?
+             href: general-ledger/set-up-balance-dimensions.md
+         - name: Journal and posting defaults
+           items:
+           - name: Set up default descriptions for automatic posting 
+             href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
+           - name: Accruals overview
+             href: general-ledger/accruals-overview.md
+           - name: Create accrual schemes
+             href: general-ledger/tasks/create-accrual-schemes.md
+           - name: Ledger journal types
+             href: general-ledger/ledger-journal-types.md
+           - name: Create advanced rules for journals
+             href: general-ledger/tasks/create-advanced-rules-journals.md
+           - name: Add lookup values for financial dimensions to Excel templates
+             href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
+           - name: Posting definitions
+             href: general-ledger/posting-definitions.md
+           - name: Posting definition examples
+             href: general-ledger/example-posting-definitions.md
+         - name: Currency
+           items:
+           - name: Import currency exchange rates
+             href: general-ledger/import-currency-exchange-rates.md
+           - name: Dual currency
+             href: general-ledger/dual-currency.md
+         - name: Allocation rules
+           - name: Ledger allocation rules
+             href: general-ledger/ledger-allocation-rules.md
+           - name: Process ledger allocation journal
+             href: general-ledger/tasks/process-ledger-allocation-journal.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
