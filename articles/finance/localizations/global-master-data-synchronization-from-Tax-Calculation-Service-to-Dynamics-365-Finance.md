@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic provides information about how to synchronize tax setup from Tax Calculation Service to Dynamics 365 Finance.
 
-After user completes the essential setup steps in [Get started with Tax Calculation - Finance | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-get-started-with-tax-calculation-service?toc=/dynamics365/finance/toc.json#set-up-tax-calculation-in-dynamics-365), tax setup data will be synchronized from Tax Calculation Service to Dynamics 365 Finance automatically. Following data will be synchronized:
+After user completes the essential setup steps in [Get started with Tax Calculation](global-get-started-with-tax-calculation-service.md), tax setup data will be synchronized from Tax Calculation Service to Dynamics 365 Finance automatically. Following data will be synchronized:
 
 ### Sales tax code
 
