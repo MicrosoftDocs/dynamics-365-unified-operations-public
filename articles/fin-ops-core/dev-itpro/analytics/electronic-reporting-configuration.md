@@ -111,7 +111,7 @@ Several out-of-box configurations can be used to meet electronic reporting requi
     - OIOUBL...
 
 ## Your solution uptake
-You can choose how to move your electronic reporting functionality into GER. However, you should consider the following high-level steps when you plan that move.
+You can choose how to move your electronic reporting functionality into ER. However, you should consider the following high-level steps when you plan that move.
 
 1. Review the electronic reporting functionality that your solution currently provides.
 2. Identify domain areas that your solution covers, such as Payments and E-Invoices.
@@ -126,8 +126,8 @@ You can choose how to move your electronic reporting functionality into GER. How
 
 | Term                 | Definition |
 |----------------------|------------|
-| GER                  | Electronic reporting is an engine that simplifies the creation of electronic reports for information interchange with governments, banks, and other parties. Currently, Electronic reporting supports text, XML, and OpenXML spreadsheet formats, and provides an extension interface to support more formats. |
-| Transformation       | If you have a typical action that must be done on the source of data before it is sent as output to a format, you can introduce a transformation and attach it to format components. Transformation is a GER formula that takes one value as a parameter and returns another value. For example, you have many format fields that contain spaces, and the spaces should be replaced by spaces when the fields are exported. In this case, you can create a transformation that takes a string argument and uses the REPLACE function to do the job. You can then create string components and associate them with that transformation. |
+| ER                  | Electronic reporting is an engine that simplifies the creation of electronic reports for information interchange with governments, banks, and other parties. Currently, Electronic reporting supports text, XML, and OpenXML spreadsheet formats, and provides an extension interface to support more formats. |
+| Transformation       | If you have a typical action that must be done on the source of data before it is sent as output to a format, you can introduce a transformation and attach it to format components. Transformation is a ER formula that takes one value as a parameter and returns another value. For example, you have many format fields that contain spaces, and the spaces should be replaced by spaces when the fields are exported. In this case, you can create a transformation that takes a string argument and uses the REPLACE function to do the job. You can then create string components and associate them with that transformation. |
 | Data model           | A data model provides a structure for data. This structure is used to abstractly describe certain business domain areas at sufficient detail to satisfy the reporting requirements in this domain. |
 | Configuration        | A container for either a data model or a format, together with its mappings to data sources, that can be maintained and executed, and that supports versioning. The configuration is the entity that will be imported or exported to organize electronic document format exchange between Finance and Operations instances. |
 | Derive action        | An operation that uses a configuration that already exists as a basis to create a new configuration. |
