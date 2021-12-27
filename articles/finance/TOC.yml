@@ -953,13 +953,13 @@
           - name: Change or reassign a ledger calendar
             href: general-ledger/change-mdfy-clndr-to-ledger.md
         - name: Intercompany and balancing dimensions
-           items:
-           - name: Balanced journals for interunit accounting
-             href: general-ledger/example-balanced-journals-interunit-accounting.md
-           - name: Intercompany accounting setup
-             href: general-ledger/intercompany-accounting-setup.md
-           - name: How do I set up balancing financial dimensions?
-             href: general-ledger/set-up-balance-dimensions.md
+          items:
+          - name: Balanced journals for interunit accounting
+            href: general-ledger/example-balanced-journals-interunit-accounting.md
+          - name: Intercompany accounting setup
+            href: general-ledger/intercompany-accounting-setup.md
+          - name: How do I set up balancing financial dimensions?
+            href: general-ledger/set-up-balance-dimensions.md
         - name: Journal and posting defaults
           items:
           - name: Set up default descriptions for automatic posting 
