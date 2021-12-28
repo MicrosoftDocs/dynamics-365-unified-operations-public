@@ -1,6 +1,6 @@
-﻿---
+---
 title: Voyage creation entities
-description: The voyage creation data entities group together the data entities that are necessary for the creation of a working voyage.
+description: This topic provides information about voyage creation data entities, which group the data entities that are required to create a working voyage.
 author: yufeihuang
 ms.date: 12/16/2021
 ms.topic: article
@@ -17,11 +17,11 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-The voyage creation data entities group together the data entities that are necessary for the creation of a working voyage. You, or your freight forwarder, can use these data entities to create voyage, shipping container, folio, and voyage line records that reference existing purchaser order or transfer order lines.
+The voyage creation data entities group together the data entities that are required to create a working voyage. You or your freight forwarder can use these data entities to create voyage, shipping container, folio, and voyage line records that reference existing purchaser order or transfer order lines.
 
 ## Voyages (ITMTableEntity)
 
-The voyage represents the journey of the inbound goods and serves as the highest level cost area within Landed cost. The voyage contains header level information related to the vessel, port of origin, and destination port. This functionality is supported by the entity `ITMTableEntity`. The following table lists the fields and mappings that make up this entity.
+The voyage represents the journey of inbound goods and serves as the highest-level cost area in Landed cost. It contains header-level information that is related to the vessel, port of origin, and destination port. This functionality is supported by the `ITMTableEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -55,7 +55,7 @@ The voyage represents the journey of the inbound goods and serves as the highest
 | Measurement unit | ITMTable.ShipMeasurementUnit | Int | No | No |
 | Number of pallets | ITMTable.ShipNoOfPallets | Int | No | No |
 | Pending voyage | ITMTable.ShipPending | Int | No | No |
-| Remarks | ITMTable.ShipRemarks | nvarchar(MAX) | No | No |
+| Remarks | ITMTable.ShipRemarks | Nvarchar(MAX) | No | No |
 | Rental | ITMTable.ShipRental | Int | No | No |
 | Voyage status | ITMTable.ShipStatusId | Nvarchar(20) | No | No |
 | Tally in number | ITMTable.ShipTallyInNumber | Nvarchar(20) | No | No |
@@ -67,21 +67,24 @@ The voyage represents the journey of the inbound goods and serves as the highest
 
 ### Number sequences for voyages
 
-The shared number sequence for voyages controls the allocation of voyage IDs. Where the assigned number is configured to allow for manual entry, the value passed to the data entity as the **Voyage ID** (`ShipId`) will be used to identify an existing record for update or will result in the creation of a new record using that value.
+The shared number sequence for voyages controls the allocation of voyage IDs.
 
-If the assigned number sequence does not allow for manual entry, the value used for the **Voyage ID** (`ShipId`) will first be used to identify an existing record for update. If this does not exist, the next number assigned to the number sequence will be used in place of the value entered.
+The value that is passed to the data entity as the **Voyage ID** (`ShipId`) value is used to identify an existing record for update. If that record doesn't exist, the behavior depends on whether the assigned number sequence is configured to allow for manual entry:
 
-Within the import session, the placeholder value imported as the voyage ID is retained to ensure shipping container and voyage lines referencing the placeholder are included within the voyage and are also updated to reflect the value assigned from the number sequence.
+- If manual entry is enabled, a new record is created that uses the passed value.
+- If manual entry isn't enabled, the next number in the assigned number sequence is used instead of the passed value.
+
+During the import session, the placeholder value that is imported as the voyage ID is retained. This behavior ensures that shipping container and voyage lines that reference the placeholder are included in the voyage, and that they are updated to reflect the value that is assigned from the number sequence.
 
 ### Automatic cost transactions
 
-Automatic costs can be added to a voyage using the **Auto costs** page (**Landed cost \> Costing setup \> Auto costs**) in Supply Chain Management. These records can also be created by using cost transaction data entities for each of the cost areas supported by Landed cost.
+Automatic costs can be added to a voyage from the **Auto costs** page in Microsoft Dynamics 365 Supply Chain Management (**Landed cost \> Costing setup \> Auto costs**). Records for automatic costs can also be created by using cost transaction data entities for each cost area that Landed cost supports.
 
-Automatic costs configured within Supply Chain Management are applied to the voyage on the creation of a voyage line. No costs will be visible against the record until this header record is associated with line information.
+Automatic costs that are configured in Supply Chain Management are applied to the voyage when a voyage line is created. No costs will be visible against the record until the header record is associated with line information.
 
 ## Shipping containers (ITMContainersEntity)
 
-A shipping container represents a physical container that goods are transported in. This may represent a freight container for ocean freight or could be a single pallet for air freight. The shipping container includes header level information related to the **Shipping container ID**, **Seal number**, and **Shipping container type**, which provides dimension information. This functionality is supported by the entity `ITMContainersEntity`. The following table lists the fields and mappings that make up this entity.
+A shipping container represents a physical container that goods are transported in. This physical container might be a freight container for ocean freight or a single pallet for air freight. The shipping container includes header-level information that is related to the shipping container ID, seal number, and shipping container type. (The shipping container type provides dimension information.) This functionality is supported by the `ITMContainersEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -123,7 +126,7 @@ A shipping container represents a physical container that goods are transported 
 | Used | ITMContainers.ShipPendingUsed | Int | No | No |
 | Purchase order status | ITMContainers.ShipPurchStatus | Int | No | No |
 | Refrigeration type | ITMContainers.ShipRefrigerationTypeId | Nvarchar(10) | No | No |
-| Remarks | ITMContainers.ShipRemarks | nvarchar(MAX) | No | No |
+| Remarks | ITMContainers.ShipRemarks | Nvarchar(MAX) | No | No |
 | Rental | ITMContainers.ShipRental | Int | No | No |
 | Returnable | ITMContainers.ShipReturnable | Int | No | No |
 | Voyage status | ITMContainers.ShipStatusId | Nvarchar(20) | No | No |
@@ -134,21 +137,25 @@ A shipping container represents a physical container that goods are transported 
 
 ### Voyage ID validation
 
-The shipping container ID is not controlled by a number sequence and is unique only in the context of the voyage it is on. If the shipping container entity (`ITMContainersEntity`) is used independently of the voyage entity (`ITMTableEntity`), the **Voyage ID** (`ShipId`) must match an existing record within the voyage table or else the import will fail.
+The shipping container ID isn't controlled by a number sequence. It's unique only in the context of the voyage that it's used on.
 
-If the two entities are used as part of the same import session, the voyage entity (ITMTableEntity) must precede the creation of a shipping container so that the **voyage** (ShipId) can be successfully validated. If a placeholder value is used for the **voyage** (ShipId), the same placeholder must be used for the **voyage** (ShipId) in the shipping container entity to create the association.
+If the shipping container entity (`ITMContainersEntity`) is used independently of the voyage entity (`ITMTableEntity`), the **Voyage ID** (`ShipId`) value must match an existing record in the voyage table. Otherwise, the import will fail.
 
-### Further field validations
+If the shipping container entity (`ITMContainersEntity`) and the voyage entity (`ITMTableEntity`) are used as part of the same import session, the voyage entity must precede the creation of a shipping container. Otherwise, the **Voyage ID** (`ShipId`) value can't be successfully validated. If a placeholder value is used for the **Voyage ID** (`ShipId`) value, the association can be created only if the same placeholder is used as the **Voyage ID** (`ShipId`) value in the shipping container entity.
 
-The following fields found on the shipping container table (`ITMContainers`) are validated against Landed cost setup tables. A freight forwarder can use the Landed Cost data entities listed below to read the existing values and ensure valid values are received into your environment.
+### Other field validations
 
-- **Shipping container type** (`ITMShippingContainerTypeEntity`)
-- **Description of goods** (`ITMGoodsDescriptionEntity`)
-- **Refrigeration type** (`ITMShippingContainerRefrigerationTypeEntity`)
+The following table shows the fields in the shipping container table (`ITMContainers`) that are validated against Landed cost setup tables. It also shows the Landed cost data entities that a freight forwarder can use to read the existing values and ensure that valid values are received in your environment.
+
+| Field in the ITMContainers table | Landed cost data entity |
+|---|---|
+| Shipping container type | ITMShippingContainerTypeEntity |
+| Description of goods | ITMGoodsDescriptionEntity |
+| Refrigeration type | ITMShippingContainerRefrigerationTypeEntity |
 
 ## Folios (ITMFolioEntity)
 
-A folio represents a grouping of items within a shipping container, for the purposes of customs declarations. The folio includes header level information related to the **Customs broker** and **Description of goods**. This functionality is supported by the entity `ITMFolioEntity`. The following table lists the fields and mappings that make up this entity.
+A folio represents a grouping of items in a shipping container for the purposes of customs declarations. The folio includes header-level information that is related to the customs broker and a description of the goods. This functionality is supported by the `ITMFolioEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -178,7 +185,7 @@ A folio represents a grouping of items within a shipping container, for the purp
 | Original bill of landing sent | ITMFolioTable.ShipOriginalBOLSebt | Datetime | No | No |
 | Original documents received | ITMFolioTable.ShipOriginalDocsReceived | Datetime | No | No |
 | Purchase order status | ITMFolioTable.ShipPurchStatus | Int | No | No |
-| Remarks | ITMFolioTable.ShipRemarks | nvarchar(MAX) | No | No |
+| Remarks | ITMFolioTable.ShipRemarks | Nvarchar(MAX) | No | No |
 | Voyage status | ITMFolioTable.ShipStatusId | Nvarchar(20) | No | No |
 | Tariff code | ITMFolioTable.ShipTariffCode | Nvarchar(10) | No | No |
 | To port | ITMFolioTable.ShipToPort | Nvarchar(20) | No | No |
@@ -188,21 +195,22 @@ A folio represents a grouping of items within a shipping container, for the purp
 
 ### Number sequences for folios
 
-The number sequence for folios controls the allocation of folio IDs. Where the assigned number is configured to allow for manual entry, the value passed to the data entity as the **Folio ID** (`FolioId`) will be used to identify an existing record for update or will result in the creation of a new record using that value.
+The number sequence for folios controls the allocation of folio IDs.
 
-If the assigned number sequence does not allow for manual entry, the value used for the **Folio ID** (`FolioId`) will first be used to identify an existing record for update. If this does not exist, the next number assigned to the number sequence will be used in place of the value entered.
+The value that is passed to the data entity as the **Folio ID** (`FolioId`) value is used to identify an existing record for update. If that record doesn't exist, the behavior depends on whether the assigned number sequence is configured to allow for manual entry:
 
-Within the import session, the placeholder value imported as the folio ID is retained to ensure voyage lines referencing the placeholder are correctly associated and are updated to reflect the value assigned from the number sequence.
+- If manual entry is enabled, a new record is created that uses the passed value.
+- If manual entry isn't enabled, the next number in the assigned number sequence is used instead of the passed value.
+
+During the import session, the placeholder value that is imported as the folio ID is retained. This behavior ensures that voyage lines that reference the placeholder are correctly associated, and that they are updated to reflect the value that is assigned from the number sequence.
 
 ### Field validations
 
-The description of goods field on the folio table (`ITMFolioTable`) is validated against the setup table of the same name. A freight forwarder can use the Landed Cost data entity below to read the existing values and ensure valid values are received into your environment.
-
-- **Description of goods** (`ITMGoodsDescriptionEntity`)
+The **Description of goods** field in the folio table (`ITMFolioTable`) is validated against the Landed cost setup table of the same name. A freight forwarder can use the `ITMGoodsDescriptionEntity` Landed cost data entity to read the existing values and ensure that valid values are received in your environment.
 
 ## Voyage lines for purchase orders (ITMPurchaseLineEntity)
 
-The voyage line represents a single purchase order line included in the voyage. This relationship is established through the **purchase order number** and **purchase line number** fields. The voyage line references each of the previous records created for voyage, shipping container and folio. This functionality is supported by the entity `ITMPurchaseLineEntity`. The following table lists the fields and mappings that make up this entity.
+The voyage line represents a single purchase order line that is included in the voyage. This relationship is established through the **Purchase order number** and **Purchase line number** fields. The voyage line references each previous record that was created for the voyage, shipping container, and folio. This functionality is supported by the `ITMPurchaseLineEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -227,7 +235,7 @@ The voyage line represents a single purchase order line included in the voyage. 
 
 ## Voyage lines for transfer orders (ITMTransferLineEntity)
 
-The voyage line represents a single transfer order line included within the Voyage. This relationship is established through the **Transfer order number** and **Transfer line number** fields. The voyage line references each of the previous records created for voyage, shipping container, and folio. This functionality is supported by the entity `ITMTransferLineEntity`. The following table lists the fields and mappings that make up this entity.
+The voyage line represents a single transfer order line that is included in the voyage. This relationship is established through the **Transfer order number** and **Transfer line number** fields. The voyage line references each previous record that was created for the voyage, shipping container, and folio. This functionality is supported by the `ITMTransferLineEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -252,36 +260,36 @@ The voyage line represents a single transfer order line included within the Voya
 
 ### Reference table
 
-Voyage lines are created through an association with an open inbound order line. This can either be on a purchase order or as the receive transaction on a transfer order. The field `RefTableId` found on voyage line table (`ITMLine`) is used to reference which of the two order types the line relates to by referencing the table number. Where specific table numbers are referenced in the table where the data is being created, the entities are split based on these values.
+Voyage lines are created through an association with an open inbound order line. This line can be on a purchase order, or it can be the receive transaction on a transfer order. The `RefTableId` field in the voyage line table (`ITMLine`) specifies which order type the line is related to by referencing the table number. If specific table numbers are referenced in the table where the data is being created, the entities are split based on those values.
 
-The values for the reference table (`RefTableId`) and the transaction type (`TransType`) are implicit in the selection of either the Landed cost purchase line or Landed cost transfer line entity.
+The values for the reference table (`RefTableId`) and the transaction type (`TransType`) are implicit in the selection of either the Landed cost purchase line entity or the Landed cost transfer line entity.
 
 ### Validation
 
-A voyage line directly references a voyage, shipping container, and folio record. If the purchase line entity (`ITMPurchaseLinesEntity`) or transfer line entity (`ITMPurchaseLinesEntity`) is used independently of the entities used to create these reference records, the **Voyage ID** (`ShipId`), **Shipping container** (`ShipContainerId`), and **Folio** (`ShipFolioId`) must match an existing record within their respective tables, else the import will fail.
+A voyage line directly references a voyage record, a shipping container record, and a folio record. If the purchase line entity (`ITMPurchaseLinesEntity`) or transfer line entity (`ITMPurchaseLinesEntity`) is used independently of the entities that are used to create these reference records, the **Voyage ID** (`ShipId`), **Shipping container** (`ShipContainerId`), and **Folio** (`ShipFolioId`) values must match an existing record in the corresponding tables. Otherwise, the import will fail.
 
-If either line entity is used as part of the same import session, these other entities must precede the creation of a voyage line so that the values can be successfully validated. If a placeholder value is used for the voyage or folio number, the same placeholder must be used for the voyage or folio number in the voyage line entity to create the association.
+If either line entity is used as part of the same import session, those other entities must precede the creation of a voyage line. Otherwise, the values can't be successfully validated. If a placeholder value is used for the voyage or folio number, the association can be created only if the same placeholder is used for the voyage or folio number in the voyage line entity.
 
-Where the purchase or transfer order line is already assigned to an existing voyage line, the new voyage line will not be created. To assign this order line to a new voyage, it must first be removed from its current voyage.
+If the purchase order or transfer order line is already assigned to an existing voyage line, the new voyage line won't be created. Before the order line can be assigned to a new voyage, it must be removed from its current voyage.
 
 ### Order line identification
 
-Voyage lines directly reference the reference **Record ID** (`RefRecId`), **Inventory dimension ID** (`InventDimId`) and **Inventory transaction ID** (`InventTransId`). The requirement to include these values when using the data entity has been replaced with the need to include the order line number. The order line number along with the order number allow for the identification of each of these reference values.
+Voyage lines directly reference the reference **Record ID** (`RefRecId`), **Inventory dimension ID** (`InventDimId`), and **Inventory transaction ID** (`InventTransId`) values. These values no longer have to be included when the data entity is used. Instead, the order line number must now be included. Together, the order line number and the order number enable each of those reference values to be identified.
 
 ### Voyage line quantity
 
-As a voyage line is directly associated with an order line, the **Quantity** (`ShipQty`) value entered through use of the entity requires that the values match. A validation against either the purchase order line quantity or transfer line quantity will be run. Where the validation fails the record will not be processed.
+Because a voyage line is directly associated with an order line, the **Quantity** (`ShipQty`) value that is entered by using the entity requires that the values match. Validation is run against the quantity on either the purchase order line or the transfer line. If the validation fails, the record won't be processed.
 
 ### Calculated fields
 
-The calculated fields volume and weight will accept the values received through the data entity. If no value is provided, these will be updated using the system values if available. For Landed cost, the values are determined as:
+The **Weight** and **Volume** calculated fields accept the values that are received through the data entity. If no values are provided, the system values are used to update these fields, if system values are available. For Landed cost, the values are calculated in the following way:
 
-- **Weight** = Quantity \* Item gross weight
-- **Volume** = Quantity \* (Item gross depth \* Item gross height \* Item gross width)
+- *Weight* = *Quantity* × *Item gross weight*
+- *Volume* = *Quantity* × (*Item gross depth* × *Item gross height* × *Item gross width*)
 
 ## Sequencing
 
-Due to dependencies between the tables, the voyage record must be created first and the voyage line can only be created once the voyage, shipping container, and folios have been created.
+Because of dependencies between the tables, the voyage record must be created first. The voyage line can be created only after the voyage, shipping container, and folios have been created.
 
 To create a voyage without validation warnings, the system must process the entities in the following order:
 
