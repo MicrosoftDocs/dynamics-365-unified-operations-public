@@ -384,7 +384,7 @@ If one of your templates contains a PivotTable that is based on a PowerPivot mod
     2. Use ER to generate a second Excel workbook (workbook B) from Finance that has the required details. 
     3. Refer to workbook B in workbook A as soon as workbook B is generated.
 
-- Use an option other than EPPlus to turn off the feature. 
+- Disable the **Enable usage of EPPlus library in Electronic reporting framework** feature to use an option other than EPPlus. 
 
 ## Additional resources
 
