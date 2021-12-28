@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 
-The Dynamics 365 Commerce localization for Brazil includes several extensions of the following Commerce components: the Commerce runtime (CRT), Retail Server, and point of sale (POS). These extensions let you calculate Brazil-specific taxes, generate electronic fiscal documents for retail sales, print DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) fiscal receipts that have custom fields, manage Brazil-specific customer information, and issue sales in offline contingency mode, where registration of electronic fiscal documents is postponed. For more information about the Commerce localization for Brazil, see [Brazilian localization scope](../../finance/localizations/latam-bra-scope.md) and [Commerce localization for Brazil](latam-bra-commerce-localization.md).
+The Dynamics 365 Commerce localization for Brazil includes several extensions of the following Commerce components: the Commerce runtime (CRT), Retail Server, and point of sale (POS). These extensions let you calculate Brazil-specific taxes, generate electronic fiscal documents for retail sales, print DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) and CF-e-SAT (Cupom Fiscal Eletrônico - Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal receipts that have custom fields, manage Brazil-specific customer information, and issue sales in offline contingency mode, where registration of electronic fiscal documents is postponed. For more information about the Commerce localization for Brazil, see [Brazilian localization scope](../../finance/localizations/latam-bra-scope.md) and [Commerce localization for Brazil](latam-bra-commerce-localization.md).
 
 The extensions that are described in this topic were developed based on the fiscal integration framework. For information about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md). [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md) is used to implement formats for Brazilian electronic fiscal documents.
 
@@ -187,6 +187,7 @@ To set up a retail store in Commerce headquarters, follow these steps.
 1. Publish the channel updates.
 1. Go to **Retail and Commerce \> Channel setup \> POS profiles \> Receipt profiles**.
 1. Create receipt layouts for DANFE, and add the layouts to the receipt profiles.
+1. Create receipt layouts for CF-e-SAT, and add the layouts to the receipt profiles.
 
 > [!NOTE]
 > The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language text setup should be created in both the user's default company and the legal entity of the store that the receipt setup is created for.
@@ -237,7 +238,7 @@ To set up the fiscal registration process in Commerce headquarters, follow these
 
 ## Customer information management
 
-The **Add customer information** operation can be used to add Brazil-specific CNPJ or CPF (Cadastro de Pessoas Físicas) customer tax registration numbers and addresses to sales transactions. Customer information can be pulled from the customer record that is specified for the transaction, or it can be manually entered. The customer information can then be printed on DANFE fiscal receipts and used for invoicing purposes.
+The **Add customer information** operation can be used to add Brazil-specific CNPJ or CPF (Cadastro de Pessoas Físicas) customer tax registration numbers and addresses to sales transactions. Customer information can be pulled from the customer record that is specified for the transaction, or it can be manually entered. The customer information can then be printed on DANFE and CF-e-SAT fiscal receipts and used for invoicing purposes.
 
 To configure the **Add customer information** operation in Commerce headquarters, follow these steps.
 
