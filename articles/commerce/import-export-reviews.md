@@ -22,7 +22,7 @@ This topic describes how to import and export product ratings and reviews in Mic
 
 Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution. When you decide to switch to Dynamics 365 Commerce's ratings and reviews solution, you may want to bring your existing ratings and reviews data to the Dynamics 365 Commerce platform. You may also want to export ratings and reviews data from Dynamics 365 Commerce based on your business requirements. Both importing and exporting ratings and reviews to and from Dynamics 365 Commerce is made possible using a Microsoft Power Automate connector. 
 
-> [NOTE]
+> [!NOTE]
 > For information on getting started with logic flows in Power Automate, see [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
 
 ## Prerequisites
