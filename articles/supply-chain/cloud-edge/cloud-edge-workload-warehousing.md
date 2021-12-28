@@ -116,6 +116,23 @@ This following diagram shows the inbound flow, and indicates where the individua
 
 [![Inbound processing flow](media/wes_inbound_warehouse_processes-small.png "Inbound processing flow")](media/wes_inbound_warehouse_processes.png)
 
+### Production control
+
+The warehouse management work load supports the following three flows for production on the Warehouse Management app:
+
+- Report as finished and put away
+- Start production order
+- Register material consumption
+
+## Report as finished and put away
+The worker can use the **Report as finished and put away** flow on the Warehouse Management app to report as finished a production or batch order. Reporting as finished co- and by products on a batch order is also supported. When reporting as finished, warehouse work of type put away is generated on the scale unit. If put away work is not required the work policies can be configured to omit it. 
+
+## Start production order
+The worker can use the **Start production order** flow on the Warehouse Management app to register start on a production or batch order. 
+
+## Register material consumption
+The worker can use the **Register material consumption** flow on the Warehouse Management app to report material consumption on a production or batch order. In this case, a picking list journal will be created for the repored material on the production or batch order on the scale unit. The journal lines will make a physical reservation on the consumed inventory. A picking list journal is generated and posted on the hub instance when data is syncronized between the scale unit and the hub. 
+
 ## Supported processes and roles
 
 Not all warehouse management processes are supported in a warehouse execution workload on a scale unit. Therefore, we recommend that you assign roles that match the functionality that is available to each user.
