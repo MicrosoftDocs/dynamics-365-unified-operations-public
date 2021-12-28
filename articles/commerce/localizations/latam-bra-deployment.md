@@ -187,7 +187,7 @@ To set up a retail store in Commerce headquarters, follow these steps.
 1. Publish the channel updates.
 1. Go to **Retail and Commerce \> Channel setup \> POS profiles \> Receipt profiles**.
 1. Create receipt layouts for DANFE, and add the layouts to the receipt profiles.
-1. Create receipt layouts for CF-e-SAT, and add the layouts to the receipt profiles.
+1. Create receipt layouts for CF-e-SAT and CF-e-SAT cancellation, and add the layouts to the receipt profiles.
 
 > [!NOTE]
 > The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language text setup should be created in both the user's default company and the legal entity of the store that the receipt setup is created for.
