@@ -4,7 +4,7 @@
 title: Set up the fiscal integration for Commerce channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. 
 author: EvgenyPopovMBS
-ms.date: 12/17/2021
+ms.date: 12/27/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -202,6 +202,8 @@ In some cases, a special text must be printed on a fiscal receipt if a discount 
 
 The error handling options that are available in the fiscal integration are set in the fiscal registration process. For more information about error handling in the fiscal integration, see [Error handling](fiscal-integration-for-retail-channel.md#error-handling).
 
+To set error handling settings, follow these steps.
+
 1. On the **Fiscal registration process** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**), you can set the following parameters for each step of the fiscal registration process:
 
     - **Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.
@@ -212,9 +214,9 @@ The error handling options that are available in the fiscal integration are set 
     > [!NOTE]
     > If the **Continue on error** parameter is enabled, the **Allow skip** and **Allow mark as registered** parameters are automatically disabled.
 
-1. The **Skip** and **Mark as registered**  options in the error handling dialog box require the **Allow skip registration or mark as registered** permission. Therefore, on the **Permission groups** page (**Retail and Commerce \> Employees \> Permission groups**), enable the **Allow skip registration or mark as registered** permission.
-1. The **Postpone** option in the error handling dialog box require the **Allow postpone** permission. Therefore, on the **Permission groups** page (**Retail and Commerce \> Employees \> Permission groups**), enable the **Allow postpone** permission.
-1. The **Skip**, **Mark as registered** and **Postpone** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip**, **Mark as registered** and **Postpone**  info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).
+1. The **Skip** and **Mark as registered**  options in the error handling dialog box require the **Allow skip registration or mark as registered** permission to be enabled. To enable the permission, go to the **Permission groups** page (**Retail and Commerce \> Employees \> Permission groups**) and set the **Allow skip registration or mark as registered** toggle to **Yes**.
+1. The **Postpone** option in the error handling dialog box requires the **Allow postpone** permission to be enabled. To enable the permission, go to the **Permission groups** page (**Retail and Commerce \> Employees \> Permission groups**) and set the **Allow postpone** toggle to **Yes**.
+1. The **Skip**, **Mark as registered**, and **Postpone** options let operators enter additional information when fiscal registration fails. To make this functionality available, you should specify the **Skip**, **Mark as registered**, and **Postpone**  info codes on a fiscal connector group. The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction. For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).
 
     > [!NOTE]
     > The **Product** trigger function isn't supported for the info codes that are used for **Skip** and **Mark as registered** in fiscal connector groups.
