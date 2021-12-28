@@ -16,7 +16,6 @@ ms.search.validFrom: 2017-06-20
 # Configure Service-to-Service authentication
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to configure Service-to-Service (S2S) authentication in Microsoft Dynamics 365 Commerce to securely call ratings and reviews service APIs.
 
