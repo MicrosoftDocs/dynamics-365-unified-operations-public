@@ -391,11 +391,10 @@ To configure CRT extension components, follow these steps.
  ```
 
 ### Enable Hardware station extensions
-The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the solution, **HardwareStationSamples.sln.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
+The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
+> [!NOTE]
+> For more information, see the [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) article.
 
-	> [!NOTE]
-    > For more information, see the [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) article.
-	
 #### SatBrazil component
 
 1. Find the **HardwareStation.Extension.SatBrazil** project, and build it.
