@@ -99,6 +99,7 @@ To set up a fiscal establishment and NF-e (Nota Fiscal Eletrônica) federal para
 1. Under **NFC-E WEB SERVICE**, in the **Authority** field, enter the value used at **NF-e federal parameters \> Web services \> Authority**.
 1. Go to **Organization administration \> Organizations \> Fiscal establishments \> Electronic fiscal documents \> NF-e federal parameters**.
 1. Create new authorities for the required states, or use existing authorities.
+1. For each state, turn on the **NFC-e synchronous processing** flag.
 1. For each state, in the **Internet address for NFC-e inquiry** field, enter QR code URLs.
 1. For each state, specify the endpoints for all web services of the appropriate environments.
 
@@ -169,11 +170,13 @@ To set up a retail store in Commerce headquarters, follow these steps.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler**.
 1. Add the stores that you created earlier to the channel database that is used.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
-1. Create POS registers, and set the following Brazil-specific fields:
+1. Create POS registers, and set the following Brazil-specific fields depending on the Fiscal operation mode:
 
-    - NFC-e series
-    - NFC-e contingency series
-    - NF-e series
+    - **Fiscal operation mode**: select NFC-e or CF-e
+	- **NFC-e series**: if NFC-e is selected in the Fiscal operation mode field, enter the NFC-e series 
+    - **NFC-e contingency series**: if NFC-e is selected in the Fiscal operation mode field, enter the NFC-e series for offline contingency mode.
+    - **NF-e series**: enter the NF-e series to be used when issuing NF-e documents for returns. 
+	- **Register number for CF-e**: enter the number of the POS register that is connected to the SAT. It exists to comply with the tag “numeroCaixa” in the XML from the CF-e. Two or more POS register cannot have the same Register number for CF-e
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**.
 1. Create and configure devices for the POS registers that you just created.
@@ -212,12 +215,12 @@ To set up the fiscal registration process in Commerce headquarters, follow these
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**.
 1. For each document provider that you just loaded the configuration for, create connector functional profiles and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
-   In case of the settings for SAT, fill in the **Key Vault activation code secret ... ** and **POS Signature for SAT** fields.
+   In case of settings for SAT, fill in the **Key Vault activation code secret name** and **POS Signature for SAT** fields.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
 1. Create connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required.
-   In case of the settings for SAT, configure the **Connector name** for SAT device (**Connector type = Local**) and **SAT library path**.
+   In case of settings for SAT, configure the **Connector name** for SAT device (**Connector type = Local**) and specify the **SAT library path** string including the dll-file name.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**.
-1. Create fiscal connector groups, one for each connector functional profile that you created earlier.
+1. Create fiscal connector groups, one for each connector functional profile that you created earlier including SAT.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**.
 1. Create a registration process. As registration steps, select the fiscal connector groups that you just created.
 1. Create a separate registration process for SAT device.
@@ -316,6 +319,12 @@ To configure a certificate in AOS, follow these steps.
 > [!NOTE]
 > After the setup is completed, the appropriate distribution jobs must be run in Commerce headquarters.
 
+### Set up SAT activation code
+
+The activation code enables the communication between the POS register and the SAT device. The SAT hardware is an attribute that must be associated to the POS register. It contains the activation code by SAT serial number entered during the SAT device activation. In order to create the SAT hardware:
+1. Go to **System administration \> Setup \> Key Vault parameters**.
+1. Create a record for the SAT activation code. Then add a secret named **ActivationCode**, and in the field **Secret** enter a value, and select the **Secret type = Manual**. 
+
 ### Configure CRT extension components
 
 > [!WARNING]
@@ -379,7 +388,47 @@ To configure CRT extension components, follow these steps.
 		  </composition>
 		</retailProxyExtensions>
  ```
- 
+
+### Enable Hardware station extensions
+The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the solution, **HardwareStationSamples.sln.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
+
+	> [!NOTE]
+    > For more information, see the [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) article.
+	
+#### SatBrazil component
+
+1. Find the **HardwareStation.Extension.SatBrazil** project, and build it.
+1. In the **Extension.SatBrazil\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.FiscalPeripherals.SatBrazil.dll** assembly file.
+1. Copy the assembly file to the Hardware station extensions folder:
+
+    - **Shared hardware station:** Copy the file to the **bin** folder under the IIS Hardware station site location.
+    - **Dedicated hardware station on Modern POS:** Copy the file to the Modern POS client broker location.
+
+1. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
+
+    - **Shared hardware station:** The file is under the IIS Hardware station site location.
+    - **Dedicated hardware station on Modern POS:** The file is under the Modern POS client broker location.
+
+1. Add the following line to the **composition** section of the configuration file.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
+    ```
+    
+### Update the Modern POS configuration
+
+1. In File Explorer, go to **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker**. (This path assumes that the Microsoft Windows operating system on the computer is based on the x64 architecture.)
+1. In File Explorer, select **File** \> **Open Windows PowerShell** \> **Open Windows PowerShell as administrator**.
+1. In the Microsoft Windows PowerShell window that appears, enter **notepad DLLHost.exe.config**, and then press the Enter key. (The Windows PowerShell window will already be pointed to the current file directory.)
+1. In the Notepad window that appears, add the following lines to the **PreloadedComposition** \> **composition** section of the configuration file:
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.Brazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter" />
+    ```
+
+1. Select **File** \> **Save**.
+
 ### Enable Modern POS extension components
 
 To enable Modern POS extension components, follow these steps.
