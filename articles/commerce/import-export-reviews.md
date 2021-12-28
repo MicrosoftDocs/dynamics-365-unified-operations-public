@@ -4,7 +4,7 @@
 title: Import and export ratings and reviews
 description: This topic describes how to import and export product ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 11/02/2021
+ms.date: 12/28/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
@@ -37,9 +37,9 @@ To import ratings and reviews data from your existing system into Dynamics 365 C
 > [!NOTE]
 > Before following the steps below, you must first [configure Service-to-Service authentication](service-to-service-auth.md).
 
-To import ratings and reviews into Commerce, follow these steps.
+To import ratings and reviews into Commerce using the Dynamics 365 Ratings and Reviews Power Automate connector, follow these steps.
 
-1. Select the action for **Submit User Review**.
+1. Select the **Submit User Review** action.
 1. Establish a connection using the Azure Active Directory (Azure AD) app information created when you configured Service-to-Service authentication. For more information, see [Configure service-to-service authentication](service-to-service-auth.md).
 1. The **Submit User Review** action takes one review at a time, so repeat the action using the source reviews as a list to submit bulk reviews. 
 	
@@ -47,9 +47,9 @@ To import ratings and reviews into Commerce, follow these steps.
 
 To export ratings and reviews data from Dynamics 365 Commerce you must add the Dynamics 365 Ratings and Review Power Automate connector to either an existing or new Power Automate flow. For more information, see [Dynamics 365 Commerce - Ratings and Reviews (Preview)](/connectors/dynamics365ratingsre/).  
 
-To export ratings and reviews from Commerce, follow these steps.
+To export ratings and reviews from Commerce using the Dynamics 365 Ratings and Reviews Power Automate connector, follow these steps.
 
-1. Select the action for **Export All Reviews**.
+1. Select the **Export All Reviews** action.
 1. Complete the action. 
 
 ## Additional resources
