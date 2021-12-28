@@ -126,6 +126,21 @@ In the current release, report as finished and putaway operations (for finished 
 - Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
 - Use the Warehouse Management mobile app to report as finished and process the putaway work. The production floor execution interface does not currently support these processes.
 
+### Enable and use start on a scale unit
+
+In the current release, the start operation for production and batch orders is supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when connected to a scale unit, you must do the following:
+
+- Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Use the Warehouse Management mobile app to start the production or batch order. 
+
+### Enable and use material consumption on a scale unit
+
+In the current release, the flow on the Warehouse managment mobile app for registering material consumption is supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when connected to a scale unit, you must do the following:
+
+- Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Use the Warehouse Management mobile app to register material consumption.
+
+
 <!-- KFM: API details needed
 
 ### Customize report as finished and putaway functionality
