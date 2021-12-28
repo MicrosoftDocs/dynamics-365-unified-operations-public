@@ -1,6 +1,6 @@
-﻿---
+---
 title: Vendor invoice entities
-description: Vendor invoice entities allow cost type codes to be configured for internal or externally derived costs.
+description: This topic provides information about vendor invoice entities, which enable cost type codes to be configured for internal costs or externally derived costs.
 author: yufeihuang
 ms.date: 12/16/2021
 ms.topic: article
@@ -17,15 +17,15 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-The Landed cost module allows for cost type codes to be configured for internal or externally derived costs. Where a cost is external to a business, an invoice is expected from the service provider. This invoice is processed as an invoice journal where it can be associated to a Voyage and the value of the invoice distributed across one or more of the costs on the voyage.
+The **Landed cost** module enables cost type codes to be configured for internal costs or externally derived costs. If a cost is external to a business, an invoice is expected from the service provider. This invoice is processed as an invoice journal that can be associated with a voyage, and the value of the invoice can be distributed across one or more costs of the voyage.
 
-The vendor invoice entities provide the ability to allocate the value of a journal line across one or more costs on a Voyage that share the same cost type code.
+The vendor invoice entities enable the value of a journal line to be allocated across one or more costs of a voyage that share the same cost type code.
 
-The invoice journal header and invoice journal lines must exist for a cost to be allocated.
+A cost can be allocated only if the invoice journal header and invoice journal lines exist.
 
 ## Vendor voyage cost allocations (ITMLedgerJournalCostLinesVoyagesEntity)
 
-The vendor voyage cost allocations data entity enables the allocation of a vendor invoice line across one or more costs applied at the voyage cost area. This functionality is supported by the entity `ITMLedgerJournalCostLinesVoyagesEntity`. The following table lists the fields and mappings that make up this entity.
+The vendor voyage cost allocations data entity enables a vendor invoice line to be allocated across one or more costs that are applied to the voyage cost area. This functionality is supported by the `ITMLedgerJournalCostLinesVoyagesEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -37,7 +37,7 @@ The vendor voyage cost allocations data entity enables the allocation of a vendo
 
 ## Vendor shipping container cost allocations (ITMLedgerJournalCostLinesContainersEntity)
 
-The vendor shipping container cost allocations data entity enables the allocation of a vendor invoice line across one or more costs applied at the shipping container cost area. This functionality is supported by the entity `ITMLedgerJournalCostLinesContainersEntity`. The following table lists the fields and mappings that make up this entity.
+The vendor shipping container cost allocations data entity enables a vendor invoice line to be allocated across one or more costs that are applied to the shipping container cost area. This functionality is supported by the `ITMLedgerJournalCostLinesContainersEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -50,7 +50,7 @@ The vendor shipping container cost allocations data entity enables the allocatio
 
 ## Vendor folio cost allocations (ITMLedgerJournalCostLinesFoliosEntity)
 
-The vendor folio cost allocations data entity enables the allocation of a vendor invoice line across one or more costs applied at the folio cost area. This functionality is supported by the entity `ITMLedgerJournalCostLinesFoliosEntity`. The following table lists the fields and mappings that make up this entity.
+The vendor folio cost allocations data entity enables a vendor invoice line to be allocated across one or more costs that are applied to the folio cost area. This functionality is supported by the `ITMLedgerJournalCostLinesFoliosEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -62,7 +62,7 @@ The vendor folio cost allocations data entity enables the allocation of a vendor
 
 ## Vendor purchase order cost allocations (ITMLedgerJournalCostLinesPurchTableEntity)
 
-The vendor purchase order cost allocations data entity enables the allocation of a vendor invoice line across one or more costs applied at the purchase order cost area. This functionality is supported by the entity `ITMLedgerJournalCostLinesPurchTableEntity`. The following table lists the fields and mappings that make up this entity.
+The vendor purchase order cost allocations data entity enables a vendor invoice line to be allocated across one or more costs that are applied to the purchase order cost area. This functionality is supported by the `ITMLedgerJournalCostLinesPurchTableEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -74,7 +74,7 @@ The vendor purchase order cost allocations data entity enables the allocation of
 
 ## Vendor item cost allocations (ITMLedgerJournalCostLinesPurchLineEntity)
 
-The vendor item cost allocations data entity enables the allocation of a vendor invoice line across one or more costs applied at the item cost area, which covers costs on the purchase order line. This functionality is supported by the entity `ITMLedgerJournalCostLinesPurchLineEntity`. The following table lists the fields and mappings that make up this entity.
+The vendor item cost allocations data entity enables a vendor invoice line to be allocated across one or more costs that are applied to the item cost area. The item cost area covers costs on the purchase order line. This functionality is supported by the `ITMLedgerJournalCostLinesPurchLineEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ The vendor item cost allocations data entity enables the allocation of a vendor 
 
 ## Vendor transfer order line cost allocations (ITMLedgerJournalCostLinesTransferLineEntity)
 
-The vendor transfer order line cost allocations data entity enables the allocation of a vendor invoice line across one or more costs applied at the transfer line cost area. This functionality is supported by the entity `ITMLedgerJournalCostLinesTransferLineEntity`. The following table lists the fields and mappings that make up this entity.
+The vendor transfer order line cost allocations data entity enables a vendor invoice line to be allocated across one or more costs that are applied to the transfer line cost area. This functionality is supported by the `ITMLedgerJournalCostLinesTransferLineEntity` entity. The following table lists the fields and mappings that make up this entity.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -100,17 +100,17 @@ The vendor transfer order line cost allocations data entity enables the allocati
 
 ### Reference table
 
-Voyage cost lines have a direct association with a cost transaction record, which includes the **Reference table ID**. This value is unique for each of the cost areas (voyage, shipping container, and so on). Where specific table numbers are referenced for data being created using data entities, the entities are split based on these values.
+Voyage cost lines have a direct association with a cost transaction record. This record includes the **Reference table ID** value. This value is unique for each cost area (voyage, shipping container, and so on). When specific table numbers are referenced for data that is created by using data entities, the entities are split based on **Reference table ID** values.
 
-The values for the reference table (`RefTableId`) and the transaction type (`TransType`) are implicit in the selection of either the Landed cost purchase line or Landed cost transfer line entity.
+The values for the reference table (`RefTableId`) and the transaction type (`TransType`) are implicit in the selection of either the Landed cost purchase line or the Landed cost transfer line entity.
 
 ## Vendor invoice journal lines (VendorInvoiceJournalLineEntity)
 
-For a journal line value to be allocated to one or more costs in the Landed cost module, the journal line must be associated to a cost area. To support this, the Landed cost module adds a few new fields to the journal lines table (`LedgerJournalTrans`).
+Before a journal line value can be allocated to one or more costs in the **Landed cost** module, the journal line must be associated with a cost area. To support this functionality, the **Landed cost** module adds some new fields to the journal lines table (`LedgerJournalTrans`).
 
 ### Fields added to the vendor invoice journal line entity
 
-The following table lists fields that the Landed cost module adds to the vendor invoice journal line entity (`VendorInvoiceJournalLineEntity`). These fields enable the system to create journal lines and allocate costs against them
+The following table lists the fields that the **Landed cost** module adds to the vendor invoice journal line entity (`VendorInvoiceJournalLineEntity`). These fields enable the system to create journal lines and allocate costs against them.
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
@@ -121,16 +121,16 @@ The following table lists fields that the Landed cost module adds to the vendor 
 
 ### Main/offset account
 
-The main/offset account for an invoice journal line associated with a Landed cost voyage is determined by the cost type code. Where the cost type code is included on the invoice journal line the clearing account for the code will be used as either the main or offset account based on the following scenarios
+The main/offset account for an invoice journal line that is associated with a Landed cost voyage is determined by the cost type code. When the cost type code is included on the invoice journal line, the clearing account for the code will be used as either the main account or the offset account, depending on the scenario:
 
-- **Single line journal** – If a main account is defined (in other words, the vendor account) and a cost type code is provided, the offset account will be populated with the clearing account value for the entered cost type code.
-- **Multiple line journal** – If a main account is not defined and a cost type code is provided, the main account will be populated with the clearing account value for the entered cost type code. The journal line crediting the vendor will not reference a cost type code.
+- **Single-line journal** – If a main account (in other words, the vendor account) is defined, and a cost type code is provided, the clearing account value for that cost type code will be entered in the offset account.
+- **Multiple-line journal** – If a main account isn't defined, but a cost type code is provided, the clearing account value for the that cost type code will be entered in the main account. The journal line that is crediting the vendor won't reference a cost type code.
 
 ## Sequencing
 
-Due to dependencies between on the journal and journal lines tables, the voyage record must be created first and voyage lines can only be created once the voyage, shipping container, and folios have been created.
+Because of dependencies between the journal and journal lines tables, the voyage record must be created first. The voyage lines can be created only after the voyage, shipping container, and folios have been created.
 
-To allocate a voyage invoice, the system must process entities in the following order:
+To allocate a voyage invoice, the system must process the entities in the following order:
 
 1. Invoice journal header (`VendInvoiceJournalHeaderEntity`)
 1. Invoice journal line (`VendInvoiceJournalLineEntity`)
