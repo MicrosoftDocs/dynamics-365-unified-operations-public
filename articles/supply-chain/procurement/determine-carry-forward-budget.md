@@ -2,9 +2,9 @@
 # required metadata
 
 title: Define what happens with purchase order carry-forward budget
-description: 
+description: This topic describes what happens with purchase order carry-forward budget when purchase orders are cancelled or reduced. You can configure the system so that the associated budget is moved to the new year when carrying forward purchase orders from one year to another.
 author: TaylorVH 
-ms.date: 2/01/2022
+ms.date: 1/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
