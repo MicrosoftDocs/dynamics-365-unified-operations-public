@@ -76,11 +76,11 @@ Select one of the following year-end processing options to close purchase order 
 
 |     Option                                     	|     Closing and opening steps that occur for purchase   order encumbrances    	|
 |------------------------------------------------	|-------------------------------------------------------------------------------	|
-|     Process and do not carry forward budget    	|     Closing steps:                                                            	|
-|     Blank cell                                 	|     Opening steps:                                                            	|
+|     Process and do not carry forward budget -- Closing steps    	|    1.  The remaining encumbrances in the general ledger and outstanding budget reservations for encumbrances are reversed. <br> 2. Year-end closing entries are generated in the general ledger. <br>                                             	|
+|      Process and do not carry forward budget -- Opening steps                                      	|   1. Closing entries are reversed.   <br>  2.  Encumbrances are re-established in the general ledger.     <br>  3. Budget reservations for encumbrances are created for the purchase orders that are being processed.        	|
 |     Process and carry forward budget           	|     This option is available only if budget control has   been enabled.       	|
-|     Blank cell                                 	|     Closing steps:                                                            	|
-|     Blank cell                                 	|     Opening steps:                                                            	|
+|     Process and carry forward budget -- Closing steps                                     	|     Closing steps:                                                            	|
+|    Process and carry forward budget -- Opening steps                                     	|     Opening steps:                                                            	|
 
 ## Select purchase orders and run the purchase order year-end process
 
