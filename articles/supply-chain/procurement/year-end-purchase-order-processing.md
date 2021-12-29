@@ -2,9 +2,9 @@
 # required metadata
 
 title: Process purchase orders at year end
-description: 
+description: This topic explains how to generate closing entries to the general ledger and against budget reservations at the end of each fiscal year. You can also create opening entries to correctly record the encumbrances and budget reservations when the new fiscal year starts.
 author: TaylorVH 
-ms.date: 2/01/2022
+ms.date: 1/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,6 @@ ms.search.validFrom: 2022-02-01
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-
 
 If you record encumbrances for purchase orders in the general ledger, which includes purchase orders for projects, you can generate closing entries to the general ledger and against budget reservations at the end of each fiscal year. At the start of the new fiscal year, you can create opening entries to correctly record the encumbrances and budget reservations. These entries help make sure that the reservations for purchase order encumbrances are correctly recorded on the year-end financial statements and in budget control.
 
