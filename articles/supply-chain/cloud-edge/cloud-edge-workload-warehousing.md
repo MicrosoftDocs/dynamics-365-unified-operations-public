@@ -250,8 +250,8 @@ The following table shows which outbound features are supported, and where they 
 | Reduce picked quantity                                       | No  | Yes|
 | Reverse work                                                 | No  | Yes|
 | Reverse shipment confirmation                                | No  | Yes|
-| Release transfer orders for receiving<p>Used to enable license plate receiving at scale unit in case of warehouse order line cancellation or as part of a new workload deployment process</p> | Yes | No|
-
+| Request to cancel warehouse order lines                      | Yes | No<p>But will approve or reject the request</p> |
+| Release transfer orders for receiving<p>This will happen automatically as part of the transfer order shipment process, but can manually be used to enable license plate receiving at scale unit in case of having cancelled inbound warehouse order lines or as part of a new workload deployment process</p> | Yes | No|
 
 ### Inbound
 
@@ -264,7 +264,7 @@ The following table shows which inbound features are supported, and where they a
 | Landed cost and goods in transit receiving                       | Yes | No |
 | Inbound shipment confirmation                                    | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
-| Cancellation of warehouse order lines                            | Yes | No |
+| Request to cancel warehouse order lines                            | Yes | No<p>But will approve or reject the request</p> |
 | Purchase order source document product receipt processing                        | Yes | No |
 | Purchase order item receiving and put away                       | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p> |
 | Purchase order line receiving and put away                       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p></p> |
@@ -330,7 +330,7 @@ The following table summarizes which warehouse management production scenarios a
 | Release to warehouse                           | Yes | No |
 | Start production order                         | Yes | Yes|
 | Create warehouse orders                        | Yes | No |
-| Cancellation of warehouse order lines          | Yes | No |
+| Request to cancel warehouse order lines        | Yes | No<p>But will approve or reject the request</p> |
 | Report as finished and finished goods put away | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes|
 | Co-product and by-product put away             | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes|
 | Register material consumption                  | Yes | Yes|
