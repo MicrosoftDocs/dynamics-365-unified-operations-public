@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define what happens with purchase order carry-forward budget
-description: This topic describes what happens with purchase order carry-forward budget when purchase orders are cancelled or reduced. You can configure the system so that the associated budget is moved to the new year when carrying forward purchase orders from one year to another.
+description: This topic describes what happens with purchase order carry-forward budget when purchase orders are canceled or reduced. You can configure the system so that the associated budget is moved to the new year when carrying forward purchase orders from one year to another.
 author: TaylorVH 
 ms.date: 1/15/2022
 ms.topic: article
@@ -32,15 +32,15 @@ ms.search.validFrom: 2022-02-01
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes what happens with purchase order carry-forward budget when purchase orders are cancelled or reduced. You can configure the system so that the associated budget is moved to the new year when carrying forward purchase orders from one year to another. This process creates a budget register entry in the new year that represents the remaining balance of the purchase order. There are two ways to handle the carry-forward budget when a purchase order is cancelled or reduced. The carry-forward budget can remain as created or it can be automatically adjusted to remove the cancelled or reduced amount. The automatic budget adjustment is controlled by settings found on the fund records in General ledger. Only purchase order lines with distributions that include a fund are available for automatic budget adjustment. The automatic budget adjustment takes place when the purchase order is finalized.
+This topic describes what happens with purchase order carry-forward budget when purchase orders are canceled or reduced. You can configure the system so that the associated budget is moved to the new year when carrying forward purchase orders from one year to another. This process creates a budget register entry in the new year that represents the remaining balance of the purchase order. There are two ways to handle the carry-forward budget when a purchase order is canceled or reduced. The carry-forward budget can remain as created or it can be automatically adjusted to remove the canceled or reduced amount. The automatic budget adjustment is controlled by settings found on the fund records in General ledger. Only purchase order lines with distributions that include a fund are available for automatic budget adjustment. The automatic budget adjustment takes place when the purchase order is finalized.
  
 The following setup must be completed for all funds where you want to define this behavior.
  
 1. Open **General ledger > Chart of accounts > Funds > Funds**.
 2. For the Purchase order year-end process, the **Override selected year-end option** must be set to **Yes**.
-3. For Carry-forward budget status, the **Reinstate the budget when a carry-forward purchase order is cancelled or reduced** can be set to the following values.
-   - No Creates a budget register entry for the purchase order remaining balance that is cancelled or reduced.
-   - Yes Allows the purchase order to be cancelled or reduced without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by additional documents.
+3. For Carry-forward budget status, the **Reinstate the budget when a carry-forward purchase order is canceled or reduced** can be set to the following values.
+   - No Creates a budget register entry for the remaining balance of the purchase order that's canceled or reduced.
+   - Yes Allows the purchase order to be canceled or reduced without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by additional documents.
 
 ## Reduce carry-forward budget when an Invoice unit price is reduced
  
@@ -50,7 +50,7 @@ Once the feature is enabled, the same fund setup that was defined earlier will b
  
 1. Open **General ledger > Chart of accounts > Funds > Funds**.
 2. For the Purchase order year-end process, set the **Override selected year-end option** field to **Yes**.
-3. For Carry-forward budget status, the **Reinstate the budget when a carry-forward purchase order is cancelled or reduced** can be set to the following values.
+3. For Carry-forward budget status, the **Reinstate the budget when a carry-forward purchase order is canceled or reduced** can be set to the following values.
    - No creates a budget register entry against the purchase order for the price variance reduction amount.
    - Yes allows the invoice unit price reduction without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by additional documents.
 
