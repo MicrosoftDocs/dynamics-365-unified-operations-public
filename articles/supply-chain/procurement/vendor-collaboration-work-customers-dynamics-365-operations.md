@@ -105,7 +105,12 @@ People who work in the Public sector can see open and expired RFQs that have bee
 
 - Select the **Open published requests for quotations** link to see a list of open RFQs that are available to the public. An open RFQ is an RFQ that hasn't yet expired. You can find the expiration date and time on the header of the RFQ.
 
-    If you've been invited to bid, you can find the same RFQ on the **New bid invitations** page. Sometimes, you might want to bid on an open RFQ, but you haven't been invited to bid. In this case, you might be able to invite yourself, provided that the customer has enabled self-invitation for the RFQ case.
+    If you've been invited to bid, you can find the same RFQ on the **New bid invitations** page. Sometimes, you might want to bid on an open RFQ, but you haven't been invited to bid. In this case, you might be able to invite yourself, provided that the customer has enabled self-invitation for the RFQ case. You can also turn on the Vendor RFQ search by approved procurement categories feature to show a filter that will allow you to view the open RFQs and identify those that contain lines that match your approved procurement categories.
+	
+	Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+	 
+   - Module: Accounts payable
+   - Feature name: Let vendors search for RFQs by procurement category
 
     Enhance the accessibility of the **Open published requests for quotations** link by turning on the **Display the "Open published requests for quotation" link as a tile** feature. This feature converts the link to a tile and moves it to a prominent location, so that it's easy to find. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
