@@ -197,11 +197,11 @@ You can also open the **File states for the sources** page by selecting **Organi
 
 ## <a name="limitations">Limitations</a>
 
-The ER framework doesn't offer the capability to initiate a new batch job that will execute a model mapping in unattended mode for data import. To do this, you must develop new logic so that the configured ER model mapping can be called from the application user interface (UI) to import data from inbound files. Therefore, some engineering work is required. 
+In versions of Finance before version 10.0.25, the ER framework user interface (UI) doesn't offer the capability to initiate a new batch job that will execute a model mapping in unattended mode for data import. To do this, you must develop new logic so that the configured ER model mapping can be called from the application UI to import data from inbound files. Therefore, some engineering work is required. 
 
-To learn more about the relevant ER API, see the [Code to run a format mapping for data import](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) section in the [ER framework API changes for Application update 7.3](er-apis-app73.md) topic.
+To learn more about the relevant ER API, see the [Code to run a format mapping for data import](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) section in the [ER framework API changes for Application update 7.3](er-apis-app73.md) topic. Review the code in the `BankImport_RU` class of the `Application Suite` model to see how your custom logic can be implemented. This class extends the `RunBaseBatch` class. In particular, review the `runER()` method where the `ERIModelMappingDestinationRun` object is created as the runner of an ER model mapping.
 
-Review the code in the `BankImport_RU` class of the `Application Suite` model to see how your custom logic can be implemented. This class extends the `RunBaseBatch` class. In particular, review the `runER()` method where the `ERIModelMappingDestinationRun` object is created as the runner of an ER model mapping.
+However, in version 10.0.25 and later, the ER framework UI offers the capability to initiate a new batch job that will execute a model mapping in unattended mode for data import. To learn more about this process, see [Import data in batch mode from manually selected files](er-configure-data-import-batch.md).
 
 ## Additional resources
 
@@ -210,6 +210,8 @@ Review the code in the `BankImport_RU` class of the `Application Suite` model to
 [ER framework API changes for Application update 7.3](er-apis-app73.md)
 
 [ER framework API changes for Application update 10.0.23](er-apis-app10-0-23.md)
+
+[ER framework API changes for Application update 10.0.25](er-apis-app10-0-25.md)
 
 
 
