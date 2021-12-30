@@ -896,7 +896,7 @@
         href: asset-leasing/asset-leasing-rprts.md
     - name: General ledger
       items:
-      - name: General ledger overview
+      - name: General ledger home page
         href: general-ledger/general-ledger.md
       - name: Chart of accounts
         items:
