@@ -2,7 +2,7 @@
 title: SysSetupConfigAttribute attribute
 description: This topic describes how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
 author: tonyafehr
-ms.date: 10/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -45,16 +45,16 @@ class DemoClass implements SysSetup
 > If the X++ class does not have the **SysSetupConfigAttribute** attribute, then default values are applied. `ContinueOnError` is **true** and `Timeout` is **120** seconds.
 
 
-# SysSetupScript : Async Implementation
+# SysSetupScript: Asynchronous implementation
 
-To execute the SysSetup scripts in Async Mode, which executes the script as Batch Job. This would enhance the performance and remove unnecessary dependencies by making sure these can run parallelly and independent of one another! To achieve this, we have a SysSetupWrapper. SysSetupAsync class that you could extend and consume. This would allow DbSync to recognize and execute, as necessary
+To execute the SysSetup scripts in asynchronous mode, which executes the script as a batch job. This would enhance the performance and remove unnecessary dependencies by making sure these can run parallelly and independent of one another. To achieve this, we have a SysSetupWrapper. SysSetupAsync class that you could extend and consume. This would allow DbSync to recognize and execute, as necessary.
 
-## Points to be considered when enabling as Async
+## Points to be considered when enabling as asynchronous mode
 
- + They don’t have any timeouts, but they operate in the Boundaries of batch Jobs scope as high priority jobs.
- + There is no further meaning to SysssetupTable Attribute once they are scheduled as batch jobs/ but as far as we have seen all scripts are independently functional today.
- + If you are writing a new Script as Async please ensure to operate on smaller workloads which can recover from point of pause / failure as batch jobs can be withheld and resumed in future.
- + The loaddata() is not running inside this ttsbegin; ..., ttscommit; block. so this should be handled in your implementation.
+ - They don’t have any timeouts, but they operate in the boundaries of batch jobs scope as high priority jobs.
+ - There is no further meaning to SysssetupTable Attribute once they are scheduled as batch jobs. However, as far as we have seen all scripts are independently functional today.
+ - If you are writing a new script as asynchronous, please ensure to operate on smaller workloads which can recover from point of pause / failure as batch jobs can be withheld and resumed in future.
+ - The loaddata() is not running inside this ttsbegin; ..., ttscommit; block. so this should be handled in your implementation.
 
 ```xpp
 class DemoClass extends SysSetupAsync implements SysSetup
