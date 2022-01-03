@@ -33,13 +33,13 @@ This topic lists Commerce capabilities that are available in on-premises deploym
 For more information about on-premises deployments, see [On-premises deployment home page](../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
 | Component            | On-premises status |
-|----------------------|--------------------|
+| -------------------- | ------------------ |
 | Cloud Point of Sale  | Available          |
 | Retail Point of Sale | Available          |
 | Modern Point of Sale | Available          |
 | Commerce Scale Unit  | Available          |
 | Channel database     | Available          |
-| Hardware station     | Not available      |
+| Hardware station     | Available          |
 | AX 2012 N-1 support  | Not available      |
 
 ## Head office capability
