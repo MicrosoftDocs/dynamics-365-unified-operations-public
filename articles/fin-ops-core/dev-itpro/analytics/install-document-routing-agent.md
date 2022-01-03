@@ -152,7 +152,7 @@ Yes. To access the agent installation links, the user must be part of the **Docu
 
 The number of supported network printers depends on the number of legal entities and the number of network printers deployed. If you have fifty printers and one legal entity, a single Document Routing Agent can handle the load (although you'd want more than one to ensure high availability). If you have a large number of printers and legal entities, we recommend that you do some performance testing to determine the number of Document Routing Agents that you'll need.
 
-## How many Document Routing Agents should be configured per printer?
+### How many Document Routing Agents should be configured per printer?
 
 Multiple Document Routing Agents should be configured for your printers to ensure high availability. However, you should limit the number of DRAs per printer to at most 3 DRAs. For each DRA poll, it needs to query the queue to pick up documents sent to printers registered in that DRA client. The more printers associated with a DRA, the slower the query will be. This is especially true when there are large number of pending jobs in the queue. You are better to have a smaller number of printers across 2-3 DRAs than a large number of printers across 3+ DRAs. 
 
