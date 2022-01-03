@@ -4,7 +4,7 @@
 title: Install the Document Routing Agent to enable network printing
 description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
 author: RichdiMSFT
-ms.date: 09/06/2019
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -114,11 +114,12 @@ Use client pages to manage access to the network printers that have been registe
 The network printers can now be used in the application.
 
 > [!NOTE]
-> Ensure that your network printer destinations are kept up to date, and that Document Routing is properly configured with printers that are registered against DRA(s). If documents are sent to a printer that no longer exists, the print queue will continue to grow and slow down queries that poll the print queue.
+> Ensure that your network printer destinations are kept up to date, and that document routing is properly configured with printers that are registered against Document Rounting Agents. If documents are sent to a printer that no longer exists, the print queue will continue to grow and slow down queries that poll the print queue.
     
 ## Adjust the document routing history cleanup batch job
-There is a cleanup batch job for document routing history that is enabled by default and runs daily, purging document routing history older than 7 days. This history is intended to be used by the customer for troubleshooting or traceability if there are issues with printing. Depending on how you intend to access this historical data, you should be able to reduce the retention period from the default value of 7 days, which is considered an upper limit. The fewer records in this table, the more performant printing is. You can configure this at https://[host_adress]/?mi=DocumentRoutingHistoryCleanupConfig and configure the value for JobHistoryHours (number of hours to retain history). 
-As part of the DRA polling, a query is executed against this table. This query should execute quickly, but if there are a lot of records in this table, a large print job can be very slow. Ensure that this batch job is running daily, and configure this to reduce how much print history you retain. 
+There is a cleanup batch job for document routing history that is enabled by default and runs daily, purging document routing history older than 7 days. This history is intended to be used by the customer for troubleshooting or traceability if there are issues with printing. Depending on how you intend to access this historical data, you should be able to reduce the retention period from the default value of 7 days, which is considered an upper limit. The fewer records in this table, the more performant printing is. You can configure this at `https://[host_adress]/?mi=DocumentRoutingHistoryCleanupConfig` and configure the value for **JobHistoryHours** (number of hours to retain history). 
+
+As part of the Document Rounting Agent polling, a query is executed against this table. This query should execute quickly, but if there are a lot of records in this table, a large print job can be very slow. Ensure that this batch job is running daily, and configure this to reduce how much print history you retain. 
 
 ## Frequently asked questions
 ### Does the Document Routing Agent have to be installed on each computer where a user connects by using a browser?
