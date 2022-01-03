@@ -155,7 +155,7 @@ The number of supported network printers depends on the number of legal entities
 
 ### How many Document Routing Agents should be configured per printer?
 
-Multiple Document Routing Agents should be configured for your printers to ensure high availability. However, you should limit the number of agents per printer to at most 3 agents. For each Document Routing Agent poll, it needs to query the queue to pick up documents sent to printers registered in that Document Routing Agent client. The more printers associated with a Document Routing Agent, the slower the query will be. This is especially true when there are large number of pending jobs in the queue. You are better to have a smaller number of printers across 2-3 Document Routing Agents than a large number of printers across 3+ Document Routing Agents. 
+Multiple Document Routing Agents should be configured for your printers to ensure high availability. However, you should limit the number of agents per printer to at most three agents. For each Document Routing Agent poll, it needs to query the queue to pick up documents sent to printers registered in that Document Routing Agent client. The more printers associated with a Document Routing Agent, the slower the query will be. This is especially true when there are large number of pending jobs in the queue. You are better to have a smaller number of printers across two to three Document Routing Agents than a large number of printers across three or more Document Routing Agents. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
