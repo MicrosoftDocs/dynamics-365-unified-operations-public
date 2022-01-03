@@ -3,7 +3,7 @@
 title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: Peakerbl
-ms.date: 09/13/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
