@@ -1484,6 +1484,8 @@
         href: perf-test/rsat/rsat-best-practices.md
       - name: Data agnostic testing using the Regression Suite Automation Tool
         href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+      - name: Run Regression suite automation tool (RSAT) with parallel execution
+        href: perf-test/rsat/rsat-parallel-execution.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
     - name: Release solutions using Lifecycle Services
