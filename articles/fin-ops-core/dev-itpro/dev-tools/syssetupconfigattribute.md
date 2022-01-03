@@ -47,14 +47,15 @@ class DemoClass implements SysSetup
 
 # SysSetupScript: Asynchronous implementation
 
-To execute the SysSetup scripts in asynchronous mode, which executes the script as a batch job. This would enhance the performance and remove unnecessary dependencies by making sure these can run parallelly and independent of one another. To achieve this, we have a SysSetupWrapper. SysSetupAsync class that you could extend and consume. This would allow DbSync to recognize and execute, as necessary.
+To execute the SysSetup scripts in asynchronous mode, the scripts need to be run as a batch job. This enhances performance and removes unnecessary dependencies by ensuring the scripts run parallel and independent of one another. To achieve this, use the SysSetupWrapper and the SysSetupAsync class that you can extend and consume. This allows DbSync to execute, as needed.
 
-## Points to be considered when enabling as asynchronous mode
+## Considerations when enabling asynchronous mode
+When enabling asynchronous mode, consider the following: 
 
- - They don’t have any timeouts, but they operate in the boundaries of batch jobs scope as high priority jobs.
- - There is no further meaning to SysssetupTable Attribute once they are scheduled as batch jobs. However, as far as we have seen all scripts are independently functional today.
- - If you are writing a new script as asynchronous, please ensure to operate on smaller workloads which can recover from point of pause / failure as batch jobs can be withheld and resumed in future.
- - The loaddata() is not running inside this ttsbegin; ..., ttscommit; block. so this should be handled in your implementation.
+ - This mode does not have any timeouts, but instead operates in the boundaries of batch jobs scoped as high priority jobs.
+ - There is no further meaning to SysssetupTable attribute if it is scheduled as a batch job. Currently, all scripts are independently functional.
+ - If you are writing a new script as asynchronous, ensure that you use smaller workloads that can recover from a point of pause/failure because these batch jobs can be withheld and resumed in the future.
+ - The loaddata() does not run inside the ttsbegin; ..., ttscommit; block, so this should be handled in your implementation.
 
 ```xpp
 class DemoClass extends SysSetupAsync implements SysSetup
