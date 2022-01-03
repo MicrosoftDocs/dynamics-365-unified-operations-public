@@ -31,15 +31,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to install and configure the Document Routing Agent (DRA).  The DRA is a downloadable application that you can use to enable network printing scenarios. You can enable network printers for specific companies by using in-client administrative pages.
+This topic describes how to install and configure the Document Routing Agent.  The Document Routing Agent is a downloadable application that you can use to enable network printing scenarios. You can enable network printers for specific companies by using in-client administrative pages.
 
 ## Preparing to install the Document Routing Agent
 
 - Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, or Microsoft Windows Server 2016.
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
-- When installing the DRA, make sure you are logged in as the Admin user.
-- The Microsoft Azure Active Directory (Azure AD) account that is used to configure the DRA must share the same domain as the Azure tenant.
-- The DRA requires .NET 4.62 or later and Adobe Acrobat Reader on the client.
+- When installing the Document Routing Agent, make sure you are logged in as the Admin user.
+- The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
+- The Document Routing Agent requires .NET 4.62 or later and Adobe Acrobat Reader on the client.
 - Configure Adobe client print settings to prevent document scaling.
 
 Network printers that are registered for applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
@@ -132,7 +132,7 @@ The Document Routing Agent now supports running in the background as a service. 
 
 ### Do I need to update credentials or refresh Azure authentication tokens on a recurring basis?
 
-Yes. The Azure Active Directory token must be refreshed every 90 days. Failing to do so will prevent the DRA from being able to authenticate and retrieve printing instructions applications.
+Yes. The Azure Active Directory token must be refreshed every 90 days. Failing to do so will prevent the Document Routing Agent from being able to authenticate and retrieve printing instructions applications.
 
 ### Is the Document Routing Agent supported on Microsoft Windows Server 2019?
 
@@ -155,7 +155,7 @@ The number of supported network printers depends on the number of legal entities
 
 ### How many Document Routing Agents should be configured per printer?
 
-Multiple Document Routing Agents should be configured for your printers to ensure high availability. However, you should limit the number of DRAs per printer to at most 3 DRAs. For each DRA poll, it needs to query the queue to pick up documents sent to printers registered in that DRA client. The more printers associated with a DRA, the slower the query will be. This is especially true when there are large number of pending jobs in the queue. You are better to have a smaller number of printers across 2-3 DRAs than a large number of printers across 3+ DRAs. 
+Multiple Document Routing Agents should be configured for your printers to ensure high availability. However, you should limit the number of agents per printer to at most 3 agents. For each Document Routing Agent poll, it needs to query the queue to pick up documents sent to printers registered in that Document Routing Agent client. The more printers associated with a Document Routing Agent, the slower the query will be. This is especially true when there are large number of pending jobs in the queue. You are better to have a smaller number of printers across 2-3 Document Routing Agents than a large number of printers across 3+ Document Routing Agents. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
