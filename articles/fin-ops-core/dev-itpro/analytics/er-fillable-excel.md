@@ -4,7 +4,7 @@
 title: Design a configuration for generating documents in Excel format
 description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -369,6 +369,22 @@ You can fix the issue in either of the following ways:
     3. Run the modified ER format.
 
         ![Reviewing the generated document in the Excel desktop application.](./media/er-fillable-excel-example2-4.png)
+
+## Limitations
+
+### Known EPPlus library limitations
+
+#### External data sources
+
+If one of your templates contains a PivotTable that is based on a PowerPivot model that refers to an [external data source](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b), and the **Enable usage of EPPlus library in Electronic reporting framework** feature is enabled, you receive the following error message when you run an ER format that uses that template to generate an outbound document in Excel format: "The cachesource is not a worksheet." To fix this issue, you have the following options:
+
+- **Recommended:** Redesign the Excel solution that you're using:
+
+    1. Isolate the part that contains pivots in a separate Excel workbook (workbook A). 
+    2. Use ER to generate a second Excel workbook (workbook B) from Finance that has the required details. 
+    3. Refer to workbook B in workbook A as soon as workbook B is generated.
+
+- Use an option other than EPPlus to turn off the feature. 
 
 ## Additional resources
 

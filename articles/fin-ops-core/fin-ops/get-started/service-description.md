@@ -4,7 +4,7 @@
 title: Service description for Finance and Operations apps
 description: This topic provides the service description for Finance and Operations apps.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -312,9 +312,9 @@ Microsoft's Disaster Recovery plans and procedures are examined regularly throug
 | Microsoft provisions a secondary environment in the Azure paired datacenter when the primary production instance is deployed. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft enables geo-redundancy of Azure SQL and Azure Blob Storage when the primary production instance is deployed. | None |
 | Microsoft enables automatic backup on the Azure SQL databases. | None |
-| <p>When an outage occurs, Microsoft determines whether a failover must be performed for the customer, and whether there will be data loss. Data loss can be up to five seconds. For more information, see [Azure SQL Database Geo-Restore](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>In the event of data loss, Microsoft will request the customer's sign-off for a failover.</p> | In the event of data loss, the customer might have to provide written sign-off to trigger the failover. |
+| <p>When an outage occurs, Microsoft determines whether a failover must be performed for the customer, and whether there will be data loss. Customers might experience data loss of up to 15 minutes, depending on the nature and timing of the outage. | In the event of data loss, the customer may have to provide written signoff to trigger the failover. |
 | When a failover occurs, the applicable service works in limited mode. Update maintenance can't be triggered in failover mode. | The customer can't request package deployments or other regular maintenance requests in failover mode. |
-| When the datacenter becomes operational, Microsoft fails back to the production instance in the primary Azure region. Normal operations resume. | The customer might have to sign-off on failback to the production instance in the primary Azure region. |
+| When the datacenter becomes operational, Microsoft fails back to the production instance in the primary Azure region. Normal operations resume. | The customer may have to signoff on failback to the production instance in the primary Azure region. |
 
 ## Finance and Operations support offerings
 

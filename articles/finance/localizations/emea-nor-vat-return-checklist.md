@@ -4,7 +4,7 @@
 title: Checklist for Electronic messages setup for VAT returns with direct submission to Altinn
 description: This topic contains a checklist for setting up Electronic messages functionality for VAT returns of Norway.
 author: liza-golub
-ms.date: 11/28/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,7 +52,7 @@ Although this topic includes the most important information about the setup, it 
     | NO Altinn | Web application for interoperation with Altinn application programming interfaces (APIs). |
     | NO ID-Porten | Web application for interoperation with the integration point that you created in ID-porten. |
 
-The following table shows the parameters for the web applications that the **NO VAT return** processing uses.
+The following table shows the web application parameters that the **NO VAT return** processing uses to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
 | Parameter | Value for NO Altinn | Value for NO ID-Porten |
 |---|---|---|
@@ -68,7 +68,7 @@ The following table shows the parameters for the web applications that the **NO 
 > [!IMPORTANT]
 > To enable access to the access token and interoperation with ID-porten and Altinn APIs for business users, you must define security roles for both web applications.
 
-Internet addresses (base URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual URLs on the official Altinn and ID-porten website.
+Internet addresses (base URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual internet addresses on the official Altinn and ID-porten website. For actual internet addresses of the **NO ID-Porten** web application, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
 
 ## Web service settings
 
@@ -82,7 +82,7 @@ Internet addresses (base URLs) are subject to change by the Norwegian Tax Admini
     - NO Altinn PUT XML
     - NO Validate VAT return
 
-The following tables show the parameters and parameter values for the web services that the **NO VAT return** processing uses.
+The following tables show the parameters and parameter values for the web services that the **NO VAT return** processing uses to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
 ### Web service: NO Altinn GET attachments
 
@@ -124,6 +124,8 @@ The following tables show the parameters and parameter values for the web servic
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **200** |
 
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+
 ### Web service: NO Altinn POST JSON
 
 | Parameter name | Parameter value |
@@ -143,6 +145,8 @@ The following tables show the parameters and parameter values for the web servic
 | Content type | **application/json** |
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **201** |
+
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### Web service: NO Altinn POST XML
 
@@ -164,6 +168,8 @@ The following tables show the parameters and parameter values for the web servic
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **201** |
 
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+
 ### Web service: NO Altinn PUT JSON
 
 | Parameter name | Parameter value |
@@ -183,6 +189,8 @@ The following tables show the parameters and parameter values for the web servic
 | Content type | **application/json** |
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **200** |
+
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### Web service: NO Altinn PUT XML
 
@@ -204,6 +212,8 @@ The following tables show the parameters and parameter values for the web servic
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **201** |
 
+For *production* interoperation, use the following internet address: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+
 ### Web service: NO Validate VAT return
 
 | Parameter name | Parameter value |
@@ -224,6 +234,8 @@ The following tables show the parameters and parameter values for the web servic
 | Request header format mapping | **Altinn VAT web request headers format (NO)** |
 | Successful response code | **200** |
 
+For *production* interoperation, use the following internet address: `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider`.
+
 ## Additional fields
 
 - Go to **Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**, and review your setup. The **NO VAT return** processing uses the following additional fields.
@@ -238,6 +250,7 @@ The following tables show the parameters and parameter values for the web servic
     | NO VAT Receipt | Kvittering | No | No | Yes |
     | NO VAT Validation result | Valideringsresultat | No | No | Yes |
     | Tax registration number | Skatteregistreringsnummer | No | No | Yes |
+    | NO VAT Payment ID | KundeIdentifikasjonsnummer. Nummer som brukes ved regningsbetaling i Norge for å identifisere kunden og fakturaen, KID-nummer. | Yes | No | No |
 
     > [!NOTE]
     > The user can't change the setting of any of these fields.

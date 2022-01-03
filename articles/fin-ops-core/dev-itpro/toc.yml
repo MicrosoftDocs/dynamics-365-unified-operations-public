@@ -20,8 +20,6 @@
           href: get-started/whats-new-platform-updates-10-0-23.md
         - name: Platform updates for version 10.0.22 (November 2021)
           href: get-started/whats-new-platform-updates-10-0-22.md
-        - name: Platform updates for version 10.0.21 (October 2021)
-          href: get-started/whats-new-platform-updates-10-0-21.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -234,7 +232,7 @@
         href: data-entities/dm-error-descriptions.md  
     - name: Azure Data Lake
       items: 
-      - name: Export to Azue Data Lake overview
+      - name: Export to Azure Data Lake overview
         href: data-entities/Azure-Data-Lake-GA-version-overview.md
       - name: Install Export to Azure Data Lake add-in
         href: data-entities/configure-export-data-lake.md
@@ -408,6 +406,8 @@
             href: deployment/onprem-remove-reinstall-AOS-node.md
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
+          - name: Upgrade the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
+            href: deployment/onprem-upgrade-sqlserver.md
         - name: Local agent
           items:
           - name: AD FS Microsoft 365 compatibility
@@ -1012,9 +1012,11 @@
           href: lifecycle-services/use-translation-service-ua.md
         - name: Translation memory files
           href: lifecycle-services/use-translation-service-tm.md
+        - name: Azure DevOps extension (Public Preview)
+          href: lifecycle-services/dts-devops-extension.md
     - name: Microsoft Power Platform integration
       items:
-      - name: Microsoft Power Platform integration with Finance and Operations
+      - name: Overview
         href: power-platform/overview.md
       - name: Enabling the Power Platform integration
         href: power-platform/enable-power-platform-integration.md
@@ -1604,6 +1606,8 @@
           href: sysadmin/retryable-batch.md
         - name: Copy a batch job
           href: sysadmin/copy-batch-job.md
+        - name: Priority-based batch scheduling
+          href: sysadmin/priority-based-batch-scheduling.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
         - name: Daylight saving time support for active batch periods

@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: 
-# ROBOTS: 
+ROBOTS: noindex,nofollow
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom

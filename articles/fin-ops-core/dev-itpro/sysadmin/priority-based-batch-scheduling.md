@@ -4,7 +4,7 @@
 title: Priority-based batch scheduling
 description: This topic provides information about the functionality for priority-based batch scheduling.
 author: peakerbl
-ms.date: 12/05/2019
+ms.date: 12/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: Platform Update31
 
 [!include [banner](../includes/banner.md)]
 
-In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server. Instead, relative scheduling priorities are used to determine the order that tasks are run in across available batch servers.
+In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server and allows you to define priorities for batch groups. It is no longer necessary to assign batch jobs to batch servers. Instead, relative scheduling priorities based on business requirements are used to determine the order in which tasks are run across available batch servers.
 
 > [!IMPORTANT]
-> This feature is available only in a restricted preview as part of Platform update 31.
+> This feature is available in a restricted preview as part of Platform update 31.
 
 A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. **Normal** is the default value and is also applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the <a name="reserved">Set the batch reserved capacity</a> section later in this topic.
 
@@ -43,9 +43,18 @@ A scheduling priority is defined for batch groups, but it can be overridden for 
 
 Platform update 32 includes upgrade support for existing batch jobs. For more information, see the <a name="#automatic">Automatic batch group migration for batch jobs</a> section later in this topic.
 
-Priority-based batch scheduling requires that you turn on the **Batch framework contention reduction** feature in Feature management.
+Advantages of priority-based batch scheduling include:
+
+- Priorities are introduced up to the batch job level.
+- It serves as a prerequisite for near-zero downtime servicing.
+- It doesn't tie a batch job to a particular server.
 
 The following procedures explain how to work with batch groups, jobs, and tasks, when the **Priority based batch scheduling** feature is turned on.
+
+1. **Identify** - Identify the priorities of the existing batch jobs.
+2. **Enable** - Enable priority-based scheduling in Feature management. By default, all existing batch jobs in will be given the **Normal** priority.
+3. **Update** - Selectively update the priorities for jobs that are not **Normal** priority (such as **Reserved capacity**, **Critical**, **High**,  and **Low**).
+4. **Apply** - Apply **Reserved capacity** if there is a need to dedicate capacity for some jobs beyond the priority.
 
 ## Batch groups
 
@@ -137,5 +146,6 @@ The batch job is also run when the feature is turned on, to migrate any batch jo
 
 We recommend that you review the automatic batch group assignment after the feature is turned on and the migration is completed. To facilitate this review, the **Batch group** field for tasks is read-only. To support backward compatibility, the value of this field will be propagated from the job when new batch tasks are added.
 
+As a best practice, we recommend that you do not assign a high or critical priority to all batch jobs.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

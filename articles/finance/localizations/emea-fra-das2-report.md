@@ -4,7 +4,7 @@
 title: DAS-2 report
 description: This topic guides you through the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
 author: sndray
-ms.date: 07/23/2020
+ms.date: 12/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -112,7 +112,7 @@ Follow these steps to generate the tax declaration report.
 5. Select the vendor group.
 
 > [!NOTE]
-> The DAS-2 report doesn't support transactions that are created and posted from a general journal entry and the accrual schema scenario. 
+> The DAS-2 report doesn't support transactions that are created and posted from a general journal entry, the accrual schema scenario, or one voucher functionality. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

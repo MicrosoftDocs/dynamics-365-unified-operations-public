@@ -4,6 +4,34 @@
     items:
     - name: Dynamics 365 Supply Chain Management home page
       href: index.md
+    - name: What's new or changed
+      items: 
+      - name: What's new or changed in Finance and Operations apps
+        href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+      - name: What's new or changed in Supply Chain Management
+        items:
+        - name: What's new or changed in Supply Chain Management home page
+          href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.24 (February 2022)
+          href: get-started/whats-new-scm-10-0-24.md
+        - name: Supply Chain Management 10.0.23 (January 2022)
+          href: get-started/whats-new-scm-10-0-23.md
+        - name: Supply Chain Management 10.0.22 (November 2021)
+          href: get-started/whats-new-scm-10-0-22.md
+        - name: Supply Chain Management 10.0.21 (October 2021)
+          href: get-started/whats-new-scm-10-0-21.md
+      - name: Removed or deprecated features
+        items:
+        - name: Removed or deprecated features home page
+          href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
+          href: get-started/removed-deprecated-features-scm-updates.md
+        - name: Removed or deprecated features in previous releases
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+      - name: AX 2012 features that were postponed
+        href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
     - name: Get started
       items:
       - name: Service description
@@ -62,34 +90,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure Warehousing for on-premises deployments
           href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-      - name: What's new or changed
-        items: 
-        - name: What's new or changed in Finance and Operations apps
-          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-        - name: What's new or changed in Supply Chain Management
-          items:
-          - name: What's new or changed in Supply Chain Management home page
-            href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.24 (February 2022)
-            href: get-started/whats-new-scm-10-0-24.md
-          - name: Supply Chain Management 10.0.23 (January 2022)
-            href: get-started/whats-new-scm-10-0-23.md
-          - name: Supply Chain Management 10.0.22 (November 2021)
-            href: get-started/whats-new-scm-10-0-22.md
-          - name: Supply Chain Management 10.0.21 (October 2021)
-            href: get-started/whats-new-scm-10-0-21.md
-        - name: Removed or deprecated features
-          items:
-          - name: Removed or deprecated features home page
-            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
-            href: get-started/removed-deprecated-features-scm-updates.md
-          - name: Removed or deprecated features in previous releases
-            href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-        - name: AX 2012 features that were postponed
-          href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-        - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-          href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
       - name: Documentation resources
         items:
         - name: Help system
@@ -1617,6 +1617,8 @@
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
+        - name: Inventory Visibility tips
+          href: inventory/inventory-visibility-tips.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence home page
@@ -2827,7 +2829,7 @@
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
         href: sales-marketing/tasks/create-new-trade-agreement.md
-      - name: Sales history cleanup performance improvements
+      - name: Sales history cleanup performance improvements
         href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
     - name: Service management
       items:
@@ -3573,6 +3575,8 @@
           href: troubleshooting/inventory/while-splitting-the.md
       - name: Master planning
         items:
+        - name: The system can't find a planned order when operating on multiple orders
+          href: troubleshooting/planning/planned-order-not-exist.md
         - name: BOM explosion behaves differently for firmed and estimated production orders
           href: troubleshooting/planning/bom-explosion-works-differently.md
         - name: The delay value isn't updated when you reschedule a planned order

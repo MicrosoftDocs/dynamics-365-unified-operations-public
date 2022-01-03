@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Engineering change management overview
+title: Engineering change management overview (contains video)
 description: This topic provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: t-benebo
 ms.date: 08/26/2021
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.21
 
 ## Feature summary
 
-Today's manufacturers require strong product data management, version control, and engineering change management to succeed in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and an increased focus on product safety.
+Today's manufacturers require strong product data management, version control, and engineering change management to succeed in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and an increased focus on product safety.
 
-Engineering change management brings structure and discipline to the product data management process, and enables products to be defined, released, and revised in a controlled manner that is supported by workflows. Through product versions and engineering change management, you can document, assess the impact of, and apply engineering changes throughout the whole lifecycle of a product.
+Engineering change management brings structure and discipline to the product data management process, and enables products to be defined, released, and revised in a controlled manner that is supported by workflows. Through product versions and engineering change management, you can document, assess the impact of, and apply engineering changes throughout the whole lifecycle of a product.
 
 Engineering change management helps you plan and manage product versioning, and manage product lifecycles and engineering changes. Here is a list of its main features:
 

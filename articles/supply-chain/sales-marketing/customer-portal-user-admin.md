@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create and manage Customer portal users
+title: Create and manage Customer portal users (contains video)
 description: This topic explains how to create Customer portal user accounts and set permissions for them.
 author: Henrikan
 ms.date: 07/31/2020
