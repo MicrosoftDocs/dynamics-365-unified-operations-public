@@ -88,14 +88,13 @@ The **Sales tax transactions extension** consistency check is available in build
 
 ## Sales tax settlement by date of VAT register
 
-Starting with the 10.0.25 monthly update, the **Sales tax settlement and reporting by date of VAT register** feature is available. With this feature enabled, you can settle and report sales tax by the date of VAT register.
-When the **Sales tax settlement and reporting by date of VAT register** feature is enabled, you can set the **Date of VAT register** option to **Yes** on the **General ledger parameters** page, on the **Sales tax** tab. The periodic settlement will collect sales tax transaction by the date of VAT register instead of the transaction date.
+Starting in release 10.0.25, the **Sales tax settlement and reporting by date of VAT register** feature is available. With this feature enabled, you can settle and report sales tax by using the VAT register date. When this feature is enabled, you can set the **Date of VAT register** option to **Yes** on the **General ledger parameters** page on the **Sales tax** tab. The periodic settlement will collect sales tax transaction by the date of VAT register instead of the transaction date.
 
-  ![Date of VAT register option is ON in GL parameters](./media/GLParameters-DateOfVATRegister.png)
+  ![Date of VAT register option is ON in General ledger parameters.](./media/GLParameters-DateOfVATRegister.png)
 
 > [!NOTE]
 > To enable the **Sales tax settlement and reporting by date of VAT register** feature, the **Date of VAT register** feature should be enabled in the **Feature management** workspace.
 > 
-> To disable the **Sales tax settlement and reporting by date of VAT register** feature, make sure the **Date of VAT register** check box on the **General ledger parameters** page is set to **No**. The respective warning will appear if the check box is active for some legal entities.
+> To disable the **Sales tax settlement and reporting by date of VAT register** feature, make sure the **Date of VAT register** check box on the **General ledger parameters** page is set to **No**. A warning will display if the check box is active for some legal entities.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
