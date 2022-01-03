@@ -4,7 +4,7 @@
 title: Inspect the configured ER component to prevent runtime issues
 description: This topic explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -909,42 +909,45 @@ Modify the configured format by changing the **Replication direction** property 
 
 ## <a id="i18"></a>Executability of an expression with ORDERBY function
 
-The built-in [ORDERBY](er-functions-list-orderby.md) ER function is used to sort records of an ER data source of the *[Record list](er-formula-supported-data-types-composite.md#record-list)* type that is specified as an argument of this function. Arguments of this function can be [specified](er-functions-list-orderby.md#syntax-2) to sort records of application tables, views, or data entities by placing a single database call to get the sorted data as a list of records. A data source of the **Record list** type is used as an argument of this function and specifies the application source for the call. ER checks whether a direct database query can be established to a data source that is referred to in the `ORDERBY` function. If a direct query can't be established, a validation error occurs in the ER model mapping designer. The message that you receive states that the ER expression that includes the `ORDERBY` function can't be run at runtime.
+The built-in [ORDERBY](er-functions-list-orderby.md) ER function is used to sort the records of an ER data source of the *[Record list](er-formula-supported-data-types-composite.md#record-list)* type that's specified as an argument of this function. Arguments of this function can be [specified](er-functions-list-orderby.md#syntax-2) to sort records of application tables, views, or data entities by placing a single database call to get the sorted data as a list of records. A data source of the **Record list** type is used as an argument of this function and specifies the application source for the call. ER checks whether a direct database query can be established to a data source that is referred to in the `ORDERBY` function. If a direct query can't be established, a validation error occurs in the ER model mapping designer. The message that you receive states that the ER expression that includes the `ORDERBY` function can't be run at runtime.
 
 The following steps show how this issue might occur.
 
-1.  Start to configure the ER model mapping component.
-2.  Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
+1. Start to configure the ER model mapping component.
+2. Add a data source of the **Dynamics 365 for Operations \\ Table records** type.
 
-    1.  Name the new data source **Vendor**.
-    2.  In the **Table** field, select **VendTable** to specify that this data source will request the VendTable table.
+    1. Name the new data source **Vendor**.
+    2. In the **Table** field, select **VendTable** to specify that this data source will request the **VendTable** table.
 
-3.  Add a data source of the **Calculated field** type.
+3. Add a data source of the **Calculated field** type.
 
-    1.  Name the new data source **OrderedVendors**.
-    2.  Configure it so that it contains the expression `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
-    ![Configuring data sources on the Model mapping designer page.](./media/er-components-inspections-18-1.png)
+    1. Name the new data source **OrderedVendors**.
+    2. Configure the data source so that it contains the expression, `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
+        
+       ![Configuring data sources on the Model mapping designer page.](./media/er-components-inspections-18-1.png)
 
-4.  Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the expression in the **OrderedVendors** data source can be queried.
-5.  Modify the **Vendor** data source by adding a nested field of the **Calculated field** type to get the trimmed vendor account number.
+4. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the expression in the **OrderedVendors** data source can be queried.
+5. Modify the **Vendor** data source by adding a nested field of the **Calculated field** type to get the trimmed vendor account number.
 
-    1.  Name the new nested field **$AccNumber**.
-    2.  Configure it so that it contains the expression `TRIM(Vendor.AccountNum)`.
+    1. Name the new nested field **$AccNumber**.
+    2. Configure the nested field so that it contains the expression, `TRIM(Vendor.AccountNum)`.
 
 6. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the expression in the **Vendor** data source can be queried.
+    
     ![Verifying that the expression can be queried on the Model mapping designer page.](./media/er-components-inspections-18-2.png)
 
 7. Notice that a validation error occurs, because the **Vendor** data source contains a nested field of the **Calculated field** type that doesn't allow the expression of the **OrderedVendors** data source to be translated to the direct database statement. The same error is thrown at runtime if you ignore the validation error and select **Run** to run this model mapping.
 
 ### Automatic resolution
 
-No option to automatically fix this issue is available.
+There is no option to automatically fix this issue.
 
 ### Manual resolution
+There are two options available to manually resolve this issue. 
 
 #### Option 1
 
-Instead of adding a nested field of the **Calculated field** type to the **Vendor** data source, add the **$AccNumber** nested field to the **FilteredVendors** data source, and configure it so that it contains the expression `TRIM(FilteredVendor.AccountNum)`. In this way, the `ORDERBY("Query", Vendor, Vendor.AccountNum)` expression can be run at the database level and the calculation of the **$AccNumber** nested field can be done afterward.
+Instead of adding a nested field of the **Calculated field** type to the **Vendor** data source, add the **$AccNumber** nested field to the **FilteredVendors** data source, and configure the field so that it contains the expression `TRIM(FilteredVendor.AccountNum)`. In this way, the `ORDERBY("Query", Vendor, Vendor.AccountNum)` expression can be run at the database level and the calculation of the **$AccNumber** nested field can be done after.
 
 #### Option 2
 
