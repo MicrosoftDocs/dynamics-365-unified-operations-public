@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Feature management overview
-description: This topic describes the Feature management feature and how you can use it.
+description: This topic describes Feature management and how you can use it.
 author: Peakerbl
 ms.date: 01/03/2022
 ms.topic: article
