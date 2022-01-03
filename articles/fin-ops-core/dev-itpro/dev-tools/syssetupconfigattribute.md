@@ -45,7 +45,7 @@ class DemoClass implements SysSetup
 > If the X++ class does not have the **SysSetupConfigAttribute** attribute, then default values are applied. `ContinueOnError` is **true** and `Timeout` is **120** seconds.
 
 
-# SysSetupScript: Asynchronous implementation
+## SysSetupScript: Asynchronous implementation
 
 To execute the SysSetup scripts in asynchronous mode, the scripts need to be run as a batch job. This enhances performance and removes unnecessary dependencies by ensuring the scripts run parallel and independent of one another. To achieve this, use the SysSetupWrapper and the SysSetupAsync class that you can extend and consume. This allows DbSync to execute, as needed.
 
