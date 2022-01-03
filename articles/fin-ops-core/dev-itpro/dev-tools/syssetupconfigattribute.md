@@ -53,7 +53,7 @@ To execute the SysSetup scripts in asynchronous mode, the scripts need to be run
 When enabling asynchronous mode, consider the following: 
 
  - This mode does not have any timeouts, but instead operates in the boundaries of batch jobs scoped as high priority jobs.
- - There is no further meaning to SysssetupTable attribute if it is scheduled as a batch job. Currently, all scripts are independently functional.
+ - When the class implements the asynchronous mode, not all of the SyssetupTable attributes will be considered. Currently, all scripts are independently functional.
  - If you are writing a new script as asynchronous, ensure that you use smaller workloads that can recover from a point of pause/failure because these batch jobs can be withheld and resumed in the future.
  - The loaddata() does not run inside the ttsbegin; ..., ttscommit; block, so this should be handled in your implementation.
 
