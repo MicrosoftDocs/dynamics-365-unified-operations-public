@@ -4,7 +4,7 @@
 title: Tax point date (Date of VAT register)
 description: This topic provides information about how to indicate when the tax date is different from the transaction date regarding VAT registration.
 author: LizaGolub
-ms.date: 02/01/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -86,16 +86,16 @@ Make sure that you select the correct date in the **From date** field in the **C
 
 The **Sales tax transactions extension** consistency check is available in build version 10.0.234.21 and later for version 10.0.6 of the application, and for version 10.0.7 and later. In these versions, it's available only when the Date of VAT register feature is turned on in the **Feature management** workspace.
 
-## Sales tax settlement by Date of VAT register
+## Sales tax settlement by date of VAT register
 
-Starting from the 10.0.25 monthly update, the **Sales tax settlement and reporting by date of VAT register** feature is available. This feature enables the possibility to settle and report sales tax by the date of VAT register.
-When the **Sales tax settlement and reporting by date of VAT register** feature is enabled, you can set the **Date of VAT register** option on the **General ledger parameters** page, on the **Sales tax** tab to **Yes**. The periodic settlement will collect sales tax transaction by the Date of VAT register instead of the transaction date.
+Starting with the 10.0.25 monthly update, the **Sales tax settlement and reporting by date of VAT register** feature is available. With this feature enabled, you can settle and report sales tax by the date of VAT register.
+When the **Sales tax settlement and reporting by date of VAT register** feature is enabled, you can set the **Date of VAT register** option to **Yes** on the **General ledger parameters** page, on the **Sales tax** tab. The periodic settlement will collect sales tax transaction by the date of VAT register instead of the transaction date.
 
-![Date of VAT register option is ON in GL parameters](./media/GLParameters-DateOfVATRegister.png)
+  ![Date of VAT register option is ON in GL parameters](./media/GLParameters-DateOfVATRegister.png)
 
 > [!NOTE]
 > To enable the **Sales tax settlement and reporting by date of VAT register** feature, the **Date of VAT register** feature should be enabled in the **Feature management** workspace.
 > 
-> To disable the **Sales tax settlement and reporting by date of VAT register** feature, make sure the **Date of VAT register** check box on the **General ledger parameters** page is set to **No**. The respective warning will appear in case the check box is active for some legal entities.
+> To disable the **Sales tax settlement and reporting by date of VAT register** feature, make sure the **Date of VAT register** check box on the **General ledger parameters** page is set to **No**. The respective warning will appear if the check box is active for some legal entities.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
