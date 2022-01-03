@@ -66,7 +66,7 @@ You can create job tasks that describe the basic tasks that a worker in a positi
 
 ### Job functions
 
-Job functions are like job tasks. A job function describes one or more tasks, duties or responsibilities that are assigned to a job. Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans. Examples of job functions are listed in the following table.
+Job functions are like job tasks. A job function describes one or more tasks, duties, or responsibilities that are assigned to a job. Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans. Examples of job functions are listed in the following table.
 
 | Job           | Job function                                                |
 |---------------|-------------------------------------------------------------|
