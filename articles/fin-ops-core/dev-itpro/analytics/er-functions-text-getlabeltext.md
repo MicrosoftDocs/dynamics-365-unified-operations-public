@@ -4,7 +4,7 @@
 title: GETLABELTEXT ER function
 description: This topic provides information about how the GETLABELTEXT Electronic reporting (ER) function is used.
 author: NickSelin
-ms.date: 12/23/2021
+ms.date: 01/04/2022
 ms.prod: 
 ms.technology: 
 
@@ -40,11 +40,11 @@ GETLABELTEXT (label id, language)
 
 ## Arguments
 
-### Label id
+### Label ID
 
 `label id`: *String* or *Label Id*
 
-The valid id of one of the following label types:
+The valid ID of one of the following label types:
 
 - [Electronic reporting (ER)](general-electronic-reporting.md) label
 - Microsoft Dynamics 365 Finance label
@@ -53,15 +53,15 @@ The valid id of one of the following label types:
 
 This argument can be only defined as a constant by using one of the following supported patterns:
 
-- for ER labels:
+- For ER labels:
     - `@"GER_LABEL:<LABEL ID>"`
     - `"GER_LABEL:<LABEL ID>"`
-- for Finance labels:
+- For Finance labels:
     - `@"<LABEL ID>"`
     - `"<LABEL ID>"`
 
 > [!NOTE]
-> A validation error is shown at design time on the [Formula designer](er-advanced-formula-editor.md) page if no label has been found by using the provided label id.
+> A validation error is shown at design time on the [Formula designer](er-advanced-formula-editor.md) page if no label has been found by using the provided label ID.
 
 ### Language
 
@@ -71,7 +71,7 @@ A string value that represents a language code.
 
 #### Usage notes
 
-This argument can be defined either as a text constant or as a path to a data source field that returns a *String* value.
+This argument can be defined as a text constant or as a path to a data source field that returns a *String* value.
 
 > [!NOTE]
 > A validation error is shown at design time if no language code has been found by using the provided `language` argument when it has been specified as a text constant.
@@ -90,7 +90,7 @@ The `GETLABELTEXT (@"SYS70894", "en-us")` and `GETLABELTEXT ("SYS70894", "en-us"
 
 ## <a name=example-2></a>Example 2: ER label
 
-If you started editing an ER [configuration](general-electronic-reporting.md#Configuration) that has been [derived](er-quick-start2-customize-report.md#DeriveProvidedFormat) from the **ISO20022 Credit transfer (DE)** one, entered a new data source of the [Calculated field](er-calculated-field-ds-performance.md) type, and configured for this data source the `GETLABELTEXT(@"GER_LABEL:VendorName", "de")` expression, this data source returns at runtime the "Kreditorenname" German translation of the `@GER_LABEL:VendorName` ER label that has been initially configured in the base **ISO20022 Credit transfer (DE)** ER configuration.
+If you start editing an ER [configuration](general-electronic-reporting.md#Configuration) that has been [derived](er-quick-start2-customize-report.md#DeriveProvidedFormat) from the **ISO20022 Credit transfer (DE)** one, enter a new data source of the [Calculated field](er-calculated-field-ds-performance.md) type, and configure the `GETLABELTEXT(@"GER_LABEL:VendorName", "de")` expression for this data source, at runtime the data source returns the "Kreditorenname" German translation of the `@GER_LABEL:VendorName` ER label that has been initially configured in the base **ISO20022 Credit transfer (DE)** ER configuration.
 
 ## Additional resources
 
