@@ -379,7 +379,7 @@ The following steps show how this issue might occur.
 8. Name the new nested field **$AccNumber**, and configure it so that it contains the expression `TRIM(Vendor.AccountNum)`.
 9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the `FILTER(Vendor, Vendor.AccountNum="US-101")` expression in the **Vendor** data source can be queried.
 
-    ![Verifying that the expression can be queried on the Model mapping designer page.](./media/er-components-inspections-04.gif)
+    ![Verifying that the expression that has the FILTER function can be queried on the Model mapping designer page.](./media/er-components-inspections-04.gif)
 
 10. Notice that a validation error occurs, because the **Vendor** data source contains a nested field of the **Calculated field** type that doesn't allow the expression of the **FilteredVendor** data source to be translated to the direct SQL statement.
 
@@ -930,7 +930,7 @@ The following steps show how this issue might occur.
 8. Name the new nested field **$AccNumber**, and configure it so that it contains the expression `TRIM(Vendor.AccountNum)`.
 9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the expression in the **Vendor** data source can be queried.
 
-    ![Verifying that the expression can be queried on the Model mapping designer page.](./media/er-components-inspections-18-2.png)
+    ![Verifying that the expression in the Vendor data source can be queried on the Model mapping designer page.](./media/er-components-inspections-18-2.png)
 
 10. Notice that a validation error occurs, because the **Vendor** data source contains a nested field of the **Calculated field** type that doesn't allow the expression of the **OrderedVendors** data source to be translated to the direct database statement. The same error occurs at runtime if you ignore the validation error and select **Run** to run this model mapping.
 
