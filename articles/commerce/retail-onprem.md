@@ -114,7 +114,7 @@ The following table indicates which inventory management components are availabl
 | Component                      | On-premises status |
 |--------------------------------|--------------------|
 | Packing slip                   | Available          |
-| Fulfilment groups              | Available          |
+| Fulfillment groups              | Available          |
 | Cross docking and buyer's push | Available          |
 | Qty on hand                    | Available          |
 | Stock counts                   | Available          |
