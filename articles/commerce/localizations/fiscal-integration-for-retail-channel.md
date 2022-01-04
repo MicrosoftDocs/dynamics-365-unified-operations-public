@@ -4,7 +4,7 @@
 title: Overview of fiscal integration for Commerce channels
 description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 author: EvgenyPopovMBS
-ms.date: 12/27/2021
+ms.date: 01/31/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -39,7 +39,7 @@ A fiscal registration process in Retail POS can consist of one or more steps. Ea
 - **Fiscal document provider** – This component serializes transaction/event data in the format that is also used for interaction with the fiscal device or service, parses responses from the fiscal device or service, and stores the responses in the channel database. The extension also defines the specific transactions and events that must be registered.
 - **Fiscal connector** – This component initializes the communication with the fiscal device or service, sends requests or direct commands to the fiscal device or service, based on the transaction/event data that is extracted from the fiscal document, and receives responses from the fiscal device or service
 
-A fiscal integration sample might contain the Commerce runtime (CRT), Hardware station, and POS extensions for a fiscal document provider and a fiscal connector, respectively. It also contains the following component configurations:
+A fiscal integration sample might contain the Commerce runtime (CRT), Hardware station, and POS extensions for a fiscal document provider and a fiscal connector. It also contains the following component configurations:
 
 - **Fiscal document provider configuration** – This configuration defines an output method and a format for fiscal documents. It also contains a data mapping for taxes and payment methods, to make data from Retail POS compatible with the values that are predefined in the fiscal device or service firmware.
 - **Fiscal connector configuration** – This configuration defines the physical communication with the specific fiscal device or service.
@@ -58,7 +58,7 @@ The following typical fiscal registration flow starts with an event in the POS (
 1. The FIF returns the fiscal response (that is, the response of the fiscal device or service) to the POS.
 1. The POS analyzes the fiscal response to determine whether the fiscal registration was successful. As required, the POS requests that the FIF handle any errors that occurred. 
 1. The POS requests that the FIF process and save the fiscal response.
-1. The fiscal document provider processes the fiscal response. As part of this processing, it parses the response and extracts extended data from IT.
+1. The fiscal document provider processes the fiscal response. As part of this processing, the fiscal document provider parses the response and extracts extended data from it.
 1. The FIF saves the response and the extended data to the channel database.
 1. As required, the POS prints a receipt via a regular receipt printer that is connected to Hardware station. The receipt can contain required data from the fiscal response.
  
