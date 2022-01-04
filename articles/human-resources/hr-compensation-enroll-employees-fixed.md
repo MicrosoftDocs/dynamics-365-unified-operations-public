@@ -36,8 +36,8 @@ The compensation and benefits manager can assign employees to fixed compensation
 3. In the list, click the link in the selected row.
 4. In the **Position** field, click the drop-down button to open the lookup.
 5. In the list, click the link in the selected row.
-    * The level that's displayed is from the Compensation Level of the Job on the Position. The level must be set on the Job before compensation can be assigned to the employee.  
-6. In the **Plan** field, select the fixed compensation plan for the employee. The Plan lookup is filtered to show only the plans that the employee is eligible for based on the Eligibility rules.
+    * The level that's displayed is from the **Compensation** FastTab > **Level** field from the **Job** that is assigned to the **Position**. The level must be set on the Job before compensation can be assigned to the employee.  
+6. In the **Plan** field, select the fixed compensation plan for the employee. The **Plan** lookup is filtered to show only the plans that the employee is eligible for based on the **Eligibility rules**.
 7. In the list, find and select the desired record.
     * The **Effective** and **Expiration** dates for the compensation default from the start and end dates for the worker's position assignment. You can adjust these dates as needed.  
     * If the Fixed compensation plan is a step plan, select the step containing the correct pay rate for the employee. If the fixed compensation plan is a grade or a band plan, enter the pay rate for the employee. The pay rate will be validated against the tolerance settings for the plan, and the minimum and maximum reference points for the job's compensation level.  
