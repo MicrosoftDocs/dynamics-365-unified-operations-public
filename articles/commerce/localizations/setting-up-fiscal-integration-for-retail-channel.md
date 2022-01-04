@@ -4,7 +4,7 @@
 title: Set up the fiscal integration for Commerce channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. 
 author: EvgenyPopovMBS
-ms.date: 12/27/2021
+ms.date: 01/31/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -173,15 +173,18 @@ The fiscal registration flow is defined by the fiscal registration process and a
 - The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.
 - When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.
 
-1. Go to the **Fiscal registration process** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**).
+### Validate the fiscal registration process
+
+It is recommended that you validate the fiscal registration process in the following cases:
+
+- You've completed all the settings for a new registration process. These settings include assignment of registration processes to POS functionality profiles and hardware profiles.
+- You've made changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime. (For example, you've changed the connector group for a fiscal registration process step, enabled a connector functional profile in a connector group, or added a new connector functional profile to a connector group.)
+- You've made changes in the assignment of connector technical profiles to hardware profiles.
+
+To validate the fiscal registration process, follow these steps.
+
+1. In Commerce headquarters, go to the **Fiscal registration process** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**).
 1. Select **Validate** to validate the fiscal registration process.
-
-    We recommend that you run this type of validation in the following cases:
-
-    - You've completed all the settings for a new registration process. These settings include assignment of registration processes to POS functionality profiles and hardware profiles.
-    - You've made changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime. (For example, you've changed the connector group for a fiscal registration process step, enabled a connector functional profile in a connector group, or added a new connector functional profile to a connector group.)
-    - You've made changes in the assignment of connector technical profiles to hardware profiles.
-
 1. On the **Distribution schedule** page, run the **1070** and **1090** jobs to transfer data to the channel database.
 
 ## Set up fiscal texts for discounts
