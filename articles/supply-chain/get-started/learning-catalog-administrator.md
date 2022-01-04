@@ -68,7 +68,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 | Content | Description | Format | Length |
 |---------|-------------|--------|--------|
-| [Set up engineering change management for Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Today's manufacturers require strong product data management, version control, and engineering change management to succeed in a world of constantly shrinking product life cycles, increased quality and reliability requirements, and an increased focus on product safety. Learn how to set up engineering change management in this learning path. | Free, self-paced online learning path | 4 hours |
+| [Set up engineering change management for Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Today's manufacturers require strong product data management, version control, and engineering change management to succeed in a world of constantly shrinking product life cycles, increased quality and reliability requirements, and an increased focus on product safety. Learn how to set up engineering change management in this learning path. | Free, self-paced online learning path | 4 hours |
 
 ## Servicing<a name="servicing"></a>
 

@@ -26,7 +26,6 @@ ms.dyn365.ops.version: 10.0.23
 # Goods and Services Tax (GST) integration for e-commerce sites for India
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic gives an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality. 
 

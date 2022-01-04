@@ -98,8 +98,6 @@
             href: get-started/whats-new-commerce-10-0-23.md          
           - name: Commerce 10.0.22 (November 2021)
             href: get-started/whats-new-commerce-10-0-22.md
-          - name: Commerce 10.0.21 (October 2021)
-            href: get-started/whats-new-commerce-10-0-21.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -834,6 +832,10 @@
       items:
       - name: Customer management in stores
         href: customer-mgmt-stores.md
+      - name: Asynchronous customer creation mode
+        href: async-customer-mode.md
+      - name: Convert asynchronous customers to synchronous customers
+        href: convert-async-to-sync.md
       - name: Clienteling
         items:
         - name: Clienteling overview
@@ -854,7 +856,7 @@
       items:
       - name: Statements overview
         href: retail-statements.md
-      - name: Transaction consistency checker 
+      - name: Validate store transactions for statement calculation 
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
         href: disable-consistency-check-rule.md
@@ -1298,6 +1300,8 @@
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+      - name: Set up build pipeline for fiscal integration sample
+        href: localizations/fiscal-integration-sample-build-pipeline.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
       - name: Regulatory configuration service (RCS)
@@ -1334,6 +1338,8 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+        - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
+          href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
         items:
         - name: Commerce localization for Brazil
@@ -1370,12 +1376,16 @@
           items:
           - name: Fiscal registration service integration sample for Czech Republic
             href: localizations/emea-cze-fi-sample.md
+          - name: Deployment guidelines for fiscal integration sample for Czech Republic (legacy)
+            href: localizations/emea-cze-fi-sample-sdk.md
         - name: Poland
           items:
           - name: Fiscal printer integration sample for Poland
             href: localizations/emea-pol-fpi-sample.md
           - name: Customer information management for Poland
             href: localizations/emea-pol-customer-information.md
+          - name: Deployment guidelines for fiscal integration sample for Poland (legacy)
+            href: localizations/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
         - name: Cash register functionality
@@ -1392,6 +1402,8 @@
         items:
         - name: Fiscal registration service integration sample for Germany
           href: localizations/emea-deu-fi-sample.md
+        - name: Deployment guidelines for fiscal integration sample for Germany (legacy)
+          href: localizations/emea-deu-fi-sample-sdk.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
@@ -1410,6 +1422,8 @@
           href: localizations/emea-ita-fpi-sample.md
         - name: Customer information management for Italy
           href: localizations/emea-ita-customer-information.md 
+        - name: Deployment guidelines for fiscal integration sample for Italy (legacy)
+          href: localizations/emea-ita-fpi-sample-sdk.md
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
@@ -1419,6 +1433,8 @@
         - name: Cash register functionality
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
+          href: localizations/emea-nor-fi-deployment.md
+        - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Russia
         items:
@@ -1444,6 +1460,8 @@
           href: localizations/emea-swe-cash-registers.md
         - name: Control unit integration sample for Sweden
           href: localizations/emea-swe-fi-sample.md
+        - name: Deployment guidelines for control unit integration sample for Sweden (legacy)
+          href: localizations/emea-swe-fi-sample-sdk.md
         - name: Sample for Retail POS integration with control units (legacy)
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
@@ -2476,7 +2494,7 @@
           href: developer/store-comm-dev-guide-TBD.md
       - name: POS
         items:
-        - name: Get started
+        - name: Get started with POS extensions
           items: 
           - name: POS extension overview
             href: dev-itpro/pos-extension/pos-extension-overview.md

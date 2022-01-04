@@ -138,7 +138,7 @@ This step creates a functional LBD environment. However, the environment doesn't
     1. Run the following SQL commands on your business database (AXDB).
 
         ```sql
-        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
         delete from NumberSequenceTable
         delete from NumberSequenceReference
         delete from NumberSequenceScope

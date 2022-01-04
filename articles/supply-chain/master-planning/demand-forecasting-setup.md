@@ -191,9 +191,6 @@ You can override the values for these parameters by going to **Master Planning \
 
 Supply Chain Management calculates demand forecasts by using the Azure Machine Learning Service, which you must set up and run on your own Azure subscription. This section describes how to set up the Azure Machine Learning Service in Azure and then connect it to your Supply Chain Management environment.
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.23 GA -->
-
 ### Enable the Azure Machine Learning Service in Feature management
 
 Before you can use the Azure Machine Learning Service for demand forecasting, you must turn on a feature in Supply Chain Management to enable the integration. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:

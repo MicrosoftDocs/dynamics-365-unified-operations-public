@@ -1,14 +1,14 @@
 ---
 title: Schedule wave label printing during wave
 description: This topic describes how to set up and use the functionality for task-based wave label printing.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
 ---
@@ -35,7 +35,7 @@ To use the features that are described in this topic, they must be turned on for
 
 You must first create the new wave step method and enable it for parallel, asynchronous task processing.
 
-1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
+1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
 1. On the Action Pane, select **Regenerate method**. Notice that *waveLabelPrinting* is added to the list of wave process methods that you can use in your shipping wave templates.
 1. Select the record where the **Method name** field is set to *waveLabelPrinting*, and then, on the Action Pane, select **Task configuration**.
 1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
@@ -46,7 +46,7 @@ You must first create the new wave step method and enable it for parallel, async
 
 You can now update an existing wave template so that it uses the *Wave label printing* wave processing method. Alternatively, you can create a new wave template that uses it.
 
-1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
+1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
 1. On the Action Pane, select **Edit**.
 1. In the list pane, select the wave template to update. (If you're using demo data for testing purposes, you can select *24 Shipping default*.)
 1. On the **Methods** FastTab, in the **Remaining methods** column, select the row where the **Name** field is set to *waveLabelPrinting*.
