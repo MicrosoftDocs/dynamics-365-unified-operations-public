@@ -4,7 +4,7 @@
 title: Electronic messaging
 description: This topic provides overview and setup information for electronic messaging in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 08/20/2021
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
