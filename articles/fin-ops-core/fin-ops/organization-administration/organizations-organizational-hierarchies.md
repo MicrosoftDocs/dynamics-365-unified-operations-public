@@ -4,7 +4,7 @@
 title: Organizations and organizational hierarchies overview
 description: Organizational hierarchies represent the relationships between the organizations that make up your business.
 author: sericks007
-ms.date: 11/10/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ The types of operating units include cost centers, business units, value streams
 | Business unit       | A semi-autonomous operating unit that is created to meet strategic business objectives. | Used for financial reporting that is based on industries or product lines that the organization serves independently of legal entities. |
 | Value stream        | An operating unit that controls one or more production flows. | Commonly used in lean manufacturing to control the activities and flows that are required to supply a product or service to consumers. |
 | Department          | An operating unit that represents a category or functional part of an organization that performs a specific task, such as sales or accounting. | Used to report on functional areas. A department may have profit and loss responsibility, and may consist of a group of cost centers. |
-| Commerce channel      | An operating unit that represents a brick and mortar store, an online store or an online marketplace. | Used for the management and operational control of one or more stores within or across legal entities. |
+| Retail channel      | An operating unit that represents a brick and mortar store, an online store, or call center. | Used for the management and operational control of one or more stores within or across legal entities. |
 
 ### Teams
 

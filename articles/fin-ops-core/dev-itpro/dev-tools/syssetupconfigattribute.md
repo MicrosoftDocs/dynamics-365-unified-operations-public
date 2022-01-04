@@ -2,7 +2,7 @@
 title: SysSetupConfigAttribute attribute
 description: This topic describes how to use the SysSetupConfigAttribute attribute on classes that implement the SysSetup interface.
 author: tonyafehr
-ms.date: 10/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -43,5 +43,25 @@ class DemoClass implements SysSetup
 
 > [!NOTE]
 > If the X++ class does not have the **SysSetupConfigAttribute** attribute, then default values are applied. `ContinueOnError` is **true** and `Timeout` is **120** seconds.
+
+
+## SysSetupScript: Asynchronous implementation
+
+To execute the SysSetup scripts in asynchronous mode, the scripts need to be run as a batch job. This enhances performance and removes unnecessary dependencies by ensuring the scripts run parallel and independent of one another. To achieve this, use the SysSetupWrapper and the SysSetupAsync class that you can extend and consume. This allows DbSync to execute, as needed.
+
+## Considerations when enabling asynchronous mode
+When enabling asynchronous mode, consider the following: 
+
+ - This mode does not have any timeouts, but instead operates in the boundaries of batch jobs scoped as high priority jobs.
+ - When the class implements the asynchronous mode, not all of the SyssetupTable attributes will be considered. Currently, all scripts are independently functional.
+ - If you are writing a new script as asynchronous, ensure that you use smaller workloads that can recover from a point of pause/failure because these batch jobs can be withheld and resumed in the future.
+ - The loaddata() does not run inside the ttsbegin; ..., ttscommit; block, so this should be handled in your implementation.
+
+```xpp
+class DemoClass extends SysSetupAsync implements SysSetup
+{
+    // Class code here.
+}
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
