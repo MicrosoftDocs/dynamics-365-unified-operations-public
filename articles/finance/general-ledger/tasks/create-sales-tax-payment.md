@@ -30,12 +30,11 @@ ms.dyn365.ops.version: Version 7.0.0
 The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts, and offsets them to the sales tax settlement account for a given period.
 
 1. Go to **Tax > Declarations > Sales tax > Settle and post sales tax**.
-2. In the **Settlement period** field, click the drop-down button to open the lookup.
+2. In the **Settlement period** field, select the drop-down button to open the lookup.
 3. In the list, click the link in the selected row.
-4. In the **From date** field, enter a date.
-    - If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. Original is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions which have been posted after the original version has been created.
+4. In the **From date** field, enter a date. If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. **Original** is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions, which have been posted after the original version has been created.
 5. In the **Transaction date** field, enter a date.
-6. Click **OK**. The **Sales tax paymemts** report is printed to review the settled sales tax transactions in the period.
+6. Select **OK**. The **Sales tax payments** report is printed to review the settled sales tax transactions in the period.
 
 Starting in Finance version 10.0.24, you can omit the **Sales tax payments** report being generated right after the **Settle and post sales tax** periodic procedure is implemented under the **Separate sales tax payment report generation from sales tax settlement** feature in the **Feature management** workspace.
 
