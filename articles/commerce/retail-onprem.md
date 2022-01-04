@@ -4,7 +4,7 @@
 title: Commerce capabilities that are available in on-premises deployments
 description: This topic lists the Commerce capabilities available in on-premises deployments.
 author: aamirallaqaband
-ms.date: 11/01/2018
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
