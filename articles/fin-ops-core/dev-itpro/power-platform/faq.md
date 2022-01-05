@@ -4,7 +4,7 @@
 title: Finance and Operations virtual entities FAQ
 description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
-ms.date: 12/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
