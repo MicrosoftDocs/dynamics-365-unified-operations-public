@@ -115,7 +115,7 @@ If you want all customer transactions to have the same posting profile, set up o
 
 ## Posting examples
 
-The following table shows examples of the default posting types with sample main accounts and descriptions. The Debit/Credit column indicates if the transaction typically Debit or Credits or in some cases can post either. The Clearing account column indicates of the posting type is a clearing account. This means the amount posted in this account is automatically reversed when a later transaction is posted. 
+The following table shows examples of the default posting types with sample main accounts and descriptions. The **Debit/Credit** column indicates if the transaction typically Debit or Credits or in some cases can post either. The **Clearing account** column indicates of the posting type is a clearing account. This means the amount posted in this account is automatically reversed when a later transaction is posted. 
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|--------------|------------------|-------------|
@@ -130,12 +130,12 @@ For transactions that have the selected posting profile, specify whether transac
 
 Specify the following values to set up your posting profile:
 
-| Field                 | Description                                                                                                                                                                                                                                        |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Settlement        | Select this toggle to enable automatic settlement of transactions that have this posting profile. If this toggle is cleared, you must manually settle transactions by using the Settle open transactions page or the Enter customer payments page. |
+| Field                 | Description                                           |
+|-----------------------|-------------------------------------------------------|
+| Settlement        | Select this toggle to enable automatic settlement of transactions that have this posting profile. If this toggle is cleared, you must manually settle transactions by using the **Settle open transactions** page or the **Enter customer payments** page. |
 | Interest          | Select this toggle if interest should be calculated on outstanding balances for customer accounts that use this profile. If this toggle is cleared, interest will not be calculated for these customers.                                           |
 | Collection letter | Select this toggle if collection letters should be generated for customer accounts that use this profile. If this toggle is cleared, collection letters will not be generated for these customers.                                                 |
-| Close             | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.                                                                           |
+| Close             | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.             |
 
 
 
