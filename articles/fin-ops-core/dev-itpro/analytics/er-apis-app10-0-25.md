@@ -4,7 +4,7 @@
 title: Electronic reporting framework API changes for Application update 10.0.25
 description: This topic describes how the APIs of the Electronic reporting framework have been changed in Microsoft Dynamics 365 Finance version 10.0.25.
 author: NickSelin
-ms.date: 12/30/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,15 +28,17 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.25.
 
 ## API to enable running a model mapping in batch mode
 
-The [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) API of the ER framework allows to run an ER [model mapping](er-overview-components.md#model-mapping-component) for data import in interactive mode. To specify an ER [format](er-overview-components.md#format-component) for inbound file parsing and an ER model mapping for application data update, this API uses the format name as well as the integration point.
+The [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) API of the ER framework allows you to run an ER [model mapping](er-overview-components.md#model-mapping-component) for data import in interactive mode. To specify an ER [format](er-overview-components.md#format-component) for inbound file parsing and an ER model mapping for application data update, this API uses the format name as well as the integration point.
 
-The new `ERIModelMappingDestinationWithVirtualSourceRun` public interface of the ER framework lets you run an ER model mapping in batch mode for data import of an inbound file. To provide such file, you can either manually select it by using the ER user interface (UI) or provide it programmatically.
+The new `ERIModelMappingDestinationWithVirtualSourceRun` public interface of the ER framework lets you run an ER model mapping in batch mode for data import of an inbound file. To provide the file, you can manually select it by using the ER user interface (UI) or provide it programmatically.
 
-The code of the `ERModelMappingDestinationRun` class shows how this new API can be used for presenting the **Run in the background** tab on the dialog box to run data import in batch mode.
+The code of the `ERModelMappingDestinationRun` class shows how this new API can be used to include the **Run in the background** tab on the dialog box to run data import in batch mode.
 
 ```xpp
 private ERModelMappingDestinationRunController getControllerInternal()
@@ -69,7 +71,7 @@ private ERModelMappingDestinationRunController getControllerInternal()
     }
 ```
 
-To learn more about this interface, complete the examples in [Import data from manually selected files in batch mode](er-configure-data-import-batch.md).
+To learn more about this interface, complete the examples in the topic, [Import data from manually selected files in batch mode](er-configure-data-import-batch.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
