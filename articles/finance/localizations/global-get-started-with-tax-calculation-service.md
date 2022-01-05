@@ -4,7 +4,7 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -77,7 +77,7 @@ The steps in this section aren't related to a specific legal entity. You must co
 5. In the **Type** field, select **Global**.
 6. Select **Open**.
 7. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
-8. Select the correct [tax configuration version](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json#versions), based on you Finance version, and then select **Import**.
+8. Select the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on you Finance version, and then select **Import**.
 9. In the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
 10. Select one of the following feature types:
 
