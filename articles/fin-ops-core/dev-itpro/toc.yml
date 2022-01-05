@@ -511,7 +511,9 @@
         - name: Deploy assets by using Azure Pipelines
           href: dev-tools/pipeline-deploy-asset.md
         - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
-          href: dev-tools/pipeline-lcs-connection.md        
+          href: dev-tools/pipeline-lcs-connection.md
+        - name: Update LCS connection authentication tasks to MSAL in Azure Pipelines
+          href: dev-tools/pipeline-lcs-connection-update.md
         - name: Update the hosted Azure Pipeline for new NuGet packages
           href: dev-tools/pipeline-nuget-split.md
         - name: Update a legacy pipeline in Azure Pipelines
