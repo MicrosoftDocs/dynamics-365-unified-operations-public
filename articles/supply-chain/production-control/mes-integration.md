@@ -32,12 +32,17 @@ The following illustration shows a typical collection of business events, proces
 
 ## Turn on the MES integration feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, an administrator must turn it on in your system as described in the following procedure.
 
-- **Module:** *Production control*
-- **Feature name:** *Manufacturing execution system integration*
-
-Note the configuration key **Time and attendance** must be previously enabled, as it controls the use of the manufacturing execution systems functionality and data.
+1. Go to **System administration \> Setup \> License configuration**.
+1. Make sure that the **Time and attendance** license key is enabled (shows a check mark). This license key is required because it controls the manufacturing execution system's functionality and data. If it isn't enabled, do the following steps:
+    1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+    1. On the **License configuration** page, select the **Time and attendance** check box.
+    1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
+1. Go to the **System administration \> Workspaces \> Feature management**.
+1. Turn on the feature that is listed in the following way (see also [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
+    - **Module:** *Production control*
+    - **Feature name:** *Manufacturing execution system integration*
 
 ## Processes available for MES integration
 
