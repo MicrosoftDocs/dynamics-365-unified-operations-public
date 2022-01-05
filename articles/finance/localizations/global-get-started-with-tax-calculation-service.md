@@ -4,7 +4,7 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,73 +31,61 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to get started with Tax Calculation. It guides you through the high level design and configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. 
+This topic provides information about how to get started with Tax Calculation. This sections in this topic guide you through the high level design and configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. 
 
-The setup consists of three main steps:
+The setup consists of three main steps.
 
 1. In LCS, install the Tax Calculation add-in.
 2. In RCS, set up the Tax Calculation feature. This setup isn't specific to a legal entity. It can be shared across legal entities in Finance and Supply Chain Management.
 3. In Finance and Supply Chain Management, set up the Tax Calculation parameters by legal entity.
 
-## High Level Design
+## High-level design
 
-### Runtime Design
+### Runtime design
 
-The following diagram shows the high level runtime design of Tax Calculation. As Tax Calculation can integrate with multiple Dynamics 365 applications, it takes the integration with Dynamics 365 Finance as example in the diagram.
+The following diagram shows the high-level runtime design of Tax Calculation. Because Tax Calculation can integrate with multiple Dynamics 365 applications, the diagram uses integration with Finance as the example. 
 
-1. User creates a transaction, such as sales order, purchase order in Dynamics 365 Finance.
+1. A transaction, such as sales order or purchase order is created in Finance.
+2. Finance automatically uses the default values of sthe ales tax group and the item sales tax group.
+3. When the **Sales tax** button is select on the transaction, the tax calculation is triggered. Finance will then send the payload to the Tax Calculation service.
+4. The Tax Calculation Service matches the payload with pre-defined rules in the Tax Feature to find a more accurate sales tax group and item sales tax group simultaneously.
 
-2. Dynamics 365 Finance gets the default values of sales tax group and item sales tax group automatically.
+   If the payload can match with the **Tax Group Applicability** matrix, then it will override the sales tax group value with the matched tax group value in the applicability rule. Otherwise, it will continue to use the sales tax group value from Finance.
 
-3. User clicks "Sales tax" button on the transaction to trigger tax calculation. Dynamics 365 Finance will send the payload to Tax Calculation service when the sales tax calculation is triggered.
+   If the payload can match with the **Item Tax Group Applicability** matrix, then it will override the item sales tax group value with the matched item tax group value in the applicability rule. Otherwise, it will continue to use the item sales tax group value from Finance.
 
-4. Tax Calculation Service matches the payload with pre-defined rules in Tax Feature to find more accurate sales tax group and item sales tax group simultaneously.
+5. The Tax Calculation Service determines the final tax codes using the intersection of sales tax group and item sales tax group.
+6. The Tax Calculation Service calculates tax based on the determined tax codes.
+7. The Tax Calculation Service returns the tax calculation result back to Finance.
 
-   - If the payload can match with "Tax Group Applicability" matrix, then it will override sales tax group value with matched tax group value in the applicability rule. Otherwise, it will continue to use the sales tax group value from Dynamics 365 Finance.
-
-   - If the payload can match with "Item Tax Group Applicability" matrix, then it will override item sales tax group value with matched item tax group value in the applicability rule. Otherwise, it will continue to use the item sales tax group value from Dynamics 365 Finance.
-
-5. Tax Calculation Service determines the final tax codes using the intersection of sales tax group and item sales tax group.
-
-6. Tax Calculation Service calculate tax based on the determined tax codes.
-
-7. Tax Calculation Service returns the tax calculation result back to Dynamics 365 Finance.
+   ![Tax Calculation Runtime design.](media/tax-calculation-runtime-logic.png)
 
 
+### High-level configuration 
 
+The following steps provide a high-level view of how to configure the Tax Calculation Service. 
 
-
-<img title=" Tax Calculation Runtime Design" alt=" Tax Calculation Runtime Design" src="media\Tax Calculation_Runtime logic.png"/>
-
-
-
-### Configuration Steps
-
-Here are the high level essential configuration steps of Tax Calculation. 
-
-1. Install "Tax Calculation" add-in in LCS project
-2. Create "Tax Calculation" feature in RCS
-3. Set up Tax Calculation feature in RCS with following sequence
-   3.1 Select tax configuration version
-   3.2 Create tax codes
-   3.3 Create tax group
-   3.4 Create item tax group
-   3.5 Create tax group applicability (Optional if you want to override the sales tax group defaulted from customer/vendor master data)
-   3.6 Create item group applicability (Optional if you want to override the item sales tax group defaulted from item master data)
-4. Complete and publish Tax Calculation feature in RCS
-5. Select the published Tax Calculation feature in Dynamics 365 Finance
-6. Following setups will be synchronized automatically from RCS to Dynamics 365 Finance after you complete step 5
+1. In Dynamics Lifecycle Services (LCS), install the **Tax Calculation** add-in to your LCS project.
+2. In RCS, create the **Tax Calculation** feature.
+3. Set up the **Tax Calculation** feature in RCS with following sequence.
+   1. Select tax configuration version.
+   2. Create tax codes.
+   3. Create a tax group.
+   4. Create an item tax group.
+   5. Optional: Create tax group applicability if you want to override the sales tax group that defaults from customer or vendor master data.
+   6. Optional: Create item group applicability if you want to override the item sales tax group that defaults from the item master data.
+4. Complete and publish the **Tax Calculation** feature in RCS.
+5. Select the published **Tax Calculation** feature in Finance.
+6. The following setups are synchronized automatically from RCS to Finance after you complete step 5.
    - Sales tax codes
    - Sales tax groups
    - Item sales tax groups
 
-Refer to following sections for detail configuration steps.
+The remaining sections in this topc provide more detailed configuration steps.
 
 ## Prerequisites
 
-Before you can complete the procedures in this topic, prerequisites must be in place for each environment type.
-
-The following prerequisites must be met:
+Before you can complete the remaining procedures in this topic, the following prerequisites must be met:
 
 - You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.21 or later.
 - You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
