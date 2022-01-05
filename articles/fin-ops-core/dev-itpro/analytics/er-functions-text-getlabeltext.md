@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 The `GETLABELTEXT` function searches for a specific label to return a *[String](er-formula-supported-data-types-primitive.md#string)* value that represents the translation of the specified label in the specified language.
 
 ## Syntax
