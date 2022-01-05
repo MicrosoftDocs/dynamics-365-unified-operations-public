@@ -74,7 +74,7 @@ This section covers creating or linking an Azure AD B2C tenant for use in your C
 1. Go to **Identity \> Azure Active Directory B2C**.
 1. Once on the **Create New B2C Tenant or Link to existing Tenant** page, use one of the options below that best suits your company's needs:
 
-    - **Create a new Azure AD B2C Tenant**: Use this option to create a new AAD B2C tenant.
+    - **Create a new Azure AD B2C Tenant**: Use this option to create a new Azure AD B2C tenant.
         1. Select **Create a new Azure AD B2C Tenant**.
         1. Under **Organization name**, enter the organization name.
         1. Under **Initial domain name**, enter the initial domain name.
@@ -92,7 +92,7 @@ This section covers creating or linking an Azure AD B2C tenant for use in your C
 
 1. Once the new Azure AD B2C directory is created (this may take a few moments), a link to the new directory will appear on the dashboard. This link will direct you to the "Welcome to Azure Active Directory B2C" page.
 
-    ![Link to new AAD Directory.](./media/B2CImage_4.png)
+    ![Link to new Azure AD Directory](./media/B2CImage_4.png)
 
 > [!NOTE]
 > If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription. Select the troubleshooting message and follow the instructions to resolve the subscription issue.
@@ -137,7 +137,7 @@ Azure AD B2C provides three basic user flow types:
 - Profile editing
 - Password reset
 
-You can choose to use the default user flows provided by Azure AD, which will display a page hosted by AAD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
+You can choose to use the default user flows provided by Azure AD, which will display a page hosted by Azure AD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
 
 To customize the user policy pages with pages built in Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
@@ -331,11 +331,11 @@ The following image shows an example of user flow policies on the **Azure AD B2C
 
 ![Collect the names of each B2C policy flow.](./media/B2CImage_22.png)
 
-### Enter your AAD B2C tenant application information into Commerce
+### Enter your Azure AD B2C tenant application information into Commerce
 
 You must enter details of the Azure AD B2C tenant into Commerce site builder before associating the B2C tenant with your site(s).
 
-To add your AAD B2C tenant application information to Commerce, follow these steps.
+To add your Azure AD B2C tenant application information to Commerce, follow these steps.
 
 1. Sign in as an administrator to Commerce site builder for your environment.
 1. In the left navigation pane, select **Tenant Settings**  to expand it.
