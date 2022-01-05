@@ -95,7 +95,15 @@ Similar to payment modules, a **Supported tender types** property has been added
 
 A payment module can be added only to a checkout module. For more information about how to configure a payment module for a checkout page, see [Checkout module](add-checkout-module.md).
 
-If both Adyen and PayPal payment connectors are needed, add both modules to the payment section. Ensure that the **Supported tender types** property value is configured for PayPal, and leave it blank for Adyen. Also, set the **Is primary payment** property to **True** for Adyen.
+## Setting up both Adyen and PayPal payment connectors
+If both Adyen and PayPal payment connectors are needed, add both modules to the payment section. 
+- Ensure that the **Supported tender types** property value is configured for PayPal (as 'PayPal'), and leave it blank for Adyen. 
+- Set the **Is primary payment** property to **True** for Adyen. Leave it blank for PayPal.
+- Set the **Use connector id** to **True** for both modules.
+
+[!NOTE]
+> When setting up the Adyen and PayPal modules together, in Headquarters you must have the **Dynamics 365 Payment Connector for Adyen** in the first postion in the online channel's **Payment accounts** setup. In Headquarters, go to **Online Stores** and select the channel for your site. Under the **Set up** section, navigate to **Payment accounts** on the setup page. The **Dynamics 365 Payment Connector for Adyen** should be set up first position (top line), followed by the **Dynamics 365 Payment Connector for PayPal** configuration in the following line (second line).
+
 
 ## Additional resources
 
