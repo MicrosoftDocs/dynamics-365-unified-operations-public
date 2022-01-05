@@ -4,7 +4,7 @@
 title: Tile and list caching for workspaces
 description: This topic discusses framework support for caching data that is used for tiles and lists, so that workspaces perform well and are responsive.
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
