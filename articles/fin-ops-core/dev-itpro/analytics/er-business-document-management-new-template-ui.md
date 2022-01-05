@@ -4,7 +4,7 @@
 title: Microsoft Office-style user interface in Business document management (contains video)
 description: This topic explains how to use the new user interface in the Business document management feature of Electronic reporting (ER) framework.
 author: v-anamir
-ms.date: 04/12/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ Business document management lets business users edit business document template
 
 The new user interface (UI) is clearer and more comfortable to use. The **Business document** area shows only the templates that are owned by the current [active](tasks/er-configuration-provider-mark-it-active-2016-11.md) [provider](general-electronic-reporting.md#Provider) and located in the current Dynamics 365 Finance instance. In the previous UI, the **Template** tab listed all the templates that were available for any providers. It also showed all the templates that were created and edited by any user who had the same role.
 
-You can use the **New document** button to create and edit a template in an [Electronic reporting (ER)](general-electronic-reporting.md) format [configuration](general-electronic-reporting.md#Configuration) that is provided by another provider and located in the current Finance instance, or upload a new template from a Microsoft Office Excel workbook. In version 10.0.25 and later, you can additionally use the **New document** button to create and edit a template in an ER format configuration that is stored in the [Global repository](general-electronic-reporting.md#Repository).
+You can use the **New document** button to create and edit a template in an [Electronic reporting (ER)](general-electronic-reporting.md) format [configuration](general-electronic-reporting.md#Configuration) that is provided by another provider and located in the current Finance instance, or upload a new template from a Microsoft Office Excel workbook. In version 10.0.25 and later, you can use the **New document** button to create and edit a template in an ER format configuration that is stored in the [Global repository](general-electronic-reporting.md#Repository).
 
  In the examples in this topic, the active provider is Contoso the user of which creates a template based on a template provided by Microsoft. Alternatively, you can create a template by uploading your own template in Excel format.
 
@@ -55,7 +55,7 @@ Follow these steps to turn on this feature for all legal entities.
 
 ## Add or activate a provider
 
-Each template of a business document is stored in an ER format configuration that is marked as owned by a certain configuration provider. When you create a new template, a new ER format configuration is created to hold it. So, a provider must be identified for this configuration. The active provider of the ER framework is used for this purpose. So, if there isn't a provider in Electronic reporting, you can create one. If there's no active provider, you can select to activate one.
+Each template of a business document is stored in an ER format configuration that is marked as owned by a certain configuration provider. When you create a new template, a new ER format configuration is created to hold it. So, a provider must be identified for this configuration. The active provider of the ER framework is used for this purpose. If there isn't a provider in Electronic reporting, you can create one. If there's no active provider, you can select to activate one.
 
 - To create a provider, change the name of the provider in the **Name** field, update the internet address of the new provider in the **Internet address** field, and select **OK** to confirm.
 
@@ -66,11 +66,11 @@ Each template of a business document is stored in an ER format configuration tha
     ![Activate a provider in Business Document Management.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
-> Each BDM template is located in an ER format configuration that refers to the provider as the author of the configuration. This is why an active provider is required for the template.
+> Each business document management template is located in an ER format configuration that refers to the provider as the author of the configuration. This is why an active provider is required for the template.
 
 ## Edit a template that is owned by another provider
 
-In this example the **New document** button is used to create and edit a template in an ER format configuration that is provided by another provider and located in the current Finance instance. In this example, the active provider is Contoso the user of which uses the provided by Microsoft ER format configuration. When you select **New document** and the **Select** tab, you can view all the templates of the current Finance instance that are owned by current and other providers. After you select a template, it's opened for creating a new editable copy of it. The edited template will then be stored in a new ER format configuration that is automatically generated.
+In this example, the **New document** button is used to create and edit a template in an ER format configuration that is provided by another provider and located in the current Finance instance. The active provider in this example is Contoso, who uses the ER format configuration that is provided by Microsoft. When you select **New document** on the **Select** tab, you can view all the templates of the current Finance instance that are owned by current and other providers. After you select a template, it opens so that you can create a new editable copy of it. The edited template is then stored in a new ER format configuration that is automatically generated.
 
 1. In the **Business document management** workspace, select **New document**.
 
@@ -124,7 +124,7 @@ For more information, see [Business document management overview](er-business-do
 
 ## Upload a template from the Global repository
 
-In this example the **New document** button is used to create and edit a template in an ER format configuration that is provided by Microsoft and located in the Global repository. In this example, the active provider is Contoso the user of which uses the provided by Microsoft ER format configuration. When you select **New document** and the **Import from Global repository** tab, you can view all the templates of business documents that are stored in the Global repository and that are missing the in current Finance instance. After you select a template, it's imported from the Global repository to the current Finance instance for creating a new editable copy of it. The edited template will then be stored in a new ER format configuration that is automatically generated.
+In this example the **New document** button is used to create and edit a template in an ER format configuration that is provided by Microsoft and located in the Global repository. In this example, the active provider is Contoso, who uses the ER format configuration provided by Microsoft. When you select **New document** on the **Import from Global repository** tab, you can view all the business document templates that are stored in the Global repository and that are missing the in current instance of Finance. After you select a template, it's imported from the Global repository to the current Finance instance to create a new editable copy. The edited template is then stored in a new ER format configuration that is automatically generated.
 
 1. In the **Business document management** workspace, select **New document**.
 
@@ -134,9 +134,8 @@ In this example the **New document** button is used to create and edit a templat
 
     ![Business documents dialog box.](./media/BDM_overview_new_template22.png)
 
-3. On the dialog box, select **Yes** to confirm the import of the selected document from the Global repository to the current Finance instance. If prompted, follow the authorization instructions.
-
-4. In the new dialog box, in the **Title** field, change the title as you require. The title text is used to name the new ER format configuration that is automatically created. The draft version of this configuration (**Collection letter note (Excel) Copy**) will contain the edited template and will be used to run this ER format for the current user. The original template from the base ER format configuration will be used to run this ER format for every other user.
+3. In the dialog box, select **Yes** to confirm the import of the selected document from the Global repository to the current Finance instance. If prompted, follow the authorization instructions.
+4. In the new dialog box, in the **Title** field, change the title as appropriate. The title text is used to name the new ER format configuration that is automatically created. The draft version of this configuration (**Collection letter note (Excel) Copy**) contains the edited template and is used to run this ER format for the current user. The original template from the base ER format configuration is used to run this ER format for every other user.
 5. In the **Name** field, change the name of the first revision of the editable template that will be automatically created.
 6. In the **Comment** field, update the remarks for the revision of the editable template that will be automatically created.
 7. Select **OK** to confirm the start of the editing process.
