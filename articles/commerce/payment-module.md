@@ -4,7 +4,7 @@
 title: Payment module
 description: This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/18/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ The following illustration shows an example of gift card, loyalty, and Adyen pay
 
 As of Commerce release 10.0.14, the payment module is also integrated with the Dynamics 365 Payment Connector for PayPal. For more information about how to set up and configure this payment connector, see [Dynamics 365 Payment Connector for PayPal](paypal.md).
  
-On the checkout page, you can have both Adyen and the PayPal connectors configured. The payment module has been enhanced with additional properties to help identify which connector it should work with. For details, see the **Supported tender types** and **Is primary payment** module properties in the followingt table.
+On the checkout page, you can have both Adyen and the PayPal connectors configured. The payment module has been enhanced with additional properties to help identify which connector it should work with. For details, see the **Supported tender types** and **Is primary payment** module properties in the following table.
   
 When the payment module is configured to use the PayPal payment connector, a PayPal button appears on the checkout page. When invoked by the customer, the payment module renders an iframe containing PayPal information. The customer can sign in and provide their PayPal information within this iframe to complete their transaction. When a customer chooses to pay with PayPal, the remaining balance on the order will be charged via PayPal.
 
@@ -77,7 +77,7 @@ The following illustration shows an example of the PayPal iframe invoked using t
 | Height of the iframe | Pixels | The iframe height, in pixels. The height can be adjusted as required. |
 | Show billing address | **True** or **False** | If this property is set to **True**, the billing address will be served by Adyen inside the payment module iframe. If set to **False**, the billing address won't be served by Adyen, and a Commerce user will have to configure a module to show the billing address on the checkout page. For the PayPal payment connector, this field has no impact, as the billing address is fully handled within PayPal. |
 | Payment style override | Cascading Style Sheets (CSS) code | Because the payment module is hosted in an iframe, there is limited styling capability. You can achieve some styling by using this property. To override site styles, you must paste the CSS code as the value of this property. Site builder CSS overrides and styles don't apply to this module. |
-|Supported tender types| String| If multiple payment connectors are configured, you should provide the supported tender type string as defined in the Commerce headquarters payment connector configuration (see the followin image). If blank, it defaults to the Adyen payment connector. Added in Commerce release 10.0.14.|
+|Supported tender types| String| If multiple payment connectors are configured, you should provide the supported tender type string as defined in the Commerce headquarters payment connector configuration (see the following image). If blank, it defaults to the Adyen payment connector. Added in Commerce release 10.0.14.|
 |Is primary payment|  **True** or **False** | If **True**, any error messages will be generated from the primary payment connector on the checkout page. If both Adyen and PayPal payment connectors are configured, set Adyen to **True**, which was added in Commerce release 10.0.14.|
 
 The following illustration shows an example of the **Supported Tender Types** value set to "PayPal" in the payment connector configuration in Commerce headquarters.
@@ -95,15 +95,15 @@ Similar to payment modules, a **Supported tender types** property has been added
 
 A payment module can be added only to a checkout module. For more information about how to configure a payment module for a checkout page, see [Checkout module](add-checkout-module.md).
 
-## Setting up both Adyen and PayPal payment connectors
-If both Adyen and PayPal payment connectors are needed, add both modules to the payment section. 
-- Ensure that the **Supported tender types** property value is configured for PayPal (as 'PayPal'), and leave it blank for Adyen. 
+## Set up both Adyen and PayPal payment connectors
+
+If both the Adyen and PayPal payment connectors are needed, add both connector configurations to the payment section and configure them as follows. 
+- Ensure that the **Supported tender types** property value is configured for PayPal (as **PayPal**), and leave it blank for Adyen. 
 - Set the **Is primary payment** property to **True** for Adyen. Leave it blank for PayPal.
-- Set the **Use connector id** to **True** for both modules.
+- Set the **Use connector ID** property to **True** for both modules.
 
-[!NOTE]
-> When setting up the Adyen and PayPal modules together, in Headquarters you must have the **Dynamics 365 Payment Connector for Adyen** in the first postion in the online channel's **Payment accounts** setup. In Headquarters, go to **Online Stores** and select the channel for your site. Under the **Set up** section, navigate to **Payment accounts** on the setup page. The **Dynamics 365 Payment Connector for Adyen** should be set up first position (top line), followed by the **Dynamics 365 Payment Connector for PayPal** configuration in the following line (second line).
-
+> [!NOTE]
+> When setting up the Adyen and PayPal modules together, in Commerce headquarters you must have the **Dynamics 365 Payment Connector for Adyen** in the first position in the online channel's **Payment accounts** configuration. To check this, go to **Online Stores** and select the channel for your site, then select the **Set up** tab and navigate to the **Payment accounts** FastTab. Under **Connector**, the **Dynamics 365 Payment Connector for Adyen** configuration should be in the first position (top line), followed by the **Dynamics 365 Payment Connector for PayPal** configuration on the following line (second line).
 
 ## Additional resources
 
