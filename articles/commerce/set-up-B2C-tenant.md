@@ -63,6 +63,7 @@ Before you begin, ensure that your Dynamics 365 Commerce environment and e-comme
 After deployment of your Dynamics 365 Commerce environment, it also is recommended to [Initialize seed data](enable-configure-retail-functionality.md) in the environment.
 
 ## Create or link to an existing AAD B2C tenant in the Azure portal
+This section covers creating or linking an AAD B2C tenant for use in your Commerce site. Additional information can be found in the [create an AAD B2C tenant tutorial](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant).
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that will be connected with your Commerce environment.
@@ -108,11 +109,11 @@ To create the B2C application, follow these steps.
 1. In the Azure portal, select **App registrations**, and then select **New registration**.
 1. Under **Name**, enter the name to give this Azure AD B2C application.
 1. Under **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
-1. For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, see [Reply URLs](#reply-urls) below.
+1. For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, see [Reply URLs](#reply-urls) below. A Redirect URI/ReplyURL will need to be entered for your site's URL to enable redirections from AAD B2C back to the site when a user authenticates. The reply URL can be added now during the registration process, or later from the application's **Overview** section (using the **Add a Redirect URI** link in the overview menu).
 1. For **Permissions**, select **Grant admin consent to openid and offline_access permissions**.
 1. Select **Register**.
-1. Select the newly-created application and navigate to the **Authentication** menu. Here you can add additional **Redirect URIs** if needed (now or later). Continue to the next step if not currently needed.
-1. Under **Implicit grant**, select both **Access tokens** and **ID tokens** to enable them for the application. Select **Save**.
+1. Select the newly-created application and navigate to the **API permissions** menu. 
+1. If a ReplyURL is entered, under **Implicit grant and hybrid flows**, select both **Access tokens** and **ID tokens** to enable them for the application. Select **Save**. If a ReplyURL was not entered during registration, it can also be added in this page selecting **Add a platform**, **Web**, and entering the redirect URI of the application. Below the **Implicit grant and hybrid flows** section will be available to select both **Access tokens** and **ID tokens** options during the configuration.
 1. Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
 
 For additional reference on App Registrations in Azure AD B2C, please see [The new App registrations experience for Azure Active Directory B2C](/azure/active-directory-b2c/app-registrations-training-guide)
@@ -147,9 +148,9 @@ To create a sign up and sign in user flow policy, follow these steps.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
 1. Select the **Sign up and sign in** policy, and then select the **Recommended** version.
 1. Under **Name**, enter a policy name. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
-1. Under **Identity providers**, select the appropriate check box.
+1. Under **Identity providers**, in the Local accounts section, select **Email signup**. Local accounts/Email is used in most common scenarios for Commerce. If using Social identity providers also, these can also be selected at this time.
 1. Under **Multifactor Authentication**, select the appropriate choice for your company. 
-1. Under **User attributes and claims**, select options to collect attributes or return claims as appropriate. Commerce requires the following default options:
+1. Under **User attributes and claims**, select options to collect attributes or return claims as appropriate. Click on the **Show more...** button to get the full list to best select these attributes and claims. Commerce requires the following default options:
 
     | **Collect  attribute** | **Return  claim** |
     | ---------------------- | ----------------- |
@@ -165,9 +166,6 @@ The following image is an example of the Azure AD B2C sign up and sign in user f
 
 ![Sign Up and Sign In policy settings.](./media/B2CImage_11.png)
 
-The following image shows the **Run user flow** option in the Azure AD B2C sign up and sign in user flow.
-
-![Run user flow option in policy flow.](./media/B2CImage_23.png)
    
 ### Create a profile editing user flow policy
 
@@ -177,13 +175,17 @@ To create a profile editing user flow policy, follow these steps.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
 1. Select **Profile editing**, and then select the **Recommended** version.
 1. Under **Name**, enter the profile editing user flow. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
-1. Under **Identity providers**, select **Email SignIn**.
+1. Under **Identity providers**, select the Local accounts with **Email SignIn** option.
 1. Under **User attributes**, select the following check boxes:
-    - **Email Addresses** (**Return claim** only)
-    - **Given Name** (**Collect attribute** and **Return claim**)
-    - **Identity Provider** (**Return claim** only)
-    - **Surname** (**Collect attribute** and **Return claim**)
-    - **User's Object ID** (**Return claim** only)
+    
+    | **Collect  attribute** | **Return  claim** |
+    | ---------------------- | ----------------- |
+    |                        | Email Addresses   |
+    | Given Name             | Given Name        |
+    |                        | Identity Provider |
+    | Surname                | Surname           |
+    |                        | User’s Object ID  |
+    
 1. Select **Create**.
 
 The following image shows an example of the Azure AD B2C profile editing user flow.
