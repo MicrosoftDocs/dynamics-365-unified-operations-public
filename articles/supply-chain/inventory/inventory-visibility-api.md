@@ -246,7 +246,7 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
-This API can create multiple records at the same time. The only differences between this API and the [single-event API](#create-one-onhand-change-event) are the `Path` and `Body` values. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API  can contain 512 change events at most.
+This API can create multiple records at the same time. The only differences between this API and the [single-event API](#create-one-onhand-change-event) are the `Path` and `Body` values. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API  can support up to 512 change events at a time.
 
 ```txt
 Path:
