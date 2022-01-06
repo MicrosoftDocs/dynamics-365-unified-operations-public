@@ -4,7 +4,7 @@
 title: Payment module
 description: This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/05/2022
+ms.date: 01/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -97,7 +97,7 @@ A payment module can be added only to a checkout module. For more information ab
 
 ## Configuration of Adyen and PayPal payment connectors when using both
 
-If both the Adyen and PayPal payment connectors are to be used for your site, add both connector configurations to the payment section and configure them as follows. 
+If both the Adyen and PayPal payment connectors are to be used for your site, in Commerce site builder add both connector configurations to the payment slot of the checkout module and configure them as follows. 
 - Ensure that the **Supported tender types** property value is configured for PayPal (as **PayPal**), and leave it blank for Adyen. 
 - Set the **Is primary payment** property to **True** for Adyen. Leave it blank for PayPal.
 - Set the **Use connector ID** property to **True** for both modules.
