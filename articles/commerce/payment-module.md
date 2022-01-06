@@ -95,20 +95,24 @@ Similar to payment modules, a **Supported tender types** property has been added
 
 A payment module can be added only to a checkout module. For more information about how to configure a payment module for a checkout page, see [Checkout module](add-checkout-module.md).
 
-## Configure the Adyen and PayPal payment connectors when using both
+## Configure the Adyen and PayPal payment connectors when both are used
 
-If both the Adyen and PayPal payment connectors are to be used for your site, in Commerce site builder add payment modules for each connector to the checkout module and then configure the following properties for each module as follows. 
-1. In the PayPal payment module properties pane:
-    1. For the **Supported tender types** property value, enter "PayPal".
-    1. Clear the **Is primary payment** property checkbox.
-    1. Select the **Use connector ID** property checkbox.
-1. In the Adyen payment module properties pane:
-    1. For the **Supported tender types** property value, leave it blank.
-    1. Select the **Is primary payment** property checkbox.
-    1. Select the **Use connector ID** property checkbox.
+If both the Adyen and PayPal payment connectors will be used for your site, follow these steps in Commerce site builder to add payment modules for each connector to the checkout module and then configure the properties for each module.
+
+1. In the properties pane for the PayPal payment module, follow these steps:
+
+    1. In the field for the **Supported tender types** property, enter **PayPal**.
+    1. Clear the checkbox for the **Is primary payment** property.
+    1. Select the checkbox for the **Use connector ID** property.
+
+1. In the properties pane for the Adyen payment module, follow these steps:
+
+    1. Leave the field for the **Supported tender types** property blank.
+    1. Select the checkbox for the **Is primary payment** property.
+    1. Select the checkbox for the **Use connector ID** property.
 
 > [!NOTE]
-> When configuring the Adyen and PayPal connectors to be used together, in Commerce headquarters you must have the **Dynamics 365 Payment Connector for Adyen** in the first position in the online channel's **Payment accounts** connector configuration. To confirm or change the connector order, go to **Online Stores** and select the channel for your site, then select the **Set up** tab and navigate to the **Payment accounts** FastTab. Under **Connector**, the **Dynamics 365 Payment Connector for Adyen** configuration should be in the first position (top line), followed by the **Dynamics 365 Payment Connector for PayPal** configuration on the following line (second line). If this is not the case, add or remove connectors as needed to reorder them.
+> When you configure the Adyen and PayPal connectors to be used together, the **Dynamics 365 Payment Connector for Adyen** configuration must be in the first position in the online channel's **Payment accounts** connector configuration in Commerce headquarters. To confirm or change the connector order, go to **Online Stores**, and select the channel for your site. Then, on the **Set up** tab, on the **Payment accounts** FastTab, under **Connector**, make sure that the **Dynamics 365 Payment Connector for Adyen** configuration is in the first position (that is, on the top line), and that the **Dynamics 365 Payment Connector for PayPal** configuration is on the second line. Add or remove connectors as required to reorder them.
 
 ## Additional resources
 
