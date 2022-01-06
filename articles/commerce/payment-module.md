@@ -95,15 +95,15 @@ Similar to payment modules, a **Supported tender types** property has been added
 
 A payment module can be added only to a checkout module. For more information about how to configure a payment module for a checkout page, see [Checkout module](add-checkout-module.md).
 
-## Set up both Adyen and PayPal payment connectors
+## Configuration of Adyen and PayPal payment connectors when using both
 
-If both the Adyen and PayPal payment connectors are needed, add both connector configurations to the payment section and configure them as follows. 
+If both the Adyen and PayPal payment connectors are to be used for your site, add both connector configurations to the payment section and configure them as follows. 
 - Ensure that the **Supported tender types** property value is configured for PayPal (as **PayPal**), and leave it blank for Adyen. 
 - Set the **Is primary payment** property to **True** for Adyen. Leave it blank for PayPal.
 - Set the **Use connector ID** property to **True** for both modules.
 
 > [!NOTE]
-> When setting up the Adyen and PayPal modules together, in Commerce headquarters you must have the **Dynamics 365 Payment Connector for Adyen** in the first position in the online channel's **Payment accounts** configuration. To check this, go to **Online Stores** and select the channel for your site, then select the **Set up** tab and navigate to the **Payment accounts** FastTab. Under **Connector**, the **Dynamics 365 Payment Connector for Adyen** configuration should be in the first position (top line), followed by the **Dynamics 365 Payment Connector for PayPal** configuration on the following line (second line).
+> When setting up both the Adyen and PayPal connectors together, in Commerce headquarters you must have the **Dynamics 365 Payment Connector for Adyen** in the first position in the online channel's **Payment accounts** configuration. To check this, go to **Online Stores** and select the channel for your site, then select the **Set up** tab and navigate to the **Payment accounts** FastTab. Under **Connector**, the **Dynamics 365 Payment Connector for Adyen** configuration should be in the first position (top line), followed by the **Dynamics 365 Payment Connector for PayPal** configuration on the following line (second line).
 
 ## Additional resources
 
