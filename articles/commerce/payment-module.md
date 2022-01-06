@@ -109,7 +109,7 @@ If both the Adyen and PayPal payment connectors are to be used for your site, in
 1. Select the **Use connector ID** property checkbox.
 
 > [!NOTE]
-> When configuring the Adyen and PayPal connectors to be used together, in Commerce headquarters you must have the **Dynamics 365 Payment Connector for Adyen** in the first position in the online channel's **Payment accounts** connector configuration. To confirm or change the connector rank, go to **Online Stores** and select the channel for your site, then select the **Set up** tab and navigate to the **Payment accounts** FastTab. Under **Connector**, the **Dynamics 365 Payment Connector for Adyen** configuration should be in the first position (top line), followed by the **Dynamics 365 Payment Connector for PayPal** configuration on the following line (second line). If this is not the case, add or remove connectors as needed to reorder them.
+> When configuring the Adyen and PayPal connectors to be used together, in Commerce headquarters you must have the **Dynamics 365 Payment Connector for Adyen** in the first position in the online channel's **Payment accounts** connector configuration. To confirm or change the connector order, go to **Online Stores** and select the channel for your site, then select the **Set up** tab and navigate to the **Payment accounts** FastTab. Under **Connector**, the **Dynamics 365 Payment Connector for Adyen** configuration should be in the first position (top line), followed by the **Dynamics 365 Payment Connector for PayPal** configuration on the following line (second line). If this is not the case, add or remove connectors as needed to reorder them.
 
 ## Additional resources
 
