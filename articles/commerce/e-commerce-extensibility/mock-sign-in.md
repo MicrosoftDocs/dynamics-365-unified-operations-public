@@ -165,6 +165,34 @@ The credentials will live under the `secrets/` directory in your Node applicatio
 
 ![Example credentials.json file.](media/local-sign-in-06.png)
 
+### Simulate a B2B user signed in
+If you need to mock a B2B user sign in, you can use the **isB2bUser** property for a user credential and set it to **true** as shown in the below example:
+
+```json
+{
+    "loginDomain": "commerceonboardingb2c.b2clogin.com",
+    "b2cTenant": "commerceonboardingb2c",
+    "nativeApplicationId": "25f6742d-f8b8-44d9-a6a0-f06d2854ac5f",
+    "ropcUserFlowName": "B2C_1_ROPC_Auth",
+    "userImpersonationScopeURL": "https://commerceonboardingb2c.onmicrosoft.com/b7ad3e87-d8b0-4c83-b08d-7c34c19f7933/user_impersonation",
+    "defaultUser": {
+        "name": "default",
+        "email": "",
+        "password": "",
+        "customerAccountNumber": "",
+        "isB2bUser": true
+    },
+    "additionalUsers":[ 
+        {
+            "name": "test-user-1",
+            "email": "test-user-1@example.com",
+            "password": "password",
+            "customerAccountNumber": ""
+        }
+    ]
+}
+```
+
 > [!NOTE]
 > Everything under the `secrets/` directory should be added to your .gitignore file to help prevent credentials from being leaked online.
 
