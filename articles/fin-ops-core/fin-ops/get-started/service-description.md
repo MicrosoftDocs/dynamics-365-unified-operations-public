@@ -4,7 +4,7 @@
 title: Service description for Finance and Operations apps
 description: This topic provides the service description for Finance and Operations apps.
 author: tomhig
-ms.date: 12/07/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -115,7 +115,7 @@ Finance and Operations apps are served from several Azure regions around the wor
 ### Country/region-specific considerations
 
 - Customers in regulated industry or commercial organizations that do business with entities in France that require local data residency should review [Finance and Operations in France](../../dev-itpro/deployment/france-local-deployment.md).
-- Customers that have operations in China should review [Finance and Operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
+- Customers that have operations in China should review [Azure China Playbook](/azure/china/) and [Finance and Operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
 - Customers that have operations in Russia should review the [Russian personal data localization law](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### General Data Protection Regulation (GDPR)
@@ -354,6 +354,7 @@ Microsoft is committed to an availability rate of 99.9 percent per month of the 
 - **[Licensing guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Use this guide to learn more about how to license Dynamics 365.
 - **[Customer support](https://dynamics.microsoft.com/support/)** – Get industry-leading support for your Dynamics 365 apps.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Manage your application lifecycle, and move towards predictable, repeatable, high-quality implementations.
+- **[Dynamics 365 Implementation Guide](https://aka.ms/D365ImplementationGuideFlip)** - The Dynamics 365 Implementation Guide documents time-tested Success by Design principles and provides prescriptive guidance to architect, build, test, and deploy Dynamics 365 solutions.
 
 ## Definitions
 
@@ -426,6 +427,10 @@ The SLA applies to Microsoft online services. For more information, see [Service
 ### Service update
 
 Microsoft services Finance and Operations environments on consistent basis through service updates. Customers set their own service update calendar, based on their business needs. For more information, see [One Version service updates](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+
+### [Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+The framework that systematically guides an implementation through a series of assessments at critical stages to ensure optimal architecture, security, performance, and user experience for a Dynamics 365 solution.
 
 ### User
 
