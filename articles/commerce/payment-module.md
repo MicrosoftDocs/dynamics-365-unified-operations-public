@@ -102,7 +102,6 @@ If both the Adyen and PayPal payment connectors are to be used for your site, in
     1. For the **Supported tender types** property value, enter "PayPal".
     1. Clear the **Is primary payment** property checkbox.
     1. Select the **Use connector ID** property checkbox.
-
 1. In the Adyen payment module properties pane:
     1. For the **Supported tender types** property value, leave it blank.
     1. Select the **Is primary payment** property checkbox.
