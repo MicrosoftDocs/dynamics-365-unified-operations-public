@@ -56,7 +56,8 @@ Customers will be able to take up to 8 service updates per year and are required
 |     10.0.21 (Major release)     |      August 2, 2021         |        September 17, 2021         |                          October 1, 2021                             | December 10, 2021  |
 |     10.0.20     |      May 28, 2021           |        July 16, 2021              |                          July 30, 2021                               | October 22, 2021   |
 |     10.0.19     |      April 23, 2021         |        June 18, 2021              |                          July 2, 2021                                | September 17, 2021 | 
-            
+ \* Denotes a major release.
+ 
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 
