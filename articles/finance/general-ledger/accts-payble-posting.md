@@ -92,9 +92,9 @@ You can create charges codes for Accounts receivable and Accounts payable. When 
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
-| Purchase fee | Leave the field blank. | Not applicable | Item | Debit | No | **Example for a purchase fee for an item:** </p><ul><li>**Debit** field = **Item**</li><li>  **Credit** field =  **Customer/Vendor**.</li><li> The item posting uses the main account from the inventory posting profile. |
-| Order, freight | 600120 | Freight In | Revenue | Debit | No | **Example for freight that is paid to a vendor:** </p><ul><li>**Debit** field = **Ledger account**</li><li> **Credit** field = **Customer/Vendor** |
-| Rebate\* | 503160 | Vendor Rebate (Contra COGS)| Expense | Credit | No | **Example for a vendor rebate:**</p><ul><li>**Debit** field = **Customer/Vendor**</li><li>**Credit** field = **Ledger account** |
+| Purchase fee | Leave the field blank. | Not applicable | Item | Debit | No | **Example for a purchase fee for an item:** </p><ul><li>**Debit type** field = **Item**</li><li>  **Credit type** field =  **Customer/Vendor**.</li><li> The item posting uses the main account from the inventory posting profile. |
+| Order, freight | 600120 | Freight In | Revenue | Debit | No | **Example for freight that is paid to a vendor:** </p><ul><li>**Debit type** field = **Ledger account**</li><li> **Credit type** field = **Customer/Vendor** |
+| Rebate\* | 503160 | Vendor Rebate (Contra COGS)| Expense | Credit | No | **Example for a vendor rebate:**</p><ul><li>**Debit type** field = **Customer/Vendor**</li><li>**Credit type** field = **Ledger account** |
 
 \* For the rebate example, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality that is available in Microsoft Dynamics 365 Supply Chain Management provides more control and automation of rebates. For more information, see [Vendor rebates](../../supply-chain//procurement/vendor-rebates.md).
 
