@@ -2,9 +2,9 @@
 # required metadata
 
 title: Create Electronic reporting (ER) configurations
-description: This article provides background information that will help you start to use Electronic reporting to create configurations. 
-author: ShylaThompson
-ms.date: 01/18/2018
+description: This topic provides background information that will help you start to use Electronic reporting to create configurations. 
+author: kfend
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-As part of the requirements for LCS (the Microsoft Dynamics Lifecycle Services) solutions for localization and translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This article provides background information that will help you start to use Electronic reporting to create configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
+As part of the requirements for Microsoft Dynamics Lifecycle Services (LCS) solutions for localization and translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This topic provides background information that will help you start to use Electronic reporting to create configurations. This topic isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
 
 Electronic reporting (ER) is a configurable tool that helps you create and maintain regulatory electronic reporting and payments, based on the following three concepts:
  - Configuration instead of coding
@@ -39,9 +39,9 @@ Electronic reporting (ER) is a configurable tool that helps you create and maint
  - Easy or automatic upgrade
 
 
-ER provides one common way (through LCS) for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.
+Using LCS, ER provides one common way for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.
 
-ER lets you set up data models that are domain-specific and independent of the database as data sources for document formats. Formats can be configured based on these domain-specific data models by using simple visual tools that are similar to Excel. Data models and formats support versioning, and formats can be date-effective.
+You can use ER to set up data models that are domain-specific and independent of the database as data sources for document formats. Formats can be configured based on these domain-specific data models by using simple visual tools that are similar to Excel. Data models and formats support versioning, and formats can be date-effective.
 
 
 ### Main data flow
@@ -81,7 +81,7 @@ To support these requirements and comply with local district authorities, we mus
 > - Enable configuration exchange between companies or instances via configuration import/export, and so on.
 
 ## Electronic reporting domain coverage
-Several out-of-box configurations can be used to meet electronic reporting requirements for specific countries/regions. The following list show some examples of format configurations that are grouped into business domains. To get a complete, up-to-date list of available and supported configurations, open a configuration repository setup to show the configurations that are available for import from either  resources or an LCS Assets library.
+Several out-of-box configurations can be used to meet electronic reporting requirements for specific countries/regions. The following list show some examples of format configurations that are grouped into business domains. To get a complete, up-to-date list of available and supported configurations, open a configuration repository setup to show the configurations that are available for import from either resources or an LCS Assets library. 
 
 - Audit file
 
@@ -109,9 +109,7 @@ Several out-of-box configurations can be used to meet electronic reporting requi
 - Customer e-Invoice
 
     - OIOUBL...
-    - 
-And others.
-
+    
 ## Your solution uptake
 You can choose how to move your electronic reporting functionality into ER. However, you should consider the following high-level steps when you plan that move.
 
