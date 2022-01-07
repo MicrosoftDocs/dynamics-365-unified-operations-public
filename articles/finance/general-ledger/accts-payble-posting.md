@@ -41,7 +41,7 @@ Several posting configurations besides the vendor posting profile are available 
 
 Methods of payment define how a payment will be posted to the general ledger. They also control the behavior of the payment output. Typically, one method of payment is created for each type of payment that your organization makes (for example, cash, check, credit card, money order, and wire).
 
-The fields in the **Posting** section on the **General** FastTab control how a payment will be posted to the general ledger. You must first select a value in the **Account type** field. The account type that you select controls the behavior of the **Payment account** field. We recommend that you select **Bank** in the **Account type** field and then select the bank account in the **Payment account** field. The benefit of the approach is that the system will post the payment to the Bank subledger, which supports reconciliation and other cash-related processes. The following table shows an example of the posting profile configuration if you're using the **Cash and bank management** module.
+The fields in the **Posting** section on the **General** FastTab on the **Methods of payment** page (**Accounts payable > Payment setup > Methods of payment**) control how a payment will be posted to the general ledger. You must first select a value in the **Account type** field. The account type that you select controls the behavior of the **Payment account** field. We recommend that you select **Bank** in the **Account type** field and then select the bank account in the **Payment account** field. The benefit of the approach is that the system will post the payment to the Bank subledger, which supports reconciliation and other cash-related processes. The following table shows an example of the posting profile configuration if you're using the **Cash and bank management** module.
 
 | Posting type | Account type | Payment account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|--------------|------------------------------|--------------|---------------|------------------|-------------|
@@ -74,13 +74,13 @@ For more information, see [Cash discounts](../cash-bank-management/cash-discount
 Payment fees let you automatically add a fee to a vendor payment when a set of conditions applies. Payment fees can be paid to the vendor, or they can be posted to your bank account as an expense. Here are some examples:
 
 - A vendor charges you 3 percent of the payment total if you pay by using a credit card.
-- Your bank charges you $1.00 for each wire that you process, and the wire fee is expensed.
+- Your bank charges you $1.00 for each wire transfer that you process, and the wire fee is expensed.
 
 When you configure a vendor payment fee, if you set the **Charge** field to **Vendor**, the **Main account** field becomes unavailable, and the system uses the vendor posting profile to post the fee. If you set the **Charge** field to **Ledger**, you must set the **Main account** field to the main account where the payment fee will be posted. Typically, this main account will be an expense account. The following table shows an example of the posting profile configuration for payment fee posting.
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|----------------|------------------|-------------|
-| Ledger journal | 618190 | Bank Fee Expense | Expense | Debit | No | If **Ledger** is selected in the **Charge** field, select this account in the **Main account** field on the **Payment fee**. |
+| Ledger journal | 618190 | Bank Fee Expense | Expense | Debit | No | If **Ledger** is selected in the **Charge** field, select this account in the **Main account** field on the **Payment fee** page. |
 
 For more information, see [Define vendor payment fees](../accounts-payable/tasks/define-vendor-payment-fees.md).
 
