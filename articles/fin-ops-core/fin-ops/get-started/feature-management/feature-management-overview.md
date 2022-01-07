@@ -75,7 +75,7 @@ Features that are updated to **On by default** are turned on by default, but the
 > [!NOTE]
 > Because these features will be enabled automatically, it's important that you determine whether your organization is ready to uptake these features, or whether more time is required. If more time is required, it might be necessary to temporarily disable these features. Note that the transition of a feature to **On by default** is typically done in the major release before the feature is targeted to become **Mandatory**. At that point, you won't have the option to disable the feature. 
 
-### Mmandatory
+### Mandatory
 
 **Mandatory** is the final state for features. It indicates that the features are turned on, and that you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
 
