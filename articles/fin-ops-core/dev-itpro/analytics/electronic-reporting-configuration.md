@@ -3,7 +3,7 @@
 
 title: Create Electronic reporting (ER) configurations
 description: This topic provides background information that will help you start to use Electronic reporting to create configurations. 
-author: kfend
+author: nselin
 ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 27621
 ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mrolecki
+ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
