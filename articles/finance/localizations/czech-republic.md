@@ -93,7 +93,6 @@ There are unique considerations for the year-end closing process and opening tra
 For more information, see [Year-end close for Czech Republic and Hungary](emea-cze-hun-year-end.md).
 
 ## Additional resources
-- [Microsoft Dynamics Localization Portal: Czech Republic report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
 - [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
