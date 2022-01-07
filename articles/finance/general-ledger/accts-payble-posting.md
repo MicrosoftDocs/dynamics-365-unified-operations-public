@@ -92,9 +92,9 @@ You can create charges codes for Accounts receivable and Accounts payable. When 
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
-| Purchase fee | Leave the field blank. | Not applicable | Item | Debit | No | **Example for a purchase fee for an item:** Debit Item and Credit Customer/Vendor. The item posting uses the main account from the inventory posting profile. |
-| Order, freight | 600120 | Freight In | Revenue | Debit | No | **Example for freight that is paid to a vendor:** Debit Ledger account and Credit Customer/Vendor |
-| Rebate\* | 503160 | Vendor Rebate (Contra COGS)| Expense | Credit | No | **Example for a vendor rebate:** Debit Customer/Vendor and Credit Ledger account |
+| Purchase fee | Leave the field blank. | Not applicable | Item | Debit | No | **Example for a purchase fee for an item:**  **Debit** field = **Item** and **Credit** field =  **Customer/Vendor**. The item posting uses the main account from the inventory posting profile. |
+| Order, freight | 600120 | Freight In | Revenue | Debit | No | **Example for freight that is paid to a vendor:** **Debit** field = **Ledger account** and **Credit** = **Customer/Vendor** |
+| Rebate\* | 503160 | Vendor Rebate (Contra COGS)| Expense | Credit | No | **Example for a vendor rebate:** **Debit** field = **Customer/Vendor** and **Credit** field = **Ledger account** |
 
 \* For the rebate example, the posting is used only when a charges code is added to a purchase order header or line. Advanced rebate functionality that is available in Microsoft Dynamics 365 Supply Chain Management provides more control and automation of rebates. For more information, see [Vendor rebates](../../supply-chain//procurement/vendor-rebates.md).
 
