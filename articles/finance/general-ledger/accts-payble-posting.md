@@ -88,7 +88,7 @@ For more information, see [Define vendor payment fees](../accounts-payable/tasks
 
 If you must track purchase amounts in addition to line items, you can use charges codes. For example, your supplier might charge freight and handling fees to you, or it might expense some freight and handling fees internally. You can specify whether these amounts are posted to expense accounts or added to the cost of the items.
 
-You can create charges codes for Accounts receivable and Accounts payable. When you configure a charges code, you must define the posting. The posting controls both the debit account and the credit account. When you create charges codes, you can select the posting type that is used for each charge code. The following table shows examples of typical charge codes for Accounts payable.
+You can create charges codes for Accounts receivable and Accounts payable. When you configure a charges code, you must define the posting. The posting controls both the debit account and the credit account. When you create charges codes, you can select the posting type that is used for each charge code. The following table shows examples of typical charge codes for Accounts payable on the **Charges codes** page.
 
 | Posting type | Main account example | Main account name example | Account type | Debit/Credit? | Clearing account | Description |
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
