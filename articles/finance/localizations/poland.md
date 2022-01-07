@@ -4,7 +4,7 @@
 title: Poland overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Poland. 
 author: ShylaThompson
-ms.date: 07/25/2019
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,6 +44,7 @@ This topic provides links to documentation resources for Poland.
 - [Turnover and balances statement](emea-pol-turnover-balances-statement.md)
 - [Split AP/AR exchange difference](emea-pol-split-ap-ar-exchange-difference.md)
 - [VAT declaration with registers (JPK_V7M, VDEK)](emea-pol-vdek.md)
+- [Payment terms in commercial transactions report](emea-pol-payment-terms-report.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
