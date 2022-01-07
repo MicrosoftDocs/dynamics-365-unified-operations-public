@@ -61,7 +61,7 @@ Bridging posting is a two-step process that is used when payments are posted. It
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
 | Ledger journal | 130725 | Uncleared Cash | Liability | Debit | Yes | For each method of payment, enter the main account in the **Bridging account** field. |
 
-For more information, see [Set up and process bridged payments](../accounts-receivable/setup-and-process-bridged-payments.md).
+For more information, see [Set up and process bridged payments](../accounts-receivable/set-up-and-process-bridged-payments.md).
 
 ## Customer cash discounts posting accounts
 
@@ -71,9 +71,7 @@ For more information, see [Cash discounts](../cash-bank-management/cash-discount
 
 ## Payment fee posting accounts
 
-Payment fees let you automatically add a fee to a vendor payment when a set of conditions applies. Payment fees can be paid to the vendor, or they can be posted to your bank account as an expense.
-
-Here are some examples:
+Payment fees let you automatically add a fee to a vendor payment when a set of conditions applies. Payment fees can be paid to the vendor, or they can be posted to your bank account as an expense. Here are some examples:
 
 - A vendor charges you 3 percent of the payment total if you pay by using a credit card.
 - Your bank charges you $1.00 for each wire that you process, and the wire fee is expensed.
