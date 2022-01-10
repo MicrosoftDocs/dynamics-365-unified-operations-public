@@ -36,52 +36,52 @@ After you complete the required setup steps in [Get started with Tax Calculation
 
 ## Sales tax code
 
-| Finance                             | Tax Calculation Service            |
-| ----------------------------------- | ---------------------------------- |
-| Sales tax code                      | Tax code                           |
-| Name                                | Description                        |
-| Settlement period                   | User input                         |
-| Ledger posting group                | User input                         |
-| Sales tax currency                  | User input                         |
-| Allow negative sales tax percentage | A negative tax rate is configured. |
+| Tax Calculation Service           | Finance                             |
+| --------------------------------- | ----------------------------------- |
+| Tax code                          | Sales tax code                      |
+| Description                       | Name                                |
+| User input                        | Settlement period                   |
+| User input                        | Ledger posting group                |
+| User input                        | Sales tax currency                  |
+| A negative tax rate is configured | Allow negative sales tax percentage |
 
 ## Tax value
 
-| Finance                   | Tax Calculation Service |
-| ------------------------- | ----------------------- |
-| From date                 | From transaction date   |
-| To date                   | To transaction date     |
-| Minimum limit             | Minimum amount          |
-| Maximum limit             | Maximum amount          |
-| Value                     | Tax rate                |
-| Non-deductible percentage | Non-deductible rate     |
+| Tax Calculation Service | Finance                   |
+| ----------------------- | ------------------------- |
+| From transaction date   | From date                 |
+| To transaction date     | To date                   |
+| Minimum amount          | Minimum limit             |
+| Maximum amount          | Maximum limit             |
+| Tax rate                | Value                     |
+| Non-deductible rate     | Non-deductible percentage |
 
 ## Tax limits
 
-| Finance           | Tax Calculation Service |
-| ----------------- | ----------------------- |
-| From date         | From transaction date   |
-| To date           | To transaction date     |
-| Minimum sales tax | Minimum tax amount      |
-| Maximum sales tax | Maximum tax amount      |
+| Tax Calculation Service | Finance           |
+| ----------------------- | ----------------- |
+| From transaction date   | From date         |
+| To transaction date     | To date           |
+| Minimum tax amount      | Minimum sales tax |
+| Maximum tax amount      | Maximum sales tax |
 
 ## Sales tax group
 
-| Finance                                    | Tax Calculation Service                          |
-| ------------------------------------------ | ------------------------------------------------ |
-| Sales tax group                            | Tax group                                        |
-| Sales tax codes under this sales tax group | Tax codes under this tax group                   |
-| Exempt                                     | The tax code is marked as **Is Exempt**.         |
-| Exempt code                                | The tax code is marked as **Is Exempt**.         |
-| Reverse charge                             | The tax code is marked as **Is Reverse Charge**. |
-| Use tax                                    | The tax code is marked as **Is Use Tax**.        |
+| Tax Calculation Service                         | Finance                                    |
+| ----------------------------------------------- | ------------------------------------------ |
+| Tax group                                       | Sales tax group                            |
+| Tax codes under this tax group                  | Sales tax codes under this sales tax group |
+| The tax code is marked as **Is Exempt**         | Exempt                                     |
+| The tax code is marked as **Is Exempt**         | Exempt code                                |
+| The tax code is marked as **Is Reverse Charge** | Reverse charge                             |
+| The tax code is marked as **Is Use Tax**        | Use tax                                    |
 
 ## Item sales tax group
 
-| Finance                                         | Tax Calculation Service             |
-| ----------------------------------------------- | ----------------------------------- |
-| Item sales tax group                            | Item tax group                      |
-| Sales tax codes under this item sales tax group | Tax codes under this item tax group |
+| Tax Calculation Service             | Finance                                         |
+| ----------------------------------- | ----------------------------------------------- |
+| Item tax group                      | Item sales tax group                            |
+| Tax codes under this item tax group | Sales tax codes under this item sales tax group |
 
 After the synchronization is completed, continue to maintain the remaining parameters in Finance for posting and reporting purposes.
 
