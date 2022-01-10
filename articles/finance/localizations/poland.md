@@ -3,7 +3,7 @@
 
 title: Poland overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Poland. 
-author: ShylaThompson
+author: kfend
 ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
