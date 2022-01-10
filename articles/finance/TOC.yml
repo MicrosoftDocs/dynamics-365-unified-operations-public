@@ -3477,7 +3477,7 @@
         - name: Configure Human resources shared parameters
           href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
         - name: Set up Human resource workflows
-          href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
         - name: Understand Date and Time fields
           href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
       - name: Manage personnel
