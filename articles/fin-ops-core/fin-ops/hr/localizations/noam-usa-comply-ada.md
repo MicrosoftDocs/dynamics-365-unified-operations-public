@@ -2,9 +2,9 @@
 # required metadata
 
 title: Comply with the Americans with Disabilities Act (ADA)
-description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA).
-author: andreabichsel
-ms.date: 06/20/2017
+description: This topic describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA).
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: HcmADARequirement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 2741
 ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
+This topic describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
 
 You can use the following features to manage information that can help you comply with the ADA.
 
@@ -49,7 +49,7 @@ You can enter physical requirements that are related to position groups and posi
 - Requirements for visual acuity. This includes color, depth perception, and field of vision.
 - One or more work conditions that a worker will be subjected to. You can select one or more conditions in several categories.
 
-If you entered information about a position group, you can then copy that information to positions that are assigned to the position group. To print a checklist that contains information about physical requirements, select the position, click **ADA**, and then click **Print** requirements. To reset all physical retirements to their default settings, select the position, and open the **Jobs,** select a job, then expand the **ADA** tab. On the **ADA requirements** page, click **Reset** requirement.
+If you entered information about a **Position group**, you can then copy that information to positions that are assigned to the **Position group**. To print a checklist that contains information about physical requirements, select the position, click **ADA**, and then click **Print** requirements. To reset all physical retirements to their default settings, select the position, and open the **Jobs,** select a job, then expand the **ADA** tab. On the **ADA requirements** page, click **Reset** requirement.
 
 ## About work environment accommodations
 
