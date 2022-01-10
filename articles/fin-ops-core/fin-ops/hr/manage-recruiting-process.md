@@ -2,9 +2,9 @@
 # required metadata
 
 title: Manage recruiting processes
-description: This article describes a concept that recruiters can use to track the steps in a recruiting process.
+description: This topic describes a concept that recruiters can use to track the steps in a recruiting process.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,7 @@ Recruitment projects allow recruiters to track progress against filling one or m
 - The application deadline
 - The estimated start date
 
-The recruitment project contains the **Job ad** used on the **Employee self service** to advertise the opening. To display the opening to employees, the recruitment project must have a **Job ad**, the **Display on employee self service** field must be set to Yes, the **Application deadline** must be set to a future date, and the recruitment project must have a **Project status** of Started. The following table lists the possible recruitment project statuses and their description.
+The recruitment project contains the **Job ad** used on the **Employee self service** to advertise the opening. To display the opening to employees, the recruitment project must have a **Job ad**, the **Display on employee self service** field must be set to **Yes**, the **Application deadline** must be set to a future date, and the recruitment project must have a **Project status** of **Started**. The following table lists the possible recruitment project statuses and their description.
 
 | Status    | Indicates that…                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -60,7 +60,7 @@ Recruiters can also record the **Media** used to advertise the opening through e
 
 ## Applicants
 
-An applicant is a person who applies for a job in your enterprise. Applicants are shared among all legal entities in your organization giving you a large pool of talent to search from. You can maintain competencies, references, accommodation requests, and personal information for applicants. When you create an applicant record, a person record for that applicant is created in the global address book. You can use the **Applicant** page to update the following global address book information for people who are applicants:
+An applicant is a person who applies for a job in your enterprise. Applicants are shared among all legal entities in your organization giving you a large pool of talent to search from. You can maintain competencies, references, accommodation requests, and personal information for applicants. When you create an applicant record, a person record for that applicant is created in the **Global address book**. You can use the **Applicant** page to update the following global address book information for people who are applicants:
 
 - Address information
 - Contact information
@@ -89,7 +89,7 @@ The application status indicates where an application is in the recruitment proc
 
 ### Correspondence actions
 
-An **Application's** correspondence action determines the document or e-mail template that you use to communicate with the applicant who submitted the application. You can associate **Application bookmarks** with correspondence actions to allow you to use values from the Application, Applicant, Interview, and Recruitment project pages in your communications with applicants. **Application e-mail templates** can be created for the correspondence actions to quickly send e-mails to applicants who have an application with a certain status and correspondence action combination. For example, you may send a Confirmation e-mail to all Applications with a **Status** of Received and a **Correspondence action** of Received. After sending the e-mail, you have the option to automatically update the status of the applications.
+An **Application's** correspondence action determines the document or e-mail template that you use to communicate with the applicant who submitted the application. You can associate **Application bookmarks** with correspondence actions to allow you to use values from the **Application**, **Applicant**, **Interview**, and **Recruitment project** pages in your communications with applicants. **Application e-mail templates** can be created for the correspondence actions to quickly send e-mails to applicants who have an application with a certain status and correspondence action combination. For example, you may send a confirmation e-mail to all applications with a **Status** of **Received** and a **Correspondence action** of **Received**. After sending the e-mail, you have the option to automatically update the status of the applications.
 
 ## Application routing
 
