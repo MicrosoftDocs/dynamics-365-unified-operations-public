@@ -1460,6 +1460,8 @@
               href: localizations/tax-calculation-import-export-feature.md
             - name: Set up an environment for master data lookup
               href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+            - name: Sync the tax setup from the Tax Calculation Service to Finance
+              href: localizations/global-master-data-sync-tax-calculation-service-finance.md
           - name: Determination
             items: 
             - name: Tax calculation data model
