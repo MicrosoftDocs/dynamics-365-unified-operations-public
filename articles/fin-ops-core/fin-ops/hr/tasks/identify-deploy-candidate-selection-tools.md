@@ -32,10 +32,10 @@ Finding a qualified pool of candidates to fill vacancies can be difficult, espec
 1. Go to **Human resources > Competencies > Skill analysis > Skill mapping profiles**.
 2. Click **New**.
 3. In the **Skill mapping** field, enter a name for your skill mapping.  Example: Accountant.
-4. In the **Description** field, enter a description of the skill mapping..
+4. In the **Description** field, enter a description of the skill mapping.
 5. In the **Date** field, enter a date.
 6. Click **Retrieve profile**.
-    * Use **Retrieve profile** to pull in the **Certificate**, **Skill**, and **Education** data from a selected **Person**, **Job** or **Course** as the basis for your search.   You can then add or remove criteria, state if the criteria is optional and rank the importance of the criteria.  
+    * Use **Retrieve profile** to pull in the **Certificate**, **Skill**, and **Education** data from a selected **Person**, **Job**, or **Course** as the basis for your search.   You can then add or remove criteria, state if the criteria is optional and rank the importance of the criteria.  
 7. Click **Job**.
 8. In the **Job** field, enter or select a value.
 9. Click **OK**.
