@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Mandatory default description for posting bank transactions
-description: This topic provides information about setting up mandatory descriptions for bank account reconciliation transactions.
+title: Mandatory default descriptions for posting of bank transactions
+description: This topic explains how to set up mandatory descriptions for bank account reconciliation transactions.
 author: gionoder
 ms.date: 01/10/2022
 ms.topic: article
@@ -27,18 +27,18 @@ ms.dyn365.ops.version: 10.0.25
 
 ---
 
-# Mandatory default description for posting of Bank transactions
+# Mandatory default descriptions for posting of bank transactions
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Use the **(Brazil) Mandatory bank transaction description** feature to enable mandatory input of descriptions in the bank account reconciliation transaction to avoid posting a bank transaction journal that contains transaction lines with no description.
+The **(Brazil) Mandatory bank transaction description** feature lets you require that descriptions be entered in bank account reconciliation transactions. In this way, you can prevent bank transaction journals from being posted if they contain transaction lines that have no description.
 
-1. In Dynamics 365 Finance or Dynamics 365 Supply Chain Management, navigate to the **Feature management** workspace.
-2. In the list of features, search for **(Brazil) Mandatory bank transaction description**. If this feature doesn't appear on the page, select **Check for updates**.
-3. Select the feature, and then select **Enable now**.
+1. In Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management, open the **Feature management** workspace.
+2. In the list of features, search for **(Brazil) Mandatory bank transaction description**. If this feature doesn't appear on the page, select **Check for updates**.
+3. Select the feature, and then select **Enable now**.
 
-   You can turn off the feature after it has been enabled.
+You can turn off the feature after it has been enabled.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
