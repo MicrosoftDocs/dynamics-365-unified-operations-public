@@ -241,6 +241,7 @@ The following table shows which outbound features are supported, and where they 
 | Packing slip and invoicing processing                        | Yes | No |
 | Short picking (sales and transfer orders)                    | No  | Yes, without removing reservations for source documents|
 | Over picking (sales and transfer orders)                     | No  | Yes|
+| Consolidate license plates                                   | No  | Yes|
 | Change of work locations (sales and transfer orders)         | No  | Yes|
 | Complete work (sales and transfer orders)                    | No  | Yes|
 | Print work report                                            | Yes | Yes|
@@ -312,7 +313,6 @@ The following table shows which warehouse operations and exception handing featu
 | Driver check out                                   | Yes | No                           |
 | Change batch disposition code                      | Yes | Yes                          |
 | Display open work list                             | Yes | Yes                          |
-| Consolidate license plates                         | Yes | No                           |
 | Min/max and zone threshold replenishment processing| Yes <p>Recommendation is not to include the same locations as part of the queries</p>| Yes                          |
 | Slotting replenishment processing                  | Yes  | Yes<p>Note that the setup must be done on the scale unit</p>                           |
 | Block and unblock work                             | Yes | Yes                          |
