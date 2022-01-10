@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 10.0.20
 # Troubleshoot Finance insights setup issues
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 
