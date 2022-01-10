@@ -29,12 +29,11 @@ ms.dyn365.ops.version: AX 10.0.13
 # Finance insights home page
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Finance insights provides configurable and extensible solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide (including data from a third party such as consumer report information from a bureau). These intelligent capabilities inform decision making and helps you take action to respond effectively to current and anticipated business challenges. You are responsible for any data used with, or output from, Finance insights.
 
 > [!NOTE]
-> Finance insights preview is available for deployment in the United States of America, Canada, the United Kingdom, Europe, Asia Pacific, Japan, Australia, and New Zealand. Microsoft is incrementally adding support for more regions.
+> Finance insights is available for deployment in the United States of America, Canada, the United Kingdom, Europe, Asia Pacific, Japan, Australia, and New Zealand. Microsoft is incrementally adding support for more regions.
 
 ## Prerequisites
 
