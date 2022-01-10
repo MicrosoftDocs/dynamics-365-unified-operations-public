@@ -1,7 +1,7 @@
 {
   "redirections": [
     {
-      "source_path": "articles/commerce/commerce/add-welcome-message.md",
+      "source_path": "articles/commerce/add-welcome-message.md",
       "redirect_url": "index",
       "redirect_document_id": "false"
     },
