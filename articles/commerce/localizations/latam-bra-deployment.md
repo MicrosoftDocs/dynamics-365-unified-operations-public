@@ -218,8 +218,8 @@ To set up the fiscal registration process in Commerce headquarters, follow these
 1. For each document provider that you just loaded the configuration for, create connector functional profiles and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
    In case of settings for SAT, fill in the **Key Vault activation code secret name** and **POS Signature for SAT** fields.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
-1. Create connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required.
-   In case of settings for SAT, configure the **Connector name** for SAT device (**Connector type = Local**) and specify the **SAT library path** string including the dll-file name.
+1. Create connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required (**for NFC-e**, configure **Connector type = Internal**).
+   In case of settings **for SAT**, configure the **Connector name** for SAT device (**Connector type = Local**) and specify the **SAT library path** string including the dll-file name.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**.
 1. Create fiscal connector groups, one for each connector functional profile that you created earlier including SAT.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**.
@@ -412,22 +412,12 @@ The Hardware station extension components are included in the Hardware station s
 1. Add the following line to the **composition** section of the configuration file.
 
     ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
+		<hardwareStationExtension>
+			<composition>
+				<add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
+			</composition>
+		</hardwareStationExtension>
     ```
-    
-### Update the Modern POS configuration
-
-1. In File Explorer, go to **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker**. (This path assumes that the Microsoft Windows operating system on the computer is based on the x64 architecture.)
-1. In File Explorer, select **File** \> **Open Windows PowerShell** \> **Open Windows PowerShell as administrator**.
-1. In the Microsoft Windows PowerShell window that appears, enter **notepad DLLHost.exe.config**, and then press the Enter key. (The Windows PowerShell window will already be pointed to the current file directory.)
-1. In the Notepad window that appears, add the following lines to the **PreloadedComposition** \> **composition** section of the configuration file:
-
-    ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.Brazil" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter" />
-    ```
-
-1. Select **File** \> **Save**.
 
 ### Enable Modern POS extension components
 
@@ -489,3 +479,8 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 [Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
 
 [Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
+
+[CF-e fiscal documents and integration with SAT functionality in Commerce POS for Brazil](latam-bra-cf-e-sat.md)
+
+[Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
+
