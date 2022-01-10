@@ -77,7 +77,7 @@ Features that are updated to **On by default** are turned on by default, but the
 
 ### Mandatory
 
-**Mandatory** is the final state for features. It indicates that the features are turned on, and that you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
+**Mandatory** is the expected final state for features. It indicates that the features are turned on, and that you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
 
 ## Example of expected feature lifecycles
 
