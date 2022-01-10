@@ -3,8 +3,8 @@
  
 title: Enter project timesheets
 description: This procedure lets you create a timesheet by using an empty timesheet form. 
-author: andreabichsel
-ms.date: 08/08/2019
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -26,16 +26,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enter project timesheets
 
-This procedure lets you create a timesheet by using an empty timesheet form. The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the **My favorites** page. By default, the **All timesheets** list page displays all your timesheets for the current period. You can use the drop-down list for the **Show** field in the **My timesheets** page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers. The demo data company used to create this procedure is USSI.  
+This procedure lets you create a timesheet by using an empty timesheet page. The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the **My favorites** page. By default, the **All timesheets** list page displays all your timesheets for the current period. You can use the drop-down list for the **Show** field in the **My timesheets** page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers. The demo data company used to create this procedure is USSI.  
 
 1. In the **Navigation pane**, go to **Modules > Project management and accounting > Timesheets > My timesheets**.
 2. To enter a new timesheet, click **New**.
-    - The Resource drop-down list shows the worker assigned to the current user, by default.  
+    - The **Resource** drop-down list shows the worker assigned to the current user, by default.  
     - If the user is designated as a delegate, this will list the names so that a user can enter a timesheet on their behalf.  
 3. In the **Date** field, enter a date. If this option is selected, new timesheet lines will be created by using the timesheet settings that were configured as favorites.  
 4. Click **OK**.
 5. Click **New line**.
-6. In the list, mark the selected row. The **Legal Entity** field displays the current Legal entity by default.   
+6. In the list, mark the selected row. The **Legal Entity** field displays the current **Legal entity** by default.   
 7. In the **Project** field, click the drop-down button to open the lookup.
 8. In the list, find and select the desired record.
 9. In the list, click the link in the selected row.
