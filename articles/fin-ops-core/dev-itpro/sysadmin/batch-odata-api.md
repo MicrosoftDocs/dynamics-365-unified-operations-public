@@ -31,20 +31,20 @@ For information about how to configure batch events, see [Batch business events]
 
 In version 10.0.22, the batch functionality now provides an OData API that can be used to requeue batch jobs. Customers can use the OData endpoint to requeue batch jobs that are in a terminal state. This feature can be integrated with any automation by using Power Automate, custom APIs, and so on.
 
-![End-to-end automation.]
-![image](https://user-images.githubusercontent.com/90061039/148861172-7ff123f4-1269-40c2-b32d-b49956824c0c.png)
+![End-to-end automation.](https://user-images.githubusercontent.com/90061039/148861172-7ff123f4-1269-40c2-b32d-b49956824c0c.png)
 
 ## Automate requeuing of failed batch jobs by using OData API
 
 The Batch OData endpoint lets users consume and automate the end-to-end process to reschedule a batch job by using Power Automate or custom API. It supports updates of the batch job status from a started, failed, finished, or canceled state to a waiting state, based on business requirements.
 
 Steps to automate using Power Automate:
-1.	Login to [Power Automate](https://flow.microsoft.com) portal and create new flow following [instructions](https://docs.microsoft.com/en-us/power-automate/get-started-logic-flow)
+1.	Login to [Power Automate](https://flow.microsoft.com) portal and create new flow following [instructions](/power-automate/get-started-logic-flow)
 
 2.	Specify an event Fin & Ops Apps (Dynamics 365) to start the flow and enter the environment details, business event category, business event as ‘batch Job Failed’ and appropriate legal entity.
+
 ![image](https://user-images.githubusercontent.com/90061039/148860987-578b8013-bad5-431d-8fa9-8a61be59889b.png)
 
-3. Add new step from Actions tab to choose an operation named Parse JSON with schema to parse the Jason request. For more information to download JSON schema and [Business events catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page#business-event-catalog)
+3. Add new step from Actions tab to choose an operation named Parse JSON with schema to parse the Jason request. For more information to download JSON schema and [Business events catalog](../business-events/home-page.md#business-event-catalog)
 
 4. Add custom logic by including a logical condition to check if event is from the target batch job using Job ID.
 
@@ -54,14 +54,16 @@ Steps to automate using Power Automate:
 a.	Enter Dynamics 365 for Fin & Ops instance
 b.	Select action BatchJobs-SetBatchJobToWaiting from available options
 c.	Select the Job Id to rerun the failed job
+
 ![image](https://user-images.githubusercontent.com/90061039/148861040-fd70b5ee-5234-4158-8124-3767786e585c.png)
 
 6.	Save the flow
 
 Above configured flow will listen to the batch events and if the configured batch jobs fail flow will set the job back for execution. As best practice we recommend adding custom logic (refer to above example) to validate before retrying batch jobs to avoid unnecessary load on the system. We also suggest specifying a limit on max number of times a batch can be retried [recommended is 5].
-There are also other ways to subscribe to Business events and more details how to configure batch events, see [Batch business events](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/system-business-events)
+There are also other ways to subscribe to Business events and more details how to configure batch events, see [Batch business events](../business-events/system-business-events.md)
 
 Batch API endpoint and sample repsonse
+
 - **Service endpoint:** `https://<org url>/data/BatchJobs/Microsoft.Dynamics.DataEntities.SetBatchJobToWaiting`
 - **Method type:** POST
 - **Header:**
