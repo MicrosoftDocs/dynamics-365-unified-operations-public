@@ -391,25 +391,13 @@ To configure CRT extension components, follow these steps.
  ```
 
 ### Enable Hardware station extensions
-The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
+
 > [!NOTE]
 > For more information, see the [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) article.
 
 #### SatBrazil component
 
-1. Find the **HardwareStation.Extension.SatBrazil** project, and build it.
-1. In the **Extension.SatBrazil\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.FiscalPeripherals.SatBrazil.dll** assembly file.
-1. Copy the assembly file to the Hardware station extensions folder:
-
-    - **Shared hardware station:** Copy the file to the **bin** folder under the IIS Hardware station site location.
-    - **Dedicated hardware station on Modern POS:** Copy the file to the Modern POS client broker location.
-
-1. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
-
-    - **Shared hardware station:** The file is under the IIS Hardware station site location.
-    - **Dedicated hardware station on Modern POS:** The file is under the Modern POS client broker location.
-
-1. Add the following line to the **composition** section of the configuration file.
+To help guarantee that the Hardware Station loads the SAT extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
 
     ``` xml
 		<hardwareStationExtension>
