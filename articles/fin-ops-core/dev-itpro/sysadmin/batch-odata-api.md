@@ -19,9 +19,9 @@ ms.search.validFrom: 2021-10-21
 
 This topic provides information about the batch Open Data Protocol (OData) application programming interface (API) and explains how you can use OData to reschedule a job.
 
-In the existing [batch processing](batch-processing-overview.md) functionality, if some types of job failures need to be retried, either with or without any changes, based on the interpretation of the error, they must be manually. For jobs that are scheduled to be run during off-peak times to avoid active business hours for customers, monitoring failures and re-triggering the jobs requires either 24/7 support or a wait time until users resume work during normal business hours.
+In the existing [batch processing](batch-processing-overview.md) functionality, if some types of job failures have to be retried, either with or without any changes, based on the interpretation of the error, they must be manually retried. For jobs that are scheduled to be run during off-peak times to avoid active business hours for customers, monitoring failures and re-triggering the jobs requires either 24/7 support or a wait time until users resume work during normal business hours.
 
-## Business events integration with batch functionality
+## Integration of business events with batch functionality
 
 Business event capabilities enable customers to configure notifications about changes in state (started, failed, finished, or canceled) for batch jobs. Integration with [Microsoft Power Automate](../business-events/business-events-flow.md) lets customers capture information about affected jobs without having to sign in to the system. However, manual intervention is required if any action must be taken based on the business events.
 
@@ -33,39 +33,37 @@ In version 10.0.22, the batch functionality now provides an OData API that can b
 
 ![End-to-end automation.](https://user-images.githubusercontent.com/90061039/148861172-7ff123f4-1269-40c2-b32d-b49956824c0c.png)
 
-## Automate requeuing of failed batch jobs by using OData API
+## Automate requeuing of failed batch jobs by using the OData API
 
-The batch OData endpoint lets users consume and automate the end-to-end process to reschedule a batch job by using Power Automate or custom API. It supports updates of the batch job status from a started, failed, finished, or canceled state to a waiting state, based on business requirements.
+The batch OData endpoint lets users consume and automate the end-to-end process to reschedule a batch job by using Power Automate or custom APIs. It supports updates of the batch job status from a started, failed, finished, or canceled state to a waiting state, based on business requirements.
 
-Complete the following steps to automate using Power Automate.
+Follow these steps to automate requeuing of failed batch jobs by using Power Automate.
 
-1.	Login to [Power Automate](https://flow.microsoft.com) portal and create new flow following [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
+1. Sign in to the [Power Automate portal](https://flow.microsoft.com), and create a flow by following the instructions in [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
+2. Specify an event in Finance and Operations apps to start the flow. Enter the environment details, a business event category, a business event (such as **Batch Job Failed**), and an appropriate legal entity.
 
-2.	Specify an event Finance and Operations apps to start the flow and enter the environment details, business event category, business event as ‘Batch Job Failed’ and appropriate legal entity.
+    ![Specifying an event.](https://user-images.githubusercontent.com/90061039/148860987-578b8013-bad5-431d-8fa9-8a61be59889b.png)
 
-    ![Specify an event.](https://user-images.githubusercontent.com/90061039/148860987-578b8013-bad5-431d-8fa9-8a61be59889b.png)
+3. On the **Actions** tab, add a new step to select an operation that is named **Parse JSON with schema** to parse the JavaScript Object Notation (JSON) request. For more information about how to download a JSON schema, see [Business events catalog](../business-events/home-page.md#business-event-catalog).
+4. Add custom logic by including a logical condition that uses the job ID to determine whether the event is from the target batch job.
 
-3. Add new step from Actions tab to choose an operation named Parse JSON with schema to parse the Jason request. For more information to download JSON schema and [Business events catalog](../business-events/home-page.md#business-event-catalog)
+    ![Adding custom logic.](https://user-images.githubusercontent.com/90061039/148860962-4cef2156-8138-4c9c-bb8a-be22fee9382e.png)
 
-4. Add custom logic by including a logical condition to check if event is from the target batch job using Job ID.
+5. If the condition is evaluated as true, add an action by selecting an operation in Finance and Operations apps, and then selecting **Execute action** to trigger the batch OData action to set the job back for execution.
 
-    ![Add custom logic.](https://user-images.githubusercontent.com/90061039/148860962-4cef2156-8138-4c9c-bb8a-be22fee9382e.png)
+    1. Enter the Finance and Operations apps instance.
+    2. Select the **BatchJobs-SetBatchJobToWaiting** action.
+    3. Select the job ID to rerun the failed job.
 
-5. If above condition results to yes, then add an action by choosing an operation Finance and Opeerations apps and selecting Execute action to trigger batch OData action to set the job back to execution.
+    ![Adding an action.](https://user-images.githubusercontent.com/90061039/148861040-fd70b5ee-5234-4158-8124-3767786e585c.png)
 
-    1.	Enter the Finance and Operations instance.
-    2.	Select action **BatchJobs-SetBatchJobToWaiting** from available options.
-    3.	Select the job Id to rerun the failed job.
+6. Save the flow.
 
-    ![image](https://user-images.githubusercontent.com/90061039/148861040-fd70b5ee-5234-4158-8124-3767786e585c.png)
+The flow that you just configured will listen to the batch events. If the configured batch jobs fail, the flow will set the job back for execution. As a best practice, we recommend that you add custom logic (see the previous example) to perform validation before batch jobs are retried. In this way, you help prevent unnecessary load on the system. We also recommend that you specify a limit on the maximum number of times that a batch can be retried. (The recommended number of retries is 5.)
 
-6.	Save the flow.
+There are other ways to subscribe to business events. For more information, and for information about how to configure batch events, see [Batch business events](../business-events/system-business-events.md).
 
-Above configured flow will listen to the batch events and if the configured batch jobs fail flow will set the job back for execution. As best practice we recommend adding custom logic (refer to above example) to validate before retrying batch jobs to avoid unnecessary load on the system. We also suggest specifying a limit on max number of times a batch can be retried [recommended is 5].
-
-There are also other ways to subscribe to business events and more details how to configure batch events, see [Batch business events](../business-events/system-business-events.md).
-
-## Batch API endpoint and sample repsonse
+## Batch API endpoint and sample response
 
 - **Service endpoint:** `https://<org url>/data/BatchJobs/Microsoft.Dynamics.DataEntities.SetBatchJobToWaiting`
 - **Method type:** POST
