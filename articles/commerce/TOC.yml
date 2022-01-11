@@ -2535,8 +2535,9 @@
                 - name: Consume custom headless Commerce APIs and entities in POS
                   href: dev-itpro/pos-extension/consume-apis-pos.md
               - name: Extend
-                href: placeholder
                 items:
+                - name: Placeholder               
+                  href: placeholder-TBD.md
                 - name: Views
                   items:
                   - name: Add custom controls to POS views
