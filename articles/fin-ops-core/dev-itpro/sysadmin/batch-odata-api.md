@@ -43,13 +43,13 @@ Complete the following steps to automate using Power Automate.
 
 2.	Specify an event Finance and Operations apps to start the flow and enter the environment details, business event category, business event as ‘Batch Job Failed’ and appropriate legal entity.
 
-    ![image](https://user-images.githubusercontent.com/90061039/148860987-578b8013-bad5-431d-8fa9-8a61be59889b.png)
+    ![Specify an event.](https://user-images.githubusercontent.com/90061039/148860987-578b8013-bad5-431d-8fa9-8a61be59889b.png)
 
 3. Add new step from Actions tab to choose an operation named Parse JSON with schema to parse the Jason request. For more information to download JSON schema and [Business events catalog](../business-events/home-page.md#business-event-catalog)
 
 4. Add custom logic by including a logical condition to check if event is from the target batch job using Job ID.
 
-    ![image](https://user-images.githubusercontent.com/90061039/148860962-4cef2156-8138-4c9c-bb8a-be22fee9382e.png)
+    ![Add custom logic.](https://user-images.githubusercontent.com/90061039/148860962-4cef2156-8138-4c9c-bb8a-be22fee9382e.png)
 
 5. If above condition results to yes, then add an action by choosing an operation Finance and Opeerations apps and selecting Execute action to trigger batch OData action to set the job back to execution.
 
