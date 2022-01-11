@@ -3,7 +3,7 @@
 
 title: Estonia overview
 description: This topic provides an overview of functionality specific to Estonia.
-author: ShylaThompson
+author: kfend
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: "intro-internal"
 ms.search.region: Estonia
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
