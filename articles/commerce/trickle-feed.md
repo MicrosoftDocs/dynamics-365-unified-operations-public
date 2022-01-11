@@ -4,7 +4,7 @@
 title: Trickle feed-based order creation for retail store transactions
 description: This topic describes the trickle feed-based order creation for store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/14/2021
+ms.date: 01/11/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -52,7 +52,7 @@ Schedule the following jobs to run at a high frequency:
 
 Financial statement processing is intended to be an end-of-day process. This type of statement processing supports only the **Shift** closing method and will pick up only closed shifts. Statements are limited to financial reconciliation. They will create only the journals for the difference amounts between the counted amount and the transaction amount for tenders, and journals for other cash management transactions.
 
-Financial statements will also allow for the review of the following transactions: Tender declaration transactions, Payment transactions, Banked tender transactions, Safe tender transactions. The tender details form is only visible when a Financial statement has been selected.
+Financial statements also enable the review of the following transactions: tender declaration transactions, payment transactions, banked tender transactions, and safe tender transactions. The tender details page is only visible when a financial statement is selected.
 
 ![An image showing the tender details section of the posted statements form only when a financial statement is selected.](./media/Trickle-feed-posted-statements-transaction-view.png)
 
