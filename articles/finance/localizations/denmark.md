@@ -3,8 +3,8 @@
 
 title: Denmark overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Denmark. 
-author: ShylaThompson
-ms.date: 07/25/2019
+author: kfend
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: "intro-internal"
 ms.search.region: Denmark
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
