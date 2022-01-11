@@ -345,7 +345,7 @@ To configure CRT extension components, follow these steps.
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
- ```
+```
  
 3. Find the Web.config file for CRT.
 
@@ -365,13 +365,13 @@ To configure CRT extension components, follow these steps.
 
 6. Register the Local CRT on Modern POS change in the extension configuration file.
 
- ```xml
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil.Offline" />
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
- <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
- ```
+```xml
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil.Offline" />
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
+<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
+```
 
 > [!WARNING]
 > Don't edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
@@ -382,13 +382,13 @@ To configure CRT extension components, follow these steps.
 
 8. Register the Retail proxy on Modern POS change in the extension configuration file.
 
- ```xml
-		<retailProxyExtensions>
-		  <composition>
-		    <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.ElectronicFiscalDocumentBrazil" />
-		  </composition>
-		</retailProxyExtensions>
- ```
+```xml
+<retailProxyExtensions>
+ <composition>
+  <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.ElectronicFiscalDocumentBrazil" />
+ </composition>
+</retailProxyExtensions>
+```
 
 ### Enable Hardware station extension components
 
@@ -399,13 +399,13 @@ To configure CRT extension components, follow these steps.
 
 To help guarantee that the Hardware Station loads the SAT extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
 
- ```xml
-		<hardwareStationExtension>
-		  <composition>
-		    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
-		  </composition>
-		</hardwareStationExtension>
- ```
+```xml
+<hardwareStationExtension>
+ <composition>
+  <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
+ </composition>
+</hardwareStationExtension>
+```
 
 ### Enable Modern POS extension components
 
