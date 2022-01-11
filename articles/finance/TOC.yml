@@ -1463,81 +1463,81 @@
           - name: Tax Calculation FAQ
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Tax
+        items:
+        - name: Sales tax
           items:
-          - name: Sales tax
+          - name: Sales tax overview
+            href: general-ledger/indirect-taxes-overview.md
+          - name: Sales tax rates based on the marginal base and calculation methods
+            href: general-ledger/marginal-base-field.md
+          - name: Sales tax payments and rounding rules
+            href: general-ledger/round-sales-tax-payments.md
+          - name: Sales tax calculation methods in the Origin field
+            href: general-ledger/sales-tax-calculation-methods-origin-field.md
+          - name: Whole amount and interval calculation options for sales tax codes
+            href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+          - name: Sales tax calculation on general journal lines
+            href: general-ledger/sales-tax-calculation-on-general-journal.md          
+          - name: Calculate and adjust sales tax on a vendor invoice
+            href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+          - name: Enable delayed tax calculation on journal
+            href: general-ledger/enable-delayed-tax-calculation.md         
+          - name: Create a sales tax payment
+            href: general-ledger/tasks/create-sales-tax-payment.md
+          - name: Tax settlement rounding based on customized currency decimal places
+            href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
+          - name: Create sales tax transactions on documents
+            href: general-ledger/tasks/create-sales-tax-transactions-documents.md
+          - name: Set up ledger posting groups for sales tax
+            href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+          - name: Set up sales tax authorities
+            href: general-ledger/tasks/set-up-sales-tax-authorities.md
+          - name: Set up sales tax codes
+            href: general-ledger/tasks/set-up-sales-tax-codes.md
+          - name: Set up sales tax groups and item sales tax groups
+            href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+          - name: Set up sales tax reporting codes
+            href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+          - name: Dual currency support for sales tax
+            href: general-ledger/dual-currency-for-tax.md          
+          - name: Sales tax specification by ledger transaction report
+            href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+          - name: Set up sales tax settlement periods
+            href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+          - name: View posted sales tax transactions
+            href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
+          - name: Print the Sales tax payment by code report
+            href: general-ledger/print-sales-tax-payment-by-code-report.md
+          - name: Sales tax troubleshooting
             items:
-            - name: Sales tax overview
-              href: general-ledger/indirect-taxes-overview.md
-            - name: Sales tax rates based on the marginal base and calculation methods
-              href: general-ledger/marginal-base-field.md
-            - name: Sales tax payments and rounding rules
-              href: general-ledger/round-sales-tax-payments.md
-            - name: Sales tax calculation methods in the Origin field
-              href: general-ledger/sales-tax-calculation-methods-origin-field.md
-            - name: Whole amount and interval calculation options for sales tax codes
-              href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
-            - name: Sales tax calculation on general journal lines
-              href: general-ledger/sales-tax-calculation-on-general-journal.md          
-            - name: Calculate and adjust sales tax on a vendor invoice
-              href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-            - name: Enable delayed tax calculation on journal
-              href: general-ledger/enable-delayed-tax-calculation.md         
-            - name: Create a sales tax payment
-              href: general-ledger/tasks/create-sales-tax-payment.md
-            - name: Tax settlement rounding based on customized currency decimal places
-              href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
-            - name: Create sales tax transactions on documents
-              href: general-ledger/tasks/create-sales-tax-transactions-documents.md
-            - name: Set up ledger posting groups for sales tax
-              href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-            - name: Set up sales tax authorities
-              href: general-ledger/tasks/set-up-sales-tax-authorities.md
-            - name: Set up sales tax codes
-              href: general-ledger/tasks/set-up-sales-tax-codes.md
-            - name: Set up sales tax groups and item sales tax groups
-              href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-            - name: Set up sales tax reporting codes
-              href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-            - name: Dual currency support for sales tax
-              href: general-ledger/dual-currency-for-tax.md          
-            - name: Sales tax specification by ledger transaction report
-              href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-            - name: Set up sales tax settlement periods
-              href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-            - name: View posted sales tax transactions
-              href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
-            - name: Print the Sales tax payment by code report
-              href: general-ledger/print-sales-tax-payment-by-code-report.md
-            - name: Sales tax troubleshooting
-              items:
-              - name: Tax isn't calculated or the tax amount is zero
-                href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
-              - name: Tax calculation performance affects transactions
-                href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
-              - name: Incorrect field value in TaxTrans
-                href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
-              - name: TaxTrans record isn't generated
-                href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
-              - name: Tax is posted to the wrong ledger account in the voucher
-                href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
-              - name: Voucher isn't generated
-                href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
-          - name: Withholding tax
-            items:
-            - name: Set up withholding tax
-              href: general-ledger/tasks/set-up-withholding-tax.md
-            - name: Global withholding tax
-              items: 
-              - name: Global withholding tax overview
-                href: general-ledger/global-withholding-tax-overview.md
-              - name: Set up global withholding tax
-                href: general-ledger/set-up-global-withholding-tax.md
-              - name: Withholding tax in purchase transactions
-                href: general-ledger/withholding-tax-in-purchase-transactions.md
-              - name: Withholding tax in sales transactions
-                href: general-ledger/withholding-tax-in-sales-transactions.md
-              - name: Create a withholding tax payment
-                href: general-ledger/create-a-withholding-tax-payment.md
+            - name: Tax isn't calculated or the tax amount is zero
+              href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+            - name: Tax calculation performance affects transactions
+              href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+            - name: Incorrect field value in TaxTrans
+              href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+            - name: TaxTrans record isn't generated
+              href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+            - name: Tax is posted to the wrong ledger account in the voucher
+              href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+            - name: Voucher isn't generated
+              href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
+        - name: Withholding tax
+          items:
+          - name: Set up withholding tax
+            href: general-ledger/tasks/set-up-withholding-tax.md
+          - name: Global withholding tax
+            items: 
+            - name: Global withholding tax overview
+              href: general-ledger/global-withholding-tax-overview.md
+            - name: Set up global withholding tax
+              href: general-ledger/set-up-global-withholding-tax.md
+            - name: Withholding tax in purchase transactions
+              href: general-ledger/withholding-tax-in-purchase-transactions.md
+            - name: Withholding tax in sales transactions
+              href: general-ledger/withholding-tax-in-sales-transactions.md
+            - name: Create a withholding tax payment
+              href: general-ledger/create-a-withholding-tax-payment.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
