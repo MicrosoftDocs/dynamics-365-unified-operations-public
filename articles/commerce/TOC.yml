@@ -2416,16 +2416,16 @@
               items: 
               - name: Headless Commerce developer guide
                 href: headless-commerce-dev-guide-TBD.md
-                - name: Headless Commerce overview
-                  href: developer/headless-commerce-overview-TBD.md
-                - name: Commerce runtime (CRT) architecture and configuration
-                  href: dev-itpro/commerce-runtime-overview.md
-                - name: Commerce runtime (CRT) services
-                  href: dev-itpro/crt-services.md 
-                - name: Commerce runtime (CRT) extensibility
-                  href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Commerce Scale Unit customer and consumer APIs
-                  href: dev-itpro/retail-server-customer-consumer-api.md
+              - name: Headless Commerce overview
+                href: developer/headless-commerce-overview-TBD.md
+              - name: Commerce runtime (CRT) architecture and configuration
+                href: dev-itpro/commerce-runtime-overview.md
+              - name: Commerce runtime (CRT) services
+                href: dev-itpro/crt-services.md 
+              - name: Commerce runtime (CRT) extensibility
+                href: dev-itpro/commerce-runtime-extensibility.md
+              - name: Commerce Scale Unit customer and consumer APIs
+                href: dev-itpro/retail-server-customer-consumer-api.md
             - name: Create
               items:
               - name: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
@@ -2535,6 +2535,7 @@
                 - name: Consume custom headless Commerce APIs and entities in POS
                   href: dev-itpro/pos-extension/consume-apis-pos.md
               - name: Extend
+                href: placeholder
                 items:
                 - name: Views
                   items:
