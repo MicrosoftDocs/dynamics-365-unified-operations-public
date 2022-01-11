@@ -31,18 +31,17 @@ We recommended that you use this option when you want a batch job task always to
 
 Currently, if Finance and Operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
 
-All batch classes that are idempotent and produce same results even with multiple run are by default retryable. There is a idempotency flag that could be set in the batch class instance using classinstance.BatchInfo().parmIdempotent(boolean). 
+By default, all batch classes that are idempotent and produce same results even after multiple runs are retryable. You can set an idempotency flag in the batch class instance by using **classinstance.BatchInfo().parmIdempotent(boolean)**. 
 
-Because not all batch jobs might be idempotent (for example, when a batch runs credit card transactions), retries can't be enabled equally across all batch jobs. To help ensure that retries can safely be enabled, Microsoft has added metadata to the batch jobs to indicate whether they can automatically be retried. Between versions 10.0.18 and 10.0.19, more than 90 percent of the Microsoft batch jobs have explicitly implemented the **BatchRetryable** interface, and the **isRetryable** value has been set appropriately. For any jobs where the **BatchRetryable** interface isn't implemented, the default value of **isRetryable** is **False**.
+Because not all batch jobs might be idempotent (for example, when a batch runs credit card transactions), retries can't be enabled equally across all batch jobs. To help ensure that retries can be safely enabled, Microsoft has added metadata to the batch jobs to indicate whether they can automatically be retried. Between versions 10.0.18 and 10.0.19, more than 90 percent of the Microsoft batch jobs have explicitly implemented the **BatchRetryable** interface, and the **isRetryable** value has been set appropriately. For any jobs where the **BatchRetryable** interface isn't implemented, the default value of **isRetryable** is **False**.
 
 Retries are enabled only for jobs where the **BatchRetryable** interface is implemented and **isRetryable** is set to **True**. In this functionality, retries occur after any interruption of the SQL Server connection. Microsoft will continue to add retries on other exceptions.
 
-Precedence for retryable flag for a class evaluation is in order of isIdempotent flag, batch class override configuration and isRetryable flag. 
+Precedence for the retryable flag for a class evaluation is in the following order: the **isIdempotent** flag, the batch class override configuration, and the **isRetryable** flag. 
 
-1. If the **isIdempotent** flag is **True**, then task will be retried irrespective of other 2 flags. 
-2. If the **isIdempotent** is **False** and batch class override configuration is **True**, then task will be retried and if it is **False**, then it won't be retried as this is a override value.
-3. If **isIdempotent** is **False** and batch class override configuration is not implemented, then **isRetryable** is evaluated. If the value is **True**, then the task is retried and **False**, will not be retried.
-
+1. If the **isIdempotent** flag is **True**, the task will be retried, regardless of the other two flags. 
+2. If the **isIdempotent** is **False**, and the batch class override configuration is **True**, the task will be retried. If the batch class override configuration is **False**, the task won't be retried, because that value is an override value.
+3. If the **isIdempotent** flag is **False**, and the batch class override configuration isn't implemented, the **isRetryable** flag is evaluated. If the value is **True**, the task will be retried. If it's **False**, the task won't be retried.
 
 The maximum number of retries and the retry interval are controlled by the batch platform. The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
 
@@ -103,10 +102,10 @@ If your custom batch process is designed to run in multithreading (that is, if y
 ### What is the best practice for the execution time for a batch job?
 
 A batch job that has a shorter execution time is more likely to be successfully completed. Therefore, the need for a retry is avoided.
- 
+
 ### What is the best practice for the transaction size for a batch job?
 
-A batch job that has a smaller transaction size reduces the amount of work that can be lost because of a transient failure. Therefore, the need for a retry won't drastically increase the total execution time.
+A batch job that has a smaller transaction size reduces the amount of work that can be lost because of a transient failure. Therefore, the need for a retry won't drastically increase the total execution time.
 
 ### What does idempotent mean for a batch job?
 
