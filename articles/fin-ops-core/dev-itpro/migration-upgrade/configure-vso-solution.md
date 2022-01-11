@@ -31,7 +31,7 @@ The LCS code upgrade service automatically checks your upgraded code into Azure 
 
 ## Map Azure DevOps to your development box
 1.  In Visual Studio, open the **Team Explorer** window by selecting **View &gt; Team Explorer** from the top menu.
-2.  On the **Team Explorer** window, click the **Connect** icon, then select **Manage Connections > Connect to a Project**.
+2.  In the **Team Explorer** window, select **Connect**, and then select **Manage Connections > Connect to a Project**.
 3.  Follow the prompts to connect. From the list of available projects for your account, choose the project that you want to work on. Select **Connect**.
 4.  Now you need to map your workspace to the Azure DevOps folders. Go to the **Source Code Explorer** and do this mapping:
     1.  Projects &gt;
