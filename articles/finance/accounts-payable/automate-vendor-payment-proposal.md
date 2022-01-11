@@ -40,7 +40,7 @@ Organizations that pay vendors on a recurring schedule can now automate the proc
 Payment proposal automations don't automatically post the payments. Therefore, you can continue to use any validation and workflow processes that you currently use to approve the payments that are created.
 
 > [!NOTE]
-> Be careful to enable **Vendor payment proposal automation** feature in **Features management** workspace to be able to follow the next steps.
+> You need to enable the **Vendor payment proposal automation** feature in the **Feature management** workspace in order to use the following features.
 
 ## Define the occurrence of vendor payment proposals
 
