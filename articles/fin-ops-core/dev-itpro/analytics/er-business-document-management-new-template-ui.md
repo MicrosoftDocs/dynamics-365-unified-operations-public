@@ -55,15 +55,30 @@ Follow these steps to turn on this feature for all legal entities.
 
 ## Add or activate a provider
 
-Each template of a business document is stored in an ER format configuration that is marked as owned by a specific configuration provider. When you create a new template, a new ER format configuration is created to hold it. Therefore, a provider must be identified for that configuration. The active provider of the ER framework is used for this purpose. If there is no provider in ER, you can create one. If there is no *active* provider, you can activate one of the existing providers.
+Each template of a business document is stored in an ER format configuration that is marked as owned by a specific configuration provider. When you create a new template, a new ER format configuration is created to hold it. Therefore, a provider must be identified for that configuration. The active provider of the ER framework is used for this purpose. If there is no provider in ER, you can create one. If there is no *active* provider, you can activate one of the existing providers. A dialog for adding or activating a provider is opened when it is necessary whereas you start adding a new template.
 
-- To create a new provider, change the name of the provider in the **Name** field, update the internet address (URL) of the new provider in the **Internet address** field, and the select **OK**.
+### Add a new provider
+
+To create a new provider, follow these steps on the **Configuration provider** dialog:
+
+1.  On the **Choose configuration provider** tab, in the **Name** field, enter the name of the new provider.
+2.  In the **Internet address** field, enter the internet address (URL) of the new provider. 
+3.  Select **OK**.
 
     ![Creating a new provider in Business Document Management.](./media/bdm_create_provider.png)
 
-- To activate an existing provider, select the name of the provider in the **Configuration provider** field, and then select **OK** to mark the provider as active.
+The added provider will be automatically activated.
+
+### Activate a provider
+
+To activate a provider, follow these steps on the **Configuration provider** dialog:
+
+1.  On the **Choose configuration provider** tab, in the **Configuration provider** field, select the provider.
+2.  Select **OK**.
 
     ![Activating a provider in Business Document Management.](./media/bdm_choose_provider.png)
+
+The selected provider will be activated.
 
 > [!NOTE]
 > Each Business document management template is located in an ER format configuration that refers to the provider as configuration author. Therefore, an active provider is required for each template.
