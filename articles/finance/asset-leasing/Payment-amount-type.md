@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up the **Payment amount types** in Asset leasing. This will help itemize the lease payment amount rather than add the lumpsum amount 
+This topic describes how to set up the **Payment amount types** in Asset leasing. This will help itemize the lease payment amount rather than add the lump sum amount 
 in the **Payment schedule lines**.
 
 Add payment amount types
