@@ -1940,6 +1940,8 @@
           href: localizations/emea-est-personal-info.md
         - name: VAT statement
           href: localizations/emea-est-vat-statement-details.md
+        - name: Estonian Intrastat
+          href: localizations/emea-est-intrastat.md         
       - name: Europe
         items:
         - name: Europe overview
