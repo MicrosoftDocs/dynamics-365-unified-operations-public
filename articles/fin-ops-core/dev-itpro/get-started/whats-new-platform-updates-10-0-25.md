@@ -1,28 +1,28 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.24 of Finance and Operations apps 
-description: This topic lists the features that are included in the platform updates for version 10.0.24 of Finance and Operations apps.
+title: Platform updates for version 10.0.25 of Finance and Operations apps 
+description: This topic lists the features that are included in the platform updates for version 10.0.25 of Finance and Operations apps.
 author: sericks007
-ms.date: 11/15/2021
+ms.date: 01/11/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2021-11-30
+ms.search.validFrom: 2022-01-31
 
 ---
-# Platform updates for version 10.0.24 of Finance and Operations apps
+# Platform updates for version 10.0.25 of Finance and Operations apps
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the features that are included in the platform updates for version 10.0.24 of Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
+This topic lists the features that are included in the platform updates for version 10.0.25 of Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
 
-- **Preview of release:** December 2021
-- **General availability of release (self-update):** January 2022
-- **General availability of release (auto-update):** February 2022
+- **Preview of release:** January 2022
+- **General availability of release (self-update):** February 2022
+- **General availability of release (auto-update):** March 2022
 
 ## Features included in this release
 
