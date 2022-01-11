@@ -1,4 +1,20 @@
-﻿# Danish Intrastat
+---
+# required metadata
+
+title: Danish Intrastat
+description: This topic contains information about the Danish Intrastat report.
+author: andosip
+ms.date: 01/11/2022
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+# Danish Intrastat
+
+[!include [banner](../includes/banner.md)]
 
 You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries. The Danish Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -23,12 +39,10 @@ The following fields are included in the Danish Intrastat declaration.
 To set up Intrastat, import the latest version of the following Electronic reporting (ER) configurations:
 
 -   Intrastat model
-
 -   Intrastat report
-
 -   Intrastat (DK)
 
-For more information, see Download ER configurations from the Global repository of Configuration service.
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ### Set up foreign trade parameters
 
@@ -62,24 +76,14 @@ For more information, see Download ER configurations from the Global repository 
 
 -   Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Danish Intrastat, select the following fields:
 
-<!-- -->
-
 -   Commodity
-
 -   Transaction code
-
 -   Country/region of origin
-
 -   Direction
-
 -   Tax exempt number
-
 -   Country/region
-
 -   Country/region of sender
-
 -   Correction
-
 -   Invoice
 
 ### Set up the VAT number of the trading partner
@@ -100,7 +104,7 @@ For more information, see Download ER configurations from the Global repository 
 
 8.  On the customer page, on the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select the registration ID that you created earlier.
 
-For more information about registration IDs, see Registration IDs.
+For more information about registration IDs, see [Registration IDs](emea-registration-ids.md).
 
 ## Intrastat transfer
 
@@ -131,9 +135,7 @@ The following example shows how to set up Danish Intrastat and create the Intras
 1.  Import the latest version of the following ER configurations:
 
 -   Intrastat model
-
 -   Intrastat report
-
 -   Intrastat (DK)
 
 2.  Go to **Organization administration** &gt; **Organization** &gt; **Legal entities**, and select the **DEMF** legal entity.
@@ -345,3 +347,5 @@ The following example shows how to set up Danish Intrastat and create the Intras
 15. Review the generated Excel report.
 
 ![Intrastat report on arrivals](media/intrastat_dk_6.png)
+    
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
