@@ -4,7 +4,7 @@
 title: Create ER configurations in RCS and upload them to the Global repository
 description: This topic explains how to create an Electronic reporting (ER) configuration in Microsoft Regulatory Configuration Services (RCS) and upload it to the Global repository.
 author: JaneA07
-ms.date: 09/21/2020
+ms.date: 01/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,26 +40,26 @@ Before you can complete those procedures, you must complete the following prereq
 - Have access to an RCS environment for your organization.
 - Create an active configuration provider and make it active. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-You must make sure that an RCS environment is provisioned for your organization. If you do not have an RCS instance provisioned for your organization you can do so from using the following steps:
+You must make sure that an RCS environment is provisioned for your organization. If you do not have an RCS instance provisioned for your organization, you can do so using the following steps:
 
 1. In a Finance and Operations app, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. In **Related links / External links** select **Regulatory services – Configuration**, and then follow the instructions to **Sign up** to provision one.
+2. In **Related links / External links**, select **Regulatory services – Configuration**, and then follow the instructions to **Sign up** to provision one.
 
 If an RCS environment has been already provisioned for your organization, use the page URL to access it and select the **sign-in** option.
 
 ## Create a derived version of a configuration in RCS
 
 > [!NOTE]
-> If this is the first time that you have used RCS you will not have any configuration available for you to derive from. You will need to import configuration from the Global repository, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+> If this is the first time that you have used RCS you will not have any configuration available for you to derive from. You will need to import a configuration from the Global repository. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-1. **Sign-in** to RCS and click on the **Electronic reporting** workspace.
+1. **Sign-in** to RCS and select the **Electronic reporting** workspace.
 2. Verify that you have an active configuration provider for your organization that is set to active (see prerequisites). 
 3. Select **Reporting configurations**.
 4. Select the configuration that you want to derive a new version from. You can use the filter field above the tree to narrow your search.
 5. Select **Create configuration** \> **Derive from Name**.
-6. Enter a name and description, and then select **Create configuration** to create a new derived version with status 'Draft'.
-7. Select the newly derived configuration and make any changes to the configuration format that you require. 
-8. Once your changes are finished you need to **Change status** of the configuration to **Completed** to be able to publish it to the repository. Click **Ok**.
+6. Enter a name and description, and then select **Create configuration** to create a new derived version with a 'Draft' status.
+7. Select the newly derived configuration and make additional changes to the configuration format, if needed. 
+8. After your changes are complete you need to set **Change status** for the configuration to **Completed** to be able to publish it to the repository. Select **OK**.
 
 ![New configuration version in RCS.](media/RCS_CompleteConfig.JPG)
 
@@ -68,7 +68,7 @@ If an RCS environment has been already provisioned for your organization, use th
 
 ## Upload a configuration to the Global repository
 
-To share a new or derived configuration with your organization, you can upload it into the Global repository by taking the following steps:
+To share a new or derived configuration with your organization, you can upload it into the Global repository by following these steps:
 
 1. Select the completed version of the configuration, and then select **Upload into repository**.
 2. Select the **Global (Microsoft)** option, and then select **Upload**.
@@ -78,9 +78,9 @@ To share a new or derived configuration with your organization, you can upload i
 3. In the confirmation message box, select **Yes**. 
 4. Update the description of the version as required, and then select **OK**. You can also optionally upload the version to a connected application or to a GIT repository.  
 
-The status of the configuration is updated to **Shared**, and the configuration is uploaded to the Global repository. A draft version of the configuration you upoad is also created and can be used if subsequent changes are required.
+The status of the configuration is updated to **Shared**, and the configuration is uploaded to the Global repository. A draft version of the configuration you uploaded is also created and can be used if subsequent changes are required.
 
-After the configuration has been updloaded to Global repository, you can work with it there in the following ways:
+After the configuration has been uploaded to the Global repository, you can work with it there in the following ways:
 
 - Import it into your Dynamics 365 instance. For more information, see [(ER) Import configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Share it with a third party or an external organization, see [RCS Share Electronic reporting (ER) configurations with external organizations](rcs-global-repo-share-configuration.md)
