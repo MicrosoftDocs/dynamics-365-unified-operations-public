@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Service-to-Service authentication
-description: This topic describes how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call ratings and reviews service APIs.
+description: This topic describes how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call service APIs for ratings and reviews.
 author: gvrmohanreddy
 ms.date: 12/28/2021
 ms.topic: article
@@ -17,35 +17,38 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure Service-to-Service (S2S) authentication in Microsoft Dynamics 365 Commerce to securely call ratings and reviews service APIs.
+This topic describes how to configure Service-to-Service (S2S) authentication in Microsoft Dynamics 365 Commerce to securely call service application programming interfaces (APIs) for ratings and reviews.
 
-Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution that allows access to service APIs from outside of Commerce to perform tasks such as importing ratings and reviews from your external system into Commerce or exporting ratings and reviews from Commerce. To enable Commerce to securely call ratings and reviews service APIs, you must first configure S2S authentication by following the procedures below. 
+Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution. This solution enables access to service APIs from outside Commerce, so that various tasks can be performed. These tasks include importing ratings and reviews from your external system into Commerce, and exporting ratings and reviews from Commerce. To enable Commerce to securely call ratings and reviews service APIs, you must first configure S2S authentication by completing the procedures in this topic.
 
 ## Add a new app registration
 
-Before you add a new app registration, you must first create an application using the [Azure Portal](https://portal.azure.com). To register an app on Azure Active Directory and enable authentication, follow the steps in [Use Azure Active Directory with a custom connector in Power Automate](/connectors/custom-connectors/azure-active-directory-authentication) . 
+Before you add a new app registration, you must create an application by using the [Azure portal](https://portal.azure.com). To register an app in Azure Active Directory (Azure AD) and enable authentication, follow the steps in [Use Azure Active Directory with a custom connector in Power Automate](/connectors/custom-connectors/azure-active-directory-authentication).
 
-Collect the following IDs from the Azure portal to be used in the following steps.
+Collect the following IDs from the Azure portal. You will need these IDs in the steps that follow.
+
 - Client application ID
-- Client directory (tenant) ID.
+- Client directory (tenant) ID
 
 To add a new app registration in Commerce site builder, follow these steps.
 
 1. Go to **Home \> Reviews \> Settings**.
 1. Under **Service-to-Service (S2S) Authentication**, select **Manage**.
 
-    ![Service-to-Service (S2S) Authentication section in site builder](media/Ratings-reviews-settings-service-to-service-authentication.png)
+    ![Manage button in the Service-to-Service (S2S) Authentication section in Commerce site builder.](media/Ratings-reviews-settings-service-to-service-authentication.png)
 
-1. In the **S2S App Entries** flyout pane that appears on the right, select **Add a new S2S App Registration**.
-1. In the **Add S2S App Entry** dialog box, enter the following required items using values from your Azure application registration.
-    - **Name**: The name for your application, for example "Fabrikam App".
-    - **Client App ID**: The application ID, for example “00000000-0000-0000-0000-000000000000”
-    - **Directory (Tenant) ID**: The directory ID, for example “00000000-0000-0000-0000-000000000000”
-1. Select **Submit**. You should now see the name of your application appear in the list on the **S2S App Entries** pane.
+1. In the **S2S App Entries** pane that appears on the right, select **Add a new S2S App Registration**.
+1. In the **Add S2S App Entry** dialog box, enter the following required information. Use the values from your Azure application registration.
+
+    - **Name** – Enter the name of your application (for example, **Fabrikam App**).
+    - **Client App ID** – Enter the application ID (for example **00000000-0000-0000-0000-000000000000**).
+    - **Directory (Tenant) ID** – Enter the directory ID (for example, **00000000-0000-0000-0000-000000000000**).
+
+    ![Add S2S App Entry dialog box in Commerce site builder.](media/Ratings-reviews-settings-S2S-APP-entry.png)
+
+1. Select **Submit**. The name of your application should appear in the list in the **S2S App Entries** pane.
 1. Close the **S2S App Entries** pane.
 1. Select **Save**.
- 
-![The Add S2S App Entry dialog box in site builder](media/Ratings-reviews-settings-S2S-APP-entry.png)
 
 ## Edit an existing app registration
 
@@ -53,8 +56,8 @@ To edit an existing app registration in Commerce site builder, follow these step
 
 1. Go to **Home \> Reviews \> Settings**.
 1. Under **Service-to-Service (S2S) Authentication**, select **Manage**.
-1. In the **S2S App Entries** flyout pane, select the pencil symbol next to the entry you want to edit.
-1. Update values for **Name**, **Client App ID**, and **Directory (Tenant) ID** as needed.
+1. In the **S2S App Entries** pane, select the pencil symbol next to the entry that you want to edit.
+1. Update values in the **Name**, **Client App ID**, and **Directory (Tenant) ID** fields as required.
 1. Select **Submit**.
 1. Close the **S2S App Entries** pane.
 1. Select **Save**.
@@ -65,7 +68,7 @@ To remove an existing app registration in Commerce site builder, follow these st
 
 1. Go to **Home \> Reviews \> Settings**.
 1. Under **Service-to-Service (S2S) Authentication**, select **Manage**.
-1. In the **S2S App Entries** flyout pane, select the trashcan symbol next to the entry you wish to remove. The entry will be removed from the list.
+1. In the **S2S App Entries** pane, select the trashcan symbol next to the entry that you want to remove. The entry is removed from the list.
 1. Close the **S2S App Entries** pane.
 1. Select **Save**.
 
@@ -80,4 +83,3 @@ To remove an existing app registration in Commerce site builder, follow these st
 [Import and export ratings and reviews](import-export-reviews.md)
 
 [Ratings and reviews FAQ](ratings-reviews-faq.md) 
-
