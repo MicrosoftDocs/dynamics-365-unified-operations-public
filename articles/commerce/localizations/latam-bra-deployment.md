@@ -399,7 +399,7 @@ To configure CRT extension components, follow these steps.
 
 To help guarantee that the Hardware Station loads the SAT extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
 
-    ``` xml
+    ```xml
 		<hardwareStationExtension>
 			<composition>
 				<add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
