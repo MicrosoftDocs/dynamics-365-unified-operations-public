@@ -33,6 +33,7 @@ This topic includes information and links to resources that should be considered
 
 -   [VAT statement details for Estonia](emea-est-vat-statement-details.md)
 -   [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)
+-   [Estonian Intrastat](emea-est-intrastat.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Estonia report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Estonia.html)
