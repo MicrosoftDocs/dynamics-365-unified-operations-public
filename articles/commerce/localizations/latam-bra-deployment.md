@@ -4,7 +4,7 @@
 title: Set up and deploy the Dynamics 365 Commerce localization for Brazil
 description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 author: akviklis
-ms.date: 12/01/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -170,13 +170,13 @@ To set up a retail store in Commerce headquarters, follow these steps.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler**.
 1. Add the stores that you created earlier to the channel database that is used.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
-1. Create POS registers, and set the following Brazil-specific fields depending on the Fiscal operation mode:
+1. Create POS registers and set the following Brazil-specific fields depending on the fiscal operation mode:
 
-    - **Fiscal operation mode**: select NFC-e or CF-e
-	- **NFC-e series**: if NFC-e is selected in the Fiscal operation mode field, enter the NFC-e series 
-    - **NFC-e contingency series**: if NFC-e is selected in the Fiscal operation mode field, enter the NFC-e series for offline contingency mode.
-    - **NF-e series**: enter the NF-e series to be used when issuing NF-e documents for returns. 
-	- **Register number for CF-e**: enter the number of the POS register that is connected to the SAT. It exists to comply with the tag “numeroCaixa” in the XML from the CF-e. Two or more POS register cannot have the same Register number for CF-e
+    - **Fiscal operation mode**: Select NFC-e or CF-e
+	- **NFC-e series**: If NFC-e is selected in the **Fiscal operation mode** field, enter the NFC-e series. 
+    - **NFC-e contingency series**: If NFC-e is selected in the **Fiscal operation mode** field, enter the NFC-e series for offline contingency mode.
+    - **NF-e series**: Enter the NF-e series to be used when issuing NF-e documents for returns. 
+	- **Register number for CF-e**: Enter the number of the POS register that is connected to the SAT. This register number exists to comply with the "numeroCaixa" tag in the CF-e XML. Two or more POS registers cannot have the same register number for CF-e.
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**.
 1. Create and configure devices for the POS registers that you just created.
@@ -215,19 +215,17 @@ To set up the fiscal registration process in Commerce headquarters, follow these
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**.
-1. For each document provider that you just loaded the configuration for, create connector functional profiles and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
-   In case of settings for SAT, fill in the **Key Vault activation code secret name** and **POS Signature for SAT** fields.
+1. For each document provider that you just loaded the configuration for, create connector functional profiles and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required. In case settings for SAT are needed, fill in the **Key Vault activation code secret name** and **POS Signature for SAT** fields.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
-1. Create connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required (**for NFC-e**, configure **Connector type = Internal**).
-   In case of settings **for SAT**, configure the **Connector name** for SAT device (**Connector type = Local**) and specify the **SAT library path** string including the dll-file name.
+1. Create connector technical profiles and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required (**for NFC-e**, configure **Connector type = Internal**). In case settings for SAT are needed, configure the **Connector name** for the SAT device (**Connector type = Local**) and specify the **SAT library path** string including the dll file name.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**.
-1. Create fiscal connector groups, one for each connector functional profile that you created earlier including SAT.
+1. Create fiscal connector groups, one for each connector functional profile that you created earlier (including SAT).
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**.
 1. Create a registration process. As registration steps, select the fiscal connector groups that you just created.
-1. Create a separate registration process for SAT device.
+1. Create a separate registration process for the SAT device.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. Select the functionality profile that is linked to the store where the registration process should be activated, and then, on the **Fiscal registration process** FastTab, select the registration process number that you just created.
-1. Create a separate functionality profile for SAT device.
+1. Create a separate functionality profile for the SAT device.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 1. Select a hardware profile that is linked to the hardware station that the fiscal printer will be connected to.
 1. Create a separate hardware profile for SAT device.
@@ -322,9 +320,13 @@ To configure a certificate in AOS, follow these steps.
 
 ### Set up SAT activation code
 
-The activation code enables the communication between the POS register and the SAT device. The SAT hardware is an attribute that must be associated to the POS register. It contains the activation code by SAT serial number entered during the SAT device activation. In order to create the SAT hardware:
+The SAT activation code enables communication between the POS register and the SAT device. The SAT hardware attribute contains the activation code for the SAT serial number entered during the SAT device activation, and must be associated with the POS register. 
+
+To create the SAT hardware attribute, follow these steps.
+
 1. Go to **System administration \> Setup \> Key Vault parameters**.
-1. Create a record for the SAT activation code. Then add a secret named **ActivationCode**, and in the field **Secret** enter a value, and select the **Secret type = Manual**. 
+1. Create a record for the SAT activation code.  
+1. Add a secret named **ActivationCode**, enter a value in the field **Secret**, and then select the **Secret type = Manual**.
 
 ### Configure CRT extension components
 
@@ -397,7 +399,7 @@ To configure CRT extension components, follow these steps.
 
 #### SatBrazil component
 
-To help guarantee that the Hardware Station loads the SAT extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
+To help guarantee that the Hardware station loads the SAT extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
 
 ```xml
 <hardwareStationExtension>
