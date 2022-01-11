@@ -31,7 +31,7 @@ For information about how to configure batch events, see [Batch business events]
 
 In version 10.0.22, the batch functionality now provides an OData API that can be used to requeue batch jobs. Customers can use the OData endpoint to requeue batch jobs that are in a terminal state. This feature can be integrated with any automation by using Power Automate, custom APIs, and so on.
 
-![End-to-end automation.](https://user-images.githubusercontent.com/90061039/149026777-def9b2fa-4dbc-4a0c-8fdd-432564a4e114.png)
+![End-to-end automation.](./media/end-to-end-automation.png)
 
 
 ## Automate requeuing of failed batch jobs by using the OData API
@@ -43,12 +43,12 @@ Follow these steps to automate requeuing of failed batch jobs by using Power Aut
 1. Sign in to the [Power Automate portal](https://flow.microsoft.com), and create a flow by following the instructions in [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
 2. Specify an event in Finance and Operations apps to start the flow. Enter the environment details, a business event category, a business event (such as **Batch Job Failed**), and an appropriate legal entity.
 
-    ![Specifying an event.](https://user-images.githubusercontent.com/90061039/148860987-578b8013-bad5-431d-8fa9-8a61be59889b.png)
+    ![Specifying an event.](./media/business-event-occurs.png)
 
 3. On the **Actions** tab, add a new step to select an operation that is named **Parse JSON with schema** to parse the JavaScript Object Notation (JSON) request. For more information about how to download a JSON schema, see [Business events catalog](../business-events/home-page.md#business-event-catalog).
 4. Add custom logic by including a logical condition that uses the job ID to determine whether the event is from the target batch job.
 
-    ![Adding custom logic.](https://user-images.githubusercontent.com/90061039/148860962-4cef2156-8138-4c9c-bb8a-be22fee9382e.png)
+    ![Adding custom logic.](./media/condition.png)
 
 5. If the condition is evaluated as true, add an action by selecting an operation in Finance and Operations apps, and then selecting **Execute action** to trigger the batch OData action to set the job back for execution.
 
@@ -56,7 +56,7 @@ Follow these steps to automate requeuing of failed batch jobs by using Power Aut
     2. Select the **BatchJobs-SetBatchJobToWaiting** action.
     3. Select the job ID to rerun the failed job.
 
-    ![Adding an action.](https://user-images.githubusercontent.com/90061039/149027222-c1283b05-9f40-4759-9687-d9f0790dbf86.png)
+    ![Adding an action.](./media/execute-odata-api.png)
 
 
 6. Save the flow.
