@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 Commerce version 10.0.5 and later, we recommend that you transition all statement posting processes to the trickle feed–based statement posting processes. Significant performance and business benefits are associated with using the trickle feed functionality. Sales transactions are processed throughout the day. Tender and cash management transactions are processed on the financial statement at the end of the day. Trickle feed functionality enables the continuous processing of sales orders, invoices, and payments. Therefore, inventory, revenue, and payments can be updated and recognized in near-real time.
+In Microsoft Dynamics 365 Commerce version 10.0.5 and later, we recommend that you transition all statement posting processes to the trickle feed–based statement posting processes. Significant performance and business benefits are associated with using the trickle feed functionality. Sales transactions are processed throughout the day. Tender and cash management transactions are processed on the financial statement at the end of the day. Trickle feed functionality enables the continuous processing of sales orders, invoices, and payments. Therefore, inventory, revenue, and payments are updated and recognized in near-real time.
 
 ## Use trickle feed-based posting
 
@@ -41,7 +41,7 @@ To enable trickle feed–based posting of retail transactions, enable the **Reta
 
 ### Transactional statements
 
-Transactional statement processing is intended to be run at a high frequency throughout the day, so that documents are created when transactions are uploaded into Commerce headquarters. Transactions are loaded from the stores to Commerce headquarters when you run the **P-Job**. You must also run the **Validate store transactions** job to validate transactions so that the transactional statement will pick them up.
+Transactional statement processing is intended to be run at a high frequency throughout the day so that documents are created when transactions are uploaded into Commerce headquarters. Transactions are loaded from the stores to Commerce headquarters when you run the **P-Job**. You must also run the **Validate store transactions** job to validate transactions so that the transactional statement will pick them up.
 
 Schedule the following jobs to run at a high frequency:
 
@@ -51,6 +51,10 @@ Schedule the following jobs to run at a high frequency:
 ### Financial statements
 
 Financial statement processing is intended to be an end-of-day process. This type of statement processing supports only the **Shift** closing method and will pick up only closed shifts. Statements are limited to financial reconciliation. They will create only the journals for the difference amounts between the counted amount and the transaction amount for tenders, and journals for other cash management transactions.
+
+Financial statements will also allow for the review of the following transactions: Tender declaration transactions, Payment transactions, Banked tender transactions, Safe tender transactions. The tender details form is only visible when a Financial statement has been selected.
+
+![An image showing the tender details section of the posted statements form only when a financial statement is selected.](./media/Trickle-feed-posted-statement-transaction-view.png)
 
 Schedule the start and end times of the following financial statement jobs based on the expected end of the day:
 
