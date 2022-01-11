@@ -462,3 +462,5 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 16. Review the report in Excel format that is generated.
 
 ![Intrastat report on arrivals](media/intrastat_ee_6.png)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
