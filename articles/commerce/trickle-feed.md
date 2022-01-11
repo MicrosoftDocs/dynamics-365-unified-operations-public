@@ -54,7 +54,7 @@ Financial statement processing is intended to be an end-of-day process. This typ
 
 Financial statements will also allow for the review of the following transactions: Tender declaration transactions, Payment transactions, Banked tender transactions, Safe tender transactions. The tender details form is only visible when a Financial statement has been selected.
 
-![An image showing the tender details section of the posted statements form only when a financial statement is selected.](./media/Trickle-feed-posted-statement-transaction-view.png)
+![An image showing the tender details section of the posted statements form only when a financial statement is selected.](./media/Trickle-feed-posted-statements-transaction-view.png)
 
 Schedule the start and end times of the following financial statement jobs based on the expected end of the day:
 
