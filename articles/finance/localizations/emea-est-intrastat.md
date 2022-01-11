@@ -1,4 +1,20 @@
-﻿# Estonian Intrastat
+---
+# required metadata
+
+title: Estonian Intrastat
+description: This topic contains information about the Estonian Intrastat report.
+author: andosip
+ms.date: 01/11/2022
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+# Estonian Intrastat
+
+[!include [banner](../includes/banner.md)]
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Estonian Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -36,7 +52,7 @@ From the Global repository, import the latest version of the following Electroni
 
 -   Intrastat (EE)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](file:///C:\Users\fin-ops-core\dev-itpro\analytics\er-download-configurations-global-repo.md).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ### Set up VAT IDs
 
@@ -82,7 +98,7 @@ You must create VAT ID registration types for all the countries or regions that 
 
 7.  On the Action Pane, select **Save**. Then close the page.
 
-For more information, see [Registration IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
+For more information, see [Registration IDs](emea-registration-ids.md).
 
 Alternatively, you can create a customer's VAT registration number on the **Tax exempt number** page.
 
@@ -137,21 +153,13 @@ Alternatively, you can create a customer's VAT registration number on the **Tax 
 Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Estonian Intrastat, select the following fields:
 
 -   Commodity
-
 -   Transaction code
-
 -   Country/region of origin
-
 -   Country/region of sender
-
 -   Correction
-
 -   Country/region
-
 -   Tax exempt number
-
 -   Invoice
-
 -   Direction
 
 ## Intrastat transfer
