@@ -70,8 +70,8 @@ To set up electronic reporting in Commerce headquarters, follow these steps.
     - NFC-e contingency export format (BR)
     - NFC-e fiscal documents mapping
     - NFC-e fiscal documents validation format (BR)
-	- CF-e submit export format (BR)
-	- CF-e cancel export format (BR)
+    - CF-e submit export format (BR)
+    - CF-e cancel export format (BR)
 
 1. Go to **Organization administration \> Workspaces \> Electronic reporting**, and select **Reporting configurations**.
 1. Select **Fiscal documents mapping**, and then set the **Default model mapping** option to **No**.
@@ -170,13 +170,13 @@ To set up a retail store in Commerce headquarters, follow these steps.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler**.
 1. Add the stores that you created earlier to the channel database that is used.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
-1. Create POS registers and set the following Brazil-specific fields depending on the fiscal operation mode:
+1. Create POS registers, and set the following Brazil-specific fields, depending on the fiscal operation mode:
 
-    - **Fiscal operation mode**: Select NFC-e or CF-e
-	- **NFC-e series**: If NFC-e is selected in the **Fiscal operation mode** field, enter the NFC-e series. 
-    - **NFC-e contingency series**: If NFC-e is selected in the **Fiscal operation mode** field, enter the NFC-e series for offline contingency mode.
-    - **NF-e series**: Enter the NF-e series to be used when issuing NF-e documents for returns. 
-	- **Register number for CF-e**: Enter the number of the POS register that is connected to the SAT. This register number exists to comply with the "numeroCaixa" tag in the CF-e XML. Two or more POS registers cannot have the same register number for CF-e.
+    - **Fiscal operation mode** – Select **NFC-e** or **CF-e**.
+	- **NFC-e series** – If you selected **NFC-e** in the **Fiscal operation mode** field, enter the NFC-e series. 
+    - **NFC-e contingency series** – If you selected **NFC-e** in the **Fiscal operation mode** field, enter the NFC-e series for offline contingency mode.
+    - **NF-e series** – Enter the NF-e series to use when NF-e documents are issued for returns. 
+    - **Register number for CF-e** – Enter the number of the POS register that is connected to SAT. This register number exists to comply with the **numeroCaixa** tag in the CF-e XML. Two or more POS registers can't have the same register number for CF-e.
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**.
 1. Create and configure devices for the POS registers that you just created.
@@ -199,25 +199,30 @@ In the receipt format designer, add Brazilian custom fields to the appropriate r
 To set up the fiscal registration process in Commerce headquarters, follow these steps. For more information, see [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md).
 
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
+
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
     1. Open the last available release branch (for example, [release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31)).
     1. Open **src \> FiscalIntegration \> ElectronicFiscalDocumentsBrazil**.
     1. Download the fiscal connector configuration files at **Configurations \> Connectors** (for example, [the files for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/Connectors)):
+
         - SubmitConnector.xml
         - SatConnector.xml
         - ContingencyConnector.xml
+
     1. Download the fiscal document provider configuration files at **Configurations \> DocumentProviders** (for example, [the files for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)):
+
         - SubmitProvider.xml
         - SatProvider.xml
         - ContingencyProvider.xml
+
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**.
-1. For each document provider that you just loaded the configuration for, create connector functional profiles and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required. In case settings for SAT are needed, fill in the **Key Vault activation code secret name** and **POS Signature for SAT** fields.
+1. For each document provider that you just loaded the configuration for, create connector functional profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required. If settings for SAT are needed, set the **Key Vault activation code secret name** and **POS Signature for SAT** fields.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
-1. Create connector technical profiles and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required (**for NFC-e**, configure **Connector type = Internal**). In case settings for SAT are needed, configure the **Connector name** for the SAT device (**Connector type = Local**) and specify the **SAT library path** string including the dll file name.
+1. Create connector technical profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update connection settings as required (for NFC-e, set the **Connector type** field to **Internal**). If settings for SAT are needed, set the **Connector name** field for the SAT device (**Connector type** = **Local**), and specify the **SAT library path** string. Include the name of the dynamic-link library (DLL) file.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector group**.
 1. Create fiscal connector groups, one for each connector functional profile that you created earlier (including SAT).
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Registration process**.
@@ -318,20 +323,22 @@ To configure a certificate in AOS, follow these steps.
 > [!NOTE]
 > After the setup is completed, the appropriate distribution jobs must be run in Commerce headquarters.
 
-### Set up SAT activation code
+### Set up the SAT activation code
 
-The SAT activation code enables communication between the POS register and the SAT device. The SAT hardware attribute contains the activation code for the SAT serial number entered during the SAT device activation, and must be associated with the POS register. 
+The SAT activation code enables communication between the POS register and the SAT device. The SAT hardware attribute contains the activation code for the SAT serial number that was entered during SAT device activation. That SAT hardware attribute must be associated with the POS register. 
 
 To create the SAT hardware attribute, follow these steps.
 
 1. Go to **System administration \> Setup \> Key Vault parameters**.
-1. Create a record for the SAT activation code.  
-1. Add a secret named **ActivationCode**, enter a value in the field **Secret**, and then select the **Secret type = Manual**.
+1. Create a record for the SAT activation code.
+1. Add a secret that is named **ActivationCode**.
+1. In the **Secret** field, enter value.
+1. In the **Secret type** field, select **Manual**.
 
 ### Configure CRT extension components
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used with this localization functionality. You must use the previous version of the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). (Microsoft plans to add support for localization functionality to the new independent packaging and extension model in later versions.)
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used with this localization functionality. You must use the previous version of the Retail software development kit (SDK) on a developer virtual machine (VM) in LCS. (Microsoft plans to add support for localization functionality to the new independent packaging and extension model in later versions.)
 
 To configure CRT extension components, follow these steps.
 
@@ -341,13 +348,13 @@ To configure CRT extension components, follow these steps.
 
 2. Register the CRT change in the extension configuration file.
 
-```xml
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalServiceBrazil" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
-```
+    ```xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalServiceBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
+    ```
  
 3. Find the Web.config file for CRT.
 
@@ -355,11 +362,11 @@ To configure CRT extension components, follow these steps.
 
 4. Update this Web.config file by adding the new extension library name in the extensionComposition section.
  
-```xml
-<extensionComposition>
- <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.ElectronicFiscalDocumentBrazil" />
-</extensionComposition>
-```
+    ```xml
+    <extensionComposition>
+        <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.ElectronicFiscalDocumentBrazil" />
+    </extensionComposition>
+    ```
 
 5. Find the extension configuration file for Local CRT on Modern POS:
 
@@ -367,16 +374,16 @@ To configure CRT extension components, follow these steps.
 
 6. Register the Local CRT on Modern POS change in the extension configuration file.
 
-```xml
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil.Offline" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
-<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
-```
+    ```xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil.Offline" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicFiscalDocumentBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdBrazil" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
+    ```
 
-> [!WARNING]
-> Don't edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
+    > [!WARNING]
+    > Don't edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
 
 7. Find the extension configuration file for Retail proxy on Modern POS:
 
@@ -384,28 +391,28 @@ To configure CRT extension components, follow these steps.
 
 8. Register the Retail proxy on Modern POS change in the extension configuration file.
 
-```xml
-<retailProxyExtensions>
- <composition>
-  <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.ElectronicFiscalDocumentBrazil" />
- </composition>
-</retailProxyExtensions>
-```
+    ```xml
+    <retailProxyExtensions>
+        <composition>
+            <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.ElectronicFiscalDocumentBrazil" />
+        </composition>
+    </retailProxyExtensions>
+    ```
 
 ### Enable Hardware station extension components
 
 > [!NOTE]
-> For more information, see the [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) article.
+> For more information, see [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md).
 
 #### SatBrazil component
 
-To help guarantee that the Hardware station loads the SAT extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
+To help ensure that the Hardware station loads the SAT extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
 
 ```xml
 <hardwareStationExtension>
- <composition>
-  <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
- </composition>
+    <composition>
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.FiscalPeripherals.SatBrazil" />
+    </composition>
 </hardwareStationExtension>
 ```
 
