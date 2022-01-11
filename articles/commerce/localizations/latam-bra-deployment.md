@@ -390,7 +390,7 @@ To configure CRT extension components, follow these steps.
 		</retailProxyExtensions>
  ```
 
-### Enable Hardware station extensions
+### Enable Hardware station extension components
 
 > [!NOTE]
 > For more information, see the [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) article.
