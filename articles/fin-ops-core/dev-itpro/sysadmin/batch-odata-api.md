@@ -53,9 +53,9 @@ Complete the following steps to automate using Power Automate.
 
 5. If above condition results to yes, then add an action by choosing an operation Finance and Opeerations apps and selecting Execute action to trigger batch OData action to set the job back to execution.
 
-    a.	Enter the Finance and Operations instance.
-    b.	Select action **BatchJobs-SetBatchJobToWaiting** from available options.
-    c.	Select the job Id to rerun the failed job.
+    1.	Enter the Finance and Operations instance.
+    2.	Select action **BatchJobs-SetBatchJobToWaiting** from available options.
+    3.	Select the job Id to rerun the failed job.
 
     ![image](https://user-images.githubusercontent.com/90061039/148861040-fd70b5ee-5234-4158-8124-3767786e585c.png)
 
