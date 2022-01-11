@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/add-welcome-message.md",
+      "redirect_url": "index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/e-commerce-extensibility/request-pipeline-hook.md",
+      "redirect_url": "overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/azure-data-lake-overview.md",
       "redirect_url": "Azure-Data-Lake-GA-version-overview",
       "redirect_document_id": "false"
