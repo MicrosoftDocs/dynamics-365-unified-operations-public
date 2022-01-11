@@ -31,7 +31,8 @@ For information about how to configure batch events, see [Batch business events]
 
 In version 10.0.22, the batch functionality now provides an OData API that can be used to requeue batch jobs. Customers can use the OData endpoint to requeue batch jobs that are in a terminal state. This feature can be integrated with any automation by using Power Automate, custom APIs, and so on.
 
-![End-to-end automation.](https://user-images.githubusercontent.com/90061039/148861172-7ff123f4-1269-40c2-b32d-b49956824c0c.png)
+![End-to-end automation.](https://user-images.githubusercontent.com/90061039/149026777-def9b2fa-4dbc-4a0c-8fdd-432564a4e114.png)
+
 
 ## Automate requeuing of failed batch jobs by using the OData API
 
@@ -55,7 +56,8 @@ Follow these steps to automate requeuing of failed batch jobs by using Power Aut
     2. Select the **BatchJobs-SetBatchJobToWaiting** action.
     3. Select the job ID to rerun the failed job.
 
-    ![Adding an action.](https://user-images.githubusercontent.com/90061039/148861040-fd70b5ee-5234-4158-8124-3767786e585c.png)
+    ![Adding an action.](https://user-images.githubusercontent.com/90061039/149027222-c1283b05-9f40-4759-9687-d9f0790dbf86.png)
+
 
 6. Save the flow.
 
