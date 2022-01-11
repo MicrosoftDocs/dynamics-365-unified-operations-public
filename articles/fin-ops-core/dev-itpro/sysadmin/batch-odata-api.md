@@ -44,9 +44,9 @@ Steps to automate using Power Automate:
 2.	Specify an event Fin & Ops Apps (Dynamics 365) to start the flow and enter the environment details, business event category, business event as ‘batch Job Failed’ and appropriate legal entity.
 ![image](https://user-images.githubusercontent.com/90061039/148860987-578b8013-bad5-431d-8fa9-8a61be59889b.png)
 
-3.Add new step from Actions tab to choose an operation named Parse JSON with schema to parse the Jason request. For more information to download JSON schema and [Business events catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page#business-event-catalog)
+3. Add new step from Actions tab to choose an operation named Parse JSON with schema to parse the Jason request. For more information to download JSON schema and [Business events catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page#business-event-catalog)
 
-4.	Add custom logic by including a logical condition to check if event is from the target batch job using Job ID.
+4. Add custom logic by including a logical condition to check if event is from the target batch job using Job ID.
 
 ![image](https://user-images.githubusercontent.com/90061039/148860962-4cef2156-8138-4c9c-bb8a-be22fee9382e.png)
 
@@ -61,6 +61,7 @@ c.	Select the Job Id to rerun the failed job
 Above configured flow will listen to the batch events and if the configured batch jobs fail flow will set the job back for execution. As best practice we recommend adding custom logic (refer to above example) to validate before retrying batch jobs to avoid unnecessary load on the system. We also suggest specifying a limit on max number of times a batch can be retried [recommended is 5].
 There are also other ways to subscribe to Business events and more details how to configure batch events, see [Batch business events](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/system-business-events)
 
+Batch API endpoint and sample repsonse
 - **Service endpoint:** `https://<org url>/data/BatchJobs/Microsoft.Dynamics.DataEntities.SetBatchJobToWaiting`
 - **Method type:** POST
 - **Header:**
