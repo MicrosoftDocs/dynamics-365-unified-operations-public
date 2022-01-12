@@ -317,11 +317,9 @@
       - name: Reporting options
         href: hr-admin-troubleshooting-reporting.md
       - name: Integration FAQ
-        href: hr-admin-troubleshooting-integration.md
-        
-     - name: User Guide
+        href: hr-admin-troubleshooting-integration.md      
      - name: Set up Human Resources
-      items:
+       items:
       - name: Configure Human resources parameters
         href: hr-setup-parameters.md
       - name: Configure Human resources shared parameters
@@ -797,8 +795,7 @@
         - name: Comply with the Americans with Disabilities Act
           href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
         - name: Manage worker accommodations
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-          
+          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md        
   - name: Human resources development
     items:
     - name: Overview
