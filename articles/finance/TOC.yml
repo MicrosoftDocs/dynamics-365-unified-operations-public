@@ -3462,7 +3462,6 @@
           href: localizations/noam-usa-form-1099-public-sector.md
         - name: Set up vendors for 1099 reporting
           href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
-        
       - name: Recruit candidates
         items:
         - name: Manage recruiting processes
@@ -3483,7 +3482,6 @@
           href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
         - name: Identify and deploy candidate selection tools
           href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-   
       - name: Manage benefits
         items:
         - name: Define and manage a benefits program
@@ -3503,9 +3501,8 @@
         - name: Manage benefit expiration dates
           href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
         - name: Generate ACA reports
-          href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
-       
-   - name: Reporting and Power BI integrations
+          href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json    
+    - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
