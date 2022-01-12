@@ -72,7 +72,6 @@ You can view the newly generated payment schedule that starts on the revaluation
 The journal entry has automatically posted the adjustment journal entry to the account for the change in lease payments that are related to the index revaluation.
 
 > [!NOTE]
-> If the **Breakdown payment amount** is enabled on the **Lease details** FastTab and the associated book is IFRS 16, the index revaluation process will automatically add a **Payment type**. The **Payment type** will be **Used** for IRFS 16 index revaluation to represent the payment changes due to index revaluation. 
-
+> If the **Breakdown payment amount** is enabled on the **Lease details** page on the **General** FastTab and the associated book is IFRS 16, the index revaluation process will automatically add a record in the **Payment amount break down**. This amount reflects the change in the payment due to index revaluation. This record will also be marked as **Used for IRFS 16 index revaluation**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
