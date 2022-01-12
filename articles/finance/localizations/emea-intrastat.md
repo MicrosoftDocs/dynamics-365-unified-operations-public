@@ -102,7 +102,7 @@ The following table lists the prerequisites for Intrastat reporting.
 </tr>
 <tr class="odd">
 <td>Miscellaneous charges</td>
-<td>Set up the miscellaneous charges code to include in the invoice amount, the statistical amount, or both. On the <strong>Charges codes</strong> page, on the <strong>Foreign trade</strong> tab, enable <strong>Intrastat invoice value</strong> to include the charges amount in the invoice value, and enable <strong>Intrastat statistical value</strong> to include the charges amount in the statistical value. For more information, review [Transaction codes and miscellaneous charges](###transaction-codes-and-miscellaneous-charges) example.</td>
+<td>Set up the miscellaneous charges code to include in the invoice amount, the statistical amount, or both. On the <strong>Charges codes</strong> page, on the <strong>Foreign trade</strong> tab, enable <strong>Intrastat invoice value</strong> to include the charges amount in the invoice value, and enable <strong>Intrastat statistical value</strong> to include the charges amount in the statistical value. For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example.</td>
 </tr>
 <tr class="even">
 <td>Electronic reporting</td>
@@ -245,7 +245,7 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 
 ## Example
 
-### Transaction codes and miscellaneous charges
+### <a name= "transaction-codes-and-miscellaneous-charges"></a>Transaction codes and miscellaneous charges
 
 This topic covers a scenario where a company in Germany must purchase goods from a company in Italy. To make this purchase, the German company must set up new transaction codes, and configure calculation rules for the invoice amount and statistical amount for those transaction codes. Additionally, when the company creates an invoice, it must specify miscellaneous charges and their percentages. Those values will be considered when the statistical value is calculated.
 
