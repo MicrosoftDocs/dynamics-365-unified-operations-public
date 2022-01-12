@@ -3,7 +3,7 @@
   - name: Dynamics 365 Human Resources
    items: 
    - name: Dynamics 365 Human Resources home page
-     href: /index.md
+     href: index.md
    - name: Get started   
      items:
   - name: What's new
