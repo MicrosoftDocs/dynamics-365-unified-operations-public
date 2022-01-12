@@ -58,9 +58,15 @@ To export ratings and reviews from Commerce by using the Dynamics 365 Ratings an
 
 [Ratings and reviews overview](ratings-reviews-overview.md)
 
+[Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+
 [Manage ratings and reviews](manage-reviews.md)
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
 
 [Configure Service-to-Service authentication](service-to-service-auth.md)
 
