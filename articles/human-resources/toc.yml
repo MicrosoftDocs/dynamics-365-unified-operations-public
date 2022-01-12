@@ -318,16 +318,16 @@
         href: hr-admin-troubleshooting-reporting.md
       - name: Integration FAQ
         href: hr-admin-troubleshooting-integration.md      
-     - name: Set up Human Resources
-       items:
-       - name: Configure Human resources parameters
-         href: hr-setup-parameters.md
-       - name: Configure Human resources shared parameters
-         href: hr-setup-shared-parameters.md
-       - name: Set up Human resource workflows
-         href: hr-workflow-manage-employee-information.md
-       - name: Understand Date and Time fields
-         href: hr-setup-date-time-fields.md
+    - name: Set up Human Resources
+      items:
+      - name: Configure Human resources parameters
+        href: hr-setup-parameters.md
+      - name: Configure Human resources shared parameters
+        href: hr-setup-shared-parameters.md
+      - name: Set up Human resource workflows
+        href: hr-workflow-manage-employee-information.md
+      - name: Understand Date and Time fields
+        href: hr-setup-date-time-fields.md
     - name: Configure organization settings
       items:
       - name: Organization administration home page
