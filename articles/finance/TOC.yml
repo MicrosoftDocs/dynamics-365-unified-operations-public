@@ -836,6 +836,8 @@
           href: asset-leasing/set-up-lease-books.md
         - name: Create a lease group
           href: asset-leasing/create-lease-group.md
+        - name: Payment amount type
+          href: asset-leasing/Payment-amount-type.md
         - name: Set up index rates
           href: asset-leasing/set-up-index-rate-types.md
         - name: Set up expense types
@@ -1460,6 +1462,8 @@
               href: localizations/tax-calculation-import-export-feature.md
             - name: Set up an environment for master data lookup
               href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+            - name: Sync the tax setup from the Tax Calculation Service to Finance
+              href: localizations/global-master-data-sync-tax-calculation-service-finance.md
           - name: Determination
             items: 
             - name: Tax calculation data model
@@ -1916,6 +1920,8 @@
           href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
         - name: Set up payment slip format
           href: localizations/tasks/set-up-payment-slip-format.md
+        - name: Danish Intrastat
+          href: localizations/emea-dnk-intrastat.md
       - name: Egypt
         items: 
         - name: Egypt overview
@@ -1938,6 +1944,8 @@
           href: localizations/emea-est-personal-info.md
         - name: VAT statement
           href: localizations/emea-est-vat-statement-details.md
+        - name: Estonian Intrastat
+          href: localizations/emea-est-intrastat.md         
       - name: Europe
         items:
         - name: Europe overview
@@ -3060,6 +3068,8 @@
             href: localizations/emea-pol-vdek-reporting.md
           - name: Details of specific business scenarios in the JPK-V7M report
             href: localizations/emea-pol-vdek-scenarios.md
+        - name: Payment terms in commercial transactions report
+          href: localizations/emea-pol-payment-terms-report.md
       - name: Qatar
         items: 
         - name: Qatar overview
