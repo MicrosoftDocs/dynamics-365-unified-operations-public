@@ -76,9 +76,15 @@ To remove an existing app registration in Commerce site builder, follow these st
 
 [Ratings and reviews overview](ratings-reviews-overview.md)
 
+[Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+
 [Manage ratings and reviews](manage-reviews.md)
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
 
 [Import and export ratings and reviews](import-export-reviews.md)
 
