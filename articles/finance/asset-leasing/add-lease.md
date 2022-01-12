@@ -43,7 +43,7 @@ Follow these steps to create a lease in Asset leasing.
 
 > The starting date for the lease payment can't be earlier than the lease start date. If you enter a starting date for the lease payment that's earlier than the starting date for the lease, you'll recieve an error message.
 
-The **Breakdown payment amount** option on the **Lease details** FastTab will be set to **No** if the **Allow payment breakdown** option on the **Asset leasing parameters** is set to **Yes**. 
+The **Breakdown payment amount** option on the **Lease details** page > **General** FastTab will default to **No** if the **Allow payment breakdown** option on the **Asset leasing parameters** is set to **Yes**. 
 
 If the **Breakdown payment amount** field is set to **Yes**, the **Payment amount** field on the **Payment schedule lines** FastTab will be locked. 
 The **Payment amount** field will be populated with the total of the payment amounts that are entered later in the **Payment amount breakdown** catalog. 
