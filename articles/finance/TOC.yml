@@ -1918,6 +1918,8 @@
           href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
         - name: Set up payment slip format
           href: localizations/tasks/set-up-payment-slip-format.md
+        - name: Danish Intrastat
+          href: localizations/emea-dnk-intrastat.md
       - name: Egypt
         items: 
         - name: Egypt overview
