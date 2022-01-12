@@ -257,11 +257,11 @@ This scenario uses the **DEMF** legal entity.
 
 4.  Select **OK** to transfer the transactions, and review the Intrastat journal.
 
-![Line that represents the purchase order on the Intrastat page](media/intrastat_overview_1.png)
+![Line that represents the purchase order with miscellaneous charges on the Intrastat page](media/intrastat_overview_1.png)
 
 5.  Review the **General** tab for the purchase order. Notice that the **Invoice value** field shows the sum of the **Invoice amount** and **Invoice charges amount** fields, and the **Statistical value** field shows the sum of the **Statistical amount** and **Statistical charges amount** fields.
 
-![Purchase order details on the General tab of the Intrastat page](media/intrastat_overview_2.png)
+![Purchase order details with miscellaneous charges on the General tab of the Intrastat page](media/intrastat_overview_2.png)
 
 ### Transfer order
 
@@ -471,7 +471,7 @@ In this example, a company in Germany must purchase 10 units of goods from a com
 
 5.  On the Action Pane, select **Save**.
 
-For more information, see [Manage units of measure](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/manage-unit-measure).
+For more information, see [Manage units of measure](../../supply-chain/pim/tasks/manage-unit-measure.md).
 
 #### Create a purchase order
 
