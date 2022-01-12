@@ -40,12 +40,12 @@ Add payment amount types
 3. In the appropriate fields, enter the new payment type and description.
 
 > [!NOTE]
-> For IFRS 16 index revaluation you'll need to create one payment amount type and marked as **Used** for IRFS 16 index revaluation. This **payment amount type** will be used 
+> For IFRS 16 index revaluation you'll need to create one payment amount type and marked as **Used for IRFS 16** index revaluation. This **payment amount type** will be used 
 > when the index revaluation process is ran against IFRS 16 book and consider the changes occurred due to index revaluation process. 
 > When the **Payment breakdown** in the lease is set to **Yes** and index revaluation for IFRS 16 is ran and there's not a **Payment type** for IFRS 16 the process will 
 > not be completed. 
 
-Only one record can be marked as **Used** for IFRS 16 index revaluation.
+Only one record can be marked as **Used for IFRS 16** index revaluation.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
