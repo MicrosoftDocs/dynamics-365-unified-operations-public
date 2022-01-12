@@ -25,16 +25,16 @@ This topic provides information about the tasks you should complete to help you 
 Before you begin, download a copy of the current go-live checklist from https://aka.ms/d365fogolivechecklist. 
 
 ## Performance
+
 During the time that you are completing the go-live or upgrade process, you can take the opportunity to make performance improvements. 
 
 ### Optimize images
-Website performance is often impacted by image downloads. You can improve website performance by reducing the size and optimizing your use of images in Commerce. For more information, see [Optimize images](./performance-optimize-images.md)
+
+Website performance is often impacted by image downloads. You can improve website performance by reducing the size and optimizing your use of images in Commerce. For more information, see [Optimize images](performance-optimize-images.md).
 
 ### Reduce JavaScript by excluding unused modules
-You can improve website perforamnce by excluding unused JavaScript modules in Commerce. For more information, see [Reduce JavaScript by excluding unused modules](./performance-reduce-javascript.md)
 
-### Improve performance by optimizing images
-Website performance is often impacted by image downloads. You can improve website performance by reducing the size and optimizing your use of images in Commerce. For more information, see [Improve performance by optimizing images](test-performance-topic.md)
+You can improve website perforamnce by excluding unused JavaScript modules in Commerce. For more information, see [Reduce JavaScript by excluding unused modules](performance-reduce-javascript.md).
 
 
 
