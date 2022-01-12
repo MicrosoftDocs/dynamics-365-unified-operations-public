@@ -784,18 +784,18 @@
           href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
         - name: Workflow FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
-      - name: Workplace safety and compliance (United States)
-        items:
-        - name: Form I-9 verification
-          href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
-        - name: Verify employment eligibility using Form I-9
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
-        - name: Set up Form I-9 document types
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-        - name: Comply with the Americans with Disabilities Act
-          href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
-        - name: Manage worker accommodations
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md        
+    - name: Workplace safety and compliance (United States)
+      items:
+      - name: Form I-9 verification
+        href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
+      - name: Verify employment eligibility using Form I-9
+        href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
+      - name: Set up Form I-9 document types
+        href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
+      - name: Comply with the Americans with Disabilities Act
+        href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
+      - name: Manage worker accommodations
+        href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md        
   - name: Human resources development
     items:
     - name: Overview
