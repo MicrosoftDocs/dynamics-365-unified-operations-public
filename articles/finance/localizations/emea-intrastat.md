@@ -56,64 +56,17 @@ For statistical purposes, you report information about trade among EU countries/
 ## Prerequisites
 The following table lists the prerequisites for Intrastat reporting.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Prerequisite</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Address setup</td>
-<td>Set up International Organization for Standardization (ISO) codes for countries/regions.</td>
-</tr>
-<tr class="even">
-<td>Legal entity</td>
-<td>Set up tax exempt numbers for import/export, the branch number extension for import/export, and the Intrastat code that is assigned to the legal entity.</td>
-</tr>
-<tr class="odd">
-<td>Product category hierarchy (sales hierarchy, procurement hierarchy)</td>
-<td>Assign the Intrastat commodity codes to the category nodes on the <strong>Commodity codes</strong> tab of the <strong>Category hierarchy</strong> page. When you assign a commodity code to a parent category node, that code is applicable to all child category nodes. The selected commodity codes will be available in the <strong>Selected</strong> view when you select a commodity code in the product details, and on sales order, purchase order, and transfer order lines.</td>
-</tr>
-<tr class="even">
-<td>Released product details</td>
-<td>Set up the following foreign trade data for released products:
-<ul>
-<li><strong>Commodity code</strong> – Select from either the list of selected commodities that is retrieved from assigned product categories or the full list of Intrastat commodity codes.</li>
-<li><strong>Statistical charges percentage</strong></li>
-<li><strong>Country/region of origin</strong> – Select the default country/region where the goods were completely obtained or produced.</li>
-<li><strong>State/province of origin/destination</strong> – Select the default state/province of destination for arrivals and the state/province of origin for dispatches.</li>
-<li><strong>Net weight in kg</strong></li>
-<li><strong>Exclude</strong> - Enable this parameter to not transfer transactions with this product to Intrastat</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Customers</td>
-<td>Set up the customer delivery address in the EU country/region.</td>
-</tr>
-<tr class="even">
-<td>Vendors</td>
-<td>Set up the vendor address in the EU country/region.</td>
-</tr>
-<tr class="odd">
-<td>Miscellaneous charges</td>
-<td>Set up the miscellaneous charges code to include in the invoice amount, the statistical amount, or both. On the <strong>Charges codes</strong> page, on the <strong>Foreign trade</strong> tab, enable <strong>Intrastat invoice value</strong> to include the charges amount in the invoice value, and enable <strong>Intrastat statistical value</strong> to include the charges amount in the statistical value. For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example.</td>
-</tr>
-<tr class="even">
-<td>Electronic reporting</td>
-<td>Set up electronic reporting configurations to export Intrastat data in an electronic file that has the format that is requested by the relevant authorities, and to preview Intrastat data in a user-friendly, readable format (for example, in Microsoft Excel).</td>
-</tr>
-<tr class="even">
-<td>Warehousing</td>
-<td>Associate vendor accounts with warehouse codes for filling tax exempt number when transferring Transfer order.</td>
-</tr>
-</tbody>
-</table>
+| **Prerequisite** | **Description** |
+|-------------------------|-------------------------|
+| Address setup | Set up International Organization for Standardization (ISO) codes for countries/regions. |
+| Legal entity | Set up tax exempt numbers for import/export, the branch number extension for import/export, and the Intrastat code that is assigned to the legal entity. |
+| Product category hierarchy (sales hierarchy, procurement hierarchy) | Assign the Intrastat commodity codes to the category nodes on the **Commodity codes** tab of the **Category hierarchy** page. When you assign a commodity code to a parent category node, that code is applicable to all child category nodes. The selected commodity codes will be available in the **Selected** view when you select a commodity code in the product details, and on sales order, purchase order, and transfer order lines. |
+| Released product details | Set up the following foreign trade data for released products:<ul><li>**Commodity code** – Select from either the list of selected commodities that is retrieved from assigned product categories or the full list of Intrastat commodity codes.</li><li>**Statistical charges percentage**</li><li>**Country/region of origin** – Select the default country/region where the goods were completely obtained or produced.</li><li>**State/province of origin/destination** – Select the default state/province of destination for arrivals and the state/province of origin for dispatches.</li><li>**Net weight in kg**</li><li>**Exclude** - Enable this parameter to not transfer transactions with this product to Intrastat</li></ul> |
+| Customers | Set up the customer delivery address in the EU country/region. |
+| Vendors | Set up the vendor address in the EU country/region. |
+| Miscellaneous charges | Set up the miscellaneous charges code to include in the invoice amount, the statistical amount, or both. On the **Charges codes** page, on the **Foreign trade** tab, enable **Intrastat invoice value** to include the charges amount in the invoice value, and enable **Intrastat statistical value** to include the charges amount in the statistical value. For more information, review [Transaction codes and miscellaneous charges](#transactioncodesandmiscellaneouscharges) example. |
+| Electronic reporting | Set up electronic reporting configurations to export Intrastat data in an electronic file that has the format that is requested by the relevant authorities, and to preview Intrastat data in a user-friendly, readable format (for example, in Microsoft Excel). |
+| Warehousing | Associate vendor accounts with warehouse codes for filling tax exempt number when transferring Transfer order. |
 
 ## Setup
 The following sections describe the settings that are required for Intrastat reporting.
@@ -158,7 +111,7 @@ The following sections describe the settings that are required for Intrastat rep
 <li><strong>Invoice amount</strong> – The amount will be equal to the amount that is invoiced for the commodity.</li>
 <li><strong>Base amount</strong> – The amount will be equal to the amount that would be invoiced before any discount is applied.</li>
 </ul></li>
-</ul></td>
+</ul>For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example.</td>
 </tr>
 <tr class="odd">
 <td>Transport methods</td>
@@ -245,7 +198,7 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 
 ## Example
 
-### <a name= "transaction-codes-and-miscellaneous-charges"></a>Transaction codes and miscellaneous charges
+### <a name= "transactioncodesandmiscellaneouscharges"></a>Transaction codes and miscellaneous charges
 
 This topic covers a scenario where a company in Germany must purchase goods from a company in Italy. To make this purchase, the German company must set up new transaction codes, and configure calculation rules for the invoice amount and statistical amount for those transaction codes. Additionally, when the company creates an invoice, it must specify miscellaneous charges and their percentages. Those values will be considered when the statistical value is calculated.
 
