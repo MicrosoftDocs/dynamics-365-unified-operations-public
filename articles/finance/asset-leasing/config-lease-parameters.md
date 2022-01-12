@@ -50,7 +50,6 @@ Several configuration settings affect how Asset leasing behaves. These settings 
     > [!NOTE]
     > We recommend that you keep this option set to **No**. The setting of this option is used as a validation and control to prevent a closed book version from being accidently depreciated. By keeping the option set to **No**, you help keep the net book value and future depreciation calculations accurate.
 
-5.  Set the **Allow payment amount breakdown** option to **Yes** to allow the break down of the payment amounts in the **Payment schedule lines** FastTab on the **Lease** page. The payment breakdown types are defined on the **Payment amount types** page under **Setup**. 
-
+5. Set the **Allow payment amount breakdown** option to **Yes** to allow a breakdown of the payment amounts on the **Payment schedule lines** FastTab of the **Lease** page. The payment breakdown types are defined under **Setup** on the **Payment amount types** page. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
