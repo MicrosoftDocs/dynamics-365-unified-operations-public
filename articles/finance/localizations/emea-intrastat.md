@@ -102,7 +102,7 @@ The following table lists the prerequisites for Intrastat reporting.
 </tr>
 <tr class="odd">
 <td>Miscellaneous charges</td>
-<td>Set up the miscellaneous charges code to include in the invoice amount, the statistical amount, or both. On the <strong>Charges codes</strong> page, on the <strong>Foreign trade</strong> tab, enable <strong>Intrastat invoice value</strong> to include the charges amount in the invoice value, and enable <strong>Intrastat statistical value</strong> to include the charges amount in the statistical value.</td>
+<td>Set up the miscellaneous charges code to include in the invoice amount, the statistical amount, or both. On the <strong>Charges codes</strong> page, on the <strong>Foreign trade</strong> tab, enable <strong>Intrastat invoice value</strong> to include the charges amount in the invoice value, and enable <strong>Intrastat statistical value</strong> to include the charges amount in the statistical value. For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example.</td>
 </tr>
 <tr class="even">
 <td>Electronic reporting</td>
