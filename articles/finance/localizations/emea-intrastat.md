@@ -243,6 +243,371 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </tbody>
 </table>
 
+## Example
+
+### Transaction codes and miscellaneous charges
+
+This topic covers a scenario where a company in Germany must purchase goods from a company in Italy. To make this purchase, the German company must set up new transaction codes, and configure calculation rules for the invoice amount and statistical amount for those transaction codes. Additionally, when the company creates an invoice, it must specify miscellaneous charges and their percentages. Those values will be considered when the statistical value is calculated.
+
+This scenario uses the **DEMF** legal entity.
+
+#### Preliminary setup
+
+1.  Go to **Organization administration** &gt; **Organization** &gt; **Legal entities**, and select **DEMF**.
+
+2.  On the **Addresses** FastTab, verify that the **Country/region** field is set to **DEU(Germany)**.
+
+3.  Go to **Accounts payable** &gt; **Vendors** &gt; **All vendors**.
+
+4.  In the grid, select **DE-001**.
+
+5.  On the **Address** FastTab, select **Edit**.
+
+6.  In the **Edit address** dialog box, in the **Country/region** field, select **ITA**.
+
+7.  Select **OK** to close the dialog box.
+
+#### Set up transaction codes
+
+1.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Transaction codes**.
+
+2.  In the grid, select **11**. Then, on the Action Pane, select **Delete**.
+
+3.  On the Action Pane, select **New**.
+
+4.  On the **Transaction codes** FastTab, in the **Transaction** **code** field, enter **11**.
+
+5.  In the **Name** field, enter **Outright purchase/sale**.
+
+6.  In the **Sales and purchases** section, in the **Invoice amount** field, select **Invoice amount**.
+
+7.  In the **Statistical amount** field, select **Invoice amount**.
+
+8.  On the Action Pane, select **Save**.
+
+#### Set up miscellaneous charges
+
+1.  Go to **Accounts payable** &gt; **Charges setup**&gt; **Charges code**.
+
+2.  In the grid, select **Freight**.
+
+3.  On the Action Pane, select **Edit**.
+
+4.  On the **Foreign trade** FastTab, set the **Intrastat invoice value** and **Intrastat statistical value** options to **Yes**.
+
+#### Set up foreign trade parameters
+
+1.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**.
+
+2.  On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
+
+3.  On the **Commodity code hierarchy** FastTab, verify that the **Category hierarchy** field is set to **Intrastat**.
+
+#### Create a purchase order
+
+1.  Go to **Accounts payable** &gt; **Purchase orders** &gt; **All purchase orders**.
+
+2.  On the Action Pane, select **New**.
+
+3.  In the **Create purchase order** dialog box, in the **Vendor account** field, select **DE-001**.
+
+4.  Select **OK**.
+
+5.  On the **Header** tab, on the **Foreign** **trade** FastTab, verify that the **Transaction code** field is set to **11**.
+
+6.  On the **Lines** tab, on the **Purchase order lines** FastTab, in the **Item number** field, select **D0003**. Then, in the **Quantity** field, enter **10**.
+
+7.  On the **Line details** FastTab, on the **Foreign trade** tab, in the **Foreign trade** section, verify that the **Transaction code** field is automatically set.
+
+8.  On the **Purchase order lines** FastTab, on the **Financials** menu, in the **Charges** section, select **Maintain charges**.
+
+9.  In the **Charges code** field, select **FREIGHT**.
+
+10. In the **Charges value** field, enter **30**.
+
+11. On the Action Pane, select **Save**. Then close the page.
+
+12. On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**.
+
+13. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
+
+14. On the Action Pane, select **Default from**. In the **Default quantity for lines** field, select **Ordered quantity**. Then select **OK**.
+
+15. On the **Vendor invoice header** FastTab, in the **Invoice identification** section, in the **Number** field, enter **00100**.
+
+16. In the **Invoice dates** section, in the **Invoice date** field, select **11/24/2021** (November 24, 2021).
+
+17. On the Action Pane, select **Post** to post the invoice.
+
+### Transfer the vendor invoice to the Intrastat journal
+
+1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
+
+2.  On the Action Pane, select **Transfer**.
+
+3.  In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
+
+4.  Select **OK** to transfer the transactions, and review the Intrastat journal.
+
+![Line that represents the purchase order on the Intrastat page](media/intrastat_overview_1.png)
+
+5.  Review the **General** tab for the purchase order. Notice that the **Invoice value** field shows the sum of the **Invoice amount** and **Invoice charges amount** fields, and the **Statistical value** field shows the sum of the **Statistical amount** and **Statistical charges amount** fields.
+
+![Purchase order details on the General tab of the Intrastat page](media/intrastat_overview_2.png)
+
+### Transfer order
+
+In this example, a company in Germany must move two units of goods from a warehouse in Germany to a warehouse in Italy. Charges at a rate of 20 percent must also be specified for this product for accounting in the **Statistical value** field. This example uses the **DEMF** legal entity.
+
+#### Preliminary setup
+
+1.  Go to **Organization administration** &gt; **Organization** &gt; **Legal entities**, and select **DEMF**.
+
+2.  On the **Addresses** FastTab, verify that the **Country/region** field is set to **DEU(Germany)**.
+
+3.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**.
+
+4.  On the **Commodity code hierarchy** FastTab, verify that the **Category hierarchy** field is set to **Intrastat**.
+
+5.  Go to **Accounts payable** &gt; **Vendors** &gt; **All vendors**.
+
+6.  In the grid, select **DE-001**.
+
+7.  On the **Address** FastTab, select **Edit**.
+
+8.  In the **Edit address** dialog box, in the **Country/region** field, select **ITA**.
+
+9.  Select **OK** to close the dialog box.
+
+#### Set up transaction codes
+
+1.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Transaction codes**.
+
+2.  In the grid, select **11**. Then, on the Action Pane, select **Delete**.
+
+3.  On the Action Pane, select **New**.
+
+4.  On the **Transaction codes** FastTab, in the **Transaction** **code** field, enter **11**.
+
+5.  In the **Name** field, enter **Outright purchase/sale**.
+
+6.  In the **Transfer order** section, in the **Invoice amount** field, select **Total cost**.
+
+7.  In the **Statistical amount** field, select **Total cost**.
+
+8.  On the Action Pane, select **Save**.
+
+9.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**.
+
+10. On the **Intrastat** tab, on the **General** FastTab, in the **Transfer order** field, select **11**.
+
+#### Set up charges for an item
+
+1.  Go to **Product information management** &gt; **Products** &gt; **Released products**.
+
+2.  In the grid, select **D0001**.
+
+3.  On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Charges percentage** field, enter **20**.
+
+#### Change the site address
+
+1.  Go to **Warehouse management** &gt; **Setup** &gt; **Warehouse** &gt; **Sites**.
+
+2.  In the grid, select **1**.
+
+3.  On the **Addresses** FastTab, select **Edit**.
+
+4.  In the **Edit address** dialog box, in the **Country/region** field, select **DEU**.
+
+5.  Select **OK**.
+
+6.  In the grid, select **2**.
+
+7.  On the **Addresses** FastTab, select **Edit**.
+
+8.  In the **Edit address** dialog box, in the **Country/region** field, select **ITA**.
+
+9.  Select **OK**.
+
+10. Go to **Warehouse management** &gt; **Setup** &gt; **Warehouse** &gt; **Warehouses**.
+
+11. In the grid, select **21**.
+
+12. On the **General** FastTab, in the **Reference** section, in the **Vendor account** field, select **DE-001**.
+
+#### Create a transfer order
+
+1.  Go to **Inventory management** &gt; **Outbound orders** &gt; **Transfer order**.
+
+2.  On the Action Pane, select **New**.
+
+3.  On the **Lines** tab, on the **Transfer order header** FastTab, in the **Overview** section, in the **From warehouse** field, select **11**. In the **To warehouse** field, select **21**.
+
+4.  On the **Lines** tab, on the **Transfer order lines** FastTab, select **Add**.
+
+5.  In the **Item number** field, select **D0001**. Then, in the **Transfer quantity** field, enter **2**.
+
+6.  On the **Line details** FastTab, on the **Foreign trade** tab, in the **Foreign trade** section, verify that the **Transaction code** field is automatically set.
+
+7.  On the Action Pane, on the **Ship** tab, in the **Operations** group, select **Ship transfer order**.
+
+8.  In the **Shipment** dialog box, on the **Overview** tab, in the **Update** field, select **All**.
+
+9.  Select **OK** to ship the order.
+
+10. On the Action Pane, on the **Receive** tab, in the **Operations** group, select **Receive**.
+
+11. In the **Receive** dialog box, on the **Overview** tab, in the **Update** field, select **All**.
+
+12. Select **OK** to ship the order.
+
+#### Transfer the transfer order to the Intrastat journal
+
+1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
+
+2.  On the Action Pane, select **Transfer**.
+
+3.  In the **Intrastat (Transfer)** dialog box, set the **Transfer order** option to **Yes** and all other options to **No**.
+
+4.  Select **OK** to transfer the transactions, and review the Intrastat journal.
+
+![Line that represents the transfer order on the Intrastat page](media/intrastat_overview_3.png)
+
+5.  Review the **General** tab for the transfer order.
+
+Notice that the fields in the **Invoice value** and **Statistical value** sections are automatically set. The values of the **Invoice amount** and **Statistical amount** fields are based on settings on the **Transaction codes** page. The value **20** in the **Charges percentage** field is the value that is set on the **Released product** page. The value in the **Statistical charges amount** field is a quantitative expression of the charges (because 107.24 equals 20 percent of 536.18). The value of the **Statistical value** field is the sum of values from the **Statistical amount** and **Statistical charges amount** fields.
+
+![Transfer order details on the General tab of the Intrastat page](media/intrastat_overview_4.png)
+
+### Additional units
+
+In this example, a company in Germany must purchase 10 units of goods from a company in Italy. In addition to commodity codes, additional units must be specified for those goods. The example shows how to create new units of measure, assign additional units to the Intrastat commodity code, post transactions that have additional units, and review the Intrastat journal where the field for the additional units is set.
+
+#### Preliminary setup
+
+1.  Go to **Organization administration** &gt; **Organization** &gt; **Legal entities**, and select **DEMF**.
+
+2.  On the **Addresses** FastTab, verify that the **Country/region** field is set to **DEU(Germany)**.
+
+3.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**.
+
+4.  On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
+
+5.  On the **Commodity code hierarchy** FastTab, verify that the **Category hierarchy** field is set to **Intrastat**.
+
+6.  Go to **Accounts payable** &gt; **Vendors** &gt; **All vendors**.
+
+7.  In the grid, select **DE-001**.
+
+8.  On the **Address** FastTab, select **Edit**.
+
+9.  In the **Edit address** dialog box, in the **Country/region** field, select **ITA**.
+
+10. Select **OK** to close the dialog box.
+
+#### Create a unit of measure
+
+1.  Go to **Organization administration** &gt; **Setup** &gt; **Units** &gt; **Units**.
+
+2.  On the Action Pane, select **New**.
+
+3.  In the **Unit** field, enter a name for the unit of measure. For this example, enter **GRM**.
+
+4.  On the **General** FastTab, in the **Classification** section, in the **Unit class** field, select the property that the unit measures. For this example, select **Mass**.
+
+5.  In the **System of units** field, select the measurement system that the unit belongs to. For example, select **Metric units**.
+
+#### Set up unit conversions
+
+1.  Go to **Organization administration** &gt; **Setup** &gt; **Units** &gt; **Unit conversions**.
+
+2.  On the **Inter-class conversions** tab, select **New**.
+
+3.  In the **Unit conversion** dialog box, in the **Product** field, select **F00007**.
+
+4.  In the **From unit** field, select **ea**.
+
+5.  In the **To unit** field, select **GRM**.
+
+6.  Verify that the conversion rate is **1 = 1**.
+
+7.  Select **OK**.
+
+8.  Go to **Product information management** &gt; **Products** &gt; **Released products**.
+
+9.  In the grid, select **F00007**.
+
+10. On the **Manage inventory** FastTab, in the **Inventory** section, in the **Unit** field, select **GRM**.
+
+11. On the Action Pane, select **Save**.
+
+#### Set up product information
+
+1.  Go to **Product information management** &gt; **Products** &gt; **Released products**.
+
+2.  In the grid, select **F00007**.
+
+3.  On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **920 20 34**.
+
+4.  On the Action Pane, select **Save**.
+
+#### Assign the additional unit to an intrastate commodity code
+
+1.  Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Category hierarchies**.
+
+2.  In the list, select **Intrastat**.
+
+3.  In the grid, select **Speaker**.
+
+4.  On the **Foreign trade** FastTab, in the **Additional units** field, select **GRM**.
+
+5.  On the Action Pane, select **Save**.
+
+For more information, see [Manage units of measure](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/manage-unit-measure).
+
+#### Create a purchase order
+
+1.  Go to **Accounts payable** &gt; **Purchase orders** &gt; **All purchase orders**.
+
+2.  On the Action Pane, select **New**.
+
+3.  In the **Create purchase order** dialog box, in the **Vendor account** field, select **DE-001**.
+
+4.  Select **OK**.
+
+5.  On the **Header** tab, on the **Foreign** **trade** FastTab, verify that the **Transaction code** field is set to **11**.
+
+6.  On the **Lines** tab, on the **Purchase order lines** FastTab, in the **Item number** field, select **F00007**. Then, in the **Quantity** field, enter **10**.
+
+7.  On the **Line details** FastTab, on the **Foreign trade** tab, in the **Foreign trade** section, verify that the **Transaction code** and the **Commodity** fields are automatically set.
+
+8.  On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**.
+
+9.  On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
+
+10. On the Action Pane, select **Default from**. In the **Default quantity for lines** field, select **Ordered quantity**. Then select **OK**.
+
+11. On the **Vendor invoice header** FastTab, in the **Invoice identification** section, in the **Number** field, enter **VE-0010**.
+
+12. In the **Invoice dates** section, in the **Invoice date** field, select **10/5/2021** (October 5, 2021).
+
+13. On the Action Pane, select **Post** to post the invoice.
+
+#### Transfer the vendor invoice to the Intrastat journal
+
+1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
+
+2.  On the Action Pane, select **Transfer**.
+
+3.  In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
+
+4.  Select **OK** to transfer the transactions, and review the Intrastat journal.
+
+![Line that represents the purchase order on the Intrastat page](media/intrastat_overview_5.png)
+
+5.  Review the **General** tab for the purchase order. Notice that the **Quantity of additional units** and **Additional unit** fields in the **Unit** section are automatically set.
+
+![Purchase order details on the General tab of the Intrastat page](media/intrastat_overview_6.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
