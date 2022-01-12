@@ -41,20 +41,18 @@ Follow these steps to create a lease in Asset leasing.
 1. On the **Lease summary** page, on the Action Pane, select **New**.
 2. Enter the lease information. Fields that are required have red borders.
 
-> The starting date for the lease payment can't be earlier than the lease start date. If you enter a starting date for the lease payment that's earlier than the starting date for the lease, you'll recieve an error message.
+The starting date for the lease payment can't be earlier than the lease start date. If you enter a starting date for the lease payment that's earlier than the starting date for the lease, you'll receive an error message.
 
-The **Breakdown payment amount** option on the **Lease details** page > **General** FastTab will default to **No** if the **Allow payment breakdown** option on the **Asset leasing parameters** is set to **Yes**. 
+By default, the **Breakdown payment amount** option on the **General** FastTab of the **Lease details** page is set to **No** if the **Allow payment breakdown** option on the **Asset leasing parameters** page is set to **Yes**. 
 
-If the **Breakdown payment amount** field is set to **Yes**, the **Payment amount** field on the **Payment schedule lines** FastTab will be locked. 
-The **Payment amount** field will be populated with the total of the payment amounts that are entered later in the **Payment amount breakdown** catalog. 
+If the **Breakdown payment amount** option is set to **Yes**, the **Payment amount** field on the **Payment schedule lines** FastTab is locked. It will be set to the total of the payment amounts that are entered later in the **Payment amount breakdown** catalog.
 
-Select **Payment amount breakdown** button to open a page to add the itemized payment types. The **Add totals to payment amount** button will move the totals to the **Payment amount** field.  
+Select **Payment amount breakdown** to open a page where you can add the itemized payment types. The **Add totals to payment amount** button will move the totals to the **Payment amount** field.
 
 > [!NOTE]
-> If a user adds an itemized payment amount and selects **Esc**, the entered amounts will not be added to the **Payment amount** field in the **Payment schedule lines**. The entered amounts will be stored in the **Payment amount breakdown** dialogue. 
-If you want the total amount displaed in the dialogue, select the **Amount** column and right click, select **Total this column**. 
+> If you add an itemized payment amount and then select the **Esc** key, the entered amounts won't be added to the **Payment amount** field on the **Payment schedule lines** FastTab. Instead, they will be stored in the **Payment amount breakdown** dialog box. If you want the dialog box to show the total amount, select the **Amount** column, select and hold (or right-click), and then select **Total this column**. 
 
-**Copy line** will copy the itemized payment breakdown.
+The **Copy line** button will copy the itemized payment breakdown.
 
 ## Create a lease schedule
 
@@ -69,9 +67,9 @@ After you've finished entering information for the lease, follow these steps to 
     The **Book details** page shows how the lease is accounted for by the books that have been allocated to it. From here, you can view the lease schedules.
 
     The payment schedule contains the inputs from the **Payment schedule lines** tab on the **Add lease** page. You can still change each payment amount and variable payment. The lease liability is calculated based on the modified payment schedule.
-    
-> [!NOTE]
-> The starting date for the lease payment must be the same or a later date than the starting date for the lease. You'll receive an error message if the starting date for the payment is earlier than the starting date for the lease. 
+
+    > [!NOTE]
+    > The starting date for the lease payment must be the same or a later date than the starting date for the lease. You'll receive an error message if the starting date for the payment is earlier than the starting date for the lease. 
 
 4. After you've finished reviewing the payment schedule, select **Confirm schedule**. After the schedule is confirmed, the lease is no longer available for editing.
 
