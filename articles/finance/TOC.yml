@@ -3462,62 +3462,7 @@
           href: localizations/noam-usa-form-1099-public-sector.md
         - name: Set up vendors for 1099 reporting
           href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
-    - name: Human resources
-      items:
-      - name: Human resources overview
-        href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-      - name: Set up Human resources
-        items:
-        - name: Configure Human resources parameters
-          href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-        - name: Configure Human resources shared parameters
-          href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-        - name: Set up Human resource workflows
-          href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
-        - name: Understand Date and Time fields
-          href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
-      - name: Manage personnel
-        items:
-        - name: Organize your workforce
-          href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-        - name: Set up the components of a job
-          href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
-        - name: Define departments
-          href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
-        - name: Add a department to a hierarchy
-          href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-        - name: Define jobs
-          href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
-        - name: Create a working times calendar
-          href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
-        - name: Personnel actions FAQ
-          href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-        - name: Use workflows to manage employee information
-          href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-        - name: Modify reporting relationships for a position
-          href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
-        - name: Enter worker information
-          href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
-        - name: Loan items to workers
-          href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
-        - name: Create loan items
-          href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
-        - name: Manage loan items
-          href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
-        - name: Develop a succession plan
-          href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
-        - name: Enter project timesheets
-          href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
-        - name: Mass hire projects
-          href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
-        - name: Create a mass hire project
-          href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
-        - name: Set up positions
-          href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
-        - name: Set up injury and illness information
-          href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-        - name: Maintain employee injury and illness information
-          href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+        
       - name: Recruit candidates
         items:
         - name: Manage recruiting processes
@@ -3538,26 +3483,7 @@
           href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
         - name: Identify and deploy candidate selection tools
           href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-      - name: Set up compensation plans
-        items:
-        - name: Compensation plans overview
-          href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
-        - name: Set up compensation grids
-          href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
-        - name: Develop a compensation structure and plan
-          href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
-        - name: Create fixed compensation plans
-          href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
-        - name: Create variable compensation plans
-          href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
-        - name: Enroll employees in a fixed compensation plan
-          href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
-        - name: Enroll employees in a variable compensation plan
-          href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
-        - name: Define compensation process and calculate results
-          href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
-        - name: Process compensation plans
-          href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
+   
       - name: Manage benefits
         items:
         - name: Define and manage a benefits program
@@ -3578,53 +3504,8 @@
           href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
         - name: Generate ACA reports
           href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
-      - name: Develop employees
-        items:
-        - name: Performance management overview
-          href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
-        - name: Align workforce skills
-          href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
-        - name: Add to your performance journal
-          href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
-        - name: Create a goal
-          href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
-        - name: Create a performance review
-          href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
-      - name: Create courses
-        items:
-        - name: Set up training courses
-          href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
-        - name: Questionnaires overview
-          href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
-        - name: Design questionnaires
-          href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
-        - name: Distribute and schedule questionnaires
-          href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
-        - name: Distribute questionnaires using scheduling
-          href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
-        - name: View questionnaire results
-          href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-        - name: Analyze questionnaire results
-          href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-        - name: Create an open-ended question
-          href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
-        - name: Create a closed-ended question
-          href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
-        - name: Create a dependent question
-          href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
-      - name: Workplace safety and compliance (United States)
-        items:
-        - name: Form I-9 verification
-          href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
-        - name: Verify employment eligibility using Form I-9
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
-        - name: Set up Form I-9 document types
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-        - name: Comply with the Americans with Disabilities Act
-          href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
-        - name: Manage worker accommodations
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-    - name: Reporting and Power BI integrations
+       
+   - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
@@ -4733,3 +4614,6 @@
     href: ../supply-chain/index.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
+  - name: Dynamics 365 Human Resources
+    href: ../human-resources/index.md
+     
