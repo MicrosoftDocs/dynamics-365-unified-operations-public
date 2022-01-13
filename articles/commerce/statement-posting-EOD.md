@@ -72,9 +72,7 @@ Recommended values for Batch processing FastTab on the Posting tab of the Commer
 
 | Parameters                                               | Recommended value        | Details |
 |----------------------------------------------------------|------------|-------------|
-| Maximum number of parallel statement posting             | Set this value to the same number of batch tasks available for the batch group running the Statement job.
-
-General rule: Number of AOS multiplied by number of batch tasks available per AOS.    | This is not applicable when the Retail statements - Trickle feed feature is enabled. |
+| Maximum number of parallel statement posting             | Set this value to the same number of batch tasks available for the batch group running the Statement job. General rule: Number of AOS multiplied by number of batch tasks available per AOS.    | This is not applicable when the Retail statements - Trickle feed feature is enabled. |
 | Max thread for order processing per statement            | Marked     | The transactions that are in scope for the statement are identified based on the statement parameters, and they are marked with the statement ID.                 |
 | Max transaction lines included in aggregation            | Calculated | The statement lines are computed and shown. |
 | Maximum number of threads to validate store transactions |
