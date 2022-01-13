@@ -320,150 +320,150 @@
             href: hr-admin-troubleshooting-reporting.md
           - name: Integration FAQ
             href: hr-admin-troubleshooting-integration.md      
-    - name: Set up Human Resources
-      items:
-      - name: Configure Human resources parameters
-        href: hr-setup-parameters.md
-      - name: Configure Human resources shared parameters
-        href: hr-setup-shared-parameters.md
-      - name: Set up Human resource workflows
-        href: hr-workflow-manage-employee-information.md
-      - name: Understand Date and Time fields
-        href: hr-setup-date-time-fields.md
-    - name: Configure organization settings
-      items:
-      - name: Organization administration home page
-        href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
-      - name: Number sequences
+      - name: Set up Human Resources
         items:
-        - name: Number sequences overview
-          href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
-        - name: Set up number sequences on an individual basis
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
-        - name: Set up number sequences using a wizard
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
-      - name: Organizations and organizational hierarchies
+        - name: Configure Human resources parameters
+          href: hr-setup-parameters.md
+        - name: Configure Human resources shared parameters
+          href: hr-setup-shared-parameters.md
+        - name: Set up Human resource workflows
+          href: hr-workflow-manage-employee-information.md
+        - name: Understand Date and Time fields
+          href: hr-setup-date-time-fields.md
+      - name: Configure organization settings
         items:
-        - name: Organizations and organizational hierarchies overview
-          href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
-        - name: Plan your organizational hierarchy
-          href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
-        - name: Create an organization hierarchy
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
-        - name: Create legal entities
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
-        - name: Create operating units
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
-      - name: Global address book
-        items:
-        - name: Global address book overview
-          href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-        - name: Plan for the global address book and other address books
-          href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
-        - name: Configure the global address book
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-        - name: Address setup
-          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
-        - name: Address books FAQ
-          href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
-        - name: Configure address books
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
-        - name: Manage location owners
-          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
-      - name: Workflow system
-        items:
-        - name: Workflow system overview
-          href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
-        - name: Workflow system architecture
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
-        - name: Workflow elements
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
-        - name: Workflow actions
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
-        - name: Create workflows
+        - name: Organization administration home page
+          href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
+        - name: Number sequences
           items:
-          - name: Create workflows overview
-            href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure workflow properties
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure manual tasks
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure automated tasks
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure approval processes
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure approval steps
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure manual decisions
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure conditional decisions
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure parallel activities
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure parallel branches
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Configure line-item workflows
-            href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
-        - name: Configure the Workflow Message Processing batch job as critical
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
-        - name: Delegate work items in a workflow
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
-        - name: View workflow history
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
-        - name: Configure the system to send workflow-related email to users
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
-        - name: Workflow types
+          - name: Number sequences overview
+            href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
+          - name: Set up number sequences on an individual basis
+            href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
+          - name: Set up number sequences using a wizard
+            href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
+        - name: Organizations and organizational hierarchies
           items:
-          - name: Creating a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
-          - name: Workflow type checklist
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
-          - name: Create a workflow category
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
-          - name: Create a query for a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
-          - name: Create a new workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
-          - name: Create a workflow document class
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
-          - name: Create a SubmitToWorkflow class
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-          - name: Associate a workflow document class with a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
-        - name: Workflow types report
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
-        - name: Workflow FAQ
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
-      - name: Alerts
-        items:
-        - name: Alerts overview
-          href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
-        - name: Create alert rules
-          href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
-        - name: Batch processing of alerts
-          href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
-        - name: Client alert notifications by email
-          href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-      - name: Case management
-        items:
-        - name: Case management overview
-          href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
-        - name: Plan case security, processes, and categories
-          href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
-      - name: Record templates
-        items:
-        - name: Record templates overview
-          href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
-        - name: Create a record template
-          href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
-        - name: Use a record template to create a new record
-          href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
-      - name: Configure document management
-        href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
-      - name: Configure and send email
-        href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
-      - name: Date/time data and time zones
-        href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json   
+          - name: Organizations and organizational hierarchies overview
+            href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
+          - name: Plan your organizational hierarchy
+            href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create an organization hierarchy
+            href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create legal entities
+            href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create operating units
+            href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
+        - name: Global address book
+          items:
+         - name: Global address book overview
+           href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+         - name: Plan for the global address book and other address books
+           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
+         - name: Configure the global address book
+           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+         - name: Address setup
+           href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
+         - name: Address books FAQ
+           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
+         - name: Configure address books
+           href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
+         - name: Manage location owners
+           href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
+       - name: Workflow system
+         items:
+         - name: Workflow system overview
+           href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+         - name: Workflow system architecture
+           href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+         - name: Workflow elements
+           href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+         - name: Workflow actions
+           href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+         - name: Create workflows
+           items:
+           - name: Create workflows overview
+             href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure workflow properties
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure manual tasks
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure automated tasks
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure approval processes
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure approval steps
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure manual decisions
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure conditional decisions
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure parallel activities
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure parallel branches
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Configure line-item workflows
+             href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+         - name: Configure the Workflow Message Processing batch job as critical
+           href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+         - name: Delegate work items in a workflow
+           href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+         - name: View workflow history
+           href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+         - name: Configure the system to send workflow-related email to users
+           href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+         - name: Workflow types
+           items:
+           - name: Creating a workflow type
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+           - name: Workflow type checklist
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+           - name: Create a workflow category
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+           - name: Create a query for a workflow type
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+           - name: Create a new workflow type
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+           - name: Create a workflow document class
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+           - name: Create a SubmitToWorkflow class
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+           - name: Associate a workflow document class with a workflow type
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+           - name: Workflow types report
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+           - name: Workflow FAQ
+             href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
+       - name: Alerts
+         items:
+         - name: Alerts overview
+           href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
+         - name: Create alert rules
+           href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
+         - name: Batch processing of alerts
+           href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
+         - name: Client alert notifications by email
+           href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
+       - name: Case management
+         items:
+         - name: Case management overview
+           href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
+         - name: Plan case security, processes, and categories
+           href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
+       - name: Record templates
+         items:
+         - name: Record templates overview
+           href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
+         - name: Create a record template
+           href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
+         - name: Use a record template to create a new record
+           href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
+       - name: Configure document management
+         href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
+       - name: Configure and send email
+         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
+       - name: Date/time data and time zones
+         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json   
     - name: Manage personnel
       items:
       - name: Organize your workforce
