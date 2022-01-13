@@ -45,10 +45,10 @@ During the scheduling process, the system also considers the *resource requireme
 - Resource group
 - Capability (For more information, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).)
 
-Note that if either the resource or the resource group are set to infinite capacity, master planning will consider them as infinite capacity.
-
 > [!NOTE]
-> Requirements that are related to human resources, such as skills or certificate requirements, aren't yet supported.
+>
+> - If the resource and/or the resource group are set to infinite capacity, master planning will consider them as infinite capacity.
+> - Requirements that are related to human resources, such as skills or certificate requirements, aren't yet supported.
 
 The feature also supports the **Setup time** and **Run time** operational properties. When you set these properties on a route operation, the scheduling process will create the appropriate setup and process jobs.
 
