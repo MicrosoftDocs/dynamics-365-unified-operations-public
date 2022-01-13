@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Improve performance by optimizing images
+title: Optimize images
 description: This topic explains how to improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce.
 author: mssle
 ms.date: 09/17/2021
@@ -13,7 +13,7 @@ ms.author: sheaton
 ms.search.validFrom: 2021-09-20
 ---
 
-# Improve performance by optimizing images
+# Optimize images
 
 [!include[banner](../includes/banner.md)]
 
@@ -23,8 +23,8 @@ This topic explains how to improve website performance by optimizing image use i
 This topic applies to the following configurations: 
 
 - **Version**: Commerce 10.0.16 or later
-- **Component**: B2C or B2B 
-- **Feature area**: Commerce Website Performance
+- **Component**: Business to consumer (B2C) or business to business (B2B). 
+- **Feature area**: Commerce website performance
 
 ## Prerequisites
 
@@ -32,27 +32,28 @@ Install the Dynamics 365 Commerce online software development kit (SDK). For mor
 
 ## Optimize images
 
-One of the biggest performance hits to a web page can be the downloading of images. You can reduce the size of your images and improve actual and perceived performance using the instructions below.
+One of the biggest performance hits to a web page can be the downloading of images. To reduce the size of your images and improve the actual and perceived performance of your website, follow these steps.
 
-1. Use CSS to generate images for items such as buttons whenever possible.
-2. Upload high quality/resolution marketing or product images to the Commerce site builder [Media Library](../dam-overview.md), where the image resizer will be used automatically during rendering.
-3. Include width and height properties for each image
+1. Use Cascading Style Sheets (CSS) to generate images for items such as buttons whenever possible.
+1. Upload high quality/resolution marketing or product images to the Commerce site builder [Media Library](../dam-overview.md), where the image resizer will be used automatically during rendering.
+1. Include width and height properties for each image as follows:
     1. For each module that uses images, open the **theme.settings.json** file in the **/src/settings** directory in the SDK install location
     2. Locate the module you wish to update. 
     3. Ensure the image properties include width and height parameters. Learn more: [Configure theme settings](../e-commerce-extensibility/configure-theme-settings.md)
-4. Disable lazy loading for images. 
-    1. Open Commerce Site Builder
-    2. Navigate to the module with an image that should not be lazy loaded
-    3. Select the checkbox next to "Disable Lazy Load"
+1. Disable lazy loading for images as follows:
+    1. Open Commerce site builder
+    2. Navigate to the module with an image that should not be lazy loaded.
+    3. Select the **Disable Lazy Load** checkbox.
     4. Save, preview, and publish your content.
 
 > [!NOTE]
-> For a **Product collection** module, ensure lazy loading is enabled by selecting the **Enable module lazy load** check box.
+> For product collection modules, lazy loading is disabled by clearing the **Enable module lazy load** checkbox.
+
 ## Validate 
 
 Use one or more of the following options to validate that the module was successfully excluded.
 
-- **Description or Purpose**: Verify page performance
-- **Steps to Run**:  Run performance tests before and after optimizing your images
-- **Passing Result**: Performance is improved after optimizing your images
+- **Description or Purpose**: Verify page performance.
+- **Steps to Run**:  Run performance tests before and after optimizing your images.
+- **Passing Result**: Performance is improved after optimizing your images.
   
