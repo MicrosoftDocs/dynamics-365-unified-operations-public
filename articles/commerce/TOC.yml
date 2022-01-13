@@ -712,6 +712,10 @@
           href: sync-product-ratings.md
         - name: Enable manual publishing of ratings and reviews by a moderator
           href: manual-publish-rating-reviews.md
+        - name: Import and export ratings and reviews
+          href: import-export-reviews.md
+        - name: Configure Service-to-Service authentication
+          href: service-to-service-auth.md
         - name: Ratings and reviews FAQ
           href: ratings-reviews-faq.md
       - name: Manage your inventory  
