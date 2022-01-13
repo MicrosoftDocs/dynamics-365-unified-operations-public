@@ -3757,6 +3757,8 @@
             href: troubleshooting/warehousing/certification-path-app-connection-error.md
           - name: Trust anchor for certification path not found when updating and migrating to WMS
             href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+        - name: Processing issues occur after installing a scale unit warehouse workload
+          href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory
           href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
         - name: Picking work can't be unblocked because of unfinished replenishment work
