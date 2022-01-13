@@ -27,6 +27,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Sometimes tests have to test multiple input values for the same feature. It is good practice to not test multiple things in the same test method, because that makes troubleshooting and reporting more difficult. Instead of creating multiple methods, the SysTest framework now supports the **SysTestRow** attribute similar to the **DataRow** attribute in **C#**.
 
+    > [!NOTE]
+    > The SysTestRow attribute is available in versions 10.0.25 (PU49) and newer.
+
 ## SysTestRow
 
 In this example we have a method that squares a number, which we would like to test.
