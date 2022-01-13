@@ -463,8 +463,10 @@
         - name: Configure and send email
           href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
         - name: Date/time data and time zones
-          href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json   
-    - name: Manage personnel
+          href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
+    - name: Task management
+      href: hr-task-mgmt.md
+    - name: Personnel management
       items:
       - name: Organize your workforce
         href: hr-personnel-departments-jobs-positions.md
@@ -516,7 +518,7 @@
         href: hr-personnel-set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
         href: hr-personnel-maintain-employee-injury-illness-information.md
-    - name: Set up compensation plans
+    - name: Compensation management
       items:
       - name: Compensation plans overview
         href: hr-compensation-overview.md
@@ -538,7 +540,7 @@
         href: hr-compensation-process.md
       - name: Mark an employee as ready to pay
         href: hr-compensation-payroll.md
-    - name: Manage benefits
+    - name: Benefits 
       items:
       - name: Benefits management
         items:
@@ -626,7 +628,7 @@
         href: hr-benefits-expiration-dates.md
       - name: Generate ACA reports
         href: hr-benefits-aca-reports.md
-    - name: Manage leave and absence
+    - name: Leave and absence
       items:
       - name: Overview
         href: hr-leave-and-absence-overview.md
@@ -666,7 +668,7 @@
         href: hr-leave-and-absence-buy-sell-workflow.md   
       - name: Buy and sell leave
         href: hr-employee-self-service-buy-sell-leave.md
-    - name: Develop employees
+    - name: Employee development
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
@@ -686,7 +688,7 @@
         href: hr-develop-create-goal.md
       - name: Create a performance review
         href: hr-develop-create-performance-review.md
-    - name: Create courses
+    - name: Learning
       items:
       - name: Set up training courses
         href: hr-learning-courses.md
