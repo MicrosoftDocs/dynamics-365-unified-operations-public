@@ -2,9 +2,9 @@
 # required metadata
 
 title: Go-live and update 
-description: This topic provides information to help you prepare to go-live or update your Microsoft Dynamics 365 Commerce implementation project.
+description: This topic provides information about the tasks you should complete to help you go-live with or update your Microsoft Dynamics 365 Commerce implementation project.
 author: mssle
-ms.date: 09/17/2021
+ms.date: 01/13/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -24,7 +24,7 @@ This topic provides information about the tasks you should complete to help you 
 
 Before you begin, download a copy of the current go-live checklist from https://aka.ms/d365fogolivechecklist. 
 
-## Performance
+## Improve performance
 
 During the time that you are completing the go-live or upgrade process, you can take the opportunity to make performance improvements. 
 
