@@ -4,7 +4,7 @@
 title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
 author: analpert
-ms.date: 12/03/2021
+ms.date: 1/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,12 +58,26 @@ As part of the improvements to the statement posting feature, three new paramete
 
 - **Disable counting required** – When this option is set to **Yes**, the posting process for a statement continues, even if the difference between the counted amount and the transaction amount on the statement is outside the threshold that is defined on the **Statement** FastTab for stores.
 
+> [!NOTE]
+> As of update 10.0.14, when Retail statements - Trickle feed feature is enabled, the Post inventory batch job is no longer applicable and cannot be run.
+
 Additionally, the following parameters have been introduced on the **Batch processing** FastTab on the **Posting** tab of the **Commerce parameters** page: 
 
 - **Maximum number of parallel statement posting** – This field defines the number of batch tasks that will be used to post multiple statements. 
 - **Max thread for order processing per statement** – This field represents the maximum number of threads used by the statement posting batch job to create and invoice sales orders for a single statement. The total number of threads that will be used by the statement posting process will be computed based on the value in this parameter multiplied by the value in the **Maximum number of parallel statement posting** parameter. Setting the value of this parameter too high can negatively impact the performance of the statement posting process.
 - **Max transaction lines included in aggregation** – This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in an aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
 - **Maximum number of threads to validate store transactions** – This field defines the number of threads that will be used to validate transactions. Validating transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Commerce parameters** page. This needs to defined even if gift cards are not used by the organization.
+
+Recommended values for Batch processing FastTab on the Posting tab of the Commerce parameters page. These parameters should be tested and tailored to the specific deployment configuration and available infrastructure. Increasing any of these recommended values may have an adverse impact on other batch processing and should be validated.
+
+| Parameters                                               | Recommended value        | Details |
+|----------------------------------------------------------|------------|-------------|
+| Maximum number of parallel statement posting             | Set this value to the same number of batch tasks available for the batch group running the Statement job.
+
+General rule: Number of AOS multiplied by number of batch tasks available per AOS.    | This is not applicable when the Retail statements - Trickle feed feature is enabled. |
+| Max thread for order processing per statement            | Marked     | The transactions that are in scope for the statement are identified based on the statement parameters, and they are marked with the statement ID.                 |
+| Max transaction lines included in aggregation            | Calculated | The statement lines are computed and shown. |
+| Maximum number of threads to validate store transactions |
 
 > [!NOTE]
 > All settings and parameters that are related to statement postings, and that are defined on stores and on the **Commerce parameters** page, are applicable to the improved statement posting feature.
