@@ -1,34 +1,25 @@
 ---
 title: SysTestRow attribute to test multiple values
-description: This topic outlines the systestrow attributes that can be used with SysTest methods for the purpose of testing multiple values.
+description: This topic outlines the **SysTestRow** attributes that can be used with SysTest methods for the purpose of testing multiple values.
 author: jorisdg
-ms.date: 01/22/2019
+ms.date: 01/13/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
-ms.search.validFrom: 2017-11-15
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2022-01-13
 
 ---
 
-# Unit Testing Multiple Values
+# SysTestRow attribute to test multiple values
 
 [!include [banner](../includes/banner.md)]
 
 Sometimes tests have to test multiple input values for the same feature. It is good practice to not test multiple things in the same test method, because that makes troubleshooting and reporting more difficult. Instead of creating multiple methods, the SysTest framework now supports the **SysTestRow** attribute similar to the **DataRow** attribute in **C#**.
 
     > [!NOTE]
-    > The SysTestRow attribute is available in versions 10.0.25 (PU49) and newer.
+    > The SysTestRow attribute is available in versions 10.0.25 and later.
 
 ## SysTestRow
 
@@ -64,7 +55,7 @@ public class MathTests extends SysTestCase
 }
 ```
 
-**Visual Studio** will show each test row as a separate numbered result.
+Visual Studio will show each test row as a separate numbered result.
 
 - `SquareTests#1`
 - `SquareTests#2`
@@ -74,7 +65,7 @@ public class MathTests extends SysTestCase
 
 ## SysTestRowInactive
 
-Any **SysTestRow** attribute can be replaced with the **SysTestRowInactive** attribute, causing **Visual Studio** to show that test row as a disabled test.
+Any **SysTestRow** attribute can be replaced with the **SysTestRowInactive** attribute, causing Visual Studio to show that test row as a disabled test.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
