@@ -836,6 +836,8 @@
           href: asset-leasing/set-up-lease-books.md
         - name: Create a lease group
           href: asset-leasing/create-lease-group.md
+        - name: Payment amount type
+          href: asset-leasing/Payment-amount-type.md
         - name: Set up index rates
           href: asset-leasing/set-up-index-rate-types.md
         - name: Set up expense types
