@@ -18,8 +18,8 @@ ms.search.validFrom: 2022-01-13
 
 Sometimes tests have to test multiple input values for the same feature. It is good practice to not test multiple things in the same test method, because that makes troubleshooting and reporting more difficult. Instead of creating multiple methods, the SysTest framework now supports the **SysTestRow** attribute similar to the **DataRow** attribute in **C#**.
 
-    > [!NOTE]
-    > The SysTestRow attribute is available in versions 10.0.25 and later.
+> [!NOTE]
+> The SysTestRow attribute is available in versions 10.0.25 and later.
 
 ## SysTestRow
 
