@@ -464,8 +464,18 @@
           href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
         - name: Date/time data and time zones
           href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
-    - name: Task management
-      href: hr-task-mgmt.md
+    - name: Employee self service
+      items:
+      - name: Employee and Manager self service overview
+        href: hr-employee-manager-self-service-overview.md
+      - name: Create custom links in Manager self service
+        href: hr-employee-manager-self-service-custom-links.md
+      - name: Change Employee self service workspace name
+        href: hr-employee-self-service-workspace-name.md
+      - name: Edit personal information
+        href: hr-employee-manager-self-service-edit-personal-information.md
+      - name: Restrict editing of personal information
+        href: hr-employee-self-service-restrict-editing.md
     - name: Personnel management
       items:
       - name: Organize your workforce
@@ -518,6 +528,8 @@
         href: hr-personnel-set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
         href: hr-personnel-maintain-employee-injury-illness-information.md
+    - name: Task management
+      href: hr-task-mgmt.md
     - name: Compensation management
       items:
       - name: Compensation plans overview
@@ -710,18 +722,6 @@
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
-    - name: Set up Employee and Manager self service
-      items:
-      - name: Employee and Manager self service overview
-        href: hr-employee-manager-self-service-overview.md
-      - name: Create custom links in Manager self service
-        href: hr-employee-manager-self-service-custom-links.md
-      - name: Change Employee self service workspace name
-        href: hr-employee-self-service-workspace-name.md
-      - name: Edit personal information
-        href: hr-employee-manager-self-service-edit-personal-information.md
-      - name: Restrict editing of personal information
-        href: hr-employee-self-service-restrict-editing.md
     - name: Use the Workflow system
       items:
         - name: Workflow system overview
