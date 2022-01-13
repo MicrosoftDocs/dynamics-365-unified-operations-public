@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 07/28/2021
+ms.date: 01/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -222,9 +222,13 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     # When UpgradeState shows RollingForwardCompleted, the upgrade is finished
     ```
 
+	> [!NOTE] 
+	> If you receive the error "Upgrading from two different certificates to two different certificates is not allowed", it means that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. Refer to the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section toward the end of this document, and then repeat the steps in this section.  
+
+
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
-Continue this process following [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
+Continue this process following the steps in [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
 ## Update the LocalAgent certificate
 
@@ -275,16 +279,16 @@ You must reinstall the LocalAgent if:
 
 ## Update your current deployment configuration
 
-Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job will probably fail. (This manual update must be done just this one time.)
+Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job may fail. This manual update must be done just this one time.
 
-1. Open your configuration file. You can find the location of this file by running the following command.
+1. Open the configuration file 'config.json' on your agent file share. This will be in a share similar to the following: \\\\fileserver\agent\wp\environmentID\StandaloneSetup-123456. You can find the location of this file by running the following SQL statement on the orchestrator database.
 
     ```sql
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
     ```
 
     > [!NOTE]
-    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in LCS. 
+    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in LCS (this is the GUID value associated with your environment).
 
     The beginning of the file should resemble the following example.
 
