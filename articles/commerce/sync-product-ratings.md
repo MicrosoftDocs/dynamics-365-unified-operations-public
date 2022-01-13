@@ -135,5 +135,15 @@ The following illustration shows an example of product ratings in call center ch
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
+[Sync product ratings](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

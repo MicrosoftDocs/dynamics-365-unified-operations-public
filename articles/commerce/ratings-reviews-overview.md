@@ -57,5 +57,13 @@ The ratings and reviews solution also provides a business intelligence (BI) temp
 
 [Sync product ratings in Dynamics 365 Commerce](sync-product-ratings.md)
 
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
