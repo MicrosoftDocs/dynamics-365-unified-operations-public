@@ -42,7 +42,7 @@ The standard compilation unit is the same as for other .NET language. If any met
 
 If you are upgrading code from previous versions (AX2012 and earlier), note that the CIL helper methods such as `Global::runClassMethodIL` have been removed, because they're no longer relevant.
 
-For more information, see [What is "managed code"?](/dotnet/standard/managed-code.md).
+For more information, see [What is "managed code"?](/dotnet/standard/managed-code).
 
 ### The Ignore list
 
