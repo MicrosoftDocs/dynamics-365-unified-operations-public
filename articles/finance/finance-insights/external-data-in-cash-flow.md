@@ -29,7 +29,6 @@ ms.dyn365.ops.version: AX 10.0.12
 # External data in cash flow forecasts
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 External data can be entered or imported into cash flow forecasts. This topic describes the setup steps that are specific to the use of external data and that enable the external data to be included in a cash flow forecast.
 
