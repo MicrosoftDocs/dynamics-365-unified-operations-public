@@ -223,12 +223,12 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```
 
 	> [!NOTE] 
-	> If you receive the error **Upgrading from two different certificates to two different certificates is not allowed**, it means that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. See the section [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) towards the end of this document, and then repeat the steps in this section.  
+	> If you receive the error "Upgrading from two different certificates to two different certificates is not allowed", it means that you didn't clean up old Service Fabric certificates on the previous certificate rotation exercise. Refer to the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section toward the end of this document, and then repeat the steps in this section.  
 
 
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
-Continue this process following [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
+Continue this process following the steps in [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
 ## Update the LocalAgent certificate
 
@@ -279,7 +279,7 @@ You must reinstall the LocalAgent if:
 
 ## Update your current deployment configuration
 
-Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job will probably fail. (This manual update must be done just this one time.)
+Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job may fail. This manual update must be done just this one time.
 
 1. Open the configuration file 'config.json' on your agent file share. This will be in a share similar to the following: \\\\fileserver\agent\wp\environmentID\StandaloneSetup-123456. You can find the location of this file by running the following SQL statement on the orchestrator database.
 
