@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/supply-chain/pim/hazardous-materials-pim.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/hazmat-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/add-welcome-message.md",
       "redirect_url": "index",
       "redirect_document_id": "false"
