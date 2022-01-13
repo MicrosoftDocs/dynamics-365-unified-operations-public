@@ -1,6 +1,6 @@
 ---
-title: SysTestRow attribute to test multiple values
-description: This topic outlines the **SysTestRow** attributes that can be used with SysTest methods for the purpose of testing multiple values.
+title: SysTestRow attribute for testing multiple values
+description: This topic outlines the SysTestRow attribute that can be used with SysTest methods to test multiple values.
 author: jorisdg
 ms.date: 01/13/2022
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.validFrom: 2022-01-13
 
 ---
 
-# SysTestRow attribute to test multiple values
+# SysTestRow attribute for testing multiple values
 
 [!include [banner](../includes/banner.md)]
 
 [!include [preview banner](../includes/preview-banner.md)]
 
-Sometimes tests have to test multiple input values for the same feature. It is good practice to not test multiple things in the same test method, because that makes troubleshooting and reporting more difficult. Instead of creating multiple methods, the SysTest framework now supports the **SysTestRow** attribute similar to the **DataRow** attribute in **C#**.
+Sometimes, tests must test multiple input values for the same feature. To make troubleshooting and reporting easier, you should avoid testing multiple things in the same test method. Instead of creating multiple methods, you can use the **SysTestRow** attribute that the SysTest framework now supports. This attribute works like the **DataRow** attribute in C\#.
 
 > [!NOTE]
-> The SysTestRow attribute is available in versions 10.0.25 and later.
+> The **SysTestRow** attribute is available in version 10.0.25 and later.
 
-## SysTestRow
+## SysTestRow example
 
-In this example we have a method that squares a number, which we would like to test.
+In this example, you have a method that squares a number.
 
 ```xpp
 public class MyMath
@@ -37,7 +37,7 @@ public class MyMath
 }
 ```
 
-We may want to test this method with a few different numbers that include special cases that should work. We can write the following test method which uses the **SysTestRow** attribute to test multiple values using the same method.
+You want to test this method by using a few different numbers. Among these numbers, you want to include special cases that should work. Therefore, you write the following test method that uses the **SysTestRow** attribute to test multiple values in the same method.
 
 ```xpp
 public class MathTests extends SysTestCase
@@ -57,7 +57,7 @@ public class MathTests extends SysTestCase
 }
 ```
 
-Visual Studio will show each test row as a separate numbered result.
+Microsoft Visual Studio shows each test row as a separate numbered result.
 
 - `SquareTests#1`
 - `SquareTests#2`
@@ -67,7 +67,6 @@ Visual Studio will show each test row as a separate numbered result.
 
 ## SysTestRowInactive
 
-Any **SysTestRow** attribute can be replaced with the **SysTestRowInactive** attribute, causing Visual Studio to show that test row as a disabled test.
-
+Any **SysTestRow** attribute can be replaced with the **SysTestRowInactive** attribute. In this case, Visual Studio shows the test row as a disabled test.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
