@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-09-20
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about the tasks you should complete to help you go-live with or update your Microsoft Dynamics eCommerce implementation project. It points to content that will help you configure your system to work smoothly and effectively. 
+This topic provides information about the tasks you should complete to help you go-live with or update your Microsoft Dynamics 365 Commerce implementation project. It points to content that will help you configure your system to work smoothly and effectively. 
 
 > [!NOTE]
 > The list of topics provided will grow over time. This is not an exhaustive list of all possible items to be considered during your release.
@@ -34,7 +34,7 @@ Website performance is often impacted by image downloads. You can improve websit
 
 ### Reduce JavaScript by excluding unused modules
 
-You can improve website perforamnce by excluding unused JavaScript modules in Commerce. For more information, see [Reduce JavaScript by excluding unused modules](performance-reduce-javascript.md).
+You can improve website performance by excluding unused JavaScript modules in Commerce. For more information, see [Reduce JavaScript by excluding unused modules](performance-reduce-javascript.md).
 
 
 
