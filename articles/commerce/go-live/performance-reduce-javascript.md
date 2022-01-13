@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Optimize performance by reducing javaScript
-description: This article discusses how to optimize performance by reducing the JavaScript used in your implementation.
+title: Reduce JavaScript by excluding unused modules
+description: This topic describes how to optimize performance by reducing the JavaScript used in your Microsoft Dynamics 365 Commerce implementation.
 author: mssle
-ms.date: 09/17/2021
+ms.date: 01/13/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -13,46 +13,27 @@ ms.author: sheaton
 ms.search.validFrom: 2021-09-20
 ---
 
-# Optimize performance by reducing JavaScript
+# Reduce JavaScript by excluding unused modules
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to improve website performance by excluding unused JavaScript modules in Microsoft Dynamics 365 Commerce. 
+This topic describes how to optimize performance by reducing the JavaScript used in your Microsoft Dynamics 365 Commerce implementation. 
 
 Dynamics 365 Commerce comes with a large set of modules referred to as the Commerce [module library](../starter-kit-overview.md). If there are modules that won't be used on your e-commerce site, they can be excluded to reduce the JavaScript chunk size. The excluded modules will not be rendered on the live e-commerce site or available within Commerce site builder when authoring pages.
 
-## When should I use this topic?
+## Configuration
+
 This topic applies to the following configurations:
 
-<table>
-<tr>
-    <th>When your...</th>
-    <th>is...</th>
-<tr>
-    <th>Process</th>
-    <td>Upgrade or Go Live</td>
-</tr>
-<tr>
-    <th>Component</th>
-    <td>B2C eCommerce or B2B eCommerce</td>
-</tr>
-<tr>
-    <th>Feature Area</th>
-    <td>eCommerce Website Performance</td>
-</tr>
-<tr>
-    <th>Version</th>
-    <td>eCommerce version 10.0.16 or later</td>
-</tr>
-</table> 
+- **Version**: Commerce 10.0.16 or later
+- **Component**: Business to consumer (B2C) or business to business (B2B). 
+- **Feature area**: Commerce website performance
 
-## How do I perform this operation?
-
-### Pre-conditions:
+## Prerequisites
 
 - You have installed the Online SDK. For more information, see [Install the online SDK](../dev-itpro/ecommerce-platform-sdk.md).
 
-### Steps to complete:
+## Steps to reduce JavaScript
 
 Exclude unused modules by adding the module name to the **excludeModules** property in the SDK's "/src/settings/platform.settings.json" file using the instructions below. 
 1.	Open a Windows command prompt. 
