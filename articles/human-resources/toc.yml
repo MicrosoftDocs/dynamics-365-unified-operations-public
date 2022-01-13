@@ -268,58 +268,58 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
         - name: Understand Lifecycle Services
           href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
-    - name: Prepare for go-live
-      href: hr-admin-go-live-prepare.md
-    - name: Go-live FAQ
-      href: hr-admin-go-live-faq.md
-    - name: Human Resources infrastructure merge FAQ
-      href: hr-infrastructure-merge-faq.md
-    - name: Documentation resources
-      items:
-      - name: Help system
-        href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
-      - name: Connect the Help system
-        href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-      - name: Custom help overview
-        href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
-      - name: View and export field descriptions
-        href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
-      - name: Task Recorder
-        href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
-      - name: Create documentation or training with Task Recorder
-        href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
-    - name: Troubleshoot Human Resources
-      items:
-      - name: Get support
-        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
-      - name: Optimize performance by scheduling batch jobs after hours
-        href: hr-admin-troubleshooting-batch-jobs.md
-      - name: Optimize performance with auto cleanup tasks
-        href: hr-admin-troubleshooting-batch-history.md
-      - name: Reset stuck batch jobs
-        href: hr-admin-troubleshooting-batch-execution.md
-      - name: Reset Dataverse synchronization
-        href: hr-admin-troubleshooting-dataverse-sync.md
-      - name: Analytic reports aren't updated
-        href: hr-admin-troubleshooting-analytic-reports.md
-      - name: Can't create an environment in the Power Apps Admin center
-        href: hr-admin-troubleshooting-power-apps.md
-      - name: Client disconnects
-        href: hr-admin-troubleshooting-disconnect.md
-      - name: Avoid truncated text in position hierarchy
-        href: hr-admin-troubleshooting-truncate.md
-      - name: Run the compensation process
-        href: hr-admin-troubleshooting-compensation.md
-      - name: Save a task guide to LCS
-        href: hr-admin-troubleshooting-task-guide.md
-      - name: Access private addresses by security role
-        href: hr-admin-troubleshooting-private-addresses.md
-      - name: Human Resources doesn't appear in Dynamics 365 apps
-        href: hr-admin-troubleshooting-not-in-apps.md
-      - name: Reporting options
-        href: hr-admin-troubleshooting-reporting.md
-      - name: Integration FAQ
-        href: hr-admin-troubleshooting-integration.md      
+      - name: Prepare for go-live
+        href: hr-admin-go-live-prepare.md
+      - name: Go-live FAQ
+        href: hr-admin-go-live-faq.md
+      - name: Human Resources infrastructure merge FAQ
+        href: hr-infrastructure-merge-faq.md
+      - name: Documentation resources
+        items:
+        - name: Help system
+          href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
+        - name: Connect the Help system
+          href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
+        - name: Custom help overview
+          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
+        - name: View and export field descriptions
+          href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
+        - name: Task Recorder
+          href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
+        - name: Create documentation or training with Task Recorder
+          href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
+      - name: Troubleshoot Human Resources
+        items:
+        - name: Get support
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
+        - name: Optimize performance by scheduling batch jobs after hours
+          href: hr-admin-troubleshooting-batch-jobs.md
+        - name: Optimize performance with auto cleanup tasks
+          href: hr-admin-troubleshooting-batch-history.md
+        - name: Reset stuck batch jobs
+          href: hr-admin-troubleshooting-batch-execution.md
+        - name: Reset Dataverse synchronization
+          href: hr-admin-troubleshooting-dataverse-sync.md
+        - name: Analytic reports aren't updated
+          href: hr-admin-troubleshooting-analytic-reports.md
+        - name: Can't create an environment in the Power Apps Admin center
+          href: hr-admin-troubleshooting-power-apps.md
+        - name: Client disconnects
+          href: hr-admin-troubleshooting-disconnect.md
+        - name: Avoid truncated text in position hierarchy
+          href: hr-admin-troubleshooting-truncate.md
+        - name: Run the compensation process
+          href: hr-admin-troubleshooting-compensation.md
+        - name: Save a task guide to LCS
+          href: hr-admin-troubleshooting-task-guide.md
+        - name: Access private addresses by security role
+          href: hr-admin-troubleshooting-private-addresses.md
+        - name: Human Resources doesn't appear in Dynamics 365 apps
+          href: hr-admin-troubleshooting-not-in-apps.md
+        - name: Reporting options
+          href: hr-admin-troubleshooting-reporting.md
+        - name: Integration FAQ
+          href: hr-admin-troubleshooting-integration.md      
     - name: Set up Human Resources
       items:
       - name: Configure Human resources parameters
