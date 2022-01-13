@@ -530,28 +530,46 @@
         href: hr-personnel-maintain-employee-injury-illness-information.md
     - name: Task management
       href: hr-task-mgmt.md
-    - name: Compensation management
+    - name: Leave and absence
       items:
-      - name: Compensation plans overview
-        href: hr-compensation-overview.md
-      - name: Set up compensation grids
-        href: hr-compensation-grids.md
-      - name: Develop a compensation structure and plan
-        href: hr-compensation-structure.md
-      - name: Create fixed compensation plans
-        href: hr-compensation-fixed-plans.md
-      - name: Create variable compensation plans
-        href: hr-compensation-variable-plans.md
-      - name: Enroll employees in a fixed compensation plan
-        href: hr-compensation-enroll-employees-fixed.md
-      - name: Enroll employees in a variable compensation plan
-        href: hr-compensation-enroll-employees-variable.md
-      - name: Define compensation process and calculate results
-        href: hr-compensation-define-process.md
-      - name: Process compensation plans
-        href: hr-compensation-process.md
-      - name: Mark an employee as ready to pay
-        href: hr-compensation-payroll.md
+      - name: Overview
+        href: hr-leave-and-absence-overview.md
+      - name: Configure leave and absence parameters
+        href: hr-leave-and-absence-parameters.md
+      - name: Create a working time calendar
+        href: hr-leave-and-absence-working-time-calendar.md
+      - name: Create a leave request workflow
+        href: hr-leave-and-absence-workflow.md
+      - name: Configure leave and absence types
+        href: hr-leave-and-absence-types.md
+      - name: Create a leave and absence plan
+        href: hr-leave-and-absence-plans.md
+      - name: Assign workers to a leave plan
+        href: hr-leave-and-absence-enroll.md
+      - name: Accrue leave and absence plans
+        href: hr-leave-and-absence-accrue.md
+      - name: Suspend leave
+        href: hr-leave-and-absence-suspend-leave.md
+      - name: Leave of absence request
+        href: hr-employee-self-service-request-leave-of-absence.md
+      - name: Manage employee leave
+        href: hr-leave-and-absence-manage-employee-leave.md
+      - name: View analytics for leave and absence
+        href: hr-leave-and-absence-analytics.md
+      - name: Manage leave and absence requests
+        href: hr-employee-self-service-manage-requests.md
+      - name: Request time off
+        href: hr-employee-self-service-request-time-off.md
+      - name: View team and company calendars
+        href: hr-employee-self-service-calendar.md
+      - name: Configure absence manager role
+        href: hr-configure-absence-manager.md
+      - name: Manage buy and sell leave policies
+        href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+      - name: Create buy and sell leave workflows
+        href: hr-leave-and-absence-buy-sell-workflow.md   
+      - name: Buy and sell leave
+        href: hr-employee-self-service-buy-sell-leave.md
     - name: Benefits 
       items:
       - name: Benefits management
@@ -640,46 +658,28 @@
         href: hr-benefits-expiration-dates.md
       - name: Generate ACA reports
         href: hr-benefits-aca-reports.md
-    - name: Leave and absence
+    - name: Compensation management
       items:
-      - name: Overview
-        href: hr-leave-and-absence-overview.md
-      - name: Configure leave and absence parameters
-        href: hr-leave-and-absence-parameters.md
-      - name: Create a working time calendar
-        href: hr-leave-and-absence-working-time-calendar.md
-      - name: Create a leave request workflow
-        href: hr-leave-and-absence-workflow.md
-      - name: Configure leave and absence types
-        href: hr-leave-and-absence-types.md
-      - name: Create a leave and absence plan
-        href: hr-leave-and-absence-plans.md
-      - name: Assign workers to a leave plan
-        href: hr-leave-and-absence-enroll.md
-      - name: Accrue leave and absence plans
-        href: hr-leave-and-absence-accrue.md
-      - name: Suspend leave
-        href: hr-leave-and-absence-suspend-leave.md
-      - name: Leave of absence request
-        href: hr-employee-self-service-request-leave-of-absence.md
-      - name: Manage employee leave
-        href: hr-leave-and-absence-manage-employee-leave.md
-      - name: View analytics for leave and absence
-        href: hr-leave-and-absence-analytics.md
-      - name: Manage leave and absence requests
-        href: hr-employee-self-service-manage-requests.md
-      - name: Request time off
-        href: hr-employee-self-service-request-time-off.md
-      - name: View team and company calendars
-        href: hr-employee-self-service-calendar.md
-      - name: Configure absence manager role
-        href: hr-configure-absence-manager.md
-      - name: Manage buy and sell leave policies
-        href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
-      - name: Create buy and sell leave workflows
-        href: hr-leave-and-absence-buy-sell-workflow.md   
-      - name: Buy and sell leave
-        href: hr-employee-self-service-buy-sell-leave.md
+      - name: Compensation plans overview
+        href: hr-compensation-overview.md
+      - name: Set up compensation grids
+        href: hr-compensation-grids.md
+      - name: Develop a compensation structure and plan
+        href: hr-compensation-structure.md
+      - name: Create fixed compensation plans
+        href: hr-compensation-fixed-plans.md
+      - name: Create variable compensation plans
+        href: hr-compensation-variable-plans.md
+      - name: Enroll employees in a fixed compensation plan
+        href: hr-compensation-enroll-employees-fixed.md
+      - name: Enroll employees in a variable compensation plan
+        href: hr-compensation-enroll-employees-variable.md
+      - name: Define compensation process and calculate results
+        href: hr-compensation-define-process.md
+      - name: Process compensation plans
+        href: hr-compensation-process.md
+      - name: Mark an employee as ready to pay
+        href: hr-compensation-payroll.md      
     - name: Employee development
       items:
       - name: Performance management overview
