@@ -222,6 +222,10 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     # When UpgradeState shows RollingForwardCompleted, the upgrade is finished
     ```
 
+	> [!NOTE] 
+	> If you receive the error **Upgrading from 2 different certificates to 2 different certificates is not allowed**, it means that you didn't clean up old Service Fabric certificates on the previous cert rotation exercise. See the section [Clean up old Service Fabric certificates](certificate-rotation-on-prem#cleanupoldsfcerts) towards the end of this document, and then repeat the steps in this section of the document.  
+
+
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
 Continue this process following [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
@@ -277,14 +281,14 @@ You must reinstall the LocalAgent if:
 
 Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job will probably fail. (This manual update must be done just this one time.)
 
-1. Open your configuration file. You can find the location of this file by running the following command.
+1. Open the configuration file 'config.json' on your agent file share. This will be in a share similar to the following: \\fileserver\agent\wp\environmentID\StandaloneSetup-123456. You can find the location of this file by running the following SQL statement on the Orchestrator database.
 
     ```sql
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
     ```
 
     > [!NOTE]
-    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in LCS. 
+    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in LCS, this is sometimes ferferred to the environmnet name. 
 
     The beginning of the file should resemble the following example.
 
