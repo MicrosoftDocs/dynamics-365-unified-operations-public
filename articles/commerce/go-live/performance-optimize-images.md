@@ -20,6 +20,7 @@ ms.search.validFrom: 2021-09-20
 This topic explains how to improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce during the upgrade or go-live process. 
 
 ## Configuration
+
 This topic applies to the following configurations: 
 
 - **Version**: Commerce 10.0.16 or later
@@ -30,7 +31,7 @@ This topic applies to the following configurations:
 
 Install the Dynamics 365 Commerce online software development kit (SDK). For more information, see [Install the online SDK](../dev-itpro/ecommerce-platform-sdk.md).
 
-## Optimize images
+## Steps to optimize images
 
 One of the biggest performance hits to a web page can be the downloading of images. To reduce the size of your images and improve the actual and perceived performance of your website, follow these steps.
 
@@ -51,7 +52,7 @@ One of the biggest performance hits to a web page can be the downloading of imag
 
 ## Validate 
 
-Use one or more of the following options to validate that the module was successfully excluded.
+Use one or more of the following options to validate that image use has been optimized.
 
 - **Description or Purpose**: Verify page performance.
 - **Steps to Run**:  Run performance tests before and after optimizing your images.
