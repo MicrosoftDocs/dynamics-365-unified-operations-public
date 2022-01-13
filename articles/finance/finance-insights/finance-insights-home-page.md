@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["14151", "intro-internal"]
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -29,12 +29,11 @@ ms.dyn365.ops.version: AX 10.0.13
 # Finance insights home page
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Finance insights provides configurable and extensible solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide (including data from a third party such as consumer report information from a bureau). These intelligent capabilities inform decision making and helps you take action to respond effectively to current and anticipated business challenges. You are responsible for any data used with, or output from, Finance insights.
 
 > [!NOTE]
-> Finance insights preview is available for deployment in the United States of America, Canada, the United Kingdom, Europe, Asia Pacific, Japan, Australia, and New Zealand. Microsoft is incrementally adding support for more regions.
+> Finance insights is available for deployment in the United States of America, Canada, the United Kingdom, Europe, Asia Pacific, Japan, Australia, and New Zealand. Microsoft is incrementally adding support for more regions.
 
 ## Prerequisites
 
@@ -78,7 +77,7 @@ To enable Cash flow forecasting, you must complete a set of steps to build a mac
 
 ### Enable budget proposals
 
-The Budget proposals feature uses a machine learning model along with your organization's historical data to generate a budget proposal. The generated proposal can help you begin a budgeting process that is more effective and efficient than a manual process. For the specific steps to enable this feature, see  [Enable budget proposals](enable-budget-proposal.md). 
+The Budget proposals feature uses a machine learning model along with your organization's historical data to generate a budget proposal. The generated proposal can help you begin a budgeting process that is more effective and efficient than a manual process. For the specific steps to enable this feature, see [Enable budget proposals](enable-budget-proposal.md). 
 
 ## Using Finance insights features
 
@@ -93,7 +92,7 @@ The Budget proposals feature uses a machine learning model along with your organ
 
 The Cash flow forecast capability can help you more accurately estimate your cash position. The intelligent cash flow forecasting is built on top of the existing cash flow forecasting functionality in Dynamics 365 Finance. To review the existing capability, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
-- To learn about the new capabilities in Cash flow forecasts see [Cash flow forecast](cash-flow-forecast-intro.md).
+- To learn about the new capabilities in Cash flow forecasts, see [Cash flow forecast](cash-flow-forecast-intro.md).
 - For information about importing external data to include in your cashflow forecast here, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
 - For information about how to use an AI model to project near term cash flow, see [Cash position](cash-position.md).
 - For information about saving cash flow positions and cash flow forecasts as snapshots, and to compare a snapshot to actuals, see [Snapshots overview](payment-snapshots.md).
