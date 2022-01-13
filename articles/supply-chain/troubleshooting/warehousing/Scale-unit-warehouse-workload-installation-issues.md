@@ -4,7 +4,7 @@ description: This topic describes issues that can occur soon after installing a 
 author: perlynne
 ms.date: 1/13/2022
 ms.topic: troubleshooting
-ms.search.form: 
+ms.search.form: WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
