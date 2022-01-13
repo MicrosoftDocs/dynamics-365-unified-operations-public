@@ -58,3 +58,6 @@ Use one or more of the following options to validate that image use has been opt
 - **Steps to Run**:  Run performance tests before and after optimizing your images.
 - **Passing Result**: Performance is improved after optimizing your images.
   
+ ## Additional resources
+ 
+ [Best practices for Dynamics 365 Commerce development](../e-commerce-extensibility/best-practices-dev.md)
