@@ -155,7 +155,7 @@
             - name: Data entities overview
               href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Configuration data projects
-             href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+              href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
            - name: Copy configuration data between companies or legal entities
              items:
              - name: Copy configuration data overview
