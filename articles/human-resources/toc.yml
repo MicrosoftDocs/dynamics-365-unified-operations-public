@@ -268,26 +268,26 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
         - name: Understand Lifecycle Services
           href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
-       - name: Prepare for go-live
-         href: hr-admin-go-live-prepare.md
-       - name: Go-live FAQ
-         href: hr-admin-go-live-faq.md
-       - name: Human Resources infrastructure merge FAQ
-         href: hr-infrastructure-merge-faq.md
-       - name: Documentation resources
-         items:
-         - name: Help system
-           href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
-         - name: Connect the Help system
-           href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-         - name: Custom help overview
-           href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
-         - name: View and export field descriptions
-           href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
-         - name: Task Recorder
-           href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
-         - name: Create documentation or training with Task Recorder
-           href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Prepare for go-live
+          href: hr-admin-go-live-prepare.md
+        - name: Go-live FAQ
+          href: hr-admin-go-live-faq.md
+        - name: Human Resources infrastructure merge FAQ
+          href: hr-infrastructure-merge-faq.md
+        - name: Documentation resources
+          items:
+          - name: Help system
+            href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
+          - name: Connect the Help system
+            href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
+          - name: Custom help overview
+            href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
+          - name: View and export field descriptions
+            href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
+          - name: Task Recorder
+            href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create documentation or training with Task Recorder
+            href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
        - name: Troubleshoot Human Resources
          items:
          - name: Get support
