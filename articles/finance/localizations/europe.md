@@ -99,7 +99,7 @@ This topic includes information and links to resources that can help you set up 
   - [Create and submit VAT report](tasks/create-submit-vat-report.md)
   - [View transactions on settlement for Eastern Europe](emea-transactions-settlement-form.md)
   - [Tax point date (Date of VAT register)](emea-tax-point-date.md)
-  - [Date of vendor VAT register](emea-date-of-vendor-VAT-register.md)
+  - [Date of vendor VAT register](emea-date-vendor-VAT-register.md)
 - [Financial reason feature extension](emea-financial-reason.md)
 
 ## Additional resources
