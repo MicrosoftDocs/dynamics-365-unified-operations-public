@@ -63,7 +63,7 @@ The advance VAT declaration in Spain contains the following information.
 
 | Box – tax base | Description                                                                      | Lookup result / User input parameter              |
 |----------------|----------------------------------------------------------------------------------|---------------------------------------------------|
-| **58**         | **Simplified regime result**                                                     | **User input parameter in the report dialog box** |
+| 58        | Simplified regime result                                                     | User input parameter in the report dialog box |
 | 59             | Intra-community deliveries of goods and services.                                | EUSales                                           |
 | 60             | Exports and similar operations.                                                  | Exports                                           |
 | 61             | Exempt operations or investments that give rise to the right to deduct.          | ExemptOperations                                  |
@@ -155,12 +155,11 @@ IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registrat
 
 ### Import ER configurations
 
-Open the **Electronic reporting** workspace, and import the following versions
-or later of these ER formats:
+Open the **Electronic reporting** workspace, and import the latest versions of these ER formats:
 
--   VAT Declaration Excel (ES).version.101.28.17.xml
+-   VAT Declaration Excel (ES)
 
--   VAT Declaration TXT (ES).version.101.28.xml
+-   VAT Declaration TXT (ES)
 
 For more information, see [Download ER configurations from the Global repository
 of Configuration
@@ -299,10 +298,7 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 | Field                                 | Description                                                                                                                                                                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Settlement period                     | Select the settlement period.                                                                                                                                                                                                        |
-| Sales tax payment version             | Select one of the following values:</br>-   **Original** – Generate a report for the sales tax transactions of the
-    original sales tax payment or before the sales tax payment is generated.</br>  -   **Corrections** – Generate a report for the sales tax transactions of all
-    the subsequent sales tax payments for the period.</br>-   **Total list** – Generate a report for all the sales tax transactions for
-    the period, including the original and all corrections.                                                                                                                                                                                              |
+| Sales tax payment version             | Select one of the following values:</br>-**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</br>-**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</br>-**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.|
 | From date                             | Select the start date of the reporting period.                                                                                                                                                                                       |
 | Previous period amounts to compensate | Enter the amount that should be exported to box 110, "Amounts to be compensated pending from previous periods."                                                                                                                      |
 | Previous period amounts to offset     | Enter the amount that should be exported to box 78, "Amounts to be offset from previous periods applied in this period."                                                                                                             |
@@ -322,9 +318,7 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 | Field                     | Description                                    |
 |---------------------------|------------------------------------------------|
 | Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:   -   **Original** – Generate the original sales tax payment for the settlement
-    period. </br> -   **Latest corrections** – Generate a correction sales tax payment after the
-    original sales tax payment for the settlement period was created.       |
+| Sales tax payment version | Select one of the following values:</br>-   **Original** – Generate the original sales tax payment for the settlement period. </br> -   **Latest corrections** – Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.       |
 | From date                 | Select the start date of the reporting period. |
 
 3.  Select **OK**.
@@ -415,10 +409,8 @@ that you imported earlier from the LCS Shared asset library.
 | **Field**                                                                          | **Description**                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Settlement period                                                                  | Select the settlement period. If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.           |
-| Tax declaration version                                                            | Select one of the following values:  </br>   -   **Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated. </br>-   **Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.  </br>  -   **Total list** – Generate a report for all the sales tax transactions for
-    the period, including the original and all corrections.                                                                                                                                                                                        |
-| Type of declaration                                                                | Select the type of declaration: </br> -   **Income** – Select this value if the VAT settlement result is positive. This value is the default value.</br>-   **Refund** – Select this value if the VAT settlement result is negative, and you're requesting a refund.</br>-   **Request for compensation** – Select this value if the VAT settlement result is negative, and you aren't requesting a refund.</br>-   **No activity** – Select this value if there was no activity during the period.</br>-   **Tax current account – income** – Select this value if the VAT settlement
-    result is positive, and tax flows are managed on a specific bank account.</br>                                                                                                                                                                                            |
+| Tax declaration version                                                            | Select one of the following values:  </br>   -   **Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated. </br>-   **Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.  </br>  -   **Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections. |
+| Type of declaration                                                                | Select the type of declaration: </br> -   **Income** – Select this value if the VAT settlement result is positive. This value is the default value.</br>-   **Refund** – Select this value if the VAT settlement result is negative, and you're requesting a refund.</br>-   **Request for compensation** – Select this value if the VAT settlement result is negative, and you aren't requesting a refund.</br>-   **No activity** – Select this value if there was no activity during the period.</br>-   **Tax current account – income** – Select this value if the VAT settlement result is positive, and tax flows are managed on a specific bank account.</br>-   **Tax current account – refund** – Select this value if the VAT settlement result is negative, and tax flows are managed on a specific bank account.|
 | Taxpayer registered in the Monthly Refund Register                                 | Set this option to **Yes** or **No**.                                                                                                                                                                                                |
 | Joint self-assessment                                                              | Set this option to **Yes** if this declaration is a joint self-assessment.                                                                                                                                                           |
 | Taxpayer is under the special regime of the Cash criterion                         | Set this option to **No**.                                                                                                                                                                                                           |
@@ -434,10 +426,7 @@ that you imported earlier from the LCS Shared asset library.
 | Previous declaration supporting number                                             | Enter the number of the previous declaration that the supplementary declaration is being generated for.                                                                                                                              |
 | To deduct supplementary declaration                                                | Enter the amount that should be exported to box 70, "To deduct (Exclusively in the case of supplementary self-assessment. Result of the previous statements.)."                                                                      |
 | Declaration of no activity                                                         | Set this option to **Yes** or **No**.                                                                                                                                                                                                |
--   **Tax current account – refund** – Select this value if the VAT settlement
-    result is negative, and tax flows are managed on a specific bank account.
-
-1.  Select the **Attachments** button (paper clip symbol) in the upper-right
+15.  Select the **Attachments** button (paper clip symbol) in the upper-right
     corner of the page, download the file, and use it for your submission to the
     tax authority.
 
@@ -466,7 +455,7 @@ legal entities.
 >   existing records, this field shows the identifier of the current legal
 >   entity.
 
-1.  In the **Datasources setup** grid, add a line for each additional legal
+5.  In the **Datasources setup** grid, add a line for each additional legal
     entity that must be included in reporting. For each new line, set the
     following fields.
 
@@ -482,7 +471,7 @@ legal entities.
 | Company                | Select the ID of the legal entity.                                                                                            |
 | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**.                                 |
 
-2.  For each new line, select **Edit query**, and specify a related settlement
+6.  For each new line, select **Edit query**, and specify a related settlement
     period for the legal entity that is specified in the **Company** field on
     the line.
 
