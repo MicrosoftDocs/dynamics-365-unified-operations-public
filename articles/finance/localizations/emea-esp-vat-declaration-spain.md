@@ -30,12 +30,12 @@ The advance VAT declaration in Spain contains the following information.
 
 | Box – tax base     | Box – rate %       | Box – tax amount | Description                                                                           | Lookup result / Total                                                                                                 |
 |--------------------|--------------------|------------------|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| 01                 | 02                 | 03               | VAT accrued - General regime - Super reduced rate.                                    | VATAccruedGeneralRegimeSuperReduced UseTaxGeneralRegimeSuperReduced (01/03/28/29)                                     |
-| 04                 | 05                 | 06               | VAT accrued - General regime - Reduced rate.                                          | VATAccruedGeneralRegimeReduced UseTaxGeneralRegimeReduced (04/06/28/29)                                               |
-| 07                 | 08                 | 09               | VAT accrued - General regime - Standard rate.                                         | VATAccruedGeneralRegimeStandard UseTaxGeneralRegimeStandard (07/09/28/29)                                             |
-| 10                 | Not applicable     | 11               | VAT accrued - Intra-community acquisitions of goods and services.                     | VATAccruedEUPurchase UseTaxEUPurchaseCurrentGoodsServices (10/11/36/37) UseTaxEUPurchaseInvestmentGoods (10/11/38/39) |
-| 12                 | Not applicable     | 13               | VAT accrued - Other operations with investment by the taxpayer (except EU purchases). | VATAccruedOtherOperationsInvestment UseTaxOtherOperationsInvestment (12/13/38/39)                                     |
-| 14                 | Not applicable     | 15               | Modification of bases and fees                                                        | VATAccruedModifications UseTaxModificationsGoodsServices (14/15/36/37) UseTaxModificationsInvestment (14/15/38/39)    |
+| 01                 | 02                 | 03               | VAT accrued - General regime - Super reduced rate.                                    | VATAccruedGeneralRegimeSuperReduced</br>UseTaxGeneralRegimeSuperReduced (also reported in boxes 28/29)                                     |
+| 04                 | 05                 | 06               | VAT accrued - General regime - Reduced rate.                                          | VATAccruedGeneralRegimeReduced</br>UseTaxGeneralRegimeReduced (also reported in boxes 28/29)                                               |
+| 07                 | 08                 | 09               | VAT accrued - General regime - Standard rate.                                         | VATAccruedGeneralRegimeStandard</br>UseTaxGeneralRegimeStandard (also reported in boxes 28/29)                                             |
+| 10                 | Not applicable     | 11               | VAT accrued - Intra-community acquisitions of goods and services.                     | VATAccruedEUPurchase</br> UseTaxEUPurchaseCurrentGoodsServices (also reported in boxes 36/37)</br>UseTaxEUPurchaseInvestmentGoods (also reported in boxes 38/39) |
+| 12                 | Not applicable     | 13               | VAT accrued - Other operations with investment by the taxpayer (except EU purchases). | VATAccruedOtherOperationsInvestment</br>UseTaxOtherOperationsInvestment (also reported in boxes 38/39)                                     |
+| 14                 | Not applicable     | 15               | Modification of bases and fees                                                        | VATAccruedModifications</br>UseTaxModificationsGoodsServices (also reported in boxes 36/37)</br>UseTaxModificationsInvestment (also reported in boxes 38/39)    |
 | 16                 | 17                 | 18               | Equivalence surcharge - Super reduced rate.                                           | EquivalenceSurchargeSuperReduced                                                                                      |
 | 19                 | 20                 | 21               | Equivalence surcharge - Reduced rate.                                                 | EquivalenceSurchargeReduced                                                                                           |
 | 22                 | 23                 | 24               | Equivalence surcharge - Standard rate.                                                | EquivalenceSurchargeStandard                                                                                          |
@@ -46,11 +46,11 @@ The advance VAT declaration in Spain contains the following information.
 
 | Box – tax base     | Box – tax amount | Description                                                                            | Lookup result / Total                                                                                                                                                  |
 |--------------------|------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 28                 | 29               | VAT deduction - Amounts collected in current internal operations.                      | VATDeductionCurrentInternalOperations UseTaxGeneralRegimeSuperReduced (01/03/28/29) UseTaxGeneralRegimeReduced (04/06/28/29) UseTaxGeneralRegimeStandard (07/09/28/29) |
+| 28                 | 29               | VAT deduction - Amounts collected in current internal operations.                      | VATDeductionCurrentInternalOperations UseTaxGeneralRegimeSuperReduced (also reported in boxes 01/03)</br>UseTaxGeneralRegimeReduced (also reported in boxes 04/06)</br>UseTaxGeneralRegimeStandard (also reported in boxes 07/09) |
 | 30                 | 31               | VAT deduction - Amounts collected in internal operations with investment goods.        | VATDeductionInvestmentInternalOperations                                                                                                                               |
 | 32                 | 33               | VAT deduction - Amounts collected on imports of current goods.                         | VATDeductionImportsCurrentGoods                                                                                                                                        |
 | 34                 | 35               | VAT deduction - Amounts collected on imports of investment goods.                      | VATDeductionImportsInvestmentGoods                                                                                                                                     |
-| 36                 | 37               | VAT deduction - Intra-community acquisitions of current goods and services.            | VATDeductionEUPurchaseCurrentGoodsServices UseTaxEUPurchaseCurrentGoodsServices (10/11/36/37) UseTaxEUPurchaseInvestmentGoods (10/11/38/39)                            |
+| 36                 | 37               | VAT deduction - Intra-community acquisitions of current goods and services.            | VATDeductionEUPurchaseCurrentGoodsServices</br>UseTaxEUPurchaseCurrentGoodsServices (also reported in boxes 10/11)</br>UseTaxEUPurchaseInvestmentGoods (also reported in boxes 10/11)                            |
 | 38                 | 39               | VAT deduction - Intra-community acquisitions of investment goods.                      | VATDeductionEUPurchaseInvestmentGoods                                                                                                                                  |
 | 40                 | 41               | VAT deduction - Rectification of deductions.                                           | VATDeductionRectification                                                                                                                                              |
 | Not applicable     | 42               | 42 VAT deduction - Compensations Special Regime A.G. and P.                            | VATDeductionSpecialRegime                                                                                                                                              |
@@ -190,30 +190,7 @@ VAT declaration.
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Lookup result          | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                                                               |
 | Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
-| Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:  |
-
--   **Purchase**
-
--   **PurchaseExempt** (tax-exempt purchase)
-
--   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)
-
--   **Sales**
-
--   **SalesExempt** (tax-exempt sale)
-
--   **SalesReverseCharge** (tax payable from a purchase reverse charge or a
-    sales reverse charge)
-
--   **Use tax**
-
-For each transaction classifier, a classifier for the credit note is also
-available. For example, one of these classifiers is **PurchaseCreditNote**
-(purchase credit note).
-
-Be sure to create two lines for each sales tax code: one that has the
-transaction classifier value and one that has the transaction classifier for the
-credit note value.
+| Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: </br>-   **Purchase**</br>-   **PurchaseExempt** (tax-exempt purchase)</br>-   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</br>-   **Sales**</br>-   **SalesExempt** (tax-exempt sale)</br>-   **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</br>-   **Use tax**. </br>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</br>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value. |
 
 >   **Note:** Associate all sales tax codes with lookup results. If any sales
 >   tax codes should not generate values on the VAT declaration, associate them
@@ -221,18 +198,16 @@ credit note value.
 
 ![](media/a28ed268bcd1efe1ad94b8f707d2ef6a.png)
 
->   Graphical user interface, text, table Description automatically generated
+5.  In the **State** field, change the value to **Completed**.
 
-1.  In the **State** field, change the value to **Completed**.
-
-2.  On the Action Pane, select **Export** to export the settings of the
+6.  On the Action Pane, select **Export** to export the settings of the
     application-specific parameters.
 
-3.  Select the **VAT declaration Excel (ES)** configuration, and then, on the
+7.  Select the **VAT declaration Excel (ES)** configuration, and then, on the
     Action Pane, select **Import** to import the parameters that you configured
     for **VAT declaration XML (ES)**.
 
-4.  In the **State** field, select **Completed**.
+8.  In the **State** field, select **Completed**.
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
@@ -249,7 +224,7 @@ credit note value.
 >   period** report. It's also printed when you select **Print** on the **Sales
 >   tax payments** page.
 
-1.  On the **Tax authorities** page, select the tax authority, and then, in the
+4.  On the **Tax authorities** page, select the tax authority, and then, in the
     **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity that has [multiple
@@ -324,7 +299,10 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 | Field                                 | Description                                                                                                                                                                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Settlement period                     | Select the settlement period.                                                                                                                                                                                                        |
-| Sales tax payment version             | Select one of the following values:                                                                                                                                                                                                  |
+| Sales tax payment version             | Select one of the following values:</br>-   **Original** – Generate a report for the sales tax transactions of the
+    original sales tax payment or before the sales tax payment is generated.</br>  -   **Corrections** – Generate a report for the sales tax transactions of all
+    the subsequent sales tax payments for the period.</br>-   **Total list** – Generate a report for all the sales tax transactions for
+    the period, including the original and all corrections.                                                                                                                                                                                              |
 | From date                             | Select the start date of the reporting period.                                                                                                                                                                                       |
 | Previous period amounts to compensate | Enter the amount that should be exported to box 110, "Amounts to be compensated pending from previous periods."                                                                                                                      |
 | Previous period amounts to offset     | Enter the amount that should be exported to box 78, "Amounts to be offset from previous periods applied in this period."                                                                                                             |
@@ -332,16 +310,7 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 | Simplified regime result              | Enter the amount that should be exported to box 58.                                                                                                                                                                                  |
 | To deduct supplementary declaration   | Enter the amount that should be exported to box 70, "To deduct (Exclusively in the case of supplementary self-assessment. Result of the previous statements.)."                                                                      |
 
--   **Original** – Generate a report for the sales tax transactions of the
-    original sales tax payment or before the sales tax payment is generated.
-
--   **Corrections** – Generate a report for the sales tax transactions of all
-    the subsequent sales tax payments for the period.
-
--   **Total list** – Generate a report for all the sales tax transactions for
-    the period, including the original and all corrections.
-
-1.  Select **OK**, and review the Excel report.
+3.  Select **OK**, and review the Excel report.
 
 ### Settle and post sales tax
 
@@ -353,16 +322,12 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 | Field                     | Description                                    |
 |---------------------------|------------------------------------------------|
 | Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:            |
+| Sales tax payment version | Select one of the following values:   -   **Original** – Generate the original sales tax payment for the settlement
+    period. </br> -   **Latest corrections** – Generate a correction sales tax payment after the
+    original sales tax payment for the settlement period was created.       |
 | From date                 | Select the start date of the reporting period. |
 
--   **Original** – Generate the original sales tax payment for the settlement
-    period.
-
--   **Latest corrections** – Generate a correction sales tax payment after the
-    original sales tax payment for the settlement period was created.
-
-1.  Select **OK**.
+3.  Select **OK**.
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
@@ -404,54 +369,56 @@ that you imported earlier from the LCS Shared asset library.
 
 >   **Note:** Steps 5 through 7 are optional.
 
-1.  Optional: On the **Messages** FastTab, select **Collect data**, and then
+5.  Optional: On the **Messages** FastTab, select **Collect data**, and then
     select **OK**. The sales tax payments that were generated earlier are added
     to the message. For more information, see the [Settle and post sales
     tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-2.  Optional: On the **Message items** FastTab, review the sales tax payments
+6.  Optional: On the **Message items** FastTab, review the sales tax payments
     that are transferred for processing. By default, all sales tax payments of
     the selected period that weren't included in any other message of the same
     processing are included.
 
-3.  Optional: Select **Original document** to review the sales tax payments, or
+7.  Optional: Select **Original document** to review the sales tax payments, or
     select **Delete** to exclude sales tax payments from processing. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-4.  On the **Messages** FastTab, select **Update status**. In the **Update
+8.  On the **Messages** FastTab, select **Update status**. In the **Update
     status** dialog box, select **Ready to generate**, and then select **OK**.
     Verify that the message status is changed to **Ready to generate**.
 
-5.  Select **Generate report**. To preview the VAT declaration amounts, in the
+9.  Select **Generate report**. To preview the VAT declaration amounts, in the
     **Run processing** dialog box, select **Preview report**, and then select
     **OK**.
 
-6.  In the **Electronic reporting parameters** dialog box, set the fields as
+10.  In the **Electronic reporting parameters** dialog box, set the fields as
     described in the [Preview the VAT declaration in Excel from the Report sales
     tax for settlement period periodic
     task](#preview-the-vat-declaration-in-excel-from-the-report-sales-tax-for-settlement-period-periodic-task)
     section earlier in this topic, and then select **OK**.
 
-7.  Select the **Attachments** button (paper clip symbol) in the upper-right
+11.  Select the **Attachments** button (paper clip symbol) in the upper-right
     corner of the page, and then select **Open** to open the file.
 
-8.  Review the amounts in the Excel document, and then select **Generate
+12.  Review the amounts in the Excel document, and then select **Generate
     report**.
 
-9.  To generate a VAT declaration in XML format, in the **Run processing**
+13.  To generate a VAT declaration in XML format, in the **Run processing**
     dialog box, select **Generate report**, and then select **OK**.
 
-10. In the **Electronic reporting parameters** dialog box, set the following
+14. In the **Electronic reporting parameters** dialog box, set the following
     fields.
 
 | **Field**                                                                          | **Description**                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Settlement period                                                                  | Select the settlement period. If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.           |
-| Tax declaration version                                                            | Select one of the following values:                                                                                                                                                                                                  |
-| Type of declaration                                                                | Select the type of declaration:                                                                                                                                                                                                      |
+| Tax declaration version                                                            | Select one of the following values:  </br>   -   **Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated. </br>-   **Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.  </br>  -   **Total list** – Generate a report for all the sales tax transactions for
+    the period, including the original and all corrections.                                                                                                                                                                                        |
+| Type of declaration                                                                | Select the type of declaration: </br> -   **Income** – Select this value if the VAT settlement result is positive. This value is the default value.</br>-   **Refund** – Select this value if the VAT settlement result is negative, and you're requesting a refund.</br>-   **Request for compensation** – Select this value if the VAT settlement result is negative, and you aren't requesting a refund.</br>-   **No activity** – Select this value if there was no activity during the period.</br>-   **Tax current account – income** – Select this value if the VAT settlement
+    result is positive, and tax flows are managed on a specific bank account.</br>                                                                                                                                                                                            |
 | Taxpayer registered in the Monthly Refund Register                                 | Set this option to **Yes** or **No**.                                                                                                                                                                                                |
 | Joint self-assessment                                                              | Set this option to **Yes** if this declaration is a joint self-assessment.                                                                                                                                                           |
 | Taxpayer is under the special regime of the Cash criterion                         | Set this option to **No**.                                                                                                                                                                                                           |
@@ -467,35 +434,6 @@ that you imported earlier from the LCS Shared asset library.
 | Previous declaration supporting number                                             | Enter the number of the previous declaration that the supplementary declaration is being generated for.                                                                                                                              |
 | To deduct supplementary declaration                                                | Enter the amount that should be exported to box 70, "To deduct (Exclusively in the case of supplementary self-assessment. Result of the previous statements.)."                                                                      |
 | Declaration of no activity                                                         | Set this option to **Yes** or **No**.                                                                                                                                                                                                |
-
--   **Original** – Generate a report for the sales tax transactions of the
-    original sales tax payment or before the sales tax payment is generated.
-
--   **Corrections** – Generate a report for the sales tax transactions of all
-    the subsequent sales tax payments for the period.
-
--   **Total list** – Generate a report for all the sales tax transactions for
-    the period, including the original and all corrections.
-
-If you selected **Collect data** in step 5, you can disregard this field. The
-report will be generated for the sales tax transactions that are included in the
-collected sales tax payments.
-
--   **Income** – Select this value if the VAT settlement result is positive.
-    This value is the default value.
-
--   **Refund** – Select this value if the VAT settlement result is negative, and
-    you're requesting a refund.
-
--   **Request for compensation** – Select this value if the VAT settlement
-    result is negative, and you aren't requesting a refund.
-
--   **No activity** – Select this value if there was no activity during the
-    period.
-
--   **Tax current account – income** – Select this value if the VAT settlement
-    result is positive, and tax flows are managed on a specific bank account.
-
 -   **Tax current account – refund** – Select this value if the VAT settlement
     result is negative, and tax flows are managed on a specific bank account.
 
