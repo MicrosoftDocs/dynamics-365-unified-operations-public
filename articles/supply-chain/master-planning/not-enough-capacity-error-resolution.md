@@ -1,5 +1,5 @@
 ---
-title: "Fix the 'Not enough capacity could be found' scheduling engine error"
+title: "Fix the 'Not enough capacity could be found' scheduling engine error and finite capacity"
 description: "This topic provides information about the reasons and resolutions for the 'Production order %1 could not be scheduled. Not enough capacity could be found' scheduling engine error."
 author: ChristianRytt
 ms.date: 7/29/2021
@@ -100,5 +100,11 @@ To review the available capacity on the resource group, follow these steps.
 
 1. Go to **Organization administration \> Resources \> Resource groups**, and select a resource group that is applicable to the order that can't be scheduled.
 1. On the Action Pane, on the **Resource group** tab, in the **View** group, select **Capacity load** or **Capacity load, graphically**, and make sure there is available capacity.
+
+# Master planning books a resource when resource calendar is closed
+
+When using operations scheduling, master planning will plan capacity according to the calendar of the primary resource group. It will not take into account any calendar nor capacity of the secondary operation. It books the secondary operation at the same time than the primary. Note that this can result in scheduling the production order in a closed calendar or in a time when the secondary operation is not available (calendar closed, no capacity).
+
+When using job scheduling master planning will take into account both the capacity and calendar of the primary and secondary operation to schedule the order. Calendars for both resources of the operations must be open and with available capacity for the order to be scheduled. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
