@@ -290,6 +290,16 @@
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
         - name: Initialize seed data in new Commerce environments
           href: enable-configure-retail-functionality.md
+    - name: Go-live and update recommendations
+      items:
+      - name: Go-live and update overview
+        href: go-live/go-live-overview.md
+      - name: Performance
+        items:
+        - name: Optimize images
+          href: go-live/performance-optimize-images.md
+        - name: Reduce JavaScript by excluding unused modules
+          href: go-live/performance-reduce-javascript.md
     - name: Set up your channels 
       items:
       - name: Channels overview
