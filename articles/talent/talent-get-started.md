@@ -21,6 +21,7 @@ ms.custom: ["17271", "intro-internal"]
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 # ms.search.industry: 
+ms.custom: intro-internal
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update

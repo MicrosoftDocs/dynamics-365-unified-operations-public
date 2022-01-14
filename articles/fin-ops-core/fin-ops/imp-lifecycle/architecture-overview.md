@@ -5,7 +5,7 @@ title: Finance and Operations application architecture
 description: This topic provides an overview of the architecture of Finance and Operations applications.
 author: ClaudiaBetz-Haubold
 ms.date: 04/24/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

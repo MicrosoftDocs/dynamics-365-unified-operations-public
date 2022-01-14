@@ -5,7 +5,7 @@ title: Copy configuration data between companies or legal entities overview
 description: This topic describes how to use a data project and data templates to move configuration data for a company or legal entity between app instances.
 author: rcarlson
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

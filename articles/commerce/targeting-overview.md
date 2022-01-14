@@ -5,7 +5,7 @@ title: Device, market, and geolocation targeting
 description: This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
 author:  sushma-rao 
 ms.date: 07/30/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

@@ -5,7 +5,7 @@ title: Help system (contains video)
 description: This topic provides an overview of the Help system for Finance and Operations apps.
 author: edupont04
 ms.date: 07/20/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

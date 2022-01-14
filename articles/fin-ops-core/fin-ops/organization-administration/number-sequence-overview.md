@@ -5,7 +5,7 @@ title: Number sequences overview
 description: Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.
 author: SunilGarg
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
