@@ -65,6 +65,10 @@ The following image shows an example online channel.
 
 ![Example online channel.](media/channel-setup-online-2.png)
 
+## Assign the channel to a Commerce Scale Unit
+
+Your new channel must be assigned to a Commerce Scale Unit. To do this, follow the steps in the [Configure channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-retail-channels-to-use-commerce-scale-unit) section of the [Initialize Commerce Scale Unit (cloud)](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md) help topic. 
+
 ## Set up languages
 
 If your e-Commerce site will support multiple languages, expand the **Languages** section and add additional languages as needed.
