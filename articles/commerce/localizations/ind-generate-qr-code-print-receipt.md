@@ -86,24 +86,24 @@ Follow these steps to handle the new custom receipt field for a QR code.
 
 # [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
 
-    - Microsoft.Dynamics.Commerce.Runtime.DataModel.India
-    - Microsoft.Dynamics.Commerce.Runtime.DataServices
-    - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
-    - Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
-    - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.DataModel.India
+- Microsoft.Dynamics.Commerce.Runtime.DataServices
+- Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
+- Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
+- Microsoft.Dynamics.Commerce.Runtime.Services.Messages
 
 # [Commerce 10.0.25](#tab/commerce-10-0-25)
 
-    - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
-    - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
-    - Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
-    - Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
+- Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
 
 # [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
 
-    - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
-    - Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
-    - Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
+- Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
 
 ---
 
