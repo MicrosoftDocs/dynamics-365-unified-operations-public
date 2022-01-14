@@ -1493,7 +1493,7 @@
             - name: Germany reporting
               items:
               - name: VAT declaration
-                href: /localizations/emea-deu-vat-declaration-germany.md
+                href: localizations/emea-deu-vat-declaration-germany.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
@@ -1504,6 +1504,8 @@
               items:
               - name: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
                 href: localizations/emea-esp-sii-spain.md
+              - name: VAT declaration
+                href: localizations/emea-esp-vat-declaration-spain.md
             - name: Sweden reporting
               items:
               - name: VAT declaration
@@ -3366,6 +3368,8 @@
           href: localizations/emea-esp-report-340.md
         - name: Declaration 347 report
           href: localizations/emea-esp-declaration-347-report.md
+        - name: VAT declaration 303
+          href: localizations/emea-esp-vat-declaration-spain.md
         - name: Sales and purchase cycles
           href: localizations/emea-esp-sales-purchase-cycle.md
         - name: Special entries and opening sheets
