@@ -1,3 +1,17 @@
+---
+# required metadata
+
+title: Date of vendor VAT register
+description: This topic provides information about a feature for enabling date of vendor VAT register
+author: Anasyash
+ms.date: 01/14/2022
+ms.topic: article
+ms.prod: 
+ms.technology:
+---
+
+# Date of vendor VAT register
+
 In Microsoft Dynamics 365 Finance version 10.0.24, a new **Date of vendor VAT
 register** field is available for vendor invoices. This field specifies the date
 of the taxable supply for a purchase.
@@ -17,7 +31,7 @@ mentioned dates. This date is controlled by local legislation rules about
 postponed incoming VAT deduction for some scenarios. It varies by country or
 region.
 
-Some VAT reports, such as the VAT Control statement report in the Czech
+Some VAT reports, such as the [VAT Control statement report](emea-cze-vat-declaration-tax-declaration-model#vat-control-statement) in the Czech
 Republic, require that the date of the taxable supply be reported for a purchase
 document. This date must be reported so that the tax authorities can reconcile
 the VAT reporting between counterparties.
