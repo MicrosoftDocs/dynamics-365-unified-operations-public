@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: "intro-internal"
 ms.search.region: global
 # ms.search.industry: 
-ms.author: anashyash
+ms.author: anasyash
 ms.search.validFrom: 2022-01-15
 ms.dyn365.ops.version: AX 10.0.24
 
