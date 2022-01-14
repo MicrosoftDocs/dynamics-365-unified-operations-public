@@ -4,7 +4,7 @@
 title: Set up an online channel
 description: This topic describes how to create a new online channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/02/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,7 +67,7 @@ The following image shows an example online channel.
 
 ## Assign the channel to a Commerce Scale Unit
 
-Your new channel must be assigned to a Commerce Scale Unit. To do this, follow the steps in the [Configure channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-retail-channels-to-use-commerce-scale-unit) section of the [Initialize Commerce Scale Unit (cloud)](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md) help topic. 
+Your new channel must be assigned to a Commerce Scale Unit. To do this, follow the steps in [Configure retail channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-retail-channels-to-use-commerce-scale-unit). 
 
 ## Set up languages
 
