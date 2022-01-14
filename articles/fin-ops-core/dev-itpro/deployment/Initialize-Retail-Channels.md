@@ -2,7 +2,7 @@
 # required metadata
 
 title: Initialize Commerce Scale Unit (cloud)
-description: This topic explains how to initialize Commerce Scale Unit (cloud).
+description: This topic explains how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 01/14/2022
 ms.topic: article
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 8.0
 
 [!include[banner](../includes/banner.md)]
 
-If you're using a Tier-2 sandbox or production environment that has application version 8.1.2.x or later, you must initialize Commerce Scale Unit (cloud) before you can use retail channel functionality either for point of sale (POS) operations or for e-commerce operations that use Retail Server in the cloud. Initialization will deploy a Commerce Scale Unit (cloud).
+This topic explains how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce.
 
-This topic describes the steps for initializing Commerce Scale Unit (cloud).
+If you're using a Tier-2 sandbox or production environment that has application version 8.1.2.x or later, you must initialize Commerce Scale Unit (cloud) before you can use retail channel functionality either for point of sale (POS) operations or for e-commerce operations that use Retail Server in the cloud. Initialization will deploy a Commerce Scale Unit (cloud).
 
 > [!IMPORTANT]
 > For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Commerce Scale Unit. New environments deployed without Commerce Scale Unit will no longer receive quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Commerce Scale Unit (self-hosted). Contact your Microsoft FastTrack solution architect if you require an extension.
