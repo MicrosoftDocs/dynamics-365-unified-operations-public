@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Go-live and update 
+title: Go-live and update recommendations
 description: This topic provides information about the tasks you should complete to help you go-live with or update your Microsoft Dynamics 365 Commerce implementation project.
 author: mssle
 ms.date: 01/13/2022
@@ -13,7 +13,7 @@ ms.author: sheaton
 ms.search.validFrom: 2021-09-20
 ---
 
-# Go-live and update 
+# Go-live and update recommendations
 
 [!include[banner](../includes/banner.md)]
 
