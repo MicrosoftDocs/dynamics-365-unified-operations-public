@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic describes how to create a new online channel in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Online stores give customers the option of purchasing products from the retailer's online store in addition to its retail stores.
 
 To create an online store in Commerce, you must first create an online channel. Before you create a new online channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
@@ -67,7 +65,7 @@ The following image shows an example online channel.
 
 ## Assign the channel to a Commerce Scale Unit
 
-Your new channel must be assigned to a Commerce Scale Unit. To do this, follow the steps in [Configure retail channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-retail-channels-to-use-commerce-scale-unit). 
+Your new channel must be assigned to a Commerce Scale Unit. To do this, follow the steps in [Configure channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-retail-channels-to-use-commerce-scale-unit). 
 
 ## Set up languages
 
