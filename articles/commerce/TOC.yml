@@ -292,7 +292,7 @@
           href: enable-configure-retail-functionality.md
     - name: Go-live and update recommendations
       items:
-      - name: Go-live and update overview
+      - name: Go-live and update recommendations overview
         href: go-live/go-live-overview.md
       - name: Performance
         items:
