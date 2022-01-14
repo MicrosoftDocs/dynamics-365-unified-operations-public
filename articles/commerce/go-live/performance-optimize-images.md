@@ -23,9 +23,9 @@ This topic explains how to improve website performance by optimizing image use i
 
 This topic applies to the following configurations: 
 
-- **Version**: Commerce 10.0.16 or later
+- **Version**: Commerce 10.0.16 or later.
 - **Component**: Business to consumer (B2C) or business to business (B2B). 
-- **Feature area**: Commerce website performance
+- **Feature area**: Commerce website performance.
 
 ## Prerequisites
 
