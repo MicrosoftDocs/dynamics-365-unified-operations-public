@@ -22,7 +22,7 @@ All secrets and certificates used in Electronic invoicing service must be stored
   2. Set up the access policy to grant Electronic invoicing the correct level of secure access to the secret you created. Go to **Settings** > **Access policies**, and select **Add Access Policy**.
   3. Set the **Secret permissions** for the **Get** and **List** operations.
   
-    ![Add access policy page.](media/add-access-policy-page.png)
+   [![Add access policy page.](./media/add-access-policy-page.png)](./media/add-access-policy-page.png)
 
   4. Set the **Certificate permissions** for **Get** and **List** operations.
   5. In the **Select principal** field, select **None selected**.
