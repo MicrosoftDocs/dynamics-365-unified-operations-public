@@ -4,7 +4,7 @@
 title: Generate QR codes and print them on receipts for India
 description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 author: prabhatb2011
-ms.date: 11/30/2021
+ms.date: 01/17/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -84,11 +84,28 @@ Follow these steps to handle the new custom receipt field for a QR code.
 2.  In the Retail SDK, create a C\# project.
 3.  In the new C\# project, add references to the following packages:
 
+# [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
+
     - Microsoft.Dynamics.Commerce.Runtime.DataModel.India
     - Microsoft.Dynamics.Commerce.Runtime.DataServices
     - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
     - Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
     - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+
+# [Commerce 10.0.25](#tab/commerce-10-0-25)
+
+    - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
+    - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+    - Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
+    - Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
+
+# [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
+
+    - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
+    - Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
+    - Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
+
+---
 
 4. Create a class to handle. 
 
