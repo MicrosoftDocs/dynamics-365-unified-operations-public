@@ -4,7 +4,7 @@
 title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
-ms.date: 10/12/2021
+ms.date: 01/14/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -96,18 +96,20 @@ Please make sure the headquarters is available. This is required to register the
 
 ## Configure channels to use Commerce Scale Unit
 
-After Commerce Scale Unit has been deployed, ensure that your channels are configured to use the database for this Commerce Scale Unit. 
+After Commerce Scale Unit has been deployed, you must ensure that your channels are configured to use the database for this Commerce Scale Unit. 
 
-1. In headquarters, go to **Retail and commerce > Headquarters setup > Commerce Scheduler > Channel database**.
+To configure your channels to use the Commerce Scale Unit database, follow these steps.
 
-2. Select a channel database and open the Retail channel tab.
-
-3. Click **+Add** and select the retail and online channels.  
+1. In Commerce headquarters, go to **Retail and commerce > Headquarters setup > Commerce Scheduler > Channel database**.
+2. In the left pane, select a channel database.
+3. Select the **Retail channel** FastTab to expand it.
+4. Select **+Add**, and then select your retail channel from the drop-down list.  
+5. Select **+Add**, and then select your online channel from the drop-down list. 
 
 When finished, go to **Distribution schedule** under **Retail and Commerce > Retail and commerce IT** and run job 9999.
 
->[NOTE:] 
->Running job 9999 syncs all new products and customers to the CSU, which could take a long time. If you only need the channel to be available for e-commerce site builder configuration, you can run job 1070.  
+> [!NOTE] 
+> Running job 9999 syncs all new products and customers to the CSU, which could take a long time. If you only need the channel to be available for e-commerce site builder configuration, you can run job 1070.  
 
 ### Database refresh and Commerce Scale Units
 
