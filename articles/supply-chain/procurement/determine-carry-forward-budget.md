@@ -44,7 +44,7 @@ The following setup must be completed for all funds where you want to define thi
 
 ## Reduce carry-forward budget when an invoice is reduced
  
-When a carry-forward purchase order is reduced during invoicing a variance is created. Posting the invoice will reduce the purchase order encumbrance by the amount of the price variance. By default, the carry-forward budget is not reduced in this scenario. That leaves the remaining carry-forward budget behind for the amount of the variance. Reductions include price variances, charge variances, and tax variances. You can automatically remove remaining carry-forward budget in this scenario using the feature, Reduce carry-forward budget when an invoice is reduced. This feature can be set up to create a budget a register entry to remove excess carry-forward budget.
+When a carry-forward purchase order is reduced during invoicing a variance is created. Posting the invoice will reduce the purchase order encumbrance by the amount of the price variance. By default, the carry-forward budget isn't reduced in this scenario. That leaves the remaining carry-forward budget behind for the amount of the variance. Reductions include price variances, charge variances, and tax variances. You can automatically remove remaining carry-forward budget in this scenario using the feature, Reduce carry-forward budget when an invoice is reduced. This feature can be set up to create a budget a register entry to remove excess carry-forward budget.
  
 Once the feature is enabled, the same fund setup that was defined earlier will be used. This setup is defined below and must be completed for any funds that you want to be able to carry budget amounts forward when an invoice price is reduced.
  
