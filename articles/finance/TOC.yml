@@ -1495,7 +1495,7 @@
             - name: Germany reporting
               items:
               - name: VAT declaration
-                href: /localizations/emea-deu-vat-declaration-germany.md
+                href: localizations/emea-deu-vat-declaration-germany.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
