@@ -82,7 +82,7 @@ Parallel allocation processing requires wave processing to run in batch. Therefo
 
 If necessary, you can undo each of the settings made by default when the *Wave parallelization for Allocate Wave method* feature is automatically enabled for your instance. To do this:
 
-- Go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**.
+- Go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**.
 - Go to **Warehouse management \> Setup \> Waves \> Wave process methods**. Select the `allocateWave` method. On the Action Pane, select **Task configuration** to open a page that lists each warehouse where the method is set to run in parallel. Modify or delete the number of batch tasks and the assigned wave group for each listed warehouse as needed.
 
 ## Troubleshooting

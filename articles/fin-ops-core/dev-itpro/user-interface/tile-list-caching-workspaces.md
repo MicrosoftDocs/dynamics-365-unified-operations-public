@@ -4,7 +4,7 @@
 title: Tile and list caching for workspaces
 description: This topic discusses framework support for caching data that is used for tiles and lists, so that workspaces perform well and are responsive.
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 16341
 ms.assetid: c84d7929-4662-4abb-b345-ccc539d809d0
@@ -91,7 +91,7 @@ The third step is to create a class that defines the relationship between the ca
 
 ```xpp
 [SysDataSetExtension(classStr(FMPickupAndReturn)), // The name of this class
-SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnCache))] // The name of the cache table
+SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnTable))] // The name of the cache table
 class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
 {
     public SysDataCacheRefreshFrequency parmRefreshFrequency()
@@ -104,7 +104,7 @@ class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
     }
     public SysDataCacheTypeId parmCacheTypeId()
     {
-        return tableNum(FMPickupAndReturnCache); // The name of the table.
+        return tableNum(FMPickupAndReturnTable); // The name of the table.
     }
     public static FMPickupAndReturn construct()
     {
@@ -139,12 +139,12 @@ implements SysIFilterConsumerForm, SysIDataSetConsumerForm, SysIFilterEventHandl
 {
     public void registerDatasourceOnQueryingEvent()
     {    
-        FMPickupAndReturnCache_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
-        FMPickupAndReturnCache_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
+        FMPickupAndReturnTable_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
+        FMPickupAndReturnTable_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
     }
     public void onFilterChanged()
     {    
-        FMPickupAndReturnCache_DS.executeQuery();    
+        FMPickupAndReturnTable_DS.executeQuery();    
     }    
 }
 ```

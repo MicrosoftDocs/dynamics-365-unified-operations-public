@@ -3,7 +3,7 @@
 
 title: Configure BOPIS in a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce evaluation environment after it has been provisioned.
-author: rubendel
+author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
 ---

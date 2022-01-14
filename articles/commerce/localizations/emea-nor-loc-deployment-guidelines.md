@@ -1,34 +1,23 @@
 ---
 # required metadata
 
-title: Deployment guidelines for cash registers for Norway
-description: This topic is a deployment guide for the Commerce localization for Norway.
-author: AlexChern0v
-ms.date: 10/06/2020
+title: Deployment guidelines for cash registers for Norway (legacy)
+description: This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway.
+author: EvgenyPopovMBS
+ms.date: 12/20/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Developer
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Norway
-ms.search.industry: Retail
-ms.author: josaw
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: epopov
 ms.search.validFrom: 2018-2-28
-ms.dyn365.ops.version: 7.3.2
 
 ---
-# Deployment guidelines for cash registers for Norway
+# Deployment guidelines for cash registers for Norway (legacy)
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md).
+This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md).
 
 This sample is part of the Retail software development kit (SDK). For information about the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -36,8 +25,7 @@ This sample consists of extensions for the Commerce runtime (CRT), Retail Server
 
 > [!NOTE]
 > In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
-
-> [!NOTE]
+>
 > Some steps in the procedures in this topic differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
 
 ### Using certificate profiles in Commerce channels

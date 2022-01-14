@@ -1,12 +1,12 @@
 ---
 title: Select statement
 description: This topic describes the select statement in the X++ language.
-author: robinarh
+author: tonyafehr
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ---

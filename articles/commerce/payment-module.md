@@ -4,7 +4,7 @@
 title: Payment module
 description: This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/18/2020
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ The following illustration shows an example of gift card, loyalty, and Adyen pay
 
 As of Commerce release 10.0.14, the payment module is also integrated with the Dynamics 365 Payment Connector for PayPal. For more information about how to set up and configure this payment connector, see [Dynamics 365 Payment Connector for PayPal](paypal.md).
  
-On the checkout page, you can have both Adyen and the PayPal connectors configured. The payment module has been enhanced with additional properties to help identify which connector it should work with. For details, see the **Supported tender types** and **Is primary payment** module properties in the followingt table.
+On the checkout page, you can have both Adyen and the PayPal connectors configured. The payment module has been enhanced with additional properties to help identify which connector it should work with. For details, see the **Supported tender types** and **Is primary payment** module properties in the following table.
   
 When the payment module is configured to use the PayPal payment connector, a PayPal button appears on the checkout page. When invoked by the customer, the payment module renders an iframe containing PayPal information. The customer can sign in and provide their PayPal information within this iframe to complete their transaction. When a customer chooses to pay with PayPal, the remaining balance on the order will be charged via PayPal.
 
@@ -77,7 +77,7 @@ The following illustration shows an example of the PayPal iframe invoked using t
 | Height of the iframe | Pixels | The iframe height, in pixels. The height can be adjusted as required. |
 | Show billing address | **True** or **False** | If this property is set to **True**, the billing address will be served by Adyen inside the payment module iframe. If set to **False**, the billing address won't be served by Adyen, and a Commerce user will have to configure a module to show the billing address on the checkout page. For the PayPal payment connector, this field has no impact, as the billing address is fully handled within PayPal. |
 | Payment style override | Cascading Style Sheets (CSS) code | Because the payment module is hosted in an iframe, there is limited styling capability. You can achieve some styling by using this property. To override site styles, you must paste the CSS code as the value of this property. Site builder CSS overrides and styles don't apply to this module. |
-|Supported tender types| String| If multiple payment connectors are configured, you should provide the supported tender type string as defined in the Commerce headquarters payment connector configuration (see the followin image). If blank, it defaults to the Adyen payment connector. Added in Commerce release 10.0.14.|
+|Supported tender types| String| If multiple payment connectors are configured, you should provide the supported tender type string as defined in the Commerce headquarters payment connector configuration (see the following image). If blank, it defaults to the Adyen payment connector. Added in Commerce release 10.0.14.|
 |Is primary payment|  **True** or **False** | If **True**, any error messages will be generated from the primary payment connector on the checkout page. If both Adyen and PayPal payment connectors are configured, set Adyen to **True**, which was added in Commerce release 10.0.14.|
 
 The following illustration shows an example of the **Supported Tender Types** value set to "PayPal" in the payment connector configuration in Commerce headquarters.
@@ -95,7 +95,24 @@ Similar to payment modules, a **Supported tender types** property has been added
 
 A payment module can be added only to a checkout module. For more information about how to configure a payment module for a checkout page, see [Checkout module](add-checkout-module.md).
 
-If both Adyen and PayPal payment connectors are needed, add both modules to the payment section. Ensure that the **Supported tender types** property value is configured for PayPal, and leave it blank for Adyen. Also, set the **Is primary payment** property to **True** for Adyen.
+## Configure the Adyen and PayPal payment connectors when both are used
+
+If both the Adyen and PayPal payment connectors will be used for your site, follow these steps in Commerce site builder to add payment modules for each connector to the checkout module and then configure the properties for each module.
+
+1. In the properties pane for the PayPal payment module, follow these steps:
+
+    1. In the field for the **Supported tender types** property, enter **PayPal**.
+    1. Clear the checkbox for the **Is primary payment** property.
+    1. Select the checkbox for the **Use connector ID** property.
+
+1. In the properties pane for the Adyen payment module, follow these steps:
+
+    1. Leave the field for the **Supported tender types** property blank.
+    1. Select the checkbox for the **Is primary payment** property.
+    1. Select the checkbox for the **Use connector ID** property.
+
+> [!NOTE]
+> When you configure the Adyen and PayPal connectors to be used together, the **Dynamics 365 Payment Connector for Adyen** configuration must be in the first position in the online channel's **Payment accounts** connector configuration in Commerce headquarters. To confirm or change the connector order, go to **Online Stores**, and select the channel for your site. Then, on the **Set up** tab, on the **Payment accounts** FastTab, under **Connector**, make sure that the **Dynamics 365 Payment Connector for Adyen** configuration is in the first position (that is, on the top line), and that the **Dynamics 365 Payment Connector for PayPal** configuration is on the second line. Add or remove connectors as required to reorder them.
 
 ## Additional resources
 

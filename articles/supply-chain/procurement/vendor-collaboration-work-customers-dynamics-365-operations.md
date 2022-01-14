@@ -107,7 +107,7 @@ People who work in the Public sector can see open and expired RFQs that have bee
 
     If you've been invited to bid, you can find the same RFQ on the **New bid invitations** page. Sometimes, you might want to bid on an open RFQ, but you haven't been invited to bid. In this case, you might be able to invite yourself, provided that the customer has enabled self-invitation for the RFQ case.
 
-    Enhance the accessibility of the **Open published requests for quotations** link by turning on the **Display the "Open published requests for quotation" link as a tile** feature. This feature converts the link to a tile and moves it to a prominent location, so that it's easy to find.
+    Enhance the accessibility of the **Open published requests for quotations** link by turning on the **Display the "Open published requests for quotation" link as a tile** feature. This feature converts the link to a tile and moves it to a prominent location, so that it's easy to find. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 - Select the **Closed published requests for quotations** link to see a list of closed RFQs that are available to the public. A closed RFQ is an RFQ that has expired. You can find the expiration date and time on the header of the RFQ.
 

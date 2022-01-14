@@ -5,7 +5,7 @@ author: ivanv-microsoft
 ms.date: 08/20/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01

@@ -52,15 +52,15 @@ The following table describes the saved views available for the Inventory manage
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| On-hand list | Financials | This simplified view lets you focus on financial information while you manage on-hand inventory. | Saved views for Inventory management |
-| On-hand list | Quality control | This simplified view lets you focus on quality control while you manage on-hand inventory. | Saved views for Inventory management |
-| On-hand list | Receiving | This simplified view lets you focus on receiving operations while you manage on-hand inventory. | Saved views for Inventory management |
-| On-hand list | Shipping | This simplified view lets you focus on shipping operations while you manage on-hand inventory. | Saved views for Inventory management |
-| Transactions | Simplified | This simplified view lets you review inventory status without being distracted by financial information and other fields that are used less often. | Saved views for Inventory management |
-| Transfer orders | Shipping | This simplified view lets you focus on shipping operations while you manage transfer orders. | Saved views for Inventory management |
-| Transfer orders | Receiving | This simplified view lets you focus on receiving operations while you manage transfer orders. | Saved views for Inventory management |
-| Transfer orders | Quality control | This simplified view lets you focus on quality control while you manage transfer orders. | Saved views for Inventory management |
-| Transfer orders | Financials | This simplified view lets you focus on financial information while you manage transfer orders. | Saved views for Inventory management |
+| On-hand list | Financials | This simplified view lets you focus on financial information while you manage on-hand inventory. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
+| On-hand list | Quality control | This simplified view lets you focus on quality control while you manage on-hand inventory. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
+| On-hand list | Receiving | This simplified view lets you focus on receiving operations while you manage on-hand inventory. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
+| On-hand list | Shipping | This simplified view lets you focus on shipping operations while you manage on-hand inventory. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
+| Transactions | Simplified | This simplified view lets you review inventory status without being distracted by financial information and other fields that are used less often. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
+| Transfer orders | Shipping | This simplified view lets you focus on shipping operations while you manage transfer orders. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
+| Transfer orders | Receiving | This simplified view lets you focus on receiving operations while you manage transfer orders. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
+| Transfer orders | Quality control | This simplified view lets you focus on quality control while you manage transfer orders. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
+| Transfer orders | Financials | This simplified view lets you focus on financial information while you manage transfer orders. | Saved views for Inventory management (Turned on by default starting with version 10.0.21.) |
 
 ## Saved views for the Master planning module
 
@@ -88,11 +88,11 @@ The following table describes the saved views available for the Product informat
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Released products list | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products |
-| Released product details | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products |
-| Released product details | Logistical information management | A simplified page view that only includes the fields most often used when managing logistical information for products. | Saved views for released products |
-| Released product details | Purchase information management | A simplified page view that only includes the fields most often used when managing purchase information for products. | Saved views for released products |
-| Released product details | Sales information management | A simplified page view that only includes the fields most often used when managing sales-related information for products. | Saved views for released products |
+| Released products list | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released product details | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released product details | Logistical information management | A simplified page view that only includes the fields most often used when managing logistical information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released product details | Purchase information management | A simplified page view that only includes the fields most often used when managing purchase information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released product details | Sales information management | A simplified page view that only includes the fields most often used when managing sales-related information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
 
 ## Saved views for the Production control module
 
@@ -100,10 +100,10 @@ The following table describes the saved views available for the Production contr
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Production order BOM page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
-| Production order details page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
-| Production order picking list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
-| Production orders list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
+| Production order BOM page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control (Turned on by default starting with version 10.0.21.) |
+| Production order details page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control (Turned on by default starting with version 10.0.21.) |
+| Production order picking list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control (Turned on by default starting with version 10.0.21.) |
+| Production orders list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control (Turned on by default starting with version 10.0.21.) |
 
 ## Saved views for the Sales and marketing module
 

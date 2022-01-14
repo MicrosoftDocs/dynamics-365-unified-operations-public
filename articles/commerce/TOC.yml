@@ -74,10 +74,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Commerce Data Exchange implementation guidance
           href: dev-itpro/implementation-considerations-cdx.md
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
       - name: Get support
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support
@@ -96,12 +92,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
-          - name: Commerce 10.0.23
+          - name: Commerce 10.0.24 (February 2022)
+            href: get-started/whats-new-commerce-10-0-24.md 
+          - name: Commerce 10.0.23 (January 2022)
             href: get-started/whats-new-commerce-10-0-23.md          
           - name: Commerce 10.0.22 (November 2021)
             href: get-started/whats-new-commerce-10-0-22.md
-          - name: Commerce 10.0.21 (October 2021)
-            href: get-started/whats-new-commerce-10-0-21.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -548,6 +544,8 @@
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
+          - name: Multiple available payment methods for in-store pickup
+            href: dev-itpro/multiple-payments-pickup.md
           - name: Omni-channel Commerce order payments
             href: dev-itpro/commerce-payments.md
           - name: Archive credit card transaction data
@@ -714,6 +712,10 @@
           href: sync-product-ratings.md
         - name: Enable manual publishing of ratings and reviews by a moderator
           href: manual-publish-rating-reviews.md
+        - name: Import and export ratings and reviews
+          href: import-export-reviews.md
+        - name: Configure Service-to-Service authentication
+          href: service-to-service-auth.md
         - name: Ratings and reviews FAQ
           href: ratings-reviews-faq.md
       - name: Manage your inventory  
@@ -818,6 +820,10 @@
       items:
       - name: Customer management in stores
         href: customer-mgmt-stores.md
+      - name: Asynchronous customer creation mode
+        href: async-customer-mode.md
+      - name: Convert asynchronous customers to synchronous customers
+        href: convert-async-to-sync.md
       - name: Clienteling
         items:
         - name: Clienteling overview
@@ -838,7 +844,7 @@
       items:
       - name: Statements overview
         href: retail-statements.md
-      - name: Transaction consistency checker 
+      - name: Validate store transactions for statement calculation 
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
         href: disable-consistency-check-rule.md
@@ -996,8 +1002,6 @@
             href: style-presets.md
           - name: Add a favicon
             href: add-favicon.md
-          - name: Add a welcome message
-            href: add-welcome-message.md 
           - name: Add a copyright notice
             href: add-copyright-notice.md
           - name: Add languages
@@ -1274,12 +1278,16 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
+      - name: Commerce analytics (Preview)
+        href: commerce-analytics.md
     - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+      - name: Set up build pipeline for fiscal integration sample
+        href: localizations/fiscal-integration-sample-build-pipeline.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
       - name: Regulatory configuration service (RCS)
@@ -1316,6 +1324,8 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+        - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
+          href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
         items:
         - name: Commerce localization for Brazil
@@ -1332,6 +1342,8 @@
           href: localizations/latam-bra-nfce-contingency-mode.md          
         - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
           href: localizations/latam-bra-retail-statements.md
+        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil 
+          href: localizations/latam-bra-cf-e-sat.md       
         - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil 
           href: localizations/latam-bra-adyen.md          
       - name: Eastern Europe
@@ -1350,12 +1362,16 @@
           items:
           - name: Fiscal registration service integration sample for Czech Republic
             href: localizations/emea-cze-fi-sample.md
+          - name: Deployment guidelines for fiscal integration sample for Czech Republic (legacy)
+            href: localizations/emea-cze-fi-sample-sdk.md
         - name: Poland
           items:
           - name: Fiscal printer integration sample for Poland
             href: localizations/emea-pol-fpi-sample.md
           - name: Customer information management for Poland
             href: localizations/emea-pol-customer-information.md
+          - name: Deployment guidelines for fiscal integration sample for Poland (legacy)
+            href: localizations/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
         - name: Cash register functionality
@@ -1372,6 +1388,8 @@
         items:
         - name: Fiscal registration service integration sample for Germany
           href: localizations/emea-deu-fi-sample.md
+        - name: Deployment guidelines for fiscal integration sample for Germany (legacy)
+          href: localizations/emea-deu-fi-sample-sdk.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
@@ -1380,14 +1398,18 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Support for upgrade and N-1 for India
           href: localizations/apac-ind-n-1-for-india.md
-        - name: Generate QR codes and print them on receipts
+        - name: Generate QR codes and print them on receipts for India
           href: localizations/ind-generate-qr-code-print-receipt.md
+        - name: Goods and Services Tax (GST) integration for e-commerce sites
+          href: localizations/apac-ind-e-commerce.md
       - name: Italy
         items:
         - name: Fiscal printer integration sample for Italy
           href: localizations/emea-ita-fpi-sample.md
         - name: Customer information management for Italy
           href: localizations/emea-ita-customer-information.md 
+        - name: Deployment guidelines for fiscal integration sample for Italy (legacy)
+          href: localizations/emea-ita-fpi-sample-sdk.md
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
@@ -1397,6 +1419,8 @@
         - name: Cash register functionality
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
+          href: localizations/emea-nor-fi-deployment.md
+        - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Russia
         items:
@@ -1412,12 +1436,18 @@
           href: localizations/rus-fpi-sample.md
         - name: Customer information management for Russia
           href: localizations/rus-customer-information.md 
+      - name: Saudi Arabia
+        items:
+        - name: Generate QR codes and print them on receipts for Saudi Arabia
+          href: localizations/emea-sau-qr-code.md
       - name: Sweden
         items:
         - name: Cash register functionality
           href: localizations/emea-swe-cash-registers.md
         - name: Control unit integration sample for Sweden
           href: localizations/emea-swe-fi-sample.md
+        - name: Deployment guidelines for control unit integration sample for Sweden (legacy)
+          href: localizations/emea-swe-fi-sample-sdk.md
         - name: Sample for Retail POS integration with control units (legacy)
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
@@ -1614,6 +1644,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
             - name: Today
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
+            - name: WeekNum
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
           - name: List 
             items: 
             - name: List functions
@@ -2448,8 +2480,8 @@
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management
             href: e-commerce-extensibility/set-up-key-vault.md
-          - name: Create a request pipeline plug-in hook
-            href: e-commerce-extensibility/request-pipeline-hook.md
+          - name: Image component
+            href: e-commerce-extensibility/image-component.md
         - name: Develop data actions
           items:
           - name: Data actions overview
@@ -2536,6 +2568,8 @@
             href: e-commerce-extensibility/sdk-faq.md
           - name: Debugging best practices for Dynamics 365 Commerce development
             href: e-commerce-extensibility/debugging-best-practices.md
+          - name: Test e-commerce site pages for memory leaks
+            href: e-commerce-extensibility/memory-leak-detection.md
       - name: Retail SDK
         items:
         - name: Migrate to the Commerce SDK
@@ -2556,6 +2590,8 @@
           href: dev-itpro/retail-sdk/SDK-build-pipeline.md
         - name: Download samples and packages from GitHub and NuGet
           href: dev-itpro/retail-sdk/sdk-github.md
+        - name: Set up a Visual Studio 2017 build agent to build Modern POS
+          href: dev-itpro/retail-sdk/mpos-build-agent.md
         - name: Retail SDK FAQ
           href: dev-itpro/retail-sdk/sdk-faq.md
       - name: Point of sale (POS) extensibility

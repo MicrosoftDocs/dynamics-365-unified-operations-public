@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 10.0.12
 # Snapshots overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Snapshots let organizations edit and save information about their cash position and cash forecasts at a point in time. You can compare the snapshot with actual financials, examine the variance, and use that information to improve cash flow forecasts over time. More specifically, snapshots can be used in the following ways:
 

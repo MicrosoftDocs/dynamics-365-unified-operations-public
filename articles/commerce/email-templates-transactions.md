@@ -4,7 +4,7 @@
 title: Create email templates for transactional events 
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 10/26/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.8
 # Create email templates for transactional events
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 
@@ -140,7 +140,7 @@ The B2B prospect approved notification type supports the following additional pl
 | `storename`        | The name of the channel where the prospect was created. |
 | `storeurl`         | Empty by default. A custom extension must be created to use this placeholder. |
 
-### B2B prospect approved
+### B2B prospect rejected
 
 The *B2B prospect rejected* notification type is triggered when a prospect's onboarding request is rejected in Commerce headquarters. For more information about how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 

@@ -3,7 +3,7 @@
 
 title: Retail software development kit (SDK)
 description: The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
-author: robinarh
+author: tonyafehr
 ms.date: 09/27/2021
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: ["17771", "intro-internal"]
 ms.search.region: Global
@@ -93,6 +93,7 @@ Visual Studio 2017 has TypeScript 3.1 as the default version. You must install v
 - .NET Developer Pack:
     +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
+    +  [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer)
     
 - [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
 

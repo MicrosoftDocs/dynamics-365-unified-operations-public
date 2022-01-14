@@ -4,7 +4,7 @@
 title: Service description for Finance and Operations apps
 description: This topic provides the service description for Finance and Operations apps.
 author: tomhig
-ms.date: 09/29/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -48,10 +48,10 @@ The operating model of Finance and Operations apps defines specific roles and re
 
 ### Customer activities
 
-Customers work with their partner and [Microsoft FastTrack](/dynamics365/fasttrack/) following the [Success by Design](/dynamics365/fasttrack/success-by-design-overview) framework and using tools and best practice templates provided in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) to implement their solution. Common activities include:
+Customers work with their partner and [Microsoft FastTrack](/dynamics365/fasttrack/) following the [Dynamics 365 Implementation Guide](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), the [Success by Design](/dynamics365/fasttrack/success-by-design-overview) framework, and the tools and best practice templates provided in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) to implement their solution. Common activities include:
 
 - User identity and security management
-- Define, develop and operate business processes
+- Define, develop, and operate business processes
 - Define, develop, test, and operate extensions
 - Monitor and manage non-production deployments
 - Manage application updates and validate extensions
@@ -64,7 +64,7 @@ Microsoft manages the Finance and Operations service by deploying, actively moni
 **Infrastructure management**
 - Security and isolation
 - Operating systems and virtualization
-- Servers, storage and networking
+- Servers, storage, and networking
 - Data center power, networking, cooling
 
 **Application platform management**
@@ -115,7 +115,7 @@ Finance and Operations apps are served from several Azure regions around the wor
 ### Country/region-specific considerations
 
 - Customers in regulated industry or commercial organizations that do business with entities in France that require local data residency should review [Finance and Operations in France](../../dev-itpro/deployment/france-local-deployment.md).
-- Customers that have operations in China should review [Finance and Operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
+- Customers that have operations in China should review [Azure China Playbook](/azure/china/) and [Finance and Operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
 - Customers that have operations in Russia should review the [Russian personal data localization law](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### General Data Protection Regulation (GDPR)
@@ -312,9 +312,9 @@ Microsoft's Disaster Recovery plans and procedures are examined regularly throug
 | Microsoft provisions a secondary environment in the Azure paired datacenter when the primary production instance is deployed. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft enables geo-redundancy of Azure SQL and Azure Blob Storage when the primary production instance is deployed. | None |
 | Microsoft enables automatic backup on the Azure SQL databases. | None |
-| <p>When an outage occurs, Microsoft determines whether a failover must be performed for the customer, and whether there will be data loss. Data loss can be up to five seconds. For more information, see [Azure SQL Database Geo-Restore](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>In the event of data loss, Microsoft will request the customer's sign-off for a failover.</p> | In the event of data loss, the customer might have to provide written sign-off to trigger the failover. |
+| <p>When an outage occurs, Microsoft determines whether a failover must be performed for the customer, and whether there will be data loss. Customers might experience data loss of up to 15 minutes, depending on the nature and timing of the outage. | In the event of data loss, the customer may have to provide written signoff to trigger the failover. |
 | When a failover occurs, the applicable service works in limited mode. Update maintenance can't be triggered in failover mode. | The customer can't request package deployments or other regular maintenance requests in failover mode. |
-| When the datacenter becomes operational, Microsoft fails back to the production instance in the primary Azure region. Normal operations resume. | The customer might have to sign-off on failback to the production instance in the primary Azure region. |
+| When the datacenter becomes operational, Microsoft fails back to the production instance in the primary Azure region. Normal operations resume. | The customer may have to signoff on failback to the production instance in the primary Azure region. |
 
 ## Finance and Operations support offerings
 
@@ -354,6 +354,7 @@ Microsoft is committed to an availability rate of 99.9 percent per month of the 
 - **[Licensing guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Use this guide to learn more about how to license Dynamics 365.
 - **[Customer support](https://dynamics.microsoft.com/support/)** – Get industry-leading support for your Dynamics 365 apps.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Manage your application lifecycle, and move towards predictable, repeatable, high-quality implementations.
+- **[Dynamics 365 Implementation Guide](https://aka.ms/D365ImplementationGuideFlip)** - The Dynamics 365 Implementation Guide documents time-tested Success by Design principles and provides prescriptive guidance to architect, build, test, and deploy Dynamics 365 solutions.
 
 ## Definitions
 
@@ -426,6 +427,10 @@ The SLA applies to Microsoft online services. For more information, see [Service
 ### Service update
 
 Microsoft services Finance and Operations environments on consistent basis through service updates. Customers set their own service update calendar, based on their business needs. For more information, see [One Version service updates](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+
+### [Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+The framework that systematically guides an implementation through a series of assessments at critical stages to ensure optimal architecture, security, performance, and user experience for a Dynamics 365 solution.
 
 ### User
 

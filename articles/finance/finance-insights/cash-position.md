@@ -4,7 +4,7 @@
 title: Cash position
 description: This topic describes how the Cash flow forecasting feature predicts an organization's cash position for specific times. It also describes the options that are available for showing forecasts for different periods. 
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 10.0.8
 # Cash position
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Cash position is the projection of cash flow that is forecast for the near term. It's based on the projection of cash receipts from customers that pay outstanding invoices and orders, and also on the projection cash disbursements that are paid to vendors for purchase invoices and orders.
 
@@ -50,5 +49,17 @@ The lower section of the **Cash position** tab shows details for the position, c
 - The **Bank account** grid shows the impact of expected cash inflows and outflows on the bank balance.
 
 To save and edit the cash position, create a snapshot. For more information about how to work with snapshots, see [Snapshots overview](payment-snapshots.md).
+
+## Details of the Cash position capability 
+
+The Cash position feature includes the following functionality. 
+
+- Cash position feature shows the cashflow based on existing documents in the system and cash inflow and outflow lines imported from external systems.
+- Makes it easy to integrate cash flow data from external systems to Dynamics 365 Finance. Cash position can also use the data import-export framework. This framework makes it easy to integrate with Excel OData. You can also combine data from multiple sources to create a comprehensive cash position solution.
+- Introduces intelligent cash position. Cash position is created based on customer’s payment behavior to predict when a company can expect cash to arrive in their accounts.
+- For Customer orders and invoices, customer payment prediction AI functionality is used to determine the historical customer payment behavior when an order or invoice will be paid.
+- For vendor orders and invoices, we use average time between shipping and invoice and paying an invoice per vendor to determine when a vendor order or invoice will be paid making cash outflows more accurate.
+
+This creates a more accurate view of cash flow based on historical payment behavior for the treasurer. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

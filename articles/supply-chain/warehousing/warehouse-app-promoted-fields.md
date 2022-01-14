@@ -1,14 +1,14 @@
 ---
 title: Configure promoted fields for steps in the Warehouse Management mobile app
 description: This topic describes how to promote and highlight specific information for any step in the task flows for the Warehouse Management mobile app.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 ---
@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.23
 # Configure promoted fields for steps in the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: GA with 10.0.23 -->
 
 > [!IMPORTANT]
 > The features that are described in this topic apply only to the new Warehouse Management mobile app. They don't affect the old warehouse app, which is now deprecated.

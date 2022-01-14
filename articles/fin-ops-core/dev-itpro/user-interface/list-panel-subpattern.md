@@ -5,7 +5,7 @@ author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
