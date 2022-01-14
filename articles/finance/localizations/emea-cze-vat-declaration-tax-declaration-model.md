@@ -188,7 +188,7 @@ This section contains the following information about each document.
 
 To automatically determine the subject code for the document, you should use the same settings that were described for section A1.
 
-For more information about how to define the date of the vendor VAT register, see [Date of vendor VAT register](emea-date-of-vendor-vat-register.md).
+For more information about how to define the date of the vendor VAT register, see [Date of vendor VAT register](emea-date-vendor-vat-register.md).
 
 ### Section A2: Purchases with reverse charge, excluding domestic reverse charge, with an obligation to pay VAT
 
