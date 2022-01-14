@@ -40,7 +40,7 @@ The following setup must be completed for all funds where you want to define thi
 2. For the Purchase order year-end process, the **Override selected year-end option** must be set to **Yes**.
 3. For Carry-forward budget status, the **Reinstate the budget when a carry-forward purchase order is canceled or reduced** can be set to the following values.
    - No Creates a budget register entry for the remaining balance of the purchase order that's canceled or reduced.
-   - Yes Allows the purchase order to be canceled or reduced without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by additional documents.
+   - Yes Allows the purchase order to be canceled or reduced without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by other documents.
 
 ## Reduce carry-forward budget when an invoice is reduced
  
@@ -52,5 +52,5 @@ Once the feature is enabled, the same fund setup that was defined earlier will b
 2. For the Purchase order year-end process, set the **Override selected year-end option** field to **Yes**.
 3. For Carry-forward budget status, the **Reinstate the budget when a carry-forward purchase order is canceled or reduced** can be set to the following values.
    - No creates a budget register entry against the purchase order for the variance reduction amount.
-   - Yes allows the invoice reduction without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by additional documents.
+   - Yes allows the invoice reduction without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by other documents.
 
