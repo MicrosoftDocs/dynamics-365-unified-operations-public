@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration (Spain)
-description: This topic contains information about the Estonian Intrastat report.
+description: This topic describes how to set up and generate a value-added tax (VAT) declaration model 303 for Spain in the official TXT format.
 author: anasyash
 ms.date: 01/15/2022
 ms.topic: article
@@ -21,7 +21,7 @@ This topic describes how to set up and generate a value-added tax (VAT) declarat
 
 To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each box on the advance VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the advance VAT declaration, associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
 
-For Spain, you must configure **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#_Set_up_application-specific) section later in this topic.
+For Spain, you must configure **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up) section later in this topic.
 
 In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
@@ -141,7 +141,7 @@ Open the **Electronic reporting** workspace, and import the latest versions of t
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-### Set up application-specific parameters for VAT declaration fields
+### <a name="set-up"></a>Set up application-specific parameters for VAT declaration fields
 
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
 
