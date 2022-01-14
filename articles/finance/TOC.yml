@@ -2081,7 +2081,7 @@
           - name: Create and submit VAT report
             href: localizations/tasks/create-submit-vat-report.md
           - name: Date of vendor VAT register
-            href: localizations/emea-date-of-vendor-vat-register.md
+            href: localizations/emea-date-vendor-vat-register.md
         - name: View transactions on settlement
           href: localizations/emea-transactions-settlement-form.md
         - name: Financial reason
