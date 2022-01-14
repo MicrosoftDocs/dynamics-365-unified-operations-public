@@ -5,8 +5,9 @@ author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer
 ms.reviewer: tfehr
-ms.custom: "intro-internal"
+
 ms.search.region: Global
+ms.topic: overview
 ms.author: tfehr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28

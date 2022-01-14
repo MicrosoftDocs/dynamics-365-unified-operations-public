@@ -5,7 +5,7 @@ title: Workflow system overview
 description: This topic describes the workflow system.
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
