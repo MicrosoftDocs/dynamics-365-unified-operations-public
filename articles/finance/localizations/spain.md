@@ -45,6 +45,7 @@ This topic provides links to documentation resources for Spain.
 - [Spanish promissory note options](emea-esp-promissory-note-options.md)
 - [Report 340](emea-esp-report-340.md)
 - [Declaration 347 report](emea-esp-declaration-347-report.md)
+- [VAT declaration 303](emea-esp-vat-declaration-spain.md)
 - [Sales and purchase cycles](emea-esp-sales-purchase-cycle.md)
 - [Special entries and opening sheets](emea-esp-opening-sheets-spain.md)
 - [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](emea-esp-sii.md)
