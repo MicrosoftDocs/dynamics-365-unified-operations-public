@@ -65,7 +65,7 @@ The following image shows an example online channel.
 
 ## Assign the channel to a Commerce Scale Unit
 
-Your new channel must be assigned to a Commerce Scale Unit. To do this, follow the steps in [Configure channels to use Commerce Scale Unit](/dynamics365/fin-ops-core/dev-itpro/deployment/initialize-retail-channels#configure-retail-channels-to-use-commerce-scale-unit). 
+Your new channel must be assigned to a Commerce Scale Unit. To do this, follow the steps in [Configure channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit). 
 
 ## Set up languages
 
