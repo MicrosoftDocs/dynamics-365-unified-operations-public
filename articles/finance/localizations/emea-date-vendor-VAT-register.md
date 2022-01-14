@@ -3,11 +3,26 @@
 
 title: Date of vendor VAT register
 description: This topic provides information about a feature for enabling date of vendor VAT register
-author: Anasyash
+author: anasyash
 ms.date: 01/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology:
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: "intro-internal"
+ms.search.region: global
+# ms.search.industry: 
+ms.author: anashyash
+ms.search.validFrom: 2022-01-15
+ms.dyn365.ops.version: AX 10.0.24
+
 ---
 
 # Date of vendor VAT register
