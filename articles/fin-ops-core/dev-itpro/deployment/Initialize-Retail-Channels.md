@@ -102,15 +102,15 @@ After Commerce Scale Unit has been deployed, you must ensure that your channels 
 To configure your channels to use the Commerce Scale Unit database, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and commerce > Headquarters setup > Commerce Scheduler > Channel database**.
-2. In the left pane, select a channel database.
-3. Select the **Retail channel** FastTab to expand it.
-4. Select **+Add**, and then select your retail channel from the drop-down list.  
-5. Select **+Add**, and then select your online channel from the drop-down list. 
+1. In the left pane, select a channel database.
+1. Select the **Retail channel** FastTab to expand it.
+1. Select **+Add**, and then select your retail channel from the drop-down list.  
+1. Select **+Add**, and then select your online channel from the drop-down list. 
 
 When finished, go to **Distribution schedule** under **Retail and Commerce > Retail and commerce IT** and run job 9999.
 
 > [!NOTE] 
-> Running job 9999 syncs all new products and customers to the CSU, which could take a long time. If you only need the channel to be available for e-commerce site builder configuration, you can run job 1070.  
+> Running job 9999 syncs all new products and customers to the Commerce Scale Unit, which could take a long time. If you only need the channel to be available for e-commerce site builder configuration, you can run job 1070 instead of job 9999.  
 
 ### Database refresh and Commerce Scale Units
 
