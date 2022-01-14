@@ -230,7 +230,9 @@ When using an OPOS printer, you may need to convert the QR code image from the *
 
 ## Sample of a CRT extension class for printing QR codes
 
- ```C#
+# [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
+
+```C#
 namespace Contoso
 {
     namespace Commerce.Runtime.ReceiptsIndia
@@ -553,4 +555,16 @@ namespace Contoso
             }
         }
     }
-   ```     
+```     
+
+# [Commerce 10.0.25](#tab/commerce-10-0-25)
+
+```C#
+```     
+
+# [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
+
+```C#
+```     
+
+---
