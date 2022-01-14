@@ -4,7 +4,7 @@
 title: Date of vendor VAT register
 description: This topic provides information about a feature for enabling date of vendor VAT register
 author: Anasyash
-ms.date: 01/14/2022
+ms.date: 01/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology:
