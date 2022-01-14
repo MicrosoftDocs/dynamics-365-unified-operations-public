@@ -101,10 +101,10 @@ To review the available capacity on the resource group, follow these steps.
 1. Go to **Organization administration \> Resources \> Resource groups**, and select a resource group that is applicable to the order that can't be scheduled.
 1. On the Action Pane, on the **Resource group** tab, in the **View** group, select **Capacity load** or **Capacity load, graphically**, and make sure there is available capacity.
 
-# Master planning books a resource when resource calendar is closed
+## Master planning books a resource when the resource calendar is closed
 
-When using operations scheduling, master planning will plan capacity according to the calendar of the primary resource group. It will not take into account any calendar nor capacity of the secondary operation. It books the secondary operation at the same time than the primary. Note that this can result in scheduling the production order in a closed calendar or in a time when the secondary operation is not available (calendar closed, no capacity).
+When using operations scheduling, master planning will plan capacity according to the calendar of the primary resource group. It books the secondary operation at the same time as the primary operation and doesn't take into account the calendars or capacity of the secondary operation. This can result in the production order being scheduled in a closed calendar or at a time when the secondary operation isn't available (calendar closed, no capacity).
 
-When using job scheduling master planning will take into account both the capacity and calendar of the primary and secondary operation to schedule the order. Calendars for both resources of the operations must be open and with available capacity for the order to be scheduled. 
+When using job scheduling, master planning will take into account both the capacity and calendar of both the primary and secondary operation when scheduling the order. For the order to be scheduled, calendars for the resources of both operations must be open and have available capacity.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
