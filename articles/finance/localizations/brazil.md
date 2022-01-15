@@ -5,7 +5,7 @@ title: Brazil overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Brazil. 
 author: ShylaThompson
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: roschlom

@@ -5,7 +5,7 @@ title: Poland overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Poland. 
 author: kfend
 ms.date: 01/07/2022
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

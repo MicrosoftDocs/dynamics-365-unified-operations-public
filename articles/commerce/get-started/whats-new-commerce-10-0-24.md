@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.24 (February 2022)
-description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.24. 
+title: What's new or changed in Dynamics 365 Commerce 10.0.24 (February 2022)
+description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.24. 
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -27,10 +27,9 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Preview features in Dynamics 365 Commerce 10.0.24 (February 2022)
+# What's new or changed in Dynamics 365 Commerce 10.0.24 (February 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.24. This version has a build number of 10.0.1084 and is available on the following schedule:
 

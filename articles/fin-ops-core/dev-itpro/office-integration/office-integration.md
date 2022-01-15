@@ -5,7 +5,7 @@ title: Office integration overview
 description: This topic reviews Microsoft Office integration concepts and features.
 author: jasongre
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
