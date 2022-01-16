@@ -156,7 +156,7 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Add the calculated delay to the requirement date** (in the **Planned transfer** section) – Pending *Calculated delays* support.
   - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – Pending *Calculated delays* support.
 
-- **Action messages** FastTab:
+- **Action message** FastTab:
 
   - **Update postponed date as requirement date** - This parameter is discontinued with Planning Optimization.
 
