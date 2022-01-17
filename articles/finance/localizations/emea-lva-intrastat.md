@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Finnish Intrastat
+title: Latvian Intrastat
 description: This topic contains information about the Latvian Intrastat report.
 author: andosip
 ms.date: 01/17/2022
