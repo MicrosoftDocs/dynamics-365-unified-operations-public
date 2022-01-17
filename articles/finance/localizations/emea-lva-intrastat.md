@@ -134,7 +134,7 @@ You must create VAT ID registration types for all the countries or regions that 
 6. In the **Registration number** field, enter the company's VAT number.
 7. On the Action Pane, select **Save**. Then close the page.
 
-For more information, see [Registration IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
+For more information, see [Registration IDs](emea-registration-ids.md).
 
 Alternatively, you can create a customer's VAT registration number by using the **Tax exempt number** page.
 
