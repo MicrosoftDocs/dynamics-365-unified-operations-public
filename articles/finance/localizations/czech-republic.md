@@ -61,6 +61,9 @@ Information about intra-community VAT can be calculated and posted automatically
 
 When a purchase invoice is posted, the receivable VAT and payable VAT are posted at the same time. For the positive sales tax transaction, the VAT register date is set to the VAT register date from the invoice posting page, and the sales tax direction is **Sales tax receivable**. For the negative sales tax transaction, the VAT register date is set to the document date, and the sales tax direction is **Sales tax payable**.
 
+## Intrastat declaration
+For information about the Czech Intrastat report, see [Czech Intrastat](emea-cze-intrastat.md).
+
 ## Credit note on cash discount
 For information about creating, posting, and printing credit notes for cash discounts that are given to customers, see [Credit note on cash discount](emea-cze-credit-note-cash-discount.md).
 
