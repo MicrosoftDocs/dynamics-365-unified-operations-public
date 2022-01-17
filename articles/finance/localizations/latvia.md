@@ -36,6 +36,7 @@ This topic provides links to documentation resources for Latvia.
 - [Invoice and packing slip numbering](emea-invoices-packing-slips-numbering.md)
 - [Tax on natural resources report](emea-lva-tax-natural-resources.md)
 - [VAT statement details](emea-lva-vat-statement-details.md)
+- [Latvian Intrastat](emea-lva-intrastat.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
