@@ -21,6 +21,8 @@ This topic lists new features, fixes, improvements, and known issues for each re
 
 ## Version 2.0.14.0
 
+This version introduces the following new features, fixes, and improvements:
+
 - Fixed an issue that disabled the default submit button
 
 ## Version 2.0.13.0
