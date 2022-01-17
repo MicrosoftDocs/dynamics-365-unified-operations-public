@@ -114,10 +114,8 @@ The following table lists the fields that the **Landed cost** module adds to the
 
 | Name | Mapping | Data type | Key | Mandatory |
 |---|---|---|---|---|
-| Cost area | LedgerJournalTrans.ITMCostArea | | | |
-| Cost type code | LedgerJournalTrans.ITMCostTypeId | | | |
-
-<!-- KFM: I suspect some values are missing in the above table. Following up with author. -->
+| Cost area | LedgerJournalTrans.ITMCostArea | Int | No | No |
+| Cost type code | LedgerJournalTrans.ITMCostTypeId | Nvarchar(20) | No | No |
 
 ### Main/offset account
 

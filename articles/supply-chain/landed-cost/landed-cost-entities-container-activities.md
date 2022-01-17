@@ -43,7 +43,7 @@ You can use the container activities entity (`ITMContainerActivityEntity`) to cr
 
 ## Tracking control
 
-The tracking control center enables an update of a specified source field to be triggered by an update of a nominated target field. If both the value of the source field and the value of the target field are updated by using the container activities entity, the target field will show the entity value. This behavior is related to tracking control records that have a **Create type** value of *Lead time*.
+The tracking control center enables an update of a specified source field to be triggered by an update of a specified target field. If both the value of the source field and the value of the target field are updated by using the container activities entity, the target field will show the entity value. This behavior is related to tracking control records that have a **Create type** value of *Lead time*.
 
 For cost areas that have a **Create type** value of *Status update* or *Blank* (which is a user-defined value), the system will update the voyage status or target field according to the tracking control configuration.
 
