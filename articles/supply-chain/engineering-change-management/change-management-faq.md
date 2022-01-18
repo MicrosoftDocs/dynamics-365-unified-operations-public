@@ -63,7 +63,7 @@ In addition to the fields that are shown in the previous table, all default orde
 > [!NOTE]
 >
 > - The unit is defaulted from the template.
-> - For retailers using Dynamics 365 Commerce functionality, when assigning a retail category to a product, the retail category applies default values for many of the fields for the released product level. This default overwrites what may be defaulted by the template or copied from engineering.
+> - For retailers using Dynamics 365 Commerce functionality, when assigning a retail category to a product, the retail category applies default values for many of the fields for the released product level. These defaults overwrite default values that may have already been set by the template or copied from engineering.
 
 ## Should I create a separate legal entity for engineering products or use an existing legal entity?
 
