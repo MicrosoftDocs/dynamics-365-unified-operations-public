@@ -60,8 +60,10 @@ The following tables shows the fields that are copied during these processes.
 
 In addition to the fields that are shown in the previous table, all default order settings are copied from the released item template, both when the product is created in the engineering company and when it's released to an operational company. (To view the default order settings for a released item template, open the relevant **Released product details** page, and then, on the Action Pane, on the **Manage inventory** tab, select **Default order settings**.)
 
-Note the unit is defaulted from the template. 
-For retailers, using Dynamics 365 Commerce functionality, when assigning a retail category to a product, the retail category defaults many of the information in the released product level. Note this default overwrites what may be defaulted by the template or copied from engineering.
+> [!NOTE]
+>
+> - The unit is defaulted from the template.
+> - For retailers using Dynamics 365 Commerce functionality, when assigning a retail category to a product, the retail category applies default values for many of the fields for the released product level. This default overwrites what may be defaulted by the template or copied from engineering.
 
 ## Should I create a separate legal entity for engineering products or use an existing legal entity?
 
