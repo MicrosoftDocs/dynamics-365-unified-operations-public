@@ -58,7 +58,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 
 ## Features turned on by default in this release
 
-The following table lists the features that became either mandatory or turned on by default starting in 10.0.25. Mandatory features can't be turned off, but default-on features can still be turned off using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists features that became either mandatory or turned on by default starting in 10.0.25. All of these features will automatically be turned on for your system as soon as you update to 10.0.25 (if they aren't already). Mandatory features can't be turned off, but default-on features can still be turned off using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Feature name | Enable date | Feature added | Feature state | Module |
 | --- | --- | --- | --- | --- |
