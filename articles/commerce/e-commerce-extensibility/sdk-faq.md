@@ -33,7 +33,7 @@ This topic summarizes answers to questions frequently asked by users of the Dyna
 
 ### Upload of my e-commerce packages fails, and I receive the following error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
 
-To help decrease deployment time during package deployment, uploaded packages are no longer automatically built by using the latest online SDK. If package upload fails, and you receive that error message, rebuild your package, and redeploy it by using the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack). This command will force the latest online SDK to be pulled into the package and then redeploy the package.
+To help decrease deployment time during package deployment, uploaded packages are pre-built while running the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) using the latest online SDK. If package upload fails, and you receive that error message, rebuild your package and redeploy it by using the **yarn msdyn365 pack** command. This command will force the latest online SDK to be pulled into the package and then redeploy the package.
 
 ### Can I opt in to using Webpack 5 to bundle the Commerce application?
 
