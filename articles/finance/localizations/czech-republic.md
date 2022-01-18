@@ -3,8 +3,8 @@
 
 title: Czech Republic overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
-author: ShylaThompson
-ms.date: 09/02/2020
+author: kfend
+ms.date: 01/18/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -16,10 +16,9 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-
 ms.search.region: Czech Republic
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
