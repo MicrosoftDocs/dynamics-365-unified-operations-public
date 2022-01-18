@@ -52,25 +52,25 @@ There are five different categories of workflow business events. The category wi
 
 ![Business event categories in Microsoft Power Automate.](media/Business-event-category.png  "Business event categories in Microsoft Power Automate")
 - **Category: Workflow type** 
-     - These events will fire on workflow events like started and completed. All workflow instances will be represented in this category.
+     - These events will fire on workflow events including started and completed. All workflow instances will be represented in this category.
+     - Example: Purchase requisition approval workflow started
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID, for example "Workflow_BudgetPlanReview_000002"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ")", for example "Prepare department budget (000002)"
 - **Category: Workflow element started**
      - These events will fire when a workflow element is started. All enabled workflow elements within a workflow instance will be represented in this category. 
+     - Example: Purchase requisition automated approval started
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_Started", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_Started"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
 - **Category: Workflow element**
      - These events will fire on workflow element events other than started, such as completed. All enabled workflow elements within a workflow instance will be represented in this category. 
+     - Example: Purchase requisition automated approval completed
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name, for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
 - **Category: Workflow external task** 
      - These events will fire when a workflow automated task element is started. All enabled workflow automated task elements within a workflow instance will be represented in this category. 
+     - Example: Purchase requisition automated approval started
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_ExternalTask", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_ExternalTask"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
 - **Category: Workflow workitem**
      - These events will fire when a workflow work item is created for a user. All enabled workflow tasks and workflow approvals within a workflow instance will be represented in this category. 
+     - Example: Purchase requisition manual approval work item created for Bob
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_WorkItem", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_WorkItem"
-     - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
 
 ## Completion of a work item in Power Automate
 Workflow business events are a good target for triggering approval flows. The **workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Power Automate.
