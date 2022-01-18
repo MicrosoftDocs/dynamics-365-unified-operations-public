@@ -3,15 +3,16 @@
 
 title: Czech Intrastat
 description: This topic contains information about the Czech Intrastat report.
-author: andosip
-ms.date: 12/14/2021
+author: anasyash
+ms.date: 01/18/2022
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
+
 # Czech Intrastat
 
 [!include [banner](../includes/banner.md)]
@@ -49,13 +50,13 @@ From the Global repository, import the latest version of the following Electroni
 - Intrastat report
 - Intrastat (CZ)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Andosip_estonia_intrastat/articles/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ### Set up VAT IDs
 
 #### Set up the VAT ID of your company
 
-1. In Microsoft Dynamics 365 Finance, go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
+1. In Microsoft Dynamics 365 Finance, go to **Organization administration** > **Organizations** > **Legal entities**.
 2. In the grid, select your company.
 3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter the VAT ID of your company.
 
@@ -65,7 +66,7 @@ For more information, see [Download ER configurations from the Global repository
 
 You must create VAT ID registration types for all the countries or regions that your company does business with.
 
-1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
+1.  Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2.  On the Action Pane, select **New** to create a registration type for the VAT ID.
 3.  In the **Enter registration type details** dialog box, in the **Name** field, enter a name for the new registration type. For example, enter **VAT ID**.
 4.  In the **Country/region** field, select the country or region that your company does business with.
@@ -73,14 +74,14 @@ You must create VAT ID registration types for all the countries or regions that 
 
 ##### Match the registration type with a registration category
 
-1. Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create a link between a registration type and a registration category.
 3. For the registration type for the VAT ID, select the **VAT ID** registration category.
 4. Repeat steps 2 through 3 for the other registration types that you created for the countries or regions that your company does business with.
 
 ##### Create a customer's VAT registration number
 
-1. Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
 2. In the grid, select a customer.
 3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
@@ -92,20 +93,20 @@ For more information, see [Registration IDs](emea-registration-ids.md).
 
 Alternatively, you can create a customer's VAT registration number by using the **Tax exempt number** page.
 
-1. Go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Tax exempt numbers**.
+1. Go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**.
 2. For each tax-exempt number, create a record that includes the following information:
 
     - In the **Country/region** field, select the tax registration of the counterparty.
     - In the **Tax exempt number** field, enter the tax-exempt number of the counterparty.
     - In the **Company name** field, enter the name of the counterparty.
 
-3. Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+3. Go to **Accounts receivable** > **Customers** > **All customers**.
 4. In the grid, select a customer.
 5. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select the registration number that you just created.
 
 ## Set up the statistical signs for commodities
 
-1. Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Statistics procedure**.
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Statistics procedure**.
 2. On the Action Pane, select **New**.
 3. In the **Commodity** field, select the commodity code that requires a statistical sign.
 4. In the **Statistics procedure** field, enter the required statistical sign.
@@ -113,7 +114,7 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 ## Set up product parameters for the Intrastat declaration
 
-1. Go to **Product information management** &gt; **Products** &gt; **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 2. In the grid, select a product.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code. The name of the commodity will be printed in the **Description of commodities** field in the Intrastat declaration.
 4.  In the **Statistics procedure** field, select the statistical sign if it's required. The values that are available for selection depend on the commodity code that you selected.
@@ -124,26 +125,26 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 1. Set up transport codes.
 
-    1. Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Transport method**.
+    1. Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
     2. On the Action Pane, select **New**.
     3. In the **Transport** field, enter a unique code. Czech companies use one-digit transport codes.
 
 2. Set up mode of delivery Intrastat codes.
 
-    1. Go to **Procurement and sourcing** &gt; **Setup** &gt; **Distribution** &gt; **Terms of delivery**.
+    1. Go to **Procurement and sourcing** > **Setup** > **Distribution** > **Terms of delivery**.
     2. In the grid, select a set of delivery terms.
     3. On the **General** FastTab, in the **Intrastat code** field, enter the unique code.
 
 ## Set up the special movements codes
 
-1. Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Special movements**.
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Special movements**.
 2. On the Action Pane, select **New** to create the special movements code.
 3. In the **Special movements** field, enter the unique code.
 4. In the **Description** field, enter a description of the code.
 
 ## Set up foreign trade parameters
 
-1. Go to **Tax** &gt; **Setup** &gt; **Foreign trade parameters**.
+1. Go to **Tax** > **Setup** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat (CZ)**.
 3. In the **Report format mapping** field, select **Intrastat report**.
 4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
@@ -154,7 +155,7 @@ Alternatively, you can create a customer's VAT registration number by using the 
 
 ## Set up compression of Intrastat
 
-Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Czech Intrastat, select the following fields:
+Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Czech Intrastat, select the following fields:
 
    - Commodity
    - Transaction code
@@ -178,7 +179,7 @@ You can also manually enter transactions by selecting **New** on the Action Pane
 
 ### Generate an Intrastat report
 
-1. Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2. On the Action Pane, select **Output** &gt; **Report**.
 3. In the **Intrastat Report** dialog box, enter the start date for the report.
 4. Set the **Generate file** option to **Yes** to generate a .txt file, and then enter the name of the .txt file for the Intrastat report.
@@ -192,7 +193,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Preliminary setup
 
-1. Go to **Organization administration** &gt; **Organization** &gt; **Legal entities**, and select the **DEMF** legal entity.
+1. Go to **Organization administration** > **Organization** > **Legal entities**, and select the **DEMF** legal entity.
 2. On the **Addresses** FastTab, select **Edit**, and then, in the **Country/region** field, select **CZE (Czech Republic)**.
 3. Import the latest version of the following ER configurations:
 
@@ -204,13 +205,13 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 #### Set up the VAT ID of your company
 
-1. Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. In the grid, select **DEMF**.
 3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter **1234567890**.
 
 #### Create registration types for company codes
 
-1. Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration types**.
 2. On the Action Pane, select **New** to create a registration type for the VAT ID.
 3. In the **Enter registration type details** dialog box, in the **Name** field, enter **VAT ID**.
 4. In the **Country/region** field, select **DEU**.
@@ -219,13 +220,13 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 #### Match the registration type with a registration category
 
-1. Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.
+1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create a link between the registration type and the registration category.
 3. For the **VAT ID** registration type, select the **VAT ID** registration category.
 
 #### Set up the customer's VAT registration number
 
-1. Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
 2. In the grid, select **DE-016**.
 3. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 4. On the **Registration ID** FastTab, select **Add** to create a registration ID.
@@ -235,14 +236,14 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up the statistical signs for commodities
 
-1. Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Statistics procedure**.
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Statistics procedure**.
 2. On the Action Pane, select **New**.
 3. In the **Commodity** field, select **100 200 30**.
 4. In the **Statistics procedure** field, enter **50**.
 
 ### Set up product information
 
-1. Go to **Product information management** &gt; **Products** &gt; **Released** **products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 2. In the grid, select **D0001**.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **100 200 30**.
 4. In the **Statistics procedure** field, select **50**.
@@ -258,15 +259,15 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Set up the special movements codes
 
-1. Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Special movements**.
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Special movements**.
 2. On the Action Pane, select **New** to create the special movements code.
 3. In the **Special movements** field, enter **ZR**.
 4. In the **Description** field, enter **Staggered Consignments**.
 
 ### Set up foreign trade parameters
 
-1. Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**.
-2. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+2. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction code** field, select **11**.
 3. In the **Special movement code** field, select **ZR**.
 4. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat (CZ)**.
 5. In the **Report format mapping** field, select **Intrastat Report**.
@@ -277,7 +278,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Change the site address
 
-1. Go to **Warehouse management** &gt; **Setup** &gt; **Warehouse** &gt; **Sites**.
+1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Sites**.
 2. In the grid, select **1**.
 3. On the **Addresses** FastTab, select **Edit**.
 4. In the **Edit address** dialog box, in the **Country/region** field, select **CZE**.
@@ -287,26 +288,26 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 1. Create a transport method.
 
-    1. Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Transport method**.
+    1. Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
     2. On the Action Pane, select **New**.
     3. In the **Transport** field, enter **3**.
     4. In the **Description** field, enter **Road transport**.
 
 2. Assign the new transport method to a mode of delivery. In this way, you set up the default values that are used for the transport method when the corresponding mode of delivery is selected.
 
-    1. Go to **Procurement and sourcing** &gt; **Setup** &gt; **Distribution** &gt; **Modes of delivery**.
+    1. Go to **Procurement and sourcing** > **Setup** > **Distribution** > **Modes of delivery**.
     2. In the grid, select **10**.
     3. On the **Foreign trade** FastTab, in the **Transport** field, select **3**.
 
 3.  Select the default mode of delivery for a customer.
 
-    1. Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+    1. Go to **Accounts receivable** > **Customers** > **All customers**.
     2. In the grid, select **DE-016**.
     3. On the **Invoice and delivery** FastTab, in the **Mode of delivery** field, select **10**.
 
 4.  Select the default mode of delivery for a vendor.
 
-    1. Go to **Accounts payable** &gt; **Vendors** &gt; **All vendors**.
+    1. Go to **Accounts payable** > **Vendors** > **All vendors**.
     2. In the grid, select **DE-001**.
     3. On the **Invoice and delivery** FastTab, in the **Mode of delivery** field, select **10**.
 
@@ -314,25 +315,25 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 1.  Set up an Intrastat code for the terms of delivery.
 
-    1. Go to **Procurement and sourcing** &gt; **Setup** &gt; **Distribution** &gt; **Terms of delivery**.
+    1. Go to **Procurement and sourcing** > **Setup** > **Distribution** > **Terms of delivery**.
     2. In the grid, select **CIF**.
     3. On the **General** FastTab, in the **Intrastat code** field, enter **L**.
 
 2.  Select the default delivery terms for a customer.
 
-    1. Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+    1. Go to **Accounts receivable** > **Customers** > **All customers**.
     2. In the grid, select **DE-016**.
     3. On the **Invoice and delivery** FastTab, in the **Delivery terms** field, select **CIF**.
 
 3.  Select the default delivery terms for a vendor.
 
-    1. Go to **Accounts payable** &gt; **Vendors** &gt; **All vendors**.
+    1. Go to **Accounts payable** > **Vendors** > **All vendors**.
     2. In the grid, select **DE-001**.
     3. On the **Invoice and delivery** FastTab, in the **Delivery terms** field, select **CIF**.
 
 ### Create a sales order with an EU customer
 
-1. Go to **Accounts receivable** &gt; **Orders** &gt; **All sales orders**.
+1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 2. On the Action Pane, select **New**.
 3. In the **Create sales order** dialog box, on the **Customer** FastTab, in the **Customer** section, in the **Customer account** field, select **DE-016**.
 4. On the **General** FastTab, in the **Storage dimensions** section, in the **Site** field, select **1**.
@@ -356,7 +357,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Transfer the transaction to the Intrastat journal and review the result
 
-1. Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2. On the Action Pane, select **Transfer**.
 3. In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**.
 4. Select **Filter**.
@@ -371,32 +372,32 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
     ![Sales order details on the General tab of the Intrastat page](media/intrastat_cz_2.png)
 
-10. On the Action Pane, select **Output** &gt; **Report**.
+10. On the Action Pane, select **Output** > **Report**.
 11. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
 12. In the **Export** **options** section, set the **Generate file** option to **Yes**. Then, in the **File name** field, enter the required name.
 13. Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
 14. In the **Direction** field, select **Dispatches**.
 15. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
 
-| Field name                                                              | Value      |
-|-------------------------------------------------------------------------|------------|
-| Declaration month                                                       | 11         |
-| Declaration year                                                        | 2021       |
-| VAT registration number                                                 | 1234567890 |
-| The report direction                                                    | 2          |
-| VAT number of trading partner                                           | DE0234     |
-| Country of consignment (arrivals) / Country of destination (dispatches) | DE         |
-| Country of origin                                                       | CZ         |
-| Nature of transaction                                                   | 11         |
-| Mode of transport                                                       | 3          |
-| Delivery terms                                                          | L          |
-| Code of movement                                                        | ZR         |
-| Commodity code                                                          | 10020030   |
-| Statistical sign                                                        | 50         |
-| Description of goods                                                    | Hardware   |
-| Net mass                                                                | 16         |
-| Quantity of supplementary goods                                         | 0.000      |
-| Invoice amount                                                          | 2632       |
+    | Field name                                                              | Value      |
+    |-------------------------------------------------------------------------|------------|
+    | Declaration month                                                       | 11         |
+    | Declaration year                                                        | 2021       |
+    | VAT registration number                                                 | 1234567890 |
+    | The report direction                                                    | 2          |
+    | VAT number of trading partner                                           | DE0234     |
+    | Country of consignment (arrivals) / Country of destination (dispatches) | DE         |
+    | Country of origin                                                       | CZ         |
+    | Nature of transaction                                                   | 11         |
+    | Mode of transport                                                       | 3          |
+    | Delivery terms                                                          | L          |
+    | Code of movement                                                        | ZR         |
+    | Commodity code                                                          | 10020030   |
+    | Statistical sign                                                        | 50         |
+    | Description of goods                                                    | Hardware   |
+    | Net mass                                                                | 16         |
+    | Quantity of supplementary goods                                         | 0.000      |
+    | Invoice amount                                                          | 2632       |
 
 16. Review the report in Excel format that is generated.
 
@@ -404,7 +405,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Create a purchase order
 
-1. Go to **Accounts payable** &gt; **Purchase orders** &gt; **All purchase orders**.
+1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 2. On the Action Pane, select **New**.
 3. In the **Create purchase order** dialog box, in the **Vendor account** field, select **DE-001**.
 4. In the **Site** field, select **1**.
@@ -414,11 +415,11 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 8. On the **Lines** tab, on the **Purchase order lines** FastTab, in the **Item number** field, select **D0003**. Then, in the **Quantity** field, enter **6**.
 9. On the **Line details** FastTab, on the **Foreign trade** tab, verify that the fields are set to the following values:
 
-    - **Transaction code:** 11
-    - **Transport:** 3
-    - **Commodity:** 100 200 30
-    - **Country/region of origin:** DEU
-    - **Special movement:** ZR
+    - **Transaction code**: 11
+    - **Transport**: 3
+    - **Commodity**: 100 200 30
+    - **Country/region of origin**: DEU
+    - **Special movement**: ZR
 
 10. On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**.
 11. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
@@ -429,7 +430,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 ### Create an Intrastat declaration for arrivals
 
-1. Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
 2. On the Action Pane, select **Transfer**.
 3. In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
 4. Select **Filter**.
@@ -444,31 +445,31 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
     ![Purchase order details on the General tab of the Intrastat page](media/intrastat_cz_5.png)
 
-10. On the Action Pane, select **Output** &gt; **Report**.
+10. On the Action Pane, select **Output** > **Report**.
 11. In the **Intrastat Report** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **From date** field, select the first day of the current month.
 12. In the **Export** **options** section, set the **Generate file** option to **Yes**. Then, in the **File name** field, enter the required name.
 13. Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
 14. In the **Direction** field, select **Arrivals**.
 15. Select **OK**, and review the report in XML format that is generated. The following table shows the values in the example report.
 
-| Field name                                                              | Value      |
-|-------------------------------------------------------------------------|------------|
-| Declaration month                                                       | 11         |
-| Declaration year                                                        | 2021       |
-| VAT registration number                                                 | 1234567890 |
-| The report direction                                                    | 1          |
-| Country of consignment (arrivals) / Country of destination (dispatches) | DE         |
-| Country of origin                                                       | DE         |
-| Nature of transaction                                                   | 11         |
-| Mode of transport                                                       | 3          |
-| Delivery terms                                                          | L          |
-| Code of movement                                                        | ZR         |
-| Commodity code                                                          | 10020030   |
-| Statistical sign                                                        | 50         |
-| Description of goods                                                    | Hardware   |
-| Net mass                                                                | 30         |
-| Quantity of supplementary goods                                         | 0.000      |
-| Invoice amount                                                          | 965        |
+    | Field name                                                              | Value      |
+    |-------------------------------------------------------------------------|------------|
+    | Declaration month                                                       | 11         |
+    | Declaration year                                                        | 2021       |
+    | VAT registration number                                                 | 1234567890 |
+    | The report direction                                                    | 1          |
+    | Country of consignment (arrivals) / Country of destination (dispatches) | DE         |
+    | Country of origin                                                       | DE         |
+    | Nature of transaction                                                   | 11         |
+    | Mode of transport                                                       | 3          |
+    | Delivery terms                                                          | L          |
+    | Code of movement                                                        | ZR         |
+    | Commodity code                                                          | 10020030   |
+    | Statistical sign                                                        | 50         |
+    | Description of goods                                                    | Hardware   |
+    | Net mass                                                                | 30         |
+    | Quantity of supplementary goods                                         | 0.000      |
+    | Invoice amount                                                          | 965        |
 
 16. Review the report in Excel format that is generated.
 
