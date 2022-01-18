@@ -2882,6 +2882,8 @@
           href: localizations/emea-lva-tax-natural-resources.md
         - name: VAT statement details
           href: localizations/emea-lva-vat-statement-details.md
+        - name: Latvian Intrastat
+          href: localizations/emea-lva-intrastat.md
       - name: Lithuania
         items:
         - name: Lithuania overview
