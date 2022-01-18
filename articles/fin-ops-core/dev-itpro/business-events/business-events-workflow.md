@@ -73,7 +73,7 @@ There are five different categories of workflow business events. The category wi
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_WorkItem", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_WorkItem"
 
 ## Completion of a work item in Power Automate
-Workflow business events are a good target for triggering approval flows. The **workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Power Automate.
+Workflow business events are a good target for triggering approval flows. The **workflow work item** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Power Automate.
 
 An approval or task work item can be completed in Power Automate using the following steps:
 - Trigger the Power Automate using the **when a business event occurs** trigger targeting the appropriate **workflow work item** event.
