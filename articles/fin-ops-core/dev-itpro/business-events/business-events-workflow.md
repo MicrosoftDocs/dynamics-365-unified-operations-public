@@ -4,7 +4,7 @@
 title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
-ms.date: 01/21/2020
+ms.date: 01/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
