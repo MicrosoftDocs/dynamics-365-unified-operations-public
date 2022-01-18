@@ -1888,6 +1888,8 @@
           href: localizations/emea-cze-vat-statement-details.md
         - name: VAT declaration (Czech Republic)
           href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+        - name: Czech Intrastat
+          href: localizations/emea-cze-intrastat.md
         - name: Bank symbols for bank accounts
           href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
         - name: Intra-community VAT
