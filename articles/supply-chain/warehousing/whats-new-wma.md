@@ -2,7 +2,7 @@
 title: What's new or changed in the Warehouse Management mobile app
 description: This topic lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 09/09/2021
+ms.date: 01/18/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
@@ -23,7 +23,7 @@ This topic lists new features, fixes, improvements, and known issues for each re
 
 This version introduces the following new features, fixes, and improvements:
 
-- Fixed an issue that disabled the default submit button
+- Fixed an issue that disabled the default Submit button.
 
 ## Version 2.0.13.0
 
@@ -38,10 +38,10 @@ This version introduces the following new features, fixes, and improvements:
 - Fixed an issue that could cause the app to show the error message, "AADSTS7000215: Invalid client secret is provided."
 - Fixed the hint animation showing how to close a page using a swipe-down gesture.
 - Added the possibility to close a page using a flick-down gesture.
-- Fixed an issue where drop-down list titles weren't shown on the "User settings" page
+- Fixed an issue where drop-down list titles weren't shown on the **User settings** page.
 - Fixed a localization issue where the app wouldn't recognize a comma (,) as a decimal separator.
 - Improved accessibility.
-- Fixed the navigation on the "New connection" page to provide improved accessibility.
+- Fixed the navigation on the **New connection** page to provide improved accessibility.
 - Fixed an issue where the soft (onscreen) keyboard wouldn't appear when selecting an input field.
 - Fixed an issue that could crash the app if users quickly resized its window.
 - Fixed an issue where a fast keypress was sometimes interpreted as a long press.
