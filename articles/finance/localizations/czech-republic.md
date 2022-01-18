@@ -3,8 +3,8 @@
 
 title: Czech Republic overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
-author: ShylaThompson
-ms.date: 09/02/2020
+author: kfend
+ms.date: 01/18/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -16,10 +16,9 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-
 ms.search.region: Czech Republic
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -60,6 +59,9 @@ Information about intra-community VAT can be calculated and posted automatically
 -   In journals, select the **Document date for intra-community VAT** parameter.
 
 When a purchase invoice is posted, the receivable VAT and payable VAT are posted at the same time. For the positive sales tax transaction, the VAT register date is set to the VAT register date from the invoice posting page, and the sales tax direction is **Sales tax receivable**. For the negative sales tax transaction, the VAT register date is set to the document date, and the sales tax direction is **Sales tax payable**.
+
+## Intrastat declaration
+For information about the Czech Intrastat report, see [Czech Intrastat](emea-cze-intrastat.md).
 
 ## Credit note on cash discount
 For information about creating, posting, and printing credit notes for cash discounts that are given to customers, see [Credit note on cash discount](emea-cze-credit-note-cash-discount.md).
