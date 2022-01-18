@@ -43,14 +43,14 @@ If you're using a Tier-2 sandbox or production environment that has application 
 3. You must have Project Owner permissions in Lifecycle Services before you can initialize Commerce Scale Unit.
 4. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
 
-  - RetailBasic
-  - RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
-  - RetailGiftCard - If you plan to use gift cards.
-  - RetailInvent - If you plan to use inventory.
-  - RetailModernPos - If you plan to use point of sale (POS).
-  - RetailReplenishment - If you plan to use replenishments.
-  - RetailScheduler
-  - RetailStores - If you plan to use POS.
+    - RetailBasic
+    - RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
+    - RetailGiftCard - If you plan to use gift cards.
+    - RetailInvent - If you plan to use inventory.
+    - RetailModernPos - If you plan to use point of sale (POS).
+    - RetailReplenishment - If you plan to use replenishments.
+    - RetailScheduler
+    - RetailStores - If you plan to use POS.
 
 
 ## Region availability
@@ -81,7 +81,7 @@ Commerce Scale Unit is available for deployment in the following regions.
 | EMEA            | UK South            | Limited capacity    |
 | EMEA            | UK West             | Limited capacity    |
 
-Deployment capacity in Limited capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
+Deployment capacity in Limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
 
 ![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
@@ -97,20 +97,19 @@ Please make sure the headquarters is available. This is required to register the
 
 ## Configure channels to use Commerce Scale Unit
 
-After Commerce Scale Unit has been deployed, you must ensure that your channels are configured to use the database for this Commerce Scale Unit. 
+After Commerce Scale Unit has been deployed, you must ensure that your channels are configured to use the database for it. 
 
 To configure your channels to use the Commerce Scale Unit database, follow these steps.
 
-1. In Commerce headquarters, go to **Retail and commerce > Headquarters setup > Commerce Scheduler > Channel database**.
+1. In Commerce headquarters, go to **Retail and commerce \> Headquarters setup \> Commerce Scheduler \> Channel database**.
 1. In the left pane, select a channel database.
-1. Select the **Retail channel** FastTab to expand it.
-1. Select **+Add**, and then select your retail channel from the drop-down list.  
-1. Select **+Add**, and then select your online channel from the drop-down list. 
+1. On the **Retail channel** FastTab, select **Add**, and then select your retail channel in the drop-down list.
+1. Select **Add**, and then select your online channel in the drop-down list. 
 
-When finished, go to **Distribution schedule** under **Retail and Commerce > Retail and commerce IT** and run job 9999.
+When you've finished, go to **Retail and Commerce \> Retail and commerce IT \> Distribution schedule**, and run job 9999.
 
 > [!NOTE] 
-> Running job 9999 syncs all new products and customers to the Commerce Scale Unit, which could take a long time. If you only need the channel to be available for e-commerce site builder configuration, you can run job 1070 instead of job 9999.  
+> Job 9999 syncs all new products and customers to the Commerce Scale Unit. This process can take a long time. If the channel must be available just for e-commerce site builder configuration, you can run job 1070 instead of job 9999.
 
 ### Database refresh and Commerce Scale Units
 
