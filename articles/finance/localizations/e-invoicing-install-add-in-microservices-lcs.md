@@ -31,3 +31,21 @@ At that point, Electronic Invoicing is ready to use.
 >	[!NOTE]
 > Usually all companies have several Finance or Supply Chain management environments that include Production environment, User Acceptance Test (UAT) environment, and Development (sandbox) environment. You need to perform this operation with all environments that you want to connect to Electronic invoicing.
 
+
+ADDITOIONAL FROM DUPE TOPIC:
+
+### Step 1 (Mandatory). Create Service environment
+Create and setup Service environments. Define the list of users who can deploy Globalization features to this environment. Optionally, for some of the scenarios, define the list of external applications that can communicate with the service, and setup Number sequences if you are going to use them in your scenarios.
+
+To complete the step follow instructions: [Service environments](e-inv_tut-setup-electronic-invoicing_setup-env_service-env.md).
+
+### Step 2 (Optional). Add certificates and secrets 
+In the previous articles you learned how to setup Azure Key Vault certificates and secrets there. At this step you will make a reference to the Key Vault and secrets to use them in your scenarios. This step is required when actions in Processing pipelines use certificates and secrets for Digital signing, or communicating with external Web services.
+
+To complete the step follow instructions:  [Customer certificates and secrets](e-inv_tut-setup-electronic-invoicing_setup-env_cert-and-secrets.md).
+
+### Step 3 (Optional). Configure Connected applications
+As you will learn further, to setup communication between Dynamics 365 Finance and Supply Chain management applications and Electronic invoicing, Finance and Supply Chain management  must be configured to construct the call to the service and prepare Business data in Unified structure to be transformed to required electronic format, as well as properly process responses from the service. This configuring can be done either directly in your environment of Finance and Supply Chain management, or in RCS, and then deploy it to Finance and Supply Chain management environment. At this step you will register the connected application for the parameters deployment.
+
+To complete the step follow instructions:  [Connected applications](e-inv_tut-setup-electronic-invoicing_setup-env_connected-app.md).
+
