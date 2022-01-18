@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 09/23/2021
+ms.date: 01/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,8 +31,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-### Uploading an e-commerce package is failing with error "The e-commerce package cannot be deployed due to an outdated online SDK.  Please create a new package and retry deployment."
-To decrease deployment time during package deployment, the uploaded package will no longer auto build with the latest online SDK.  If this error is seen, rebuild your package and redeploy using the **yarn msdyn365 pack** [CLI command](cli-command-reference.md#pack) which will enforce pulling in the latest online SDK into the package and then redeploy the package.
+### Why is my e-commerce package upload failing with the error "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment."?
+
+To decrease deployment time during package deployment, uploaded packages will no longer automatically build with the latest online SDK. If your package upload fails and you see this error, rebuild your package and redeploy using the **yarn msdyn365 pack** [CLI command](cli-command-reference.md#pack) which will enforce pulling the latest online SDK into the package and then redeploy the package.
 
 ### Can I opt in to using Webpack 5 to bundle the Commerce application?
 
