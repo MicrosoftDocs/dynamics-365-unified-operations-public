@@ -96,7 +96,7 @@ Inventory posting profiles have an additional value that is specific to the sale
 
 ### Default value
 
-If you don't create a record for a posting type in a posting profile where the **Account code** field is set to **All**, and the system can't find a matching posting profile record for the **Group** or **Table** value, the system reverts to the default value that can be specified on the **Accounts for automatic transaction** page. For more information, see [Accounts for automatic transactions](accounts-for-automatic-transactions.md).
+If you don't create a record for a posting type in a posting profile where the **Account code** field is set to **All**, and the system can't find a matching posting profile record for the **Group** or **Table** value, the system reverts to the default value that can be specified on the **Accounts for automatic transaction** page. For more information, see [Accounts for automatic transactions](accounts-for-auto-transactions.md).
 
 ## Clearing accounts
 
@@ -106,7 +106,7 @@ The term *clearing account* is often used in accounting. Some posting types in M
 
 Many modules in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations have a posting profile or additional configurations that control how posting to the general ledger works. Use the following topics to learn more about the posting profiles and posting setups in each module:
 
-- [Accounts for automatic transactions](accounts-for-automatic-transactions.md)
+- [Accounts for automatic transactions](accounts-for-auto-transactions.md)
 - [Accounts payable posting](accts-payble-posting.md)
 - [Accounts receivable posting](accounts-receivable-posting.md)
 - [Asset leasing posting](../asset-leasing/set-up-lease-posting-accts.md)
