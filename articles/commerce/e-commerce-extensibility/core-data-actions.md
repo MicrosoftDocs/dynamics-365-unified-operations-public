@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce e-Commerce software development kit (SDK). You can find most of the core data actions in the \\node\_modules\\@msdyn365-commerce-modules and \\node\_modules\\@msdyn365-commerce directories. Many can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory or some within specific sub directories such as the cart state data actions can be found under \\node\_modules\@msdyn365-commerce\global-state\src\cart-state.
+This topic covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce e-Commerce software development kit (SDK). You can find most of the core data actions in the \\node\_modules\\@msdyn365-commerce-modules and \\node\_modules\\@msdyn365-commerce directories. Many can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory or some within specific sub directories such as the cart state data actions which can be found under the \\node\_modules\@msdyn365-commerce\global-state\src\cart-state directory.
 
 > [!NOTE] 
 > All core data actions are observable data actions that are wrapped in an **AsyncResult** class.
