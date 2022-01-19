@@ -108,7 +108,6 @@ Many modules in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dyna
 
 - [Accounts for automatic transactions](accounts-for-auto-transactions.md)
 - [Accounts payable posting](accts-payble-posting.md)
-- [Accounts receivable posting](accounts-receivable-posting.md)
 - [Asset leasing posting](../asset-leasing/set-up-lease-posting-accts.md)
 - Asset management posting (Coming soon)
 - Cash and bank management (Coming soon)
