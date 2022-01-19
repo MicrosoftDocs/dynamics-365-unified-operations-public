@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 The 10.0.25 release brings forth the first wave of capabilities in the infrastructure merge.  With the infrastructure merge, Dynamics 365 Human Resources will be merged with the 
 Finance and Operations infrastructure, but will continue to be licensed as an independent application, like Finance and Supply Chain Management.  
-To learn more about the infrastructure merge, please review the [Dynamics 365 Human Resources infrastructure merge FAQ](../../../human-resources/hr-infrastructure-merge-faq.md).
+To learn more about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](../../../human-resources/hr-infrastructure-merge-faq.md).
 
 The merge will provide consistency for Human Resources users in the following ways:
 [Consistent environment management and integrations between Human Resources and Finance and Operations apps](../../../dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/consistent-environment-management-integrations-between-human-resources-finance-operations-apps).
@@ -41,9 +41,9 @@ The merge will provide consistency for Human Resources users in the following wa
 
 [Improved extensibility options](../../../dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md) 
 •	Continue to use Microsoft Power Platform tools to extend where needed
-•	Ability to extend functionality via forms, tables, methods, and API’s
+•	Ability to extend functionality via forms, tables, methods, and APIs
 •	Ability to create and extend entities
-•	For more information on the extension options available, please see [Overview of extensibility in Dynamics 365](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
+•	For more information on the extension options available, see [Overview of extensibility in Dynamics 365](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 [Create one set of human resources capabilities within Dynamics 365](../../../dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
 In the 10.0.25 release, functional capabilities that existed only in Dynamics 365 Human Resources have been made available on the Finance and Operations infrastructure.  
@@ -52,17 +52,17 @@ These features include:
 
 | Feature name                          | Overview                                          | Release state                        |
 |---------------------------------------|---------------------------------------------------|--------------------------------------|
-| Years of service calculation       | Setup option to select the date used for determining Years of Service.    | Generally available|
-| Workflow Experience enhancements    |Enhanced user experience for workflow submissions and approvals.      | Generally available    |
-| Print performance reviews            | Ability print performance reviews to PDF for distribution purposes. | Generally available    |
-|Custom links in Manager self-service  | Create custom links that display in the Related links section of Manager self-service. | Generally available  |
-|Cross company compensation view|	Enables the viewing of compensation plans in Manager Self Service across all legal entities, without having to switch companies.|	Generally available|
+| Years of service calculation       | Setup option to select the date used for determining **Years of service** calculation.    | Generally available|
+| Workflow experience enhancements    |Enhanced user experience for workflow submissions and approvals.      | Generally available    |
+| Print performance reviews            | Ability print performance reviews to PDF. | Generally available    |
+|Custom links in **Manager self service**  | This feature allows you to create custom links that display in the **Related links** section of **Manager self service**. | Generally available  |
+|Cross company compensation view|	Allows users to view compensation plans in **Manager self service** across all legal entities, without having to switch companies.|	Generally available|
 |Configure multiple compensation levels by job*+	|Jobs now support multiple compensation levels	|Generally available|
 |Task Management*|	Ability to create checklists and tasks for the onboarding, offboarding, and transition process.  |	Preview|
-|Streamlined employee entry|	Updated user experience to the existing Worker page.	|Preview|
+|Streamlined employee entry|	Updated user experience on the existing **Worker** page.	|Preview|
 |Human resources user experience enhancements| See table below|	Preview|
 
-\*Must be turned on prior to turning on the Human reources user experience enhancements.
+\*Must be turned on prior to turning on the Human resources user experience enhancements.
 
 \+ Cannot be disabled once it's enabled.
 
@@ -71,15 +71,15 @@ These features include:
 | Feature name                          | Overview                                          |
 |---------------------------------------|---------------------------------------------------|
 |Advanced access|	Restricts access to employees based on legal entity.|
-|Delete employments|	The ability to delete an employment of an employee.|
-|Job families	|Additional field on the job to track a group of jobs that involve similar work, and require similar training, skills, knowledge, and expertise.|
-|Additional employment fields	|Adding of the following fields: Employment category, Employment type, and Employment status.|
-|Workers without employments page	|This page a list of workers that do not have an employment record.  |
+|Delete employment|	The ability to delete an employment of an employee.|
+|Job families	|Ability to track a group of jobs that involve similar work, and require similar training, skills, knowledge, and expertise.|
+|Additional employment fields	|The following fields were added: **Employment category**, **Employment type**, and **Employment status**.|
+|**Workers without employment** page|	A list of workers that do not have an employment record.  |
 |Position dimension user experience update|	Enhanced user experience for assigning position dimensions per legal entity.|
-|Address changes in Personnel Management workspace|	Provides a count of all address changes that occurred during a specified number of days, as defined in Human Resources parameters.|
-|Expiring records in Personnel management workspace|	Provides a list of items that have expired or will expire for Certificates, Identifications, Probations, Screenings, or Tests.|
-|Position hierarchy validation|	A page that does a check for circular references within the line hierarchy.|
-|Country specific payroll information|	Additional payroll fields enabled in worker employment depending on country location of legal entity that they are employed in.|
+|Address changes in **Personnel management** workspace|	Provides a count of all address changes that occurred during a specified number of days, as defined in **Human resources parameters**.|
+|Expiring records in **Personnel management** workspace|	Provides a list of items that have expired or will expire for **Certificates**, **Identifications**, **Probations**, **Screenings**, or **Tests**.|
+|**Position hierarchy validation** page|	A check for circular references within the **Position line hierarchy**.|
+|Country specific payroll information|	Additional payroll fields are available on the **Worker employment** page depending on country location of legal entity that they are employed in.|
 |Compliance reporting enhancements|	Additional reporting options for EEO-1, Vets 4212, and OSHA300a.|
-|Personnel Management workspace updates|	Updates to track address changes and expiring records.  New tabs that list worker and position actions. |
+|Updates to the **Personnel management** workspace |	Updates to track address changes and expiring records.  New tabs that list worker and position actions. |
 
