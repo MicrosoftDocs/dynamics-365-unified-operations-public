@@ -4,7 +4,7 @@
 title: Accounts payable postings
 description: This topic explains how postings are configured in Accounts payable and provides examples of posting configurations.
 author: rachel-profitt
-ms.date: 12/06/2021
+ms.date: 01/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: VendPosting, VendPaymMode, VendCashDiscount, MarkupTable\_Vend, 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
