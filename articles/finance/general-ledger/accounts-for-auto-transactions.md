@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts for automatic transactions
 
-The **Accounts for automatic transactions** page (**General ledger &gt; Setup &gt; Accounts for automatic transactions**) is used to define the default main account that is used for each posting type in the system. Although most posting types can be configured on a module-specific or feature-specific page, some posting types can only be configured on the **Accounts for automatic transactions** page.
+The **Accounts for automatic transactions** page (**General ledger &gt; Posting setup &gt; Accounts for automatic transactions**) is used to define the default main account that is used for each posting type in the system. Although most posting types can be configured on a module-specific or feature-specific page, some posting types can only be configured on the **Accounts for automatic transactions** page.
 
 For example, you can specify the main account that is used for the **Customer balance** posting type in the **Summary** field on the **Customer posting profile** page and use a different main account for each customer profile. In this way, you have more granular control over the postings. On the other hand, you can specify the error account only on the **Accounts for automatic transactions** page.
 
@@ -45,8 +45,8 @@ The following table shows examples of the default posting types that are created
 | Penny difference in accounting currency | 618160 | Miscellaneous Expense | Expense | Both | No | This posting type is used when a penny difference occurs when a transaction amount in a foreign currency is translated to the accounting currency. |
 | Error account | 999999 | Error Account | Expense | Both | No | This posting type is used when an error occurs in the system. The account should be validated every period, and any errors should be resolved. |
 | Year-end result | 300160 | Retained Earnings | Equity | Both | No | This posting type is used when the year-end close process is run to move the balance of accounts of the **Profit-and-loss** type into the main account that is selected for the year-end result. |
-| Customer cash discount | Not applicable | Not applicable | Not applicable | Not applicable | No | The accounts for automatic transactions posting type isn't used. A main account is required when cash discounts are configured in Accounts receivable.|
-| Vendor cash discount | Not applicable | Not applicable | Not applicable | Not applicable | No | The accounts for automatic transactions posting type isn't used. A main account is required when cash discounts are configured in Accounts payable. |
+| Customer cash discount | Not applicable | Not applicable | Not applicable | Not applicable | No | The posting type that is defined on the **Accounts for automatic transactions** page isn't used. A main account is required when cash discounts are configured in Accounts receivable.|
+| Vendor cash discount | Not applicable | Not applicable | Not applicable | Not applicable | No | The posting type that is defined on the **Accounts for automatic transactions** page isn't used. A main account is required when cash discounts are configured in Accounts payable. |
 
 ## Additional posting types
 
