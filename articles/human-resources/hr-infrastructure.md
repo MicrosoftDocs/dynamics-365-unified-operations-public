@@ -31,21 +31,21 @@ ms.dyn365.ops.version: Human Resources
 
 The 10.0.25 release brings forth the first wave of capabilities in the infrastructure merge.  With the infrastructure merge, Dynamics 365 Human Resources will be merged with the 
 Finance and Operations infrastructure, but will continue to be licensed as an independent application, like Finance and Supply Chain Management.  
-To learn more about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](../../../human-resources/hr-infrastructure-merge-faq.md).
+To learn more about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](../human-resources/hr-infrastructure-merge-faq.md).
 
 The merge will provide consistency for Human Resources users in the following ways:
-[Consistent environment management and integrations between Human Resources and Finance and Operations apps](../../../dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/consistent-environment-management-integrations-between-human-resources-finance-operations-apps).
+[Consistent environment management and integrations between Human Resources and Finance and Operations apps](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/consistent-environment-management-integrations-between-human-resources-finance-operations-apps).
 •	Management of environments within Dynamics 365 Lifecycle services, issue search, and Regression Suite Automation Tool
 •	Single code base where new functionality for Human Resources is released as part of the regular One Version updated process
 •	Consistency in how upgrades, updates, and hotfixes are applied to environments
 
-[Improved extensibility options](../../../dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md) 
+[Improved extensibility options](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/improve-extensibility-options.md) 
 •	Continue to use Microsoft Power Platform tools to extend where needed
 •	Ability to extend functionality via forms, tables, methods, and APIs
 •	Ability to create and extend entities
 •	For more information on the extension options available, see [Overview of extensibility in Dynamics 365](../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
-[Create one set of human resources capabilities within Dynamics 365](../../../dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
+[Create one set of human resources capabilities within Dynamics 365](/dynamics365-release-plan/2021wave2/human-resources/create-one-set-human-resources-capabilities-within-dynamics-365.md)
 In the 10.0.25 release, functional capabilities that existed only in Dynamics 365 Human Resources have been made available on the Finance and Operations infrastructure.  
 In order for customers take advantage of these capabilities on a Finance and Operations environment, the Human Resources features will need to be enabled in Feature Management.  
 These features include:  
