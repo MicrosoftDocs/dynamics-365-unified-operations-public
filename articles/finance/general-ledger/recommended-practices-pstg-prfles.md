@@ -57,7 +57,7 @@ If changes are required, use the following guidelines to help ensure the integri
 
 Consider setting up database logging for each posting profile and parameters tables that control posting. Then, if a parameter or profile is changed, you will have a full audit record of what value was changed, who changed it, when it was changed, and what the previous value was. This information can be critical during your reconciliation process, and your auditor might require the supporting documentation.
 
-For more information, see [Database logging](../../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
+For more information, see [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
 Use the following table as a reference for common table names that are related to posting profiles and related posting parameters.
 
