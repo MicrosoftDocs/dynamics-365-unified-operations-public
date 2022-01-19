@@ -3484,6 +3484,8 @@
       items:
       - name: Human resources overview
         href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
+      - name: Infrastructure release 10.0.25
+        href: ../human-resources/hr-infrastructure.md?toc=/dynamics365/finance/toc.json
       - name: Set up Human resources
         items:
         - name: Configure Human resources parameters
