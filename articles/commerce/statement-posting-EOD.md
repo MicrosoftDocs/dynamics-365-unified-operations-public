@@ -4,24 +4,13 @@
 title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
 author: analpert
-ms.date: 1/13/2022
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
-ms.search.industry: retail
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
 # Improvements to statement posting functionality
@@ -59,7 +48,7 @@ As part of the improvements to the statement posting feature, three new paramete
 - **Disable counting required** – When this option is set to **Yes**, the posting process for a statement continues, even if the difference between the counted amount and the transaction amount on the statement is outside the threshold that is defined on the **Statement** FastTab for stores.
 
 > [!NOTE]
-> As of update 10.0.14, when Retail statements - Trickle feed feature is enabled, the Post inventory batch job is no longer applicable and cannot be run.
+> As of the Commerce version 10.0.14 release, when the **Retail statements - Trickle feed** feature is enabled, the **Post inventory** batch job is no longer applicable and cannot be run.
 
 Additionally, the following parameters have been introduced on the **Batch processing** FastTab on the **Posting** tab of the **Commerce parameters** page: 
 
@@ -68,15 +57,14 @@ Additionally, the following parameters have been introduced on the **Batch proce
 - **Max transaction lines included in aggregation** – This field defines the number of transaction lines that will be included in a single aggregated transaction before a new one is created. Aggregated transactions are created based on different aggregation criteria such as customer, business date, or financial dimensions. It is important to note that the lines from a single transaction will not be split across different aggregated transactions. This means that there is a possibility that the number of lines in an aggregated transaction is slightly higher or lower based on factors such as number of distinct products.
 - **Maximum number of threads to validate store transactions** – This field defines the number of threads that will be used to validate transactions. Validating transactions is a required step that needs to occur before the transactions can be pulled into the statements. You also need to define a **Gift card product** on the **Gift card** FastTab on the **Posting** tab of the **Commerce parameters** page. This needs to defined even if gift cards are not used by the organization.
 
-Recommended values for **Batch processing** FastTab on the **Posting** tab of the **Commerce parameters** page. These parameters should be tested and tailored to the specific deployment configuration and available infrastructure. Increasing any of these recommended values may have an adverse impact on other batch processing and should be validated.
+The following table lists recommended values for fields in the **Batch processing** section of the **Posting** tab on the **Commerce parameters** page. These parameters should be tested and tailored to the specific deployment configuration and available infrastructure. Increasing any of these recommended values may have an adverse impact on other batch processing and should be validated.
 
 | Parameter | Recommended value | Details |
 |-----------|-------------------|---------|
-| **Maximum number of parallel statement posting**             | Set this value to the same number of batch tasks available for the batch group running the **Statement** job.  **General rule:** Number of AOS multiplied by number of batch tasks available per AOS.                                                                          | This is not applicable when the **Retail statements - Trickle feed** feature is enabled.                                                                                                                                                                                                          |
+| **Maximum number of parallel statement posting**             | Set this value to the same number of batch tasks available for the batch group running the **Statement** job.  <br/><br/>**General rule:** Number of Application Object Server (AOS) profiles multiplied by the number of batch tasks available per AOS.                                                                          | This parameter is not applicable when the **Retail statements - Trickle feed** feature is enabled.                                                                                                                                                                                                          |
 | **Max thread for order processing per statement**            | Test this value starting at 4 and typically not more than 8.                                                                                                                                                                                                           | This is the number of threads used to create and post sales orders and represents how many threads are available for posting per statement.                                                                                                                                                   |
-| **Max transaction lines included in aggregation**            | Test values starting at 1000. Depending on the configuration of Headquarters, smaller orders may be more beneficial to performance.                                                                                                                                    | Determines how many lines will be included in each sales order during statement posting before being split into a new order. The number of sales lines will not be exact as it splits at the sales order level, but will be close to the set configuration. This parameter is used for sales order generation of retail transactions without a named customer. |
-| **Maximum number of threads to validate store transactions** | We recommend setting this value to 4 and increasing only if acceptable performance is not attained. This process will not be able to use more threads than available processors to the batch server. Assigning too many threads here could impact other batch processing. | Controls how many transactions can be validated at the same time for a given store.                                                                                                                                                                                                           |
-
+| **Max transaction lines included in aggregation**            | Test values starting at 1000. Depending on the configuration of headquarters, smaller orders may be more beneficial to performance.                                                                                                                                    | Determines how many lines will be included in each sales order during statement posting before being split into a new order. The number of sales lines will not be exact as it splits at the sales order level, but will be close to the set configuration. This parameter is used for sales order generation of retail transactions without a named customer. |
+| **Maximum number of threads to validate store transactions** | We recommend setting this value to 4 and only increasing it if acceptable performance is not attained. This process will not be able to use more threads than available processors to the batch server. Assigning too many threads here could impact other batch processing. | Controls how many transactions can be validated at the same time for a given store.                                                                                                                                                                                                           |
 > [!NOTE]
 > All settings and parameters that are related to statement postings, and that are defined on stores and on the **Commerce parameters** page, are applicable to the improved statement posting feature.
 
