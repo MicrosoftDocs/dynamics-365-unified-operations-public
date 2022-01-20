@@ -1540,6 +1540,8 @@
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
+      - name: Search for regulatory updates
+        href: localizations/search-for-regulatory-updates.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1758,6 +1760,8 @@
           href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
         - name: Calculate interest and fines on customer payments
           href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+        - name: Set up bank account numbers for Brazil
+          href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
         - name: Taxes
           items:
           - name: Brazil taxes overview
@@ -1786,6 +1790,8 @@
             href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
           - name: ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
             href: localizations/latam-bra-complement-restitution.md
+          - name: Basis change in ICMS-DIF tax calculations for products from suppliers in other states
+            href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
           - name: Set up adjustment codes for IPI taxes
             href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
           - name: PIS and COFINS fixed assets
