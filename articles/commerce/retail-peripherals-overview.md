@@ -4,7 +4,7 @@
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
 author: rubencdelgado
-ms.date: 02/06/2020
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,11 +36,11 @@ This topic explains the concepts that are related to store peripherals. It descr
 
 ### POS registers
 
-Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.
+Navigation: Select **Retail and Commerce \> Channel setup \> POS setup \> Registers**. The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.
 
 ### Devices
 
-Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**. A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it’s mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device. 
+Navigation: Select **Retail and Commerce \> Channel setup \> POS setup \> Devices**. A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it’s mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device. 
 
 Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Android, and Retail Modern POS – iOS.
 
@@ -66,11 +66,11 @@ POS peripherals are devices that are explicitly supported for POS functions. The
 
 ### Hardware station
 
-Navigation: Click **Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**. Select a store, and then click the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS programs for Windows and Android. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it is accessed via network.
+Navigation: Select **Retail and Commerce \> Channels \> Stores \> All stores**. Select a store, and then select the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS programs for Windows and Android. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it is accessed via network.
 
 ### Hardware profile
 
-Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**. The hardware profile is a list of devices that are configured for a POS register or a hardware station. The hardware profile can be mapped directly to a POS register or a hardware station.
+Navigation: Select **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. The hardware profile is a list of devices that are configured for a POS register or a hardware station. The hardware profile can be mapped directly to a POS register or a hardware station.
 
 ## Devices classes
 POS peripherals are typically divided into classes. This section describes and gives an overview of the devices that Modern POS supports.
@@ -139,11 +139,11 @@ Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster 
 
 If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Commerce.
 
-### Plug and Play devices
+### Plug and play devices
 
-When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type. Therefore, it treats that device as a speaker. No additional setup is required. 
+When a plug and play device is connected to a Windows operating system (OS) version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the "Speaker" class type and treats that device as a speaker. No additional setup is required. 
 
-In the case of POS peripherals, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs). However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device. In Windows 10, device classes for bar code scanners and MSRs have been added. Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times. Modern POS supports UWP MSRs and scanners. Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used. For example, if a Plug and Play bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen. No additional setup is required. Additional classes of point of sale peripherals are being added to Windows. These classes include classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
+In the case of POS peripherals, many USB devices can be plugged in and recognized by the Windows OS as Human Interface Devices (HIDs). However, Windows might not be able to determine the capabilities that the device provides because the device doesn't specify the class or type of device. In Windows 10, device classes for bar code scanners and magnetic stripe readers (MSRs) have been added. Therefore, if a device declares itself to Windows 10 to be a device of one of these classes, Windows will listen for events from the device at the appropriate times. Modern POS supports Universal Windows Platform (UWP) MSRs and scanners, so when Modern POS is ready for input from one of these devices and a device that belongs to one of the device classes is connected, that device can be used. For example, if a plug and play bar code scanner is plugged into a Windows 10 computer and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen. No additional setup is required. Additional classes of POS peripherals are being added to Windows, including classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
 
 ### Keyboard wedge
 
@@ -154,7 +154,7 @@ Keyboard wedge devices send data to the computer as if that data were typed on a
 
 ### Device printers
 
-Printers of type **Device** can be configured to prompt the user to select a printer that is configured for the computer. When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list. This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers. Instead, it requires that a named printer be provided in the **Device name** field.
+Printers of type "Device" can be configured to prompt the user to select a printer that is configured for the computer. When a printer of the "Device" type is configured, if Modern POS encounters a print command the user will be prompted to select a printer from a list. This behavior differs from the behavior for Windows drivers, because the "Windows" printer type in the hardware profile doesn't show the user a list of printers. Instead, it requires that a named printer be provided in the **Device name** field.
 
 ### Network
 
@@ -166,7 +166,12 @@ Network-addressable cash drawers, receipt printers, and payment terminals can be
 
 Modern POS clients for Windows and Android include **Dedicated** or built-in hardware stations. Those clients can communicate directly with peripherals using business logic that is built into the applications. The Android application only supports network devices. For more information on peripheral support for the Android, visit the [Set up POS hybrid app on Android and iOS](./dev-itpro/hybridapp.md) article.
 
-To use the dedicated hardware station, assign a hardware profile to a register that will use the Modern POS for Windows or Android applications. Then create a hardware station of the **Dedicated** type for the store where the register will be used. Start the Modern POS in non-drawer mode and use the **Manage hardware stations** operation to turn on the hardware station capabilities, the dedicated hardware station will be active by default. Next, log out of the Modern POS, then log back in and open a shift and the peripherals configured in the hardware profile will be usable. 
+To use the dedicated hardware station, follow these steps.
+
+1. Assign a hardware profile to a register that will use the Modern POS for Windows or Android applications.
+1. Create a hardware station of the "Dedicated" type for the store where the register will be used. 
+1. Start Modern POS in non-drawer mode and use the **Manage hardware stations** operation to turn on the hardware station capabilities. The dedicated hardware station will be active by default. 
+1. Sign out of the Modern POS, and then sign back in and open a shift. The peripherals configured in the hardware profile will now be usable. 
 
 ### Shared 
 
@@ -492,9 +497,9 @@ This configuration is the most typical configuration for traditional, fixed POS 
     > [!NOTE]
     > You don't have to set any other properties on the hardware station. All other required information, such as the hardware profile, will come from the register itself.
 
-4.  Click **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
-5.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
-6.  Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
+4.  Select **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+5.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Select **Run now** to sync changes to the POS.
+6.  Select the **1040** distribution schedule to sync the new hardware station to the store. Select **Run now** to sync changes to the POS.
 7.  Install and activate Modern POS for Windows.
 8.  Start Modern POS for Windows, and begin to use the connected peripheral devices.
 
@@ -519,18 +524,18 @@ This configuration can be used for all Modern POS clients that have a hardware s
     -   **EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent. This ID is provided by the credit card processor.
     -   **Package name** – The hardware station package to use when the hardware station is deployed.
 
-4.  Click **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
-5.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
-6.  Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
+4.  Select **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+5.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Select **Run now** to sync changes to the POS.
+6.  Select the **1040** distribution schedule to sync the new hardware station to the store. Select **Run now** to sync changes to the POS.
 7.  Install the hardware station. For more information about how to install the hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
 8.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9.  Sign in to Modern POS, and select **Perform non-drawer operations**.
 10. Start the **Manage hardware stations** operation.
-11. Click **Manage**.
+11. Select **Manage**.
 12. On the hardware station management page, set the option to turn on the hardware station.
-13. Select the hardware station to use, and then click **Pair**.
-14. After the hardware station is paired, click **Close**.
-15. On the hardware station selection page, click the recently selected hardware station to make it active.
+13. Select the hardware station to use, and then select **Pair**.
+14. After the hardware station is paired, select **Close**.
+15. On the hardware station selection page, select the recently selected hardware station to make it active.
 
 ### All Modern POS clients that have a shared IIS hardware station
 
@@ -542,28 +547,28 @@ This configuration can be used for all Modern POS clients that share hardware st
     -   **Host name** – The name of the host computer where the hardware station will run.
     -   **Description** – Text that will help identify the hardware station, such as **Returns** or **Front of store**.
     -   **Port** – The port to use for the hardware station to communicate with the Modern POS client.
-    -   **Hardware profile** – For shared hardware stations, each hardware station should have a hardware profile. Hardware profiles can be shared among hardware stations, but they must be mapped to each hardware station. In addition, we recommend that you use shared shifts when multiple devices use the same shared hardware station. To set up a shared shift, click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**. For each shared hardware profile, select the cash drawer, and set the **Shared shift drawer** option to **Yes**.
+    -   **Hardware profile** – For shared hardware stations, each hardware station should have a hardware profile. Hardware profiles can be shared among hardware stations, but they must be mapped to each hardware station. In addition, we recommend that you use shared shifts when multiple devices use the same shared hardware station. To set up a shared shift, select **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. For each shared hardware profile, select the cash drawer, and set the **Shared shift drawer** option to **Yes**.
     -   **EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent. This ID is provided by the credit card processor.
     -   **Package name** – The hardware station package to use when the hardware station is deployed.
 
 4.  Repeat steps 2 and 3 for each additional hardware station that is required in the store.
-5.  Click **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
-6.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
-7.  Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
+5.  Select **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+6.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Select **Run now** to sync changes to the POS.
+7.  Select the **1040** distribution schedule to sync the new hardware station to the store. Select **Run now** to sync changes to the POS.
 8.  Install the hardware station on each host computer that you set up in steps 2 and 3. For more information about how to install the hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
 9.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Sign in to Modern POS, and select **Perform non-drawer operations**.
 11. Start the **Manage hardware stations** operation.
 
-12. Click **Manage**.
+12. Select **Manage**.
 13. On the hardware station management page, set the option to turn on the hardware station.
-14. Select the hardware station to use, and then click **Pair**.
+14. Select the hardware station to use, and then select **Pair**.
 15. Repeat step 14 for each hardware station that Modern POS will use.
-16. After all the required hardware stations are paired, click **Close**.
-17. On the hardware station selection page, click the recently selected hardware station to make it active. 
+16. After all the required hardware stations are paired, select **Close**.
+17. On the hardware station selection page, select the recently selected hardware station to make it active. 
 
 > [!NOTE]
-> If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process. Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. Select the register, and then set the **Select upon tender** option to **Yes**. Use the **1090** distribution schedule to sync changes to the channel database.
+> If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process. Select **Retail and Commerce \> Channel setup \> POS setup \> Registers**. Select the register, and then set the **Select upon tender** option to **Yes**. Use the **1090** distribution schedule to sync changes to the channel database.
 
 ## Extensibility
 For information about extensibility scenarios for the hardware station, see [Integrate the POS with a new hardware device and generate the extension installer](dev-itpro/hardware-device-extension.md).
@@ -580,8 +585,8 @@ The hardware station installer will automatically make these registry edits as p
 ### SSL and TLS
 By default, SSL and all version of TLS except TLS 1.2 are disabled. To edit or enable these values, follow these steps:
     1.  Press the Windows logo key+R to open a **Run** window.
-    2.  In the **Open** field, type **Regedit**, and then click **OK**.
-    3.  If a **User Account Control** message box appears, click **Yes**.
+    2.  In the **Open** field, type **Regedit**, and then select **OK**.
+    3.  If a **User Account Control** message box appears, select **Yes**.
     4.  In the **Registry Editor** window, navigate to **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. The following keys have been automatically entered to allow for TLS 1.2 only:
         -   TLS 1.2Server:Enabled=1
         -   TLS 1.2Server:DisabledByDefault=0
@@ -697,7 +702,7 @@ The following peripherals were tested by using a dedicated (not shared) IIS hard
 | ------------ | -------- | --------- | --------------------- |
 | Epson        | TM-T88V  | OPOS      |                       |
 | Epson        | TM-T88VI | OPOS      |                       |
-| Epson        | TM-T88V  | Custom    | Connected via netowrk |
+| Epson        | TM-T88V  | Custom    | Connected via network |
 | HP           | F7M67AA  | OPOS      | Powered USB           |
 | Star         | TSP650II | Custom    | Connected via network |
 | Toshiba      | HSP100   | OPOS      |                       |
@@ -806,7 +811,7 @@ The following peripherals were tested by using a shared IIS hardware station tog
 
 -   The computer that is running Modern POS trusts the certificate that is used on the computer that runs the hardware station.
     -   To verify this setup, in a web browser, go to the following URL: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.
-    -   This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Internet Explorer, a lock icon appears in the address bar. When you click this icon, Internet Explorer verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
+    -   This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Internet Explorer, a lock icon appears in the address bar. When you select this icon, Internet Explorer verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
 -   On the computer that runs the hardware station, the port that will be used by the hardware station is opened in the firewall.
 -   The hardware station has correctly installed merchant account information through the Install merchant information tool that runs at the end of the hardware station installer.
 
@@ -835,15 +840,15 @@ The following peripherals were tested by using a shared IIS hardware station tog
 -   Sometimes, device drivers can cause the common control objects (CCOs) to stop working correctly. If a device has recently been installed, but it isn't working properly or you notice other issues, you can often resolve the issue by reinstalling the CCOs. To download the CCOs, visit <http://monroecs.com/oposccos_current.htm>.
 -   If you make frequent peripheral changes during testing or troubleshooting, you might have to reset IIS instead of waiting for the cache to refresh itself. To reset IIS, follow these steps:
     1.  From the **Start** menu, type **CMD**.
-    2.  In the search results, right-click **Command prompt**, and then click **Run as administrator**.
+    2.  In the search results, right-click **Command prompt**, and then select **Run as administrator**.
     3.  In the **Command prompt** window, type **iisreset /Restart** and then press Enter.
     4.  After IIS has restarted, restart Modern POS.
 -   While you're making frequent changes to peripheral devices, if you also frequently start and exit the POS client, the dllhost process from a previous POS session can interfere with the current session. In this case, a device might not be usable until you close the dynamic-link library (DLL) host that is managing the previous session. To close the DLL host, follow these steps:
     1.  From the **Start** menu, type **Task manager**.
-    2.  In the search results, click **Task manager**.
-    3.  In Task manager, on the **Details** tab, click the column header that is labeled **Name** to sort the table alphabetically by name.
+    2.  In the search results, select **Task manager**.
+    3.  In Task manager, on the **Details** tab, select the column header that is labeled **Name** to sort the table alphabetically by name.
     4.  Scroll down until you find dllhost.exe.
-    5.  Select each DLL host, and then click **End task**.
+    5.  Select each DLL host, and then select **End task**.
     6.  After the DLL hosts have been closed, restart Modern POS.
 
 
