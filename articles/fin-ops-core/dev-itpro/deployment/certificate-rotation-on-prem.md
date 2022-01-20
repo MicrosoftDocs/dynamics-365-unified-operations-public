@@ -87,13 +87,22 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 	
         ```powershell
         # If remoting, only execute
-        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+        # .\Configure-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+
+        .\Configure-PreReqs.ps1
+        ```
+	
+     3. Run the following scripts, if they exist. Perform these steps as an Administrator.
+	
+        ```powershell
+        # If remoting, only execute
+        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml 
 
         .\Import-PfxFiles.ps1
         .\Set-CertificateAcls.ps1
-        ```
-        
-    3. Run the following script to validate the VM setup.
+        ```       
+	
+    4. Run the following script to validate the VM setup.
     
         ```powershell
         # If remoting, only execute
