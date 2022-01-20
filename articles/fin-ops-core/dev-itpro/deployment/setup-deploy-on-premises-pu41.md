@@ -1003,7 +1003,8 @@ You've now completed the setup of the infrastructure. The following sections des
 
 10. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 11. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
-12. In a **Command Prompt** window, go to the folder that contains the agent installer, and run the following command.
+12. The local agent has some additional optional configurations that can be set to specify environment specific setup/requirements. See [Deployment configurations for the local agent](./onprem-localagent-options.md) for the available options. 
+13. In a **Command Prompt** window, go to the folder that contains the agent installer, and run the following command.
 
     ```powershell
     LocalAgentCLI.exe Install <path of config.json>
@@ -1012,8 +1013,8 @@ You've now completed the setup of the infrastructure. The following sections des
     > [!NOTE]
     > The user who runs this command must have **db\_owner** permissions on the OrchestratorData database.
 
-13. After the local agent is successfully installed, go back to your on-premises connector in LCS.
-14. On the **3: Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, you will receive the following message: "Validation complete. Agent connection established."
+14. After the local agent is successfully installed, go back to your on-premises connector in LCS.
+15. On the **3: Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, you will receive the following message: "Validation complete. Agent connection established."
 
 ### <a name="teardowncredssp"></a>Step 20. Tear down CredSSP, if remoting was used
 
