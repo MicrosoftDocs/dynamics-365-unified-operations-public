@@ -66,7 +66,7 @@ Import the following ER configurations to prepare Finance to generate VAT return
 | 8 | Altinn VAT authorization format (NO) | Format (exporting) | The request parameters for the authorization code, access token, and building URLs where the request will be sent. |
 | 9 | Altinn VAT import Altinn token format (NO) | Format (importing) | The ER format that is used to import the access token that is received from the Altinn web service into the database. |
 | 10 | Altinn VAT import feedback status format (NO) | Format (importing) | The ER format that is used to import the feedback status that is received from the Altinn web service into the database. |
-| 11 | Altinn VAT import ID-Porten token format (NO) | ormat (importing) | The ER format that is used to import the access token that is received from the ID-porten web service into the database. |
+| 11 | Altinn VAT import ID-Porten token format (NO) | Format (importing) | The ER format that is used to import the access token that is received from the ID-porten web service into the database. |
 | 12 | Altinn VAT import instance format (NO) | Format (importing) | The ER format that is used to import the parameters of the instance that is received from the Altinn web service into the database. |
 | 13 | Altinn VAT import validation result format (NO) | Format (importing) | The ER format that is used to import the results of the VAT return validation that is received from the Altinn web service into the database. |
 | 14 | Altinn VAT web request headers format (NO) | Format (exporting) | A format that is used to create headers for the Hypertext Transfer Protocol over Secure Sockets Layer (HTTPS) request. |
@@ -250,14 +250,15 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 > It's important that you define conditions for all sales tax codes that are used in tax transactions during the reporting period. If no appropriate lookup result is defined for a sales tax code that is used in transactions during the reporting period, generation of a VAT return will be stopped. 
 
 > [!NOTE]
-> Documents that are subject to the following \'mvaKode\' must be reported in VAT return with two lines of sales tax payable and sales tax receivable directions. We recommend that you post these documents using the [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
-> - 81: Purchases of goods from abroad with deductions (standard rate)/Deductions on purchases of goods from abroad with deductions (standard rate).
-> - 83: Purchases of goods from abroad with deductions (middle rate)/Deductions on purchases of goods from abroad with deductions (middle rate).
-> - 86: Purchases of services from abroad with deductions (standard rate)/Deductions on purchases of services from abroad with deductions (standard rate).
-> - 88: Purchases of services from abroad with deductions (low rate)/Deductions on purchases of services from abroad with deductions (low rate). 
-> - 91: Purchases of emission allowances and gold/Deductions on purchases of emission allowances and gold. 
+> Documents that are subject to the following `mvaKode` values must be reported in the VAT return by using two lines of sales tax payable and sales tax receivable directions. We recommend that you post these documents by using the [reverse charge mechanism for the VAT/GST scheme](emea-reverse-charge.md).
 >
-> The \'Reverse charge\' mechanism enables posting a document with two tax transactions of sales tax receivable and sales tax payable direction. As a result, these transactions are reported in VAT return as two lines.
+> - **81** – Purchases of goods from abroad with deductions (standard rate)/Deductions on purchases of goods from abroad with deductions (standard rate).
+> - **83** – Purchases of goods from abroad with deductions (middle rate)/Deductions on purchases of goods from abroad with deductions (middle rate).
+> - **86** – Purchases of services from abroad with deductions (standard rate)/Deductions on purchases of services from abroad with deductions (standard rate).
+> - **88** – Purchases of services from abroad with deductions (low rate)/Deductions on purchases of services from abroad with deductions (low rate). 
+> - **91** – Purchases of emission allowances and gold/Deductions on purchases of emission allowances and gold. 
+>
+> The reverse charge mechanism enables a document to be posted that has two tax transactions of sales tax receivable and sales tax payable directions. Those transactions are then reported in the VAT return as two lines.
 
 ## <a id="em-setup"></a>Import a package of data entities that includes a predefined EM setup
 
