@@ -26,9 +26,9 @@ The January 2022 release of the [Dual-write application orchestration solution v
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix| Filter shipping warehouses in quote line information form by site instead of company | General availability |
-| Bug fix| Update Dual Write SCM solution to support FieldServiceProductType with value NotAvailable  | General availability |
-| Bug fix| SalesPrice is not being updated properly if the value sent from Dataverse is 0.00 and the SalesPrice value in the F&O is not 0.00 | General availability |
+| Bug fix| In the Customer Engagement apps quote line information form, filter shipping warehouses by site instead of company. | General availability |
+| Bug fix| In Finance and Operations apps, when a product is released without an item model group set, the operation fails due to a blank value being set for FieldServiceProductType attribute on the Customer Engagement apps. This has been fixed by allowing FieldServiceProductType attribute to accomodate a NotAvailable value. | General availability |
+| Bug fix| When Dataverse sends an updated sales price of 0.00, it doesn't get updated inside Finance and Operations apps. | General availability |
 
 This release includes one map change namely [CDS released distinct products] - [products]. In order to take the map changes, apply "Dynamics365FinanceAndOperationsDualWriteMaps" solution version 2.3.3.2 and update the [CDS released distinct products] - [products] map to latest version 1.0.0.3.
 
