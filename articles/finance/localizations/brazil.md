@@ -81,7 +81,7 @@ This topic includes information and links to resources that can help you set up 
 - Tasks for Brazil
   - [Set up legal entity parameters](tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md)
   - [Set up fiscal document source text](tasks/br-00001-2-set-up-fiscal-document-source-text.md)
-  - [Set up bank account numbers for Brazil](latam-bra-bank-account-number-setup-brazil.md)
+  - [Set up bank account numbers for Brazil](latam-bra-bank-account-number-setup-brazil-localization.md)
   - [Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable)](tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md)
   - [Receive vendor fiscal documents (products)](tasks/br-00024-receiving-vendor-fiscal-document-products.md)
   - [Create and post a purchase complementary fiscal document](tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md)
