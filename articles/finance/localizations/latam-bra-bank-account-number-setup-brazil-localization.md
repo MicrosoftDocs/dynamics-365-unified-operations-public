@@ -4,7 +4,7 @@
 title: Set up bank account numbers for Brazil
 description: This topic explains how to set up bank account numbers for the Brazilian localization.
 author: gionoder
-ms.date: 07/25/2019
+ms.date: 01/20/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ When you create a bank account, the bank account number that you enter must foll
 
 Follow these steps to create a bank account number in the required format.
 
-1. Go to **Cash and Bank Management** \> **Bank accounts** \> **Bank accounts**.
+1. Go to **Cash and Bank Management** > **Bank accounts** > **Bank accounts**.
 2. Select an existing bank account, or select **New** to create a new bank account.
 3. In the **Bank account number** field, enter the bank account number in the following format:
 
