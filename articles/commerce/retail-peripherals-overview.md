@@ -42,7 +42,7 @@ Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setu
 
 Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**. A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it’s mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device. 
 
-Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, and Retail Modern POS – iOS.
+Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Android, and Retail Modern POS – iOS.
 
 ### Modern POS
 
@@ -101,7 +101,7 @@ Signature capture devices can be connected directly to a computer via USB by usi
 
 ### Scale
 
-Scales can be connected to the computer via USP by using OPOS drivers. When a product that is marked as a “Weighed” product is added to a transaction, the POS reads the weight from the scale, adds the product to the transaction, and uses the quantity that the scale provided.
+Scales can be connected to the computer via USB by using OPOS drivers. When a product that is marked as a “Weighed” product is added to a transaction, the POS reads the weight from the scale, adds the product to the transaction, and uses the quantity that the scale provided.
 
 ### PIN pad
 
@@ -139,9 +139,11 @@ Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster 
 
 If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Commerce.
 
-### Universal Windows Platform
+### Plug and Play devices
 
-UWP, in the case of peripherals, is related to Windows support for Plug and Play devices. When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type. Therefore, and it treats that device as a speaker. No additional setup is required. In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs). However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device. In Windows 10, device classes for bar code scanners and MSRs have been added. Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times. Modern POS supports UWP MSRs and scanners. Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used. For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen. No additional setup is required. Additional classes of point of service UWP devices are being added to Windows. These classes include classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
+When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type. Therefore, it treats that device as a speaker. No additional setup is required. 
+
+In the case of POS peripherals, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs). However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device. In Windows 10, device classes for bar code scanners and MSRs have been added. Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times. Modern POS supports UWP MSRs and scanners. Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used. For example, if a Plug and Play bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen. No additional setup is required. Additional classes of point of sale peripherals are being added to Windows. These classes include classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
 
 ### Keyboard wedge
 
@@ -150,9 +152,9 @@ Keyboard wedge devices send data to the computer as if that data were typed on a
 > [!NOTE]
 > When keyboard wedge scanners are used in the POS, they must be programmed to send a carriage return, or **Enter** event, after the last scanned character. If this configuration isn't done, keyboard wedge scanners won't function properly. Consult documentation provided by your device manufacturer for details on how to append the carriage return event.  
 
-### Native printer
+### Device printers
 
-Native (or "Device" as the type is named in the hardware profile) printers can be configured to prompt the user to select a printer that is configured for the computer. When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list. This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers. Instead, it requires that a named printer be provided in the **Device name** field.
+Printers of type **Device** can be configured to prompt the user to select a printer that is configured for the computer. When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list. This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers. Instead, it requires that a named printer be provided in the **Device name** field.
 
 ### Network
 
@@ -164,7 +166,7 @@ Network-addressable cash drawers, receipt printers, and payment terminals can be
 
 Modern POS clients for Windows and Android include **Dedicated** or built-in hardware stations. Those clients can communicate directly with peripherals using business logic that is built into the applications. The Android application only supports network devices. For more information on peripheral support for the Android, visit the [Set up POS hybrid app on Android and iOS](./dev-itpro/hybridapp.md) article.
 
-To use the dedicated hardware station, assign a hardware profile to a register that will use the Modern POS for Windows or Android applications. Then create a hardware station of the **Dedicated** type for the store where the register will be used. Start the Modern POS in non-drawer mode and use the use the **Manage hardware stations** operation to turn on the hardware station capabilities, the dedicated hardware station will be active by default. Next, log out of the Modern POS, then log back in and open a shift and the peripherals configured in the hardware profile will be usable. 
+To use the dedicated hardware station, assign a hardware profile to a register that will use the Modern POS for Windows or Android applications. Then create a hardware station of the **Dedicated** type for the store where the register will be used. Start the Modern POS in non-drawer mode and use the **Manage hardware stations** operation to turn on the hardware station capabilities, the dedicated hardware station will be active by default. Next, log out of the Modern POS, then log back in and open a shift and the peripherals configured in the hardware profile will be usable. 
 
 ### Shared 
 
@@ -209,8 +211,8 @@ For information, see [Set up POS hybrid app on Android and iOS](./dev-itpro/hybr
 
 For more information about OPOS components, see the "Supported interfaces" section of this document. Typically, OPOS drivers are provided by the device manufacturer. When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:
 
--   **32-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS
--   **64-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS
+-   **32-bit system:** HKEY\_LOCAL\_MACHINE\SOFTWARE\OLEforRetail\ServiceOPOS
+-   **64-bit system:** HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS
 
 Within the ServiceOPOS registry location, configured devices are organized according to the OPOS device class. Multiple device drivers are saved.
 
@@ -571,7 +573,7 @@ According to current security standards, the following settings should be used i
 
 ### Hardware station installer
 The hardware station installer will automatically make these registry edits as part of the installation through self-service.
- 
+
 -   Secure Sockets Layer (SSL) should be disabled.
 -   Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used. 
 
@@ -611,13 +613,15 @@ The following peripherals were tested by using the IPC hardware station that is 
 #### Printer
 
 | Manufacturer | Model    | Interface | Comments                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
+| ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
+| Epson        | TM-T88VI | OPOS      |                         |
 | Epson        | TM-T88   | Custom    | Connected via network   |
+| HP           | F7M67AA  | OPOS      | Powered USB             |
 | Star         | TSP650II | Custom    | Connected via network   |
 | Star         | mPOP     | OPOS      | Connected via Bluetooth |
-| HP           | F7M67AA  | OPOS      | Powered USB             |
+| Toshiba      | HSP100   | OPOS      |                         |
+| Toshiba      | HSP150   | OPOS      |                         |
 
 > [!NOTE]
 > The Star TSP 100 printer isn't supported for the built-in hardware station. The built-in hardware station uses a 64-bit process, which isn't compatible with existing Star TP 100 drivers. 
@@ -689,13 +693,17 @@ The following peripherals were tested by using a dedicated (not shared) IIS hard
 
 #### Printer
 
-| Manufacturer | Model    | Interface | Comments                  |
-|--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Epson        | TM-T88V  | Custom    | Connected via netowrk     |
-| Star         | TSP650II | Custom    | Connected via network     |
-| HP           | F7M67AA  | OPOS      | Powered USB               |
+| Manufacturer | Model    | Interface | Comments              |
+| ------------ | -------- | --------- | --------------------- |
+| Epson        | TM-T88V  | OPOS      |                       |
+| Epson        | TM-T88VI | OPOS      |                       |
+| Epson        | TM-T88V  | Custom    | Connected via netowrk |
+| HP           | F7M67AA  | OPOS      | Powered USB           |
+| Star         | TSP650II | Custom    | Connected via network |
+| Toshiba      | HSP100   | OPOS      |                       |
+| Toshiba      | HSP150   | OPOS      |                       |
+
+
 
 #### Bar code scanner
 
@@ -764,13 +772,15 @@ The following peripherals were tested by using a shared IIS hardware station tog
 
 #### Printer
 
-| Manufacturer | Model    | Interface | Comments                  |
-|--------------|----------|-----------|---------------------------|
-| Epson        | TM-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Epson        | TM-T88   | Custom    | Connected via network     |
-| Star         | TSP650II | Custom    | Connected via network     |
-| HP           | F7M67AA  | OPOS      | Powered USB               |
+| Manufacturer | Model    | Interface | Comments              |
+| ------------ | -------- | --------- | --------------------- |
+| Epson        | TM-T88V  | OPOS      |                       |
+| Epson        | TM-T88VI | OPOS      |                       |
+| Epson        | TM-T88   | Custom    | Connected via network |
+| HP           | F7M67AA  | OPOS      | Powered USB           |
+| Star         | TSP650II | Custom    | Connected via network |
+| Toshiba      | HSP100   | OPOS      |                       |
+| Toshiba      | HSP150   | OPOS      |                       |
 
 #### Payment terminal
 
