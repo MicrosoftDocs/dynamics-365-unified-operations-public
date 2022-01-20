@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 11/30/2021
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -1003,7 +1003,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 10. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 11. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
-12. The local agent has some additional optional configurations that can be set to specify environment specific setup/requirements. See [Deployment configurations for the local agent](./onprem-localagent-options.md) for the available options. 
+12. The local agent has some additional, optional configurations that can be set to specify environment-specific setup/requirements. See [Deployment configurations for the local agent](./onprem-localagent-options.md) for the available options. 
 13. In a **Command Prompt** window, go to the folder that contains the agent installer, and run the following command.
 
     ```powershell
