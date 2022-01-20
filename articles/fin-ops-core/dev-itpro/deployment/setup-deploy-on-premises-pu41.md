@@ -1003,7 +1003,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 10. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 11. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
-12. The local agent has some additional, optional configurations that can be set to specify environment-specific setup/requirements. See [Deployment configurations for the local agent](./onprem-localagent-options.md) for the available options. 
+12. The local agent has some additional, optional configurations that can be set to specify environment-specific setup/requirements. For information about the additional options, see [Deployment configurations for the local agent](./onprem-localagent-options.md). 
 13. In a **Command Prompt** window, go to the folder that contains the agent installer, and run the following command.
 
     ```powershell
