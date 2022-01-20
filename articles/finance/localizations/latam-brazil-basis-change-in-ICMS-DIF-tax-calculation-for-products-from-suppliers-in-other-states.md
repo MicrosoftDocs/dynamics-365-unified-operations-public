@@ -27,13 +27,11 @@ ms.dyn365.ops.version: 10.0.26
 
 # Basis change in ICMS-DIF tax calculation for products from suppliers in other states
 
-[!include [banner](../../includes/banner.md)]
-
 This topic describes the configuration for ICMS-DIF tax type calculation when fiscal document is received in state Rio Grande do Sul (RS) or São Paulo (SP) in Brazil.
 
 As per the state law definition, the ICMS to be collected in concept of differential % , must follows the following rule:
 
-ICMS to collect = ( (Operation amount - ICMS from source ) / (1 - ICMS % internal) ) * ICMS % internal) - ICMS amount from source
+ICMS to collect = (((Operation amount - ICMS from source ) / (1 - ICMS % internal) ) * ICMS % internal) - ICMS amount from source
 
 ## Scenario example
 
@@ -55,7 +53,3 @@ In order to get the calculation of ICMS DIF as per RS state rules, the user must
 - Marginal base: Net amount per line or Net amount of invoice balance
 - Taxation code must be defined as fiscal value = 3, in order to create automatically the adjustment transaction when Fiscal Books module is enabled.
 - Sales tax group configuration: Use tax must flagged for the ICMS-DIF sales tax code.
-
-
-
- [!INCLUDE [footer-include](../../../includes/footer-banner.md)]
