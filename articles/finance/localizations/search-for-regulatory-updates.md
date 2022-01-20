@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Country-specific regulatory updates
-description: This topic provides a list of links of planned and released country-specific regulatory updates for Microsoft Dynamics 365 Finance.
+title: Search for country-specific regulatory updates
+description: This topic provides links to planned and released country-specific regulatory updates for Microsoft Dynamics 365 Finance.
 author: AKroshkina
-ms.date: 12/13/2021
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,14 +19,17 @@ ms.reviewer: kfend
 # ms.custom
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.dyn365.ops.version: 10.0
 
 ---
+
 # Search for country-specific regulatory updates
 
-This topic provides a list of links of planned and released country-specific regulatory updates for Microsoft Dynamics 365 Finance.
-Please note that sign-in to LCS will be required to access this information.
+[!include [banner](../includes/banner.md)]
+
+This topic provides links to planned and released country-specific regulatory updates for Microsoft Dynamics 365 Finance.
+Sign-in to Lifecycle Services (LCS) is required to access this information.
 
 | **Country**          | **LCS issue search**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,4 +76,8 @@ Please note that sign-in to LCS will be required to access this information.
 | United Kingdom       | [<u>Planned and released regulatory features for the United Kingdom</u>](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffix.lcs.dynamics.com%2FIssue%2FResults%3Fv%3D8_versionClass%26ct%3D2_categoryClass_6_categoryClass%26ft%3D1_featureClass_2_featureClass_3_featureClass%26cu%3D3_countryClass%26o%3DD%26mode%3DFull%26i%3D2_issueTypeClass_1_issueTypeClass&data=04%7C01%7Cvastrup%40microsoft.com%7C6e8a12140a0548c9224508d94add50a5%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637623136671200065%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=eiZzncdY20RjysdC8rpru54YONhSlJUec093vwFK5jI%3D&reserved=0) |
 
 
-You can join Yammer group [DGX - GLOBALIZATION FEATURES](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.yammer.com%2Fdynamicsaxfeedbackprograms%2F%23%2Fthreads%2FinGroup%3Ftype%3Din_group%26feedId%3D17055599%26view%3Dall&data=04%7C01%7Cv-akroshkina%40microsoft.com%7Cd9ff45f516714794499808d9d9886844%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637780002155790602%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=PHIu40mQKyx9GlUITswmPx5FV1xj0tHnahLma8guE%2Bw%3D&reserved=0) to learn more about Globalization features included in monthly updates.
+To learn more about the Globalization features that are included in monthly updates, join the Yammer group, [DGX - GLOBALIZATION FEATURES](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.yammer.com%2Fdynamicsaxfeedbackprograms%2F%23%2Fthreads%2FinGroup%3Ftype%3Din_group%26feedId%3D17055599%26view%3Dall&data=04%7C01%7Cv-akroshkina%40microsoft.com%7Cd9ff45f516714794499808d9d9886844%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637780002155790602%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=PHIu40mQKyx9GlUITswmPx5FV1xj0tHnahLma8guE%2Bw%3D&reserved=0).
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
