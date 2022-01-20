@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 01/13/2022
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -92,7 +92,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Configure-PreReqs.ps1
         ```
 	
-     3. Run the following scripts, if they exist. Perform these steps as an Administrator.
+     3. Run the following scripts, if they exist. Perform these steps as an administrator.
 	
         ```powershell
         # If remoting, only execute
