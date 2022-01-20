@@ -2,7 +2,7 @@
 title: Deploy edge scale units on custom hardware using LBD
 description: This topic explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
 author: cabeln
-ms.date: 04/22/2021
+ms.date: 11/29/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User, Developer, IT Pro
@@ -91,7 +91,7 @@ This step creates a functional LBD environment. However, the environment doesn't
 
         ```powershell
         # Host URL is your DNS record\host name for accessing the AOS
-        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
         ```
 
     1. Create a new Azure Active Directory (Azure AD) application that will enable the Alm Orchestration service to communicate with the Scale Unit Management service.
@@ -138,7 +138,7 @@ This step creates a functional LBD environment. However, the environment doesn't
     1. Run the following SQL commands on your business database (AXDB).
 
         ```sql
-        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
         delete from NumberSequenceTable
         delete from NumberSequenceReference
         delete from NumberSequenceScope

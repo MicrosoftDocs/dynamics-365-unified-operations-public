@@ -4,7 +4,7 @@
 title: Multiple LCS projects and environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
-ms.date: 04/15/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-For any new cloud project, one Microsoft Dynamics Lifecycle Services (LCS) Implementation project is instantiated on a Microsoft Azure Active Directory (Azure AD) tenant that provides access to one production instance. In rare cases, to handle the requirements of a specific implementation, you might require multiple production instances that run in parallel. By creating multiple LCS projects against the same Azure AD tenant, you can have multiple production instances. Here are the most common scenarios where multiple production instances might be required:
+For any new cloud project, one Microsoft Dynamics Lifecycle Services (LCS) implementation project is instantiated on a Microsoft Azure Active Directory (Azure AD) tenant that provides access to one production instance. In rare cases, to handle the requirements of a specific implementation, you might require multiple production instances that run in parallel. By creating multiple LCS projects against the same Azure AD tenant, you can have multiple production instances. Here are the most common scenarios where multiple production instances might be required:
 
 - A global implementation's requirements for data residency, latency, or data volume can't be met by one instance.
 - Different business units in an organization are implementing the product separately as independent applications.
@@ -37,7 +37,7 @@ Manual intervention by the Microsoft Dynamics Service Engineering (DSE) team is 
 
 ## Licensing requirements
 
-Every LCS Implementation project that runs on the same Azure AD tenant must satisfy the minimum licensing requirements. For example, if there are three LCS Implementation projects on the same Azure AD tenant, a customer must purchase no less than three times the minimum number of subscription licenses. Currently, the minimum license requirement is 20 full user licenses. Therefore, to run three LCS Implementation projects on the same Azure AD tenant, the customer must purchase at least 60 licenses.
+Every LCS implementation project that runs on the same Azure AD tenant must satisfy the minimum licensing requirements. For example, if there are three LCS implementation projects on the same Azure AD tenant, a customer must purchase no less than three times the minimum number of subscription licenses. Currently, the minimum license requirement is 20 full user licenses. Therefore, to run three LCS implementation projects on the same Azure AD tenant, the customer must purchase at least 60 licenses.
 
 Because the licenses are associated with the Azure AD tenant, the **Subscriptions available** page for every LCS project will show the total number of licenses, even though a given LCS project can use only the portion of licenses that has been allocated to it. This allocation of license to LCS projects must be documented outside the system.
 
@@ -61,15 +61,16 @@ There are also advantages to having multiple LCS projects. Here are some of them
 - Data centers can be selected per LCS project to provide the best latency experience.
 - Data centers can be selected per LCS project to satisfy statutory requirements for data residency.
 - There is more flexibility to schedule servicing operations, such as code deployments and upgrades.
+- It is possible to have different stakeholders for the different LCS implementation projects.
 
 ## Requesting multiple LCS projects on the same Azure AD tenant
 
-If your solution requires multiple LCS projects on the same Azure AD tenant, all LCS projects except the original project must be provisioned on demand by the DSE team. You should inform the DSE team about this requirement as early as possible, ideally when the project is being onboarded. For more information, see [Onboard an implementation project](../imp-lifecycle/onboard.md). To request additional LCS Implementation projects, the customer must create a support request by using the Support portal in LCS. In this request, the customer must provide the following information:
+If your solution requires multiple LCS projects on the same Azure AD tenant, all LCS projects except the original project must be provisioned on demand by the DSE team. You should inform the DSE team about this requirement as early as possible, ideally when the project is being onboarded. For more information, see [Onboard an implementation project](../imp-lifecycle/onboard.md). To request additional LCS implementation projects, the customer must create a support request by using the Support portal in LCS. In this request, the customer must provide the following information:
 
 - The business justification.
 - The enterprise and project structure. This information includes the following details:
 
-    - The name of the Implementation project
+    - The name of the implementation project
     - The breakdown of licenses per LCS project
 
 - Confirmation that the customer understands the implications of multiple LCS projects on the same Azure AD tenant.

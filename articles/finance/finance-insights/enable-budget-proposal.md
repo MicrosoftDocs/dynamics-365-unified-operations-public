@@ -29,7 +29,6 @@ ms.dyn365.ops.version: AX 10.0.13
 # Enable Budget proposal
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to turn on the Budget proposal feature in Finance Insights.
 

@@ -5,7 +5,7 @@ author: mugunthanm
 ms.date: 09/16/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 09-16-2021
@@ -92,7 +92,7 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
 7. Install the 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
 8. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the instructions in [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
 9. Clone or download the [Scale Unit GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
-10. In LCS, go to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary), select **Retail Self-service package** as the asset type, and find the file that ends with **Commerce Scale Unit (PREVIEW)**. Be sure to select the version for the release that you require (for example, version 10.0.22 or 10.0.23). Download the file, and put it in the **Download** folder in the Scale Unit GitHub repo that you cloned or downloaded in the previous step (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**).
+10. In LCS, go to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary), select **Retail Self-service package** as the asset type, and find the file that ends with **Commerce Scale Unit (SEALED)**. Be sure to select the version for the release that you require (for example, version 10.0.22 or 10.0.23). Download the file, and put it in the **Download** folder in the Scale Unit GitHub repo that you cloned or downloaded in the previous step (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**).
 
 ## Additional prerequisites for IIS-hosted CSU
 

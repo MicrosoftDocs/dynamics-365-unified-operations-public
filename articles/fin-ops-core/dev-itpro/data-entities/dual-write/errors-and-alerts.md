@@ -5,7 +5,7 @@ author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -51,7 +51,7 @@ The detailed Error message will help you fix the underlying issue after which yo
 ![Queued records completed.](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
 
 > [!NOTE]
-> Errored records will be available in the queue for 7 days after which will the queue will be purged. In some cases, you may no longer need these records and they can be deleted from the queue.
+> Errored records will be available in the queue for 7 days, after which time they will by purged. In some cases, you may no longer need these records and they can be deleted from the queue.
 
 ## Alert notifications
 

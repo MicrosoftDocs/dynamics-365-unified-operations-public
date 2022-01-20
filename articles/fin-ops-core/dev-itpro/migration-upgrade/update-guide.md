@@ -6,7 +6,7 @@ author: rbadawy
 ms.date: 11/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22

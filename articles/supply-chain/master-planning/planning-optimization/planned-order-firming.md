@@ -34,7 +34,7 @@ Most planned order features are available in all standard installations of Micro
 
 Parallelized firming helps speed up the firming process by parallelizing it across multiple threads. This approach can be useful when many planned orders are firmed.
 
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Parallel firming of planned orders* feature.
+To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Parallel firming of planned orders* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 ### Enable planned order firming with filtering
 
@@ -46,7 +46,7 @@ To make this functionality available in your system, go to [Feature management](
 
 Automatic firming lets you firm planned orders as part of the master planning process during the time fence for firming. Auto-firming is always supported for the planning engine that is built into Supply Chain Management. However, to use it with Planning Optimization too, you must turn on the feature.
 
-To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Auto-firming for Planning Optimization* feature.
+To make this functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Auto-firming for Planning Optimization* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 ## Manually firm planned orders
 
@@ -75,6 +75,9 @@ To manually firm planned orders, you find and select the planned orders that you
     - **Group by purchase agreement** – Set this option to *Yes* to group planned purchase orders that have the same vendor as existing purchase agreements and create one purchase order per purchase agreement. This option is automatically enabled when **Group by vendor** is enabled. To use **Group by purchase agreement**, **Find purchase agreement** must be set to *Yes* on the **Master planning parameters** page.
     - **Group by period** (in the **Purchase orders** section) – Select the period to group planned purchase orders by. To use this option, you must also select the **Group by vendor** option.
     - **Group by period** (in the **Transfers** section) – Select the period to group planned transfer orders by. The orders will be grouped based on **From warehouse** and **To warehouse** values.
+
+    > [!NOTE]
+    > Each of the "Group by" options causes the system to convert each planned order to a line in the single purchase order that results from the grouping.
 
     ![Parameters FastTab in the Firming dialog box.](./media/manual-firming.png "Parameters FastTab in the Firming dialog box")
 

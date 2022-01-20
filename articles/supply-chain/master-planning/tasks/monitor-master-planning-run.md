@@ -37,7 +37,7 @@ From the **View master planning progress** page, you can view details of histori
 To use this functionality, follow these steps.
 
 1. In the **Feature management** workspace, on the **New** tab, select **Master planning progress visualization** in the list. If the feature doesn't appear on the **New** tab, look on the **Not enabled** and **All** tabs.
-1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on.
+1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
 
 The **View master planning progress** page can display both historical planning jobs and active planning jobs. 
 

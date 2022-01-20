@@ -5,7 +5,7 @@ title: Australia overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Australia.
 author: kfend
 ms.date: 04/13/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Australia
 # ms.search.industry: 
 ms.author: roschlom

@@ -5,7 +5,7 @@ title: Add dimensions to Excel templates
 description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 author: RyanCCarlson2
 ms.date: 11/10/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: ["11314", "intro-internal"]
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2

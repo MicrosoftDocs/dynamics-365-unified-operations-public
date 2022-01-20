@@ -5,7 +5,7 @@ title: Automatically apply prepayments to vendor invoices
 description: This topic describes the capability for automatically applying prepayments to vendor invoices.
 author: sunfzam
 ms.date: 10/19/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
