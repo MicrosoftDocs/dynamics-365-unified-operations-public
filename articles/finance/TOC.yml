@@ -1786,6 +1786,8 @@
             href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
           - name: ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
             href: localizations/latam-bra-complement-restitution.md
+          - name: Basis change in ICMS-DIF tax calculations for products from suppliers in other states
+            href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
           - name: Set up adjustment codes for IPI taxes
             href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
           - name: PIS and COFINS fixed assets
