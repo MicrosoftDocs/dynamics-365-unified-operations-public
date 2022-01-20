@@ -20,6 +20,33 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## January 2022 release 
+
+The January 2022 release of the [Dual-write application orchestration solution version 2.3.3.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) contains the following bug fixes. 
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Bug fix| Filter shipping warehouses in quote line information form by site instead of company | General availability |
+| Bug fix| Update Dual Write SCM solution to support FieldServiceProductType with value NotAvailable  | General availability |
+| Bug fix| SalesPrice is not being updated properly if the value sent from Dataverse is 0.00 and the SalesPrice value in the F&O is not 0.00 | General availability |
+
+This release includes one map change namely [CDS released distinct products] - [products]. In order to take the map changes, apply "Dynamics365FinanceAndOperationsDualWriteMaps" solution version 2.3.3.2 and update the [CDS released distinct products] - [products] map to latest version 1.0.0.3.
+
+### Solution details
+
+|Solution name | Has new changes? | Previous version | New version |
+|--------------|--------------|--------------|--------------|
+|CurrencyExchangeRates|No|2.2.2.5|2.2.2.5|
+|Dynamics365Company|No|2.2.2.5|2.2.2.5|
+|Dynamics365FinanceAndOperationsCommon|No|2.2.2.50|2.2.2.50|
+|Dynamics365FinanceExtended|No|2.3.1.15|2.3.1.15|
+|Dynamics365SupplyChainExtended|Yes|2.3.1.15|2.3.3.2|
+|Dynamics365AssetManagement|No|2.0.777.68|2.0.777.68|
+|Dynamics365AssetManagementApp|No|2.2.1.23|2.2.1.23|
+|Dynamics365Notes|No|2.2.2.23|2.2.2.23|
+|Dynamics365FinanceAndOperationsDualWriteMaps|Yes|2.3.0.15|2.3.3.2|
+|Dynamics365FinanceAndOperationsAnchor|No|2.3.1.15|2.3.3.2|
+
 ## November 2021 release of party and global address book 
 
 The November 2021 release of the [Dual-write Party and Global Address Book Solutions 3.3.0.5](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) contains the following features and bug fixes. 
