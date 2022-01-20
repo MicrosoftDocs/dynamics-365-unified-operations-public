@@ -88,7 +88,7 @@ No. Access to the production environment is limited. You can't access the virtua
 
 ## How often is my production database backed up?
 
-Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 35 days.
+Databases are protected by automatic backups. Full database backups are done weekly, differential database backups are done hourly, and transaction log backups are done every five minutes. Automatic backups are retained for 28 days.
 
 For more information, see [Learn about automatic SQL Database backups](/azure/sql-database/sql-database-automated-backups).
 
