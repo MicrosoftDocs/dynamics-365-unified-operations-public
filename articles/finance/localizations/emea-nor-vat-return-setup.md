@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 12/13/2021
+ms.date: 01/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -250,16 +250,14 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 > It's important that you define conditions for all sales tax codes that are used in tax transactions during the reporting period. If no appropriate lookup result is defined for a sales tax code that is used in transactions during the reporting period, generation of a VAT return will be stopped. 
 
 > [!NOTE]
-> Documents that are subject for the following \'mvaKode\': 
-> - 81: Purchases of goods from abroad with deductions (standard rate) / Deductions on purchases of goods from abroad with deductions (standard rate)
-> - 83: Purchases of goods from abroad with deductions (middle rate) / Deductions on purchases of goods from abroad with deductions (middle rate) 
-> - 86: Purchases of services from abroad with deductions (standard rate) / Deductions on purchases of services from abroad with deductions (standard rate) 
-> - 88: Purchases of services from abroad with deductions (low rate) / Deductions on purchases of services from abroad with deductions (low rate) 
-> - 91: Purchases of emission allowances and gold / Deductions on purchases of emission allowances and gold 
-> 
-> must be reported in VAT return with two lines of sales tax payable and sales tax receivable directions. We recommend to post these documents using [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
-> 
-> \'Reverse charge\' mechanism enables posting of a document with two tax transactions of sales tax receivable and sales tax payable direction. These transactions as a result will  be reported in VAT return as two lines.
+> Documents that are subject to the following \'mvaKode\' must be reported in VAT return with two lines of sales tax payable and sales tax receivable directions. We recommend that you post these documents using the [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
+> - 81: Purchases of goods from abroad with deductions (standard rate)/Deductions on purchases of goods from abroad with deductions (standard rate).
+> - 83: Purchases of goods from abroad with deductions (middle rate)/Deductions on purchases of goods from abroad with deductions (middle rate).
+> - 86: Purchases of services from abroad with deductions (standard rate)/Deductions on purchases of services from abroad with deductions (standard rate).
+> - 88: Purchases of services from abroad with deductions (low rate)/Deductions on purchases of services from abroad with deductions (low rate). 
+> - 91: Purchases of emission allowances and gold/Deductions on purchases of emission allowances and gold. 
+>
+> The \'Reverse charge\' mechanism enables posting a document with two tax transactions of sales tax receivable and sales tax payable direction. As a result, these transactions are reported in VAT return as two lines.
 
 ## <a id="em-setup"></a>Import a package of data entities that includes a predefined EM setup
 
