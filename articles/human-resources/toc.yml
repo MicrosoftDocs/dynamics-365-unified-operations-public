@@ -6,8 +6,8 @@
       href: index.md  
     - name: Get started   
       items:
-     - name: Infrastructure release 10.0.25
-       href: hr-infrastructure.md
+      - name: Infrastructure release 10.0.25
+        href: hr-infrastructure.md
       - name: What's new
         href: hr-admin-whats-new.md    
       - name: What's new or changed archives 2021
