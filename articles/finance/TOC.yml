@@ -4,6 +4,30 @@
     items:
     - name: Dynamics 365 Finance home page
       href: index.md
+    - name: What's new or changed
+      items: 
+      - name: What's new or changed in Finance and Operations apps
+        href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+      - name: What's new or changed in Finance
+        items:
+        - name: What's new or changed in Finance home page
+          href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.24 (February)
+          href: get-started/whats-new-changed-10-0-24.md
+        - name: Finance 10.0.23 (January)
+          href: get-started/whats-new-changed-10-0-23.md
+      - name: Removed or deprecated features
+        items:
+          - name: Removed or deprecated features home page
+            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+          - name: Removed or deprecated features in Dynamics 365 Finance
+            href: get-started/removed-deprecated-features-finance.md
+          - name: Removed or deprecated features in previous releases
+            href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+      - name: AX 2012 features that were postponed
+        href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
     - name: Get started
       items:
       - name: Service description
@@ -62,30 +86,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Configure Warehousing for on-premises deployments
           href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-      - name: What's new or changed
-        items: 
-        - name: What's new or changed in Finance and Operations apps
-          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-        - name: What's new or changed in Finance
-          items:
-          - name: What's new or changed in Finance home page
-            href: get-started/whats-new-home-page.md
-          - name: Finance 10.0.24 (February)
-            href: get-started/whats-new-changed-10-0-24.md
-          - name: Finance 10.0.23 (January)
-            href: get-started/whats-new-changed-10-0-23.md
-      - name: Removed or deprecated features
-        items:
-          - name: Removed or deprecated features home page
-            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-          - name: Removed or deprecated features in Dynamics 365 Finance
-            href: get-started/removed-deprecated-features-finance.md
-          - name: Removed or deprecated features in previous releases
-            href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-      - name: AX 2012 features that were postponed
-        href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-        href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
       - name: Documentation resources
         items:
         - name: Help system
@@ -1540,6 +1540,8 @@
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
+      - name: Search for regulatory updates
+        href: localizations/search-for-regulatory-updates.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1758,6 +1760,8 @@
           href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
         - name: Calculate interest and fines on customer payments
           href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+        - name: Set up bank account numbers for Brazil
+          href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
         - name: Taxes
           items:
           - name: Brazil taxes overview
@@ -1786,6 +1790,8 @@
             href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
           - name: ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
             href: localizations/latam-bra-complement-restitution.md
+          - name: Basis change in ICMS-DIF tax calculations for products from suppliers in other states
+            href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
           - name: Set up adjustment codes for IPI taxes
             href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
           - name: PIS and COFINS fixed assets
@@ -1888,6 +1894,8 @@
           href: localizations/emea-cze-vat-statement-details.md
         - name: VAT declaration (Czech Republic)
           href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+        - name: Czech Intrastat
+          href: localizations/emea-cze-intrastat.md
         - name: Bank symbols for bank accounts
           href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
         - name: Intra-community VAT
@@ -2882,6 +2890,8 @@
           href: localizations/emea-lva-tax-natural-resources.md
         - name: VAT statement details
           href: localizations/emea-lva-vat-statement-details.md
+        - name: Latvian Intrastat
+          href: localizations/emea-lva-intrastat.md
       - name: Lithuania
         items:
         - name: Lithuania overview
@@ -3480,6 +3490,8 @@
       items:
       - name: Human resources overview
         href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
+      - name: Infrastructure release 10.0.25
+        href: ../human-resources/hr-infrastructure.md?toc=/dynamics365/finance/toc.json
       - name: Set up Human resources
         items:
         - name: Configure Human resources parameters

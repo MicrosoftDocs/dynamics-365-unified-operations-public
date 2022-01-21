@@ -4,7 +4,7 @@ title: Feature management overview
 description: This topic describes Feature management and how you can use it.
 author: Peakerbl
 ms.date: 01/10/2022
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ audience: IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: peakerbl

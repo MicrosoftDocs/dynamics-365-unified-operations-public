@@ -1052,6 +1052,8 @@
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
+            - name: Separated dual-write application orchestration package
+              href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write
               href: data-entities/dual-write/currrency-decimal-places.md
             - name: Set up the mapping for the sales order status fields
