@@ -118,7 +118,7 @@ This topic provides information about functionality that supports Russian regula
 - [Transactions through intermediary](rus-transactions-through-intermediary.md)
   - [Purchases on commission](rus-purchases-on-commission.md)
   - [Sales on commission](rus-sales-on-commission.md)
-- [Local reports and primary forms in Accounts receivable and Accounts payable](rus-local-reports-and-primary-forms-in-accounts-receivable-and-accounts-payable.md)
+- [Local reports and primary forms in Accounts receivable and Accounts payable](rus-local-reports-primary-forms-ar-ap.md)
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)
