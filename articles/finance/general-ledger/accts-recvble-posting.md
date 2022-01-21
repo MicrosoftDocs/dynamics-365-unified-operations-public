@@ -61,7 +61,7 @@ Bridging posting is a two-step process that is used when payments are posted. It
 |--------------|----------------------|---------------------------|--------------|---------------|------------------|-------------|
 | Ledger journal | 130725 | Uncleared Cash | Liability | Debit | Yes | For each method of payment, enter the main account in the **Bridging account** field. |
 
-For more information, see [Set up and process bridged payments](../accounts-receivable/setup-and-process-bridged-payments.md).
+For more information, see [Set up and process bridged payments](../accounts-receivable/set-up-and-process-bridged-payments.md).
 
 ## Posting accounts for customer cash discounts
 
