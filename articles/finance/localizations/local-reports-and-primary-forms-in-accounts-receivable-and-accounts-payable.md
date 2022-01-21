@@ -40,7 +40,7 @@ This topic explains how to work with the primary forms that are used in the Russ
   - Job ticket
 
 - [Customer acceptance reports](#customer-acceptance-reports)
-- [Counting act (INV-17) and Certificate (Appendix to INV-17) reports for customers](\l)
+- [Counting act (INV-17) and Certificate (Appendix to INV-17) reports for customers](#counting-act-inv-17-and-certificate-appendix-to-inv-17-reports-for-customers)
 
 ## Invoices
 
