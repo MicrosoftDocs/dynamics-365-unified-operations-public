@@ -45,6 +45,7 @@ This topic explains how to work with the primary forms that are used in the Russ
 ## Invoices
 
 The form **M-15** invoice for the release of materials is a document that is the basis for the movement of material values from one organization to another.
+
 The form **TORG-12** invoice is a document that is the basis for the transfer of inventory items from one organization to another.
 
 ### Set up number sequences for invoices
@@ -105,11 +106,11 @@ You can generate the **M-15** and **TORG-12** reports by using the **Posting inv
 
 The following illustration shows an example of an **M-15** report.
 
-    ![M 15 report](media/ru_primary_forms_in_APAR_1.png)
+   ![M 15 report](media/ru_primary_forms_in_APAR_1.png)
 
 The following illustration shows an example of a **TORG-12** report.
 
-    ![TORG 12 report](media/ru_primary_forms_in_APAR_2.png)
+   ![TORG 12 report](media/ru_primary_forms_in_APAR_2.png)
 
 ## Product receipts
 
@@ -147,17 +148,17 @@ Follow these steps to generate and print the reports for a purchase order.
 10. On the Action Pane, on the **Receive** tab, in the **Generate** group, select **Product receipt**.
 11. In the **Receipt statement form type** field, select one of the following options to indicate whether the receipt statement is related to items or materials:
 
-  - **Receipt statement for materials** – The receipt statement is related to materials (forms **M-4** and **M-7**).
-  - **Receipt statement for items** – The receipt statement is related to items (forms **TORG-1**, **TORG-2**, and **TORG-3**).
+    - **Receipt statement for materials** – The receipt statement is related to materials (forms **M-4** and **M-7**).
+    - **Receipt statement for items** – The receipt statement is related to items (forms **TORG-1**, **TORG-2**, and **TORG-3**).
 
     > [!Note]
-    > [!If you select **Receipt statement for materials**, either an **M-4** statement or an **M-7** statement will be printed. An **M-7** statement will be printed only if you specify discrepancies in the **Quantity** and **Deviation** fields.
+    > If you select **Receipt statement for materials**, either an **M-4** statement or an **M-7** statement will be printed. An **M-7** statement will be printed only if you specify discrepancies in the **Quantity** and **Deviation** fields.
 
 12. If you selected **Receipt statement for items** in the **Receipt statement form type** field, in the **Document about deviation** field, select one of the following options to indicate whether a **TORG-1**, **TORG-2**, or **TORG-3** report should be generated:
 
-  - Receipt statement for items TORG-1
-  - Receipt list for items TORG-2
-  - Receipt list for items TORG-3
+    - Receipt statement for items TORG-1
+    - Receipt list for items TORG-2
+    - Receipt list for items TORG-3
 
     > [!Note]
     > A **TORG-2** or **TORG-3** statement will be printed only if you specify discrepancies in the **Quantity** and **Deviation** fields.
@@ -167,35 +168,37 @@ Follow these steps to generate and print the reports for a purchase order.
 
 The following illustration shows an example of an **M-4** report.
 
-    ![M 4 report](media/ru_primary_forms_in_APAR_3.png)
+   ![M 4 report](media/ru_primary_forms_in_APAR_3.png)
 
 The following illustration shows an example of an **M-7** report.
 
-    ![M 7 report](media/ru_primary_forms_in_APAR_4.png)
+   ![M 7 report](media/ru_primary_forms_in_APAR_4.png)
 
 The following illustration shows an example of a **TORG-1** report.
 
-    ![TORG 1 report](media/ru_primary_forms_in_APAR_5.png)
+   ![TORG 1 report](media/ru_primary_forms_in_APAR_5.png)
 
 The following illustration shows an example of a **TORG-2** report.
 
-    ![TORG 2 report](media/ru_primary_forms_in_APAR_6.png)
+   ![TORG 2 report](media/ru_primary_forms_in_APAR_6.png)
 
 The following illustration shows an example of a **TORG-3** report.
 
-    ![TORG 3 report](media/ru_primary_forms_in_APAR_7.png)
+   ![TORG 3 report](media/ru_primary_forms_in_APAR_7.png)
 
 ### Product receipt corrections
 
 You can correct a product receipt that has already been posted for a purchase order. The corrected product receipt contains information about the discrepancy between the quantity of items that was ordered on the original purchase order and the quantity that was received.
+
 When you post a corrected product receipt, the original product receipt is canceled. If the corrected receipt contains at least one line that has a non-zero received quantity, a new version of the **M-4**, **M-7**, **TORG-1**, **TORG-2**, or **TORG-3** receipt statement report is generated. You can print the new version of the receipt statement report.
+
 You can retain the receipt statement document type and the number of the original product receipt for the corrected product receipt.
 
 1. Follow one of these steps:
 
-  - Go to **Accounts payable** > **Purchase orders** > **All purchase orders**. Select a purchase order that a product receipt is posted for, and then, on the Action Pane, on the **Receive** tab, in the **Journals** group, select **Product receipt**. Select a product receipt, and then select **Correct**.
+    - Go to **Accounts payable** > **Purchase orders** > **All purchase orders**. Select a purchase order that a product receipt is posted for, and then, on the Action Pane, on the **Receive** tab, in the **Journals** group, select **Product receipt**. Select a product receipt, and then select **Correct**.
 
-  - Go to **Accounts payable** > **Inquiries and reports** > **Product receipt**. Select a product receipt line, and then select **Correct**.
+    - Go to **Accounts payable** > **Inquiries and reports** > **Product receipt**. Select a product receipt line, and then select **Correct**.
 
 2. In the **Product receipt correction** dialog box, set the **Preserve receipt statement** option to **Yes** to use the receipt statement document type and the number of the original product receipt for the corrected product receipt.
 3. If you set the **Preserve receipt statement** option to **No**, you can follow these steps to manually enter the information for the product receipt correction.
@@ -218,8 +221,8 @@ You can generate acts of adjustment for vendors and customers. Use the **Act of 
 
 1. Follow one of these steps:
 
-- To generate an act of adjustment for a vendor, go to **Accounts payable** > **Inquiries and reports** > **Act of adjustment**. Then, in the **Vendor account** field, select the vendor account.
-- To generate an act of adjustment for a customer, go to **Accounts receivable** > **Inquiries and reports** > **Act of adjustment**. Then, in the **Customer account** field, select the customer account
+    - To generate an act of adjustment for a vendor, go to **Accounts payable** > **Inquiries and reports** > **Act of adjustment**. Then, in the **Vendor account** field, select the vendor account.
+    - To generate an act of adjustment for a customer, go to **Accounts receivable** > **Inquiries and reports** > **Act of adjustment**. Then, in the **Customer account** field, select the customer account
 
 2. If the counteragent is both a vendor and customer, you can set the **Counteragent** option to **Yes** to include the counteragent's transactions as a vendor and as a customer in the act of adjustment.
 3. In the **Date interval code** field, select the interval code for the report period.
@@ -239,15 +242,15 @@ You can generate acts of adjustment for vendors and customers. Use the **Act of 
 
 The following illustration shows an example of an act of adjustment for a customer.
 
-    ![act of adjustment for a customer](media/ru_primary_forms_in_APAR_8.png)
+   ![act of adjustment for a customer](media/ru_primary_forms_in_APAR_8.png)
 
 ## 1-T bill of lading reports, transportation invoices, and job tickets
 
 The **1-T bill of lading** report is designed to account for the movement of inventory items when they are transported by using vehicles. You can generate and print the **1-T bill of lading** report when you generate the sales order.
 In the Russian Federation, all cargo that is transported by using an automobile carrier must be accompanied by one of the following documents:
 
-- **Transportation invoice** – The documented proof of a transportation agreement.
-- **Job ticket** – The documented proof of a vehicle chartering agreement.
+  - **Transportation invoice** – The documented proof of a transportation agreement.
+  - **Job ticket** – The documented proof of a vehicle chartering agreement.
 
 You can generate and print a transportation invoice and a job ticket for a sales order or a transfer order. You can print a transportation invoice and a job ticket from the **Bill of lading** page, which you can access from multiple pages. These pages include the packing slip journal, invoice journal, and transfer order pages.
 
@@ -256,10 +259,10 @@ You can generate and print a transportation invoice and a job ticket for a sales
 1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 2. On the **Shipments** tab, on the **Bill of lading** FastTab, in the **Bill of lading** field, select one of the following options to specify the circumstances that a bill of lading is created in when a shipment is dispatched:
 
-  - **None** – No bill of lading is created.
-  - **Packing slip update** – A bill of lading is created when a packing slip is updated.
-  - **Invoice posting** – A bill of lading is created when an invoice is posted.
-  - **Both** – A bill of lading is created both when a packing slip is updated and when an invoice is posted.
+    - **None** – No bill of lading is created.
+    - **Packing slip update** – A bill of lading is created when a packing slip is updated.
+    - **Invoice posting** – A bill of lading is created when an invoice is posted.
+    - **Both** – A bill of lading is created both when a packing slip is updated and when an invoice is posted.
 
 3. On the **Transportation document** FastTab, in the **Document type** field, select **Transportation invoice** or **Job ticket** as the default type of the report. You can change the type of the printed document during document creation.
 4. On the **Number sequences** tab, set up number sequence codes for the **Transportation document number** and **Job ticket number** number sequences.
@@ -273,7 +276,7 @@ The **1-T bill of lading** report calculates weight in tons. Therefore, you must
 3. On the Action Pane, select **Edit**.
 4. Set the **Fixed unit assignment** option to **Yes**.
 5. In the **Fixed unit** field, select **Metric tons**.
-6. You should also define system units for of the **Mass** and **Dry** **volume** unit classes. For more information, see [Manage units of measure](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/manage-unit-measure#create-or-edit-a-unit-of-measure).
+6. You should also define system units for of the **Mass** and **Dry** **volume** unit classes. For more information, see [Manage units of measure](../../supply-chain/pim/tasks/manage-unit-measure.md#create-or-edit-a-unit-of-measure).
 
 ### Print a 1-T bill of lading report, transportation invoice, or job ticket
 
@@ -302,9 +305,9 @@ To set up information for a bill of lading, follow one of these steps, depending
   2. Create an order.
   3. On the **Header** tab, on the **Bill of lading** FastTab, in the **Carrier** section, in the **Carrier type** field, select the type of carrier:
 
-    - **Invoice account** – The carrier is the customer that is selected as the invoice account on the sales order.
-    - **Customer** – The carrier is the customer account that is specified in the **Carrier** field.
-    - **Vendor** – The carrier is the vendor account that is specified in the **Carrier** field.
+      - **Invoice account** – The carrier is the customer that is selected as the invoice account on the sales order.
+      - **Customer** – The carrier is the customer account that is specified in the **Carrier** field.
+      - **Vendor** – The carrier is the vendor account that is specified in the **Carrier** field.
 
   4. In the **Carrier** field, select the registration number of the carrier. This field is available only if you selected **Customer** or **Vendor** in the **Carrier type** field.
 
@@ -313,9 +316,9 @@ To generate and print a **1-T bill of lading** report, transportation invoice, o
 1. On the sales order, packing slip, or transfer order page, in the **License card** section, in the **Registration number**, **Series**, and **Number** fields, enter information for the license card.
 2. In the **Transportation** section, in the **Carrier type** field, select the type of carrier:
 
-  - **Invoice account** – The carrier is the customer that is selected as the invoice account on the sales order.
-  - **Customer** – The carrier is the customer account that is specified in the **Carrier** field.
-  - **Vendor** – The carrier is the vendor account that is specified in the **Carrier** field.
+      - **Invoice account** – The carrier is the customer that is selected as the invoice account on the sales order.
+      - **Customer** – The carrier is the customer account that is specified in the **Carrier** field.
+      - **Vendor** – The carrier is the vendor account that is specified in the **Carrier** field.
 
 3. In the **Carrier** field, select the registration number of the carrier. This field is available only if you selected **Customer** or **Vendor** in the **Carrier type** field.
 4. In the **Delivery date** field, select the date of delivery.
@@ -358,15 +361,15 @@ For the sales order, on the Action Pane, select **Preview/Print** > **Original p
 
 The following illustration shows an example of a transportation invoice.
 
-    ![transportation invoice](media/ru_primary_forms_in_APAR_9.png)
+   ![transportation invoice](media/ru_primary_forms_in_APAR_9.png)
 
 The following illustration shows an example of a job ticket.
 
-    ![job ticket](media/ru_primary_forms_in_APAR_10.png)
+   ![job ticket](media/ru_primary_forms_in_APAR_10.png)
 
 The following illustration shows an example of a **1-T bill of lading** report.
 
-    ![1 T bill of lading report](media/ru_primary_forms_in_APAR_11.png)
+   ![1 T bill of lading report](media/ru_primary_forms_in_APAR_11.png)
 
 ## Customer acceptance reports
 
@@ -387,7 +390,7 @@ Alternatively, you can print the acceptance report by selecting **View** > **Acc
 
 The following illustration shows an example of a **Customer acceptance** report.
 
-    ![Customer acceptance report](media/ru_primary_forms_in_APAR_12.png)
+   ![Customer acceptance report](media/ru_primary_forms_in_APAR_12.png)
 
 ## Counting act (INV-17) and Certificate (Appendix to INV-17) reports for customers
 
