@@ -65,4 +65,4 @@ Finance and Supply Chain management generates business data in a unified structu
 
   ![E-invoicing overview.](media/e-invoicing-overview.jpg)
 
-For more information about electronic invoicing compnents, see [Tutorials: setup Electronic invoicing](e-inv_tut-setup-electronic-invoicing_overview.md) and [Tutorials: setup and use connected applications](e-inv_tut-setup-Finance_setup-finance_activate-integration.md) to get familiar with the components in details, and setup them.
+For more information about electronic invoicing compnents, see [Setting up Electronic invoicing](e-invoicing-set-up-overview.md) and [Set up and use connected applications](e-invoicing-connected-applications.md) to get familiar with the components in details, and setup them.
