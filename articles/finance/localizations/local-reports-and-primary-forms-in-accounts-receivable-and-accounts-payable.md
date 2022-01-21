@@ -15,6 +15,8 @@ ms.search.validFrom:
 
 # Local reports and primary forms in Accounts receivable and Accounts payable
 
+[!include [banner](../includes/banner.md)]
+
 This topic explains how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365. Here is a list of the supported primary forms:
 
 - [Invoices](#invoices)
@@ -52,10 +54,42 @@ You can use the **Accounts receivable parameters** page to set up number sequenc
 1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 2. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the following references.
 
-| Reporting form | Number sequence reference types |
-|-------------------------|-------------------------|
-| M-15 | Invoice (M-15) (system ID)Invoice (M-15)Corrective invoice (M-15) (system ID)Corrective invoice (M-15) |
-| TORG-12 | Customer invoiceCustomer invoice voucher |
+<table style="width: 679px;">
+<tbody>
+<tr>
+<td style="width: 312px;">
+<p><strong>Reporting form</strong></p>
+</td>
+<td style="width: 351px;">
+<p><strong>Number sequence reference types</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 312px;">
+<p>M-15</p>
+</td>
+<td style="width: 351px;">
+<ul style="list-style-type: circle;">
+<li>Invoice (M-15) (system ID)</li>
+<li>Invoice (M-15)</li>
+<li>Corrective invoice (M-15) (system ID)</li>
+<li>Corrective invoice (M-15)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="width: 312px;">
+<p>TORG-12</p>
+</td>
+<td style="width: 351px;">
+<ul style="list-style-type: circle;">
+<li>Customer invoice</li>
+<li>Customer invoice voucher</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 ### Generate an M-15 or TORG-12 report for a sales order
@@ -374,3 +408,5 @@ The Counting act (INV-17) report shows the results of the inventory settlements 
 13. In the **Title** field, select the job title of the official.
 14. In the **Employee name** field, in the list of company employees, select the name of the official.
 15. Select **OK** to print the **Counting act (INV-17)** or **Certificate (Appendix to INV-17)** report.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
