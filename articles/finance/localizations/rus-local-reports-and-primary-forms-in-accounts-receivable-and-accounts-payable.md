@@ -52,17 +52,22 @@ You can use the **Accounts receivable parameters** page to set up number sequenc
 1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
 2. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the following references.
 
-<table style="width: 679px;">
+<table>
 <tbody>
 <tr>
+<td>
 <p><strong>Reporting form</strong></p>
 </td>
+<td>
 <p><strong>Number sequence reference types</strong></p>
 </td>
 </tr>
 <tr>
+<td>
 <p>M-15</p>
 </td>
+<td>
+<ul>
 <li>Invoice (M-15) (system ID)</li>
 <li>Invoice (M-15)</li>
 <li>Corrective invoice (M-15) (system ID)</li>
@@ -71,8 +76,11 @@ You can use the **Accounts receivable parameters** page to set up number sequenc
 </td>
 </tr>
 <tr>
+<td>
 <p>TORG-12</p>
 </td>
+<td>
+<ul>
 <li>Customer invoice</li>
 <li>Customer invoice voucher</li>
 </ul>
