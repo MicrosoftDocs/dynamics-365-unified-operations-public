@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Availability of electronic invoicing features by country or region
+title: Availability of Electronic invoicing features by country or region
 description: This topic provides information about the out-of-box features that are available for each country or region.
 author: dkalyuzh
 ms.date: 01/20/2022
@@ -27,15 +27,15 @@ ms.dyn365.ops.version:
 
 ---
 
-# Availability of electronic invoicing features by country or region
+# Availability of Electronic invoicing features by country or region
 
 [!include [banner](../includes/banner.md)]
 
-The availability of electronic invoicing features depends on the country or region where you're located. Although some features are generally available, others are still in preview.
+The availability of Electronic invoicing features depends on the country or region where you're located. Although some features are generally available, others are still in preview.
 
 ## Generally available features
 
-The following table shows the electronic invoicing features that are generally available.
+The following table shows the Electronic invoicing features that are generally available.
 
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
@@ -60,7 +60,7 @@ The following table shows the electronic invoicing features that are generally a
 
 ## Preview features
 
-The following table shows the electronic invoicing features that are currently in preview.
+The following table shows the Electronic invoicing features that are currently in preview.
 
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
