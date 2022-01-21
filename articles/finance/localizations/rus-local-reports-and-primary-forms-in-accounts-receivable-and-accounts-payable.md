@@ -4,7 +4,7 @@
 title: Local reports and primary forms in Accounts receivable and Accounts payable
 description: This topic explains how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365.
 author: andosip
-ms.date: 21/01/2022
+ms.date: 01/21/2022
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
@@ -55,19 +55,14 @@ You can use the **Accounts receivable parameters** page to set up number sequenc
 <table style="width: 679px;">
 <tbody>
 <tr>
-<td style="width: 312px;">
 <p><strong>Reporting form</strong></p>
 </td>
-<td style="width: 351px;">
 <p><strong>Number sequence reference types</strong></p>
 </td>
 </tr>
 <tr>
-<td style="width: 312px;">
 <p>M-15</p>
 </td>
-<td style="width: 351px;">
-<ul style="list-style-type: circle;">
 <li>Invoice (M-15) (system ID)</li>
 <li>Invoice (M-15)</li>
 <li>Corrective invoice (M-15) (system ID)</li>
@@ -76,11 +71,8 @@ You can use the **Accounts receivable parameters** page to set up number sequenc
 </td>
 </tr>
 <tr>
-<td style="width: 312px;">
 <p>TORG-12</p>
 </td>
-<td style="width: 351px;">
-<ul style="list-style-type: circle;">
 <li>Customer invoice</li>
 <li>Customer invoice voucher</li>
 </ul>
@@ -393,7 +385,7 @@ The following illustration shows an example of a **Customer acceptance** report.
 
 The Counting act (INV-17) report shows the results of the inventory settlements with counterparties. The report contains information about accounts receivable and accounts payable debt. Use the **Accounts payable counting** page to generate the **Inventory act** report.
 
-1. Set up the **Accounting receivable inventory act** register. For more information, see [Tax registers](https://docs.microsoft.com/dynamics365/finance/localizations/rus-bad-debts#tax-registers).
+1. Set up the **Accounting receivable inventory act** register. For more information, see [Tax registers](rus-bad-debts.md#tax-registers).
 2. Go to **Accounts payable** > **Periodic** **tasks** > **Accounts payable counting**.
 3. In the **Counting act** dialog box, on the **Parameters** FastTab, in the **Date** section, in the **Counting date** field, select the inventory date.
 4. In the **Set up** section, set the **Agreements** option to **Yes** to add detailed agreement information.
