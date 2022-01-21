@@ -120,13 +120,13 @@ Before you work with product receipts, you must set up number sequences for them
 1. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters**.
 2. On the **Number sequences** tab, in the **Number sequence** field, select a number sequence for the following references.
 
-| Reporting form | Number sequence reference types |
-|-------------------------|-------------------------|
-| TORG-1 | Receipt items statement voucher |
-| TORG-2 | Receipts list voucherReceipt items statement voucher |
-| TORG-3 | Receipts list voucherReceipt items statement voucher |
-| M-4 | Reimbursement slip voucher |
-| M-7 | Receipts list voucher |
+    | Reporting form | Number sequence reference types |
+    |-------------------------|-------------------------|
+    | TORG-1 | Receipt items statement voucher |
+    | TORG-2 | Receipts list voucherReceipt items statement voucher |
+    | TORG-3 | Receipts list voucherReceipt items statement voucher |
+    | M-4 | Reimbursement slip voucher |
+    | M-7 | Receipts list voucher |
 
 
 ### Post a product receipt for a purchase order
@@ -148,7 +148,7 @@ Follow these steps to generate and print the reports for a purchase order.
     - **Receipt statement for materials** – The receipt statement is related to materials (forms **M-4** and **M-7**).
     - **Receipt statement for items** – The receipt statement is related to items (forms **TORG-1**, **TORG-2**, and **TORG-3**).
 
-    > [!Note]
+    > [!NOTE]
     > If you select **Receipt statement for materials**, either an **M-4** statement or an **M-7** statement will be printed. An **M-7** statement will be printed only if you specify discrepancies in the **Quantity** and **Deviation** fields.
 
 12. If you selected **Receipt statement for items** in the **Receipt statement form type** field, in the **Document about deviation** field, select one of the following options to indicate whether a **TORG-1**, **TORG-2**, or **TORG-3** report should be generated:
@@ -157,7 +157,7 @@ Follow these steps to generate and print the reports for a purchase order.
     - Receipt list for items TORG-2
     - Receipt list for items TORG-3
 
-    > [!Note]
+    > [!NOTE]
     > A **TORG-2** or **TORG-3** statement will be printed only if you specify discrepancies in the **Quantity** and **Deviation** fields.
 
 13. On the **Overview** FastTab, in the **Product receipt** field, enter the product receipt number.
@@ -199,10 +199,9 @@ You can retain the receipt statement document type and the number of the origina
 
 2. In the **Product receipt correction** dialog box, set the **Preserve receipt statement** option to **Yes** to use the receipt statement document type and the number of the original product receipt for the corrected product receipt.
 3. If you set the **Preserve receipt statement** option to **No**, you can follow these steps to manually enter the information for the product receipt correction.
-
-1. In the **Receipt statement form type** field, select whether the receipt statement is related to items or materials.
-2. If you selected **Receipt statement for items** in the **Receipt statement form type** field, in the **Document about deviation** field, select whether a **TORG-1**, **TORG-2**, or **TORG-3** report should be generated.
-3. Select **OK** to print the corrected product receipt.
+4. In the **Receipt statement form type** field, select whether the receipt statement is related to items or materials.
+5. If you selected **Receipt statement for items** in the **Receipt statement form type** field, in the **Document about deviation** field, select whether a **TORG-1**, **TORG-2**, or **TORG-3** report should be generated.
+6. Select **OK** to print the corrected product receipt.
 
 ## Acts of adjustment
 
@@ -237,7 +236,7 @@ You can generate acts of adjustment for vendors and customers. Use the **Act of 
 15. On the **Vendor transaction** page, review the vendor transaction information.
 16. Select **Print** to review the report.
 
-The following illustration shows an example of an act of adjustment for a customer.
+    The following illustration shows an example of an act of adjustment for a customer.
 
    ![act of adjustment for a customer](media/ru_primary_forms_in_APAR_8.png)
 
@@ -302,9 +301,9 @@ To set up information for a bill of lading, follow one of these steps, depending
   2. Create an order.
   3. On the **Header** tab, on the **Bill of lading** FastTab, in the **Carrier** section, in the **Carrier type** field, select the type of carrier:
 
-      - **Invoice account** – The carrier is the customer that is selected as the invoice account on the sales order.
-      - **Customer** – The carrier is the customer account that is specified in the **Carrier** field.
-      - **Vendor** – The carrier is the vendor account that is specified in the **Carrier** field.
+    - **Invoice account** – The carrier is the customer that is selected as the invoice account on the sales order.
+    - **Customer** – The carrier is the customer account that is specified in the **Carrier** field.
+    - **Vendor** – The carrier is the vendor account that is specified in the **Carrier** field.
 
   4. In the **Carrier** field, select the registration number of the carrier. This field is available only if you selected **Customer** or **Vendor** in the **Carrier type** field.
 
@@ -375,7 +374,7 @@ The **Customer acceptance** report confirms the transfer of the result of the wo
 1. Go to **Accounts receivable** > **Invoices** > **Open customer invoices**.
 2. Select an open customer invoice, and then, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Print** > **Range**.
 
-Alternatively, you can print the acceptance report by selecting **View** > **Acceptance report**.
+   Alternatively, you can print the acceptance report by selecting **View** > **Acceptance report**.
 
 3. In the **Print customer invoice** dialog box, on the **Parameters** FastTab, in the **Invoice selection criteria** section, in the **Account type** field, select **Customer account**.
 4. In the **From account** and **To account** fields, select the range of customer accounts that the acceptance reports are printed for.
@@ -385,7 +384,7 @@ Alternatively, you can print the acceptance report by selecting **View** > **Acc
 8. In the **Print options** section, in the **Print option** field, select **Acceptance report** to print an acceptance report for the customer invoice.
 9. Select **OK** to print the report.
 
-The following illustration shows an example of a **Customer acceptance** report.
+   The following illustration shows an example of a **Customer acceptance** report.
 
    ![Customer acceptance report](media/ru_primary_forms_in_APAR_12.png)
 
