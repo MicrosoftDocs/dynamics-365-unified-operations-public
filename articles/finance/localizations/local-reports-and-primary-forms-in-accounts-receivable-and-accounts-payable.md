@@ -20,7 +20,7 @@ ms.search.validFrom:
 This topic explains how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365. Here is a list of the supported primary forms:
 
 - [Invoices](#invoices)
-  - M-15
+   - M-15
   - TORG-12
 
 - [Product receipts](#product-receipts)
