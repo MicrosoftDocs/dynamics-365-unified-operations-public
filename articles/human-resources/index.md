@@ -31,65 +31,33 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas, including:
+This topic provides a list of the help topics and other resources in Dynamics 365 Human resources. 
 
-- Compensation
-- Benefits
-- Leave and absence
-- Compliance
-- Payroll integration
-- Performance feedback
-- Training and certification
-- Self-service programs
+## What's new and in development
+
+Go to [What's new or changed](hr-whats-new-2021-11-29.md)
+
+## Core concepts and tasks
+
+Select a feature area to learn more about it.
+
+- [Employee self service](hr-employee-manager-self-service-overview.md)
+- [Personnel management](hr-personnel-departments-jobs-positions.md)
+- [Task management](hr-task-mgmt.md)
+- [Leave and absence](hr-leave-and-absence-overview.md)
+- [Benefits]
+- [Benefits management](hr-benefits-management-overview.md)
+- [Compensation management](hr-compensation-overview.md)
+- [Employee development](hr-develop-performance-management-overview.md)
+- [Learning](hr-learning-courses.md)
+- [Workflow system]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+
 
 Human Resources connects people and operations data to help you optimize workforce costs and take care of your employees.
 
-## What's new
+## Dynamics 365 Finance
 
-[What's new or changed in Human Resources](hr-admin-whats-new.md)
-
-## Administrator Guide
-
-- [Overview](hr-admin-overview.md)</br>
-- [System requirements](hr-admin-system-requirements.md)</br>
-- [Set up and manage instances](hr-admin-setup-provision.md)</br>
-- [Set up data integration](hr-admin-integration-choose-technology.md)</br>
-- [Configure data management](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
-- [Manage features](hr-admin-manage-features.md)</br>
-- [Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
-- [Human Resources app in Teams](hr-admin-teams-leave-app.md)</br>
-- [Prepare for go-live](hr-admin-go-live-prepare.md)</br>
-- [Go-live FAQ](hr-admin-go-live-faq.md)</br>
-- [Documentation resources](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-- [Troubleshoot Human Resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
-
-## Developer Guide
-
-- [Overview](hr-developer-overview.md)</br>
-- [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)</br>
-- [Human Resources entities in Dataverse](hr-developer-entities.md)</br>
-- [Custom fields](hr-developer-custom-fields.md)</br>
-- [Dataverse tables](hr-developer-entities.md)</br>
-- [Set up data integration](hr-admin-integration-choose-technology.md)</br>
-- [Troubleshoot development with Dataverse virtual tables](hr-developer-optimize-virtual-table-queries.md)</br>
-- [Entity API reference](hr-developer-api-authentication.md)</br>
-- [ATS integration API](hr-admin-integration-ats-api-introduction.md)</br>
-- [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)
-
-## User Guide
-
-- [Overview](hr-hrpro-overview.md)</br>
-- [Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
-- [Set up Human Resources](hr-setup-parameters.md)</br>
-- [Configure organization settings](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
-- [Manage personnel](hr-personnel-departments-jobs-positions.md)</br>
-- [Set up compensation plans](hr-compensation-overview.md)</br>
-- [Manage benefits](hr-benefits-management-overview.md)</br>
-- [Manage leave and absence](hr-leave-and-absence-overview.md)</br>
-- [Manage leave requests in Teams](hr-teams-leave-app.md)</br>
-- [Develop employees](hr-develop-performance-management-overview.md)</br>
-- [Create courses](hr-learning-courses.md)</br>
-- [Set up Employee and Manager self service](hr-employee-manager-self-service-overview.md)
+For more information about Dynamics 365 Finance, go to [Finance home page](../finance/index.md)
 
 ## Additional resources
 
