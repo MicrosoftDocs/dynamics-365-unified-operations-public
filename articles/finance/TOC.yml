@@ -3242,6 +3242,8 @@
               href: localizations/rus-purchases-on-commission.md
             - name: Sales on commission
               href: localizations/rus-sales-on-commission.md
+          - name: Local reports and primary forms in Accounts receivable and Accounts payable
+              href: localizations/rus-local-reports-and-primary-forms-in-accounts-receivable-and-accounts-payable.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
