@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-01-21
 
 # Uninstall dual-write application orchestration solutions
 
-Often we are observing some customers are installing DW package without the need and understanding about Dual Write and then ran into issues as expected. For those customers- they should uninstall the solutions and proceed only after evaluation of DW and going through the documentation. Here is sequence of solution uninstallation
+Few customers unintentionally install dual-write application orchestration package which installs mutliple solutions in their Dataverse environment. As a result, they run into undesired issues. Here is the sequence in which they should uninstall the solutions. 
 
 + Dynamics365FinanceAndOperationsAnchor_managed
 + msdyn_OneFSSCM_managed (if present)
@@ -31,7 +31,7 @@ Often we are observing some customers are installing DW package without the need
 + msdyn_AssetCommon_managed
 + FieldServiceCommon_managed
 
-If Party/GAB solutions were installed, then below is the uninstall order
+If Party and global address book solutions were installed, then here is the uninstallation order
 + Dynamics365FinanceAndOperationsAnchor
 + Dynamics365FinanceAndOperationsDualWriteEntityMaps
 + msdyn_DualWriteCore
