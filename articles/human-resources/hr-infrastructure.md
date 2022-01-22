@@ -71,7 +71,6 @@ The merge will provide consistency for Human Resources users in the following wa
 
 | Feature name | Overview | 
 |--------------|----------| 
-| Advanced access | Access to employees is limited based on legal entity. | 
 | Delete employment | You can delete an employment of an employee. | 
 | Job families | You can track a group of jobs that involve similar work, and that require similar training, skills, knowledge, and expertise. | 
 | Additional employment fields | The following fields were added: **Employment category**, **Employment type**, and **Employment status**. | 
