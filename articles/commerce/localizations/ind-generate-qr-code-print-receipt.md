@@ -4,7 +4,7 @@
 title: Generate QR codes and print them on receipts for India
 description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 author: prabhatb2011
-ms.date: 01/17/2022
+ms.date: 01/23/2022
 ms.topic: article
 ms.prod:
 ms.technology:
