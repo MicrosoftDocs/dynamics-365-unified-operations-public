@@ -100,7 +100,6 @@ Follow these steps to handle the new custom receipt field for a QR code.
 - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
 - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
 - Microsoft.Dynamics.Commerce.Runtime.Localization.Data.Services.Messages
-- Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages
 ```
 
 # [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
