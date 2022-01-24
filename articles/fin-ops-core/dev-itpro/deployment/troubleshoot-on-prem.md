@@ -1656,7 +1656,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 
 ## Deployment fails on version 10.0.21 and later
 
-**Issue:** The deployment fails with the following error:
+**Issue:** The deployment fails with the following error.
 
 ```stacktrace
 System.AggregateException: One or more errors occurred. ---> 
