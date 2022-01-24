@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.19
 
 Message processor messages are used when running cloud and edge scale units for [manufacturing workloads](cloud-edge-workload-manufacturing.md) and [warehouse management workloads](cloud-edge-workload-warehousing.md).
 
-A large amount of data is exchanged between the hub and scale unit deployment environments to keep them in sync and a part of the data exchanges will trigger additional logic to get processed by the *message processor*. You can view the messages processed by the message processor by going to **System administration > Message processor > Message processor messages**.
+The hub and scale unit deployment environments exchange a large amount of data to keep in sync. Some of the exchanged data will trigger additional logic in the *message processor*. You can view the messages processed by the message processor by going to **System administration > Message processor > Message processor messages**.
 
 ## Message grid columns and filters
 

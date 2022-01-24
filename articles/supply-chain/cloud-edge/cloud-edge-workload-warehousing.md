@@ -39,17 +39,18 @@ Warehouse management workloads enable cloud and edge scale units to run selected
 
 ## Prerequisites
 
+Before you start to work with the warehouse management workload, your system must be prepared as described in this section.
+
+### Deploy a scale unit with the warehouse management workload
+
 You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Scale units in a distributed hybrid topology](cloud-edge-landing-page.md).
 
-You must as well manually turn on a couple of features in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if it's required in the **Feature management** workspace. The features are listed in the following way:
+### Turn on required features in feature management
 
-- **Module:** *Warehouse management*
-- **Feature name:** *Decouple putaway work from ASNs*
+Use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on each of the following features (both of which are listed under the *Warehouse management* module):
 
-and
-
-- **Module:** *Warehouse management*
-- **Feature name:** *(Preview) Scale unit support for inbound and outbound warehouse orders*
+- *Decouple putaway work from ASNs*
+- *(Preview) Scale unit support for inbound and outbound warehouse orders*
 
 ## How the warehouse execution workload works on scale units
 
@@ -118,20 +119,23 @@ This following diagram shows the inbound flow, and indicates where the individua
 
 ## Production control
 
-The warehouse management work load supports the following three flows for production on the Warehouse Management app:
+The warehouse management workload supports the following three flows for production on the Warehouse Management app:
 
 - Report as finished and put away
 - Start production order
 - Register material consumption
 
 ### Report as finished and put away
-The worker can use the **Report as finished and put away** flow on the Warehouse Management app to report as finished a production or batch order. Reporting as finished co- and by products on a batch order is also supported. When reporting as finished, warehouse work of type put away is generated on the scale unit. If put away work is not required the work policies can be configured to omit it. 
+
+Workers can use the **Report as finished and put away** flow on the Warehouse Management app to report a production or batch order as finished. The can also report as finished co- and by-products on a batch order. When a job is reported as finished, the system normally generates putaway warehouse work on the scale unit. If you don't require putaway work, you can set up your work policies to omit it.
 
 ### Start production order
-The worker can use the **Start production order** flow on the Warehouse Management app to register start on a production or batch order. 
+
+Workers can use the **Start production order** flow on the Warehouse Management app to register the start of a production or batch order.
 
 ### Register material consumption
-The worker can use the **Register material consumption** flow on the Warehouse Management app to report material consumption on a production or batch order. In this case, a picking list journal will be created for the repored material on the production or batch order on the scale unit. The journal lines will make a physical reservation on the consumed inventory. A picking list journal is generated and posted on the hub instance when data is syncronized between the scale unit and the hub. 
+
+Workers can use the **Register material consumption** flow on the Warehouse Management app to report material consumption for a production or batch order. In this case, a picking list journal will be created for the reported material on the production or batch order on the scale unit. The journal lines will make a physical reservation on the consumed inventory. A picking list journal is generated and posted on the hub instance when data is synchronized between the scale unit and the hub.
 
 ## Supported processes and roles
 
@@ -171,18 +175,19 @@ The following types of work can be created on a scale unit and can therefore be 
 - **Co-product and by-product put away** – After report-as-finished production process.
 <!-- - **Packed container picking** - After manual packing station processing. -->
 
-No other types of source-documents processing or warehouse work are currently supported on scale units. For example, for a warehouse execution workload on a scale unit, you can't perform a sales return  order receiving process (Return orders); instead, this must be processed by the hub instance.
+No other types of source-document processing or warehouse work are currently supported on scale units. For example, when running against a warehouse execution workload on a scale unit, you can't process return orders using the sales return order receiving process. Instead, this must be processed by the hub instance.
 
 > [!NOTE]
 > Mobile device menu items and buttons for unsupported functionalities aren't shown in the _Warehouse Management mobile app_ when it is connected to a scale unit deployment.
-For more information about how to setup the _Warehouse Management mobile app_, see [Setup Warehouse Management mobile app for cloud and edge scale unit workloads](cloud-edge-workload-setup-warehouse-app.md).
-> 
+>
+> A few extra steps are required to set up the Warehouse Management mobile app to work against a cloud or edge scale unit. For details, see [Configure the Warehouse Management mobile app for cloud and edge scale units](cloud-edge-workload-setup-warehouse-app.md).
+>
 > When you run a workload on a scale unit, you can't run unsupported processes for that specific warehouse on the hub. The tables provided later in this topic document the supported capabilities.
 >
 > Selected warehouse work types can be created both on the hub and on scale units, but can only be maintained by the owning hub or scale unit (the deployment which created the data).
 >
 > Even when a specific process is scale unit supported, be aware that all the needed data might not get synchronized from the hub to the scale unit, or from the scale unit to the hub, which risks resulting in unexpected system processing. Examples of this scenario include:
-> 
+>
 > - If you use a location directive query that joins a data table record that only exists at the hub deployment.
 > - If you use location status and/or location volumetric load functionalities. This data will not get synchronized between the deployments and will therefore only work when updating location inventory on-hand on one of the deployments.
 
@@ -202,18 +207,16 @@ The following warehouse management functionality isn't currently supported for s
 - Processing with catch-weight items.
 - Processing with items only enabled for Transportation management (TMS).
 - Processing with negative on-hand inventory.
-- Cross-company data sharing for products.
-<!-- Planned --> 
+- Cross-company data sharing for products. <!-- Planned -->
 - Warehouse work processing with shipment notes.
 - Warehouse work processing with material handling/warehouse automation.
 - Product master data images (for example, on the Warehouse Management mobile app).
 
-
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads on a scale unit, and also isn't supported on the hub or on the scale unit workload.
-> 
+>
 > Other capabilities can get processed on both, but will require careful use in some scenarios, such as when inventory on-hand gets updated for the same warehouse on both the hub and scale unit due to the asynchronous data update process.
-> 
+>
 > Specific functionalities (such as *block work*), which are supported on both the hub and scale units, will only be supported for the owner of the data.
 
 ### Outbound (supported only for sales and transfer orders)
@@ -347,16 +350,19 @@ The following table summarizes which warehouse management production scenarios a
 
 Several batch jobs run on both the hub and scale units.
 
-On the hub deployment, you can manually maintain the batch jobs. You can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Back-office workload management**:
-- Scale unit to hub message processor
-- Register source order receipts
-- Complete warehouse orders
- 
-**Warehouse management \> Periodic tasks \> Workload management**:
-- Warehouse hub to scale unit message processor
-- Process warehouse order line receipts for warehouse receipt posting
+On the hub deployment, you can manually maintain the batch jobs shown in the following lists.
 
-On the workload in scale units, you can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
+- Manage the following batch jobs at **Warehouse management \> Periodic tasks \> Back-office workload management**:
+    - Scale unit to hub message processor
+    - Register source order receipts
+    - Complete warehouse orders
+
+- Manage the following batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
+    - Warehouse hub to scale unit message processor
+    - Process warehouse order line receipts for warehouse receipt posting
+
+On scale unit deployments, you can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
+
 - Process wave table records
 - Warehouse hub to scale unit message processor
 - Process warehouse order line receipts for warehouse receipt posting
