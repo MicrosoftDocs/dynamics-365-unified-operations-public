@@ -71,7 +71,7 @@ To edit the estimate for multiple implementation projects, follow these steps:
 
 ### Why isn't the **Configure** button for deploying a production environment available, even though there is an active estimate? And why does a warning message appear in the Action Center on the project dashboard?
 
-If you have multiple implementation projects, the **Configure** button might not be enabled and a warning message will appear in the Action Center regarding an insufficient number of licenses. With the Edit estimate function, you can  edit an active subscription estimate within the Subscription Estimator tool to apply the desired license allocation for that project.
+If you have multiple implementation projects, the **Configure** button might not be enabled and a warning message will appear in the Action center regarding an insufficient number of licenses. With the **Edit estimate** option, you can  edit an active subscription estimate within the Subscription estimator tool to apply the desired license allocation for that project.
 
 ### Why does an error occur when I mark an estimate as **Active**?
 
@@ -83,14 +83,14 @@ This error occurs if transaction lines that are entered aren't within the limits
 
 ### How can I update my subscription if my production environment is deployed?
 
-The [Subscription estimator](subscription-estimator.md) is a required step before requesting production. Although you can have multiple estimates, one estimate must be marked as  **Active**. The active subscription estimate is used to size the production environment. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. To edit an active subscription estimate, select the Edit estimate function within the Subscription Estimator tool to update your license allocation.
+The [Subscription estimator](subscription-estimator.md) is a required step before requesting production. Although you can have multiple estimates, one estimate must be marked as  **Active**. The active subscription estimate is used to size the production environment. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. To edit an active subscription estimate, select the **Edit estimate** option within the Subscription estimator tool to update your license allocation.
 
 ### What should I do to activate my subscription estimate if I have multiple projects in the same tenant?
 
-When you are implementing several projects in the same tenant, a warning indicating "*subscription estimate is not complete*" may appear in the Action Center of LCS. This error will indicate that the total number of estimated users for all implementation projects should not exceed the number of purchased licenses. This may happen if the sum of users on the active subscription estimates is superior to the tenant license count of the same type. To edit active subscription estimate, select the Edit estimate function within the Subscription Estimator tool to update your license allocation.
+When you are implementing several projects in the same tenant, a warning indicating "*subscription estimate is not complete*" may appear in the Action center of LCS. This error will indicate that the total number of estimated users for all implementation projects should not exceed the number of purchased licenses. This may happen if the sum of users on the active subscription estimates is superior to the tenant license count of the same type. To edit the active subscription estimate, select the **Edit estimate** option within the Subscription estimator tool to update your license allocation.
 
 > [!NOTE]
-> FastTrack Solutions architects are not involved in uploading or updating the Subscription Estimator. If you identify any warnings regarding the Subscription Estimator in LCS, follow the instructions in this topic. If you continue to have issues, contact Microsoft Support.
+> FastTrack solutions architects are not involved in uploading or updating the Subscription estimator. If you identify any warnings regarding the Subscription estimator in LCS, follow the instructions in this topic. If you continue to have issues, contact Microsoft Support.
 
 If you receive any other error message or encounter other issues, create a support request, and attach your active estimate so that the Support team can address the issue.
 
