@@ -27,6 +27,6 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-For more information about OIOUBL electronic invoices, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+For more information about OIOUBL electronic invoices, see [OIOUBL electronic invoices](../emea-dnk-e-invoices.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
