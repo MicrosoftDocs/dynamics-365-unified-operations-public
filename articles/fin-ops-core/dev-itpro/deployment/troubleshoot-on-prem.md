@@ -4,7 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -1664,8 +1664,8 @@ LocalAgentCommon.LocalAgentInvalidOperationException: Unable to convert the topo
 Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: F. Path
 ```
 
-**Reason:** The configuration generation method has been changed in version 10.0.21.
+**Reason:** The configuration generation method was changed in version 10.0.21.
 
-**Resolution:**  To be able to generate the new configuration you must upgrade to at least local agent 2.7.0. However, it is recommended to upgrade to the latest version available.
+**Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommended that you upgrade to the latest version available.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
