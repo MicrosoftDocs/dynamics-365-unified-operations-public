@@ -121,9 +121,9 @@ Some manufacturers, especially in process industries, use batch orders to manage
 
 When a worker completes or partially completes a job on a batch order, they can report good or scrap quantities for each product that is defined as output for the order. Products that are defined as output for a batch order can be of the *Formula*, *Co-product*, or *By-product* type.
 
-To report good quantities on the products, a worker selects a job on the **Active jobs** tab and then selects **Report progress**.
+To report good quantities on the products, a worker selects a job on the **Active jobs** tab and then selects **Report progress**.
 
-Then, in the **Report progress** dialog box, the worker can select among the products that are defined as output for the batch order to report on. The worker can select one or many products in the list, and then select **Report progress**. For each product, the quantity is blank by default, and the worker can use the numeric keyboard to enter the quantity. The worker can use the **Previous** and **Next** buttons to move between the selected products. After the quantity is entered for each product, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
+Then, in the **Report progress** dialog box, the worker can select among the products that are defined as output for the batch order to report on. The worker can select one or many products in the list, and then select **Report progress**. For each product, the quantity is blank by default, and the worker can use the numeric keyboard to enter the quantity. The worker can use the **Previous** and **Next** buttons to move between the selected products. After the quantity is entered for each product, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
 
 ![Report co-products and by-products.](media/report-co-by-products.png "Report co-products and by-products")
 
@@ -145,55 +145,59 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ## Adjust material consumption and make material reservations
 
-Workers can adjust material consumption for each production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was higher or lower than planned, and therefore needs to be adjusted to keep the inventory levels current. Workers can also make reservations on materials batch and serial numbers. This is used in scenarios where the worker manually needs to specify which material batch or serial numbers were consumed to ensure material traceability requirements. Workers can specify the quantity to adjust by selecting the **Adjust material** button, which is available at the following locations:
+Workers can adjust material consumption for each production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current.
 
-- **Report scrap** dialog
-- **Report progress** dialog
-- Right-side tool bar
+Workers can also make reservations on the batch and serial numbers of materials. This functionality is used in scenarios where a worker must manually specify which material batch or serial numbers were consumed, to meet material traceability requirements.
 
-### Adjust material consumption from the Report scrap and Report progress dialogs
+Workers can specify the quantity to adjust by selecting **Adjust material**. This button is available in the following locations:
 
-When the worker has entered the quantity to report in the **Report progress** or **Report scrap** dialog, the button **Adjust material** is enabled. When the button is selected, the **Adjust material** dialog opens. The dialog lists the items that are planned to be consumed when reporting the good or scrapped quantity for the job.
+- In the **Report scrap** dialog box
+- In the **Report progress** dialog box
+- On the toolbar on the right
 
-The list shows following information:
+### Adjust material consumption from the Report scrap and Report progress dialog boxes
 
-- **Product number** – Product master and product variant.
-- **Product name** – Name of the product.
-- **Proposal** – Estimated quantity of material to be consumed when progress or scrap is reported for the specified quantity for the job.
-- **Consumption** – Actual quantity of material to be consumed when progress or scrap is reported for the specified quantity for the job.
+After a worker enters the quantity to report in the **Report progress** or **Report scrap** dialog box, the **Adjust material** button becomes available. When the user selects this button, the **Adjust material** dialog box appears. This dialog box lists the items that are planned to be consumed when the good or scrapped quantity is reported for the job.
+
+The list in the dialog box shows the following information:
+
+- **Product number** – The product master and product variant.
+- **Product name** – The name of the product.
+- **Proposal** – The estimated quantity of material that will be consumed when progress or scrap is reported for the specified quantity for the job.
+- **Consumption** – The actual quantity of material that will be consumed when progress or scrap is reported for the specified quantity for the job.
 - **Reserved** – The quantity of material that has been physical reserved in inventory.
-- **Unit** – The bill of material unit.
+- **Unit** – The bill of materials (BOM) unit.
 
-The right side of the dialog shows following information:
+The right side of the dialog box shows following information:
 
-- **Product number** - Product master and product variant.
+- **Product number** – The product master and product variant.
 - **Estimated** – The estimated quantity to consume.
 - **Started** – The quantity that has been started on the production job.
-- **Remaining quantity** – The quantity that remains to be consumed compared to what has been estimated.
+- **Remaining quantity** – Of the estimated quantity, the quantity that remains to be consumed.
 - **Released quantity** – The quantity that has been consumed.
 
-Workers are able to do the following here:
+The following actions can be performed:
 
-- The worker can specify the quantity to adjust for a material by selecting the **Adjust consumption** button. After the quantity has been confirmed, the quantity in the **Consumption** column is updated with the adjusted quantity.
-- When the worker selects the **Adjust material** button, a production picking list journal is created. This journal contains the same items and quantities as the **Adjust material** list.
-- When the worker adjusts a quantity in the **Adjust material** dialog, the field **Proposal** on the corresponding journal line is updated with the same quantity. If the **Cancel** button is selected in the **Adjust material** dialog, the picking list is deleted.
-- If the worker selects the **OK** button, the picking list is not deleted, but will be posted when the job is reported in the **Report scrap** or **Report progress** dialog.
-- If the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog, the picking list will be deleted.
+- The worker can specify the quantity to adjust for a material by selecting **Adjust consumption**. After the quantity is confirmed, the quantity in the **Consumption** column is updated with the adjusted quantity.
+- When the worker selects **Adjust material**, a production picking list journal is created. This journal contains the same items and quantities as the **Adjust material** list.
+- When the worker adjusts a quantity in the **Adjust material** dialog box, the **Proposal** field on the corresponding journal line is updated with the same quantity. If the worker selects **Cancel** in the **Adjust material** dialog box, the picking list is deleted.
+- If the worker selects **OK**, the picking list isn't deleted. It will be posted when the job is reported in the **Report scrap** or **Report progress** dialog box.
+- If the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box, the picking list is deleted.
 
-### Adjust material from the right-side tool bar
+### Adjust material from the toolbar on the right
 
-The **Adjust material** button can be configured to appear in the right-side tool bar (see also [Design the production floor execution interface](production-floor-execution-tabs.md)). The worker can select the **Adjust material** button for a production job that is in progress. In this case, the **Adjust material** dialog opens, where the worker can make the desired adjustments. When the dialog is opened, a production picking list containing lines for the adjusted quantities is created for the production order. If the worker selects the **Post now** button, the adjustment is confirmed, and the picking list is posted. If the worker selects the **Cancel** button, the picking list is deleted, and no adjustment will be made.
+The **Adjust material** button can be configured so that it appears on the toolbar on the right. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
 
 ### Reserve materials
 
-In the **Adjust material** dialog, the worker can make and adjust material reservations. This is done from the **Reserve material** dialog, which is opened from the **Reserve material** button. The dialog shows the physically available inventory for the item for each storage and tracking dimension. 
+In the **Adjust material** dialog box, a worker can make and adjust material reservations by selecting **Reserve material**. The **Reserve material** dialog box that appears shows the physically available inventory for the item for each storage and tracking dimension. 
 
-If the material is enabled for the advanced warehouse processes, only the physically available inventory for the production input location for the material is shown in the list. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physical available batch and serial numbers will be shown. The worker can specify a quantity to reserve by selecting the **Reserve material** button and remove an existing reservation by selecting the **Remove reservation** button.
+If the material is enabled for the advanced warehouse processes, the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch and serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
 
-You can read more about how to set up the production input location in the blog post [Setting up the production input location](https://docs.microsoft.com/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+For more information about how to set up the production input location, see the following blog post: [Setting up the production input location](https://docs.microsoft.com/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 
 > [!NOTE]
-> Reservations made by the worker in the **Reserve material** dialog will remain when the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog.
+> Reservations that a worker makes in the **Reserve material** dialog box will remain when the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box.
 
 ## Completing a job and starting a new job
 
