@@ -51,6 +51,10 @@ A Tier-2 environment (multi-box) is required to preview Finance insights. For ba
 
 This topic applies to Microsoft Dynamics 365 Finance version 10.0.21 and later.
 
+### License requirements
+
+Finance insights uses AI Builder credits to create financial predictions, all necessary licenses for this usage are included with the tenant license. Each Dynamics 365 Finance tenant is provided 20,000 AI Builder credits each month. If additional credits are required for business needs they can be purchased directly from AI Builder.
+
 ### Historical data requirements
 
 At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the Customer payment predictions feature. Three years of historical data are recommended for cash flow forecasts. Three years of historical budget and/or actuals are recommended for intelligent budget proposals.
