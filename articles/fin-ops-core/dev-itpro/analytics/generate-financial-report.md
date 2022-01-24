@@ -33,9 +33,22 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic provides information about generating a financial report.
 
-To generate a report, open the report definition and then select the **Generate** button on the toolbar. The **Report Queue Status** page will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
+To generate a report, open the report definition and then select the **Generate** button on the toolbar. The **Report Queue Status** page will open and indicate the location of your report in the queue.
 
-The following options are available for generating reports:
+As the report generation progresses, the following report queue status indicators may be visible in the **Report Queue Status** page: 
+
+| Status          | State | Description|
+|-----------------|--------|--------------------|
+| Queueing        | Interim |The report definition is being validated before the report can be put in generation queue                    |
+| Queued          | Interim | The report enters the report generation queue, waiting to be processed                      |
+| Processing      | Interim | The report is processing. This state typically follows the Queued state and usually transitions to a final state when processing is complete       |
+| PostProcessing | Interim | The report is post-processing. This state follows the Processing state and indicates that all report data are collected, but that derivative actions, such as calculation and rollup, are being performed            |
+| Cancelling      | Interim | The reporting is cancelling at the user's request. This state results from a user-requested cancellation for a report in either the Queued or Processing state. The system will then attempt to put the  in the Cancelled state, unless the system is too far along and must finalize it in another state|
+| Canceled        | Final | The report is done processing but did not complete due to a user-requested abort            |
+| Completed       | Final | The report is ready for use                      |
+| Failed          | Final | The report is done processing but did not complete due to a user-requested abort |
+
+By default, the generated report will open in the Web Viewer. The following options are available for generating reports:
 
 - Set up a schedule to generate a report or group of reports automatically
 - Check for missing accounts or data in a report, and validate the accuracy of a report
