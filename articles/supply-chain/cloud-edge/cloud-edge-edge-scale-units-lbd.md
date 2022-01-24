@@ -25,7 +25,7 @@ This topic describes how to set up an on-premises LBD environment as an edge sca
 
 ## Infrastructure considerations
 
-Edge scale units run on on-premises environments, so the infrastructure requirements are quite similar. However, there are certain differences that should be pointed out:
+Edge scale units run on on-premises environments, so the infrastructure requirements are quite similar. However, there are certain differences that should be noted:
 
 - Edge scale units do not use Financial Reporting, so they do not require Financial Reporting nodes.
 - The manufacturing and warehousing workloads are not compute-intensive, so consider sizing your compute power for AOS nodes accordingly.
