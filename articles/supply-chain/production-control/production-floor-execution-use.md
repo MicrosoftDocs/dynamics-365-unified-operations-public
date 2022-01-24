@@ -4,7 +4,7 @@
 title: How workers use the production floor execution interface
 description: This topic describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
+ms.dyn365.ops.version: 10.0.24
 ---
 
 # How workers use the production floor execution interface
@@ -145,43 +145,55 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ## Adjust material consumption and make material reservations
 
-A worker can adjust material consumption for a production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was higher or lower than planned, and therefore needs to be adjusted to keep the inventory levels current. The worker can also make reservations on materials batch and serial numbers. This is used in scenarios where the worker manually needs to specify which material batch or serial numbers that were consumed to ensure material traceability requirements. The worker can specify the quantity to adjust by selecting the **Adjust material** button from the following three places:
+Workers can adjust material consumption for each production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was higher or lower than planned, and therefore needs to be adjusted to keep the inventory levels current. Workers can also make reservations on materials batch and serial numbers. This is used in scenarios where the worker manually needs to specify which material batch or serial numbers were consumed to ensure material traceability requirements. Workers can specify the quantity to adjust by selecting the **Adjust material** button, which is available at the following locations:
 
-- Report scrap dialog
-- Report progress dialog
-- Right tool bar
+- **Report scrap** dialog
+- **Report progress** dialog
+- Right-side tool bar
 
-### Adjust material consumption from the Report scrap and Report progress dialog**
-When the worker has entered the quantity to report in the **Report progress** or **Report scrap** dialog, the button **Adjust material** is enabled. When the button is selected, the **Adjust material** dialog is opened. The dialog shows the list of items that are planned to be consumed when reporting the good or scrapped quantity for the job. The list has following information:
+### Adjust material consumption from the Report scrap and Report progress dialogs
 
--	**Product number** – Product master and product variant
-- **Product name** – Name of product
-- **Proposal** – Estimated quantity of material to be consumed when progress or scrap is reported for the specified quantity for the job. 
-- **Consumption** – Actual quantity of material to be consumed when progress or scrap is reported for the specified quantity for the job. 
-- **Reserved** – The quantity of material that has been physical reserved in inventory. 
-- **Unit** – The BOM unit 
+When the worker has entered the quantity to report in the **Report progress** or **Report scrap** dialog, the button **Adjust material** is enabled. When the button is selected, the **Adjust material** dialog opens. The dialog lists the items that are planned to be consumed when reporting the good or scrapped quantity for the job.
 
-The right side of the dialog has following information
-- **Product number** - Product master and product variant
-- **Estimated** – The estimated quantity to consume
+The list shows following information:
+
+- **Product number** – Product master and product variant.
+- **Product name** – Name of the product.
+- **Proposal** – Estimated quantity of material to be consumed when progress or scrap is reported for the specified quantity for the job.
+- **Consumption** – Actual quantity of material to be consumed when progress or scrap is reported for the specified quantity for the job.
+- **Reserved** – The quantity of material that has been physical reserved in inventory.
+- **Unit** – The bill of material unit.
+
+The right side of the dialog shows following information:
+
+- **Product number** - Product master and product variant.
+- **Estimated** – The estimated quantity to consume.
 - **Started** – The quantity that has been started on the production job.
 - **Remaining quantity** – The quantity that remains to be consumed compared to what has been estimated.
 - **Released quantity** – The quantity that has been consumed.
 
-The worker can specify the quantity to adjust for a material by selecting the **Adjust consumption** button. After the quantity has been confirmed, the quantity in the **Consumption** column is updated with the adjusted quantity. 
+Workers are able to do the following here:
 
-When the **Adjust material** button is selected, a production picking list journal is created. This journal contains the same items and quantities as the **Adjust material** list. When the worker adjusts a quantity in the **Adjust material** dialog, the field **Proposal** on the corresponding journal line is updated with the same quantity. If the **Cancel** button is select in the **Adjust material** dialog, the picking list is deleted. If the **OK** button is selected, the picking list is not deleted, but will be posted when the job is reported in the **Report scrap** or **Report progress** dialog. If the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog, the picking list will be deleted.
+- The worker can specify the quantity to adjust for a material by selecting the **Adjust consumption** button. After the quantity has been confirmed, the quantity in the **Consumption** column is updated with the adjusted quantity.
+- When the worker selects the **Adjust material** button, a production picking list journal is created. This journal contains the same items and quantities as the **Adjust material** list.
+- When the worker adjusts a quantity in the **Adjust material** dialog, the field **Proposal** on the corresponding journal line is updated with the same quantity. If the **Cancel** button is selected in the **Adjust material** dialog, the picking list is deleted.
+- If the worker selects the **OK** button, the picking list is not deleted, but will be posted when the job is reported in the **Report scrap** or **Report progress** dialog.
+- If the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog, the picking list will be deleted.
 
-### Adjust material from the right tool bar
-The **Adjust material** button can be configured to appear in the right tool bar. Read more about how to configure the production floor interface here: https://docs.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-floor-execution-tabs. The worker can select the **Adjust material** button for a production job that is in progress. In this case the **Adjust material** dialog is opened where the worker can make the desired adjustments. When the dialog is opened, a production picking list is created for the production order containing lines for the adjusted quantities. If the worker selects the **Post now** button, the adjustment is confirmed, and the picking list is posted. If the worker selects the **Cancel** button, the picking list is deleted, and no adjustment will be made.
+### Adjust material from the right-side tool bar
+
+The **Adjust material** button can be configured to appear in the right-side tool bar (see also [Design the production floor execution interface](production-floor-execution-tabs.md)). The worker can select the **Adjust material** button for a production job that is in progress. In this case, the **Adjust material** dialog opens, where the worker can make the desired adjustments. When the dialog is opened, a production picking list containing lines for the adjusted quantities is created for the production order. If the worker selects the **Post now** button, the adjustment is confirmed, and the picking list is posted. If the worker selects the **Cancel** button, the picking list is deleted, and no adjustment will be made.
 
 ### Reserve materials
 
-In the **Adjust material** dialog, the worker can make and adjust material reservations. This is done from the **Reserve material** dialog opened from the **Reserve material** button. The dialog shows the physical available inventory for the item per storage and tracking dimension. If the material is enabled for the advanced warehouse processes, only the physical availably inventory for the production input location for the material is shown in the list. The production input location is defined on the resource where the production job is planned. Read more about how to setup the production input location here: https://docs.microsoft.com/en-us/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production. If the item number is batch or serial number controlled, the full list of physical available batch and serial numbers will be shown. The worker can specify a quantity to reserve by selecting the **Reserve material** button and remove an existing reservation by selecting the **Remove reservation** button. 
+In the **Adjust material** dialog, the worker can make and adjust material reservations. This is done from the **Reserve material** dialog, which is opened from the **Reserve material** button. The dialog shows the physically available inventory for the item for each storage and tracking dimension. 
+
+If the material is enabled for the advanced warehouse processes, only the physically available inventory for the production input location for the material is shown in the list. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physical available batch and serial numbers will be shown. The worker can specify a quantity to reserve by selecting the **Reserve material** button and remove an existing reservation by selecting the **Remove reservation** button.
+
+You can read more about how to set up the production input location in the blog post [Setting up the production input location](https://docs.microsoft.com/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 
 > [!NOTE]
-> Reservations made by the worker in the **Reserve matrerial** dialog will remain when the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog. 
-
+> Reservations made by the worker in the **Reserve material** dialog will remain when the worker selects the **Cancel** button in the **Report progress** or **Report scrap** dialog.
 
 ## Completing a job and starting a new job
 
