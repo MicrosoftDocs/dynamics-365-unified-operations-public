@@ -80,7 +80,7 @@ After the allocation has been determined, use the [Subscription estimator](../..
 
 ## Online deployments in China sovereign cloud
 
-If your implementation includes China deployment/rollout, Dynamics 365 Finance online deployment will be available in mainland China starting in April 2019. For more information, see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China. The services include a physically separated instance of a cloud service with a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
+If your implementation includes China deployment/rollout, please see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China. The services include a physically separated instance of a cloud service with a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
 
 This is a single organization in multiple clouds with different tenant (Azure Active Directory). The advantages and disadvantages of multiple Lifecycle Services projects or production environments described above are still applicable, but the licensing requirements and requesting procedures are different. Work with your Microsoft account executive or your implementation partners for any process assistance.
 
