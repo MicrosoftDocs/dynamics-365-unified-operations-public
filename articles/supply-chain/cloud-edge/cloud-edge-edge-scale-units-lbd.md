@@ -2,7 +2,7 @@
 title: Deploy edge scale units on custom hardware using LBD
 description: This topic explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User, Developer, IT Pro
@@ -25,10 +25,10 @@ This topic describes how to set up an on-premises LBD environment as an edge sca
 
 ## Infrastructure considerations
 
-Edge scale units run on top of local business data (LBD) environments so the infrastructure requirements are quite similar. However, there are certain differences that should be pointed out:
+Edge scale units run on on-premises environments, so the infrastructure requirements are quite similar. However, there are certain differences that should be pointed out:
 
-1. Edge scale units do not use Financial Reporting and as such do not require financial reporting nodes.
-1. The manufacturing and warehousing workloads are not compute intensive so consider sizing your compute power for AOS nodes accordingly.
+- Edge scale units do not use Financial Reporting, so they do not require Financial Reporting nodes.
+- The manufacturing and warehousing workloads are not compute-intensive, so consider sizing your compute power for AOS nodes accordingly.
 
 ## Deployment overview
 
