@@ -4,7 +4,7 @@
 title: Subscription estimator in Lifecycle Services (LCS)
 description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS).
 author: angelmarshall
-ms.date: 01/21/2022
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,15 +51,21 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 
 To edit the estimate for multiple implementation projects, follow these steps:
 
-1. Visit the Subscription Estimator tool for each implementation project. Edit the active subscription estimate to apply the license allocation for each project.
+1. Go to the Subscription estimator tool for each implementation project. Edit the active subscription estimate to apply the license allocation for each project.
 2. A subscription estimate can be edited in the Subscription estimator tool by selecting an estimate and then selecting the **Edit estimate** button.
+
     [![Subscription estimator edit button](./media/SubscriptionEstimatorWithEdit.jpg)](./media/SubscriptionEstimatorWithEdit.jpg)
+    
 3. Enter the license count for each type of Finance and Operations license in the dialog box. By default, every subscription estimate will be created with the full count of all purchased licenses assigned to it. Customers cannot allocate more than the total number of licenses to a single estimate and cannot reduce the allocated amount to less than the minimum required by the Dynamics 365 Licensing policy.
+
     [![Subscription estimator edit dialog](./media/SubscriptionEstimatorEditDialog.jpg)](./media/SubscriptionEstimatorEditDialog.jpg)
-4. Select **Save**. Read and agree to the warning information.  
+    
+4. Select **Save**. Read and agree to the warning information. 
+ 
     [![Subscription estimator active edit warning](./media/SubscriptionEstimatorEditDialogWarning.jpg)](./media/SubscriptionEstimatorEditDialogWarning.jpg)
 
-[!NOTE] Although you can have multiple estimates, one estimate must be marked as Active. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. Any further changes to the active estimate or marking a new estimate as active may cause the production environment to be resized.
+> [!NOTE] 
+> Although you can have multiple estimates, one estimate must be marked as Active. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. Any further changes to the active estimate or marking a new estimate as active, may cause the production environment to be resized.
 
 ## Frequently asked questions
 
