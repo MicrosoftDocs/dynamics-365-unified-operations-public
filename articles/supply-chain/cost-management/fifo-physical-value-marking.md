@@ -44,18 +44,20 @@ When you use FIFO, you don’t have to use the FIFO rule. Instead, you can mark 
 ## FIFO without the Include physical value option
 In this example, the item model group isn't marked to include physical value. The illustration that follows shows these transactions:
 
--   1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
--   1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
--   2a. Inventory physical receipt for a quantity of 2 at a cost of USD 10.00 each.
--   2b. Inventory financial receipt for a quantity of 2 at a cost of USD 10.00 each.
--   3a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
--   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
--   4b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
--   5a. Inventory physical issue for a quantity of 1 at a cost price of USD 20.00 each (running average of financially updated transactions).
--   5b. Inventory financial issue for a quantity of 1 at a cost price of USD 15.00 each (running average of financially updated transactions).
--   6. Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt. An adjustment of USD –5.00 will be made on the issue transaction.
+- 1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
+- 1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
+- 2a. Inventory physical receipt for a quantity of 1 at a cost of USD 20.00 each.
+- 2b. Inventory financial receipt for a quantity of 1 at a cost of USD 22.00 each.
+- 3a. Inventory physical issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+- 3b. Inventory financial issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+- 4a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
+- 5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
+- 5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
+- 6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (financial running avg)
+- 7. Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlements is created between 1b and 3b. An adjustment of USD –6.00 USD will be made to 3b.
+![image](https://user-images.githubusercontent.com/65380460/150860334-49b51219-4e36-4cfd-aba5-e4ab3016bc2d.png)
 
-The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
+- The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
 
 ![FIFO without Include Physical Value.](./media/fifowithoutincludephysicalvalue.gif) 
 
