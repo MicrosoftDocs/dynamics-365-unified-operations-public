@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title:  Configure the Warehouse Management mobile app for cloud and edge scale units
-description: This topic explains how to set up your Warehouse Management mobile apps for warehouses served bu a cloud or edge scale unit.
+title: Configure the Warehouse Management mobile app for cloud and edge scale units
+description: This topic explains how to set up your Warehouse Management mobile apps for warehouses that are served by a cloud or edge scale unit.
 
 author: perlynne
 ms.date: 12/15/2021
@@ -31,17 +31,17 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up your Warehouse Management mobile apps for use at warehouses served by a cloud or edge scale unit.
+This topic explains how to set up your Warehouse Management mobile apps so that they can be used at warehouses that are served by a cloud or edge scale unit.
 
 ## Prerequisites
 
-Before you start to set up your mobile devices to connect to a cloud or edge scale unit, confirm that they can connect to the enterprise hub by following the instructions provided in [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
+Before you start to set up your mobile devices to connect to a cloud or edge scale unit, confirm that they can connect to the enterprise hub. For instructions, see [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md).
 
-## Additional setup when running the Warehouse Management mobile app against a scale unit
+## Additional setup when you run the Warehouse Management mobile app against a scale unit
 
-As part of the [warehouse scale unit workload deployment process](cloud-edge-landing-page.md#scale-unit-manager-portal), most of the data needed to connect your Warehouse Management mobile app devices will automatically get synchronized from the enterprise hub to the scale unit. But you will also need to record the **Azure Active Directory applications** data on the scale unit deployment and you might need to update the default **Company** value for the **User ID** (or create a new user). Users associated with a company that doesn't exist on a scale unit deployment won't be able sign in when the Warehouse Management mobile app is connected to that scale unit.
+As part of the [deployment process for warehouse scale unit workloads](cloud-edge-landing-page.md#scale-unit-manager-portal), most of the data that is required to connect your Warehouse Management mobile app devices is automatically synced from the enterprise hub to the scale unit. However, you must record the **Azure Active Directory applications** data on the scale unit deployment. Additionally, you might have to update the default **Company** value for the user ID or create a new user. Users that are associated with a company that doesn't exist on a scale unit deployment won't be able sign in when the Warehouse Management mobile app is connected to that scale unit.
 
 > [!NOTE]
-> Because the **Azure Active Directory applications** data is not synchronized, you must manually maintain this data if you want to move your warehouse workloads to another scale unit.
+> Because the **Azure Active Directory applications** data isn't synced, you must manually maintain this data if you want to move your warehouse workloads to another scale unit.
 
-Remember that, as part of the Warehouse Management mobile app connection setup, the **Azure AD resource** must be against the scale unit rather than the enterprise hub.
+Remember that, as part of the setup of the Warehouse Management mobile app connection, the **Azure AD resource** must be against the scale unit instead of the enterprise hub.
