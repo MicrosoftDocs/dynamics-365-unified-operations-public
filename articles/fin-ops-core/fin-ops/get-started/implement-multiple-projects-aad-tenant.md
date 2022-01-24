@@ -4,7 +4,7 @@
 title: Multiple LCS projects and environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
-ms.date: 01/21/2022
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -76,12 +76,12 @@ Create a new additional implementation project in your existing organization usi
 
 Determine how you want to assign licenses across the implementation projects in your organization in order to ensure that the number of licenses assigned across all projects does not exceed the total license count purchased by the customer.
 
-After the allocation has been determined, use the [Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project and edit the active subscription estimate to apply the desired license allocation for that project.  
+After the allocation has been determined, use the [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project and edit the active subscription estimate to apply the desired license allocation for that project.  
 
 ## Online deployments in China sovereign cloud
 
 If your implementation includes China deployment/rollout, Dynamics 365 Finance online deployment will be available in mainland China starting in April 2019. For more information, see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China. The services include a physically separated instance of a cloud service with a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
 
-This is a single organization in multiple clouds with different tenant (Azure Active Directory). The advantages and disadvantages of multiple Lifecycle Services projects or production environments described above are still applicable, but the licensing requirements and requesting procedures are different. Work with your Microsoft Account Executive or your implementation partners for any process assistance.
+This is a single organization in multiple clouds with different tenant (Azure Active Directory). The advantages and disadvantages of multiple Lifecycle Services projects or production environments described above are still applicable, but the licensing requirements and requesting procedures are different. Work with your Microsoft account executive or your implementation partners for any process assistance.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
