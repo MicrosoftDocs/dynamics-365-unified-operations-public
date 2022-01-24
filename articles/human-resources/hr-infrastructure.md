@@ -58,7 +58,7 @@ The merge will provide consistency for Human Resources users in the following wa
     | Print performance reviews | You can print performance reviews in PDF format. | Generally available | 
     | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. | Generally available | 
     | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. | Generally available | 
-    | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. | Generally available | 
+    | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. | Preview | 
     | Task Management\* | You can create checklists and tasks for the onboarding, offboarding, and transition process. | Preview | 
     | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. | Preview | 
     | Human resources user experience enhancements | See the table in the next section.  | Preview | 
