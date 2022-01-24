@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.15
 >
 > Some business functionality isn't fully supported in the public preview when workload scale units are used.
 >
-> You can't run a preview manufacturing execution workload on the same scale unit as a warehouse execution workflow.
+> You can't run the preview manufacturing execution workload on a scale unit that also has the warehouse execution workload installed.
 
 In manufacturing execution, scale units deliver the following capabilities:
 
@@ -140,19 +140,16 @@ In the current release, report as finished and putaway operations (for finished 
 In the current release, the start operation for production and batch orders is supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when connected to a scale unit, you must do the following:
 
 - Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Enable the *Start production order on warehouse management workload for the cloud and edge scale unit* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Use the Warehouse Management mobile app to start the production or batch order.
-
-<!-- KFM: Any feature management needed? -->
 
 ## Enable and use material consumption on a scale unit
 
 In the current release, the flow on the Warehouse Management mobile app for registering material consumption is supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when connected to a scale unit, you must do the following:
 
 - Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Enable the *Register material consumption on the mobile app on a scale unit* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Use the Warehouse Management mobile app to register material consumption.
-
-<!-- KFM: Any feature management needed? -->
-
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
