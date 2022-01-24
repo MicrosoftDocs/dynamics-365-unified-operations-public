@@ -104,6 +104,9 @@ After the add-in is successfully installed, it might take up to an hour before y
 
    After the **Insights provisioning status check** process is successfully run, you can enable Finance insights features in the **Feature management** workspace.
 
+> [!NOTE]
+> If Insights provisioning status change process does not run go to **System administration \> Inquiries \> Batch jobs** find the **Process automation polling system** and if the status is set to **Withhold**, chang it to **Waiting** to initiate this process. 
+> 
 ## Feedback and support
 
 If you're interested in providing feedback, or if you need support, send email to [Finance insights (Preview)](mailto:fiap@microsoft.com).
