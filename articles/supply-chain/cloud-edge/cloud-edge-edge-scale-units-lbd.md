@@ -23,6 +23,13 @@ Edge scale units can be deployed by creating a local business data (LBD) [on-pre
 
 This topic describes how to set up an on-premises LBD environment as an edge scale unit and then associate it with a hub.
 
+## Infrastructure considerations
+
+Edge scale units run on top of local business data (LBD) environments so the infrastructure requirements are quite similar. However, there are certain differences that should be pointed out:
+
+1. Edge scale units do not use Financial Reporting and as such do not require financial reporting nodes.
+1. The manufacturing and warehousing workloads are not compute intensive so consider sizing your compute power for AOS nodes accordingly.
+
 ## Deployment overview
 
 Here is an overview of the deployment steps.

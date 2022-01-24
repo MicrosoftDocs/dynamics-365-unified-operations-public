@@ -75,6 +75,7 @@ Active Directory Federation Services (AD FS) is a server role that can be instal
 > - AD FS on Windows Server 2016 only supports authentication through the Azure Active Directory Authentication Library (ADAL).
 > - In order to uptake the upcoming migration to the Microsoft Authentication Library, you need to deploy your AD FS on Windows Server 2019 
 > (MSAL). For more information, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
+> - After July 1st 2022, any customers still using AD FS on Windows Server 2016 will no longer be able to use the Office-addins. This is irrespective of the Microsoft Dynamics 365 Finance + Operations (on-premises) version that they are running.
 
 ## Minimum Azure Service Fabric runtime
 
@@ -82,6 +83,7 @@ Your Service Fabric cluster should always be on a supported version according to
 
 | Minimum version            | Required since |
 |----------------------------|----------------|
+| Service Fabric runtime 8.0 | 10.0.26        |
 | Service Fabric runtime 7.2 | 10.0.17        |
 | Service Fabric runtime 7.1 | 10.0.14        |
 
