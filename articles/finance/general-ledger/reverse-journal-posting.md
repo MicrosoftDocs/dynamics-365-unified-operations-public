@@ -3,7 +3,7 @@
 
 title: Reverse journal posting
 description: This topic describes capabilities that allows you to reverse vouchers from the voucher transaction list or from financial journals.  
-author: MikeFalkner
+author: kweekley
 ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 

@@ -90,7 +90,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **setUtcString()** method. Developers should be using the **setUtcDateTime()** method instead. |
 
-### Blacklist report (IT) – Feature reference IT-00001
+### Blocklist report (IT) – Feature reference IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

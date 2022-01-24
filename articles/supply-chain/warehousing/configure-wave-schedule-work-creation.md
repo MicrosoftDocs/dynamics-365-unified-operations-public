@@ -40,7 +40,7 @@ When the functionality is enabled, planned work will automatically get created, 
 
 To use the features described in this topic, they must be turned on for your system. Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the following features in the following order:
 
-1. **Organization-wide work blocking** - Required for both manual and automatic configuration of scheduled work creation.
+1. **Organization-wide work blocking** - Required for both manual and automatic configuration of scheduled work creation. (As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again.)
 1. **Schedule work creation** - Required for both manual and automatic configuration of scheduled work creation.
 1. **Organization-wide "Schedule work creation" wave method** - Required for automatic configuration of scheduled work creation. You don't need this feature if you will only use manual configuration.
 
@@ -61,7 +61,7 @@ The existing task and wave processing configurations will also be kept for all l
 If necessary, you can manually revert any or all of the settings made automatically when you enabled the *Organization-wide Schedule work creation wave method* feature by doing the following:
 
 - For wave templates, go to **Warehouse management \> Setup \> Waves \> Wave templates**. Replace *Schedule work creation* method with *Create work*.
-- For warehouse parameters, go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**.
+- For warehouse parameters, go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**.
 - For the wave methods, go to **Warehouse management \> Setup \> Waves \> Wave process methods**. Select `WHSScheduleWorkCreationWaveStepMethod` and, on the Action Pane, select **Task configuration**. Modify or delete the number of batch tasks and the assigned wave group for each listed warehouse as needed.
 
 ## Manually configure scheduled work creation
@@ -72,7 +72,7 @@ If you didn't enable the [*Organization-wide "Schedule work creation" wave metho
 
 To take advantage of a parallel asynchronous method to create warehouse work, your wave process must be running in batch. To set this up:
 
-1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
+1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. On the **General** tab, set **Process waves in batch** to *Yes*. Optionally, you can also select a dedicated **Wave processing batch group** to prevent your batch queue processing from running at the same time as other processes.
 1. Set the **Wait for lock (ms) time**, which applies when the system is processing several waves at the same time. For most larger waving processes, we recommend a value of *60000*.
 
@@ -80,8 +80,8 @@ To take advantage of a parallel asynchronous method to create warehouse work, yo
 
 Start by creating the new wave step method and enabling it for parallel asynchronous task processing.
 
-1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
-1. Select **Regenerate method** and note that *WHSScheduleWorkCreationWaveStepMethod* has been added to the list of wave process methods you can use in your shipping wave templates.
+1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
+1. Select **Regenerate method** and note that *WHSScheduleWorkCreationWaveStepMethod* has been added to the list of wave process methods you can use in your shipping wave templates.
 1. Select the record with the **Method name** *WHSScheduleWorkCreationWaveStepMethod* and select **Task configuration**.
 1. To add a new row to the grid, select **New** on the Action Pane and use the following settings:
 
@@ -91,7 +91,7 @@ Start by creating the new wave step method and enabling it for parallel asynchro
 
 Now you are ready to update an existing wave template (or create a new one) to use the *Schedule work creation* wave processing method.
 
-1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
+1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
 1. Select **Edit** on the Action Pane.
 1. In the list pane, select the wave template you would like to update (if you are testing using demo data, then you could use *24 Shipping default*).
 1. Expand the **Methods** FastTab and select the row with the **Name** *Schedule work creation* in the **Remaining methods** grid.

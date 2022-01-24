@@ -3,7 +3,7 @@
 
 title: Customer transactions list page
 description: This topic provides information about the Customer transactions list page for Microsoft Dynamics 365 Finance.
-author: mikefalkner
+author: abruer
 ms.date: 08/28/2018
 ms.topic: article
 ms.prod: 

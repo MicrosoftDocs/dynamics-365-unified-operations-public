@@ -120,7 +120,6 @@ The following list of business documents are controlled by the feature, **Route 
 - Purchase order purchase inquiry
 - Sales order confirmation
 - Collections letter note
-- Customer account statement
 - Interest note
 - Vendor payment advice
 - Request for quotation

@@ -4,7 +4,7 @@
 title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -224,6 +224,9 @@ If saved views aren't enabled, follow these steps to copy a personalization.
 ### Export and import views or personalizations
 
 Another way to share personalizations is via export and import. Individual users, or an admin who acts on their behalf, can use this method to export their personalizations or views, and then give the exported file to other users to import. Alternatively, users can give their exported personalizations to a user who has admin privileges, and that user can then use the **Personalization** administration page to apply the personalization file to many users at the same time.
+
+> [!IMPORTANT]
+> As personalizations persist across updates, re-importing all personalizations after a service update or at any other time is unnecessary and highly discouraged.   
 
 #### Export
 

@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,6 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
@@ -56,10 +55,11 @@ To create a new document type, follow these steps.
 
 ## Configure SharePoint storage
 
-Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future. 
+Microsoft SharePoint Online is one of the storage locations that is supported natively. On-premises SharePoint (a local SharePoint server) is not currently supported. 
 
 > [!IMPORTANT]
-> SharePoint storage is only available in Microsoft-managed environments.
+> -  SharePoint storage is only available in Microsoft-managed environments.
+> -  SharePoint managed device policies are incompatible with an integration to Finance and Operations apps
 
 To use SharePoint storage, set the **Location** field for a document type to **SharePoint**. Then, in the **SharePoint Address** field, enter a valid SharePoint address.
 
@@ -82,6 +82,8 @@ SharePoint communication works for the current user only if the following condit
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
 - The SharePoint site is configured to **Allow this site to appear in search results**.
+- The SharePoint site does not use managed device policies. 
+    -  If managed device policies are enabled on the SharePoint instance, the Finance and Operations SharePoint integration will no longer work, meaning users will not be able to download, view, or create documents stored in SharePoint from Finance and Operations. 
 - The user has access to the folder that the document is stored in.
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
@@ -240,7 +242,7 @@ The following APIs from the `DocumentManagement` class allow developers to speci
 
 If this file content type is not specified correctly, the attached document may not behave as expected. For this reason, if you use these APIs you should consider one of the following courses of action:  
 
--  Pass **null** for the `_fileContentType` parameter in any of the preceeding APIs. Doing so allows the correct content type to be inferred from the file name. 
+-  Pass **null** for the `_fileContentType` parameter in any of the preceding APIs. Doing so allows the correct content type to be inferred from the file name. 
 -  Switch to using one of the following methods that doesn't include a `_fileContentType` parameter. This is to avoid the possibility of passing incorrect file content types.
     -  **attachFileForRecord()**, which replaces attachFileToCommon()
     -  **attachFileForReference()**, which replaces attachFile()

@@ -4,8 +4,8 @@
 title: Business events overview
 description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
 author: Sunil-Garg
-ms.date: 04/22/2021
-ms.topic: article
+ms.date: 11/09/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.custom: "intro-internal"
+
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
 ms.author: sunilg
@@ -77,82 +77,6 @@ The number of endpoints that can subscribe to the same business event in a legal
 
 The out-of-the-box default settings for the above described parameters can be restored on the **Business events parameters** page.
 
-## Managing endpoints
-
-Endpoints let you manage the destinations for sending business events to. The following types of endpoints are currently supported. Endpoints can be created for these messaging and event brokers out of the box.
-
-- Azure Service Bus Queue
-- Azure Service Bus Topic
-- Azure Event Grid
-- Azure Event Hub
-- HTTPS
-- Microsoft Power Automate
-
-Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
-
-The Azure-based endpoints must be in the customer's Azure subscription. For example, if Event Grid is used as an endpoint, the endpoint must be in the customer's Azure subscription.
-
-The application doesn't provision the endpoints. It just sends events to the endpoints that are provided. Customer might incur additional costs if they use these endpoints in their Azure subscription.
-
-![Business events endpoint.](../media/businesseventsendpoint.png)
-
-### Create an Azure Service Bus Queue endpoint
-
-To create a new endpoint, select **New**. Then, in the **Endpoint type** field, select the appropriate endpoint type. To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**.
-
-![To create an endpoint to a Service Bus queue, select **Azure Service Bus Queue**.](../media/businesseventsnewendpoint1.png)
-
-Select **Next**, and specify the name of the endpoint and the Service Bus queue. In addition, you must set up Azure Key Vault to provide the secret to the Azure messaging resource. You must also set up the Azure Active Directory (Azure AD) application ID and application secret.
-
-![Specify the name of the endpoint and the Service Bus queue.](../media/businesseventsnewendpoint2.png)
-
-In the **Queue Name** field, enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure.  
-
-![Enter the **Azure Service Bus Queue** name that you created in the Azure Service Bus Queue configuration in Azure.](../media/BusinessEventsSBQueueName.PNG)
-
-In the **Azure Active Directory application ID** field, enter the application ID that is created in Azure AD in the Azure portal.
-
-![Enter the application ID that is created in Azure AD in the Azure portal.](../media/businesseventsaad1.png)
-
-In the **Azure application secret** field, enter the secret value for the application.
-
-![Enter the secret value for the application.](../media/businesseventsaad2.png)
-
-In the **Key vault DNS name** field, enter the name from your Key Vault setup.
-
-![Enter the name from your Key Vault setup.](../media/businesseventskeyvault1.png)
-
-In the **Key vault secret name** field, enter the secret name for the endpoint resource that must be created in Key Vault.
-
-![Enter the secret name for the endpoint resource that must be created in Key Vault.](../media/businesseventskeyvault2.png)
-
-The **Key Vault Secret** value, in Azure, will be the Azure Service Bus **Primary Connection String** value. This value is found in the Azure Service Bus that you configured in **Shared Access Policies > RootManagedSharedAccessKey**.
-
-![Business events Azure Key Vault key value.](../media/BusinessEventsKVSValue.PNG)
-
-> [!IMPORTANT]
-> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
-
-### Create an Azure Service Bus Topic endpoint
-
-To create an endpoint to a Service Bus topic, select **New**, and then, in the **Endpoint type** field, select **Azure Service Bus Topic**. The **Topic name** field must be set to the name of the Service Bus topic. Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint.
-
-### Create an Azure Event Grid endpoint
-
-To create an endpoint, you need to create and configure an **Azure Event Grid Topic** in Azure Portal, and then create an endpoint to the Event Grid Topic in the **Business Events Workspace**. Go to the **Endpoints** tab, select **New**, and then select **Azure Event Grid** as the **Endpoint type**. In the **Endpoint URL** field, enter the URL from the **Azure Event Grid Topic**. This is the **Topic Endpoint** value in the **Overview** section of your Event Grid Topic.
-
-> [!IMPORTANT]
-> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
-
-![Business events Event Grid Endpoint value.](../media/BusinessEventsEGTopicsEndpoint.PNG)
-
-Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.  The Event Grid Credential can be found under the Event Grid you created in the **Access Keys** section under Settings. 
-
-![Business events Event Grid credentials value.](../media/BusinessEventsEGKeyValue.PNG)
-
-After you've created the endpoints that you require, the next step is to activate the business events.
-
-
 ## Activating business events
 
 Business events in the business event catalog aren't active by default. From the catalog, you can activate any business events that you require. Select one or more business events, and then select **Activate**.
@@ -161,7 +85,7 @@ Business events in the business event catalog aren't active by default. From the
 
 Business events can be activated either in all legal entities or in specific legal entities. If you leave the **Legal entity** field blank, the selected business events will be activated in *all* legal entities. If a business event is required only for specific legal entities, it must be configured separately for each legal entity.
 
-Endpoints must be assigned to the business events that are activated.
+Endpoints must be assigned to the business events that are activated. See [Manage business event endpoints](managing-business-event-endpoints.md) for additional information on setting up and managing endpoints.
 
 When business events occur as business processes are run, the system will do outbound processing only for business events that have been activated.
 

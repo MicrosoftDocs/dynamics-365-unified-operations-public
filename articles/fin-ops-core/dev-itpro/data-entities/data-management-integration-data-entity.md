@@ -5,7 +5,7 @@ title: Data management and integration by using data entities overview
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: peakerbl
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

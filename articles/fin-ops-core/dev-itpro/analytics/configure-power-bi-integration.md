@@ -3,8 +3,8 @@
 
 title: Configure PowerBI.com integration
 description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com.
-author: MilindaV2
-ms.date: 07/22/2021
+author: RichdiMSFT
+ms.date: 01/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: PowerBIConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: milindav
+ms.author: RICHDI
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -63,8 +63,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
     - **Name** – Enter the name of your app.
     - **Supported account types** – Enter only accounts that are directly in this organization (single tenant).
     - **Application type** – Enter **Web**.
-    - **Redirect URI** – Enter the base URL of your client, such as `https://contosoax7.cloud.dynamics.com`.
-
+    - **Redirect URI** – Enter the base URL of your client with **oauth** appended to the end, such as `https://contosoax7.cloud.dynamics.com/oauth`.
     
 4. Select **Register**.
 5. Copy the **Application (client) ID** value. You will use this value to connect to the PowerBI.com service.
@@ -73,8 +72,12 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
     > Be sure to capture the **Application (client) ID** value.
 
 6. Select **Manage** \> **API permissions** \> **Add a permission** \> **Microsoft APIs** \> **Power BI Service**.
-7. Select **Select Delegated permissions**.
-8. Enable the following permissions:
+
+    > [!NOTE] 
+    > For Government Community Cloud, instead of selecting **Power BI Service**, search for and select **Microsoft Power BI Government Community Cloud** in the **APIs my organization uses** tab.
+
+8. Select **Select Delegated permissions**.
+9. Enable the following permissions:
 
     - **Content**
 

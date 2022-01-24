@@ -2,10 +2,10 @@
 title: Debug POS extensions
 description: This topic explains how to debug Point of Sale (POS) extensions.
 author: mugunthanm
-ms.date: 04/13/2021
+ms.date: 01/04/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020
@@ -22,8 +22,8 @@ This topic explains how to debug Point of Sale (POS) extensions. It applies to v
 
 Follow these steps to debug your extension.
 
-1. Install Sealed Modern POS (MPOS) on the development machine by using the Sealed MPOS installer.
-2. Install the Universal Windows Platform (UWP) app by selecting the shortcut on the desktop.
+1. Install Sealed Modern POS (MPOS) on the development machine by using the Sealed MPOS installer. The **Modern POS (SEALED)** installer can be downloaded from  https://lcs.dynamics.com/V2/SharedAssetLibrary > Retail Self-service package section.
+2. After installing the **Modern POS (SEALED)** installer, a desktop shortcut icon will be created to Install or Update POS Universal Windows Platform (UWP) app. Double click the **Install or update Retail Modern POS** icon on the desktop to install the UWP app. This previous deploys the required backend components and installs the UWP app.
 3. In Microsoft Visual Studio, build your MPOS extension package project (the JavaScript project file \[.jsproj file\]).
 4. Deploy your MPOS extension package. In Solution Explorer, select and hold (or right-click) the MPOS .jsproj file, and then select **Deploy**.
 5. Open POS so that the debugger is attached:

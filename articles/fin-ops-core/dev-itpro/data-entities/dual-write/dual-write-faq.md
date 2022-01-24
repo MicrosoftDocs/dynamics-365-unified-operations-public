@@ -1,13 +1,13 @@
 ---
 title: Dual-write FAQ
 description: This topic answers frequently asked questions about dual-write.
-author: robinarh
+author: tonyafehr
 ms.date: 07/21/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -127,6 +127,10 @@ Dual-write supports mappings only between cross-company tables or company-specif
 You can make Dataverse custom tables company-specific by adding a many-to-one (N:1) relationship between your custom tables and the out-of-box company table. You should also include the company foreign key as part of the table key. For more information, see [Company concept in Dataverse](company-data.md).
 
 To enable table maps for dual-write, you must define an alternate key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app. For more information, see [Criteria for linking tables](enable-entity-map.md#criteria-for-linking).
+
+### Can I merge records in customer engagement apps while using dual-write?
+
+No, Finance and Operations apps do not permit the merging of records. Because of this, the merge functionality in customer engagement apps will not execute when a dual-write mapping is present on a table.
 
 ### Is there a document about best practices for table usage? Should I use Customers V2, Customers V3, or Customer Details? What is the difference between these tables, and what is the use case for each?
 

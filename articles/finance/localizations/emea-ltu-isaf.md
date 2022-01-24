@@ -4,7 +4,7 @@
 title: i.SAF reporting for Lithuania
 description: This topic explains how to set up and work with the i.SAF report for legal entities in Lithuania.
 author: LizaGolub
-ms.date: 03/22/2021
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -219,12 +219,16 @@ After the data entities are imported into the database, complete the following s
 
 ## Set up security roles for electronic message processing
 
-Different groups of users might require access to **i.SAF** precessing. You can limit access to the processing, based on security groups that are defined in the system.
+Different groups of users might require access to **i.SAF** processing. You can limit access to the processing, based on security groups that are defined in the system.
 
 Complete the following steps to limit access to the **i.SAF** processing.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
 2. Select the **i.SAF** processing, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
+
+## Set up the VAT registration number for the company that is reporting i.SAF
+
+The system retrieves the VAT registration number of the company that is reporting i.SAF from the registration ID that is defined in the properties of the legal entity. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories). The tax registration type must be assigned to the **VAT ID** tax registration category. For a more detailed walkthrough of the prerequisites for VAT ID registration, see [Set up VAT ID](tasks/eur-00015-vat-id.md).
 
 ## Collect data for the i.SAF report
 

@@ -5,7 +5,7 @@ title: Germany overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
 author: ShylaThompson
 ms.date: 05/12/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Germany
 # ms.search.industry: 
 ms.author: roschlom
@@ -41,6 +41,9 @@ This topic includes information and links to resources that should be considered
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
 -   [Depreciation adjustments for additional acquisitions in the second year](tasks/de-00002-depreciation.md)
 -   [Intrastat](emea-deu-intrastat.md)
+
+## VAT declaration 
+-   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
 
 ## Electronic transmission of VAT declaration (ELSTER)
 - [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)

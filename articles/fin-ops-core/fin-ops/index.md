@@ -3,7 +3,7 @@
 
 title: Finance and Operations application documentation
 description: Documentation for Finance and Operations apps. 
-author: robinarh
+author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: DefaultDashboard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

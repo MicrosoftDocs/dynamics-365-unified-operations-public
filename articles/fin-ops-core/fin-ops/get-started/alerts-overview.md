@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Alerts overview
+title: Alerts overview (contains video)
 description: This topic provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
 author: RichdiMSFT
 ms.date: 09/04/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry:
 ms.author: richdi

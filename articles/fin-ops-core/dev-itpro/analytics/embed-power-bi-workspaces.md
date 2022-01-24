@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Analytical Workspaces (using Power BI Embedded)
+title: Analytical Workspaces (using Power BI Embedded) (contains video)
 description: This topic describes how you can use Power BI to deliver rich, interactive reports seamlessly integrated into application workspaces.
 author: RichdiMSFT
 ms.date: 07/23/2019

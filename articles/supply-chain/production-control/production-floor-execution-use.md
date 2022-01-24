@@ -115,8 +115,6 @@ When a worker completes or partially completes a job, they can report good quant
 
 ## Reporting good quantities on batch orders that have co-products and by-products
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
-
 Workers can use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
 
 Some manufacturers, especially in process industries, use batch orders to manage their production processes. Batch orders are created from formulas, and those formulas can be defined so that they have co-products and by-products as output. When feedback about those batch orders is reported, the amount of output must be registered on the formula item, and also on the co-products and by-products.

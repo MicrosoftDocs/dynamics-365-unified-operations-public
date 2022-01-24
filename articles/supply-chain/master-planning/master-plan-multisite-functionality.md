@@ -5,7 +5,7 @@ title: Master planning and multisite functionality overview
 description: Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 author: ChristianRytt
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

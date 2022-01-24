@@ -4,8 +4,8 @@
 title: Indonesia overview
 description: This topic provides an overview of functionality that is specific to Indonesia.
 author: sndray
-ms.date: 10/20/2021
-ms.topic: article
+ms.date: 12/09/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kfend
 # ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Indonesia
 # ms.search.industry: 
 ms.author: sndray
@@ -33,6 +33,8 @@ ms.dyn365.ops.version: 10.0.20
 This topic includes information and links to documentation resources for Indonesia.
 
 - [VAT declaration for Indonesia](apac-idn-ppn-declaration.md)
+- [Invoicing for Indonesia (ID-00002)](apac-idn-invoicing.md)
+- [Withholding tax report for Indonesia](apac-idn-wht-declaration.md)
 
 ## Additional resources
 
