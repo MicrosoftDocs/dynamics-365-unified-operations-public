@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure SharePoint connection
-description: This topic provides description of the process of installation Electronic invoicing Add-in in LCS.
+description: This topic provides information about how to install the Electronic invoicing Add-in in Lifecycle services.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -10,66 +10,65 @@ ms.prod:
 ms.technology: 
 
 # optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: dkalyuzh
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
+
 ---
 
 # Configure SharePoint connection
 
 [!include [banner](../includes/banner.md)]
 
-Electronic invoicing service can read files from SharePoint folders, and upload files to it.
-To make sure Electronic invoicing can access SharePoint site, you should provide credentials to the Electronic invoicing service. To make sure the credentials are stored securely, you should provide them not directly, but store in Azure Key Vault, and provide Key Vault secret instead.
+The Electronic invoicing service can read files from SharePoint folders, and upload files to SharePoint.
+To make sure Electronic invoicing can access a specific SharePoint site, provide the site credentials to the Electronic invoicing service. To make sure the credentials are stored securely, don't provide them directly. Instead, store them in the Azure Key Vault, and provide a Key Vault secret instead.
 
-## Grant an access to SharePoint folder
-1. Create an App registration in the tenant where RCS is installed to:
+## Grant access to a SharePoint folder
+1. Create an App registration in the tenant where the Regulatory configuraion service (RCS) is installed.
     
-    a. Go to Azure portal (https://portal.azure.com/)
-    
-    b. Navigate to **App registrations**
-		
-    c. Select **New registration**, enter a name (i.e. "SharePoint App for Electronic Invoicing") and complete registration
-		
-    d. Select the created **App Registration**
-		
-    e. Go to **Authentication** tab and enable **Allow public client flows** setting
-		
-    f. Go to **Certificates & secrets** tab and create a new client secret by selecting **New client secret** button
+    1. In the [Azure portal](https://portal.azure.com/), go to **App registrations**.
+    2. Select **New registration**, enter a name, such as **SharePoint App for Electronic Invoicing**, and then complete the registration
+    3. Select the app registration you created and on the **Authentication** tab, enable **Allow public client flows**.
+    4. On the **Certificates & secrets** tab, create a new client secret by selecting **New client secret**.
 		  
-      - Do not use one App Registration for different services
+      - Don't use one App registration for different services.
+      - Follow the [Password policy recommendations](/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide)		
+      - Set up a rotation of the passwords. Create a new client secret for the App registration and update the Key Vault. Then delete the old secret.
+		
+    5. Copy the value of the created secret.
+    
+2. Save the **App Registration secret** and **Application (client) ID** as two new secrets in the Azure Key Vault in your Electronic Invoicing environment setup.
+3. Add the secrets you created to the Key Vault parameters in the RCS Electronic Invoicing environment setup.
+4. Grant access to SharePoint in the Azure portal. This step should be performed by the Tenant administrator.
+		
+   1. Select the created App registration and on the **API permissions** tab, select **Add a permission**.
+   2. Select **Microsoft graph (Application permissions)** > **Sites.Selected**.
+   3. Select **Grant admin consent for …**.
+   4. Make sure permissions are granted by reviewing the status.
       
-      - Follow Password policy recommendations (https://docs.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide)
-			
-      - Setup rotation of the passwords (create new client secret for the App Registration and update the Key Vault, then delete the old secret)
-		
-    g. Copy value of the created secret
-    
-2. Save ***App Registration secret*** and ***Application (client) ID*** as two new secrets in Azure Key vault used in your Electronic Invoicing environments setup
-3. Add secrets created in step 2 to the Key Vault parameters in RCS Electronic Invoicing environments setup
-4. Grant access to SharePoint in Azure portal (this step should be performed by the Tenant administrator):
-		
-   a. Select the created **App Registration**
-    
-   b. Go to **API permissions** tab and select **Add a permission** button
-		
-   c. Select **Microsoft graph (Application permissions)** > **Sites.Selected**
-		
-   d. Press **Grant admin consent for …**
-		
-   e. Make sure permissions are granted by reviewing the status:
-		![Configured permissions page.](media/configured-permissions.jpg)
+      ![Configured permissions page.](media/configured-permissions.jpg)
 
     
-   f. Go to Graph Explorer - Microsoft Graph and log in
-		
-   g. In **Sample queries** section find **SharePoint Sites** > get SharePoint site based on relative path of the site
-		
-   h. Fill in _{host-name}_ and _{server-relative-path}_ parameters. i.e. _{host-name}_ = `<domain>.sharepoint.com`, _{server-relative-path}_ = `sites/<siteName>`
+   5. Log in to **Graph Explorer - Microsoft Graph**.
+   6. In the **Sample queries** section, locate **SharePoint Sites** and get the SharePoint site information based on relative path of the site.
+   7. Fill in _{host-name}_ and _{server-relative-path}_ parameters. i.e. _{host-name}_ = `<domain>.sharepoint.com`, _{server-relative-path}_ = `sites/<siteName>`
+      
+      > [!NOTE]
+      > For the default website live {server-relative-path} parameter empty.
 
-	> [!NOTE]
-	> For the Default website live {server-relative-path} parameter empty.
-
-   i. Select **Run query** and save the result.
-   
-   j. Configure a query:
+   8. Select **Run query** and save the result.
+   9. Configure the following query:
    
    `POST https://graph.microsoft.com/v1.0/sites/{site-id}/permissions` where *{site-id}* is the value of id node from the previous query response.
    
@@ -96,8 +95,7 @@ To make sure Electronic invoicing can access SharePoint site, you should provide
 		
    ![Configure SharePoint query.](media/app-id-query.jpg)
 		
-   k. In **Modify permissions** tab, select **Open the permissions panel** > select **Sites** > **Sites.FullControl.All** > **Consent**
-   
-   l. Select **Run query**
+   10. On the **Modify permissions** tab, select **Open the permissions panel** >  **Sites** > **Sites.FullControl.All** > **Consent**.
+   11. Select **Run query**
 		
-Now, Electronic invoicing service will have an access to your SharePoint.
+The Electronic invoicing service now has access to your SharePoint.
