@@ -49,19 +49,23 @@ These are highly technical modifications to the personalization subsystem that a
 ## View support
 The style of a form determines the level of support for views. 
 
--    Views include queries for forms, such as:
-     -    List pages
-     -    Simple lists
-     -    Grid portions of Master Details and Transaction Details forms
+-    Views include queries for these form types:
+     -    List pages (Design.Style = ListPage)
+     -    Simple lists (Design.Style = SimpleList)
+     -    Grid portions of Master Details and Transaction Details forms (Design.Style=ListPage)
+     -    Task single and Task double pages (Design.Style or Design.Pattern is TaskSingle or TaskDouble)
+          -  Starting in 10.0.25 / Platform update 49, the "Allow queries to be saved to views on Task Single and Task Double pages" feature adds query support to views defined on these form types.  
 
--    Views do not include queries, such as:
-     -    Any other full-page form
+-    Views do not include queries for these form types:
+     -    Any other full-page form not listed above
+     -    Workspaces
+          -  Starting in 10.0.25 / Platform update 49, the "Saved views support for workspaces" *preview* feature allows saved views to be defined and shared for both modeled and user-created workspaces.  
+     -    Dialogs
+          -  Starting in 10.0.25 / Platform update 49, the "Saved views support for dialogs" feature allows saved views to be defined and shared for dialog pages.  
      -    Details portions of Master Details and Transaction Details forms
 
--    Views that are not currently supported include:
+-    Views are not currently supported on these form types:
      -    Dashboards
-     -    Workspaces
-     -    Dialogs
      -    Secondary forms like drop-down dialogs, lookups, and enhanced previews
 
 ## Modifying forms to fully utilize views
