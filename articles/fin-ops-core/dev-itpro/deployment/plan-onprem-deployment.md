@@ -70,9 +70,9 @@ At a minimum, an on-premises sandbox environment requires:
 - 3 machines running Environment Orchestrator
 - 2 machines running Application Object Servers (AOS)
 - 1 machine running Management Reporter (MR)
-- 1 machine running SQL Server Reporting Services (SSRS)
+- 1 machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
 - 1 machine running Active Directory
-- 1 machine running SQL Server
+- 1 machine running SQL Server (Database Engine)
 
 ### Production environment
 The production environment is the live deployment that your users and customers have access to. To deploy a production environment, see [Set up and deploy on-premises environments home page](setup-deploy-on-premises-environments.md).
@@ -81,8 +81,8 @@ At a minimum, an on-premises production environment requires:
 - 3 machines running Environment Orchestrator
 - 3 machines running Application Object Servers (AOS)
 - 1 machine running Management Reporter (MR)
-- 1 machine running SQL Server Reporting Services (SSRS)
-- 2 or more machines running SQL Server
+- 1 machine running SQL Server Reporting Services (SSRS) with a local SQL Server (Database Engine)
+- 2 or more machines running SQL Server (Database Engine)
 - 2 or more machines running Active Directory
 
 ## Service Fabric
