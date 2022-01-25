@@ -52,7 +52,7 @@ One of the biggest performance hits to a web page can be the downloading of imag
 
 ## Validate 
 
-Use one or more of the following options to validate that image use has been optimized.
+Use the following method to validate that image use has been optimized.
 
 - **Description or Purpose**: Verify page performance.
 - **Steps to Run**:  Run performance tests before and after optimizing your images.
