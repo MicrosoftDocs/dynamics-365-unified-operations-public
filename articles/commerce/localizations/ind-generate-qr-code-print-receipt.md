@@ -82,7 +82,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
 
 1. Install the Retail software development kit (SDK). For more information, see [Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 2.  In the Retail SDK, create a C\# project.
-3.  In the new C\# project, add references to the following packages:
+3.  In the new C\# project, add references to the following packages per Commerce release:
 
 # [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
 
@@ -235,7 +235,7 @@ When using an OPOS printer, you may need to convert the QR code image from the *
 
 ## Samples of a CRT extension class for printing QR codes
 
-The following code blocks provide samples of CRT extension classes for printing QR codes, organized by Commerce version.
+The following code blocks provide samples of CRT extension classes for printing QR codes per Commerce release.
 
 # [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
 
