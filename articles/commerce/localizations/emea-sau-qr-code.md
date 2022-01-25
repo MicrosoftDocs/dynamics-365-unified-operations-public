@@ -206,7 +206,7 @@ You also need to copy the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReport
 
 ---
 
-1. Create an extension class:
+2. Create an extension class:
 
 # [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
 
@@ -496,9 +496,9 @@ namespace Contoso
 
 ---
 
-1. Build the extension.
-1. Copy the Contoso.Commerce.Runtime.QrCodeExtension.dll to the **\\Pkg\\bin\\Ext** folder under the Internet Information Services (IIS) Retail Server site location.
-1. Add the extension before all other extensions in the **CommerceRuntime.Ext.config** file in the same location:
+3. Build the extension.
+4. Copy the Contoso.Commerce.Runtime.QrCodeExtension.dll to the **\\Pkg\\bin\\Ext** folder under the Internet Information Services (IIS) Retail Server site location.
+5. Add the extension before all other extensions in the **CommerceRuntime.Ext.config** file in the same location:
 
     ```xml
     <add source="assembly" value="Contoso.Commerce.Runtime.QrCodeExtension" />
