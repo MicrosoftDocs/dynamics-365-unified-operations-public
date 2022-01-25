@@ -136,9 +136,9 @@ When using an OPOS printer, you may need to implement additional customizations 
 
 Follow these steps to create a new extension and add it to your environment:
 
-# [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
-
 1. Create a C# project:
+
+# [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -172,6 +172,7 @@ Follow these steps to create a new extension and add it to your environment:
   </ItemGroup>
 </Project>
 ```
+You also need to copy the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting.dll** from ??? to ???.
 
 # [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
 
