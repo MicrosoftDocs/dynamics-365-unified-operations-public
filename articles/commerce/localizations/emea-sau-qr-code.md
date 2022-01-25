@@ -136,183 +136,364 @@ When using an OPOS printer, you may need to implement additional customizations 
 
 Follow these steps to create a new extension and add it to your environment:
 
+# [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
+
 1. Create a C# project:
 
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-      <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
-      <Import Project="..\..\..\BuildTools\Common.props" />
-      <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+  <Import Project="..\..\..\BuildTools\Common.props" />
+  <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
 
-      <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <AssemblyName>$(AssemblyNamePrefix).Commerce.Runtime.QrCodeExtension</AssemblyName>
-        <RootNamespace>Contoso.Commerce.Runtime.QrCodeExtension</RootNamespace>
-        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-      </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>$(AssemblyNamePrefix).Commerce.Runtime.QrCodeExtension</AssemblyName>
+    <RootNamespace>Contoso.Commerce.Runtime.QrCodeExtension</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
 
-      <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+  <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
 
-      <ItemGroup>
-        <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Framework" Version="$(FrameworkRepoPackagesVersion)" />
-        <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
-        <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
-      </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Framework" Version="$(FrameworkRepoPackagesVersion)" />
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
 
-      <ItemGroup>
-        <Reference Include="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting">
-          <HintPath>..\..\..\..\..\nuget packages\microsoft.dynamics.commerce.runtime.electronicreporting.9.35.21321.4\lib\netstandard2.0\Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting.dll</HintPath>
-        </Reference>
-      </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting">
+      <HintPath>..\..\..\..\..\nuget packages\microsoft.dynamics.commerce.runtime.electronicreporting.9.35.21321.4\lib\netstandard2.0\Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
-      <ItemGroup>
-        <Folder Include="Properties\" />
-      </ItemGroup>
-    </Project>
-    ```
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>
+```
+
+# [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+  <Import Project="..\..\..\BuildTools\Common.props" />
+  <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>$(AssemblyNamePrefix).Commerce.Runtime.QrCodeExtension</AssemblyName>
+    <RootNamespace>Contoso.Commerce.Runtime.QrCodeExtension</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Framework" Version="$(FrameworkRepoPackagesVersion)" />
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+    <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+	<PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>
+```
+
+---
 
 1. Create an extension class:
 
-    ```C#
-    /**
-     * SAMPLE CODE NOTICE
-     * 
-     * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-     * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-     * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-     */
+# [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
+
+```C#
+/**
+ * SAMPLE CODE NOTICE
+ * 
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+ * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+ * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+ */
 
 
-    using System.Drawing;
-    using System.Drawing.Imaging;
-    using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 
-    namespace Contoso
+namespace Contoso
+{
+    namespace Commerce.Runtime.QrCodeExtension
     {
-        namespace Commerce.Runtime.QrCodeExtension
+        using System;
+        using System.Collections.Generic;
+        using System.Threading.Tasks;
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+
+        /// <summary>
+        /// The extension for QR code printing.
+        /// </summary>
+        internal class QrCodeServiceExtension : IRequestHandlerAsync
         {
-            using System;
-            using System.Collections.Generic;
-            using System.Threading.Tasks;
-            using Microsoft.Dynamics.Commerce.Runtime;
-            using Microsoft.Dynamics.Commerce.Runtime.Messages;
-            using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+            /// <summary>
+            /// Printer horizontal resolution for image.
+            /// </summary>
+            private const float PrinterXDpi = 60f;
 
             /// <summary>
-            /// The extension for QR code printing.
+            /// Printer vertical resolution for image.
             /// </summary>
-            internal class QrCodeServiceExtension : IRequestHandlerAsync
+            private const float PrinterYDpi = 90f;
+
+            /// <summary>
+            /// Printer pixel format for image.
+            /// </summary>
+            private const PixelFormat PrinterPixelFormat = PixelFormat.Format8bppIndexed;
+
+            /// <summary>
+            /// Gets the collection of supported request types by this service.
+            /// </summary>
+            public IEnumerable<Type> SupportedRequestTypes
             {
-                /// <summary>
-                /// Printer horizontal resolution for image.
-                /// </summary>
-                private const float PrinterXDpi = 60f;
+                get => new[] {typeof(EncodeQrCodeServiceRequest)};
+            }
 
-                /// <summary>
-                /// Printer vertical resolution for image.
-                /// </summary>
-                private const float PrinterYDpi = 90f;
+            /// <summary>
+            /// Processes the request.
+            /// </summary>
+            /// <param name="request">The request.</param>
+            /// <returns>The response.</returns>
+            public async Task<Response> Execute(Request request)
+            {
+                ThrowIf.Null(request, nameof(request));
 
-                /// <summary>
-                /// Printer pixel format for image.
-                /// </summary>
-                private const PixelFormat PrinterPixelFormat = PixelFormat.Format8bppIndexed;
-
-                /// <summary>
-                /// Gets the collection of supported request types by this service.
-                /// </summary>
-                public IEnumerable<Type> SupportedRequestTypes
+                switch (request)
                 {
-                    get => new[] {typeof(EncodeQrCodeServiceRequest)};
-                }
-
-                /// <summary>
-                /// Processes the request.
-                /// </summary>
-                /// <param name="request">The request.</param>
-                /// <returns>The response.</returns>
-                public async Task<Response> Execute(Request request)
-                {
-                    ThrowIf.Null(request, nameof(request));
-
-                    switch (request)
+                    case EncodeQrCodeServiceRequest encodeQrCodeServiceRequest:
                     {
-                        case EncodeQrCodeServiceRequest encodeQrCodeServiceRequest:
+                        EncodeQrCodeServiceResponse nextResponse = await this.ExecuteNextAsync<EncodeQrCodeServiceResponse>(encodeQrCodeServiceRequest).ConfigureAwait(false);
+
+                        if (nextResponse != null)
                         {
-                            EncodeQrCodeServiceResponse nextResponse = await this.ExecuteNextAsync<EncodeQrCodeServiceResponse>(encodeQrCodeServiceRequest).ConfigureAwait(false);
-
-                            if (nextResponse != null)
-                            {
-                                var qrCodeBmp = string.IsNullOrWhiteSpace(nextResponse.QRcode) ? nextResponse.QRcode : ConvertToGenericCompatibilityImage(nextResponse.QRcode);
-                                return new EncodeQrCodeServiceResponse(qrCodeBmp);
-                            }
-
-                            return nextResponse;
-                        }
-                    }
-
-                    return new NotHandledResponse();
-                }
-
-                /// <summary>
-                /// Converts QR code image from any format to compatible with printer.
-                /// </summary>
-                /// <param name="base64data">Base64 image.</param>
-                /// <returns>Image that Compatible with printer.</returns>
-                private static string ConvertToGenericCompatibilityImage(string base64data)
-                {
-                    string convertedQrCode = base64data;
-                    byte[] imageBytes = Convert.FromBase64String(convertedQrCode);
-                    using (MemoryStream msOriginal = new MemoryStream(imageBytes))
-                    using (MemoryStream msConverted = new MemoryStream())
-                    {
-                        var bitmapOriginal = new Bitmap(msOriginal);
-                        if (!IsFormatCompatible(bitmapOriginal) || !AreResolutionAndPixelFormatCompatible(bitmapOriginal))
-                        {
-                            var bitmapConverted = bitmapOriginal;
-
-                            if (!AreResolutionAndPixelFormatCompatible(bitmapOriginal))
-                            {
-                                var rectangle = new Rectangle(0, 0, bitmapOriginal.Width, bitmapOriginal.Height);
-                                bitmapConverted = bitmapOriginal.Clone(rectangle, PrinterPixelFormat);
-                                bitmapConverted.SetResolution(PrinterXDpi, PrinterYDpi);
-                            }
-
-                            bitmapConverted.Save(msConverted, ImageFormat.Bmp);
+                            var qrCodeBmp = string.IsNullOrWhiteSpace(nextResponse.QRcode) ? nextResponse.QRcode : ConvertToGenericCompatibilityImage(nextResponse.QRcode);
+                            return new EncodeQrCodeServiceResponse(qrCodeBmp);
                         }
 
-                        convertedQrCode = Convert.ToBase64String(msConverted.ToArray());
+                        return nextResponse;
+                    }
+                }
+
+                return new NotHandledResponse();
+            }
+
+            /// <summary>
+            /// Converts QR code image from any format to compatible with printer.
+            /// </summary>
+            /// <param name="base64data">Base64 image.</param>
+            /// <returns>Image that Compatible with printer.</returns>
+            private static string ConvertToGenericCompatibilityImage(string base64data)
+            {
+                string convertedQrCode = base64data;
+                byte[] imageBytes = Convert.FromBase64String(convertedQrCode);
+                using (MemoryStream msOriginal = new MemoryStream(imageBytes))
+                using (MemoryStream msConverted = new MemoryStream())
+                {
+                    var bitmapOriginal = new Bitmap(msOriginal);
+                    if (!IsFormatCompatible(bitmapOriginal) || !AreResolutionAndPixelFormatCompatible(bitmapOriginal))
+                    {
+                        var bitmapConverted = bitmapOriginal;
+
+                        if (!AreResolutionAndPixelFormatCompatible(bitmapOriginal))
+                        {
+                            var rectangle = new Rectangle(0, 0, bitmapOriginal.Width, bitmapOriginal.Height);
+                            bitmapConverted = bitmapOriginal.Clone(rectangle, PrinterPixelFormat);
+                            bitmapConverted.SetResolution(PrinterXDpi, PrinterYDpi);
+                        }
+
+                        bitmapConverted.Save(msConverted, ImageFormat.Bmp);
                     }
 
-                    return convertedQrCode;
+                    convertedQrCode = Convert.ToBase64String(msConverted.ToArray());
                 }
 
-                /// <summary>
-                /// Verifies if the resolution and pixel format of bitmap are compatible with printer requirements.
-                /// </summary>
-                /// <param name="source">Bitmap.</param>
-                /// <returns>True if compatible; otherwise false.</returns>
-                private static bool AreResolutionAndPixelFormatCompatible(Bitmap source)
-                {
-                    return source.VerticalResolution == PrinterYDpi &&
-                           source.HorizontalResolution == PrinterXDpi &&
-                           source.PixelFormat == PrinterPixelFormat;
-                }
+                return convertedQrCode;
+            }
 
-                /// <summary>
-                /// Verifies if the format of bitmap are compatible with printer requirements.
-                /// </summary>
-                /// <param name="source">Bitmap.</param>
-                /// <returns>True if compatible; otherwise false.</returns>
-                private static bool IsFormatCompatible(Bitmap source)
-                {
-                    return source.RawFormat.Equals(ImageFormat.Bmp);
-                }
+            /// <summary>
+            /// Verifies if the resolution and pixel format of bitmap are compatible with printer requirements.
+            /// </summary>
+            /// <param name="source">Bitmap.</param>
+            /// <returns>True if compatible; otherwise false.</returns>
+            private static bool AreResolutionAndPixelFormatCompatible(Bitmap source)
+            {
+                return source.VerticalResolution == PrinterYDpi &&
+                       source.HorizontalResolution == PrinterXDpi &&
+                       source.PixelFormat == PrinterPixelFormat;
+            }
+
+            /// <summary>
+            /// Verifies if the format of bitmap are compatible with printer requirements.
+            /// </summary>
+            /// <param name="source">Bitmap.</param>
+            /// <returns>True if compatible; otherwise false.</returns>
+            private static bool IsFormatCompatible(Bitmap source)
+            {
+                return source.RawFormat.Equals(ImageFormat.Bmp);
             }
         }
     }
-    ```
+}
+```
+
+# [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
+
+```C#
+/**
+ * SAMPLE CODE NOTICE
+ * 
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+ * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+ * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+ */
+
+
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages;
+
+namespace Contoso
+{
+    namespace Commerce.Runtime.QrCodeExtension
+    {
+        using System;
+        using System.Collections.Generic;
+        using System.Threading.Tasks;
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+
+        /// <summary>
+        /// The extension for QR code printing.
+        /// </summary>
+        internal class QrCodeServiceExtension : IRequestHandlerAsync
+        {
+            /// <summary>
+            /// Printer horizontal resolution for image.
+            /// </summary>
+            private const float PrinterXDpi = 60f;
+
+            /// <summary>
+            /// Printer vertical resolution for image.
+            /// </summary>
+            private const float PrinterYDpi = 90f;
+
+            /// <summary>
+            /// Printer pixel format for image.
+            /// </summary>
+            private const PixelFormat PrinterPixelFormat = PixelFormat.Format8bppIndexed;
+
+            /// <summary>
+            /// Gets the collection of supported request types by this service.
+            /// </summary>
+            public IEnumerable<Type> SupportedRequestTypes
+            {
+                get => new[] {typeof(EncodeQrCodeServiceRequest)};
+            }
+
+            /// <summary>
+            /// Processes the request.
+            /// </summary>
+            /// <param name="request">The request.</param>
+            /// <returns>The response.</returns>
+            public async Task<Response> Execute(Request request)
+            {
+                ThrowIf.Null(request, nameof(request));
+
+                switch (request)
+                {
+                    case EncodeQrCodeServiceRequest encodeQrCodeServiceRequest:
+                    {
+                        EncodeQrCodeServiceResponse nextResponse = await this.ExecuteNextAsync<EncodeQrCodeServiceResponse>(encodeQrCodeServiceRequest).ConfigureAwait(false);
+
+                        if (nextResponse != null)
+                        {
+                            var qrCodeBmp = string.IsNullOrWhiteSpace(nextResponse.QRCode) ? nextResponse.QRCode : ConvertToGenericCompatibilityImage(nextResponse.QRCode);
+                            return new EncodeQrCodeServiceResponse(qrCodeBmp);
+                        }
+
+                        return nextResponse;
+                    }
+                }
+
+                return new NotHandledResponse();
+            }
+
+            /// <summary>
+            /// Converts QR code image from any format to compatible with printer.
+            /// </summary>
+            /// <param name="base64data">Base64 image.</param>
+            /// <returns>Image that Compatible with printer.</returns>
+            private static string ConvertToGenericCompatibilityImage(string base64data)
+            {
+                string convertedQrCode = base64data;
+                byte[] imageBytes = Convert.FromBase64String(convertedQrCode);
+                using (MemoryStream msOriginal = new MemoryStream(imageBytes))
+                using (MemoryStream msConverted = new MemoryStream())
+                {
+                    var bitmapOriginal = new Bitmap(msOriginal);
+                    if (!IsFormatCompatible(bitmapOriginal) || !AreResolutionAndPixelFormatCompatible(bitmapOriginal))
+                    {
+                        var bitmapConverted = bitmapOriginal;
+
+                        if (!AreResolutionAndPixelFormatCompatible(bitmapOriginal))
+                        {
+                            var rectangle = new Rectangle(0, 0, bitmapOriginal.Width, bitmapOriginal.Height);
+                            bitmapConverted = bitmapOriginal.Clone(rectangle, PrinterPixelFormat);
+                            bitmapConverted.SetResolution(PrinterXDpi, PrinterYDpi);
+                        }
+
+                        bitmapConverted.Save(msConverted, ImageFormat.Bmp);
+                    }
+
+                    convertedQrCode = Convert.ToBase64String(msConverted.ToArray());
+                }
+
+                return convertedQrCode;
+            }
+
+            /// <summary>
+            /// Verifies if the resolution and pixel format of bitmap are compatible with printer requirements.
+            /// </summary>
+            /// <param name="source">Bitmap.</param>
+            /// <returns>True if compatible; otherwise false.</returns>
+            private static bool AreResolutionAndPixelFormatCompatible(Bitmap source)
+            {
+                return source.VerticalResolution == PrinterYDpi &&
+                       source.HorizontalResolution == PrinterXDpi &&
+                       source.PixelFormat == PrinterPixelFormat;
+            }
+
+            /// <summary>
+            /// Verifies if the format of bitmap are compatible with printer requirements.
+            /// </summary>
+            /// <param name="source">Bitmap.</param>
+            /// <returns>True if compatible; otherwise false.</returns>
+            private static bool IsFormatCompatible(Bitmap source)
+            {
+                return source.RawFormat.Equals(ImageFormat.Bmp);
+            }
+        }
+    }
+}
+```
+
+---
 
 1. Build the extension.
 1. Copy the Contoso.Commerce.Runtime.QrCodeExtension.dll to the **\\Pkg\\bin\\Ext** folder under the Internet Information Services (IIS) Retail Server site location.
