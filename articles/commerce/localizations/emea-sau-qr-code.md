@@ -5,7 +5,7 @@ title: Generate QR codes and print them on receipts for Saudi Arabia
 description: This topic provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 11/24/2021
+ms.date: 01/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -126,3 +126,8 @@ Follow these steps to create deployable packages that contain Commerce component
 
 1. Open the MSBuild Command Prompt for Visual Studio utility and run **msbuild** under the Retail SDK folder to create deployable packages.
 1. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+## Printing QR code images on OPOS printers
+
+When using an OPOS printer, you may need to convert the QR code image from the *png* format to the *bmp* format. Below is an example of this conversion.
+
