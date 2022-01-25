@@ -4,7 +4,7 @@
 title: Multiple LCS projects and environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
-ms.date: 01/24/2022
+ms.date: 01/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,7 +43,7 @@ Users who access multiple environments in parallel must be licensed separately f
 
 ## Disadvantages of multiple LCS projects
 
-The following are some disadvantages to having multiple LCS projects:
+Here are some of the disadvantages to having multiple LCS projects:
 
 - Master data isn't shared.
 - Intercompany transactions aren't supported.
@@ -63,25 +63,26 @@ There are also advantages to having multiple LCS projects. Here are some of them
 
 ## Create multiple LCS projects
 
-Create a new additional implementation project in your existing organization using the following steps:
+Follow these steps to create an additional implementation project in your existing organization.
 
-1. Select the **+** button on the LCS home page.
-2. Select your desired product for the project.
+1. On the LCS home page, select the plus sign (**+**) button.
+2. Select the desired product for the new project.
 3. Select **Implementation** as the project type.
 4. Enter information about the new implementation project.
-5. Select **Create** to finish creating your project. A confirmation box might display to ensure that you want to create an additional implementation project if you already have an existing implementation project in your organization. If you receive an error message, it might be because your organization does not have the required total license count to support an additional implementation project.
-6. After the project is created, the newly created implementation project will display and you will be the owner of the project.
+5. Select **Create** to finish creating the project. If you already have an existing implementation project in your organization, a message box might prompt you to confirm that you want to create an additional implementation project. If you receive an error message, your organization might not have the required total license count to support an additional implementation project.
+
+The newly created implementation project is shown, and you will be the owner of it.
 
 ## Edit the licenses allocated to projects
 
-Determine how you want to assign licenses across the implementation projects in your organization in order to ensure that the number of licenses assigned across all projects does not exceed the total license count purchased by the customer.
+Determine how you want to assign licenses across the implementation projects in your organization, to ensure that the number of licenses that are assigned across all projects doesn't exceed the total license count that the customer purchased.
 
-After the allocation has been determined, use the [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project and edit the active subscription estimate to apply the desired license allocation for that project.  
+After the allocation has been determined, open the [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) tool for each implementation project, and edit the active subscription estimate to apply the desired license allocation for that project.
 
 ## Online deployments in China sovereign cloud
 
-If your implementation includes China deployment/rollout, please see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China. The services include a physically separated instance of a cloud service with a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
+If your implementation includes China deployment/rollout, see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China. The services include a physically separated instance of a cloud service that has a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet.
 
-This is a single organization in multiple clouds with different tenant (Azure Active Directory). The advantages and disadvantages of multiple Lifecycle Services projects or production environments described above are still applicable, but the licensing requirements and requesting procedures are different. Work with your Microsoft account executive or your implementation partners for any process assistance.
+In this case, there is a single organization in multiple clouds with a different tenant (Azure Active Directory). The previously described advantages and disadvantages of multiple LCS projects or production environments still apply. However, the licensing requirements and request procedures differ. If you require process assistance, work with your Microsoft account executive or your implementation partners.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
