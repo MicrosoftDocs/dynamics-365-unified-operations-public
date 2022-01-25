@@ -235,7 +235,7 @@ When using an OPOS printer, you may need to convert the QR code image from the *
 
 ## Samples of a CRT extension class for printing QR codes
 
-The following code blocks provide samples of CRT extension classes for printing QR codes per Commerce release.
+The following code blocks grouped by Commerce release provide samples of CRT extension classes for printing QR codes.
 
 # [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
 
