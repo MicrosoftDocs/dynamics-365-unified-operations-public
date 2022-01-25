@@ -132,13 +132,13 @@ Follow these steps to create deployable packages that contain Commerce component
 When using an OPOS printer, you may need to implement additional customizations to support printer-specific requirements to the QR code image. For example, you may need to convert the QR code image from the *png* format to the *bmp* format. Below is an example of such customization.
 
 > [!NOTE]
-> This below customization suggestion was tested using the EPSON TM-T88V OPOS printer. It may need to be modified to support different printer makes or models.
+> This customization example was tested using the EPSON TM-T88V OPOS printer. It may need to be modified to support different printer makes or models.
 
 Follow these steps to create a new extension and add it to your environment:
 
 1. Create a C# project:
 
-    ```C#
+    ```xml
     <Project Sdk="Microsoft.NET.Sdk">
       <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
       <Import Project="..\..\..\BuildTools\Common.props" />
@@ -316,7 +316,7 @@ Follow these steps to create a new extension and add it to your environment:
 
 1. Build the extension.
 1. Copy the Contoso.Commerce.Runtime.QrCodeExtension.dll to the **\\Pkg\\bin\\Ext** folder under the Internet Information Services (IIS) Retail Server site location.
-1. Add the extention before all other extensions in the **CommerceRuntime.Ext.config** file in the same location:
+1. Add the extension before all other extensions in the **CommerceRuntime.Ext.config** file in the same location:
 
     ```xml
     <add source="assembly" value="Contoso.Commerce.Runtime.QrCodeExtension" />
