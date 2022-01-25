@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.25 (April 2022)
+          href: get-started/whats-new-scm-10-0-25.md
         - name: Supply Chain Management 10.0.24 (February 2022)
           href: get-started/whats-new-scm-10-0-24.md
         - name: Supply Chain Management 10.0.23 (January 2022)
@@ -1697,6 +1699,8 @@
           href: master-planning/planning-optimization/plan-history-logs.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Action messages
+          href: master-planning/action-messages.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
         - name: Planning Optimization extensibility
@@ -1729,8 +1733,6 @@
           href: master-planning/cancel-master-planning-job.md
         - name: Use tracing for explosion
           href: master-planning/trace-explosion.md
-        - name: Action messages
-          href: master-planning/action-messages.md
         - name: Monitor a master planning run
           href: master-planning/tasks/monitor-master-planning-run.md
         - name: Create a schedule for a site
