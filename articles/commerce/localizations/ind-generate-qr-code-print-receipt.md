@@ -4,7 +4,7 @@
 title: Generate QR codes and print them on receipts for India
 description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
 author: prabhatb2011
-ms.date: 01/23/2022
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -233,7 +233,9 @@ When using an OPOS printer, you may need to convert the QR code image from the *
     }
    ```
 
-## Sample of a CRT extension class for printing QR codes
+## Samples of a CRT extension class for printing QR codes
+
+The following code blocks provide samples of CRT extension classes for printing QR codes, organized by Commerce version.
 
 # [Commerce 10.0.24 and before](#tab/commerce-10-0-24)
 
