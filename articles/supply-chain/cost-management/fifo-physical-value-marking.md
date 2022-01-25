@@ -58,7 +58,7 @@ In this example, the item model group is not marked to include physical value. T
 
 The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option is not used. 
 
-![FIFO without Include Physical Value.](./media/fifowithoutincludephysicalvalue.gif) 
+![FIFO without Include Physical Value.](./media/FIFOWithoutIncludePhysicalValueV2.gif) 
 
 **Key to the diagram**
 
