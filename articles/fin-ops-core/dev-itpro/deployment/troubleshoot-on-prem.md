@@ -4,7 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -1653,5 +1653,19 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1 -Test
     ```
+
+## Deployment fails on version 10.0.21 and later
+
+**Issue:** The deployment fails with the following error.
+
+```stacktrace
+System.AggregateException: One or more errors occurred. ---> 
+LocalAgentCommon.LocalAgentInvalidOperationException: Unable to convert the topology file [\\DC1\D365FFOAgent\assets\topology.xml\088f79e2-3a60-4c2a-9911-c3aadb15959f\7819ab4b-31a1-4738-8ca2-02231239ddbb\Topology.xml] to a valid [config.json]. --->
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: F. Path
+```
+
+**Reason:** The configuration generation method was changed in version 10.0.21.
+
+**Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommended that you upgrade to the latest version available.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
