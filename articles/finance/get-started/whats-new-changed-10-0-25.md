@@ -45,7 +45,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-| Tax Calculation   | Using tax jurisdiction parameters for cash discount calculation setup    | When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. This feature calculates cash discount and sales tax with different parameters under a single legal entity. For more information, see [Tax jurisdiction parameters for cash discount calculation setup](../localizations/global-tax-jurisdiction-cash-discount-setup.md).    | Feature management   |
+|  Globalization  | Asset management integration with Russian fixed assets |This functionality enhances the **acquire to retire** asset lifecycle and end-to-end process flows with the **Russian Fixed assets** module. By integrating the **Asset management** and **Fixed assets** modules, you can link Russian fixed assets with maintenance assets. Fixed assets users can then create a maintenance asset from a new or existing fixed asset, and Asset management users can associate a maintenance asset with an existing fixed asset. For more information, see [Enterprise Asset Management integration with Russian Fixed Assets module](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/649144)   |  Feature management  |
+|   Globalization | Configurable business documents – specific destinations via printer management settings in the reports (phase 2) |  The initial feature implementation enables the setup and edit of business document-specific destinations by using the print management user interface in the Electronic Reporting (ER) framework. This feature extends this capability to all the remaining configurable reports that were not using it in the initial release. For more information, see [Configure print management record-specific ER destinations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-named-destinations).       |  Feature management |
+|    |     |     |   |
 |    |     |     |   |
 |    |     |     |   |
 
@@ -57,7 +59,7 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature name in feature management | More information |  
 |---|---|---|
-|   |   |   |  
+|  General ledger |  (Brazil) Mandatory bank transaction description  | This feature lets you require that descriptions be entered in bank account reconciliation transactions. In this way, you can prevent bank transaction journals from being posted if they contain transaction lines that have no description. |  
 |   |   |   |
 
 
