@@ -50,7 +50,7 @@ Exclude unused modules by adding the module name to the **excludeModules** prope
 
 ## Validate
 
-There are two options to validate that the module was successfully excluded.
+Use one or more of the following methods to validate that the module was successfully excluded.
 
 ### Method 1: 
 
