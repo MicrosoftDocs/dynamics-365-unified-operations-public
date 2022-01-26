@@ -40,7 +40,7 @@ The process of moving subscriptions from one type of agreement to another is pri
 Subscriptions come with two standard environments: 
 
 - A **production** environment 
-- A **Tier-2 Standard Acceptance Test** environment.
+- A **Tier-2 Standard Acceptance Test** environment
 
 These environments aren't affected by the movement of subscriptions between agreement types. Impact is visible in LCS only if the customer has additional **add-on environments**. In this case, no explicit action related to the add-on environments is required by the partner or customer. However, during the time when both CSP and Volumne Licensing agreements are active or in grace period, additional slots for the add-on environments are visible in LCS. Those should simply be ignored – they will disappear again as soon as the redundant licensing agreement has expired. Those additional slots must **not** be deployed as this would violate the licensing agreement.
 
