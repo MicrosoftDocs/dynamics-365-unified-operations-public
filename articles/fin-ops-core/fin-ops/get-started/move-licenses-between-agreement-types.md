@@ -46,9 +46,10 @@ These environments aren't affected by the movement of subscriptions between agre
 
 ### Commercial activities
 
-When a customer changes the licensing agreement through which they obtained their subscriptions, this is primarily a *commercial transaction* that requires working with external parties that sell the subscriptions to Dynamics 365 services. The goal is to have uninterrupted access to the service during that time of transition. 
+When a customer changes the licensing agreement through which they obtained their subscriptions, this is considered a *commercial transaction* that requires working with external parties which sell the subscriptions to Dynamics 365 services. The goal is to have uninterrupted access to the service during that time of transition. 
 
-Use the following steps to complete the commerical transaction.
+Use the following steps to complete the commercial transaction.
+
 
 1. The customer places the order for subscriptions under the new agreement with the Volume Licensing reseller or the CSP.
 
