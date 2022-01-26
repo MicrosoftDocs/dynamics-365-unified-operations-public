@@ -137,7 +137,7 @@ When using an OPOS printer, you may need to implement additional customizations 
 Follow these steps to create a new extension and add it to your environment:
 
 1. Install the Retail software development kit (SDK). For more information, see [Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-2. In the Retail SDK, create a C\# project.
+2. In the Retail SDK, create a C\# project under the **CommerceRuntimeSamples.sln** solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
 # [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
 
@@ -497,12 +497,25 @@ namespace Contoso
 
 ---
 
-4. Build the extension.
-5. Copy the Contoso.Commerce.Runtime.QrCodeExtension.dll to the **\\Pkg\\bin\\Ext** folder under the Internet Information Services (IIS) Retail Server site location.
-6. Add the extension before all other extensions in the **CommerceRuntime.Ext.config** file in the same location:
+4. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
-    ```xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.QrCodeExtension" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSaudiArabia" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
-    ```
+    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section.
+
+        ``` xml
+    	<add source="assembly" value="Contoso.Commerce.Runtime.QrCodeExtension" />
+    	<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSaudiArabia" />
+    	<add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
+    	```
+
+5. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
+
+    - Add the following lines to include the CRT extensions in the deployable packages.
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.QrCodeExtension.dll" />
+        ```
+	
+6. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+7. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+    
