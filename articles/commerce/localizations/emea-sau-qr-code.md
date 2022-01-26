@@ -136,7 +136,8 @@ When using an OPOS printer, you may need to implement additional customizations 
 
 Follow these steps to create a new extension and add it to your environment:
 
-1. Create a C# project:
+1. Install the Retail software development kit (SDK). For more information, see [Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+2. In the Retail SDK, create a C\# project.
 
 # [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
 
@@ -206,7 +207,7 @@ You also need to change the HintPath with the localtion of **Microsoft.Dynamics.
 
 ---
 
-2. Create an extension class:
+3. Create an extension class:
 
 # [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
 
@@ -496,9 +497,9 @@ namespace Contoso
 
 ---
 
-3. Build the extension.
-4. Copy the Contoso.Commerce.Runtime.QrCodeExtension.dll to the **\\Pkg\\bin\\Ext** folder under the Internet Information Services (IIS) Retail Server site location.
-5. Add the extension before all other extensions in the **CommerceRuntime.Ext.config** file in the same location:
+4. Build the extension.
+5. Copy the Contoso.Commerce.Runtime.QrCodeExtension.dll to the **\\Pkg\\bin\\Ext** folder under the Internet Information Services (IIS) Retail Server site location.
+6. Add the extension before all other extensions in the **CommerceRuntime.Ext.config** file in the same location:
 
     ```xml
     <add source="assembly" value="Contoso.Commerce.Runtime.QrCodeExtension" />
