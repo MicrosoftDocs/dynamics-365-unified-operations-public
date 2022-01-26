@@ -55,7 +55,7 @@ If you decide to pause updates, you have these options:
 - Pause updates to both your sandbox environment and your production environment.
 - Pause updates to additional sandbox environments and your production environment.
 
-> [!Note]
+> [!NOTE]
 > If the update to the production environment is paused, all additional sandbox environment updates will be paused as well.
 
 You can pause a maximum of three continuous updates at a time. For example, if you're using version 8.1.3, you can pause update version 10.0.0, 10.0.1 and 10.0.2. However, you can't pause update version 10.0.3. In addition, in the month of June, you can pause the next three updates. However, you will not be able to pause updates scheduled for October, November, December and later. Similarly, for customers on version 7.3 for platform only updates, if you’re using Platform update 23 then you can pause update 24, update 25, and update 26, but you cannot pause update 27. We will be releasing 8 updates in a year. We require you to take at least two updates in a year.
@@ -73,13 +73,13 @@ To pause updates, follow these steps.
 
     This page has a new tab that is named **Update settings**.
 
-2. Select the **Update settings** tab in the **Pause Updates** section. Then select the **Pause upcoming update** link.
+2. Select the **Update settings** tab in the **Pause Updates** section, and then select **Pause upcoming update**.
 3. In the dialog box that appears, select whether you want to pause updates to your production environment only, or to both your sandbox environment and your production environment.
 4. Select **Next**.
 5. Select your reason for pausing updates. If you select **Issue found during validations**, you must enter a valid support ticket number. You can add any additional details that will help Microsoft understand why you want to pause updates.
 6. When you've finished, select **Confirm**.
 
-You can also edit an existing pause. You can either extend the duration of the pause, so that updates are paused for a longer time, or cancel it, so that updates are resumed. To edit a pause, click the **Pause upcoming update** link. The limitations about the number of updates that you can pause still apply.
+You can also edit an existing pause. You can either extend the duration of the pause, so that updates are paused for a longer time, or cancel it, so that updates are resumed. To edit a pause, select **Pause upcoming update**. The limitations about the number of updates that you can pause still apply.
 
 Any time that you pause updates or edit an existing pause, a notification appears at the top of the **Update settings** tab. This notification shows what has been paused. An email is also sent to all stakeholders (the project owner and environment manager), to notify them that service updates for the selected environments have been paused. If someone cancels an existing pause and resumes updates, the notification disappears, and an email is sent to inform the stakeholders that updates have resumed.
 
