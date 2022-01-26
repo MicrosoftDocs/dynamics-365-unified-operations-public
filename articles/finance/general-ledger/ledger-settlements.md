@@ -30,54 +30,70 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](../includes/banner.md)]
 
-Ledger settlements let you match debit and credit transactions in the general ledger, and mark them as settled. In this way, you can make sure that related transactions have been cleared. You can also reverse settlements if they were made by mistake.
+Ledger settlements is the process of matching debit and credit transactions in the general ledger.  The settlement of the debit and credit amount is used as a tool for reconciling the balance of the ledger account to the detailed transactions that comprise the balance.  Settled transactions can be excluded from inquires and reports, making it easier to analyze the open ledger transactions that comprise the balance of the ledger account. 
 
-## Enable advanced ledger settlements
+> [!IMPORTANT]
+> The accounts payable (AP) and accounts receivable (AR) modules also have settlement of invoices and payments.  When the settlement occurs in the AR and AP subledgers, the corresponding ledger entries are not automatically settled.  
 
-The advanced ledger settlements page provides additional capabilities for filtering and selecting transactions. To enable advanced ledger settlements page, follow these steps.
+## Ledger settlement features
 
-1. Select **General ledger** \> **Ledger setup** \> **General ledger parameters**. 
-2. On the **Ledger settlements** tab, set the **Advanced ledger settlement** option to **Yes** to turn on the advanced ledger settlement functionality. The advanced **Ledger settlements** page will be used when you select **Ledger settlements** in the **Periodic tasks**. 
-3. You must enter the list of accounts to use for ledger settlements for each chart of accounts. This list is used to filter the list of transactions that appears on the **Ledger settlements** page. In the **Chart of accounts** list, select a chart of accounts, and then select **New** to add new accounts to the list.
+As of application release 10.0.21, the General ledger parameter “Enable advanced ledger settlement” was removed to enable Advanced ledger settlement and is now always enabled. 
 
-## Settle transactions by using the advanced ledger settlements page
+As of application release 10.0.25, a new feature “Awareness between ledger settlement and year-end close” was introduced that changes fundamental functionality in both ledger settlement and General ledger year-end close.  Before enabling the feature in Feature management, please read the following documentation . 
+
+## Set up ledger settlement
+When using ledger settlement, first select the main accounts for which ledger settlement is performed.  This can done through the following:
+
+- Go to General ledger > Ledger setup > General ledger parameters.  Choose Ledger settlements from the Table of contents.  
+
+    - Select the Charts of accounts from which you will select the main account.  
+    - Select the main accounts for which you will perform ledger settlement. Because the Charts of accounts are global, all companies assigned the selected chart of accounts will have the same main accounts selected for ledger settlement.
+
+- Go to General ledger > Periodic tasks > Ledger settlements. Select the Ledger settlement accounts button. In the dialog, select the Charts of accounts and Main accounts for which you will perform ledger settlement.  This dialog is a short cut, so any main accounts added here will also be reflected in General ledger parameters.
+
+Main accounts can be removed from ledger settlement using the same two pages.  Main accounts can be removed at any time.  Removing a main account has no effect on previous ledger settlements, but you will no longer see that main account or transactions on the Ledger settlement page.
+
+## Settle transactions 
 
 To settle ledger transactions, follow these steps.
 
-1. Select **General ledger** \> **Periodic tasks** \> **Ledger settlements**.
-2. Set the filters at the top of the page:
+1.	Select General ledger > Periodic tasks > Ledger settlements.
+2.	Set the filters at the top of the page:
 
-    - Select a date range, or select **Date interval code** to automatically fill in the date range.
-    - Change the posting layer as you require.
-    - To show the ledger account and dimensions separately, select a financial dimension set.
+    1. Select a date range or Date interval code to automatically fill in the date range.  It is not recommended to ledger settle transactions that cross fiscal years. 
+    2. Change the posting layer as you require.  It is not permitted to settle transactions in different posting layers. 
+    3. To show the main account and dimensions separately, select a financial dimension set.
 
-3. Select **Display transactions** to show all the transactions that match the filters that you set and the list of accounts that you specified when you set up the chart of accounts list in the previous section. If you change any of the filters or the dimension sets, you must select **Display transactions** again.
-4. Select one or more lines that you're considering for settlement. The value of the **Selected amount** field at the top of the page increases or decreases by the total amount on the lines that you selected.
-5. After you've finished selecting transactions, select **Mark selected**. A check mark appears in the **Marked** column for each transaction that you selected. Additionally, the value of the **Marked amount** field above the grid increases or decreases by the total amount on the lines that you marked.
-6. When the **Marked amount** value is **0** (zero), select **Settle marked transactions**. The status of the marked transactions is updated to **Settled**.
+3.	Select Display transactions to show all the transactions that match the filters that you set and the list of accounts that you specified when you set up the chart of accounts list in the previous section. 
+
+    - If you change any of the filters or the dimension sets, you must select Display transactions again.
+    - Use the filter on the Ledger account to filter the transactions to an individual main account.  It is not recommended to ledger settle transactions posted to different main accounts. 
+
+4.	Select one or more lines that you're considering for settlement. The value of the Selected amount field at the top of the page increases or decreases by the total amount on the lines that you selected.
+5.	After you've finished selecting transactions, select Mark selected. A check mark appears in the Marked column for each transaction that you selected. Additionally, the value of the Marked amount field above the grid increases or decreases by the total amount on the lines that you marked.
+6.	When the Marked amount value is 0 (zero), select Settle marked transactions. The status of the marked transactions is updated to Settled.
+
+    > [!NOTE]
+    > All transactions marked for settlement by the user for the active legal entity will be settled, even if they are not shown on the screen.  This can happen if a filter is applied.  
 
 ## Make transactions easier to find
 
 The **Ledger settlements** page includes capabilities that make it easier to see the transactions that you need for settlement.
 
-- The **Unmark selected** button clears the **Marked** field for all lines that are selected.
-- The **Marked** filter lets you filter transactions based on whether the **Marked** field for them is selected or cleared.
-- The **Status** filter lets you filter transactions based on whether their status is **Settled** or **Not settled**.
-- The **Sort by absolute amount** button lets you sort the amounts by absolute value, so that you can group together debits and credits that have the same amount.
+- The Marked filter lets you filter transactions based on whether the Marked field for them is selected or cleared.
+- The Status filter lets you filter transactions based on whether their status is Settled or Not settled.
+- The Sort by absolute amount button lets you sort the amounts by absolute value, so that you can group together debits and credits that have the same amount.
 
 ## Reverse a settlement
 
-You can reverse a settlement that was made by mistake.
+1. Follow steps 1 through 3 in the "Settle transactions” section to show the transactions that you're looking for.
+2. In the Status filter, select Settled.
+3. Select one or more lines that you're considering for reversal. 
+4. Select Reverse marked transactions. The status of all transactions with the same Settlement ID is updated to Not settled.
 
-1. Follow steps 1 through 3 in the "Settle transactions by using advanced ledger settlements page" section to show the transactions that you're looking for.
-2. In the **Status** filter, select **Settled**.
-3. Select one or more lines that you're considering for reversal. The value of the **Selected amount** field at the top of the page increases or decreases by the total amount on the lines that you selected.
-4. After you've finished selecting transactions, select **Mark selected**. A check mark appears in the **Marked** column for each transaction that you selected. Additionally, the value of the **Marked amount** field at the top of the page increases or decreases by the total amount on the lines that you marked.
-5. When the **Marked amount** value is **0** (zero), select **Reverse marked transactions**. The status of the marked transactions is updated to **Not settled**.
+    > [!IMPORTANT]
+    > All transactions with the same Settlement ID will be reversed, even if they are not marked. For example, four lines were marked and settled. They all have the same Settlement ID.  The user marks one of the four lines and chooses to reverse, all four lines will be reversed.
 
-## Update the list of accounts that are included in the list of transactions
-
-Select **Ledger settlement accounts** to open a dialog box where you can edit the accounts that are included in the list of transactions. Select **New** to add new accounts to the list. This list is used to filter the list of transactions that appears on the **Ledger settlements** page.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
