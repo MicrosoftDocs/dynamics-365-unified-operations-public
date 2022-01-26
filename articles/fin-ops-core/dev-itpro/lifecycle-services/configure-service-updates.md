@@ -4,7 +4,7 @@
 title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: angelmarshall
-ms.date: 09/24/2021
+ms.date: 01/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ Follow these steps to change your update settings.
         > [!IMPORTANT]
         > The environment that you select here will be updated seven calendar days before the update cadence that is selected for the production environment.
 
-    - **Production environment update cadence** – Select a recurring cadence for updates to your production environment. The sandbox environment that is selected in the **Default Sandbox Update environment** field will be updated seven calendar days before the selected cadence. The remaining additional sandboxes will be updated on the same cadence as production environment. The following options are available:
+    - **Production environment update cadence** – Select a recurring cadence for updates to your production environment. The sandbox environment that is selected in the **Default Sandbox Update environment** field will be updated seven calendar days before the selected cadence. The remaining additional sandboxes will be updated on the same cadence as the production environment. The following options are available:
 
         - **Select the cadence** – Select whether to receive updates in the first, second, or third week of the month.
         - **Select one of the three time-zones** – Select the time zone that the production environment should be updated in: Eastern Time (UTC – 5), Hong Kong Time (UTC + 8), or Greenwich Mean Time (UTC + 0).
@@ -96,7 +96,7 @@ The additional sandbox environments will be updated on the same cadence as your 
 
 If you have not deployed the production environment, none of the additional sandbox environments will be auto-updated.
 
-If production is updated **before** the email for production update goes out, then production as well as all additional sandboxes **will not** get updated. If the production is updated **after** the email for production update goes out, then production **will** be cancelled but additional sandboxes will get updated.
+If the production environment is updated **before** the email about the production update is sent, then the production environment, as well as all additional sandbox environments, **will not** get updated. If the production environment is updated **after** the email for the production update is sent, then the production environment **will** be cancelled, but additional sandbox enviornments will get updated.
 
 If there’s any update failure on the production environment or any of the additional sandbox environments, it will not interfere with the remaining updates. That is, if the production update failed, the additional sandbox update will continue. Similarly, if you have additional sandbox environments and one of them failed during the update, the others will continue.
 
