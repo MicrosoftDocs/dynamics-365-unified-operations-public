@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic explains how to enable dual-write from Microsoft Dynamics Lifecycle Services (LCS).
 

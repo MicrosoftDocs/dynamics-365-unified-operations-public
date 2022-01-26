@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 The following are potential uses cases for business events. These use cases aren't an exhaustive list of the potential use cases. Some of these use cases may not have been implemented yet either by Microsoft or other organizations. These use cases are meant to provide ideas and help with understanding business events.
 

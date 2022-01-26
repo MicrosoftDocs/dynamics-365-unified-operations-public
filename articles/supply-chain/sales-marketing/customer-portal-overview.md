@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.13
 # Customer portal for Dynamics 365 Supply Chain Management overview
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## What is the Customer portal?
 

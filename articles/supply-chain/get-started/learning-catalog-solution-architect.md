@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 8.1
 
 # Learning catalog for Dynamics 365 Supply Chain Management solution architects
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Do you design solutions that meet your customers' needs and budgets?
 

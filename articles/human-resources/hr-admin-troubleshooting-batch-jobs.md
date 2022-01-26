@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## Issue
 
