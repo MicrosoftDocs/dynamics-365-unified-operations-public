@@ -88,7 +88,7 @@ If the **Include physical value** check box is selected for an item on the **Ite
 -   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.67 (running average of physically and financially posted transactions).
 -   7\.  Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 USD will be made to 3b.
 
-![FIFO with Include Physical Value.](./media/fifowithincludephysicalvalue.gif) 
+![FIFO with Include Physical Value.](./media/FIFOWithIncludePhysicalValueV2.gif) 
 
 **Key to the diagram**
 
