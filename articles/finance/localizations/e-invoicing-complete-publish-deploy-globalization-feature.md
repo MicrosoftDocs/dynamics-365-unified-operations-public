@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Complete, publish and delpoy Globalization feature
-description: This topic provides description of the process of lifecycle of Globalization features
+title: Complete, publish, and delpoy a Globalization feature
+description: This topic provides information about the lifecycle process of Globalization features.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -10,9 +10,25 @@ ms.prod:
 ms.technology: 
 
 # optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.custom: 
+ms.author: dkalyuzh
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
+
 ---
 
-# Complete, publish and delpoy Globalization feature
+# Complete, publish, and delpoy a Globalization feature
 
 [!include [banner](../includes/banner.md)]
 
@@ -21,54 +37,56 @@ ms.technology:
 The electronic invoicing features are versioned. When a new version is created, the version number is automatically incremented. 
 
 Electronic invoicing feature versions follow a lifecycle that has up to three statuses:
-- Draft – If a feature version is in this status, you can edit its configuration attributes and any of its artifacts (for example, file format configurations).
-- Complete – If a feature version is in this status, it has been completed for editing that means that you are not going to change this version anymore. You can no longer edit the feature version or any of the components.
-- Published – If a feature version is in this status, it has been published to the Global repository that is associated with your organization. You can no longer edit the feature version or any of the components. 
 
-**Effective from** date can be defined for the new version of the electronic invoicing feature as a default versions that can be used or be overwritten during deploying the feature to service environment.
+- **Draft** - You can edit the configuration attributes and artifacts of this feature version. For example, file format configurations.
+- **Complete** - The feature version has been completed for editing and no more updates will be made to this version. You can no longer edit the feature version or any of the components.
+- **Published** – The feature version has been published to the Global repository that's associated with your organization. You can no longer edit the feature version or any of the components. 
 
-To changes the status of the particular electronic invoicing feature version:
- 1. Select the version in **Versions** tab.
- 2. Select **Change status** > **Complete** (if the current status is Draft), or **Publish** (if the current status is Completed).
- 3. Confirm the request in the popup dialog with selecting **Yes**.
+The **Effective from** date can be defined for the new version of the electronic invoicing feature as a default version that can be used or can be overwritten when the feature is deployed to the service environment.
 
-Changing the status from Complete to Publish is optional, as electronic invoicing feature version will be transformed to this status during Deploying the feature version to the service environment automatically.
+Complete the follwoing steps to changes the status of a specific electronic invoicing feature version.
+
+ 1. On the **Versions** tab, select the version.
+ 2. Select **Change status** > **Complete**, if the current status is **Draft**, or **Publish** if the current status is **Completed**.
+ 3. Select **Yes** to confirm the request in the dialog box.
+
+Changing the status from **Complete** to **Publish** is optional, because electronic invoicing feature version will be transformed to this status automatically when the feature version is deployed to the service environment.
 
 You can track the status in the **Feature version status** column.
 
 ## Deploy feature versions
-In RCS, you use the **Deploy** command to publish an electronic invoicing feature version to the target service environment or connected application. 
- 1. In **Versions** tab select the version of electronic invoicing feature in status Completed or Published that you want to deploy to the service environment and/or connected application.
- 2. Select **Deploy**, and then select one of the following options to define the target of the deployment (one target or both at once):
-  - **Connected application** – When the target of the deployment is the connected application, the configuration that is provided by the application setup is written in the Finance and Supply Chain Management instance that was previously associated with it.
-  - **Service environment** – When the target of the deployment is the service environment, the electronic invoicing feature version is deployed to the service environment. Electronic invoicing is then ready to receive and process electronic documents that Finance and Supply Chain Management applications send.
+
+In RCS, use the **Deploy** command to publish an electronic invoicing feature version to the target service environment or connected application. 
+
+1. On the **Versions** tab, select the version of the electronic invoicing feature with a status of **Completed** or **Published** that you want to deploy to the service environment or connected application.
+2. Select **Deploy**, and then select one of the following options to define the target of the deployment. Ypu can select one or both targets.
+
+   - **Connected application** – When the target of the deployment is the connected application, the configuration that's provided by the application setup is written in the Dynamics 365 Finance or Dynamics 365 Supply Chain Management instance that was previously associated with it.
+   - **Service environment** – When the target of the deployment is the service environment, the electronic invoicing feature version is deployed to the service environment. Electronic invoicing is then ready to receive and process electronic documents that the Finance or Supply Chain Management applications send.
 
 > [!NOTE]
-> Usually, you will do changes in the parameters of Electronic reporting feature that must be deployed to Service environment, and changes of the Connected application are rare. You should deploy new versions to Connected application only when you do changes in the corresponding parameters of your application.
+> You will usually make changes in the parameters of the Electronic reporting feature that must be deployed to Service environment. Changes to the Connected application are rare. Deploy new versions to the Connected application only when you make changes in the corresponding parameters of your application.
 
-To check if particular version of the electronic invoicing feature is deployed to particular environment, you can review Environments tab.
-![complete-2](https://user-images.githubusercontent.com/78973132/146524914-2c088417-28ba-4bc5-9593-e1c96cd77960.jpg)
-
+To see if a specific version of the electronic invoicing feature is deployed to a particular environment, look on the **Environments** tab.
 
 ## Remove feature versions
-In RCS, you use the **Cancel** command to remove a specific electronic invoicing feature version from a service environment, if it was deployed there. 
+In RCS, select **Cancel** to remove a specific electronic invoicing feature version from a service environment, if it was deployed there. 
 
 > [!IMPORTANT]
-> The Cancel command works only in service environments. It doesn't remove and setup from the connected application for the current electronic invoicing feature.
+> **Cancel** only works in service environments. It doesn't remove anything from the connected application for the current electronic invoicing feature.
 
 
 ## Rebase electronic invoicing features
-When one electronic invoicing feature is derived from another, the **Rebase** command updates the derived feature with the changes that have been introduced in the original (parent) feature.
-If you want to rebase the derived version of a feature that you created, follow the steps:
- 1. You first get the latest version of the feature by importing it from the Global repository ([Import feature from Global repo](e-inv_tut-setup-electronic-invoicing_global-feature_import.md)).
+When one electronic invoicing feature is derived from another, selecting **Rebase** updates the derived feature with the changes that have been introduced in the original (parent) feature. To rebase the derived version of a feature that you created, complete the following steps. 
+
+ 1. Get the latest version of the feature by importing it from the Global repository. For more information, see [Import feature from Global repository](e-invoicing-import-feature-global-repository.md).
  2. In the list of features, select the feature to rebase.
  3. On the **Version** tab, select **New** to create a draft version.
- 4. Select **Rebase** for this Draft version.
- 5. In the **Rebase** dialog box, select the version of the feature to rebase to.
- 6. Select **OK**.
- 7. Review the feature components, and make any changes that are required.
- 8. Select **Change status** to complete the rebased feature. When the rebase is completed, you can perform additional actions described above.
+ 4. Select **Rebase**, and in the **Rebase** dialog box, select the version of the feature to rebase to.
+ 5. Select **OK**.
+ 6. Review the feature components, and make any necessary changes.
+ 7. Select **Change status** to complete the rebased feature. When the rebase is complete, you can perform additional actions.
 	
 
-## Get particular version of electronic invoicing features
-When you create a new version of the electronic invoicing feature, the system creates a copy of the latest version of the feature version. If you need to take one of the earlier versions of the feature as a base for the new version, you should select this version, and select **Get this version command**. New draft version of the feature will be the copy of the selected version.
+## Get specific versions of electronic invoicing features
+When you create a new version of an electronic invoicing feature, the system creates a copy of the latest feature version. To take one of the earlier versions of the feature as a base for the new version, select the version, and then select **Get this version command**. A new draft version of the feature will be the copy of the selected version.
