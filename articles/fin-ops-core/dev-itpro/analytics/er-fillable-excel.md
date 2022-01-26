@@ -4,7 +4,7 @@
 title: Design a configuration for generating documents in Excel format
 description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 12/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -384,7 +384,7 @@ If one of your templates contains a PivotTable that is based on a PowerPivot mod
     2. Use ER to generate a second Excel workbook (workbook B) from Finance that has the required details. 
     3. Refer to workbook B in workbook A as soon as workbook B is generated.
 
-- Use an option other than EPPlus to turn off the feature. 
+- Turn off the feature, **Enable usage of EPPlus library in Electronic reporting framework** to use an option other than EPPlus. 
 
 ## Additional resources
 

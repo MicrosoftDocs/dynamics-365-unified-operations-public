@@ -92,9 +92,17 @@ For information on configuring ratings and reviews modules on product details pa
 
 [Manage ratings and reviews](manage-reviews.md)
 
-[Configure ratings and reviews modules on product details pages](ratings-reviews-modules.md)
-
 [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
+
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)
+
+[Ratings and reviews modules](ratings-reviews-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

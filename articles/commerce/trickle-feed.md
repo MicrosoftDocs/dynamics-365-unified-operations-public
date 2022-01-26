@@ -4,7 +4,7 @@
 title: Trickle feed-based order creation for retail store transactions
 description: This topic describes the trickle feed-based order creation for store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/14/2021
+ms.date: 01/11/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 Commerce version 10.0.5 and later, we recommend that you transition all statement posting processes to the trickle feed–based statement posting processes. Significant performance and business benefits are associated with using the trickle feed functionality. Sales transactions are processed throughout the day. Tender and cash management transactions are processed on the financial statement at the end of the day. Trickle feed functionality enables the continuous processing of sales orders, invoices, and payments. Therefore, inventory, revenue, and payments can be updated and recognized in near-real time.
+In Microsoft Dynamics 365 Commerce version 10.0.5 and later, we recommend that you transition all statement posting processes to the trickle feed–based statement posting processes. Significant performance and business benefits are associated with using the trickle feed functionality. Sales transactions are processed throughout the day. Tender and cash management transactions are processed on the financial statement at the end of the day. Trickle feed functionality enables the continuous processing of sales orders, invoices, and payments. Therefore, inventory, revenue, and payments are updated and recognized in near-real time.
 
 ## Use trickle feed-based posting
 
@@ -41,7 +41,7 @@ To enable trickle feed–based posting of retail transactions, enable the **Reta
 
 ### Transactional statements
 
-Transactional statement processing is intended to be run at a high frequency throughout the day, so that documents are created when transactions are uploaded into Commerce headquarters. Transactions are loaded from the stores to Commerce headquarters when you run the **P-Job**. You must also run the **Validate store transactions** job to validate transactions so that the transactional statement will pick them up.
+Transactional statement processing is intended to be run at a high frequency throughout the day so that documents are created when transactions are uploaded into Commerce headquarters. Transactions are loaded from the stores to Commerce headquarters when you run the **P-Job**. You must also run the **Validate store transactions** job to validate transactions so that the transactional statement will pick them up.
 
 Schedule the following jobs to run at a high frequency:
 
@@ -51,6 +51,10 @@ Schedule the following jobs to run at a high frequency:
 ### Financial statements
 
 Financial statement processing is intended to be an end-of-day process. This type of statement processing supports only the **Shift** closing method and will pick up only closed shifts. Statements are limited to financial reconciliation. They will create only the journals for the difference amounts between the counted amount and the transaction amount for tenders, and journals for other cash management transactions.
+
+Financial statements also enable the review of the following transactions: tender declaration transactions, payment transactions, banked tender transactions, and safe tender transactions. The tender details page is only visible when a financial statement is selected.
+
+![An image showing the tender details section of the posted statements form only when a financial statement is selected.](./media/Trickle-feed-posted-statements-transaction-view.png)
 
 Schedule the start and end times of the following financial statement jobs based on the expected end of the day:
 

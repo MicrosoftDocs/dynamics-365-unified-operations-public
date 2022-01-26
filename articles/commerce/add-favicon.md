@@ -90,8 +90,6 @@ When you preview pages that are based on the template that you added the metatag
 
 [Work with CSS override files](css-override-files.md)
 
-[Add a welcome message](add-welcome-message.md)
-
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)
