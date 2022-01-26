@@ -172,7 +172,7 @@ Follow these steps to create a new extension and add it to your environment:
   </ItemGroup>
 </Project>
 ```
-You also need to change the HintPath with the localtion of **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting.dll** to take it directly from **RetailServer path\bin** folder.
+You also need to change the HintPath with the localtion of **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting.dll** to reference it directly to **RetailServer path\bin** folder.
 
 # [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
 
