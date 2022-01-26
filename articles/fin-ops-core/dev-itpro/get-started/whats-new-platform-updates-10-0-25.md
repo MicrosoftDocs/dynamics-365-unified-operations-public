@@ -30,8 +30,12 @@ The following table lists the features that are included in this release.
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
+| Developer tools  | Run custom X++ scripts with zero downtime | [Run custom X++ scripts with zero downtime](../deployment/organization-administration/run-custom-scripts.md)  | Enabled by default.  |
 |Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)  |
 | Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
+
+[Uninstall a package](../deployment/uninstall-deployable-package.md)
+
 
 ### Bug fixes
 
