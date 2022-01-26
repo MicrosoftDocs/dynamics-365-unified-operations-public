@@ -104,7 +104,7 @@ Ensuring quality of the release is a fundamental principle that's enabled throug
 
 Customers can configure the day and maintenance time windows in LCS. The service update, which is based on your update settings, will start within 15 minutes. Email will be sent to customers who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation.
 
-Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. All additional sandboxes will be auto updated on the same day as the Production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
+Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. All additional sandboxes will be auto updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
 
 ### A service update was applied to the environment, when looking at the tile in Lifecycle Services for this environment what does the number on the tile represent?
