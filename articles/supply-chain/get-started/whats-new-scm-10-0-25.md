@@ -30,10 +30,10 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory&nbsp;and&nbsp;logistics | [Scan barcodes in the warehouse using GS1 format standards](#) | [GS1 bar codes and QR codes](../warehousing/gs1-barcodes.md) | Feature management (*Scan GS1 barcodes*) |
-| Manufacturing | [Material consumption and reservations in the production floor execution interface](#) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management (*(Preview) Register material consumption on the production floor execution interface (WMS-enabled)*) |
-| Manufacturing | [Register material consumption on scale units](#) | [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md) | Feature management (*Register material consumption on the mobile app on a scale unit*)  |
-| Planning | [Planning Optimization suggestions to optimize existing supply](#) | [Action messages](../master-planning/action-messages.md) | Enabled by default |
+| Inventory&nbsp;and&nbsp;logistics | [Scan barcodes in the warehouse using GS1 format standards](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) <!-- Update to 2022w1 link when published --> | [GS1 bar codes and QR codes](../warehousing/gs1-barcodes.md) | Feature management (*Scan GS1 barcodes*) |
+| Manufacturing | [Material consumption and reservations in the production floor execution interface](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management (*(Preview) Register material consumption on the production floor execution interface (WMS-enabled)*) |
+| Manufacturing | [Register material consumption on scale units](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md) | Feature management (*Register material consumption on the mobile app on a scale unit*)  |
+| Planning | [Planning Optimization suggestions to optimize existing supply](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Action messages](../master-planning/action-messages.md) | Enabled by default |
 
 ## Feature enhancements included in this release
 
