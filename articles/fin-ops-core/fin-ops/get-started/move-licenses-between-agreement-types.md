@@ -42,7 +42,7 @@ Subscriptions come with two standard environments:
 - A **production** environment 
 - A **Tier-2 Standard Acceptance Test** environment
 
-These environments aren't affected by the movement of subscriptions between agreement types. Impact is visible in LCS only if the customer has additional **add-on environments**. In this case, no explicit action related to the add-on environments is required by the partner or customer. However, during the time when both CSP and Volumne Licensing agreements are active or in grace period, additional slots for the add-on environments are visible in LCS. Those should simply be ignored – they will disappear again as soon as the redundant licensing agreement has expired. Those additional slots must **not** be deployed as this would violate the licensing agreement.
+These environments aren't affected by the movement of subscriptions between agreement types. Impact is visible in LCS only if the customer has additional **add-on environments**. In this case, no explicit action related to the add-on environments is required by the partner or customer. However, during the time when both CSP and Volume Licensing agreements are active or in a grace period, additional slots for the add-on environments are visible in LCS. Those should simply be ignored, as they will disappear as soon as the redundant licensing agreement has expired. Those additional slots must **not** be deployed as this would violate the licensing agreement.
 
 ### Commercial activities
 
@@ -56,23 +56,18 @@ These environments aren't affected by the movement of subscriptions between agre
 4. When the new subscriptions are active, the customer requests that the Volume Licensing reseller or the CSP suspend the existing subscriptions. Typically, there is an overlap to help guarantee continuity and avoid disruption of service.
 
 
-## The customer has only default environments
+## The customer only has default environments
 
 If the customer has only the two standard environments that come with the Microsoft-managed subscription, and didn't purchase any add-on environments through the original CSP agreement or Volume Licensing agreement, no changes will be visible in LCS.
 
 
 ## The customer has add-on environments
 
-If the customer purchased add-on environments through the original CSP agreement or Volume Licensing agreement, those environments will continue to function without any disruption. For each add-on environment that the customer has ordered on the old as well as on the new licensing agreement, they will now see two slots in LCS. Typically, the slot from the old agreement will be deployed, while the slot from the new agreement will show up as a new undeployed **DYNAMICS 365 OPERATIONS SANDBOX** slot in **Configure** state. Customers must not deploy more environments in total than they have purchased on the new licensing agreement, as the environment slots will disappear when the old licensing agreement expires.
+If the customer purchased add-on environments through the original CSP agreement or Volume Licensing agreement, those environments will continue to function without any disruption. For each add-on environment that the customer has ordered on the old agreement, as well as on the new licensing agreement, they will now see two slots in LCS. Typically, the slot from the old agreement will be deployed, while the slot from the new agreement will show up as a new undeployed **DYNAMICS 365 OPERATIONS SANDBOX** slot in **Configure** state. Customers must not deploy more environments in total than they have purchased on the new licensing agreement, as the environment slots will disappear when the old licensing agreement expires.
 
 It is important that customers verify that they do have the desired amount of add-on environments on the new licensing agreement. Customers can verify the number of purchased add-on environments on the **Subscriptions available** page in LCS, or in the Microsoft 365 admin center under **Billing > Your products**.
 
 > [!NOTE]
-> LCS displays the aggregate number of subscriptions across all licensing agreements. During the transition period, while the old and new license agreement are active, the numbers will therefore probably be higher than the desired number of subscriptions once the old licensing agreement has expired.
-
-
-
-
-
+> LCS displays the aggregate number of subscriptions across all licensing agreements. During the transition period, while the old and new license agreement are active, the numbers will probably be higher than the desired number of subscriptions after the old licensing agreement has expired.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
