@@ -104,7 +104,7 @@ Ensuring quality of the release is a fundamental principle that's enabled throug
 
 Customers can configure the day and maintenance time windows in LCS. The service update, which is based on your update settings, will start within 15 minutes. Email will be sent to customers who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation.
 
-Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
+Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. All additional sandboxes will be auto updated on the same day as the Production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
 
 ### A service update was applied to the environment, when looking at the tile in Lifecycle Services for this environment what does the number on the tile represent?
@@ -135,7 +135,7 @@ You can pause an update up to 4 months or 3 consecutive service updates by way o
 
 ### Can I delay an update for longer than 3 consecutive service updates due to seasonal activity or other business reason? 
 
-No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to the production environment if the environments are more than 3 service updates old. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
+No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to production as well as all additional sandbox environments, if the environments are not on the latest version. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
 
 ### What happens to an environment that is running a Finance and Operations version that is no longer supported?
 Environments that are running a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.
