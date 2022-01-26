@@ -53,7 +53,7 @@ If you decide to pause updates, you have these options:
 
 - Pause updates only to your production environment.
 - Pause updates to both your sandbox environment and your production environment.
-- Pause updates to additional sandbox environments and your production environment.
+- Pause updates to additional sandbox environments by pausing your production environment.
 
 > [!NOTE]
 > If the update to the production environment is paused, all additional sandbox environment updates will be paused as well.
