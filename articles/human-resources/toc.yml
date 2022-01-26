@@ -680,24 +680,6 @@
           href: hr-benefits-management-aca-reports.md
         - name: Benefits statement
           href: hr-benefits-statement.md
-      - name: Define and manage a benefits program
-        href: hr-benefits-manage-program.md
-      - name: Benefit eligibility policies
-        href: hr-benefits-eligibility-policies.md
-      - name: Benefit eligibility process
-        href: hr-benefits-eligibility-process.md
-      - name: Define benefit eligibility rules and policies
-        href: hr-benefits-define-eligibility-rules.md
-      - name: Deliver an employee benefits program
-        href: hr-benefits-deliver-employee-benefits-program.md
-      - name: Create new benefits
-        href: hr-benefits-create.md
-      - name: Enroll workers in benefits
-        href: hr-benefits-enroll-workers.md
-      - name: Manage benefit expiration dates
-        href: hr-benefits-expiration-dates.md
-      - name: Generate ACA reports
-        href: hr-benefits-aca-reports.md
     - name: Compensation management
       items:
       - name: Compensation plans overview
