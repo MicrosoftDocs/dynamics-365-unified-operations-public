@@ -631,7 +631,8 @@ After the **Support multiple VAT registration numbers** feature is enabled, prov
 4. Specify the **Transfer order history** data source on **Records to include** FastTab of the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
 
 > [!NOTE]
-> When **Support multiple VAT registration numbers** and **Sales tax declaration for multiple VAT registrations** features are enabled you can report to SII system of Spain invoices posted in Finance for specific VAT registration from multiple of them registered in your Finance in the same legal entity. In this case, `NombreRazon` field that contains the name of the reporting company is collected from the **Name or description** field of the **Manage addresses** page by the **RegistrationsIDs** button on the Action page of the **Legal entities** page.
+> When the features, **Support multiple VAT registration numbers** and **Sales tax declaration for multiple VAT registrations** are enabled, the SII system of Spain collects the value in the **NombreRazon** field from the **Name or description** field of the **Manage addresses** page instead of from the name of the legal entity.
+
 
 ## Use EM functionality to report to the SII system
 
