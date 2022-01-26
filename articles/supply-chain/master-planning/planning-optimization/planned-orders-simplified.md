@@ -1,6 +1,6 @@
 ---
 title: Planned orders simplified
-description: This topic provides information about how to view, manage, and approve planned orders with the Planned orders simplified page. 
+description: This topic describes how you can view, manage, and firm planned orders by using the Planned orders simplified page.
 author: ChristianRytt
 ms.date: 01/24/2022
 ms.topic: article
@@ -18,26 +18,26 @@ ms.dyn365.ops.version: 10.0.25
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-This topic describes how you can view, manage, and firm planned orders using the **Planned orders simplified** page.
+This topic describes how you can view, manage, and firm planned orders by using the **Planned orders simplified** page.
 
-The **Planned orders simplified** page is a simplified version of the **Planned orders** page. It provides fewer options but is faster to work with when all you need to do is review, approve, and firm your planned orders.
+The **Planned orders simplified** page is a simplified version of the **Planned orders** page. It provides fewer options but is faster to work with when all you have to do is review, approve, and firm your planned orders.
 
 ## Turn on this feature for your system
 
-If your system doesn't already include the features described in this topic, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned orders simplified* feature.
+If your system doesn't already include the features that are described in this topic, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Planned orders simplified* feature.
 
 ## View, manage, and firm planned orders
 
-The **Planned orders simplified** page is primarily designed for firming functionality. It shows all planned orders generated for the selected plan, just like the standard **Planned orders** page does, and can therefore be used as an optimized alternative for viewing results of the master planning run.
+The **Planned orders simplified** page is designed primarily for firming functionality. It shows all planned orders that have been generated for the selected plan, just as the standard **Planned orders** page does. Therefore, it can be used as an optimized alternative for viewing the results of a master planning run.
 
-To find the **Planned orders simplified** page go to **Master planning > Master planning > Planned orders simplified**. You can use this page to:
+To open the **Planned orders simplified** page, go to **Master planning \> Master planning \> Planned orders simplified**. You can use this page to complete the following tasks:
 
-- See all planned orders per particular plan.
+- View all planned orders for a specific plan.
 - Create new planned orders.
 - Delete single or multiple planned orders.
 - Firm single or multiple planned orders.
-- Change planned order status for single or multiple planned orders.
-- Seamlessly navigate to planned order details on individual planned order to see full details of the order.
-- Create custom views with saved views.
+- Change the planned order status for single or multiple planned orders.
+- Seamlessly open planned order details for an individual planned order to view full details of the order.
+- Create custom views by using saved views.
 
-Additional scenarios (like split) are supported by the **Planned orders** page.
+Additional scenarios, such as split, are supported by the standard **Planned orders** page.
