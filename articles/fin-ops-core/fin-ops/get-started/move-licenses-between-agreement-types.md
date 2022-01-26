@@ -52,7 +52,7 @@ These environments aren't affected by the movement of subscriptions between agre
     > Make sure that the subscriptions are purchased against the same Azure AD tenant that is used on the original agreement.
 
 2. The customer activates the subscriptions.
-3. In Microsoft 365 Admin Center, the customer verifies that both the new and the existing subscriptions are active for all user and device licenses as well as for the add-on environment subscriptions. 
+3. In Microsoft 365 Admin Center, the customer verifies that both the new and the existing subscriptions are active for all user and device licenses, as well as for the add-on environment subscriptions. 
 4. When the new subscriptions are active, the customer requests that the Volume Licensing reseller or the CSP suspend the existing subscriptions. Typically, there is an overlap to help guarantee continuity and avoid disruption of service.
 
 
