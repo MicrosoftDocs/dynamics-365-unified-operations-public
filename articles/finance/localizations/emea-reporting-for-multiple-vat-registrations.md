@@ -118,10 +118,12 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.20     | FR          | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3      |
     | 10.0.20     | UK (NI)     | Intrastat (UK).version.1.2                                                        |
     | 10.0.21     | AT          | Intrastat (AT).version.16.3                                                       |
-    | 10.0.21     | DE          | Intrastat model.version.22</br>INSTAT XML.version.22.9</br>INSTAT XML (DE).version.22.9.9 |
+    | 10.0.21     | DE          | INSTAT XML (DE).version.22.9.9                                                    |
     | 10.0.21     | ES          | Intrastat (ES).version.16.7                                                       |
     | 10.0.21     | SE          | Intrastat (SE).version.16.4                                                       |
-
+    | 10.0.23     | FI          | Intrastat (FI).version.2.3                                                        |
+    | 10.0.23     | DK          | Intrastat (DK).version.25.4                                                       |
+    | 10.0.23     | PL          | Intrastat (PL).version.25.5                                                       |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
