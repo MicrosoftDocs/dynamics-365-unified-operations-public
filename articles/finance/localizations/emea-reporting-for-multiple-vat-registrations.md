@@ -168,28 +168,28 @@ For each transaction code that you create, you must set up the rules that are us
 All tax registrations have the same setup for compression rules.
 
 1. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**.
-2. Select the values to use in the **Compression** function. Select all the values that are reported in any of the countries where you have tax registrations. For example, in 2021, the following values should be reported in some countries.
+2. Select the values to use in the **Compression** function. Select all the values that are reported in any of the countries where you have tax registrations. 
 
-| **Value**                                                                                                   | **Austria** | **Belgium** | **France** | **Germany** | **Netherlands** | **Northern Ireland (United Kingdom)** | **Spain** | **Sweden** |
-|-------------------------------------------------------------------------------------------------------------|-------------|-------------|------------|-------------|-----------------|---------------------------------------|-----------|------------|
-| **Mandatory elements**                                                                                      |             |             |            |             |                 |                                       |           |            |
-| Direction (Flow)                                                                                            | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
-| Commodity code                                                                                              | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
-| Partner Member State                                                                                        | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
-| Transaction code                                                                                            | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
-| Tax exempt number (VAT number of partner)                                                                   | No          | **Yes**     | **Yes**    | No          | **Yes**         | No                                    | No        | No         |
-| *Mandatory on dispatches from 2022 for all EU countries*                                                    |             |             |            |             |                 |                                       |           |            |
-| **Optional elements**                                                                                       |             |             |            |             |                 |                                       |           |            |
-| Country of origin                                                                                           | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | No                                    | **Yes**   | No         |
-| *(On dispatch and/or on arrival)* *Mandatory on dispatches from 2022 for all EU countries*                  |             |             |            |             |                 |                                       |           |            |
-| Delivery terms                                                                                              | No          | **Yes**     | No         | No          | No              | **Yes**                               | **Yes**   | No         |
-| Mode of transport                                                                                           | **Yes**     | **Yes**     | **Yes**    | **Yes**     | No              | No                                    | **Yes**   | No         |
-| State of origin (Region of origin) *(on dispatch and/or on arrival)*                                        | No          | **Yes**     | No         | **Yes**     | No              | No                                    | No        | No         |
-| County of origin (Region of origin) *(on dispatch and/or on arrival)*                                       | No          | No          | **Yes**    | No          | No              | No                                    | **Yes**   | No         |
-| Statistics procedure                                                                                        | **Yes**     | No          | **Yes**    | No          | **Yes**         | No                                    | **Yes**   | No         |
-| **Additional elements for country purposes**                                                                |             |             |            |             |                 |                                       |           |            |
-| Transport document (Invoice, Identification of packing slip or product receipt)                             | No          | No          | No         | No          | **Yes**         | No                                    | No        | No         |
-| Port ((Air)port of (un)loading)                                                                             | No          | No          | No         | No          | No              | No                                    | **Yes**   | No         |
+For example, in 2022, the following values should be reported in some countries.
+
+Mandatory elements: **Direction** (Flow), **Commodity code**, **Country/region** (Partner Member State), **Transaction code**, **Tax exempt number** (VAT number of partner) on dispatches, **Country/region of origin** are reported in all countries from the below table.
+
+**Optional elements**
+
+| **Value**                                                             | **Austria** | **Belgium** | **Denmark** | **Finland** | **France** | **Germany** | **Netherlands** | **Northern Ireland (United Kingdom)** | **Poland** | **Spain** | **Sweden** |
+|-----------------------------------------------------------------------|-------------|-------------|-------------|-------------|------------|-------------|-----------------|---------------------------------------|------------|-----------|------------|
+| Delivery terms                                                        | No          | **Yes**     | No          | No          | No         | No          | No              | **Yes**                               | **Yes**    | **Yes**   | No         |
+| Mode of transport                                                     | **Yes**     | **Yes**     | No          | **Yes**     | **Yes**    | **Yes**     | No              | No                                    | **Yes**    | **Yes**   | No         |
+| State of origin (Region of origin)  | No          | **Yes**     | No          | No          | No         | **Yes**     | No              | No                                    | No         | No        | No         |
+| County of origin (Region of origin) | No          | No          | No          | No          | **Yes**    | No          | No              | No                                    | No         | **Yes**   | No         |
+| Statistics procedure                                                  | **Yes**     | No          | No          | No          | **Yes**    | No          | **Yes**         | No                                    | No         | **Yes**   | No         |
+
+**Additional elements for country purposes**
+
+| **Value**                                                                       | **Austria** | **Belgium** | **Denmark** | **Finland** | **France** | **Germany** | **Netherlands** | **Northern Ireland (United Kingdom)** | **Poland** | **Spain** | **Sweden** |
+|---------------------------------------------------------------------------------|-------------|-------------|-------------|-------------|------------|-------------|-----------------|---------------------------------------|------------|-----------|------------|
+| Transport document (Invoice, Identification of packing slip or product receipt) | No          | No          | No          | No          | No         | No          | **Yes**         | No                                    | No         | No        | No         |
+| Port ((Air)port of (un)loading)                                                 | No          | No          | No          | No          | No         | No          | No              | No                                    | No         | **Yes**   | No         |
 
 > [!NOTE]
 > Select all values that must be reported on the **Compression of Intrastat** page.
