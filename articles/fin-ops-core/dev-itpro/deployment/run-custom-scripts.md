@@ -110,11 +110,11 @@ The following list describes some best practices for successfully writing, imple
 - **Do** use unique class names for each script (for example, by including a reference to a work item in the name). This approach will prevent name clash issues when you upload the script. If a new iteration of a script is required, be sure to give it a new name.
 - **Do** test each script in a non-production environment first. Test for the intended impact and for unintentional side-effects on related data. Ensure that all business processes that might be affected can be successfully and fully completed afterwards.
 
-## Upload and run a deployable package in Supply Chain Management
+## Upload and run a deployable package
 
 Use the following procedure to upload and run a script.
 
-1. In Dynamics 365 Supply Chain Management, go to **System administration \> Periodic tasks \> Database \> Custom scripts**.
+1. In your finance and operations app, go to **System administration \> Periodic tasks \> Database \> Custom scripts**.
 1. Select **Upload**.
 1. Select the deployable package that you created as described earlier in this topic. You will be prompted to specify the purpose of the script.
 1. The script must now be approved by a user other than the user who uploaded it. The approver must follow these steps:
@@ -143,6 +143,6 @@ Your selection in the last step defines the final state for the script. You can 
 
 ## Upload and run a deployable package through LCS
 
-Instead of deploying your deployable package through Supply Chain Management as described in the previous section, you can upload it to LCS and use the regular procedure to deploy it. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+Instead of deploying your deployable package through the user interface for your finance and operations app, as described in the previous section, you can upload it to LCS and use the regular procedure to deploy it. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 Although this approach has fewer restrictions, it provides less error protection. Additionally, because it requires a restart of all servers, it will cause some downtime.
