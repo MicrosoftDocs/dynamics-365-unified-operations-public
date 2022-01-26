@@ -37,7 +37,12 @@ The process of moving subscriptions from one type of agreement to another is pri
 > [!NOTE]
 > The movement of subscriptions between agreement types isn't the same as the movement of an Azure Active Directory (Azure AD) tenant. If the contractual changes in the agreements require that the **Azure AD tenant** on the subscriptions be changed, you must also follow the process that is described in [Move LCS implementation projects to different Azure AD tenants](move-lcs-implementation-project-tenant.md).
 
-Subscriptions come with **two standard environments**: a **Production** environment and a **Tier-2 Standard Acceptance Test** environment. These environments aren't affected by the movement of subscriptions between agreement types. Impact is visible in LCS only if the customer has additional **add-on environments**. In this case, no explicit action related to the add-on environments is required by the partner or customer. However, during the time when both CSP and VL agreements are active or in grace period, additional slots for the add-on environments are visible in LCS. Those should simply be ignored – they will disappear again as soon as the redundant licensing agreement has expired. Those additional slots must **not** be deployed as this would violate the licensing agreement.
+Subscriptions come with two standard environments: 
+
+- A **production** environment 
+- A **Tier-2 Standard Acceptance Test** environment.
+
+These environments aren't affected by the movement of subscriptions between agreement types. Impact is visible in LCS only if the customer has additional **add-on environments**. In this case, no explicit action related to the add-on environments is required by the partner or customer. However, during the time when both CSP and VL agreements are active or in grace period, additional slots for the add-on environments are visible in LCS. Those should simply be ignored – they will disappear again as soon as the redundant licensing agreement has expired. Those additional slots must **not** be deployed as this would violate the licensing agreement.
 
 ### Commercial activities
 
