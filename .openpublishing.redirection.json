@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/glossary.md",
+      "redirect_url": "/dynamics365/finance/index",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/pim/hazardous-materials-pim.md",
       "redirect_url": "/dynamics365/supply-chain/pim/hazmat-overview",
       "redirect_document_id": "false"
@@ -9728,7 +9733,7 @@
     },
     {
       "source_path": "articles/fin-and-ops/get-started/glossary.md",
-      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/glossary",
+      "redirect_url": "/dynamics365/finance/index",
       "redirect_document_id": "false"
     },
     {
