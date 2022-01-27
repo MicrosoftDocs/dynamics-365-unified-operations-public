@@ -595,7 +595,7 @@
     - name: Benefits 
       items:
       - name: Define and manage a benefits program
-        href: human-resources/hr-benefits-manage-program.md
+        href: hr-benefits-manage-program.md
       - name: Benefit eligibility policies
         href: hr-benefits-eligibility-policies.md
       - name: Benefit eligibility process
