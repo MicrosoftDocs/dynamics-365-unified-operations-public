@@ -595,23 +595,23 @@
     - name: Benefits 
       items:
       - name: Define and manage a benefits program
-        href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
+        href: human-resources/hr-benefits-manage-program.md
       - name: Benefit eligibility policies
-        href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
+        href: hr-benefits-eligibility-policies.md
       - name: Benefit eligibility process
-        href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
+        href: hr-benefits-eligibility-process.md
       - name: Define benefit eligibility rules and policies
-        href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
+        href: hr-benefits-define-eligibility-rules.md
       - name: Deliver an employee benefits program
-        href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
+        href: hr-benefits-deliver-employee-benefits-program.md
       - name: Create new benefits
-        href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
+        href: hr-benefits-create.md
       - name: Enroll workers in benefits
-        href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
+        href: hr-benefits-enroll-workers.md
       - name: Manage benefit expiration dates
-        href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
+        href: hr-benefits-expiration-dates.md
       - name: Generate ACA reports
-        href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json 
+        href: hr-benefits-aca-reports.md 
     - name: Benefits management
       items:
       - name: Benefits management overview
