@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
-# Welcome to Dynamics 365 Talent
+# Dynamics 365 Talent Homepage
 
 [!include [banner](includes/banner.md)]
 
