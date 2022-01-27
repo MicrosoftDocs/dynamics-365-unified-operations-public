@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 Talent Homepage
+title: Dynamics 365 Talent home page
 description: Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. These processes include employee retention, benefits administration, training, performance reviews, and change management.
 author: andreabichsel
 ms.date: 10/03/2019
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
-# Dynamics 365 Talent Homepage
+# Dynamics 365 Talent home page
 
 [!include [banner](includes/banner.md)]
 
