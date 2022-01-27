@@ -1350,17 +1350,6 @@ Here are some examples of errors:
         > 
         > **DB sync failed.**
 
-## A "No subscription found in the context" error occurs when you run Add-CertToServicePrincipal
-
-Recent versions of Windows PowerShell might cause a "No subscription found in the context" error. To resolve this issue, install and load an older version of Windows PowerShell, such as version 5.7.0.
-
-```powershell
-# Install version 5.7.0 of Azure PowerShell
-Install-Module -Name AzureRM -RequiredVersion 5.7.0
-
-# Load version 5.7.0 of Azure PowerShell
-Import-Module -Name AzureRM -RequiredVersion 5.7.0
-```
 ## Service Fabric Explorer warnings occur after you restart a machine
 
 **Error:**
