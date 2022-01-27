@@ -1672,6 +1672,6 @@ At C:\InfrastructureScripts\Scripts\Add-CertToServicePrincipal.ps1:93 char:44
    + FullyQualifiedErrorId : nullToObjectInvalidCast,Microsoft.PowerShell.Commands.WhereObjectCommand
 ```
 
-**Reason:** Version 7.0 of the Az powershell module has introduced breaking changes that are not compatible with the scripts.
+**Reason:** Version 7.0 of the Azure PowerShell module has introduced breaking changes that are not compatible with the scripts.
 
-**Resolution:** Downgrade the version of the Az powershell module to version 6.6.0.
+**Resolution:** Downgrade the version of the Azure PowerShell module to version 6.6.0.
