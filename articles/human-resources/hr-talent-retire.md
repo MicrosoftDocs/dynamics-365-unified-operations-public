@@ -40,15 +40,18 @@ For more information regarding retirement, see:
 We'll continue to support Dynamics 365 Human Resources, which will help our customers get the workforce insights needed to build data-driven employee experiences across 
 compensation, benefits, leave and absence, compliance, payroll, performance feedback, training and certification, and self-service programs.
 
-Important details about the retirement of Dynamics 365 Talent apps:
+## Dynamics 365 Talent apps retirement FAQ:
 
-1)	What is the user experience for both Dynamics 365 Talent - Attract and Onboard apps starting February 1, 2022?
+###	What is the user experience for both Dynamics 365 Talent - Attract and Onboard apps starting February 1, 2022?
+
 Users will not be able to use the applications and are redirected to a retirement page.
 
-2)	Can customers continue to export data for both Dynamics 365 Talent - Attract and Onboard apps after February 1, 2022?
+### Can customers continue to export data for both Dynamics 365 Talent - Attract and Onboard apps after February 1, 2022?
+  
 Retirement was announced in December 2019 and the required export capabilities were provided until February 1, 2022. 
 
-3)	Will the Customer’s data related to both Dynamics 365 Talent - Attract and Onboard apps in Dataverse be deleted after February 1, 2022?
+### Will the Customer’s data related to both Dynamics 365 Talent - Attract and Onboard apps in Dataverse be deleted after February 1, 2022?
+
 The Dataverse entities will remain in the customers Dataverse environment even after retirement unless the Human Captial Management Talent solution is deleted or uninstalled.
 
 
