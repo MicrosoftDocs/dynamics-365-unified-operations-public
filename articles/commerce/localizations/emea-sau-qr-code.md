@@ -127,17 +127,17 @@ Follow these steps to create deployable packages that contain Commerce component
 1. Open the MSBuild Command Prompt for Visual Studio utility and run **msbuild** under the Retail SDK folder to create deployable packages.
 1. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-## Printing QR code images on OPOS printers
+## Print QR code images on OPOS printers
 
-When using an OPOS printer, you may need to implement additional customizations to support printer-specific requirements to the QR code image. For example, you may need to convert the QR code image from the *png* format to the *bmp* format. Below is an example of such customization.
+When using an OPOS (OLE for Retail POS) printer, you may need to implement additional customizations to support printer-specific requirements to the QR code image. For example, you may need to convert the QR code image from the *png* format to the *bmp* format. Below is an example of such customization.
 
 > [!NOTE]
-> This customization example was tested using the EPSON TM-T88V OPOS printer. It may need to be modified to support different printer makes or models.
+> The customization example below was tested using the EPSON TM-T88V OPOS printer. It may need to be modified to support different printer makes or models.
 
 Follow these steps to create a new extension and add it to your environment:
 
 1. Install the Retail software development kit (SDK). For more information, see [Retail software development kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-2. In the Retail SDK, create a C\# project under the **CommerceRuntimeSamples.sln** solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+1. In the Retail SDK, use the following code per your Commerce version to create a C\# project under the **CommerceRuntimeSamples.sln** solution in **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
 # [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
 
@@ -173,7 +173,7 @@ Follow these steps to create a new extension and add it to your environment:
   </ItemGroup>
 </Project>
 ```
-You also need to change the value of the HintPath element to reference the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting.dll** library under the Internet Information Services (IIS) Retail Server site location.
+You must also change the value of the **HintPath** element to reference the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting.dll** library under the Internet Information Services (IIS) Retail Server site location.
 
 # [Commerce 10.0.26 and later](#tab/commerce-10-0-26)
 
@@ -207,7 +207,7 @@ You also need to change the value of the HintPath element to reference the **Mic
 
 ---
 
-3. Create an extension class:
+3. Create an extension class using the following code per your Commerce version below.
 
 # [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
 
@@ -515,7 +515,7 @@ namespace Contoso
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.QrCodeExtension.dll" />
         ```
 	
-6. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+6. Start the MSBuild Command Prompt for Visual Studio utility and run **msbuild** under the Retail SDK folder to create deployable packages.
 7. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
     
