@@ -46,6 +46,9 @@ To use the Dynamics 365 Payment Connector for Adyen, you must have a separate ag
 
 The following prerequisites must be completed before payments can be configured in any channel.
 
+#### Configure your Adyen Account settings for Dynamics 365 Commerce
+In addition to the below instructions, you must also complete the Adyen setup instructions for Dynamics 365 Commerce. Please follow the instructions provided in the [Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics) article.
+
 #### Set up a processor for new credit cards
 
 To process payments across point of sale (POS) terminals, a call center, or e-Commerce, you must configure a new default payment processor for new credit cards. Follow these steps to configure a default payment processor.
