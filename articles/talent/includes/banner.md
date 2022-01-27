@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Dynamics 365 Talent: Attract and Onboard apps are being retired. Learn more at [Retiring Dynamics 365 Talent: Attract and Onboard apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).
+> Dynamics 365 Talent: Attract and Onboard apps are retired as of February1, 2022. Learn more at [Dynamics 365 Talent: Attract and Onboard apps retirement](../human-resources/hr-talent-retire.md).
