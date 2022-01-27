@@ -19,7 +19,7 @@ The prospect to cash solution available for Data Integrator is not compatible wi
 
 ## Install the last "dorman" version of the Data Integrator Prospect to cash solution
 
-**P2C Version 15.0.0.2** is considered as the last "dorman" version of the data integrator prospect to cash solution. You can download it from [github]().
+**P2C Version 15.0.0.2** is considered as the last "dorman" version of the data integrator prospect to cash solution. You can download it from [github](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/P2C).
 
 You need to install it manually. Upon installing, everything remains exactly the same, except the msdynce_AccountNumber index is removed.
 
