@@ -29,8 +29,14 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to do reporting for multiple value-added tax (VAT) registrations.
-The functionality is available for the following countries/regions: Austria, Belgium, Denmark, Finland, France, Germany, Netherlands, United Kingdom, Norway, Spain, Sweden, Switzerland, Poland.
+This topic explains how to do reporting for multiple value-added tax (VAT) registrations from the single legal entity. 
+
+The functionality is available for the following countries/regions: Austria, Belgium, Denmark, Finland, France, Germany, Netherlands, United Kingdom, Norway, Spain, Sweden, Switzerland.
+The scope of reporting is limited to generation of the following reports:
+- VAT declaration
+- EU sales list
+- Intrastat
+
 For overview of the funcitonality, review the TechTalk session provided on September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/vat-reporting-for-multiple-tax-registrations-in-single-legal-entity-september-29-2021)
 
 ## Prerequisites
@@ -66,6 +72,7 @@ In the **Feature management** workspace, enable the following features:
 2. On the **General** tab, set **Enable tax service** to **Yes**.
 3. On the **Multiple VAT registrations** tab, set **VAT declaration**, **EU Sales List**, and **Intrastat** to **Yes** to activate VAT reporting, EU sales list reporting, or Intrastat reporting respectively, for the selected legal entity.
 
+> Note. Only country specific functionality that is applicable for country of the selected legal entity is available. Formats of VAT declaration, EU sales list, Intrastat are available for countries of other VAT registrations. Other country specific functionality that is applicable for the countries of other VAT registrations is not available in this legal eneity.
 
 ## Set up intra-community reporting for multiple VAT registrations
 
@@ -116,17 +123,17 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | **Release** | **Country** | **ER format**                                                                     |
     |-------------|-------------|-----------------------------------------------------------------------------------|
     | 10.0.19     | All         | Intrastat model.version.16                                                        |
-    | 10.0.19     | NL          | Intrastat (NL).version.1.3                                                        |
-    | 10.0.20     | FR          | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3      |
-    | 10.0.20     | UK (NI)     | Intrastat (UK).version.1.2                                                        |
-    | 10.0.21     | AT          | Intrastat (AT).version.16.3                                                       |
-    | 10.0.21     | DE          | INSTAT XML (DE).version.22.9.9                                                    |
-    | 10.0.21     | ES          | Intrastat (ES).version.16.7                                                       |
-    | 10.0.21     | SE          | Intrastat (SE).version.16.4                                                       |
-    | 10.0.23     | FI          | Intrastat (FI).version.2.3                                                        |
-    | 10.0.23     | DK          | Intrastat (DK).version.25.4                                                       |
-    | 10.0.23     | PL          | Intrastat (PL).version.25.5                                                       |
-    | 10.0.25     | BE          | Intrastat (BE).version.2.9                                                       |
+    | 10.0.19     | Netherlands          | Intrastat (NL).version.1.3                                                        |
+    | 10.0.20     | France          | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3      |
+    | 10.0.20     | United Kingdom (Northern Ireland)     | Intrastat (UK).version.1.2                                                        |
+    | 10.0.21     | Austria          | Intrastat (AT).version.16.3                                                       |
+    | 10.0.21     | Germany          | INSTAT XML (DE).version.22.9.9                                                    |
+    | 10.0.21     | Spain          | Intrastat (ES).version.16.7                                                       |
+    | 10.0.21     | Sweden          | Intrastat (SE).version.16.4                                                       |
+    | 10.0.23     | Finland          | Intrastat (FI).version.2.3                                                        |
+    | 10.0.23     | Denmark          | Intrastat (DK).version.25.4                                                       |
+    | 10.0.23     | Poland          | Intrastat (PL).version.25.5                                                       |
+    | 10.0.25     | Belgium          | Intrastat (BE).version.2.9                                                       |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -134,11 +141,7 @@ For more information, see [Download ER configurations from the Global repository
 
 A system of two-digit transaction codes is used to differentiate types of trade at the European level. For more information, see [European business statistics compilers' manual for international trade in goods statistics — 2021 edition - Products Manuals and Guidelines - Eurostat (europa.eu)](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-21-004).
 
-Most countries use two-digit transaction codes. However, in some countries, such as the United Kingdom, the second digit in country-specific guidelines might differ from EU guidelines. In this case, configure country-specific transaction codes, and then manually select them in documents.
-
-Some countries, such as Belgium, Italy, and Austria, use a one-digit transaction code. In this case, you can configure two-digit transaction codes according to European guidelines. Then, if the country-specific Intrastat format should have only one digit, only the first digit will be exported to it. Alternatively, you can configure one-digit transaction code and select it manually in the documents.
-
-Before you configure settings and start to use the Intrastat feature, analyze country transaction codes, and decide how to set up the transaction codes for countries.
+Starting from 01.01.2022, a unified system of 2-digit transaction codes is used in the European union countries.
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Transaction codes**.
 2. Create the required transaction codes.
@@ -239,17 +242,17 @@ All tax registrations have the same settings for EU sales list parameters.
 | **Release** | **Country** | **ER format**                                                          |
 |-------------|-------------|------------------------------------------------------------------------|
 | 10.0.19     | All         | EU Sales list model.version.9                                          |
-| 10.0.19     | NL          | EU Sales list (NL).version.1.10                                        |
-| 10.0.20     | FR          | EU Sales list (FR).version.1.2                                         |
-| 10.0.20     | UK (NI)     | EU Sales list XML (UK).version.9.6</br>EU Sales list TXT (UK).version.9.7 |
-| 10.0.21     | AT          | EU Sales list (AT).version.9.5                                         |
-| 10.0.21     | DE          | EU Sales list (DE).version.9.5                                         |
-| 10.0.21     | ES          | EU Sales list (ES).version.9.2                                         |
-| 10.0.21     | SE          |EU Sales list (SE).version.13.7                                         |
-| 10.0.23     | FI          |EU Sales list (FI).version.2.5                                          |
-| 10.0.23     | DK          |EU Sales list (DK).version.13.4                                         |
-| 10.0.24     | PL          |EU Sales list (PL).version.14.7                                         |
-| 10.0.25     | BE          |EU Sales list (BE).version.2.3                                          |
+| 10.0.19     | Netherlands          | EU Sales list (NL).version.1.10                                        |
+| 10.0.20     | France          | EU Sales list (FR).version.1.2                                         |
+| 10.0.20     | United Kingdom (Northern Ireland)     | EU Sales list XML (UK).version.9.6</br>EU Sales list TXT (UK).version.9.7 |
+| 10.0.21     | Austria          | EU Sales list (AT).version.9.5                                         |
+| 10.0.21     | Germany          | EU Sales list (DE).version.9.5                                         |
+| 10.0.21     | Spain          | EU Sales list (ES).version.9.2                                         |
+| 10.0.21     | Sweden          |EU Sales list (SE).version.13.7                                         |
+| 10.0.23     | Finland          |EU Sales list (FI).version.2.5                                          |
+| 10.0.23     | Denmark          |EU Sales list (DK).version.13.4                                         |
+| 10.0.24     | Poland          |EU Sales list (PL).version.14.7                                         |
+| 10.0.25     | Belgium          |EU Sales list (BE).version.2.3                                          |
 
 ## Generate intra-community reporting for multiple VAT registrations
 
@@ -325,16 +328,16 @@ All tax registrations have the same settings for EU sales list parameters.
 | **Release** | **Country** | **ER format** | **Link to topic** |
 |-------------|-------------|---------------|-------------------|
 | 10.0.19     | All         | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138|    |
-| 10.0.19     | NL          | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md)|
-| 10.0.20     | FR          | VAT Declaration Excel (FR).version.85.15| [VAT declaration (France)](emea-fra-vat-declaration-preview-france.md) |
-| 10.0.21     | UK          | MTD VAT importing model mapping (UK).version.31.36</br>Tax declaration model mapping.version.95.158</br>VAT Declaration Excel (UK).version.32.30.16</br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](emea-gbr-mtd-vat-integration.md)   |
-| 10.0.21     | SE          | VAT Declaration XML (SE).version.95.11</br>VAT Declaration Excel (SE).version.95.11.13| [VAT declaration (Sweden)](emea-swe-vat-declaration-sweden.md)   |
-| 10.0.21     | CH          | Tax declaration model.version.96</br>Tax declaration model mapping.version.96.164</br>VAT Declaration XML (CH).version.96.16</br>VAT Declaration Excel (CH).version.96.16.9 | [VAT declaration (Switzerland)](emea-che-vat-declaration-switzerland.md) |
-| 10.0.22     | AT          | VAT Declaration XML (AT).version.101.23</br>VAT Declaration Excel (AT).version.101.23.17 | [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md) |
-| 10.0.23     | DE          | VAT Declaration XML (DE).version.101.16</br>VAT Declaration Excel (DE).version.101.16.12 | [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md) |
-| 10.0.21 | NO | Tax declaration model.version.112</br>Tax declaration model mapping.version.112.192</br>VAT Declaration XML (NO).version.112.54</br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
-| 10.0.23     | ES          | VAT Declaration TXT(ES).version.101.28</br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](emea-esp-vat-declaration-spain.md) |
-| 10.0.25     | DK          | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](emea-dnk-vat-declaration-preview-denmark.md) |
+| 10.0.19     | Netherlands          | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md)|
+| 10.0.20     | France          | VAT Declaration Excel (FR).version.85.15| [VAT declaration (France)](emea-fra-vat-declaration-preview-france.md) |
+| 10.0.21     | United Kingdom          | MTD VAT importing model mapping (UK).version.31.36</br>Tax declaration model mapping.version.95.158</br>VAT Declaration Excel (UK).version.32.30.16</br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](emea-gbr-mtd-vat-integration.md)   |
+| 10.0.21     | Sweden          | VAT Declaration XML (SE).version.95.11</br>VAT Declaration Excel (SE).version.95.11.13| [VAT declaration (Sweden)](emea-swe-vat-declaration-sweden.md)   |
+| 10.0.21     | Switzerland          | Tax declaration model.version.96</br>Tax declaration model mapping.version.96.164</br>VAT Declaration XML (CH).version.96.16</br>VAT Declaration Excel (CH).version.96.16.9 | [VAT declaration (Switzerland)](emea-che-vat-declaration-switzerland.md) |
+| 10.0.22     | Austria          | VAT Declaration XML (AT).version.101.23</br>VAT Declaration Excel (AT).version.101.23.17 | [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md) |
+| 10.0.23     | Germany          | VAT Declaration XML (DE).version.101.16</br>VAT Declaration Excel (DE).version.101.16.12 | [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md) |
+| 10.0.21 | Norway | Tax declaration model.version.112</br>Tax declaration model mapping.version.112.192</br>VAT Declaration XML (NO).version.112.54</br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
+| 10.0.23     | Spain          | VAT Declaration TXT(ES).version.101.28</br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](emea-esp-vat-declaration-spain.md) |
+| 10.0.25     | Denmark          | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](emea-dnk-vat-declaration-preview-denmark.md) |
 
 ## Generate a VAT declaration for multiple VAT registrations
 
@@ -353,3 +356,7 @@ All tax registrations have the same settings for EU sales list parameters.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+## Known limitations
+
+
