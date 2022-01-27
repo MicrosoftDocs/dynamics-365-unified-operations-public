@@ -5,7 +5,7 @@ title: United Kingdom overview
 description: This topic provides links to documentation resources for the United Kingdom. 
 author: kfend
 ms.date: 09/07/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: United Kingdom
 # ms.search.industry: 
 ms.author: kfend

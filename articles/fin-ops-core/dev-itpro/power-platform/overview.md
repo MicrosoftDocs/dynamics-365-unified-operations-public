@@ -5,7 +5,7 @@ title: Microsoft Power Platform integration with Finance and Operations apps
 description: This topic provides an overview for Microsoft Power Platform integration via Microsoft Dynamics Lifecycle Services for Finance and Operations apps and Microsoft Dataverse.
 author: Sunil-Garg
 ms.date: 05/20/2021
-ms.topic: article
+ms.topic: overview
 ms.prod:
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry:
 ms.author: sunilg

@@ -4,7 +4,7 @@
 title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: angelmarshall
-ms.date: 09/24/2021
+ms.date: 01/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,14 +48,14 @@ Follow these steps to change your update settings.
 
 2. On the **Update settings** tab, set the following configuration options as you require:
 
-    - **Update environment** – Select an alternate sandbox environment that should be updated before the production update.
+    - **Default Sandbox Update environment** – Select an alternate sandbox environment that should be updated before the production update.
 
         By default, Microsoft first updates the Tier 2 Standard Acceptance Test (sandbox) environment that is included in the base offer. It then applies the update to the production environment. If you've purchased Tier 2 and higher sandbox add-on environments and want a different sandbox to be updated, you can use this field to change the default environment to an alternate environment.
 
         > [!IMPORTANT]
         > The environment that you select here will be updated seven calendar days before the update cadence that is selected for the production environment.
 
-    - **Production environment update cadence** – Select a recurring cadence for updates to your production environment. The sandbox environment that is selected in the **Update environment** field will be updated seven calendar days before the selected cadence. The following options are available:
+    - **Production environment update cadence** – Select a recurring cadence for updates to your production environment. The sandbox environment that is selected in the **Default Sandbox Update environment** field will be updated seven calendar days before the selected cadence. The remaining additional sandboxes will be updated on the same cadence as the production environment. The following options are available:
 
         - **Select the cadence** – Select whether to receive updates in the first, second, or third week of the month.
         - **Select one of the three time-zones** – Select the time zone that the production environment should be updated in: Eastern Time (UTC – 5), Hong Kong Time (UTC + 8), or Greenwich Mean Time (UTC + 0).
@@ -69,7 +69,7 @@ Follow these steps to change your update settings.
 
  3. When you've finished setting the configuration options, select **Save**.
  
-After you set the update environment and update cadence, Microsoft generates an update calendar for the next six months. This calendar shows exactly when the configured sandbox and production environments will be updated. Therefore, you will know when to expect each update. To view the calendar, select the **View update calendar** link under the **Production environment update cadence** options.
+After you set the update environment and update cadence, Microsoft generates an update calendar for the next six months. This calendar shows exactly when the configured sandbox and production environments will be updated. Therefore, you will know when to expect each update. To view the calendar, select **View the update calendar**.
 
 > [!IMPORTANT]
 > After the settings are saved, you can change them at any time. However, if there is an ongoing rollout, the new settings won't be used to update the existing rollout timings. Instead, they will start to be used in the next rollout. An ongoing rollout is defined by the 14-day period between the date when the email notification about the update of the sandbox environment is sent and the date when the production environment is updated.
@@ -95,6 +95,8 @@ In addition to the default sandbox environment and the production environment, i
 The additional sandbox environments will be updated on the same cadence as your production environment, based on your update settings. If you have additional sandbox environments, they will be scheduled for update together.
 
 If you have not deployed the production environment, none of the additional sandbox environments will be auto-updated.
+
+If the production environment is updated **before** the email about the production update is sent, then the production environment, as well as all additional sandbox environments, **will not** get updated. If the production environment is updated **after** the email about the production update is sent, then the production environment **will** be canceled, but additional sandbox enviornments will get updated.
 
 If there’s any update failure on the production environment or any of the additional sandbox environments, it will not interfere with the remaining updates. That is, if the production update failed, the additional sandbox update will continue. Similarly, if you have additional sandbox environments and one of them failed during the update, the others will continue.
 

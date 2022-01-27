@@ -3,9 +3,9 @@
 
 title: Europe overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Europe. 
-author: ShylaThompson
-ms.date: 02/24/2021
-ms.topic: article
+author: kfend
+ms.date: 01/15/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -99,6 +99,7 @@ This topic includes information and links to resources that can help you set up 
   - [Create and submit VAT report](tasks/create-submit-vat-report.md)
   - [View transactions on settlement for Eastern Europe](emea-transactions-settlement-form.md)
   - [Tax point date (Date of VAT register)](emea-tax-point-date.md)
+  - [Date of vendor VAT register](emea-date-vendor-VAT-register.md)
 - [Financial reason feature extension](emea-financial-reason.md)
 
 ## Additional resources

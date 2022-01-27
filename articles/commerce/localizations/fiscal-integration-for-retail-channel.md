@@ -6,7 +6,7 @@ description: This topic provides an overview of the fiscal integration capabilit
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 09/22/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: epopov

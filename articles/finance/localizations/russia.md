@@ -5,7 +5,7 @@ title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
 author: kfend
 ms.date: 07/20/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -118,7 +118,7 @@ This topic provides information about functionality that supports Russian regula
 - [Transactions through intermediary](rus-transactions-through-intermediary.md)
   - [Purchases on commission](rus-purchases-on-commission.md)
   - [Sales on commission](rus-sales-on-commission.md)
-
+- [Local reports and primary forms in Accounts receivable and Accounts payable](rus-local-reports-primary-forms-ar-ap.md)
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)
