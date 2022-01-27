@@ -4,7 +4,7 @@
 title: Finance insights home page
 description: Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models.
 author: ShivamPandey-msft
-ms.date: 11/15/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,7 +53,7 @@ This topic applies to Microsoft Dynamics 365 Finance version 10.0.21 and later.
 
 ### License requirements
 
-Finance insights uses AI Builder credits to create financial predictions, all necessary licenses for this usage are included with the tenant license. Each Dynamics 365 Finance tenant is provided 20,000 AI Builder credits each month. If additional credits are required for business needs they can be purchased directly from AI Builder.
+Finance insights uses AI Builder credits to create financial predictions. All the necessary licenses for this are included with the tenant license. Each Dynamics 365 Finance tenant is provided 20,000 AI Builder credits each month. If additional credits are required for business needs, they can be purchased directly from AI Builder.
 
 ### Historical data requirements
 
