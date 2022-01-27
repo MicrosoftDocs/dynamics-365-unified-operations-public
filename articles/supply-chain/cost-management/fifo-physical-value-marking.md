@@ -33,9 +33,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-First in, First out (FIFO) is an inventory model in which the first acquired receipts are issued first. Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the financial date of the inventory transaction. 
+First In, First Out, (FIFO), is an inventory-management and valuation method in which inventory produced or acquired first is sold, used, or disposed of first. During the inventory close process in Dynamics 365 Supply Chain Management, the system will create settlements where the first receipt is matched against the first issue, and so on.
+The settlements and matching principle are based on the financial date of the inventory transactions. As preliminary assessment of the settlements and adjustments can be performed by running the inventory recalculation process. 
 
-When you use FIFO, you don’t have to use the FIFO rule. Instead, you can mark inventory transactions so that a specific item receipt is settled against a specific issue. We recommend a periodic inventory closing when you use the FIFO inventory model. The following examples show the effect of using FIFO in three configurations:
+You can override the FIFO principle by marking inventory transactions so that a specific item receipt is settled against a specific issue. A periodic inventory closing is required when you use the FIFO inventory model to create settlements and adjust the value of issues according to the FIFO principle. Until you run the inventory close process, issue transactions are valued at the running average when the physical and financial updates occured. The running average is calculated at the point in time the physical or financial update is performed, unless you are using marking. The following examples show the effect of using FIFO in three configurations:
 
 -   FIFO without the **Include physical value** option
 -   FIFO with the **Include physical value** option
