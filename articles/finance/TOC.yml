@@ -3208,6 +3208,9 @@
               href: localizations/rus-not-valuable-assets.md
             - name: Working clothes/special rigging accounting (Russia)
               href: localizations/rus-working-clothes-instruments-accounting.md
+          - name: Integration fixed assets with Asset management module
+            href: localizations/rus-integration-eam-with-fixed-asset.md
+
         - name: Accounts payable and receivable
           items:
           - name: Credit note corrections (Russia)
