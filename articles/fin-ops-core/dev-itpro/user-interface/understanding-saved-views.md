@@ -71,22 +71,29 @@ The style of a form determines the level of support for views.
 ## Modifying forms to fully utilize views
 While most forms will work well with saved views, there are some areas that may require changes to form logic so that views work as expected on these forms without causing confusion. Here are some key items to keep in mind during development of new forms.
 
--    **Custom filters**: Custom filters are controls modeled on forms that cause modifications to the query. Extra work is needed to ensure that view's are marked as having unsaved changes after using a custom filter, and additional work may beneeded to ensure that the value of a custom filter always aligns to the current view or query.  
-     -    Before version 10.0.25, only adjustments to the query (e.g. filters/sorts) defined through the system-defined filtering mechanisms (Quick Filter, grid column headers, the Filter pane, or Advanced filter or sort) would trigger a view to indicate it had unsaved changes. If a custom filter was used to change the query, the view would not appear to have unsaved changes (until the query was later modified using one of the standard mechanisms). Additionally, if a view was loaded with a query modification related to a custom filter, the custom filter would not reflect that modification, resulting in suboptimal user experience. 
-     -    Starting with version 10.0.25, form owners can provide better experiences with custom filters by taking advantage of the following two methods, which were introduced specifically for improving custom filter support with saved views.
-          -  **public void queryFiltersChanged()**: This new method is called when the query is reexecuted by the system changes the query (e.g. when a view loads or when a system filtering mechanism is used), which gives the custom filter control an opportunity to interrogate the mostly recently executed query to find any relevant filter and update its value to appropriately reflect that query.  
-          -  **element.formCustomFilterChanged()**: This is a new API for the custom filter control to call when it has changed the query on the user's behalf. When called, the system will mark the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's modified() method if changes to the control immediately result in the query being refreshed, or call this API for a custom filter on button click if the adjustment of one or more custom filters requires a button for the changes to take effect.  
+### Custom filters
+Custom filters are controls modeled on forms that cause modifications to the query. Extra work is needed to ensure that view's are marked as having unsaved changes after using a custom filter, and additional work may beneeded to ensure that the value of a custom filter always aligns to the current view or query.  
+-  Before version 10.0.25, only adjustments to the query (e.g. filters/sorts) defined through the system-defined filtering mechanisms (Quick Filter, grid column headers, the Filter pane, or Advanced filter or sort) would trigger a view to indicate it had unsaved changes. If a custom filter was used to change the query, the view would not appear to have unsaved changes (until the query was later modified using one of the standard mechanisms). Additionally, if a view was loaded with a query modification related to a custom filter, the custom filter would not reflect that modification, resulting in suboptimal user experience. 
+-  Starting with version 10.0.25, form owners can provide better experiences with custom filters by taking advantage of the following two methods, which were introduced specifically for improving custom filter support with saved views.
+    -  **public void queryFiltersChanged()**: This new method is called when the query is reexecuted by the system changes the query (e.g. when a view loads or when a system filtering mechanism is used), which gives the custom filter control an opportunity to interrogate the mostly recently executed query to find any relevant filter and update its value to appropriately reflect that query.  
+    -  **element.formCustomFilterChanged()**: This is a new API for the custom filter control to call when it has changed the query on the user's behalf. When called, the system will mark the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's modified() method if changes to the control immediately result in the query being refreshed, or call this API for a custom filter on button click if the adjustment of one or more custom filters requires a button for the changes to take effect.  
 
--    **Opting forms out of views**: Due to the 
+### Opting forms out of views
+While generally not recommended, starting with version 10.0.25, developers can opt an individual form out of saved views support if needed. This will mean that no view selector is available on the form and there will be no publish capabilities.
 
--    X++ code late in the form startup cycle can interfere with views working as users expect. In particular, be aware of the following items: 
-     -    Modifications of the query after **super()** of **executeQuery()** or after **super()** of **run()** can cause the query aspect of a view to be ignored.  
-     -    Form changes after **super()** of **run()** can cause some user personalizations to be incorrectly applied to the default view.  
+To do this, place the following code pre-super() in the init() method of the form: 
+     this.disableSavedViewsOnForm();
 
--    **Secondary list pages**: Looking forward, views are meant to replace modeled secondary list pages in the long term.  
-     -   Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users as the default view query will not be executed when users navigate to a form using one of these menu items. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views.  
+### Code that can negatively impact views 
+X++ code late in the form startup cycle can interfere with views working as users expect. In particular, be aware of the following items: 
+-    Modifications of the query after **super()** of **executeQuery()** or after **super()** of **run()** can cause the query aspect of a view to be ignored.  
+-    Form changes after **super()** of **run()** can cause some user personalizations to be incorrectly applied to the default view.  
 
-     -  To avoid user confusion between form caption (such as "All customers") and view name (such as "My customers"), consider renaming form captions to be the name of the corresponding entity. For example, instead of a form caption of "All customers" or "All sales orders", the form caption would be modified to "Customers" and "Sales orders". 
+### Secondary list pages
+Looking forward, views are meant to replace modeled secondary list pages in the long term.  
+-   Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users as the default view query will not be executed when users navigate to a form using one of these menu items. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views.  
+
+-  To avoid user confusion between form caption (such as "All customers") and view name (such as "My customers"), consider renaming form captions to be the name of the corresponding entity. For example, instead of a form caption of "All customers" or "All sales orders", the form caption would be modified to "Customers" and "Sales orders". 
 
 ## Known issues
 This section provides a list of known issues for saved views while the feature is in a preview state.
