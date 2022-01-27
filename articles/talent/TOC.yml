@@ -1,7 +1,7 @@
 - name: Dynamics 365 Talent retirement
   href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
   items:
-  - name: Dynamics 365 Homepage
+  - name: Dynamics 365 Talent home page
     href: ./index.md
   - name: Get started
     items:
