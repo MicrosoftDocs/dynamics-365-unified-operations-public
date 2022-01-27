@@ -34,8 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 In December 2019, we announced the February 1, 2022 retirement of Dynamics 365 Talent - Attract and Onboard apps, giving our customers two years to plan.
 
 For more information regarding retirement, see:
-•	[Retiring Dynamics 365 Talent - Attract and Dynamics 365 Talent: Onboard Apps] - (https://community.dynamics.com/365/humanresources/b/dynamics365forhumanresources/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
-•	[Building a more successful workforce with Dynamics 365 Human Resources] - (https://cloudblogs.microsoft.com/dynamics365/bdm/2019/12/06/building-a-more-successful-workforce-with-dynamics-365-human-resources)
+•	[Retiring Dynamics 365 Talent - Attract and Dynamics 365 Talent: Onboard Apps](https://community.dynamics.com/365/humanresources/b/dynamics365forhumanresources/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+•	[Building a more successful workforce with Dynamics 365 Human Resources](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/12/06/building-a-more-successful-workforce-with-dynamics-365-human-resources)
 
 We'll continue to support Dynamics 365 Human Resources, which will help our customers get the workforce insights needed to build data-driven employee experiences across 
 compensation, benefits, leave and absence, compliance, payroll, performance feedback, training and certification, and self-service programs.
