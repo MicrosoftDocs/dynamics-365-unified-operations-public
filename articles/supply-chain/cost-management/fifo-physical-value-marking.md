@@ -55,7 +55,7 @@ In this example, the **Include physical value** check box is not selected on the
 -   5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
 -   5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
 -   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (running average of financially posted transactions)
--   7\.  Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 USD will be made to 3b.
+-   7\.  Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b resulting in a final cost of USD 10.00.
 
 The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option is not used. 
 
@@ -87,7 +87,7 @@ If the **Include physical value** check box is selected for an item on the **Ite
 -   5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
 -   5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
 -   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.67 (running average of physically and financially posted transactions).
--   7\.  Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b. Additionally, transaction 6a will be adjusted to receipt transaction cost of 2b. The system won't settle these transactions, because the receipt is updated physically but not financially. Instead, only an adjustment of USD -1.67 will be posted to the physical issue transaction. 
+-   7\.  Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b, resulting in a final cost of USD 10.00. Additionally, transaction 6a will be adjusted to receipt transaction cost of 2b. The system won't settle these transactions, because the receipt is updated physically but not financially. Instead, only an adjustment of USD -1.67 will be posted to the physical issue transaction resulting in an adjusted cost of USD 22.00.
 
 ![FIFO with Include Physical Value.](./media/FIFOWithIncludePhysicalValueV2.gif) 
 
