@@ -57,7 +57,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 
 ## Feature state changes in this release
 
-The following table lists features that became either mandatory or turned on by default starting in 10.0.25. All of these features will automatically be turned on for your system as soon as you update to 10.0.25. Mandatory features can't be turned off, but features that are on by default can still be turned off using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists features that became mandatory or on by default starting in 10.0.25. All of these features will automatically be turned on for your system as soon as you update to 10.0.25. Mandatory features can't be turned off, but features that are on by default can still be turned off using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 The table also lists features that were previously in public preview, but have changed to become generally available in 10.0.25, which means they are now recommended for use on production environments. These features are turned off by default unless otherwise noted, so you must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable them if you want to use them.
 
@@ -81,20 +81,12 @@ The table also lists features that were previously in public preview, but have c
 | Engineering change management | Variant generation for engineering products | On by default |
 | Inventory and warehouse management | Navigation to BOM version from BOM lines | Mandatory |
 | Master planning | Batchable firming and consolidation for planned bulk and pack batch orders | Generally available |
-| Master planning | Batchable firming and consolidation for planned bulk and pack batch orders | Generally available |
-| Master planning | Resource planning with maintenance | Generally available |
 | Master planning | Resource planning with maintenance | Generally available |
 | Master planning | Enable master plan setup wizard features | Mandatory |
-| Master planning | Enable master plan setup wizard features | Mandatory |
-| Master planning | Forecast model selection on Demand forecast details | Mandatory |
 | Master planning | Forecast model selection on Demand forecast details | Mandatory |
 | Master planning | Master planning progress visualization | Mandatory |
-| Master planning | Master planning progress visualization | Mandatory |
-| Master planning | Parallel firming of planned orders | Mandatory |
 | Master planning | Parallel firming of planned orders | Mandatory |
 | Master planning | Planned order firming with filtering | On by default |
-| Master planning | Planned order firming with filtering | On by default |
-| Master planning | Saved views for planned orders | On by default |
 | Master planning | Saved views for planned orders | On by default |
 | Procurement and sourcing | Disable Purchase Requisition Distribution Reset Button | Generally available |
 | Procurement and sourcing | Enable resetting procurement related workflows | Generally available |
