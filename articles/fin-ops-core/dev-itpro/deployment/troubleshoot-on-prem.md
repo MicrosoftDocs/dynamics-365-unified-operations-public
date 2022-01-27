@@ -1658,3 +1658,20 @@ Newtonsoft.Json.JsonReaderException: Unexpected character encountered while pars
 **Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommended that you upgrade to the latest version available.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
+## Add-CertToServicePrincipal fails
+
+**Issues:** The execution ends unexpectedly with the following error.
+
+```stacktrace
+Where-Object : Cannot convert null to type "System.DateTime".
+At C:\InfrastructureScripts\Scripts\Add-CertToServicePrincipal.ps1:93 char:44
++ ... edentials | Where-Object {[datetime]$_.EndDate -eq $localAgentCertEnd ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   + CategoryInfo          : InvalidArgument: (:) [Where-Object], RuntimeException
+   + FullyQualifiedErrorId : nullToObjectInvalidCast,Microsoft.PowerShell.Commands.WhereObjectCommand
+```
+
+**Reason:** Version 7.0 of the Az powershell module has introduced breaking changes that are not compatible with the scripts.
+
+**Resolution:** Downgrade the version of the Az powershell module to version 6.6.0.
