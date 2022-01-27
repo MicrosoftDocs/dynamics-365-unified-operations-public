@@ -1,6 +1,8 @@
 - name: Dynamics 365 for Talent
-  href: ./index.md
+  href: ../human-resources/hr-talent.retire.md
   items:
+  - name: Dynamics 365 Homepage
+    href: ./index.md
   - name: Get started
     items:
     - name: Get started with Talent
