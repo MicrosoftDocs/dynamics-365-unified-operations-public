@@ -48,6 +48,23 @@ For more information see:
 
 A **pro forma invoice** is an invoice that is prepared as an estimate of the actual invoice amounts before the invoice is posted. You can print a pro forma invoice either for a customer invoice for a sales order or for a free text invoice.
 
+## Using sales order customer invoice data entities
+You can use data entities to import and export sales order customer invoice information. There are different entities for the sales invoice header and the sales invoice line information.
+
+The following entities are available for sales invoice header information:
+
+- **Sales invoice journal header** entity (SalesInvoiceJournalHeaderEntity)
+- **Sales invoice headers V2** entity (SalesInvoiceHeaderV2Entity)
+
+**Sales invoice journal header** entity is recommended for the most performant sales header import and export experience. The **Sales invoice journal header** entity does not contain the **Sales tax amount** (INVOICEHEADERTAXAMOUNT) column, which represents the sales tax value on the sales invoice header. If your business scenario requires the header sales tax amount value, use the **Sales invoice headers V2** entity to import and export the sales invoice header information.
+
+The following entities are available for sales invoice line information:
+- **Customer invoice lines** entity (BusinessDocumentSalesInvoiceLineItemEntity)
+- **Sales invoice lines V3** entity (SalesInvoiceLineV3Entity)
+
+When determining which line entity to use for exports, consider whether a full or incremental push will be used, as well as the data composition. The **Sales invoice lines V3** entity supports more complex scenarios, for instance mapping to the inventory fields. This entity supports full push export scenarios. The **Customer invoice lines** entity is recommended for incremental pushes. This data entity contains a much simpler data composition than the **Sales invoice lines V3** and is preferred, particularly if inventory field integration is not required. Due to the differences in the mapping support between the line entities, the **Customer invoice lines** entity will typically perform faster than the **Sales invoice lines V3** entity.
+
+
 ## Post and print individual customer invoices that are based on sales orders
 Use this process to create an invoice that is based on a sales order. You might do this if you decide to invoice the customer before you deliver the goods or services. 
 
