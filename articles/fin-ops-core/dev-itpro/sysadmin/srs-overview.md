@@ -31,6 +31,122 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
+Cross-company data sharing concept allows you to share company specific master, reference, and setup data across companies within Finance and Operations deployment. 
 
-## What is this feature and how does it work?
+Two data sharing concepts are available: 
++ Duplicate Record Sharing (DRS) is a concept where creating, updating, or deleting of records in for any company in the policy is copied/replicated across all companies in the policy. Updates of fields will also be replicated if selected for sharing in the policy. DRS was the first sharing type made available. 
++ Master Company Sharing, aka Single Record Sharing (SRS), is a concept where a single physical record belonging to a master company is virtually shared across child companies. Create, update, or delete in any company in the policy will update the single records used across all companies. Master Company Sharing is currently in Preview.
+
+
+## Why should you consider cross-company data sharing?
+Whenever you need consistent data across more than one company in a deployment. There might be hundreds of companies or more in a deployment and the business requires that they at any time can rely on a single version of truth for critical data.
+
+Here are some examples of business scenarios for cross-company data sharing:
++	All customers should always be available to service and have the same terms across all companies.
++	Terms for payment and delivery should always be aligned across all companies per region. 
++	Configuration for cash and bank management parameters must be aligned to secure consistent processing across all companies.
+
+Using roles and security configuration it is possible to centralize maintenance of shared tables by only providing permissions to selected users in selected companies.
+
+## Data sharing policies
+Data sharing is based on configuration of Data sharing policies. Policies let you control the following aspects of data sharing:
++	Data sharing concept
++	The tables that are shared
++	The fields that are shared
++	The companies that participate in the sharing
+
+[image 1]()
+
+
+The same company and table can only be in one enabled policy. It is possible to share the same table in more than policy. This can be required when the limits of records or companies are reached for DRS, or to create policies for tables that need to be shared differently per country/region.
+
+
+## When to consider Duplicate Record vs. Master Company Sharing (Preview)?
+Duplicate Record Sharing comes with several advantages, and you should always select this option whenever possible. This is an extremely important consideration. The main reason is that once Master company sharing is enabled, there is no way to reduce the scope or to stop the sharing.
+
+Master Company Sharing should be considered only if there is a need to share:
++	Across more than 300 companies in the same policy
++	 In a policy, the number of transactions for any table will exceed 2 million records. 
+    +	The limit is calculated as number of records per company x number of companies in a policy.
++	 The table is supported for Master company sharing.
+
+
+|    | Duplicate Record Sharing | Master Company Sharing |
+|----|-----|-----|
+| Can tables, fields and/or companies be removed after a policy has been Enabled/Updated? | Yes   | No   |
+| Can a policy be Disabled? |  Yes  |  No  |
+| Can tables, fields and/or companies be added after a policy have been Enabled? | Yes   | Yes  |
+| Can mandatory foreign key relations be excluded/unselected for sharing? | No   | No   |
+| Can sharing of non-mandatory foreign key fields be manually managed? | Yes   | No   |
+| Can fields that are not selected for sharing still be maintained in each company? | Yes   | No   |
+| Max number of companies in a policy |  300  | No limit   |
+| Max number of records per table and policy | 2 million    |  No limit  |
+| Can tables without a unique index be shared? |  No  |  Yes  |
+| What Table Data Sharing Types are supported? | Duplicate   | Duplicate and Single   |
+| Can companies have existing records in a table before sharing is Enabled? | Yes   | Only master company   |
+| Is it required to select copy data and to validate sharing issues after enabling or updating a policy? |  Yes  |  No  |
+| List of officially supported tables |  Link  | Link   |
+| Are Microsoft provided policy templates available?  |  Yes  |  No  |
+
+It is possible to combine Duplicate Record Sharing and Master Company Sharing for the same set of companies by using different policies. It is important to always select all applicable tables and optional foreign key fields in the Duplicate Record Policy and enable the policy before the Master Company Sharing policy is enabled. This way you can for example possible to share for example the Customer groups and Terms of payment tables, using Duplicate Record Sharing and the Customer table using Master Company sharing for scenarios where it is only the number of customer records that exceeds the limit and the number of companies do not exceed 300.
+
+## Specific considerations for successful data sharing
+### Automatically added tables based on selected foreign key fields 
+Foreign key fields are selected automatically or manually. Tables that are referenced will be added automatically when a policy is enabled or updated if the reference table is not already added. 
+
+Example below: Unless the Terms of payment table is added manually, it will be added automatically since the PaymTermId foreign key field has been selected for sharing in the Customer groups table. 
+
+[image 2]()
+
+Note: Only one level of child foreign key relationships is added automatically. 
+
+Tables that are automatically added when a policy is enabled or updated will not be visible in the Configure cross-company data sharing form until the policy is disabled. The best practice is to manually add tables based on the selected foreign key fields prior to enabling or updating the policy. This make it possible to understand the tables that will be shared and for Duplicate Record Sharing. This way it also provides the option to select fields for these tables, including optional foreign key fields that in turn might add more tables.  
+
+### Country/region specific considerations for successful data sharing
+Tables that include country/region specific fields and/or logic, needs to be carefully considered. It might be required to use sharing polices per country/region for certain tables to avoid configuration conflicts. Country/region specific fields will only be viable/editable for companies in that country/region, but updates for these fields might trigger conflicts with companies in other country regions. 
+
+### Additional considerations
++	Composite tables must be shared in the same policy. If this is not the case, a message will inform users to add additional tables during enable and update to secure this.  
++	For tables that use number sequences, the number sequence types must be the same across all companies in a sharing policy for those entities.
+    +	It is also possible to align number sequences during enable and update. 
+
+## Limitations
++	Foreign key fields that reference Financial dimensions, for example Ledger or Default dimension, can't be shared. 
+ .	Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
++	Sharing can’t be used with dual-write.
++	Deletion of shared records is not yet fully supported and should not be used. When a shared record is deleted, any references (lookup/reference fields) on transactions might become blank. The same is currently also true for the Rename action that renames the unique record key.
+
+## Duplicate record sharing 
+The sharing logic for DRS is based on unique keys for records, e.g., Account for Customers or Name for Terms of Payment. Therefore, it is required that a table must have a unique index to be part of a DRS policy. After a policy is enabled or updated it is recommended to copy data across companies to process the initial synchronization. Since the volumes can be large It is recommended to only perform this action during non-business hours. 
+
+Only required/mandatory foreign key fields are selected by default when adding a table to a policy. Optional foreign keys need to be selected manually to be included.
+
+### Conflict resolution
+Validation rules are run when a sharing policy is enabled or updated. It is recommended to always use 'Find sharing issues' to view and resolve any inconsistencies between companies. Inconsistencies occur when attribute values differ between companies based on unique records keys for example the same name of Terms of payment. Examples can be differences in description or payment method etc. In Data sharing issues it is possible to select the company’s values that should be used for all other companies in the policy. Either field by field or the full record.  
+
+### Customer and vendor master data sharing feature
+Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. It can be enabled using the Customer and vendor master data sharing feature in the Feature management module. It is extremely important to consider limits in the maximum number of records and companies stated above.
+Tables that are part of the Party concept might require additional preparations before sharing can be enabled. Any scenario where the party relations differ across companies for the same unique record key will have to be resolved. An example can be that customer account number 1000 is related to different party ids across companies. In these cases, it will be required to align party relationships if the customers or to use the rename function to keep them as separate customers.  
+
+https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/party-gab
+
+### Stop or reducing sharing scope 
+Sharing can be stopped by removing one or more companies and then update the policy. The similar approach is applicable for deselecting fields from sharing. 
+To stop sharing tables it is first required to disable the policy and the remove tables. The same is true when deleting an entire policy. 
+True for all these scenarios is that synchronization will stop for the excluded scope, but existing records will remain. 
+Sharing will stop automatically at enable or update when the number of records for a table or number of companies exceed the maximum limits.  
+
+## Master company sharing (Preview) 
+Master company sharing is enabled by using the Master company data sharing feature in the Feature management module. 
+
+Since it is not possible to stop or reduce the sharing scope it is strongly recommended to thoroughly test and validate Master company data sharing policies, prior to enabling the same configuration in a production environment. 
+
+All possible fields are selected by default when a table is added to a Master company sharing policy. This includes all foreign key fields for all tables that are supported for Master company sharing. One example is that the Vendors table will be added when the Customer table is added, unless the Vendors table is already shared using DRS.
+
+Master company polices can’t be disabled; therefore it is especially important to manually add all tables that otherwise will be added automatically based on the by default selected foreign key fields. If not, these tables will not be visible in the policy form.  
+
+### Limitations
++	Change tracking for child company tables is not supported. This means as an example that Full export must be used in Data management.
++	Sharing cannot be used in combination with Retail Channel Databases.
++	Sharing is based on kernel logic. This means that no actual records exist in SQL for child companies. For more details refer to the developer content. 
+
