@@ -207,7 +207,7 @@ You must also change the value of the **HintPath** element to reference the **Mi
 
 ---
 
-3. Create an extension class using the following code per your Commerce version below.
+3. Create an extension class using the following code per your Commerce version.
 
 # [Commerce 10.0.25 and before](#tab/commerce-10-0-25)
 
