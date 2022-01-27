@@ -43,7 +43,7 @@ You can override the FIFO principle by marking inventory transactions so that a 
 -   FIFO with marking
 
 ## FIFO without the Include physical value option
-In this example, the item model group is not marked to include physical value. The illustration that follows shows these transactions:
+In this example, the **Include physical value** check box is not selected on the **Item model group** for the released product. The illustration that follows shows these transactions:
 
 -   1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
 -   1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
@@ -87,13 +87,11 @@ If the **Include physical value** check box is selected for an item on the **Ite
 -   5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
 -   5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
 -   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.67 (running average of physically and financially posted transactions).
--   7\.  Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 USD will be made to 3b. Additionally, they pyhsical cost amount is updated to USD 22.00 based on the hypothetical settlement that would be made if 6a were to be settled against 2b. The inventory settlement is not created because 6a is not financially updated.
+-   7\.  Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt, and so on. In this example, one settlement is created between 1b and 3b. An adjustment of USD –6.00 will be made to 3b. 
 
 ![FIFO with Include Physical Value.](./media/FIFOWithIncludePhysicalValueV2.gif) 
 
-There are two key differences when you use the Include physical value option on the item model group. 
-1. The running average includes transactions that are physically updated and financially updated.
-2. The inventory recalculation or close process will adjust physically updated receipts based on the hypothetical settlement that would be made, but does not create settlement records.
+Notice that the end result after running the inventory close process is the same whether or not you select to **Include physical value** on the **Item model group**. The option to **Include physical value** only affects the running average.
 
 **Key to the diagram**
 
