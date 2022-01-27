@@ -84,8 +84,8 @@ initially published. If you want to use or turn off any of these features, you m
 
 ## Known issues
 
-   | Issue summary | More information | Work around |
-   |--------------|----------|----------------|
+| Issue summary | More information | Work around |
+|--------------|----------|----------------|
 |The Multiple level compensation feature is enabled - The feature does not work unless the lso on Unable to select comp level/receive error when transferring an employee| When the **Configure multiple compensation levels by job** feature is enabled, users will experience the following issues when transferring an employee: •	To a position that has a **Step compensation** level, the **Compensation level** drop list does not display the compensation levels associated to the position.
 •	To a position that has a **Grade** or **Band compensation level**, the user will receive an error that the values are out of range and the compensation level cannot be found.| Enable the Human resources user experience enhancements’ in feature management| 
 |PowerBI reports not working for employee development|   |  |
