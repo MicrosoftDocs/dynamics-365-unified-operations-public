@@ -32,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # LIFO with physical value and marking
 
 [!include [banner](../includes/banner.md)]
+Last In, First Out, (LIFO), is an inventory-management and valuation method in which inventory produced or acquired last is sold, used, or disposed of first. During the inventory close process in Dynamics 365 Supply Chain Management, the system will create settlements where the last receipt is matched against the first issue, and so on. The settlements and matching principle are based on the financial date of the inventory transactions. A preliminary assessment of the settlements and adjustments can be performed by running the inventory recalculation process.
 
-Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. 
-
-In the Last in, First out (LIFO) inventory model, the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory, based on the date of the inventory transaction. When you use LIFO, you don't have to use the LIFO rule. Instead you can mark inventory transactions so that a specific item issue is settled against a specific receipt. We recommend a periodic inventory closing when you use the LIFO inventory model. 
+You can override the LIFO principle by marking inventory transactions so that a specific item receipt is settled against a specific issue. A periodic inventory closing is required when you use the LIFO inventory model to create settlements and adjust the value of issues according to the LIFO principle. Until you run the inventory close process, issue transactions are valued at the running average when the physical and financial updates occured. The running average is calculated at the point in time the physical or financial update is performed, unless you are using marking. 
 
 The following examples show the effect of using LIFO in three configurations:
 
@@ -44,34 +43,35 @@ The following examples show the effect of using LIFO in three configurations:
 -   LIFO with marking
 
 ## LIFO without the Include physical value option
-In this example, the item model group isn't marked to include physical value. The illustration that follows shows these transactions:
+In this example, the Include physical value check box is not selected on the Item model group for the released product. The illustration that follows shows these transactions:
 
 -   1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
 -   1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
 -   2a. Inventory physical receipt for a quantity of 1 at a cost of USD 20.00 each.
--   2b. Inventory financial receipt for a quantity of 1 at a cost of USD 20.00 each.
--   3a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
--   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
--   4b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
--   5a. Inventory physical issue for a quantity of 1 at a cost price of USD 20.00 each (running average of financially updated transactions).
--   5b. Inventory financial issue for a quantity of 1 at a cost price of USD 20.00 each (running average of financially updated transactions).
--   6. Inventory close is performed. Based on the LIFO method, the last financially updated issue will be settled against the last financially updated receipt. An adjustment of USD 10.00 will be made on the issue transaction.
+-   2b. Inventory financial receipt for a quantity of 1 at a cost of USD 22.00 each.
+-   3a. Inventory physical issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+-   3b. Inventory financial issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+-   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
+-   5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
+-   5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
+-   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (running average of financially posted transactions)
+-   7\.  Inventory close is performed. Based on the LIFO method, the first financially updated issue will be settled against the last financially updated receipt, and so on. In this example, one settlement is created between 5b and 3b. An adjustment of USD 14.00 will be made to 3b resulting in a final cost of USD 30.00.
 
-The new running average cost price reflects the average of the financially updated transactions, USD 15.00. The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
+The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option is not used. 
 
-![LIFO without Include Physical Value.](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO without Include Physical Value.](./media/LIFOWithoutIncludePhysicalValueV2.gif) 
 
 **Key to the diagram**
 
 - Inventory transactions are represented by vertical arrows.
+- Physical transactions are shorter light gray arrows.
+- Financial transactions are longer black arrows.
 - Receipts into inventory are represented by vertical arrows above the timeline.
 - Issues out of inventory are represented by vertical arrows below the timeline.
-- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
-- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
-- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
 - Each new receipt or issue transaction is designated by a new label.
 - Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
-- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
+- Each date on the diagram is separated  by a thin black vertical line. The date is noted below the graphic.
+- Inventory closings are represented by a red vertical dashed line.
 - Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## LIFO with the Include physical value option
@@ -82,32 +82,30 @@ The illustration that follows shows these transactions:
 -   1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
 -   1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
 -   2a. Inventory physical receipt for a quantity of 1 at a cost of USD 20.00 each.
--   2b. Inventory financial receipt for a quantity of 1 at a cost of USD 20.00 each.
--   3a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
--   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
--   4b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
--   5a. Inventory physical issue for a quantity of 1 at a cost price of USD 21.25 each (running average of financial and physical updated transactions).
--   5b. Inventory financial issue for a quantity of 1 at a cost price of USD 21.25 each (running average of financial and physical updated transactions).
--   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 21.25 each.
--   7. Inventory close is performed. Based on the LIFO method, the last issue transaction will be adjusted or settled against the last updated receipt.
-
-Transaction 6a will be adjusted to receipt transaction 4b. The system won't settle these transactions, because the receipt is updated physically but not financially. Instead, only an adjustment of USD 8.75 will be posted to the physical issue transaction. Transaction 5b will be adjusted to physical receipt transaction 3a. The system won't settle these transactions, because they aren't both financially updated. Instead, only an adjustment of USD –3.75 will be made to this issue transaction. The new running average cost price reflects the average of the financially and physically updated transactions, USD 20.00. 
+-   2b. Inventory financial receipt for a quantity of 1 at a cost of USD 22.00 each.
+-   3a. Inventory physical issue for a quantity of 1 at a cost price of USD 16.00 (running average of physically and financially posted transactions).
+-   3b. Inventory financial issue for a quantity of 1 at a cost price of USD 16.00 (running average of physically and financially posted transactions).
+-   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
+-   5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
+-   5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
+-   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.67 (running average of physically and financially posted transactions).
+-   7\.  Inventory close is performed. Based on the LIFO method, the first financially updated issue will be settled against the last financially updated receipt, and so on. In this example, one settlement is created between 3b and 5b. An adjustment of USD 14.00 will be made to 3b, resulting in a final cost of USD 30.00. Additionally, transaction 6a will be adjusted to receipt transaction cost of 4a. The system won't settle these transactions, because the receipt is updated physically but not financially. Instead, only an adjustment of USD 1.33 will be posted to the physical issue transaction, resulting an adjusted cost of USD 25.00. 
 
 The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option is used. 
 
-![LIFO with Include Physical Value.](./media/lifowithincludephysicalvalue.gif) 
+![LIFO with Include Physical Value.](./media/LIFOWithIncludePhysicalValueV2.gif) 
 
 **Key to the diagram**
 
 - Inventory transactions are represented by vertical arrows.
+- Physical transactions are shorter light gray arrows.
+- Financial transactions are longer black arrows.
 - Receipts into inventory are represented by vertical arrows above the timeline.
 - Issues out of inventory are represented by vertical arrows below the timeline.
-- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
-- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
-- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
 - Each new receipt or issue transaction is designated by a new label.
 - Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
-- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
+- Each date on the diagram is separated  by a thin black vertical line. The date is noted below the graphic.
+- Inventory closings are represented by a red vertical dashed line.
 - Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## LIFO with marking
@@ -117,7 +115,7 @@ You must make sure that the cost of this inventory item is reflected in the marg
 
 Before inventory close is performed, these two transactions can still be marked to each other. 
 
-You can mark an issue transaction to a receipt before the transaction is posted. You can do this from a sales order line on the **Sales order details** page. You can view the open receipt transactions on the **Marking** page. 
+You can mark an issue transaction to a receipt before the transaction is posted. You can do this from a sales order line on the **Sales order details** page by clicking **Inventory > Marking**. You can view the open receipt transactions on the **Marking** page. 
 
 You can also mark an issue transaction to a receipt after the transaction is posted. You can match or mark an issue transaction for an open receipt transaction for an inventoried item from a posted inventory adjustment journal. 
 
@@ -126,34 +124,33 @@ The illustration that follows shows these transactions:
 -   1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
 -   1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
 -   2a. Inventory physical receipt for a quantity of 1 at a cost of USD 20.00 each.
--   2b. Inventory financial receipt for a quantity of 1 at a cost of USD 20.00 each.
--   3a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
--   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
--   4b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
--   5a. Inventory physical issue for a quantity of 1 at a cost price of USD 21.25 each (running average of financial and physical updated transactions).
--   5b. Inventory financial issue for a quantity of 1 is marked to inventory receipt 2b before the transaction is posted. This transaction is posted with a cost price of USD 20.00 each.
--   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 21.25 each.
--   7. Inventory close is performed. Because the financially updated FIFO transaction is marked to an existing receipt, these transactions are settled against each other, and no adjustment is made.
+-   2b. Inventory financial receipt for a quantity of 1 at a cost of USD 22.00 each.
+-   3a. Inventory physical issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+-   3b. Inventory financial issue for a quantity of 1 at a cost price of USD 16.00 (running average of financially posted transactions).
+-   3c. Inventory financial issue for 3b is marked to inventory financial issue for 2b.
+-   4a. Inventory physical receipt for a quantity of 1 at a cost of USD 25.00 each.
+-   5a. Inventory physical receipt for a quantity of 1 at a cost of USD 30.00 each.
+-   5b. Inventory financial receipt for a quantity of 1 at a cost of USD 30.00 each.
+-   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 23.00 (running average of financially posted transactions)
+-   7\.  Inventory close is performed. Based on the Marking principle with the LIFO method, the marked transactions are settled against each other. In this example, 3b is settled against 2b and an adjustment is posted for USD 6.00 to 3b to bring the value to USD 22.00. In this example, no additional settlements are made becuase the close only creates settlements for financially updated transactions.
 
 The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. 
 
 The following illustration shows the effects of the LIFO inventory model on this series of transactions when marking between issues and receipts is used. 
 
-![LIFO with Marking.](./media/lifowithmarking.gif) 
+![LIFO with Marking.](./media/LIFOWithMarkingV2.gif) 
 
 **Key to diagram**
 
 - Inventory transactions are represented by vertical arrows.
+- Physical transactions are shorter light gray arrows.
+- Financial transactions are longer black arrows.
 - Receipts into inventory are represented by vertical arrows above the timeline.
 - Issues out of inventory are represented by vertical arrows below the timeline.
-- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
-- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
-- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
 - Each new receipt or issue transaction is designated by a new label.
 - Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
-- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
-- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
-
-
+- Each date on the diagram is separated  by a thin black vertical line. The date is noted below the graphic.
+- Inventory closings are represented by a red vertical dashed line.
+- Settlements and markings that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
