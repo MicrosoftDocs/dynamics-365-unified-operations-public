@@ -46,7 +46,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Print line discounts.
     - Gift cards:
 
-        - Exclude an issued/re-charged gift card line from a fiscal receipt for a sale.
+        - Exclude an issued/recharged gift card line from a fiscal receipt for a sale.
         - Print a payment that uses a gift card as a regular method of payment.
 
     - Print fiscal receipts for customer order operations:
@@ -73,7 +73,7 @@ The fiscal printer integration sample implements the following rules that are re
 
 - Exclude sales lines that are related to the *Issue gift card* and *Add to gift card* operations from the fiscal receipt.
 - Don't print a fiscal receipt if it consists of only gift card lines.
-- Deduct the total amount of gift cards that are issued or re-charged in a transaction from payment lines of the fiscal receipt.
+- Deduct the total amount of gift cards that are issued or recharged in a transaction from payment lines of the fiscal receipt.
 - Save calculated adjustments of payment lines in the channel database with a reference to a corresponding fiscal transaction.
 - Payment by gift card is considered a regular payment.
 
