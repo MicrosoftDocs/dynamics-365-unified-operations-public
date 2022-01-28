@@ -95,3 +95,23 @@ The following steps should have been completed.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## Symptom: Error “We didn’t’ find any data for the selected filter range.  Please select a different filter range and try again.” 
+
+### Resolution
+
+Check the data integrator setup to validate it is functioning as expected and upserting the data from AI Builder back to Dynamics 365 Finance.  
+Create a data integration project - Finance | Dynamics 365 | Microsoft Docs
+
+## Symptom: Customer payment prediction training failed.  AI Builder error states: "Prediction should have only 2 distinct outcome values to train the model. Map to two outcomes and retrain", "Training report issue: IsNotMinRequiredDistinctNonNullValues"
+
+### Resolution
+
+This error indicates there are not enough historical transactions in the last year that represent each category described in the on-time, late, and very late categories.  This error can be resolved by adjusting the very late transaction period. If adjusting the very late transaction period does not fix the error, then Customer payment predictions will not be a good solution to use as it needs data in each category for training purposes.
+Enable customer payment predictions - Finance | Dynamics 365 | Microsoft Docs
+
+## Symptom: Model training has failed.  
+
+### Resolution
+
+Cash flow forecast model training requires data that is spans more than one year and contains more than100 transactions.  These transactions need to be impacting liquidity accounts that are included in the cash flow forecast setup.
+Payment predictor requires at least 100 customer invoice and payment transactions in the last six to nine months to create predictions.  
