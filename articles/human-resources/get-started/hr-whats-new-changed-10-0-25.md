@@ -50,7 +50,7 @@ initially published. If you want to use or turn off any of these features, you m
 
    | Feature name | Overview | Release status |
    |--------------|----------|----------------|
-   | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources paramaters](/human-resources/hr-setup-parameters.md#general)| Generally available |
+   | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources parameters](/human-resources/hr-setup-parameters.md#general).| Generally available |
    | Workflow experience enhancements | A new for **Submit** and **Approve** added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements)| Generally available | 
    | Print performance reviews | You can print performance reviews in PDF format. [Performance management](/human-resources/hr-develop-performance-management-overview.md) | Generally available | 
    | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. [Create custom links in Manager self service](/human-resources/hr-employee-manager-self-service-custom-links.md) | Generally available | 
