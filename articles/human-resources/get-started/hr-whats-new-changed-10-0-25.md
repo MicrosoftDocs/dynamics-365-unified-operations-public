@@ -48,14 +48,11 @@ initially published. If you want to use or turn off any of these features, you m
 
    | Feature name | Overview | Release status |
    |--------------|----------|----------------|
-    | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see 
-    [Configure Human resources paramaters](/human-resources/hr-setup-parameters.md#general)| Generally available |
+    | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources paramaters](/human-resources/hr-setup-parameters.md#general)| Generally available |
     | Workflow experience enhancements | A new for **Submit** and **Approve** added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements)| Generally available | 
     | Print performance reviews | You can print performance reviews in PDF format. [Performance management](/human-resources/hr-develop-performance-management-overview.md) | Generally available | 
-    | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. [Create custom links in Manager self service](/human-resources/hr-employee-manager-self-service-custom-links.md)
-    | Generally available | 
-    | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. [Employee and Manager self service overview](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab) 
-    | Generally available | 
+    | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. [Create custom links in Manager self service](/human-resources/hr-employee-manager-self-service-custom-links.md) | Generally available | 
+    | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. [Employee and Manager self service overview](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab) | Generally available | 
     | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. [Personnel jobs](/human-resources/hr-personnel-jobs.md) | Preview | 
     | Task Management\* | You can create checklists and tasks for the onboarding, offboarding, and transition process. [Task management](/human-resources/hr-task-mgmt.md) | Preview | 
     | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. | Preview | 
@@ -70,8 +67,7 @@ initially published. If you want to use or turn off any of these features, you m
 | Feature name | More information | 
 |--------------|----------| 
 | Delete employment | You can delete an employment of an employee. | 
-| Job families | You can track a group of jobs that involve similar work, and that require similar training, skills, knowledge, and expertise. For more information, see 
-[Personnel jobs](/human-resources/hr-personnel-jobs.md) | 
+| Job families | You can track a group of jobs that involve similar work, and that require similar training, skills, knowledge, and expertise. For more information, see Personnel jobs](/human-resources/hr-personnel-jobs.md) | 
 | Additional employment fields | The following fields were added: **Employment category**, **Employment type**, and **Employment status**. For more information see, [Set up employment categories](/human-resources/hr-benenfits-setup-employment-categories.md)| 
 | **Workers without employment** page | A page shows a list of workers who don't have an employment record. For more information, see [Workers without employment](/human-resources/hr-personnel-workers-without-employment.md)| 
 | Position dimension user experience update | There is an enhanced user experience for assigning position dimensions per legal entity. For more information, see [Human resources personnel](/human-resources/hr-personnel-positions.md) | 
