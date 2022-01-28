@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 12/01/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -117,8 +117,8 @@ At any point, you can remove the grouping on any column by right-clicking that c
 After grouping data by one or more columns, you can change the sort direction for any of the grouping columns through the corresponding column header. 
 
 The behavior when sorting on non-grouped columns depends on your product version: 
-- In version 10.0.24 and earlier, sorting on a non-grouped column will remove the grouping on all columns and sort the data on the selected column. 
-- In version 10.0.25 and later, sorting on a non-grouped column will leave the grouping intact and will sort the data inside each group based on the selected column   
+- In version 10.0.24 and earlier, sorting on a non-grouped column removes the grouping on all columns and sorts the data on the selected column. 
+- In version 10.0.25 and later, sorting on a non-grouped column leaves the grouping intact and sorts the data inside each group based on the selected column.  
 
 ### Expanding and collapsing groups
 The initial grouping of data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron (>) button in the corresponding group header row. Note that the expand/collapse state of individual groups is **not** saved in personalization.
