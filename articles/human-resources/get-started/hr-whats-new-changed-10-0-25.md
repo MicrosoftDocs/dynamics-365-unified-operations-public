@@ -51,15 +51,14 @@ initially published. If you want to use or turn off any of these features, you m
    | Feature name | Overview | Release status |
    |--------------|----------|----------------|
    | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources parameters](/human-resources/hr-setup-parameters.md#general).| Generally available |
-   | Workflow experience enhancements | A new for **Submit** and **Approve** added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements).| Generally available | 
+   | Workflow experience enhancements | New **Submit** and **Approve** buttons were added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements).| Generally available | 
    | Print performance reviews | You can print performance reviews in PDF format. For more information, see [Performance management](/human-resources/hr-develop-performance-management-overview.md). | Generally available | 
    | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. For more information, see [Create custom links in Manager self service](/human-resources/hr-employee-manager-self-service-custom-links.md). | Generally available | 
    | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. For more information, see [Employee and Manager self service overview](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab). | Generally available | 
    | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. For more information, see [Personnel jobs](/human-resources/hr-personnel-jobs.md). | Preview | 
    | Task Management\* | You can create checklists and tasks for the onboarding, offboarding, and transition process. For more information, see [Task management](/human-resources/hr-task-mgmt.md). | Preview | 
    | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. For more information, see [Streamlined employee entry](../../talent/streamlined-employee-entry.md) | Preview | 
-   | Human resources user experience enhancements | See the table in the next section.  | Preview | 
-
+  
 \* This feature must be turned on before the **Human resources user experience enhancements** feature.
 
 &dagger; This feature can't be disabled after it's enabled.
@@ -89,7 +88,7 @@ initially published. If you want to use or turn off any of these features, you m
 | Task link in **Onboarding**, **Offboarding** and **Transitions** **Task setup** is displaying incorrect information| When creating a task that uses a **Task link type** of  **Worker details**, the page incorrectly displays additional information in the drop list. | The issue is cosmetic. Page links can still be selected.|
 | Offboarding checklists task due dates are off by one day when terminating through worker slide | When terminating a worker, and the user selects an **Offboarding** checklist in the **Terminate worker** slider, the tasks are created with a due date one day earlier than they should.|Do not assign an **Offboarding** checklist in the **Terminate worker** slider. Go to the **Checklists** menu item on the **Worker** page. Select to apply a checklist and use the termination date as the target date.|
 |**Personnel management** workspace needs to be updated to add checklist information to the cards| In the **Personnel management** workspace, the employee cards need to be updated to indicate the following information: <br>	No checklist applied <br>	Tasks outstanding <br>	Overdue tasks |Go to the **Task management** workspace to view this information|
-|Error - 'Getting the parent node failed in Business process for **Human resources** workspace| When a user creates a task on the fly in the **Business Process** workspace, and then changes the **Due date** filter, the user will receive an error.| Refresh the page after creating a new task on the fly.|
+|Error - getting 'The parent node failed in Business process' for **Human resources** workspace| When a user creates a task on the fly in the **Business Process** workspace, and then changes the **Due date** filter, the user will receive an error.| Refresh the page after creating a new task on the fly.|
 |Custom controls render incorrectly when using Compressed visual sizing.|In **User options**, if the user has selected the **Compressed** visual size, rather than the **Standard** size, some of the custom controls may render incorrectly.| Select to view **Standard size** in the **User options-Visual tab**. |
 
 
