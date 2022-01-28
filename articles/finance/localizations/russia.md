@@ -40,7 +40,7 @@ This topic provides information about functionality that supports Russian regula
 - [Ledger translation](rus-ledger-translation-procedure.md)
 - [Turnover balance statement reports](rus-turnover-balance-statement-reports.md)
 - [Account activity reports](rus-account-activity-reports.md)
-- [White paper Dynamics 365 Finance and Supply Chain Management-Federal Accounting Standard 27-2021 in Russia](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=cc7a904b-d553-43b3-94fd-58fa02e4f702&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides)
+- [White paper: Dynamics 365 Finance and Dynamics 365 Supply Chain Management-Federal Accounting Standard 27-2021 in Russia](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=cc7a904b-d553-43b3-94fd-58fa02e4f702&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides)
 
 ## Advance holders
 
