@@ -64,7 +64,7 @@ The following table lists the recommended values for the preceding parameters. T
 | Maximum number of parallel statement posting | <p>Set this parameter to the number of batch tasks that are available for the batch group that is running the **Statement** job.</p><p>**General rule:** Multiply the number of Application Object Server (AOS) virtual servers by the number of batch tasks that are available per AOS virtual server.</p> | This parameter isn't applicable when the **Retail statements - Trickle feed** feature is enabled. |
 | Max thread for order processing per statement | Start to test values at **4**. Typically, the value should not exceed **8**. | This parameter specifies the number of threads that are used to create and post sales orders. It represents the number of threads that are available for posting per statement. |
 | Max transaction lines included in aggregation | Start to test values at **1000**. Depending on the headquarters configuration, smaller orders might be more beneficial to performance. | This parameter determines the number of lines that will be included in each sales order during statement posting. After this number is reached, lines will be split into a new order. Although the number of sales lines won't be exact, because the split occurs at the sales order level, it will be close to the number that is set. This parameter is used to generate sales orders for retail transactions that don't have a named customer. |
-| Maximum number of threads to validate store transactions | We recommend that you set this parameter to **4**, and that you increase it only if you don't attain acceptable performance. The number of thread that this process uses can't exceed the number of processors that are available to the batch server. If you assign too many threads here, you might affect other batch processing. | This parameter controls the number of transactions that can be validated at the same time for a given store. |
+| Maximum number of threads to validate store transactions | We recommend that you set this parameter to **4**, and that you increase it only if you don't attain acceptable performance. The number of threads that this process uses can't exceed the number of processors that are available to the batch server. If you assign too many threads here, you might affect other batch processing. | This parameter controls the number of transactions that can be validated at the same time for a given store. |
 
 > [!NOTE]
 > All settings and parameters that are related to statement postings, and that are defined on stores and on the **Commerce parameters** page, are applicable to the improved statement posting feature.
@@ -167,7 +167,7 @@ The aggregated transactions view provides the following benefits:
 - The user has visibility into the aggregated transactions that failed during sales order creation and the sales orders that failed during invoicing.
 - The user has visibility into how transactions are aggregated.
 - The user has a complete audit trail, from transactions, to sales orders, to sales invoices. This audit trail wasn't available in the legacy statement posting feature.
-- Aggregated XML file make it easier to identify issues during sales order creation and invoicing.
+- Aggregated XML file makes it easier to identify issues during sales order creation and invoicing.
 
 ### Journal vouchers
 
