@@ -48,15 +48,15 @@ initially published. If you want to use or turn off any of these features, you m
 
    | Feature name | Overview | Release status |
    |--------------|----------|----------------|
-    | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources paramaters](/human-resources/hr-setup-parameters.md#general)| Generally available |
-    | Workflow experience enhancements | A new for **Submit** and **Approve** added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements)| Generally available | 
-    | Print performance reviews | You can print performance reviews in PDF format. [Performance management](/human-resources/hr-develop-performance-management-overview.md) | Generally available | 
-    | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. [Create custom links in Manager self service](/human-resources/hr-employee-manager-self-service-custom-links.md) | Generally available | 
-    | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. [Employee and Manager self service overview](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab) | Generally available | 
-    | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. [Personnel jobs](/human-resources/hr-personnel-jobs.md) | Preview | 
-    | Task Management\* | You can create checklists and tasks for the onboarding, offboarding, and transition process. [Task management](/human-resources/hr-task-mgmt.md) | Preview | 
-    | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. | Preview | 
-    | Human resources user experience enhancements | See the table in the next section.  | Preview | 
+   | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources paramaters](/human-resources/hr-setup-parameters.md#general)| Generally available |
+   | Workflow experience enhancements | A new for **Submit** and **Approve** added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements)| Generally available | 
+   | Print performance reviews | You can print performance reviews in PDF format. [Performance management](/human-resources/hr-develop-performance-management-overview.md) | Generally available | 
+   | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. [Create custom links in Manager self service](/human-resources/hr-employee-manager-self-service-custom-links.md) | Generally available | 
+   | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. [Employee and Manager self service overview](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab) | Generally available | 
+   | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. [Personnel jobs](/human-resources/hr-personnel-jobs.md) | Preview | 
+   | Task Management\* | You can create checklists and tasks for the onboarding, offboarding, and transition process. [Task management](/human-resources/hr-task-mgmt.md) | Preview | 
+   | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. | Preview | 
+   | Human resources user experience enhancements | See the table in the next section.  | Preview | 
 
 \* This feature must be turned on before the **Human resources user experience enhancements** feature.
 
