@@ -161,7 +161,7 @@ For some pages that include lists, the **Add to workspace** personalization feat
 - To add a link to a workspace, first filter the list on the page so that it shows the data that you're interested in. (If the **Saved views** feature is turned on, you can't continue until you save a view that has these conditions.) Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **Link**. After you select **Configure**, a dialog box appears, where you can specify the label that should be used for the link. You can also optionally specify a label for the section where this link can be placed. If that section doesn't exist, a new section will be created.
 
 > [!NOTE]
-> Starting in version 10.0.25, when configuring your list, tile, or link, you may also need to select the workspaces views you want to add the element to if the **(Preview) Saved views support for workspaces** feature is enabled. The available workspace views will appear in the **Workspace options** section of each Configure dialog box. 
+> Starting in version 10.0.25, when configuring your list, tile, or link, you may also need to select the workspace views that you want to add the element to if the **(Preview) Saved views support for workspaces** feature is enabled. The available workspace views will appear in the **Workspace options** section of each **Configure** dialog box. 
 
 After you've added a list, tile, or link to a workspace, you can open that workspace and rearrange the elements in it as you want.
 
