@@ -7,6 +7,7 @@ ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: tfehr
 ms.search.region: Global
+ms.custom: intro-internal
 ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3

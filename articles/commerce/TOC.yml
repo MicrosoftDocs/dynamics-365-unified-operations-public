@@ -96,8 +96,6 @@
             href: get-started/whats-new-commerce-10-0-24.md 
           - name: Commerce 10.0.23 (January 2022)
             href: get-started/whats-new-commerce-10-0-23.md          
-          - name: Commerce 10.0.22 (November 2021)
-            href: get-started/whats-new-commerce-10-0-22.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -126,8 +124,6 @@
           href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-        - name: Glossary
-          href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
@@ -712,6 +708,10 @@
           href: sync-product-ratings.md
         - name: Enable manual publishing of ratings and reviews by a moderator
           href: manual-publish-rating-reviews.md
+        - name: Import and export ratings and reviews
+          href: import-export-reviews.md
+        - name: Configure Service-to-Service authentication
+          href: service-to-service-auth.md
         - name: Ratings and reviews FAQ
           href: ratings-reviews-faq.md
       - name: Manage your inventory  
@@ -998,8 +998,6 @@
             href: style-presets.md
           - name: Add a favicon
             href: add-favicon.md
-          - name: Add a welcome message
-            href: add-welcome-message.md 
           - name: Add a copyright notice
             href: add-copyright-notice.md
           - name: Add languages
@@ -2478,8 +2476,6 @@
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management
             href: e-commerce-extensibility/set-up-key-vault.md
-          - name: Create a request pipeline plug-in hook
-            href: e-commerce-extensibility/request-pipeline-hook.md
           - name: Image component
             href: e-commerce-extensibility/image-component.md
         - name: Develop data actions

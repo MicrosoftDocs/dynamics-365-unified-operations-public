@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.12
 # Commerce Data Exchange best practices
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic is intended for people who implement functionality that is related to data synchronization, Commerce Data Exchange (CDX), in a Microsoft Dynamics 365 Commerce environment. It gives best practices advice for implementations.
 

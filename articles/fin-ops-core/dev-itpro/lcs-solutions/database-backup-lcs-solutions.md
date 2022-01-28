@@ -37,12 +37,6 @@ To compress your database backup, in Microsoft SQL Server Management Studio, on 
 
 [![Compress backup selected in the Set backup compression field.](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
 
-On demo or development environments, the database is typically called AXDBRain. Your database backup should be no larger than 15 gigabyte (GB). If your database is larger, a timeout error may occur when you try to upload the database to the Asset library in Lifecycle Services (LCS). 
-  
-To compress your database backup, in SQL Server Management Studio, on the **Back Up Database** page, in the **Set backup compression** field, select **Compress backup**. 
-
-[![databasebackup01.](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
-
 ## Additional resources
 
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)

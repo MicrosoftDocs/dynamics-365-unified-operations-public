@@ -8,8 +8,6 @@ ms.date: 01/31/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
