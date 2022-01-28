@@ -4,7 +4,7 @@
 title: Build forms that fully utilize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
-ms.date: 01/04/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,14 +54,14 @@ The style of a form determines the level of support for views.
      -    Simple lists (Design.Style = SimpleList)
      -    Grid portions of Master Details and Transaction Details forms (Design.Style=ListPage)
      -    Task single and Task double pages (Design.Style or Design.Pattern is TaskSingle or TaskDouble)
-          -  Starting in 10.0.25 / Platform update 49, the "Allow queries to be saved to views on Task Single and Task Double pages" feature adds query support to views defined on these form types.  
+          -  Starting in version 10.0.25, the "Allow queries to be saved to views on Task Single and Task Double pages" feature adds query support to views defined on these form types.  
 
 -    Views do not include queries for these form types:
      -    Any other full-page form not listed above
      -    Workspaces
-          -  Starting in 10.0.25 / Platform update 49, the "Saved views support for workspaces" *preview* feature allows saved views to be defined and shared for both modeled and user-created workspaces.  
+          -  Starting in version 10.0.25, the "Saved views support for workspaces" *preview* feature allows saved views to be defined and shared for both modeled and user-created workspaces.  
      -    Dialogs
-          -  Starting in 10.0.25 / Platform update 49, the "Saved views support for dialogs" feature allows saved views to be defined and shared for dialog pages.  
+          -  Starting in version 10.0.25, the "Saved views support for dialogs" feature allows saved views to be defined and shared for dialog pages.  
      -    Details portions of Master Details and Transaction Details forms
 
 -    Views are not currently supported on these form types:
@@ -72,7 +72,8 @@ The style of a form determines the level of support for views.
 While most forms will work well with saved views, there are some areas that may require changes to form logic so that views work as expected on these forms without causing confusion. Here are some key items to keep in mind during development of new forms.
 
 ### Custom filters
-Custom filters are controls modeled on forms that cause modifications to the query. Extra work is needed to ensure that view's are marked as having unsaved changes after using a custom filter, and additional work may beneeded to ensure that the value of a custom filter always aligns to the current view or query.  
+Custom filters are controls modeled on forms that cause modifications to the query. Extra work is needed to ensure that views are marked as having unsaved changes after using a custom filter, and additional work may beneeded to ensure that the value of a custom filter always aligns to the current view or query. 
+
 -  Before version 10.0.25, only adjustments to the query (e.g. filters/sorts) defined through the system-defined filtering mechanisms (Quick Filter, grid column headers, the Filter pane, or Advanced filter or sort) would trigger a view to indicate it had unsaved changes. If a custom filter was used to change the query, the view would not appear to have unsaved changes (until the query was later modified using one of the standard mechanisms). Additionally, if a view was loaded with a query modification related to a custom filter, the custom filter would not reflect that modification, resulting in suboptimal user experience. 
 -  Starting with version 10.0.25, form owners can provide better experiences with custom filters by taking advantage of the following two methods, which were introduced specifically for improving custom filter support with saved views.
     -  **public void queryFiltersChanged()**: This new method is called when the query is reexecuted by the system changes the query (e.g. when a view loads or when a system filtering mechanism is used), which gives the custom filter control an opportunity to interrogate the mostly recently executed query to find any relevant filter and update its value to appropriately reflect that query.  
@@ -86,11 +87,13 @@ To do this, place the following code pre-super() in the init() method of the for
 
 ### Code that can negatively impact views 
 X++ code late in the form startup cycle can interfere with views working as users expect. In particular, be aware of the following items: 
+
 -    Modifications of the query after **super()** of **executeQuery()** or after **super()** of **run()** can cause the query aspect of a view to be ignored.  
 -    Form changes after **super()** of **run()** can cause some user personalizations to be incorrectly applied to the default view.  
 
 ### Secondary list pages
 Looking forward, views are meant to replace modeled secondary list pages in the long term.  
+
 -   Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users as the default view query will not be executed when users navigate to a form using one of these menu items. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views.  
 
 -  To avoid user confusion between form caption (such as "All customers") and view name (such as "My customers"), consider renaming form captions to be the name of the corresponding entity. For example, instead of a form caption of "All customers" or "All sales orders", the form caption would be modified to "Customers" and "Sales orders". 
