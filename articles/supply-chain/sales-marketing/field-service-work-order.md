@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic discusses the templates and underlying tasks that are used to synchronize work orders in Dynamics 365 Field Service to sales order in Dynamics 365 Supply Chain Management.
 

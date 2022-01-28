@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.13
 # Create and manage Customer portal users
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 In the out-of-box implementation, there is no way for users to self-register for websites that are created by using the Customer portal. To sign in and use a website, users must be invited by the admin. Microsoft has intentionally blocked the ability of users to self-register.
 
