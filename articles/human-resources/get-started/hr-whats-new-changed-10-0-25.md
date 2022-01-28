@@ -57,7 +57,7 @@ initially published. If you want to use or turn off any of these features, you m
    | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. For more information, see [Employee and Manager self service overview](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab). | Generally available | 
    | Configure multiple compensation levels by job\*&dagger; | Jobs now support multiple compensation levels. For more information, see [Personnel jobs](/human-resources/hr-personnel-jobs.md). | Preview | 
    | Task Management\* | You can create checklists and tasks for the onboarding, offboarding, and transition process. For more information, see [Task management](/human-resources/hr-task-mgmt.md). | Preview | 
-   | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. For more information, see [Streamlined employee entry](../talent/streamlined-employee-entry.md) | Preview | 
+   | Streamlined employee entry | This feature provides an updated user experience on the existing **Worker** page. For more information, see [Streamlined employee entry](../../talent/streamlined-employee-entry.md) | Preview | 
    | Human resources user experience enhancements | See the table in the next section.  | Preview | 
 
 \* This feature must be turned on before the **Human resources user experience enhancements** feature.
