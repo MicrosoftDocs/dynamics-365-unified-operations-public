@@ -103,7 +103,7 @@ This section provides a list of known issues for saved views while the feature i
 
 ### Open issues
 -  [Resolved] A view does not get marked as having unsaved changes after using custom filters, which are modeled filter controls above a grid (excluding the QuickFilter). If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query. See the **Modifying forms to fully utilize views** section for more details of the resolution.  
--  [Resolved] View support for workspaces, dashboards, and dialog boxes. See the **View support** section for more details of the resolution. 
+-  [Resolved] View support for workspaces, dashboards, and dialog boxes. See the [View support](understanding-saved-views.md#view-support) section for more details of the resolution. 
 -  [Resolved] [KB 4582751] After adding (reference group) fields via personalization, the fields remain blank.
 -  If the Filter pane is open when switching to a different view, the Filter pane will not update to reflect the filters on the target view.
 -  Cannot move a view with a QuickFilter condition saved to it to another environment. The fix in release 10.0.13 more gracefully handles the situation, but does not allow these conditions to move between environments.  
