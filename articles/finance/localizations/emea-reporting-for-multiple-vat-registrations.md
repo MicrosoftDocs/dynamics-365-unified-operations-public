@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,15 +29,27 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to do reporting for multiple value-added tax (VAT) registrations from the single legal entity. 
+This topic explains how to perform reporting for multiple value-added tax (VAT) registrations from a single legal entity. The functionality is available for the following countries/regions: 
 
-The functionality is available for the following countries/regions: Austria, Belgium, Denmark, Finland, France, Germany, Netherlands, United Kingdom, Norway, Spain, Sweden, Switzerland.
-The scope of reporting is limited to generation of the following reports:
+  - Austria
+  - Belgium
+  - Denmark
+  - Finland
+  - France
+  - Germany
+  - Netherlands
+  - United Kingdom
+  - Norway
+  - Spain
+  - Sweden
+  - Switzerland
+  
+The scope of reporting is limited to generating the following reports:
 - VAT declaration
 - EU sales list
 - Intrastat
 
-For overview of the funcitonality, review the TechTalk session provided on September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/vat-reporting-for-multiple-tax-registrations-in-single-legal-entity-september-29-2021)
+For an overview of the functionality, review the TechTalk session provided on September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/vat-reporting-for-multiple-tax-registrations-in-single-legal-entity-september-29-2021)
 
 ## Prerequisites
 
