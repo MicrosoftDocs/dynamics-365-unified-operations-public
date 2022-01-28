@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Mock the signed-in state during local development
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 
