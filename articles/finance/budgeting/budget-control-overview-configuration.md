@@ -5,7 +5,7 @@ title: Budget control overview
 description: This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 author: panolte
 ms.date: 11/08/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

@@ -27,7 +27,6 @@ ms.dyn365.ops.version: 10.0.14
 # Set up a B2B e-commerce site
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Business-to-business (B2B) e-commerce sites provide some key capabilities that optimize the workflow for a B2B user. This topic describes how to set up a B2B e-commerce site in Microsoft Dynamics 365 Commerce. It goes through the modules and site settings that must be configured to enable B2B-specific scenarios.
 

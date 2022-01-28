@@ -5,7 +5,7 @@ title: Store order fulfillment
 description: This topic provides an overview of store order fulfillment. 
 author: BrianShook
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo

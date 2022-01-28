@@ -18,8 +18,6 @@
           href: get-started/whats-new-platform-updates-10-0-24.md
         - name: Platform updates for version 10.0.23 (January 2022)
           href: get-started/whats-new-platform-updates-10-0-23.md
-        - name: Platform updates for version 10.0.22 (November 2021)
-          href: get-started/whats-new-platform-updates-10-0-22.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1054,6 +1052,8 @@
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
+            - name: Separated dual-write application orchestration package
+              href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write
               href: data-entities/dual-write/currrency-decimal-places.md
             - name: Set up the mapping for the sales order status fields

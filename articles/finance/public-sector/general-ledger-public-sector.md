@@ -5,7 +5,7 @@ title: General ledger in the public sector overview
 description: This topic describes the General ledger functionality that's available for organizations in the public sector.
 author: v-kiarnd
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

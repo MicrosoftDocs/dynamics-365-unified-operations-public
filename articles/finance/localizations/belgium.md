@@ -5,7 +5,7 @@ title: Belgium overview
 description: This topic provides an overview of functionality specific to Belgium.
 author: anasyash
 ms.date: 10/27/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: belgium
 # ms.search.industry: 
 ms.author: anasyash
