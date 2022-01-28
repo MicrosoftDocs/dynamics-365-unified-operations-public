@@ -82,16 +82,12 @@ initially published. If you want to use or turn off any of these features, you m
 
 | Issue summary | More information | Work around |
 |--------------|----------|----------------|
-|The Multiple level compensation feature is enabled - The feature does not work unless the lso on Unable to select comp level/receive error when transferring an employee| When the **Configure multiple compensation levels by job** feature is enabled, users will experience the following issues when transferring an employee: •	To a position that has a **Step compensation** level, the **Compensation level** drop list does not display the compensation levels associated to the position.
-•	To a position that has a **Grade** or **Band compensation level**, the user will receive an error that the values are out of range and the compensation level cannot be found.| Enable the Human resources user experience enhancements’ in feature management| 
+|The Multiple level compensation feature is enabled - The feature does not work unless the lso on Unable to select comp level/receive error when transferring an employee| When the **Configure multiple compensation levels by job** feature is enabled, users will experience the following issues when transferring an employee: <br>	To a position that has a **Step compensation** level, the **Compensation level** drop list does not display the compensation levels associated to the position.
+<br>	To a position that has a **Grade** or **Band compensation level**, the user will receive an error that the values are out of range and the compensation level cannot be found.| Enable the Human resources user experience enhancements’ in feature management| 
 |PowerBI reports not working for employee development|   |  |
 | Task link in **Onboarding**, **Offboarding** and **Transitions** **Task setup** is displaying incorrect information| When creating a task that uses a **Task link type** of  **Worker details**, the page incorrectly displays additional information in the drop list. | The issue is cosmetic. Page links can still be selected.|
 | Offboarding checklists task due dates are off by one day when terminating through worker slide | When terminating a worker, and the user selects an **Offboarding** checklist in the **Terminate worker** slider, the tasks are created with a due date one day earlier than they should.|Do not assign an **Offboarding** checklist in the **Terminate worker** slider. Go to the **Checklists** menu item on the **Worker** page. Select to apply a checklist and use the termination date as the target date.|
-|**Personnel management** workspace needs to be updated to add checklist information to the cards| In the **Personnel management** workspace, the employee cards need to be updated to indicate the following information:
-•	No checklist applied
-•	Tasks outstanding
-•	Overdue tasks
-|Go to the **Task management** workspace to view this information|
+|**Personnel management** workspace needs to be updated to add checklist information to the cards| In the **Personnel management** workspace, the employee cards need to be updated to indicate the following information: <br>	No checklist applied <br>	Tasks outstanding <br>	Overdue tasks |Go to the **Task management** workspace to view this information|
 |Error - 'Getting the parent node failed in Business process for **Human resources** workspace| When a user creates a task on the fly in the **Business Process** workspace, and then changes the **Due date** filter, the user will receive an error.| Refresh the page after creating a new task on the fly.|
 |Custom controls render incorrectly when using Compressed visual sizing.|In **User options**, if the user has selected the **Compressed** visual size, rather than the **Standard** size, some of the custom controls may render incorrectly.| Select to view **Compressed size** in the **User options-Visual tab**. |
 
