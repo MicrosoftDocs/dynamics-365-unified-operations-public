@@ -4,7 +4,7 @@
 title: Budget analysis in the public sector
 description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 author: v-kiarnd
-ms.date: 02/07/2018
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -105,7 +105,7 @@ If the grids are empty in the **Budget analysis** page, try the following action
 After you change the settings at the top of the page, click **Update totals** to see the results of your query.
 
 ## Feature: Budget control statistics date range enhancements
-This change uses a new view to display only actual amounts inside the date range provided on the Budget Control statistics inquiry. This feature will be turned on by default in the 2022 Wave 2 release. 
+This feature provides a new view to display only actual amounts inside the date range that's provided on the **Budget control statistics** inquiry. This feature is turned on by default in the 2022 Wave 2 release. 
 
 
 
