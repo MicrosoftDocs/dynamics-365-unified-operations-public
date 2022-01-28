@@ -100,18 +100,20 @@ The following steps should have been completed.
 ### Resolution
 
 Check the data integrator setup to validate it is functioning as expected and upserting the data from AI Builder back to Dynamics 365 Finance.  
-Create a data integration project - Finance | Dynamics 365 | Microsoft Docs
+For more information, see [Create a data integration project](../finance-insights/create-data-integrate-project.md) documentation.
 
 ## Symptom: Customer payment prediction training failed.  AI Builder error states: "Prediction should have only 2 distinct outcome values to train the model. Map to two outcomes and retrain", "Training report issue: IsNotMinRequiredDistinctNonNullValues"
 
 ### Resolution
 
 This error indicates there are not enough historical transactions in the last year that represent each category described in the on-time, late, and very late categories.  This error can be resolved by adjusting the very late transaction period. If adjusting the very late transaction period does not fix the error, then Customer payment predictions will not be a good solution to use as it needs data in each category for training purposes.
-Enable customer payment predictions - Finance | Dynamics 365 | Microsoft Docs
+
+Additional information to adjust the on-time, late, and very late categories can be found on the [Enable customer payment predictions](../finance-insights/enable-cust-paymnt-prediction.md) support document.
 
 ## Symptom: Model training has failed.  
 
 ### Resolution
 
-Cash flow forecast model training requires data that is spans more than one year and contains more than100 transactions.  These transactions need to be impacting liquidity accounts that are included in the cash flow forecast setup.
-Payment predictor requires at least 100 customer invoice and payment transactions in the last six to nine months to create predictions.  
+**Cash flow forecast** model training requires data that is spans more than one year and contains more than100 transactions.  These transactions need to be impacting liquidity accounts that are included in the cash flow forecast setup.
+
+**Customer payment predictor** requires at least 100 customer invoice and payment transactions in the last six to nine months to create predictions.  
