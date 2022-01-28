@@ -27,8 +27,6 @@ ms.dyn365.ops.version: Platform update 33
 # Grid capabilities
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 The new grid control provides several useful and powerful capabilities that you can use to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
@@ -36,7 +34,7 @@ The new grid control provides several useful and powerful capabilities that you 
 -  Typing ahead of the system
 -  Evaluating math expressions 
 -  Grouping tabular data (enabled separately using the **Grouping in grids** feature)
--  Freezing columns
+-  Freezing columns (enabled separately using the **Freezing columns in grids** feature)
 -  Autofit column width
 -  Stretchable columns
 
@@ -115,6 +113,13 @@ After you've grouped data by a single column, you can group the data by a differ
 
 At any point, you can remove the grouping on any column by right-clicking that column and selecting **Ungroup**. You can also remove the grouping from all columns by selecting **Grid options** and then **Ungroup all**.   
 
+### Sorting grouped data
+After grouping data by one or more columns, you can change the sort direction for any of the grouping columns through the corresponding column header. 
+
+The behavior when sorting on non-grouped columns depends on your product version: 
+- In version 10.0.24 and earlier, sorting on a non-grouped column will remove the grouping on all columns and sort the data on the selected column. 
+- In version 10.0.25 and later, sorting on a non-grouped column will leave the grouping intact and will sort the data inside each group based on the selected column   
+
 ### Expanding and collapsing groups
 The initial grouping of data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron (>) button in the corresponding group header row. Note that the expand/collapse state of individual groups is **not** saved in personalization.
 
@@ -125,10 +130,10 @@ In the same way that you can select (or unselect) all rows in the grid by select
 When grouping data, the default behavior is to show the column name in the group header row. You can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
 ### Grouping on date and time columns
-Starting in version 10.0.24, for Date or DateTime fields, the option has been added to group by Year, Month, or Day. The group "value" in the corresponding header row will match the format from that field. Additionally, for DateTime and Time fields, you will be able to group by Hour, Minute, or Second.    
+Starting in version 10.0.24, for Date or DateTime fields, the option has been added to group by Year, Month, or Day. The group "value" in the corresponding header row will match the format from that field. Additionally, for DateTime and Time fields, you will be able to group by Hour, Minute, or Second. 
 
 ## Freezing columns
-Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you may want the values in those columns to always be visible. The **Freeze columns in grid** feature provides this flexibility to users. 
+Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you may want the values in those columns to always be visible. The **Freezing columns in grid** feature provides this flexibility to users. 
 
 To freeze a column, right-click in the column's header, and then select **Freeze column**. The first time that you complete this step, the selected column becomes the first column and will no longer scroll out of view. Any subsequent column that you freeze will be added to the right of the last frozen column. You can use the standard Move functionality to reorder frozen columns as you require. However, frozen columns can't be moved so that they appear among the set of unfrozen columns. Likewise, unfrozen columns can't be moved so that they appear among the set of frozen columns.
 
@@ -151,7 +156,7 @@ If your organization discovers a page that has some issues utilizing the new gri
 
  ```this.forceLegacyGrid();```
 
-This API will be honored until the new grid control becomes mandatory, which is currently targeted for April 2022. If any issues require that this API be used, report them to Microsoft.
+This API will be honored until the new grid control becomes mandatory, which is currently targeted for October 2022. If any issues require that this API be used, report them to Microsoft.
 
 ### Forcing a page to use the new grid after previously opting out the grid
 If you have opted out an individual page from using the new grid, you might want to later re-enable the new grid after the underlying issues were solved. To do this, you simply need to remove the call to `forceLegacyGrid()`. The change will not take effect until one of the following occurs:
@@ -159,6 +164,19 @@ If you have opted out an individual page from using the new grid, you might want
 - **Environment redeployment**: When an environment is updated and redeployed, the table that stores the pages that have opted out of the new grid (FormControlReactGridState) is automatically cleared.
 
 - **Manual clearing of the table**: For development scenarios, you will need to use SQL to clear the FormControlReactGridState table and then restart the AOS. This combination of actions will reset the caching of pages that have opted out of the new grid.  
+
+## [Developer] Opting out individual grids from *Typing ahead of the system*
+Some scenarios have arisen that do not lend themselves to working well with the *Typing ahead of the system* capability of the grid (e.g. some code is triggered when validating a row that causes a datasource research to be triggered, which can then corrupt uncommitted edits on existing rows). If your organization discovers such a situation, an API is available to allow an individual grid to opt out of asynchronous row validation and revert back to the legacy behavior.   
+
+When asynchronous row validation is disabled in a grid, users will not be able to create a new row or move to a different existing row in the grid while there are validation issues on the current row. This action will also have the side effect of disabling the ability to paste tables from Excel into Finance and Operations grids.  
+
+To opt an individual grid out of asynchronous row validation, add the following call post `super()` in the `run()` method of the form: 
+
+```<gridControl>.allowPreemptiveClient(false);```
+
+> [!NOTE]
+> -  This should only be invoked in exceptional cases and should not be the norm for all grids.
+> -  It is not recommended to toggle this API at runtime after the form loads
 
 ## [Developer] Size-to-available-width columns
 If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.  
