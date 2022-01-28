@@ -3106,6 +3106,8 @@
             href: localizations/rus-turnover-balance-statement-reports.md
           - name: Account activity reports
             href: localizations/rus-account-activity-reports.md
+          - name: Federal Accounting Standard 27-2021
+            href: localizations/emea-rus-federal-accounting-standard-27-2021
         - name: Advance holders
           items:
           - name: Russia advance holders overview
