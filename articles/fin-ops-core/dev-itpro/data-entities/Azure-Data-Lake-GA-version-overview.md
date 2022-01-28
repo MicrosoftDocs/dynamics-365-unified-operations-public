@@ -87,6 +87,18 @@ If you're currently using BYOD for these types of scenarios, you can transition 
 - **The cost of data storage is reduced.** Data is stored in a data lake instead of in the SQL database that BYOD requires. Therefore, customers can use a storage medium that is much less expensive than Azure SQL Database to stage data.
 - **Existing downstream/consumption pipelines can be preserved.** In the first type of scenario, many reporting tools work with SQL databases, because they can use T-SQL to read data. You can create a SQL Server endpoint by using Azure Synapse Analytics. Synapse includes SQL-on-demand capability that enables Data Lake to be queried by using the T-SQL language. Although you can use the T-SQL endpoint for the second type of scenario, your data integration pipeline might also be able to consume files in a data lake. Either way, you can transition from BYOD without incurring major costs.
 
+### How is the data stored in the lake?
+Data in the lake is stored as CSV files in a folder structure maintained by the system. The folder structure represents how the data is organized in Dynamics. For an example, you will see Folders called "Finance", "Supply chain", "Commerce" etc. and within these folders you will see sub folders called "Accounts Receivable", "Accounts Payable" etc. Eventually, you will see folders that contain the actual data as well as CDM metadata files that describe the format of the data. 
+
+When data in Finance and Operations gets updated, corresponding data rows in CSV files in the lake are updated. When a new row is added to a table in Finance and operations, or an existing row is deleted, new rows are added/ deleted from corresponding CSV files. When the data structures change in Finance and operations, for an example, when a new field is added to a table, metadata in the lake is updated to reflect the change.  
+
+### How can I consume data in the lake
+You can work with data in the data lake using a variety of tools both from Microsoft as well as third parties. Most tools can consume data in the lake stored as CSV files.  
+
+By using Synapse SQL Serverless, you can consume data in the lake using Transact-SQL (T-SQL). T-SQL language is widely supported by many tools. You can define a Synapse workspace over the data in the lake and use T-SQL, Spark or Synapse Pipelines as if you are consuming data from a database. To create a Synapse workspace over your data in the lake, you can use [CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution).
+
+You can also ready-made solution templates to copy data from the lake into a SQL server Data warehouse or to another destination. See [SynapsetoSQL solution template] (https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF)
+
 ### How often is data in the data lake updated?
 
 When you select data, the Export to Azure Data Lake service makes an initial copy of the data in the data lake. If you select multiple tables, the system makes the initial copy by taking 10 tables at a time. Depending on the size of the data and the number of records in the table, this process might take a few minutes or even a few hours. The export progress is shown on-screen.
@@ -99,7 +111,7 @@ The **Export to Data Lake** page in a Finance and Operations environment shows t
 
 ### Why don't I see the Export to Data Lake feature in my environment?
 
-The Export to Data Lake feature is available only in the **United States**, **Canada**, **United Kingdom**, **Europe**, **South East Asia**, **India**, **East Asia**, **Australia**, and **Japan** regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). The feature will eventually be made available in more regions.
+The Export to Data Lake feature is available only in the **United States**, **Canada**, **United Kingdom**, **Europe**, **Switzerland**, **South East Asia**, **India**, **East Asia**, **Australia**, and **Japan** regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). The feature will eventually be made available in more regions.
 
 The Export to Data Lake feature isn't available in Tier-1 (developer) environments. To enable this feature, you must have a cloud-based Tier-2 or higher sandbox environment.
 
