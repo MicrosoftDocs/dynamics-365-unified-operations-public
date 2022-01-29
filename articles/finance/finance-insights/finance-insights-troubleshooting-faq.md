@@ -99,14 +99,14 @@ The following steps should have been completed.
 
 ### Resolution
 
-Check the data integrator setup to validate that it's functioning as expected and upserting the data from AI Builder back to Finance.  
+Check the data integrator setup to validate that it's functioning as expected and inserting the data from AI Builder back to Finance.  
 For more information, see [Create a data integration project](../finance-insights/create-data-integrate-project.md).
 
 ## Symptom: Customer payment prediction training failed and the AI Builder error states, "Prediction should have only 2 distinct outcome values to train the model. Map to two outcomes and retrain", "Training report issue: IsNotMinRequiredDistinctNonNullValues".
 
 ### Resolution
 
-This error indicates there are not enough historical transactions in the last year that represent each category described in the **On-time**, **Late**, and **Very late** categories. To resolve this error, adjust the **Very late** transaction period. If adjusting the **Very late** transaction period doesn't fix the error, **Customer payment predictions** won't be a good solution to use as it needs data in each category for training purposes.
+This error indicates that there are not enough historical transactions in the last year that represent each category described in the **On-time**, **Late**, and **Very late** categories. To resolve this error, adjust the **Very late** transaction period. If adjusting the **Very late** transaction period doesn't fix the error, **Customer payment predictions** is not the best solution to use as it needs data in each category for training purposes.
 
 For more information about how to adjust the **On-time**, **Late**, and **Very late** categories, see [Enable customer payment predictions](../finance-insights/enable-cust-paymnt-prediction.md).
 
