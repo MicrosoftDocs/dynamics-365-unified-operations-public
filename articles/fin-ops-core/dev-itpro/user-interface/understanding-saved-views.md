@@ -35,78 +35,87 @@ Saved views are an important expansion of personalization capabilities Finance a
 ## "User-perceived" pages
 Traditionally, a set of personalizations has a 1:1 link to a modeled form. For many pages, this makes sense to the user, as the user's perception of the page matches the way in which the form is modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations is not intuitive or obvious because users do not see or care about the boundaries between modeled forms. 
 
-Saved views try to eliminate this confusion by letting users create views on "user-perceived" pages. Therefore, users don't have to understand how forms are modeled to understand how and when personalizations are applied. Consider the following two scenarios:  
+Saved views try to eliminate this confusion by letting users create views on "user-perceived" pages. Therefore, users don't have to understand how forms are modeled to understand how and when personalizations are applied. Consider the following two scenarios:
 
--    **More than one "user-perceived" page in a single modeled form:** The standard modeling of Master Details and Transaction Details forms (for example, the **CustTable** and **PurchTable** forms, respectively) consists of more than one "user-perceived" page: a grid page and a details page. 
+- **More than one "user-perceived" page in a single modeled form:** The standard modeling of Master Details and Transaction Details forms (for example, the **CustTable** and **PurchTable** forms, respectively) consists of more than one "user-perceived" page: a grid page and a details page. 
 
-     Because users are not aware when this transition from list to details crosses a form boundary (nor do they need to know this), view support in Details forms is handled differently to allow views to be defined separately for the grid and details portions. This means that the view selector for the "grid" and "details" can show different sets of available views. The special casing of view support on these forms also allows the "grid" views to allow filters in their view definitions, whereas the "details" view only need personalizations.
+    Because users are not aware when this transition from list to details crosses a form boundary (nor do they need to know this), view support in Details forms is handled differently to allow views to be defined separately for the grid and details portions. This means that the view selector for the "grid" and "details" can show different sets of available views. The special casing of view support on these forms also allows the "grid" views to allow filters in their view definitions, whereas the "details" view only need personalizations.
 
--    **More than one modeled form in a single "user-perceived" page:** The ability to embed subforms into modeled forms (via FactBoxes or form parts) leads to situations where more than one modeled form corresponds to a single "user-perceived" page. For example, consider the details portion of the **All customers** page, which has a number of FactBoxes and two FastTabs whose contents come from form parts. With traditional personalization, contrary to a user's expectations, exporting the personalizations for the **CustTable** form would not include personalizations on any FactBox or any personalizations done inside the **Addresses** or **Contact information** FastTabs. Equally unexpected for users, any personalizations done on these subforms would also be reflected in other parts of the application where these form parts are used. For example, changes to the **Addresses** FastTab in the **All customers** page would also result in the same changes appearing in the **Addresses** FastTab in the **All vendors** page.
+- **More than one modeled form in a single "user-perceived" page:** The ability to embed subforms into modeled forms (via FactBoxes or form parts) leads to situations where more than one modeled form corresponds to a single "user-perceived" page. For example, consider the details portion of the **All customers** page, which has a number of FactBoxes and two FastTabs whose contents come from form parts. With traditional personalization, contrary to a user's expectations, exporting the personalizations for the **CustTable** form would not include personalizations on any FactBox or any personalizations done inside the **Addresses** or **Contact information** FastTabs. Equally unexpected for users, any personalizations done on these subforms would also be reflected in other parts of the application where these form parts are used. For example, changes to the **Addresses** FastTab in the **All customers** page would also result in the same changes appearing in the **Addresses** FastTab in the **All vendors** page.
 
-     With views, the personalization scope of form parts has been modified to match user expectations. In particular, subform personalizations are now tied to the base form where they are made. This means that exporting a view on the **All customers** details page will include personalizations from the base **CustTable** form as well as any personalizations in FactBoxes or form parts modeled in that portion of the form. Similarly, any personalizations done on the **Addresses** FastTab (form part) on the **All customers** page will not be reflected in other forms where that form part is used.
-     
+    With views, the personalization scope of form parts has been modified to match user expectations. In particular, subform personalizations are now tied to the base form where they are made. This means that exporting a view on the **All customers** details page will include personalizations from the base **CustTable** form as well as any personalizations in FactBoxes or form parts modeled in that portion of the form. Similarly, any personalizations done on the **Addresses** FastTab (form part) on the **All customers** page will not be reflected in other forms where that form part is used.
+
 These are highly technical modifications to the personalization subsystem that are only available when view is enabled. These modifications are important for ensuring that users have a predictable and understandable experience with views.
 
 ## View support
-The style of a form determines the level of support for views. 
+The style of a form determines the level of support for views.
 
--    Views include queries for these form types:
-     -    List pages (Design.Style = ListPage)
-     -    Simple lists (Design.Style = SimpleList)
-     -    Grid portions of Master Details and Transaction Details forms (Design.Style=ListPage)
-     -    Task single and Task double pages (Design.Style or Design.Pattern is TaskSingle or TaskDouble)
-          -  Starting in version 10.0.25, the "Allow queries to be saved to views on Task Single and Task Double pages" feature adds query support to views defined on these form types.  
+- Views include queries for these form types:
 
--    Views do not include queries for these form types:
-     -    Any other full-page form not listed above
-     -    Workspaces
-          -  Starting in version 10.0.25, the "Saved views support for workspaces" *preview* feature allows saved views to be defined and shared for both modeled and user-created workspaces.  
-     -    Dialogs
-          -  Starting in version 10.0.25, the "Saved views support for dialogs" feature allows saved views to be defined and shared for dialog pages.  
-     -    Details portions of Master Details and Transaction Details forms
+    - List pages (Design.Style = ListPage)
+    - Simple lists (Design.Style = SimpleList)
+    - Grid portions of Master Details and Transaction Details forms (Design.Style=ListPage)
+    - Task single and Task double pages (Design.Style or Design.Pattern = TaskSingle or TaskDouble)
 
--    Views are not currently supported on these form types:
-     -    Dashboards
-     -    Secondary forms like drop-down dialogs, lookups, and enhanced previews
+        As of version 10.0.25, the "Allow queries to be saved to views on Task Single and Task Double pages" feature adds query support for views that are defined on these form types.
+
+- Views don't include queries for these form types:
+
+    - Any other full-page form that wasn't listed earlier in this section
+    - Workspaces
+
+        As of version 10.0.25, the "Saved views support for workspaces" *preview* feature enables saved views to be defined and shared for both modeled workspaces and user-created workspaces.
+
+    - Dialogs
+
+        As of version 10.0.25, the "Saved views support for dialogs" feature enables saved views to be defined and shared for dialog pages.
+
+    - Details portions of Master Details and Transaction Details forms
+
+- Views aren't currently supported on these form types:
+
+    - Dashboards
+    - Secondary forms like drop-down dialogs, lookups, and enhanced previews
 
 ## Modifying forms to fully utilize views
 While most forms will work well with saved views, there are some areas that may require changes to form logic so that views work as expected on these forms without causing confusion. Here are some key items to keep in mind during development of new forms.
 
 ### Custom filters
-Custom filters are controls modeled on forms that cause modifications to the query. Extra work is needed to ensure that views are marked as having unsaved changes after using a custom filter, and additional work may beneeded to ensure that the value of a custom filter always aligns to the current view or query. 
+Custom filters are controls that are modeled on forms and that cause modifications to the query. Extra work is required to ensure that views are marked as having unsaved changes after a custom filter is used, and additional work might be required to ensure that the value of a custom filter is always aligned to the current view or query.
 
--  Before version 10.0.25, only adjustments to the query (e.g. filters/sorts) defined through the system-defined filtering mechanisms (Quick Filter, grid column headers, the Filter pane, or Advanced filter or sort) would trigger a view to indicate it had unsaved changes. If a custom filter was used to change the query, the view would not appear to have unsaved changes (until the query was later modified using one of the standard mechanisms). Additionally, if a view was loaded with a query modification related to a custom filter, the custom filter would not reflect that modification, resulting in suboptimal user experience. 
--  Starting with version 10.0.25, form owners can provide better experiences with custom filters by taking advantage of the following two methods, which were introduced specifically for improving custom filter support with saved views.
-    -  **public void queryFiltersChanged()**: This new method is called when the query is reexecuted by the system changes the query (e.g. when a view loads or when a system filtering mechanism is used), which gives the custom filter control an opportunity to interrogate the mostly recently executed query to find any relevant filter and update its value to appropriately reflect that query.  
-    -  **element.formCustomFilterChanged()**: This is a new API for the custom filter control to call when it has changed the query on the user's behalf. When called, the system will mark the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's modified() method if changes to the control immediately result in the query being refreshed, or call this API for a custom filter on button click if the adjustment of one or more custom filters requires a button for the changes to take effect.  
+- Before version 10.0.25, only adjustments to the query (for example, filters and sorts) that were defined through the system-defined filtering mechanisms (Quick Filter, grid column headers, the Filter pane, or Advanced filter or sort) triggered a view to indicate that it had unsaved changes. If a custom filter was used to change the query, the view didn't appear to have unsaved changes (until the query was later modified by using one of the standard mechanisms). Additionally, if a view was loaded with a query modification that was related to a custom filter, the custom filter didn't reflect that modification. The result was a suboptimal user experience.
+- As of version 10.0.25, form owners can provide better experiences with custom filters by taking advantage of the following two methods. These methods were introduced specifically to improve custom filter support with saved views.
+
+    - **public void queryFiltersChanged():** This new method is called when the query is rerun by the system after changes to the query (for example, when a view loads or a system filtering mechanism is used). Therefore, the custom filter control has an opportunity to interrogate the mostly recently run query to find any relevant filter and update its value so that it appropriately reflects that query.
+    - **element.formCustomFilterChanged():** This new API is called by the custom filter control when it has changed the query on the user's behalf. When it's called, the system marks the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's **modified()** method if changes to the control immediately cause the query to be refreshed, or to call this API for a custom filter on a button click if the adjustment of one or more custom filters requires a button for the changes to take effect.
 
 ### Opting forms out of views
-While generally not recommended, starting with version 10.0.25, developers can opt an individual form out of saved views support if needed. This will mean that no view selector is available on the form and there will be no publish capabilities.
+Although this approach isn't generally recommended, as of version 10.0.25, developers can opt an individual form out of saved views support as required. In this case, no view selector will be available on the form, and there will be no publish capabilities.
 
-To do this, place the following code pre-super() in the init() method of the form: 
-     this.disableSavedViewsOnForm();
+To opt a form out of saved views support, put the following code before **super()** in the **init()** method of the form.
 
-### Code that can negatively impact views 
-X++ code late in the form startup cycle can interfere with views working as users expect. In particular, be aware of the following items: 
+    this.disableSavedViewsOnForm();
 
--    Modifications of the query after **super()** of **executeQuery()** or after **super()** of **run()** can cause the query aspect of a view to be ignored.  
--    Form changes after **super()** of **run()** can cause some user personalizations to be incorrectly applied to the default view.  
+### Code that can negatively affect views
+X++ code late in the form startup cycle can interfere with the ability of views to work as users expect. In particular, be aware of the following items:
+
+- Modifications of the query after **super()** of **executeQuery()** or after **super()** of **run()** can cause the query aspect of a view to be ignored.
+- Form changes after **super()** of **run()** can cause some user personalizations to be incorrectly applied to the default view.
 
 ### Secondary list pages
-Looking forward, views are meant to replace modeled secondary list pages in the long term.  
+In the long term, the plan is for views to replace modeled secondary list pages.
 
--   Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users as the default view query will not be executed when users navigate to a form using one of these menu items. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views.  
-
--  To avoid user confusion between form caption (such as "All customers") and view name (such as "My customers"), consider renaming form captions to be the name of the corresponding entity. For example, instead of a form caption of "All customers" or "All sales orders", the form caption would be modified to "Customers" and "Sales orders". 
+- Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users, because the default view query won't be run when users navigate to a form by using one of these menu items. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views.
+- To help prevent user confusion between the form caption (such as "All customers") and the view name (such as "My customers"), consider renaming form captions to the name of the corresponding entity. For example, instead of using "All customers" or "All sales orders" as a form caption, change the form caption to "Customers" or "Sales orders."
 
 ## Known issues
 This section provides a list of known issues for saved views while the feature is in a preview state.
 
 ### Open issues
--  [Resolved] A view does not get marked as having unsaved changes after using custom filters, which are modeled filter controls above a grid (excluding the QuickFilter). If custom filter conditions have been saved to a view, the custom filter controls may not correctly reflect the current query. See the [Modifying forms to fully utilize views](understanding-saved-views.md#modifying-forms-to-fully-utilize-views) section for more details of the resolution.  
--  [Resolved] View support for workspaces, dashboards, and dialog boxes. See the [View support](understanding-saved-views.md#view-support) section for more details of the resolution. 
--  [Resolved] [KB 4582751] After adding (reference group) fields via personalization, the fields remain blank.
--  If the Filter pane is open when switching to a different view, the Filter pane will not update to reflect the filters on the target view.
--  Cannot move a view with a QuickFilter condition saved to it to another environment. The fix in release 10.0.13 more gracefully handles the situation, but does not allow these conditions to move between environments.  
+- [Resolved] A view isn't marked as having unsaved changes after custom filters are used. Custom filters are modeled filter controls above a grid (excluding the QuickFilter). If custom filter conditions have been saved to a view, the custom filter controls might not correctly reflect the current query. For more information about the resolution of this issue, see the [Modifying forms to fully utilize views](understanding-saved-views.md#modifying-forms-to-fully-utilize-views) section.
+- [Resolved] View support for workspaces, dashboards, and dialog boxes. For more information about the resolution of this issue, see the [View support](understanding-saved-views.md#view-support) section.
+- [Resolved] [KB 4582751] After fields (reference group fields) are added via personalization, the fields remain blank.
+- If the Filter pane is open when switching to a different view, the Filter pane will not update to reflect the filters on the target view.
+- Cannot move a view with a QuickFilter condition saved to it to another environment. The fix in release 10.0.13 more gracefully handles the situation, but does not allow these conditions to move between environments.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
