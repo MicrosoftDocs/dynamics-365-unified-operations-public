@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 8.1
 
 # Learning catalog for Dynamics 365 Finance developers
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 
