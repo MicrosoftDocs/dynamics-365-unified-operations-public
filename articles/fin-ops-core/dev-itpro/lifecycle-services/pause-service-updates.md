@@ -54,6 +54,7 @@ If you decide to pause updates, you have these options:
 - Pause updates only to your production environment.
 - Pause updates to both your sandbox environment and your production environment.
 - Pause updates to additional sandbox environments by pausing your production environment.
+- Pause updates in LCS implementation project by updating the environments to a version within N-3 then pause the updates from LCS. 
 
 > [!NOTE]
 > If the update to the production environment is paused, all additional sandbox environment updates will be paused as well.
@@ -64,6 +65,14 @@ You can pause a maximum of three continuous updates at a time. For example, if y
 >  There is no way to pause more than three updates, regardless of your industry or business schedule. If you are more than three updates behind and you find a critical issue with the Microsoft service update during validations in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. The issue must be logged as an active bug/regression with Microsoft.  This is only required if you are more than three updates behind and you are unable to use the pause updates functionality available in LCS to pause the update to production.
 
 > If you pause updates to your sandbox environment, updates are automatically also paused for your production environment, because Microsoft always updates configured sandbox environments before production environments.
+
+## Can I pause only my additional sandbox environments updates?
+ 
+**No** you cannot pause only additional sandbox environments  
+
+## What if default sandbox environment is Paused? 
+
+If default sandbox is paused - then default sandbox, production and all additional sandbox environment updates will also be paused. 
 
 ## How do I pause updates?
 
