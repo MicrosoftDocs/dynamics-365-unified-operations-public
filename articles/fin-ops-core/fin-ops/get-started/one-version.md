@@ -150,6 +150,30 @@ For all Microsoft-managed environments, as well as sandbox and production enviro
 
 After you apply a service update for a supported version, this functionality will be available in the affected environment.
 
+### How does the automatic updates affect my Microsoft managed additional sandbox environments in my LCS implementation project? 
+
+All additional sandbox environments will be updated within the same update window as your production environment and will be updated to the same release version that is used for the production update. This also applies to your additional sandboxes that are on versions supported within the N-3 lifecycle policy. 
+
+### What if one additional sandbox environment is on N-1 and another one is on N-4 (default sandbox and production environment is on less than N version)? 
+
+All environments will be updated to N version. 
+
+### What if default sandbox environment is updated manually **before** default sandbox environment email goes out? 
+
+Automatic updates for default sandbox, production and all additional sandbox environments will be cancelled.
+
+### What if default sandbox environment is updated manually **after** default sandbox email goes out? 
+
+Automatic updates for default sandbox, production and all additional sandbox environments will be cancelled. 
+
+### What if the production environment is updated manually **before** production environment email goes out? 
+
+Automatic updates for the production environment as well as all additional sandbox environments will be cancelled. 
+
+### What if the production environment is updated manually **after** production environment email goes out? 
+
+Automatic updates for production environment will be cancelled but all additional sandbox environments will be updated to N version. 
+
 ### What if I find an issue during the sandbox update?
 
 If you find an issue when doing validations in a sandbox environment, you can request to skip the update through LCS directly by providing a valid support ticket number and a business justification. 
