@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 During business processes, Microsoft Dynamics 365 users often gather information about their customers. This information is recorded as activities and notes. This topic describes the integration of note data in dual-write.
 

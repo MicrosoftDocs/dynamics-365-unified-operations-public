@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic provides information for integrating with data managed by Dynamics 365 Human Resources. It describes different integration technologies to help you decide which technologies best fit your needs.
 
