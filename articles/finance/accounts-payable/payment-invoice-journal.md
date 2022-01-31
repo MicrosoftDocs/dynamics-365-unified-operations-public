@@ -30,10 +30,10 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/preview-banner.md)]
 
-With release 10.0.25, **Payment schedule** is now supported on the **Vendor invoice journal**. 
+With Dynamics 365 Finance release 10.0.25, **Payment schedule** is now supported on the **Vendor invoice journal**. 
 
 > [!NOTE]
-> To use this new functionality, enable the **Apply payment schedule to invoice journal** feature in **Feature management**.
+> To use this functionality, enable the **Apply payment schedule to invoice journal** feature in **Feature management**.
 
 After this feature is enabled, a new field **Payment schedule** will be added to the **Invoice journal** page. When creating a new invoice journal line, if payment terms are 
 maintained on the **Vendor** and the **Payment term** is selected on the **Payment schedule**, then the **Payment schedule** field will be updated on the **Invoice journal** page. 
