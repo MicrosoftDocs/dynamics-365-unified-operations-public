@@ -78,15 +78,15 @@ There will be 2 major updates in April and October where new experiences can be 
 
 ### What does it mean when an update is backward compatible?
 
-Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This also means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Functional compatibility is about user experience, all new experiences will be opt-in for a 12-month period.
+Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This also means that on a development environment at design time, X++ public and protected APIs and metadata aren't modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Functional compatibility is about user experience, all new experiences will be opt-in for a 12-month period.
 
-Backward compatibility does not include non-X++/metadata APIs. Microsoft reserves the right to update versions of any dependencies the product uses, as well as remove dependencies without early warning. Microsoft does not commit to maintain backwards compatibility of dependent software libraries unless expressly stated. 
+Backward compatibility doesn't include non-X++/metadata APIs. Microsoft reserves the right to update versions of any dependencies the product uses, as well as remove dependencies without early warning. Microsoft doesn't commit to maintain backwards compatibility of dependent software libraries unless expressly stated. 
 
 For more information on deprecation guidelines and deprecated methods and metadata elements, see [Deprecation of methods and metadata elements](../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md).
 
 ### Can I apply a Platform service update to my existing 8.1 or later environments?
 
-Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x Service updates. Platform only service updates cannot be applied to version 8.1.x or later. Platform service updates can only be applied to versions 7.x or 8.0.
+Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x Service updates. Platform only service updates can't be applied to version 8.1.x or later. Platform service updates can only be applied to versions 7.x or 8.0.
 
 ### Will Platform updates be able to be scheduled and delay/pause by customers?
 
@@ -111,7 +111,7 @@ Customers can optionally choose to apply the update earlier to all environments 
 
 ### A service update was applied to the environment, when looking at the tile in Lifecycle Services for this environment what does the number on the tile represent?
 
-The same service update will be auto applied to all customers by Microsoft. Microsoft will continue to service the latest update. The tile in LCS for that environment represents the cumulative number of hotfixes that are available to be applied to your environment. Because Microsoft will only auto apply the same version to all customers, you will be responsible for apply the cumulative hotfix package if it's required.
+The same service update will be auto applied to all customers by Microsoft. Microsoft will continue to service the latest update. The tile in LCS for that environment represents the cumulative number of hotfixes that are available to be applied to your environment. Because Microsoft will only auto apply the same version to all customers, you'll be responsible for apply the cumulative hotfix package if it's required.
 
 ### How do I update to the latest version?
 
@@ -123,7 +123,7 @@ When Microsoft updates a sandbox environment, the package that is used for the u
 
 ### What is the expected downtime?
 
-The expected downtime for a successful update is 30 minutes to 1 hour. However, we ask for three hours of downtime in case issues occur while the update is applied. We are actively working to reduce the downtime that is required, and you should expect improvements in the next few months.
+The expected downtime for a successful update is 30 minutes to 1 hour. However, we ask for three hours of downtime in case issues occur while the update is applied. We're actively working to reduce the downtime that is required, and you should expect improvements in the next few months.
 
 ### What's the process for deprecation?
 
@@ -137,7 +137,7 @@ You can pause an update up to 4 months or 3 consecutive service updates by way o
 
 ### Can I delay an update for longer than 3 consecutive service updates due to seasonal activity or other business reason? 
 
-No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to production as well as all additional sandbox environments, if the environments are not on the latest version. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
+No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to production as well as all additional sandbox environments, if the environments aren't on the latest version. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
 
 ### What happens to an environment that is running a Finance and Operations version that is no longer supported?
 Environments that are running a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.
@@ -156,17 +156,17 @@ After you apply a service update for a supported version, this functionality wil
 
 If you find an issue when doing validations in a sandbox environment, you can request to skip the update through LCS directly by providing a valid support ticket number and a business justification. 
 
-### What if I find a critical issue during sandbox testing and I am not able to pause the Production auto update?
+### What if I find a critical issue during sandbox testing and I'm not able to pause the Production auto update?
 
-Critical issues should always be submitted to the support team via Lifecycle Services as soon as they are identified. The support staff will work with you on the resolution to the critical issue.
+Critical issues should always be submitted to the support team via Lifecycle Services as soon as they're identified. The support staff will work with you on the resolution to the critical issue.
 
 ### How much time do I get for validation?
 
-You will get 7 calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the action center in Lifecycle Service and apply to your environments. This will provide you with additional time to test the update prior to a production roll-out.
+You'll get 7 calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the action center in Lifecycle Service and apply to your environments. This will provide you with additional time to test the update prior to a production roll-out.
 
 ### What happens when the service update is complete?
 
-Once the service update is applied by Microsoft you will receive a notification if the update was successful or if it was not able to be applied.  There can be several reasons an update was unable to be applied:
+Once the service update is applied by Microsoft, you'll receive a notification if the update was successful or if it was not able to be applied.  There can be several reasons an update was unable to be applied:
 
 - Pending Package Sign-off - If a package is pending signoff, Microsoft won't apply the service update to production.  
 - Deployment Failure - If there was a deployment failure, the environment will be rolled-back to the original state.
@@ -197,7 +197,7 @@ To pause an update, refer to [Pause service updates through Lifecycle Services (
 
 ### How can I get early access to non-released platform updates?
 
-You can join the [First release program](https://experience.dynamics.com/insider/), where Microsoft will keep your system always current with the latest updates. If you're not already a member of the Dynamics 365 Insider Program, you will need to:
+You can join the [First release program](https://experience.dynamics.com/insider/), where Microsoft will keep your system always current with the latest updates. If you're not already a member of the Dynamics 365 Insider Program, you'll need to:
 
 1. Sign up for the Insider Program using this URL: https://experience.dynamics.com
 2. Accept the terms and conditions to become a Dynamics 365 Insider.
@@ -233,7 +233,7 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 
 ### What does end of service mean?
 
-Microsoft won't provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on a version that's older than 3 service updates. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
+Microsoft won't provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on a version that's older than 3 service updates. If you encounter an issue on a version that has reached end of service, you'll be required to update to the latest update and report the issue if it persists.
 
 All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as long as the environment is on a supported version.
 
