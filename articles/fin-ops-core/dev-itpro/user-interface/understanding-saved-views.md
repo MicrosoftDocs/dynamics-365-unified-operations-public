@@ -94,7 +94,7 @@ Although this approach isn't generally recommended, as of version 10.0.25, devel
 
 To opt a form out of saved views support, put the following code before **super()** in the **init()** method of the form.
 
-    this.disableSavedViewsOnForm();
+this.disableSavedViewsOnForm();
 
 ### Code that can negatively affect views
 X++ code late in the form startup cycle can interfere with the ability of views to work as users expect. In particular, be aware of the following items:
