@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Human Resources
 
 This topic provides a list of the help topics and other resources in Dynamics 365 Human resources. 
 
-## What's new and in development
+## What's new and in development in Dynamics 365 Human Resources on the merged infrastructure 
 
-Go to [What's new or changed](hr-whats-new-2021-11-29.md)
+Go to [What's new or changed](hr-whats-new-changed-10-0-25.md)
 
 ## Core concepts and tasks
 
@@ -45,19 +45,22 @@ Select a feature area to learn more about it.
 - [Personnel management](hr-personnel-departments-jobs-positions.md)
 - [Task management](hr-task-mgmt.md)
 - [Leave and absence](hr-leave-and-absence-overview.md)
-- [Benefits]
+- [Benefits](hr-benefits-manage-program.md)
 - [Benefits management](hr-benefits-management-overview.md)
 - [Compensation management](hr-compensation-overview.md)
 - [Employee development](hr-develop-performance-management-overview.md)
 - [Learning](hr-learning-courses.md)
 - [Workflow system]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
-
 Human Resources connects people and operations data to help you optimize workforce costs and take care of your employees.
+
+## What's new and in development in Dynamics 365 Human Resources stand-alone
+
+Go to [What's new or changed](hr-whats-new-2021-11-29.md)
 
 ## Dynamics 365 Finance
 
-For more information about Dynamics 365 Finance, go to [Finance home page](../finance/index.md)
+For more information about Dynamics 365 Finance, go to [Finance home page](../finance/index.md).
 
 ## Additional resources
 
