@@ -306,6 +306,8 @@
         href: cloud-edge/cloud-edge-workload-manufacturing.md
       - name: Warehouse management workloads for cloud and edge scale units
         href: cloud-edge/cloud-edge-workload-warehousing.md
+      - name: Configure the Warehouse Management mobile app for cloud and edge scale units
+        href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
       - name: Warehouse orders for cloud and edge scale units
         href: cloud-edge/cloud-edge-warehouse-order.md
       - name: Warehouse inventory adjustment
