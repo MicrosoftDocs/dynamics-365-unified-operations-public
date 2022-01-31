@@ -156,29 +156,29 @@ After you apply a service update for a supported version, this functionality wil
 > - Version N-2 is one version older than N, for example: 10.0.23
 > - Version N-3 is two versions older than N, for example: 10.0.22
 
-### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
+### How do the automatic updates affect my Microsoft-managed, additional sandbox environments in my LCS implementation project? 
 
-All additional sandbox environments will be updated within the same update window as your production environment and will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions supported within the N-3 lifecycle policy. 
+All additional sandbox environments will be updated within the same update window as your production environment, and will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions supported within the N-3 lifecycle policy. 
 
-### What if one additional sandbox environment is on N-1 and another one is on N-4 (default sandbox and production environment is on less than N version)? 
+### What if one additional sandbox environment is on N-1 and another one is on N-4 (default sandbox environment and production environment are on less than N version)? 
 
 All environments will be updated to N version. 
 
-### What if default sandbox environment is updated manually **before** default sandbox environment email goes out? 
+### What if the default sandbox environment is updated manually *before* the default sandbox environment email is sent? 
 
-Automatic updates for default sandbox, production and all additional sandbox environments will be cancelled.
+Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be cancelled.
 
-### What if default sandbox environment is updated manually **after** default sandbox email goes out? 
+### What if the default sandbox environment is updated manually *after* the default sandbox email is sent? 
 
-Automatic updates for default sandbox, production and all additional sandbox environments will be cancelled. 
+Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be cancelled. 
 
-### What if the production environment is updated manually **before** production environment email goes out? 
+### What if the production environment is updated manually *before* the production environment email is sent? 
 
-Automatic updates for the production environment as well as all additional sandbox environments will be cancelled. 
+Automatic updates for the production environment, as well as all additional sandbox environments, will be cancelled. 
 
-### What if the production environment is updated manually **after** production environment email goes out? 
+### What if the production environment is updated manually *after* the production environment email is sent? 
 
-Automatic updates for production environment will be cancelled but all additional sandbox environments will be updated to N version. 
+Automatic updates for the production environment will be cancelled, but all additional sandbox environments will be updated to N version. 
 
 ### What if I find an issue during the sandbox update?
 
