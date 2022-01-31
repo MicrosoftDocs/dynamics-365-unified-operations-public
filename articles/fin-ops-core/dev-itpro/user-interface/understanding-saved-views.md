@@ -92,9 +92,7 @@ Custom filters are controls that are modeled on forms and that cause modificatio
 ### Opting forms out of views
 Although this approach isn't generally recommended, as of version 10.0.25, developers can opt an individual form out of saved views support as required. In this case, no view selector will be available on the form, and there will be no publish capabilities.
 
-To opt a form out of saved views support, put the following code before **super()** in the **init()** method of the form.
-
-this.disableSavedViewsOnForm();
+To opt a form out of saved views support, put the following code before **super()** in the **init()** method of the form: this.disableSavedViewsOnForm();
 
 ### Code that can negatively affect views
 X++ code late in the form startup cycle can interfere with the ability of views to work as users expect. In particular, be aware of the following items:
