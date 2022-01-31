@@ -35,7 +35,7 @@ This topic provides a list of the help topics and other resources in Dynamics 36
 
 ## What's new and in development in Dynamics 365 Human Resources on the merged infrastructure 
 
-Go to [What's new or changed](../get-started/hr-whats-new-changed-10-0-25.md)
+Go to [What's new or changed](./get-started/hr-whats-new-changed-10-0-25.md)
 
 ## Core concepts and tasks
 
