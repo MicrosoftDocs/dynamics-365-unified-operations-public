@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- preview until 10.0.25 GA -->
 
 This topic describes how you can view, manage, and firm planned orders by using the **Planned orders simplified** page.
 
