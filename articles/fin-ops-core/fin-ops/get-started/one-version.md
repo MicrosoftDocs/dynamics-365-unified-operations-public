@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This topic provides clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
-ms.date: 01/26/2022
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,7 +39,7 @@ Yes, the customer can pause, delay, or opt-out of an update via Update Settings 
 - The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.
 - The customer must take the 10.0.6 update when it is available.
 
-To pause an update, refer to [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+To pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
   
 ### With a release date in early April, when will the general availability package be made available?
 Production updates for a monthly release will be scheduled for the first, second, and third weeks in of the month. Depending on the configuration that you set up in Lifecycle Services (LCS), you will receive updates during that specific week.
@@ -191,7 +191,7 @@ All new features will be opt-in for a 12-month period and will not require any c
 
 Batch jobs are suspended during the maintenance windows and resume when the maintenance is completed.
 
-To pause an update, refer to [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+To pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ## Tools
 
