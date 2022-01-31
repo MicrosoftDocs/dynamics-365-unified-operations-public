@@ -74,9 +74,9 @@ You can pause a maximum of three continuous updates at a time. For example, if y
  
 **No**, you can't pause updates to only additional sandbox environments.  
 
-## What if the updates to the default sandbox environment is paused? 
+## What if the update to the default sandbox environment is paused? 
 
-If updates to the default sandbox environment is paused, then the updates to the production environment and all additional sandbox environments will also be paused. 
+If the update to the default sandbox environment is paused, then the updates to the production environment and all additional sandbox environments will also be paused. 
 
 ## How do I pause updates?
 
