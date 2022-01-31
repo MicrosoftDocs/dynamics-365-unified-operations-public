@@ -140,7 +140,7 @@ You can pause an update up to 4 months or 3 consecutive service updates by way o
 No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to production as well as all additional sandbox environments, if the environments aren't on the latest version. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
 
 ### What happens to an environment that is running a Finance and Operations version that is no longer supported?
-Environments that are aren't a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.
+Environments that are running a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.
 
 For all Microsoft-managed environments, as well as sandbox and production environments in on-premises implementation projects, some Lifecycle Services (LCS) functionality may not be available when an environment is running a Finance and Operations version that is no longer supported. The LCS functionality that may not be available includes the ability to do the following:
 
