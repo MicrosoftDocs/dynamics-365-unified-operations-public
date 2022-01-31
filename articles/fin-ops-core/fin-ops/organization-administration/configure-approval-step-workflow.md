@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This topic explains how to configure the properties of an approval step.
 
 To configure an approval step in the workflow editor, right-click the approval step, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the approval step.

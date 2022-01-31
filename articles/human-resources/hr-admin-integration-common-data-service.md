@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Dataverse integration
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can turn integration between Microsoft Dataverse and Dynamics 365 Human Resources on or off. You can also view the synchronization details, clear tracking data, and resync a table to help troubleshoot data issues between the two environments.

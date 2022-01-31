@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
 The following topic explains how a user in the System Administrator role can set the time zone for a user.
 
 1. Go to **Navigation pane > Modules > System administration > Users > Users**.

@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up the components of a job
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 

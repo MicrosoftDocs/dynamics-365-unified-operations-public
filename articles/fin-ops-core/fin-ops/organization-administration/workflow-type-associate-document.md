@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 To create a workflow, you must bind a workflow document class to the workflow type. The workflow document class contains references to the table data fields that the workflow uses. This topic describes how to bind a workflow document class to a workflow type.
 
 > [!NOTE]
