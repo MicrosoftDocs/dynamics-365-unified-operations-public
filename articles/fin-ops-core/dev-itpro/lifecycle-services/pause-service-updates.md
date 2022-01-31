@@ -66,13 +66,13 @@ You can pause a maximum of three continuous updates at a time. For example, if y
 
 > If you pause updates to your sandbox environment, updates are automatically also paused for your production environment, because Microsoft always updates configured sandbox environments before production environments.
 
-## Can I pause only my additional sandbox environments updates?
+## Can I pause updates to only my additional sandbox environments?
  
-**No** you cannot pause only additional sandbox environments  
+**No**, you can't pause updates to only additional sandbox environments.  
 
-## What if default sandbox environment is Paused? 
+## What if the updates to the default sandbox environment is paused? 
 
-If default sandbox is paused - then default sandbox, production and all additional sandbox environment updates will also be paused. 
+If updates to the default sandbox environment is paused, then the updates to the production environment and all additional sandbox environments will also be paused. 
 
 ## How do I pause updates?
 
