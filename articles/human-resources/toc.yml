@@ -7,7 +7,7 @@
     - name: Infrastructure release 10.0.25
       href: hr-infrastructure.md
     - name: What's new or changed in Dynamics 365 Human Resources merged infrastructure
-      href: hr-whats-new-changed-10-0-25.md
+      href: ../get-started/hr-whats-new-changed-10-0-25.md
     - name: Get started   
       items:
       - name: What's new
