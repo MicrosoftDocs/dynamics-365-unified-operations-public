@@ -430,6 +430,8 @@
           href: deployment/install-deployable-package.md
         - name: Uninstall a package
           href: deployment/uninstall-deployable-package.md
+        - name: Run custom X++ scripts with zero downtime
+          href: deployment/run-custom-scripts.md
         - name: Troubleshoot package application issues
           href: deployment/deployable-package-troubleshooting.md
       - name: Deploy custom help
