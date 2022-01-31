@@ -71,4 +71,18 @@ Do these steps in legal entity B. This procedure corresponds to the box labeled 
 
 The customer invoice for the intercompany sales order is automatically posted in legal entity B. The intercompany vendor invoice then is automatically created and posted in legal entity A. If the original sales order is set up as a direct delivery, the customer invoice is created for the original sales order in legal entity A.
 
+> [!NOTE]
+> In the past, for intercompany sales scenario, if the vendor invoice workflow is configured in the intercompany purchasing company, the intercompany sales order could not be successfully invoiced. As a result, the vendor invoice workflow had to be turned off for the intercompany purchasing company. 
+
+With a recent feature in release 10.0.25, this limitation has been solved.  Intercompany sales orders can be invoiced when the vendor invoice workflow is configured in the intercompany purchasing company.
+
+To enable this feature:
+1. Select the intercompany sales legal entity.  
+2. Go to **Accounts receivable->Customers->All customers**
+3. Select the customer for intercompany purchasing company.
+4. Go to **General->Set up->Intercompany-> Purchase order policies** tab. 
+5. Select the **Bypass vendor invoice workflow for intercompany vendor invoices** parameter.
+
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
