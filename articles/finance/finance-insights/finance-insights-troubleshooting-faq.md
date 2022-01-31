@@ -99,7 +99,7 @@ The following steps should have been completed.
 
 ### Resolution
 
-Check the data integrator setup to validate that it's functioning as expected and inserting the data from AI Builder back to Finance.  
+Check the data integrator setup to validate that it's functioning as expected and upserting the data from AI Builder back to Finance.  
 For more information, see [Create a data integration project](../finance-insights/create-data-integrate-project.md).
 
 ## Symptom: Customer payment prediction training failed and the AI Builder error states, "Prediction should have only 2 distinct outcome values to train the model. Map to two outcomes and retrain", "Training report issue: IsNotMinRequiredDistinctNonNullValues".
