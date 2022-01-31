@@ -45,6 +45,8 @@ You can cancel a CFDI electronic invoice that was previously validated and certi
 >[!NOTE] 
 > You cannot cancel a CFDI document if an associated document exists. For example, you cannot cancel a prepayment if an invoice references that payment. You first need to cancel associated documets and then cancel the CFDI document.
 
+Starting from version 10.0.23 (build 10.0.1037.134) you can specify the reason of cancelation. When you click **Functions** \> **Cancel CFDI** on Action pane you can select a reason of cancelation. If the reason is 01, then it is nessary to fill out a replacement document that replace the current one.   
+
 ## Manually cancel a CFDI electronic invoice
 1. Select an invoice with status Approved.
 2. On the Action Pane, click Functions.
