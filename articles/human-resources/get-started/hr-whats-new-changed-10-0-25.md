@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.25. This version has a build number of 10.0.xxxx and is available as 
+This topic lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.25. This version has a build number of 10.0.1149 and is available as 
 follows:
 
 - **Preview of release**: January 2022
