@@ -23,8 +23,8 @@ This topic lists new features, fixes, improvements, and known issues for each re
 
 This version introduces the following new features, fixes, and improvements:
 
--	Improved performance by fixing a memory leak issue.
--	Fixed an issue where some field values didn't update correctly when selected on the detail page.
+- Improved performance by fixing a memory leak issue.
+- Fixed an issue where some field values didn't update correctly when selected on the detail page.
 
 ## Version 2.0.14.0
 
