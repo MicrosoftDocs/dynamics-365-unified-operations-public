@@ -60,3 +60,23 @@ No, retirement was announced in December 2019 and the required export capabiliti
 ### Will the customer’s data related to both Dynamics 365 Talent - Attract and Onboard apps in Dataverse be deleted after February 1, 2022?
 
 No, the Dataverse entities will remain in the customer’s Microsoft Dataverse environment even after retirement unless the Human Capital Management Talent solution is deleted or uninstalled.
+
+### I know the name of the Talent environment. How can I see the Attract and Onboard data in Dataverse?
+
+1.	Sign into Power Apps: https://make.powerapps.com
+2.	Select the environment in which you would like to see Attract and Onboard data.
+3.	Go to **Dataverse -> Tables**. 
+4.	Type “msdyn_” in **Search**, if you are seeing the list of tables starting with “msdyn_” + table names (example: msdyn_candidate) then you have found the environment with Attract and Onboard data.
+
+### I don’t know the name of the Talent environment. How can I find the environment that has the data for the Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard applications?
+
+1)	Sign into Power Platform admin center: https://admin.powerplatform.microsoft.com/
+2)	Click **Environments**.
+3)	Select a particular environment to evaluate.
+4)	Click **Resources -> Dynamics 365 apps**.
+5)	If you see **HCM Talent** solution installed, this environment might have Attract and Onboard data stored within it. 
+
+> [!NOTE] 
+> The **HCM Talent** solution is also used in Dynamics 365 Human Resources.
+
+
