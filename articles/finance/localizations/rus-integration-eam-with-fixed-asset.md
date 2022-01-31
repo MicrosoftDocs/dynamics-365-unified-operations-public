@@ -4,7 +4,7 @@
 title: Integration of the Asset management module with the Fixed asset (Russia) module 
 description: This topic provides information about the integration of the Asset management module with the Fixed asset (Russia) module.
 author: v-oloski
-ms.date: 01/27/2022
+ms.date: 01/31/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -54,8 +54,8 @@ You can open the asset that is related to the Russian fixed asset from a Russian
 
 ## Additional resources
 
-- [Asset management overview](https://docs.microsoft.com/dynamics365/supply-chain/asset-management), 
-- [Functional locations and assets](https://docs.microsoft.com/dynamics365/supply-chain/asset-management/overview/functional-locations-and-objects), 
-- [Functional locations and assets](https://docs.microsoft.com/dynamics365/supply-chain/asset-management/overview/objects-and-work-orders)
+- [Asset management overview](../../supply-chain/asset-management.md), 
+- [Functional locations and assets](../../supply-chain/asset-management/overview/functional-locations-and-objects.md), 
+- [Functional locations and assets](../../supply-chain/asset-management/overview/objects-and-work-orders.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
