@@ -33,12 +33,6 @@ ms.dyn365.ops.version: Human Resources
 
 This topic provides a list of the help topics and other resources in Dynamics 365 Human resources. 
 
-## What's new and in development in Dynamics 365 Human Resources on the merged infrastructure 
-
-Go to [What's new or changed](./get-started/hr-whats-new-changed-10-0-25.md)
-
-## Core concepts and tasks
-
 Select a feature area to learn more about it.
 
 - [Employee self service](hr-employee-manager-self-service-overview.md)
@@ -54,13 +48,9 @@ Select a feature area to learn more about it.
 
 Human Resources connects people and operations data to help you optimize workforce costs and take care of your employees.
 
-## What's new and in development in Dynamics 365 Human Resources stand-alone
-
-Go to [What's new or changed](hr-whats-new-2021-11-29.md)
-
 ## Dynamics 365 Finance
 
-For more information about Dynamics 365 Finance, go to [Finance home page](../finance/index.md).
+For information about Dynamics 365 Finance, go to [Finance home page](../finance/index.md).
 
 ## Additional resources
 
