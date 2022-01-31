@@ -67,7 +67,7 @@ The following table lists the feature enhancements included in this release. Eac
 | Feature area | Feature name in feature management | More information |  
 |---|---|---|
 |  General ledger | (Brazil) Mandatory bank transaction description  | This feature lets you require that descriptions be entered in bank account reconciliation transactions. This requirement can prevent bank transaction journals from being posted if they contain transaction lines that have no description. |  
-| Globalization | (ER) Business document management | The initially implemented [Business document management (BDM)](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md) functionality lets you use the BDM workspace to modify only business document templates that have already been uploaded to your current instance of the Finance application. This feature improves the BDM capability and allows you to import a business document template from the Global repository to Finance, making it available for editing. For more information, see [Microsoft Office-style user interface in Business document management](../../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md#upload-a-template-from-the-global-repository). |
+| Globalization | (ER) Business document management | The initially implemented [Business document management](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md) functionality lets you use the Business document management workspace to modify only business document templates that have already been uploaded to your current instance of the Finance application. This feature improves the Business document management capability and allows you to import a business document template from the Global repository to Finance, making it available for editing. For more information, see [Microsoft Office-style user interface in Business document management](../../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md#upload-a-template-from-the-global-repository). |
 | Globalization | (ER) Built-in functions | This feature lets you use the new syntax of the ORDERBY built-in function to translate your ordering request to a direct SQL statement. Use this option for better performance when the list of ordered records is large. For more information, see [ORDERBY ER function](../../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md#syntax-2). |
 | Globalization | (ER) Built-in functions | This feature lets you use the new ER built-in GETLABELTEXT function to return a label translation for the explicitly specified language. You can use this function, for example, to design an ER format to generate a bi-lingual document that must simultaneously present content in two languages. For more information, see [GETLABELTEXT ER function](../../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md). |
 
@@ -82,11 +82,11 @@ For information about the bug fixes included in this update, sign in to Lifecycl
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
-### Dynamics 365 and industry clouds: 2021 release wave 2 plan
+### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2021 release wave 2 plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2022 release wave 1 plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 ### Removed and deprecated features
 
