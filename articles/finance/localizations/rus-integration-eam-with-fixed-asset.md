@@ -54,7 +54,7 @@ You can open the asset that is related to the Russian fixed asset from a Russian
 
 ## Additional resources
 
-- [Asset management overview](../../supply-chain/asset-management.md), 
+- [Asset management overview](../../supply-chain/asset-management/index.md), 
 - [Functional locations and assets](../../supply-chain/asset-management/overview/functional-locations-and-objects.md), 
 - [Functional locations and assets](../../supply-chain/asset-management/overview/objects-and-work-orders.md)
 
