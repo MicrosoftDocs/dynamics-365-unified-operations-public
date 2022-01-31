@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Server-to-server authentication for the ATS integration API
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes how to set up server-to-server authentication for application integrations against the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API. There are a couple of layers of security that need to be managed for the service principal to get access to the Microsoft Dataverse virtual table and associated data. The user needs to be granted access to the Dataverse virtual table in Microsoft Power Platform, and access to the data in Dynamics 365 Human Resources.

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [New flexible service updates being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [New flexible service updates being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We'll continue to add additional information to this topic as needed.
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
@@ -38,6 +38,8 @@ Yes, the customer can pause, delay, or opt-out of an update via Update Settings 
 - The customer is currently on version 10.0.2.
 - The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.
 - The customer must take the 10.0.6 update when it's available.
+
+To pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
   
 ### With a release date in early April, when will the general availability package be made available?
 Production updates for a monthly release will be scheduled for the first, second, and third weeks in of the month. Depending on the configuration that you set up in Lifecycle Services (LCS), you'll receive updates during that specific week.
@@ -184,7 +186,7 @@ Automatic updates for the production environment will be cancelled, but all addi
 
 If you find an issue when doing validations in a sandbox environment, you can request to skip the update through LCS directly by providing a valid support ticket number and a business justification. 
 
-### What if I find a critical issue during sandbox testing and I am not able to pause the Production auto update?
+### What if I find a critical issue during sandbox testing and I'm not able to pause the Production auto update?
 
 Critical issues should always be submitted to the support team via Lifecycle Services as soon as they're identified. The support staff will work with you on the resolution to the critical issue.
 
@@ -194,14 +196,14 @@ You'll get 7 calendar days for validation after the update is applied to your sa
 
 ### What happens when the service update is complete?
 
-Once the service update is applied by Microsoft you'll receive a notification if the update was successful or if it wasn't able to be applied.  There can be several reasons an update was unable to be applied:
+Once the service update is applied by Microsoft, you'll receive a notification if the update was successful or if it wasn't able to be applied.  There can be several reasons an update was unable to be applied:
 
 - Pending Package Sign-off - If a package is pending signoff, Microsoft won't apply the service update to production.  
 - Deployment Failure - If there was a deployment failure, the environment will be rolled-back to the original state.
  
 ### If there's a failure, can I reschedule the update to be auto applied?
 
-You'll not be able to reschedule the update per se, but you may apply the package when it's convenient for you, just as you might schedule to apply any other update.
+You won't be able to reschedule the update per se, but you may apply the package when it's convenient for you, just as you might schedule to apply any other update.
 
 ### Will critical hotfixes be automatically applied to my sandbox/ production environment during auto-update?
 
@@ -218,6 +220,8 @@ All new features will be opt-in for a 12-month period and won't require any chan
 ### Are batch jobs suspended during a service update?
 
 Batch jobs are suspended during the maintenance windows and resume when the maintenance is completed.
+
+To pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ## Tools
 

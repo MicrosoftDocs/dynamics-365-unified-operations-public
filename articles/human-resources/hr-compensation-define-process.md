@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Define compensation process and calculate results
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct. This procedure will create a compensation process, run the process, and view the results. The demo data company used to create this procedure is USMF.
