@@ -26,126 +26,196 @@ ms.dyn365.ops.version: 10.0.25
 
 ---
 
-# Ledger settlements
+# Awareness between ledger settlement and year-end close
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-As of Dynamics 365 Finance application release 10.0.25, a new feature, **Awareness between ledger settlement and year-end close** is available in **Feature management**. The feature adds two primary enhancements which impact Ledger settlement and the General ledger year-end close. 
+In Microsoft Dynamics 365 Finance version 10.0.25, the **Awareness between ledger settlement and year-end close** feature is available in the **Feature management** workspace. This feature adds two primary enhancements that affect ledger settlement and general ledger year-end close.
 
-First, during the General ledger year-end close, ledger transactions that are settled will no longer be included in the opening balance of the next fiscal year. This functionality ensures that only ledger transactions not settled are included in the opening balance, which is important when running the General ledger foreign currency revaluation.  Foreign currency revaluation is only run for ledger transactions in a state of **Not settled**. Before this feature the opening balance summarized both **Settled** and **Not settled** transactions, with the summarized amount set to **Not settled**.
+During general ledger year-end close, ledger transactions that have been settled will no longer be included in the opening balance of the next fiscal year. This enhancement ensures that only unsettled ledger transactions are included in the opening balance. It's important when general ledger foreign currency revaluation is run. Foreign currency revaluation is run only for ledger transactions that have a status of **Not settled**. However, before the **Awareness between ledger settlement and year-end close** feature was released, the opening balance summarized both transaction that have a status of **Settled** and those that have a status of **Not settled**, and the status of the summarized amount was set to **Not settled**.
 
-The second enhancement gives you the option to post detailed opening balance transactions during the General ledger year-end close. If **Keep detail during year-end close** is **Yes**, a separate opening balance will be created for each ledger transaction that is not settled. This setting is defined per main account in Ledger settlement setup. Keeping detailed transactions for the opening balance greatly improves the ability to settle the unsettled ledger transactions in the next fiscal year.    
+The second enhancement lets you post detailed opening balance transactions during general ledger year-end close. If the **Keep detail during year-end close** option is set to **Yes**, a separate opening balance will be created for each ledger transaction that isn't settled. This setting is defined for each main account in the ledger settlement setup. By keeping detailed transactions for the opening balance, you greatly improve the ability to settle the unsettled ledger transactions in the next fiscal year.
 
-To support the new enhancements, changes were made to ledger settlement and the year-end close.  
+To support the new enhancements, changes were made to ledger settlement and year-end close.
 
-**Ledger settlement**
+### Changes to ledger settlement
+
 - Ledger settlement must be done within a fiscal year.
-- Ledger settlement must be done for transactions within a single main account.
+- Ledger settlement must be done for transactions in a single main account.The main account is now a required filter on the **Ledger settlement** page.
+- Ledger settlement and the reversal of ledger settlement can't be done for transactions that are posted within a closed fiscal year (in other words, the year-end close has been run).
 
-   - The main account is now a required filter on the Ledger settlement page  . 
+### Changes to year-end close
 
-- Ledger settlement and reversal of ledger settlement cannot be done for transactions with a closed fiscal year (year-end close has been run).
+- A year-end close can't be reversed if any opening balance transactions have been settled in the next fiscal year. This change applies when a year-end close is reversed, or when a year-end close is rerun and the **Delete existing year-end entries when re-closing the year** option is set to **Yes** in General ledger parameters.
+- If the **Keep detail during year-end close** option is set to **Yes** for any balance sheet account in the ledger settlement, more detailed opening balance transactions will be created for that main account.
 
-**Year-end close**
-- A year-end close cannot be reversed if any opening balance transactions have been settled in the next fiscal year.  This includes reversing the year-end close or rerunning the year-end close with the General ledger parameter **Delete existing year-end entries when re-closing the year** set to **Yes**. 
-- If any balance sheet account is marked in the Ledger settlement as **Keep detail during year-end close** set to **Yes**, more detailed opening balance transactions will be created for that main account.  
+## Before you enable the feature
 
-## Before you enable the feature  
-With the functional and data model changes, it’s important to consider the following before enabling this feature:
+Because of the changes in functionality and the data model, it's important that you consider the following points before you enable the feature:
 
-- All transactions ‘Marked’ for settlement, but not settled, will be unmarked automatically when the feature is enabled. To prevent any lose of work, all marked transactions should be settled before the feature is enabled. 
-- Some organizations run the year-end close multiple times for the same fiscal year. The feature must not be enabled if the year-end close has been run once but will be run again for the same fiscal year. The feature must be enabled before processing the first year-end close or after processing the last year-end close for the fiscal year. 
+- All transactions that have been marked for settlement but haven't been settled will automatically be unmarked when the feature is enabled. To prevent any loss of work, settle all marked transactions before you enable the feature.
+- Some organizations run the year-end close multiple times for the same fiscal year. Don't enable the feature if the year-end close has already been run once and will be run again for the same fiscal year. The feature must be enabled before you process the first year-end close or after you process the last year-end close for the fiscal year.
 
-   - If the year-end close has been run once but you want to enable the feature, reverse the year-end close and then the feature can be enabled.
+  If you want to enable the feature, but the year-end close has already been run once, you must reverse the year-end close before you can enable the feature.
 
-- Because settlement across fiscal years is no longer permitted, we recommend enabling the feature before beginning the year-end close process.  Also, the opening balance transaction should be settled for the fiscal year being closed.  This is to ensure that the next fiscal year’s opening balances are not impacted by previous cross-fiscal year settlements.
-- Because settlement across main accounts is no longer permitted, you may need to adjust your chart of accounts or processes to ensure ledger settlement can be done within the same main account. 
-- This feature cannot be enabled if the public sector year-end close is being used.  
+- Because settlement across fiscal years is no longer permitted, we recommend that you enable the feature before you begin the year-end close process. Then, to ensure that the next fiscal year's opening balances aren't affected by previous cross-fiscal-year settlements, the opening balance transaction should be settled for the fiscal year that is being closed.
+- Because settlement across main accounts is no longer permitted, adjust your chart of accounts or processes as required to ensure that ledger settlement can be done in the same main account.
+- The feature can't be enabled if the public sector year-end close process is being used.
 
 ## Set up ledger settlement
-After enabling the feature and before running the next year-end close, each organization must determine whether they will choose to keep the transaction detail during the year-end close.  This option has no impact on opening balance postings from previous year-end close processes. 
-The option **Keep detail during year-end close** is defined per main account on the **Ledger settlement setup** page.  Go to **General ledger** > **Ledger setup** > **General ledger parameters**.  Choose **Ledger settlements** from the Table of contents.  The same setup can also be found under **General ledger** > **Periodic tasks** > **Ledger settlements**.   Select the **Ledger settlement accounts** button. 
-Two columns have been added.  First, the **Main account type** assigned to the main account is displayed and is for informational purposes only.  The **Keep detail during year-end close** column defaults to **No** and can only be changed to **Yes** if the **Main account type** for the main account is **Balance sheet**, **Asset**, or **Liability**.  
-If this setting remains at **No**, the opening balances will be posted in summary as normally done during the year-end close.  If this setting is changed to **Yes**, the opening balances will be created in detail for each ledger transaction that is not settled for the main account. 
+
+After you enable the feature, and before you run the next year-end close, each organization must determine whether it will keep the transaction details during the year-end close. The choice has no impact on opening balance postings from previous year-end close processes.
+
+The **Keep detail during year-end close** option is set for each main account on the **Ledger settlement setup** page.
+
+1.	Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
+2.	On the **Ledger settlements** tab, select **Ledger settlement accounts**.
+
+-or-
+
+1.	Go to **General ledger** > **Periodic tasks** > **Ledger settlements**.
+2.	Select **Ledger settlement accounts**.
+
+Two columns have been added to the **Ledger settlements** page:
+	
+- **Main account type** – This column is for informational purposes only. It shows the type that is assigned to the main account.
+- **Keep detail during year-end close** – By default, the option is set to **No**. It can be set to **Yes** only if the value in the **Main account type** column is **Balance sheet**, **Asset**, or **Liability**. When the option is set to **No**, opening balances will be posted in summary, as is typical during year-end close. If it's set to **Yes**, opening balances will be created in detail for each ledger transaction that isn't settled for the main account.
 
 ## Year-end close
-When running the year-end close under **General ledger** > **Period close** > **Year end close**, the process will create the opening balances for the main accounts defined for ledger settlement in either summary or detail, dependent on the setup in Ledger settlement. It will also exclude ledger transactions that are settled, whether you choose to post the opening balance in summary or detail for each main account.
-Assume the following transactions are posted to main account **130100** in fiscal year 2021.
- 
-Of these transactions, three are settled within Ledger settlement.  Note that the USD invoice for $175 was paid by a EUR payment, and a cash discount was taken. 
- 
 
-Let’s look at what happens for main account 130100 when running the year-end close before the feature is enabled vs after enabling the feature.  Also, we’ll see the difference when **Keep detail during year-end close** is either **No** and **Yes**. 
+When you run the year-end close by going to **General ledger** > **Period close** > **Year end close**, the process creates the opening balances for the main accounts that are defined for ledger settlement. The opening balances are created in either summary or detail, depending on the ledger settlement setup. The process excludes ledger transactions that are settled, regardless of whether you post the opening balance for each main account in summary or in detail.
 
-### Feature is not enabled
-The year-end close creates the following opening balances in 2022 for main account 130100. The sum of the transactions in the accounting currency is $525 USD.
- 
-Even though the payment’s transaction for -127.11 EUR was ledger settled, it still comes forward as a beginning balance. 
-Feature is enabled and **Keep detail during year-end close** = **No**.
-The year-end close creates the following opening balances in 2022 for main account 130100. The sum of the transactions in the accounting currency is still $525 USD but the ledger settled transactions were excluded from the opening balance. The total amount for 130100-002- is $125 instead of $299.12 and the 127.11 EUR/174.12 USD transaction is excluded completely. 
- 
-### Feature is enabled 
-When the features is enabled, and **Keep details during year-end-close** is set to **Yes**, the year-end close creates the following opening balances in 2022 for main account 130100. A separate opening balance transaction is created for each of the five transactions that weren’t settled. The sum of the transactions in the accounting currency is still $525.
- 
-When keeping transaction details, the original detailed transactions are not impacted.  They remain posted and they remain unsettled in the fiscal year being closed.  A copy of those transactions is created for the opening balance. The following values from the original transactions will be copied to the opening balance transactions:  
+For example, multiple transactions are posted to main account 130100 in fiscal year 2021.
 
-- Ledger account – Main account and all financial dimensions
-- Transaction, accounting, and reporting currency amounts 
+| Journal number | Voucher  | Date       | Type      | Ledger account | Account name        | Description       | Currency | Amount in transaction currency | Amount  | Amount in reporting currency |
+|----------------|----------|------------|-----------|----------------|---------------------|-------------------|----------|--------------------------------|---------|------------------------------|
+| 20853          | FTV-3000 | 12/3/2021  | Operating | 130100-001-    | Accounts receivable | Service fee       | USD      | 100                            | 100     | 100                          |
+| 20855          | FTV-3004 | 12/5/2021  | Operating | 130100-002-    | Accounts receivable | Utilities         | USD      | 175                            | 175     | 175                          |
+| 20854          | CMV-4000 | 12/16/2021 | Operating | 130100-001-    | Accounts receivable | Refund            | USD      | -100                           | -100    | -100                         |
+| 20851          | ARP-8000 | 12/20/2021 | Operating | 130100-002-    | Accounts receivable |                   | USD      | -0.88                          | -0.88   | -0.88                        |
+| 20853          | ARPM0004 | 12/20/2021 | Operating | 130100-002-    | Accounts receivable |                   | EUR      | -127.11                        | -174.12 | -174.12                      |
+| 20856          | CMV-4010 | 12/21/2021 | Operating | 130100-002-    | Accounts receivable | Credit on account | USD      | -175                           | -175    | -175                         |
+| 20857          | FTV-3011 | 12/28/2021 | Operating | 130100-001-    | Accounts receivable | Utilities         | USD      | 400                            | 400     | 400                          |
+| 20910          | FTV-3020 | 12/29/2021 | Operating | 130100-002-    | Accounts receivable | Service           | USD      | 300                            | 300     | 300                          |
+
+Of these transactions, three are settled during ledger settlement.
+
+There is an invoice for 175 US dollars (USD 175). This invoice was paid by a payment in euros (EUR), and a cash discount was taken.
+
+| Journal number | Voucher  | Date       | Type      | Ledger account | Account name        | Description | Currency | Amount in transaction currency | Amount  | Amount in reporting currency |
+|----------------|----------|------------|-----------|----------------|---------------------|-------------|----------|--------------------------------|---------|------------------------------|
+| 20855          | FTV-3004 | 12/5/2021  | Operating | 130100-002-    | Accounts receivable | Utilities   | USD      | 175                            | 175     | 175                          |
+| 20851          | ARP-8000 | 12/20/2021 | Operating | 130100-002-    | Accounts receivable |             | USD      | -0.88                          | -0.88   | -0.88                        |
+| 20853          | ARPM0004 | 12/20/2021 | Operating | 130100-002-    | Accounts receivable |             | EUR      | -127.11                        | -174.12 | -174.12                      |
+
+The results for main account 130100 depend on whether the feature is enabled before the year-end close is run. If the feature is enabled, the result also depends on the setting of the Keep detail during year-end close option.
+
+### The feature isn't enabled
+The year-end close creates three opening balance transactions for main account 130100 in 2022. The sum of the transactions in the accounting currency is USD 525.
+
+| Journal number | Voucher  | Date     | Type    | Ledger account | Account name        | Description | Currency | Amount in transaction currency | Amount  | Amount in reporting currency |
+|----------------|----------|----------|---------|----------------|---------------------|-------------|----------|--------------------------------|---------|------------------------------|
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-002-    | Accounts receivable |             | USD      | 299.12                         | 299.12  | 299.12                       |
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-001-    | Accounts receivable |             | USD      | 400                            | 400     | 400                          |
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-002-    | Accounts receivable |             | EUR      | -127.11                        | -174.12 | -174.12                      |
+
+Even though the payment's transaction for EUR -127.11 was ledger settled, the transaction still comes forward as a beginning balance.
+
+### Feature is enabled and Keep detail during year-end close = No
+
+The year-end close creates two opening balance transactions for main account 130100 in 2022. The sum of the transactions in the accounting currency is still USD 525, but the ledger-settled transactions are excluded from the opening balance. The total amount for account 130100-002- is USD 125 instead of USD 299.12, and the transaction for EUR 127.11/USD 174.12 is totally excluded.
+
+| Journal number | Voucher  | Date     | Type    | Ledger account | Account name        | Description | Currency | Amount in transaction currency | Amount | Amount in reporting currency |
+|----------------|----------|----------|---------|----------------|---------------------|-------------|----------|--------------------------------|--------|------------------------------|
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-002-    | Accounts receivable |             | USD      | 125                            | 125    | 125                          |
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-001-    | Accounts receivable |             | USD      | 400                            | 400    | 400                          |
+
+### Feature is enabled and Keep detail during year-end close = Yes
+
+The year-end close creates five opening balance transactions for main account 130100 in 2022. A separate opening balance transaction is created for each of the five transactions that weren't settled. The sum of the transactions in the accounting currency is still USD 525.
+
+| Journal number | Voucher  | Date     | Type    | Ledger account | Account name        | Description       | Currency | Amount in transaction currency | Amount | Amount in reporting currency |
+|----------------|----------|----------|---------|----------------|---------------------|-------------------|----------|--------------------------------|--------|------------------------------|
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-001-    | Accounts receivable | Service fee       | USD      | 100                            | 100    | 100                          |
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-001-    | Accounts receivable | Refund            | USD      | -100                           | -100   | -100                         |
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-002-    | Accounts receivable | Credit on account | USD      | -175                           | -175   | -175                         |
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-001-    | Accounts receivable | Utilities         | USD      | 400                            | 400    | 400                          |
+| 20910          | YEC_2021 | 1/1/2022 | Opening | 130100-002-    | Accounts receivable | Service           | USD      | 300                            | 300    | 300                          |
+
+When transaction details are kept, the original detailed transactions aren't affected. They remain posted and unsettled in the fiscal year that is being closed. A copy of those transactions is created for the opening balance. The following values from the original transactions are copied to the opening balance transactions.
+
+- Ledger account (the main account and all financial dimensions)
+- Amounts in the transaction, accounting, and reporting currencies
 - Description
 - Posting layer
 - Posting type
 
-  - Note that all other opening balance transactions are NOT assigned a posting type, so this is one way to differentiate opening transactions that were brought forward in detail.
+   > [!NOTE]
+   > No other opening balance transactions are assigned a posting type. Therefore, the posting type can be used to differentiate opening transactions that were brought forward in detail.
 
-Some fields from the original transactions must change on the opening balance detailed transactions. The Date of opening balance transactions is always the first day of the next fiscal year.  The Journal number must change and the voucher number changes to the value entered on the year-end close dialog.
+Some fields from the original transactions must change in the opening balance detailed transactions. The date of opening balance transactions is always the first day of the next fiscal year. The journal number must change, and the voucher number changes to the value that was entered in the year-end close dialog box.
 
-Information from the original transactions can be found on the Ledger settlement page.  Each detailed opening balance transaction will show the Original transaction date as a column within the grid, which will be helpful when matching transactions in the new fiscal year.  Also, the View original voucher button is available for the user to drill back to the full original voucher.
+Information from the original transactions can be found on the **Ledger settlement** page. Each detailed opening balance transaction shows the **Original transaction date** column in the grid. This column can help you match transactions in the new fiscal year. You can select **View original voucher** to drill back to the full original voucher.
 
-## Settle transactions 
-To settle ledger transactions, go to General ledger > Periodic tasks > Ledger settlements.  
+## <a name="settle-transactions"></a>Settle transactions
+To settle ledger transactions, follow these steps.
 
-1. Set the filters at the top of the page:
+1. Go to **General ledger** > **Periodic tasks** > **Ledger settlements**.
+2.	Set the filters at the top of the page.
 
-   1. Select a date range or Date interval code to automatically fill in the date range.  
+    1. Select a date range. Alternatively, select a date interval code to automatically fill in the date range.
 
-      - The date range cannot cross fiscal years.  If the date range crosses fiscal years, no transactions will be shown when selecting Display transactions.  
-      - If the date range is within an open fiscal year, transactions can be settled and settlement can be reversed.  If the date range is within a closed fiscal year (year-end close completed), transactions will be shown but can’t be settled or unsettled.  You can only unmark transactions in a closed fiscal year. The Mark selected, Settle marked transactions, and Reverse marked transactions button are disabled when the date range is within a closed fiscal year. 
+       - The date range can't cross fiscal years. If the date range crosses fiscal years, no transactions will be shown when you select **Display transactions**.
+       - If the date range is in an open fiscal year, transactions can be settled, and the settlement can be reversed. If the date range is in a closed fiscal year, or if the year-end close is completed, transactions are shown, but they can't be settled or unsettled. You can unmark transactions only in a closed fiscal year. If the date range is in a closed fiscal year, the **Mark selected**, **Settle marked transactions**, and **Reverse marked transactions** buttons are unavailable.
 
-   2.	Select the Main account for which transactions to display.  This is a required field.  The lookup will only display main accounts selected in the Ledger settlement page for this company’s chart of accounts.
-   3.	Select the Posting layer.  It is not permitted to settle transactions in different posting layers. 
-   4.	To show the main account and dimensions in separate columns, select a Financial dimension set.
+    2. Select the main account to show transactions for. This field is required. The lookup shows only the main accounts that are selected on the **Ledger settlement** page for the company's chart of accounts.
+    3. Select the posting layer. You can't settle transactions that are in different posting layers.
+    4. To show the main account and dimensions in separate columns, select a financial dimension set.
 
-2. Select **Display transactions** to show all the transactions that match the filters that you set. If you change any of the filters or the dimension sets, you must select **Display transactions** again.
-3. Select one or more lines that you're considering for settlement. The value of the **Selected amount** field at the top of the page increases or decreases by the total amount on the lines that you selected.
-4. After you've finished selecting transactions, select **Mark selected**. A check mark appears in the **Marked** column for each transaction that you selected. Additionally, the value of the **Marked amount** field above the grid increases or decreases by the total amount on the lines that you marked.
-11.	When the **Marked amount value** is 0 (zero), select **Settle marked transactions**.  Partial settlement is not permitted.  For example, you cannot settle a $100 debit transaction against a $90 credit transaction. The remaining $10 credit transaction must also be marked for inclusion in the settlement.
-13.	Enter a Settlement date. The date must be on or after the latest date of the transactions marked for settlement. The status of the marked transactions is updated to **Settled**.
+3.	Select **Display transactions** to show all the transactions that match the filters that you set. If you change any of the filters or the dimension sets, you must select **Display transactions** again.
+4.	Select lines for settlement. The value in the **Selected amount** field at the top of the page increases or decreases to reflect the total amount on the selected lines.
+5.	When you've finished selecting transactions, select **Mark selected**. For each selected transaction, a check mark appears in the **Marked** column. Additionally, the value in the **Marked amount** field above the grid increases or decreases to reflect the total amount on the marked lines.
+6.	When the value in the **Marked amount** field is **0** (zero), select **Settle marked transactions**.
 
-  > [!NOTE]
-  > All transactions marked for settlement by the user, for the active legal entity, and for the selected main account, will be settled.  The transactions do not need to appear on the screen; they will be settled even if they are hidden as the result of a filter.   
+    - Partial settlement isn't permitted. For example, you can't settle a $100 debit transaction against a $90 credit transaction. The remaining $10 credit transaction must also be marked for inclusion in the settlement.
+    - Enter a settlement date. The date must be on or after the latest date of the transactions that are marked for settlement.
 
-There are some processes, such as reversing a transaction, that will automatically settle ledger transactions.  Let’s say a payment and invoice are settled in Accounts receivable, and the settlement generated a realized gain/loss.  The settlement of the payment and invoice does NOT settle any ledger transactions, such as for the accounts receivable ledger account.  But let’s say that the payment and invoice are unsettled in Accounts receivable.  The reversing accounting entry that was posted during the reversal of the AR settlement will cause the original and reversing accounting entries to be ledger settled within General ledger.  When this feature is enabled, the ledger settlement of a reversal will not occur automatically if the reversing date is in a different fiscal year. 
+The status of the marked transactions is updated to **Settled**.
 
-## Using Microsoft Excel for ledger settlement
-Transactions displayed on the Ledger settlement page can be exported to Excel.  Excel can be used to further filter transactions when determining which transactions to mark for settlement.  
+> [!IMPORTANT]
+> All transactions that you've marked for settlement for the active legal entity and the selected main account will be settled. The transactions don't have to appear on the page. They will be settled even if they are hidden because of a filter.
 
-Both Ledger settlement entities will only export ledger transactions for the main account selected on the page.  Also, transactions for closed fiscal years can still be marked or unmarked using Excel, but they cannot be settled and the reversal of settled transactions cannot be done for that fiscal year. 
+Some processes, such as reversal of a transaction, automatically settle ledger transactions. For example, a payment and invoice are settled in Accounts receivable, and the settlement generates a realized gain/loss. The settlement of the payment and invoice doesn't settle any ledger transactions, such as transactions for the Accounts receivable ledger account. However, if the payment and invoice are unsettled in Accounts receivable, the reversing accounting entry that was posted during the reversal of the Accounts receivable settlement will cause the original and reversing accounting entries to be ledger settled in General ledger. When the **Awareness between ledger settlement and year-end close** feature is enabled, the ledger settlement of a reversal doesn't automatically occur if the reversing date is in a different fiscal year.
+
+## Use Excel for ledger settlement
+
+Transactions that are shown on the **Ledger settlement** page can be exported to Excel. In Excel, you can further filter transactions to determine which transactions to mark for settlement.
+Both Ledger settlement entities export ledger transactions only for the main account that is selected on the **Ledger settlement** page. Although transactions for closed fiscal years can still be marked or unmarked by using Excel, they can't be settled. Additionally, settled transactions can't be reversed for that fiscal year.
 
 ## Make transactions easier to find
-The **Ledger settlements** page includes capabilities that make it easier to see the transactions that you need for settlement.
 
-- The Marked filter lets you filter transactions based on whether the Marked field for them is selected or cleared.
-- The Status filter lets you filter transactions based on whether their status is Settled or Not settled.
-- The Sort by absolute amount button lets you sort the amounts by absolute value, so that you can group together debits and credits that have the same amount.
+The **Ledger settlements** page includes capabilities that make it easier to view the transactions that you require for settlement.
 
-## Reverse a settlement  
+•	Use the **Marked** filter to filter transactions based on whether the **Marked** checkbox for them is selected.
+•	Use the **Status** filter to filter transactions based on their status.
+•	Select **Sort by absolute amount** to sort the amounts by absolute value. In this way, you can group debits and credits that have the same amount.
+
+## Reverse a settlement
+
 You can reverse a settlement that was made by mistake.
-1. Follow steps 1 through 3 in the "Settle transactions” section to show the transactions that you're looking for.
-2. In the Status filter, select Settled.
-3. Select one or more lines that you're considering for reversal. 
-4. Select Reverse marked transactions. The status of all transactions with the same Settlement ID is updated to Not settled.
 
-  > [!NOTE]
-  > All transactions with the same Settlement ID will be reversed, even if they are not marked. For example, four lines were marked and settled so they all have the same Settlement ID.  The user marks one of the four lines and chooses to reverse.  All four lines will be reversed.
+1.	Follow steps 1 through 3 in the [Settle transactions](#settle-transactions) section to show the transactions that you're interested in.
+2.	In the **Status** filter, select **Settled**.
+3.	Select lines for reversal.
+4.	Select **Reverse marked transactions**. The status of all transactions that have the same settlement ID is updated to **Not settled**.
+
+> [!IMPORTANT]
+> All transactions that have the same settlement ID will be reversed, even if they aren't marked. For example, four lines were marked and settled. All four lines have the same settlement ID. If you mark one of those four lines and then select **Reverse marked transactions**, all four lines will be reversed.
+
+
+
+
+
+
