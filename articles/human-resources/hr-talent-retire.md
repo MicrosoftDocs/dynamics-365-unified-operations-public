@@ -73,9 +73,9 @@ No, the Dataverse entities will remain in the customer’s Microsoft Dataverse e
 ### I don’t know the name of the Talent environment. How can I find the environment that has the data for the Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard applications?
 
 1)	Sign into Power Platform admin center: https://admin.powerplatform.microsoft.com/
-2)	Seoect **Environments**.
+2)	Select **Environments**.
 3)	Select a particular environment to evaluate.
-4)	Seclt **Resources > Dynamics 365 apps**.
+4)	Select **Resources > Dynamics 365 apps**.
 5)	If you see **HCM Talent** solution installed, this environment should have Attract and Onboard data stored within it. 
 
 [![Power Platform](./media/HCMTalent.png)](./media/HCMTalent.png)
