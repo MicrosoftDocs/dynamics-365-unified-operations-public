@@ -4,7 +4,7 @@
 title: Awareness between ledger settlement and year-end close
 description: This topic provides information about enhancements which impact ledger settlements and the General ledger year-end close.
 author: kweekley
-ms.date: 01/26/2022
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 # ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
 
