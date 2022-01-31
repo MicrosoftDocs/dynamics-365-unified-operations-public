@@ -150,9 +150,11 @@ For all Microsoft-managed environments, as well as sandbox and production enviro
 
 After you apply a service update for a supported version, this functionality will be available in the affected environment.
 
-**Please Note** Version N is the latest version, for eg: 10.0.24
-                Version N-2 is one version older than N, for eg: 10.0.23
-                Version N-3 is two versions older than N, for eg: 10.0.22
+> [!Note]
+> In this article, versions are noted in the following ways:
+> - Version N is the latest version, for example: 10.0.24
+  - Version N-2 is one version older than N, for example: 10.0.23
+  - Version N-3 is two versions older than N, for example: 10.0.22
 
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
 
