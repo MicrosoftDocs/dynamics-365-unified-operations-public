@@ -78,7 +78,7 @@ No, the Dataverse entities will remain in the customer’s Microsoft Dataverse e
 4)	Click **Resources -> Dynamics 365 apps**.
 5)	If you see **HCM Talent** solution installed, this environment might have Attract and Onboard data stored within it. 
 
-[![Power Platform](./media/HCMTalent.png)](.media/HCMTalent.png)
+[![Power Platform](./media/HCMTalent.png)](./media/HCMTalent.png)
 
 > [!NOTE] 
 > The **HCM Talent** solution is also used in Dynamics 365 Human Resources.
