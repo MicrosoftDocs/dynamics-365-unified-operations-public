@@ -68,7 +68,7 @@ No, the Dataverse entities will remain in the customer’s Microsoft Dataverse e
 3.	Go to **Dataverse -> Tables**. 
 4.	Type “msdyn_” in **Search**, if you are seeing the list of tables starting with “msdyn_” + table names (example: msdyn_candidate) then you have found the environment with Attract and Onboard data.
 
-[![Power Apps](.media/Powerapps.png)](./media/Powerapps.png)
+[![Power Apps](./media/Powerapps.png)](./media/Powerapps.png)
 
 ### I don’t know the name of the Talent environment. How can I find the environment that has the data for the Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard applications?
 
