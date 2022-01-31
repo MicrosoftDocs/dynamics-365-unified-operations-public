@@ -39,9 +39,9 @@ Before you start to set up your mobile devices to connect to a cloud or edge sca
 
 ## Additional setup when you run the Warehouse Management mobile app against a scale unit
 
-As part of the [deployment process for warehouse scale unit workloads](cloud-edge-landing-page.md#scale-unit-manager-portal), most of the data that is required to connect your Warehouse Management mobile app devices is automatically synced from the enterprise hub to the scale unit. However, you must record the **Azure Active Directory applications** data on the scale unit deployment. Additionally, you might have to update the default **Company** value for the user ID or create a new user. Users that are associated with a company that doesn't exist on a scale unit deployment won't be able sign in when the Warehouse Management mobile app is connected to that scale unit.
+As part of the [deployment process for warehouse scale unit workloads](cloud-edge-landing-page.md#scale-unit-manager-portal), most of the data that is required to connect your Warehouse Management mobile app devices is automatically synced from the enterprise hub to the scale unit. However, you must enter the data on the **Azure Active Directory applications** page (**System administration \> Setup \> Azure Active Directory applications**) on the scale unit deployment. Additionally, you might have to update the default **Company** value for the user ID or create a new user. Users that are associated with a company that doesn't exist on a scale unit deployment won't be able sign in when the Warehouse Management mobile app is connected to that scale unit.
 
 > [!NOTE]
-> Because the **Azure Active Directory applications** data isn't synced, you must manually maintain this data if you want to move your warehouse workloads to another scale unit.
+> Because the data on the **Azure Active Directory applications** page isn't synced, you must manually maintain this data if you want to move your warehouse workloads to another scale unit.
 
-Remember that, as part of the setup of the Warehouse Management mobile app connection, the **Azure AD resource** must be against the scale unit instead of the enterprise hub.
+Remember that, as part of the connection setup of each Warehouse Management mobile app, the specified Azure Active Directory resource URL must be for the scale unit instead of the enterprise hub.
