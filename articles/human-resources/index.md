@@ -50,7 +50,7 @@ Human Resources connects people and operations data to help you optimize workfor
 
 ## Dynamics 365 Finance
 
-For information about Dynamics 365 Finance, go to [Finance home page](../finance/index.md).
+For information about Dynamics 365 Finance, see [Finance home page](../finance/index.md).
 
 ## Additional resources
 
