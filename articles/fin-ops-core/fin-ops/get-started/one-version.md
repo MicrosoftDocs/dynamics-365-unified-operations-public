@@ -158,7 +158,7 @@ After you apply a service update for a supported version, this functionality wil
 
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
 
-All additional sandbox environments will be updated within the same update window as your production environment and will be updated to the same release version that is used for the production update. The update will also apply to your additional sandboxes that are on versions supported within the N-3 lifecycle policy. 
+All additional sandbox environments will be updated within the same update window as your production environment and will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions supported within the N-3 lifecycle policy. 
 
 ### What if one additional sandbox environment is on N-1 and another one is on N-4 (default sandbox and production environment is on less than N version)? 
 
