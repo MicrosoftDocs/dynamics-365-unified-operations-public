@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Enroll an employee in a fixed compensation plan
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The compensation and benefits manager can assign employees to fixed compensation plans to manage their base pay. This procedure assumes that a fixed plan has been created and is active, and that eligibility rules have been set for the plan. The demo data company used to create this procedure is USMF. To begin the procedure, go to **Human resources** > **Workers** > **Employees** > **Compensation** > **Fixed plan**.

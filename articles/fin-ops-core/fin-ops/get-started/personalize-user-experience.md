@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This topic explains how you can personalize the app and covers the following subjects: 
 
 - **System-wide options** – These personalization options are made on a setup page and are available to all users. Examples include the color theme and time zone. 
