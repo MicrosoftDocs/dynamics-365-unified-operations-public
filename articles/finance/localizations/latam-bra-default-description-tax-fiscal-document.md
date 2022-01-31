@@ -4,7 +4,7 @@
 title: Set up default descriptions for posting of Tax fiscal documents
 description: This topic explains how to set up default descriptions for voucher transactions that are posted from Tax fiscal documents.
 author: gionoder
-ms.date: 01/10/2022
+ms.date: 01/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,6 +45,6 @@ Follow these steps to set up default descriptions for voucher transactions that 
     - **%2** – An identifier that corresponds to the document type that is being posted to the general ledger. For example, if a transaction type is related to an invoice, the %2 variable adds the invoice number.
     - **%3** – An identifier that is related to the document type that is being posted to the general ledger. For example, if a transaction type is related to an invoice, the %3 variable adds the customer account number.
 
-For more information, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.ms#set-up-default-descriptions)
+For more information, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.md#set-up-default-descriptions)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
