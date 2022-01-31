@@ -1034,6 +1034,8 @@
           href: general-ledger/one-voucher-faq.md
         - name: Ledger settlements
           href: general-ledger/ledger-settlements.md
+        - name: Awareness between ledger settlement and year-end close
+          href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
