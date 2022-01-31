@@ -26,6 +26,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enter project timesheets
 
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
 This procedure lets you create a timesheet by using an empty timesheet page. The new timesheet can be based on information from a previous timesheet, or from project and activity assignments on the **My favorites** page. By default, the **All timesheets** list page shows all your timesheets for the current period. You can use the **Show** field on the **My timesheets** page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers. The **USSI** demo data company was used to create this procedure.
 
 1. Go to **Project management and accounting \> Timesheets \> My timesheets**.

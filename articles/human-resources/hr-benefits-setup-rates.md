@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure rates
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Rates define how much employers and employees contribute for a benefit. The value can be either an amount or a number of flex credits, depending on your configuration.

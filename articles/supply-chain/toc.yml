@@ -306,6 +306,8 @@
         href: cloud-edge/cloud-edge-workload-manufacturing.md
       - name: Warehouse management workloads for cloud and edge scale units
         href: cloud-edge/cloud-edge-workload-warehousing.md
+      - name: Configure the Warehouse Management mobile app for cloud and edge scale units
+        href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
       - name: Warehouse orders for cloud and edge scale units
         href: cloud-edge/cloud-edge-warehouse-order.md
       - name: Warehouse inventory adjustment
@@ -1689,6 +1691,8 @@
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Firm planned orders
           href: master-planning/planning-optimization/planned-order-firming.md
+        - name: Planned orders simplified
+          href: master-planning/planning-optimization/planned-orders-simplified.md
         - name: Planning with negative on-hand quantities
           href: master-planning/planning-optimization/negative-on-hand.md 
         - name: View plan history and planning logs
@@ -3761,6 +3765,8 @@
             href: troubleshooting/warehousing/certification-path-app-connection-error.md
           - name: Trust anchor for certification path not found when updating and migrating to WMS
             href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+        - name: Processing issues occur after installing a scale unit warehouse workload
+          href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory
           href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
         - name: Picking work can't be unblocked because of unfinished replenishment work

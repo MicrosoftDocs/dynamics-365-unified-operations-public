@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Develop a succession plan
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 As your organization grows, you must begin succession planning. During succession planning, you might want to find someone who has similar skills to another person. Skill mapping allows you to analyze your existing employees and applicants to see if they match the skill set of a valued employee. The demo data company used to create this procedure is USMF.

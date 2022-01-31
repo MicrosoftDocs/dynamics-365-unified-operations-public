@@ -430,6 +430,8 @@
           href: deployment/install-deployable-package.md
         - name: Uninstall a package
           href: deployment/uninstall-deployable-package.md
+        - name: Run custom X++ scripts with zero downtime
+          href: deployment/run-custom-scripts.md
         - name: Troubleshoot package application issues
           href: deployment/deployable-package-troubleshooting.md
       - name: Deploy custom help
@@ -854,6 +856,8 @@
           href: perf-test/continuous-build-test-automation.md
         - name: SysTest filtering using class and method attributes
           href: perf-test/systest-filtering.md
+        - name: SysTestRow attribute for testing multiple values
+          href: perf-test/systest-row.md
         - name: Acceptance test library
           items:
           - name: Acceptance test library resources

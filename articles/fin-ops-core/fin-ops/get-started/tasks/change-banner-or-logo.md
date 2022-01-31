@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
 The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. The demo data company used to create this procedure is USMF.
 
 1. Go to **Navigation pane > Modules > Organization administration > Organizations > Legal entities**.

@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure leave and absence parameters
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related **Human resources parameters**, including:
