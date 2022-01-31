@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Personnel management workspace
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The **Personnel management** workspace includes a vast amount of content. It contains personnel movements, tracks employee changes, open positions, address changes, expiring records, and analytics, and provides links to specific information. This topic provides detailed information about each part of the workspace.

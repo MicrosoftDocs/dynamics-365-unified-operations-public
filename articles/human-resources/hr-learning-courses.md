@@ -29,6 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Set up training courses
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.

@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 To make the workflow process available for a workflow document, you must create the workflow types that are used in the workflow configuration user interface (UI). This topic describes how to create a workflow type in Application Explorer.
 
 A workflow type defines the following information:
