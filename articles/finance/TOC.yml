@@ -216,6 +216,8 @@
           href: accounts-payable/vendor-copy.md
         - name: Record a vendor invoice in the invoice journal
           href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+        - name: Apply a payment to the invoice journal
+          href: accounts-payable/payment-invoice-journal.md
       - name: Audit invoices and key data in accounts payable
         href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
       - name: Three-way matching policies
