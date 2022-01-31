@@ -57,10 +57,11 @@ If you decide to pause updates, you have these options:
 - Pause updates in LCS implementation project by updating the environments to a version within N-3 then pause the updates from LCS. 
 
 > [!NOTE]
-> If the update to the production environment is paused, all additional sandbox environment updates will be paused as well.
-> Version N is the latest version, for eg: 10.0.24
-> Version N-2 is one version older than N, for eg: 10.0.23
-> Version N-3 is two versions older than N, for eg: 10.0.22
+> If the update to the production environment is paused, all additional sandbox environment updates will be paused as well. Note how the versions are referred to:
+> 
+> - Version N is the latest version, for example: 10.0.24
+> - Version N-2 is one version older than N, for example: 10.0.23
+> - Version N-3 is two versions older than N, for example: 10.0.22
 
 You can pause a maximum of three continuous updates at a time. For example, if you're using version 8.1.3, you can pause update version 10.0.0, 10.0.1 and 10.0.2. However, you can't pause update version 10.0.3. In addition, in the month of June, you can pause the next three updates. However, you will not be able to pause updates scheduled for October, November, December and later. Similarly, for customers on version 7.3 for platform only updates, if you’re using Platform update 23 then you can pause update 24, update 25, and update 26, but you cannot pause update 27. We will be releasing 8 updates in a year. We require you to take at least two updates in a year.
 
