@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.25 of Finance and Operations apps (April 2022)
 description: This topic lists the features that are included in the platform updates for version 10.0.25 of Finance and Operations apps.
 author: sericks007
-ms.date: 01/11/2022
+ms.date: 01/31/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -40,8 +40,8 @@ The following table lists the features that are included in this release.
 | Developer tools | <p>**Opt individual forms out of saved views**</p><p>For forms with coding patterns that are not conducive to saved views, developers can now opt an individual form out of saved views support. This will mean that no view selector is available on the form and there will be no publish capabilities.</p> | [Building forms that fully utilize saved views](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views) | Developer opt-in |
 | Web client  | <p>**Improved sort support for grouped grids**</p><p>When a user has grouped data in a grid by one or more columns, sorting on a non-grouped column will now leave the grouping intact and will sort the data inside each group based on the selected column</p> | [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update49/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md#sorting-grouped-data) | Default for the **Grouping in grids** feature in Feature management |
 | Developer tools | <p>**Opt out individual grids from *Typing ahead of the system***</p><p>For forms with coding patterns that do not lend themselves to working well with the *Typing ahead of the system capability* of the new grid, developers can now opt an individual grid out of asychronous row validation and back to the legacy synchronous behavior.</p> | [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update49/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md#developer-opting-out-individual-grids-from-typing-ahead-of-the-system) | Developer opt-in |
-| Developer Tools  | <p>**X++ Unit Testing with different values**</p><p>X++ unit tests can now take advantage of the SysTestRow attribute to re-use a test method with multiple different values.</p>  | [SysTestRow attribute for testing multiple values](../perf-test/systest-row.md) | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
-| Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
+| Developer tools  | <p>**X++ Unit testing with different values**</p><p>X++ unit tests can now take advantage of the SysTestRow attribute to re-use a test method with multiple different values.</p>  | [SysTestRow attribute for testing multiple values](../perf-test/systest-row.md) | Available by default   |
+
 
 ### Bug fixes
 
