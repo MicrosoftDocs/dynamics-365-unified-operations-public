@@ -57,7 +57,7 @@ If you decide to pause updates, you have these options:
 - Pause updates in LCS implementation project by updating the environments to a version within N-3 then pause the updates from LCS. 
 
 > [!NOTE]
-> If the update to the production environment is paused, all additional sandbox environment updates will be paused as well. Note how the versions are referred to:
+> If the update to the production environment is paused, all additional sandbox environment updates will be paused as well. Note how the versions are referenced:
 > 
 > - Version N is the latest version, for example: 10.0.24
 > - Version N-2 is one version older than N, for example: 10.0.23
