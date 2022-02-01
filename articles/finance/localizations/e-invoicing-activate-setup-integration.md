@@ -2,7 +2,7 @@
 # required metadata
 
 title: Activate and set up integration with Electronic invoicing
-description: This topic provides description of the process of activating the integration of Finance and Supply Chain management with Electronic invoicing.
+description: This topic explains how to activate and set up the integration of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management with Electronic invoicing.
 author: dkalyuzh
 ms.date: 01/21/2022
 ms.topic: article
@@ -26,30 +26,33 @@ ms.dyn365.ops.version:
 
 ---
 
-# Activate and setup integration with Electronic invoicing
+# Activate and set up integration with Electronic invoicing
 
 [!include [banner](../includes/banner.md)]
 
-Becore you can activate and set up integration with Electronic invoicing, you must have a Lifecycle Services (LCS) project that includes version 10.0.17 or later of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
- 
- - United States
- - Europe
- - United Kingdom
- - Asia
- - Japan
+Before you can activate and set up integration with Electronic invoicing, you must have a Microsoft Dynamics Lifecycle Services (LCS) project that includes version 10.0.17 or later of Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, those apps must be deployed in one of the following Azure geographies:
 
-## Electronic invoicing integration feature
-To enable communication between Electronic invoicing and Finance or Supply Chain Management, enable the **Electronic Invoicing integration** feature.
+- United States
+- Europe
+- United Kingdom
+- Asia
+- Japan
 
- 1. Sign in to your Finance or Supply Chain Management environment and go to the **Feature management** workspace.
- 2. Search for the **Electronic invoicing integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
- 3. Select the feature, and then select **Enable now**.
+## Enable the Electronic invoicing integration feature
 
-## Service endpoint and environment
-The service endpoint is the URL where Electronic invoicing is located. Before electronic invoices can be issued, the service endpoint must be configured in Finance and Supply Chain management to allow for communication with the service.
-The environment name that is entered in Finance and Supply Chain Management refers to the name of the Service environment that is created in the Regulatory configuration service (RCS) and published to Electronic invoicing.
+To enable communication between Electronic invoicing and Finance or Supply Chain Management, you must enable the **Electronic Invoicing integration** feature.
 
- 1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
- 2. On the **Electronic invoicing** tab, in the **Endpoint URL** field, enter the appropriate service endpoint for your Azure geography, as it is set in RCS in **Service endpoint URI** parameter.
- 3. In the **Environment** field, enter the name of the service environment published in Electronic invoicing.
- 4. Select **Save**, and then close the page.
+1. Sign in to your Finance or Supply Chain Management environment.
+2. In the **Feature management** workspace, search for the **Electronic invoicing integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
+3. Select the feature, and then select **Enable now**.
+
+## Specify the service endpoint and environment
+
+The service endpoint is the URL where Electronic invoicing is located. Before electronic invoices can be issued, the service endpoint must be configured in Finance and Supply Chain Management to allow for communication with the service.
+
+The environment name that is entered in Finance and Supply Chain Management refers to the name of the service environment that is created in Regulatory Configuration Service (RCS) and published to Electronic invoicing.
+
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+2. On the **Electronic invoicing** tab, in the **Endpoint URL** field, enter the service endpoint that has been specified for your Azure geography by using the **Service endpoint URI** parameter in RCS.
+3. In the **Environment** field, enter the name of the service environment that has been published to Electronic invoicing.
+4. Select **Save**, and then close the page.
