@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.25
 
 This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.25. This version has a build number of 10.0.1149 and is available as follows:
 
-- **Preview of release:** February 2021
+- **Preview of release:** February 2022
 - **General availability of release (self-update):** March 2022
 - **General availability of release (auto-update):** April 2022
 
@@ -46,7 +46,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Inventory and warehouse management | (Poland) Allow to link several SAD invoices to one Purchase order line in one SAD | This feature provides the possibility to link more than one SAD invoice to the purchase order line in one SAD. |
+| Inventory and warehouse management | (Poland) Allow to link several SAD invoices to one Purchase order line in one SAD | This feature lets you split purchase order lines and link them to a single administrative document (SAD) when those purchase order lines were posted for several different invoices (such as for different shipments). |
 | Procurement and sourcing | Consolidate multiple purchase requisitions into a single purchase order by accounting date | This feature allows multiple purchase requisitions to be consolidated into a single purchase order if the different purchase requisitions have different accounting dates. Purchase order creation and demand consolidation purchasing policy rules can be set up to automate the decision for grouping requisition lines by accounting date on the purchase order level. Purchase order consolidation by accounting date is not supported if budget control is enabled because the accounting date is used for budget reservations and encumbrance. Therefore, it should be retained during the transition from purchase requisition to purchase order. |
 | Procurement and sourcing | Disable Purchase Requisition Distribution Reset Button | This feature disables the **Reset** button on the **Accounting distribution** page for purchase requisitions that are in review. |
 | Procurement and sourcing | Display legacy default RFQ reply field settings | This feature reintroduces the legacy default request for quotation (RFQ) reply field settings, which were previously removed from the user interface. These settings don't provide any functionality out of the box, but can be customized to provide it as required. Enable this feature if your organization has already added functionality for the default RFQ reply field settings or is planning to. When this feature is enabled, you can access the settings by going to the **Procurement and sourcing parameters** page, opening the **Request for quotation** tab, and selecting **Default request for quotation reply fields**. |
@@ -184,7 +184,7 @@ The table also lists features that were previously in public preview, but have c
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.25 includes platform updates. To learn more, see [Platform updates for version 10.0.25 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.25 includes platform updates. To learn more, see [Platform updates for version 10.0.25 of Finance and Operations apps (April 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
 
 ### Bug fixes
 
@@ -194,8 +194,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2022 release wave 1 plan](/dynamics365-release-plan/2022wave1/). <!--KFM: Confirm link -->
-We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365 and industry clouds: 2022 release wave 1 plan](/dynamics365-release-plan/2022wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 
