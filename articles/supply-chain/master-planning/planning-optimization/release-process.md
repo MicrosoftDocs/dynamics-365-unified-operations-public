@@ -28,7 +28,7 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
-| <p>Added planning priority support for production orders. | Functionality available with version 10.0.25, as part of Feature name: *Priority driven MRP support for Planning Optimization* | November 12-18, 2021 |
+| <p>Added planning priority support for production orders. | Functionality available with version 10.0.25, as part of the feature named *Priority driven MRP support for Planning Optimization*. | November 12-18, 2021 |
 | <p>General performance, quality, and stability improvements. | No feature management is required. | November 12-18, 2021 |
 | <p>Added support for process time calculation formulas, production route with overlap, and production operation number on requirement transactions.</p><p>Enhanced error messages for production scheduling related to timeout, capacity could not be found, and cyclic route.</p><p>Improved consistency when calculating receipt dates and issue dates on both planned orders and firmed orders.</p><p>General performance, quality, and stability improvements. | Feature name: *Infinite capacity scheduling for Planning Optimization* | October 22-27, 2021 |
 | <p>Added support for considering scrap percentage in processing time calculation.</p><p>Added support for operation number and materials usage during scheduling. | Feature name: *Infinite capacity scheduling for Planning Optimization* | October 5-7, 2021 |
