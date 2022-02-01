@@ -122,4 +122,4 @@ The **Customer payment predictions** requires at least 100 customer invoice and 
 
 ### Resolution
 
-The environment has reached Data Lake Services max table limit as defined in the Enable near real-time data changes section of Export to Azure Data Lake overview document.  See [Export to Azure Data Lake overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-change-feeds.md) for more information.
+The environment has reached Data Lake Services max table limit as defined in the Enable near real-time data changes section of Export to Azure Data Lake overview document.  See [Export to Azure Data Lake overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md) for more information.
