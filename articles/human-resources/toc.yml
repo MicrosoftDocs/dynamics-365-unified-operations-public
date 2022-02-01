@@ -12,44 +12,44 @@
         href: ./get-started/hr-whats-new-changed-10-0-25.md
       - name: What's new in the stand-alone Dynamics Human Resources
         href: hr-admin-whats-new.md    
-      - name: What's new or changed archives 2021
-        items: 
-        - name: November 29, 2021
-          href: hr-whats-new-2021-11-29.md
-        - name: October 5, 2021
-          href: hr-whats-new-2021-10-04.md
-        - name: September 20, 2021
-          href: hr-whats-new-2021-09-20.md
-        - name: September 6, 2021
-          href: hr-whats-new-2021-09-06.md
-        - name: August 23, 2021
-          href: hr-whats-new-2021-08-23.md
-        - name: August 9, 2021
-          href: hr-whats-new-2021-08-09.md
-        - name: July 26, 2021
-          href: hr-whats-new-2021-07-26.md
-        - name: July 12, 2021
-          href: hr-whats-new-2021-07-12.md
-        - name: June 22, 2021
-          href: hr-whats-new-2021-06-22.md
-        - name: May 20, 2021
-          href: hr-whats-new-2021-05-20.md
-        - name: May 3, 2021
-          href: hr-whats-new-2021-05-03.md
-        - name: April 19, 2021
-          href: hr-whats-new-2021-04-19.md
-        - name: April 5, 2021
-          href: hr-whats-new-2021-04-05.md
-        - name: March 22, 2021
-          href: hr-whats-new-2021-03-22.md
-        - name: March 8, 2021 
-          href: hr-whats-new-2021-03-08.md
-        - name: February 22, 2021
-          href: hr-whats-new-2021-02-22.md
-        - name: January 28, 2021
-          href: hr-whats-new-2021-01-28.md
-        - name: January 21, 2021
-          href: hr-whats-new-2021-01-21.md
+       - name: What's new or changed archives 2021
+         items: 
+         - name: November 29, 2021
+           href: hr-whats-new-2021-11-29.md
+         - name: October 5, 2021
+           href: hr-whats-new-2021-10-04.md
+         - name: September 20, 2021
+           href: hr-whats-new-2021-09-20.md
+         - name: September 6, 2021
+           href: hr-whats-new-2021-09-06.md
+         - name: August 23, 2021
+           href: hr-whats-new-2021-08-23.md
+         - name: August 9, 2021
+           href: hr-whats-new-2021-08-09.md
+         - name: July 26, 2021
+           href: hr-whats-new-2021-07-26.md
+         - name: July 12, 2021
+           href: hr-whats-new-2021-07-12.md
+         - name: June 22, 2021
+           href: hr-whats-new-2021-06-22.md
+         - name: May 20, 2021
+           href: hr-whats-new-2021-05-20.md
+         - name: May 3, 2021
+           href: hr-whats-new-2021-05-03.md
+         - name: April 19, 2021
+           href: hr-whats-new-2021-04-19.md
+         - name: April 5, 2021
+           href: hr-whats-new-2021-04-05.md
+         - name: March 22, 2021
+           href: hr-whats-new-2021-03-22.md
+         - name: March 8, 2021 
+           href: hr-whats-new-2021-03-08.md
+         - name: February 22, 2021
+           href: hr-whats-new-2021-02-22.md
+         - name: January 28, 2021
+           href: hr-whats-new-2021-01-28.md
+         - name: January 21, 2021
+           href: hr-whats-new-2021-01-21.md
     - name: Get started   
       items:
       - name: Overview
