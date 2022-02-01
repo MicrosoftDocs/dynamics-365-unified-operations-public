@@ -203,7 +203,7 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 ## Design of extensions
 
-The fiscal registration service integration sample for Austria is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). For more information about the design of the fiscal integration solution, see the [overview of a fiscal integration sample design](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+The fiscal registration service integration sample for Austria is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). For more information about the design of the fiscal integration solution, see the [overview of a fiscal integration sample design](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### Commerce runtime extension design
 
