@@ -8,11 +8,9 @@
       href: hr-infrastructure.md
     - name: What's new
       items:
-    - name: What's new or changed in Dynamics 365 Human Resources merged infrastructure
-      href: ./get-started/hr-whats-new-changed-10-0-25.md
-    - name: What's new in the stand-alone Dynamics Human Resources   
-      items:      
-      - name: What's new in the stand-alone Dynamics 365 Human Resources
+      - name: What's new or changed in Dynamics 365 Human Resources merged infrastructure
+        href: ./get-started/hr-whats-new-changed-10-0-25.md
+      - name: What's new in the stand-alone Dynamics Human Resources
         href: hr-admin-whats-new.md    
       - name: What's new or changed archives 2021
         items: 
