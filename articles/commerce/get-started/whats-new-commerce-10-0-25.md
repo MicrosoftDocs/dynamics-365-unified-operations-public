@@ -45,16 +45,19 @@ The following table lists the features that are included in this release. The *F
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-
+| B2B | Mock a signed-in B2B user | [Mock the signed-in state during local development](../e-commerce-extensibility/mock-sign-in.md) | Developer |
+| Globalization | [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer| 
+| Globalization | Update references in QR codes for India | [Generate QR codes and print them on receipts for India](../localizations/ind-generate-qr-code-print-receipt.md) | Developer |
+|Statements |  Improvements to statement posting functionality  | [Improvements to statement posting functionality](../statement-posting-EOD.md) | Commerce parameters |
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are new for this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are new for this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), where they are listed using the names shown in the *Feature name in feature management* column of the following table.
 
 | Module | Feature name in feature management | More information |
-|---|---|---|
+
 
 
 ## Additional resources
