@@ -117,3 +117,9 @@ For more information about how to adjust the **On-time**, **Late**, and **Very l
 The **Cash flow forecast** model training requires data that spans more than one year and contains more than 100 transactions. These transactions must impact liquidity accounts that are included in the cash flow forecast setup.
 
 The **Customer payment predictions** requires at least 100 customer invoice and payment transactions in the last six to nine months to create predictions.  
+
+## Symptom:Error message states, that the [Table with name 'msdyn_paypredpredictionresultentities' does not exist], The remote server returned an error: (404) Not Found]…
+
+### Resolution
+
+The environment has reached Data Lake Services max table limit as defined in the Enable near real-time data changes section of Export to Azure Data Lake overview document.  See [Export to Azure Data Lake overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-change-feeds.md) for more information.
