@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This topic provides clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
-ms.date: 01/31/2022
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,25 +28,25 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [New flexible service updates being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We'll continue to add additional information to this topic as needed.
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. In June 2019, based on customer feedback we announced [New flexible service updates being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We'll continue to add additional information to this topic as needed.
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 
 ### Can the update be delayed, what is the policy?
-Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects. A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
 - The customer is currently on version 10.0.2.
 - The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.
 - The customer must take the 10.0.6 update when it's available.
 
 To pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
-  
+
 ### With a release date in early April, when will the general availability package be made available?
 Production updates for a monthly release will be scheduled for the first, second, and third weeks in of the month. Depending on the configuration that you set up in Lifecycle Services (LCS), you'll receive updates during that specific week.
  
 For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup is available in LCS.
 
-Customers can always choose to apply the update at an earlier time, or if there's a more convenient time than the suggested times in Lifecycle Services.  If the customer is on the latest version the auto update will be canceled.  
+Customers can always choose to apply the update at an earlier time, or if there's a more convenient time than the suggested times in Lifecycle Services. If the customer is on the latest version the auto update will be canceled.
 
 ## Service updates
 
@@ -106,7 +106,7 @@ Ensuring quality of the release is a fundamental principle that's enabled throug
 
 Customers can configure the day and maintenance time windows in LCS. The service update, which is based on your update settings, will start within 15 minutes. Email will be sent to customers who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 7 calendar days for testing and validation.
 
-Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. All additional sandboxes will be auto updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
+Customers can optionally choose to apply the update earlier to all environments through LCS. The production-ready, deployable package will be made available to all customers via the Action Center in Lifecycle Services. All additional sandboxes will be auto updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
 
 ### A service update was applied to the environment, when looking at the tile in Lifecycle Services for this environment what does the number on the tile represent?
@@ -144,43 +144,44 @@ Environments that are running a Finance and Operations version that is no longer
 
 For all Microsoft-managed environments, as well as sandbox and production environments in on-premises implementation projects, some Lifecycle Services (LCS) functionality may not be available when an environment is running a Finance and Operations version that is no longer supported. The LCS functionality that may not be available includes the ability to do the following:
 
- - Enable maintenance mode
- - Use all capabilities provided for moving databases on an environment or across environments
- - Enable firewall access to SQL Server databases
- - Download RSAT certificates
- - Regenerate RSAT certificates
+- Enable maintenance mode
+- Use all capabilities provided for moving databases on an environment or across environments
+- Enable firewall access to SQL Server databases
+- Download RSAT certificates
+- Regenerate RSAT certificates
 
 After you apply a service update for a supported version, this functionality will be available in the affected environment.
 
-> [!Note]
-> In this article, versions are noted in the following ways:
-> - Version N is the latest version, for example: 10.0.24
-> - Version N-2 is one version older than N, for example: 10.0.23
-> - Version N-3 is two versions older than N, for example: 10.0.22
+> [!NOTE]
+> In this topic, versions are noted in the following ways:
+>
+> - Version N is the latest version (for example, 10.0.24).
+> - Version N-2 is one version older than N (for example, 10.0.23).
+> - Version N-3 is two versions older than N (for example, 10.0.22).
 
-### How do the automatic updates affect my Microsoft-managed, additional sandbox environments in my LCS implementation project? 
+### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
 
-All additional sandbox environments will be updated within the same update window as your production environment, and will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions supported within the N-3 lifecycle policy. 
+All additional sandbox environments will be updated during the same update window as your production environment, and they will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions that are supported in the N-3 lifecycle policy. 
 
-### What if one additional sandbox environment is on N-1 and another one is on N-4 (default sandbox environment and production environment are on less than N version)? 
+### What if one additional sandbox environment is on N-1 and another is on N-4 (the default sandbox environment and the production environment are on less than version N)? 
 
-All environments will be updated to N version. 
+All environments will be updated to version N. 
 
-### What if the default sandbox environment is updated manually *before* the default sandbox environment email is sent? 
+### What if the default sandbox environment is manually updated before the default sandbox environment email is sent? 
 
-Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be cancelled.
+Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled.
 
-### What if the default sandbox environment is updated manually *after* the default sandbox email is sent? 
+### What if the default sandbox environment is manually updated after the default sandbox email is sent? 
 
-Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be cancelled. 
+Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled. 
 
-### What if the production environment is updated manually *before* the production environment email is sent? 
+### What if the production environment is manually updated before the production environment email is sent? 
 
-Automatic updates for the production environment, as well as all additional sandbox environments, will be cancelled. 
+Automatic updates for the production environment and all additional sandbox environments will be canceled. 
 
-### What if the production environment is updated manually *after* the production environment email is sent? 
+### What if the production environment is manually updated after the production environment email is sent? 
 
-Automatic updates for the production environment will be cancelled, but all additional sandbox environments will be updated to N version. 
+Automatic updates for the production environment will be canceled, but all additional sandbox environments will be updated to version N.
 
 ### What if I find an issue during the sandbox update?
 
@@ -196,18 +197,18 @@ You'll get 7 calendar days for validation after the update is applied to your sa
 
 ### What happens when the service update is complete?
 
-Once the service update is applied by Microsoft, you'll receive a notification if the update was successful or if it wasn't able to be applied.  There can be several reasons an update was unable to be applied:
+After the service update is applied by Microsoft, you'll receive a notification that indicates whether the update was successful or whether it could not be applied. There are several reasons why an update might be unable to be applied:
 
-- Pending Package Sign-off - If a package is pending signoff, Microsoft won't apply the service update to production.  
-- Deployment Failure - If there was a deployment failure, the environment will be rolled-back to the original state.
+- **Pending Package Sign-off** – If a package is pending signoff, Microsoft won't apply the service update to production.
+- **Deployment Failure** – If there was a deployment failure, the environment will be rolled-back to the original state.
  
-### If there's a failure, can I reschedule the update to be auto applied?
+### If there's a failure, can I reschedule the update to be automatically applied?
 
 You won't be able to reschedule the update per se, but you may apply the package when it's convenient for you, just as you might schedule to apply any other update.
 
-### Will critical hotfixes be automatically applied to my sandbox/ production environment during auto-update?
+### Will critical hotfixes be automatically applied to my sandbox/production environment during auto-update?
 
-The service update that will be made generally available, and auto applied to all customers will contain hotfixes and potentially new functionality.  If a critical issue is reported after the service update has been applied, customers can pull that cumulative hotfix update from the tile in Lifecycle Services.  
+The service update that will be made generally available, and auto applied to all customers will contain hotfixes and potentially new functionality. If a critical issue is reported after the service update has been applied, customers can pull that cumulative hotfix update from the tile in Lifecycle Services.
 
 ### How will my ISVs stay current?
 
@@ -244,11 +245,11 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 ### How can I determine what's changed in a service update?
 
-The What’s new or Changed documentation is the primary source for the details contained in each service update. The [Release plans](/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed. 
+The What's new or Changed documentation is the primary source for the details contained in each service update. The [Release plans](/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed. 
 
-### How will I know if there's a deprecated feature that will impact me if I’m not doing active development/ recompile my code? 
+### How will I know whether there's a deprecated feature that will affect me if I'm not doing active development/recompilation of my code? 
 
-Deprecated features will be documented with each release.  For more information, see [Removed or Deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md).  
+Deprecated features will be documented with each release. For more information, see [Removed or Deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md).
 
 ## Preparing for One Version
 
@@ -259,7 +260,7 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 | Date         | Extensibility requests |
 |--------------|------------------------|
 | January 2019 | All extensibility requests must be logged by January 1, 2019. ISVs and customers are requested to analyze the code and make these requests by this time. We won't provide exceptions to stay on 7.3 after April 2019, if the request hasn't been filed by January 1, 2019. |
-| December 2019 | Extensions will be available on/ before December 31, 2019 for the requests logged by January 1, 2019. Customers using these extensions are required to move to current version by April 2020. |
+| December 2019 | Extensions will be available on/before December 31, 2019 for the requests logged by January 1, 2019. Customers using these extensions are required to move to current version by April 2020. |
 
 ### What does end of service mean?
 
@@ -271,9 +272,9 @@ All environments will continue to be operated by Microsoft. All automatic proces
 
 Individual hotfixes won't be supported after 8.1. Customers must update to the latest cumulative update available to apply the fix (such as 8.1.1). Critical fixes will also be cumulative and available through the LCS servicing experience.
 
-### Will you notify me about critical hotfixes released for the monthly update that I’m on? 
+### Will you notify me about critical hotfixes released for the monthly update that I'm on? 
 
-Customer reported issues are searchable via Lifecycle Services Issue Search.  You can sign up to be notified when an open issue is resolved.  
+Customer reported issues are searchable via Lifecycle Services Issue Search. You can sign up to be notified when an open issue is resolved.
 
 ### How can I upgrade to 8.x?
 
@@ -299,7 +300,7 @@ All in-instore components must be running released software that is less than on
 
 ### Will there continue to be backward compatibility for the in-store components?
 
-Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components don't need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll out updates to stores.
+Updates to components that are hosted in the cloud will continue to preserve backward compatibility with component versions that are self-hosted by the retailer for 12 months after the release date for that version. (These components include components that are installed in stores or in privately managed datacenters: Modern Point of Sale, Commerce Scale Unit, or Hardware Station.) Self-hosted components don't have to be updated at the same time as cloud-hosted components. They can be updated on a separate cadence, so that there is time to roll updates out to stores.
 
 ### What options are available for updating in-store components across my organization?
 
