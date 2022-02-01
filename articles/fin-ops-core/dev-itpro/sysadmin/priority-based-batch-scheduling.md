@@ -34,9 +34,19 @@ ms.dyn365.ops.version: Platform Update31
 In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server and allows you to define priorities for batch groups. It is no longer necessary to assign batch jobs to batch servers. Instead, relative scheduling priorities based on business requirements are used to determine the order in which tasks are run across available batch servers.
 
 > [!IMPORTANT]
-> This feature is available in a restricted preview as part of Platform update 31.
+> This feature is available in a General availability as part of Platform update 50.
 
 A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. **Normal** is the default value and is also applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the <a name="reserved">Set the batch reserved capacity</a> section later in this topic.
+For eg in below scenario, if there are 100 batch tasks for processing, 40 tasks will be served with reserved queue and 30 from critical, 15 from high, 10 from normal and 5 from low queue. It is not the order of execution based on pririoty but weightage of batch tasks from each priority will be picked for processeing.
+
+
+Priority	Weightage
+Low	5%
+Normal	10%
+High	15%
+Critical	30%
+Reserved	40% + Dedicated X Threads
+
 
 > [!NOTE]
 > Because the schedule priority is set to **Normal** for all existing batch groups when the feature is turned on, it's important that you plan and update the scheduling priority for each batch group so that it represents the relative priorities according to business requirements for the related batch jobs and their related business processes.
@@ -124,8 +134,11 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
     - **Medium reserved capacity** – Fifteen percent of the cumulative batch threads are reserved.
     - **High reserved capacity** – Twenty-five percent of the cumulative batch threads are reserved.
 
+For example, consider that there are 10 Batch AOS instance and each AOS in configured with 12 Threads. Cumulative batch threads are 120. 
+If we configure Batch reserved capacity level as High reserved Capacity the 25% of cumulative threads which 30 threads will be dedicated to process batch tasks from Reserved queue. Allocation of these 30 threads will be among 3 AOS instances, which means that 3 out of 10 AOS instances will be dedicated to process the reserved queue and they will idle if there are no batch tasks to be processed under reserved capacity.
+
     > [!NOTE]
-    > Sample values are for the purpose of illustration only. The actual reserved capacity depends on the configuration of the batch server and the number of available batch threads at any given point.
+    > Sample values are for the purpose of illustration only. The actual reserved capacity depends on the configuration of the batch server and the number of available batch threads at any given point. Do not configure the dedicated X threads unless there is a use case that there are constant no. of batch tasks to run under reserved category.
 
 3. Select **Save**.
 
