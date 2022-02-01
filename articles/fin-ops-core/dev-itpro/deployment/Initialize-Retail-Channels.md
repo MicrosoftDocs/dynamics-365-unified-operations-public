@@ -4,7 +4,7 @@
 title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
-ms.date: 11/16/2021
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -23,7 +23,6 @@ ms.author: aamiral
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8.0
 ---
-
 
 # Initialize Commerce Scale Unit (cloud)
 
@@ -123,16 +122,16 @@ If you have multiple scale units, you need to perform the operation above for ea
 
 ## Deploy additional Commerce Scale Units (optional)
 
-After you have initialized Commerce Scale Unit (CSU), if desired, you may self-deploy a second Scale Unit, if your license entitles you to do this. For more than 2 Scale Units, you will need to create a support request. In the support request, state the number of CSUs needed, environment name, and desired region(s). For more information about licensing, review the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
+After you have initialized Commerce Scale Unit (CSU), you may self-deploy a second Scale Unit if desired and if your license entitles you to do this. For more than 2 Scale Units, you will need to create a support request. In the support request, state the number of CSUs needed, the environment name, and desired region(s). For more information about licensing, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
-For each additional CSU that you deploy, it is also recommended that you create a separate Channel database group for each CSU. To do this, follow these steps:
+For each additional CSU that you deploy, it is also recommended that you create a separate channel database group for each CSU. To do this, follow these steps:
 
 1. In Commerce head office, go to **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database group**.
-2. Create a new Channel database group.
+2. Create a new channel database group.
 3. Go to the **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database** form and select the channel database that corresponds to the newly created CSU.
-4. Select **Edit** and select the new Channel database group.
+4. Select **Edit** and select the new channel database group.
 5. Select **Save**.
-6. Select **Run Full data sync** for the selected Channel database.
+6. Select **Run Full data sync** for the selected channel database.
 
 ## Additional considerations if you initialize cloud-hosted Commerce channel components in an existing environment
 
