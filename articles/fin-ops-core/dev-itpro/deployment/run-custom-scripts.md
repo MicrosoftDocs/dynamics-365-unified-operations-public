@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services (LCS) or suspend your system. Therefore, you can correct minor data inconsistences without causing any disruptive downtime.
+This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services (LCS) or suspend your system. Therefore, you can correct minor data inconsistencies without causing any disruptive downtime.
 
 The benefit of using an X++ script to correct minor data inconsistences is that the system will automatically adjust all related tables as required when it runs the script. This approach helps ensure the integrity of the correction and helps minimize the risk of introducing new inconsistencies.
 
