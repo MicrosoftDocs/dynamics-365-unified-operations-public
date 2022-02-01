@@ -10,8 +10,8 @@
       href: ./get-started/hr-whats-new-changed-10-0-25.md
     - name: What's new in the stand-alone Dynamics 365 Human Resources
       href: hr-admin-whats-new.md    
-     - name: What's new or changed archives 2021
-       items: 
+    - name: What's new or changed archives 2021
+      items: 
       - name: November 29, 2021
         href: hr-whats-new-2021-11-29.md
       - name: October 5, 2021
