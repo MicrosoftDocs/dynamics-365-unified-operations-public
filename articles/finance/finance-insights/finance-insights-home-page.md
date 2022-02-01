@@ -39,10 +39,6 @@ Finance insights provides configurable and extensible solutions to help you inte
 
 This section lists the requirements for using Finance insights. Wherever possible, links to sources of additional information are provided.
 
-### Legal requirements
-
-To apply for the preview program, fill out the [Finance insights Preview for Dynamics 365 Finance agreement](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
-
 ### System requirements
 
 A Tier-2 environment (multi-box) is required to preview Finance insights. For background information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
