@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.25 of Finance and Operations apps (April 2022)
 description: This topic lists the features that are included in the platform updates for version 10.0.25 of Finance and Operations apps.
 author: sericks007
-ms.date: 01/31/2022
+ms.date: 02/01/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -40,7 +40,7 @@ For more information about how to use Feature management, see [Feature managemen
 | Web client  | <p>**Improved sort support for grouped grids**</p><p>When a user has grouped data in a grid by one or more columns, sorting on a non-grouped column will now leave the grouping intact and will sort the data inside each group based on the selected column</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md#sorting-grouped-data) | Default for the **Grouping in grids** feature in Feature management |
 | Developer tools | <p>**Opt out individual grids from *Typing ahead of the system***</p><p>For forms with coding patterns that do not work well with the *Typing ahead of the system capability* of the new grid, developers can now opt out of an individual grid from asynchronous row validation and back to the legacy synchronous behavior.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md) | Developer opt-in |
 | Developer tools  | <p>**X++ unit testing with different values**</p><p>X++ unit tests can now take advantage of the SysTestRow attribute to re-use a test method with multiple different values.</p>  | [SysTestRow attribute for testing multiple values](../perf-test/systest-row.md) | Default   |
-| Developer tools  | <p>**Run custom X++ scripts with zero downtime**</p><p>This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services (LCS) or suspend your system. Therefore, you can correct minor data inconsistences without causing any disruptive downtime.</p> | [Run custom X++ scripts with zero downtime](../deployment/organization-administration/run-custom-scripts.md)  | Default |
+| Developer tools  | <p>**Run custom X++ scripts with zero downtime**</p><p>This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services (LCS) or suspend your system. Therefore, you can correct minor data inconsistences without causing any disruptive downtime.</p> | [Run custom X++ scripts with zero downtime](../deployment/run-custom-scripts.md)  | Default |
 | Developer tools | <p>**Saved views support for custom filters**</p><p>New APIs are available to allow custom filters to work more seamlessly with saved views. Specifically, custom filters can now trigger a view definition to be marked as having unsaved changes, and custom filter controls can listen for system changes to the query to ensure the control value stays in sync with the query.</p> | [Building forms that fully utilize saved views](../user-interface/understanding-saved-views.md) | Developer opt-in |
 | Developer tools | <p>**Opt out individual forms from saved views**</p><p>For forms with coding patterns that are not conducive to saved views, developers can now opt out of an individual form of saved views support. This will mean that no view selector is available on the form and there will be no publish capabilities.</p> | [Building forms that fully utilize saved views](../user-interface/understanding-saved-views.md) | Developer opt-in |
 
