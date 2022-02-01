@@ -68,6 +68,6 @@ This topic explains how to create a data integration project.
     2. Set the appropriate scheduling for each project.
 
 > [!NOTE]
-> If you do not see the required entities in CDS, please go to **Credit and collections > Setup > Finance Insights > Finance insights parameters**, enable Customer payment predictions feature and click on **Create prediction model** button. When the deployment of AI model is completed (successful or failed), the CDS entities needed to create integration will be deployed in CDS.
+> If you do not see the required entities in CDS, please go to **Credit and collections > Setup > Finance Insights > Finance insights parameters**, enable Customer payment predictions feature and click on **Create prediction model** button. When the deployment of AI model is completed, the CDS entities needed to create integration will be deployed in CDS.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
