@@ -110,6 +110,13 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Production control \> Periodic tasks \> Clean up \> Clean up registrations | <p>We recommend that you periodically clean up registrations. This cleanup routine deletes only data that has been processed.</p><p>**Note:** Make sure that you don't delete registrations that might be required later for documentation purposes.</p> |
 | Production control \> Periodic tasks \> Clean up \> Archive future registrations | This cleanup routine is used to remove future registrations from the raw registrations table. |
 
+## Cost management 
+
+| Path | Description |
+|------|-------------|
+| Cost Management \> Manufacturing accounting \> Clean up \> Production orders cleanup | <p>Same as Production Control \> Periodic tasks \> Clean up \> Production orders cleanup. This cleanup routine is used to delete production orders that are ended.</p> |
+| Cost Management \> Manufacturing accounting \> Clean up \> Production recalculation | Bundles production orders where the estimated costs for material and time consumption should be recalculated and schedules recalculation tasks. |
+| Cost Management \> Manufacturing accounting \> Clean up \> Clean up the costing sheet cache | The CostSheetCache table which is used as a temp location for cost sheets to help generate prices. This job cleans up the costing sheet cache. Records in the cache with age of the specified days or older will be deleted. |
 
 ## Master planning
 
