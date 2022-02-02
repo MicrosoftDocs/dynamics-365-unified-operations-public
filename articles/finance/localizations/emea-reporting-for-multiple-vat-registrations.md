@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 09/14/2021
+ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -321,7 +321,9 @@ All tax registrations have the same settings for EU sales list parameters.
 | 10.0.21     | UK          | MTD VAT importing model mapping (UK).version.31.36</br>Tax declaration model mapping.version.95.158</br>VAT Declaration Excel (UK).version.32.30.16</br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](emea-gbr-mtd-vat-integration.md)   |
 | 10.0.21     | SE          | VAT Declaration XML (SE).version.95.11</br>VAT Declaration Excel (SE).version.95.11.13| [VAT declaration (Sweden)](emea-swe-vat-declaration-sweden.md)   |
 | 10.0.21     | CH          | Tax declaration model.version.96</br>Tax declaration model mapping.version.96.164</br>VAT Declaration XML (CH).version.96.16</br>VAT Declaration Excel (CH).version.96.16.9 | [VAT declaration (Switzerland)](emea-che-vat-declaration-switzerland.md) |
-
+| 10.0.22     | AT          | VAT Declaration XML (AT).version.101.23</br>VAT Declaration Excel (AT).version.101.23.17 | [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md) |
+| 10.0.23     | DE          | VAT Declaration XML (DE).version.101.16.xml</br>VAT Declaration Excel (DE).version.101.16.12.xml | [VAT declaration (Germany)](emea-deu-vat-declaration-germany.md) |
+| 10.0.21 | NO | Tax declaration model.version.112</br>Tax declaration model mapping.version.112.192</br>VAT Declaration XML (NO).version.112.54</br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
 
 ## Generate a VAT declaration for multiple VAT registrations
 
@@ -337,5 +339,9 @@ All tax registrations have the same settings for EU sales list parameters.
     ![Report sales tax.](media/Multipleid-image16.png)
 
 5. Select **OK** to generate the report.
+
+## TechTalk
+
+Review the TechTalk session provided on September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/vat-reporting-for-multiple-tax-registrations-in-single-legal-entity-september-29-2021)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

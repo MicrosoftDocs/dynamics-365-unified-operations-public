@@ -5,7 +5,7 @@ author: nhelgren
 ms.date: 10/04/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: nhelgren
 ms.search.validFrom: 2021-10-04
@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-10-04
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic describes error codes for the table map health check.
 

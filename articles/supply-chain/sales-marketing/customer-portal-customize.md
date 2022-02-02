@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.13
 # Customize and use the Customer portal
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic describes the different pages that available in the Customer portal out of the box. It explains what the pages do and how you can customize them.
 

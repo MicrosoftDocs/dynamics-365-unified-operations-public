@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 **Date and Time** fields are a fundamental concept in Microsoft Dynamics 365 Human Resources. It's important that you understand how to work with **Date and Time** data on pages, in Dataverse, and in external sources.
 

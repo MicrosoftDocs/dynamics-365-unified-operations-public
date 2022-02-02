@@ -2,7 +2,7 @@
 title: Deploy edge scale units on custom hardware using LBD
 description: This topic explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
 author: cabeln
-ms.date: 04/22/2021
+ms.date: 01/24/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User, Developer, IT Pro
@@ -22,6 +22,13 @@ Edge scale units play an important role in the distributed hybrid topology for s
 Edge scale units can be deployed by creating a local business data (LBD) [on-premises environment](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) and then configuring it to function as a scale unit in your distributed hybrid topology for supply chain management. This is achieved by associating the on-premises LBD environment with a Supply Chain Management environment in the cloud, which has been configured to function as a hub.  
 
 This topic describes how to set up an on-premises LBD environment as an edge scale unit and then associate it with a hub.
+
+## Infrastructure considerations
+
+Edge scale units run on on-premises environments, so the infrastructure requirements are quite similar. However, there are certain differences that should be noted:
+
+- Edge scale units do not use Financial Reporting, so they do not require Financial Reporting nodes.
+- The manufacturing and warehousing workloads are not compute-intensive, so consider sizing your compute power for AOS nodes accordingly.
 
 ## Deployment overview
 
@@ -91,7 +98,7 @@ This step creates a functional LBD environment. However, the environment doesn't
 
         ```powershell
         # Host URL is your DNS record\host name for accessing the AOS
-        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
         ```
 
     1. Create a new Azure Active Directory (Azure AD) application that will enable the Alm Orchestration service to communicate with the Scale Unit Management service.
@@ -138,7 +145,7 @@ This step creates a functional LBD environment. However, the environment doesn't
     1. Run the following SQL commands on your business database (AXDB).
 
         ```sql
-        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
         delete from NumberSequenceTable
         delete from NumberSequenceReference
         delete from NumberSequenceScope

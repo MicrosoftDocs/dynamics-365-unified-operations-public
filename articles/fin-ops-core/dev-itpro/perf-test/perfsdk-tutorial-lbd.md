@@ -5,7 +5,6 @@ author: hasaid
 ms.date: 03/22/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: jujoh
 ms.search.validFrom: 2018-XX-XX

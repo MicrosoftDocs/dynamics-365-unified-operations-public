@@ -1,13 +1,13 @@
 ---
 title: Integrated tax
 description: This topic describes the integration of tax data between Finance and Operations and Dataverse.
-author: robinarh
+author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2019-07-15
 ---
 
@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax. It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.
 

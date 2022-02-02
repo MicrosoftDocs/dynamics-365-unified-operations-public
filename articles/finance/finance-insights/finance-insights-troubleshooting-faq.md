@@ -4,7 +4,7 @@
 title: Troubleshoot Finance insights setup issues
 description: This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,6 +57,12 @@ Follow these steps in the [Power Platform admin center](https://admin.powerplatf
 1. If you're using a preview version of Finance insights, remove the DI project that is associated with the **Customer payment insights results (CDS to Fin and Ops)** template.
 2. Follow the steps in [Create a data integrator project](create-data-integrate-project.md). Use the **Customer payment insights results (CDS to Fin and Ops 10.0.17 and later)** template.
 
+## Symptom: When I try to open AI Builder by using the links on the Customer payment predictions setup page, why do I receive the following error message: "Sorry, there's been a disconnect"?
+
+### Resolution
+
+Dynamics 365 Finance users must have a Microsoft Power Apps user account for the environment, and that user account must have the System customizer role. The Microsoft Power Apps system administrator can create the user account and assign the role. You can then go to <https://make.preview.powerapps.com/>, sign in by using that user account, and try the links again.
+
 ## Symptom: Why doesn't the Cash forecast tab in the Cash flow forecast workspace show any data?
 
 ### Resolution
@@ -66,3 +72,48 @@ The cash flow forecasting function in Cash and bank management and the Cash flow
 First, set up and enable the cash flow forecasting and liquidity accounts. For more information, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md). If this setup has been completed, but you don't see the results that you expect, see [Troubleshoot cash flow forecasting setup](../cash-bank-management/cash-flow-forecasting-tsg.md) for more information.
 
 Next, confirm that the Cash flow forecasts feature in Finance insights (**Cash and bank management \> Setup \> Finance Insights \> Cash flow forecasts**) has been enabled, and that training of the AI model has been completed. If the training hasn't been completed, select **Forecast now** to start the model training process.
+
+## Symptom: Why isn't the Install a new add-in button visible in Microsoft Dynamics Lifecycle Services?
+
+### Resolution
+
+First, verify that the **Environment Manager** or **Project Owner** role is assigned to the signed-in user in the **Project security role** field in Microsoft Dynamics Lifecycle Services (LCS). Installation of the new add-ins requires one of these project security roles.
+
+If the correct project security role is assigned to you, you might have to refresh your browser window to see the **Install new add-in** button.
+
+## Symptom: The Finance insights add-in doesn't seem to be installing. Why is that?
+
+### Resolution
+
+The following steps should have been completed.
+
+- Verify that you have **System administrator** and **System Customizer** access in the Power Portal admin center.
+- Verify that a Dynamics 365 Finance or equivalent license is applied to the user who is installing the add-in.
+- Verify that the following Azure AD app is registered in Azure AD: 
+
+  | Application                  | App ID           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  
+## Symptom: Error, “We didn’t’ find any data for the selected filter range. Please select a different filter range and try again.” 
+
+### Resolution
+
+Check the data integrator setup to validate that it's functioning as expected and upserting the data from AI Builder back to Finance.  
+For more information, see [Create a data integration project](../finance-insights/create-data-integrate-project.md).
+
+## Symptom: Customer payment prediction training failed and the AI Builder error states, "Prediction should have only 2 distinct outcome values to train the model. Map to two outcomes and retrain", "Training report issue: IsNotMinRequiredDistinctNonNullValues".
+
+### Resolution
+
+This error indicates that there are not enough historical transactions in the last year that represent each category described in the **On-time**, **Late**, and **Very late** categories. To resolve this error, adjust the **Very late** transaction period. If adjusting the **Very late** transaction period doesn't fix the error, **Customer payment predictions** is not the best solution to use as it needs data in each category for training purposes.
+
+For more information about how to adjust the **On-time**, **Late**, and **Very late** categories, see [Enable customer payment predictions](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## Symptom: Model training failed
+
+### Resolution
+
+The **Cash flow forecast** model training requires data that spans more than one year and contains more than 100 transactions. These transactions must impact liquidity accounts that are included in the cash flow forecast setup.
+
+The **Customer payment predictions** requires at least 100 customer invoice and payment transactions in the last six to nine months to create predictions.  

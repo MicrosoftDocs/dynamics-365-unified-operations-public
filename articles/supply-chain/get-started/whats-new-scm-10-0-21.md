@@ -35,7 +35,6 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 | Inventory&nbsp;and&nbsp;logistics | [Post on-hand adjustments using codes connected to offset accounts](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Reason codes for inventory counting](../warehousing/reason-codes-for-counting-journals.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Sales quotation referenced data export policy](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Choose whether changes to data referenced by quotations will cause those quotations (or lines) to be included in the next incremental export. Your incremental exports will run more quickly if you choose not to include such quotations or lines.<br><br>This feature adds a setting called **Skip sales quotation referenced data during change tracking** to the **Accounts receivable parameters** page. |
 | Inventory&nbsp;and&nbsp;logistics | [Sealed bidding](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) |
-| Inventory&nbsp;and&nbsp;logistics | [Scan barcodes in the warehouse using GS1 format standards](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 bar codes and QR codes](../warehousing/gs1-barcodes.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Soft reservation for the Inventory Visibility Add-in](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Inventory Visibility reservations](../inventory/inventory-visibility-reservations.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Deduction and catch-weight enhancements for Rebate management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Manage deductions using the deduction workbench](../rebate-management/deduction-workbench.md )<br><br>[Process, review, and post rebates](../rebate-management/process-review-post.md)<br><br>[Rebate management deals](../rebate-management/rebate-management-deals.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Warehouse app step instructions](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Customize step titles and instructions for the Warehouse Management mobile app](../warehousing/mobile-app-titles-instructions.md) |
@@ -66,10 +65,10 @@ The following table lists the features that are turned on by default in 10.0.21.
 | Transfer Order Cancellation | 9/1/2021 | 7/13/2020 | On by default | Inventory and warehouse management |
 | Unlock Inventory Journal | 9/1/2021 | 8/17/2020 | On by default | Inventory and warehouse management |
 | Saved views for Inventory management | 9/1/2021 | 9/30/2020 | On by default | Inventory and warehouse management |
-| Navigation to BOM version from BOM lines. | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
-| Using unit of measure and unit quantity in inventory journals. | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
+| Navigation to BOM version from BOM lines | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
+| Using unit of measure and unit quantity in inventory journals | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
 | Allow empty batch attributes values | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
-| Auto increment line numbers of inventory transfer order lines. | 9/1/2021 | 10/11/2019 | On by default | Inventory and warehouse management |
+| Auto increment line numbers of inventory transfer order lines | 9/1/2021 | 10/11/2019 | On by default | Inventory and warehouse management |
 | Inventory journal approve workflow | 9/1/2021 | 1/6/2020 | On by default | Inventory and warehouse management |
 | Enable inventory quality management parameters warning feature | 9/1/2021 | 10/7/2019 | On by default | Inventory and warehouse management |
 | Create transfer order from sales line | 9/1/2021 | 8/31/2019 | On by default | Inventory and warehouse management |
@@ -89,12 +88,12 @@ The following table lists the features that are turned on by default in 10.0.21.
 | Saved views for released products | 9/1/2021 | 9/30/2020 | On by default | Product information management |
 | Improvements to the Approve and Transfer jobs dialogs | 9/1/2021 | 10/11/2019 | On by default | Production control |
 | License plate for reporting as finished added to the Job Card Device | 9/1/2021 | 8/31/2019 | On by default | Production control |
-| A new button to Stop break has been added to the Job Card Terminal page. | 9/1/2021 | 2/19/2020 | On by default | Production control |
+| A new button to Stop break has been added to the Job Card Terminal page | 9/1/2021 | 2/19/2020 | On by default | Production control |
 | Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
 | Saved views for production control | 9/1/2021 | 8/17/2020 | On by default | Production control |
 | Dynamics 365 Guides for Manufacturing | 9/1/2021 | 7/13/2020 | On by default | Production control |
 | Production floor execution | 9/1/2021 | 9/30/2020 | On by default | Production control |
-| Feature for locking job card device and job card terminal so that they can be sanitized. | 9/1/2021 | 5/10/2020 | On by default | Production control |
+| Feature for locking job card device and job card terminal so that they can be sanitized | 9/1/2021 | 5/10/2020 | On by default | Production control |
 | Charges allocation on a sales order | 9/1/2021 | 9/30/2020 | On by default | Sales and marketing |
 | Limit the number of sales orders that can be selected for posting | 9/1/2021 | 9/1/2021 | On by default | Sales and marketing |
 | Clean up sales-order update history | 9/1/2021 | 9/1/2021 | On by default | Sales and marketing |

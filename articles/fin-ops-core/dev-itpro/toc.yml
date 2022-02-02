@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-        - name: Platform updates for version 10.0.23
+        - name: Platform updates for version 10.0.25 (April 2022)
+          href: get-started/whats-new-platform-updates-10-0-25.md
+        - name: Platform updates for version 10.0.24 (February 2022)
+          href: get-started/whats-new-platform-updates-10-0-24.md
+        - name: Platform updates for version 10.0.23 (January 2022)
           href: get-started/whats-new-platform-updates-10-0-23.md
-        - name: Platform updates for version 10.0.22 (November 2021)
-          href: get-started/whats-new-platform-updates-10-0-22.md
-        - name: Platform updates for version 10.0.21 (October 2021)
-          href: get-started/whats-new-platform-updates-10-0-21.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -232,9 +232,9 @@
         href: data-entities/dm-error-descriptions.md  
     - name: Azure Data Lake
       items: 
-      - name: Azure Data Lake overview
-        href: data-entities/azure-data-lake-overview.md
-      - name: Configure export to Azure Data Lake
+      - name: Export to Azure Data Lake overview
+        href: data-entities/Azure-Data-Lake-GA-version-overview.md
+      - name: Install Export to Azure Data Lake add-in
         href: data-entities/configure-export-data-lake.md
       - name: Finance and Operations apps in Azure Data Lake 
         href: data-entities/finance-data-azure-data-lake.md 
@@ -406,6 +406,8 @@
             href: deployment/onprem-remove-reinstall-AOS-node.md
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
+          - name: Upgrade the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
+            href: deployment/onprem-upgrade-sqlserver.md
         - name: Local agent
           items:
           - name: AD FS Microsoft 365 compatibility
@@ -430,6 +432,8 @@
           href: deployment/install-deployable-package.md
         - name: Uninstall a package
           href: deployment/uninstall-deployable-package.md
+        - name: Run custom X++ scripts with zero downtime
+          href: deployment/run-custom-scripts.md
         - name: Troubleshoot package application issues
           href: deployment/deployable-package-troubleshooting.md
       - name: Deploy custom help
@@ -458,6 +462,16 @@
           href: help/language-locale.md
         - name: Extend, customize, and collaborate on the help
           href: help/contributor-guide.md
+      - name: Deployment considerations
+        items:
+        - name: Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+          href: deployment/deployment-options-geo.md
+        - name: Finance and Supply Chain Management in US Government Community Cloud (GCC)
+          href: deployment/us-gcc-deployment.md
+        - name: Finance and Supply Chain Management operated by 21Vianet in China
+          href: deployment/china-local-deployment.md
+        - name: Finance and Operations apps in France
+          href: deployment/france-local-deployment.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page
@@ -499,7 +513,9 @@
         - name: Deploy assets by using Azure Pipelines
           href: dev-tools/pipeline-deploy-asset.md
         - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
-          href: dev-tools/pipeline-lcs-connection.md        
+          href: dev-tools/pipeline-lcs-connection.md
+        - name: Update LCS connection authentication tasks to MSAL in Azure Pipelines
+          href: dev-tools/pipeline-lcs-connection-update.md
         - name: Update the hosted Azure Pipeline for new NuGet packages
           href: dev-tools/pipeline-nuget-split.md
         - name: Update a legacy pipeline in Azure Pipelines
@@ -842,6 +858,8 @@
           href: perf-test/continuous-build-test-automation.md
         - name: SysTest filtering using class and method attributes
           href: perf-test/systest-filtering.md
+        - name: SysTestRow attribute for testing multiple values
+          href: perf-test/systest-row.md
         - name: Acceptance test library
           items:
           - name: Acceptance test library resources
@@ -1000,9 +1018,11 @@
           href: lifecycle-services/use-translation-service-ua.md
         - name: Translation memory files
           href: lifecycle-services/use-translation-service-tm.md
+        - name: Azure DevOps extension (Public Preview)
+          href: lifecycle-services/dts-devops-extension.md
     - name: Microsoft Power Platform integration
       items:
-      - name: Microsoft Power Platform integration with Finance and Operations
+      - name: Overview
         href: power-platform/overview.md
       - name: Enabling the Power Platform integration
         href: power-platform/enable-power-platform-integration.md
@@ -1038,6 +1058,8 @@
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
+            - name: Separated dual-write application orchestration package
+              href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write
               href: data-entities/dual-write/currrency-decimal-places.md
             - name: Set up the mapping for the sales order status fields
@@ -1118,6 +1140,8 @@
               href: data-entities/dual-write/party-gab-portal.md
             - name: Upgrade to the party and global address book model
               href: data-entities/dual-write/upgrade-party-gab.md
+            - name: View party data
+              href: data-entities/dual-write/view-party.md
             - name: Note integration
               href: data-entities/dual-write/notes-integration.md
             - name: Mapping reference
@@ -1172,6 +1196,8 @@
         items:
         - name: Business events overview
           href: business-events/home-page.md
+        - name: Managing business event endpoints
+          href: business-events/managing-business-event-endpoints.md
         - name: Application business events
           href: business-events/app-business-events.md
         - name: Workflow business events
@@ -1198,12 +1224,16 @@
             href: business-events/how-to/how-to-eventgrid.md
           - name: Business events and Azure Service Bus
             href: business-events/how-to/how-to-servicebus.md
+          - name: Business events and Azure Service Bus Queue
+            href: business-events/how-to/how-to-servicebus-queue.md
           - name: Business events and workflow approvals
             href: business-events/how-to/how-to-workflow.md
           - name: Business events and Microsoft Forms Pro 
             href: business-events/how-to/FormsPro.md
           - name: Business events and Azure Event Hubs
-            href: business-events/how-to/event-hub.md 
+            href: business-events/how-to/event-hub.md
+          - name: Subscribe to events in Dataverse
+            href: business-events/how-to/how-to-dataverse-events.md
           - name: Business events in financial period close
             href: business-events/how-to/period-close.md          
       - name: Add-ins
@@ -1462,6 +1492,8 @@
         href: perf-test/rsat/rsat-best-practices.md
       - name: Data agnostic testing using the Regression Suite Automation Tool
         href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+      - name: Run Regression suite automation tool (RSAT) with parallel execution
+        href: perf-test/rsat/rsat-parallel-execution.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
     - name: Release solutions using Lifecycle Services
@@ -1578,10 +1610,12 @@
           href: sysadmin/batch-server-overview.md
         - name: Create batch jobs
           href: sysadmin/tasks/create-batch-job.md
-        - name: Enabling automatic retries on batch jobs
+        - name: Enable batch retries
           href: sysadmin/retryable-batch.md
         - name: Copy a batch job
           href: sysadmin/copy-batch-job.md
+        - name: Priority-based batch scheduling
+          href: sysadmin/priority-based-batch-scheduling.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
         - name: Daylight saving time support for active batch periods
@@ -1654,8 +1688,6 @@
           items:
           - name: Make the chart of accounts delimiter unique
             href: migration-upgrade/chart-accounts-delimiter-unique.md
-          - name: Upgrade single-voucher journals and currency revaluations
-            href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
           - name: Project resource scheduling data model
             href: migration-upgrade/data-model-changes-resource-management.md
           - name: Workflow subsystem changes

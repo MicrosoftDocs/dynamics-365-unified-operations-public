@@ -3,8 +3,8 @@
 
 title: Submit alerts about country/region-specific regulatory features
 description: This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service.
-author: ShylaThompson
-ms.date: 02/16/2021
+author: JaneA07
+ms.date: 12/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 27791
 ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
@@ -34,7 +34,9 @@ This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to s
 
 ## Accessing the regulatory alert submission service
 
-In Dynamics Lifecycle Services (LCS), in your project, scroll to the right side of the page, and then, under **More tools**, click the **Alert service** tile. 
+To access the regulatory alert submission service, in your project or a project you are invited to in Dynamics Lifecycle Services (LCS), do one of the following:
+- From the menu, select **Alert service**.
+- Scroll to the right side of the page, and under **More tools**, select **Alert service**. 
 
 The **Dynamics regulatory alert submission** page appears. You can use this page to view any alerts that have previously been submitted by you or your organization.
 
@@ -42,7 +44,6 @@ The **Dynamics regulatory alert submission** page appears. You can use this page
 To enter a new regulatory alert, click the plus sign (**+**) at the top of the **Dynamics regulatory alert submission** page, above the filter. The **Alert submission** wizard starts. You can complete the following tasks in this wizard:
 
 - Search for existing regulatory items.
-- Attach business processes.
 - Describe an alert.
 - Confirm submissions.
 
@@ -52,13 +53,6 @@ Use Issue search to identify whether a regulatory feature, that is related to th
 
 1.  Enter a search term, such as a keyword, country/region, Microsoft Knowledge Base (KB) number, or Application Object Tree (AOT) object. Click the search button. Any items that include the search term, in either product issues or regulatory features, appear in the search results. You can narrow the search by using the filters that are available.
 2.  If you don't find the regulatory feature that you're looking for, you can submit a regulatory alert by clicking **Submit regulatory alert** at the bottom of the browser window. 
-
-### Attach business processes
-
-1.  In the **Global business process libraries** list, select business process libraries.
-2.  Enter search criteria to find business processes that are related to the search term. These business processes are highlighted in yellow.
-3.  In the list on the right side of the page, select one or more related business processes, and drag them into the field on the left . After you've finished, you can edit them further by clearing the selection of business processes.
-4.  Add the selected business processes to the alert. 
 
 ### Describe the alert
 

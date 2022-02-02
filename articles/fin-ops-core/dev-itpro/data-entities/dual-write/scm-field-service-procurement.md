@@ -5,9 +5,9 @@ author: RamaKrishnamoorthy
 ms.date: 11/11/2020
 ms.topic: article
 audience: Application User
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle 
+ms.author: tfehr 
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
 ---

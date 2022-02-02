@@ -4,8 +4,8 @@
 title: Benefits management overview
 description: This topic provides an overview of the Benefits management feature in Dynamics 365 Human Resources. 
 author: twheeloc  
-ms.date: 08/23/2021
-ms.topic: article
+ms.date: 12/06/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Benefits management overview
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -114,21 +117,30 @@ You can use flex credit programs to enroll employees in benefits, based on a pre
 
 ## Configure required employee information
 
-Before you can enroll employees in benefits, you must provide required information for them. Every employee must have a position. You must enroll employees in a fixed compensation plan on their start date, or they must have an annual benefits salary amount. Additionally, in the **Employment details** section of the **Worker** page, you must select a value in the **Benefit pay frequency** field.
+Before you can enroll employees in benefits, you must provide required information for them. 
 
-If you have an employee who receives supplemental compensation like commissions, you can add a **Benefits annual salary** amount from the employee record. Human Resources will use the **Benefits annual salary** amount when determining coverage amounts, instead of the fixed compensation annual amount. The **Benefits annual salary** must be valid as of the employee's start date or the beginning of the benefit period, whichever is latest. If both a fixed compensation and benefits annual salary amount is recorded for an employee, the benefits annual salary will be used in determining coverage amounts.
+The employee must have a **Position** assigned to them. A **Position** can be assigned to the employee on the **Worker** or the **Position** pages by 
+updating the **Worker assignment**. 
+
+Next, employees must be enrolled in a fixed compensation plan on their start date, or have an **Annual benefits salary** amount. Prior to assigning **Fixed compensation** to an employee, a **Position** must be assigned. 
+
+> [!NOTE] 
+> The **Fixed compensation start date** cannot be before the **Position assignment date**.
+
+Alternatively, if you have an employee who receives supplemental compensation like commissions, you can add a **Benefits annual salary** amount from the employee record. Human Resources will use the **Benefits annual salary** amount when determining coverage amounts, instead of the **Fixed compensation annual** amount. The **Benefits annual salary** must be valid as of the employee's start date or the beginning of the benefit period, whichever is latest. However, a position is not required to assign the **Benefits annual salary**. To enable the **Benefits annual salary** feature, go to the **Human resources shared parameters** page, on the **Benefits management** tab. This feature is turned off by default.
+
+> [!IMPORTANT]
+> If both a **Fixed compensation** and a **Benefits annual salary** amount is entered for an employee, the **Benefits annual salary** will be used in determining coverage amounts. In the **Employment details** section of the **Worker** page, you must select a value in the **Benefit pay frequency** field.
 
 ## Configure optional employee information
-
 When you create a benefit plan that uses rates that are based on gender or age, you must enter a birth date and gender for the employee to calculate the benefit cost.
 
 ## Process employees to determine eligibility
+Before employees can be enrolled in plans, eligibility processing is run to determine which plans they are eligible for. You can view the results of the eligibility process in the **Process results viewer**. For more information, see [Process enrollment eligibility](hr-benefits-process-enrollment-eligibility.md).
 
-Before employees can be enrolled in plans, eligibility processing is run to determine which plans they are eligible for. You can view the results of the eligibility process in the process results viewer. For more information, see [Process enrollment eligibility](hr-benefits-process-enrollment-eligibility.md).
+## Employees select plans using **Employee self service** (optional)
 
-## Employees select plans via employee self-service (optional)
-
-When open enrollment occurs, employees are newly hired, or a life event occurs, employees can select or update their benefits via employee self-service. For more information, see [Configure employee self-service](hr-benefits-setup-employee-self-service.md).
+When open enrollment occurs, employees are newly hired, or a life event occurs, employees can select or update their benefits using **Employee self service**. For more information, see [Configure employee self-service](hr-benefits-setup-employee-self-service.md).
 
 ## Confirm employee plan selections
 

@@ -4,7 +4,7 @@
 title: Commerce Data Exchange best practices
 description: This topic describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
-ms.date: 08/26/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.12
 [!include[banner](../includes/banner.md)]
 
 This topic is intended for people who implement functionality that is related to data synchronization, Commerce Data Exchange (CDX), in a Microsoft Dynamics 365 Commerce environment. It gives best practices advice for implementations.
-
-## Overview
 
 Proper data configuration and data synchronization are crucial to correctly functioning implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synchronized, the whole environment is effectively useless. Therefore, a top priority is to understand what is required to configure, generate, synchronize, and verify data across the full implementation from Commerce headquarters through the Commerce Scale Unit to the brick-and-mortar stores that use Modern POS with an offline database.
 
@@ -62,10 +60,13 @@ You must initialize the base configuration data for Commerce scheduler after you
 To initialize the base configuration data, do the following:
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**. 
- 
+
    You will be asked if you would like to proceed with initializing the base configuration data for Commerce scheduler. Performing this action after every update is key to maintaining functionality as it correctly sets the configuration data for new tables or columns. 
   
 2. There is a parameter to **Delete existing configuration**.  Unless you are explicitly instructed to do this, or you are working on a non-production environment where losing configuration will not create an impact, leave this set to **No**.
+
+> [!NOTE]
+> As of the Commerce version 10.0.24 release, the Commerce scheduler can be set to run automatically after updates to Commerce headquarters. To enable this capability in Commerce headquarters, go to **Workspaces \> Feature management**, and enable the **Run "Initialize commerce scheduler" after Headquarters is updated** feature. 
 
 ## Valuable configurations
 
@@ -74,8 +75,9 @@ To initialize the base configuration data, do the following:
 | <ul><li>Parameters</li><li>Commerce scheduler</li><li>Retry</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce scheduler parameters**, and set **Try count** to **3**. If the value of this field is too high, download sessions might fail during high-usage times.  Additionally, verify (or set) **Full dataset generation interval in days** to **0**. This means full dataset generation will not occur unless required by something other than time. Setting these values allows CDX to function in a more expected manner while reducing possible error or performance issues. |
 | <ul><li>Functionality profile</li><li>Data retention</li><li>Return policy</li> | Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profile**, and then, in the **Functions** section, set **Days transactions exist** to a value that is the same as, or close to the value that is defined for the return policy. For example, if the return policy states an item can be returned within 30 days, set this field to **30**, **31**, or **60** if special exceptions are allowed beyond the usual policy (this would be twice the usual policy, allowing for faster returns even beyond the usual policy limits). |
 | <ul><li>Channel database group</li><li>Distribution schedule</li><li>Offline profile</li><li>Pause</li><li>Data</li><li>Download</li></ul> | We highly recommend that you have either a "dummy" channel database group (that is, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals, or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation can occur when it's required and when the system is most available to do it. (However, the system might pause multiple times as required.) |
-  
+
 ### Enable table and index compression
+   
 Before you read this topic, we recommended that you read about the different recommended versions of SQL Server used in on-premises database components (offline database and channel database as part of a CSU) in [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#implementation-considerations). It's important to enable table/index compression on their on-premises databases, such as the offline databases for Modern POS and the channel databases for the CSU (self-hosted). This is supported only on SQL Server 2016 SP1 Express, SQL Server 2017 Express, SQL Server 2019 Express, and later. If you are still running SQL Server Express 2014, an upgrade to a newer, supported version will be required. Generate a report of the top tables using disk space (**SQL Server Management Studio > Reports > Standard Reports > Disk Usage by Top Tables**). After that, you can enable compression for each table and index at the top of the report. The basic commands are shown below.
 
 ```Console

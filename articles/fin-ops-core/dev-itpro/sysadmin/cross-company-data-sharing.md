@@ -64,9 +64,9 @@ Data sharing is managed by defined policies that are saved in data packages. Tem
 
 -   The fields that are replicated
 -   The entities that participate in the replication
--   The companies that participates in the sharing
+-   The companies that participate in the sharing
 
-The same company and table can only be in one policy. It is possible to share the same table in more than policy. This can happen when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different country/regions. 
+The same company and table can only be in one policy. It is possible to share the same table in more than one policy. This can happen when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different country/regions. 
 
 > [!NOTE]
 > Only required foreign key fields are selected by default. Optional foreign keys need to be selected manually to be included. The best practice is to add one or more tables when selecting a foreign key field, unless the table has already been added.

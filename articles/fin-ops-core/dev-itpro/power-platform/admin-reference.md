@@ -4,7 +4,7 @@
 title: Configure Dataverse virtual entities
 description: This topic explains how to configure virtual entities for Finance and Operations apps in Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 10/25/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -28,12 +28,16 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic explains how to configure virtual entities for Finance and Operations apps in Microsoft Dataverse.
 
 > [!IMPORTANT]
-> The configuration steps in this topic are required only for Finance and Operations apps environments for which the Microsoft Power Platform integration is **not** enabled. For Finance and Operations apps environments for which the Microsoft Power Platform integration is enabled, the virtual entity configuration that is outlined in this topic is automatically done as part of the process for enabling the integration. For more information about how to enable the Microsoft Power Platform integration for Finance and Operations apps environments, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
+> The configuration steps in this topic are required only for Finance and Operations apps environments for which the Microsoft Power Platform integration is **not** enabled. For Finance and Operations apps environments for which the Microsoft Power Platform integration is enabled, the virtual entity configuration that is outlined in this topic is automatically performed as part of the process for enabling the integration. 
+> 
+> If Dataverse virtual entities were configured manually, following the guidance in this topic, prior to enabling the Microsoft Power Platform integration the manual configuration will no longer be used for the linked Power Platform environment after the Microsoft Power Platform integration is enabled. The virtual entities will connect to the Dataverse environment using the automatic configuration provided by the Microsoft Power Platform integration. However, manual configuration for virtual entities may still be used to connect the Finance and Operations apps environment to additional Power Platform environments with which the Microsoft Power Platform integration has not been enabled.
+> 
+> For more information about how to enable the Microsoft Power Platform integration for Finance and Operations apps environments, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
 ## <a name="get-virtual-entity-solution"></a>Getting the virtual entity solution
 

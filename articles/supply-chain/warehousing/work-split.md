@@ -37,7 +37,7 @@ Work split functionality lets you split large work IDs (that is, work orders tha
 
 Before you can use the work split functionality, you must turn on the feature and its prerequisite feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on as required.
 
-First, turn on the prerequisite *Organization-wide work blocking* feature if it isn't already turned on. In the **Feature management** workspace, this feature is listed in the following way:
+First, turn on the prerequisite *Organization-wide work blocking* feature if it isn't already turned on. As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Organization-wide work blocking*

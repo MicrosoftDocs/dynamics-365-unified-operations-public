@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 The following keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps .
 
@@ -136,6 +138,8 @@ As of Platform update 11, users can discover currently available shortcuts direc
 
 | To do this                                                                                                             | Press                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Vertical scrolling                                                                                                     | Mouse wheel                     |
+| Horizontal scrolling                                                                                                   | Shift + Mouse wheel             |
 | Move to the next/previous column                                                                                       | Tab / Shift+Tab                 |
 | Move to the next/previous row                                                                                          | Down arrow / Up arrow           |
 | Move to the next/previous row without selecting<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote> | Ctrl+Up arrow / Ctrl+Down arrow |
@@ -147,15 +151,16 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to the first record                                                                                               | Ctrl+Home                       |
 | Move to the last record                                                                                                | Ctrl+End                        |
 | Select or clear all rows                                                                                               | Ctrl+Shift+M                    |
-| Move to the first marked row                                                                                           | Alt+Shift+M, F                    |
-| Move to the next marked row                                                                                            | Alt+Shift+M, L                    |
-| Move to the previous marked row                                                                                        | Alt+Shift+M, P                    |
-| Moved to the last marked row                                                                                           | Alt+Shift+M, N                    |
+| Move to the first marked row                                                                                           | Alt+Shift+M, F                  |
+| Move to the next marked row                                                                                            | Alt+Shift+M, L                  |
+| Move to the previous marked row                                                                                        | Alt+Shift+M, P                  |
+| Moved to the last marked row                                                                                           | Alt+Shift+M, N                  |
 | Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
+| Move the current column to the next/previous position (with focus in the header row)                                   | Ctrl+Shift+Right arrow / Ctrl+Shift+Left arrow |
 | Open grid filtering for the current column (with focus in the header row)                                              | Enter                           |
-| Resize the current column to fit the contents (with focus in the header row)                                           | A                               |
+| Resize the current column to fit the contents (with focus in the header row)                                           | A  (or double click on the column sizing handle) |
 
 ## Input control shortcuts
 

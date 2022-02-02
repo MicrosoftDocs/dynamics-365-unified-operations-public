@@ -116,6 +116,7 @@ Create item coverage rules by doing the following:
 1. In the **Purchase time** field, enter '5'.
 1. Select **Save**.
 
-
+> [!NOTE]
+> For manufactured items, the **Production lead time** is used if there is no route for the item. If an active route has been associated to the item, then master planning will schedule the order and calculate its dates according to the route times and capacity of the resources (if applicable).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

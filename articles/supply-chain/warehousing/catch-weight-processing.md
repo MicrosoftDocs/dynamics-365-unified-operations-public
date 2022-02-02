@@ -145,7 +145,6 @@ Not all workflows support catch weight product processing with warehouse managem
 - Catch weight products that are variant-enabled can't be used together with the functionality for converting variant units of measure.
 - Catch weight products can't be marked as a commerce "product kit."
 - Catch weight products can be used only with a unit sequence group that has catch weight handling units, and that has the catch weight unit as the lowest sequence.
-- For catch weight products, the inventory unit can be converted to the catch weight unit only if the conversion produces a nominal quantity that is more than 1.
 - The setup of bar codes for catch weight products doesn't support a variable weight setup.
 
 ### Order processing

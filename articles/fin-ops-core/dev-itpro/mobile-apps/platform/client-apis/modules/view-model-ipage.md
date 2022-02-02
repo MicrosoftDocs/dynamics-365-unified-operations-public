@@ -1,12 +1,12 @@
 ---
 title: Page module
 description: The IPage interface encapsulates the various properties, life cycle and event hooks associated with a page in a workspace.
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ---
 
 # Page module

@@ -3,7 +3,7 @@
 
 title: Install and connect the Warehouse Management mobile app
 description: This topic explains how to install the Warehouse Management mobile app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
 
@@ -147,6 +147,10 @@ Authentication with Azure AD provides a secure way of connecting a mobile device
 Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use non-exportable certificates.
 
 You must make the certificate available locally on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices if you're using Intune, see [Use certificates for authentication in Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## Configure the Warehouse Management mobile app for cloud and edge scale units
+
+A few extra steps are required if you plan to run the Warehouse Management mobile app against a cloud or edge scale unit. For instructions, see [Configure the Warehouse Management mobile app for cloud and edge scale units](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## Configure the application by importing connection settings
 
@@ -310,5 +314,6 @@ If a device is lost or compromised, you must remove access to Supply Chain Manag
 
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)
+- [Configure the Warehouse Management mobile app for cloud and edge scale units](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
