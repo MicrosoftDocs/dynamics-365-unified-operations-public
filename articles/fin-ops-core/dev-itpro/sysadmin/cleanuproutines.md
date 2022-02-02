@@ -114,9 +114,9 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 
 | Path | Description |
 |------|-------------|
-| Cost Management \> Manufacturing accounting \> Clean up \> Production orders cleanup | <p>Same as Production Control \> Periodic tasks \> Clean up \> Production orders cleanup. This cleanup routine is used to delete production orders that are ended.</p> |
-| Cost Management \> Manufacturing accounting \> Clean up \> Production recalculation | Bundles production orders where the estimated costs for material and time consumption should be recalculated and schedules recalculation tasks. |
-| Cost Management \> Manufacturing accounting \> Clean up \> Clean up the costing sheet cache | The CostSheetCache table which is used as a temp location for cost sheets to help generate prices. This job cleans up the costing sheet cache. Records in the cache with age of the specified days or older will be deleted. |
+| Cost management \> Manufacturing accounting \> Clean up \> Production orders cleanup | <p>Same as Production control \> Periodic tasks \> Clean up \> Production orders cleanup. This cleanup routine is used to delete production orders that are ended.</p> |
+| Cost management \> Manufacturing accounting \> Clean up \> Production recalculation | Bundles production orders where the estimated costs for material and time consumption should be recalculated and schedules recalculation tasks. |
+| Cost management \> Manufacturing accounting \> Clean up \> Clean up the costing sheet cache | The CostSheetCache table which is used as a temp location for cost sheets to help generate prices. This job cleans up the costing sheet cache. Records in the cache with age of the specified days or older will be deleted. |
 
 ## Master planning
 
