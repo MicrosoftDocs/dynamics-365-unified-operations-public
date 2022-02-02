@@ -46,7 +46,6 @@ The following table lists the features that are included in this release. The *F
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 | B2B | Mock a signed-in B2B user | [Mock the signed-in state during local development](../e-commerce-extensibility/mock-sign-in.md) | Developer | 
-| B2B | [Support for catalogs in e-commerce channel](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/support-catalogs-e-commerce-channel) | Businesses can  define partner-specific product catalogs for their B2B business partners. | N/A |
 | E-commerce | [Integration with Sitecore Content Hub](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/integration-sitecore-content-hub) | A data connector will automatically push the Dynamics 365 Commerce product and category data into your Sitecore Content Hub instance allowing additional digital asset management and product enrichment options for your Commerce channels. | Site builder |
 | E-commerce | [PayPal Cart Checkout support in e-commerce](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/paypal-cart-checkout-support-e-commerce) | [Dynamics 365 Payment Connector for PayPal](../paypal.md)| Developer |
 | E-commerce | [Show or hide tax breakdown in e-commerce when prices include sales tax](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/show-or-hide-tax-breakdown-e-commerce-when-prices-include-sales-tax) |  Businesses can display or hide tax information explicitly in the order summary on cart, checkout, confirmation, and order details pages in the e-commerce channel. | Site builder |
@@ -54,14 +53,6 @@ The following table lists the features that are included in this release. The *F
 | Globalization | [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer| 
 | Globalization | Update references in QR codes for India | [Generate QR codes and print them on receipts for India](../localizations/ind-generate-qr-code-print-receipt.md) | Developer |
 |Statements |  Improvements to statement posting functionality  | [Improvements to statement posting functionality](../statement-posting-EOD.md) | Commerce parameters |
-
-## Feature enhancements included in this release
-
-The following table lists the feature enhancements that are new for this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
-
-If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), where they are listed using the names shown in the *Feature name in feature management* column of the following table.
-
-| Module | Feature name in feature management | More information |
 
 
 
