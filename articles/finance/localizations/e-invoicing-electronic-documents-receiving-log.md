@@ -39,7 +39,7 @@ To open the log, go to **Organization administration** \> **Periodic** \> **Elec
 There are three possible submission statuses:
 
 - **Scheduled** – Electronic invoicing received the submission from Finance or Supply Chain Management, and is currently processing the electronic invoicing feature.
-- **Completed** – Electronic invoicing successfully processed the electronic invoicing feature as it was configured to run it.
+- **Completed** – Electronic invoicing successfully processed the electronic invoicing feature in the way that it was configured to process it.
 - **Failed** – Electronic invoicing encountered an error or was stopped by an exception while it was processing the electronic invoicing feature.
 
 The receipt status is updated only when you send a request to the Electronic invoicing service to receive and process new electronic documents, or to receive and process functions and inquiries.
