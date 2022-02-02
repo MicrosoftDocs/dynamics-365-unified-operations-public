@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 01/20/2022
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -395,7 +395,7 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 ## Update other certificates as needed
 
-1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu12.md#setupsql).
+1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu41.md#setupsql).
 
 2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.
 

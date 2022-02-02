@@ -45,13 +45,13 @@ The following table lists the features that are included in this release. The *F
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-| B2B | Mock a signed-in B2B user | [Mock the signed-in state during local development](../e-commerce-extensibility/mock-sign-in.md) | Developer | 
+| B2B | Mock a signed-in B2B user | [Mock the signed-in state during local development](../e-commerce-extensibility/mock-sign-in.md) | Developer opt-in | 
 | E-commerce | [Integration with Sitecore Content Hub](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/integration-sitecore-content-hub) | A data connector will automatically push the Dynamics 365 Commerce product and category data into your Sitecore Content Hub instance allowing additional digital asset management and product enrichment options for your Commerce channels. | Site builder |
-| E-commerce | [PayPal Cart Checkout support in e-commerce](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/paypal-cart-checkout-support-e-commerce) | [Dynamics 365 Payment Connector for PayPal](../paypal.md)| Developer |
+| E-commerce | [PayPal Cart Checkout support in e-commerce](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/paypal-cart-checkout-support-e-commerce) | [Dynamics 365 Payment Connector for PayPal](../paypal.md)| Developer opt-in |
 | E-commerce | [Show or hide tax breakdown in e-commerce when prices include sales tax](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/show-or-hide-tax-breakdown-e-commerce-when-prices-include-sales-tax) |  Businesses can display or hide tax information explicitly in the order summary on cart, checkout, confirmation, and order details pages in the e-commerce channel. | Site builder |
-| Globalization | [Direct fiscal integration from POS](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer| 
-| Globalization | [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer| 
-| Globalization | Update references in QR codes for India | [Generate QR codes and print them on receipts for India](../localizations/ind-generate-qr-code-print-receipt.md) | Developer |
+| Globalization | [Direct fiscal integration from POS](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer opt-in| 
+| Globalization | [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer opt-in| 
+| Globalization | Update references in QR codes for India | [Generate QR codes and print them on receipts for India](../localizations/ind-generate-qr-code-print-receipt.md) | Developer opt-in|
 |Statements |  Improvements to statement posting functionality  | [Improvements to statement posting functionality](../statement-posting-EOD.md) | Commerce parameters |
 
 
