@@ -4122,6 +4122,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
             - name: Run reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+          - name: Group records and perform counting and summing by using GROUPBY data sources
+            href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Use the generated output as a data source to perform counting and summing
             items:
             - name: Create formats
