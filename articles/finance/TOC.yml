@@ -3114,6 +3114,8 @@
             href: localizations/rus-account-activity-reports.md
           - name: Federal Accounting Standard 27-2021
             href: localizations/emea-rus-federal-accounting-standard-27-2021.md
+          - name: Enable Electronic reporting destinations to store Russian accounting documents
+            href: rus-enable-ER-destinations-ru-accounting-documents.md
         - name: Advance holders
           items:
           - name: Russia advance holders overview
