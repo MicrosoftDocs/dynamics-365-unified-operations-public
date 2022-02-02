@@ -143,6 +143,18 @@ After you've previewed the changes to your template, follow one of these steps t
 > [!WARNING]
 > When a template, or any other content management system (CMS) item, is published, it's discoverable on the internet. Don't publish documents or assets until you're ready to make them public. Document versions that have been saved and checked in, but that haven't been published, are discoverable only to authenticated system users.
 
+## Rename a template
+
+To rename existing template, follow these steps.
+
+1. In the site builder, go to **Templates**
+1. Locate the template you want to rename and open it by clicking the template name
+1. Start editing it by clicking **Edit**. Please note, that you cannot do this if someone else is already editing this template.
+1. Click the pen-icon next to the template name in the property inspector
+1. Modify the name as required
+1. Confirm by clicking the check mark
+1. Finish editing
+
 ## Additional resources
 
 [Templates and layouts overview](templates-layouts-overview.md)
