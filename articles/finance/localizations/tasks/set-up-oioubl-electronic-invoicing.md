@@ -4,7 +4,7 @@
 title: Set up OIOUBL electronic invoicing
 description: This procedure walks you through setting up OIOUBL electronic invoicing. 
 author: mrolecki
-ms.date: 08/29/2018
+ms.date: 02/02/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
