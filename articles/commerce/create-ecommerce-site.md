@@ -55,6 +55,10 @@ To set up your site, do the following.
 
 After your site is created, you can verify that it is associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store. You can also use the drop-down menu in the upper left of the page to access the allocated products by category.
 
+## Rename your site
+
+To rename your site, first go to the site list view in the site builder. Select the site you would like to rename and then select **Rename** from the command bar. Popup dialog will appear. Adjust the site name in the text box and confirm by clicking **OK**. List is updated to reflect the change.
+
 ## Additional resources
 
 [Configure your domain name](configure-your-domain-name.md)
