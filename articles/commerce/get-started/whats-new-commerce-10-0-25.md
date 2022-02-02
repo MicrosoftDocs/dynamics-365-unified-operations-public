@@ -60,7 +60,7 @@ The following table lists the features that are included in this release. The *F
 
 ### Modernizing the Commerce in-store technology stack
 
-This white paper describes the evolution of the Commerce in-store solution, the motivation for new modernization work, and a detailed release timeline to help customers and partners plan their adoption of the new Store Commerce app and Commerce SDK. Download the white paper [here](https://download.microsoft.com/download/2/2/3/22310579-4b89-4703-becb-9c48aac3cd9c/Modernizing the Dynamics 365 Commerce In-Store Technology Stack.pdf).
+The [Modernizing the Dynamics 365 Commerce In-Store Technology Stack](https://download.microsoft.com/download/2/2/3/22310579-4b89-4703-becb-9c48aac3cd9c/Modernizing-the-Dynamics-365-Commerce-In-Store-Technology-Stack.pdf) white paper describes the evolution of the Commerce in-store solution, the motivation for new modernization work, and a detailed release timeline to help customers and partners plan their adoption of the new Store Commerce app and Commerce SDK. 
 
 ### Platform updates for Finance and Operations apps
 
