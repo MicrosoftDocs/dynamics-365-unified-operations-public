@@ -92,6 +92,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.25 (April 2022)
+            href: get-started/whats-new-commerce-10-0-25.md 
           - name: Commerce 10.0.24 (February 2022)
             href: get-started/whats-new-commerce-10-0-24.md 
           - name: Commerce 10.0.23 (January 2022)
