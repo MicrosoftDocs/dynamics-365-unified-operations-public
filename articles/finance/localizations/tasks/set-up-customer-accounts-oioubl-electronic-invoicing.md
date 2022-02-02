@@ -27,6 +27,6 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-For more information about OIOUBL electronic invoices, see [OIOUBL electronic invoices](../emea-dnk-e-invoices.md).
+For more information about OIOUBL electronic invoices, see [Customer electronic invoices in Denmark](../emea-dnk-e-invoices.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
