@@ -126,6 +126,10 @@ To edit a fragment in Commerce site builder, follow these steps.
 
 You can also edit a fragment by selecting it on a page, in a template, or in a parent fragment, and then selecting **Edit Fragment** in the properties pane on the right.
 
+### Rename a fragment
+
+Fragments can be renamed later by editing them and clicking the small pen-icon next to the fragment name in the property pane.
+
 ## Additional resources
 
 [Templates and layouts overview](templates-layouts-overview.md)
