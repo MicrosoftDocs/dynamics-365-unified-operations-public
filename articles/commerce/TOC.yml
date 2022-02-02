@@ -2384,6 +2384,8 @@
         items:
           - name: Commerce for IT pros and developers
             href: dev-itpro/dev-retail-home-page.md
+          - name: Modernizing the Commerce in-store technology stack (white paper)
+            href: https://download.microsoft.com/download/2/2/3/22310579-4b89-4703-becb-9c48aac3cd9c/Modernizing-the-Dynamics-365-Commerce-In-Store-Technology-Stack.pdf
           - name: Set up a local development environment
             href: dev-itpro/setup-local-dev-env.md
       - name: Online channel extensibility
