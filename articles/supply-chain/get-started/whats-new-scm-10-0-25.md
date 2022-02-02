@@ -118,7 +118,6 @@ The table also lists features that were previously in public preview, but have c
 | Production control | Asset management functionality for the production floor execution interface | On by default |
 | Production control | Job search for the production floor execution interface | On by default |
 | Production control | Override default production reservation | On by default |
-| Production control | Saved views for production control | On by default |
 | Production control | Show full serial, batch, and license plate numbers in the production floor execution interface | On by default |
 | Sales and marketing | Sales order details performance enhancement | Generally available |
 | Sales and marketing | Sales quotation details performance enhancement | Generally available |
