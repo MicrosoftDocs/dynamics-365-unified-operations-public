@@ -1,112 +1,82 @@
+---
+# required metadata
+
+title: Enable Electronic reporting (ER) destinations to store Russian accounting documents
+description: This topic explains how to configure Electronic reporting (ER) destinations for post-processing Russian accounting documents that are generated in Microsoft
+Excel and Word.
+author: anasyash
+ms.date: 02/02/2022
+ms.topic: overview
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 2022-01-27
+ms.dyn365.ops.version: 10.0.25
+
+---
+
+
 # Enable Electronic reporting (ER) destinations to store Russian accounting documents
 
-This topic explains how to configure Electronic reporting (ER) destinations for
-post-processing of Russian accounting documents that are generated in Microsoft
-Excel and Word formats. You can set up the configuration to show a preview of
-the document on the screen, send the document to the printer, or save the file
-to SharePoint or Power BI. For information about Federal Accounting Standard
-27-2021 in Russia and Dynamics 365 Finance, see the white paper [Dynamics 365
-Finance and Supply Chain Management-Federal Accounting Standard 27-2021 in
-Russia](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=cc7a904b-d553-43b3-94fd-58fa02e4f702&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides).
+[!include [banner](../includes/banner.md)]
 
-To use this functionality, you must enable the **Allow using the ER framework
-for post-processing of reports in Excel and Word formats** feature in the
-**Feature management** workspace. This feature changes the behavior of several
-reports in the Russian localization that generate accounting documents in
-Microsoft Office formats (Excel and Word). When the feature is enabled, the ER
-framework is used for post-processing of generated documents, so that you can
-show the file, store the file in a configured destination, or show the report on
-the screen.
+This topic explains how to configure Electronic reporting (ER) destinations for post-processing of Russian accounting documents that are generated in Microsoft Excel and Word formats. You can set up the configuration to show a preview of the document on the screen, send the document to the printer, or save the file to SharePoint or Power BI. For information about Federal Accounting Standard 27-2021 in Russia and Dynamics 365 Finance, see the white paper [Dynamics 365 Finance and Supply Chain Management-Federal Accounting Standard 27-2021 in Russia](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=cc7a904b-d553-43b3-94fd-58fa02e4f702&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides).
 
-For several reports that you configure the **File** destination for in the Print
-management framework, the post-processing is activated when you print the report
-by using Print management.
+To use this functionality, you must enable the **Allow using the ER framework for post-processing of reports in Excel and Word formats** feature in the **Feature management** workspace. This feature changes the behavior of several reports in the Russian localization that generate accounting documents in Microsoft Office formats (Excel and Word). When the feature is enabled, the ER framework is used for post-processing of generated documents, so that you can show the file, store the file in a configured destination, or show the report on the screen.
 
-For several other reports that can't be configured in the Print management
-framework, the post-processing is activated when you print the report.
+For several reports that you configure the **File** destination for in the Print management framework, the post-processing is activated when you print the report by using Print management.
 
-The tables in the [Accounting documents](#accounting-documents) section of this
-topic list the reports that this feature is applicable to. The tables show the
-name of the file component that must configure for each report in ER
-destinations. They also indicate whether the **File** destination can be
-configured for the report in Print management.
+For several other reports that can't be configured in the Print management framework, the post-processing is activated when you print the report.
+
+The tables in the [Accounting documents](#accounting-documents) section of this topic list the reports that this feature is applicable to. The tables show the name of the file component that must configure for each report in ER destinations. They also indicate whether the **File** destination can be configured for the report in Print management.
 
 Follow these steps to configure ER destinations for accounting documents.
 
-1.  In the **Feature management** workspace, enable the **Allow using the ER
-    framework for post-processing of reports in Excel and Word formats**
-    feature.
+1. In the **Feature management** workspace, enable the **Allow using the ER framework for post-processing of reports in Excel and Word formats** feature.
+2. Import the latest versions of these ER configurations from the Global configuration repository:
 
-2.  Import the latest versions of these ER configurations from the
-    Global configuration repository:
+    - **Format for binary data pipeline**
+    - **Model for binary data pipeline**
+    - **Mapping for binary data pipeline**
 
-    -   **Format for binary data pipeline**
-    -   **Model for binary data pipeline**
-    -   **Mapping for binary data pipeline**
+    For downpoad instructions, see [Download ER configurations from the Global repository of Configuration service](h../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-    For downpoad instructions, see [Download ER configurations from the Global
-    repository of Configuration
-    service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
+3. Go to **Organization administration** \> **Document management** \> **Document management parameters**.
+4. On the **General** tab, on the **Electronic reporting** FastTab, in the **Accounting documents** field, select the **Format for binary data pipeline** format that you imported earlier.
+5. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting destination**.
+6. Select **New**.
+7. In the **Reference** field, select **Format for binary data pipeline**.
+8. In the **File destination** section, create lines for the required destinations for each accounting document that you generate. For more information about ER destinations, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
-3.  Go to **Organization administration \> Document management \> Document
-    management parameters**.
+    ![Table Description automatically generated.](media/77abc9530fdb36f13d24502c4f962aa2.png)
 
-4.  On the **General** tab, on the **Electronic reporting** FastTab, in the
-    **Accounting documents** field, select the **Format for binary data
-    pipeline** format that you imported earlier.
+> [!TIP]
+> If you don't want to get a zip folder together with the generated document, create a line for the **Zip** component, and leave the **Settings** field blank. If you don't create this line, you will always get a zip folder together with the document, in addition to the configured ER destinations for that document.
+>
+> To show the file on the screen, select the **Convert to PDF** checkbox for the line. If you don't select this checkbox, make sure that you've installed Office online. For more information, see [Use the PDF conversion option](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md#use-the-pdf-conversion-option).
 
-5.  Go to **Organization administration \> Electronic reporting \> Electronic
-    reporting destination**.
 
-6.  Select **New**.
+If you enable **File** destination setting to store the document as a file on SharePoint, each time that you generate a document, a new file will be created and stored.
 
-7.  In the **Reference** field, select **Format for binary data pipeline**.
+If you enable **Power BI** destination setting to store the document as a file on SharePoint, each time that you generate a document, a new file version of the same document will be created. For more information about this option, see [Configure Electronic reporting (ER) to pull data into Power BI](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md#schedule-execution-of-the-configured-er-format).
 
-8.  In the **File destination** section, create lines for the required
-    destinations for each accounting document that you generate. For more
-    information about ER destinations, see [Electronic reporting (ER)
-    destinations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations?toc=/dynamics365/commerce/toc.json).
-
-    ![Table Description automatically generated](media/77abc9530fdb36f13d24502c4f962aa2.png)
-
-    **Tips:**
-
--   If you don't want to get a zip folder together with the generated document,
-    create a line for the **Zip** component, and leave the **Settings** field
-    blank. If you don't create this line, you will always get a zip folder
-    together with the document, in addition to the configured ER destinations
-    for that document.
-
--   To show the file on the screen, select the **Convert to PDF** checkbox for
-    the line. If you don't select this checkbox, make sure that you've installed
-    Office online. For more information, see [Use the PDF conversion
-    option](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations?toc=/dynamics365/commerce/toc.json#use-the-pdf-conversion-option).
-
->   **Notes:**
-
--   If you enable **File** destination setting to store the document as a file
-    on SharePoint, each time that you generate a document, a new file will be
-    created and stored.
-
--   If you enable **Power BI** destination setting to store the document as a
-    file on SharePoint, each time that you generate a document, a new file
-    version of the same document will be created. For more information about
-    this option, see [Configure Electronic reporting (ER) to pull data into
-    Power
-    BI](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi#schedule-execution-of-the-configured-er-format).
-
--   If execution or storage of the document fails, you can find details about
-    the failure reasons on the **Electronic reporting jobs** page.
+If execution or storage of the document fails, you can find details about the failure reasons on the **Electronic reporting jobs** page.
 
 ## Accounting documents
 
 ### Petty cash
 
-For information about how to print these documents, see [Petty cash for Eastern
-Europe and
-Russia](https://docs.microsoft.com/dynamics365/finance/localizations/emea-petty-cash)
-and [Cash - Local primary forms and unified
-reports](https://docs.microsoft.com/dynamics365/finance/localizations/rus-local-primary-forms-and-unified-reports).
+For information about how to print these documents, see [Petty cash for Eastern Europe and Russia](emea-petty-cash.md) and [Cash - Local primary forms and unified reports](rus-local-primary-forms-and-unified-reports.md).
 
 | File component name | Description (EN)                             | Form code (EN) | Description (RU)                                             | Form code (RU) | File type | File destination |
 |---------------------|----------------------------------------------|----------------|--------------------------------------------------------------|----------------|-----------|------------------|
@@ -119,11 +89,7 @@ reports](https://docs.microsoft.com/dynamics365/finance/localizations/rus-local-
 
 ### Bank
 
-For information about how to print these documents, see [Set up and process
-payment orders for
-Russia](https://docs.microsoft.com/dynamics365/finance/localizations/rus-payment-order-settings-processing)
-and [Foreign currency sales, purchases, and
-transfers](https://docs.microsoft.com/dynamics365/finance/localizations/rus-currency-sale-purchase).
+For information about how to print these documents, see [Set up and process payment orders for Russia](rus-payment-order-settings-processing.md) and [Foreign currency sales, purchases, and transfers](rus-currency-sale-purchase.md).
 
 | File component name | Description (EN)             | Form code (EN) | Description (RU)            | Form code (RU) | File type | File destination |
 |---------------------|------------------------------|----------------|-----------------------------|----------------|-----------|------------------|
@@ -133,9 +99,7 @@ transfers](https://docs.microsoft.com/dynamics365/finance/localizations/rus-curr
 
 ### Fixed assets
 
-For information about how to print these documents, see [Unified printing forms
-for fixed assets
-(Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/printing-forms-fixed-assets).
+For information about how to print these documents, see [Unified printing forms for fixed assets (Russia)](printing-forms-fixed-assets.md).
 
 | File component name | Description (EN)                  | Form code (EN) | Description (RU)                                                                                      | Form code (RU) | File type | File destination |
 |---------------------|-----------------------------------|----------------|-------------------------------------------------------------------------------------------------------|----------------|-----------|------------------|
@@ -150,8 +114,7 @@ for fixed assets
 
 ### Fixed assets counting
 
-For information about how to print these documents, see [Fixed asset counting
-(Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-fixed-assets-counting).
+For information about how to print these documents, see [Fixed asset counting (Russia)](rus-fixed-assets-counting.md).
 
 | File component name | Description (EN)                        | Form code (EN) | Description (RU)                                                   | Form code (RU) | File type | File destination |
 |---------------------|-----------------------------------------|----------------|--------------------------------------------------------------------|----------------|-----------|------------------|
@@ -161,9 +124,7 @@ For information about how to print these documents, see [Fixed asset counting
 
 ### Not valuable fixed assets
 
-For information about how to print these documents, see [Not valuable fixed
-assets (NVFAs)
-(Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-not-valuable-assets).
+For information about how to print these documents, see [Not valuable fixed assets (NVFAs) (Russia)](rus-not-valuable-assets.md).
 
 | File component name | Description (EN)                       | Form code (EN) | Description (RU)                                                                  | Form code (RU) | File type | File destination |
 |---------------------|----------------------------------------|----------------|-----------------------------------------------------------------------------------|----------------|-----------|------------------|
@@ -174,8 +135,7 @@ assets (NVFAs)
 
 ### Advance holders
 
-For information about how to print these documents, see [Advance holders
-reports](https://docs.microsoft.com/dynamics365/finance/localizations/rus-local-management-reports-primary-forms).
+For information about how to print these documents, see [Advance holders reports](rus-local-management-reports-primary-forms.md).
 
 | File component name | Description (EN)    | Form code (EN) | Description (RU) | Form code (RU) | File type | File destination |
 |---------------------|---------------------|----------------|------------------|----------------|-----------|------------------|
@@ -183,8 +143,7 @@ reports](https://docs.microsoft.com/dynamics365/finance/localizations/rus-local-
 
 ### Deferrals
 
-For information about how to print these documents, see [Deferrals counting
-(Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-counting-deferrals).
+For information about how to print these documents, see [Deferrals counting (Russia)](rus-counting-deferrals.md).
 
 | File component name | Description (EN)                  | Form code (EN) | Description (RU)                             | Form code (RU) | File type | File destination |
 |---------------------|-----------------------------------|----------------|----------------------------------------------|----------------|-----------|------------------|
@@ -204,9 +163,7 @@ For information about how to print these documents, see [Deferrals counting
 
 ### Accounts receivable and Accounts payable
 
-For information about how to print these documents, see [Local reports and
-primary forms in Accounts receivable and Accounts
-payable](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-local-reports-primary-forms-ar-ap).
+For information about how to print these documents, see [Local reports and primary forms in Accounts receivable and Accounts payable](rus-local-reports-primary-forms-ar-ap.md).
 
 | File component name | Description (EN)                         | Form code (EN) | Description (RU)                                                                                     | Form code (RU) | File type | File destination |
 |---------------------|------------------------------------------|----------------|------------------------------------------------------------------------------------------------------|----------------|-----------|------------------|
@@ -231,8 +188,7 @@ payable](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-
 
 ### General ledger
 
-For information about how to print these documents, see [Account activity
-reports](https://docs.microsoft.com/dynamics365/finance/localizations/rus-account-activity-reports).
+For information about how to print these documents, see [Account activity reports](rus-account-activity-reports.md).
 
 | File component name           | Description (EN)                   | Description (RU)                       | File type | File destination |
 |-------------------------------|------------------------------------|----------------------------------------|-----------|------------------|
@@ -243,8 +199,7 @@ reports](https://docs.microsoft.com/dynamics365/finance/localizations/rus-accoun
 
 ### Inventory reports
 
-For information about how to print these documents, see [Inventory
-reports](https://docs.microsoft.com/dynamics365/finance/localizations/rus-inventory-reports).
+For information about how to print these documents, see [Inventory reports](rus-inventory-reports.md).
 
 | File component name | Description (EN)           | Description (RU)              | File type | File destination |
 |---------------------|----------------------------|-------------------------------|-----------|------------------|
