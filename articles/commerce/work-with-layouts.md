@@ -102,6 +102,17 @@ After you've previewed the changes to your preset layout, follow one of these st
 > [!WARNING]
 > Preset layouts can be referenced by multiple pages. When you publish a preset layout, be aware that you might affect the layout of multiple pages.
 
+## Rename a preset layout
+
+To rename a preset layout, follow these steps.
+
+* Go to **Layouts**, click on the name of the preset layout you want to rename
+* Start editing the preset layout by clicking **Edit**
+* Click pen-icon next to the layout in the property pane
+* Adjust the preset layout name as required
+* Confirm by clicking the check mark
+* Finish editing
+
 ## Additional resources
 
 [Templates and layouts overview](templates-layouts-overview.md)
