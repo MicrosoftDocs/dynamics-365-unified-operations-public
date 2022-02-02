@@ -101,6 +101,16 @@ To edit an audience, select the hyperlink for it on the **Audiences** tab, and t
 > [!NOTE]
 > Audiences are a site-level concept in Commerce site builder. You can share the same audience across multiple targets.
 
+### Rename an audience in the site builder
+
+To rename existing audience in Commerce site builder, follow these steps.
+
+1. In the left navigation pane, select **Audiences**.
+1. Locate and open the audience segment you want to rename
+1. Click **Edit**
+1. Click the pen-icon next to the name of the audience segment in the property pane
+1. Click **Finish editing**
+
 ## Targets
 
 A target is the user experience that is shown to members of one or more selected audiences. It can include variations of one or more modules on a page or in a fragment. 
