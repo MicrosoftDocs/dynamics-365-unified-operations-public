@@ -71,7 +71,7 @@ Export to Azure Data Lake is an add-on service that is included with your subscr
 
 Because Data Lake Storage Gen2 is in your own subscription, you must pay for data storage and input/output (I/O) costs that are incurred when data is read from and written to the data lake. You might also incur I/O costs because Finance and Operations apps write data to the data lake or update data in it. To help reduce intra-region I/O costs, Finance and Operations apps require that data lakes be provisioned in the same country or geographic region as the Finance and Operations environment.
 
-The FastTrack solution templates provide a tool that you can use to estimate the cost of storage, based on your business volumes in Finance and Operations apps. For more information, see [CostCalculator](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CostCalculator).
+The FastTrack solution templates provide a tool that you can use to estimate the cost of storage, based on your business volumes in Finance and Operations apps. For more information, see [FastTrack for Dynamics 365 - CostCalculator](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CostCalculator).
 
 ### I am currently using a BYOD service. Why should I transition to Data Lake?
 
@@ -87,7 +87,7 @@ If you're currently using BYOD for these types of scenarios, you can transition 
 - **The cost of data storage is reduced.** Data is stored in a data lake instead of in the SQL database that BYOD requires. Therefore, customers can use a storage medium that is much less expensive than Azure SQL Database to stage data.
 - **Existing downstream/consumption pipelines can be preserved.** Using [Azure Synapse Analytics serverless SQL pools](/azure/synapse-analytics/sql/on-demand-workspace-overview), you can create T-SQL view definitions over data in the lake and read data the same way as you read data from BYOD. Your data integration pipeline may be repointed to consume data in the lake without incurring major costs. 
 
-The BYOD solution exports entity data shapes from Finance and Operations apps into Azure SQL database. The **Export to Data Lake** feature lets you choose data using entity shapes or tables. Using data exported to the lake, you can re-create entity shapes in Synapse SQL serverless using [CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution).  
+The BYOD solution exports entity data shapes from Finance and Operations apps into Azure SQL database. The **Export to Data Lake** feature lets you choose data using entity shapes or tables. Using data exported to the lake, you can re-create entity shapes in Synapse SQL serverless using [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution).  
 
 ### How is the data stored in the lake?
 Data in the lake is stored as CSV files in a folder structure maintained by the system. The folder structure is based on data organization in Finance and Operations apps. For an example, you will see folders with names such as **Finance**, **Supply Chain**, **Commerce**, and within these folders you will see sub-folders with names such as **Accounts Receivable** or **Accounts Payable**. Further down the hierarchy, you will see folders that contain the actual data for each table. Within a table-level folder, you will see one or more CSV files as well as metadata files that describe the format of the data. 
@@ -99,9 +99,9 @@ When the data structures change in Finance and Operations apps, for an example, 
 ### How can I consume data in the lake?
 You can work with data in the data lake using a variety of tools from Microsoft, as well as third parties. Most tools can consume data in the lake stored as CSV files.  
 
-By using Synapse SQL Serverless, you can consume data in the lake using Transact-SQL language (T-SQL). T-SQL language is widely supported by many tools. You can define a Synapse workspace over the data in the lake and use T-SQL, Spark, or Synapse Pipelines as if you are consuming data from a database. To create a Synapse workspace over your data in the lake, you can use [CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution).
+By using Synapse SQL Serverless, you can consume data in the lake using Transact-SQL language (T-SQL). T-SQL language is widely supported by many tools. You can define a Synapse workspace over the data in the lake and use T-SQL, Spark, or Synapse Pipelines as if you are consuming data from a database. To create a Synapse workspace over your data in the lake, you can use [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution).
 
-You can also use ready-made solution templates to copy data from the lake into a SQL Server data warehouse or to another destination. For more information, see [SynapseToSQL solution template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF).
+You can also use ready-made solution templates to copy data from the lake into a SQL Server data warehouse or to another destination. For more information, see [FastTrack for Dynamics 365 - SynapseToSQL_ADF](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/SynapseToSQL_ADF).
 
 ### How often is data in the data lake updated?
 
@@ -119,7 +119,7 @@ The Export to Data Lake feature is available only in the United States, Canada, 
 
 The Export to Data Lake feature isn't available in Tier-1 (developer) environments. To enable this feature, you must have a cloud-based Tier-2 or higher sandbox environment.
 
-In your Tier-1 (developer) environment, you can use a prototype or plan the feature implementation by using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools let you export data from your Tier-1 or sandbox environment into a storage account in the same format that the feature exports in.
+In your Tier-1 (developer) environment, you can use a prototype or plan the feature implementation by using [FastTrack for Dynamics 365 - GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools let you export data from your Tier-1 or sandbox environment into a storage account in the same format that the feature exports in.
 
 ### How can I stay in touch about upcoming features?
 
