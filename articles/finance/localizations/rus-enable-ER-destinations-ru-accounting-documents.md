@@ -1,8 +1,4 @@
----
-title: >-
-  Enable Electronic reporting (ER) destinations to store Russian accounting
-  documents
----
+# Enable Electronic reporting (ER) destinations to store Russian accounting documents
 
 This topic explains how to configure Electronic reporting (ER) destinations for
 post-processing of Russian accounting documents that are generated in Microsoft
@@ -41,34 +37,32 @@ Follow these steps to configure ER destinations for accounting documents.
     framework for post-processing of reports in Excel and Word formats**
     feature.
 
-2.  Import the following versions or later of these ER configurations from the
+2.  Import the latest versions of these ER configurations from the
     Global configuration repository:
 
--   **Format for binary data pipeline** version 2.21
-
--   **Model for binary data pipeline** version 2
-
--   **Mapping for binary data pipeline** version 2.4
+    -   **Format for binary data pipeline**
+    -   **Model for binary data pipeline**
+    -   **Mapping for binary data pipeline**
 
     For downpoad instructions, see [Download ER configurations from the Global
     repository of Configuration
     service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
 
-1.  Go to **Organization administration \> Document management \> Document
+3.  Go to **Organization administration \> Document management \> Document
     management parameters**.
 
-2.  On the **General** tab, on the **Electronic reporting** FastTab, in the
+4.  On the **General** tab, on the **Electronic reporting** FastTab, in the
     **Accounting documents** field, select the **Format for binary data
     pipeline** format that you imported earlier.
 
-3.  Go to **Organization administration \> Electronic reporting \> Electronic
+5.  Go to **Organization administration \> Electronic reporting \> Electronic
     reporting destination**.
 
-4.  Select **New**.
+6.  Select **New**.
 
-5.  In the **Reference** field, select **Format for binary data pipeline**.
+7.  In the **Reference** field, select **Format for binary data pipeline**.
 
-6.  In the **File destination** section, create lines for the required
+8.  In the **File destination** section, create lines for the required
     destinations for each accounting document that you generate. For more
     information about ER destinations, see [Electronic reporting (ER)
     destinations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations?toc=/dynamics365/commerce/toc.json).
