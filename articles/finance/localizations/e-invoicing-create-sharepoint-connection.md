@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-The Electronic invoicing service can read files from Microsoft SharePoint folders and upload files to SharePoint. To ensure that Electronic invoicing can access a specific SharePoint site, you must provide the site credentials to the Electronic invoicing service. Additionally, to ensure that the credentials are securely stored, don't provide them directly. Instead, store them in an Azure key vault, and provide an Azure Key Vault secret instead.
+The Electronic invoicing service can read files from Microsoft SharePoint folders and upload files to SharePoint. To ensure that Electronic invoicing can access a specific SharePoint site, you must provide the site credentials to the Electronic invoicing service. Additionally, to ensure that the credentials are securely stored, don't provide them directly. Instead, store them in an Azure key vault, and provide an Azure Key Vault secret.
 
 ## Grant access to a SharePoint folder
 
