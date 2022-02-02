@@ -395,7 +395,7 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 ## Update other certificates as needed
 
-1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu12.md#setupsql).
+1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu41.md#setupsql).
 
 2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.
 
