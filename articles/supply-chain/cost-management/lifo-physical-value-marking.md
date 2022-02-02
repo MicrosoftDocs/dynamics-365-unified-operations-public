@@ -7,11 +7,11 @@ ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: 55021
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 55021
 ---
 
 # LIFO with physical value and marking
