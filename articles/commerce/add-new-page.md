@@ -40,7 +40,7 @@ You can use either a template or a layout for your new page. For more informatio
 
 ## Page name
 
-The page name must be unique to your page. It should be descriptive, so that you can easily find it and other people know what the page is intended for. Choose the page name carefully, because it can't be changed later.
+The page name must be unique to your page. It should be descriptive, so that you can easily find it and other people know what the page is intended for. You can rename your page later by editing it and clicking the pen-icon next to the page name in the property pane.
 
 ## Page URL
 
