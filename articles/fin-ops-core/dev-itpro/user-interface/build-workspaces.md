@@ -96,7 +96,7 @@ This pattern is the primary operational workspace pattern and should be applied 
 > 
 #### Form Part Section List
 
-This pattern is used for **Form Part** forms containing a list. These lists are referenced within the Section Tabbed List TabPage in the Operational Workspace pattern.
+This pattern is used for **Form Part** forms containing a list. These lists are referenced within the Section Tabbed List TabPage in the Operational Workspace pattern. Any remaining uses of the deprecated **Hub Part Grid** pattern should migrate to the **Form Part Section List** pattern.  
 
 - Design
     - Header Group (Group) \[0..1\]
@@ -117,7 +117,7 @@ This subpattern is referenced in the Operational Workspace pattern. It allows fo
 
 #### Section Tiles
 
-This subpattern is referenced in the Operational Workspace pattern. It allows for both tiles and charts to be defined in any order. Tiles are defined with TileButton controls, and charts are defined with Form Part controls. A chart Form Part should have dimensions that match those of a normal tile, to ensure the chart flows correctly with the tiles displayed.
+This subpattern is referenced in the Operational Workspace pattern. It allows for both tiles and charts to be defined in any order. Tiles are defined with TileButton controls, and charts are defined with Form Part controls. A chart Form Part should have dimensions that match those of a normal tile, to ensure the chart flows correctly with the tiles displayed. Any remaining uses of the deprecated **Tiles** subpattern should migrate to **Section Tiles** subpattern. 
 
 #### Section Tabbed List
 
@@ -137,7 +137,7 @@ This subpattern is referenced in the Operational Workspace. It allows for up to 
 
 #### Section-Related Links
 
-This subpattern is referenced in the Operational Workspace pattern. It allows for a series of links, with one level of nesting permitted. It requires the following structure:
+This subpattern is referenced in the Operational Workspace pattern. It allows for a series of links, with one level of nesting permitted and following the structure below. Any remaining uses of the deprecated **Hub Part Links** subpattern should migrate to **Section Related Links** subpattern.
 
 - Tab page (TabPage)
     - Menu Function Button (MenuFunctionButton) \[0..\*\]
@@ -146,7 +146,7 @@ This subpattern is referenced in the Operational Workspace pattern. It allows fo
 
 #### Filters and Toolbar – Inline
 
-This subpattern is referenced in the Form Part Section List pattern. It allows for some filters and a toolbar, all on the same line. It requires the following structure:
+This subpattern is referenced by the **Form Part Section List** pattern. It allows for some filters and a toolbar, all on the same line. It requires the following structure:
 
 - Group (Group)
     - Filter Group (Group) \[0..1\]
@@ -156,7 +156,7 @@ This subpattern is referenced in the Form Part Section List pattern. It allows f
 
 #### Filters and Toolbar - Stacked
 
-This subpattern is referenced in the Form Part Section List pattern. It allows for some filter fields on one line, and a toolbar on a line below those filters. This pattern is generally only used over simple lists. It requires the following structure:
+This subpattern is referenced by the **Form Part Section List** pattern. It allows for some filter fields on one line, and a toolbar on a line below those filters. This pattern is generally only used over simple lists. It requires the following structure:
 
 - Group (Group)
     - Filter Group (Group) \[0..1\]
