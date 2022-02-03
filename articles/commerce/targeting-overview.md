@@ -106,7 +106,7 @@ To edit an audience, select the hyperlink for it on the **Audiences** tab, and t
 To rename an existing audience in Commerce site builder, follow these steps.
 
 1. In the left navigation pane, select **Audiences**.
-1. Select the name of the audience segment you want to rename to open it.
+1. Select the name of the audience segment that you want to rename.
 1. Select **Edit** to start editing the audience.
 1. In the audience properties pane, select the pen symbol next to the audience name.
 1. Edit the audience name as needed.
