@@ -4,7 +4,7 @@
 title: Assign users to security roles
 description: To access Finance and Operations apps, users must be assigned to security roles. 
 author: Peakerbl
-ms.date: 05/06/2020
+ms.date: 02/03/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -63,10 +63,14 @@ Users who are manually assigned to security roles must also be manually removed 
 Users who are manually assigned to security roles must also be manually removed by the administrator. These users are not removed from roles by rules for automatic role assignment.
 
 1. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
-2. To remove one user. In the tree, select a role, and in the **Users assigned to role** grid, select the user that should be removed.
-3. Click select **Remove** and the user is removed from the role.
-4. To remove multiple users. In the tree, select a role, and in the **Users assigned to role** menu, select **Manually assign / exclude users**.
-6. In the **Assign users to or exclude users from role**, users that have not been assigned the role are listed with the **Assignment mode** set to **None**. Select the users that should be assigned the role.
-7. On the **Action pane**, select **Exclude from role**. The **Assignment mode** is updated to **Manual** and the users now excluded from the role.
+2. To remove one user, follow these steps:
+   1. In the tree, select a role. 
+   2. In the **Users assigned to role** grid, select the user that should be removed.
+   3. Select **Remove** and the user is removed from the role.
+3. To remove multiple users, follow these steps:
+   1. In the tree, select a role. 
+   2. In the **Users assigned to role** menu, select **Manually assign / exclude users**.
+   3. In the **Assign users to or exclude users from role** area, users that have not been assigned to the role are listed with the **Assignment mode** set to **None**. Select the users that should be assigned the role.
+   4. On the **Action pane**, select **Exclude from role**. The **Assignment mode** is updated to **Manual** and the users now excluded from the role.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
