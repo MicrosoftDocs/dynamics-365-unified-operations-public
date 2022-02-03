@@ -65,12 +65,12 @@ Users who are manually assigned to security roles must also be manually removed 
 1. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
 2. To remove one user, follow these steps:
    1. In the tree, select a role. 
-   2. In the **Users assigned to role** grid, select the user that should be removed.
+   2. In the **Users assigned to role** area, select the user that should be removed.
    3. Select **Remove** and the user is removed from the role.
 3. To remove multiple users, follow these steps:
    1. In the tree, select a role. 
-   2. In the **Users assigned to role** menu, select **Manually assign / exclude users**.
-   3. In the **Assign users to or exclude users from role** area, users that have not been assigned to the role are listed with the **Assignment mode** set to **None**. Select the users that should be assigned the role.
-   4. On the **Action pane**, select **Exclude from role**. The **Assignment mode** is updated to **Manual** and the users now excluded from the role.
+   2. In the **Users assigned to role** area, select **Manually assign / exclude users**.
+   3. In the **Assign users to or exclude users from role** page, users that have not been assigned to the role have **None** in the **Assignment mode** column. Select the users that should be assigned the role.
+   4. On the **Action pane**, select **Exclude from role**. The **Assignment mode** column is now updated to **Manual** and the users are now excluded from the role.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
