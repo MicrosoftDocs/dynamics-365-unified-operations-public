@@ -106,7 +106,7 @@ After you've previewed the changes to your preset layout, follow one of these st
 
 To rename a preset layout in site builder, follow these steps.
 
-1. Go to **Layouts**.
+1. In the left navigation pane, select **Layouts**.
 1. Select the layout name of the layout you want to rename to open it.
 1. Select **Edit** to start editing the layout.
 1. In the layout properties pane, select the pen symbol next to the layout name.
