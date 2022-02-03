@@ -85,14 +85,16 @@ The new file format configurations must be shared with the Microsoft domain befo
 
 ## Create a feature that is based on an existing feature
 
-1. On the **Electronic invoicing features** page, in the **Configuration provider** field, make sure that your active configuration provider is selected. In this way, the new electronic invoicing feature will appear in the list after it's created. If your active configuration provider isn't selected, the new feature will be filtered out of the list.
-2. Select **Add**, and then, in the drop-down dialog box, select the **Based on existing version** option.
-3. Enter a name and description for the feature.
-4. In the **Base feature** field, select the base version of the feature.
-5. Select **Create feature**. The feature is created and has a status of **Draft**.
-6. Review the feature components to determine whether updates are required:
+1. Sign in to your RCS account.
+2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
+3. In the **Configuration provider** field, make sure that your active configuration provider is selected. In this way, the new electronic invoicing feature will appear in the list after it's created. If your active configuration provider isn't selected, the new feature will be filtered out of the list.
+4. Select **Add**, and then, in the drop-down dialog box, select the **Based on existing version** option.
+5. Enter a name and description for the feature.
+6. In the **Base feature** field, select the base version of the feature.
+7. Select **Create feature**. The feature is created and has a status of **Draft**.
+8. Review the feature components to determine whether updates are required:
 
     - Review the configurations, in case you must customize the ER formats and their binding with format mappings for the feature version.
     - Review the setup, in case you must customize the **Actions** tab, **Applicability rules** tab, or **Variables** tab for the feature version.
 
-7. Complete the setup, and deploy the electronic invoicing feature to the service environment. For more information, see [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature).
+9. Complete the setup, and deploy the electronic invoicing feature to the service environment. For more information, see [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature).
