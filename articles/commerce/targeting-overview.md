@@ -4,7 +4,7 @@
 title: Device, market, and geolocation targeting
 description: This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
 author:  sushma-rao 
-ms.date: 07/30/2021
+ms.date: 02/03/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -101,15 +101,17 @@ To edit an audience, select the hyperlink for it on the **Audiences** tab, and t
 > [!NOTE]
 > Audiences are a site-level concept in Commerce site builder. You can share the same audience across multiple targets.
 
-### Rename an audience in the site builder
+### Rename an audience in site builder
 
-To rename existing audience in Commerce site builder, follow these steps.
+To rename an existing audience in Commerce site builder, follow these steps.
 
 1. In the left navigation pane, select **Audiences**.
-1. Locate and open the audience segment you want to rename
-1. Click **Edit**
-1. Click the pen-icon next to the name of the audience segment in the property pane
-1. Click **Finish editing**
+1. Select the name of the audience segment you want to rename to open it.
+1. Select **Edit** to start editing the audience.
+1. In the audience properties pane, select the pen symbol next to the audience name.Click the pen-icon next to the name of the audience segment in the property pane
+1. Edit the audience name as needed.
+1. Select the check mark to confirm the name change.
+1. Select **Finish editing**.
 
 ## Targets
 
