@@ -16,20 +16,11 @@ ms.dyn365.ops.version: 10.0.25
 # Run custom X++ scripts with zero downtime
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This feature lets you upload and run deployable packages that contain custom X++ scripts without having to go through Microsoft Dynamics Lifecycle Services (LCS) or suspend your system. Therefore, you can correct minor data inconsistencies without causing any disruptive downtime.
 
 The benefit of using an X++ script to correct minor data inconsistences is that the system will automatically adjust all related tables as required when it runs the script. This approach helps ensure the integrity of the correction and helps minimize the risk of introducing new inconsistencies.
-
-All deployable packages that are uploaded into the system go through a mandatory workflow. As a safety precaution, and to help ensure segregation of duties, the user who uploads a deployable package isn't allowed to approve it for the next steps in the workflow. Another user must approve it. However, after the package is approved, the user who uploaded it will be allowed to complete the remaining steps.
-
-The system requires that all deployable packages go through a test run. Before the script will be allowed to run on production data, a user must validate that the output is correct by selecting **Accept test log**. If the output isn't correct, the user must mark the package as failed by selecting **Abandon**. In this case, the script won't be allowed to run on production data.
-
-Every uploaded package is saved in the system and goes through a defined workflow of events. For each event, the system keeps a log that includes a timestamp and the identity of the person who performed the event. In this way, the system ensures that there is an audit trail.
-
-As the following illustration shows, the system provides details about how each deployable package was run in X++ and which entities were touched.
-
-![Script details page.](media/script-details.png "Script details page")
 
 > [!IMPORTANT]
 > This feature is intended for correction of minor data inconsistencies only. It must not be used for the following purposes or any other purpose:
@@ -40,6 +31,16 @@ As the following illustration shows, the system provides details about how each 
 > - Correction of data that can be corrected through other means, such as regular business processes, data consistency tools, or other self-service tools
 >
 > The feature lets authorized users change entities and their records directly, without having to run the business logic that is associated with those entities. These changes can cause data integrity issues. Therefore, your organization might require that you obtain approval and signoff from internal and external auditors (or other equivalent stakeholders) before and/or after you run a script. For compliance reasons, changes that affect some characteristics might also have to be disclosed in external reports (such as financial statements) or reported to government authorities. Your organization is solely responsible for any changes that are made to its data via this feature, any approval and signoff or disclosure of those changes, and compliance with applicable laws. You bear all the risks of using this feature.
+
+All deployable packages that are uploaded into the system go through a mandatory workflow. As a safety precaution, and to help ensure segregation of duties, the user who uploads a deployable package isn't allowed to approve it for the next steps in the workflow. Another user must approve it. However, after the package is approved, the user who uploaded it will be allowed to complete the remaining steps.
+
+The system requires that all deployable packages go through a test run. Before the script will be allowed to run on production data, a user must validate that the output is correct by selecting **Accept test log**. If the output isn't correct, the user must mark the package as failed by selecting **Abandon**. In this case, the script won't be allowed to run on production data.
+
+Every uploaded package is saved in the system and goes through a defined workflow of events. For each event, the system keeps a log that includes a timestamp and the identity of the person who performed the event. In this way, the system ensures that there is an audit trail.
+
+As the following illustration shows, the system provides details about how each deployable package was run in X++ and which entities were touched.
+
+![Script details page.](media/script-details.png "Script details page")
 
 ## Assign duties to users to control access
 
