@@ -82,7 +82,7 @@ A typical practice is to set a default theme for all pages that use a preset lay
 To set or change the theme for all child pages that use your preset layout, follow these steps.
 
 1. In the layout editor, in the outline tree on the left, select the page container module. (Typically, this module is the second node and is named **Default page**.)
-1. In the property pane on the right, in the **Theme** field, select a theme.
+1. In the **Theme** field of the properties pane on the right, select a theme.
 
 ## Save, check in, preview, and publish a preset layout
 
