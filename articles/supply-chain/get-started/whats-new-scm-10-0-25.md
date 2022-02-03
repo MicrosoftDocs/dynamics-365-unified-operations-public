@@ -72,7 +72,7 @@ The table also lists features that were previously in public preview, but have c
 | Cost management | Inventory value report data clean up | On by default |
 | Cost management | Inventory value report storage | On by default |
 | Cost management | Show inventory closing log in grid | On by default |
-| Engineering change management | Enable change management on existing products | On by default |
+| Engineering change management | Enable change management on existing products | On by default <!-- KFM: continue here --> |
 | Engineering change management | Engineering Change Management | On by default |
 | Engineering change management | Engineering notifications for production | On by default |
 | Engineering change management | Improved attribute inheritance for Engineering Change Management | On by default |
@@ -134,6 +134,7 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | Cross docking templates with location directives | Generally available |
 | Warehouse management | Disable expected receipts from quality orders that sample blocked inventory | Generally available |
 | Warehouse management | License plate receiving history | Generally available |
+| Warehouse management | Material handling equipment interface | Generally available |
 | Warehouse management | Round quantities down to nearest sales unit on release to warehouse | Generally available |
 | Warehouse management | Scale unit support for warehouse app work lists | Generally available |
 | Warehouse management | Shipment wave label details | Generally available |

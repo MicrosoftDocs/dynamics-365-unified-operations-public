@@ -34,10 +34,10 @@ When you enable change management for an existing product, you can create versio
 
 ## Turn on the feature in your system
 
-To use this capability, you must complete the following tasks:
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Administrators can use the following steps to disable or re-enable the feature as needed.
 
-1. Enable the Engineering change management feature and its configuration key as described in [Engineering change management overview](product-engineering-overview.md).
-1. Turn on the *Enable change management on existing products* feature in feature management. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+1. Enable or disable the Engineering change management feature and its configuration key as described in [Engineering change management overview](product-engineering-overview.md).
+1. Turn on or off the *Enable change management on existing products* feature in feature management. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Restrictions and limitations
 
