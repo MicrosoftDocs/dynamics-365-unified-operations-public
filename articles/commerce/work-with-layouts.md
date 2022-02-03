@@ -4,7 +4,7 @@
 title: Work with preset layouts
 description: This topic describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -95,23 +95,24 @@ To preview your changes, either open an existing page that uses the preset layou
 
 After you've previewed the changes to your preset layout, follow one of these steps to publish the layout to your live site:
 
-* Go to **Layouts**, select the layout, and then select **Publish**.
-* Select the layout name to open the layout editor, and then select **Publish**.
-* Publish a page that references the unpublished layout. The layout will automatically be published.
+1. Go to **Layouts**, select the layout, and then select **Publish**.
+1. Select the layout name to open the layout editor, and then select **Publish**.
+1. Publish a page that references the unpublished layout. The layout will automatically be published.
 
 > [!WARNING]
 > Preset layouts can be referenced by multiple pages. When you publish a preset layout, be aware that you might affect the layout of multiple pages.
 
 ## Rename a preset layout
 
-To rename a preset layout, follow these steps.
+To rename a preset layout in site builder, follow these steps.
 
-* Go to **Layouts**, click on the name of the preset layout you want to rename
-* Start editing the preset layout by clicking **Edit**
-* Click pen-icon next to the layout in the property pane
-* Adjust the preset layout name as required
-* Confirm by clicking the check mark
-* Finish editing
+1. Go to **Layouts**.
+1. Select the layout name of the layout you want to rename to open it.
+1. Select **Edit** to start editing the layout.
+1. In the layout properties pane, select the pen symbol next to the layout name.
+1. Edit the layout name as needed.
+1. Select the check mark to confirm the name change.
+1. Select **Finish editing**.
 
 ## Additional resources
 
