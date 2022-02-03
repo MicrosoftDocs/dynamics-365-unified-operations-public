@@ -48,11 +48,7 @@ The rest of this topic will focus on the Operational workspace patterns.
 
 ### Operational workspace
 
-[![Wireframe for operational workspace.](./media/workspace1.png)](./media/workspace1.png)
-
-### Tabbed workspace
-
-[![Wireframe for tabbed workspace.](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
+[![Wireframe for operational workspace.](./media/verticalOperationalWorkspace.png)](./media/verticalOperationalWorkspace.png)
 
 ## Pattern changes for Finance and Operations
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
@@ -136,27 +132,58 @@ Form: **FMClerkWorkspace**
 [![Operational workspace example.](./media/workspace3.png)](./media/workspace3.png)
 
 ## Migration of workspaces to be vertical 
-Starting with version 10.0.25, the workspace form patterns and related subpatterns have been adjusted so that content sections stack vertically and are collapsible. The out-of-the-box workspaces were migrated to the latest visuals; however, any other workspaces will need to follow these steps to switch to be vertical in orientation and maintain visual consistency with the rest of the application.  
+Starting with version 10.0.25, the workspace form patterns and related subpatterns have been adjusted so that content sections stack vertically and are collapsible. The out-of-the-box workspaces were migrated to the latest visuals; however, other workspaces will need to follow these steps to change to a vertical orientation and maintain visual consistency with the rest of the application.  
 
 ### Mass updating forms to follow the latest pattern
+For forms that are following the **Operational workspace** form pattern and its related subpatterns, the fastest way to migrate your workspaces and associated subforms is to perform the following two steps: 
 
-- BP fixer script
-- PowerShell script to iterate over models if you have multiple
-- Still need to set some properties manually for now (on workspace - FrameOptionBUtton=None on link groups, FormPart=STA width)
+1.  Run the BP fixer tool from the command line to ensure all forms in the targeted model/module are on the latest pattern version.  
+
+    ```c:\AOSService\PackagesLocalDirectory\bin\xppbp.exe -m=<metadataPath> -mu=<moduleName> -me=<modelName> -rules=BPUpgradeMetadataFormPatternVersionNotActive -x=<logFilePath> form:* -packagesRoot=<packagePath> -runfixers```
+
+    As an example, for the Application Suite model, the command would be similar to this: 
+
+    ```c:\AOSService\PackagesLocalDirectory\bin\xppbp.exe -m=<metadataPath> -mu=ApplicationSuite -me=Foundation -rules=BPUpgradeMetadataFormPatternVersionNotActive -x=c:\users\<user>\downloads\bplog.txt form:* -packagesRoot=c:\AOSService\PackagesLocalDirectory -runfixers```
+
+    > [!NOTE]
+    > If you need to run this on multiple models, you may consider writing a PowerShell script to iterate over a list of your models/modules
+
+2.  After the BP fixer tool completes, there are a small number of properties that currently need to be set manually. 
+    -  For any **Group** control in the link section(s) of the workspace, set the **FrameOptionButton** property to **Hide** to suppress the ability to collapse the section. This will also remove the visual line under that section. 
+    -  For any **FormPartControl** control in the list section(s) of the workspace, set the **Width mode** property to **SizeToAvailable**. This will allow the subform to span the full width of the page.  
+
+3.  Perform a [fit and finish review](#fit-and-finish-reviews) of the workspace to optimize it for a vertical orientation
 
 ### Manually updating a form 
-- If you have a small number of workspaces that follow the pattern or you have a workspace that doesn't utilize the operational workspace pattern
-- Remove/reapply form pattern and all subpatterns to get the latest version
-- Make same manual metadata tweaks
-- If not following the pattern, need to simulate the important parts of what the pattern is doing (panorama -> fast tab, extended style -> simple fast tab, fast tab expanded=yes, 
+If you have workspaces that don't use a pattern or they utilize other workspace patterns, you will need manually migrate these workspaces to be vertical in nature. You can also choose this manual option if you have a small number of workspaces that follow the Operational workspace pattern.  
+
+To manually migrate a workspace, follow these steps: 
+
+1.  If a form is using the deprecated **Workspace** pattern, remove this pattern and apply the **Operational workspace** pattern instead. Because the Operational workspace pattern uses a different set of subpatterns, you will need to remove the currently used subpatterns and replace them with their counterparts (i.e. replace **HubTiles** with the **SectionTiles** subpattern, replace **HubPartLinks** with the **SectionRelatedLinks** subpattern). If moving to the Operational workspace pattern is not possible, you may need to opt for a Custom pattern
+
+2.  Ensure all workspace related patterns are up-to-date. This applies both to the form pattern and subpatterns on the workspace form itself and also any forms referenced by Form Part controls on the workspace form. You should also consider migrating any subforms using the **HubPartGrid** pattern to instead use the **FormPartSectionList** pattern. To ensure a pattern or subpattern is using the latest version, remove the pattern from the container and then reapply it.   
+
+3.  For forms not following the Operational workspace pattern, make the following manual metadata adjustments to any tab control with a Style of **Panorama** on the workspace form, 
+    -  Adjust the **Style** property to **FastTabs**
+    -  Set the **ExtendedStyle** property to **tab_simpleFastTab**. This will give the proper visual styling and will hide any summary fields. Note that this extended style can only be used on forms with a style of Workspace.
+    -  For each child tab page, adjust the **FastTabExpanded** property to **Yes**. 
+ 
+4.  Perform the same metadata adjustments noted in step #2 of the [Mass updating forms to follow the latest pattern](#mass-updating-forms-to-follow-the-latest-pattern) section.  
+5.  If you have tile or link sections that aren't using the prescribed patterns, you may need to make additional metadata adjustments to simulate the changes in those patterns.  
 
 ### Updating form extensions
-- Any form extension that adds content into a workspace may also need to be minorly tweaked. The metadata properties set by the new version of the pattern will not take effect (and could cause compile errors) until you open and save the extension. Also, if your form extension is adding new lists via form parts to the workspace or groups of links in teh links section you will need to manually adjust the metadata properties there (frameoptionbutton, widthmode)
+Any form extension that adds content into a workspace may also need to be minorly tweaked. If the base workspace has moved to a newer version of a pattern, the controls added to the related form extensions will not automatically get the metadata changes set by the new version of the pattern. If compilation errors occur for this reason, simply open the form extension and save it. Additionally, if your form extension is adding new lists via form parts to the workspace or groups of links in the links section of the workspace, you will need to manually adjust the metadata properties in the form extension as described in step #2 of the [Mass updating forms to follow the latest pattern](#mass-updating-forms-to-follow-the-latest-pattern) section)
 
-## Fit and finish reviews
-- Tiles
-- Simple lists 
-- Card lists
+### Fit and finish reviews
+After performing the metadata migration to a vertical workspace, you will want to do a fit and finish review of the workspace to optimize it for a vertical orientation. The primary areas of focus are the following: 
+ 
+-  **Tiles**: With the new workspace layout, tiles now lay out horizontally from left to right and will wrap automatically when there is not enough space for another tile. This layout means that mixing tiles (or other elements) of various sizes may result in less than ideal visuals. The recommendation is to make all your tiles have the same height, and ideally all utilize the same size.  
+
+-  **Simple lists**: List grids do not utilize the full width of the page and so will not be ideal for a vertical layout. When these appear by themselves in the list section, you should consider switching these to be a tabular grid (in which case more columns may need to be added to the grid) or a card list (which can layout horizontally and utilize the page space more optimally).
+
+-  **Card lists**: Card lists can be adjusted to flow horizontally to better utilize the screen space in a vertical layout. To change a card list to flow horizontally and wrap to a new line as needed, the following adjustments should be made to the form with the card list:  
+    1.  Opt the form out of the new grid control, since only card lists with the legacy grid support a horizontal flow. This opt out will apply to all grids on the form; however, as most lists in a workspace are on a dedicated form part, this will typically only impact the desired card list. See the [Opting out individual pages from using the new grid](../../fin-ops/get-started/grid-capabilities.md#developer-opting-out-individual-pages-from-using-the-new-grid) section for detailed instructions.
+    2.  Ensure the Grid control control sets **Style=List**, **ExtendedStyle=cardList**, **VisibleColumnsMode=Fixed**, and **VisibleColumns=0**. Note you may have to change the grid style to Auto temporarily to make the modifications for the Visible columns properties. 
 
 ## Frequently asked questions
 
