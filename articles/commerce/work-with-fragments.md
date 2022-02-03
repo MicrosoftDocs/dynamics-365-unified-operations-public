@@ -128,6 +128,16 @@ You can also edit a fragment by selecting it on a page, in a template, or in a p
 
 ### Rename a fragment
 
+To rename an existing fragment in site builder, follow these steps.
+
+1. In the left navigation pane, select **Fragments**.
+1. Select the fragment name of the fragment you want to rename to open it.
+1. Select **Edit** to start editing the fragment. Note that you cannot edit a fragment if someone else is already editing the fragment.
+1. In the fragment properties pane, select the pen symbol next to the fragment name.
+1. Edit the fragment name as needed.
+1. Select the check mark to confirm the name change.
+1. Select **Finish editing**.
+
 You can rename a fragment after it is created by editing it and then selecting the pen symbol next to the fragment name in the property pane.
 
 ## Additional resources
