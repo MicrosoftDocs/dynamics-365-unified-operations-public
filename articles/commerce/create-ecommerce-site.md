@@ -58,8 +58,8 @@ After your site is created, you can verify that it is associated with your onlin
 
 To rename your site in site builder, follow these steps.
 
-1. To open site list view, select **Site switcher** at the top right and then select **Manage sites** . 
-1. Select the checkbox next to site you want to rename, and then select **Rename** on the command bar.
+1. To open site list view, select **Site switcher** in the upper-right corner, and then select **Manage sites** . 
+1. Select the check box next to the site that you want to rename, and then select **Rename** on the command bar.
 1. In the **New site name** dialog box, enter the new site name, and then select **OK**. The site list will update to show the site's new name.
 
 ## Additional resources
