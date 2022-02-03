@@ -4045,7 +4045,7 @@
           - name: Create configurations to import data from an external XML file
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
           - name: Import data from manually selected files in batch mode
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
+            href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
         - name: Configure data import in batch mode from SharePoint located files
           href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
         - name: Import files in XML format
