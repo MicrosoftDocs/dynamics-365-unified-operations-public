@@ -147,7 +147,7 @@ After you've previewed the changes to your template, follow one of these steps t
 
 To rename an existing template in site builder, follow these steps.
 
-1. Go to **Templates**.
+1. In the left navigation pane, select **Templates**.
 1. Select the template name of the template you want to rename to open it.
 1. Select **Edit** to start editing the template. Note that you cannot edit a template if someone else is already editing the template.
 1. In the template properties pane, select the pen symbol next to the template name.
