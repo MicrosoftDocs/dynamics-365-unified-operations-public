@@ -4,7 +4,7 @@
 title: Work with fragments
 description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -128,7 +128,7 @@ You can also edit a fragment by selecting it on a page, in a template, or in a p
 
 ### Rename a fragment
 
-Fragments can be renamed later by editing them and clicking the small pen-icon next to the fragment name in the property pane.
+You can rename a fragment after it is created by editing it and then selecting the pen symbol next to the fragment name in the property pane.
 
 ## Additional resources
 
