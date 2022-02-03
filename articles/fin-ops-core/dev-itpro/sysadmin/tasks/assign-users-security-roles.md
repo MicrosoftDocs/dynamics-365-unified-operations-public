@@ -23,7 +23,7 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Assign users to security roles
+# Manage users and security roles
 
 [!include [banner](../../includes/banner.md)]
 
@@ -59,5 +59,14 @@ Users who are manually assigned to security roles must also be manually removed 
 4. In the **Assign users to or exclude users from role**, users that have not been assigned the role are listed with the **Assignment mode** set to **None**. Select one or more users that should be assigned the role.
 5. On the **Action pane**, select **Assign to role**. The **Assignment mode** is updated to **Manual** and the users now have a new role assigned.
 
+## Manually remove users from roles
+Users who are manually assigned to security roles must also be manually removed by the administrator. These users are not removed from roles by rules for automatic role assignment.
+
+1. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
+2. To remove one user. In the tree, select a role, and in the **Users assigned to role** grid, select the user that should be removed.
+3. Click select **Remove** and the user is removed from the role.
+4. To remove multiple users. In the tree, select a role, and in the **Users assigned to role** menu, select **Manually assign / exclude users**.
+6. In the **Assign users to or exclude users from role**, users that have not been assigned the role are listed with the **Assignment mode** set to **None**. Select the users that should be assigned the role.
+7. On the **Action pane**, select **Exclude from role**. The **Assignment mode** is updated to **Manual** and the users now excluded from the role.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
