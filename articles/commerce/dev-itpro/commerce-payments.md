@@ -170,7 +170,7 @@ After the payments are edited, the order submission process corrects any changes
 |---|---|---|
 | Authorized payments | Omni-channel Commerce order card payments can be removed from an order through order completion, but only if they weren't partially captured. | Yes |
 | Prepayments | Prepayments can't be removed through order completion. Prepayments can't be removed from an order after they are applied. Payment vouchers are already associated with them. | No |
-| Partially captured payments | If the payment is in a **Paid** state but hasn't been fully captured, it can't be removed. However, the payment amount can be reduced to the amount that was already posted. When this happens, the a request is sent to the payment provider to reduce the authorization amount to equal the new payment amount. | No |
+| Partially captured payments | If the payment is in a **Paid** state but hasn't been fully captured, it can't be removed. However, the payment amount can be reduced to the amount that was already posted. When this happens, a request is sent to the payment provider to reduce the authorization amount to equal the new payment amount. | No |
 | Fully captured credit card payments and prepayments | Fully captured credit card payments and prepayments can't be removed from the order. | No |
 
 ### Cancel order and sales lines
