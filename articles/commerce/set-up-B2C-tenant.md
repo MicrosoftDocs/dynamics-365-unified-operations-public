@@ -113,7 +113,7 @@ To create the B2C application, follow these steps.
 1. For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, see [Reply URLs](#reply-urls) below. A redirect URI/reply URL must be entered to enable redirections from Azure AD B2C back to your site when a user authenticates. The reply URL can be added during the registration process, or can be added later by selecting the **Add a Redirect URI** link from the **Overview** menu in the B2C application's **Overview** section.
 1. For **Permissions**, select **Grant admin consent to openid and offline_access permissions**.
 1. Select **Register**.
-1. Select the newly-created application and navigate to the **API permissions** menu. 
+1. Select the newly-created application and navigate to the **Authentication** menu. 
 1. If a reply URL is entered, under **Implicit grant and hybrid flows** select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. If a reply URL was not entered during registration, it can also be added on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application. The **Implicit grant and hybrid flows** section will then be available to select both the **Access tokens** and **ID tokens** options.
 1. Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
 
