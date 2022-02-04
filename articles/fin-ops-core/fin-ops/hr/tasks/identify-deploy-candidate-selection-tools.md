@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
 Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills. However, candidates with the skills you need might already be employed in your organization. You can search for a specific skill set among existing employees, or new applicants. This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees. Use this procedure to learn how the skill mapping functionality can help you find the right person for an open position. The **USMF** demo data company was used to create this procedure.
 
 1. Go to **Human resources \> Competencies \> Skill analysis \> Skill mapping profiles**.

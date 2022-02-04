@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Before you create a workflow type, you must create a query that will access the table fields for the workflow document. This topic describes how to create a query for a workflow type.
 
 ## Create a query for a workflow type

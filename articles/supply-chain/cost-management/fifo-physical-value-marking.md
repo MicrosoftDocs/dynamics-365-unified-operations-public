@@ -18,6 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
 First in, first out (FIFO) is an inventory management and valuation method where inventory that is produced or acquired first is sold, used, or disposed of first. During the inventory close process in Microsoft Dynamics 365 Supply Chain Management, the system will create settlements where the first receipt is matched against the first issue, and so on.
 
 The settlements and matching principle are based on the financial date of the inventory transactions. A preliminary assessment of the settlements and adjustments can be performed by running the inventory recalculation process.

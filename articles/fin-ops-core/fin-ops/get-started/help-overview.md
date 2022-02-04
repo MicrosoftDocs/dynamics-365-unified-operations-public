@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:
 
 - Dynamics 365 Commerce

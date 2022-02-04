@@ -4,7 +4,7 @@
 title: Parse incoming documents
 description: This topic provides information about how to set up Electronic reporting formats that can be used to parse incoming documents. 
 author: nickselin
-ms.date: 03/24/2021
+ms.date: 11/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,6 +67,16 @@ You can design Electronic reporting (ER) formats to parse incoming Microsoft Exc
 
 - Design a new model and format and want to test them at run-time. In this case, Excel will simulate the actual application data.
 - Manage data beyond your application in Excel and want to import this data to submit a specific report.
+
+When you design a new ER format to parse inbound documents, you can import an Excel workbook into it as a template for inbound files. To automatically detect the data type that is stored in Excel named cells, set the **Apply Excel data types for cell components** option to **Yes** in the **Update from Excel** dialog box.
+
+![Setting the Apply Excel data types for cell components option to Yes for ER template import in the Update from Excel dialog box.](./media/er-parse-incoming-documents-update-from-excel.png)
+
+You can manually change the cells later in the **Data type** field on the **Format** tab, if either no data type (void) or an incorrect data type has been automatically detected for a single [Cell](er-fillable-excel.md#cell-component) component of the edited ER format. These data types are used in the format model mapping when you specify how data from an inbound file is used to fill in a data model.
+
+![Using cells' data type for format fields' binding to data model fields on the Model mapping designer page.](./media/er-parse-incoming-documents-configure-model-mapping.gif)
+
+By default, when you run this format to parse a real inbound file, ER tries to detect the data type of each cell, just as it did when you imported an Excel template. In some cases, an incorrect data type might be detected and cause incorrect data conversion or a runtime exception. In Finance version 10.0.25 and later, you can force the ER framework at runtime to use the data conversion data types that have been specified for each cell component in the **Data type** field on the **Format** tab of the edited ER format. To force this behavior, enable the **Forcing to use for data parsing only cell data types that are defined in an ER format** feature in the **Feature management** workspace.
 
 To learn more about this feature, play the task guides **ER Import data from a Microsoft Excel file (Part 1: Design format)** and **ER Import data from a Microsoft Excel file (Part 2: Import data)** (parts of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). These task guides walk through how the incoming Excel file can be parsed by using the ER format to import information from incoming documents and update application data. You can download the task guide files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 

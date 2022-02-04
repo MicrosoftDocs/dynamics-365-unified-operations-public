@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure the Absence manager role
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In some organizations, people managers might not manage the leave for their team. Instead, an absence manager might handle this process for team members across multiple departments and teams. Absence managers have the following capabilities for leave management:

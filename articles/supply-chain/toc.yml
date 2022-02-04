@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.25 (April 2022)
+          href: get-started/whats-new-scm-10-0-25.md
         - name: Supply Chain Management 10.0.24 (February 2022)
           href: get-started/whats-new-scm-10-0-24.md
         - name: Supply Chain Management 10.0.23 (January 2022)
@@ -102,8 +104,6 @@
           href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Glossary
-          href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
@@ -308,6 +308,8 @@
         href: cloud-edge/cloud-edge-workload-manufacturing.md
       - name: Warehouse management workloads for cloud and edge scale units
         href: cloud-edge/cloud-edge-workload-warehousing.md
+      - name: Configure the Warehouse Management mobile app for cloud and edge scale units
+        href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
       - name: Warehouse orders for cloud and edge scale units
         href: cloud-edge/cloud-edge-warehouse-order.md
       - name: Warehouse inventory adjustment
@@ -1233,6 +1235,8 @@
           items:
           - name: Create configurations to import data from an external XML file
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Import data from manually selected files in batch mode
+            href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure data import in batch mode from SharePoint located files
           href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
         - name: Import files in XML format
@@ -1461,6 +1465,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
           - name: Application update 10.0.21
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Application update 10.0.23
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Application update 10.0.25
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
@@ -1691,12 +1699,16 @@
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Firm planned orders
           href: master-planning/planning-optimization/planned-order-firming.md
+        - name: Planned orders simplified
+          href: master-planning/planning-optimization/planned-orders-simplified.md
         - name: Planning with negative on-hand quantities
           href: master-planning/planning-optimization/negative-on-hand.md 
         - name: View plan history and planning logs
           href: master-planning/planning-optimization/plan-history-logs.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Action messages
+          href: master-planning/action-messages.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
         - name: Planning Optimization extensibility
@@ -1729,8 +1741,6 @@
           href: master-planning/cancel-master-planning-job.md
         - name: Use tracing for explosion
           href: master-planning/trace-explosion.md
-        - name: Action messages
-          href: master-planning/action-messages.md
         - name: Monitor a master planning run
           href: master-planning/tasks/monitor-master-planning-run.md
         - name: Create a schedule for a site
@@ -3763,6 +3773,8 @@
             href: troubleshooting/warehousing/certification-path-app-connection-error.md
           - name: Trust anchor for certification path not found when updating and migrating to WMS
             href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+        - name: Processing issues occur after installing a scale unit warehouse workload
+          href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory
           href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
         - name: Picking work can't be unblocked because of unfinished replenishment work
@@ -3907,3 +3919,5 @@
     href: ../finance/index.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
+  - name: Dynamics 365 Human Resources
+    href: ../human-resources/index.md

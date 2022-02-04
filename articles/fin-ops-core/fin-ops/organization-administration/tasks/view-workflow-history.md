@@ -27,6 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
 This topic describes the steps to view the status of a document that was submitted to the workflow system for processing and approval. The demo data company used to create this procedure is USMF.
 
 1. Go to **Navigation pane > Modules > Common > Inquiries > Workflow > Workflow history**.

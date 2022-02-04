@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+
 This topic describes features that can help your organization comply with the Americans with Disabilities Act (ADA). This information applies only to legal entities that do business in the United States.
 
 You can use the following features to manage information that can help you comply with the ADA.

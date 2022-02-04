@@ -16,7 +16,7 @@ ms.search.validFrom: 2021-11-29
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Previously, the Dual-write Application Orchestration package was a single package that contained the following solutions:
 
