@@ -78,6 +78,9 @@ Custom filters are controls modeled on forms that cause modifications to the que
     -  **public void queryFiltersChanged()**: This new method is called when the query is reexecuted by the system changes the query (e.g. when a view loads or when a system filtering mechanism is used), which gives the custom filter control an opportunity to interrogate the mostly recently executed query to find any relevant filter and update its value to appropriately reflect that query.  
     -  **element.formCustomFilterChanged()**: This is a new API for the custom filter control to call when it has changed the query on the user's behalf. When called, the system will mark the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's modified() method if changes to the control immediately result in the query being refreshed, or call this API for a custom filter on button click if the adjustment of one or more custom filters requires a button for the changes to take effect.  
 
+### Relative filter values
+
+
 ### Opting forms out of views
 While generally not recommended, starting with version 10.0.25, developers can opt an individual form out of saved views support if needed. This will mean that no view selector is available on the form and there will be no publish capabilities.
 
