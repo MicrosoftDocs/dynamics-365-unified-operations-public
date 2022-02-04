@@ -38,17 +38,17 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 
 A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. 
 
-**Normal** is the default value and is applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the [Set the batch reserved capacity level](priority-based-batch-scheduling.md#set-the-batch-reserved-capacity-level) section.
+**Normal** is the default value and is applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the [Set the batch reserved capacity level](priority-based-batch-scheduling.md#set-the-batch-reserved-capacity-level) section later in this topic.
 
-For example, suppose there are 100 batch tasks for processing: 40 tasks will be served with reserved queue, 30 from critical, 15 from high, 10 from normal, and 5 from low queue. It is not the order of execution based on pririoty, but weightage of batch tasks from each priority that will be picked for processeing.
+For example, there are 100 batch tasks for processing. Forty tasks will be served from the reserved queue, 30 from the critical queue, 15 from the high queue, ten from the normal queue, and five from the low queue. It isn't the priority-based order of execution that will be selected for processing, but the weight of the batch tasks from each priority.
 
-|Priority|	Weightage|
-|--------|------------|
-|Low     |	5% |
-|Normal  |	10%|
-|High    |	15%  |
-|Critical |	30%  |
-|Reserved capacity |	40% + Dedicated X Threads|
+| Priority | Weight |
+|----------|--------|
+| Low | 5% |
+| Normal | 10% |
+| High | 15% |
+| Critical | 30% |
+| Reserved capacity | 40% + Dedicated X threads |
 
 > [!NOTE]
 > Because the schedule priority is set to **Normal** for all existing batch groups when the feature is turned on, it's important that you plan and update the scheduling priority for each batch group so that it represents the relative priorities according to business requirements for the related batch jobs and their related business processes.
@@ -63,10 +63,10 @@ Advantages of priority-based batch scheduling include:
 
 The following steps explain how to work with batch groups, jobs, and tasks, when the **Priority-based batch scheduling** feature is turned on.
 
-1. **Identify** - Identify the priorities of the existing batch jobs.
-2. **Enable** - Enable priority-based scheduling in Feature management. By default, all existing batch jobs in will be given the **Normal** priority.
-3. **Update** - Selectively update the priorities for jobs that are not **Normal** priority (such as **Reserved capacity**, **Critical**, **High**,  and **Low**).
-4. **Apply** - Apply **Reserved capacity** if there is a need to dedicate capacity for some jobs beyond the priority.
+1. **Identify** – Identify the priorities of the existing batch jobs.
+2. **Enable** – Enable priority-based scheduling in Feature management. By default, all existing batch jobs in will be given the **Normal** priority.
+3. **Update** – Selectively update the priorities for jobs that are not **Normal** priority (such as **Reserved capacity**, **Critical**, **High**, and **Low**).
+4. **Apply** – Apply **Reserved capacity** if there is a need to dedicate capacity for some jobs beyond the priority.
 
 ## Batch groups
 
@@ -136,11 +136,10 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
     - **Medium reserved capacity** – Fifteen percent of the cumulative batch threads are reserved.
     - **High reserved capacity** – Twenty-five percent of the cumulative batch threads are reserved.
 
-For example, consider that there are ten Batch AOS instances, and each AOS instance is configured with 12 threads. Cumulative batch threads are 120. 
-If we configure the batch reserved capacity level as high reserved capacity the 25% of cumulative threads which 30 threads will be dedicated to process batch tasks from Reserved queue. Allocation of these 30 threads will be among three AOS instances, which means that 3 out of 10 AOS instances will be dedicated to process the reserved queue and they will idle if there are no batch tasks to be processed under reserved capacity.
+    For example, there are ten Batch AOS instances, each of which is configured with 12 threads. Therefore, the cumulative number of batch threads is 120. If you configure the batch-reserved capacity level as high reserved capacity, 25 percent of the cumulative threads (that is, 30 threads) will be dedicated to processing batch tasks from the reserved queue. These 30 threads will be allocated among three AOS instances. Therefore, three of the ten AOS instances will be dedicated to processing the reserved queue. If there are no batch tasks to process under reserved capacity, those three AOS instances will be idle.
 
     > [!NOTE]
-    > Sample values are for the purpose of illustration only. The actual reserved capacity depends on the configuration of the batch server and the number of available batch threads at any given point. Do not configure the dedicated X threads unless there is a use case that there are constant no. of batch tasks to run under reserved category.
+    > Sample values are for the purpose of illustration only. The actual reserved capacity depends on the configuration of the batch server and the number of available batch threads at any given point. Don't configure the dedicated X threads unless there is a use case where there is a constant number of batch tasks to run under the reserved category.
 
 3. Select **Save**.
 
