@@ -904,7 +904,7 @@
         items:
         - name: Plan your chart of accounts
           href: general-ledger/plan-chart-of-accounts.md
-        - name: Chart of accounts
+        - name: Main accounts
           items:
           - name: Main account types
             href: general-ledger/main-account-types.md
