@@ -4,7 +4,7 @@
 title: Set up an online channel
 description: This topic describes how to create a new online channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/14/2021
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,7 +26,6 @@ ms.dyn365.ops.version: Release 10.0.8
 
 ---
 # Set up an online channel
-
 
 [!include [banner](includes/banner.md)]
 
