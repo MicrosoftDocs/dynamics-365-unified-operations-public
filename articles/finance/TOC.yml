@@ -1036,22 +1036,6 @@
           href: general-ledger/view-journal-entries-transactions.md
         - name: Trial balance with transactional detail report
           href: public-sector/general-ledger-public-sector-trial-balance.md      
-        - name: Journalize posted journal entries
-          href: general-ledger/tasks/journalize-posted-journal-entries.md
-        - name: Currency revaluation in a consolidation company
-          href: general-ledger/currency-revaluation-consolidation-company.md
-        - name: Foreign currency revaluation for General ledger
-          href: general-ledger/foreign-currency-revaluation-general-ledger.md
-        - name: Import currency exchange rates
-          href: general-ledger/import-currency-exchange-rates.md
-        - name: One voucher
-          href: general-ledger/one-voucher.md
-        - name: One voucher FAQ
-          href: general-ledger/one-voucher-faq.md
-        - name: Ledger settlements
-          href: general-ledger/ledger-settlements.md
-        - name: Awareness between ledger settlement and year-end close
-          href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
@@ -1066,6 +1050,46 @@
           href: general-ledger/tasks/mass-financial-period-close.md
         - name: Year-end activities FAQ
           href: general-ledger/faq-year-end-activities.md
+        - name: Ledger settlements
+          href: general-ledger/ledger-settlements.md
+        - name: Awareness between ledger settlement and year-end close
+          href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+        - name: Foreign currency revaluation for General ledger
+          href: general-ledger/foreign-currency-revaluation-general-ledger.md
+        - name: General ledger account balances
+          href: general-ledger/general-ledger-account-balances.md
+        - name: Process ledger allocation journal
+          href: general-ledger/tasks/process-ledger-allocation-journal.md
+        - name: Ledger allocation rules
+          href: general-ledger/ledger-allocation-rules.md
+        - name: Journalize posted journal entries
+          href: general-ledger/tasks/journalize-posted-journal-entries.md
+      - name: Consolidations and eliminations
+        items:
+        - name: Consolidation and elimination overview
+          href: budgeting/consolidation-elimination-overview.md
+        - name: Consolidation account groups and additional consolidation accounts
+          href: budgeting/consolidation-account-groups-consolidation-accounts.md
+        - name: Create consolidation groups and additional consolidation account
+          href: general-ledger/tasks/create-consolidation-groups.md
+        - name: Prepare a legal entity for use in the consolidation process
+          href: general-ledger/prepare-company-for-consolidation.md
+        - name: Set up a subsidiary legal entity for consolidation
+          href: general-ledger/set-up-subsidiary-company-for-consolidation.md
+        - name: Consolidate online
+          href: general-ledger/consolidate-online.md
+        - name: Import subsidiary data from files
+          href: general-ledger/import-subsidiary-data-from-files.md
+        - name: Export subsidiary data to a file
+          href: general-ledger/export-subsidiary-data-to-file.md
+        - name: Consolidate with Import - Format
+          href: general-ledger/consolidate-with-import-format.md
+        - name: Elimination rules
+          href: general-ledger/elimination-rules.md
+        - name: Generate consolidated financial statements
+          href: general-ledger/generating-consolidated-financial-statements.md
+        - name: Currency revaluation in a consolidation company
+          href: general-ledger/currency-revaluation-consolidation-company.md
       - name: Audit workbench
         items:
         - name: Audit policy rules
@@ -1170,54 +1194,6 @@
             href: finance-insights/improve-model.md
           - name: Model management lifecycle
             href: finance-insights/model-manage-lifecycle.md
-      - name: Period-end close
-        items:
-        - name: Close the general ledger at period end
-          href: general-ledger/close-general-ledger-at-period-end.md
-        - name: Financial period close workspace
-          href: general-ledger/financial-period-close-workspace.md
-        - name: Year-end close
-          href: general-ledger/year-end-close.md
-        - name: Close the fiscal year
-          href: general-ledger/tasks/close-fiscal-year.md
-        - name: Mass financial period close
-          href: general-ledger/tasks/mass-financial-period-close.md
-        - name: Year-end activities FAQ
-          href: general-ledger/faq-year-end-activities.md
-        - name: Ledger settlements
-          href: general-ledger/ledger-settlements.md
-        - name: General ledger account balances
-          href: general-ledger/general-ledger-account-balances.md
-        - name: Ledger allocation rules
-          href: general-ledger/ledger-allocation-rules.md
-        - name: Journalize posted journal entries
-          href: general-ledger/tasks/journalize-posted-journal-entries.md
-      - name: Consolidations and eliminations
-        items:
-        - name: Consolidation and elimination overview
-          href: budgeting/consolidation-elimination-overview.md
-        - name: Consolidation account groups and additional consolidation accounts
-          href: budgeting/consolidation-account-groups-consolidation-accounts.md
-        - name: Create consolidation groups and additional consolidation account
-          href: general-ledger/tasks/create-consolidation-groups.md
-        - name: Prepare a legal entity for use in the consolidation process
-          href: general-ledger/prepare-company-for-consolidation.md
-        - name: Set up a subsidiary legal entity for consolidation
-          href: general-ledger/set-up-subsidiary-company-for-consolidation.md
-        - name: Consolidate online
-          href: general-ledger/consolidate-online.md
-        - name: Import subsidiary data from files
-          href: general-ledger/import-subsidiary-data-from-files.md
-        - name: Export subsidiary data to a file
-          href: general-ledger/export-subsidiary-data-to-file.md
-        - name: Consolidate with Import - Format
-          href: general-ledger/consolidate-with-import-format.md
-        - name: Elimination rules
-          href: general-ledger/elimination-rules.md
-        - name: Generate consolidated financial statements
-          href: general-ledger/generating-consolidated-financial-statements.md
-        - name: Currency revaluation in a consolidation company
-          href: general-ledger/currency-revaluation-consolidation-company.md
       - name: Use Finance insights
         items: 
         - name: Budget proposals
