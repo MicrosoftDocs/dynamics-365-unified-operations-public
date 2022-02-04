@@ -8,20 +8,11 @@ ms.date: 02/04/2022
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: IT Pro
-# ms.devlang:
+audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-# ms.tgt_pltfrm:
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: retail
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
-ms.dyn365.ops.version: 8.0
 ---
 
 # Initialize Commerce Scale Unit (cloud)
