@@ -4,7 +4,7 @@
 title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -113,7 +113,7 @@ To create the B2C application, follow these steps.
 1. For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, see [Reply URLs](#reply-urls) below. A redirect URI/reply URL must be entered to enable redirections from Azure AD B2C back to your site when a user authenticates. The reply URL can be added during the registration process, or can be added later by selecting the **Add a Redirect URI** link from the **Overview** menu in the B2C application's **Overview** section.
 1. For **Permissions**, select **Grant admin consent to openid and offline_access permissions**.
 1. Select **Register**.
-1. Select the newly-created application and navigate to the **API permissions** menu. 
+1. Select the newly created application and navigate to the **Authentication** menu. 
 1. If a reply URL is entered, under **Implicit grant and hybrid flows** select both the **Access tokens** and **ID tokens** options to enable them for the application, and then select **Save**. If a reply URL was not entered during registration, it can also be added on this page by selecting **Add a platform**, selecting **Web**, and then entering the redirect URI of the application. The **Implicit grant and hybrid flows** section will then be available to select both the **Access tokens** and **ID tokens** options.
 1. Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
 
@@ -313,19 +313,15 @@ Once setup of your Azure AD B2C tenant is completed, you must configure the B2C 
 
 To collect the required application information, follow these steps.
 
-1. In the Azure portal, go to **Home \> Azure AD B2C - Applications**.
-1. Select your application, and then in the left navigation pane select **Properties** to obtain the application details.
-1. From the **Application ID** box, collect the application ID of the B2C application created in your B2C tenant. This will later be entered as the **Client GUID** in site builder.
-1. Under **Reply URL**, collect the reply URL.
-1. Go to **Home \> Azure AD B2C – User flows (policies)**, and then collect the names of each user flow policy.
+1. In the Azure portal, go to **Home \> Azure AD B2C - App registrations**.
+1. Select your application, and then in the left navigation pane select **Overview** to obtain the application details.
+1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. This will later be entered as the **Client GUID** in site builder.
+1. Select **Redirect URIs** and collect the reply URL shown for your site (the reply URL entered at setup).
+1. Go to **Home \> Azure AD B2C – User flows**, and then collect the full names of each user flow policy.
 
-The following image shows an example of the **Azure AD B2C - Applications** page.
+The following image shows an example of the **Azure AD B2C - App registrations** overview page.
 
-![Navigate to the B2C Application within your tenant.](./media/B2CImage_19.png)
-
-The following image shows an example of an application **Properties** page in Azure AD B2C. 
-
-![Copy the Application ID from the B2C Application's Properties.](./media/B2CImage_21.png)
+![Azure AD B2C - App registrations overview page with the Application (client) ID highlighted](./media/ClientGUID_Application_AzurePortal.png)
 
 The following image shows an example of user flow policies on the **Azure AD B2C – User flows (policies)** page.
 
@@ -367,7 +363,7 @@ To associate the B2C application to your site and channel, follow these steps.
 1. In the left navigation pane, select **Site Settings** to expand it.
 1. Below **Site Settings**, select **Channels**.
 1. In the main window under **Channels**, select your channel.
-1. In the channel properties pane on the right, select your B2C application name from the **Select B2C Application** drop down menu.
+1. In the channel properties pane on the right, select your B2C application name from the **Select B2C Application** drop-down menu.
 1. Select **Close**, and then select **Save and Publish**.
 
 ## Additional B2C information
