@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 12/10/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,10 +55,11 @@ To create a new document type, follow these steps.
 
 ## Configure SharePoint storage
 
-Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future. 
+Microsoft SharePoint Online is one of the storage locations that is supported natively. On-premises SharePoint (a local SharePoint server) is not currently supported. 
 
 > [!IMPORTANT]
-> SharePoint storage is only available in Microsoft-managed environments.
+> -  SharePoint storage is only available in Microsoft-managed environments.
+> -  SharePoint managed device policies are incompatible with an integration to Finance and Operations apps
 
 To use SharePoint storage, set the **Location** field for a document type to **SharePoint**. Then, in the **SharePoint Address** field, enter a valid SharePoint address.
 
@@ -81,6 +82,8 @@ SharePoint communication works for the current user only if the following condit
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
 - The SharePoint site is configured to **Allow this site to appear in search results**.
+- The SharePoint site does not use managed device policies. 
+    -  If managed device policies are enabled on the SharePoint instance, the Finance and Operations SharePoint integration will no longer work, meaning users will not be able to download, view, or create documents stored in SharePoint from Finance and Operations. 
 - The user has access to the folder that the document is stored in.
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 

@@ -5,7 +5,7 @@ title: Theming overview
 description: This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 11/22/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

@@ -5,7 +5,7 @@ title: Accounts payable in the public sector overview
 description: This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 Finance. This functionality for public sector entities addresses vendor management, purchasing and reporting capabilities.
 author: v-kiarnd
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

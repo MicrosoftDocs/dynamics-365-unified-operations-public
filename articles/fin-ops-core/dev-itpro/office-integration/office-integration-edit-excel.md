@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 Learn about creating Open in Office experiences for Excel and Word.
 
 ## What are Open in Excel experiences?

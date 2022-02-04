@@ -5,7 +5,7 @@ title: Plan type overview
 description: A plan type in Microsoft Dynamics 365 Human Resources is a high-level grouping of specific types of benefits. 
 author: twheeloc
 ms.date: 08/24/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Plan type overview
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

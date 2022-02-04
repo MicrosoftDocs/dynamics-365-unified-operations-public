@@ -5,7 +5,7 @@ title: Saudi Arabia overview
 description: This topic provides links to documentation resources for Saudi Arabia. 
 author: ShylaThompson
 ms.date: 10/26/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Saudi Arabia
 # ms.search.industry: 
 ms.author: roschlom

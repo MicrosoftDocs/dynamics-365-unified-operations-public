@@ -2,9 +2,9 @@
 # required metadata
 
 title: Year-end activities FAQ 
-description: This topic has been compiled to assist with year-end closing activities.
-author: kweekley
-ms.date: 01/25/2021
+description: This topic lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
+author: moaamer
+ms.date: 12/21/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,19 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic has been compiled to assist with year-end closing activities. The information in this topic primarily focuses on questions concerning year-end closing activities  for General ledger and Accounts payable.
+This topic lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities. The information in this topic primarily focuses on questions concerning year-end closing activities for General ledger and Accounts payable.
+
+## General ledger year-end enhancements 
+Version 10.0.20 introduced a year-end close enhancement, which is enabled by default starting with version 10.0.25. If your organization uses a version earlier than 10.0.25, we recommend enabling this feature before beginning the year-end close process. Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+
+ - Module: General ledger
+ - Feature name: General ledger year-end enhancements
+
+The setup of the year-end closing templates has moved to a new setup page, **Year-end close template setup**. The existing year-end close page will change in a manner similar to the General ledger foreign currency revaluation, where a list displays each time the year-end close is run or reversed. An accounting manager can initiate the year-end close from the new page. 
+
+To reverse the year-end close, select the most recent fiscal year for the appropriate legal entity and choose the **Reverse year-end close** button. The reversal will delete the accounting entries for the previous year-end close and will not rerun the year-end close automatically. 
+
+You can rerun the year-end close by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or completely reverse the previous close, rerunning the process for all transactions.  
 
 ## General ledger: How do I know that we're running year-end close and not undoing year-end close?
 We have seen organizations try to run the year-end close but instead were performing an undo of the year-end close. If the year-end close is finishing really quickly or the year end close does not produce opening balances, validate the **Undo previous close** setting in **Year-end close** (**General ledger > Period close > Year end close > Run fiscal close**). 
@@ -72,43 +84,74 @@ The year-end close template lets organizations select the financial dimension le
 
 We recommend that you evaluate your organization's requirements and if possible, close as many dimensions as possible using the **Close single** year-end option to improve performance. By closing to a single dimension value (which can also be a blank value), the system calculates less detail when determining the balances for retained earnings account entries.
 
-### 10.0.13 update or later
-If you've updated to version 10.0.13 or later since the last time your organization ran a year-end close, the year-end close process could take longer due to the [HashV2 feature implementation](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/verify-hash-function-changes-after-update-to-dynamics-365-finance-2020-release-wave-2). (The term *hash* refers to a field that is calculated from other string fields. The API to calculate the hash GUID value was updated to enhance security.) To speed up the year-end closing process, we recommend rebuilding the balances of the dimension sets before running the year-end close. If you've already performed a rebuild of the dimension set balances after taking the 10.0.13 update, it's not necessary to run the rebuild process again.
- 
-## General ledger – What does the Period close – Year-end close do?
+## Degenerate dimensions
+
+A degenerate dimension provides little to no reuse by itself and in combination with other dimensions. There are two types of degenerate dimensions. The first type is a dimension that is individually degenerate. Typically this type of degenerate dimension will appear on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes degenerate in combination with one or more additional dimensions that exhibit the same potential based on the possible permutations that can be generated. A degenerate dimension can have a significant impact on the performance of the year-end close process. To minimize performance issues, define all degenerate dimensions as **Close single** in the year-end close setup as described in the preceding section.
+
+## General ledger: What does the period close, year-end close do?
  
 [![Period close, year-end close.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
-### Performance improvements for rebuilding financial dimension sets (new feature)
-A new feature added in version 10.0.16 improves the performance of the year-end close and consolidation processes. The feature is named, Performance improvements for rebuilding financial dimension sets. This feature changes the way dimension sets are rebuilt so that they are rebuilt only for a relevant time frame. In the previous versions, dimension sets were rebuilt for all dates. For example, if you're closing the year 2020, the system will only rebuild the balances for transactions within the fiscal year 2020. If you're running consolidation for a date range of November 1, 2020 to November 30, 2020, the system will only rebuild the balances for that date range.
+### Performance improvements for rebuilding financial dimension sets
+A new feature that was added in version 10.0.16 improves the performance of the year-end close and consolidation processes. The feature is named, Performance improvements for rebuilding financial dimension sets. This feature changes the way dimension sets are rebuilt so that they are rebuilt only for a relevant time frame. In the previous versions, dimension sets were rebuilt for all dates. For example, if you're closing the year 2020, the system will only rebuild the balances for transactions within the fiscal year 2020. If you're running consolidation for a date range of November 1, 2020 to November 30, 2020, the system will only rebuild the balances for that date range.
 
-Because this feature is considered a breaking change, you'll need to enable it using the **Feature management** workspace.
+Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
  
-[![Year-end close.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+- Module: General ledger
+- Feature name: Performance improvements for rebuilding financial dimension sets
 
-## Accounts payable: What changes have been made to support 1099 year-end reporting for 2020?
+## Accounts payable: What changes have been made to support 1099 year-end reporting for 2021?
 
-Two new regulatory features have been added for 1099 year-end changes in 2020. The first feature, **Apply changes to 1099-NEC and 1099-MISC forms for 2020**, was released mid-year as a mandatory feature. Its purpose is to ensure that 1099 transactional data for the year 2020 can be tracked for the new 1099-NEC form. This feature added the 1099 fields that are needed to support the new 1099-NEC and updated the 1099-MISC fields. This update also upgraded vendor record data for the 1099 box information. 
+In 2021, the DIV, NEC, and MISC forms have been changed slightly, and some additional boxes have been added.
 
-The second regulatory feature, **1099 statements updated for 2020 tax law**, contains the following changes.
+#### DIV: new box 2e, 2f
+ 
+- Box 2e. Shows the portion of the amount in box 1a that is section 897 gain attributable to disposition of U.S. real property interests (USRPI).  
+- Box 2f. Shows the portion of the amount in box 2a that is section 897 gain attributable to disposition of USRPI. Note that boxes 2e and 2f apply only to foreign persons and entities whose income maintains its character when passed through, or distributed to, its direct or indirect foreign owners or beneficiaries. It is generally treated as effectively connected to a trade or business within the United States. See the instructions for your tax return. 
+ 
+#### NEC: new box 2 
+ 
+If box 2 is checked, report consumer products totaling $5,000 or more that were sold to you for resale, on a buy-sell, a deposit-commission, or other basis. Generally, report any income from your sale of these products on Schedule C (Form 1040). 
+ 
+Meanwhile, the form size of NEC is changed. During printing, there are three forms per page. 
+ 
+#### MISC: new box 11 
+ 
+Box 11 shows the amount paid for the purchase of fish for resale from any person engaged in the trade or business of catching fish. See the instructions for your tax return for reporting this income. 
+ 
+#### Electronic filing 
+For information about electronic filing, see [Publication for electronic filing requirements](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
 
-- 1099-OID - The IRS has converted the form to continuous use.
-   - The reporting year’s 3rd and 4th digit must be filled in when printed. Use the **Reporting year** field’s 3rd and 4th digits from **Tax 1099 print options**. 
-
-- 1099-NEC – A new form for 2020. This records nonemployee compensation. 
-
-- 	1099-MISC – Due to the creation of Form 1099-NEC, the IRS has revised Form 1099-MISC and rearranged box numbers for reporting certain income.
-Changes in the reporting of income and the form’s box numbers are listed below.
-   - Payer made direct sales of $5,000 or more (check box) in box 7.
-   - Crop insurance proceeds are reported in box 9.
-   - Gross proceeds to an attorney are reported in box 10.
-   - Section 409A deferrals are reported in box 12.
-   - Nonqualified deferred compensation income is reported in box 14.
-   - Boxes 15, 16, and 17 report state taxes withheld, state identification number, and amount of income earned in the state, respectively.
-
-- No changes to 1099-DIV or 1099-INT in 2020.
-
-- Electronic filing – The format has changed to accommodate the new NEC form, and the MISC box changes described above. For specific information on electronic filing requirements, see [IRS Publication 1220](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
+Update Format Specifications and Record Layouts for 2021 e-report 
+- Sec. 2 Issuer “A” Record. 
+- Amount Codes - Increased Field Position 28-45, Length to 18. 
+ 
+#### Sec. 2 Issuer “A” Record, For Reporting Payments on Form 1099-DIV: 
+- Amount Type – Added Section 897 Ordinary Dividends and added Amount Code H. 
+- Amount Type – Added Section 897 Capital Gains and added Amount Code J. 
+ 
+#### Sec. 3 Payee “B” Record 
+- General Information Records – Updated third bullet from 16 to 18 Payment Amount Fields. 
+- Field Title Payment H – Updated Field Position 247-258, Field Title, Length and General Field Description. 
+- Field Title Payment J – Updated Field Position 259-270, Field Title, Length and General Field 
+Description. 
+- Updated Blank field to Field Position 271-286. 
+- Updated Foreign Country Indicator to Field Position 287. 
+- Updated First Payee Name Line field to Field Position 288-327. 
+- Updated Second Payee Name Line field to Field Position 328-367. 
+- Record Layout Positions, Form 1099-MISC – Deleted Field Position 548 and Field Title FATCA Filing 
+Requirement Indicator. 
+- Record Layout Positions, Form 1099-NEC – Updated 545-546 to Blank, Updated 547 field to Direct Sales Indicator, Length and Description and Remarks Updated 548-722 field to Blank. 
+ 
+#### Sec. 4 End of Issuer “C” Record 
+- Field Title Payment H – Updated Field Position 304-321, Field Title, Length and General Field Description. 
+- Field Title Payment J – Updated Field Position 322-339, Field Title, Length and General Field Description. 
+- Field Title 340-499 – Updated Length to 160. 
+ 
+#### Sec. 5 State Totals “K” Record 
+- Field Title Payment H – Updated Field Position 304-321, Field Title, Length and General Field Description. 
+- Field Title Payment J – Updated Field Position 322-339, Field Title, Length and General Field Description. 
+- Field Title 340-499 – Updated Length to 160.  
 
 ## Accounts payable: 1099 – How do I change the 1099 box and values for a vendor that wasn’t tracking 1099 information throughout the year?
 Use the Update 1099 functionality (**Accounts payable > Vendors>All vendors > Select a vendor > Vendor tab in ribbon > Update 1099**) to go through previously paid invoice transactions to reassign the 1099 data appropriately according to the settings on the **Tax 1099** tab on the **Vendor** page.
@@ -116,7 +159,7 @@ Use the Update 1099 functionality (**Accounts payable > Vendors>All vendors > Se
 ## Can I run the Update 1099 for all my vendors at once?
 No. The Update 1099 routine is performed against a single vendor at a time. If this requirement is needed by your organization, please vote for the Idea titled [Batch Process for Update of Vendor's 1099 Data](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
 
-## Accounts payable: 1099 – “Recalculate existing 1099 amounts” vs. “Update all” in the Update 1099 utility.
+## Accounts payable: 1099 – Recalculate existing 1099 amounts versus Update all in the Update 1099 utility
 The **Recalculate existing 1099 amounts** check box will reset the 1099 amount to the total paid values, when used in conjunction with the **Update all** check box. 
 
 [![Tax 1099 transactions: Before running the update routine.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)

@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.25 (April 2022)
+          href: get-started/whats-new-platform-updates-10-0-25.md
         - name: Platform updates for version 10.0.24 (February 2022)
           href: get-started/whats-new-platform-updates-10-0-24.md
         - name: Platform updates for version 10.0.23 (January 2022)
           href: get-started/whats-new-platform-updates-10-0-23.md
-        - name: Platform updates for version 10.0.22 (November 2021)
-          href: get-started/whats-new-platform-updates-10-0-22.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -432,6 +432,8 @@
           href: deployment/install-deployable-package.md
         - name: Uninstall a package
           href: deployment/uninstall-deployable-package.md
+        - name: Run custom X++ scripts with zero downtime
+          href: deployment/run-custom-scripts.md
         - name: Troubleshoot package application issues
           href: deployment/deployable-package-troubleshooting.md
       - name: Deploy custom help
@@ -511,7 +513,9 @@
         - name: Deploy assets by using Azure Pipelines
           href: dev-tools/pipeline-deploy-asset.md
         - name: Create a Lifecycle Services (LCS) connection in Azure Pipelines
-          href: dev-tools/pipeline-lcs-connection.md        
+          href: dev-tools/pipeline-lcs-connection.md
+        - name: Update LCS connection authentication tasks to MSAL in Azure Pipelines
+          href: dev-tools/pipeline-lcs-connection-update.md
         - name: Update the hosted Azure Pipeline for new NuGet packages
           href: dev-tools/pipeline-nuget-split.md
         - name: Update a legacy pipeline in Azure Pipelines
@@ -854,6 +858,8 @@
           href: perf-test/continuous-build-test-automation.md
         - name: SysTest filtering using class and method attributes
           href: perf-test/systest-filtering.md
+        - name: SysTestRow attribute for testing multiple values
+          href: perf-test/systest-row.md
         - name: Acceptance test library
           items:
           - name: Acceptance test library resources
@@ -1052,6 +1058,8 @@
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
+            - name: Separated dual-write application orchestration package
+              href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write
               href: data-entities/dual-write/currrency-decimal-places.md
             - name: Set up the mapping for the sales order status fields
@@ -1484,6 +1492,8 @@
         href: perf-test/rsat/rsat-best-practices.md
       - name: Data agnostic testing using the Regression Suite Automation Tool
         href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+      - name: Run Regression suite automation tool (RSAT) with parallel execution
+        href: perf-test/rsat/rsat-parallel-execution.md
       - name: Troubleshooting
         href: perf-test/rsat/rsat-troubleshooting.md
     - name: Release solutions using Lifecycle Services

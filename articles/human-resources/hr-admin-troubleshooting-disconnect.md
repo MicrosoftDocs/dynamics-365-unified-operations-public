@@ -29,6 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Client disconnects
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Environment details** 

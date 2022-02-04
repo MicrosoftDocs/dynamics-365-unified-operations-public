@@ -29,7 +29,6 @@ ms.dyn365.ops.version: AX 10.0.13
 # Create a data integration project
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to create a data integration project.
 

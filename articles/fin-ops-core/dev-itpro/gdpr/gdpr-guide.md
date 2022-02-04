@@ -5,7 +5,7 @@ title: General Data Protection Regulation overview
 description: This topic provides information about the user log functionality in Finance and Operations.
 author: ToddLefor
 ms.date: 07/23/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
