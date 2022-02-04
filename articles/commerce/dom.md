@@ -119,7 +119,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
    Here are some of the common attributes that can be defined for all the preceding rule types:
 
-   - **Start date** and **End date** – Every rule can be made date-effective by using the these fields.
+   - **Start date** and **End date** – Every rule can be made date-effective by using these fields.
    - **Disabled** – Only rules that have a value of **No** for this field are considered in a DOM run.
    - **Hard constraint** – A rule can be defined as either a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule, regardless of the setting of this field. In other words, every rule is applied. The only exception is the **Location priority** rule. In the second iteration, the rules that weren't defined as hard constraint rules are removed, and the order or order lines that weren't assigned to locations when all the rules were applied are assigned to locations.
 
