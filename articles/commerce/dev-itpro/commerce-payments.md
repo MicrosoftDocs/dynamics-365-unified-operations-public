@@ -3,7 +3,7 @@
 title: Omni-channel Commerce order payments
 description: This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
 author: ravimeda
-ms.date: 10/29/2021
+ms.date: 02/04/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -55,8 +55,8 @@ If any of the prerequisites are missing when you try to turn on the omni-channel
 
 ![Message about prerequisite features and configurations.](../dev-itpro/media/COP_PRE.png)
 
-> [!Note]
-> When the **Omni-channel Commerce order payments** feature is enabled, the Call Center **enable order completion** button will be hidden at the Call Center>General tab for the Call Center channels.
+> [!NOTE]
+> When the **Omni-channel Commerce order payments** feature is enabled, the call center **Enable order completion** button will be hidden in headquarters on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**.
 
 
 ### Prerequisite features
