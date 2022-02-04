@@ -4,7 +4,7 @@
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
 author: BrianShook
-ms.date: 01/31/2022
+ms.date: 02/04/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: Version 1611
 # Peripherals
 
 [!include[banner](includes/banner.md)]
+[!include[banner](includes/preview-banner.md)]
 
 This topic explains the concepts that are related to store peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
