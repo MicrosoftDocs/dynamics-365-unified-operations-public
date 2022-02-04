@@ -316,12 +316,12 @@ To collect the required application information, follow these steps.
 1. In the Azure portal, go to **Home \> Azure AD B2C - App registrations**.
 1. Select your application, and then in the left navigation pane select **Overview** to obtain the application details.
 1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. This will later be entered as the **Client GUID** in site builder.
-1. Click on **Redirect URIs**, and collect the reply URL shown for your site (the Reply URL entered at setup).
+1. Select **Redirect URIs** and collect the reply URL shown for your site (the reply URL entered at setup).
 1. Go to **Home \> Azure AD B2C – User flows**, and then collect the full names of each user flow policy.
 
-The following image shows an example of the **Azure AD B2C - App registrations** Overview panel.
+The following image shows an example of the **Azure AD B2C - App registrations** overview page.
 
-![Navigate to the B2C Application within your tenant.](./media/ClientGUID_Application_AzurePortal.png)
+![Azure AD B2C - App registrations overview page with the Application (client) ID highlighted](./media/ClientGUID_Application_AzurePortal.png)
 
 The following image shows an example of user flow policies on the **Azure AD B2C – User flows (policies)** page.
 
