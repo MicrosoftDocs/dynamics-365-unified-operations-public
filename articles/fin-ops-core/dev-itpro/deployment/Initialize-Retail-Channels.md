@@ -4,7 +4,7 @@
 title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
-ms.date: 11/16/2021
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -24,7 +24,6 @@ ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8.0
 ---
 
-
 # Initialize Commerce Scale Unit (cloud)
 
 [!include[banner](../includes/banner.md)]
@@ -43,14 +42,14 @@ This topic describes the steps for initializing Commerce Scale Unit (cloud).
 3. You must have Project Owner permissions in Lifecycle Services before you can initialize Commerce Scale Unit.
 4. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
 
-  - RetailBasic
-  - RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
-  - RetailGiftCard - If you plan to use gift cards.
-  - RetailInvent - If you plan to use inventory.
-  - RetailModernPos - If you plan to use point of sale (POS).
-  - RetailReplenishment - If you plan to use replenishments.
-  - RetailScheduler
-  - RetailStores - If you plan to use POS.
+    - RetailBasic
+    - RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
+    - RetailGiftCard - If you plan to use gift cards.
+    - RetailInvent - If you plan to use inventory.
+    - RetailModernPos - If you plan to use point of sale (POS).
+    - RetailReplenishment - If you plan to use replenishments.
+    - RetailScheduler
+    - RetailStores - If you plan to use POS.
 
 
 ## Region availability
@@ -81,7 +80,7 @@ Commerce Scale Unit is available for deployment in the following regions.
 | EMEA            | UK South            | Limited capacity    |
 | EMEA            | UK West             | Limited capacity    |
 
-Deployment capacity in Limited capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
+Deployment capacity in Limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
 
 ![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
@@ -123,13 +122,13 @@ If you have multiple scale units, you need to perform the operation above for ea
 
 ## Deploy additional Commerce Scale Units (optional)
 
-After you have initialized the first Commerce Scale Unit (CSU), if you require additional cloud scale units, enter a support request. In the support request, state the number of RCSUs needed, environment name, and desired regions.
+After you've initialized Commerce Scale Unit, you can self-deploy a second Scale Unit if your license entitles you to do so. To deploy more than two Scale Units, you must create a support request. In the support request, state the number of Commerce Scale Units that you require, the environment name, and the desired regions. For more information about licensing, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
-For each additional RCSU that you deploy, it is also recommended that you create a separate channel database group for each RCSU. To do this, follow these steps:
+For each additional Commerce Scale Unit that you deploy, we recommend that you create a separate channel database group by following these steps.
 
 1. In Commerce head office, go to **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database group**.
 2. Create a new channel database group.
-3. Go to the **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database** form and select the channel database that corresponds to the newly created RCSU.
+3. Go to the **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database**, and select the channel database that corresponds to the newly created Commerce Scale Unit.
 4. Select **Edit** and select the new channel database group.
 5. Select **Save**.
 6. Select **Run Full data sync** for the selected channel database.

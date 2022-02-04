@@ -4,7 +4,7 @@
 title: Work with templates
 description: This topic describes how to work with templates in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,7 +42,7 @@ As was discussed in [Templates and layouts overview](templates-layouts-overview.
 - Keep enterprise sites on-brand by defining an approved set of module arrangement and configuration options.
 
     > [!TIP] 
-    > Successful e-Commerce sites provide customers with familiar, repeatable, and on-brand user experience (UX) design patterns. By using templates, you help control consistency across your site.
+    > Successful e-commerce sites provide customers with familiar, repeatable, and on-brand user experience (UX) design patterns. By using templates, you help control consistency across your site.
 
 - Improve search engine optimization (SEO) scores by ensuring repeatable and programmatically defined page definitions and metadata.
 
@@ -53,7 +53,7 @@ As was discussed in [Templates and layouts overview](templates-layouts-overview.
 
 Templates are modified by using the template editor.
 
-To open the template editor, follow one of these steps:
+To open the template editor in Commerce site builder, follow one of these steps:
 
 - In the navigation pane of your site, select **Templates**, and then select the template to modify.
 - In the page editor for an existing page, select the top node in the outline tree on the left. Then, in the property pane on the right, select **Edit Template**.
@@ -70,7 +70,7 @@ The outline tree view on the left shows the module options and structures that a
 
 ## Create a new template
 
-To create a new template, follow these steps.
+To create a new template in site builder, follow these steps.
 
 1. In the navigation pane of your site, select **Templates** to open the template inspector view.
 1. Select **New Template**.
@@ -89,7 +89,7 @@ The template is now technically valid, and it can be saved, checked in, and used
 
 ## Add a header and a footer
 
-If your site already has a header fragment, follow these steps to add a header and a footer to a template.
+If your site already has a header fragment, follow these steps in site builder to add a header and a footer to a template.
 
 1. In the outline tree, expand the **Body** slot and its child page module.
 1. Select the **Header** slot.
@@ -102,7 +102,7 @@ If your site doesn't yet have a header fragment, see [Create a fragment](work-wi
 
 ## Change the template theme
 
-To set the default theme for all pages that use a template, follow these steps.
+To set the default theme for all pages that use a template, follow these steps in site builder.
 
 1. In the outline tree on the left, expand the **Body** slot.
 1. In the **Body** slot, select the page container module (for example, **Default Page**).
@@ -114,7 +114,7 @@ By default, all new pages will now use the selected theme. To prevent pages from
 
 You can add HTML **&lt;script&gt;** elements that contain JavaScript to your template. In this way, you can provide default script behaviors to the HTML head, body begin, and body end sections of your pages.
 
-To add a script to a template, follow these steps.
+To add a script to a template in site builder, follow these steps.
 
 1. In the outline tree on the left, select the slot where you want to add the **&lt;script&gt;** element (for example, the HTML head, body begin, or body end).
 1. Select the ellipsis button for the slot, and then select **Add Module**.
@@ -127,7 +127,7 @@ To add a script to a template, follow these steps.
 
 ## Save, check in, preview, and publish a template
 
-To save and check in a template, follow these steps.
+To save and check in a template in site builder, follow these steps.
 
 1. Select **Save** at the top of the template editor. Saved changes don't affect downstream pages until they are checked in.
 1. Select **Finish editing**. Your changes are now discoverable for downstream workflows.
@@ -142,6 +142,18 @@ After you've previewed the changes to your template, follow one of these steps t
 
 > [!WARNING]
 > When a template, or any other content management system (CMS) item, is published, it's discoverable on the internet. Don't publish documents or assets until you're ready to make them public. Document versions that have been saved and checked in, but that haven't been published, are discoverable only to authenticated system users.
+
+## Rename a template
+
+To rename an existing template in site builder, follow these steps.
+
+1. In the left navigation pane, select **Templates**.
+1. Select the template name of the template that you want to rename.
+1. Select **Edit** to start editing the template. Note that you cannot edit a template if someone else is already editing the template.
+1. In the template properties pane, select the pen symbol next to the template name.
+1. Edit the template name as needed.
+1. Select the check mark to confirm the name change.
+1. Select **Finish editing**.
 
 ## Additional resources
 
