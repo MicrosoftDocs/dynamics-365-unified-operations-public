@@ -5,7 +5,7 @@ title: Shipping discount overview
 description: This topic describes the shipping discount capabilities within Dynamics 365 Commerce and the corresponding setup steps required to start using these discounts.
 author: ShalabhjainMSFT
 ms.date: 01/22/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail

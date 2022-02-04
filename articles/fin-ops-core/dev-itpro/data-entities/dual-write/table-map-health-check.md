@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-10-04
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic describes error codes for the table map health check.
 

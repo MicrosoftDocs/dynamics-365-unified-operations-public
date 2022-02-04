@@ -30,6 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Distributed hybrid topology | [Enhanced warehouse execution workloads on scale units](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md) | Enabled by default. |
+| Distributed hybrid topology | [Start production order on warehouse management workload for the cloud and edge scale unit](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md) | Feature management (*Start production order on warehouse management workload for the cloud and edge scale unit*)  |
 | Planning | [Planning Optimization support for reorder margin and issue margin](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Safety margins](../master-planning/planning-optimization/safety-margins.md) | Enabled by default. |
 
 ## Feature enhancements included in this release
@@ -43,7 +44,6 @@ If you want to turn any of these features on or off, you must do that in [featur
 | Production control | On-demand material availability check for production orders | This feature makes it faster to open the **Production orders to release** page, which is available from the **Production floor management** workspace. Without this feature, the system automatically checks whether materials are available for all listed production orders as soon as you open the page, which can take significant time if you have a large number of orders. When this feature is enabled, the system instead provides a toolbar button, which you can use to initiate the materials check only for selected orders and when needed. |
 | Production control | (Preview) Register material consumption on the production floor execution interface (non-WMS) | This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. This feature only supports items that are not enabled to use advanced warehouse processes (WMS). Support for WMS-enabled items is scheduled for a future release.<p>Some manufacturers, especially those within the process industries, need to explicitly register the amount of material consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material consumed as they work. To ensure full material traceability, these organizations also need to register which batch numbers were consumed when producing each product. |
 | Production control | Report as finished on warehouse management workload for the cloud and edge scale unit | This feature lets workers use the Warehouse Management mobile app to report a production or batch order as finished when the app is running against a warehouse management workload on a cloud or edge scale unit. For more information, see [Report as finished and putaway on a scale unit](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Production control | Start production order on warehouse management workload for the cloud and edge scale unit | This feature enables workers to use the Warehouse Management mobile app to start a production or batch order when the app is running against a warehouse management workload on a cloud or edge scale unit. |
 | Warehouse management | New load planning workbench pages | Enables two new load planning workbench pages: **Inbound load planning workbench** and **Outbound load planning workbench**. |
 
 ## New and updated documentation resources
@@ -66,7 +66,7 @@ We have recently added or significantly updated the following help topics. These
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps (February 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes
 

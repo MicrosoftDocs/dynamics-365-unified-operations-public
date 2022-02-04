@@ -133,13 +133,13 @@ If you have multiple scale units, you need to perform the operation above for ea
 
 ## Deploy additional Commerce Scale Units (optional)
 
-After you have initialized the first Commerce Scale Unit (CSU), if you require additional cloud scale units, enter a support request. In the support request, state the number of RCSUs needed, environment name, and desired regions.
+After you've initialized Commerce Scale Unit, you can self-deploy a second Scale Unit if your license entitles you to do so. To deploy more than two Scale Units, you must create a support request. In the support request, state the number of Commerce Scale Units that you require, the environment name, and the desired regions. For more information about licensing, see [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). 
 
-For each additional RCSU that you deploy, it is also recommended that you create a separate channel database group for each RCSU. To do this, follow these steps:
+For each additional Commerce Scale Unit that you deploy, we recommend that you create a separate channel database group by following these steps.
 
 1. In Commerce head office, go to **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database group**.
 2. Create a new channel database group.
-3. Go to the **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database** form and select the channel database that corresponds to the newly created RCSU.
+3. Go to the **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database**, and select the channel database that corresponds to the newly created Commerce Scale Unit.
 4. Select **Edit** and select the new channel database group.
 5. Select **Save**.
 6. Select **Run Full data sync** for the selected channel database.

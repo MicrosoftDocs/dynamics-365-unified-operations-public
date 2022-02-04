@@ -4,7 +4,7 @@ description: This topic provides information about cloud and edge scale units fo
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -47,8 +47,7 @@ You can configure your hub environment and cloud scale units for selected worklo
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
-The warehouse management workload enables you to to run warehouse management processes on an isolated deployment.
-For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
+The warehouse management workload is the first distributed workload for scale units to be released for general availability. It enables your warehouse operations to scale and run in a resilient environment by using isolated maintenance windows. The warehouse management workload supports most enterprise hub warehouse management processes. For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
 
 ### Dedicated manufacturing execution workload capabilities in a scale unit
 

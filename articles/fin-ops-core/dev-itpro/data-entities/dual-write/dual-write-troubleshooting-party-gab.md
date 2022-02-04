@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic provides troubleshooting information that can help you fix issues that are related to dual-write party and global address book functions.
 

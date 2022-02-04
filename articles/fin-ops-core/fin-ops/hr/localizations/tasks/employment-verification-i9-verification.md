@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../../../includes/peap-1.md)]
+
 The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees. This procedure will walk you through the steps of recording the necessary documents for I-9 verification. Use the USMF company for this procedure.
 
 1. Go to **Human resources \> Workers \> Employees**.

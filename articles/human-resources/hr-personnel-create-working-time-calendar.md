@@ -27,6 +27,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+> [!IMPORTANT]
+> The functionality noted in this topic is currently available for Human Resources customers on the Finance infrastructure.  
 
 
 Calendars describe the capacity and working times of operations resources. This topic explains how to define a work calendar based on a working time template. You can walk through this procedure in demo data company USMF, or using your own data.

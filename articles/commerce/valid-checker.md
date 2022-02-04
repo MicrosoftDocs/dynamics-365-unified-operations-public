@@ -4,7 +4,7 @@
 title: Validate store transactions for statement calculation
 description: This topic describes the functionality for validating store transactions in Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/15/2021
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ The **Validate store transactions** batch process checks the consistency of the 
 
 The following table lists the transaction header validation rules that are checked against the header of retail transactions before those transactions are passed to statement posting.
 
-| Title | Description |
+| Rule | Description |
 |-------|-------------|
 | Business date | This rule validates that the business date of the transaction is associated with an open fiscal period in the ledger. |
 | Currency rounding | This rule validates that the transaction amounts are rounded according to the currency rounding rule. |
@@ -76,7 +76,7 @@ The following table lists the transaction header validation rules that are check
 
 The following table lists the transaction line validation rules that are checked against the line details of retail transactions before those transactions are passed to statement posting.
 
-| Title | Description |
+| Rule | Description |
 |-------|-------------|
 | Barcode | This rule validates that all item bar codes that are used on the transaction lines exist in the database. |
 | Charge lines | This rule validates that the sum of the calculated amount and the exempted tax amount of charge lines equals the original calculated amount. |

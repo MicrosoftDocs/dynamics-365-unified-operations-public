@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Compensation pay frequency
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes the Compensation pay frequency entity in Dynamics 365 Human Resources.

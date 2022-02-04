@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-2.md)]
+
 This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>

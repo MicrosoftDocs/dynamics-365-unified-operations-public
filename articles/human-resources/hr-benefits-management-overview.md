@@ -5,7 +5,7 @@ title: Benefits management overview
 description: This topic provides an overview of the Benefits management feature in Dynamics 365 Human Resources. 
 author: twheeloc  
 ms.date: 12/06/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Benefits management overview
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

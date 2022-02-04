@@ -29,6 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Generate ACA reports in Benefits management
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Benefits management tracks information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate. Like the ACA reporting capability in the old **Benefits** workspace, this functionality applies only to legal entities in the United States.

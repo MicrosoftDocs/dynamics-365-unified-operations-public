@@ -5,7 +5,7 @@ title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
 ms.date: 11/17/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: wangchen

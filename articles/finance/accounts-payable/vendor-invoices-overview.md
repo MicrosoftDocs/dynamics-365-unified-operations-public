@@ -5,7 +5,7 @@ title: Vendor invoices overview
 description: This topic provides general information about vendor invoices.
 author: abruer
 ms.date: 06/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

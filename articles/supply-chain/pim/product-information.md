@@ -5,7 +5,7 @@ title: Product information overview
 description: This topic provides information about product information management. Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes. 
 author: t-benebo 
 ms.date: 06/01/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -20,7 +20,7 @@ ms.reviewer: kamaybac
 
 
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic provides information about product information management. Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes. 
 

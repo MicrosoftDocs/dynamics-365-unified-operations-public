@@ -5,7 +5,7 @@ title: Financial consolidations and currency translation overview
 description: This topic describes financial consolidations and currency translation in General ledger.
 author: jiwo
 ms.date: 10/07/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
