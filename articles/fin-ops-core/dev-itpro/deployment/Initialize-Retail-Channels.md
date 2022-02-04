@@ -2,35 +2,26 @@
 # required metadata
 
 title: Initialize Commerce Scale Unit (cloud)
-description: This topic explains how to initialize Commerce Scale Unit (cloud).
+description: This topic explains how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce.
 author: AamirAllaq
-ms.date: 02/03/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: IT Pro
-# ms.devlang:
+audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-# ms.tgt_pltfrm:
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: retail
 ms.author: aamiral
 ms.search.validFrom: 2018-4-30
-ms.dyn365.ops.version: 8.0
 ---
 
 # Initialize Commerce Scale Unit (cloud)
 
 [!include[banner](../includes/banner.md)]
 
-If you're using a Tier-2 sandbox or production environment that has application version 8.1.2.x or later, you must initialize Commerce Scale Unit (cloud) before you can use retail channel functionality either for point of sale (POS) operations or for e-commerce operations that use Retail Server in the cloud. Initialization will deploy a Commerce Scale Unit (cloud).
+This topic explains how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce.
 
-This topic describes the steps for initializing Commerce Scale Unit (cloud).
+If you're using a Tier-2 sandbox or production environment that has application version 8.1.2.x or later, you must initialize Commerce Scale Unit (cloud) before you can use retail channel functionality either for point of sale (POS) operations or for e-commerce operations that use Retail Server in the cloud. Initialization will deploy a Commerce Scale Unit (cloud).
 
 > [!IMPORTANT]
 > For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Commerce Scale Unit. New environments deployed without Commerce Scale Unit will no longer receive quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Commerce Scale Unit (self-hosted). Contact your Microsoft FastTrack solution architect if you require an extension.
@@ -94,10 +85,21 @@ Please make sure the headquarters is available. This is required to register the
 4. Select the version of the Commerce Scale Unit to initialize.
 5. Select a region to initialize Commerce Scale Unit in.
 
-## Configure retail channels to use Commerce Scale Unit
+## Configure channels to use Commerce Scale Unit
 
-1. After Commerce Scale Unit has been deployed, in the head office client go to **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database** to ensure that your retail channels are configured to use the database for this Commerce Scale Unit.
-2. Go to each retail channel and select the Channel Profile for the corresponding Commerce Scale Unit.
+After Commerce Scale Unit has been deployed, you must ensure that your channels are configured to use the database for it. 
+
+To configure your channels to use the Commerce Scale Unit database, follow these steps.
+
+1. In Commerce headquarters, go to **Retail and commerce \> Headquarters setup \> Commerce Scheduler \> Channel database**.
+1. In the left pane, select a channel database.
+1. On the **Retail channel** FastTab, select **Add**, and then select your retail channel in the drop-down list.
+1. Select **Add**, and then select your online channel in the drop-down list. 
+
+When you've finished, go to **Retail and Commerce \> Retail and commerce IT \> Distribution schedule**, and run job 9999.
+
+> [!NOTE] 
+> Job 9999 syncs all new products and customers to the Commerce Scale Unit. This process can take a long time. If the channel must be available just for e-commerce site builder configuration, you can run job 1070 instead of job 9999.
 
 ### Database refresh and Commerce Scale Units
 
