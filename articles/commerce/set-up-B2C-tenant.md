@@ -313,19 +313,15 @@ Once setup of your Azure AD B2C tenant is completed, you must configure the B2C 
 
 To collect the required application information, follow these steps.
 
-1. In the Azure portal, go to **Home \> Azure AD B2C - Applications**.
-1. Select your application, and then in the left navigation pane select **Properties** to obtain the application details.
-1. From the **Application ID** box, collect the application ID of the B2C application created in your B2C tenant. This will later be entered as the **Client GUID** in site builder.
-1. Under **Reply URL**, collect the reply URL.
-1. Go to **Home \> Azure AD B2C – User flows (policies)**, and then collect the names of each user flow policy.
+1. In the Azure portal, go to **Home \> Azure AD B2C - App registrations**.
+1. Select your application, and then in the left navigation pane select **Overview** to obtain the application details.
+1. From the **Application (client) ID** reference, collect the application ID of the B2C application created in your B2C tenant. This will later be entered as the **Client GUID** in site builder.
+1. Click on **Redirect URIs**, and collect the reply URL shown for your site (the Reply URL entered at setup).
+1. Go to **Home \> Azure AD B2C – User flows**, and then collect the full names of each user flow policy.
 
-The following image shows an example of the **Azure AD B2C - Applications** page.
+The following image shows an example of the **Azure AD B2C - App registrations** Overview panel.
 
-![Navigate to the B2C Application within your tenant.](./media/B2CImage_19.png)
-
-The following image shows an example of an application **Properties** page in Azure AD B2C. 
-
-![Copy the Application ID from the B2C Application's Properties.](./media/B2CImage_21.png)
+![Navigate to the B2C Application within your tenant.](./media/ClientGUID_Application_AzurePortal.png)
 
 The following image shows an example of user flow policies on the **Azure AD B2C – User flows (policies)** page.
 
