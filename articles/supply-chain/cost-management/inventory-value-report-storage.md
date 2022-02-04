@@ -48,12 +48,9 @@ The **Inventory value report storage** report is helpful when the output contain
 > [!NOTE]
 > The **Inventory value report storage** report doesn't include subtotals that are defined in the report layout. It also doesn't include general ledger balances, even if those balances are defined in the report layout. Reconciliation to the general ledger must be done by using trial balances. However, the standard **Inventory value** report does include these subtotals and balances.
 
-## Turn on the Inventory value report storage feature
+## Turn the Inventory value report storage feature on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the feature status and enable or disable it if needed. Here, the feature is listed as:
-
-- **Module:** *Cost management*
-- **Feature name:** *Inventory value report storage*
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## <a name="report-configuration"></a>Define inventory value report configurations
 

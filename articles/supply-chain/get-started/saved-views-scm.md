@@ -68,8 +68,8 @@ The following table describes the saved views available for the Master planning 
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Planned orders: Planned order details page | Simplified | This simplified view includes only the fields that are most often used to work with the details of a single planned order. In this way, it provides a quicker overview and a streamlined work process. | Saved views for planned orders |
-| Planned orders: Planned orders list page | Simplified | This simplified view includes only the fields that are most often used to work with the list of planned orders. In this way, it provides a quicker overview and a streamlined work process. | Saved views for planned orders |
+| Planned orders: Planned order details page | Simplified | This simplified view includes only the fields that are most often used to work with the details of a single planned order. In this way, it provides a quicker overview and a streamlined work process. | Saved views for planned orders (Turned on by default starting with version 10.0.25.) |
+| Planned orders: Planned orders list page | Simplified | This simplified view includes only the fields that are most often used to work with the list of planned orders. In this way, it provides a quicker overview and a streamlined work process. | Saved views for planned orders (Turned on by default starting with version 10.0.25.) |
 
 ## Saved views for the Procurement and sourcing module
 
@@ -77,10 +77,10 @@ The following table describes the saved views available for the Procurement and 
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Purchase order details | Order creation | This simplified view is optimized for creating new purchase orders. | Saved views for purchase orders |
-| Purchase order details | Inventory management | This simplified view is optimized for performing inventory-related activities, such as following up on inventory that has been received, receiving inventory, checking net requirements, and adjusting order quantities. | Saved views for purchase orders |
-| Purchase order details | Financial management | This simplified view is optimized for performing finance-related activities, such as invoicing and checking prices, totals, and charges. | Saved views for purchase orders |
-| Purchase order details | Order approval | This simplified view is optimized for approving purchase orders. | Saved views for purchase orders |
+| Purchase order details | Order creation | This simplified view is optimized for creating new purchase orders. | Saved views for purchase orders (Turned on by default starting with version 10.0.25.) |
+| Purchase order details | Inventory management | This simplified view is optimized for performing inventory-related activities, such as following up on inventory that has been received, receiving inventory, checking net requirements, and adjusting order quantities. | Saved views for purchase orders (Turned on by default starting with version 10.0.25.) |
+| Purchase order details | Financial management | This simplified view is optimized for performing finance-related activities, such as invoicing and checking prices, totals, and charges. | Saved views for purchase orders (Turned on by default starting with version 10.0.25.) |
+| Purchase order details | Order approval | This simplified view is optimized for approving purchase orders. | Saved views for purchase orders (Turned on by default starting with version 10.0.25.) |
 
 ## Saved views for the Product information management module
 
@@ -88,11 +88,11 @@ The following table describes the saved views available for the Product informat
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Released products list | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
-| Released product details | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
-| Released product details | Logistical information management | A simplified page view that only includes the fields most often used when managing logistical information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
-| Released product details | Purchase information management | A simplified page view that only includes the fields most often used when managing purchase information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
-| Released product details | Sales information management | A simplified page view that only includes the fields most often used when managing sales-related information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released products list | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released product details | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released product details | Logistical information management | A simplified page view that only includes the fields most often used when managing logistical information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released product details | Purchase information management | A simplified page view that only includes the fields most often used when managing purchase information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
+| Released product details | Sales information management | A simplified page view that only includes the fields most often used when managing sales-related information for products. | Saved views for released products (Turned on by default starting with version 10.0.21.) |
 
 ## Saved views for the Production control module
 
@@ -111,10 +111,10 @@ The following table describes the saved views available for the Sales and market
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Packing slip journal | Journal review | This simplified view includes only the fields that are most often used to review packing slip journals. | Saved views for sales and marketing |
-| Sales order | Order creation | This simplified view includes only the fields that are most often used to create sales orders. | Saved views for sales and marketing |
-| Sales order | Order review | This simplified view includes only the fields that are most often used to review sales orders. | Saved views for sales and marketing |
-| Sales quotation | Quote creation | This simplified view includes only the fields that are most often used to create sales quotations. | Saved views for sales and marketing |
+| Packing slip journal | Journal review | This simplified view includes only the fields that are most often used to review packing slip journals. | Saved views for sales and marketing (Turned on by default starting with version 10.0.25.) |
+| Sales order | Order creation | This simplified view includes only the fields that are most often used to create sales orders. | Saved views for sales and marketing (Turned on by default starting with version 10.0.25.) |
+| Sales order | Order review | This simplified view includes only the fields that are most often used to review sales orders. | Saved views for sales and marketing (Turned on by default starting with version 10.0.25.) |
+| Sales quotation | Quote creation | This simplified view includes only the fields that are most often used to create sales quotations. | Saved views for sales and marketing (Turned on by default starting with version 10.0.25.) |
 
 ## Saved views for the Warehouse management module
 

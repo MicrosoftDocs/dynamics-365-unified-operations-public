@@ -34,10 +34,10 @@ From the **View master planning progress** page, you can view details of histori
 
 ### Turn on and use the Master plan progress visualization feature
 
-To use this functionality, follow these steps.
+To use this functionality, follow these steps. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
 
-1. In the **Feature management** workspace, on the **New** tab, select **Master planning progress visualization** in the list. If the feature doesn't appear on the **New** tab, look on the **Not enabled** and **All** tabs.
-1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on. (As of Supply Chain Management version 10.0.21, this feature is turned on by default.)
+1. In the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, on the **All** tab, select **Master planning progress visualization** in the list.
+1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on. 
 
 The **View master planning progress** page can display both historical planning jobs and active planning jobs. 
 

@@ -51,18 +51,18 @@ The preceding video ([Change management capabilities in Dynamics 365 Supply Chai
 
 As of Supply Chain Management version 10.0.25, Engineering Change Management and several of its related features are turned on by default, but you can manually disable or re-enable the various features by following the instructions in this section.
 
-### Turn on or off the basic engineering change management features
+### Turn the basic engineering change management features on or off
 
-To turn on or off the basic engineering change management features, follow these steps.
+To turn the basic engineering change management features on or off, follow these steps.
 
 1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 1. Check for updates.
 1. Turn on the feature that is named *Engineering Change Management*.
 1. If you also want to track the version dimension of products in transactions (optional), also turn on the feature that is named *Product dimension version*.
 
-### Turn on or off the required configuration keys
+### Turn the required configuration keys on or off
 
-Once the Engineering Change Management feature is enabled on your system, you may also need to enable one or more configuration keys before you can use. If you aren't using the feature, you might choose to turn these off. As of Supply Chain Management version 10.0.25, all of the required keys are enabled by default, but can still choose to disable them if you want.
+Once the Engineering Change Management feature is enabled on your system, you may also need to enable one or more configuration keys before you can use. If you aren't using the feature, you might choose to turn these off. As of Supply Chain Management version 10.0.25, all of the required keys are turned on by default, but you can still choose to turn them off if you want.
 
 To change your configuration key settings for Engineering Change Management features, follow these steps.
 
@@ -83,9 +83,7 @@ To change your configuration key settings for Engineering Change Management feat
 
 ### Turn on additional engineering change management features
 
-<!-- KFM: continue here -->
-
-After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to feature management. Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information.
+After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to feature management. Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information. As of Supply Chain Management version 10.0.25, all of these features are turned on by default, but you can still choose to turn them off if you want.
 
 | Feature name in feature management | Description | Feature state |
 |---|---|---|

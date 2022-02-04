@@ -63,93 +63,93 @@ The table also lists features that were previously in public preview, but have c
 
 | Module | Feature name | Feature state |
 | --- | --- | --- |
-| Asset management | Apply rules for grouping work orders while running a maintenance plan | Generally available |
-| Asset management | Counter-based maintenance enhancements | Generally available |
-| Cost management | Cost calculation level | Generally available |
+| Asset management | [Apply rules for grouping work orders while running a maintenance plan](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Generally available |
+| Asset management | [Counter-based maintenance enhancements](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Generally available |
+| Cost management | [Cost calculation level](../cost-management/cost-calculation-level.md) | Generally available |
 | Cost management | Enable user-defined batch number setup for inventory closing reverse | Generally available |
-| Cost management | Inventory closing progress details | Generally available |
-| Cost management | Options of defaulting financial dimensions for inventory standard cost revaluation | Generally available |
+| Cost management | [Inventory closing progress details](whats-new-scm-10-0-21.md) | Generally available |
+| Cost management | [Options of defaulting financial dimensions for inventory standard cost revaluation](../cost-management/manage-standard-cost-updates.md) | Generally available |
 | Cost management | Inventory value report data clean up | On by default |
-| Cost management | Inventory value report storage | On by default |
+| Cost management | [Inventory value report storage](../cost-management/inventory-value-report-storage.md) | On by default |
 | Cost management | Show inventory closing log in grid | On by default |
-| Engineering change management | Enable change management on existing products | On by default <!-- KFM: continue here --> |
-| Engineering change management | Engineering Change Management | On by default |
-| Engineering change management | Engineering notifications for production | On by default |
-| Engineering change management | Improved attribute inheritance for Engineering Change Management | On by default |
-| Engineering change management | Manage changes to formulas and their ingredients | On by default |
-| Engineering change management | Product readiness checks | On by default |
-| Engineering change management | Variant generation for engineering products | On by default |
+| Engineering change management | [Enable change management on existing products](../engineering-change-management/change-management-existing-products.md) | On by default |
+| Engineering change management | [Engineering Change Management](../engineering-change-management/product-engineering-overview.md) | On by default |
+| Engineering change management | [Engineering notifications for production](../engineering-change-management/engineering-change-management.md) | On by default |
+| Engineering change management | [Improved attribute inheritance for Engineering Change Management](../engineering-change-management/engineering-attributes-and-search.md) | On by default |
+| Engineering change management | [Manage changes to formulas and their ingredients](../engineering-change-management/manage-formula-changes.md) | On by default |
+| Engineering change management | [Product readiness checks](../engineering-change-management/product-readiness.md) | On by default |
+| Engineering change management | [Variant generation for engineering products](../engineering-change-management/engineering-variants.md) | On by default |
 | Inventory and warehouse management | Navigation to BOM version from BOM lines | Mandatory |
-| Master planning | Batchable firming and consolidation for planned bulk and pack batch orders | Generally available |
+| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Generally available |
 | Master planning | Resource planning with maintenance | Generally available |
 | Master planning | Enable master plan setup wizard features | Mandatory |
-| Master planning | Forecast model selection on Demand forecast details | Mandatory |
-| Master planning | Master planning progress visualization | Mandatory |
-| Master planning | Parallel firming of planned orders | Mandatory |
-| Master planning | Planned order firming with filtering | On by default |
-| Master planning | Saved views for planned orders | On by default |
+| Master planning | [Forecast model selection on Demand forecast details](../master-planning/manual-adjus[Monitor a master planning run](../master-planning/tasks/monitor-master-planning-run.md)tments-baseline-forecast.md) | Mandatory |
+| Master planning | [Master planning progress visualization](../master-planning/tasks/monitor-master-planning-run.md) | Mandatory |
+| Master planning | [Parallel firming of planned orders](../master-planning/planning-optimization/planned-order-firming.md) | Mandatory |
+| Master planning | [Planned order firming with filtering](../master-planning/planning-optimization/planned-order-firming.md) | On by default |
+| Master planning | [Saved views for planned orders](saved-views-scm.md) | On by default |
 | Procurement and sourcing | Disable Purchase Requisition Distribution Reset Button | Generally available |
-| Procurement and sourcing | Enable resetting procurement related workflows | Generally available |
+| Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | Generally available |
 | Procurement and sourcing | Ability to confirm accepted purchase orders from vendor collaboration in batch | Mandatory |
 | Procurement and sourcing | Purchase agreement Closed status | Mandatory |
 | Procurement and sourcing | Add lines to PO invoices associated with a purchase agreement | On by default |
 | Procurement and sourcing | Add Quantity ordered field to the Posting product receipt page | On by default |
-| Procurement and sourcing | Allow vendors to apply for procurement categories through vendor collaboration | On by default |
+| Procurement and sourcing | [Allow vendors to apply for procurement categories through vendor collaboration](../procurement/category-requests-from-vendors.md) | On by default |
 | Procurement and sourcing | Charges from and to amounts on Purchase orders | On by default |
 | Procurement and sourcing | Charges setup with site and warehouse | On by default |
 | Procurement and sourcing | Enable purchase duty calculation based on annual tariff | On by default |
-| Procurement and sourcing | Purchase agreement responsible party | On by default |
-| Procurement and sourcing | Saved views for purchase orders | On by default |
-| Product information management | Strict validation on default order quantities | Mandatory |
+| Procurement and sourcing | [Purchase agreement responsible party](../procurement/purchase-agreements.md) | On by default |
+| Procurement and sourcing | [Saved views for purchase orders](saved-views-scm.md) | On by default |
+| Product information management | [Strict validation on default order quantities](../production-control/default-order-settings.md) | Mandatory |
 | Product information management | Bill of materials report pre-processing to avoid timeout | On by default |
 | Product information management | Default financial dimensions separately when using item templates | On by default |
 | Product information management | Enable product dimension groups for item templates | On by default |
 | Product information management | Regenerate product variant names based on nomenclature | On by default |
-| Product information management | Variant suggestions page improvements | On by default |
+| Product information management | [Variant suggestions page improvements](../pim/tasks/create-predefined-product-variants.md) | On by default |
 | Production control | Improved production catch weight quantity picking | Generally available |
 | Production control | A new button to Stop break has been added to the Job Card Terminal page | Mandatory |
-| Production control | Enable automatic generation of license plate number when reporting as finished in the job card device | Mandatory |
+| Production control | [Enable automatic generation of license plate number when reporting as finished in the job card device](../production-control/production-floor-execution-configure.md) | Mandatory |
 | Production control | Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor | Mandatory |
-| Production control | Feature for locking job card device and job card terminal so that they can be sanitized | Mandatory |
+| Production control | [Feature for locking job card device and job card terminal so that they can be sanitized](../production-control/production-floor-execution-configure.md) | Mandatory |
 | Production control | Improvements to the Approve and Transfer jobs dialogs | Mandatory |
-| Production control | License plate for reporting as finished added to the Job Card Device | Mandatory |
-| Production control | Print label from Job Card Device | Mandatory |
-| Production control | Production floor execution | Mandatory |
-| Production control | Asset management functionality for the production floor execution interface | On by default |
-| Production control | Job search for the production floor execution interface | On by default |
-| Production control | Override default production reservation | On by default |
-| Production control | Show full serial, batch, and license plate numbers in the production floor execution interface | On by default |
-| Sales and marketing | Sales order details performance enhancement | Generally available |
+| Production control | [License plate for reporting as finished added to the Job Card Device](../production-control/production-floor-execution-configure.md) | Mandatory |
+| Production control | [Print label from Job Card Device](../production-control/production-floor-execution-configure.md) | Mandatory |
+| Production control | [Production floor execution](../production-control/production-floor-execution-configure.md) | Mandatory |
+| Production control | [Asset management functionality for the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
+| Production control | [Job search for the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
+| Production control | [Override default production reservation](../production-control/override-default-reservation-principle.md) | On by default |
+| Production control | [Show full serial, batch, and license plate numbers in the production floor execution interface](whats-new-scm-10-0-21.md) | On by default |
+| Sales and marketing | [Sales order details performance enhancement](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Generally available |
 | Sales and marketing | Sales quotation details performance enhancement | Generally available |
 | Sales and marketing | Sales order referenced data export policy | Mandatory |
-| Sales and marketing | Sales order to purchase order line deletion policy | Mandatory |
-| Sales and marketing | Sales quotation referenced data export policy | Mandatory |
-| Sales and marketing | Contact person data entity export optimization | On by default |
+| Sales and marketing | [Sales order to purchase order line deletion policy](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy) | Mandatory |
+| Sales and marketing | [Sales quotation referenced data export policy](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy)| Mandatory |
+| Sales and marketing | [Contact person data entity export optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization) | On by default |
 | Sales and marketing | Enable lookup for sales quotation document introduction and document conclusion fields | On by default |
-| Sales and marketing | Improve "Top 100" customers report performance | On by default |
+| Sales and marketing | [Improve "Top 100" customers report performance](whats-new-scm-10-0-23.md) | On by default |
 | Sales and marketing | Recalculate estimated customer balance | On by default |
-| Sales and marketing | Sales return order line registration with decimal precision with and without catch weight | On by default |
-| Sales and marketing | Saved Views for Sales and Marketing | On by default |
+| Sales and marketing | [Sales return order line registration with decimal precision with and without catch weight](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight) | On by default |
+| Sales and marketing | [Saved Views for Sales and Marketing](saved-views-scm.md) | On by default |
 | Sales and marketing | Single click sales order confirmation | On by default |
-| Warehouse management | Cross docking templates with location directives | Generally available |
-| Warehouse management | Disable expected receipts from quality orders that sample blocked inventory | Generally available |
+| Warehouse management | [Cross docking templates with location directives](../warehousing/planned-cross-docking.md) | Generally available |
+| Warehouse management | [Disable expected receipts from quality orders that sample blocked inventory](../inventory/inventory-blocking.md) | Generally available |
 | Warehouse management | License plate receiving history | Generally available |
-| Warehouse management | Material handling equipment interface | Generally available |
-| Warehouse management | Round quantities down to nearest sales unit on release to warehouse | Generally available |
+| Warehouse management | [Material handling equipment interface](../warehousing/mhax.md) | Generally available |
+| Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](whats-new-scm-10-0-19.md) | Generally available |
 | Warehouse management | Scale unit support for warehouse app work lists | Generally available |
 | Warehouse management | Shipment wave label details | Generally available |
-| Warehouse management | Use faster API for containers closing/reopening on packing station | Generally available |
-| Warehouse management | Validate templates selected for replenishment jobs | Generally available |
+| Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | Generally available |
+| Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | Generally available |
 | Warehouse management | Allow replenishment template to use existing immediate replenishment work (across units) | Mandatory |
 | Warehouse management | Automatic assigning of the GUIDs on WHS user creation | Mandatory |
 | Warehouse management | Capture product variants and tracking dimensions in the warehousing app during load item receiving | Mandatory |
-| Warehouse management | Change the inventory status of items controlled by tracking dimensions | Mandatory |
-| Warehouse management | Change work pool on work | Mandatory |
-| Warehouse management | Cluster position full | Mandatory |
-| Warehouse management | Cluster Putaway Feature | Mandatory |
-| Warehouse management | Confirm and transfer | Mandatory |
-| Warehouse management | Confirm outbound shipments from batch jobs | Mandatory |
-| Warehouse management | Control whether to display a receiving summary page on mobile devices | Mandatory |
+| Warehouse management | [Change the inventory status of items controlled by tracking dimensions](../inventory/inventory-statuses.md) | Mandatory |
+| Warehouse management | [Change work pool on work](../warehousing/change-work-pool-on-work.md) | Mandatory |
+| Warehouse management | [Cluster position full](../warehousing/cluster-position-full.md) | Mandatory |
+| Warehouse management | [Cluster Putaway Feature](../warehousing/putaway-clusters.md) | Mandatory |
+| Warehouse management | [Confirm and transfer](../warehousing/confirm-and-transfer.md) | Mandatory |
+| Warehouse management | [Confirm outbound shipments from batch jobs](../warehousing/confirm-outbound-shipments-from-batch-jobs.md) | Mandatory |
+| Warehouse management | [Control whether to display a receiving summary page on mobile devices](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Mandatory |
 | Warehouse management | Deferred processing of manual inventory movement operation | Mandatory |
 | Warehouse management | Do not allow to create loads, that do not meet wave load building template requirements | Mandatory |
 | Warehouse management | Enhanced license plate label layouts | Mandatory |

@@ -25,10 +25,7 @@ If you're using the process manufacturing capabilities of Microsoft Dynamics 365
 
 ## Turn on this feature in your system
 
-To use this capability, you must complete the following tasks:
-
-1. Enable the *Engineering change management* feature and its configuration key, as described in [Engineering change management overview](product-engineering-overview.md). As is mentioned in that topic, make sure that you also enable the **Change management for process manufacturing** license key, which is nested below the main **Engineering Change Management** license key.
-1. Turn on the *Manage changes to formulas and their ingredients* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The functionality described in this topic requires that both the *Engineering Change Management* and *Manage changes to formulas and their ingredients* features be turned on for your system. As of Supply Chain Management version 10.0.25, both of these features are turned on by default, but you can turn them off if you want. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ## Feature naming conventions
 
