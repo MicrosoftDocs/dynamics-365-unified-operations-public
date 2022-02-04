@@ -55,6 +55,10 @@ If any of the prerequisites are missing when you try to turn on the omni-channel
 
 ![Message about prerequisite features and configurations.](../dev-itpro/media/COP_PRE.png)
 
+> [!Note]
+> When the **Omni-channel Commerce order payments** feature is enabled, the Call Center **enable order completion** button will be hidden at the Call Center>General tab for the Call Center channels.
+
+
 ### Prerequisite features
 
 The following features are required for omni-channel Commerce order payments to work correctly.
