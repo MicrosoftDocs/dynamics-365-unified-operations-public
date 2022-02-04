@@ -1035,8 +1035,7 @@
         - name: View journal entries and transactions
           href: general-ledger/view-journal-entries-transactions.md
         - name: Trial balance with transactional detail report
-          href: public-sector/general-ledger-public-sector-trial-balance.md
-          href: public-sector/general-ledger-public-sector-trial-balance.md          
+          href: public-sector/general-ledger-public-sector-trial-balance.md      
         - name: Journalize posted journal entries
           href: general-ledger/tasks/journalize-posted-journal-entries.md
         - name: Currency revaluation in a consolidation company
