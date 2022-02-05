@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Image Preview subpattern
 description: This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container. 
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 12444
-ms.assetid: ac176ec7-7f14-47b8-908c-d2175a29fc5c
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Image Preview subpattern
@@ -93,7 +78,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **RetailVisualProfile** **(Login)** 
 
-[![Example of Image Preview.](./media/imagepreview2.png)](./media/imagepreview2.png)
+[![Example of Image Preview for RetailVisualProfile.](./media/imagepreview2.png)](./media/imagepreview2.png)
 
 ## Resources
 ### Typically used by patterns

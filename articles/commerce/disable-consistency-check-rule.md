@@ -1,9 +1,9 @@
 ---
 # required metadata
-title: Disable rules in the retail transaction consistency checker
-description: This topic describes the functionality for disabling transaction consistency checker rules in Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/15/2019
+title: Disable rules used in the transaction validation process
+description: This topic describes the functionality for disabling transaction validation rules in Microsoft Dynamics 365 Commerce.
+author: analpert
+ms.date: 12/11/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -25,17 +25,14 @@ ms.dyn365.ops.version:
 
 ---
 
-# Disable rules in the retail transaction consistency checker 
+# Disable rules used in the transaction validation process
 
 [!include [banner](../includes/banner.md)]
 
-Retailers can have business scenarios and processes that are unique to them. Therefore, not all the rules that are included by default in the commerce transaction consistency checker are applicable to all retailers. To accommodate differences, Microsoft Dynamics 365 Commerce provides functionality that can be used to disable the rules that aren't applicable.
+Retailers can have business scenarios and processes that are unique to them. Therefore, not all rules that are included in the commerce transaction validation process are applicable to all retailers. To accommodate differences, Microsoft Dynamics 365 Commerce provides functionality that can be used to disable rules that aren't applicable.
 
-To view the list of rules that are available in the transaction consistency checker in your environment, and to see the status of each rule, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**, and select the **Transaction validation** tab.
+To view the list of rules that are available in the transaction validation process in your environment, and to see the status of each rule, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** and select the **Transaction validation** tab. All enabled rules are used to validate transactions during the **Validate store transactions** process and must pass for transactions to be collected and posted on a transactional statement.
 
-By default, the status of every rule is set to **Enabled**. Therefore, all the rules are used to validate transactions before they are pulled into the commerce statements. To disable a rule, change its status to **Disabled**. Disabled rules aren't considered when transactions are validated during the statement calculation process.
-
-To bypass the whole validation process, regardless of the rules that are enabled, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**, and then, on the **Transaction validation** tab, set the **Disable consistency checker for Commerce transactions** option to **Yes**. After this option is set to **No**, it can't be set back to **Yes** from the user interface (UI).
-
+By default, the status of every rule is set to **Enabled**. Therefore, all the rules are used to validate transactions before they can be pulled into the commerce transactional statements. To disable a rule, change its status to **Disabled**. Disabled rules aren't considered when transactions are validated during **Validate store transactions** process.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

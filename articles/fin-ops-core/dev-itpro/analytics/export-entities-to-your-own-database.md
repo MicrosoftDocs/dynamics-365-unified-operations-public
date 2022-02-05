@@ -4,7 +4,7 @@
 title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: peakerbl
-ms.date: 08/09/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how administrators can export data entities from the application into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). The BYOD feature was released in Microsoft Dynamics AX with platform update 2 (August 2016). Minor improvements and bug fixes have been included in subsequent platform updates.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This topic explains how administrators can export data entities from the application into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). 
 
 The BYOD feature lets administrators configure their own database, and then export one or more data entities that are available in the application into the database. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
@@ -63,12 +66,12 @@ For one-box development environments, you can create a database in the local Mic
 
 You should also create a SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
 
-If you're using the BYOD feature for integration with a business intelligence (BI) tool, you should consider using clustered columnstore indexes (CCIs). CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads.
+If you're using the BYOD feature for integration for analytical purposes, you should consider using clustered columnstore indexes as described in [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15).
 
 > [!NOTE]
-> Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable access to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately.
-> 
-> The use of a performance tier for the Azure SQL database is recommended. For more information about tiers, see [SQL Azure tiers](/azure/azure-sql/database/service-tiers-dtu).
+> Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more information about self-service deployments, see [Self-service deployment FAQ](../deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
+> > 
+> Selecting the correct service tier and compute size, is critical to secure expected performance. While doing this, it is important to consider the total, targeted workload and not just the load based on the Finance and Operations export. For production environments, it is recommended to use, at a minimum, compute size P2 in the Premium service tier or compute size S4 in the Standard service tier. Your specific BYOD usage might very well require a service tier greater than the above minimum. For more details about tiers and compute sizes, see [SQL Azure service tiers](/azure/azure-sql/database/service-tiers-dtu) and [Detailed resource limits](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes). To determine DTU needs or utilization, see [Determine number of DTUs needed by a workload](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)
 
 ## Configuring the entity export option
 
@@ -88,10 +91,10 @@ If you're using the BYOD feature for integration with a business intelligence (B
 
 4. Select **Validate**, and make sure that the connection is successful.
 
-    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create a SQL premium database.
+    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining columnstore indexes for entities that are copied. 
     - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
 
-For scenarios in which reporting systems read data from BYOD, there is always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync is in progress. You can achieve this result by not having the reporting systems read directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the instance and hence will be constantly changing. Use the SQL trigger feature to determine when the data sync has been completed, and then hydrate the downstream reporting systems.
+For scenarios in which analytical applications data is read from BYOD, there is always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync is in progress. You can achieve this result by not reading the analytical data apps directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the instance and hence will be constantly changing. Use the SQL trigger feature to determine when the data sync has been completed, and then transform and fill data to the downstream analytical data scenarios.
 
 When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
 
@@ -163,12 +166,28 @@ You can create a data project that has multiple entities. You can schedule this 
 
 #### Exporting data across companies
 
-Jobs that are executed in batch can also be used to export data across companies. Starting with version 10.0.16, all cross-company execution will be sequential by default. This change improves performance that was not reliable with parallel execution.
+Jobs that are executed in batch can also be used to export data across companies. This requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BOYD database may cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, starting in version 10.0.16, all execution across companies will be sequential per company. This means that jobs with a high number of entities and companies take longer to run.
+
+To reduce the overall export times, consider the following:
+
+- Make sure that the same data entity is not in multiple projects so that the projects can run without conflicting with each other.
+- Put entities that take a long time to run in separate projects. This will allow the other projects to run faster. 
+- Use **Full push only** exports instead of **Incremental only** exports for smaller data sizes. For example, you may want to do this if some of the entities have record counts of around 1,000 or less.
+- Create cross-company entities if you do not need to export data per company, individually. 
+
+To create a cross-company entity:
+1. Copy the current per company entity. 
+2. Change the name of **PublicCollectionName** and **PubliceEntityName** of the copied entity. 
+3. Add a column for **DataAreaId**, if needed. 
+4. Remove the value for the **PrimaryCompanyContext** property in order to not filter by the primary company during export.
+5. Generate the staging table, and then build, and deploy the new entity. 
+6. Test the new entity to make sure that it works properly and performs adequately at required scale.
+7. Schedule an export job in batch for the new entity, without selecting the **Export across all companies** option.
 
 > [!NOTE]
-> Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with smaller number of entities is recommended.
+> Adding multiple entities to an export project for BYOD must be done carefully to ensure that the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided. Creating multiple jobs with a smaller number of entities is recommended.
 >
-> Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is discouraged. You must use the **Export in batch** option.
+> Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is not supported. You must use the **Export in batch** option.
 
 ### Incremental export
 When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the database and specify an appropriate change tracking option, as described earlier in this topic.
@@ -183,7 +202,7 @@ Because the first push is always a full push, we do not recommend that you do an
 We recommend that you first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
 
 ### Timeouts
-The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. Starting with the release of Platform update 18, you can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**. These timeouts are company specific and must be set separately for each company.
+The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. You can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**. These timeouts are company specific and must be set separately for each company.
 
 ### Known limitations
 

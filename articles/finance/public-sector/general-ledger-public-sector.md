@@ -2,10 +2,10 @@
 # required metadata
 
 title: General ledger in the public sector overview
-description: This topic describes the General ledger functionality that is available for the public sector.
-author: ShylaThompson
+description: This topic describes the General ledger functionality that's available for organizations in the public sector.
+author: v-kiarnd
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -21,7 +21,7 @@ ms.custom: ["27211", "intro-internal"]
 ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: brpotter
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the General ledger functionality that is available for the public sector.
+This topic describes the General ledger functionality that's available for organizations in the public sector.
 
 ## How do General ledger parameters need to be set for public sector organizations?
 

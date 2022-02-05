@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.21
 # Use the Inventory Visibility app
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 This topic describes how to use the Inventory Visibility app.
 
@@ -58,8 +58,6 @@ To post an on-hand query, enter the query in the request body. Use the pattern t
 ![On-hand query settings](media/inventory-visibility-query-settings.png "On-hand query settings")
 
 ### Reservation posting
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Use the **Reservation Posting** tab to post a reservation request. Before you can post a reservation request, you must turn on the *OnHandReservation* feature. For more information about this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
 

@@ -50,7 +50,7 @@ You can add **Excel\\Range** and **Excel\\Cell** nested elements for the **Excel
 
 ![Adding nested elements on the Format designer page.](./media/er-design-configuration-word-image4.gif)
 
-When you save your changes to the ER format at design time, the hierarchical format structure is stored in the attached Word template as a [custom XML part](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) that is named **Report**. You must access the modified template, download it from Finance, store it locally, and open it in the Word desktop application. The following illustration shows the locally stored sample template for the control report that contains the **Report** custom XML part.
+When you save your changes to the ER format at design time, the hierarchical format structure is stored in the attached Word template as a [custom XML part](/visualstudio/vsto/custom-xml-parts-overview) that is named **Report**. You must access the modified template, download it from Finance, store it locally, and open it in the Word desktop application. The following illustration shows the locally stored sample template for the control report that contains the **Report** custom XML part.
 
 ![Previewing the sample report template in the Word desktop application.](./media/er-design-configuration-word-image5.gif)
 

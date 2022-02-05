@@ -95,7 +95,7 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 59. Click Add Attribute.
 60. In the Name field, type 'Desc'.
 61. Click OK.
-![ER Operations designer page.](../media/er-financial-dimensions-guides-format1.png)
+![Format designer page tree.](../media/er-financial-dimensions-guides-format1.png)
 
 ## Map report elements to data sources
 1. Click the Mapping tab.
@@ -144,7 +144,7 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 44. Click Bind.
 45. Click Save.
 46. Close the page.
-![ER Operations designer page.](../media/er-financial-dimensions-guides-format2.png)
+![Format designer page, report elements mapped to data sources.](../media/er-financial-dimensions-guides-format2.png)
 
 
 

@@ -3,7 +3,7 @@
 
 title: Electronic reporting sample vendor checks
 description: This topic provides general information about how to use the Electronic reporting sample check formats.
-author: ShylaThompson
+author: sunfzam
 ms.date: 06/14/2017
 ms.topic: article
 ms.prod: 

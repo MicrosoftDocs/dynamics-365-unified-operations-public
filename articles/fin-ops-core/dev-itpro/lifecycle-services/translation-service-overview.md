@@ -3,9 +3,9 @@
 
 title: Dynamics 365 Translation Service overview
 description: This topic provides information about the Microsoft Dynamics 365 Translation Service (DTS).
-author: ejcho
-ms.date: 06/09/2021
-ms.topic: article
+author: abmotgi
+ms.date: 10/25/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -21,7 +21,7 @@ ms.custom: ["6154", "intro-internal"]
 ms.assetid: ejchoGIT
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ejcho
+ms.author: abmotgi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,7 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Microsoft Dynamics 365 Translation Service (DTS) is hosted in Microsoft Dynamics Lifecycle Services (LCS). It's designed to enhance the experience for partners and independent software vendors (ISVs) when they translate their solutions or add a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).
 
-DTS uses a machine translation (MT) system that is custom-trained for [Microsoft General Availability (GA) languages](./translation-service-overview.md#glossary) to maximize the quality of the translation output. DTS also supports translation recycling from the linguistic assets of Microsoft Dynamics and partners/ISVs. Therefore, identical strings are translated one time and then consistently reused.
+If you're interested in learning the basics and best practices of DTS, consider completing the [Translate Dynamics 365 apps and documentation with Dynamics 365 Translation Service](/learn/modules/dynamics-translation-service/) module on Microsoft Learn.
+
+DTS uses product-specific machine translation (MT) models that are custom-trained for [Microsoft General Availability (GA) languages](./translation-service-overview.md#glossary) to maximize the quality of the translation output. DTS also supports translation recycling from the linguistic assets of Microsoft Dynamics and partners/ISVs. Therefore, identical strings are translated one time and then consistently reused.
 
 The following illustration shows, at a high level, how the service works.
 
@@ -42,8 +44,8 @@ The following illustration shows, at a high level, how the service works.
 ## Recycling existing translations
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [Translation memory files](./use-translation-service-tm.md).
 
-## Custom-trained MT system
-DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT system can only be used for GA languages, unless partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
+## Custom-trained MT model
+DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator's advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT model can be used for requests, provided that the source or target language is English and partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT model that is specific to the translation request that the XLIFF TM files are submitted for.
 
 
 ## Supported products
@@ -70,21 +72,20 @@ Sign in to LCS, and scroll to the right side of the page. Expand the tiles waffl
 Create a new project, or open an existing project. On the project dashboard, in the **More tools** section, select the **Translation service** tile. Alternatively, on the project dashboard, select the **Menu** button, and then select **Translation service**.
 
 ### Accessing DTS from the LCS home page vs. accessing it from within an LCS project
-When you access DTS from the LCS home page and create a translation request, you can select the product that is used for the request. To add more requests that use different products, you can just change the product selection. You don't have to close the service and open a different translation project.
+When you access DTS from the LCS home page and create a translation request, you can select the product that is used for the request. To add more requests that use different products, you can just change the product selection. You don't have to close the service and open a different translation project. This option is convenient when you work on multiple product translation projects.
 
-This option is convenient when you work on multiple product translation projects. However, because you access the service outside an LCS project, no other users can view your requests on the DTS dashboard. Instead, this option gives you your own DTS dashboard that shows all the translation requests that you've made from within all LCS projects and from the LCS home page.
 
-The following illustration shows an example of the DTS dashboard that you open from the LCS home page.
+The following illustration shows an example of the DTS dashboard that you open from the LCS home page. This dashboard shows all requests that users from your organization have made from the home page (outside an LCS project). 
 
 ![DTS dashboard that is opened from the LCS home page.](./media/dts-home-dashboard.png "DTS dashboard that is opened from the LCS home page")
 
-Because an LCS project is always tied to a product, any translation request that you submit from a project automatically carries the product type and version information from the project. You can't select a different product for the request.
+Because an LCS project is always tied to a product, any translation request that you submit from a project automatically carries the product type and version information from the project. You can't select a different product for the request. 
 
-In an LCS project, the project owner and the users will have permission to access the DTS dashboard and the translation requests that are submitted from within that project. Therefore, this option is useful when you work with a group of people on one product translation project in LCS.
-
-The following illustration shows an example of the DTS dashboard that you open from within an LCS project.
+The following illustration shows an example of the DTS dashboard that you open from within an LCS project. Only the project owner and users who have access to the project will be able to see these requests. Therefore, this option is useful when you work with a group of people on one product translation project in LCS. 
 
 ![DTS dashboard that is opened from within a project.](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
+
+In both situations, users who can view the request will have read access. However, to regenerate the request, they must take ownership of it in the dashboard.
 
 ## Glossary
 

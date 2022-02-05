@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Lookup form pattern
 description: This topic provides information about the Lookup form pattern. 
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 12911
-ms.assetid: 0bc7bde2-6150-4a80-8738-9a5201b51df2
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Lookup form pattern
@@ -134,13 +119,13 @@ Form: **SysLanguageLookup** (Click **Settings** &gt; **User settings** on the na
 
 Form: **CaseCategoryLookup** (Click **Common** &gt; **Common** &gt; **Cases** &gt; **All cases**, and then select a case to go to the details.) 
 
-![Example of lookup form with tabs.](./media/lookupform5.png)
+![Example of lookup form with tabs for CaseCategoryLookup.](./media/lookupform5.png)
 
 ### Lookup with preview
 
 Form: **HcmWorkerLookup** (Click **Human resources** &gt; **Common** &gt; **Organization** &gt; **Positions** &gt; **Positions**, and then click a record to go to the details. Expand the **Worker assignment** FastTab, click **New**, and then click the drop-down arrow in the **Worker** field.) 
 
-[![Example of lookup form with preview.](./media/lookupform6.png)](./media/lookupform6.png)
+[![Example of lookup form with preview for HcmWorkerLookup.](./media/lookupform6.png)](./media/lookupform6.png)
 
 ## Appendix
 ### Frequently asked questions

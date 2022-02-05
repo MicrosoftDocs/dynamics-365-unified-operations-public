@@ -5,7 +5,7 @@ title: General Data Protection Regulation overview
 description: This topic provides information about the user log functionality in Finance and Operations.
 author: ToddLefor
 ms.date: 07/23/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: ["10031", "intro-internal"]
 ms.search.region: Global
@@ -333,11 +333,11 @@ Personal data might also be contained in other roles that aren't listed here. Pa
 
 As you use Finance and Operations apps, you might find that you generate or collect large amounts of data that resides in multiple data stores. To help you make sense of where your data resides, we've introduced a data marker for each piece of data in our data stores. This marker is called "Asset Classification," and it can be used to identify or track personal data. Any data that you collect has been described as "customer content." Some customer content might contain personal data, and some customer content might contain business data. You can choose to treat all customer content as personal data, or you can change the classification yourself, so that you can identify and track any data that you feel is considered "Personal Data." Although Microsoft has a supplied a set of default classifications, you're free to use any classification or identifiers that you choose.
 
+<!--
 <Link to documentation on how to modify asset classifications>
-
 <Asset Classification table>
-
 <Link to form that prints the full inventory>
+-->
 
 ![Solution explorer showing the AssetClassification field in the properties.](../media/gdpr-asset-classification-detail-invent-section.jpg)
 
@@ -349,7 +349,7 @@ Microsoft mandates that all users of Microsoft software where personal data is c
 
 ### What is this feature?
 
-As the tenant admin of the service, you will be required to set up Azure AD Age Gating and/or MSA age gating. <link to azure doc>
+As the tenant admin of the service, you will be required to set up Azure AD Age Gating and/or MSA age gating.
 
 Any user who isn't configured by using Azure Age Gating will be restricted from using the service, even if the user isn't a minor. Age Gating must be configured.
 

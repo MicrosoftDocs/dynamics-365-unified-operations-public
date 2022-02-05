@@ -47,8 +47,6 @@ This example used one additional costing version for managing updates throughout
 
 ## Financial dimensions for the standard cost revaluation
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Activating a new standard price will typically revaluate the on-hand inventory value by standard cost revaluation transactions. Usually, the financial dimensions of the item are then posted on the transactions. However, if you would like to control whether and how the financial dimensions are posted, use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature named *Options of defaulting financial dimensions for inventory standard cost revaluation*. After enabling this feature, go to **Cost management > Inventory accounting policies setup > Parameters** and set the new **Origin of financial dimension** drop-down list to one of the following values:
 
 - **None** – No financial dimensions are posted on the revaluation transactions. If your account structure includes a required financial dimension, the revaluation process will still run, but it will create accounting entries that have no financial dimensions. In this case, users will receive a warning message first, so they can cancel the revaluation if necessary.

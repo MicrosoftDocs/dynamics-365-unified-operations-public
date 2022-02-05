@@ -3,9 +3,9 @@
 
 title: Retail software development kit (SDK)
 description: The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
-author: robinarh
+author: tonyafehr
 ms.date: 09/27/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: ["17771", "intro-internal"]
 ms.search.region: Global
@@ -55,7 +55,7 @@ The Retail SDK includes the code, code samples, templates, and tools that are re
 The Retail SDK is available in development environments that are provisioned via Microsoft Dynamics Lifecycle Services (LCS), in the virtual hard disks (VHDs) that are downloaded from LCS, and in hotfix packages that are deployed to the LCS environment. For more information, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) and [Apply updates to cloud environments](../../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
 
 > [!NOTE]
-> In release 10.0.21, the development VM in LCS will not include Visual Studio 2017 and other dependencies that are required for Commerce development. You need to install the prerequisites by running MSBuild from the Retail SDK or manually install the prerequisites for Commerce development.
+> In release 10.0.21, the development VM in LCS will not include Visual Studio 2017 and other dependencies that are required for Commerce development. Install the prerequisites manually or by running MSBuild from the Retail SDK. Use the developer command prompt for Visual Studio 2019 to run the MSBuild command if Visual Studio 2017 tools are not installed in the VM. This will install all the prerequisites but POS build will not work with Visual Studio 2019 developer command prompt, it will fail with error saying POS doesn’t support Visual Studio 2019 .To fix this issue, after the prerequisites installation is complete, open the developer command prompt for Visual Studio 2017 and run MSBuild.  Or, you can use PowerShell to run the checkVS2017Installed.ps1 script in RetailSDK\BuildTools to install the Visual studio tools for 2017 and then use the developer command prompt for Visual Studio 2017 to install the prerequisites and build the SDK.
 
 To access the Retail SDK, sign in to the development virtual machine (VM), and go to the K:\\RetailSDK folder. You can obtain new versions of the Retail SDK by applying any Commerce binary hotfix from LCS to the development environment. After hotfix deployment is completed, you can find the new version of the SDK inside the K:\\RetailSDK\\Update folder.
 
@@ -93,6 +93,7 @@ Visual Studio 2017 has TypeScript 3.1 as the default version. You must install v
 - .NET Developer Pack:
     +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
+    +  [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer)
     
 - [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
 
@@ -113,7 +114,7 @@ Before you start development via the Retail SDK, you must restore all the packag
 
 MSBuild will check whether the required dependencies are installed for Commerce development. If the dependencies are not found, then the MSBuild scripts will try to install the missing dependencies. This check will occur every time MSBuild runs. To skip this check, pass the follow arguments value as false:
 
-MSBuild /p:CheckVSDependencies=false – Build argument added in release 10.0.18
+MSBuild /p:CheckVS2017Installed=false /p:CheckVSDependencies=false – Build argument added in release 10.0.18
 
 MSBuild /p:InstallDotNetRuntimeSdkdependencies=False – Build argument added in release 10.0.22
 

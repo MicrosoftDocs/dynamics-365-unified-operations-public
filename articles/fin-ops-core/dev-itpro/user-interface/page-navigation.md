@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Navigation concepts
 description: This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 105091
-ms.assetid: 26f373fa-13b7-4f1b-ad16-95499d19874f
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Navigation concepts
@@ -113,9 +98,10 @@ The following are the valid options and corresponding behaviors for the **Tile D
 -   The image that you specify isn't resized. Therefore, you must create an image of the appropriate size to guarantee that it fills the tile correctly. Currently, a standard-sized tile is a square that is 130 pixels on each side.
 
 ## Navigation search
+
 There is a convenient search mechanism for finding and navigating to forms and workspaces that appear in the navigation pane and on the dashboard. For example, a search on the keywords "all sales order" returns a list of navigation elements that match those keywords. 
 
-[![Example of keyword search.](./media/navsearchexample.png)](./media/navsearchexample.png) 
+[![Example of keyword search using "all sales orders".](./media/navsearchexample.png)](./media/navsearchexample.png) 
 
 The search keywords are matched not only to the caption of the navigation elements but also to the corresponding path. For example, a search on the keywords "ven bal report" returns results that match "vendor balance" in the caption and "report" in the path. 
 

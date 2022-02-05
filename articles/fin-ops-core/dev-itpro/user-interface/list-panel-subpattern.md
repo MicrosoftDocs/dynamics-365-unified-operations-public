@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: List Panel subpattern
 description: This article provides information about the List Panel form subpattern, which manages two lists that move data between each other.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 12433
-ms.assetid: 81df4016-d7b9-4376-8a78-bdd435d686f6
+ms.reviewer: tfehr
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # List Panel subpattern
@@ -100,7 +86,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **SalesSummaryParameters (GroupQuotation)** 
 
-[![List Panel example.](./media/listpanel3.png)](./media/listpanel3.png)
+[![List Panel example for SalesSummaryParameters.](./media/listpanel3.png)](./media/listpanel3.png)
 
 ## Resources
 ### Typically used by patterns

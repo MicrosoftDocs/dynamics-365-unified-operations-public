@@ -27,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.22
 # Order lookup module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 

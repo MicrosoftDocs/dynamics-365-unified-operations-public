@@ -238,7 +238,7 @@ If any of the previously listed configurations are missing in the configuration 
 
     Notice that the format element under **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** is configured to enter the IBAN code of the vendor account in the payment file.
 
-    ![BankIBAN element on the Format designer page.](./media/er-data-debugger-format.png)
+    ![BankIBAN format element on the Format designer page.](./media/er-data-debugger-format.png)
 
 ## <a name="appendix2"></a>Appendix 2: Configure Accounts payable
 

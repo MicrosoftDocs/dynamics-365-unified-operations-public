@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Configure workspaces by using the SysAppWorkspace class
 description: This topic explains how you can use the SysAppWorkspace class to configure and publish workspaces on the server. 
-author: robinarh
+author: tonyafehr
 ms.date: 10/09/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-
 ---
 
 # Configure workspaces by using the SysAppWorkspace class
@@ -111,7 +96,7 @@ Follow these steps to edit the workspace.
 
 3. Create a new class that extends your backing class, apply the **SysAppWorkspaceAttribute** attribute, and specify the new app ID.
 
-    ![Workspace in metadata.](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png)
+    ![Code editor with SysAppWorkspaceAttribute.](media/workspace-api/UpdateWorkspaceNewWorkspaceClass.png)
 
 You can now continue to work with your new workspace and the backing class. After you've finished making your changes, you can merge them with the AOT-based workspace.
 

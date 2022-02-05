@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Task Recorder quick reference
 description: This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 author: RobinARH
 ms.date: 12/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 31141
-ms.assetid: 8536e688-33f1-4f0c-a402-b1de2d253fbc
+ms.reviewer: tfehr
 ms.search.region: global
-# ms.search.industry: 
-ms.author: sericks
+ms.author: tfehr 
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Task Recorder quick reference
@@ -63,7 +48,7 @@ Choose this option if you need to add or remove steps. You can also use this mod
 </colgroup>
 <tbody>
 <tr class="odd">
-<td> <a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
+<td> <a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Update recording steps." class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Recording is ready." class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">Open/Save from/to this PC</h3>
 These options allow you to open a recording that is saved on your computer, or save a recording to your computer.
 <h3 id="opensave-fromto-lcs">Open/Save from/to Lifecycle Services</h3>
@@ -128,7 +113,7 @@ These options allow you to remove steps from the recording. If you delete a pend
 This keeps track of how many steps have been recorded. This includes steps played by using the Playback controls, as well as steps recorded by actions that you take in the client.
 
 ### Pending step
-<img src="media/pending-step.png" alt="Pending-step"/>
+<img src="media/pending-step.png" alt="Click Usage data."/>
 
 This symbol represents a step that is pending and has not been recorded yet. Pending steps can be played using the Playback controls. When a pending step is played successfully, it is recorded and the symbol will update appropriately. <em>Pending steps are not included in the recording when you save the recording.</em> You must first play the pending steps so that they are recorded. If the steps are played and recorded successfully, then they will be included when you save the recording.
 
@@ -138,7 +123,7 @@ This symbol represents a step that is pending and has not been recorded yet. Pen
 This symbol represents the next pending step. If you start playback, this is the first step that will be played.
 
 ### Queued pending step
-<img src="media/queued-pending-step.png" alt="Queued pending step"/>
+<img src="media/queued-pending-step.png" alt="Close the page."/>
 
 This symbol represents pending steps that are queued for playback. This symbol is updated either when playback pauses, or when the queued pending step is played.
 

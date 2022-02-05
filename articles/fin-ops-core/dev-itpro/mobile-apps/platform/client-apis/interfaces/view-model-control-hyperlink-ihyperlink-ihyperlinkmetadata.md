@@ -1,12 +1,12 @@
 ---
 title: HyperLinkMetadata type
 description: Hyperlink metadata type.
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ---
 
 # HyperLinkMetadata type

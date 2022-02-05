@@ -4,7 +4,7 @@
 title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,7 +52,7 @@ A local product search searches in the following product properties:
 - Barcode
 - Search name
 
-### Additional local product search capabilities
+### Additional local product search capabilities (conventional SQL full-text search) 
 
 - For multiple-keyword searches (that is, for searches that use search terms), retailers can configure whether the search results include results that match *any* search term or only results that match *all* search terms. The setting for this functionality is available in the POS functionality profile, in a new group that is named **Product search**. The default setting is **Match any search term**. This setting is also the recommended setting. When the **Match any search term** setting is used, all products that fully or partially match one or more search terms are returned as results. Those results are automatically sorted in ascending order of products that have the most keyword matches (full or partial).
 
@@ -60,6 +60,8 @@ A local product search searches in the following product properties:
 
     - The search is done on individual product properties. For example, only products that have all the searched keywords in at least one product property are returned.
     - Dimensions aren't searched.
+> [!NOTE]
+> The following configurations of **Match any search term**/**Match all search terms** in POS functionality profiles are only applicable for **local** product searches (conventional SQL full-text search) experiences. This configuration has no effect on cloud-powered search experiences. The new search engine has it's own advanced algorithm that powers search relevance for product search results. 
 
 - Retailers can configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
 - The product search algorithm now also searches for the searched terms in the **Search name** property of the product.
@@ -152,7 +154,5 @@ The following list shows the how the cloud-powered customer search functionality
 > The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. The customer search capability is *not* available in the following regions:
 > - Brazil
 > - India
-> - Canada
-> - United Kingdom
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

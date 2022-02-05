@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 12/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,6 +38,64 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Feature removal effective October 2021
+
+### Microsoft Azure SQL reports in Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
+| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
+| **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Removed |
+
+### Azure SQL actions in LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
+| **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
+| **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
+| **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Removed |
+
+
+## Feature deprecation effective October 2021
+
+### "Show related document attachments" feature
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The feature was returning unexpected results. |
+| **Replaced by another feature?**   | No. Any further plans regarding this functionality will be communicated through our standard release wave disclosure process. |
+| **Product areas affected**         | Web client - Document attachment experience |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated  |
+
+## Platform updates for version 10.0.23 of Finance and Operations apps
+
+### OnDBSynchronize event
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | There is no control to execute this event. |
+| **Replaced by another feature?**   | Yes, move existing methods subscribed to by the **OnDBSynchronize** event to a SysSetup extended class. |
+| **Product areas affected**         | Database synchronization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Planned removal date is October 2022. |
+
+
+### SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Microsoft requires additional parameters when adding notifications. |
+| **Replaced by another feature?**   | Yes, the **SystemNotificationsManager.AddSystemNotification()** API. This API requires that you explicitly set ExpirationDateTime and RuleID for generated notifications. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Planned removal date is April 2023. |
+
 ## Platform updates for version 10.0.21 of Finance and Operations apps
 
 ### Skype for Business Online support
@@ -60,7 +118,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
-| **Status**                         | Deprecated: Planned removal date in October 2021. |
+| **Status**                         | Deprecated: Planned removal date is October 2021. |
 
 ### Azure SQL actions in LCS
 
@@ -70,7 +128,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
-| **Status**                         | Deprecated: Planned removal date in October 2021. |
+| **Status**                         | Deprecated: Planned removal date is October 2021. |
 
 ## Feature deprecation effective May 2021
 
@@ -82,7 +140,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, this feature is replaced by LCS [Issue search](../lifecycle-services/issue-search-lcs.md) and [Dynamics regulatory alert submission service](../lcs-solutions/submit-localization-alerts.md). |
 | **Product areas affected**         | Globalization portal in LCS|
 | **Deployment option**              | Cloud deployment |
-| **Status**                         | Deprecated: Planned removal date in May 2022. |
+| **Status**                         | Deprecated: Planned removal date is May 2022. |
 
 
 ## Feature removed effective January 28, 2021
@@ -176,7 +234,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In general, custom code offers limited benefits while at the same time, requires significant resourcing and compute to support. Custom code is primarily used by report authors to call public methods from a custom code assembly. However, the cloud-hosted service does not support references to custom assemblies for SSRS reports. |
-| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Product areas affected**         | Subset of application report designs defined in RDL that contain custom code. |
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13, the compiler will begin issuing a warning for instances where custom code is detected in a SSRS report definition. To fix the issue, open the report design definition and remove all custom code artifacts. This warning will be replaced with a compiler error in a future update.   |

@@ -4,7 +4,7 @@
 title: VAT declaration (France)
 description: This topic describes how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration.
 author: anasyash
-ms.date: 09/14/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -1086,6 +1086,9 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields">Set up application-specific parameters for VAT declaration fields</a>
 
 To automatically generate a VAT declaration preview report in Microsoft Excel, associate sales tax codes in the application and lookup results in the ER configuration.
+
+> [!NOTE]
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 #### Set up operations
 

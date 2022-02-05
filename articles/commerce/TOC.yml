@@ -74,10 +74,6 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Commerce Data Exchange implementation guidance
           href: dev-itpro/implementation-considerations-cdx.md
-        - name: Finance and Operations apps operated by 21Vianet in China
-          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-        - name: Finance and Operations apps in France
-          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
       - name: Get support
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
       - name: Upgrade and N-1 support
@@ -96,12 +92,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
-          - name: Commerce 10.0.22 (November 2021)
-            href: get-started/whats-new-commerce-10-0-22.md
-          - name: Commerce 10.0.21 (October 2021)
-            href: get-started/whats-new-commerce-10-0-21.md
-          - name: Commerce 10.0.20 (August 2021)
-            href: get-started/whats-new-commerce-10-0-20.md
+          - name: Commerce 10.0.25 (April 2022)
+            href: get-started/whats-new-commerce-10-0-25.md 
+          - name: Commerce 10.0.24 (February 2022)
+            href: get-started/whats-new-commerce-10-0-24.md 
+          - name: Commerce 10.0.23 (January 2022)
+            href: get-started/whats-new-commerce-10-0-23.md          
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -130,8 +126,6 @@
           href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
-        - name: Glossary
-          href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
@@ -548,6 +542,8 @@
             href: duplicate-payment-protection.md
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
+          - name: Multiple available payment methods for in-store pickup
+            href: dev-itpro/multiple-payments-pickup.md
           - name: Omni-channel Commerce order payments
             href: dev-itpro/commerce-payments.md
           - name: Archive credit card transaction data
@@ -714,6 +710,10 @@
           href: sync-product-ratings.md
         - name: Enable manual publishing of ratings and reviews by a moderator
           href: manual-publish-rating-reviews.md
+        - name: Import and export ratings and reviews
+          href: import-export-reviews.md
+        - name: Configure Service-to-Service authentication
+          href: service-to-service-auth.md
         - name: Ratings and reviews FAQ
           href: ratings-reviews-faq.md
       - name: Manage your inventory  
@@ -802,6 +802,8 @@
           href: POS-serial-returns.md
         - name: Linked refunds
           href: dev-itpro/linked-refunds.md
+        - name: Process unlinked refunds with the Dynamics 365 Commerce Payment Connector for Adyen
+          href: dev-itpro/unlinked-refunds.md
         - name: Sell and return products not included in a store's assortment
           href: sell-return-outside-assortments.md
         - name: Configure and process an exchange on a return order
@@ -816,6 +818,10 @@
       items:
       - name: Customer management in stores
         href: customer-mgmt-stores.md
+      - name: Asynchronous customer creation mode
+        href: async-customer-mode.md
+      - name: Convert asynchronous customers to synchronous customers
+        href: convert-async-to-sync.md
       - name: Clienteling
         items:
         - name: Clienteling overview
@@ -836,7 +842,7 @@
       items:
       - name: Statements overview
         href: retail-statements.md
-      - name: Transaction consistency checker 
+      - name: Validate store transactions for statement calculation 
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
         href: disable-consistency-check-rule.md
@@ -936,6 +942,8 @@
           href: enable-store-detection.md
         - name: E-commerce digital gift cards
           href: digital-gift-cards.md
+        - name: Configure a product to be purchased for free
+          href: configure-free-product.md
         - name: Browser requirements for Dynamics 365 Commerce sites
           href: browser-requirements.md
       - name: Sample site overview
@@ -992,8 +1000,6 @@
             href: style-presets.md
           - name: Add a favicon
             href: add-favicon.md
-          - name: Add a welcome message
-            href: add-welcome-message.md 
           - name: Add a copyright notice
             href: add-copyright-notice.md
           - name: Add languages
@@ -1270,12 +1276,16 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
+      - name: Commerce analytics (Preview)
+        href: commerce-analytics.md
     - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+      - name: Set up build pipeline for fiscal integration sample
+        href: localizations/fiscal-integration-sample-build-pipeline.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
       - name: Regulatory configuration service (RCS)
@@ -1312,6 +1322,8 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+        - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
+          href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
         items:
         - name: Commerce localization for Brazil
@@ -1328,6 +1340,8 @@
           href: localizations/latam-bra-nfce-contingency-mode.md          
         - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
           href: localizations/latam-bra-retail-statements.md
+        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil 
+          href: localizations/latam-bra-cf-e-sat.md       
         - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil 
           href: localizations/latam-bra-adyen.md          
       - name: Eastern Europe
@@ -1346,12 +1360,16 @@
           items:
           - name: Fiscal registration service integration sample for Czech Republic
             href: localizations/emea-cze-fi-sample.md
+          - name: Deployment guidelines for fiscal integration sample for Czech Republic (legacy)
+            href: localizations/emea-cze-fi-sample-sdk.md
         - name: Poland
           items:
           - name: Fiscal printer integration sample for Poland
             href: localizations/emea-pol-fpi-sample.md
           - name: Customer information management for Poland
             href: localizations/emea-pol-customer-information.md
+          - name: Deployment guidelines for fiscal integration sample for Poland (legacy)
+            href: localizations/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
         - name: Cash register functionality
@@ -1368,6 +1386,8 @@
         items:
         - name: Fiscal registration service integration sample for Germany
           href: localizations/emea-deu-fi-sample.md
+        - name: Deployment guidelines for fiscal integration sample for Germany (legacy)
+          href: localizations/emea-deu-fi-sample-sdk.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
@@ -1376,14 +1396,18 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Support for upgrade and N-1 for India
           href: localizations/apac-ind-n-1-for-india.md
-        - name: Generate QR codes and print them on receipts
+        - name: Generate QR codes and print them on receipts for India
           href: localizations/ind-generate-qr-code-print-receipt.md
+        - name: Goods and Services Tax (GST) integration for e-commerce sites
+          href: localizations/apac-ind-e-commerce.md
       - name: Italy
         items:
         - name: Fiscal printer integration sample for Italy
           href: localizations/emea-ita-fpi-sample.md
         - name: Customer information management for Italy
           href: localizations/emea-ita-customer-information.md 
+        - name: Deployment guidelines for fiscal integration sample for Italy (legacy)
+          href: localizations/emea-ita-fpi-sample-sdk.md
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
@@ -1393,6 +1417,8 @@
         - name: Cash register functionality
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
+          href: localizations/emea-nor-fi-deployment.md
+        - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Russia
         items:
@@ -1408,12 +1434,18 @@
           href: localizations/rus-fpi-sample.md
         - name: Customer information management for Russia
           href: localizations/rus-customer-information.md 
+      - name: Saudi Arabia
+        items:
+        - name: Generate QR codes and print them on receipts for Saudi Arabia
+          href: localizations/emea-sau-qr-code.md
       - name: Sweden
         items:
         - name: Cash register functionality
           href: localizations/emea-swe-cash-registers.md
         - name: Control unit integration sample for Sweden
           href: localizations/emea-swe-fi-sample.md
+        - name: Deployment guidelines for control unit integration sample for Sweden (legacy)
+          href: localizations/emea-swe-fi-sample-sdk.md
         - name: Sample for Retail POS integration with control units (legacy)
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
@@ -1516,6 +1548,8 @@
       items:
       - name: Electronic reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
+      - name: Electronic reporting components
+        href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/commerce/toc.json
       - name: Configurations
         items:
         - name: Create configurations
@@ -1580,6 +1614,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/commerce/toc.json
             - name: AddDays
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/commerce/toc.json
+            - name: ChangeTimeZone
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/commerce/toc.json
             - name: DateFormat
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/commerce/toc.json
             - name: DateTimeFormat
@@ -1606,6 +1642,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
             - name: Today
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
+            - name: WeekNum
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
           - name: List 
             items: 
             - name: List functions
@@ -1724,6 +1762,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/commerce/toc.json
             - name: Mid
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/commerce/toc.json
+            - name: NewGUID
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/commerce/toc.json
             - name: NumberFormat
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
             - name: NumeralsToText
@@ -1830,12 +1870,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
       - name: Design ER formats to generate outbound documents in various formats
         items: 
+        - name: Design a configuration for generating reports in OPENXML format
+          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
         - name: Design configurations to generate outgoing documents in Excel format
           items:
           - name: Design a configuration for generating documents in Excel format
             href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/commerce/toc.json 
-          - name: Example of generating reports in OPENXML format
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
           - name: Modify ER formats by reapplying Excel templates
             href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json            
           - name: Dynamically add columns to Excel reports as horizontally expandable ranges
@@ -1844,6 +1884,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
             - name: Run formats to dynamically add columns to Excel reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
+          - name: Design an ER format to paginate generated documents in Excel
+            href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/commerce/toc.json 
         - name: Design configurations to generate reports in Word format
           items:
           - name: Design a new ER configuration to generate reports in Word format
@@ -1866,6 +1908,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
             - name: Generate reports in Office formats that have embedded images
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
+          - name: Design an ER format to generate a report in Excel with embedded images in page headers or footers
+            href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/commerce/toc.json
         - name: Split generated XML files based on file size and content quantity
           href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
         - name: Suppress BOM characters in generated files
@@ -1892,6 +1936,8 @@
           items:
           - name: Create configurations to import data from an external XML file
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+          - name: Import data from manually selected files in batch mode
+            href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
         - name: Configure data import in batch mode from SharePoint located files
           href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
         - name: Import files in XML format
@@ -2002,8 +2048,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
-          - name: Use BARCODE to generate barcode images
-            href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json 
         - name: Configure model mappings
           items: 
           - name: Configure country context dependent ER model mappings
@@ -2121,19 +2165,25 @@
           - name: Application update 10.0.19
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
           - name: Application update 10.0.21
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.jso
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
+          - name: Application update 10.0.23
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
+          - name: Application update 10.0.25
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
           - name: Delegate the creation of an ER destination to a custom destination factory
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
-        - name: Implement a custom destination for generated documents
-          href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
+          - name: Implement a custom destination for generated documents
+            href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
         - name: Initiate data source values of the USER INPUT PARAMETER type from source code
           href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
         - name: Change code to enable users to configure and use named ER destinations
           href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
+        - name: Implement a custom ER source of inbound documents
+          href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
     - name: Finance and Operations (Dynamics 365) mobile app
       items:
       - name: Mobile app home page
@@ -2338,6 +2388,8 @@
         items:
           - name: Commerce for IT pros and developers
             href: dev-itpro/dev-retail-home-page.md
+          - name: Modernizing the Commerce in-store technology stack (white paper)
+            href: https://www.microsoft.com/download/details.aspx?id=103896
           - name: Set up a local development environment
             href: dev-itpro/setup-local-dev-env.md
       - name: Online channel extensibility
@@ -2432,8 +2484,8 @@
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management
             href: e-commerce-extensibility/set-up-key-vault.md
-          - name: Create a request pipeline plug-in hook
-            href: e-commerce-extensibility/request-pipeline-hook.md
+          - name: Image component
+            href: e-commerce-extensibility/image-component.md
         - name: Develop data actions
           items:
           - name: Data actions overview
@@ -2520,8 +2572,12 @@
             href: e-commerce-extensibility/sdk-faq.md
           - name: Debugging best practices for Dynamics 365 Commerce development
             href: e-commerce-extensibility/debugging-best-practices.md
+          - name: Test e-commerce site pages for memory leaks
+            href: e-commerce-extensibility/memory-leak-detection.md
       - name: Retail SDK
         items:
+        - name: Migrate to the Commerce SDK
+          href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
         - name: Retail SDK architecture
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Set up a build pipeline for the independent-packaging SDK
@@ -2538,6 +2594,8 @@
           href: dev-itpro/retail-sdk/SDK-build-pipeline.md
         - name: Download samples and packages from GitHub and NuGet
           href: dev-itpro/retail-sdk/sdk-github.md
+        - name: Set up a Visual Studio 2017 build agent to build Modern POS
+          href: dev-itpro/retail-sdk/mpos-build-agent.md
         - name: Retail SDK FAQ
           href: dev-itpro/retail-sdk/sdk-faq.md
       - name: Point of sale (POS) extensibility

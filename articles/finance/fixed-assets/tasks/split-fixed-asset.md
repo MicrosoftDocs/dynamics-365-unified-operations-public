@@ -3,7 +3,7 @@
  
 title: Split a fixed asset
 description: This topic explains how to split a percentage of one asset book to a new asset book.
-author: saraschi2
+author: moaamer
 ms.date: 08/06/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: roschlom
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to split a percentage of one asset book to a new asset book. It uses the Accountant role and USMF demo data.
+This topic explains how to split a percentage of one asset book to a new asset book. 
 
 ## Create a new fixed asset
 

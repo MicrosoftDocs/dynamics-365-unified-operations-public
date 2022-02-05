@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
@@ -409,7 +409,7 @@ In some cases, the request and response types are sufficient, but you must chang
 
 Additionally, registration in the **commerceRuntime.ext.Config** file must precede registration of the service that should be overridden. This registration order is important because of the way that the Managed Extensibility Framework (MEF) loads the extension dynamic-link libraries (DLLs). The types that are higher in the file take precedence.
 
-To override the handler, implement the **SingleAsyncRequestHandler<TRequest>** or **INamedRequestHandlerAsync** if the handler is executed based on the handler name.
+To override the handler, implement the `SingleAsyncRequestHandler<TRequest>` or **INamedRequestHandlerAsync** if the handler is executed based on the handler name.
 
 ### Sample code that shows how to override CreateOrUpdateCustomerDataRequest using the SingleAsyncRequestHandler 
 

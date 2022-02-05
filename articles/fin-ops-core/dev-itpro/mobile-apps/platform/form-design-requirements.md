@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Form design requirements
-description: This topic provides in-depth information on designing mobile apps.
-author: robinarh
+description: This topic provides form design requirements for mobile apps.
+author: tonyafehr
 ms.date: 08/14/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.custom: intro-internal
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-
 ---
 
 # Form design requirements

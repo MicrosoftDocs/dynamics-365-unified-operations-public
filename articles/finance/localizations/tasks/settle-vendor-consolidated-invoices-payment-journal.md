@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Settle vendor consolidated invoices by using a payment journal
-description: In Japan, payments are made and settled against consolidated invoices. 
+description: In Japan, payments can be made and settled against vendor consolidated invoices. 
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process 

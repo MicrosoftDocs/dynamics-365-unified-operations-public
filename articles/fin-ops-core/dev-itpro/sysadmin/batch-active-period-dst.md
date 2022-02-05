@@ -3,7 +3,7 @@
 
 title: Daylight saving time support for active batch periods
 description: This topic provides information about daylight saving time support for active batch periods.
-author: karimelazzouni
+author: Peakerbl
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod:
@@ -16,7 +16,7 @@ ms.reviewer: kfend
 ms.custom: NotInToc
 ms.assetid: a6685c6f-74bf-4f09-a19d-76130d7ce2da
 ms.search.region: Global
-ms.author: kaelazzo
+ms.author: peakerbl
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Platform update 36
 ---

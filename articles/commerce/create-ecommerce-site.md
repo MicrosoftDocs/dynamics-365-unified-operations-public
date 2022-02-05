@@ -4,7 +4,7 @@
 title: Create an e-commerce site
 description: This topic describes the steps and information required to create a new e-commerce site in Dynamics 365 Commerce site builder.
 author: bicyclingfool
-ms.date: 07/02/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,8 +52,15 @@ To set up your site, do the following.
 | Domain                              | Select a domain name that will serve as the domain for this online store. If you haven't configured any domains in LCS, you can leave this field blank. After your domain is configured in LCS, you must add it to your online store in **Site settings**.  |
 | Path                              | When your site supports more than one language for a given domain name, use the path field to create a unique site URL for that domain and language combination. If the language you specified in the **Default language** field is the only language you will support for this domain, or will continue to be the default language after you have localized your site into additional languages, we recommend that you leave this field empty. |
 
-
 After your site is created, you can verify that it is associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store. You can also use the drop-down menu in the upper left of the page to access the allocated products by category.
+
+## Rename your site
+
+To rename your site in site builder, follow these steps.
+
+1. To open site list view, select **Site switcher** in the upper-right corner, and then select **Manage sites** . 
+1. Select the check box next to the site that you want to rename, and then select **Rename** on the command bar.
+1. In the **New site name** dialog box, enter the new site name, and then select **OK**. The site list will update to show the site's new name.
 
 ## Additional resources
 

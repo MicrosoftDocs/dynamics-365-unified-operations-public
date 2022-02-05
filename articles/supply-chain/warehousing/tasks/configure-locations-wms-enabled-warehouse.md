@@ -35,7 +35,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 2. Click **New**.
 3. In the **Warehouse** field, type a value.
 4. In the **Name** field, type a value.
-5. In the **Site** field, type a value.
+5. In the **Site** field, select or type an existing site value.
 6. Expand the **Warehouse** section.
 7. Set the **Use warehouse management processes option** to Yes. This setting allows you to run advanced warehousing processes using warehouse work and mobile devices.
 8. Close the page.

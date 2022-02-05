@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.20
 # Generate variants for engineering products
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This topic describes how to generate variants for engineering products.
 

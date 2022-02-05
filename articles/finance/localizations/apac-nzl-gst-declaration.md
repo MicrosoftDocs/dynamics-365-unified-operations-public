@@ -29,8 +29,6 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic explains how to set up and generate the GST return form GST101A for legal entities in New Zealand.
 
 The GST return form for New Zealand is the standard document that summarizes the total output GST tax amount that's due, the total input GST tax amount that's recoverable, and the related GST tax amount liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The GST return form is commonly referred to as *Filing GST returns*.

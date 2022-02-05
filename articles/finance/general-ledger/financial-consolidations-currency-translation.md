@@ -3,9 +3,9 @@
 
 title: Financial consolidations and currency translation overview
 description: This topic describes financial consolidations and currency translation in General ledger.
-author: aprilolson
-ms.date: 07/25/2019
-ms.topic: article
+author: jiwo
+ms.date: 10/07/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -187,5 +187,17 @@ Here are some of the consolidation scenarios that Financial reporting supports:
 ## Generating consolidated financial statements
 For information about scenarios where you might generate consolidate financial statements, see [Generate consolidated financial statements](./generating-consolidated-financial-statements.md).
 
+## Performance enhancement for large consolidations
+
+Environments that have many general ledger transactions might run more slowly than is optimal. To fix this issue, you can set up parallel processing of batches that uses a user-defined number of dates. To ensure that the solution works as intended, add an extension point to the consolidation to return a container of date ranges. The base implementation should contain one date range for the start state and end date of the consolidation. Date ranges in the base implementation will be validated to ensure that they don't contain gaps or overlap. The date ranges will be used to create parallel batch bundles for each company.
+
+You can customize the number of date ranges to meet your organization's requirements. By customizing the number of date ranges, you can help simplify testing and minimize the impact on existing code, because there is no allocation logic. The only new tests that are required validate the creation of batch bundles, validate date ranges, and test a subset of date ranges to verify that the batches can be brought together for the final batch task. 
+
+This feature enhances the consolidation process in General ledger when the process is run in a batch. The enhancement improves the performance of the general ledger consolidation process by splitting the consolidation into multiple tasks that can be processed in parallel. In the default method of running a consolidation, each task processes eight days' worth of general ledger activity. However, an extension point has been added that lets you customize the number tasks that are created.
+
+Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+
+- **Module:** General ledger
+- **Feature name:** Performance enhancement for large consolidations
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

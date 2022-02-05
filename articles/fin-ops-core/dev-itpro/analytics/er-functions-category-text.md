@@ -4,7 +4,7 @@
 title: List of ER functions of the text category
 description: This topic provides information about the text functions that are supported in Electronic reporting (ER).
 author: NickSelin
-ms.date: 04/02/2020
+ms.date: 09/09/2021
 ms.prod: 
 ms.technology: 
 
@@ -37,15 +37,17 @@ Electronic reporting (ER) text functions can be used to perform operations on da
 | Function | Description |
 |----------|-------------|
 | [Char](er-functions-text-char.md) | This function returns a *String* value that presents a single character that is referenced by the specified Unicode number. |
-| [Concatenate](er-functions-text-concatenate.md) | This function returns  all the specified text strings as a *String* value after they have been joined into one string. |
+| [Concatenate](er-functions-text-concatenate.md) | This function returns all the specified text strings as a *String* value after they have been joined into one string. |
 | [Format](er-functions-text-format.md) | This function returns the specified string a *String* value after it has been formatted by substituting any occurrences of **%N** with the *N*th argument. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | This function searches for a specific *Enum* value in the specified enumeration data source by using the enumeration name that is specified as a *String* value. If the *Enum* value is found, the function returns it. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | This function searches for a specific label to return a *[String](er-formula-supported-data-types-primitive.md#string)* value that represents the translation of the specified label in the specified language. |
 | [GuidValue](er-functions-text-guidvalue.md) | This function converts the specified input of the *String* type to a data item of the *GUID* type. |
 | [JsonValue](er-functions-text-jsonvalue.md) | This function parses data in JavaScript Object Notation (JSON) format that is accessed at the specified path, and it extracts a scalar value that is based on the specified ID. It then returns the extracted scalar value as a *String* value. |
 | [Left](er-functions-text-left.md) | This function returns a *String* value that presents the specified number of characters from the start of the specified string. |
 | [Len](er-functions-text-len.md) | This function returns an *Integer* value that presents the number of characters in the specified string. |
 | [Lower](er-functions-text-lower.md) | This function returns the specified text string as a *String* value after it has been converted to lowercase letters. |
-| [Mid](er-functions-text-mid.md) | This function returns a *String* value that presents the specified number of characters from the specified string, starting at the specified position. |
+| [Mid](er-functions-text-mid.md) | This function returns a *[String](er-formula-supported-data-types-primitive.md#string)* value that presents the specified number of characters from the specified string, starting at the specified position. |
+| [NewGUID](er-functions-text-newguid.md) | This function returns a newly generated *[GUID](er-formula-supported-data-types-primitive.md#guid)* value. |
 | [NumberFormat](er-functions-text-numberformat.md) | This function returns a *String* value that presents the specified number in the specified format and in an optionally specified culture. |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | This function returns the specified number as a *String* value after it has been spelled out (that is, converted to text strings) in the specified language. |
 | [PadLeft](er-functions-text-padleft.md) | This function returns a *String* value of the specified length, where the start of the specified string is padded with one or more instances of the specified characters. |

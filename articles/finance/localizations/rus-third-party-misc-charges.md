@@ -205,7 +205,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 1. On the **Invoice journal** page, select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** > **Allocation**.
 
-    [![Charges allocation page.](./media/10-charges-allocation.jpg)](./media/10-charges-allocation.jpg)
+    [![Charges allocation page to allocate miscellaneous charges.](./media/10-charges-allocation.jpg)](./media/10-charges-allocation.jpg)
  
 2. In the **Charges allocation** field, select a method for allocating miscellaneous charges.
 3. In the **Posting date** field, select the posting date.
@@ -256,7 +256,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 1. Create a sales tax group that is named **VAT18-1** and that has sales tax code **VAT18**.
 
-    [![Sales tax groups page.](./media/11-sales-tax-groups.png)](./media/11-sales-tax-groups.png)
+    [![Sales tax groups page with selected tax group and tax code.](./media/11-sales-tax-groups.png)](./media/11-sales-tax-groups.png)
 
 2. Create an exempt sales tax group that has standard sales tax code **VAT18**, and select the **Exempt** check box.
 
@@ -264,7 +264,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 3. For the sales tax group, in the **Transit tax group** field, specify the exempt sales tax group.
 
-    [![Sales tax groups page.](./media/13-sales-tax-groups.png)](./media/13-sales-tax-groups.png)
+    [![Sales tax groups page, Transit tax group field.](./media/13-sales-tax-groups.png)](./media/13-sales-tax-groups.png)
 
 4. Create an item sales tax group that has sales tax code **VAT18**.
 
@@ -297,7 +297,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 10. On the **Invoice journal** page, select **Charges** > **Allocation**.
 11. On the **Charges allocation** page, in the **Posting date** field, specify **10/18/2019**.
 
-    [![Charges allocation page.](./media/15-charges-allocation.png)](./media/15-charges-allocation.png)
+    [![Charges allocation page, Posting date field.](./media/15-charges-allocation.png)](./media/15-charges-allocation.png)
 
 12. In the **Allocation mode** field, select **Redraw debt**.
 13. In the **Allocation base** section, manually create the following line.
@@ -331,7 +331,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 1. On the **Invoice journal** page, select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** > **Allocation**.
 
-    [![Charges allocation page.](./media/16-charges-allocation.jpg)](./media/16-charges-allocation.jpg)
+    [![Charges allocation page to allocate miscellaneous charges to the ledger account.](./media/16-charges-allocation.jpg)](./media/16-charges-allocation.jpg)
 
 2. In the **Charges allocation** field, select a method for allocating miscellaneous charges.
 3. In the **Posting date** field, select the posting date.
@@ -375,7 +375,7 @@ The cost price of an item can be adjusted many times by using the functionality 
 2. Select **Charges** > **Misc. charges allocation history** to open the **Charges allocation** page.
 The **Allocation base** section shows the allocation base and allocation result, depending on the value in the **Allocation mode** field. To change the allocation mode, select **Edit**, and then, in the **Allocation mode** field, select a new value.
 
-    [![Charges allocation page.](./media/19-charges-allocation.jpg)](./media/19-charges-allocation.jpg)
+    [![Charges allocation page, Allocation base section.](./media/19-charges-allocation.jpg)](./media/19-charges-allocation.jpg)
 
 3. On the header of the **Charges allocation** page, set the **Show cancelled operations** option to **Yes** to show the miscellaneous charges allocation transactions that have been canceled and the transactions that adjust them.
 4. Select **Inquiries** > **Voucher** to view the transactions that were created because of allocation.
@@ -400,7 +400,7 @@ The allocation history can be shown either for a specific invoice or for all inv
 
 4. In the **Date of cancellation** field, enter the date of cancellation.
 
-    [![Charges allocation page.](./media/21-charges-allocation.jpg)](./media/21-charges-allocation.jpg)
+    [![Charges allocation page, Date of cancellation field.](./media/21-charges-allocation.jpg)](./media/21-charges-allocation.jpg)
 
 5. Select **Cancel**.
 

@@ -1,14 +1,14 @@
 ---
 title: What's new or changed in the Warehouse Management mobile app
 description: This topic lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
-author: MarkusFogelberg
-ms.date: 09/09/2021
+author: Mirzaab
+ms.date: 01/18/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
 ---
@@ -18,6 +18,59 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.0.15.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved performance by fixing a memory leak issue.
+- Fixed an issue where some field values didn't update correctly when selected on the detail page.
+
+## Version 2.0.14.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Fixed an issue that disabled the default Submit button.
+
+## Version 2.0.13.0
+
+This version introduces the following new features, fixes, and improvements:
+ 
+- Improved scrolling between pages with smoother animation.
+- Fixed counter-intuitive responses to swipe motions and occasional screen freezes.
+- Improved dark mode text and background color combinations for better readability.
+- Fixed an issue where some text could become very small when resizing the app window.
+- Fixed an issue that could sometimes crash the app when scanning barcodes.
+- Added the possibility to replace a slider with a button.
+- Fixed an issue that could cause the app to show the error message, "AADSTS7000215: Invalid client secret is provided."
+- Fixed the hint animation showing how to close a page using a swipe-down gesture.
+- Added the possibility to close a page using a flick-down gesture.
+- Fixed an issue where drop-down list titles weren't shown on the **User settings** page.
+- Fixed a localization issue where the app wouldn't recognize a comma (,) as a decimal separator.
+- Improved accessibility.
+- Fixed the navigation on the **New connection** page to provide improved accessibility.
+- Fixed an issue where the soft (onscreen) keyboard wouldn't appear when selecting an input field.
+- Fixed an issue that could crash the app if users quickly resized its window.
+- Fixed an issue where a fast keypress was sometimes interpreted as a long press.
+- Fixed an issue where the app layout could become corrupted because of field customizations made in Supply Chain Management.
+- Fixed an issue where item locations weren't displayed properly.
+- Fixed an issue related to short picking for the product variant workflow.
+- Removed the unnecessary validation of fields containing preset default values.
+- Improved performance.
+- Added a new setting that allows users to choose how fields are filtered and ordered on the card page.
+
+## Version 2.0.11.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Added support for promoted fields.
+- Added support for hardware keyboard navigation.
+- Improved accessibility.
+- Enhanced details cards.
+- Enhanced detours for menu-item steps.
+- Minor user interface improvements.
+- Fixed an issue that could cause the app to crash when scanning barcodes.
+- Fixed various issues that could cause the system to stop responding.
 
 ## Version 2.0.10.0
 

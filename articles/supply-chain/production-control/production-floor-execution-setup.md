@@ -32,9 +32,9 @@ The production floor execution interface is set up for every device on the produ
 
 ## Set the configuration and filters for a specific device
 
-To set the configuration and job filters for a device, sign in to the **Production floor execution** page by using an account that has a security role that includes the *Maintain time supervisor* duty. (Among the out-of-box security roles, only *Shop floor supervisor* has this duty.) Then follow these steps.
+To set the configuration and job filters for a device, sign in to the **Production floor execution** page by using an account that has a security role that includes the *Maintain time supervision* duty. (Among the out-of-box security roles, only *Shop floor supervisor* has this duty.) Then follow these steps.
 
-1. Go to the device that you want to set up, and sign in to Microsoft Dynamics 365 Supply Chain Management as a shop floor supervisor. (Use an account that includes the *Maintain time supervisor* duty.)
+1. Go to the device that you want to set up, and sign in to Microsoft Dynamics 365 Supply Chain Management as a shop floor supervisor. (Use an account that includes the *Maintain time supervision* duty.)
 1. Make sure that a configuration is available for the device that you're setting up. If no configuration already exists, a default configuration is provided. For more information about how to set up a configuration, see [Configure the production floor execution interface](production-floor-execution-configure.md).
 1. Go to **Production control \> Manufacturing execution \> Production floor execution**.
 

@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.22 (November 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.22 (November 2021) 
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.22. 
 author: kamaybac
 ms.date: 08/09/2021
@@ -13,12 +13,11 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.22 (November 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.22 (November 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.22. This version has a build number of 10.0.995 and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.22. This version has a build number of 10.0.995 and is available as follows:
 
 - **Preview of release:** September 2021
 - **General availability of release (self-update):** October 2021
@@ -36,13 +35,11 @@ The following table lists the features that are included in this release. The *F
 
 The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Feature area | Feature name in feature management | More information |
+| Module | Feature name in feature management | More information |
 |---|---|---|
-| Cost management | Create related vouchers for standard cost rounding revaluations | <p>When an inventory financial posting (such as a sales order invoice or inventory transaction) is made, this feature causes the system to create a separate voucher for any related standard cost rounding revaluations and attach it to the financial posting voucher as a related voucher.</p><p>Without this feature, the system records standard cost rounding revaluations on the same voucher posting. That behavior can sometimes cause conflicting date information, because the revaluations use the session or system date, whereas financial postings use the posting date.</p> |
 | Distributed hybrid topology | *(No feature management is required.)* | <p>This release expands the outbound load planning capabilities of the warehouse management workload for cloud and edge scale units.</p><p>For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Engineering change management | Variant generation for engineering products | <p>This feature lets you generate several variants for an engineering product, based on its color, size, style, or configuration dimensions.</p><p>For more information, see [Generate variants for engineering products](../engineering-change-management/engineering-variants.md).</p> |
 | Inventory and warehouse management | Inventory Visibility integration with reservation offset | <p>This feature can be enabled only after the *Inventory Visibility Integration* feature is enabled. It provides functionality to offset reservations that are made on Inventory Visibility.</p><p>For more information, see [Inventory Visibility reservations](../inventory/inventory-visibility-reservations.md).</p> |
-| Sales and marketing | Limit the number of sales orders that can be selected for posting | <p>This feature is automatically enabled. It adds a **Max. number of sales orders for posting** field to the **Accounts receivable parameters** page. This field lets you define the maximum number of sales orders that can be selected when confirmations, picking lists, packing slips, and invoices are posted from the sales order list page. The default value is *100*.</p><p>This feature helps improve the performance of the sales order list page when a substantial number of sales orders is selected. It has no impact on the number of sales orders that can be processed by a periodic task.</p> |
 
 ## New and updated documentation resources
 
@@ -59,7 +56,7 @@ We have recently added or significantly updated the following help topics. These
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 includes platform updates. To learn more, see [Platform updates for version 10.0.22 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 includes platform updates. To learn more, see [Platform updates for version 10.0.22 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### Bug fixes
 

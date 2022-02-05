@@ -66,7 +66,7 @@ To install printers on nodes where AXService is executing under a gMSA, follow t
 
 > [!IMPORTANT]
 > This section requires at least version 2.9.0 of the infrastructure scripts.
-> Additionally, you need to download the [SysInternals Suite](https://docs.microsoft.com/sysinternals/downloads/).
+> Additionally, you need to download the [SysInternals Suite](/sysinternals/downloads/).
 
 1. Update the Printers.json file by adding the network location of each printer that should be made available to the AOS. Ensure that you remove the example entries. 
 2. Run the following command from the Infrastructure Scripts folder.

@@ -3,9 +3,9 @@
 
 title: Accounts payable invoice matching overview
 description: Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
-author: abruer
+author: sunfzam
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

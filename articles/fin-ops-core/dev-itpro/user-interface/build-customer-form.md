@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Build the Customer form
 description: In this lab you’ll create a Master Details form and apply form pattern and subpatterns. A Master Details form shows primary data that has many fields.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 20401
-ms.assetid: 78199ae8-0631-4cf4-b206-b952f09b92a9
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Build the Customer form
@@ -43,6 +28,7 @@ To create the form, you’ll start from the existing form, **FmtCustomer**. The 
 [![Screen shot of FmtCustomer starting artifact.](./media/custform1.png)](./media/custform1.png)
 
 ## Key concepts
+
 -   Create a Master Details form.
 -   Apply a form pattern to a form.
 -   Use the Visual Studio pattern add-ins to get information about form/model pattern coverage.
@@ -51,6 +37,7 @@ To create the form, you’ll start from the existing form, **FmtCustomer**. The 
 -   Determine the amount of remaining patterns work in a model.
 
 ## Setup
+
 ### Import the tutorial project and transactional data
 
 Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Instances](../dev-tools/access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
@@ -129,7 +116,7 @@ Run the form to verify that it loads correctly.
 1.  In **Solution Explorer**, right-click **FmtCustomer**, and then click **Set as Startup Object**.
 2.  Press **Ctrl+F5**. The grid view should render like the following illustration. 
 
-    [![Illustration of grid view.](./media/custform4-1024x567.png)](./media/custform4.png)
+    [![Illustration of grid view with customers.](./media/custform4-1024x567.png)](./media/custform4.png)
 
 3.  On the application bar, click **Open in Microsoft Office** &gt; **Export to Excel &gt; Customers** to send the information in the grid view to a Microsoft Excel spreadsheet. (If a dialog appears asking if you’re sure you want to leave the page, click “Leave this page”.) When asked, click **Open** to view the data in Excel.
 4.  Close Excel.
@@ -137,6 +124,7 @@ Run the form to verify that it loads correctly.
 6.  Click **Close**  (or the browser Back button) to go back to the grid view.
 
 ## Apply a pattern to the form
+
 Use Visual Studio to apply the Master Details form pattern to the **Customer** form. Applying a form pattern ensures your form has the expected structure. It also simplifies the design experience by automatically setting the values of properties in the nodes that are part of the pattern.
 
 1.  Right-click **Design**, point to **Apply pattern,** and then click **Details Master**.
@@ -192,9 +180,9 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
 7.  Click **SidePanel**. Notice the **Patterns Information Panel** is now indicating that the controls in this subtree are in full compliance with the pattern.
 
-    ![Patterns Information Panel.](./media/custform12.png)
+    ![Patterns Information Panel, design.](./media/custform12.png)
 
-    ![Patterns Information Panel.](./media/custform13.png)
+    ![Patterns Information Panel, navigation list.](./media/custform13.png)
 
 8.  Click **Design** &gt; **GridDetailsTab**. The yellow highlighting around the subnodes indicates that there are problems that need to be resolved under both nodes before the form pattern can be successfully applied.
 
@@ -205,7 +193,7 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 9.  Notice that the pattern expects the **Grid Panel** to be after the **Details Panel.** Click **TabPageGrid** and press **Alt+Down** to move that tab below the **Details Panel**.
 10. Click **GridDetailsTab**. The **TabPageDetails** tab page now adheres to the pattern. However, the **TabPageGrid** tab page needs additional attention.
 
-    [![GridDetailsTab.](./media/custform16.png)](./media/custform16.png)
+    [![GridDetailsTab in design.](./media/custform16.png)](./media/custform16.png)
 
     [![TabPageGrid tab page needs additonal attention.](./media/custform17.png)](./media/custform17.png)
 

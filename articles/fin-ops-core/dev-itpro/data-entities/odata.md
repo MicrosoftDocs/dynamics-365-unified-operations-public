@@ -48,8 +48,8 @@ For more information about OData, see the following webpages.
 
 | Topic                                                               | Webpage                                                 |
 |---------------------------------------------------------------------|---------------------------------------------------------|
-| OData standards                                                     | <https://www.odata.org/documentation/>                   |
-| OData: Data access for the web, the cloud, mobile devices, and more | <https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/>    |
+| OData standards                                                     | [OData Version 4.01 documentation](https://www.odata.org/documentation/) |
+| OData: Data access for the web, the cloud, mobile devices, and more | [OData in ASP.NET Web API](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/) |
 
 The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
 
@@ -116,7 +116,7 @@ There are built-in operators for $filter:
 - Modulo (mod)
 - Precedence grouping ({ })
 
-You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
+You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '*retail*'`
 
 The operators 'has' and 'in' are not supported.
 

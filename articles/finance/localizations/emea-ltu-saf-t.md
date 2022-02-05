@@ -5,7 +5,7 @@ title: Standard Audit File for Tax (SAF-T) for Lithuania
 description: This topic explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 06/24/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -89,6 +89,9 @@ Import the most recent versions of the configurations. The version description u
 
 ### <a name="application"></a>Set up application-specific parameters for the SAF-T Format (LT) configuration
 
+> [!NOTE]
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
 1. In Electronic reporting, open the **Configurations** page. 
 2. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (LT)**.
 3. Make sure that you're working in the company that you want to set up the application-specific parameters for.
@@ -101,7 +104,7 @@ Import the most recent versions of the configurations. The version description u
     - **AddressType_LOOKUP** – Define the mapping between the address types that are used by the company and the address types that are used in the SAF-T report for Lithuania. Select the value **KT** as the last condition in the list. The **Purpose Name** column must be set to **\*Not blank\***. In the **Line** column, verify that **KT** is the last condition in the table. At least one line that has **\*Not blank\*** values must be set up.
     - **StandardMainAccount_Lookup** – Define the mapping between the main accounts that are used by the company and the standard main accounts of Lithuania. Select the value **7** as the last condition in the list. The **Analysis ID** column must be set to **\*Not blank\***. In the **Line** column, verify that **7** is the last condition in the table. At least one line that has **\*Not blank\*** values must be set up.
 
-6. When you've finished setting up the lookup fields, in the **State** field, select **Completed**. Then save the configuration.
+7. When you've finished setting up the lookup fields, in the **State** field select **Completed**, and then save the configuration.
 
 ### <a name="satt"></a>Select the SAT-T format in General ledger parameters
 

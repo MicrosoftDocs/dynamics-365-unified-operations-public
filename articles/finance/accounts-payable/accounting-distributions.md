@@ -3,7 +3,7 @@
 
 title: Accounting distributions
 description: This topic provides information about accounting distributions and describes the options that are available for processing them.
-author: ShylaThompson
+author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 

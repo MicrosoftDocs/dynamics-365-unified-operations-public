@@ -4,7 +4,7 @@
 title: Prepare for go-live
 description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
-ms.date: 08/27/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,7 +50,7 @@ This graphic and the following table list the phases of the go-live process, the
 |  | Sizing | Both | Immediate in case of automatic sizing. Could require further clarifications of the subscription estimate. | Microsoft-Dynamic Service Engineering (DSE) | Automatic sizing based on subscription estimate by default, manual sizing by exception. |
 |  | Deployment | Microsoft Managed | 48 hours | Microsoft-Dynamic Service Engineering (DSE) | Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request. |
 |  |  | Self-Service | An average of 30 minutes | Microsoft-FastTrack | The deployment could take an average of 30 minutes after the Go-live Review has completed and the production environment has been requested. For more information, see [Deploy a new environment](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md). |
-| 6 | Deployable package installation request | Both | Self-service | Customer/Partner | Follow the instructions in [Apply updates](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#apply-updates). The packages must contain all the models and binaries consolidated in an [All-in-one](../../dev-itpro/dev-tools/aio-deployable-packages.md) deployable package. |
+| 6 | Deployable package installation request | Both | Self-service | Customer/Partner | Follow the instructions in [Apply updates](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#applying-updates-to-self-service-environments). The packages must contain all the models and binaries consolidated in an [All-in-one](../../dev-itpro/dev-tools/aio-deployable-packages.md) deployable package. |
 |  | Package installation | Both | Minimum 5 hours lead time and 4 hours downtime | Microsoft-Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
 | 7 | Database copy from Sandbox request (if applicable) | Both | Self-service | Customer/Partner | Follow the instructions [Self-service database refresh](../../dev-itpro/database/database-refresh.md#self-service-database-refresh). If you have a golden configuration you can review [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
 |  | Copy database | Both | Five hours lead time and four hours downtime | Microsoft-Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. |
@@ -108,7 +108,7 @@ The project manager or a key project member must complete the go-live checklist 
 
 When you've completed the go-live checklist, email it to **Dynamics 365 FO Go-Live** d365fogl@microsoft.com. Always include a key stakeholder from the customer and the implementation partner on the email.
 
-After the checklist is submitted, Microsoft FastTrack will review the project and provide an report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, FastTrack might highlight risk factors and ask for a mitigation plan. When the review is completed, FastTrack will indicate that you're ready to request the production environment in LCS.
+After the checklist is submitted, Microsoft FastTrack will review the project and provide a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, FastTrack might highlight risk factors and ask for a mitigation plan. When the review is completed, FastTrack will indicate that you're ready to request the production environment in LCS.
 
 For Microsoft Managed environments, if you request the production environment before the review is completed, the deployment will remain in the **Queued** state until the review is successfully completed. For Self-Service environments, the **Configure** button to request production will be only enabled after the review is completed. 
 

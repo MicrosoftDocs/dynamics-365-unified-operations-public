@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Fields and Field Groups subpattern
 description: This topic provides information about the Field and Field Groups form subpattern.
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 12384
-ms.assetid: f3bf8d00-8e6d-4af7-ab7e-3ff47fce9e21
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Fields and Field Groups subpattern
@@ -88,7 +73,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Either all fields should be in Groups that have labels, or no Group labels should be shown.
 
 ## Examples
-Form: **InventLocation (LocationNames)** [![Example of form.](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
+Form: **InventLocation (LocationNames)** [![Example of InventLocation form.](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
 
 ## Resources
 ### Typically used by patterns

@@ -49,25 +49,13 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Production** – Pending *Scheduling* support.
   - Fields in the **Project** section – Pending *Scheduling* support.
 
-- **Standard update** tab:
-
-  - **Update marking** – Pending *Firming* support.
-  - **Stop firming if an error occurs** – Pending *Firming* support.
-  - **Group by vendor** – Pending *Firming* support.
-  - **Group by buyer group** – Pending *Firming* support.
-  - **Group by purchase agreement** – Pending *Firming* support.
-  - **Group by period** – Pending *Firming* support.
-  - **Find purchase agreement** – Pending *Firming* support.
-  - **Group by planning priority** – Pending *Firming* support.
-  - **Group by period** – Pending *Firming* support.
-
 ## Coverage groups page
 
 Planning Optimization doesn't use the following parameters or options on the **Coverage groups** page:
 
 - **General** FastTab:
 
-  - **Positive days** – Pending *Positive days* support.
+  - **Positive days** – The *Positive days* value isn't used. With Planning Optimization, positive days are considered infinite.
   - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
   - **Use the specified BOM or formula version** – Pending *Formula versions with Co/By product* support.
   - **Use the specified route version** – Pending *Demand with specific BOM or route requirements defined* support.
@@ -167,6 +155,10 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Add the calculated delay to the requirement date** (in the **Planned production orders** section) – Pending *Calculated delays* support.
   - **Add the calculated delay to the requirement date** (in the **Planned transfer** section) – Pending *Calculated delays* support.
   - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – Pending *Calculated delays* support.
+
+- **Action message** FastTab:
+
+  - **Update postponed date as requirement date** - This parameter is discontinued with Planning Optimization.
 
 - **Sequencing** FastTab:
 

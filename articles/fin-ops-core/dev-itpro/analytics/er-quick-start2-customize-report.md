@@ -163,7 +163,7 @@ To add the standard ER configurations to your current instance of Microsoft Dyna
     - **Payment model mapping 1611** – This configuration contains the [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that describes how the data model is filled in with application data at runtime.
     - **BACS (UK)** – This configuration contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how the report layout is filled in by using this data source at runtime.
 
-![Configurations page.](./media/er-quick-start2-imported-solution1.png)
+![Configurations page with specified ER configurations available in the tree.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a id="PrepareVendorPayment"></a>Prepare a vendor payment for processing
 
@@ -225,7 +225,7 @@ You must configure the electronic method of payment so that it uses the imported
 4. On the **File formats** FastTab, set the **General electronic Export format** option to **Yes**.
 5. In the **Export format configuration** field, select the **BACS (UK)** format configuration.
 
-    ![Methods of payment - vendors page.](./media/er-quick-start2-method-of-payment1.png)
+    ![Methods of payment - vendors page to set up electronic payment method to process vendor payments using a standard format.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Select **Save**.
 
@@ -276,7 +276,7 @@ In this case, as the representative of Litware, Inc., you must create (derive) a
 
 Version 1.1.1 of the **BACS (UK custom)** ER format configuration is created. This version has a [status](general-electronic-reporting.md#component-versioning) of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
 
-![Configurations page.](./media/er-quick-start2-derived-format-configuration1.png)
+![Configurations page with Version 1.1.1 of the BACS (UK custom) ER format configuration.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a id="ConfigureDerivedFormat"></a>Edit a custom format
 
@@ -352,7 +352,7 @@ You must configure the electronic method of payment so that your custom ER forma
 4. On the **File format** FastTab, set the **General electronic export format** option to **Yes**.
 5. In the **Export format configuration** field, select the **BACS (UK custom)** format configuration.
 
-    ![Methods of payment - vendors page.](./media/er-quick-start2-method-of-payment2.png)
+    ![Methods of payment - vendors page to set up electronic payment method to process vendor payments using a custom format.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Select **Save**.
 
@@ -381,7 +381,7 @@ You must configure the electronic method of payment so that your custom ER forma
 
         Notice that, in accordance with the structure of your custom ER format, the payment line in the generated file now [starts](#PositionSWIFTCode) with the SWIFT code that was [entered](#DefineSWIFTCode) for the bank account of the vendor whose payment has been processed.
 
-        ![Payment file in TXT format.](./media/er-quick-start2-payment-file2.png)
+        ![Payment file in TXT format used to process the vendor payment.](./media/er-quick-start2-payment-file2.png)
 
 ## <a id="ImportERSolution2"></a>Import new versions of the standard ER format configurations
 
@@ -398,7 +398,7 @@ To add new versions of the ER configurations to the current Finance instance, yo
 5. On the **Versions** FastTab, select version **3.3** of the selected ER format configuration.
 6. Select **Import** to download the selected version from the Global repository to the current Finance instance.
 
-![Configuration repository page.](./media/er-quick-start2-import-solution2.png)
+![Configuration repository page, Versions FastTab, Import button.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > If you have trouble accessing the [Global repository](er-download-configurations-global-repo.md), you can [download configurations](download-electronic-reporting-configuration-lcs.md) from LCS instead.
@@ -510,7 +510,7 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
 
         Notice that the payment line in the generated file starts  with the SWIFT code that was entered for the bank account of a vendor whose payment has been processed.
 
-        ![Payment file in TXT format.](./media/er-quick-start2-payment-file3.png)
+        ![Payment file in TXT format used to process the vendor payment using a rebased ER format.](./media/er-quick-start2-payment-file3.png)
 
 ## <a id="References"></a>Additional resources
 

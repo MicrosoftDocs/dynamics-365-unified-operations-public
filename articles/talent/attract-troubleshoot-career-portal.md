@@ -50,7 +50,7 @@ Assign the Talent user role to the Talent Relationship Team.
 
    ![Select environment.](./media/attract-troubleshoot-career-portal-select-environment.png)
 
-3. In the **Environments** pane, select the **Environment URL** and sign in to the environment's admin portal (for example, https:<orgname>.crm.dynamics.com).
+3. In the **Environments** pane, select the **Environment URL** and sign in to the environment's admin portal (for example, `https:<orgname>.crm.dynamics.com`).
 
 4. Select **Settings**, select **System**, and then select **Security**.
 

@@ -31,11 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 In this topic, you will find an overview of the components of the Help system for Finance and Operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources. The topic also explains how to connect these components and provides a summary of the process for creating custom Help.
 
 ## Help architecture
 
-Finance and Operations apps include conceptual overviews and other topics that are published to the [https://docs.microsoft.com/dynamics365](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
+Finance and Operations apps include conceptual overviews and other topics that are published to the [Microsoft Dynamics 365 documentation](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
 
 [![Help architecture.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -44,7 +47,7 @@ The in-product Help system pulls articles from docs.microsoft.com and other conn
 ## Adding task guides
 
 > [!NOTE]
-> The **Task guides** tab isn't currently available in Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> However, the task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. For both Human Resources and Commerce, procedural Help is available on the [https://docs.microsoft.com/dynamics365](/dynamics365/) site.
+> The **Task guides** tab isn't currently available in Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> However, the task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. For both Human Resources and Commerce, procedural Help is available on the [Microsoft Dynamics 365 documentation](/dynamics365/) site.
 
 On the **System parameters** page, system admins can configure access to the relevant task guide libraries for an implementation.
 

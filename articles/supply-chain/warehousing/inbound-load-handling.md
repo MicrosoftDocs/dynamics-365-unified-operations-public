@@ -271,7 +271,7 @@ These scenarios require the _Multiple product receipt postings per load_ feature
 
 1. Open the **Feature management** workspace. (For complete details about how to find and use this workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Turn on the _Associate purchase order inventory transactions with load_ feature, which is listed in the following way:
+1. Make sure the _Associate purchase order inventory transactions with load_ feature is turned on. As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
 
     - **Module:** _Warehouse management_
     - **Feature name:** _Associate purchase order inventory transactions with load_

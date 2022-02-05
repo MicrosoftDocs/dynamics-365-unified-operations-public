@@ -5,7 +5,7 @@ title: Automated vendor invoicing processes overview
 description: This topic describes the capability for automating your vendor invoice processing and the benefits of using an automated process. 
 author: abruer
 ms.date: 02/12/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -38,6 +38,7 @@ You can automate some Accounts payable vendor invoicing processes. These process
 
 The automation processes can be used to perform these tasks:
 
+- Automatically apply prepayments to vendor invoices
 - Automatically submit imported invoices to the workflow system.
 - Match product receipts to pending vendor invoice lines.
 - Simulate posting before a vendor invoice is posted.

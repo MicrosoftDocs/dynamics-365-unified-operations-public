@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Create a bank facility agreement for a letter of credit
-description: This task walks through the creating a Bank facility agreement to process a Letter of credit. 
-author: ShylaThompson
+description: This task walks through the steps for creating a Bank facility agreement to process a Letter of credit. 
+author: panolte
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task walks through the creating a Bank facility agreement to process a Letter of credit. You will want to set up bank facilities and posting profiles before this task.  This task uses the demo company 'USMF'.  
+This task walks through the steps for creating a Bank facility agreement to process a Letter of credit. You will want to set up bank facilities and posting profiles before this task.  This task uses the demo company 'USMF'.  
 
 
 ## Create Bank facility agreement

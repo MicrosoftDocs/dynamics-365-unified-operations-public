@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Finance and Operations and Dataverse admin reference
-description: This topic covers set up and configuration of virtual entities for Finance and Operations.
+title: Configure Dataverse virtual entities
+description: This topic explains how to configure virtual entities for Finance and Operations apps in Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 07/13/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -24,18 +24,23 @@ ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
 ---
 
-# Finance and Operations and Dataverse admin reference
+# Configure Dataverse virtual entities
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+
+This topic explains how to configure virtual entities for Finance and Operations apps in Microsoft Dataverse.
 
 > [!IMPORTANT]
-> This functionality requires [Platform updates for version 10.0.12 of Finance and Operations apps](../get-started/whats-new-platform-update-10-0-12.md) and service update 189 for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> The configuration steps in this topic are required only for Finance and Operations apps environments for which the Microsoft Power Platform integration is **not** enabled. For Finance and Operations apps environments for which the Microsoft Power Platform integration is enabled, the virtual entity configuration that is outlined in this topic is automatically performed as part of the process for enabling the integration. 
+> 
+> If Dataverse virtual entities were configured manually, following the guidance in this topic, prior to enabling the Microsoft Power Platform integration the manual configuration will no longer be used for the linked Power Platform environment after the Microsoft Power Platform integration is enabled. The virtual entities will connect to the Dataverse environment using the automatic configuration provided by the Microsoft Power Platform integration. However, manual configuration for virtual entities may still be used to connect the Finance and Operations apps environment to additional Power Platform environments with which the Microsoft Power Platform integration has not been enabled.
+> 
+> For more information about how to enable the Microsoft Power Platform integration for Finance and Operations apps environments, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
-This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Dataverse.
+## <a name="get-virtual-entity-solution"></a>Getting the virtual entity solution
 
-## Getting the solution
 The Dataverse solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
 Ensure the following solutions are installed in Dataverse.
@@ -48,12 +53,21 @@ Ensure the following solutions are installed in Dataverse.
 
 - **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
 
+When updates are available for the virtual entity solution, they can be manually applied in the Power Platform admin center. For more information about how to manually install and update the virtual entity solution, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps). 
+
+> [!NOTE]
+> For Finance and Operations apps environments that the Microsoft Power Platform integration is enabled for, available updates to the virtual entity solution are automatically applied.
+
 ## Authentication and authorization
 
-After the solutions are imported in the Dataverse environment, both environments must be set up to connect to each other. Dataverse will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Dataverse environment. If you have multiple pairs of Dataverse and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Dataverse environments. The following procedure shows the creation of the AAD application.
+After the solutions are imported into the Dataverse environment, both environments must be set up to connect to each other. Dataverse will call Finance and Operations apps by using Service-to-Service (S2S) authentication, based on an Azure Active Directory (Azure AD) application. This new Azure AD application represents the single instance of the Dataverse environment. If you have multiple pairs of Dataverse and Finance and Operations apps environments, separate Azure AD applications must be created for each pair to ensure that connections are established between the correct pair of Finance and Operations apps and Microsoft Power Platform environments. 
+
+### Register the app in the Azure portal
+
+The following procedure explains how to create the Azure AD application.
 
 > [!IMPORTANT]
-> The AAD application must be created on the same tenant as Finance and Operations.
+> The Azure AD application must be created on the same tenant as the Finance and Operations apps.
 
 1.  Go to <https://portal.azure.com> **\> Azure Active Directory \> App registrations**.
 
@@ -67,7 +81,7 @@ After the solutions are imported in the Dataverse environment, both environments
 
     - Select **Register**.
 
-    - Make note of the **Application (client) ID** value, you will need it later.
+    - Make a note of the **Application (client) ID** value, because you will need it later.
 
 3.  Create a symmetric key for the application.
 
@@ -79,9 +93,9 @@ After the solutions are imported in the Dataverse environment, both environments
 
     - Select **Save**. A key will be created and displayed. Copy this value for later use.
 
-The AAD application created above will be used by Dataverse to call Finance and Operations apps. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above will be able to call this Finance and Operations environment and access the virtual entity functionality.
+### Grant app permissions in Finance and Operations apps
 
-The next steps walk through this process in Finance and Operations apps.
+The Azure AD application that you created will be used by Dataverse to call Finance and Operations apps. Therefore, it must be trusted by Finance and Operations apps and associated with a user account that has the appropriate rights. A special service user that has rights **only** to the virtual entity functionality must be created in Finance and Operations apps. This service user must have no other rights. After you complete this step, any application that has the secret of the Azure AD application that you created will be able to call this Finance and Operations apps environment and access the virtual entity functionality.
 
 1.  In Finance and Operations, go to **System Administration \> Users \> Users**.
 
@@ -109,11 +123,13 @@ The next steps walk through this process in Finance and Operations apps.
 
     - **User ID** - The user ID created above.
 
+## Configure the virtual entity data source
+
 The next step in the process is to provide Dataverse with the Finance and Operations instance to connect to. The following steps walk through this part of the process.
 
 1.  In Dataverse, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
 
-2.  Select the data source named “Finance and Operations”.
+2.  Select the data source named "Finance and Operations".
 
 3.  Fill in the information from the steps above.
 
@@ -121,54 +137,17 @@ The next step in the process is to provide Dataverse with the Finance and Operat
 
     - **OAuth URL** - https://login.windows.net/
 
-    - **Tenant ID** - Your tenant, such as “contoso.com”.
+    - **Tenant ID** - Your tenant, such as "contoso.com".
 
     - **AAD Application ID** - The **Application (client) ID** created above.
 
     - **AAD Application Secret** - The secret generated above.
 
-    - **AAD Resource** - Enter 00000015-0000-0000-c000-000000000000 (this is the AAD application representing Finance and Operations, and should always be this same value).
+    - **AAD Resource** - Enter 00000015-0000-0000-c000-000000000000 (this is the Azure AD application representing Finance and Operations, and should always be this same value).
 
 4.  Save the changes.
 
-## Enabling virtual entities
-
-Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Dataverse. The following steps allow for enabling entities to be virtual, as needed.
-
-1. In Dataverse, go to **Advanced find** (filter icon).
-
-2. Look for “Available Finance and Operations Entities” and select **Results**.
-
-![Catalog.](../media/fovecatalog.png)
-
-3. Locate and open the entity that you want to enable.
-
-4. Set **Visible** to **Yes** and save. This will generate the virtual entity, so that it will appear in all of the appropriate menus, such as the advanced find dialog box.
-
-![Enable VE.](../media/foveenable.png)
-
-## Refreshing virtual entity metadata
-
-The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by setting **Refresh** to **Yes** and saving. This will sync the latest entity definition from Finance and Operations to Dataverse and update the virtual entity.
-
-## Referencing virtual entities
-
-The virtual entities are all generated in the MicrosoftOperationsERPVE solution, which is API Managed. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option
-in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
-
-To consume virtual entities:
-
-1.  Create a separate solution as usual in Dataverse, which will contain the consuming logic.
-
-2.  Select **Entities \> Add Existing**. Select the virtual entity that you want to reference from the list.
-
-3.  When prompted to select assets to add, select any forms, views, or other elements that you want to customize, then select **Finish**.
-
-From the development tooling, existing elements such as forms can be modified for the virtual entity. Additionally, new forms, views, and other elements can also be added.
-
-![Solution.](../media/fovesolution.png)
-
-When the solution is exported, it will contain hard dependencies on the virtual entity generated in the MicrosoftOperationsERPVE solution.
+When the virtual entity configuration is completed, you can enable the virtual entities in Dataverse. For more information, see [Enable Microsoft Dataverse virtual entities](enable-virtual-entities.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

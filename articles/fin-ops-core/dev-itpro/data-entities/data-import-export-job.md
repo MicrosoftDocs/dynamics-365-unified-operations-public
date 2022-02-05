@@ -4,8 +4,8 @@
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: peakerbl
-ms.date: 04/22/2021
-ms.topic: article
+ms.date: 10/21/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: peakerbl
@@ -29,6 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data import and export jobs overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
@@ -74,6 +77,9 @@ When you select an entity, you must select the format of the data that will be e
 | Excel                  | Excel                                      | \-NA-                     |
 | XML                    | \-NA-                                      | XML-Element XML-Attribute |
 | Delimited, fixed width | Comma, semicolon, tab, vertical bar, colon | \-NA-                     |
+
+> [!NOTE]
+> It is important to select the correct value for **Row delimiter**, **Column delimiter**, and **Text qualifier**, if the **File format** option is set to **Delimited**. Make sure that your data doesn't contain the character used as delimiter or qualifier, as this may result in errors during import and export.
 
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export.
@@ -205,18 +211,12 @@ moving window thereby, always leaving the history for the specified number of da
 > [!NOTE]
 > If records in the staging tables are not cleaned up completely, ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any clean up execution the job will only clean up as many execution ID's as is possible within the provided maximum hours. In order to continue cleanup of any remaining staging records, the job must be scheduled to run periodically.
 
-## Job history clean up and archival (available for preview in Platform update 39 or version 10.0.15)
-The job history clean up and archival functionality replaces the previous versions of the clean up functionality. This section will explain these new capabilities.
+## Job history clean up and archival 
+The job history clean up and archival functionality replaces the previous versions of the clean-up functionality. This section will explain these new capabilities.
 
-One of the main changes to the clean up functionality is the use of system batch job for cleaning up the history. The use of system batch job allows Finance and Operations apps to have the clean up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at 12 midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval.
+One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows Finance and Operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
 
-> [!NOTE]
-> Because this functionality is in preview, the system batch job will not delete any execution history until it is enabled via the flight DMFEnableExecutionHistoryCleanupSystemJob. When the feature is generally available in a future release, this flight will not be required and the system batch job will start to purge and archive after the system is ready, based on the defined schedule as explained above. 
-
-> [!NOTE]
-> In a future release, the previous versions of the clean up functionality will be removed from Finance and Operations apps.
-
-The second change in the clean up process is the archival of the purged execution history. The clean up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
+The second change in the clean-up process is the archival of the purged execution history. The clean-up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
 
 ### Changing the default settings
 This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging clean up feature must also be turned on in feature management.

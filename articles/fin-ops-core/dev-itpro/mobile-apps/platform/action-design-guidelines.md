@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Action design guidelines
-description: This topic provides in-depth information on designing mobile apps.
-author: robinarh
+description: This topic provides action design guidelines for mobile apps.
+author: tonyafehr
 ms.date: 09/17/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: tfehr
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rhaertle
+ms.custom: intro-internal
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-
 ---
 
 # Action design guidelines

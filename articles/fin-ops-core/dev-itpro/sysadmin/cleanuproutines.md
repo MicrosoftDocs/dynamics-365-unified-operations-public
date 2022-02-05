@@ -4,7 +4,7 @@
 title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 description: The topic provides an overview of cleanup routines in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dvliegen
-ms.date: 01/04/2021
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -94,7 +94,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Inventory management \> Periodic tasks \> Clean up \> Calculation of location load | The WMSLocationLoad table is used to track the weight and volume of items and pallets. The Summation of load adjustments job can be run to reduce the number of records in the WMSLocationLoad table and help improve performance. |
 | Inventory management \> Periodic tasks \> Clean up \> Inventory journals cleanup | This cleanup routine is used to delete posted inventory journals. |
 | Inventory management \> Periodic tasks \> Clean up \> Inventory settlements cleanup | <p>This cleanup routine is used to group closed inventory transactions or delete canceled inventory settlements. By cleaning up closed or deleted inventory settlements, you can help free up system resources.</p><p>Don't group or delete inventory settlements that are too close to the current date or fiscal year, because part of the transaction information for the settlements will be lost.</p><p>Closed inventory transactions can't be changed after they have been grouped, because the transaction information for the settlements will be lost.</p><p>If canceled inventory settlements are deleted, they can't be reconciled with finance transactions.</p> |
-| Inventory management \> Periodic tasks \> Clean up \> Inventory dimensions cleanup | <p>This cleanup routine is used to maintain the InventDim table. To maintain the table, delete unused inventory dimension combination records that aren't referenced by any transaction or master data. The records are deleted, regardless of whether the transaction is open or closed.</p><p>An inventory dimension combination record that is still referenced can't be deleted, because when an InventDim record is deleted, related transactions can't be reopened.</p> |
+| Inventory management \> Periodic tasks \> Clean up \> Inventory dimensions cleanup | <p>This cleanup routine is used to maintain the InventDim table. This batch process deletes all existing inventory dimensions that are defined but not used in the current company. All unused inventory dimensions are permanently deleted. No alert or database log is created during this process.</p><p>This cleanup routine verifies if each InventDim record is being used in not only purchase order lines or sales order lines, but also inventory transactions or on-hand inventory records. If a reference exists to InventDim, it is checked. If it is not used, it will be deleted. If the same combination of dimensions is used later, Dynamics 365 Finance and Dynamics 365 Supply Chain Management will create a new InventDim record with a new InventDimId and use this instead.</p> |
 | Inventory management \> Periodic tasks \> Clean up \> Dimension inconsistency cleanup | <p>This cleanup routine is used to resolve dimension inconsistencies on inventory transactions that have been financially updated and closed. Inconsistencies might be introduced if the multisite functionality was activated during or before the upgrade process.</p><p>Use this routine only to clean up the transactions that were closed before the multisite functionality was activated.</p><p>**Note:** Don't use this routine periodically.</p> |
 | Inventory management \> Periodic tasks \> Clean up \> On-hand entries cleanup | This cleanup routine is used to delete closed and unused entries for on-hand inventory that is assigned to one or more tracking dimensions. Closed transactions contain a value of **0** (zero) for all quantities and cost values, and they are marked as closed. By deleting these transactions, you can help improve the performance of queries for on-hand inventory. Transactions won't be deleted for on-hand inventory that isn't assigned to tracking dimensions. |
 | Inventory management \> Periodic tasks \> Clean up \> Warehouse management on-hand entries cleanup | This cleanup routine deletes records in the InventSum and WHSInventReserve tables. These tables are used to store on-hand information for items that are enabled for warehouse management processing (that is, WHS items). By cleaning up these records, you can significantly improve of the on-hand calculations. |
@@ -110,6 +110,13 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Production control \> Periodic tasks \> Clean up \> Clean up registrations | <p>We recommend that you periodically clean up registrations. This cleanup routine deletes only data that has been processed.</p><p>**Note:** Make sure that you don't delete registrations that might be required later for documentation purposes.</p> |
 | Production control \> Periodic tasks \> Clean up \> Archive future registrations | This cleanup routine is used to remove future registrations from the raw registrations table. |
 
+## Cost management 
+
+| Path | Description |
+|------|-------------|
+| Cost management \> Manufacturing accounting \> Clean up \> Production orders cleanup | <p>Same as **Production control \> Periodic tasks \> Clean up \> Production orders cleanup**.<br><br>This cleanup routine is used to delete production orders that have ended.</p> |
+| Cost management \> Manufacturing accounting \> Clean up \> Production recalculation | Bundles production orders where the estimated costs for material and time consumption should be recalculated and schedules recalculation tasks. |
+| Cost management \> Manufacturing accounting \> Clean up \> Clean up the costing sheet cache | The CostSheetCache table is used as a temp location for cost sheets to help generate prices. This job cleans up the costing sheet cache. Records in the cache that have an age of the specified days or older will be deleted. |
 
 ## Master planning
 

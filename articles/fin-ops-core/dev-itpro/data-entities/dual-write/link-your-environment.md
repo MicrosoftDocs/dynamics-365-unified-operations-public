@@ -5,7 +5,7 @@ author: nhelgren
 ms.date: 05/08/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -16,13 +16,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 1. Sign in to the Finance and Operations app environment that you want to link to your Dataverse environment.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.
 
     ![Dual Write tile.](media/navigate-to-data-management.png)
 
+> [!NOTE]
+> If you are unable to access the Finance and Operations app and need to make changes to your environments you can also use this link to the [Data Integration Admin Portal](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftip.dataintegrator.trafficmanager.net%2FdualWrite%3Faxenv%3Ddxxxxxxxxx.cloudax.dynamics.com&data=04%7C01%7Csushmu%40microsoft.com%7C63cee32877c141d7c55108d96c9d49ba%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637660245076784515%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=71dmOTyAgXpSHrwx4OVahwoFJLclbIsAW2DIVwZFUhk%3D&reserved=0) to go directly to the administration page.
+> 
 3. Select **New link to environment** to open the **Setup link to Dataverse** wizard.
 4. The **Choose environment** page lists all the Dataverse environments where the signed-in user is an environment admin. Select the Dataverse environment to link to, and then select **Next**.
 

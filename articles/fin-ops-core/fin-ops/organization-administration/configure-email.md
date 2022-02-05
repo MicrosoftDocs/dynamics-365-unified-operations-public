@@ -307,7 +307,7 @@ There are a few standard processes that can help you troubleshoot the configurat
 2.  For any emails with an **Email status** of **Failed**, review the error message on the **Failure details** tab and determine if corrective actions should be taken. Some pf these errors are covered later in this topic.  
 
 #### Verify all email accounts have appropriate Send as permissions
-In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Give mailbox permissions to another user in Microsoft 365](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
+In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Give mailbox permissions to another user in Microsoft 365](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user).
 
 #### Verify user mailboxes
 Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed using sign in.
