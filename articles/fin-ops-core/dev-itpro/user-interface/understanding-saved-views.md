@@ -79,7 +79,22 @@ Custom filters are controls modeled on forms that cause modifications to the que
     -  **element.formCustomFilterChanged()**: This is a new API for the custom filter control to call when it has changed the query on the user's behalf. When called, the system will mark the view definition as having unsaved changes. The recommendation is to call this API at the end of the control's modified() method if changes to the control immediately result in the query being refreshed, or call this API for a custom filter on button click if the adjustment of one or more custom filters requires a button for the changes to take effect.  
 
 ### Relative filter values
+Forms may need to use relative filter conditions to retrieve the appropriate information when the page loads. This oftentime includes filter conditions like restricting data for the current user, current date, current legal entity, etc. If a form hard codes a "current date" filter to a particular date and that query is saved to a view and the view is shared with another user, it may provide unexpected results since it would still be attempting to retrieve data from the hard-coded date in the past (instead of today). In other cases (e.g. with attempting to filter to the current user), if the filter condition was harded-coded to a particular user, sharing the view with another user could result in an error when trying to load or import the view. 
 
+To avoid this situation, forms with relative filter conditions should have filter values that utilize Finance and Operations [advanced filter syntax](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options), specifically the syntax where a filter value is enclosed by parentheses, in conjunction with SysQueryRangeUtil methods. Doing so will defer evaluation of the filter method until the query is executed, which allows relative filtering to be used in views and passed between users without issue. This same syntax can be used in the user interface by users in conjunction with the "matches" operator for the same effect.  
+
+As an explicit example, consider a form with a filter condition on a "User" field. Setting the filter value to be "currentUserId()" would result in evaluation of the function immediately with the hard-coded user name being in the query. A simple change to set the filter value to be "(currentUserId())" will save the function to the query definition, allowing a view with this condition to be saved to views and passed to other users without issue.  
+
+Below are some common examples: 
+
+| Description | Filter value  |
+|--|--|
+| Current user | (currentUserId()) |
+| Current legal entity | (currentCompany())
+| Today | (Day(0))   |
+| Yesterday | (Day(-1))  |
+
+For more relative date queries, see [Advanced date queries that use SysQueryRangeUtil methods](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options#advanced-date-queries-that-use-sysqueryrangeutil-methods)
 
 ### Opting forms out of views
 While generally not recommended, starting with version 10.0.25, developers can opt an individual form out of saved views support if needed. This will mean that no view selector is available on the form and there will be no publish capabilities.
