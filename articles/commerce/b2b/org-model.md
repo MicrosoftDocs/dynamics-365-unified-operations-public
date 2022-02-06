@@ -47,7 +47,7 @@ You need to define a number sequence that will be used to generate the ID for th
 In Commerce headquarters, a new entity named "Customer hierarchies" is used to represent the business partner organizations who will use your B2B e-commerce site. When a business partner requests to join the B2B e-commerce site, then the system saves this request as a Prospect. An headquarters persona such as Retail operations manager can Approve or Reject this request. 
 
 > [!NOTE>
-> More details on the business partner request and Prospects approval can be found here: Manage business partner users on B2B e-commerce websites - Commerce | Dynamics 365 | Microsoft Docs>
+> More details on the business partner request and Prospects approval can be found here: [Manage business partner users on B2B e-commerce websites](https://docs.microsoft.com/en-us/dynamics365/commerce/b2b/manage-b2b-users)
  
 When a Prospect is approved, the system creates **two new customer records** - one as a type "Organization" to represent the organization which is requesting to become the business partner and another as a type "Person" to represent the person who submitted the request. Additionally, a new customer hierarchy record is created under the "Retail and Commerce -> Customers -> Customer hierarchies" node. This record has the following properties:
 
