@@ -39,9 +39,9 @@ Number sequences are used to generate readable, unique identifiers for master da
 
 You need to define a number sequence that will be used to generate the ID for the Customer hierarchy. Follow the below steps to do so:
 - Go to Retail and Commerce > Headquarters setup > Number sequences > Number sequences, and create a number sequence. You can reuse any existing number sequence as well.
-- Go to Retail and Commerce > Headquarters setup > Parameters > Commerce shared parameters, and add the number sequence selected above to the "Customer hierarchy ID" reference. Refer the image below:
+- Go to Retail and Commerce > Headquarters setup > Parameters > Commerce shared parameters, and add the number sequence selected above to the "Customer hierarchy ID" reference. Refer the image below.
 
-![Assign a number sequence](./media/NumberSequenceCustHierarchy.png "Assign a number sequence to customer hierarchy"). 
+![Assign a number sequence](/articles/commerce/media/NumberSequenceCustHierarchy.png "Assign a number sequence to customer hierarchy")
 
 ## Customer hierarchies
 In Commerce headquarters, a new entity named "Customer hierarchies" is used to represent the business partner organizations who will use your B2B e-commerce site. When a business partner requests to join the B2B e-commerce site, then the system saves this request as a Prospect. An headquarters persona such as Retail operations manager can Approve or Reject this request. 
@@ -58,12 +58,12 @@ When a Prospect is approved, the system creates **two new customer records** - o
 
 The person who submitted the onboarding request is added under the "Hierarchy" fast tab with the Admin role. When the administrator adds more users are to the business partner organization on a B2B site, a new customer record created for each user of the B2B e-commerce site. This customer record is also added to the relevant customer hierarchy record for the business partner and has the role of a "user". Referring to the below image, the person Sam Jarawan submitted the onboarding request on behalf of the Microsoft Organization. Once the request was approved, two new customer accounts got created i.e. one for Microsoft and one for Sam Jarawan. Additionally, a new customer hierarchy got created with the same name as the organization name. Microsoft got listed as the Organization and Sam was added as an Admin. Any additional users of the B2B site within Microsoft will need to be added to this hierarchy. For e.g. Sushma was added as a user to this hierarchy.
 
-![Customer hierarchy](./media/CustomerHierarchy.png "Customer hierarchy"). 
+![Customer hierarchy](/articles/commerce/media/CustomerHierarchy.png "Customer hierarchy")
 
 
 To know if a customer is associated to a customer hierarchy, you can open the customer details form. Referring to the below image, the Retail fast tab on the customer record shows if this customer is a part of any customer hierarchy and if this customer is an admin of that hierarchy.
 
-![Customer hierarchy to customer mapping](./media/CustomerHierarchyMapping.png "Customer hierarchy to customer mapping").
+![Customer hierarchy to customer mapping](/articles/commerce/media/CustomerHierarchyMapping.png "Customer hierarchy to customer mapping")
 
 
 > [!NOTE]
@@ -72,7 +72,7 @@ To know if a customer is associated to a customer hierarchy, you can open the cu
 
 Commerce headquarters users can look at the property values for all customer records in the hierarchy in a side-by-side view. Referring to the image below, you can use the dropdown showing "General" on the Hierarchy fast tab and select any section of customer record and display the related properties. Users can edit the property values directly in this view. Alternatively, if you want to copy all the values from the administrator customer record to all the users, then press the "Override" button on the Hierarchy fast tab. 
 
-![Customer hierarchy details](./media/HierarchyDetails.png "Customer hierarchy details"). 
+![Customer hierarchy details](/articles/commerce/media/HierarchyDetails.png "Customer hierarchy details")
 
 
 
