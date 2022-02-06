@@ -53,7 +53,10 @@ To approve the business partner request in Commerce headquarters, follow these s
     > Currently, the email is sent immediately on approval, but we are working on allowing the admin to trigger the emails manually as well.
 
 - As mentioned in the article [Customer hierarchy for B2B site](https://docs.microsoft.com/en-us/dynamics365/commerce/b2b/org-model) on prospect approval, a customer hierarchy get created where the requester is added as an admin for the business partner.
-- Go to Retail and Commerce IT > Distribution schedule, and run the 1010 (Customers) job to push the newly created customers and the customer hierarchy records to the channel database.
+- Go to **Retail and Commerce IT** > **Distribution schedule**, and run the **1010 (Customers)** job to push the newly created customers and the customer hierarchy records to the channel database.
+
+	> [!NOTE]
+	> To ensure that the newly created customer records are sent to the channel, at least one of the address book associated to the customer should be included in the "Customer address book" associated to the online store. This can be automated by setting the address book on the 'Default customer' of the online store so that the system copies the address book value to each newly created customer.
 
 After the customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the onboarding request. Users can use the sign-up flow to define the password for their account. To enable the identity provider (Azure AD B2C) record to be linked to the B2B customer record that was created on prospect approval, follow the instructions in [Enable automatic linking](https://docs.microsoft.com/en-us/dynamics365/commerce/identity-record-linking).
 
