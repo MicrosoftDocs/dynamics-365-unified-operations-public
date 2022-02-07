@@ -34,7 +34,8 @@ Inspired from the experiences provided by B2C e-commerce websites, the B2B e-com
 ## Bulk order by item number
 The B2B e-commerce website enables the site users to add items to the item using the item number of the products along with the desired quantity.
 
-![Quick order entry by item number](articles/commerce/media/QuickAddByItem.png “Add item by typing the item number)
+![Quick order entry by item number](/articles/commerce/media/QuickAddByItem.png “Add item by typing the item number")
+
 
 ## Bulk order by variants
 The B2B e-commerce website enables the site users to quickly add different variants of the same product in a single view. The users have inventory visibility by the size, color, and style in a single view. Additionally, using the “Enter all quantities” button above the control, the user can easily enter the same quantity for all the in-stock products.
@@ -45,7 +46,7 @@ The B2B e-commerce website enables the site users to quickly add different varia
 It is common for the buyers on the B2B website to order certain items together. For example, if you are placing orders for a construction site then you might want to order shirts, jackets, pants, shoes, and hat together. Similarly, if different job roles have different uniforms e.g. in a hospital there are different uniforms for doctors, nurses, cleaning staff etc. So, you might want to group these different uniforms together for easier ordering. For such scenarios, the B2B site provides the capability of creating order templates. The users can create any number of templates and can order all or selected items from these templates as required. 
 
 ![Order template header](articles/commerce/media/OrderTemplateHeader.png “List of order templates”)  
-![ Order template details view](articles/commerce/media/ OrderTemplateLines.png “Details of the items within a template)  
+![Order template details view](articles/commerce/media/ OrderTemplateLines.png “Details of the items within a template)  
 
 ## Reorder from order history
 
