@@ -51,9 +51,7 @@ Module CSS optimization is an opt in feature and can be enabled by adding the **
 
 ### Configure theme styles to enable module CSS optimization for individual modules
  
-The below steps will help you guide on how to configure CSS for individual modules to leverage the CSS optimization feature.
- 
-Each theme contains a **styles** folder where we configure all of the theme CSS.  Module specific styles need to be included in a **modules** directory within the styles folder as shown below:
+Each theme contains a **styles** folder where all of the theme CSS files reside.  Module specific styles need to be included in a new **modules** directory within the styles folder as shown below:
 
 ![styles](media/css-optimization-1.png)
 
