@@ -57,29 +57,24 @@ Each theme contains a **styles** folder where all of the theme CSS files reside.
 
 Note : For configuring `RTL` specific styles, you can add all RTL specific module styles in the styles/**modules-rtl** directory.
  
-The **modules** folder will contain individual module CSS MODULE_NAME.scss files and a corresponding MODULE_NAME.js file, where MODULE_NAME matches the name property within the module definition file (MODULE_NAME.definition.json).  The below example shows the styles files needed for the "header" module.
+Each module that you would like to enable CSS optimization on will require two files added to the **modules** directory: MODULE_NAME.scss and MODULE_NAME.js, where MODULE_NAME matches the name property within the module definition file (MODULE_NAME.definition.json).  The below example shows the two files needed to enable CSS optimization on the "header" module:
  
 ![styles](media/css-optimization-2.png)
  
-5.	<moduleName>.scss  file should contains all styles for related of that module
+The MODULE_NAME.scss file contains all styles needed for the individual module as shown in the below example:
+
+![styles](media/css-optimization-3.png)
+
+The MODULE_NAME.js file is the entry file for creation of the module CSS chunks.
+
+![styles](media/css-optimization-4.png) 
  
  
- 
- 
- 
-6.	In <moduleName>.js file, you can import <moduleName>.scss
- 
- 
- 
-<moduleName>.js files are the entry files for creation of the module css chunks. So each <moduleName>.scss file should always have a <moduleName>.js files.
- 
-	Configuring assets in CSS:
+## Configuring assets in CSS:
  
 Old structure: 
- 
+
 Currently, all the assets are stored in root level public directory:
- 
- 
  
  
 New structure:
