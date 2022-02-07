@@ -83,7 +83,7 @@ Assets should then be imported from msdyn365-assets folder within your SCSS file
 
 ![styles](media/css-optimization-7.png) 
 
-## CSS compliation errors:
+## CSS compilation errors:
 Webpack is used to compile and build the module CSS chunks and only shows CSS compilation errors when building the project in production mode. The project can be built in production mode using the **yarn build:prod** command. CSS compliation errors can be found in a generated **stats-client-build-errors.json** file at the root SDK level.
 
 ## Best practices for configuring module css styles:
