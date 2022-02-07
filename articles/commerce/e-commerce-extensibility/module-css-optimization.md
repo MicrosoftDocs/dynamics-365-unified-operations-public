@@ -93,13 +93,13 @@ Webpack is used to compile and build the module CSS chunks and only shows CSS co
 * Component styles that are used by one or more modules can be imported in the MODULE_NAME.js.  For example if module-A and module-B use common button component styles, they can both import the component as shown in the below example:
 
 module-A.js
-```json
+```js
 import "./module-A"
 import "../common/03-components/button.scss"
 ```
 
 module-B.js
-```json
+```js
 import "./module-B"
 import "../common/03-components/button.scss"
 ``` 
