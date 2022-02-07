@@ -37,7 +37,7 @@ By default, a theme bundles all module CSS in a single file within the theme sty
 To enable module CSS optimization feature ensure the following pre requisites are met:
 
 * Using Online SDK version 1.35.13 or newer.
-* Webpack5 is required for this feature to work, upgrade your SDK code to webpack5 using the **upgrade-webpack** CLI: ```yarn msdyn365 upgrade-webpack```.
+* Webpack 5 is required for this feature to work, upgrade your SDK code to Webpack 5 using the **upgrade-webpack** CLI: ```yarn msdyn365 upgrade-webpack```.
 * If you are using the Fabrikam reference theme (Fabrikam-design-kit), module CSS support will be added release 9.36 (10.0.26) or newer.
  
 ## Enable module CSS optimization
@@ -65,55 +65,44 @@ The MODULE_NAME.scss file contains all styles needed for the individual module a
 
 ![styles](media/css-optimization-3.png)
 
-The MODULE_NAME.js file is the entry file for creation of the module CSS chunks and contains a single line to import the CSS file as shown in the below example.
+The MODULE_NAME.js file is the entry file for creation of the module CSS chunks and contains a single line to import the CSS file as shown in the below example:
 
 ![styles](media/css-optimization-4.png) 
  
+## Configuring assets in CSS for use with module CSS optimization:
  
-## Configuring assets in CSS:
- 
-Old structure: 
+By default, all the assets are stored in root level public directory as shown below.
 
-Currently, all the assets are stored in root level public directory:
+![styles](media/css-optimization-5.png)  
  
- 
-New structure:
- 
-All the needs to be stored in public/msdyn365-assets
- 
- 
- 
-•	Assets should be imported from msdyn365-assets folder your styles
- 
-Example:
- 
- 
- 
-Note: 
- 
-We use webpack to compile and build the module css chunks and only show the css compilation error when building the project in production mode. 
- 
-	How check for CSS compliation errors:
-The customer can build the project in production mode using yarn build:prod command to see any css compliation error. Any CSS compliation errors are generated in stats-client-build-errors.json file at the root level
+To leverage assets within the module CSS optimization files they must be stored in the **public/msdyn365-assets** folder as shown below:
 
-	Best practices for configuring module css styles:
+![styles](media/css-optimization-6.png)  
+  
+Assets should then be imported from msdyn365-assets folder within your SCSS files using a relative path **"../../../../../msdyn365-assets/"** folder as shown in the below example:
+
+![styles](media/css-optimization-7.png) 
+
+## CSS compliation errors:
+Webpack is used to compile and build the module CSS chunks and only shows CSS compilation errors when building the project in production mode. The project can be built in production mode using the **yarn build:prod** command. CSS compliation errors can be found in a generated **stats-client-build-errors.json** file at the root SDK level.
+
+## Best practices for configuring module css styles:
  
-•	Avoid Importing module-A styles into module-B styles as its an anti-pattern and it defeats the purpose of creating smaller css chunks. Rather, moduleA should only have styles related to moduleA and same for moduleB
- 
-•	Any component styles that is used by one or more module, can be imported in <moduleName>.js 
- 
-Example: 
- 
-If header and footer module uses a common button component styles,
- 
-header.js
- 
- 
-Footer.js
- 
- 
- 
+* Avoid Importing module-A styles into module-B styles as its an anti-pattern and it defeats the purpose of creating smaller CSS chunks. Rather, module-A should only have styles related to module-A and module-B styles should only have styles for module-B.
+* Avoid importing index.scss file in the MODULE_NAME.scss, only import if all the styles imports from index.scss are used by your module.
+* Component styles that are used by one or more modules can be imported in the MODULE_NAME.js.  For example if module-A and module-B use common button component styles, they can both import the component as shown in the below example:
+
+module-A.js
+```json
+import "./module-A"
+import "../common/03-components/button.scss"
+```
+
+module-B.js
+```json
+import "./module-B"
+import "../common/03-components/button.scss"
+``` 
+
 With this approach, SDK will create common css chunks which will be help in keep individual module css chunks small.
  
-•	Avoid importing index.scss file in the <moduleName>.scss, only import if all the styles imports from index.scss are used by your module.
-
