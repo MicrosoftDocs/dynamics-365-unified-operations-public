@@ -33,7 +33,7 @@ This topic presents an overview and instructions on leveraging the module CSS op
 
 By default, a theme bundles all module CSS in a single file within the theme styles directory named THEME_NAME.theme.scss file, where THEME_NAME is the name of your theme. The online SDK injects the theme CSS static file from CDN on every rendered e-commerce page, since the single THEME_NAME.theme.scss file contains CSS from all modules, there can be a good amount of unused CSS on a page that only uses a subset of available modules. The module CSS optimization feature adds support to split CSS per module and only dynamically inject the module CSS relevant to the rendered e-commerce.
  
-## Requirements
+## Prerequisites
 To enable module CSS optimization feature ensure the following pre requisites are met:
 
 * Using Online SDK version 1.35.13 or newer.
