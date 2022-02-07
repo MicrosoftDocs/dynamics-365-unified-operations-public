@@ -32,22 +32,19 @@ When inspecting the lines of a purchase order, you notice one or more of the fol
 
 These issues are usually caused by data corruption or a discrepancy in the remainder quantities for one or more purchase order lines.
 
-To help find the cause, activate this app troubleshooting rule to check for inconsistency between a purchase order line and inventory transactions: [Inventory transaction is not consistent with purchase line - Dynamics Wiki](https://dynamics.wiki/index.php/Inventory_transaction_is_not_consistent_with_purchase_line#How_to_activate_rules) <!-- KFM: This looks like an internal resource. What do we want to tell users about this? Call Microsoft Support and request something we mention here? -->
-
 ## Resolution
 
-You can usually fix these issues by updating the purchase status or the delivery/invoice remainders for the relevant purchase order lines, as described in the following procedure.
+You can usually fix these issues by updating the purchase status,delivery remainders and/or invoice remainders for the relevant purchase order lines, as described in the following procedure.
 
 1. Go to **Procurement and sourcing \> Periodic tasks \> Cleanup \> Correct purchase order lines manually**.
-1. The page gives the following capabilities: <!-- KFM: Update the following to provide instructions on how to do each of these things (eg, name UI labels, fields and values). -->
-    - Recalculate the purchase order line status. This is based on the existing logic, which means the purchase order header status will be updated based on the new purchase order line status if needed.
-    - Manually edit the 4 Qty fields (RemainInventPhysical, RemainInventFinancial, RemainPurchPhysical, RemainPurchFinancial). When doing so, the purchase order line status on the line gets recalculated based on existing logic.
-    - Only for stocked purchase order lines (item on the line is stocked item) (non-stocked items and catch weight items aren't currently supported):
-        - Recalculate the deliver remainder quantities. This will automatically update the purchase order line and header statuses.
-        - Recalculate the invoice remainder quantities. This will automatically update the purchase order line and header statuses.
-        - The recalculations of the Qty fields are based on InventTrans, so use this after determining the InventTrans are correct.
-
-> [!NOTE]
->
-> - The **Correct purchase order lines manually** page helps you fix purchase order line issues but not inventory transaction issues. It assumes that the inventory transactions are correct.
-> - For non-stocked purchase order lines, updating the inventory delivery/invoice remainders won't help because they are always 0 (they don't have inventory). <!-- KFM: Can we give more/better advice for this situation? -->
+1. Use the **Purchase order** field to find and select the purchase order that is giving you trouble.
+1. In the **Purchase oder lines** section, select a line where you found a discrepancy.
+1. Inspect the data shown in the **Inventory transactions** section. If you notice any inconsistencies between a purchase order line and its inventory transactions then, on the Action Pane, select one of the following commands, depending on where you see the problem.
+    - **Recalculate \> Recalculate deliver remainder** – Automatically updates the purchase order line and header statuses. This function only works for stocked purchase order lines (item on the line is stocked item) (non-stocked items and catch weight items aren't currently supported).
+    - **Recalculate \> Recalculate invoice remainder** – Automatically update the purchase order line and header statuses. This function only works for stocked purchase order lines (item on the line is stocked item) (non-stocked items and catch weight items aren't currently supported).
+    - **Recalculate \> Recalculate status**  –  Recalculates the status of the selected line. This calculation based on the existing logic, which means the purchase order header status will be updated based on the new purchase order line status as needed.
+1. If you still see inconsistencies in the remainder quantities, then you can edit them directly as needed using the following fields:
+    - **Deliver remainder**
+    - **Inventory deliver remainder**
+    - **Invoice remainder**
+    - **Inventory invoice remainder**
