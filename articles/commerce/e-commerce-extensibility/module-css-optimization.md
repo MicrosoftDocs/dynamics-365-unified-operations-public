@@ -41,7 +41,7 @@ To enable module CSS optimization feature ensure the following pre requisites ar
 * If you are using the Fabrikam reference theme (Fabrikam-design-kit), module CSS support will be added release 9.36 (10.0.26) or newer.
  
 ## Enable module CSS optimization
-Module CSS optimization is an opt in feature and can be enabled by adding **ModuleCssOptimization** to the **src/settings/platform.setings.json** file as shown below
+Module CSS optimization is an opt in feature and can be enabled by adding the **ModuleCssOptimization** property to the **src/settings/platform.setings.json** file as shown below:
 
 ```json
 {
