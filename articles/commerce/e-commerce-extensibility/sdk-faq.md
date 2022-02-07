@@ -31,10 +31,10 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-### How to resolve "Heap out of memory" error when building
-If you are running into heap out of memory error, it is possible that you have incorrect imports in the code.  It is highly recommended to make use of the [CLI tools](cli-command-reference.md) included with the Online SDK for any customizations such as creating view extensions, component overrides, module cloning, etc... to ensure imports are setup correctly.
+### How to resolve heap out of memory errors
+If you are running into heap out of memory errors when building the Online SDK, it is possible that the code has incorrect imports.  To ensure paths are setup correctly it is highly recommended to make use of the [CLI tools](cli-command-reference.md) included with the Online SDK for any customizations such as creating view extensions, component overrides, module cloning, etc...
 
-Imports from modules residing in **node_modules** should always be against namespace and module name. Any import of a module with absolute path from their 'src' folder causes the build process to run into a loop which could lead to heap out of memory errors.
+Imports from modules residing in **node_modules** directory should always be against the namespace and module name. Any import of a module with absolute path from their 'src' folder causes the build process to run into a loop which could lead to heap out of memory errors.
 
 Example of an invalid import:
 
