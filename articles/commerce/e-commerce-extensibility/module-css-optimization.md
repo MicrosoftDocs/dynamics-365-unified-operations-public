@@ -65,7 +65,7 @@ The MODULE_NAME.scss file contains all styles needed for the individual module a
 
 ![styles](media/css-optimization-3.png)
 
-The MODULE_NAME.js file is the entry file for creation of the module CSS chunks.
+The MODULE_NAME.js file is the entry file for creation of the module CSS chunks and contains a single line to import the CSS file as shown in the below example.
 
 ![styles](media/css-optimization-4.png) 
  
