@@ -292,6 +292,10 @@
           href: enable-configure-retail-functionality.md
     - name: Implementation
       items:
+      - name: Application LiveCycle management
+        items:
+        - name: Dynamics 365 Commerce component versioning requirements
+          href: arch-component-versioning.md
       - name: Go-live and update recommendations
         items:
         - name: Go-live and update recommendations overview
@@ -302,6 +306,12 @@
             href: go-live/performance-optimize-images.md
           - name: Reduce JavaScript by excluding unused modules
             href: go-live/performance-reduce-javascript.md
+      - name: AX 2012 phased rollout
+        items:
+        - name: Upgrade and N-1 support for Commerce
+          href: /dev-itpro/overview-upgrade-n-minus1.md
+        - name: Phased Rollout (N-1) installation, configuration, and cutover guide
+          href: /dev-itpro/n-1-installation-configuration.md
     - name: Set up your channels 
       items:
       - name: Channels overview
