@@ -89,13 +89,13 @@ The following image shows some example event notification settings.
 
 To send out the email notifications, you need to have the **Process retail order email notification** job running. If you have not yet set that up, please follow these steps:
 
-1. Log in to the HQ
-1. Navigate to **Retail and Commerce > Retail and Commerce IT > Email and notifications > Send email notification** or search for **Send email notification**
+1. Log in to the HQ.
+1. Navigate to **Retail and Commerce > Retail and Commerce IT > Email and notifications > Send email notification** or search for **Send email notification**.
 1. Side pane will open allowing you to change the job details.
-1. Click **Recurrence** and change the end date to **NO END DATE**
-1. Change the recurrence pattern to **Minutes** and the **Count** to 1 to ensure that the email notifications are processed and sent out as quickly as possible
-1. Click **OK**
-1. Click **OK**
+1. Click **Recurrence** and change the end date to **NO END DATE**.
+1. Change the recurrence pattern to **Minutes** and the **Count** to 1 to ensure that the email notifications are processed as quickly as possible.
+1. Click **OK** to save **Recurrence** setting.
+1. Click **OK** to finish the job setup.
 
 ### Next steps
 
