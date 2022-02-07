@@ -3,8 +3,8 @@
 
 title: Electronic invoicing for Egypt
 description: This topic provides information that will help you get started with Electronic invoicing for Egypt in Finance and Supply Chain Management.
-author: gionoder, dkalyuzh
-ms.date: 04/20/2021
+author: gionoder
+ms.date: 02/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
