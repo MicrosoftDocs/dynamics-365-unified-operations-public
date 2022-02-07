@@ -51,26 +51,17 @@ Module CSS optimization is an opt in feature and can be enabled by adding **Modu
 
 ### Configure theme styles to enable module CSS optimization for individual modules
  
-The below steps will help you guide on how to configure CSS for individual modules.
+The below steps will help you guide on how to configure CSS for individual modules to leverage the CSS optimization feature.
  
-Steps:
+Each theme contains a **styles** folder where we configure all of the theme CSS.  Module specific styles need to be included in a **modules** directory within the styles folder as shown below:
 
-1.	Each theme contains `styles` folder where we configure all the CSS
 ![styles](media/css-optimization-1.png)
 
-2.	Inside styles, you can define all module specific styles in styles/modules directory. 
-
-
-Note : For configuring `rtl` specific styles, you can add all rtl specific module styles in styles/modules-rtl directory
+Note : For configuring `RTL` specific styles, you can add all RTL specific module styles in the styles/**modules-rtl** directory.
  
-3.	Modules folder will contain individual module CSS  <moduleName>.scss files, 
-Note: The <module name> should match the name property in module.definition.json 
+The **modules** folder will contain individual module CSS MODULE_NAME.scss files and a corresponding MODULE_NAME.js file, where MODULE_NAME matches the name property within the module definition file (MODULE_NAME.definition.json).  The below example shows the styles files needed for the "header" module.
  
- 
- 
-4.	Each <moduleName>.scss  should have its corresponding <moduleName>.js  file.
- 
- 
+![styles](media/css-optimization-2.png)
  
 5.	<moduleName>.scss  file should contains all styles for related of that module
  
