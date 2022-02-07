@@ -49,11 +49,11 @@ The preceding video ([Change management capabilities in Dynamics 365 Supply Chai
 
 ## Turn on the engineering change management features for your system
 
-As of Supply Chain Management version 10.0.25, Engineering Change Management and several of its related features are turned on by default, but you can manually disable or re-enable the various features by following the instructions in this section.
+Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration key. If you also want to track the version dimension of products in transactions (optional), you must also enable both the *Product version dimension feature* and its configuration key. After those prerequisites are set up as required, you will be able to turn on additional optional features for engineering change management.
 
 ### Turn the basic engineering change management features on or off
 
-To turn the basic engineering change management features on or off, follow these steps.
+To turn the basic engineering change management features on or off, follow these steps. As of Supply Chain Management version 10.0.25, the *Engineering Change Management* feature is turned on by default.
 
 1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 1. Check for updates.
@@ -62,9 +62,7 @@ To turn the basic engineering change management features on or off, follow these
 
 ### Turn the required configuration keys on or off
 
-Once the Engineering Change Management feature is enabled on your system, you may also need to enable one or more configuration keys before you can use. If you aren't using the feature, you might choose to turn these off. As of Supply Chain Management version 10.0.25, all of the required keys are turned on by default, but you can still choose to turn them off if you want.
-
-To change your configuration key settings for Engineering Change Management features, follow these steps.
+Next, turn on the configuration keys by following these steps. These are not turned on by default.
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.

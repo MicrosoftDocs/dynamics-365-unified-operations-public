@@ -189,7 +189,7 @@ You can enable product readiness checks for standard (non-engineering) products 
 
 ### Enable or disable readiness checks on standard products
 
-This feature requires that both the *Engineering Change Management* and *Product readiness checks* features be turned on for your system. As of Supply Chain Management version 10.0.25, both of these features are turned on by default, but you can turn them off if you want. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
+This feature requires that both the *Engineering Change Management* and *Product readiness checks* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ### Create readiness policies for standard products
 

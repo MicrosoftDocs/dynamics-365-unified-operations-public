@@ -23,9 +23,9 @@ If you're using the process manufacturing capabilities of Microsoft Dynamics 365
 - **Co-products and by-products:** Edit quantities and other information of the co-products and by-products in a formula.
 - **Catchweight items:** Manage changes to catch-weight items.
 
-## Turn on this feature in your system
+## Turn this feature on or off
 
-The functionality described in this topic requires that both the *Engineering Change Management* and *Manage changes to formulas and their ingredients* features be turned on for your system. As of Supply Chain Management version 10.0.25, both of these features are turned on by default, but you can turn them off if you want. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
+The functionality described in this topic requires that both the *Engineering Change Management* and *Manage changes to formulas and their ingredients* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ## Feature naming conventions
 

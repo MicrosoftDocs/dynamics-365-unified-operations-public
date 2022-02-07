@@ -32,9 +32,9 @@ This topic explains how you can enable change management for existing products. 
 
 When you enable change management for an existing product, you can create versions of that product and trace changes that are made to it throughout its life. Therefore, you can track those changes by using change orders. To enable change management, you must convert the relevant products to *engineering items* (also referred to as engineering products). Engineering products are products that are versioned and managed through change management. A wizard is provided to guide you through the conversion process.
 
-## Turn on the feature in your system
+## Turn this feature on or off
 
-The functionality described in this topic requires that both the *Engineering Change Management* and *Enable change management on existing products* features be turned on for your system. As of Supply Chain Management version 10.0.25, both of these features are turned on by default, but you can turn them off if you want. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
+The functionality described in this topic requires that both the *Engineering Change Management* and *Enable change management on existing products* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ## Restrictions and limitations
 
