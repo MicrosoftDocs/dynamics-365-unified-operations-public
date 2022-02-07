@@ -290,7 +290,7 @@
           href: enable-configure-retail-functionality.md
     - name: Implementation
       items:
-      - name: Application LiveCycle management
+      - name: Application lifecycle management
         items:
         - name: Dynamics 365 Commerce component versioning requirements
           href: arch-component-versioning.md
