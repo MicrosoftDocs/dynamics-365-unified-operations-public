@@ -4,7 +4,7 @@ description: You see data discrepancies or data corruption in your purchase orde
 author: SmithaNataraj 
 ms.date: 12/07/2021 
 ms.topic: troubleshooting 
-ms.search.form: 
+ms.search.form: PurchLineManualCorrection, PurchTable
 audience: Application User 
 ms.reviewer: kamaybac 
 ms.search.region: Global 
