@@ -4,7 +4,7 @@
 title: Add data fields in the tax integration by using extensions
 description: This topic explains how to use X++ extensions to add data fields in the tax integration.
 author: qire
-ms.date: 04/20/2021
+ms.date: 02/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -359,20 +359,22 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.
 
 > [!NOTE]
-> * Define the key that is used in the request form as `private const str`. The string should be **exactly the same** as measure name added in [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
-> * Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method. The data type of the second parameter should be `string`. If the data type isn't `string`, convert it to `string`.
->   * If an X++ **enum type** is extended, be aware of the difference between its value, label and Name.
->       * The value of enum is integer.
->       * The label of enum can be different across preferred languages. Please do not use `enum2Str` to convert enum type to string.
->       * The name of enum is recommended to use because it's fixed. `enum2Symbol` can be used to convert enum to its name. The enumeration value added in tax configuration should be **exactly the same** with enum name.
+> Define the key that is used in the request form as **private const str**. The string should be exactly the same as themeasure name added in the topic, [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+> Set the field in the **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** method by using the **SetField** method. The data type of the second parameter should be **string**. If the data type isn't **string**, convert it.
+> If an X++ **enum type** is extended, be aware of the difference between its value, label, and name.
+> 
+>     - The value of the enum is integer.
+>     - The label of the enum can be different across preferred languages. Don't use **enum2Str** to convert the enum type to string.
+>     - The name of enum is recommended because it's fixed. **enum2Symbol** can be used to convert the enum to its name. The enumeration value added in the tax configuration should be exactly the same as the enum name.
 
 ## Validation
 
-After all above steps are done and well-deployed, there is a convenient way to validate:
+After you complete the previous steps, you can validate your changes.
 
-1. Open a Finance and Operations page and append `&debug=vs%2CconfirmExit&` to the url, like: `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Note the last '&' is essential.
-2. Create a purchase order, set the value for the customized field, and click **Sales tax** button.
-3. Then a troubleshooting file with prefix `TaxServiceTroubleshootingLog` will be downloaded automatically. This file contains the transaction information posted to Tax Calculation Service. Check if the customized field added is present in **Tax service calculation input JSON** section and its value is correct or not. If not correct, please double check the steps in this document.
+1. In Finance, go to **Accounts payable** and add **&debug=vs%2CconfirmExit&** to the url. For example, **https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&**. The final **&** is essential.
+2. Open the **Purchase order** page and select **New** to create a purchase order.
+3. Set the value for the customized field, and then select **Sales tax**. A troubleshooting file with prefix, **TaxServiceTroubleshootingLog** is downloaded automatically. This file contains the transaction information posted to the Tax Calculation Service. 
+4. Check if the customized field added is present in **Tax service calculation input JSON** section and if its value is correct. If the value isn't correct, double check the steps in this document.
 
 File example:
 
@@ -414,7 +416,7 @@ File example:
 
 ## Appendix
 
-This appendix shows the complete sample code for the integration of financial dimensions (**Cost center** and **Project**) at the line level.
+This appendix shows the complete sample code for the integration of the financial dimensions, **Cost center** and **Project** at the line level.
 
 ### TaxIntegrationLineObject_Extension.xpp
 
