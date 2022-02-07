@@ -290,7 +290,7 @@
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
         - name: Initialize seed data in new Commerce environments
           href: enable-configure-retail-functionality.md
-    - name: Implementations
+    - name: Implementation
       items:
       - name: Go-live and update recommendations
         items:
