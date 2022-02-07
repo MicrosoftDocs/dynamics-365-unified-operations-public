@@ -51,6 +51,7 @@ It is common for the buyers on the B2B website to order certain items together. 
 ## Reorder from order history
 
 The B2B e-commerce website enables the site users to quickly reorder items from their order history. Referring to the image below, the user can choose to buy selected items from the order history or add all the items to the cart.
+
 ![Reorder from past orders](articles/commerce/media/Reorder.png “Reorder from past orders”) 
 
 These are just some of the ways by which the B2B site enables the users to quickly order the products they want. More capabilities are in development to further simplify and bulk order capture process. 
