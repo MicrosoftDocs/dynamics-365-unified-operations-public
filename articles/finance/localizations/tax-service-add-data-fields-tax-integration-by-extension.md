@@ -361,7 +361,7 @@ In this code, `_destination` is the wrapper object that is used to generate the 
 > [!NOTE]
 > * Define the key that is used in the request form as `private const str`. The string should be **exactly the same** as measure name added in [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 > * Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method. The data type of the second parameter should be `string`. If the data type isn't `string`, convert it to `string`.
->   * If an **enum type** is extened, be aware of the difference of its value, label and symbol. The value of enum type is integer. Label can be different across prefered languages. Symbol is recommended to use because it's fixed. Whatever value is used, it should be **exactly the same** as measure value configured in [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+>   * If an **enum type** is extened, be aware of the difference of its value, label and symbol. The value of enum type is integer. Label can be different across preferred languages. Symbol is recommended to use because it's fixed. Whatever value is used, it should be **exactly the same** as measure value configured in [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 
 ## Troubleshooting
 
