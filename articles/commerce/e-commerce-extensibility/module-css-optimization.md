@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module CSS optimization
-description: This topic presents an ....
+description: This topic presents instructions on leveraging the module CSS optimization feature to help reduce the overall CSS bundle size of an e-commerce page, leading to improved page performance.
 author: samjarawan
 ms.date: 11/20/2020
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview and instructions on leveraging the module CSS optimization feature to help reduce the overall CSS bundle size leading to improved page performance.  
+This topic presents instructions on leveraging the module CSS optimization feature to help reduce the overall CSS bundle size of an e-commerce page, leading to improved page performance.
 
 By default, a theme bundles all module CSS in a single file within the theme styles directory named THEME_NAME.theme.scss file, where THEME_NAME is the name of your theme. The online SDK injects the theme CSS static file from CDN on every rendered e-commerce page, since the single THEME_NAME.theme.scss file contains CSS from all modules, there can be a good amount of unused CSS on a page that only uses a subset of available modules. The module CSS optimization feature adds support to split CSS per module and only dynamically inject the module CSS relevant to the rendered e-commerce.
  
