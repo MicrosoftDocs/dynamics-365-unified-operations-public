@@ -359,8 +359,88 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object. 
 
 > [!NOTE]
-> * Define the key that is used in the request form as `private const str`.
+> * Define the key that is used in the request form as `private const str`. The string should be **exactly the same** as measure name added in [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 > * Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method. The data type of the second parameter should be `string`. If the data type isn't `string`, convert it to `string`.
+>   * If an **enum type** is extened, be aware of the difference of its value, label and symbol. The value of enum type is integer. Label can be different across prefered languages. Symbol is recommended to use because it's fixed. Whatever value is used, it should be **exactly the same** as measure value configured in [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+
+## Troubleshooting
+
+After all above steps done and well-deployed, there is a convenient way to validate it.
+
+Open a Finance and Operations page and append `&debug=vs%2CconfirmExit&` to the url, like: `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Note the last '&' is essential.
+
+Create a purchase order or other transactions supported, configure the field extended and click **Sales tax** button. Then a troubleshooting file which name begins with `TaxServiceTroubleshootingLog` will be downloaded automatically. This file contains the form content posted to Tax Service. Check if the new fields added are present in **Tax service calculation input JSON:** section and its value is correct or not. It helps us to troubleshoot the issue is at X++ engineering side or tax configuration side.
+
+File example:
+```
+===Tax service calculation input JSON:===
+{
+  "TaxableDocument": {
+    "Header": [
+      {
+        "Lines": [
+          {
+            "Line Type": "Normal",
+            "Item Code": "",
+            "Item Type": "Item",
+            "Quantity": 0.0,
+            "Amount": 1000.0,
+            "Currency": "EUR",
+            "Transaction Date": "2022-1-26T00:00:00",
+            ...
+            /// The new fields added at line level
+            "Cost Center": "003",
+            "Project": "Proj-123"
+          }
+        ],
+        "Amount include tax": true,
+        "Business Process": "Journal",
+        "Currency": "",
+        "Vendor Account": "DE-001",
+        "Vendor Invoice Account": "DE-001",
+        ...
+        // The new fields added at header level, no new fields in this example
+        ...
+      }
+    ]
+  },
+}
+===Tax service calculation result JSON:===
+{
+  "taxDocument": {
+    "Header": [
+      {
+        "Lines": [
+          {
+            "Tax Codes": {
+              "InVAT19": {
+                "Base Amount": 666.66666666666663,
+                "Tax Amount": 333.33333333333331,
+                "Tax Rate": 50.0,
+                "Is Exempt": false,
+                ...
+              }
+            },
+            ...
+          }
+        ],
+        "Measures": {
+          "List Code": "IncludeNot",
+          "Customer Tax Registration Number": "cust123",
+          "Customer Tax Registration Country/Region": "",
+          "Vendor Tax Registration Number": "cust123",
+          "Vendor Tax Registration Country/Region": "",
+            ...
+        },
+        ...
+      }
+    ]
+  },
+  ...
+}
+===CorrelationId:===
+"11111111-2222-aaaa-bbbb-cccccccccccc"
+```
 
 ## Appendix
 
