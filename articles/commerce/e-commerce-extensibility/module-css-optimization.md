@@ -86,7 +86,7 @@ Assets should then be imported from msdyn365-assets folder within your SCSS file
 ## CSS compilation errors:
 Webpack is used to compile and build the module CSS chunks and only shows CSS compilation errors when building the project in production mode. The project can be built in production mode using the **yarn build:prod** command. CSS compliation errors can be found in a generated **stats-client-build-errors.json** file at the root SDK level.
 
-## Best practices for configuring module css styles:
+## Best practices for configuring module CSS styles:
  
 * Avoid Importing module-A styles into module-B styles as its an anti-pattern and it defeats the purpose of creating smaller CSS chunks. Rather, module-A should only have styles related to module-A and module-B styles should only have styles for module-B.
 * Avoid importing index.scss file in the MODULE_NAME.scss, only import if all the styles imports from index.scss are used by your module.
@@ -104,5 +104,5 @@ import "./module-B"
 import "../common/03-components/button.scss"
 ``` 
 
-With this approach, SDK will create common css chunks which will be help in keep individual module css chunks small.
+With this approach, SDK will create common CSS chunks which will be help in keep individual module CSS chunks small.
  
