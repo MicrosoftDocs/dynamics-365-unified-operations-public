@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module CSS optimization
-description: This topic presents an
+description: This topic presents an ....
 author: samjarawan
 ms.date: 11/20/2020
 ms.topic: overview
@@ -29,47 +29,37 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview and instructions on leveraging module CSS optimization to get better performance on page load.
+This topic presents an overview and instructions on leveraging the module CSS optimization feature to help reduce the overall CSS bundle size leading to improved page performance.  
 
-## Web storefront component-based architecture
+By default, a theme bundles all module CSS in a single file within the theme styles directory named THEME_NAME.theme.scss file, where THEME_NAME is the name of your theme. The online SDK injects the theme CSS static file from CDN on every rendered e-commerce page, since the single THEME_NAME.theme.scss file contains CSS from all modules, there can be a good amount of unused CSS on a page that only uses a subset of available modules. The module CSS optimization feature adds support to split CSS per module and only dynamically inject the module CSS relevant to the rendered e-commerce.
+ 
+## Requirements
+To enable module CSS optimization feature ensure the following pre requisites are met:
 
-Module CSS optimization helps in reducing the overall CSS bundle size on the page which helps in improving the page performance. Current structure is all CSS is bundled up in a single *.theme.scss file inside a theme. SDK injects the theme css static file from cdn in every page, since the single *theme.scss file contains css from all modules, there is a lot of unused css on a page for modules that does not exists on the page.
+* Using Online SDK version 1.35.13 or newer.
+* Webpack5 is required for this feature to work, upgrade your SDK code to webpack5 using the **upgrade-webpack** CLI: ```yarn msdyn365 upgrade-webpack```.
+* If you are using the Fabrikam reference theme (Fabrikam-design-kit), module CSS support will be added release 9.36 (10.0.26) or newer.
  
-To help improve the CSS performance and reduces the unused css on the page, customers can leverage this new feature which will help improve the page load performance.
- 
-With module CSS Optimization feature, we have added support for splitting CSS per module and dynamically inject the module CSS on the page. This will help in on reducing unused CSS on a page that browser has to download and help improve performance.
- 
-  Requirements: 
-•	Webpack5 : This feature is only supported on Webpack5. To use this feature please, upgrade the partner app to use webpack5 using this CLI       
- 
-                        yarn msdyn365 upgrade-webpack
- 
-•	SDK 1.35.13 or later 
-•	Fabrikam-design-kit theme styles for module css with supported from 9.36 or later
- 
-	How to turn on moduleCssOptimization feature:
- 
-ModuleCssOptimization is an opt in feature and can be enabled through paltform.settings.json located in src/settings/platform.setings.json
- 
+## Enable module CSS optimization
+Module CSS optimization is an opt in feature and can be enabled by adding **ModuleCssOptimization** to the **src/settings/platform.setings.json** file as shown below
+
+```json
 {
     "enableModuleCssOptimization": true
 }
+```
+
+### Configure theme styles to enable module CSS optimization for individual modules
  
- 
-	How to configure styles to enable moduleCssOptimization:
- 
-With this feature, we will support splitting individual module styles inside themes. Below steps will help you guide on how to configure styles for individual modules.
+The below steps will help you guide on how to configure CSS for individual modules.
  
 Steps:
 
 1.	Each theme contains `styles` folder where we configure all the CSS
- 
- 
- 
+![styles](media/css-optimization-1.png)
+
 2.	Inside styles, you can define all module specific styles in styles/modules directory. 
 
- 
- 
 
 Note : For configuring `rtl` specific styles, you can add all rtl specific module styles in styles/modules-rtl directory
  
