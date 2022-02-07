@@ -150,35 +150,34 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | [Confirm and transfer](../warehousing/confirm-and-transfer.md) | Mandatory |
 | Warehouse management | [Confirm outbound shipments from batch jobs](../warehousing/confirm-outbound-shipments-from-batch-jobs.md) | Mandatory |
 | Warehouse management | [Control whether to display a receiving summary page on mobile devices](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Mandatory |
-| Warehouse management | Deferred processing of manual inventory movement operation | Mandatory |
+| Warehouse management | [Deferred processing of manual inventory movement operation](../warehousing/deferred-processing-manual-inventory-movement.md) | Mandatory |
 | Warehouse management | Do not allow to create loads, that do not meet wave load building template requirements | Mandatory |
-| Warehouse management | Enhanced license plate label layouts | Mandatory |
-| Warehouse management | Evaluate all actions for Multi SKU location directives | Mandatory |
+| Warehouse management | [Enhanced license plate label layouts](../warehousing/document-routing-layout-for-license-plates.md) | Mandatory |
+| Warehouse management | [Evaluate all actions for Multi SKU location directives](../troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md) | Mandatory |
 | Warehouse management | Hide the Total Value field on the "All Loads" and "Load Details" pages | Mandatory |
 | Warehouse management | License plate label build configuration | Mandatory |
 | Warehouse management | Load line manual correction for admin or similar trusted users | Mandatory |
-| Warehouse management | Location license plate positioning | Mandatory |
-| Warehouse management | Location product dimension mixing | Mandatory |
+| Warehouse management | [Location license plate positioning](../warehousing/location-license-plate-positioning.md) | Mandatory |
+| Warehouse management | [Location product dimension mixing](../warehousing/location-product-dimension-mixing.md) | Mandatory |
 | Warehouse management | Make mobile device inventory movement inventory status field editable | Mandatory |
 | Warehouse management | Manual sales line picking service for admin or similar trusted users | Mandatory |
-| Warehouse management | Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse | Mandatory |
+| Warehouse management | [Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Mandatory |
 | Warehouse management | Prompt to resolve ambiguous 'Loc / LP' names | Mandatory |
-| Warehouse management | Quality check | Mandatory |
-| Warehouse management | User settings, icons, and step titles for the new warehouse app | Mandatory |
-| Warehouse management | Additional location zone | On by default |
-| Warehouse management | Create and process transfer orders from the warehouse app | On by default |
+| Warehouse management | [Quality check](../warehousing/quality-check.md) | Mandatory |
+| Warehouse management | [User settings, icons, and step titles for the new warehouse app](../warehousing/install-configure-warehouse-management-app.md) | Mandatory |
+| Warehouse management | [Additional location zone](../warehousing/additional-location-zones.md) | On by default |
+| Warehouse management | [Create and process transfer orders from the warehouse app](../warehousing/create-transfer-order-from-warehouse-app.md) | On by default |
 | Warehouse management | Enable fast validation for warehouse mobile devices | On by default |
-| Warehouse management | Item consolidation location utilization | On by default |
-| Warehouse management | Maximum execution time for the warehouse management on-hand entries cleanup job | On by default |
-| Warehouse management | Outbound workload visualization | On by default |
-| Warehouse management | Process warehouse app events | On by default |
-| Warehouse management | Saved view for the load planning workbench | On by default |
-| Warehouse management | Saved view for the work details page | On by default |
-| Warehouse management | Saved view for wave processing | On by default |
-| Warehouse management | Saved views for load processing | On by default |
-| Warehouse management | Saved views for shipment processing | On by default |
-| Warehouse management | Wave batch job details | On by default |
-| Warehouse management | Wave execution notifications | On by default |
+| Warehouse management | [Maximum execution time for the warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md) | On by default |
+| Warehouse management | [Outbound workload visualization](../warehousing/outbound-workload-visualization.md) | On by default |
+| Warehouse management | [Process warehouse app events](../warehousing/warehouse-app-events.md) | On by default |
+| Warehouse management | [Saved view for the load planning workbench](saved-views-scm.md) | On by default |
+| Warehouse management | [Saved view for the work details page](saved-views-scm.md) | On by default |
+| Warehouse management | [Saved view for wave processing](saved-views-scm.md) | On by default |
+| Warehouse management | [Saved views for load processing](saved-views-scm.md) | On by default |
+| Warehouse management | [Saved views for shipment processing](saved-views-scm.md) | On by default |
+| Warehouse management | [Wave batch job details](../warehousing/wave-processing.md) | On by default |
+| Warehouse management | [Wave execution notifications](../warehousing/wave-execution-notifications.md) | On by default |
 
 ## Additional resources
 
