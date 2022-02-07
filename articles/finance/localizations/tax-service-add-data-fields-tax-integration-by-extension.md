@@ -356,22 +356,26 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object. 
+In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.
 
 > [!NOTE]
 > * Define the key that is used in the request form as `private const str`. The string should be **exactly the same** as measure name added in [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 > * Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method. The data type of the second parameter should be `string`. If the data type isn't `string`, convert it to `string`.
->   * If an **enum type** is extened, be aware of the difference of its value, label and symbol. The value of enum type is integer. Label can be different across preferred languages. Symbol is recommended to use because it's fixed. Whatever value is used, it should be **exactly the same** as measure value configured in [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+>   * If an X++ **enum type** is extended, be aware of the difference between its value, label and Name.
+>       * The value of enum is integer.
+>       * The label of enum can be different across preferred languages. Please do not use `enum2Str` to convert enum type to string.
+>       * The name of enum is recommended to use because it's fixed. `enum2Symbol` can be used to convert enum to its name. The enumeration value added in tax configuration should be **exactly the same** with enum name.
 
-## Troubleshooting
+## Validation
 
-After all above steps done and well-deployed, there is a convenient way to validate it.
+After all above steps are done and well-deployed, there is a convenient way to validate:
 
-Open a Finance and Operations page and append `&debug=vs%2CconfirmExit&` to the url, like: `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Note the last '&' is essential.
-
-Create a purchase order or other transactions supported, configure the field extended and click **Sales tax** button. Then a troubleshooting file which name begins with `TaxServiceTroubleshootingLog` will be downloaded automatically. This file contains the form content posted to Tax Service. Check if the new fields added are present in **Tax service calculation input JSON:** section and its value is correct or not. It helps us to troubleshoot whether the issue is at X++ engineering side or tax configuration side.
+1. Open a Finance and Operations page and append `&debug=vs%2CconfirmExit&` to the url, like: `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Note the last '&' is essential.
+2. Create a purchase order, set the value for the customized field, and click **Sales tax** button.
+3. Then a troubleshooting file with prefix `TaxServiceTroubleshootingLog` will be downloaded automatically. This file contains the transaction information posted to Tax Calculation Service. Check if the customized field added is present in **Tax service calculation input JSON** section and its value is correct or not. If not correct, please double check the steps in this document.
 
 File example:
+
 ```
 ===Tax service calculation input JSON:===
 {
@@ -405,41 +409,7 @@ File example:
     ]
   },
 }
-===Tax service calculation result JSON:===
-{
-  "taxDocument": {
-    "Header": [
-      {
-        "Lines": [
-          {
-            "Tax Codes": {
-              "InVAT19": {
-                "Base Amount": 666.66666666666663,
-                "Tax Amount": 333.33333333333331,
-                "Tax Rate": 50.0,
-                "Is Exempt": false,
-                ...
-              }
-            },
-            ...
-          }
-        ],
-        "Measures": {
-          "List Code": "IncludeNot",
-          "Customer Tax Registration Number": "cust123",
-          "Customer Tax Registration Country/Region": "",
-          "Vendor Tax Registration Number": "cust123",
-          "Vendor Tax Registration Country/Region": "",
-            ...
-        },
-        ...
-      }
-    ]
-  },
-  ...
-}
-===CorrelationId:===
-"11111111-2222-aaaa-bbbb-cccccccccccc"
+...
 ```
 
 ## Appendix
