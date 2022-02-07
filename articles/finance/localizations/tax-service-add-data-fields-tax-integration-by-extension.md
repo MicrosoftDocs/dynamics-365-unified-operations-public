@@ -359,22 +359,22 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object.
 
 > [!NOTE]
-> Define the key that is used in the request form as **private const str**. The string should be exactly the same as themeasure name added in the topic, [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+> Define the key that is used in the request form as **private const str**. The string should be exactly the same as the measure name added in the topic, [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 > Set the field in the **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** method by using the **SetField** method. The data type of the second parameter should be **string**. If the data type isn't **string**, convert it.
-> If an X++ **enum type** is extended, be aware of the difference between its value, label, and name.
+> If an X++ **enum type** is extended, note the difference between its value, label, and name.
 > 
->     - The value of the enum is integer.
->     - The label of the enum can be different across preferred languages. Don't use **enum2Str** to convert the enum type to string.
->     - The name of enum is recommended because it's fixed. **enum2Symbol** can be used to convert the enum to its name. The enumeration value added in the tax configuration should be exactly the same as the enum name.
+>   - The value of the enum is integer.
+>   - The label of the enum can be different across preferred languages. Don't use **enum2Str** to convert the enum type to string.
+>   - The name of enum is recommended because it's fixed. **enum2Symbol** can be used to convert the enum to its name. The enumeration value added in the tax configuration should be exactly the same as the enum name.
 
 ## Validation
 
 After you complete the previous steps, you can validate your changes.
 
-1. In Finance, go to **Accounts payable** and add **&debug=vs%2CconfirmExit&** to the url. For example, **https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&**. The final **&** is essential.
+1. In Finance, go to **Accounts payable** and add **&debug=vs%2CconfirmExit&** to the URL. For example, https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&. The final **&** is essential.
 2. Open the **Purchase order** page and select **New** to create a purchase order.
 3. Set the value for the customized field, and then select **Sales tax**. A troubleshooting file with prefix, **TaxServiceTroubleshootingLog** is downloaded automatically. This file contains the transaction information posted to the Tax Calculation Service. 
-4. Check if the customized field added is present in **Tax service calculation input JSON** section and if its value is correct. If the value isn't correct, double check the steps in this document.
+4. Check if the customized field added is present in the **Tax service calculation input JSON** section and if its value is correct. If the value isn't correct, double check the steps in this document.
 
 File example:
 
