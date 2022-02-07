@@ -31,6 +31,31 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
+### How to resolve "Heap out of memory" error when building
+If you are running into heap out of memory error, it is possible that you have incorrect imports in the code.  It is highly recommended to make use of the [CLI tools](cli-command-reference.md) included with the Online SDK for any customizations such as creating view extensions, component overrides, module cloning, etc... to ensure imports are setup correctly.
+
+Imports from modules residing in **node_modules** should always be against namespace and module name. Any import of a module with absolute path from their 'src' folder causes the build process to run into a loop which could lead to heap out of memory errors.
+
+Example of an invalid import:
+
+```ts
+import { IHeaderViewProps } from '@msdyn365-commerce-modules/header/src/header';
+```
+
+All importable components are already exported by the module. The following is a valid import example: 
+
+```ts
+import { IHeaderViewProps } from '@msdyn365-commerce-modules/header';
+```
+
+#### Increase node memory size
+The default memory setting should be sufficient for most of the customization scenarios. However, if your application needs more heap space, you can specify the environment variable in scripts section of the package.json by adding in **--max_old_space_size=4096** as shown below:
+
+````
+"build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
+````
+
+
 ### Upload of my e-commerce packages fails, and I receive the following error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
 
 To help decrease deployment time during package deployment, uploaded packages are pre-built while running the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) using the latest online SDK. If package upload fails, and you receive that error message, rebuild your package and redeploy it by using the **yarn msdyn365 pack** command. This command will force the latest online SDK to be pulled into the package and then redeploy the package.
