@@ -369,7 +369,7 @@ After all above steps done and well-deployed, there is a convenient way to valid
 
 Open a Finance and Operations page and append `&debug=vs%2CconfirmExit&` to the url, like: `https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit&`. Note the last '&' is essential.
 
-Create a purchase order or other transactions supported, configure the field extended and click **Sales tax** button. Then a troubleshooting file which name begins with `TaxServiceTroubleshootingLog` will be downloaded automatically. This file contains the form content posted to Tax Service. Check if the new fields added are present in **Tax service calculation input JSON:** section and its value is correct or not. It helps us to troubleshoot the issue is at X++ engineering side or tax configuration side.
+Create a purchase order or other transactions supported, configure the field extended and click **Sales tax** button. Then a troubleshooting file which name begins with `TaxServiceTroubleshootingLog` will be downloaded automatically. This file contains the form content posted to Tax Service. Check if the new fields added are present in **Tax service calculation input JSON:** section and its value is correct or not. It helps us to troubleshoot whether the issue is at X++ engineering side or tax configuration side.
 
 File example:
 ```
