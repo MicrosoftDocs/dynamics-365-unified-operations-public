@@ -4,7 +4,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.25 (April 2022)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.25. 
 author: josaw1
-ms.date: 01/31/2021
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,6 +52,7 @@ The following table lists the features that are included in this release. The *F
 | Globalization | [Direct fiscal integration from POS](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer opt-in| 
 | Globalization | [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration) | [Overview of fiscal integration for Commerce channels](../localizations/fiscal-integration-for-retail-channel.md) | Developer opt-in| 
 | Globalization | Update references in QR codes for India | [Generate QR codes and print them on receipts for India](../localizations/ind-generate-qr-code-print-receipt.md) | Developer opt-in|
+| POS  | Support additional filter options in POS inventory operations |
 |Statements |  Improvements to statement posting functionality  | [Improvements to statement posting functionality](../statement-posting-EOD.md) | Commerce parameters |
 
 
