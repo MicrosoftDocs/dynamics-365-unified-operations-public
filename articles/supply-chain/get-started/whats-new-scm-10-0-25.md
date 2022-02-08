@@ -83,7 +83,7 @@ The table also lists features that were previously in public preview, but have c
 | Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Generally available |
 | Master planning | Resource planning with maintenance | Generally available |
 | Master planning | Enable master plan setup wizard features | Mandatory |
-| Master planning | [Forecast model selection on Demand forecast details](../master-planning/manual-adjus[Monitor a master planning run](../master-planning/tasks/monitor-master-planning-run.md)tments-baseline-forecast.md) | Mandatory |
+| Master planning | [Forecast model selection on Demand forecast details](../master-planning/manual-adjustments-baseline-forecast.md) | Mandatory |
 | Master planning | [Master planning progress visualization](../master-planning/tasks/monitor-master-planning-run.md) | Mandatory |
 | Master planning | [Parallel firming of planned orders](../master-planning/planning-optimization/planned-order-firming.md) | Mandatory |
 | Master planning | [Planned order firming with filtering](../master-planning/planning-optimization/planned-order-firming.md) | On by default |
