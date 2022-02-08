@@ -122,19 +122,9 @@ When you enable your Dynamics 365 environment to support the distributed, hybrid
 
 Data that is transferred to and stored in the US data centers will be deleted according to Microsoft data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## Onboarding in two stages
+## Onboarding to the distributed hybrid topology
 
-The process of onboarding to the distributed, hybrid topology has two stages. During the first stage, you must validate customizations to ensure that they work in the distributed topology that has scale units. Sandbox and production environments are moved only during the second stage.
-
-### Stage 1: Evaluate customizations in one-box development environments
-
-Before you start to onboard your sandbox or production environments, we recommend that you explore scale units in a development setup, such as a one-box environment (also known as a tier-1 environment), so that you can validate processes, customizations, and solutions. During this stage, data and customizations will be applied to the one-box environments. One environment takes the role of the hub, and the other takes the role of a scale unit. This setup provides the best way to identify and fix issues. The latest early access (PEAP) build can also be used to complete this stage.
-
-For stage 1, you should use the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools). These tools let you configure hub and scale units in one or two separate one-box environments. The tools are provided as a binary release and in source code on GitHub. Study the project wiki, which includes a [Step by step usage guide](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) that describes how the tools are used.
-
-### Stage 2: Acquire add-ins, and deploy in your sandbox and production environments
-
-To onboard one of your sandbox or production environments to the new topology, you must acquire add-ins for one or more cloud scale units (and, in the future, for edge scale units). The add-ins will grant corresponding project and environment slots in [LCS](https://lcs.dynamics.com/) so that the scale unit environments can be deployed.
+The process of onboarding to the distributed hybrid topology has two stages. During the first stage you should [try out](cloud-edge-try-out.md) the solution and validate customizations to ensure that they work in the distributed topology that has scale units (this can be done using existing development environments) following acquiring production environments.
 
 > [!NOTE]
 > The scale unit add-ins aren't coupled to a limited number of users but can be used by any user in the existing subscription, based on the roles that the administrator assigns.
