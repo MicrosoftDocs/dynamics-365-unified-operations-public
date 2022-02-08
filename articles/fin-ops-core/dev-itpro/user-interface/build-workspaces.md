@@ -4,7 +4,7 @@
 title: Build operational workspaces
 description: This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 author: jasongre
-ms.date: 06/20/2017
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
