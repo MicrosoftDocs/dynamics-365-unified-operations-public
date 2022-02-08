@@ -4,7 +4,7 @@
 title: Distributed order management (DOM)
 description: This topic describes the distributed order management (DOM) functionality in Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/04/2022
+ms.date: 02/08/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
