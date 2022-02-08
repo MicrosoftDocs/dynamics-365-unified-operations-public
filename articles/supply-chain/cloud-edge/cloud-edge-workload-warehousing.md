@@ -213,9 +213,9 @@ The following warehouse management functionality isn't currently supported for s
 - Processing with items only enabled for Transportation management (TMS).
 - Processing with negative on-hand inventory.
 - Cross-company data sharing for products. <!-- Planned -->
-- Warehouse work processing with shipment notes.
-- Warehouse work processing with material handling/warehouse automation.
+- Warehouse work processing with shipment notes (for example packing notes at packing station).
 - Product master data images (for example, on the Warehouse Management mobile app).
+- Warehouse work processing with material handling/warehouse automation.
 
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads on a scale unit, and also isn't supported on the hub or on the scale unit workload.
@@ -239,8 +239,7 @@ The following table shows which outbound features are supported, and where they 
 | Maintain shipments for wave                                  | No  | Yes|
 | Warehouse work processing (incl. license plate print)        | No  | Yes, but only for the previously mentioned supported capabilities |
 | Cluster picking                                              | No  | Yes|
-| Manual packing processing, incl. 'Packed container picking' work processing | No <P>Some processing can be done after an initial picking process handled by a scale unit, but not recommended due to following blocked operations.</p>  | No |
-| Remove container from group                                  | No  | No |
+| Manual packing station processing, incl. 'Packed container picking' work  | No  | Yes, without TMS manifesting and sales packing slip posting - and without packing notes and product |
 | Outbound sorting processing                                  | No  | No |
 | Printing of load related documents                           | Yes | Yes|
 | Bill of lading and ASN generation                            | No  | Yes|
@@ -362,6 +361,7 @@ On the hub deployment, you can manually maintain the following batch jobs:
     - Scale unit to hub message processor
     - Register source order receipts
     - Complete warehouse orders
+    - Generate missing outbound warehouse orders
 
 - Manage the following batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
 
