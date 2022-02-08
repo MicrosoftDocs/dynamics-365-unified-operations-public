@@ -4,7 +4,7 @@
 title: Set up an email notification profile
 description: This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/02/2022
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -85,17 +85,18 @@ The following image shows some example event notification settings.
 > [!NOTE]
 > The customer created notification type requires a customization to be implemented before an email notification can be sent.
 
-### Scheduling a recurring email notification process job
+### Schedule a recurring email notification process job
 
-To send out the email notifications, you need to have the **Process retail order email notification** job running. If you have not yet set that up, please follow these steps:
+To send out email notifications, you must have the **Process retail order email notification** job running. 
 
-1. Log in to the HQ.
-1. Navigate to **Retail and Commerce > Retail and Commerce IT > Email and notifications > Send email notification** or search for **Send email notification**.
-1. Side pane will open allowing you to change the job details.
-1. Click **Recurrence** and change the end date to **NO END DATE**.
-1. Change the recurrence pattern to **Minutes** and the **Count** to 1 to ensure that the email notifications are processed as quickly as possible.
-1. Click **OK** to save **Recurrence** setting.
-1. Click **OK** to finish the job setup.
+To set up the **Process retail order email notification** in Commerce headquarters if you haven't already done so, follow these steps.
+
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Send email notification**.
+1. On the **Process retail order email notification** pane, select **Recurrence**. 
+1. On the **Define recurrence** pane, select **NO END DATE**.
+1. Under **RECURRENCE PATTERN**, select **Minutes**, and then set the **Count** value to **1**. This will ensure that email notifications are processed as quickly as possible.
+1. Select **OK** to return to the **Process retail order email notification** pane.
+1. Select **OK** to finish the job setup.
 
 ### Next steps
 
