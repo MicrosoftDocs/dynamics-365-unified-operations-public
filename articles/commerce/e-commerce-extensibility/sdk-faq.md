@@ -33,25 +33,25 @@ This topic summarizes answers to questions frequently asked by users of the Dyna
 
 ### How do I resolve heap out of memory errors?
 
-If you are experiencing heap out of memory errors when building the online SDK, it is possible that the code has incorrect imports. To ensure that paths are set up correctly it is highly recommended to use the [CLI tools](cli-command-reference.md) included with the online SDK for creating customizations such as view extensions, component overrides, and module clones.
+If you are experiencing heap out of memory errors when building the online SDK, it is possible that the code has incorrect imports. To ensure that paths are set up correctly we recommend that you use the [CLI tools](cli-command-reference.md) included with the online SDK for creating customizations such as view extensions, component overrides, and module clones.
 
 Imports from modules residing in the **node_modules** directory should always be against the namespace and module name. Any import of a module with an absolute path from the module's **src** folder causes the build process to run into a loop which could lead to heap out of memory errors.
 
-The following example shows an invalid import, since all importable components are already exported by the module.
+The following example shows an invalid import because all of the importable components were already exported by the module.
 
 ```ts
 import { IHeaderViewProps } from '@msdyn365-commerce-modules/header/src/header';
 ```
 
-The following example shows a valid import: 
+The following example shows a valid import. 
 
 ```ts
 import { IHeaderViewProps } from '@msdyn365-commerce-modules/header';
 ```
 
-#### How do I increase node memory size?
+### How do I increase node memory size?
 
-The default memory setting should be sufficient for most customization scenarios. However, if your application needs more heap space you can specify the environment variable in the scripts section of the package.json file by adding **--max_old_space_size=4096** as shown in the following example:
+The default memory setting should be sufficient for most customization scenarios. However, if your application needs more heap space you can specify the environment variable in the scripts section of the package.json file by adding **--max_old_space_size=4096**, as shown in the following example:
 
 ```JSON
 "build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
