@@ -36,7 +36,7 @@ By default, a theme bundles all module CSS in a single file within the theme sty
 ## Prerequisites
 To enable module CSS optimization feature ensure the following pre requisites are met:
 
-* Using Online SDK version 1.35.13 or newer.
+* Using Online SDK version 1.35.17 or newer.
 * Webpack 5 is required for this feature to work, upgrade your SDK code to Webpack 5 using the **upgrade-webpack** CLI: ```yarn msdyn365 upgrade-webpack```.
 * If you are using the Fabrikam reference theme (Fabrikam-design-kit), module CSS support will be added release 9.36 (10.0.26) or newer.
  
