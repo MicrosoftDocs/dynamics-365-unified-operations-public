@@ -4,7 +4,7 @@
 title: Site selector module
 description: This topic covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 10/20/2020
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -52,9 +52,9 @@ The following illustration shows an example of a site picker module that is feat
 
 ## Add a site picker module to a page
 
-The site picker module can be added to the **Site picker** slot of the [Header module](author-header-module.md). After it's added, you can define the module heading and site options.  Generally a header fragment is used so that it can be re-used across e-commerce pages for a site.  The below example shows the site picker within the "Site picker" slot on the header module within a header fragment called "HeaderContainer".
+The site picker module can be added to the **Site picker** slot of the [header module](author-header-module.md). After a site picker module is added, you can define the module heading and site options. Generally a header module is contained within a header fragment that can be shared across e-commerce pages for a site. The following example shows the site picker module added to the **Site picker** slot of a header module that is contained in a header fragment named **HeaderContainer**.
 
-![Example of a site selector module in the header fragment.](./media/ecommerce-sitepicker-2.png)
+![Example of a site picker module in the header fragment.](./media/ecommerce-sitepicker-2.png)
 
 ## Additional resources
 
