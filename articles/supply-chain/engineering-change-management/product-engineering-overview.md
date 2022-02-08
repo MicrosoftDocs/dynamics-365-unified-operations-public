@@ -49,7 +49,7 @@ The preceding video ([Change management capabilities in Dynamics 365 Supply Chai
 
 ## Turn on the engineering change management features for your system
 
-Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration key. If you also want to track the version dimension of products in transactions (optional), you must also enable both the *Product version dimension feature* and its configuration key. After those prerequisites are set up as required, you will be able to turn on additional optional features for engineering change management.
+Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration key. If you also want to track the version dimension of products in transactions (optional), you must also enable both the *Product version dimension* feature and its configuration key. After those prerequisites are set up as required, you will be able to turn on additional optional features for engineering change management.
 
 ### Turn the basic engineering change management features on or off
 
@@ -57,8 +57,8 @@ To turn the basic engineering change management features on or off, follow these
 
 1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 1. Check for updates.
-1. Turn on the feature that is named *Engineering Change Management*.
-1. If you also want to track the version dimension of products in transactions (optional), also turn on the feature that is named *Product dimension version*.
+1. Turn the feature named *Engineering Change Management* on or off, as needed.
+1. If you want to track the version dimension of products in transactions (optional), turn on the feature that is named *Product dimension version*.
 
 ### Turn the required configuration keys on or off
 
