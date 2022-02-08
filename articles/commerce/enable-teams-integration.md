@@ -40,9 +40,16 @@ Before you can enable Microsoft Teams integration with Commerce, you must regist
 
 To register the Teams application with your tenant in the Azure portal, follow these steps.
 
-1. Follow the steps in [Quickstart: Register an app in the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register the Teams application with your tenant in the Azure portal.
-1. Copy the **Application (client) ID** value from the **Overview** page for the registered app. You will use this value to enable Teams integration in Commerce headquarters.
-1. Copy the certificate value that was entered when you [added a certificate](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) in step 1. The certificate is also known as the public key or application key. You will use this value to enable Teams integration in Commerce headquarters.
+1.	Follow the steps in **[Quickstart: Register an app in the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)** to register the Teams application with your tenant in the Azure portal.
+2.	Then select **App Registration** tab, select the app you’ve created in the step 1 above and then click **Authentication** tab, add a **Redirect URLs** with URL: {**hostUrl**}/oauth (Replace {**hostUrl**} with the URL of aos. E.g. https://hxennugbjtweufmdeo385f47fadb6aa9a0aos.cloudax.int.dynamics.com/oauth)
+3.	Make a note of **Application (client) ID** value from the **Overview** page for the registered app. You will use this value to enable Teams integration in Commerce headquarters in the next section.
+4.	Follow **[Add a client secret](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)** to add a client secret, and then make a note of the client **secret value** to enable Teams integration in Commerce headquarters in the next section.
+5.	Click on **API permissions** in the left tab, then click on + Add a permission.
+6.	In the **Request API permissions** pop-up, select **Microsoft Graph**, and then select **Delegated permissions**, then click **Group** to expand and check **Group.ReadWrite.All**, then click **Add permissions** button.  
+7.	Click on + Add a permission, in the **Request API permissions** pop-up, select **Microsoft Graph**, and then select **Application permissions**, then click **Group** to expand and check **Group.ReadWrite.All**, then click **Add permissions** button.  
+8.	Click on + Add a permission, in the **Request API permissions** pop-up, select **APIs my organization uses** tab, then search **Microsoft Teams Retail Service** and click it.  Then select **Delegated permissions**, then click **TaskPublishing** to expand and check **TaskPublising.ReadWrite.All**, then click **Add permissions** button.  
+9.	(Delegated and Application) and TaskPublising.ReadWrite.All (Delegated) permissions to AAD APP after register by following https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis. Below is what the AAD app permission set looks like:
+
 
 To enable Teams integration in Commerce headquarters, follow these steps.
 
