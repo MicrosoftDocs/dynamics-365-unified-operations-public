@@ -71,7 +71,7 @@ When building an operational workspace, you should use the patterns and subpatte
 
 There are the top-level patterns for use with operational workspaces.
 
-#### Operational Workspace
+#### Operational workspace
 
 This pattern is the primary operational workspace pattern and should be applied to the **Design** node of the operational workspace form. It will prescribe the following structure:
 
@@ -90,9 +90,9 @@ This pattern is the primary operational workspace pattern and should be applied 
             - Subpattern: Section-Related Links
 
 > [!NOTE]
-> Starting in version 10.0.25,
-> -  The Panorama component has been replaced with Fast tabs to facilitate the transition of workspaces to be vertically scrolling in orientation.  
-> -  An Operational workpace w/Tabs pattern is available for workspaces that need multiple standard tabs of content, including Power BI reports
+> Starting in version 10.0.25:
+> -  The panorama component has been replaced with FastTabs to facilitate the transition of workspaces to be vertically scrolling in orientation.  
+> -  An Operational workpace with a tabs pattern is available for workspaces that need multiple standard tabs of content, including Power BI reports.
 > 
 #### Form Part Section List
 
