@@ -574,13 +574,17 @@ extends BusinessEventsContract
 }
 ```
 
-#### Step 6: Wrap the buildContract method
+#### Step 6: Extend the business event class to wrap the buildContract and getExtendedBusinessEventsContractName methods
 
-Provide a build contract implementation that calls **next** to load the standard business event contract and populates any payload extensions. Here is the complete class.
+Provide a **buildContract** implementation that calls **next** to load the standard business event contract and populates any payload extensions. 
+
+Provide a the name of your new contract implementation through an extension of the **getExtendedBusinessEventsContractName** method. This will allow the new contract name and fields to be present in the UI of the Business Events catalog. (Note: Failing to provide a getExtendedBusinessEventsContractName extension only means that the extended contract fields won't be available in the UI. Sending is unaffected and will always have your extended fields.)
+
+Here is the complete class.
 
 ```xpp
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
-public final class FreeTextInvoicePostedBusinessEventContract_Extension
+public final class CustFreeTextInvoicePostedBusinessEvent_Extension
 {
     public BusinessEventsContract buildContract()
     {
@@ -589,6 +593,13 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
         buildContract());
         businessEventContract.parmCustomerClassification(CustomerClassifier::deriveCustomerClassification(businessEventContract.parmInvoiceAccount()));
         return businessEventContract;
+    }
+    
+    public BusinessEventsContractEDT getExtendedBusinessEventsContractName()
+    {
+        next getExtendedBusinessEventsContractName();
+
+        return classStr(CustFreeTextInvoicePostedBusinessEventExtendedContract);
     }
 }
 ```
