@@ -236,8 +236,6 @@
           href: commerce-architecture.md
         - name: Dynamics 365 Commerce authentication flows
           href: arch-auth-flow.md
-        - name: Dynamics 365 Commerce component versioning requirements
-          href: arch-component-versioning.md
         - name: Headless commerce architecture
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
@@ -292,6 +290,28 @@
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
         - name: Initialize seed data in new Commerce environments
           href: enable-configure-retail-functionality.md
+    - name: Implementation
+      items:
+      - name: Application lifecycle management
+        items:
+        - name: Dynamics 365 Commerce component versioning requirements
+          href: arch-component-versioning.md
+      - name: Go-live and update recommendations
+        items:
+        - name: Go-live and update recommendations overview
+          href: go-live/go-live-overview.md
+        - name: Performance
+          items:
+          - name: Optimize images
+            href: go-live/performance-optimize-images.md
+          - name: Reduce JavaScript by excluding unused modules
+            href: go-live/performance-reduce-javascript.md
+      - name: AX 2012 phased rollout
+        items:
+        - name: Upgrade and N-1 support for Commerce
+          href: dev-itpro/overview-upgrade-n-minus1.md
+        - name: Phased Rollout (N-1) installation, configuration, and cutover guide
+          href: dev-itpro/n-1-installation-configuration.md
     - name: Set up your channels 
       items:
       - name: Channels overview
