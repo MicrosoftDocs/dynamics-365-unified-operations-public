@@ -3629,6 +3629,8 @@
           href: troubleshooting/planning/when-importing-to-th.md
       - name: Procurement
         items:
+        - name: Purchase order line data discrepancies
+          href: troubleshooting/procurement/purchase-order-line-data-issues.md
         - name: One or more accounting distributions are either over- or under-distributed
           href: troubleshooting/procurement/accounting-over-under-distributed.md
         - name: You can only complete a purchase order action for fully distributed line numbers
