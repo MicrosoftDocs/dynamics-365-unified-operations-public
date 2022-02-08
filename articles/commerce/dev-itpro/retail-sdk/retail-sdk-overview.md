@@ -5,7 +5,7 @@ title: Retail software development kit (SDK)
 description: The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
 author: tonyafehr
 ms.date: 09/27/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

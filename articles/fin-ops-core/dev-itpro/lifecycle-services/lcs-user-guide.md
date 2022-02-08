@@ -5,7 +5,7 @@ title: Lifecycle Services (LCS) user guide
 description: This topic provides information about the tools that are available in Lifecycle Services and when to use them as you move through the phases of your work.
 author: angelmarshall
 ms.date: 07/02/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

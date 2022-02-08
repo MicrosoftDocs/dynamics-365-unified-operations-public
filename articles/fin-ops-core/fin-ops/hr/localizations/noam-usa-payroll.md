@@ -5,7 +5,7 @@ title: US Payroll overview
 description: Payroll provides full gross-to-net processing for employees in the United States.
 author: andreabichsel
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

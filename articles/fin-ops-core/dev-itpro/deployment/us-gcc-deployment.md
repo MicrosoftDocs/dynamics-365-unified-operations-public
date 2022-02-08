@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-11-09
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Select Microsoft Dynamics 365 United States (US) Government products are available to qualified government and private entities. Those entities are limited to the following types:
 

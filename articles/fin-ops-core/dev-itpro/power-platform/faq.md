@@ -4,7 +4,7 @@
 title: Finance and Operations virtual entities FAQ
 description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
-ms.date: 12/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
@@ -138,5 +138,12 @@ Although the automatic virtual entity configuration will be used for the Power P
 ### Can I use Dataverse virtual entities as a data source with the Data Integrator?
 
 No. Virtual entities are not supported as a source for data integration with the [Data Integrator](/power-platform/admin/data-integrator.md). Technical limitations prevent the Data Integrator from getting the deltas in the source data to push data to the destination environment.
+
+### I'm getting an error that paging is not supported. How do I work around this?
+
+When running a query against a virtual entity you may get an error response with the message, "Paging is not supported for queries with temporary tables." This is by design. The error will be returned if the query includes any temporary tables. If this error is returned, you will need to determine which temporary tables are included in the query, and then modify the query to exclude the temporary table.
+Disabled configuration keys may also cause this error. The default virtual entities provided in the Dynamics 365 ERP Virtual Entities solution do not include temporary tables when all configurations are enabled. However, when a configuration key is not enabled for the backing table of an entity, the physical table is replaced with a temporary table so the system doesn't need to be recompiled for schema changes. This results in a temporary table included in the virtual entity query. In these scenarios the solution is to enable the associated configuration key to resolve the error.
+
+For additional information about the impact of configuration keys on data entities, see [Configuration keys and data entities](../data-entities/config-key-entities.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -22,7 +22,7 @@ Developers can extend current forms or create their own forms and buttons for th
 
 For example, here are some of the possible solutions if new columns are needed in a main form:
 
-- Extend the `JmgProductionFloorExecutionMainGrid` form, and add the desired fields.
+- Extend the `JmgProductionFloorExecutionMainGrid` form, and add the desired fields.
 - Create a new form, and add it as a new main view (tab).
 
 ## Add a new button (action)
@@ -34,7 +34,7 @@ To add a new button (action), follow these steps to create a class that implemen
     - `<ExtensionPrefix>` uniquely identifies your solution, typically by using your company name.
     - `<ActionName>` is a unique name for the class. It typically identifies the kind of action.
 
-1. The new class must extend the `JmgProductionFloorExecutionAction` class.
+1. The new class must extend the `JmgProductionFloorExecutionAction` class.
 1. Override all necessary methods.
 
 For examples, look at the code for the following classes:

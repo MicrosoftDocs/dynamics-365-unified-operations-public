@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll integration parameters
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Before using the Dynamics 365 Human Resources Payroll integration, you must set up the parameters described in this topic.

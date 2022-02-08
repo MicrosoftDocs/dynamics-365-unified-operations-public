@@ -5,7 +5,7 @@ title: Indonesia overview
 description: This topic provides an overview of functionality that is specific to Indonesia.
 author: sndray
 ms.date: 12/09/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kfend
 # ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Indonesia
 # ms.search.industry: 
 ms.author: sndray

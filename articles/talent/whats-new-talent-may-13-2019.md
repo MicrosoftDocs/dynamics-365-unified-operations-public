@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent (May 13, 2019)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 

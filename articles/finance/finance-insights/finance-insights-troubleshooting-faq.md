@@ -4,7 +4,7 @@
 title: Troubleshoot Finance insights setup issues
 description: This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 10.0.20
 # Troubleshoot Finance insights setup issues
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 
@@ -96,3 +95,25 @@ The following steps should have been completed.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## Symptom: Error, “We didn’t’ find any data for the selected filter range. Please select a different filter range and try again.” 
+
+### Resolution
+
+Check the data integrator setup to validate that it's functioning as expected and upserting the data from AI Builder back to Finance.  
+For more information, see [Create a data integration project](../finance-insights/create-data-integrate-project.md).
+
+## Symptom: Customer payment prediction training failed and the AI Builder error states, "Prediction should have only 2 distinct outcome values to train the model. Map to two outcomes and retrain", "Training report issue: IsNotMinRequiredDistinctNonNullValues".
+
+### Resolution
+
+This error indicates that there are not enough historical transactions in the last year that represent each category described in the **On-time**, **Late**, and **Very late** categories. To resolve this error, adjust the **Very late** transaction period. If adjusting the **Very late** transaction period doesn't fix the error, **Customer payment predictions** is not the best solution to use as it needs data in each category for training purposes.
+
+For more information about how to adjust the **On-time**, **Late**, and **Very late** categories, see [Enable customer payment predictions](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## Symptom: Model training failed
+
+### Resolution
+
+The **Cash flow forecast** model training requires data that spans more than one year and contains more than 100 transactions. These transactions must impact liquidity accounts that are included in the cash flow forecast setup.
+
+The **Customer payment predictions** requires at least 100 customer invoice and payment transactions in the last six to nine months to create predictions.  

@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.22
 # Scheduling with infinite capacity
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: Preview until 1/14/2022 -->
 
 The *Infinite capacity scheduling for Planning Optimization* feature introduces scheduling that is based on route information. It lets you schedule jobs based on a wide range of route setups. Scheduling for Planning Optimization covers frequently used route settings, including the route operation sequence or requirements for route operation resources.
 
@@ -46,7 +44,9 @@ During the scheduling process, the system also considers the *resource requireme
 - Capability (For more information, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).)
 
 > [!NOTE]
-> Requirements that are related to human resources, such as skills or certificate requirements, aren't yet supported.
+>
+> - If the resource and/or the resource group are set to infinite capacity, master planning will consider them as infinite capacity.
+> - Requirements that are related to human resources, such as skills or certificate requirements, aren't yet supported.
 
 The feature also supports the **Setup time** and **Run time** operational properties. When you set these properties on a route operation, the scheduling process will create the appropriate setup and process jobs.
 

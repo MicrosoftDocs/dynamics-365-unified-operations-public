@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-03-31
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 The [Microsoft Azure Data Factory templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) help you upgrade the following existing data in dual-write to the party and global address book model: data in the **Account**, **Contact**, and **Vendor** tables, and postal and electronic addresses.
 
@@ -38,7 +38,7 @@ At the end of the process, the following comma-separated values (.csv) files are
 This topic explains how to use the Data Factory templates and upgrade your data. If you don't have any customizations, you can use the templates as they are. However, if you have customizations for **Account**, **Contact**, and **Vendor** data, you must modify the templates as described in this topic.
 
 > [!IMPORTANT]
-> There are special instructions if you will run the Party postal address and Party electronic address templates. You must run the Party template first, then the Party postal address template, and then the Party electronic address template.
+> There are special instructions for running the Party postal address and Party electronic address templates. You must run the Party template first, then the Party postal address template, and then the Party electronic address template. Each template is designed to import in a separate data factory.
 
 ## Prerequisites
 
