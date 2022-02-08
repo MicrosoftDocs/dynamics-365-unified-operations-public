@@ -81,7 +81,7 @@ Next, turn on the configuration keys by following these steps. These are not tur
 
 ### Turn on additional engineering change management features
 
-After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to feature management. Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information. As of Supply Chain Management version 10.0.25, all of these features are turned on by default, but you can still choose to turn them off if you want.
+After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to feature management. Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information. As of Supply Chain Management version 10.0.25, all of these features are turned on by default, but you can still choose to turn them off.
 
 | Feature name in feature management | Description | Feature state |
 |---|---|---|
