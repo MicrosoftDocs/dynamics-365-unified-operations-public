@@ -43,7 +43,7 @@ The production floor execution interface itself, plus several of the optional se
 
 ### The production floor execution interface
 
-This is the primary feature described in this topic and is a prerequisite for all of the other features mentioned in this section. As of Supply Chain Management 10.0.25, it is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Production floor execution* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+This is the primary feature described in this topic and is a prerequisite for all of the other features mentioned in this section. As of Supply Chain Management 10.0.25, it is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Production floor execution* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Generate license plates
 
@@ -63,7 +63,7 @@ These features make label printing functionality available to the production flo
 
 This feature makes it possible to allow workers to lock the touchscreen so that they can sanitize it.
 
-As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Feature for locking job card device and job card terminal so that they can be sanitized* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Feature for locking job card device and job card terminal so that they can be sanitized* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Asset management functionality for the production floor execution interface
 

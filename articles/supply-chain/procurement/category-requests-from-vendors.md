@@ -23,7 +23,7 @@ Category requests are initiated by vendors in the **Vendor information** workspa
 
 ## Turn the category requests from vendors feature on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Allow vendors to apply for procurement categories through vendor collaboration* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Allow vendors to apply for procurement categories through vendor collaboration* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 While this feature is turned on, you can still manually add procurement categories to vendor accounts. For information, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
 

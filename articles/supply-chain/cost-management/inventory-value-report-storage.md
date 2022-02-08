@@ -50,7 +50,7 @@ The **Inventory value report storage** report is helpful when the output contain
 
 ## Turn the Inventory value report storage feature on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## <a name="report-configuration"></a>Define inventory value report configurations
 

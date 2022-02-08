@@ -104,7 +104,7 @@ Note the difference in transaction status and dimensions between the two cases. 
 
 To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. Because the expected receipt is immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
 
-This feature is turned off by default. Admins can turn it on or off by searching for the *Disable expected receipts from quality orders that sample blocked inventory* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+This feature is turned off by default. Admins can turn it on or off by searching for the *Disable expected receipts from quality orders that sample blocked inventory* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Additional resources
 

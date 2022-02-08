@@ -196,7 +196,7 @@ Use the **Wave batch job details** page to inspect the batch jobs and related ta
 
 ### Turn the Wave batch job details page on or off
 
-As of Supply Chain Management version 10.0.25, the **Wave batch job details** page is turned on by default. Admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+As of Supply Chain Management version 10.0.25, the **Wave batch job details** page is turned on by default. Admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Use the Wave batch job details page
 
