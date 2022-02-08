@@ -4,7 +4,7 @@
 title: Generate financial reports
 description: This topic provides information about generating a financial report.
 author: jinniew
-ms.date: 03/08/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,20 +33,20 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic provides information about generating a financial report.
 
-To generate a report, open the report definition and then select the **Generate** button on the toolbar. The **Report Queue Status** page will open and indicate the location of your report in the queue.
+To generate a report, open the report definition and on the toolbar, select **Generate**. The **Report Queue Status** page opens and indicates the location of your report in the queue.
 
-As the report generation progresses, the following report queue status indicators may be visible in the **Report Queue Status** page: 
+As the report generation progresses, the following report queue status indicators may be visible on the **Report Queue Status** page.
 
 | Status          | State | Description|
 |-----------------|--------|--------------------|
-| Queueing        | Interim |The report definition is being validated before the report can be put in generation queue                    |
-| Queued          | Interim | The report enters the report generation queue, waiting to be processed                      |
-| Processing      | Interim | The report is processing. This state typically follows the Queued state and usually transitions to a final state when processing is complete       |
-| PostProcessing | Interim | The report is post-processing. This state follows the Processing state and indicates that all report data are collected, but that derivative actions, such as calculation and rollup, are being performed            |
-| Cancelling      | Interim | The reporting is cancelling at the user's request. This state results from a user-requested cancellation for a report in either the Queued or Processing state. The system will then attempt to put the  in the Cancelled state, unless the system is too far along and must finalize it in another state|
-| Canceled        | Final | The report is done processing but did not complete due to a user-requested abort            |
-| Completed       | Final | The report is ready for use                      |
-| Failed          | Final | The report is done processing but did not complete due to a user-requested abort |
+| Queueing        | Interim |The report definition is validated before the report is put in the generation queue.                    |
+| Queued          | Interim | The report enters the report generation queue and waits to be processed.                      |
+| Processing      | Interim | This status typically follows the **Queued** status and usually transitions to a **Final** state when processing is complete.       |
+| PostProcessing | Interim | This status follows the **Processing** status and indicates that all the report data are collected, but that derivative actions, such as calculation and rollup, are being performed.            |
+| Cancelling      | Interim | The reporting is canceled at the user's request. This state results from a user-requested cancellation for a report in the **Queued** or **Processing** state. The system attempts to put the report in the **Canceled** state, unless the system is too far along and must finalize it in another state. |
+| Canceled        | Final | The report is finished processing but didn't complete due to a user-requested stop.            |
+| Completed       | Final | The report is ready for use.                      |
+| Failed          | Final | The report is finished processing but didn't complete due to a user-requested stop. |
 
 By default, the generated report will open in the Web Viewer. The following options are available for generating reports:
 
