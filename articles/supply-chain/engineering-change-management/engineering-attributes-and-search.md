@@ -76,9 +76,9 @@ To view, create, or edit an engineering attribute, follow these steps.
 
 For product structures, such as bills of materials (BOMs) or formulas, selected attributes can be passed from the children items up to the parent items. You can think of this process as "reverse inheritance."
 
-#### Turn this feature on or off for your system
+#### Turn engineering attribute inheritance on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Improved attribute inheritance for Engineering Change Management* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+This feature requires that both the *Engineering Change Management* and *Improved attribute inheritance for Engineering Change Management* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 #### Attribute inheritance example
 
