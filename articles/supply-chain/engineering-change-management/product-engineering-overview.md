@@ -73,7 +73,7 @@ Next, turn on the configuration keys by following these steps. These are not tur
     - **Attribute search** – Select this checkbox to enable the [attribute search feature](engineering-attributes-and-search.md). We recommend enabling this feature, but you can clear this checkbox if you won't use it.
     - **Change management for process manufacturing** – Select this checkbox if you want to use Engineering change management features to manage changes in formulas for process manufacturing. If you don't have to manage formulas, you can clear this checkbox. For more information, see [Manage changes in formulas and their ingredients](manage-formula-changes.md).
 
-1. If you also want to use the version dimension, then select the **Product dimension - Version** checkbox. (This checkbox is further down the list, not nested under the **Engineering Change Management** node.) You can disable this check box if you don't need this feature.
+1. If you also want to use the version dimension, then select the **Product dimension - Version** checkbox. (This checkbox is further down the list, not nested under the **Engineering Change Management** node.) You can clear this check box if you don't need this feature.
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. The database must be synchronized to ensure that the configuration keys are properly updated to reflect your changes. Do one of the following steps, depending on which type of environment you are working on:
     - **For Tier 1 (development) environments**: Open your project in Microsoft Visual Studio and then select **Dynamics 365 \> Synchronize database \> Synchronize**.
