@@ -4,7 +4,7 @@
 title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: jaredha
-ms.date: 11/24/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -578,7 +578,10 @@ extends BusinessEventsContract
 
 Provide a **buildContract** implementation that calls **next** to load the standard business event contract and populates any payload extensions. 
 
-Provide a the name of your new contract implementation through an extension of the **getExtendedBusinessEventsContractName** method. This will allow the new contract name and fields to be present in the UI of the Business Events catalog. (Note: Failing to provide a getExtendedBusinessEventsContractName extension only means that the extended contract fields won't be available in the UI. Sending is unaffected and will always have your extended fields.)
+Provide the name of your new contract implementation through an extension of the **getExtendedBusinessEventsContractName** method. This will allow the new contract name and fields to be present in the UI of the Business Events catalog. 
+
+> [!Note]
+> Failing to provide a getExtendedBusinessEventsContractName extension only means that the extended contract fields won't be available in the UI. Sending is unaffected and will always have your extended fields.
 
 Here is the complete class.
 
