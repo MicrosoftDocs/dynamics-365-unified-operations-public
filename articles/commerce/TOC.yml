@@ -307,9 +307,9 @@
       - name: AX 2012 phased rollout
         items:
         - name: Upgrade and N-1 support for Commerce
-          href: /dev-itpro/overview-upgrade-n-minus1.md
+          href: dev-itpro/overview-upgrade-n-minus1.md
         - name: Phased Rollout (N-1) installation, configuration, and cutover guide
-          href: /dev-itpro/n-1-installation-configuration.md
+          href: dev-itpro/n-1-installation-configuration.md
     - name: Set up your channels 
       items:
       - name: Channels overview
