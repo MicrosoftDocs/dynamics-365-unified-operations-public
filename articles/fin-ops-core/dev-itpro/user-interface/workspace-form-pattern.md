@@ -129,7 +129,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **FMClerkWorkspace** 
 
-[![Operational workspace example.](./media/workspace3.png)](./media/workspace3.png)
+[![Operational workspace example.](./media/reservationManagementVertical.png)](./media/reservationManagementVertical.png)
 
 ## Migration of workspaces to be vertical 
 Starting with version 10.0.25, the workspace form patterns and related subpatterns have been adjusted so that content sections stack vertically and are collapsible. The out-of-the-box workspaces were migrated to the latest visuals; however, other workspaces will need to follow these steps to change to a vertical orientation and maintain visual consistency with the rest of the application.  
