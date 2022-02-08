@@ -149,10 +149,11 @@ The service connection takes the following inputs.
 
 | Input | Required | Description |
 |-------|----------|-------------|
+| Authentication Endpoint | Yes | The endpoint to use for the app. For more information, see the [Register an application](#register-an-application) section. |
+| Lifecycle Services API Endpoint | Yes | The LCS API endpoint.  The default value is https://lcsapi.lcs.dynamics.com. If you are required to have all data processed within the European Union, please use https://lcsapi.eu.lcs.dynamics.com.
 | Username | Yes | <p>The user who is submitting the requests through DTS.</p><p><strong>Note:</strong> MFA must be turned off.</p> |
 | Password | Yes | The user's password. |
 | Client ID | Yes | The client ID of the registered app. For more information, see the [Register an application](#register-an-application) section earlier in this topic. |
-| Authentication Endpoint | Yes | The endpoint to use for the app. For more information, see the [Register an application](#register-an-application) section. |
 
 1. In your Azure DevOps project, at the bottom of the left menu, select **Project settings**.
 2. In the **Project Settings** pane, under **Pipelines**, select **Service connections**. Then select **Create service connection**.
