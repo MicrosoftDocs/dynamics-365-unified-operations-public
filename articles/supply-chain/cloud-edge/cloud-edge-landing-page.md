@@ -35,7 +35,7 @@ Workload capabilities are being released on a continuous basis through increment
 
 ## Scale units and dedicated workloads
 
-Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud. Alternatively, they can run on the edge, on-premises at your local facility.
+Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud. Alternatively, they can run on the [edge](cloud-edge-edge-scale-units-lbd.md), on-premises at your local facility.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with scale units.":::
 
@@ -122,21 +122,24 @@ When you enable your Dynamics 365 environment to support the distributed, hybrid
 
 Data that is transferred to and stored in the US data centers will be deleted according to Microsoft data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## Onboarding to the distributed hybrid topology
+## Onboard to the distributed, hybrid topology for Supply Chain Management
 
-The process of onboarding to the distributed hybrid topology has two stages. During the first stage you should [try out](cloud-edge-try-out.md) the solution and validate customizations to ensure that they work in the distributed topology that has scale units (this can be done using existing development environments) following acquiring production environments.
+### Try out the distributed hybrid topology
 
-> [!NOTE]
-> The scale unit add-ins aren't coupled to a limited number of users but can be used by any user in the existing subscription, based on the roles that the administrator assigns.
+The process of onboarding to the distributed hybrid topology has two stages. During the first stage you should [try out](cloud-edge-try-out.md) the solution and validate customizations to ensure that they work in the distributed topology that has scale units (this can be done using existing development environments) following the second stage of acquiring production environments.
+
+## Select your LCS project tenant and the detailed onboarding process
 
 Scale units are offered in multiple stock keeping units (SKUs) and pricing options. Therefore, you can choose the option that best meets your planned monthly transaction volume and performance requirements.
+> [!TIP]
+> To identify the sizing that best meets your needs, work with your partner and Microsoft to understand the monthly transaction size that you require.
 
 The entry-level SKU is known as *Basic*, and the more performant SKU is known as *Standard*. Each SKU is pre-loaded with a specific number of monthly transactions. However, you can increase the monthly transaction budget by adding overage add-ins for each SKU.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units.":::
 
-> [!TIP]
-> To identify the sizing that best meets your needs, work with your partner and Microsoft to understand the monthly transaction size that you require.
+> [!NOTE]
+> The scale unit add-ins aren't coupled to a limited number of users but can be used by any user in the existing subscription, based on the roles that the administrator assigns.
 
 The purchase of each scale unit add-in not only gives you a monthly volume of transactions but also entitles you to a specific number of environment slots in LCS. For each Cloud Scale Unit Add-in, you're entitled to one new production slot and one new sandbox slot. During the onboarding process, a new LCS project will be added that has these slots. The usage rights for the slots are bound so that the slots must be used as scale units that have a cloud hub.
 
@@ -144,9 +147,6 @@ Overage add-ins don't entitle you to new environment slots.
 
 If you want to acquire more sandbox environments, you can purchase additional regular sandbox slots. Microsoft can then help you enable those slots as sandbox scale units for the hybrid topology.
 
-## Onboard to the distributed, hybrid topology for Supply Chain Management
-
-### Select your LCS project tenant and the detailed onboarding process
 
 After you've finished planning how you will onboard to the distributed, hybrid topology for Supply Chain Management, you will use the [Scale Unit Manager portal](https://aka.ms/SCMSUM) to begin the onboarding process. In the portal, select the **Dynamics 365 Tenants** tab. This tab shows the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
 
