@@ -126,14 +126,7 @@ When you select a line in the **Billing Schedule Lines** FastTab, you can view s
 |:-----|:-----|
 |**General tab**|
 |**Usage**|Provides information for usage items: <br /> **Usage identifier**: Displays the identifier for the meter or usage item. <br /> **Reading option**: Displays the usage reading option: **Reading** or **Consumption**. <br /> **Estimated consumption**: Specify the estimated consumption for a usage item that have periods where the invoice has not been created. You can review the billing detail lines for the estimated consumption on the **Billing Detail** page. |
-|**External references**|You can specify external reference information: **External** and **Line number**. |
-
->[Note:]
-> When consolidating invoices by item on  **Generate Invoice**, the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. 
->  No validation checks are performed on either of these fields. 
->  The **Line number** must be a positive integer. 
-
-
+|**External references**\*|You can specify external reference information: **External** and **Line number**. |
 |**Milestone**|Provides information for milestone items:  <br />**Estimated completion date**: Displays the item completion date. |
 |**Text**|Displays comment for the line. <br />This text is translated to the default language of the customer or legal entity. |
 |**Item group**|Displays the item group for the line item and is not editable. |
@@ -157,6 +150,11 @@ When you select a line in the **Billing Schedule Lines** FastTab, you can view s
 |**Escalation and discount tab**|
 |**Escalation**|Select to allow escalations for the billing schedule line. Any escalation line from the header are rolled down when the billing schedule line is created:<br />* **Yes**: Escalations can be applied to the line. <br />When this option is selected, you can set up the escalations for the billing schedule lines on the **Escalation and discount** page. <br />* **No**: Escalations cannot be applied to the line. <br /> The default setting is based on the **Billing schedule group** selected, but you can change it. <br />Displays the following columns: <br />**Start date**<br />**End date**<br />**Unit price**<br />**Discount**<br />**Escalation date**<br />**Rate (before escalation)**<br />**Rate (after escalation)**<br />**Change**<br />**Escalation method**<br />**Escalation percentage**<br />**Escalation amount**<br />**Consumer price index schedule**<br />**Consumer price index (before escalation)**<br />**Consumer price index date**<br />**Consumer price index (after escalation)**<br />**Consumer price index date**|
 |**Price changes tab**|Displays the following columns for lines changed from standard to flat price: <br />**Change date**<br />**Changed by user**<br />**Standard price**<br />**Flat price**<br />**Price update** |
+
+\* >[Note:]
+> When consolidating invoices by item on  **Generate Invoice**, the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. 
+>  No validation checks are performed on either of these fields. 
+>  The **Line number** must be a positive integer. 
 
 #### Buttons
 
