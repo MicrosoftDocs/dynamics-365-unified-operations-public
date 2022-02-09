@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Billing schedules
+title: Billing schedule overview
 description: This topic explains how to create, delete, or edit billing schedules. 
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Billing schedules
+# Billing schedule overview
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
