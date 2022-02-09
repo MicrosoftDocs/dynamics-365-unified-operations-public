@@ -32,18 +32,14 @@ ms.dyn365.ops.version: 10.0.24
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-You can create, delete, or edit billing schedules. You can also review a list of all billing schedules.
-When you select to view a billing schedule, a separate page opens showing the details of the billing schedule. 
-
+On the **Billing schedule page**, you can create, delete, or edit billing schedules as well as review a list of all billing schedules.
 When you create a billing schedule, the default values for the billing schedule are determined by the billing group associated with the billing schedule. Also, other default values are set up on the **Recurring Contract Billing Parameters** page. You can change any of the default values as needed. 
 
-The top of the page allows you to apply a filter value so that you can see only the records that match the filter you enter. 
-
-## Creating a Billing Schedule
+## Creating a Billing schedule
 
 To create a billing schedule, follow these steps:
 1. Select **New**. 
-2. On the **Create billing schedule** page, accept the default value for the **Billing schedule group**, or change it as needed.  
+2. On the **Create billing schedule** page, select a **Billing schedule group**.  
 3. Select a **Customer account**. 
 4. Select the **Start date** and type the **Number of periods**. The **End date** automatically updates based on the number of periods specified. If the **Billing end date** is updated the **Number of periods** changes to 0. 
 5. Click **OK**. 
@@ -133,7 +129,8 @@ When you select a line in the **Billing Schedule Lines** FastTab, you can view s
 |**External references**|You can specify external reference information: **External** and **Line number**. 
 
 >[Notes]:
-> <br />* When consolidating invoices by item on  **Generate Invoice**,  the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. <br />* No validation checks are performed on either of these fields. <br />* The **Line number** must be a positive integer. |
+> <br />* When consolidating invoices by item on  **Generate Invoice**, the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. <br />* No validation checks are performed on either of these fields. <br />* The **Line number** must be a positive integer. |
+
 |**Milestone**|Provides information for milestone items: <br />* **Estimated completion date**: Displays the item completion date. |
 |**Text**|Displays comment for the line. <br />This text is translated to the default language of the customer or legal entity. |
 |**Item group**|Displays the item group for the line item and is not editable. |
