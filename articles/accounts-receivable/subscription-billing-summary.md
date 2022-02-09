@@ -6,7 +6,7 @@ description: This topic describes subscription billing in Microsoft Dynamics 365
 author: JodiChristiansen
 ms.date: 2/09/2022
 ms.topic: article
-ms.service: 
+ms.prod: 
 ms.technology: 
 
 # optional metadata
