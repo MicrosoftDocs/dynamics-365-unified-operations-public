@@ -72,6 +72,7 @@ To configure the Dynamics 365 Payment Connector for Adyen in Commerce POS for Br
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
 1. Specify the card processor CNPJ number that you entered earlier for the required electronic payment types. You must select a payment system.
 1. Select **Electronic payment setup** to add the electronic payment types that you created earlier to your store's payment methods.
+1. Configure the **Hardware station extension component** for the **Payment Connector for Adyen in POS for Brazil**. For more information about how to set up this component, see [Payments.Connector.Adyen.Device.Brazil component](latam-bra-deployment.md#paymentsconnectoradyendevicebrazil-component).
 
 ## Additional resources
 
