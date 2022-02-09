@@ -129,7 +129,7 @@ When you select a line in the **Billing Schedule Lines** FastTab, you can view s
 |**External references**|You can specify external reference information: **External** and **Line number**. 
 
 >[Notes]:
-> <br />* When consolidating invoices by item on  **Generate Invoice**, the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. <br />* No validation checks are performed on either of these fields. <br />* The **Line number** must be a positive integer. |
+> <br />* When consolidating invoices by item on  **Generate Invoice**, the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. <br />* No validation checks are performed on either of these fields. <br />* The **Line number** must be a positive integer. 
 
 |**Milestone**|Provides information for milestone items: <br />* **Estimated completion date**: Displays the item completion date. |
 |**Text**|Displays comment for the line. <br />This text is translated to the default language of the customer or legal entity. |
