@@ -4,7 +4,7 @@
 title: Vendor invoice dates
 description: This topic describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.assetid: 
@@ -55,7 +55,8 @@ Follow these steps to enable the system to automatically adjust the posting date
     - **Change posting date to system date when posting date period is closed or on hold** – The system changes the posting date to the system date during posting, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
     - **Change posting date to first day of new period when posting date period is closed or on hold** – The system changes the posting date to the first day of the new open period, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
 
-**Note**: if the auto-adjusted new posting date is in a new fiscal year, system will not do the posting date change and will raise an error "The fiscal year has changed. Please check and reenter the posting date." This is because fiscal year change for a posting is critial. In this case, user should manually check the posting date and decide whether to change it to new fiscal year date. In future release, there will be a new parameter introduced to control whether system raises error message, or warning message, or no message at all for this case.
+> [!NOTE]
+> If the new posting date that was automatically adjusted is in a new fiscal year, the posting date of the invoice will not be udpated. The user will receive an error "The fiscal year has changed. Please check and reenter the posting date." The invoice posting date must be updated to the new fiscal year date to post. 
 
 ## Impact of posting date changes
 
