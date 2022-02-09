@@ -35,9 +35,9 @@ Subscription billing allows organizations to manage subscription revenue opportu
 revenue allocation are managed easily and billed and recognized at the line level. 
 
 The solution has three modules that can be used independently or all three together. 
- - Recurring contract billing enables recurring billing and price management to provide control around management of pricing and billing parameters, contract renewal, and consolidated invoicing. 
- - Revenue and expense deferrals eliminates manual processes and dependency on external systems by managing revenue and allowing real-time insight into monthly recurring revenue.
- - Multi-element revenue allocation assists in revenue compliance, handling pricing and revenue allocation across multiple items.
+ - Recurring contract billing - enables recurring billing and price management to provide control around management of pricing and billing parameters, contract renewal, and consolidated invoicing. 
+ - Revenue and expense deferrals - eliminates manual processes and dependency on external systems by managing revenue and allowing real-time insight into monthly recurring revenue.
+ - Multi-element revenue allocation - assists in revenue compliance, handling pricing and revenue allocation across multiple items.
 
 Subscription billing is enabled through **Feature management** but cannot be used with the **Revenue recognition** feature. 
 1. In the **Feature management** workspace > **All** tab. In the filter, enter **Revenue recognition**, then select the feature name as the filter. 
