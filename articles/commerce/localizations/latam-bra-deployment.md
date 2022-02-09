@@ -492,4 +492,4 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 
 [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
 
-[Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil](latam-bra-adyen)
+[Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil](latam-bra-adyen.md)
