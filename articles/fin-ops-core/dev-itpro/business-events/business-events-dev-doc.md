@@ -4,7 +4,7 @@
 title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: jaredha
-ms.date: 11/24/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
