@@ -63,13 +63,7 @@ To create a billing schedule, follow these steps:
 19. In the **Contact information** tab associate the actual **End user account** to a billing schedule. 
 20. In the **Contact info** fields, you can enter a **Contact**, **Email**, and **Internet address**. 
 21. To track partner commission information, specify the **Partner account** and **Partner commission rate**. These fields are informational.
-22. Click the **Total** tab to view various totals calculated for the billing schedule. This tab shows the: 
- - **Total contract amount** 
- - **Total invoiced amount** 
- - **Unbilled revenue balance**  
- - **Original deferral amount** 
- - **Deferral recognized amount** 
- - **Deferral remaining amount**. If the billing schedule does not have any corresponding deferral schedules, the deferral amounts are empty. 
+22. Click the **Total** tab to view various totals calculated for the billing schedule. 
 23. Select the **Hold** tab to view audit information of when the billing schedule was put on hold or the hold removed.
 24. Select the **Termination** tab to view a history of the terminations that were applied or removed to the billing schedule.
 25. Select **Save**.
