@@ -34,7 +34,7 @@ Currently, we support dual-write in the following regions:
 + United States
 
 > [!NOTE]
-> At this time there are no plans to support any additional regions.
+> There are currently no plans to support any additional regions.
 
 ## Verify requirements and grant access
 
