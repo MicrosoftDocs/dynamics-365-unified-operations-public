@@ -4,7 +4,7 @@
 title: Onboard an implementation project
 description: This topic describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
-ms.date: 01/26/2022
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
