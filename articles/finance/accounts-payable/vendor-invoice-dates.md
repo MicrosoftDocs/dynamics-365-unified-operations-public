@@ -56,7 +56,7 @@ Follow these steps to enable the system to automatically adjust the posting date
     - **Change posting date to first day of new period when posting date period is closed or on hold** – The system changes the posting date to the first day of the new open period, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
 
 > [!NOTE]
-> If the new posting date that was automatically adjusted is in a new fiscal year, the posting date of the invoice will not be udpated. The user will receive an error "The fiscal year has changed. Please check and reenter the posting date." The invoice posting date must be updated to the new fiscal year date to post. 
+> If the new posting date that was automatically adjusted is in a new fiscal year, the posting date of the invoice will not be updated. The user will receive an error "The fiscal year has changed. Please check and reenter the posting date." The invoice posting date must be updated to the new fiscal year date in order to post.
 
 ## Impact of posting date changes
 
