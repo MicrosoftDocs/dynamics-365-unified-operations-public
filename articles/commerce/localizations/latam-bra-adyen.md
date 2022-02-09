@@ -42,6 +42,8 @@ The following Brazil-specific features of the Dynamics 365 Payment Connector for
     - Nota Fiscal Eletrônica (NF-e)
     - Cupom Fiscal Eletrônico (CF-e)
 
+- Support paying in installments. This payment option is popular in Brazil because shoppers can receive goods or services immediately but have the option to spread the cost over multiple months.
+
 ## Dual-purpose cards
 
 Dual-purpose cards (in other words, cards that are both debit cards and credit cards) are common in Brazilian retail. When customers pay by card at a store, they select whether they prefer to pay by debit or credit. The card payment preference is then registered with Adyen.
@@ -53,6 +55,12 @@ When a retail sale is paid by card, the following payment information is stored 
 - **Accreditation** – The CNPJ number of the payment transfer acquiring company.
 - **Card banner** – The card type (for example, Visa or MasterCard).
 - **Transaction code (NSU)** – The identification number of the sales transaction that uses cards.
+
+## Payments in installments
+
+This feature leverages the connector's built-in [credit card installments](https://docs.adyen.com/payment-methods/cards/credit-card-installments) capability and extends the payment connector to support paying in installments in stores that are located in Brazil.
+
+While paying by card, a retail customer can make a choice to pay in installments. A cashier can then select the **Installments** payment preference type and specify the number of payments that is requested by the customer. The payment preference information is passed to Adyen with other credit card payment data. Further installment processing is handled by Adyen and the customer's bank. The purchase amount is split into the specified number of equal monthly payments. These payments are charged to the customer's credit card every 30 days until their purchase is paid in full.
 
 ## Configure the Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil
 
@@ -72,3 +80,5 @@ To configure the Dynamics 365 Payment Connector for Adyen in Commerce POS for Br
 [Set up Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector-setup.md)
 
 [Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics)
+
+[Adyen credit card installments](https://docs.adyen.com/payment-methods/cards/credit-card-installments)
