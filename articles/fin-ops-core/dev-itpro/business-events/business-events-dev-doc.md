@@ -578,7 +578,7 @@ extends BusinessEventsContract
 
 Provide a **buildContract** implementation that calls **next** to load the standard business event contract and populates any payload extensions. 
 
-Provide a **getExtendedBusinessEventsContractName** implemenation that returns the name of your new extended contract class. This will allow the new contract name and fields to be present in the UI of the Business Events catalog.
+Provide a **getExtendedBusinessEventsContractName** implementation that returns the name of your new extended contract class. This will allow the new contract name and fields to be present in the UI of the Business Events catalog.
 
 Here is the complete class.
 
