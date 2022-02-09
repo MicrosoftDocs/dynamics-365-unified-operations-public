@@ -69,5 +69,7 @@ The products sold by your organization may come in variants differentiated by di
     
 3. Select **OK**.
 
+## Sales order creation performance enhancement
+The new feature introduced with application 10.0.26 version simply reduces the extra record creation for tables SourceDocumentHeader and SourceDocumentLine. Avoiding the creation of these records improves performance and reduces storage size.  These underlying source document framework tables are not used for sales orders in the product at this time and there are no scheduled plans to utilize them. Enabling this feature is considered a safe change for improved performance. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
