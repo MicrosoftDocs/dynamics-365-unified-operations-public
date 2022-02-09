@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Translation Service Azure DevOps extension
-description: This article explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
+description: This topic explains how to integrate the Dynamics 365 Translation Service DevOps extension into your Azure DevOps workflow.
 author: joshsantana
 ms.date: 02/09/2022
 ms.topic: article
@@ -150,7 +150,7 @@ The service connection takes the following inputs.
 | Input | Required | Description |
 |-------|----------|-------------|
 | Authentication Endpoint | Yes | The endpoint to use for the app. For more information, see the [Register an application](#register-an-application) section. |
-| Lifecycle Services API Endpoint | Yes | The LCS API endpoint.  The default value is https://lcsapi.lcs.dynamics.com. If you are required to have all data processed within the European Union, please use https://lcsapi.eu.lcs.dynamics.com.
+| Lifecycle Services API Endpoint | Yes | The LCS API endpoint.  The default value is https://lcsapi.lcs.dynamics.com. If you are required to have all data processed within the European Union (EU), use https://lcsapi.eu.lcs.dynamics.com.
 | Username | Yes | <p>The user who is submitting the requests through DTS.</p><p><strong>Note:</strong> MFA must be turned off.</p> |
 | Password | Yes | The user's password. |
 | Client ID | Yes | The client ID of the registered app. For more information, see the [Register an application](#register-an-application) section earlier in this topic. |
