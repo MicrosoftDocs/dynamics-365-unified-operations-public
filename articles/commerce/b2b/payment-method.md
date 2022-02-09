@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure the customer account payment method for B2B e-commerce sites
-description: This topic describes how to configure the customer account payment method and how credit limit impacts the on-account payment capture on the B2B e-commerce site.
+description: This topic describes how to configure the customer account payment method in Microsoft Dynamics 365 Commerce and describes how credit limits impact the on-account payment capture on business-to-business (B2B) e-commerce sites.
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,18 +28,18 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to configure the customer account payment method and how credit limit impacts the on-account payment capture on the B2B e-commerce site.
+This topic describes how to configure the customer account payment method in Microsoft Dynamics 365 Commerce and describes how credit limits impact the on-account payment capture on business-to-business (B2B) e-commerce sites.
 
-Retailers can accept various types of payment in exchange for the products and services that they sell in an e-commerce channel. Each payment type that a retailer accepts must be configured in Microsoft Dynamics 365 Commerce when the system is set up. The customer account (or "on-account") payment method must be supported on B2B e-commerce sites. 
+Retailers can accept various types of payment in exchange for the products and services that they sell in an e-commerce channel. Each payment type that a retailer accepts must be configured in Dynamics 365 Commerce when the system is set up. The customer account (or "on-account") payment method must be supported on B2B e-commerce sites. 
 
 ## Prerequisites
 
 1. Add the customer account payment method in Commerce headquarters.
 2. Associate the customer account payment method with the e-commerce channel.
-3. Make sure that **Allow on account** is enabled for the customer at **Retail and Commerce \> Customers \> All customers \> Payment defaults** in Commerce headquarters. > 
+3. Ensure that **Allow on account** property is enabled for the customer at **Retail and Commerce \> Customers \> All customers \> Payment defaults** in Commerce headquarters.
 
-> [!NOTE]
-> If all the customers should be allowed on account payment and thus this property should be enabled for all the B2B site users, then you can set the “Allow on account” property as yes on the ‘Default customer’ of the channel associated with the B2B site. 
+    > [!NOTE]
+    > If all customers should be allowed to have the on-account payment method enabled, you can set the **Allow on account** property to **Yes** for the default customer of the channel associated with the B2B site. 
 
 ## Enable the customer account payment method in Commerce site builder 
 
