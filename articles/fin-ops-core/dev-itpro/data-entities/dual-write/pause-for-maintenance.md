@@ -2,7 +2,7 @@
 title: Pause dual-write for maintenance
 description: This topic explains how to pause a table map.
 author: nhelgren
-ms.date: 10/13/2021
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
