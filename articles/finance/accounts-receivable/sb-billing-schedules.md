@@ -133,7 +133,7 @@ When you select a line in the **Billing Schedule Lines** FastTab, you can view s
 >  No validation checks are performed on either of these fields. 
 >  The **Line number** must be a positive integer. 
 
-|**Milestone**|Provides information for milestone items: <br />* **Estimated completion date**: Displays the item completion date. |
+|**Milestone**|Provides information for milestone items:  <br />**Estimated completion date**: Displays the item completion date. |
 |**Text**|Displays comment for the line. <br />This text is translated to the default language of the customer or legal entity. |
 |**Item group**|Displays the item group for the line item and is not editable. |
 |**Alignment date**|The alignment date for the billing schedule. |
