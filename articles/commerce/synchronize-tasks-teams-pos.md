@@ -58,6 +58,10 @@ For more information, see [Publish task lists to create and track work in your o
 
 To link the POS and Microsoft Teams applications for task management in Commerce headquarters, follow these steps.
 
+> [!NOTE]
+> Make sure you have enabled **[Dynamics 365 Commerce and Microsoft Teams integration]( https://docs.microsoft.com/en-us/dynamics365/commerce/enable-teams-integration)** before trying to integrate Task Management with Microsoft Teams. 
+
+
 1. Go to **Retail and Commerce \> Task management \> Tasks integration with Microsoft Teams**.
 1. On the Action Pane, select **Edit**.
 1. Set the **Enable Task Management Integration** option to **Yes**.
