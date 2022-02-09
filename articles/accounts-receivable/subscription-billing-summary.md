@@ -6,7 +6,7 @@ description: This topic describes subscription billing in Microsoft Dynamics 365
 author: JodiChristiansen
 ms.date: 2/09/2022
 ms.topic: article
-ms.prod: 
+ms.service: 
 ms.technology: 
 
 # optional metadata
@@ -21,7 +21,7 @@ ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: JodiChristiansen
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
