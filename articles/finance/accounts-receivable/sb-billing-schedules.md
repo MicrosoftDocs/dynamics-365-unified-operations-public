@@ -56,7 +56,7 @@ To create a billing schedule, follow these steps:
 16. **Payment** displays the customer payment information and are from the customer. When a line item is on hold or terminated, the payment information cannot be changed.
 
 >[Note:]
-> When consolidating invoices by item, the values for payment terms, method, and schedule are considered and must match for the invoices to be consolidated. 
+> When consolidating invoices by item, the **Payment terms**, **Method**, and **Billing schedule** fields must match for the invoices to be consolidated. 
 
 17. Click the **Address** tab to view and update the **Deliveray address** and the **Bill to address**. 
 18. On the **Contact information** tab, you can associate an **End user account** to the billing schedule. 
@@ -143,9 +143,7 @@ When you select a line in the **Billing Schedule Lines** FastTab, you can view s
 |**Escalation**|Select to allow escalations for the billing schedule line. Any escalation line from the header are applied when the billing schedule line is created:<br />**Yes**: Escalations can be applied to the line. <br />When this option is selected, you can set up the escalations for the billing schedule lines on the **Escalation and discount** page. <br />**No**: Escalations cannot be applied to the line. <br /> The default setting is based on the **Billing schedule group** selected. |
 |**Price changes tab**|Displays the following columns for lines changed from **Standard** to **Flat** price: <br />**Change date**<br />**Changed by user**<br />**Standard price**<br />**Flat price**<br />**Price update** |
 
-\*When consolidating invoices by item on the **Generate invoice** page, the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. 
-- No validation checks are performed on either of these fields.
-- The **Line number** must be a positive integer. 
+\*When consolidating invoices by item on the **Generate invoice** page, the **External reference** fields must match. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. No validation checks are performed on either of the **External reference** fields and the **Line number** must be a positive integer. 
 
 #### Buttons
 
@@ -155,8 +153,8 @@ The **Renewals** tab has the following buttons:
 |:-----|:-----|
 |**Renewals tab**|  |
 |**Unbilled revenue journal entry audit**|You can view all changes for items that use the unbilled revenue feature. |
-|**Add renewal term**|You can add a renewal term for the item. The start date of the new renewal term is the next date after the end date of the previous term, and it cannot be changed. You can change the renewal end date, the deferral start and end dates, the item quantity, and unit price. <br />The dialog also includes the **Calculate unit price** button. |
-|**Modify renewal term**|You can modify a renewal term. For the initial term, you can change the deferral start and end dates prior to creating the initial journal entry. For subsequent terms, the start date cannot be changed and is the next date after the end of the previous term. <br />If a renewal term exists after the term you are modifying, the dates of the term cannot be changed. In this case, you can change only the quantity and unit price for the renewal item. 
+|**Add renewal term**|You can add a renewal term for the item. The start date of the new renewal term is the next date after the end date of the previous term. The **Renewal end date**, **Deferral start date**, **Deferral end date**, **Item quantity**, and the **Unit price** fields can be updated. |
+|**Modify renewal term**|You can modify a renewal term. For the initial term, you can change the deferral start and end dates prior to creating the initial journal entry. For subsequent terms, the start date cannot be changed and is the next date after the end of the previous term. <br />If a renewal term exists after the term you are modifying, the dates of the term cannot be changed. In this case, only the **Quantity** and **Unit price** fields for the renewal item can be updated. 
 
 For example, three terms exist. The first term cannot be changed because it has already started. For the second term, only the quantity and unit price can be changed. For the third term, all values can be changed, except the start date. Additionally, the **Schedule from template** option allows you to create a deferral schedule based on the template for the unbilled revenue item. When this option is **Yes**, select the deferral **Template** and change the deferral start and end dates as needed. Subsequent renewal terms use the same deferral template, which can be changed. |
 
