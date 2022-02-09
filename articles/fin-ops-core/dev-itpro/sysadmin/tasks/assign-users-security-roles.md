@@ -4,7 +4,7 @@
 title: Assign users to security roles
 description: To access Finance and Operations apps, users must be assigned to security roles. 
 author: Peakerbl
-ms.date: 02/03/2022
+ms.date: 02/09/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -70,7 +70,7 @@ Users who are manually assigned to security roles must also be manually removed 
 3. To remove multiple users, follow these steps:
    1. In the tree, select a role. 
    2. In the **Users assigned to role** area, select **Manually assign / exclude users**.
-   3. In the **Assign users to or exclude users from role** page, users that have not been assigned to the role have **None** in the **Assignment mode** column. Select the users that should be assigned the role.
+   3. In the **Assign users to or exclude users from role** page, users that have not been assigned to the role have **None** in the **Assignment mode** column. Select the users that should be excluded from the role.
    4. On the **Action pane**, select **Exclude from role**. The **Assignment mode** column is now updated to **Manual** and the users are now excluded from the role.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
