@@ -239,7 +239,7 @@ The following table shows which outbound features are supported, and where they 
 | Maintain shipments for wave                                  | No  | Yes|
 | Warehouse work processing (incl. license plate print)        | No  | Yes, but only for the previously mentioned supported capabilities |
 | Cluster picking                                              | No  | Yes|
-| Manual packing station processing, incl. 'Packed container picking' work  | No  | Yes, without TMS manifesting and sales packing slip posting - and without packing notes and product |
+| Manual packing station processing, incl. 'Packed container picking' work  | No  | Yes, but without TMS shipment manifesting and sales packing slip posting - and without packing notes and product images |
 | Outbound sorting processing                                  | No  | No |
 | Printing of load related documents                           | Yes | Yes|
 | Bill of lading and ASN generation                            | No  | Yes|
