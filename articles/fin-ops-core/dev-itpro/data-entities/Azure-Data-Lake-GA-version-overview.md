@@ -26,7 +26,7 @@ When you enable the Export to Azure Data Lake add-in, you connect your Finance a
 
 When you select data in Finance and Operations apps, the system makes an initial copy of the data in the data lake. After that initial copy is made, the system keeps the data in the data lake fresh by continuously inserting, updating, and deleting data that changed. You don't have to manage exports or monitor the service, and there is no additional burden on your Finance and Operations workloads.
 
-Data that is stored in the data lake is organized using [Common Data Model](https://powerplatform.microsoft.com/en-us/common-data-model/). Common Data Model enhances value of your data in the lake. For an example, provides additional metadata in a machine-readable JavaScript Object Notation (JSON) format, so that downstream tools can determine the semantics of the data. The additional metadata includes the table structure, descriptions, and data types.
+Data that is stored in the data lake is organized using [Common Data Model](https://powerplatform.microsoft.com/common-data-model/). Common Data Model enhances value of your data in the lake. For an example, provides additional metadata in a machine-readable JavaScript Object Notation (JSON) format, so that downstream tools can determine the semantics of the data. The additional metadata includes the table structure, descriptions, and data types.
 
 Export to Azure Data Lake is a fully managed, scalable, and highly available service from Microsoft. It includes built-in disaster recovery. Here are some of the features that are supported:
 
