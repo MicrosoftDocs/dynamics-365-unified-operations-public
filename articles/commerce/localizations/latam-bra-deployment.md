@@ -416,6 +416,17 @@ To help ensure that the Hardware station loads the SAT extension component, you 
 </hardwareStationExtension>
 ```
 
+#### Payments.Connector.Adyen.Device.Brazil component
+To help ensure that the Hardware station loads the Payment Connector for Adyen in POS for Brazil extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
+
+```xml
+<hardwareStationExtension>
+    <composition>
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Device.Brazil" />
+    </composition>
+</hardwareStationExtension>
+```
+
 ### Enable Modern POS extension components
 
 To enable Modern POS extension components, follow these steps.
@@ -481,3 +492,4 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 
 [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
 
+[Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil](latam-bra-adyen)
