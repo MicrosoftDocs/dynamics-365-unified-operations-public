@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.24
 [!include [preview banner](../includes/preview-banner.md)]
 
 On the **Billing schedule page**, you can create, delete, or edit billing schedules as well as review a list of billing schedules.
-When you create a billing schedule, the default values for the billing schedule are determined by the billing group associated with the billing schedule. Additional information is set up on the **Recurring Contract Billing Parameters** page.  
+When you create a **Billing schedule**, the default values for the **Billing schedule** are determined by the **Billing group** associated with the **Billing schedule**. Additional information is set up on the **Recurring Contract Billing Parameters** page.  
 
 ## Creating a billing schedule
 
@@ -49,7 +49,7 @@ To create a billing schedule, follow these steps:
 9. The **Billing frequency** and **Billing interval** default from the **Billing schedule group**. 
 10. If you want to create separate invoices, set **Invoice separately** to **Yes**.
 11. To automatically renew a billing schedule after the final billing period, set **Renew Automatically** to **Yes** and specify the **Lines to add per renewal**.
-12. The **Parameters** default from **Recurring contract billing parameters** page. 
+12. The **Parameters** fields default from **Recurring contract billing parameters** page. 
 13. To prorate the amount of a billing schedule, set **Prorate partial periods** to **Yes**.  
 14. Set **Align to month** to **Yes** to align the billing schedule detail lines to the end of a month.
 15. Enter the **Contract start date** and **Contract end date**. These dates are for information only.
