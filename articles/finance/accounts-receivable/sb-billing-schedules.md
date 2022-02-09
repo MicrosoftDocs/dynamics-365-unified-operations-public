@@ -32,8 +32,8 @@ ms.dyn365.ops.version: 10.0.24
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-On the **Billing schedule page**, you can create, delete, or edit billing schedules as well as review a list of all billing schedules.
-When you create a billing schedule, the default values for the billing schedule are determined by the billing group associated with the billing schedule. Also, other default values are set up on the **Recurring Contract Billing Parameters** page. You can change any of the default values as needed. 
+On the **Billing schedule page**, you can create, delete, or edit billing schedules as well as review a list of billing schedules.
+When you create a billing schedule, the default values for the billing schedule are determined by the billing group associated with the billing schedule. Additional information is set up on the **Recurring Contract Billing Parameters** page.  
 
 ## Creating a billing schedule
 
@@ -41,40 +41,38 @@ To create a billing schedule, follow these steps:
 1. Select **New**. 
 2. On the **Create billing schedule** page, select a **Billing schedule group**.  
 3. Select a **Customer account**. 
-4. Select the **Start date** and type the **Number of periods**. The **End date** automatically updates based on the number of periods specified. If the **Billing end date** is updated the **Number of periods** changes to 0. 
+4. Select the **Start date** and type the **Number of periods**. The **End date** will be updated based on the number of periods specified. If the **Billing end date** is updated the **Number of periods** changes to 0. 
 5. Click **OK**. 
-6. On the **General** tab, the **Billing schedule number** is automatically entered.
-7. Specify a **Description** for the billing schedule as needed.
-8. Select a **Milestone template** for the Milestone billing functionality. 
-9. Many fields are updated with the settings from the customer such as **Invoice account** and **Currency code**. Update as needed. 
-10. The **Billing frequency** and **Billing interval** default from the **Billing schedule group**. 
-11. To allow for separate invoices to be created, set **Invoice separately** to **Yes**.
-12. For a billing schedule to automatically renew after the final billing period,  set **Renew Automatically** to **Yes** and specify the **Lines to add per renewal**.
-13. The **Parameters** default from **Recurring contract billing parameters** and can be updated as needed. 
-14. For the amount of a billing schedule to be prorated, set **Prorate partial periods** to **Yes**. 
-15. To align the billing schedule detail lines to the end of a month, set **Align to month** to **Yes**.
-16. Enter the **Contract start date** and **Contract end date**. These dates are for information only.
-17. **Payment** displays the customer payment information. The default values are from the customer record and can be updated as needed. When a line item is on hold or terminated, the payment information cannot be changed.
+6. On the **General** tab, enter a **Description** for the billing schedule.
+7. Select a **Milestone template** for **Milestone billing**. 
+8. Fields are updated with information from the customer such as **Invoice account** and **Currency code**.  
+9. The **Billing frequency** and **Billing interval** default from the **Billing schedule group**. 
+10. If you want to create separate invoices, set **Invoice separately** to **Yes**.
+11. To automatically renew a billing schedule after the final billing period, set **Renew Automatically** to **Yes** and specify the **Lines to add per renewal**.
+12. The **Parameters** default from **Recurring contract billing parameters**. 
+13. Set **Prorate partial periods** to **Yes** to prorate the amount of a billing schedule.  
+14. Set **Align to month** to **Yes** to align the billing schedule detail lines to the end of a month.
+15. Enter the **Contract start date** and **Contract end date**. These dates are for information only.
+16. **Payment** displays the customer payment information and are from the customer. When a line item is on hold or terminated, the payment information cannot be changed.
 
 >[Note:]
 > When consolidating invoices by item, the values for payment terms, method, and schedule are considered and must match for the invoices to be consolidated. 
 
-18. Click the **Address** tab to view and update the **Deliveray address** and the **Bill to address**. 
-19. In the **Contact information** tab associate the actual **End user account** to a billing schedule. 
-20. In the **Contact info** fields, you can enter a **Contact**, **Email**, and **Internet address**. 
-21. To track partner commission information, specify the **Partner account** and **Partner commission rate**. These fields are informational.
-22. Click the **Total** tab to view various totals calculated for the billing schedule. 
-23. Select the **Hold** tab to view audit information of when the billing schedule was put on hold or the hold removed.
-24. Select the **Termination** tab to view a history of the terminations that were applied or removed to the billing schedule.
-25. Select **Save**.
-26. In the **Billing schedule lines**, the lines can be updated as needed. 
-27. Click **Add line**. 
-28. Select the **Item number**.  If the item you add is a parent item in a revenue split, the lines are automatically updated with the child items. You can only edit the parent item in a revenue split, and all child items are updated accordingly. 
-29. Select the **Item type**. 
-30. Edit the start and end dates as needed. 
-31. Before the invoices are created, the **Billing frequency** can be changed. After the first invoice for the billing schedule is created, the billing frequency cannot be edited.
-32. Select the **Unit** of measure for the item and the **Pricing method**. 
-33. The **Unit price** defaults from inventory but can be updated if the pricing method is changed to **Flat**.
+17. Click the **Address** tab to view and update the **Deliveray address** and the **Bill to address**. 
+18. In the **Contact information** tab associate the **End user account** to a billing schedule. 
+19. In the **Contact info** fields, you can enter a **Contact**, **Email**, and **Internet address**. 
+20. To track partner commission information, specify the **Partner account** and **Partner commission rate**. These fields are informational.
+21. Click the **Total** tab to view various totals calculated for the billing schedule. 
+22. Select the **Hold** tab to view audit information of when the billing schedule was put on hold or the hold removed.
+23. Select the **Termination** tab to view a history of the terminations that were applied or removed to the billing schedule.
+24. Select **Save**.
+25. In the **Billing schedule lines**, click **Add line**. 
+26. Select the **Item number**.  If the item you add is a parent item in a revenue split, the lines are automatically updated with the child items. You can only edit the parent item in a revenue split, and all child items are updated accordingly. 
+27. Select the **Item type**. 
+28. Edit the start and end dates. 
+29. Before the invoices are created, the **Billing frequency** can be changed. After the first invoice for the billing schedule is created, the billing frequency cannot be edited.
+30. Select the **Unit** of measure for the item and the **Pricing method**. 
+31. The **Unit price** defaults from inventory but can be updated if the pricing method is changed to **Flat**.
 
 
 ## Removing a Line Item
