@@ -41,7 +41,7 @@ Before you can enable Microsoft Teams integration with Commerce, you must regist
 To register the Teams application with your tenant in the Azure portal, follow these steps.
 
 1.	Follow the steps in **[Quickstart: Register an app in the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)** to register the Teams application with your tenant in the Azure portal.
-2.	Then select **App Registration** tab, select the app you’ve created in the step 1 above and then click **Authentication** tab, click **Add a platform**. On the Web applications pop-up, select **Web**, add a **Redirect URLs** with URL: {**hostUrl**}/oauth (Replace {**hostUrl**} with the URL of aos. E.g. https://hxennugbjtweufmdeo385f47fadb6aa9a0aos.cloudax.int.dynamics.com/oauth)
+2.	Then select **App Registration** tab, select the app you’ve created in the step 1 above and then click **Authentication** tab, click **Add a platform**. On the Web applications pop-up, select **Web**, add a **Redirect URLs** with URL: {**HQUrl**}/oauth (Replace {**HQUrl**} with the URL of Headquarters. E.g. https://hxennugbjtweufmdeo385f47fadb6aa9a0aos.cloudax.int.dynamics.com/oauth)
 3.	Make a note of **Application (client) ID** value from the **Overview** page for the registered app. You will use this value to enable Teams integration in Commerce headquarters in the next section.
 4.	Follow **[Add a client secret](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) ** to add a client secret, and then make a note of the client **secret value** to enable Teams integration in Commerce headquarters in the next section.
 5.	Click on **API permissions** in the left tab, then click on + Add a permission.
@@ -55,8 +55,10 @@ To enable Teams integration in Commerce headquarters, follow these steps.
 1. Go to **Retail and Commerce \> Channel setup \> Microsoft Teams integration configuration**.
 1. On the Action Pane, select **Edit**.
 1. Set the **Enable Microsoft Teams integration** option to **Yes**.
-1. In the **Application ID** and **Application key** fields, enter the values you obtained when you registered the Teams application in the Azure portal.
-1. On the Action Pane, select **Save**.
+1. In the **Application ID** enter the **Application (client) ID** that you obtained while registering the Teams application in the Azure portal.
+1. In the **Application key** fields, enter the **Secret value** value that you obtained while adding a client secrete in the Azure porta.
+1. On the Action Pane, click **Save**.
+
 
 The following illustration shows an example of the configuration of Teams integration in Commerce headquarters.
 
