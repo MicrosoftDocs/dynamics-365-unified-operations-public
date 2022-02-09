@@ -148,13 +148,12 @@ When you select a line in the **Billing Schedule Lines** FastTab, you can view s
 |**Termination type**|Displays the termination type. The default value is from the **Termination type** in the header, but you can change it. <br />Displays the following columns: <br />* Termination date<br />* User<br />* Date termination was removed<br />* User who removed termination<br />* Reason code<br />* Description<br />* Termination notes<br />* Sales order<br />* Invoice<br />* Free text<br />* Invoice<br />* Credit amount|
 |**Hold tab**|Displays the following columns: <br />* Hold date<br />* Applied by user<br />* Removal date<br />* Resumption date<br />* Deferral date (only if Revenue and  Expense Deferrals is used)<br />* Removed by user<br />* Reason code<br />* Description<br />* Hold notes|
 |**Escalation and discount tab**|
-|**Escalation**|Select to allow escalations for the billing schedule line. Any escalation line from the header are rolled down when the billing schedule line is created:<br />* **Yes**: Escalations can be applied to the line. <br />When this option is selected, you can set up the escalations for the billing schedule lines on the **Escalation and discount** page. <br />* **No**: Escalations cannot be applied to the line. <br /> The default setting is based on the **Billing schedule group** selected, but you can change it. <br />Displays the following columns: <br />**Start date**<br />**End date**<br />**Unit price**<br />**Discount**<br />**Escalation date**<br />**Rate (before escalation)**<br />**Rate (after escalation)**<br />**Change**<br />**Escalation method**<br />**Escalation percentage**<br />**Escalation amount**<br />**Consumer price index schedule**<br />**Consumer price index (before escalation)**<br />**Consumer price index date**<br />**Consumer price index (after escalation)**<br />**Consumer price index date**|
+|**Escalation**|Select to allow escalations for the billing schedule line. Any escalation line from the header are rolled down when the billing schedule line is created:<br />* **Yes**: Escalations can be applied to the line. <br />When this option is selected, you can set up the escalations for the billing schedule lines on the **Escalation and discount** page. <br />* **No**: Escalations cannot be applied to the line. <br /> The default setting is based on the **Billing schedule group** selected, but you can change it. |
 |**Price changes tab**|Displays the following columns for lines changed from standard to flat price: <br />**Change date**<br />**Changed by user**<br />**Standard price**<br />**Flat price**<br />**Price update** |
 
-\*>[Note:]
-> When consolidating invoices by item on  **Generate Invoice**, the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. 
->  No validation checks are performed on either of these fields. 
->  The **Line number** must be a positive integer. 
+\*When consolidating invoices by item on  **Generate Invoice**, the external reference information must be exactly the same. If the information is not identical (e.g., even if one character is different), the items will not be consolidated on the invoice. 
+- No validation checks are performed on either of these fields.
+- The **Line number** must be a positive integer. 
 
 #### Buttons
 
