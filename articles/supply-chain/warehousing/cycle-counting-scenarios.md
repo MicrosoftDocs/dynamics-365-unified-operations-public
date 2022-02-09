@@ -27,10 +27,7 @@ Each scenario in this topic references values and records that are included in t
 
 ### Turn on support for the Warehouse Management mobile app
 
-Before you can use the new Warehouse Management mobile app, you must add support for it in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *User settings, icons, and step titles for the new warehouse app*
+To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on in your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### <a name= "prepare-demo-data"></a>Prepare demo data for the scenarios
 
