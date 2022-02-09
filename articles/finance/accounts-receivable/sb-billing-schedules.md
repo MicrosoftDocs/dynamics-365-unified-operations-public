@@ -75,7 +75,7 @@ To create a billing schedule, follow these steps:
 31. The **Unit price** defaults from inventory but can be updated if the pricing method is changed to **Flat**.
 
 
-## Removing a Line Item
+## Removing a line item
 
 To remove an item from a billing schedule, follow these steps: 
 1. In the list of all billing schedules, select the **Schedule number** of the billing schedule that you want to edit. 
@@ -96,7 +96,7 @@ To remove an item from a billing schedule, follow these steps:
 |**Remove**|Removes the selected line from the billing schedule. <br />For items that are part of a revenue split, you can only remove the parent item, which also removes all associated child items. |
 |**View billing detail**|View the billing details. |
 |**Terminate**|This is only available when the selected lines have a status of **Active**. For revenue split items, you can terminate only the parent item. |
-|**Remove Termination**|You can remove the termination on billing schedule lines that have a status of **Terminated**. For revenue split items, you can remove the terminiation from the parent item. |
+|**Remove termination**|You can remove the termination on billing schedule lines that have a status of **Terminated**. For revenue split items, you can remove the terminiation from the parent item. |
 |**Place hold**|Select the details of putting a billing schedule line on hold. <br />For revenue split items, you can put the parent item on hold. |
 |**Remove hold**|Allows you to remove a hold on a billing schedule line. <br />For revenue split items, you can remove the hold from the parent item. |
 |**Escalation and discount**|Opens the **Escalation and discount** page.<br />Not available for items that are part of a revenue split, except for parent items where the revenue split uses the **Zero amount** allocation method. |
@@ -110,7 +110,7 @@ To remove an item from a billing schedule, follow these steps:
 |**Add revenue split child**|You can select a child item to add to the sales order. <br />Available only for parent items of a revenue split. |
 |**Advanced pricing options**|You can edit the pricing options for an item. |
 
-## Line Details
+## Line details
 
 When you select a line in the **Billing Schedule Lines** FastTab, you can view specific details for the selected line. 
 
@@ -118,16 +118,16 @@ When you select a line in the **Billing Schedule Lines** FastTab, you can view s
 |:-----|:-----|
 |**General tab**|
 |**Usage**|Provides information for usage items: <br /> **Usage identifier**: Displays the identifier for the meter or usage item. <br /> **Reading option**: Displays the usage reading option: **Reading** or **Consumption**. <br /> **Estimated consumption**: Specify the estimated consumption for a usage item that have periods where the invoice has not been created. You can review the billing detail lines for the estimated consumption on the **Billing Detail** page. |
-|**External references**\*|You can specify external reference information: **External** and **Line number**. |
+|**External references**\*|You can specify external reference information in the **External** and **Line number** fields. |
 |**Milestone**|Provides information for milestone items:  <br />**Estimated completion date**: Displays the item completion date. |
 |**Text**|Displays comment for the line. <br />This text is translated to the default language of the customer or legal entity. |
 |**Item group**|Displays the item group for the line item and is not editable. |
 |**Alignment date**|The alignment date for the billing schedule. |
 |**Address tab**|
-|**Delivery Address**|Select the delivery address for the line item. The default delivery address is the primary delivery address from the **Address** FastTab. <br />When you change the address, you can select the following address options: <br />* **Addresses**: Select an address for the current customer. <br />* **In use**: Select an address that is currently used for the current customer. <br />* **Other address**: Select an address for any customer record. <br />For items that use revenue splitting, only the address for the parent item can be edited. The address for the child items(s) is the same as the parent and cannot be edited separately. |
-|**Bill to Address**|Select the bill-to address for the line item. The default delivery address is the primary delivery address from the **Address** FastTab. You can change the address as needed based on the purpose of the available addresses: <br />* If none of the addresses have a purpose of **Invoice**, the default bill-to address is the primary address for the customer regardless of the purpose. <br />* If one or more of the addresses have a purpose of **Invoice**, the default bill-to address is the address that was entered most recently. <br />* If one or more of the addresses have a purpose of **Invoice** and one of the invoice addresses is set as the primary address, the default bill-to address is the address that has the purpose of invoice and primary. <br />For items that use revenue splitting, only the address for the parent item can be edited. The address for the child items(s) is the same as the parent and cannot be edited separately. |
+|**Delivery address**|Select the delivery address for the line item. The default delivery address is the primary delivery address from the **Address** FastTab. <br />When you change the address, you can select the following address options: <br />* **Addresses**: Select an address for the current customer. <br />* **In use**: Select an address that is currently used for the current customer. <br />* **Other address**: Select an address for any customer record. <br />For items that use revenue splitting, only the address for the parent item can be edited. The address for the child items(s) is the same as the parent and cannot be edited separately. |
+|**Bill to address**|Select the bill-to address for the line item. The default delivery address is the primary delivery address from the **Address** FastTab. You can change the address as needed based on the purpose of the available addresses: <br />* If none of the addresses have a purpose of **Invoice**, the default bill-to address is the primary address for the customer regardless of the purpose. <br />* If one or more of the addresses have a purpose of **Invoice**, the default bill-to address is the address that was entered most recently. <br />* If one or more of the addresses have a purpose of **Invoice** and one of the invoice addresses is set as the primary address, the default bill-to address is the address that has the purpose of invoice and primary. <br />For items that use revenue splitting, only the address for the parent item can be edited. The address for the child items(s) is the same as the parent and cannot be edited separately. |
 |**Product tab**|
-|**Storage Dimensions**|Displays the storage information for the item:<br />* **Serial number**: Displays the serial number for the item. The serial number is copied from the initial sales order during the support and renewal process. For items that use revenue splitting, the serial number for the parent item is copied to all child items. The serial number is copied when **Copy serial number** is **Yes** on the **Recurring contract billing parameters** page. |
+|**Storage dimensions**|Displays the storage information for the item:<br />* **Serial number**: Displays the serial number for the item. The serial number is copied from the initial sales order during the support and renewal process. For items that use revenue splitting, the serial number for the parent item is copied to all child items. The serial number is copied when **Copy serial number** is **Yes** on the **Recurring contract billing parameters** page. |
 |**Product dimensions**|Displays the product details for the item and the values are automatically updated based on the **Variant number** selected for the billing schedule line. |
 |**Account tab**|
 |**Main account**|Displays the main account that is created on the sales line. The default value is from the sales order. However, this field can be empty. |
