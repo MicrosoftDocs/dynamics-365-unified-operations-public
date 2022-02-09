@@ -81,4 +81,4 @@ To configure the Dynamics 365 Payment Connector for Adyen in Commerce POS for Br
 
 [Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics)
 
-[Adyen credit card installments](https://docs.adyen.com/payment-methods/cards/credit-card-installments)
+[Adyen documentation: credit card installments](https://docs.adyen.com/payment-methods/cards/credit-card-installments)
