@@ -4,7 +4,7 @@
 title: Troubleshoot Finance insights setup issues
 description: This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 author: panolte
-ms.date: 01/29/2022
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -117,3 +117,9 @@ For more information about how to adjust the **On-time**, **Late**, and **Very l
 The **Cash flow forecast** model training requires data that spans more than one year and contains more than 100 transactions. These transactions must impact liquidity accounts that are included in the cash flow forecast setup.
 
 The **Customer payment predictions** requires at least 100 customer invoice and payment transactions in the last six to nine months to create predictions.  
+
+## Symptom: Error message states, that the "Table with name, 'msdyn_paypredpredictionresultentities' does not exist. The remote server returned an error: (404) Not Found…"
+
+### Resolution
+
+The environment has reached the Data Lake Services maximum table limit. For more information about the limit, see the **Enable near real-time data changes** section of the topic, [Export to Azure Data Lake overview](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
