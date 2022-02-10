@@ -6,6 +6,8 @@ description: This topic explains which deployment configurations can be specifie
 author: faix
 ms.date: 10/06/2021
 ms.topic: article
+ms.prod: dynamics-365 
+ms.service:
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
