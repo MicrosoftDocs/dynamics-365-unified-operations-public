@@ -6,7 +6,8 @@ description: This topic describes the prerequisites for the warehousing app for 
 author: MarkusFogelberg
 ms.date: 02/03/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
