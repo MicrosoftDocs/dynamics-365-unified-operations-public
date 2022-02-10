@@ -1,26 +1,42 @@
 ---
 # required metadata
 
-title: Process incoming electronic documents overview
-description: This topic provides overview of the processing of incoming electronic documents.
+title: Processing incoming electronic documents
+description: This topic provides an overview of processing incoming electronic documents.
 author: dkalyuzh
-ms.date: 12/15/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: dkalyuzh
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 [!include [banner](../includes/banner.md)]
 
-Incoming electronic documents, such as vendor electronic invoices, can be imported and processed by mean of retrieving files from external channels and passing them over directly to the connected application for further transformation and import to the data base, or with the preprocessing within Electronic invoicing service first, and then passing over to your connected applications. 
+Incoming electronic documents, such as vendor electronic invoices, can be imported and processed by:
 
-Electronic invoicing supports two channels for the incoming documents - e-mail, and SharePoint folders.
-You can setup the option of preprocessing or direct passing over to your connected application via **Setup type**:
- - **Data channel** - system will pass over the document directly to the connected application
- - **Data channel with processing pipeline** - you can setup additional actions to execute before the document will be passed over to the connected application
+ - Retrieving files from external channels and passing them directly to the connected application for further transformation and import to the database.
+ - Preprocessing the files within the Electronic invoicing service, and then passing the files over to your connected applications. 
 
-To setup the scenarios of processing incoming electronic documents for the channels, follow the articles:
- - [Configure an email channel](e-inv_tut-setup-electronic-invoicing_process-incoming_e-mail.md) to setup e-mail channel.
- - [Configure SharePoint channel](e-inv_tut-setup-electronic-invoicing_process-incoming_sharepoint.md) to setup SharePoint folders.
+Electronic invoicing supports two channels for incoming documents, e-mail and SharePoint folders.
+You can set up the option of preprocessing or direct passing to your connected application by using a selected **Setup type**.
+
+ - **Data channel** - The system will pass the document directly to the connected application.
+ - **Data channel with processing pipeline** - Set up additional actions to execute before the document is passed to the connected application.
+
+To set up the scenarios of processing incoming electronic documents for the channels, see, [Configure an email channel](e-invoicing-configure-email.md) and [Configure SharePoint channel](e-invoicing-configure-sharepoint-channel.md).
