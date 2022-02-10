@@ -6,7 +6,8 @@ description: This topic explains how to use the same instance of Active Director
 author: faix
 ms.date: 03/03/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
