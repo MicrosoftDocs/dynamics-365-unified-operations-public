@@ -6,7 +6,8 @@ description: This topic provides information about how to plan, set up, and depl
 author: PeterRFriis
 ms.date: 11/30/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
