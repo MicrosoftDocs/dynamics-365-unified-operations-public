@@ -6,7 +6,7 @@ description: This topic explains how to plan, set up, and deploy Microsoft Dynam
 author: faix
 ms.date: 01/27/2022
 ms.topic: article
-ms.prod: ms.prod: dynamics-365 
+ms.prod: dynamics-365 
 ms.service:
 ms.technology: 
 
