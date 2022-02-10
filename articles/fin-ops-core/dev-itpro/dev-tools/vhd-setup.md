@@ -2,14 +2,14 @@
 title: Setup the Downloadable VHD for First Use
 description: This topic explains how to update an Azure pipeline to use new NuGet packages.
 author: jorisdg
-ms.date: 03/04/2021
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
 ms.custom:
 ms.search.region: Global
 ms.author: jorisde
-ms.search.validFrom: 2020-10-20
+ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
