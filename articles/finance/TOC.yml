@@ -412,7 +412,7 @@
         items:
           name: Subscription billing overview
           href: accounts-receivable/subscription-billing-summary.md
-          name: Billing schedules
+          name: Set up billing schedules
           href: accounts-receivable/sb-billing-schedules.md
       - name: Payments and settlements
         items:
