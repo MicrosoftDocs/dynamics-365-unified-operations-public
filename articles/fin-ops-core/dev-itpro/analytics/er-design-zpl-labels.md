@@ -144,20 +144,20 @@ In this example you will use a printer emulator for rendering ZPL labels to prev
 4.  Install and configure a printer emulator application as an extension of the Chrome web browser to pass generated labels from a local printer to a web service that will render generated labels and return them back to a printer emulator for preview.
 
 <table>
-    <tr>
-        <td width="15%" text-align="center" border-style="solid" background-color="AliceBlue">
-            <p font-size="150%" font-weight="bold">Finance</p>
-            <p font-size="120%">ER report</p>
+    <tr align="center">
+        <td>
+            <p>Finance</p>
+            <p>ER report</p>
             <p>Printer destination</p>
         </td>
-        <td><img src="./media/er-design-zpl-labels-flow1.png" alt="Flow right"></td>
-        <td style="width:15%;text-align:center;border-style:solid;background-color:AliceBlue;">Document<br>routing<br>agent</td>
-        <td><img src="./media/er-design-zpl-labels-flow1.png" alt="Flow right"></td>
-        <td style="width:15%;text-align:center;border-style:solid;background-color:AliceBlue;">Local<br>printer</td>
-        <td><img src="./media/er-design-zpl-labels-flow1.png" alt="Flow right"></td>
-        <td style="width:15%;text-align:center;border-style:solid;background-color:AliceBlue;">Physical<br>printer<br>emulator</td>
-        <td><img src="./media/er-design-zpl-labels-flow2.png" alt="Flow right"></td>
-        <td style="width:15%;text-align:center;border-style:solid;background-color:AliceBlue;">Rendering<br>web<br>service</td>
+        <td><img src="./media/er-design-zpl-labels-flow1.png"></td>
+        <td>Document<br>routing<br>agent</td>
+        <td><img src="./media/er-design-zpl-labels-flow1.png"></td>
+        <td>Local<br>printer</td>
+        <td><img src="./media/er-design-zpl-labels-flow1.png"></td>
+        <td>Physical<br>printer<br>emulator</td>
+        <td><img src="./media/er-design-zpl-labels-flow2.png"></td>
+        <td>Rendering<br>web<br>service</td>
         </td>
     </tr>
 </table>
