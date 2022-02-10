@@ -35,7 +35,7 @@ It is a common practice for companies handling B2B transactions to accept orders
 ![Invoices page on a B2B website](/articles/commerce/media/ViewInvoices.png)
 
 > [!NOTE]
-> A signed-in user can only view and pay the user's invoice. If an organization account is configured on the **Invoice account** section of the customer record in Commerce headquarters, then the user will be able to view and pay for the organization account.
+> A signed-in user can only view and pay the user's invoice. If an organization account is configured on the **Invoice account** drop-down menu under the **Invoice and delivery** FastTab of the customer record in Commerce headquarters, then the user will be able to view and pay for the organization account.
 
 On the **Invoices** page of a B2B website, a user can select an unpaid or partially paid invoice and then select **PAY INVOICE** to add the invoice to the cart and proceed with payment. The user can then decide to either pay the full amount of the invoice or pay a partial amount. The user cannot use the on-account payment method to pay for invoices. 
 
@@ -46,7 +46,7 @@ On the **Invoices** page of a B2B website, a user can select an unpaid or partia
 
 A user can also request to send the details of an invoice to the user's registered email address by selecting **REQUEST INVOICE** next to the invoice on the **Invoices** page of the B2B website.
 
-![Request invoice dialog box](/articles/commerce/media/RequestInvoice.png "Request invoices from the B2B website")
+![Request invoice dialog box](/articles/commerce/media/RequestInvoice2.png)
 
 After requesting the invoice, the request is moved to the **B2B Requests** section of the **My account** page. Once the **P-0001** and **Synchronize orders and channel requests** jobs are run in headquarters, the invoice email is triggered and the status of the B2B request is marked as completed.
 
