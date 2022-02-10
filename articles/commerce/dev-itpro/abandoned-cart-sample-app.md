@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 
+title: Detect abandoned carts and send notifications to customers
 description: This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
 author: stuharg
 ms.date: 02/08/2022
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](includes/banner.md)]
 
-## Overview
+This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
 
 The ability to recover revenue and retain customers through abandoned cart notifications is an important capability that Dynamics 365 for Commerce now supports. By customizing a connector sample provided by Microsoft, retailers can now access shopping carts on Retail Server that have not been modified within a time window defined by the retailer. Those carts can then be retrieved and augmented with product and customer data, and passed on to a 3rd party email marketing provider where an email can be generated and sent to the customer. 
 
@@ -50,13 +50,9 @@ The email that customers receive can contain the following information:
   - Product image alt text
   - Product unit price
 
- 
-
 ## Overview of the abandoned cart connector sample
 
 Abandoned cart retrieval and sending to a 3rd party email marketing provider is enabled through a connector model that Microsoft provides through the Dynamics 365 Commerce SSK. The connector handles communication with Retail Server, leverages Azure KeyVault for security, handles scheduling of cart retrieval for a specified time window, and retrieves order and product data. The connector also provides a sample implementation for an integration with a 3rd party email marketing provider. Out of the box, the connector is built to communicate with [Emarsys](https://emarsys.com), and it can be easily customized to integrate with other solutions such as ConstantContact, MailChimp, SendGrid or others. 
-
- 
 
 ![Component diagram of abandoned cart connector sample app](C:\Users\stuharg\OneDrive - Microsoft\Documents\GitHub\Dynamics-365-Operations\articles\commerce\dev-itpro\media\AbandonedCartConnector.png)
 
@@ -64,15 +60,12 @@ Abandoned cart retrieval and sending to a 3rd party email marketing provider is 
 >
 > Microsoft does not provide an affordance for customers who wish to opt out of having their cart data passed to an email marketing provider, or who wish to have their data removed. If you plan to do business in regions that mandate these options for customers, you will need to provide the necessary infrastructure and customizations to collect and track the customer preference, and suppress the passing of their data to your email platform based on that preference. Additionally, you will need to define a process for purging customer data from your email marketing provider if requested by a customer. 
 
- 
-
 ## Obtaining the code sample
 
 The Abandoned Cart sample app is included in the Retail software development kit (SDK), starting with version 10.0.16. The code can be found under …\RetailSDK\Code\SampleExtensions\RetailServer\Extensions.AbandonedCartSample. To learn more about the Retail SDK and where to obtain it, see the [Retail software development kit (SDK)](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcommerce%2Fdev-itpro%2Fretail-sdk%2Fretail-sdk-overview&data=04|01|stuharg%40microsoft.com|4ecdbff39ad948e2937b08d8956eb0e8|72f988bf86f141af91ab2d7cd011db47|1|1|637423649928432139|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|1000&sdata=XcUtwz7EfRpiSooEidtOCkA0JH909Io2KqMC9TO8hVI%3D&reserved=0) help topic.  
 
-> [!NOTE] Although the sample code was first made available in 10.0.16 builds, it is compatible with Retail Server builds starting with 10.0.13. 
-
- 
+> [!NOTE] 
+> Although the sample code was first made available in 10.0.16 builds, it is compatible with Retail Server builds starting with 10.0.13. 
 
 ## Prerequisites and dependencies
 
@@ -91,16 +84,16 @@ The abandoned cart connector app uses Azure Cosmos DB to track the IDs and times
 
 If you use Azure Cosmos DB, the following prerequisites must be in place before you can run this sample. 
 
-1. An active Azure Cosmos DB account - If you don't have an account, refer to the [Create a database account](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet#create-a-database-account) article
-2. Retrieve the URI and PRIMARY KEY (or SECONDARY KEY) values from the Keys blade of your Azure Cosmos DB account in the Azure portal. For more information on obtaining endpoint & keys for your Azure Cosmos DB account refer to [View, copy, and regenerate access keys and passwords](https://docs.microsoft.com/en-us/azure/cosmos-db/manage-account#keys)
+1. An active Azure Cosmos DB account - If you don't have an account, refer to the [Create a database account](/azure/cosmos-db/create-sql-api-dotnet#create-a-database-account) article
+2. Retrieve the URI and PRIMARY KEY (or SECONDARY KEY) values from the Keys blade of your Azure Cosmos DB account in the Azure portal. For more information on obtaining endpoint & keys for your Azure Cosmos DB account refer to [View, copy, and regenerate access keys and passwords](/azure/cosmos-db/manage-account#keys)
 
-[Learn more about Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction#:~:text= Key Benefits  1 Turnkey global distribution.,Designed with transparent horizontal partitioning and... More )
+[Learn more about Azure Cosmos DB](/azure/cosmos-db/introduction#:~:text= Key Benefits  1 Turnkey global distribution.,Designed with transparent horizontal partitioning and... More )
 
 ### Set up an Azure Key Vault
 
 The abandoned cart connector app uses Azure Key vault to store the names and secrets of various components that require secure access.
 
-1. Follow the instructions in the [Manage Key Vault in Azure Stack Hub using the portal](https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-key-vault-manage-portal?view=azs-2002) help topic to set up Azure Key Vault
+1. Follow the instructions in the [Manage Key Vault in Azure Stack Hub using the portal](/azure-stack/user/azure-stack-key-vault-manage-portal?view=azs-2002) help topic to set up Azure Key Vault
 2. Create secrets for 
    1. Emarsys API user name and API secret
    2. Abandoned cart application ID and secret 
@@ -108,27 +101,21 @@ The abandoned cart connector app uses Azure Key vault to store the names and sec
 
 The abandoned cart connector sample code makes use of Azure Default Credentials to access Azure Key Vault. Please provide **List** and **Read** permissions to the identity you plan to use for accessing Key Vault. 
 
-[Read more about Azure default credentials]([https://docs.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet ](https://docs.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet)) 
+[Read more about Azure default credentials]([/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet ](https://docs.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet)) 
 
 
 
 ## Set up Connector App ID in AAD Tenant
 
-Follow instructions here to create application id for abandoned cart sample code. [Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal)
-
-  
+Follow instructions here to create application id for abandoned cart sample code. [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## Whitelist the Abandoned cart connector app ID against the Retail Server API
 
 Instructions for whitelisting an application ID in Azure can be found at https://community.dynamics.com/ax/b/axforretail/posts/support-for-service-to-service-authentication-in-retail-server. 
 
- 
-
 ## Configure the abandoned cart connector
 
 The configuration file for the Abandoned Cart connector sample app is at the root of the AbandonedCartDetectionSample directory and is called appSettings.json. Below are the individual settings and their purpose:
-
- 
 
 **KeyVaultOptions**
 
