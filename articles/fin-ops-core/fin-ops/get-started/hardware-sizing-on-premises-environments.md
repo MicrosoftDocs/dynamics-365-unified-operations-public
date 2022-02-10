@@ -6,7 +6,8 @@ description: This topic lists the hardware sizing requirements for an on-premise
 author: sericks007
 ms.date: 06/02/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
