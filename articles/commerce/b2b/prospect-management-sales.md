@@ -52,7 +52,7 @@ The rest of the business processes such as sending email to the business partner
 
 Integration between Dynamics 365 Sales and Dynamics 365 Commerce relies on the dual-write infrastructure, so dual-write should be enabled and working such that the customers created in one system are written to the other system. For more information on the dual-write infrastructure, see [Dual-write overview](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview).
 
-Once the dual-write setup has been completed, the implementation partner can go to [Microsoft AppSource](https://appsource.microsoft.com/) and search for the solution named [Dual-write Commerce solutions](https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/7ca1d8c9-dc79-4cb7-a82e-8dc96a25acca/overview). Install the package using the standard installation wizard and then test it by creating a prospect on a B2B site. After creating the prospect, verify that the request is displayed on the **All prospects** form in Dynamics 365 Commerce, and then verify that it is displayed as a lead in Dynamics 365 Sales.
+Once the dual-write setup has been completed, the implementation partner can go to [Microsoft AppSource](https://appsource.microsoft.com/) and search for the solution named [Dual-write Commerce solutions](https://partner.microsoft.com/dashboard/commercial-marketplace/offers/7ca1d8c9-dc79-4cb7-a82e-8dc96a25acca/overview). Install the package using the standard installation wizard and then test it by creating a prospect on a B2B site. After creating the prospect, verify that the request is displayed on the **All prospects** form in Dynamics 365 Commerce, and then verify that it is displayed as a lead in Dynamics 365 Sales.
 
 ## Additional resources
 
