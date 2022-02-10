@@ -4,7 +4,7 @@
 title: Create a data integration project
 description: This topic explains how to create a data integration project.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -68,6 +68,6 @@ This topic explains how to create a data integration project.
     2. Set the appropriate scheduling for each project.
 
 > [!NOTE]
-> If you do not see the required entities in CDS, please go to **Credit and collections > Setup > Finance Insights > Finance insights parameters**, enable Customer payment predictions feature and click on **Create prediction model** button. When the deployment of AI model is completed (successful or failed), the CDS entities needed to create integration will be deployed in CDS.
+> If you don't see the required entities in Dataverse, go to **Credit and collections** > **Setup** > **Finance Insights** > **Finance insights parameters**, enable the feature, **Customer payment predictions**, and then select **Create prediction model**. When the deployment of AI model is complete, the Dataverse entities needed to create integration will be deployed.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
