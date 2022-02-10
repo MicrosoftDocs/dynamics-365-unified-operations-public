@@ -6,8 +6,9 @@ description: This topic explains how to update the local agent.
 author: faix
 ms.date: 10/19/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod: dynamics-365
+ms.service:
+ms.technology:
 
 # optional metadata
 
