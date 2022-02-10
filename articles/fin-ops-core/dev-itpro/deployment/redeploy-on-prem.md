@@ -6,7 +6,8 @@ description: This topic provides information about redeploying an on-premises en
 author: PeterRFriis
 ms.date: 10/14/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
