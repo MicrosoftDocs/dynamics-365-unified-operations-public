@@ -24,13 +24,15 @@ Upon first login to the virtual machine, the **Application Object Server** will 
 
 ## Register a New Application in Azure Active Directory
 
-To register a new application in **Azure Active Directory**, follow the steps outlined in [Register app or web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app). The new app registration should be for a web application, and the redirect URI should be set to `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
+To register a new application in **Azure Active Directory**, follow the steps outlined in [Register app or web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app). The new app registration should be for a web application, and two redirect URIs should be added:
+- `https://usnconeboxax1aos.cloud.onebox.dynamics.com/`
+- `https://usnconeboxax1aos.cloud.onebox.dynamics.com/oauth/`
 
 Once created, make note of the **Application (client) ID**.
 
 ## Run the setup script
 
-When logged in with the **Administrator** account, double click the desktop shortcut entitled **Generate SelfSigned Certs and Configure F&O**. When the script prompts for the application ID, provide the **Application (client) ID** created in **Azure Active Directory**.
+When logged in with the **Administrator** account, right-click the desktop shortcut entitled **Generate SelfSigned Certs and Configure F&O**, and select **Run as administrator**. When the script prompts for the application ID, provide the **Application (client) ID** created in **Azure Active Directory**.
 
 Once the script is finished, the environment is ready for use. At this time, you can run the **Admin Provisioning Tool** to set the administrator account, permissions and tenant. Please ensure the email provided is for the **Azure Active Directory** tenant in which the application registration was created.
 
