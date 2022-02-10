@@ -6,7 +6,8 @@ description: This topic provides information about how to enable Entity Store fo
 author: MilindaV
 ms.date: 05/27/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
