@@ -6,7 +6,8 @@ description: This topic describes the process of developing customizations and e
 author: kfend
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
