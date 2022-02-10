@@ -206,28 +206,30 @@ When one or more workloads are enabled, use the **Manage workloads** option to i
 
 :::image type="content" source="media/sum-manage-workloads.png" alt-text="Scale unit and workload management experience.":::
 
-## Workload installation, upgrade, and feature management dependency
- 
-In this section some important technical maintenance aspects will get explained when updating or adding logic to a distributed hybrid topology deployment. Several scenarios can influence whether a [workload upgrade](#manage-workloads) process will be needed to run, but in general this would be needed when updating or adding new data exchange queries and/or when adding new tables or fields to an already installed workload.
-As part of a workload installation a workload definition gets created containing information about the tables used for the data synchronization between the two deployments. This will automatically get handled based on the pre-enabled features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Both the warehouse and manufacturing workload definitions have a dependent feature list that needs to be enabled for the workloads to be active.
-
-| Mandatory feature                                       | Workload |
-|---------------------------------------------------------|----------|
-| Automatic assigning of the guids on WHS user creation   | WES      |
-| Organization-wide work blocking                         | WES      |
-| Shipment wave label details                             | WES      |
-| Scale unit support for warehouse app work lists         | WES      |
-| Production floor execution                              | MES      |
-
-When deploying workloads from the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) or the [scale unit manager portal](https://sum.dynamics.com) all the mandatory features will automatically get enabled, but in case of making a manual test deployment and missing one or more of the mandatory features the workload installation will fail with a message containing the features that need to be enabled and you must then enable these features manually and re-trigger the workload installation.
-
-### Workload upgrade for features controlling workload definition
-
-For features which has an impact on which data gets syncroniziced between the enterprise hub and scale unit deployments and thereby being part of the creation of the workload definition, it is important having them enabled before installing the workload - and in case of enabling this type of feature while running a workload - then to process a [workload upgrade](#manage-workloads) after enabling the feature. Please do note that in case of disabling a feature having data synchronization dependencies while running a workload, it will as well be required to run a [workload upgrade](#manage-workloads) to get the data synchronization information removed from the workload definition.
->
->
 > [!TIP]
-> Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed, hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+> Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+
+## Feature management dependencies when installing or upgrading a workload
+
+This section explains some important aspects to consider when updating or adding logic to a distributed hybrid topology deployment. Several scenarios can influence whether you will need to run a [workload upgrade](#manage-workloads) process, but usually you would need to do this when updating or adding new data exchange queries, and/or when adding new tables or fields to an already installed workload.
+
+### Mandatory features for installing a workload
+
+When you install a workload, the install process creates a workload definition that contains information about the tables used when synchronizing data between the two deployments. This is handled automatically based on the then-enabled features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Both the warehouse and manufacturing workload definitions have a dependent feature list that needs to be enabled for the workloads to be active.
+
+| Mandatory feature | Workload |
+|---|---|
+| Automatic assigning of the guids on WHS user creation | Warehouse |
+| Organization-wide work blocking | Warehouse |
+| Shipment wave label details | Warehouse |
+| Scale unit support for warehouse app work lists | Warehouse |
+| Production floor execution | Manufacturing |
+
+When you deploy workloads using the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) or the [scale unit manager portal](https://sum.dynamics.com), all the mandatory features are enabled automatically. However, if you do a manual test deployment that is missing one or more mandatory features, the workload installation will fail with a message that lists the missing features; you must then enable those features manually and re-trigger the workload installation.
+
+### Enabling or disabling features with data synchronization dependencies
+
+Features that affect the selection of data that is synchronized between the hub and its scale units also affect the way the workload definition is created. It is therefore important that these features be enabled before you install the workload. If you do enable this type of feature while running a workload, then you must run a [workload upgrade](#manage-workloads) after enabling the feature. Likewise, if you disable a feature that has data synchronization dependencies while running a workload, you must run a [workload upgrade](#manage-workloads) to remove the relevant data synchronization information from the workload definition.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
