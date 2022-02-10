@@ -145,9 +145,9 @@ In this example you will use a printer emulator for rendering ZPL labels to prev
 
 <table>
     <tr>
-        <td style="width:15%;text-align:center;border-style:solid;background-color:AliceBlue;">
-            <p style="font-size: 150%;font-weight: bold;">Finance</p>
-            <p style="font-size: 120%;">ER report</p>
+        <td width="15%" text-align="center" border-style="solid" background-color="AliceBlue">
+            <p font-size="150%" font-weight="bold">Finance</p>
+            <p font-size="120%">ER report</p>
             <p>Printer destination</p>
         </td>
         <td><img src="./media/er-design-zpl-labels-flow1.png" alt="Flow right"></td>
@@ -224,7 +224,7 @@ Prepare the DRA to pass generated labels from Finance to the configured local pr
 1.  [Install](install-document-routing-agent.md#install-the-document-routing-agent) the DRA.
 2.  [Configure](install-document-routing-agent.md#configure-the-document-routing-agent) the DRA.
 3.  [Register](install-document-routing-agent.md#register-network-printers) in DRA the added local **ZebraPrinter**.
-4.  [Activate](install-document-routing-agent#administer-network-printers) in your Finance instance the local **ZebraPrinter**.
+4.  [Activate](install-document-routing-agent.md#administer-network-printers) in your Finance instance the local **ZebraPrinter**.
 
     ![Prepare the the Document routing engine to print out generated labels.](./media/er-design-zpl-labels-configure-dra.png)
 
