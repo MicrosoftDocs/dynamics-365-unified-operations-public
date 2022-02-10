@@ -408,6 +408,12 @@
           href: accounts-receivable/rev-rec-reallocation-scenario-3.md
         - name: Revenue recognition reallocation scenario 4
           href: accounts-receivable/rev-rec-reallocation-scenario-4.md
+      - name: Subscription billing
+        items:
+          name: Subscription billing overview
+          href: accounts-receivable/subscription-billing-summary.md
+          name: Billing schedules
+          href: accounts-receivable/sb-billing-schedules.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
