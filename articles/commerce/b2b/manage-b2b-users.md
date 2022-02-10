@@ -84,7 +84,7 @@ After the **P-0001** and **Synchronize customers and channel requests** jobs hav
 
 Next, run the **1010 (Customers) job** to synchronize the new business partner user to the channel database.
 
-After the customer record is synchronized, the status of the user on the B2B e-commerce website is set to **Active** and the new user can sign in to the B2B e-commerce website using their email address. Users can use the sign-up flow to define the password for their account. For information on enabling the Azure AD B2C identity provider record to be linked to the B2B customer record that was created in headquarters, see [Enable automatic linking](https://docs.microsoft.com/en-us/dynamics365/commerce/identity-record-linking).
+After the customer record is synchronized, the status of the user on the B2B e-commerce website is set to **Active** and the new user can sign in to the B2B e-commerce website using their email address. Users can use the sign-up flow to define the password for their account. For information on enabling the Azure AD B2C identity provider record to be linked to the B2B customer record that was created in headquarters, see [Enable automatic linking](/dynamics365/commerce/identity-record-linking.md).
 
 ## Edit business partner user details
 
