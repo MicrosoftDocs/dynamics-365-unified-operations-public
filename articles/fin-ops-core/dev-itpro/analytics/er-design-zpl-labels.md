@@ -150,13 +150,13 @@ In this example you will use a printer emulator for rendering ZPL labels to prev
             <p>ER report</p>
             <p>Printer destination</p>
         </td>
-        <td><img src="./media/er-design-zpl-labels-flow1.png"></td>
+        <td><img src="./media/er-design-zpl-labels-flow1.png" alt="Data flow direction: from Finance to DRA"></td>
         <td>Document<br>routing<br>agent</td>
-        <td><img src="./media/er-design-zpl-labels-flow1.png"></td>
+        <td><img src="./media/er-design-zpl-labels-flow1.png" alt="Data flow direction: from DRA to a local printer"></td>
         <td>Local<br>printer</td>
-        <td><img src="./media/er-design-zpl-labels-flow1.png"></td>
+        <td><img src="./media/er-design-zpl-labels-flow1.png" alt="Data flow direction: from a local printer to a web service"></td>
         <td>Physical<br>printer<br>emulator</td>
-        <td><img src="./media/er-design-zpl-labels-flow2.png"></td>
+        <td><img src="./media/er-design-zpl-labels-flow2.png" alt="Data flow direction: from a local printer to a web service and back"></td>
         <td>Rendering<br>web<br>service</td>
         </td>
     </tr>
