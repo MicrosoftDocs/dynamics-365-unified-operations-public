@@ -58,7 +58,7 @@ Abandoned cart retrieval and sending to a 3rd party email marketing provider is 
 
  
 
-![Component diagram of abandoned cart connector sample app](C:\Users\stuharg\OneDrive - Microsoft\Documents\GitHub\Dynamics-365-Operations\articles\commerce\media\AbandonedCatConnector.png)
+![Component diagram of abandoned cart connector sample app](C:\Users\stuharg\OneDrive - Microsoft\Documents\GitHub\Dynamics-365-Operations\articles\commerce\dev-itpro\media\AbandonedCartConnector.png)
 
 >  [!NOTE]
 >
