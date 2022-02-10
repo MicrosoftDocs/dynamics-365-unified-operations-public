@@ -6,7 +6,8 @@ description: This topic provides links to topics about how to plan, set up, and 
 author: sericks007
 ms.date: 11/29/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
