@@ -87,16 +87,16 @@ The following image shows some example event notification settings.
 
 ### Schedule a recurring email notification process job
 
-To send out email notifications, you must have the **Process retail order email notification** job running. 
+To send out email notifications, you must have the **Process retail order email notification** job running.
 
-To set up the **Process retail order email notification** in Commerce headquarters if you haven't already done so, follow these steps.
+To set up the **Process retail order email notification** job in Commerce headquarters if you haven't already done so, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Email and notifications \> Send email notification**.
-1. On the **Process retail order email notification** pane, select **Recurrence**. 
-1. On the **Define recurrence** pane, select **NO END DATE**.
-1. Under **RECURRENCE PATTERN**, select **Minutes**, and then set the **Count** value to **1**. This will ensure that email notifications are processed as quickly as possible.
-1. Select **OK** to return to the **Process retail order email notification** pane.
-1. Select **OK** to finish the job setup.
+1. In the **Process retail order email notification** dialog box, select **Recurrence**.
+1. In the **Define recurrence** dialog box, select **No end date**.
+1. Under **Recurrence pattern**, select **Minutes**, and then set the **Count** field to **1**. These settings will ensure that email notifications are processed as quickly as possible.
+1. Select **OK** to return to the **Process retail order email notification** dialog box.
+1. Select **OK** to complete the job setup.
 
 ### Next steps
 
