@@ -4,7 +4,7 @@
 title: Working with Globalization feature components
 description: This topic provides overview of the Globalization feature components.
 author: dkalyuzh
-ms.date: 02/02/2022
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,6 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.custom: 
 ms.author: dkalyuzh
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
@@ -32,8 +31,8 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-The Globalization feature is a set of components that define the rules of data transformation in Electronic reporting configurations. The components are a set of instructions to process electronic documents and communicate them to or from external channels. The components also include the conditions that define when a feature should be executed for the incoming business data.
-Zll of the components are dependent on each other. With the Globalization feature, it is easy to create and maintain this dependency, and support lifecycle management and versioning of the set of these components.
+The Globalization feature is a set of components that define the rules of data transformation in Electronic reporting configurations. The components are a set of instructions to process electronic documents and then send them to or receive them from external channels. The components also include the conditions that define when a feature should be executed for the incoming business data.
+All of the components are dependent on each other. With the Globalization feature, it's easy to create and maintain this dependency, and support lifecycle management and versioning of the set of these components.
 
 ## Electronic invoicing feature components 
 
@@ -43,8 +42,8 @@ Zll of the components are dependent on each other. With the Globalization featur
    The Globalization feature has the following components.
 	
 	- **Version** - This component supports feature lifecycle management. You can use this component to manage the status for different versions of the feature.	
-	- **Configurations** - This component lets you manage, view, and edit related Electronic reporting (ER) format and format mapping configurations used in the p rocessing pipelines.
+	- **Configurations** - This component lets you manage, view, and edit related Electronic reporting (ER) format and format mapping configurations used in the processing pipeline.
 	-  **Setups** - This component lets users of Globalization services, such as an e-invoicing service, manage the setup of the related feature version. Therefore, it supports the flexible construction of communication and responses rules.	
-	- **Environments** - This component lets users of Globalization services, such as an e-invoicing service, manage the environment where the feature version setup is used and grant authorization to the users who will have access to it.	
+	- **Environments** - This component lets users of Globalization services, such as the e-invoicing service, manage the environment where the feature version setup is used and grant authorization to the users who will have access to it.	
 	- **Organizations** - This component lets users to share the feature with external organizations.	
-	- **Tags** - Allow you to tag features that can be used in Globalization blueprint for the reference 
+	- **Tags** - This component lets you to tag features that can be used in the Globalization blueprint for the reference.
