@@ -39,7 +39,7 @@ To use the B2B e-commerce capabilities, you must first enable the **"Enable the 
 To enable the **"Enable the use of B2B eCommerce capabilities"** feature, follow these steps.
 
 1. Go to **Workspaces \> Feature management**.
-1. Select the **All** tab, and then in the filter box search for "Module: Retail and Commmerce".
+1. Select the **All** tab, and then in the filter box search for "Module: Retail and Commerce".
 1. Find the **Enable the use of B2B eCommerce capabilities**, select it, and then select **Enable now** in the bottom-right corner.
 
 ## Define a number sequence for the customer hierarchy
@@ -77,7 +77,7 @@ For example, a person Sam J. submits an onboarding request on behalf of the Micr
 
 ![Example of a customer hierarchy record](../media/CustomerHierarchy2.png)
 
-To determine if a customer is associated with a customer hierarchy, open the cutomer record. As shown in the exmaple image below, on the Retail FastTab of the customer record you can see if the customer is a part of a customer hierarchy and if the customer is an admininistrator of that hierarchy.
+To determine if a customer is associated with a customer hierarchy, open the customer record. As shown in the exmaple image below, on the Retail FastTab of the customer record you can see if the customer is a part of a customer hierarchy and if the customer is an administrator of that hierarchy.
 
 ![Example of a customer record highlighting the B2B section with the customer hierarchy ID and B2B administrator toggle](../media/CustomerHierarchyMapping2.png)
 
