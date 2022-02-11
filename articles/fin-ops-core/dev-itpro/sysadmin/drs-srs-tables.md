@@ -239,44 +239,44 @@ Even if it might be possible to add other tables to Duplicate Record Data sharin
 
 **Additional tables when the Customer and vendor master sharing feature is enabled**
 
-| **Table Object Name**              | **Table Description (Label)**                                                    |
-|------------------------------------|----------------------------------------------------------------------------------|
-| BankConstantSymbol                 |  Bank constant symbols                                                           |
-| BankCustPaymIdTable                |  Payment ID                                                                      |
-| BankTransactionTypeGroupHeader     |  Bank transaction groups                                                         |
-| ContactPerson                      |  Contacts                                                                        |
-| CreditCardCust                     |  Customer credit card                                                           |
-| CustFineSetup_BR                   |  Fine codes                                                                      |
-| CustInterestSetup_BR               |  Interest codes                                                                  |
-| CustomChequeLayout_BR              |  Custom check layout                                                            |
-| CustomsTariffCodeTable_IN          |  Customs tariff codes                                                           |
-| ExciseTariffCodes_IN               |  Excise tariff codes                                                            |
-| LvPaymTransCodes                   |  Payment transaction code                                                       |
-| PaymentFormatCodeSets_W            |  Payment format code sets                                                       |
-| RetailCustTable                    |  Customers (Retail)                                                             |
-| RetailVendTable                    |  Product import vendor setup                                                    |
-| SalesTaxFormTypes_IN               |  India sales tax form types                                                     |
-| smmResponsibilitiesEmpTable        |  Responsibility assignments                                                     |
-| StatRepInterval                    |  Statistics                                                                     |
-| StatRepIntervalLine                |  Aging periods                                                                  |
-| TaxBranch                          |  Tax branch                                                                     |
-| TaxComponentTable_IN               |  Tax components                                                                   |
-| TaxInformationCustTable_IN         |  Tax Information of Customer                                                    |
-| TaxInformationVendTable_IN         |  Tax Information of Vendor                                                      |
-| TaxLedgerAccountGroup_IN           |  Tax ledger posting group                                                       |
-| TaxVatNumTable                     |  Tax exempt number table                                                          |
-| TaxWithholdComponentGroupTable_IN  |  Withholding tax component groups                                               |
-| TaxWithholdComponentTable_IN       |  Withholding tax components                                                     |
-| TaxWithholdTable                   |  Withholding tax codes                                                          |
-| VendBankAccount                    |  Vendor bank accounts                                                           |
-| VendContractZakat_SA               |  Contractor                                                                     |
-| VendDefaultAccounts                |  Default ledger accounts for vendors                                            |
-| VendDefaultLocation                |  The VendDefaultLocation contains the default locations by purpose for a vendor |
-| VendFineSetup_BR                   |  Fine codes                                                                     |
-| VendInfoZakat_SA                   |  Vendors                                                                         |
-| VendInterestSetup_BR               |  Interest codes                                                                 |
-| VendStateTaxID                     |  Vendor state tax IDs                                                           |
-| VendTable                          |  Vendors                                                                          |
+| **Table Object Name**              | **Table Description (Label)**             | 
+|------------------------------------|-------------------------------------------|
+| BankConstantSymbol                 | Bank constant symbols                     |
+| BankCustPaymIdTable                | Payment ID                                | 
+| BankTransactionTypeGroupHeader     | Bank transaction groups                   |
+| ContactPerson                      | Contacts                                  |
+| CreditCardCust                     | Customer credit card                      |
+| CustFineSetup_BR                   | Fine codes                                |
+| CustInterestSetup_BR               | Interest codes                            |
+| CustomChequeLayout_BR              | Custom check layout                       |
+| CustomsTariffCodeTable_IN          | Customs tariff codes                      |
+| ExciseTariffCodes_IN               | Excise tariff codes                       |
+| LvPaymTransCodes                   | Payment transaction code                  |
+| PaymentFormatCodeSets_W            | Payment format code sets                  |
+| RetailCustTable                    | Customers (Retail)                        |
+| RetailVendTable                    | Product import vendor setup               |
+| SalesTaxFormTypes_IN               | India sales tax form types                |
+| smmResponsibilitiesEmpTable        | Responsibility assignments                |
+| StatRepInterval                    | Statistics                                |
+| StatRepIntervalLine                | Aging periods                             |
+| TaxBranch                          | Tax branch                                |
+| TaxComponentTable_IN               | Tax components                            |
+| TaxInformationCustTable_IN         | Tax Information of Customer               |
+| TaxInformationVendTable_IN         | Tax Information of Vendor                 |
+| TaxLedgerAccountGroup_IN           | Tax ledger posting group                  |
+| TaxVatNumTable                     | Tax exempt number table                   |
+| TaxWithholdComponentGroupTable_IN  | Withholding tax component groups          |
+| TaxWithholdComponentTable_IN       | Withholding tax components                |
+| TaxWithholdTable                   | Withholding tax codes                     |
+| VendBankAccount                    | Vendor bank accounts                      |
+| VendContractZakat_SA               | Contractor                                |
+| VendDefaultAccounts                | Default ledger accounts for vendors       |
+| VendDefaultLocation                | Vendor Default Location                   |
+| VendFineSetup_BR                   | Fine codes                                |
+| VendInfoZakat_SA                   | Vendors                                   | 
+| VendInterestSetup_BR               | Interest codes                            |
+| VendStateTaxID                     | Vendor state tax IDs                      |
+| VendTable                          | Vendors                                   |
 
 **Available duplicate records data sharing templates**
 <table>
