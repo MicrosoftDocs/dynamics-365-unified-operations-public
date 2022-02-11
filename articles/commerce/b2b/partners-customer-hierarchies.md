@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage B2B business partners using customer hierarchies
-description: This topic covers how to manage business partners using customer hierarchies for Microsoft Dynamics 365 Commerce B2B e-commerce websites.
+description: This topic covers how to manage business partners for Microsoft Dynamics 365 Commerce B2B e-commerce websites using customer hierarchies.
 author: josaw1
 ms.date: 02/11/2022
 ms.topic: article
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../../includes/banner.md)]
 
-This topic covers how to manage business partners using customer hierarchies for Microsoft Dynamics 365 Commerce B2B e-commerce websites.
+This topic covers how to manage business partners for Microsoft Dynamics 365 Commerce B2B e-commerce websites using customer hierarchies.
 
-In Commerce headquarters, a *Customer hierarchy* entity is used to represent the business partner organizations who will use your B2B e-commerce site. To get started managing business partners using customer hierarchies, in Commerce headquarters you must first enable the B2B e-commerce capabilities and then define the customer hierarchy number sequence.
+In Commerce headquarters, a *customer hierarchy* entity is used to represent the business partner organizations who will use your B2B e-commerce site. To get started managing business partners using customer hierarchies, in Commerce headquarters you must first enable the B2B e-commerce capabilities and then define the customer hierarchy number sequence.
 
 ## Enable the B2B e-commerce feature in Commerce headquarters
 
@@ -40,7 +40,7 @@ To enable the **"Enable the use of B2B eCommerce capabilities"** feature, follow
 
 1. Go to **Workspaces \> Feature management**.
 1. Select the **All** tab, and then in the filter box search for "Module: Retail and Commerce".
-1. Find the **Enable the use of B2B eCommerce capabilities**, select it, and then select **Enable now** in the bottom-right corner.
+1. Find the **Enable the use of B2B eCommerce capabilities** feature, select it, and then select **Enable now** in the bottom-right corner.
 
 ## Define a number sequence for the customer hierarchy
 
@@ -73,7 +73,7 @@ The person who submitted the onboarding request is added under the **Hierarchy**
 
 ### Examples
 
-For example, a person Sam J. submits an onboarding request on behalf of the Microsoft organization. Once the request is approved, two new customer accounts are created: one for Sam J. and one for Microsoft. Also, as shown in the example image below a new customer hierarchy record is created with the same name as the organization ("Microsoft") and Sam J. was assigned the role of **Admin**. Any additional Microsoft users of the B2B site are added to this hierarchy with the role of **User**, such as Sush R. in the example below.
+For example, a person named Sam J. submits an onboarding request on behalf of the Microsoft organization. Once the request is approved, two new customer accounts are created: one for Sam J. of type "person" and one for Microsoft of type "organization". Also, as shown in the example image below a new customer hierarchy record is created with the same name as the organization ("Microsoft") with Sam J. assigned the role of **Admin**. Any additional Microsoft users of the B2B site are added to this hierarchy by Sam J. the administrator with the role of **User**, such as Sush R. in the example below.
 
 ![Example of a customer hierarchy record](../media/CustomerHierarchy2.png)
 
