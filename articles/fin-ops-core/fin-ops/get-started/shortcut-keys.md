@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-ms.date: 12/10/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -268,7 +268,8 @@ Users can discover currently available shortcuts directly from the user interfac
 
 ## Focus management 
 Focus management describes how user focus is handled in an application. Finance and Operations apps have specialized focus behaviors that are intended to optimize user productivity, especially for data entry scenarios. These are described below: 
--  When a page is loaded, the first editable input control on the page will have focus and as such can accept user input immediately. If there is no editable input control on the page, the fallback option for initial focus is the first input control on the page followed by the first focusable control on the page.   
+
+-  When a page is loaded, the first editable input control on the page will have focus and as such can accept user input immediately. If there is no editable input control on the page, the fallback option for initial focus is the first input control on the page followed by the first, focusable control on the page.   
 -  Generally when a button is selected, the action is processed and focus may return to the page. When this happens, focus tends to return to the button control that was selected. This is true in Finance and Operations apps **except** when the button is located in the Action pane or a toolbar. In these cases, when the action completes, focus returns to the last control *outside* of the Action pane (or toolbar) that had focus before the button was selected.
 
 
