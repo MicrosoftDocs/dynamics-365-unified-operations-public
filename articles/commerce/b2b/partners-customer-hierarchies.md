@@ -30,9 +30,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic covers how to manage business partners using customer hierarchies for Microsoft Dynamics 365 Commerce B2B e-commerce websites.
 
-In Commerce headquarters, a *Customer hierarchies* entity is used to represent the business partner organizations who will use your B2B e-commerce site.
-
-<Need sentence describing what the B2B e-commerce capabilities are and how they help manage partners.> 
+In Commerce headquarters, a *Customer hierarchy* entity is used to represent the business partner organizations who will use your B2B e-commerce site. To get started managing business partners using customer hierarchies, in Commerce headquarters you must first enable the B2B e-commerce capabilities and then define the customer hierarchy number sequence.
 
 ## Enable the B2B e-commerce feature in Commerce headquarters
 
@@ -55,7 +53,7 @@ To define a number sequence for the customer hierarchy in Commerce headquarters,
 
 ![Assign a number sequence](../media/NumberSequenceCustHierarchy.png)
 
-## Customer hierarchies
+## How the approval process works
 
 When a business partner requests to join a B2B e-commerce site, the system saves this request as a *prospect*. A headquarters persona such as a retail operations manager can approve or reject partner requests. For more information on managing business partner requests and prospects approval, see [Manage business partner users on B2B e-commerce websites](manage-b2b-users.md).
  
@@ -73,6 +71,8 @@ In addition, a new customer hierarchy record is created under **Retail and Comme
 
 The person who submitted the onboarding request is added under the **Hierarchy** FastTab with the role of **Admin**. When the administrator adds more users to the business partner organization on a B2B site, a new customer record created for each user. This customer record is also added to the relevant customer hierarchy record for the business partner and has the role of a **User**. 
 
+### Examples
+
 For example, a person Sam J. submits an onboarding request on behalf of the Microsoft organization. Once the request is approved, two new customer accounts are created: one for Sam J. and one for Microsoft. Also, as shown in the example image below a new customer hierarchy record is created with the same name as the organization ("Microsoft") and Sam J. was assigned the role of **Admin**. Any additional Microsoft users of the B2B site are added to this hierarchy with the role of **User**, such as Sush R. in the example below.
 
 ![Example of a customer hierarchy record](../media/CustomerHierarchy2.png)
@@ -84,9 +84,9 @@ To determine if a customer is associated with a customer hierarchy, open the cut
 > [!NOTE]
 > In most cases, the property values of all customer records in a hierarchy should match. For example, because all business partner users should get similar prices for products, their price group and associated configurations should match. However, the system doesn't enforce this consistency, so the relevant Commerce headquarters users are responsible for ensuring that the property values and configurations match for all customers within a given hierarchy.
 
-Headquarters users can inspect property values for all customer records in a hierarchy in a side-by-side view. Referring to the image below, you can use the drop-down list option **General** on the **Hierarchy** FastTab and then select any section of the customer record to display the related properties. Users can edit the property values directly in this view. To copy all of the values from an administrator customer record to all users, select **Override** on the **Hierarchy** FastTab. 
+Headquarters users can inspect property values for all customer records of a hierarchy in a side-by-side view. As shown in the example image below, you can use the drop-down list option **General** on the **Hierarchy** FastTab and then select any section of the customer record to display the related properties. Users can edit the property values directly in this view. To copy all of the values from an administrator customer record to all users, select **Override** on the **Hierarchy** FastTab. 
 
-![Customer hierarchy details](../media/HierarchyDetails2.png)
+![Customer hierarchy record highlighting the Override button and showing the drop-down list options](../media/HierarchyDetails2.png)
 
 
 
