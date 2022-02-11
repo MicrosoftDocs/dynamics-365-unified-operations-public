@@ -17,12 +17,12 @@ ms.search.validFrom: 2022-02-01
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
-<!-- What part of this is in preview? What version includes it? -->
+<!-- KFM: What part of this is in preview? What version includes it? -->
 
 This topic describes what happens with the purchase order carry-forward budget when purchase orders are canceled or reduced. You can configure the system so that the associated budget is moved to the new year when carrying forward purchase orders from one year to another. This process creates a budget register entry in the new year that represents the remaining balance of the purchase order. There are two ways to handle the carry-forward budget when a purchase order is canceled or reduced: the carry-forward budget can remain as created or it can be automatically adjusted to remove the canceled or reduced amount. The automatic budget adjustment is controlled by settings found on the fund records in the general ledger. Only purchase order lines with distributions that include a fund are available for automatic budget adjustment. The automatic budget adjustment takes place when the purchase order is finalized.
 
 ## Set up funds to enable this behavior
-<!-- What do we mean by "this behavior"? -->
+<!-- KFM: What do we mean by "this behavior"? -->
 The following setup must be completed for all funds where you want to define this behavior.
 
 1. Go to **General ledger \> Chart of accounts \> Funds \> Funds**.
@@ -33,7 +33,7 @@ The following setup must be completed for all funds where you want to define thi
 
 ## Reduce carry-forward budget when an invoice is reduced
 
-When a carry-forward purchase order is reduced during invoicing, a variance is created. Posting the invoice will reduce the purchase order encumbrance by the amount of the price variance. By default, the carry-forward budget isn't reduced in this scenario. That leaves the remaining carry-forward budget behind for the amount of the variance. Reductions include price variances, charge variances, and tax variances. You can automatically remove remaining carry-forward budget in this scenario using the feature *Reduce carry-forward budget when an invoice is reduced*. This feature can be set up to create a budget register entry to remove excess carry-forward budget. <!-- Where is this feature? Do we need to enable it in feature management? I couldn't find it there. -->
+When a carry-forward purchase order is reduced during invoicing, a variance is created. Posting the invoice will reduce the purchase order encumbrance by the amount of the price variance. By default, the carry-forward budget isn't reduced in this scenario. That leaves the remaining carry-forward budget behind for the amount of the variance. Reductions include price variances, charge variances, and tax variances. You can automatically remove remaining carry-forward budget in this scenario using the feature *Reduce carry-forward budget when an invoice is reduced*. This feature can be set up to create a budget register entry to remove excess carry-forward budget. <!-- KFM: Where is this feature? Do we need to enable it in feature management? I couldn't find it there. -->
 
 Once the feature is enabled, the same fund setup that was defined earlier will be used. This setup is defined below and must be completed for any funds that you want to allow to reduce carry-forward budget when an invoice price is reduced.
 
@@ -43,4 +43,4 @@ Once the feature is enabled, the same fund setup that was defined earlier will b
    - *No* – Creates a budget register entry against the purchase order for the variance reduction amount.
    - *Yes* – Allows the invoice reduction without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by other documents.
 
-<!-- This seems to repeat the previous section. What is going on? -->
+<!-- KFM: This seems to repeat the previous section. What is going on? -->
