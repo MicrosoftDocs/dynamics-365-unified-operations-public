@@ -6,7 +6,8 @@ description: This topic outlines the lifecycle and support policies for Microsof
 author: cabeln
 ms.date: 12/14/2021
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
