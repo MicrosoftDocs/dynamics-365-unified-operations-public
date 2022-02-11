@@ -35,16 +35,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Weighted average is an inventory model based on an average resulting from the multiplication of each component (item transaction) by a factor (cost price) reflecting its importance (quantity). Another way to say this is that weighted average is an inventory model which assigns the cost of issue transactions based on the mean value of all inventory received during the period, plus any on-hand inventory from the previous period.
 
-When you run an inventory closing, there are two ways a settlement can be created. Typically, all receipts are settled against a virtual issue, which holds the total received quantity and value. This virtual issue has a corresponding virtual receipt from which the issues are settled. In this manner, all issues get the same average cost. The virtual issue and receipt can be seen as a virtual transfer, which is named the weighted average inventory closing transfer. This is called a Weighted average summarized settlement. If there is only one receipt, all issues can be settled from it and the virtual transfer will not be created. This is referred to as a direct settlement. 
+When you run an inventory closing using the weighted average inventory model, there are two ways a settlement can be created. Typically, all receipts are settled against a virtual issue, which holds the total received quantity and value. This virtual issue has a corresponding virtual receipt from which the issues are settled. In this manner, all issues get the same average cost. The virtual issue and receipt can be seen as a virtual transfer, which is named the weighted average inventory closing transfer. This settlement method is called a weighted average summarized settlement. If there is only one receipt, all issues can be settled from it and the virtual transfer will not be created. This settlement method is referred to as a direct settlement. Any inventory that is on hand after the inventory close is performed, is valued at the weighted average from the previous period and included in the weighted average calculation in the next period.
 
 You can override the Weighted average principle by marking inventory transactions so that a specific item receipt is settled against a specific issue. A periodic inventory close is required when you use the Weighted average inventory model to create settlements and adjust the value of issues according to the Weighted average principle. Until you run the inventory close process, issue transactions are valued at the running average when the physical and financial updates occurred. Unless you're using marking, the running average is calculated when the physical or financial update is performed.
 
 The weighted average inventory costing method is calculated by the following formula:
--   Weighted average = (Q1\*P1 + Q2\*P2 + Qn\*Pn) / (Q1 + Q2 + Qn)
+-   Weighted average = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
 
-Inventory issues, such as sales orders, inventory journals, and production orders, occur at an estimated cost price on the posting date. This estimated cost price is also referred to as running average. At the time of inventory close, the system will analyze the inventory transactions for previous and current periods and determine which of the following closing principles should be used.
--   Direct settlement
--   Summarized settlement
+Q = quantity of the transaction
+P = price of the transaction
 
 Settlements are inventory close postings that adjust the issues to the correct weighted average as of the closing date. The following examples illustrate the effect of using weighted average with five different configurations:
 -   Weighted average direct settlement without the Include physical value option
