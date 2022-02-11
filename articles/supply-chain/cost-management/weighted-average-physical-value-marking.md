@@ -103,10 +103,10 @@ The following transactions are illustrated in the graphic below:
   - Transaction 1b is settled for a quantity of 1 with an amount settled of USD 10.00.
   - Transaction 2b is settled for a quantity of 1 with an amount settled of USD 22.00.
   - Transaction 5b is settled for a quantity of 1 with an amount settled of USD 30.00.
-  - Transaction 7a. is created for a quantity of 3 with an amount settled of USD 62.00.  
+  - Transaction 7a. is created for a quantity of 3 with an amount settled of USD 62.00. This transaction offsets the sum of the three receipt transactions that are financially updated in the period. 
 - 7b. Weighted average inventory close transaction financial receipt is created as the offset to 5a.
   - Transaction 3b is settled for a quantity of 1 with an amount settled of USD 20.67. This transaction is adjusted by USD 4.67 to bring the original value of USD 16.00 to 20.67 which is the weighted average of financially posted transactions for the period. 
-  - Transactions 7b. is created for a quantity of 1 with an amount settled of USD 20.67 to offset 5a.
+  - Transactions 7b. is created for a quantity of 1 with an amount settled of USD 20.67 to offset 5a. This transaction offsets the sum of the one issue transaction that is financially updated in the period.
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 
