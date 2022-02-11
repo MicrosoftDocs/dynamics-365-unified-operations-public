@@ -417,7 +417,8 @@ To help ensure that the Hardware station loads the SAT extension component, you 
 ```
 
 #### Payments.Connector.Adyen.Device.Brazil component
-To help ensure that the Hardware station loads the Payment Connector for Adyen in POS for Brazil extension component, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
+
+To help ensure that the Hardware station loads the extension component for the Payment Connector for Adyen in POS for Brazil, you must set the corresponding assembly reference in the **HardwareStation.Extension.config** file that is located in the **Assets** folder in the Retail SDK.
 
 ```xml
 <hardwareStationExtension>
