@@ -6,7 +6,8 @@ description: This topic describes the capabilities for generating, publishing, a
 author: RichdiMSFT
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
