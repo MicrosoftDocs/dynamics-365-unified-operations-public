@@ -53,6 +53,9 @@ This topic explains how to turn on the Cash flow forecasts feature in Finance in
     1. On the **Cash flow forecast** tab, select **Enable feature**.
     2. Select **Create prediction model**.
 
+> [!NOTE]
+> The **Cash flow forecast** model training requires data containing 100 or more transaction that spans more than a year.  Recommendation is to have at least two years of data with more than 1,000 transactions.
+
 For more information about the cash flow forecasting capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
