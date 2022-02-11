@@ -85,7 +85,7 @@ Master Company Sharing should be considered only if there is a need to share:
 | What Table Data Sharing Types are supported? | Duplicate   | Duplicate and Single   |
 | Can companies have existing records in a table before sharing is Enabled? | Yes   | Only master company   |
 | Is it required to select copy data and to validate sharing issues after enabling or updating a policy? |  Yes  |  No  |
-| List of officially supported tables |  Link  | Link   |
+| List of officially supported tables |  [Link](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SRS-27Jan2022/articles/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables.md#tables-officially-supported-for-duplicate-record-data-sharing)  | [Link]()   |
 | Are Microsoft provided policy templates available?  |  Yes  |  No  |
 
 It is possible to combine Duplicate Record Sharing and Master Company Sharing for the same set of companies by using different policies. It is important to always select all applicable tables and optional foreign key fields in the Duplicate Record Policy and enable the policy before the Master Company Sharing policy is enabled. This way you can for example possible to share for example the Customer groups and Terms of payment tables, using Duplicate Record Sharing and the Customer table using Master Company sharing for scenarios where it is only the number of customer records that exceeds the limit and the number of companies do not exceed 300.
@@ -98,7 +98,8 @@ Example below: Unless the Terms of payment table is added manually, it will be a
 
 ![SRS-image2](media/SRS-image2.png)
 
-Note: Only one level of child foreign key relationships is added automatically. 
+> [!Note]
+> Only one level of child foreign key relationships is added automatically. 
 
 Tables that are automatically added when a policy is enabled or updated will not be visible in the Configure cross-company data sharing form until the policy is disabled. The best practice is to manually add tables based on the selected foreign key fields prior to enabling or updating the policy. This make it possible to understand the tables that will be shared and for Duplicate Record Sharing. This way it also provides the option to select fields for these tables, including optional foreign key fields that in turn might add more tables.  
 
