@@ -106,7 +106,7 @@ A button is available on the journal page to unlock a journal that has a status 
 The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the feature named **Resetting the workflow status for journals** on the **Feature management** page.
 
 ## Delete Journal Lines
-The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**.
+The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**. This feature will impact extensions on the LedgerJournalTrans table and it's delete method, as the set of lines will be removed without calling each line's delete method. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
