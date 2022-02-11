@@ -4,7 +4,7 @@
 title: Enable customer payment predictions
 description: This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,7 +53,7 @@ This topic explains how to turn on and configure the Customer payment prediction
         To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Finance insights configuration** page, set the **Enable feature** option to **Yes**.
         
    > [!NOTE]
-    > The **Customer payment predictions** requires more than 100 transactions in the previous six to nine months.  The transactions can include free text invoices, sales orders, and customer payments.  This data also needs to be spread across the on-time, late, and very late settings.    
+   > The **Customer payment predictions** feature requires more than 100 transactions in the previous six to nine months. The transactions can include free text invoices, sales orders, and customer payments. This data must be spread across the **On-time**, **Late**, and **Very late** settings.    
      
 
     3. Specify the "very late" transaction period to define what the **Very late** prediction bucket means for your business.
