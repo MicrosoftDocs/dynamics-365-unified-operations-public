@@ -52,4 +52,8 @@ The Export to Azure Data Lake feature is based on a microservice that exports Fi
 
 IoT Intelligence is an add-in for Supply Chain Management. It integrates Internet of Things (IoT) signals with data in Supply Chain Management to produce actionable insights. To learn more, see [IoT Intelligence home page](../../../supply-chain/iot/iot-intelligence-home-page.md).
 
+### Finance Insights
+
+Finance insights provides configurable solutions to help you intelligently predict your company's cash flow, predict when you may receive payment for outstanding receivables, and generate a budget proposal that can help speed up your budgeting process. These features use intelligent machine learning templates to build models using data you provide (including data from a third party such as consumer report information from a bureau). These intelligent capabilities inform decision making and helps you take action to respond effectively to current and anticipated business challenges. See [Finance insights homepage](../../../finance/finance-insights/finance-insights-home-page.md).
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
