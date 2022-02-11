@@ -3,27 +3,14 @@
 
 title: Enable consistent delivery mode handling in e-Commerce channel
 description: This topic explains possible issues around charges flow in e-Commerce channel in Microsoft Dynamics 365 Commerce, and feature switch to handle the issues.
-author: [gvrmohanreddy]
-manager: jeffbl
+author: gvrmohanreddy
 ms.date: 02/10/2022
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-commerce
-ms.technology: 
-# optional metadata
-# ms.search.form:  
-#ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.dyn365.ops.version: 10.0.26
 ---
 
 # Display non-prorated header level charges 
