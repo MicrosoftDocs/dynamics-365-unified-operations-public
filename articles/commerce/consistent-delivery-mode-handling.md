@@ -26,7 +26,7 @@ ms.search.validFrom: 2022-02-10
 ms.dyn365.ops.version: 10.0.26
 ---
 
-#Displaying non-prorated header level charges 
+# Display non-prorated header level charges 
 
 If you are experiencing one of the following issues in e-Commerce channel, turn on **Enable consistent delivery mode handling in channel** feature
 
