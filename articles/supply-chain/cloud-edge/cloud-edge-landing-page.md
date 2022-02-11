@@ -47,7 +47,7 @@ You can configure your hub environment and cloud scale units for selected worklo
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
-The warehouse management workload enables you to to run warehouse management processes on an isolated deployment.
+The warehouse management workload enables you to run warehouse management processes on an isolated deployment.
 For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
 
 ### Dedicated manufacturing execution workload capabilities in a scale unit
@@ -211,11 +211,11 @@ When one or more workloads are enabled, use the **Manage workloads** option to i
 
 ## Feature management considerations for workloads
 
-This section explains some important aspects to consider when installing workloads, adding features, or removing features in a distributed hybrid topology deployment. Several scenarios can influence whether you will need to run a [workload upgrade](#manage-workloads) process after making changes, but usually you would need to do so when updating or adding new data exchange queries and/or when adding new tables or fields to an already installed workload.
+This section explains some important aspects that you should consider when you install workloads, add features, or remove features in a distributed hybrid topology deployment. Several scenarios can influence whether you will have to run a [workload upgrade](#manage-workloads) after you make changes. However, you will usually have to do so when you update or add new data exchange queries, and/or when you add new tables or fields to a previously installed workload.
 
 ### Mandatory features for installing a workload
 
-When you install a workload, the install process creates a workload definition that contains information about the data tables used when synchronizing data between the two deployments. This is handled automatically based on the then-enabled features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). The following table lists the features that must be enabled in order to generate the workload definitions needed to run a warehouse or manufacturing workload.
+When you install a workload, the installation process creates a workload definition that contains information about the data tables that are used when data is synced between the two deployments. The creation of a workload definition is automatically handled based on the features that are currently enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). The following table lists the features that must be enabled to generate the workload definitions that are required to run a warehouse or manufacturing workload.
 
 | Mandatory feature | Workload |
 |---|---|
@@ -225,11 +225,11 @@ When you install a workload, the install process creates a workload definition t
 | Scale unit support for warehouse app work lists | Warehouse |
 | Production floor execution | Manufacturing |
 
-When you deploy a workload using the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) or the [scale unit manager portal](https://sum.dynamics.com), all the mandatory features will be enabled automatically. However, if you do a manual test deployment that is missing one or more mandatory features, the workload installation will fail with a message that lists the missing features; you must then enable those features manually and re-trigger the workload installation.
+When you deploy a workload by using the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) or the [scale unit manager portal](https://sum.dynamics.com), all the mandatory features will automatically be enabled. However, if you do a manual test deployment that is missing one or more mandatory features, the workload installation will fail, and you will receive a message that lists the missing features. You must then manually enable those features and retrigger the workload installation.
 
-### Enabling or disabling features with data synchronization dependencies
+### Enabling or disabling features that have data synchronization dependencies
 
-Features that affect the selection of data that is synchronized between the hub and its scale units also affect the way the workload definition is created. It is therefore important that these features be enabled before you install the workload. If you enable this type of feature while running a workload, then you must regenerate the workload definition by running a [workload upgrade](#manage-workloads) after enabling the feature. Likewise, if you disable a feature that has data synchronization dependencies while running a workload, you must run a [workload upgrade](#manage-workloads) to remove the relevant data synchronization information from the workload definition.
+Features that affect the selection of data that is synced between the hub and its scale units also affect how the workload definition is created. Therefore, it's important that these features be enabled before you install the workload. If you enable this type of feature while you're running a workload, you must regenerate the workload definition by running a [workload upgrade](#manage-workloads) after you enable the feature. Likewise, if you disable a feature that has data synchronization dependencies while you're running a workload, you must run a [workload upgrade](#manage-workloads) to remove the relevant data synchronization information from the workload definition.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
