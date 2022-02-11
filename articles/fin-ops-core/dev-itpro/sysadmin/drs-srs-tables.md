@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 # Tables officially supported for Duplicate Record Data sharing
 Even if it might be possible to add other tables to Duplicate Record Data sharing policies, than the ones listed below, they are not officially supported.
 
-Finance
--------
+**Finance**
 
 | **Table Object Name**        | **Table Description (Label)**   |
 |------------------------------|---------------------------------|
@@ -69,7 +68,8 @@ Finance
 | VendLedger                   | Vendor posting profile          |
 | VendPriceToleranceGroup      | Vendor price tolerance groups   |
 
-Tax
+**Tax**
+
 | **Table Object Name**           | **Table Description (Label)** |
 |---------------------------------|-------------------------------|
 | TaxAuthorityAddress             | Authority                     |
@@ -79,7 +79,8 @@ Tax
 | TaxParameters                   | Sales tax parameters          |
 | TaxPeriodHead                   | Sales tax period description  |
 
-Supply Chain
+**Supply Chain**
+
 | **Table Object Name**                        | **Table Description (Label)**                          |
 |----------------------------------------------|--------------------------------------------------------|
 | BarcodeSetup                                 | Barcode setup                                          |
@@ -229,81 +230,100 @@ Supply Chain
 | WrkCtrProperty                               | Properties                                             |
 | WrkCtrPropertyLine                           | Property                                               |
 
-Project Operations
+**Project Operations**
+
 | **Table Object Name** | **Table Description (Label)** |
 |-----------------------|-------------------------------|
 | CategoryTable         | Category table                |
 | ProjLineProperty      | Line property                 |
 
-Additional tables when the Customer and vendor master sharing feature is enabled
+**Additional tables when the Customer and vendor master sharing feature is enabled**
+
 | **Table Object Name**              | **Table Description (Label)**                                                    |
 |------------------------------------|----------------------------------------------------------------------------------|
 | BankConstantSymbol                 |  Bank constant symbols                                                           |
 | BankCustPaymIdTable                |  Payment ID                                                                      |
 | BankTransactionTypeGroupHeader     |  Bank transaction groups                                                         |
 | ContactPerson                      |  Contacts                                                                        |
-| CreditCardCust                     |   Customer credit card                                                           |
+| CreditCardCust                     |  Customer credit card                                                           |
 | CustFineSetup_BR                   |  Fine codes                                                                      |
 | CustInterestSetup_BR               |  Interest codes                                                                  |
-| CustomChequeLayout_BR              |   Custom check layout                                                            |
-| CustomsTariffCodeTable_IN          |   Customs tariff codes                                                           |
-| ExciseTariffCodes_IN               |   Excise tariff codes                                                            |
-| LvPaymTransCodes                   |   Payment transaction code                                                       |
-| PaymentFormatCodeSets_W            |   Payment format code sets                                                       |
-| RetailCustTable                    |   Customers (Retail)                                                             |
-| RetailVendTable                    |   Product import vendor setup                                                    |
-| SalesTaxFormTypes_IN               |   India sales tax form types                                                     |
-| smmResponsibilitiesEmpTable        |   Responsibility assignments                                                     |
-| StatRepInterval                    |   Statistics                                                                     |
-| StatRepIntervalLine                |   Aging periods                                                                  |
-| TaxBranch                          |   Tax branch                                                                     |
-| TaxComponentTable_IN               | Tax components                                                                   |
-| TaxInformationCustTable_IN         |   Tax Information of Customer                                                    |
-| TaxInformationVendTable_IN         |   Tax Information of Vendor                                                      |
-| TaxLedgerAccountGroup_IN           |   Tax ledger posting group                                                       |
-| TaxVatNumTable                     | Tax exempt number table                                                          |
-| TaxWithholdComponentGroupTable_IN  |   Withholding tax component groups                                               |
-| TaxWithholdComponentTable_IN       |   Withholding tax components                                                     |
-| TaxWithholdTable                   |   Withholding tax codes                                                          |
-| VendBankAccount                    |   Vendor bank accounts                                                           |
-| VendContractZakat_SA               |   Contractor                                                                     |
-| VendDefaultAccounts                |   Default ledger accounts for vendors                                            |
-| VendDefaultLocation                |   The VendDefaultLocation contains the default locations by purpose for a vendor |
-| VendFineSetup_BR                   |   Fine codes                                                                     |
+| CustomChequeLayout_BR              |  Custom check layout                                                            |
+| CustomsTariffCodeTable_IN          |  Customs tariff codes                                                           |
+| ExciseTariffCodes_IN               |  Excise tariff codes                                                            |
+| LvPaymTransCodes                   |  Payment transaction code                                                       |
+| PaymentFormatCodeSets_W            |  Payment format code sets                                                       |
+| RetailCustTable                    |  Customers (Retail)                                                             |
+| RetailVendTable                    |  Product import vendor setup                                                    |
+| SalesTaxFormTypes_IN               |  India sales tax form types                                                     |
+| smmResponsibilitiesEmpTable        |  Responsibility assignments                                                     |
+| StatRepInterval                    |  Statistics                                                                     |
+| StatRepIntervalLine                |  Aging periods                                                                  |
+| TaxBranch                          |  Tax branch                                                                     |
+| TaxComponentTable_IN               |  Tax components                                                                   |
+| TaxInformationCustTable_IN         |  Tax Information of Customer                                                    |
+| TaxInformationVendTable_IN         |  Tax Information of Vendor                                                      |
+| TaxLedgerAccountGroup_IN           |  Tax ledger posting group                                                       |
+| TaxVatNumTable                     |  Tax exempt number table                                                          |
+| TaxWithholdComponentGroupTable_IN  |  Withholding tax component groups                                               |
+| TaxWithholdComponentTable_IN       |  Withholding tax components                                                     |
+| TaxWithholdTable                   |  Withholding tax codes                                                          |
+| VendBankAccount                    |  Vendor bank accounts                                                           |
+| VendContractZakat_SA               |  Contractor                                                                     |
+| VendDefaultAccounts                |  Default ledger accounts for vendors                                            |
+| VendDefaultLocation                |  The VendDefaultLocation contains the default locations by purpose for a vendor |
+| VendFineSetup_BR                   |  Fine codes                                                                     |
 | VendInfoZakat_SA                   |  Vendors                                                                         |
-| VendInterestSetup_BR               |   Interest codes                                                                 |
-| VendStateTaxID                     |   Vendor state tax IDs                                                           |
-| VendTable                          | Vendors                                                                          |
+| VendInterestSetup_BR               |  Interest codes                                                                 |
+| VendStateTaxID                     |  Vendor state tax IDs                                                           |
+| VendTable                          |  Vendors                                                                          |
 
-Available duplicate records data sharing templates
-| **Package name on LCS**             | **Data sharing policies** |
-|-------------------------------------|---------------------------|
-| Financial data sharing templates    | Bank parameters           |
-| Supply chain data sharing templates | Barcode parameters        |
+**Available duplicate records data sharing templates**
+<table>
+<thead>
+<tr class="header">
+<th>Package name on LCS</th>
+<th>Data sharing policies</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Financial data sharing templates</td>
+<td><ul>
+<li>Bank parameters</li>
+<li>Ledger journal names</li>
+<li>Payment days</li>
+<li>Payment schedules</li>
+<li>Payment terms</li>
+<li>Tax exempt codes</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Supply chain data sharing templates</td>
+<td><ul>
+<li>Barcode parameters</li>
+<li>Barcode setup</li>
+<li>Buyer group</li>
+<li>Charges group</li>
+<li>Commission</li>
+<li>Destination code</li>
+<li>Non-conformance type</li>
+<li>Order entry deadline group</li>
+<li>Order origin code</li>
+<li>Order pool</li>
+<li>Production group</li>
+<li>Production pool</li>
+<li>Reason for delivery</li>
+<li>Supplementary item group</li>
+<li>Terms of delivery</li>
+<li>Work time calendar</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-•	Ledger journal names
-•	Payment days
-•	Payment schedules
-•	Payment terms
-•	Tax exempt codes
-•	Barcode setup
-•	Buyer group
-•	Charges group
-•	Commission
-•	Destination code
-•	Non-conformance type
-•	Order entry deadline group
-•	Order origin code
-•	Order pool
-•	Production group
-•	Production pool
-•	Reason for delivery
-•	Supplementary item group
-•	Terms of delivery
-•	Work time calendar
 
-
-Download a cross-company data sharing template from LCS
+## Download a cross-company data sharing template from LCS
 1.	Sign in to LCS.
 2.	On the home page, click Shared asset library.
 3.	In the Asset type list, click Data package.
@@ -311,9 +331,11 @@ Download a cross-company data sharing template from LCS
 For details about how to use a template, see Configure financial cross-company data sharing.
 
 
-Tables officially supported for Master Company Data sharing
+# Tables officially supported for Master Company Data sharing
 Even if it might be possible to add other tables to Master Company Data sharing policies, than the once listed below, they are not officially supported.
-Finance
+
+**Finance**
+
 | **Table Object Name**          | **Table Description (Label)**   |
 |--------------------------------|---------------------------------|
 | AssetCondition                 | Fixed asset condition           |
@@ -359,7 +381,8 @@ Finance
 | VendPriceToleranceGroup        | Vendor price tolerance groups   |
 | VendStateTaxID                 | Vendor state tax IDs            |
 
-Tax
+**Tax**
+
 | **Table Object Name**           | **Table Description (Label)** |
 |---------------------------------|-------------------------------|
 | TaxAuthorityAddress             | Authority                     |
@@ -369,7 +392,8 @@ Tax
 | TaxParameters                   | Sales tax parameters          |
 | TaxPeriodHead                   | Sales tax period description  |
 
-Supply Chain
+**Supply Chain**
+
 | **Table Name**                       | **Table Description (Label)**              |
 |--------------------------------------|--------------------------------------------|
 | BarcodeSetup                         | Barcode setup                              |
@@ -403,7 +427,9 @@ Supply Chain
 | WrkCtrPropertyLine                   | Property                                   |
 
 Additional Supply chain tables when the (Private Preview) Cross-company data sharing for products feature is enabled.
-Note: The below tables can be added to a Master Company Data sharing policy but are only supported when the “Cross-company data sharing for products” feature is enabled, which is currently in Private Preview.
+>[!Note]
+> The below tables can be added to a Master Company Data sharing policy but are only supported when the “Cross-company data sharing for products” feature is enabled, which is currently in Private Preview.
+
 | **Table Name**                            | **Table Description (Label)**                  |
 |-------------------------------------------|------------------------------------------------|
 | InventStdCostConv                         | Standard cost conversion                       |
@@ -421,7 +447,8 @@ Note: The below tables can be added to a Master Company Data sharing policy but 
 | WHSInventTable                            | Warehouse item number                          |
 | WHSPhysDimUOM                             | Physical Dimension by Unit                     |
 
-Project Operations
+**Project Operations**
+
 | **Table Object Name** | **Table Description (Label)** |
 |-----------------------|-------------------------------|
 | CategoryTable         | Category table                |
