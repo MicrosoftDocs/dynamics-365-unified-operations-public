@@ -276,7 +276,7 @@ To update headquarters with the new Azure AD B2C information, follow these steps
 
 1. In Commerce, go to **Commerce Shared Parameters** and select **Identity Providers** in the left menu.
 1. Under **Identity Providers**, do the following:
-    1. In the **Issuer** box, enter the identity provider issuer URL. To find your issuer URL, see [Obtain issuer URL](#obtain-issuer-url) below.
+    1. In the **Issuer** box, enter the identity provider issuer string. To find your issuer string, see [Obtain issuer string for headquarters setup](#obtain-issuer-string-for-headquarters-setup) below.
     1. In the **Name** box, enter a name for your issuer record.
     1. In the **Type** box, enter **Azure AD B2C (id_token)**.
 1. Under **Relying Parties**, with the above B2C identity provider item selected, do the following:
