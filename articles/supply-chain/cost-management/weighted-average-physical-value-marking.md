@@ -54,7 +54,7 @@ Settlements are inventory close postings that adjust the issues to the correct w
 
 ## Weighted average direct settlement without Include physical value
 The direct settlement principle creates settlements directly between receipts and issues without creating additional inventory transactions. The system uses this direct settlement principle in certain specific situations:
--   One receipt and one or several issues has been posted in the period
+-   One receipt and one or more issues has been posted in the period
 -   Only issues have been posted in the period and the inventory contains on-hand items from a previous closing
 
 In the scenario in the following sections, a financially updated receipt and issue have been posted. During inventory close, the system will settle the receipt directly against the issue, and no adjustment to the cost price is needed on issue. The following transactions are illustrated in the graphic.
