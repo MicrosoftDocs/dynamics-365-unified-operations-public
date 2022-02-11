@@ -71,7 +71,7 @@ To learn more about this feature, review the [Design a new ER solution to print 
 
 ### Limitations
 
-The **PDF** option of the **Document routing type** parameter that is configured for the **Printer** destination is implemented only for cloud deployments.
+The **Printer** destination is implemented only for cloud deployments.
 
 ### Use the Printer destination
 
