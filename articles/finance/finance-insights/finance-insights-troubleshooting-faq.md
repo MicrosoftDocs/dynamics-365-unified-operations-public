@@ -114,9 +114,11 @@ For more information about how to adjust the **On-time**, **Late**, and **Very l
 
 ### Resolution
 
-The **Cash flow forecast** model training requires data that spans more than one year and contains more than 100 transactions. These transactions must impact liquidity accounts that are included in the cash flow forecast setup.
+The **Cash flow forecast** model training requires data containing 100 or more transaction that spans more than a year.  Recommendation is to have at least two years of data with more than 1,000 transactions.
 
-The **Customer payment predictions** requires at least 100 customer invoice and payment transactions in the last six to nine months to create predictions.  
+The **Customer payment predictions** requires more than 100 transactions in the previous six to nine months.  Those transactions can include free text invoices, sales orders, and customer payments.  This data also needs to be spread across the on-time, late, and very late settings defined in the configuration page.    
+
+The **Budget proposal** requires a minimum of three years of budget and/or actual data.  This solution uses 3 to 10 years of data in the projections, so more than 3 years will provide better results.  The data itself works best when there is variation in the values.  If the data contains all constant data, such as lease expense, the training may fail because the lack of variation doesn’t require AI to project the amounts.
 
 ## Symptom: Error message states, that the "Table with name, 'msdyn_paypredpredictionresultentities' does not exist. The remote server returned an error: (404) Not Found…"
 
