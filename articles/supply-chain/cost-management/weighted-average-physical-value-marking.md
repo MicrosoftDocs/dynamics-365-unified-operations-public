@@ -104,9 +104,9 @@ The following transactions are illustrated in the graphic below:
   - Transaction 2b is settled for a quantity of 1 with an amount settled of USD 22.00.
   - Transaction 5b is settled for a quantity of 1 with an amount settled of USD 30.00.
   - Transaction 7a. is created for a quantity of 3 with an amount settled of USD 62.00. This transaction offsets the sum of the three receipt transactions that are financially updated in the period. 
-- 7b. Weighted average inventory close transaction financial receipt is created as the offset to 5a.
+- 7b. Weighted average inventory close transaction financial receipt is created as the offset to financially posted issues.
   - Transaction 3b is settled for a quantity of 1 with an amount settled of USD 20.67. This transaction is adjusted by USD 4.67 to bring the original value of USD 16.00 to 20.67 which is the weighted average of financially posted transactions for the period. 
-  - Transactions 7b. is created for a quantity of 1 with an amount settled of USD 20.67 to offset 5a. This transaction offsets the sum of the one issue transaction that is financially updated in the period.
+  - Transaction 7b. is created for a quantity of 1 with an amount settled of USD 20.67 to offset 3b. This transaction offsets the sum of the one issue transaction that is financially updated in the period.
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 
@@ -125,7 +125,7 @@ The following diagram illustrates this series of transactions with the effects o
 - Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## Weighted average direct settlement with the Include physical value option
-The parameter **Include physical value** works differently with the weighted average inventory model than in earlier versions of the product. When you select the **Include physical value** option for an item in the **Item model group** form, the system will use physically updated receipts when calculating the estimated cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close, financially updated receipts only will be considered in the weighted average calculation. 
+The parameter **Include physical value** works differently with the weighted average inventory model than in earlier versions of the product. When you select the **Include physical value** option for an item in the **Item model group** form, the system will use physically updated receipts when calculating the estimated issue cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close, financially updated receipts only will be considered in the weighted average calculation. 
 
 The following transactions are illustrated in the graphic below:
 -  1a. Inventory physical receipt for a quantity of 10 at a cost of USD 10.00 each.
@@ -136,7 +136,7 @@ The following transactions are illustrated in the graphic below:
 -  4a. Inventory physical issue for a quantity of 1 at a cost of USD 15.00 each (running average of physically and financially posted transactions).
 -  4b. Inventory financial issue for a quantity of 1 at a cost of USD 15.00 each (running average of physically and financially posted transactions).
 -  5a. Inventory physical issue for a quantity of 1 at a cost of USD 15.00 each (running average of physically and financially posted transactions).
--  6\. Inventory close is performed. Based on the Weighted average method, the system uses the direct settlement method because only one receipt is financially updated in the period. In this example, one settlement is created between 1b and 3b, and another between 1b and 4b. Transaction 3b and 4b are each adjusted by USD -5.00 to bring the value to USD 10.00
+-  6\. Inventory close is performed. Based on the Weighted average method, the system uses the direct settlement method because only one receipt is financially updated in the period. In this example, one settlement is created between 1b and 3b, and another between 1b and 4b. Transaction 3b and 4b are each adjusted by USD -5.00 to bring the value to USD 10.00.
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the direct settlement principle with the Include physical value option. 
 
@@ -174,9 +174,9 @@ The following transactions are illustrated in the graphic below:
   - Transaction 2b is settled for a quantity of 1 with an amount settled of USD 22.00.
   - Transaction 5b is settled for a quantity of 1 with an amount settled of USD 30.00.
   - Transaction 7a. is created for a quantity of 3 with an amount settled of USD 62.00.  
-- 7b. Weighted average inventory close transaction financial receipt is created as the offset to 5a.
+- 7b. Weighted average inventory close transaction financial receipt is created as the offset the financially closed issue transactions.
   - Transaction 3b is settled for a quantity of 1 with an amount settled of USD 20.67. This transaction is adjusted by USD 4.67 to bring the original value of USD 16.00 to 20.67 which is the weighted average of financially posted transactions for the period. 
-  - Transactions 7b. is created for a quantity of 1 with an amount settled of USD 20.67 to offset 5a.
+  - Transaction 7b. is created for a quantity of 1 with an amount settled of USD 20.67 to offset 3b.
 
 The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 
