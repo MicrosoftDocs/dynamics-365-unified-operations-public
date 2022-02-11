@@ -53,11 +53,11 @@ Settlements are inventory close postings that adjust the issues to the correct w
 -   Weighted average with marking
 
 ## Weighted average direct settlement without Include physical value
-The direct settlement principle creates settlements directly between receipts and issues without creating additional inventory transactions. The system uses this direct settlement principle in certain specific situations:
--   One receipt and one or more issues has been posted in the period
+The direct settlement principle creates settlements directly between receipts and issues without creating additional inventory transactions. The system uses this direct settlement principle in the following situations:
+-   One receipt and one or more issues have been posted in the period
 -   Only issues have been posted in the period and the inventory contains on-hand items from a previous closing
 
-In the scenario in the following sections, a financially updated receipt and issue have been posted. During inventory close, the system will settle the receipt directly against the issue, and no adjustment to the cost price is needed on issue. The following transactions are illustrated in the graphic.
+In this example, the **Include physical value** checkbox is cleared on the **Item model group** for the released product. The illustration that follows shows these transactions:
 -  1a. Inventory physical receipt for a quantity of 10 at a cost of USD 10.00 each.
 -  1b. Inventory financial receipt for a quantity of 10 at a cost of USD 10.00 each.
 -  2a. Inventory physical receipt for a quantity of 10 at a cost of USD 20.00 each.
@@ -66,7 +66,7 @@ In the scenario in the following sections, a financially updated receipt and iss
 -  4a. Inventory physical issue for a quantity of 1 at a cost of USD 10.00 each (running average of financially posted transactions).
 -  4b. Inventory financial issue for a quantity of 1 at a cost of USD 10.00 each (running average of financially posted transactions).
 -  5a. Inventory physical issue for a quantity of 1 at a cost of USD 10.00 each (running average of financially posted transactions).
--  6\. Inventory close is performed. Based on the Weighted average method, the system uses the direct settlement method because only one receipt is financially updated in the period. In this example, one settlement is created between 1b and 3b, and another between 1b and 4b. In this example, no adjustment is made because the running average is the same as the weighted average.
+-  6\. Inventory close is performed. Based on the Weighted average method, the system uses the direct settlement method because only one receipt is financially updated in the period. In this example, one settlement is created between 1b and 3b, and another between 1b and 4b. No adjustment is made because the running average is the same as the weighted average.
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the direct settlement principle without the Include physical value option. 
 
@@ -85,7 +85,7 @@ The following diagram illustrates this series of transactions with the effects o
 - Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## Weighted average summarized settlement without the Include physical value option
-When there are multiple receipts in a period, Weighted average uses the summarized settlement principle that all receipts within in a closing period are summarized into a transaction called Weighted average inventory closing. All the receipts for the period will be settled against the issue of the newly created inventory transaction. All issues for the period will be settled against the receipt of the new inventory transfer transaction. If the on-hand inventory is positive after the inventory close, that on-hand inventory and value of the inventory are summarized on the new inventory transfer transaction (receipt). If the inventory on-hand is negative after the inventory close, the on-hand inventory and value of the inventory is the sum of individual issues that have not been fully settled. 
+When there are multiple receipts in a period, Weighted average uses the summarized settlement principle where all receipts within in a closing period are summarized into a transaction called Weighted average inventory closing. All the receipts for the period will be settled against the issue of the newly created inventory transaction. All issues for the period will be settled against the receipt of the new inventory transaction. If there is remaining on-hand inventory value after the inventory close, the on-hand inventory value is included in the receipt transaction of the Weighted average inventory closing transactions. 
 
 The following transactions are illustrated in the graphic below:
 - 1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
