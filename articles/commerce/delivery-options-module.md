@@ -61,6 +61,9 @@ The following illustration shows an example of a delivery options module on a ch
 
 A delivery options module can be added only to a checkout module. For more information about how to configure the delivery options module and add it to a checkout page, see [Checkout module](add-checkout-module.md).
 
+>[!NOTE]
+>You may experience inconsistency in delivery handling or may not see non-prorated header level charges in e-Commerce channel. Refer to **[Enable consistent delivery mode handling in e-Commerce channel](/commerce/consistent-delivery-mode-handling.md)** to resolve these issues.
+
 ## Additional resources
 
 [Cart module](add-cart-module.md)
