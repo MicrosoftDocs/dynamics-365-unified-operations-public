@@ -43,7 +43,7 @@ Some of the shortcuts on this page are *key chords*, meaning they require two co
 
 ## Finding a shortcut
 
-Users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page. Alternatively, you can press Alt+Shift+K to open this dialog box (and Alt+Shift+K a second to see all currently available shortcuts for the page).    
+Users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page. Alternatively, you can press Alt+Shift+K to open this dialog box (and press Alt+Shift+K a second time to see all currently available shortcuts for the page).    
 
 ## Action shortcuts
 
