@@ -3,27 +3,14 @@
 
 title: Welcome email is not sent to new customers is created
 description: This topic provides troubleshooting guidance that can help when customer do not receive a welcome email notification when a new customer is created.
-author: [gvrmohanreddy]
-manager: jeffbl
+author: gvrmohanreddy
 ms.date: 02/10/2022
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-commerce
-ms.technology: 
-# optional metadata
-# ms.search.form:  
-#ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.dyn365.ops.version: 10.0.26
 ---
 
 # Welcome email is not sent to new customers upon sign up
@@ -39,6 +26,7 @@ When a new customer is created a welcome email is not sent to the newly created 
 ## Resolution
 
 ### Set proper EmailID for customer created event
+
 Commerce email notification profile
 Retail and Commerce > Headquarters setup
 
@@ -50,5 +38,5 @@ Retail and Commerce > Headquarters setup
 
 ## Additional resources
 
-[Setup an email notification profile](../email-notification-profiles)
-![image](https://user-images.githubusercontent.com/42852473/153552023-adc28816-0311-4856-900e-8a514e0de44d.png)
+[Set up an email notification profile](../email-notification-profiles.md)
+
