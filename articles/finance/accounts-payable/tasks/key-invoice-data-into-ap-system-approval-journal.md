@@ -4,7 +4,7 @@
 title: Key invoice data into accounts payable using an approval journal
 description: This topic explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
 author: abruer
-ms.date: 08/08/2019
+ms.date: 02/11/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 This topic explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.
 
 ## Create and post and invoice
-1. In the navigation pan, go to **Modules > Accounts payable > Invoices > Invoice register**.
+1. In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice register**.
 2. Select **New**.
 3. Select the name of the invoice register that you want to use.
 4. Select **Lines** to open the register and enter expense lines.
