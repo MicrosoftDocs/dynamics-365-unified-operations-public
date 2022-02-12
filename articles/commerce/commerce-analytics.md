@@ -27,7 +27,6 @@ You can try out a [live demo of Commerce Analytics (Preview)](https://aka.ms/Com
 ![Commerce Analytics (Preview) Payments](media/CommerceAnalytics_Payments.png)
 ![Commerce Analytics (Preview) Web activity](media/CommerceAnalytics_WebActivity.png)
 
-
 ## Commerce analytics (Preview) system architecture
 
 ### Key components
@@ -311,7 +310,7 @@ If visitors browse your e-commerce site while they are signed in, Commerce analy
 
 #### Impressions
 
-An impression is a single view of a product visual by an e-commerce visitor. For example, an e-commerce visitor goes to the home page of your e-commerce website and views a yoga mat product in a **Top selling** list module. The visitor then views the same yoga mat product in a **Picks for you** list module. In this case, there are two product impressions. 
+An impression is a single view of a product visual by an e-commerce visitor. For example, an e-commerce visitor goes to the home page of your e-commerce website and views a yoga mat product in a **Top selling** list module. The visitor then views the same yoga mat product in a **Picks for you** list module. In this case, there are two product impressions.
 
 Currently, impressions are tracked in the following surfaces:
 
@@ -355,8 +354,9 @@ To install Commerce analytics (Preview), you must have permissions to create res
 
 1. [Enable and configure Export to Data Lake](#enableExportToDataLake).
 2. [Install and configure an Azure Synapse workspace](#configureAzureSynapse).
-3. [Enable and configure the Commerce analytics (Preview) add-in](#enableCommerceAnalyticsAddin).
-4. [Install the Power BI template app](#powerbi).
+3. [Add secrets to key vault](#addSecrets)
+4. [Enable and configure the Commerce analytics (Preview) add-in](#enableCommerceAnalyticsAddin).
+5. [Install the Power BI template app](#powerbi).
 
 ### <a name="enableExportToDataLake"></a>Enable and configure Export to Data Lake
 
@@ -372,17 +372,27 @@ While you're configuring Export to Data Lake, make a note of the following infor
 Commerce Analytics (Preview) requires an on demand SQL Synapse provisioned in your Azure Synapse workspace. To install and configure an Azure Synapse workspace, follow these steps.
 
 1. Install an Azure Synapse workspace in your Azure subscription. For more information, see [Quickstart: Create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace).
-2. Once the workspace is provisioned, navigate to the resource and click on **Open Synapse Studio** link on the Overview page. This will open the Azure Synapse Studio for your workspace.
-3. In the Synapse Studio, click on **Manage** on the left hand menu. You might have to click on the expand link on the left hand menu to show the menu names.
-4. Click on **Access control** under Security group. Click on **Add** button.
-5. In the `Add role assignment` pane, select the options as shown in the following table.
+2. <a name="serverlessep"></a>Once the workspace is provisioned, navigate to the resource overview page. Make note of the `Serverless SQL endpoint` value on this page. You will need to store this value in the key vault in the next section.
+3. While on the overview page, click on **Open Synapse Studio** link. This will open the Azure Synapse Studio for your workspace.
+4. In the Synapse Studio, click on **Manage** on the left hand menu. You might have to click on the expand link on the left hand menu to show the menu names.
+5. Click on **Access control** under Security group. Click on **Add** button.
+6. In the `Add role assignment` pane, select the options as shown in the following table.
 
     | Option | Value |
     |--------|-------|
     | Scope | Select `Workspace`. |
     | Role | Select `Synapse SQL Administrator`|
     | Select user | Search for the name of the [application](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createapplication) that you created during installation of the *Export to DataLake* feature. Once that application shows up in the search result, click on it to select the application. The application will now show under the `Selected user(s), group(s), or service principal(s)` section. |
-6. Click on **Apply** button to complete the role assignment. This will grant the application Synapse SQL Administrator privileges, which will allow it to create the necessary views, during configuration of the Commerce Analytics (Preview) LCS add in.
+7. Click on **Apply** button to complete the role assignment. This will grant the application Synapse SQL Administrator privileges, which will allow it to create the necessary views, during configuration of the Commerce Analytics (Preview) LCS add in.
+
+### <a name="addSecrets"></a>Add secrets to key vault
+
+In the same [key vault](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md#createkeyvault) that you used while configuring Export to Data Lake feature, you will need to add the secrets specified in the following table. For each of the secrets, you will need to provide a secret name and provide the value specified.
+
+|Suggested secret name | Secret value | Example secret value |
+|---------|---------|---------|
+|synapse-sql-server | The serverless SQL endpoint value that you noted in the [preceding section](#serverlessep) | `test-ondemand.sql.azuresynapse.net` |
+|<a href="roUser"></a>readonly-sql-pwd | The password to set for the SQL read only user. This will be used by the Power BI report to connect to the serverless SQL. | Follow your organization password policies for setting the password. |
 
 ### <a name="enableCommerceAnalyticsAddin"></a>Enable and configure the Commerce analytics (Preview) add-in
 
@@ -397,12 +407,12 @@ To install and configure the Commerce analytics (Preview) add-in, follow these s
 
     | Information | Source | Example value |
     |---|---|---|
-    | Azure Active Directory (AAD) Tenant ID | Sign in to the [Azure portal](https://portal.azure.com/), and open the **Azure Active Directory** service. Then open the **Properties** page, and copy the value in the **Tenant ID** field. | 72f988bf-0000-0000-00000-2d7cd011db47 |
-    | DNS name of your Azure key vault | Enter the [DNS name](#keyVault) of your key vault. You should have made a note of this value in the previous section. | `https://contosod365datafeedpoc.vault.azure.net/` |
-    | Secret name that contains the Application ID | Enter the [secret name that stores the application ID](#keyVault). You should have made a note of this value in the previous section. | app-id |
-    | Secret name that contains the application secret | Enter the [secret name that stores the application secret](#keyVault). You should have made a note of this value in the previous section. | app-secret |
-    | Secret name that contains the serverless SQL endpoint for Azure Synapse | Blah Blah | test-ondemand.sql.azuresynapse.net |
-    | Secret name that contains the password to set for SQL read only user in Azure Synapse | Blah | readonly-pwd |
+    | Azure Active Directory (AAD) Tenant ID | Sign in to the [Azure portal](https://portal.azure.com/), and open the **Azure Active Directory** service. Then open the **Properties** page, and copy the value in the **Tenant ID** field. | `72f988bf-0000-0000-00000-2d7cd011db47` |
+    | DNS name of your Azure key vault | Enter the DNS name of your key vault. You should have made a note of this value in the [previous section](#keyVault). | `https://contosod365datafeedpoc.vault.azure.net/` |
+    | Secret name that contains the Application ID | Enter the secret name that stores the application ID. You should have made a note of this value while configuring Export to Data Lake feature as indicated in [this section](#keyVault). | `app-id` |
+    | Secret name that contains the application secret | Enter the secret name that stores the application secret. You should have made a note of this value while configuring Export to Data Lake feature as indicated in [this section](#keyVault). | `app-secret` |
+    | Secret name that contains the serverless SQL endpoint for Azure Synapse | Enter the secret name that stores the serverless SQL endpoint. You should have created the secret in the [preceding section](#addSecrets). | `synapse-sql-server` |
+    | Secret name that contains the password to set for SQL read only user in Azure Synapse | Enter the secret name that stores the password to set for the serverless SQL read only user. This user will be created for you and should be used in the Power BI report to connect to the serverless SQL server. You should have created the secret in the [preceding section](#addSecrets).  | `readonly-sql-pwd` |
 
 5. Accept the terms of the offer by selecting the checkbox, and then select **Install**.
 
@@ -413,35 +423,36 @@ To install and configure the Commerce analytics (Preview) add-in, follow these s
 To install the Power BI template app for Commerce analytics (Preview), follow these steps.
 
 1. Sign in to the [Power BI portal](https://powerbi.microsoft.com/) by using your organization ID.
-2. Install the Commerce analytics (Preview) Power BI template app by going to [https://aka.ms/cdireport-installapp](https://aka.ms/cdireport-installapp). You might receive a warning that states that the app isn't listed on AppSource. Select **Install**.
-3. If you're installing the app for the first time, skip ahead to step 5. If you've installed this app before, the following options for updating the app are shown:
+2. Install the Commerce analytics (Preview) Power BI template app by going to [https://aka.ms/cdireport-installapp](https://aka.ms/cdireport-installapp). 
+3. You may also visit the [AppSource page for Dynamics 365 Commerce Analytics](https://appsource.microsoft.com/en-US/product/power-bi/dynamics-365-commerce.dydnamics-365-commerce-analytics) and click on **Get it now** button, to install the template application.
+4. If you're installing the app for the first time, skip ahead to step 5. If you've installed this app before, the following options for updating the app are shown:
 
     - **Update the workspace and the app** – Update the existing template app, and overwrite your existing app settings, such as the app instance name and permission configurations.
     - **Update only workspace content without updating the app** – Update the existing template app, but keep your existing app settings. *This option is the recommended option for app updates.*
     - **Install another copy of the app into a new workspace** – Create a new workspace, and then create a copy of the existing template app in it. The existing workspace will be left intact.
 
-4. Select one of the update options, and then select **Install**.
-5. Open the installed app by selecting **Apps** in the left pane and then selecting the app.
-6. Connect the app to your data source by selecting **Connect**. If you've installed the app before, select the **Connect your data** link in the yellow message bar.
-7. Set the following fields.
+5. Select one of the update options, and then select **Install**.
+6. Open the installed app by selecting **Apps** in the left pane and then selecting the app.
+7. Connect the app to your data source by selecting **Connect**. If you've installed the app before, select the **Connect your data** link in the yellow message bar.
+8. Set the following fields.
 
     | Field | Value |
     |---|---|
-    | Server | Enter the name of the Azure Synapse Serverless SQL endpoint that you created in the previous section. You can get this value from the **Overview** page for the Azure Synapse workspace in the Azure portal. |
+    | Server | Enter the serverless SQL endpoint that you made a note of after [creating the Azure Synapse workspace](#serverlessep). |
     | Database | Enter **CommerceAnalytics**. |
     | Language | Select a value in the list. This field is used for localized product and category names. The value is case-sensitive. |
     | Date Range | Select a value in the list. Data for the selected number of months will be imported into the Power BI dataset. The value that you select affects the size of the dataset and the time that is required for synchronization. |
 
-8. Select **Next**. You're prompted to enter the credentials for connecting to the Azure Synapse SQL database. Set the fields as shown in the following table.
+9. Select **Next**. You're prompted to enter the credentials for connecting to the Azure Synapse SQL database. Set the fields as shown in the following table.
 
     | Field | Value |
     |---|---|
     | Authentication method | Select **Basic**. |
     | User name | Enter **reportreadonlyuser**. |
-    | Password | Enter the value that you replaced the [placeholder_password](#phUserPwd) placeholder with in the SetupSynapse.sql script. This password is the password for the **reportreadonlyuser** account. |
+    | Password | Enter the password that you [stored](#roUser) for the SQL read only user in the key vault. |
 
-9. Select **Sign in and connect**.
-10. Wait until the dataset is successfully updated. Then select the **Edit app** button to open the App workspace, where you can view the update status of the dataset. In the App workspace, you can also optionally set up automatic update schedules for your dataset, manage permissions, and rename the app instance.
+10. Select **Sign in and connect**.
+11. Wait until the dataset is successfully updated. Then select the **Edit app** button to open the App workspace, where you can view the update status of the dataset. In the App workspace, you can also optionally set up automatic update schedules for your dataset, manage permissions, and rename the app instance.
 
 ### <a name="privacy"></a>Privacy
 
