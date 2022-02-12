@@ -39,6 +39,17 @@ When an e-commerce order is placed, the taxes are incorrectly calculated, or the
 
 ## Resolution
 
+### Configure general sales tax groups in Commerce headquarters
+
+To configure general sales tax groups in Commerce headquarters, follow these steps.
+
+1. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax group**.
+1. In the left navigation, select the tax group to configure.
+1. On the **Retail destination based tax** FastTab, configure the taxes for the sales tax group.
+
+> [!NOTE]
+> For shipping that doesn't involve sales tax on the customer's address, the delivery address of the line and the destination-based taxes that are configured for the tax group determine the tax group. For more information, see [Set up taxes for online stores based on destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+
 ### Configure the sales tax for a retail store in Commerce headquarters
 
 To configure the sales tax for a retail store in Commerce headquarters, follow these steps.
@@ -62,17 +73,6 @@ To configure the sales tax for a customer's address in Commerce headquarters, fo
 
 > [!NOTE]
 > For shipping that involves sales tax on the customer's address, the delivery address of the line determines the tax group for the line. If the customer is shipping to an existing address that has a tax group that is already configured, the existing tax group will be used. By default, addresses don't have a tax group when they are created.
-
-### Configure general sales tax groups in Commerce headquarters
-
-To configure general sales tax groups in Commerce headquarters, follow these steps.
-
-1. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax group**.
-1. In the left navigation, select the tax group to configure.
-1. On the **Retail destination based tax** FastTab, configure the taxes for the sales tax group.
-
-> [!NOTE]
-> For shipping that doesn't involve sales tax on the customer's address, the delivery address of the line and the destination-based taxes that are configured for the tax group determine the tax group. For more information, see [Set up taxes for online stores based on destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## Additional resources
 
