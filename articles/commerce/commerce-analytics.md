@@ -392,7 +392,7 @@ In the same [key vault](../fin-ops-core/dev-itpro/data-entities/configure-export
 |Suggested secret name | Secret value | Example secret value |
 |---------|---------|---------|
 |synapse-sql-server | The serverless SQL endpoint value that you noted in the [preceding section](#serverlessep) | `test-ondemand.sql.azuresynapse.net` |
-|<a href="roUser"></a>readonly-sql-pwd | The password to set for the SQL read only user. This will be used by the Power BI report to connect to the serverless SQL. | Follow your organization password policies for setting the password. |
+|<a name="roUser"></a>readonly-sql-pwd | The password to set for the SQL read only user. This will be used by the Power BI report to connect to the serverless SQL. | Follow your organization password policies for setting the password. |
 
 ### <a name="enableCommerceAnalyticsAddin"></a>Enable and configure the Commerce analytics (Preview) add-in
 
