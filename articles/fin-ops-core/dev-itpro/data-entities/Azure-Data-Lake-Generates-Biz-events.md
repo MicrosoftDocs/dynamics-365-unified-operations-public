@@ -47,6 +47,30 @@ To install the **Dynamics 365 Export to Data lake** solution, you need to launch
 ## Create a Busines action
 You can create an action using Microsoft Power Automate, Azure messaging services such as Logic Apps as well as many third party tools. For simplicity, we will discuss creating a Business action using the Power Automate Dataverse connector trigger [When an action is performed (preview)](https://docs.microsoft.com/en-us/connectors/commondataserviceforapps/#when-an-action-is-performed-(preview)).
 
+In this category, these events are defined:
+
+-   Initialize complete
+
+-   Metadata changed
+
+-   Deactivated
+
+-   Activated
+
+-   Error
+
+-   Lake switch
+
+The event message schemas are defined as below:
+
+| Event Name          | Description | Event message schema                 |
+|---------------------|-------------|--------------------------------------|
+| Initialize complete |             | TableName: string FolderPath: string |
+| Metadata changed    |             | TableName: string                    |
+| Deactivated         |             | TableName: string                    |
+| Activated           |             | TableName: string                    |
+| Error               |             | TableName: string StatusCode: int    |
+| Lake Switch         |             |                                      |
 
 
 
