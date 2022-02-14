@@ -29,7 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage recruiting processes
 
-[!include [banner](../includes/banner.md)]
+> [!IMPORTANT]
+> The functionality noted in this topic is currently available for Human Resources customers on the Finance infrastructure.  
+
 
 This topic describes a concept that recruiters can use to track the steps in a recruiting process, including efforts to advertise open positions and recruit applicants, tracking applicant and application information, interviewing applicants, and selecting one or more candidates to fill the open positions in your organization.
 

@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.25 (April)
+          href: get-started/whats-new-changed-10-0-25.md
         - name: Finance 10.0.24 (February)
           href: get-started/whats-new-changed-10-0-24.md
         - name: Finance 10.0.23 (January)
@@ -216,6 +218,8 @@
           href: accounts-payable/vendor-copy.md
         - name: Record a vendor invoice in the invoice journal
           href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+        - name: Apply a payment schedule to the invoice journal
+          href: accounts-payable/payment-invoice-journal.md
       - name: Audit invoices and key data in accounts payable
         href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
       - name: Three-way matching policies
@@ -894,146 +898,144 @@
         href: asset-leasing/asset-leasing-rprts.md
     - name: General ledger
       items:
-      - name: General ledger overview
+      - name: General ledger home page
         href: general-ledger/general-ledger.md
-      - name: Accounts
+      - name: Chart of accounts
         items:
-        - name: Accruals overview
-          href: general-ledger/accruals-overview.md
-        - name: Elimination rules
-          href: general-ledger/elimination-rules.md
-        - name: Account and dimension combinations
-          href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-        - name: Balanced journals for interunit accounting
-          href: general-ledger/example-balanced-journals-interunit-accounting.md
-        - name: Posting definitions
-          href: general-ledger/posting-definitions.md
-        - name: Posting definition examples
-          href: general-ledger/example-posting-definitions.md
-        - name: Set up default descriptions for automatic posting 
-          href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
-        - name: General ledger account balances
-          href: general-ledger/general-ledger-account-balances.md
-        - name: Define financial dimensions
-          href: general-ledger/tasks/define-financial-dimensions.md
-        - name: Maintain financial dimension default templates
-          href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
-        - name: Financial dimension sets
-          href: general-ledger/financial-dimension-sets.md
-        - name: Create account structures
-          href: general-ledger/tasks/create-account-structures.md
-        - name: Financial dimensions and posting
-          href: general-ledger/default-dimensions.md
-        - name: Create accrual schemes
-          href: general-ledger/tasks/create-accrual-schemes.md
-        - name: Financial consolidations and currency translation
-          items:
-          - name: Financial consolidations and currency translation overview 
-            href: general-ledger/financial-consolidations-currency-translation.md
-          - name: Consolidate online
-            href: general-ledger/consolidate-online.md
-          - name: Generate consolidated financial statements
-            href: general-ledger/generating-consolidated-financial-statements.md
-          - name: Import subsidiary data from files
-            href: general-ledger/import-subsidiary-data-from-files.md
-          - name: Export subsidiary data to a file
-            href: general-ledger/export-subsidiary-data-to-file.md
-          - name: Consolidate with Import - Format
-            href: general-ledger/consolidate-with-import-format.md
-          - name: Prepare a legal entity for use in the consolidation process
-            href: general-ledger/prepare-company-for-consolidation.md
-          - name: Set up a subsidiary legal entity for consolidation
-            href: general-ledger/set-up-subsidiary-company-for-consolidation.md
-        - name: Create consolidation groups and additional consolidation account
-          href: general-ledger/tasks/create-consolidation-groups.md
-        - name: Main account types
-          href: general-ledger/main-account-types.md
-        - name: Create a main account
-          href: general-ledger/tasks/create-main-account.md
         - name: Plan your chart of accounts
           href: general-ledger/plan-chart-of-accounts.md
-        - name: Plan your local chart of accounts
-          href: general-ledger/plan-local-chart-of-accounts.md
-        - name: Settle transactions between ledger accounts
-          href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
-        - name: Set up a ledger account alias
-          href: general-ledger/tasks/set-up-ledger-account-alias.md
-        - name: Set up main account categories
-          href: general-ledger/tasks/set-up-main-account-categories.md
-        - name: Accounting source explorer
-          href: accounts-payable/accounting-source-explorer.md
-        - name: Accounting distributions
-          href: accounts-payable/accounting-distributions.md
+        - name: Main accounts
+          items:
+          - name: Main account types
+            href: general-ledger/main-account-types.md
+          - name: Set up main account categories
+            href: general-ledger/tasks/set-up-main-account-categories.md
+          - name: Set up a ledger account alias
+            href: general-ledger/tasks/set-up-ledger-account-alias.md
+          - name: Create a main account
+            href: general-ledger/tasks/create-main-account.md
+          - name: Allocation terms
+            href: general-ledger/main-account-allocation-terms.md
+        - name: Financial dimensions 
+          items:
+          - name: Financial dimensions
+            href: general-ledger/financial-dimensions.md
+          - name: Define financial dimensions
+            href: general-ledger/tasks/define-financial-dimensions.md
+          - name: Account and dimension combinations
+            href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+          - name: Financial dimension sets
+            href: general-ledger/financial-dimension-sets.md
+          - name: Maintain financial dimension default templates
+            href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+          - name: Financial dimensions and posting
+            href: general-ledger/default-dimensions.md
+          - name: Configure account structures
+            href: general-ledger/configure-account-structures.md
+          - name: Create account structures
+            href: general-ledger/tasks/create-account-structures.md
+          - name: Create and assign advanced rule structures
+            href: general-ledger/tasks/create-assign-advanced-rule-structures.md
+          - name: How do I set up balancing financial dimensions?
+            href: general-ledger/set-up-balance-dimensions.md
+      - name: Setup
+        items:
         - name: Process allocations
           href: general-ledger/process-allocations.md
-        - name: Allocation terms
-          href: general-ledger/main-account-allocation-terms.md
-        - name: Financial dimensions
-          href: general-ledger/financial-dimensions.md
-        - name: Consolidation account groups and additional consolidation accounts
-          href: budgeting/consolidation-account-groups-consolidation-accounts.md
-        - name: Consolidation and elimination overview
-          href: budgeting/consolidation-elimination-overview.md
-        - name: Fiscal calendars, fiscal years, and periods
-          href: budgeting/fiscal-calendars-fiscal-years-periods.md
-        - name: Configure account structures
-          href: general-ledger/configure-account-structures.md
-        - name: Dual currency
-          href: general-ledger/dual-currency.md
-      - name: Journals and ledgers
+        - name: Configure the ledger
+          items: 
+          - name: Fiscal calendars, fiscal years, and periods
+            href: budgeting/fiscal-calendars-fiscal-years-periods.md
+          - name: Configure ledgers
+            href: general-ledger/configure-ledger.md
+          - name: Change the accounting or reporting currency
+            href: general-ledger/add-change-acctg-rprtg-crrncy.md
+          - name: Change or reassign a ledger calendar
+            href: general-ledger/change-mdfy-clndr-to-ledger.md
+        - name: Intercompany and balancing dimensions
+          items:
+          - name: Balanced journals for interunit accounting
+            href: general-ledger/example-balanced-journals-interunit-accounting.md
+          - name: Intercompany accounting setup
+            href: general-ledger/intercompany-accounting-setup.md
+          - name: How do I set up balancing financial dimensions?
+            href: general-ledger/set-up-balance-dimensions.md
+        - name: Journal and posting defaults
+          items:
+          - name: Set up default descriptions for automatic posting 
+            href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
+          - name: Accruals overview
+            href: general-ledger/accruals-overview.md
+          - name: Create accrual schemes
+            href: general-ledger/tasks/create-accrual-schemes.md
+          - name: Ledger journal types
+            href: general-ledger/ledger-journal-types.md
+          - name: Create advanced rules for journals
+            href: general-ledger/tasks/create-advanced-rules-journals.md
+          - name: Add lookup values for financial dimensions to Excel templates
+            href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
+          - name: Posting definitions
+            href: general-ledger/posting-definitions.md
+          - name: Posting definition examples
+            href: general-ledger/example-posting-definitions.md
+        - name: Currency
+          items:
+          - name: Import currency exchange rates
+            href: general-ledger/import-currency-exchange-rates.md
+          - name: Dual currency
+            href: general-ledger/dual-currency.md
+        - name: Allocation rules
+          items:
+          - name: Ledger allocation rules
+            href: general-ledger/ledger-allocation-rules.md
+          - name: Process ledger allocation journal
+            href: general-ledger/tasks/process-ledger-allocation-journal.md
+      - name: Journals and source documents
         items:
-        - name: General journal processing
-          href: general-ledger/general-journal-processing.md
-        - name: Post periodic journals
-          href: general-ledger/tasks/post-periodic-journals.md
-        - name: Reverse journal posting
-          href: general-ledger/reverse-journal-posting.md         
-        - name: Process ledger allocation journal
-          href: general-ledger/tasks/process-ledger-allocation-journal.md
-        - name: Intercompany accounting setup
-          href: general-ledger/intercompany-accounting-setup.md
-        - name: Ledger allocation rules
-          href: general-ledger/ledger-allocation-rules.md
-        - name: Create advanced rules for journals
-          href: general-ledger/tasks/create-advanced-rules-journals.md
-        - name: Create and assign advanced rule structures
-          href: general-ledger/tasks/create-assign-advanced-rule-structures.md
-        - name: Ledger journal types
-          href: general-ledger/ledger-journal-types.md
-        - name: Configure ledgers
-          href: general-ledger/configure-ledger.md
-        - name: Create and validate journals
-          href: general-ledger/tasks/create-validate-journals.md
-        - name: View journal entries or transactions
-          href: general-ledger/tasks/view-journal-entries-or-transactions.md
-        - name: View a related intercompany voucher from a journal
-          href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
-        - name: Create a journal entry using a template
-          href: general-ledger/tasks/create-journal-entry-template.md
-        - name: Create ledger accrual transactions
-          href: general-ledger/tasks/create-ledger-accrual-transactions.md
-        - name: Subledger  transfer to the General ledger
-          href: general-ledger/subledger-transfer.md
-        - name: Publish journal lines and documents from Excel
-          href: general-ledger/open-lines-excel-journals-documents.md
+        - name: Journals
+          items:
+          - name: General journal processing
+            href: general-ledger/general-journal-processing.md
+          - name: Post periodic journals
+            href: general-ledger/tasks/post-periodic-journals.md
+          - name: Create and validate journals
+            href: general-ledger/tasks/create-validate-journals.md
+          - name: Journal posting failure due to imbalance
+            href: general-ledger/posting-fail-imbalance.md
+          - name: Reverse journal posting
+            href: general-ledger/reverse-journal-posting.md         
+          - name: Why can't I reverse this transaction?
+            href: general-ledger/cant-reverse-transctns.md
+          - name: Create a journal entry using a template
+            href: general-ledger/tasks/create-journal-entry-template.md
+          - name: Process ledger allocation journal
+            href: general-ledger/tasks/process-ledger-allocation-journal.md
+          - name: View journal entries or transactions
+            href: general-ledger/tasks/view-journal-entries-or-transactions.md
+          - name: View a related intercompany voucher from a journal
+            href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
+          - name: Publish journal lines and documents from Excel
+            href: general-ledger/open-lines-excel-journals-documents.md
+          - name: Create ledger accrual transactions
+            href: general-ledger/tasks/create-ledger-accrual-transactions.md
+          - name: One voucher
+            href: general-ledger/one-voucher.md
+          - name: One voucher FAQ
+            href: general-ledger/one-voucher-faq.md
+        - name: Source documents
+          items:
+          - name: Accounting distributions
+            href: accounts-payable/accounting-distributions.md
+          - name: Subledger  transfer to the General ledger
+            href: general-ledger/subledger-transfer.md
+          - name: Accounting source explorer
+            href: accounts-payable/accounting-source-explorer.md
+      - name: Reports and inquiries
+        items:
         - name: View journal entries and transactions
           href: general-ledger/view-journal-entries-transactions.md
         - name: Trial balance with transactional detail report
-          href: public-sector/general-ledger-public-sector-trial-balance.md          
-        - name: Journalize posted journal entries
-          href: general-ledger/tasks/journalize-posted-journal-entries.md
-        - name: Currency revaluation in a consolidation company
-          href: general-ledger/currency-revaluation-consolidation-company.md
-        - name: Foreign currency revaluation for General ledger
-          href: general-ledger/foreign-currency-revaluation-general-ledger.md
-        - name: Import currency exchange rates
-          href: general-ledger/import-currency-exchange-rates.md
-        - name: One voucher
-          href: general-ledger/one-voucher.md
-        - name: One voucher FAQ
-          href: general-ledger/one-voucher-faq.md
-        - name: Ledger settlements
-          href: general-ledger/ledger-settlements.md
+          href: public-sector/general-ledger-public-sector-trial-balance.md      
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
@@ -1048,80 +1050,48 @@
           href: general-ledger/tasks/mass-financial-period-close.md
         - name: Year-end activities FAQ
           href: general-ledger/faq-year-end-activities.md
-      - name: Sales tax
+        - name: Ledger settlements
+          href: general-ledger/ledger-settlements.md
+        - name: Awareness between ledger settlement and year-end close
+          href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+        - name: Foreign currency revaluation for General ledger
+          href: general-ledger/foreign-currency-revaluation-general-ledger.md
+        - name: General ledger account balances
+          href: general-ledger/general-ledger-account-balances.md
+        - name: Process ledger allocation journal
+          href: general-ledger/tasks/process-ledger-allocation-journal.md
+        - name: Ledger allocation rules
+          href: general-ledger/ledger-allocation-rules.md
+        - name: Journalize posted journal entries
+          href: general-ledger/tasks/journalize-posted-journal-entries.md
+      - name: Consolidations and eliminations
         items:
-        - name: Sales tax overview
-          href: general-ledger/indirect-taxes-overview.md
-        - name: Sales tax rates based on the marginal base and calculation methods
-          href: general-ledger/marginal-base-field.md
-        - name: Sales tax payments and rounding rules
-          href: general-ledger/round-sales-tax-payments.md
-        - name: Sales tax calculation methods in the Origin field
-          href: general-ledger/sales-tax-calculation-methods-origin-field.md
-        - name: Whole amount and interval calculation options for sales tax codes
-          href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
-        - name: Sales tax calculation on general journal lines
-          href: general-ledger/sales-tax-calculation-on-general-journal.md          
-        - name: Calculate and adjust sales tax on a vendor invoice
-          href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-        - name: Enable delayed tax calculation on journal
-          href: general-ledger/enable-delayed-tax-calculation.md         
-        - name: Create a sales tax payment
-          href: general-ledger/tasks/create-sales-tax-payment.md
-        - name: Tax settlement rounding based on customized currency decimal places
-          href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
-        - name: Create sales tax transactions on documents
-          href: general-ledger/tasks/create-sales-tax-transactions-documents.md
-        - name: Set up ledger posting groups for sales tax
-          href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-        - name: Set up sales tax authorities
-          href: general-ledger/tasks/set-up-sales-tax-authorities.md
-        - name: Set up sales tax codes
-          href: general-ledger/tasks/set-up-sales-tax-codes.md
-        - name: Set up sales tax groups and item sales tax groups
-          href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-        - name: Set up sales tax reporting codes
-          href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-        - name: Dual currency support for sales tax
-          href: general-ledger/dual-currency-for-tax.md          
-        - name: Sales tax specification by ledger transaction report
-          href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-        - name: Set up sales tax settlement periods
-          href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-        - name: View posted sales tax transactions
-          href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
-        - name: Print the Sales tax payment by code report
-          href: general-ledger/print-sales-tax-payment-by-code-report.md
-        - name: Sales tax troubleshooting
-          items:
-          - name: Tax isn't calculated or the tax amount is zero
-            href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
-          - name: Tax calculation performance affects transactions
-            href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
-          - name: Incorrect field value in TaxTrans
-            href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
-          - name: TaxTrans record isn't generated
-            href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
-          - name: Tax is posted to the wrong ledger account in the voucher
-            href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
-          - name: Voucher isn't generated
-            href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
-      - name: Withholding tax
-        items:
-        - name: Set up withholding tax
-          href: general-ledger/tasks/set-up-withholding-tax.md
-        - name: Global withholding tax
-          items: 
-          - name: Global withholding tax overview
-            href: general-ledger/global-withholding-tax-overview.md
-          - name: Set up global withholding tax
-            href: general-ledger/set-up-global-withholding-tax.md
-          - name: Withholding tax in purchase transactions
-            href: general-ledger/withholding-tax-in-purchase-transactions.md
-          - name: Withholding tax in sales transactions
-            href: general-ledger/withholding-tax-in-sales-transactions.md
-          - name: Create a withholding tax payment
-            href: general-ledger/create-a-withholding-tax-payment.md
+        - name: Consolidation and elimination overview
+          href: budgeting/consolidation-elimination-overview.md
+        - name: Financial consolidations and currency translation overview
+          href: general-ledger/financial-consolidations-currency-translation.md
+        - name: Consolidation account groups and additional consolidation accounts
+          href: budgeting/consolidation-account-groups-consolidation-accounts.md
+        - name: Create consolidation groups and additional consolidation account
+          href: general-ledger/tasks/create-consolidation-groups.md
+        - name: Prepare a legal entity for use in the consolidation process
+          href: general-ledger/prepare-company-for-consolidation.md
+        - name: Set up a subsidiary legal entity for consolidation
+          href: general-ledger/set-up-subsidiary-company-for-consolidation.md
+        - name: Consolidate online
+          href: general-ledger/consolidate-online.md
+        - name: Import subsidiary data from files
+          href: general-ledger/import-subsidiary-data-from-files.md
+        - name: Export subsidiary data to a file
+          href: general-ledger/export-subsidiary-data-to-file.md
+        - name: Consolidate with Import - Format
+          href: general-ledger/consolidate-with-import-format.md
+        - name: Elimination rules
+          href: general-ledger/elimination-rules.md
+        - name: Generate consolidated financial statements
+          href: general-ledger/generating-consolidated-financial-statements.md
+        - name: Currency revaluation in a consolidation company
+          href: general-ledger/currency-revaluation-consolidation-company.md
       - name: Audit workbench
         items:
         - name: Audit policy rules
@@ -1536,6 +1506,82 @@
               href: localizations/customize-tax-configurations-master-data-lookup.md
           - name: Tax Calculation FAQ
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
+      - name: Tax
+        items:
+        - name: Sales tax
+          items:
+          - name: Sales tax overview
+            href: general-ledger/indirect-taxes-overview.md
+          - name: Sales tax rates based on the marginal base and calculation methods
+            href: general-ledger/marginal-base-field.md
+          - name: Sales tax payments and rounding rules
+            href: general-ledger/round-sales-tax-payments.md
+          - name: Sales tax calculation methods in the Origin field
+            href: general-ledger/sales-tax-calculation-methods-origin-field.md
+          - name: Whole amount and interval calculation options for sales tax codes
+            href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+          - name: Sales tax calculation on general journal lines
+            href: general-ledger/sales-tax-calculation-on-general-journal.md          
+          - name: Calculate and adjust sales tax on a vendor invoice
+            href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+          - name: Enable delayed tax calculation on journal
+            href: general-ledger/enable-delayed-tax-calculation.md         
+          - name: Create a sales tax payment
+            href: general-ledger/tasks/create-sales-tax-payment.md
+          - name: Tax settlement rounding based on customized currency decimal places
+            href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
+          - name: Create sales tax transactions on documents
+            href: general-ledger/tasks/create-sales-tax-transactions-documents.md
+          - name: Set up ledger posting groups for sales tax
+            href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+          - name: Set up sales tax authorities
+            href: general-ledger/tasks/set-up-sales-tax-authorities.md
+          - name: Set up sales tax codes
+            href: general-ledger/tasks/set-up-sales-tax-codes.md
+          - name: Set up sales tax groups and item sales tax groups
+            href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+          - name: Set up sales tax reporting codes
+            href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+          - name: Dual currency support for sales tax
+            href: general-ledger/dual-currency-for-tax.md          
+          - name: Sales tax specification by ledger transaction report
+            href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+          - name: Set up sales tax settlement periods
+            href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+          - name: View posted sales tax transactions
+            href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
+          - name: Print the Sales tax payment by code report
+            href: general-ledger/print-sales-tax-payment-by-code-report.md
+          - name: Sales tax troubleshooting
+            items:
+            - name: Tax isn't calculated or the tax amount is zero
+              href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+            - name: Tax calculation performance affects transactions
+              href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+            - name: Incorrect field value in TaxTrans
+              href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+            - name: TaxTrans record isn't generated
+              href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+            - name: Tax is posted to the wrong ledger account in the voucher
+              href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+            - name: Voucher isn't generated
+              href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
+        - name: Withholding tax
+          items:
+          - name: Set up withholding tax
+            href: general-ledger/tasks/set-up-withholding-tax.md
+          - name: Global withholding tax
+            items: 
+            - name: Global withholding tax overview
+              href: general-ledger/global-withholding-tax-overview.md
+            - name: Set up global withholding tax
+              href: general-ledger/set-up-global-withholding-tax.md
+            - name: Withholding tax in purchase transactions
+              href: general-ledger/withholding-tax-in-purchase-transactions.md
+            - name: Withholding tax in sales transactions
+              href: general-ledger/withholding-tax-in-sales-transactions.md
+            - name: Create a withholding tax payment
+              href: general-ledger/create-a-withholding-tax-payment.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Search for regulatory updates
@@ -3104,6 +3150,10 @@
             href: localizations/rus-turnover-balance-statement-reports.md
           - name: Account activity reports
             href: localizations/rus-account-activity-reports.md
+          - name: Federal Accounting Standard 27-2021
+            href: localizations/emea-rus-federal-accounting-standard-27-2021.md
+          - name: Enable Electronic reporting destinations to store Russian accounting documents
+            href: localizations/rus-enable-er-destinations-ru-accounting-documents.md
         - name: Advance holders
           items:
           - name: Russia advance holders overview
@@ -3206,6 +3256,9 @@
               href: localizations/rus-not-valuable-assets.md
             - name: Working clothes/special rigging accounting (Russia)
               href: localizations/rus-working-clothes-instruments-accounting.md
+          - name: Integration of fixed assets with Asset management module
+            href: localizations/rus-integration-eam-with-fixed-asset.md
+
         - name: Accounts payable and receivable
           items:
           - name: Credit note corrections (Russia)
@@ -3486,170 +3539,6 @@
           href: localizations/noam-usa-form-1099-public-sector.md
         - name: Set up vendors for 1099 reporting
           href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
-    - name: Human resources
-      items:
-      - name: Human resources overview
-        href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-      - name: Infrastructure release 10.0.25
-        href: ../human-resources/hr-infrastructure.md?toc=/dynamics365/finance/toc.json
-      - name: Set up Human resources
-        items:
-        - name: Configure Human resources parameters
-          href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-        - name: Configure Human resources shared parameters
-          href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-        - name: Set up Human resource workflows
-          href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-        - name: Understand Date and Time fields
-          href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
-      - name: Manage personnel
-        items:
-        - name: Organize your workforce
-          href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-        - name: Set up the components of a job
-          href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
-        - name: Define departments
-          href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
-        - name: Add a department to a hierarchy
-          href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-        - name: Define jobs
-          href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
-        - name: Create a working times calendar
-          href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
-        - name: Personnel actions FAQ
-          href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-        - name: Use workflows to manage employee information
-          href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-        - name: Modify reporting relationships for a position
-          href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
-        - name: Enter worker information
-          href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
-        - name: Loan items to workers
-          href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
-        - name: Create loan items
-          href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
-        - name: Manage loan items
-          href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
-        - name: Develop a succession plan
-          href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
-        - name: Enter project timesheets
-          href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
-        - name: Mass hire projects
-          href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
-        - name: Create a mass hire project
-          href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
-        - name: Set up positions
-          href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
-        - name: Set up injury and illness information
-          href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-        - name: Maintain employee injury and illness information
-          href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-      - name: Recruit candidates
-        items:
-        - name: Manage recruiting processes
-          href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-        - name: Mass hire projects
-          href: ../human-resources/hr-personnel-mass-hire-projects.md
-        - name: Create mass hire projects
-          href: ../human-resources/hr-personnel-create-mass-hire-project.md
-        - name: Manually enter applicant and application data
-          href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-        - name: Develop and open job requisitions
-          href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-        - name: Set up positions
-          href: ../human-resources/hr-personnel-set-up-positions.md
-        - name: Hire candidates through recruitment
-          href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-        - name: Hire an existing employees through recruitment
-          href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-        - name: Identify and deploy candidate selection tools
-          href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-      - name: Set up compensation plans
-        items:
-        - name: Compensation plans overview
-          href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
-        - name: Set up compensation grids
-          href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
-        - name: Develop a compensation structure and plan
-          href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
-        - name: Create fixed compensation plans
-          href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
-        - name: Create variable compensation plans
-          href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
-        - name: Enroll employees in a fixed compensation plan
-          href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
-        - name: Enroll employees in a variable compensation plan
-          href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
-        - name: Define compensation process and calculate results
-          href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
-        - name: Process compensation plans
-          href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
-      - name: Manage benefits
-        items:
-        - name: Define and manage a benefits program
-          href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
-        - name: Benefit eligibility policies
-          href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
-        - name: Benefit eligibility process
-          href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
-        - name: Define benefit eligibility rules and policies
-          href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
-        - name: Deliver an employee benefits program
-          href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
-        - name: Create new benefits
-          href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
-        - name: Enroll workers in benefits
-          href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
-        - name: Manage benefit expiration dates
-          href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
-        - name: Generate ACA reports
-          href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
-      - name: Develop employees
-        items:
-        - name: Performance management overview
-          href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
-        - name: Align workforce skills
-          href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
-        - name: Add to your performance journal
-          href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
-        - name: Create a goal
-          href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
-        - name: Create a performance review
-          href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
-      - name: Create courses
-        items:
-        - name: Set up training courses
-          href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
-        - name: Questionnaires overview
-          href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
-        - name: Design questionnaires
-          href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
-        - name: Distribute and schedule questionnaires
-          href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
-        - name: Distribute questionnaires using scheduling
-          href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
-        - name: View questionnaire results
-          href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-        - name: Analyze questionnaire results
-          href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-        - name: Create an open-ended question
-          href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
-        - name: Create a closed-ended question
-          href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
-        - name: Create a dependent question
-          href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
-      - name: Workplace safety and compliance (United States)
-        items:
-        - name: Form I-9 verification
-          href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
-        - name: Verify employment eligibility using Form I-9
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
-        - name: Set up Form I-9 document types
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-        - name: Comply with the Americans with Disabilities Act
-          href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
-        - name: Manage worker accommodations
-          href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI
@@ -4005,6 +3894,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
             - name: GetEnumValueByName
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
+            - name: GetLabelText
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?toc=/dynamics365/finance/toc.json
             - name: GuidValue
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
             - name: JsonValue
@@ -4191,6 +4082,8 @@
           items:
           - name: Create configurations to import data from an external XML file
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
+          - name: Import data from manually selected files in batch mode
+            href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
         - name: Configure data import in batch mode from SharePoint located files
           href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
         - name: Import files in XML format
@@ -4271,6 +4164,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
             - name: Run reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+          - name: Group records and perform counting and summing by using GROUPBY data sources
+            href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Use the generated output as a data source to perform counting and summing
             items:
             - name: Create formats
@@ -4423,6 +4318,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
           - name: Application update 10.0.23
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
+          - name: Application update 10.0.25
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
@@ -4759,3 +4656,6 @@
     href: ../supply-chain/index.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
+  - name: Dynamics 365 Human Resources
+    href: ../human-resources/index.md
+     

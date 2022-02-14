@@ -2,7 +2,7 @@
 title: System requirements and prerequisites
 description: This topic describes the system requirements and prerequisites that must be in place before you can enable dual-write for Finance and Operations apps.
 author: NHelgren
-ms.date: 10/28/2021
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## What regions are available?
 
@@ -32,6 +32,9 @@ Currently, we support dual-write in the following regions:
 + United Arab Emirates
 + United Kingdom
 + United States
+
+> [!NOTE]
+> There are currently no plans to support any additional regions.
 
 ## Verify requirements and grant access
 

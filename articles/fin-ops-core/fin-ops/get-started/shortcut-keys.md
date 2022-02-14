@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 The following keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps .
 
 > [!NOTE]

@@ -19,13 +19,17 @@ ms.reviewer: twheeloc
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Hiring candidate through recruiting
 
 [!include [banner](../../includes/banner.md)]
+
+> [!IMPORTANT]
+> The functionality noted in this topic is currently available for Human Resources customers on the Finance infrastructure.  
+
 
 This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. When you hire an applicant through a recruiting project, a new worker record is created, and the applicant's record has a status of **Employed**. The **USMF** demo data company was used to create this procedure.
 

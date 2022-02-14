@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-12-31
 
 # Product identifiers
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [!include [banner](../includes/banner.md)]
 

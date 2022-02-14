@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This topic describes the steps that are required to create a new workflow type. Workflow types are used to create configurations for a workflow.
 
 ## Workflow type checklist

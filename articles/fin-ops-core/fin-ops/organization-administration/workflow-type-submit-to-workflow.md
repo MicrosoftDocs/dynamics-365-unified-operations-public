@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 A workflow is started when the user selects the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the **main** method of a class that you create to activate a workflow. This topic describes how to create a **SubmitToWorkflow** class and use the name of the workflow type to activate the workflow.
 
 You can also activate a workflow by using the workflow configuration ID or the workflow sequence number. The basic procedure is the same. For more information, see [Activating a workflow](/dynamicsax-2012/developer/activating-a-workflow).

@@ -4,7 +4,7 @@
 title: Assign users to security roles
 description: To access Finance and Operations apps, users must be assigned to security roles. 
 author: Peakerbl
-ms.date: 05/06/2020
+ms.date: 02/09/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -23,7 +23,7 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Assign users to security roles
+# Manage users and security roles
 
 [!include [banner](../../includes/banner.md)]
 
@@ -43,10 +43,12 @@ This procedure explains how system administrators can automatically assign users
 10. Review the roles assigned to various users to confirm that the role assignment query was correct. Adjust and re-run if needed.
 
 ## Exclude users from automatic role assignment
+This procedure explains how to exclude users from automatic role assignment.
+
 1. Close the page.
 2. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
 3. In the tree, select 'Accounting supervisor'. Select a role. For this example, select Accounting supervisor.  
-4. In the **Users assigned to role** menu, select **Manually assign / exclude users**.
+4. In the **Users assigned to role** menu, select **Manually assign/exclude users**.
 5. In the **Assign users to or exclude users from role** list, mark the selected row. Select a user.  
 6. On the **Action pane**, select **Exclude from role**.
 7. Select **Exclude from role** to exclude the selected users from the role. To remove exclusions, select the users that you want to remove exclusions for, and then click **Reset status**. When you remove an exclusion by resetting the user's status, the user's role is assigned automatically. However, the user is not immediately assigned to the role or excluded from the role when you reset the status. Instead, the user is either assigned to the role or removed from the role the next time that the rules for automatic role assignment are run.  
@@ -55,9 +57,22 @@ This procedure explains how system administrators can automatically assign users
 Users who are manually assigned to security roles must also be manually removed by the administrator. These users are not removed from roles by rules for automatic role assignment.
 
 1. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
-2. In the tree, select a role, and in the **Users assigned to role** menu, select **Manually assign / exclude users**.
+2. In the tree, select a role, and in the **Users assigned to role** menu, select **Manually assign/exclude users**.
 4. In the **Assign users to or exclude users from role**, users that have not been assigned the role are listed with the **Assignment mode** set to **None**. Select one or more users that should be assigned the role.
 5. On the **Action pane**, select **Assign to role**. The **Assignment mode** is updated to **Manual** and the users now have a new role assigned.
 
+## Manually remove users from roles
+Users who are manually assigned to security roles must also be manually removed by the administrator. These users are not removed from roles by rules for automatic role assignment.
+
+1. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
+2. To remove one user, follow these steps:
+   1. In the tree, select a role. 
+   2. In the **Users assigned to role** area, select the user that should be removed.
+   3. Select **Remove** and the user is removed from the role.
+3. To remove multiple users, follow these steps:
+   1. In the tree, select a role. 
+   2. In the **Users assigned to role** area, select **Manually assign/exclude users**.
+   3. In the **Assign users to or exclude users from role** page, users that have not been assigned to the role have **None** in the **Assignment mode** column. Select the users that should be excluded from the role.
+   4. On the **Action pane**, select **Exclude from role**. The **Assignment mode** column is now updated to **Manual** and the users are now excluded from the role.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

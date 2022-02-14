@@ -74,4 +74,4 @@ Data events for update operations are inherently more expensive to process than 
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+

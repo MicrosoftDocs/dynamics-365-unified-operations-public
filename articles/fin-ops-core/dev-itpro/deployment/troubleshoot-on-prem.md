@@ -4,7 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 01/24/2022
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -1350,17 +1350,6 @@ Here are some examples of errors:
         > 
         > **DB sync failed.**
 
-## A "No subscription found in the context" error occurs when you run Add-CertToServicePrincipal
-
-Recent versions of Windows PowerShell might cause a "No subscription found in the context" error. To resolve this issue, install and load an older version of Windows PowerShell, such as version 5.7.0.
-
-```powershell
-# Install version 5.7.0 of Azure PowerShell
-Install-Module -Name AzureRM -RequiredVersion 5.7.0
-
-# Load version 5.7.0 of Azure PowerShell
-Import-Module -Name AzureRM -RequiredVersion 5.7.0
-```
 ## Service Fabric Explorer warnings occur after you restart a machine
 
 **Error:**
@@ -1667,5 +1656,22 @@ Newtonsoft.Json.JsonReaderException: Unexpected character encountered while pars
 **Reason:** The configuration generation method was changed in version 10.0.21.
 
 **Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommended that you upgrade to the latest version available.
+
+## Add-CertToServicePrincipal fails
+
+**Issue:** The execution ends unexpectedly with the following error.
+
+```stacktrace
+Where-Object : Cannot convert null to type "System.DateTime".
+At C:\InfrastructureScripts\Scripts\Add-CertToServicePrincipal.ps1:93 char:44
++ ... edentials | Where-Object {[datetime]$_.EndDate -eq $localAgentCertEnd ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   + CategoryInfo          : InvalidArgument: (:) [Where-Object], RuntimeException
+   + FullyQualifiedErrorId : nullToObjectInvalidCast,Microsoft.PowerShell.Commands.WhereObjectCommand
+```
+
+**Reason:** Version 7.0 of the Azure PowerShell module has introduced breaking changes that are not compatible with the scripts.
+
+**Resolution:** Downgrade the version of the Azure PowerShell module to version 6.6.0.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

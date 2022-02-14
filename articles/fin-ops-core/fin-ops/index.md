@@ -86,11 +86,13 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Human resources</a></h3>
+<p><a href="../../human-resources/hr-employee-manager-self-service-overview.md">Employee self service</a></p>
+<p><a href="../../human-resources/hr-personnel-departments-jobs-positions.md">Personnel management</a></p>
+<p><a href="../../human-resources/hr-leave-and-absence-overview.md">Leave and absence</a></p>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Benefits</a></p>
-<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Employee development and training</a></p>
-<p><a href="../../human-resources/hr-learning-questionnaires.md">Questionnaires</a></p>
-<p><a href="hr/manage-recruiting-process.md">Recruiting</a></p>
-<p><a href="hr/localizations/noam-usa-payroll.md">US payroll</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Employee development</a></p>
+<p><a href="../../human-resources/hr-learning-courses.md">Learning</a></p>
+ <p><a href="hr/localizations/noam-usa-payroll.md">US payroll</a></p>
 
 </td>
 <td>
@@ -136,11 +138,6 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <p><a href="../../commerce/define-maintain-retail-channels.md">Channel setup and management</p>
 <p><a href="../../commerce/retail-peripherals-overview.md">MPOS and Cloud POS</p>
 <p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Commerce developer and administration</p>
-
-<h4><a href="/dynamics365/human-resources/">Dynamics 365 Human Resources</a></h4>
-<p><a href="../../human-resources/hr-admin-overview.md">Administrator Guide</a></p>
-<p><a href="../../human-resources/hr-developer-overview.md">Developer Guide</a></p>
-<p><a href="../../human-resources/hr-hrpro-overview.md">User Guide</a></p>
 
 
 </td>

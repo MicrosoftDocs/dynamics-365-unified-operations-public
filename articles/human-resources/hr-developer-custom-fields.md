@@ -29,9 +29,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Custom fields
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 You can add custom fields to pages in Dynamics 365 Human Resources. For more information about creating custom fields, see [Create and work with custom fields](/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 

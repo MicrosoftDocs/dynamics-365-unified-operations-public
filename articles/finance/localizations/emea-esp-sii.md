@@ -630,6 +630,9 @@ After the **Support multiple VAT registration numbers** feature is enabled, prov
 3. Define the VAT registration number of the company from the name that you will be reporting to SII system of Spain in the **Company Tax Id** field in the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
 4. Specify the **Transfer order history** data source on **Records to include** FastTab of the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
 
+> [!NOTE]
+> When the **Support multiple VAT registration numbers** and **Sales tax declaration for multiple VAT registrations** features are enabled, the SII system of Spain collects the value in the **NombreRazon** field from the **Name or description** field on the **Manage addresses** page instead of from the name of the legal entity.
+
 ## Use EM functionality to report to the SII system
 
 EM functionality automatically runs actions that are included in the processing (**SII** or **CollectionInCash**), based on the status of messages and message items.
