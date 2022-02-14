@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 Most actions that users take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
 
-The following table provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can invoked, and whether they are available when the POS is in offline mode.
+The following table provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can be invoked, and whether they are available when the POS is in offline mode.
 
-Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are either locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
+Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
 
 The following columns specify where the operations can be invoked:
 
@@ -107,6 +107,8 @@ The following columns specify where the operations can be invoked:
 | 804 | Inbound operation | Access the features of inbound store inventory management. | Yes | No | Yes | No| No |
 | 517 | Income accounts | Record money that is put into the cash drawer for a reason other than a sale. | Yes | Yes | Yes | Yes | No |
 | 801 | Inventory lookup | Look up available, on order, and available-to-promise (ATP) quantities for the current store and other available locations. | Yes | Yes | Yes | No | No |
+| 806 | Inventory adjustment | Adjust inventory in or out of store warehouse using adjustment or movement journal. | Yes | Yes | Yes | No | No |
+| 807 | Inventory movement | Move items from one inventory location to another within a store warehouse. | Yes | Yes | Yes | No | No |
 | 122 | Invoice comment | Enter a comment about the current transaction. | Yes | Yes | No | Yes | No |
 | 511 | Issue credit memo | Issue a credit memo to provide a voucher instead of a refund. | Yes | Yes | No | No | No |
 | 512 | Issue gift card | Issue a new gift card for the specified amount. | Yes | Yes | No | No | No |
