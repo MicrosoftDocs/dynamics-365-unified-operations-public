@@ -74,6 +74,7 @@ This topic explains how to create free text invoices. For the procedure, use the
 
     * You can change the timing of invoice printing. Select **Current** to print each invoice as it's updated. Select **After** to print after all invoices have been updated.
     * To change how the customer's credit limit is verified before the invoice is posted, change the value in the **Credit limit type** field.
+    * You can configure the process of stopping free text invoice posting when an error occurs on the **Updates** tab of the **Accounts receivable parameters** page (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** for the **Stop posting of free text invoices on first error** parameter to stop the posting of free text invoices when an error occurs. If posting in a batch, an error will stop the posting process and the batch status will be set to Error.  If this option is not selected, the posting process will skip an invoice with a posting error and will continue to post additional invoices. If posting in a batch, a posting error will not prevent other invoices from being posted. The batch status will be Ended. A detailed posting process report will be available for review in batch job history.
     * To print the invoice, set the option to **Yes**.
     * To post the invoice, set the option to **Yes**. You can print the invoice without posting it.
 
