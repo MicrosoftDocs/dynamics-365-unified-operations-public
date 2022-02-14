@@ -6,7 +6,8 @@ description: This topic lists the Commerce capabilities available in on-premises
 author: aamirallaqaband
 ms.date: 01/31/2022
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
