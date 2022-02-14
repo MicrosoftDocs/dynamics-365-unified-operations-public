@@ -89,5 +89,10 @@ You can create a free text invoice from a template. When you select **New from t
 
 A new free text invoice is created, and you can edit the values as you require.
 
+## Resetting the workflow status for free text invoices from Unrecoverable to Draft
+A workflow instance that has stopped because of an unrecoverable error will have a workflow status of **Unrecoverable**. When the status of a customer free text invoice workflow is **Unrecoverable**, you can reset it to **Draft** by selecting **Recall** from the workflow actions. You can then edit the customer free text invoice. This feature is available if the **Resetting the workflow status for free text invoices from Unrecoverable to Draft** parameter on the **Feature management** page is turned on.
+
+You can use the **Workflow history** page to reset the workflow status to **Draft**. You can open this page from **Free text invoice** or from the **Common > Inquires > Workflow** navigation. To reset the workflow status to **Draft**, select **Recall**. You can also reset the workflow status to **Draft** by selecting the **Recall** action on the **Free text invoice** or **All free text invoices** page. After the workflow status is reset to **Draft**, it becomes available for editing on the **Free text invoice** page.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
