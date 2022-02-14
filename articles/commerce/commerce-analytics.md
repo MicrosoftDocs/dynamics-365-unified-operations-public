@@ -360,6 +360,9 @@ To install Commerce analytics (Preview), you must have permissions to create res
 
 ### <a name="enableExportToDataLake"></a>Enable and configure Export to Data Lake
 
+> [!IMPORTANT]
+> While configuring the **Export to Data Lake** feature, please ensure that you do not enable **real-time data changes**. This feature is in preview and is currently not supported by Commerce Analytics. If you enable this feature, Commerce Analytics will be unable to process your data in the lake and you will not be able to see any data in most of your Power BI reports. Ensure that you **uncheck** the check box for real-time data changes on the setup add-in page for Export to Data Lake add-in.
+
 Commerce analytics (Preview) relies on the Export to Data Lake feature to export Commerce HQ data to Data Lake and keep the data fresh. Before you configure Commerce analytics (Preview), enable and configure Export to Data Lake by following the steps in [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
 While you're configuring Export to Data Lake, make a note of the following information, because you will have to enter it later:
