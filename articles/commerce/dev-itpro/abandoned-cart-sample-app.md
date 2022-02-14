@@ -2,7 +2,7 @@
 # required metadata
 
 title: Detect abandoned carts and send notifications to customers
-description: This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
+description: This topic discusses the abandoned cart connector sample app, and how to set it up to retrieve abandoned carts from retail server and send email notifications to customers about their abandoned carts.
 author: stuharg
 ms.date: 02/08/2022
 ms.topic: article
@@ -24,7 +24,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # Detect abandoned carts and send notifications to customers
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
 
@@ -101,7 +101,7 @@ The abandoned cart connector app uses Azure Key vault to store the names and sec
 
 The abandoned cart connector sample code makes use of Azure Default Credentials to access Azure Key Vault. Please provide **List** and **Read** permissions to the identity you plan to use for accessing Key Vault. 
 
-[Read more about Azure default credentials]([/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet ](https://docs.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet)) 
+[Read more about Azure default credentials]([/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet ](/dotnet/api/azure.identity.defaultazurecredential)) 
 
 
 
@@ -109,9 +109,9 @@ The abandoned cart connector sample code makes use of Azure Default Credentials 
 
 Follow instructions here to create application id for abandoned cart sample code. [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## Whitelist the Abandoned cart connector app ID against the Retail Server API
+## Add the Abandoned cart connector app ID to the allow list for the Retail Server API
 
-Instructions for whitelisting an application ID in Azure can be found at https://community.dynamics.com/ax/b/axforretail/posts/support-for-service-to-service-authentication-in-retail-server. 
+Instructions for adding an application ID to the allow list in Azure can be found at https://community.dynamics.com/ax/b/axforretail/posts/support-for-service-to-service-authentication-in-retail-server. 
 
 ## Configure the abandoned cart connector
 
@@ -145,7 +145,7 @@ The configuration file for the Abandoned Cart connector sample app is at the roo
 
 **AzureCosmosOptions**
 
-The abandoned cart retrieval job status, cart IDs and modified timestamps are stored in Azure Cosmos. By default, this config file is configured to point to the local emulator instance of Azure Cosmos. You will need to configure these settings to interact with the Cosmos instance in your Azure subscription when deploying the connector to production. For local or sandbox testing, you can use the [Azure Cosmos Emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator)
+The abandoned cart retrieval job status, cart IDs and modified timestamps are stored in Azure Cosmos. By default, this config file is configured to point to the local emulator instance of Azure Cosmos. You will need to configure these settings to interact with the Cosmos instance in your Azure subscription when deploying the connector to production. For local or sandbox testing, you can use the [Azure Cosmos Emulator](/azure/cosmos-db/local-emulator)
 
  
 
@@ -189,12 +189,7 @@ If you are using the e-commerce capabilities in Dynamics 365 Commerce, you have 
 | ImageViewPorts/Viewport             |                                                              |
 | ImageViewPorts/imageWidth           |                                                              |
 | imageViewPort/imageHeight           |                                                              |
-| imageViewPort/useForDefaultImageTag | Image to use when  the <picture /> HTML tag isn't supported for a web browser or email  client |
-
-## Additional resources
+| imageViewPort/useForDefaultImageTag | Image to use when  the &lt;picture /&gt; HTML tag isn't supported for a web browser or email  client |
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
