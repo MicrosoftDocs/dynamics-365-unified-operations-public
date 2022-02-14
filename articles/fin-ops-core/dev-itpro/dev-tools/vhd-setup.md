@@ -1,8 +1,8 @@
 ---
-title: Setup the Downloadable VHD for First Use
+title: Setup the downloadable VHD for first use
 description: This topic explains how to update an Azure pipeline to use new NuGet packages.
 author: jorisdg
-ms.date: 02/09/2022
+ms.date: 02/14/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -13,18 +13,19 @@ ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Setup the Downloadable VHD for First Use
+# Setup the downloadable VHD for first use
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This topic applies to the VHD that was released for versions 10.0.24 and newer.
+> This topic applies to the VHD that was released for versions 10.0.24 and later.
 
-Upon first login to the virtual machine, the **Application Object Server** will not be ready for use. A script needs to be run that will create self-signed certificates to be used on the virtual machine, and a customer-provided application registration ID for authentication. After successfully running the script the environment will be ready for use.
+Upon first login to the virtual machine, the **Application Object Server** will not be ready for use. A script needs to be run that will create self-signed certificates to be used on the virtual machine, and a customer-provided application registration ID for authentication. After successfully running the script, the environment will be ready for use.
 
-## Register a New Application in Azure Active Directory
+## Register a new application in Azure Active Directory
 
-To register a new application in **Azure Active Directory**, follow the steps outlined in [Register app or web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app). The new app registration should be for a web application, and two redirect URIs should be added:
+To register a new application in **Azure Active Directory**, follow the steps outlined in [Register app or web API](/azure/active-directory/develop/quickstart-register-app). The new app registration should be for a web application, and two redirect URIs should be added:
+
 - `https://usnconeboxax1aos.cloud.onebox.dynamics.com/`
 - `https://usnconeboxax1aos.cloud.onebox.dynamics.com/oauth/`
 
