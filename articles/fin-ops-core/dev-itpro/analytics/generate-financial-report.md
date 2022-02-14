@@ -46,7 +46,7 @@ As the report generation progresses, the following report queue status indicator
 | Cancelling      | Interim | The reporting is canceled at the user's request. This state results from a user-requested cancellation for a report in the **Queued** or **Processing** state. The system attempts to put the report in the **Canceled** state, unless the system is too far along and must finalize it in another state. |
 | Canceled        | Final | The report is finished processing but didn't complete due to a user-requested stop.            |
 | Completed       | Final | The report is ready for use.                      |
-| Failed          | Final | The report is finished processing but didn't complete due to a user-requested stop. |
+| Failed          | Final | The report finished processing but failed and shouldn't be used. |
 
 By default, the generated report will open in the Web Viewer. The following options are available for generating reports:
 

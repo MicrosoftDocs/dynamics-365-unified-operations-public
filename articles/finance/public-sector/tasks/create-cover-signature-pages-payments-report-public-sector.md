@@ -4,7 +4,7 @@
 title: Create cover and signature pages for a payments report for the public sector
 description: When you create cover and signature pages for a payment report, you can specify what information should appear. 
 author: twheeloc
-ms.date: 08/29/2018
+ms.date: 02/14/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -29,15 +29,15 @@ ms.dyn365.ops.version: Version 7.0.0
 
 When you create cover and signature pages for a payment report, you can specify what information should appear. This includes, for example, the names and titles of the people who should approve the proposed payments. This procedure was created using the PSUS demo company data in the public sector partition.
 
-1. Go to Accounts payable > Payment setup > Cover page for payments report.
-2. Click Edit.
-3. In the Number of signature lines field, select an option.
-4. In the Name field, type a value.
-5. In the Title field, type a value.
-6. Optional: Select the Print name check box to print the signatory's name on the report.
-7. Optional: Select the Print title check box to print the title on the report.
+1. Go to **Accounts payable > Payment setup > Cover page for payments report**.
+2. Click **Edit**.
+3. In the **Number of signature lines** field, select an option.
+4. In the **Name** field, type a value.
+5. In the **Title** field, type a value.
+6. Optional: **Select the Print name** check box to print the signatory's name on the report.
+7. Optional: **Select the Print title** check box to print the title on the report.
     * If needed, add additional names, and select any options that you want.  
-8. Click Save.
+8. Click **Save**.
 
 
 
