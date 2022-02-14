@@ -199,6 +199,17 @@ As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is 
 - 1.6 GHz peak CPU speed per core (Two cores are the minimum.)
 - 15 GB of free space (The channel database can require a large amount of space. The size might even be as much as multiple terabytes.)
 
+## Recommended network exceptions
+
+Often, especially within corporate environments, network related security requires specific exceptions to be noted. In these security-focused networks, the following are the minimum recommended exceptions to add to a network related whitelist:
+
+- *.static.akamaitechnologies.com
+- *.azure.com
+- *.dynamics.com
+- *.microsoft.com
+- *.visualstudio.com
+- *.windows.net
+
 ## Requirements for development on local VMs
 
 For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md#vm-that-is-running-locally).
