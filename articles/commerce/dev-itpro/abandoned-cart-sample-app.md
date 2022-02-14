@@ -192,4 +192,4 @@ If you are using the e-commerce capabilities in Dynamics 365 Commerce, you have 
 | imageViewPort/useForDefaultImageTag | Image to use when  the &lt;picture /&gt; HTML tag isn't supported for a web browser or email  client |
 
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
