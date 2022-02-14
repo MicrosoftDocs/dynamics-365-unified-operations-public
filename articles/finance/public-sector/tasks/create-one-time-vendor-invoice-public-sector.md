@@ -4,7 +4,7 @@
 title: Create a one-time vendor and invoice in the public sector
 description: The vendor record uses values from the default one-time vendor account. 
 author: twheeloc
-ms.date: 08/29/2018
+ms.date: 02/14/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
