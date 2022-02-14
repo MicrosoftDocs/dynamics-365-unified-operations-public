@@ -4,7 +4,7 @@
 title: Create a Globalization feature
 description: This topic explains how to create a Globalization feature.
 author: dkalyuzh
-ms.date: 01/24/2022
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,6 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.custom: 
 ms.author: dkalyuzh
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
