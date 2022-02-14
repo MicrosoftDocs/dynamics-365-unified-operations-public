@@ -4,7 +4,7 @@
 title: Work with the Electronic document receipt log
 description: This topic explains how to work with the Electronic document receipt log.
 author: dkalyuzh
-ms.date: 12/15/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, you 
 To open the log, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 
 > [!NOTE]
-> By default, a filter is set for the **Submission status** value, so that only failed submissions are shown. In-progress and successful submissions aren't shown. However, you can adjust the filter to reflect your expectations.
+> By default, a filter is set for the **Submission status** value, so that only failed receipt submissions are shown. In-progress and successful receipt submissions aren't shown. However, you can adjust the filter to reflect your expectations.
 
 There are three possible submission statuses:
 
