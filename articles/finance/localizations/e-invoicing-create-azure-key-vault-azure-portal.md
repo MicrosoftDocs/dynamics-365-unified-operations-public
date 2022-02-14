@@ -4,7 +4,7 @@
 title: Create an Azure key vault in the Azure portal
 description: This topic explains how to create a Microsoft Azure key vault for Electronic invoicing.
 author: dkalyuzh
-ms.date: 12/15/2021
+ms.date: 02/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,4 +51,4 @@ All the secrets and certificates that are used in the Electronic invoicing servi
     > `New-AzureADServicePrincipal -AppId "ecd93392-c922-4f48-9ddf-10741e4a9b65"`
 
 7. Select **Add**, and then select **Save**.
-8. On the **Overview** page, copy the value of the Domain Name System (DNS) name for the key vault. This value will be used during the setup of the service in RCS and will be referred as the **Key Vault URI** value.
+8. On the **Overview** page, copy the value of the Domain Name System (DNS) name for the key vault. This value will be used during the setup of the service in RCS and will be referred as the **Key Vault URI** value. For more information about how to set up RCS, see [Set up Regulatory Configuration Services (RCS)](e-invoicing-set-up-rcs.md).
