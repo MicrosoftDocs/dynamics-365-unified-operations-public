@@ -1,6 +1,6 @@
 ---
 title: Setup the downloadable VHD for first use
-description: This topic explains how to update an Azure pipeline to use new NuGet packages.
+description: Upon first login to the virtual machine, the **Application Object Server** will not be ready for use. A script needs to be run that will create self-signed certificates to be used on the virtual machine, and a customer-provided application registration ID for authentication.
 author: jorisdg
 ms.date: 02/14/2022
 ms.topic: article
