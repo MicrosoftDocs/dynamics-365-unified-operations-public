@@ -4,7 +4,7 @@
 title: Printer ER destination type
 description: This topic explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format. 
 author: NickSelin
-ms.date: 02/24/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,9 +50,9 @@ To make the **Printer** destination available in the current instance of Microso
 
 #### PDF printing
 
-In versions of Finance before version 10.0.18, the **Printer** destination can be configured only for file components that are used to generate output in either printable PDF format (**PDF Merger** or **PDF file** format elements) or Microsoft Office Excel/Word format (**Excel file** format element). When output is generated in PDF format, it's sent to a printer. When output is generated in Microsoft Office format by using the **Excel file** format element, it's automatically converted to PDF format and then sent to a printer.
+In versions of Finance before version 10.0.18, the **Printer** destination can only be configured for file components that are used to generate output in printable PDF format (**PDF Merger** or **PDF file** format elements) or Microsoft Office Excel and Word format (**Excel file** format element). When the output is generated in PDF format, it's sent to a printer. When the output is generated in the Office format by using the **Excel file** format element, it's automatically converted to PDF format and then sent to a printer.
 
-However, in version 10.0.18 and later, you can also configure the **Printer** destination for the **Common file** format element. Mostly, this format element is used to generate output in either TXT or XML formats. But you can configure an ER format containing the **Common file** format element as the root format element and the **Binary contents** format element that is only nested under the root format element. So, in this case the **Common file** format element will produce output in the format that is specified by the binding that you configure for the **Binary contents** format element. For example, you can configure this binding to [populate](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) to this element the content of a [Document management](../../fin-ops/organization-administration/configure-document-management.md) attachment in PDF or Microsoft Office (Excel or Word) format. So, you can print out such output by using the configured **Printer** destination. 
+However, starting in version 10.0.18, you can configure the **Printer** destination for the **Common file** format element. Mostly, this format element is used to generate output in either TXT or XML formats. You can configure an ER format that contains the **Common file** format element as the root format element and the **Binary contents** format element that is only nested under the root format element. In this case, the **Common file** format element will produce an output in the format specified by the binding that you configure for the **Binary contents** format element. For example, you can configure this binding to [populate](tasks/er-document-management-files-5.md#modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format) to this element the content of a [Document management](../../fin-ops/organization-administration/configure-document-management.md) attachment in PDF or Office (Excel or Word) format. You can print out such an output by using the configured **Printer** destination. 
 
 > [!NOTE]
 > Notice that when you select the **Common\File** format element to configure the **Printer** destination, the 
@@ -63,7 +63,7 @@ However, in version 10.0.18 and later, you can also configure the **Printer** de
 
 #### ZPL printing
 
-In version 10.0.26 and later, you can also configure the **Printer** destination for the **Common\File** format element selecting the **ZPL** value for the **Document routing type** parameter. When you do this, the **Convert to PDF** option is ignored at runtime and TXT or XML output is directly sent out to a selected printer by using the ZPL contract of the [Document routing agent (DRA)](install-document-routing-agent.md). So, you can use this feature for an ER format that represents a Zebra printing language (ZPL II) label layout to print out various labels.
+In version 10.0.26 and later, you can also configure the **Printer** destination for the **Common\File** format element selecting the **ZPL** value for the **Document routing type** parameter. When you do this, the **Convert to PDF** option is ignored at runtime and the TXT or XML output is sent directly to a selected printer by using the ZPL contract of the [Document routing agent (DRA)](install-document-routing-agent.md). Use this feature for an ER format that represents a Zebra printing language (ZPL II) label layout to print out various labels.
 
 [![Turning on the Document routing type on the Destination settings dialog.](./media/ER_Destinations-SetDocumentRoutingType.png)](./media/ER_Destinations-SetDocumentRoutingType.png)
 
