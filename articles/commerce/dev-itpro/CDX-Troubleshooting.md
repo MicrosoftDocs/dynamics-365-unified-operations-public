@@ -38,7 +38,15 @@ Data configuration and synchronization are crucial to correct implementation. Re
 
 Before you go through this topic, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. Therefore, we recommend that you review some of the resources at the end of this topic, such as the CDX implementation guide and the overview of the Commerce architecture.
 
-## Troubleshooting
+## Scenario-based usage troubleshooting
+
+The following are known scenarios where certain configurations in Headquarters could cause out-of-box CDX functionality to not achieve expected, successful results. This list will continue to improve as additional known scenarios are found:
+
+ - When utilizing the [XDS policies](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies) feature, CDX many not function correctly: When this feature is enabled, a user many not be able to see all the Commerce channels in Headquarters. In this scenario, if this user ran a CDX job, it will only generate partial data (The data that this user is able to see). This will make the Channel database data incomplete and will likely result in an error.
+ - The **RetalServiceAccount** user is altered or has XDS policies assigned to it: The **RetailServiceAccount** is an important, pre-generated account used for a variety of reasons and purposes. It is highly recommended not to alter this account in any way. If using XDS policies, do not assign any policies to this account that would reduce the data this account can see or access.
+ - CDX jobs fail with timeout errors when generating upload packages: This issue occurs most frequently when custom-created transactional tables are missing an index on the **ReplicationCounterFromOrigin** column within these generated tables.
+
+## Error-based troubleshooting
 
 If an error that occurs doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This topic is focused on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
 
