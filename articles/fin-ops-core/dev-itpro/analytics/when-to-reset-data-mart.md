@@ -4,7 +4,7 @@
 title: Data mart resets FAQ
 description: This topic provides answers to some frequently asked questions about data mart resets.
 author: jinniew
-ms.date: 07/16/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,9 +41,9 @@ To ensure that old data isn't inserted, a data mart reset can be started only af
 
 If one or more of the following statements apply to your situation, your organization can benefit from a data mart reset:
 
-- **The application database was restored.**
-- **You opened a support ticket** - a Support engineer instructed you to reset the data mart as part of a troubleshooting step.
-- **Large percentage of stale records** -  Stale records by themselves don't necessarily justify a data mart reset. High percentage of staled data could degrade the overall report generation and integration performance, and incur extra database space usage. We recommend you to complete a datamart reset to remove the the staled data when there is more than 80% stale data in datamart.
+- **The application database was restored**
+- **You opened a support ticket** - A support engineer instructed you to reset the data mart as part of a troubleshooting step.
+- **Large percentage of stale records** - Stale records by themselves don't necessarily justify a data mart reset. High percentages of stale data can degrade the overall report generation and integration performance, and incur extra database space usage. We recommend that you complete a datamart reset to remove the stale data when there is more than 80% stale data in the data mart.
  
 > [!NOTE]
 > The process of resetting a data mart is affected by the number of general ledger and budget transactions in your database. Depending on the number of transactions in your system, a data mart reset can be completed in as little as 15 minutes, or it can take up to four hours. However, if your reset takes longer than four hours, we recommend that you contact Support.
