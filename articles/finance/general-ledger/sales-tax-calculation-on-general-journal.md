@@ -4,7 +4,7 @@
 title: Sales tax calculation on general journal lines
 description: This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 author: EricWangChen
-ms.date: 04/22/2021
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -83,9 +83,9 @@ The following diagram illustrates the rule graphically.
 
 ### Account type is Customer
 
-If a voucher has journal line where the account type is **Customer**, all the journal lines in the voucher apply the same tax direction. The following points show the possible tax directions for customer accounts.
+If a voucher has a journal line where the account type is **Customer**, all the journal lines in the voucher apply the same tax direction. 
 
-•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Sale.
+If the sales tax code is exempt tax, then sales tax direction is Tax Free Sale.
 
 Otherwise, sales tax direction is Sales Tax Payable.
 
