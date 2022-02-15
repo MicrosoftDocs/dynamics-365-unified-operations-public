@@ -32,6 +32,15 @@ ms.dyn365.ops.version: 10.0.0
 
 Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. Today, Finance and Operations apps are not managed by the Power Platform admin center. However, over time more and more management capabilities will be migrated from Microsoft Dynamics Lifecycle Services (LCS) over to the admin center. In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Microsoft Power Platform integration functionality in LCS.
 
+## Environment lifecycle considerations
+
+By default, all Finance and Operations apps environments managed by LCS will receive a linked Power Platform environment without Dataverse.  This is a one-to-one relationship that will over time be the location where your Finance and Operations apps will migrate.  You can tell an environment is linked to an environment from LCS by seeing the Finance and Operations apps URL on the environment details page in Power Platform admin center:
+:::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
+
+This environment cannot be deleted, reset, and cannot manually have a Dataverse database added to it.  To add Dataverse, and fully setup Power Platform integration, follow the [Enable Power Platform integration](enable-power-platform-integration.md) article.  
+
+Alternatively, if you wish to reuse an existing Dataverse environment for your Power Platform integration scenarios (Virtual entities, add-ins, Dual-write, and more) then follow the recommendations for [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+
 ## Prerequisite reading
 
 To understand the architecture of Microsoft Power Platform, Dataverse, dual-write, and virtual entities for Finance and Operations apps, you must understand how they work. Therefore, the following documentation is a prerequisite:
