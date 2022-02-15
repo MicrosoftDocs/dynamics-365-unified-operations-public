@@ -61,8 +61,8 @@ To create a billing schedule, follow these steps.
 
   The **Payment** field shows the customer payment information from the customer. When a line item is on hold or terminated, the payment information can't be changed.
 
-    > [!NOTE]
-    > When you consolidate invoices by item, the value of the **Payment terms**, **Method**, and **Billing schedule** fields must match. Otherwise, the invoices can't be consolidated.
+> [!NOTE]
+> When you consolidate invoices by item, the value of the **Payment terms**, **Method**, and **Billing schedule** fields must match. Otherwise, the invoices can't be consolidated.
 
 13. On the **Address** tab, you can review and update the **Delivery address** and **Bill to address** fields.
 14. On the **Contact information** tab, you can associate an end user account with the billing schedule.
