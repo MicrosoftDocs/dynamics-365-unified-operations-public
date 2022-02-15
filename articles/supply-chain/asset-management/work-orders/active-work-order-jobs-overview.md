@@ -5,7 +5,7 @@ title: Active work order maintenance jobs overview
 description: This topic explains active work order maintenance jobs overview in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

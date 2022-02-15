@@ -2,9 +2,9 @@
 # required metadata
 
 title: Organize your workforce by using departments, jobs, and positions
-description: Departments, jobs, and positions are organizational elements that are maintained within Human resources. This article describes conceptual information about these elements. 
-author: andreabichsel
-ms.date: 06/20/2017
+description: This topic describes conceptual information about departments, jobs, and positions, which are organizational elements that are maintained within Human resources. 
+author: twheeloc
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,14 +15,13 @@ ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWork
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -30,9 +29,12 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Organize your workforce by using departments, jobs, and positions
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Departments, jobs, and positions are organizational elements that are maintained within Human resources. This article describes conceptual information about these elements. 
+Departments, jobs, and positions are organizational elements that are maintained within Human resources. This topic describes conceptual information about these elements. 
 
 The following example is used to illustrate the concepts described in this article.
 
@@ -54,35 +56,20 @@ A department is an operating unit that represents a category or functional area 
 
 ## Jobs and positions
 A job is a collection of tasks and responsibilities that are required of a person who performs a job. A position is an individual instance of a job. Areas of responsibility, job tasks, job functions, skills, education information, and certificates that are required for a job are also required for positions that are associated with a job.
+
 ### Job tasks
 
 You can create job tasks that describe the basic tasks that a worker in a position for that job must complete. The same job task can be added to multiple jobs, and positions for those jobs will inherit those job tasks. Examples of job tasks are listed in the following table.
 
-<table>
-<thead>
-<tr class="header">
-<th>Job</th>
-<th>Job task</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sales manager</td>
-<td><ul>
-<li><span class="input">Perf-review</span> – Review each salesperson’s job performance.</li>
-<li><span class="input">Abs-review</span> – Approve or reject each salesperson’s absence requests or registrations.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Accountant</td>
-<td><span class="input">FIN-Report</span> – Present weekly financial reports to chief financial officer.</td>
-</tr>
-</tbody>
-</table>
+| Job           | Job task                                                |
+|---------------|-------------------------------------------------------------|
+| Sales manager | Perf-review – Review each salesperson’s job performance.    |
+| Accountant    | Abs-review – Approve or reject each salesperson’s absence requests or registrations. |
+
 
 ### Job functions
 
-Job functions are like job tasks. A job function describes one or more tasks, duties or responsibilities that are assigned to a job. Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans. Examples of job functions are listed in the following table.
+Job functions are like job tasks. A job function describes one or more tasks, duties, or responsibilities that are assigned to a job. Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans. Examples of job functions are listed in the following table.
 
 | Job           | Job function                                                |
 |---------------|-------------------------------------------------------------|
@@ -112,24 +99,21 @@ Positions are an important element of the lower level of an organization hierarc
 -   You can set up workflow so that position additions and changes can require approval.
 
 ### Position duration
-
 Every position has a length of time that the position is effective. This length of time is referred to as duration. For example, summer positions might have duration of May 1, 2015 until August 31, 2015.
 
 ### Worker assignments
-
 When you assign a worker to a position, you fill that position. You can assign workers to multiple positions, but only one worker can be assigned to a position at the same time.
 
 ### Reporting relationships
+Positions are important elements of the lower level of an organization hierarchy. On the **Position** page, you can specify the position that a position reports to. When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions. For example, position “Accountant-A” reports to position “Accounting Supervisor”. Ana Bowman is assigned to position “Accounting Supervisor” and Felix Henderson is assigned to position “Accountant-A”. This means that Felix Henderson reports to Ana Bowman. 
 
-Positions are important elements of the lower level of an organization hierarchy. In the Position form, you can specify the position that a position reports to. When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions. For example, position “Accountant-A” reports to position “Accounting Supervisor”. Kim Akers is assigned to position “Accounting Supervisor” and Sanjay Patel is assigned to position “Accountant-A”. This means that Sanjay Patel reports to Kim Akers. 
+If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up. For example, Olivia Wilson is a general manager at Adventure Works and is assigned to the “General Manager” position. Olivia manages the development of a product that is used to clean widgets. Olivia requires an accountant to help with the finances for developing the product. Therefore, she has recruited Felix Henderson to be the accountant. Felix reports directly to Ana Bowman, but also works with Olivia Wilson on his work related to the finances for developing the widget cleaner. 
 
-If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up. For example, Lori Penor is a general manager at Adventure Works and is assigned to the “General Manager” position. Lori manages the development of a product that is used to clean widgets. Lori requires an accountant to help with the finances for developing the product. Therefore, she has recruited Sanjay Patel to be the accountant. Sanjay reports directly to Kim Akers, but also works with Lori Penor on his work related to the finances for developing the widget cleaner. 
-
-For the previous example, you would complete the following tasks to set up the working relationship between Sanjay Patel and Lori Penor:
+For the previous example, you would complete the following tasks to set up the working relationship between Felix Henderson and Ana Bowman:
 1.  Create a custom position hierarchy type called “Widget” to create a hierarchy that includes positions responsible for working on the widget cleaner product.
 2.  Assign the General Manager position to be the position that the Accountant-A position reports to in the Widget hierarchy.
 
-Use the position hierarchy to view the reporting structure of positions. If you have multiple position hierarchies, you can view the hierarchy for each hierarchy type in the position hierarchy. Also, you can search for a position by position ID or by the name of the worker who is assigned to the position. The position hierarchy is an organizational hierarchy.
+Use the **Position hierarchy** page to view the reporting structure of positions. If you have multiple position hierarchies, you can view the hierarchy for each hierarchy type in the **Position hierarchy**. Also, you can search for a position by position ID or by the name of the worker who is assigned to the position. The **Position hierarchy** is an organizational hierarchy.
 
 ## Date effective records
 For some records, you can specify future changes to the record. The following information is date effective.
@@ -161,13 +145,5 @@ For some records, you can specify future changes to the record. The following in
 </tr>
 </tbody>
 </table>
-
-You can modify the information mentioned in the previous table for a position or a job and specify a date when the modifications to the position or job should take effect. For example, a position can only be assigned to one worker, but Sanjay Patel, who is assigned to the position Accountant-A, will be leaving in two weeks. Joe Healy will replace Sanjay Patel when Sanjay leaves. Even though Sanjay is still assigned to his position, you can assign Joe Healy to the same position so that the assignment is effective only after Sanjay’s last day.
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ title: Integration with Microsoft Dynamics 365 Field Service overview
 description: This topic provides an overview of the Integration with Microsoft Dynamics 365 Field Service. 
 author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Supply Chain Management enables synchronization of business processes between Dynamics 365 Supply Chain Management and Dynamics 365 Field Service. The integration scenarios are configured by using extensible Data integrator templates and Microsoft Dataverse to enable the synchronization of business processes.
 Standard templates can be used to create custom integration projects, where additional standard and custom columns and tables can be mapped to adjust the integration and meet specific business needs. 

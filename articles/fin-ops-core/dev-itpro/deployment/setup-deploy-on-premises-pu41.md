@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 10/25/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -106,7 +106,7 @@ If you're using VMware, you must implement the fixes that are documented on the 
 - [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
 > [!WARNING]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 The hardware configuration includes the following components:
 
@@ -182,13 +182,13 @@ You must complete the following steps to set up the infrastructure for Finance +
 1. [Join VMs to the domain](#joindomain)
 1. [Download setup scripts from LCS](#downloadscripts)
 1. [Describe your configuration](#describeconfig)
+1. [Set up file storage](#setupfile)
 1. [Configure certificates](#configurecert)
 1. [Set up SSIS](#setupssis)
 1. [Set up SSRS](#setupssrs)
 1. [Set up VMs](#setupvms)
 1. [Set up a standalone Service Fabric cluster](#setupsfcluster)
 1. [Configure LCS connectivity for the tenant](#configurelcs)
-1. [Set up file storage](#setupfile)
 1. [Set up SQL Server](#setupsql)
 1. [Configure the databases](#configuredb)
 1. [Encrypt credentials](#encryptcred)
@@ -375,7 +375,7 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. Select **Model** as the asset type, and then, in the grid, select the row for **Dynamics 365 for Operations on-premises - Deployment scripts**.
+3. Select **Model** as the asset type, and then, in the grid, select the row for **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts**.
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
 5. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
 6. Copy the zip file to the machine that will be used to run the scripts.
@@ -401,6 +401,7 @@ The infrastructure\\ConfigTemplate.xml configuration file describes the followin
 - The certificates that are required to help secure communications
 - The database configuration
 - The Service Fabric cluster configuration
+- The file shares that are required for the application to work
 
     > [!IMPORTANT]
     > When you configure the Service Fabric cluster, make sure that there are three fault domains for the Primary node type (**OrchestratorType**). Also make sure that no more than one type of node is deployed on a single machine.
@@ -413,6 +414,8 @@ For each Service Fabric node type, the infrastructure\\D365FO-OP\\NodeTopologyDe
 - Whether strong name validation should be enabled
 - The list of firewall ports that should be opened
 - Which permissions an account requires for a machine
+- Whether the .NET Framework should be configured to use the operating system's default Transport Layer Security (TLS) protocol.
+- Whether insecure TLS and SSL protocols should be disabled.
 
 For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml configuration file describes the following details:
 
@@ -439,7 +442,54 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
     Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="configurecert"></a>Step 8. Configure certificates
+### <a name="setupfile"></a>Step 8. Set up file storage
+
+You must set up the following SMB 3.0 file shares:
+
+- A file share that stores user documents that are uploaded to AOS (for example, \\\\DAX7SQLAOFILE1\\aos-storage).
+- A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\DAX7SQLAOFILE1\\agent).
+- A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\DAX7SQLAOFILE1\\DiagnosticsStore).
+
+    > [!WARNING]
+    > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
+
+For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
+
+> [!IMPORTANT]
+> - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption. For information about how to disable SMB 1.0, see [How to detect, enable and disable SMBv1, SMBv2, and SMBv3 in Windows](/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3#how-to-remove-smbv1).
+> - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
+
+1. On the file share machine, run the following command.
+
+    ```powershell
+    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
+    ```
+
+2. Set up the **\\\\DAX7SQLAOFILE1\\aos-storage** file share:
+
+    1. In Server Manager, select **File and Storage Services** \> **Shares**.
+    2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
+    3. Leave **Allow caching of share** selected.
+    4. Select the **Encrypt data access** checkbox.
+    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except **OrchestratorType**.
+    6. Grant **Modify** permissions for the gMSA user (**contoso\\svc-AXSF$**). If your AOS servers are running under a domain user, also add that domain user (**contoso\\AXServiceUser**).
+
+    > [!NOTE]
+    > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
+
+3. Set up the **\\\\DAX7SQLAOFILE1\\agent** file share:
+
+    1. In Server Manager, select **File and Storage Services** \> **Shares**.
+    2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
+    3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
+
+4. Optional: Set up the **\\\\DAX7SQLAOFILE1\\DiagnosticsStore** file share:
+
+    1. In Server Manager, select **File and Storage Services** \> **Shares**.
+    1. Select **Tasks** \> **New Share** to create a share. Name the new share **DiagnosticsStore**.
+    1. Grant **Modify** permissions for every machine in the Service Fabric cluster.
+
+### <a name="configurecert"></a>Step 9. Configure certificates
 
 1. Go to the machine that you originally unzipped the **infrastructure** folder to.
 2. Generate certificates:
@@ -478,7 +528,7 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="setupssis"></a>Step 9. Set up SSIS
+### <a name="setupssis"></a>Step 10. Set up SSIS
 
 To enable Data management and SSIS workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
 
@@ -488,7 +538,7 @@ To enable Data management and SSIS workloads, you must install SSIS on each AOS 
 
 For more information, see [Install Integration Services (SSIS)](/sql/integration-services/install-windows/install-integration-services).
 
-### <a name="setupssrs"></a>Step 10. Set up SSRS
+### <a name="setupssrs"></a>Step 11. Set up SSRS
 
 You can configure more than one SSRS node. For more information, see [Configuring High Availability for SSRS nodes](./onprem-SSRSHA.md).
 
@@ -525,7 +575,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > 
     > Instead, these scripts will grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
-### <a name="setupvms"></a>Step 11. Set up VMs
+### <a name="setupvms"></a>Step 12. Set up VMs
 
 1. Run the following command to export the scripts that must be run on each VM.
 
@@ -594,7 +644,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section.
 
-### <a name="setupsfcluster"></a>Step 12. Set up a standalone Service Fabric cluster
+### <a name="setupsfcluster"></a>Step 13. Set up a standalone Service Fabric cluster
 
 1. Download the [Service Fabric standalone installation package](https://go.microsoft.com/fwlink/?LinkId=730690) to one of your Service Fabric nodes.
 2. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
@@ -634,7 +684,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that is running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
-### <a name="configurelcs"></a>Step 13. Configure LCS connectivity for the tenant
+### <a name="configurelcs"></a>Step 14. Configure LCS connectivity for the tenant
 
 An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations through LCS. To establish connectivity from LCS to the Finance + Operations tenant, you must configure a certificate that enables the local agent to act on behalf on your Azure AD tenant (for example, contoso.onmicrosoft.com).
 
@@ -653,7 +703,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     # If you have issues downloading the Azure PowerShell Az module, run the following:
     # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    Install-Module Az
+    Install-Module Az -RequiredVersion 6.6.0
     Import-Module Az
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
@@ -673,78 +723,6 @@ Only user accounts that have the Global Administrator directory role can add cer
 > ```powershell
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
-
-### <a name="setupfile"></a>Step 14. Set up file storage
-
-You must set up the following SMB 3.0 file shares:
-
-- A file share that stores user documents that are uploaded to AOS (for example, \\\\DAX7SQLAOFILE1\\aos-storage).
-- A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\DAX7SQLAOFILE1\\agent).
-
-    > [!WARNING]
-    > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
-
-For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
-
-> [!IMPORTANT]
-> - Secure dialect negotiation can't detect or prevent downgrades from SMB 2.0 or 3.0 to SMB 1.0. Therefore, we strongly recommend that you disable the SMB 1.0 server. In this way, you can take advantage of the full capabilities of SMB encryption.
-> - To help ensure that your data is protected while it's at rest in your environment, you must enable BitLocker Drive Encryption on every machine. For information about how to enable BitLocker, see [BitLocker: How to deploy on Windows Server 2012 and later](/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
-
-1. On the file share machine, run the following command.
-
-    ```powershell
-    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
-    ```
-
-2. Set up the **\\\\DAX7SQLAOFILE1\\aos-storage** file share:
-
-    1. In Server Manager, select **File and Storage Services** \> **Shares**.
-    2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
-    3. Leave **Allow caching of share** selected.
-    4. Select the **Encrypt data access** checkbox.
-    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except **OrchestratorType**.
-    6. Grant **Modify** permissions for the user AOS domain user (**contoso\\AXServiceUser**) and the gMSA user (**contoso\\svc-AXSF$**).
-
-    > [!NOTE]
-    > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
-    > 
-    > If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, you can skip adding the **AOSDomainUser** account to the fileshare ACLs.
-
-3. Set up the **\\\\DAX7SQLAOFILE1\\agent** file share:
-
-    1. In Server Manager, select **File and Storage Services** \> **Shares**.
-    2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
-    3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
-
-    ```powershell
-    # Specify user names
-    $AOSDomainUser = 'Contoso\AXServiceUser';
-    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
-
-    # Specify the path
-    $AosStorageFolderPath = 'D:\aos-storage';
-    $AgentFolderPath = 'D:\agent';
-
-    # Create new directory
-    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
-    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
-
-    # Create new SMB share
-    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
-    New-SmbShare –Name agent -Path $AgentFolderPath
-
-    # Set ACL for AOS storage folder
-    $Acl = Get-Acl $AosStorageFolder.FullName;
-    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
-    $Acl.SetAccessRule($Ar);
-    Set-Acl $AosStorageFolder.FullName $Acl;
-
-    # Set ACL for AgentFolder
-    $Acl = Get-Acl $AgentFolder.FullName;
-    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
-    $Acl.SetAccessRule($Ar);
-    Set-Acl $AgentFolder.FullName $Acl;
-    ```
 
 ### <a name="setupsql"></a>Step 15. Set up SQL Server
 
@@ -824,8 +802,12 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     | Release | Database |
     |---------|----------|
-    | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Demo Data |
-    | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Empty Data |
+    | Version 10.0.21 (with Platform update 45) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.21 Demo Data |
+    | Version 10.0.21 (with Platform update 45) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.21 Empty Data |
+    | Version 10.0.20 (with Platform update 44) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.20 Demo Data |
+    | Version 10.0.20 (with Platform update 44) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.20 Empty Data |
+    | Version 10.0.17 (with Platform update 41) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.17 Demo Data |
+    | Version 10.0.17 (with Platform update 41) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.17 Empty Data |
 
 1. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
 1. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
@@ -921,42 +903,23 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
 ### <a name="encryptcred"></a>Step 17. Encrypt credentials
 
-1. On any client machine, install the encipherment certificate in the **LocalMachine\\My** certificate store.
-2. Grant the current user **Read** access to the private key of this certificate.
-3. Create the **Credentials.json** file, as shown here.
-
-    ```json
-    {
-        "AosPrincipal": {
-            "AccountPassword": "<encryptedDomainUserPassword>"
-        },
-        "AosSqlAuth": {
-            "SqlUser": "<encryptedSqlUser>",
-            "SqlPwd": "<encryptedSqlPassword>"
-        }
-    }
-    ```
-
-    - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**).
-    > [!NOTE]
-    > If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, leave the **AccountPassword** field blank. However, you need to ensure that it is present, as the installers will still look for it. We will address this in a future update.
-    - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**)
-    - **SqlPassword** – The encrypted SQL password.
-
-4. Copy the .json file to the SMB file share: **\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**.
-5. Update the **Credentials.json** file with encrypted values.
+1. Copy your infrastructure folder to an AOS node.
+2. Create the **Credentials.json** file by running the following command.
 
     ```powershell
-    # Service fabric API to encrypt text and copy it to the clipboard.
-    Invoke-ServiceFabricEncryptText -Text '<textToEncrypt>' -CertThumbprint '<DataEncipherment Thumbprint>' -CertStore -StoreLocation LocalMachine -StoreName My | Set-Clipboard
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Create
     ```
 
-    > [!IMPORTANT]
-    > - Before you can invoke the **Invoke-ServiceFabricEncryptText** command, you must install the [Microsoft Azure Service Fabric software development kit (SDK)](/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
-    > - After you install the Service Fabric SDK, you might receive the following error message: "Invoke-ServiceFabricEncryptText is not recognized command." In this case, restart the computer, and try again.
+    The script will prompt you to enter several credentials:
 
-    > [!WARNING]
-    > After you've finished invoking all the **Invoke-ServiceFabricEncryptText** commands, remember to delete the Windows PowerShell history. Otherwise, your non-encrypted credentials will be visible.
+    - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**). If you're deploying by using a recent base deployment where a gMSA account is used instead of the domain user, this prompt will be skipped. However, the script will create a placeholder value, because the installers will still look for it. Microsoft will address this issue in a future update.
+    - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**).
+    - **SqlPassword** – The encrypted SQL password.
+    
+    > [!NOTE]
+    > The script will automatically put the Credentials.json file in the SMB file share (**\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**).
+    >
+    > The script will request the credentials that are required for the Entity Store feature, but this request can be skipped. For more information, see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
@@ -972,6 +935,11 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
     $adfsProperties = Get-AdfsProperties
     Set-AdfsProperties -Identifier $adfsProperties.IdTokenIssuer
     ```
+
+    > [!WARNING]
+    > If your AD FS is set up to work with Microsoft 365 (formerly Office 365) for single sign-on, this step will break that scenario.
+    >
+    > To ensure that the scenario continues to work, you can specify a deployment option to adapt your Dynamics 365 for Finance + Operations installation to that requirement. For more information, see [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
@@ -1035,7 +1003,8 @@ You've now completed the setup of the infrastructure. The following sections des
 
 10. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 11. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
-12. In a **Command Prompt** window, go to the folder that contains the agent installer, and run the following command.
+12. The local agent has some additional, optional configurations that can be set to specify environment-specific setup/requirements. For information about the additional options, see [Deployment configurations for the local agent](./onprem-localagent-options.md). 
+13. In a **Command Prompt** window, go to the folder that contains the agent installer, and run the following command.
 
     ```powershell
     LocalAgentCLI.exe Install <path of config.json>
@@ -1044,8 +1013,8 @@ You've now completed the setup of the infrastructure. The following sections des
     > [!NOTE]
     > The user who runs this command must have **db\_owner** permissions on the OrchestratorData database.
 
-13. After the local agent is successfully installed, go back to your on-premises connector in LCS.
-14. On the **3: Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, you will receive the following message: "Validation complete. Agent connection established."
+14. After the local agent is successfully installed, go back to your on-premises connector in LCS.
+15. On the **3: Validate setup** tab, select **Message agent** to test for LCS connectivity to your local agent. When a connection is successfully established, you will receive the following message: "Validation complete. Agent connection established."
 
 ### <a name="teardowncredssp"></a>Step 20. Tear down CredSSP, if remoting was used
 

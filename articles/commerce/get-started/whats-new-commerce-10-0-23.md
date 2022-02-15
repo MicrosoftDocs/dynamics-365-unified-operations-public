@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.23
+title: What's new or changed in Dynamics 365 Commerce 10.0.23 (January 2022)
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.23. 
 author: josaw1
-ms.date: 10/15/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,10 +26,9 @@ ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 
 ---
-# Preview features in in Dynamics 365 Commerce 10.0.23
+# What's new or changed in Dynamics 365 Commerce 10.0.23 (January 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.23. This version has a build number of 10.0.1037 and is available on the following schedule:
 
@@ -44,6 +43,8 @@ The following features are included in this release. Some of the listed features
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |  Global address book| Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md). | Enabled by default |
+|   Globalization |  [(India) GST in e-commerce](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/gst-e-commerce-india)    |  This feature enables Dynamics 365 Commerce customers in India to implement e-commerce capabilities by ensuring that Goods and Services Tax (GST) is calculated on e-commerce orders. For more information, see [Goods and Services Tax (GST) integration for e-commerce sites for India](../localizations/apac-ind-e-commerce.md).  |  Feature management  |
+|   Globalization |   (Eastern Europe) Improvements in settlement of sales invoices and payments for retail statements   |  The feature ensures correct automatic settlement of sales invoices and payments that are generated from retail statements. The feature is applicable to the Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.   |  Enabled by default  |
 |   Merchandising |   [Improved pricing computation performance by using flattened discount tables](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-pricing-computation-performance-using-flattened-discount-tables)   |   [Retail discounts](../retail-discounts-overview.md)  |  Feature management (*Improve discount computation performance by using flattened discount tables feature.*)  |
 |   Office integration  |   Create email templates for transactional events  |  [Create email templates for transactional events](../email-templates-transactions.md)   | Enabled by default  |
 

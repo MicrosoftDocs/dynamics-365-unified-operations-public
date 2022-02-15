@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 This topic answers frequently asked questions about the workflow system.
 
 ## Why are multiple notifications received when a work item is rejected?

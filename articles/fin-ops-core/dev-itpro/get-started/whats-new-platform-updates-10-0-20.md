@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.20 of Finance and Operations apps.
 author: sericks007
-ms.date: 07/16/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,6 +46,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
 | System administration | [Internet Explorer end-of-support notifications](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/internet-explorer-end-of-support-notifications)| [System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)</br></br>[System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) |
+| Organization administration | [Document attachment history](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/document-attachment-history) | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md#document-attachment-history) |
 
 ## New and updated documentation resources
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.

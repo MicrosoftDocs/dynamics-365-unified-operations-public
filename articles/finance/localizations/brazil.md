@@ -3,9 +3,9 @@
 
 title: Brazil overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Brazil. 
-author: ShylaThompson
-ms.date: 07/25/2019
-ms.topic: article
+author: kfend
+ms.date: 01/20/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -81,6 +81,7 @@ This topic includes information and links to resources that can help you set up 
 - Tasks for Brazil
   - [Set up legal entity parameters](tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md)
   - [Set up fiscal document source text](tasks/br-00001-2-set-up-fiscal-document-source-text.md)
+  - [Set up bank account numbers for Brazil](latam-bra-bank-account-number-setup-brazil-localization.md)
   - [Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable)](tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md)
   - [Receive vendor fiscal documents (products)](tasks/br-00024-receiving-vendor-fiscal-document-products.md)
   - [Create and post a purchase complementary fiscal document](tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md)

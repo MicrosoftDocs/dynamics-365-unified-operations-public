@@ -4,9 +4,9 @@ description: This topic provides programming guidance for X++.
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.custom: "intro-internal"
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -42,7 +42,7 @@ The standard compilation unit is the same as for other .NET language. If any met
 
 If you are upgrading code from previous versions (AX2012 and earlier), note that the CIL helper methods such as `Global::runClassMethodIL` have been removed, because they're no longer relevant.
 
-For more information, see [What is "managed code"?](/dotnet/standard/managed-code.md).
+For more information, see [What is "managed code"?](/dotnet/standard/managed-code).
 
 ### The Ignore list
 

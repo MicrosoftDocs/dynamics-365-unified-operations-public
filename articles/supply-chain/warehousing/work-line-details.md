@@ -31,7 +31,7 @@ The **Work line details** page shows a comprehensive, sortable, and filterable l
 
 ## Turn on the work line details feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Work line details*

@@ -5,7 +5,7 @@ title: Electronic invoicing overview
 description: This topic provides information about Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 03/29/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -55,6 +55,8 @@ Electronic invoicing is deployed in the following Azure geographies:
 
 - United States
 - Europe
+- United Kingdom
+- Asia
 
 > [!NOTE]
 > Electronic invoicing doesn't support on-premises deployments.

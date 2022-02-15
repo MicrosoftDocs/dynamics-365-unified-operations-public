@@ -5,7 +5,7 @@ title: Workflow system overview
 description: This topic describes the workflow system.
 author: ChrisGarty
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Workflow system overview
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This topic describes the workflow system.
 

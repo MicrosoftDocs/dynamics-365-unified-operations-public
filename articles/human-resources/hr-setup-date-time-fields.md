@@ -2,9 +2,9 @@
 # required metadata
 
 title: Understand Date and Time fields
-description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic explains what to expect when you use Date and Time fields in Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,39 +31,39 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**Date and Time** fields are a fundamental concept in Dynamics 365 Human Resources. It's important to understand how to work with **Date and Time** data in forms, Dataverse, and external sources.
+
+**Date and Time** fields are a fundamental concept in Microsoft Dynamics 365 Human Resources. It's important that you understand how to work with **Date and Time** data on pages, in Dataverse, and in external sources.
 
 ## Understanding the difference between Date and Date and Time field data types
 
-**Date and Time** fields contain time zone information, while **Date** fields don't. **Date** fields display the same information in any location. When you enter a date into a **Date** field, Human Resources writes that same date to the database.
+**Date and Time** fields contain time zone information, whereas **Date** fields don't. **Date** fields show the same information in any location. When you enter a date in a **Date** field, that same date is written to the database.
 
-When displaying data in a **Date and Time** field, Human Resources adjusts the date and time based on the user's time zone set in the **User Options** form (**Common > Setup > User Options**). The date and time information you enter in the field might not be the same as the information written to the database.
+When data is shown in a **Date and Time** field, the date and time are adjusted based on the user's time zone that is selected on the **User Options** page (**Common \> Setup \> User Options**). Date and time information that you enter in the field might not be the same as the information that is written to the database.
 
-[![User options form.](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![User options page.](./media/Useroptionsform.png)](./media/Useroptionsform.png)
 
-## Understanding Date and Time fields in forms 
+## Understanding Date and Time fields on pages 
 
 **Date and Time** data displayed on the screen isn't the same as the data stored in the database if the user's time zone isn't set to Coordinated Universal Time (UTC). Data in **Date and Time** fields is always stored as UTC.
 
-[![Worker form UTC.](./media/worker-form.png)](./media/worker-form.png)
+[![Worker page UTC.](./media/worker-form.png)](./media/worker-form.png)
 
 ## Understand Date and Time fields in the database 
 
-When Human Resources writes a **Date and Time** value to the database, it stores the data in UTC. This allows users to see any **Date and Time** data relative to the time zone defined in their user options.
+When a **Date and Time** value is written to the database, the data is stored as UTC. Therefore, users can see any **Date and Time** data relative to the time zone that is defined in their user options.
  
 In the example above, the start time is a point in time, not a particular date. By changing the time zone of the logged in user from GMT +12:00 to GMT UTC, the same record shows 04/30/2019 12:00:00 instead of 05/01/2019 12:00:00.
-  
-In the example below, employee 000724’s employment becomes active at the same time regardless of time zone. The employee will be active on 04/30/2019 in the GMT time zone, which is the same as 05/01/2019 in GMT+12:00 time zone. Both refer to the same point in time and not a particular date. 
 
-[![Worker form GMT.](./media/worker-form2.png)](./media/worker-form2.png)
+In the example below, employee 000724's employment becomes active at the same time regardless of time zone. The employee will be active on 04/30/2019 in the GMT time zone, which is the same as 05/01/2019 in GMT+12:00 time zone. Both refer to the same point in time and not a particular date. 
+
+[![Worker page GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## Date and Time data in Data Management Framework, Excel, Dataverse, and Power BI 
 
-The Data Management Framework, Excel Add-In, Dataverse, and Power BI reporting are all designed to interact with data directly on the database level. Since there's no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** values are in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
+The Data Management Framework (DMF), Excel Add-In, Dataverse, and Power BI reporting are all designed to interact with data directly on the database level. Since there's no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** values are in UTC, which can lead to some incorrect assumptions when entering or viewing data.
  
-**Date and Time** data submitted via DMF, Excel, or Dataverse is assumed to be in UTC by the database. This can cause some confusion when the submitted **Date and Time** value doesn't display as expected because the user viewing the data doesn't have their user time zone  set to UTC. 
+When **Date and Time** data is submitted via DMF, Excel, or Dataverse, the database assumes that it's in UTC. However, if users who view the data don't have their user time zone set to UTC, the submitted **Date and Time** value won't appear as expected, and users might become confused. 
  
 The same thing can happen in reverse when data is exported. The **Date and Time** data in the exported DMF entity can be different than what is displayed in the Dynamics client. 
  
@@ -73,11 +73,11 @@ When using external sources like DMF to view or author data, keep in mind that t
 
 **Human Resources with user time zone set to UTC**
 
-[![Worker form set to UTC.](./media/worker-form3.png)](./media/worker-form3.png)
+[![Worker page set to UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources with user time zone set to GMT +12:00** 
 
-[![Worker form set to GMT.](./media/worker-form4.png)](./media/worker-form4.png)
+[![Worker page set to GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel Via OData**
 
@@ -89,7 +89,7 @@ When using external sources like DMF to view or author data, keep in mind that t
 
 **DMF Export**
 
-[![DMF Export.](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF Export.](./media/DMFExport.png)](./media/DMFExport.png)
 
 **Excel via Dataverse**
 

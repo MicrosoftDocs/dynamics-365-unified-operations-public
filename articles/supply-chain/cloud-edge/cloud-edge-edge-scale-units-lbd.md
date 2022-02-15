@@ -1,8 +1,8 @@
 ---
-title: Deploy edge scale units on custom hardware using LBD (Preview)
+title: Deploy edge scale units on custom hardware using LBD
 description: This topic explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
 author: cabeln
-ms.date: 04/22/2021
+ms.date: 01/24/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User, Developer, IT Pro
@@ -10,21 +10,25 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
+ms.dyn365.ops.version: 10.0.21
 ---
 
-# Deploy edge scale units on custom hardware using LBD (Preview)
+# Deploy edge scale units on custom hardware using LBD
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 Edge scale units play an important role in the distributed hybrid topology for supply chain management. In the hybrid topology you can distribute workloads between your Supply Chain Management cloud hub and additional scale units in the cloud or on the edge.
 
 Edge scale units can be deployed by creating a local business data (LBD) [on-premises environment](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) and then configuring it to function as a scale unit in your distributed hybrid topology for supply chain management. This is achieved by associating the on-premises LBD environment with a Supply Chain Management environment in the cloud, which has been configured to function as a hub.  
 
-Edge scale units are currently in preview. Therefore, you may use an environment of this type only according to the [preview terms](https://aka.ms/scmcnepreviewterms).
-
 This topic describes how to set up an on-premises LBD environment as an edge scale unit and then associate it with a hub.
+
+## Infrastructure considerations
+
+Edge scale units run on on-premises environments, so the infrastructure requirements are quite similar. However, there are certain differences that should be noted:
+
+- Edge scale units do not use Financial Reporting, so they do not require Financial Reporting nodes.
+- The manufacturing and warehousing workloads are not compute-intensive, so consider sizing your compute power for AOS nodes accordingly.
 
 ## Deployment overview
 
@@ -32,11 +36,9 @@ Here is an overview of the deployment steps.
 
 1. **Enable an LBD slot in your LBD project in Microsoft Dynamics Lifecycle Services (LCS).**
 
-    During preview, LBD edge scale units target existing LBD customers. An additional 60-day limited LBD sandbox slot will be provided in only specific customer situations.
-
 1. **Set up and deploy an LBD environment with an *empty* database.**
 
-    Use LCS to deploy the LBD environment with the latest topology and an empty database. For more information, see the [Setup and deploy an LBD environment with empty database](#set-up-deploy) section later in this topic. You must use Supply Chain Management version 10.0.19 with platform update 43 or higher across hub and scale unit environments.
+    Use LCS to deploy the LBD environment with the latest topology and an empty database. For more information, see the [Setup and deploy an LBD environment with empty database](#set-up-deploy) section later in this topic. You must use Supply Chain Management version 10.0.21 or later across hub and scale unit environments.
 
 1. **Upload target packages into LBD project assets in LCS.**
 
@@ -56,7 +58,7 @@ The remaining sections of this topic provide more details about how to complete 
 
 This step creates a functional LBD environment. However, the environment doesn't necessarily have the same application and platform versions as the hub environment. Additionally, it's still missing the customizations, and it hasn't yet been enabled to work as a scale unit.
 
-1. Follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). You must use Supply Chain Management version 10.0.19 with platform update 43 or higher across hub and scale unit environments
+1. Follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). You must use Supply Chain Management version 10.0.21 or later across hub and scale unit environments. Additionally, you must use version 2.12.0 or later of the infrastructure scripts. 
 
     > [!IMPORTANT]
     > Read the rest of this section **before** you complete the steps in that topic.
@@ -71,9 +73,50 @@ This step creates a functional LBD environment. However, the environment doesn't
     > This script will remove any configuration that is not needed for deploying edge scale units.
 
 1. Set up a database that contains empty data, as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Use the empty data.bak file for this step.
-1. Set up the pre-deployment script. For more information, see [Local agent pre-deployment and post-deployment scripts](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+1. After you've completed the [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) step, run the following script to configure the Scale Unit Alm Orchestrator database.
 
-    1. Copy the contents from the **ScaleUnit** folder in **Infrastructure Scripts** to the **Scripts** folder in the agent file storage share that was set up in the environment. A typical path is \\\\lbdiscsi01\\agent\\Scripts.
+    > [!NOTE]
+    > Don't configure the Financial Reporting database during the [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) step.
+
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EdgeScaleUnit
+    ```
+
+    The Initialize-Database.ps1 script performs the following actions:
+
+    1. Create an empty database that is named **ScaleUnitAlmDb**.
+    2. Map the users to database roles, based on the following table.
+
+        | User            | Type | Database role |
+        |-----------------|------|---------------|
+        | svc-LocalAgent$ | gMSA | db\_owner     |
+
+1. Continue to follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
+1. After you've completed the [Configure AD FS](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) step, follow these steps:
+
+    1. Create a new Active Directory Federation Services (AD FS) application that will enable the Alm Orchestration service to communicate with your Application Object Server (AOS).
+
+        ```powershell
+        # Host URL is your DNS record\host name for accessing the AOS
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        ```
+
+    1. Create a new Azure Active Directory (Azure AD) application that will enable the Alm Orchestration service to communicate with the Scale Unit Management service.
+
+        ```powershell
+        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
+        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                       -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                       -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+        ```
+
+1. Continue to follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). When you must enter the configuration for the local agent, make sure that you enable the Edge Scale Unit Features and provide all required parameters.
+
+    ![Enabling Edge Scale Unit Features.](media/EnableEdgeScaleUnitFeatures.png "Enabling Edge Scale Unit Features.")
+
+1. Before you deploy your environment from LCS, set up the pre-deployment script. For more information, see [Local agent pre-deployment and post-deployment scripts](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+
+    1. Copy the Configure-CloudAndEdge.ps1 script from the **ScaleUnit** folder in **Infrastructure Scripts** to the **Scripts** folder in the agent file storage share that was set up in the environment. A typical path is \\\\lbdiscsi01\\agent\\Scripts.
     2. Create the **PreDeployment.ps1** script that will invoke the scripts by using the required parameters. The pre-deployment script must be put in the **Scripts** folder in the agent file storage share. Otherwise, it can't be run. A typical path is \\\\lbdiscsi01\\agent\\Scripts\\PreDeployment.ps1.
 
         The contents of the PreDeployment.ps1 script will resemble the following example.
@@ -82,7 +125,7 @@ This step creates a functional LBD environment. However, the environment doesn't
         $agentShare = '\\lbdiscsi01\agent'
         
         Write-Output "AgentShare is set to $agentShare" 
-        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        . $PSScriptRoot\Configure-CloudAndEdge.ps1 -AgentShare $agentShare -InstanceId '@A'
         ```
 
         > [!NOTE]
@@ -97,6 +140,75 @@ This step creates a functional LBD environment. However, the environment doesn't
         >   - @#
 
 1. Deploy the environment by using the latest base topology that is available.
+1. After your environment is deployed, follow these steps:
+
+    1. Run the following SQL commands on your business database (AXDB).
+
+        ```sql
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        delete from NumberSequenceTable
+        delete from NumberSequenceReference
+        delete from NumberSequenceScope
+        delete from FeatureManagementMetadata
+        delete from FeatureManagementState
+        delete from SysFeatureStateV0
+        ```
+
+    1. Increase concurrent maximum batch session to a value that is more than 4.
+
+        ```sql
+        Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
+        ```
+
+    1. Verify that change tracking has been enabled on your business database (AXDB).
+
+        1. Open SQL Server Management Studio (SSMS).
+        1. Select and hold (or right-click) your business database (AXDB), and then select **Properties**.
+        1. In the window that appears, select **Change Tracking**, and then set the following values:
+
+            - **Change Tracking:** *True*
+            - **Retention Period:** *7*
+            - **Retention Units:** *Days*
+            - **Auto Cleanup:** *True*
+
+    1. Add the AD FS application ID that you created earlier (by using the Create-ADFSServerApplicationForEdgeScaleUnits.ps1 script) to the Azure AD applications table in your scale unit. You can manually complete this step through the user interface (UI). Alternatively, you can complete it through the database by using the following script.
+
+        ```sql
+        DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
+
+        IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
+        BEGIN
+            INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
+            VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
+        END
+        ```
+
+## <a name="set-up-keyvault"></a>Set up an Azure key vault and an Azure AD application to enable communication between scale units
+
+1. After your environment is deployed, create an additional Azure AD application to enable trusted communication between your hub and scale unit.
+
+    ```powershell
+    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                          -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                          -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+    ```
+
+1. After you create the application, you must create a client secret and save the information to an Azure key vault. Additionally, you must grant access to the Azure AD application that was created, so that it can retrieve the secrets that are stored in the key vault. For your convenience, the following script will automatically perform all the required actions.
+
+    ```powershell
+    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                         -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                         -SubscriptionName '<Any subscription within your tenant>' `
+                                         -ResourceGroupName '<Any resource group within your subscription>' `
+                                         -KeyVaultName '<Any key vault within your resource group>' `
+                                         -Location '<Any Azure location where Azure Key Vault is available>' `
+                                         -LCSEnvironmentId '<The LCS environment ID of your deployed scale unit>' `
+    ```
+
+    > [!NOTE]
+    > If no key vault that has the specified **KeyVaultName** value exists, the script automatically creates one.
+
+1. Add the Azure AD application ID that you just created (when using the Create-SpokeToHubAADApplication.ps1 script) to the Azure AD applications table in your hub. You can manually complete this step through the UI.
 
 ## <a name="upload-packages"></a>Upload target packages into LBD project assets in LCS
 
@@ -112,122 +224,13 @@ This step aligns the application version, platform version, and customizations i
 1. Service the LBD environment with the combined application/platform package that you uploaded in the previous step.
 1. Service the LBD environment with the custom deployable package that you uploaded in the previous step.
 
-    ![Selecting Maintain > Apply updates in LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Selecting Maintain > Apply updates in LCS")
+    ![Applying updates in LCS.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Applying updates in LCS")
 
     ![Selecting your customization package.](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "Selecting your customization package")
 
 ## <a name="assign-edge-to-hub"></a>Assign your LBD edge scale unit to a hub
 
-While edge scale units are still in preview, you must use the [scale unit deployment and configuration tools](https://github.com/microsoft/SCMScaleUnitDevTools) that are available on GitHub to assign your LBD edge scale unit to a hub. The process enables an LBD configuration to function as an edge scale unit and associates it with the hub. The process is similar to configuring a one-box development environment.
-
-1. Download the latest release of [SCMScaleUnitDevTools](https://github.com/microsoft/SCMScaleUnitDevTools/releases) and unzip the contents of the file.
-1. Create a copy of the `UserConfig.sample.xml` file and name it `UserConfig.xml`.
-1. Create a Microsoft Azure Active Directory (Azure AD) application in your Azure AD tenant, as mentioned in [Deployment guide for scale unit and workloads](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations).
-    1. Once created, navigate to the Azure AD applications form (SysAADClientTable) on your hub.
-    1. Create a new entry and set the **Client ID** to the ID of the application you created. Set the **Name** to *ScaleUnits* and the **User ID** to *Admin*.
-
-1. Create an Active Directory Federation Service (AD FS) application as mentioned in [Deployment guide for scale unit and workloads](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations).
-    1. Once created, navigate to the Azure AD applications form (SysAADClientTable) on your edge scale unit.
-    1. Create a new entry and set the **Client ID** to the ID of the application you created. Set the **User ID** to *Admin*.
-
-1. Modify the `UserConfig.xml` file.
-    1. Under the `InterAOSAADConfiguration` section, enter the information from the Azure AD application you created previously.
-        - In the `AppId` element, enter the application ID of the Azure application.
-        - In the `AppSecret` element, enter the application secret of the Azure application.
-        - The `Authority` element must contain the URL specifying the security authority for your tenant.
-
-        ```xml
-        <InterAOSAADConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopty56TGUedDTVhtER-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </InterAOSAADConfiguration>
-        ```
-
-    1. Under the `ScaleUnitConfiguration` section, for the first `ScaleUnitInstance`, modify the `AuthConfiguration` section.
-        - In the `AppId` element, enter the application ID of the Azure application.
-        - In the `AppSecret` element, enter the application secret of the Azure application.
-        - The `Authority` element must contain the URL specifying the security authority for your tenant.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopdz.6d3DTVOtf9Lo-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Additionally, for this same `ScaleUnitInstance`, set the following values:
-        - In the `Domain` element, specify the URL of your hub. For example: `https://cloudhub.sandbox.operations.dynamics.com/`
-        - In the `EnvironmentType` element, ensure the value `LCSHosted` is set.
-
-    1. Under the `ScaleUnitConfiguration` section, for the second `ScaleUnitInstance`, modify the `AuthConfiguration` section.
-        - In the `AppId` element, enter the application ID of the AD FS application.
-        - In the `AppSecret` element, enter the application secret of the ADFS application.
-        - The `Authority` element must contain the URL of your AD FS instance.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>26b16f25-21d8-4d36-987b-62df292895aa</AppId>
-            <AppSecret>iZFfObgI6lLtY9kEbBjEFV98NqI5_YZ0e5SBcWER</AppSecret>
-            <Authority>https://adfs.contoso.com/adfs</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Additionally, for this same `ScaleUnitInstance`, set the following values:
-        - In the `Domain` element, specify the URL of your edge scale unit. For example: https://ax.contoso.com/
-        - In the `EnvironmentType` element, ensure the value LBD is set.
-        - In the `ScaleUnitId` element, input the same value you specified for the `InstanceId` when configuring the `Configure-CloudandEdge.ps1` pre-deployment script.
-
-        > [!NOTE]
-        > If you don't use the default Id (@A), ensure you update the ScaleUnitId for each ConfiguredWorkload under the Workloads section.
-
-1. Open PowerShell and navigate to the folder containing the `UserConfig.xml` file.
-
-1. Run the tool with this command.
-
-    ```powershell
-    .\CLI.exe
-    ```
-
-    > [!NOTE]
-    > After every action you will have to start the tool again.
-
-1. In the tool, select **2. Prepare environments for workload installation**. Then run the following steps:
-    1. Select **1. Prepare the Hub**.
-    1. Select **2. Prepare the Scale Unit**.
-
-    > [!NOTE]
-    > If you are not running this command from a clean installation and it fails, do the following actions:
-    >
-    > - Remove all folders from the `aos-storage` folder (except for `GACAssemblies`).
-    > - Run the following SQL command on your business database (AXDB):
-    >
-    > ```sql 
-    > delete from storagefoler
-    > ```
-
-1. Run the following SQL commands on your business database (AXDB):
-
-    ```sql
-    delete from FEATUREMANAGEMENTMETADATA
-    delete from FEATUREMANAGEMENTSTATE
-    delete from NUMBERSEQUENCESCOPE
-    ```
-
-1. Verify that change tracking has been enabled on your business database (AXDB)
-    1. Start SQL Server Management Studio (SSMS).
-    1. Right-click your business database (AXDB) and select properties.
-    1. In the window that opens, select **Change Tracking** and make the following settings:
-
-        - **Change Tracking:** *True*
-        - **Retention Period:** *7*
-        - **Retention Units:** *Days*
-        - **Auto Cleanup:** *True*
-
-1. In the tool, select **3. Install workloads**. Then run the following steps:
-    1. Select **1. Install on Hub**.
-    1. Select **2. Install on Scale Unit**.
+You configure and manage your edge scale unit through the Scale Unit Management Portal. For more information, see [Manage scale units and workloads by using the Scale Unit Manager portal](./cloud-edge-landing-page.md#scale-unit-manager-portal).
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

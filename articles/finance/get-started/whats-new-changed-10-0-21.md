@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.21 (October 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.21 preview release.
 author: kfend
-ms.date: 09/24/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -78,29 +78,100 @@ The following table lists the feature enhancements included in this release. Eac
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default in 10.0.21. These features can be manually turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory.  This is to ensure that customers are using current functionality, so that as enhancements are added they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential. 
 
-| Feature area | Feature name in feature management | More information |
-|---|---|---|
-| Tax          | (Saudi Arabia) Enable tax calculation for full project invoice amount | This feature enables tax calculation that is based on the full project invoice amount before the retention amount is deducted on the project invoice. No tax is calculated on the retention project invoice. |
-| Tax          | Enable multi-batch processing for the GSTR report | This feature enables multi-batch processing for the GSTR report and improves the performance of report generation. |
-| Tax          | Generation of "GST transaction ID" at export invoice posting | This feature enables the Goods and Services Tax (GST) transaction ID to be assigned when the invoice is posted for export transactions through a sales order. |
-| Tax          | (India) Enable changing tax rate type in purchase invoice | In India, when a vendor invoice is received from the supplier, the tax rate often differs from the tax rate on the purchase order. This feature gives you the flexibility to change to the tax rate type on the vendor invoice. |
-| Tax          | Enable rounding rules for withholding tax | This feature enables the rounding rules that are set for the withholding tax code in the **Rounding form** field on the **Withholding tax codes** page (**Tax** \> **Indirect taxes** \> **Withholding tax** \> **Withholding tax codes**). When this feature is enabled, the withholding tax amount is rounded according to the setup of **Normal**, **Downward**, or **Rounding-up**. This feature requires that the transaction currency and tax currency be the same. |
-| Tax          | Sales tax conversion | This feature enables dual currency support for the tax domain. After you enable this feature, you can specify the routing of sales tax amount conversions under different currencies. You can also enable auto-balancing for sales tax payments in the reporting currency. |
-| Tax          | Enable inquiry form for posted sales tax | This feature makes the **Inquiry** page available for posted sales tax. Therefore, it helps improve inquiry performance and search transactions. |
-| Tax          | Calculate origin amount for sales tax specification by ledger transaction report | This feature enables the origin amount to be calculated on the **Sales tax specification by ledger transaction** report when it's grouped by sales tax code and when the **Total** option is set to **Yes**. |
-| Tax          | (India) Enable overriding TCS/TDS group on purchase invoice | This feature lets you override the Tax Collected at Source (TCS)/Tax Deducted at Source (TDS) group value on a vendor invoice that is created from a purchase order. |
-| Tax          | (India) GTE calculation validation | This feature enables validation for the Tax engine (GTE) calculation to help prevent empty tax components or zero tax amounts. |
-| Tax          | Non deductible % field in Posted sales tax | When this feature is enabled, the **Non deductible %** field in sales tax transactions is set from the corresponding sales tax codes. The field is located on the **Posted sales tax** page. |
-| Tax          | (India) Enable withholding setup for currency validation to prevent the withholding payment from failing due to currency variations | This feature ensures that the currency is set up for withholding tax codes and the withholding tax authority in the accounting currency. All withholding tax transactions must be posted and settled with the tax authority in the accounting currency only. |
-| Tax          | Enable displaying a sign of the amount in the Balance column of the Sales tax general journal reconciliation report | This feature enables the sign of the amount in the **Balance** column of the **Sales tax general journal reconciliation** report to be shown. |
-| Tax          | (India) Enable credit/debit note against an export invoice | This feature lets you issue a credit or debit note against a posted export invoice. The credit or debit note can be issued by using the general journal, a free text invoice, or an export sales order. A separate number sequence for exporting a credit or debit note must be set up on the **GST Reference number Sequence Group** page. The shipping bill number and date can be recorded in the credit or debit note for reference. |
-| Tax          | Sales tax rate on invoice date in vendor invoice journals | This feature enables the sales tax rate to be determined on the invoice date in the vendor invoice journal, invoice register, and invoice approval journals when the **Calculation date type** field is set to **Invoice date** in General ledger parameters. |
-| Tax          | Date of VAT register in overdue VAT journals | This feature enables the date of the value-added tax (VAT) register to be determined based on the **Calculation type + Minimum number of days** setting in the setup for the overdue debt journal calculation. |
-| Tax          | Sales tax rate on the invoice date in a purchase order credit note | This feature enables the sales tax rate to be determined based on the original invoice date for a purchase order credit note when the **Calculation date type** field is set to **Document date** in General ledger parameters. |
-| Tax          | Conditional tax settlement for Ledger accruals | This feature lets you correctly post a conditional tax settlement together with its payment tax code when ledger accruals are used. |
-| Tax          | Enable creating tax component with pre-defined rules | This feature lets you create a tax component that has predefined rules to support VAT behaviors such as non-deductible and reverse charges for purchases and sales. |
+| Feature name | Enable date | Feature added | Feature state | Module |
+| :---- | :---- | :---- | :---- | :---- |
+| Notification of prepayment invoices marked for settlement | 9/1/2021 | 6/24/2020 | On by default | Accounts payable |
+| Update the invoice quantities to match product receipt quantities in workflow | 9/1/2021 | 6/14/2020 | On by default | Accounts payable |
+| 1099-DIV reporting options | 9/1/2021 | 6/14/2020 | On by default | Accounts payable |
+| Add date option for generating the Accrued purchases excluding the sales tax report | 9/1/2021 | 6/14/2020 | On by default | Accounts payable |
+| Improve the performance of purchase update history cleanup for vendor invoices | 9/1/2021 | 4/1/2020 | On by default | Accounts payable |
+| Improve performance when copying charges to vendor invoice lines | 9/1/2021 | 2/19/2020 | On by default | Accounts payable |
+| Vendor invoice batch posting | 9/1/2021 | 2/19/2020 | On by default | Accounts payable |
+| Attachments button on the Pending invoices journal form | 9/1/2021 | 2/19/2020 | On by default | Accounts payable |
+| Allow filtering the Tax 1099 detail report by reporting year | 9/1/2021 | 2/19/2020 | On by default | Accounts payable |
+| Prohibit submission to workflow when the invoice total and registered invoice total are not equal. | 9/1/2021 | 12/19/2019 | On by default | Accounts payable |
+| Prohibit submission to workflow when there are unallocated charges on a vendor invoice | 9/1/2021 | 10/11/2019 | On by default | Accounts payable |
+| Select all product receipts to match invoices faster. | 9/1/2021 | 9/10/2019 | On by default | Accounts payable |
+| Resetting the workflow status for vendor invoices from Unrecoverable to Draft | 9/1/2021 | 7/24/2019 | On by default | Accounts payable |
+| Credit management | 9/1/2021 | 6/17/2019 | On by default | Accounts receivable |
+| Performance enhancement for free text invoice to avoid tax re-calculation | 9/1/2021 | 4/1/2020 | On by default | Accounts receivable |
+| Improve performance of general ledger reports | 9/1/2021 | 4/1/2020 | On by default | General ledger |
+| Ledger periodic journal legal entity for intercompany tax posting | 9/1/2021 | 6/14/2020 | On by default | General ledger |
+| Dimension attributes values collection optimization in &#39;MasterFiles&#39; report section of SAF-T for Norway | 9/1/2021 | 9/1/2021 | On by default | General ledger |
+| Performance improvements for rebuilding financial dimension sets | 9/1/2021 | 10/23/2020 | On by default | General ledger |
+| Reverse GL foreign currency revaluation through batch processing | 9/1/2021 | 2/20/2021 | On by default | General ledger |
+| Generate the trial balance with transactional detail report | 9/1/2021 | 7/13/2020 | On by default | General ledger |
+| Journal unlock button | 9/1/2021 | 6/17/2019 | On by default | General ledger |
+| Delete journal performance optimizations | 9/1/2021 | 6/17/2019 | On by default | General ledger |
+| Resetting the workflow status for journals | 9/1/2021 | 7/24/2019 | On by default | General ledger |
+| Mass reversals for multiple documents | 9/1/2021 | 10/7/2019 | On by default | General ledger |
+| Subledger transfer to General Ledger performance optimization | 9/1/2021 | 12/19/2019 | On by default | General ledger |
+| Add Vendor ID, Vendor name, Customer ID, and Customer name to the Voucher transaction list page. | 9/1/2021 | 2/19/2020 | On by default | General ledger |
+| Budget planning query optimization for performance | 9/1/2021 | 1/6/2020 | On by default | Budgeting |
+| Performance enhancement for activation of Budget control configuration | 9/1/2021 | 5/10/2020 | On by default | Budgeting |
+| Vendor details added to Bridged transactions and Checks pages | 9/1/2021 | 8/17/2020 | On by default | Cash and bank management |
+| Update measurements on Cash Overview workspaces | 9/1/2021 | 10/23/2020 | On by default | Cash and bank management |
+| Enable update to bank transaction types for advanced bank reconciliation | 9/1/2021 | 11/11/2019 | On by default | Cash and bank management |
+| Enable batch processing for bank payment advice reports | 9/1/2021 | 12/19/2019 | On by default | Cash and bank management |
+| Cancel bank statement reconciliation | 9/1/2021 | 6/17/2019 | On by default | Cash and bank management |
+| Enable bank revaluation globally without a parameter | 9/1/2021 | 5/9/2019 | On by default | Cash and bank management |
+| Validate Finance insights configuration | 9/1/2021 | 9/1/2021 | On by default | Cash and bank management |
+| Change the label of Cancellation in Closing and adjustment to Reverse | 9/1/2021 | 8/17/2020 | On by default | Cost management |
+| Show the items with not fully settled transactions in summary format | 9/1/2021 | 6/14/2020 | On by default | Cost management |
+| Compare item prices storage | 9/1/2021 | 2/19/2020 | On by default | Cost management |
+| Moving average, fallback cost sequence | 9/1/2021 | 3/11/2020 | On by default | Cost management |
+| Collections process automation | 9/1/2021 | 8/17/2020 | On by default | Credit and collections |
+| Sales analysis by invoice report updated to preprocessing report | 9/1/2021 | 2/20/2021 | On by default | Credit and collections |
+| Customer aging performance enhancement | 9/1/2021 | 8/31/2019 | On by default | Credit and collections |
+| Date of VAT register in Overdue VAT journals | 9/1/2021 | 8/17/2020 | On by default | Tax |
+| Sales tax rate on invoice date in vendor invoice journals | 9/1/2021 | 8/17/2020 | On by default | Tax |
+| Sales tax rate on invoice date in purchase order credit note | 9/1/2021 | 10/23/2020 | On by default | Tax |
+| Conditional tax settlement for Ledger accruals | 9/1/2021 | 2/20/2021 | On by default | Tax |
+| Non deductible % field in Posted sales tax | 9/1/2021 | 5/10/2020 | On by default | Tax |
+| [India] GTE calculation validation | 9/1/2021 | 5/10/2020 | On by default | Tax |
+| Enable overriding TCS/TDS group on purchase invoice | 9/1/2021 | 4/24/2020 | On by default | Tax |
+| Calculate origin amount for sales tax specification by ledger transaction report | 9/1/2021 | 4/1/2020 | On by default | Tax |
+| Enable displaying a sign of the amount in the Balance column of the Sales tax general journal reconciliation report | 9/1/2021 | 6/24/2020 | On by default | Tax |
+| (India) Enable Credit/Debit note against export Invoice | 9/1/2021 | 6/24/2020 | On by default | Tax |
+| (India) Enable changing tax rate type in purchase invoice. | 9/1/2021 | 11/11/2019 | On by default | Tax |
+| Enable rounding rules for withholding tax | 9/1/2021 | 12/19/2019 | On by default | Tax |
+| Enable inquiry form for posted sales tax | 9/1/2021 | 2/19/2020 | On by default | Tax |
+| Sales tax conversion | 9/1/2021 | 2/19/2020 | On by default | Tax |
+| Generate the Sales tax payment by code report in the sales tax code currency | 9/1/2021 | 3/11/2020 | On by default | Tax |
+| Generation of &quot;GST transaction ID&quot; at export invoice posting. | 9/1/2021 | 10/7/2019 | On by default | Tax |
+| Enable multi batch processing for GSTR report | 9/1/2021 | 8/31/2019 | On by default | Tax |
+| Enable creating tax component with pre-defined rules | 9/1/2021 | 9/10/2019 | On by default | Tax |
+| [Saudi Arabic] Enable tax calculation for full project invoice amount | 9/1/2021 | 9/10/2019 | On by default | Tax |
+
+> [!NOTE]
+> Advanced ledger settlement was introduced as a new feature before Feature management was widely available. This feature was turned on and off using a General ledger parameter. The Advanced ledger settlement feature has been evaluated and is now turned on by default; it can’t be turned off. The parameter that turned it on and off was removed, so all customers should be using advanced ledger settlement functionality moving forward. New enhancements for Ledger settlement are in progress, and are dependent on the Advanced ledger settlement feature being turned on.
+
+### Additional information for Tax features
+
+| Feature name in feature management | More information |
+|---|---|
+| (Saudi Arabia) Enable tax calculation for full project invoice amount | This feature enables tax calculation that is based on the full project invoice amount before the retention amount is deducted on the project invoice. No tax is calculated on the retention project invoice. |
+| Enable multi-batch processing for the GSTR report | This feature enables multi-batch processing for the GSTR report and improves the performance of report generation. |
+| Generation of "GST transaction ID" at export invoice posting | This feature enables the Goods and Services Tax (GST) transaction ID to be assigned when the invoice is posted for export transactions through a sales order. |
+| (India) Enable changing tax rate type in purchase invoice | In India, when a vendor invoice is received from the supplier, the tax rate often differs from the tax rate on the purchase order. This feature gives you the flexibility to change to the tax rate type on the vendor invoice. |
+| Enable rounding rules for withholding tax | This feature enables the rounding rules that are set for the withholding tax code in the **Rounding form** field on the **Withholding tax codes** page (**Tax** \> **Indirect taxes** \> **Withholding tax** \> **Withholding tax codes**). When this feature is enabled, the withholding tax amount is rounded according to the setup of **Normal**, **Downward**, or **Rounding-up**. This feature requires that the transaction currency and tax currency be the same. |
+| Sales tax conversion | This feature enables dual currency support for the tax domain. After you enable this feature, you can specify the routing of sales tax amount conversions under different currencies. You can also enable auto-balancing for sales tax payments in the reporting currency. |
+| Enable inquiry form for posted sales tax | This feature makes the **Inquiry** page available for posted sales tax. Therefore, it helps improve inquiry performance and search transactions. |
+| Calculate origin amount for sales tax specification by ledger transaction report | This feature enables the origin amount to be calculated on the **Sales tax specification by ledger transaction** report when it's grouped by sales tax code and when the **Total** option is set to **Yes**. |
+| (India) Enable overriding TCS/TDS group on purchase invoice | This feature lets you override the Tax Collected at Source (TCS)/Tax Deducted at Source (TDS) group value on a vendor invoice that is created from a purchase order. |
+| (India) GTE calculation validation | This feature enables validation for the Tax engine (GTE) calculation to help prevent empty tax components or zero tax amounts. |
+| Non deductible % field in Posted sales tax | When this feature is enabled, the **Non deductible %** field in sales tax transactions is set from the corresponding sales tax codes. The field is located on the **Posted sales tax** page. |
+| (India) Enable withholding setup for currency validation to prevent the withholding payment from failing due to currency variations | This feature ensures that the currency is set up for withholding tax codes and the withholding tax authority in the accounting currency. All withholding tax transactions must be posted and settled with the tax authority in the accounting currency only. |
+| Enable displaying a sign of the amount in the Balance column of the Sales tax general journal reconciliation report | This feature enables the sign of the amount in the **Balance** column of the **Sales tax general journal reconciliation** report to be shown. |
+| (India) Enable credit/debit note against an export invoice | This feature lets you issue a credit or debit note against a posted export invoice. The credit or debit note can be issued by using the general journal, a free text invoice, or an export sales order. A separate number sequence for exporting a credit or debit note must be set up on the **GST Reference number Sequence Group** page. The shipping bill number and date can be recorded in the credit or debit note for reference. |
+| Sales tax rate on invoice date in vendor invoice journals | This feature enables the sales tax rate to be determined on the invoice date in the vendor invoice journal, invoice register, and invoice approval journals when the **Calculation date type** field is set to **Invoice date** in General ledger parameters. |
+| Date of VAT register in overdue VAT journals | This feature enables the date of the value-added tax (VAT) register to be determined based on the **Calculation type + Minimum number of days** setting in the setup for the overdue debt journal calculation. |
+| Sales tax rate on the invoice date in a purchase order credit note | This feature enables the sales tax rate to be determined based on the original invoice date for a purchase order credit note when the **Calculation date type** field is set to **Document date** in General ledger parameters. |
+| Conditional tax settlement for Ledger accruals | This feature lets you correctly post a conditional tax settlement together with its payment tax code when ledger accruals are used. |
+| Enable creating tax component with pre-defined rules | This feature lets you create a tax component that has predefined rules to support VAT behaviors such as non-deductible and reverse charges for purchases and sales. |
+
 
 ## Additional resources
 

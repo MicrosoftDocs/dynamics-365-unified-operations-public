@@ -5,7 +5,7 @@ author: laneswenka
 ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 This topic explains how to enable dual-write from Microsoft Dynamics Lifecycle Services (LCS).
 

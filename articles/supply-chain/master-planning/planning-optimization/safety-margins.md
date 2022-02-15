@@ -64,9 +64,6 @@ Note that a receipt margin isn't applied when on-hand inventory is used as the s
 
 ### Reorder margin
 
-> [!NOTE]
-> **Coming soon:** This feature isn't yet supported for Planning Optimization. Until it's supported, all values that are entered for **Reorder margin added to item lead time** will be treated as *0* (zero).
-
 The following illustration highlights the reorder margin.
 
 ![Reorder margin.](media/safety-margins-3.png)
@@ -74,9 +71,6 @@ The following illustration highlights the reorder margin.
 The reorder margin is added before the item lead time for all planned orders during master planning. Therefore, it ensures additional time for a supply order to be placed. This margin is typically used as a buffer to ensure time for approval processes or other internal processes that are required during the creation of supply orders. The reorder margin is put between the supply *order date* and *start date*.
 
 ### Issue margin
-
-> [!NOTE]
-> **Coming soon:** This feature isn't yet supported for Planning Optimization. Until it's supported, all values that are entered for **Issue margin deducted from requirement date** will be treated as *0* (zero).
 
 The following illustration highlights the issue margin.
 

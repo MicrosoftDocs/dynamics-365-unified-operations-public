@@ -4,7 +4,7 @@
 title: Create a sales tax payment
 description: The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period. 
 author: twheeloc
-ms.date: 10/25/2021
+ms.date: 01/04/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -30,12 +30,17 @@ ms.dyn365.ops.version: Version 7.0.0
 The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts, and offsets them to the sales tax settlement account for a given period.
 
 1. Go to **Tax > Declarations > Sales tax > Settle and post sales tax**.
-2. In the **Settlement period** field, click the drop-down button to open the lookup.
+2. In the **Settlement period** field, select the drop-down button to open the lookup.
 3. In the list, click the link in the selected row.
-4. In the **From date** field, enter a date.
-    - If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. Original is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions which have been posted after the original version has been created.
+4. In the **From date** field, enter a date. If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. **Original** is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions, which have been posted after the original version has been created.
 5. In the **Transaction date** field, enter a date.
-6. Click **OK**.
+6. Select **OK**. The **Sales tax payments** report is printed to review the settled sales tax transactions in the period.
+
+Starting in Finance version 10.0.24, you can omit the **Sales tax payments** report being generated right after the **Settle and post sales tax** periodic procedure is implemented under the **Separate sales tax payment report generation from sales tax settlement** feature in the **Feature management** workspace.
+
+When the feature is enabled, after the settlement process is completed, no sales tax payment report is printed. Instead, you receive the following message, "The sales tax settlement and posting is completed. The voucher 'xxxx, m/d/yyyy' has been posted."
+
+You can still manually run the sales tax payment report by going to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**.
 
 ## Performance consideration
 
