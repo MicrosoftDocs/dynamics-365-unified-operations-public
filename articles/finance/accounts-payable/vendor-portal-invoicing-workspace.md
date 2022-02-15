@@ -4,7 +4,7 @@
 title: Vendor collaboration invoicing workspace
 description: This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 author: abruer
-ms.date: 08/22/2017
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: VendInvoiceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
+This topic explains how you can view vendor invoices and submit invoices from the **Vendor collaboration invoicing** workspace.
 
 The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to the system using workflow capabilities.
 
@@ -50,11 +50,11 @@ Clicking on a tile will open a filtered view of the **Invoices list** page.
 
 ### Tabular lists
 
-In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists. While in the Draft state, an invoice can be submitted to workflow or deleted. The last tabular list is an option to find invoices. You can filter as you search, to allow for faster searches.
+In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: **Draft** and **Submitted**, **Mot approved** lists. While in the **Draft** state, an invoice can be submitted to workflow or deleted. The last tabular list is an option to find invoices. You can filter as you search, to allow for faster searches.
 
 ### All vendor invoices list page
 
-You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page. You can use this list page to view the payment status of the invoices. The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.
+You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page. You can use this list page to view the payment status of the invoices. The payment statuses include **Unposted**, **Unpaid**, **Partially paid**, and **Fully paid**.
 Creating a new invoice from a purchase order
 
 You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace. The purchase order number and invoice number must be provided by the vendor. By default, all of the lines from the vendor's purchase order will appear on the new invoice. The quantity and cost information can be edited prior to submitting the vendor invoice to workflow. You can attach files, notes, images, and URLs to an invoice before submitting it.
