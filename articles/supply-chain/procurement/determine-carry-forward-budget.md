@@ -33,11 +33,11 @@ Regardless of whether the *Reduce carry-forward budget when an invoice against a
 - Preserve the carry-forward budget as created.
 - Automatically adjust the carry-forward budget to remove the canceled or reduced amount.
 
-Only purchase order lines with distributions that include a fund are available for automatic budget adjustment. The automatic budget adjustment takes place when the purchase order is finalized.
+Only purchase order lines with distributions that include a fund are available for automatic budget adjustment. The automatic budget adjustment takes place when the purchase order is finalized or when a purchase order reduction is confirmed.
 
 ## Invoice reductions
 
-When the the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system, you can set whether each fund should also reduce the carry-forward budget when an invoice is reduced in addition to when a purchase order is reduced or cancelled. The invoice must be for a purchase order with carry-forward budget. Reductions include price variances, charge variances, and tax variances. When a carry-forward purchase order is reduced during invoicing, a variance is created. Posting the invoice will reduce the purchase order encumbrance by the amount of the variance.
+When the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system, you can set whether each fund should also reduce the carry-forward budget when an invoice is reduced in addition to when a purchase order is reduced or cancelled. The invoice must be for a purchase order with carry-forward budget. Reductions include price variances, charge variances, and tax variances. When a carry-forward purchase order is reduced during invoicing, a variance is created. Posting the invoice will reduce the purchase order encumbrance by the amount of the variance. This feature will also create the automatic budget adjustment for the amount of the variance.
 
 When the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned off, the carry-forward budget isn't reduced in this scenario. That leaves the remaining carry-forward budget behind for the amount of the variance.
 
