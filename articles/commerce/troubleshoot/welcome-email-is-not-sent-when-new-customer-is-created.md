@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Welcome email is not sent to new customers is created
-description: This topic provides troubleshooting guidance that can help when customer do not receive a welcome email notification when a new customer is created.
+title: Welcome email is not sent when new customers are created
+description: This topic provides troubleshooting guidance for when a welcome email notification isn't sent when a new customer is created in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2022
 ms.topic: article
@@ -17,24 +17,21 @@ ms.search.validFrom: 2022-02-10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help when customer do not receive a welcome email notification when a new customer is created.
+This topic provides troubleshooting guidance for when a welcome email notification isn't sent when a new customer is created in Microsoft Dynamics 365 Commerce.
 
 ## Description
 
-When a new customer is created a welcome email is not sent to the newly created customer despite having an email notification configured for customer created event type in Headquarters.
+When a new customer is created in Commerce headquarters, a welcome email is not sent to the newly created customer despite having an email notification configured for the **Customer created** email notification type.
 
 ## Resolution
 
-### Set proper EmailID for customer created event
+### Set correct Email ID value for the Customer created email notification type
 
-Commerce email notification profile
-Retail and Commerce > Headquarters setup
+To set the correct **Email ID** value for the **Customer created** email notification type, follow these steps.
 
-
-
-1. Go to **Retail and Commerce \> Headquarters setup \> Commerce email notification profile **.
-1. Select the notification profile in the list. 
-1. Under  **Retail event notifications settings** identify the **Customer created** email notification type, and make sure **Email Id** value is given as **NewCust**
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce email notification profile**.
+1. Select the email notification profile in the left navigation pane. 
+1. Under **Retail event notifications settings**, for the **Email notification type** ensure that the **Customer created** notification type has an **Email ID** value of **NewCust**.
 
 ## Additional resources
 
