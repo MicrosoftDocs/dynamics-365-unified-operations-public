@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 01/27/2022
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -194,20 +194,20 @@ For example, in 2022, the following values should be reported in some countries.
 
 **Optional elements**
 
-| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Northern Ireland (United Kingdom) | Poland | Spain | Sweden |
+| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Poland | Spain | Sweden | United Kingdom (Northern Ireland) |
 |-------|---------|---------|---------|---------|--------|---------|-------------|-----------------------------------|--------|-------|--------|
-| Delivery terms | No | **Yes** | No | No | No | No | No | **Yes** | **Yes** | **Yes** | No |
-| Mode of transport | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** | No | No | **Yes** | **Yes** | No |
-| State of origin (Region of origin) | No | **Yes** | No | No | No | **Yes** | No | No | No | No | No |
-| County of origin (Region of origin) | No | No | No | No | **Yes** | No | No | No | No | **Yes** | No |
-| Statistics procedure | **Yes** | No | No | No | **Yes** | No | **Yes** | No | No | **Yes** | No |
+| Delivery terms | No | **Yes** | No | No | No | No | No | **Yes** | **Yes** | No | **Yes**|
+| Mode of transport | **Yes** | **Yes** | No | **Yes** | **Yes** | **Yes** | No | **Yes** | **Yes** | No | No |
+| State of origin (Region of origin) | No | **Yes** | No | No | No | **Yes** | No |  No | No | No | No |
+| County of origin (Region of origin) | No | No | No | No | **Yes** | No | No |  No | **Yes** | No | No |
+| Statistics procedure | **Yes** | No | No | No | **Yes** | No | **Yes** |  No | **Yes** | No | No |
 
 **Additional elements for country purposes**
 
-| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Northern Ireland (United Kingdom) | Poland | Spain | Sweden |
+| Value | Austria | Belgium | Denmark | Finland | France | Germany | Netherlands | Poland | Spain | Sweden | United Kingdom (Northern Ireland) |
 |-------|---------|---------|---------|---------|--------|---------|-------------|-----------------------------------|--------|-------|--------|
-| Transport document (Invoice, Identification of packing slip or product receipt) | No | No | No | No | No | No | **Yes** | No | No | No | No |
-| Port ((Air)port of (un)loading) | No | No | No | No | No | No | No | No | No | **Yes** | No |
+| Transport document (Invoice, Identification of packing slip or product receipt) | No | No | No | No | No | No | **Yes** | No | No | No | No|
+| Port ((Air)port of (un)loading) | No | No | No | No | No | No | No | No | **Yes** | No | No | 
 
 > [!NOTE]
 > Select all values that must be reported on the **Compression of Intrastat** page.
