@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/database/replication-setup.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/glossary.md",
       "redirect_url": "/dynamics365/finance/index",
       "redirect_document_id": "false"
