@@ -59,7 +59,7 @@ To create a billing schedule, follow these steps.
 11. To align the billing schedule detail lines with the end of a month, set the **Align to month** option to **Yes**.
 12. In the **Contract start date** and **Contract end date** fields, enter the start and end dates of the contract. These dates are for information only.
 
-    **Payment** shows the customer payment information from the customer. When a line item is on hold or terminated, the payment information can't be changed.
+  The **Payment** field shows the customer payment information from the customer. When a line item is on hold or terminated, the payment information can't be changed.
 
     > [!NOTE]
     > When you consolidate invoices by item, the value of the **Payment terms**, **Method**, and **Billing schedule** fields must match. Otherwise, the invoices can't be consolidated.
@@ -94,7 +94,7 @@ The rest of this topic describes the actions and details that are available for 
 
 ## Billing schedule line actions
 
-The buttons on the **Billing schedule lines** FastTab let you apply actions to one line at a time.
+The buttons on the **Billing schedule lines** FastTab let you apply actions to individual lines.
 
 | Button | Description |
 |--------|-------------|
