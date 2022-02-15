@@ -71,7 +71,7 @@ data.
 
 For example, the **CustGroup** table is enabled for data sharing and **USMF** is
 selected as the master company, and **CH1** and **CH2** are the child companies.
-The output will look like this when you read records from CustGroup (Phyiscal) and
+The output will look like this when you read records from CustGroup (Physical) and
 CustGroup_SharingView. (*View* illustrates kernel logic, but is only used for
 non-kernel based scenarios)
 
@@ -84,7 +84,7 @@ If a company-specific table has **Data Sharing Type = Single**, it means it has 
 
 If a company-specific table has **Data Sharing Type = Duplicate**, it means it has already been evaluated for DRS. If you want to enable it for SRS, you need to evaluate its functional eligibility before changing the property to **Single**.
 
-If a company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS. Because a DRS table can participate in both DRS and SRS policies. It may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
+If a company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS. Because a DRS table can participate in both DRS and SRS policies, it may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
 
 + If a company-specific table has a unique index or alternate key, then apply DRS.
     +	If the table has a foreign key field and the corresponding table is set to **Data Sharing Type = None**, then set the **Single Data Sharing Type** property for that field to **Never**.
