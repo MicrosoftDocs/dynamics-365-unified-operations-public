@@ -3,8 +3,8 @@
 
 title: Settle remainder
 description: You can settle the amount remaining from settlement activity by applying that amount to a ledger account.
-author: roschlom
-ms.date: 10/16/2018
+author: twheeloc
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVen
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
 
@@ -35,10 +35,10 @@ You can settle the amount remaining from settlement activity by applying that am
 You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions.
 
 ## Setting up defaults 
-You must enable the Settle remainder feature and set up the default settings before you use Settle remainder
+You must enable the **Settle remainder** feature and set up the default settings before you use **Settle remainder**.
 
 1)  Click **Accounts receivable > Parameters > Settlements** or **Accounts payable > Parameters > Settlements**
-2)  Select the **Settlement** tab and click **Enable settle remainder**
+2)  Select the **Settlement** tab and click **Enable settle remainder**.
 3)  In **Default reason code**, select a default reason code. The reason codes must have already been set up in **Accounts receivable > Setup > Customer write-off reason codes** or **Accounts payable > Setup > Customer write-off reason codes**. The **Default settle remainder account** will default to the account assigned to the write-off reason code.
 3)  Update the **Default settle remainder account** as needed.
 4)  In the **Default journal name**, select a payment journal that will be used if you want to create a payment journal when you only settle open transactions. If you enable the settle remainder feature, you must add a default journal name.
@@ -71,8 +71,8 @@ You can also settle the remainder when you are settling open transactions withou
 
 To settle the remainder, perform the following steps:
 
-1)  On the **Settlement** page, mark the invoices or transactions that you want to settle
-2)  Click on **Settle remainder**
+1)  On the **Settlement** page, mark the invoices or transactions that you want to settle.
+2)  Click on **Settle remainder**.
 3)  A dialog box will display, showing the amount that will be settled against a ledger account, the date 
 that will be used to settle the remainder, the default reason code from the parameters, and the default account from the parameters. 
 4)  Select a new settlement reason if you want to change the default reason. The settlement account will be changed to the
