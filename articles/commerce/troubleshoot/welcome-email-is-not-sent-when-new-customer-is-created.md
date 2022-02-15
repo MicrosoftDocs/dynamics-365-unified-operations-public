@@ -13,7 +13,7 @@ ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
 ---
 
-# Welcome email is not sent to new customers upon sign up
+# Welcome email is not sent when new customers are created
 
 [!include [banner](../../includes/banner.md)]
 
