@@ -46,20 +46,20 @@ To create a billing schedule, follow these steps.
 6. On the **Billing schedule** page, in the **General** tab, in the **Description** field, enter a description of the billing schedule.
 7. In the **Milestone template** field, select a milestone template for **Milestone billing**.
 
-    Fields such as **Invoice account** and **Currency code** are updated with information from the customer.
+Fields such as **Invoice account** and **Currency code** are updated with information from the customer.
 
-    The **Billing frequency** and **Billing interval** fields are automatically set, based on the selected billing schedule group.
+The **Billing frequency** and **Billing interval** fields are automatically set, based on the selected billing schedule group.
 
 8. To create separate invoices, set the **Invoice separately** option to **Yes**.
 9. To automatically renew a billing schedule after the final billing period, set the **Renew Automatically** option to **Yes**, and then set the **Lines to add per renewal** field.
 
-    The **Parameters** fields are automatically set, based on the values on the **Recurring contract billing parameters** page.
+The **Parameters** fields are automatically set, based on the values on the **Recurring contract billing parameters** page.
 
 10. To prorate the amount of a billing schedule, set the **Prorate partial periods** option to **Yes**.
 11. To align the billing schedule detail lines with the end of a month, set the **Align to month** option to **Yes**.
 12. In the **Contract start date** and **Contract end date** fields, enter the start and end dates of the contract. These dates are for information only.
 
-  The **Payment** field shows the customer payment information from the customer. When a line item is on hold or terminated, the payment information can't be changed.
+The **Payment** field shows the customer payment information from the customer. When a line item is on hold or terminated, the payment information can't be changed.
 
 > [!NOTE]
 > When you consolidate invoices by item, the value of the **Payment terms**, **Method**, and **Billing schedule** fields must match. Otherwise, the invoices can't be consolidated.
@@ -80,7 +80,7 @@ To create a billing schedule, follow these steps.
 26. In the **Unit** field, select the unit of measure for the item.
 27. In the **Pricing method** field, select the pricing method for the item.
 
-    The **Unit price** field is automatically set from inventory. However, you can update it if you change the pricing method to **Flat**.
+The **Unit price** field is automatically set from inventory. However, you can update it if you change the pricing method to **Flat**.
 
 ## Remove a line item
 
