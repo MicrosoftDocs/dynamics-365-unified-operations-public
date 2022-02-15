@@ -3,7 +3,7 @@
 title: Place B2B website orders quickly
 description: This topic describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 author: shajain
-ms.date: 02/09/2022
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ The following illustration shows an example of quick order entry by product item
 
 ## Bulk order by variant
 
-Commerce B2B e-commerce websites let site users quickly add different variants of the same product in a single view that shows inventory visibility by size, color, and style. In addition, site users can easily enter the same quantity for all in-stock products by selecting **Enter all quantities**.
+Commerce B2B e-commerce websites let site users quickly add different variants of the same product in a single view that shows inventory availability by size, color, and style. In addition, site users can easily enter the same quantity for all in-stock products by selecting **Enter all quantities**.
 
 The following illustration shows an example of quick order entry where the "enter all quantities" functionality is used.
 
