@@ -47,6 +47,11 @@ This section provides information about the fields that are required on the **Tr
 
 ![Transportation details page.](media/latam-mx-transportation-details.png)
 
+> [!NOTE]
+> Starting from version ...  you can fill in **Loading date and time** and **Name** (shipment address) on **Transportation details** page (**Loading** FastTab). If **Loading date and time** field is empty, the system selects the value from the transaction. If **Name** (shipment address) is empty, the system selects the value from warehouse/ site address.
+> Weight unit
+> Transportation actors     
+
 ### General FastTab
 
 The following fields are required:
@@ -113,6 +118,7 @@ Follow these steps to set up the Mexican tax authorities (SAT) catalogs to add i
 2. Select and open the item record that you want to work with.
 3. On the **Manage inventory** FastTab, set the **Net weight** and **Tare weight** fields if they are required. The **Gross weight** field is automatically set.
 
+
 ### Distance and time
 
 You can define information about the distance and transportation time between shipment delivery locations in advance. Then, when users enter distance and transportation time on the **Transportation details** page, they can save time by selecting existing values instead of having to calculate new values. Follow these steps to set up information about the distance and transportation time between transportation spots.
@@ -169,6 +175,8 @@ After you enable the feature, follow these steps to enter additional hazardous m
 
 > [!NOTE] 
 > To select values for the **Regulation code** and **Packing group** fields, first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordence with the SAT catalogs **c_MaterialPeligroso** and **c_TipoEmbalaje** which are located under **Product information management** > **Setup** > **Hazardous material shipping documentation**.    
+
+> [!NOTE] Starting from version ..... you can handling with **Display hazardous status** option (Add matrialPeligrosso attribute to xml document). You can set **Hazardous materials** option to **Yes**, if this **Display hazardous status** option is set to **Yes**. 
 
    ![Item hazardous materials page.](media/latam-mx-hazardous2.png)
 
