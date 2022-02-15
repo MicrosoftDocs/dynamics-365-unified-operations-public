@@ -136,7 +136,7 @@ Because it is not possible to stop or reduce the sharing scope, it is strongly r
 
 All possible fields are selected by default when a table is added to a master company sharing policy. This includes all foreign key fields for all tables that are supported for master company sharing. One example is that the Vendors table will be added when the Customer table is added, unless the Vendors table is already shared using DRS.
 
-Master company polices can’t be disabled; therefore, it is especially important to manually add all tables that otherwise will be added automatically based on the by default selected foreign key fields. If not, these tables will not be visible in the policy form.  
+Master company polices can’t be disabled; therefore, it is especially important to manually add all tables that otherwise will be added automatically based on the default foreign key fields. If not, these tables will not be visible in the policy form.  
 
 ### Limitations
 The following limitations exist:
