@@ -4,7 +4,7 @@
 title: Complete the Azure Resource Manager onboarding process
 description: This topic explains how to complete the Azure Resource Manager onboarding process for your connectors. 
 author: saurabhsurana
-ms.date: 08/30/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -92,11 +92,15 @@ Follow these steps to enable the Azure Connector and, as required, add an LCS us
 2.  On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, click **Add**. 
 
     > [!NOTE]
-    > If you're enabling Azure Resource Manager (ARM) for an existing connector, click **Edit**.
+    > If you're enabling Azure Resource Manager for an existing connector, click **Edit**.
     
 3.  Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
 4.  In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then click **Next**.
-5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate. **Important:** If you're adding an LCS user, continue with step 6. If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, "Upload the Management certificate." **Management certificates are being deprecated**.
+5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate. 
+
+    > [!Important] 
+    > If you're adding an LCS user, continue with step 6. If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, "Upload the Management certificate." **Management certificates are being deprecated**.
+    
 6.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
 7.  In the **Access Control (IAM)** dialog box, click **Add**, select **Contributor**, and then click **OK**.
 8.  In the **Add users** dialog box, in the **Select** field, enter the LCS user, and then press Enter. 
@@ -120,7 +124,7 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pre
 
 ## Expired connectors
 
-Azure connectors that were created using Management Certificates have an expiry date for when the certificate is no longer valid.  An expired certificate will prevent you from using the Azure Connector, which in turn will prevent you from managing any resources deployed from LCS via the same connector.  **Management certificates are being deprecated** so to renew the connector we recommend to follow [Enable the Azure connector and add an LCS user](arm-onboarding.md#enable-the-azure-connector-and-add-an-lcs-user) to **edit** the connector and configure the connection using an LCS user.
+Azure connectors that were created using management certificates have an expiry date for when the certificate is no longer valid.  An expired certificate will prevent you from using the Azure Connector, which in turn will prevent you from managing any resources deployed from LCS via the same connector.  **Management certificates are being deprecated** so to renew the connector we recommend to follow [Enable the Azure connector and add an LCS user](arm-onboarding.md#enable-the-azure-connector-and-add-an-lcs-user) to **edit** the connector and configure the connection using an LCS user.
 
 ## Known limitations
 Below are a few known limitations when setting up or managing Azure Connectors in Lifecycle Services.
