@@ -4,7 +4,7 @@
 title: Taxes on online orders are incorrectly calculated
 description: This topic provides troubleshooting guidance that can help when taxes on online orders are incorrectly calculated, or when the tax group on the sales line isn't correctly set.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/15/2022
 ms.topic: Troubleshooting
 ms.prod: 
 ms.technology: 
@@ -44,11 +44,11 @@ When an e-commerce order is placed, the taxes are incorrectly calculated, or the
 To configure general sales tax groups in Commerce headquarters, follow these steps.
 
 1. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax group**.
-1. In the left navigation, select the tax group to configure.
+1. In the left navigation pane, select the tax group to configure.
 1. On the **Retail destination based tax** FastTab, configure the taxes for the sales tax group.
 
 > [!NOTE]
-> For shipping that doesn't involve sales tax on the customer's address, the delivery address of the line and the destination-based taxes that are configured for the tax group determine the tax group. For more information, see [Set up taxes for online stores based on destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+> For shipping that doesn't involve sales tax determined by the customer's address, the delivery address of the line and the destination-based taxes that are configured for the tax group determine the tax group. For more information, see [Set up taxes for online stores based on destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ### Configure the sales tax for a retail store in Commerce headquarters
 
