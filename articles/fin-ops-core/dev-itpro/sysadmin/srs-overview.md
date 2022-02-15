@@ -69,7 +69,7 @@ Master company sharing should be considered only if there is a need to share:
     - The limit is calculated as number of records per company x number of companies in a policy.
     -   The table is supported for master company sharing.
 
-|    | Duplicate record sharing | Master company sharing |
+|  Considerations  | Duplicate record sharing | Master company sharing |
 |----|-----|-----|
 | Can tables, fields and/or companies be removed after a policy has been enabled/updated? | Yes   | No   |
 | Can a policy be disabled? |  Yes  |  No  |
