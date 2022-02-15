@@ -92,11 +92,11 @@ Follow these steps to enable the Azure Connector and, as required, add an LCS us
 2.  On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, click **Add**. 
 
     > [!NOTE]
-    > If you're enabling AAzure Resource ManagerRM for an existing connector, click **Edit**.
+    > If you're enabling Azure Resource Manager (ARM) for an existing connector, click **Edit**.
     
 3.  Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
 4.  In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then click **Next**.
-5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate. **Important:** If you're adding an LCS user, continue with step 6. If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, "Upload the Management certificate."
+5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate. **Important:** If you're adding an LCS user, continue with step 6. If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, "Upload the Management certificate." **Management certificates are being deprecated**.
 6.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
 7.  In the **Access Control (IAM)** dialog box, click **Add**, select **Contributor**, and then click **OK**.
 8.  In the **Add users** dialog box, in the **Select** field, enter the LCS user, and then press Enter. 
@@ -106,7 +106,7 @@ Follow these steps to enable the Azure Connector and, as required, add an LCS us
 
 #### Upload the Management certificate
 
-Complete this procedure only if you didn't complete steps 6 through 8 of the previous procedure, "Enable the Azure Connector and add an LCS user."
+Complete this procedure only if you didn't complete steps 6 through 8 of the previous procedure, "Enable the Azure Connector and add an LCS user." **Management certificates are being deprecated** so the below documentation is for backwards compatibility only.
 
 1.  In LCS, on the **Microsoft Azure setup** page, click **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
 2.  In the [Azure classic portal](https://manage.windowsazure.com/), in the left pane, click **Settings**.
@@ -118,9 +118,14 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pre
 1.  In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
 2.  On the **Microsoft Azure setup** page, select the region to deploy to, and then click **Connect**. The Azure Resource Manager onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
 
+## Expired connectors
 
+Azure connectors that were created using Management Certificates have an expiry date for when the certificate is no longer valid.  An expired certificate will prevent you from using the Azure Connector, which in turn will prevent you from managing any resources deployed from LCS via the same connector.  **Management certificates are being deprecated** so to renew the connector we recommend to follow [Enable the Azure connector and add an LCS user](arm-onboarding.md#enable-the-azure-connector-and-add-an-lcs-user) to **edit** the connector and configure the connection using an LCS user.
 
+## Known limitations
+Below are a few known limitations when setting up or managing Azure Connectors in Lifecycle Services.
 
-
+- Prospect organizations are not allowed to setup Azure Connectors.  That is because prospects have not purchased a license for a Finance and Operations app and hence cannot deploy the software.  You can determine your organization type by click on your name in the top right corner of the screen when logged in to LCS.
+- An Azure Connector can only be created for a new combination of Azure Subscription ID and Azure Region.  You cannot create many connectors pointed to the same subscription and region.  If you need to delete an Azure connector for a given subscription and region combination, you will first need to delete all environments created by that connector before you can delete the connector.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
