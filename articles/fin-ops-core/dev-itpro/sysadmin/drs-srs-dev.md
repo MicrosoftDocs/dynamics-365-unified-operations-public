@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cross-company data sharing
+title: Cross-company data sharing for developers
 description: This topic describes cross-company data sharing, which is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
 ms.date: 01/27/2022
@@ -27,9 +27,11 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Enable a table for cross-company data sharing
+# Cross-company data sharing for developers
 
 [!include [banner](../includes/banner.md)]
+
+## Enable a table for cross-company data sharing 
 
 Enabling a table for data sharing is a 2-step process updating the metadata
 property for the table.
