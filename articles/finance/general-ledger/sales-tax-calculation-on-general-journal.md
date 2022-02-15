@@ -85,11 +85,7 @@ The following diagram illustrates the rule graphically.
 
 If a voucher has journal line where the account type is **Customer**, all the journal lines in the voucher apply the same tax direction. The following points show the possible tax directions for customer accounts.
 
-•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
-
-•	If the sales tax code is intracom VAT, then sales tax direction is Sales Tax Receivable.
-
-•	If the sales tax code is reverse charge, then sales tax direction is Sales Tax Receivable.
+•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Sales.
 
 Otherwise, sales tax direction is Sales Tax Payable.
 
