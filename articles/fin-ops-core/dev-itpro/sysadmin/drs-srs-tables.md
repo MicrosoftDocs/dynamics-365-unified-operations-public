@@ -331,7 +331,7 @@ To download a cross-company data sharing template from Lifecycle Services (LCS),
 4.	Select any of the available data package files that you want to download.
 For details about how to use a template, see [Configure financial cross-company data sharing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing).
 
-# Tables supported for master company data sharing
+## Tables supported for master company data sharing
 It might be possible to add additional tables to master company data sharing policies, however, any table not listed in the following table is not officially supported.
 
 **Dynamics 365 Finance**
