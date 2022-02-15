@@ -329,7 +329,7 @@ To download a cross-company data sharing template from Lifecycle Services (LCS),
 2.	On the home page, select Shared asset library.
 3.	In the Asset type list, select Data package.
 4.	Select any of the available data package files that you want to download.
-For details about how to use a template, see [Configure financial cross-company data sharing](data-entities/tasks/configure-financial-cross-company-data-sharing.md).
+For details about how to use a template, see [Configure financial cross-company data sharing](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
 ## Tables supported for master company data sharing
 It might be possible to add additional tables to master company data sharing policies, however, any table not listed in the following table is not officially supported.
