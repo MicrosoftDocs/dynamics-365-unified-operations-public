@@ -22,7 +22,7 @@ This topic describes how to control what happens to the carry-forward budget whe
 
 For details about how purchase orders are processed at year end, see [Process purchase orders at year end](/dynamicsax-2012/appuser-itpro/process-purchase-orders-at-year-end).
 
-## Enable or disable carry-forward budget reductions for invoice variances
+## Turn carry-forward budget reductions for invoice variances on or off
 
 The system is always able to update the cary-forward budget when a purchase order is cancelled or reduced. However, if you would also like the system to update the cary-forward budget when an invoice is reduced, the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature must be turned on for your system. Admins can turn this feature on or off by searching for it in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
