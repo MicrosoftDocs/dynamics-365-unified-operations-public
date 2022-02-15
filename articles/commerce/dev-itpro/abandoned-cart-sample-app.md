@@ -48,7 +48,7 @@ The email that customers receive can contain the following information:
 
 Abandoned cart retrieval and sending to a 3rd party email marketing provider is enabled through a connector model that Microsoft provides through the Dynamics 365 Commerce SSK. The connector handles communication with Retail Server, leverages Azure KeyVault for security, handles scheduling of cart retrieval for a specified time window, and retrieves order and product data. The connector also provides a sample implementation for an integration with a 3rd party email marketing provider. Out of the box, the connector is built to communicate with [Emarsys](https://emarsys.com), and it can be easily customized to integrate with other solutions such as ConstantContact, MailChimp, SendGrid or others. 
 
-![Component diagram of abandoned cart connector sample app](media\AbandonedCartConnector.png)
+![Component diagram of abandoned cart connector sample app](media/AbandonedCartConnector.png)
 
 > [!NOTE]
 > Microsoft does not provide an affordance for customers who wish to opt out of having their cart data passed to an email marketing provider, or who wish to have their data removed. If you plan to do business in regions that mandate these options for customers, you will need to provide the necessary infrastructure and customizations to collect and track the customer preference, and suppress the passing of their data to your email platform based on that preference. Additionally, you will need to define a process for purging customer data from your email marketing provider if requested by a customer. 
