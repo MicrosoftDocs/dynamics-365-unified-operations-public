@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cross-company data sharing
+title: Cross-company data sharing overview
 description: This topic describes cross-company data sharing, which is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
 ms.date: 01/27/2022
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Cross-company data sharing
+# Cross-company data sharing overview
 
 [!include [banner](../includes/banner.md)]
 
