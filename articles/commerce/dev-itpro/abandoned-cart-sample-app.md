@@ -4,7 +4,7 @@
 title: Detect abandoned carts and send notifications to customers
 description: This topic discusses the abandoned cart connector sample app, and how to set it up to retrieve abandoned carts from retail server and send email notifications to customers about their abandoned carts.
 author: stuharg
-ms.date: 02/08/2022
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -33,36 +33,29 @@ The ability to recover revenue and retain customers through abandoned cart notif
 The email that customers receive can contain the following information:
 
 - Customer first name
-
 - Customer last name
-
 - Customer email
-
 - URL that that returns the customer to their cart
-
 - Transaction currency
-
 - List of products in their cart. Each product has:
-
-- - Product display name
-  - Product ID (used for assembling a URL to the product description page)
-  - Product image that can be automatically resized to accommodate various viewport sizes
-  - Product image alt text
-  - Product unit price
+    - Product display name
+    - Product ID (used for assembling a URL to the product description page)
+    - Product image that can be automatically resized to accommodate various viewport sizes
+    - Product image alt text
+    - Product unit price
 
 ## Overview of the abandoned cart connector sample
 
 Abandoned cart retrieval and sending to a 3rd party email marketing provider is enabled through a connector model that Microsoft provides through the Dynamics 365 Commerce SSK. The connector handles communication with Retail Server, leverages Azure KeyVault for security, handles scheduling of cart retrieval for a specified time window, and retrieves order and product data. The connector also provides a sample implementation for an integration with a 3rd party email marketing provider. Out of the box, the connector is built to communicate with [Emarsys](https://emarsys.com), and it can be easily customized to integrate with other solutions such as ConstantContact, MailChimp, SendGrid or others. 
 
-![Component diagram of abandoned cart connector sample app](C:\Users\stuharg\OneDrive - Microsoft\Documents\GitHub\Dynamics-365-Operations\articles\commerce\dev-itpro\media\AbandonedCartConnector.png)
+![Component diagram of abandoned cart connector sample app](media\AbandonedCartConnector.png)
 
->  [!NOTE]
->
+> [!NOTE]
 > Microsoft does not provide an affordance for customers who wish to opt out of having their cart data passed to an email marketing provider, or who wish to have their data removed. If you plan to do business in regions that mandate these options for customers, you will need to provide the necessary infrastructure and customizations to collect and track the customer preference, and suppress the passing of their data to your email platform based on that preference. Additionally, you will need to define a process for purging customer data from your email marketing provider if requested by a customer. 
 
-## Obtaining the code sample
+## Obtain the code sample
 
-The Abandoned Cart sample app is included in the Retail software development kit (SDK), starting with version 10.0.16. The code can be found under …\RetailSDK\Code\SampleExtensions\RetailServer\Extensions.AbandonedCartSample. To learn more about the Retail SDK and where to obtain it, see the [Retail software development kit (SDK)](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcommerce%2Fdev-itpro%2Fretail-sdk%2Fretail-sdk-overview&data=04|01|stuharg%40microsoft.com|4ecdbff39ad948e2937b08d8956eb0e8|72f988bf86f141af91ab2d7cd011db47|1|1|637423649928432139|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|1000&sdata=XcUtwz7EfRpiSooEidtOCkA0JH909Io2KqMC9TO8hVI%3D&reserved=0) help topic.  
+The Abandoned Cart sample app is included in the Retail software development kit (SDK), starting with version 10.0.16. The code can be found under …\RetailSDK\Code\SampleExtensions\RetailServer\Extensions.AbandonedCartSample. To learn more about the Retail SDK and where to obtain it, see the [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md) help topic.  
 
 > [!NOTE] 
 > Although the sample code was first made available in 10.0.16 builds, it is compatible with Retail Server builds starting with 10.0.13. 
@@ -73,12 +66,12 @@ Before you can deploy and configure the Abandoned cart connector sample code, th
 
 ### Dynamics 365 Commerce access
 
-In order to configure and deploy the abandoned cart connector app, you will need access to the following Dynamics 365 Commerce resources
+In order to configure and deploy the abandoned cart connector app, you will need access to the following Dynamics 365 Commerce resources:
 
-1. Admin access to Dynamics 365 Commerce Headquarters for your environment
-2. Access to the LCS project for your environment
+- Administrator access to Dynamics 365 Commerce Headquarters for your environment.
+- Access to the Microsoft LifeCycle Services (LCS) project for your environment.
 
-### Set up Azure Cosmos
+### Set up Azure Cosmos DB
 
 The abandoned cart connector app uses Azure Cosmos DB to track the IDs and timestamps of carts that have previously been retrieved. You may choose to use Azure Cosmos DB to persist these data, or you can customize the code sample to integrate with another data storage option. 
 
@@ -98,12 +91,9 @@ The abandoned cart connector app uses Azure Key vault to store the names and sec
    1. Emarsys API user name and API secret
    2. Abandoned cart application ID and secret 
 
-
 The abandoned cart connector sample code makes use of Azure Default Credentials to access Azure Key Vault. Please provide **List** and **Read** permissions to the identity you plan to use for accessing Key Vault. 
 
 [Read more about Azure default credentials]([/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet ](/dotnet/api/azure.identity.defaultazurecredential)) 
-
-
 
 ## Set up Connector App ID in AAD Tenant
 
@@ -117,15 +107,13 @@ Instructions for adding an application ID to the allow list in Azure can be foun
 
 The configuration file for the Abandoned Cart connector sample app is at the root of the AbandonedCartDetectionSample directory and is called appSettings.json. Below are the individual settings and their purpose:
 
-**KeyVaultOptions**
+### KeyVaultOptions
 
 | **Property** | **Purpose**                                                  |
 | ------------ | ------------------------------------------------------------ |
 | KeyVaultURI  | The DNS Name of  the key vault you're using on https://portal.azure.com |
 
- 
-
-**RetailServerClientOption**s
+### RetailServerClientOptions
 
 | **Property**                                  | **Purpose**                                                  |
 | --------------------------------------------- | ------------------------------------------------------------ |
@@ -139,15 +127,9 @@ The configuration file for the Abandoned Cart connector sample app is at the roo
 | ExcludeAbandonedCartsModifiedSinceLastMinutes | Defines the **end of the time window** for the abandoned  carts you want to retrieve. As an example, setting this value to 30 will  retrieve all carts that were modified between two hours ago and 30 minutes  ago (when 120 is used as the value for  IncludeAbandonedCartsModifiedSinceLastMinutes.) In practice,   ExcludeAbandonedCartsModifiedSinceLastMinutes defines the length of  time you wish to wait before declaring a cart to be abandoned. |
 | ReturnToCartUrl                               | The URL of the  cart on your e-commerce site (refer format in app.config.) |
 
- 
-
- 
-
-**AzureCosmosOptions**
+### AzureCosmosOptions
 
 The abandoned cart retrieval job status, cart IDs and modified timestamps are stored in Azure Cosmos. By default, this config file is configured to point to the local emulator instance of Azure Cosmos. You will need to configure these settings to interact with the Cosmos instance in your Azure subscription when deploying the connector to production. For local or sandbox testing, you can use the [Azure Cosmos Emulator](/azure/cosmos-db/local-emulator)
-
- 
 
 | **Property** | **Purpose**                              |
 | ------------ | ---------------------------------------- |
@@ -156,15 +138,10 @@ The abandoned cart retrieval job status, cart IDs and modified timestamps are st
 | DatabaseId   | Leave default  value or provide your own |
 | ContainerId  | Leave default  value or provide your own |
 
- 
+### EmarsysClientOptions
 
- 
-
-**EmarsysClientOptions**
-
-NOTE: If you are integrating with a different email marketing provider, you will extend the IEmailProvider interface as appropriate to talk to that provider
-
- 
+> [!NOTE] 
+> If you are integrating with a different email marketing provider, you will extend the IEmailProvider interface as appropriate to talk to that provider.
 
 | **Property**                  | **Purpose**                                                  |
 | ----------------------------- | ------------------------------------------------------------ |
@@ -174,17 +151,13 @@ NOTE: If you are integrating with a different email marketing provider, you will
 | ApiSecretKeyVaultSecretName   | Name of the key  for the Emarsys API secret is stored.       |
 | EmarsysContactKeyId           | 3 // ID of the  email column in the Emarsys contact DB (should not need to be changed. ) |
 
- 
-
-**MediaOptions**
+### MediaOptions
 
 If you are using the e-commerce capabilities in Dynamics 365 Commerce, you have the option to leverage the Digital Asset Manager to retrieve product images. 
 
- 
-
 | **Property**                        | **Purpose**                                                  |
 | ----------------------------------- | ------------------------------------------------------------ |
-| ImageServerUrl                      | The root URL of  your site's digital asset manager. This value can be found in the Media  Server Base URL Property Key under **Modules  > Retail and commerce >**       **setup >  Channel profiles.** |
+| ImageServerUrl                      | The root URL of  your site's digital asset manager. This value can be found in the Media  Server Base URL Property Key under **Modules  \> Retail and Commerce \> Setup \> Channel profiles**. |
 | ImageViewPorts                      |                                                              |
 | ImageViewPorts/Viewport             |                                                              |
 | ImageViewPorts/imageWidth           |                                                              |
