@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Place B2B website orders quickly
-description: This topic describes the capabilities of Microsoft Dynamics 365 Commerce for enabling B2B site users to place bulk and repeat orders quickly.
+description: This topic describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 author: shajain
 ms.date: 02/09/2022
 ms.topic: article
@@ -27,44 +27,44 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the capabilities of Microsoft Dynamics 365 Commerce for enabling business-to-business (B2B) site users to place bulk and repeat orders quickly.
+This topic describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 
-Dynamics 365 Commerce B2B e-commerce websites allow users to perform standard operations such as discovering new products via searching and browsing, viewing product details, adding items to the cart, and checking out. However, unlike the customers of business-to-consumer (B2C) sites who generally order items in small quantities and usually order only once, B2B customers usually order in large quantities and reorder items multiple times. B2B users usually know exactly what items they want to buy and often they skip the product discovery phase and move right ahead to ordering. To cater to such needs, Commerce B2B e-commerce websites provide various capabilities to help customers place orders quickly.
+Dynamics 365 Commerce B2B e-commerce websites let users perform standard operations such as discovering new products via searching and browsing, viewing product details, adding items to the cart, and checking out. However, whereas the customers of business-to-consumer (B2C) sites generally order items in small quantities and order them only once, B2B customers typically order items in large quantities and reorder them multiple times. Because these customers usually know exactly what items they want to buy, they often they skip the product discovery phase and move directly to ordering. To meet the needs of these customers, Commerce B2B e-commerce websites provide various capabilities that help them place orders quickly.
 
 ## Bulk order by item number
 
-Commerce B2B e-commerce websites enable site users to add items to the cart using product item numbers alongside the desired quantity.
+Commerce B2B e-commerce websites let site users add items to the cart by entering product item numbers together with the desired quantity.
 
-The following image shows an example of quick order entry by product item number.
+The following illustration shows an example of quick order entry by product item number.
 
-![Quick order entry by product item number](/articles/commerce/media/QuickAddByItem.png)
+![Quick order entry by product item number.](/articles/commerce/media/QuickAddByItem.png)
 
-## Bulk order by variants
+## Bulk order by variant
 
-Commerce B2B e-commerce websites enable site users to quickly add different variants of the same product in a single view that shows inventory visibility by size, color, and style. In additional, site users can easily enter the same quantity for all in-stock products by selecting **Enter all quantities**.
+Commerce B2B e-commerce websites let site users quickly add different variants of the same product in a single view that shows inventory visibility by size, color, and style. In addition, site users can easily enter the same quantity for all in-stock products by selecting **Enter all quantities**.
 
-The following image shows an example of quick order entry using "enter all quantities" functionality.
+The following illustration shows an example of quick order entry where the "enter all quantities" functionality is used.
 
-![Quick order entry using "enter all quantities" functionality](/articles/commerce/media/MatrixView.png) 
+![Quick order entry that uses the "enter all quantities" functionality.](/articles/commerce/media/MatrixView.png)
 
-## Leverage order templates for quick order entry
+## Use order templates for quick order entry
 
-It is common for buyers on B2B websites to order certain items together. For example, if you are placing orders for a construction site you might want to order shirts, jackets, pants, shoes, and hats together. Similarly, if different job roles have different uniforms (for example in a hospital where there are different uniforms for doctors, nurses, and cleaning staff) you might want to group each different uniform type together for easier ordering. For such scenarios, Commerce B2B sites provide the capability for creating order templates. Site users can create any number of custom templates and order all or some of the items from these templates as required. 
+Buyers on B2B websites often order specific items together. For example, if you're placing orders for a construction site, you might want to order shirts, jackets, pants, shoes, and hats together. If you're placing orders for a hospital, where doctors, nurses, and cleaning staff have different uniforms, you might want to group each uniform type together for easier ordering. For these types of scenarios, Commerce B2B sites enable order templates to be created. Site users can create any number of custom templates and then order all or some of the items from those templates as they require.
 
-The following image shows an example of an order template.
+The following illustration shows an example of an order template.
 
-![Example of an order template](/articles/commerce/media/OrderTemplateHeader.png)
-  
-The following image shows an example of an order template's details view.
- 
-![Example of an order template's details view](/articles/commerce/media/OrderTemplateLines.png)
+![Example of an order template.](/articles/commerce/media/OrderTemplateHeader.png)
+
+The following illustration shows an example of the details view for an order template.
+
+![Example of an order template's details view.](/articles/commerce/media/OrderTemplateLines.png)
 
 ## Reorder from order history
 
-Commerce B2B e-commerce websites enable site users to quickly reorder items from their order history. Site users can choose to buy selected items from their order history or add all previously purchased items to the cart.
+Commerce B2B e-commerce websites let site users quickly reorder items from their order history. Site users can either buy selected items from their order history or add all previously purchased items to the cart.
 
-The following image shows an example of reordering from order history.
+The following illustration shows an example of a user's order history and the options for reordering items from it.
 
-![Example of reordering from order history](/articles/commerce/media/Reorder.png "Reorder from past orders") 
+![Reordering from order history.](/articles/commerce/media/Reorder.png)
 
-These are just some of the ways that Commerce B2B sites assist users to quickly find, order, and reorder the products they want. More capabilities are in development to further simplify the bulk order capture process. 
+This topic has described just some of the ways that Commerce B2B sites help users quickly find, order, and reorder the products that they want. More capabilities are in development to further simplify the process of capturing bulk orders.
