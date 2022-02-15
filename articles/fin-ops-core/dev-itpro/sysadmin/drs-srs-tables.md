@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tables officially supported for Duplicate Record Data sharing  
+title: Tables supported for duplicate record data sharing  
 description: This topic describes cross-company data sharing, which is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
 ms.date: 01/27/2022
@@ -27,12 +27,12 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Tables officially supported for Duplicate Record Data sharing
-Even if it might be possible to add other tables to Duplicate Record Data sharing policies, than the ones listed below, they are not officially supported.
+# Tables supported for duplicate record data sharing
+This topic describes cross-company data sharing, which is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following table is not officially supported.
 
-**Finance**
+**Dynamics 365 Finance**
 
-| **Table Object Name**        | **Table Description (Label)**   |
+| **Table object Name**        | **Table description (Label)**   |
 |------------------------------|---------------------------------|
 | AssetCondition               | Fixed asset condition           |
 | BankCentralBankPurpose       | Payment purpose codes           |
@@ -70,7 +70,7 @@ Even if it might be possible to add other tables to Duplicate Record Data sharin
 
 **Tax**
 
-| **Table Object Name**           | **Table Description (Label)** |
+| **Table object Name**           | **Table description (Label)** |
 |---------------------------------|-------------------------------|
 | TaxAuthorityAddress             | Authority                     |
 | TaxAuthorityAddressRegistration | Authority registration number |
@@ -79,9 +79,9 @@ Even if it might be possible to add other tables to Duplicate Record Data sharin
 | TaxParameters                   | Sales tax parameters          |
 | TaxPeriodHead                   | Sales tax period description  |
 
-**Supply Chain**
+**Dynamics 365 Supply Chain Management**
 
-| **Table Object Name**                        | **Table Description (Label)**                          |
+| **Table object name**                        | **Table description (Label)**                          |
 |----------------------------------------------|--------------------------------------------------------|
 | BarcodeSetup                                 | Barcode setup                                          |
 | BOMCalcGroup                                 | Calculation groups                                     |
@@ -230,16 +230,16 @@ Even if it might be possible to add other tables to Duplicate Record Data sharin
 | WrkCtrProperty                               | Properties                                             |
 | WrkCtrPropertyLine                           | Property                                               |
 
-**Project Operations**
+**Dynamics 365 Project Operations**
 
-| **Table Object Name** | **Table Description (Label)** |
+| **Table object name** | **Table description (Label)** |
 |-----------------------|-------------------------------|
 | CategoryTable         | Category table                |
 | ProjLineProperty      | Line property                 |
 
-**Additional tables when the Customer and vendor master sharing feature is enabled**
+**Additional tables when the customer and vendor master sharing feature is enabled**
 
-| **Table Object Name**              | **Table Description (Label)**             | 
+| **Table object name**              | **Table description (Label)**             | 
 |------------------------------------|-------------------------------------------|
 | BankConstantSymbol                 | Bank constant symbols                     |
 | BankCustPaymIdTable                | Payment ID                                | 
@@ -324,19 +324,19 @@ Even if it might be possible to add other tables to Duplicate Record Data sharin
 
 
 ## Download a cross-company data sharing template from LCS
+To download a cross-company data sharing template from Lifecycle Services (LCS), follow these steps: 
 1.	Sign in to LCS.
-2.	On the home page, click Shared asset library.
-3.	In the Asset type list, click Data package.
-4.	Click any of the available data package files to download them.
-For details about how to use a template, see Configure financial cross-company data sharing.
+2.	On the home page, select Shared asset library.
+3.	In the Asset type list, select Data package.
+4.	Select any of the available data package files that you want to download.
+For details about how to use a template, see [Configure financial cross-company data sharing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing).
 
+# Tables supported for master company data sharing
+It might be possible to add additional tables to master company data sharing policies, however, any table not listed in the following table is not officially supported.
 
-# Tables officially supported for Master Company Data sharing
-Even if it might be possible to add other tables to Master Company Data sharing policies, than the once listed below, they are not officially supported.
+**Dynamics 365 Finance**
 
-**Finance**
-
-| **Table Object Name**          | **Table Description (Label)**   |
+| **Table object name**          | **Table description (Label)**   |
 |--------------------------------|---------------------------------|
 | AssetCondition                 | Fixed asset condition           |
 | BankCentralBankPurpose         | Payment purpose codes           |
@@ -383,7 +383,7 @@ Even if it might be possible to add other tables to Master Company Data sharing 
 
 **Tax**
 
-| **Table Object Name**           | **Table Description (Label)** |
+| **Table object name**           | **Table description (Label)** |
 |---------------------------------|-------------------------------|
 | TaxAuthorityAddress             | Authority                     |
 | TaxAuthorityAddressRegistration | Authority registration number |
@@ -392,9 +392,9 @@ Even if it might be possible to add other tables to Master Company Data sharing 
 | TaxParameters                   | Sales tax parameters          |
 | TaxPeriodHead                   | Sales tax period description  |
 
-**Supply Chain**
+**Dynamics 365 Supply Chain Management**
 
-| **Table Name**                       | **Table Description (Label)**              |
+| **Table name**                       | **Table description (Label)**              |
 |--------------------------------------|--------------------------------------------|
 | BarcodeSetup                         | Barcode setup                              |
 | ContactPerson                        | Contacts                                   |
@@ -426,11 +426,12 @@ Even if it might be possible to add other tables to Master Company Data sharing 
 | WorkCalendarTable                    | Calendar                                   |
 | WrkCtrPropertyLine                   | Property                                   |
 
-Additional Supply chain tables when the (Private Preview) Cross-company data sharing for products feature is enabled.
->[!Note]
-> The below tables can be added to a Master Company Data sharing policy but are only supported when the “Cross-company data sharing for products” feature is enabled, which is currently in Private Preview.
+Additional Supply Chain Management tables when the (Private Preview) cross-company data sharing for products feature is enabled.
 
-| **Table Name**                            | **Table Description (Label)**                  |
+>[!NOTE]
+> The following tables can be added to a master company data sharing policy but are only supported when the “Cross-company data sharing for products” feature is enabled, which is currently in Private Preview.
+
+| **Table name**                            | **Table description (Label)**                  |
 |-------------------------------------------|------------------------------------------------|
 | InventStdCostConv                         | Standard cost conversion                       |
 | InventStdCostConvItem                     | Standard cost conversion items                 |
@@ -447,16 +448,9 @@ Additional Supply chain tables when the (Private Preview) Cross-company data sha
 | WHSInventTable                            | Warehouse item number                          |
 | WHSPhysDimUOM                             | Physical Dimension by Unit                     |
 
-**Project Operations**
+**Dynamcis 365 Project Operations**
 
-| **Table Object Name** | **Table Description (Label)** |
+| **Table object name** | **Table description (Label)** |
 |-----------------------|-------------------------------|
 | CategoryTable         | Category table                |
 | ProjLineProperty      | Line Property                 |
-
-
-
-
-
-
-
