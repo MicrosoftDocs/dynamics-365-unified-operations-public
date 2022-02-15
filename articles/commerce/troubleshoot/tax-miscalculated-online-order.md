@@ -48,7 +48,7 @@ To configure general sales tax groups in Commerce headquarters, follow these ste
 1. On the **Retail destination based tax** FastTab, configure the taxes for the sales tax group.
 
 > [!NOTE]
-> For shipping that doesn't involve sales tax determined by the customer's address, the delivery address of the line and the destination-based taxes that are configured for the tax group determine the tax group. For more information, see [Set up taxes for online stores based on destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+> For shipping that doesn't include sales tax that is determined by the customer's address, the delivery address of the line and the destination-based taxes that are configured for the tax group determine the tax group. For more information, see [Set up taxes for online stores based on destination](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ### Configure the sales tax for a retail store in Commerce headquarters
 
