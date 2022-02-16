@@ -41,15 +41,15 @@ This version introduces the following new features, fixes, and improvements:
 -	Added missing selection list titles.
 -	Fixed an issue where the back button didn't work.
 -	Added several keyboard navigation fixes and improvements, including on the following pages:
---	User login
---	Select connection
---	Edit connection
+ -	User login
+ -	Select connection
+ -	Edit connection
 -	Fixed scrolling when using keyboard navigation.
 -	Enhanced accessibility, including the following improvements:
---	Fixed color visibility and contrast.
---	Prevented loss of keyboard focus when pop-up pages are closed.
---	Added error messages to the narration.
---	Increased the size of placeholder values in the step banner.
+ -	Fixed color visibility and contrast.
+ -	Prevented loss of keyboard focus when pop-up pages are closed.
+ -	Added error messages to the narration.
+ -	Increased the size of placeholder values in the step banner.
 -	Fixed the example of the custom legacy page in demo mode.
 
 ## Version 2.0.15.0
