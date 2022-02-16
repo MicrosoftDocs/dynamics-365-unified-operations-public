@@ -43,6 +43,7 @@ The process of setting up the fiscal integration includes the following tasks:
 - Configure the fiscal registration process that defines a sequence of fiscal registration steps and the fiscal connectors and fiscal document providers that are used for each step.
 - Assign the fiscal registration process to point of sale (POS) functionality profiles.
 - Assign connector technical profiles to hardware profiles.
+- Assign connector technical profiles to POS hardware or functionality profiles.
 
 ### Upload configurations of fiscal document providers
 
@@ -158,10 +159,12 @@ To assign entities of the fiscal registration process to POS profiles, follow th
 1. In Commerce headquarters, go to the **POS functionality profiles** page (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**). 
 1. Assign the fiscal registration process to a POS functionality profile.
 1. Select **Edit**, and then, on the **Fiscal registration process** tab, in the **Process number** field, select a process.
+1. Select connector technical profiles with connector location "Register" on the "Fiscal services" tab.
 1. Go to the **POS hardware profile** page (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**).
 1. Assign connector technical profiles to a hardware profile. 
 1. Select **Edit**, and then, on the **Fiscal peripherals** tab, add a line. 
 1. In the **Profile number** field, select a connector technical profile.
+1. Select connector technical profiles with connector location "Hardware station" on the "Fiscal peripherals" tab.
 
 > [!NOTE]
 > You can add several technical profiles to the same hardware profile. However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group.
