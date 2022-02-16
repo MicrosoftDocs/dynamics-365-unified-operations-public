@@ -78,8 +78,12 @@ The following table shows the prerequisites that must be in place before you sta
 </tr>
 <tr class="odd">
 <td><strong>Setup:</strong> Tax registration  numbers</td>
-<td>
-  
+<td>Create tax registration numbers for your counterparties on either the <strong>All customers</strong> page (click <strong>Sales and marketing</strong> &gt; <strong>Customers</strong> &gt; <strong>All customers</strong>, select a customer record, and then click <strong>Customers</strong> &gt; <strong>Registration IDs</strong>) or or the <strong>Vendors</strong> page (click <strong>Procurement and sourcing</strong> &gt; <strong>Vendors</strong> &gt; <strong>Vendors</strong>, select a vendor record, and then click <strong>Vendors</strong> &gt; <strong>Registration IDs</strong>). On the <strong>Registration ID</strong> FastTab, on the <strong>General</strong> tab, create a record, and specify the following information: 
+<ul>
+<li><strong>Registration type</strong> – Select the registration type assigned to <strong>VAT ID</strong> registration category for the country/region of the counterparty.</li>
+<li><strong>Registration number</strong> – Enter the registration number of the counterparty.</li>
+<li><strong>Effective</strong> – Select the start of the registration number usage period.</li>
+</ul>  
 Alternatively, you can create tax registration numbers for your counterparties on the <strong>Tax exempt numbers</strong> page (click <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Tax exempt numbers</strong>). For each tax exempt number, create a record on the page, and specify the following information:
 <ul>
 <li><strong>Country/region</strong> – Select the country/region of the tax registration of the counterparty.</li>
