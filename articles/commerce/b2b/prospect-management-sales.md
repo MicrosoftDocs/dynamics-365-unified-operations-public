@@ -4,7 +4,7 @@
 title: Manage business partner users on B2B e-commerce websites using Dynamics 365 Sales
 description: This topic describes how to use Microsoft Dynamics 365 Sales to manage business partner approvals for Dynamics 365 Commerce business-to-business (B2B) websites.
 author: shajain
-ms.date: 2/10/2022
+ms.date: 2/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology:
