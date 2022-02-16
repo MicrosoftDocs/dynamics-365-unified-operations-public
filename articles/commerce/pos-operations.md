@@ -47,6 +47,7 @@ The following columns specify where the operations can be invoked:
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
 
+
 | ID | Operation | Description | Button grid | Transaction screen | Welcome screen | Available offline | Locale-specific |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
 | 707 | Activate device | Activate the current device by allowing an authenticated user to provide connection information and assign a device and register ID. | No | No | No | No | No |
