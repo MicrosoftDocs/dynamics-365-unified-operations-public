@@ -102,7 +102,7 @@ In the example shown in the following image, unless the terms of payment table i
 Tables that are automatically added when a policy is enabled or updated will not be visible in the Configure cross-company data sharing form until the policy is disabled. The best practice is to manually add tables based on the selected foreign key fields prior to enabling or updating the policy. This makes it possible to understand the tables that will be shared and for duplicate record sharing. This way it also provides the option to select fields for these tables, including optional foreign key fields that in turn might add more tables.  
 
 ### Country/region specific considerations for successful data sharing
-Tables that include country/region specific fields and/or logic need to be carefully considered. It might be required to use sharing polices per country/region for certain tables to avoid configuration conflicts. Country/region specific fields will only be viable/editable for companies in that country/region, but updates for these fields might trigger conflicts with companies in other country regions. 
+Tables that include country/region specific fields and/or logic need to be carefully considered. It might be required to use sharing policies per country/region for certain tables to avoid configuration conflicts. Country/region specific fields will only be viable/editable for companies in that country/region, but updates for these fields might trigger conflicts with companies in other country regions. 
 
 ### Additional considerations
 +	Composite tables must be shared in the same policy. If this is not the case, a message will inform users to add additional tables during enable and update to secure this.  
@@ -136,7 +136,7 @@ Because it is not possible to stop or reduce the sharing scope, it is strongly r
 
 All possible fields are selected by default when a table is added to a master company sharing policy. This includes all foreign key fields for all tables that are supported for master company sharing. One example is that the Vendors table will be added when the Customer table is added, unless the Vendors table is already shared using DRS.
 
-Master company polices can’t be disabled; therefore, it is especially important to manually add all tables that otherwise will be added automatically based on the default foreign key fields. If not, these tables will not be visible in the policy form.  
+Master company policies can’t be disabled; therefore, it is especially important to manually add all tables that otherwise will be added automatically based on the default foreign key fields. If not, these tables will not be visible in the policy form.  
 
 ### Limitations
 The following limitations exist:
