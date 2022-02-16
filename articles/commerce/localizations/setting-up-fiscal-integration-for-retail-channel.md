@@ -174,7 +174,7 @@ The fiscal registration flow is defined by the fiscal registration process and a
 - When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.
 
 ### Setup registers with fiscal registration restrictions
-You can select registers where fiscal registration will be prohibited. It may be needed in case you need to provide only non fiscal operations (View product catalogue, lookup customer) on this devices.
+You can select registers where fiscal registration will be prohibited. It may be needed in case you need to provide only none-fiscal operations (View product catalogue, lookup customer, create draft of the transactions) on this devices.
 
 1. In Commerce headquarters, go to the **Fiscal registration process** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**).
 1. Select required process.
