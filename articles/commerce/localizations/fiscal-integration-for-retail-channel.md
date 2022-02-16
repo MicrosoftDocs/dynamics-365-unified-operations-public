@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of fiscal integration for Commerce channels
+title: Fiscal integration overview for Commerce channels
 description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
@@ -13,7 +13,7 @@ ms.author: epopov
 ms.search.validFrom: 2017-06-20
 
 ---
-# Overview of fiscal integration for Commerce channels
+# Fiscal integration overview for Commerce channels
 
 [!include [banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
