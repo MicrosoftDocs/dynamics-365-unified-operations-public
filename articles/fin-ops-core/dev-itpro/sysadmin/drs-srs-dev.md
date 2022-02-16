@@ -3,9 +3,8 @@
 title: Cross-company data sharing for developers
 description: This topic describes cross-company data sharing for developers. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
-ms.date: 02/15/2022
+ms.date: 02/16/2022
 ms.topic: article
-ms.prod: 
 ms.technology: 
 
 # optional metadata
