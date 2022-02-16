@@ -2,9 +2,9 @@
 # required metadata
 
 title: Enable consistent delivery mode handling in e-Commerce channel
-description: This topic explains possible issues around charges flow in e-Commerce channel in Microsoft Dynamics 365 Commerce, and feature switch to handle the issues.
+description: This topic describes a fix for possible issues related to charges flow in Microsoft Dynamics 365 Commerce e-commerce channels.
 author: gvrmohanreddy
-ms.date: 02/10/2022
+ms.date: 02/16/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
@@ -15,12 +15,22 @@ ms.search.validFrom: 2022-02-10
 
 # Display non-prorated header level charges 
 
-If you are experiencing one of the following issues in e-Commerce channel, turn on **Enable consistent delivery mode handling in channel** feature
+[!include [banner](includes/banner.md)]
 
-1. In E-Commerce channel, non-prorated header level charges will not appear.
-2. In E-Commerce channel, charges for delivery modes will be not consistent between mode of delivery selection and order summary in the checkout. 
+This topic describes a fix for possible issues related to charges flows in Microsoft Dynamics 365 Commerce e-commerce channels.
 
+In Dynamics 365 Commerce, by default non-prorated header level charges are not applied in e-commerce channel. This may cause one of the following issues in e-commerce channels: 
 
-In Dynamics 365 Commerce, by default non-prorated header level charges are not applied in e-Commerce channel. To see header level non-prorated charges in the e-Commerce channel, make sure that **Enable consistent delivery mode handling in channel** feature is enabled under ** Feature management > all **
+- Non-prorated header level charges do not appear.
+- Charges for delivery modes are notconsistent between the mode of delivery selection and the checkout order summary. 
 
-Note that **Enable consistent delivery mode handling in channel** feature also ensures that deliver information of a sales order is handled by the same request workflow and handled consistently. 
+To see header level non-prorated charges in an e-commerce channel, you must enable the **Enable consistent delivery mode handling in channel** feature.
+
+To enable the **Enable consistent delivery mode handling in channel** feature in Commerce headquarters, follow these steps.
+
+1. Go to the the **Feature management** workspace at **System adminstration \> Workspaces \> Feature management. 
+1. in the list of available features, search for and select **Enable consistent delivery mode handling in channel**.
+1. In the right pane, select **Enable now**.
+
+> [!NOTE]
+> The **Enable consistent delivery mode handling in channel** feature also ensures that sales order delivery information is consistently handled by the same request workflow. 
