@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Tables supported for duplicate record data sharing
-This topic describes the tables supported for duplicate record data sharing, which is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following table is not officially supported.
+This topic describes the tables supported for duplicate record data sharing. Duplicate record data sharing is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following tables is not officially supported.
 
 **Dynamics 365 Finance**
 
@@ -332,7 +332,7 @@ To download a cross-company data sharing template from Lifecycle Services (LCS),
 For details about how to use a template, see [Configure financial cross-company data sharing](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
 ## Tables supported for master company data sharing
-It might be possible to add additional tables to master company data sharing policies, however, any table not listed in the following table is not officially supported.
+It might be possible to add additional tables for master company data sharing policies, however, any table not listed in the following tables is not officially supported.
 
 **Dynamics 365 Finance**
 
