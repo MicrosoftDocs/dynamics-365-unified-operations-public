@@ -288,14 +288,18 @@ To set up a development environment to test and extend the sample, follow these 
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Install Hardware station extensions:
+1. Install Hardware station extensions (fiscal connector located on Hardware station):
 
     1. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
     1. Start the extension installer from the command line:
 
         ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+        HardwareStation.EFR.Installer.exe install --verbosity 0```
+        
+1. Install POS connector extensions (fiscal connector located on POS):
+    1. If you need use fiscal connector on the POS, use instruction [Use the POS connector sample](pos-fiscal-connector-sample.md#use-the-sample).
+    1. POS Sample is located [here](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.35/src/FiscalIntegration).
+
 
 #### Production environment
 
