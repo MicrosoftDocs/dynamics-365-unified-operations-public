@@ -1272,8 +1272,8 @@
       items:
       - name: Set up a B2B e-commerce site
         href: b2b/set-up-b2b-site.md
-      - name: Create org modeling hierarchies for B2B organizations
-        href: b2b/org-model.md
+      - name: Manage B2B business partners using customer hierarchies
+        href: b2b/partners-customer-hierarchies.md
       - name: Manage business partner users on B2B e-commerce sites
         href: b2b/manage-b2b-users.md
       - name: Manage business partner users on B2B e-commerce sites using Dynamics 365 Sales
