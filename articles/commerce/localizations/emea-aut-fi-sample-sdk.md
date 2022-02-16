@@ -158,6 +158,10 @@ The Hardware station extension components are included in the Hardware station s
 3. Rebuild the solution.
 4. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
 
+### Enable POS connector
+
+If you need use fiscal device or service in local network (see [Fiscal registration is done via a device or service in the local network](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network), Use instruction [Use the sample in the legacy SDK](pos-fiscal-connector-sample.md#use-the-sample-in-the-legacy-sdk)
+
 ## Production environment
 
 The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
