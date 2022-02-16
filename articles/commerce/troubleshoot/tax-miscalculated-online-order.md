@@ -4,7 +4,7 @@
 title: Taxes on online orders are incorrectly calculated
 description: This topic provides troubleshooting guidance that can help when taxes on online orders are incorrectly calculated, or when the tax group on the sales line isn't correctly set.
 author: Reza-Assadi
-ms.date: 02/15/2022
+ms.date: 02/16/2022
 ms.topic: Troubleshooting
 ms.prod: 
 ms.technology: 
