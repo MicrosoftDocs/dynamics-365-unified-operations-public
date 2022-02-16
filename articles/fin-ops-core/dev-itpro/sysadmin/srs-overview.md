@@ -35,7 +35,7 @@ Cross-company data sharing concept allows you to share company specific master, 
 
 Two data sharing concepts are available: 
 + Duplicate record sharing (DRS) is a concept where creating, updating, or deleting of records in for any company in the policy is copied/replicated across all companies in the policy. Updates of fields will also be replicated if selected for sharing in the policy. DRS was the first sharing type made available. 
-+ Master company sharing, also known as single record sharing (SRS), is a concept where a single physical record belonging to a master company is virtually shared across child companies. Create, update, or delete in any company in the policy will update the single records used across all companies. Master company sharing is currently in Preview.
++ Master company sharing, also known as single record sharing (SRS), is a concept where a single physical record belonging to a master company is virtually shared across child companies. Create, update, or delete in any company in the policy will update the single records used across all companies. Master company sharing is currently in preview.
 
 
 ## Why should you consider cross-company data sharing?
@@ -60,7 +60,7 @@ Data sharing is based on configuration of Data sharing policies. Policies let yo
 The same company and table can only be in one enabled policy. It's possible to share the same table in more than policy. This can be required when the limits of records or companies are reached for DRS, or to create policies for tables that need to be shared differently per country/region.
 
 
-## When to consider duplicate record versus master company sharing (Preview)?
+## When to consider duplicate record versus master company sharing (preview)?
 Duplicate record sharing comes with several advantages, and you should always select this option whenever possible. This is an extremely important consideration. The main reason is that once master company sharing is enabled, there's no way to reduce the scope or to stop the sharing.
 
 Master company sharing should be considered only if there's a need to share:
@@ -129,7 +129,7 @@ Customer and vendor master data sharing allows you to share customer and vendor 
 Sharing can be stopped by removed for one or more companies before you can update the policy. The approach is applicable for deselecting fields from sharing. 
 To stop sharing tables, you must disable the policy and then remove the tables. The same is true when deleting an entire policy. For all of these scenarios, synchronization will stop for the excluded scope, but existing records will remain. Sharing will stop automatically at enable or update when the number of records for a table or number of companies exceed the maximum limits.  
 
-## Master company sharing (Preview) 
+## Master company sharing (preview) 
 Master company sharing is enabled by using the master company data sharing feature in the Feature management module. 
 
 Because it is not possible to stop or reduce the sharing scope, it's strongly recommended to thoroughly test and validate master company data sharing policies, prior to enabling the same configuration in a production environment. 
