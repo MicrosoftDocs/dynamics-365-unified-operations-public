@@ -75,7 +75,7 @@ The output will look like this when you read records from CustGroup (Physical) a
 CustGroup_SharingView. (*View* illustrates kernel logic, but is only used for
 non-kernel based scenarios)
 
-![Single record sharing example](media/SRS-image3.png)
+![Single record sharing example.](media/SRS-image3.png)
 
 ## Guidelines to enable data sharing on tables
 The ability to define or modify DRS or SRS settings applies to base tables provided by the current model. For example, it is not possible to modify existing table or field properties using an extension.
