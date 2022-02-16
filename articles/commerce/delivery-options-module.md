@@ -4,7 +4,7 @@
 title: Delivery options module
 description: This topic covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,8 +61,8 @@ The following illustration shows an example of a delivery options module on a ch
 
 A delivery options module can be added only to a checkout module. For more information about how to configure the delivery options module and add it to a checkout page, see [Checkout module](add-checkout-module.md).
 
->[!NOTE]
->You may experience inconsistency in delivery handling or may not see non-prorated header level charges in e-Commerce channel. Refer to **[Enable consistent delivery mode handling in e-Commerce channel](/commerce/consistent-delivery-mode-handling.md)** to resolve these issues.
+> [!NOTE]
+> You may experience inconsistency in delivery handling or may not see non-prorated header level charges in your e-commerce channel. For information on solving these issues, see [Enable consistent delivery mode handling in e-Commerce channel](consistent-delivery-mode-handling.md).
 
 ## Additional resources
 
