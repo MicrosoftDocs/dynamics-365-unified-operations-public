@@ -42,7 +42,7 @@ For more information about how to set up cash flow forecasts, see [Cash flow for
 
 ## Enter external data
 
-To enter and modify external data for cash flow forecasts, you can use the **Open in Excel** experience. Select the **External data** button on the **Cash flow forecast setup** page, and then select either **Add External Data** or **Edit existing external data**. When the Microsoft Excel file is opened, you can enter information in the following fields:
+To enter and modify external data for cash flow forecasts, you can use the **Open in Excel** experience. Select the **External data** button on the **Cash flow forecast** workspace page, and then select either **Add External Data** or **Edit existing external data**. When the Microsoft Excel file is opened, you can enter information in the following fields:
 
 - **Entry ID** (unique)
 - **Description** (optional)
