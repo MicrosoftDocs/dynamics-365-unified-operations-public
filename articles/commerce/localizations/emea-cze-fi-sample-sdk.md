@@ -83,7 +83,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
     ```
 ### Enable fiscal connector
 You can enable POS connector on:
-1. [Hardware station](fiscal-integration-for-retail-channel.md#Fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station). Use [Enable hardware station extensions](emea-cze-fi-sample-sdk.md#enable-hardware-station-extensions).
+1. [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station). Use [Enable hardware station extensions](emea-cze-fi-sample-sdk.md#enable-hardware-station-extensions).
 2. [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network). Use [Enable POS connector extensions](emea-cze-fi-sample-sdk.md#enable-pos-connector-extensions).
 
 ### Enable POS connector extensions
