@@ -173,6 +173,14 @@ The fiscal registration flow is defined by the fiscal registration process and a
 - The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.
 - When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.
 
+### Setup registers with fiscal registration restrictions
+You can select registers where fiscal registration will be prohibited. It may be needed in case you need to provide only non fiscal operations (View product catalogue, lookup customer) on this devices.
+
+1. In Commerce headquarters, go to the **Fiscal registration process** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**).
+1. Select required process.
+1. Go to the tab "POS registers with fiscal process restrictions".
+1. Add registers with fiscal process restrictions.
+
 ### Validate the fiscal registration process
 
 It is recommended that you validate the fiscal registration process in the following cases:
