@@ -19,6 +19,39 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.0.16.0
+
+This version introduces the following new features, fixes, and improvements:
+
+-	Fixed an issue where barcodes would be scanned incorrectly.
+-	Fixed the GS1 scanning issue for the camera scanner.
+-	Fixed the GS1 scanning issue for the barcode scanner on Zebra devices.
+-	Improved the detour inquiry flow, so selecting a card in a detour now returns to the main flow.
+-	Added support for a generic data inquiry flow.
+-	Added a message to tell users about changes to the network connectivity status.
+-	Aligned storage permissions with the storage privacy policy in Android 10.
+-	For flows that need it, the quantity spinner now includes a position that lets users submit an empty numeric value.
+-	Fixed issues with the quantity spinner orientation.
+-	Fixed an issue where the quantity spinner would jump to the wrong value.
+-	Fixed an issue where input to the primary page would get lost when being populated from the details page.
+-	Fixed an issue where placeholder text would be treated as the initially selected value in selection lists.
+-	The "Submit" button on confirmation steps is now automatically enabled if there are preselected values.
+-	Fixed the details card to show as many lines as possible for text fields that have multiple lines.
+-	Fixed the height of the "Submit" and "More actions" buttons, so now they take up less space on the screen.
+-	Added missing selection list titles.
+-	Fixed an issue where the back button didn't work.
+-	Added several keyboard navigation fixes and improvements, including on the following pages:
+--	User login
+--	Select connection
+--	Edit connection
+-	Fixed scrolling when using keyboard navigation.
+-	Enhanced accessibility, including the following improvements:
+--	Fixed color visibility and contrast.
+--	Prevented loss of keyboard focus when pop-up pages are closed.
+--	Added error messages to the narration.
+--	Increased the size of placeholder values in the step banner.
+-	Fixed the example of the custom legacy page in demo mode.
+
 ## Version 2.0.15.0
 
 This version introduces the following new features, fixes, and improvements:
