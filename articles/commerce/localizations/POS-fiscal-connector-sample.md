@@ -17,9 +17,9 @@ ms.search.validFrom: 2018-11-1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of the fiscal integration sample for connector located on register in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of installation for the fiscal integration sample for connector located on register in Microsoft Dynamics 365 Commerce.
 
-The Commerce functionality for EFR with connector, located on register includes the point of sale (POS) fiscal connector sample for the [fiscal integration framework](fiscal-integration-for-retail-channel.md) , which enables POS to communicate directly with a fiscal device or service without a hardware station. The sample currently supports the [European Fiscal Standards Association (EFSTA) Electronic Fiscal Register (EFR)](https://public.efsta.net/efr/) fiscal service.
+The Commerce functionality for connector, located on register includes the point of sale (POS) fiscal connector sample for the [fiscal integration framework](fiscal-integration-for-retail-channel.md) , which enables POS to communicate directly with a fiscal device or service without a hardware station. 
 
 ## Use the sample
 
