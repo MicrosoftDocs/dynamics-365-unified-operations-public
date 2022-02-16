@@ -46,6 +46,7 @@ When the *Reduce carry-forward budget when an invoice against a purchase order i
 Make the following settings for each general ledger fund that you want to allow to reduce carry-forward budget when a purchase order or invoice is reduced.
 
 1. Go to **General ledger \> Chart of accounts \> Funds \> Funds**.
+1. Select the fund you want to set up.
 1. Under **Purchase order year-end process**, **Override selected year-end option** must be set to *Yes*.
 1. Under **Carry-forward budget status**, set the **Reinstate the budget when a carry-forward purchase order is canceled or reduced** field as needed. The settings have slightly different effects, depending on whether or not the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system.
    - When the feature is turned off, the system only reacts to cancelled or reduced purchase orders and the options work as follows:
