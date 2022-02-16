@@ -26,6 +26,8 @@ Environments that use Planning Optimization automatically receive the latest rel
 
 Because notifications aren't shown when Planning Optimization is updated in your environment, you can review the release notes in the following table to determine when changes were released and what functionality they introduced. This table shows the changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
+<!-- KFM: Add 10.0.25 features to the table?: Planning Optimization centralized calendar maintenance, Planning Optimization suggestions to optimize existing supply, Planned orders simplified -->
+
 | Changes | Feature management details | Release dates |
 |---|---|---|
 | <p>Added planning priority support for production orders. | Available with version 10.0.25 as part of the feature named *Priority driven MRP support for Planning Optimization*. | November 12-18, 2021 |
