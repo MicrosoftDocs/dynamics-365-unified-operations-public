@@ -81,6 +81,16 @@ The CRT extension components are included in the CRT samples. To complete the fo
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsCzechia" />
     ```
+### Enable fiscal connector
+You can enable POS connector on:
+1. [Hardware station](fiscal-integration-for-retail-channel.md#Fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station). Use [Enable hardware station extensions](emea-cze-fi-sample-sdk.md#enable-hardware-station-extensions).
+2. [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network). Use [Enable POS connector extensions](emea-cze-fi-sample-sdk.md#enable-pos-connector-extensions).
+
+### Enable POS connector extensions
+
+1. If you need use fiscal connector on the POS, use instruction [Use the sample in the legacy SDK](pos-fiscal-connector-sample.md#use-the-sample-in-the-legacy-sdk).
+2. POS Sample is located [here](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.35/src/FiscalIntegration)
+
 
 ### Enable Hardware station extensions
 
