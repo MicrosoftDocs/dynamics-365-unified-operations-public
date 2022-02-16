@@ -37,7 +37,7 @@ Commerce B2B e-commerce websites let site users add items to the cart by enterin
 
 The following illustration shows an example of quick order entry by product item number.
 
-![Quick order entry by product item number.](/articles/commerce/media/QuickAddByItem.png)
+![Quick order entry by product item number.](../media/QuickAddByItem.png)
 
 ## Bulk order by variant
 
@@ -45,7 +45,7 @@ Commerce B2B e-commerce websites let site users quickly add different variants o
 
 The following illustration shows an example of quick order entry where the "enter all quantities" functionality is used.
 
-![Quick order entry that uses the "enter all quantities" functionality.](/articles/commerce/media/MatrixView.png)
+![Quick order entry that uses the "enter all quantities" functionality.](../media/MatrixView.png)
 
 ## Use order templates for quick order entry
 
@@ -53,11 +53,11 @@ Buyers on B2B websites often order specific items together. For example, if you'
 
 The following illustration shows an example of an order template.
 
-![Example of an order template.](/articles/commerce/media/OrderTemplateHeader.png)
+![Example of an order template.](../media/OrderTemplateHeader.png)
 
 The following illustration shows an example of the details view for an order template.
 
-![Example of an order template's details view.](/articles/commerce/media/OrderTemplateLines.png)
+![Example of an order template's details view.](../media/OrderTemplateLines.png)
 
 ## Reorder from order history
 
@@ -65,6 +65,6 @@ Commerce B2B e-commerce websites let site users quickly reorder items from their
 
 The following illustration shows an example of a user's order history and the options for reordering items from it.
 
-![Reordering from order history.](/articles/commerce/media/Reorder.png)
+![Reordering from order history.](../media/Reorder.png)
 
 This topic has described just some of the ways that Commerce B2B sites help users quickly find, order, and reorder the products that they want. More capabilities are in development to further simplify the process of capturing bulk orders.
