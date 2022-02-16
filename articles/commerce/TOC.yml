@@ -1308,6 +1308,8 @@
         href: localizations/fiscal-integration-sample-build-pipeline.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
+      - name: Set up fiscal connector, located on POS
+        href: localizations/pos-fiscal-connector-sample.md
       - name: Regulatory configuration service (RCS)
         items:
         - name: Regulatory configuration service (RCS) overview
