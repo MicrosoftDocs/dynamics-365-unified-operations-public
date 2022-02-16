@@ -17,7 +17,7 @@ ms.search.validFrom: 2018-11-1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of installation for the fiscal integration sample for connector located on register in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of installation for the fiscal integration sample for connector located on the POS register in Microsoft Dynamics 365 Commerce.
 
 The Commerce functionality for connector, located on register includes the point of sale (POS) fiscal connector sample for the [fiscal integration framework](fiscal-integration-for-retail-channel.md) , which enables POS to communicate directly with a fiscal device or service without a hardware station. 
 
