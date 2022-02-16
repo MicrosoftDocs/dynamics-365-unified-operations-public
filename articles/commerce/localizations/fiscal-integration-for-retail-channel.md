@@ -45,7 +45,7 @@ A fiscal integration sample might contain the Commerce runtime (CRT), Hardware s
 A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change configuration parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 > [!NOTE]
->If you need some devices for non-fiscal operations, such as Product catalogue search, Customer lookup, create draft of receipts, you can select these registers as registers with fiscal process restrictions see [Setup registers with fiscal registration restrictions](setting-up-fiscal-integration-for-retail-channel.md#setup-registers-with-fiscal-registration-restrictions).
+>If you need some devices for none-fiscal operations, such as Product catalogue search, Customer lookup, create draft of transactions, you can select these registers as registers with fiscal process restrictions see [Setup registers with fiscal registration restrictions](setting-up-fiscal-integration-for-retail-channel.md#setup-registers-with-fiscal-registration-restrictions).
 
 The following typical fiscal registration flow starts with an event in the POS (for example, finalization of a sales transaction) and implements a predefined sequence of steps that involves other Commerce components (such as the CRT and Hardware station).
 
