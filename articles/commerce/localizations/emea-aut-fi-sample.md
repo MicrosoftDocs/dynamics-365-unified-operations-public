@@ -309,7 +309,7 @@ To set up a development environment to test and extend the sample, follow these 
         HardwareStation.EFR.Installer.exe install --verbosity 0
         ```
 1. Install POS connector extensions (fiscal connector located on POS):
-    1. If you need use fiscal connector on the POS, use instruction [Use the sample in the legacy SDK](pos-fiscal-connector-sample.md#use-the-sample-in-the-legacy-sdk).
+    1. If you need use fiscal connector on the POS, use instruction [Use the POS connector sample](pos-fiscal-connector-sample.md#use-the-sample).
     1. POS Sample is located [here](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.35/src/FiscalIntegration)
 
 #### Production environment
