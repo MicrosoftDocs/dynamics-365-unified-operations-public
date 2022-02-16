@@ -55,7 +55,7 @@ Data sharing is based on configuration of Data sharing policies. Policies let yo
 +	The fields that are shared.
 +	The companies that participate in the sharing.
 
-![Single record sharing example](media/SRS-image1.png)
+![Single record sharing example.](media/SRS-image1.png)
 
 The same company and table can only be in one enabled policy. It is possible to share the same table in more than policy. This can be required when the limits of records or companies are reached for DRS, or to create policies for tables that need to be shared differently per country/region.
 
@@ -94,7 +94,7 @@ Foreign key fields are selected automatically or manually. Tables that are refer
 
 In the example shown in the following image, unless the terms of payment table is added manually, it will be added automatically because the PaymTermId foreign key field has been selected for sharing in the Customer groups table. 
 
-![Single record sharing](media/SRS-image2.png)
+![Single record sharing.](media/SRS-image2.png)
 
 > [!NOTE]
 > Only one level of child foreign key relationships is added automatically. 
