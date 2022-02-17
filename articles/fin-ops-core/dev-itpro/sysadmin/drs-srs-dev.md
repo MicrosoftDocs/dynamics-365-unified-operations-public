@@ -52,14 +52,14 @@ property for the table. To enable a custom table for cross-company data sharing,
     **Single**. This would be seen as a breaking change as DRS policies using
     the table would no longer be valid.
 > - When using SRS, fields set to **Never** will get the default value for the
-    field’s type in all child companies. You cannot update these fields in a child compmay to contain another value. For example,
+    field’s type in all child companies. You cannot update these fields in a child company to contain another value. For example,
     integer/real will contain a value of 0, strings will be empty, enumerations
     will be non-deterministic based on whether they are extensible.
 
 ## How does it work?
 
 When a table is enabled for data sharing, kernel logic auto-creates a view with
-name "\<tablename\>_SharingView". This view should be used to for non-kernel based access the shared
+name "\<tablename\>_SharingView". This view should be used for non-kernel based access to the shared
 data.
 
 In the following example, the **CustGroup** table is enabled for data sharing and **USMF** is
@@ -77,7 +77,7 @@ If a company-specific table has **Data Sharing Type = Single**, it means it has 
 
 If a company-specific table has **Data Sharing Type = Duplicate**, it means it has already been evaluated for DRS. If you want to enable it for SRS, you need to evaluate its functional eligibility before changing the property to **Single**.
 
-If a custom company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS whenever pssoible. Because a DRS table can participate in both DRS and SRS policies, it may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
+If a custom company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS whenever posssible. Because a DRS table can participate in both DRS and SRS policies, it may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
 
 + If a company-specific table has a unique index or alternate key, then apply DRS.
     +	If the table has a foreign key field and the corresponding table is set to **Data Sharing Type = None**, then set the **Single Data Sharing Type** property for that field to **Never**.
