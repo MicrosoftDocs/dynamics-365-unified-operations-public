@@ -367,6 +367,16 @@ In this code, `_destination` is the wrapper object that is used to generate the 
 >   - The label of the enum can be different across preferred languages. Don't use **enum2Str** to convert the enum type to string.
 >   - The name of enum is recommended because it's fixed. **enum2Symbol** can be used to convert the enum to its name. The enumeration value added in the tax configuration should be exactly the same as the enum name.
 
+## Model dependency
+
+Create a new model to include above new extension files. In order to build the new model successfully, add below reference models to model depedencies:
+
+* ApplicationPlatform
+* ApplicationSuite
+* Tax Engine
+* Dimension, if financial dimension is used.
+* Other necessary models if referenced in code.
+
 ## Validation
 
 After you complete the previous steps, you can validate your changes.
