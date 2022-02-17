@@ -4,7 +4,7 @@
 title: External data in cash flow forecasts
 description: This topic describes the setup steps that must be completed so that external data can be entered or imported into cash flow forecasts.
 author: rcarlson
-ms.date: 12/21/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
