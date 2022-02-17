@@ -5,7 +5,6 @@ title: Electronic reporting components
 description: This topic describes the Electronic reporting (ER) components.
 author: nselin
 ms.date: 09/28/2021
-ms.topic: 
 ms.prod: 
 ms.technology: 
 
