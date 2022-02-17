@@ -4,7 +4,7 @@
 title: Metadata and markdown template
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: tonyafehr
-ms.date: 06/20/2020
+ms.date: 02/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
@@ -34,20 +34,20 @@ Here are some key things to note about metadata.
 - **description** - This is the full description that appears in the search results. It should contain 160 or fewer characters.
 - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
 - **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
-- **ms.topic** - Enter "article" here.
+- **ms.topic** - Enter "article" or if the topic contains overview material, enter "overview" instead.
 - **audience** - Use these values: Application User, Developer, or IT Pro. If you use more than one value, separate them with a comma.
 - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
-- **ms.custom** - Add NotInToc if the topic is not in the table of contents. If you use more than one value, separate them with a comma.
+- **ms.custom** - Add "NotInToc" if the topic is not in the table of contents. Enter "intro-internal" if the topic contains getting started material. If you use more than one value, separate them with a comma.
 - **ms.search.region** - Use "global" or enter a country-region value.
 - **ms.author** - Use your Microsoft alias.  
-- **ms.search.industry** - retail, public sector. Leave it out, rather than leaving it blank.
+- **ms.search.industry** - Leave it out, rather than leaving it blank.
 - **ms.search.validFrom** - Month/year of release that feature was introduced in, in format yyyy-mm-dd.
 - **ms.search.form** - The form ID. This value is used to lookup relevant topics from the Help Pane for specific forms.
 - **ms.dyn365.ops.version** - Name of release that feature was introduced in, see list here: [Help system and Versions metadata for docs topics](https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29])
 
 ### Don't use these metadata
 
-If you think you need to use any of these, talk to your content strategist first.
+If you think you need to use any of these, talk to your Content Strategist first. For valid values, see [Taxonomies for Docs](https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=main). 
 
 - **ms.search.scope** - Set at the folder level, see [docfx.json](articles/docfx.json). We are using these values:
     + Legacy values. Don't remove these from topics. They need to stay until all customers are on the new system.
@@ -72,11 +72,11 @@ If you think you need to use any of these, talk to your content strategist first
     - `dynamics-365-human-resources`: Human Resources
 - **manager** - The best practice is to not use **manager**.
 - **ms.assetid** - We aren't using this value anymore, but it's not in conflict with any other metadata.
-- **ms.prod** - This is only used for AX2012 content. You can't have both **ms.prod** and **ms.service**.
+- **ms.prod** - This is only used for AX2012 content or for content that is on-prem only. If neither value is needed, leave it out. You can't have both **ms.prod** and **ms.service**, but if you enter **ms.prod**, you need to include **ms.service** with a blank value. 
 
 ### No blank metadata
 
-If the metadata is blank, it's better to leave it out altogether.
+If the metadata is blank, it's better to leave it out altogether. The exception is **ms.prod**, if you use a value for **ms.prod** you need to include **ms.service** with a blank value. 
 
 ## Basic Markdown, GFM, and special characters
 
