@@ -77,7 +77,7 @@ If a company-specific table has **Data Sharing Type = Single**, it means it has 
 
 If a company-specific table has **Data Sharing Type = Duplicate**, it means it has already been evaluated for DRS. If you want to enable it for SRS, you need to evaluate its functional eligibility before changing the property to **Single**.
 
-If a custom company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS whenever posssible. Because a DRS table can participate in both DRS and SRS policies, it may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
+If a custom company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS whenever possible. Because a DRS table can participate in both DRS and SRS policies, it may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
 
 + If a company-specific table has a unique index or alternate key, then apply DRS.
     +	If the table has a foreign key field and the corresponding table is set to **Data Sharing Type = None**, then set the **Single Data Sharing Type** property for that field to **Never**.
@@ -96,7 +96,7 @@ After you have modified data sharing metadata properties, you need to do a full 
 
 Data sharing is applicable for tables with the **Save data per company** property set to **Yes**. Tables with **Save data per company** set to **No**, are global and no additional sharing configuration is needed.
 
-From a development perspective, it is not enough to look at the primary and alternate key of a table to determine the sharing type. Additional work may be required to share the to enable sharing without causing data issues.
+From a development perspective, it is not enough to look at the primary and alternate key of a table to determine the sharing type. Additional work may be required to enable sharing without causing data issues.
 
 
 <table>
