@@ -111,9 +111,43 @@ To create deployable packages that contain Commerce components, and apply those 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
+4.  Modify the following files to include the resource files for Norway in deployable packages:
+    - Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj
+    - Packages\RetailServer\Sdk.RetailServerSetup.proj
 
-4. Start the MSBuild Command Prompt for Visual Studio utility, and then run **msbuild** under the Retail SDK folder to create deployable packages.
-5. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+  - For the **Sdk.ModernPos.Shared.csproj** file 
+    - Add an **ItemGroup** section with desired translations. Example below is given for it and it-CH locales.
+
+      ```xml
+      <ItemGroup>
+        <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+      </ItemGroup>
+      ```
+    > [!Note]
+    > Specify the correct namespace and sample name.
+
+    - Add one line for each locale to the **Target Name="CopyPackageFiles"** section
+      ``` xml
+      <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
+      <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
+      ```
+  - For the **Sdk.RetailServerSetup.proj** file 
+    - Add an **ItemGroup** section with desired translations. Example below is given for it and it-CH locales.
+      ```xml
+      <ItemGroup>
+        <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+      </ItemGroup>
+      ```
+    - Add line to the **Target Name="CopyPackageFiles"** section
+      ``` xml
+      <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
+      <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
+      ```
+
+5. Start the MSBuild Command Prompt for Visual Studio utility, and then run **msbuild** under the Retail SDK folder to create deployable packages.
+6. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## Design of extensions
 
