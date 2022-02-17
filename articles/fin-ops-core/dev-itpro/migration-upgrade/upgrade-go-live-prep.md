@@ -51,6 +51,11 @@ After no further code or setup changes will occur, run a final cutover test to m
 > [!NOTE]
 > You must complete this step even if you freeze code and setup changes at the beginning of the upgrade project, because the data itself changes every day. This final cutover test also validates that the current data is upgraded successfully.
 
+Complete an end-to-end data upgrade test. 
+
+> [!WARNING]
+> It is critical that you have completed at least one final test data upgrade, and that this was tested again the live AX 2012 Production Environment, to ensure the replication process works with the active transactional database. Testing replication against a copy of production is not the same, as active transations in the SQL database affect how the replication works. Also, this test run should be withing a short time frame, e.g. a few weeks, of the actual go live. Leaving a large time between the final test run and the go-live could invalidate the testing if the data volume has increased significantly.
+
 Make sure that functional testing is performed against this last upgraded copy.
 
 At this point in the upgrade project, we recommend that you categorize any bugs that are found:
