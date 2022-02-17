@@ -17827,6 +17827,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/b2b/org-model.md",
+      "redirect_url": "/dynamics365/commerce/b2b/partners-customer-hierarchies",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/product-variants-POS.md",
       "redirect_url": "pos-inventory-lookup-operation",
       "redirect_document_id": "false"
