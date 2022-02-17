@@ -397,7 +397,7 @@ In the same [key vault](../fin-ops-core/dev-itpro/data-entities/configure-export
 
 |Suggested secret name | Secret value | Example secret value |
 |---------|---------|---------|
-|synapse-sql-server | The serverless SQL endpoint value that you noted in the [preceding section](#serverlessep). | 'test-ondemand.sql.azuresynapse.net' |
+|synapse-sql-server | The serverless SQL endpoint value that you noted in the [preceding section](#serverlessep). | `test-ondemand.sql.azuresynapse.net` |
 |<a name="roUser"></a>readonly-sql-pwd | The password to set for the SQL read-only user. This will be used by the Power BI report to connect to the serverless SQL. | To set the password, follow your organization's password policies. |
 
 ### <a name="enableCommerceAnalyticsAddin"></a>Enable and configure the Commerce analytics (Preview) add-in
@@ -449,7 +449,7 @@ To install the Power BI template app for Commerce analytics (Preview), follow th
     | Language | Select a value in the list. This field is used for localized product and category names. The value is case-sensitive. |
     | Date Range | Select a value in the list. Data for the selected number of months will be imported into the Power BI dataset. The value that you select affects the size of the dataset and the time that is required for synchronization. |
 
-1. Select **Next**. You're prompted to enter the credentials for connecting to the Azure Synapse SQL database. Set the fields as shown in the following table.
+1. Select **Next**. When prompted to enter the credentials for connecting to the Azure Synapse SQL database, set the field values as shown in the following table.
 
     | Field | Value |
     |---|---|
