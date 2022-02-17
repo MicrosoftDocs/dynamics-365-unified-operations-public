@@ -111,12 +111,12 @@ To create deployable packages that contain Commerce components, and apply those 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
-4.  Modify the following files to include the resource files for Norway in deployable packages:
+4.  Modify the following files to include the resource files for Italy in deployable packages:
     - Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj
     - Packages\RetailServer\Sdk.RetailServerSetup.proj
 
   - For the **Sdk.ModernPos.Shared.csproj** file 
-    - Add an **ItemGroup** section with desired translations. Example below is given for it and it-CH locales.
+    - Add an **ItemGroup** section with desired translations. Example below is given for `it` and `it-CH` locales.
 
       ```xml
       <ItemGroup>
@@ -133,7 +133,7 @@ To create deployable packages that contain Commerce components, and apply those 
       <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
       ```
   - For the **Sdk.RetailServerSetup.proj** file 
-    - Add an **ItemGroup** section with desired translations. Example below is given for it and it-CH locales.
+    - Add an **ItemGroup** section with desired translations. Example below is given for `it` and `it-CH` locales.
       ```xml
       <ItemGroup>
         <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
