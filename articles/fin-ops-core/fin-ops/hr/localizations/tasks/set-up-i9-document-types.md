@@ -27,6 +27,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../../../includes/peap-1.md)]
+
 This procedure shows how to view and set up document types that are used for I-9 verification. Before you set up I-9 document types, you must also set up the issuing agencies and identification types. The demo data company used to create this procedure is USMF, which includes examples of the issue agencies and identification types that are needed to complete the procedure.
 
 1. Go to **Human resources \> Workers \> I-9 \> I-9 document types**.

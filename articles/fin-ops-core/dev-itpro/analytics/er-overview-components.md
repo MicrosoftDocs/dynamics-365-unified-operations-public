@@ -5,7 +5,6 @@ title: Electronic reporting components
 description: This topic describes the Electronic reporting (ER) components.
 author: nselin
 ms.date: 09/28/2021
-ms.topic: 
 ms.prod: 
 ms.technology: 
 
@@ -21,6 +20,7 @@ ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 # ms.search.industry: 
+ms.topic: overview
 ms.author: nselin 
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

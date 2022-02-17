@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.22
 # Inventory Visibility public APIs
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 This topic describes the public APIs that are provided by Inventory Visibility.
 

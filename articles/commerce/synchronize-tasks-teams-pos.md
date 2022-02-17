@@ -3,7 +3,7 @@
 title: Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS
 description: This topic describes how to synchronize task management between Microsoft Teams and Dynamics 365 Commerce point of sale (POS).
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,6 +57,9 @@ For more information, see [Publish task lists to create and track work in your o
 ## Link POS and Teams for task management
 
 To link the POS and Microsoft Teams applications for task management in Commerce headquarters, follow these steps.
+
+> [!NOTE]
+> Before you try to integrate Task management with Microsoft Teams, make sure that you've enabled [Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md). 
 
 1. Go to **Retail and Commerce \> Task management \> Tasks integration with Microsoft Teams**.
 1. On the Action Pane, select **Edit**.

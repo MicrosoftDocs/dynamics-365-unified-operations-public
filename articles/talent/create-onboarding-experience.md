@@ -20,6 +20,7 @@ audience: Application User
 # ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
+ms.custom: intro-internal
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update

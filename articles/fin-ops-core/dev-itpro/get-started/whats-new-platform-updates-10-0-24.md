@@ -16,7 +16,6 @@ ms.search.validFrom: 2021-11-30
 # Platform updates for version 10.0.24 of Finance and Operations apps (February 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the features that are included in the platform updates for version 10.0.24 of Finance and Operations apps. This version has a build number of 7.0.6253 and is available on the following schedule:
 

@@ -123,7 +123,7 @@ To add the standard ER configurations to your current Finance instance, you must
 3. On the **Configurations** page, expand the **Configuration components** FastTab.
 4. In the configuration tree in the left pane, expand **Invoice model**, and then expand **UBL Sales invoice**.
 
-Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) configuration and its [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) configurations were imported.
+Notice that, in addition to the selected **Peppol Sales Invoice** ER format, other required ER configurations were imported. Because new versions of ER configurations are constantly published to the Global repository and LCS to keep the corresponding solutions compliant with new requirements, the latest versions of the required data model configuration and its model mapping configurations were imported.
 
 ![Configurations page.](./media/er-quick-start3-imported-solution1a.png)
 
@@ -136,7 +136,7 @@ Then verify that the following configurations are available in the configuration
 
 - **Invoice model** ER data model configuration (initially named **Customer invoice model**):
 
-    - Version 11 contains version 10 of the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the **Peppol Sales Invoice** ER format that was selected for import.
+    - Version 11 contains version 10 of the data model ER component that represents the data structure of the invoicing business domain. This ER configuration has been imported as an ancestor of the **Peppol Sales Invoice** ER format that was selected for import.
     - Version 50 contains version 31 of the data model ER component. This ER configuration has been imported as an ancestor of the August 7, 2019, version of the **Invoice model mapping** ER model mapping configuration.
 
     ![Invoice model ER data model configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b1.png)
@@ -146,7 +146,7 @@ Then verify that the following configurations are available in the configuration
 
 - **Invoice model mapping** ER model mapping configuration (initially named **Customer invoice model mapping**):
 
-    - Version 50.19 has been imported as the latest implementation of version 50 of the **Invoice model** ER data model configuration. It contains two [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER components that describe how the data model is filled in with application data at runtime.
+    - Version 50.19 has been imported as the latest implementation of version 50 of the **Invoice model** ER data model configuration. It contains two model mapping ER components that describe how the data model is filled in with application data at runtime.
 
     ![Invoice model mapping ER model mapping configuration on the Configurations page.](./media/er-quick-start3-imported-solution1b2.png)
 
@@ -155,7 +155,7 @@ Then verify that the following configurations are available in the configuration
 
 - **UBL Sales invoice** ER format configuration:
 
-    - Version 11.2 contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime. This ER format was configured to generate e-invoices in Universal Business Language (UBL) format. It has been imported as a parent of the **Peppol Sales Invoice** ER format that was selected for import.
+    - Version 11.2 contains the format and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime. This ER format was configured to generate e-invoices in Universal Business Language (UBL) format. It has been imported as a parent of the **Peppol Sales Invoice** ER format that was selected for import.
 
 - **Peppol Sales Invoice** ER format configuration:
 

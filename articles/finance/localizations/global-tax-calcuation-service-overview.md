@@ -5,7 +5,7 @@ title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
 ms.date: 11/17/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: wangchen
@@ -81,6 +81,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.22         | Tax Calculation Configuration 40.48.215 |
 | 10.0.23         | Tax Calculation Configuration 40.50.221 |
 | 10.0.24         | Tax Calculation Configuration 40.50.225 |
+| 10.0.25         | Tax Calculation Configuration 40.50.225 |
 
 
 ## Data flow

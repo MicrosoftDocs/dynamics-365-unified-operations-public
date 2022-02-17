@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -25,7 +25,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Enter applicant and application data manually
 
-[!include [banner](../../includes/banner.md)]
+> [!IMPORTANT]
+> The functionality noted in this topic is currently available for Human Resources customers on the Finance infrastructure.  
+
 
 This procedure shows how to manually maintain information about applicants and their application. You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants. You can also update the status of applicants' applications for employment, and create letters or email messages to communicate with applicants. When you create an applicant record, a person record for that applicant is created in the global address book. The **USMF** demo data company was used to create this procedure.
 

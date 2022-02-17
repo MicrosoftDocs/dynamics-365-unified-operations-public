@@ -4,7 +4,7 @@
 title: Configuration for Finance insights
 description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
-ms.date: 11/19/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -104,6 +104,9 @@ After the add-in is successfully installed, it might take up to an hour before y
 
    After the **Insights provisioning status check** process is successfully run, you can enable Finance insights features in the **Feature management** workspace.
 
+> [!NOTE]
+> If the **Insights provisioning status check** process doesn't run, go to **System administration** > **Inquiries** > **Batch jobs**. In the **Process automation polling system** field, change the value to **Waiting** to initiate the process. 
+> 
 ## Feedback and support
 
 If you're interested in providing feedback, or if you need support, send email to [Finance insights (Preview)](mailto:fiap@microsoft.com).

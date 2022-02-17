@@ -123,7 +123,7 @@ The purpose of the extension that is a fiscal document provider is to generate p
 
 The CRT extension is **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
 
-For more information about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+For more information about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices and services](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### Request handler
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.21
 # Configure Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 This topic describes how to configure Inventory Visibility using the Inventory Visibility app in Power Apps.
 

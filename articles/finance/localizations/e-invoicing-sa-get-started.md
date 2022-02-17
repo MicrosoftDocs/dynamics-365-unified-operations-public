@@ -17,10 +17,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 574540
 ms.assetid: 
 ms.search.region: Saudi Arabia
 # ms.search.industry: 
+ms.custom: intro-internal
 ms.author: ilyako
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: AX 10.0.21

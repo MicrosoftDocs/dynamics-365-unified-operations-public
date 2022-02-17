@@ -5,7 +5,7 @@ title: Asset attribute overview
 description: This topic provides an overview of asset attributes in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

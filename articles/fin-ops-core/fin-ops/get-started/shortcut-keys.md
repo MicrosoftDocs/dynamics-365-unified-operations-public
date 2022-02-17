@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-ms.date: 12/10/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The following keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps .
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Keyboard shortcuts can help you quickly and efficiently enter data in Finance and Operations apps. 
 
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
@@ -40,7 +43,7 @@ Some of the shortcuts on this page are *key chords*, meaning they require two co
 
 ## Finding a shortcut
 
-As of Platform update 11, users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page.
+Users can discover currently available shortcuts directly from the user interface. Simply right-click on a control and select **View shortcuts**. This will open a dialog box showing the shortcuts you can use based on where you are on the page. Alternatively, you can press Alt+Shift+K to open this dialog box (and press Alt+Shift+K a second time to see all currently available shortcuts for the page).    
 
 ## Action shortcuts
 
@@ -259,10 +262,14 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Expand/collapse the animated pop-up prompt (while playing a task guide)              | Alt+R,C                    |
 | Show more/less information in the animated pop-up prompt (while playing a task guide) | Alt+R,M                    |
 
+## Focus management 
+Focus management describes how user focus is handled in an application. Finance and Operations apps have specialized focus behaviors that are intended to optimize user productivity, especially for data entry scenarios. Focus behaviors include the following:  
+
+-  When a page is loaded, the first editable input control on the page will have focus and can accept user input immediately. If there is no editable input control on the page, the fallback option for initial focus is the first input control on the page followed by the first, focusable control on the page.   
+-  Typically when a button is selected, the action is processed and focus may return to the page. When this happens, focus tends to return to the button control that was selected. This is true in Finance and Operations apps **except** when the button is located in the Action Pane or on a toolbar. In these cases, when the action completes, focus returns to the last control *outside* of the Action Pane (or toolbar) that had focus before the button was selected.
+
 ## Additional resources
 
 [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

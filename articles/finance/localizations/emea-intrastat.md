@@ -2,10 +2,10 @@
 # required metadata
 
 title: Intrastat overview
-description: This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
+description: This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
 author: EvgenyPopovMBS
 ms.date: 01/13/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -30,150 +30,58 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
+This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). This topic also gives an overview of the reporting process, and describes the required settings and prerequisites.
 
 Intrastat is the system for collecting information and generating statistics about the trade of goods among countries/regions of the European Union (EU). Intrastat reporting is required whenever a product crosses the border of another EU country/region. In several countries/regions, Intrastat reporting also applies to services. Mandatory and optional elements can be collected in Intrastat reporting. The following elements are mandatory: the value-added tax (VAT) number of the party that is responsible for providing information, the reference period, the flow (arrival or dispatch), the eight-digit commodity code, the partner member state (member state of consignment on arrivals and member state of destination on dispatches), the value of the goods, the quantity of the goods (net mass and supplementary unit), and the nature of the transaction. Countries/regions can also collect optional elements under various conditions. Some optional elements are the country/region of origin, the delivery terms, the mode of transport, a more detailed commodity code than CN8, the region of origin on dispatches and the region of destination on arrivals, the statistical procedure, the statistical value, a description of the goods, and the port/airport of loading/unloading.
 
 ## Overview of the Intrastat reporting process
 The following sections describe the overall flow of information that is used for Intrastat reporting.
 
-### 1. Enter a transaction that crosses the border of another EU country/region
+### Enter a transaction that crosses the border of another EU country/region
 
 A customer invoice, free text invoice, purchase invoice, project invoice, customer packing slip, vendor product receipt, or transfer order is transferred to the Intrastat journal only if the country/region type of the destination (on dispatches) or consignment (on arrivals) is **EU**. This feature was extended for Microsoft Dynamics 365 for Operations (1611) and allows you to specify lading addresses for an intra-community transaction. If a lading address differs with a vendor business address (or customer business address for return order) the Intrastat reporting will operate with this information. When you create a sales order, free text invoice, purchase order, vendor invoice, project invoice, or transfer order, some fields that are related to foreign trade have default values in the document header or on the line. The default transaction code is taken from the corresponding field on the **Foreign trade parameters** page. The default commodity code, country/region of origin, and state/province of origin are taken from the item. You can change the default values and can also fill in other foreign trade–related information: the statistics procedure, transport method, and port.
 
-### 2. Use the Intrastat journal to generate information about trade among EU countries/regions
+### Use the Intrastat journal to generate information about trade among EU countries/regions
 
 For statistical purposes, you generate information about trade among EU countries/regions every month. You can transfer transactions from a free text invoice, customer invoice, customer packing slip, vendor invoice, vendor packing slip, project invoice, or transfer order, according to the transfer criteria that are set up on the **Foreign trade parameters** page. Alternatively, you can enter transactions manually. You can manually update transferred transactions in the Intrastat journal, if any updates are required. Under specific conditions that are set up on the **Compression of Intrastat** page, you can compress the transactions in the Intrastat journal. Some countries/regions let you apply a small transaction threshold. You can then report transactions that are below that threshold under the specified commodity code. You can update the commodity code on the corresponding Intrastat journal lines, based on the **Minimum limit** setting on the **Foreign trade parameters** page. You can also compress those transactions, based on the **Compression of Intrastat** setting. You can validate the completeness of the transactions in the Intrastat journal, based on the **Check setup** setting on the **Foreign trade parameters** page. The data in corresponding fields might be validated for completeness: country/region, state or province, weight, commodity code, transaction code, additional unit, port, origin, terms of delivery, transport method, and tax exempt number. Transactions that aren't completed will be marked as not valid.
 
-### 3. Use the Intrastat journal to report information about trade among EU countries/regions
+### Use the Intrastat journal to report information about trade among EU countries/regions
 
 For statistical purposes, you report information about trade among EU countries/regions every month. You can print the Intrastat report, based on the **Report format mapping** settings on the **Foreign trade parameters** page. You can also generate an electronic file, based on the **File format mapping** settings on the **Foreign trade parameters** page. For more information about Intrastat reporting, including required prerequisites, see the Intrastat reporting task recordings:
 
--   Generate an EU Intrastat declaration,
--   Transfer transactions to the Intrastat,
--   Specifying lading address for an intra-community transaction.
+  - Generate an EU Intrastat declaration,
+  - Transfer transactions to the Intrastat,
+  - Specifying lading address for an intra-community transaction.
 
 ## Prerequisites
 The following table lists the prerequisites for Intrastat reporting.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Prerequisite</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Address setup</td>
-<td>Set up International Organization for Standardization (ISO) codes for countries/regions.</td>
-</tr>
-<tr class="even">
-<td>Legal entity</td>
-<td>Set up tax exempt numbers for import/export, the branch number extension for import/export, and the Intrastat code that is assigned to the legal entity.</td>
-</tr>
-<tr class="odd">
-<td>Product category hierarchy (sales hierarchy, procurement hierarchy)</td>
-<td>Assign the Intrastat commodity codes to the category nodes on the <strong>Commodity codes</strong> tab of the <strong>Category hierarchy</strong> page. When you assign a commodity code to a parent category node, that code is applicable to all child category nodes. The selected commodity codes will be available in the <strong>Selected</strong> view when you select a commodity code in the product details, and on sales order, purchase order, and transfer order lines.</td>
-</tr>
-<tr class="even">
-<td>Released product details</td>
-<td>Set up the following foreign trade data for released products:
-<ul>
-<li><strong>Commodity code</strong> – Select from either the list of selected commodities that is retrieved from assigned product categories or the full list of Intrastat commodity codes.</li>
-<li><strong>Statistical charges percentage</strong></li>
-<li><strong>Country/region of origin</strong> – Select the default country/region where the goods were completely obtained or produced.</li>
-<li><strong>State/province of origin/destination</strong> – Select the default state/province of destination for arrivals and the state/province of origin for dispatches.</li>
-<li><strong>Net weight in kg</strong></li>
-<li><strong>Exclude</strong> - Enable this parameter to not transfer transactions with this product to Intrastat</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Customers</td>
-<td>Set up the customer delivery address in the EU country/region.</td>
-</tr>
-<tr class="even">
-<td>Vendors</td>
-<td>Set up the vendor address in the EU country/region.</td>
-</tr>
-<tr class="odd">
-<td>Miscellaneous charges</td>
-<td>Set up the miscellaneous charges code to include in the invoice amount, the statistical amount, or both. On the <strong>Charges codes</strong> page, on the <strong>Foreign trade</strong> tab, enable <strong>Intrastat invoice value</strong> to include the charges amount in the invoice value, and enable <strong>Intrastat statistical value</strong> to include the charges amount in the statistical value.</td>
-</tr>
-<tr class="even">
-<td>Electronic reporting</td>
-<td>Set up electronic reporting configurations to export Intrastat data in an electronic file that has the format that is requested by the relevant authorities, and to preview Intrastat data in a user-friendly, readable format (for example, in Microsoft Excel).</td>
-</tr>
-<tr class="even">
-<td>Warehousing</td>
-<td>Associate vendor accounts with warehouse codes for filling tax exempt number when transferring Transfer order.</td>
-</tr>
-</tbody>
-</table>
+|  Prerequisite  |  Description  |
+|-------------------------|-------------------------|
+| Address setup | Set up International Organization for Standardization (ISO) codes for countries/regions. |
+| Legal entity | Set up tax exempt numbers for import/export, the branch number extension for import/export, and the Intrastat code that is assigned to the legal entity. |
+| Product category hierarchy (sales hierarchy, procurement hierarchy) | Assign the Intrastat commodity codes to the category nodes on the **Commodity codes** tab of the **Category hierarchy** page. When you assign a commodity code to a parent category node, that code is applicable to all child category nodes. The selected commodity codes will be available in the **Selected** view when you select a commodity code in the product details, and on sales order, purchase order, and transfer order lines. |
+| Released product details | Set up the following foreign trade data for released products:<ul><li>**Commodity code** – Select from either the list of selected commodities that is retrieved from assigned product categories or the full list of Intrastat commodity codes.</li><li>**Statistical charges percentage**</li><li>**Country/region of origin** – Select the default country/region where the goods were completely obtained or produced.</li><li>**State/province of origin/destination** – Select the default state/province of destination for arrivals and the state/province of origin for dispatches.</li><li>**Net weight in kg**</li><li>**Exclude** - Enable this parameter to not transfer transactions with this product to Intrastat</li></ul> |
+| Customers | Set up the customer delivery address in the EU country/region. |
+| Vendors | Set up the vendor address in the EU country/region. |
+| Miscellaneous charges | Set up the miscellaneous charges code to include in the invoice amount, the statistical amount, or both. On the **Charges codes** page, on the **Foreign trade** tab, enable **Intrastat invoice value** to include the charges amount in the invoice value, and enable **Intrastat statistical value** to include the charges amount in the statistical value.</br>For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example. |
+| Electronic reporting | Set up electronic reporting configurations to export Intrastat data in an electronic file that has the format that is requested by the relevant authorities, and to preview Intrastat data in a user-friendly, readable format (for example, in Microsoft Excel). |
+| Warehousing | Associate vendor accounts with warehouse codes for filling tax exempt number when transferring Transfer order.</br>For more information, review [Transfer order](#transfer-order) example.|
 
 ## Setup
 The following sections describe the settings that are required for Intrastat reporting.
 
 ### Set up all required Intrastat-related lists
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>List</th>
-<th>Additional information</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Commodity codes</td>
-<td>Set up a category hierarchy of type <strong>Commodity code</strong>, and enter all commodity codes according to the combined nomenclature list. For each commodity, you set up the following information:
-<ul>
-<li>The name of the commodity and the commodity code</li>
-<li>The friendly name and/or translated name</li>
-<li>Settings for reporting additional (supplementary) units on the <strong>Foreign trade</strong> tab. You can select the additional unit in the unit list. You can also specify whether the weight of commodities must be reported in addition to the selected additional unit.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Transaction codes</td>
-<td>Set up the nature of the transaction according to your country&#39;s/region&#39;s requirements. For each transaction code that you set up, you must set up the rules for calculating invoice amounts and statistical amounts for transfer orders and sales/purchase orders.
-<ul>
-<li>For transfer orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:
-<ul>
-<li><strong>Empty</strong> – The amount will be 0 (zero).</li>
-<li><strong>Financial cost amount</strong> – The amount will be equal to the financial cost.</li>
-<li><strong>Total cost</strong> – The amount will be equal to the total cost of the transaction.</li>
-<li><strong>Manual</strong> – The amount will be equal to the amount that is manually specified on the transfer order line.</li>
-</ul></li>
-<li>For sales orders and purchase orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:
-<ul>
-<li><strong>Empty</strong> – The amount will be 0 (zero).</li>
-<li><strong>Invoice amount</strong> – The amount will be equal to the amount that is invoiced for the commodity.</li>
-<li><strong>Base amount</strong> – The amount will be equal to the amount that would be invoiced before any discount is applied.</li>
-</ul></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Transport methods</td>
-<td>Set up the transport mode according to your country&#39;s/region&#39;s requirements. For each delivery mode, you can set up a default transport method on the <strong>Foreign trade</strong> tab.</td>
-</tr>
-<tr class="even">
-<td>Ports</td>
-<td>Set up the port/airport of loading/unloading if this information is collected by your country/region.</td>
-</tr>
-<tr class="odd">
-<td>Statistics procedures</td>
-<td>Set up the statistical procedure if this information is collected by your country/region.</td>
-</tr>
-</tbody>
-</table>
+|   List   |   Additional information   |
+|-------------------------|-------------------------|
+| Commodity codes | Set up a category hierarchy of type **Commodity code**, and enter all commodity codes according to the combined nomenclature list. For each commodity, you set up the following information:<ul><li>The name of the commodity and the commodity code</li><li>The friendly name and/or translated name</li><li>Settings for reporting additional (supplementary) units on the **Foreign trade** tab. You can select the additional unit in the unit list. You can also specify whether the weight of commodities must be reported in addition to the selected additional unit.</li></ul>For more information, review [Additional units](#additional-units) example.|
+| Transaction codes | Set up the nature of the transaction according to your country's/region's requirements. For each transaction code that you set up, you must set up the rules for calculating invoice amounts and statistical amounts for transfer orders and sales/purchase orders.<ul><li>For transfer orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:<ul><li>**Empty** – The amount will be 0 (zero).</li><li>**Financial cost amount** – The amount will be equal to the financial cost.</li><li>**Total cost** – The amount will be equal to the total cost of the transaction.</li><li>**Manual** – The amount will be equal to the amount that is manually specified on the transfer order line.</li></ul></li><li>For sales orders and purchase orders, you set up one of the following rules for calculating invoice amounts and statistical amounts:<ul><li>**Empty** – The amount will be 0 (zero).</li><li>**Invoice amount** – The amount will be equal to the amount that is invoiced for the commodity.</li><li>**Base amount** – The amount will be equal to the amount that would be invoiced before any discount is applied.</li></ul></ul>For more information, review [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example. |
+| Transport methods | Set up the transport mode according to your country's/region's requirements. For each delivery mode, you can set up a default transport method on the **Foreign trade** tab. |
+| Ports | Set up the port/airport of loading/unloading if this information is collected by your country/region. |
+| Statistics procedures | Set up the statistical procedure if this information is collected by your country/region. |
+
+
 
 ### Set up rules for compressing Intrastat transactions
 
@@ -243,6 +151,245 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </tbody>
 </table>
 
+## Example
+
+### <a name= "transaction-codes-and-miscellaneous-charges"></a>Transaction codes and miscellaneous charges
+
+This topic covers a scenario where a company in Germany must purchase goods from a company in Italy. To make this purchase, the German company must set up new transaction codes, and configure calculation rules for the invoice amount and statistical amount for those transaction codes. Additionally, when the company creates an invoice, it must specify miscellaneous charges and their percentages. Those values will be considered when the statistical value is calculated.
+
+This scenario uses the **DEMF** legal entity.
+
+#### Preliminary setup
+
+1. Go to **Organization administration** > **Organization** > **Legal entities**, and select **DEMF**.
+2. On the **Addresses** FastTab, verify that the **Country/region** field is set to **DEU(Germany)**.
+3. Go to **Accounts payable** > **Vendors** > **All vendors**.
+4. In the grid, select **DE-001**.
+5. On the **Address** FastTab, select **Edit**.
+6. In the **Edit address** dialog box, in the **Country/region** field, select **ITA**.
+7. Select **OK** to close the dialog box.
+
+#### Set up transaction codes
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Transaction codes**.
+2. In the grid, select **11**. Then, on the Action Pane, select **Delete**.
+3. On the Action Pane, select **New**.
+4. On the **Transaction codes** FastTab, in the **Transaction** **code** field, enter **11**.
+5. In the **Name** field, enter **Outright purchase/sale**.
+6. In the **Sales and purchases** section, in the **Invoice amount** field, select **Invoice amount**.
+7. In the **Statistical amount** field, select **Invoice amount**.
+8. On the Action Pane, select **Save**.
+
+#### Set up miscellaneous charges
+
+1. Go to **Accounts payable** > **Charges setup** > **Charges code**.
+2. In the grid, select **Freight**.
+3. On the Action Pane, select **Edit**.
+4. On the **Foreign trade** FastTab, set the **Intrastat invoice value** and **Intrastat statistical value** options to **Yes**.
+
+#### Set up foreign trade parameters
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+2. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
+3. On the **Commodity code hierarchy** FastTab, verify that the **Category hierarchy** field is set to **Intrastat**.
+
+#### Create a purchase order
+
+1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
+2. On the Action Pane, select **New**.
+3. In the **Create purchase order** dialog box, in the **Vendor account** field, select **DE-001**.
+4. Select **OK**.
+5. On the **Header** tab, on the **Foreign** **trade** FastTab, verify that the **Transaction code** field is set to **11**.
+6. On the **Lines** tab, on the **Purchase order lines** FastTab, in the **Item number** field, select **D0003**. Then, in the **Quantity** field, enter **10**.
+7. On the **Line details** FastTab, on the **Foreign trade** tab, in the **Foreign trade** section, verify that the **Transaction code** field is automatically set.
+8. On the **Purchase order lines** FastTab, on the **Financials** menu, in the **Charges** section, select **Maintain charges**.
+9. In the **Charges code** field, select **FREIGHT**.
+10. In the **Charges value** field, enter **30**.
+11. On the Action Pane, select **Save**. Then close the page.
+12. On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**.
+13. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
+14. On the Action Pane, select **Default from**. In the **Default quantity for lines** field, select **Ordered quantity**. Then select **OK**.
+15. On the **Vendor invoice header** FastTab, in the **Invoice identification** section, in the **Number** field, enter **00100**.
+16. In the **Invoice dates** section, in the **Invoice date** field, select **11/24/2021** (November 24, 2021).
+17. On the Action Pane, select **Post** to post the invoice.
+
+### Transfer the vendor invoice to the Intrastat journal
+
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+2. On the Action Pane, select **Transfer**.
+3. In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
+4. Select **OK** to transfer the transactions, and review the Intrastat journal.
+
+   ![Line that represents the purchase order with miscellaneous charges on the Intrastat page](media/intrastat_overview_1.png)
+
+5. Review the **General** tab for the purchase order. Notice that the **Invoice value** field shows the sum of the **Invoice amount** and **Invoice charges amount** fields, and the **Statistical value** field shows the sum of the **Statistical amount** and **Statistical charges amount** fields.
+
+   ![Purchase order details with miscellaneous charges on the General tab of the Intrastat page](media/intrastat_overview_2.png)
+
+### Transfer order
+
+In this example, a company in Germany must move two units of goods from a warehouse in Germany to a warehouse in Italy. Charges at a rate of 20 percent must also be specified for this product for accounting in the **Statistical value** field. This example uses the **DEMF** legal entity.
+
+#### Preliminary setup
+
+1. Go to **Organization administration** > **Organization** > **Legal entities**, and select **DEMF**.
+2. On the **Addresses** FastTab, verify that the **Country/region** field is set to **DEU(Germany)**.
+3. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+4. On the **Commodity code hierarchy** FastTab, verify that the **Category hierarchy** field is set to **Intrastat**.
+5. Go to **Accounts payable** > **Vendors** > **All vendors**.
+6. In the grid, select **DE-001**.
+7. On the **Address** FastTab, select **Edit**.
+8. In the **Edit address** dialog box, in the **Country/region** field, select **ITA**.
+9. Select **OK** to close the dialog box.
+
+#### Set up transaction codes
+
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Transaction codes**.
+2. In the grid, select **11**. Then, on the Action Pane, select **Delete**.
+3. On the Action Pane, select **New**.
+4. On the **Transaction codes** FastTab, in the **Transaction** **code** field, enter **11**.
+5. In the **Name** field, enter **Outright purchase/sale**.
+6. In the **Transfer order** section, in the **Invoice amount** field, select **Total cost**.
+7. In the **Statistical amount** field, select **Total cost**.
+8. On the Action Pane, select **Save**.
+9. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+10. On the **Intrastat** tab, on the **General** FastTab, in the **Transfer order** field, select **11**.
+
+#### Set up charges for an item
+
+1. Go to **Product information management** > **Products** > **Released products**.
+2. In the grid, select **D0001**.
+3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Charges percentage** field, enter **20**.
+
+#### Change the site address
+
+1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Sites**.
+2. In the grid, select **1**.
+3. On the **Addresses** FastTab, select **Edit**.
+4. In the **Edit address** dialog box, in the **Country/region** field, select **DEU**.
+5. Select **OK**.
+6. In the grid, select **2**.
+7. On the **Addresses** FastTab, select **Edit**.
+8. In the **Edit address** dialog box, in the **Country/region** field, select **ITA**.
+9. Select **OK**.
+10. Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**.
+11. In the grid, select **21**.
+12. On the **General** FastTab, in the **Reference** section, in the **Vendor account** field, select **DE-001**.
+
+#### Create a transfer order
+
+1. Go to **Inventory management** > **Outbound orders** > **Transfer order**.
+2. On the Action Pane, select **New**.
+3. On the **Lines** tab, on the **Transfer order header** FastTab, in the **Overview** section, in the **From warehouse** field, select **11**. In the **To warehouse** field, select **21**.
+4. On the **Lines** tab, on the **Transfer order lines** FastTab, select **Add**.
+5. In the **Item number** field, select **D0001**. Then, in the **Transfer quantity** field, enter **2**.
+6. On the **Line details** FastTab, on the **Foreign trade** tab, in the **Foreign trade** section, verify that the **Transaction code** field is automatically set.
+7. On the Action Pane, on the **Ship** tab, in the **Operations** group, select **Ship transfer order**.
+8. In the **Shipment** dialog box, on the **Overview** tab, in the **Update** field, select **All**.
+9. Select **OK** to ship the order.
+10. On the Action Pane, on the **Receive** tab, in the **Operations** group, select **Receive**.
+11. In the **Receive** dialog box, on the **Overview** tab, in the **Update** field, select **All**.
+12. Select **OK** to ship the order.
+
+#### Transfer the transfer order to the Intrastat journal
+
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+2. On the Action Pane, select **Transfer**.
+3. In the **Intrastat (Transfer)** dialog box, set the **Transfer order** option to **Yes** and all other options to **No**.
+4. Select **OK** to transfer the transactions, and review the Intrastat journal.
+
+   ![Line that represents the transfer order on the Intrastat page](media/intrastat_overview_3.png)
+
+5.  Review the **General** tab for the transfer order.
+
+    Notice that the fields in the **Invoice value** and **Statistical value** sections are automatically set. The values of the **Invoice amount** and **Statistical amount** fields are based on settings on the **Transaction codes** page. The value **20** in the **Charges percentage** field is the value that is set on the **Released product** page. The value in the **Statistical charges amount** field is a quantitative expression of the charges (because 107.24 equals 20 percent of 536.18). The value of the **Statistical value** field is the sum of values from the **Statistical amount** and **Statistical charges amount** fields.
+
+  ![Transfer order details on the General tab of the Intrastat page](media/intrastat_overview_4.png)
+
+### Additional units
+
+In this example, a company in Germany must purchase 10 units of goods from a company in Italy. In addition to commodity codes, additional units must be specified for those goods. The example shows how to create new units of measure, assign additional units to the Intrastat commodity code, post transactions that have additional units, and review the Intrastat journal where the field for the additional units is set.
+
+#### Preliminary setup
+
+1. Go to **Organization administration** > **Organization** > **Legal entities**, and select **DEMF**.
+2. On the **Addresses** FastTab, verify that the **Country/region** field is set to **DEU(Germany)**.
+3. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**.
+4. On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
+5. On the **Commodity code hierarchy** FastTab, verify that the **Category hierarchy** field is set to **Intrastat**.
+6. Go to **Accounts payable** > **Vendors** > **All vendors**.
+7. In the grid, select **DE-001**.
+8. On the **Address** FastTab, select **Edit**.
+9. In the **Edit address** dialog box, in the **Country/region** field, select **ITA**.
+10. Select **OK** to close the dialog box.
+
+#### Create a unit of measure
+
+1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
+2. On the Action Pane, select **New**.
+3. In the **Unit** field, enter a name for the unit of measure. For this example, enter **GRM**.
+4. On the **General** FastTab, in the **Classification** section, in the **Unit class** field, select the property that the unit measures. For this example, select **Mass**.
+5. In the **System of units** field, select the measurement system that the unit belongs to. For example, select **Metric units**.
+
+#### Set up unit conversions
+
+1. Go to **Organization administration** > **Setup** > **Units** > **Unit conversions**.
+2. On the **Inter-class conversions** tab, select **New**.
+3. In the **Unit conversion** dialog box, in the **Product** field, select **F00007**.
+4. In the **From unit** field, select **ea**.
+5. In the **To unit** field, select **GRM**.
+6. Verify that the conversion rate is **1 = 1**.
+7. Select **OK**.
+8. Go to **Product information management** > **Products** > **Released products**.
+9. In the grid, select **F00007**.
+10. On the **Manage inventory** FastTab, in the **Inventory** section, in the **Unit** field, select **GRM**.
+11. On the Action Pane, select **Save**.
+
+#### Set up product information
+
+1. Go to **Product information management** > **Products** > **Released products**.
+2. In the grid, select **F00007**.
+3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select **920 20 34**.
+4. On the Action Pane, select **Save**.
+
+#### Assign the additional unit to an intrastate commodity code
+
+1. Go to **Product information management** > **Setup** > **Categories and attributes** > **Category hierarchies**.
+2. In the list, select **Intrastat**.
+3. In the grid, select **Speaker**.
+4. On the **Foreign trade** FastTab, in the **Additional units** field, select **GRM**.
+5. On the Action Pane, select **Save**.
+
+   For more information, see [Manage units of measure](../../supply-chain/pim/tasks/manage-unit-measure.md).
+
+#### Create a purchase order
+
+1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
+2. On the Action Pane, select **New**.
+3. In the **Create purchase order** dialog box, in the **Vendor account** field, select **DE-001**.
+4. Select **OK**.
+5. On the **Header** tab, on the **Foreign** **trade** FastTab, verify that the **Transaction code** field is set to **11**.
+6. On the **Lines** tab, on the **Purchase order lines** FastTab, in the **Item number** field, select **F00007**. Then, in the **Quantity** field, enter **10**.
+7. On the **Line details** FastTab, on the **Foreign trade** tab, in the **Foreign trade** section, verify that the **Transaction code** and the **Commodity** fields are automatically set.
+8. On the Action Pane, on the **Purchase** tab, in the **Actions** group, select **Confirm**.
+9. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**.
+10. On the Action Pane, select **Default from**. In the **Default quantity for lines** field, select **Ordered quantity**. Then select **OK**.
+11. On the **Vendor invoice header** FastTab, in the **Invoice identification** section, in the **Number** field, enter **VE-0010**.
+12. In the **Invoice dates** section, in the **Invoice date** field, select **10/5/2021** (October 5, 2021).
+13. On the Action Pane, select **Post** to post the invoice.
+
+#### Transfer the vendor invoice to the Intrastat journal
+
+1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+2. On the Action Pane, select **Transfer**.
+3. In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
+4. Select **OK** to transfer the transactions, and review the Intrastat journal.
+
+   ![Line that represents the purchase order on the Intrastat page](media/intrastat_overview_5.png)
+
+5. Review the **General** tab for the purchase order. Notice that the **Quantity of additional units** and **Additional unit** fields in the **Unit** section are automatically set.
+
+   ![Purchase order details on the General tab of the Intrastat page](media/intrastat_overview_6.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
