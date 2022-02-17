@@ -104,7 +104,7 @@ Note that, if the **CredManExcludeSalesOrder** flag is set to **No**, and a B2B 
 
 [Set up a B2B e-commerce site](set-up-b2b-site.md)
 
-[Create org modeling hierarchies for B2B organizations](org-model.md)
+[Manage B2B business partners using customer hierarchies](partners-customer-hierarchies.md)
 
 [Manage business partner users on B2B e-commerce sites](manage-b2b-users.md)
 
