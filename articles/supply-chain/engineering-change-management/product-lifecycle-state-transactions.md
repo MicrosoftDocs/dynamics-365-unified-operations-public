@@ -4,7 +4,7 @@
 title: Product lifecycle states and transactions
 description: This topic explains how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -97,5 +97,13 @@ For example, suppose you only want to sell one variant (red) of a given product 
 - Assign the product a lifecycle state that allows the process. For example, assign the t-shirt product a lifecycle state of *Sellable*, which allows the *Sales order* business process.
 - Assign the sellable variant a lifecycle state that allows the process. For example, also assign the red variant a lifecycle state of *Sellable*.
 - All other variants be assigned another lifecycle state where the process is blocked. For example, assign the white variant (and all other variants) a lifecycle state of *Not sellable*, which blocks the *Sales order* business process.
+
+## Default product lifecycle states
+
+The default lifecycle state for an engineering version is specified in the engineering category, and it will be defaulted when a new engineering version is created, including to the first engineering version of a new product. 
+
+When a new product or engineering product is created, it is possible to also specify a default lifeycle state by specifying it on the template released product on the release policy assigned to the product. 
+
+Note that in this case, it is possible to have different lifecycle states on the product and on the version when a new engineering product is created.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
