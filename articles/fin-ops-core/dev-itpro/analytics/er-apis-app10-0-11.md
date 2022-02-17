@@ -32,7 +32,7 @@ This topic describes how the application programming interfaces (APIs) of the El
 
 ## API to run a format mapping for the generation of outbound documents
 
-To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER [format mapping](general-electronic-reporting.md#FormatComponentInbound). Most ER format mappings contain a data source of the **Data model** type. At runtime, a specific [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) must be identified as the implementation of the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) that the data source has been configured for.
+To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), you must run an ER format mapping. Most ER format mappings contain a data source of the **Data model** type. At runtime, a specific model mapping must be identified as the implementation of the data model that the data source has been configured for.
 
 When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework is used to call an ER format mapping from an execution point in the source code, a model mapping is found that takes into account the settings (the default model mapping flag and country/region codes) of the corresponding ER [configurations](general-electronic-reporting.md#Configuration) that contain a model mapping component. For more information, see [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md).
 
