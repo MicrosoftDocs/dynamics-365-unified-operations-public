@@ -24,11 +24,11 @@ For details about how purchase orders are processed at year end, see [Process pu
 
 ## Turn carry-forward budget reductions for invoice variances on or off
 
-The system is always able to update the cary-forward budget when a purchase order is cancelled or reduced. However, if you would also like the system to update the cary-forward budget when an invoice is reduced, the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature must be turned on for your system. Admins can turn this feature on or off by searching for it in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+The system is always able to update the cary-forward budget when a purchase order is canceled or reduced. However, if you would also like the system to update the cary-forward budget when an invoice is reduced, the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature must be turned on for your system. Admins can turn this feature on or off by searching for it in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Purchase order reductions and cancellations
 
-Regardless of whether the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system, the system can always update the carry-forward budget when a qualifying purchase order is reduced or cancelled. You can set each general ledger fund to respond in either of the following two ways:
+Regardless of whether the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system, the system can always update the carry-forward budget when a qualifying purchase order is reduced or canceled. You can set each general ledger fund to respond in either of the following two ways:
 
 - Preserve the carry-forward budget as created.
 - Automatically adjust the carry-forward budget to remove the canceled or reduced amount.
@@ -37,7 +37,7 @@ Only purchase order lines with distributions that include a fund are available f
 
 ## Invoice reductions
 
-When the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system, you can set whether each fund should also reduce the carry-forward budget when an invoice is reduced in addition to when a purchase order is reduced or cancelled. The invoice must be for a purchase order with carry-forward budget. Reductions include price variances, charge variances, and tax variances. When a carry-forward purchase order is reduced during invoicing, a variance is created. Posting the invoice will reduce the purchase order encumbrance by the amount of the variance. This feature will also create the automatic budget adjustment for the amount of the variance.
+When the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system, you can set whether each fund should also reduce the carry-forward budget when an invoice is reduced in addition to when a purchase order is reduced or canceled. The invoice must be for a purchase order with carry-forward budget. Reductions include price variances, charge variances, and tax variances. When a carry-forward purchase order is reduced during invoicing, a variance is created. Posting the invoice will reduce the purchase order encumbrance by the amount of the variance. This feature will also create the automatic budget adjustment for the amount of the variance.
 
 When the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned off, the carry-forward budget isn't reduced in this scenario. That leaves the remaining carry-forward budget behind for the amount of the variance.
 
@@ -49,9 +49,9 @@ Make the following settings for each general ledger fund that you want to allow 
 1. Select the fund you want to set up.
 1. Under **Purchase order year-end process**, **Override selected year-end option** must be set to *Yes*.
 1. Under **Carry-forward budget status**, set the **Reinstate the budget when a carry-forward purchase order is canceled or reduced** field as needed. The settings have slightly different effects, depending on whether or not the *Reduce carry-forward budget when an invoice against a purchase order is reduced with a variance* feature is turned on for your system.
-   - When the feature is turned off, the system only reacts to cancelled or reduced purchase orders and the options work as follows:
+   - When the feature is turned off, the system only reacts to canceled or reduced purchase orders and the options work as follows:
        - *No* – Creates a budget register entry for the remaining balance of purchase orders that have been canceled or reduced.
        - *Yes* – Allows purchase orders to be canceled or reduced without creating a budget register entry. This results in the carry-forward budget remaining available for consumption by other documents.
-   - When the feature is turned on, the system reacts both to invoice variances and cancelled or reduced purchase orders. The options work as follows:
-       - *No* – For invoice variances, the system creates a budget register entry against the purchase order for the variance reduction amount. For cancelled or reduced purchase orders, this option works the same as when the feature is turned off (as described previously).
-       - *Yes* – For invoice variances, the system allows the invoice reduction without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by other documents. For cancelled or reduced purchase orders, this option works the same as when the feature is turned off (as described previously).
+   - When the feature is turned on, the system reacts both to invoice variances and canceled or reduced purchase orders. The options work as follows:
+       - *No* – For invoice variances, the system creates a budget register entry against the purchase order for the variance reduction amount. For canceled or reduced purchase orders, this option works the same as when the feature is turned off (as described previously).
+       - *Yes* – For invoice variances, the system allows the invoice reduction without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by other documents. For canceled or reduced purchase orders, this option works the same as when the feature is turned off (as described previously).
