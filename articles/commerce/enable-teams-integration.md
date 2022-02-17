@@ -3,7 +3,7 @@
 title: Enable Dynamics 365 Commerce and Microsoft Teams integration
 description: This topic describes how to enable Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
-ms.date: 02/11/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
