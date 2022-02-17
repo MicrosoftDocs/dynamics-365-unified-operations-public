@@ -102,7 +102,7 @@ For example, suppose you only want to sell one variant (red) of a given product 
 
 The default lifecycle state for an engineering version is specified by its engineering category. The state will be defaulted when you create a new engineering version, including the first version of a new product.
 
-When you create a new product or engineering product, you can also set the default lifecycle state by specifying it on the released product template for the release policy assigned to the product.
+When you create a new product or engineering product, you can also set the default lifecycle state by specifying it on the template released product of the release policy assigned to the product.
 
 In this case, it's possible for the product to have a different lifecycle state than the version when you create a new engineering product.
 
