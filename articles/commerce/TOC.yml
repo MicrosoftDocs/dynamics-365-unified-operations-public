@@ -2392,24 +2392,63 @@
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
       - name: Date/time data and time zones
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-    - name: Developer
+    - name: Development
       items:   
-      - name: Commerce developer guide
-        href: developer/commerce-dev-guide-TBD.md
-      - name: Commerce SDK
+      - name: Cross-solution
         items:
-        - name: Get started
-          items: 
-          - name: Download Retail SDK samples and reference packages from GitHub and NuGet
+        - name: Commerce SDK overview
+          items:
+          - name: Samples and reference packages
             href: dev-itpro/retail-sdk/sdk-github.md
-          - name: Set up a local development environment
-            href: dev-itpro/setup-local-dev-env.md
-          - name: Migrate to the Commerce SDK
+          - name: Legacy Retail SDK migration
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
-          - name: Retail SDK FAQ
-            href: dev-itpro/retail-sdk/sdk-faq.md
+        - name: Environment setup
+          items:
+          - name: Local development environment
+            href: dev-itpro/setup-local-dev-env.md
+          - name: Commerce SDK build pipeline
+            href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+          - name: Commerce SDK build pipeline (independent packaging)
+            href: dev-itpro/build-pipeline.md
+        - name: Payments
+          items:
+          - name: Deploy payment connectors
+            href: dev-itpro/deploy-payment-connector.md
+          - name: Payment data use
+            href: payment-connector-data-fields.md
+        - name: Localization
+          items:
+          - name: Customize Commerce extension resources and label files
+            href: dev-itpro/extension-resource-localization.md
       - name: Headless Commerce
         items:
+        - name: APIs and reference
+          items:
+          - name: Commerce Scale Unit customer and consumer APIs
+            href: dev-itpro/retail-server-customer-consumer-api.md
+          - name: Consume Retail Server APIs in external applications
+            href: dev-itpro/consume-retail-server-api.md
+          - name: Typescript and C# proxies for Retail point of sale (POS)
+            href: dev-itpro/typescript-proxy-retail-pos.md
+          - name: Commerce runtime (CRT) services
+            href: dev-itpro/crt-services
+        - name: Create new functionality
+          items:
+          - name: Commerce Scale Unit customer and consumer APIs
+            href: dev-itpro/retail-server-customer-consumer-api.md
+          - name: Commerce runtime (CRT) extensibility
+            href: dev-itpro/commerce-runtime-extensibility.md
+          - name: Log extension events to Application Insights
+            href: dev-itpro/commerce-application-insights.md
+          - name: Create asynchronous Commerce (CRT) APIs
+            href: dev-itpro/async-commerce-extension.md
+          - name: Channel database extensions
+            href: dev-itpro/channel-db-extensions.md
+          - name: Extend Commerce Data Exchange - Real-time Service
+            href: dev-itpro/extend-commerce-data-exchange.md
+            
+            
+        
         - name: Get started
           items: 
           - name: Headless Commerce developer guide
@@ -2418,20 +2457,13 @@
             href: developer/headless-commerce-overview-TBD.md
           - name: Commerce runtime (CRT) architecture and configuration
             href: dev-itpro/commerce-runtime-overview.md
-          - name: Commerce runtime (CRT) services
-            href: dev-itpro/crt-services.md 
-          - name: Commerce runtime (CRT) extensibility
-            href: dev-itpro/commerce-runtime-extensibility.md
-          - name: Commerce Scale Unit customer and consumer APIs
-            href: dev-itpro/retail-server-customer-consumer-api.md
+
+
+
         - name: Create
           items:
           - name: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
             href: dev-itpro/retail-server-icontroller-extension.md
-          - name: Typescript and C# proxies for Retail point of sale (POS)
-            href: dev-itpro/typescript-proxy-retail-pos.md 
-          - name: Commerce runtime (CRT) extensibility
-            href: dev-itpro/commerce-runtime-extensibility.md
           - name: Channel database extensions
             href: dev-itpro/channel-db-extensions.md
           - name: Enable custom Commerce Data Exchange synchronization via extension
