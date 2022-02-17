@@ -369,12 +369,12 @@ In this code, `_destination` is the wrapper object that is used to generate the 
 
 ## Model dependency
 
-Create a new model to include above new extension files. In order to build the new model successfully, add below reference models to model depedencies:
+Create a new model to include above new extension files. In order to build the new model successfully, add below reference models to model dependencies:
 
 * ApplicationPlatform
 * ApplicationSuite
 * Tax Engine
-* Dimension, if financial dimension is used.
+* Dimensions, if financial dimension is used.
 * Other necessary models if referenced in code.
 
 ## Validation
