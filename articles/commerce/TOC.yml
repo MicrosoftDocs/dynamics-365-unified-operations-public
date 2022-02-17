@@ -2463,7 +2463,7 @@
           - name: Typescript and C# proxies for Retail POS
             href: dev-itpro/typescript-proxy-retail-pos.md
           - name: Commerce runtime (CRT) services
-            href: dev-itpro/crt-services
+            href: dev-itpro/crt-services.md
         - name: Create new functionality
           items:
           - name: Commerce Scale Unit customer and consumer APIs
@@ -2553,7 +2553,7 @@
           - name: POS payment extension
             href: dev-itpro/pos-payment-extension.md
           - name: Create custom localized error messages for payment terminal extensions
-            href: dev-itpro/payment-custom-error-message.md
+            href: dev-itpro/payment-custom-error-messages.md
           - name: Enable duplicate payment protection for payment connector
             href: dev-itpro/duplicate-payments-protection.md
         - name: Extend existing functionality
