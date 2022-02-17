@@ -45,7 +45,10 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-|  Globalization  | Asset management integration with Russian fixed assets | This functionality enhances the **Acquire to retire** asset lifecycle and end-to-end process flows with the **Russian Fixed assets** module. By integrating the **Asset management** and **Fixed assets** modules, you can link Russian fixed assets with maintenance assets. Fixed assets users can then create a maintenance asset from a new or existing fixed asset, and Asset management users can associate a maintenance asset with an existing fixed asset. For more information, see [Enterprise Asset Management integration with Russian Fixed Assets module](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/649144).   |  Feature management  |
+|  Fixed assets | Add transaction subtype to fixed asset split transaction  | This feature enhancement ensures that the generated transactions from split transaction are automatically identified on the transaction level. You can also amend the split journal description because it's no longer used in the split logic. The **Fixed asset transaction** subtype field will be filled in for the new transactions. |  Default |
+| Fixes assets   | Add field to prevent auto-update of placed in service date after intial acquisition of migrated asset  | The feature ensures that the defined placed in service date of the migrated assets from the legacy system will not be updated automatically after posting the acquisition transaction if the migrated asset option is set to **Yes**. Set the **Migrated asset** Field to **Yes** if you are migrating fixed assets from the legacy system to Dynamics 365 Finance in the initial data migration.  | Default |
+| Fixes assets   | Allow update to the asset book status by using a data entity  | This feature ensures that the asset book status will be updated through the data entity asset book V2 entity and the user interface.   | Default |
+
 
 
 
@@ -55,10 +58,6 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature name | More information |  
 |---|---|---|
-|  Fixed assets | Add transaction subtype to fixed asset split transaction  | This feature enhancement ensures that the generated transactions from split transaction are automatically identified on the transaction level. You can also amend the split journal description because it's no longer used in the split logic. The **Fixed asset transaction** subtype field will be filled in for the new transactions. |  
-| Fixes assets   | Add field to prevent auto-update of placed in service date after intial acquisition of migrated asset  | The feature ensures that the defined placed in service date of the migrated assets from the legacy system will not be updated automatically after posting the acquisition transaction if the migrated asset option is set to **Yes**. Set the **Migrated asset** Field to **Yes** if you are migrating fixed assets from the legacy system to Dynamics 365 Finance in the initial data migration.  |
-| Fixes assets   | Automate financial dimension posting for reclassified assets after transfer  | This feature ensures that the automation of moving the financials dimensions in the reclassified asset to match the transferred financial dimensions in the original fixed asset.   |
-
 
 ## Additional resources
 
