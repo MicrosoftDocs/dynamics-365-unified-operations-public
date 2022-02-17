@@ -25,7 +25,7 @@ The Commerce functionality for connector, located on register includes the point
 
 You can download the sample as a zip file and open it in Microsoft Visual Studio 2017. After you open the sample, build the solution. After a successful build, output installer packages will be created.
 
-If you want to use the sample in the legacy software development kit (SDK), see [Using the sample in legacy SDK](pos-fiscal-connector-sample.md#use-the-sample-in-the-legacy-SDK) .
+If you want to use the sample in the legacy software development kit (SDK), see [Using the sample in legacy SDK](pos-fiscal-connector-sample.md#use-the-sample-in-the-legacy-sdk) .
 
 ## Configuration
 
