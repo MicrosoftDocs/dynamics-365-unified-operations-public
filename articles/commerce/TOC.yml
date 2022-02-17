@@ -2568,8 +2568,10 @@
             href: dev-itpro/pos-handler.md
           - name: POS triggers
             href: dev-itpro/pos-trigger-printing.md
-          - name: POS CartView
+          - name: POS Cart view
             items:
+            - name: POS Cart view events and handlers
+              href: dev-itpro/cart-view-handlers.md
             - name: Add custom fields to the POS Totals pane
               href: dev-itpro/custom-field-pos-totals.md
             - name: Add custom columns to a POS transaction grid
