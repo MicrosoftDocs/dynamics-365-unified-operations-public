@@ -3,9 +3,8 @@
 title: Cross-company data sharing for developers
 description: This topic describes cross-company data sharing for developers. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
-ms.date: 02/15/2022
+ms.date: 02/16/2022
 ms.topic: article
-ms.prod: 
 ms.technology: 
 
 # optional metadata
@@ -35,38 +34,32 @@ This topic describes cross-company data sharing for developers. Cross-company da
 ## Enable a table for cross-company data sharing 
 
 Enabling a table for data sharing is a two-step process that requires updating the metadata
-property for the table. To enable a table for cross-company data sharing, follow these steps: 
+property for the table. To enable a custom table for cross-company data sharing, follow these steps: 
 
 1.  Open the table properties and set the **Data Sharing Type** property to
     **Single** or **Duplicate**. **Single** stands for single record sharing (SRS) and
     **Duplicate** stands for duplicate record sharing (DRS).
 
-2.  For each field on the table defined as using SRS sharing, you need to set
-    the **Single Data Sharing Type** metadata property to **Always** or **Never**. **Always** implies the field is shared always. **Never** implies the field is never
+2.  For each field on the table, you need to review 
+    the **Single Data Sharing Type** metadata property. **Always** is the default value and implies the field is shared always. **Never** implies the field is never
     shared. Don’t choose **Optional** as there is currently no related logic.
 
 > [!NOTE]
 > -   When a table is set as **Duplicate**, it can participate in both DRS as well
     as SRS policies.
 > - When a table is set to **Single**, it can participate in SRS policy only.
-> - When a table property is set to **Single**, it cannot be changed to
-    **Duplicate**. This would be seen as a breaking change as SRS policies using
+> - When a table property is set to **Duplicate**, it cannot be changed to
+    **Single**. This would be seen as a breaking change as DRS policies using
     the table would no longer be valid.
-> - When a policy is defined as single record sharing, it cannot be disabled or
-    changed to duplicate record sharing.
 > - When using SRS, fields set to **Never** will get the default value for the
-    field’s type. You cannot update these fields to contain another value. For example,
+    field’s type in all child companies. You cannot update these fields in a child company to contain another value. For example,
     integer/real will contain a value of 0, strings will be empty, enumerations
     will be non-deterministic based on whether they are extensible.
-> - Only required foreign key fields are selected by default. Optional foreign
-    keys need to be selected manually to be included. The best practice is to
-    add one or more tables when selecting a foreign key field, unless the table
-    has already been added.
 
 ## How does it work?
 
 When a table is enabled for data sharing, kernel logic auto-creates a view with
-name "\<tablename\>_SharingView". This view should be used to access the shared
+name "\<tablename\>_SharingView". This view should be used for non-kernel based access to the shared
 data.
 
 In the following example, the **CustGroup** table is enabled for data sharing and **USMF** is
@@ -78,13 +71,13 @@ non-kernel based scenarios)
 ![Single record sharing example.](media/SRS-image3.png)
 
 ## Guidelines to enable data sharing on tables
-The ability to define or modify DRS or SRS settings applies to base tables provided by the current model. For example, it is not possible to modify existing table or field properties using an extension.
+The ability to define or modify DRS or SRS settings applies to base tables provided by the current model. For example, it is not possible to modify existing data sharing table or field properties using an extension.
 
 If a company-specific table has **Data Sharing Type = Single**, it means it has already been evaluated for SRS. You can’t revert it to **Duplicate** or **None**.
 
 If a company-specific table has **Data Sharing Type = Duplicate**, it means it has already been evaluated for DRS. If you want to enable it for SRS, you need to evaluate its functional eligibility before changing the property to **Single**.
 
-If a company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS. Because a DRS table can participate in both DRS and SRS policies, it may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
+If a custom company-specific table has **Data Sharing Type = None**, but you want to enable data sharing, then the recommendation is to enable it for DRS whenever possible. Because a DRS table can participate in both DRS and SRS policies, it may not be possible for the sharing type to be DRS. Use the following information to determine the appropriate setting.
 
 + If a company-specific table has a unique index or alternate key, then apply DRS.
     +	If the table has a foreign key field and the corresponding table is set to **Data Sharing Type = None**, then set the **Single Data Sharing Type** property for that field to **Never**.
@@ -99,15 +92,11 @@ If a company-specific table has **Data Sharing Type = None**, but you want to en
 > [!NOTE]
 > Cross-company shared policy simulator detects the eligibility of a table and its fields along with table references associated with each field.
 
-> Upon release, if the **Data Sharing Type=Single**, it cannot be changed to **Duplicate** or **None**.
-
-When a data sharing policy is set to DRS, it can’t be changed to **Single**. Likewise, when a policy is set to Single, it can’t be changed to **Duplicate**.
-
-After you set up the data sharing policies, you need to do a full DB sync, which will recreate the _SharingView.
+After you have modified data sharing metadata properties, you need to do a full DB sync, which will create or update the _SharingView(s).
 
 Data sharing is applicable for tables with the **Save data per company** property set to **Yes**. Tables with **Save data per company** set to **No**, are global and no additional sharing configuration is needed.
 
-From a development perspective, it is not enough to look at the primary and alternate key of a table to determine the sharing type. Additional work may be required to share the to enable sharing without causing data issues.
+From a development perspective, it is not enough to look at the primary and alternate key of a table to determine the sharing type. Additional work may be required to enable sharing without causing data issues.
 
 
 <table>
