@@ -4,7 +4,7 @@
 title: EU Sales list reporting
 description: This article provides information about European Union (EU) Sales list reporting.
 author: EvgenyPopovMBS
-ms.date: 06/20/2017
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -78,13 +78,13 @@ The following table shows the prerequisites that must be in place before you sta
 </tr>
 <tr class="odd">
 <td><strong>Setup:</strong> VAT registration numbers</td>
-<td>Create VAT registration numbers for your counterparties on either the <strong>All customers</strong> page (click <strong>Sales and marketing</strong> &gt; <strong>Customers</strong> &gt; <strong>All customers</strong>, select a customer record, and then click <strong>Customers</strong> &gt; <strong>Registration IDs</strong>) or or the <strong>Vendors</strong> page (click <strong>Procurement and sourcing</strong> &gt; <strong>Vendors</strong> &gt; <strong>Vendors</strong>, select a vendor record, and then click <strong>Vendors</strong> &gt; <strong>Registration IDs</strong>). On the <strong>Registration ID</strong> FastTab, on the <strong>General</strong> tab, create a record, and specify the following information: 
+<td>Create VAT registration numbers for your counterparties on the <strong>All customers</strong> page (go to <strong>Sales and marketing</strong> &gt; <strong>Customers</strong> &gt; <strong>All customers</strong>, select a customer record, and then select <strong>Customers</strong> &gt; <strong>Registration IDs</strong>) or the <strong>Vendors</strong> page (go to <strong>Procurement and sourcing</strong> &gt; <strong>Vendors</strong> &gt; <strong>Vendors</strong>, select a vendor record, and then select <strong>Vendors</strong> &gt; <strong>Registration IDs</strong>). On the <strong>Registration ID</strong> FastTab, on the <strong>General</strong> tab, create a record, and specify the following information: 
 <ul>
-<li><strong>Registration type</strong> – Select the registration type assigned to <strong>VAT ID</strong> registration category for the country/region of the counterparty.</li>
+<li><strong>Registration type</strong> – Select the registration type assigned to the <strong>VAT ID</strong> registration category for the country/region of the counterparty.</li>
 <li><strong>Registration number</strong> – Enter the VAT registration number of the counterparty.</li>
 <li><strong>Effective</strong> – Select the start of the VAT registration number usage period.</li>
 </ul>  
-Alternatively, you can create VAT registration number for your counterparties on the <strong>Tax exempt numbers</strong> page (click <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Tax exempt numbers</strong>). For each tax exempt number, create a record on the page, and specify the following information:
+Alternatively, you can create a VAT registration number for your counterparties on the <strong>Tax exempt numbers</strong> page (go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Tax exempt numbers</strong>). For each tax exempt number, create a record on the page, and specify the following information:
 <ul>
 <li><strong>Country/region</strong> – Select the country/region of the tax registration of the counterparty.</li>
 <li><strong>Tax exempt number</strong> – Enter the tax exempt number of the counterparty.</li>
