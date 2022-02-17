@@ -1,14 +1,14 @@
 ---
 title: Update the carry-forward budget after reductions in purchase orders and invoices
 description: This topic describes how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
-author: Henrikan
+author: TaylorVH 
 ms.date: 02/11/2022
 ms.topic: article
 ms.search.form: LedgerFund
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: v-savanh
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2022-02-01
 ---
@@ -55,3 +55,10 @@ Make the following settings for each general ledger fund that you want to allow 
    - When the feature is turned on, the system reacts both to invoice variances and canceled or reduced purchase orders. The options work as follows:
        - *No* – For invoice variances, the system creates a budget register entry against the purchase order for the variance reduction amount. For canceled or reduced purchase orders, this option works the same as when the feature is turned off (as described previously).
        - *Yes* – For invoice variances, the system allows the invoice reduction without the creation of a budget register entry. This results in the carry-forward budget remaining available for consumption by other documents. For canceled or reduced purchase orders, this option works the same as when the feature is turned off (as described previously).
+
+## Additional resources
+
+- [Process purchase orders at year end](/dynamicsax-2012/appuser-itpro/process-purchase-orders-at-year-end)
+- [Maintain general budget reservations](general-budget-reservation-tasks.md)
+- [Funds in the public sector](funds-public-sector.md)
+- [Set up a fund in the public sector](tasks/set-up-fund-public-sector.md)
