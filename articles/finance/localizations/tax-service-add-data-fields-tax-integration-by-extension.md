@@ -4,7 +4,7 @@
 title: Add data fields in the tax integration by using extensions
 description: This topic explains how to use X++ extensions to add data fields in the tax integration.
 author: qire
-ms.date: 02/07/2022
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -369,13 +369,13 @@ In this code, `_destination` is the wrapper object that is used to generate the 
 
 ## Model dependency
 
-In order to build the project successfully, add below reference models to the model dependencies:
+To successfully build the project, add the following reference models to the model dependencies:
 
-* ApplicationPlatform
-* ApplicationSuite
-* Tax Engine
-* Dimensions, if financial dimension is used.
-* Other necessary models referenced in the code.
+- ApplicationPlatform
+- ApplicationSuite
+- Tax Engine
+- Dimensions, if financial dimension is used
+- Other necessary models referenced in the code
 
 ## Validation
 
