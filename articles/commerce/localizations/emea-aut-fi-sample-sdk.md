@@ -83,18 +83,18 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventAustria" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria" />
  
+
 ### Enable fiscal connector extensions
 
 You can install fiscal connector on [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the POS [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-
-    1. Enable Hardware station extensions
+#### Enable Hardware station extensions
     
-        The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
+The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-    1. Enable POS extensions
+####Enable POS extensions
 
-        1. If the solution was previously built, clean it by running the following command-line command.
+    1. If the solution was previously built, clean it by running the following command-line command.
 
             ``` 
             C:\Commerce-Samples-EndToEndSolutions\src\FiscalIntegration\PosFiscalConnectorSample> msbuild /t:Clean
