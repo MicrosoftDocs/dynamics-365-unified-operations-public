@@ -74,7 +74,7 @@ Topics related to benefits describe how to set up current and future benefits th
 
 Premium earnings, garnishments, and tax levies won't be used by all employees. If your organization needs to pay premium earnings or garnish an employee's pay, Payroll includes a framework that can help ensure that the impact of these transactions is handled correctly.
 
-- [Set up garnishments and tax levies(noam-usa-garnishment-tax-levy-set-up-tasks.md)
+- [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 - [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
 - [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md)
 - [Set up premium earnings](noam-usa-premium-earning-setup-tasks.md)
