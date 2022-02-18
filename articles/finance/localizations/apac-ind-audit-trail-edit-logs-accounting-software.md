@@ -85,6 +85,9 @@ When you configure logging for a table or field, a record of every change to tha
 
 Companies that use Finance to maintain books of accounts are fully compliant with the new notifications and can track transaction data to the source. For more information, see [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
+> [!IMPORTANT]
+> Enabling database logs for tables and fields can track changes including insert, update, delete, and rename key operations. However, enabling the functionality might also impact performance. We recommend that you contact Microsoft support before you enable this functionality.
+
 #### Other data
 
 - **User log** – System administrators can use the **User log** page to keep an audit log of users who have signed in to the system. Users can help protect an organization's data by tracking logging information. For more information, see [Manage access to sensitive data](../../fin-ops-core/dev-itpro/gdpr/gdpr-auditing-sensitive-data.md).
@@ -106,11 +109,9 @@ Companies that use Finance to maintain books of accounts are fully compliant wit
     - The user who deleted the record
     - The locale that was used to make the update
 
-    For more information, see [Set up the audit log connector](/power-platform/guidance/coe/setup-auditlog).
-
     In the case of data corruption, you can correct minor data inconsistencies without disruptive downtime. You can upload and run deployable packages that contain custom X++ scripts to correct the data. For more information, see [Run custom X++ scripts with zero downtime](../../fin-ops-core/dev-itpro/deployment/run-custom-scripts.md).
     
-- **Ensuring that the audit trail can't be turned off** – Finance doesn't allow you to turn off the **Audit trail** feature. By default, the **Audit trail** report is generated for a legal entity. You can filter the period frequency so that data is shown immediately. However, the system provides an option that lets you to start or stop the auditing and retention policy for audit logs. For more information, see [Audit data and user activity for security and compliance](/power-platform/admin/audit-data-user-activity).
+- **Ensuring that the audit trail can't be turned off** – Finance doesn't allow you to turn off the **Audit trail** feature. By default, the **Audit trail** report is generated for a legal entity. You can filter the period frequency so that data is shown immediately. However, the system provides an option that lets you to start or stop the auditing and retention policy for audit logs. 
 
 ### Compliance 2: Retain books of accounts in the original format
 
