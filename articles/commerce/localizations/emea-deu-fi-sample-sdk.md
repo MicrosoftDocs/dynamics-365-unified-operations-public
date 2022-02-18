@@ -82,22 +82,17 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
     ```
 
-### Enable fiscal connector
-You can enable POS connector on:
-1. [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station). Use [Enable hardware station extensions](emea-deu-fi-sample-sdk.md#enable-hardware-station-extensions).
-2. [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network). Use [Enable POS connector extensions](emea-deu-fi-sample-sdk.md#enable-pos-connector-extensions).
+### Enable fiscal connector extensions
 
-### Enable POS connector extensions
-
-1. If you need use fiscal connector on the POS, use instruction [Use the sample in the legacy SDK](pos-fiscal-connector-sample.md#use-the-sample-in-the-legacy-sdk).
-2. POS Sample is located [here](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.35/src/FiscalIntegration)
+You can enable fiscal connector on [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
 
-### Enable Hardware station extensions
+
+#### Enable Hardware station extensions
 
 The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-#### EFRSample component
+##### EFRSample component
 
 1. Find the **HardwareStation.Extension.EFRSample** project, and build it.
 2. In the **Extension.EFRSample\\bin\\Debug** folder, find the following assembly files:
@@ -120,6 +115,32 @@ The Hardware station extension components are included in the Hardware station s
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
+
+#### Enable POS extensions
+
+The POS extension sample can be found in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository under the path 
+
+```
+src\FiscalIntegration\PosFiscalConnectorSample\
+```
+
+To use it in the legacy SDK, the following steps must be run:
+1. Copy the **Pos.Extension** folder to the POS **Extensions** folder of the legacy SDK (for example, `C:\RetailSDK\src\POS\Extensions`).
+1. Rename the copy of the **Pos.Extension** folder  to **PosFiscalConnector**.
+1. Remove the following folders and files from the **PosFiscalConnector** folder:
+   - bin
+   - DataService
+   - devDependencies
+   - Libraries
+   - obj
+   - Contoso.PosFiscalConnectorSample.Pos.csproj
+   - RetailServerEdmxModel.g.xml
+   - tsconfig.json
+1. Open **CloudPos.sln** or **ModernPos.sln**.
+1. In the **Pos.Extensions** project, include the **PosFiscalConnector** folder.
+1. Open **extensions.json**, and add the **PosFiscalConnector** extension.
+1. Build the SDK.
+
 
 ### Production environment
 
@@ -218,3 +239,26 @@ The following settings are added:
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds (ms), that the driver will wait for a response from the fiscal registration service.
 - **Show fiscal registration notifications** – If this parameter is turned on, notifications from the fiscal service will be shown as user messages at the POS.
+
+### POS fiscal connector extension design
+
+The purpose of the POS fiscal connector extension is to communicate with the fiscal registration service from POS. It uses the HTTPS protocol for communication.
+
+#### Fiscal connector factory
+
+The fiscal connector factory is located at **Pos.Extension\Connectors\FiscalConnectorFactory.ts**. It maps the connector name to the fiscal connector implementation. The connector name should match the fiscal connector name that is specified in Commerce headquarters.
+
+#### EFR fiscal connector
+
+The EFR fiscal connector is located at **Pos.Extension\Connectors\Efr\EfrFiscalConnector.ts**. It implements the **IFiscalConnector** interface which supports the following requests:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – This request sends documents to the fiscal registration service and returns a response from it.
+- **FiscalRegisterIsReadyClientRequest** – This request is used for a health check of the fiscal registration service.
+- **FiscalRegisterInitializeClientRequest** – This request is used to initialize the fiscal registration service.
+
+#### Configuration
+
+The configuration file is located in the **src\FiscalIntegration\Efr\Configurations\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+
+- **Endpoint address** – The URL of the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the connector will wait for a response from the fiscal registration service.
