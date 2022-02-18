@@ -252,6 +252,8 @@
             href: CDX-package-sort.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Modernizing the Commerce in-store technology stack (white paper)
+          href: https://www.microsoft.com/download/details.aspx?id=103896
         - name: Commerce offline implementation and troubleshooting
           href: dev-itpro/implementation-considerations-offline.md
         - name: Publish an online store catalog
@@ -2448,6 +2450,10 @@
             href: dev-itpro/deploy-payment-connector.md
           - name: Payment data use
             href: payment-connector-data-fields.md
+          - name: Support for tipping in the payments SDK
+            href: dev-itpro/tipping.md
+          - name: Incremental capture for order invoicing
+            href: dev-itpro/incremental-capture.md
         - name: Localization
           items:
           - name: Customize Commerce extension resources and label files
@@ -2462,12 +2468,14 @@
             href: dev-itpro/consume-retail-server-api.md
           - name: Typescript and C# proxies for Retail POS
             href: dev-itpro/typescript-proxy-retail-pos.md
+          - name: Commerce runtime (CRT) architecture and configuration
+            href: dev-itpro/commerce-runtime-overview.md
           - name: Commerce runtime (CRT) services
             href: dev-itpro/crt-services.md
         - name: Create new functionality
           items:
-          - name: Commerce Scale Unit customer and consumer APIs
-            href: dev-itpro/retail-server-customer-consumer-api.md
+          - name: Create a Commerce Scale Unit API
+            href: dev-itpro/retail-server-icontroller-extension.md
           - name: Commerce runtime (CRT) extensibility
             href: dev-itpro/commerce-runtime-extensibility.md
           - name: Log extension events to Application Insights
@@ -2514,8 +2522,8 @@
             href: dev-itpro/pos-extension/pos-extension-overview.md
           - name: POS extension concepts and terminology
             href: dev-itpro/pos-extension/pos-extension-basics.md
-          - name: Legacy Retail SDK migration
-            href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+          - name: Migrate POS Extensions to the Commerce SDK
+            href: dev-itpro/pos-extension/migrate-pos-extension.md
         - name: Environment setup
           items:
           - name: Local development environment
@@ -2542,8 +2550,10 @@
             href: dev-itpro/pos-extension/knockout-pos-extension.md
         - name: Create new functionality
           items:
-          - name: POS operations
+          - name: Create a POS operation
             href: dev-itpro/add-pos-operations.md
+          - name: Create a custom view in POS
+            href: dev-itpro/pos-extension/custom-pos-view.md
           - name: Create a new hardware device and integrate with POS
             href: dev-itpro/hardware-device-extension.md
           - name: Create an end-to-end payment integration for a payment terminal
@@ -2556,9 +2566,11 @@
           items:
           - name: Extend POS views to add custom columns and app bar buttons
             href: dev-itpro/pos-view-extension.md
-          - name: POS header bar
+          - name: Extend POS views to add custom controls
+            href: dev-itpro/pos-control-non-screen.md
+          - name: Extend POS header bar
             href: dev-itpro/pos-header-bar.md
-          - name: POS notifications
+          - name: Extend POS notifications
             href: dev-itpro/extend-pos-notification.md
           - name: Override POS request handlers
             href: dev-itpro/pos-handler.md
@@ -2576,8 +2588,6 @@
               href: dev-itpro/pos-custom-transaction.md
           - name: Add custom controls to POS views
             href: dev-itpro/pos-custom-control.md
-          - name: POS views to add custom controls
-            href: dev-itpro/pos-control-non-screen.md
           - name: POS payment extension
             href: dev-itpro/pos-payment-extension.md
         - name: Packaging and deployment
@@ -2810,6 +2820,8 @@
           items:
           - name: E-commerce platform software development kit (SDK)
             href: dev-itpro/ecommerce-platform-sdk.md
+          - name: Configure online stores
+            href: dev-itpro/configure-online-store.md
           - name: Configure authentication providers
             href: dev-itpro/configure-authentication-providers.md
         - name: Packaging and deployment
