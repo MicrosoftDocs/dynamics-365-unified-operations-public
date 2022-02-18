@@ -83,19 +83,39 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventAustria" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria" />
  
-### Enable fiscal connector
-You can enable POS connector on:
-1. [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station). Use [Enable hardware station extensions](emea-aut-fi-sample-sdk.md#enable-hardware-station-extensions).
-2. [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network). Use [Enable POS connector extensions](emea-aut-fi-sample-sdk.md#enable-pos-connector-extensions).
+### Enable fiscal connector extensions
 
-### Enable POS connector extensions
-
-1. If you need use fiscal connector on the POS, use instruction [Use the sample in the legacy SDK](pos-fiscal-connector-sample.md#use-the-sample-in-the-legacy-sdk).
-2. POS Sample is located [here](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.35/src/FiscalIntegration)
+You can install fiscal connector on [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the POS [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
 ### Enable Hardware station extensions
 
 The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
+
+### Enable POS extensions
+
+1. If the solution was previously built, clean it by running the following command-line command.
+
+    ``` 
+    C:\Commerce-Samples-EndToEndSolutions\src\FiscalIntegration\PosFiscalConnectorSample> msbuild /t:Clean
+    ```
+
+1. Copy the **Pos.Extension** folder to the POS **Extensions** folder of the legacy SDK (C:\RetailSDK\src\POS\Extensions).
+1. Rename the copy of the **Pos.Extension** folder  to **PosFiscalConnector**.
+1. Remove the following folders and files from the **PosFiscalConnector** folder:
+
+    - bin
+    - DataService
+    - devDependencies
+    - Libraries
+    - obj
+    - Contoso.PosFiscalConnectorSample.Pos.csproj
+    - RetailServerEdmxModel.g.xml
+    - tsconfig.json
+
+1. Open **CloudPos.sln** or **ModernPos.sln**.
+1. In the **Pos.Extensions** project, include the **PosFiscalConnector** folder.
+1. Open **extensions.json**, and add the **PosFiscalConnector** extension.
+1. Build the SDK.
 
 #### EFRSample component
 
