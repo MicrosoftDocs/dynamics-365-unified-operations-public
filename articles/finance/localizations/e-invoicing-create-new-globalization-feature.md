@@ -62,7 +62,7 @@ This procedure shows how to create the file format configurations that are requi
 
 1. Sign in to your RCS account.
 2. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
-3. Select the **Invoice model** of **Fiscal model** (for Brazilian scenarios).
+3. Select the **Invoice model** or, for Brazilian scenarios, select the **Fiscal model**.
 4. Select **Create configuration**, and then, in the drop-down dialog box, select the **Format based on data model Invoice** option.
 5. Enter a name and description for the format configuration.
 6. In the **Format type** field, select the file extension type.
