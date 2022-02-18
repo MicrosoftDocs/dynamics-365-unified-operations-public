@@ -41,7 +41,7 @@ When you are ready to build your first entity for production, you will need to:
 - Create a new project and set the model property to the one that you just created.
 
 ## Prerequisites
-This tutorial requires that you access an environment by using Remote Desktop, and that you be provisioned as an administrator on the instance.
+This tutorial requires that you access an environment by using Remote Desktop, and that you are provisioned as an administrator on the instance.
 
 Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
@@ -83,7 +83,7 @@ FMLabCustomerEntity
 
 #### Corresponding staging table
 
-Staging tables are used in import/export scenarios to provide intermediary storage during file parsing and transformation. These tables are also used in connector integration scenarios. In many cases, staging table are mapped 1:1 to an entity. The staging table that corresponds to the **FMLabCustomerEntity** entity is named FMLabCustomerStaging.
+Staging tables are used in import/export scenarios to provide intermediary storage during file parsing and transformation. These tables are also used in connector integration scenarios. In many cases, staging tables are mapped 1:1 to an entity. The staging table that corresponds to the **FMLabCustomerEntity** entity is named FMLabCustomerStaging.
 
 ### Create a new project
 
