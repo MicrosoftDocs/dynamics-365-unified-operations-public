@@ -287,8 +287,8 @@ You will review the existing **FleetRental** entity and then create a relationsh
 
     | Property      | Value                                                                         |
     |---------------|-------------------------------------------------------------------------------|
-    | Field         | **CustomerDriverLicense**This is the foreign key field on **FMRentalEntity**. |
-    | Related Field | **DriverLicense**This is the unique key on **FMCustomerEntity**.              |
+    | Field         | **CustomerDriverLicense** - This is the foreign key field on **FMRentalEntity**. |
+    | Related Field | **DriverLicense** - This is the unique key on **FMCustomerEntity**.              |
 
     The following image shows the relation in Visual Studio.
 
