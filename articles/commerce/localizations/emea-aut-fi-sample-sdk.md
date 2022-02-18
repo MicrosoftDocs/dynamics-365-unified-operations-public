@@ -86,7 +86,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 ### Enable fiscal connector extensions
 
-You can install fiscal connector on [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
+You can enable fiscal connector on [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
 #### Enable Hardware station extensions
     
