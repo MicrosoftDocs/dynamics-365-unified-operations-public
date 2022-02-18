@@ -2542,16 +2542,12 @@
             href: dev-itpro/pos-extension/knockout-pos-extension.md
         - name: Create new functionality
           items:
-          - name: Add custom controls to POS views
-            href: dev-itpro/pos-custom-control.md
-          - name: Add POS operations to POS layouts by using Button grid designer
+          - name: POS operations
             href: dev-itpro/add-pos-operations.md
-          - name: Integrate POS with a new hardware device and generate extension installer
+          - name: Create a new hardware device and integrate with POS
             href: dev-itpro/hardware-device-extension.md
           - name: Create an end-to-end payment integration for a payment terminal
             href: dev-itpro/end-to-end-payment-extension.md
-          - name: POS payment extension
-            href: dev-itpro/pos-payment-extension.md
           - name: Create custom localized error messages for payment terminal extensions
             href: dev-itpro/payment-custom-error-messages.md
           - name: Enable duplicate payment protection for payment connector
@@ -2560,11 +2556,11 @@
           items:
           - name: Extend POS views to add custom columns and app bar buttons
             href: dev-itpro/pos-view-extension.md
-          - name: Add custom buttons to the POS header bar
+          - name: POS header bar
             href: dev-itpro/pos-header-bar.md
-          - name: Show custom notifications in the POS
+          - name: POS notifications
             href: dev-itpro/extend-pos-notification.md
-          - name: Override POS request handler
+          - name: Override POS request handlers
             href: dev-itpro/pos-handler.md
           - name: POS triggers
             href: dev-itpro/pos-trigger-printing.md
@@ -2576,10 +2572,14 @@
               href: dev-itpro/custom-field-pos-totals.md
             - name: Add custom columns to a POS transaction grid
               href: dev-itpro/pos-custom-transaction-column.md
-            - name: Add custom controls to MPOS transaction pages
+            - name: Add custom controls to POS Cart View
               href: dev-itpro/pos-custom-transaction.md
-          - name: Add custom controls to non-screen designer-based POS views
+          - name: Add custom controls to POS views
+            href: dev-itpro/pos-custom-control.md
+          - name: POS views to add custom controls
             href: dev-itpro/pos-control-non-screen.md
+          - name: POS payment extension
+            href: dev-itpro/pos-payment-extension.md
         - name: Packaging and deployment
           items:
           - name: Create an MPOS extension package
