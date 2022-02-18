@@ -363,7 +363,11 @@ The purpose of these files is to enable settings of the fiscal document provider
 
 ### Hardware station extension design
 
-The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service. The Hardware station extension uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service. The Hardware station extension uses the HTTP and HTTPS protocols to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+
+### POS fiscal connector extension
+
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service. The POS fiscal connector uses the HTTPS protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
 
 #### Request handler
 
