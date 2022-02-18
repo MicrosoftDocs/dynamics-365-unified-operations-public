@@ -100,9 +100,9 @@ The Hardware station extension components are included in the Hardware station s
 C:\Commerce-Samples-EndToEndSolutions\src\FiscalIntegration\PosFiscalConnectorSample> msbuild /t:Clean
 ```
    
-1. Copy the **Pos.Extension** folder to the POS **Extensions** folder of the legacy SDK (C:\RetailSDK\src\POS\Extensions).
-1. Rename the copy of the **Pos.Extension** folder  to **PosFiscalConnector**.
-1. Remove the following folders and files from the **PosFiscalConnector** folder:
+2. Copy the **Pos.Extension** folder to the POS **Extensions** folder of the legacy SDK (C:\RetailSDK\src\POS\Extensions).
+3. Rename the copy of the **Pos.Extension** folder  to **PosFiscalConnector**.
+4. Remove the following folders and files from the **PosFiscalConnector** folder:
    - bin
    - DataService
    - devDependencies
@@ -111,10 +111,10 @@ C:\Commerce-Samples-EndToEndSolutions\src\FiscalIntegration\PosFiscalConnectorSa
    - Contoso.PosFiscalConnectorSample.Pos.csproj
    - RetailServerEdmxModel.g.xml
    - tsconfig.json
-1. Open **CloudPos.sln** or **ModernPos.sln**.
-1. In the **Pos.Extensions** project, include the **PosFiscalConnector** folder.
-1. Open **extensions.json**, and add the **PosFiscalConnector** extension.
-1. Build the SDK.
+5. Open **CloudPos.sln** or **ModernPos.sln**.
+6. In the **Pos.Extensions** project, include the **PosFiscalConnector** folder.
+7. Open **extensions.json**, and add the **PosFiscalConnector** extension.
+8. Build the SDK.
 
 #### EFRSample component
 
