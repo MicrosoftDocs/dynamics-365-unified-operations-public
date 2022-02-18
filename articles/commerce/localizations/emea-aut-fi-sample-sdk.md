@@ -92,6 +92,30 @@ You can enable fiscal connector on [Hardware station](fiscal-integration-for-ret
     
 The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
+##### EFRSample component
+
+1. Find the **HardwareStation.Extension.EFRSample** project, and build it.
+2. In the **Extension.EFRSample\\bin\\Debug** folder, find the following assembly files:
+
+    - Contoso.Commerce.HardwareStation.EFRSample.dll
+    - Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll
+
+3. Copy the assembly files to the Hardware station extensions folder:
+
+    - **Shared hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
+    - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
+
+4. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
+
+    - **Shared hardware station:** The file is located under the IIS Hardware station site location.
+    - **Dedicated hardware station on Modern POS:** The file is located under the Modern POS client broker location.
+
+5. Add the following line to the **composition** section of the configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
+    ```
+
 #### Enable POS extensions
 
 1. If the solution was previously built, clean it by running the following command-line command.
@@ -115,30 +139,6 @@ C:\Commerce-Samples-EndToEndSolutions\src\FiscalIntegration\PosFiscalConnectorSa
 6. In the **Pos.Extensions** project, include the **PosFiscalConnector** folder.
 7. Open **extensions.json**, and add the **PosFiscalConnector** extension.
 8. Build the SDK.
-
-#### EFRSample component
-
-1. Find the **HardwareStation.Extension.EFRSample** project, and build it.
-2. In the **Extension.EFRSample\\bin\\Debug** folder, find the following assembly files:
-
-    - Contoso.Commerce.HardwareStation.EFRSample.dll
-    - Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll
-
-3. Copy the assembly files to the Hardware station extensions folder:
-
-    - **Shared hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
-    - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
-
-4. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
-
-    - **Shared hardware station:** The file is located under the IIS Hardware station site location.
-    - **Dedicated hardware station on Modern POS:** The file is located under the Modern POS client broker location.
-
-5. Add the following line to the **composition** section of the configuration file.
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
-    ```
 
 ### Enable Modern POS extension components
 
