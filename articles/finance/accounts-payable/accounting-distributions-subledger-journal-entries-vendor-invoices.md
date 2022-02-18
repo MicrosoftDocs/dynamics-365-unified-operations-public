@@ -4,7 +4,7 @@
 title: Accounting distributions and journal entries for vendor invoices
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 author: sunfzam
-ms.date: 08/20/2017
+ms.date: 02/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: VendEditInvoice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
@@ -67,7 +67,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>Stocked product</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line.</li>
-<li>The Main account field when Purchase expenditure for product is selected in the Posting page.</li>
+<li>The **Main account** field when Purchase expenditure for product is selected on the **Posting** page.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
@@ -78,35 +78,35 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>A procurement category or a product that is not stocked</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the vendor invoice line references a purchase order line.</li>
-<li>The Main account field when Purchase expenditure for expense is selected in the Posting page.</li>
+<li>The **Main account** field when Purchase expenditure for expense is selected on the **Posting** page.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
 <li>If the main account is an allocation account, use the default value from the allocation account definition.</li>
 <li>Use the default financial dimension values on the vendor invoice.</li>
 <li>Use the financial dimension values from the vendor invoice line.</li>
-<li>Use the default financial dimension values from the main account in the Chart of Accounts page.</li>
+<li>Use the default financial dimension values from the main account on the **Chart of accounts** page.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Fixed asset</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the vendor invoice line references a purchase order line.</li>
-<li>If Acquisition is selected in the Transaction type field in the Vendor invoice form, the Main account field when Acquisition is selected in the Fixed asset posting profiles page.</li>
-<li>If Acquisition adjustment is selected in the Transaction type field, the Main account field when Acquisition adjustment is selected in the Fixed asset posting profiles page.</li>
+<li>If **Acquisition** is selected in the **Transaction type** field on the **Vendor invoice** page, the **Main account** field when **Acquisition** is selected in the **Fixed asset posting profiles** page.</li>
+<li>If **Acquisition adjustment** is selected in the **Transaction type** field, the **Main account** field when **Acquisition adjustment** is selected on the **Fixed asset posting profiles** page.</li>
 </ol></td>
 <td><ol>
 <li>Use the account distribution for the purchase order line, if the invoice line references a purchase order line.</li>
 <li>Use the financial dimension values from the vendor invoice line.</li>
-<li>Use the default financial dimension values from the main account in the Chart of Accounts page.</li>
+<li>Use the default financial dimension values from the main account on the **Chart of accounts** page.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Project defined on the vendor invoice line</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</li>
-<li>If Balance is selected in the Post costs - item field in the Project groups page, the Main account field when Cost is selected in the Ledger posting setup page.</li>
-<li>If Profit and loss is selected in the Post costs - item field in the Project groups page, the Main account field when Cost - item is selected in the Ledger posting setup page.</li>
+<li>If **Balance** is selected in the **Post costs - item** field in the **Project groups** page, the **Main account** field when **Cost** is selected on the **Ledger posting setup** page.</li>
+<li>If **Profit and loss** is selected in the **Post costs - item** field in the **Project groups** page, the **Main account** field when **Cost - item** is selected on the **Ledger posting setup** page.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
@@ -116,18 +116,18 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>Line discount</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</li>
-<li>The Main account field when Discount is selected in the Posting page.</li>
+<li>The **Main account** field when **Discount** is selected on the **Posting** page.</li>
 <li>If a main account for a discount is not defined on the posting profile, the accounting distribution of the extended price on the purchase order line.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the accounting distribution for the purchase order line.</li>
 <li>Use the financial dimensions from the accounting distributions for the extended price on the vendor invoice line.</li>
 <li>Use the financial dimension values for the vendor invoice line.</li>
-<li>Use the default financial dimension values from the main account in the Chart of Accounts page.</li>
+<li>Use the default financial dimension values from the main account in the **Chart of accounts** page.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Purchase charge, which is entered on the Price and discount tab of the purchase order line</td>
+<td>Purchase charge, which is entered on the **Price and discount** tab of the purchase order line</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</li>
 <li>The accounting distribution of the extended price on the purchase order line.</li>
@@ -141,21 +141,21 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>Line charge</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</li>
-<li>If Ledger account is selected in the debit Type field in the Charges code form, the debit Account field in the Charges code page.</li>
-<li>If Item is selected in the debit Type field in the Charges code form, the accounting distribution for the extended price on the purchase order line.</li>
-<li>If Customer/Vendor is selected in the debit Type field in the Charges code form, the credit Account field in the Charges code page.</li>
+<li>If **Ledger** account is selected in the **Debit type** field in the **Charges code** page, the **Debit Account** field on the **Charges code** page.</li>
+<li>If **Item** is selected in the **Debit Type** field in the **Charges code** page, the accounting distribution for the extended price on the purchase order line.</li>
+<li>If **Customer/Vendor** is selected in the **Debit Type** field in the **Charges code** page, the **Credit Account** field on the **Charges code** page.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
 <li>Use the financial dimensions from the accounting distributions for the extended price on the vendor invoice line.</li>
 <li>Use the financial dimension values from the vendor invoice line.</li>
-<li>Use the default financial dimension values from the main account in the Chart of Accounts page.</li>
+<li>Use the default financial dimension values from the main account in the **Chart of accounts** page.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Tax, with the following condition:
 <ul>
-<li>The Apply U.S. taxation rules option is selected in the General ledger parameters page.</li>
+<li>The Apply U.S. taxation rules option is selected on the **General ledger parameters** page.</li>
 </ul></td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</li>
@@ -170,61 +170,61 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <tr class="odd">
 <td>Tax, with the following conditions:
 <ul>
-<li>The Apply U.S. taxation rules option is cleared in the General ledger parameters page.</li>
-<li>The Use tax field for the sales tax group is cleared in the Sales tax groups page.</li>
+<li>The Apply U.S. taxation rules option is cleared on the **General ledger parameters** page.</li>
+<li>The **Use tax** field for the sales tax group is cleared on the **Sales tax groups** page.</li>
 </ul></td>
 <td><ol>
-<li>If the tax amount is recoverable, the Sales tax receivable field in the Ledger posting groups page.</li>
+<li>If the tax amount is recoverable, the **Sales tax receivable** field on the **Ledger posting groups** page.</li>
 <li>If the tax amount is not recoverable, the extended price or the accounting distribution for the charge.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
 <li>Use the financial dimensions from the extended price or the accounting distributions for the charge on the vendor invoice line.</li>
 <li>Use the financial dimension values from the vendor invoice line.</li>
-<li>Use the default financial dimension values from the main account in the Chart of Accounts page.</li>
+<li>Use the default financial dimension values from the main account on the **Chart of accounts** page.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Tax, with the following conditions:
 <ul>
-<li>The Apply U.S. taxation rules option is cleared in the General ledger parameters page.</li>
-<li>The Use tax field for the sales tax group is selected in the Sales tax groups page.</li>
+<li>The Apply U.S. taxation rules option is cleared on the **General ledger parameters** page.</li>
+<li>The **Use tax** field for the sales tax group is selected on the **Sales tax groups** page.</li>
 </ul></td>
 <td><ol>
-<li>If the tax amount is recoverable, the Sales tax receivable field in the Ledger posting groups page.</li>
-<li>If the tax amount is not recoverable, the Use tax expense field in the Ledger posting groups page.</li>
+<li>If the tax amount is recoverable, the **Sales tax receivable** field on the **Ledger posting groups** page.</li>
+<li>If the tax amount is not recoverable, the **Use tax expense** field on the **Ledger posting groups** page.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
 <li>Use the financial dimensions from the extended price or the accounting distributions for the charge on the vendor invoice line.</li>
 <li>Use the financial dimension values from the vendor invoice line.</li>
-<li>Use the default financial dimension values from the main account in the Chart of Accounts page.</li>
+<li>Use the default financial dimension values from the main account on the **Chart of accounts** page.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Header charge</td>
 <td><ol>
-<li>If Ledger account is selected in the debit Type field in the Charges code form, the debit Account field in the Charges code page.</li>
-<li>If Customer/Vendor is selected in the debit Type field in the Charges code form, the credit Account field in the Charges code page.</li>
+<li>If **Ledger** account is selected in the **Debit Type** field on the **Charges code** page, the **Debit Account** field on the **Charges code** page.</li>
+<li>If **Customer/Vendor** is selected in the **Debit Type** field on the **Charges code** page, the **Credit Account** field on the **Charges code** page.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
 <li>If the main account is an allocation account, use the default value from the allocation account definition.</li>
 <li>Use the financial dimension default template values from the vendor invoice header.</li>
 <li>Use the financial dimension values from the vendor invoice line.</li>
-<li>Use the default financial dimension values from the main account in the Chart of Accounts page.</li>
+<li>Use the default financial dimension values from the main account on the **Chart of accounts** page.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Header discount</td>
 <td><ol>
-<li>The Main account field for the Vendor invoice discount posting type in the Accounts for automatic transactions page.</li>
+<li>The **Main account** field for the **Vendor invoice discount posting type** on the **Accounts for automatic transactions** page.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
 <li>Use the financial dimensions from the accounting distributions for the extended price on the vendor invoice line.</li>
 <li>Use the financial dimension values from the vendor invoice line.</li>
-<li>Use the default financial dimension values from the main account in the Chart of Accounts page.</li>
+<li>Use the default financial dimension values from the main account on the **Chart of accounts** page.</li>
 </ol></td>
 </tr>
 </tbody>
