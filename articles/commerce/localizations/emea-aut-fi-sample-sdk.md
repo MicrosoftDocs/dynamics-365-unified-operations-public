@@ -92,7 +92,7 @@ You can install fiscal connector on [Hardware station](fiscal-integration-for-re
     
         The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-    1.Enable POS extensions
+    1. Enable POS extensions
 
         1. If the solution was previously built, clean it by running the following command-line command.
 
