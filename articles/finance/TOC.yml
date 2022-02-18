@@ -2298,6 +2298,8 @@
             href: localizations/apac-ind-news-letter-10-0-01.md
           - name: What's new or changed in 10.0.0
             href: localizations/apac-ind-news-letter-10-0-00.md
+        - name: Audit trail and edit logs for accounting software
+          href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
         - name: Indirect taxes
           items: 
           - name: India GST
