@@ -212,11 +212,32 @@ The purpose of the extension that is a fiscal connector is to communicate with t
 
 The Hardware station extension is **HardwareStation.Extension.EFRSample**. The Hardware station extension uses the HTTP or HTTPS protocols to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
 
+
+#### Request handler
+
+The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service.
+
+The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Commerce headquarters.
+
+The connector supports the following requests:
+
+- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response from it.
+- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the fiscal registration service.
+- **InitializeFiscalDeviceRequest** – This request is used to initialize the fiscal registration service.
+
+#### Configuration
+
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+
+- **Endpoint address** – The URL of the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+
 ### POS fiscal connector extension design
 
 The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
 
 The POS fiscal connector extension is **PosFiscalConnectorSample**. It uses the HTTPS protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+
 #### Request handler
 
 The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service.
