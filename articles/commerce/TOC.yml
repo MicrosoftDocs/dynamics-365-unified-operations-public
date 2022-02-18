@@ -2436,6 +2436,8 @@
             href: dev-itpro/retail-sdk/sdk-github.md
           - name: Legacy Retail SDK migration
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+          - name: Modernizing the Commerce in-store technology stack (white paper)
+            href: https://www.microsoft.com/download/details.aspx?id=103896
         - name: Environment setup
           items:
           - name: Local development environment
