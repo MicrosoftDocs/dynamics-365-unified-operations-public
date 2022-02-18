@@ -298,7 +298,8 @@ To set up a development environment to test and extend the sample, follow these 
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Install fiscal connector extensions
+1. Install fiscal connector extensions:
+
 You can install fiscal connector on [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the POS [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
     1. Install Hardware station extensions:
@@ -309,8 +310,9 @@ You can install fiscal connector on [Hardware station](fiscal-integration-for-re
             ```Console
             HardwareStation.EFR.Installer.exe install --verbosity 0
             ```
+
     1. Install POS connector extensions:
-    [12:13] Alexey Solonets
+
         1. Open the POS fiscal connector sample solution at **Dynamics365Commerce.Solutions\FiscalIntegration\PosFiscalConnectorSample\Contoso.PosFiscalConnectorSample.sln**, and build it.
         1. In **PosFiscalConnectorSample\StoreCommerce.Installer\bin\Debug\net461** find the Contoso.PosFiscalConnectorSample.StoreCommerce.Installer installer.
         1. Start the extension installer from the command line.
@@ -318,12 +320,6 @@ You can install fiscal connector on [Hardware station](fiscal-integration-for-re
             ```Console
             Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
             ```
-
-[13:40] Mikhail Cherepashchuk
-Спасибо!
-
-
-    
 
 #### Production environment
 
