@@ -80,7 +80,7 @@ The abandoned cart connector app uses Azure Key Vault to store the names and sec
 
 To set up an Azure Key Vault, follow these steps.
 
-1. To set up Azure Key Vault, follow the instructions in [Manage Key Vault in Azure Stack Hub using the portal](/azure-stack/user/azure-stack-key-vault-manage-portal?view=azs-2002).
+1. To set up Azure Key Vault, follow the instructions in [Manage Key Vault in Azure Stack Hub using the portal](/azure-stack/user/azure-stack-key-vault-manage-portal?view=azs-2002&preserve-view=true).
 2. Create secrets for:
    1. Emarsys API user name and API secret.
    2. Abandoned cart application ID and secret. 
