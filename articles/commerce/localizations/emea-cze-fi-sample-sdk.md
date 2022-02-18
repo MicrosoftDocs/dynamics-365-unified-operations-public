@@ -81,22 +81,15 @@ The CRT extension components are included in the CRT samples. To complete the fo
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsCzechia" />
     ```
-### Enable fiscal connector
-You can enable POS connector on:
-1. [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station). Use [Enable hardware station extensions](emea-cze-fi-sample-sdk.md#enable-hardware-station-extensions).
-2. [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network). Use [Enable POS connector extensions](emea-cze-fi-sample-sdk.md#enable-pos-connector-extensions).
+### Enable fiscal connector extensions
 
-### Enable POS connector extensions
+You can enable fiscal connector on [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-1. If you need use fiscal connector on the POS, use instruction [Use the sample in the legacy SDK](pos-fiscal-connector-sample.md#use-the-sample-in-the-legacy-sdk).
-2. POS Sample is located [here](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.35/src/FiscalIntegration)
-
-
-### Enable Hardware station extensions
+#### Enable Hardware station extensions
 
 The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-#### EFRSample component
+##### EFRSample component
 
 1. Find the **HardwareStation.Extension.EFRSample** project, and build it.
 2. In the **Extension.EFRSample\\bin\\Debug** folder, find the following assembly files:
@@ -119,6 +112,29 @@ The Hardware station extension components are included in the Hardware station s
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
+#### Enable POS extensions
+
+1. If the solution was previously built, clean it by running the following command-line command.
+
+``` 
+C:\Commerce-Samples-EndToEndSolutions\src\FiscalIntegration\PosFiscalConnectorSample> msbuild /t:Clean
+```
+   
+2. Copy the **Pos.Extension** folder to the POS **Extensions** folder of the legacy SDK (C:\RetailSDK\src\POS\Extensions).
+3. Rename the copy of the **Pos.Extension** folder  to **PosFiscalConnector**.
+4. Remove the following folders and files from the **PosFiscalConnector** folder:
+   - bin
+   - DataService
+   - devDependencies
+   - Libraries
+   - obj
+   - Contoso.PosFiscalConnectorSample.Pos.csproj
+   - RetailServerEdmxModel.g.xml
+   - tsconfig.json
+5. Open **CloudPos.sln** or **ModernPos.sln**.
+6. In the **Pos.Extensions** project, include the **PosFiscalConnector** folder.
+7. Open **extensions.json**, and add the **PosFiscalConnector** extension.
+8. Build the SDK.
 
 ### Production environment
 
@@ -194,8 +210,13 @@ The **DocumentProviderFiscalEFRSampleCzech** configuration file is located in th
 
 The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
 
-The Hardware station extension is **HardwareStation.Extension.EFRSample**. The Hardware station extension uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+The Hardware station extension is **HardwareStation.Extension.EFRSample**. The Hardware station extension uses the HTTP or HTTPS protocols to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
 
+### POS fiscal connector extension design
+
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
+
+The POS fiscal connector extension is **PosFiscalConnectorSample**. It uses the HTTPS protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
 #### Request handler
 
 The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service.
