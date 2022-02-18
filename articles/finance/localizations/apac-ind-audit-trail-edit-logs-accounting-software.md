@@ -86,7 +86,7 @@ When you configure logging for a table or field, a record of every change to tha
 Companies that use Finance to maintain books of accounts are fully compliant with the new notifications and can track transaction data to the source. For more information, see [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
 > [!IMPORTANT]
-> Enabling database logs for tables and fields can track changes including insert, update, delete, and rename key operatoins. However, enabling the functionality might also impact performance. We recommend that you contact Microsoft support before you enable this functionality.
+> Enabling database logs for tables and fields can track changes including insert, update, delete, and rename key operations. However, enabling the functionality might also impact performance. We recommend that you contact Microsoft support before you enable this functionality.
 
 #### Other data
 
