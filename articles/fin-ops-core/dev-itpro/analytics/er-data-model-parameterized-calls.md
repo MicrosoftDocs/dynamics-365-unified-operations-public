@@ -326,7 +326,7 @@ Let's implement the modification when an executed format will collect in memory 
         2.  On the **Formula designer** page, in the **Formula** field, enter the `Data.DirParty(PartyRefRecId)` expression.
         3.  Select **Save** and close the **Formula designer** page.
         > [!TIP]
-            > You configured this binding to call the configured `Data.DirParty` data source providing the list of record identification codes that will be specified in the format when the `Root.Party` data model field will be called.
+        > You configured this binding to call the configured `Data.DirParty` data source providing the list of record identification codes that will be specified in the format when the `Root.Party` data model field will be called.
     2.  On the **Data model** pane, select the `Root.Party.Name` data model field.
         1.  On the **Data model** pane, select **Edit**.
         2.  On the **Formula designer** page, on the **Data source** pane, complete the following steps:
