@@ -2,15 +2,15 @@
 title: Cross-company product sharing
 description: This topic explains how to share released-product data across companies (legal entities), thereby reducing the volume of data that must be maintained while simplifying the task of maintaining product master data.
 author: t-benebo
-ms.date: 11/04/2021
+ms.date: 02/21/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-11-04
-ms.dyn365.ops.version: 10.0.24
+ms.search.validFrom: 2022-02-01
+ms.dyn365.ops.version: 10.0.26
 ---
 
 # Cross-company product sharing
@@ -184,10 +184,6 @@ Item sales tax group and item purchase tax groups at specified at the product le
 ### Distributed hybrid environment
 
 If you are using a [distributed hybrid environment](../cloud-edge/cloud-edge-landing-page.md) with cloud or edge scale units, cross-company data sharing for products isn't supported.
-
-### Catch weight
-
-<!-- KFM: //Ask Sanjay/Per  -->
 
 ### Engineering Change Management
 
