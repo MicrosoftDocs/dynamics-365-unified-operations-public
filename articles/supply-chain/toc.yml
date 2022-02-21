@@ -687,7 +687,7 @@
           href: cost-management/include-physical-value.md
         - name: Inventory object values
           href: cost-management/physical-quantity.md
-        - name: LIFO Date with physical value and marking
+        - name: LIFO date with physical value and marking
           href: cost-management/lifo-date-physical-value-marking.md
         - name: LIFO with physical value and marking
           href: cost-management/lifo-physical-value-marking.md
