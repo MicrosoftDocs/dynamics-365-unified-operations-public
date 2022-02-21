@@ -137,6 +137,10 @@ If a batch order is created from a formula version where the **Co-products varia
 
 In this case, the worker can specify the co-product and quantity to report by selecting **Co-products variations** in the report progress dialog box. The worker can then select among all the released products that are defined as co-products.
 
+### Reporting catch weight items
+
+Workers can use the production floor execution interface to report progress on batch orders created for catch weight items. Batch orders are created from formulas, which can be defined to have catch weight items as formula items, co-products, and by-products. The formula can also be defined with formula lines for ingredients defined for catch weight. Catch weight items use two units of measure to track inventory: catch weight quantity and inventory quantity. For example, in the food industry, boxed meat can be defined as a catch weight item, where the catch weight quantity is used for tracking the number of boxes and the inventory quantity is used for tracking the weight of the boxes.
+
 ## Reporting scrap
 
 When a worker completes or partially completes a job, they can report scrap by selecting a job on the **Active jobs** tab and then selecting **Report scrap**. Then, in the **Report scrap** dialog box, the worker enters the scrap quantity by using the numeric keyboard. The worker also selects a reason (*None*, *Machine*, *Operator*, or *Material*).
@@ -191,6 +195,10 @@ The following actions can be performed:
 
 The **Adjust material** button can be configured so that it appears on the toolbar on the right. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
 
+### Adjust material consumption for catch weight items
+
+Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current. When adjusting consumption of a catch weight item it is possible the user can adjust both the catch weight quantity and the inventory quantity. If, for example, a production job is planned to consume 5 boxes with an estimated weight of 2 kilos per box, the worker can adjust the number of boxes to consume as well as the weight of the boxes. The system will validate if the specified weight of the boxes is within the defined minimum and maximum threshold defined on the released product. 
+
 ### Reserve materials
 
 In the **Adjust material** dialog box, a worker can make and adjust material reservations by selecting **Reserve material**. The **Reserve material** dialog box that appears shows the physically available inventory for the item for each storage and tracking dimension.
@@ -201,6 +209,9 @@ For more information about how to set up the production input location, see the 
 
 > [!NOTE]
 > Reservations that a worker makes in the **Reserve material** dialog box will remain when the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box.
+
+> [!NOTE]
+It is not possible to adjust reservations for catch weight items.
 
 ## Completing a job and starting a new job
 
