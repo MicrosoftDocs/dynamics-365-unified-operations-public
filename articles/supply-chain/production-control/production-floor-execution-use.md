@@ -76,6 +76,12 @@ The active jobs list has the following columns:
 - **Scrapped** – This column shows the quantity that has already been scrapped for a job.
 - **Remaining** – This column shows the quantity that remains to be completed for a job.
 
+## My jobs tab
+
+In the **My jobs** tab workers can easily see all unstarted and unfinished jobs assigned specifically to them. This is useful for companies that sometimes or always assign jobs to specific workers (human resources) rather than to other types of resources (such as machines). The scheduling system automatically assigns each production job to a specific resource record, and each resource record has type (such as machine or human). When you set up an employee as a production worker, you can associate that worker account with a unique human resource record. The **My jobs** tab lists all unstarted and unfinished jobs assigned to the human resource record of the signed-in worker (if any). However, the **My jobs** tab never lists jobs assigned to a machine or other type of resource, even if the signed-in worker has started working on such a job. To see all jobs started by the signed-in worker, regardless of which type of resource each job is assigned to, use the "Active jobs" tab. To see all unfinished jobs that match the local job filter configuration, regardless of worker or start status, use the **All jobs** tab.
+
+![The My jobs tab.](media/pfei-my-jobs-tab.png "The My jobs tab")
+
 ## My machine tab
 
 The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
