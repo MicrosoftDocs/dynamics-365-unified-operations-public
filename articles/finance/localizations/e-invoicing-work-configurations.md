@@ -21,7 +21,6 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.custom: 
 ms.author: dkalyuzh
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
