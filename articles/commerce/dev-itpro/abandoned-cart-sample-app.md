@@ -156,7 +156,7 @@ If you are using the e-commerce capabilities in Dynamics 365 Commerce, you have 
 | ImageViewPorts/Viewport             |                                                              |
 | ImageViewPorts/imageWidth           |                                                              |
 | imageViewPort/imageHeight           |                                                              |
-| imageViewPort/useForDefaultImageTag | Image to use when  the \<picture\> HTML tag isn't supported for a web browser or email client. |
+| imageViewPort/useForDefaultImageTag | Image to use when the \<picture\> HTML tag isn't supported for a web browser or email client. |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
