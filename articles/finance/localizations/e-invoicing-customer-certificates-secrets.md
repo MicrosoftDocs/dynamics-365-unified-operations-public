@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer certificates and secrets
-description: This topic provides description of customer's certificates and secrets setup in Electronic Invoicing.
+description: This topic explains how to set up customer certificates and secrets in Electronic invoicing.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -31,34 +31,43 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+If you already have a Microsoft Azure Key Vault reference in Regulatory Configuration Service (RCS), you can create references to the Key Vault certificates and secrets. If you don't yet have a Key Vault reference, see [Service environments](e-invoicing-service-environments.md) for information about how to create it.
 
-If you already have a Key Vault reference in the Regulatory Configuration Service (RCS), you can create references to the Azure Key Vault Certificates and Secrets. If you haven't created a Key Vault reference, see the topic, [Service environments](e-invoicing-service-environments.md).
+## Create certificates and secrets
 
-To create and set up certificates and secrets, complete the following steps.
+To create and set up certificates and secrets, follow these steps.
 
 1. Sign in to your RCS account.
 2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
 3. On the **Environment setup** page, on the Action Pane, select **Service environments**.
 4. On the **Service environments** page, on the Action Pane, select **Key Vault parameters**.
-5. Select a Key Vault reference, and in the **Certificates** section, select **Add**
-6. In the **Name** field, enter the name of the Azure Key Vault Certificate or Secret name. For more information, see [Create an Azure storage account in Azure portal](e-invoicing-create-azure-storage-account-azure-portal.md).
+5. On the **Key Vault parameters** page, select a Key Vault reference, and then, in the **Certificates** section, select **Add**.
+6. In the **Name** field, enter the name of the Key Vault certificate or secret. For more information, see [Create an Azure storage account in the Azure portal](e-invoicing-create-azure-storage-account-azure-portal.md).
 7. In the **Description** field, enter a description.
-8. In the **Type** field, select **Certificate** if you refer to the Certificate stored in the Key Vault. Select **Secret** if you refer to the Secret stored in the Key Vault
-9. Select **Save**
+8. In the **Type** field, select **Certificate** if you're referencing the certificate that is stored in the key vault. Select **Secret** if you're referencing the secret that is stored in the key vault.
+9. Select **Save**.
 
-  > [!NOTE]
-  > In some scenarios you have to use public certificates that have the extension ".cer". The Azure Key Vault doesn't support import and storage of this certificate typeas the Key Vault Certificate. In this case, save the ".cer" file as a Base-64 encoded X.509 (.CER) string and store the string from the file that is between lines **BEGIN CERTIFICATE** and **END CERTIFICATE** in the Azure Key Vault Secret. In the service environment, create a reference to the Key Vault record with the type, **Certificate**.
-
+> [!NOTE]
+> In some scenarios, you must use public certificates that have the .cer file name extension. However, Key Vault doesn't support importing and storing certificates of this type as Key Vault certificates. In these scenarios, you should save the .cer file as a Base-64-encoded X.509 (.CER) string. Then, in a Key Vault secret, store the string that appears between the **BEGIN CERTIFICATE** line and the **END CERTIFICATE** line in the file. In the service environment, you should still create a reference to the Key Vault record and set the **Type** field to **Certificate**.
 
 ## Create a chain of certificates
 
-If your country/region-specific invoices require a chain of certificates to apply digital signatures or establish secure connection (SSL) to external web services, create a chain of certificates. The certificate chain order consists of root certificates, intermediate certificates, and the end-user certificate. Root CAs are a trusted source of certificates. Intermediate CAs are bridges that link the end-user certificate to the root CA.
+If your country/region-specific invoices require a chain of certificates to apply digital signatures or establish a secure (Secure Sockets Layer \[SSL\]) connection to external web services, create a chain of certificates where the certificates are in the following order:
 
-1. On the **Key vault parameters** page, on the Action Pane, select **Chain of certificates**.
-2. Select **New**, and in the **Name** field, enter the name of the chain of certificate. 
-3. In the **Description** field, enter a description.
-4. In the **Certificates** section, select **Add** to add a certificate to the chain.
-5. Use the **Up** or **Down** button to change the position of the certificate in the chain. Keep the order where the CA root certificate is on top, and the end-user certificate is in the bottom of the list.
-6. Select **Save**
+1. Root certificates
+2. Intermediate certificates
+3. End-user certificates
 
-You can create as many Key Vault references in RCS as you want. Keep in mind that a particular Service environment will be linked to the Key Vault reference based on the Storage SAS token secret. You can refer to the Azure Key Vault Certificates and Secrets stored in the Key Vault that also contains Storage SAS token secret you use during the Service environment setup.
+Root certificate authorities (CAs) are a trusted source of certificates. Intermediate CA certificates are bridges that link the end-user certificates to the root CA certificates.
+
+To create and set up a chain of certificates, follow these steps.
+
+1. On the **Key Vault parameters** page, on the Action Pane, select **Chain of certificates**.
+2. Select **New** to create a chain of certificates.
+3. In the **Name** field, enter the name of the chain of certificates.
+4. In the **Description** field, enter a description.
+5. In the **Certificates** section, select **Add** to add a certificate to the chain.
+6. Use the **Up** or **Down** button to change the position of the certificate in the chain. Keep the CA root certificate at the top of the list and the end-user certificate at the bottom.
+7. Select **Save**.
+
+You can create as many Key Vault references in RCS as you want. Remember that the secret for the storage shared access signature (SAS) token is used to link a given service environment to the Key Vault reference. You can reference the Key Vault certificates and secrets that are stored in a key vault that also contains the secret for the storage SAS token that you use when you set up the service environment.
