@@ -16,6 +16,7 @@ ms.search.validFrom: 2019-3-1
 # Fiscal registration service integration sample for Austria
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This topic provides an overview of the fiscal integration sample for Austria in Microsoft Dynamics 365 Commerce.
 
@@ -391,7 +392,7 @@ The fiscal connector factory maps the connector name to the fiscal connector imp
 
 #### EFR fiscal connector
 
-The EFR fiscal connector is located at **Pos.Extension\Connectors\Efr\EfrFiscalConnector.ts** and implements the **IFiscalConnector** interface that supports the following requests:
+The EFR fiscal connector is located in the **Pos.Extension\Connectors\Efr\EfrFiscalConnector.ts** file and implements the **IFiscalConnector** interface that supports the following requests:
 
 - **FiscalRegisterSubmitDocumentClientRequest** – This request sends documents to the fiscal registration service and returns a response from it.
 - **FiscalRegisterIsReadyClientRequest** – This request is used for a health check of the fiscal registration service.
