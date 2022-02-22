@@ -153,7 +153,7 @@ param (
     $ServiceAccount,
 
     [string]
-    $ssrsServicePort = ""
+    $SsrsServicePort = "443"
 )
 
 $ErrorActionPreference = "Stop"
@@ -178,7 +178,7 @@ foreach ($component in $configJson.components)
         $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value = $Listener
         $component.parameters.biReporting.reportingServers.value = $MachinesList
         $component.parameters.biReporting.ssrsUseHttps.value = "True"
-        $component.parameters.biReporting.ssrsHttpsPort.value = $ssrsServicePort
+        $component.parameters.biReporting.ssrsHttpsPort.value = $SsrsServicePort
     }
     elseif($component.name -eq "ReportingServices")
     {
@@ -188,7 +188,7 @@ foreach ($component in $configJson.components)
         $component.parameters.principalUserAccountType.value = "ManagedServiceAccount"
         $component.parameters.principalUserAccountName.value = $ServiceAccount
         $component.parameters.reportingServers.value = $MachinesList
-        $component.parameters.ssrsHttpsPort.value = $ssrsServicePort
+        $component.parameters.ssrsHttpsPort.value = $SsrsServicePort
     }
 
     $updatedComponents += $component

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 7.3
 
 This topic explains how to update the local agent. The latest version of the local agent is version 3.0.0, which was released in November 2021.
 
+> [!IMPORTANT]
+> Do not update the local agent the during a servicing operation, even if the preparation phase has completed. 
+
 | Local agent version | Capability | 
 |---------------------|------------|
 | 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. |
