@@ -78,13 +78,15 @@ The active jobs list has the following columns:
 
 ## My jobs tab
 
-On the **My jobs** tab, workers can easily see all unstarted and unfinished jobs assigned specifically to them. This is useful for companies that sometimes or always assign jobs to specific workers (human resources) rather than to other types of resources (such as machines). 
+The **My jobs** tab lets workers easily view all unstarted and unfinished jobs that are assigned specifically to them. It's useful in companies where jobs are sometimes or always assigned to specific workers (human resources) instead of other types of resources (such as machines). 
 
-The scheduling system automatically assigns each production job to a specific resource record, and each resource record has type (such as machine or human). When you set up an employee as a production worker, you can associate that worker account with a unique human resource record. 
+The scheduling system automatically assigns each production job to a specific resource record, and each resource record has a type (such as machine or human). When you set up an employee as a production worker, you can associate the worker account with a unique human resource record. 
 
-The **My jobs** tab lists all unstarted and unfinished jobs assigned to the human resource record of the signed-in worker (if any). However, the **My jobs** tab never lists jobs assigned to a machine or other type of resource, even if the signed-in worker has started working on such a job. To see all jobs started by the signed-in worker, regardless of which type of resource each job is assigned to, use the **Active jobs** tab. To see all unfinished jobs that match the local job filter configuration, regardless of worker or start status, use the **All jobs** tab.
+The **My jobs** tab lists all unstarted and unfinished jobs that have been assigned to the human resource record of the signed-in worker, if any worker is signed in. It never lists jobs that have been assigned to a machine or other type of resource, even if the signed-in worker has started to work on those jobs.
 
-![The My jobs tab.](media/pfei-my-jobs-tab.png "The My jobs tab")
+To view all jobs that have been started by the signed-in worker, regardless of the type of resource that each job is assigned to, use the **Active jobs** tab. To view all unfinished jobs that match the configuration of the local job filter, regardless of the worker or start status, use the **All jobs** tab.
+
+![My jobs tab.](media/pfei-my-jobs-tab.png "My jobs tab")
 
 ## My machine tab
 
