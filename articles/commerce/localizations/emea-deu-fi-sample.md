@@ -470,11 +470,11 @@ The purpose of the POS fiscal connector extension is to communicate with the fis
 
 #### Fiscal connector factory
 
-The fiscal connector factory maps the connector name to the fiscal connector implementation and is located at **Pos.Extension\Connectors\FiscalConnectorFactory.ts**. The connector name should match the fiscal connector name that is specified in Commerce headquarters.
+The fiscal connector factory maps the connector name to the fiscal connector implementation and is located in the **Pos.Extension\Connectors\FiscalConnectorFactory.ts** file. The connector name should match the fiscal connector name that is specified in Commerce headquarters.
 
 #### EFR fiscal connector
 
-The EFR fiscal connector is located at **Pos.Extension\Connectors\Efr\EfrFiscalConnector.ts** and implements the **IFiscalConnector** interface that supports the following requests:
+The EFR fiscal connector is located in the **Pos.Extension\Connectors\Efr\EfrFiscalConnector.ts** file and implements the **IFiscalConnector** interface that supports the following requests:
 
 - **FiscalRegisterSubmitDocumentClientRequest** – This request sends documents to the fiscal registration service and returns a response from it.
 - **FiscalRegisterIsReadyClientRequest** – This request is used for a health check of the fiscal registration service.
@@ -485,6 +485,6 @@ The EFR fiscal connector is located at **Pos.Extension\Connectors\Efr\EfrFiscalC
 The configuration file is located in the **src\FiscalIntegration\Efr\Configurations\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the fiscal registration service.
-- **Timeout** – The amount of time, in milliseconds, that the connector will wait for a response from the fiscal registration service.
+- **Timeout** – The amount of time in milliseconds that the connector will wait for a response from the fiscal registration service.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
