@@ -87,13 +87,13 @@ To create deployable packages that contain Commerce components, and apply those 
 1. Complete the steps that are described in the [Development environment](#development-environment) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
-    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following line to the **composition** section.
+    1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following line to the **composition** section.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
+    1. In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
@@ -101,18 +101,19 @@ To create deployable packages that contain Commerce components, and apply those 
 
 3. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
 
-    - Add the following line to include the CRT extension in the deployable packages.
+    1. Add the following line to include the CRT extension in the deployable packages.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
 
-    - Add the following line to include the Hardware station extension in the deployable packages.
+    1. Add the following line to include the Hardware station extension in the deployable packages.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 4. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj** file to include the resource files for Italy in deployable packages as follows:
+
     1. Add an **ItemGroup** section containing nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
 
         ```xml
@@ -127,6 +128,7 @@ To create deployable packages that contain Commerce components, and apply those 
         <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
         ```
 5. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.RetailServerSetup.proj** file to include the resource files for Italy in deployable packages as follows: 
+
     1. Add an **ItemGroup** section containing nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
 
         ```xml
