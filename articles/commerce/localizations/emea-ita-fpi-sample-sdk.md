@@ -111,7 +111,7 @@ To create deployable packages that contain Commerce components, and apply those 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
-4. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj** file to include the resource files for Italy in deployable packages as follows.
+4. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj** file to include the resource files for Italy in deployable packages as follows:
     1. Add an **ItemGroup** section containing nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
 
         ```xml
@@ -121,11 +121,11 @@ To create deployable packages that contain Commerce components, and apply those 
          </ItemGroup>
          ```
     1. In the **Target Name="CopyPackageFiles"** section, add one line for each locale as shown in the following example: 
-        ``` xml
+        ```xml
         <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
         <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
-        ``
-5. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.RetailServerSetup.proj** file to include the resource files for Italy in deployable packages as follows. 
+        ```
+5. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.RetailServerSetup.proj** file to include the resource files for Italy in deployable packages as follows: 
     1. Add an **ItemGroup** section containing nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
         ```xml
         <ItemGroup>
