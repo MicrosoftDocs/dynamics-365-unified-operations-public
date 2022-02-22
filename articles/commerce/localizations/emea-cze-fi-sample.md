@@ -66,7 +66,7 @@ The fiscal registration service integration sample implements the following rule
 - A transaction that is related to a customer account deposit or a customer order deposit is registered in the fiscal registration service as a single line transaction and is marked with a special attribute. The deposit VAT group is specified in this line.
 - When a hybrid customer order is created, that is, a customer order that contains products that can be carried out of the store by the customer, as well as products that will be picked up or shipped later, the transaction registered in the fiscal registration service contains lines for the products that are carried out, as well as a line for the order deposit.
 - A payment from a customer account is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
-- The customer order deposit amount that is applied to a customer order *Pick up* operation is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
+- The customer order deposit amount that is applied to a customer order pickup operation is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
 
 ### Offline registration
 
