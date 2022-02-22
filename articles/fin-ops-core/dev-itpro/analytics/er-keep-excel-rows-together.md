@@ -75,7 +75,8 @@ Follow the steps in [Configure a format destination for on-screen preview]er-qui
 
     ![Review the generated free text invoice in the Excel desktop application.](./media/er-keep-excel-rows-together-invoice1.gif)
 
-    > [!TIP] Notice that the 6th line of this invoice starts on the 1st page of the report and continues on the 2nd page of it. So, the last note is shown on the 2nd page and it is not obvious that it belongs to the 6th invoice line. The page break in the middle of the invoice line content complicates this document reading.
+    > [!TIP]
+    > Notice that the 6th line of this invoice starts on the 1st page of the report and continues on the 2nd page of it. So, the last note is shown on the 2nd page and it is not obvious that it belongs to the 6th invoice line. The page break in the middle of the invoice line content complicates this document reading.
 
 Complete the remaining steps of this example to learn how you can tune the standard ER format to improve the look and readability of your invoice report by keeping the entire content of a single invoice line on the same page.
 
@@ -113,7 +114,8 @@ Follow the steps in [Configure a format destination for on-screen preview]er-qui
 
     ![Review the generated free text invoice in the Excel desktop application.](./media/er-keep-excel-rows-together-invoice2.gif)
 
-    > [!TIP] Notice that the 6th line of this invoice starts on the 2nd page and all representing this invoice line Excel rows are shown together on this page.
+    > [!TIP]
+    > Notice that the 6th line of this invoice starts on the 2nd page and all representing this invoice line Excel rows are shown together on this page.
 
 ## Additional resources
 
