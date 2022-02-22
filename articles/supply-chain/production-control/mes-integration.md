@@ -178,6 +178,7 @@ The following table shows the fields that each line in the `PickingListLines` se
 | `PositionNumber` | Optional | String |
 | `IsConsumptionEnded` | Optional | Boolean |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
+| `InventoryLotId` | Optional | String |
 
 ### Time used for operation (route card) message
 
