@@ -129,20 +129,6 @@ The **Replication direction** property specifies whether and how the range will 
 
 To learn more about horizontal replication, follow the steps in [Use horizontally expandable ranges to dynamically add columns in Excel reports](tasks/er-horizontal-1.md).
 
-### Nested components
-
-The **Range** component can have other nested ER components that are used to enter values in the appropriate Excel named ranges.
-
-- If any component of the **Text** group is used to enter values, the value is entered in an Excel range as a text value.
-
-    > [!NOTE]
-    > Use this pattern to format entered values based on the locale that is defined in the application.
-
-- If the **Cell** component of the **Excel** group is used to enter values, the value is entered in an Excel range as a value of the data type that is defined by the binding of that **Cell** component (for example, **String**, **Real**, or **Integer**).
-
-    > [!NOTE]
-    > Use this pattern to enable the Excel application to format entered values based on the locale of the local computer that opens the outbound document.
-
 ### Enabling
 
 On the **Mapping** tab of the ER Operation designer, you can configure the **Enabled** property for a **Range** component to specify whether the component must be put in a generated document:
