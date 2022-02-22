@@ -85,7 +85,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 ### Enable fiscal connector extensions
 
-You can enable fiscal connector extensions on [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
+You can enable fiscal connector extensions on the [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
 #### Enable Hardware station extensions
 
@@ -241,11 +241,11 @@ The purpose of the POS fiscal connector extension is to communicate with the fis
 
 #### Fiscal connector factory
 
-The fiscal connector factory maps the connector name to the fiscal connector implementation and is located at **Pos.Extension\Connectors\FiscalConnectorFactory.ts**. The connector name should match the fiscal connector name that is specified in Commerce headquarters.
+The fiscal connector factory maps the connector name to the fiscal connector implementation and is located in the **Pos.Extension\Connectors\FiscalConnectorFactory.ts** file. The connector name should match the fiscal connector name that is specified in Commerce headquarters.
 
 #### EFR fiscal connector
 
-The EFR fiscal connector is located at **Pos.Extension\Connectors\Efr\EfrFiscalConnector.ts** and implements the **IFiscalConnector** interface that supports the following requests:
+The EFR fiscal connector is located in the **Pos.Extension\Connectors\Efr\EfrFiscalConnector.ts** file and implements the **IFiscalConnector** interface that supports the following requests:
 
 - **FiscalRegisterSubmitDocumentClientRequest** – This request sends documents to the fiscal registration service and returns a response from it.
 - **FiscalRegisterIsReadyClientRequest** – This request is used for a health check of the fiscal registration service.
