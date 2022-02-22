@@ -111,36 +111,43 @@ To create deployable packages that contain Commerce components, and apply those 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
-4. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj** file to include the resource files for Italy in deployable packages as follows:
 
-    1. Add an **ItemGroup** section containing nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
+4. Make the following changes in the **Sdk.ModernPos.Shared.csproj** file under the **Packages\_SharedPackagingProjectComponents** folder to include the resource files for Italy in deployable packages:
+
+    1. Add an **ItemGroup** section that contains nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
 
         ```xml
-         <ItemGroup>
-           <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
-           <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
-         </ItemGroup>
-         ```
-    1. In the **Target Name="CopyPackageFiles"** section, add one line for each locale as shown in the following example: 
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. In the **Target Name="CopyPackageFiles"** section, add one line for each locale, as shown in the following example.
+
         ```xml
         <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
         <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
         ```
-5. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.RetailServerSetup.proj** file to include the resource files for Italy in deployable packages as follows: 
 
-    1. Add an **ItemGroup** section containing nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
+5. Make the following changes in the **Sdk.RetailServerSetup.proj** file under the **Packages\_SharedPackagingProjectComponents** folder to include the resource files for Italy in deployable packages:
+
+    1. Add an **ItemGroup** section that contains nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
 
         ```xml
         <ItemGroup>
-          <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
-          <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
         </ItemGroup>
         ```
-    1. In the **Target Name="CopyPackageFiles"** section, add one line for each locale as shown in the following example:
+
+    1. In the **Target Name="CopyPackageFiles"** section, add one line for each locale, as shown in the following example.
+
         ``` xml
         <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
         <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
         ```
+
 6. Start the MSBuild Command Prompt for Visual Studio utility, and then run **msbuild** under the Retail SDK folder to create deployable packages.
 7. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
