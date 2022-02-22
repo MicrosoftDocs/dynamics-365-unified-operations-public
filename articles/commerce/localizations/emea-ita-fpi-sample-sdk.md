@@ -127,6 +127,7 @@ To create deployable packages that contain Commerce components, and apply those 
         ```
 5. Modify the **Packages\_SharedPackagingProjectComponents\Sdk.RetailServerSetup.proj** file to include the resource files for Italy in deployable packages as follows: 
     1. Add an **ItemGroup** section containing nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
+
         ```xml
         <ItemGroup>
           <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
