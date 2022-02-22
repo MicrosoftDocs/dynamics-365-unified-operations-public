@@ -52,6 +52,15 @@ If you want to turn any of these features on or off, you must do that in [featur
 | Warehouse management | New load planning workbench pages. | Adds two new load planning workbench pages: **Inbound load planning workbench** and **Outbound load planning workbench**. <!--KFM: A better description in FM would be nice. --> |
 | Warehouse management | Warehouse management application - blank GTD | This feature is for Russian localization only. It allows workers using the Warehouse Management mobile app to leave Russian customs declaration numbers (GTDs) blank when needed. If the GTDS tracking dimension is set up to allow blank values, the system will now accept blank values for GTD for inventory operations provided on-hand inventory is available. <!--KFM: Add "(Russia)" to the name? --> |
 
+## New and updated documentation resources
+
+We have recently added or significantly updated the following help topics. These topics aren't necessarily related to the new features that were added for this release, as listed in the previous sections. However, they might help you to get more out of existing features.
+
+| Feature area | New or updated topics |
+|---|---|
+| Cost management | Updated examples and diagrams were added to each of the following topics:<ul><li>[FIFO with physical value and marking](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO with physical value and marking](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO Date with physical value and marking](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Running average cost price](../cost-management/running-average-cost-price.md)</li><li>[Weighted average with physical value and marking](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
+| Procurement and sourcing | [Purchase order line data discrepancies](../troubleshooting/procurement/purchase-order-line-data-issues.md) |
+
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
