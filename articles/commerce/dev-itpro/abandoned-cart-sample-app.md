@@ -4,7 +4,7 @@
 title: Detect abandoned carts and send notifications to customers
 description: This topic describes how to customize the Microsoft Dynamics 365 Commerce abandoned cart connector sample app to detect abandoned carts and send reminder email notifications to customers.
 author: bicyclingfool
-ms.date: 02/22/2022
+ms.date: 02/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -152,11 +152,11 @@ If you are using the e-commerce capabilities in Dynamics 365 Commerce, you have 
 
 | **Property**                        | **Description**                                                  |
 | ----------------------------------- | ------------------------------------------------------------ |
-| ImageServerUrl                      | The root URL of  your site's digital asset manager. This property value can be found in the **Media Server Base URL** property key in headquarters at **Retail and Commerce \> Channel setup \> Channel profiles**. |
-| ImageViewPorts                      | Container node for individual viewport configurations |
-| ImageViewPorts/viewport             | Viewport definition. Use this property to specify the width ranges for this viewport. See the appSettings.json for example usage. |
-| ImageViewPorts/imageWidth           | Image width for this viewport |
-| imageViewPorts/imageHeight           | Image height for this viewport |
+| ImageServerUrl                      | The root URL of your site's digital asset manager. This property value can be found in the **Media Server Base URL** property key in headquarters at **Retail and Commerce \> Channel setup \> Channel profiles**. |
+| ImageViewPorts                      | Container node for individual viewport configurations. |
+| ImageViewPorts/viewport             | Viewport definition. Use this property to specify the width ranges in pixels for this viewport. See the appSettings.json for example usage. |
+| ImageViewPorts/imageWidth           | Image width in pixels for this viewport. |
+| imageViewPorts/imageHeight           | Image height in pixels for this viewport. |
 | imageViewPorts/useForDefaultImageTag | (true/false) Use the image dimensions defined by this viewport when the <picture /> HTML tag isn't supported for a web browser or email client |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
