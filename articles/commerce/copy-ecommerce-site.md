@@ -46,7 +46,7 @@ To copy a site within an e-commerce environment, follow these steps.
 
 After the information has been validated, notification will pop-up indicating that a new site copy job has been created. Progress of the job can be monitored from the site copy job monitoring view. When the copy operation has successfully finished, the new site will appear in the list of sites. 
 
-IMG_1
+![this is the alt text.](../media/site-copy_1.png)
 
 ## Copy a site across e-commerce environments 
 
@@ -82,7 +82,7 @@ If the job has “Failed” or “Completed with errors”, it can be retried by
 > [!NOTE]
 > Video assets might still be processing after the site copy job finishes.
 
-IMG_2
+![this is the alt text.](../media/site-copy_2.png)
 
 ## FRE – First run experience 
 
@@ -101,26 +101,26 @@ To initialize the new site, follow these steps.
 1. Click “OK” 
 1. Your site will be initialized with the information you provided, and you will be sent to the site management view.
 
-IMG_3
+![this is the alt text.](../media/site-copy_3.png)
 
 ## Additional resources
 
-[Configure your domain name](https://docs.microsoft.com/en-us/dynamics365/commerce/configure-your-domain-name) 
+[Configure your domain name](configure-your-domain-name.md) 
 
-[Deploy a new e-commerce tenant](https://docs.microsoft.com/en-us/dynamics365/commerce/deploy-ecommerce-site) 
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md) 
 
-[Associate a Dynamics 365 Commerce site with an online channel](https://docs.microsoft.com/en-us/dynamics365/commerce/associate-site-online-store) 
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md) 
 
-[Manage robots.txt files](https://docs.microsoft.com/en-us/dynamics365/commerce/manage-robots-txt-files) 
+[Manage robots.txt files](manage-robots-txt-files.md) 
 
-[Upload URL redirects in bulk](https://docs.microsoft.com/en-us/dynamics365/commerce/upload-bulk-redirects) 
+[Upload URL redirects in bulk](upload-bulk-redirects.md) 
 
-[Set up a B2C tenant in Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-b2c-tenant) 
+[Set up a B2C tenant in Commerce](set-up-b2c-tenant.md) 
 
-[Set up custom pages for user logins](https://docs.microsoft.com/en-us/dynamics365/commerce/custom-pages-user-logins) 
+[Set up custom pages for user logins](custom-pages-user-logins.md) 
 
-[Configure multiple B2C tenants in a Commerce environment](https://docs.microsoft.com/en-us/dynamics365/commerce/configure-multi-b2c-tenants) 
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-b2c-tenants.md) 
 
-[Add support for a content delivery network (CDN)](https://docs.microsoft.com/en-us/dynamics365/commerce/add-cdn-support) 
+[Add support for a content delivery network (CDN)](add-cdn-support.md) 
 
-[Enable location-based store detection](https://docs.microsoft.com/en-us/dynamics365/commerce/enable-store-detection) 
+[Enable location-based store detection](enable-store-detection.md) 
