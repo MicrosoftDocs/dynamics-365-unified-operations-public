@@ -147,16 +147,16 @@ The abandoned cart retrieval job status, cart IDs, and modified timestamps are s
 
 ### MediaOptions
 
-If you are using the e-commerce capabilities in Dynamics 365 Commerce, you have the option to use Commerce digital asset management to retrieve product images. 
+If you are using the e-commerce capabilities in Dynamics 365 Commerce, you have the option to use Commerce digital asset management to retrieve product images. To learn more about the image resizer capabilities in digital asset management, see the [ImageSettings viewport configuration](../e-commerce-extensibility/image-component.md#imagesettings-viewport-configuration) section of the [Image component](../e-commerce-extensibility/image-component.md) help topic. 
+
 
 | **Property**                        | **Description**                                                  |
 | ----------------------------------- | ------------------------------------------------------------ |
 | ImageServerUrl                      | The root URL of  your site's digital asset manager. This property value can be found in the **Media Server Base URL** property key in headquarters at **Retail and Commerce \> Channel setup \> Channel profiles**. |
-| ImageViewPorts                      |                                                              |
-| ImageViewPorts/Viewport             |                                                              |
-| ImageViewPorts/imageWidth           |                                                              |
-| imageViewPort/imageHeight           |                                                              |
-| imageViewPort/useForDefaultImageTag | Image to use when the \<picture\> HTML tag isn't supported for a web browser or email client. |
-
+| ImageViewPorts                      | Container node for individual viewport configurations |
+| ImageViewPorts/viewport             | Viewport definition. Use this property to specify the width ranges for this viewport. See the appSettings.json for example usage. |
+| ImageViewPorts/imageWidth           | Image width for this viewport |
+| imageViewPorts/imageHeight           | Image height for this viewport |
+| imageViewPorts/useForDefaultImageTag | (true/false) Use the image dimensions defined by this viewport when the <picture /> HTML tag isn't supported for a web browser or email client |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
