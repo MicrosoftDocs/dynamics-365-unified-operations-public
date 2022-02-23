@@ -157,6 +157,6 @@ If you are using the e-commerce capabilities in Dynamics 365 Commerce, you have 
 | ImageViewPorts/viewport             | Viewport definition. Use this property to specify the width ranges in pixels for this viewport. See the appSettings.json for example usage. |
 | ImageViewPorts/imageWidth           | Image width in pixels for this viewport. |
 | imageViewPorts/imageHeight           | Image height in pixels for this viewport. |
-| imageViewPorts/useForDefaultImageTag | (true/false) Use the image dimensions defined by this viewport when the <picture /> HTML tag isn't supported for a web browser or email client |
+| imageViewPorts/useForDefaultImageTag | Specifies whether or not to use the image dimensions defined by this viewport when the `<picture>` HTML tag isn't supported for a web browser or email client (true or false). |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
