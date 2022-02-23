@@ -85,18 +85,16 @@ Before the new site can be taken into use, it must be initialized by going throu
 
 To initialize a new site using FRE, follow these steps. 
 
-1. Log in to the site builder with the new site  
-1. Navigate to the site list view 
-1. Locate and select the new site you want to initialize 
-1. “Setup your site”-view will open 
-1. Choose a domain to be used with this site from the “Select a domain” drop-down list. Domain list is populated with domains you have associated with the e-commerce environment during initialization 
-1. Select the associated online store channel from the “Select a default channel” drop-down list. Assortments and other information stored in the HQ will be used from the selected channel 
-1. Select the default authoring language from the “Select a default language” drop-down list. The drop-down list is populated with the languages configured for the selected online store channel 
-1. “Site path” consists of the base domain and optional URL path. You may leave the path empty if this channel will be served from the domain root or if you want to enter this information later in the channel configuration view in the site builder. The site path needs to be unique for the e-commerce environment. 
-1. Click “OK” 
-1. Your site will be initialized with the information you provided, and you will be sent to the site management view.
+1. Sign in to site builder for the new site. 
+1. Navigate to site list view by selecting **Site switcher** in the upper-right corner, and then selecting **Manage sites**. 
+1. Locate and select the new site you want to initialize. 
+1. In the **Setup your site** dialog box, for **Select a domain** select a domain from the drop-down list. The drop-down liast is populated with domains you associated with the e-commerce environment during initialization. 
+1. For **Select a default channel**, select the associated online store channel from the drop-down list. The selected channel will provide assortments and other information stored in headquarters. 
+1. For **Select a default language**, select the default authoring language from the drop-down list. The drop-down list is populated with the languages that are configured for the selected online store channel. 
+1. For **Site path**, the value consists of the base domain and optional URL path. You may leave the path empty if the channel will be served from the domain root, or if you want to enter this information later in the channel configuration view in the site builder. The site path must be unique for the e-commerce environment. 
+1. Select **OK**. Your site will be initialized with the information you provided, and you will be sent to the site management view.
 
-![this is the alt text 3](media/copy-site_3.png)
+![Setup your site dialog box showing fields in site builder](media/copy-site_3.png)
 
 ## Additional resources
 
