@@ -49,7 +49,7 @@ The following illustration shows a component diagram of the abandoned cart conne
 
 ## Obtain the code sample
 
-The abandoned cart connector sample app is included in the Retail SDK as of version 10.0.16. The code can be found under `\RetailSDK\Code\SampleExtensions\RetailServer\Extensions.AbandonedCartSample`. For more infomation about the Retail SDK and where to obtain it, see [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md).  
+The abandoned cart connector sample app is included in the Retail SDK as of version 10.0.16. The code can be found under `\RetailSDK\Code\SampleExtensions\RetailServer\Extensions.AbandonedCartSample`. For more information about the Retail SDK and where to obtain it, see [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md).  
 
 > [!NOTE] 
 > Although the sample code was first made available in version 10.0.16 builds, it is compatible with Retail Server builds starting with version 10.0.13. 
