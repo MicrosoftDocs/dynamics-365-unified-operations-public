@@ -28,19 +28,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Weighted average date
+# Weighted average date with include physical and marking
 
 [!include [banner](../includes/banner.md)]
+Weighted average date is an inventory model based on an average that results from the multiplication of each component (item transaction) by a factor (cost price) reflecting its importance (quantity) on each day in the period. Another way to say this is that weighted average is an inventory model that assigns the cost of issue transactions based on the mean value of all inventory received during each day, plus any on-hand inventory from the previous day.
 
-Weighted average date is an inventory model that is based on the weighted average principle. For the weighted average principle, issues from inventory are valued at the average value of the items that are received into inventory for each day in the inventory closing period. 
+When you run an inventory closing using the weighted average date inventory model, there are two ways a settlement can be created. Typically, all receipts are settled against a virtual issue, which holds the total received quantity and value. This virtual issue has a corresponding virtual receipt from which the issues are settled. In this manner, all issues get the same average cost on each day. The virtual issue and receipt can be seen as a virtual transfer, which is named the *weighted average inventory closing transfer*. This settlement method is called a *weighted average summarized settlement*. If there is only one receipt, all issues can be settled from it and the virtual transfer will not be created. This settlement method is referred to as a *direct settlement*. Any inventory that is on hand after the inventory close is performed is valued at the weighted average from the last day of the previous period and included in the weighted average date calculation in the next period.
 
-When you run an inventory closing by using weighted average date, all daily receipts are settled against a virtual issue. This virtual issue holds the total received quantity and value for that day. The virtual issue has a corresponding virtual receipt that the issues will be settled against. Therefore, all issues receive the same average cost. The virtual issue and virtual receipt can be considered a virtual transfer that is known as the *weighted average inventory closing transfer*. 
+You can override the weighted average date principle by marking inventory transactions so that a specific item receipt is settled against a specific issue. A periodic inventory close is required when you use the weighted average date inventory model to create settlements and adjust the value of issues according to the weighted average date principle. Until you run the inventory close process, issue transactions are valued at the running average when the physical and financial updates occurred. Unless you're using marking, the running average is calculated when the physical or financial update is performed.
 
-If only one receipt has occurred on or before the date, you don't have to value the average. Because all issues are settled from that receipt, the virtual transfer won't be created. Likewise, if only issues occur on the date, there are no receipts to value the average from, and the virtual transfer won't be created. When you use weighted average date, you can mark inventory transactions so that a specific item receipt is settled against a specific issue. In this case, you don't use the weighted average date rule. We recommend a monthly inventory closing when you use the weighted average date inventory model. 
+The weighted average date inventory costing method is calculated by the following formula each day:
 
-The following formula is used to calculate the weighted average date costing method: 
+![Weighted average formuala](./media/weightedaverageformula.gif) 
 
-Weighted average = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+The weighted average cost is equal to the beginning quantity times beginning price plus the sum of each receipt quantity times it’s receipt price all divided by the beginning quantity plus the sum of the receipt quantity.
+
+Q = quantity of the transaction  
+P = price of the transaction
 
 During inventory close, the calculation is performed every day through the closing period, as shown in the following illustration. 
 
