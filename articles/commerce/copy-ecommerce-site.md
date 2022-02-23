@@ -46,7 +46,7 @@ To copy a site within an e-commerce environment, follow these steps.
 
 After the information has been validated, notification will pop-up indicating that a new site copy job has been created. Progress of the job can be monitored from the site copy job monitoring view. When the copy operation has successfully finished, the new site will appear in the list of sites. 
 
-![this is the alt text.](../media/site-copy_1.png)
+![this is the alt text 1](media/site-copy_1.png)
 
 ## Copy a site across e-commerce environments 
 
@@ -82,7 +82,7 @@ If the job has “Failed” or “Completed with errors”, it can be retried by
 > [!NOTE]
 > Video assets might still be processing after the site copy job finishes.
 
-![this is the alt text.](../media/site-copy_2.png)
+![this is the alt text 2](media/site-copy_2.png)
 
 ## FRE – First run experience 
 
@@ -101,7 +101,7 @@ To initialize the new site, follow these steps.
 1. Click “OK” 
 1. Your site will be initialized with the information you provided, and you will be sent to the site management view.
 
-![this is the alt text.](../media/site-copy_3.png)
+![this is the alt text 3](media/site-copy_3.png)
 
 ## Additional resources
 
