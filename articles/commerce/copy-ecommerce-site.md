@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy an e-commerce site
-description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
+description: This topic describes how to copy an existing e-commerce site within or across e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 ms.date: 02/23/2022
 ms.topic: article
@@ -17,80 +17,75 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps and information required to copy an existing e-commerce site within or across e-commerce environments in Dynamics 365 Commerce site builder.
+This topic describes how to copy an existing e-commerce site within or across e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 
-Dynamics 365 Commerce e-commerce supports copying or cloning sites as self-serve operation in the site builder. Sites can be copied within a single e-commerce environment or across e-commerce environments. The user initiating the site copy needs to be tenant administrator in both the source and destination e-commerce environment. 
+Dynamics 365 Commerce supports copying or cloning sites as a self-serve operation in Commerce site builder. Sites can be copied within a single e-commerce environment or between two different e-commerce environments. The user initiating the site copy must be a tenant administrator in both the source and destination e-commerce environments. 
 
-Site copy copies all the e-commerce content under the source site including pages, fragments, templates, URLs, and assets. A new site will have to be initialized (FRE) before it can be used. Channels can be mapped and managed from “Site Settings > Channels” in the site builder. 
+The site copy operation copies all e-commerce content under the source site including pages, fragments, templates, URLs, and assets. A new site will need to be initialized using the first run experience (FRE) process before it can be used. Channels can be mapped and managed in site builder at **Site Settings \> Channels**. 
 
-Duration of the site copy operation depends primarily on the number of assets on the source site. For exceptionally large sites we recommend considering using environment copy (Data portability operation) instead. 
+The duration of the site copy operation depends primarily on the number of assets on the source site. For exceptionally large sites it is recommended that you consider using the environment copy operation (also known as the data portability operation) instead. 
 
 > [!NOTE]
 > - The source site will be read-only for the duration of the site copy operation. 
-> - Only published versions (or latest if no versions are published) of documents are copied over. Version history for content will not be available in the destination site.
+> - Only published versions (or the latest versions if no versions have been published) of documents are copied over. 
+> - Version history for content will not be available on the destination site.
 
 ## Copy a site within an e-commerce environment 
 
 To copy a site within an e-commerce environment, follow these steps.
 
-1. Log in to the site builder of the environment where you want to perform the copy within 
-1. Navigate to the site list view 
-1. Locate and select the site you want to copy/clone 
-1. Click “Copy site” from the action bar 
-1. “Copy site” view opens – make note that the “Source tenant”- and “Source site”-field is populated with the current tenant and selected site information. 
-1. Enter the name for the new site in the “New site name” field. 
-1. Click “Create copy” 
+1. Sign in to site builder for the environment where you want to perform the copy operation. 
+1. Navigate to site list view by selecting **Site switcher** in the upper-right corner, and then selecting **Manage sites**.
+1. Locate the site you want to copy or clone, and then select it by checking the option next to the site name. 
+1. On the action bar, select **Copy site**. 
+1. In the **Copy site** dialog box, under **New site name**, enter the name for the new site. The new site name must be unique for the e-commerce environment. Note that the **Source tenant** and **Source site** fields are auto-populated with the current tenant and selected site information. 
+1. Select **Create copy**.” 
 
-> [!NOTE]
-> The new site name needs to be unique for the e-commerce environment.
+After the information has been validated, a notification will appear indicating that a new site copy job has been created. Job progress can be monitored from the site copy job monitoring view. When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
 
-After the information has been validated, notification will pop-up indicating that a new site copy job has been created. Progress of the job can be monitored from the site copy job monitoring view. When the copy operation has successfully finished, the new site will appear in the list of sites. 
+![Copy site dialog box in site builder](media/copy-site_1.png)
 
-![this is the alt text 1](media/copy-site_1.png)
-
-## Copy a site across e-commerce environments 
+## Copy a site between two different e-commerce environments 
 
 To copy a site between two different e-commerce environments, follow these steps. 
 
-1. Log in to the site builder of the destination environment  
-1. Click “Copy site” from the action bar 
-1. “Copy site” view opens 
-1. Enter the name for the new site in the “New site name” field. 
-1. Enter the source e-commerce environment name in the “Source tenant”-field – “Source site” drop-down list will be populated with the sites from this environment 
-1. Select the source site from the “Source site” drop-down list 
-1. Click “Create copy” 
+1. Sign in to site builder for the destination e-commerce environment.  
+1. On the action bar, select **Copy site**. 
+1. In the **Copy site** dialog box, under **New site name**, enter the name for the new site. The new site name must be unique for the e-commerce environment.
+1. Under **Source tenant**, select the source tenant name from the drop-down list. 
+1. Under **Source site**, select the source site from the drop-down list. 
+1. Select **Create copy**. 
 
 > [!NOTE]
-> - The new site name needs to be unique for the e-commerce environment.
-> - Tenant administrator permissions are required in both source and destination e-commerce environment. 
+> Tenant administrator permissions are required for both the source and destination e-commerce environments. 
 
-After the information has been validated, notification will pop-up indicating that a new site copy job has been created. Progress of the job can be monitored from the site copy job monitoring view. When the copy operation has successfully finished, the new site will appear in the list of sites. 
+After the information has been validated, a notification will appeat indicating that a new site copy job has been created. Progress of the job can be monitored from the site copy job monitoring view. When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
 
 ## Monitor the site copy operation 
 
 To monitor the progress of the site copy operation, follow these steps. 
 
-1. Log in to the site builder of the destination e-commerce environment 
-1. Navigate to the “Site copy jobs” 
-1. Locate and select your site copy job from the list 
-1. You can see the status and the details of the job from the information presented in the list and in the property pane to the right 
+1. Sign in to site builder for the destination e-commerce environment. 
+1. Navigate to **Site copy jobs**. 
+1. Under **Tenant jobs**, locate and select your site copy job from the list. 
+1. The right-side pane will appear showing the status and the details of the selected job.
 
-Job that is “In progress” can be canceled by selecting it and pressing the “Cancel” button from the action bar. 
+Jobs that show a status of **In progress** can be canceled by selecting the job and then selecting **Cancel** on the action bar. 
 
-If the job has “Failed” or “Completed with errors”, it can be retried by selecting it from the list and pressing the “Retry” button from the action bar. 
+If a job shows a status of **Failed** or **Completed with errors**, the job can be retried by selecting it from the list and then selecting **Retry** on the action bar. 
 
 > [!NOTE]
-> Video assets might still be processing after the site copy job finishes.
+> Video assets might still be processing after a site copy job finishes.
 
-![this is the alt text 2](media/copy-site_2.png)
+![Tenant jobs page in site builder showing job details in the right-side pane](media/copy-site_2.png)
 
-## FRE – First run experience 
+## Initialize a new site using the first run experience (FRE) process 
 
 Before the new site can be taken into use, it must be initialized by going through FRE or First Run Experience. 
 
-To initialize the new site, follow these steps. 
+To initialize a new site using FRE, follow these steps. 
 
-1. Log in to the site builder with the new site 
+1. Log in to the site builder with the new site  
 1. Navigate to the site list view 
 1. Locate and select the new site you want to initialize 
 1. “Setup your site”-view will open 
