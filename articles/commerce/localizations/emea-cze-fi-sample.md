@@ -288,15 +288,15 @@ To set up a development environment to test and extend the sample, follow these 
             ```Console
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
-       
+
 1. Install fiscal connector extensions:
 
-    You can install fiscal connector on the [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or on the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
+    You can install fiscal connector extensions on the [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
     1. Install Hardware station extensions:
 
         1. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
-        1. Start the extension installer from the command line using the following command:
+        1. Start the extension installer from the command line by running the following command.
 
             ```Console
             HardwareStation.EFR.Installer.exe install --verbosity 0
@@ -304,9 +304,9 @@ To set up a development environment to test and extend the sample, follow these 
 
     1. Install POS extensions:
 
-        1. Open the POS fiscal connector sample solution at **Dynamics365Commerce.Solutions\FiscalIntegration\PosFiscalConnectorSample\Contoso.PosFiscalConnectorSample.sln**, and build it.
-        1. In **PosFiscalConnectorSample\StoreCommerce.Installer\bin\Debug\net461**, find the **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** installer.
-        1. Start the extension installer from the command line using the following command:
+        1. Open the POS fiscal connector sample solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln**, and build it.
+        1. In the **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** folder, find the **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** installer.
+        1. Start the extension installer from the command line by running the following command.
 
             ```Console
             Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
@@ -369,11 +369,11 @@ The purpose of the POS fiscal connector extension is to communicate with the fis
 
 #### Fiscal connector factory
 
-The fiscal connector factory maps the connector name to the fiscal connector implementation and is located at **Pos.Extension\Connectors\FiscalConnectorFactory.ts**. The connector name should match the fiscal connector name that is specified in Commerce headquarters.
+The fiscal connector factory maps the connector name to the fiscal connector implementation and is located in the **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts** file. The connector name should match the fiscal connector name that is specified in Commerce headquarters.
 
 #### EFR fiscal connector
 
-The EFR fiscal connector is located in the **Pos.Extension\Connectors\Efr\EfrFiscalConnector.ts** file. It implements the **IFiscalConnector** interface that supports the following requests:
+The EFR fiscal connector is located in the **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts** file. It implements the **IFiscalConnector** interface that supports the following requests:
 
 - **FiscalRegisterSubmitDocumentClientRequest** – This request sends documents to the fiscal registration service and returns a response from it.
 - **FiscalRegisterIsReadyClientRequest** – This request is used for a health check of the fiscal registration service.
@@ -381,8 +381,9 @@ The EFR fiscal connector is located in the **Pos.Extension\Connectors\Efr\EfrFis
 
 #### Configuration
 
-The configuration file is located in the **src\FiscalIntegration\Efr\Configurations\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+The configuration file is located in the **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the fiscal registration service.
-- **Timeout** – The amount of time in milliseconds that the connector will wait for a response from the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the connector will wait for a response from the fiscal registration service.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
