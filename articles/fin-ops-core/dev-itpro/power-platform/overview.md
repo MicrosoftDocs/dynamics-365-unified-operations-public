@@ -4,8 +4,8 @@
 title: Microsoft Power Platform integration with Finance and Operations apps
 description: This topic provides an overview for Microsoft Power Platform integration via Microsoft Dynamics Lifecycle Services for Finance and Operations apps and Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 05/20/2021
-ms.topic: overview
+ms.date: 02/15/2022
+ms.topic: article
 ms.prod:
 ms.technology: 
 
@@ -31,6 +31,16 @@ ms.dyn365.ops.version: 10.0.0
 
 
 Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. Today, Finance and Operations apps are not managed by the Power Platform admin center. However, over time more and more management capabilities will be migrated from Microsoft Dynamics Lifecycle Services (LCS) over to the admin center. In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Microsoft Power Platform integration functionality in LCS.
+
+## Environment lifecycle considerations
+
+By default, all Finance and Operations environments managed by LCS will receive a linked Power Platform environment without Dataverse. This is a one-to-one relationship that will, over time, be the location where your Finance and Operations apps will migrate. An environment that is linked to an environment from LCS will display the Finance and Operations apps URL on the environment details page in the Power Platform admin center.
+
+:::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
+
+This environment cannot be deleted or reset, and it cannot manually have a Dataverse database added to it. To add Dataverse, and fully set up the Power Platform integration, complete the following steps. 
+
+Alternatively, if you want to reuse an existing Dataverse environment for your Power Platform integration scenarios, such as virtual entities, add-ins, and dual-write, then follow the recommendations for [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
 
 ## Prerequisite reading
 
