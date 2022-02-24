@@ -303,6 +303,20 @@ The follow illustration shows an example of another page of the report that is g
 
 ![Other page of the generated report.](media/rcs-ger-filloutpdf-generatedreport2.png)
 
+## Limitations
+
+It is expected that names of fillable fields are unique in a PDF form that you plan to use as a report template. If so, for every such field an individual format element with the corresponding name is created in the editable ER format when a PDF form is imported. Should a PDF form contain several fields with the same name, a single format element is created for such fields that does not allow to individually fill them in at runtime.
+
+## Frequently asked questions
+
+### When I run the ER format to generate a report in PDF format, I get the following errors:  **Cannot handle iref streams. The current implementation of PDFSharp cannot handle this PDF feature introduced with Acrobat 6.** and **A PDF name must start with a slash (/).**
+
+ER framework uses version 1.5 of the PDFSharp library to generate such PDF reports. Some features of PDF 1.5 (Adobe Reader 6.0) are not yet implemented in this library. Therefore, PDFSharp cannot yet open some files that are marked as **for PDF 1.5 or higher**. throwing the mentioned above exceptions. To resolve such issues, use one of the following ways:
+
+-   When you use your own PDF template - downgrade it to an earlier Adobe version and start using a new template in your ER format.
+-   When you use a template of an ER format that was shared with you by another configuration provider as part of an ER solution - contact the owner of this ER solution providing the description of the discovered issue.
+-   When you use the ISV solution containing the earlier version of the PDFSharp library - contact the owner of this solution with the suggestion to upgrade it to the newer PDFSharp version.
+
 ## Additional resources
 
 - [ER Design a configuration for generating reports in OPENXML format (November 2016)](tasks/er-design-reports-openxml-2016-11.md)
