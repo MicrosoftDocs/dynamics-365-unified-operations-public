@@ -104,7 +104,7 @@ If the channel-side information isn't up to date for some reason, and an offline
 
 ## Version details
 
-The following list provides the minimum version requirements for the various components:
+The following list provides the minimum version requirements for the various components.
 - Commerce headquarters: version 10.0.20
 - Commerce Scale Unit (CSU): version 9.30
 - Point of sale (POS): version 9.30
