@@ -2,9 +2,9 @@
 # required metadata
 
 title: Copy an e-commerce site
-description: This topic describes how to copy an existing e-commerce site within or across e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
+description: This topic describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-ms.date: 02/23/2022
+ms.date: 02/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to copy an existing e-commerce site within or across e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
+This topic describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 
 Dynamics 365 Commerce supports copying or cloning sites as a self-serve operation in Commerce site builder. Sites can be copied within a single e-commerce environment or between two different e-commerce environments. The user initiating the site copy must be a tenant administrator in both the source and destination e-commerce environments. 
 
@@ -38,10 +38,10 @@ To copy a site within an e-commerce environment, follow these steps.
 1. Navigate to site list view by selecting **Site switcher** in the upper-right corner, and then selecting **Manage sites**.
 1. Locate the site you want to copy or clone, and then select it by checking the option next to the site name. 
 1. On the action bar, select **Copy site**. 
-1. In the **Copy site** dialog box, under **New site name**, enter the name for the new site. The new site name must be unique for the e-commerce environment. Note that the **Source tenant** and **Source site** fields are auto-populated with the current tenant and selected site information. 
+1. In the **Copy site** dialog box, under **New site name**, enter the name for the new site. The new site name must be unique for the e-commerce environment. Note that the **Source tenant** and **Source site** fields are autopopulated with the current tenant and selected site information. 
 1. Select **Create copy**.” 
 
-After the information has been validated, a notification will appear indicating that a new site copy job has been created. Job progress can be monitored from the site copy job monitoring view. When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
+After the information has been validated, a notification appears indicating that a new site copy job has been created. Job progress can be monitored from the [site copy job monitoring view](#monitor-the-site-copy-operation). When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
 
 ![Copy site dialog box in site builder](media/copy-site_1.png)
 
@@ -59,7 +59,7 @@ To copy a site between two different e-commerce environments, follow these steps
 > [!NOTE]
 > Tenant administrator permissions are required for both the source and destination e-commerce environments. 
 
-After the information has been validated, a notification will appeat indicating that a new site copy job has been created. Progress of the job can be monitored from the site copy job monitoring view. When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
+After the information has been validated, a notification appears indicating that a new site copy job has been created. Progress of the job can be monitored from the [site copy job monitoring view](#monitor-the-site-copy-operation). When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
 
 ## Monitor the site copy operation 
 
@@ -81,14 +81,14 @@ If a job shows a status of **Failed** or **Completed with errors**, the job can 
 
 ## Initialize a new site using the first run experience (FRE) process 
 
-Before the new site can be taken into use, it must be initialized by going through FRE or First Run Experience. 
+Before the new site can be taken into use, it must be initialized by going through first run experience (FRE) process. 
 
 To initialize a new site using FRE, follow these steps. 
 
 1. Sign in to site builder for the new site. 
 1. Navigate to site list view by selecting **Site switcher** in the upper-right corner, and then selecting **Manage sites**. 
 1. Locate and select the new site you want to initialize. 
-1. In the **Setup your site** dialog box, for **Select a domain** select a domain from the drop-down list. The drop-down liast is populated with domains you associated with the e-commerce environment during initialization. 
+1. In the **Setup your site** dialog box, for **Select a domain**, select a domain from the drop-down list. The drop-down list is populated with domains associated with the e-commerce environment during initialization. 
 1. For **Select a default channel**, select the associated online store channel from the drop-down list. The selected channel will provide assortments and other information stored in headquarters. 
 1. For **Select a default language**, select the default authoring language from the drop-down list. The drop-down list is populated with the languages that are configured for the selected online store channel. 
 1. For **Site path**, the value consists of the base domain and optional URL path. You may leave the path empty if the channel will be served from the domain root, or if you want to enter this information later in the channel configuration view in the site builder. The site path must be unique for the e-commerce environment. 
