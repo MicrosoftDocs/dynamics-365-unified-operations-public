@@ -4,7 +4,7 @@
 title: Create returns in POS
 description: This topic describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
-ms.date: 06/01/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -103,10 +103,11 @@ If the channel-side information isn't up to date for some reason, and an offline
 > When the **Unified returns processing experience in POS** feature is turned on, new optional features that support the validation of serialized product returns become available. For more information, see [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md).
 
 ## Version details
-The below list provides the details on the minimum version requirement for the various components:
-- Headquarters 10.0.20
-- Commerce Scale Unit 9.30
-- Point of Sale 9.30
+
+The following list provides the minimum version requirements for the various components:
+- Commerce headquarters: version 10.0.20
+- Commerce Scale Unit (CSU): version 9.30
+- Point of sale (POS): version 9.30
 
 ## Enable proper tax calculation for returns with partial quantity
 
