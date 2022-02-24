@@ -239,7 +239,7 @@ The following table shows which outbound features are supported, and where they 
 | Maintain shipments for wave                                  | No  | Yes|
 | Warehouse work processing (incl. license plate print)        | No  | Yes, but only for the previously mentioned supported capabilities |
 | Cluster picking                                              | No  | Yes|
-| Manual packing station processing, incl. 'Packed container picking' work  | No  | Yes, but without TMS shipment manifesting and sales packing slip posting - and without packing notes and product images |
+| Manual packing station processing  | No  | No |
 | Outbound sorting processing                                  | No  | No |
 | Printing of load related documents                           | Yes | Yes|
 | Bill of lading and ASN generation                            | No  | Yes|
@@ -260,6 +260,7 @@ The following table shows which outbound features are supported, and where they 
 | Reverse shipment confirmation                                | No  | Yes|
 | Request to cancel warehouse order lines                      | Yes | No, but the request will be approved or rejected |
 | <p>Release transfer orders for receiving</p><p>This process will automatically occur as part of the transfer order shipment process. However, it can be manually used to enable license plate receiving at a scale unit if inbound warehouse order lines have been canceled or as part of a new workload deployment process.</p> | Yes | No|
+<!--| Manual packing station processing, incl. 'Packed container picking' work  | No  | Yes, but without TMS shipment manifesting and sales packing slip posting - and without packing notes and product images |-->
 
 ### Inbound
 
