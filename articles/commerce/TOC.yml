@@ -495,7 +495,7 @@
         - name: Create financial dimensions for retail channels and configure values on stores 
           href: tasks/create-financial-dimensions-retail-channels.md
         - name: Enable consistent delivery mode handling in e-commerce channels
-        - href: consistent-delivery-mode-handling.md
+          href: consistent-delivery-mode-handling.md
       - name: Set up an online channel
         items:
         - name: Set up an online channel
