@@ -494,6 +494,8 @@
           href: tasks/configure-functionality-profile-sales-representative.md
         - name: Create financial dimensions for retail channels and configure values on stores 
           href: tasks/create-financial-dimensions-retail-channels.md
+        - name: Enable consistent delivery mode handling in e-commerce channels
+        - href: consistent-delivery-mode-handling.md
       - name: Set up an online channel
         items:
         - name: Set up an online channel
@@ -2882,6 +2884,10 @@
           href: troubleshoot/items-without-inventory-checked-out.md
         - name: Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled
           href: troubleshoot/hide-ratings-refiner.md
+      - name: Customer management
+        items:
+        - name: Welcome email is not sent when new customers are created
+          href: troubleshoot/email-not-sent-when-new-customer-created.md
       - name: SDK troubleshooting
         items:
         - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
