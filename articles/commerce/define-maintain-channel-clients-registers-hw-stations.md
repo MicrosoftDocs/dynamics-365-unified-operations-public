@@ -65,19 +65,13 @@ Cloud POS is a browser-based POS. Because it runs in the browser, Cloud POS does
 
 Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
 
-A hardware profile identifies the hardware that is connected to a POS register or a hardware station. The hardware profile is also used to specify the payment processor parameters that should be used during communication with the payment software development kit (SDK). (The payment SDK is deployed as part of the hardware station.)
+A hardware profile identifies the hardware that is connected to a POS register through an integrated or shared hardware station. The hardware profile is also used to specify the payment processor parameters that should be used during communication with the payment software development kit (SDK). (The payment SDK is deployed as part of the hardware station.)
 
 ### Hardware station
 
 Navigation: Click **Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**. Select a store, and then click the **Hardware stations** FastTab.
 
 A hardware station is an instance of business logic that drives POS peripherals. A hardware station is automatically installed together with MPOS. Alternatively, the hardware station can be installed as a stand-alone component, and then accessed by MPOS or Cloud POS through a web service. The hardware station must be defined at the channel level.
-
-### Hardware station profile
-
-Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**.
-
-Whereas the hardware station itself is specified at the channel level includes instance-specific information, such as the URL for the hardware station, the hardware station profile includes information that can be static or shared across multiple hardware stations. The static information includes the port that should be used, the hardware station package, and the hardware profile. The static information also includes a description of the type of hardware station that is being deployed, such as **Checkout** or **Returns**, depending on the hardware that is required for each specific hardware station.
 
 ## Scenarios
 
@@ -104,17 +98,15 @@ Finally, in MPOS, use the **Select hardware station** operation to select the ha
 
 [![Shared peripherals.](./media/shared-300x254.png)](./media/shared.png)
 
-In this scenario, a stand-alone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a hardware station profile to specify the download package, port, and hardware profile that the hardware station uses. You can find the hardware station profile at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. 
+In this scenario, a stand-alone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a shared hardware station and specify the download package, port, and hardware profile that the hardware station uses. You define a new hardware station by navigating to the Hardware stations fastTab within the specific channel (**Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**), and addding a new hardware station of type Shared. 
 
-After you've created the hardware station profile, navigate to the specific channel (**Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**), and add a new hardware station. Map this new hardware station to the hardware station profile that was previously created. 
-
-Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: `https://<MachineName:Port>/HardwareStation`. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station and the port that is specified in the hardware station profile.) For a stand-alone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. 
+Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: `https://<MachineName:Port>/HardwareStation`. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station.) For a stand-alone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. 
 
 Next, from the machine that will host the hardware station, navigate to the channel in Headquarters, and select the hardware station. Then click **Download** to download the hardware station installer, and install the hardware station. For more information about installing hardware station, see the [Configure and install Retail hardware station](retail-hardware-station-configuration-installation) help topic. 
 
 Next, from MPOS or Cloud POS, use the **Select hardware station** operation to select the hardware station that was previously installed. Select **Pair** to establish a secure relationship between the POS and the hardware station. This step must be completed once for every combination of a POS and a hardware station. 
 
-After the hardware station is paired, the same operation is used to make the hardware station active while it's used. For this scenario, the hardware profile should be assigned to the hardware station profile rather than the register itself. If for some reason a hardware station does not have a hardware profile directly assigned, then the hardware profile assigned to the register is used.
+After the hardware station is paired, the same operation is used to make the hardware station active while it's used. For this scenario, the hardware profile should be assigned to the shared hardware station rather than the register itself. If for some reason a hardware station does not have a hardware profile directly assigned, then the hardware profile assigned to the register is used.
 
 ## Client maintenance
 
@@ -171,7 +163,7 @@ Receipt profiles are assigned to printers within the hardware profile. They are 
 
 #### Hardware profiles
 
-Hardware profiles are explained as a component for client setup earlier in this article. Hardware profiles are assigned directly to the POS register or to a hardware station profile. They are used to specify the types of devices a specific POS register or hardware station uses. Hardware profiles are also used to specify the EFT settings that are used to communicate with the payment SDK.
+Hardware profiles are explained as a component for client setup earlier in this article. Hardware profiles are assigned directly to the POS register or to a shared hardware station. They are used to specify the types of devices a specific POS register or hardware station uses. Hardware profiles are also used to specify the EFT settings that are used to communicate with the payment SDK.
 
 #### Visual profiles
 
@@ -184,10 +176,6 @@ You can create custom fields to add fields that aren't provided out of the box t
 ### Language text
 
 You can override default strings in the POS by using language text entries. To override a string in the POS, add a new language text line. Then specify an ID, the default string that should be overridden, and the text that should be shown at the POS instead of the default string.
-
-### Hardware station profiles
-
-Hardware station profiles are explained earlier in this article. They are used to assign non-instance-specific information to hardware stations.
 
 ### Channel reports configuration
 
