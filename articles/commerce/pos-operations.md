@@ -164,7 +164,7 @@ The following columns specify where the operations can be invoked:
 | 305 | Redeem loyalty points | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | Yes |
 | 635 | Refund shipping charges | Refund shipping charges on a canceled order. | No | No | No | No | No |
 | 644 | Remove coupon code | Prompt the user to remove coupons by selecting them in a list of coupons that are currently associated with the transaction. | Yes | Yes | No | Yes | No |
-| 1057 | Reprint Z | Reprint the Z report for the previous shift or a selected shift. | Yes | Yes | Yes | No | No |
+| 1057 | Reprint Z | Reprint the Z report for the previous shift. | Yes | Yes | Yes | No | No |
 | 1216 | Reset password | This operation lets a user who has the password-reset permission reset another employee's password by using a temporary password. | Yes | Yes | Yes | No | No |
 | 1219 | Open URL in POS | Open an admin configured URL in POS. | Yes | Yes | Yes | Yes | No |
 | 109 | Return product | Perform a return of individual products. The next scanned product is shown as a returned product that has a negative quantity and price. | Yes | Yes | No | Yes | No |
