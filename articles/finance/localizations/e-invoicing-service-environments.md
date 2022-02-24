@@ -2,7 +2,7 @@
 # required metadata
 
 title: Service environments
-description: This topic provides information about how to set up service environments for Electronic invoicing.
+description: This topic provides information about service environments for Electronic invoicing and explains how to set them up.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -28,78 +28,86 @@ ms.dyn365.ops.version:
 ---
 
 # Service environments
+
 [!include [banner](../includes/banner.md)]
 
+Service environments are logical partitions that are created to support the Globalization features and the corresponding documents that are processed in the Electronic Invoicing service. The security secrets and digital certificates, and the access permissions (governance), must be configured at the service environment level.
 
-Service environments are logical partitions that are created to support the Globalization features and corresponding documents processed in the Electronic invoicing service. The security secrets and digital certificates, and the governance, or access permissions, must be configured at the service environment level.
+You can create as many service environments as you require. All the service environments that you create are independent of each other. As a best practice, we recommend that you create at least two service environments:
 
-You can create as many service environments as necessary. All the service environments that you create are independent of each other. As a best practice, we recommend that you create at least two service environments. One environment for main development and validation purposes. This environment is typically a UAT environment. The second environment is for production purposes and is usually a PROD environment.
+- One environment for main development and validation purposes. This environment is typically a user acceptance testing (UAT) environment.
+- One environment for production purposes. This environment is usually a production environment.
 
-Such partitioning helps ensure that the e-invoicing processes are validated and customized in the sandbox before they go to production.
+This type of partitioning helps ensure that the e-invoicing processes are validated and customized in the sandbox before they go to production.
 
-Service environments must be created and maintained in RCS. When the service environments are ready, they must be published to Electronic invoicing service. The publishing process sends the service environment parameters from the RCS instance to the Electronic invoicing service.
+Service environments must be created and maintained in Regulatory Configuration Service (RCS). Then, when they are ready, they must be published to the Electronic Invoicing service. The publishing process sends the parameters of the service environment from the RCS instance to the Electronic Invoicing service.
 
-If you don't complete the publishing step when you create a new service environment, or adjust an existing service environment, including adding or removing users or Key Vault secrets, the changes will not be effective. Only published environments can be accessed by Finance or Supply Chain Management.
+If you don't complete the publishing process after you create a new service environment or adjust an existing service environment (for example, by adding or removing users or Microsoft Azure Key Vault secrets), the changes won't be effective. Only published environments can be accessed by Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
-Check the status of the environments publishing status in the **Service environments** list.
+## Service environment statuses
 
+Service environments can be managed through their status. You can view the status of an environment on the **Service environments** page. The following statuses are available:
 
-## Service environment status
-Service environments can be managed through status. The possible options are:
-    
-  - **Not published**: The environment has been created, but it hasn't been published.
-  - **Published**: The environment has been published to Electronic invoicing.
-  - **Changed**: The attributes of a published environment have been changed, but the changes haven't been published.
+- **Not published** – The environment has been created, but it hasn't yet been published.
+- **Published** – The environment has been published to the Electronic Invoicing service.
+- **Changed** – The attributes of a published environment have been changed, but the changes haven't yet been published.
 
 ## Users
-Each service environment must list the users who can connect from Finance or Supply Chain Management to Electronic invoicing.
+
+Each service environment must list the users who can connect to Electronic invoicing from Finance or Supply Chain Management.
 
 ## Applications
-In some scenarios, it's required that applications other than Finance or Supply Chain Management connect to the Electronic Invoicing service to submit electronic documents for further processing, or to retrieve information such as the submission status of a document.
-In this situation, the application should be defined in the list of applications, providing an access to the Electronic Invoicing service.
 
-This application must also be registered in Azure AD as an application, and the Object ID must be used to identify the application. 
-Because Microsoft requires a high-level of security control over applications that can connect to the Electronic Invoicing service, contact Microsoft at  DGXRegulatoryservicesengineering@service.microsoft.com and provide the following parameters of your application:
+In some scenarios, applications other than Finance or Supply Chain Management might have to connect to the Electronic Invoicing service to submit electronic documents for further processing, or to retrieve information such as the submission status of a document. In these scenarios, the application should be defined in the list of applications. In this way, it will have access to the Electronic Invoicing service. The application must also be registered as an application in Azure Active Directory (Azure AD), and the object ID must be used to identify it. 
 
-- AAD TenantID
-- LCS Environment ID
-- Application ID (Client ID)
+Because Microsoft requires a high-level of security control over applications that can connect to the Electronic Invoicing service, you must contact Microsoft at <DGXRegulatoryservicesengineering@service.microsoft.com> and provide the following details of your application:
+
+- Azure AD tenant ID
+- Microsoft Dynamics Lifecycle Services (LCS) environment ID
+- Application ID (client ID)
 - Object ID
 - Justification and a high-level description of the application
 
-Microsoft will evaluate the request and register the application in the security register to make sure it can operate with Electronic invoices.
+Microsoft will evaluate the request and register the application in the security register to ensure that it can operate with Electronic invoicing.
 
 ## Number sequences
-If your scenarios require number sequences, use number sequences that not only defined for the particular environment, but can be used across Globalization features, or per Globalization feature. After the number sequence is defined, you can use it in **Variables** and **Processing pipelines**.
 
-You can watch its usage by parameter **In use** and **Current** value.
+If your scenarios require number sequences (for example, in file names), you can use number sequences that are defined for a specific environment, but that can be used either across Globalization features or for a specific Globalization feature. After a number sequence is defined, you can use it in variables and processing pipelines. To track its use, look for a value of **Current** for the **In use** parameter.
 
-To create and set up service environments and the corresponding parameters, complete the following steps.
+### Working with number sequences
 
-1. Sign in to your RCS account and in the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
-2. On the **Environment setup** page, on the Action Pane, select **Service environments**.
-3. Select **Key Vault parameters** and then select **New** to create a Key Vault reference.
-4. In the **Name** field, enter the name of the Key Vault reference and in the **Description** field, enter a description.
-5. In the **Key Vault URI** field, paste the Key Vault URI (`https://<<yourkeyvault>>.vault.azure.net/`) from the Azure Key Vault. For more information, see [Create Azure Key Vault in Azure portal](e-invoicing-create-azure-key-vault-azure-portal.md).
-6. Select **Save**.
+- Select **New** to create a number sequence. Then enter a name and description. 
+- Select **Delete** to delete a number sequence if it's no longer used.
+- You don't have to select **Publish** on the Action Pane to publish the changes to a number sequence. The update is done automatically.
+
+## Create a Key Vault reference
+
+1. Sign in to your RCS account.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
+3. On the **Environment setup** page, on the Action Pane, select **Service environments**.
+4. On the **Service environments** page, on the Action Pane, select **Key Vault parameters**.
+5. On the **Key Vault parameters** page, select **New** to create a Key Vault reference.
+6. In the **Name** field, enter the name of the Key Vault reference.
+7. In the **Description** field, enter a description.
+8. In the **Key Vault URI** field, paste the Key Vault URI from the key vault (`https://<your key vault>.vault.azure.net/`). For more information, see [Create an Azure key vault in the Azure portal](e-invoicing-create-azure-key-vault-azure-portal.md).
+9. Select **Save**.
 	
-## Create secret for Storage account signature (SAS) token
-1. Select a Key Vault reference and in the **Certificates** section, select **Add**.
-2. In the **Name** field, enter the name of the storage account secret. This name should be the same as the Azure Key Vault Secret name with SAS token. For more information, see [Create Azure storage account in Azure portal](e-inv_tut-setup-electronic-invoicing_azure_create-storage.md). 
+## Create a secret for the storage account secret token
+
+1. On the **Key Vault parameters** page, select the Key Vault reference that you created in the previous procedure, and then, in the **Certificates** section, select **Add**.
+2. In the **Name** field, enter the name of the storage account secret. This name should match the name of the Key Vault secret that holds the storage shared access signature (SAS) token. For more information, see [Create an Azure storage account in the Azure portal](e-invoicing-create-azure-storage-account-azure-portal.md). 
 3. In the **Description** field, enter a description.
 4. In the **Type** field, select **Secret**.
 5. Select **Save**.
 	
 ## Create a service environment
-1. Select **New** to create a new service environment.
-2. In the **Name** field, enter the name of the Electronic Invoicing environment and in the **Description** field, enter a description.
-3. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
-4. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment and also connect to the storage account.
-5. In the **User ID** field, enter the alias of the user. 
-6. In the **Email** field, enter the user's email address and then select **Save**.
-7. On the Action Pane, select **Publish** to publish the environment to the Electronic invoicing service. Verify that the value of the **Status** field is changed to **Published**.
 
-## Work with number sequences
-- Select **New** to create a new number sequence and enter a name and description. 
-- Select **Delete** to delete a number sequence if it's no longer being used.
-- You don't need to select **Publish** on the Action Pane to publish the changes to a number sequence. The update is done automatically.
+1. On the **Service environments** page, select **New** to create a service environment.
+2. In the **Name** field, enter the name of the Electronic invoicing environment.
+3. In the **Description** field, enter a description.
+4. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
+5. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment and connect to the storage account.
+6. In the **User ID** field, enter the alias of the user. 
+7. In the **Email** field, enter the user's email address.
+8. Select **Save**.
+9. On the Action Pane, select **Publish** to publish the environment to the Electronic Invoicing service. Verify that the value of the **Status** field is changed to **Published**.
