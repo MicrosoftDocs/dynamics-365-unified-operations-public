@@ -127,7 +127,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 14. If the batch task supports input parameters, select **Parameters**, and then set task-specific parameters.
 15. Select **OK**, and then select **Save**.
 
-## <a name="reserved">Set the batch reserved capacity level</a>
+## Set the batch reserved capacity level
 
 1. Go to **System administration** \> **Setup** \> **System parameters**.
 2. On the **Batch global settings** tab, in the **Batch reserved capacity level** field, select the reserved capacity level to use for batch jobs that have **Reserved capacity** priority:
