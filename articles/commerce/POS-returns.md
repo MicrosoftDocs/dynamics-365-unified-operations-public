@@ -102,6 +102,12 @@ If the channel-side information isn't up to date for some reason, and an offline
 > [!NOTE]
 > When the **Unified returns processing experience in POS** feature is turned on, new optional features that support the validation of serialized product returns become available. For more information, see [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md).
 
+## Version details
+The below list provides the details on the minimum version requirement for the various components:
+- Headquarters 10.0.20
+- Commerce Scale Unit 9.30
+- Point of Sale 9.30
+
 ## Enable proper tax calculation for returns with partial quantity
 
 This feature ensures that when an order is returned using multiple invoices, the taxes will ultimately be equal to the tax amount originally charged.
