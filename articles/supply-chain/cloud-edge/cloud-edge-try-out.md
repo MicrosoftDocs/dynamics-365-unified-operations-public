@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-The process of trying out the distributed hybrid topology is simple. During the first stage, you should validate customizations to ensure that they work in the distributed topolog. You have two options.
+The process of trying out the distributed hybrid topology is simple. During the first stage, you should validate customizations to ensure that they work in the distributed topology. You have two options.
 
 ## Option 1: Evaluate customizations in development environments
 
@@ -27,7 +27,7 @@ You should use the [scale unit deployment tools for one-box development environm
 
 ## Option 2: Acquire add-ins and deploy in your sandbox environments
 
-To try out the distributed hybrid topology, you must have two sandbox environments (tier 2), one of which has your data (enterprise hub), and the other of which is for the scale unit and has "empty data".
+To try out the distributed hybrid topology, you must have two sandbox environments (tier 2), one of which has your data (enterprise hub) and the other of which is for the scale unit and has "empty data."
 
 You must acquire add-ins for at least one cloud or edge scale unit. Corresponding project and environment slots will then be granted in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), so that the scale unit environments can be deployed by using the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
 
