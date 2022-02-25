@@ -142,7 +142,7 @@ In this case, the worker can specify the co-product and quantity to report by se
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
-Workers can use the production floor execution interface to report progress on batch orders created for catch weight items. Batch orders are created from formulas, which can be defined to have catch weight items as formula items, co-products, and by-products. The formula can also be defined with formula lines for ingredients defined for catch weight. Catch weight items use two units of measure to track inventory: catch weight quantity and inventory quantity. For example, in the food industry, boxed meat can be defined as a catch weight item, where the catch weight quantity is used for tracking the number of boxes and the inventory quantity is used for tracking the weight of the boxes.
+Workers can use the production floor execution interface to report progress on batch orders that are created for catch weight items. Batch orders are created from formulas, which can be defined to have catch weight items as formula items, co-products, and by-products. A formula can also be defined to have formula lines for ingredients that are defined for catch weight. Catch weight items use two units of measure to track inventory: catch weight quantity and inventory quantity. For example, in the food industry, boxed meat can be defined as a catch weight item, where the catch weight quantity is used to track the number of boxes and the inventory quantity is used to track the weight of the boxes.
 
 ## Reporting scrap
 
@@ -203,7 +203,7 @@ The **Adjust material** button can be configured so that it appears on the toolb
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
-Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current. When adjusting consumption of a catch weight item, it is possible for the worker to adjust both the catch weight quantity and the inventory quantity. If, for example, a production job is planned to consume 5 boxes with an estimated weight of 2 kilos per box, the worker can adjust the number of boxes to consume as well as the weight of the boxes. The system will validate whether the specified weight of the boxes is within the defined minimum and maximum threshold defined on the released product.
+Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current. When a worker adjusts consumption of a catch weight item, they can adjust both the catch weight quantity and the inventory quantity. For example, if a production job is planned to consume five boxes that have an estimated weight of 2 kilograms per box, the worker can adjust both the number of boxes to consume and the weight of the boxes. The system will validate that the specified weight of the boxes is within the defined minimum and maximum threshold that defined on the released product.
 
 ### Reserve materials
 
@@ -215,9 +215,8 @@ For more information about how to set up the production input location, see the 
 
 > [!NOTE]
 > Reservations that a worker makes in the **Reserve material** dialog box will remain when the worker selects **Cancel** in the **Report progress** or **Report scrap** dialog box.
-
-> [!NOTE]
-It is not possible to adjust reservations for catch weight items.
+>
+> It isn't possible to adjust reservations for catch weight items.
 
 ## Completing a job and starting a new job
 
