@@ -4,7 +4,7 @@
 title: Detect abandoned carts and send notifications to customers
 description: This topic describes how to customize the Microsoft Dynamics 365 Commerce abandoned cart connector sample app to detect abandoned carts and send reminder email notifications to customers.
 author: bicyclingfool
-ms.date: 02/23/2022
+ms.date: 02/25/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -84,8 +84,8 @@ To set up a key vault, follow these steps.
 1. Follow the instructions in [Manage Key Vault in Azure Stack Hub using the portal](/azure-stack/user/azure-stack-key-vault-manage-portal?view=azs-2002&preserve-view=true).
 2. Create secrets for the following information:
 
-    1. Emarsys application programming interface (API) user name and API secret
-    2. Abandoned cart application ID and secret
+    - Emarsys application programming interface (API) user name and API secret
+    - Abandoned cart application ID and secret
 
 The abandoned cart connector sample code uses Azure default credentials to access Key Vault. You must provide **List** and **Read** permissions to the identity that you plan to use to access Key Vault.
 
