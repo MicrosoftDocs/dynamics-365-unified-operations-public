@@ -213,7 +213,7 @@ The following warehouse management functionality isn't currently supported for s
 - Processing with items only enabled for Transportation management (TMS).
 - Processing with negative on-hand inventory.
 - Cross-company data sharing for products. <!-- Planned -->
-- Warehouse work processing with shipment notes (for example packing notes at packing station).
+- Warehouse work processing with shipment notes (for example, packing notes at packing station).
 - Product master data images (for example, on the Warehouse Management mobile app).
 - Warehouse work processing with material handling/warehouse automation.
 
@@ -260,7 +260,7 @@ The following table shows which outbound features are supported, and where they 
 | Reverse shipment confirmation                                | No  | Yes|
 | Request to cancel warehouse order lines                      | Yes | No, but the request will be approved or rejected |
 | <p>Release transfer orders for receiving</p><p>This process will automatically occur as part of the transfer order shipment process. However, it can be manually used to enable license plate receiving at a scale unit if inbound warehouse order lines have been canceled or as part of a new workload deployment process.</p> | Yes | No|
-<!--| Manual packing station processing, incl. 'Packed container picking' work  | No  | Yes, but without TMS shipment manifesting and sales packing slip posting - and without packing notes and product images |-->
+<!--| Manual packing station processing, including 'Packed container picking' work  | No  | Yes, but without TMS shipment manifesting and sales packing slip posting and without packing notes and product images |-->
 
 ### Inbound
 
