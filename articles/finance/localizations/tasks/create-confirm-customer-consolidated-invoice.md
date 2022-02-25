@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create and confirm a customer consolidated invoice
-description: This topic explains how to consolidate customer nvoices each month to calculate the due amount.
+description: This topic explains how to consolidate customer invoices each month to calculate the due amount.
 author: ShylaThompson
 ms.date: 10/04/2021
 ms.topic: business-process 
