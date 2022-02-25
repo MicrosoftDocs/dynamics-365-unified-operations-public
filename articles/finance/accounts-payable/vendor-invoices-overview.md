@@ -4,7 +4,7 @@
 title: Vendor invoices overview
 description: This topic provides general information about vendor invoices.
 author: abruer
-ms.date: 06/03/2021
+ms.date: 02/25/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["13971", "intro-internal"]
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -54,10 +54,10 @@ The following discussion provides more information about how to use the **Open v
 
 When you open a vendor invoice from a related purchase order, the system creates invoice lines from the purchase order. By default, the system takes the quantities from the product receipt. However, you can use any of the following default behaviors:
 
-- **Receive now quantity** – Use this option for partial shipments. The system sets the default value in the **Quantity** from the quantity specified in the **Receive now** field on the purchase order.
-- **Ordered quantity** – Use this option for complete shipments. The system sets the default value in the **Quantity** from the quantity specified in the **Ordered** field on the purchase order.
+- **Receive now quantity** – Use this option for partial shipments. The default value in the **Quantity** field will be set to the quantity specified in the **Receive now** field on the purchase order.
+- **Ordered quantity** – Use this option for complete shipments. The default value in the **Quantity** field will be set to the quantity specified in the **Ordered** field on the purchase order.
 - **Registered quantity** – Use this option if the item requires registration, as specified on the **Item model groups** page. The default value in the **Quantity** field is the physical update quantity that has been registered.
-- **Product receipt quantity** – Use this option if a product receipt has already been received for the order. The system takes the default value in the **Quantity** field from the total quantity of available product receipts.
+- **Product receipt quantity** – Use this option if a product receipt has already been received for the order. The default value in the **Quantity** field is the total quantity of available product receipts.
 - **Registered quantity and services** – Use this option if quantities have been registered in arrival journals for stocked items or items that aren't stocked. This option also includes services, regardless of whether they are registered.
 
 If your legal entity uses invoice matching, you can view the results of the quantity matching in the **Product receipt quantity match** column. You can also use the **Matching details** button on the **Review** tab of the Action Pane to view the results of the quantity matching.
@@ -68,7 +68,7 @@ You can add a line that wasn't on the purchase order to the vendor invoice. You 
 
 ## Submitting a vendor invoice for review
 
-Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you select the control. Instead of the **Post** button, a **Submit** button displays send the vendor invoice through the review process.
+Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you select the control. Instead of the **Post** button, a **Submit** button sends the vendor invoice through the review process.
 
 ### Preventing invoice from being submitted to workflow 
 
@@ -105,7 +105,7 @@ You can specify the number of invoices to include in the batch, and the number o
 
 ## Working with multiple invoices
 
-You can work with multiple invoices at the same time and post all of them at the same time. If you need to create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
+You can work with multiple invoices at the same time and post all of them at the same time. If you need to create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the **Invoice approval journal**. If you're using the **Invoice approval journal**, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
 
 ## Recovering vendor invoices that are being used
 
