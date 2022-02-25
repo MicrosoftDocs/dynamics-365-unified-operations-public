@@ -2510,6 +2510,8 @@
           items:
           - name: Block transactions by using triggers
             href: dev-itpro/trigger-example-blocking-transaction.md
+          - name: Detect abandoned carts and send notifications to customers
+            href: dev-itpro/abandoned-cart-sample-app.md
           - name: Loyalty extension sample
             href: dev-itpro/retail-sdk/loyalty-extension-sample.md
           - name: Extension points for packing slips during order fulfillment
