@@ -37,7 +37,7 @@ This article describes the pages that you use to set up basic and optional funct
 
 Before you can set up Accounts payable, you must complete the following setup:
 
--   In General ledger:
+-   In the General ledger:
     -   If you plan to use payment journals, set up payment journals.
     -   If you plan to run exchange rate adjustments, set up currency codes on the **Currencies** page, set up exchange rate types on the **Exchange rate types** page, and set up currency exchange rates on the **Currency exchange rates** page.
 -   In Cash and bank management, set up bank accounts to use with methods of payment.
