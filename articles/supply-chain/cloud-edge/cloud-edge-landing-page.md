@@ -60,9 +60,9 @@ The manufacturing workload delivers the following capabilities:
 
 For more information, see [Manufacturing execution workloads for cloud and edge scale units](cloud-edge-workload-manufacturing.md).
 
-## Considerations before you enable the distributed, hybrid topology for Supply Chain Management
+## Considerations before you enable the distributed hybrid topology for Supply Chain Management
 
-By enabling the distributed, hybrid topology, you transition your Supply Chain Management cloud environment so that it functions as a hub. You can also associate additional environments that are configured as scale units in the cloud or on the edge.
+By enabling the distributed hybrid topology, you transition your Supply Chain Management cloud environment so that it functions as a hub. You can also associate additional environments that are configured as scale units in the cloud or on the edge.
 
 ### <a name="cloud-scale-unit-prerequisites"></a>Prerequisites and limitations for cloud scale units
 
@@ -111,7 +111,7 @@ Metrics and measures that might help you select the best application for your sc
 
 ### <a name="data-processing-management"></a>Data processing during management of scale units
 
-When you enable your Dynamics 365 environment to support the distributed, hybrid topology for cloud and edge scale units, some management services will be hosted only in the United States, as for LCS. This behavior affects the transfer and storage of some administrative and configuration information that is used by the [Scale Unit Manager portal](https://sum.dynamics.com). Here are some examples:
+When you enable your Dynamics 365 environment to support the distributed hybrid topology for cloud and edge scale units, some management services will be hosted only in the United States, as for LCS. This behavior affects the transfer and storage of some administrative and configuration information that is used by the [Scale Unit Manager portal](https://sum.dynamics.com). Here are some examples:
 
 - Your tenant names and IDs
 - Your LCS project IDs
@@ -122,24 +122,24 @@ When you enable your Dynamics 365 environment to support the distributed, hybrid
 
 Data that is transferred to and stored in the US data centers will be deleted according to Microsoft data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## Onboard to the distributed, hybrid topology for Supply Chain Management
+## Onboard to the distributed hybrid topology for Supply Chain Management
 
 ### Try out the distributed hybrid topology
 
-The process of onboarding to the distributed hybrid topology has two stages. During the first stage you should [try out](cloud-edge-try-out.md) the solution and validate customizations to ensure that they work in the distributed topology that has scale units (this can be done using existing development environments) following the second stage of acquiring production environments.
+The process of onboarding to the distributed hybrid topology has two stages. During the first stage you should [try out](cloud-edge-try-out.md) the solution and validate your customizations to make sure they work in a distributed topology that includes scale units (this can be done using existing development environments), then continue to the second stage of acquiring production environments.
 
 ## Select your LCS project tenant and the detailed onboarding process
 
 Scale units are offered in multiple stock keeping units (SKUs) and pricing options. Therefore, you can choose the option that best meets your planned monthly transaction volume and performance requirements.
 > [!TIP]
-> To identify the sizing that best meets your needs, work with your partner and Microsoft to understand the monthly transaction size that you require.
+> To identify the sizing that best meets your needs, work with your implementation partner and Microsoft to understand the monthly transaction size that you require.
 
 The entry-level SKU is known as *Basic*, and the more performant SKU is known as *Standard*. Each SKU is pre-loaded with a specific number of monthly transactions. However, you can increase the monthly transaction budget by adding overage add-ins for each SKU.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units.":::
 
 > [!NOTE]
-> The scale unit add-ins aren't coupled to a limited number of users but can be used by any user in the existing subscription, based on the roles that the administrator assigns.
+> Scale unit add-ins aren't coupled to a limited number of users but can be used by any user in the existing subscription (based on the user roles assigned by the administrator).
 
 The purchase of each scale unit add-in not only gives you a monthly volume of transactions but also entitles you to a specific number of environment slots in LCS. For each Cloud Scale Unit Add-in, you're entitled to one new production slot and one new sandbox slot. During the onboarding process, a new LCS project will be added that has these slots. The usage rights for the slots are bound so that the slots must be used as scale units that have a cloud hub.
 
@@ -148,7 +148,7 @@ Overage add-ins don't entitle you to new environment slots.
 If you want to acquire more sandbox environments, you can purchase additional regular sandbox slots. Microsoft can then help you enable those slots as sandbox scale units for the hybrid topology.
 
 
-After you've finished planning how you will onboard to the distributed, hybrid topology for Supply Chain Management, you will use the [Scale Unit Manager portal](https://aka.ms/SCMSUM) to begin the onboarding process. In the portal, select the **Dynamics 365 Tenants** tab. This tab shows the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
+After you've finished planning how you will onboard to the distributed hybrid topology for Supply Chain Management, you will use the [Scale Unit Manager portal](https://aka.ms/SCMSUM) to begin the onboarding process. In the portal, select the **Dynamics 365 Tenants** tab. This tab shows the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
 
 If the tenant that you're looking for isn't in the list, go to [LCS](https://lcs.dynamics.com/v2), and make sure that you're either an environment admin or a project owner of the LCS project for that tenant. Only Azure Active Directory (Azure AD) accounts from the selected tenant are authorized to complete the sign-up experience.
 
@@ -196,7 +196,7 @@ When one or more workloads are enabled, use the **Manage workloads** option to i
 :::image type="content" source="media/sum-manage-workloads.png" alt-text="Scale unit and workload management experience.":::
 
 > [!TIP]
-> Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed, hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+> Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
