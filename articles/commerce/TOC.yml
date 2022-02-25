@@ -2444,8 +2444,6 @@
           items:
           - name: Local development environment
             href: dev-itpro/setup-local-dev-env.md
-          - name: Commerce SDK build pipeline
-            href: dev-itpro/retail-sdk/sdk-build-pipeline.md
           - name: Commerce SDK build pipeline (independent packaging)
             href: dev-itpro/build-pipeline.md
         - name: Payments
@@ -2820,6 +2818,8 @@
           items:
           - name: Development in cloud-hosted environments without admin access
             href: dev-itpro/cloud-dev-box.md
+          - name: Retail SDK build pipeline
+            href: dev-itpro/retail-sdk/sdk-build-pipeline.md
           - name: Run POS samples
             href: dev-itpro/pos-run-samples.md
         - name: Reference
