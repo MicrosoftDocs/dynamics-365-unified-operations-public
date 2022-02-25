@@ -139,7 +139,7 @@ The entry-level SKU is known as *Basic*, and the more performant SKU is known as
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units.":::
 
 > [!NOTE]
-> Scale unit add-ins aren't coupled to a limited number of users but can be used by any user in the existing subscription (based on the user roles assigned by the administrator).
+> Scale unit add-ins aren't coupled to a limited number of users. They are available to any user in your existing subscription (provided they have the required user roles assigned to them by your administrator).
 
 The purchase of each scale unit add-in not only gives you a monthly volume of transactions but also entitles you to a specific number of environment slots in LCS. For each Cloud Scale Unit Add-in, you're entitled to one new production slot and one new sandbox slot. During the onboarding process, a new LCS project will be added that has these slots. The usage rights for the slots are bound so that the slots must be used as scale units that have a cloud hub.
 
