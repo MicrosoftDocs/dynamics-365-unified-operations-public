@@ -126,11 +126,12 @@ Data that is transferred to and stored in the US data centers will be deleted ac
 
 ### Try out the distributed hybrid topology
 
-The process of onboarding to the distributed hybrid topology has two stages. During the first stage you should [try out](cloud-edge-try-out.md) the solution and validate your customizations to make sure they work in a distributed topology that includes scale units (this can be done using existing development environments), then continue to the second stage of acquiring production environments.
+The process of onboarding to the distributed hybrid topology has two stages. During the first stage, you should [try out](cloud-edge-try-out.md) the solution and validate your customizations to make sure that they work in a distributed topology that includes scale units. (You can use existing development environments to do the validation.) You can then continue to the second stage, where you acquire production environments.
 
 ## Select your LCS project tenant and the detailed onboarding process
 
 Scale units are offered in multiple stock keeping units (SKUs) and pricing options. Therefore, you can choose the option that best meets your planned monthly transaction volume and performance requirements.
+
 > [!TIP]
 > To identify the sizing that best meets your needs, work with your implementation partner and Microsoft to understand the monthly transaction size that you require.
 
@@ -139,7 +140,7 @@ The entry-level SKU is known as *Basic*, and the more performant SKU is known as
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units.":::
 
 > [!NOTE]
-> Scale unit add-ins aren't coupled to a limited number of users. They are available to any user in your existing subscription (provided they have the required user roles assigned to them by your administrator).
+> Scale unit add-ins aren't coupled to a limited number of users. They are available to any user in your existing subscription (provided that your administrator has assigned the required user roles to them).
 
 The purchase of each scale unit add-in not only gives you a monthly volume of transactions but also entitles you to a specific number of environment slots in LCS. For each Cloud Scale Unit Add-in, you're entitled to one new production slot and one new sandbox slot. During the onboarding process, a new LCS project will be added that has these slots. The usage rights for the slots are bound so that the slots must be used as scale units that have a cloud hub.
 
