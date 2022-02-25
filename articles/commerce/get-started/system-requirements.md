@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 08/23/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -201,7 +201,7 @@ As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is 
 
 ## Recommended network exceptions
 
-Often, especially within corporate environments, network related security requires specific exceptions to be noted. In these security-focused networks, the following are the minimum recommended exceptions to add to a network related whitelist:
+Often (especially within corporate environments), network-related security requires specific exceptions to be noted. In these security-focused networks, the following are the minimum recommended exceptions to add to a network-related allow list:
 
 - *.static.akamaitechnologies.com
 - *.azure.com
