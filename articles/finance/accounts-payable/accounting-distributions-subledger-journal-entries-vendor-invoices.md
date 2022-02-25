@@ -67,7 +67,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>Stocked product</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line.</li>
-<li>The Main account field when Purchase expenditure for product is selected on the <strong>Posting</strong> page.</li>
+<li>The <strong>Main account</strong> field when Purchase expenditure for product is selected on the <strong>Posting</strong> page.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
@@ -155,7 +155,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <tr class="even">
 <td>Tax, with the following condition:
 <ul>
-<li>The Apply U.S. taxation rules option is selected on the <strong>General ledger parameters</strong> page.</li>
+<li>The <strong>Apply U.S. taxation rules</strong> option is selected on the <strong>General ledger parameters</strong> page.</li>
 </ul></td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</li>
@@ -170,7 +170,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <tr class="odd">
 <td>Tax, with the following conditions:
 <ul>
-<li>The Apply U.S. taxation rules option is cleared on the <strong>General ledger parameters</strong> page.</li>
+<li>The <strong>Apply U.S. taxation rules</strong> option is cleared on the <strong>General ledger parameters</strong> page.</li>
 <li>The <strong>Use tax</strong> field for the sales tax group is cleared on the <strong>Sales tax groups</strong> page.</li>
 </ul></td>
 <td><ol>
