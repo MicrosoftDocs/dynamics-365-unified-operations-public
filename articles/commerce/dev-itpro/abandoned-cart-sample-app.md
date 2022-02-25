@@ -89,7 +89,7 @@ To set up a key vault, follow these steps.
 
 The abandoned cart connector sample code uses Azure default credentials to access Key Vault. You must provide **List** and **Read** permissions to the identity that you plan to use to access Key Vault.
 
-For more information about Azure default credentials, see [DefaultAzureCredential Class](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet).
+For more information about Azure default credentials, see [DefaultAzureCredential Class](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true).
 
 ## Create an abandoned cart connector sample app application ID for the Azure AD tenant
 
