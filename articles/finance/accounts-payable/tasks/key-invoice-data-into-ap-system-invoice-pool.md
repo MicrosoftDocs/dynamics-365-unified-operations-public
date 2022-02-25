@@ -62,7 +62,7 @@ This topic describes how to use the invoice register to create invoices. Then us
 6. Select **Change view**.
 7. Select **Grid view**.
 8. Select **Post**.
-9. Close the form.
+9. Close the page.
 10. In the navigation pane, go to **Modules > Accounts payable > Vendors > Vendors**.
 11. Select the vendor that was on the purchase order. For example, select vendor **1001**.
 12. On the action pane, select **Vendor**.
