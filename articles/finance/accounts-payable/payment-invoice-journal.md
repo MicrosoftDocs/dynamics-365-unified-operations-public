@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../includes/preview-banner.md)]
 
-In Microsoft Dynamics 365 Finance release 10.0.25, a payment schedule is now supported on the vendor invoice journal.
+In Microsoft Dynamics 365 Finance release 10.0.25, a payment schedule is now supported on the **Vendor invoice journal**.
 
 To use this functionality, you must enable the **Apply payment schedule to invoice journal** feature in Feature management.
 
@@ -38,13 +38,10 @@ After the feature is enabled, a new **Payment schedule** field is added to the *
 
 You can change the payment schedule that is used, according to your business requirement. During posting of the vendor invoice journal, vendor open transactions will be created according to the payment schedule.
 
-To review multiple vendor open transactions that were generated from the payment schedule, go to **Accounts payable \> Invoices \> Open vendor invoices**, and enter the invoice number or the vendor account.
-
-To review or configure the payment schedule, go to **Accounts payable \> Payment Setup \> Payment schedule**.
-
-To configure the payment terms and assign a payment schedule, go to **Accounts payable \> Payment setup \> Terms of payment**.
-
-To maintain the payment terms  on a vendor, go to **Accounts payable \> All vendors**, select the vendor account, and then, on the **Payment** tab, set the **Terms of payment** field.
+ - To review multiple vendor open transactions that were generated from the payment schedule, go to **Accounts payable \> Invoices \> Open vendor invoices**, and enter the invoice number or the vendor account.
+ - To review or configure the payment schedule, go to **Accounts payable \> Payment Setup \> Payment schedule**.
+ - To configure the payment terms and assign a payment schedule, go to **Accounts payable \> Payment setup \> Terms of payment**.
+ - To maintain the payment terms  on a vendor, go to **Accounts payable \> All vendors**, select the vendor account, and then, on the **Payment** tab, set the **Terms of payment** field.
 
 The payment schedule feature is also available in the **Vendor invoice register** process. If a payment schedule is selected on the invoice register journal, multiple vendor payment lines will **not** be generated when the invoice register is posted. The vendor payment lines will be generated when the invoice is approved.
 
@@ -52,4 +49,4 @@ The payment schedule feature is also available in the **Vendor invoice register*
 
 For a pending vendor invoice, if the payment schedule is on the invoice header, there is an advanced page that lets users edit the payment lines. (For example, users can edit the due date and value for each payment line.) Payment lines that are generated from the invoice journal will have the value from the payment schedule.
 
-This functionality will be available for the vendor invoice journal and pending invoices in a future release.
+This functionality will be available for the **Vendor invoice journal** and **Pending invoices** in a future release.
