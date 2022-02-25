@@ -4,7 +4,7 @@
 title: Commerce Data Exchange troubleshooting
 description: This topic provides information that will help you troubleshoot CDX in implementations.
 author: jashanno
-ms.date: 08/26/2020
+ms.date: 06/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,11 +40,11 @@ Before you go through this topic, it's important that you understand the concept
 
 ## Scenario-based usage troubleshooting
 
-The following are known scenarios where certain configurations in Headquarters could cause out-of-box CDX functionality to not achieve expected, successful results. This list will continue to improve as additional known scenarios are found:
+The following are known scenarios where certain configurations in headquarters could cause out-of-box CDX functionality to not achieve expected, successful results. This list will continue to improve as additional known scenarios are found.
 
- - When utilizing the [XDS policies](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies) feature, CDX many not function correctly: When this feature is enabled, a user many not be able to see all the Commerce channels in Headquarters. In this scenario, if this user ran a CDX job, it will only generate partial data (The data that this user is able to see). This will make the Channel database data incomplete and will likely result in an error.
- - The **RetalServiceAccount** user is altered or has XDS policies assigned to it: The **RetailServiceAccount** is an important, pre-generated account used for a variety of reasons and purposes. It is highly recommended not to alter this account in any way. If using XDS policies, do not assign any policies to this account that would reduce the data this account can see or access.
- - CDX jobs fail with timeout errors when generating upload packages: This issue occurs most frequently when custom-created transactional tables are missing an index on the **ReplicationCounterFromOrigin** column within these generated tables.
+ - When utilizing the [XDS policies](../../fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies.md) feature, CDX many not function correctly. When this feature is enabled, a user many not be able to see all the Commerce channels in headquarters. In this scenario, if the user runs a CDX job, it will only generate partial data (the data that this user is able to see). This will make the channel database data incomplete and will likely result in an error.
+ - The **RetailServiceAccount** user is altered or has XDS policies assigned to it. The **RetailServiceAccount** is an important, pregenerated account used for a variety of reasons and purposes. It is highly recommended not to alter this account in any way. If using XDS policies, do not assign any policies to this account that would reduce the data this account can see or access.
+ - CDX jobs fail with timeout errors when generating upload packages. This issue occurs most frequently when custom-created transactional tables are missing an index on the **ReplicationCounterFromOrigin** column within these generated tables.
 
 ## Error-based troubleshooting
 
