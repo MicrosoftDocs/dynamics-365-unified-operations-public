@@ -123,7 +123,7 @@ To help guarantee that the largest range of devices can be used with Commerce, t
 Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster than printing through Windows. Therefore, it's a good idea to use OPOS, especially in environments where 40-column receipts are printed and transaction times must be fast. For most devices, you will use OPOS controls. However, some OPOS receipt printers also support Windows drivers. By using a Windows driver, you can access the latest fonts and network one printer for multiple registers. However, there are drawbacks to using Windows drivers. Here are some examples of these drawbacks:
 
 -   When Windows drivers are used, images are rendered before printing occurs. Therefore, printing tends to be slower than it is on printers that use OPOS controls.
--   Devices that are connected through the printer ("daisy-chained") might not work correctly when Windows drivers are used. For example, the cash drawer might not open, or the receipt printer might not function as you expect.
+-   Devices that are connected through the printer ("daisy-chained") might not work correctly when Windows drivers are used. For example, the cash drawer might not open, or the receipt printer might not work as you expect.
 -   OPOS also supports a more extensive set of variables that are specific to receipt printers, such as paper cutting or slip printing.
 -   Windows printers are not supported through the IIS hardware station. 
 
@@ -175,7 +175,7 @@ The shared hardware station can be used to allow multiple point of sale clients 
 
 When a hardware station is used to support sharing of peripherals between multiple POS clients, only cash drawers, receipt printers, and payment terminals should be used. You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices. Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time. Here is how conflicts are managed for supported devices:
 
--   **Cash drawer** – The cash drawer is opened via an event that is sent to the device. Problems can occur if a cash drawer is called while the drawer is already open. When using a cash drawer in a shared hardware station configuration, the cash drawer should be set to **Shared** in the hardware profile. This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.
+-   **Cash drawer** – The cash drawer is opened via an event that is sent to the device. Issues can occur if a cash drawer is called while the drawer is already open. A cash drawer that is used in a shared hardware station configuration should be set to **Shared** in the hardware profile. This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.
 -   **Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device. Some devices have internal memory or pooling that can prevent this issue. If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.
 -   **Payment terminal** – If a cashier tries to tender a transaction on a payment terminal that is already being used, a message notifies the cashier that the terminal is being used and asks the cashier to try again later. Usually, cashiers can see that a terminal is already being used and will wait until the other transaction is completed before they try to tender again.
 
@@ -196,7 +196,7 @@ The logic that drives physically connected and network-addressable peripherals i
 ## Setup and configuration
 ### Hardware station installation
 
-For guidance on installing an IIS hardware station, see [Configure and install hardware station](retail-hardware-station-configuration-installation.md).
+For guidance about how to install an IIS hardware station, see [Configure and install hardware station](retail-hardware-station-configuration-installation.md).
 
 ### Modern POS for Windows setup and configuration
 
@@ -635,9 +635,9 @@ The following peripherals were tested by using the IPC hardware station that is 
 
 #### Payment terminals and PIN pads
 
-Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api), and can interact with all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
+Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal application programming interface (API)](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
-Other payment providers can also be used with Dynamics 365 Commerce by creating a custom connector. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows any payment device integration model supported by the payment provider, including local IP, cloud API, or direct connection (for example, USB) to the point of sale. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
+You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### Cash drawer
 
@@ -702,9 +702,9 @@ The following peripherals were tested by using a dedicated (not shared) IIS hard
 
 #### Payment terminals and PIN pads
 
-Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api), and can interact with all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
+Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
-Other payment providers can also be used with Dynamics 365 Commerce by creating a custom connector. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows any payment device integration model supported by the payment provider, including local IP, cloud API, or direct connection (for example, USB) to the point of sale. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
+You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### Cash drawer
 
@@ -762,9 +762,9 @@ The following peripherals were tested by using a shared IIS hardware station tog
 
 #### Payment terminal
 
-Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api), and can interact with all payment terminals that this application programming interface (API) supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
+Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
-Other payment providers can also be used with Dynamics 365 Commerce by writing a custom connector. See the [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md) help topic for more information. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows any payment device integration model supported by the payment provider, including local IP, cloud API or direct connection (e.g. USB) to the point of sale. 
+You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal that is supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### Cash drawer
 
@@ -791,7 +791,7 @@ Other payment providers can also be used with Dynamics 365 Commerce by writing a
 
 **Solution:** Either of the following factors can cause this issue:
 
--   The hardware station hasn't been set up correctly in headquarters. For more information, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md#troubleshooting). 
+-   The hardware station hasn't been set up correctly in Headquarters. For more information, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md#troubleshooting). 
 -   The jobs haven't been run to update the channel configuration. In this case, run the 1070 job for channel configuration.
 
 ### Modern POS doesn't reflect new cash drawer settings
