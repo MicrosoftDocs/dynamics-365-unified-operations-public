@@ -75,7 +75,7 @@ Microsoft will evaluate the request and register the application in the security
 If your scenarios require number sequences (for example, in file names), you can use number sequences that are defined for a specific environment, but that can be used either across Globalization features or for a specific Globalization feature. After a number sequence is defined, you can use it in variables and processing pipelines. To track its use, on the **Number sequences** page, look for a value of **Current** for the **In use** parameter.
 
 ### Working with number sequences
-On the **Number sequence** page: 
+On the **Number sequences** page: 
 
 - Select **New** to create a number sequence. Then enter a name and description. 
 - Select **Delete** to delete a number sequence if it's no longer used.
