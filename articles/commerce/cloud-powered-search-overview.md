@@ -33,7 +33,7 @@ This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 C
 
 Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across channels powered by Cloud Scale Unit (CSU), such as e-commerce and point of sale (POS).
 
-Customers are accustomed to the nearly instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, automatic suggestions that appear as they type search terms, faceted navigation, and highlighting. If customers can't find the product that they are looking for quickly enough in one e-commerce store, they won't hesitate to go to a different e-commerce store.
+Customers are accustomed to the nearly instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, automatic suggestions that appear as they type search terms, faceted navigation, and highlighting. If customers can't quickly find the product that they are looking for in one e-commerce store, they won't hesitate to go to a different e-commerce store.
 
 The cloud-powered product discoverability in Commerce helps retailers continue to increase consumer retention and conversion rates across channels powered by CSU.
 
@@ -59,7 +59,7 @@ The following illustration shows an example where faceted navigation is used in 
 
 ## Immersive autosuggest
 
-Current autosuggest functionality just shows keywords that trigger a search for the matching keyword. Because of new enhancements in Commerce, customers can often discover links to products before they have finished typing.
+Current autosuggest functionality shows keywords that trigger a search for the matching keyword. Because of new enhancements in Commerce, customers can often discover links to products before they have finished typing.
 
 Commerce also supports functionality for keyword matches in various categories. This functionality lets customers see the number of matching keywords across categories and trigger a search for a keyword in other categories.
 
@@ -72,7 +72,7 @@ The following illustration shows an example where immersive autosuggest is being
 Enhanced sorting in Commerce lets customers sort, search, and browse search results, and refine them by criteria such as price, product name, and product number. Customers can also sort results based on whether a product is new, top-selling, or recently added.
 
 > [!NOTE]
-> These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters**, there is an entry for "ProductSearch.UseAzureSearch" that is set to 'true'. 
+> These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that there is an entry for "ProductSearch.UseAzureSearch" set to 'true' in **Commerce Parameters > Configuration Parameters**. 
 ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## Additional resources
