@@ -4,7 +4,7 @@
 title: Service environments
 description: This topic provides information about service environments for Electronic invoicing and explains how to set them up.
 author: dkalyuzh
-ms.date: 02/07/2022
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -72,9 +72,10 @@ Microsoft will evaluate the request and register the application in the security
 
 ## Number sequences
 
-If your scenarios require number sequences (for example, in file names), you can use number sequences that are defined for a specific environment, but that can be used either across Globalization features or for a specific Globalization feature. After a number sequence is defined, you can use it in variables and processing pipelines. To track its use, look for a value of **Current** for the **In use** parameter.
+If your scenarios require number sequences (for example, in file names), you can use number sequences that are defined for a specific environment, but that can be used either across Globalization features or for a specific Globalization feature. After a number sequence is defined, you can use it in variables and processing pipelines. To track its use, on the **Number sequences** page, look for a value of **Current** for the **In use** parameter.
 
 ### Working with number sequences
+On the **Number sequence** page: 
 
 - Select **New** to create a number sequence. Then enter a name and description. 
 - Select **Delete** to delete a number sequence if it's no longer used.
