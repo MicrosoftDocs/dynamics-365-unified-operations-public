@@ -3,7 +3,7 @@
 
 title: Example for generic European Union (EU) sales list
 description: This topic provides information on how to set up and transfer a European Union (EU) sales list.
-author: AKroshikina
+author: AKroshkina
 ms.date: 02/28/2022
 ms.topic: article
 ms.prod: 
