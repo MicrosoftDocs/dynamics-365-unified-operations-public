@@ -201,14 +201,14 @@ As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is 
 
 ## Recommended network exceptions
 
-Often (especially within corporate environments), network-related security requires specific exceptions to be noted. In these security-focused networks, the following are the minimum recommended exceptions to add to a network-related allow list:
+Often (especially in corporate environments), network-related security requires that specific exceptions be noted. In these security-focused networks, we recommend that you add, at a minimum, the following exceptions to a network-related allow list:
 
-- *.static.akamaitechnologies.com
-- *.azure.com
-- *.dynamics.com
-- *.microsoft.com
-- *.visualstudio.com
-- *.windows.net
+- \*.static.akamaitechnologies.com
+- \*.azure.com
+- \*.dynamics.com
+- \*.microsoft.com
+- \*.visualstudio.com
+- \*.windows.net
 
 ## Requirements for development on local VMs
 
