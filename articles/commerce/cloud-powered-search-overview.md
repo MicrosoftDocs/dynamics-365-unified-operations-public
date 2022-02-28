@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 
-Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across all channels.
+Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across Cloud scale-unit (CSU) powered channels like e-Commerce and point of sale (POS) channels.
 
 Customers are accustomed to the nearly instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, automatic suggestions that appear as they type search terms, faceted navigation, and highlighting. If customers can't find the product that they are looking for quickly enough in one e-Commerce store, they won't hesitate to go to a different e-Commerce store.
 
-The cloud-powered product discoverability in Dynamics 365 Commerce helps retailers continue to increase consumer retention and conversion rates across all channels, both e-Commerce channels and point of sale (POS) channels.
+The cloud-powered product discoverability in Dynamics 365 Commerce helps retailers continue to increase consumer retention and conversion rates across Cloud scale-unit (CSU) powered channels like e-Commerce and point of sale (POS) channels.
 
 The Dynamics 365 Commerce search experience has improved capabilities to help retailers achieve better product discoverability. At the same time, these capabilities deliver the scalability and performance that are required for e-Commerce traffic.
 
