@@ -4,7 +4,7 @@
 title: Design a new ER solution to print ZPL labels
 description: This topic explains how to design a new Electronic reporting (ER) solution to print Zebra Programming Language (ZPL) labels.
 author: NickSelin
-ms.date: 02/15/2022
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,7 +51,7 @@ Create a new ER configuration that contains a [data model](er-overview-component
 
 Follow these steps to import the required data model from an XML file that is provided by Microsoft. Alternatively, you can create your own data model as described in the next section.
 
-1. Download the [Warehouse model.version.1.xml](https://download.microsoft.com/download/b/.../Warehouse_model.version.1.xml) file, and save it to your local computer.
+1. Download the [Warehouse model.version.1.xml](https://download.microsoft.com/download/9/f/1/9f136e9b-bf5f-403a-b089-a2b2ed1da2ba/Warehouse-model.version.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -78,7 +78,7 @@ As a user in the Electronic Reporting Developer role, you must create a new ER c
 
 Follow these steps to import the required model mapping from an XML file that is provided by Microsoft. Alternatively, you can create your own model mapping as described in the next section.
 
-1. Download the [Warehouse model mapping.version.1.1.xml](https://download.microsoft.com/download/b/.../Warehouse_model_mapping.version.1.xml) file, and save it to your local computer.
+1. Download the [Warehouse model mapping.version.1.1.xml](https://download.microsoft.com/download/1/c/c/1cc94d28-3d90-4ffd-a118-77d6c322904f/Warehouse-model-mapping.version.1.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -105,7 +105,7 @@ As a user in the Electronic Reporting Functional Consultant role, you must creat
 
 Follow these steps to import the required format from an XML file that is provided by Microsoft. Alternatively, you can create your own format as described in the next section.
 
-1. Download the [Warehouse location labels.version.1.1.xml](https://download.microsoft.com/download/b/.../Warehouse_location_labels.version.1.1.xml) file, and save it to your local computer.
+1. Download the [Warehouse location labels.version.1.1.xml](https://download.microsoft.com/download/5/7/5/5758b551-69a5-45bd-a2b2-21c3db73a6fc/Warehouse-location-labels.version.1.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
