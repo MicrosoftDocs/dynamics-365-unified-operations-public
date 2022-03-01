@@ -69,8 +69,7 @@ To monitor the progress of the site copy operation, follow these steps.
 
 1. Sign in to site builder for the destination e-commerce environment. 
 1. In the left-side pane, select **Tenant jobs**. 
-1. Under **Tenant jobs**, locate and select your site copy job from the list. 
-1. The right-side pane will appear showing the status and the details of the selected job.
+1. Under **Tenant jobs**, locate and select your site copy job from the list. A right-side pane appears that shows the status and the details of the selected job.
 
 Jobs that show a status of **In progress** can be canceled by selecting the job and then selecting **Cancel** on the action bar. 
 
