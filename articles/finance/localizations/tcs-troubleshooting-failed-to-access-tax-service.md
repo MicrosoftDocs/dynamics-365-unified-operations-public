@@ -50,7 +50,7 @@ This section describes the symptom being experienced as a result of the error.
 
 1. Go to the *Finance and Operation* LCS page.
 2. In the **Power platform integration** section, click **Install a new add-in**
-3. Scorll to the end, add select the **Tax Calculation** to install.
+3. Scorll down to the end of the form, and select add-in **Tax Calculation** to install.
 4. Then go to *Finance and Operation* to try again.
 
 ## Note
