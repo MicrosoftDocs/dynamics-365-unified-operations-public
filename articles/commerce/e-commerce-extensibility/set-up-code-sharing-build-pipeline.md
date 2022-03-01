@@ -202,6 +202,13 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     !["Artifacts" page showing the pipeline run zip file under the expanded "Drop" folder](media/code-sharing-24.png)
 
+## Increase Node memory size
+The default memory setting should be sufficient for most customization scenarios. However, if your application needs more heap space (ie: if you see a "JavaScript heap out of memory" build error) you can specify the environment variable in the scripts section of the package.json file by adding --max_old_space_size=4096, as shown in the following example:
+
+```json
+"build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
+```
+
 ## Additional resources
 
 [Get started with e-commerce online extensibility development](sdk-getting-started.md)
