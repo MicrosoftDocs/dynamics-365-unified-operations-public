@@ -1427,7 +1427,7 @@
             - name: Work with configurations
               href: localizations/e-invoicing-work-configurations.md
             - name: Work with feature setup
-              href: localization/e-invoicing-feature-setup.md?toc=/dynamics365/finance/toc.json
+              href: localizations/e-invoicing-feature-setup.md?toc=/dynamics365/finance/toc.json
             - name: Complete, publish, and deploy a Globalization feature
               href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
             - name: Share with other organizations
