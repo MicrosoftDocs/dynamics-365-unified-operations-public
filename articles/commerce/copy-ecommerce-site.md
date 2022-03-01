@@ -43,6 +43,8 @@ To copy a site within an e-commerce environment, follow these steps.
 
 After the information has been validated, a notification appears indicating that a new site copy job has been created. Job progress can be monitored from the [right-side pane of the **Tenant jobs** page](#monitor-the-site-copy-operation). When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
 
+The following illustration shows an example of the **Copy site** dialog box in site builder.
+
 ![Copy site dialog box in site builder](media/site-copy_1.png)
 
 ## Copy a site between two different e-commerce environments 
@@ -77,6 +79,8 @@ If a job shows a status of **Failed** or **Completed with errors**, the job can 
 > [!NOTE]
 > Video assets might still be processing after a site copy job finishes.
 
+The following illustration shows an example of the right-side pane of the **Tenant jobs** page in site builder.
+
 ![Tenant jobs page in site builder showing job details in the right-side pane](media/site-copy_2.png)
 
 ## Initialize a new site using the first run experience (FRE) process 
@@ -93,6 +97,8 @@ To initialize a new site using FRE, follow these steps.
 1. For **Select a default language**, select the default authoring language from the drop-down list. The drop-down list is populated with the languages that are configured for the selected online store channel. 
 1. For **Site path**, the value consists of the base domain and optional URL path. You may leave the path empty if the channel will be served from the domain root, or if you want to enter this information later in the channel configuration view in the site builder. The site path must be unique for the e-commerce environment. 
 1. Select **OK**. Your site will be initialized with the information you provided, and you will be sent to the site management view.
+
+The following illustration shows an example of the **Setup your site** dialog box in site builder.
 
 ![Setup your site dialog box showing fields in site builder](media/site-copy_3.png)
 
