@@ -48,9 +48,11 @@ This section provides information about the fields that are required on the **Tr
 ![Transportation details page.](media/latam-mx-transportation-details.png)
 
 > [!NOTE]
-> Starting from version ...  you can fill in **Loading date and time** and **Name** (shipment address) on **Transportation details** page (**Loading** FastTab). If **Loading date and time** field is empty, the system selects the value from the transaction. If **Name** (shipment address) is empty, the system selects the value from warehouse/ site address.
-> Weight unit
-> Transportation actors     
+> Starting from version 10.0.23 (build 10.0.1037.160)  you can fill in **Loading date and time** and **Name** (shipment address) on **Transportation details** page (**Loading** FastTab). If **Loading date and time** field is empty, the system selects the value from the transaction. If **Name** (shipment address) is empty, the system selects the value from warehouse/ site address.
+> 
+> Also starting from version 10.0.23 (build 10.0.1037.149) a user can select **Weight unit**. Before this implementation, weight unit **XAG** has been set as a fixed value in a xml file. If the value in this field is empty then the corresponding attribute is filled in with **XAG** in xml file.   
+> 
+> Starting from version 10.0.23 (build 10.0.1037.144) in addition to the data for two drivers, the user can fill in Transportation actors (**Transportation actors** button on Action pane). First the Actors catalog should be filled in (**Organization administration** \> **Setup** \> **SAT clarification** \> **Transportation**).      
 
 ### General FastTab
 
