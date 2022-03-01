@@ -58,5 +58,5 @@ Share the tax feature to the tenant of *Finance and Operation* in *Regulatory Co
 1. Go to *Regulatory Configuration Service*
 2. Globalization features > Tax Calculation.
 3. Focus on the feature which you want to share. go to the tab **Organizations** which is after **Versions**.
-![image.png](../.attachments/ShareTaxFeature.png)
+![image.png](media/ShareTaxFeature.png)
 4. Click Share with, and fill the **Organization domain name**, like **contoso.onmicrosoft.com**
