@@ -54,7 +54,7 @@ This section describes the symptom being experienced as a result of the error.
 4. Then go to *Finance and Operation* to try again.
 
 ## Note
-1. Before doing install, you need to check the [Tax Caclualtion Service Prerequisites](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview).
+1. Before doing install, you need to check the [Tax Caclualtion Service Prerequisites](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-get-started-with-tax-calculation-service?toc=/dynamics365/finance/toc.json#prerequisites).
 1. If **Power platform integration** section is not avaliable to install add-in, please refer to [Add-in overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview).
 2. If you still face the error after installing the Add-in, please contact your system administrator.
 
