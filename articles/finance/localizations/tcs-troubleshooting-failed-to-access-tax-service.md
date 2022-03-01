@@ -34,7 +34,7 @@ This section describes the symptom being experienced as a result of the error.
 
 1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax service parameter**
 2. Open the **General** tab, enable the switch name **Enable tax calculation**, then select the dropdown list of **Feature setup name**.
-3. An error message pop out as **Failed to access tax service**. 
+3. An error message pops out as **Failed to access tax service**. 
 
 ## Cause
 
