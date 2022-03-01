@@ -160,7 +160,7 @@ The following transactions are illustrated in the graphic that follows:
 
 The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the direct settlement principle with the **Include physical value** option.
 
-![Weighted average DS with Include physical value.](media/WeightedAverageDateDirectSettlementWithIncludePhysicalValueV2.png)
+![Weighted average direct settlement with Include physical value.](media/WeightedAverageDateDirectSettlementWithIncludePhysicalValueV2.png)
 
 **Key to diagram**
 
@@ -204,7 +204,7 @@ The following transactions are illustrated in the graphic that follows:
 
 The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the summarized settlement principle without the **Include physical value** option.
 
-![Weighted average summarize settlement with Include physical value.](media/WeightedAverageDateSummarizedSettlementWithIncludePhysicalValueV2.png)
+![Weighted average summarized settlement with Include physical value.](media/WeightedAverageDateSummarizedSettlementWithIncludePhysicalValueV2.png)
 
 **Key to diagram**
 
