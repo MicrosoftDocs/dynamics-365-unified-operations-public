@@ -4,7 +4,7 @@
 title: Copy an e-commerce site
 description: This topic describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-ms.date: 02/24/2022
+ms.date: 03/01/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -41,9 +41,9 @@ To copy a site within an e-commerce environment, follow these steps.
 1. In the **Copy site** dialog box, under **New site name**, enter the name for the new site. The new site name must be unique for the e-commerce environment. Note that the **Source tenant** and **Source site** fields are autopopulated with the current tenant and selected site information. 
 1. Select **Create copy**.” 
 
-After the information has been validated, a notification appears indicating that a new site copy job has been created. Job progress can be monitored from the [site copy job monitoring view](#monitor-the-site-copy-operation). When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
+After the information has been validated, a notification appears indicating that a new site copy job has been created. Job progress can be monitored from the [right-side pane of the **Tenant jobs** page](#monitor-the-site-copy-operation). When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
 
-![Copy site dialog box in site builder](media/copy-site_1.png)
+![Copy site dialog box in site builder](media/site-copy_1.png)
 
 ## Copy a site between two different e-commerce environments 
 
@@ -59,14 +59,14 @@ To copy a site between two different e-commerce environments, follow these steps
 > [!NOTE]
 > Tenant administrator permissions are required for both the source and destination e-commerce environments. 
 
-After the information has been validated, a notification appears indicating that a new site copy job has been created. Progress of the job can be monitored from the [site copy job monitoring view](#monitor-the-site-copy-operation). When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
+After the information has been validated, a notification appears indicating that a new site copy job has been created. Progress of the job can be monitored from the [right-side pane of the **Tenant jobs** page](#monitor-the-site-copy-operation). When the copy operation has successfully finished, the new site will appear in the list of sites in site list view. 
 
 ## Monitor the site copy operation 
 
 To monitor the progress of the site copy operation, follow these steps. 
 
 1. Sign in to site builder for the destination e-commerce environment. 
-1. Navigate to **Site copy jobs**. 
+1. In the left-side pane, select **Tenant jobs**. 
 1. Under **Tenant jobs**, locate and select your site copy job from the list. 
 1. The right-side pane will appear showing the status and the details of the selected job.
 
@@ -77,7 +77,7 @@ If a job shows a status of **Failed** or **Completed with errors**, the job can 
 > [!NOTE]
 > Video assets might still be processing after a site copy job finishes.
 
-![Tenant jobs page in site builder showing job details in the right-side pane](media/copy-site_2.png)
+![Tenant jobs page in site builder showing job details in the right-side pane](media/site-copy_2.png)
 
 ## Initialize a new site using the first run experience (FRE) process 
 
@@ -94,7 +94,7 @@ To initialize a new site using FRE, follow these steps.
 1. For **Site path**, the value consists of the base domain and optional URL path. You may leave the path empty if the channel will be served from the domain root, or if you want to enter this information later in the channel configuration view in the site builder. The site path must be unique for the e-commerce environment. 
 1. Select **OK**. Your site will be initialized with the information you provided, and you will be sent to the site management view.
 
-![Setup your site dialog box showing fields in site builder](media/copy-site_3.png)
+![Setup your site dialog box showing fields in site builder](media/site-copy_3.png)
 
 ## Additional resources
 
