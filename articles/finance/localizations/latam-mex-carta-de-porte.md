@@ -178,7 +178,7 @@ After you enable the feature, follow these steps to enter additional hazardous m
 > [!NOTE] 
 > To select values for the **Regulation code** and **Packing group** fields, first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordence with the SAT catalogs **c_MaterialPeligroso** and **c_TipoEmbalaje** which are located under **Product information management** > **Setup** > **Hazardous material shipping documentation**.    
 
-> [!NOTE] Starting from version ..... you can handling with **Display hazardous status** option (Add matrialPeligrosso attribute to xml document). You can set **Hazardous materials** option to **Yes**, if this **Display hazardous status** option is set to **Yes**. 
+> [!NOTE] Starting from version 10.0.23 (build 10.0.1037.149) you can handling with **Display hazardous status** option (adding matrialPeligrosso attribute to xml document). You can set **Hazardous materials** option to **Yes**, if this **Display hazardous status** option is set to **Yes**. 
 
    ![Item hazardous materials page.](media/latam-mx-hazardous2.png)
 
