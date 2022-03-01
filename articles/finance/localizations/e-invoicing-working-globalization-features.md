@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Working with Globalization feature components
-description: This topic provides overview of the Globalization feature components.
+title: Globalization feature components
+description: This topic provides an overview of Globalization feature components.
 author: dkalyuzh
 ms.date: 02/11/2022
 ms.topic: article
@@ -27,23 +27,24 @@ ms.dyn365.ops.version:
 
 ---
 
-# Working with Globalization feature components
+# Globalization feature components
 
 [!include [banner](../includes/banner.md)]
 
-The Globalization feature is a set of components that define the rules of data transformation in Electronic reporting configurations. The components are a set of instructions to process electronic documents and then send them to or receive them from external channels. The components also include the conditions that define when a feature should be executed for the incoming business data.
-All of the components are dependent on each other. With the Globalization feature, it's easy to create and maintain this dependency, and support lifecycle management and versioning of the set of these components.
+A Globalization feature is a set of components that define the rules for data transformation in Electronic reporting (ER) configurations. These components include instructions for processing electronic documents and then sending them to or receiving them from external channels. They also include conditions that define when a feature should be run for the incoming business data.
 
-## Electronic invoicing feature components 
+All the components depend on each other. Globalization features make it easy to create and maintain this dependency, and to support lifecycle management and versioning of the set of components.
 
-1. Sign in to your Regulatory configuration service (RCS) account.
+## Access Electronic invoicing feature components 
+
+1. Sign in to your Regulatory Configuration Service (RCS) account.
 2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 
-   The Globalization feature has the following components.
-	
-	- **Version** - This component supports feature lifecycle management. You can use this component to manage the status for different versions of the feature.	
-	- **Configurations** - This component lets you manage, view, and edit related Electronic reporting (ER) format and format mapping configurations used in the processing pipeline.
-	-  **Setups** - This component lets users of Globalization services, such as an e-invoicing service, manage the setup of the related feature version. Therefore, it supports the flexible construction of communication and responses rules.	
-	- **Environments** - This component lets users of Globalization services, such as the e-invoicing service, manage the environment where the feature version setup is used and grant authorization to the users who will have access to it.	
-	- **Organizations** - This component lets users to share the feature with external organizations.	
-	- **Tags** - This component lets you to tag features that can be used in the Globalization blueprint for the reference.
+    Globalization features have several components. The **Electronic invoicing features** page includes a separate tab for each component.
+
+    - **Version** – This component supports lifecycle management of the feature. You can use it to manage status for different versions of the feature.
+    - **Configurations** – This component lets you manage, view, and edit related ER format and format mapping configurations that are used in the processing pipeline.
+    - **Setups** – This component lets users of Globalization services, such as an e-invoicing service, manage the setup of the related feature version. Therefore, it supports the flexible construction of communication and responses rules.
+    - **Environments** – This component lets users of Globalization services, such as an e-invoicing service, manage the environment where the feature version setup is used. It also lets them grant authorization to the users who will have access to the feature version setup.
+    - **Organizations** – This component lets users share the feature with external organizations.
+    - **Tags** – This component lets you tag features that can be used in the Globalization blueprint for the reference.
