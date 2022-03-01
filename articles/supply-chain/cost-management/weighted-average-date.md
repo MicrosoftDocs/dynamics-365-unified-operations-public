@@ -39,7 +39,7 @@ You can override the weighted average date principle by marking inventory transa
 
 The weighted average date inventory costing method is calculated by the following formula each day:
 
-![Weighted average formula](./media/weightedaverageformula.gif) 
+![Weighted average formula](./media/WeighteAverageFormula.gif) 
 
 The weighted average cost is equal to the beginning quantity times beginning price plus the sum of each receipt quantity times it’s receipt price all divided by the beginning quantity plus the sum of the receipt quantity.
 
@@ -160,7 +160,7 @@ The following transactions are illustrated in the graphic that follows:
 
 The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the direct settlement principle with the **Include physical value** option.
 
-![Weighted average DS with Include physical value.](media/weighted-average-direct-settlement-with-include-physical-value.png)
+![Weighted average DS with Include physical value.](media/WeightedAverageDateDirectSettlementWithIncludePhysicalValueV2.png)
 
 **Key to diagram**
 
