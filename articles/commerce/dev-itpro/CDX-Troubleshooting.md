@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.12
 
 This topic is intended for IT personas that are implementing functionality that is related to data synchronization (Commerce Data Exchange \[CDX\]) in a Microsoft Dynamics 365 Commerce environment. It provides information that will help you troubleshoot CDX in implementations.
 
-## Overview
-
 Data configuration and synchronization are crucial to correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synced, the whole environment is effectively useless. Therefore, it's crucial that you understand the process of troubleshooting any issue that is related to data synchronization, from Commerce headquarters, through the Commerce Scale Unit, to the brick-and-mortar stores that use Modern POS (either with or without an offline database) and other in-store components. This topic provides some general guidance about how to mitigate or fix some issues. It also provides information about the best time to create a support request and the most important data to provide if you want to speed up a support request.
 
 Before you go through this topic, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. Therefore, we recommend that you review some of the resources at the end of this topic, such as the CDX implementation guide and the overview of the Commerce architecture.
