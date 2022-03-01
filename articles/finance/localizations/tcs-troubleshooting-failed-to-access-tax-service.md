@@ -44,7 +44,7 @@ This section describes the symptom being experienced as a result of the error.
 
 1. Go to customer's LCS environment page, go to **Environment add-ins** tab, check the **Tax Calclation** item.
 2. Check the status, it should be either **Installing** or **Installed**
-3. If tax calculation service add-in is not installed, you will facing the error.
+3. If tax calculation service add-in is not installed, you will face the error.
 
 ## Mitigation
 
