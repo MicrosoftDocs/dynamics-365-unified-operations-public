@@ -63,6 +63,7 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 - Canada
 - Europe
 - Japan
+- Switzerland
 - United Kingdom
 - United States
 
@@ -141,6 +142,11 @@ The following transactions are supported in version 10.0.23:
 
 - Free text invoice
 
+The following transactions are supported in version 10.0.26 with limitation, see detail supported scope here [Tax calculation data model](https://go.microsoft.com/fwlink/?linkid=2188686): 
+
+- General journal
+- Vendor invoice journal
+
 ## Supported countries/regions
 
 Tax Calculation can be enabled by legal entity. 
@@ -192,6 +198,12 @@ The following countries/regions for a legal entity's primary address are support
 The following countries/regions for a legal entity's primary address are supported in version 10.0.24:
 
 - Mexico
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.26:
+
+- China
+- Czech Republic
+- Spain
 
 ## Related resources
 
