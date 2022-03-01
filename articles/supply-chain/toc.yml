@@ -343,7 +343,7 @@
             - name: Power Platform plug-in admin reference
               href: localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/supply-chain/toc.json
             - name: Electronic Invoicing FAQ
-             href: localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+              href: localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
