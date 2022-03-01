@@ -4,7 +4,7 @@
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
 author: BrianShook
-ms.date: 02/24/2022
+ms.date: 03/01/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
