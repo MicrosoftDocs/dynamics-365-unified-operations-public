@@ -2032,6 +2032,8 @@
           href: localizations/emea-entry-certificates.md
         - name: EU sales list reporting
           href: localizations/emea-eu-sales-list.md
+        - name: Example for generic European Union (EU) sales list
+          href: localizations/emea-eu-sales-list-example.md
         - name: Exchange rate adjustments
           href: localizations/emea-exchange-rate-adjustments.md
         - name: File formats for methods of payment
