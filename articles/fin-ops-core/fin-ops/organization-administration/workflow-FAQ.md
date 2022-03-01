@@ -4,7 +4,7 @@
 title: Workflow FAQ
 description: This topic answers frequently asked questions about the workflow system.
 author: ChrisGarty 
-ms.date: 09/21/2020
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
