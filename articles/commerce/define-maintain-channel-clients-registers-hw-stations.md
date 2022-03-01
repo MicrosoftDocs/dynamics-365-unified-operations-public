@@ -4,7 +4,7 @@
 title: Connect peripherals to the point of sale (POS)
 description: This topic covers how to connect peripherals to your Retail POS.
 author: BrianShook
-ms.date: 02/24/2022
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
