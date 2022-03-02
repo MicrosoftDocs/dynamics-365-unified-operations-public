@@ -242,32 +242,108 @@
           items: 
           - name: Electronic Invoicing overview
             href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Electronic Invoicing administration components
-            href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Configure Electronic Invoicing in Regulatory Configuration Services (RCS)
-            href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Issue electronic invoices in Finance and Supply Chain Management
-            href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Create an Azure storage account and a Key Vault
-            href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Usage management dashboard
-            href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Get started 
+          - name: Electronic Invoicing administration and integration components
+            href: ../finance/localizations/e-invoicing-administration-integration-components.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Set up Electronic Invoicing
+            items: 
+            - name: Setting up Electronic Invoicing
+              href: ../finance/localizations/e-invoicing-set-up-overview.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Sign up and install Electronic Invoicing
+              items: 
+              - name: Electronic Invoicing sign up and installation overview
+                href: ../finance/localizations/e-invoicing-sign-up-install.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Install the add-in for microservices in Lifecycle Services
+                href: ../finance/localizations/e-invoicing-install-add-in-microservices-lcs.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Set up Regulatory configuration services (RCS)
+                href: ../finance/localizations/e-invoicing-set-up-rcs.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Power platform plug-in admin reference
+                href: ../finance/localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/supply-chain/toc.json   
+            - name: Set up Azure Resources
+              items:
+              - name: Set up Azure resources for Electronic invoicing
+                href: ../finance/localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Create an Azure Key Vault in the Azure portal
+                href: ../finance/localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Create an Azure storage account in the Azure portal
+                href: ../finance/localizations/e-invoicing-create-azure-storage-account-azure-portal.md
+              - name: Configure a SharePoint connection
+                href: ../finance/localizations/e-invoicing-create-sharepoint-connection.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Set up environments
+              items:
+              - name: Configure service environments and connected applications
+                href: ../finance/localizations/e-invoicing-configure-service-environments-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Service environments
+                href: ../finance/localizations/e-invoicing-service-environments.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Customer certificates and secrets
+                href: ../finance/localizations/e-invoicing-customer-certificates-secrets.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Connected applications
+                href: ../finance/localizations/e-invoicing-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Work with Globalization features
             items:
+            - name: Work with Globalization features overview
+              href: ../finance/localizations/e-invoicing-working-globalization-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Import a feature from the Global repository
+              href: ../finance/localizations/e-invoicing-import-feature-global-repository.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Create a new Globalization feature
+              href: ../finance/localizations/e-invoicing-create-new-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Work with configurations
+              href: ../finance/localizations/e-invoicing-work-configurations.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Work with feature setup
+              href: ../finance/localizations/e-invoicing-feature-setup.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Complete, publish, and deploy a Globalization feature
+              href: ../finance/localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Share with other organizations
+              href: ../finance/localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Process incoming electronic documents
+              items: 
+              - name: Processing incoming electronic documents
+                href: ../finance/localizations/e-invoicing-process-incoming-electronic-documents.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Configure an email channel
+                href: ../finance/localizations/e-invoicing-configure-email.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Configure a SharePoint channel
+                href: ../finance/localizations/e-invoicing-configure-sharepoint-channel.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+              items: 
+              - name: Activate and set up integration with Electronic Invoicing
+                href: ../finance/localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Set up Electronic Invoicing parameters
+                href: ../finance/localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/supply-chain/toc.json
+              - name: Work with Electronic Invoicing
+                items:
+                - name: Submit electronic documents to Electronic Invoicing
+                  href: ../finance/localizations/e-invoicing-submit-electronic-documents.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Work with the Electronic documents submission log
+                  href: ../finance/localizations/e-invoicing-submission-log.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Work with the Electronic documents receiving log
+                  href: ../finance/localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Country-specific scenarios
+            items:
+            - name: Availability of Electronic Invoicing features
+              href: ../finance/localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing service administration
               href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing
               href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Create a new Electronic invoicing feature
+              href: ../finance/localizations/e-invoicing-create-new-e-invoicing-feature.md
             - name: Get started with Electronic Invoicing for Brazil
               href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing for Egypt
               href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Get started with Electronic invoicing for Saudi Arabia
+              href: ../finance/localizations/e-invoicing-sa-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Setup direct integration of Italian FatturaPA with SDI
+              href: ../finance/localizations/e-invoicing-ita-fatturapa-get-started.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Use the electronic invoicing service to import vendor invoices
+              href: ../finance/localizations/e-invoicing-get-started-import-vendor-invoices.md?toc=/dynamics365/supply-chain/toc.json
             - name: Set up Electronic Invoicing
               href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Electronic Invoicing FAQ
-            href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Power Platform plug-in admin reference
+              href: ../finance/localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Electronic Invoicing FAQ
+              href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
