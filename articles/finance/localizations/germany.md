@@ -63,10 +63,7 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 
 
 ## Reports for Germany
-
-| Report                     |  Description  |How to get to the report |
-|----------------------------|--------------------------|----------------------------------------|
-|German journal list report|The **German journal list** report displays a list of transactions, sorted by journal sequence number, that result from running the journalizing function. This report is used to review the status of general ledger processes. This report is typically used by chief executive officers, chief financial officers, compliance managers, accounting managers, accounting supervisors, and financial controllers. For more information, see [German journal list report](emea-deu-journal-list-report.md).|  **General ledger** > **Periodic** > **Journals** > **Ledger journal** > **German journal list**|
+[German journal list report](emea-deu-journal-list-report.md).
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)
