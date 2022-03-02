@@ -4,7 +4,7 @@ description: This topic provides information about cloud and edge scale units fo
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -28,8 +28,8 @@ Companies that work with manufacturing and distribution must be able to run key 
 
 A distributed hybrid topology introduces the concept of *scale units*, which enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through the following add-ins for your Supply Chain Management subscription:
 
-- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available April 2021*)
-- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available soon*)
+- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
+- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
 
 Workload capabilities are being released on a continuous basis through incremental enhancements.
 
@@ -47,21 +47,11 @@ You can configure your hub environment and cloud scale units for selected worklo
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
-The warehouse management workload is the first distributed workload for scale units that has been released for general availability.
-
-For warehouse management, scale units deliver the following capabilities:
-
-- The system can process selected wave methods for sales orders and demand replenishment.
-- Warehouse workers can run sales and demand replenishment warehouse work by using the Warehouse Management mobile app.
-- Warehouse workers can inquire into on-hand inventory by using the Warehouse Management mobile app.
-- Warehouse workers can create and run inventory movements by using the Warehouse Management mobile app.
-- Warehouse workers can register purchase orders and do putaway by using the Warehouse Management mobile app.
-
-For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
+The warehouse management workload enables your warehouse operations to scale and run in a resilient environment by using isolated maintenance windows. The warehouse management workload supports most enterprise hub warehouse management processes. For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
 
 ### Dedicated manufacturing execution workload capabilities in a scale unit
 
-The first release of the manufacturing workload is currently in preview and delivers the following capabilities:
+The manufacturing workload delivers the following capabilities:
 
 - Machine operators and shop floor supervisors can access the operational production plan.
 - Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
@@ -187,20 +177,58 @@ Microsoft will review your request and inform you about the next steps by sendin
 
 After the onboarding is completed, you can use the port to configure scale units and workloads.
 
-### <a name="scale-unit-manager-portal"></a>Manage cloud scale units and workloads by using the Scale Unit Manager portal
+### <a name="scale-unit-manager-portal"></a>Manage scale units and workloads by using the Scale Unit Manager portal
 
 Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM), and sign in by using your tenant account. On the **Configure scale units** page, you can add a hub environment if it isn't already listed. You can then select the hub that you want to configure with scale units and workloads.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unit and workload management experience.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit Manager portal, Configure scale units page.":::
 
 To add one or more scale units that are available in your subscriptions, select **Add scale units**.
 
 On the **Defined workloads** tab, use the **Create workload** button to add a warehouse management workload to one of your scale units. For each workload, you must specify the context of the processes that will be owned by the workload. For warehouse management workloads, the context is a specific warehouse in a specific site and legal entity.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Workload creation.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Define workloads dialog.":::
+
+#### <a name="manage-workloads"></a>Manage workloads
+
+When one or more workloads are enabled, use the **Manage workloads** option to initiate and manage processes such as those that are listed in the following table.
+
+| Process | Description |
+|---|---|
+| Pause scale unit communication | Pause pipeline messages between the hub and a scale unit. This process will stop the communication and drain the data pipeline between the hub and scale units. You must run this process before you run a Supply Chain Management servicing operation on either the hub or the scale unit, but you may also use this in other situations. |
+| Resume scale unit communication | Resume pipeline messages between the hub and a scale unit. You might have to use this process, for example, after you run a Supply Chain Management servicing operation on either the hub or the scale unit. |
+| Upgrade workloads | Sync new functionality between the hub and scale unit workloads. You might have to use this process, for example, when servicing has caused the data exchange queries to change, and/or has added new tables or fields to the workload. |
+| Transfer workloads to a scale unit | Schedule a workload that is currently running on the hub to be moved to a scale unit. When this process is run, the synchronization of data will flow, and both the hub and the scale unit will be set to change the ownership of the workload. |
+| Transfer scale unit to the hub | Schedule a workload that is currently running on a scale unit to be moved to the hub. When this process is run, the synchronization of data will flow, and both the hub and the scale unit will be set to change the ownership of the workload.
+| Emergency transition to hub | <p>Immediately transfer an existing workload to the hub. *This process will change the ownership of only the data that is currently available on the hub.*</p><p><strong>Warning:</strong> This process can cause data loss for unsynchronized data and failure of business processing. Therefore, it should be used only in emergencies, where business processes must be processed on the hub because the scale unit has an outage that can't be mitigated within a reasonable time.</p> |
+| Decommission distributed topology | Remove a scale unit deployment and run only on the hub, without workload processing. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Scale unit and workload management experience.":::
 
 > [!TIP]
-> Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed, hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+> Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+
+## Feature management considerations for workloads
+
+This section explains some important aspects that you should consider when you install workloads, add features, or remove features in a distributed hybrid topology deployment. Several scenarios can influence whether you will have to run a [workload upgrade](#manage-workloads) after you make changes. However, you will usually have to do so when you update or add new data exchange queries, and/or when you add new tables or fields to a previously installed workload.
+
+### Mandatory features for installing a workload
+
+When you install a workload, the installation process creates a workload definition that contains information about the data tables that are used when data is synced between the two deployments. The creation of a workload definition is automatically handled based on the features that are currently enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). The following table lists the features that must be enabled to generate the workload definitions that are required to run a warehouse or manufacturing workload.
+
+| Mandatory feature | Workload |
+|---|---|
+| Automatic assigning of the guids on WHS user creation | Warehouse |
+| Organization-wide work blocking | Warehouse |
+| Shipment wave label details | Warehouse |
+| Scale unit support for warehouse app work lists | Warehouse |
+| Production floor execution | Manufacturing |
+
+When you deploy a workload by using the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) or the [scale unit manager portal](https://sum.dynamics.com), all the mandatory features will automatically be enabled. However, if you do a manual test deployment that is missing one or more mandatory features, the workload installation will fail, and you will receive a message that lists the missing features. You must then manually enable those features and retrigger the workload installation.
+
+### Enabling or disabling features that have data synchronization dependencies
+
+Features that affect the selection of data that is synced between the hub and its scale units also affect how the workload definition is created. Therefore, it's important that these features be enabled before you install the workload. If you enable this type of feature while you're running a workload, you must regenerate the workload definition by running a [workload upgrade](#manage-workloads) after you enable the feature. Likewise, if you disable a feature that has data synchronization dependencies while you're running a workload, you must run a [workload upgrade](#manage-workloads) to remove the relevant data synchronization information from the workload definition.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

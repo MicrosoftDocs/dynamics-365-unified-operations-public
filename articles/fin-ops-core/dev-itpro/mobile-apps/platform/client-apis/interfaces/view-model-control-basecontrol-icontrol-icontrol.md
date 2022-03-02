@@ -1,12 +1,12 @@
 ---
 title: Control type
 description: Control interface with base methods and attributes for all controls. This represents the runtime instance of a control.
-author: robinarh
+author: tonyafehr
 ms.date: 08/01/2017
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ---
 
 # Control type

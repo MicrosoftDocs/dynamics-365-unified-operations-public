@@ -4,8 +4,8 @@
 title: Snapshots overview
 description: This topic describes the snapshots feature, which lets you save a cash flow forecast for analysis or comparison with actuals later. When you generate a cash flow forecast, you can save that forecast as a "snapshot." You can then use that snapshots to edit the accounts that were included in the forecast, or compare the forecast in the snapshot to actuals.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
-ms.topic: article
+ms.date: 11/03/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -43,8 +43,6 @@ You can create a snapshot by select **New snapshot** on either the **Cash positi
 
 The cash inflows and outflows in snapshots can be edited at any time. When an inflow amount or an outflow amount is edited, the updated amount is prorated to the liquidity accounts that made the original balance. When you've finished editing a snapshot, select **Save** to save your changes.
 
-To compare multiple snapshots, select **Compare snapshots**. You can compare two snapshots at a time. Select the two snapshots to compare, and then select **OK**. The **Compare snapshot** page will show a comparison of the selected snapshots. The chart in the upper section of the page shows a comparison of the cash inflows, cash outflows, and bank balances in the overlapping periods between the two snapshots. The grid in the lower section shows a detailed comparison of the two forecasts for each liquidity amount. The **Variance** column in the grid shows the difference between the balances in a period.
-
-To compare actual financial results with a forecast that was saved as a snapshot, select **Compare with actuals**. The **Compare snapshot** page will show a comparison of the actual amounts and the forecast. The chart in the upper section of the page shows a comparison of the cash inflows, cash outflows, and bank balances in the overlapping periods between the two snapshots. The grid in the lower section shows a detailed comparison of actual balances per period and the forecasted balance for each liquidity amount. The **Variance** column in the grid shows the difference between the actual balance in a period to the forecasted balance.
+To compare actual financial results with a forecast that was saved as a snapshot, select **Compare with actuals**. The **Compare with actuals** page will show a comparison of the actual amounts and the forecast. The chart in the upper section of the page shows a comparison of the cash inflows, cash outflows, and bank balances in the overlapping periods between the two snapshots. The grid in the lower section shows a detailed comparison of actual balances per period and the forecasted balance for each liquidity amount. The **Variance** column in the grid shows the difference between the actual balance in a period to the forecasted balance.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

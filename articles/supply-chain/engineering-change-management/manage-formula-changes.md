@@ -23,12 +23,9 @@ If you're using the process manufacturing capabilities of Microsoft Dynamics 365
 - **Co-products and by-products:** Edit quantities and other information of the co-products and by-products in a formula.
 - **Catchweight items:** Manage changes to catch-weight items.
 
-## Turn on this feature in your system
+## Turn this feature on or off
 
-To use this capability, you must complete the following tasks:
-
-1. Enable the *Engineering change management* feature and its configuration key, as described in [Engineering change management overview](product-engineering-overview.md). As is mentioned in that topic, make sure that you also enable the **Change management for process manufacturing** license key, which is nested below the main **Engineering Change Management** license key.
-1. Turn on the *Manage changes to formulas and their ingredients* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The functionality described in this topic requires that both the *Engineering Change Management* and *Manage changes to formulas and their ingredients* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ## Feature naming conventions
 

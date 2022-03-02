@@ -5,7 +5,7 @@ title: Self-service deployment overview
 description: This topic provides an overview of self-service deployment.
 author: rashmansur
 ms.date: 05/29/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.custom: "intro-internal"
+
 ms.search.region: Global 
 # ms.search.industry: 
 ms.author: rashmim

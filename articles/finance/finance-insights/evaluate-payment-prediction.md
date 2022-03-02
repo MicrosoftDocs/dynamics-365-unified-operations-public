@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Evaluate the initial customer payment prediction model (preview)
+title: Evaluate the initial customer payment prediction model
 description: This topic describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Evaluate the initial customer payment prediction model (preview)
+# Evaluate the initial customer payment prediction model
 
 [!include [banner](../includes/banner.md)]
 

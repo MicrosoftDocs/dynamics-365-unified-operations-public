@@ -5,7 +5,7 @@ author: mugunthanm
 ms.date: 06/03/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2021-02-28
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.16
 
 This topic describes the architecture of the headless commerce (also known as Commerce Scale Unit). The headless commerce is an API-driven framework that enables extensible, personalized, friction-free commerce experiences, and integrated, optimized back-office operations.
 
-![Commerce Scale Unit architecture.](./media/CSU.PNG)
+![Commerce Scale Unit architecture.](media/CSUExtensionArchitecture.PNG)
 
 ## Omnichannel solution provided by the headless commerce
 

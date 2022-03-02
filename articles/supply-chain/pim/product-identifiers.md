@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-12-31
 
 # Product identifiers
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +41,7 @@ In Dynamics 365 Supply Chain Management, the primary identifier for a product is
 
 In many cases, the product number isn't originally created in Dynamics 365 Supply Chain Management. Instead, it's associated with a product in a product lifecycle management (PLM) system or a product data management (PDM) system. In this case, you use data entities to import the products and product variants. Supply Chain Management then uses the numbers in all operations.
 
-When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier has a maximum of 15 characters. Ideally, it has fewer than 10 characters and includes no more than five classifying characters. You can also use search names to enable quick searches. A search name is an extra name that represents the classifications of a product.
+When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier should usually have 20 characters or less, but we generally recommend using fewer than 10 characters and including no more than 5 classifying characters. You can also use search names to enable quick searches. A search name is an extra name that represents the classifications of a product.
 
 When you use Microsoft Dataverse, the product number in Supply Chain Management is also the product number in Microsoft Dataverse. Product variants are synchronized to Dataverse as distinct products.
 

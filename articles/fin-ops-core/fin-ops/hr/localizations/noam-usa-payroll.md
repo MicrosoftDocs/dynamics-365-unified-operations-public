@@ -3,9 +3,9 @@
 
 title: US Payroll overview
 description: Payroll provides full gross-to-net processing for employees in the United States.
-author: andreabichsel
+author: twheeloc
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["248434", "intro-internal"]
 ms.assetid: 33dae9aa-f673-4195-9b63-7cb41534c502
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](../../includes/banner.md)]
 
 Payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
+
+> [!NOTE]
+> Tax updates are being retired for the US payroll feature in Microsoft Dynamics 365 for Finance and Operations starting July 31, 2024. Tax updates were originally scheduled to be removed as of October 2021, however this was extended to July 2024. For more information, see [Support date extended for tax updates](https://cloudblogs.microsoft.com/dynamics365/it/2020/10/02/support-date-extended-for-tax-updates-in-us-payroll-feature-in-dynamics-365-finance).
 
 ## Payroll setup
 
@@ -71,7 +74,7 @@ Topics related to benefits describe how to set up current and future benefits th
 
 Premium earnings, garnishments, and tax levies won't be used by all employees. If your organization needs to pay premium earnings or garnish an employee's pay, Payroll includes a framework that can help ensure that the impact of these transactions is handled correctly.
 
-- [Set up garnishments and tax levies(noam-usa-garnishment-tax-levy-set-up-tasks.md)
+- [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 - [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
 - [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md)
 - [Set up premium earnings](noam-usa-premium-earning-setup-tasks.md)

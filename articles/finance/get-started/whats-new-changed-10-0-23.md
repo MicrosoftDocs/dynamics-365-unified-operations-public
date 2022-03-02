@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.23
 
 ---
 
-# Preview features in Dynamics 365 Finance 10.0.23
+# Preview features in Dynamics 365 Finance 10.0.23 (January 2022)
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,6 +37,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 - **Preview of release**: October 2021
 - **General availability of release (self-update)**: December 2021
+- **General availability of release (auto-update)**: January 2022
 
 ## Features included in this release
 
@@ -44,11 +45,11 @@ The following features are included in this release. Some of the listed features
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-| Global address book | Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) | Enabled by default. |
-|Tax Calculation    | [Integration with free text invoice](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [Tax Calculation integration with Finance and Operations](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Admins, makers, marketers, or analysts, automatically   |
-|Electronic Invoicing    | [Configurable e-invoice submission to Italian SDI system](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [Electronic invoicing overview](/dynamics365/finance/localizations/e-invoicing-service-overview)   | Admins, makers, or analysts   |
+| Global address book | Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) | Enabled by default |
+|Tax Calculation    | [Integration with free text invoice](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [Tax Calculation integration with Finance and Operations](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Parameter   |
+|Electronic Invoicing    | [Configurable e-invoice submission to Italian SDI system](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [Electronic invoicing overview](/dynamics365/finance/localizations/e-invoicing-service-overview)   | Feature management   |
 |   Accounts payable  | [Vendor open transactions report](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/open-vendor-transaction-report)  |  [Vendor invoices overview](../accounts-payable/vendor-invoices-overview.md) |  Feature management   |
-|  Accounts payable  | [Create invoice lines based on the quantity option parameter in Accounts payable](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/create-invoice-lines-based-quantity-option-parameter-accounts-payable)  | [Generate invoice lines when you import vendor invoices](../accounts-payable/auto-create-invc-lines-at-import.md) | On automatically |
+|  Accounts payable  | [Create invoice lines based on the quantity option parameter in Accounts payable](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/create-invoice-lines-based-quantity-option-parameter-accounts-payable)  | [Generate invoice lines when you import vendor invoices](../accounts-payable/auto-create-invc-lines-at-import.md) | Enabled by default |
 
 
 ## Feature enhancements included in this release
@@ -70,7 +71,7 @@ The following table lists the feature enhancements included in this release. Eac
 Dynamics 365 Finance 10.0.23 includes platform updates. To learn more, see [Platform updates for version 10.0.23 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXX). The following issues are fixed in this release.
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=627874). The following issues are fixed in this release.
 
 | Issue| Description |  
 |---|---|

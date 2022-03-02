@@ -3,12 +3,12 @@ title: POS extension overview
 description: This topic provides information about how you can create Point of Sale (POS) extensions by using the new independent POS extension model and sealed software development kit (SDK).
 author: mugunthanm
 ms.date: 04/13/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 audience: Developer
-ms.reviewer: rhaertle
-ms.custom: "intro-internal"
+ms.reviewer: tfehr
+
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 04-13-2020

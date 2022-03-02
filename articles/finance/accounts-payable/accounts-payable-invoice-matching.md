@@ -5,7 +5,7 @@ title: Accounts payable invoice matching overview
 description: Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
 author: sunfzam
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.search.form: VendInvoicePostingHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["27361", "intro-internal"]
 ms.assetid: 9f3dace7-05d8-4974-8f85-aca2e224876c
@@ -39,24 +39,24 @@ For example, you enter a purchase order with one line item for 1,000 batteries a
 
 An invoice arrives for 1,000 batteries at a price of 1.10 each. Your legal entity policy allows a 5 percent net unit price tolerance for this category of item. A price of 1.05 would be acceptable, but 1.10 is not. When you enter the invoice information, a price matching discrepancy is identified and you can save the invoice until the discrepancy is resolved.
 
-You can use the following types of Accounts payable invoice matching:
+You can use the following types of **Accounts payable invoice matching**:
 
--   Invoice totals matching – Match the total amounts on the invoice to the total amounts on the purchase order. This type of invoice matching includes the least amount of detail, so you can use this option to set up controls that minimize the staff time that is required to review invoice matching information.
--   Two-way matching – Match the price information on the invoice to the price information on the purchase order.
--   Three-way matching – Match the price information on the invoice to the price information on the purchase order. Also match the quantity information on the invoice to the quantity information on the product receipts that are selected for the invoice.
--   Charges matching – Match the charges information (amounts) on the invoice to the charges information (amounts) on the purchase order.
+-   **Invoice totals matching** – Match the total amounts on the invoice to the total amounts on the purchase order. This type of invoice matching includes the least amount of detail, so you can use this option to set up controls that minimize the staff time that is required to review invoice matching information.
+-   **Two-way matching** – Match the price information on the invoice to the price information on the purchase order.
+-   **Three-way matching** – Match the price information on the invoice to the price information on the purchase order. Also match the quantity information on the invoice to the quantity information on the product receipts that are selected for the invoice.
+-   **Charges matching** – Match the charges information (amounts) on the invoice to the charges information (amounts) on the purchase order.
 
 > [!NOTE]
 > Other forms of invoice validation can be done using vendor invoice policies. 
 
 Two-way matching and three-way matching always match price information by the unit price. You can also configure these matching policies to match price information by the price total.
--   Net unit price matching – Match price information for two-way matching or three-way matching by comparing the net unit price for each line on the invoice with the corresponding net unit price on the purchase order. The net unit price is determined by the following formula: Net amount of the line / Quantity of the line
--   Price totals matching – Match price information for two-way matching or three-way matching by comparing the net amount (price total) for each line on the invoice with the corresponding net amount on the purchase order. The net amount is determined by the following formula: *(Unit price \* Line quantity) + Line charges - Line discounts*. When matching price totals by percentage, the system compares values using the transaction currency. When matching price totals by amount, the system compares the values using the accounting currency. When you partially invoice a purchase order line, the validation of price-total matching occurs on the last invoice for that line. 
+-   **Net unit price matching** – Match price information for two-way matching or three-way matching by comparing the net unit price for each line on the invoice with the corresponding net unit price on the purchase order. The net unit price is determined by the following formula: Net amount of the line / Quantity of the line
+-   **Price totals matching** – Match price information for two-way matching or three-way matching by comparing the net amount (price total) for each line on the invoice with the corresponding net amount on the purchase order. The net amount is determined by the following formula: *(Unit price \* Line quantity) + Line charges - Line discounts*. When matching price totals by percentage, the system compares values using the transaction currency. When matching price totals by amount, the system compares the values using the accounting currency. When you partially invoice a purchase order line, the validation of price-total matching occurs on the last invoice for that line. 
 
-Typically, invoice matching calculations are automatically performed when you edit vendor invoices on the Vendor invoice page. Alternatively, invoice matching can be performed on demand, as needed. Invoice matching on demand is controlled for the legal entity by the Automatically update invoice header status To on the Accounts payable parameters page on the Invoice validation tab. Invoice matching can also be performed as part of an invoice review process. You can view the results of invoice matching on the Vendor invoice page and related invoice matching pages.
+Typically, invoice matching calculations are automatically performed when you edit vendor invoices on the **Vendor invoice** page. Alternatively, invoice matching can be performed on demand, as needed. Invoice matching on demand is controlled for the legal entity by the **Automatically update invoice** header status on the **Accounts payable parameters** page on the **Invoice validation** tab. Invoice matching can also be performed as part of an invoice review process. You can view the results of invoice matching on the **Vendor invoice** page and related invoice matching pages.
 
 ## Invoice totals matching
-You can use invoice totals matching to help make sure that total invoice amounts do not deviate from expected amounts by more than an acceptable variance. Six totals are compared on the Invoice totals matching details page, as shown in the following table. If the allowable tolerance for invoice totals matching is 20%, the 100% variance percentage for the total discount amount is considered a matching discrepancy.
+You can use invoice totals matching to help make sure that total invoice amounts do not deviate from expected amounts by more than an acceptable variance. Six totals are compared on the **Invoice totals matching details** page, as shown in the following table. If the allowable tolerance for invoice totals matching is 20%, the 100% variance percentage for the total discount amount is considered a matching discrepancy.
 
 | Total field    | Actual invoice total | Expected invoice total | Variance percentage | Match status |
 |----------------|----------------------|------------------------|---------------------|--------------|
@@ -67,7 +67,7 @@ You can use invoice totals matching to help make sure that total invoice amounts
 | Round-off      | 0.00                 | 0.00                   | 0%                  | Passed       |
 | Invoice amount | 699.88               | 687.50                 | 2%                  | Passed       |
 
-Invoice totals matching is controlled for the legal entity by the Match invoice totals toggle on the Accounts payable parameters page. Matching is performed on the expected invoice totals and the actual invoice totals. The expected invoice totals are calculated based on the prices, charges, and sales tax information from the purchase order and the quantities from the invoice.
+Invoice totals matching is controlled for the legal entity by the **Match invoice totals** toggle on the **Accounts payable parameters** page. Matching is performed on the expected invoice totals and the actual invoice totals. The expected invoice totals are calculated based on the prices, charges, and sales tax information from the purchase order and the quantities from the invoice.
 
 ## Two-way, price totals matching
 Use two-way matching to help make sure that the variance between the price information on the purchase order and the invoice is within acceptable tolerances. You can compare price information for the net amount of each line on the invoice, and all pending and previously posted invoice lines, with the net amount of the corresponding purchase order line. This is called price totals matching. 
@@ -77,33 +77,33 @@ Price totals matching can be based on a percentage, an amount, or a percentage a
 If a purchase price total tolerance percentage is specified, five fields are compared, as shown in the following table. Because the purchase price total tolerance percentage is 10%, the price total variance percentage of 50% represents a matching discrepancy.
 
 | Match status | Invoice net amount | Expected net amount | Unmatched purchase price total (variance amount) | Unmatched purchase price total percentage (variance percentage) | Purchase price total tolerance percent |
-|--------------|--------------------|---------------------|--------------------------------------------------|-----------------------------------------------------------------|----------------------------------------|
-| Passed       | 105.00             | 100.00              | 5.00                                             | 5%                                                              | 10%                                    |
-| Failed       | 150.00             | 100.00              | 50.00                                            | 50%                                                             | 10%                                    |
+|--------------|--------------------|---------------------|--------------------------------------------------|--------------------------------|---------------------------|
+| Passed       | 105.00             | 100.00              | 5.00                                             | 5%                             | 10%                 |
+| Failed       | 150.00             | 100.00              | 50.00                                            | 50%                            | 10%                     |
 
 If a purchase price total tolerance amount is specified, five fields are compared, as shown in the following table. Because the purchase price total tolerance amount is 100.00, the price total variance amount of 105.00 represents a matching discrepancy.
 
 | Match status | Invoice net amount | Expected net amount | Unmatched purchase price total (variance amount) | Unmatched purchase price total in accounting currency (variance amount) | Purchase price total tolerance |
-|--------------|--------------------|---------------------|--------------------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Passed       | 150.00             | 100.00              | 50.00                                            | 50.00                                                                   | 100.00                         |
-| Failed       | 205.00             | 100.00              | 105.00                                           | 105.00                                                                  | 100.00                         |
+|--------------|--------------------|---------------------|-----------------------------------------------|-------------------------------|--------------------------------|
+| Passed       | 150.00             | 100.00              | 50.00                                            | 50.00                    | 100.00                         |
+| Failed       | 205.00             | 100.00              | 105.00                                           | 105.00                  | 100.00                         |
 
 If price totals matching is set up with a percentage tolerance and a tolerance amount, sometimes referred to as a not-to-exceed amount, both tolerances are considered when evaluating whether a line has a matching discrepancy. If either the percentage or the amount exceeds the tolerance, as shown in the 150.00 and 205.00 lines in the following table, the line has a matching discrepancy.
 
 | Match status | Invoice net amount | Expected net amount | Unmatched purchase price total percentage (variance percentage) | Purchase price total tolerance percent | Unmatched purchase price total in accounting currency (variance amount) | Purchase price total tolerance |
-|--------------|--------------------|---------------------|-----------------------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|--------------------------------|
-| Passed       | 105.00             | 100.00              | 5%                                                              | 10%                                    | 5.00                                                                    | 100.00                         |
-| Failed       | 150.00             | 100.00              | 50%                                                             | 10%                                    | 50.00                                                                   | 100.00                         |
-| Failed       | 205.00             | 100.00              | 105%                                                            | 10%                                    | 105.00                                                                  | 100.00                         |
+|--------------|--------------------|---------------------|-----------------------------|------------------|----------------------------------|--------------------------------|
+| Passed       | 105.00             | 100.00              | 5%                     | 10%                         | 5.00           | 100.00                         |
+| Failed       | 150.00             | 100.00              | 50%                   | 10%                     | 50.00            | 100.00                         |
+| Failed       | 205.00             | 100.00              | 105%                 | 10%                      | 105.00                                  | 100.00                         |
 
-Two-way matching is controlled for the legal entity by the Line matching policy field on the Accounts payable parameters page. Depending on the selection in the Allow matching policy override field, you can select two-way matching for a specific vendor, item, or item and vendor combination on the Matching policy page, and for a specific purchase order on the Purchase order page.
+Two-way matching is controlled for the legal entity by the **Line matching policy** field on the **Accounts payable parameters** page. Depending on the selection in the **Allow matching policy override** field, you can select two-way matching for a specific vendor, item, or item and vendor combination on the **Matching policy** page, and for a specific purchase order on the **Purchase order** page.
 
-Price totals matching is controlled for the legal entity by the Match price totals field on the Accounts payable parameters page. The purchase price total tolerance percentage and tolerance amount (not-to-exceed amount) are also specified on that page.
+Price totals matching is controlled for the legal entity by the **Match price totals** field on the **Accounts payable parameters** page. The purchase price total tolerance percentage and tolerance amount (not-to-exceed amount) are also specified on that page.
 
 ## Two-way, net unit price matching
 Use two-way matching to help make sure that the variance between the price information on the purchase order and the invoice is within acceptable tolerances. You can compare price information for the net unit price of each item on the invoice. This is called net unit price matching. 
 
-Nine line amounts are compared on the Invoice matching details page, as shown in the following table. If the allowable price tolerance for net unit price matching is 10%, the 22.61% variance for the net unit price is considered a matching discrepancy.
+Nine line amounts are compared on the **Invoice matching details** page, as shown in the following table. If the allowable price tolerance for net unit price matching is 10%, the 22.61% variance for the net unit price is considered a matching discrepancy.
 
 | Line field                    | Invoice value | Purchase order value | Variance percentage | Match status |
 |-------------------------------|---------------|----------------------|---------------------|--------------|
@@ -117,9 +117,9 @@ Nine line amounts are compared on the Invoice matching details page, as shown in
 | Net amount                    | 271.60        | 221.52               | 22.61%              | Failed       |
 | Net unit price                | 67.9000       | 55.3800              | 22.61%              | Failed       |
 
-Two-way matching is controlled for the legal entity by the Line matching policy field on the Accounts payable parameters page. Depending on the selection in the Allow matching policy override field, you can select two-way matching for a specific vendor, item, or item and vendor combination on the Matching policy page, and for a specific purchase order on the Purchase order page. 
+Two-way matching is controlled for the legal entity by the **Line matching policy** field on the **Accounts payable parameters** page. Depending on the selection in the **Allow matching policy override** field, you can select two-way matching for a specific vendor, item, or item and vendor combination on the **Matching policy** page, and for a specific purchase order on the **Purchase order** page. 
 
-Net unit price matching is controlled for the legal entity by the Enable invoice matching validation field on the Accounts payable parameters page. The net unit price tolerance percentages can be configured for items, item groups, vendors, vendor groups, item and vendor combinations, or legal entity by using the Price tolerances page.
+Net unit price matching is controlled for the legal entity by the **Enable invoice matching validation** field on the **Accounts payable parameters** page. The net unit price tolerance percentages can be configured for items, item groups, vendors, vendor groups, item and vendor combinations, or legal entity by using the **Price tolerances** page.
 
 ## Two-way, price totals matching and net unit price matching
 You can use price totals matching and net unit price matching together. This example assumes the following configuration:
@@ -165,10 +165,10 @@ The same line amounts are compared on the Invoice matching details page as for t
 | Invoice quantity               | 4.00          |              |
 | Total product receipts matched | 0.00          | Failed       |
 
-Three-way matching is controlled for the legal entity by the Line matching policy field on the Accounts payable parameters page. Depending on the selection in the Allow matching policy override field, you can select three-way matching for a specific vendor, item, or item and vendor combination on the Matching policy page, and for a specific purchase order on the Purchase order page.
+Three-way matching is controlled for the legal entity by the **Line matching policy** field on the **Accounts payable parameters** page. Depending on the selection in the **Allow matching policy override** field, you can select three-way matching for a specific vendor, item, or item and vendor combination on the **Matching policy** page, and for a specific purchase order on the **Purchase order** page.
 
 ## Charges matching
-You can use charges matching to help make sure that charges amounts do not deviate from expected amounts by more than an acceptable variance percentage. The total amounts for each charges code that applies to the invoice and purchase order are compared in the Compare charges values - Invoice: page, as shown in the following table. If the allowable tolerance for the charges code is 25%, the 99,999,999,999.99% variance percentage for the License charges code is considered a matching discrepancy.
+You can use charges matching to help make sure that charges amounts do not deviate from expected amounts by more than an acceptable variance percentage. The total amounts for each charges code that applies to the invoice and purchase order are compared in the **Compare charges values - Invoice:** page, as shown in the following table. If the allowable tolerance for the charges code is 25%, the 99,999,999,999.99% variance percentage for the **License charges code** is considered a matching discrepancy.
 
 > [!NOTE] 
 > A variance percentage of 99,999,999,999.99% means that the expected amount based on the purchase order is zero and the actual amount on the invoice is a positive value. 
@@ -179,10 +179,10 @@ You can use charges matching to help make sure that charges amounts do not devia
 | Passed               | Freight              | 200                           | 200                             | 0               | 0%                  | 25%                  |
 | Failed               | Expedite             | 4                             | 2                               | 2               | 100%                | 25%                  |
 
-Charges matching is controlled for the legal entity by the Match charges toggle on the Accounts payable parameters page. You can set up variance tolerance percentages for charges on the Charges tolerances page.
+Charges matching is controlled for the legal entity by the **Match charges** toggle on the **Accounts payable parameters** page. You can set up variance tolerance percentages for charges on the **Charges tolerances** page.
 
 > [!NOTE]
-> Charges matching is performed only on charges codes for which the Compare purchase order and invoice values toggle is selected on the Charges code page.
+> Charges matching is performed only on charges codes for which the **Compare purchase order and invoice values** toggle is selected on the **Charges code** page.
 
 ## Related functionality
 Vendor invoices are often based on product receipts that represent actual shipments, instead of on purchase orders. Sometimes the invoiced amounts do not match the purchase order amounts, and sometimes the shipped quantities do not match the invoiced quantities. You can help manage this information in the following ways:

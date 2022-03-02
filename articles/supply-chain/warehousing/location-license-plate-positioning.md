@@ -33,12 +33,9 @@ The feature adds a sequence number to each license plate that is put into a stor
 
 This topic presents a scenario that shows how to set up and use the feature.
 
-## Turn on the Location license plate positioning feature
+## Turn the Location license plate positioning feature on or off
 
-Before you can use license plate location positioning, the feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Location license plate positioning*
+To use the functionality described in this topic, the *Location license plate positioning* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Location license plate positioning* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Example scenario
 

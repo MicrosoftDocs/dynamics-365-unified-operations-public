@@ -4,7 +4,7 @@
 title: Opt in to use ratings and reviews 
 description: This topic explains how to opt in to use ratings and reviews on your Microsoft Dynamics 365 Commerce site.
 author:  gvrmohanreddy 
-ms.date: 01/30/2020
+ms.date: 02/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,9 +43,9 @@ To opt in to use ratings and reviews on your site, follow these steps.
 1. Follow the steps in [Deploy a new e-Commerce site](deploy-ecommerce-site.md).
 1. While you're still in LCS, go to **Retail deployment setup \> Other settings**.
 1. Set the **Enable ratings and reviews service** option to **Yes**.
-1. In the **AAD security group for ratings and review moderator (security group object id)** field, enter the ID of the Microsoft Azure Active Directory (Azure AD) security group that includes the ratings and reviews moderators.
+1. In the **AAD security group for ratings and review moderator** field, enter the ID of the Microsoft Azure Active Directory (Azure AD) security group that includes the ratings and reviews moderators.
 
-    ![Opt in to use ratings and reviews.](media/LCS_RnR_Preference.png)
+    ![Opt in to use ratings and reviews.](media/LCS_RnR_Preference_2.png)
 
 1. Complete the e-Commerce initialization process.
 
@@ -62,7 +62,13 @@ To opt in to use ratings and reviews on your site, follow these steps.
 
 [Sync product ratings in Dynamics 365 Commerce](sync-product-ratings.md)
 
+[Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
 
+[Import and export ratings and reviews](import-export-reviews.md)
+
+[Configure Service-to-Service authentication](service-to-service-auth.md)
+
+[Ratings and reviews FAQ](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

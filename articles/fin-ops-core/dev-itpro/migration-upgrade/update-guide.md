@@ -3,10 +3,10 @@
 title: Manage Finance and Operations updates and your custom code lifecycle
 description: This topic describes how to manage Finance and Operations updates and your custom code lifecycle.
 author: rbadawy
-ms.date: 10/22/2020
+ms.date: 11/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: robadawy
 ms.search.validFrom: 2020-10-22
@@ -161,6 +161,9 @@ It's important that you understand what Microsoft means by *backward compatibili
 All Microsoft updates are intended to be runtime backward-compatible. This compatibility covers both binary compatibility and functional compatibility. Runtime compatibility means that customizations that exist in production and sandbox environments will continue to work after Microsoft service updates are deployed to those environments. Those updates include service updates and quality updates. Runtime compatibility also means that Microsoft updates are backward-compatible with customizations that were compiled on an earlier platform.
 
 Binary compatibility is backward only. You can compile a customization on an older application version and platform version, and deploy it to an environment that is running a later version. However, you can't deploy code to an environment that is running a version that is earlier than the version that the code was compiled on.
+
+> [!IMPORTANT]
+> Personalizations are covered by runtime compatibility and will continue to work after Microsoft service updates are deployed to these environments. Because of this, re-importing all personalizations after a service update (or at any other time) is unnecessary and highly discouraged.   
 
 #### <a id="design-compatibility"></a>Design-time compatibility
 
