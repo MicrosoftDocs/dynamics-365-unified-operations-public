@@ -32,10 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains what the German journal list report is used for, who typically uses it, and how to run it.
 
-The **German journal list** report shows a list of transactions that are produced when the Journalizing function is run. The list is sorted by journal sequence number. The report is used to review the status of general ledger processes. It's typically used by chief executive officers (CEOs), chief financial officers (CFOs), compliance managers, accounting managers, and accounting supervisors. To run the **German journal list** report, follow these steps.
+The **German journal list** report shows a list of transactions that are produced when the journalizing is run. The list is sorted by journal sequence number. The report is used to review the status of general ledger processes. It's typically used by chief executive officers (CEOs), chief financial officers (CFOs), compliance managers, accounting managers, and accounting supervisors. To run the **German journal list** report, follow these steps.
 
-1.  Run the Journalizing function (**General ledger** &gt; **Periodic tasks** &gt; **General journals** &gt; **Journalizing**).
-2.  On the **Ledger journals** page, select a line, and then click **German journal list**.
+1.  Go to **General ledger** &gt; **Periodic tasks** &gt; **Journalizing**.
+2.  Apply filters and select **OK** to journalize transactions.
+3.  Go to **General ledger** &gt; **Periodic tasks** &gt; **Journalized journals**. 
+4.  Select a line with a journal.
+5.  On the Action pane, select **German journal list**.
 
 
 
