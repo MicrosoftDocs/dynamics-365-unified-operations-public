@@ -54,6 +54,8 @@ When maintenance mode is turned on, browsing to the web site will show the defau
 
 Select the new page and provide the alias name **default-maintenance** and then ensure the page is published.
 
-![Create alias in site builder](media/maintenance-mode-5.png)
+![Provide an alias name](media/maintenance-mode-5.png)
 
+Once this is done, and if maintenance mode is turned on the new page will be shown to the user.
+![Custom maintenance page sample](media/maintenance-mode-5.png)
 
