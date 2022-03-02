@@ -44,19 +44,12 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
+| E-commerce | [Support for catalogs in e-commerce channel](/dynamics365-commerce/support-catalogs-e-commerce-channel) |  You can now define partner-specific product catalogs for your B2B business partners. This allows you to offer a subset of products that may include special pricing on a partner-by-partner basis. | |
 |   Globalization      |    [Payments in installments with the Dynamics 365 Payment Connector for Adyen for Brazil](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/payments-installments-dynamics-365-payment-connector-adyen-brazil)    |   This feature extends the out-of-the-box Dynamics 365 Payment Connector for Adyen to support paying in installments for Brazil. For more information about the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](../dev-itpro/adyen-connector.md)       | For more information, see [Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics). |
 |   Globalization      |    [Direct fiscal integration from POS](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos)    |     The feature extends the fiscal integration framework by adding a capability to create fiscal connectors that will be executed in POS. This type of connector will communicate with a fiscal device or service that provides an HTTP API and will not require a dedicated physical machine in the store to be plugged in or deployed on. This release provides a sample of the direct fiscal integration from POS for Austria, the Czech Republic, and Germany.   | Feature management<p>*Direct fiscal integration from POS registers* |
 |   Globalization      |    [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration)    |   An option to disable fiscal registration for selected POS registers in a fiscal registration-enabled store. Store associates will be able to use the registers for non-sales operations (such as inventory management operations), and to create sales that can then be completed on fiscal registration-enabled registers          | Feature management<p>*Fiscal Registration State of POS Registers* |
+|  Payments  |   [PayPal Cart Checkout support in e-commerce](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/paypal-cart-checkout-support-e-commerce) | [Dynamics 365 Payment Connector for PayPal](../paypal.md)| Developer opt-in |
 
-## Feature enhancements included in this release
-
-The following table lists the feature enhancements that are new for this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
-
-If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), where they are listed using the names shown in the *Feature name in feature management* column of the following table.
-
-| Module | Feature name in feature management | More information |
-|---|---|---|
-|  |   |  |
 
 
 ## Additional resources
