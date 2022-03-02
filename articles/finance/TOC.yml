@@ -2110,8 +2110,6 @@
           href: localizations/emea-credit-note-reverse-fixed-asset-sale.md
         - name: Generate a transfer document for an internal inventory transfer
           href: localizations/tasks/transfer-document-internal-inventory-transfer.md
-        - name: Generate an EU sales list report
-          href: localizations/tasks/eur-00011-eu-sales-list-report.md
         - name: ISO20022 files
           items:
           - name: Import ISO20022 files
@@ -2182,8 +2180,6 @@
           href: accounts-receivable/sepa-direct-debit-overview.md
         - name: Set up customer and vendor compensation
           href: localizations/emea-compensation-customer-vendor-transactions.md
-        - name: Set up EU sales list reporting
-          href: localizations/tasks/eur-00011-eu-sales-list-reporting.md
         - name: Set up payment slip format for project invoices
           href: localizations/tasks/set-up-payment-slip-format-project-invoices.md
         - name: Set up signers for print forms
