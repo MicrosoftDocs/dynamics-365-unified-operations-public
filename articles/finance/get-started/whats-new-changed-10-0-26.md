@@ -45,14 +45,15 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
+| Accounts receivable | Resetting the workflow status for free text invoices from **Unrecoverable** to **Draft** | In the case of a system interruption, a free text invoice can get into the status of **Unrecoverable**. With this feature, you can reset the document status from **Unrecoverable** to **Draft**. After the workflow status is reset to **Draft**, it is available for editing.  | Feature management | 
+| Accounts receivable | Stop posting of free text invoices on first error | This feature adds the option to stop posting free text invoices when an error occurs. Finding the issue on the first posting error allows the accounts receivable staff to investigate the error quickly, leading to faster billing. The error can be corrected and the invoice can be re-selected for posting. You can select to stop free text invoice posting when an error occurs on the **Updates** tab of the **Accounts receivable parameters** page (**Accounts receivable** > **Setup** > **Accounts receivable parameters**). | Parameter |
+| Accounts receivable | Post to Revenue account for zero priced sales order invoice lines | Allowing updates to the Revenue account in General ledger for sales lines that have no price helps to provide a complete audit trail, displaying the debit and credit of zero for the Revenue and Accounts receivable accounts, saving accounts receivable staff time in their reconciliation processes. To set up this information, go to the **Post to Revenue account for zero priced sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable** > **Setup** > **Accounts receivable parameters**).  | Parameter |
 |  Fixed assets | Add transaction subtype to fixed asset split transaction  | This feature enhancement ensures that the generated transactions from split transaction are automatically identified on the transaction level. You can also amend the split journal description because it's no longer used in the split logic. The **Fixed asset transaction** subtype field will be filled in for the new transactions. |  Default |
 | Fixes assets   | Add field to prevent auto-update of placed in service date after intial acquisition of migrated asset  | The feature ensures that the defined placed in service date of the migrated assets from the legacy system will not be updated automatically after posting the acquisition transaction if the migrated asset option is set to **Yes**. Set the **Migrated asset** Field to **Yes** if you are migrating fixed assets from the legacy system to Dynamics 365 Finance in the initial data migration.  | Default |
 | Fixes assets   | Allow update to the asset book status by using a data entity  | This feature ensures that the asset book status will be updated through the data entity asset book V2 entity and the user interface.   | Default |
 | Tax Calculation   | Integration with general journal  | [Tax Calculation integration with Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Parameter |
 | Tax Calculation   | Integration with vendor invoice journal  | [Tax Calculation integration with Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Parameter |
-| Tax Calculation   | Tax calculation service feature setup new UI   | This feature enhances the tax feature setup UI in Tax Calculation Service to improve the usability.   | Feature management |
-
-
+| Tax Calculation   | Tax Calculation service feature setup new UI   | This feature enhances the tax feature setup UI in the Tax Calculation service to improve usability.   | Feature management |
 
 
 ## Feature enhancements included in this release
@@ -61,8 +62,8 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature name | More information |  
 |----|----|----|
-| Tax Calculation | Tax Calculation Service| This feature is enhanced in 10.0.26 to support legal entity's primary address in China, Czech Republic and Spain. See the section, Supported countries/regions in the topic, [Tax Calculation overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json#supported-countriesregions) for more information. |
-| Tax Calculation | Tax Calculation Service| This feature is enhanced in 10.0.26 to support a new Azure geography, Swizterland. See the section, Availability, [Tax Calculation overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json#availability) for more information. |
+| Tax Calculation | Tax Calculation service| This feature is enhanced in 10.0.26 to support legal entity's primary address in China, Czech Republic and Spain. See the section, Supported countries/regions in the topic, [Tax Calculation overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json#supported-countriesregions) for more information. |
+| Tax Calculation | Tax Calculation service| This feature is enhanced in 10.0.26 to support a new Azure geography, Swizterland. See the section, Availability, [Tax Calculation overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json#availability) for more information. |
 
 ## Additional resources
 
