@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 10/25/2021
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -33,12 +33,13 @@ The integration of Finance and Operations apps with Microsoft Power Platform can
 
 ## Environment lifecycle considerations
 
-By default, all Finance and Operations environments managed by LCS will receive a linked Power Platform environment without Dataverse.  This is a one-to-one relationship that will over time be the location where your Finance and Operations apps will migrate.  You can tell an environment is linked to an environment from LCS by seeing the Finance and Operations apps URL on the environment details page in Power Platform admin center:
+By default, all Finance and Operations environments managed by LCS will receive a linked Power Platform environment without Dataverse.  This is a one-to-one relationship that will over time be the location where your Finance and Operations apps will migrate.  You can tell an environment is linked to an environment from LCS by seeing the Finance and Operations apps URL on the environment details page in Power Platform admin center.
+
 :::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
 
-This environment cannot be deleted, reset, and cannot manually have a Dataverse database added to it.  To add Dataverse, and fully setup Power Platform integration, follow the steps below. 
+This environment cannot be deleted, reset, and cannot manually have a Dataverse database added to it.  To add Dataverse and fully set up the Power Platform integration, follow the steps below. 
 
-Alternatively, if you wish to reuse an existing Dataverse environment for your Power Platform integration scenarios (Virtual entities, add-ins, Dual-write, and more) then follow the recommendations for [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+Alternatively, if you want to reuse an existing Dataverse environment for your Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more) then follow the recommendations for [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
 
 ## Prerequisites for setting up the Microsoft Power Platform integration
 
