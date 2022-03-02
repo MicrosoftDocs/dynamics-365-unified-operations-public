@@ -1,8 +1,8 @@
 ---
 # required metadata 
 
-title: Access the Tax Calculation service
-description: This topic explains how to access the Tax Calculation service. 
+title: Failed to access tax service
+description: This topic explains how to troubleshoot a failure to access the Tax Calculation service. 
 author: hangwan
 ms.date: 03/01/2022
 ms.topic: business-process 
@@ -24,7 +24,7 @@ ms.search.validFrom: 02/16/2022
 ms.dyn365.ops.version: Version 10.0.21 
 ---
 
-# Access the Tax Calculation service
+# Failed to access tax service
 
 [!include [banner](../includes/banner.md)]
 
