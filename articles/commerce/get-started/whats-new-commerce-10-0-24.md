@@ -45,8 +45,8 @@ The following table lists the features that are included in this release. The *F
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |  B2B         | Support for matrixed view of product variants on the PDP and quick order entry page.        | [Set up a B2B e-commerce site](../b2b/set-up-b2b-site.md)            | Site builder |
-|  Inventory   |  [Improved stock count operation in POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-stock-count-operation-pos)  | This feature introduces several functional and experience enhancements to the stock count operation in the POS app.  | Feature management  |
-| Payments | [Improvements to payment flows for pick-up order processing in POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improvements-payment-flows-pick-up-order-processing-pos) | [Multiple available payment methods for in-store pickup](../dev-itpro/multiple-payments-pickup.md) | Feature management (*Omni-channel payments*) |
+|  Inventory   |  [Improved stock count operation in POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-stock-count-operation-pos)  | This feature introduces several functional and experience enhancements to the stock count operation in the POS app.  | Feature management<p>*Improved stock count operation in POS*  |
+| Payments | [Improvements to payment flows for pick-up order processing in POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improvements-payment-flows-pick-up-order-processing-pos) | [Multiple available payment methods for in-store pickup](../dev-itpro/multiple-payments-pickup.md) | Feature management<p>*Omni-channel payments* |
 
 ## Feature enhancements included in this release
 
