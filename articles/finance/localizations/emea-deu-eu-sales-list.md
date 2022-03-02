@@ -1,49 +1,32 @@
 ﻿This topic provides information about the European Union (EU) sales list report. The German EU sales list report contains information about the sale of goods and services for reporting in text format.
-
 The following fields are included on the German EU sales list report:
 
 - **EU sales list header:**
 
     -   EU sales list registration ID
-
     -   Date of the report creation
-
     -   Company name
-
     -   Street
-
     -   Postcode
-
     -   Location
 
 - **EU sales list lines:**
 
     -   Company VAT ID
-
     -   Existence of a correction
-
     -   Reporting period
-
     -   Report issue year
-
     -   Customer VAT ID
-
     -   Total amount of items
-
     -   Total amount of services
-
     -   Total amount of the triangular trade
-
     -   Existence of a notice or revocation
 
 - **EU sales list footer:**
 
     -   Company VAT ID
-
     -   Reporting period
-
     -   Total amount
-
     -   Number of EU sales list lines
 
 ## Setup
@@ -55,35 +38,25 @@ For general setup information, see [EU Sales list reporting](https://docs.micros
 Create a registration type, and assign it to the **VAT ID** registration category for Germany and all the countries or regions that your company does business with. For more information, see [Registration IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
 
 1.  Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
-
 2.  In the grid, select your company.
-
 3.  On the **Addresses** FastTab, set the city, ZIP/postal code, and street for the primary address that will be shown on the EU sales list report.
-
 4.  On the Action Pane, select **Registration IDs**.
-
 5.  On the **Registration ID** FastTab, select **Add**.
-
 6.  On the **Overview** tab, in the **Registration type** field, select the registration type that you created.
-
 7.  Enter your company's value-added tax (VAT) ID.
-
 8.  Optional: On the **General** tab, in the **General** section, change the period when the VAT ID is used.
-
 9.  Close this page.
 
-\[NOTE\] If the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab is set (that is, it isn't blank), that value will be used, instead of the VAT ID that you created, in the .txt and .xlsx files for the EU sales list report.
+    > [!NOTE]
+    > If the **VAT exempt number export** field in the **Intrastat** section on the **Foreign trade and logistics** FastTab is set (that is, it isn't blank), that value will be used, instead of the VAT ID that you created, in the .txt and .xlsx files for the EU sales list report.
 
 ### Import Electronic reporting configurations
 
 In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), import the latest version of the following Electronic reporting (ER) configurations for the EU sales list:
 
 -   EU Sales list model
-
 -   EU Sales list by columns report
-
 -   EU Sales list by rows report
-
 -   EU Sales list (DE)
 
 For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
@@ -91,17 +64,12 @@ For more information, see [Download Electronic reporting configurations from Lif
 ### Set up foreign trade parameters
 
 1.  In Dynamics 365 Finance, go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**.
-
 2.  On the **EU sales list** tab, set the **Report cash discount** option to **Yes** if a cash discount should be included in the value when a transaction is included in the EU sales list.
-
 3.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **EU Sales list (DE)**.
-
 4.  In the **Report format mapping** field, select **EU Sales list by rows report** or **EU Sales list by columns report**.
-
 5.  On the **Country/region properties** tab, select **New**, and set the following fields:
 
     -   In the **Country/region** field, select **DEU**.
-
     -   In the **Country/region type** field, select **Domestic**.
 
 6.  List all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**.
@@ -113,19 +81,14 @@ For general information about which types of transactions are included in the EU
 ### Generate the EU sales list report
 
 1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **EU sales list**.
-
 2.  Transfer transactions in the usual way.
-
 3.  Optional: To create correction files, follow these steps.
 
     1.  For corrective lines, select the checkbox in the **Corrected** column.
-
     2.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the **Correction** option to **Yes**.
-
     3.  On the **Records to include** FastTab, apply a filter to show only corrective lines.
 
 4.  On the Action Pane, select **Reporting**.
-
 5.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
 
 | Field                         | Description                                                                                                               |
@@ -144,28 +107,20 @@ For general information about which types of transactions are included in the EU
 
 ## Example
 
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Germany, see ***Example for generic EU Sales list***.
+For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Germany, see [Example for generic EU Sales list](https://docs.microsoft.com/dynamics365/finance/localizations/emea-eu-sales-list-example).
 
 ### Create an EU sales list report
 
 1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **EU sales list**.
-
 2.  On the Action Pane, select **Reporting**.
-
 3.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields:
 
     -   In the **Reporting period** field, select **Monthly**.
-
     -   In the **From date** field, select **8/1/2021** (August 1, 2021).
-
     -   Set the **Generate file** option to **Yes**.
-
     -   In the **File name** field, enter **DE-007F**.
-
     -   Set the **Generate report** option to **Yes**.
-
     -   In the **Report file name** field, enter **DE-007R**.
-
     -   In the **EU Sales List Registration ID** field, enter **DE1234**.
 
 4.  Select **OK**, and review the report in text format that is generated. The following tables show the values on the example report.
@@ -211,4 +166,4 @@ For information about how to create a general setup, create postings, and transf
 
 5.  Review the report in Excel format that is generated.
 
-![Table Description automatically generated](media/image1.png)
+![Table Description automatically generated](media/EUSL-deu.png)
