@@ -1,7 +1,7 @@
 ---
 # required metadata 
 
-title: Set up tax codes
+title: Tax feature list is empty on tax calculation parameter
 description: This topic explains how to set up tax codes in Tax Calculation Service. 
 author: wangchen
 ms.date: 11/17/2021
@@ -26,37 +26,41 @@ ms.dyn365.ops.version: Version 10.0.21
 
 # Tax feature list is empty on tax calculation parameter
 
+[!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
+
 ## Symptom
 
-1. Publish my feature in RCS.
-2. Go to *Finance and Operation > Tax > Setup > Tax configuration > Tax calculation parameters*.
-3. Drop down the *Feture setup name*, list showes empty.
+Let's say you have published a feature in the Regulatory configuration service (RCS) to use in Dynamics 365 Finance. When you open Finance and go to **Tax** > **Setup** > **Tax configuration** > **Tax calculation parameters** and select the **Feature setup name** drop-down list, the list is empty.
 
-## Rootcause
-Usually, this is because user's *Finance and Operation* environment and *Regulatory Configuration Service* environment are not under the same tenant.
+## Reason
+This usually occurs because your Finance environment and RCS environment aren't under the same tenant.
 
-### *Regulatory Configuration Service* tenant
+### RCS tenant
+Complete the following steps to locate your RCS tenant ID.
 
-- Open browser with InPrivate mode
-- Copy the full url of *Regulatory Configuration Service*, and enter it into the new Inprivate browser window, e.g. https://rcs-rts-sf-ed22b5aeea8-int-westus2.configure.global.int.dynamics.com/namespaces/817ff7a0-0d77-4aba-9360-3c9749e2c5de/?cmp=dat&mi=RCSFeatureDomainsWorkspace, and press **Enter**
-- You will be navigated to login page, on the url, you can find the tenant ID of RCS, e.g. https://login.microsoftonline.com/d335a570-a05b-4bc5-8eb3-c42c65f9560d
-- The tenant is following https://login.microsoftonline.com, so it's **d335a570-a05b-4bc5-8eb3-c42c65f9560d**
+1. Open an InPrivate browser window.
+2. Copy the full RCS url and enter it into the new Inprivate window and then press Enter. For example, the URL might be, https://rcs-rts-sf-ed22b5aeea8-int-westus2.configure.global.int.dynamics.com/namespaces/817ff7a0-0d77-4aba-9360-3c9749e2c5de/?cmp=dat&mi=RCSFeatureDomainsWorkspace. You will be directed to the login page where you can find the RCS tenant ID. For example, the tenant ID might be, https://login.microsoftonline.com/d335a570-a05b-4bc5-8eb3-c42c65f9560d. The tenant ID is the information that appears after https://login.microsoftonline.com, so it's **d335a570-a05b-4bc5-8eb3-c42c65f9560d**.
 
 
-### *Finance and Operation* environment tenant ID
-Same steps as to get *Regulatory Configuration Service* tenant, instead use the full url of *Finance and Operation* environment
+### Finance environment tenant ID
+To find the tenant ID for your Finance environment, complete the same steps as for the RCS tenant, but instead of using the RCS full URL, use the full URL of your Finance environment. 
 
+## Resolve
+If the two tenants IDs are different, you are running to the issue described in this topic. If they are the same, the issue is unrelated and we recommend that you contant Microsoft support. 
 
-If the two tenants Id are different, then it means you are running to the issue described here, or else, please reach Microsoft support. 
-
-## Mitigate
 ### Solution 1
-Make sure to sign in the *Regulatory Configuration Service* in the same tenant of *Finance and Operation* tenant, then create/publish tax feature.
+Sign your RCS environment in to the same tenant as your Finance environment, and then create and publish the tax feature.
 
 ### Solution 2
-Share the tax feature to the tenant of *Finance and Operation* in *Regulatory Configuration Service*
-1. Go to *Regulatory Configuration Service*
-2. Globalization features > Tax Calculation.
-3. Focus on the feature which you want to share. go to the tab **Organizations** which is after **Versions**.
-![image.png](media/ShareTaxFeature.png)
-4. Click Share with, and fill the **Organization domain name**, like **contoso.onmicrosoft.com**
+Share the tax feature to the Finance tenant in RCS.
+1. In RCS go to **Globalization features** > **Tax Calculation**.
+2. Select the feature you want to share, and on the **Organizations** tab, select **Share with**.
+
+  ![image.png](media/ShareTaxFeature.png)
+  
+3. In the **Organization domain name** field, enter a name. For example, **contoso.onmicrosoft.com**.
+4. Select **Share**.
+
+
