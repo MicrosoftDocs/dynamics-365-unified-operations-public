@@ -56,7 +56,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Customer management  | Enable enhanced async customer creation  | This feature enables capturing title, affiliations, and second contact information while creating a customer in asynchronous mode.  <!-- Refer to [Synchronous and asynchronous customer](/synchronous-and-asynchronous-customers.md) for more details. --> |
+| Customer management  | Enable enhanced async customer creation  | This feature enables capturing title, affiliations, and second contact information while creating a customer in asynchronous mode.  Refer to [Asynchronous customer creation mode](../async-customer-mode.md) for more details. |
 | Headquarters setup   |  Run "Initialize commerce scheduler" after Headquarters is updated |  [Commerce Data Exchange best practices](../dev-itpro/cdx-best-practices.md) |
 
 
@@ -67,7 +67,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 Dynamics 365 Commerce 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes 
-For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the <!-- Add correct link --> [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f).
+For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f).
 
 For Commerce-specific breaking changes, view the [Dynamics 365 Commerce online SDK FAQ](../e-commerce-extensibility/sdk-faq.md).
 
