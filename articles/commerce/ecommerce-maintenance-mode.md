@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to enable e-commerce maintenance and build a custom maintenance mode page.  Maintenance mode is generally used when the site needs to be taken down temporarily or during site development to block access to the entire site.  When maintenance mode is enabled, a static page is shown or a custom page can be created.
+This topic describes how to enable e-commerce maintenance mode and build a custom maintenance mode page if needed.  Maintenance mode is generally used when the site needs to be taken down temporarily or during site development to block access to the entire site.  When maintenance mode is enabled, a static page is shown or a custom page can be created.
 
 ## Enable maintenance mode
 
