@@ -163,16 +163,20 @@ For some pages that include lists, the **Add to workspace** personalization feat
 
 - To add a list to a workspace, first sort or filter the list on the page so that it shows the information as you want it to appear in the workspace. (If the **Saved views** feature is turned on, you can't continue until you save a view that has these conditions.) Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **List**. After you select **Configure**, a dialog box appears, where you can select the columns that should appear in the list in the workspace. You can also specify the label that is used for the list in the workspace.
 - To add a tile to a workspace, first filter the list on the page so that it shows the data that should be summarized or that you want quick access to. (If the **Saved views** feature is turned on, you can't continue until you save a view that has these conditions.) Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **Tile**. After you select **Configure**, a dialog box appears, where you can specify the label that should be used for the tile in the workspace. You can also specify whether the tile should show a count. After the tile is added to the workspace, you can select it to open the current page from the workspace. You can then view the filtered list that is associated with the tile.
+    - If the **Allow users to select and change tile sizes** feature, which is available starting in 10.0.26, is enabled, you can select one of four available **Tile sizes** for your new tile in the **Configure tile** dialog. This feature also allows you to adjust the tile size after it's created directly from the workspace.   
 - To add a link to a workspace, first filter the list on the page so that it shows the data that you're interested in. (If the **Saved views** feature is turned on, you can't continue until you save a view that has these conditions.) Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **Link**. After you select **Configure**, a dialog box appears, where you can specify the label that should be used for the link. You can also optionally specify a label for the section where this link can be placed. If that section doesn't exist, a new section will be created.
 
 > [!NOTE]
-> As of version 10.0.25, when you configure your list, tile, or link, you might also have to select the workspace views that you want to add the element to if the **(Preview) Saved views support for workspaces** feature is enabled. The available workspace views will appear in the **Workspace options** section of each **Configure** dialog box. 
+> -  As of version 10.0.25, when you configure your list, tile, or link, you might also have to select the workspace views that you want to add the element to if the **(Preview) Saved views support for workspaces** feature is enabled. The available workspace views will appear in the **Workspace options** section of each **Configure** dialog box. 
 
 After you've added a list, tile, or link to a workspace, you can open that workspace and rearrange the elements in it as you want.
 
 ### Adding a summary from a workspace to a dashboard
 
 Some workspaces contain count tiles (that is, tiles that have numbers on them), and you might want those tiles to appear on your dashboard too. In a workspace, right-click a count tile, select **Personalize**, and then, in the tile's property window, select **Pin to dashboard**. The next time that you open and refresh the dashboard, the count will appear below the navigation tile for that workspace. You can select that count to go directly to the data that it represents.
+
+### Changing the size of a tile
+Starting in version 10.0.26, the **Allow users to select and change tile sizes** feature allows users to modify the size of any non-KPI tile via personalization. In a workspace, right-click a tile, select **Personalize**, and then, in the tile's property window, select the desired size from the **Tile size** options. The tile size will adjust immediately. If the **(Preview) Saved views support for workspaces** feature is enabled, you can save this personalization to a workspace view.  
 
 ### Personalizing your dashboard
 
