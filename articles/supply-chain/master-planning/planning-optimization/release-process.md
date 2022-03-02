@@ -26,10 +26,9 @@ Environments that use Planning Optimization automatically receive the latest rel
 
 Because notifications aren't shown when Planning Optimization is updated in your environment, you can review the release notes in the following table to determine when changes were released and what functionality they introduced. This table shows the changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
-<!-- KFM: Add 10.0.25 features to the table?: Planning Optimization centralized calendar maintenance, Planning Optimization suggestions to optimize existing supply, Planned orders simplified -->
-
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality, and stability improvements.<p>Planning Optimization centralized calendar maintenance<p>Planning Optimization suggestions to optimize existing supply | No feature management is required. | March 7-11, 2022 |
 | <p>Added planning priority support for production orders. | Available with version 10.0.25 as part of the feature named *Priority driven MRP support for Planning Optimization*. | November 12-18, 2021 |
 | <p>General performance, quality, and stability improvements. | No feature management is required. | November 12-18, 2021 |
 | <p>Added support for process time calculation formulas, production route with overlap, and production operation number on requirement transactions.</p><p>Enhanced error messages for production scheduling related to timeout, capacity could not be found, and cyclic route.</p><p>Improved consistency when calculating receipt dates and issue dates on both planned orders and firmed orders.</p><p>General performance, quality, and stability improvements. | Feature name: *Infinite capacity scheduling for Planning Optimization* | October 22-27, 2021 |
