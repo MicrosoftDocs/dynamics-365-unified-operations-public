@@ -39,9 +39,21 @@ Maintenance mode can be enabled from within the site builder tool.  Select the s
 
 When maintenance mode is turned on, browsing to the web site will show the default maintenance mode image as shown below:
 
-![Maintenance mode in site builder](media/maintenance-mode-2.png)
+![Maintenance mode on e-commerce site](media/maintenance-mode-2.png)
 
 
 ## Create a custom maintenance mode page
 
-From within the site builder tool, create a new page that will be the 
+1. From within the site builder tool, create a new page that will be the used for the maintenance page as shown in the below example:
+
+![Create custom page in site builder](media/maintenance-mode-3.png)
+
+2. Create a new alias under the URLs tab as shown below:
+
+![Create alias in site builder](media/maintenance-mode-4.png)
+
+Select the new page and provide the alias name **default-maintenance** and then ensure the page is published.
+
+![Create alias in site builder](media/maintenance-mode-5.png)
+
+
