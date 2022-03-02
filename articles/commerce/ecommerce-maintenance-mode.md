@@ -33,8 +33,15 @@ This topic describes how to enable e-commerce maintenance and build a custom mai
 
 ## Enable maintenance mode
 
-Maintenance mode can be enabled from within the site builder tool.  Select the site you wish to use and select the "Extensions" option under the "Site Settings" tab as shown in the below image.  Enalbe the **Maintenance mode** checkbox then select "Save and publish" at the top to make it active.
+Maintenance mode can be enabled from within the site builder tool.  Select the site you wish to use and select the "Extensions" option under the "Site Settings" tab as shown in the below image.  Enable the **Maintenance mode** checkbox then select "Save and publish" at the top to make it active.
 
 ![Maintenance mode in site builder](media/maintenance-mode-1.png)
 
+When maintenance mode is turned on, browsing to the web site will show the default maintenance mode image as shown below:
+
+![Maintenance mode in site builder](media/maintenance-mode-2.png)
+
+
 ## Create a custom maintenance mode page
+
+From within the site builder tool, create a new page that will be the 
