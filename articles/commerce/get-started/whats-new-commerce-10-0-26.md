@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.26 (May 2022)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.26. 
 author: josaw1
-ms.date: 03/02/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,13 +40,13 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation. To determine how to turn on a feature, see the *Enabled by* column. For more information about how to use feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We might update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was initially published.
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-|         |        |            |  |
-
-
+|   Globalization      |    [Payments in installments with the Dynamics 365 Payment Connector for Adyen for Brazil](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/payments-installments-dynamics-365-payment-connector-adyen-brazil)    |   This feature extends the out-of-the-box Dynamics 365 Payment Connector for Adyen to support paying in installments for Brazil. For more information about the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](../dev-itpro/adyen-connector.md)       | For more information, see [Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics). |
+|   Globalization      |    [Direct fiscal integration from POS](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/direct-fiscal-integration-pos)    |     The feature extends the fiscal integration framework by adding a capability to create fiscal connectors that will be executed in POS. This type of connector will communicate with a fiscal device or service that provides an HTTP API and will not require a dedicated physical machine in the store to be plugged in or deployed on. This release provides a sample of the direct fiscal integration from POS for Austria, the Czech Republic, and Germany.   | Commerce shared parameters page. For more information, see [Set up the fiscal integration for Commerce channels](../localizations/setting-up-fiscal-integration-for-retail-channel.md). |
+|   Globalization      |    [Enhanced fiscal connector configuration](/dynamics365-release-plan/2022wave1/commerce/dynamics365-commerce/enhanced-fiscal-connector-configuration)    |   An option to disable fiscal registration for selected POS registers in a fiscal registration-enabled store. Store associates will be able to use the registers for non-sales operations (such as inventory management operations), and to create sales that can then be completed on fiscal registration-enabled registers          | Commerce shared parameters page. For more information, see [Set up the fiscal integration for Commerce channels](../localizations/setting-up-fiscal-integration-for-retail-channel.md). |
 
 ## Feature enhancements included in this release
 
