@@ -88,9 +88,7 @@ The product related templates for duplicate record sharing are:
 
 The product template for single record sharing is:
 
-- SRS products
-
-<!-- KFM: The above is not the final name (check with Lars-Bo). -->
+- Products
 
 ## Shared product-related tables and fields
 
@@ -124,7 +122,7 @@ Therefore, only one of the following applies:
 
 ### Country specific
 
-Most country-specific fields are disabled by default on product tables because they are not supported. This means that if you want to share these fields, you must add them as an extension <!-- KFM: Please clarify "add them as an extension". (Check with Lars-Bo) -->.
+Most country-specific fields are disabled by default on product tables because they are not supported. This means that if you want to share these fields, you must add them as an extension (add the country specific tables to the policy and select the needed fields to be shared).
 
 ### Default unit of measure
 
@@ -163,11 +161,11 @@ Number sequences may be used for product numbers and other purposes. Number sequ
 
 ### Dual-write
 
-Dual-write isn't currently supported when using cross-company data sharing for products. <!-- KFM: //Do we have a check for this? Check with Par. Is there any check anywhere that prevents when enabling it? Or how would the experience be? -->
+Dual-write isn't currently supported when using cross-company data sharing for products. 
 
 ### Dynamics 365 Commerce
 
-Dynamics 365 Commerce is not supported when using cross-company data sharing for products. <!-- KFM: //Do we have a check for this? Check with Par -->
+Dynamics 365 Commerce is not supported when using cross-company data sharing for products. 
 
 ### Financial dimensions
 
@@ -175,7 +173,7 @@ Fields that reference financial dimensions (for example Ledger or Default dimens
 
 ### Vendors
 
-There is no template policy for the vendors table. The vendors table (`vendtable`) is marked as a single record shared table, so you can actually create a policy for single record sharing and add the table. <!-- KFM: //Should we recommend this? Has it been tested? Ask Par -->
+There is no template policy for the vendors table. The vendors table (`vendtable`) is marked as a single record shared table, so you can actually create a policy for single record sharing and add the table.
 
 ### Item sales tax group and item purchase tax groups
 
