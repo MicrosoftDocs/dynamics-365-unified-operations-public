@@ -4,7 +4,7 @@
 title: Waybill (Carta de Porte) complement
 description: This topic explains how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement.
 author: v-oloski
-ms.date: 09/08/2021
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,7 +52,7 @@ This section provides information about the fields that are required on the **Tr
 > 
 > Also starting from version 10.0.23 (build 10.0.1037.149) a user can select **Weight unit**. Before this implementation, weight unit **XAG** has been set as a fixed value in a xml file. If the value in this field is empty then the corresponding attribute is filled in with **XAG** in xml file.   
 > 
-> Starting from version 10.0.23 (build 10.0.1037.144) in addition to the data for two drivers, the user can fill in Transportation actors (**Transportation actors** button on Action pane). First the Actors catalog should be filled in (**Organization administration** \> **Setup** \> **SAT clarification** \> **Transportation**).      
+> Starting in version 10.0.23 (build 10.0.1037.144), in addition to the data for two drivers, you can fill in transportation actors  by selecting **Transportation actors** on the Action Pane. However, the the actors catalog should be filled in first by going to**Organization administration** \> **Setup** \> **SAT clarification** \> **Transportation**.     
 
 ### General FastTab
 
@@ -178,7 +178,8 @@ After you enable the feature, follow these steps to enter additional hazardous m
 > [!NOTE] 
 > To select values for the **Regulation code** and **Packing group** fields, first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordence with the SAT catalogs **c_MaterialPeligroso** and **c_TipoEmbalaje** which are located under **Product information management** > **Setup** > **Hazardous material shipping documentation**.    
 
-> [!NOTE] Starting from version 10.0.23 (build 10.0.1037.149) you can work with the **Display hazardous status** option (outpu the **matrialPeligrosso** attribute in a xml file). You can set **Hazardous materials** option to **Yes**, if this **Display hazardous status** option is set to **Yes**. 
+> [!NOTE] 
+> Starting in version 10.0.23 (build 10.0.1037.149), you can work with the **Display hazardous status** option to output the **matrialPeligrosso** attribute in a xml file. If **Display hazardous status** is set to **Yes**, you can set **Hazardous materials** to yes. 
 
    ![Item hazardous materials page.](media/latam-mx-hazardous2.png)
 
