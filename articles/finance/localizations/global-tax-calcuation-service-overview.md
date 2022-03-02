@@ -4,7 +4,7 @@
 title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -142,7 +142,7 @@ The following transactions are supported in version 10.0.23:
 
 - Free text invoice
 
-The following transactions are supported in version 10.0.26 with limitation, see detail supported scope here [Tax calculation data model](https://go.microsoft.com/fwlink/?linkid=2188686): 
+The following transactions are supported, with limitation, in version 10.0.26. For more information about the scope of support, see [Tax calculation data model](https://go.microsoft.com/fwlink/?linkid=2188686): 
 
 - General journal
 - Vendor invoice journal
