@@ -24,7 +24,7 @@ The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysad
 
 ## How to get the cross-company product sharing public preview
 
-To sign up for the public preview for this feature, send your LCS environment ID by email to the [cross-company product sharing team](mailto:productsharing@service.microsoft.com). After you're approved for the program, the team will send you a follow-up email that contains the information required to start setting up the feature.
+To sign up for the public preview for this feature, send your LCS environment ID by email to the [cross-company product sharing team](mailto:productsharing@service.microsoft.com). The Microsoft team responsible for the feature will send you a follow-up email to get in contact and evaluate if your business is a match for the functionality to finally evaluate if you can join the preview functionality.
 
 ## Prepare your system to enable cross-company data sharing for products
 
