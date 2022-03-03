@@ -176,7 +176,7 @@ After you've added a list, tile, or link to a workspace, you can open that works
 Some workspaces contain count tiles (that is, tiles that have numbers on them), and you might want those tiles to appear on your dashboard too. In a workspace, right-click a count tile, select **Personalize**, and then, in the tile's property window, select **Pin to dashboard**. The next time that you open and refresh the dashboard, the count will appear below the navigation tile for that workspace. You can select that count to go directly to the data that it represents.
 
 ### Changing the size of a tile
-Starting in version 10.0.26, the **Allow users to select and change tile sizes** feature allows users to modify the size of any non-KPI tile via personalization. In a workspace, right-click a tile, select **Personalize**, and then, in the tile's property window, select the desired size from the **Tile size** options. The tile size will adjust immediately. If the **(Preview) Saved views support for workspaces** feature is enabled, you can save this personalization to a workspace view.  
+Starting in version 10.0.26, the **Allow users to select and change tile sizes** feature allows users to modify the size of any non-KPI tile via personalization. In a workspace, right-click a tile, and then select **Personalize**. In the tile's property window, select the desired size from the **Tile size** options. The tile size will adjust immediately. If the **(Preview) Saved views support for workspaces** feature is enabled, you can save this personalization to a workspace view.  
 
 ### Personalizing your dashboard
 
