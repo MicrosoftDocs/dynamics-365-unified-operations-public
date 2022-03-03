@@ -4,7 +4,7 @@
 title: Copy an e-commerce site
 description: This topic describes how to copy an existing e-commerce site within or between e-commerce environments in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-ms.date: 03/01/2022
+ms.date: 03/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
