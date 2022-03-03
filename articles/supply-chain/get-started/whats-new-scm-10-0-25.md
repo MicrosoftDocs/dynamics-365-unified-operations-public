@@ -37,7 +37,7 @@ The following table lists the features that are included in this release. We mig
 | Manufacturing | [Register material consumption on scale units](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md) | Feature management:<br>*Register material consumption on the mobile app on a scale unit* |
 | Planning | [Planning Optimization centralized calendar maintenance](//dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Calendars and master planning](../master-planning/supply-chain-calendars-master-planning.md) | Enabled by default |
 | Planning | [Planning Optimization suggestions to optimize existing supply](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Action messages](../master-planning/action-messages.md) | Enabled by default |
-| Planning | Planned orders simplified | [Planned orders simplified](../master-planning/planning-optimization/planned-orders-simplified.md ) <!-- KFM: Confirm whether this feature is part of 10.0.25. Dates on release plan is not consistent with this. --> | Feature management:<br>*Planned orders simplified* |
+| Planning | Planned orders simplified | [Planned orders simplified](../master-planning/planning-optimization/planned-orders-simplified.md ) | Feature management:<br>*Planned orders simplified* |
 
 ## Feature enhancements included in this release
 
