@@ -46,10 +46,7 @@ To prevent your purchase agreement from being used and confirmed, mark the agree
 You can identify a primary responsible worker and secondary responsible worker on the purchase agreement classification. These values will be inherited by the resulting purchase agreement. You're not required to add responsible workers to the purchase agreement, and they can be modified directly on a per case basis on the purchase agreement itself. You can't specify a secondary responsible worker without a primary responsible worker, although you don't have to have a secondary responsible worker. You can't specify the same worker as both the primary and secondary responsible worker.
 
 > [!IMPORTANT]
-> Before you can use the responsible party feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-> 
-> - **Module:** *Procurement and sourcing*
-> - **Feature name:** *Purchase agreement responsible party*
+> To use the responsible party feature, it must be turned on in your system. As of Supply Chain Management 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Purchase agreement responsible party* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Commitment types
 Each line in a purchase agreement is a commitment to buy something. You can use lines from multiple purchase orders (POs) to fulfill the commitment. There are four types of commitments:

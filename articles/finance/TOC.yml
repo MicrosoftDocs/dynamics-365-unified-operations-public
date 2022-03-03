@@ -218,7 +218,7 @@
           href: accounts-payable/vendor-copy.md
         - name: Record a vendor invoice in the invoice journal
           href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
-        - name: Apply a payment to the invoice journal
+        - name: Apply a payment schedule to the invoice journal
           href: accounts-payable/payment-invoice-journal.md
       - name: Audit invoices and key data in accounts payable
         href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
@@ -408,6 +408,12 @@
           href: accounts-receivable/rev-rec-reallocation-scenario-3.md
         - name: Revenue recognition reallocation scenario 4
           href: accounts-receivable/rev-rec-reallocation-scenario-4.md
+      - name: Subscription billing
+        items:
+        - name: Subscription billing overview
+          href: accounts-receivable/subscription-billing-summary.md
+        - name: Set up billing schedules
+          href: accounts-receivable/sb-billing-schedules.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
@@ -1371,21 +1377,87 @@
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
         - name: Electronic Invoicing
-          items: 
+          items:
           - name: Electronic Invoicing overview
             href: localizations/e-invoicing-service-overview.md?toc=/dynamics365/finance/toc.json
-          - name: Electronic Invoicing administration components
-            href: localizations/e-invoicing-service-administration.md?toc=/dynamics365/finance/toc.json
-          - name: Configure Electronic Invoicing in Regulatory Configuration Services (RCS)
-            href: localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-          - name: Issue electronic invoices in Finance and Supply Chain Management
-            href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
-          - name: Create an Azure storage account and a Key Vault
-            href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
-          - name: Usage management dashboard
-            href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
-          - name: Get started 
+          - name: Electronic Invoicing administration and integration components
+            href: localizations/e-invoicing-administration-integration-components.md?toc=/dynamics365/finance/toc.json
+          - name: Set up Electronic Invoicing
+            items: 
+            - name: Setting up Electronic Invoicing
+              href: localizations/e-invoicing-set-up-overview.md?toc=/dynamics365/finance/toc.json
+            - name: Sign up and install Electronic Invoicing
+              items: 
+              - name: Electronic Invoicing sign up and installation overview
+                href: localizations/e-invoicing-sign-up-install.md?toc=/dynamics365/finance/toc.json
+              - name: Install the add-in for microservices in Lifecycle Services
+                href: localizations/e-invoicing-install-add-in-microservices-lcs.md?toc=/dynamics365/finance/toc.json
+              - name: Set up Regulatory configuration services (RCS)
+                href: localizations/e-invoicing-set-up-rcs.md?toc=/dynamics365/finance/toc.json
+              - name: Power platform plug-in admin reference
+                href: localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/finance/toc.json   
+            - name: Set up Azure Resources
+              items:
+              - name: Set up Azure resources for Electronic invoicing
+                href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
+              - name: Create an Azure Key Vault in the Azure portal
+                href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+              - name: Create an Azure storage account in the Azure portal
+                href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
+              - name: Configure a SharePoint connection
+                href: localizations/e-invoicing-create-sharepoint-connection.md?toc=/dynamics365/finance/toc.json
+            - name: Set up environments
+              items:
+              - name: Configure service environments and connected applications
+                href: localizations/e-invoicing-configure-service-environments-connected-applications.md?toc=/dynamics365/finance/toc.json
+              - name: Service environments
+                href: localizations/e-invoicing-service-environments.md?toc=/dynamics365/finance/toc.json
+              - name: Customer certificates and secrets
+                href: localizations/e-invoicing-customer-certificates-secrets.md?toc=/dynamics365/finance/toc.json
+              - name: Connected applications
+                href: localizations/e-invoicing-connected-applications.md?toc=/dynamics365/finance/toc.json
+          - name: Work with Globalization features
             items:
+            - name: Work with Globalization features overview
+              href: localizations/e-invoicing-working-globalization-features.md?toc=/dynamics365/finance/toc.json
+            - name: Import a feature from the Global repository
+              href: localizations/e-invoicing-import-feature-global-repository.md?toc=/dynamics365/finance/toc.json
+            - name: Create a new Globalization feature
+              href: localizations/e-invoicing-create-new-globalization-feature.md?toc=/dynamics365/finance/toc.json
+            - name: Work with configurations
+              href: localizations/e-invoicing-work-configurations.md
+            - name: Work with feature setup
+              href: localizations/e-invoicing-feature-setup.md?toc=/dynamics365/finance/toc.json
+            - name: Complete, publish, and deploy a Globalization feature
+              href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
+            - name: Share with other organizations
+              href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+            - name: Process incoming electronic documents
+              items: 
+              - name: Processing incoming electronic documents
+                href: localizations/e-invoicing-process-incoming-electronic-documents.md
+              - name: Configure an email channel
+                href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
+              - name: Configure a SharePoint channel
+                href: localizations/e-invoicing-configure-sharepoint-channel.md
+            - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
+              items: 
+            - name: Activate and set up integration with Electronic Invoicing
+              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+            - name: Set up Electronic Invoicing parameters
+              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+            - name: Work with Electronic Invoicing
+              items:
+              - name: Submit electronic documents to Electronic Invoicing
+                href: localizations/e-invoicing-submit-electronic-documents.md?toc=/dynamics365/finance/toc.json
+              - name: Work with the Electronic documents submission log
+                href: localizations/e-invoicing-submission-log.md?toc=/dynamics365/finance/toc.json
+              - name: Work with the Electronic documents receiving log
+                href: localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/finance/toc.json
+          - name: Country-specific scenarios
+            items:
+            - name: Availability of Electronic Invoicing features
+              href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing service administration
               href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing
@@ -2026,6 +2098,8 @@
           href: localizations/emea-entry-certificates.md
         - name: EU sales list reporting
           href: localizations/emea-eu-sales-list.md
+        - name: Example for generic European Union (EU) sales list
+          href: localizations/emea-eu-sales-list-example.md
         - name: Exchange rate adjustments
           href: localizations/emea-exchange-rate-adjustments.md
         - name: File formats for methods of payment
@@ -2036,8 +2110,6 @@
           href: localizations/emea-credit-note-reverse-fixed-asset-sale.md
         - name: Generate a transfer document for an internal inventory transfer
           href: localizations/tasks/transfer-document-internal-inventory-transfer.md
-        - name: Generate an EU sales list report
-          href: localizations/tasks/eur-00011-eu-sales-list-report.md
         - name: ISO20022 files
           items:
           - name: Import ISO20022 files
@@ -2108,8 +2180,6 @@
           href: accounts-receivable/sepa-direct-debit-overview.md
         - name: Set up customer and vendor compensation
           href: localizations/emea-compensation-customer-vendor-transactions.md
-        - name: Set up EU sales list reporting
-          href: localizations/tasks/eur-00011-eu-sales-list-reporting.md
         - name: Set up payment slip format for project invoices
           href: localizations/tasks/set-up-payment-slip-format-project-invoices.md
         - name: Set up signers for print forms
@@ -2260,6 +2330,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
         - name: Print a separate label for credit memos that originate from sales
           href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
+        - name: EU sales list
+          href: localizations/emea-deu-eu-sales-list.md
       - name: Hungary
         items:
         - name: Hungary overview
@@ -2336,6 +2408,8 @@
             href: localizations/apac-ind-news-letter-10-0-01.md
           - name: What's new or changed in 10.0.0
             href: localizations/apac-ind-news-letter-10-0-00.md
+        - name: Audit trail and edit logs for accounting software
+          href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
         - name: Indirect taxes
           items: 
           - name: India GST

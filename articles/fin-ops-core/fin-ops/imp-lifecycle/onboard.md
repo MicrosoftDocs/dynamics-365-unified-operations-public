@@ -4,7 +4,7 @@
 title: Onboard an implementation project
 description: This topic describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
-ms.date: 01/26/2022
+ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,7 +39,7 @@ After your organization has purchased a subscription to Finance and Operations, 
 2. Sign in with the tenant administrator credentials.
 3. Go to **Billing > Products & services** and confirm that there is an active subscription for the application that you want to deploy. 
    > [!NOTE]
-   > If you do not see an active subscription, consult with your licensing partner to confirm the status of the subscription transaction. It is important to confirm that the subscriptions were purchased for the correct Azure AD tenant.  By default, all Microsoft online services should be running on the same Azure AD tenant. The most frequent cause for licensing delays is that subscriptions are inadvertently placed on an incorrect Azure AD tenant. 
+   > If you do not see an active subscription, consult with your licensing partner to confirm the status of the subscription transaction. It is important to confirm that the subscriptions were purchased for the correct Azure AD tenant.  By default, all Microsoft online services should be running on the same Azure AD tenant. The most frequent cause for onboarding delays is that subscriptions are inadvertently placed on an incorrect Azure AD tenant. 
 4. If the subscription in question is shown as active, proceed to the next step by signing in to LCS to trigger the Implementation Project creation flow.
 5. Open another private browser tab and go to [Lifecycle Services](https://lcs.dynamics.com). Select **Login** to access LCS with your current Tenant Admin credentials.
    > [!NOTE]

@@ -194,9 +194,9 @@ If needed, you can cancel a wave that has been processed. To cancel a wave, and 
 
 Use the **Wave batch job details** page to inspect the batch jobs and related tasks associated with any wave. This is especially useful for troubleshooting a wave that has failed. Without this feature, only administrators will typically have access to batch job details. The **Wave batch job details** page can be made available to non-admin users and provides a read-only view of batch jobs and related tasks.
 
-### Enable the Wave batch job details page
+### Turn the Wave batch job details page on or off
 
-If your system doesn't already include the **Wave batch job details** page, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Wave batch job details* feature.
+As of Supply Chain Management version 10.0.25, the **Wave batch job details** page is turned on by default. Admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Use the Wave batch job details page
 

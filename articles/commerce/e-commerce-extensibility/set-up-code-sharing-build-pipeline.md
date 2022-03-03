@@ -4,7 +4,7 @@
 title: Set up Azure DevOps code sharing and create a build pipeline
 description: This topic describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Dynamics 365 Commerce online extensibility code. 
 author: samjarawan
-ms.date: 03/09/2020
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -201,6 +201,14 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 1. Select the **drop** folder to expand it and see the zip file that was created as part of the pipeline run. Select the **Download** button to download the file.
 
     !["Artifacts" page showing the pipeline run zip file under the expanded "Drop" folder](media/code-sharing-24.png)
+
+## Increase Node memory size
+
+The default memory setting should be sufficient for most customization scenarios. However, if your application needs more heap space (for example, if you see a "JavaScript heap out of memory" build error) you can specify the environment variable in the **scripts** section of the package.json file by adding **--max_old_space_size=4096**, as shown in the following example.
+
+```json
+"build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
+```
 
 ## Additional resources
 

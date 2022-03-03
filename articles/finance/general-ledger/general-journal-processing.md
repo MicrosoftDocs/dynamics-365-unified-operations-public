@@ -4,7 +4,7 @@
 title: General journal processing
 description: This topic describes capabilities in Microsoft Dynamics 365 Finance that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
 author: kweekley
-ms.date: 08/09/2019
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -106,7 +106,7 @@ A button is available on the journal page to unlock a journal that has a status 
 The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the feature named **Resetting the workflow status for journals** on the **Feature management** page.
 
 ## Delete Journal Lines
-The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**.
+The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**. This feature impacts extensions on the **LedgerJournalTrans** table and it's **Delete** method, as the set of lines are removed without calling each line's **Delete** method. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

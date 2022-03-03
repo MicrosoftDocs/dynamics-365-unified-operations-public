@@ -22,13 +22,21 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## January 2022 release 
 
+
+The January 2022 release of [Dual-write core version 1.1.33](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes. 
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Performance| Improves performance of Microsoft Dataverse entity retrieval. | General availability |
+| Tracing| Limits excess trace logs during entity handling. | General availability |
+
 The January 2022 release of [Dual-write application orchestration solution version 2.3.3.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) contains the following bug fixes. 
 
 | Feature | Description |Status |
 |------|---------|-------|
 | Bug fix| In the Customer Engagement apps, the quote line information form filters warehouses by site, instead of by company. | General availability |
 | Bug fix| In Finance and Operations apps, when a product is released without an item model group set, the operation fails due to a blank value being set for the **FieldServiceProductType** attribute in Customer Engagement apps. This has been fixed by allowing the **FieldServiceProductType** attribute to allow a “NotAvailable” value. | General availability |
-| Bug fix| When Microsoft Dataverse sends an updated sales price of 0.00, it doesn't get updated in Finance and Operations apps. | General availability |
+| Bug fix| When Dataverse sends an updated sales price of 0.00, it doesn't get updated in Finance and Operations apps. | General availability |
 
 This release includes one map change named [CDS released distinct products] - [products]. In order to take the map changes, apply "Dynamics365FinanceAndOperationsDualWriteMaps" solution version 2.3.3.2 and update the [CDS released distinct products] - [products] map to version 1.0.0.3.
 
