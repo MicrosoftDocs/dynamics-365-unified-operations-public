@@ -4,7 +4,7 @@
 title: Localize a module
 description: This topic describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
 author: samjarawan
-ms.date: 09/14/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
