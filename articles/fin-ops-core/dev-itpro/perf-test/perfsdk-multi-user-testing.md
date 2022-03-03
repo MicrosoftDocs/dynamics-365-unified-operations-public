@@ -68,7 +68,7 @@ The following configurations must be set up on the development machine that is u
 9. Double-tap (or double-click) the certificate file to open it. On the **Details** tab, scroll down until you find the **Thumbprint** section. Select **Thumbprint**, and copy the ID in the text box. Save this thumbprint to update the **CloudEnvironment.config** thumbprint for the Performance SDK.
 
 > [!NOTE]
-> Microsoft will automatically rotate the certificate before it expires. At that time, you must download a new version of the certificate. For self-service environments, the certificate will be rotated every 90 days, during a downtime window that is closest to the expiry. Downtime windows include customer-initiated package deployment, and database movement operations that target the environment.
+> Microsoft will automatically rotate the certificate before it expires. At that time, you must download a new version of the certificate. For self-service environments, the certificate will be rotated every 60 days, during a downtime window that is closest to the expiry. Downtime windows include customer-initiated package deployment, and database movement operations that target the environment.
 
 ## Prepare the PerfSDKSample solution for multi-user testing
 
