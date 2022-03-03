@@ -2,9 +2,9 @@
 # required metadata
 
 title: Change theme module strings
-description: This topic describes how to change module library strings from within a theme.
+description: This topic describes how to change module library strings from within a theme in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/14/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,11 +29,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to change module library resource strings. In some cases modules expose strings that are displayed as configurations within a module that can be configured in site builder, but other strings such as the text displayed for the 'sign in' button may be hard coded as module resource strings.  
+This topic describes how to change module library strings from within a theme in Microsoft Dynamics 365 Commerce.
+
+In some cases modules expose strings that are displayed as configurations within a module that can be configured in site builder, but other strings such as the text displayed for the sign-in button may be hardcoded as module resource strings.  
 
 ## Override a resource string for a theme
 
-To override resource strings for a theme, modify the global.json resource file located in the src/resources/modules directory using the pattern in the below example. To learn more about how resource strings are created see the [Localize a module](localize-module.md) topic, this will show you how to create a global.json file if one does not exist in your SDK.
+To override resource strings for a theme, modify the global.json resource file located in the src/resources/modules directory using the pattern in the following example. 
 
 ```json
 "{ThemeNamespace}.{ThemeName}.{ResourceString}": {
@@ -42,9 +44,11 @@ To override resource strings for a theme, modify the global.json resource file l
 }
 ```
 
+To learn more about how resource strings are created and how to create a global.json file if one does not exist in your software development kit (SDK), see [Localize a module](localize-module.md).
+
 ### Override resource strings for preinstalled themes
 
-To override resource strings for preinstalled themes (ie: fabrikam or starter), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text on the fabrikam theme.
+To override resource strings for preinstalled themes (for example, fabrikam or starter themes), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text on the fabrikam theme.
 
 ```json
 "@msdyn365-commerce-modules.fabrikam.signInLinkText": {
