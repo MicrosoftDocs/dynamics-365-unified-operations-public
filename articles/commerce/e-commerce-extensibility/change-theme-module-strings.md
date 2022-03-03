@@ -44,7 +44,7 @@ To override resource strings for a theme, modify the global.json resource file l
 }
 ```
 
-To learn more about how resource strings are created and how to create a global.json file if one does not exist in your software development kit (SDK), see [Localize a module](localize-module.md).
+To learn more about how resource strings are created and how to create a global.json file if one doesn't exist in your software development kit (SDK), see [Localize a module](localize-module.md).
 
 ### Override resource strings for preinstalled themes
 
