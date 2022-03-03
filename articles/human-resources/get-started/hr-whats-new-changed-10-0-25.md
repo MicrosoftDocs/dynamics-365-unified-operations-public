@@ -40,7 +40,7 @@ follows:
 
 The 10.0.25 release brings the first wave of capabilities in the infrastructure merge. During the infrastructure merge, Microsoft Dynamics 365 Human Resources will be merged
 with the Finance and Operations infrastructure. However, it will continue to be licensed as an independent application, like Dynamics 365 Finance and Dynamics 365 Supply Chain 
-Management. For more information about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](/human-resources/hr-infrastructure-merge-faq.md).
+Management. For more information about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](../../human-resources/hr-infrastructure-merge-faq.md).
 
 ## Features included in this release
 
@@ -50,8 +50,8 @@ initially published. If you want to use or turn off any of these features, you m
 
    | Feature name | Overview | Release status |
    |--------------|----------|----------------|
-   | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources parameters](/human-resources/hr-setup-parameters.md#general).| Generally available |
-   | Workflow experience enhancements | New **Submit** and **Approve** buttons were added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements).| Generally available | 
+   | Years of service calculation | A setup option lets you select the date that is used for the **Years of service** calculation. For more information, see [Configure Human resources parameters](hr-setup-parameters.md#general).| Generally available |
+   | Workflow experience enhancements | New **Submit** and **Approve** buttons were added to the **Application** page. For more information, see [Organization and personnel management workflow experience enhancements](../../dynamics365-release-plan/2020wave2/human-resources/organization-personnel-management-workflow-experience-enhancements).| Generally available | 
    | Print performance reviews | You can print performance reviews in PDF format. For more information, see [Performance management](/human-resources/hr-develop-performance-management-overview.md). | Generally available | 
    | Custom links in **Manager self service** | You can create custom links that appear in the **Related links** section of **Manager self service**. For more information, see [Create custom links in Manager self service](/human-resources/hr-employee-manager-self-service-custom-links.md). | Generally available | 
    | Cross company compensation view | Users can view compensation plans in **Manager self service** across all legal entities, without having to switch companies. For more information, see [Employee and Manager self service overview](/human-resources/hr-employee-manager-self-service-overview.md#compensation-tab). | Generally available | 
