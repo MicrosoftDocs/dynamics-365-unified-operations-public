@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: E-commerce maintenance mode
+title: Enable and activate e-commerce maintenance mode
 description: This topic describes how to enable e-commerce maintenance and build a custom maintenance mode page in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 03/03/2022
@@ -25,7 +25,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# E-commerce maintenance mode
+# Enable and activate e-commerce maintenance mode
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,7 +53,7 @@ After maintenance mode is enabled and activated, browsing to the e-commerce site
 
 To create a custom maintenance mode page in site builder, follow these steps.
 
-1. From within site builder, create a new page that will be the used for the maintenance page, as shown in the following example illustration.
+1. From within site builder, create a new custom maintenance mode page as shown in the following example illustration.
 
     ![Create custom page in site builder](media/maintenance-mode-3.png)
 
