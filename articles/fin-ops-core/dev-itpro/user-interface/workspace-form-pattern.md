@@ -4,7 +4,7 @@
 title: Workspace form pattern
 description: This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
 author: jasongre
-ms.date: 02/08/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
