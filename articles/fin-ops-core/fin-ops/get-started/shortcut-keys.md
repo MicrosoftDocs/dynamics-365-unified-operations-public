@@ -206,7 +206,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
 
 > [!NOTE]
-> The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (i.e. the Alt-M key chord shortcuts) to move quickly between the regions on a page.
+> The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (such as Alt+M key chord shortcuts) to move quickly between the regions on a page.
 
 ## [Personalization](personalize-user-experience.md) shortcuts 
 
