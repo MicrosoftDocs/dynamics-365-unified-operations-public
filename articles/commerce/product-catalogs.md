@@ -148,17 +148,17 @@ As discussed earlier that catalog 0 is not a valid catalog for B2B users when th
 
 
 These are the cases that are possible 
-1.	A customer introduced their own data action that calls a product-related API or calls a product related data action https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/data-actions. Required steps from the customer:
+1.	A customer introduced their own data action that calls a product-related API or calls a product related data action. For more information, see [Data actions](e-commerce-extensibility/data-actions.md). Required steps from the customer:
     1. If it uses a direct API call, update data action to pass catalog id, e.g.: 
 ![Customization1_a](./media/customization1_a.png)
 
     1. If it calls a different product-related data action inside the customization, the code needs to be updated to pass some new parameters such as requestContext (which is used to retrieve the current catalog id):
 ![Customization1_b](./media/customization1_b.png)
 
-2. A customer has an overridden data action https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/data-action-overrides
+2. A customer has an overridden data action. For more information, see [Data action overrides](e-commerce-extensibility/data-action-overrides.md). 
 Required steps: update the data action similar to #1.
 
-3. A customer has module ejection, view extension, or created a new module, which includes calls to APIs or calls to data actions: https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/modules-overview#clone-a-module-library-module
+3. A customer has module ejection, view extension, or created a new module, which includes calls to APIs or calls to data actions. For more information, see [Clone a module library module](e-commerce-extensibility/modules-overview.md#clone-a-module-library-module).
 Required steps: update similar to #1, e.g.:
 ![Customization3](./media/customization3.png)
 
