@@ -4,7 +4,7 @@
 title: Fiscal registration service integration sample for Germany
 description: This topic provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 02/22/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
