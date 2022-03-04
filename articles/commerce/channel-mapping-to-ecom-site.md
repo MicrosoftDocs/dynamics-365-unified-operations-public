@@ -44,6 +44,8 @@ The below image shows the default online channels that are deployed with Dynamic
 
 E-commerce sites represent the set of pages that make up the website that customers use to shop.  E-commerce sites are managed from within the site builder tool.
 
+![Site builder e-commerce site list](media/channel-mapping-2.png)
+
 ## Channel scenarios
 
 The below list out common scenarios and how to configure each one.
