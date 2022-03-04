@@ -35,6 +35,13 @@ This topic describes the steps and information required to create a new e-commer
 
 When you license the Dynamics 365 Commerce capabilities, site builder will be provisioned with a starter site that you can use as a basis for your own site. However, if you want to start from scratch or if you want to establish a second site, you will need to establish a new site in the site authoring environment. 
 
+## Site Creation Pre-Requisites
+
+A site builder user must have a Microsoft Azure Active Directory (Azure AD) user account included in the Azure AD security group assigned for the e-commerce system admins, as described in the [Deploy a new e-commerce tenant](deploy-ecommerce-site.md) article.
+
+>[!NOTE]
+>Azure AD Guest users may have different access permissions in your Azure AD tenant. Even if included in the Azure AD security group assigned for the e-commerce system admins, a guest user might require Azure AD **External users** settings to be adjusted to the proper Azure AD permission settings. In the Azure portal, these settings can be found in the Azure AD tenant page within the portal in the **User settings** menu. In the Azure AD tenant within the portal, go to **User settings** and the **External users** section and open the **Manage external collaboration settings** link. This opens the **External collaboration settings** page where guest user access, guest invite settings, and collaboration restrictions can be set. Adjust these settings in accordance to with your company's security policies. Adjustments may be required to properly allow a guest user the ability to create a site in Commerce based on the degree of restrictions a guest user is given to execute.
+
 ## Set up your site
 
 To set up your site, do the following.
