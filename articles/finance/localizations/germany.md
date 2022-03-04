@@ -40,7 +40,6 @@ This topic includes information and links to resources that should be considered
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
 -   [Depreciation adjustments for additional acquisitions in the second year](tasks/de-00002-depreciation.md)
--   [Intrastat](emea-deu-intrastat.md)
 
 ## VAT declaration 
 -   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
