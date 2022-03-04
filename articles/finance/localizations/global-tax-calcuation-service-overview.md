@@ -82,6 +82,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.23         | Tax Calculation Configuration 40.50.221 |
 | 10.0.24         | Tax Calculation Configuration 40.50.225 |
 | 10.0.25         | Tax Calculation Configuration 40.50.225 |
+| 10.0.26         | Tax Calculation Configuration 40.54.234 |
 
 
 ## Data flow
@@ -140,6 +141,11 @@ The following transactions are supported in version 10.0.21:
 The following transactions are supported in version 10.0.23: 
 
 - Free text invoice
+
+The following transactions are supported in version 10.0.26: 
+
+- General journals
+- Vendor invoice journal
 
 ## Supported countries/regions
 
