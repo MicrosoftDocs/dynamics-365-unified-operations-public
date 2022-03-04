@@ -165,4 +165,4 @@ For information about how to create a general setup, create postings, and transf
 
 5.  Review the report in Excel format that is generated.
 
-![Table Description automatically generated with medium confidence](media/image1.png)
+![Table Description automatically generated with medium confidence](media/EUSL-swe.png)
