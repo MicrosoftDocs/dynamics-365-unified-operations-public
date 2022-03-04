@@ -78,7 +78,7 @@ Store Commerce will have full functional parity with MPOS. Currently, Store Comm
 
 Store Commerce have full functional parity with CPOS, Store Commerce in addition supports dedicated hardware station and supports offline.
 
-## Choosing between Store Commerce and MPOS/CPOS
+## Store Commerce and MPOS/CPOS
 
 The recommendation is to use Store Commerce or CPOS for all new deployment and existing customer should plan for migrating the MPOS to Store Commerce app. 
 
