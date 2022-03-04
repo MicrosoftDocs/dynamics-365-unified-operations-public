@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Commerce 
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw
-ms.date: 09/27/2021
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,7 +90,7 @@ For more information, see:
 
 ### ModernPos.Sln and CloudPos.sln in the Retail SDK
 
-POS extension development using ModernPos.sln, CloudPOs.sln, POS.Extension.csproj, and the POS folder is deprecated in release 10.0.21. Going forward, use the POS-independent packaging SDK for POS extensions.
+POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.csproj, and the POS folder is deprecated in release 10.0.21. Going forward, use the POS-independent packaging SDK for POS extensions.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
