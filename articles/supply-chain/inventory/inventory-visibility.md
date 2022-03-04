@@ -24,38 +24,58 @@ ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# Inventory Visibility Service Overview
-  
-The Inventory Visibility Add-in (also referred to as Inventory Visibility Service) is an independent and highly scalable microservice that enables real-time on-hand inventory change posting and visibility tracking across all your data sources and channels. It provides you a platform of global inventory that empowers you to have a smart control of your global inventory such as but not restricted to:
-- Track centrally the latest inventory status such as onhand, ordered, purchased, in-transit, returned, quarantined, etc. across all of your datasources, warehouse and locations by connecting your D365 SCM or 3PL data sources (OMS, 3PL ERPs, POS, WMS, etc.) to inventory visibility services
-- Check onhand stock availability/shortage and obtain immediate response by calling inventory visibility service directly
-- Avoid oversell especially when your demand comes from different channels by real-time Soft-reserve in inventory visibility service
-- Better manage order-promising and customer expectation by providing accurate current or next available date based on which you can calculate the expected order fulfillment date with the omnichannel Available-to-Promise feature
-## Extensibility
-  Inventory Visibility Service is highly extensible as the data input and output are not restricted to Microsoft applications. External systems can access the service through RESTful APIs. In addition to current out-of-box mappings with D365 supply chain management datasource and dimensions, you can integrate Inventory Visibility with multiple third-party systems by setting up additional datasource, inventory statuses measures (called physical measures in inventory visibility service) and inventory dimensions via the configuration app. In that way, you can query and make changes to your multiple datasources and pre-defined inventory dimensions flexibly.
+# Inventory Visibility Add-in overview
 
-  Additionally, as a microservice that is built on Microsoft Dataverse, Inventory Visibility service data can be leveraged to integrate and build power apps. You can also apply Power BI to provide customized dashboards that meet your business requirements.
+[!include [banner](../includes/banner.md)]
+
+The Inventory Visibility Add-in (also referred to as *Inventory Visibility service* <!-- KFM: Why have two names? Are these always exactly the same thing? If they are not the same thing, which one are we describing in this topic? -->) provides an independent and highly scalable microservice that enables real-time on-hand inventory change postings and visibility tracking across all your data sources and channels. It provides a platform of global inventory <!-- KFM: Word missing? maybe "management" or "monitoring" or something else? --> that lets you manage your global inventory using functionality including (but not restricted to):
+
+- Track centrally the latest inventory status (such as on-hand, ordered, purchased, in-transit, returned, quarantined, and so on) across all of your data sources, warehouses and locations by connecting your Supply Chain Management or 3PL data sources (OMS, 3PL ERPs, POS, WMS, and so on) <!-- KFM: Spell out all of these acronyms (OMS, 3PL ERPs, POS, WMS ). Why is 3PL listed twice? --> to Inventory Visibility services <!-- KFM: Why plural? -->.
+- Query on-hand stock availability and shortages and obtain immediate responses by calling the Inventory Visibility service directly.
+- Avoid overselling, especially when your demand comes from different channels, by making real-time soft reservations in the Inventory Visibility service.
+- Better manage promised orders and customer expectations by providing accurate current or next-available dates, which enable the omnichannel available-to-promise feature to  calculate expected order fulfillment dates.
+
+## Extensibility
+
+The Inventory Visibility service is highly extensible because data input and output are not restricted to Microsoft applications. External systems can access the service through RESTful APIs. In addition to the out-of-box mappings provided for the Supply Chain Management data source and dimensions, you can integrate Inventory Visibility with multiple third-party systems by setting up additional data source, inventory statuses measures (called physical measures in Inventory Visibility service) and inventory dimensions via the configuration app. In that way, you can query and make changes to your multiple data sources and pre-defined inventory dimensions flexibly.
+
+Additionally, because Inventory Visibility is built on Microsoft Dataverse, its data can be leveraged to build and integrate with Power Apps. You can also use Power BI to create customized dashboards that meet your business requirements.
+
 ## Scalability
-As an inventory data performance engine, inventory visibility service can be scaled up or down depending on your organization’s data volume. The scalability experience is seamless and is conducted by Microsoft platform team based on automatic detection and assessment of your transaction data volume. For details about platfrom scalbility please refer to xxxx.
+
+As an inventory data performance engine, the Inventory Visibility service <!-- KFM: Is the Inventory Visibility service really best described as an "inventory data performance engine" ? --> can be scaled up or down depending on your data volume. The scalability experience is seamless <!-- KFM: Is "seamless" really the right word here? Do we mean it's automatic, without requiring anything from the customer? --> and is conducted by Microsoft platform team based on automatic detection and assessment of your transaction data volume. For more information, see [XXXX](#X) <!-- KFM: Link needed -->.
+
 ## Feature Highlights
+
 ### Get a global view of real-time inventory
-Inventory visibility ensures you to have the most up-to-date inventory quantities  at any time across all your channels, locations, and warehouse. You will benefit most from it by using it to support your daily operational business whenever needing to obtain inventory records. The physical onhand inventory, quantities sold, purchased, are all available with out of box offerrings. You can also configure other inventory physical measures such as returned, quarantined and post data accordingly to obtain those level of details in real-time. Inventory Visibility service is capable of processing millions of inventory change posts efficiently and can be aggregated and reflected to the latest inventory quantitiess in the service immediately, per minute or other length depends on the way you post data. For configuration details please go to xxxx
+
+Inventory Visibility ensures that you have access to the most up-to-date inventory quantities at all times across all your channels, locations, and warehouses. You will benefit most by using it to support your daily operational business whenever you need to obtain inventory records. The physical on-hand inventory, quantities sold, and quantities purchased are all available with the out-of-box offering. You can configure other physical inventory measures (such as returned, quarantined, and posted data <!-- KFM: is "posted date" correct here? -->) as needed to obtain those details in real-time. Inventory Visibility is capable of efficiently processing millions of inventory change posts,  and this data can be aggregated and reflected in the latest inventory quantities in the service immediately, per minute or other length depends on the way you post data <!-- KFM: I don't understand the last phrase -->. For more information, see [XXXX](#X) <!-- KFM: Link needed -->.
 
 ### Soft reservation to avoid oversell across all order channels
-Inventory Visibilitys soft reservation best fits when your business have sales requests or orders coming in from one or multiple channels/datasources that are outside of your system of record ERP system. Instead of awaiting until the order gets synced and processed in ERP to trigger the inventory change update in your ERP, you can optimize and soft reserve in Inventory Visibility service the moment when sales requests/orders are generated in your sales channels. Thus avoiding oversell situation that your omnichannle orders will not step on each others' toes when they all reach to ERP later. Thus ensuring you can fulfill the orders that you promised to the customer, helping you to meet customer expectation and to maintain customer loyalty. For more information please go to xxxxx
-### Immediate response of Available to Promise dates confirmation
-Having visibility into your near future's projected inventory with supply,demand and projected onhand details are important as this helps your company to 
-- minimise inventory levels to reduce inventory management costs and 
-- facilitate internal order processing for sales people to calculate order shipment and delivery date with the based on the available dates of the ordered products. 
-- provide customers transparency on when they should expect an out-of-stock item to be available with next available date
- 
-The Available-to-Promise (ATP) feature is easy to adopt into your daily order fulfillment process. Most importantly, just like other offerings by Inventory Visibilty service, the ATP feature here is also **global and real-time**, you can set up **multiple ATP calculation formulas** to have a full inventory availability queries covering all of your business channels and datasources. For more information please go to xxxx
-### Compatiability with D365 Advanced Warehouse Management items
-We aim to provide out of box integration with D365 Advanced Warehouse Management so that WHS customers can also enjoy the benefit of inventory visibility service. Per 2022 Wave 1 release (public preview in March) inventory service supports WHS item onhand query and ATP. The soft reservation and allocation feature will be supported for WHS customers in next wave. For details please refer to xxxx
-## Liscensing
-Currently we offer two forms of Inventory Visibility Service products.
-- **Inventory Visibility Service add-in** for D365 supply chain management. For customers holding valid D365 SCM liscence there is no extra liscence cost for the Inventory Visibility add-in service. You can really start trying out from today. Please refer to xxxx for installation details
-- **Inventory Visibility Service as a component of IOM** for either IOM customers or customers who do not have D365 SCM as ERP. The liscence is included in IOM bundle. For more information please go to xxxx
 
+<!-- KFM: I think it would help to define what a soft reservation is here. -->
+
+Use soft reservations if your business has sales requests or orders coming in from one or multiple channels or data sources that are outside of your system of record enterprise resource planning (ERP) system. Instead of waiting until the order gets synced to and processed by your ERP system, you can use soft reservations in Inventory Visibility, which take affect right away each time a sales request or order is generated in your sales channels. This helps to prevent oversell situations by ensuring your omnichannel orders will not step on each other's toes later when they eventually reach the ERP system. It ensures that you can fulfill all of the orders that you have promised, helping you to meet customer expectations and and maintain customer loyalty. For more information, see [XXXX](#X) <!-- KFM: Link needed -->.
+
+### Immediate response of available to promise dates confirmation
+
+Having visibility into your near-future projected inventory (including supply, demand, and projected on-hand details) is important because this helps your company to:
+
+- Minimize inventory levels to reduce inventory management costs.
+- Facilitate internal order processing so sales people can calculate shipment and delivery dates based on the availability of the ordered products.
+- Provide transparency on when customers can expect an out-of-stock item to become available by providing the next-available date.
+
+The available-to-promise (ATP) feature is easy to adopt into your daily order fulfillment process. Most importantly, just like other Inventory Visibility offering, the ATP feature is *global and real-time*, so you can set up *multiple ATP calculation formulas* to have full inventory availability queries that cover all of your business channels and data sources. For more information, see [XXXX](#X) <!-- KFM: Link needed -->.
+
+### Compatibility with advanced warehouse management items
+
+We aim to provide out of box integration with advanced warehouse management (WHS) so that WHS customers can also enjoy the benefit of Inventory Visibility service. Per 2022 Wave 1 release (public preview in March) inventory service supports WHS item on-hand query and ATP. The soft reservation and allocation feature will be supported for WHS customers in next wave. For more information, see [XXXX](#X) <!-- KFM: Link needed -->.
+
+## Licensing
+
+The Inventory Visibility service is available in the following versions:
+
+- **Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management** – This version is for companies holding a valid Supply Chain Management license, Inventory Visibility is available at no extra license cost. You can start trying out from today. For installation details, see [XXXX](#X) <!-- KFM: Link needed -->.
+- **Inventory Visibility Service as a component of IOM** <!-- KFM: Is this the official name of this product? -->. – This version is for either IOM <!-- KFM: Spell out "IOM" --> customers or companies who aren't using Supply Chain Management as their ERP system. The license is included in the IOM bundle. For more information, see [XXXX](#X) <!-- KFM: Link needed -->.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
