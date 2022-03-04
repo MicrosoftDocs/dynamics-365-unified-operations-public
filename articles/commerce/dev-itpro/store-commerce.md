@@ -1,5 +1,5 @@
 ---
-title: Store Commerce app in Microsoft Dynamics 365 Commerce
+title: Store Commerce app
 description: This topic explains how to set up and configure the Store Commerce app.
 author: mugunthanm
 ms.date: 03/01/2022
@@ -12,7 +12,7 @@ ms.search.validFrom: 03-01-2022
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
-# Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
+# Store Commerce
 
 [!include [banner](../includes/banner.md)]
 
