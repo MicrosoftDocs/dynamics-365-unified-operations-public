@@ -1692,6 +1692,8 @@
           href: localizations/emea-aut-purchase-duties.md
         - name: VAT declaration
           href: localizations/emea-aut-vat-declaration-austria.md
+        - name: EU sales list
+          href: localizations/emea-aut-eu-sales-list.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
