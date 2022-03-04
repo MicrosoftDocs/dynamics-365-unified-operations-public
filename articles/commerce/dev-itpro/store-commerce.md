@@ -2,7 +2,7 @@
 title: Store Commerce app
 description: This topic explains how to set up and configure the Store Commerce app.
 author: mugunthanm
-ms.date: 03/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -15,33 +15,33 @@ ms.dyn365.ops.version: AX 10.0.25
 # Store Commerce
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 This topic applies to Microsoft Dynamics 365 Commerce version 10.0.25 and later.
 
-The Store Commerce application is the next generation offering for physical stores that unifies Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) into a single application, provides deployment choices to retailers, improves performance, and offers superior application life cycle management, while retaining all the functionalities of MPOS and CPOS, including extensibility.
+The Store Commerce application is the next generation offering for physical stores that unifies Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) into a single application, provides deployment choices to retailers, improves performance, and offers superior application life cycle management while retaining all the functionalities of MPOS and CPOS including extensibility.
 
 The Store Commerce app in Dynamics 365 Commerce provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such cash-and-carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
-Store Commerce is a [WPF](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-6.0) shell app for Windows that uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control to render the Cloud Point of Sale (CPOS) app. Although CPOS can run only in a web browser, Store Commerce can run as a native Windows app such as [Modern Point of Sale (MPOS)](retail-modern-pos-architecture.md), Store Commerce provides the benefits of both MPOS and CPOS.
+Store Commerce is a [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true) shell application for Windows that uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control to render the Cloud Point of Sale (CPOS) application. Although CPOS can run only in a web browser, Store Commerce can run as a native Windows application such as [Modern Point of Sale (MPOS)](retail-modern-pos-architecture.md), providing the benefits of both MPOS and CPOS.
 
-Store Commerce supports Offline, local hardware station, and can be directly integrated with a payment terminal, printer, and cash drawer and doesn't require to set up a shared hardware station to use hardware devices.
+Store Commerce supports local hardware station and offline usage, and can be directly integrated with a payment terminal, printer, and cash drawer and doesn't require a shared hardware station to be set up to use hardware devices.
 
 To render the user interface (UI), Store Commerce uses the Chromium engine instead of the Universal Windows Platform (UWP) app rendering framework. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. The main difference between MPOS and Store Commerce is that Store Commerce uses the Chromium engine to render the app.
 
 ## Benefits of Store Commerce
 
-+ Simplified Application lifecycle management (ALM)
-+ Extension or ISV code developed for MPOS or CPOS with Commerce SDK can be reused in Store Commerce with minimal change
-+ Store Commerce provides the benefits of both MPOS and CPOS
-+ Better performance
-+ Easier POS and extension upgrades
-+ Support for dedicated hardware station (HWS)
-+ Support for offline
+- Simplified Application lifecycle management (ALM).
+- Extension or ISV code developed for MPOS or CPOS with the Commerce software development kit (SDK) that can be reused in Store Commerce with minimal changes.
+- Store Commerce provides the benefits of both MPOS and CPOS.
+- Better performance.
+- Easier POS and extension upgrades.
+- Support for dedicated hardware station (HWS).
+- Support for offline.
 
 ## Application lifecycle management
 
-Store Commerce is an app that runs on Windows devices, and it can be download from [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). In the Shared asset library page, select the Retail Self-service package asset type and then locate the file ending with **Store Commerce**. Make sure to select there the version for the release you need, for instance 10.0.25, 10.0.26 and so on.
+The Store Commerce application runs on Windows devices and can be downloaded from the [Microsoft Lifecycle Services (LCS) Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). To download the application, on the **Sharasset library page, select the Retail Self-service package asset type and then locate the file ending with **Store Commerce**. Make sure to select there the version for the release you need, for instance 10.0.25, 10.0.26 and so on.
 
 ### Store Commerce deployment topology:
 
