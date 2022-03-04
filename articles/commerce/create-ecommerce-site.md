@@ -4,7 +4,7 @@
 title: Create an e-commerce site
 description: This topic describes the steps and information required to create a new e-commerce site in Dynamics 365 Commerce site builder.
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,12 +35,18 @@ This topic describes the steps and information required to create a new e-commer
 
 When you license the Dynamics 365 Commerce capabilities, site builder will be provisioned with a starter site that you can use as a basis for your own site. However, if you want to start from scratch or if you want to establish a second site, you will need to establish a new site in the site authoring environment. 
 
-## Site Creation Pre-Requisites
+## Site creation prerequisites
 
-A site builder user must have a Microsoft Azure Active Directory (Azure AD) user account included in the Azure AD security group assigned for the e-commerce system admins, as described in the [Deploy a new e-commerce tenant](deploy-ecommerce-site.md) article.
+A site builder user must have a Microsoft Azure Active Directory (Azure AD) user account included in the Azure AD security group assigned for the e-commerce system administrators. For more information, see [Deploy a new e-commerce tenant](deploy-ecommerce-site.md).
 
->[!NOTE]
->Azure AD Guest users may have different access permissions in your Azure AD tenant. Even if included in the Azure AD security group assigned for the e-commerce system admins, a guest user might require Azure AD **External users** settings to be adjusted to the proper Azure AD permission settings. In the Azure portal, these settings can be found in the Azure AD tenant page within the portal in the **User settings** menu. In the Azure AD tenant within the portal, go to **User settings** and the **External users** section and open the **Manage external collaboration settings** link. This opens the **External collaboration settings** page where guest user access, guest invite settings, and collaboration restrictions can be set. Adjust these settings in accordance to with your company's security policies. Adjustments may be required to properly allow a guest user the ability to create a site in Commerce based on the degree of restrictions a guest user is given to execute.
+> [!NOTE]
+> Azure AD guest users may have different access permissions in your Azure AD tenant. Even if included in the Azure AD security group assigned for the e-commerce system administrators, a guest user may need Azure AD **External users** permission settings to be adjusted be able to create an e-commerce site in Commerce. 
+
+To adjust Azure AD **External users** settings, follow these steps.
+
+1. In the Azure portal, navigate to your Azure AD tenant.
+1. Go to **User settings \> External users** and select the **Manage external collaboration settings** link. This opens the **External collaboration settings** page where guest user access, guest invite settings, and collaboration restrictions can be set. 
+1. Adjust the external collaboration settings in accordance with your company's security policies. 
 
 ## Set up your site
 
