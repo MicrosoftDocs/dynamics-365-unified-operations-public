@@ -2,51 +2,49 @@
   
 # required metadata
 
-title: Commerce Catalogs for B2B
-description: Us these catalogs to be able to sell select products to you B2B organization at specific prices.
+title: Create Commerce catalogs for B2B sites
+description: This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: ashishmsft
-ms.date: 03/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
 ---
 
   
-# Commerce product catalogs 
+# Create Commerce catalogs for B2B sites 
 
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE[banner](includes/banner.md)]
+This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 
+> [!NOTE]
+> This topic applies to Dynamics 365 Commerce version 10.0.26 and later releases.
 
-_**Applies To:** Microsoft Dynamics 365 Commerce - 10.0.26 & later releases
+You can use Commerce product catalogs to identify the products that you want to offer in your B2B online stores. When you create a catalog, you identify the online stores that the products are offered in, add the products that you want to include, and enhance the product offerings by adding merchandising details. You can create multiple catalogs for a B2B online store.
 
-You can use Commerce product catalogs to identify the products that you want to offer in your B2B Online stores. When you create the catalog, you identify the online stores that the products are offered in, add the products that you want to include, and enhance the product offerings by adding merchandising details. You can create multiple catalogs for a B2B online store.
+Commerce product catalogs allows you to define the following:
 
-Commerce product catalogs allows you to define the following - 
-
-+ Catalog-specific navigation hierarchy 
-  + Allowing Organizations to create a distinct category structure for their specific catalog.
-+ Catalog-specific attribute metadata - Attributes contain details about the product. You can assign attributes to a category of Navigation hierarchy that way you can define values for those attributes at product level that are assigned to that category.
-  + Organizations will be abel to define catalog-specific attribute values
-  + Organizations will be able to control the visibility of attributes at a catalog-level  
-  + Organizations will be able to choose the refiners specific to an individual catalog
-+ Channels 
-  + Currently, end to end support for Catalogs is available with B2B Online stores only. Organizations are able to associate  more than one B2B online channels with a catalog. 
-+ Customer hierarchies 
-  + For a given B2B Channel, Organizations can choose to make a specific catalog available to their select B2B Partners (Customer Hierarchies in Dynamics 365) and they can achieve that by associating Customer Hierarchies to a Catalog. 
-+ Price groups - A core reason for defining a catalog to use with a B2B channel is to be able to configure specific prices and promotions for that catalog. B2B Customers ordering from this catalog will receive these prices and promotions upon signing-in & selecting this catalog on eCommerce. 
-To configure catalog-specific prices, select the Price groups option from the Catalogs tab to link one or more price groups to the catalog. All trade agreements, price adjustment journals, and advanced discounts (threshold, quantity, mix and match) that have been linked to the same price group will be applied when customers order from this catalog.
-  + Price groups for Catalogs allows Organization to make products available to their intended B2B organizations with their preferred pricing & discounts. 
-  + [More information on Price groups](price-management.md)
+- Catalog-specific navigation hierarchy - Allows organizations to create a distinct category structure for their specific catalog.
+- Catalog-specific attribute metadata - Attributes contain details about a product. You can assign attributes to a category of navigation hierarchy to define values for those attributes at product level that are assigned to that category. Organizations will then be able to:
+    - Define catalog-specific attribute values.
+    - Control the visibility of attributes at the catalog level. 
+    - Choose the refiners specific to an individual catalog.
+- Channels - Organizations are able to associate more than one B2B online channel with a catalog. End-to-end support for catalogs is currently only available for B2B online stores.  
+- Customer hierarchies - For a given B2B channel, organizations can choose to make a specific catalog available to their select B2B partners by associating customer hierarchies with a catalog. 
+- Price groups - A core reason for defining a catalog to use with a B2B channel is to be able to configure specific prices and promotions for that catalog. B2B customers ordering from a configured catalog can benefit form special prices and promotions after signing in to a Commerce B2B site. To configure catalog-specific prices, select the **Price groups** on the **Catalogs** tab to link one or more price groups to the catalog. All trade agreements, price adjustment journals, and advanced discounts (such as threshold, quantity, mix and match) that have been linked to the same price group will be applied when customers order from this catalog.
+    - Price groups for Catalogs allows Organization to make products available to their intended B2B organizations with their preferred pricing & discounts. 
+    - For more information on price groups, see [Price groups](price-management.md#price-groups).
   
-![Commerce product catalogs preview](./media/Commerce_Catalogs.png)
+<!-- ![Commerce product catalogs preview](./media/Commerce_Catalogs.png)-->
 
 > [!NOTE]
 > This feature is available with Microsoft Dynamics 365 Commerce release of 10.0.26 & to see the abilities to be able to configure catalog-specific configurations like Navigation hierarchy, Customer hierarchy etc. - please go to Feature management workspace & enable the following feature **Enable use of multiple catalogs on retails channels.** & run 1110 CDX job. 
-![Feature management - Enable Commerce Catalog Feature](./media/Commerce-Catalogs-Feature-Management.jpeg)
+
+<!-- ![Feature management - Enable Commerce Catalog Feature](./media/Commerce-Catalogs-Feature-Management.jpeg)-->
 
 ## Catalog process flow
 
