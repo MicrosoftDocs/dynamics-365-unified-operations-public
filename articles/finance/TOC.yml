@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.26 (May)
+          href: get-started/whats-new-changed-10-0-26.md
         - name: Finance 10.0.25 (April)
           href: get-started/whats-new-changed-10-0-25.md
         - name: Finance 10.0.24 (February)
@@ -1576,6 +1578,12 @@
               href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
             - name: Customize tax configurations for master data lookup
               href: localizations/customize-tax-configurations-master-data-lookup.md
+          - name: Troubleshooting
+            items:
+            - name: Failed to access tax service
+              href: localizations/tcs-troubleshooting-failed-access-tax-service.md
+            - name: Empty tax feature list in Tax calculation parameters
+              href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
           - name: Tax Calculation FAQ
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Tax
@@ -1692,6 +1700,8 @@
           href: localizations/emea-aut-purchase-duties.md
         - name: VAT declaration
           href: localizations/emea-aut-vat-declaration-austria.md
+        - name: EU sales list
+          href: localizations/emea-aut-eu-sales-list.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -2268,6 +2278,8 @@
           href: localizations/tasks/fr-00018-daily-interest.md
         - name: Derogatory depreciation
           href: localizations/emea-fra-derogatory-depreciation.md
+        - name: EU sales list
+          href: localizations/emea-fra-eu-sales-list.md          
         - name: French bills of exchange and promissory notes
           href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
         - name: French Intrastat
@@ -3527,6 +3539,8 @@
           href: localizations/emea-swe-VAT-declaration-Sweden.md
         - name: Swedish Intrastat
           href: localizations/emea-swe-intrastat.md
+        - name: EU sales list
+          href: localizations/emea-swe-eu-sales-list.md          
       - name: Switzerland
         items:
         - name: Switzerland overview
