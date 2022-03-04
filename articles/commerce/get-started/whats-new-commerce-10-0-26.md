@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.26
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.26. This version has a build number of 10.0.XXX and is available on the following schedule:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.26. This version has a build number of 10.0.119 and is available on the following schedule:
 
 - **Preview of release:** March 2022
 - **General availability of release (self-update):** April 2022
@@ -58,7 +58,7 @@ The following table lists the features that are included in this release. We mig
 Dynamics 365 Commerce 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### Bug fixes 
-For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](XXX).
+For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864).
 
 For Commerce-specific breaking changes, view the [Dynamics 365 Commerce online SDK FAQ](../e-commerce-extensibility/sdk-faq.md).
 
