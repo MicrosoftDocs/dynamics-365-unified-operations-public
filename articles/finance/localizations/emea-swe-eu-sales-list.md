@@ -49,7 +49,7 @@ The following fields are included on the Swedish EU sales list report:
 
 ## Setup
 
-For general setup information, see [EU Sales list reporting](emea-eu-sales-list#prerequisites.md).
+For general setup information, see [EU Sales list reporting](emea-eu-sales-list.md#prerequisites).
 
 > [!NOTE]
 > The company's tax registration number will be used in the .xlsx file for the EU sales list report.
@@ -96,7 +96,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 ## Work with the EU sales list
 
-For general information about which types of transactions are included in the EU sales list, how to generate the EU sales list report, and how to close the EU sales list reporting period, see [EU Sales list reporting](emea-eu-sales-list#working-with-the-esl.md).
+For general information about which types of transactions are included in the EU sales list, how to generate the EU sales list report, and how to close the EU sales list reporting period, see [EU Sales list reporting](emea-eu-sales-list.md#working-with-the-esl).
 
 ### Generate the EU sales list report
 
