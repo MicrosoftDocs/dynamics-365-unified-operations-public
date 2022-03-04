@@ -1,27 +1,27 @@
 ---
-# required metadata 
+# required metadata
 
 title: Failed to access tax service
-description: This topic explains how to troubleshoot a failure to access the Tax Calculation service. 
+description: This topic explains how to troubleshoot a failure to access the Tax Calculation service.
 author: hangwan
 ms.date: 03/01/2022
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
 
-# optional metadata 
+# optional metadata
 
-ms.search.form: TaxIntegrationTaxServiceParameters   
-audience: Application User 
-# ms.devlang:  
+ms.search.form: TaxIntegrationTaxServiceParameters
+audience: Application User
+# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+# ms.tgt_pltfrm: 
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: hangwan
 ms.search.validFrom: 02/16/2022
-ms.dyn365.ops.version: Version 10.0.21 
+ms.dyn365.ops.version: Version 10.0.21
 ---
 
 # Failed to access tax service
@@ -30,33 +30,28 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to resolve the error of the Tax Calculation service, **Failed to access tax service.**
-
+This topic explains how to fix the "Failed to access tax service" error of the Tax Calculation service.
 
 ## Symptoms
 
-The following describes the symptoms you might experience as a result of the error.
-
-You navigate to **Tax** > **Setup** > **Tax configuration** > **Tax service parameter**. On the **General** tab, if enable the switch name **Enable tax calculation** and then select the **Feature setup name**  drop-down list, an error occurs. The error message reads, **Failed to access tax service**. 
+In Microsoft Dynamics 365 Finance, you go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax service parameters**. On the **General** tab, you enable the **Enable tax calculation** option. If you then try to select a value in the **Feature setup name** field, an error occurs. The error message states, "Failed to access tax service."
 
 ## Cause
 
-This error occurs because Dynamics 365 Finance can't access the Tax Calculation service.
+This error occurs because Finance can't access the Tax Calculation service.
 
 ## Resolution 
 
-1. Log in to Lifecycle Services (LCS), and on the **Environment** page, on the **Environment add-ins** tab, and locate the **Tax Calclation** item.
-2. Check the status. The status should be **Installing** or **Installed**. If the Tax Calculation service add-in isn't installed, you will receive the error.
+1. Sign in to Microsoft Dynamics Lifecycle Services (LCS).
+2. On the **Environment** page, on the **Environment add-ins** tab, find the **Tax Calculation** item, and review its status. The status should be **Installing** or **Installed**. If the Tax Calculation service add-in isn't installed, you will receive the error.
 
 ## Mitigation
 
-1. In LCS, open the **Finance** page.
-2. In the **Power platform integration** section, select **Install a new add-in**
-3. Scroll to the end of the page, and select the **Tax Calculation** add-in to install.
-4. Go back to your Finance environment and try to access the Tax Calculation service.
+1. In LCS, on the **Finance** page, in the **Power platform integration** section, select **Install a new add-in**.
+2. Scroll to the bottom of the page, and select the **Tax Calculation** add-in to install it.
+3. Return to your Finance environment, and try to access the Tax Calculation service.
 
 > [!NOTE]
-> Before you install the Tax Calculation service, check the [Tax Caclualtion Service prerequisites](global-get-started-with-tax-calculation-service.md#prerequisites).
+> Before you install the Tax Calculation service, review the [Tax Calculation Service prerequisites](global-get-started-with-tax-calculation-service.md#prerequisites).
 > 
-> If the **Power platform integration** section isn't avaliable to install the add-in, see [Add-in overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). If you still face the error after installing the add-in, contact your system administrator.
-
+> If you can't install the add-in because the **Power platform integration** section isn't available, see [Add-in overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). If you still encounter the error after you install the add-in, contact your system administrator.
