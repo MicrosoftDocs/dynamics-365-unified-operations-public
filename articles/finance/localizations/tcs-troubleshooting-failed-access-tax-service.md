@@ -4,7 +4,7 @@
 title: Failed to access tax service
 description: This topic explains how to troubleshoot a failure to access the Tax Calculation service.
 author: hangwan
-ms.date: 03/01/2022
+ms.date: 03/04/2022
 ms.topic: business-process
 ms.prod: 
 ms.technology: 
