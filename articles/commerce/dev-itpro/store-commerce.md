@@ -59,7 +59,7 @@ Store Commerce is a shell that renders CPOS and connects to Headless Commerce an
 
 #### Store Commerce app content rendered from CPOS hosted in CSU (Remote app content)
 
-With this option, Store Commerce downloads and renders the application content from the CPOS hosted in CSU. To update Store Commerce, update the CSU and Store Commerce automatically gets the update. Since in this case the updates are centrally managed in CSU, there is no need to manage the update at indivdual registers. The Store Commerce application shell still must be updated separately using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
+With this option, Store Commerce downloads and renders the application content from the CPOS hosted in CSU. To update Store Commerce, update the CSU and Store Commerce automatically gets the update. Since in this case the updates are centrally managed in CSU, there is no need to manage the update at individual registers. The Store Commerce application shell still must be updated separately using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
 
 #### Store Commerce app content rendered from local deployment
 
@@ -83,7 +83,7 @@ Store Commerce has full functional parity with CPOS. In addition, Store Commerce
 
 ## Store Commerce and MPOS/CPOS
 
-It is recommended is to use Store Commerce or CPOS for all new deployments. Existing customers should plan on migrating the MPOS to Store Commerce. 
+It is recommended to use Store Commerce or CPOS for all new deployments. Existing customers should plan on migrating the MPOS to Store Commerce. 
 
 ### Comparison between Store Commerce and MPOS
 
