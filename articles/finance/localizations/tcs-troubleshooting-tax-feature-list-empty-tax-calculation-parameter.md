@@ -4,7 +4,7 @@
 title: Empty tax feature list in Tax calculation parameters
 description: This topic explains how to troubleshoot an issue where the list of tax features on the Tax calculation parameters page is empty.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/04/2022
 ms.topic: business-process
 ms.prod: 
 ms.technology: 
