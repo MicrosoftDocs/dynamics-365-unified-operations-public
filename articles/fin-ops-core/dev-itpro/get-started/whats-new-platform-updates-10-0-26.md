@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.26 of Finance and Operations apps (May 2022)
 description: This topic lists the features that are included in the platform updates for version 10.0.26 of Finance and Operations apps.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -35,7 +35,7 @@ The following table lists the features that are included in this release.
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com/).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864).
 
 ### Dynamics 365: 2022 release wave 1 plan
 
