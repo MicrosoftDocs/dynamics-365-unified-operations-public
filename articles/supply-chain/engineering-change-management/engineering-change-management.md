@@ -221,5 +221,16 @@ Most of the fields on engineering change orders are the same as the fields for r
 
 You can use the **Maintain/copy change information** button to copy change information between affected products.
 
+## Use electronic signature to approve and active BOMs and routes 
+
+If you would like to use electronic signature to approve and/or activate the bills of materials and/or route changes, the  following must be set to *Signature required* *Yes* in the Electronic signature requirements form:
+- Activate engineering change order product bill of materials
+- Activate engineering change order product route
+- Approve engineering change order product bill of materials
+- Approve engineering change order product route
+- Approve engineering version BOm and BOM versions
+- Approve engineering version and route version
+
+Note these must be used as they are specific to engineering products.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
