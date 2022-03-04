@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.26
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.26. This version has a build number of 10.0.1149 <!-- KFM Update build number --> and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.26. This version has a build number of 10.0.1192 and is available as follows:
 
 - **Preview of release:** March 2022
 - **General availability of release (self-update):** April 2022
@@ -68,7 +68,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.26, sign in to Lifecycle Services (LCS) and view the [KB article](#). <!-- KFM Get link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.26, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
