@@ -37,6 +37,7 @@ This topic provides links to documentation resources for Sweden.
 - [Sales tax payment report for Sweden](emea-swe-sales-tax-payment-report-sweden.md)
 - [VAT declaration for Sweden](emea-swe-VAT-declaration-Sweden.md)
 - [Swedish Intrastat](emea-swe-intrastat.md)
+- [EU sales list for Sweden](emea-swe-eu-sales-list.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
