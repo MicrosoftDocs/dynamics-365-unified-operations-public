@@ -99,7 +99,7 @@ For general information about which types of transactions are included in the EU
 
 1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **EU sales list**.
 2.  Transfer service transactions in the usual way.
-3.  On the Action Pane, select **R
+3.  On the Action Pane, select **Reporting**.
 4.  In the **EU sales list reporting** dialog box, on the **Parameters** FastTab, set the following fields.
 
 | Field            | Description                                                                         |
