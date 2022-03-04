@@ -62,6 +62,16 @@ The tax calculation data model is integrated with Finance and Operations apps. D
 
 Thirty-one data models can be included as fields on the header of a transaction. However, not all fields are applicable to all transaction types. The following table shows which header fields are available for specific transaction types. In some cases, the field mapping must be determined by predefined logic. Where applicable, the logic is provided.
 
+## Version updates and restrictions
+- Free text invoice
+    - Supported since version 40.50.221 and Finance version 10.0.23
+- General journals
+    - Supported since version 40.54.234 and Finance version 10.0.26
+    - Restriction: Tax calculation on payment related transactions (prepayment journal, payment fee, etc.) are not yet supported.
+- Vendor invoice journal
+    - Supported since version 40.54.234 and Finance version 10.0.26
+
+## Field mapping
 | Header field                            | Business transaction type and field mapping |
 |----------------------------------|---------------------------------------------|
 | Amount include tax               | <ul><li>**Sales order:** Prices include sales tax</li><li>**Purchase order:** Prices include sales tax</li><li>**Purchase requisition:** No</li><li>**Request for quotation:** Prices include sales tax</li><li>**Sales quotation:** Prices include sales tax</li><li>**Free text invoice:** Prices include sales tax</li></ul> |
