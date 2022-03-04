@@ -4,7 +4,7 @@
 title: Build and consume data entities
 description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
 author: peakerbl
-ms.date: 05/26/2020
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -69,7 +69,7 @@ FMLabCustomerEntity
 | Name          | Mapping                     |
 |---------------|-----------------------------|
 | CellPhone     | FMCustomer.CellPhone        |
-| DriverLicense | FMCustomer.DriverLicense    |
+| DriversLicense | FMCustomer.DriversLicense    |
 | Email         | FMCustomer.Email            |
 | FirstName     | FMCustomer.FirstName        |
 | LastName      | FMCustomer.LastName         |
@@ -105,7 +105,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 5. Click **Next**. For more information about the function of each property, see "Categories of entities" and "Building an entity" in [Data entities overview](data-entities.md).
 6. Add fields to the new entity from your data source, as shown in the following image. You can add fields from the primary data source, **FMCustomer**. For this entity, clear the check box for the **Image** and **LicenseImage** container types to simplify testing.
 7. Rename the data entity fields to reflect public data contract standards, or click **Convert labels to field names** to generate names from the existing labels.
-8. On the line for the **DriverLicense** field, select the **Is mandatory** check box. This field will be used as the natural key for the entity.
+8. On the line for the **DriversLicense** field, select the **Is mandatory** check box. This field will be used as the natural key for the entity.
 
     [![Data Entity Wizard 2.](./media/data-entity-wizard-2.png)](./media/data-entity-wizard-2.png)
 
@@ -191,21 +191,21 @@ One of the most common ways of interacting with data entities is through X++, by
         customer.clear();
         customer.FirstName = "Bob";
         customer.LastName = "Smith";
-        customer.DriverLicense = license;
+        customer.DriversLicense = license;
         customer.insert();
 
         info(strfmt("Tried to insert customer '%1 %2' with license %3", 
-            customer.FirstName, customer.LastName, customer.DriverLicense));
+            customer.FirstName, customer.LastName, customer.DriversLicense));
 
         //Display newly created record
-        select forupdate customer where customer.DriverLicense==license;
+        select forupdate customer where customer.DriversLicense==license;
         info(strfmt("Found newly created customer '%1 %2' with license %3", 
-            customer.FirstName, customer.LastName, customer.DriverLicense));
+            customer.FirstName, customer.LastName, customer.DriversLicense));
 
         //Now delete the record from the entity
         customer.delete();
-        select customer where customer.DriverLicense==license ;
-        info(strfmt("Deleted customer does not exist: license- %1", customer.DriverLicense));
+        select customer where customer.DriversLicense==license ;
+        info(strfmt("Deleted customer does not exist: license- %1", customer.DriversLicense));
     }
     ```
 
@@ -287,8 +287,8 @@ You will review the existing **FleetRental** entity and then create a relationsh
 
     | Property      | Value                                                                         |
     |---------------|-------------------------------------------------------------------------------|
-    | Field         | **CustomerDriverLicense** - This is the foreign key field on **FMRentalEntity**. |
-    | Related Field | **DriverLicense** - This is the unique key on **FMCustomerEntity**.              |
+    | Field         | **CustomerDriversLicense** - This is the foreign key field on **FMRentalEntity**. |
+    | Related Field | **DriversLicense** - This is the unique key on **FMCustomerEntity**.              |
 
     The following image shows the relation in Visual Studio.
 
@@ -337,7 +337,7 @@ You can now use Internet Explorer to explore some OData URIs.
     {  
         { 
             "@odata.etag":"W/"JzEsNTYzNzE0NDU3NjsxLDU2MzcxNDQ1NzY7MTc4NjA2OTg1Niw1NjM3MTQ0NjA1Jw=="",
-            "Comments":"","StartMileage":0,"VehicleRatePerDay":40,"CustomerDriverLicense":
+            "Comments":"","StartMileage":0,"VehicleRatePerDay":40,"CustomerDriversLicense":
             "S468-3184-6541","VehicleRateTotal":280,"VehicleId":"Litware_LitwareFour_1",
             "RentalId":"000001",
             "StartFuelLevel":"Full","StartDate":"2010-04-09T00:00:00Z","CustomerLastName":"Spencer",
@@ -348,7 +348,7 @@ You can now use Internet Explorer to explore some OData URIs.
 
             {"@odata.etag":"W/"JzEsNTYzNzE0NDU3NjsxLDU2MzcxNDQ1NzYn"",
             "CellPhone":"(999) 555-0100",
-            "DriverLicense":"S468-3184-6541","AddressLine2":"",
+            "DriversLicense":"S468-3184-6541","AddressLine2":"",
             "State":"FL","Country":"US","FirstName":"Phil",
             "Email":"phil.spencer@adatum.com","CustomerGroup":
             "adv_mem_1","AddressLine1":"167 BBN Way","City":"Orlando",

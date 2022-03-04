@@ -3,15 +3,17 @@
 
 title: Metadata and markdown template
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
-author: tonyafehr
+author:  
 ms.date: 02/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: tonyafehr
+ms.reviewer: 
 ms.custom: <remove if blank>
 ms.search.region: Global
-ms.author: tfehr
-ms.search.validFrom: 2017-06-20
+ms.author: 
+ms.search.validFrom: 
+ms.search.form:
+ms.dyn365.ops.version:
 ---
 
 # Metadata and Markdown template
