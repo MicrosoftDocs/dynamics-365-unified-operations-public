@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Create and confirm a customer consolidated invoice
-description: This topic explains how to consolidate customer nvoices each month to calculate the due amount.
-author: ShylaThompson
+description: This topic explains how to consolidate customer invoices each month to calculate the due amount.
+author: kfend
 ms.date: 10/04/2021
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

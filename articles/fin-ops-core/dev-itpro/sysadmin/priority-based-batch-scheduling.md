@@ -127,7 +127,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 14. If the batch task supports input parameters, select **Parameters**, and then set task-specific parameters.
 15. Select **OK**, and then select **Save**.
 
-## <a name="reserved">Set the batch reserved capacity level</a>
+## Set the batch reserved capacity level
 
 1. Go to **System administration** \> **Setup** \> **System parameters**.
 2. On the **Batch global settings** tab, in the **Batch reserved capacity level** field, select the reserved capacity level to use for batch jobs that have **Reserved capacity** priority:
@@ -149,7 +149,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 
 A new internal system batch job, **System job to clean up expired batch heartbeat records**, cleans up the new BatchHeartbeatTable table. This batch job has the class name **SysCleanupBatchHeartbeatTable**. BatchHeartbeatTable is an internal monitoring table that is used to determine, configure, and distribute reserved capacity threads among online nodes.
 
-## <a name="automatic">Automatic batch group migration for batch jobs</a>
+## Automatic batch group migration for batch jobs
 
 After the feature is turned on, batch group information on the task is duplicated on the job that will be used. The batch group assignment on a job is based on the batch group that is most used for the tasks for the job.
 
