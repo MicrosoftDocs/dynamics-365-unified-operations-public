@@ -40,7 +40,7 @@ When you license the Dynamics 365 Commerce capabilities, site builder will be pr
 A site builder user must have a Microsoft Azure Active Directory (Azure AD) user account included in the Azure AD security group assigned for the e-commerce system administrators. For more information, see [Deploy a new e-commerce tenant](deploy-ecommerce-site.md).
 
 > [!NOTE]
-> Azure AD guest users may have different access permissions in your Azure AD tenant. Even if included in the Azure AD security group assigned for the e-commerce system administrators, a guest user may need Azure AD **External users** permission settings to be adjusted be able to create an e-commerce site in Commerce. 
+> Azure AD guest users may have different access permissions in your Azure AD tenant. Even if included in the Azure AD security group assigned for the e-commerce system administrators, a guest user may need Azure AD **External users** permission settings to be adjusted in order to create an e-commerce site in Commerce. 
 
 To adjust Azure AD **External users** settings, follow these steps.
 
