@@ -3529,6 +3529,8 @@
           href: localizations/emea-swe-VAT-declaration-Sweden.md
         - name: Swedish Intrastat
           href: localizations/emea-swe-intrastat.md
+        - name: EU sales list
+          href: localizations/emea-swe-eu-sales-list.md          
       - name: Switzerland
         items:
         - name: Switzerland overview
