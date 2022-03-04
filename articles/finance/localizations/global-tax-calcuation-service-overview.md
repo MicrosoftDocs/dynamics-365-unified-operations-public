@@ -142,6 +142,11 @@ The following transactions are supported in version 10.0.23:
 
 - Free text invoice
 
+The following transactions are supported in version 10.0.26: 
+
+- General journals
+- Vendor invoice journal
+
 ## Supported countries/regions
 
 Tax Calculation can be enabled by legal entity. 
