@@ -65,7 +65,7 @@ The Retail SDK ships in Lifecycle Services (LCS). This mode of distribution is d
 | **Replaced by another feature?**   |  [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Product areas affected**         | Retail SDK |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.21, the SDK shipped via the LCS VMs will be removed in October 2022. |
+| **Status**                         | Deprecated: As of release 10.0.21, the SDK shipped via the LCS VMs will be removed in April 2023. |
 
 ### Retail deployable package and combined POS, Hardware station, and Cloud Scale unit installers
 
@@ -88,7 +88,7 @@ For more information, see:
     + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
     + [POS, CSU and Hardware station](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
-### ModernPos.Sln and CloudPOs.sln in the Retail SDK
+### ModernPos.Sln and CloudPos.sln in the Retail SDK
 
 POS extension development using ModernPos.sln, CloudPOs.sln, POS.Extension.csproj, and the POS folder is deprecated in release 10.0.21. Going forward, use the POS-independent packaging SDK for POS extensions.
 
@@ -98,7 +98,7 @@ POS extension development using ModernPos.sln, CloudPOs.sln, POS.Extension.cspro
 | **Replaced by another feature?**   | [POS-independent packaging SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Product areas affected**         | Dynamics 365 Commerce POS extension and deployment |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of release 10.0.21, support for combined POS packages and extension model using the ModernPos.Sln, CloudPOs.sln, and POS.Extensons.csproj in Retail SDK will be removed in October 2022. |
+| **Status**                         | Deprecated: As of release 10.0.21, support for combined POS packages and extension model using the ModernPos.Sln, CloudPOs.sln, and POS.Extensons.csproj in Retail SDK will be removed in April 2023. |
 
 ## Features removed or deprecated in the Commerce 10.0.17 release
 
