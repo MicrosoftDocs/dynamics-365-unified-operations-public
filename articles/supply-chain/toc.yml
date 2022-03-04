@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.26 (May 2022)
+          href: get-started/whats-new-scm-10-0-26.md
         - name: Supply Chain Management 10.0.25 (April 2022)
           href: get-started/whats-new-scm-10-0-25.md
         - name: Supply Chain Management 10.0.24 (February 2022)
@@ -3473,7 +3475,7 @@
         items:
         - name: Install, set up, and use mobile devices
           items:
-          - name: What's new or changed in Warehouse Management mobile app
+          - name: What's new or changed in the Warehouse Management mobile app
             href: warehousing/whats-new-wma.md
           - name: Install and connect the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
