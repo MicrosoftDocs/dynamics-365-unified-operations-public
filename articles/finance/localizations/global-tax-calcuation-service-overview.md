@@ -4,7 +4,7 @@
 title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -63,6 +63,7 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 - Canada
 - Europe
 - Japan
+- Switzerland
 - United Kingdom
 - United States
 
@@ -198,6 +199,12 @@ The following countries/regions for a legal entity's primary address are support
 The following countries/regions for a legal entity's primary address are supported in version 10.0.24:
 
 - Mexico
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.26:
+
+- China
+- Czech Republic
+- Spain
 
 ## Related resources
 
