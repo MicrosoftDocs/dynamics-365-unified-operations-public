@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.26 
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.26 preview release.
 author: kfend
-ms.date: 03/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.26
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.26. This version has a build number of 10.0.xxxx and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.26. This version has a build number of 10.0.1192 and is available as follows:
 
 - **Preview of release**: March 2022
 - **General availability of release (self-update)**: April 2022
@@ -75,7 +75,7 @@ The following table lists the feature enhancements included in this release. Eac
 Dynamics 365 Finance 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=654580). 
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864). 
 
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
