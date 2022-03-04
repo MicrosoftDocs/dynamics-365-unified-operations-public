@@ -1576,6 +1576,12 @@
               href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
             - name: Customize tax configurations for master data lookup
               href: localizations/customize-tax-configurations-master-data-lookup.md
+          - name: Troubleshooting
+            items:
+            - name: Failed to access tax service
+              href: localizations/tcs-troubleshooting-failed-access-tax-service.md
+            - name: Empty tax feature list in Tax calculation parameters
+              href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
           - name: Tax Calculation FAQ
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Tax
