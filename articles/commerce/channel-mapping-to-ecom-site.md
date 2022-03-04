@@ -36,5 +36,5 @@ Online channels represent online e-Commerce storefronts, for an overview on chan
 
 The below image shows the online channels that are deployed with Dynamics 365 Commerce if the demo data option was selected.
 
-~[Default demo data channels](media/channel-mapping-1.png)
+![Default demo data channels](media/channel-mapping-1.png)
 
