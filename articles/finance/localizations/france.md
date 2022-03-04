@@ -43,6 +43,7 @@ This topic includes information and links to resources that can help you set up 
 - [Customer and vendor account statements](tasks/fr-00002-customer-vendor-account-statements.md)
 - [Daily interest calculation for late payment and lump sum in the invoice and collection letter](tasks/fr-00018-daily-interest.md)
 - [Derogatory depreciation](emea-fra-derogatory-depreciation.md)
+- [EU sales list for France (DES)](emea-fra-eu-sales-list.md)
 - [French bills of exchange and promissory notes](tasks/fr-00004-french-bills-exchange-promissory-notes.md)
 - [Audit File for France (FEC) overview](emea-fra-fec-audit-file.md)
 - [French Intrastat](emea-fra-intrastat.md)
