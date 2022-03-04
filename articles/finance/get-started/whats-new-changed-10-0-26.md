@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.26 
+title: What's new or changed in Dynamics 365 Finance 10.0.26 (May 2022)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.26 preview release.
 author: kfend
 ms.date: 03/04/2022
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.26
 
 ---
 
-# Preview of Dynamics 365 Finance 10.0.26 (May 2022)
+# What's new or changed in Dynamics 365 Finance 10.0.26 (May 2022)
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,7 +45,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-| Accounts payable | Display the total invoice amount, which is the sum of the net amount and tax amount, in the Invoice journal. | The feature introduces a new column, **Total amount** in the Invoice Journal. The value in this column is calculated in real-time by summing the net amount and tax amount. This addition improves user efficiency by removing the need to manually calculate the total amount from net amount and tax amount, which are currently located in different places. <br><br> The setting, **Amounts included in sales tax**, located in the journal ledger parameters will affect the calculation of the total amount. <br><br> - If the **Amounts included in sales tax** parameter is enabled, the total amount is the credit or debit amount. <br> - If the **Amounts included in sales tax** parameter isn't enabled, the total amount is the credit or debit amount plus the tax amount. <br><br> This feature was one of the most popular ideas from the customer ideas portal. | Default | 
+| Accounts payable | Display the total invoice amount, which is the sum of the net amount and tax amount, in the Invoice journal. | The feature introduces a new column, **Total amount** in the Invoice Journal. The value in this column is calculated in real-time by summing the net amount and tax amount. This addition improves user efficiency by removing the need to manually calculate the total amount from net amount and tax amount, which are currently located in different places. <br><br> The setting, **Amounts included in sales tax**, located in the journal ledger parameters will affect the calculation of the total amount. <br><br> - If the **Amounts included in sales tax** parameter is enabled, the total amount is the credit or debit amount. <br> - If the **Amounts included in sales tax** parameter isn't enabled, the total amount is the credit or debit amount plus the tax amount. <br><br> This feature was one of the most popular ideas from the [Dynamics 365 community page](https://community.dynamics.com/). | Default | 
 | Accounts receivable | Resetting the workflow status for free text invoices from **Unrecoverable** to **Draft** | In the case of a system interruption, a free text invoice can get into the status of **Unrecoverable**. With this feature, you can reset the document status from **Unrecoverable** to **Draft**. After the workflow status is reset to **Draft**, it is available for editing.  | Feature management | 
 | Accounts receivable | Stop posting of free text invoices on first error | This feature adds the option to stop posting free text invoices when an error occurs. Finding the issue on the first posting error allows the accounts receivable staff to investigate the error quickly, leading to faster billing. The error can be corrected and the invoice can be re-selected for posting. You can select to stop free text invoice posting when an error occurs on the **Updates** tab of the **Accounts receivable parameters** page (**Accounts receivable** > **Setup** > **Accounts receivable parameters**). | Parameter |
 | Accounts receivable | Post to Revenue account for zero priced sales order invoice lines | Allowing updates to the Revenue account in General ledger for sales lines that have no price helps to provide a complete audit trail, displaying the debit and credit of zero for the Revenue and Accounts receivable accounts, saving accounts receivable staff time in their reconciliation processes. To set up this information, go to the **Post to Revenue account for zero priced sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable** > **Setup** > **Accounts receivable parameters**).  | Parameter |
