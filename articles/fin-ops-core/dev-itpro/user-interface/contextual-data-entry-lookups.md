@@ -95,7 +95,7 @@ Custom lookup implementations can provide advanced or non-typical behaviors, suc
 ```xpp
 public str resolveAmbiguousReference()
 {
-    FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
+    return FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
 }
 ```
 
