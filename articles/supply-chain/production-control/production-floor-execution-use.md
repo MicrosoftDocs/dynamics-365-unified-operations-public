@@ -267,23 +267,27 @@ A worker registers a break by selecting **Break** and then selecting the card th
 
 ## Working in teams
 
-Workers can form a team when multiple workers are assigned to the same production job. The team can nominate one worker as a pilot, and the remaining workers will then automatically become assistants to that pilot. For the resulting team, only the pilot needs to register job status, while time records apply to all team members. 
+Workers can form a team when multiple workers are assigned to the same production job. The team can nominate one worker as a pilot, and the remaining workers will then automatically become assistants to that pilot. For the resulting team, only the pilot needs to register job status, while time records apply to all team members.
 
-### Before you start
+### Prerequisites
 
-In the All jobs tab you need to enable the Assistant action in the primary tool bar. Read more about how to design a tab here: https://docs.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-floor-execution-tabs#design-a-tab
+An admin must enable the **Assistant** action for the primary toolbar of the **All jobs** tab of the production floor execution interface. For instructions, see [Design the production floor execution interface](production-floor-execution-tabs.md).
 
-### Forming a team with a pilot and an assistant
+### Form a new team with a pilot and an assistant
 
-Workers register as assistant on the All jobs tab by selecting Assistant to open the Select an employee to assist dialog. In the dialog box workers can select among workers who are actively working on a job. When workers have confirmed the selection, they are working as an assistant to the selected worker who becomes the pilot for the team. 
+A worker can register as an assistant on the **All jobs** tab by selecting **Assistant** to open the **Select an employee to assist** dialog. The dialog box lets the worker select a pilot from among workers who are actively working on a job. When a worker has confirmed the selection, they become an assistant to the selected worker, who becomes the pilot for the new team.
+
+### Join an existing team
+
+<!-- KFM: Johan will add this. -->
 
 ### Team assigns a new pilot
 
-When a team wants to assign a new pilot to the team, the worker working as a pilot needs to nominate a new worker in the team as the new pilot. The pilot does that by selecting Assist to open the Change pilot dialog box. In the dialog box the worker can now select a worker from the team to become the new pilot. When the worker has confirmed the selection, the worker is no longer a member of the team. 
+When a team wants to select a new pilot, the current pilot must nominate a new worker in the team as the new pilot. The pilot does that by selecting **Assistant** to open the **Change pilot dialog** box. In the dialog box, the worker can now select the pilot from a list of workers already on the team. When the previous pilot has confirmed the selection, that worker is no longer a member of the team, but can rejoin the team if needed.
 
 ### Assistant clocks out
 
-When a worker, who works as an assistant, clocks out, the worker is no longer a member of the team. If an assistant clocks out and the options Permanent teams and Restart at clock in are set to Yes, the worker will automatically be a member of the team again when the worker clocks in again. You can find these options in the Time and attendance parameters in the General tab.
+When a worker who works as an assistant clocks out, that worker leaves the team. If an assistant clocks out and the options **Permanent teams** and **Restart at clock in** are set to *Yes*, the worker will automatically rejoin the team the next time the worker clocks in. You can find these options on the **Time and attendance parameters** page, on the **General** tab.
 
 ## Opening instructions
 
