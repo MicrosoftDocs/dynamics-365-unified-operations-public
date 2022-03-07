@@ -93,7 +93,7 @@ To add a new channel language, select the channel link highlighted in the below 
 
 #### Enable the site language selector
 
-Once you have configured a site to have multiple languages, you may want to add a language selector to the header to select the language.  The module library [header](..\author-header-module.md) module has built in support for a language selector.  This can be changed in the header fragment as shown in the below image. As can be seen the header module has a **Site Picker** slot, edit the fragment and add the **Site picker** module to the slot and then select **Add site options list** to add a new language.  You can then add the text that will show up and the URL for the path you created when adding the channel to the site (ie: www.adventure-works.com/fr-ca).
+Once you have configured a site to have multiple languages, you may want to add a language selector to the header to select the language.  The module library [header](..\author-header-module.md) module has built in support for users to select a language using the **site picker** module.  The site picker can be added within the header fragment which has the header module as shown in the below image. As can be seen, the header module has a **Site Picker** slot, edit the fragment and add the **Site picker** module to the slot and then select **Add site options list** from the site picker module configurations to add a new language.  You can then add the text that will show up in the picker drop down and the URL with the path you created when adding the channel to the site (ie: www.adventure-works.com/fr-ca).
 
 ![Setup site selector on header](media/channel-mapping-12.png)
 
