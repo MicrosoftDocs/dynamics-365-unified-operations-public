@@ -36,7 +36,7 @@ In other words, the weighted average cost equals the beginning quantity times th
 During inventory close, the calculation is performed every day during the closing period.
 
 > [!NOTE]
-> For more information about settlements, see the topic about inventory close.
+> For more information about settlements, see [Inventory close](inventory-close.md).
 
 The following examples show the effect of using weighted average date with five configurations:
 
