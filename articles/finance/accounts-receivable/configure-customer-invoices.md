@@ -4,7 +4,7 @@
 title: Create a customer invoice
 description: A customer invoice for a sales order is a bill that is related to a sale, and that an organization gives to a customer.
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -87,6 +87,9 @@ View the status of the sales orders in the **All sales orders** list page.
 Use this process when one or more sales orders are ready to be invoiced, and you want to consolidate them into a single invoice. 
 
 You can select multiple invoices on the **Sales order** list page and then use **Generate invoices** to consolidate them. On the **Posting invoice** page, you can change the **Summary order** setting to summarize by order number (where there are multiple packing slips for a single sales order) or by invoice account (where there are multiple sales orders for a single invoice account). Use the **Arrange** button to consolidate sales orders into single invoices, based on the **Summary order** settings.
+
+## Post to Revenue account for sales order lines that have no price
+You will have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price. To set up or view this information, go to the **Post to Revenue account for zero priced sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option is not selected, lines that do not have price information will not post to the **Revenue** account.
 
 ## Additional settings that change the posting behavior
 The following fields change the behavior of the posting process.
