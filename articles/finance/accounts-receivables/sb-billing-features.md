@@ -112,6 +112,41 @@ The following invoices show the unit prices with the different quantities purcha
 
 <table class="drcr"><col><col><col><col><thead><tr class="heading"><td>Invoice</td><td>Quantity Purchased</td><td>Unit Price</td><th>Net Amount</th></tr></thead><tbody><tr><td>1</td><td>25</td><td>2 / 25 = 0.08</td><td>100 / 50 = 2</td></tr><tr><td>2</td><td>20</td><td>2 / 20 = 0.1</td><td>100 / 50 = 2</td></tr><tr><td>3</td><td>50</td><td>2 / 50 = 0.04</td><td>100 / 50 = 2</td></tr><tr><td>4</td><td>60</td><td>0.75 / 60 = 0.0125 = 0.01</td><td>150 / 200 = 0.75</td></tr></tbody></table><div>
 
+# Proration examples
 
+This topic explains calculations for proration, which can be based on the number of days or number of months. The method used for the proration calculation is set on the **Advanced Recurring Contract Billing Parameters** page. The proration method affects how the amounts are calculated for a billing schedule in the following situations: 
+- Initial creation
+- Application of an escalation or discount
+- Termination
+- Placement or removal a hold 
+- Addition of support or renewal 
+
+The proration method also affects the calculations in the monthly recurring revenue (MRR) report. 
+</div><div>
+
+## Example 1
+
+The annual amount of a billing schedule is $5000. The start date is August 12, 2019; the end date is December 22, 2019. The billing frequency is annually. 
+- **Daily**
+  - Number of days = End date - Start Date + 1 = 133 days
+  - Number of days in the year = August 11, 2020 - August 12, 2019 + 1 = 366
+  - Prorated amount = 5000 * (133/366) = 1816.84
+- **Monthly**
+  - Start month portion = (31 - 12 + 1)/31 = 20/31
+  - Middle months = 3
+  - End month portion = 22/31
+  - Prorated amount = 5000/12 * [(20/31) + 3 + (22/31)] = 1814.52
+
+## Example 2
+
+The annual amount of a billing schedule is $12000. The start date is August 1, 2019; the end date is December 31, 2019. The billing frequency is annually. 
+- **Daily**
+  - Number of days = End date - Start Date + 1 = 153 days
+  - Number of days in the year = July 31, 2020 - August 1, 2019 + 1 = 366
+  - Prorated amount = 12000 * (153/366) = 5016.39
+- **Monthly (Full Month)**
+  - Number of months = 5
+  - Total months = 12
+  - Prorated amount = (12000 * 5)/12 = 5000
 
 
