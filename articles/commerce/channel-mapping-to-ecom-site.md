@@ -83,7 +83,7 @@ A common scenario is to have a single market site that is localized into other l
 
 ![Multiple languages configured on a single online channel](media/channel-mapping-9.png)
 
-All of the languages can then be configured on the channel as shown below.  Notice each language has been configured with the locale for the path.
+The languages can then be configured on the e-commerce site within site builder as shown below.  Notice each language has been configured with the locale for the path giving each language a unique URL.
 
 ![Multiple languages configured on a site](media/channel-mapping-10.png)
 
