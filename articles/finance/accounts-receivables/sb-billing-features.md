@@ -126,7 +126,7 @@ This topic explains calculations for proration, which can be based on the number
 The proration method also affects the calculations in the monthly recurring revenue (MRR) report. 
 </div><div>
 
-## Example 1
+## Example 1 proration
 
 The annual amount of a billing schedule is $5000. The start date is August 12, 2019; the end date is December 22, 2019. The billing frequency is annually. 
 - **Daily**
@@ -139,7 +139,7 @@ The annual amount of a billing schedule is $5000. The start date is August 12, 2
   - End month portion = 22/31
   - Prorated amount = 5000/12 * [(20/31) + 3 + (22/31)] = 1814.52
 
-## Example 2
+## Example 2 proration
 
 The annual amount of a billing schedule is $12000. The start date is August 1, 2019; the end date is December 31, 2019. The billing frequency is annually. 
 - **Daily**
@@ -151,4 +151,29 @@ The annual amount of a billing schedule is $12000. The start date is August 1, 2
   - Total months = 12
   - Prorated amount = (12000 * 5)/12 = 5000
 
+---
+
+# Reversing a period billing 
+
+This topic provides an example that shows how to reverse the billing of a period for a schedule line. 
+
+A billing schedule has the following one line only: 
+- Billed monthly for 12 months from January to December. 
+- Invoices have been created for all periods up to April (for example, the **Billed** check box is marked on the **View billing detail** page. 
+
+You want to reverse the invoice for the April billing period. 
+
+Since an invoice for the April billing period has been created, the **Billed** status for the detail cannot be removed. To be able to reverse the April billing, you must create an offsetting credit note for the line:
+1. In the **All billing schedules** page, create a new schedule line for the same item. 
+2. Change the **Quantity** of the item to a negative value of the original quantity. 
+3. Set the **Billing frequency** to **One-time**. 
+4. Set the start and end dates to the same as the billing detail line for which you want to create a credit note. In this example, 4/1/2019 to 4/30/2019.
+5. Save the changes. 
+6. Open the **Generate invoice** page and create the sales order with the credit note for this period.   
+Optionally, you can select the option to post the invoice as well. 
+
+When you review the line for the billing schedule, the new line has a link to the credit note.   
+Also, the original line still has a link to the original April invoice. 
+
+> [!Note icon](../../../Resources/images/icons/iAXnote.gif)**Note:** If the sales invoice had not been created for the April billing period, you could simply delete the sales order, and the **Billed** status would be cleared. But because the invoice had already been created, you must create the credit note by following the above steps. 
 
