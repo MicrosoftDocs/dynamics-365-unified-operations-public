@@ -101,9 +101,15 @@ Once the site selector is saved and published in the header you should see a dro
 
 ![Sample site selector drop down](media/channel-mapping-13.png)
 
+#### Page variants per language
+
+Site builder supports the ability to change how a page looks based on the selected language by creating a page variant for it.  From within site builder, there is a link at the top right that shows the current channel and language, selecting it will bring up a channel and language picker.  In this scenario there is only one channel but multiple languages.  If you want to override the page for this language, just change it and you will be prompted to create a variant of the page if one does not exist or you will see the variant and can now make edits to that variant.  If no variant is created the original page will render and show the appropriate language for module strings and product information pulled from HQ, however if text was provided directly in the default page modules like a page title or other marketing information that will remain in the original language, creating a page variant will allow you to add localized content.  Pages can also be exported as xliff files to be localized and the variants can then be imported.
+
+![Change language for a page in site builder](media/channel-mapping-14.png)
+
 
 ### Single market site with multiple languages but different site experiences
-online channel with multiple languages mapped to different e-commerce sites
+Similar to the scenario above, you may want to 
 
 ### Brand with multiple markets and single site
 AW en-us channel with US currency single site
