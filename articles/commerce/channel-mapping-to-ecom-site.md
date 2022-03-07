@@ -87,7 +87,7 @@ The languages can then be configured on the e-commerce site within site builder 
 
 ![Multiple languages configured on a site](media/channel-mapping-10.png)
 
-To add a new channel language, select the channel link highlighted in the below image and a channel locale mapping will pop up where you can select "Add a locale" where you can pick the channel and locale to add plus the path to use for that channel.
+To add a new channel language, select the channel link highlighted in the below image and a channel locale mapping will pop up where you can select **Add a locale** where you can pick the channel and locale to add plus the path to use for that channel.
 
 ![Adding languages to a site](media/channel-mapping-11.png)
 
