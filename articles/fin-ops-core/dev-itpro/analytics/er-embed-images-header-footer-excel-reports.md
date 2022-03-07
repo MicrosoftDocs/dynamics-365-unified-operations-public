@@ -158,9 +158,9 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 3. On the **Configurations** page, in the configuration tree in the left pane, expand **Invoice model**.
 4. In addition to the selected **Free text invoice (Excel)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configuration tree:
 
-    - **Invoice model** – This configuration contains the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the invoicing business domain.
-    - **Invoice model mapping** – This configuration contains the [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that describes how the data model is filled in with application data at runtime.
-    - **Free text invoice (Excel)** – This configuration contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout, based on a template in Excel format. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime.
+    - **Invoice model** – This configuration contains the data model ER component that represents the data structure of the invoicing business domain.
+    - **Invoice model mapping** – This configuration contains the model mapping ER component that describes how the data model is filled in with application data at runtime.
+    - **Free text invoice (Excel)** – This configuration contains the format and format mapping ER components. The format component specifies the report layout, based on a template in Excel format. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime.
 
 ![Imported ER configurations on the Configurations page.](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 

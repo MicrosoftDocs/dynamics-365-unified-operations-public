@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-You can use the [Electronic reporting](general-electronic-reporting.md) (ER) framework to configure [formats](general-electronic-reporting.md#FormatComponentOutbound) for outbound documents in accordance to the legal requirements of various countries/regions. You can also use the ER framework to configure [formats](general-electronic-reporting.md#FormatComponentInbound) for parsing inbound documents and use the information from those documents to append or update application data. Each of these formats can be used in your Dynamics 365 Finance instance for handling inbound or outbound business documents as part of a certain business process.
+You can use the [Electronic reporting](general-electronic-reporting.md) (ER) framework to configure formats for outbound documents in accordance to the legal requirements of various countries/regions. You can also use the ER framework to configure formats for parsing inbound documents and use the information from those documents to append or update application data. Each of these formats can be used in your Dynamics 365 Finance instance for handling inbound or outbound business documents as part of a certain business process.
 
 Usually, you must specify what ER format must be used in a certain business process. To do that, select a single ER format in a lookup field that is configured as part of business process-specific parameters. These lookup fields are usually implemented by using the appropriate API of the ER framework. For more information, see [ER framework API - code to display a format mapping lookup](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 

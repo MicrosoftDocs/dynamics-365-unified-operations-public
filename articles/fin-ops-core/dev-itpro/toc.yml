@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.26 (May 2022)
+          href: get-started/whats-new-platform-updates-10-0-26.md
         - name: Platform updates for version 10.0.25 (April 2022)
           href: get-started/whats-new-platform-updates-10-0-25.md
         - name: Platform updates for version 10.0.24 (February 2022)
@@ -1666,8 +1668,6 @@
           href: migration-upgrade/data-upgrade-2012.md
         - name: AX 2012 upgrade - Pre-upgrade checklist for data upgrade
           href: migration-upgrade/prepare-data-upgrade.md
-        - name: Upgrade from AX 2012 - SQL Transactional Replication
-          href: database/replication-setup.md
         - name: Upgrade from AX 2012 - Data upgrade in self-service environments
           href: migration-upgrade/data-upgrade-self-service.md
         - name: AX 2012 upgrade - On-premises environments

@@ -4,7 +4,7 @@
 title: Deployment guidelines for the fiscal printer integration sample for Italy (legacy)
 description: This topic provides guidelines for deploying the fiscal printer integration sample for Italy from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -16,6 +16,7 @@ ms.search.validFrom: 2019-3-1
 # Deployment guidelines for the fiscal printer integration sample for Italy (legacy)
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This topic provides guidelines for deploying the fiscal printer integration sample for Italy from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal printer integration sample for Italy](emea-ita-fpi-sample.md). 
 
@@ -86,13 +87,13 @@ To create deployable packages that contain Commerce components, and apply those 
 1. Complete the steps that are described in the [Development environment](#development-environment) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
-    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following line to the **composition** section.
+    1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following line to the **composition** section.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
+    1. In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
@@ -100,20 +101,56 @@ To create deployable packages that contain Commerce components, and apply those 
 
 3. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
 
-    - Add the following line to include the CRT extension in the deployable packages.
+    1. Add the following line to include the CRT extension in the deployable packages.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
 
-    - Add the following line to include the Hardware station extension in the deployable packages.
+    1. Add the following line to include the Hardware station extension in the deployable packages.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. Start the MSBuild Command Prompt for Visual Studio utility, and then run **msbuild** under the Retail SDK folder to create deployable packages.
-5. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Make the following changes in the **Sdk.ModernPos.Shared.csproj** file under the **Packages\_SharedPackagingProjectComponents** folder to include the resource files for Italy in deployable packages:
+
+    1. Add an **ItemGroup** section that contains nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. In the **Target Name="CopyPackageFiles"** section, add one line for each locale, as shown in the following example.
+
+        ```xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+5. Make the following changes in the **Sdk.RetailServerSetup.proj** file under the **Packages\_SharedPackagingProjectComponents** folder to include the resource files for Italy in deployable packages:
+
+    1. Add an **ItemGroup** section that contains nodes that point to the resource files for the desired translations. Ensure that you specify the correct namespaces and sample names. The following example adds resource nodes for the **it** and **it-CH** locales.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. In the **Target Name="CopyPackageFiles"** section, add one line for each locale, as shown in the following example.
+
+        ``` xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+6. Start the MSBuild Command Prompt for Visual Studio utility, and then run **msbuild** under the Retail SDK folder to create deployable packages.
+7. Apply the packages via LCS or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## Design of extensions
 

@@ -3,8 +3,8 @@
 
 title: Germany overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
-author: ShylaThompson
-ms.date: 05/12/2020
+author: kfend
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 
 ms.search.region: Germany
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -40,7 +40,6 @@ This topic includes information and links to resources that should be considered
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
 -   [Depreciation adjustments for additional acquisitions in the second year](tasks/de-00002-depreciation.md)
--   [Intrastat](emea-deu-intrastat.md)
 
 ## VAT declaration 
 -   [VAT declaration for Germany](emea-deu-vat-declaration-germany.md)
@@ -67,6 +66,10 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 | Report                     |  Description  |How to get to the report |
 |----------------------------|--------------------------|----------------------------------------|
 |German journal list report|The **German journal list** report displays a list of transactions, sorted by journal sequence number, that result from running the journalizing function. This report is used to review the status of general ledger processes. This report is typically used by chief executive officers, chief financial officers, compliance managers, accounting managers, accounting supervisors, and financial controllers. For more information, see [German journal list report](emea-deu-journal-list-report.md).|  **General ledger** > **Periodic** > **Journals** > **Ledger journal** > **German journal list**|
+
+## Intra-community reporting
+-   [EU sales list for Germany](emea-deu-eu-sales-list.md)
+-   [Intrastat](emea-deu-intrastat.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Germany report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Germany.html)

@@ -105,7 +105,7 @@ public interface ERIFormatFileDestinationSettings extends SysPackable
 }
 ```
 
-This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time. The configured destination can then be used at runtime to store generated [outbound](general-electronic-reporting.md#FormatComponentOutbound) documents.
+This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time. The configured destination can then be used at runtime to store generated outbound documents.
 
 To learn more about this interface, complete the example in [Implement a custom destination for generated documents](er-custom-file-destination.md).
 

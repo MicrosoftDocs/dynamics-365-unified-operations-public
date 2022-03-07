@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 08/23/2021
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -198,6 +198,17 @@ As for Commerce Scale Unit (self-hosted), much larger, server-grade hardware is 
 - 2 GB of RAM (However, 4 GB of RAM are recommended.)
 - 1.6 GHz peak CPU speed per core (Two cores are the minimum.)
 - 15 GB of free space (The channel database can require a large amount of space. The size might even be as much as multiple terabytes.)
+
+## Recommended network exceptions
+
+Often (especially in corporate environments), network-related security requires that specific exceptions be noted. In these security-focused networks, we recommend that you add, at a minimum, the following exceptions to a network-related allow list:
+
+- \*.static.akamaitechnologies.com
+- \*.azure.com
+- \*.dynamics.com
+- \*.microsoft.com
+- \*.visualstudio.com
+- \*.windows.net
 
 ## Requirements for development on local VMs
 

@@ -4,7 +4,7 @@
 title: Fiscal registration service integration sample for the Czech Republic
 description: This topic provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.2
 # Fiscal registration service integration sample for the Czech Republic
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This topic provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
 
@@ -65,7 +66,7 @@ The fiscal registration service integration sample implements the following rule
 - A transaction that is related to a customer account deposit or a customer order deposit is registered in the fiscal registration service as a single line transaction and is marked with a special attribute. The deposit VAT group is specified in this line.
 - When a hybrid customer order is created, that is, a customer order that contains products that can be carried out of the store by the customer, as well as products that will be picked up or shipped later, the transaction registered in the fiscal registration service contains lines for the products that are carried out, as well as a line for the order deposit.
 - A payment from a customer account is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
-- The customer order deposit amount that is applied to a customer order *Pick up* operation is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
+- The customer order deposit amount that is applied to a customer order pickup operation is considered a regular payment and marked with a special attribute when the transaction is registered in the fiscal registration service.
 
 ### Offline registration
 
@@ -288,14 +289,28 @@ To set up a development environment to test and extend the sample, follow these 
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Install Hardware station extensions:
+1. Install fiscal connector extensions:
 
-    1. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
-    1. Start the extension installer from the command line:
+    You can install fiscal connector extensions on the [Hardware station](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) or the [POS register](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Install Hardware station extensions:
+
+        1. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
+        1. Start the extension installer from the command line by running the following command.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Install POS extensions:
+
+        1. Open the POS fiscal connector sample solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln**, and build it.
+        1. In the **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461** folder, find the **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** installer.
+        1. Start the extension installer from the command line by running the following command.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### Production environment
 
@@ -347,5 +362,28 @@ The connector supports the following requests.
 #### Configuration
 
 The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration.
+
+### POS fiscal connector extension design
+
+The purpose of the POS fiscal connector extension is to communicate with the fiscal registration service from POS. It uses the HTTPS protocol for communication.
+
+#### Fiscal connector factory
+
+The fiscal connector factory maps the connector name to the fiscal connector implementation and is located in the **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts** file. The connector name should match the fiscal connector name that is specified in Commerce headquarters.
+
+#### EFR fiscal connector
+
+The EFR fiscal connector is located in the **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts** file. It implements the **IFiscalConnector** interface that supports the following requests:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – This request sends documents to the fiscal registration service and returns a response from it.
+- **FiscalRegisterIsReadyClientRequest** – This request is used for a health check of the fiscal registration service.
+- **FiscalRegisterInitializeClientRequest** – This request is used to initialize the fiscal registration service.
+
+#### Configuration
+
+The configuration file is located in the **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings for the fiscal connector to be configured from Commerce headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+
+- **Endpoint address** – The URL of the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the connector will wait for a response from the fiscal registration service.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
