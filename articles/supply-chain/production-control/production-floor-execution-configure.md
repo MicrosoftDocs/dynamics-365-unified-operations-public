@@ -115,6 +115,17 @@ To use this functionality, turn on the following feature in [Feature management]
 
 - *(Preview) Report on catch weight items from the production floor execution interface*
 
+### Enable teams
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Workers can form a team when multiple workers are assigned to the same production job. The team can nominate one worker as a pilot, and the remaining workers will then automatically become assistants to that pilot. For the resulting team, only the pilot needs to register job status, while time records apply to all team members.
+
+To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Production teams in the production floor execution interface*
+
 ## Work with production floor execution configurations
 
 To create and maintain production floor execution configurations, go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**. The **Configure production floor execution** page shows a list of existing configurations. On this page, you can perform the following actions:
