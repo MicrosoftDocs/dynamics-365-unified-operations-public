@@ -265,6 +265,26 @@ Workers can register breaks. Breaks can be flexibly defined, as described in [Pa
 
 A worker registers a break by selecting **Break** and then selecting the card that represents the break type (such as lunch). After the worker confirms the selection, the device shows either the sign-in page or a page that will wait for the worker to confirm that they have returned from the break. The page that appears depends on the configuration of the production floor execution interface. (For more information, see [Configure the production floor execution interface](production-floor-execution-configure.md).)
 
+## Working in teams
+
+Workers can form a team when multiple workers are assigned to the same production job. The team can nominate one worker as a pilot, and the remaining workers will then automatically become assistants to that pilot. For the resulting team, only the pilot needs to register job status, while time records apply to all team members. 
+
+### Before you start
+
+In the All jobs tab you need to enable the Assistant action in the primary tool bar. Read more about how to design a tab here: https://docs.microsoft.com/en-us/dynamics365/supply-chain/production-control/production-floor-execution-tabs#design-a-tab
+
+### Forming a team with a pilot and an assistant
+
+Workers register as assistant on the All jobs tab by selecting Assistant to open the Select an employee to assist dialog. In the dialog box workers can select among workers who are actively working on a job. When workers have confirmed the selection, they are working as an assistant to the selected worker who becomes the pilot for the team. 
+
+### Team assigns a new pilot
+
+When a team wants to assign a new pilot to the team, the worker working as a pilot needs to nominate a new worker in the team as the new pilot. The pilot does that by selecting Assist to open the Change pilot dialog box. In the dialog box the worker can now select a worker from the team to become the new pilot. When the worker has confirmed the selection, the worker is no longer a member of the team. 
+
+### Assistant clocks out
+
+When a worker, who works as an assistant, clocks out, the worker is no longer a member of the team. If an assistant clocks out and the options Permanent teams and Restart at clock in are set to Yes, the worker will automatically be a member of the team again when the worker clocks in again. You can find these options in the Time and attendance parameters in the General tab.
+
 ## Opening instructions
 
 Workers can open a document that is attached to a job by selecting **Instructions**. The **Instructions** button is available only if a document is associated with the job in the master data. For example, a document that is attached to a product on the **Released products** page in Supply Chain Management will be available for workers to open in the shop floor execution interface.
