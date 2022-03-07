@@ -73,6 +73,11 @@ Once a site has been configured with its channel, it can easily be managed/chang
 
 ![Manage channel mapping in site builder](media/channel-mapping-7.png)
 
+Many branded sites sites can co-exist in a single tenant.  Notice the site list in the below image has three different branded sites (Adventure Works, Adventure Works Business (B2B site) and a site for Fabrikam) each mapped to different single online channel.
+
+![Site list in site builder](media/channel-mapping-8.png)
+
+
 ### Single market site with multiple languages but same site experience
 Single online channel with multiple languages mapped to a single e-commerce site
 Adventure Works online channel configured with en-ca and fr-ca - users in both French Canada and English Canada get the exact same experience, same currency but site is localized
