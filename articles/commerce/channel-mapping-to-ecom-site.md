@@ -78,7 +78,7 @@ Many branded sites sites can co-exist in a single tenant.  Notice the site list 
 ![Site list in site builder](media/channel-mapping-8.png)
 
 
-### Single market site with multiple languages but same site experience
+### Single market site with multiple languages and a single online site experience
 A common scenario is to have a single market site that is localized into other languages but the products, prices and currency stay the same as the languages are changed.  An example is a site for Canada which has two regional languages English and French, but the currency, products, shipping options and pricing are the same. The below image shows Adventure Works online channel configured with many different languages.
 
 ![Multiple languages configured on a single online channel](media/channel-mapping-9.png)
