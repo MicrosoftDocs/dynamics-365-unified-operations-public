@@ -109,9 +109,18 @@ Site builder supports the ability to change how a page looks based on the select
 
 
 ### Single market site with multiple languages but different site experiences
-Similar to the scenario above, you may want to 
 
-### Brand with multiple markets and single site
+Similar to the scenario above, you may want to offer a completely different site experience for one language over the other.  The recommended way is to use the page variants on a single site as discussed in the previous scenario but if desired you can create a new e-commerce site in site builder and map it to the single online channel and language.  This would result in a single online channel being mapped to multiple e-commerce sites, one per language.
+
+### Single brand site with multiple markets and single site experience
+
+In this scenario, a branded site may have multiple online channels per region, for example Adventure Works could have one online channel for the Canadian market with multiple languages, another online channel for the American market and another for the German market.  Each online channel would be configured to a region specific business entity and can either have the same set of products, sub set of products, or a different set of product each with their own unique prices (in their regional currency), taxes, discounts, shipping modes, etc...
+
+Adding additional channels to an e-commerce site can be done in the site builder tool under the **Site settings**, **Channels** tab with the **Add a channel** button as shown in the below image. The online channel and default locale can be selected.  Different domain names can be configured to point to each site, for example www.adventure-works.com could be mapped to the United States site, www.adventure-works.ca can mapped to the Canadian site, or alternatively a single domain could be configured such that the default domain (www.adventure-works.com) maps to the Unites States site and a path is added for other countries such as www.adventure-works.com/canada.
+
+![Adding a channel to an existing site](media/channel-mapping-15.png)
+
+
 AW en-us channel with US currency single site
 AW de-de channel with EU currency single site
 
