@@ -67,15 +67,16 @@ Dynamics 365 Commerce lets you manage SEO metadata for individual pages. You can
 ### Modify page metadata
 
 To modify page metadata, follow these steps.
-
 1. Under **Sites**, select the **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **Pages**.
 1. Select the home page to open it in the page editor.
 1. On the command bar, select **Edit**.
-1. In the properties pane on the right, expand **Default metatags**.
-1. To add a new metatag, select **Add**, and then enter the tag in the field. To remove an existing metatag, select the trash can symbol to the right of it.
+1. At the top of the left page outline, select the gear icon and choose **Advanced outline view**.
+1. In the outline view, expand the the tree controls to show contents of the **HTML head** slot.
+1. Select the desired SEO module within the HTML head slot (examples: "Page summary", "Product page summary, "Category page summary", "Metatags", etc.).
+1. In the property pannel on the right, edit the desired SEO data for the chosen SEO module (examples: "Title", "Description", "Sharing image", etc.).
 1. Select **Save**, and then select **Finish editing**.
-1. In the **Comments** field, enter **Updated metatags**, and then select **OK**.
+1. In the **Comments** field, enter **Updated SEO data**, and then select **OK**.
 1. Select **Preview** to preview your page. When you've finished, close the preview tab to return to the authoring tool.
 1. Select **Publish**.
 
