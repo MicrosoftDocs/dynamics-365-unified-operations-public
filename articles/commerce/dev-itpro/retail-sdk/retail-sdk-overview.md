@@ -113,7 +113,7 @@ Before you start development via the Retail SDK, you must restore all the packag
 
 ### MSBuild arguments to skip the prerequisites check
 
-MSBuild will check whether the required dependencies are installed for Commerce development. If the dependencies are not found, then the MSBuild scripts will try to install the missing dependencies. This check will occur every time MSBuild runs. To skip this check, pass the follow arguments value as false:
+MSBuild will check whether the required dependencies are installed for Commerce development. If the dependencies are not found, then the MSBuild scripts will try to install the missing dependencies. This check will occur every time MSBuild runs. To skip this check, pass the following arguments as false:
 
 MSBuild /p:CheckVS2017Installed=false /p:CheckVSDependencies=false – Build argument added in release 10.0.18
 
