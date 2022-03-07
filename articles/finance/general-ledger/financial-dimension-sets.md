@@ -66,6 +66,11 @@ Use the **Rebuild balances** button to re-create the balances from scratch. In t
 
 Use the **Clear balances** button to remove the balances and stop any further updates. The dimension set will no longer have an impact on General ledger posting activities.
 
+## Delete a dimension set
+
+Do not **delete and recreate** dimension sets as any form of workaround to solve potential issues with the balance data for a given dimension set. Recreating a dimension set is costly and for further assistance with any issue please contact customer support. 
+
+
 For more information, see [Financial dimensions](financial-dimensions.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
