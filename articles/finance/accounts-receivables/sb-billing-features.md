@@ -175,5 +175,105 @@ Optionally, you can select the option to post the invoice as well.
 When you review the line for the billing schedule, the new line has a link to the credit note.   
 Also, the original line still has a link to the original April invoice. 
 
-> [!Note icon](../../../Resources/images/icons/iAXnote.gif)**Note:** If the sales invoice had not been created for the April billing period, you could simply delete the sales order, and the **Billed** status would be cleared. But because the invoice had already been created, you must create the credit note by following the above steps. 
+> **Note:** If the sales invoice had not been created for the April billing period, you could simply delete the sales order, and the **Billed** status would be cleared. But because the invoice had already been created, you must create the credit note by following the above steps. 
+
+---
+
+# Split item group examples
+
+This topic provides examples split item groups to promote understanding of item group functionality in Subscription billing. 
+
+## Customer Case
+
+In this example, the setup is as follows: 
+- On the **Recurring Contract Billing Parameters** page, **Split by item group** is selected and **Unique schedule type** is **Customer**. 
+- The following item groups have been created: PREFIX, DATAHUB, and SPP. 
+- Customer US-001 has multiple billing schedules where the item group is PREFIX or DATAHUB. 
+- Customer US-002 has multiple billing schedules where the item group is PREFIX or SPP. 
+
+
+| Billing Schedule Number| Customer|Item Group|
+| :------------- |:-------------:| :-------------| 
+| SCH001| 	US-001 |PREFIX |
+| SCH002| 	US-001| DATAHUB |
+| SCH003| 	US-002|  PREFIX|
+| SCH004| 	US-002 | SPP|
+
+
+Customer US-001 purchases a renewal item with item group PREFIX. This transaction is a new sales order: 
+
+| Sales Order # | Customer|Main Item | Renewal Item | Renewal Item Group| Billing Schedule Number|
+| :------------- |:-------------:| :-------------| :-------------| :-------------| :-------------| 
+| #0001| 	US-001 |D0001 |D0002|PREFIX|SCH001|
+
+When the invoice for the sales order is posted, the renewal item is automatically added to the existing billing schedule (SCH001) for the customer. This billing schedule uses the item group PREFIX. All renewal items that have the same item group are put into the same billing schedule.
+
+**Header**
+ 
+| Billing Schedule Number| Customer|Item Group|
+| :------------- |:-------------:| :-------------| 
+| SCH001| 	US-001 |PREFIX |
+
+**Line**
+
+| Billing Schedule Number| Customer|Item Group|
+| :------------- |:-------------:| :-------------| 
+| SCH001| 	US-001 |D0002 |
+
+Customer US-001 purchases a renewal item with item group SPP. This transaction is a new sales order: 
+
+| Sales Order # | Customer|Main Item | Renewal Item | Renewal Item Group| Billing Schedule Number|
+| :------------- |:-------------:| :-------------| :-------------| :-------------| :-------------| 
+| #0002| 	US-001 |D0003 |D0004|SPP||
+
+Currently, customer US-001 does not have a billing schedule that uses the item group SPP. As a result, a new billing schedule is created: 
+
+**Header**
+ 
+| Billing Schedule Number| Customer|Item Group|
+| :------------- |:-------------:| :-------------| 
+| SCH005| 	US-001 |SPP |
+
+**Line**
+
+| Billing Schedule Number| Customer|Item Group|
+| :------------- |:-------------:| :-------------| 
+| SCH005| 	US-001 |D0004 |
+
+## Multiple Billing Schedules, Same End User and Customer
+
+In this example, the setup is as follows: 
+* On the **Recurring Contract Billing Parameters** page, **Split by item group** is selected and **Unique schedule type** is **End user**. 
+* On the **End users** page customer and end user relationships are set up. 
+
+| Customer account| End user account|
+| :------------- |:-------------| 
+| US-001| US-221 | 
+
+Multiple billing schedules are created for the customer and end user combination. With **Split by item group** selected on the **Recurring Contract Billing Parameters** page multiple billing schedules for the same customer and end user relationship can be created. 
+
+| Billing schedule number| Customer|End user account|Header item group|
+| :------------- |:-------------:| :-------------| :-------------| 
+| SCH005| 	US-001 |	US-221 |	IG1|
+| SCH006| 	US-001 |	US-221 |	IG2|
+| SCH007| 	US-001 |	US-221 |	IG3|
+
+On the **Item setup** page, create support and renewal item relationships.
+
+| Item code  | Item relation|Support item|Renewal item| Renewal item group|
+| :------------- |:-------------:| :-------------| :-------------| 
+| Table| 	D001|	ITEM27 |D007|	IG1|
+| Table| 	D002 |	ITEM28 |D005|	IG2|
+| Table| 	D003 |	ITEM29 |D006|	IG3|
+
+A sales order with items are from the **Item Setup** page are created for customer US-001. When creating the sales order, you can open the **Support and Renewal Process** page and specify the **End user account** and specify any other information for the renewal item. 
+
+When the invoice for the transaction is created and posted, different billing schedules are created for the customer-end user and item group combination. More than one line in the same sales order can be assigned to the same billing schedule. 
+
+| Sales order # | Customer|End user account | Main item | Support item |Renewal item| Billing schedule number|
+| :------------- |:-------------:| :-------------| :-------------| :-------------| :-------------|:-------------| 
+| #0001| 	US-001 |US-221|D001|ITEM27|D007|SCH005|
+| #0001| 	US-001 |US-221|D002|ITEM28|D005|SCH006|
+| #0001| 	US-001 |US-221|D003|ITEM29|D006|SCH005|
+
 
