@@ -416,7 +416,7 @@
           href: accounts-receivable/subscription-billing-summary.md
         - name: Recurring contract billing
           items:
-          - name: Set up recuring contract billing
+          - name: Create billing schedules
             href: accounts-receivable/sb-billing-schedules.md
         - name: Revenue and expense deferrals
           items:
