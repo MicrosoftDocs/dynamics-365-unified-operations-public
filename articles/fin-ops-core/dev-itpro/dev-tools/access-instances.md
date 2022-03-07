@@ -83,28 +83,27 @@ After you sign in to the environment through Remote Desktop, if you want to acce
 
 ### Deleting cloud-hosted developer environments
 
-When you are done with the developer environment, or in some cases where troubleshooting an infrastructure issue is too time consuming, you can always delete the environment from LCS and create a new one at a later time.  To delete a cloud-hosted environment from LCS, use the following steps:
+When you are done with the developer environment, or in some cases where troubleshooting an infrastructure issue is too time consuming, you can always delete the environment from LCS and create a new one later.  To delete a cloud-hosted environment from LCS, use the following steps:
 
 1. Go to your LCS project navigation menu, and select **Cloud-hosted environments**.
-2. Highlight the environment you want to remove and click **Deallocate**.  This will power the machine down in your Azure subscription.
+2. Highlight the environment that you want to remove and select **Deallocate**.  This will power down the machine in your Azure subscription.
 3. After the deallocation is successful, the environment will be in a *Deallocated* state.  You may now use the **Delete** button to start the deletion process.
 
-You cannot delete a cloud-hosted environment if the VNET that was created with it is also being used by other cloud-hosted environments.  This is not common, but in some cases customers want their developer environments to all re-use an existing VNET so that they can share files more easily between them.  If this is something you also have done, you will need to delete the other environments before deleting the base environment which created the original VNET.
+You cannot delete a cloud-hosted environment if the virtual network (VNET) that was created with it is also being used by other cloud-hosted environments.  This is not common, but in some cases customers want their developer environments to all re-use an existing VNET so that they can share files more easily between them.  If this is something you also have done, you will need to delete the other environments before deleting the base environment that created the original VNET.
 
-Sometimes the Delete operation will fail. There are numerous reasons why this can occur, including:
+If the delete operation fails, check to see if one of the following may have occurred:
 
 - The Azure connector management certificate has expired.
 - The Azure subscription has been moved to a different tenant than where it was originally.
 - The Azure subscription has been disabled.
-- There are Azure policies in your subscription that prevents deleting one or more resources in your environment's resource group.
+- There are Azure policies in your subscription that prevent you from deleting one or more resources in your environment's resource group.
 
-If LCS was not able to successfully complete the delete operation, the operation will be marked as *Incomplete*. A new **Delete LCS metadata** button will be available to allow the user to clean up this environment's metadata from the LCS backend systems. 
+If LCS was not able to successfully complete the delete operation, the operation will be marked as *Incomplete*. Use the **Delete LCS metadata** button to clean up this environment's metadata from the LCS backend systems. 
 
-. [!Note]
-> It is important to note that this operation will not try to delete the resources in the Azure subscription, so it is the customer's responsibility to manually remove the environment's resource group, if still exists. 
+> [!NOTE]
+> This operation will not try to delete the resources in the Azure subscription. It is the customer's responsibility to manually remove the environment's resource group if it still exists. 
 
-You can easily identify the environment’s resource group in the Azure subscription as it will have the same name as the environment in LCS.
-
+You can easily identify the environment’s resource group in the Azure subscription, as it will have the same name as the environment in LCS.
 
 ## VM that is running locally
 A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
