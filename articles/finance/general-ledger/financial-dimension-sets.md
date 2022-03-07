@@ -4,7 +4,7 @@
 title: Financial dimension sets
 description: This topic describes financial dimension sets and provides some tips for optimizing their use.
 author: yukonpeegs
-ms.date: 03/23/2021
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: 
 ms.technology: 
@@ -68,7 +68,7 @@ Use the **Clear balances** button to remove the balances and stop any further up
 
 ## Delete a dimension set
 
-Do not **delete and recreate** dimension sets as any form of workaround to solve potential issues with the balance data for a given dimension set. Recreating a dimension set is costly and for further assistance with any issue please contact customer support. 
+Don't **delete and recreate** dimension sets as any form of workaround to solve potential issues with the balance data for a specific dimension set. Recreating a dimension set is costly. For further assistance with issues, contact customer support. 
 
 
 For more information, see [Financial dimensions](financial-dimensions.md).
