@@ -83,8 +83,11 @@ To help maintain referential integrity of the data, financial dimensions can rar
 - Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
 - Is the financial dimension part of a default financial dimension integration format?
 - Has the financial dimension been set up as a default dimension?
+- Has the financial dimension been de-selected from the Financial Reporting setup? 
 
 If any of the criteria are met, you can't delete the financial dimension.
+> [NOTE:]
+> Starting in Application 10.0.27, financial dimensions will not longer be automatically selected for financial reporting setup as they are created. 
 
 ## Default dimension values
 
