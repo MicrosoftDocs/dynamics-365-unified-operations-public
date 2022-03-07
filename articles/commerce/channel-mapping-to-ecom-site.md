@@ -79,8 +79,24 @@ Many branded sites sites can co-exist in a single tenant.  Notice the site list 
 
 
 ### Single market site with multiple languages but same site experience
-Single online channel with multiple languages mapped to a single e-commerce site
-Adventure Works online channel configured with en-ca and fr-ca - users in both French Canada and English Canada get the exact same experience, same currency but site is localized
+A common scenario is to have a single market site that is localized into other languages but the products, prices and currency stay the same as the languages are changed.  An example is a site for Canada which has two regional languages English and French, but the currency, products, shipping options and pricing are the same. The below image shows Adventure Works online channel configured with many different languages.
+
+![Multiple languages configured on a single online channel](media/channel-mapping-9.png)
+
+All of the languages can then be configured on the channel as shown below.  Notice each language has been configured with the locale for the path.
+
+![Multiple languages configured on a site](media/channel-mapping-10.png)
+
+To add a new channel language, select the channel link highlighted in the below image and a channel locale mapping will pop up where you can select "Add a locale" where you can pick the channel and locale to add plus the path to use for that channel.
+
+![Adding languages to a site](media/channel-mapping-11.png)
+
+#### Enable the site language selector
+
+Once you have configured a site to have multiple languages, you may want to add a language selector to the header to select the language.  The module library [header](..\author-header-module.md) module has built in support for a language selector.  This can be changed in the header fragment as shown in the below image. As can be seen the header module has a **Site Picker** slot, edit the fragment and add the **Site picker** module to the slot and then select **Add site options list** to add a new language.  You can then add the text that will show up and the URL for the path you created when adding the channel to the site (ie: www.adventure-works.com/fr-ca).
+
+![Setup site selector on header](media/channel-mapping-12.png)
+
 
 ### Single market site with multiple languages but different site experiences
 online channel with multiple languages mapped to different e-commerce sites
