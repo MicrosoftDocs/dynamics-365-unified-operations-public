@@ -27,7 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to journalize posted journal entries. This procedure uses the USMF demo data company.
+The journalize process in the general ledger provides users a way to group and report on posted voucher entries for your general ledger. The result of the processing based on the criteria you provice generates a list of vouchers with a unique sequence number and the general ledger **journal number** as reference.
+
+The below steps show how to journalize posted journal entries. This procedure uses the USMF demo data company.
 
 1. In the **Navigation pane**, go to **Modules > General ledger > Ledger setup > General ledger parameters**.
 2. The **Extended ledger journal** field can be set to Yes or No. If Yes, the report output will be different.
