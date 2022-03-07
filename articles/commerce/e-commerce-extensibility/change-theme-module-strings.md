@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to change module library strings from within a theme in Microsoft Dynamics 365 Commerce.
 
-In some cases modules expose strings that are displayed as configurations within a module that can be configured in site builder, but other strings such as the text displayed for the sign-in button may be hardcoded as module resource strings.  
+In some cases, modules expose strings that are shown as configurations in a module that can be configured in Commerce site builder. However, other strings, such as the text that is shown for the sign-in button, might be hardcoded as module resource strings.
 
-## Override a resource string for a theme
+## Override resource strings for a theme
 
-To override resource strings for a theme, modify the global.json resource file located in the src/resources/modules directory using the pattern in the following example. 
+To override resource strings for a theme, use the pattern in the following example to modify the global.json resource file that is located in the src/resources/modules directory.
 
 ```json
 "{ThemeNamespace}.{ThemeName}.{ResourceString}": {
@@ -48,7 +48,7 @@ To learn more about how resource strings are created and how to create a global.
 
 ### Override resource strings for preinstalled themes
 
-To override resource strings for preinstalled themes (for example, fabrikam or starter themes), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text on the fabrikam theme.
+To override resource strings for preinstalled themes (for example, fabrikam or starter themes), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text for the fabrikam theme.
 
 ```json
 "@msdyn365-commerce-modules.fabrikam.signInLinkText": {
@@ -59,7 +59,7 @@ To override resource strings for preinstalled themes (for example, fabrikam or s
 
 ### Override resource strings for custom or local themes
 
-For custom or local themes, use **__local__** for the theme namespace. The following example shows how to change the sign-in link text for a custom theme called "adventureworks."
+For custom or local themes, use **\_\_local\_\_** as the theme namespace. The following example shows how to change the sign-in link text for a custom theme that is named "adventureworks."
 
 ```json
 "__local__.adventureworks.signInLinkText": {
@@ -69,7 +69,7 @@ For custom or local themes, use **__local__** for the theme namespace. The follo
 ```
 
 > [!NOTE]
-> For [shared themes](extend-theme.md), child themes inherit all of the resources string overrides tied to the parent theme.
+> For [shared themes](extend-theme.md), child themes inherit all the resources string overrides that are linked to the parent theme.
 
 ## Additional resources
 
@@ -92,7 +92,5 @@ For custom or local themes, use **__local__** for the theme namespace. The follo
 [Create a layout container module](create-layout-container.md)
 
 [Create a page container module](create-page-containers.md)
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
