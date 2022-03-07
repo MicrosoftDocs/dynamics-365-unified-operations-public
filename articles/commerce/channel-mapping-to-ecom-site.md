@@ -63,9 +63,15 @@ The above single online channel can then be mapped to a single e-commerce site w
 
 ![Site copy in site builder](media/channel-mapping-5.png)
 
-Notice in the screen capture above the online channel is not an option to pick yet, this can be picked once the site copy has completed.  When the site is first selected in site builder, it will bring up a setup dialog where the default channel and language can be selected as shown in the below image.  Note a single domain name can host multiple sites, the path is used to separate the sites.  For example the domain could be "www.MyCompany.com" that supports two different e-commerce sites, one for Fabrikam and one for Adventure Works.  So a path could be left blank for one site such as the Fabrikam site and a path could be added for the second site such as "adventureworks" so that the site is accesses with www.MyCompany.com/adventureworks or a path can be added for both sites.
+Notice in the screen capture above the online channel is not an option to pick yet, this can be picked once the site copy has completed.  When the site is first selected in site builder, it will bring up a setup dialog where the default channel and language can be selected as shown in the below image.  
 
 ![Initialize site in site builder](media/channel-mapping-6.png)
+
+**Note:** A single domain name can be selected for multiple sites and the path is used to separate the sites.  For example the domain could be "www.MyCompany.com" which is configured for two different e-commerce sites: one for Fabrikam and one for Adventure Works.  The default (ie: blank path) can be used for one site such as the Fabrikam site and a path could be added for the second site such as "adventureworks" so that the site is accessed with "www.MyCompany.com/adventureworks" or a path can be added for both sites (www.MyCompany.com/fabrikam).
+
+Once a site has been configured with its channel, it can easily be managed/changed from within the selected site in site builder under the **Site Settings**, **Channels** tab as shown in the below image.
+
+![Manage channel mapping in site builder](media/channel-mapping-7.png)
 
 ### Single market site with multiple languages but same site experience
 Single online channel with multiple languages mapped to a single e-commerce site
