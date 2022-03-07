@@ -97,6 +97,10 @@ Once you have configured a site to have multiple languages, you may want to add 
 
 ![Setup site selector on header](media/channel-mapping-12.png)
 
+Once the site selector is saved and published in the header you should see a drop down list on the e-commerce site as shown in the below example.
+
+![Sample site selector drop down](media/channel-mapping-13.png)
+
 
 ### Single market site with multiple languages but different site experiences
 online channel with multiple languages mapped to different e-commerce sites
