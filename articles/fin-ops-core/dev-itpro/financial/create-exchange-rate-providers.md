@@ -85,7 +85,7 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
 2.  Add the following constants and variable declarations to the class.
 
     ```xpp
-    private const ExchangeRateProviderPropertyKey ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
+    private const URL ServiceURL = 'https://www.oanda.com/rates/api/v1/rates/%1.xml?quote=%2&start=%3&end=%4&fields=%5&decimal_places=%6';
     private const ExchangeRateProviderId ProviderId = '795500B1-4258-4343-868C-433CE390848C';
     private const str OANDADateFormat = 'yyyy-MM-dd';
     private const str HttpWebRequestMethod = 'GET';
@@ -166,6 +166,7 @@ Code examples are taken from the **ExchangeRateProviderOanda** class. Follow the
         configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_OandaAPIKey", '');
         configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_DecimalPlaces", '5');
         configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_QuoteType", '1');
+        configurationDefaults.addNameValueConfigurationPair("@CurrencyExchange:Currency_ConfigField_QuoteTypeLocked", '1');
         return configurationDefaults;
     }
     ```
