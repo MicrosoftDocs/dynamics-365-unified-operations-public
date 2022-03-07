@@ -81,7 +81,7 @@ To modify page metadata, follow these steps.
 1. Select **Publish**.
 
 > [!TIP]
-> The **gear icon** at the top of the left **outline** control in the page editor allows switching between **Advanced outline view** and a **Basic outline view**.  The **Basic outline view** is the default setting.  The basic view filters the outline to only display modules within the **Body** HTML slot for a page.  Selecting the **Advanced outline view** shows the entire page module, including **HTML head, Body begin, and Body end** slots.  This is useful when authors need to edit specific SEO or script module settings for a page.
+> The **gear icon** at the top of the left **outline** control in the page editor allows switching between **Advanced outline view** and a **Basic outline view**.  The **Basic outline view** is the default setting and filters the outline to only display modules within the **Body** HTML slot for a page.  Selecting the **Advanced outline view** shows the entire page module, including **HTML head, Body begin, and Body end** slots.  This is useful when authors need to edit specific SEO or script module settings for a page.
 
 ## Additional resources
 
