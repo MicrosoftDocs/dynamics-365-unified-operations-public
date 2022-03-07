@@ -3443,6 +3443,8 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Can't post packing slip for a stopped a sales order line
+          href: troubleshooting/warehousing/unable-to-post-packi.md
         - name: An error occurs when choosing the location during picking list registration
           href: troubleshooting/warehousing/error-cannot-update.md
         - name: Packing station doesn't show product notes
