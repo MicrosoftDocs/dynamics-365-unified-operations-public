@@ -4,7 +4,7 @@
 title: Filtering options
 description: This topic explains the filtering options that are available.
 author: jasongre
-ms.date: 09/22/2021
+ms.date: 03/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -142,10 +142,10 @@ Yes, you can use the QuickFilter to filter other collection controls, but you mu
 -   Write code in that method to perform the desired filtering.
 
 ## Grid column header filtering/sorting
-In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header, a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected.
+In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header, a drop-down dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter pane. Additionally, there are options to sort the grid based on the column that is currently selected.
 
 > [!NOTE]
-> Some columns in a grid may not be filterable. In these cases, the column header will not be clickable. From a technical perspective, only columns corresponding to fields in a SQL table are can be filtered on or sorted. Columns whose values are computed via code are not filterable or sortable via grid column headers, the Filter pane, QuickFilter, or Advanced filter or sort. 
+> Some columns in a grid may not be filterable. In these cases, the column header will not be clickable. From a technical perspective, only columns corresponding to fields in a SQL table can be filtered on or sorted. Columns whose values are computed via code are not filterable or sortable via grid column headers, the Filter pane, QuickFilter, or Advanced filter or sort. 
 
 [![Screen shot of grid filtering.](./media/4_filter.png)](./media/4_filter.png)
 
