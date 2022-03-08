@@ -38,6 +38,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Feature removal effective March 7, 2022
+
+### XSLT scripting in Data Management
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The support for XSLT scripting in Data Management is deprecated to improve security and data protection within the Dynamics 365 Finance and Operations apps service.  |
+| **Replaced by another feature?**   | No. |
+| **Product areas affected**         | Finance and Operations apps. |
+| **Deployment option**              | All. |
+| **Status**                         | Deprecated. Planned removal date is March 7, 2022. With the exception of customers that are currenlty using XLST scripting. They can continue to use it until they update to version 10.0.30/PU54 and newer. Customers with this exception have received a notification in the Message Center available in the Microsoft 365 Admin Center. |
+
 ## Feature removal effective October 2021
 
 ### Microsoft Azure SQL reports in Lifecycle Services (LCS)
