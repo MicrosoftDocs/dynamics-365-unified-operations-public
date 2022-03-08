@@ -48,7 +48,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No. |
 | **Product areas affected**         | Finance and Operations apps. |
 | **Deployment option**              | All. |
-| **Status**                         | Deprecated. Planned removal date is March 14, 2022. With the exception of customers that are currenlty using XLST scripting. They can continue to use it until they update to version 10.0.30/PU54 and newer. Customers with this exception have received a notification in the Message Center available in the Microsoft 365 Admin Center. |
+| **Status**                         | Deprecated. Planned removal date is March 14, 2022. Exception: Customers that are currenlty using XLST scripting. They can continue to use it until they update to version 10.0.30/PU54 and newer. Customers with this exception have received a notification in the Message Center available in the Microsoft 365 Admin Center. |
 
 ## Feature removal effective October 2021
 
