@@ -257,16 +257,19 @@ yarn msdyn365 packages
 **Usage**
 
 ```bash
-yarn msdyn365 update-versions <tag>
+yarn msdyn365 update-versions <entity>
 ```
 
-This command updates the SDK versions to the latest alpha/rc/release, based on the tag. The default tag is **latest**.
+This command updates the entity (SDK, module library or retail-proxy) versions to the latest release.
 
-**Example**
-
+**Examples**
 ```bash
-yarn msdyn365 update-versions latest
+yarn msdyn365 update-versions module-library
+yarn msdyn365 update-versions retail-proxy
+yarn msdyn365 update-versions sdk
 ```
+
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
 ## validate
 
