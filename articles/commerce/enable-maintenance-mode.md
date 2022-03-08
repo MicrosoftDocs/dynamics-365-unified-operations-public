@@ -44,7 +44,7 @@ To enable and activate maintenance mode in Commerce site builder, follow these s
 
 After maintenance mode is enabled and activated, the default maintenance mode page will be shown to users who browse to the e-commerce site, as shown in the following illustration.
 
-![Default maintenance mode page for an e-commerce site.](media/maintenance-mode-2.png)
+![Default maintenance mode page for an e-commerce site.](media/maintenance-mode_1.png)
 
 ## Create a custom maintenance mode page
 
@@ -52,7 +52,7 @@ To create a custom maintenance mode page in site builder, follow these steps.
 
 1. In site builder, create a new custom maintenance mode page. For instructions on creating site pages, see [Add a new site page](add-new-page.md). The following illustration shows an example.
 
-    ![Creating a custom page in site builder.](media/maintenance-mode-3.png)
+    ![Creating a custom page in site builder.](media/maintenance-mode_2.png)
 
 1. In the left navigation, select **URLs**, and then, on the Action Pane, select **New \> New alias** to create a new alias.
 1. In the **New alias** dialog box, select the new maintenance mode page, and then, in the **Alias** field, enter **default-maintenance** as the alias name.
@@ -60,4 +60,4 @@ To create a custom maintenance mode page in site builder, follow these steps.
 
 After these steps have been completed and maintenance mode has been enabled, the custom maintenance mode page will be shown to site users, as shown in the following example illustration.
 
-![Example of a custom maintenance page.](media/maintenance-mode-6.png)
+![Example of a custom maintenance page.](media/maintenance-mode_3.png)
