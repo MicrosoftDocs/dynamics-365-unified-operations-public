@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen FAQ
 description: This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 09/30/2021
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -91,7 +91,7 @@ For a complete list of Adyen payment status codes, see [Payments lifecycle](http
 
 ### Can I cancel a refund action?
 
-Adyen supports two types of refunds, referenced refunds and unreferenced refunds. Referenced refunds can not be canceled. For unreferenced refunds, an attempt to cancel is made but depends upon the payment issuer and potential delay set for the processing on Adyen's configurations. If forcing a local refund cancellation in Point-of-Sale upon encountering an error in the cancellation, Point-of-Sale will allow the ability to credit, but this may cause discrepencies between Dynamics reports and the Adyen reporting if the cancellation of the unlinked refund is not accepted on the payment gateway. For more information on Adyen's cancellation of unreferenced refunds, see their article [Cancel an unreferenced refund](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced). 
+Adyen supports two types of refunds, referenced refunds and unreferenced refunds. Referenced refunds cannot be canceled. For unreferenced refunds, an attempt to cancel is made but successful cancellation depends on the payment issuer and the potential delay configured for the processing by Adyen. If forcing a local refund cancellation on POS generates an error, POS allows the ability to credit but if the cancellation of the unlinked refund is not accepted on the payment gateway this may cause discrepencies between Dynamics reports and Adyen reporting. For more information about Adyen's cancellation of unreferenced refunds, see [Cancel an unreferenced refund](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced). 
 
 ## Next steps
 
