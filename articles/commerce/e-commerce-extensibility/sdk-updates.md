@@ -84,6 +84,10 @@ After the latest dependencies are pulled down, you can run **yarn start** to run
 
 When a configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, all dependencies are updated to their local versions during the packaging process. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS).
 
+### Update SDK with CLI command
+
+It is recommended to keep the online sdk updated to the latest online SDK regardless of the version of scale unit and module library since the online SDK is backwards compatible with all versions.  To update to the latest SDK the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command will ensure the yarn.lock file is deleted before running yarn to pull down the latest online SDK.
+
 ## Determine the latest released versions of the dependency packages
 
 To determine the latest released versions of the dependency packages, follow these feed links:
