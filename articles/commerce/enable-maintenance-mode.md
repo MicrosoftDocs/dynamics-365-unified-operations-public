@@ -50,7 +50,7 @@ After maintenance mode is enabled and activated, the default maintenance mode pa
 
 To create a custom maintenance mode page in site builder, follow these steps.
 
-1. In site builder, create a new custom maintenance mode page. For instructions on creating a site page, see [Add a new site page](add-new-page.md). The following illustration shows an example.
+1. In site builder, create a new custom maintenance mode page. For instructions on creating site pages, see [Add a new site page](add-new-page.md). The following illustration shows an example.
 
     ![Creating a custom page in site builder.](media/maintenance-mode-3.png)
 
