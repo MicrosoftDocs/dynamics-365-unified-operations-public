@@ -58,7 +58,7 @@ The escalation amount is calculated with the initial amount of $1000:
 Similarly, the escalation amount for period January 01, 2022, where the Consumer price index is 114.25 is calculated as follows:
 * 1000 + (114.25-105.65)/105.65*1000 = 1081.40
 
-In the **Recurring Contract Billing Parameters** page, you set **Consumner price index calculation** to **Prior consumer price index**.
+In the **Recurring contract billing parameters** page, you set **Consumner price index calculation** to **Prior consumer price index**.
 
 The period is January 01, 2020, to December 31, 2022. The current consumer price index on January 01, 2021, is 110.5, and the base consumer price index rate is 105.65 (the consumer price index value at the time the contract starts).
 
