@@ -1020,6 +1020,8 @@
           href: unit-of-measure.md
         - name: Apply display settings for product dimensions
           href: dimension-settings.md
+        - name: Enable and activate e-commerce maintenance mode
+          href: enable-maintenance-mode.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
@@ -2774,6 +2776,8 @@
               href: e-commerce-extensibility/override-theme-component.md
             - name: Extend a theme from a base theme
               href: e-commerce-extensibility/extend-theme.md
+            - name: Change theme module strings
+              href: e-commerce-extensibility/change-theme-module-strings.md
         - name: Packaging and deployment
           items:
           - name: Package configurations and deploy them to an online environment
