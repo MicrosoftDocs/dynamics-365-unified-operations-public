@@ -91,24 +91,17 @@ Before you can begin using milestone functionality, the review the following:
 After milestone templates, billing schedule groups, and items have been created, you can create a billing schedule that usees the milestone functionality. To set up billing schedules that use milestones, complete the following steps. 
 
 1. From the **All/Active billing schedules** list, select <span class="gui">New</span>. 
-2. On the [Billing schedules](../enduser/BillSched.md), [Creating a billing schedule](../enduser/BillSched.md) and ensure that you complete the following: 
-   - Specify a <span class="gui">Customer account</span> and a <span class="gui">Start date</span>. 
-3. In the [Billing schedule lines](../enduser/BillSched.htm#LinesGrid), select <span class="gui">Add line</span> and specify an <span class="gui">Item number</span>. 
-   - For the item, set <span class="gui">Item type</span> to <span class="gui">Milestone</span>.   
-If a default milestone template is set up for the item, the milestone events are automatically added to the billing schedule lines. 
-   - If the milestone template is not setup for an item, select <span class="gui">Milestone allocation</span>. 
-   - On the [Milestone allocation](../enduser/MilestnAlloc.md), select a <span class="gui">Milestone template</span>, make any adjustments as needed, and select <span class="gui">Close</span> to return to the billing schedule. 
+2. On the **All billing schedules** page, create a new billing schedule with a customer account and a start date.  
+3. In the **Billing schedule lines**, select **Add line** and add Item number. Set the **Item type** to Milestone.  
+If a default milestone template is set up for the item, the milestone events are automatically added to the billing schedule lines. End dates are blank for milestone lines.
+   - If the milestone template is not setup for an item, select **Milestone allocation**. 
+   - On the **Milestone allocation** select a **Milestone template**, make any adjustments as needed, and select **Close** to return to the billing schedule. 
    - Finish creating the billing schedule. 
-4. To be able to create invoices for the billing schedule, the end date for each milestone even must be updated. <br />For a single billing schedule, you can update the end date for the milestone event on the [Billing schedule lines](../enduser/BillSched.htm#LinesGrid). To update multiple billing schedules, use the [Update completion date process](../enduser/UpdCompltnDate.md). 
-5. After the end date is updated, you can create the invoice. For a single billing schedule, simply use the <span class="gui">Invoice creator</span> button from the [Billing schedules](../enduser/BillSched.md) page. To create invoices for multiple billing schedules, use the [Invoice creator](../enduser/InvCreator.md). 
+4. To be able to create invoices for the billing schedule, the end date for each milestone even must be updated. <br />For a single billing schedule, you can update the end date for the milestone event on the **Billing schedule lines**. To update multiple billing schedules, use the **Update completion date process**. 
+5. After the end date is updated, you can create the invoice. For a single billing schedule, use the **Generate invoice** button from the **All billing schedules** page. To create invoices for multiple billing schedules, use the **Generate invoice** or **Generate invoice batch processing** under **Periodic tasks**.
 
 
-
-Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [click a billing schedule] >[select a billing schedule line] > [click Milestone allocation] 
-
-This topic explains how to view and update the milestone allocation information for the item. 
-
-## Edit milestone allocation to billing schedule line
+## Edit milestone allocation on billing schedule line
 
 To edit milestone allocation for a billing schedule line, follow these steps: 
 1. In the list of all billing schedules, click the **Schedule number** of the billing schedule.  
