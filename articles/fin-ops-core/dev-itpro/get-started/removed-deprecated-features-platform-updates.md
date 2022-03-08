@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,15 +40,15 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Feature removal effective March 14, 2022
 
-### XSLT scripting in Data Management
+### XSLT scripting in Data management
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The support for XSLT scripting in Data Management is deprecated to improve security and data protection within the Dynamics 365 Finance and Operations apps service.  |
+| **Reason for deprecation/removal** | The support for XSLT scripting in Data management is deprecated to improve security and data protection within the Finance and Operations apps.  |
 | **Replaced by another feature?**   | No. Customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
 | **Product areas affected**         | Finance and Operations apps. |
 | **Deployment option**              | All. |
-| **Status**                         | Deprecated. Planned removal date is March 14, 2022. Exception: Customers that are currenlty using XLST scripting. They can continue to use it until they update to version 10.0.30/PU54 and newer. Customers with this exception have received a notification in the Message Center available in the Microsoft 365 Admin Center. |
+| **Status**                         | Deprecated - Planned removal date is March 14, 2022.<br><br>Exception: Customers who are currenlty using XLST scripting. They can continue to use it until they update to version 10.0.30 or later. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
 
 ## Feature removal effective October 2021
 
