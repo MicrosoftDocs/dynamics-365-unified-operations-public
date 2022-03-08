@@ -31,9 +31,9 @@ Commerce supports both cloud-based environments and local environments.
     - **Self-hosted CSU** – This environment type deploys the CSU locally (self-hosted as an executable file). There is no Internet Information Services (IIS), Commerce data synchronization, or Commerce Headquarters connectivity for real-time calls. If you use this option, no data synchronization occurs between Commerce Headquarters and CSU channel databases. Channel databases are filled with the default demo data for development purposes. All requests and calls to Commerce Headquarters, such as a call to issue a gift card, are mocked by the local CSU.
     - **IIS-hosted CSU** – This environment type deploys the CSU in IIS and sets up an Async Client to sync the data between Commerce Headquarters and CSU channel databases. It also sets up support for real-time connections with Commerce Headquarters. This setup requires some additional configuration. For example, Azure Active Directory (Azure AD) apps must be set up, and certificates must be deployed. For detailed information about how to install the IIS-hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit document](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit).
 
-## Hardware requirements:
+## Hardware requirements
 
-It’s recommended to use windows machine with 16 GB of RAM and minimum of two CPU cores. If you are running F & O, Retail Server, e-Commerce development, and lot of concurrent process then we recommend 24 GB of RAM with four CPU cores. 
+We recommend that you use a Windows machine with 16 GB of RAM and a minimum of two CPU cores. If you are running Finance and Operations apps, Retail Server, e-Commerce development, and other concurrent process, then we recommend 24 GB of RAM with four CPU cores.
 
 ## Local self-hosted CSU
 
