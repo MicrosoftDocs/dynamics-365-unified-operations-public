@@ -26,48 +26,48 @@ This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 
 
 You can use Commerce product catalogs to identify the products that you want to offer in your B2B online stores. When you create a catalog, you identify the online stores that the products are offered in, add the products that you want to include, and enhance the product offerings by adding merchandising details. You can create multiple catalogs for a B2B online store.
 
-Commerce product catalogs allows you to define the following:
+Commerce product catalogs allow you to define the following:
 
-- Catalog-specific navigation hierarchy - Allows organizations to create a distinct category structure for their specific catalog.
-- Catalog-specific attribute metadata - Attributes contain details about a product. You can assign attributes to a category of navigation hierarchy to define values for those attributes at product level that are assigned to that category. Organizations will then be able to:
+- **Catalog-specific navigation hierarchy** - Allows organizations to create a distinct category structure for their specific catalog.
+- **Catalog-specific attribute metadata** - Attributes contain details about a product. You can assign attributes to a category of navigation hierarchy to define values for those attributes at product level that are assigned to that category. Organizations will then be able to:
     - Define catalog-specific attribute values.
     - Control the visibility of attributes at the catalog level. 
     - Choose the refiners specific to an individual catalog.
-- Channels - Organizations are able to associate more than one B2B online channel with a catalog. End-to-end support for catalogs is currently only available for B2B online stores.  
-- Customer hierarchies - For a given B2B channel, organizations can choose to make a specific catalog available to their select B2B partners by associating customer hierarchies with a catalog. 
-- Price groups - A core reason for defining a catalog to use with a B2B channel is to be able to configure specific prices and promotions for that catalog. B2B customers ordering from a configured catalog can benefit form special prices and promotions after signing in to a Commerce B2B site. To configure catalog-specific prices, select the **Price groups** on the **Catalogs** tab to link one or more price groups to the catalog. All trade agreements, price adjustment journals, and advanced discounts (such as threshold, quantity, mix and match) that have been linked to the same price group will be applied when customers order from this catalog.
-    - Price groups for Catalogs allows Organization to make products available to their intended B2B organizations with their preferred pricing & discounts. 
+- **Channels** - Organizations are able to associate more than one B2B online channel with a catalog. End-to-end support for catalogs is currently only available for B2B online stores.  
+- **Customer hierarchies** - For a given B2B channel, organizations can choose to make a specific catalog available to their select B2B partners by associating customer hierarchies with a catalog. 
+- **Price groups** - A core reason for defining a catalog to use with a B2B channel is to be able to configure specific prices and promotions for that catalog. B2B customers ordering from a configured catalog can benefit form special prices and promotions after signing in to a Commerce B2B site. To configure catalog-specific prices, select the **Price groups** on the **Catalogs** tab to link one or more price groups to the catalog. All trade agreements, price adjustment journals, and advanced discounts (such as threshold, quantity, mix and match) that have been linked to the same price group will be applied when customers order from this catalog.
+    - Price groups for catalogs allow organizations to make products available to their intended B2B organizations with their preferred pricing and discounts. 
     - For more information on price groups, see [Price groups](price-management.md#price-groups).
   
 <!-- ![Commerce product catalogs preview](./media/Commerce_Catalogs.png)-->
 
 > [!NOTE]
-> This feature is available with Microsoft Dynamics 365 Commerce release of 10.0.26 & to see the abilities to be able to configure catalog-specific configurations like Navigation hierarchy, Customer hierarchy etc. - please go to Feature management workspace & enable the following feature **Enable use of multiple catalogs on retails channels.** & run 1110 CDX job. 
+> This feature is available starting with the Dynamics 365 Commerce version 10.0.26 release. To configure catalog-specific configurations like navigation hierarchy and customer hierarchy in Commerce headquarters, go to the Feature management workspace, enable the **Enable use of multiple catalogs on retails channels.** feature, and then run the **1110 CDX** job. 
 
 <!-- ![Feature management - Enable Commerce Catalog Feature](./media/Commerce-Catalogs-Feature-Management.jpeg)-->
 
 ## Catalog process flow
 
-Creating and processing a catalog is a four-step process. The following diagram illustrates the catalog process flow:
+Creating and processing a catalog is a four step process. The following diagram illustrates the catalog process flow:
 
-+ Step-1:**Configure** 
-  + Associate navigation hierarchy
-  + Determine time-effectiveness, set expiration date (if applicable) 
-  + Add products & categorize them 
-  + Associate Customer hierarchy (specific to your B2B organizations) 
-  + Associate Price groups 
-  + Associate 'Default dimension attribute group for refiners like Size, Style, Color' thru attribute groups from top-ribbon, 
-  + Set attribute metadata (choose which attributes are supposed to be viewable & refinable. By default, all viewable attributes are searchable as well) 
+1. **Configure** 
+    1. Associate navigation hierarchy.
+    1. Determine time-effectiveness, set expiration date (if applicable) .
+    1. Add products & categorize them. 
+    1. Associate customer hierarchy (specific to your B2B organizations). 
+    1. Associate price groups.
+    1. Associate 'Default dimension attribute group for refiners like Size, Style, Color' thru attribute groups from top-ribbon. 
+    1. Set attribute metadata (choose which attributes are supposed to be viewable & refinable. By default, all viewable attributes are searchable as well).
  
   > [!NOTE]
-  > <P>You cannot create a new price group from catalogs form - instead you will have to create one from 'All price groups' form & then be able to associate in this view.</P>
-  > <P>You cannot create a new customer hierarchy from catalogs form - instead you will have to create one from 'Customer hierarchies' form & then be able to associate in this view.</P>
+  > - You cannot create a new price group from the catalogs form. Instead you must create the new price group from the **All price groups** form and then be able to associate in this view.
+  > - You cannot create a new customer hierarchy from the catalogs form. Instead must create a new customer hierarchy from the **Customer hierarchies** form and then be able to associate in this view.
   
-+ Step-2: **Validate** - General validation rules are like - 
-  + There are no Uncategorized products 
-  + All items are assorted to each channel associated to catalog
-+ Step-3: **Approval** 
-+ Step-4: **Publishing**
+1. **Validate** - General validation rules are like - 
+    - There are no uncategorized products 
+    - All items are assorted to each channel associated to catalog
+1. **Approval** 
+1. **Publishing**
 
 #### Basic catalog setup
 
@@ -86,7 +86,7 @@ Before the catalog is available to use, it must be published. Click **Validate c
 After validation is confirmed, click **Workflow** on the menu to start the approval workflow. Click **Submit** on the **Workflow** menu to execute the process. Configure the steps and authorized users for the workflow from **Retail and Commerce** \> **Headquarters setup** \> **Commerce workflows**. The workflow will define the steps needed to get the catalog into an **Approved** status. When the catalog is in an **Approved** status, you can click the **Publish** option on the **Catalogs** menu to complete the process. After the catalog is in a **Published** status, it can be used in call center order entry and send catalog processes. You can publish a catalog manually or by using a batch process. The effective date that you defined for the catalog determines when the products are available in the online store. The expiration date that you defined for the catalog determines when the products are removed from the online store.
 
 > [!NOTE]
-> <P>You can publish a catalog that contains products that have warnings. But those products shall not appear in the online store.</P>
+> You can publish a catalog that contains products that have warnings, but those products won't appear in the online store.
 
 
 ## FAQs for Commerce catalogs 
