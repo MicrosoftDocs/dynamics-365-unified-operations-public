@@ -3,8 +3,8 @@
 
 title: Preconfigured system accounts
 description: This topic provides information about the system accounts that are pre-configured on your Finance and Operations environments.
-author: laneswenka
-ms.date: 06/04/2021
+author: jaredha
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laswenka
+ms.author: jaredha
 ms.search.validFrom: 2017-11-01
 ms.dyn365.ops.version: Platform update 13
 
@@ -40,7 +40,9 @@ Pre-configured system accounts are included on deployed environments so that Mic
 |---|---|
 | `Axrunner` | This account is used to monitor the health of the environment and provide alerts when necessary.<br><br>**Note**: This account is deprecated with self-service environments and is no longer used. |
 | `FRServiceUser` | This account is the Financial Reporting service user account, which is used by the Management Reporter application for integrations with Finance and Operations. |
+| PowerPlatformS2S | This account is an application user that is used to connect Dual-write and virtual tables for Finance and Operations to Microsoft Dataverse.|
 | `RetailServiceAccount` | This account is used for Retail services to connect to the Finance and Operations environment. |
+| ScaleUnit | |
 | `SysHealthServiceUser` or `Axping` (depending on the deployed product version) | This account is used to monitor the availability and health of the environment and provide alerts when necessary. |
 
 
