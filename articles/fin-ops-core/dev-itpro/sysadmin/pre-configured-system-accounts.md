@@ -38,12 +38,13 @@ Pre-configured system accounts are included on deployed environments so that Mic
 
 | Account detail | Purpose/use case of the account|
 |---|---|
-| `Axrunner` | This account is used to monitor the health of the environment and provide alerts when necessary.<br><br>**Note**: This account is deprecated with self-service environments and is no longer used. |
-| `FRServiceUser` | This account is the Financial Reporting service user account, which is used by the Management Reporter application for integrations with Finance and Operations. |
+| Axrunner | This account is used to monitor the health of the environment and provide alerts when necessary.<br><br>**Note**: This account is deprecated with self-service environments and is no longer used. |
+| FRServiceUser | This account is the Financial Reporting service user account, which is used by the Management Reporter application for integrations with Finance and Operations. |
 | PowerPlatformS2S | This account is an application user that is used to connect Dual-write and virtual tables for Finance and Operations to Microsoft Dataverse.|
-| `RetailServiceAccount` | This account is used for Retail services to connect to the Finance and Operations environment. |
-| ScaleUnit | |
-| `SysHealthServiceUser` or `Axping` (depending on the deployed product version) | This account is used to monitor the availability and health of the environment and provide alerts when necessary. |
+| RetailServiceAccount | This account is used for Retail services to connect to the Finance and Operations environment. |
+| ScaleUnitManagement | This account is an application user that is used for communication with the Scale Unit Manager portal. This account is automatically added when upgrading to 10.0.23. |
+| ScaleUnitPipeline | This account is an application user that is used to maintain and keep track of communication between the scale units. This account is automatically added when upgrading to 10.0.19. |
+| SysHealthServiceUser or Axping (depending on the deployed product version) | This account is used to monitor the availability and health of the environment and provide alerts when necessary. |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
