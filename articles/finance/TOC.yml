@@ -4354,8 +4354,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Configure action-dependent destinations
             href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
-          - name: Configure print management record-specific ER destinations
+          - name: Configure print management record-specific destinations
             href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
+          - name: Design a new ER solution to print ZPL labels
+            href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?toc=/dynamics365/finance/toc.json
         - name: Set up a reference to an ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
         - name: Automatically validate generated reports
