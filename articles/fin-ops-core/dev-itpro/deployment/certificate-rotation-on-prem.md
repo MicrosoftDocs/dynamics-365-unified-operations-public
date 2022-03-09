@@ -42,13 +42,13 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ## Preparation steps 
 
-1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts). Rename the folder to **InfrastructureOld**.
+1. Rename the original **Infrastructure** folder that you created during the process to [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Rename the folder to **InfrastructureOld**.
 
-2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu12.md#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
+2. Download the latest setup scripts from [Download setup scripts from LCS](setup-deploy-on-premises-pu41.md#downloadscripts). Unzip the files into a folder that is named **Infrastructure**.
 
 3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
 
-4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps.
+4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert), specifically these steps.
 
     ```powershell
     # Create self-signed certs
@@ -74,7 +74,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-5. Continue to [Setup VMs](setup-deploy-on-premises-pu12.md#setupvms). The specific steps that are needed for this process include:
+5. Continue to [Setup VMs](setup-deploy-on-premises-pu41.md#setupvms). The specific steps that are needed for this process include:
 
     1. Export the scripts that must be run on each VM.
     
@@ -110,9 +110,9 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Test-D365FOConfiguration.ps1
         ```
 
-6. If axdataenciphermentcert certificates are rotated, you need to regenerate the credentials.json file. For more information, see [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).
+6. If axdataenciphermentcert certificates are rotated, you need to regenerate the credentials.json file. For more information, see [Encrypt credentials](setup-deploy-on-premises-pu41.md#encryptcred).
 
-7. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu12.md#deploy).
+7. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu41.md#deploy).
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -272,12 +272,12 @@ You must reinstall the LocalAgent if:
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).
+1. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu41.md#configurelcs).
 
 	> [!NOTE] 
 	> If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '\<key\>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
-1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically the following changes:
+1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu41.md#configureconnector), specifically the following changes:
 
 	- Client certificate thumbprint
 	- Server certificate thumbprint
