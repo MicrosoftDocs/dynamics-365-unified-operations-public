@@ -31,15 +31,15 @@ ms.dyn365.ops.version: Release 10.0.5
 Dynamics 365 Commerce supports many business scenarios to map [online channels](channels-overview.md#online-channels) with a configured set of products, prices, discounts, etc... to [e-commerce site](online-store-overview.md) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
 
 The scenarios covered in this topic include:
-* A single country, single language channel with a single e-commerce site experience.
+* A single language channel with a single e-commerce site experience.
   * ie: a single brand site configured for the English United States market.
-* A single country, multiple language channel with a single localized site experience.
+* A multi-language channel with a single localized site experience.
   * ie: a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
-* A single country, multiple language channel with different site experiences per language.
+* A multi-language channel with different site experiences per language.
   * ie: a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
-* Multiple country channels (with single and/or multiple languages) with a single localized site experience.
+* Multiple channels (with single and/or multiple languages) with a single localized site experience.
   * ie: a single brand site configured for Australia and New Zealand, where both contries share the same site experience but each country is configured with different products, currency, prices, discounts, shipping modes, etc...
-* Multiple country channels (with single and/or multiple languages) with different site experiences per country.
+* Multiple channels (with single and/or multiple languages) with different site experiences per country.
   * ie: a single brand site configured for Australia and New Zealand, where each country has a unique site experience along with different products, currency, prices, discounts, shipping modes, etc...
 
 ## Online channel
