@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Channel mapping to e-commerce sites
 
-Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channels) with a configured set of products, prices, discounts, etc... to [e-commerce site](online-store-overview.md) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
+Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channel) with a configured set of products, prices, discounts, etc... to [e-commerce site](#e-commerce-site) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
 
 The scenarios covered in this topic include:
 * A single language channel with a single e-commerce site experience.
