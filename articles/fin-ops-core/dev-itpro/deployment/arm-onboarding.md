@@ -99,7 +99,7 @@ Follow these steps to enable the Azure Connector and, as required, add an LCS us
 5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the management certificate. 
 
     > [!Important] 
-    > If you're adding an LCS user, continue with step 6. If you must upload a management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, [Upload the management certificate](#upload-the-management-certificates) 
+    > If you're adding an LCS user, continue with step 6. If you must upload a management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, [Upload the management certificate](arm-onboarding.md#upload-the-management-certificates). 
     
 6.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
 7.  In the **Access Control (IAM)** dialog box, click **Add**, select **Contributor**, and then click **OK**.
