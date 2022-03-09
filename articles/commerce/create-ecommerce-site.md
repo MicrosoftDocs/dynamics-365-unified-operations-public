@@ -4,7 +4,7 @@
 title: Create an e-commerce site
 description: This topic describes the steps and information required to create a new e-commerce site in Dynamics 365 Commerce site builder.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -75,14 +75,13 @@ To rename your site in site builder, follow these steps.
 1. Select the check box next to the site that you want to rename, and then select **Rename** on the command bar.
 1. In the **New site name** dialog box, enter the new site name, and then select **OK**. The site list will update to show the site's new name.
 
-## Deleting a site
+## Delete a site
 
-To delete a site in site builder, follow these steps
+To delete a site in site builder, follow these steps.
 
-1. Sign in to the site builder
-1. Make sure you are at the site list view
+1. To open site list view, select **Site switcher** in the upper-right corner, and then select **Manage sites**.
 1. Select the site you want to delete, and then select **Delete** on the command bar.
-1. Dialog will appear which asks you to type in the site name to confirm deletion. Type in the site name and click **Delete**
+1. In the **Delete \<site name\>** dialog box, enter the site name, and then select **Delete**.
 
 ## Additional resources
 
