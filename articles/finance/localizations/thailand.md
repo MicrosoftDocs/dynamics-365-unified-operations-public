@@ -36,7 +36,7 @@ This topic provides links to documentation resources for Thailand.
 - [Substitution/adjustment tax invoice](apac-tha-substitution-and-adjustment-invoices.md)
 - [Thailand unrealized VAT](apac-tha-unrealized-vat.md)
 - [Tax branch dimensions](apac-tha-tax-branch-dimensions.md)
-- [Sales VAT report](apac-tha-sales-vat-report.md)
+- [VAT reports](apac-tha-sales-vat-report.md)
 - [Average VAT for purchase transactions](apac-tha-average-vat-for-purchase-transactions.md) 
 - [Withholding tax](apac-tha-withholding-tax.md)
 
