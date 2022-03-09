@@ -4,7 +4,7 @@
 title: Create exchange rate providers
 description: This topic describes how to set up an exchange rate provider. 
 author: RyanCCarlson2
-ms.date: 05/15/2020
+ms.date: 03/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
