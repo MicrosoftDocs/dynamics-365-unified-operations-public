@@ -4,7 +4,7 @@
 title: Adjust leases
 description: The topic explains how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
