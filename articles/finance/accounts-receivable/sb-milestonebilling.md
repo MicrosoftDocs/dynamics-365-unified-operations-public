@@ -55,7 +55,7 @@ To delete a milestone template:
 1. Select one or more lines that you want to delete, and select **Delete**. 
 2. When you are asked to confirm the action, select **Yes**.
 
-## Fields
+## Milestone template fields
 
 The **Milestone templates** page contains the following fields: 
 
@@ -108,7 +108,7 @@ To edit milestone allocation for a billing schedule line:
 4. Select **Process**. 
 5. The milestone template lines are automatically added to the billing schedule lines.
 
-## Fields 
+## Milestone allocation fields 
 
 The **Milestone allocation** page contains the following fields: 
 
