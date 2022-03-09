@@ -2,7 +2,7 @@
 # required metadata
 
 title: Milestone templates
-description: This topic explains tting up your system to use the milestone billing funcationality in Subscription billing. 
+description: This topic explains how to set up the milestone billing funcationality in Subscription billing. 
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -36,7 +36,7 @@ This topic explains how to define templates for the milestone billing functional
 
 ## Add Template
 
-To add a milestone template:
+To add a **Milestone template**:
 
 1. Go to **Subscription billing > Recurring contract billing > Setup > Milestone templates**.
 2. Click **New**. 
@@ -45,19 +45,19 @@ To add a milestone template:
 5. Optionally, specify the **Total amount** for the template. 
 6. To add a line, select **Add**, and select the **Item number**. 
    - If **Allocation method** is **Percentage**, specify the allocation **Percentage**. When you specify percentages, the sum **Total percentage** must be equal to 100. 
-   - If **Allocation method** is **Variable Amount**, specify the **Amount** for each line. 
-   - If **Allocation method** is **Equal Amount**, you do not need to specify an amount. The lines are automatically updated with the correct percentage and amount based on the  number of items added to the template. 
+   - If **Allocation method** is **Variable amount**, specify the **Amount** for each line. 
+   - If **Allocation method** is **Equal amount**, you do not need to specify an amount. The lines are updated with the correct percentage and amount based on the  number of items added to the template. 
 6. Select **Save**.
 
 ## Delete Template
 
-To delete a milestone template: 
+To delete a **Milestone template**: 
 1. Select one or more lines that you want to delete, and select **Delete**. 
 2. When you are asked to confirm the action, select **Yes**.
 
 ## Milestone template fields
 
-The **Milestone templates** page contains the following fields: 
+The **Milestone template** page contains the following fields: 
 
 | Field| Description|
 | :------------- |:-------------| 
@@ -81,10 +81,10 @@ The **Milestone templates** page contains the following fields:
 Before you can begin using milestone functionality, you will want to:
 
 1. Add one or more milestone templates.
-2. Create a billing schedule group, and specify the item type as milestone and select a template. This is optional. 
-3. In **Item setup**, **Subscription billing > Recurring contract billing > Setup > Items**, select an **Item relation** and a milestone template for the item setup. This is optional.
+2. Create a **Billing schedule group**, and specify the item type as milestone and select a template.  
+3. In **Item setup**, **Subscription billing > Recurring contract billing > Setup > Items**, select an **Item relation** and a **Milestone template** for the item setup. 
 
-After milestone templates, billing schedule groups, and items have been created, you can create a billing schedule that usees the milestone functionality. 
+After the **Milestone templates**, **Billing schedule groups**, and **Items** have been created, you can create a **Billing schedule** that usees the milestone functionality. 
 
 To set up billing schedules that use milestones: 
 
@@ -93,13 +93,13 @@ To set up billing schedules that use milestones:
 3. In the **Billing schedule lines**, select **Add line** and add Item number. Set the **Item type** to **Milestone**.  
 If a default milestone template is set up for the item, the milestone events are automatically added to the billing schedule lines. End dates are blank for milestone lines.
    - If the milestone template is not setup for an item, select **Milestone allocation**. 
-   - On the **Milestone allocation**, select a **Milestone template**, make any adjustments as needed, and select **Close** to return to the billing schedule. 
+   - On the **Milestone allocation**, select a **Milestone template**, update as needed, and select **Close** to return to the billing schedule. 
    - Finish creating the billing schedule. 
 4. To create invoices for the billing schedule, the end date for each milestone even must be updated. <br />For a single billing schedule, you can update the end date for the milestone event on the **Billing schedule lines**. To update multiple billing schedules, use the **Update completion date process**. 
-5. After the end date is updated, you can create the invoice. For a single billing schedule, use the **Generate invoice** button from the **All billing schedules** page. To create invoices for multiple billing schedules, use the **Generate invoice** or **Generate invoice batch processing** under **Periodic tasks**.
+5. After the end date is updated, you can create the invoice. For a single billing schedule, use the **Generate invoice** button from the **All billing schedules** page. To create invoices for multiple billing schedules, use **Generate invoice** or **Generate invoice batch processing** under **Periodic tasks**.
 
 
-## Edit milestone allocation on billing schedule line
+## Edit milestone allocation on a billing schedule line
 
 To edit milestone allocation for a billing schedule line: 
 1. In the list of all billing schedules, click the **Schedule number** of the billing schedule.  
