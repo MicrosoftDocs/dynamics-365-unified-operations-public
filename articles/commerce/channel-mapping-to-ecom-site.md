@@ -60,7 +60,7 @@ An e-commerce site represents the set of pages that make up the website that cus
 
 ## Common channel mapping scenarios
 
-Dynamics 365 Commerce supports a great range of channel mapping scenarios and the below list is just a subset meant as a guide to help planning any unique business scenarios you may have.  You will find examples below using the Dynamics 365 Commerce ficticious storefronts included with demo data including the Fabrikam fashion store and Adventure Works sporting goods.
+Dynamics 365 Commerce supports a great range of channel mapping scenarios, the below is just a subset meant as a guide to help planning any unique business scenarios you may have.  You will find examples below using the Dynamics 365 Commerce ficticious storefronts included with demo data including the Fabrikam fashion store and Adventure Works sporting goods.
 
 ### Single language channel with a single e-commerce site experience
 The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is the Adventure Works online store setup for the United States English market. The below image shows an example of the channel setup within HQ. 
