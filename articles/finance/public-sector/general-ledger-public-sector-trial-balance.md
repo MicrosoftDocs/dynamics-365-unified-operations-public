@@ -38,7 +38,7 @@ The **Trial balance with transactional detail** report was created using **Elect
 
 ## Electronic Reporting Setup 
 If you don't have a global repository configured, you will need to configure one for the updated version of the Trial balance with transactional detail report. 
-For more information, see [Configure the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md) 
+For more information, see [Configure the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md). 
 1.	Go to **Electronic reporting**. 
 2.	Click **Repositories** of the Microsoft provider. 
 3.	Click **Open**. 
@@ -48,7 +48,7 @@ For more information, see [Configure the Global repository](../../fin-ops-core/d
 You can now run the updated report and the results will be available in excel. 
 
 ## Feature management
-The **Trial balance with transactional detail** report is automatically enabled with feature **Generate the trial balance with transactional detail** report in **Feature management**. Enable the feature **Generate trial balance with pending type transactions** in **Feature management** to include unposted transactions on the report. To view summary data from the general journal account entry, enable the feature **Amount details from the General journal account entry are displayed on the Trial balance with transactional detail report**.
+The **Trial balance with transactional detail** report is automatically enabled with the feature **Generate the trial balance with transactional detail** report in **Feature management**. Enable the feature **Generate trial balance with pending type transactions** in **Feature management** to include unposted transactions on the report. To view summary data from the general journal account entry, enable the feature **Amount details from the General journal account entry are displayed on the Trial balance with transactional detail report**.
 
 ## Report options
 When generating the report, you can choose to include the following detailed general ledger transactions on the report: 
