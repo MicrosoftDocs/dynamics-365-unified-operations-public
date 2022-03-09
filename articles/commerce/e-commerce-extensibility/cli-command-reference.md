@@ -4,7 +4,7 @@
 title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/08/2022
+ms.date: 03/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -260,7 +260,7 @@ yarn msdyn365 packages
 yarn msdyn365 update-versions <entity>
 ```
 
-This command updates the entity (SDK, module library, or retail-proxy) versions to the latest release.
+This command updates the entity (SDK, module library, or retail proxy) versions to the latest release.
 
 **Examples**
 
