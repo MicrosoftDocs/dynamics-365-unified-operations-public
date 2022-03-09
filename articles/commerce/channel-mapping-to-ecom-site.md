@@ -34,9 +34,11 @@ The scenarios covered in this topic include:
 * A single country, single language channel with a single e-commerce site experience.
   * ie: a single brand site configured for the English United States market.
 * A single country, multiple language channel with a single localized site experience.
-  * ie: a single brand site configured for Canada with French and English language support where both languages get the same site experience but are localized into the appropriate languages.
+  * ie: a single brand site configured for Canada with French and English language support where both languages provide the same site experience but are localized into the appropriate languages.
+* A single country, multiple language channel with different site experiences per language.
+  * ie: a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
 * Multiple country channels (with single and/or multiple languages) with a single localized site experience.
-  * ie: a single brand site configured for Australia and New Zealand, where each country can be configured with different products, currency, prices, discounts, shipping modes, etc...
+  * ie: a single brand site configured for Australia and New Zealand, where each country is configured with different products, currency, prices, discounts, shipping modes, etc...
 * Multiple country channels (with single and/or multiple languages) with different site experiences per country.
   * ie: a single brand site configured for Australia and New Zealand, where each country has unique site experiences along with different products, currency, prices, discounts, shipping modes, etc...
 
