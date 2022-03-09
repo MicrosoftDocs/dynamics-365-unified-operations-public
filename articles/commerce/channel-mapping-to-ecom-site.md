@@ -28,7 +28,15 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Channel mapping to e-commerce sites
 
-Dynamics 365 Commerce provides support for many difference business scenarios of mapping [online channels](channels-overview.md#online-channels) to [e-commerce sites](online-store-overview.md).  They range from a single language channel mapped to a single e-commerce site (a single brand in a single region with a single language), multi-language channel mapped to a single or multi-language e-commerce sites (a single brand site in a single region serving multiple languages an example is Canada with French and English could have the same or different e-commerce site experiences) or multiple online channels mapped to a single e-commerce site (multiple online channels set up to support different geographical regions with a single set of e-commerce pages, an example is single web site serving Australia and New Zealand markets, users from both regions get the same experience but can have different products, prices, discount, shipping options, etc... This article will provide guidance for setting common channel mapping scenarios.
+This article will provide guidance for setting online channel mapping scenarios to e-commerce site experiences.  Dynamics 365 Commerce supports many business scenarios to map [online channels](channels-overview.md#online-channels) with a configured set of products, prices, discounts, etc... to [e-commerce site](online-store-overview.md) experiences for their customers.
+
+The scenarios range from
+*A single region, single language channel mapped to a single e-commerce site experience
+*A single region, multi-language channel with a single loclized site experience
+*Multi-region with single and/or multi-language channels mapped to a single localized site experience
+  *ie: a single brand site in a single region serving multiple languages an example is Canada with French and English could have the same or different e-commerce site experiences) 
+*Multi-region, single or multi-language channels mapped to a different e-commerce site experiences
+  *ie: A single branded web site serving Australia and New Zealand markets where users from both regions get the same site experience but can have different products, prices, currency, discounts, shipping options, etc... 
 
 ## Online channel
 
