@@ -75,6 +75,15 @@ To rename your site in site builder, follow these steps.
 1. Select the check box next to the site that you want to rename, and then select **Rename** on the command bar.
 1. In the **New site name** dialog box, enter the new site name, and then select **OK**. The site list will update to show the site's new name.
 
+## Deleting a site
+
+To delete a site in site builder, follow these steps
+
+1. Sign in to the site builder
+1. Make sure you are at the site list view
+1. Select the site you want to delete, and then select **Delete** on the command bar.
+1. Dialog will appear which asks you to type in the site name to confirm deletion. Type in the site name and click **Delete**
+
 ## Additional resources
 
 [Configure your domain name](configure-your-domain-name.md)
