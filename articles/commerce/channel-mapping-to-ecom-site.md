@@ -60,14 +60,14 @@ An e-commerce site represents the set of pages that make up the website that cus
 
 ## Common channel mapping scenarios
 
-Dynamics 365 Commerce supports a great range of channel mapping scenarios, the below is just a subset meant as a guide to help planning any unique business scenarios you may have.  You will find examples below using the Dynamics 365 Commerce ficticious storefronts included with demo data including the Fabrikam fashion store and Adventure Works sporting goods.
+Dynamics 365 Commerce supports a great range of channel mapping scenarios, the below is just a subset meant as a guide to help planning any unique business scenarios you may have.  The ficticious Adventure Works sporting goods store included with Dynamics 365 Commerce demo data will be used as an example with a progression through each scenario.
 
 ### Single language channel with a single e-commerce site experience
-The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is the Adventure Works online store setup for the United States English market. The below image shows an example of the channel setup within HQ. 
+The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is the Adventure Works online store setup only for the United States English market. The below image shows an example of the channel setup within headquarters. Notice how an online channel only supports a single currency and it is set to "USD" and a single business entity "usrt" which is used for tax reporting on the US business.
 
 ![Adventure Works online store in HQ](media/channel-mapping-3.png)
 
-The single online channel can then be mapped to a single e-commerce site within site builder. See [mapping a channel to a site in site builder](#mapping-a-channel-to-a-site-in-site-builder) to learn how how to create a new site and map it to a channel.
+The single online channel can then be mapped to a single e-commerce site within site builder. See [mapping a channel to a site in site builder](#mapping-a-channel-to-a-site-in-site-builder) below to learn how how to create a new site and map it to a channel.
 
 
 ### Multi-language channel with a single localized site experience
