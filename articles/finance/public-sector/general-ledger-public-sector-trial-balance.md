@@ -38,7 +38,7 @@ The **Trial balance with transactional detail** report was created using **Elect
 
 ## Electronic Reporting Setup 
 If you don't have a global repository configured, you will need to configure one for the updated version of the Trial balance with transactional detail report. 
-For more information, see [Configure the Global repository](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo) 
+For more information, see [Configure the Global repository](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo) 
 1.	Go to **Electronic reporting**. 
 2.	Click **Repositories** of the Microsoft provider. 
 3.	Click **Open**. 
