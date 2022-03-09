@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Channel mapping to e-commerce sites
 
-Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channel) with a configured set of products, prices, discounts, etc... to [e-commerce site](#e-commerce-site) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
+Dynamics 365 Commerce supports many business scenarios to map [online channels](#online-channels) with a configured set of products, prices, discounts, etc... to [e-commerce site](#e-commerce-site) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
 
 The scenarios covered in this topic include:
 * A single language channel with a single e-commerce site experience.
@@ -42,7 +42,7 @@ The scenarios covered in this topic include:
 * Multiple channels (with single and/or multiple languages) with different site experiences per country.
   * ie: a single brand site configured for Australia and New Zealand, where each country has a unique site experience along with different products, currency, prices, discounts, shipping modes, etc...
 
-## Online channel
+## Online channels
 
 An online channel represent an online e-commerce storefront which is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience that will be available to your customers. Online channels are created and managed within headquarters and map to a single [legal entity](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/commerce/toc.json#legal-entities), which is usually based in a single country that requires the tax reporting for the channel and can only be configured with  a single currency.
 
