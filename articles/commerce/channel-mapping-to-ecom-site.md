@@ -58,36 +58,16 @@ An e-commerce site represents the set of pages that make up the website that cus
 
 ![Site builder e-commerce site list](media/channel-mapping-2.png)
 
-## Channel mapping scenarios
+## Common channel mapping scenarios
 
-Dynamics 365 Commerce supports a great range of channel mapping scenarios. Understanding the below set of common scenarios should help in planning out any unique business scenarios you may have.  You will find examples below using the Dynamics 365 Commerce ficticious storefronts included with demo data including the Fabrikam fashion store and Adventure Works sporting goods.
+Dynamics 365 Commerce supports a great range of channel mapping scenarios and the below list is just a subset meant as a guide to help planning any unique business scenarios you may have.  You will find examples below using the Dynamics 365 Commerce ficticious storefronts included with demo data including the Fabrikam fashion store and Adventure Works sporting goods.
 
 ### Single language channel with a single e-commerce site experience
-An example for this scenario is the Adventure Works online store setup for a single market (US) with a single language (en-us) and a single online experience.  The below image shows an example of the channel setup within HQ.
+The most basic scenario is a single channel with a single language for selling in a single market. An example for this scenario is the Adventure Works online store setup for the United States English market. The below image shows an example of the channel setup within HQ. 
 
 ![Adventure Works online store in HQ](media/channel-mapping-3.png)
 
-The above single online channel can then be mapped to a single e-commerce site within site builder. The below shows how a new site is created in site builder where the online store channel and default language are chosen.
-
-![Creating a new site in site builder](media/channel-mapping-4.png)
-
-**Note:** In general you won't create new sites as shown above since it will start out as an empty site without any site pages (ie: homepage, category page, product page, ...). A better practice is to start out with a copy of one of the provided starter sites such as Fabrikam or Adventure Works.  In this case you will select **Copy site** where you can pick the source site and the destination site name.  
-
-![Site copy in site builder](media/channel-mapping-5.png)
-
-Notice in the screen capture above the online channel is not an option to pick yet, this can be picked once the site copy has completed.  When the site is first selected in site builder, it will bring up a setup dialog where the default channel and language can be selected as shown in the below image.  
-
-![Initialize site in site builder](media/channel-mapping-6.png)
-
-**Note:** A single domain name can be selected for multiple sites and the path is used to separate the sites.  For example the domain could be "www.MyCompany.com" which is configured for two different e-commerce sites: one for Fabrikam and one for Adventure Works.  The default (ie: blank path) can be used for one site such as the Fabrikam site and a path could be added for the second site such as "adventureworks" so that the site is accessed with "www.MyCompany.com/adventureworks" or a path can be added for both sites (www.MyCompany.com/fabrikam).
-
-Once a site has been configured with its channel, it can easily be managed/changed from within the selected site in site builder under the **Site Settings**, **Channels** tab as shown in the below image.
-
-![Manage channel mapping in site builder](media/channel-mapping-7.png)
-
-Many branded sites sites can co-exist in a single tenant.  Notice the site list in the below image has three different branded sites (Adventure Works, Adventure Works Business (B2B site) and a site for Fabrikam) each mapped to different single online channel.
-
-![Site list in site builder](media/channel-mapping-8.png)
+The single online channel can then be mapped to a single e-commerce site within site builder. See [mapping a channel to a site in site builder](#mapping-a-channel-to-a-site-in-site-builder) to learn how how to create a new site and map it to a channel.
 
 
 ### Multi-language channel with a single localized site experience
@@ -146,3 +126,41 @@ Similar to the previous scenario, you may have multiple channels for a single br
 ### Other scenarios
 
 With the flexibility of channel to site mapping available in Dynamics 365 Commerce and the details provided above, a vast number of scenarios are possible to meet most business requirements.
+
+
+
+## Mapping a channel to a site in site builder
+
+The below shows different ways sites can be created and configured to use different online channels.
+
+### Creating a new channel
+
+Channels can be created within site builder on the **Manage sites** page using the **New site** link.  The below shows where you select the default online channel and language for the site.
+
+![Creating a new site in site builder](media/channel-mapping-4.png)
+
+### Creating a new channel with site copy
+
+In general you won't create new sites as shown above since it will start out as an empty site without any site pages (ie: homepage, category page, product page, ...). A better practice is to start out with a copy of one of the provided starter sites such as Fabrikam or Adventure Works.  In this case you will select **Copy site** where you can pick the source site and the destination site name.  
+
+![Site copy in site builder](media/channel-mapping-5.png)
+
+Notice in the image above that the online channel and language selection is not an option to pick at this point, this can be done once the site copy has completed.  When the site is selected in site builder site list for the first time, it will bring up a setup dialog where the default channel and language can be selected as shown in the below image.
+
+![Initialize site in site builder](media/channel-mapping-6.png)
+
+### Managing an existing sites channels
+
+Once a site has been configured with its channel, it can easily be managed/changed from within the selected site in site builder under the **Site Settings**, **Channels** tab as shown in the below image.
+
+![Manage channel mapping in site builder](media/channel-mapping-7.png)
+
+### Supporting multiple sites in a single tenant
+
+Many branded sites sites can co-exist in a single tenant.  Notice the site list in the below image has three different branded sites (Adventure Works, Adventure Works Business (B2B site) and a site for Fabrikam) each mapped to different single online channel.
+
+![Site list in site builder](media/channel-mapping-8.png)
+
+### Domain name and path
+
+A single domain name can be used for multiple sites and the path is used to separate the sites and or languages.  For example the domain could be "www.MyCompany.com" which is configured for two different e-commerce sites: one for Fabrikam and one for Adventure Works.  The default (ie: blank path) can be used for one site such as the Fabrikam site and a path could be added for the second site such as "adventureworks" so that the site is accessed with "www.MyCompany.com/adventureworks" or a path can be added for both sites (www.MyCompany.com/fabrikam). Alternately a different domain name can be used for each site ie: www.adventure-works.com and www.fabrikam.com and paths could be used for different regions such as www.adventure-works.com/fr-ca for French Canada.
