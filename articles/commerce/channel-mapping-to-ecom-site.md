@@ -44,7 +44,7 @@ The scenarios covered in this topic include:
 
 ## Online channel
 
-An online channels represent an online e-commerce storefront which is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience that will be available to your customers. Online channels are created and managed within the headquarters (HQ) tool. 
+An online channels represent an online e-commerce storefront which is used to map products, pricing, discounts, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience that will be available to your customers. Online channels are created and managed within headquarters and map to a single [legal entity](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/commerce/toc.json#legal-entities), which is usually based in a single country that requires the tax reporting for the channel and can only be configured with  a single currency.
 
 For an overview on channels see the [Channel overview](channels-overview.md) topic and to learn about creating an online channel see the [Set up an online channel](channel-setup-online.md) topic.
 
@@ -54,7 +54,7 @@ The below image shows the default online channels that are deployed with Dynamic
 
 ## E-commerce site
 
-An e-commerce site represents the set of pages that make up the website that customers use to shop.  E-commerce sites are managed from within the site builder tool as shown in the below image.  To learn more about how to create and manage sites from within the site builder see the [E-commerce site overview](online-store-overview.md) topic.
+An e-commerce site represents the set of pages that make up the website that customers use to shop.  E-commerce sites are managed from within site builder as shown in the below image.  To learn more about how to create and manage sites from within site builder see the [E-commerce site overview](online-store-overview.md) topic.
 
 ![Site builder e-commerce site list](media/channel-mapping-2.png)
 
@@ -62,7 +62,7 @@ An e-commerce site represents the set of pages that make up the website that cus
 
 Dynamics 365 Commerce supports a great range of channel mapping scenarios. Understanding the below set of common scenarios should help in planning out any unique business scenarios you may have.  You will find examples below using the Dynamics 365 Commerce ficticious storefronts included with demo data including the Fabrikam fashion store and Adventure Works sporting goods.
 
-### Single market channel with a single online site experience
+### Single language channel with a single e-commerce site experience
 An example for this scenario is the Adventure Works online store setup for a single market (US) with a single language (en-us) and a single online experience.  The below image shows an example of the channel setup within HQ.  Notice how an online channel only maps to a single legal entity, which is usually based in a single country that requires the tax reporting for the channel, a single currency, but can be localized into multiple languages (only en-us in this example).
 
 ![Adventure Works online store in HQ](media/channel-mapping-3.png)
