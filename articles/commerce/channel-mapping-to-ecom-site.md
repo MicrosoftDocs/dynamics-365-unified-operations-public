@@ -3,7 +3,7 @@
 
 
 title: Channel mapping to e-commerce sites
-description: This article will provide guidance for setting up common channel mapping scenarios.
+description: Dynamics 365 Commerce supports many business scenarios to map online channels with a configured set of products, prices, discounts, etc... to e-commerce site experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
 author: samjarawan
 ms.date: 09/21/2021
 ms.topic: article
@@ -30,13 +30,15 @@ ms.dyn365.ops.version: Release 10.0.5
 
 Dynamics 365 Commerce supports many business scenarios to map [online channels](channels-overview.md#online-channels) with a configured set of products, prices, discounts, etc... to [e-commerce site](online-store-overview.md) experiences for their customers. This article provides guidance for some of the more common mapping scenarios which can be extrapolated for most other business requirements.
 
-The scenarios range from
-* A single region, single language channel mapped to a single e-commerce site experience.
-* A single region, multi-language channel with a single localized site experience.
-* Multi-region with single and/or multi-language channels mapped to a single localized site experience.
-  * ie: a single brand site in a single region serving multiple languages an example is Canada with French and English could have the same or different e-commerce site experiences) 
-* Multi-region with single and/or multi-language channels mapped to different e-commerce site experiences
-  * ie: A single branded web site serving Australia and New Zealand markets where users from both regions get the same site experience but can have different products, prices, currency, discounts, shipping options, etc... 
+The scenarios covered in this topic include:
+* A single country, single language channel with a single e-commerce site experience.
+  * ie: a single brand site configured for the English United States market.
+* A single country, multiple language channel with a single localized site experience.
+  * ie: a single brand site configured for Canada with French and English language support where both languages get the same site experience but are localized into the appropriate languages.
+* Multiple country channels (with single and/or multiple languages) with a single localized site experience.
+  * ie: a single brand site configured for Australia and New Zealand, where each country can be configured with different products, currency, prices, discounts, shipping modes, etc...
+* Multiple country channels (with single and/or multiple languages) with different site experiences per country.
+  * ie: a single brand site configured for Australia and New Zealand, where each country has unique site experiences along with different products, currency, prices, discounts, shipping modes, etc...
 
 ## Online channel
 
@@ -58,7 +60,7 @@ An e-commerce site represents the set of pages that make up the website that cus
 
 Dynamics 365 Commerce supports a great range of channel mapping scenarios. Understanding the below set of common scenarios should help in planning out any unique business scenarios you may have.  You will find examples below using the Dynamics 365 Commerce ficticious storefronts included with demo data including the Fabrikam fashion store and Adventure Works sporting goods.
 
-### Single market site with a single online site experience
+### Single market channel with a single online site experience
 An example for this scenario is the Adventure Works online store setup for a single market (US) with a single language (en-us) and a single online experience.  The below image shows an example of the channel setup within HQ.  Notice how an online channel only maps to a single legal entity, which is usually based in a single country that requires the tax reporting for the channel, a single currency, but can be localized into multiple languages (only en-us in this example).
 
 ![Adventure Works online store in HQ](media/channel-mapping-3.png)
