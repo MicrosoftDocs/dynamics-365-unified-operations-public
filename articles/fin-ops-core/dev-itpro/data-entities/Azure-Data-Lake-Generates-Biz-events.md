@@ -64,7 +64,7 @@ Each business event provides an event message, which helps you identify the tabl
 
 | Business event                          | Description | Event message (parameters)                |
 |-----------------------------------------|-------------|--------------------------------------|
-| Initialize complete (preview)           | System completed full copy of a tbale            | TableName: string, FolderPath: string |
+| Initialize complete (preview)           | System completed full copy of a table            | TableName: string, FolderPath: string |
 | Metadata changed (preview)  | Table metadata changed                           | TableName: string                    |
 | Deactivated (preview)       | Table has been deactivated                       | TableName: string                    |
 | Activated (preview)         | Table has been activated                         | TableName: string                    |
@@ -79,7 +79,9 @@ To create a Business action using Microsoft Power Automate;
 5. Leave the **Table name** field as **none**. This parameter is not applicable for Export to Data lake service     
 6. You can choose to create an action when any of the Business events are fired. You can choose a Business event from the table above. Choose the Business event in the **Action name** field. In this case, we want an action performed when an **Error** happens in the service.
 7. Next we will add a new step, in this case to send an e-mail. You can choose to implement any step available in Power Automate. You can choose parameters such as Table Name when composing the e-mail message.
-8. Save the flow.
+8. Save the flow. When a table goes into error status, you should get an e-mail.
+
+
 
 
 
