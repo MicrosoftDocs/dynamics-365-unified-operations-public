@@ -39,7 +39,7 @@ To enable the module CSS optimization feature, the following prerequisites must 
 
 - Online SDK version 1.35.17 or later.
 - Webpack 5 is required for this feature to work. Upgrade your SDK code to Webpack 5 using the **upgrade-webpack** CLI command: ```yarn msdyn365 upgrade-webpack```.
-- If you are using the Fabrikam reference theme (Fabrikam-design-kit), module CSS support will be added to release 9.36 (Commerce version 10.0.26 release) and later.
+- If you're using the Fabrikam reference theme (Fabrikam-design-kit), module CSS support will be added to release 9.36 (Commerce version 10.0.26 release) and later.
  
 ## Enable module CSS optimization
 
