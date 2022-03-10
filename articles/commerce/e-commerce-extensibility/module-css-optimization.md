@@ -72,7 +72,7 @@ import "./header.scss"
  
 ## Configure assets in CSS for use with module CSS optimization
  
-By default all the assets are stored in root level **public** directory, for example **public/images**. To leverage assets within the module CSS optimization files they must be stored in the **public/msdyn365-assets** directory, for example  **public/msdyn365-assets/images**. Assets should then be imported from the **msdyn365-assets** directory within SCSS files using the relative path **../../../../../msdyn365-assets/**, as shown in the following example.
+By default all the assets are stored in root level **public** directory, for example **public/images**. To use assets within the module CSS optimization files they must be stored in the **public/msdyn365-assets** directory, for example  **public/msdyn365-assets/images**. Assets should then be imported from the **msdyn365-assets** directory within SCSS files using the relative path **../../../../../msdyn365-assets/**, as shown in the following example.
 
 ```SCSS
 $msv-font-path: ../../../../../msdyn365-assets/webfonts
@@ -84,7 +84,9 @@ Webpack 5 is used to compile and build the module CSS chunks and only shows CSS 
 
 ## Best practices for configuring module CSS styles
  
-- Using "module-A" and "module-B" to represent two different modules, avoid importing module-A styles into module-B styles because this defeats the purpose of creating smaller CSS chunks. Instead, module-A styles should only have styles related to module-A and module-B styles should only have styles for module-B.
+The following are best practices for configuring module CSS styles, using "module-A" and "module-B" to represent two different modules.
+ 
+- Avoid importing module-A styles into module-B styles because it defeats the purpose of creating smaller CSS chunks. Instead, module-A styles should only have styles related to module-A and module-B styles should only have styles for module-B.
 - Avoid importing the **index.scss** file in the **\<MODULE_NAME\>.scss** file. Only import the **index.scss** file if all the styles imported from the file are used by the module.
 - Component styles that are used by one or more modules can be imported in the **\<MODULE_NAME\>.js**. For example if module-A and module-B use common button component styles, they can both import the component as shown in the following examples:
 
