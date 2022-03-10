@@ -36,15 +36,14 @@ Pre-configured system accounts are included on deployed environments so that Mic
 > [!IMPORTANT] 
 > Do not delete these system accounts. Deleting these accounts will cause a disruption in key functionality provided by Microsoft.
 
-| Account | Purpose/use case of the account|
+| Account | Purpose/use case |
 |---|---|
-| Axrunner | Used to monitor the health of the environment and provide alerts when necessary.<br><br>**Note**: This account is deprecated with self-service environments and is no longer used. |
-| FRServiceUser | The Financial Reporting service user account, which is used by the Management Reporter application for integrations with Finance and Operations apps. |
-| PowerPlatformS2S | Used to connect dual-write and virtual tables for Finance and Operations apps to Microsoft Dataverse.|
-| RetailServiceAccount | Used for Retail services to connect to the Finance and Operations environment. |
-| ScaleUnitManagement | Used for communication with the Scale Unit Manager portal. This account is automatically added when upgrading to 10.0.23. |
-| ScaleUnitPipeline | Used to maintain and keep track of communication between the scale units. This account is automatically added when upgrading to 10.0.19. |
-| SysHealthServiceUser or Axping (depending on the deployed product version) | Used to monitor the availability and health of the environment and provide alerts when necessary. |
-
+| Axrunner | <p>Monitoring the health of the environment, and providing alerts as required.</p><p>**Note:** This account is deprecated for self-service environments and is no longer used.</p> |
+| FRServiceUser | The Financial Reporting service user account. The Management Reporter application uses this account for integrations with Finance and Operations apps. |
+| PowerPlatformS2S | Connecting dual-write and virtual tables for Finance and Operations apps to Microsoft Dataverse.|
+| RetailServiceAccount | Connecting Retail services to the Finance and Operations environment. |
+| ScaleUnitManagement | Communication with the Scale Unit Manager portal. This account is automatically added when you upgrade to version 10.0.23. |
+| ScaleUnitPipeline | Maintaining and tracking communication between the scale units. This account is automatically added when you upgrade to version 10.0.19. |
+| SysHealthServiceUser or Axping (depending on the deployed product version) | Monitoring the availability and health of the environment, and providing alerts as required. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
