@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: veeravendhan-s 
-ms.date: 11/29/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -232,7 +232,7 @@ After the validation is successful, the application presents a set of menu optio
 
     If data upgrade is successful, the **'ds'** option is shown as **AX 2012 upgrade topology (LCS) status: Deployed**, and all the upgrade steps will be in a **Completed** state.
 
-    If data upgrade fails, the **'ds'** option is shown as **AX 2012 upgrade topology (LCS) status: Failed**, and one or more upgrade steps will be in a **Failed** state. The **Menu option (12)** tool will show a status of **Resume**.
+    If data upgrade fails, the **'ds'** option is shown as **AX 2012 upgrade topology (LCS) status: Failed**, and one or more upgrade steps will be in a **Failed** state. The **Menu option (10)** tool will show a status of **Resume**.
 
     After you address and fix the reasons for the failure, you can perform the **Resume** operation. When the action is successful, the state of the LCS environment will change from **Failed** to **Data upgrade in progress**.
 
@@ -390,6 +390,9 @@ You can use the following options to review the reports of the replication valid
     ```
     **Solution:** In the Replication Monitor, select and right-click the failed publication, and then select **Generate Snapshot**.
 
+- **Scenario 12:** Data upgrade **pre-sync and post-synch processes are taking time.** How can I troubleshoot which specific process or job is taking more time?.
+
+    **Solution:** **ReleaseUpgradeDB*** framework logs the execution of each script into ReleaseUpdateScriptsLog table. You can monitor the duration of scripts that are run in this table. You can easily identify the longest-running process or job when you're trying to tune the performance of the data upgrade process.
 
 ## Learn about the replication configuration and status via SQL Server Management Studio
 
