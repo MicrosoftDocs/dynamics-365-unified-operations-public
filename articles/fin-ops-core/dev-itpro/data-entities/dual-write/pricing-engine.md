@@ -54,7 +54,7 @@ You can configure Supply Chain Management to either respect or ignore trade agre
 
     For an example of each of these cases, see the scenarios that follow.
 
-### Example scenario 1: Trade agreement evaluation without the Manual entry option
+## Example scenario 1: Trade agreement evaluation without the Manual entry option
 
 In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *does not* include the **Manual entry** policy. A Sales user enters an order line that has a non-zero sales price in Sales, and no sales price is defined for the item in Supply Chain Management.
 
@@ -65,7 +65,7 @@ In this scenario, the **Trade agreement evaluation** setup in Supply Chain Manag
 1. The new sales price of the line is synced back to Sales.
 1. The result is an order line in Sales that has a sales price of 0 USD.
 
-### Example scenario 2: Trade agreement evaluation with the Manual entry option
+## Example scenario 2: Trade agreement evaluation with the Manual entry option
 
 In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *does* include the **Manual entry** policy. A Sales user enters an order line that has a non-zero sales price in Sales. Supply Chain Management includes a trade agreement that sets a sales price of 2 USD for the ordered item.
 
@@ -75,7 +75,7 @@ In this scenario, the **Trade agreement evaluation** setup in Supply Chain Manag
 1. Because the **Trade agreement evaluation** setup in Supply Chain Management includes the **Manual entry** policy, the sales price isn't changed, even though an applicable trade agreement specifies another sales price.
 1. The sales price remains unchanged in Sales and in Supply Chain Management.
 
-### Example scenario 3: Trade agreement evaluation for an item that has a sales price of zero in Sales
+## Example scenario 3: Trade agreement evaluation for an item that has a sales price of zero in Sales
 
 In this scenario, the **Trade agreement evaluation** setup in Supply Chain Management *does* include the **Manual entry** policy. The Sales user enters an order line that has a sales price of 0 (zero) in Sales. Supply Chain Management includes a trade agreement that sets a sales price of 2 USD for an ordered item.
 
