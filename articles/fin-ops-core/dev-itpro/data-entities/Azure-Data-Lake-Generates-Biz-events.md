@@ -82,7 +82,7 @@ To create a Business action using Microsoft Power Automate;
 8. Save the flow. When a table goes into error status, you should get an e-mail.
 
 ## Any questions, feedback? 
-We are also actively working on this and other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the preview Yammer group. You can then attend weekly online "office hours" meetings and use the Yammer online forums to stay in touch and ask questions.
+We are also actively working on this and other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can then attend weekly online "office hours" meetings and use the Yammer online forums to stay in touch and ask questions.
 
 
 
