@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: veeravendhan-s 
-ms.date: 11/29/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -392,7 +392,7 @@ You can use the following options to review the reports of the replication valid
 
 - **Scenario 12:** Data upgrade **pre-sync and post-synch processes are taking time.** How can I troubleshoot which specific process or job is taking more time?.
 
-    **Solution:** **ReleaseUpgradeDB*** framework logs the execution of each script into ReleaseUpdateScriptsLog table. You can monitor the duration of scripts that are run in this table. You can easily identify the longest-running process or job when you're trying to tune the performance of the data upgrade process..
+    **Solution:** **ReleaseUpgradeDB*** framework logs the execution of each script into ReleaseUpdateScriptsLog table. You can monitor the duration of scripts that are run in this table. You can easily identify the longest-running process or job when you're trying to tune the performance of the data upgrade process.
 
 ## Learn about the replication configuration and status via SQL Server Management Studio
 
