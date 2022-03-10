@@ -91,7 +91,7 @@ For a complete list of Adyen payment status codes, see [Payments lifecycle](http
 
 ### Can I cancel a refund action?
 
-Adyen supports two types of refunds, referenced refunds and unreferenced refunds. Referenced refunds cannot be canceled. For unreferenced refunds, an attempt to cancel is made but successful cancellation depends on the payment issuer and the potential delay configured for the processing by Adyen. If forcing a local refund cancellation on POS generates an error, POS allows the ability to credit but if the cancellation of the unlinked refund is not accepted on the payment gateway this may cause discrepencies between Dynamics reports and Adyen reporting. For more information about Adyen's cancellation of unreferenced refunds, see [Cancel an unreferenced refund](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced). 
+Adyen supports two types of refunds: referenced and unreferenced. Referenced refunds can't be canceled. For unreferenced refunds, a cancellation attempt is made, but successful cancellation depends on the payment issuer and the potential delay that is configured for the processing by Adyen. If an error occurs when you force a local refund cancellation in POS, POS allows for a credit. However, if the cancellation of the unlinked refund isn't accepted on the payment gateway, discrepancies might occur between Dynamics 365 reports and Adyen reporting. For more information about Adyen's cancellation of unreferenced refunds, see [Cancel an unreferenced refund](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced). 
 
 ## Next steps
 
