@@ -86,7 +86,7 @@ When a configuration package is created by using the **yarn msdyn365 pack** comm
 
 ### Update SDK with CLI command
 
-It is recommended to keep the online SDK updated to the latest version regardless of the versions of Commerce Scale Unit and module library since the online SDK is backwards compatible with all versions. To update to the latest SDK, run the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command to ensure that the yarn.lock file is deleted before running yarn to pull down the latest version of the online SDK.
+We recommend that you keep the online SDK updated to the latest version, regardless of the versions of Commerce Scale Unit and the module library, because the online SDK is backward compatible with all versions. To update to the latest SDK, run the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command to ensure that the yarn.lock file is deleted before you run yarn to pull down the latest version of the online SDK.
 
 ## Determine the latest released versions of the dependency packages
 
