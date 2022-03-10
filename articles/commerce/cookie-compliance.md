@@ -4,7 +4,7 @@
 title: Cookie compliance
 description: This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/10/20222
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
