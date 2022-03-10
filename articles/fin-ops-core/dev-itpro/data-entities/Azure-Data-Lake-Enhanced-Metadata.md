@@ -48,22 +48,19 @@ If you are familiar with Dynamics applications such as Finance and Supply chain,
 When you enable Enhanced metadata (preview) option, system writes additional metadata derived from Dynamics into the data lake. Client tools that can understand and work with these additional metadata properties can provide a better experience to users.
 
 ### Pre-requisites for enabling Enhanced metadata (preview)
+1. Dynamics 365 Finance and Operations application version needs to be higher than the following versions.
+- Release 10.0.22 (PU46) with latest updates (version 10.0.995.146 or higher)
+- Release 10.0.23 (PU47) with lates updates (version 10.0.1037.133 or higher)
+- Release 10.0.24 (PU48) with latest updates (10.0.1084.89 or higher)
+- Release 10.0.25 (PU49) and later
+
 
 
 ## Changes to metadata
 When the data structures change in Finance and Operations apps, for an example, when a new field is added to a table, metadata files in the lake are updated to reflect the change. The system may also repopulate the entire table folder (all the CSV files) in case the data structure change is destructive. For an example, in case a field is removed from a table in a Finance and Operations app, a rare but more destructive scenario, the entire table folder is repopulated. Whereas when a new field is added, all the data files are not repopulated. Only the data files that contain changed rows are updated to include the new field. Because many consuming tools can work with newly added data fields (a feature called *schema drift*) the system does not repopulate the entire folder. 
 
 
-## What is Export to Azure Data Lake?
 
-Export to Azure Data Lake lets you connect your Finance and Operations environment to a data lake to unlock insights that are hidden in your data.
-
-Data exported from Finance and Operations is stored in the lake as raw files
-(ie. Comma separated files, or CSV files). In addition to data, rich metadata
-stored in Finance and Operations application layer (ie. Application Object
-Server, or AOS) is also available in Data lake. Having rich metadata enables you
-to consume the data using client tools without having to work with raw files.
-The following sections describe the preview features that are available.
 
 > [!NOTE]
 > Preview features aren't complete. However, they are made available on a preview basis, so that customers can get early access and provide feedback. Preview features might have limited or restricted functionality, they aren't meant for production use, and they might be available only in selected geographic areas.
