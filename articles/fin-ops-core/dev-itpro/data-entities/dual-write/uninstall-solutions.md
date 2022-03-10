@@ -18,7 +18,7 @@ Few customers unintentionally install dual-write application orchestration packa
 + Dynamics365FinanceAndOperationsAnchor_managed
 + msdyn_OneFSSCM_managed (if present)
 + Dynamics365FinanceAndOperationsDualWriteEntityMaps_managed
-+ Dynamics365Notes_managed (run script through Jarvis on the org before-hand: FixRelationshipMetadataToCustom.sql )
++ Dynamics365Notes_managed (Please raise a support ticket with Microsoft to un-install this solution.)
 + DualWriteCore_managed
 + Dynamics365AssetManagementApp_managed
 + Dynamics365AssetManagement_managed
