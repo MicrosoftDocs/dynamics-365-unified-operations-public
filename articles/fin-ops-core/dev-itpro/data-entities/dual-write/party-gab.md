@@ -2,7 +2,7 @@
 title: Party and global address book
 description: This topic describes the Party and global address book functionality of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 08/11/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -221,9 +221,9 @@ Electronic addresses are available only in this grid. In future releases, all po
 
     ![Duplicate rule for Contacts.](media/duplicate-rule-2.PNG)
 
-11. If you are an existing dual-write user, follow the instructions in [Upgrade to the party and global address book model](upgrade-party-gab.md) and upgrade your data. **Please do not proceed to step 12 without completing this step.**
+11. If you are an existing dual-write user, follow the instructions in [Upgrade to the party and global address book model](upgrade-party-gab.md) and upgrade your data. **Do not proceed to step 12 without completing this step.** If you are a new dual-write user, proceed to step 12.
 
-12. If you are an existing dual-write user, after completing step 11, you can run the maps in the following order. If you are a new dual-write customer then you can proceed directly. In case you get an error that states "Project validation failed. Missing destination field...", then open the map and select **Refresh Tables**. Then run the map.
+12. If you are an existing dual-write user, complete step 11, and then you can run the maps in the following order. If you are a new dual-write customer, you can proceed directly. If you are shown an error message that states "Project validation failed. Missing destination field...", open the map and select **Refresh Tables**, then run the map.
 
     Finance and Operations app | Customer engagement app  
     ----------------------------|------------------------
