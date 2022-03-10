@@ -34,7 +34,6 @@
 | F7       | 0043    | Sales of goods or services by a taxable person who isn't established in France                                                    | Operation lookup | SalesByPersonNotEstablished                       |
 | F8       | 0039    | Regularizations                                                                                                                   | Operation lookup | NotTaxableRegularizations                         |
 
-\|
 
 **SECTION B - VAT CALCULATION TO BE PAID**
 
