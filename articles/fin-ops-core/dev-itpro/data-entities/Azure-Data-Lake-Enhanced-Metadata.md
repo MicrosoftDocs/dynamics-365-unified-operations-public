@@ -25,9 +25,12 @@ Data in the lake is stored as CSV files in a folder structure maintained by the 
 When data in Finance and Operations apps gets updated, corresponding data rows in CSV files in the table folders are updated. When a new row is added to a table in Finance and Operations apps, or an existing row is deleted, new rows are added or deleted from corresponding CSV files. Number of CSV files in the lake depends on size of data rows. System makes an effort to keep each CSV file around 200MB in size to optimize write and read operations.    
 
 
-# What is metadata and how are they stored in the Data lake?
+## What is metadata and how are they stored in the Data lake?
 
-Metadata describes the names, data type, size and nature of data. If you are familiar with Dynamics applications such as Finance and Supply chain, you may be familiar with the rich metadata structures present in the application. In addition to basic types, Dynamics metadata includes; 
+Metadata describes the names, data type, size and nature of data. Along with Data files in the lake, you will notice metadata files at a folder level. Metadata in the lake is written using a machine readable format described by the [Common Data Model standard](https://docs.microsoft.com/common-data-model/sdk/overview)
+
+
+If you are familiar with Dynamics applications such as Finance and Supply chain, you may be familiar with the rich metadata structures present in the application. In addition to basic types, Dynamics metadata includes; 
 
 -   **Extended Data Types (EDTs)** that offer richer data types that describe behavior and business rules applicable to "Business data types" such as Bank Accounts, Ledger Account and Phone numbers. 
 -   You may also be familiar with **descriptive names – along with translated labels available in many languages**.
