@@ -149,37 +149,14 @@ VAT declaration.
 3.  On the **Application specific parameters** page, on the **Lookups** FastTab,
     select **Report field lookup**.
 
-4.  On the **Conditions** FastTab, set the following fields to associate the
-    sales tax codes and report fields.
+4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
 
-| Field                  | Description                                                                                                                                                                                                                                                                                                          |
-|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lookup result          | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                                                               |
-| Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
-| Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:  |
+    | Field                  | Description                                                                                                                                                                                                                                                                                                          |
+    |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Lookup result          | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                                                               |
+    | Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
+    | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</br>-   **Purchase**</br>-   **PurchaseExempt** (tax-exempt purchase)</br>-   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</br>-   **Sales**</br>-   **SalesExempt** (tax-exempt sale)</br>-   **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</br>-   **Use tax**. </br>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</br>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value. |
 
--   **Purchase**
-
--   **PurchaseExempt** (tax-exempt purchase)
-
--   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)
-
--   **Sales**
-
--   **SalesExempt** (tax-exempt sale)
-
--   **SalesReverseCharge** (tax payable from a purchase reverse charge or a
-    sales reverse charge)
-
--   **Use tax**
-
-For each transaction classifier, a classifier for the credit note is also
-available. For example, one of these classifiers is **PurchaseCreditNote**
-(purchase credit note).
-
-Be sure to create two lines for each sales tax code: one that has the
-transaction classifier value and one that has the transaction classifier for the
-credit note value.
 
 >   **Note:** Associate all sales tax codes with lookup results. If any sales
 >   tax codes should not generate values on the VAT declaration, associate them
@@ -187,15 +164,13 @@ credit note value.
 
 ![](media/7db74920fad66a0db7fad60758698cc0.png)
 
->   Graphical user interface, application, table Description automatically
->   generated
 
-1.  In the **State** field, change the value to **Completed**.
+5.  In the **State** field, change the value to **Completed**.
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
 1.  In the **Feature management** workspace, find and select the **VAT statement
-    format reports** feature in the list, and then select **Enable now**.
+    format reports.** feature in the list, and then select **Enable now**.
 
 2.  Go to **General ledger \> Setup \> General ledger parameters**.
 
@@ -207,7 +182,7 @@ credit note value.
 >   period** report. It's also printed when you select **Print** on the **Sales
 >   tax payments** page.
 
-1.  On the **Tax authorities** page, select the tax authority, and then, in the
+4.  On the **Tax authorities** page, select the tax authority, and then, in the
     **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity that has [multiple
@@ -272,48 +247,28 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 
 ### Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
 
-1.  Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Report sales
-    tax for settlement period**.
+1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
+2. In the **Settlement period** field, select a value.
+3. In the **Sales tax payment version** field, select one of the following values:
 
-2.  Set the following fields.
+    - **Original**: Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.
+    - **Corrections**: Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.
+    - **Total list**: Generate a report for all the sales tax transactions for the period, including the original and all corrections.
 
-| Field                     | Description                                    |
-|---------------------------|------------------------------------------------|
-| Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:            |
-| From date                 | Select the start date of the reporting period. |
-
--   **Original** – Generate a report for the sales tax transactions of the
-    original sales tax payment or before the sales tax payment is generated.
-
--   **Corrections** – Generate a report for the sales tax transactions of all
-    the subsequent sales tax payments for the period.
-
--   **Total list** – Generate a report for all the sales tax transactions for
-    the period, including the original and all corrections.
-
-1.  Select **OK**, and review the Excel report.
+4. In the **From date** field, select the start date of the reporting period.
+5. Select **OK**, and review the Excel report.
 
 ### Settle and post sales tax
 
-1.  Go to **Tax \> Periodic tasks \> Declarations \> Sales tax \> Settle and
-    post sales tax**.
+1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
+2. In the **Settlement period** field, select a value.
+3. In the **Sales tax payment version** field, select one of the following values:
 
-2.  Set the following fields.
+    - **Original**: Generate the original sales tax payment for the settlement period.
+    - **Latest corrections**: Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.
 
-| Field                     | Description                                    |
-|---------------------------|------------------------------------------------|
-| Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:            |
-| From date                 | Select the start date of the reporting period. |
-
--   **Original** – Generate the original sales tax payment for the settlement
-    period.
-
--   **Latest corrections** – Generate a correction sales tax payment after the
-    original sales tax payment for the settlement period was created.
-
-1.  Select **OK**.
+4. In the **From date** field, select the start date of the reporting period.
+5. Select **OK**.
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
@@ -355,38 +310,38 @@ that you imported earlier from the LCS Shared asset library.
 
 >   **Note:** Steps 5 through 7 are optional.
 
-1.  Optional: On the **Messages** FastTab, select **Collect data**, and then
+5.  Optional: On the **Messages** FastTab, select **Collect data**, and then
     select **OK**. The sales tax payments that were generated earlier are added
     to the message. For more information, see the [Settle and post sales
     tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-2.  Optional: On the **Message items** FastTab, review the sales tax payments
+6.  Optional: On the **Message items** FastTab, review the sales tax payments
     that are transferred for processing. By default, all sales tax payments of
     the selected period that weren't included in any other message of the same
     processing are included.
 
-3.  Optional: Select **Original document** to review the sales tax payments or
+7.  Optional: Select **Original document** to review the sales tax payments or
     select **Delete** to exclude sales tax payments from processing. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Declaration** dialog box.
 
-4.  On the **Messages** FastTab, select **Update status**. In the **Update
+8.  On the **Messages** FastTab, select **Update status**. In the **Update
     status** dialog box, select **Ready to generate**, and then select **OK**.
     Verify that the message status is changed to **Ready to generate**.
 
-5.  Select **Generate report**. To preview the VAT declaration amounts, in the
+9.  Select **Generate report**. To preview the VAT declaration amounts, in the
     **Run processing** dialog box, select **Preview report**, and then select
     **OK**.
 
-6.  In the **Electronic reporting parameters** dialog box, set the fields as
+10.  In the **Electronic reporting parameters** dialog box, set the fields as
     described in the [Preview the VAT declaration in Excel from the Report sales
     tax for settlement period periodic
     task](#preview-the-vat-declaration-in-excel-from-the-report-sales-tax-for-settlement-period-periodic-task)
     section earlier in this topic, and then select **OK**.
 
-7.  Select the **Attachments** button (paper clip symbol) in the upper-right
+11.  Select the **Attachments** button (paper clip symbol) in the upper-right
     corner of the page, and then select **Open** to open the file. Review the
     amounts in the Excel document.
 
@@ -415,7 +370,7 @@ legal entities.
 >   existing records, this field shows the identifier of the current legal
 >   entity.
 
-1.  In the **Datasources setup** grid, add a line for each additional legal
+5.  In the **Datasources setup** grid, add a line for each additional legal
     entity that must be included in reporting. For each new line, set the
     following fields.
 
