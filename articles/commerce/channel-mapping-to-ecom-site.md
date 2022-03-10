@@ -74,7 +74,7 @@ The single online channel can then be mapped to a single e-commerce site within 
 
 ### Multi-language channel with a single localized site experience
 
-A channel supports being localized with additional languages and are configured in headquarters.  Product names, descriptions and attributes can also be localized within headquarters.  The limitations of this scenario is that a single channel can only be configured with one currency and one legal entity, so it works best for scenarios like Counties with a single currency and multiple languages such as Canada with English and French.
+A channel supports being localized with additional languages which can be configured in headquarters.  Product names, descriptions and attributes can also be localized within headquarters.  The limitations of this scenario is that a single channel can only be configured with one currency and one legal entity, so it works best for scenarios like Counties with a single currency and multiple languages such as Canada with English and French.
 
 The below image show Adventure Works online channel configured with many different languages.  See the section [configure multiple languages on a site](configure-multiple-languages-on-a-site) below for more information.  
 
