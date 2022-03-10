@@ -71,12 +71,12 @@ If a site user selects any social media links within a site, the cookies in the 
 | Domain                      | Cookie               | Description                                                  | Source                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight tag                                |
-| .linkedin.com               | li_sugr                  | Browser identifier                                           | LinkedIn Insight tag if IP address is not in a designated country |
+| .linkedin.com               | li_sugr                  | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a designated country |
 | .linkedin.com               | BizographicsOptOut       | Determines opt-out status for third-party tracking.              | LinkedIn guest controls and industry opt-out pages           |
 | .linkedin.com               | \_guid                    | Browser identifier for Google Ads.                            | LinkedIn Feed                                                |
 | .linkedin.com               | li_oatml                 | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
 | Various first-party domains | li_fat_id                | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
-| .adsymptotic.com            | U                        | Browser identifier                                           | LinkedIn Insight tag if IP address is not in a Designated Country |
+| .adsymptotic.com            | U                        | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a Designated Country |
 | .linkedin.com                | bcookie                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Secure browser cookie                                        | Requests to LinkedIn                                         |
 | .linkedin.com               | lang                     | Sets default locale and language.                                 | Requests to LinkedIn                                         |
@@ -112,9 +112,9 @@ If a site user selects any social media links within a site, the cookies in the 
 | .pinterest.com              | Service Workers          |                                                              |  Pinterest                                                            |
 
 
-## Site user cookie consent on an e-Commerce site 
+## Site user cookie consent on an e-commerce site 
 
-If an e-Commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-Commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure that the consent is prompted for and received. Site user consent must be given before a feature or module using a non-essential cookie can be rendered on a site page.
+If an e-commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure the consent is prompted for and received. Site user consent must be given before a feature or module using a non-essential cookie can be rendered on a site page.
 
 ## Additional resources
 
