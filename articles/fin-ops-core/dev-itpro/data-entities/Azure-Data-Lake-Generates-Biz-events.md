@@ -81,8 +81,8 @@ To create a Business action using Microsoft Power Automate;
 7. Next we will add a new step, in this case to send an e-mail. You can choose to implement any step available in Power Automate. You can choose parameters such as Table Name when composing the e-mail message.
 8. Save the flow. When a table goes into error status, you should get an e-mail.
 
-
-
+## Any questions, feedback? 
+We are also actively working on this and other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the preview Yammer group. You can then attend weekly online "office hours" meetings and use the Yammer online forums to stay in touch and ask questions.
 
 
 
