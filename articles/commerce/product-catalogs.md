@@ -50,22 +50,22 @@ Commerce product catalogs allow you to define the following:
 
 Creating and processing a catalog is a four step process. The following diagram illustrates the catalog process flow:
 
-1. **Configure** 
-    1. Associate navigation hierarchy.
-    1. Determine time-effectiveness, set expiration date (if applicable) .
-    1. Add products & categorize them. 
-    1. Associate customer hierarchy (specific to your B2B organizations). 
-    1. Associate price groups.
-    1. Associate 'Default dimension attribute group for refiners like Size, Style, Color' thru attribute groups from top-ribbon. 
-    1. Set attribute metadata (choose which attributes are supposed to be viewable & refinable. By default, all viewable attributes are searchable as well).
+1. **Configuration** 
+    - Associate navigation hierarchy.
+    - Specify effective and expiration dates (if applicable).
+    - Add and categorize products. 
+    - Associate price groups.
+    - Associate customer hierarchy (specific to your B2B organizations). 
+    - Associate 'Default dimension attribute group for refiners like Size, Style, Color' through attribute groups from top-ribbon. 
+    - Set attribute metadata (choose which attributes are supposed to be viewable & refinable. By default, all viewable attributes are searchable as well).
  
   > [!NOTE]
   > - You cannot create a new price group from the catalogs form. Instead you must create the new price group from the **All price groups** form and then be able to associate in this view.
   > - You cannot create a new customer hierarchy from the catalogs form. Instead must create a new customer hierarchy from the **Customer hierarchies** form and then be able to associate in this view.
   
-1. **Validate** - General validation rules are like - 
-    - There are no uncategorized products 
-    - All items are assorted to each channel associated to catalog
+1. **Validation** - Run validation rules like: 
+    - There are no uncategorized products. 
+    - All items assorted to each channel are associated with a catalog.
 1. **Approval** 
 1. **Publishing**
 
@@ -75,29 +75,54 @@ Go to **Retail and Commerce \> Catalogs and assortments \> **All catalogs** to c
 
 ### Configure the catalog
 
-### Validate the catalog
+#### Associate navigation hierarchy
 
-### Approve the catalog
+When you create a new catalog, you must first link the catalog to one or more channels. Only items linked to your selected channel [assortments](/dynamics365/unified-operations/retail/assortments) can be used when creating the catalog. This is done in the **Commerce channels** FastTab on the **Catalog setup** form. Click **Add** and select one or more channels. 
 
-### Publish the catalog
+#### Specify time-effectiveness and expiration dates
 
-When you create a new catalog, you must first link the catalog to one or more channels. This is done in the **Commerce channels** FastTab on the **Catalog setup** form. Click **Add** and select one or more channels. Only items linked to your selected channel [assortments](/dynamics365/unified-operations/retail/assortments) can be used when creating the catalog.
+Click the top node of the catalog hierarchy to return to the main catalog header view. Configure effective and expiration dates as necessary on the **General** FastTab.
+
+#### Add and categorize products
 
 To add products to a catalog, a navigation hierarchy must be chosen. The navigation hierarchy will support the category structure for the catalog. You must pick from one of the navigation hierarchies linked to the channels selected on the **Commerce channels** FastTab of the **Catalog** page. If a navigation channel was not linked to a channel previously, go to **Retail and Commerce** \> **Channel setup** \> **Channel categories and product attributes** to link a navigation hierarchy default to each of your channels.
 
 On the **Catalogs** menu tab, on the **Catalog setup** page, click **Add products** to configure the products to add to the catalog, or select a node in the navigation hierarchy (selecting a node will change the screen presentation and allow you to add products directly to a category within the catalog).
 
-Click the top node of the catalog hierarchy to return to the main catalog header view. Configure effective and expiration dates as necessary on the **General** FastTab.
+#### Associate price groups
 
-Before the catalog is available to use, it must be published. Click **Validate catalog** on the **Catalogs** menu to process a validation. This is required action and will validate that the required setup is accurate. Click **View results** to see the details of the validation. If errors are found, you must correct the data and run validation again until the validation has passed.
-
-After validation is confirmed, click **Workflow** on the menu to start the approval workflow. Click **Submit** on the **Workflow** menu to execute the process. Configure the steps and authorized users for the workflow from **Retail and Commerce** \> **Headquarters setup** \> **Commerce workflows**. The workflow will define the steps needed to get the catalog into an **Approved** status. When the catalog is in an **Approved** status, you can click the **Publish** option on the **Catalogs** menu to complete the process. After the catalog is in a **Published** status, it can be used in call center order entry and send catalog processes. You can publish a catalog manually or by using a batch process. The effective date that you defined for the catalog determines when the products are available in the online store. The expiration date that you defined for the catalog determines when the products are removed from the online store.
+For more information on price groups, see [Price groups](price-management.md#price-groups).
 
 > [!NOTE]
+> - You cannot create a new price group from the catalogs form. Instead you must create the new price group from the **All price groups** form and then be able to associate in this view.
+> - You cannot create a new customer hierarchy from the catalogs form. Instead must create a new customer hierarchy from the **Customer hierarchies** form and then be able to associate in this view.
+
+#### Associate customer hierarchy
+
+
+#### Associate 'Default dimension attribute group for refiners like Size, Style, Color'
+
+
+#### Set attribute metadata
+
+
+
+### Validate the catalog
+
+Before the catalog is available to use, it must be validated and published. Click **Validate catalog** on the **Catalogs** menu to process a validation. This is required action and will validate that the required setup is accurate. Click **View results** to see the details of the validation. If errors are found, you must correct the data and run validation again until the validation has passed.
+
+### Approve the catalog
+
+After validation is confirmed, click **Workflow** on the menu to start the approval workflow. Click **Submit** on the **Workflow** menu to execute the process. Configure the steps and authorized users for the workflow from **Retail and Commerce** \> **Headquarters setup** \> **Commerce workflows**. The workflow will define the steps needed to get the catalog into an **Approved** status.
+
+### Publish the catalog
+
+When the catalog is in an **Approved** status, you can click the **Publish** option on the **Catalogs** menu to complete the process. After the catalog is in a **Published** status, it can be used in call center order entry and send catalog processes. You can publish a catalog manually or by using a batch process. The effective date that you defined for the catalog determines when the products are available in the online store. The expiration date that you defined for the catalog determines when the products are removed from the online store.
+ 
+> [!NOTE]
 > You can publish a catalog that contains products that have warnings, but those products won't appear in the online store.
+ 
 
-
-## FAQs for Commerce catalogs 
 
 
 
