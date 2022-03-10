@@ -56,7 +56,7 @@ Module CSS optimization is an opt-in feature that can be enabled by adding the *
 Each theme contains a **styles** folder where all of the theme CSS files reside. Module-specific styles must be included in a new **modules** directory within the styles folder.
 
 > [!NOTE]
-> For configuring right-to=left (RTL) styles, you can add all RTL-specific module styles to the **styles\/modules-rtl** directory.
+> When configuring right-to-left (RTL) styles, add all RTL-specific module styles to the **styles\/modules-rtl** directory.
  
 Each module that you want to enable CSS optimization on will require two files added to the **modules** directory: **\<MODULE_NAME\>.scss** and **\<MODULE_NAME\>.js**, where **\<MODULE_NAME\>** matches the name property within the module definition file (**\<MODULE_NAME\>.definition.json**). For example, for the header module the two files would be named **header.js** and **header.scss**.
  
