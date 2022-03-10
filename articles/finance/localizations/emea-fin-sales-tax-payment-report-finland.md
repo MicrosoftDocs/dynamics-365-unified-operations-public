@@ -33,6 +33,9 @@ This topic explains how to set up and generate the sales tax report for legal en
 
 For general information about how to set up the value-added tax (VAT) statement, see [VAT reporting for Europe](emea-vat-reporting.md).
 
+> [!NOTE]
+> Deprecated: By March 1, 2023, we plan to no longer support the Sales tax report for Finland (Finish report layout). New **VAT declaration TXT (FI**) and **VAT declaration Excel (FI)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. Sales tax report for Finland design based on reporting codes and Finish report layout are replaced with a new VAT declaration design, [VAT declaration for Finland](emea-fin-vat-declaration.md).
+
 ## Set up the report layout for sales tax authorities
 
 To generate the sales tax report in the correct format for the appropriate tax authority, you must set up the report layout for the sales tax authorities. On the **Sales tax authorities** page, select the sales tax authority that will be used in the sales tax codes for the sales tax settlement period. Then, in the **Report layout** field, select **Finnish report layout**.
