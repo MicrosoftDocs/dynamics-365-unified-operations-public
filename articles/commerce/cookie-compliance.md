@@ -4,7 +4,7 @@
 title: Cookie compliance
 description: This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/20222
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -63,7 +63,7 @@ The following table shows the current reference list of cookies placed by Dynami
 | \_msdyn365___aud_0                          | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
 | \_msdyn365___aud_1                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
 | \_msdyn365___aud_2                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
-| d365gi                                       | This cookie stores geographical location data when a third party geo-location service is utilized      | 1 day |
+| d365gi                                       | This cookie stores geographical location data when a third-party geolocation service is used.      | 1 day |
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 
