@@ -39,7 +39,7 @@ The scenarios covered in this topic include:
   * ie: a single brand site configured for Canada with unique site experiences for French Quebec region users and English region users.
 * Multiple channels (with single and/or multiple languages) with a single localized site experience.
   * ie: a single brand site configured for Australia and New Zealand, where both contries share the same site experience but each country is configured with different products, currency, prices, discounts, shipping modes, etc...
-* Multiple channels (with single and/or multiple languages) with different site experiences per country.
+* Multiple channels (with single and/or multiple languages) with different site experiences per channel.
   * ie: a single brand site configured for Australia, Canada and Germany, where each country has a unique site experience along with different products, currency, prices, discounts, shipping modes, etc...
 
 ## Online channels
@@ -74,20 +74,22 @@ The single online channel can then be mapped to a single e-commerce site within 
 
 ### Multi-language channel with a single localized site experience
 
-A channel supports being localized with additional languages which can be configured in headquarters.  Product names, descriptions and attributes can also be localized within headquarters.  The limitations of this scenario is that a single channel can only be configured with one currency and one legal entity, so it works best for scenarios like Counties with a single currency and multiple languages such as Canada with English and French.
+A channel supports additional languages allowing localization of product names, descriptions and attributes within headquarters.  Marketing data on the site can also be localized within site builder to provide a complete localized site experience.  
 
-The below image show Adventure Works online channel configured with many different languages.  See the section [configure multiple languages on a site](configure-multiple-languages-on-a-site) below for more information.  
+The limitations of this scenario is that a single channel can only be configured with one currency, one legal entity, one set of products and prices, etc... so it works best for scenarios like countries with a single currency and multiple languages such as Canada with English and French.
+
+The below image show the Adventure Works online channel configured with many different languages.  See the section [configure multiple languages on a site](configure-multiple-languages-on-a-site) below for more information.  
 
 ![Multiple languages configured on a single online channel](media/channel-mapping-9.png)
 
-The different languages can be configured with their own domain names such as www.adventure-works.ca for the English Canada version or www.adventure-works-fr.ca for the French Canada version or a single domain using different paths for such as www.adventure-works.ca for the English Canada version and www.adventure-works.ca/fr for the French Canada version.  The [geo detection](geo-detection-redirection.md) feature can also be enabled to automatically redirect to the correct site based on the region.
+The different languages can be configured with their own domain names such as www.adventure-works.ca for the English Canada version or www.adventure-works-fr.ca for the French Canada version or a single domain using different paths for such as www.adventure-works.ca for the English Canada version and www.adventure-works.ca/fr for the French Canada version.  [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect to the correct site based on the region.
 
-See [Managing site content with multiple channels and languages](#managing-site-content-with-multiple-channels-and-languages) below to learn how to customize localized pages and fragments.
+See [managing site content with multiple channels and languages](#managing-site-content-with-multiple-channels-and-languages) below to learn how to customize localized pages and fragments.
 
 
-### A multi-language channel with different site experiences per language.
+### Multi-language channel with different site experiences per language
 
-Similar to the scenario above, you may want to offer a completely different site experience for one language over the other.  The recommended way is to use the page variants on a single site as discussed in the previous scenario but if desired you can create a new e-commerce site in site builder and map it to the single online channel and language.  This would result in a single online channel being mapped to multiple e-commerce sites, one per language.
+Similar to the scenario above, you may want to offer a completely different site experience for one language over the other.  The recommended way is to use the page variants on a single site as discussed in the previous scenario but if desired you can create a new e-commerce site in site builder and map each to a single online channel and language.  This would result in a single online channel being mapped to multiple e-commerce sites, one per language.  This scenario would add extra management since you will now have multiple channels to independently manage within site builder.
 
 ### Multiple channels (with single and/or multiple languages) with a single localized site experience
 
@@ -105,7 +107,7 @@ Similar to the configuring multiple languages discussed in the previous scenario
 
 Alternatively a country/region picker module is available that can be used along with geo detection and redirection to ensure the correct default site is brought up for the customer based on their geo location.  For more information see the [County/region picker module](country-region-picker-module) topic.
 
-### Multiple channels (with single and/or multiple languages) with different site experiences per country.
+### Multiple channels (with single and/or multiple languages) with different site experiences per channel.
 
 Similar to the previous scenario, you may have multiple channels for a single brand in different regions and want different site experiences per region.  There are two options for this, one is to use page variants as was shown in the previous multi-language scenario where page variants are used for each online channel or different sites can be configured per online channel following the general details found in the above scenarios.
 
