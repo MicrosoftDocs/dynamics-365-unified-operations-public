@@ -60,14 +60,14 @@ You can also view the tax calculation data model and the available columns in th
 
 The tax calculation data model is integrated with Finance and Operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation service for calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
 
-## Version update and restriction
+## Version updates and restrictions
 - Free text invoice
-    - Supported since version 40.50.221 and Finance version 10.0.23
+    - Supported starting in version 40.50.221 and Finance version 10.0.23
 - General journals
-    - Supported since version 40.54.234 and Finance version 10.0.26
-    - Restriction: [One voucher](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/one-voucher#issues-with-one-voucher) and Payment fee are not supported.
+    - Supported starting in version 40.54.234 and Finance version 10.0.26
+    - Restriction: [One voucher](../general-ledger/one-voucher.md#issues-with-one-voucher) and Payment fee aren't supported.
 - Vendor invoice journal
-    - Supported since version 40.54.234 and Finance version 10.0.26
+    - Supported starting in version 40.54.234 and Finance version 10.0.26
 
 ## Field mapping
 Thirty-two data models can be included as fields on the header of a transaction. However, not all fields are applicable to all transaction types. The following table shows which header fields are available for specific transaction types. In some cases, the field mapping must be determined by predefined logic. Where applicable, the logic is provided.
