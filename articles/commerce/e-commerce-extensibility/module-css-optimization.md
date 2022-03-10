@@ -84,7 +84,7 @@ Webpack 5 is used to compile and build the module CSS chunks and only shows CSS 
 
 ## Best practices for configuring module CSS styles
  
-The following are best practices for configuring module CSS styles, using "module-A" and "module-B" to represent two different modules.
+The following best practices for configuring module CSS styles use "module-A" and "module-B" to represent two different modules.
  
 - Avoid importing module-A styles into module-B styles because it defeats the purpose of creating smaller CSS chunks. Instead, module-A styles should only have styles related to module-A and module-B styles should only have styles for module-B.
 - Avoid importing the **index.scss** file in the **\<MODULE_NAME\>.scss** file. Only import the **index.scss** file if all the styles imported from the file are used by the module.
