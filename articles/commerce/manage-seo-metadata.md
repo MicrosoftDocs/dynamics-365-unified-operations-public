@@ -4,7 +4,7 @@
 title: Manage SEO metadata
 description: This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/07/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -71,17 +71,17 @@ To modify page metadata, follow these steps.
 1. In the navigation pane on the left, select **Pages**.
 1. Select the home page to open it in the page editor.
 1. On the command bar, select **Edit**.
-1. At the top of the left page outline, select the gear icon and choose **Advanced outline view**.
+1. At the top of the left page outline, select the gear symbol and then select **Advanced outline view**.
 1. In the outline view, expand the the tree controls to show contents of the **HTML head** slot.
-1. Select the desired SEO module within the HTML head slot (examples: "Page summary", "Product page summary, "Category page summary", "Metatags", etc.).
-1. In the property pannel on the right, edit the desired SEO data for the chosen SEO module (examples: "Title", "Description", "Sharing image", etc.).
+1. Select the desired SEO module within the HTML head slot (for example, **Page summary**, **Product page summary**, **Category page summary**, or **Metatags**.).
+1. In the right-side properties pane, edit the desired SEO data for the chosen SEO module (for example, **Title**, **Description**, or **Sharing image**.).
 1. Select **Save**, and then select **Finish editing**.
 1. In the **Comments** field, enter **Updated SEO data**, and then select **OK**.
 1. Select **Preview** to preview your page. When you've finished, close the preview tab to return to the authoring tool.
 1. Select **Publish**.
 
 > [!TIP]
-> The **gear icon** at the top of the left **outline** control in the page editor allows switching between **Advanced outline view** and a **Basic outline view**.  The **Basic outline view** is the default setting and filters the outline to only display modules within the **Body** HTML slot for a page.  Selecting the **Advanced outline view** shows the entire page module, including **HTML head, Body begin, and Body end** slots.  This is useful when authors need to edit specific SEO or script module settings for a page.
+> The gear symbol at the top of the left outline control in the page editor allows authors to switch between **Basic outline view** and **Advanced outline view**. The **Basic outline view** is the default setting and filters the outline to only display modules within the **Body** HTML slot for a page. The **Advanced outline view** shows the entire page module, including **HTML head**, **Body begin**, and **Body end** slots, which is useful when authors need to edit specific SEO or script module settings for a page.
 
 ## Additional resources
 
