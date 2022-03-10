@@ -4,7 +4,7 @@
 title: VAT declaration (Germany)
 description: This topic describes how to set up and generate an advance value-added tax (VAT) declaration for Germany in the official XML format.
 author: anasyash
-ms.date: 11/22/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
@@ -160,6 +160,9 @@ Open the **Electronic reporting** workspace, and import the following versions o
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>Set up application-specific parameters for VAT declaration fields
 
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
+
+> [!NOTE]
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature isn't enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 Follow these steps to define which sales tax codes generate which boxes on the VAT declaration.
 
