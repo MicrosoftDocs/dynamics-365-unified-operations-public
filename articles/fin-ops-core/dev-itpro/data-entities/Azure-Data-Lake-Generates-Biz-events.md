@@ -81,8 +81,11 @@ To create a Business action using Microsoft Power Automate;
 4. Choose **Dynamics 365 Finance and Operations Export to Data lake** as Cataog and **Data Export** as Category
 5. Leave the **Table name** field as **none**. This parameter is not applicable for Export to Data lake service     
 6. You can choose to create an action when any of the Business events are fired. You can choose a Business event from the table above. Choose the Business event in the **Action name** field. In this case, we want an action performed when an **Error** happens in the service.
-8. Next we will add a new step, in this case to send an e-mail. You can choose to implement any step available in Power Automate. You can choose parameters such as Table Name when composing the e-mail message.
-9. Save the flow. When a table goes into error status, you should get an e-mail.
+
+[Create Business action](/articles/fin-ops-core/dev-itpro/data-entities/media/NewAutomatedCloudFlow.png)
+
+7. Next we will add a new step, in this case to send an e-mail. You can choose to implement any step available in Power Automate. You can choose parameters such as Table Name when composing the e-mail message.
+8. Save the flow. When a table goes into error status, you should get an e-mail.
 
 ## Any questions, feedback? 
 We are also actively working on this and other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can then attend weekly online "office hours" meetings and use the Yammer online forums to stay in touch and ask questions.
