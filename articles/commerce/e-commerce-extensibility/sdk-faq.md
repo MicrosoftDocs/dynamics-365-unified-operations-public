@@ -57,9 +57,9 @@ The default memory setting should be sufficient for most customization scenarios
 "build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
 ```
 
-### Why do I receive the error message "The e-commerce package has an outdated online SDK. Please create a new package and retry." during package upload, or the error message "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." during package deployment?
+### During package upload, I receive this error message: "The e-commerce package has an outdated online SDK. Please create a new package and retry." Or, during package deployment, I receive this error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
 
-To help decrease deployment time during package deployment, uploaded packages are prebuilt while running the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) using the latest online SDK. If the package upload fails and you receive one of these error messages, update to the latest SDK using the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command, which will ensure that the yarn.lock file is deleted before running yarn to pull down the latest online SDK. The package can then be rebuilt using the **yarn msdyn365 pack** command, followed by redeploying the new package.
+To help decrease deployment time during package deployment, uploaded packages are prebuilt while the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) is run by using the latest online SDK. If package upload fails, and you receive one of the error messages, update to the latest SDK by using the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command. In this way, you ensure that the yarn.lock file is deleted before you run yarn to pull down the latest online SDK. You can then rebuild the package by using the **yarn msdyn365 pack** command, and then redeploy the new package.
 
 ### Can I opt in to using Webpack 5 to bundle the Commerce application?
 
