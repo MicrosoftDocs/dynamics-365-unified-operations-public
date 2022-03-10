@@ -38,7 +38,7 @@ By default, a theme bundles all module CSS code into a single file named **\<THE
 To enable the module CSS optimization feature, the following prerequisites must be met.
 
 - Online SDK version 1.35.17 or later.
-- Webpack 5 is required for this feature to work. Upgrade your SDK code to Webpack 5 using the following **upgrade-webpack** CLI command: ```yarn msdyn365 upgrade-webpack```.
+- Webpack 5 is required for this feature to work. Upgrade your SDK code to Webpack 5 using the **upgrade-webpack** CLI command: ```yarn msdyn365 upgrade-webpack```.
 - If you are using the Fabrikam reference theme (Fabrikam-design-kit), module CSS support will be added to release 9.36 (Commerce version 10.0.26 release) and later.
  
 ## Enable module CSS optimization
@@ -60,9 +60,9 @@ Each theme contains a **styles** folder where all of the theme CSS files reside.
  
 Each module that you want to enable CSS optimization on will require two files added to the **modules** directory: **\<MODULE_NAME\>.scss** and **\<MODULE_NAME\>.js**, where **\<MODULE_NAME\>** matches the name property within the module definition file (**\<MODULE_NAME\>.definition.json**). For example, for the header module the two files would be named **header.js** and **header.scss**.
  
-The **\<MODULE_NAME\>.scss** file contains all styles needed for the individual module as shown in the below example:
+The **\<MODULE_NAME\>.scss** file contains all styles needed for the individual module, as shown in the following example for a header module.
 
-![styles](media/css-optimization-3.png)
+![Example of a header.scss file](media/css-optimization-3.png)
 
 The **\<MODULE_NAME\>**.js file is the entry file for creation of the module CSS chunks and contains a single line to import the CSS file, as shown in the following example.
 
@@ -80,7 +80,7 @@ $msv-font-path: ../../../../../msdyn365-assets/webfonts
 
 ## CSS compilation errors
 
-Webpack 5 is used to compile and build the module CSS chunks and only shows CSS compilation errors when building the project in production mode using the **yarn build:prod** CLI command. CSS compliation errors can be found in a generated **stats-client-build-errors.json** file at the root SDK level.
+Webpack 5 is used to compile and build the module CSS chunks and only shows CSS compilation errors when building the project in production mode using the **yarn build:prod** CLI command. CSS compilation errors can be found in a generated **stats-client-build-errors.json** file at the root SDK level.
 
 ## Best practices for configuring module CSS styles
  
