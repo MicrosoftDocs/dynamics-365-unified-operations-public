@@ -7,7 +7,7 @@ author: kailiang
 ms.date: 03/19/2021
 ms.topic: overview
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata

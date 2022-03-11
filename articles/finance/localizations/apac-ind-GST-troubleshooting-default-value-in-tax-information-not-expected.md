@@ -7,7 +7,7 @@ author: yungu
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+
 ms.technology: 
 
 # optional metadata
