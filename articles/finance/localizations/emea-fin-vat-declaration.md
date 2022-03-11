@@ -234,7 +234,7 @@ The following procedure applies to the electronic message processing example tha
 11. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file.
 12. Review the amounts in the Excel document, and then select **Generate report**.
 13. To generate a VAT declaration in TXT format, in the **Run processing** dialog box, select **FI VAT Generate report**, and then select **OK**.
-14. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic tas](#report-sales-tax-for-settlement-period) section earlier in this topic, and then select **OK**.
+14. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this topic, and then select **OK**.
 15. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, download the file, and use it for your submission to the tax authority.
 
 ## Run a VAT declaration for multiple legal entities
