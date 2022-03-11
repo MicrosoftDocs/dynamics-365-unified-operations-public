@@ -7,7 +7,7 @@ author: akviklis
 ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+
 ms.technology: 
 
 # optional metadata
