@@ -76,13 +76,13 @@ To create a Business action using Microsoft Power Automate;
 2. Select **My flows** in the **Power Automate** portal and select **New Flow**
 3. Choose **Automated Cloud flow** and choose **When an action is performed (preview)**
 
-[Create Automated Cloud Flow](/articles/fin-ops-core/dev-itpro/data-entities/media/NewAutomatedCloudFlow.png)
+![Create Automated Cloud Flow](/articles/fin-ops-core/dev-itpro/data-entities/media/NewAutomatedCloudFlow.png)
 
 4. Choose **Dynamics 365 Finance and Operations Export to Data lake** as Cataog and **Data Export** as Category
 5. Leave the **Table name** field as **none**. This parameter is not applicable for Export to Data lake service     
 6. You can choose to create an action when any of the Business events are fired. You can choose a Business event from the table above. Choose the Business event in the **Action name** field. In this case, we want an action performed when an **Error** happens in the service.
 
-[Create Business action](./media/WhenActionisPerformed.png)
+![Create Business action](./media/WhenActionisPerformed.png)
 
 7. Next we will add a new step, in this case to send an e-mail. You can choose to implement any step available in Power Automate. You can choose parameters such as Table Name when composing the e-mail message.
 8. Save the flow. When a table goes into error status, you should get an e-mail.
