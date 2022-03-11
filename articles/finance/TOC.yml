@@ -1528,6 +1528,10 @@
               items: 
               - name: VAT declaration
                 href: localizations/emea-aut-vat-declaration-austria.md
+            - name: Finland reporting 
+              items: 
+              - name: VAT declaration
+                href: localizations/emea-fin-vat-declaration-mult-tax-id
             - name: France reporting
               items: 
               - name: VAT declaration
@@ -1542,6 +1546,10 @@
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: Norway reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-nor-vat-declaration.md
             - name: Spain reporting
               items:
               - name: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
@@ -1560,10 +1568,6 @@
               items:
               - name: VAT declaration
                 href: localizations/emea-gbr-vat-declaration.md
-            - name: Norway reporting
-              items:
-              - name: VAT declaration
-                href: localizations/emea-nor-vat-declaration.md
           - name: Enable Tax Calculation for transfer order
             items: 
             - name: Tax feature support for transfer orders
