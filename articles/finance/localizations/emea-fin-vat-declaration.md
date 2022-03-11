@@ -32,11 +32,7 @@ ms.dyn365.ops.version:
 This topic describes how to set up and generate a value-added tax (VAT) declaration for Finland in the official TXT format. 
 It also describes how to preview the VAT declaration in Microsoft Excel.
 
-To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
-
-For Finland, you must configure **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up) section later in this topic.
-
-In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
+To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each type of the operations that are subject to reporting in VAT declaration of Finland. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result of **Report field lookup** lookup field. In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration field ID in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the field ID of the VAT declaration.
 
 ## VAT declaration overview
 
@@ -67,9 +63,11 @@ The VAT declaration for Finalnd contains the following fields to report amounts 
 
 For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
+For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up) section later in this topic.
+
 ## Configure system parameters
 
-To generate a VAT declaration, you must configure the tax number (field \"010\" - Asiakkaan y-tunnus tai henkilötunnus) of your organization.
+To generate a VAT declaration, you must configure the tax registration number of your organization (field \"010\" - Asiakkaan y-tunnus tai henkilötunnus).
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
@@ -105,7 +103,7 @@ To automatically generate a VAT declaration, associate sales tax codes in Financ
 > [!NOTE]
 > We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
-Follow these steps to define which sales tax codes in your Finance generate which boxes (filed ID) on the VAT declaration for Finland.
+Follow these steps to define which sales tax codes in your Finance generate which filed ID on the VAT declaration for Finland.
 
 1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
 2. Select the **VAT declaration TXT (FI)** configuration, and then select **Configurations \> Application specific parameters setup** on the Action pane.
@@ -180,31 +178,26 @@ For more information about how you can use the data management framework, see [D
 
    | Field                                 | Description                                                                                                                                                                                                                          |
    |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | From date | Select the start date of the reporting period.  |
    | Settlement period                     | Select the settlement period.                                                                                                                                                                                                        |
-   | Sales tax payment version             | Select one of the following values:</br>-**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</br>-**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</br>-**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.|
-   | From date                             | Select the start date of the reporting period.  |
-   | | |
-   | | |
-   | | |
-   | | |
-   | | |
+   | Sales tax payment version | Select one of the following values:</br>-**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</br>-**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</br>-**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.|
+   
+3. Select **OK** and in the next dialog page set the following fields.
 
+   | Field                                 | Description                                                                                                                                                                                                                          |
+   |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | VAT relief - sales amount | Specify the amount of sales that qualify for VAT relief |
+   | VAT relief - tax amount | Specify the amount of tax that qualifies for VAT relief |
+   | VAT relief - reason | Note: VAT relief cannot be requested at other times than for the final tax period of the accounting year, the final quarter of the calendar year, and the period when the VAT taxpayer’s obligation is ended. Select the following reason to VAT relief:</br>1 - requesting relief because this is the final tax period for the accounting year</br>2 - requesting relief because this is the final quarter of the calendar year</br>3 - requesting relief because my VAT obligation has ended during this tax period</br>0 - no relief requested (default value).|
+   | Accounting for VAT on cash basis | Select "Yes" in case of accounting for VAT on cash basis. |
+   | Correction reasons | Select one or many correction reasons if needed. |
+   | Contact person | Select the the contact person. |
+      
 3. Select **OK**, and review the Excel report.
 
-### Settle and post sales tax
-
-1. Go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
-2. Set the following fields.
-
-   | Field                     | Description                                    |
-   |---------------------------|------------------------------------------------|
-   | Settlement period         | Select the settlement period.                  |
-   | Sales tax payment version | Select one of the following values:</br>-   **Original** – Generate the original sales tax payment for the settlement period. </br> -   **Latest corrections** – Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.       |
-   | From date                 | Select the start date of the reporting period. |
-
-3. Select **OK**.
-
 ### Preview the VAT declaration in Excel from a sales tax payment
+
+Sales tax payment transaction results the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job procedure that settles sales tax balances on the sales tax accounts, and offsets them to the sales tax settlement account for a given period. When **Settle and post sales tax** job procedure is completed for an interval of the selas tax settlement period, you can generate of it a VAT declaration in Excel from **Sales tax payments** page.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and select a sales tax payment line.
 2. Select **Print report**, and then select **OK**.
@@ -212,4 +205,59 @@ For more information about how you can use the data management framework, see [D
 
    > [!NOTE]
    > The report is generated only for the selected line of the sales tax payment. If you must generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the [**Report sales tax for settlement period**](#report-sales-tax-for-settlement-period) periodic task.
-   > 
+
+## Generate electronic file for VAT declaration from electronic messages
+
+When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-a-vat-declaration-for-multiple-legal-entities) section later in this topic.
+
+The following procedure applies to the electronic message processing example that you [imported earlier from the LCS Shared asset library](#import-em).
+
+1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
+2. In the left pane, select **FI VAT declaration**.
+3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+4. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.
+5. On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier as a result of the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job procedureare added to the message.
+6. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
+7. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing.
+8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **FI VAT Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
+9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **FI VAT Preview report**, and then select **OK**.
+10. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic tas](#report-sales-tax-for-settlement-period) section earlier in this topic, and then select **OK**.
+11. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file.
+12. Review the amounts in the Excel document, and then select **Generate report**.
+13. To generate a VAT declaration in TXT format, in the **Run processing** dialog box, select **FI VAT Generate report**, and then select **OK**.
+14. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic tas](#report-sales-tax-for-settlement-period) section earlier in this topic, and then select **OK**.
+15. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, download the file, and use it for your submission to the tax authority.
+
+## Run a VAT declaration for multiple legal entities
+
+To use the formats to report the VAT declaration for a group of legal entities, you must first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
+
+### Set up electronic messages to collect tax data from several legal entities
+
+Follow these steps to set up electronic messages to collect data from multiple legal entities.
+
+1. Go to **Workspaces** \> **Feature management**.
+2. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
+3. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
+4. On the **Populate records action** page, select the line for **FI Populate VAT return records**.
+
+   In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
+
+5. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. For each new line, set the following fields.
+
+   | Field                  | Description                                                                                                                   |
+   |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+   | Name                   | Enter a value that will help you understand where this record comes from. For example, enter **VAT payment of Subsidiary 1**. |
+   | Message item type      | Select **VAT return**. This value is the only value that is available for all the records.                                    |
+   | Account type           | Select **All**.                                                                                                               |
+   | Master table name      | Specify **TaxReportVoucher** for all the records.                                                                             |
+   | Document number field  | Specify **Voucher** for all the records.                                                                                      |
+   | Document date field    | Specify **TransDate** for all the records.                                                                                    |
+   | Document account field | Specify **TaxPeriod** for all the records.                                                                                    |
+   | Company                | Select the ID of the legal entity.                                                                                            |
+   | User query             | This checkbox is automatically selected when you define criteria by selecting **Edit query**.                                 |
+
+6. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
+
+   When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all legal entities that you defined.
+
