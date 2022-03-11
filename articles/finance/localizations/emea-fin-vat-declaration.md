@@ -65,19 +65,6 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 
 For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up) section later in this topic.
 
-## Configure system parameters
-
-To generate a VAT declaration, you must configure the tax registration number of your organization (field \"010\" - Asiakkaan y-tunnus tai henkilötunnus).
-
-1. Go to **Organization administration** > **Organizations** > **Legal entities**.
-2. Select the legal entity, and then select **Registration IDs**.
-3. Select or create the address in Finland and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Finland and that uses the **VAT Id** registration category.
-5. In the **Registration number** field, enter the tax number.
-6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
-
-For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
-
 ## Set up a VAT declaration for Finland
 
 These tasks will prepare your Microsoft Dynamics 365 Finance environment to generate electronic file for VAT declaration for Finland and preview VAT amounts in Excel format.
@@ -86,6 +73,7 @@ These tasks will prepare your Microsoft Dynamics 365 Finance environment to gene
 - [Set up application-specific parameters for VAT declaration fields](#set-up)
 - [Set up the VAT reporting format for preview amounts in Excel](#setup-preview)
 - [Set up electronic messages](#setup-em)
+- [Set up the VAT registration number of the company that is reporting VAT](#vat-id)
 
 ### <a name="import-er"></a>Import ER configurations
 
@@ -168,6 +156,27 @@ For more information about how you can use the data management framework, see [D
 2. Select the line for **FI Populate VAT return records**, and then select **Edit query**.
 3. Use the filter to specify the settlement periods to include on the report.
 4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
+
+### <a id="vat-id"></a>Set up the VAT registration number of the company that is reporting VAT
+
+To generate a VAT declaration, you must configure the tax registration number of your organization (field \"010\" - Asiakkaan y-tunnus tai henkilötunnus).
+
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Select the legal entity, and then select **Registration IDs**.
+3. Select or create the address in Finland and then, on the **Registration ID** FastTab, select **Add**.
+4. In the **Registration type** field, select the registration type that is dedicated to Finland and that uses the **VAT ID** registration category.
+5. In the **Registration number** field, enter the tax number.
+6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+
+For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
+
+Follow these steps to define the VAT registration number that is used by **Electronic messaging** during generation of VAT declaration for Finland.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **FI VAT declaration** processing.
+2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in VAT declaration for Finland.
+3. Save your changes.
+
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **FI VAT declaration** processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. 
 
 ## Preview the VAT declaration in Excel
 
