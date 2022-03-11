@@ -64,3 +64,19 @@ The VAT declaration for Finalnd contains the following fields to report amounts 
 | 318 | Tax on purchases of construction services and scrap metal (reverse charge) | Vero rakentamispalvelun ja metalliromun ostoista | PurchasesReverseCharge</br>PurchasesReverseChargeUseTax – when *Use tax* option is used |
 | 319 | Sales of construction services and scrap metal (reverse charge) | Rakentamispalvelun ja metalliromun myynnit | SalesReverseCharge |
 | 320 | Purchases of construction services and scrap metal (reverse charge) | Rakentamispalvelun ja metalliromun ostot | PurchasesReverseCharge</br>PurchasesReverseChargeUseTax – when *Use tax* option is used |
+
+For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
+
+## Configure system parameters
+
+To generate a VAT declaration, you must configure the tax number (field \"010\" - Asiakkaan y-tunnus tai henkilötunnus) of your organization.
+
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Select the legal entity, and then select **Registration IDs**.
+3. Select or create the address in Spain and then, on the **Registration ID** FastTab, select **Add**.
+4. In the **Registration type** field, select the registration type that is dedicated to Spain and that uses the **VAT Id** registration category.
+5. In the **Registration number** field, enter the tax number.
+6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+
+For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
+
