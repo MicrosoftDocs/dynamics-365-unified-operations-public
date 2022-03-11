@@ -57,13 +57,13 @@ The following illustration shows the parameter setup for both options.
 > 
 > For a tax jurisdiction code, don't set both the **Deduct Cash Discount Before Tax Calculation** parameter and the **Calculate Cash Discount On Amount Including Tax** parameter to **Yes** on the **Tax calculation** page.
 
-To set up the cash discount calculation option on the **Tax calculation** page, create a tax jurisdiction code on the **Tax jurisdiction parameters** tab.
+To set up the cash discount calculation option in tax calculation feature seup, create a tax jurisdiction code on the **Tax jurisdiction parameters** tab under **Tax jurisdiction group**.
 
-![Tax jurisdiction parameters tab on the Tax calculation page.](media/TaxJurisdictionCashDisc_02.png)
+![Tax jurisdiction parameters tab on the Tax calculation page.](media/TaxJurisdictionCashDisc_02NewUI.png)
 
-Use the fields on the **Tax jurisdiction applicability** tab to define rules that determine when a cash discount calculation option should be applied. You can select header-level fields for the determination.
+Use the fields on the **Tax jurisdiction applicability** tab under **Tax jurisdiction group** to define rules that determine when a cash discount calculation option should be applied. You can select header-level fields for the determination.
 
-![Tax jurisdiction applicability tab on the Tax calculation page.](media/TaxJurisdictionCashDisc_03.png)
+![Tax jurisdiction applicability tab on the Tax calculation page.](media/TaxJurisdictionCashDisc_03NewUI.png)
 
 If no matching rule is found on the **Tax jurisdiction applicability** tab, the default parameters on the **General** tab are used.
 
