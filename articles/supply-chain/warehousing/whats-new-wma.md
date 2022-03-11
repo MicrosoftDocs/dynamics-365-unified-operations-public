@@ -19,6 +19,21 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.0.18.0
+
+This version introduces the following new features, fixes, and improvements:
+
+-	Improved the generic data inquiry flow.
+-	Improved the jittering issue on "Work list" and "Item inquiry" pages.
+-	Reduced battery consumption.
+-	Removed the limit on the number of fields for work cards.
+-	Adjusted the height of work cards so that all of them have the same size, regardless of the number of fields in each.
+-	Fixed an issue where space characters in barcodes would be trimmed out.
+-	Added the “Button style” setting, which lets you swap between slider view and button view on all types of devices.
+-	Fixed various issues that could cause the app to crash.
+-	Set focus automatically on the first textbox on custom pages.
+-	Accessibility improvements related to luminosity, contrast, narration, and missing placeholder texts.
+
 ## Version 2.0.17.0
 
 This version introduces the following new features, fixes, and improvements:
