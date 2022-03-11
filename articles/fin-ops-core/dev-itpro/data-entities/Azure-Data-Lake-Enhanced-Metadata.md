@@ -69,7 +69,7 @@ Dynamics 365 Finance and Operations has over 10,000 tables and over 2,500 entiti
 
 ![](media/9940d397169a3fce40c56ad2ea7e2954.png)
 
-Table folder taxonomy is 3 levels deep…
+Table folder structure is 3 levels deep…
 
 1.  **Application area (ex. Finance)** is a grouping of modules in Finance and
     Operations.
@@ -80,14 +80,16 @@ Table folder taxonomy is 3 levels deep…
 3.  **Table type (ex. Main)** is derived using existing **TableGroup** metadata
     property
 
+You can see the Application \> Module \> Table type hierarchy for tables that
+are part of Finance and Operations here: [overview of Tables - Common Data Model
+- Common Data Model \| Microsoft Docs](https://docs.microsoft.com/en-us/common-data-model/schema/core/operationscommon/tables/overview)
+
 > [!NOTE]
 >
 > When you enable the **Enhanced metadata (preview)** feature, Tables introduced by Systems integrators and partners (sometimes referred to as
-**Custom Tables**) will follow the same structure as long as the same metadata properties are added to tables in Finance and Operations.
+**Custom Tables**) will follow the same structure as long as the same metadata properties are added to tables in Finance and Operations. If you do not have the **Enhanced metadata (preview)** feature enabled, all **Custom tables** will be placed in the custom folder. 
 >
-> Table level module property is backed by an **extensible Enum** called **ModuleAxapta**, the enum contains pre-defined modules shipped by Microsoft. A
-partner can extend this enum by adding their own module definitions in addition to using the pre-defined modules defined by Microsoft. Depending on the module
-property defined at table level, custom tables will be placed in respective folders by the Export to Data lake feature.
+> Table level module property is backed by an **extensible Enum** called **ModuleAxapta**, the enum contains pre-defined modules shipped by Microsoft. You can extend this enum by adding your own module definitions in addition to using the pre-defined modules defined by Microsoft. Depending on the module property defined at table level, custom tables will be placed in respective folders by the Export to Data lake feature.
 >
 > Application area to module mapping is defined within Finance and Operations and can’t be modified at this point in time. If you define a new module property
 (that likely won’t be reflected in the Application to module mapping), Export to Data lake feature will place the table in an application area folder called
@@ -99,23 +101,17 @@ that may assume a certain location for data files and these applications may be 
 > 
 > If a custom table doesn’t have the module table metadata property defined, it will also be placed in the Custom folder.
 
-You can see the Application \> Module \> Table type hierarchy for tables that
-are part of Finance and Operations here: [overview of Tables - Common Data Model
-- Common Data Model \| Microsoft
-Docs](https://docs.microsoft.com/en-us/common-data-model/schema/core/operationscommon/tables/overview)
+
 
 ### Entity folder structure
 
-There are fewer entities compared to tables and Finance and Operations organizes
-Entity folder structure into 2 levels.
+There are fewer entities compared to tables and Finance and Operations organizes Entity folder structure into 2 levels.
 
 1.  **Application area (ex. Finance)** is a grouping of modules within Finance
     and Operations. The grouping is similar to tables
 
 2.  **Module (ex. General Ledger)** is derived using a entity level metadata
-    property **Module** in Finance and Operations. This metadata property
-    existed within entities in Finance and Operations and was already
-    pre-populated to enable categorization of Entities.
+    property **Module** in Finance and Operations. 
 
 Similar to the Module property added to tables, the **Module property** in
 Entities can be extended by systems integrators and partners building custom
