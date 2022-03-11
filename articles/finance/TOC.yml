@@ -2238,6 +2238,8 @@
           href: localizations/emea-fin-sales-tax-payment-report-finland.md
         - name: Finnish Intrastat
           href: localizations/emea-fin-intrastat.md
+        - name: VAT declaration
+          href: localizations/emea-fin-vat-declaration.md
       - name: France
         items:
         - name: France overview
