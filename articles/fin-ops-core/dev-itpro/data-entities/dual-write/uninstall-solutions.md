@@ -1,11 +1,11 @@
 ---
 title: Uninstall dual-write application orchestration solutions
-description: This topic describes the Party and global address book functionality of dual-write.
+description: This topic describes how to uninstall dual-write application orchestration solutions.
 author: RamaKrishnamoorthy
-ms.date: 01/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-21
@@ -13,36 +13,43 @@ ms.search.validFrom: 2022-01-21
 
 # Uninstall dual-write application orchestration solutions
 
-Few customers unintentionally install dual-write application orchestration package which installs mutliple solutions in their Dataverse environment. As a result, they run into undesired issues. Here is the sequence in which they should uninstall the solutions. 
+[!include [banner](../../includes/banner.md)]
 
-+ Dynamics365FinanceAndOperationsAnchor_managed
-+ msdyn_OneFSSCM_managed (if present)
-+ Dynamics365FinanceAndOperationsDualWriteEntityMaps_managed
-+ Dynamics365Notes_managed (Please raise a support ticket with Microsoft to un-install this solution.)
-+ DualWriteCore_managed
-+ Dynamics365AssetManagementApp_managed
-+ Dynamics365AssetManagement_managed
-+ Dynamics365SupplyChainExtended_managed
-+ Dynamics365FinanceExtended_managed
-+ HCMCommon_managed
-+ Dynamics365FinanceAndOperationsCommon_managed
-+ Dynamics365Company_managed
-+ CurrencyExchangeRates_managed
-+ msdyn_AssetCommon_managed
-+ FieldServiceCommon_managed
+This topic describes how to uninstall dual-write application orchestration solutions.
 
-If Party and global address book solutions were installed, then here is the uninstallation order
-+ Dynamics365FinanceAndOperationsAnchor
-+ Dynamics365FinanceAndOperationsDualWriteEntityMaps
-+ msdyn_DualWriteCore
-+ Dynamics365AssetManagementApp
-+ Dynamics365AssetManagement
-+ Dynamics365SupplyChainExtended
-+ Dynamics365FinanceExtended
-+ HCMCommon
-+ Dynamics365FinanceAndOperationsCommon
-+ Party
-+ Dynamics365Company_managed
-+ CurrencyExchangeRates
-+ msdyn_AssetCommon
-+ FieldServiceCommon
+Some customers unintentionally install the dual-write application orchestration package that installs mutliple solutions in their Microsoft Dataverse environment, which can cause unexpected and undesirable issues. 
+
+To resolve issues related to installing the dual-write application orchestration package, uninstall the unwanted dual-write solutions in the following order: 
+
+1. Dynamics365FinanceAndOperationsAnchor_managed
+1. msdyn_OneFSSCM_managed (if present)
+1. Dynamics365FinanceAndOperationsDualWriteEntityMaps_managed
+1. Dynamics365Notes_managed (Please raise a support ticket with Microsoft to un-install this solution.)
+1. DualWriteCore_managed
+1. Dynamics365AssetManagementApp_managed
+1. Dynamics365AssetManagement_managed
+1. Dynamics365SupplyChainExtended_managed
+1. Dynamics365FinanceExtended_managed
+1. HCMCommon_managed
+1. Dynamics365FinanceAndOperationsCommon_managed
+1. Dynamics365Company_managed
+1. CurrencyExchangeRates_managed
+1. msdyn_AssetCommon_managed
+1. FieldServiceCommon_managed
+
+If party and global address book solutions were installed, uninstall the solutions in the following order:
+
+1. Dynamics365FinanceAndOperationsAnchor
+1. Dynamics365FinanceAndOperationsDualWriteEntityMaps
+1. msdyn_DualWriteCore
+1. Dynamics365AssetManagementApp
+1. Dynamics365AssetManagement
+1. Dynamics365SupplyChainExtended
+1. Dynamics365FinanceExtended
+1. HCMCommon
+1. Dynamics365FinanceAndOperationsCommon
+1. Party
+1. Dynamics365Company_managed
+1. CurrencyExchangeRates
+1. msdyn_AssetCommon
+1. FieldServiceCommon
