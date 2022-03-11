@@ -133,13 +133,12 @@ Entity. Export to Data lake feature is designed to minimize the downstream impac
 >
 > There are built-in governance processes and developer tools within Finance and Operations where such changes and the resulting impact is highlighted to the developer. However, your users consuming data in the lake, say, by authoring and running a PowerBI report, may not be aware of changes in Finance and Operations.
 
-
-## when a new field is added
-
 When a new field is added to a table, metadata files in the lake are updated to reflect the change. All the records in the CSV files with newly added data contains the new field. If a CSV file is not modified or no new rows are added, the file does not contain the newly added field. This behavior is adopted to minimize the data writes to the lake. Most data pipeline tools, especially the ones that understand the CDM standard, are able to support a feature known as "Schema drift" that can adapt to changes. 
 
 The system may repopulate the entire table folder (all the CSV files) in case the data structure change is destructive. For an example, in case a field is removed from a table in a Finance and Operations app, a rare but more destructive scenario, the entire table folder is repopulated along with the updated metadata. Desctrucive changes may require changes to downstream reports especially if the report is expecting the removed data field.  
 
+## Any questions, feedback? 
+We are actively working on this and other features. Do you want to stay in touch and ask questions of the product team or your fellow customers or partners? Do you want to provide feedback directly to the product team? If you do, you can join the [Preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can then attend weekly online "office hours" meetings and use the Yammer online forums to stay in touch and ask questions.
 
 
 
