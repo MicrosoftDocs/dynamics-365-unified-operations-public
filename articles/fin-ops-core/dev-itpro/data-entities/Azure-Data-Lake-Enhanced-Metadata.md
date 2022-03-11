@@ -63,11 +63,7 @@ When you enable Enhanced metadata (preview) option, system writes additional met
 3. You need to choose the **Republish metadata** option in Export to Data lake form, Manage options. in Finance and Operations for the first time. You need to perform this operation only once. The system will continue to republish metadata as changes happen. In Release 10.0.23 (PU47) and later, the system auto triggers this option when you open the form for the first time.
 
 ## Folder structure in Data lake
-Dynamics 365 Finance and Operations has over 10,000 tables and over 2,500 entities (the
-number including extensions and customizations far exceeds this). Tables and
-Entities are organized within Finance and Operations into modules representing
-application areas. This organization is reflected in the Data lake in a folder
-structure that is organized into application areas.
+Dynamics 365 Finance and Operations has over 10,000 tables and over 2,500 entities (the number including extensions and customizations far exceeds this). To enable securing data in the lake in a granular way, Tables and Entities are organized within Finance and Operations into modules representing application areas. This organization is reflected in the Data lake in a folder structure that mimics organization of application areas in Dynamics 365.
 
 ### Table folder structure
 
@@ -79,42 +75,29 @@ Table folder taxonomy is 3 levels deep…
     Operations.
 
 2.  **Module (ex. General Ledger)** is derived using a table level metadata
-    property **Module** in Finance and Operations. This metadata property was
-    introduced into Finance and Operations in version 10.0.10 (PU34) and all
-    tables shipped by Microsoft were categorized and the property was
-    pre-populated by respective Microsoft application teams as of version
-    10.0.12
-
+    property **Module** in Finance and Operations. 
+    
 3.  **Table type (ex. Main)** is derived using existing **TableGroup** metadata
     property
 
-
-Tables introduced by Systems integrators and partners (sometimes referred to as
-**Custom Tables**) will follow the same structure as long as the same metadata
-properties are added to tables in Finance and Operations.
-
-Table level module property is backed by an **extensible Enum** called
-**ModuleAxapta**, the enum contains pre-defined modules shipped by Microsoft. A
-partner can extend this enum by adding their own module definitions in addition
-to using the pre-defined modules defined by Microsoft. Depending on the module
-property defined at table level, custom tables will be placed in respective
-folders by the Export to Data lake feature.
-
-Application area to module mapping is defined within Finance and Operations and
-can’t be modified at this point in time. If you define a new module property
-(that likely won’t be reflected in the Application to module mapping), Export to
-Data lake feature will place the table in an application area folder called
+> [!NOTE]
+>
+> When you enable the **Enhanced metadata (preview)** feature, Tables introduced by Systems integrators and partners (sometimes referred to as
+**Custom Tables**) will follow the same structure as long as the same metadata properties are added to tables in Finance and Operations.
+>
+> Table level module property is backed by an **extensible Enum** called **ModuleAxapta**, the enum contains pre-defined modules shipped by Microsoft. A
+partner can extend this enum by adding their own module definitions in addition to using the pre-defined modules defined by Microsoft. Depending on the module
+property defined at table level, custom tables will be placed in respective folders by the Export to Data lake feature.
+>
+> Application area to module mapping is defined within Finance and Operations and can’t be modified at this point in time. If you define a new module property
+(that likely won’t be reflected in the Application to module mapping), Export to Data lake feature will place the table in an application area folder called
 **Custom**.
-
-Module property in tables shipped by Microsoft can’t be modified by a Systems
-integrator or a partner. While you can modify the Module property in custom
-tables as you wish, frequent changes must be avoided. The module property will
-change resulting location of the table in the data lake. Consuming applications
-that may assume a certain location for data files and these applications may be
-impacted each time you make a change in the module property.
-
-If a custom table doesn’t have the module table metadata property defined, it
-will also be placed in the Custom folder.
+>
+> Module property in tables shipped by Microsoft can’t be modified by a Systems integrator or a partner. While you can modify the Module property in custom
+tables as you wish, frequent changes must be avoided. The module property will change resulting location of the table in the data lake. Consuming applications
+that may assume a certain location for data files and these applications may be impacted each time you make a change in the module property.
+> 
+> If a custom table doesn’t have the module table metadata property defined, it will also be placed in the Custom folder.
 
 You can see the Application \> Module \> Table type hierarchy for tables that
 are part of Finance and Operations here: [overview of Tables - Common Data Model
