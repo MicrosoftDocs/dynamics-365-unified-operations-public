@@ -390,7 +390,7 @@
           href: tasks/worker.md
         - name: Modern Point of Sale (MPOS), Cloud POS, and Store Commerce 
           items:
-          - name: Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)
+          - name: Store Commerce app
             href: dev-itpro/store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
