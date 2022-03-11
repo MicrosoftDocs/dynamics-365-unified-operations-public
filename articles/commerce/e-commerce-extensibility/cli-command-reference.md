@@ -4,7 +4,7 @@
 title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/09/2022
+ms.date: 03/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
