@@ -38,7 +38,7 @@ To automatically generate the report, first create enough sales tax codes to kee
 
 The VAT declaration for Finalnd contains the following fields to report amounts related to VAT.
 
-| **Field ID (Tunnus)** | **Description (English)** | **Description (Finish)** | **Lookup result** |
+| **Field ID (Tunnus)** | **Description (English)** | **Description (Finnish)** | **Lookup result** |
 | --- | --- | --- | --- |
 | 301 | Tax on domestic sales at standard tax rate | Kotimaan verollinen myynti yleisellä verokannalla | DomesticSalesStandardRate |
 | 302 | Tax on domestic sales at higher reduced tax rate | Kotimaan verollinen myynti suuremman alennetun verokannan mukaan | DomesticSalesHigherReducedRate |
