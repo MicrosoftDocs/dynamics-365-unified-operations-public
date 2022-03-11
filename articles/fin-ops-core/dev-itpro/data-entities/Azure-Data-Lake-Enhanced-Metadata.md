@@ -26,11 +26,11 @@ When data in Finance and Operations apps gets updated, corresponding data rows i
 
 Data files do not contain field headers or any other information. You will need to read metadata to understand the structure of the files. 
 
-## What is metadata stored in the Data lake?
+## How is metadata stored in the Data lake?
 
 Metadata describes the names, data type, size and nature of data. Along with Data files in the lake, you will notice metadata files at a folder level corresponding to data files. Metadata in the lake is written using a machine readable format described by the [Common Data Model standard (CDM)](https://docs.microsoft.com/common-data-model/sdk/overview). When you install Export to Data lake feature and choose data to be added to Data lake, system writes metadata files in addition to data. 
 
-Tools from Microsoft and others that understand CDM metadata format make it easy to work with data in the lake. Using Azure Synapse Analytics serverless SQL pools, you can consume data in the lake using Transact-SQL language (T-SQL). T-SQL language is widely supported by many tools. You can define a Synapse workspace over the data in the lake and use T-SQL, Spark, or Synapse Pipelines as if you are consuming data from a database. To create a Synapse workspace over your data in the lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). This solution creates external table definitions in Azure Synapse Analytics serverless SQL pools.
+Tools from Microsoft and others that understand CDM metadata format make it easy to work with data in the lake. Using Azure Synapse Analytics serverless SQL pools, you can consume data in the lake using Transact-SQL language (T-SQL). T-SQL language is widely supported by many tools. You can define a Synapse workspace over the data in the lake and use T-SQL, Spark, or Synapse Pipelines as if you are consuming data from a database. To create a Synapse workspace over your data in the lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). This solution creates external table definitions in Azure Synapse Analytics serverless SQL pools using metadata in the lake.
 
 If you choose the "Enhanced metadata (preview)" option when installing Export to Data Lake, the system adds even more metadata.
 
@@ -61,6 +61,83 @@ When you enable Enhanced metadata (preview) option, system writes additional met
 2. Your administrator needs to choose the **Enable enhanced metadata (preview)** option when installing the Export to Data lake add-in. You can't enable Enhanced metadata feature without choosing this option at the installation stage. 
 
 3. You need to choose the **Republish metadata** option in Export to Data lake form, Manage options. in Finance and Operations for the first time. You need to perform this operation only once. The system will continue to republish metadata as changes happen. In Release 10.0.23 (PU47) and later, the system auto triggers this option when you open the form for the first time.
+
+## Folder structure in Data lake
+Dynamics 365 Finance and Operations has over 10,000 tables and over 2,500 entities (the
+number including extensions and customizations far exceeds this). Tables and
+Entities are organized within Finance and Operations into modules representing
+application areas. This organization is reflected in the Data lake in a folder
+structure that is organized into application areas.
+
+### Table folder structure
+
+![](media/9940d397169a3fce40c56ad2ea7e2954.png)
+
+Table folder taxonomy is 3 levels deep…
+
+1.  **Application area (ex. Finance)** is a grouping of modules in Finance and
+    Operations.
+
+2.  **Module (ex. General Ledger)** is derived using a table level metadata
+    property **Module** in Finance and Operations. This metadata property was
+    introduced into Finance and Operations in version 10.0.10 (PU34) and all
+    tables shipped by Microsoft were categorized and the property was
+    pre-populated by respective Microsoft application teams as of version
+    10.0.12
+
+3.  **Table type (ex. Main)** is derived using existing **TableGroup** metadata
+    property
+
+
+Tables introduced by Systems integrators and partners (sometimes referred to as
+**Custom Tables**) will follow the same structure as long as the same metadata
+properties are added to tables in Finance and Operations.
+
+Table level module property is backed by an **extensible Enum** called
+**ModuleAxapta**, the enum contains pre-defined modules shipped by Microsoft. A
+partner can extend this enum by adding their own module definitions in addition
+to using the pre-defined modules defined by Microsoft. Depending on the module
+property defined at table level, custom tables will be placed in respective
+folders by the Export to Data lake feature.
+
+Application area to module mapping is defined within Finance and Operations and
+can’t be modified at this point in time. If you define a new module property
+(that likely won’t be reflected in the Application to module mapping), Export to
+Data lake feature will place the table in an application area folder called
+**Custom**.
+
+Module property in tables shipped by Microsoft can’t be modified by a Systems
+integrator or a partner. While you can modify the Module property in custom
+tables as you wish, frequent changes must be avoided. The module property will
+change resulting location of the table in the data lake. Consuming applications
+that may assume a certain location for data files and these applications may be
+impacted each time you make a change in the module property.
+
+If a custom table doesn’t have the module table metadata property defined, it
+will also be placed in the Custom folder.
+
+You can see the Application \> Module \> Table type hierarchy for tables that
+are part of Finance and Operations here: [overview of Tables - Common Data Model
+- Common Data Model \| Microsoft
+Docs](https://docs.microsoft.com/en-us/common-data-model/schema/core/operationscommon/tables/overview)
+
+### Entity folder structure
+
+There are fewer entities compared to tables and Finance and Operations organizes
+Entity folder structure into 2 levels.
+
+1.  **Application area (ex. Finance)** is a grouping of modules within Finance
+    and Operations. The grouping is similar to tables
+
+2.  **Module (ex. General Ledger)** is derived using a entity level metadata
+    property **Module** in Finance and Operations. This metadata property
+    existed within entities in Finance and Operations and was already
+    pre-populated to enable categorization of Entities.
+
+Similar to the Module property added to tables, the **Module property** in
+Entities can be extended by systems integrators and partners building custom
+Entities. Module property in entities is also backed by the same **extensible
+Enum, ModuleAxapta**.
 
 
 ## Changes to metadata
