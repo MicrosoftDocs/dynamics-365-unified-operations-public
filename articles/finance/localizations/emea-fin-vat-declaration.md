@@ -82,7 +82,7 @@ For more information about how to set up registration categories and registratio
 
 ## Set up a VAT declaration for Finland
 
-These tasks will prepare your Microsoft Dynamics 365 Finance environment to generate electronic file for VAT declaration of Finland and preview VAT amounts in Excel format.
+These tasks will prepare your Microsoft Dynamics 365 Finance environment to generate electronic file for VAT declaration for Finland and preview VAT amounts in Excel format.
 
 - [Import ER configurations](#import-er)
 - [Set up application-specific parameters for VAT declaration fields](#set-up)
@@ -108,7 +108,7 @@ To automatically generate a VAT declaration, associate sales tax codes in Financ
 Follow these steps to define which sales tax codes in your Finance generate which boxes (filed ID) on the VAT declaration for Finland.
 
 1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT declaration TXT (FI)** configuration, and then select **Configurations \> Application specific parameters setup**.
+2. Select the **VAT declaration TXT (FI)** configuration, and then select **Configurations \> Application specific parameters setup** on the Action pane.
 3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
 4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
 
@@ -130,15 +130,82 @@ Follow these steps to define which sales tax codes in your Finance generate whic
 ### <a name="setup-preview"></a>Set up the VAT reporting format for preview amounts in Excel
 
 1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
-2. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
+2. On the **Tax authorities** page (**Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**), select the tax authority, and then, in the **Report layout** field, select **Default**.
 3. Go to **General ledger** > **Setup** > **General ledger parameters**.
 4. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (FI)** ER format.
 
    This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 
-If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md),
+If you're configuring the VAT declaration for Finland in a legal entity that has [multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md),
 follow these steps.
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **FIN**, select the **VAT Declaration Excel (FI)** ER format.
 
+### <a name="setup-em"></a>Set up electronic messages
+
+#### Download and import the data package that has example settings for electronic messages
+
+The process of setting up the [Electronic messages](../general-ledger/electronic-messaging.md) (EM) functionality to generate the VAT declaration in TXT format and preview it in Excel has many steps. Because the names of some entities are used in the ER configurations, use a set of predefined values that are delivered in a package of data entities for the related tables. You can extend these settings or create your own.
+
+> [!NOTE]
+> Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
+
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **FI VAT declaration EM package**. The downloaded file is named **FI VAT declaration EM package.zip**.
+2. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
+3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
+4. On the **Selected entities** FastTab, select **Add file**.
+5. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
+6. Select **Close**.
+7. After the data entities are uploaded, on the Action Pane, select **Import**.
+8. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported (**FI VAT declaration**).
+
+#### Configure electronic messages
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
+2. Select the line for **FI Populate VAT return records**, and then select **Edit query**.
+3. Use the filter to specify the settlement periods to include on the report.
+4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
+
+## Preview the VAT declaration in Excel
+
+### <a name="report-sales-tax-for-settlement-period"></a>Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
+
+1. Go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
+2. Set the following fields.
+
+   | Field                                 | Description                                                                                                                                                                                                                          |
+   |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | Settlement period                     | Select the settlement period.                                                                                                                                                                                                        |
+   | Sales tax payment version             | Select one of the following values:</br>-**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</br>-**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</br>-**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.|
+   | From date                             | Select the start date of the reporting period.                                                                                                                                                                                       |
+   | Previous period amounts to compensate | Enter the amount that should be exported to box 110, "Amounts to be compensated pending from previous periods."                                                                                                                      |
+   | Previous period amounts to offset     | Enter the amount that should be exported to box 78, "Amounts to be offset from previous periods applied in this period."                                                                                                             |
+   | Common territory                      | Enter the amount of the percentage volume of operations in the common territory that should be exported to box 65. This percentage is used to calculate the amount in box 66, "Tax amount attributable to the State Administration." |
+   | Simplified regime result              | Enter the amount that should be exported to box 58.                                                                                                                                                                                  |
+   | To deduct supplementary declaration   | Enter the amount that should be exported to box 70, "To deduct (Exclusively in the case of supplementary self-assessment. Result of the previous statements.)."                                                                      |
+
+3. Select **OK**, and review the Excel report.
+
+### Settle and post sales tax
+
+1. Go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
+2. Set the following fields.
+
+   | Field                     | Description                                    |
+   |---------------------------|------------------------------------------------|
+   | Settlement period         | Select the settlement period.                  |
+   | Sales tax payment version | Select one of the following values:</br>-   **Original** – Generate the original sales tax payment for the settlement period. </br> -   **Latest corrections** – Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.       |
+   | From date                 | Select the start date of the reporting period. |
+
+3. Select **OK**.
+
+### Preview the VAT declaration in Excel from a sales tax payment
+
+1. Go to **Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**, and select a sales tax payment line.
+2. Select **Print report**, and then select **OK**.
+3. Review the Excel file that is generated for the selected sales tax payment line.
+
+   > [!NOTE]
+   > The report is generated only for the selected line of the sales tax payment. If you must generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the [**Report sales tax for settlement period**](#report-sales-tax-for-settlement-period) periodic task.
+   > 
