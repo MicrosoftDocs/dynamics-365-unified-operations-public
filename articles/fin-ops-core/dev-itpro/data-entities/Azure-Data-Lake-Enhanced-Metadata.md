@@ -66,9 +66,6 @@ When you enable Enhanced metadata (preview) option, system writes additional met
 Dynamics 365 Finance and Operations has over 10,000 tables and over 2,500 entities (the number including extensions and customizations far exceeds this). To enable securing data in the lake in a granular way, Tables and Entities are organized within Finance and Operations into modules representing application areas. This organization is reflected in the Data lake in a folder structure that mimics organization of application areas in Dynamics 365.
 
 ### Table folder structure
-
-![](media/9940d397169a3fce40c56ad2ea7e2954.png)
-
 Table folder structure is 3 levels deep…
 
 1.  **Application area (ex. Finance)** is a grouping of modules in Finance and
@@ -120,14 +117,26 @@ Enum, ModuleAxapta**.
 
 
 ## Changes to metadata
-When the data structures change in Finance and Operations apps, for an example, when a new field is added to a table, metadata files in the lake are updated to reflect the change. The system may also repopulate the entire table folder (all the CSV files) in case the data structure change is destructive. For an example, in case a field is removed from a table in a Finance and Operations app, a rare but more destructive scenario, the entire table folder is repopulated. Whereas when a new field is added, all the data files are not repopulated. Only the data files that contain changed rows are updated to include the new field. Because many consuming tools can work with newly added data fields (a feature called *schema drift*) the system does not repopulate the entire folder. 
+Metadata in Finance and Operations can change with new software updates. A
+developer may add a new field to an existing table or an Entity. In some less
+frequent cases, they may remove a field from a table or perhaps change the data
+type of an existing field.
 
-
-
+When a table or Entity structure changes, consuming applications may need to
+change. This is especially the case when a field is removed from a table or an
+Entity. Export to Data lake feature is designed to minimize the downstream impact while reflecting metadata changes in the lake. Let’s understand how metadata changes
+are reflected in the Data lake.
 
 > [!NOTE]
-> Preview features aren't complete. However, they are made available on a preview basis, so that customers can get early access and provide feedback. Preview features might have limited or restricted functionality, they aren't meant for production use, and they might be available only in selected geographic areas.
 >
-> By enabling preview features, you agree to the [Supplemental Terms of Use](../../fin-ops/get-started/public-preview-terms.md).
+> There are built-in governance processes and developer tools within Finance and Operations where such changes and the resulting impact is highlighted to the developer. However, when your users are consuming data in the lake, say, by authoring and running a PowerBI report, governance mechanisms and tools built into Finance and Operations have little impact.
+
+## when a new field is added
+
+When a new field is added to a table, metadata files in the lake are updated to reflect the change. All the records in the CSV files with newly added data contains the new field. If a CSV file is not modified or now new rows are added, the file does not contain the newly added field. 
+
+The system may also repopulate the entire table folder (all the CSV files) in case the data structure change is destructive. For an example, in case a field is removed from a table in a Finance and Operations app, a rare but more destructive scenario, the entire table folder is repopulated. Whereas when a new field is added, all the data files are not repopulated. Only the data files that contain changed rows are updated to include the new field. Because many consuming tools can work with newly added data fields (a feature called *schema drift*) the system does not repopulate the entire folder. 
+
+
 
 
