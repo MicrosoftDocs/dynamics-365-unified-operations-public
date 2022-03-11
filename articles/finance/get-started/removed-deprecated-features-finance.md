@@ -51,7 +51,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By March 1, 2023, we plan to no longer support the Sales tax report for Finland (Finish report layout). New **VAT declaration TXT (FI**) and **VAT declaration Excel (FI)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
+| **Status**                         | Deprecated: By March 1, 2023, we plan to no longer support the Sales tax report for Finland (Finnish report layout). New **VAT declaration TXT (FI**) and **VAT declaration Excel (FI)** Electronic reporting (ER) formats are introduced under the **Tax declaration** model. |
 
 ## Features removed or deprecated in the Finance 10.0.24 release
 
