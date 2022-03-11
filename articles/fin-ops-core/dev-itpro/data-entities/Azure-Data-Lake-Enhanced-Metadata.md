@@ -24,11 +24,15 @@ Data in the lake is stored as CSV files in a folder structure maintained by the 
 
 When data in Finance and Operations apps gets updated, corresponding data rows in CSV files in the table folders are updated. When a new row is added to a table in Finance and Operations apps, or an existing row is deleted, new rows are added or deleted from corresponding CSV files. Number of CSV files in the lake depends on size of data rows. System makes an effort to keep each CSV file around 200MB in size to optimize write and read operations. In case data size in a CSV file exceeds 200MB, system may split the data into multiple files.   
 
+Data files do not contain field headers or any other information. You will need to read metadata to understand the structure of the files. 
 
-## What is metadata and how are they stored in the Data lake?
+## What is metadata stored in the Data lake?
 
-Metadata describes the names, data type, size and nature of data. Along with Data files in the lake, you will notice metadata files at a folder level. Metadata in the lake is written using a machine readable format described by the [Common Data Model standard](https://docs.microsoft.com/common-data-model/sdk/overview). When you install Export to Data lake feature and choose data to be added to Data lake, system writes metadata files in addition to data. If you choose the "Enhanced metadata (preview)" option when installing Export to Data Lake, the system adds even more metadata.
+Metadata describes the names, data type, size and nature of data. Along with Data files in the lake, you will notice metadata files at a folder level corresponding to data files. Metadata in the lake is written using a machine readable format described by the [Common Data Model standard (CDM)](https://docs.microsoft.com/common-data-model/sdk/overview). When you install Export to Data lake feature and choose data to be added to Data lake, system writes metadata files in addition to data. 
 
+Tools from Microsoft and others that understand CDM metadata format make it easy to work with data in the lake. Using Azure Synapse Analytics serverless SQL pools, you can consume data in the lake using Transact-SQL language (T-SQL). T-SQL language is widely supported by many tools. You can define a Synapse workspace over the data in the lake and use T-SQL, Spark, or Synapse Pipelines as if you are consuming data from a database. To create a Synapse workspace over your data in the lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution). This solution creates external table definitions in Azure Synapse Analytics serverless SQL pools.
+
+If you choose the "Enhanced metadata (preview)" option when installing Export to Data Lake, the system adds even more metadata.
 
 > [!NOTE]
 > Preview features aren't complete. However, they are made available on a preview basis, so that customers can get early access and provide feedback. Preview features might have limited or restricted functionality, they aren't meant for production use, and they might be available only in selected geographic areas.
@@ -54,6 +58,9 @@ When you enable Enhanced metadata (preview) option, system writes additional met
 - Release 10.0.24 (PU48) with latest updates (10.0.1084.89 or higher)
 - Release 10.0.25 (PU49) and later
 
+2. Your administrator needs to choose the **Enable enhanced metadata (preview)** option when installing the Export to Data lake add-in. You can't enable Enhanced metadata feature without choosing this option at the installation stage. 
+
+3. You need to choose the **Republish metadata** option in Export to Data lake form, Manage options. in Finance and Operations for the first time. You need to perform this operation only once. The system will continue to republish metadata as changes happen. In Release 10.0.23 (PU47) and later, the system auto triggers this option when you open the form for the first time.
 
 
 ## Changes to metadata
