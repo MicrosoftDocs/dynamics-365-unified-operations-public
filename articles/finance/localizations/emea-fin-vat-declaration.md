@@ -223,12 +223,12 @@ The following procedure applies to the electronic message processing example tha
 
 1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
 2. In the left pane, select **FI VAT declaration**.
-3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+3. On the **Messages** FastTab, select **New**. In the **Run processing** dialog box, **FI VAT Create message** action is predefined, select **OK**.
 4. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.
-5. On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier as a result of the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job procedureare added to the message.
+5. On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier as a result of the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job procedureare are added to the message.
 6. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
 7. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing.
-8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **FI VAT Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
+8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **FI VAT Ready to generate**, and then select **OK**. Verify that the message status is changed to **FI VAT Ready to generate VAT return**.
 9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **FI VAT Preview report**, and then select **OK**.
 10. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic tas](#report-sales-tax-for-settlement-period) section earlier in this topic, and then select **OK**.
 11. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file.
