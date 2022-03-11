@@ -2,10 +2,10 @@
 title: Upgrade to the party and global address book model
 description: This topic describes how to upgrade dual-write data to the party and global address book model.
 author: RamaKrishnamoorthy
-ms.date: 03/31/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
@@ -146,13 +146,19 @@ This section describes the setup that is required before you run the Party posta
 
 ## Run the templates
 
-1. Stop the following **Account**, **Contact**, and **Vendor** dual-write maps that use the Finance and Operations app:
+1. Stop the following **Party**, **Account**, **Contact**, and **Vendor** dual-write maps that use finance and operations apps:
 
+    + CDS Parties (msdyn_parties) 
     + Customers V3(accounts)
     + Customers V3(contacts)
     + CDS Contacts V2(contacts)
     + CDS Contacts V2(contacts)
     + Vendor V2 (msdyn_vendor)
+    + Contacts V2 (msdyn_contactforparties)
+    + CDS Party postal address locations (msdyn_partypostaladdresses)
+    + CDS postal address history V2 (msdyn_postaladdresses)
+    + CDS postal address locations (msdyn_postaladdresscollections)
+    + Party Contacts V3 (msdyn_partyelectronicaddresses)
 
 2. Make sure that the maps are removed from the **msdy_dualwriteruntimeconfig** table in Dataverse.
 3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab) from AppSource.
