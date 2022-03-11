@@ -144,9 +144,11 @@ follow these steps.
 
 ### <a name="setup-em"></a>Set up electronic messages
 
+Electronic messaging (EM) functionality is provided to maintain the different processes that are used in electronic reporting for different document types. For more information about electronic messages, see [Electronic messaging](../general-ledger/electronic-messaging.md).
+
 #### Download and import the data package that has example settings for electronic messages
 
-The process of setting up the [Electronic messages](../general-ledger/electronic-messaging.md) (EM) functionality to generate the VAT declaration in TXT format and preview it in Excel has many steps. Because the data of some entities is used in the ER configurations, use a set of predefined values that are delivered in a package of data entities for the related tables. You can extend these settings or create your own.
+The process of setting up the Electronic messages functionality to generate the VAT declaration for Finland in TXT format and preview it in Excel has many steps. Because the data of some entities is used in the ER configurations, use a set of predefined values that are delivered in a package of data entities for the related tables. You can extend these settings or create your own.
 
 > [!NOTE]
 > Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
@@ -159,6 +161,8 @@ The process of setting up the [Electronic messages](../general-ledger/electronic
 6. Select **Close**.
 7. After the data entities are uploaded, on the Action Pane, select **Import**.
 8. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported (**FI VAT declaration**).
+
+For more information about how you can use the data management framework, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 #### Configure electronic messages
 
@@ -178,12 +182,12 @@ The process of setting up the [Electronic messages](../general-ledger/electronic
    |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | Settlement period                     | Select the settlement period.                                                                                                                                                                                                        |
    | Sales tax payment version             | Select one of the following values:</br>-**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</br>-**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</br>-**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.|
-   | From date                             | Select the start date of the reporting period.                                                                                                                                                                                       |
-   | Previous period amounts to compensate | Enter the amount that should be exported to box 110, "Amounts to be compensated pending from previous periods."                                                                                                                      |
-   | Previous period amounts to offset     | Enter the amount that should be exported to box 78, "Amounts to be offset from previous periods applied in this period."                                                                                                             |
-   | Common territory                      | Enter the amount of the percentage volume of operations in the common territory that should be exported to box 65. This percentage is used to calculate the amount in box 66, "Tax amount attributable to the State Administration." |
-   | Simplified regime result              | Enter the amount that should be exported to box 58.                                                                                                                                                                                  |
-   | To deduct supplementary declaration   | Enter the amount that should be exported to box 70, "To deduct (Exclusively in the case of supplementary self-assessment. Result of the previous statements.)."                                                                      |
+   | From date                             | Select the start date of the reporting period.  |
+   | | |
+   | | |
+   | | |
+   | | |
+   | | |
 
 3. Select **OK**, and review the Excel report.
 
