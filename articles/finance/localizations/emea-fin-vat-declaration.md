@@ -30,17 +30,17 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to set up and generate a value-added tax (VAT) declaration for Finland in the official TXT format. 
-It also describes how to preview the VAT declaration in Microsoft Excel..
+It also describes how to preview the VAT declaration in Microsoft Excel.
 
 To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
 
-For Finland, you must configure **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields]() section later in this topic.
+For Finland, you must configure **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up) section later in this topic.
 
 In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
 ## VAT declaration overview
 
-The VAT declaration for Finalnd contains the following fields to report amounts about related to VAT.
+The VAT declaration for Finalnd contains the following fields to report amounts related to VAT.
 
 | **Field ID (Tunnus)** | **Description (English)** | **Description (Finish)** | **Lookup result** |
 | --- | --- | --- | --- |
@@ -73,10 +73,72 @@ To generate a VAT declaration, you must configure the tax number (field \"010\" 
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
-3. Select or create the address in Spain and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Spain and that uses the **VAT Id** registration category.
+3. Select or create the address in Finland and then, on the **Registration ID** FastTab, select **Add**.
+4. In the **Registration type** field, select the registration type that is dedicated to Finland and that uses the **VAT Id** registration category.
 5. In the **Registration number** field, enter the tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
+
+## Set up a VAT declaration for Finland
+
+These tasks will prepare your Microsoft Dynamics 365 Finance environment to generate electronic file for VAT declaration of Finland and preview VAT amounts in Excel format.
+
+- [Import ER configurations](#import-er)
+- [Set up application-specific parameters for VAT declaration fields](#set-up)
+- [Set up the VAT reporting format for preview amounts in Excel](#setup-preview)
+- [Set up electronic messages](#setup-em)
+
+### <a name="import-er"></a>Import ER configurations
+
+Open the **Electronic reporting** workspace, and import the latest versions of these ER formats under **Tax declaration model**:
+
+- VAT Declaration TXT (FI)
+- VAT Declaration Excel (FI)
+
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+### <a name="set-up"></a>Set up application-specific parameters for VAT declaration fields
+
+To automatically generate a VAT declaration, associate sales tax codes in Finance application and lookup results in the ER configuration.
+
+> [!NOTE]
+> We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
+Follow these steps to define which sales tax codes in your Finance generate which boxes (filed ID) on the VAT declaration for Finland.
+
+1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
+2. Select the **VAT declaration TXT (FI)** configuration, and then select **Configurations \> Application specific parameters setup**.
+3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
+4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
+
+
+   | Field                  | Description                                                                                                                                                                                                                                                                                                          |
+   |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | Lookup result          | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                                                               |
+   | Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
+   | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: </br>-   **Purchase**</br>-   **PurchaseExempt** (tax-exempt purchase)</br>-   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</br>-   **Sales**</br>-   **SalesExempt** (tax-exempt sale)</br>-   **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</br>-   **Use tax**. </br>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</br>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value. |
+
+   > [!NOTE]
+   > Associate all sales tax codes with lookup results. If any sales tax codes should not generate values on the VAT declaration, associate them with the **Other** lookup result.
+
+5. In the **State** field, change the value to **Completed**.
+6. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
+7. Select the **VAT declaration Excel (FI)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration TXT (FI)**.
+8. In the **State** field, select **Completed**.
+
+### <a name="setup-preview"></a>Set up the VAT reporting format for preview amounts in Excel
+
+1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
+2. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
+3. Go to **General ledger** > **Setup** > **General ledger parameters**.
+4. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (FI)** ER format.
+
+   This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
+
+If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md),
+follow these steps.
+
+1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **FIN**, select the **VAT Declaration Excel (FI)** ER format.
 
