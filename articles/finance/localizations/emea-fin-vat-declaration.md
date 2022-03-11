@@ -146,7 +146,7 @@ follow these steps.
 
 #### Download and import the data package that has example settings for electronic messages
 
-The process of setting up the [Electronic messages](../general-ledger/electronic-messaging.md) (EM) functionality to generate the VAT declaration in TXT format and preview it in Excel has many steps. Because the names of some entities are used in the ER configurations, use a set of predefined values that are delivered in a package of data entities for the related tables. You can extend these settings or create your own.
+The process of setting up the [Electronic messages](../general-ledger/electronic-messaging.md) (EM) functionality to generate the VAT declaration in TXT format and preview it in Excel has many steps. Because the data of some entities is used in the ER configurations, use a set of predefined values that are delivered in a package of data entities for the related tables. You can extend these settings or create your own.
 
 > [!NOTE]
 > Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
