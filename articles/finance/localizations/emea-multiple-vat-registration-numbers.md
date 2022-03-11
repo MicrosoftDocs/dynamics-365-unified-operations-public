@@ -120,7 +120,7 @@ On the **Sales tax settlement periods** page, create sales tax settlement period
 
 ### Set up customer and vendor tax registration numbers in the Tax feature setup
 
-1. In Regulatory Configuration Service (RCS), open Tax calculation feature setup.. 
+1. In Regulatory Configuration Service (RCS), open tax calculation feature setup. 
 2. On the **Customer Tax Registration Number Applicability** tab, under **Applicability rules**, verify that the registration IDs for customers are defined. 
 3. On the **Vendor Tax Registration Number Applicability** tab, under **Applicability rules**, verify that the registration IDs for vendors are defined.
 
