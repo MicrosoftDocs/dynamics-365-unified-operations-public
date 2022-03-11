@@ -190,12 +190,6 @@ Planning Optimization doesn't use the following parameter option on the **Defaul
   - **Inventory lead time** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
   - **Working days** – In versions of the Planning Optimization service that are older than the August 6, 2021 release, Planning Optimization uses this parameter to calculate the correct order and delivery dates, but it doesn't save the calculated lead time itself to the planned order. In later versions, the service also uses the calculated lead time to set the **Lead time** field and **Working days** option as required for the relevant planned order.
 
-## Working time calendars page
-
-Planning Optimization doesn't use the following parameter on the **Working time calendars** page:
-
-- **Base calendar** – Pending *Base calendars* support.
-
 ## Batch disposition master page
 
 Planning Optimization doesn't use the following parameter on the **Batch disposition master** page:
