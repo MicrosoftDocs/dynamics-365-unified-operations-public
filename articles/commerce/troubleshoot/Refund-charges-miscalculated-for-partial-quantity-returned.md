@@ -26,7 +26,7 @@ ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
 ---
 
-# Welcome email is not sent to new customers upon sign up
+# Refundable charges are not calculated based on the quantity returned
 
 [!include [banner](../../includes/banner.md)]
 
