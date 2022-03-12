@@ -2,10 +2,10 @@
 title: Party and global address book
 description: This topic describes the Party and global address book functionality of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 08/11/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-02-22
 
 
 
-*Party* and *global address book* are concepts in Finance and Operations applications. A party can be an organization or a person. It's convenient to globally store and manage properties of a party, such as the name, language, contacts, and addresses. Then, when a property value is changed in one place, the change is reflected in all places where the party is involved.
+*Party* and *global address book* are concepts in finance and operations applications. A party can be an organization or a person. It's convenient to globally store and manage properties of a party, such as the name, language, contacts, and addresses. Then, when a property value is changed in one place, the change is reflected in all places where the party is involved.
 
 ## Party
 
@@ -41,7 +41,7 @@ The following illustration shows the data model for party.
 > [!TIP]
 > When you're trying to create a new account record, use the **Party** field to search for the record by name. In this way, if you find the record, you just have to select it. The system then automatically fills in all the data from the party. You don't have to manually set all the required fields. This behavior can be found on the out-of-box **Account**, **Contact**, and **Vendor** pages.
 
-Dual-write doesn't support all party roles of Finance and Operations apps. For a complete list of party roles, see [Global address book overview](../../../fin-ops/organization-administration/overview-global-address-book.md).
+Dual-write doesn't support all party roles of finance and operations apps. For a complete list of party roles, see [Global address book overview](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### Global address book
 
@@ -70,7 +70,7 @@ The **Contact** table can store the following types of rows.
 |----------|-------------|
 | A person who is a customer (for example, a sellable contact or a B2C customer) | A striped contact record where the **Company** field isn't blank and the **Is Customer** field is set to **Yes**. |
 | A person who is a vendor (for example, a sole proprietor such as a vendor) | A striped contact record where the **Company** field isn't blank and the **Is Vendor** field is set to **Yes**. |
-| A person who is both a customer and a vendor | A striped contact record where the **Company** field isn't blank, the **Is Customer** field is set to **Yes**, and the **Is Vendor** field is set to **Yes**. A person can be both a producer for one product and a consumer for another product. Both Finance and Operations apps and dual-write support this relationship. |
+| A person who is both a customer and a vendor | A striped contact record where the **Company** field isn't blank, the **Is Customer** field is set to **Yes**, and the **Is Vendor** field is set to **Yes**. A person can be both a producer for one product and a consumer for another product. Both finance and operations apps and dual-write support this relationship. |
 | A person who is a contact person for an organization, but isn't a customer or a vendor | An unstriped contact record where the **Company** field is blank, the **Is Customer** field is set to **No**, and the **Is Vendor** field is set to **No**. |
 
 ## Contact for Party table
@@ -137,7 +137,7 @@ You can use the **New Electronic Address** button above the grid to create as ma
 Electronic addresses are available only in this grid. In future releases, all postal address and electronic address fields will be removed from other tabs, for example, the **Summary** and **Details** tabs. Contact details displayed on the **Details** tab are read-only copies of the primary electronic address, like primary phone, primary email, primary telephone, primary fax, and primary Twitter ID. During the lead qualification process you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and the mobile phone number is considered the secondary phone if **IsMobile=Yes**.
 
 > [!TIP]
-> Use **Addresses** and **Electronic Addresses** tabs on the **Account** and **Contact** forms to manage postal and electronic addresses. This ensures that address data synchronizes to Finance and Operations apps.
+> Use **Addresses** and **Electronic Addresses** tabs on the **Account** and **Contact** forms to manage postal and electronic addresses. This ensures that address data synchronizes to finance and operations apps.
 
 ## Setup
 
@@ -221,11 +221,11 @@ Electronic addresses are available only in this grid. In future releases, all po
 
     ![Duplicate rule for Contacts.](media/duplicate-rule-2.PNG)
 
-11. If you are an existing dual-write user, follow the instructions in [Upgrade to the party and global address book model](upgrade-party-gab.md) and upgrade your data.
+11. If you are an existing dual-write user, follow the instructions in [Upgrade to the party and global address book model](upgrade-party-gab.md) and upgrade your data. **Do not proceed to step 12 without completing this step.** If you are a new dual-write user, proceed to step 12.
 
-12. Run the maps in the following order. If you get an error that states "Project validation failed. Missing destination field...", then open the map and select **Refresh Tables**. Then run the map.
+12. If you are an existing dual-write user, complete step 11, and then you can run the maps in the following order. If you are a new dual-write customer, you can proceed directly. If you are shown an error message that states "Project validation failed. Missing destination field...", open the map and select **Refresh Tables**, then run the map.
 
-    Finance and Operations app | Customer engagement app  
+    Finance and operations app | Customer engagement app  
     ----------------------------|------------------------
     [CDS Parties](mapping-reference.md#220) | msdyn_parties
     [CDS postal address locations](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -264,7 +264,7 @@ Electronic addresses are available only in this grid. In future releases, all po
 
 A collection of table maps work together for party and global address book interaction, as shown in the following table.
 
-| Finance and Operations app | Customer engagement app | Description |
+| Finance and operations app | Customer engagement app | Description |
 |----------------------------|-------------------------|-------------|
 | [Contact person titles](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Customers V3](mapping-reference.md#101) | accounts |
@@ -290,10 +290,10 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 
 ## Known issues and limitations
 
-+ In Finance and Operations apps, when you create a customer along with address and save it, the address might not synchronize to the **Address** table. This is because of a dual-write platform sequencing issue. As a workaround, create the customer first and save it. Then add the address.
-+ In Finance and Operations apps, when a customer record has a primary address and you create a new contact for that customer, then the contact record inherits a primary address from the associated customer record. This happens for vendor contact, too. Dataverse doesn’t currently support this behavior. If dual-write is enabled, a customer contacts that is inherited with a primary address from the Finance and Operations app is synchronized to Dataverse along with its address.
++ In finance and operations apps, when you create a customer along with address and save it, the address might not synchronize to the **Address** table. This is because of a dual-write platform sequencing issue. As a workaround, create the customer first and save it. Then add the address.
++ In finance and operations apps, when a customer record has a primary address and you create a new contact for that customer, then the contact record inherits a primary address from the associated customer record. This happens for vendor contact, too. Dataverse doesn’t currently support this behavior. If dual-write is enabled, a customer contacts that is inherited with a primary address from the finance and operations app is synchronized to Dataverse along with its address.
 + Electronic addresses set on the electronic address tab of the **Account**, **Contact**, and **Vendor** forms come from the `msdyn_partyelectronicaddress` table. This information does not flow to its associated transactions like sales order, quotation, and purchase order. We plan to fix this issue in an incremental release. The existing data on the electronic address fields on the account and contact records will continue to work on transactions like sales order, quotation, and purchase order.
-+ In Finance and Operations apps, you can create a contact record from the **Add Contact** form. When you try to create a new contact from the **View Contact** form, the action fails. This is a known issue.
++ In finance and operations apps, you can create a contact record from the **Add Contact** form. When you try to create a new contact from the **View Contact** form, the action fails. This is a known issue.
 
     ![Known issue with Add Contact.](media/party-gab-contact-issue.png)
 
@@ -302,4 +302,4 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 
     ![Known issue with Address.](media/party-gab-address-issue.png)
 
-+ You can't enter a forward-dated postal address using a Finance and Operations app with dual-write, because Dataverse does not support date effectivity. If you enter a future-dated postal address using a Finance and Operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the Finance and Operations app.
++ You can't enter a forward-dated postal address using a finance and operations app with dual-write, because Dataverse does not support date effectivity. If you enter a future-dated postal address using a finance and operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the finance and operations app.
