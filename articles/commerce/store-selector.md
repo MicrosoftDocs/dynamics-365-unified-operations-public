@@ -66,7 +66,7 @@ To enter the latitude and longitude values for a store location in Commerce head
 
 ### Hiding a store from store selector
 
-Some stores within a fulfillment group may not be valid pickup locations, to ensure they do not show up within the store selector module, disable the "Is Pickup Location" property in headquarters fulfillment group as shown below.
+Some stores within a fulfillment group may not be valid pickup locations, to ensure they do not show up within the store selector module, disable the "Is Pickup Location" property in headquarters fulfillment group as shown below.  Ensure the 1070 **Channel configuration** distribution schedule job is run after making changes.
 
 ![Disable a store pickup location in headquarters](./media/store-locator-disable-pickup-store.png)
 
