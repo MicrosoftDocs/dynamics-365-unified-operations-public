@@ -3857,6 +3857,8 @@
         items:
         - name: Warehouse mobile app
           items:
+          - name: Unexpected difference between request and session data during testing
+            href: troubleshooting/warehousing/request-session-data-difference.md
           - name: Trust anchor for certification path not found when setting up app connection
             href: troubleshooting/warehousing/certification-path-app-connection-error.md
           - name: Trust anchor for certification path not found when updating and migrating to WMS
