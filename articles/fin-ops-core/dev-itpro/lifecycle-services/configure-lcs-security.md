@@ -40,6 +40,24 @@ Project-level access to LCS is by invitation. You can invite members of your org
 > [!IMPORTANT]
 > We strongly recommend that you manage all users within your company at the organization level. Additionally, you help ensure that users can access the benefits that are available to your organization.
 
+## Organizational roles
+There are three types of organizational roles in LCS:
+1. Admin
+2. Contributor
+3. Delegated admin
+
+### Organization Admin
+At the organization or tenant level, anyone who has the Global Administrator role in Azure AD will automatically become an organization Admin when they log in to LCS.  In addition, those admins can further promote other Contributor users to become Admins as well.  Admins have unique capabilities as well such as the ability to add themselves as a Project Owner to any project owned by their tenant even if they were not part of that project earlier:
+[image goes here]('').
+
+In addition, Admins can create additional LCS Implementation Projects following [Create multiple LCS projects](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#create-multiple-lcs-projects).
+
+### Organization Contributor
+Contributors are other users from your Azure AD tenant but do not have admin capabilities.  Contributors can however create projects and may also create the first Implementation Project if they are the first user of their tenant to login and do so after the purchase of applicable Finance and Operations apps licenses.
+
+### Delegated Admin
+The Delegated Admin role is identical to the Admin role with the exception that the user is from a Microsoft Partner tenant who has an established relationship with the customer organization.  They will be able to login on behalf of the customer and perform needed operations and support.
+
 ## Manage LCS organization users
 Only an administrator can manage users. Follow these steps.
 
@@ -106,8 +124,6 @@ After you've configured security for one project, you can import the users to an
 
 ## Configure implementation roles 
 If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](/learn/modules/get-started-implementation-project/01-2-roles).
-
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
