@@ -40,8 +40,7 @@ Use this page to create a new billing schedule from an existing billing schedule
 ## Copy Schedule
 
 To copy a billing schedule, follow these steps: 
-1. Select an existing billing schedule: 
-   - From the **All billing schedules** or **All active billing schedules** list, select a billing schedule
+1. Select an existing billing schedule from the **All billing schedules** or **Active billing schedules** list.
 2. On the **Billing schedule** tab, select **Copy schedule**. 
 3. Select the **Customer account**. 
 4. Change the billing start and end dates as needed. 
@@ -52,16 +51,15 @@ To copy a billing schedule, follow these steps:
 After the copy process is finished, the new billing schedule appears at the bottom of the **All/Active billing schedules** list or on the **Billing schedules** page. 
 
 
-## Copy  Items to Another Billing Schedule
+## Copy Items to Another Billing Schedule
 
-1. Select an existing billing schedule: 
-   - From the  **All/Active billing schedules** list, select a billing schedule.
-1. On the **Billing schedule** tab, select **Copy schedule**. 
-1. Select the **Customer account** and then select a **Billing schedule number**. 
-1. Change the billing start and end dates as needed. 
-1. If needed, change values for the optional boxes: **End user account**, **Partner account**, **Customer reference**, **Customer requisition** or **Deferral start date**. 
-1. Select the **View preview** button to view and select the billing schedule lines that you want to copy to an existing billing schedule. 
-1. Select **OK**.
+1. Select an existing billing schedule from the **All billing schedules** or **Active billing schedules** list.
+2. On the **Billing schedule** tab, select **Copy schedule**. 
+3. Select the **Customer account** and then select a **Billing schedule number**. 
+4. Change the billing start and end dates as needed. 
+5. If needed, change values for the optional boxes: **End user account**, **Partner account**, **Customer reference**, **Customer requisition** or **Deferral start date**. 
+6. Select the **View preview** button to view and select the billing schedule lines that you want to copy to an existing billing schedule. 
+7. Select **OK**.
 
 After the copy process is finished, review the billing schedule to which you copied the items, and check that the items have been added as expected. 
 
