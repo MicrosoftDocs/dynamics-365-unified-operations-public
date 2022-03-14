@@ -72,6 +72,7 @@ The tax calculation data model is integrated with Finance and Operations apps. D
 ## Field mapping
 
 Thirty-two data models can be included as fields on the header of a transaction. However, not all fields are applicable to all transaction types. The following table shows which header fields are available for specific transaction types. In some cases, the field mapping must be determined by predefined logic. Where applicable, the logic is provided.
+
 | Header field                            | Business transaction type and field mapping |
 |----------------------------------|---------------------------------------------|
 | Amount include tax               | <ul><li>**Sales order:** Prices include sales tax</li><li>**Purchase order:** Prices include sales tax</li><li>**Purchase requisition:** No</li><li>**Request for quotation:** Prices include sales tax</li><li>**Sales quotation:** Prices include sales tax</li><li>**Free text invoice:** Prices include sales tax</li><li>**Journal:** Amounts include sales tax</li></ul> |
