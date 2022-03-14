@@ -4,7 +4,7 @@
 title: Support parameterized calls of ER data models
 description: This topic explains how to implement parameterized calls of Electronic reporting (ER) data models.
 author: NickSelin
-ms.date: 03/03/2022
+ms.date: 03/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -189,7 +189,7 @@ You must create a new ER configuration that contains the required data model com
 
 Follow these steps to import the required data model from an XML file that is provided by Microsoft.
 
-1. Download the [Sample audit model.version.1.xml](https://download.microsoft.com/download/b/.../Sample_audit_model.version.1.xml) file, and save it to your local computer.
+1. Download the [Sample audit model.version.1.xml](https://download.microsoft.com/download/7/1/9/719b0132-fed7-4c73-8afa-90cac29c2fee/Sample-audit-model.version.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -210,7 +210,7 @@ As a user in the Electronic Reporting Developer role, you must create a new ER c
 
 Follow these steps to import the required model mapping from an XML file that is provided by Microsoft.
 
-1. Download the [Sample audit model mapping.version.1.1.xml](https://download.microsoft.com/download/b/.../Sample_audit_model_mapping.version.1.1.xml) file, and save it to your local computer.
+1. Download the [Sample audit model mapping.version.1.1.xml](https://download.microsoft.com/download/c/0/3/c03a4673-b1b1-4ef8-96d0-bf96518be6e0/Sample-audit-model-mapping.version.1.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
@@ -231,7 +231,7 @@ As a user in the Electronic Reporting Functional Consultant role, you must creat
 
 Follow these steps to import the required format from an XML file that is provided by Microsoft.
 
-1. Download the [Sample audit format.version.1.1.xml](https://download.microsoft.com/download/b/.../Sample_audit_format.version.1.1.xml) file, and save it to your local computer.
+1. Download the [Sample audit format.version.1.1.xml](https://download.microsoft.com/download/e/b/7/eb7e126e-2bb3-4bbb-a735-ffd4c48920b1/Sample-audit-format.version.1.1.xml) file, and save it to your local computer.
 2. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 3. In the **Electronic reporting** workspace, select **Reporting configurations**.
 4. On the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**.
