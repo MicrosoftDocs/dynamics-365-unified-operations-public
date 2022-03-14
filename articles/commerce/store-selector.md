@@ -68,7 +68,7 @@ To enter the latitude and longitude values for a store location in Commerce head
 
 Some stores within a fulfillment group may not be valid pickup stores, to ensure they do not show up within the store selector module, disable the "Is Pickup Location" property in headquarters fulfillment group as shown below.
 
-    ![Disable a store pickup locatio in headquarters.](./media/store-locator-disable-pickup-store.png)
+    ![Disable a store pickup location in headquarters](./media/store-locator-disable-pickup-store.png)
 
 ## Bing Maps integration
 
