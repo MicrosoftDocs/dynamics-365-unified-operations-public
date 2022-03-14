@@ -124,16 +124,16 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pre
 
 ## Expired connectors
 
-Azure connectors that were created by using management certificates have an expiration date. After the expiration date has passed, the certificate will no longer be valid. Therefore, you won't be able to use the Azure connector or, in turn, manage any resources that have been deployed from LCS via that connector. To renew the connector, we recommend that you edit the connector. A new certificate will then be generated for download.
+Azure connectors that were created by using management certificates have an expiration date. After the expiration date has passed, the certificate will no longer be valid. Therefore, you won't be able to use the Azure connector or, in turn, manage any resources that have been deployed from LCS via that connector. To renew the connector and reset the expiry date, we recommend that you follow the steps in [Enable the Azure connector and add an LCS user](./arm-onboarding#enable-the-azure-connector-and-add-an-lcs-user) to edit the connector.  This will generate a new certificate for download, and reset the expiry date.
 
-An expiration date is shown only for connectors that use management certificates. If you created the connector via an LCS user, as described earlier in this topic, no expiration date will be show. Instead, the connection will be good for as long as the LCS user has access to the subscription.
+An expiration date is shown only for connectors that use management certificates. If you created the connector via an LCS user, as described earlier in this topic, no expiration date will be shown. Instead, the Azure connector will be good for as long as the LCS user has access to the subscription.
 
 ## Known limitations
 
 There are a few known limitations when you set up or manage Azure connectors in LCS:
 
 - Because prospect organizations haven't purchased a license for a Finance and Operations app, and therefore can't deploy the software, they aren't allowed to set up Azure connectors. To determine your organization type, select your name in the upper-right corner of the page while you're signed in to LCS.
-- An Azure connector can be created only for a new combination of an LCS project ID, an Azure subscription ID, and an Azure region. You can't create multiple connectors for the same subscription and region. If you must delete an Azure connector for a given combination of a subscription and a region, you must first delete all environments that were created by that connector.
+- An Azure connector can be created only for a unique combination of an LCS project ID, an Azure subscription ID, and an Azure region. You can't create multiple connectors for the same subscription and region. If you must delete an Azure connector for a given combination of a subscription and a region, you must first delete all environments that were created by that connector.
 - A management certificate can't be reused in the same project for the same Azure subscription ID, regardless of the region.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
