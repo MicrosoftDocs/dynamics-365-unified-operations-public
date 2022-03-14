@@ -20,22 +20,24 @@ Error code: WarehouseMobileDeviceRequestInputValidationError
 ## Symptoms
 
 Test run fails and the system shows the following error message:
+
 > Unexpected difference between request and session data. Warehouse Mobile Devices XML protocol violated.REQUEST_XML_TAMPERING
 
 ## Cause
 
-Request xml for the warehouse app task validation test step does not match an existing work user session.
+Request XML for the warehouse app task validation test step does not match an existing work user session.
 
-The output of the last successful step executed in the test run does not match the recorded input of the next step. Task validator is using recorded xml as input to each step instead of the output of a previous step.
-In most cases this error happens on a rerun of a task.
+The output of the last successful step executed in the test run does not match the recorded input of the next step. The task validator is using recorded XML as input for each step instead of the output of a previous step.
 
-Warehouse app task validation test run is not an idempotent operation. It is modifying the underlying data. Before rerunning a task resetting relevant data may be needed.
+In most cases this error happens when you rerun of a task.
+
+The warehouse app task validation test run is not an idempotent operation. It is modifying the underlying data. Before rerunning a task, you may need to reset the relevant data.
  
 ## Resolution
 
-Investigate output xml of the last test step that succeeded.
+Investigate output XML of the last test step that succeeded.
 
-Restoring relevant sales orders/transfer order/work/etc. or create a new setup and modify test to use a new sales order.
+Restore the relevant sales orders, transfer order, work header, or other document. Or create a new setup and modify the test to use a new document.
 
 
 
