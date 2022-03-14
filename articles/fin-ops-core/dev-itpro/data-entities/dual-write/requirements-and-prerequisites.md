@@ -24,14 +24,18 @@ Currently, we support dual-write in the following regions:
 
 + Asia
 + Australia
++ Brazil
 + Canada
 + Europe
++ France
 + India
 + Japan
 + South America
++ Switzerland
 + United Arab Emirates
 + United Kingdom
 + United States
+
 
 > [!NOTE]
 > There are currently no plans to support any additional regions.
