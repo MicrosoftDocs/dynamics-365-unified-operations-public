@@ -266,6 +266,8 @@ You can use the ``listtestsuitenames`` command to get all available test suites,
 
 `downloadsuite /retry=240 /byid 765`
 
+`downloadsuite /retry=240 /byid 765 c:\temp\rsat`
+
 #### edit
 
 Allows you to open parameters file in Excel program and edit it.
@@ -286,24 +288,41 @@ Allows you to open parameters file in Excel program and edit it.
 
 Generates test execution and parameter files for the specified test case in the output directory. You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] [test_case_id] [output_dir]``
+
+##### generate: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the generate process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
++ `/dllonly` : Generate Test Execution files only. Do no regenerate Excel parameter file.
++ `/keepcustomexcel` : Upgrading existing parameters file. This will also regenerate Execution files.
 
 ##### generate: required parameters
 
 + `test_case_id`: Represents the test case ID.
-+ `output_dir`: Represents the output directory. The directory must exist.
+
+##### generate: optional parameters
+
++ `output_dir`: Represents the output working directory. The directory must exist. Working directory from settings will be used if not specified.
 
 ##### generate: examples
 
 `generate 123 c:\temp\rsat`
 
-`generate 765 c:\rsat\last`
+`generate /retry=240 765 c:\rsat\last`
+
+`generate /retry=240 /dllonly 765`
+
+`generate /retry=240 /keepcustomexcel 765`
 
 #### generatederived
 
-Generates a new test case, derived from the provided test case. You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+Generates a new derived test case (child test case) of the provided test case. The new test case is also added to the specified test suite. You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[/retry[=<seconds>]] [parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### generatederived: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the generate process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
 
 ##### generatederived: required parameters
 
@@ -315,39 +334,63 @@ Generates a new test case, derived from the provided test case. You can use the 
 
 `generatederived 123 8901 678`
 
+`generatederived /retry 123 8901 678`
+
 #### generatetestonly
 
-Generates only test execution file for the specified test case in the output directory. You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+Generates only test execution file for the specified test case. It does not generate the Excel parameter file. The files are generated in the specified output directory. You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### generatetestonly: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the generate process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
 
 ##### generatetestonly: required parameters
 
 + `test_case_id`: Represents the test case ID.
-+ `output_dir`: Represents the output directory. The directory must exist.
+
+##### generatetestonly: optional parameters
+
++ `output_dir`: Represents the output working directory. The directory must exist. Working directory from settings will be used if not specified.
 
 ##### generatetestonly: examples
 
 `generatetestonly 123 c:\temp\rsat`
 
-`generatetestonly 765 c:\rsat\last`
+`generatetestonly /retry=240 765`
 
 #### generatetestsuite
 
-Generates all test cases for the specified suite in the output directory. You can use ``listtestsuitenames`` command to get all available test suits. Use any value from the column as a **test_suite_name** parameter.
+Generates test automation files for all test cases in the specified test suite. You can use ``listtestsuitenames`` command to get all available test suites, and use any value as a **test_suite_name** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### generatetestsuite: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the generate process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
++ `/dllonly` : Generate Test Execution files only. Do no regenerate Excel parameter file.
++ `/keepcustomexcel` : Upgrading existing parameters file. This will also regenerate Execution files.
++ `/byid` : This switch indicates that the desired test suite is identified by its Azure Devops ID instead of test suite name.
 
 ##### generatetestsuite: required parameters
 
-+ `test_suite_name`: Represents the test suite name.
-+ `output_dir`: Represents the output directory. The directory must exist.
++ `test_suite_name`: Represents the test case name. Required in case /byid switch is **not** specified. This is the Azure DevOps test suite name.
++ `test_suite_id`  : Represents the test case ID.   Required in case /byid switch **is** specified. This is test suite Azure DevOps ID.
+
+##### generatetestsuite: optional parameters
+
++ `output_dir`: Represents the output working directory. The directory must exist. Working directory from settings will be used if not specified.
 
 ##### generatetestsuite: examples
 
 `generatetestsuite Tests c:\temp\rsat`
 
-`generatetestsuite Purchase c:\rsat\last`
+`generatetestsuite /retry Purchase c:\rsat\last`
+
+`generatetestsuite /dllonly /byid 121`
+
+`generatetestsuite /keepcustomexcel /byid 121`
 
 #### help
 
@@ -355,7 +398,7 @@ Identical to the [?](#section) command.
 
 #### list
 
-Lists all available test cases.
+Lists all available test cases in the current test plan.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
 
@@ -367,13 +410,13 @@ Lists all available test plans.
 
 #### listtestsuite
 
-Lists test cases for the specified test suite. You can use ``listtestsuitenames`` command to get all available test suites. Use any value from first column as **suite_name** parameter.
+Lists test cases for the specified test suite. You can use ``listtestsuitenames`` command to get all available test suites. Use any value from the list as **suite_name** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[test_suite_name]``
 
 ##### listtestsuite: required parameters
 
-+ `suite_name`: Name of the desired suite.
++ `test_suite_name`: Name of the desired suite.
 
 ##### listtestsuite: examples
 
@@ -381,9 +424,23 @@ Lists test cases for the specified test suite. You can use ``listtestsuitenames`
 
 `listtestsuite NameOfTheSuite`
 
+#### listtestsuitebyid
+
+Lists test cases for the specified test suite.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitebyid``**``[test_suite_id]``
+
+##### listtestsuitebyid: required parameters
+
++ `test_suite_id`: ID of the desired suite.
+
+##### listtestsuitebyid: examples
+
+`listtestsuitebyid 12345`
+
 #### listtestsuitenames
 
-Lists all available test suites.
+Lists all available test suites in the current test plan.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
 
@@ -499,9 +556,19 @@ Uploads only recording file belonging to the specified test cases.
 
 #### usage
 
-Shows two ways to invoke this application: one using a default setting file, another one providing a setting file.
+Display the three modes of usage of this application.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
+Running the application interactively:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``
+
+Running the application by specifying a command:
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp ``**``[command]``**
+
+Running the application by providing a settings file:
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``/settings [drive:\Path to\file.settings] [command]``**
 
 ### Windows PowerShell examples
 
