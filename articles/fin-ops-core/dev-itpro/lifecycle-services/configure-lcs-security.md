@@ -48,7 +48,7 @@ There are three types of organizational roles in LCS:
 
 ### Organization Admin
 At the organization or tenant level, anyone who has the Global Administrator role in Azure AD will automatically become an organization Admin when they log in to LCS.  In addition, those admins can further promote other Contributor users to become Admins as well.  Admins have unique capabilities as well such as the ability to add themselves as a Project Owner to any project owned by their tenant even if they were not part of that project earlier:
-[image goes here]('').
+> ![Org Admin can add themselves to any project.](media/OrgAdminProjectInject.png "Org Admin can add themselves to any project")
 
 In addition, Admins can create additional LCS Implementation Projects following [Create multiple LCS projects](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#create-multiple-lcs-projects).
 
