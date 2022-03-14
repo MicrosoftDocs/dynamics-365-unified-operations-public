@@ -167,6 +167,7 @@ RSAT can be called from a **Command Prompt** or **PowerShell** window.
         about
         cls
         download
+        downloadsuite
         edit
         generate
         generatederived
@@ -176,11 +177,13 @@ RSAT can be called from a **Command Prompt** or **PowerShell** window.
         list
         listtestplans
         listtestsuite
+        listtestsuitebyid
         listtestsuitenames
         playback
         playbackbyid
         playbackmany
         playbacksuite
+        playbacksuitebyid
         quit
         upload
         uploadrecording
@@ -189,7 +192,7 @@ RSAT can be called from a **Command Prompt** or **PowerShell** window.
 
 #### ?
 
-Shows help about all available commands and their parameters.
+Lists all commands or show help for a specific command with available parameters.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
 
@@ -199,33 +202,69 @@ Shows help about all available commands and their parameters.
 
 #### about
 
-Displays the current version.
+Displays the version of the installed RSAT.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
 
 #### cls
 
-Clears the screen.
+This command clears the screen.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
 
 #### download
 
-Downloads attachments for the specified test case to the output directory.
-You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+Downloads attachments (Recording, Execution, and Parameter files) for the specified test case from Azure DevOps to the output directory.
+You can use the ``list`` command to get all available test cases, and use any value from the first column as a **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### download: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the download process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
 
 ##### download: required parameters
 
 + `test_case_id`: Represents the test case ID.
-+ `output_dir`: Represents the output directory. The directory must exist.
+
+##### download: optional parameters
+
++ `output_dir`: Represents the output working directory. The directory must exist. Working directory from settings will be used if not specified.
 
 ##### download: examples
 
 `download 123 c:\temp\rsat`
 
-`download 765 c:\rsat\last`
+`download /retry=240 765`
+
+#### downloadsuite
+
+Downloads attachments (Recording, Execution, and Parameter files) for all test cases in the specified test suite from Azure DevOps to the output directory.
+You can use the ``listtestsuitenames`` command to get all available test suites, and use any value as **test_suite_name** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``downloadsuite``**``[/retry[=<seconds>]] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### downloadsuite: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the download process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
++ `/byid` : This switch indicates that the desired test suite is identified by its Azure Devops ID instead of test suite name.
+
+##### downloadsuite: required parameters
+
++ `test_suite_name`: Represents the test case name. Required in case /byid switch is **not** specified. This is the Azure DevOps test suite name.
++ `test_suite_id`  : Represents the test case ID.   Required in case /byid switch **is** specified. This is test suite Azure DevOps ID.
+
+##### downloadsuite: optional parameters
+
++ `output_dir`: Represents the output working directory. The directory must exist. Working directory from settings will be used if not specified.
+
+##### downloadsuite: examples
+
+`downloadsuite NameOfTheSuite c:\temp\rsat`
+
+`downloadsuite /byid 123 c:\temp\rsat`
+
+`downloadsuite /retry=240 /byid 765`
 
 #### edit
 
@@ -239,7 +278,7 @@ Allows you to open parameters file in Excel program and edit it.
 
 ##### edit: examples
 
-`edit c:\RSAT\TestCase_123_Base.xlsx`
+`edit c:\RSAT\123\TestCase_123_Base.xlsx`
 
 `edit e:\temp\TestCase_456_Base.xlsx`
 
