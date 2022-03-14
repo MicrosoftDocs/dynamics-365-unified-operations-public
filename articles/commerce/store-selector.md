@@ -64,6 +64,12 @@ To enter the latitude and longitude values for a store location in Commerce head
 
 1. On the Action Pane, select **Save**. 
 
+### Hiding a store from store selector
+
+Some stores within a fulfillment group may not be valid pickup stores, to ensure they do not show up within the store selector module, disable the "Is Pickup Location" property in headquarters fulfillment group as shown below.
+
+    ![Disable a store pickup locatio in headquarters.](./media/store-locator-disable-pickup-store.png)
+
 ## Bing Maps integration
 
 The store selector module is integrated with the [Bing Maps REST application programming interfaces (APIs)](/bingmaps/rest-services/) to use Bing's Geocoding and Autosuggest features. A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The Geocoding API is used to convert a location to latitude and longitude values. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
