@@ -154,7 +154,7 @@ This page contains the following fields:
 
 |Field|Description|
 |:-----|:-----|
-|**Item number**|Displays the item number for the billing schedule line.  Available when this page is opened for a billing schedule line item. |
+|**Item number**|Displays the item number for the billing schedule line. Available when this page is opened for a billing schedule line item. |
 |**Consumer price index calculation**|Select to determine the method used for the Consumer price index escalation calculation:<br />* **Prior consumer price index**: Uses the previous Consumer price index value for the escalation calculation.<br />* **Base consumer price index**:  Uses the base Consumer price index value for the escalation calculation.|
 **Line Grid**|
 |**Discount**|Select whether the change in the amount is an escalation or discount:<br />* **Selected**: The change is to apply a discount to the billing schedule or billing schedule line. <br />* **Cleared**: The change is to apply an escalation to a billing schedule or a schedule line. <br />This value cannot be edited for items that use the unbilled revenue feature. Also, discounts cannot be applied to items that use revenue splitting. |
@@ -167,8 +167,8 @@ This page contains the following fields:
 |**Deferral schedule number**|Displays the deferral schedule number. <br />Available only when this page is opened from the billing schedule line level. |
 |**Journal batch number**|Displays the journal batch number. <br />Available only when this page is opened from the billing schedule line level. |
 |**Total discount amount**|Displays the total sum of the discount amount for all lines in the grid. <br />Available only when this page is opened from the billing schedule line level. |
-|**Current short-term unbilled revenue amount**|Displays the current short-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring Contract Billing Parameters** page and the accounts are set up on the **Unbilled Revenue Setup** page for the line item. |
-|**Current long-term unbilled revenue amount**|Displays the current long-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring Contract Billing Parameters** page and the accounts are set up on the **Unbilled Revenue Setup** page for the line item. |
+|**Current short-term unbilled revenue amount**|Displays the current short-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring contract billing parameters** page and the accounts are set up on the **Unbilled revenue setup** page for the line item. |
+|**Current long-term unbilled revenue amount**|Displays the current long-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring contract billing parameters** page and the accounts are set up on the **Unbilled revenue setup** page for the line item. |
 
 ---
   
