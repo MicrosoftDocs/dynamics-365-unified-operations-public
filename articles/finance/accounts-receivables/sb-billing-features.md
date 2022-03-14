@@ -42,7 +42,7 @@ You can use one of the following pricing methods to calculate the unit price of 
 
 ## Flat 
 
-When the flat pricing method is used, the unit price for a billing schedule line item on the **All Billing Schedules** page can be edited to any value you want. When the flat pricing option is used, the **Price unit** is always 1. As a result, the **Unit price** and the **Net amount** for an item are the same. 
+When the flat pricing method is used, the unit price for a billing schedule line item on the **All billing schedules** page can be edited to any value you want. When the flat pricing option is used, the **Price unit** is always 1. As a result, the **Unit price** and the **Net amount** for an item are the same. 
 
 ## Standard Price  (no Trade Agreement)
 
@@ -111,6 +111,64 @@ The following invoices show the unit prices with the different quantities purcha
 
 
 <table class="drcr"><col><col><col><col><thead><tr class="heading"><td>Invoice</td><td>Quantity Purchased</td><td>Unit Price</td><th>Net Amount</th></tr></thead><tbody><tr><td>1</td><td>25</td><td>2 / 25 = 0.08</td><td>100 / 50 = 2</td></tr><tr><td>2</td><td>20</td><td>2 / 20 = 0.1</td><td>100 / 50 = 2</td></tr><tr><td>3</td><td>50</td><td>2 / 50 = 0.04</td><td>100 / 50 = 2</td></tr><tr><td>4</td><td>60</td><td>0.75 / 60 = 0.0125 = 0.01</td><td>150 / 200 = 0.75</td></tr></tbody></table><div>
+
+  ---
+
+# Escalation and discount
+
+Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [select a billing schedule line] > [click Escalation and discount]
+
+Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [click a billing schedule] > [click Escalation and discount] 
+
+
+This topic explains how to apply and process an escalation or discount for a billing schedule or a billing schedule line. 
+* An escalation is a price increase for a future billing period where the invoice has not yet been created.
+* A discount is a price reduction for a future billing period where the invoice has not yet been created.
+
+Escalations and discounts cannot be applied to a billing schedule retroactively. For example, you wanted to apply and process an escalation to a billing schedule three months in the past. In Subscription billing, it is not possible to "catch up" on a price increase that was to happen three months ago. 
+
+You can apply the escalation or discount to a billing schedule or billing schedule line in one of the following ways: 
+* from the **All/Active billing schedules** list 
+* to the billing schedule displayed on the Billing schedule
+* to a specific Billing schedule line
+
+## Apply Escalation or Discount
+
+To apply an escalation or discount to a billing schedule, follow these steps: 
+1. Select a billing schedule or a billing schedule line.
+2. Select **Escalation and discount** from either the Escalation and discount tab or the Escalation and discount action on the billing schedule line.
+3. Select the **Consumer price index calculation** for the escalation or discount. This is only used if a consumer price index is used to calculate the escalation or discount. 
+4. For each escalation or discount line you add, do the following: 
+   a. Select **New**. 
+   b. For a discount, select the **Discount** checkbox.   
+   c. For an escalation, leave the **Discount** checkbox cleared. 
+   d. Specify the **Start date** and select the **Frequency**. 
+   e. For deferral items that use the unbilled revenue feature, specify the **End date**. 
+   f. Specify the **Percentage**, **Amount**, or **Consumer price index schedule** for the escalation or discount. 
+   g. Specify the **End date**.
+5. Select **OK**.
+
+## Fields
+
+This page contains the following fields: 
+
+|Field|Description|
+|:-----|:-----|
+|**Item number**|Displays the item number for the billing schedule line.  Available when this page is opened for a billing schedule line item. |
+|**Consumer price index calculation**|Select to determine the method used for the Consumer price index escalation calculation:<br />* **Prior consumer price index**: Uses the previous Consumer price index value for the escalation calculation.<br />* **Base consumer price index**:  Uses the base Consumer price index value for the escalation calculation.|
+**Line Grid**|
+|**Discount**|Select whether the change in the amount is an escalation or discount:<br />* **Selected**: The change is to apply a discount to the billing schedule or billing schedule line. <br />* **Cleared**: The change is to apply an escalation to a billing schedule or a schedule line. <br />This value cannot be edited for items that use the unbilled revenue feature. Also, discounts cannot be applied to items that use revenue splitting. |
+|**Start date**|Select the start date for the escalation or discount. |
+|**Frequency**|Select the frequency of the escalation or discount: **None**, **Monthly**, **Quarterly**, **Semiannually**, or **Annually**. |
+|**Percentage**|Type the percentage for the escalation or discount. |
+|**Amount**|Type the escalation or discount amount.|
+|**Consumer price index schedule**|Select the Consumer price index schedule that is used for the calculations. |
+|**End date**|Select the end date for the escalation or discount. <br />This value is required for items that use the unbilled revenue feature. |
+|**Deferral schedule number**|Displays the deferral schedule number. <br />Available only when this page is opened from the billing schedule line level. |
+|**Journal batch number**|Displays the journal batch number. <br />Available only when this page is opened from the billing schedule line level. |
+|**Total discount amount**|Displays the total sum of the discount amount for all lines in the grid. <br />Available only when this page is opened from the billing schedule line level. |
+|**Current short-term unbilled revenue amount**|Displays the current short-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring Contract Billing Parameters** page and the accounts are set up on the **Unbilled Revenue Setup** page for the line item. |
+|**Current long-term unbilled revenue amount**|Displays the current long-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring Contract Billing Parameters** page and the accounts are set up on the **Unbilled Revenue Setup** page for the line item. |
 
 ---
   
