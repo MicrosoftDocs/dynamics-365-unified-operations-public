@@ -64,9 +64,9 @@ Each module library definition file has an entry for each static resource string
 Take note of the resource key for the string you are interested in changing.  For example **signInLinkText** from the above sample code.
 
 
-## Override the resource strings
+## Override module library resource strings
 
-Module library resources are stored in a global.json file and can be found under the online SDK directory **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\resources\src\resources\modules** along with localized version of the strings in independent files.  Open the file and search for the key you are looking for, you should see a similar json as shown below.
+Module library resources are stored in a global.json file and can be found under the online SDK directory **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\resources\src\resources\modules** along with the localized versions in independent files.  Open the global.json file and search for the key you are looking for, you should see similar json as shown below for each string.
 
 ```json
     "signInLinkText": {
@@ -77,7 +77,7 @@ Module library resources are stored in a global.json file and can be found under
 
 The string can now be overridden by creating a new directory under our src directory called **resources** and then another sub directory called **modules** under that and adding a new file **global.json**.  For example **...\Msdyn365.Commerce.Online\src\resources\modules\global.json**.
 
-The new string can then be added by pre-pending the **@msdyn365-commerce-modules** namespace to the key name as shown below.
+The new string can then be added with a pre-pended **@msdyn365-commerce-modules** namespace on the key name as shown below:
 
 ```json
     "@msdyn365-commerce-modules.signInLinkText": { 
