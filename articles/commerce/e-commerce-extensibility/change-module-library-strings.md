@@ -35,7 +35,7 @@ In some cases, modules expose strings that are shown as configurations in a modu
 
 Once you know the module library string you want to replace, you can override the module string in a new global.json file by following the steps below.
 
-1.Find the module library resource string key you want to change
+1. Find the module library resource string key you want to change
 
 Each module library definition file has an entry for each static resource strings it uses which can be found within the module source code found under the  **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules** online sdk directory.  For example if you wanted to change the "Sign in" text in the header module, open the **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\header\src\modules\header\header.definition.json** file and you will see a **resources** section as shown below.
 
@@ -66,7 +66,7 @@ Each module library definition file has an entry for each static resource string
 Take note of the resource key for the string you are interested in changing.  For example **signInLinkText** from the above sample code.
 
 
-1.Override the resource strings
+2. Override the resource strings
 
 Module library resources are stored in a global.json file and can be found under the online SDK directory **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\resources\src\resources\modules** along with localized version of the strings in independent files.  Open the file and search for the key you are looking for, you should see a similar json as shown below.
 
@@ -77,31 +77,18 @@ Module library resources are stored in a global.json file and can be found under
     },
 ```
 
-We can now override this string by creating a new directory under our src directory "resources" and then another sub directory "modules" under that and adding a new file global.json.  For example **...\Msdyn365.Commerce.Online\src\resources\modules\global.json**.
+The string can now be overridden by creating a new directory under our src directory called **resources** and then another sub directory called **modules** under that and adding a new file **global.json**.  For example **...\Msdyn365.Commerce.Online\src\resources\modules\global.json**.
 
-
-To override a resource strings for a theme, use the pattern in the following example to modify the global.json resource file that is located in the src/resources/modules directory.
-
-```json
-"{ThemeNamespace}.{ThemeName}.{ResourceString}": {
-    "value" : "",
-    "_value.comment": ""
-}
-```
-
-To learn more about how resource strings are created and how to create a global.json file if one doesn't exist in your software development kit (SDK), see [Localize a module](localize-module.md).
-
-### Override resource strings for preinstalled themes
-
-To override resource strings for preinstalled themes (for example, fabrikam or starter themes), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text for the fabrikam theme.
+The new string can then be added by pre-pending the **@msdyn365-commerce-modules** namespace to the key name as shown below.
 
 ```json
-    "@msdyn365-commerce-modules."signInLinkText": { 
+    "@msdyn365-commerce-modules.signInLinkText": { 
         "value": "Log in",
         "comment": "Log-in Link text"
     }
 ```
 
+Once the package has been built and deployed, the new strings will override the default module library string.
 
 ## Additional resources
 
