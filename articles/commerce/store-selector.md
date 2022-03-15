@@ -5,7 +5,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 03/15/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -64,11 +64,15 @@ To enter the latitude and longitude values for a store location in Commerce head
 
 1. On the Action Pane, select **Save**. 
 
-### Hiding a store from store selector
+### Hide a store from the store selector module
 
-Some stores within a fulfillment group may not be valid pickup locations, to ensure they do not show up within the store selector module, disable the "Is Pickup Location" property in headquarters fulfillment group as shown below.  Ensure the 1070 **Channel configuration** distribution schedule job is run after making changes.
+Some stores within a fulfillment group may not be valid pickup locations. To ensure that invalid pickup locations do not appear as pickup options within the store selector module, follow these steps in Commerce headquarters.
 
-![Disable a store pickup location in headquarters](./media/store-locator-disable-pickup-store.png)
+1. Go to **Retail and Commerce \> Commerce setup \> Fulfillment groups \> All stores**.
+1. Select **Edit** on the action pane.
+1. Under **Setup**, for stores that are not valid pickup locations, clear the **Is Pickup Location** checkbox. 
+1. Select **Save** on the action pane.
+1. Run the 1070 **Channel configuration** distribution schedule job.
 
 ## Bing Maps integration
 
