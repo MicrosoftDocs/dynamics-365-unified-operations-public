@@ -124,7 +124,7 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pre
 
 ## Expired connectors
 
-Azure connectors that were created by using management certificates have an expiration date. After the expiration date has passed, the certificate will no longer be valid. Therefore, you won't be able to use the Azure connector or, in turn, manage any resources that have been deployed from LCS via that connector. To renew the connector and reset the expiration date, we recommend that you follow the steps in [Enable the Azure connector and add an LCS user](./arm-onboarding#enable-the-azure-connector-and-add-an-lcs-user) to edit the connector.  This will generate a new certificate for download, and reset the expiration date.
+Azure connectors that were created by using management certificates have an expiration date. After the expiration date has passed, the certificate will no longer be valid. Therefore, you won't be able to use the Azure connector or, in turn, manage any resources that have been deployed from LCS via that connector. To renew the connector and reset the expiration date, we recommend that you follow the steps in [Enable the Azure connector and add an LCS user](./arm-onboarding.md#enable-the-azure-connector-and-add-an-lcs-user) to edit the connector.  This will generate a new certificate for download, and reset the expiration date.
 
 An expiration date is shown only for connectors that use management certificates. If you created the connector via an LCS user, as described earlier in this topic, no expiration date will be shown. Instead, the Azure connector will be good for as long as the LCS user has access to the subscription.
 
