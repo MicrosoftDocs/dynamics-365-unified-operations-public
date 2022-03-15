@@ -174,12 +174,12 @@ You can filter by the following criteria to refine your query:
 
 Diagnostic events for Commerce components can also be accessed in Application Insights. Diagnostic events are available for the following components 
 
-####Commerce Scale Unit
+#### Commerce Scale Unit
 Minimum version requirements are as follows:
--10.0.23 (Retail Server version 9.33.22062.15 and above)
--10.0.24 (Retail Server version 9.34.22062.14 and above)
--10.0.25 (Retail Server version 9.35.22062.13 and above)
--10.0.26 and higher (All versions)
+- 10.0.23 (Retail Server version 9.33.22062.15 and above)
+- 10.0.24 (Retail Server version 9.34.22062.14 and above)
+- 10.0.25 (Retail Server version 9.35.22062.13 and above)
+- 10.0.26 and higher (All versions)
 
 #### Enable diagnostic events in Application Insights
 
