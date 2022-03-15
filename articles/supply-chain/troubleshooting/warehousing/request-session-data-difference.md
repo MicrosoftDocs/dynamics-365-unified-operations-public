@@ -35,4 +35,4 @@ The warehouse app task validation test run is not an idempotent operation&mdash;
 
 1. Investigate output XML of the last test step that succeeded to find out where your test run left off.
 1. Inspect your test and make sure all the required sales orders, transfer orders, work headers, and other records are still present and in the expected state.
-1. Recreate or edit and missing or modified records, or create a new test setup and modify the test to use valid existing records.
+1. Recreate or edit the missing or modified records, or create a new test setup and design the test to use valid existing records.
