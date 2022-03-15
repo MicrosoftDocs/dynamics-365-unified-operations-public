@@ -168,6 +168,7 @@ You can filter by the following criteria to refine your query:
 - POS user session ID
 - Severity level
 
+
 ![Search results on the Environment monitoring page.](./media/log-search-results.png)
 
 ### Access logs in Application Insights
