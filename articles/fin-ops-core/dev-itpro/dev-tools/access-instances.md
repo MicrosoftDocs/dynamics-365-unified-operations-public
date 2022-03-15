@@ -216,7 +216,7 @@ This process might take a while. The process is completed when the cmd.exe windo
 These environments are self-contained and have not been tested, nor are they supported when joined to an Azure AD domain when deployed via Azure.  
 
 ### Is there a way to hide the local account passwords in LCS?
-This is only possible if you lower a user's security role in the project to *Project team member* role and it is not possible to hide the local account passwords for the *Environment manager*, or *Project owner* roles.
+This is only possible if you lower a user's security role in the project to *Project team member* role, and it is not possible to hide the local account passwords for the *Environment manager*, or *Project owner* roles.
 
 ### Are cloud-hosted environments supported with Azure Bastion?
 These environments have not been tested, nor are they supported with Azure Bastion.  
