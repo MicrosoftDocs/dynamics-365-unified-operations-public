@@ -82,7 +82,7 @@ Module library resources are stored in the **global.json** file, which is found 
 
 To override the string, create a new directory under the **\Msdyn365.Commerce.Online\src** directory named **resources** and then create a subdirectory named **modules** under that. Then, add a new, empty **global.json** file to the **modules** directory, for example **...\Msdyn365.Commerce.Online\src\resources\modules\global.json**.
 
-Next, add a new string entry to the new **global.json** that has a prepended **@msdyn365-commerce-modules** namespace on the key name, as shown in the following example (where the new string is "Log in").
+Next, add a new string entry to the new **global.json** file that has a prepended **@msdyn365-commerce-modules** namespace on the key name, as shown in the following example (where the resource string key is **signInLinkText** and the new string is "Log in").
 
 ```json
     "@msdyn365-commerce-modules.signInLinkText": { 
