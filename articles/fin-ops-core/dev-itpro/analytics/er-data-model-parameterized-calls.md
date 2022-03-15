@@ -289,7 +289,7 @@ You can implement the modifications when a running format collects, in memory, t
 6. On the **Data model** page, make sure that the `Root` field is selected, and then select **New**.
 7. In the drop-down dialog box, follow these steps:
 
-    1. In the **New mode as** field group, select the **Child of an active node** option.
+    1. In the **New node as** field group, select the **Child of an active node** option.
     2. In the **Name** field, enter **Party**.
     3. In the **Item type** field, select **Record list**.
     4. Select **Add** to finish adding the new field.
@@ -311,7 +311,7 @@ You can implement the modifications when a running format collects, in memory, t
 10. Make sure that the `Root.Party` field is still selected, and then select **New**.
 11. In the drop-down dialog box, follow these steps:
 
-    1. In the **New mode as** field group, select the **Child of an active node** option.
+    1. In the **New node as** field group, select the **Child of an active node** option.
     2. In the **Name** field, enter **Name**.
     3. In the **Item type** field, select **String**.
     4. Select **Add** to finish adding the new field.
