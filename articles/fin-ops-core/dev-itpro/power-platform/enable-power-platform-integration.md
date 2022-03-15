@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 02/15/2022
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -33,13 +33,13 @@ The integration of Finance and Operations apps with Microsoft Power Platform can
 
 ## Environment lifecycle considerations
 
-By default, all Finance and Operations environments managed by LCS will receive a linked Power Platform environment without Dataverse. This is a one-to-one relationship that will, over time, be the location where your Finance and Operations apps will migrate. An environment that is linked to an environment from LCS will display the Finance and Operations apps URL on the environment details page in the Power Platform admin center.
+By default, all Finance and Operations apps environments that are managed by LCS will receive a linked Power Platform environment without Dataverse. The relationship is one to one. Over time, your Finance and Operations apps will be migrated to this location. You can determine whether an environment is linked to an environment from LCS by looking at the Finance and Operations apps URL on the environment details page in the Power Platform admin center.
 
 :::image type="content" source="media/LinkedPowerPlatformEnvironment.png" alt-text="Linked Power Platform environment":::
 
-This environment cannot be deleted or reset, and it cannot manually have a Dataverse database added to it. To add Dataverse, and fully set up the Power Platform integration, complete the following steps. 
+This environment can't be deleted or reset, and a Dataverse database can't be manually added to it. To add Dataverse and fully set up the Microsoft Power Platform integration, follow the steps later in this topic.
 
-Alternatively, if you want to reuse an existing Dataverse environment for your Power Platform integration scenarios, such as virtual entities, add-ins, and dual-write, then follow the recommendations for [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+Alternatively, if you want to reuse an existing Dataverse environment for your Microsoft Power Platform integration scenarios (virtual entities, add-ins, dual-write functionality, and more), follow the instructions in [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
 
 ## Prerequisites for setting up the Microsoft Power Platform integration
 
@@ -125,16 +125,16 @@ If the Microsoft Power Platform integration isn't enabled during deployment of t
 >
 > If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations apps environment. Eventually, fields for the language and currency will be added as setup options, so that you can manually set them or accept the default values.
 
-## Enable integration with an existing Microsoft Power Platform environment
+## Enable integration with an existing Power Platform environment
 
-When you enable the Microsoft Power Platform integration for a Finance and Operations apps environment in LCS, either during or after deployment, the process creates a new Dataverse-enabled Power Platform environment and links the Finance and Operations apps environment to the new Power Platform environment. However, you might want to enable integration by linking your Finance and Operations apps environment to an existing Power Platform environment, rather than the environment created automatically during deployment. The option to select an existing Power Platform environment with which to enable the Power Platform integration isn't currently available in LCS but will be available soon.
+When you enable the Microsoft Power Platform integration for a Finance and Operations apps environment in LCS, either during or after deployment, the process creates a new Dataverse-enabled Power Platform environment and links the Finance and Operations apps environment to it. However, you might want to enable the integration by linking your Finance and Operations apps environment to an existing Power Platform environment instead of the environment that was automatically created during deployment. Currently, LCS doesn't let you select an existing Power Platform environment that you can use to enable the Microsoft Power Platform integration. However, this option will be available soon.
 
-There are other ways to connect Dataverse and a Finance and Operations apps environment. These are outlined in the following list, and are not considered Power Platform integration:
+You can also connect Dataverse and a Finance and Operations apps environment in the following ways. These options aren't considered Microsoft Power Platform integration.
 
-- **Dual-write**: The option is available in the dual-write configuration to create a link to a Dataverse environment in any Power Platform environment on the tenant.  We recommend that you do not connect dual-write to an environment this is different than your Power Platform integration environment.
-- **Virtual entities**: The virtual entity configuration in the Power Platform environment allows you to select the Finance and Operations environment.  We recommend that you do not connect virtual entities to an environment that is different than your Power Platform integration environment.
+- **Dual-write** – The dual-write configuration lets you create a link to a Dataverse environment in any Power Platform environment on the tenant. We don't recommend that you connect dual-write to an environment other than your Microsoft Power Platform integration environment.
+- **Virtual entities** – The virtual entity configuration in the Power Platform environment lets you select the Finance and Operations apps environment. We don't recommend that you connect virtual entities to an environment other than your Microsoft Power Platform integration environment.
 
-When Lifecycle Services detects that a mismatch, meaning you have a Power Platform integration environment set up in LCS but one of the other technologies such as dual-write is connected to another instance, a warning will be displayed in LCS that this is not recommended.  If you have not yet set up the Power Platform integration from LCS and want to connect to an existing Dataverse-based Power Platform environment, follow [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
+If a Microsoft Power Platform integration environment is set up in LCS, but one of the other technologies (for example, dual-write) is connected to another instance, LCS detects the mismatch. It then shows a warning message that states this approach isn't recommended. If you haven't yet set up the Microsoft Power Platform integration from LCS, and you want to connect to an existing Dataverse-based Power Platform environment, follow the instructions in [Set up dual-write for an existing Dataverse environment](../data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-an-existing-dataverse-environment).
 
 ### Finance and Operations apps connected to a single Microsoft Power Platform environment
 
