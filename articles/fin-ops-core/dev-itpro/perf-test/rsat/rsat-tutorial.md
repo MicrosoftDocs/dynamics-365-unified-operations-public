@@ -198,7 +198,7 @@ Lists all commands or show help for a specific command with available parameters
 
 ##### ?: Optional parameters
 
-`command`: Where ``[command]`` is one of the commands specified below.
+`command`: Where ``[command]`` is one of the commands specified above.
 
 #### about
 
@@ -251,8 +251,8 @@ You can use the ``listtestsuitenames`` command to get all available test suites,
 
 ##### downloadsuite: required parameters
 
-+ `test_suite_name`: Represents the test case name. Required in case /byid switch is **not** specified. This is the Azure DevOps test suite name.
-+ `test_suite_id`  : Represents the test case ID.   Required in case /byid switch **is** specified. This is test suite Azure DevOps ID.
++ `test_suite_name`: Represents the test suite name. Required in case /byid switch is **not** specified. This is the Azure DevOps test suite name.
++ `test_suite_id`  : Represents the test suite ID.   Required in case /byid switch **is** specified. This is test suite Azure DevOps ID.
 
 ##### downloadsuite: optional parameters
 
@@ -293,7 +293,7 @@ Generates test execution and parameter files for the specified test case in the 
 ##### generate: optional switches
 
 + `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the generate process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
-+ `/dllonly` : Generate Test Execution files only. Do no regenerate Excel parameter file.
++ `/dllonly` : Generate Test Execution files only. Does not regenerate Excel parameter file.
 + `/keepcustomexcel` : Upgrading existing parameters file. This will also regenerate Execution files.
 
 ##### generate: required parameters
@@ -369,7 +369,7 @@ Generates test automation files for all test cases in the specified test suite. 
 ##### generatetestsuite: optional switches
 
 + `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the generate process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
-+ `/dllonly` : Generate Test Execution files only. Do no regenerate Excel parameter file.
++ `/dllonly` : Generate Test Execution files only. Does not regenerate Excel parameter file.
 + `/keepcustomexcel` : Upgrading existing parameters file. This will also regenerate Execution files.
 + `/byid` : This switch indicates that the desired test suite is identified by its Azure Devops ID instead of test suite name.
 
@@ -529,11 +529,11 @@ Plays back all test cases from one or more specified test suites. If /local swit
 
 ##### playbacksuite: optional switches
 
-+ /updatedriver: When specified, this switch will update the internet browser webdriver if needed before running playback.
-+ /local: Indicate that local attachments should be used for playback rather than downloading files from Azure DevOps.
++ `/updatedriver` : When specified, this switch will update the internet browser webdriver if needed before running playback.
++ `/local` : Indicate that local attachments should be used for playback rather than downloading files from Azure DevOps.
 + `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the playback process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
 + `/comments[="comment"]` :  Provide a custom information string that will be included in the Comments field under Azure DevOps test case runs summary and test results pages.
-+ /byid: Indicate that the desired test suite is identified by its Azure Devops ID instead of test suite name.
++ `/byid` : Indicate that the desired test suite is identified by its Azure Devops ID instead of test suite name.
 
 ##### playbacksuite: required parameters
 
@@ -562,11 +562,11 @@ This command executes all test cases in the specified Azure DevOps test suite.
 
 + `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the playback process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
 + `/comments[="comment"]` :  Provide a custom information string that will be included in the Comments field under Azure DevOps test case runs summary and test results pages.
-+ /byid: Indicate that the desired test suite is identified by its Azure Devops ID instead of test suite name.
++ `/byid` : Indicate that the desired test suite is identified by its Azure Devops ID instead of test suite name.
 
 ##### playbacksuitebyid: required parameters
 
-+ `test_suite_id`  : Represents the test suite ID as it exists in Azure DevOps.
++ `test_suite_id` : Represents the test suite ID as it exists in Azure DevOps.
 
 ##### playbacksuitebyid: examples
 
@@ -616,8 +616,8 @@ Uploads only recording file belonging to one or more specified test cases to Azu
 
 ##### uploadrecording: required parameters
 
-+ `test_case_id1`  : Represents the first test case ID for recording to be uploaded to Azure DevOps.
-+ `test_case_idN`  : Represents the last test case ID for recording to be uploaded to Azure DevOps.
++ `test_case_id1` : Represents the first test case ID for recording to be uploaded to Azure DevOps.
++ `test_case_idN` : Represents the last test case ID for recording to be uploaded to Azure DevOps.
 
 ##### uploadrecording: examples
 
