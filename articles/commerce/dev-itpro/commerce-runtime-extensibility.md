@@ -217,6 +217,9 @@ Implement the following classes for a new CRT service:
 
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
 
+> [!NOTE]
+> Recommend for extension code to use ConfigureAwait(false) when executing the request.
+
 ### Request class
 
 ```csharp
