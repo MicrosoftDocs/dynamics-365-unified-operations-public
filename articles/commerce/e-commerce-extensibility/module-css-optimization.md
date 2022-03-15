@@ -4,7 +4,7 @@
 title: Module CSS optimization
 description: This topic describes how to use the module CSS optimization feature in Microsoft Dynamics 365 Commerce to help reduce the overall CSS bundle size of an e-commerce page and improve page performance.
 author: samjarawan
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
