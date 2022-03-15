@@ -187,6 +187,8 @@ Users can use the following API URLs to submit on-hand change schedules and quer
 | `/api/environment/{environment-ID}/onhand/indexquery` | `POST` | Query by using the `POST` method. |
 | `/api/environment/{environment-ID}/onhand` | `GET` | Query by using the `GET` method. |
 
+For more information, see [Inventory Visibility public APIs](inventory-visibility-api.md).
+
 ### Post on-hand change schedules
 
 On-hand change schedules are made by submitting a `POST` request to the relevant Inventory Visibility service URL (as listed previously). You can also submit bulk requests.

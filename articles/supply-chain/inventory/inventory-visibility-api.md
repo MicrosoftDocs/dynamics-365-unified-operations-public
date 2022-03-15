@@ -568,4 +568,8 @@ Here is a sample get URL. This get request is exactly the same as the post sampl
 /api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
+## Available to promise
+
+It is possible to set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period of time, and making use of this calculation can greatly increase your order fulfillment capability. For instructions about how to enable this feature, and how to interact with Inventory Visibility through its API after the feature is enabled, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
