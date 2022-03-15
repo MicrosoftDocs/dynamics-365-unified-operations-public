@@ -33,9 +33,7 @@ This topic describes how to change module library strings from within Microsoft 
 
 In some cases, modules expose strings that are shown as configurations in a module that can be configured in Commerce site builder. However, other strings, such as the text that is shown for the sign-in button, might be hardcoded as module resource strings.  Some additional strings are stored as part of a theme, see the [Change theme module strings](change-theme-module-strings.md) topic for more information.
 
-Once you know the module library string you want to replace, you can override the module string in a new global.json file by following the steps below.
-
-1. Find the module library resource string key you want to change
+## Find the module library resource string key you want to change
 
 Each module library definition file has an entry for each static resource strings it uses which can be found within the module source code found under the  **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules** online sdk directory.  For example if you wanted to change the "Sign in" text in the header module, open the **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\header\src\modules\header\header.definition.json** file and you will see a **resources** section as shown below.
 
@@ -66,7 +64,7 @@ Each module library definition file has an entry for each static resource string
 Take note of the resource key for the string you are interested in changing.  For example **signInLinkText** from the above sample code.
 
 
-2. Override the resource strings
+## Override the resource strings
 
 Module library resources are stored in a global.json file and can be found under the online SDK directory **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\resources\src\resources\modules** along with localized version of the strings in independent files.  Open the file and search for the key you are looking for, you should see a similar json as shown below.
 
