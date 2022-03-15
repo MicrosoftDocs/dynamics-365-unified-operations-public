@@ -2,8 +2,7 @@
 # required metadata
 
 title: Billing schedule features
-description: This topic explains some of the features available on a billing schedule such as pricing methods, escalation and discount, alignment dates, proration, reverse billing, and split item groups. 
-  
+description: This topic explains the features available on a billing schedule such as pricing methods, escalation and discount, alignment dates, proration, reverse billing, and split item groups. 
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -16,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 539093
@@ -33,7 +32,7 @@ ms.dyn365.ops.version: 10.0.24
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains more features available on a billing schedule and billing schedule lines. The different methods used for pricing, how to use Escalation and discount, and examples of proration calculations are included. Learn how to reverse a billing period and examples of split item group. 
+This topic explains features available on a billing schedule and billing schedule lines. The different methods used for pricing, how to use **Escalation and discount**,  examples of proration calculations, as well as how to reverse a billing period and examples of split item group. 
 
 ## Pricing methods
 
@@ -45,15 +44,15 @@ You can use one of the following pricing methods to calculate the unit price of 
 
 ### Flat 
 
-When the flat pricing method is used, the unit price for a billing schedule line item on the **All billing schedules** page can be edited to any value you want. When the flat pricing option is used, the **Price unit** is always 1. As a result, the **Unit price** and the **Net amount** for an item are the same. 
+When the flat pricing method is used, the unit price for a billing schedule line item on the **All billing schedules** page can be edited to any value you want. The **Price unit** is always 1 and as a result, the **Unit price** and the **Net amount** for an item are the same. 
 
-### Standard Price  (no Trade Agreement)
+### Standard price  (no trade agreement)
 
-When the standard pricing method (without a trade agreement) is used, the unit price for a billing schedule line item is set up on the **Release product details** page under **Product information management**. Specifically, the unit price is from the **Base sales price** section and is calculated as follows: **Price** / **Price quantity**.
+When the standard pricing method (without a trade agreement) is used, the unit price for a billing schedule line item is set up on the **Release product details** page > **Product information management**. The unit price is in the **Base sales price** section and is calculated as: **Price** / **Price quantity**.
 
 ### Standard Price (with Trade Agreement)
 
-The following example provides information using standard pricing calculations when a trade agreement exists. You can create trade agreements from the **Release product details** page.
+The following is an example of the standard pricing calculations when a trade agreement exists. You can create trade agreements from the **Release product details** page.
 
 An item has the following price brackets: 
 
@@ -65,11 +64,11 @@ An item has the following price brackets:
 |200|999999|Each|1.00|1|
 
 Using the price brackets, assume the invoice quantity is 250. With the standard pricing method, the unit price is calculated as follows: 
-* Quantity 250 is in the price quantity range 200 - 99999 , so the unit price is 1.00
+* Quantity 250 is in the price quantity range 200 - 99999, so the unit price is 1.00
 
 >Net amount = (Quantity * Price) / Price unit = (250 * 1.00) / 100 = 2.50 
 
-Another example for an invoice quantity of 100. With the standard pricing method, the unit price is calculated as follows: 
+An example for an invoice quantity of 100. With the standard pricing method, the unit price is calculated as: 
 * Unit price = 1.50, which uses the price level that has the quantity of 100 
 * Note: standard FROM and TO quantity matches if the quantity is >=FROM quantity and <TO quantity
 
@@ -85,8 +84,8 @@ An item has the following price brackets:
 |100|200 |Each|1.25|10|
 |200|999999|Each|1.00|10|
 
-Using the price brackets, assume the invoice quantity is 250. With the tier pricing method, the net amount is calculated. After calculating the net amount, you can obtain the unit price by dividing the new amount by the quantity. Review the sequence of events to obtain the unit price: 
-1. Get the prices of the items based on the pricing brackets: 
+Using the price brackets, assume the invoice quantity is 250. With the tier pricing method, the net amount is calculated. After calculating the net amount, the unit price is calculated by dividing the new amount by the quantity: 
+1. The prices of the items based on the pricing brackets: 
    * First hundred items: 100 x 1.50  = 150.00 
    * Second hundred items: 100 x 1.25 = 125.00
    * Remaining items: 50 x 1.00 = 50.00
@@ -96,14 +95,14 @@ Using the price brackets, assume the invoice quantity is 250. With the tier pric
 
 ### Flat Tier Price 
 
-The price brackets are set as follows: 
+The price brackets are: 
 
 | Qty From| Qty To| U of M|Flat tier amount|Price Unit|
 | :------------- |:-------------| :------|------:|------:|
 |0 |50| Each|100.00|50|
 |50|200 |Each|150.00|200|
 
-The following invoices show the unit prices with the different quantities purchased. The Net amount is calculated first, then the unit price.  
+The following invoices show the unit prices with the different quantities purchased. The **Net amount** is calculated first, then the unit price.  
 
 |Invoice|Quantity Purchased|Unit Price|Net Amount|
 | :------------- |:-------------:| :------|------:|
@@ -119,25 +118,24 @@ The following invoices show the unit prices with the different quantities purcha
 
 ## Escalation and discount
 
-Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [select a billing schedule line] > [click Escalation and discount]
+**Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > Select a billing schedule line > Escalation and discount**.
 
-Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [click a billing schedule] > [click Escalation and discount] 
+**Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > Select a billing schedule > Escalation and discount**. 
 
-
-This topic explains how to apply and process an escalation or discount for a billing schedule or a billing schedule line. 
+ 
 * An escalation is a price increase for a future billing period where the invoice has not yet been created.
 * A discount is a price reduction for a future billing period where the invoice has not yet been created.
 
-Escalations and discounts cannot be applied to a billing schedule retroactively. For example, you wanted to apply and process an escalation to a billing schedule three months in the past. In Subscription billing, it is not possible to "catch up" on a price increase that was to happen three months ago. 
+Escalations and discounts cannot be applied to a billing schedule retroactively. For example, you wanted to apply and process an escalation to a billing schedule three months in the past. In Subscription billing, it is not possible to apply a price increase that happened three months ago. 
 
 You can apply the escalation or discount to a billing schedule or billing schedule line in one of the following ways: 
-* from the **All/Active billing schedules** list 
-* to the billing schedule displayed on the Billing schedule
-* to a specific Billing schedule line
+* From the **All/Active billing schedules** list 
+* To the **Billing schedule** 
+* To a specific **Billing schedule line**
 
 ### Apply Escalation or Discount
 
-To apply an escalation or discount to a billing schedule, follow these steps: 
+To apply an escalation or discount to a billing schedule: 
 1. Select a billing schedule or a billing schedule line.
 2. Select **Escalation and discount** from either the Escalation and discount tab or the Escalation and discount action on the billing schedule line.
 3. Select the **Consumer price index calculation** for the escalation or discount. This is only used if a consumer price index is used to calculate the escalation or discount. 
@@ -177,7 +175,7 @@ This page contains the following fields:
   
 ## Proration examples
 
-This topic explains calculations for proration, which can be based on the number of days or number of months. The method used for the proration calculation is set on the **Recurring contract billing parameters** page. The proration method affects how the amounts are calculated for a billing schedule in the following situations: 
+Calculations for proration, which can be based on the number of days or number of months. The method used for the proration calculation is set on the **Recurring contract billing parameters** page. The proration method affects how the amounts are calculated for a billing schedule in the following situations: 
 - Initial creation
 - Application of an escalation or discount
 - Termination
