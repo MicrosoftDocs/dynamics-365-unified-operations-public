@@ -375,8 +375,8 @@ Generates test automation files for all test cases in the specified test suite. 
 
 ##### generatetestsuite: required parameters
 
-+ `test_suite_name`: Represents the test case name. Required in case /byid switch is **not** specified. This is the Azure DevOps test suite name.
-+ `test_suite_id`  : Represents the test case ID.   Required in case /byid switch **is** specified. This is test suite Azure DevOps ID.
++ `test_suite_name`: Represents the test suite name. Required in case /byid switch is **not** specified. This is the Azure DevOps test suite name.
++ `test_suite_id`  : Represents the test suite ID.   Required in case /byid switch **is** specified. This is test suite Azure DevOps ID.
 
 ##### generatetestsuite: optional parameters
 
@@ -446,31 +446,45 @@ Lists all available test suites in the current test plan.
 
 #### playback
 
-Plays back a test case using an Excel file.
+Playback the test case associated with the specified Excel parameter file. The command use existing local automation files, and does not download files from Azure DevOps. This command is not supported for POS commerce test cases.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file]``
+
+##### playback: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the playback process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
++ `/comments[="comment"]` :  Provide a custom information string that will be included in the Comments field under Azure DevOps test case runs summary and test results pages.
 
 ##### playback: required parameters
 
-+ `excel_file`: A full path to the Excel file. File must exist.
++ `excel_parameter_file`: A full path to an Excel parameter file. The file must exist.
 
 ##### playback: examples
 
-`playback c:\RSAT\TestCaseParameters\sample1.xlsx`
+`playback c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playback e:\temp\test.xlsx`
+`playback /retry e:\temp\test.xlsx`
+
+`playback /retry=300 e:\temp\test.xlsx`
+
+`playback /comments="Payroll solution 10.0.0" e:\temp\test.xlsx`
 
 #### playbackbyid
 
-Plays back multiple test cases at once. You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+Playback multiple test cases at once identified by their ID. This command will download files from Azure DevOps. You can use the ``list`` command to get all available test cases. Use any of the values from the first column as a **test_case_id** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[/retry[=<seconds>]] [/comments[="comment"]] [test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### playbackbyid: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the playback process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
++ `/comments[="comment"]` :  Provide a custom information string that will be included in the Comments field under Azure DevOps test case runs summary and test results pages.
 
 ##### playbackbyid: required parameters
 
-+ `test_case_id1`: ID of exisiting test case.
-+ `test_case_id2`: ID of exisiting test case.
-+ `test_case_idN`: ID of exisiting test case.
++ `test_case_id1`: ID of an exisiting test case.
++ `test_case_id2`: ID of an exisiting test case.
++ `test_case_idN`: ID of an exisiting test case.
 
 ##### playbackbyid: examples
 
@@ -478,75 +492,132 @@ Plays back multiple test cases at once. You can use the ``list`` command to get 
 
 `playbackbyid 2345 667 135`
 
+`playbackbyid /comments="Payroll solution 10.0.0" 2345 667 135`
+
+`playbackbyid /retry /comments="Payroll solution 10.0.0" 2345 667 135`
+
 #### playbackmany
 
-Plays back many test cases at once, using Excel files.
+Playback many test cases at once, identified by Excel parameter files. The command use existing local automation files, and does not download files from Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file1] [excel_parameter_file2] ... [excel_parameter_fileN]``
+
+##### playbackmany: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the playback process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
++ `/comments[="comment"]` :  Provide a custom information string that will be included in the Comments field under Azure DevOps test case runs summary and test results pages.
 
 ##### playbackmany: required parameters
 
-+ `excel_file1`: Full path to the Excel file. File must exist.
-+ `excel_file2`: Full path to the Excel file. File must exist.
-+ `excel_fileN`: Full path to the Excel file. File must exist.
++ `excel_parameter_file1`: Full path to the Excel parameter file. File must exist.
++ `excel_parameter_file2`: Full path to the Excel parameter file. File must exist.
++ `excel_parameter_fileN`: Full path to the Excel parameter file. File must exist.
 
 ##### playbackmany: examples
 
-`playbackmany c:\RSAT\TestCaseParameters\param1.xlsx`
+`playbackmany c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
+`playbackmany e:\temp\test.xlsx f:\RSAT\sample1.xlsx c:\RSAT\sample2.xlsx`
+
+`playbackmany /retry=180 /comments="Payroll solution 10.0.0" e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
 
 #### playbacksuite
 
-Plays back all test cases from the specified test suite.
-You can use ``listtestsuitenames`` command to get all available test suites. Use any value from first column as **suite_name** parameter.
+Plays back all test cases from one or more specified test suites. If /local switch specified then local attachments will be used for playback. Otherwise attachments will be downloaded from Azure DevOps. You can use ``listtestsuitenames`` command to get all available test suites. Use any value from first column as **suite_name** parameter.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] ([test_suite_name1] .. [test_suite_nameN] | [/byid] [test_suite_id1] .. [test_suite_idN])``
+
+##### playbacksuite: optional switches
+
++ /updatedriver: When specified, this switch will update the internet browser webdriver if needed before running playback.
++ /local: Indicate that local attachments should be used for playback rather than downloading files from Azure DevOps.
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the playback process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
++ `/comments[="comment"]` :  Provide a custom information string that will be included in the Comments field under Azure DevOps test case runs summary and test results pages.
++ /byid: Indicate that the desired test suite is identified by its Azure Devops ID instead of test suite name.
 
 ##### playbacksuite: required parameters
 
-+ `suite_name`: Name of the desired suite.
++ `test_suite_name1`: Represents the test suite name. Required in case /byid switch is **not** specified. This is the Azure DevOps test suite name.
++ `test_suite_nameN`: Represents the test suite name. Required in case /byid switch is **not** specified. This is the Azure DevOps test suite name.
++ `test_suite_id1`  : Represents the test suite ID.   Required in case /byid switch **is** specified. This is test suite Azure DevOps ID.
++ `test_suite_idN`  : Represents the test suite ID.   Required in case /byid switch **is** specified. This is test suite Azure DevOps ID.
 
 ##### playbacksuite: examples
 
 `playbacksuite suiteName`
 
-`playbacksuite sample_suite`
+`playbacksuite suiteName suiteNameToo`
+
+`playbacksuite /updatedriver /local /retry=180 /byid 151 156`
+
+`playbacksuite /updatedriver /local /comments="Payroll solution 10.0.0" /byid 150`
+
+#### playbacksuitebyid
+
+This command executes all test cases in the specified Azure DevOps test suite.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuitebyid``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] [test_suite_id]``
+
+##### playbacksuitebyid: optional switches
+
++ `/retry[=seconds]` : if this switch is specified and case test cases are blocked by other RSAT instances, then the playback process will wait the given seconds and try one more time. Default value for [seconds] is 120 sec. Without this switch the process will canceled immediately if test cases are blocked.
++ `/comments[="comment"]` :  Provide a custom information string that will be included in the Comments field under Azure DevOps test case runs summary and test results pages.
++ /byid: Indicate that the desired test suite is identified by its Azure Devops ID instead of test suite name.
+
+##### playbacksuitebyid: required parameters
+
++ `test_suite_id`  : Represents the test suite ID as it exists in Azure DevOps.
+
+##### playbacksuitebyid: examples
+
+`playbacksuitebyid 2900`
+
+`playbacksuitebyid /retry 2099`
+
+`playbacksuitebyid /retry=200 2099`
+
+`playbacksuitebyid /retry=200 /comments="some comment" 2099`
 
 #### quit
 
-Closes the  application.
+Closes the application. Useful only when running in interactive mode.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
+##### quit: examples
+
+`quit`
+
 #### upload
 
-Uploads all files belonging to the specified test suite or test cases.
+Uploads attachment files (Recording, Execution, and Parameter files) belonging to a specified test suite or test cases to Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``([test_suite_name] | [test_case_id1] .. [test_case_idN])``
 
-#### upload: required parameters
+##### upload: required parameters
 
-+ `suite_name`: All files belonging to the specified test suite will be uploaded.
-+ `testcase_id`: All files beloning to the specified test case(s) will be uploaded.
++ `test_suite_name`: All files belonging to the specified test suite will be uploaded.
++ `test_case_id1`  : Represents the first test case ID to be uploaded. Use only when no test suite name has been provided.
++ `test_case_idN`  : Represents the last test case ID to be uploaded. Use only when no test suite name has been provided.
 
 ##### upload: examples
 
 `upload sample_suite`
 
-`upload 123`
+`upload 2900`
 
 `upload 123 456`
 
 #### uploadrecording
 
-Uploads only recording file belonging to the specified test cases.
+Uploads only recording file belonging to one or more specified test cases to Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[test_case_id1] .. [test_case_idN]``
 
 ##### uploadrecording: required parameters
 
-+ `testcase_id`: Recording file belonging to the specified test cases will be uploaded.
++ `test_case_id1`  : Represents the first test case ID for recording to be uploaded to Azure DevOps.
++ `test_case_idN`  : Represents the last test case ID for recording to be uploaded to Azure DevOps.
 
 ##### uploadrecording: examples
 
