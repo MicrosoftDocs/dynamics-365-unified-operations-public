@@ -2,7 +2,7 @@
 # required metadata
 
 title: Billing schedule features
-description: This topic explains some of the features available on a billing schedule such as pricing methods, escalation and discount, alignment dates, proration, reverse billing, and split item groups, 
+description: This topic explains some of the features available on a billing schedule such as pricing methods, escalation and discount, alignment dates, proration, reverse billing, and split item groups. 
   
 author: JodiChristiansen
 ms.date: 11/04/2021
@@ -28,11 +28,14 @@ ms.dyn365.ops.version: 10.0.24
 
 ---
 
-# Pricing methods
+# Billing schedule features
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
+This topic explains more features available on a billing schedule and billing schedule lines. The different methods used for pricing, how to use Escalation and discount, and examples of proration calculations are included. Learn how to reverse a billing period and examples of split item group. 
+
+## Pricing methods
 
 You can use one of the following pricing methods to calculate the unit price of an item: 
 * Flat (no example)
@@ -40,15 +43,15 @@ You can use one of the following pricing methods to calculate the unit price of 
 * Tier 
 * Flat Tier
 
-## Flat 
+### Flat 
 
 When the flat pricing method is used, the unit price for a billing schedule line item on the **All billing schedules** page can be edited to any value you want. When the flat pricing option is used, the **Price unit** is always 1. As a result, the **Unit price** and the **Net amount** for an item are the same. 
 
-## Standard Price  (no Trade Agreement)
+### Standard Price  (no Trade Agreement)
 
 When the standard pricing method (without a trade agreement) is used, the unit price for a billing schedule line item is set up on the **Release product details** page under **Product information management**. Specifically, the unit price is from the **Base sales price** section and is calculated as follows: **Price** / **Price quantity**.
 
-## Standard Price (with Trade Agreement)
+### Standard Price (with Trade Agreement)
 
 The following example provides information using standard pricing calculations when a trade agreement exists. You can create trade agreements from the **Release product details** page.
 
@@ -72,7 +75,7 @@ Another example for an invoice quantity of 100. With the standard pricing method
 
 >Net amount = (100 x 1.50) / 1 = 150
 
-## Tier Price 
+### Tier Price 
 
 An item has the following price brackets: 
 
@@ -91,7 +94,7 @@ Using the price brackets, assume the invoice quantity is 250. With the tier pric
 1. Use the net amount and quantity to obtain the unit price. 
 >Unit price = 32.50 / 250 = .13
 
-## Flat Tier Price 
+### Flat Tier Price 
 
 The price brackets are set as follows: 
 
@@ -114,7 +117,7 @@ The following invoices show the unit prices with the different quantities purcha
 
   ---
 
-# Escalation and discount
+## Escalation and discount
 
 Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [select a billing schedule line] > [click Escalation and discount]
 
@@ -132,7 +135,7 @@ You can apply the escalation or discount to a billing schedule or billing schedu
 * to the billing schedule displayed on the Billing schedule
 * to a specific Billing schedule line
 
-## Apply Escalation or Discount
+### Apply Escalation or Discount
 
 To apply an escalation or discount to a billing schedule, follow these steps: 
 1. Select a billing schedule or a billing schedule line.
@@ -148,7 +151,7 @@ To apply an escalation or discount to a billing schedule, follow these steps:
    g. Specify the **End date**.
 5. Select **OK**.
 
-## Fields
+### Fields
 
 This page contains the following fields: 
 
@@ -172,7 +175,7 @@ This page contains the following fields:
 
 ---
   
-# Proration examples
+## Proration examples
 
 This topic explains calculations for proration, which can be based on the number of days or number of months. The method used for the proration calculation is set on the **Recurring contract billing parameters** page. The proration method affects how the amounts are calculated for a billing schedule in the following situations: 
 - Initial creation
@@ -184,7 +187,7 @@ This topic explains calculations for proration, which can be based on the number
 The proration method also affects the calculations in the monthly recurring revenue (MRR) report. 
 </div><div>
 
-## Example 1 proration
+### Example 1 proration
 
 The annual amount of a billing schedule is $5000. The start date is August 12, 2019; the end date is December 22, 2019. The billing frequency is annually. 
 - **Daily**
@@ -197,7 +200,7 @@ The annual amount of a billing schedule is $5000. The start date is August 12, 2
   - End month portion = 22/31
   - Prorated amount = 5000/12 * [(20/31) + 3 + (22/31)] = 1814.52
 
-## Example 2 proration
+### Example 2 proration
 
 The annual amount of a billing schedule is $12000. The start date is August 1, 2019; the end date is December 31, 2019. The billing frequency is annually. 
 - **Daily**
@@ -211,7 +214,7 @@ The annual amount of a billing schedule is $12000. The start date is August 1, 2
 
 ---
 
-# Reversing a period billing 
+## Reversing a period billing 
 
 This topic provides an example that shows how to reverse the billing of a period for a schedule line. 
 
@@ -237,11 +240,11 @@ Also, the original line still has a link to the original April invoice.
 
 ---
 
-# Split item group examples
+## Split item group examples
 
 This topic provides examples split item groups to promote understanding of item group functionality in Subscription billing. 
 
-## Customer Case
+### Customer Case
 
 In this example, the setup is as follows: 
 - On the **Recurring Contract Billing Parameters** page, **Split by item group** is selected and **Unique schedule type** is **Customer**. 
@@ -262,7 +265,7 @@ Customer US-001 purchases a renewal item with item group PREFIX. This transactio
 
 | Sales Order # | Customer|Main Item | Renewal Item | Renewal Item Group| Billing Schedule Number|
 | :------------- |:-------------:| :-------------| :-------------| :-------------| :-------------| 
-| #0001| 	US-001 |D0001 |D0002|PREFIX|SCH001|
+| SO0001| 	US-001 |D0001 |D0002|PREFIX|SCH001|
 
 When the invoice for the sales order is posted, the renewal item is automatically added to the existing billing schedule (SCH001) for the customer. This billing schedule uses the item group PREFIX. All renewal items that have the same item group are put into the same billing schedule.
 
@@ -282,7 +285,7 @@ Customer US-001 purchases a renewal item with item group SPP. This transaction i
 
 | Sales Order # | Customer|Main Item | Renewal Item | Renewal Item Group| Billing Schedule Number|
 | :------------- |:-------------:| :-------------| :-------------| :-------------| :-------------| 
-| #0002| 	US-001 |D0003 |D0004|SPP||
+| SO0002| 	US-001 |D0003 |D0004|SPP||
 
 Currently, customer US-001 does not have a billing schedule that uses the item group SPP. As a result, a new billing schedule is created: 
 
@@ -298,17 +301,17 @@ Currently, customer US-001 does not have a billing schedule that uses the item g
 | :------------- |:-------------:| :-------------| 
 | SCH005| 	US-001 |D0004 |
 
-## Multiple Billing Schedules, Same End User and Customer
+### Multiple Billing Schedules, Same End User and Customer
 
 In this example, the setup is as follows: 
-* On the **Recurring Contract Billing Parameters** page, **Split by item group** is selected and **Unique schedule type** is **End user**. 
+* On the **Recurring contract billing parameters** page, **Split by item group** is selected and **Unique schedule type** is **End user**. 
 * On the **End users** page customer and end user relationships are set up. 
 
 | Customer account| End user account|
 | :------------- |:-------------| 
 | US-001| US-221 | 
 
-Multiple billing schedules are created for the customer and end user combination. With **Split by item group** selected on the **Recurring Contract Billing Parameters** page multiple billing schedules for the same customer and end user relationship can be created. 
+Multiple billing schedules are created for the customer and end user combination. With **Split by item group** selected on the **Recurring contract billing parameters** page multiple billing schedules for the same customer and end user relationship can be created. 
 
 | Billing schedule number| Customer|End user account|Header item group|
 | :------------- |:-------------:| :-------------| :-------------| 
@@ -318,20 +321,20 @@ Multiple billing schedules are created for the customer and end user combination
 
 On the **Item setup** page, create support and renewal item relationships.
 
-| Item code  | Item relation|Support item|Renewal item| Renewal item group|
-| :------------- |:-------------:| :-------------| :-------------| 
+| Item code | Item relation|Support item|Renewal item| Renewal item group|
+| :------------- |:-------------:| :-------------| :-------------| :-------------|
 | Table| 	D001|	ITEM27 |D007|	IG1|
 | Table| 	D002 |	ITEM28 |D005|	IG2|
 | Table| 	D003 |	ITEM29 |D006|	IG3|
 
-A sales order with items are from the **Item Setup** page are created for customer US-001. When creating the sales order, you can open the **Support and Renewal Process** page and specify the **End user account** and specify any other information for the renewal item. 
+A sales order with items are from the **Item Setup** page are created for customer US-001. When creating the sales order, you can open the **Support and renewal process** page and specify the **End user account** and specify any other information for the renewal item. 
 
 When the invoice for the transaction is created and posted, different billing schedules are created for the customer-end user and item group combination. More than one line in the same sales order can be assigned to the same billing schedule. 
 
 | Sales order # | Customer|End user account | Main item | Support item |Renewal item| Billing schedule number|
 | :------------- |:-------------:| :-------------| :-------------| :-------------| :-------------|:-------------| 
-| #0001| 	US-001 |US-221|D001|ITEM27|D007|SCH005|
-| #0001| 	US-001 |US-221|D002|ITEM28|D005|SCH006|
-| #0001| 	US-001 |US-221|D003|ITEM29|D006|SCH005|
+| SO0001| 	US-001 |US-221|D001|ITEM27|D007|SCH005|
+| SO0001| 	US-001 |US-221|D002|ITEM28|D005|SCH006|
+| SO0001| 	US-001 |US-221|D003|ITEM29|D006|SCH005|
 
 
