@@ -71,7 +71,7 @@ Take note of the resource key for the string you want to change. For example, th
 
 The next step to change the module library string is to override the module library resource string.
 
-Module library resources are stored in the global.json file, which is found under the **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\resources\src\resources\modules** online SDK directory, along with the localized versions in separate, independent files. To confirm the resource string key you found in the module source code, open the global.json file and search for the key you are looking for (**signInLinkText** in this example). You should see an entry similar to the one in the following example for each string.
+Module library resources are stored in the **global.json** file, which is found under the **\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\resources\src\resources\modules** online SDK directory, along with the localized versions in separate, independent files. To confirm the resource string key you found in the module source code, open the global.json file and search for the key you are looking for (**signInLinkText** in this example). You should see an entry similar to the one in the following example for each string.
 
 ```json
     "signInLinkText": {
@@ -80,9 +80,9 @@ Module library resources are stored in the global.json file, which is found unde
     },
 ```
 
-To override the string, create a new directory under the **\src\\** directory named **resources** and then create a subdirectory named **modules** under that. Then, add a new **global.json** file to the **modules** directory, for example **...\Msdyn365.Commerce.Online\src\resources\modules\global.json**.
+To override the string, create a new directory under the **\Msdyn365.Commerce.Online\src** directory named **resources** and then create a subdirectory named **modules** under that. Then, add a new, empty **global.json** file to the **modules** directory, for example **...\Msdyn365.Commerce.Online\src\resources\modules\global.json**.
 
-Next, add a new string entry with a prepended **@msdyn365-commerce-modules** namespace on the key name, as shown in the following example (where the new string is "Log in").
+Next, add a new string entry to the new **global.json** that has a prepended **@msdyn365-commerce-modules** namespace on the key name, as shown in the following example (where the new string is "Log in").
 
 ```json
     "@msdyn365-commerce-modules.signInLinkText": { 
