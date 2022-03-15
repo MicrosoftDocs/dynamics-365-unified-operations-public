@@ -76,6 +76,9 @@ Asynchronous execution is supported for these scenarios:
 + Overrides of the Commerce API handler that is running
 + Pre-triggers and post-triggers
 
+> [!NOTE]
+> Recommend for extension code to use ConfigureAwait(false) when executing the request.
+
 ## Create a new asynchronous Commerce Runtime API
 
 To create a new asynchronous Commerce API, you must create three classes:
