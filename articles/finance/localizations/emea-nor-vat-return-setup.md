@@ -96,6 +96,9 @@ Application-specific parameters for the **VAT Declaration XML (NO)** and **VAT D
 | [VATSpecification_Lookup](#vat-specification) | The code list for further specification of VAT. | During the runtime of the report, this lookup field is used to find value from the enumerated list of values that the Norwegian Tax Administration requires, based on master data from Finance, and to report it in the `<spesifikasjon>` tag under the `<mvaSpesifikasjonslinje>` node. |
 | [StandardTaxCodes_Lookup](#standard-tax-code) | The VAT code that is provided by the Norwegian Tax Administration. | During the runtime of the report, this lookup field is used to find the standard tax code for the sales tax code that is used in sales tax posting in Finance, and to report it in the `<mvaKode>` tag of the report. |
 
+> [!NOTE]
+> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Design multilingual reports in Electronic reporting \> Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports#performance).
+
 Follow these steps to set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats.
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
@@ -481,7 +484,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
     | NO Altinn PUT JSON | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
     | NO Altinn PUT XML | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
     | NO Altinn GET attachments | Leave this field blank. |
-    | NO Validate VAT return | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
+    | NO Validate VAT return | `https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 For *production* interoperation with web services that the Norwegian Tax Administration provides, use the following internet addresses.
 
