@@ -29,9 +29,9 @@ Before you can use ATP, you must set up one or more calculated measures to calcu
 
 The *ATP calculated measure* is a pre-defined calculated measure. The sum of its addition modifier quantities is the supply quantity and the sum of its subtraction modifier quantities is the demand quantity.
 
-You can add multiple calculated measures to calculate ATP quantities, but the total number of modifiers used in each of these calculated measures should be less than 8. <!-- KFM: Do we mean max of 8 for *each* ATP measure, or a total of 8 *across all* ATP measures? (My edit assumes *each*)-->
+You can add multiple calculated measures to calculate ATP quantities, but the total number of modifiers used across all ATP calculated measures should be less than 8. <!-- KFM: Updated to "across all" -->
 
-For example, you might set up the following calculated measures to calculate various types of ATP values:
+For example, you might set up a calculated measure called *On-hand-available* to calculate ATP values, and define it as follows.
 
 - **On-hand-change** = (Supply – Demand)<br>Where:
   - **Supply** = (PhysicalInvent + OnHand + Unrestricted + QualityInspection + Inbound)
@@ -39,6 +39,9 @@ For example, you might set up the following calculated measures to calculate var
 - **On-hand-available** = [PhysicalInvent + (OnHand + Unrestricted + QualityInspection + Inbound) – (Reservphysical + SoftReservePhysical + Outbound)]
 
 <!-- KFM: I pulled the above formulas from your comments later in this topic. Are they still correct? Do they work here? -->
+<!-- Reply from Yiren: it is most correct. But I have two questions:
+1. why do you use  parentheses for suply part: PhysicalInvent + (OnHand + Unrestricted + QualityInspection + Inbound)
+2. Would it be confused with on-hand ***change*** and ***on-hand***, lets disccuse it in meeting.-->
 
 For more information about calculated measures, see [Calculated measures](inventory-visibility-configuration.md#calculated-measures)
 
@@ -60,7 +63,7 @@ Turn on the *On-hand change schedule* feature in Power Apps and set up the ATP o
     > The **Schedule period** includes today, which means users can schedule on-hand changes to occur an time from today (the day the change is submitted) to (schedule period – 1) days in the future.
 
 1. Select **Save**.
-1. Repeat from step 5 until you have added all of the calculated measures you need for ATP.
+1. Repeat from step 5 until you have added all of the calculated measures you need for ATP. <!-- KFM: Why would I have more than one? How would that work? -->
 
 ## How the on-hand change schedule and ATP calculations work
 
@@ -73,12 +76,12 @@ Changes submitted through Inventory Visibility are initially uncommitted and the
 When a user queries Inventory Visibility for ATP quantities, the system replies with a data table <!-- KFM: is this best referred to as an array, a table, a result set, or something else? --> that provides the following information for each day during the schedule period:
 
 - **Date** – The date for which the row applies.
-- **On-hand** – The on-hand quantity for the specified date. It is calculated based on the current quantities committed in Supply Chain Management. <!-- KFM: Please confirm this formulation. Who/how/where are quantities "committed"? -->
-- **Supply** – <!-- KFM: Please provide a short description. -->
-- **Demand** – <!-- KFM: Please provide a short description. -->
-- **Projected on-hand** – The planed on-hand quantity for the specified date. It equals the current on-hand quantity combined with all of the on-hand change quantities <!--KFM: What do we mean by "on-hand change quantities". Can we express this using the the other terms in this list (eg, "supply", "demand", "planned on-hand", "ATP")? --> scheduled from today to the specified **Date**.
+- **On-hand** – The on-hand quantity for the specified date. It is calculated based on the current quantities committed in Supply Chain Management. <!-- KFM: Please confirm this formulation. Who/how/where are quantities "committed"? --> <!-- Reply from Yiren: I think "committed" not so appropriate, let discuss in the meeting. -->
+- **Supply** – The total sum of all incoming quantities that haven't become physically available for immediate consumption or shipment as of the specified **Date**. <!-- KFM: Changed "yet" to "as of the specified **Date**" Please confirm. -->
+- **Demand** – The total sum of all outbound quantities that haven't been consumed or shipped as of the specified **Date**. <!-- KFM: Changed "yet" to "as of the specified **Date**" Please confirm. -->
+- **Projected on-hand** – The planed on-hand quantity for the specified **Date**. It equals the current on-hand quantity combined with all of the on-hand change quantities scheduled from today until the specified **Date**. <!--Reply from Yiren: for example, we have the current onhand 20, we name it as **on-hand**, and we plan to add 8 tomorrow and delete 10 the day after tommorrow. In the plan, the onhand will become  28 tomorrow and 18 the day after tomorrow, and these values are projected onhand on tomorrow and the day after tomorrow. But not the real on-hand value-->  <!--KFM: by "on-hand change quantities". Can we express this using the the other terms in this list (eg, "supply", "demand", "planned on-hand", "ATP")? -->
 - **ATP** – The minimum projected on-hand quantity available from the specified **Date** until the end of the schedule period, which means that this is the maximum quantity that can be promised on that day.
-- **Planed on-hand** – Calculated based on the scheduled quantity changes using the ATP calculated measure specified in the setup. <!-- KFM: This never appears in the tables from the example in the following section. Where do we see/use this value? Is it the same as the **Projected on-hand**? If we have more than one ATM measure, which is used for this? I'm not sure what to do with this... -->
+- **Planed on-hand** – Calculated based on the scheduled quantity changes using the ATP calculated measure specified in the setup. <!-- KFM: This never appears in the tables from the example in the following section. Where do we see/use this value? Is it the same as the **Projected on-hand**? If we have more than one ATM measure, which is used for this? I'm not sure what to do with this... --> <!-- Reply from Yiren: it is the same. I try to describe projected on-hand as planed on-hand.-->
 
 For example, if today is 2022/02/01, the schedule period is 7, users can submit scheduled on-hand changes expected to occur from 2022/02/01 to 2022/02/07, and the ATP quantity for 2022/02/03 is calculated based on the ATP quantities from 2022/02/03 to 2022/02/07.
 
@@ -138,7 +141,7 @@ For example, if today is 2022/02/01, the schedule period is 7, users can submit 
     | 2022/02/06 | 20 | 3 |  | 16 | 16 |
     | 2022/02/07 | 20 |  |  | 16 | 16 |
 
-1. If the demand order (of quantity 3) for today (2022/02/01) has been committed, you should commit an on-hand change request to increase the on-hand quantity from 10 to 13, and also commit a scheduled demand with quantity -3 to revert the scheduled change. The result is as follows. <!--KFM: Please review my use of "commit" here (I was confused by the original). Who does the "commit" operation, and where/how does this occur? -->
+1. If the demand order (of quantity 3) for today (2022/02/01) has been committed, you should commit an on-hand change request to increase the on-hand quantity from 10 to 13, and also commit a scheduled demand with quantity -3 to revert the scheduled change. The result is as follows. <!--KFM: Please review my use of "commit" here (I was confused by the original). Who does the "commit" operation, and where/how does this occur? --><!-- Reply from Yiren: it is not an actual action in our service. It is the behaviour of customer. The use senario will be like that: The customer planed to receive some goods to their manufator, and if it really happend, the customer need to do the following steps: 1. add onhandl 2. revert the schedule. The "commit" is not a specific operation in our service. -->
 
     | Date | On-hand | Supply | Demand | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | --- |
