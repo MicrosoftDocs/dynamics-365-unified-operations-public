@@ -2762,6 +2762,8 @@
               href: e-commerce-extensibility/clone-starter-module.md
             - name: Extend a module definition
               href: e-commerce-extensibility/extend-module-definition.md
+            - name: Change module library static strings
+              href: e-commerce-extensibility/change-module-library-strings.md
           - name: Data actions
             items:
             - name: Data action overrides
