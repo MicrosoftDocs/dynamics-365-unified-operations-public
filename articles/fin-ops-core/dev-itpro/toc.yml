@@ -240,6 +240,8 @@
         href: data-entities/configure-export-data-lake.md
       - name: Finance and Operations apps in Azure Data Lake 
         href: data-entities/finance-data-azure-data-lake.md 
+      - name: Data and metadata stored in Azure Data Lake
+        href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
       - name: Make entity store available as a Data Lake 
         href: data-entities/entity-store-data-lake.md
       - name: Change data in Azure Data Lake
