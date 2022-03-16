@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 03/07/2022
+ms.date: 03/15/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -211,6 +211,15 @@ To restart the local runtime and redeploy all the packages, follow these steps.
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
 
 ## Frequently asked questions
+
+### Can we join cloud-hosted environments to our Azure AD domain as it is currently deployed in a workgroup?
+These environments are self-contained and have not been tested, nor are they supported when joined to an Azure AD domain when deployed via Azure.  
+
+### Is there a way to hide the local account passwords in LCS?
+This is only possible if you lower a user's security role in the project to *Project team member* role, and it is not possible to hide the local account passwords for the *Environment manager*, or *Project owner* roles.
+
+### Are cloud-hosted environments supported with Azure Bastion?
+These environments have not been tested, nor are they supported with Azure Bastion.  
 
 ### Environment is in a failed state and the error message is "Updated AAD Tenant is missing reply URL configuration"
 This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant that is different than the tenant used at the time of deployment. (Perhaps an update was done using the Admin user provisioning tool.) The updated tenant currently being used is missing the reply URL configuration required for successful login into the environment. The missing configuration causes the error. You should delete the environment and redeploy with a user from the tenant that the environment will be used with.

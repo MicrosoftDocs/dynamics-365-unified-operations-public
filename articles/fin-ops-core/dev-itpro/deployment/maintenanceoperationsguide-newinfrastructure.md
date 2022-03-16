@@ -4,7 +4,7 @@
 title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-ms.date: 12/02/2020
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ This topic explains how to perform maintenance operations for an environment tha
 
 ## Restart services
 
-You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **AOS service**, **DIXF (Data import export framework service)**, and **MR (Management Reporter service)**.
+You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **Finance and Operations apps service**, **Data management workspace**, and **Financial reporting service**.
 
 To restart a service, follow these steps.
 
