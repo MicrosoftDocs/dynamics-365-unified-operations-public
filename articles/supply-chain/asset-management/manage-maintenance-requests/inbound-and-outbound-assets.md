@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.5
 If your company does repair jobs or maintenance jobs on assets that are received from other locations or customers, Asset Management can track both inbound assets that are on their way to your company and outbound assets that are being returned.
 
 > [!NOTE]
-> If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions. For more information, see [Maintenance requests](../setup-for-maintenance-requests/requests.md).
+> If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions. For more information, see [Maintenance requests](/d365F-O/supply-chain/asset-management/manage-maintenance-requests/../manage-maintenance-requests/maintenance-request-overview).
 
 The setup of Asset Management determines whether you can work with inbound and outbound assets.
 

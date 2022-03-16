@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.0
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](removed-deprecated-features.md#flowchart-diagrams-in-business-process-modeler).
+> Flowchart diagrams in Business process modeler have been deprecated. To learn more about the deprecation, see [Flowchart diagrams in Business process modeler](/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features#flowchart-diagrams-in-business-process-modeler).
 
 You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This topic explains how you can view the default connected flowcharts, export a connected flowchart as a Visio file, and upload and view unconnected flowcharts.
 

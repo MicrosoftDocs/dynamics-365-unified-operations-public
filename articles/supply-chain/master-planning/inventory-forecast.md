@@ -34,7 +34,7 @@ There are also other ways to create forecast lines:
 - [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md).
 - [Import historical data for demand forecasts](import-historical-data.md).
 - [Generate the forecast by using a Microsoft Azure Machine Learning web service](demand-forecasting-setup.md).
-- [Import demand or supply forecast lines by using the data management framework (ForecastDemandForecastEntryStaging and ForecastSupplyForecastEntryStaging data entities)](../../dev-itpro/data-entities/data-entities-data-packages.md).
+- [Import demand or supply forecast lines by using the data management framework (ForecastDemandForecastEntryStaging and ForecastSupplyForecastEntryStaging data entities)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 As the table in step 1 show, there are different ways to access the pages that are used.
 

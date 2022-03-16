@@ -71,7 +71,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 - [Tools add-ins for Visual Studio](developer-tools-add-ins.md)
 - [Export and import models](models-export-import.md)
 - [Metadata search in Visual Studio](metadata-search-visual-studio.md)
-- [Create new users on development machines](enable-development-machine.md)
+- [Create new users on development machines](/d365F-O/fin-ops-core/dev-itpro/dev-tools/access-instances)
 - [Update the Visual Studio development tools](update-development-tools.md)
 - [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md)
 

@@ -41,7 +41,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [Get started with cost accounting (Learn)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Cost element dimensions](cost-elements.md)  |
+|  [Get started with cost accounting (Learn)](/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Cost element dimensions](cost-elements.md)  |
 |  [Dimension hierarchy](dimension-hierarchy.md)  |[Define cost control units](./tasks/define-cost-control-units.md)| 
 | [Allocation bases](allocation-bases.md)|[Create and assign a cost allocation policy to a cost control unit](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [Manage a data source for the cost accounting ledger](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Process and trace source data](./tasks/process-trace-source-data.md)     | 
