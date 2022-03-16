@@ -4,7 +4,7 @@
 title: Data events
 description: This topic provides an overview of data events.
 author: jaredha
-ms.date: 01/13/2021
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
