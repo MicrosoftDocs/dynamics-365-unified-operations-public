@@ -1,6 +1,6 @@
 ---
 title: Unexpected difference between request and session data during testing
-description: Unexpected difference between request and session data in warehouse app task validation results
+description: An unexpected difference occurs between request and session data in warehouse app task validation results.
 author: mamuszal
 ms.date: 03/11/2022
 ms.topic: troubleshooting
@@ -19,20 +19,20 @@ Error code: WarehouseMobileDeviceRequestInputValidationError
 
 ## Symptoms
 
-When you are using the [warehouse app task validation framework](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat), the validator returns the following error message:
+When you're using the [warehouse app task validation framework](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat), the validator returns the following error message:
 
 > Unexpected difference between request and session data. Warehouse Mobile Devices XML protocol violated.REQUEST_XML_TAMPERING
 
 ## Cause
 
-This error occurs when the output of the last successful step executed in the test run doesn't match the recorded input of the next step. This is possible because the task validator uses recorded XML as input for each step instead of the output of a previous step.
+The error occurs when the output of the last step that was successfully run in the test run doesn't match the recorded input for the next step. This situation can arise because the task validator doesn't use the output of a previous step as input for a successive step. Instead, it uses recorded XML as input for each step.
 
-In most cases this error happens when you are rerunning a task, but the test requires some records that were modified or removed by a previous run of the same task.
+In most cases, the error occurs when you rerun a task, but the test requires some records that were modified or removed by a previous run of the same task.
 
 ## Resolution
 
-The warehouse app task validation test run is not an idempotent operation&mdash;it modifies the underlying data. So before rerunning a task, you may need to reset the relevant data. 
+The warehouse app task validation test run isn't an idempotent operation but modifies the underlying data. Therefore, before you rerun a task, you might have to reset the relevant data.
 
-1. Investigate output XML of the last test step that succeeded to find out where your test run left off.
-1. Inspect your test and make sure all the required sales orders, transfer orders, work headers, and other records are still present and in the expected state.
-1. Recreate or edit the missing or modified records, or create a new test setup and design the test to use valid existing records.
+1. Review the output XML of the last successful test step to determine where your test run left off.
+1. Inspect your test, and make sure that all the required sales orders, transfer orders, work headers, and other records are still present and in the expected state.
+1. Re-create or edit the missing or modified records. Alternatively, create a new test setup, and design the test to use valid existing records.
