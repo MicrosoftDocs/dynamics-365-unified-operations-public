@@ -25,23 +25,21 @@ For many manufactures, retailors, or sellers, just knowing what is currently on-
 
 Before you can use ATP, you must set up one or more calculated measures to calculate the ATP quantities, turn on the feature in Power Apps, and make ATP settings in Power Apps.
 
-### Set up a calculated measure for ATP quantities
+### Set up calculated measures for ATP quantities
 
-The *ATP calculated measure* is a pre-defined calculated measure. The sum of its addition modifier quantities is the supply quantity and the sum of its subtraction modifier quantities is the demand quantity.
+The *ATP calculated measure* is a pre-defined calculated measure, typically used to find the currently available on-hand quantity. The sum of its addition modifier quantities is the supply quantity and the sum of its subtraction modifier quantities is the demand quantity.
 
-You can add multiple calculated measures to calculate ATP quantities, but the total number of modifiers used across all ATP calculated measures should be less than 8. <!-- KFM: Updated to "across all" -->
+You can add multiple calculated measures to calculate ATP quantities, but the total number of modifiers used across all ATP calculated measures should be 8 or less.
 
-For example, you might set up a calculated measure called *On-hand-available* to calculate ATP values, and define it as follows.
+For example, you might set up the following calculated measure.
 
-- **On-hand-change** = (Supply – Demand)<br>Where:
-  - **Supply** = (PhysicalInvent + OnHand + Unrestricted + QualityInspection + Inbound)
-  - **Demand** = (ReservPhysical + SoftReservePhysical + Outbound)
-- **On-hand-available** = [PhysicalInvent + (OnHand + Unrestricted + QualityInspection + Inbound) – (Reservphysical + SoftReservePhysical + Outbound)]
+- **On-hand-available** = (PhysicalInvent + OnHand + Unrestricted + QualityInspection + Inbound) – (Reservphysical + SoftReservePhysical + Outbound)
 
-<!-- KFM: I pulled the above formulas from your comments later in this topic. Are they still correct? Do they work here? -->
-<!-- Reply from Yiren: it is most correct. But I have two questions:
-1. why do you use  parentheses for suply part: PhysicalInvent + (OnHand + Unrestricted + QualityInspection + Inbound)
-2. Would it be confused with on-hand ***change*** and ***on-hand***, lets disccuse it in meeting.-->
+The previous measure can be understood as follows:
+
+- **On-hand-available** = Inbound – Outbound<br>Where:
+  - **Inbound** = PhysicalInvent + OnHand + Unrestricted + QualityInspection + Inbound
+  - **Outbound** = ReservPhysical + SoftReservePhysical + Outbound
 
 For more information about calculated measures, see [Calculated measures](inventory-visibility-configuration.md#calculated-measures)
 
@@ -51,58 +49,55 @@ Turn on the *On-hand change schedule* feature in Power Apps and set up the ATP o
 
 1. Sign into Power Apps and open Inventory Visibility.
 1. Open the **Configuration** page.
-1. On the **Feature management** tab, turn on the *OnhandChangeSchedule* feature.
-1. Open the **ATP setting** tab.
-1. Select **Add** to add a new calculated measure to use for ATP. <!-- KFM: How/where are these calculated measures used? -->
+1. On the **Feature Management** tab, turn on the *OnhandChangeSchedule* feature.
+1. Open the **ATP Setting** tab.
+1. When you query Inventory Visibility, it will provide a result that includes each of the ATP calculated measures that you add here. Select **Add** to add a new calculated measure to use for ATP.
 1. Make the following settings:
-    - **Data source** – Select the data source associated with your calculated measure. <!-- KFM: Is "associated with" the right term here? -->
-    - **Calculated measure** – Select the calculated measure (associated with the selected **Data source**) that you want to use for ATP.
-    - **Schedule period** – Enter the number of days for which users can view and submit scheduled on-hand changes when using the selected **Calculated measure**. When users query for stock information, they will get the scheduled on-hand changes and ATP for each day in this period, starting with today. Select an integer between 1 and 7.
+    - **Data Source** – Select the data source associated with your calculated measure.
+    - **Calculated Measure** – Select the calculated measure (associated with the selected **Data Source**) that you want to use to find the currently available on-hand quantity.
+    - **Schedule Period** – Enter the number of days for which users can view and submit scheduled on-hand changes when using the selected **Calculated Measure**. When users query for stock information, they will get the on-hand quantity, scheduled on-hand changes, and ATP for each day in this period, starting with today. Select an integer between 1 and 7.
 
     > [!IMPORTANT]
-    > The **Schedule period** includes today, which means users can schedule on-hand changes to occur an time from today (the day the change is submitted) to (schedule period – 1) days in the future.
+    > The **Schedule Period** includes today, which means users can schedule on-hand changes to occur an time from today (the day the change is submitted) to (schedule period – 1) days in the future.
 
 1. Select **Save**.
-1. Repeat from step 5 until you have added all of the calculated measures you need for ATP. <!-- KFM: Why would I have more than one? How would that work? -->
+1. Repeat from step 5 until you have added all of the calculated measures you need for ATP.
 
 ## How the on-hand change schedule and ATP calculations work
 
-<!-- KFM: Please confirm my edits to this section. Throughout, we must be careful with the terms "post" (this often means something special in SCM, so I want to avoid that term here other than to refer to the "post method"), "submit" (the word I think we should use for interacting with IV through post or get methods), and "commit" (I am not fully clear on what this means or where we do it). Those are my assumed definitions, which I have used throughout this text. -->
+You can submit an *on-hand change schedule* (which establishes expected dates and quantities of scheduled on-hand changes) to Inventory Visibility, provided the dates are within the period defined by the **Schedule period** setting (see [Enable and set up the features](#setup)). When you query for stock information, they will get the on-hand quantity, scheduled on-hand changes, and ATP for each day in this period.
 
-Users submit expected dates and quantities of upcoming on-hand changes to Inventory Visibility, provided the date is within the period defined by the **Schedule period** setting (see [Enable and set up the features](#setup)). When users query for stock information, they will get the scheduled on-hand changes and ATP for each day in that period.
+Scheduled changes are initially uncommitted and therefore won't affect your "real" on-hand quantities in the system. To commit the changes, you must submit an *on-hand change event* (which updates the actual available on-hand quantity) and then *revert* the scheduled change (by submitting an *on-hand change schedule* for a matching negative quantity).
 
-Changes submitted through Inventory Visibility are initially uncommitted and therefore won't affect your "real" on-hand quantities in the system. To commit the changes, users must *commit* the on-hand event and then *revert* the scheduled changes (by committing a negative quantity). For example, if a user submits a scheduled on-hand change to Inventory Visibility with an **Inbound** quantity of *10*, to commit the change, they must commit an on-hand event with an **Inbound** quantity of *10*, and then revert the on-hand change schedule by committing an **Inbound** quantity of *-10* <!-- KFM: Is this reversion made by submitting to IV or by committing in SCM? -->.
+For example, if you place an order for 10 bikes, which you expect to arrive tomorrow, you could than submit an on-hand change *schedule* with an **Inbound** quantity of *10* dated for tomorrow. The next day, when the order arrives, you add the bikes to your physical on-hand inventory and must therefore commit the change to your system to update the actual on-hand quantity. To commit the change, submit an *on-hand change event* with an **Inbound** quantity of *10*, and then revert the scheduled change by submitting an *on-hand change schedule* with an **Inbound** quantity of *-10*.
 
-When a user queries Inventory Visibility for ATP quantities, the system replies with a data table <!-- KFM: is this best referred to as an array, a table, a result set, or something else? --> that provides the following information for each day during the schedule period:
+When you query Inventory Visibility for on-hand and ATP quantities, it returns the following information for each day in the schedule period:
 
-- **Date** – The date for which the row applies.
-- **On-hand** – The on-hand quantity for the specified date. It is calculated based on the current quantities committed in Supply Chain Management. <!-- KFM: Please confirm this formulation. Who/how/where are quantities "committed"? --> <!-- Reply from Yiren: I think "committed" not so appropriate, let discuss in the meeting. -->
-- **Supply** – The total sum of all incoming quantities that haven't become physically available for immediate consumption or shipment as of the specified **Date**. <!-- KFM: Changed "yet" to "as of the specified **Date**" Please confirm. -->
-- **Demand** – The total sum of all outbound quantities that haven't been consumed or shipped as of the specified **Date**. <!-- KFM: Changed "yet" to "as of the specified **Date**" Please confirm. -->
-- **Projected on-hand** – The planed on-hand quantity for the specified **Date**. It equals the current on-hand quantity combined with all of the on-hand change quantities scheduled from today until the specified **Date**. <!--Reply from Yiren: for example, we have the current onhand 20, we name it as **on-hand**, and we plan to add 8 tomorrow and delete 10 the day after tommorrow. In the plan, the onhand will become  28 tomorrow and 18 the day after tomorrow, and these values are projected onhand on tomorrow and the day after tomorrow. But not the real on-hand value-->  <!--KFM: by "on-hand change quantities". Can we express this using the the other terms in this list (eg, "supply", "demand", "planned on-hand", "ATP")? -->
-- **ATP** – The minimum projected on-hand quantity available from the specified **Date** until the end of the schedule period, which means that this is the maximum quantity that can be promised on that day.
-- **Planed on-hand** – Calculated based on the scheduled quantity changes using the ATP calculated measure specified in the setup. <!-- KFM: This never appears in the tables from the example in the following section. Where do we see/use this value? Is it the same as the **Projected on-hand**? If we have more than one ATM measure, which is used for this? I'm not sure what to do with this... --> <!-- Reply from Yiren: it is the same. I try to describe projected on-hand as planed on-hand.-->
+- **Date** – The date for which the result applies.
+- **On-hand quantity** – The actual on-hand quantity for the specified date. This calculation made according to the *ATP calculated measure* configured for Inventory Visibility.
+- **Scheduled inbound** – The total sum of all scheduled incoming quantities that haven't become physically available for immediate consumption or shipment as of the specified **Date**.
+- **Scheduled outbound** – The total sum of all scheduled outbound quantities that haven't been consumed or shipped as of the specified **Date**.
+- **ATP quantity** – The minimum projected on-hand quantity available from the specified **Date** until the end of the schedule period, including all scheduled quantity adjustments. This is the maximum quantity that can be promised today for delivery or consumption on that day.
 
-For example, if today is 2022/02/01, the schedule period is 7, users can submit scheduled on-hand changes expected to occur from 2022/02/01 to 2022/02/07, and the ATP quantity for 2022/02/03 is calculated based on the ATP quantities from 2022/02/03 to 2022/02/07.
+For example, if today is 2022/02/01 and the schedule period is 7, users can submit scheduled on-hand changes expected to occur from 2022/02/01 to 2022/02/07, and the ATP quantity for (for example) 2022/02/03 is calculated based on the on-hand quantity for that day and the scheduled quantities from 2022/02/03 to 2022/02/07.
 
 ## Example
 
-<!-- KFM: Again, we need to be careful with "Post", "Commit", "Submit", and "revert". I did my best to untangle them here, but we should review this carefully. -->
+The following example shows how a series of scheduled quantity changes affects the on-hand and ATP quantities reported by Inventory Visibility. It also shows how to commit a scheduled change and how that affects the results, and what can happen if you don't commit a scheduled change.
+
+The example results here show a value for *projected on-hand*, which incorporates all scheduled updates for illustration purposes, but which is not actually reported when you query Inventory Visibility.
 
 1. Your system is set up with the following settings on the **ATP setting** page in Power Apps:
-    - **Data source** – <!-- KFM: I'm not sure this is needed, but it might complete this example. -->
-    - **ATP calculated measure** – You have a calculated measure called *On-hand* (calculated as *On-hand = supply – demand*), and that measure is selected here. <!-- KFM: We could maybe mention that this measure is defined in the data source specified above, if that is the case. -->
+    - **ATP calculated measure** – You have a calculated measure called *On-hand* (calculated as *On-hand = Inbound – Outbound*), and that measure is selected here.
     - **Schedule period** – Set to *7*.
 
 1. The following conditions also apply:
     - Today is 2022/02/01.
     - Current on-hand quantity is 20.
 
-1. You submit to Inventory Visibility a scheduled demand with a quantity of 3 for today (2022/02/01). Therefore, the projected on-hand quantity is 17.
+1. You submit to Inventory Visibility a scheduled outbound quantity of 3 for today (2022/02/01). Therefore, the projected on-hand quantity is 17.The result is as follows.
 
-1. You query the ATP value and find that the ATP quantity for each day in this period is 17, as shown in the following query result.
-
-    | Date | On-hand | Supply | Demand | Projected on-hand | ATP |
+    | Date | On-hand | Scheduled inbound | Scheduled outbound | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | --- |
     | 2022/02/01 | 20 |  | 3 | 17 | 17 |
     | 2022/02/02 | 20 |  |  | 17 | 17 |
@@ -112,9 +107,9 @@ For example, if today is 2022/02/01, the schedule period is 7, users can submit 
     | 2022/02/06 | 20 |  |  | 17 | 17 |
     | 2022/02/07 | 20 |  |  | 17 | 17 |
 
-1. Today (2022/02/01), you submit a scheduled supply with quantity 10 for 2022/02/02. Then you query the quantities, and receive the following information.
+1. Today (2022/02/01), you submit a scheduled inbound quantity of 10 for 2022/02/02. The result is as follows.
 
-    | Date | On-hand | Supply | Demand | Projected on-hand | ATP |
+    | Date | On-hand | Scheduled inbound | Scheduled outbound | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | --- |
     | 2022/02/01 | 20 |  | 3 | 17 | 17 |
     | 2022/02/02 | 20 |  |  | 17 | 17 |
@@ -124,14 +119,14 @@ For example, if today is 2022/02/01, the schedule period is 7, users can submit 
     | 2022/02/06 | 20 |  |  | 27 | 27 |
     | 2022/02/07 | 20 |  |  | 27 | 27 |
 
-1. Today (2022/02/01), you make the following submissions for the following days:
-    - Submit scheduled demand with quantity 15 for 2022/02/04
-    - Submit supply with quantity 1 for 2022/02/05
-    - Submit scheduled demand with quantity 3 for 2022/02/06
+1. Today (2022/02/01), you submit the following scheduled quantity changes:
+    - Outbound quantity of 15 for 2022/02/04
+    - Inbound quantity of 1 for 2022/02/05
+    - Outbound quantity of 3 for 2022/02/06
 
-    Then you query the quantities and receive the following results:
+    The result is as follows.
 
-    | Date | On-hand | Supply | Demand | Projected on-hand | ATP |
+    | Date | On-hand | Scheduled inbound | Scheduled outbound | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | ---  |
     | 2022/02/01 | 20 |  | 3 | 17 | 12 |
     | 2022/02/02 | 20 |  |  | 17 | 12 |
@@ -141,9 +136,9 @@ For example, if today is 2022/02/01, the schedule period is 7, users can submit 
     | 2022/02/06 | 20 | 3 |  | 16 | 16 |
     | 2022/02/07 | 20 |  |  | 16 | 16 |
 
-1. If the demand order (of quantity 3) for today (2022/02/01) has been committed, you should commit an on-hand change request to increase the on-hand quantity from 10 to 13, and also commit a scheduled demand with quantity -3 to revert the scheduled change. The result is as follows. <!--KFM: Please review my use of "commit" here (I was confused by the original). Who does the "commit" operation, and where/how does this occur? --><!-- Reply from Yiren: it is not an actual action in our service. It is the behaviour of customer. The use senario will be like that: The customer planed to receive some goods to their manufator, and if it really happend, the customer need to do the following steps: 1. add onhandl 2. revert the schedule. The "commit" is not a specific operation in our service. -->
+1. You ship the scheduled outbound quantity of 3 on 2022/02/01, so you must commit this change so it is reflected in your actual on-hand quantity. To commit the change, submit an *on-hand change event* with an outbound quantity of *3*, and then revert the scheduled change by submitting an *on-hand change schedule* with an outbound quantity of *-3*. The result is as follows.
 
-    | Date | On-hand | Supply | Demand | Projected on-hand | ATP |
+    | Date | On-hand | Scheduled inbound | Scheduled outbound | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | --- |
     | 2022/02/01 | 17 |  | 0 | 17 | 12 |
     | 2022/02/02 | 17 |  |  | 17 | 12 |
@@ -153,9 +148,9 @@ For example, if today is 2022/02/01, the schedule period is 7, users can submit 
     | 2022/02/06 | 17 | 3 |  | 16 | 16 |
     | 2022/02/07 | 17 |  |  | 16 | 16 |
 
-1. The next day (2022/02/02), you query the quantities and receive the following results.
+1. The next day (2022/02/02), the schedule period shifts one day forward and the results are as follows.
 
-    | Date | On-hand | Supply | Demand | Projected on-hand | ATP |
+    | Date | On-hand | Scheduled inbound | Scheduled outbound | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | --- |
     | 2022/02/02 | 17 |  |  | 17 | 12 |
     | 2022/02/03 | 17 | 10 |  | 27 | 12 |
@@ -165,9 +160,9 @@ For example, if today is 2022/02/01, the schedule period is 7, users can submit 
     | 2022/02/07 | 17 |  |  | 16 | 16 |
     | 2022/02/08 | 17 |  |  | 16 | 16 |
 
-    However, two days after that (on 2022/02/04), the supply scheduled for 2022/02/03 still hasn't been committed, which produces the following results:
+    However, two days after that (on 2022/02/04), the inbound quantity of 10 scheduled for 2022/02/03 still hasn't arrived, which produces the following results:
 
-    | Date | On-hand | Supply | Demand | Projected on-hand | ATP |
+    | Date | On-hand | Scheduled inbound | Scheduled outbound | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | --- |
     | 2022/02/04 | 17 |  | 15 | 2 | 2 |
     | 2022/02/05 | 17 | 1 |  | 3 | 3 |
@@ -179,27 +174,28 @@ For example, if today is 2022/02/01, the schedule period is 7, users can submit 
 
     As you can see, the scheduled (but not committed) on-hand changes do not influence actual on-hand.
 
-## Call the on-hand change schedule API
+## Submit change schedules, change events, and ATP queries through the API
 
-Users can use the following API URLs to submit on-hand change schedules and query results.
+You can use the following API URLs to submit on-hand change schedules, change events, and queries.
 
 | Path | Method | Description |
 | --- | --- | --- |
 | `/api/environment/{environment-ID}/on-hand/changeschedule` | `POST` | Create one scheduled on-hand change. |
 | `/api/environment/{environment-ID}/on-hand/changeschedule/bulk` | `POST` | Create multiple scheduled on-hand changes. |
+| `/api/environment/{environmentId}/onhand` | `POST` | Create one on-hand change event |
+| `/api/environment/{environmentId}/onhand/bulk` | `POST` | Create multiple change events |
 | `/api/environment/{environment-ID}/onhand/indexquery` | `POST` | Query by using the `POST` method. |
 | `/api/environment/{environment-ID}/onhand` | `GET` | Query by using the `GET` method. |
 
 For more information, see [Inventory Visibility public APIs](inventory-visibility-api.md).
 
-### Post on-hand change schedules
+### Submit on-hand change schedules
 
 On-hand change schedules are made by submitting a `POST` request to the relevant Inventory Visibility service URL (as listed previously). You can also submit bulk requests.
 
-For an on-hand change schedule, the request body must contain an organization ID, a product ID, scheduled date, and quantities by date. The scheduled date must be between today and the end of the current schedule period.
+To submit an on-hand change schedule, the request body must contain an organization ID, a product ID, scheduled date, and quantities by date. The scheduled date must be between today and the end of the current schedule period.
 
-> [!NOTE]
-> If the scheduled on-hand changes are committed or canceled, you must revert the schedule by setting the quantity to a negative value.
+#### Example request body containing a single update
 
 Here is an example of a request body containing a single update.
 
@@ -226,7 +222,7 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "ColorId": "Red",
-        "SizeId": "small"
+        "SizeId": "Small"
     },
     "quantityByDate":
     {
@@ -239,6 +235,8 @@ Authorization: "Bearer {access_token}"
     },
 }
 ```
+
+#### Example request body containing multiple (bulk) updates
 
 Here is an example of a request body containing multiple (bulk) updates.
 
@@ -265,7 +263,7 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "small"
+            "SizeId": "Small"
         },
         "quantityByDate":
         {
@@ -285,7 +283,7 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "small"
+            "SizeId": "Small"
         },
         "quantityByDate":
         {
@@ -300,6 +298,49 @@ Authorization: "Bearer {access_token}"
 ]
 ```
 
+### Submit on-hand change events
+
+On-hand change events are made by submitting a `POST` request to the relevant Inventory Visibility service URL (as listed previously). You can also submit bulk requests.
+
+To submit an on-hand change event, the request body must contain an organization ID, a product ID, scheduled date, and quantities by date. The scheduled date must be between today and the end of the current schedule period.
+
+Note that the event request uses `quantities` instead of `quantityByDate`.
+
+Here is an example of a request body containing a single event.
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# Replace {access_token} with the one from your security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "dimensions": {        
+        "SiteId": "1",
+        "LocationId": "11",
+        "SizeId": "Big",
+        "ColorId": "Red",
+    },
+    "quantities": {
+        "pos": {
+            "inbound": 10.0
+        }
+    }
+}
+```
+
 ## Query the scheduled on-hand changes and ATP results
 
 You can query scheduled on-hand changes and ATP results by submitting either a `POST` or `GET` request to the appropriate API URL (as listed previously).
@@ -308,6 +349,9 @@ In your request, set `QueryATP` to *true* if you want to query scheduled on-hand
 
 - If your submitting using the `GET` method, set this parameter in the URL.
 - If your submitting using the `POST` method, set this parameter in the request body
+
+> [!NOTE]
+> Whether `returnNegative` is set true or false, the result will return negative values when query the scheduled on-hand changes and ATP results. Because if only demand orders are scheduled or supply quantities are less than demand quantities, the scheduled on-hand change quantities will be negative. Without returning this value, the result will be very confusing. <!-- KFM: add a link to the API topic -->
 
 ### POST method example
 
@@ -345,6 +389,98 @@ Authorization: "Bearer {access_token}"
 
 Here is an example of how to create a request URL as a `GET` request.
 
-`https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true`
+```txt
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+```
 
 This result of this `GET` request is exactly the same as the example `POST` request provided earlier.
+
+### Query result example
+
+Either of the query examples provides previously might result in the following reply. For this example, the system is configured as follows.
+
+- **ATP calculated measure:** *iv.onhand = pos.inbound – pos.outbound*
+- **Schedule period:** *7*
+
+Here is an example of the reply body.
+
+```json
+[
+    {
+        "quantitiesByDate": {
+            "2022-02-02T00:00:00": {
+                "pos": {
+                    "outbound": 5,
+                    "inbound": 0,
+                },
+                "iv": {
+                    "onhand": -5,
+                },
+            },
+            "2022-02-06T00:00:00": {
+                "pos": {
+                    "inbound": 7,
+                    "outbound": 0,
+                },
+                "iv": {
+                    "onhand": 7,
+                },
+            }
+        },
+        "atpQuantities": {
+            "2022-02-01T00:00:00Z": {
+                "iv": {
+                    "onhand": 5.0
+                }
+            },
+            "2022-02-02T00:00:00Z": {
+                "iv": {
+                    "onhand": 5.0
+                }
+            },
+            "2022-02-03T00:00:00Z": {
+                "iv": {
+                    "onhand": 5.0
+                }
+            },
+            "2022-02-04T00:00:00Z": {
+                "iv": {
+                    "onhand": 5.0
+                }
+            },
+            "2022-02-05T00:00:00Z": {
+                "iv": {
+                    "onhand": 5.0
+                }
+            },
+            "2022-02-06T00:00:00Z": {
+                "iv": {
+                    "onhand": 12.0
+                }
+            },
+            "2022-02-07T00:00:00Z": {
+                "iv": {
+                    "onhand": 12.0
+                }
+            }
+        },
+        "productId": "Bike ",
+        "dimensions": {
+            "ColorId": "Red",
+            "SizeId": "Big",
+            "siteid": "1",
+            "locationid": "11"
+        },
+        "quantities": {
+            "pos": {
+                "inbound": 10.0,
+                "outbound": 0,
+            },
+            "iv": {
+                "onhand": 10.0,
+            }
+        }
+    }
+]
+```
+
