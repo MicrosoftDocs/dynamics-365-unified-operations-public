@@ -3,7 +3,7 @@
 
 title: Manage International Bank Account Number (IBAN) account validation
 description: This topic explains how to manage International Bank Account Number (IBAN) account validation.
-author: roschlom
+author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 
@@ -37,7 +37,7 @@ Information about the structure of the IBAN is stored in Microsoft Dynamics 365 
 
 1. Go to **Cash and bank management \> Setup \> IBAN structures**.
 2. Notice that the IBAN structures for each country or region have been set up automatically.
-3. If you want to customize the structures for a specific country or region, you can edit them.
+3. Select the **Edit** button if the structure needs to be updated for a specific country or region.
 4. The structure definitions will be a part of each new release. You can use the **Reset structures** menu to load the latest definitions after each update.
 
 ## Validate the IBAN structure in a bank account
