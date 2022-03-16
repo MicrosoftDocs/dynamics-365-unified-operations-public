@@ -4,7 +4,7 @@
 title: Change module library static strings
 description: This topic describes how to change module library strings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Change module library static strings
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to change module library strings in Microsoft Dynamics 365 Commerce.
 
