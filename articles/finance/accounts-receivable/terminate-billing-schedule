@@ -36,7 +36,7 @@ Modules > Subscription billing > Recurring contract billing > Billing schedules 
 
 Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [click a billing schedule] > [click Terminate] 
 
-Modules >  Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [click a billing schedule] >[select a billing schedule line] > [click Terminate] 
+Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [click a billing schedule] >[select a billing schedule line] > [click Terminate] 
 
 This topic lists the steps for terminating a billing schedule line in Subscription billing. When you terminate a billing schedule, the billing schedule must be **Active**. It can't have a status of **On hold**. Also, the line must have a status of **Active** when you terminate a billing schedule line. The header section of the billing schedule is not affected. 
 
