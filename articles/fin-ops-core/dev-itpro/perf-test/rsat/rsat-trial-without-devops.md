@@ -1,4 +1,4 @@
-﻿---
+---
 title: Trial mode without Azure DevOps
 description: This topic describes how to use the Regression suite automation tool (RSAT) in trial mode without Azure DevOps.
 author: FrankDahl
