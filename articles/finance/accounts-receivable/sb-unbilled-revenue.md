@@ -150,7 +150,7 @@ For example, on the **Item group setup** page, ItemGroupA is set up with the **N
 If you want to use the unbilled revenue feature, do not set up the **Item Group Setup** page with any item groups, or set all item groups that have the **Number of top lines** to zero (0). If you want to use the top billing feature, keep in mind that all **Unbilled revenue** actions are not available. 
 
 
-### Unbilled Revenue examples
+### Unbilled revenue examples
 
 This topic describes how to use the unbilled revenue feature to recognize the entire amount of a contract on the balance sheet as unbilled revenue. The other side of the entry is charged to either a revenue or deferred revenue account, depending on the accounting requirements for the transaction. When you recognize unbilled revenue in this way, the customer invoices draw down the unbilled amount and update accounts receivable. No revenue recognition happens at the time of invoicing as the revenue was either recognized when the unbilled amount was posted or will be recognized based deferral recognition schedule that was set up.
 
@@ -159,17 +159,17 @@ Review the following example to better understand the unbilled revenue functiona
 Assume a customer signs a 3-year $390 contract on January 1 of the current year. The contract includes two parts, licenses and a maintenance agreement. Assume the sales price of the license portion is $300, and that the customer will be invoiced $100 on January 1 of each contract year. The $300 license fee will be taken as revenue when the contract is signed. The sales price of the maintenance fee is $90, and the customer will be invoiced $30 on January 1, for each of the upcoming years. The $90 maintenance fee will be deferred with $2.50 being recognized each month over the life of the contract. The customer will be invoiced $130 at the beginning (January 1st) of each of the 3 years of the contract.
 
 1. Assuming the two items already exist as released products, your first step is to setup the two items as unbilled items. Use the **Unbilled revenue setup** to set up the items that use the unbilled revenue feature by default and the accounts that are used when the items are added to the billing schedule.  
-2. In the example, the maintenance fee is deferred. The item requires a deferral template, which is set up on the **Deferral defaults** page, Deferral templates tab. The template needs a Monthly period frequency and a recognition period length of 36 months. As a result, the revenue per month will be 2.50. 
-3. Set the Maintenance Fee as a Deferrable item (see **[Deferrable items](../setup/DefItems.md)**). This step and the next step for Deferral defaults will cause the Maintenance Fee item to be deferred by default when it is sold or included on a billing schedule.
-4. Set the **[Deferral defaults](../setup/DefDefault.md)** for the maintenance fee. The  maintenance fee item will be linked to a 36-month deferral schedule.
-5. Next [create a billing schedule](../../AX_ARCB/enduser/BillSched.htm#CreateBillSched) with the two unbilled items on it. The billing schedule for the contract is set up with the following items:
+2. In the example, the maintenance fee is deferred. The item requires a deferral template, which is set up on the **Deferral templates** page. The template needs a Monthly period frequency and a recognition period length of 36 months. As a result, the revenue per month will be 2.50. 
+3. Set the Maintenance fee as a Deferrable item in **Items deferred by default** page. This step and the next step for Deferral defaults will cause the Maintenance fee item to be deferred by default when it is sold or included on a billing schedule.
+4. In the **Deferral defaults**, Template option, add the item for the maintenance fee and the straight-line template from step two. Now the maintenance fee item will be linked to a 36-month deferral schedule.
+5. Next create a billing schedule with the two unbilled items on it. The billing schedule for the contract is set up with the following items:
 
-|Item|Start Date|End Date|Amount|Billing Frequency|Deferral Item|Unbilled Revenue|Description|
+|Item|Start date|End date|Amount|Billing frequency|Deferral item|Unbilled revenue|Description|
 |:-----|:-----|:-----|-----:|:-----|:-----|:-----|:-----|
 |License|January 01, CY|December 31 CY+2|100.00|Annually|No|Yes|The customer will be invoiced 100.00 each year. The 300.00 total will be recorded upfront as unbilled revenue on the balance sheet and as revenue on the profit and loss. Each invoice will reduce the unbilled amount.|
 |Maintenance|January 01, CY|December 31 CY+2|30.00|Annually|Yes|Yes|The customer will be invoiced 30.00 each year. The 90.00 total will be recorded upfront as unbilled revenue and deferred revenue on the balance sheet. Each invoice will reduce the unbilled amount. The deferred revenue will be recognized monthly over 36 months.|
 
-1. On the **[Billing schedules](../../AX_ARCB/enduser/BillSched.md)** page, use the **Create unbilled revenue initial journal entry** action to post the  contract value to the balance sheet as unbilled revenue. It will create two journal entries, one for each line on the billing schedule:
+1. On the **All billing schedules** page, use the **Create journal entry** action to post the contract value to the balance sheet as unbilled revenue. It will create two journal entries, one for each line on the billing schedule:
 
 | Unbilled revenue account| Revenue account | Debit amount | Credit amount |
 |:-----|:-----|-----:|-----:|
@@ -181,8 +181,7 @@ Assume a customer signs a 3-year $390 contract on January 1 of the current year.
 |Unbilled Revenue account| &nbsp; |90.00| &nbsp; |
 | &nbsp; |Deferred Maintenance Revenue| &nbsp; |90.00|
 
-Notice that the first journal entry is posted to a revenue account and the second is posted to a deferred revenue account.
-1. The contract requires that the invoice for the customer to be created at the beginning of each year. Use the [Invoice creator](../../AX_ARCB/enduser/InvCreator.md) to create the invoice. When the invoice is created, the journal entry is as follows: 
+Notice that the first journal entry is posted to a revenue account and the second is posted to a deferred revenue account. The contract requires that the invoice for the customer to be created at the beginning of each year. Use **Generate invoice** to create the invoice. When the invoice is created, the journal entry is as follows: 
 
 | Main account| Unbilled revenue account | Debit amount | Credit amount |
 |:-----|:-----|-----:|-----:|
@@ -190,7 +189,8 @@ Notice that the first journal entry is posted to a revenue account and the secon
 | |Unbilled Revenue account| |130.00|
 
 This same journal entry will be created by invoices posted at the beginning of the next two years.
-1. In the last step, the recognition journal entry is created each month to recognize the deferred maintenance fee revenue. The journal entry can be created using the **[Recognition processing](../endUser/RecogProc.md)** page or the **Recognize** action for the lines on the **[Schedules](../endUser/ComSched.md)** pages.
+
+In the last step, the recognition journal entry is created each month to recognize the deferred maintenance fee revenue. The journal entry can be created using the **Recognition processing** page or the **Recognize** action for the lines on the **Deferral schedule** pages.
 
 | Deferred revenue account| Revenue account | Debit amount | Credit amount |
 |:-----|:-----|-----:|-----:|
@@ -199,9 +199,9 @@ This same journal entry will be created by invoices posted at the beginning of t
 
 This journal entry will be created each time the recognition process is run for this deferred item (a total of 36 times).
 
-## Short-term: Fixed year
+#### Short-term: Fixed year
 
-The unbilled revenue feature can be used with the short-term functionality. Review the following example to better understand the calculations that occur when the unbilled revenue feature is used with the fixed year short-term calculation method. 
+The unbilled revenue feature can be used with the short-term functionality by setting the Short-term unbilled method in **Recurring contract billing parameters**. Review the following example to better understand the calculations that occur when the unbilled revenue feature is used with the fixed year short-term unbilled method. 
 
 A billing schedule with the following criteria is created: 
 - Start Date: June 01, 2020 
@@ -209,21 +209,21 @@ A billing schedule with the following criteria is created:
 - Unit Price: 100.00
 - Frequency: Monthly
 
-On the **[Billing schedules](../../AX_ARCB/enduser/BillSched.md)** page, the initial journal entry is created from the header action (**Unbilled revenue processing &amp;amp;amp;gt; Create unbilled revenue journal entry**). The current short-term and long-term amounts are calculated as followings: 
+On the **All billing schedules** page, the initial journal entry is created from the header action **Create journal entry**. The current short-term and long-term amounts are calculated as follows: 
 - Current short-term unbilled revenue amount: $700
 - Current long-term unbilled revenue amount: $1200
 
-The invoice for the billing period June 01, 2020, to November 30, 2020, is created. The current short-term and long-term amounts are calculated as followings: 
+The invoice for the billing period June 01, 2020, to November 30, 2020, is created. The current short-term and long-term amounts are calculated as follows: 
 - Current short-term unbilled revenue amount: $100
 - Current long-term unbilled revenue amount: $1200
 
-The invoice for the billing period December 01, 2020, to December 31, 2020, is created. The current short-term and long-term amounts are calculated as followings: 
+The invoice for the billing period December 01, 2020, to December 31, 2020, is created. The current short-term and long-term amounts are calculated as follows: 
 - Current short-term unbilled revenue amount: $1200
 - Current long-term unbilled revenue amount: $0
 
-## Short-term: Rolling periods
+#### Short-term: Rolling periods
 
-The unbilled revenue feature can be used with the short-term functionality. Review the following example to better understand the calculations that occur when the unbilled revenue feature is used with the rolling periods short-term calculation method. 
+The unbilled revenue feature can be used with the short-term functionality by setting the short-term unbilled method in **Recurring contract billing parameters**. Review the following example to better understand the calculations that occur when the unbilled revenue feature is used with the rolling periods short-term unbilled method. 
 
 A billing schedule with the following criteria is created: 
 - Start Date: June 01, 2020
@@ -231,19 +231,19 @@ A billing schedule with the following criteria is created:
 - Unit Price: 100.00
 - Frequency: Monthly
 
-On the **[Billing schedules](../../AX_ARCB/enduser/BillSched.md)** page, the initial journal entry is created from the header action (**Unbilled revenue processing ? Create unbilled revenue journal entry**). The current short-term and long-term amounts are calculated as followings: 
+On the **All billing schedules** page, the initial journal entry is created from the header action **Create journal entry**. The current short-term and long-term amounts are calculated as follows: 
 - Current short-term unbilled revenue amount: $1200
 - Current long-term unbilled revenue amount: $700
 
-The invoice for the billing period June 01, 2020, to November 30, 2020, is created. The current short-term and long-term amounts are calculated as followings: 
+The invoice for the billing period June 01, 2020, to November 30, 2020, is created. The current short-term and long-term amounts are calculated as follows: 
 - Current short-term unbilled revenue amount: $1200
 - Current long-term unbilled revenue amount: $100
 
-The invoice for the billing period December 01, 2020, to December 31, 2020, is created. The current short-term and long-term amounts are calculated as followings: 
+The invoice for the billing period December 01, 2020, to December 31, 2020, is created. The current short-term and long-term amounts are calculated as follows: 
 * Current short-term unbilled revenue amount: $1200
 * Current long-term unbilled revenue amount: $0
 
-## Items with revenue allocation
+### Items with revenue allocation
 
 Two items with different billing frequencies are added to a billing schedule. Both use the unbilled revenue feature and are deferrable items. 
 
@@ -259,19 +259,13 @@ Item 1000 is sold in a bundle with Insurance (Item number S0021):
 - Standalone selling price: 25.00
 - Contract revenue: 264.74
 
-![UnbilledMERA01](../../AX_ARCB/_images/UnbilledMERA01.png)
-
-![UnbilledMERA02](../../AX_ARCB/_images/UnbilledMERA02.png)
-
 Since both items use the unbilled revenue feature and revenue allocation, the total contract amount on the renewal line is zero (0). Instead, a column called **Contract revenue** appears and shows the contract revenue amount. 
-
-![UnbilledMERA03](../../AX_ARCB/_images/UnbilledMERA03.png)
 
 The initial journal entry for the items and the invoice are as follows: 
 
 |Unbilled revenue account| Deferred revenue account | Debit amount | Credit amount |
 |:-----|:-----|-----:|-----:|
-|**Item 1000 Journal entry**| &nbsp; | &nbsp; | &nbsp; |
+|**Item 1000 journal entry**| &nbsp; | &nbsp; | &nbsp; |
 |Debit unbilled revenue account (401250)| |1,465.26|
 ||Credit deferred revenue account (250600)| &nbsp; |1,465.26|
 |**Item 0021 Journal entry**| &nbsp; | &nbsp; | &nbsp; |
@@ -286,7 +280,7 @@ The initial journal entry for the items and the invoice are as follows:
 
 When the unit price or quantity is changed, the contract revenue amount for each item that is part of the revenue allocation must be updated. As a result, the journal entry is recalculated. 
 
-The unit price for Item 1000 is changed from 1,500 to 1,600. The contract revenue amount is automatically recalculated and become 1,549.47. At the same time, the contract revenue for Item S0021 is recalculated and becomes 290.53. 
+The unit price for Item 1000 is changed from 1,500 to 1,600. The contract revenue amount is automatically recalculated and becomes 1,549.47. At the same time, the contract revenue for Item S0021 is recalculated and becomes 290.53. 
 
 When the changed is confirmed and committed, the initial journal entries for both items are reversed and new journal entries are created: 
 - Item 1000: Original initial journal entry of 1,465.26 is reversed. New journal entry for 1,549.47 is created. 
@@ -302,7 +296,7 @@ An adjustment journal entry is created for the line that is terminated. The jour
 - Item 1000: Original initial journal entry of 1,465.26. An adjustment journal entry for 1,549.47 is created. 
 - Item S0021: Original initial journal entry of 274.74 is reversed. New journal entry for 124.00 is created. 
 
-## Revenue allocation and renewals 
+### Revenue allocation and renewals 
 
 Items that use both the revenue allocation and renewal features must satisfy the following conditions: 
 - Billing frequency must be a recurring frequency (e.g., Daily, Weekly, Monthly, etc.)  
@@ -478,5 +472,4 @@ The contract journal entry that is attached to the milestone child item is as fo
 |Debit revenue account (20% of the contract)| &nbsp; |20,000.00 | &nbsp; |
 | &nbsp; |Credit unbilled revenue account (parent account)| &nbsp; |20,000.00 |
 
-</details>
 
