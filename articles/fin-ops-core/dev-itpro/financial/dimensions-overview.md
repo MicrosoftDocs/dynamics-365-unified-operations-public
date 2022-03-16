@@ -4,7 +4,7 @@
 title: Add dimensions to Excel templates
 description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 author: RyanCCarlson2
-ms.date: 11/10/2017
+ms.date: 03/16/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -75,10 +75,6 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified with th
 [Uptake of Dimension Entry controls](dimension-entry-control-uptake.md)
 
 [Extensibility home page](../extensibility/extensibility-home-page.md)
-
-
-
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
