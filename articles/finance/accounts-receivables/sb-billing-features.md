@@ -2,7 +2,7 @@
 # required metadata
 
 title: Billing schedule features
-description: This topic explains the features available on a billing schedule such as pricing methods, escalation and discount, alignment dates, proration, reverse billing, and split item groups. 
+description: This topic explains the features of a billing schedule such as pricing methods, escalation and discount, alignment dates, proration, reverse billing, and split item groups. 
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.24
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains features available on a billing schedule and billing schedule lines. The different methods used for pricing, how to use **Escalation and discount**,  examples of proration calculations, as well as how to reverse a billing period and examples of split item group. 
+This topic explains the features of a billing schedule and billing schedule lines. The different methods used for pricing, how to use **Escalation and discount**, examples of proration calculations, as well as how to reverse a billing period and examples of split item group. 
 
 ## Pricing methods
 
@@ -52,10 +52,9 @@ When the standard pricing method (without a trade agreement) is used, the unit p
 
 ### Standard Price (with Trade Agreement)
 
-The following is an example of the standard pricing calculations when a trade agreement exists. You can create trade agreements from the **Release product details** page.
+Below is an example of the standard pricing calculations when a trade agreement exists. You can create trade agreements from the **Release product details** page.
 
 An item has the following price brackets: 
-
 
 | Qty From| Qty To| U of M|Price|Price Unit|
 | :------------- |:-------------| :------|------:|------:|
@@ -63,16 +62,16 @@ An item has the following price brackets:
 |100|200 |Each|1.25|1|
 |200|999999|Each|1.00|1|
 
-Using the price brackets, assume the invoice quantity is 250. With the standard pricing method, the unit price is calculated as follows: 
-* Quantity 250 is in the price quantity range 200 - 99999, so the unit price is 1.00
+Using the price brackets, assume the invoice quantity is 250. With the standard pricing method, the unit price is calculated below: 
 
->Net amount = (Quantity * Price) / Price unit = (250 * 1.00) / 100 = 2.50 
+Quantity 250 is in the price quantity range 200 - 99999, so the unit price is 1.00
+Net amount = (Quantity * Price) / Price unit = (250 * 1.00) / 100 = 2.50 
 
 An example for an invoice quantity of 100. With the standard pricing method, the unit price is calculated as: 
-* Unit price = 1.50, which uses the price level that has the quantity of 100 
-* Note: standard FROM and TO quantity matches if the quantity is >=FROM quantity and <TO quantity
+Unit price = 1.50, which uses the price level that has the quantity of 100 
+Note: standard FROM and TO quantity matches if the quantity is >=FROM quantity and <TO quantity
 
->Net amount = (100 x 1.50) / 1 = 150
+Net amount = (100 x 1.50) / 1 = 150
 
 ### Tier Price 
 
@@ -85,13 +84,13 @@ An item has the following price brackets:
 |200|999999|Each|1.00|10|
 
 Using the price brackets, assume the invoice quantity is 250. With the tier pricing method, the net amount is calculated. After calculating the net amount, the unit price is calculated by dividing the new amount by the quantity: 
-1. The prices of the items based on the pricing brackets: 
-   * First hundred items: 100 x 1.50  = 150.00 
-   * Second hundred items: 100 x 1.25 = 125.00
-   * Remaining items: 50 x 1.00 = 50.00
-1. Get the net amount. <br />Net amount =  (150.00 / 10) + (125.00 / 10) + (50.00 /10) = 15.00 + 12.50 + 5.00 = 32.50
-1. Use the net amount and quantity to obtain the unit price. 
->Unit price = 32.50 / 250 = .13
+The prices of the items based on the pricing brackets: 
+- First hundred items: 100 x 1.50  = 150.00 
+- Second hundred items: 100 x 1.25 = 125.00
+- Remaining items: 50 x 1.00 = 50.00
+- Get the net amount. <br />Net amount =  (150.00 / 10) + (125.00 / 10) + (50.00 /10) = 15.00 + 12.50 + 5.00 = 32.50
+- Use the net amount and quantity to obtain the unit price. 
+- Unit price = 32.50 / 250 = .13
 
 ### Flat Tier Price 
 
@@ -102,7 +101,7 @@ The price brackets are:
 |0 |50| Each|100.00|50|
 |50|200 |Each|150.00|200|
 
-The following invoices show the unit prices with the different quantities purchased. The **Net amount** is calculated first, then the unit price.  
+The invoices below show the unit prices with the different quantities purchased. The **Net amount** is calculated first, then the unit price.  
 
 |Invoice|Quantity Purchased|Unit Price|Net Amount|
 | :------------- |:-------------:| :------|------:|
@@ -111,33 +110,25 @@ The following invoices show the unit prices with the different quantities purcha
 |3|50|2.00 / 50 = 0.04|100 / 50 = 2.00|
 |4|60|0.75 / 60 = 0.0125 = 0.01|150 / 200 = 0.75|
 
-
 <table class="drcr"><col><col><col><col><thead><tr class="heading"><td>Invoice</td><td>Quantity Purchased</td><td>Unit Price</td><th>Net Amount</th></tr></thead><tbody><tr><td>1</td><td>25</td><td>2 / 25 = 0.08</td><td>100 / 50 = 2</td></tr><tr><td>2</td><td>20</td><td>2 / 20 = 0.1</td><td>100 / 50 = 2</td></tr><tr><td>3</td><td>50</td><td>2 / 50 = 0.04</td><td>100 / 50 = 2</td></tr><tr><td>4</td><td>60</td><td>0.75 / 60 = 0.0125 = 0.01</td><td>150 / 200 = 0.75</td></tr></tbody></table><div>
 
-  ---
-
 ## Escalation and discount
-
-**Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > Select a billing schedule line > Escalation and discount**.
-
-**Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > Select a billing schedule > Escalation and discount**. 
-
  
-* An escalation is a price increase for a future billing period where the invoice has not yet been created.
-* A discount is a price reduction for a future billing period where the invoice has not yet been created.
+An escalation is a price increase for a future billing period where the invoice has not yet been created.
+A discount is a price reduction for a future billing period where the invoice has not yet been created.
 
 Escalations and discounts cannot be applied to a billing schedule retroactively. For example, you wanted to apply and process an escalation to a billing schedule three months in the past. In Subscription billing, it is not possible to apply a price increase that happened three months ago. 
 
 You can apply the escalation or discount to a billing schedule or billing schedule line in one of the following ways: 
-* From the **All/Active billing schedules** list 
-* To the **Billing schedule** 
-* To a specific **Billing schedule line**
+ - From the **All/Active billing schedules** list 
+ - To the **Billing schedule** 
+ - To a specific **Billing schedule line**
 
 ### Apply Escalation or Discount
 
 To apply an escalation or discount to a billing schedule: 
 1. Select a billing schedule or a billing schedule line.
-2. Select **Escalation and discount** from either the Escalation and discount tab or the Escalation and discount action on the billing schedule line.
+2. Select **Escalation and discount** from either the **Escalation and discount** tab or the **Escalation and discount** action on the billing schedule line.
 3. Select the **Consumer price index calculation** for the escalation or discount. This is only used if a consumer price index is used to calculate the escalation or discount. 
 4. For each escalation or discount line you add, do the following: 
    a. Select **New**. 
@@ -165,9 +156,9 @@ This page contains the following fields:
 |**Amount**|Type the escalation or discount amount.|
 |**Consumer price index schedule**|Select the Consumer price index schedule that is used for the calculations. |
 |**End date**|Select the end date for the escalation or discount. <br />This value is required for items that use the unbilled revenue feature. |
-|**Deferral schedule number**|Displays the deferral schedule number. <br />Available only when this page is opened from the billing schedule line level. |
-|**Journal batch number**|Displays the journal batch number. <br />Available only when this page is opened from the billing schedule line level. |
-|**Total discount amount**|Displays the total sum of the discount amount for all lines in the grid. <br />Available only when this page is opened from the billing schedule line level. |
+|**Deferral schedule number**|Displays the deferral schedule number. <br />Available only when this page is opened from the billing schedule line. |
+|**Journal batch number**|Displays the journal batch number. <br />Available only when this page is opened from the billing schedule line. |
+|**Total discount amount**|Displays the total sum of the discount amount for all lines in the grid. <br />Available only when this page is opened from the billing schedule line. |
 |**Current short-term unbilled revenue amount**|Displays the current short-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring contract billing parameters** page and the accounts are set up on the **Unbilled revenue setup** page for the line item. |
 |**Current long-term unbilled revenue amount**|Displays the current long-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring contract billing parameters** page and the accounts are set up on the **Unbilled revenue setup** page for the line item. |
 
@@ -218,7 +209,7 @@ This topic provides an example that shows how to reverse the billing of a period
 
 A billing schedule has the following one line only: 
 - Billed monthly for 12 months from January to December. 
-- Invoices have been created for all periods up to April (for example, the **Billed** check box is marked on the **View billing detail** page. 
+- Invoices have been created for all periods up to April (for example, the **Billed** check box is marked on the **View billing detail** page). 
 
 You want to reverse the invoice for the April billing period. 
 
@@ -234,7 +225,8 @@ Optionally, you can select the option to post the invoice as well.
 When you review the line for the billing schedule, the new line has a link to the credit note.   
 Also, the original line still has a link to the original April invoice. 
 
-> **Note:** If the sales invoice had not been created for the April billing period, you could simply delete the sales order, and the **Billed** status would be cleared. But because the invoice had already been created, you must create the credit note by following the above steps. 
+> [!Note] 
+> If the sales invoice had not been created for the April billing period, you could simply delete the sales order, and the **Billed** status would be cleared. Because the invoice had already been created, you must create the credit note by following the above steps. 
 
 ---
 
@@ -265,7 +257,7 @@ Customer US-001 purchases a renewal item with item group PREFIX. This transactio
 | :------------- |:-------------:| :-------------| :-------------| :-------------| :-------------| 
 | SO0001| 	US-001 |D0001 |D0002|PREFIX|SCH001|
 
-When the invoice for the sales order is posted, the renewal item is automatically added to the existing billing schedule (SCH001) for the customer. This billing schedule uses the item group PREFIX. All renewal items that have the same item group are put into the same billing schedule.
+When the invoice for the sales order is posted, the renewal item is added to the existing billing schedule (SCH001) for the customer. This billing schedule uses the item group PREFIX. All renewal items that have the same item group are put into the same billing schedule.
 
 **Header**
  
