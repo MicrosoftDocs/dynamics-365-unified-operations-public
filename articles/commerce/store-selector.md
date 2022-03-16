@@ -66,12 +66,12 @@ To enter the latitude and longitude values for a store location in Commerce head
 
 ### Hide a store from the store selector module
 
-Some stores within a fulfillment group may not be valid pickup locations. To ensure that invalid pickup locations do not appear as options within the store selector module, follow these steps in Commerce headquarters.
+Some stores in a fulfillment group might not be valid pickup locations. To ensure that only valid pickup locations appear as options in the store selector module, follow these steps in Commerce headquarters.
 
 1. Go to **Retail and Commerce \> Commerce setup \> Fulfillment groups \> All stores**.
-1. Select **Edit** on the action pane.
-1. Under **Setup**, for stores that are not valid pickup locations, clear the **Is Pickup Location** checkbox. 
-1. Select **Save** on the action pane.
+1. On the Action Pane, select **Edit**.
+1. Under **Setup**, for every store that isn't a valid pickup location, clear the **Is Pickup Location** checkbox.
+1. On the Action Pane, select **Save**.
 1. Run the 1070 **Channel configuration** distribution schedule job.
 
 ## Bing Maps integration
