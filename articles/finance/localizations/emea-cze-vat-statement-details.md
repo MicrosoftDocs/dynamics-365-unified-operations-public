@@ -30,6 +30,10 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
+  > [NOTE!]
+  > This feature is deprecated, please see more details in [Removed and deprecated features](https://docs.microsoft.com//dynamics365/finance/get-started/removed-deprecated-features-finance#vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic).
+  > Learn more about VAT declaration in [VAT declaration (Czech Republic)](https://docs.microsoft.com//dynamics365/finance/localizations/emea-cze-vat-declaration-tax-declaration-model)
+
 Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 
 This topic includes country-specific information about VAT statement setup for users in legal entities in the Czech Republic. For more information about general VAT reporting, see [VAT reporting for Europe](emea-vat-reporting.md).
