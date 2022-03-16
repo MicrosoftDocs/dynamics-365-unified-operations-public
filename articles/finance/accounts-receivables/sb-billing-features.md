@@ -37,7 +37,7 @@ This topic explains the features of a billing schedule and billing schedule line
 ## Pricing methods
 
 You can use one of the following pricing methods to calculate the unit price of an item: 
-* Flat (no example)
+* Flat 
 * Standard 
 * Tier 
 * Flat Tier
@@ -69,7 +69,9 @@ Net amount = (Quantity * Price) / Price unit = (250 * 1.00) / 100 = 2.50
 
 An example for an invoice quantity of 100. With the standard pricing method, the unit price is calculated as: 
 Unit price = 1.50, which uses the price level that has the quantity of 100 
-Note: standard FROM and TO quantity matches if the quantity is >=FROM quantity and <TO quantity
+
+> [!Note] 
+> Standard FROM and TO quantity matches if the quantity is >=FROM quantity and <TO quantity.
 
 Net amount = (100 x 1.50) / 1 = 150
 
@@ -85,8 +87,8 @@ An item has the following price brackets:
 
 Using the price brackets, assume the invoice quantity is 250. With the tier pricing method, the net amount is calculated. After calculating the net amount, the unit price is calculated by dividing the new amount by the quantity: 
 The prices of the items based on the pricing brackets: 
-- First hundred items: 100 x 1.50  = 150.00 
-- Second hundred items: 100 x 1.25 = 125.00
+- First 100 items: 100 x 1.50  = 150.00 
+- Second 100 items: 100 x 1.25 = 125.00
 - Remaining items: 50 x 1.00 = 50.00
 - Get the net amount. <br />Net amount =  (150.00 / 10) + (125.00 / 10) + (50.00 /10) = 15.00 + 12.50 + 5.00 = 32.50
 - Use the net amount and quantity to obtain the unit price. 
@@ -114,10 +116,10 @@ The invoices below show the unit prices with the different quantities purchased.
 
 ## Escalation and discount
  
-An escalation is a price increase for a future billing period where the invoice has not yet been created.
-A discount is a price reduction for a future billing period where the invoice has not yet been created.
+An escalation is a price increase for a future billing period where the invoice hasn't yet been created.
+A discount is a price reduction for a future billing period where the invoice hasn't yet been created.
 
-Escalations and discounts cannot be applied to a billing schedule retroactively. For example, you wanted to apply and process an escalation to a billing schedule three months in the past. In Subscription billing, it is not possible to apply a price increase that happened three months ago. 
+Escalations and discounts can't be applied to a billing schedule retroactively. For example, you wanted to apply and process an escalation to a billing schedule three months in the past. In Subscription billing, it's not possible to apply a price increase that happened three months ago. 
 
 You can apply the escalation or discount to a billing schedule or billing schedule line in one of the following ways: 
  - From the **All/Active billing schedules** list 
@@ -146,21 +148,21 @@ This page contains the following fields:
 
 |Field|Description|
 |:-----|:-----|
-|**Item number**|Displays the item number for the billing schedule line. Available when this page is opened for a billing schedule line item. |
-|**Consumer price index calculation**|Select to determine the method used for the Consumer price index escalation calculation:<br />* **Prior consumer price index**: Uses the previous Consumer price index value for the escalation calculation.<br />* **Base consumer price index**:  Uses the base Consumer price index value for the escalation calculation.|
+|**Item number**|Item number for the billing schedule line. Available when this page is opened for a billing schedule line item. |
+|**Consumer price index calculation**|Select to determine the method used for the Consumer price index escalation calculation:<br />* **Prior consumer price index**: Uses the previous Consumer price index value for the escalation calculation.<br />* **Base consumer price index**: Uses the base Consumer price index value for the escalation calculation.|
 **Line Grid**|
-|**Discount**|Select whether the change in the amount is an escalation or discount:<br />* **Selected**: The change is to apply a discount to the billing schedule or billing schedule line. <br />* **Cleared**: The change is to apply an escalation to a billing schedule or a schedule line. <br />This value cannot be edited for items that use the unbilled revenue feature. Also, discounts cannot be applied to items that use revenue splitting. |
+|**Discount**|Select whether the change in the amount is an escalation or discount:<br />* **Selected**: The change is to apply a discount to the billing schedule or billing schedule line. <br />* **Cleared**: The change is to apply an escalation to a billing schedule or a schedule line. <br />This field can't be edited for items that use the unbilled revenue feature. Also, discounts can't be applied to items that use revenue splitting. |
 |**Start date**|Select the start date for the escalation or discount. |
 |**Frequency**|Select the frequency of the escalation or discount: **None**, **Monthly**, **Quarterly**, **Semiannually**, or **Annually**. |
 |**Percentage**|Type the percentage for the escalation or discount. |
 |**Amount**|Type the escalation or discount amount.|
 |**Consumer price index schedule**|Select the Consumer price index schedule that is used for the calculations. |
-|**End date**|Select the end date for the escalation or discount. <br />This value is required for items that use the unbilled revenue feature. |
-|**Deferral schedule number**|Displays the deferral schedule number. <br />Available only when this page is opened from the billing schedule line. |
-|**Journal batch number**|Displays the journal batch number. <br />Available only when this page is opened from the billing schedule line. |
-|**Total discount amount**|Displays the total sum of the discount amount for all lines in the grid. <br />Available only when this page is opened from the billing schedule line. |
-|**Current short-term unbilled revenue amount**|Displays the current short-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring contract billing parameters** page and the accounts are set up on the **Unbilled revenue setup** page for the line item. |
-|**Current long-term unbilled revenue amount**|Displays the current long-term unbilled revenue amount. <br />This amount appears only when the a short-term deferral method is selected on the **Recurring contract billing parameters** page and the accounts are set up on the **Unbilled revenue setup** page for the line item. |
+|**End date**|Select the end date for the escalation or discount. <br />This is required for items that use the unbilled revenue feature. |
+|**Deferral schedule number**|The deferral schedule number. <br />Available only when this page is opened from the billing schedule line. |
+|**Journal batch number**|The journal batch number. <br />Available only when this page is opened from the billing schedule line. |
+|**Total discount amount**|The total sum of the discount amount for all lines in the grid. <br />Available only when this page is opened from the billing schedule line. |
+|**Current short-term unbilled revenue amount**|The current short-term unbilled revenue amount. <br />This amount appears when a short-term deferral method is selected on the **Recurring contract billing parameters** page and the accounts are set up on the **Unbilled revenue setup** page for the line item. |
+|**Current long-term unbilled revenue amount**|The current long-term unbilled revenue amount. <br />This amount appears when a short-term deferral method is selected on the **Recurring contract billing parameters** page and the accounts are set up on the **Unbilled revenue setup** page for the line item. |
 
 ---
   
@@ -191,7 +193,7 @@ The annual amount of a billing schedule is $5000. The start date is August 12, 2
 
 ### Example 2 proration
 
-The annual amount of a billing schedule is $12000. The start date is August 1, 2019; the end date is December 31, 2019. The billing frequency is annually. 
+The annual amount of a billing schedule is $12,000. The start date is August 1, 2019; the end date is December 31, 2019. The billing frequency is annually. 
 - **Daily**
   - Number of days = End date - Start Date + 1 = 153 days
   - Number of days in the year = July 31, 2020 - August 1, 2019 + 1 = 366
@@ -205,19 +207,17 @@ The annual amount of a billing schedule is $12000. The start date is August 1, 2
 
 ## Reversing a period billing 
 
-This topic provides an example that shows how to reverse the billing of a period for a schedule line. 
-
-A billing schedule has the following one line only: 
+A billing schedule has only one line: 
 - Billed monthly for 12 months from January to December. 
 - Invoices have been created for all periods up to April (for example, the **Billed** check box is marked on the **View billing detail** page). 
 
 You want to reverse the invoice for the April billing period. 
 
-Since an invoice for the April billing period has been created, the **Billed** status for the detail cannot be removed. To be able to reverse the April billing, you must create an offsetting credit note for the line:
+Because an invoice for the April billing period has been created, the **Billed** status for the detail cannot be removed. To reverse the April billing, an offsetting credit note must be created for the line:
 1. In the **All billing schedules** page, create a new schedule line for the same item. 
 2. Change the **Quantity** of the item to a negative value of the original quantity. 
 3. Set the **Billing frequency** to **One-time**. 
-4. Set the start and end dates to the same as the billing detail line for which you want to create a credit note. In this example, 4/1/2019 to 4/30/2019.
+4. Update the start and end dates to the same as the billing detail line for which you want to create a credit note. In this example, 4/1/2019 to 4/30/2019.
 5. Save the changes. 
 6. Open the **Generate invoice** page and create the sales order with the credit note for this period.   
 Optionally, you can select the option to post the invoice as well. 
@@ -226,19 +226,14 @@ When you review the line for the billing schedule, the new line has a link to th
 Also, the original line still has a link to the original April invoice. 
 
 > [!Note] 
-> If the sales invoice had not been created for the April billing period, you could simply delete the sales order, and the **Billed** status would be cleared. Because the invoice had already been created, you must create the credit note by following the above steps. 
+> If the sales invoice had not been created for the April billing period, you could simply delete the sales order. The **Billed** status would be cleared. If an invoice has already been created, a credit note must be created. 
 
----
-
+ 
 ## Split item group examples
 
-This topic provides examples split item groups to promote understanding of item group functionality in Subscription billing. 
-
-### Customer Case
-
-In this example, the setup is as follows: 
+The setup is as follows: 
 - On the **Recurring Contract Billing Parameters** page, **Split by item group** is selected and **Unique schedule type** is **Customer**. 
-- The following item groups have been created: PREFIX, DATAHUB, and SPP. 
+- These item groups have been created: PREFIX, DATAHUB, and SPP. 
 - Customer US-001 has multiple billing schedules where the item group is PREFIX or DATAHUB. 
 - Customer US-002 has multiple billing schedules where the item group is PREFIX or SPP. 
 
@@ -293,15 +288,15 @@ Currently, customer US-001 does not have a billing schedule that uses the item g
 
 ### Multiple Billing Schedules, Same End User and Customer
 
-In this example, the setup is as follows: 
-* On the **Recurring contract billing parameters** page, **Split by item group** is selected and **Unique schedule type** is **End user**. 
-* On the **End users** page customer and end user relationships are set up. 
+In this example, the setup is: 
+ - On the **Recurring contract billing parameters** page, **Split by item group** is selected and **Unique schedule type** is **End user**. 
+ - On the **End users** page, the customer and end user relationships are set up. 
 
 | Customer account| End user account|
 | :------------- |:-------------| 
 | US-001| US-221 | 
 
-Multiple billing schedules are created for the customer and end user combination. With **Split by item group** selected on the **Recurring contract billing parameters** page multiple billing schedules for the same customer and end user relationship can be created. 
+Multiple billing schedules are created for the customer and end user combination. With **Split by item group** selected on the **Recurring contract billing parameters** page, multiple billing schedules for the same customer and end user relationship can be created. 
 
 | Billing schedule number| Customer|End user account|Header item group|
 | :------------- |:-------------:| :-------------| :-------------| 
@@ -317,9 +312,9 @@ On the **Item setup** page, create support and renewal item relationships.
 | Table| 	D002 |	ITEM28 |D005|	IG2|
 | Table| 	D003 |	ITEM29 |D006|	IG3|
 
-A sales order with items are from the **Item Setup** page are created for customer US-001. When creating the sales order, you can open the **Support and renewal process** page and specify the **End user account** and specify any other information for the renewal item. 
+A sales order with items from the **Item setup** page are created for customer US-001. When creating the sales order, open the **Support and renewal process** page and specify the **End user account** and any other information for the renewal item. 
 
-When the invoice for the transaction is created and posted, different billing schedules are created for the customer-end user and item group combination. More than one line in the same sales order can be assigned to the same billing schedule. 
+When the invoice for the transaction is created and posted, different billing schedules are created for the customer-end user and item group combination. More than one line on the same sales order can be assigned to the same billing schedule. 
 
 | Sales order # | Customer|End user account | Main item | Support item |Renewal item| Billing schedule number|
 | :------------- |:-------------:| :-------------| :-------------| :-------------| :-------------|:-------------| 
