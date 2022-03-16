@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This topic provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -35,7 +35,7 @@ Yes, purchasing from multiple catalogs in a single checkout is allowed. B2B shop
 
 #### If a B2B shopper purchases the same item from different catalogs, what is the expected behavior? 
 
-while a given user may have access to multiple catalogs at any point in time, the expectation is that products in those catalogs will be mutually exclusive. In other words, ideally a product shouldn't be part of more than one catalog for a given user. 
+While a given user may have access to multiple catalogs at any point in time, the expectation is that products in those catalogs will be mutually exclusive. In other words, ideally a product shouldn't be part of more than one catalog for a given user. 
 
 However, should the situation arise where a product belongs to multiple catalogs, then the system would maintain two cart lines specific to each catalog for the same product. The same product from two different catalogs will not be merged at checkout.  
 
@@ -63,7 +63,7 @@ Currently, Commerce catalogs are intended to work only with B2B channels.
 
 Currently, only related products functionality is supported. However, upsell and cross-sell item configurations are available for call centers. 
 
-The following features are supported only for call centers: 
+The following features are also only supported only for call centers: 
 - Catalog source codes.
 - Use of source IDs to track costs and response rates.
 - Catalog-specific order and item scripts.
