@@ -45,8 +45,8 @@ You can terminate a billing schedule or billing schedule line in one of the foll
 - To the billing schedule displayed on the [Billing Schedules](BillSched.md) page
 - To a specific billing schedule line on the [Billing Schedules](BillSched.md) page
 
-> [!TIP]
-> If you want to terminate several billing schedules simultaneously, use the [Mass Termination Processing](MassTerminateProc.md) page. 
+
+**Note:** If you want to terminate several billing schedules simultaneously, use the [Mass Termination Processing](MassTerminateProc.md) page. 
 
 
 ## Terminate a Billing Schedule or Line
