@@ -42,6 +42,9 @@ For more information about how to prepare a VAT return with direct submission to
 - [Authorize your Finance environment to interoperate with ID-porten and Altinn web services](emea-nor-vat-return-authorization.md)
 - [Submit a VAT return to the Altinn web service](emea-nor-vat-return-submission.md)
 
+> [!NOTE]
+> VAT returns of the periods before January 1, 2022 and corrections to them must be reported in the format descripbed in [VAT statement for Norway](emea-nor-sales-tax-payment-report.md) topic.
+
 ## Privacy notice
 
 When you enable Finance to interoperate with the Norwegian Tax Administration's VAT application programming interface (API), both customer content and personal data will be shared with the Norwegian Tax Administration as part of the submission of your VAT declaration. This information might include the name of the individual who submitted the VAT declaration. To learn more about the kinds of information that are included in your submission, you can view the Norwegian Tax Administration's [requirements](https://go.microsoft.com/fwlink/?linkid=2178205). A system administrator can disable the interoperation with the Norwegian Tax Administration's web service in Finance by going to **Tax** \> **Setup** \> **Electronic Messages**.
