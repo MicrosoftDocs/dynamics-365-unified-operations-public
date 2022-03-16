@@ -5,7 +5,7 @@
 title: Create Commerce catalogs for B2B sites
 description: This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: ashishmsft
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -41,7 +41,7 @@ Commerce product catalogs allow you to define the following:
 <!-- ![Commerce product catalogs preview](./media/Commerce_Catalogs.png)-->
 
 > [!NOTE]
-> This feature is available starting with the Dynamics 365 Commerce version 10.0.26 release. To configure catalog-specific configurations like navigation hierarchy and customer hierarchy in Commerce headquarters, in Commerce headquarters go to the Feature management workspace (**System administration /> Workspaces /> Feature management**), enable the **Enable use of multiple catalogs on retails channels.** feature, and then run the **1110 CDX** job. 
+> This feature is available starting with the Dynamics 365 Commerce version 10.0.26 release. To configure catalog-specific configurations like navigation hierarchy and customer hierarchy in Commerce headquarters, in Commerce headquarters go to the Feature management workspace (**System administration \> Workspaces \> Feature management**), enable the **Enable use of multiple catalogs on retails channels.** feature, and then run the **1110 CDX** job. 
 
 <!-- ![Feature management - Enable Commerce Catalog Feature](./media/Commerce-Catalogs-Feature-Management.jpeg)-->
 
@@ -55,11 +55,11 @@ Creating and processing a catalog is a four step process, as outlined in the fol
     - Add and categorize products. 
     - Associate price groups.
     - Associate customer hierarchy (specific to your B2B organizations). 
-    - Associate 'Default dimension attribute group for refiners like Size, Style, Color' through attribute groups from top-ribbon. 
-    - Set attribute metadata (choose which attributes are supposed to be viewable & refinable. By default, all viewable attributes are searchable as well).  
+    - Associate default dimension attribute group for refiners like size, style, color. 
+    - Set attribute metadata.  
 1. **[Validation](#validate-the-catalog)** - Runs validation rules that enforce behavior, such as: 
-    - There are no uncategorized products. 
-    - All items assorted to each channel are associated with a catalog.
+    - Ensure there are no uncategorized products. 
+    - Ensure that all items assorted to each channel are associated with a catalog.
 1. **[Approval](#approve-the-catalog)** 
 1. **[Publishing](#publsih-the-catalog)**
 
@@ -77,19 +77,19 @@ When you create a new catalog, you must first associate the catalog with one or 
 
 To add products to a catalog, a navigation hierarchy must first be chosen. The navigation hierarchy supports the category structure for the catalog. You must pick from one of the navigation hierarchies associated with the channels selected on the **Commerce channels** FastTab of the **Catalog** page. To associate a navigation hierarchy default with each of your channels, go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 
-#### Specify effective and expiration dates
+#### Specify time-effective and expiration dates
 
-To specify effective and expiration dates for a catalog, select the top node of the catalog hierarchy to return to the main catalog header view, and then on the **General** FastTab configure effective and expiration dates as necessary.
+To specify time-effective and expiration dates for a catalog, select the top node of the catalog hierarchy to return to the main catalog header view, and then on the **General** FastTab configure effective and expiration dates as necessary.
 
 #### Add and categorize products
 
 To configure products to add to the catalog, on the **Catalogs** menu tab of the **Catalog setup** page select **Add products**. Alternatively, you can select a node in the navigation hierarchy, which will change the screen presentation and allow you to add products directly to a category within the catalog.
 
-<!--NEED CATEGORIZE STEPS-->
+<!--NEED CATEGORIZATION STEPS-->
 
 #### Associate price groups
 
-<!--NEED MORE INFO-->
+<!--NEED INTRO, STEPS-->
 
 For more information on price groups, see [Price groups](price-management.md#price-groups).
 
@@ -99,13 +99,17 @@ For more information on price groups, see [Price groups](price-management.md#pri
 
 #### Associate customer hierarchy
 
-<!--NEED STEPS-->
+<!--NEED INTRO, STEPS-->
 
-#### Associate 'Default dimension attribute group for refiners like Size, Style, Color'
+#### Associate default dimension attribute group for refiners like size, style, color
+
+Associate default dimension attribute group for refiners like size, style, color through attribute groups from top-ribbon. 
 
 <!--NEED STEPS-->
 
 #### Set attribute metadata
+
+Choose which attributes are supposed to be viewable and refinable. By default, all viewable attributes are searchable as well.
 
 <!--NEED STEPS-->
 
@@ -134,3 +138,7 @@ When the catalog is in an **Approved** status, to publish the catalog select **P
  
 > [!NOTE]
 > You can publish a catalog that contains products that have warnings, but those products won't appear in the online store.
+
+## Additional resources
+
+[Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
