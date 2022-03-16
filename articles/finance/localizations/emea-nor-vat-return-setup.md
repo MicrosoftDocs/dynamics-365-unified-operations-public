@@ -263,6 +263,16 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 >
 > The reverse charge mechanism enables a document to be posted that has two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. Those transactions are then reported in the VAT return as two lines.
 
+> [!NOTE]
+> Purchases of goods and services from abroad without deduction entitlement that are subject to the following `mvaKode` values must be reported in the VAT return by using one line where the direction is **Sales tax payable**. We recommend that you post these documents by using the [reverse charge mechanism for the VAT/GST scheme](emea-reverse-charge.md) where the sales tax code set up with positive tax rate has non-deductible percent equal to 100.
+>
+> - **82** – Purchases of goods from abroad without deduction entitlement (standard rate).
+> - **84** – Purchases of goods from abroad without deduction entitlement (middle rate).
+> - **87** – Purchases of services from abroad without deduction entitlement (standard rate).
+> - **89** – Purchases of services from abroad without deduction entitlement (low rate). 
+>
+> The reverse charge mechanism enables a document to be posted that has two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. Transaction where the direction is **Sales tax payable** then reported in the VAT return and transaction where the direction is **Sales tax receivable** will not be reported in the VAT return.
+
 ## <a id="em-setup"></a>Import a package of data entities that includes a predefined EM setup
 
 The process of setting up the EM functionality for VAT returns with direct submission to Altinn has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities package include a link to ER configurations. Before you start to import the data entities package, import ER configurations into Finance.
