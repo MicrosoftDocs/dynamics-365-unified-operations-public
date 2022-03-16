@@ -33,6 +33,9 @@ This topic includes country-specific information about how to set up the Standar
 
 Beginning January 2020, all companies in Norway are required by the Norwegian Tax Administration to provide SAF-T Financial data. This requirement is in accordance with version 1.4 of the documentation, which was published on July 8, 2019, and version 1.3 of the technical documentation, which was published on March 23, 2018, in the form of an XML report. The publication of these pieces of documentation coincided with version 1.1 of the "Norwegian SAF-T Financial data" XML Schema Definition (XSD) schema that was developed by the SAF-T Working group, Skatteetaten, and based on "OECD Standard Audit File - Taxation 2.00," which was modified on February 2, 2018.
 
+> [!NOTE]
+> Using the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation of further SAF-T reporting for some scenarios subject for SAF-T. In particular, bank statement scenario must be posted specifically using different vouchers for transactions with different counteragent accounts. For more information about usage of One voucher functionality and SAF-T, see [SAF-T report and One voucher](#one-voucher) section later in this topic.
+
 ## Setup
 
 To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, complete the following setup tasks:
@@ -90,6 +93,9 @@ As the documentation explains, in Norwegian SAF-T Financial data, main accounts 
 
 
 Starting from **version 54.61**, the electronic reporting format **“SAF-T Format (NO)”** supports the setup of **Standard accounts** for the **Main accounts** of the company by using **Application specific parameters**.
+
+> [!NOTE]
+> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Design multilingual reports in Electronic reporting \> Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports#performance).
 
 To associate **Main accounts** that are used in Finance with Norwegian standard accounts via **Application specific parameters** follow the following steps:
 
@@ -196,7 +202,7 @@ After the report is generated, if more than one XML file is generated, the user 
 
 The SAF-T report for Norway must include information about the **AnalysisTypeTable** under the **MasterFiles** node of the report. **AnalysisTypeTable** must represent a table with the analysis code identifiers that are used for further specification of transaction data. In Finance, **Financial dimensions** is the data source for the **AnalysisTypeTable** node. When you set up **Financial dimensions** in your legal entity, use the **ReportColumnName** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisType\> node. Use the **Dimension name** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisTypeDescription\> node.
 
-### SAF-T report and One voucher
+### <a name="one-voucher"></a>SAF-T report and One voucher
 
 Using the One voucher functionality introduces a limitation of further SAF-T reporting for data if one voucher was applied. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the SAF-T report. For information about One voucher functionality, see [One voucher](../general-ledger/one-voucher.md).
 
