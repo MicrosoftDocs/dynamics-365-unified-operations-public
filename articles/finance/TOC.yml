@@ -418,6 +418,12 @@
           items:
           - name: Create billing schedules
             href: accounts-receivable/sb-billing-schedules.md
+          - name: Copy a billing schedule
+            href: accounts-receivable/sb-copy-schedules.md
+          - name: Billing schedule features
+            href: accounts-receivable/sb-billing-features.md
+          - name: Milestone billing
+            href: accounts-receivable/sb-milestonebilling.md
         - name: Revenue and expense deferrals
           items:
         - name: Multi-element revenue allocation
