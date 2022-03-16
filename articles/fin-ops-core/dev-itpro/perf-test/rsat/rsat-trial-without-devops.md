@@ -107,7 +107,7 @@ You can add one or more Test Suites under that Test Plan by using the "New Test 
 
 How do you then add test cases, edit, and delete them? Well, this is done using the exact same actions that were added earlier with RSAT release 2.2 for RSAT in "Normal" mode. This is found explained with the existing documentation:
 
-[Maintain test cases in Regression suite automation tool (RSAT) - Finance & Operations \| Dynamics 365 \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/rsat/rsat-maintain-test-cases)
+[Maintain test cases within Regression suite automation tool (RSAT)](rsat-maintain-test-cases.md)
 
 There are very few things that are different about maintaining test cases under trial mode. There are mainly these two limitations: Derived test cases are not available, and test cases cannot be added as linked to an existing test case.
 
