@@ -2060,6 +2060,8 @@
           href: localizations/tasks/set-up-payment-slip-format.md
         - name: Danish Intrastat
           href: localizations/emea-dnk-intrastat.md
+        - name: VAT declaration
+          href: localizations/emea-dnk-vat-declaration-denmark.md
       - name: Egypt
         items: 
         - name: Egypt overview
@@ -2348,8 +2350,6 @@
           href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
         - name: EU sales list
           href: localizations/emea-deu-eu-sales-list.md
-        - name: VAT declaration
-          href: localizations/emea-dnk-vat-declaration-denmark.md
       - name: Hungary
         items:
         - name: Hungary overview
