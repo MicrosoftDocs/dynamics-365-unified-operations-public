@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: roschlom
-ms.date: 12/03/2021
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Finland](../localizations/emea-fin-vat-declaration.md) |
+| **Reason for deprecation/removal** | Replaced with a new VAT declaration design, [VAT declaration for Finland](../localizations/emea-fin-vat-declaration.md). |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
