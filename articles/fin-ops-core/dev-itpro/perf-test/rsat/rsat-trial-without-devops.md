@@ -46,17 +46,17 @@ It is important to stress that trial mode is not time limited. In fact, if you f
 
 The RSAT installer program now includes an extra page where you select which RSAT modes you want to have available to use. This will be prefilled with typical selection that install only RSAT in Normal mode, but here you can select also to install the trial mode and unselect Normal mode if this is not needed. The installation program will create shortcuts for the selections you make to the environment. Notice as earlier installation is done for the full environment, and shortcuts are created as shared for all users on this environment.
 
-![Graphical user interface  text  application  email Description automatically generated](media/install-rsat.png)
+![Selecting Regression Suite Automation Tool modes to install](media/install-rsat.png)
 
 Icons appear on the desktop as shortcuts to call RSAT in the modes that we selected. Notice there is a new icon with a band that has the word "Trial" across to indicate this is the trial mode. Below is how this will appear if both modes were selected and installed. Simply click the RSAT shortcut that matches the mode you want to run from here.
 
-![Company name Description automatically generated](media/rsat-icons.png)
+![Regression Suite Automation Tool desktop icons](media/rsat-icons.png)
 
 ## How does RSAT run in trial mode differ from RSAT "normal" mode?
 
 Running RSAT in trial mode means a user experience that is trimmed down compared to RSAT run in "normal" mode. Actions and settings related to Azure DevOps are removed from the experience when running under trial mode.
 
-![Graphical user interface  text  application  email Description automatically generated](media/rsat-trial.png)
+![Regresssion Suite Automation Tool in trial mode](media/rsat-trial.png)
 
 Here is a summary of actions and settings which are **not available** under trial mode:
 
@@ -81,11 +81,11 @@ There is only a single test plan available when running under trial mode. This i
 
 Test suites are no longer created in DevOps under trial mode, so a new action is added in the toolbar called "New Test Suite", which opens a form to specify the name of the suite to create.
 
-![Graphical user interface  application Description automatically generated](media/new-suite.png)
+![Regression Suite Automation Tool - Create new test suites](media/new-suite.png)
 
 Notice there is only support for adding Test Suites directly with the Local Test Plan, and the action is only available when the test plan node has been selected in the tree like this.
 
-![Graphical user interface  text  application  chat or text message Description automatically generated](media/trial-plan.png)
+![Regression Suite Automation Tool - Test plan](media/trial-plan.png)
 
 There is also new "Delete Test Suite" action available for remove suites. This action will only allow deleting suites where there are no test cases within though. If you have test cases within the test suite, then you will need to delete these individually first before deleting the suite.
 
@@ -103,7 +103,7 @@ When you open RSAT in trial mode the first time then there are no test suites or
 
 You can add one or more Test Suites under that Test Plan by using the "New Test Suite" action. It is highly advisable that you create suites and add test cases into these, and not add test cases directly to the test plan. Tests are always added to the current select node select on the left-hand control, like below where the suite "Purchase order" is selected.
 
-![Text Description automatically generated](media/trial-tree.png)
+![Regression Suite Automation Tool - Test tree](media/trial-tree.png)
 
 How do you then add test cases, edit, and delete them? Well, this is done using the exact same actions that were added earlier with RSAT release 2.2 for RSAT in "Normal" mode. This is found explained with the existing documentation:
 
