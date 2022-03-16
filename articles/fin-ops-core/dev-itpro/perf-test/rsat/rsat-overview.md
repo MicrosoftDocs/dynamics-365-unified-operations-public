@@ -36,6 +36,7 @@ In addition to this topic, RSAT usage is described in these topics:
 + [Run Regression suite automation tool (RSAT) test cases](rsat-run.md)
 + [Run Regression suite automation tool (RSAT) with parallel execution](rsat-parallel-execution.md)
 + [Maintain test cases within Regression suite automation tool (RSAT)](rsat-maintain-test-cases.md)
++ [Trial mode without Azure DevOps](rsat-trial-without-devops.md)
 + [Validate expected values](rsat-validate-expected.md)
 + [Chain test cases](rsat-chain-test-cases.md)
 + [Derived test cases](rsat-derived-test-cases.md)
