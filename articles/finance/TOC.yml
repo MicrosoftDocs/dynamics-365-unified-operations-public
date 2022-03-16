@@ -418,7 +418,7 @@
           items:
           - name: Create billing schedules
             href: accounts-receivable/sb-billing-schedules.md
-          - name: Copy a billing chedule
+          - name: Copy a billing schedule
             href: accounts-receivable/sb-copy-schedules.md
           - name: Billing schedule features
             href: accounts-receivable/sb-billing-features.md
