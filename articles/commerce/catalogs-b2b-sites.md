@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-02-28
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites. For answeres to freqewntly asked questions regarding Commerce catalogs for B2B sites, see [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md).
+This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites. For answers to frequently asked questions regarding Commerce catalogs for B2B sites, see [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
 > This topic applies to Dynamics 365 Commerce version 10.0.26 and later releases.
@@ -41,15 +41,15 @@ Commerce product catalogs allow you to define the following:
 <!-- ![Commerce product catalogs preview](./media/Commerce_Catalogs.png)-->
 
 > [!NOTE]
-> This feature is available starting with the Dynamics 365 Commerce version 10.0.26 release. To configure catalog-specific configurations like navigation hierarchy and customer hierarchy in Commerce headquarters, go to the Feature management workspace, enable the **Enable use of multiple catalogs on retails channels.** feature, and then run the **1110 CDX** job. 
+> This feature is available starting with the Dynamics 365 Commerce version 10.0.26 release. To configure catalog-specific configurations like navigation hierarchy and customer hierarchy in Commerce headquarters, in Commerce headquarters go to the Feature management workspace (**System administration /> Workspaces /> Feature management**), enable the **Enable use of multiple catalogs on retails channels.** feature, and then run the **1110 CDX** job. 
 
 <!-- ![Feature management - Enable Commerce Catalog Feature](./media/Commerce-Catalogs-Feature-Management.jpeg)-->
 
 ## Catalog process flow
 
-Creating and processing a catalog is a four step process. The following diagram illustrates the catalog process flow:
+Creating and processing a catalog is a four step process, as outlined in the following catalog process flow:
 
-1. **Configuration** 
+1. **[Configuration](#configure-the-catalog)** 
     - Associate navigation hierarchy.
     - Specify effective and expiration dates (if applicable).
     - Add and categorize products. 
@@ -57,11 +57,11 @@ Creating and processing a catalog is a four step process. The following diagram 
     - Associate customer hierarchy (specific to your B2B organizations). 
     - Associate 'Default dimension attribute group for refiners like Size, Style, Color' through attribute groups from top-ribbon. 
     - Set attribute metadata (choose which attributes are supposed to be viewable & refinable. By default, all viewable attributes are searchable as well).  
-1. **Validation** - Runs validation rules that enforce behavior, such as: 
+1. **[Validation](#validate-the-catalog)** - Runs validation rules that enforce behavior, such as: 
     - There are no uncategorized products. 
     - All items assorted to each channel are associated with a catalog.
-1. **Approval** 
-1. **Publishing**
+1. **[Approval](#approve-the-catalog)** 
+1. **[Publishing](#publsih-the-catalog)**
 
 ## Set up the catalog
 
@@ -73,7 +73,7 @@ In Commerce headquarters, go to **Retail and Commerce \> Catalogs and assortment
 
 When you create a new catalog, you must first associate the catalog with one or more channels. Only items linked to your selected channel [assortments](/dynamics365/unified-operations/retail/assortments) can be used when creating the catalog. This is done on the **Commerce channels** FastTab of the **Catalog setup** form. Select **Add** to associate one or more channels. 
 
-#### Associate navigation hierarchy
+#### Associate the navigation hierarchy
 
 To add products to a catalog, a navigation hierarchy must first be chosen. The navigation hierarchy supports the category structure for the catalog. You must pick from one of the navigation hierarchies associated with the channels selected on the **Commerce channels** FastTab of the **Catalog** page. To associate a navigation hierarchy default with each of your channels, go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 
@@ -109,10 +109,9 @@ For more information on price groups, see [Price groups](price-management.md#pri
 
 <!--NEED STEPS-->
 
-
 ### Validate the catalog
 
-Before the catalog is available to use, it must be validated and published. 
+Before a new catalog is available to use, it must be validated and published. 
 
 To validate a catalog, follow these steps.
 
@@ -146,25 +145,22 @@ All merchandising APIs have been attempted to be 'catalog-aware' for which passi
 
 As discussed earlier that catalog 0 is not a valid catalog for B2B users when they are signed in. Thus all API calls that pass 0 or use a default value will fail since the user won’t have access to catalog 0. In order to get the right experience, the API calls that customer does need to be updated to pass the catalog id that was selected from the catalog picker. Even if you use some default value, if the user switches the catalog, the website should provide the data accordingly to the selected catalog, so the APIs from customization should pass the selected catalog as well to match the APIs that are executed from core eCommerce code.
 
-
-
 These are the cases that are possible 
-1.	A customer introduced their own data action that calls a product-related API or calls a product related data action. For more information, see [Data actions](e-commerce-extensibility/data-actions.md). Required steps from the customer:
+- A customer introduced their own data action that calls a product-related API or calls a product related data action. For more information, see [Data actions](e-commerce-extensibility/data-actions.md). Required steps from the customer:
     1. If it uses a direct API call, update data action to pass catalog id, e.g.: 
 ![Customization1_a](./media/customization1_a.png)
-
     1. If it calls a different product-related data action inside the customization, the code needs to be updated to pass some new parameters such as requestContext (which is used to retrieve the current catalog id):
 ![Customization1_b](./media/customization1_b.png)
 
-2. A customer has an overridden data action. For more information, see [Data action overrides](e-commerce-extensibility/data-action-overrides.md). 
+- A customer has an overridden data action. For more information, see [Data action overrides](e-commerce-extensibility/data-action-overrides.md). 
 Required steps: update the data action similar to #1.
 
-3. A customer has module ejection, view extension, or created a new module, which includes calls to APIs or calls to data actions. For more information, see [Clone a module library module](e-commerce-extensibility/modules-overview.md#clone-a-module-library-module).
+-  A customer has module ejection, view extension, or created a new module, which includes calls to APIs or calls to data actions. For more information, see [Clone a module library module](e-commerce-extensibility/modules-overview.md#clone-a-module-library-module).
 Required steps: update similar to #1, e.g.:
 ![Customization3](./media/customization3.png)
 
-4. If a customer uses getById API call, they need to switch to getByIds instead since getById has some limitations and it won’t support catalog awareness.
-5. If a customer has any data action that retrieves info for multiple products that could be from different catalogs, they need to split the API calls by catalog id. E.g. for the APIs in the cart, the cart may have products from different catalogs, so in order to receive product info, they need to group the products in the cart lines by catalog id, and call API for each catalog separately. E.g.
+- If a customer uses getById API call, they need to switch to getByIds instead since getById has some limitations and it won’t support catalog awareness.
+- If a customer has any data action that retrieves info for multiple products that could be from different catalogs, they need to split the API calls by catalog id. E.g. for the APIs in the cart, the cart may have products from different catalogs, so in order to receive product info, they need to group the products in the cart lines by catalog id, and call API for each catalog separately. E.g.
 ![Customization5](./media/customization5.png)
 
 
