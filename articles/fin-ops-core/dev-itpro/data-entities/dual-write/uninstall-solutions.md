@@ -17,9 +17,9 @@ ms.search.validFrom: 2022-01-21
 
 This topic describes how to uninstall dual-write application orchestration solutions.
 
-Some customers unintentionally install the dual-write application orchestration package that installs multiple solutions in their Microsoft Dataverse environment. Installing the extraneous solutions in the package can cause unexpected and undesirable issues. 
+Some customers unintentionally install the dual-write application orchestration package that installs multiple solutions in their Microsoft Dataverse environment. Installation of the extraneous solutions in the package can cause unexpected and undesirable issues.
 
-To resolve issues related to installing the dual-write application orchestration package, uninstall the unwanted dual-write solutions in the following order: 
+To fix issues that are related to installation of the dual-write application orchestration package, uninstall the unwanted dual-write solutions in the following order:
 
 1. Dynamics365FinanceAndOperationsAnchor_managed
 1. msdyn_OneFSSCM_managed (if present)
