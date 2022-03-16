@@ -34,22 +34,27 @@ Before you start to work with Inventory Visibility, you must complete the follow
 
 Before you begin, install and set up the Inventory Visibility Add-in as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
-## <a name="feature-switch"></a>Enable Inventory Visibility features in Power Apps feature management
-
-The Inventory Visibility Add-in adds several new features to your Power Apps installation. By default, these features are turned off. To use them, open the **Configuration** page in Power Apps, and then, on the **Feature Management** tab, turn on the following features.
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackgroundService*
-
-## <a name="get-service-endpoint"></a>Find the service endpoint
-
-If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Endpoint** in the upper-right corner. The page will show the correct service endpoint.
-
 ## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
 
 In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems. The remaining sections of this topic explain how to use each part of the **Configuration** page.
 
 After the configuration is completed, be sure to select **Update Configuration** in the app.
+
+## <a name="feature-switch"></a>Enable Inventory Visibility features in Power Apps feature management
+
+The Inventory Visibility Add-in adds several new features to your Power Apps installation. By default, these features are turned off. To use them, open the **Configuration** page and then, on the **Feature Management** tab, turn on the following features as needed.
+
+| Feature Management name | Description |
+|---|---|
+| *OnHandReservation* | Enables you to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md) |
+| *OnHandMostSpecificBackgroundService* | Provides an inventory summary for products together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary) |
+| *OnhandChangeSchedule* | Enables available to promise (ATP) feature (optional). For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md) |
+
+<!-- KFM: Confirm that the above is complete and correct -->
+
+## <a name="get-service-endpoint"></a>Find the service endpoint
+
+If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Endpoint** in the upper-right corner. The page will show the correct service endpoint.
 
 ## Data source configuration
 
@@ -174,7 +179,7 @@ To set up a custom calculated measure, follow these steps.
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page.
 1. On the **Calculated Measure** tab, select **New Calculate Measure** to add a calculated measure. Then set the fields as described in the following table.
-
+<!-- KFM: The following table doesn't match the UI. We should update this. Seems like first we create a measure, then we need to click **Add** to add each new row for that measure. What should we call the rows? Modifiers? What does the "of" data source mean? -->
     | Field | Value |
     |---|---|
     | New calculated measure name | Enter the name of the calculated measure. |
@@ -460,6 +465,10 @@ In this example, you can do reservation in the following dimension sequences. Yo
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 A valid dimension sequence should strictly follow the reservation hierarchy, dimension by dimension. For example, the hierarchy sequence `(SiteId, LocationId, SizeId)` isn't valid, because `ColorId` is missing.
+
+## Available to promise configuration (optional)
+
+It is possible to set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period of time, and making use of this calculation can greatly increase your order fulfillment capability. To use this feature, you must enable it on the **Feature Management** tab and then set it up using the **ATP Setting** tab. For details, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md).
 
 ## Complete and update the configuration
 

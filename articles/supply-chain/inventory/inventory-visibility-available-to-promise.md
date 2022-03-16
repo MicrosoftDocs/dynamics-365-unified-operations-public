@@ -49,18 +49,18 @@ Turn on the *On-hand change schedule* feature in Power Apps and set up the ATP o
 1. Sign into Power Apps and open Inventory Visibility.
 1. Open the **Configuration** page.
 1. On the **Feature management** tab, turn on the *OnhandChangeSchedule* feature.
-1. Open the **ATP setting** page.
-1. <!-- KFM: It's unclear, but I suppose we do something here to add a new calculated measure and could possibly add several. If so, please describe this process explicitly here. -->
+1. Open the **ATP setting** tab.
+1. Select **Add** to add a new calculated measure to use for ATP. <!-- KFM: How/where are these calculated measures used? -->
 1. Make the following settings:
-    - **Data source** – <!-- KFM: Describe this setting and its purpose. I suppose this is the data source where the calculated measures are defined. -->
-    - **Calculated measure** – <!-- KFM: Describe this setting and its purpose. Also, is this actually called  **ATP calculated measure**? -->
-    - **Schedule period** – Enter the number of days for which users can view and submit scheduled on-hand changes. When users query for stock information, they will get the scheduled on-hand changes and ATP for each day in the period. Enter an integer between 1 and 7. <!-- KFM: I moved several details from the next section to here. Please confirm this edit. -->
+    - **Data source** – Select the data source associated with your calculated measure. <!-- KFM: Is "associated with" the right term here? -->
+    - **Calculated measure** – Select the calculated measure (associated with the selected **Data source**) that you want to use for ATP.
+    - **Schedule period** – Enter the number of days for which users can view and submit scheduled on-hand changes when using the selected **Calculated measure**. When users query for stock information, they will get the scheduled on-hand changes and ATP for each day in this period, starting with today. Select an integer between 1 and 7.
 
     > [!IMPORTANT]
     > The **Schedule period** includes today, which means users can schedule on-hand changes to occur an time from today (the day the change is submitted) to (schedule period – 1) days in the future.
 
-1. Select **Save**. <!-- KFM: I assumed we have a button called **Save** here. True? -->
-1. <!-- KFM: If it is possible to add more measures, then we can add the following here: "Continue working until you have added all of the calculated measures you need." -->
+1. Select **Save**.
+1. Repeat from step 5 until you have added all of the calculated measures you need for ATP.
 
 ## How the on-hand change schedule and ATP calculations work
 
@@ -73,12 +73,12 @@ Changes submitted through Inventory Visibility are initially uncommitted and the
 When a user queries Inventory Visibility for ATP quantities, the system replies with a data table <!-- KFM: is this best referred to as an array, a table, a result set, or something else? --> that provides the following information for each day during the schedule period:
 
 - **Date** – The date for which the row applies.
-- **On-hand** – The on-hand quantity for the specified date. It is calculated based on the current quantities committed in Supply Chain Management. <!-- KFM: Please confirm this formulation. -->
+- **On-hand** – The on-hand quantity for the specified date. It is calculated based on the current quantities committed in Supply Chain Management. <!-- KFM: Please confirm this formulation. Who/how/where are quantities "committed"? -->
 - **Supply** – <!-- KFM: Please provide a short description. -->
 - **Demand** – <!-- KFM: Please provide a short description. -->
 - **Projected on-hand** – The planed on-hand quantity for the specified date. It equals the current on-hand quantity combined with all of the on-hand change quantities <!--KFM: What do we mean by "on-hand change quantities". Can we express this using the the other terms in this list (eg, "supply", "demand", "planned on-hand", "ATP")? --> scheduled from today to the specified **Date**.
 - **ATP** – The minimum projected on-hand quantity available from the specified **Date** until the end of the schedule period, which means that this is the maximum quantity that can be promised on that day.
-- **Planed on-hand** – Calculated based on the scheduled quantity changes using the ATP calculated measure specified in the setup. <!-- KFM: This never appears in the tables from the example in the following section. Is it the same as the **Projected on-hand**? I'm not sure what to do with this... -->
+- **Planed on-hand** – Calculated based on the scheduled quantity changes using the ATP calculated measure specified in the setup. <!-- KFM: This never appears in the tables from the example in the following section. Where do we see/use this value? Is it the same as the **Projected on-hand**? If we have more than one ATM measure, which is used for this? I'm not sure what to do with this... -->
 
 For example, if today is 2022/02/01, the schedule period is 7, users can submit scheduled on-hand changes expected to occur from 2022/02/01 to 2022/02/07, and the ATP quantity for 2022/02/03 is calculated based on the ATP quantities from 2022/02/03 to 2022/02/07.
 
