@@ -61,7 +61,7 @@ Creating and processing a catalog is a four step process, as outlined in the fol
     - Ensure there are no uncategorized products. 
     - Ensure that all items assorted to each channel are associated with a catalog.
 1. **[Approval](#approve-the-catalog)** 
-1. **[Publishing](#publsih-the-catalog)**
+1. **[Publishing](#publish-the-catalog)**
 
 ## Set up the catalog
 
