@@ -30,7 +30,10 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-
+> [!IMPORTANT]
+  > This feature is deprecated, please see more details in [Removed and deprecated features](https://docs.microsoft.com//dynamics365/finance/get-started/removed-deprecated-features-finance#sales-tax-report-for-sweden-design-based-on-reporting-codes).
+  > Learn more about VAT declaration in [VAT declaration (Sweden)](https://docs.microsoft.com//dynamics365/finance/localizations/emea-swe-vat-declaration-sweden)
+  
 For general information about how to set up the value-added tax (VAT) statement, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 ## Set up the report layout for sales tax authorities
