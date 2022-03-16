@@ -30,6 +30,10 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
+> [!IMPORTANT]
+  > This feature is deprecated, please see more details in [Removed and deprecated features](https://docs.microsoft.com//dynamics365/finance/get-started/removed-deprecated-features-finance#vat-statement-for-austria-design-based-on-reporting-codes).
+  > Learn more about VAT declaration in [VAT declaration (Austria)](https://docs.microsoft.com//dynamics365/finance/localizations/emea-aut-vat-declaration-austria)
+
 This topic explains how to set up the VAT statement for legal entities in Austria.
 
 This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Austria only. For more information about the setup of the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md). The rest of this topic shows how to set up sales tax codes and sales tax reporting codes for the Austrian VAT declaration, so that VAT statements can be generated.
