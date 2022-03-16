@@ -1070,6 +1070,8 @@
               href: data-entities/dual-write/sales-status-map.md
             - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
               href: data-entities/dual-write/filtering-intercompany-orders.md
+            - name: Uninstall dual-write application orchestration solutions
+              href: data-entities/dual-write/uninstall-solutions.md
         - name: Managing dual-write
           items:
             - name: Customize entity and field mappings
