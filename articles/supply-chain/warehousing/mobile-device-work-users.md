@@ -86,7 +86,7 @@ When a worker signs in to the Warehouse Management mobile app, the language, num
 1. On the **Preferences** tab, set the following fields:
 
     - **Language** – Select the language that the worker prefers. This field also controls the date format that is shown in the warehouse app.
-    - **Date, time, and number format** – Select the language that will determine the number formats that are shown in the warehouse app. Note that the date and time formats that are shown in the warehouse app are actually determined by the **Language** field, not by this field.
+    - **Date, time, and number format** – Currently **unsupported** in the warehouse mobile app. The app is using the **Language** field to determine date, time, and number format instead. In the future this field will determine the number formats that are shown in the warehouse app to be aligned with the Dynamics application.
     - **Time zone** – Select the time zone where the worker works. This field affects the time stamp for all registrations that the worker makes by using the app.
 
 > [!NOTE]
