@@ -5,7 +5,7 @@
 title: Development impact of Commerce catalogs for B2B
 description: This topic describes the development impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 03/15/2022
+ms.date: 03/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -20,7 +20,7 @@ ms.search.validFrom: 2022-02-28
 
 This topic describes the development impact of the Commerce catalogs for B2B feature in Microsoft Dynamics 365 Commerce.
 
-If you are interested in extending catalog context to custom scenarios, your customizations made need to be updated. This follows the standard process customers need to follow since after upgrades their customizations may not automatically support the latest features. If your customizations include any new feature or bug fixes in their experiences, we recommend to update the customization code accordingly. This is similar to the changes Microsoft may have made for the core code. 
+If you are interested in extending catalog context to custom scenarios, your customizations made need to be updated. This follows the standard process customers need to follow since after upgrades their customizations may not automatically support the latest features. If your customizations include any new feature or bug fixes in their experiences, it is recommended that you update the customization code accordingly. This is similar to the changes Microsoft may have made for the core code. 
 
 Review the customization cases below to determine if your customizations must be updated. 
 
@@ -40,7 +40,7 @@ The following customization cases require development updates:
     - Update the data action similar to case 1.
 
 - **Case 3**: A customer has module ejection, view extension, or a [cloned module](e-commerce-extensibility/modules-overview.md#clone-a-module-library-module) that includes calls to APIs or calls to data actions. Required update steps: 
-    -  Update the code similar to #1, , as shown in the following example illustration.
+    -  Update the code similar to case 1, as shown in the following example illustration.
 ![Customization3](./media/customization3.png)
 
 - **Case 4**: A customer uses a **getById** API call. Required update steps: 
