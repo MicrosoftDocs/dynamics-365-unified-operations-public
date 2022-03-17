@@ -6,7 +6,7 @@
       href: index.md  
     - name: What's new or changed
       items:
-        name: What's new or changed in Finance and Operations apps
+      - name: What's new or changed in Finance and Operations apps
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed in Human Resources
         items:
