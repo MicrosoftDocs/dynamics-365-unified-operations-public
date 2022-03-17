@@ -1433,6 +1433,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Configure data models
+          items: 
+          - name: Support parameterized calls of ER data models
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure model mappings
           items: 
           - name: Configure country context dependent ER model mappings
