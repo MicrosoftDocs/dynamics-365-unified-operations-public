@@ -514,6 +514,9 @@ The `groupByValues` parameter should follow your configuration for indexing. For
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
+> [!NOTE]
+> If you have enabled the on-hand change schedule and available to promise features, then your query can also include the `QueryATP` Boolean parameter, which controls whether or not the query results should include available to promise (ATP) information. For more information and examples, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md)
+
 The following example shows sample body content.
 
 ```json
