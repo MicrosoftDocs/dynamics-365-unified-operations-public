@@ -62,6 +62,9 @@ Turn on the *On-hand change schedule* feature in Power Apps and set up the ATP o
 
 1. Select **Save**.
 1. Repeat from step 5 until you have added all of the calculated measures you need for ATP.
+1. Select **Update Configuration** when you have finished making all of the required settings.
+
+For more information, see [Complete and update the configuration](inventory-visibility-configuration.md).
 
 ## How the on-hand change schedule and ATP calculations work
 
@@ -95,7 +98,7 @@ The example results here show a value for *projected on-hand*, which incorporate
     - Today is 2022/02/01.
     - Current on-hand quantity is 20.
 
-1. You submit to Inventory Visibility a scheduled outbound quantity of 3 for today (2022/02/01). Therefore, the projected on-hand quantity is 17.The result is as follows.
+1. You submit to Inventory Visibility a scheduled outbound quantity of 3 for today (2022/02/01). Therefore, the projected on-hand quantity is 17. The result is as follows.
 
     | Date | On-hand | Scheduled inbound | Scheduled outbound | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | --- |
@@ -107,7 +110,7 @@ The example results here show a value for *projected on-hand*, which incorporate
     | 2022/02/06 | 20 |  |  | 17 | 17 |
     | 2022/02/07 | 20 |  |  | 17 | 17 |
 
-1. Today (2022/02/01), you submit a scheduled inbound quantity of 10 for 2022/02/02. The result is as follows.
+1. Today (2022/02/01), you submit a scheduled inbound quantity of 10 for 2022/02/03. The result is as follows.
 
     | Date | On-hand | Scheduled inbound | Scheduled outbound | Projected on-hand | ATP |
     | --- | --- | --- | --- | --- | --- |
@@ -224,7 +227,7 @@ Authorization: "Bearer {access_token}"
         "ColorId": "Red",
         "SizeId": "Small"
     },
-    "quantityByDate":
+    "quantitiesByDate":
     {
         "2022/02/01": // today
         {
@@ -265,7 +268,7 @@ Authorization: "Bearer {access_token}"
             "ColorId": "Red",
             "SizeId": "Small"
         },
-        "quantityByDate":
+        "quantitiesByDate":
         {
             "2022/02/01": // today
             {
@@ -276,7 +279,7 @@ Authorization: "Bearer {access_token}"
         },
     },
     {
-        "id": "id-bike-0001",
+        "id": "id-bike-0002",
         "organizationId": "usmf",
         "productId": "Car",
         "dimensions": {
@@ -285,7 +288,7 @@ Authorization: "Bearer {access_token}"
             "ColorId": "Red",
             "SizeId": "Small"
         },
-        "quantityByDate":
+        "quantitiesByDate":
         {
             "2022/02/05":
             {
