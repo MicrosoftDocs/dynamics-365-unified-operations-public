@@ -92,7 +92,7 @@ When a user starts a POS client, a new AppSessionID is generated. The AppSession
 
 #### User sign-in
 
-When a user signs in to a POS client, a new UserSessionID is generated. The UserSessionID is used to log every event that is instrumented in the POS client. All user events that are logged to Event Viewer have this ID. This ID is maintained for as long as the user is signed in. When the current user signs out and a new user sign in, a new UserSessionID is generated.
+When a user signs in to a POS client, a new UserSessionID is generated. The UserSessionID is used to log every event that is instrumented in the POS client. All user events that are logged to Event Viewer have this ID. This ID is maintained for as long as the user is signed in. When the current user signs out and a new user signs in, a new UserSessionID is generated.
 
 #### POS client calls to Commerce Scale Unit
 
