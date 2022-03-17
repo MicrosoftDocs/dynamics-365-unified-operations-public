@@ -41,7 +41,7 @@ However, should the situation arise where a product belongs to multiple catalogs
 
 #### When a B2B shopper is shopping is there any validation for catalog availability? 
 
-Yes, a B2B shopper will only be allowed to proceed to checkout if all items in the cart are from valid catalogs. If any cart items are from expired or retracted catalogs. they will be removed and the user will be notified. 
+Yes, a B2B shopper will only be allowed to proceed to checkout if all items in the cart are from valid catalogs. If any cart items are from expired or retracted catalogs they will be removed and the user will be notified. 
 
 #### During the shopping experience is search and product discovery (including related and recommended product collections) catalog-specific? 
 
@@ -63,7 +63,7 @@ Currently, Commerce catalogs are intended to work only with B2B channels.
 
 Currently, only related products functionality is supported. However, upsell and cross-sell item configurations are available for call centers. 
 
-The following features are also only supported only for call centers: 
+The following features are also only supported for call centers: 
 - Catalog source codes.
 - Use of source IDs to track costs and response rates.
 - Catalog-specific order and item scripts.
