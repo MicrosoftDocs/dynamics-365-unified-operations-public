@@ -306,11 +306,9 @@ Authorization: "Bearer {access_token}"
 On-hand change events are made by submitting a `POST` request to the relevant Inventory Visibility service URL (as listed previously). You can also submit bulk requests.
 
 > [!NOTE]
-> On-hand change events aren't unique to the ATP functionality, but are part of the standard Inventory Visibility API. We have included this example here because it is relevant when working with ATP. For more information about the on-hand change events and other features of the Inventory Visibility API, see [Inventory Visibility public APIs](inventory-visibility-api.md).
+> On-hand change events aren't unique to the ATP functionality, but are part of the standard Inventory Visibility API. We have included this example here because events are relevant when working with ATP. On-hand change events are very similar to on-hand change reservations, except event messages must be sent to a different API URL, and events use `quantities` instead of `quantityByDate` in the message body. For more information about the on-hand change events and other features of the Inventory Visibility API, see [Inventory Visibility public APIs](inventory-visibility-api.md).
 
 To submit an on-hand change event, the request body must contain an organization ID, a product ID, scheduled date, and quantities by date. The scheduled date must be between today and the end of the current schedule period.
-
-Note that the event request uses `quantities` instead of `quantityByDate`.
 
 Here is an example of a request body containing a single on-hand change event.
 
