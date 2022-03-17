@@ -312,7 +312,7 @@ To submit an on-hand change event, the request body must contain an organization
 
 Note that the event request uses `quantities` instead of `quantityByDate`.
 
-Here is an example of a request body containing a single event.
+Here is an example of a request body containing a single on-hand change event.
 
 ```json
 # Url
@@ -357,7 +357,7 @@ In your request, set `QueryATP` to *true* if you want to query scheduled on-hand
 - If your submitting using the `POST` method, set this parameter in the request body
 
 > [!NOTE]
-> Whether `returnNegative` is set true or false, the result will return negative values when query the scheduled on-hand changes and ATP results. Because if only demand orders are scheduled or supply quantities are less than demand quantities, the scheduled on-hand change quantities will be negative. Without returning this value, the result will be very confusing. <!-- KFM: add a link to the API topic -->
+> Regardless of whether the `returnNegative` parameter is set true or false in the request body, the result will include negative values when you query for scheduled on-hand changes and ATP results. This is because if only demand orders are scheduled or if supply quantities are less than demand quantities, the scheduled on-hand change quantities will be negative. If negative values weren't included, the results would be confusing. For more information about this option and how it works for other types of queries, see [Inventory Visibility public APIs](inventory-visibility-api.md).
 
 ### POST method example
 

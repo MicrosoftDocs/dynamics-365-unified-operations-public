@@ -48,9 +48,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 |---|---|
 | *OnHandReservation* | Enables you to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md) |
 | *OnHandMostSpecificBackgroundService* | Provides an inventory summary for products together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary) |
-| *OnhandChangeSchedule* | Enables available to promise (ATP) feature (optional). For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md) |
-
-<!-- KFM: Confirm that the above is complete and correct -->
+| *OnhandChangeSchedule* | Enables the on-hand change schedule and available to promise (ATP) features (optional). For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md) |
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
 
@@ -178,15 +176,16 @@ To set up a custom calculated measure, follow these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page.
-1. On the **Calculated Measure** tab, select **New Calculate Measure** to add a calculated measure. Then set the fields as described in the following table.
-<!-- KFM: The following table doesn't match the UI. We should update this. Seems like first we create a measure, then we need to click **Add** to add each new row for that measure. What should we call the rows? Modifiers? What does the "of" data source mean? -->
-    | Field | Value |
-    |---|---|
-    | New calculated measure name | Enter the name of the calculated measure. |
-    | Data source | The querying system is a data source. |
-    | Modifier data source | Enter the data source of the modifier. |
-    | Modifier | Enter the modifier name. |
-    | Modifier type | Select the modifier type (*Addition* or *Subtraction*). |
+1. On the **Calculated Measure** tab, select **New Calculate Measure** to add a calculated measure.
+1. Make the following settings for the new calculated measure:
+    - **New calculated measure name** – Enter the name of the calculated measure.
+    - **Data source** – Select the data source associated with the new modifier. The querying system is a data source.
+1. Select **Add** to add a modifier to the new calculated measure, and then make the following settings for it:
+    - **Modifier** – Select the modifier type (*Addition* or *Subtraction*).
+    - **Data source** – Select the data source from which to find the measure that provides the modifier value.
+    - **Measure** – Select the name of the measure (from the selected data source) that provides the value for the modifier.
+1. Repeat the previous step until you have added all the required modifiers.
+1. Select **Save**.
 
 For example, you could have the following query result.
 
