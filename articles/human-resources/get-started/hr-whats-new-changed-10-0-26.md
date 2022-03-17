@@ -39,11 +39,11 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Hum
 
 | Feature name | Overview | Release status |
 |--------------|----------|----------------|
-| Benefits management\*&dagger; | ../../human-resources/hr-benefits-management-overview.md | Preview |
-| Benefits statement | ../../human-resources/hr-benefits-statement.md | Preview |
-| Benefits management workspace | ../../human-resources/hr-benefits-management-workspace.md | Preview |
-| Enable eligibility rules using custom fields in benefits management | ../../hr-benefits-setup-eligibility-rules#using-custom-fields-in-eligibility-rules.md | Preview |
-| Leave and Absence Management\* | ../../human-resources/hr-leave-and-absence-overview.md | Preview |
+| Benefits management\*&dagger; | [Benefits management overview](../../human-resources/hr-benefits-management-overview.md) | Preview |
+| Benefits statement | [Benefits statement](../../human-resources/hr-benefits-statement.md) | Preview |
+| Benefits management workspace | [Benefits management workspace](../../human-resources/hr-benefits-management-workspace.md) | Preview |
+| Enable eligibility rules using custom fields in benefits management |[Custom fields](../../hr-benefits-setup-eligibility-rules#using-custom-fields-in-eligibility-rules.md) | Preview |
+| Leave and Absence Management\* | [Leave and absence overview](../../human-resources/hr-leave-and-absence-overview.md) | Preview |
 
 \* Human resources user experience enhancements must be turned on first.
 
