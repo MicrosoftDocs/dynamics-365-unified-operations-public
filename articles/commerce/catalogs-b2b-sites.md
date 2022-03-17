@@ -5,7 +5,7 @@
 title: Create Commerce catalogs for B2B sites
 description: This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: ashishmsft
-ms.date: 03/16/2022
+ms.date: 03/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -38,12 +38,8 @@ Commerce product catalogs allow you to define the following:
     - Price groups for catalogs allow organizations to make products available to their intended B2B organizations with their preferred pricing and discounts. 
     - For more information on price groups, see [Price groups](price-management.md#price-groups).
   
-<!-- ![Commerce product catalogs preview](./media/Commerce_Catalogs.png)-->
-
 > [!NOTE]
 > This feature is available starting with the Dynamics 365 Commerce version 10.0.26 release. To configure catalog-specific configurations like navigation hierarchy and customer hierarchy in Commerce headquarters, in Commerce headquarters go to the Feature management workspace (**System administration \> Workspaces \> Feature management**), enable the **Enable use of multiple catalogs on retails channels.** feature, and then run the **1110 CDX** job. 
-
-<!-- ![Feature management - Enable Commerce Catalog Feature](./media/Commerce-Catalogs-Feature-Management.jpeg)-->
 
 ## Catalog process flow
 
