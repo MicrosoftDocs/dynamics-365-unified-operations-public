@@ -53,9 +53,7 @@ available as follows:
 
 | Issue summary | More information |
 |--------------|----------|
-|#663842
-**Manager self service > My team information** tabs showing inconsistent behavior with details dropdown. |**Manager self service** navigating to direct reports cards 
-there is inconsistent behavior within details dropdown. Once the ellipsis (three dots) is used, the details dropdown are visible. 
+|663842 **Manager self service > My team information** tabs showing inconsistent behavior with details dropdown. |**Manager self service** navigating to direct reports cards there is inconsistent behavior within details dropdown. Once the ellipsis (three dots) is used, the details dropdown are visible.| 
 
 
  
