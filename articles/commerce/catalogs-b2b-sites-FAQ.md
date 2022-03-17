@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This topic provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 03/16/2022
+ms.date: 03/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -19,7 +19,7 @@ ms.search.validFrom: 2022-02-28
 
 [!include [banner](includes/banner.md)]
 
-This topic provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce business-to-business (B2B) catalogs.
+This topic provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce [business-to-business (B2B) catalogs](catalogs-b2b-sites.md).
 
 #### Why am I unable to configure a catalog-specific navigation hierarchy or see an option to associate a customer hierarchy? 
 
@@ -75,3 +75,7 @@ The following features are also only supported for call centers:
 #### Can we use catalog source codes for B2B orders through the e-commerce portal? 
 
 No, catalog source codes are supported only for call center channels.
+
+## Additional resources
+
+[Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
