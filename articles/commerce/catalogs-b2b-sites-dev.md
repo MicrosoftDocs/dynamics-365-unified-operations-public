@@ -39,9 +39,9 @@ The following customization cases require development updates:
 - **Case 2**: A customer has an [overridden data action](e-commerce-extensibility/data-action-overrides.md). Required update steps: 
     - Update the data action similar to case 1.
 
-- **Case 3**: A customer has module ejection, view extension, or a [cloned module](e-commerce-extensibility/modules-overview.md#clone-a-module-library-module) that includes calls to APIs or calls to data actions. Required update steps: 
+- **Case 3**: A customer has a view extension, script injector module, or [cloned module](e-commerce-extensibility/modules-overview.md#clone-a-module-library-module) that includes calls to APIs or calls to data actions. Required update steps: 
     -  Update the code similar to case 1, as shown in the following example illustration.
-![Customization3](./media/customization3.png)
+![Updated code that passes the new parameter](./media/customization3.png)
 
 - **Case 4**: A customer uses a **getById** API call. Required update steps: 
     - Switch to **getByIds** API call instead since the **getById** APT call has some limitations and doesn't support catalog awareness.
