@@ -2,7 +2,7 @@
 # required metadata
 
 title: Terminate schedule lines
-description: This topic lists the steps for terminating a billing schedule line in Subscription billing. 
+description: This topic explains how to terminate a billing schedule line in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 539093
@@ -32,41 +32,34 @@ ms.dyn365.ops.version: 10.0.24
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [select a billing schedule line] > [click Terminate]
+This topic explains how to terminate a billing schedule line in Subscription billing. When you terminate a billing schedule, the billing schedule must have a status of **Active**. It can't have a status of **On hold**. The line must also have a status of **Active** when you terminate a billing schedule line. The header section of the billing schedule is not affected when terminating a billing schedule ine. 
 
-Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [click a billing schedule] > [click Terminate] 
+To terminate a billing schedule or billing schedule line, go to one of the following: 
+- The **All/Active Billing Schedules** list 
+- The billing schedule displayed on the **All billing schedules** page
+- From a specific billing schedule line on the **All billing schedules** page
 
-Modules > Subscription billing > Recurring contract billing > Billing schedules > All or Active billing schedules > [click a billing schedule] >[select a billing schedule line] > [click Terminate] 
-
-This topic lists the steps for terminating a billing schedule line in Subscription billing. When you terminate a billing schedule, the billing schedule must be **Active**. It can't have a status of **On hold**. Also, the line must have a status of **Active** when you terminate a billing schedule line. The header section of the billing schedule is not affected when terminating a billing schedule ine. 
-
-You can terminate a billing schedule or billing schedule line in one of the following ways: 
-- From the **All/Active Billing Schedules** list 
-- From the billing schedule displayed on the **All billing schedules page
-- From a specific billing schedule line on the **All billing schedules page
-
-**Note:** If you want to terminate several billing schedules simultaneously, use the **Mass termination processing** page. 
+> [!Note] 
+> If you want to terminate several billing schedules simultaneously, use the **Mass termination processing** page. 
 
 
-## Terminate a Billing Schedule or Line
+## Terminate a Billing schedule or line
 
 To terminate a billing schedule or billing schedule line, follow these steps: 
 1. Select a billing schedule or a billing schedule line, and select **Terminate**. 
 2. Enter the **Termination date**, the **Termination type**, and the **Reason code**. 
 3. Set **Credit option** to **Issue credit**. 
-4. If needed type any **Termination notes**. 
-5. Select **Terminate**. 
+4. Select **Terminate**. 
 
-The status of the billing schedule changes based on the **Termination type** selected. When **Termination type** is **Bill remaining**, all lines in the billing have the status **Last billing**.  The billing schedule remains **Active** until the last invoice is processed. After the last invoice is processed, the status changes to **Terminated**. When **Termination type** is **Adjust schedule**, the billing schedule status is updated to **Terminated** immediately. No further processing is required for the billing schedule. 
+The status of the billing schedule changes based on the **Termination type** selected. When **Termination type** is **Bill remaining**, all lines in the billing have the status **Last billing**. The billing schedule remains **Active** until the last invoice is processed. After the last invoice is processed, the status changes to **Terminated**. When **Termination type** is **Adjust schedule**, the billing schedule status is updated to **Terminated** immediately.
 
 ## Terminate with Refund
 
 To terminate a billing schedule or billing schedule line and apply a refund, follow these steps: 
 1. Select a billing schedule or a billing schedule line, and select **Terminate**.
 2. Select the **Termination date**, the **Termination type**, the **Reason code**, and the **Credit option**. 
-3. If needed type any **Termination notes**. 
-4. Select **Terminate with refund**. The **Mass Termination Processing** page opens with the billing schedule filtered.  
-5. Change any of the options as needed. Select **View preview** to see the billing schedules lines. and select **Process**. 
+3. Select **Terminate with refund**. The **Mass Termination Processing** page opens with the billing schedule filtered.  
+4. Select **View preview** to see the billing schedules lines and select **Process**. 
 
 After the credit is processed, open the **View billing detail** page to review the credit applied to the billing schedule. When the credit amount is greater than zero (0), all future unbilled lines are deleted and replaced with billing detail lines that show the negative amounts for the credit that is applied to the billing schedule. 
 
