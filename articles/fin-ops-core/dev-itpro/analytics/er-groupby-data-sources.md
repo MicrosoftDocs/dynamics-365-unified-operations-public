@@ -4,7 +4,7 @@
 title: Group records and aggregate calculations by using GROUPBY data sources
 description: This topic explains how you can use GROUPBY type data sources in Electronic reporting (ER).
 author: NickSelin
-ms.date: 01/31/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Group records and aggregate calculations by using GROUPBY data sources
 
 [!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/preview-banner.md)]
 
 When you configuring [Electronic reporting (ER)](general-electronic-reporting.md) model mappings or formats, you can [add](#AddMmDataSource2) required data sources of the **GroupBy** type.
 
