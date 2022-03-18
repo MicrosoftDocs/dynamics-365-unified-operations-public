@@ -1,5 +1,5 @@
 ---
-title: GS1 bar codes and QR codes
+title: GS1 barcode scanning
 description: This topic describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
 author: Mirzaab
 ms.date: 08/02/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# GS1 bar codes and QR codes
+# GS1 barcode scanning
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -21,13 +21,56 @@ ms.dyn365.ops.version: 10.0.21
 
 Warehouse workers often have to complete several tasks when they use a mobile device scanner to register movements of an item, palette, or container. These tasks can include both scanning bar codes and manually entering information on the mobile device. The bar codes use a company-specific format that you define and manage by using Microsoft Dynamics 365 Supply Chain Management.
 
-GS1 bar code and QR code formats for shipping labels were developed to provide a global standard for the exchange of data between companies. GS1 formats not only encode the data but also let you use a predefined list of *application identifiers* to define the meaning of the data. The GS1 standard defines the data format and the various kinds of data that it can be used to encode. Unlike older bar codes, GS1 bar codes can have multiple data elements. Therefore, a single bar code scan can capture several types of product information, such as the batch and the expiration date.
+GS1 barcodes (linear, such as GS1-128 and 2D, such as GS1 DataMatrix and GS1 QR code) for shipping labels were developed to provide a global standard for the exchange of data between companies. GS1 barcodes not only encode the data but also let you use a predefined list of *application identifiers* to define the meaning of the data. The GS1 standard defines the data format and the various kinds of data that it can be used to encode. Unlike older barcodes, GS1 barcodes can have multiple data elements. Therefore, a single barcode scan can capture several types of product information, such as the batch and the expiration date.
 
-GS1 support in Supply Chain Management dramatically simplifies the scanning process in warehouses where pallets and containers are labeled by using codes in GS1 format. Warehouse workers can extract all the required information through a single scan of a GS1 bar code. By eliminating the need to do multiple scans and/or manually enter information, GS1 bar codes help reduce the time that is associated with tasks. At the same time, they also help improve accuracy.
+GS1 support in Supply Chain Management dramatically simplifies the scanning process in warehouses where pallets and containers are labeled by using barcodes in GS1 format. Warehouse workers can extract all the required information through a single scan of a GS1 barcode. By eliminating the need to do multiple scans and/or manually enter information, GS1 barcodes help reduce the time that is associated with tasks. At the same time, they also help improve accuracy.
 
 Logistics managers must set up the required list of application identifiers and associate each of them with the appropriate mobile device menu items. The application identifiers can then be used across warehouses as a global setting for moving and packing purposes. Therefore, all shipping labels will take a unified form.
 
-Unless otherwise stated, this topic uses the term *bar code* to refer to both bar codes and QR codes.
+Unless otherwise stated, this topic uses the term *barcode* to refer to both linear (1D) barcodes and 2D barcodes.
+
+## GS1 barcode format
+
+GS1 General Specifications specify which symbologies can be used for GS1 barcodes and how to encode the data in the barcode. This section provides a short introduction to the topic. For full details, refer to the full document GS1 General Specifications at https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf. This document changes on a regular schedule, and the information on this page is up to date with GS1 General Specifications release 22.0.
+
+The symbologies (barcode formats) that are used by GS1 barcodes are:
+* Linear or 1D barcodes: GS1-128 and GS1 DataBar
+* 2D barcodes: GS1 DataMatrix, GS1 QR Code and GS1 Dotcode
+
+Notice that there are special mentions of GS1 in GS1-128, which is a special case of the ordinary Code-128 linear barcode, GS1 DataMatrix and GS1 QR Code. The difference between the GS1 version and the non-GS1 version is the presence of a special character (FNC1) as the first character in the barcode data. The presence of this FNC1 character is an indication that the data in the barcode should be formatted using GS1 specification.
+
+The data in the barcode itself is composed of multiple data elements, all of them identified by an Application Identifier (AI) at the start of the field. Usually, the data is also represented under the barcode in a human readable format with the AI shown in parenthesis, for example: (01) 09521101530001 (17) 210119 (10) AB-123. This barcode contains three elements:
+* AI 01 - the GTIN of the item
+* AI 17 - expiration date
+* AI 10 - the batch number
+
+Elements might have a predefined length or non-predefined (variable) length of data. There is a fixed list of Application Identifiers that have predefined lengths, with the reset of them having variable length, with the maximum length and format of data specified by GS1 AI list. For example, AI 01 has a predefined length of 16 characters (2 for the AI and 14 for the GTIN), AI 17 has a predefined length of 8 characters (again, 2 for the AI and 6 for the date), while AI 10 has a format of 2 numbers for the AI and up to 20 alphanumeric characters.
+
+When putting together elements, if a new element follows a variable length element, a separator character must be used. This can either be the special FNC1 character or the character GS (nonprintable character with ASCII code 29). After the last element, the separator should not be used. Likewise, the separator should not be used after elements with predefined length, but the presence of a separator is not a critical error.
+
+If we take a look at the barcode data from the previous example of a barcode with AIs 01, 17 and 10, the data in a Code-128, QR Code or DataMatrix symbol would be encoded as `<FNC1>**01**09521101530001**17**210119**10**AB-123` (AIs highlighted). It is best practice to place the elements without predefined lengths at the end, as this removes the need for additional GS character, however the barcode could also have a different order of elements, where the separator is mandatory: `<FNC1>**01**09521101530001**10**AB-123<GS>**17**210119`.
+
+### Dates and decimal numbers
+
+Dates are always represented as YYMMDD, with the century of the year determined by GS1 specifications. Dates can only represent dates from 49 years in the past to 50 years in the future from the current year.
+
+Some data elements contain decimal numbers, for example AIs 3100, 3101 ... 3105 represent a net weight in kilograms. These AIs have a predefined length of 10, so there are 6 numbers available for the quantity. The position of the decimal number is specified by the last number of the AI, so this family of AIs can also be represented as "310n". GS1 standard specifies that there must always be at least one number to the left of the decimal number, so in this case, the maximum number of decimal places allowed is 5. 
+
+An example of a string "123456" with different AIs:
+* 3100123456 -> 123456 (integer number)
+* 3101123456 -> 12345,6
+* 3102123456 -> 1234,56
+* 3103123456 -> 123,456
+* 3104123456 -> 12,3456
+* 3105123456 -> 1,23456
+
+## How GS1 barcode scanning works with the Warehouse Mobile Application and Supply Chain Management
+
+In order to scan GS1 barcodes, the warehouse worker uses a scanner built into or connected to a mobile device they use to execute their warehouse work. The scanner needs to transmit the scanned barcode to the WMA as keyboard events. This mode of operation is also known as a "keyboard wedge" or "wedge". The mobile application will then send the received text as-is to the SCM system. Upon receiving any input data, the system first checks whether the data begins with one of the configured prefixes which indicates to the system that the data is actually a GS1 barcode (see the Set up global GS1 options section for further details). If so, the system will use a GS1 parser to parse the scanned data.
+
+
+
+### Single field scanning and multiple field scanning support
 
 ## Turn on the GS1 feature
 
@@ -35,6 +78,10 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Scan GS1 barcodes*
+
+## Turn on the Enhanced GS1 Parser feature
+
+
 
 ## Set up global GS1 options
 
